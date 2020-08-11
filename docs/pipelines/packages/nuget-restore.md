@@ -119,13 +119,13 @@ If your NuGet.config contains feeds in a different Azure DevOps organization tha
 
 ## FAQ
 
-### Why can't my build restore packages?
+### Why can't my build restore NuGet packages?
 
 NuGet restore can fail due to a variety of issues. One of the most common issues is the introduction of a new project in your solution that requires a [target framework](/nuget/schema/target-frameworks) that isn't understood by the version of NuGet your build is using. This issue generally doesn't present itself on a developer machine because Visual Studio updates the NuGet restore mechanism at the same time it adds new project types. We're looking into similar features for Azure Artifacts. In the meantime though, the first thing to try when you can't restore packages is to update to the latest version of NuGet.
 
 ### How do I use the latest version of NuGet?
 
-::: moniker range="= tfs-2018" 
+::: moniker range=">= tfs-2018" 
 
 If you're using Azure Pipelines or TFS 2018, new template-based builds will work automatically thanks to a new "NuGet Tool Installer" task that's been added to the beginning of all build templates that use the NuGet task. We periodically update the default version that's selected for new builds around the same time we install Visual Studio updates on the Hosted build agents.
 
@@ -151,3 +151,8 @@ $(Build.BinariesDirectory)\nuget.exe
 Our thanks to [GitHub user leftler](https://github.com/Microsoft/azure-pipelines-tasks/issues/3756#issuecomment-288185011) for creating the original version of the PowerShell script linked above.
 
 ::: moniker-end 
+
+## Related articles
+
+- [Publish to NuGet feeds (YAML/Classic)](../artifacts/nuget.md)
+- [Publish and consume build artifacts](../artifacts/build-artifacts.md)
