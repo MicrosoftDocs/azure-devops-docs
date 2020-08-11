@@ -92,13 +92,13 @@ Linking work items provides additional context for your changes and ensures that
 
 ::: moniker range=">= azure-devops-2020"
 
-![Require linked work items in your pull requests](media/branch-policies/work_item_linking.png)
+![Require linked work items in your pull requests](media/branch-policies/work-item-linking.png)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
 
-![Require linked work items in your pull requests](media/branch-policies/work_item_linking_2018.png)
+![Require linked work items in your pull requests](media/branch-policies/work-item-linking_2018.png)
 
 ::: moniker-end
 
@@ -153,7 +153,7 @@ Select **Limit merge types** to pick which ones you'll allow in your repo.
 Maintain a consistent branch history by enforcing a merge strategy when a pull request finishes.
 Select **Enforce a merge strategy** and pick an option to require that pull requests merge using that strategy.
 
-![Set merge requirements](media/branch-policies/merge_requirements_2018.png)
+![Set merge requirements](media/branch-policies/merge-requirements-2018.png)
 
 - **No fast-forward merge** - This option merges the commit history of the source branch when the pull request closes and creates a merge commit in the target branch.
 - **Squash merge** - Complete all pull requests with a squash merge, creating a single commit in the target branch with the changes from the source branch. [Learn more about squash merging](merging-with-squash.md) and how it affects your branch history.
@@ -317,7 +317,7 @@ In Azure DevOps Server 2019 and above, including the hosted service, there are t
 
 This [replaces the previous single permission](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection).
 
-![Exempt from policy enforcement permission](media/branch-policies/PolicyExemptPermission.png)
+![Exempt from policy enforcement permission](media/branch-policies/policy-exempt-permission.png)
 
 ::: moniker-end
 
