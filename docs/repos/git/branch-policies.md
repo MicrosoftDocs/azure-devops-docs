@@ -304,7 +304,7 @@ In Azure DevOps Server 2019 and above, including the hosted service, there are t
 **Bypass policies when completing pull requests** applies only to pull requests completion.
 **Bypass policies when pushing** applies to pushes from a local repository and edits made on the web.
 
-This [replaces the previous single permission](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection)
+This [replaces the previous single permission](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection).
 
 ![Exempt from policy enforcement permission](media/branch-policies/PolicyExemptPermission.png)
 
