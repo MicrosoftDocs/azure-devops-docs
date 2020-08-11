@@ -297,26 +297,32 @@ When all required reviewers approve the code, you can complete the pull request.
 
 ## Bypass branch policies
 
->[!NOTE]
->There are several permissions that allow users to bypass branch policy. In TFS 2015 through TFS 2018 Update 2, the **Exempt from policy enforcement** permission allows users with this permission to perform the following actions:
->
->- When completing a pull request, opt-in to override policies and complete a pull request even if the current set of branch policies is not satisfied.
->- Push directly to a branch even if that branch has branch policies set. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.
->
->[In Azure DevOps Services](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission does not exist. Instead, there are two new permissions:
->
->- **Bypass policies when completing pull requests**
->- **Bypass policies when pushing**
->
->Users that previously had **Exempt from policy enforcement** enabled now have the two new permissions enabled instead.
-
 In some cases, you need to bypass policy requirements. Bypassing lets you push changes to the branch directly or complete a pull request even if branch policies aren't satisfied. You can grant a permission from the previous list to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along with other [Git permissions](../../organizations/security/permissions.md#git-repository-permissions-object-level).  
+
+::: moniker range=">= azure-devops-2019"
+In Azure DevOps Server 2019 and above, including the hosted service, there are two permissions that allow users to bypass branch policy in different ways.
+**Bypass policies when completing pull requests** applies only to pull requests completion.
+**Bypass policies when pushing** applies to pushes from a local repository and edits made on the web.
+
+This [replaces the previous single permission](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection)
 
 ![Exempt from policy enforcement permission](media/branch-policies/PolicyExemptPermission.png)
 
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+In TFS 2015 through TFS 2018 Update 2, the **Exempt from policy enforcement** permission allows users with this permission to perform the following actions:
+
+- When completing a pull request, opt-in to override policies and complete a pull request even if the current set of branch policies is not satisfied.
+- Push directly to a branch even if that branch has branch policies set. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.
+
+::: moniker-end
+
 >[!IMPORTANT]
-> Use caution when granting these permissions, especially
+> Use caution when granting the ability to bypass policy, especially
 > at the repo and project level.
+> Policies are a cornerstone of secure and compliant source code management.
 
 ::: moniker-end 
 
