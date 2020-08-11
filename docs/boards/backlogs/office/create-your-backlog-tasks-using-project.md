@@ -268,7 +268,7 @@ Optionally, you can add a mapped work tracking field as a column to the Team Fou
 
 * * *
 
-To add more work tracking fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md). 
+To add more work tracking fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file). 
 
 ## Tips for working in Project and other Team Foundation clients
 
@@ -318,11 +318,11 @@ You can't delete work items from Excel nor from Project. The only way to delete 
 
 ### Do you want to add Project fields to work items?
 
-For team members to be able to view or modify Project fields from a Team Foundation client, you must customize both the definition file for the task work item type and update [The Microsoft Project Field Mapping File](../../../reference/xml/customize-project-field-mapping-file.md). For resources, see [Schedule projects using Microsoft Project 2010](schedule-projects-using-microsoft-project.md).
+For team members to be able to view or modify Project fields from a Team Foundation client, you must customize both the definition file for the task work item type and update [The Microsoft Project Field Mapping File](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file). For resources, see [Schedule projects using Microsoft Project 2010](schedule-projects-using-microsoft-project.md).
 
 ### Do you want to map additional work tracking fields to Project, or change how fields are mapped?
 
-You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](../../../reference/xml/customize-project-field-mapping-file.md).
+You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file).
 
 ### Project for Mac 
 
