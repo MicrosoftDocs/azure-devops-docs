@@ -18,27 +18,27 @@ Policies enforce your team's code quality and change management standards.
 
 ## Configure branch policies
 
-1. Select **Repos** > **Branches** to open the **Branches** page in the web portal.
+- Select **Repos** > **Branches** to open the **Branches** page in the web portal.
 
    ![Open up the Branches page on the web](media/branches/branches_nav-new-nav.png)
 
-1. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
+- Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 
    ![Branches page](media/branches/branches-page.png)
 
-1. Select the **...** button. Select **Branch policies** from the context menu.
+- Select the **...** button. Select **Branch policies** from the context menu.
 
    ![Open the branch policies from the context menu](media/branches/branches_context_menu_policy.png)
 
 ::: moniker range=">= azure-devops-2020"
 
-1. Configure policies on the **Settings** page. See the following sections for descriptions of each policy type.
+- Configure policies on the **Settings** page. See the following sections for descriptions of each policy type.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
 
-1. Configure your policies in the **Policies** page. See the following sections for descriptions of each policy type. Select **Save changes** to apply your new policy configuration.
+- Configure your policies in the **Policies** page. See the following sections for descriptions of each policy type. Select **Save changes** to apply your new policy configuration.
 
    ![Policies tab](media/branch-policies/save-policy-changes.png)  
 
@@ -181,18 +181,18 @@ Choose the **+** button next to **Build validation**.
 
 ![Build policy settings](media/branch-policies/build-policy-settings.png)
 
-1. Select the **Build pipeline**.
-1. Optionally set a **Path filter**. Learn more about [path filters](#path-filters) in branch policies.
-1. Choose the type of **Trigger**. Select **Automatic (whenever the source branch is updated)** or **Manual**.
-1. Select the **Policy requirement**. If you choose **Required**, builds must complete successfully to complete pull requests. Choose **Optional** to provide a notification of the build failure but still allow pull requests to complete.
-1. Set a build expiration to make sure that updates to your protected branch don't break changes for open pull requests.
+- Select the **Build pipeline**.
+- Optionally set a **Path filter**. Learn more about [path filters](#path-filters) in branch policies.
+- Choose the type of **Trigger**. Select **Automatic (whenever the source branch is updated)** or **Manual**.
+- Select the **Policy requirement**. If you choose **Required**, builds must complete successfully to complete pull requests. Choose **Optional** to provide a notification of the build failure but still allow pull requests to complete.
+- Set a build expiration to make sure that updates to your protected branch don't break changes for open pull requests.
 
    - **Immediately when `branch name` is updated**: This option sets the build policy status in a pull request to *failed* when the protected branch is updated. Requeue a build to refresh the build status. This setting ensures that the changes in pull requests build successfully even as the protected branch changes. This option is best for teams that have important branches with a lower volume of changes. Teams working in busy development branches may find it disruptive to wait for a build to complete every time the protected branch is updated.
    - **After `n` hours if `branch name` has been updated**: This option expires the current policy status when the protected branch updates if the passing build is older than the threshold entered. This option is a compromise between always requiring a build when the protected branch updates and never requiring one. This choice is excellent for reducing the number of builds when your protected branch has frequent updates.
    - **Never**: Updates to the protected branch don't change the policy status. This value reduces the number of builds for your branch. It can cause problems when closing pull requests that haven't updated recently.
   
-1. Enter an optional **Display name** for this build policy. This name identifies the policy on the **Branch policies** page. If you don't specify a display name, the policy uses the build pipeline name.
-1. Select **Save**.
+- Enter an optional **Display name** for this build policy. This name identifies the policy on the **Branch policies** page. If you don't specify a display name, the policy uses the build pipeline name.
+- Select **Save**.
 
 When the owner pushes changes that build successfully, the policy status is updated. If you have an **Immediately when `branch name` is updated** or **After `n` hours if `branch name` has been updated** build policy chosen, the policy status updates when the protected branch is updated if the most recent build is no longer valid.
 
@@ -216,17 +216,17 @@ Choose **Add build policy** and configure your options in **Add build policy**.
 
 ![Build policy settings](media/branch-policies/build-policy-settings-2018.png)
 
-1. Select the **Build definition**.
-1. Choose the type of **Trigger**. Select **Automatic (whenever the source branch is updated)** or **Manual**.
-1. Select the **Policy requirement**. If you choose **Required**, builds must complete successfully to complete pull requests. Choose **Optional** to provide a notification of the build failure but still allow pull requests to complete.
-1. Set a build expiration to make sure that updates to your protected branch don't break changes for open pull requests.
+- Select the **Build definition**.
+- Choose the type of **Trigger**. Select **Automatic (whenever the source branch is updated)** or **Manual**.
+- Select the **Policy requirement**. If you choose **Required**, builds must complete successfully to complete pull requests. Choose **Optional** to provide a notification of the build failure but still allow pull requests to complete.
+- Set a build expiration to make sure that updates to your protected branch don't break changes for open pull requests.
 
    - **Immediately when `branch name` is updated**: This option sets the build policy status in a pull request to *failed* when the protected branch is updated. Requeue a build to refresh the build status. This setting ensures that the changes in pull requests build successfully even as the protected branch changes. This option is best for teams that have important branches with a lower volume of changes. Teams working in busy development branches may find it disruptive to wait for a build to complete every time the protected branch is updated.
    - **After `n` hours if `branch name` has been updated**: This option expires the current policy status when the protected branch updates if the passing build is older than the threshold entered. This option is a compromise between always requiring a build when the protected branch updates and never requiring one. This choice is excellent for reducing the number of builds when your protected branch has frequent updates.
    - **Never**: Updates to the protected branch don't change the policy status. This value reduces the number of builds for your branch. It can cause problems when closing pull requests that haven't updated recently.
   
-1. Enter an optional **Display name** for this build policy. This name identifies the policy on the **Branch policies** page. If you don't specify a display name, the policy uses the build definition name.
-1. Select **Save**.
+- Enter an optional **Display name** for this build policy. This name identifies the policy on the **Branch policies** page. If you don't specify a display name, the policy uses the build definition name.
+- Select **Save**.
 
 When the owner pushes changes that build successfully, the policy status is updated. If you have an **Immediately when `branch name` is updated** or **After `n` hours if `branch name` has been updated** build policy chosen, the policy status updates when the protected branch is updated if the most recent build is no longer valid.
 
