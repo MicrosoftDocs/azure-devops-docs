@@ -126,6 +126,26 @@ For more information on working with pull request comments, see [Pull requests -
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2020"
+
+## Limit merge types
+
+Maintain a consistent branch history by enforcing a merge strategy when a pull request finishes.
+Azure Repos has multiple merge strategies, and by default, all of them are allowed.
+Select **Limit merge types** to pick which ones you'll allow in your repo.
+
+![Limit merge types](media/branch-policies/limit-merge-types.png)
+
+- **Basic merge (no fast-forward)** - creates a merge commit in the target whose parents are the target and source branches.
+- **Squash merge** - creates a linear history with a single commit in the target branch with the changes from the source branch. [Learn more about squash merging](merging-with-squash.md) and how it affects your branch history.
+- **Rebase and fast-forward** - creates a linear history by replaying source commits onto the target branch with no merge commit.
+- **Rebase with merge commit** - replays the source commits onto the target and still creates a merge commit
+
+<a name="build"></a>
+<a name="require-the-pull-request-to-build"></a>
+  
+::: moniker-end 
+ 
 ::: moniker range="< azure-devops-2020"
 
 ## Enforce a merge strategy
@@ -133,7 +153,7 @@ For more information on working with pull request comments, see [Pull requests -
 Maintain a consistent branch history by enforcing a merge strategy when a pull request finishes.
 Select **Enforce a merge strategy** and pick an option to require that pull requests merge using that strategy.
 
-![Set merge requirements](media/branch-policies/merge_requirements.png)
+![Set merge requirements](media/branch-policies/merge_requirements_2018.png)
 
 - **No fast-forward merge** - This option merges the commit history of the source branch when the pull request closes and creates a merge commit in the target branch.
 - **Squash merge** - Complete all pull requests with a squash merge, creating a single commit in the target branch with the changes from the source branch. [Learn more about squash merging](merging-with-squash.md) and how it affects your branch history.
