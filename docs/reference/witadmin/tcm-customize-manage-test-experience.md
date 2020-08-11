@@ -1,7 +1,7 @@
 ---
 title: Customize and manage the test experience
 titleSuffix: TFS  
-description: Customize three of the features that are supported - Team Foundation Server (TFS)
+description: Learn how to customize and manage the test experience
 ms.technology: devops-agile
 ms.custom: witadmin
 ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '< azure-devops'
-ms.date: 03/20/2018
+ms.date: 08/11/2020 
 ---
 
 
@@ -17,21 +17,19 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
 
-
-> [!IMPORTANT]  
->**Feature availability**: You can only exercise the tcm commands against an on-premises TFS.  
-
-> [!IMPORTANT]
-> The **tcm** tool is currently unavailable in Visual Studio 2019.
+ 
 
 You can customize three of the features that are supported in Microsoft Test Manager using the `tcm fieldmapping` command. This command allows you to change the bug type used to automatically file bugs in Test Manager, and to customize the drop-down menu or pick lists for resolution states and failure types.  
 
-The **tcm** command-line tool only works when run against an on-premises Team Foundation Server. 
+The **tcm** command-line tool only works when you run it against an on-premises Azure DevOps Server. 
+
+> [!IMPORTANT]
+> You can only exercise the tcm commands against an on-premises Azure DevOps Server.   The **tcm** tool isn't available in Visual Studio 2019.
 
 
 Also, you can use `tcm` command options to [copy and clone test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases).  
 
- **Requirements**  
+## Prerequisites 
 
  For the project where the work item types are defined, you must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group. See [Add accounts to administer project collections](../../organizations/security/set-project-collection-level-permissions.md).  
 
