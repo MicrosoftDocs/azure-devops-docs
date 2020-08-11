@@ -234,7 +234,7 @@ When the owner pushes changes that build successfully, the policy status is upda
 
 ::: moniker range="azure-devops" 
 
-## <a name="require-approval-from-external-services"></a>Require approval from additional services
+## <a name="require-approval-from-external-services"></a>Status Checks
 
 External services can use the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107) to post detailed status to your PRs. The branch policy for additional services brings the ability for those third-party services to participate in the PR workflow and establish policy requirements.
 
