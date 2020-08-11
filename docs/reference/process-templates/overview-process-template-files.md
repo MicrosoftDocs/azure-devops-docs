@@ -93,7 +93,7 @@ For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ign
       <a href="define-classification-plug-in.md" data-raw-source="[Classification.xml](define-classification-plug-in.md)">Classification.xml</a></td>
 <td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
 <td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
-<td>Configures the initial area and iteration or sprint paths. Also uploads the <a href="../xml/map-microsoft-project-fields-to-tf-fields.md" data-raw-source="[Microsoft Project Mapping (FileMapping.xml) file](../xml/map-microsoft-project-fields-to-tf-fields.md)">Microsoft Project Mapping (FileMapping.xml) file</a> that defines how work tracking fields map to Office Project fields.</td>
+<td>Configures the initial area and iteration or sprint paths. Also uploads the <a href="/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields" data-raw-source="[Microsoft Project Mapping (FileMapping.xml) file](/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields)">Microsoft Project Mapping (FileMapping.xml) file</a> that defines how work tracking fields map to Office Project fields.</td>
 </tr>
 
 
@@ -238,4 +238,3 @@ The schema definition for process templates uses a mix of camel-case and all cap
 -  [Choose a process or process template](../../boards/work-items/guidance/choose-process.md)   
 -  [Customize a process template](customize-process.md)  
 -  [Customize your work tracking experience](../customize-work.md)
-
