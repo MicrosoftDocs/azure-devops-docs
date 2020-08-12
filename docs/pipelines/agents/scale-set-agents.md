@@ -371,7 +371,7 @@ You are now ready to create an agent pool using this scale set.
 
 ## Update an existing scale set with a new custom image
 
-To update the image on an existing scaleset, follow steps 1-5 in section [Create a scale set with custom image, software, or disk size](#create-a-scale-set-with-custom-image-software-or-disk-size) to generate the custom OS image. Make note of the ID property URL that is output from the az image create command in step 5.  Then update the scaleset with the new image. After the scaleset image has been updated, all future VMs in the scaleset will be created with the new image.
+To update the image on an existing scaleset, follow steps 1-5 in section [Create a scale set with custom image, software, or disk size](#create-a-scale-set-with-custom-image-software-or-disk-size) to generate the custom OS image. Make note of the ID property URL that is output from the az image create command in step 5. Then update the scaleset with the new image. After the scaleset image has been updated, all future VMs in the scaleset will be created with the new image.
 
 ```azurecli
 az vmss update --resource-group <myResourceGroup> --name <myScaleSet> --set virtualMachineProfile.storageProfile.imageReference.id=<id url>
@@ -384,13 +384,13 @@ Scale set agents currently supports Ubuntu Linux, Windows Server/DataCenter 2016
 ### Known issues
 
 * Debian Linux is not supported.
-* Windows 10 client does not support running the pipeline agent as a local user and therefore the agent cannot interact with the UI.  The agent will run as Local Service instead.
+* Windows 10 client does not support running the pipeline agent as a local user and therefore the agent cannot interact with the UI. The agent will run as Local Service instead.
 
 ## Troubleshooting issues
 
 Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Diagnostics**.
 
-The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete, or Reimage VMs in your Azure Scale Set.  Diagnostics also logs any errors encountered while trying to perform these actions. Review the errors to make sure your scaleset has sufficient resources to scale up. If your Azure subscription has reached the resource limit in VMs, CPU cores, disks, or IP Addresses, those errors will show up here.
+The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete, or Reimage VMs in your Azure Scale Set. Diagnostics also logs any errors encountered while trying to perform these actions. Review the errors to make sure your scaleset has sufficient resources to scale up. If your Azure subscription has reached the resource limit in VMs, CPU cores, disks, or IP Addresses, those errors will show up here.
      
 <a name="q-a"></a>
 ## FAQ
@@ -410,5 +410,5 @@ Create a Scale Set with a Windows Server OS and when creating the Agent Pool sel
 ### How can I delete agents?
 
 Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Agents**.
-Click the 'Enabled' toggle button to disable the agent.  The disabled agent will complete the pipeline it is currently running and will not pick up additional work.  Within a few minutes after completing its current pipeline job, the agent  will be deleted.
+Click the 'Enabled' toggle button to disable the agent. The disabled agent will complete the pipeline it is currently running and will not pick up additional work. Within a few minutes after completing its current pipeline job, the agent will be deleted.
 
