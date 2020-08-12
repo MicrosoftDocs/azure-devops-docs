@@ -378,6 +378,12 @@ To update the image on an existing scaleset, follow steps 1-5 in section [Create
     ```azurecli
     az vmss update --resource-group <myResourceGroup> --name <myScaleSet> --set virtualMachineProfile.storageProfile.imageReference.id=<id url>
     ```
+## Supported Operating Systems
+Scale set agents currently supports Ubuntu Linux, Windows Server/DataCenter 2016/2019, and Windows 10 client.
+
+### Known issues
+* Ubuntu Debian is not supported.
+* Windows 10 client does not support running the pipeline agent as a local user.  The agent will run as Local Service instead.
 
 ## Troubleshooting issues
 Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Diagnostics**.
