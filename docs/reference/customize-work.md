@@ -124,7 +124,7 @@ The following table summarizes the differences between the three supported proce
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Update Microsoft field mappings using the <a href="xml/upload-or-download-the-microsoft-project-mapping-file.md" data-raw-source="[**TFSFieldMapping**](xml/upload-or-download-the-microsoft-project-mapping-file.md)"><strong>TFSFieldMapping</strong></a> command-line tool (see note 4)</td>
+<td align="left">Update Microsoft field mappings using the <a href="/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file" data-raw-source="[**TFSFieldMapping**](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file)"><strong>TFSFieldMapping</strong></a> command-line tool (see note 4)</td>
 <td> </td>
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
@@ -323,9 +323,3 @@ Here are a few options available to you:
 
 [add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
 [add-team-admin]: ../../organizations/settings/add-team-administrator.md
-
- 
- 
-
-
-

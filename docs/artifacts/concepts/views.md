@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 *If you're familiar with the principles behind views, you can jump to the [docs page](../feeds/views.md) to quickly start using them.*
 
-Views enable you to share subsets of the NuGet, npm, Maven, and Python package-versions in your feed with consumers. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and packages that didn't meet a quality bar.
+Views enable you to share subsets of the NuGet, npm, Maven, Python and Universal Packages package-versions in your feed with consumers. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and packages that didn't meet a quality bar.
 
 ## Views and upstream sources
 
@@ -52,7 +52,7 @@ When creating packages in continuous integration and delivery scenarios, it's im
 
 ### Assess the nature and risk of changes
 
-Because the nature and the risk of the change both pertain to the *change* itself&mdash;i.e. what you set out to do&mdash;they're both generally known at the outset of the work. You know if you're introducing new features, making updates to existing features, or patching bugs; this is the *nature* of your change. And, you know if you're still making changes to the API surface of your application; this is one facet of the *risk* of your change. Many NuGet users use [Semantic Versioning](https://semver.org) (SemVer) notation to convey these two pieces of information; SemVer is a widely used standard and does a good job of communicating this information.
+The nature and the risk of the change both pertain to the _change itself_, that is, what you set out to do, they're both known at the outset of the work. You know if you're introducing new features, making updates to existing features, or patching bugs; this is the *nature* of your change. And, you know if you're still making changes to the API surface of your application; this is one facet of the *risk* of your change. Many NuGet users use [Semantic Versioning](https://semver.org) (SemVer) notation to convey these two pieces of information; SemVer is a widely used standard and does a good job of communicating this information.
 
 ### Determine and communicate quality
 
