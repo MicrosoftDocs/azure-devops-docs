@@ -166,7 +166,7 @@ With the following customizations, you can use the Configure Features Wizard to 
 <li>Office integration: Add or change how Project fields map to TFS fields   </li>
 </ul>
 
-To learn more about the Configure Features Wizard, see [Configure features after an upgrade](configure-features-after-upgrade.md).
+To learn more about the Configure Features Wizard, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).
 
 
 ### Compatible, but may require manual updates

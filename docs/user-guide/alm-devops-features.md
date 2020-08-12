@@ -2414,7 +2414,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Configure Features Wizard</b></p>
-<p>Use the Configure Features Wizard to <a href="../reference/configure-features-after-upgrade.md" data-raw-source="[configure team projects after a TFS upgrade to access new features](../reference/configure-features-after-upgrade.md)">configure team projects after a TFS upgrade to access new features</a>.  </p>
+<p>Use the Configure Features Wizard to <a href="/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade" data-raw-source="[configure team projects after a TFS upgrade to access new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)">configure team projects after a TFS upgrade to access new features</a>.  </p>
 
 </td>
 <td width="33%">
@@ -2481,7 +2481,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>You customize a project defined on an on-premises TFS by <a href="../reference/customize-work.md" data-raw-source="[modifying definition files for work item types or process configuration, or changing field attributes](../reference/customize-work.md)">modifying definition files for work item types or process configuration, or changing field attributes</a>.  </p>
 
 <p><b>Update a project after an upgrade (TFS)</b></p>
-<p>Some features added when you upgrade your on-premises application server may require you to <a href="../reference/configure-features-after-upgrade.md" data-raw-source="[configure features to access them](../reference/configure-features-after-upgrade.md)">configure features to access them</a>. </p>
+<p>Some features added when you upgrade your on-premises application server may require you to <a href="/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade" data-raw-source="[configure features to access them](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)">configure features to access them</a>. </p>
 
 
 <p><b>Upload reports (TFS) </b></p>
