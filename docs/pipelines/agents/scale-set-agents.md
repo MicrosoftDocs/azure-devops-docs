@@ -382,11 +382,12 @@ To update the image on an existing scaleset, follow steps 1-5 in section [Create
 Scale set agents currently supports Ubuntu Linux, Windows Server/DataCenter 2016/2019, and Windows 10 client.
 
 ### Known issues
-* Ubuntu Debian is not supported.
-* Windows 10 client does not support running the pipeline agent as a local user.  The agent will run as Local Service instead.
+* Debian Linux is not supported.
+* Windows 10 client does not support running the pipeline agent as a local user and therefore the agent cannot interact with the UI.  The agent will run as Local Service instead.
 
 ## Troubleshooting issues
 Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Diagnostics**.
+
 The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete, or Reimage VMs in your Azure Scale Set.  Diagnostics also logs any errors encountered while trying to perform these actions. Review the errors to make sure your scaleset has sufficient resources to scale up. If your Azure subscription has reached the resource limit in VMs, CPU cores, disks, or IP Addresses, those errors will show up here.
      
 <a name="q-a"></a>
