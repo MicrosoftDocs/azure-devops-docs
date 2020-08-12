@@ -16672,47 +16672,47 @@
     },
     {
       "source_path": "docs/reference/configure-features-after-upgrade.md",
-      "redirect_url": "/previous-versions/azure/devops/upgrade/configure-features-after-upgrade",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/xml/update-a-team-project-v4-dot-2-process-template.md",
-      "redirect_url": "/previous-versions/azure/devops/upgrade/update-a-team-project-v4-dot-2-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-a-team-project-v4-dot-2-process-template",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/xml/update-a-team-project-manually-to-support-test-management.md",
-      "redirect_url": "/previous-versions/azure/devops/upgrade/update-a-team-project-manually-to-support-test-management",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-a-team-project-manually-to-support-test-management",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/new-features-added.md",
-      "redirect_url": "/previous-versions/azure/devops/upgrade/new-features-added",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/new-features-added",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/add-features-manually.md",
-      "redirect_url": "/previous-versions/azure/devops/upgrade/add-features-manually",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/add-features-manually",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/additional-configuration-options.md",
-      "redirect_url": "/previous-versions/azure/devops/upgrade/additional-configuration-options",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/additional-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/update-customized-process-template.md",
-      "redirect_url": "/previous-versions/azure/devops/upgrade/update-customized-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-customized-process-template",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/upgrade-tfs-2008-or-2010.md",
-      "redirect_url": "/previous-versions/azure/devops/upgrade/upgrade-tfs-2008-or-2010",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/upgrade-tfs-2008-or-2010",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/use-team-fields-instead-area-paths.md",
-      "redirect_url": "/previous-versions/azure/devops/upgrade/use-team-fields-instead-area-paths",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths",
       "redirect_document_id": false
     }
   ]
