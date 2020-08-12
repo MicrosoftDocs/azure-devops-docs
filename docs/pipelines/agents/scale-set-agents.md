@@ -378,6 +378,7 @@ To update the image on an existing scaleset, follow steps 1-5 in section [Create
     ```azurecli
     az vmss update --resource-group <myResourceGroup> --name <myScaleSet> --set virtualMachineProfile.storageProfile.imageReference.id=<id url>
     ```
+     
 ## Supported Operating Systems
 Scale set agents currently supports Ubuntu Linux, Windows Server/DataCenter 2016/2019, and Windows 10 client.
 
