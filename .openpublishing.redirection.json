@@ -13042,7 +13042,7 @@
     },
     {
       "source_path": "docs/integrate/redirection/authorize-other-service-vs.md",
-      "redirect_url": "/docs/service-hooks/authorize",
+      "redirect_url": "/azure/devops/service-hooks/authorize",
       "redirect_document_id": false
     },
     {
@@ -13052,92 +13052,92 @@
     },
     {
       "source_path": "docs/integrate/redirection/integrating-with-service-hooks-vs.md",
-      "redirect_url": "/docs/service-hooks/integrate",
+      "redirect_url": "/azure/devops/service-hooks/integrate",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/appveyor-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/appveyor",
+      "redirect_url": "/azure/devops/service-hooks/services/appveyor",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/azure-service-bus-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/azure-service-bus",
+      "redirect_url": "/azure/devops/service-hooks/services/azure-service-bus",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/azurestorage-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/azure-storage",
+      "redirect_url": "/azure/devops/service-hooks/services/azure-storage",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/bamboo-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/bamboo",
+      "redirect_url": "/azure/devops/service-hooks/services/bamboo",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/campfire-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/campfire",
+      "redirect_url": "/azure/devops/service-hooks/services/campfire",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/flowdock-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/flowdock",
+      "redirect_url": "/azure/devops/service-hooks/services/flowdock",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/hipchat-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/hipchat",
+      "redirect_url": "/azure/devops/service-hooks/services/hipchat",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/hubot-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/hubot",
+      "redirect_url": "/azure/devops/service-hooks/services/hubot",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/jenkins-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/jenkins",
+      "redirect_url": "/azure/devops/service-hooks/services/jenkins",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/myget-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/myget",
+      "redirect_url": "/azure/devops/service-hooks/services/myget",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/slack-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/slack",
+      "redirect_url": "/azure/devops/service-hooks/services/slack",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/trello-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/trello",
+      "redirect_url": "/azure/devops/service-hooks/services/trello",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/uservoice-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/uservoice",
+      "redirect_url": "/azure/devops/service-hooks/services/uservoice",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/webhooks-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/webhooks",
+      "redirect_url": "/azure/devops/service-hooks/services/webhooks",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/zapier-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/zapier",
+      "redirect_url": "/azure/devops/service-hooks/services/zapier",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/zendesk-and-vso-vs.md",
-      "redirect_url": "/docs/service-hooks/services/zendesk",
+      "redirect_url": "/azure/devops/service-hooks/services/zendesk",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/troubleshoot-service-hooks-vs.md",
-      "redirect_url": "/docs/service-hooks/troubleshoot",
+      "redirect_url": "/azure/devops/service-hooks/troubleshoot",
       "redirect_document_id": false
     },
     {
