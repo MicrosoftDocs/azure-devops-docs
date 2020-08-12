@@ -4,11 +4,11 @@ description: Learn how to use the Azure CLI to create and deploy a Java applicat
 ms.topic: quickstart
 ms.author: jukullam
 author: JuliaKM
-ms.date: 07/30/2020
+ms.date: 08/11/2020
 monikerRange: 'azure-devops'
 ---
 
-# Tutorial: Create a virtual machine scale set and deploy a Java app
+# Tutorial: Deploy a Java app to a virtual machine scale set
 
 A [virtual machine scale set](https://docs.microsoft.com/azure/virtual-machine-scale-sets/overview) lets you deploy and manage identical, auto-scaling virtual machines. 
 
@@ -17,7 +17,6 @@ VMs are created as needed in a scale set. You define rules to control how and wh
 In this tutorial, you deploy a virtual machine scale set with Java VMs and deploy it using DevOps Pipelines. You learn how to:
 
 > [!div class="checklist"]
-> * Create a Java virtual machine
 > * Create a virtual machine scale set
 > * Increase or decrease the number of instances in a scale set
 > * Create autoscale rules
@@ -29,6 +28,10 @@ In this tutorial, you deploy a virtual machine scale set with Java VMs and deplo
 Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
+
+
+## Create a virtual machine scale set
+
 
 
 ## Create a Java app
