@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "docs/integrate/ide/extensions/overview.md",
-      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-exten/sions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
       "redirect_document_id": false
     },
     {
