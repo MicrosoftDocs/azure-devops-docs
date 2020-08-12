@@ -13027,17 +13027,17 @@
     },
     {
       "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/Issue.md",
-      "redirect_url": "/docs/integrate/extensions/reference/client/api/TFS/DistributedTask/Contracts/Issue",
+      "redirect_url": "/azure/devops/integrate/extensions/reference/client/api/TFS/DistributedTask/Contracts/Issue",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/IssueType.md",
-      "redirect_url": "/docs/integrate/extensions/reference/client/api/TFS/DistributedTask/Contracts/IssueType",
+      "redirect_url": "/azure/devops/integrate/extensions/reference/client/api/TFS/DistributedTask/Contracts/IssueType",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/TaskOrchestrationPlanReference.md",
-      "redirect_url": "/docs/integrate/extensions/reference/client/api/TFS/DistributedTask/Contracts/TaskOrchestrationPlanReference",
+      "redirect_url": "/azure/devops/integrate/extensions/reference/client/api/TFS/DistributedTask/Contracts/TaskOrchestrationPlanReference",
       "redirect_document_id": false
     },
     {
@@ -13047,7 +13047,7 @@
     },
     {
       "source_path": "docs/integrate/redirection/get-started/authentication/authentication_guidance.md",
-      "redirect_url": "/docs/integrate/get-started/authentication/authentication_guidance",
+      "redirect_url": "/azure/devops/integrate/get-started/authentication/authentication_guidance",
       "redirect_document_id": false
     },
     {
