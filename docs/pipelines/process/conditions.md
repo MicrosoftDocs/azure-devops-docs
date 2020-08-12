@@ -134,7 +134,7 @@ and(always(), eq(variables['Build.Reason'], 'Schedule'))
 
 > **Release.Artifacts.{artifact-alias}.SourceBranch** is equivalent to **Build.SourceBranch**.
 
-### Run if a variable has is null
+### Run if a variable is null
 
 ```yaml
 variables:
