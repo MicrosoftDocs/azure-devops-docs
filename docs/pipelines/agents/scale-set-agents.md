@@ -42,8 +42,6 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 
 In preparation for creating scale set agents, you must first create a virtual machine scale set in the Azure portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must disable Azure's autoscaling so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
 
-To customize the permissions of the pipeline agent user, you can create a user named 'AzDevOps', and grant that user the permissions you require. This user is created by the scaleset agents startup script if it does not already exist.
-
 In the following example, a new resource group and virtual machine scale set are created with Azure Cloud Shell using the UbuntuLTS VM image.
 
 1. Browse to [Azure Cloud Shell](https://shell.azure.com/) at `https://shell.azure.com/`.
@@ -330,6 +328,8 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
         - `extend size 72000` (to extend the drive by 72 GB, from 128 GB to 200 GB)
           
    - Install any additional software on the VM
+
+   - To customize the permissions of the pipeline agent user, you can create a user named 'AzDevOps', and grant that user the permissions you require. This user will be created by the scaleset agent startup script if it does not already exist.
 
    - Reboot the VM when finished with customizations
    
