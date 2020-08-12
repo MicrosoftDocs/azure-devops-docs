@@ -124,25 +124,7 @@
     href: process-configuration-xml-element.md
 - name: Manual updates
   items:
-  - name: Update a project based on a MSF v4.2 process template
-    href: update-a-team-project-v4-dot-2-process-template.md
-  - name: Update a project manually to support test management
-    href: update-a-team-project-manually-to-support-test-management.md
   - name: Update the workflow for agile projects
     href: update-the-workflow-for-agile-team-projects.md
   - name: Use team fields instead of area paths
     href: ../use-team-fields-instead-area-paths.md
-- name: Configure Features Wizard (Deprecated)
-  items:
-  - name: Configure features after an upgrade
-    href: ../configure-features-after-upgrade.md
-  - name: New features added through feature enablement
-    href: ../new-features-added.md
-  - name: Add features manually
-    href: ../add-features-manually.md
-  - name: Additional configuration options
-    href: ../additional-configuration-options.md
-  - name: Update a customized process template to access new features
-    href: ../update-customized-process-template.md 
-  - name: When upgrading from TFS 2008 or TFS 2010
-    href: ../upgrade-tfs-2008-or-2010.md
