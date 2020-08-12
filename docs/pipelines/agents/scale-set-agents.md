@@ -273,9 +273,9 @@ Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set 
     > [!NOTE]
     > These URLs may change.
 
-5. The configuration script creates a local user named 'AzDevOps' if the operating system is Windows Server or Linux. For Windows 10 Client OS, the agent runs as LocalSystem. The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
+5. The configuration script creates a local user named `AzDevOps` if the operating system is Windows Server or Linux. For Windows 10 Client OS, the agent runs as LocalSystem. The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
 
-6. For most scenarios, the configuration script then immediately starts the agent to run as the local user 'AzDevOps'. The agent goes Online and is ready to run pipeline jobs.
+6. For most scenarios, the configuration script then immediately starts the agent to run as the local user `AzDevOps`. The agent goes Online and is ready to run pipeline jobs.
 
     If the pool is configured for interactive UI, the virtual machine reboots after the agent is configured. After reboot, the local user will auto-login and immediately start the pipelines agent. The agent then goes Online and is ready to run pipeline jobs.
 
@@ -329,7 +329,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
           
    - Install any additional software on the VM
 
-   - To customize the permissions of the pipeline agent user, you can create a user named 'AzDevOps', and grant that user the permissions you require. This user will be created by the scaleset agent startup script if it does not already exist.
+   - To customize the permissions of the pipeline agent user, you can create a user named `AzDevOps`, and grant that user the permissions you require. This user will be created by the scaleset agent startup script if it does not already exist.
 
    - Reboot the VM when finished with customizations
    
@@ -411,4 +411,3 @@ Create a Scale Set with a Windows Server OS and when creating the Agent Pool sel
 
 Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Agents**.
 Click the 'Enabled' toggle button to disable the agent. The disabled agent will complete the pipeline it is currently running and will not pick up additional work. Within a few minutes after completing its current pipeline job, the agent will be deleted.
-
