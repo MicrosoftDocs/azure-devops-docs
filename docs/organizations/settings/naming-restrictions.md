@@ -1419,7 +1419,7 @@ Workspace names must conform to the following restrictions.
 
 ## Wiki page title naming conventions
 
-[!INCLUDE [temp](../../../docs/project/wiki/includes/wiki-naming-conventions.md)]
+[!INCLUDE [temp](../../project/wiki/includes/wiki-naming-conventions.md)]
 
 
 ## Related articles 

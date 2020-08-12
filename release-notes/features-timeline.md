@@ -90,6 +90,14 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
+    <td rowspan="5"><a href="2020/sprint-173-update.md" data-raw-source="[03 August 2020](2020/sprint-173-update.md)">03 August 2020</a></td>
+    <td>Allow stakeholders to drag and drop work items</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Default branch name preference</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Updates to Mac OS 10.14 (Mojave) image </td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>[Feedback] Git Draft Pull Requests should not trigger the pipeline</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Multi-repo triggers for Azure repos</td><td>Pipelines</td><td>Future</td></tr>
+    <tr>
     <td rowspan="9"><a href="2020/sprint-172-update.md" data-raw-source="[10 July 2020](2020/sprint-172-update.md)">10 July 2020</a></td>
     <td>State transition restriction rules</td><td>Boards</td><td>Future</td>
     </tr>

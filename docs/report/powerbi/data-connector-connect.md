@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/26/2019
+ms.date: 08/10/2020
 ---
 
 # Connect to Analytics with Power BI Data Connector
@@ -28,141 +28,32 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 ::: moniker range="azure-devops"
 
-1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
-3. Make sure you have [permissions required to access Analytics](analytics-security.md). If you are a member of the project Contributors group, you have permission.
-4. [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. 
-4. Review the [knowledge base of Power BI articles](/power-bi). 
-5. If you are not familiar with Analytics, we recommend you read "[what is Analytics](what-is-analytics.md)" before continuing. 
+- If you are not familiar with Analytics, read "[what is Analytics](what-is-analytics.md)" before continuing. 
+- Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except stakeholders, can view Analytics views. 
+- **Boards** must be enabled. If it is disabled, **Analytics views** won't be displayed. To re-enable **Boards**, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
+- Make sure you have [permissions required to access Analytics](analytics-security.md). If you are a member of the project Contributors group, you have permission.
+- [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. 
+- Review the [knowledge base of Power BI articles](/power-bi). 
 
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
-3. Make sure you have [permissions required to access Analytics](analytics-security.md). If you are a member of the project Contributors group, you have permission.
-4. Review the [knowledge base of Power BI articles](/power-bi). 
-5. If you are not familiar with Analytics, we recommend you read "[what is Analytics](what-is-analytics.md)" before continuing. 
+- If you are not familiar with Analytics, read "[what is Analytics](what-is-analytics.md)" before continuing. 
+- Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
+- You must be a member of a project with Basic access or higher. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except stakeholders, can view Analytics views.
+- [Verify that Analytics](/azure/devops/report/dashboards/analytics-extension?view=azure-devops-2019)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service. 
+- **Boards** must be enabled. If it is disabled, **Analytics views** won't be displayed. To re-enable **Boards**, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
+- Make sure you have [permissions required to access Analytics](analytics-security.md). If you are a member of the project Contributors group, you have permission.
+- [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. 
+- Review the [knowledge base of Power BI articles](/power-bi). 
 
 ::: moniker-end
 
-
-## Connect to your data
-
-::: moniker range="azure-devops"  
-
-1. **Launch Power BI Desktop and get your data**. Select **Get Data** using one of the two options to access the Data Connector.  
-
-	You can either choose **Get Data** button in the splash screen that opens up when you launch *Power BI.* 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI desktop splash screen, Get data button](media/data-connector/get-data-splash-screen.png)
-	
-	Or, you can find a similar button in the ribbon in the **Home** section.
-
-2. Choose (1) **Online Services**, (2) **Azure DevOps (Beta)**, and then **Connect**.  
-
-	![Get data dialog](media/data-connector/get-data-azure-devops.png)  
-
-3. **Specify the basic parameters to connect to your data**. 
-
-	![Azure DevOps dialog](media/create-report/specify-account.png)
-
-   - For *Organization*, enter the organization name in Azure DevOps (not the full URL). For example, use `fabrikam-fiber-inc` if the URL of your organization is "`https://dev.azure.com/fabrikam-fiber-inc./`".
-   - For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your project is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber`").
-
-     > [!IMPORTANT]  
-     > Don't confuse the team name with the project name, a common mistake. 
-     > If the URL you use on the daily basis is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber-Git/Device`", then `Fabrikam-Fiber-Git` is the project name, whereas `Device` is the team name.
-
-4. **Sign in to the service**. Upon first-time access, you're required to sign in and have your credentials authenticated. Power BI Desktop saves your credentials so you will only have to do this once.
-
-Choose between the following authentication options: 
-   - Select *Organizational account* if your organization is using Azure Active Directory to manage users.  
-   - Select *Personal Access Token* if you want to use a personal access token.
-   - Select *Basic* if you are connecting to a personal organization. This option also supports alternate credentials, but it is not recommended as unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your data.
-
-     > [!div class="mx-imgBorder"]  
-     > ![Sign in dialog](media/powerbi-signin-organizational.png)
-
-     If you select *Organizational account,* enter your username and password into the standard login page.  
-
-5. Choose **Connect** upon verification of your credentials. Upon successful login Power BI will verify if your user credentials have the right permissions to access the specified project. If any errors arise, refer to the [Q & A](#q-a) section as it covers the most common problems.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Connect dialog](media/powerbi-successful-organizational-signin.png)  
-
-::: moniker-end  
-
-
-::: moniker range="azure-devops-2019"  
-
-1. **Launch Power BI Desktop and get your data**. Select **Get Data** using one of the two options to access the Data Connector.  
-
-	You can either choose **Get Data** button in the splash screen that opens up when you launch *Power BI.* 
-
-	> [!div class="mx-imgBorder"] 
-	> ![Power BI desktop splash screen, Get data button](media/data-connector/get-data-splash-screen.png)
-	
-	Or, you can find a similar button in the ribbon in the **Home** section. 
-	
-	![Power BI desktop ribbon, Get data button](media/data-connector/get-data-azure-devops.png)  
-
-2. Choose (1) **Online Services**, (2) **Azure DevOps Server (Beta)**, and then **Connect**.  
-
-	![Get data - Azure DevOps Server dialog](media/data-connector/get-data-azure-devops-server.png)  
-
-3. **Specify the basic parameters to connect to your data**. 
- 
-	![Get data dialog](media/create-report/specify-collection-project.png)
-
-   - For *Collection URL*, enter the URL where your Azure DevOps Server instance is hosted. For example, an example URL is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection`".
-   - For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your Azure DevOps Server instance is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber`").
-
-     > [!IMPORTANT]  
-     > Don't confuse the team name with the project name, a common mistake. 
-     > If the URL you use on the daily basis is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber-Git/Device`", then `Fabrikam-Fiber-Git` is the project name, whereas `Device` is the team name.
-
-4. **Sign in to the service**. Upon first-time access, you're required to sign in and have your credentials authenticated. Power BI Desktop saves your credentials so you will only have to do this once.
-
-	Choose between these two authentication options: 
-   - Select *Windows* if you want to sign in using Windows.  
-   - Select *Personal Access Token* if you want to use a personal access token.
-
-     > [!div class="mx-imgBorder"]
-     > ![Sign in dialog](media/powerbi-windows-login-onprem.png) 
-
-5. Choose **Connect** upon verification of your credentials. Upon successful login Power BI will verify if your user credentials have the right permissions to access the specified project. If any errors arise, refer to the [Q & A](#q-a) section as it covers the most common problems.  
-
-::: moniker-end  
-
-## Select the Analytics view
-
-1. **Select the view**. The Data Connector presents a list of available [Analytics Views](what-are-analytics-views.md). Each view represents a set of data that you can pull into Power BI. 
-
-	Azure DevOps provides a set of [default Analytics Views](analytics-default-views.md). You can also [create custom Analytics Views](analytics-views-create.md). The image below shows the default Analytics views. Your list of views may differ.
-
-	> [!div class="mx-imgBorder"]
-	> ![Navigator dialog, default views](media/default-views/navigator-dialog-default-views.png)
-
-	> [!NOTE]
-	> The preview shown for any selected views in the navigator can be truncated depending on the number of fields selected and the size of the dataset. The data is truncated only for the preview and won't impact the full data refresh.
-
-	Choose **Work Items - Today** table and wait for the preview to load.
-	It represents the current state of all Work Items in the project.
-
-	Select the checkbox next to **Work Items - Today** table and choose **Load**. 
-
-	> [!NOTE]
-	> [Analytics Views](what-are-analytics-views.md) do not apply filters that have defined using Power BI on the server. Any filters applied in Power BI will limit the data shown to end users but will not reduce the amount of data retrieved from Analytics. If the filter is intended to reduce the size of the dataset, it should be applied by [customizing the view](analytics-views-create.md).  
-
-2. **Wait for the data to load**. You can observe its progress by looking at the status messages, which appear directly under 
-	the table name. Should you see any errors, refer to the [Q & A](#q-a) section.
-
-	> [!div class="mx-imgBorder"]
-	> ![Apply query changes loading dialog](./media/power-bi-data-loading-onprem.png)
-
-3. **Review the Data model**. While the model is being loaded please review the [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
+[!INCLUDE [temp](../includes/connect-analytics-view.md)]
 
 ## Create your report
 

@@ -5,7 +5,7 @@ ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.date: 06/23/2020
 monikerRange: '=azure-devops'
-ms.custom: tracking-python
+ms.custom: devx-track-python
 ---
 
 # Get started with Python packages in Azure Artifacts

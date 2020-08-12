@@ -1,13 +1,13 @@
 ---
 title: Link user stories, issues, and other work items
 titleSuffix: Azure Boards
-description: Link one or more work items to other work items or to a new git branch in Azure Boards or TFS
+description: Learn how to ink one or more work items to other work items or to a new git branch in Azure Boards 
 ms.custom: seodec18  
 ms.technology: devops-agile
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: quickstart 
 monikerRange: '>= tfs-2013'
 ms.date: 07/09/2020 
 ---
