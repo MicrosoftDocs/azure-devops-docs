@@ -134,6 +134,21 @@ and(always(), eq(variables['Build.Reason'], 'Schedule'))
 
 > **Release.Artifacts.{artifact-alias}.SourceBranch** is equivalent to **Build.SourceBranch**.
 
+### Run if a variable has is null
+
+```yaml
+variables:
+- name: testNull
+  value: ''
+
+jobs:
+  - job: A
+    steps:
+    - script: echo testNull is blank
+    condition: eq('${{ variables.testNull }}', '')
+
+```
+
 ### Use a template parameter as part of a condition
 
 When you declare a parameter in the same pipeline that you have a condition, parameter expansion happens before conditions are considered. In this case, you can embed parameters inside conditions. The script in this YAML file will run because `parameters.doThing` is true.
