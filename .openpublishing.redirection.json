@@ -377,7 +377,7 @@
     },
     {
       "source_path": "docs/package/preview/maven-docs.md",
-      "redirect_url": "/azure/devops/artifacts/preview/maven-docs",
+      "redirect_url": "/azure/devops/artifacts/get-started-maven",
       "redirect_document_id": false
     },
     {
@@ -392,7 +392,7 @@
     },
     {
       "source_path": "docs/package/preview/updated-experience.md",
-      "redirect_url": "/azure/devops/artifacts/preview/updated-experience",
+      "redirect_url": "/azure/devops/artifacts/index",
       "redirect_document_id": false
     },
     {
@@ -452,7 +452,7 @@
     },
     {
       "source_path": "docs/build-release/actions/troubleshooting.md",
-      "redirect_url": "/azure/devops/pipelines/troubleshooting",
+      "redirect_url": "/azure/devops/pipelines/troubleshooting/troubleshooting",
       "redirect_document_id": false
     },
     {
@@ -1342,7 +1342,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/manage-conditional-access.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-conditional-access",
+      "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies",
       "redirect_document_id": false
     },
     {
@@ -1397,27 +1397,27 @@
     },
     {
       "source_path": "integrate/extensions/reference/client/client-services.md",
-      "redirect_url": "/azure/devops/extend/reference/client/client-services",
+      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/client-services",
       "redirect_document_id": false
     },
     {
       "source_path": "integrate/extensions/reference/client/context.md",
-      "redirect_url": "/azure/devops/extend/reference/client/context",
+      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/context",
       "redirect_document_id": false
     },
     {
       "source_path": "integrate/extensions/reference/client/core-sdk.md",
-      "redirect_url": "/azure/devops/extend/reference/client/core-sdk",
+      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/core-sdk",
       "redirect_document_id": false
     },
     {
       "source_path": "integrate/extensions/reference/client/rest-clients.md",
-      "redirect_url": "/azure/devops/extend/reference/client/rest-clients",
+      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/rest-clients",
       "redirect_document_id": false
     },
     {
       "source_path": "integrate/extensions/reference/client/ui-controls.md",
-      "redirect_url": "/azure/devops/extend/reference/client/ui-controls",
+      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/ui-controls",
       "redirect_document_id": false
     },
     {
@@ -1952,7 +1952,7 @@
     },
     {
       "source_path": "docs/build-release/troubleshooting.md",
-      "redirect_url": "/azure/devops/pipelines/troubleshooting",
+      "redirect_url": "/azure/devops/pipelines/troubleshooting/troubleshooting",
       "redirect_document_id": false
     },
     {
@@ -2412,7 +2412,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/manage-conditional-access.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-conditional-access",
+      "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies",
       "redirect_document_id": false
     },
     {
@@ -3367,7 +3367,7 @@
     },
     {
       "source_path": "docs/integrate/extensions/test/debug-in-browser.md",
-      "redirect_url": "/azure/devops/extend/test/debug-in-browser",
+      "redirect_url": "/previous-versions/azure/devops/docs/extend/test/debug-in-browser",
       "redirect_document_id": false
     },
     {
@@ -4217,7 +4217,7 @@
     },
     {
       "source_path": "docs/test/continuous-testing/associate-automated-results-with-requirements.md",
-      "redirect_url": "/azure/devops/test/associate-automated-results-with-requirements",
+      "redirect_url": "/azure/devops/pipelines/test/requirements-traceability",
       "redirect_document_id": false
     },
     {
@@ -4242,7 +4242,7 @@
     },
     {
       "source_path": "docs/test/continuous-testing/reference-qa.md",
-      "redirect_url": "/azure/devops/pipelines/test/reference-qa",
+      "redirect_url": "/azure/devops/pipelines/test/set-up-continuous-test-environments-builds#use-build",
       "redirect_document_id": false
     },
     {
@@ -4417,7 +4417,7 @@
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/exploratory-testing-mtm.md",
-      "redirect_url": "/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager",
       "redirect_document_id": false
     },
     {
@@ -4492,7 +4492,7 @@
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/getting-started/record-play-back-manual-tests.md",
-      "redirect_url": "/azure/devops/test/mtm/record-play-back-manual-tests",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/record-play-back-manual-tests",
       "redirect_document_id": false
     },
     {
@@ -4512,52 +4512,52 @@
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/collect-more-diagnostic-data-in-manual-tests.md",
-      "redirect_url": "/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md",
-      "redirect_url": "/azure/devops/test/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/copying-and-cloning-test-suites-and-test-cases.md",
-      "redirect_url": "/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/exploratory-testing-using-microsoft-test-manager.md",
-      "redirect_url": "/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/guidance-mtm-usage.md",
-      "redirect_url": "/azure/devops/test/mtm/guidance-mtm-usage",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/guidance-mtm-usage",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/plan-manual-tests-with-microsoft-test-manager.md",
-      "redirect_url": "/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/run-manual-tests-with-microsoft-test-manager.md",
-      "redirect_url": "/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/share-steps-between-test-cases.md",
-      "redirect_url": "/azure/devops/test/mtm/share-steps-between-test-cases",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/test-configurations-specifying-test-platforms.md",
-      "redirect_url": "/azure/devops/test/mtm/test-configurations-specifying-test-platforms",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/test-configurations-specifying-test-platforms",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/testing-windows-store-apps.md",
-      "redirect_url": "/azure/devops/test/mtm/testing-microsoft-store-apps",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/testing-microsoft-store-apps",
       "redirect_document_id": false
     },
     {
@@ -4642,17 +4642,17 @@
     },
     {
       "source_path": "docs/pipelines/test/test-with-unified-agent-and-phases.md",
-      "redirect_url": "/azure/devops/pipelines/test/set-up-continuous-test-environments-builds",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core#run-your-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/test/run-tests-in-parallel.md",
-      "redirect_url": "/azure/devops/pipelines/test/set-up-continuous-test-environments-builds",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core#run-your-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/test/run-automated-tests-with-microsoft-test-manager.md",
-      "redirect_url": "/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager",
       "redirect_document_id": false
     },
     {
@@ -4667,7 +4667,7 @@
     },
     {
       "source_path": "docs/pipelines/test/associate-automated-results-with-requirements.md",
-      "redirect_url": "/azure/devops/test/associate-automated-results-with-requirements",
+      "redirect_url": "/azure/devops/pipelines/test/requirements-traceability",
       "redirect_document_id": false
     },
     {
@@ -4777,7 +4777,7 @@
     },
     {
       "source_path": "docs/manual-test/getting-started/record-play-back-manual-tests.md",
-      "redirect_url": "/azure/devops/test/mtm/record-play-back-manual-tests",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/record-play-back-manual-tests",
       "redirect_document_id": false
     },
     {
@@ -4797,52 +4797,52 @@
     },
     {
       "source_path": "docs/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests.md",
-      "redirect_url": "/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/manual-test/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md",
-      "redirect_url": "/azure/devops/test/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md",
-      "redirect_url": "/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/manual-test/mtm/exploratory-testing-using-microsoft-test-manager.md",
-      "redirect_url": "/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/manual-test/mtm/guidance-mtm-usage.md",
-      "redirect_url": "/azure/devops/test/mtm/guidance-mtm-usage",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/guidance-mtm-usage",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/manual-test/mtm/plan-manual-tests-with-microsoft-test-manager.md",
-      "redirect_url": "/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/manual-test/mtm/run-manual-tests-with-microsoft-test-manager.md",
-      "redirect_url": "/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/manual-test/mtm/share-steps-between-test-cases.md",
-      "redirect_url": "/azure/devops/test/mtm/share-steps-between-test-cases",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/manual-test/mtm/test-configurations-specifying-test-platforms.md",
-      "redirect_url": "/azure/devops/test/mtm/test-configurations-specifying-test-platforms",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/test-configurations-specifying-test-platforms",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/manual-test/mtm/testing-microsoft-store-apps.md",
-      "redirect_url": "/azure/devops/test/mtm/testing-microsoft-store-apps",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/testing-microsoft-store-apps",
       "redirect_document_id": false
     },
     {
@@ -5922,7 +5922,7 @@
     },
     {
       "source_path": "docs/manual-test/mtm/testing-windows-store-apps.md",
-      "redirect_url": "/azure/devops/test/mtm/testing-microsoft-store-apps",
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/testing-microsoft-store-apps",
       "redirect_document_id": false
     },
     {
@@ -7327,8 +7327,8 @@
     },
     {
       "source_path": "docs/build-release/test/associate-automated-results-with-requirements.md",
-      "redirect_url": "/azure/devops/test/associate-automated-results-with-requirements",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/test/requirements-traceability",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/associate-automated-test-with-test-case.md",
@@ -7362,8 +7362,8 @@
     },
     {
       "source_path": "docs/build-release/test/getting-started-with-continuous-testing.md",
-      "redirect_url": "/azure/devops/pipelines/test/getting-started-with-continuous-testing",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/ecosystems/dotnet-core#run-your-tests",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/index.md",
@@ -7377,8 +7377,8 @@
     },
     {
       "source_path": "docs/build-release/test/reference-qa.md",
-      "redirect_url": "/azure/devops/pipelines/test/reference-qa",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/test/set-up-continuous-test-environments-builds#use-build",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/review-continuous-test-results-after-build.md",
@@ -7392,8 +7392,8 @@
     },
     {
       "source_path": "docs/build-release/test/run-automated-tests-with-microsoft-test-manager.md",
-      "redirect_url": "/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager",
-      "redirect_document_id": true
+      "redirect_url": "/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/test/run-tests-in-parallel.md",
@@ -8362,7 +8362,7 @@
     },
     {
       "source_path": "docs/accounts/delete-users-from-services-aad.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-users-from-services-azure-ad",
+      "redirect_url": "/azure/active-directory/fundamentals/add-users-azure-active-directory",
       "redirect_document_id": false
     },
     {
@@ -8452,7 +8452,7 @@
     },
     {
       "source_path": "docs/accounts/manage-conditional-access.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-conditional-access",
+      "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies",
       "redirect_document_id": false
     },
     {
@@ -11422,7 +11422,7 @@
     },
     {
       "source_path": "docs/organizations/accounts/delete-users-from-services-aad.md",
-      "redirect_url": "/azure/devops/organizations/accounts/delete-users-from-services-azure-ad",
+      "redirect_url": "/azure/active-directory/fundamentals/add-users-azure-active-directory",
       "redirect_document_id": false
     },
     {
@@ -12142,7 +12142,7 @@
     },
     {
       "source_path": "docs/extend/reference/client/api/TFS/Core/Contracts/TeamProjectReference.md",
-      "redirect_url": "/azure/devops/extend/reference/client/api/TFS/DistributedTask/Contracts/TeamProjectReference",
+      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/TFS/DistributedTask/Contracts/TeamProjectReference",
       "redirect_document_id": false
     },
     {
