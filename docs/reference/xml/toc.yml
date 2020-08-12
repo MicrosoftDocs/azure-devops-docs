@@ -127,4 +127,4 @@
   - name: Update the workflow for agile projects
     href: update-the-workflow-for-agile-team-projects.md
   - name: Use team fields instead of area paths
-    href: ../use-team-fields-instead-area-paths.md
+    href: /previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths
