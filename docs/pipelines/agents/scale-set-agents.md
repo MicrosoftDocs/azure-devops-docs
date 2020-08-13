@@ -299,24 +299,24 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
         ```
 
       2. Shut down the VM
-        ```azurecli
-        az vm stop --resource-group <myResourceGroup> --name <MyVM>
-        ```
+         ```azurecli
+         az vm stop --resource-group <myResourceGroup> --name <MyVM>
+         ```
 
       3. Deallocate the VM
-        ```azurecli
-        az vm deallocate --resource-group <myResourceGroup> --name <MyVM>
-        ```
+         ```azurecli
+         az vm deallocate --resource-group <myResourceGroup> --name <MyVM>
+         ```
     
       4. Convert to a managed disk
-        ```azurecli
-        az vm convert --resource-group <myResourceGroup> --name <MyVM>
-        ```
+         ```azurecli
+         az vm convert --resource-group <myResourceGroup> --name <MyVM>
+         ```
 
       5. Restart the VM
-        ```azurecli
-        az vm start --resource-group <myResourceGroup> --name <MyVM>
-        ```
+         ```azurecli
+         az vm start --resource-group <myResourceGroup> --name <MyVM>
+         ```
     
 1. Remote Desktop (or SSH) to the VM's public IP address to customize the image.
    You may need to open ports in the firewall to unblock the RDP (3389) or SSH (22) ports.
