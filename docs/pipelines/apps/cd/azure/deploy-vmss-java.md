@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 
 # Tutorial: Deploy a Java app to a virtual machine scale set
 
-A [virtual machine scale set](https://docs.microsoft.com/azure/virtual-machine-scale-sets/overview) lets you deploy and manage identical, auto-scaling virtual machines. 
+A [virtual machine scale set](https://docs.microsoft.com/azure/virtual-machine-scale-sets/overview) lets you deploy and manage identical, autoscaling virtual machines. 
 
 VMs are created as needed in a scale set. You define rules to control how and when VMs are added or removed from the scale set. These rules can be triggered based on metrics such as CPU load, memory usage, or network traffic.
 
@@ -27,8 +27,9 @@ Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
 - A forked GitHub repo with the example java project. Fork the [pipelines-java repository](https://github.com/MicrosoftDocs/pipelines-java).
-- 
-## Set up your Java Pipeline
+- Packer deployment file 
+
+## Set up your Java pipeline
 
  1. Sign in to your Azure DevOps organization and navigate to your project.
  [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
@@ -50,103 +51,161 @@ Before you begin, you need:
 
 4. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
+5. Update your pipeline to include the `CopyFiles@2` and `PublishBuildArtifacts@1` tasks. This will create an artifact that you can deploy to your virtual machine scale set.
 
-## Create a virtual machine scale set
+```yaml
+trigger:
+- master
 
-Before you can create a scale set, create a resource group with [az group create](/cli/azure/group#az-group-create). The following example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'package'
+
+- task: CopyFiles@2
+  displayName: Copy Files
+  inputs:
+    SourceFolder: $(system.defaultworkingdirectory)
+    Contents: '**'
+    TargetFolder: $(build.artifactstagingdirectory)   
+
+- task: PublishBuildArtifacts@1
+  displayName: Publish Artifact
+  inputs:
+    PathtoPublish: $(build.artifactstagingdirectory) 
+```
+
+## Create a custom image and upload it to Azure
+
+You need a resource group and a storage account for your custom image. 
+
+Create a resource group with [az group create](/cli/azure/group#az-group-create). The following example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
 
 ```azurecli-interactive
 az group create --name myVMSSResourceGroup --location eastus2
 ```
 
-Next, you 
-
-
-
-## Create a Java app
-
-<!-- 
-## Create an app to scale
-For production use, you may wish to [Create a custom VM image](tutorial-custom-images.md) that includes your application installed and configured. For this tutorial, lets customize the VMs on first boot to quickly see a scale set in action.
-
-In a previous tutorial, you learned [How to customize a Linux virtual machine on first boot](tutorial-automate-vm-deployment.md) with cloud-init. You can use the same cloud-init configuration file to install NGINX and run a simple 'Hello World' Node.js app.
-
-In your current shell, create a file named *cloud-init.txt* and paste the following configuration. For example, create the file in the Cloud Shell not on your local machine. Enter `sensible-editor cloud-init.txt` to create the file and see a list of available editors. Make sure that the whole cloud-init file is copied correctly, especially the first line:
-
-```yaml
-#cloud-config
-package_upgrade: true
-packages:
-  - nginx
-  - nodejs
-  - npm
-write_files:
-  - owner: www-data:www-data
-  - path: /etc/nginx/sites-available/default
-    content: |
-      server {
-        listen 80;
-        location / {
-          proxy_pass http://localhost:3000;
-          proxy_http_version 1.1;
-          proxy_set_header Upgrade $http_upgrade;
-          proxy_set_header Connection keep-alive;
-          proxy_set_header Host $host;
-          proxy_cache_bypass $http_upgrade;
-        }
-      }
-  - owner: azureuser:azureuser
-  - path: /home/azureuser/myapp/index.js
-    content: |
-      var express = require('express')
-      var app = express()
-      var os = require('os');
-      app.get('/', function (req, res) {
-        res.send('Hello World from host ' + os.hostname() + '!')
-      })
-      app.listen(3000, function () {
-        console.log('Hello world app listening on port 3000!')
-      })
-runcmd:
-  - service nginx restart
-  - cd "/home/azureuser/myapp"
-  - npm init
-  - npm install express -y
-  - nodejs index.js
-```
-
-
-## Create a scale set
-Before you can create a scale set, create a resource group with [az group create](/cli/azure/group#az-group-create). The following example creates a resource group named *myResourceGroupScaleSet* in the *eastus* location:
+Next, create a new storage account. The following example creates a storage account named `VMSSStorageAccount`.
 
 ```azurecli-interactive
-az group create --name myResourceGroupScaleSet --location eastus
+az storage account create \
+  --name VMSSStorageAccount \
+  --resource-group myVMSSResourceGroup \
+  --location eastus2 \
+  --sku Standard_LRS \
+  --encryption blob
 ```
 
-Now create a virtual machine scale set with [az vmss create](/cli/azure/vmss#az-vmss-create). The following example creates a scale set named *myScaleSet*, uses the cloud-init file to customize the VM, and generates SSH keys if they do not exist:
+### Create a service principal
+
+Create a service principal to generate values that you will use when you create an image. 
+
+  ```azurecli-interactive
+   az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/YOUR_SUBSCRIPTION_ID"
+  ```
+From the output, copy the `appId`, `password`, and `tenant`. 
+
+### Create the custom image
+
+To create a custom image, you can use the Build Machine Image task. This task builds a machine image using Packer. For that to work, you first need to add a Packer template to your repository. Add the template at the root level of your repository.
+
+1. Copy `packer-template.json` file into your repository. 
+
+```json
+{
+	"builders": [{
+		"type": "azure-arm",
+		"subscription_id": "{{ user `subscription_id`}}",
+		"client_id": "{{user `client_id`}}",
+		"client_secret": "{{user `client_secret`}}",
+		"tenant_id": "{{user `tenant_id`}}",
+		"managed_image_resource_group_name": "java-vmss",
+		"managed_image_name": "{{ user `managed_image_name` }}",
+		"os_type": "Linux",
+		"image_publisher": "Canonical",
+		"image_offer": "UbuntuServer",
+		"image_sku": "16.04-LTS",
+		"azure_tags": {
+			"dept": "vmss",
+			"task": "Image deployment"
+		},
+		"location": "East US",
+		"vm_size": "Standard_B1ms"
+	}],
+	"provisioners": [{
+		"execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
+		"inline": [
+
+
+
+			"apt-get update",
+			"curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash",
+			"source ~/.profile",
+			"nvm --version",
+			"nvm install 10",
+
+
+			"/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
+		],
+		"inline_shebang": "/bin/sh -x",
+		"type": "shell"
+	}]
+}
+```
+
+2. Add the `PackerBuild@1` task at the bottom of your YAML file. You will use the `appId`, `password`, and `tenant` values from your service principal. Use the `appId` for the `client_id`, `password` for `client_secret` and  `tenant` for `tenant_id`. 
+
+    * templateType: `custom`
+    * customTemplateLocation: `'$(System.DefaultWorkingDirectory)/packer-template.json'`
+    * customTemplateParameters: '{"subscription_id":"`yoursubscriptionid`","client_id":"`appId`","client_secret":"`password`","tenant_id":"`tenant`","managed_image_name":"vmss-image-$(Build.BuildId)"}'
+    ConnectedServiceName: '`yourserviceprincipal`'
+    location: '`eastus2`' # or your location
+    storageAccountName: '`myVMSSResourceGroup`'
+    azureResourceGroup: '`VMSSStorageAccount`'
+    packagePath: '`$(build.artifactstagingdirectory)`'
+    deployScriptPath: ''
+
+3. Run the pipeline to generate your first image.
+ 
+## Create a virtual machine scale set
+
+1. Go to the Azure portal UI and find the custom image you created.   
+    1. Open `myVMSSResourceGroup`.
+    1. Select the scale set in your resource group.
+    1. Copy the **Resource ID**.
+
+2. Create a virtual machine scale set with [az virtual machine scale set create](/cli/azure/vmss#az-vmss-create). The following example creates a scale set named `vmssScaleSet` and generates SSH keys if they do not exist:
 
 ```azurecli-interactive
 az vmss create \
-  --resource-group myResourceGroupScaleSet \
-  --name myScaleSet \
-  --image UbuntuLTS \
-  --upgrade-policy-mode automatic \
-  --custom-data cloud-init.txt \
-  --admin-username azureuser \
-  --generate-ssh-keys
+   --resource-group myVMSSResourceGroup \
+   --name vmssScaleSet \
+   --image "RESOURCE_ID"
+   --specialized
+   --admin-username azureuser \
+   --generate-ssh-keys
 ```
 
 It takes a few minutes to create and configure all the scale set resources and VMs. There are background tasks that continue to run after the Azure CLI returns you to the prompt. It may be another couple of minutes before you can access the app.
 
-
-## Allow web traffic
-A load balancer was created automatically as part of the virtual machine scale set. The load balancer distributes traffic across a set of defined VMs using load balancer rules. You can learn more about load balancer concepts and configuration in the next tutorial, [How to load balance virtual machines in Azure](tutorial-load-balancer.md).
+### Allow web traffic
+A load balancer was created automatically as part of the virtual machine scale set. The load balancer distributes traffic across a set of defined VMs using load balancer rules. 
 
 To allow traffic to reach the web app, create a rule with [az network lb rule create](/cli/azure/network/lb/rule#az-network-lb-rule-create). The following example creates a rule named *myLoadBalancerRuleWeb*:
 
 ```azurecli-interactive
 az network lb rule create \
-  --resource-group myResourceGroupScaleSet \
+  --resource-group myVMSSResourceGroup \
   --name myLoadBalancerRuleWeb \
   --lb-name myScaleSetLB \
   --backend-pool-name myScaleSetLBBEPool \
@@ -156,72 +215,23 @@ az network lb rule create \
   --protocol tcp
 ```
 
-## Test your app
-To see your Node.js app on the web, obtain the public IP address of your load balancer with [az network public-ip show](/cli/azure/network/public-ip#az-network-public-ip-show). The following example obtains the IP address for *myScaleSetLBPublicIP* created as part of the scale set:
+## Deploy updates to the virtual machine scale set 
 
-```azurecli-interactive
-az network public-ip show \
-    --resource-group myResourceGroupScaleSet \
-    --name myScaleSetLBPublicIP \
-    --query [ipAddress] \
-    --output tsv
+Add a PowerShell task to your pipeline to deploy updates to the scale set. Add the task at the end of the pipeline. 
+
+```yml
+- task: AzurePowerShell@5
+  inputs:
+    azureSubscription: '`YOUR_SUBSCRIPTION_ID`'
+    ScriptType: 'InlineScript'
+    Inline: 'az vmss update --resource-group myVMSSResourceGroup --name vmssScaleSet --set virtualMachineProfile.storageProfile.imageReference.id=/subscriptions/YOUR_SUBSCRIPTION_ID/myVMSSResourceGroup/providers/Microsoft.Compute/images/vmss-image-$(Build.BuildId)'
+    azurePowerShellVersion: 'LatestVersion'
 ```
+## Clean up resources
 
-Enter the public IP address in to a web browser. The app is displayed, including the hostname of the VM that the load balancer distributed traffic to:
+Go to the Azure portal and delete your resource group, `myVMSSResourceGroup`.
 
-![Running Node.js app](./media/tutorial-create-vmss/running-nodejs-app.png)
+## Next steps
+> [!div class="nextstepaction"]
+> [Learn more about virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/overview)
 
-To see the scale set in action, you can force-refresh your web browser to see the load balancer distribute traffic across all the VMs running your app.
-
-
-## Management tasks
-Throughout the lifecycle of the scale set, you may need to run one or more management tasks. Additionally, you may want to create scripts that automate various lifecycle-tasks. The Azure CLI provides a quick way to do those tasks. Here are a few common tasks.
-
-### View VMs in a scale set
-To view a list of VMs running in your scale set, use [az vmss list-instances](/cli/azure/vmss#az-vmss-list-instances) as follows:
-
-```azurecli-interactive
-az vmss list-instances \
-  --resource-group myResourceGroupScaleSet \
-  --name myScaleSet \
-  --output table
-```
-
-The output is similar to the following example:
-
-```bash
-  InstanceId  LatestModelApplied    Location    Name          ProvisioningState    ResourceGroup            VmId
-------------  --------------------  ----------  ------------  -------------------  -----------------------  ------------------------------------
-           1  True                  eastus      myScaleSet_1  Succeeded            MYRESOURCEGROUPSCALESET  c72ddc34-6c41-4a53-b89e-dd24f27b30ab
-           3  True                  eastus      myScaleSet_3  Succeeded            MYRESOURCEGROUPSCALESET  44266022-65c3-49c5-92dd-88ffa64f95da
-```
-
-
-### Manually increase or decrease VM instances
-To see the number of instances you currently have in a scale set, use [az vmss show](/cli/azure/vmss#az-vmss-show) and query on *sku.capacity*:
-
-```azurecli-interactive
-az vmss show \
-    --resource-group myResourceGroupScaleSet \
-    --name myScaleSet \
-    --query [sku.capacity] \
-    --output table
-```
-
-You can then manually increase or decrease the number of virtual machines in the scale set with [az vmss scale](/cli/azure/vmss#az-vmss-scale). The following example sets the number of VMs in your scale set to *3*:
-
-```azurecli-interactive
-az vmss scale \
-    --resource-group myResourceGroupScaleSet \
-    --name myScaleSet \
-    --new-capacity 3
-```
-
-### Get connection info
-To obtain connection information about the VMs in your scale sets, use [az vmss list-instance-connection-info](/cli/azure/vmss#az-vmss-list-instance-connection-info). This command outputs the public IP address and port for each VM that allows you to connect with SSH:
-
-```azurecli-interactive
-az vmss list-instance-connection-info \
-    --resource-group myResourceGroupScaleSet \
-    --name myScaleSet
-``` -->
