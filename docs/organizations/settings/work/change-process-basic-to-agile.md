@@ -96,16 +96,6 @@ You can customize Kanban boards to display intermediate columns. For each column
    > [!div class="mx-imgBorder"]  
    > ![Columns dialog, corrected](media/change-process/kanban-stories-column-settings-corrected.png)
 
-<!---
-  > [!div class="mx-imgBorder"]
-  > ![Wizard](media/change-process/change-process-basic-to-agile-wizard.gif)
-
-5. Update the [board settings](../../../boards/get-started/customize-boards.md) for each board so that the column to state mapping is correct.
-
-  > [!div class="mx-imgBorder"]
-  > ![Scrum Inherited WITs](media/change-process/change-process-basic-to-agile-board-config.gif)
-
--->
 
 ## Update work items
 
@@ -152,12 +142,6 @@ Your next step is to bulk update work items. The recommended sequence is:
 
 1. When done, make sure you save all your changes. Choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Save items**.
 
-<!---
-
-  > [!div class="mx-imgBorder"]  
-  > ![Update Work Items](media/change-process/change-process-basic-to-agile-update-work-items.gif)
-
--->
 
 ## Verify your changes
 
