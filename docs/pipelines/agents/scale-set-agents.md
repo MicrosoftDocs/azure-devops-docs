@@ -283,7 +283,7 @@ Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set 
 
 If you just want to create a scale set with the default 128 GB OS disk using a publicly available Azure image, then skip straight to step 6 and use the public image name (UbuntuLTS, Win2019DataCenter, etc.) to create the scale set. Otherwise follow these steps to customize your VM image.
 
-1. Create a VM with your desired OS image and optionally expand the OS disk size from 128 GB to <myDiskSizeGb>.
+1. Create a VM with your desired OS image and optionally expand the OS disk size from 128 GB to `<myDiskSizeGb>`.
 
     - If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
     
@@ -320,20 +320,20 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
 2. Remote Desktop (or SSH) to the VM's public IP address to customize the image.
    You may need to open ports in the firewall to unblock the RDP (3389) or SSH (22) ports.
 
-   - [Windows] If <MyDiskSizeGb> is greater than 128 GB, extend the OS disk size to fill the disk size you declared above.
+   2.1 [Windows] If `<MyDiskSizeGb>` is greater than 128 GB, extend the OS disk size to fill the disk size you declared above.
    
         Open DiskPart tool as administrator and run these DiskPart commands:
         - `list volume`  (to see the volumes)
         - `select volume 2` (depends on which volume is the OS drive)
         - `extend size 72000` (to extend the drive by 72 GB, from 128 GB to 200 GB)
           
-   - Install any additional software on the VM
+   2.2 Install any additional software on the VM
 
-   - To customize the permissions of the pipeline agent user, you can create a user named `AzDevOps`, and grant that user the permissions you require. This user will be created by the scaleset agent startup script if it does not already exist.
+   2.3 To customize the permissions of the pipeline agent user, you can create a user named `AzDevOps`, and grant that user the permissions you require. This user will be created by the scaleset agent startup script if it does not already exist.
 
-   - Reboot the VM when finished with customizations
+   2.4 Reboot the VM when finished with customizations
    
-   - Generalize the VM. 
+   2.5 Generalize the VM. 
        
         - **Windows** - From an admin console window: `C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown`
         - **Linux** - `sudo waagent -deprovision+user -force`
