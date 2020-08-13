@@ -321,12 +321,13 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
 1. Remote Desktop (or SSH) to the VM's public IP address to customize the image.
    You may need to open ports in the firewall to unblock the RDP (3389) or SSH (22) ports.
 
-   - **Windows** - If `<MyDiskSizeGb>` is greater than 128 GB, extend the OS disk size to fill the disk size you declared above.
+   1. **Windows** - If `<MyDiskSizeGb>` is greater than 128 GB, extend the OS disk size to fill the disk size you declared above.
    
-     Open DiskPart tool as administrator and run these DiskPart commands:
-     - `list volume` (to see the volumes)
-     - `select volume 2` (depends on which volume is the OS drive)
-     - `extend size 72000` (to extend the drive by 72 GB, from 128 GB to 200 GB)
+      Open DiskPart tool as administrator and run these DiskPart commands:
+      
+      1. `list volume` (to see the volumes)
+      1. `select volume 2` (depends on which volume is the OS drive)
+      1. `extend size 72000` (to extend the drive by 72 GB, from 128 GB to 200 GB)
           
 1. Install any additional software on the VM.
 
