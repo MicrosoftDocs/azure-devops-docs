@@ -1027,8 +1027,9 @@ Use features supported by these familiar clients to manage your project and illu
         **Build summary charts**  
         View real-time build status and <a href="../report/add-widget-to-dashboard.md" data-raw-source="[add build summary charts to your dashboards](../report/add-widget-to-dashboard.md)">add build summary charts to your dashboards</a>.
     :::column-end:::
-:::row-end:::
+:::row-end:::  
 
+<br>
 <table>
 <tbody>
 <tr valign="top">
