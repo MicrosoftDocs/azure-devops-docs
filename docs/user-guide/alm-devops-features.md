@@ -5,8 +5,8 @@ description: Comprehensive index to all features for Azure DevOps
 ms.technology: devops-new-user  
 ms.article: quickstart
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
-ms.author: chcomley
-author: chcomley
+ms.author: v-jenkir
+author: JKirsch1
 ms.topic: reference
 ms.date: 05/28/2019
 monikerRange: '>= tfs-2013'
@@ -1011,6 +1011,28 @@ Use features supported by these familiar clients to manage your project and illu
 <tr valign="top">
 <td width="32%">
 
+:::row:::
+    :::column:::
+        **Define builds**  
+        Start from a build template and customize your build from there. Build for <a href="../pipelines/apps/windows/dot-net.md" data-raw-source="[Windows](../pipelines/apps/windows/dot-net.md)">Windows</a>, <a href="../pipelines/apps/mobile/xcode-ios.md" data-raw-source="[iOS](../pipelines/apps/mobile/xcode-ios.md)">iOS</a>, Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. <a href="../pipelines/apps/mobile/xamarin.md" data-raw-source="[Build Xamarin apps](../pipelines/apps/mobile/xamarin.md)">Build Xamarin apps</a> for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.  
+        **Customize build process using scripts**
+    :::column-end:::
+    :::column:::
+        **Specify your build steps**  
+        Add steps to specify what you <a href="../pipelines/tasks/index.md#build" data-raw-source="[want to build](../pipelines/tasks/index.md#build)">want to build</a>, the <a href="../pipelines/tasks/index.md#test" data-raw-source="[tests to run](../pipelines/tasks/index.md#test)">tests to run</a>, and <a href="../pipelines/tasks/index.md" data-raw-source="[all the other steps](../pipelines/tasks/index.md)">all the other steps</a> needed to complete the process.  
+        pipelines\tasks\build\media  
+        :::image type="icon" source="../pipelines/tasks/build/media/android-build.png":::
+        &#160;&#160;<a href="../pipelines/tasks/build/gradle.md" data-raw-source="[Build an Android app using Gradle](../pipelines/tasks/build/gradle.md)">Build an Android app using Gradle</a>  
+        :::image type="icon" source="../pipelines/tasks/build/media/android-signing.png":::
+        &#160;&#160;<a href="../pipelines/tasks/build/android-signing.md" data-raw-source="[Sign and align Android APK files](../pipelines/tasks/build/android-signing.md)">Sign and align Android APK files</a>
+    :::column-end:::
+    :::column:::
+        **Continuous integration builds**  
+        <a href="../pipelines/build/triggers.md#ci" data-raw-source="[Define a CI build](../pipelines/build/triggers.md#ci)">Define a CI build</a> that compiles and tests your solutions whenever your team checks in code.  
+        **Build summary charts**  
+        View real-time build status and <a href="../report/add-widget-to-dashboard.md" data-raw-source="[add build summary charts to your dashboards](../report/add-widget-to-dashboard.md)">add build summary charts to your dashboards</a>.
+    :::column-end:::
+:::row-end:::
 
 <p><b>Define builds</b></p>
 <p>Start from a build template and customize your build from there. Build for <a href="../pipelines/apps/windows/dot-net.md" data-raw-source="[Windows](../pipelines/apps/windows/dot-net.md)">Windows</a>, <a href="../pipelines/apps/mobile/xcode-ios.md" data-raw-source="[iOS](../pipelines/apps/mobile/xcode-ios.md)">iOS</a>, Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. <a href="../pipelines/apps/mobile/xamarin.md" data-raw-source="[Build Xamarin apps](../pipelines/apps/mobile/xamarin.md)">Build Xamarin apps</a> for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.</p>
