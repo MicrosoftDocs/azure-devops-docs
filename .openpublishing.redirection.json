@@ -187,7 +187,7 @@
     },
     {
       "source_path": "docs/package/install.md",
-      "redirect_url": "/azure/devops/artifacts/install",
+      "redirect_url": "/azure/devops/artifacts/maven/install",
       "redirect_document_id": false
     },
     {
@@ -1102,7 +1102,7 @@
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-aspnet-core-docker.md",
-      "redirect_url": "/azure/devops/pipelines/ecosystems/docker",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/containers/build-image",
       "redirect_document_id": false
     },
     {
@@ -11002,7 +11002,7 @@
     },
     {
       "source_path": "docs/work/track/my-shared-queries.md",
-      "redirect_url": "/azure/devops/boards/queries/my-shared-queries",
+      "redirect_url": "/azure/devops/boards/queries/using-queries",
       "redirect_document_id": false
     },
     {
@@ -11127,7 +11127,7 @@
     },
     {
       "source_path": "docs/work/scrum/scrum-sprint-planning-tools.md",
-      "redirect_url": "/azure/devops/sprints/scrum-overview",
+      "redirect_url": "/azure/devops/boards/sprints/scrum-overview",
       "redirect_document_id": false
     },
     {
@@ -12717,7 +12717,7 @@
     },
     {
       "source_path": "docs/boards/sprints/scrum-sprint-planning-tools.md",
-      "redirect_url": "/azure/devops/sprints/scrum-overview",
+      "redirect_url": "/azure/devops/boards/sprints/scrum-overview",
       "redirect_document_id": false
     },
     {
