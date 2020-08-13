@@ -115,29 +115,6 @@ You can customize Kanban boards to display intermediate columns. For each column
    > [!div class="mx-imgBorder"]  
    > ![Open team Kanban board](media/agile-to-scrum/board-column-settings-fixed.png)
 
-<!---
-
-  > [!div class="mx-imgBorder"]
-  > ![Change Process Wizard](media/change-process/change-process-wizard.gif)
-
-4. Update the [board settings](../../../boards/get-started/customize-boards.md) for each board so that the column to state mapping is correct.
-
-  > [!div class="mx-imgBorder"]
-  > ![Board Configuration](media/change-process/change-process-agile-to-scrum-board-config.gif)
-
-5. [Create a query](../../../boards/queries/using-queries.md) to get a list of all User Stories. Sort the list by state value. Highlight all User Stories and do a [change type](../../../boards/backlogs/move-change-type.md#change-type) to Product Backlog Item. Next do a [bulk edit](../../../boards/backlogs/bulk-modify-work-items.md) to update work items to the right state for the Product Backlog Item type. For example: Active would change to Committed. Do this for each state, one state at a time.
-
-6. Adjust query to show only Issues. Highlight all Issue work items and a change type to be an Impediment. Do a bulk edit to update work items to the right state for the Impediment type. Do this for each state, one state at a time.
-
-7. Adjust query to only show Tasks. Use bulk edit to update state value for all Tasks, one state at a time. Rinse and repeat the same process for Bugs, Epics, and Features.
-
-  > [!div class="mx-imgBorder"]
-  > ![Update Work Items](media/change-process/change-process-agile-to-scrum-update-work-items.gif)
-
-8. [Change the process used by the project](./manage-process.md#change-the-process-used-by-a-project) to use the system Scrum process
-
-
--->
 
 ## Update work items
 

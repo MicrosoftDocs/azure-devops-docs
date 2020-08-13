@@ -60,7 +60,7 @@ You always add a field to an existing work item type.
 
     <img src="media/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 1px solid #C3C3C3;" /> 
 
-	Additional data types you can add include: [Picklist](customize-process-field.md#add-a-picklist)(customize-process-field.md#add-a-pick-list), [Identity](customize-process-field.md#add-an-identity-field), [Rich-text, HTML](customize-process-field.md#add-a-rich-text-html-field), [Checkbox](customize-process-field.md#add-a-checkbox-field).  
+	Additional data types you can add include: [Picklist](customize-process-field.md#add-a-picklist), [Identity](customize-process-field.md#add-an-identity-field), [Rich-text, HTML](customize-process-field.md#add-a-rich-text-html-field), and [Checkbox](customize-process-field.md#add-a-checkbox-field).  
 
 	<a id="options">  </a>  
 1.	(Optional) On the **Options** tab, indicate if the field is required and specify a default value. Or leave these blank. 
