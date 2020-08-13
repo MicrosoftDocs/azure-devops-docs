@@ -103,9 +103,8 @@ Once you have your Event Grid stream configured you can set up subscriptions on 
 ### Set up an Azure Monitor Log stream
 
 1. Create a [Log Analytics workspace](https://aka.ms/adostreamingcreateloganalytics).
-2. Open the workspace and select **Advanced settings**.
-3. Select **Connected Sources** > **Windows Server**. 
-4. Make note of the workspace ID and primary key.
+2. Open the workspace and select **Agents management**.
+3. Make note of the workspace ID and primary key.
 
    :::image type="content" source="media/auditing-streaming/azure-monitor-log-keys.png" alt-text="Make note of workspace ID and primary key":::
 
@@ -117,6 +116,9 @@ Once you have your Event Grid stream configured you can set up subscriptions on 
    :::image type="content" source="media/auditing-streaming/create-stream-azure-monitor-logs.png" alt-text="Enter workspace ID and primary key to create":::
 
 The stream is enabled and new events begin to flow within minutes. 
+
+> [!NOTE]
+> The default retention time for azure monitor logs is 30 days only. You can configure and chose longer retention by selecting **Data Retention** under **Usage and estimated costs** in your workspace settings. This will incur additional charges. Check the [documentation](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period) to manage usage and costs with Azure Monitor Logs for more details.
 
 ## Edit a stream
 

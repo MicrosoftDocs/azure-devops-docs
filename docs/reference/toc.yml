@@ -62,6 +62,10 @@
       href: ../reference/api-ref/open.md
     - name: WorkItem.PartialOpen method
       href: ../reference/api-ref/partialopen.md
+- name: Archived
+  items:
+  - name: Microsoft Project Field Mapping
+    href: mapping/toc.yml
 - name: Resources
   items:
   - name: Azure Boards

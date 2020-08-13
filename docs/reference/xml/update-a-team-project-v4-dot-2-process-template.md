@@ -12,7 +12,6 @@ ms.date: 12/15/2017
 
 # Update a project based on a MSF v4.2 process template 
 
-**TFS 2017 | TFS 2015 | TFS 2013** 
 [!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)]
 
 
