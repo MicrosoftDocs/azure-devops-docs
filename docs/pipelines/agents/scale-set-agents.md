@@ -336,8 +336,14 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
    
 1. Generalize the VM. 
       
-    - **Windows** - From an admin console window: `C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown`
-    - **Linux** - `sudo waagent -deprovision+user -force`
+    - **Windows** - From an admin console window: 
+      ```
+      C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown
+      ```
+    - **Linux**
+      ```
+      sudo waagent -deprovision+user -force`
+      ```
 
     > [!IMPORTANT]
     > Wait for the VM to finish generalization and shutdown. Do not proceed until the VM has stopped. Allow 60 minutes.
