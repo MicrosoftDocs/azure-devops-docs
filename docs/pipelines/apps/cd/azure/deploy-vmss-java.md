@@ -32,7 +32,7 @@ Before you begin, you need:
 ## Set up your Java pipeline
 
  1. Sign in to your Azure DevOps organization and navigate to your project.
- [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
+ [!INCLUDE [include](../../../ecosystems/includes/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **Maven**.
 
