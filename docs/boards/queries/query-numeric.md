@@ -310,7 +310,7 @@ The following table describes the activity-based and numeric fields that you can
 <tr>
     <td><p>Requires Test</p></td>
     <td><p>Indicates the task requires a test. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
-<p>Reference name=&quot;Microsoft.VSTS.CMMI.RequiresTest, Data type=String</p>
+<p>Reference name=Microsoft.VSTS.CMMI.RequiresTest, Data type=String</p>
 </td>
     <td>Task (CMMI)</td>
 </tr>
