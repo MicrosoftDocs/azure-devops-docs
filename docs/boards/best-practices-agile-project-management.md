@@ -173,7 +173,7 @@ With work item tags team members can assign ad-hoc tags to work items. You can u
 
 Sprints allow your team to focus on a pre-selected set of work to be accomplished. Work you assign to a sprint appears on your team's sprint backlog. Sprint backlogs are defined only for product backlogs, not for portfolio backlogs.  
 
-Each sprint, performs the following tasks: 
+Each sprint, perform the following tasks: 
 
 - Plan each sprint with your team 
 - Ensure each work item is scoped to be completed within the sprint
@@ -218,10 +218,12 @@ With estimates assigned to each requirement, and plugging in 12 as a velocity, t
 
 With a forecast of when a feature will ship, you can update each feature's iteration path. 
 
-:::image type="content" source="media/best-practices/features-board-iteration-path-updates.png" alt-text="Features board, updated iteration paths":::
 
 > [!TIP]    
-> Quickly assign values to a feature by adding those fields to the card on the Kanban board. 
+> Quickly assign values to a feature by adding those fields to the card on the Kanban board. TO learn how, see [Customize cards](boards/customize-cards.md). 
+
+:::image type="content" source="media/best-practices/features-board-iteration-path-updates.png" alt-text="Features board, updated iteration paths":::
+
 
 
 #### Milestone planning
