@@ -261,11 +261,11 @@ Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set 
 
 1. The Azure DevOps Scale Set Agent Pool sizing job determines the pool has too few idle agents and needs to scale up. Azure Pipelines makes a call to Azure Scale Sets to increase the scale set capacity.
 
-2. The Azure Scale Set begins creating the new virtual machines. Once the virtual machines are running, Azure Scale Sets sequentially executes any installed VM extensions.
+1. The Azure Scale Set begins creating the new virtual machines. Once the virtual machines are running, Azure Scale Sets sequentially executes any installed VM extensions.
 
-3. If the Custom Script Extension is installed, it is executed before the Azure Pipelines Agent extension. If the Custom Script Extension returns a non-zero exit code, the VM creation process is aborted and will be deleted.
+1. If the Custom Script Extension is installed, it is executed before the Azure Pipelines Agent extension. If the Custom Script Extension returns a non-zero exit code, the VM creation process is aborted and will be deleted.
 
-4. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with a configuration script which can be found here. 
+1. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with a configuration script which can be found here. 
 
     - [https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh)
     - [https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/6/enableagent.ps1](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/6/enableagent.ps1)
@@ -273,9 +273,9 @@ Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set 
     > [!NOTE]
     > These URLs may change.
 
-5. The configuration script creates a local user named `AzDevOps` if the operating system is Windows Server or Linux. For Windows 10 Client OS, the agent runs as LocalSystem. The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
+1. The configuration script creates a local user named `AzDevOps` if the operating system is Windows Server or Linux. For Windows 10 Client OS, the agent runs as LocalSystem. The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
 
-6. For most scenarios, the configuration script then immediately starts the agent to run as the local user `AzDevOps`. The agent goes Online and is ready to run pipeline jobs.
+1. For most scenarios, the configuration script then immediately starts the agent to run as the local user `AzDevOps`. The agent goes Online and is ready to run pipeline jobs.
 
     If the pool is configured for interactive UI, the virtual machine reboots after the agent is configured. After reboot, the local user will auto-login and immediately start the pipelines agent. The agent then goes Online and is ready to run pipeline jobs.
 
@@ -317,55 +317,55 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
         az vm start --resource-group <myResourceGroup> --name <MyVM>
         ```
     
-2. Remote Desktop (or SSH) to the VM's public IP address to customize the image.
+1. Remote Desktop (or SSH) to the VM's public IP address to customize the image.
    You may need to open ports in the firewall to unblock the RDP (3389) or SSH (22) ports.
 
-   2.1 [Windows] If `<MyDiskSizeGb>` is greater than 128 GB, extend the OS disk size to fill the disk size you declared above.
+   - **Windows** - If `<MyDiskSizeGb>` is greater than 128 GB, extend the OS disk size to fill the disk size you declared above.
    
-        Open DiskPart tool as administrator and run these DiskPart commands:
-        - `list volume`  (to see the volumes)
-        - `select volume 2` (depends on which volume is the OS drive)
-        - `extend size 72000` (to extend the drive by 72 GB, from 128 GB to 200 GB)
+     Open DiskPart tool as administrator and run these DiskPart commands:
+     - `list volume` (to see the volumes)
+     - `select volume 2` (depends on which volume is the OS drive)
+     - `extend size 72000` (to extend the drive by 72 GB, from 128 GB to 200 GB)
           
-   2.2 Install any additional software on the VM
+1. Install any additional software on the VM.
 
-   2.3 To customize the permissions of the pipeline agent user, you can create a user named `AzDevOps`, and grant that user the permissions you require. This user will be created by the scaleset agent startup script if it does not already exist.
+1. To customize the permissions of the pipeline agent user, you can create a user named `AzDevOps`, and grant that user the permissions you require. This user will be created by the scaleset agent startup script if it does not already exist.
 
-   2.4 Reboot the VM when finished with customizations
+1. Reboot the VM when finished with customizations
    
-   2.5 Generalize the VM. 
-       
-        - **Windows** - From an admin console window: `C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown`
-        - **Linux** - `sudo waagent -deprovision+user -force`
+1. Generalize the VM. 
+      
+    - **Windows** - From an admin console window: `C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown`
+    - **Linux** - `sudo waagent -deprovision+user -force`
 
-        > [!IMPORTANT]
-        > Wait for the VM to finish generalization and shutdown. Do not proceed until the VM has stopped. Allow 60 minutes.
+      > [!IMPORTANT]
+      > Wait for the VM to finish generalization and shutdown. Do not proceed until the VM has stopped. Allow 60 minutes.
    
-3. Deallocate the VM
+1. Deallocate the VM
 
     ```azurecli
     az vm deallocate --resource-group <myResourceGroup> --name <MyVM>
     ```
      
-4. Mark the VM as Generalized
+1. Mark the VM as Generalized
 
     ```azurecli
     az vm generalize --resource-group <myResourceGroup> --name <MyVM>
     ```
 
-5. Create a VM Image based on the generalized image. When performing these steps to update an existing scaleset image, make note of the image ID url in the output.
+1. Create a VM Image based on the generalized image. When performing these steps to update an existing scaleset image, make note of the image ID url in the output.
 
     ```azurecli
     az image create  --resource-group <myResourceGroup> --name <MyImage> --source <MyVM>
     ```
 
-6. Create the scale set based on the custom VM image
+1. Create the scale set based on the custom VM image
 
     ```azurecli
     az vmss create --resource-group <myResourceGroup> --name <myScaleSet> --image <MyImage> --admin-username <myUsername> --admin-password <myPassword> --instance-count 2 --disable-overprovision --upgrade-policy-mode manual --load-balancer '""'
     ```
      
-7. Verify that both VMs created in the scale set come online, have different names, and reach the Succeeded state
+1. Verify that both VMs created in the scale set come online, have different names, and reach the Succeeded state
 
 You are now ready to create an agent pool using this scale set.
 
