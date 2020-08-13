@@ -1,5 +1,5 @@
 ---
-title: Add group rule to assign access levels, extensions
+title: Add group rule to assign access levels
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to assign access levels with group rules in Azure Active Directory and Azure DevOps.
@@ -7,15 +7,15 @@ ms.technology: devops-accounts
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/16/2020
+ms.date: 08/07/2020
 monikerRange: 'azure-devops'
 ---
 
-# Add a group rule to assign access levels and extensions
+# Add a group rule to assign access levels
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. In this article, learn how to add a group rule to assign an access level or extension to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are also used to add users to team projects and other specific groups, like Contributors, Readers, and Administrators.
+Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. In this article, learn how to add a group rule to assign an access level to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are also used to add users to team projects and other specific groups, like Contributors, Readers, and Administrators.
 
 When users leave the group, the licenses are freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
 
@@ -25,7 +25,6 @@ When users leave the group, the licenses are freed and returned to your pool. Yo
 ## Prerequisites
 
 To manage licenses and group rules, you must be a Project Collection Administrator (PCA) for the organization. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).
-To assign an extension to a user or group, a PCA must first [install the extension](../../marketplace/install-extension.md) on the organization.
 
 ## Add group rule
 
@@ -43,7 +42,7 @@ To assign an extension to a user or group, a PCA must first [install the extensi
 
    ![Select Add a group rule](media/manage-group-licensing/add-group-rule.png)
 
-5. Complete the dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access or extensions for the group. Select **Add**.
+5. Complete the dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access for the group. Select **Add**.
 
    ![Complete add a group rule dialog](media/assign-access-levels/add-group-rule-dialog-new.png)
 
@@ -60,13 +59,13 @@ A notification displays, showing the status and outcome of the rule. If the assi
    ![Highlight a group rule and select manage members](media/migrate-to-group-based-resource-management/highlight-rule-choose-manage-members.png)
 
    > [!NOTE]
-   > Leave existing automation for managing access levels or extensions for users running as-is (for example, PowerShell). The goal is to reflect the same resources that the automation is applying to those users.
+   > Leave existing automation for managing access levels for users running as-is (for example, PowerShell). The goal is to reflect the same resources that the automation is applying to those users.
 
 2. Add members, and then select **Add**.
 
    ![Add group member](media/migrate-to-group-based-resource-management/add-group-members.png)
 
-When you assign the same access level or extension to a user, the user consumes only one access level or extension. User assignments can be made both directly and through a group. No additional licenses are required.
+When you assign the same access level to a user, the user consumes only one access level. User assignments can be made both directly and through a group. No additional licenses are required.
 
 ## Verify group rule
 
@@ -133,7 +132,8 @@ Direct assignments are removed from the users.
 
 ## Related articles
 
-* [Buy and install extensions](../../marketplace/install-extension.md)
 * [Install Active Directory and Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)
+* [About accessing your organization with Azure AD](access-with-azure-ad.md)
+* [Manage Azure Active Directory groups](manage-azure-active-directory-groups.md)
 
 
