@@ -158,17 +158,21 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 
 ## Publish
 
-### Publish a package to external endpoint
+### Publish projects to specified folder
 
 ```YAML
-# Publish package to an external endpoint with a stored NuGet config file and stored credentials.
+# Publish projects to specified folder.
 - task: DotNetCoreCLI@2
+  displayName: 'dotnet publish'
   inputs:
-    command: 'publish'
-    selectOrConfig: 'config'
-    nugetConfigPath: '$(System.DefaultWorkingDirectory)/NuGet.config'
-    externalEndpoints: $(externalFeedCredential)
+    command: publish
+    publishWebProjects: false
+    projects: '**/*.csproj'
+    arguments: '-o $(Build.ArtifactStagingDirectory)/Output'
+    zipAfterPublish: true
+    modifyOutputPath: true
 ```
+
 ## Test
 
 ### Run tests in your repository

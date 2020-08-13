@@ -89,7 +89,13 @@ States you add appear in the drop-down menu for the States field shown in work i
 2. Enter the name of the State, choose its category and color, and then click **Save**. The color you specify appears throughout the product including on the work item form and when the State field appears on a backlog, boards, query results, and more.  
 
 	> [!div class="mx-imgBorder"]
-	> ![State menu in work item form](media/process/cpw-new-state-triaged.png)  
+	> ![State menu in work item form](media/process/cpw-new-state-triaged.png) 
+
+	::: moniker range="azure-devops"
+	> [!NOTE]   
+	> Any workflow state you add to the *In Progress* or *Resolved* state categories will cause the **Activated By**/**Activated Date** and **Resolved By**/**Resolved Date** fields to update with workflow state changes in and out of these categories. To learn more, see [Query by assignment or workflow changes, Activated By/Date and Resolved By/Date fields](../../../boards/queries/query-by-workflow-changes.md#activated-resolved-fields).  
+	::: moniker-end
+
 1. (Optional) To change the sequence of the State within the drop-down menu, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: context menu icon and choose **Move up** or **Move down**. 
 
 	> [!div class="mx-imgBorder"]
@@ -163,6 +169,9 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 You can view the State workflow model by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Marketplace extension. This extension adds a new hub under Boards labeled **State Visualizer**. On that page you can choose a work item type and view the workflow state model. 
 
+> [!NOTE]   
+> The State Model Visualization extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the [extension page](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization). 
+
 For example, the following image shows the Bug workflow that has been customized to have a **Triaged** state. This view illustrates the default transitions of the workflow model. All states can transition from one state to another. 
 
 > [!div class="mx-imgBorder"]  
@@ -175,6 +184,7 @@ You can zoom in and zoom out of the view. Also, you can move the state nodes aro
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+- [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md) 
 - [Add or modify a work item type](customize-process-work-item-type.md)
 - [Add and manage fields](customize-process-field.md)  
 - [Customize a form](customize-process-form.md)

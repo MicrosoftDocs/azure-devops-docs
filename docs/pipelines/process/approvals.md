@@ -73,7 +73,7 @@ The check fails if execution of the stage does not start within the **Timeout** 
 
 ## Invoke Azure function
 
-Azure functions are the serverless computation platform offered by Azure. with Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
+Azure functions are the serverless computation platform offered by Azure. With Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
 Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](../tasks/utility/azure-function.md)
 
 :::image type="content" source="media/checks/azure-function-check.png" alt-text="Configuring Azure function check.":::
@@ -168,7 +168,9 @@ You can also see the complete logs of the policy checks from the pipeline view.
 
 :::image type="content" source="media/checks/policy-check-failed-logs.png" alt-text="Viewing detailed logs.":::
 
-# FAQs
+* * *
+
+## FAQ
 
 ### The checks defined did not start. What happened?
 The evaluation of checks starts once the stage conditions are satisfied. You should confirm run of the stage started after the checks were added on the resource and that the resource is consumed in the stage.
@@ -189,4 +191,4 @@ Using the Invoke REST API check, you can add a check to wait on the API in the s
 ### How can I use output variables from previous stages in a check?
 By default, only pre-defined variables are available to checks. You can use a linked variable group to access other variables. The output variable from the previous stage can be written to the variable group and accessed in the check.
 
-* * *
+

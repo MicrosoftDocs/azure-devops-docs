@@ -1,6 +1,6 @@
 ---
 title: Publish packages to Azure Artifacts
-ms.custom: seodec18, tracking-python
+ms.custom: seodec18, devx-track-python
 description: Publish Python packages to Azure Artifacts feeds via builds with Azure Pipelines
 services: vsts
 ms.topic: conceptual
