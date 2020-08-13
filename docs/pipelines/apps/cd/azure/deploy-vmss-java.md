@@ -1,7 +1,7 @@
 ---
 title: Tutorial - Deploy to a Linux virtual machine scale set
 description: Learn how to use the Azure CLI to create and deploy a Java application on Linux VMs using a virtual machine scale set 
-ms.topic: quickstart
+ms.topic: tutorial
 ms.author: jukullam
 author: JuliaKM
 ms.date: 08/11/2020
@@ -18,7 +18,7 @@ In this tutorial, you build a Java app and deploy it to a virtual machine scale 
 
 > [!div class="checklist"]
 > * Create a virtual machine scale set
-> * Build a custom image with packer 
+> * Build a machine image with [Packer](https://www.packer.io/) 
 > * Deploy a custom image to a virtual machine scale set
 
 ## Prerequisites
@@ -31,17 +31,18 @@ Before you begin, you need:
 
 ## Set up your Java pipeline
 
- 1. Sign in to your Azure DevOps organization and navigate to your project.
- [!INCLUDE [include](../../../ecosystems/includes/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](../../../ecosystems/includes/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **Maven**.
 
-2. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+###  Customize the pipeline
+
+1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
    > ![Save and run button in a new YAML pipeline](../../../ecosystems/media/save-and-run-button-new-yaml-pipeline.png)
 
-3. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+2. You are prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
    If you want to watch your pipeline in action, select the build job.
 
@@ -49,9 +50,11 @@ Before you begin, you need:
 
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
-4. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
-5. Update your pipeline to include the `CopyFiles@2` and `PublishBuildArtifacts@1` tasks. This will create an artifact that you can deploy to your virtual machine scale set.
+### Add the Copy Files and Publish Build Artifact tasks
+
+1. Update your pipeline to include the `CopyFiles@2` and `PublishBuildArtifacts@1` tasks. This will create an artifact that you can deploy to your virtual machine scale set.
 
 ```yaml
 trigger:
@@ -89,13 +92,13 @@ steps:
 
 You need a resource group and a storage account for your custom image. 
 
-Create a resource group with [az group create](/cli/azure/group#az-group-create). The following example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
+1. Create a resource group with [az group create](/cli/azure/group#az-group-create). The following example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
 
 ```azurecli-interactive
 az group create --name myVMSSResourceGroup --location eastus2
 ```
 
-Next, create a new storage account. The following example creates a storage account named `VMSSStorageAccount`.
+2. Next, create a new storage account. The following example creates a storage account named `VMSSStorageAccount`.
 
 ```azurecli-interactive
 az storage account create \
@@ -108,16 +111,16 @@ az storage account create \
 
 ### Create a service principal
 
-Create a service principal to generate values that you will use when you create an image. 
+1. Create a service principal to generate values that you will use when you create an image. 
 
   ```azurecli-interactive
    az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/YOUR_SUBSCRIPTION_ID"
   ```
-From the output, copy the `appId`, `password`, and `tenant`. 
+2. From the output, copy the `appId`, `password`, and `tenant`. 
 
 ### Create the custom image
 
-To create a custom image, you can use the Build Machine Image task. This task builds a machine image using Packer. For that to work, you first need to add a Packer template to your repository. Add the template at the root level of your repository.
+To create a custom image, you can use the [Build Machine Image task](../../../tasks/deploy/packer-build.md). This task builds a machine image using Packer. For that to work, you first need to add a Packer template to your repository. Add the template at the root level of your repository.
 
 1. Copy `packer-template.json` file into your repository. 
 
