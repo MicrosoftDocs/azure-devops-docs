@@ -5,8 +5,8 @@ description: Comprehensive index to all features for Azure DevOps
 ms.technology: devops-new-user  
 ms.article: quickstart
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
-ms.author: v-jenkir
-author: JKirsch1
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
 ms.date: 05/28/2019
 monikerRange: '>= tfs-2013'
@@ -1017,7 +1017,7 @@ Use features supported by these familiar clients to manage your project and illu
   
         **Build agents and agent pools**  
   
-        At least one [agent](../pipelines/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you&#39;ll need more build agents organized within [agent pools](../pipelines/agents/pools-queues.md). You can use both on-premises or Microsoft-hosted agent pools.  
+        At least one [agent](../pipelines/agents/agents.md) is required to build your code. As you scale your system with more code, people, and builds, you&#39;ll need more build agents organized within [agent pools](../pipelines/agents/pools-queues.md). You can use both on-premises or Microsoft-hosted agent pools.  
   
         **Gated check-in (TFVC, Azure DevOps Services)**  
   
@@ -1025,7 +1025,7 @@ Use features supported by these familiar clients to manage your project and illu
   
         **Branch policies (Git)**  
   
-        Improve code quality by [setting branch policies](../repos/git/branch-policies.md) to ensure build are never broken or getting the right people to review changes.
+        Improve code quality by [setting branch policies](../repos/git/branch-policies.md) to ensure builds are never broken or getting the right people to review changes.
     :::column-end:::
     :::column:::
         **Specify your build steps**  
