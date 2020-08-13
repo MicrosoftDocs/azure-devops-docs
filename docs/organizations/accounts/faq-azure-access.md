@@ -111,13 +111,13 @@ See the following examples of an organization that's not connected, and then an 
 
 ![Check for a connected directory in Organization settings = Connected](/azure/devops/media/organization-connected-azure-ad.png)
 
-If your organization is connected to your organization's directory, only users from your organization's directory can join your organization. Learn [how to control organization access by using Azure AD](/azure/devops/organizations/accounts/add-users-to-azure-ad).
+If your organization is connected to your organization's directory, only users from your organization's directory can join your organization. For more information, see [Add or delete users using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory).
 
 <a name="DeleteFromDirectory"></a>
 
 ### Q: My organization controls access by using Azure Active Directory. Can I just delete users from the directory?
 
-A: Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](add-users-to-azure-ad.md#delete-users-from-your-organization-connected-to-azure-ad).
+A: Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory).
 
 ### Q: Why are "no identities found" when I try to add users from Azure AD to my Azure DevOps organization?
 
@@ -252,7 +252,7 @@ A: No, but you might be interested in our [process customization plans](https://
 
 ## Add users to directory
 
-[Add organization users to your Azure Active Directory](add-users-to-azure-ad.md).
+[Add organization users to your Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory).
 
 ### Q: Why did I get an error stating that my organization has multiple active identities with the same UPN?
 

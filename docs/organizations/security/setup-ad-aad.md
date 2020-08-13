@@ -47,10 +47,9 @@ Use this article to access articles that show you how to:
 
 ## Manage organizational access with Azure AD
 
-* [Add Azure DevOps users to your Azure AD](../../organizations/accounts/add-users-to-azure-ad.md)
+* [Add or delete users using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 * [Connect Azure DevOps organization to Azure AD](../../organizations/accounts/connect-organization-to-azure-ad.md)
 * [Disconnect Azure DevOps organization from Azure AD](../../organizations/accounts/disconnect-organization-from-azure-ad.md)
-* [Delete users from Azure DevOps connected to Azure AD](../accounts/add-users-to-azure-ad.md#delete-users-from-your-organization-connected-to-azure-ad)
 * [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) 
 
 ::: moniker-end
