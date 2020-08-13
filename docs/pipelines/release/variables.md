@@ -243,11 +243,14 @@ Custom variables can be defined at various scopes.
   In the Pipeline Variables page, open the Scope drop-down list and select "Release".
   By default, when you add a variable, it is set to Release scope.  
 
-* Share values across all of the tasks within one specific stage by using **stage variables**.
+* Share values across all of the tasks within one specific stage (i.e Dev, QA or Prod) by using **stage variables**.
   Use a stage-level variable for values that vary from stage to stage (and are the same for
   all the tasks in an stage). You define and manage these variables in the **Variables** tab of a release pipeline.
   In the Pipeline Variables page, open the Scope drop-down list and select the required stage.
   When you add a variable, set the Scope to the appropriate environment.
+  
+* If one Stage variable is left with the default Release scope, the Stage variable will not take the value of the next Stage.
+  It will remain with the highest Scope value, eventhough the other value was explicitly set for the other stage.
   
 Using custom variables at project, release pipeline, and stage scope helps you to:
 
