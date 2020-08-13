@@ -294,9 +294,9 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
     - If starting with a generalized VHD:
       1. First create the VM with an unmanaged disk of the desired size and then convert to a managed disk:
 
-        ```azurecli
-        az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myVhdUrl> --os-type windows --os-disk-size-gb <myDiskSizeGb> --use-unmanaged-disk --admin-username <myUserName> --admin-password <myPassword> --storage-account <myVhdStorageAccount>
-        ```
+         ```azurecli
+         az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myVhdUrl> --os-type windows --os-disk-size-gb <myDiskSizeGb> --use-unmanaged-disk --admin-username <myUserName> --admin-password <myPassword> --storage-account <myVhdStorageAccount>
+         ```
 
       2. Shut down the VM
          ```azurecli
@@ -340,7 +340,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
       ```
       C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown
       ```
-    - **Linux**
+    - **Linux**:
       ```
       sudo waagent -deprovision+user -force`
       ```
