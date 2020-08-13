@@ -61,7 +61,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 ##  Update the Microsoft Project Mapping file  
   
-1.  Update the Microsoft Project Mapping file to contain the field mappings you need to support rollup. For details, see [Upload or download the Microsoft Project Mapping file](../../../reference/xml/upload-or-download-the-microsoft-project-mapping-file.md).  
+1.  Update the Microsoft Project Mapping file to contain the field mappings you need to support rollup. For details, see [Upload or download the Microsoft Project Mapping file](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file).  
   
      Depending on the process template used to create your project, some of these mappings may be there already. Here's an example of fields to include:  
   
@@ -157,7 +157,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 ### Q: Where can I learn more about customizing the Microsoft Project Field Mapping file? 
  
- **A:** See [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md).  
+ **A:** See [Customize the Microsoft Project field mapping file](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file).  
   
 ### Q: What's the difference between manual and automated task scheduling? 
  

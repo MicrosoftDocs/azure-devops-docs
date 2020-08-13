@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/09/2019
+ms.date: 08/11/2020
 ---
 
 # Extension manifest reference
@@ -622,6 +622,7 @@ The Marketplace only supports badges from the following trusted services:
 If you want to show a badge from another service, please contact vsmarketplace@microsoft.com.
 
 <a name="example"></a>
+
 ## Example manifest
 
 This extension contributions an action to the completed builds context menu and a hub to the Build hub group:

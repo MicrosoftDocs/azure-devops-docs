@@ -46,7 +46,7 @@ A: Ensure you meet the prerequisites in the following article, [Connect your org
 
 A: Your work in Azure DevOps Services is associated with your credentials for Azure AD.
 After your organization is connected to your directory, users continue working seamlessly if their credential addresses appear in the connected directory.
-If users' addresses don't appear, you must [add those users to your directory](add-users-to-azure-ad.md#SetUpCurrentUsers). Your organization might have policies about adding users to the directory, so find out more first.
+If users' addresses don't appear, you must [add those users to your directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory). Your organization might have policies about adding users to the directory, so find out more first.
 
 ### Q: What if we can't use the same sign-in addresses?
 
@@ -62,7 +62,7 @@ A: [Restore the user](/azure/active-directory/active-directory-users-restore), r
 
 ## Related articles
 
-* [Add Azure DevOps Services users to Azure AD](add-users-to-azure-ad.md)
+* [Add or delete users using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 * [Connect your organization to Azure AD](connect-organization-to-aad.md)
 * [Disconnect your organization from Azure AD](disconnect-organization-from-aad.md)
 * [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)

@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 07/14/2020
+ms.date: 08/03/2020
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -769,6 +769,22 @@ steps:
     debug: true
 ```
 
+You can also use conditional insertion for variables:
+
+```yaml
+variables:
+  - name: foo
+    value: test
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "start"
+- ${{ if eq(variables.foo, 'test') }}:
+  - script: echo "this is a test"
+```
+
 ### Iterative insertion
 
 The `each` directive allows iterative insertion based on a YAML sequence (array) or mapping (key-value pairs).
@@ -856,7 +872,7 @@ If you need to escape a value that literally contains `${{`, then wrap the value
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 100 separate YAML files may be included (directly or indirectly)
-- No more than 10 megabytes of total YAML content can be included
+- No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600KB - 2MB of on-disk YAML, depending on the specific features used)
 - No more than 2000 characters per template expression are allowed
 
 ::: moniker-end
@@ -1359,7 +1375,8 @@ If you need to escape a value that literally contains `${{`, then wrap the value
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 50 separate YAML files may be included (directly or indirectly)
-- No more than 10 megabytes of total YAML content can be included
+- No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600KB - 2MB of on-disk YAML, depending on the specific features used)
+
 - No more than 2000 characters per template expression are allowed
 
 ::: moniker-end

@@ -6,6 +6,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: August 03
+          href: 2020/sprint-173-update.md
         - name: July 09
           href: 2020/sprint-172-update.md
         - name: June 18
@@ -328,7 +330,7 @@
             - name: August 6
               href: 2012/aug-06-team-services.md
 - name: Azure DevOps Server
-  href: https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019?view=azure-devops
+  href: https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2020?view=azure-devops
 - name: Documentation updates
   items:
     - name: What's new
@@ -336,6 +338,8 @@
     - name: 2020
       expanded: true
       items:
+      - name: July
+        href: docswhatsnew/azure-devops-docs-2020-07.md
       - name: June
         href: docswhatsnew/azure-devops-docs-2020-06.md
       - name: May
@@ -354,6 +358,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: August 03
+          href: 2020/boards/sprint-173-update.md
         - name: July 09
           href: 2020/boards/sprint-172-update.md
         - name: June 18
@@ -397,6 +403,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: August 03
+          href: 2020/Repos/sprint-173-update.md
         - name: May 4
           href: 2020/repos/sprint-168-update.md
         - name: April 13
@@ -440,6 +448,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: August 03
+          href: 2020/pipelines/sprint-173-update.md
         - name: July 09
           href: 2020/pipelines/sprint-172-update.md
         - name: June 18

@@ -30,6 +30,17 @@ Depending on the size of your organization and your tracking needs, you can set 
 
 For example, each feature team can be associated with a single feature area path&mdash;such as *Customer Profile*, *Shopping Cart*, *Email*&mdash;or several area paths. Each management team, which focuses on a set of features, can choose several area paths to monitor. This allows each feature team to have their distinct backlog to plan, prioritize, and track their work. And, portfolio or product owners can create their vision, road map, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies. To learn more, see [Portfolio management](../../boards/plans/portfolio-management.md). 
 
+
+## The default team
+
+Each new project is configured with a default team with the project name. For example, the *Fabrikam* project is automatically configured with the *Fabrikam* team. 
+
+Backlogs, boards, and dashboards are automatically configured for this default team so that you can start defining work items and your backlog. 
+
+You can rename the default team and you can reassign a new team as the default. 
+
+ 
+
 ## Each team gets their own set of tools 
 
 Each team you create gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work.  
