@@ -1001,94 +1001,111 @@ Use features supported by these familiar clients to manage your project and illu
 
 ## Continuous delivery
 
-
 <a id="build"></a>
 
 ### Build
 
-<table>
-<tbody>
-<tr valign="top">
-<td width="32%">
-
-
-<p><b>Define builds</b></p>
-<p>Start from a build template and customize your build from there. Build for <a href="../pipelines/apps/windows/dot-net.md" data-raw-source="[Windows](../pipelines/apps/windows/dot-net.md)">Windows</a>, <a href="../pipelines/apps/mobile/xcode-ios.md" data-raw-source="[iOS](../pipelines/apps/mobile/xcode-ios.md)">iOS</a>, Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. <a href="../pipelines/apps/mobile/xamarin.md" data-raw-source="[Build Xamarin apps](../pipelines/apps/mobile/xamarin.md)">Build Xamarin apps</a> for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.</p>
-
-<p><b>Customize build process using scripts</b></p>
-<p><a href="../pipelines/scripts/powershell.md" data-raw-source="[Use a script](../pipelines/scripts/powershell.md)">Use a script</a> to add your team&#39;s business logic to your build process.</p>
-
-
-<p><b>Build agents and agent pools </b></p>
-<p>At least one <a href="../pipelines/agents/agents.md" data-raw-source="[agent](../pipelines/agents/agents.md)">agent</a> is require to build your code. As you scale your system with more code, people, and builds, you&#39;ll need more build agents organized within <a href="../pipelines/agents/pools-queues.md" data-raw-source="[agent pools](../pipelines/agents/pools-queues.md)">agent pools</a>. You can use both on-premises or Microsoft-hosted agent pools.</p>
-
-
-<p><b>Gated check-in (TFVC, Azure DevOps Services) </b></p>
-<p>Use <a href="../pipelines/repos/tfvc.md#gated" data-raw-source="[gated check-in](../pipelines/repos/tfvc.md#gated)">gated check-in</a> to protect against breaking changes when checking code into TFVC.  </p>
-
-
-<p><b>Branch policies (Git)</b></p>
-<p>Improve code quality by <a href="../repos/git/branch-policies.md" data-raw-source="[setting branch policies](../repos/git/branch-policies.md)">setting branch policies</a> to ensure build are never broken or getting the right people to review changes. </p>
-
-
-</td>
-<td width="38%">
-<p><b>Specify your build steps</b></p>
-<p>Add steps to specify what you <a href="../pipelines/tasks/index.md#build" data-raw-source="[want to build](../pipelines/tasks/index.md#build)">want to build</a>, the <a href="../pipelines/tasks/index.md#test" data-raw-source="[tests to run](../pipelines/tasks/index.md#test)">tests to run</a>, and <a href="../pipelines/tasks/index.md" data-raw-source="[all the other steps](../pipelines/tasks/index.md)">all the other steps</a> needed to complete the process.</p>
-
-pipelines\tasks\build\media
-<p><img src="../pipelines/tasks/build/media/android-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gradle.md" data-raw-source="[Build an Android app using Gradle](../pipelines/tasks/build/gradle.md)">Build an Android app using Gradle</a></p>
-<p><img src="../pipelines/tasks/build/media/android-signing.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/android-signing.md" data-raw-source="[Sign and align Android APK files](../pipelines/tasks/build/android-signing.md)">Sign and align Android APK files</a></p>
-<p><img src="../pipelines/tasks/build/media/ant.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/ant.md" data-raw-source="[Build with Apache Ant](../pipelines/tasks/build/ant.md)">Build with Apache Ant</a> </p>
-<p><img src="../pipelines/tasks/build/media/gradle.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gradle.md" data-raw-source="[Build using a Gradle wrapper script](../pipelines/tasks/build/gradle.md)">Build using a Gradle wrapper script</a>  </p>
-<p><img src="../pipelines/tasks/build/media/grunt.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/grunt.md" data-raw-source="[Grunt: The JavaScript Task Runner](../pipelines/tasks/build/grunt.md)">Grunt: The JavaScript Task Runner</a> </p>
-<p><img src="../pipelines/tasks/build/media/gulp.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gulp.md" data-raw-source="[Gulp: Node.js task-based build system](../pipelines/tasks/build/gulp.md)">Gulp: Node.js task-based build system</a></p>
-<p><img src="../pipelines/tasks/build/media/publish-build-artifacts.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/index-sources-publish-symbols.md" data-raw-source="[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)">Index source code and publish symbols</a></p>
-<p><img src="../pipelines/tasks/build/media/maven.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/maven.md" data-raw-source="[Build with Apache Maven](../pipelines/tasks/build/maven.md)">Build with Apache Maven</a></p>
-<p><img src="../pipelines/tasks/build/media/msbuild.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/msbuild.md" data-raw-source="[Build with MSbuild](../pipelines/tasks/build/msbuild.md)">Build with MSbuild</a></p>
-<p><img src="../pipelines/tasks/build/media/sonarqube.png" alt=""/>&#160;&#160;<a href="https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/" data-raw-source="[SonarQube for MSbuild](https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/)">SonarQube for MSbuild</a></p>
-<p><img src="../pipelines/tasks/build/media/visual-studio-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/visual-studio-build.md" data-raw-source="[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)">Visual Studio and MSbuild</a></p>
-<p><img src="../pipelines/tasks/build/media/xamarin-android.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-android.md" data-raw-source="[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)">Build an Android app with Xamarin</a> </p>
-<p><img src="../pipelines/tasks/build/media/xamarin-ios.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-ios.md" data-raw-source="[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)">Build an iOS app with Xamarin on macOS</a> </p>
-
-
-<p><b>Build variables</b></p>
-<p>Use <a href="../pipelines/build/variables.md" data-raw-source="[predefined variables](../pipelines/build/variables.md)">predefined variables</a> or add your custom variables when configuring your build definition or your build scripts.</p>
-
-
-</td>
-<td width="30%">
-
-
-<p><b>Continuous integration builds</b></p>
-<p><a href="../pipelines/build/triggers.md#ci" data-raw-source="[Define a CI build](../pipelines/build/triggers.md#ci)">Define a CI build</a> that compiles and tests your solutions whenever your team checks in code.</p>
-
-
-<p><b>Build summary charts</b></p>
-<p>View real-time build status and <a href="../report/add-widget-to-dashboard.md" data-raw-source="[add build summary charts to your dashboards](../report/add-widget-to-dashboard.md)">add build summary charts to your dashboards</a>.  </p>
-<img src="media/features/alm-feature-build-summary-widget.png" alt="build summary chart"/><br/><br/>
-
-
-<p><b>Code coverage charts </b></p>
-<p>From the Code Coverage tab on a Build summary page, you can view percentage of code coverage as well as upload code coverage data in Jacoco or Cobertura formats.</p>
-
-
-<p><b>Audit changes </b></p>
-<p>Determine who <a href="../pipelines/build/history.md" data-raw-source="[changed what in the build definition and when they did it](../pipelines/build/history.md)">changed what in the build definition and when they did it</a>. </p>
-
-
-<p><b>Build retention policies</b></p>
-<p><a href="../pipelines/policies/retention.md" data-raw-source="[Define policies to automatically delete old completed builds ](../pipelines/policies/retention.md)">Define policies to automatically delete old completed builds </a> to minimize clutter.</p>
-
-<p><b>Build permissions</b></p>
-<p>Determine who can <a href="../organizations/security/permissions.md#build" data-raw-source="[define, delete, and manage builds](../organizations/security/permissions.md#build)">define, delete, and manage builds</a>.</p>
-
-
-</td>
-</tr>
-</tbody>
-</table>
-
+:::row:::
+    :::column:::
+        **Define builds**  
+  
+        Start from a build template and customize your build from there. Build for [Windows](../pipelines/apps/windows/dot-net.md), [iOS](../pipelines/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../pipelines/apps/mobile/xamarin.md) for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.  
+  
+        **Customize build process using scripts**  
+  
+        [Use a script](../pipelines/scripts/powershell.md) to add your team&#39;s business logic to your build process.  
+  
+        **Build agents and agent pools**  
+  
+        At least one [agent](../pipelines/agents/agents.md) is required to build your code. As you scale your system with more code, people, and builds, you&#39;ll need more build agents organized within [agent pools](../pipelines/agents/pools-queues.md). You can use both on-premises or Microsoft-hosted agent pools.  
+  
+        **Gated check-in (TFVC, Azure DevOps Services)**  
+  
+        Use [gated check-in](../pipelines/repos/tfvc.md#gated) to protect against breaking changes when checking code into TFVC.  
+  
+        **Branch policies (Git)**  
+  
+        Improve code quality by [setting branch policies](../repos/git/branch-policies.md) to ensure builds are never broken or getting the right people to review changes.
+    :::column-end:::
+    :::column:::
+        **Specify your build steps**  
+  
+        Add steps to specify what you [want to build](../pipelines/tasks/index.md#build), the [tests to run](../pipelines/tasks/index.md#test), and [all the other steps](../pipelines/tasks/index.md) needed to complete the process.  
+  
+        pipelines\tasks\build\media  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/android-build.png":::
+        &#160;&#160;[Build an Android app using Gradle](../pipelines/tasks/build/gradle.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/android-signing.png":::
+        &#160;&#160;[Sign and align Android APK files](../pipelines/tasks/build/android-signing.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/ant.png":::
+        &#160;&#160;[Build with Apache Ant](../pipelines/tasks/build/ant.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/gradle.png":::
+        &#160;&#160;[Build using a Gradle wrapper script](../pipelines/tasks/build/gradle.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/grunt.png":::
+        &#160;&#160;[Grunt: The JavaScript Task Runner](../pipelines/tasks/build/grunt.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/gulp.png":::
+        &#160;&#160;[Gulp: Node.js task-based build system](../pipelines/tasks/build/gulp.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/publish-build-artifacts.png":::
+        &#160;&#160;[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/maven.png":::
+        &#160;&#160;[Build with Apache Maven](../pipelines/tasks/build/maven.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/msbuild.png":::
+        &#160;&#160;[Build with MSbuild](../pipelines/tasks/build/msbuild.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/sonarqube.png":::
+        &#160;&#160;[SonarQube for MSbuild](https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/visual-studio-build.png":::
+        &#160;&#160;[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/xamarin-android.png":::
+        &#160;&#160;[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/xamarin-ios.png":::
+        &#160;&#160;[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)  
+  
+        **Build variables**  
+  
+        Use [predefined variables](../pipelines/build/variables.md) or add your custom variables when configuring your build definition or your build scripts.
+    :::column-end:::
+    :::column:::
+        **Continuous integration builds**  
+  
+        [Define a CI build](../pipelines/build/triggers.md#ci) that compiles and tests your solutions whenever your team checks in code.  
+  
+        **Build summary charts**  
+  
+        View real-time build status and [add build summary charts to your dashboards](../report/add-widget-to-dashboard.md).  
+  
+        :::image type="content" source="media/features/alm-feature-build-summary-widget.png" alt-text="Screenshot of a bar chart showing build summary data. Most bars are green, indicating that the builds finished successfully. A few bars are red.":::  
+  
+        **Code coverage charts**  
+  
+        From the Code Coverage tab on a Build summary page, you can view percentage of code coverage as well as upload code coverage data in Jacoco or Cobertura formats.  
+  
+        **Audit changes**  
+  
+        Determine who [changed what in the build definition and when they did it](../pipelines/build/history.md).  
+  
+        **Build retention policies**  
+  
+        [Define policies to automatically delete old completed builds ](../pipelines/policies/retention.md) to minimize clutter.  
+  
+        **Build permissions**  
+  
+        Determine who can [define, delete, and manage builds](../organizations/security/permissions.md#build).
+    :::column-end:::
+:::row-end:::  
+  
 <a id="release"></a>
 
 ### Release
