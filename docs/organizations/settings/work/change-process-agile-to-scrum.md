@@ -62,8 +62,8 @@ The first step is to create an inherited process that you can customize. The def
 
 1. Choose the process that contains the project you want to change. To change from Agile to Scrum, choose **Agile** or the custom process based on Agile. Here we choose Agile.
 
-> [!div class="mx-imgBorder"]  
-> ![Choose the Agile process](media/agile-to-scrum/choose-agile.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Choose the Agile process](media/agile-to-scrum/choose-agile.png)
 
 1. Choose **Projects**, and then choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon for the project you want to change, and select **Change process**. Here we choose the MyAgile project.
 
@@ -89,10 +89,10 @@ The first step is to create an inherited process that you can customize. The def
     > [!div class="mx-imgBorder"]  
     > ![Step 3 of 3 of change process dialog](media/agile-to-scrum/change-process-agile-to-scrum-wizard-complete.png)
 
-    Steps to manually update your work items and board settings:
-    - Update the column to state mapping for each team Kanban board.
-    - Update existing work items using the work item types set by the target process.
-    - Update existing work items using the correct state model of the target process.
+Steps to manually update your work items and board settings:
+- Update the column to state mapping for each team Kanban board
+- Update existing work items using the work item types set by the target process
+- Update existing work items using the correct state model of the target process.
 
 ## Update Kanban board column-to-state settings
 

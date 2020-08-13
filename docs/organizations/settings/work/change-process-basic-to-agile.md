@@ -47,33 +47,33 @@ Reasons you might want to change your process from Basic to Agile:
 
 1. Choose the process that contains the project you want to change. To change from Basic to Agile, choose **Basic**.
 
-> [!div class="mx-imgBorder"]  
-> ![Choose the Basic process](media/change-process/choose-basic-process.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Choose the Basic process](media/change-process/choose-basic-process.png)
 
 1. Choose **Projects**.
 
-> [!div class="mx-imgBorder"]  
-> ![Choose Projects tab](media/change-process/choose-basic-process-projects.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Choose Projects tab](media/change-process/choose-basic-process-projects.png)
 
 1. For the project you want to change, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Change process** and follow the steps in the wizard.
 
-> [!div class="mx-imgBorder"]  
-> ![Choose Change process](media/change-process/change-process-basic-to-agile.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Choose Change process](media/change-process/change-process-basic-to-agile.png)
 
 1. Choose the Agile process that you want to change to and then choose **Save**. You can select the system Agile process or an inherited Agile process.
 
-> [!div class="mx-imgBorder"]  
-> ![Step 1 of 3 of change process dialog, Choose the process](media/change-process/change-process-basic-to-agile-wizard-choose-agile.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Step 1 of 3 of change process dialog, Choose the process](media/change-process/change-process-basic-to-agile-wizard-choose-agile.png)
 
 1. Upon completion, the wizard displays the following information. Make a note of the steps to follow and then choose **Close**.
 
     > [!div class="mx-imgBorder"]  
     > ![Step 3 of 3 of change process dialog](media/change-process/change-process-basic-to-agile-wizard-choose-agile-complete.png)
 
-    Steps to manually update your work items and board settings:
-    - Update the column to state mapping for each team Kanban board.
-    - Update existing work items using the work item types set by the target process.
-    - Update existing work items using the correct state model of the target process.
+Steps to manually update your work items and board settings:
+- Update the column to state mapping for each team Kanban board
+- Update existing work items using the work item types set by the target process
+- Update existing work items using the correct state model of the target process.
 
 ## Update Kanban board column-to-state settings
 
