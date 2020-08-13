@@ -14,29 +14,58 @@ A [virtual machine scale set](https://docs.microsoft.com/azure/virtual-machine-s
 
 VMs are created as needed in a scale set. You define rules to control how and when VMs are added or removed from the scale set. These rules can be triggered based on metrics such as CPU load, memory usage, or network traffic.
 
-In this tutorial, you deploy a virtual machine scale set with Java VMs and deploy it using DevOps Pipelines. You learn how to:
+In this tutorial, you build a Java app and deploy it to a virtual machine scale set. You learn how to:
 
 > [!div class="checklist"]
 > * Create a virtual machine scale set
-> * Increase or decrease the number of instances in a scale set
-> * Create autoscale rules
-> * View connection info for scale set instances
-> * Use data disks in a scale set
+> * Build a custom image with packer 
+> * Deploy a custom image to a virtual machine scale set
 
 ## Prerequisites
 
 Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
+- A forked GitHub repo with the example java project. Fork the [pipelines-java repository](https://github.com/MicrosoftDocs/pipelines-java).
+- 
+## Set up your Java Pipeline
+
+ 1. Sign in to your Azure DevOps organization and navigate to your project.
+ [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
+
+> When the **Configure** tab appears, select **Maven**.
+
+2. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+
+3. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+
+   If you want to watch your pipeline in action, select the build job.
+
+   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Maven](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/maven.yml) template.
+
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+4. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
 
 ## Create a virtual machine scale set
+
+Before you can create a scale set, create a resource group with [az group create](/cli/azure/group#az-group-create). The following example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
+
+```azurecli-interactive
+az group create --name myVMSSResourceGroup --location eastus2
+```
+
+Next, you 
 
 
 
 ## Create a Java app
 
-
+<!-- 
 ## Create an app to scale
 For production use, you may wish to [Create a custom VM image](tutorial-custom-images.md) that includes your application installed and configured. For this tutorial, lets customize the VMs on first boot to quickly see a scale set in action.
 
@@ -195,63 +224,4 @@ To obtain connection information about the VMs in your scale sets, use [az vmss 
 az vmss list-instance-connection-info \
     --resource-group myResourceGroupScaleSet \
     --name myScaleSet
-```
-
-
-## Use data disks with scale sets
-You can create and use data disks with scale sets. In a previous tutorial, you learned how to [Manage Azure disks](tutorial-manage-disks.md) that outlines the best practices and performance improvements for building apps on data disks rather than the OS disk.
-
-### Create scale set with data disks
-To create a scale set and attach data disks, add the `--data-disk-sizes-gb` parameter to the [az vmss create](/cli/azure/vmss#az-vmss-create) command. The following example creates a scale set with *50*Gb data disks attached to each instance:
-
-```azurecli-interactive
-az vmss create \
-    --resource-group myResourceGroupScaleSet \
-    --name myScaleSetDisks \
-    --image UbuntuLTS \
-    --upgrade-policy-mode automatic \
-    --custom-data cloud-init.txt \
-    --admin-username azureuser \
-    --generate-ssh-keys \
-    --data-disk-sizes-gb 50
-```
-
-When instances are removed from a scale set, any attached data disks are also removed.
-
-### Add data disks
-To add a data disk to instances in your scale set, use [az vmss disk attach](/cli/azure/vmss/disk#az-vmss-disk-attach). The following example adds a *50*Gb disk to each instance:
-
-```azurecli-interactive
-az vmss disk attach \
-    --resource-group myResourceGroupScaleSet \
-    --name myScaleSet \
-    --size-gb 50 \
-    --lun 2
-```
-
-### Detach data disks
-To remove a data disk to instances in your scale set, use [az vmss disk detach](/cli/azure/vmss/disk#az-vmss-disk-detach). The following example removes the data disk at LUN *2* from each instance:
-
-```azurecli-interactive
-az vmss disk detach \
-    --resource-group myResourceGroupScaleSet \
-    --name myScaleSet \
-    --lun 2
-```
-
-
-## Next steps
-In this tutorial, you created a virtual machine scale set. You learned how to:
-
-> [!div class="checklist"]
-> * Use cloud-init to create an app to scale
-> * Create a virtual machine scale set
-> * Increase or decrease the number of instances in a scale set
-> * Create autoscale rules
-> * View connection info for scale set instances
-> * Use data disks in a scale set
-
-Advance to the next tutorial to learn more about load balancing concepts for virtual machines.
-
-> [!div class="nextstepaction"]
-> [Load balance virtual machines](tutorial-load-balancer.md)
+``` -->
