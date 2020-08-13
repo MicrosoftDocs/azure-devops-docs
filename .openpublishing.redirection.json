@@ -12192,7 +12192,7 @@
     },
     {
       "source_path": "docs/notifications/howto-manage-team-notifications-settings.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-notifications-settings",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
       "redirect_document_id": false
     },
     {
