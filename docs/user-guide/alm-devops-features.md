@@ -1006,11 +1006,6 @@ Use features supported by these familiar clients to manage your project and illu
 
 ### Build
 
-<table>
-<tbody>
-<tr valign="top">
-<td width="32%">
-
 :::row:::
     :::column:::
         **Define builds**  
@@ -1033,6 +1028,11 @@ Use features supported by these familiar clients to manage your project and illu
         View real-time build status and <a href="../report/add-widget-to-dashboard.md" data-raw-source="[add build summary charts to your dashboards](../report/add-widget-to-dashboard.md)">add build summary charts to your dashboards</a>.
     :::column-end:::
 :::row-end:::
+
+<table>
+<tbody>
+<tr valign="top">
+<td width="32%">
 
 <p><b>Define builds</b></p>
 <p>Start from a build template and customize your build from there. Build for <a href="../pipelines/apps/windows/dot-net.md" data-raw-source="[Windows](../pipelines/apps/windows/dot-net.md)">Windows</a>, <a href="../pipelines/apps/mobile/xcode-ios.md" data-raw-source="[iOS](../pipelines/apps/mobile/xcode-ios.md)">iOS</a>, Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. <a href="../pipelines/apps/mobile/xamarin.md" data-raw-source="[Build Xamarin apps](../pipelines/apps/mobile/xamarin.md)">Build Xamarin apps</a> for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.</p>
