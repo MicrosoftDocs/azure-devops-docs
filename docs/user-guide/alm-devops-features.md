@@ -999,7 +999,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 ::: moniker-end
 
-## Continuous delivery
+## Continuous delivery (Markdown)
 
 
 <a id="build"></a>
@@ -1030,6 +1030,10 @@ Use features supported by these familiar clients to manage your project and illu
 :::row-end:::  
 
 <br>
+
+## Continuous delivery (HTML)
+### Build
+
 <table>
 <tbody>
 <tr valign="top">
