@@ -215,6 +215,9 @@ The following features are available when using Azure Container Registry, Docker
 
 <a name="artifacts" id="artifactsource"></a>
 
+> [!Note]
+> In the case of continuous deployment from multiple artifact sources (multiple registries/repositories), it isn't possible to map artifact sources to trigger particular stages. A release will be created anytime there is a push to any of the artifact sources. If you wish to map an artifact source to trigger a specific stage, the recommended way is to decompose the release pipeline into multiple release pipelines.
+
 ## Artifact sources - Azure Artifacts
 
 Scenarios where you may want to consume these artifacts are:
