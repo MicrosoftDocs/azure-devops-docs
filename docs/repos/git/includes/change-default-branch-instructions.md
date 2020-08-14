@@ -12,13 +12,16 @@ You can use a branch other than `master` for new changes or change your main lin
 
 1. [Navigate](../../../project/navigation/go-to-project-repo.md) to your repository and select **Branches**.
 
-3. Select the desired new default branch.
+1. Select the desired new default branch.
 You need at least two branches in order to change the default.
 If there's only one, it will already be the default branch.
+In that case, you must create a second one in order to change the default.
 
-4. Select the **...** beside the desired branch and choose **Set as default branch**.
+1. Select the **...** beside the desired branch and choose **Set as default branch**.
 
    ![Set default branch](../media/pull-requests/set-default-branch-in-product.png)
+
+1. Once you've set the new default branch, you may delete the previous one if desired.
 
 ::: moniker-end
 
@@ -35,5 +38,7 @@ If there's only one, it will already be the default branch.
 1. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.
 
    ![Set a default branch for a Git repo](../media/pull-requests/set_default_branch.png)
+
+1. Once you've set the new default branch, you may delete the previous one if desired.
 
 ::: moniker-end
