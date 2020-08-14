@@ -255,13 +255,13 @@ For details, see the following resources:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
-
 <a id="taskboard-types" /> 
 
 ## Add custom work item types to your Taskboard
 
 To add custom work item types to appear on your sprint Taskboard, follow the steps outlined next based on the process model your project uses. 
+
+::: moniker range=">= azure-devops-2019"
 
 ### Inheritance process model 
 
@@ -323,12 +323,6 @@ For on-premises deployments that use the On-premises XML process model to custom
 > If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product Kanban board. To learn how, see [Customize your Kanban Board checklist items](#customize-checklist-2019) provided earlier in this article. 
 
 ::: moniker-end
-
-
-
-
-
-
 
 
 ## Other factors that can affect which work items appear
