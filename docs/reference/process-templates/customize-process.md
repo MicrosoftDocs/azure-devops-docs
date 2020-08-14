@@ -75,7 +75,7 @@ The primary use of process templates is to create a project. For the Hosted XML 
   
      If you want to [add or modify types of work items](../add-modify-wit.md), you can achieve this without changing the whole process template. You can make and test changes by using an existing project. For the On-premises XML process model, you can use the **witadmin exportwitd** and **importwitd** command-line tools to download and upload the XML definition files for work item types.  
   
--   If you need to update a custom process template to support using the Configure Features wizard after a TFS upgrade, see [Configure features after an upgrade](../configure-features-after-upgrade.md).  
+-   If you need to update a custom process template to support using the Configure Features wizard after a TFS upgrade, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
   
      Upgrading TFS to a later version uploads the latest versions of the default TFS process templates. To use the available updated templates and to access customizations that you made previously, you may need to add customizations provided with the new templates.  
   
@@ -185,7 +185,7 @@ When you add objects to a process template, you will want to make sure that you 
 ## Related articles 
 
 - [Process template and plug-in files](overview-process-template-files.md)
-- [Configure features after an upgrade](../configure-features-after-upgrade.md)  
+- [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)  
 - [Process template plug-ins: Index to XML elements](process-template-plug-ins-xml-elements-index.md)
 - [XML element reference](../xml/xml-element-reference.md)  
 - [Forum: Team Foundation Server &mdash;Process Templates](https://go.microsoft.com/fwlink/?LinkId=216461)    

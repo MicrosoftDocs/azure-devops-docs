@@ -1224,7 +1224,7 @@ For more information, see [ProcessConfiguration XML element reference](../../../
 
 ### TF400572: The Project Process Settings must be configured for this feature to be used.
 
-This is caused by templates that are from TFS 2010 or earlier, before the Project Process Settings existed. Try running [Configure features after an upgrade](../../../../reference/configure-features-after-upgrade.md) to resolve, or add the [ProcessConfiguration XML file](../../../../reference/xml/process-configuration-xml-element.md) to the process template. 
+This is caused by templates that are from TFS 2010 or earlier, before the Project Process Settings existed. Try running [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) to resolve, or add the [ProcessConfiguration XML file](../../../../reference/xml/process-configuration-xml-element.md) to the process template. 
 
 
 <a id="wit-definitions"></a>
