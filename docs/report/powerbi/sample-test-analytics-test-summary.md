@@ -1,5 +1,5 @@
 ---
-title: Pipeline outcome summary sample Power BI report 
+title: Pipeline test summary sample Power BI reports 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a test summary Power BI report for a given pipeline in the project  
 ms.prod: devops
@@ -23,7 +23,7 @@ This article shows you how to get the number of test runs for different test out
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/testsummary-reports1.png)
+> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/test-summary-reports1.png)
 
 Specifically, you'll find sample queries for the following reports: 
 
@@ -154,7 +154,7 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odata-powerbi-test-analytics/testsummary-rename1.png)
+	> ![Power BI Rename Columns](media/odata-powerbi-test-analytics/test-summary-rename1.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
@@ -175,7 +175,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odata-powerbi-test-analytics/testsummary-fields1.png)
+> ![Sample - Test Summary - Fields](media/odata-powerbi-test-analytics/test-summary-fields1.png)
 
 For a simple report, do the following steps:
 
@@ -193,7 +193,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/testsummary-reports1.png)
+> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/test-summary-reports1.png)
 
 
 You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
