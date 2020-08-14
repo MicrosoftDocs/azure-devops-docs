@@ -16,7 +16,7 @@ ms.date: 07/09/2020
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-The <strong>@Today</strong> and <strong>@CurrentIteration</strong> macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use <strong>@Today</strong> or specify dates. For queries that list work items based on their assignment to a team's current sprint, use <strong>@CurrentIteration</strong>. 
+The **@Today** and **@CurrentIteration** macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use **@Today** or specify dates. For queries that list work items based on their assignment to a team's current sprint, use **@CurrentIteration**. 
 
 For example, you can find work items that were modified in the last 3 days with the following query.
 
@@ -97,8 +97,7 @@ You can filter for work items by the date on which they were changed or for a sp
 
 Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. 
 
-> [!IMPORTANT]  
-> Enter dates in the **Date Pattern** you set for your personal profile. See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.   
+
 
 <table valign="top">
 <tbody valign="top">
@@ -165,6 +164,8 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 </table>
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
+
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 ::: moniker range=">= azure-devops-2019"
 

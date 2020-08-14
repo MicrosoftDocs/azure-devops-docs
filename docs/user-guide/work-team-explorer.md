@@ -74,7 +74,7 @@ To learn more about each page, see the following articles.
 <ul>
 <li><a href="../project/navigation/index.md" data-raw-source="[Web portal](../project/navigation/index.md)">Web portal</a></li>
 <li><a href="../boards/sprints/task-board.md" data-raw-source="[Task Board](../boards/sprints/task-board.md)">Task Board</a></li>
-<li><a href="../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team Room](../notifications/collaborate-in-a-team-room.md)">Team Room</a></li>
+<li><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team Room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team Room</a></li>
 </ul>
 <p><strong>Builds</strong></p>
 <ul>
@@ -149,7 +149,7 @@ To learn more about each page, see the following articles.
 <ul>
 <li><a href="../project/navigation/index.md" data-raw-source="[Web portal](../project/navigation/index.md)">Web portal</a></li>
 <li><a href="../boards/sprints/task-board.md" data-raw-source="[Task Board](../boards/sprints/task-board.md)">Task Board</a></li>
-<li><a href="../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team Room](../notifications/collaborate-in-a-team-room.md)">Team Room</a></li>
+<li><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team Room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team Room</a></li>
 </ul>
 <p><strong>Builds</strong></p>
 <ul>

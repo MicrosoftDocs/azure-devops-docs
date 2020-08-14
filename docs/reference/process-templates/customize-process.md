@@ -75,7 +75,7 @@ The primary use of process templates is to create a project. For the Hosted XML 
   
      If you want to [add or modify types of work items](../add-modify-wit.md), you can achieve this without changing the whole process template. You can make and test changes by using an existing project. For the On-premises XML process model, you can use the **witadmin exportwitd** and **importwitd** command-line tools to download and upload the XML definition files for work item types.  
   
--   If you need to update a custom process template to support using the Configure Features wizard after a TFS upgrade, see [Configure features after an upgrade](../configure-features-after-upgrade.md).  
+-   If you need to update a custom process template to support using the Configure Features wizard after a TFS upgrade, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
   
      Upgrading TFS to a later version uploads the latest versions of the default TFS process templates. To use the available updated templates and to access customizations that you made previously, you may need to add customizations provided with the new templates.  
   
@@ -108,7 +108,7 @@ To customize a process template, you customize one or more files associated with
 <ul style="padding-left:20px;font-size:90%">
  <li style="margin-bottom:2px"><a href="define-classification-plug-in.md" data-raw-source="[Area and iteration paths](define-classification-plug-in.md)">Area and iteration paths</a></li>
  <li style="margin-bottom:2px"><a href="configure-initial-groups-teams-members-permissions.md" data-raw-source="[Groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)">Groups, teams, members, and permissions</a></li>
- <li style="margin-bottom:2px"><a href="../xml/map-microsoft-project-fields-to-tf-fields.md" data-raw-source="[Microsoft Project mapping file](../xml/map-microsoft-project-fields-to-tf-fields.md)">Microsoft Project mapping file</a></li>
+ <li style="margin-bottom:2px"><a href="/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields" data-raw-source="[Microsoft Project mapping file](/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields)">Microsoft Project mapping file</a></li>
 </ul>
 
 #### Work item tracking  
@@ -185,7 +185,7 @@ When you add objects to a process template, you will want to make sure that you 
 ## Related articles 
 
 - [Process template and plug-in files](overview-process-template-files.md)
-- [Configure features after an upgrade](../configure-features-after-upgrade.md)  
+- [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)  
 - [Process template plug-ins: Index to XML elements](process-template-plug-ins-xml-elements-index.md)
 - [XML element reference](../xml/xml-element-reference.md)  
 - [Forum: Team Foundation Server &mdash;Process Templates](https://go.microsoft.com/fwlink/?LinkId=216461)    
@@ -230,6 +230,3 @@ The Process Editor Tool provides a user interface that you can use to customize 
     -   Add files to be uploaded.  
 
 You can't customize Office Excel reports and dashboards through the process template files. These artifacts are created for a project depending on the selections that you make in the New Team Project wizard. For more information, see [Customizing TFS Project Portals](/previous-versions/visualstudio/visual-studio-2010/ff678492(v=vs.100)).  
- 
-
- 

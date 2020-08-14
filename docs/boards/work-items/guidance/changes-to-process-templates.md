@@ -8,7 +8,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/11/2019
+ms.date: 08/06/2020
 ---
 
 # Changes made to process templates  
@@ -19,7 +19,7 @@ To support the addition of new features, changes are introduced periodically to 
 
 > [!NOTE]    
 > This article describes changes made to the core system processes with updates made to the on-premises Azure DevOps Server, formerly named Team Foundation Server (TFS). These processes are available for both cloud and on-premises versions of Azure Boards. Projects hosted on Azure Boards [update automatically with each service upgrade](/azure/devops/release-notes/index). Whereas, updates to projects defined on-premises may require running the Configure Feature Wizard after upgrading to a later version.  The Configure Features Wizard has been deprecated for Azure DevOps Server 2019. You can only run the wizard on TFS 2018 and earlier versions.        
-If you've customized your project and haven't upgraded your on-premises deployment for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you upgrade](../../../reference/new-features-added.md) for a description of each feature added with the updates. 
+If you've customized your project and haven't upgraded your on-premises deployment for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you upgrade](/previous-versions/azure/devops/reference/upgrade/new-features-added) for a description of each feature added with the updates. 
 
 
 <table>
@@ -28,7 +28,14 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <th width="22%">Version</th>
 <th width="78%">Changes introduced</th>
 </tr>
-
+<tr>
+<td>
+<p>Azure DevOps Services (August 2020) </p>
+</td>
+<td>
+<p>The logic managing the <strong>Activated By</strong>, <strong>Activated Date</strong>, <strong>Resolved By</strong>, and <strong>Resolved Date</strong> fields has changed. The values assigned to these fields are now governed based on the state categories of <em>Proposed</em> and <em>Resolved</em>. To learn more, see <a href="../../queries/query-by-workflow-changes.md#activated-resolved-fields" data-raw-source="[Query by assignment or workflow changes](../../queries/query-by-workflow-changes.md#activated-resolved-fields)">Query by assignment or workflow changes, Activated By/Date and Resolved By/Date fields </a>.</p>
+</td>
+</tr>
 <tr>
 <td>
 <p>Azure DevOps Server 2019</p>
@@ -37,7 +44,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <p>Predefined Shared Queries are no longer created upon project creation. The definitions for Shared Queries have been removed from the process template. Shared Queries defined in custom process templates are created. You can also add Shared Queries to a process template as described in <a href="../../../reference/process-templates/add-work-item-queries-process-template.md" data-raw-source="[Add work item queries to a process template](../../../reference/process-templates/add-work-item-queries-process-template.md)">Add work item queries to a process template</a>.</p>
 </td>
 </tr>
-
 <tr>
 <td>
 <p>TFS 2017</p>
@@ -284,12 +290,12 @@ Removed the Sprint type definition and All Sprints query, whose functionality ha
 
 ## Related upgrade notes
 
-To update your existing projects hosted on an on-premises Azure DevOps to access new features, [run the Configure Features wizard](../../../reference/configure-features-after-upgrade.md). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
+To update your existing projects hosted on an on-premises Azure DevOps to access new features, [run the Configure Features wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
 
 See the following resources as they relate to updating your project:  
 
-- [Update a customized process template to access new features](../../../reference/update-customized-process-template.md)
-- [Add features using a manual update process](../../../reference/add-features-manually.md)
-- [Before you upgrade TFS](../../../reference/upgrade-tfs-2008-or-2010.md)
-- [Additional configuration options](../../../reference/additional-configuration-options.md)
+- [Update a customized process template to access new features](/previous-versions/azure/devops/reference/upgrade/update-customized-process-template)
+- [Add features using a manual update process](/previous-versions/azure/devops/reference/upgrade/add-features-manually)
+- [Before you upgrade TFS](/previous-versions/azure/devops/reference/upgrade/upgrade-tfs-2008-or-2010)
+- [Additional configuration options](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options)
 - [Upload reports to a project](../../../Report/admin/upload-reports.md)
