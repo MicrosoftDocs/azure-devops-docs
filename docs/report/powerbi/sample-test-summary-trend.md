@@ -1,5 +1,5 @@
 ---
-title: Pipeline outcome summary sample Power BI report 
+title: Pipeline test summary trend sample Power BI reports 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a test summary trend Power BI report for a given pipeline in the project  
 ms.prod: devops
