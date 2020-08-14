@@ -504,7 +504,7 @@ read wiki pages. </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong><a href="../../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team rooms](../../notifications/collaborate-in-a-team-room.md)">Team rooms</a></strong><br/>Requires TFS 2017 or earlier versions. Deprecated for TFS 2018 and later versions.</td>
+<td align="left"><strong><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team rooms</a></strong><br/>Requires TFS 2017 or earlier versions. Deprecated for TFS 2018 and later versions.</td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -636,7 +636,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong><a href="../../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team rooms](../../notifications/collaborate-in-a-team-room.md)">Team rooms</a></strong></td>
+<td align="left"><strong><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team rooms</a></strong></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -870,4 +870,3 @@ Service accounts don't require a CAL or other purchase.
 - [Compare features between plans](https://azure.microsoft.com/services/devops/compare-features/)
 
 ::: moniker-end
-

@@ -34,6 +34,10 @@ Teams track their velocity to help them determine how much work they can perform
 
 Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. Each team is associated with one and only one velocity chart.  
 
+> [!NOTE]
+> For TFS 2018 and earlier versions, you can only view team velocity. There is no configuration of this report.  
+
+
 Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog.  
 
 **Example Velocity chart from the work tracking data store**  

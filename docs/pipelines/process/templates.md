@@ -769,6 +769,22 @@ steps:
     debug: true
 ```
 
+You can also use conditional insertion for variables:
+
+```yaml
+variables:
+  - name: foo
+    value: test
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "start"
+- ${{ if eq(variables.foo, 'test') }}:
+  - script: echo "this is a test"
+```
+
 ### Iterative insertion
 
 The `each` directive allows iterative insertion based on a YAML sequence (array) or mapping (key-value pairs).

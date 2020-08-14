@@ -9,9 +9,9 @@ ms.topic: include
 ### Pipelines images announcements
 
 > [!NOTE]
-> We’re constantly working to improve your experience using Azure Pipelines. To learn more about upcoming updates on our windows/linux/mac images updates please check here:
+> We’re constantly working to improve your experience using Azure Pipelines. To learn more about upcoming updates on our Windows/Linux/macOS images updates please check here:
 >
-> - Window - https://github.com/actions/virtual-environments/blob/main/images/win/announcements.md
+> - Windows - https://github.com/actions/virtual-environments/blob/main/images/win/announcements.md
 > - Linux - https://github.com/actions/virtual-environments/blob/main/images/linux/announcements.md
 
 

@@ -170,7 +170,7 @@ Although the **On-premises XML** process model option is powerful, it can cause 
 
 Azure DevOps Server 2013, for example, introduced several new features that depended on new work-item types and other process template
 changes. When you upgrade from 2012 to 2013, each project collection gets new versions of each of the
-"in the box" process templates that include these changes. However, these changes aren't automatically incorporated into existing projects. Instead, after you finish upgrading, you have to include the changes in each project by using the [Configure features](../reference/configure-features-after-upgrade.md)
+"in the box" process templates that include these changes. However, these changes aren't automatically incorporated into existing projects. Instead, after you finish upgrading, you have to include the changes in each project by using the [Configure features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)
 wizard or a more manual process.
 
 To help you avoid these issues in Azure DevOps Services, custom process templates and the **witadmin.exe** tool have always been disabled. This approach has enabled us to automatically update all projects with each Azure DevOps Services upgrade. Meanwhile, the product team is working hard to make customizing processes possible in ways that we can support easily and continuously. We recently introduced the first of these changes and more changes are on the way.
