@@ -11,27 +11,34 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops'  
-ms.date: 01/30/2020
+ms.date: 08/14/2020
 ---
 
 # Test summary sample report 
 
 [!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
-This article shows you how to get the number of test runs for different test outcome (Passed / Failed / Not executed / Not impacted).
-
-[!INCLUDE [temp](includes/preview-note.md)]
+This article shows you how to get the number of test runs for different test outcomes: **Passed**, **Failed**, **Not executed**, **Not impacted**.
 
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/testsummary-reports1.png)
+> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/testsummary-reports1.png)
 
+Specifically, you'll find sample queries for the following reports: 
 
-[!INCLUDE [temp](includes/sample-required-reading.md)]
+- Test summary for build workflow
+- Test summary for release workflow
+- Test summary for a particular branch
+- Test summary for a particular test file
+- Test summary for a particular test owner 
+
+[!INCLUDE [temp](includes/preview-note.md)]
 
 
 ## Sample queries
+
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -147,7 +154,7 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-testanalytics/testsummary-rename1.png)
+	> ![Power BI Rename Columns](media/odata-powerbi-test-analytics/testsummary-rename1.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
@@ -168,7 +175,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odatapowerbi-testanalytics/testsummary-fields1.png)
+> ![Sample - Test Summary - Fields](media/odata-powerbi-test-analytics/testsummary-fields1.png)
 
 For a simple report, do the following steps:
 
@@ -186,14 +193,12 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/testsummary-reports1.png)
+> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/testsummary-reports1.png)
 
-
-## Additional queries
 
 You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
 
-### Test Summary for Release workflow, rather than Build workflow
+## Test summary for Release workflow 
 
 You may want to view the test summary of a pipeline for **Release** workflow, instead of Build workflow.
 
@@ -244,7 +249,7 @@ $apply=filter(
 
 ***
 
-### Filter by Branch
+## Filter by branch
 
 You may want to view the test summary of a pipeline for a particular branch only. To create the report, perform the following additional steps along with what is defined previously in this article.
 
@@ -303,7 +308,7 @@ $apply=filter(
 
 ***
 
-### Filter by Test file
+## Filter by test file
 
 You may want to view the test summary of a pipeline for a particular test file only. To create the report, perform the following additional steps along with what is defined previously in this article.
 
@@ -360,7 +365,7 @@ $apply=filter(
 
 ***
 
-### Filter by Test owner
+## Filter by test owner
 
 You may want to view the test summary of a pipeline for tests owned by a particular test owner only. To create the report, perform the following additional steps along with what is defined previously in this article.
 
