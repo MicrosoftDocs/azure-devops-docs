@@ -18,7 +18,7 @@ ms.date: 01/30/2020
 
 [!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
-This article shows you how to create a report that shows the day wise trend of the average timetaken to execture a test for a selected time range.
+This article shows you how to create a report that shows the day wise trend of the average time taken to execute a test for a selected time range.
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
