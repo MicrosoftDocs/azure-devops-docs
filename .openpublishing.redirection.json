@@ -1572,12 +1572,12 @@
     },
     {
       "source_path": "docs/work/productivity/collaborate-in-a-team-room.md",
-      "redirect_url": "/azure/devops/notifications/collaborate-in-a-team-room",
+      "redirect_url": "/previous-versions/azure/devops/notifications/collaborate-in-a-team-room",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/collaborate/collaborate-in-a-team-room.md",
-      "redirect_url": "/azure/devops/notifications/collaborate-in-a-team-room",
+      "redirect_url": "/previous-versions/azure/devops/notifications/collaborate-in-a-team-room",
       "redirect_document_id": false
     },
     {
@@ -3232,7 +3232,7 @@
     },
     {
       "source_path": "docs/get-started/collaborate-in-the-team-room-vs.md",
-      "redirect_url": "/azure/devops/notifications/collaborate-in-a-team-room",
+      "redirect_url": "/previous-versions/azure/devops/notifications/collaborate-in-a-team-room",
       "redirect_document_id": false
     },
     {
@@ -16633,6 +16633,11 @@
     {
       "source_path": "docs/reference/use-team-fields-instead-area-paths.md",
       "redirect_url": "/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/notifications/collaborate-in-a-team-room.md",
+      "redirect_url": "/previous-versions/azure/devops/notifications/collaborate-in-a-team-room",
       "redirect_document_id": false
     }
   ]
