@@ -775,6 +775,7 @@ Several date and identity fields are set based on workflow states or transitions
 
 ::: moniker-end
 
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 ::: moniker range="< azure-devops"
 
