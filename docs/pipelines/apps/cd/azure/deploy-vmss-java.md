@@ -78,14 +78,14 @@ steps:
 - task: CopyFiles@2
   displayName: Copy Files
   inputs:
-    SourceFolder: $(system.defaultworkingdirectory)
+    SourceFolder: $(System.DefaultWorkingDirectory)
     Contents: '**'
-    TargetFolder: $(build.artifactstagingdirectory)   
+    TargetFolder: $(Build.ArtifactStagingDirectory)   
 
 - task: PublishBuildArtifacts@1
   displayName: Publish Artifact
   inputs:
-    PathtoPublish: $(build.artifactstagingdirectory) 
+    PathtoPublish: $(Build.ArtifactStagingDirectory) ```
 ```
 
 ## Create a custom image and upload it to Azure
@@ -98,20 +98,19 @@ You need a resource group and a storage account for your custom image.
 az group create --name myVMSSResourceGroup --location eastus2
 ```
 
-2. Next, create a new storage account. The following example creates a storage account named `VMSSStorageAccount`.
+2. Next, create a new storage account. The following example creates a storage account named `vmssstorageaccount`.
 
 ```azurecli-interactive
 az storage account create \
-  --name VMSSStorageAccount \
+  --name vmssstorageaccount \
   --resource-group myVMSSResourceGroup \
   --location eastus2 \
-  --sku Standard_LRS \
-  --encryption blob
+  --sku Standard_LRS 
 ```
 
 ### Create a service principal
 
-1. Create a service principal to generate values that you will use when you create an image. 
+1. Create a service principal to generate values that you will use when you create an image. To find `YOUR_SUBSCRIPTION_ID`, log into the Azure portal and select **Subscriptions**.
 
   ```azurecli-interactive
    az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/YOUR_SUBSCRIPTION_ID"
@@ -120,9 +119,9 @@ az storage account create \
 
 ### Create the custom image
 
-To create a custom image, you can use the [Build Machine Image task](../../../tasks/deploy/packer-build.md). This task builds a machine image using Packer. For that to work, you first need to add a Packer template to your repository. Add the template at the root level of your repository.
+To create a custom image, you can use the [Build Machine Image task](../../../tasks/deploy/packer-build.md). This task builds a machine image using Packer. For that to work, you first need to add a Packer template to your repository. 
 
-1. Copy `packer-template.json` file into your repository. 
+1. Copy `packer-template.json` file to the root level of your repository.
 
 ```json
 {
@@ -168,35 +167,34 @@ To create a custom image, you can use the [Build Machine Image task](../../../ta
 
 2. Add the `PackerBuild@1` task at the bottom of your YAML file. You will use the `appId`, `password`, and `tenant` values from your service principal. Use the `appId` for the `client_id`, `password` for `client_secret` and  `tenant` for `tenant_id`. 
 
-    * templateType: `custom`
-    * customTemplateLocation: `'$(System.DefaultWorkingDirectory)/packer-template.json'`
-    * customTemplateParameters: '{"subscription_id":"`yoursubscriptionid`","client_id":"`appId`","client_secret":"`password`","tenant_id":"`tenant`","managed_image_name":"vmss-image-$(Build.BuildId)"}'
-    ConnectedServiceName: '`yourserviceprincipal`'
-    location: '`eastus2`' # or your location
-    storageAccountName: '`myVMSSResourceGroup`'
-    azureResourceGroup: '`VMSSStorageAccount`'
-    packagePath: '`$(build.artifactstagingdirectory)`'
+```yaml
+- task: PackerBuild@1
+  displayName: 'Build immutable image'
+  inputs:
+    templateType: custom
+    customTemplateLocation: '$(System.DefaultWorkingDirectory)/packer-template.json'
+    customTemplateParameters: '{"subscription_id":"YOUR_SUBSCRIPTION_ID","client_id":"appId","client_secret":"password","tenant_id":"tenant","resource_group":"myVMSSResourceGroup","managed_image_name":"vmss-image-$(Build.BuildId)"}'
+    # ConnectedServiceName: 'YOUR_SUBSCRIPTION' 
+    location: 'eastus2'
+    storageAccountName: 'vmssstorageaccount'
+    azureResourceGroup: 'myVMSSResourceGroup'
+    packagePath: '$(Build.ArtifactStagingDirectory)'
     deployScriptPath: ''
+```
 
 3. Run the pipeline to generate your first image.
  
 ## Create a virtual machine scale set
 
-1. Go to the Azure portal UI and find the custom image you created.   
-    1. Open `myVMSSResourceGroup`.
-    1. Select the scale set in your resource group.
-    1. Copy the **Resource ID**.
+1. Open the Build immutable action task and copy your `ManagedImageId`.   
+
+    :::image type="content" source="media/managed_image_vmss.png" alt-text="Managed image Id":::
 
 2. Create a virtual machine scale set with [az virtual machine scale set create](/cli/azure/vmss#az-vmss-create). The following example creates a scale set named `vmssScaleSet` and generates SSH keys if they do not exist:
 
 ```azurecli-interactive
-az vmss create \
-   --resource-group myVMSSResourceGroup \
-   --name vmssScaleSet \
-   --image "RESOURCE_ID"
-   --specialized
-   --admin-username azureuser \
-   --generate-ssh-keys
+
+az vmss create -n vmssScaleSet -g myVMSSResourceGroup --image "ManagedImageId"
 ```
 
 It takes a few minutes to create and configure all the scale set resources and VMs. There are background tasks that continue to run after the Azure CLI returns you to the prompt. It may be another couple of minutes before you can access the app.
@@ -210,7 +208,7 @@ To allow traffic to reach the web app, create a rule with [az network lb rule cr
 az network lb rule create \
   --resource-group myVMSSResourceGroup \
   --name myLoadBalancerRuleWeb \
-  --lb-name myScaleSetLB \
+  --lb-name vmssScaleSetLB \
   --backend-pool-name myScaleSetLBBEPool \
   --backend-port 80 \
   --frontend-ip-name loadBalancerFrontEnd \
@@ -225,7 +223,7 @@ Add a PowerShell task to your pipeline to deploy updates to the scale set. Add t
 ```yml
 - task: AzurePowerShell@5
   inputs:
-    azureSubscription: '`YOUR_SUBSCRIPTION_ID`'
+    azureSubscription: '`YOUR_SUBSCRIPTION_ID`' #Authorize and in the task editor
     ScriptType: 'InlineScript'
     Inline: 'az vmss update --resource-group myVMSSResourceGroup --name vmssScaleSet --set virtualMachineProfile.storageProfile.imageReference.id=/subscriptions/YOUR_SUBSCRIPTION_ID/myVMSSResourceGroup/providers/Microsoft.Compute/images/vmss-image-$(Build.BuildId)'
     azurePowerShellVersion: 'LatestVersion'
