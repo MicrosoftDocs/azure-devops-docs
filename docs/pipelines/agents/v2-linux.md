@@ -1,5 +1,5 @@
 ---
-title: Deploy a Azure Pipelines agent on Linux
+title: Deploy an Azure Pipelines agent on Linux
 ms.custom: seodec18
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
