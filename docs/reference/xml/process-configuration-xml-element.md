@@ -454,7 +454,7 @@ The following table describes the additional elements used to define the state c
 </table>
 
 > [!NOTE]    
-><b>Feature availability: </b>To map state categories for `TestPlanWorkItems` or `TestSuiteWorkItems`, you must upgrade your application-tier server to TFS 2013.3 or later version. Afterwards, you can customize the workflow state of test plans and test suites. To learn more, see [Test Plan and Test Suite features](../new-features-added.md#test-management).  
+><b>Feature availability: </b>To map state categories for `TestPlanWorkItems` or `TestSuiteWorkItems`, you must upgrade your application-tier server to TFS 2013.3 or later version. Afterwards, you can customize the workflow state of test plans and test suites. To learn more, see [Test Plan and Test Suite features](/previous-versions/azure/devops/reference/upgrade/new-features-added#test-management).  
 
 
 <a id="fields">  </a>
@@ -522,7 +522,7 @@ You can move items by dragging them up or down the list on a backlog or board. A
 <p><code>format=&quot;{0} hours&quot;</code></p>
 <p><code>format=&quot;hours {0}&quot;</code></p>
 <p><code>format=&quot;time {0}&quot;</code></p></li>
-<li><p><strong>Team</strong>: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in <a href="../use-team-fields-instead-area-paths.md" data-raw-source="[Use team fields instead of area paths to support teams](../use-team-fields-instead-area-paths.md)">Use team fields instead of area paths to support teams</a>.</p></li>
+<li><p><strong>Team</strong>: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in <a href="/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths" data-raw-source="[Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths)">Use team fields instead of area paths to support teams</a>.</p></li>
 </ul>
 <p><strong>For the feedback request form:</strong></p>
 <blockquote><strong>NOTE:</strong><br/>
