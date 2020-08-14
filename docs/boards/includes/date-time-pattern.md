@@ -14,16 +14,8 @@ The date and time pattern you enter for **DateTime** fields should match that wh
 
 ::: moniker range="azure-devops"  
 
-:::row:::
-   :::column span="2":::
-      :::image type="content" source="/azure/devops/organizations/settings/media/user-preferences/date-patterns.png" alt-text="Time and Locale page, Date pattern options":::
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
-      :::image type="content" source="/azure/devops/organizations/settings/media/user-preferences/time-pattern.png" alt-text="Time and Locale page, Time pattern options":::
-   :::column-end:::
-:::row-end:::
+> [!div class="mx-imgBorder"]
+> ![Time and Locale page, Date pattern options](/azure/devops/organizations/settings/media/user-preferences/date-patterns.png)   ![Time and Locale page, Time pattern options](/azure/devops/organizations/settings/media/user-preferences/time-pattern.png)  
 
 ::: moniker-end 
 
