@@ -24,6 +24,8 @@ To trigger a pipeline upon the completion of another, specify the triggering pip
 > [!NOTE]
 > Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
 
+In the following example, we have two pipelines - `app-ci` (the pipeline defined by the YAML snippet) and `security-lib-ci` (the pipeline referenced by the pipeline resource). We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in the master branch or any releases branch.
+
 
 ```yaml
 # this is being defined in app-ci pipeline
@@ -45,17 +47,9 @@ setting, edit the YAML pipeline, choose **Triggers** from the settings menu, and
 
     ![Pipeline settings](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
-In this example, `pipeline: securitylib` specifies the name of the pipeline resource (used when referring to the pipeline resource from other parts of the pipeline, such as pipeline resource variables), 
-and `source: security-lib-ci` specifies the name of the triggering pipeline. You can retrieve a pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To configure the pipeline name 
-setting, edit the YAML pipeline, choose **Triggers** from the settings menu, and navigate to the **YAML** pane.
-
-![Pipeline settings](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
-
 > [!NOTE] 
 > If the triggering pipeline is in another Azure DevOps project, you must specify the
 > project name using `project: OtherProjectName`. For more information, see [pipeline resource](resources.md#resources-pipelines).
-
-In the above example, we have two pipelines - `app-ci` and `security-lib-ci`. We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in master or a release branch.
 
 Similar to CI triggers, you can specify the branches to include or exclude:
 
@@ -89,7 +83,7 @@ To prevent triggering two runs of `B` in this example, you must remove its CI tr
 :::moniker-end
 
 :::moniker range="< azure-devops-2020"
-    Triggers in pipeline resources are not in Azure DevOps Server 2019. Choose the **Classic** tab in the documentation for information on build completion triggers.
+Triggers in pipeline resources are not in Azure DevOps Server 2019. Choose the **Classic** tab in the documentation for information on build completion triggers.
 :::moniker-end
 
 # [Classic](#tab/classic)
