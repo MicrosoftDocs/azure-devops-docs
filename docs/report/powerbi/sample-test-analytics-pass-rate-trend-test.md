@@ -1,5 +1,5 @@
 ---
-title: Pipeline outcome summary sample Power BI report 
+title: Pipeline pass rate trend of a test sample Power BI reports 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a pass rate trend Power BI report for a given test of a pipeline in the project  
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops'  
-ms.date: 01/30/2020
+ms.date: 08/14/2020
 ---
 
 # Pass rate trend of a test sample report 
@@ -20,18 +20,19 @@ ms.date: 01/30/2020
 
 This article shows you how to create a report that shows day wise trend of number of times a test passed and failed, along with its pass rate of any given test of a pipeline.
 
-[!INCLUDE [temp](includes/preview-note.md)]
-
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/passratetrendoftest-report.png)
+> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/pass-rate-trend-test-report.png)
 
 
-[!INCLUDE [temp](includes/sample-required-reading.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
+
 
 
 ## Sample queries
+
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -185,17 +186,17 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odatapowerbi-testanalytics/passratetrendoftest-expand1.png)
+    > ![Power BI + OData - Choose expand button](media/odata-powerbi-test-analytics/pass-rate-trend-test-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odatapowerbi-testanalytics/passratetrendoftest-expand2.png)
+    > ![Power BI + OData - Select all columns](media/odata-powerbi-test-analytics/pass-rate-trend-test-expand2.png)
 
 1. The table now contains the expanded entity **CompletedOn.Date**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odatapowerbi-testanalytics/passratetrendoftest-expand3.png)
+    > ![Power BI + OData - Expanded entity](media/odata-powerbi-test-analytics/pass-rate-trend-test-expand3.png)
     
 
 ### Change column type
@@ -203,7 +204,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Change the type of column **PassRate** to **Decimal Number** and **TotalCount** to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-testanalytics/passratetrendoftest-changetype1.png)
+    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/pass-rate-trend-test-changetype1.png)
 
 
 ### Rename fields and query, then Close & Apply
@@ -213,7 +214,7 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-testanalytics/passratetrendoftest-rename1.png)
+	> ![Power BI Rename Columns](media/odata-powerbi-test-analytics/pass-rate-trend-test-rename1.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
@@ -234,7 +235,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odatapowerbi-testanalytics/passratetrendoftest-fileds1.png)
+> ![Sample - Test Summary - Fields](media/odata-powerbi-test-analytics/pass-rate-trend-test-fileds1.png)
 
 For a simple report, do the following steps:
 
@@ -248,7 +249,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/passratetrendoftest-report.png)
+> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/pass-rate-trend-test-report.png)
 
 
 
