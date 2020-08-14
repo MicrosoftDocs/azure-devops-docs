@@ -2575,7 +2575,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team rooms</b></p>
-<p>Team rooms, like chat rooms, provide teams with a <a href="../notifications/collaborate-in-a-team-room.md" data-raw-source="[space to discuss work in progress, ask questions, share status, and clarify issues](../notifications/collaborate-in-a-team-room.md)">space to discuss work in progress, ask questions, share status, and clarify issues</a> that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
+<p>Team rooms, like chat rooms, provide teams with a <a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[space to discuss work in progress, ask questions, share status, and clarify issues](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">space to discuss work in progress, ask questions, share status, and clarify issues</a> that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
 
 
 <p><b>Team groups</b></p>
