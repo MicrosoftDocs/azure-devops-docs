@@ -6,7 +6,7 @@ ms.topic: include
 ms.date: 08/13/2020
 ---
 
-
+<!---
 
 ### Date and time pattern  
  
@@ -24,3 +24,5 @@ The date and time pattern you enter for **DateTime** fields should match that wh
 :::image type="content" source="/azure/devops/organizations/settings/media/user-preferences/jamalh-locale-settings-server.png" alt-text="Time and Locale page, Date pattern options":::
 
 ::: moniker-end 
+
+-->
