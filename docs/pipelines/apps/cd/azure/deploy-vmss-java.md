@@ -85,7 +85,7 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: Publish Artifact
   inputs:
-    PathtoPublish: $(Build.ArtifactStagingDirectory) ```
+    PathtoPublish: $(Build.ArtifactStagingDirectory)
 ```
 
 ## Create a custom image and upload it to Azure
