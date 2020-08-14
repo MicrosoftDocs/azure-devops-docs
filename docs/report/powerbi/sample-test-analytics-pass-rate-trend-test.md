@@ -1,5 +1,5 @@
 ---
-title: Pipeline outcome summary sample Power BI report 
+title: Pipeline pass rate trend of a test sample Power BI reports 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a pass rate trend Power BI report for a given test of a pipeline in the project  
 ms.prod: devops

@@ -1,5 +1,5 @@
 ---
-title: Pipeline outcome summary sample Power BI report 
+title: Pipeline failed test sample Power BI reports 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a list of failed tests Power BI report for a given pipeline in the project  
 ms.prod: devops
