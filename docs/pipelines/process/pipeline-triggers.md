@@ -3,8 +3,8 @@ title: Configure pipeline triggers
 description: Configure pipeline triggers
 ms.topic: conceptual
 ms.author: ashkir
-author: ashkir
-ms.date: 03/29/2020
+author: ashokirla
+ms.date: 08/14/2020
 monikerRange: ">=azure-devops-2019"
 ---
 
@@ -16,6 +16,8 @@ These components are often independently built. When an upstream component (a li
 In situations like these, add a pipeline trigger to run your pipeline upon the successful completion of the **triggering pipeline**.
 
 # [YAML](#tab/yaml)
+
+:::moniker range=">= azure-devops-2020"
 
 To trigger a pipeline upon the completion of another, specify the triggering pipeline as a [pipeline resource](resources.md#resources-pipelines).
 
@@ -74,6 +76,12 @@ When you specify both CI triggers and pipeline triggers, you can expect new runs
 - As `A` completes, it will trigger another run of `B`.
 
 To prevent triggering two runs of `B` in this example, you must remove its CI trigger or pipeline trigger.
+
+:::moniker-end
+
+:::moniker range="< azure-devops-2020"
+    Triggers in pipeline resources are not in Azure DevOps Server 2019. Choose the **Classic** tab in the documentation for information on build completion triggers.
+:::moniker-end
 
 # [Classic](#tab/classic)
 
