@@ -270,9 +270,9 @@ You will use Key Vault to store all connection information for your Azure servic
     * Azure DevOps organization: Your active account
     * Project name: Your Azure DevOps data pipeline project
     * Git repository name: **Use existing**. 
-        * Select the **master** branch for collaboration.     
+        * Select the **main** branch for collaboration.     
         * Set **/azure-data-pipeline/factorydata** as the root folder
-    * Branch to import resource into: Select **Use existing** and **master**
+    * Branch to import resource into: Select **Use existing** and **main**
 
 ### Link Azure Data Factory to your Key Vault
 1. In the Azure portal UI, open the Key Vault. 
