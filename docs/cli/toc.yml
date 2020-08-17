@@ -18,7 +18,7 @@
 - name: Troubleshoot common errors
   href: troubleshooting.md
 - name: Security tokens
-  href: security-okens.md
+  href: security-tokens.md
 - name: Azure CLI Reference
   items:
   - name: Command reference

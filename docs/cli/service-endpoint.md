@@ -21,17 +21,17 @@ You can use the `az devops service-endpoint` command to create different types o
 
 ## Create a GitHub service endpoint
 
-Use command:
+To create a GitHub service endpoint, use the following command:
 
 ``` bash
 az devops service-endpoint github create
 ```
 
-In interactive mode this command asks for a [GitHub PAT token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) using a prompt message, for automation purpose set the GitHub PAT token in `AZURE_DEVOPS_EXT_GITHUB_PAT` environment variable.
+In interactive mode, the `az devops service-endpoint github create` command asks for a [GitHub PAT token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) using a prompt message, for automation purpose set the GitHub PAT token using the `AZURE_DEVOPS_EXT_GITHUB_PAT` environment variable.
 
 ## Create an Azure RM service endpoint
 
-Use command:
+To create a an Azure RM service endpoint, use the following command:
 
 ```bash
 az devops service-endpoint azurerm create
@@ -39,18 +39,19 @@ az devops service-endpoint azurerm create
 
 ### Use a client secret/password
 
-In interactive mode this command asks for service principal password/secret using a prompt message, for automation purpose set service principal password/secret in `AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY` environment variable.
+In interactive mode, the the `az devops service-endpoint azurerm create` command asks for a service principal password/secret using a prompt message. For automation purposes, set the service principal password/secret using the `AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY` environment variable.
 
 ```bash
 export AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=<your_secret_here>
 ```
+
 ```powershell
 $env:AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=<your_secret_here>
 ```
 
 ### Use a client certificate
 
-If AAD application uses [certificate for authentication](/azure/active-directory/develop/active-directory-certificate-credentials) then create .pem for the certificate and pass path to .pem file in `--azure-rm-service-principal-certificate-path` argument.
+If AAD application uses [certificate for authentication](/azure/active-directory/develop/active-directory-certificate-credentials), then create a .pem file for the certificate and pass the path to the .pem file using the `--azure-rm-service-principal-certificate-path` argument.
 
 You can create a.pem file using openssl:
 
@@ -66,9 +67,9 @@ The Azure DevOps CLI extension supports creation of any type of service endpoint
 az devops service-endpoint create
 ```
 
-A prerequisite for using this command is that the user should be aware of the request format for creating that particular kind of service endpoint.
+In order to use this command, you must understand  the request format for creating a particular kind of service endpoint.
 
-It can be achieved using the following steps:
+You can achieve it using the following steps:
 
 1. Create endpoint of same type from UI and capture its network trace (using tool of your preference like Fiddler, Chrome Developer tool). 
 
@@ -111,3 +112,8 @@ Save the request body in a file and that file can act as a template for creation
 
 Path to this file (after updating appropriate values like Name, ID or password) can be passed to `--service-endpoint-configuration` parameter.
 Note that the path is provided using '\\' backslash.  
+
+## Related articles
+
+- [Service connections](../pipelines/library/service-endpoints.md)
+- [Create an Azure Resource Manager service connection using automated security](../pipelines/library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-automated-security)
