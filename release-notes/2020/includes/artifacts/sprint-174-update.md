@@ -47,7 +47,7 @@ You can set the following:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- | --- |
-| views | [JsonPatchOperation](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1#jsonpatchoperation) | The view to which the package version will be added |
+| views | [JsonPatchOperation](https://docs.microsoft.com/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1#jsonpatchoperation) | The view to which the package version will be added |
 |
 
 For more information, please refer to the [REST API documentation](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifactspackagetypes/maven?view=azure-devops-rest-5.1) as it gets updated.
