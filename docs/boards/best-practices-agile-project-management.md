@@ -168,26 +168,7 @@ With work item tags team members can assign ad-hoc tags to work items. You can u
 #### To learn how: 
 
 - [Add work item tags to categorize and filter lists and boards](queries/add-tags-to-work-items.md)
-	
-## Work in sprints  
 
-Sprints allow your team to focus on a pre-selected set of work to be accomplished. Work you assign to a sprint appears on your team's sprint backlog. Sprint backlogs are defined only for product backlogs, not for portfolio backlogs.  
-
-Each sprint, perform the following tasks: 
-
-- Plan each sprint with your team 
-- Ensure each work item is scoped to be completed within the sprint
-- Ensure the acceptance criteria for the work is well defined and understood
-- Assign requirements to a sprint and to a team member 
-
-#### To learn how: 
-
-- [Assign backlog items to a sprint](sprints/assign-work-sprint.md) 
-- [Define features and epics](backlogs/define-features-epics.md)  
-- [Create your backlog](backlogs/create-your-backlog.md)  
-- [Forecast your product backlog](sprints/forecast.md)   
-
-	
 ## Forecast and milestone planning  
 
 To gain insight into what features can ship when, you can use the **Forecast** tool. This tool requires that you provide estimates to the Story Points, Effort, or Size field for each requirement. If you want to forecast on a simple count of work items, then simply assign the value of **1** to requirement estimates.
@@ -218,12 +199,10 @@ With estimates assigned to each requirement, and plugging in 12 as a velocity, t
 
 With a forecast of when a feature will ship, you can update each feature's iteration path. 
 
-
 > [!TIP]    
 > Quickly assign values to a feature by adding those fields to the card on the Kanban board. TO learn how, see [Customize cards](boards/customize-cards.md). 
 
 :::image type="content" source="media/best-practices/features-board-iteration-path-updates.png" alt-text="Features board, updated iteration paths":::
-
 
 
 #### Milestone planning
@@ -237,35 +216,62 @@ However, you can use one or more of the following options to mark a work item as
 - [Assign the milestone work item to the sprint](/azure/devops/boards/sprints/assign-work-sprint) in which it's targeted for completion. 
  
 
+	
+## Work in sprints  
+
+*Dev team use sprint backlog to plan and track sprint work.*
+*Project management team - use Kanban board to track sprint work.*
+
+Sprints allow your team to focus on a pre-selected set of work to be accomplished. Work you assign to a sprint appears on your team's sprint backlog. Sprint backlogs are defined only for product backlogs, not for portfolio backlogs.  
+
+Each sprint, perform the following tasks: 
+
+- Plan each sprint with your team 
+- Ensure each work item is scoped to be completed within the sprint
+- Ensure the acceptance criteria for the work is well defined and understood
+- Assign requirements to a sprint and to a team member 
+
+#### To learn how: 
+
+- [Assign backlog items to a sprint](sprints/assign-work-sprint.md) 
+- [Define features and epics](backlogs/define-features-epics.md)  
+- [Create your backlog](backlogs/create-your-backlog.md)  
+- [Forecast your product backlog](sprints/forecast.md)   
+
+## Manage dependencies  
+
+- Dependency Management: Link work items to work items using Predecessor/Successor link types  
+- no critical path 
+
+
 ## Review progress and feature deliverables
 
 To gain insight into progress is being made
+
+Rollup 
 
 Kanban Board: Use to talk to status, blocks/issues/risks/changes, update status; Filter to Current sprint, Assigned To 
 
 Taskboard: 
 
-## Review team deliverables and dependencies
+### Review team deliverables and dependencies
 
 1. Use Delivery Plans to review a calendar view of what's being delivered across teams 
-	
-## Monitor progress 
-
-
-
-Team Velocity:  Use to improve planning/estimating and forecasting 
+ 
 
 ## Process improvement  
 
 TO improve your processes, you need to have a plan and goals. 
+Two charts you can use to support process improvement:  
 
+- Team Velocity: How well is the team able to plan and execute a sprint  Use to improve planning/estimating and forecasting 
+- Cycle time: 
 
+*What are useful process improvement goals for a dev team? feature team?* 
+Make your team accountable. ...
+Measure results. ...
 
-
-## Manage dependencies  
-
-- Dependency Management: Link work items to work items using Predecessor/Successor link types  
-
+https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset
 
 ## Related articles
 
