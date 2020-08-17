@@ -60,9 +60,9 @@ Building upon our initiative to enhance security settings for Azure Pipelines, w
 
 Every job that runs in releases gets an access token. The access token is used by the tasks and by your scripts to call back into Azure DevOps. For example, we use the access token to get source code, download artifacts, upload logs, test results, or to make REST calls into Azure DevOps. A new access token is generated for each job, and it expires once the job completes.
 
-With this update, we build upon [improve pipeline security by restricting the scope of access tokens](https://docs.microsoft.com/en-us/azure/devops/release-notes/2019/sprint-160-update#improve-pipeline-security-by-restricting-the-scope-of-access-tokens) and extend the same to classic releases.
+With this update, we build upon [improve pipeline security by restricting the scope of access tokens](https://docs.microsoft.com/azure/devops/release-notes/2019/sprint-160-update#improve-pipeline-security-by-restricting-the-scope-of-access-tokens) and extend the same to classic releases.
 
-This feature will be on by default for new projects and organizations. For existing organizations, you must enable it in Organization **Settings > Pipelines > Settings. > Limit job authorization scope to current project for release pipelines**. Learn more [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/artifacts?view=azure-devops#artifact-sources---azure-pipelines).
+This feature will be on by default for new projects and organizations. For existing organizations, you must enable it in Organization **Settings > Pipelines > Settings. > Limit job authorization scope to current project for release pipelines**. Learn more [here](https://docs.microsoft.com/azure/devops/pipelines/release/artifacts?view=azure-devops#artifact-sources---azure-pipelines).
 
 ### YAML preview API enhancements
 
