@@ -8,13 +8,13 @@ ms.technology: devops-reference
 ms.manager: mijacobs 
 ms.author: kaelli  
 author: KathrynEE
-monikerRange: 'azure-devops'
-ms.date: 06/18/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 08/17/2020
 ---
 
 # Azure DevOps CLI in Azure Pipeline YAML
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
 
 If you prefer to use YAML to provide your release pipeline configuration, you can use the following example to understand how YAML can be used to install Azure CLI and add the Azure DevOps extension.
 
@@ -48,6 +48,7 @@ steps:
 
 ### For Linux: azure-pipelines-steps-linux.yml
 
+Replace `https://dev.azure.com/{OrganizationName}` with the URL for your Azure DevOps organization.
 
 ```yaml
 steps:
@@ -76,7 +77,7 @@ steps:
     AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
   displayName: 'Login Azure DevOps Extension'
 
-- script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases true
+- script: az devops configure --defaults organization=https://dev.azure.com/{OrganizationName} project="Movie Search Web App" --use-git-aliases true
   displayName: 'Set default Azure DevOps organization and project'
 
 - script: |
@@ -87,6 +88,7 @@ steps:
 
 #### For Windows: azure-pipelines-steps-win.yml
 
+Replace `https://dev.azure.com/{OrganizationName}` with the URL for your Azure DevOps organization.
 
 ```yaml
 steps:
@@ -115,7 +117,7 @@ steps:
     AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
   displayName: 'Login Azure DevOps Extension'
 
-- script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases true
+- script: az devops configure --defaults organization=https://dev.azure.com/{OrganizationName} project="Movie Search Web App" --use-git-aliases true
   displayName: 'Set default Azure DevOps organization and project'
 
 - script: |

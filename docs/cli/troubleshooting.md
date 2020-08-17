@@ -7,14 +7,14 @@ ms.prod: devops
 ms.technology: devops-reference
 ms.manager: mijacobs 
 ms.author: kaelli
-monikerRange: 'azure-devops'
 author: KathrynEE
-ms.date: 06/18/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 08/17/2020
 ---
 
 # Troubleshoot common errors in Azure DevOps CLI
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
 
 ##  Boards - Iterations and Area commands
 
