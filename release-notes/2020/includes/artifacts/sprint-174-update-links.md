@@ -7,3 +7,4 @@ ms.topic: include
 ---
 
 - [Same-organization upstreams for Universal Packages](#same-organization-upstreams-for-universal-packages)
+- [Update Package Version REST API now available for Maven packages](#update-package-version-rest-api-now-available-for-maven-packages)
