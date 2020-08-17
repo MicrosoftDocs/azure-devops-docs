@@ -52,9 +52,9 @@ From your profile page, you can change your information and  account preferences
 
 2. Select **Edit profile**.
 
-:::image type="content" source="media/select-edit-profile-no-preview.png" alt-text="Select Edit profile no preview":::
+   :::image type="content" source="media/select-edit-no-preview.png" alt-text="Select Edit profile no preview":::
 
-3. You can change your profile picture, display name, contact information, and country. Select **Save**. Select the **Preferences** tab to change more settings, like language, date and time pattern, time zone, and UI.
+1. You can change your profile picture, display name, contact information, and country. Select **Save**. Select the **Preferences** tab to change more settings, like language, date and time pattern, time zone, and UI.
 
    ![Edit the About page](media/edit-about-page.png)
 
