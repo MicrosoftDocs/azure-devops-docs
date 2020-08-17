@@ -1,5 +1,5 @@
 ---
-title: Deploy a Azure Pipelines agent on Linux
+title: Deploy an Azure Pipelines agent on Linux
 ms.custom: seodec18
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
@@ -100,7 +100,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab.md)]
+   [!INCLUDE [include](includes/agent-pools-tab.md)]
 
 1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
@@ -116,15 +116,15 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-### Azure DevOps Server 2019
+### Azure DevOps Server 2019 and Azure DevOps Server 2020
 
 1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
 1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-server-2019.md)]
+   [!INCLUDE [include](includes/agent-pools-tab.md)]
 
 1. Click **Download agent**.</li>
 
