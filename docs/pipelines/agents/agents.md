@@ -160,7 +160,7 @@ You can view the details of an agent, including its version and system capabilit
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"
+::: moniker range="> azure-devops-2019"
 
 You can view the details of an agent, including its version, and system and user capabilities, by using the following [az pipelines agent](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest) Azure CLI methods.
 
