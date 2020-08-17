@@ -8,13 +8,13 @@ ms.technology: devops-reference
 ms.manager: mijacobs 
 ms.author: gsaral
 author: KathrynEE
-monikerRange: 'azure-devops'
-ms.date: 07/31/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 08/17/2020
 ---
 
 # Azure DevOps CLI Service Endpoint
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
 
 ## Creating GitHub Service Endpoint
 
