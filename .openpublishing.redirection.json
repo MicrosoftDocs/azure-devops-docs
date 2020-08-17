@@ -187,7 +187,7 @@
     },
     {
       "source_path": "docs/package/install.md",
-      "redirect_url": "/azure/devops/artifacts/install",
+      "redirect_url": "/azure/devops/artifacts/maven/install",
       "redirect_document_id": false
     },
     {
@@ -1102,7 +1102,7 @@
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-aspnet-core-docker.md",
-      "redirect_url": "/azure/devops/pipelines/ecosystems/docker",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/containers/build-image",
       "redirect_document_id": false
     },
     {
@@ -1572,12 +1572,12 @@
     },
     {
       "source_path": "docs/work/productivity/collaborate-in-a-team-room.md",
-      "redirect_url": "/azure/devops/notifications/collaborate-in-a-team-room",
+      "redirect_url": "/previous-versions/azure/devops/notifications/collaborate-in-a-team-room",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/collaborate/collaborate-in-a-team-room.md",
-      "redirect_url": "/azure/devops/notifications/collaborate-in-a-team-room",
+      "redirect_url": "/previous-versions/azure/devops/notifications/collaborate-in-a-team-room",
       "redirect_document_id": false
     },
     {
@@ -3232,7 +3232,7 @@
     },
     {
       "source_path": "docs/get-started/collaborate-in-the-team-room-vs.md",
-      "redirect_url": "/azure/devops/notifications/collaborate-in-a-team-room",
+      "redirect_url": "/previous-versions/azure/devops/notifications/collaborate-in-a-team-room",
       "redirect_document_id": false
     },
     {
@@ -5202,12 +5202,12 @@
     },
     {
       "source_path": "docs/work/reference/update-a-team-project-manually-to-support-test-management.md",
-      "redirect_url": "/azure/devops/reference/xml/update-a-team-project-manually-to-support-test-management",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-a-team-project-manually-to-support-test-management",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/reference/update-a-team-project-v4-dot-2-process-template.md",
-      "redirect_url": "/azure/devops/reference/xml/update-a-team-project-v4-dot-2-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-a-team-project-v4-dot-2-process-template",
       "redirect_document_id": false
     },
     {
@@ -9697,7 +9697,7 @@
     },
     {
       "source_path": "docs/work/customize/add-features-manually.md",
-      "redirect_url": "/azure/devops/reference/add-features-manually",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/add-features-manually",
       "redirect_document_id": false
     },
     {
@@ -9722,12 +9722,12 @@
     },
     {
       "source_path": "docs/work/customize/additional-configuration-options.md",
-      "redirect_url": "/azure/devops/reference/additional-configuration-options",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/additional-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/customize/configure-features-after-upgrade.md",
-      "redirect_url": "/azure/devops/reference/configure-features-after-upgrade",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade",
       "redirect_document_id": false
     },
     {
@@ -9752,7 +9752,7 @@
     },
     {
       "source_path": "docs/work/customize/new-features-added.md",
-      "redirect_url": "/azure/devops/reference/new-features-added",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/new-features-added",
       "redirect_document_id": false
     },
     {
@@ -9767,17 +9767,17 @@
     },
     {
       "source_path": "docs/work/customize/update-customized-process-template.md",
-      "redirect_url": "/azure/devops/reference/update-customized-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-customized-process-template",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/customize/upgrade-tfs-2008-or-2010.md",
-      "redirect_url": "/azure/devops/reference/upgrade-tfs-2008-or-2010",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/upgrade-tfs-2008-or-2010",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/customize/use-team-fields-instead-area-paths.md",
-      "redirect_url": "/azure/devops/reference/use-team-fields-instead-area-paths",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths",
       "redirect_document_id": false
     },
     {
@@ -10372,12 +10372,12 @@
     },
     {
       "source_path": "docs/work/customize/reference/update-a-team-project-manually-to-support-test-management.md",
-      "redirect_url": "/azure/devops/reference/xml/update-a-team-project-manually-to-support-test-management",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-a-team-project-manually-to-support-test-management",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/customize/reference/update-a-team-project-v4-dot-2-process-template.md",
-      "redirect_url": "/azure/devops/reference/xml/update-a-team-project-v4-dot-2-process-template",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-a-team-project-v4-dot-2-process-template",
       "redirect_document_id": false
     },
     {
@@ -11002,7 +11002,7 @@
     },
     {
       "source_path": "docs/work/track/my-shared-queries.md",
-      "redirect_url": "/azure/devops/boards/queries/my-shared-queries",
+      "redirect_url": "/azure/devops/boards/queries/using-queries",
       "redirect_document_id": false
     },
     {
@@ -11127,7 +11127,7 @@
     },
     {
       "source_path": "docs/work/scrum/scrum-sprint-planning-tools.md",
-      "redirect_url": "/azure/devops/sprints/scrum-overview",
+      "redirect_url": "/azure/devops/boards/sprints/scrum-overview",
       "redirect_document_id": false
     },
     {
@@ -12717,7 +12717,7 @@
     },
     {
       "source_path": "docs/boards/sprints/scrum-sprint-planning-tools.md",
-      "redirect_url": "/azure/devops/sprints/scrum-overview",
+      "redirect_url": "/azure/devops/boards/sprints/scrum-overview",
       "redirect_document_id": false
     },
     {
@@ -15796,86 +15796,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/Combos/ComboO.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/Combos/ComboO",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/Combos/IComboOptions.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/Combos/IComboOptions",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/Dialogs/DialogO.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/Dialogs/DialogO",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/Dialogs/IDialogOptions.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/Dialogs/IDialogOptions",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/Dialogs/IModalDialogOptions.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/Dialogs/IModalDialogOptions",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/Dialogs/ModalDialogO.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/Dialogs/ModalDialogO",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/Grids/GridO.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/Grids/GridO",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/Grids/IGridOptions.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/Grids/IGridOptions",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/Menus/Menu.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/Menus/Menu",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/Menus/MenuBarOptions.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/Menus/MenuBarOptions",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/Splitter/ISplitterOptions.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/Splitter/ISplitterOptions",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/Splitter/SplitterO.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/Splitter/SplitterO",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/StatusIndicator/IWaitControlOptions.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/StatusIndicator/IWaitControlOptions",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/StatusIndicator/WaitControlO.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/StatusIndicator/WaitControlO",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/TreeView/ITreeOptions.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/TreeView/ITreeOptions",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/extend/reference/client/api/VSS/Controls/includes/TreeView/TreeViewO.md",
-      "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Controls/includes/TreeView/TreeViewO",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/extend/reference/client/api/VSS/Operations/Contracts/Operation.md",
       "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/VSS/Operations/Contracts/Operation",
       "redirect_document_id": false
@@ -16668,6 +16588,56 @@
     {
       "source_path": "reference/xml/upload-or-download-the-microsoft-project-mapping-file.md",
       "redirect_url": "/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/configure-features-after-upgrade.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/xml/update-a-team-project-v4-dot-2-process-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-a-team-project-v4-dot-2-process-template",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/xml/update-a-team-project-manually-to-support-test-management.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-a-team-project-manually-to-support-test-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/new-features-added.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/new-features-added",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/add-features-manually.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/add-features-manually",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/additional-configuration-options.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/additional-configuration-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/update-customized-process-template.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/update-customized-process-template",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/upgrade-tfs-2008-or-2010.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/upgrade-tfs-2008-or-2010",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/reference/use-team-fields-instead-area-paths.md",
+      "redirect_url": "/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/notifications/collaborate-in-a-team-room.md",
+      "redirect_url": "/previous-versions/azure/devops/notifications/collaborate-in-a-team-room",
       "redirect_document_id": false
     }
   ]

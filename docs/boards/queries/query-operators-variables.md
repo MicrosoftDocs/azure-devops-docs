@@ -93,6 +93,7 @@ The value you specify for a field must conform to the data type for that field. 
 1. The **Boolean** data type field is supported for TFS 2017 and later versions. 
 2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
 
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 <a id="operators" /> 
 
