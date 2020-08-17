@@ -12,7 +12,7 @@ When an agent stops communicating with the Azure Pipelines server, the job it wa
 
 ### Optionally mount container volumes read-only
 
-When you run a container job in Azure Pipelines, several volumes containing the workspace, tasks, and other materials are mapped as volumes. These volumes default to read/write access. For increased security, you can mount the volumes read-only by altering your container specification in YAML. Each key under mountReadOnly can be set to &quot;true&quot; for read-only (the default is false).
+When you run a container job in Azure Pipelines, several volumes containing the workspace, tasks, and other materials are mapped as volumes. These volumes default to read/write access. For increased security, you can mount the volumes read-only by altering your container specification in YAML. Each key under `mountReadOnly` can be set to `true` for read-only (the default is `false`)
 
 ```yml
 resources:
@@ -48,7 +48,7 @@ steps:
 # if any step tried to run in the container here, it would fail
 ```
 
-Also, we include the list of containers in a pipeline variable, Agent.ContainerMapping. You can use this if you want to inspect the list of containers in a script, for example. It contains a stringified JSON object mapping the resource name ("builder" from the example above) to the container ID the agent manages.
+Also, we include the list of containers in a pipeline variable, `Agent.ContainerMapping`. You can use this if you want to inspect the list of containers in a script, for example. It contains a stringified JSON object mapping the resource name ("builder" from the example above) to the container ID the agent manages.
 
 ### Unzip task bundles for each step
 
@@ -66,4 +66,4 @@ This feature will be on by default for new projects and organizations. For exist
 
 ### YAML preview API enhancements
 
-A few sprints ago, we introduced the ability to <a href="https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-165-update#preview-fully-parsed-yaml-document-without-committing-or-running-the-pipeline">preview the complete YAML</a> of a pipeline without running it. With this update, we've created a dedicated new URL for the preview capability. Now you can POST to <span><span>`https://dev.azure.com/{org}/{project}/_apis/pipelines/{pipelineId}/preview</span></span>` to retrieve the finalized YAML body. This new API takes the same parameters as queuing a run, but no longer requires the &quot;Queue builds&quot; permission.
+A few sprints ago, we introduced the ability to <a href="https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-165-update#preview-fully-parsed-yaml-document-without-committing-or-running-the-pipeline">preview the complete YAML</a> of a pipeline without running it. With this update, we've created a dedicated new URL for the preview capability. Now you can POST to `https://dev.azure.com/{org}/{project}/_apis/pipelines/{pipelineId}/preview` to retrieve the finalized YAML body. This new API takes the same parameters as queuing a run, but no longer requires the &quot;Queue builds&quot; permission.
