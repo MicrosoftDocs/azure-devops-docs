@@ -1,25 +1,24 @@
 
 - name: Get started
   href: index.md 
-  items:
-  - name: Sign in with a Personal Access Token
-    href: log-in-via-pat.md
-  - name: Auto detect configuration and git aliases 
-    href: auto-detect-and-git-aliases.md
-  - name: Configure policies
-    href: policy-configuration-file.md
-  - name: Run commands in a release pipeline 
-    href: azure-devops-cli-in-release-pipeline.md
-  - name: Run commands in a YAML build pipeline
-    href: azure-devops-cli-in-yaml.md  
-  - name: Manage security permissions
-    href: permissions.md
-  - name: Manage service connections
-    href: service_endpoint.md
-  - name: Troubleshooting common errors
-    href: troubleshooting.md
-  - name: Security tokens
-    href: security_tokens.md
+- name: Sign in with a Personal Access Token
+  href: log-in-via-pat.md
+- name: Auto detect configuration and git aliases 
+  href: auto-detect-and-git-aliases.md
+- name: Configure policies
+  href: policy-configuration-file.md
+- name: Run commands in a YAML build pipeline
+  href: azure-devops-cli-in-yaml.md  
+- name: Run commands in a release pipeline 
+  href: azure-devops-cli-in-release-pipeline.md
+- name: Security permissions
+  href: permissions.md
+- name: Service connections
+  href: service-endpoint.md
+- name: Troubleshoot common errors
+  href: troubleshooting.md
+- name: Security tokens
+  href: security-okens.md
 - name: Azure CLI Reference
   items:
   - name: Command reference
