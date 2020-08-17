@@ -84,7 +84,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"
+::: moniker range="#tab/azure-devops-cli/"
 
 You can use Azure CLI to configure [Case enforcement](#case-enforcement) and [Maximum file size](#maximum-file-size) policies.
 
