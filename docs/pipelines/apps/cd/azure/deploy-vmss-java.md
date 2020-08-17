@@ -212,7 +212,7 @@ az network lb rule create \
 
 ## Deploy updates to the virtual machine scale set 
 
-Add a PowerShell task to your pipeline to deploy updates to the scale set. Add the task at the end of the pipeline. 
+Add an Azure CLI task to your pipeline to deploy updates to the scale set. Add the task at the end of the pipeline. 
 
 ```yml
 - task: AzureCLI@2
