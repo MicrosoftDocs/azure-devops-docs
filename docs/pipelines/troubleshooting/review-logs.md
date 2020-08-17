@@ -12,7 +12,7 @@ author: steved0x
 
 # Review logs to diagnose pipeline issues
 
-Pipeline logs provide a powerful tool for determining the cause pipeline failures.
+Pipeline logs provide a powerful tool for determining the cause of pipeline failures.
 
 A typical starting point is to review the logs in your completed build or release. You can view logs by navigating to the pipeline run summary and selecting the job and task. If a certain task is failing, check the logs for that task.
 
