@@ -17,9 +17,9 @@ ms.date: 08/17/2020
 [!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
 
 
-You can sign in using an Azure DevOps Personal Access Token. See the [create personal access token guide](https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=vsts#create-personal-access-tokens-to-authenticate-access) to create one.
+You can sign in using an Azure DevOps Personal Access Token. See the [create personal access token guide](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-personal-access-tokens-to-authenticate-access) to create one.
 
-You will be prompted to enter PAT after you run the `az devops login` command.
+You are prompted to enter a PAT after you run the `az devops login` command.
 
 
 ```bash
