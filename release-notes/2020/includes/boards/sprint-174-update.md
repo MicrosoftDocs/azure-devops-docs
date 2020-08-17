@@ -27,6 +27,8 @@ We are happy to announce that the feature is now out of preview and generally av
 
 We have added a new event to the audit logs to help customers better track process related changes. An event will be logged whenever the values on a picklist are changed. Changes to picklist fields are usually the most common changes made to a process. With this new event, organization admins can better track when and who made changes to those fields.
 
+<img src="../../media/174-boards-1-2.png" alt="audit-logs" width="600">
+
 ### Azure Boards GitHub App Repo Limit Raised (Private Preview)
 
 If you are using the <a href="https://github.com/marketplace/azure-boards">Azure Boards application</a> from the GitHub marketplace, there is a limit of 100 GitHub repositories you can connect to.&nbsp; This becomes a blocker for large organizations that can have well over 100 repositories. In this sprint, we changed how Azure Boards connects to your GitHub repos to support well over 100. If you are currently hitting the 100 repo limit, let us know, and we can enable the feature to increase that limit and unblock you. Please<a href="mailto: dahellem@microsoft.com"> email us directly</a> with your organization name (dev.azure.com/{organization}).
