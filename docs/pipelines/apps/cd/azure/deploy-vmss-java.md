@@ -61,7 +61,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-latest'
 
 steps:
 - task: Maven@3
@@ -174,12 +174,6 @@ To create a custom image, you can use the [Build Machine Image task](../../../ta
     templateType: custom
     customTemplateLocation: '$(System.DefaultWorkingDirectory)/packer-template.json'
     customTemplateParameters: '{"subscription_id":"YOUR_SUBSCRIPTION_ID","client_id":"appId","client_secret":"password","tenant_id":"tenant","resource_group":"myVMSSResourceGroup","managed_image_name":"vmss-image-$(Build.BuildId)"}'
-    # ConnectedServiceName: 'YOUR_SUBSCRIPTION' 
-    location: 'eastus2'
-    storageAccountName: 'vmssstorageaccount'
-    azureResourceGroup: 'myVMSSResourceGroup'
-    packagePath: '$(Build.ArtifactStagingDirectory)'
-    deployScriptPath: ''
 ```
 
 3. Run the pipeline to generate your first image.
@@ -221,10 +215,11 @@ az network lb rule create \
 Add a PowerShell task to your pipeline to deploy updates to the scale set. Add the task at the end of the pipeline. 
 
 ```yml
-- task: AzurePowerShell@5
+- task: AzureCLI@2
   inputs:
     azureSubscription: '`YOUR_SUBSCRIPTION_ID`' #Authorize and in the task editor
-    ScriptType: 'InlineScript'
+    ScriptType: 'ps'
+    scriptLocation: 'inlineScript'
     Inline: 'az vmss update --resource-group myVMSSResourceGroup --name vmssScaleSet --set virtualMachineProfile.storageProfile.imageReference.id=/subscriptions/YOUR_SUBSCRIPTION_ID/myVMSSResourceGroup/providers/Microsoft.Compute/images/vmss-image-$(Build.BuildId)'
     azurePowerShellVersion: 'LatestVersion'
 ```
