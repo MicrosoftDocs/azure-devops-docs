@@ -7,7 +7,7 @@ ms.date: 08/19/2020
 description:
 ---
 
-## Enhanced YAML preview API
+# Enhanced YAML preview API
 
 In this sprint, we're rolling out a new API endpoint that allows you to retrieve the finalized YAML body.
 

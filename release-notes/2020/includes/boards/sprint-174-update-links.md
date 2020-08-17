@@ -8,5 +8,5 @@ ms.topic: include
 
 - [System work item types on backlogs and boards](#system-work-item-types-on-backlogs-and-boards)
 - [Audit logging event](#audit-logging-event)
-- [Azure Boards GitHub app repo limit raised (private preview)](#azure-boards-gitHub-app-repo-imit-raised-private-preview)
+- [Azure Boards GitHub app repo limit raised (private preview)](#azure-boards-github-app-repo-limit-raised-private-preview)
 - [Customize work item state when pull request is merged (private preview)](#customize-work-item-state-when-pull-request-is-merged-private-preview)
