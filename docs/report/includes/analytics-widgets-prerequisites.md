@@ -8,7 +8,9 @@ ms.date: 07/14/2020
 
 <a id="permissions">  </a>
 
+::: moniker range=">= azure-devops-2019"
 ## Prerequisites  
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -19,7 +21,7 @@ ms.date: 07/14/2020
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020 < azure-devops"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  
