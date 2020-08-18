@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 07/20/2020
+ms.date: 08/18/2020
 ---
 
 # Customize your backlogs or boards (Inheritance process)  
 
 [!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]    
 
-You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
+You can customize your backlogs to add more levels or add custom work item types to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* work item type, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  
 > [!div class="mx-imgBorder"]  
 > ![Changes made to the backlog levels](media/process/portfolio-backlogs-modified.png) 
@@ -31,7 +31,26 @@ Portfolio backlogs are useful for organizing your backlog under various business
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
 > [!NOTE]   
-> You can't add or remove an inherited WIT to or from a backlog, for example, you can't add the Issue WIT to the product backlog.   
+> You can't add or remove an inherited work item type to or from a backlog, for example, you can't add the Issue work item type to the product backlog.  
+ 
+::: moniker range="< azure-devops"
+> [!NOTE]    
+> You can't add an inherited work item type to any backlog level. For example, you can't add the Issue or Impediment work item type to the product backlog. 
+ 
+::: moniker-end 
+
+## Supported customizations
+
+[!INCLUDE [temp](../includes/process-customize-backlogs.md)]
+
+<a id="add-oob-to-backlog" /> 
+
+::: moniker range="azure-devops"
+
+## Add a system work item type to a backlog  
+
+If you want to track Issues or Impediments along with your requirements or a portfolio backlog, you can by editing the corresponding backlog.    
+::: moniker-end 
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
@@ -44,7 +63,7 @@ To learn more about what you can customize, see [About process customization and
 
 ## Add or edit portfolio backlogs 
 
-Each process defines two default portfolio backlogs, Epics and Features; each is associated with their corresponding work item types, epics and features. 
+The Agile, Scrum, and CMMI system processes defines two default portfolio backlogs, Epics and Features. Each is associated with their corresponding work item types, Epic and Feature. The Basic process only defines the Epics backlog and Epic work item type. For more information about each process, see [Choose a process](../../../boards/work-items/guidance/choose-process.md).
 
 You can add a custom work item type when adding or editing a portfolio backlog, or you can choose a work item type you've previously added. Only those work item types that don't belong to another backlog level appear for selection. 
  
@@ -72,10 +91,8 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 ### Edit, rename, or delete a portfolio backlog 
 
-From the Backlog levels page, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false":::  context menu of a portfolio backlog to edit, rename, or delete it.  
+From the **Backlog levels** page, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false":::  context menu of a portfolio backlog to edit, rename, or delete it.  
 
-> [!NOTE]    
-> You can't add an inherited work item type to any backlog level. 
 
 ![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-portfolio-backlog-context-menu.png)
 
@@ -90,35 +107,48 @@ Deleting a backlog level removes the backlog and board associated with the level
 
 ## Edit or rename the requirement backlog 
 
-The Requirement backlog, also referred to as the product backlog, defines the WITs that appear on the product backlog and Kanban board. The default WIT for Agile is User Story; for Scrum, Product Backlog Item; and for CMMI, Requirement. 
+The Requirement backlog, also referred to as the product backlog, defines the work item types that appear on the product backlog and Kanban board. The default work item type for Agile is User Story; for Basic, Issue; for Scrum, Product Backlog Item; and for CMMI, Requirement. 
 
-You can rename the backlog, change the color, add WITs, and change the default WIT. Open the Edit backlog dialog from the context menu for the Requirements backlog. 
+You can rename the backlog, change the color, add work item types, and change the default work item type. Open the Edit backlog dialog from the context menu for the Requirements backlog. 
+ 
+
+::: moniker range="azure-devops"
+
+Here, we've renamed the backlog, added **Customer Ticket** and **Issue**, and changed the default type to *Customer Ticket*. Simply check those boxes of the work item types to include on the backlog. 
+
+:::image type="content" source="media/backlogs/add-oob-issue-to-backlog.png" alt-text="Web portal, Add a portfolio backlog dialog, Save changes":::
+
+The **Edit backlog level** dialog automatically includes inherited and custom work item types which haven't been assigned to other backlog levels. You can't remove the default, inherited work item type from the Requirements backlog, but you can disable that work item type. 
+
+::: moniker-end  
+
+::: moniker range="< azure-devops"
 
 Here, we've renamed the backlog, added *Customer Ticket*, and changed the default type to *Customer Ticket*. 
 
 ![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-edit-backlog-dialog-modified.png)  
+::: moniker-end  
+ 
 
 > [!NOTE]    
-> You can't remove the default, inherited WIT from the Requirements backlog.  
+> You can't remove the default, inherited work item type from the Requirements backlog, but you can disable that work item type. 
 
 <a id="edit-iteration-backlog">  </a>
 
 ## Edit the iteration backlog 
 
-The Iteration backlog, also referred to as the sprint backlogs, defines the WITs that are displayed on the sprint backlogs and Taskboards. The default WIT for all processes is Task.  
+The Iteration backlog, also referred to as the sprint backlogs, defines the work item types that are displayed on the sprint backlogs and Taskboards. The default work item type for all processes is Task.  
 
-For the iteration backlog, you can add WITs and change the default WIT. Open the Edit backlog dialog from the context menu for the Iteration backlog. 
+For the iteration backlog, you can add work item types and change the default work item type. Open the Edit backlog dialog from the context menu for the Iteration backlog. 
 
-Here, we've added the *Ticket* WIT which is tracked along with tasks. 
+Here, we've added the *Ticket* work item type which is tracked along with tasks. 
 
 ![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-edit-iteration-backlog-dialog-modified.png)  
 
 > [!NOTE]    
-> You can't remove the default, inherited WIT from the Iteration backlog. 
+> You can't remove the default, inherited work item type from the Iteration backlog. 
 
 
-
-<a id="add-oob-to-backlog" /> 
 
 
 ## Related articles  
