@@ -8,7 +8,7 @@ ms.topic: include
 
 ### System work item types on backlogs and boards
 
-In sprint 172, we started a private preview of a feature that allows you to add a system work item type to the backlog level of choice. Historically these work item types have only been available from queries.
+we [started a private preview](https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-172-update?#system-work-item-types-on-backlogs-and-boards-private-preview) of a feature that allows you to add a system work item type to the backlog level of choice. Historically these work item types have only been available from queries.
 
 | Process | Work Item Type |
 | :------ | :------------- |
@@ -19,7 +19,7 @@ In sprint 172, we started a private preview of a feature that allows you to add 
 |         | Review         |
 |         | Risk           |
 
-We are happy to announce that the feature is now out of preview and generally available to all organizations. Adding a system work item type to a backlog level is simple. Just go into your custom process and click the Backlog Levels tab. Select your backlog level of choice (example: Requirements Backlog) and choose the edit option. Then add the work item type.
+We are happy to announce that the feature is now out of preview and generally available to all organizations. Adding a system work item type to a backlog level is simple. Just go into your custom process and click **the Backlog Levels tab**. Select your backlog level of choice (example: Requirements Backlog) and **choose the edit option**. Then add the work item type.
 
 <img src="../../media/174-boards-1-1.gif" width="600" alt="backlogs">
 
