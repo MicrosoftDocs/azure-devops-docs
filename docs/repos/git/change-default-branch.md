@@ -4,9 +4,7 @@ description: Learn how to change your default branch name
 ms.assetid: cd71e039-6e11-44f9-80fd-66c3bc146b46
 ms.topic: article
 ms.technology: devops-code-git
-ms.date: 07/10/2020
-ms.author: macoope
-author: vtbassmatt
+ms.date: 08/14/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -22,6 +20,15 @@ Finally, we'll look at a tool for easing the transition.
 ## Set a new default branch
 
 [!INCLUDE [](includes/change-default-branch-instructions.md)]
+
+## Choosing a name
+
+[Git 2.28](https://github.blog/2020-07-27-highlights-from-git-2-28/) added the ability to choose an initial branch name.
+At the same time, Azure Repos, GitHub, and other Git hosting providers added the ability to choose a different initial branch name.
+Previously, the default branch was almost always named `master`.
+The most popular alternative name is `main`.
+Less common options include `trunk` and `development`.
+Absent any restrictions from the tools you use or team you're on, any valid branch name will work.
 
 ## Updating other systems
 

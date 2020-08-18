@@ -55,7 +55,7 @@ Choose **+ Variable group**.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="= azure-devops"
+::: moniker range="> azure-devops-2019"
 
 Using the Azure DevOps CLI, you can create and update variable groups for the pipeline runs in your project. You can also [manage the variable groups](#manage-a-variable-group) as well as [manage the individual variables within a variable group](#manage-variables-in-a-variable-group).
 
@@ -265,9 +265,9 @@ also see a drop-down list of stages in the pipeline - you can link the variable 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
-There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using a variable group. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service). 
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using a variable group.
 
 ::: moniker-end
 
@@ -284,7 +284,7 @@ cannot be accessed directly in scripts - instead they must be passed as argument
 Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
 will automatically be made available to all the definitions or stages to which the variable group is linked.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Manage a variable group
 
@@ -613,9 +613,9 @@ When you set a variable with the same name in multiple scopes, the following pre
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
-There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables in a group. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service). 
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables in a group.
 
 ::: moniker-end
 

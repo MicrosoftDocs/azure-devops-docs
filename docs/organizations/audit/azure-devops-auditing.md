@@ -7,13 +7,13 @@ ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: roferg
 ms.topic: quickstart
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2020'
 ms.date: 05/11/2020
 ---
 
 # Access, export, and filter audit logs
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-cloud-plus-2020](../../includes/version-cloud-plus-2020.md)]
 
 > [!Note]
 > Auditing is currently in a Public Preview.
@@ -21,6 +21,7 @@ ms.date: 05/11/2020
 In this article, learn how to access, export, and filter audit logs. Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. 
 
 Audit events can be the following occurrences:
+
 - permissions changes
 - deleted resources
 - branch policy changes
@@ -35,16 +36,14 @@ By default, Project Collection Administrators are the only group that have acces
 
 ## Access auditing
 
-::: moniker range="azure-devops"
-
-> [!NOTE]   
+> [!NOTE]
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
 
-#### [Preview page](#tab/preview-page) 
+#### [Preview page](#tab/preview-page)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
- 
+
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Auditing**.
@@ -58,12 +57,12 @@ By default, Project Collection Administrators are the only group that have acces
 5. Set **View audit log** to **allow**, and then select **Save changes**.
    ![Auditing access permission](media/azure-devops-auditing/AuditLogPermissionRedBox-preview.png)
 
-The user or group members have access to view your organization audit events. 
+The user or group members have access to view your organization audit events.
 
-#### [Current page](#tab/current-page) 
+#### [Current page](#tab/current-page)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 3. Select **Auditing**.
 
@@ -73,9 +72,7 @@ The user or group members have access to view your organization audit events.
 5. Set **View audit log** to **allow**, and then select **Save changes**.
    ![Auditing access permission](media/azure-devops-auditing/AuditLogPermissionRedBox.png)
 
-The user or group members have access to view your organization audit events. 
-
-::: moniker-end
+The user or group members have access to view your organization audit events.
 
 * * *
 
@@ -93,9 +90,8 @@ See the following description of the information that's visible on the auditing 
 |IP    |  IP address of the individual that triggered the audit event.    |
 |Timestamp     | Time that the triggered event happened. Time is localized to your time zone.        |
 |Area     | Location in Azure DevOps where the event occurred.        |
-|Category     | Description of the type of action that occurred. For example, modify, rename, create, delete, remove, execute, and access.   | 
+|Category     | Description of the type of action that occurred. For example, modify, rename, create, delete, remove, execute, and access.   |
 |Details    | Brief description of what happened during the event.        |
-
 
 Each audit event records additional information to what's viewable on the auditing page. This information includes the authentication mechanism, a correlation ID to link similar events together, user agent, and additional information that’s dependent on the type of audit event. This information can only be viewed by downloading auditing events.
 
@@ -110,7 +106,6 @@ Some audit events can contain multiple actions that took place at once, known as
 ![Auditing more information icon](media/azure-devops-auditing/AuditLogMoreInformationHighRes.png)
 
 Selecting the information icon displays additional information about what happened in this audit event.
-
 
 ## Export auditing events
 
@@ -144,7 +139,7 @@ When you filter through audit events, it’s best to use the *area* and *categor
 > [!Note]
 > While auditing is in a public preview, we're working hard to get more areas audited. We're adding new auditing events monthly.
 >
-> If you can't find the auditing event you're looking for in the following table, be sure to check the REST API: https:\//auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions. Replace {YOUR_ORGANIZATION} with the name of your organization. The API shows a list of all audit events your organization could emit. 
+> If you can't find the auditing event you're looking for in the following table, be sure to check the REST API: `https:\//auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions`. Replace {YOUR_ORGANIZATION} with the name of your organization. The API shows a list of all audit events your organization could emit. 
 
 |Area            |Description |
 |----------------|------------|

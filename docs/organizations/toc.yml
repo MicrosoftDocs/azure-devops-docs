@@ -13,7 +13,7 @@
   items:
   - name: Set user preferences
     href: ./settings/set-your-preferences.md
-  - name: Enable preview features
+  - name: Manage or enable features
     href: /azure/devops/project/navigation/preview-features?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set personal favorites
     href: /azure/devops/project/navigation/set-favorites?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
@@ -41,6 +41,12 @@
     href: ../integrate/concepts/rate-limits.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Work tracking, process, & project limits 
     href: ./settings/work/object-limits.md
+- name: Extensions
+  items:
+  - name: Install extensions
+    href: ../marketplace/install-extension.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Request and approve extensions
+    href: ../marketplace/request-extensions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Pipelines (Build & release)
   items:
   - name: Agent pools & queues
@@ -69,6 +75,10 @@
   items:
   - name: Set test retention policies
     href: /azure/devops/test/how-long-to-keep-test-results?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Artifacts
+  items:
+  - name: View storage
+    href: ../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Troubleshooting
   items:
   - name: User & permissions management

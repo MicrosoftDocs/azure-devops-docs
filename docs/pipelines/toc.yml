@@ -2,7 +2,7 @@
   href: index.yml
 - name: What is Azure Pipelines?
   href: get-started/what-is-azure-pipelines.md
-- name: CI, CD, YAML & Classic  
+- name: CI, CD, YAML & Classic
   href: get-started/pipelines-get-started.md
 - name: Get started
   items:
@@ -13,14 +13,16 @@
     displayName: status badge, get started, first pipeline, import from github, clone pipeline
   - name: Create your first pipeline from the CLI
     href: create-first-pipeline-cli.md
-# - name: Publish build results 
+# - name: Publish build results
 #   href: get-started/pipelines-get-started.md
   - name: Customize your pipeline
     href: customize-pipeline.md
     displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers
   - name: Multi-stage pipelines user experience
     href: get-started/multi-stage-pipelines-experience.md
-# - name: Clean up pipeline steps 
+  - name: Pipelines with PowerShell DSC
+    href: get-started/dsc-cicd.md
+# - name: Clean up pipeline steps
 #   href: get-started/pipelines-get-started.md
 - name: Pipeline basics
   items:
@@ -28,7 +30,7 @@
     href: get-started/key-pipelines-concepts.md
   - name: Repositories
     items:
-    - name: Supported repositories 
+    - name: Supported repositories
       href: repos/index.md
       displayName: supported repository types, version control, azure repos git, tfvc, github, bitbucket, subversion, github enterprise, ghe
     - name: Azure Repos Git
@@ -40,10 +42,10 @@
     - name: GitHub Enterprise Server
       href: repos/github-enterprise.md
       displayName: github enterprise, ci, pr, pull request, triggers, oauth, pat, checkout, firewall, whitelist, exception, rule, other git, external git, service connection, classic, yaml, ip address range
-    - name: BitBucket Cloud
+    - name: Bitbucket Cloud
       href: repos/bitbucket.md
       displayName: ci, pr, pull request, triggers, self, batching, batched CI, oauth, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, badge, prefergitfrompath, checkout, clone, fetch, get sources, clean, label sources, tag sources, checkout path, submodules, shallow fetch
-    - name: BitBucket Server
+    - name: Bitbucket Server
       href: repos/on-premises-bitbucket.md
       displayName: ci, triggers, checkout, firewall, whitelist, exception, rule, other git, external git, service connection, ip address range
     - name: TFVC
@@ -52,8 +54,9 @@
     - name: Subversion
       href: repos/subversion.md
       displayName: ci, triggers, checkout, firewall, whitelist, exception, rule, service connection, ip address range
-    - name: Multi-repo checkout
+    - name: Multiple repositories
       href: repos/multi-repo-checkout.md
+      displayName: ci, pr, pull request, triggers, checkout, branch policy, path filter, branch filter, tag trigger, multiple repos, multi-repo, multi-checkout, multi-trigger, repo resource, repository resource, self
   - name: Triggers
     items:
     - name: Types of triggers
@@ -70,15 +73,15 @@
       displayName: release trigger, CD trigger, stage trigger, environment trigger, deploy PR, scheduled trigger, schedule
   - name: Tasks & templates
     items:
-    - name: Task types & usage 
+    - name: Task types & usage
       href: process/tasks.md
       displayName: custom tasks, task versions, task control options, conditions, task tool installers, build tool installers
     - name: Task groups
       href: library/task-groups.md
-    - name: Template types & usage 
+    - name: Template types & usage
       href: process/templates.md
       displayName: parameters, passing, job reuse, stage reuse, variable reuse, expressions, context, conditional insertion, iterative insertion, escape a value
-  - name: Jobs & stages 
+  - name: Jobs & stages
     items:
     - name: Specify jobs in your pipeline
       href: process/phases.md
@@ -90,9 +93,9 @@
       displayName: stage, dependencies, conditions, queuing policies, approvals
     - name: Deployment jobs
       href: process/deployment-jobs.md
-    - name: Specify conditions 
+    - name: Specify conditions
       href: process/conditions.md
-    - name: Specify demands 
+    - name: Specify demands
       href: process/demands.md
       displayName: task demands, manually entered demands, capabilities
   - name: Library, variables & secure files
@@ -114,7 +117,7 @@
       href: release/azure-key-vault.md
   - name: Approvals, checks, & gates
     items:
-    - name: Release approval and gates overview 
+    - name: Release approval and gates overview
       href: release/approvals/index.md
     - name: Define approvals & checks
       href: process/approvals.md
@@ -159,11 +162,11 @@
     displayName: anaconda, PyPI, pip , setuptools, wheel, conda, flake8, pytest, junit, cobertura, tox, twine
   - name: Python to web app
     href: ecosystems/python-webapp.md
-  - name: Anaconda 
+  - name: Anaconda
     href: ecosystems/anaconda.md
   - name: C/C++
     href: apps/windows/cpp.md
-  - name: Java 
+  - name: Java
     items:
     - name: Java apps
       href: ecosystems/java.md
@@ -208,18 +211,18 @@
     href: release/caching.md
   - name: Configure build run numbers
     href: process/run-number.md
-    displayName: build number, run number, tokens, variables, 
+    displayName: build number, run number, tokens, variables,
   - name: Classic Build options
     href: build/options.md
 - name: Run pipeline tests
   items:
-  - name: About pipeline tests 
+  - name: About pipeline tests
     href: test/test-glossary.md
   - name: Set up parallel testing (VSTest)
     href: test/parallel-testing-vstest.md
   - name: Set up parallel testing (Test Runner)
     href: test/parallel-testing-any-test-runner.md
-  - name: Enable Test Impact Analysis (TIA) 
+  - name: Enable Test Impact Analysis (TIA)
     href: test/test-impact-analysis.md
   - name: Enable flaky test management
     href: test/flaky-test-management.md
@@ -233,13 +236,13 @@
     items:
     - name: Review test results
       href: test/review-continuous-test-results-after-build.md
-    - name: Review test Analytics 
+    - name: Review test Analytics
       href: test/test-analytics.md
     - name: Review code coverage
       href: test/review-code-coverage-results.md
     - name: Review pull request code coverage
-      href: test/codecoverage-for-pullrequests.md 
-- name: Deploy apps 
+      href: test/codecoverage-for-pullrequests.md
+- name: Deploy apps
   items:
   - name: Deploy apps to environments
     items:
@@ -250,8 +253,8 @@
       href: process/environments-kubernetes.md
     - name: Virtual machine resource
       href: process/environments-virtual-machines.md
-  - name: Deploy apps using VMs 
-    items: 
+  - name: Deploy apps using VMs
+    items:
     - name: Linux virtual machines
       href: ecosystems/deploy-linux-vm.md
   - name: Deploy apps to Azure
@@ -259,6 +262,13 @@
     - name: Deploy a Linux web app - ARM template
       href: apps/cd/azure/deploy-arm-template.md
       displayName: Resource Manager
+    - name: Deploy a data pipeline with Azure
+      items:
+      - name: Data pipeline overview
+        href: apps/cd/azure/cicd-data-overview.md
+        displayName: Data pipeline overview
+      - name: Build a data pipeline
+        href: apps/cd/azure/build-data-pipeline.md
     - name: Azure Government Cloud
       href: library/government-cloud.md
     - name: Azure Resource Manager
@@ -266,7 +276,7 @@
     - name: Azure SQL database
       href: targets/azure-sqldb.md
     - name: Azure App Service
-      href: targets/deploy-to-azure-vscode.md  
+      href: targets/deploy-to-azure-vscode.md
     - name: Azure Stack
       href: targets/azure-stack.md
     - name: Function App on Container
@@ -281,10 +291,12 @@
       href: targets/webapp-on-container-linux.md
     - name: Web App on Windows
       href: targets/webapp.md
-- name: Deploy apps (Classic) 
+- name: Deploy apps (Classic)
   items:
+  - name: Release pipelines
+    href: release/index.md
   - name: Deploy from multiple branches
-    href: release/deploy-mulitple-branches.md    
+    href: release/deploy-multiple-branches.md
   - name: Deploy pull request builds
     href: release/deploy-pull-request-builds.md
   - name: Classic CD pipelines
@@ -319,8 +331,8 @@
       href: targets/scvmm.md
     - name: VMware (Classic)
       href: targets/vmware.md
-- name: Deploy apps using containers 
-  items: 
+- name: Deploy apps using containers
+  items:
 #  - name: Orchestration overview (New)
   - name: Build images
     href: ecosystems/containers/build-image.md
@@ -343,7 +355,7 @@
       href: ecosystems/kubernetes/multi-cloud.md
       displayName: kubernetes, multicloud, aks, gke, eks, digital ocean
     - name: Deployment strategies
-      href: ecosystems/kubernetes/deployment-strategies.md 
+      href: ecosystems/kubernetes/deployment-strategies.md
       displayName: canary, strategy, kubernetes, aks, gke, eks
   - name: Azure Container Registry
     href: ecosystems/containers/acr-template.md
@@ -353,7 +365,7 @@
     href: ecosystems/kubernetes/canary-demo.md
   - name: Azure Machine Learning
     href: targets/azure-machine-learning.md
-- name: Consume & publish artifacts 
+- name: Consume & publish artifacts
   items:
   - name: About artifacts
     href: artifacts/artifacts-overview.md
@@ -369,23 +381,23 @@
     href: artifacts/npm.md
   - name: NuGet
     href: artifacts/nuget.md
-  - name: Python 
+  - name: Python
     href: artifacts/pypi.md
   - name: Symbols
     href: artifacts/symbols.md
-  - name: Universal 
+  - name: Universal
     href: artifacts/universal-packages.md
   - name: Restore NuGet packages (Package Management feeds)
     href: packages/nuget-restore.md
   - name: Restore & publish NuGet packages (Jenkins)
     href: packages/jenkins.md
 - name: Create & use resources
-  items: 
+  items:
   - name: About resources
     href: process/about-resources.md
   - name: Add resources to a pipeline
     href: process/resources.md
-  - name: Add & use variable groups 
+  - name: Add & use variable groups
     href: library/variable-groups.md
     displayName: Azure key vault, link secrets, expansion, expand variables
   - name: Secure files
@@ -393,7 +405,7 @@
   - name: Manage service connections
     href: library/service-endpoints.md
 - name: Manage agents & agent pools
-  items: 
+  items:
   - name: About agents & agent pools
     href: agents/agents.md
     displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
@@ -420,19 +432,19 @@
   - name: Use a self-signed certificate
     href: agents/certificate.md
   - name: Create & use deployment groups
-    items: 
+    items:
   #    - name: About deployment groups & deployment group jobs
   #      href: release/deployment-groups/index.md
-    - name: Provision deployment groups 
+    - name: Provision deployment groups
       href: release/deployment-groups/index.md
     - name: Provision agents for deployment groups
       href: release/deployment-groups/howto-provision-deployment-group-agents.md
     - name: Add a deployment group job to a release pipeline
       href: process/deployment-group-phases.md
     - name: Deploying to Azure VMs using deployment groups in Azure Pipelines
-      href: release/deployment-groups/deploying-azure-vms-deployment-groups.md    
+      href: release/deployment-groups/deploying-azure-vms-deployment-groups.md
 - name: Configure security & settings
-  items: 
+  items:
 #    - name: About security options and requirements (New)
 #      href: policies/permissions.md
   - name: Set retention policies
@@ -443,11 +455,11 @@
   - name: Pipeline permissions and security roles
     href: policies/permissions.md
   - name: Add users to contribute to pipelines
-    href: policies/set-permissions.md 
+    href: policies/set-permissions.md
   - name: Grant version control permissions to the build service
     href: scripts/git-commands.md#version-control
   - name: Integrate with 3rd party software
-    items:  
+    items:
     - name: Microsoft Teams
       href: integrations/microsoft-teams.md
     - name: Slack
@@ -732,7 +744,7 @@
       href: tasks/deploy/windows-machine-file-copy.md
     - name: WinRM SQL Server DB Deployment
       href: tasks/deploy/sql-dacpac-deployment-on-machine-group.md
-    - name: MySQL Database Deployment On Machine Group  
+    - name: MySQL Database Deployment On Machine Group
       href: tasks/deploy/mysqldb-deployment.md
   - name: Tool tasks
     items:
@@ -805,12 +817,12 @@
       href: security/infrastructure.md
     - name: Other security considerations
       href: security/misc.md
-  - name: Add continuous security validation 
+  - name: Add continuous security validation
     href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
-  - name: Build & deploy automation 
-    href: ../migrate/build-deployment-best-practices.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
-  - name: Progressively expose releases using deployment rings 
-    href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
+  - name: Build & deploy automation
+    href: ../migrate/build-deployment-best-practices.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+  - name: Progressively expose releases using deployment rings
+    href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
 - name: Developer resources
   items:
   - name: REST API reference
@@ -823,7 +835,7 @@
       href: /learn/modules/create-a-build-pipeline/
     - name: Implement a code workflow in your build pipeline by using Git and GitHub
       href: /learn/modules/implement-code-workflow/index
-    - name: Run quality tests in your build pipeline 
+    - name: Run quality tests in your build pipeline
       href: /learn/modules/run-quality-tests-build-pipeline/index
     - name: Manage build dependencies with Azure Artifacts
       href: /learn/modules/manage-build-dependencies/index

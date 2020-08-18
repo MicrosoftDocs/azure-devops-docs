@@ -20,7 +20,7 @@ The <strong>@mention</strong> control allows you to quickly add someone into a w
 
 Use the <strong>@mention</strong> control to start or continue a discussion within the following areas:
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 - A work item discussion or any rich-text field
 - A pull request discussion
@@ -29,7 +29,7 @@ Use the <strong>@mention</strong> control to start or continue a discussion with
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= tfs-2015 < azure-devops-2020"
 
 - A work item discussion 
 - A pull request discussion
@@ -47,7 +47,7 @@ Use the <strong>@mention</strong> control to start or continue a discussion with
 
 <a id="mention-person-id">  </a>
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 For team members to receive notifications, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).
 
@@ -59,7 +59,7 @@ To filter the list, enter the user name or alias until you've found a match.
 
 ![Web portal, Pull Request, Type a user name or email alias to locate a match](media/at-mention-pr-type-name.png)  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can also use group mentions. Enter the name of a team or a security group, choose the search icon, and then select from the options listed.
 
@@ -81,7 +81,7 @@ Upon completion of your selection and text entry, your <strong>@mention</strong>
 Use the **\@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments.
 
 > [!NOTE]
-> Do not copy/paste <strong>@mention</strong> users from a previous comment. While the resulting formatting will look identical to a properly entered mention, it will not register as a true mention nor send an email notification.
+> Don't copy/paste **@mention** users from a previous comment. While the resulting formatting will look identical to a properly entered mention, it will not register as a true mention nor send an email notification.
 
 
 

@@ -93,7 +93,7 @@ On the first run after the task is added, the cache step will report a "cache mi
 
 #### Required software on self-hosted agent
 
-|        | Windows | Linux | Mac |
+| Archive software / Platform | Windows | Linux | Mac |
 |--------|-------- |------ |-------|
 |GNU Tar | Required| Required | No |
 |BSD Tar | No | No | Required |
@@ -369,6 +369,52 @@ steps:
   displayName: Cache Yarn packages
 
 - script: yarn --frozen-lockfile
+```
+
+## Python/pip
+
+For Python projects that use pip or Poetry, override the `PIP_CACHE_DIR` environment variable. If you use Poetry, in the `key` field, replace `requirements.txt` with `poetry.lock`.
+
+### Example
+
+```yaml
+variables:
+  PIP_CACHE_DIR: $(Pipeline.Workspace)/.pip
+
+steps:
+- task: Cache@2
+  inputs:
+    key: 'python | "$(Agent.OS)" | requirements.txt'
+    restoreKeys: | 
+      python | "$(Agent.OS)"
+      python
+    path: $(PIP_CACHE_DIR)
+  displayName: Cache pip packages
+
+- script: pip install -r requirements.txt
+```
+
+## Python/Pipenv
+
+For Python projects that use Pipenv, override the `PIPENV_CACHE_DIR` environment variable.
+
+### Example
+
+```yaml
+variables:
+  PIPENV_CACHE_DIR: $(Pipeline.Workspace)/.pipenv
+
+steps:
+- task: Cache@2
+  inputs:
+    key: 'python | "$(Agent.OS)" | Pipfile.lock'
+    restoreKeys: | 
+      python | "$(Agent.OS)"
+      python
+    path: $(PIPENV_CACHE_DIR)
+  displayName: Cache pipenv packages
+
+- script: pipenv install
 ```
 
 ## PHP/Composer

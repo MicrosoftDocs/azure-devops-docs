@@ -3,8 +3,8 @@ title: Jobs in Azure Pipelines and TFS
 ms.custom: seodec18
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
-ms.topic: conceptual
-ms.date: 07/14/2020
+ms.topic: conceptual, contperfq4
+ms.date: 08/03/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -50,7 +50,9 @@ You can organize your release pipeline into jobs. Every release pipeline has at 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-In the simplest case, a pipeline has a single job. In that case, you do not have to explicitly use the `job` keyword. You can directly specify the steps in your YAML file.
+In the simplest case, a pipeline has a single job. In that case, you do not have to explicitly use the `job` keyword unless you are using a [template](templates.md). You can directly specify the steps in your YAML file. 
+
+This YAML file has a job that runs on a [Microsoft-hosted agent](../agents/hosted.md) and outputs `Hello world`. 
 
 ```yaml
 pool:
@@ -59,7 +61,7 @@ steps:
 - bash: echo "Hello world"
 ```
 
-You may want to specify additional properties on that job. In that case, you can use the `job` keyword.
+You may want to specify additional properties on that job. In that case, you can use the `job` keyword. 
 
 ```yaml
 jobs:
@@ -86,7 +88,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Your pipeline may have multiple stages, each with multiple jobs. In that case, use the `stages` keyword.
 
@@ -122,7 +124,7 @@ The full syntax to specify a job is:
     # you may specify one or the other; including both is an error
     # `maxParallel` is only valid with `matrix`
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
-  pool: pool # see pool schema
+  pool: pool # agent pool
   workspace:
     clean: outputs | resources | all # what to clean up before the job runs
   container: containerReference # container to run this job inside
@@ -134,7 +136,7 @@ The full syntax to specify a job is:
 ```
 
 ::: moniker-end
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 If the primary intent of your job is to deploy your app (as opposed to build or test your app), then you can use a special type of job called **deployment job**.
 
@@ -174,19 +176,19 @@ To add jobs to your release pipeline, edit the pipeline in Releases page, and se
 
 Jobs can be of different types, depending on where they run.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 # [YAML](#tab/yaml)
 
 * **Agent pool jobs** run on an agent in an agent pool.
 * **Server jobs** run on the Azure DevOps Server.
-* **Container jobs** run in a container on an agent in an agent pool. See [container jobs](container-phases.md) for more information.
+* **Container jobs** run in a container on an agent in an agent pool. For more information about choosing containers, see [Define container jobs](container-phases.md).
 
 # [Classic](#tab/classic)
 
 * **Agent pool jobs** run on an agent in an agent pool.
 * **Server jobs** run on the Azure DevOps Server.
-* **Deployment group jobs** run on machines in a deployment group. These jobs are only available in a release pipeline. See [deployment group jobs](deployment-group-phases.md) for more information.
+* **Deployment group jobs** run on machines in a deployment group. These jobs are only available in a release pipeline. For more information about defining groups of target servers for deployment, see [Deployment group jobs](deployment-group-phases.md).
 
 ---
 
@@ -227,7 +229,7 @@ Jobs can be of different types, depending on where they run.
 ### Agent pool jobs
 
 These are the most common type of jobs and they run on an agent in an agent pool. 
-Use demands to specify what capabilities an agent must have to run your job.
+Use [demands](demands.md) with self-hosted agents to specify what capabilities an agent must have to run your job.
 
 > [!NOTE]
 >
@@ -314,6 +316,19 @@ You add a server job in the editor by selecting '...' on the **Pipeline** channe
 Server jobs are not supported in this version of TFS.
 ::: moniker-end
 
+<h3 id="agentless-tasks">Tasks supported in agentless jobs</h3>
+
+Currently only the following tasks are supported out of the box for agentless jobs:
+
+* [Delay task](../tasks/utility/delay.md)
+* [Invoke Azure function task](../tasks/utility/azure-function.md)
+* [Invoke REST API task](../tasks/utility/http-rest-api.md)
+* [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
+* [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
+* [Query Work Items task](../tasks/utility/work-item-query.md)
+
+As tasks are extensible additional agentless tasks can be added through extensions.
+
 ---
 
 <h2 id="dependencies">Dependencies</h2>
@@ -369,7 +384,7 @@ jobs:
   - script: echo hello from Linux
 ```
 
-Example of fan out:
+Example of fan-out:
 
 ```yaml
 jobs:
@@ -386,7 +401,7 @@ jobs:
   - script: echo hello from subsequent B
 ```
 
-Example of fan in:
+Example of fan-in:
 
 ```yaml
 jobs:
@@ -438,7 +453,7 @@ In the example above:
 
 1. The server job contains a Manual Intervention task
    that runs on the Azure Pipelines or TFS.
-   It does not execute on, or require, an agent or any target servers.
+   The job does not execute on, or require, an agent or any target servers.
    The Manual Intervention task displays its message and waits for a
    "resume" or "reject" response from the user. In this example, if
    the configured timeout is reached, the task will
@@ -453,7 +468,7 @@ It's important to understand some of the consequences of
 phased execution:
 
 * Each job may use different
-  agents. You should not assume that the state from an earlier
+  agents. Do not assume that the state from an earlier
   job is available during subsequent jobs.
 
 * The **Continue on Error** and **Always run** options for
@@ -581,7 +596,7 @@ Select the job and then specify the timeout value.
 On the Options tab, you can specify default values for all jobs in the pipeline. If you specify a non-zero value for the job timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
 
 * * *
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 > Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
 
@@ -674,7 +689,7 @@ To run multiple jobs using multi-configuration option,
   to pass individually to the agents. 
 
 * Enter the name of the multiplier variable, without the **$** and parentheses, as the
-  value of the **Multipliers** parameter. Note that using a secret variable as a multiplier variable is not supported.
+  value of the **Multipliers** parameter. Using a secret variable as a multiplier variable is not supported.
 
 * If you want to execute the job for more than one multiplier variable, enter
   the variable names as a comma-delimited list - omitting the **$** and parentheses
@@ -695,14 +710,16 @@ a maximum of four agents at any one time:
 * **Multipliers** = `Location,Browser`
 * **Maximum number of agents** = `4`
 
-With multi-configuration you can run multiple jobs, each with a different value for one or more variables (multipliers). If you want to run the same job on multiple agents, then you can use **multi-agent** option of parallelism. The test slicing example above can be accomplished through multi-agent option.
+With multi-configuration you can run multiple jobs, each with a different value for one, or more variables (multipliers). If you want to run the same job on multiple agents, then you can use **multi-agent** option of parallelism. The test slicing example above can be accomplished through multi-agent option.
 
 * * *
 
 ## Slicing
 
 An agent job can be used to run a suite of tests in parallel. For example, you can run a large suite of 1000 tests on a single agent. Or, you can use two agents and run 500 tests on each one in parallel.
+
 To leverage slicing, the tasks in the job should be smart enough to understand the slice they belong to.
+
 The Visual Studio Test task is one such task that supports test slicing. If you have installed multiple agents, you can specify how the Visual Studio Test task will run in parallel on these agents.
 
 #### [YAML](#tab/yaml/)
@@ -712,7 +729,7 @@ The `parallel` strategy enables a job to be duplicated many times.
 Variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are added to each job. The variables can then be used within your scripts to divide work among the jobs.
 See [Parallel and multiple execution using agent jobs](#parallelexec).
 
-The following job will be dispatched 5 times with the values of `System.JobPositionInPhase` and `System.TotalJobsInPhase` set appropriately.
+The following job will be dispatched five times with the values of `System.JobPositionInPhase` and `System.TotalJobsInPhase` set appropriately.
 
 ```yaml
 jobs:
@@ -771,13 +788,13 @@ For information about using a **condition**, see [Specify conditions](conditions
 
 ::: moniker range=">= azure-devops-2019"
 
-When you run an agent pool job, it creates a workspace on the agent. The workspace is a directory in which it downloads the source, runs steps, and produces outputs. The workspace directory can be referenced in your job using `Pipeline.Workspace` variable. Under this, various sub-directories are created:
+When you run an agent pool job, it creates a workspace on the agent. The workspace is a directory in which it downloads the source, runs steps, and produces outputs. The workspace directory can be referenced in your job using `Pipeline.Workspace` variable. Under this, various subdirectories are created:
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
-When you run an agent pool job, it creates a workspace on the agent. The workspace is a directory in which it downloads the source, runs steps, and produces outputs. The workspace directory can be referenced in your job using `Agent.BuildDirectory` variable. Under this, various sub-directories are created:
+When you run an agent pool job, it creates a workspace on the agent. The workspace is a directory in which it downloads the source, runs steps, and produces outputs. The workspace directory can be referenced in your job using `Agent.BuildDirectory` variable. Under this, various subdirectories are created:
 
 ::: moniker-end
 
@@ -789,7 +806,7 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+When you run a pipeline on a self-hosted agent, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
 
 ```yaml
 - job: myJob
@@ -805,6 +822,8 @@ When you specify one of the `clean` options, they are interpreted as follows:
 
 > [!NOTE]
 >  `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+>
+> For Microsoft-hosted agents, each job is run on a different agent. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages.
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -812,7 +831,7 @@ YAML is not yet supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a result, you can run incremental builds and deployments, provided that tasks are implemented to do that. However, you can override this behavior using the `Clean build` option under `Get sources` task. The options vary depending on the type of repository that you use.
+When you run a pipeline on a self-hosted agent, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can run incremental builds and deployments, provided that tasks are implemented to do that. However, you can override this behavior using the `Clean build` option under `Get sources` task. The options vary depending on the type of repository that you use.
 
 - [GitHub](../repos/github.md#checkout)
 - [Azure Repos Git](../repos/azure-repos-git.md)

@@ -1,5 +1,5 @@
 ---
-title: Build and release retention policies
+title: Retention policies for builds, tests, and releases
 ms.topic: conceptual
 description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
@@ -9,7 +9,7 @@ ms.date: 12/04/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Build and release retention policies
+# Retention policies for builds, tests, and releases
 
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
 
@@ -19,14 +19,31 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-Retention policies are used to configure how long runs and releases are to be retained by the system. 
-The primary reasons to delete older runs and releases are to conserve storage and reduce clutter. 
-The main reasons to keep runs and releases are for audit and tracking.
+With retention policies, you can specify the duration to keep your runs, tests, and releases stored in the system. This data is mainly used for audit and tracking. The older runs, tests, and releases get deleted to conserve storage and reduce clutter.
 
-## Run retention
+## Prerequisites 
+
+In order to be able to manage the build and release retention policies, you will need to be part of one of the following built-in groups:
+
+* Contributors.
+* Build Admins.
+* Project Admins.
+* Release Admins.
+
+To manage your test result, you must have one of the following subscriptions:
+
+- [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
+- [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
+- [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)
+
+Or, configure [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level.
+
+See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role).
+
+## Build retention policies
 
 In most cases you don't need to retain completed runs longer than a certain number of days. 
-Using run retention policies, you can control **how many days** you want to keep each run before deleting it. 
+Using retention policies, you can control **how many days** you want to keep each run before deleting it. 
 
 ::: moniker range="<= tfs-2018"
 
@@ -34,7 +51,7 @@ Along with defining how many days to retain runs, you can also decide the minimu
 
 ::: moniker-end
 
-As an author of a run pipeline, you can customize retention policies on the **Settings** tab of your project's settings.
+As an author of a build pipeline, you can customize retention policies on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
 You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
 
@@ -52,13 +69,16 @@ You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your b
 # [Classic](#tab/classic)
 
 1. Add the **Copy Files task** to your Pipeline.  
-![copy files](media/copy_files_classic_task.png)
+
+> [!div class="mx-imgBorder"]
+> ![copy files](media/copy_files_classic_task.png)
 
 2. Configure the **Copy Files task**. 
-![configure Copy Files](media/copy_files_classic_config.png)
----
 
+> [!div class="mx-imgBorder"]
+> ![configure Copy Files](media/copy_files_classic_config.png)
 
+* * *
 
 ::: moniker range="<= tfs-2018"
 
@@ -97,9 +117,9 @@ The **Permanently destroy releases** helps you keep the runs for a certain perio
 
 If your [repository type](../repos/index.md) is one of the following, you can define multiple retention policies with branch filters:
 
-* Azure Repos Git or TFS Git
-* GitHub
-* Other/external Git
+* Azure Repos Git or TFS Git.
+* GitHub.
+* Other/external Git.
 
 For example, your team may want to keep:
 
@@ -107,22 +127,25 @@ For example, your team may want to keep:
 * Master and feature branch builds for 10 days, with a minimum of three successful or partially successful builds for each of these branches. You exclude a special feature branch that you want to keep for a longer period of time.
 * Builds from the special feature branch and all other branches for 15 days, with a minimum of a single successful or partially successful build for each branch.
 
-The following example retention policy for a build pipeline
-meets the above requirements:
+The following example retention policy for a build pipeline meets the above requirements:
 
-![define git retention policies](media/define-git-retention-policies.png)
+> [!div class="mx-imgBorder"]
+> ![define git retention policies](media/define-git-retention-policies.png)
 
 When specifying custom policies for each pipeline, you cannot exceed the maximum limits set by administrator.
 
-<h4 id="branch-policy-pr-builds">Clean up pull request builds</h4>
+<a id="branch-policy-pr-builds"></a>
+
+### Clean up pull request builds
 
 If you [protect your Git branches with pull request builds](../../repos/git/branch-policies.md#build-validation), then you can use retention policies to automatically delete the completed builds. To do it, add a policy that keeps a minimum of `0` builds with the following branch filter:
 
 ```
-refs/pull/*
+  refs/pull/*
 ```
 
-![retention-policy-for-pull-request-builds](media/retention-policy-for-pull-request-builds.png)
+> [!div class="mx-imgBorder"]
+> ![retention-policy-for-pull-request-builds](media/retention-policy-for-pull-request-builds.png)
 
 ### TFVC and Subversion repositories
 
@@ -134,11 +157,12 @@ When the system is purging old builds, it evaluates each build against the polic
 
 The "All" branches policy is automatically added as the last policy in the evaluation order to enforce the maximum limits for all other branches.
 
-![define git retention policy max shown in pipeline](media/define-git-retention-policy-max-shown-in-definition.png)
+> [!div class="mx-imgBorder"]
+> ![define git retention policy max shown in pipeline](media/define-git-retention-policy-max-shown-in-definition.png)
 
 ::: moniker-end
 
-### What parts of the run get deleted
+## What parts of the run get deleted
 
 ::: moniker range="<= tfs-2018"
 
@@ -151,8 +175,8 @@ When the retention policies mark a build for deletion, you can control which inf
 The following information is deleted when a build is deleted:
 
 * Logs
-* [Published artifacts](../tasks/utility/publish-build-artifacts.md)
-* [Published symbols](../tasks/build/index-sources-publish-symbols.md)
+* Published artifacts
+* Published symbols
 
 ::: moniker-end
 
@@ -161,16 +185,15 @@ The following information is deleted when a build is deleted:
 The following information is deleted when a run is deleted:
 
 * Logs
-* [All artifacts](../tasks/utility/publish-build-artifacts.md)
-* [All symbols](../tasks/build/index-sources-publish-symbols.md)
+* All artifacts
+* All symbols
 * Binaries
 * Test results
 * Run metadata
 
 ::: moniker-end
 
-
-### When are runs deleted
+## When are runs deleted
 
 ::: moniker range="> tfs-2018"
 
@@ -184,35 +207,37 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
-### Delete a run
+## Delete a run
 
-You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page. 
+You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
 
 > [!NOTE]
-> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipe run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
+> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
+
+> [!div class="mx-imgBorder"]
+> ![delete a run](media/delete-a-run.png)
 
 ::: moniker-end
 
+<a id="release"></a>
 
-<h2 id="release">Release retention</h2>
+## Release retention policies
 
-The release retention policies for a release pipeline determine how long a release
-and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline. 
-The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most
-recent three will be retained indefinitely - irrespective of the number of
-days specified. However, you can manually delete these releases when you no longer require them.
+The release retention policies for a release pipeline determine how long a release and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline.
+
+The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most recent three will be retained indefinitely - irrespective of the number of days specified. However, you can manually delete these releases when you no longer require them.
 
 
 As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
 
-::: moniker range="azure-devops"
-The retention policy for YAML and build pipelines is the same. You can see your pipeline's retention settings in **Project Settings** for **Pipelines** in the **Settings** section. 
+::: moniker range=">=azure-devops-2020"
+The retention policy for YAML and build pipelines is the same. You can see your pipeline's retention settings in **Project Settings** for **Pipelines** in the **Settings** section.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-You can also customize these policies on a [stage-by-stage basis](#stage-specific-retention).
+You can also customize these policies on a [stage-by-stage basis](#stage-specific-retention-policies).
 ::: moniker-end
 
 ### Global release retention policy
@@ -226,8 +251,7 @@ Global release retention policy settings can be managed from the **Release** set
 * Azure Pipelines: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
-The **maximum retention policy** sets the upper limit for how long releases can be retained
-for all release pipelines. Authors of release pipelines cannot
+The **maximum retention policy** sets the upper limit for how long releases can be retained for all release pipelines. Authors of release pipelines cannot
 configure settings for their definitions beyond the values specified here.
 
 The **default retention policy** sets the default retention values for all the release pipelines. Authors of build pipelines can override these values.
@@ -236,12 +260,12 @@ The **destruction policy** helps you keep the releases for a certain period of t
 
 ::: moniker range="<=tfs-2018"
 
+> [!NOTE]
 > In TFS, release retention management is restricted to specifying the number of days, and this is available only in TFS 2015.3 and newer.
 
-### Stage-specific retention
+## Stage-specific retention policies
 
-You may want to retain more releases that have been deployed to specific stages.
-For example, your team may want to keep:
+You may want to retain more releases that have been deployed to specific stages. For example, your team may want to keep:
 
 * Releases deployed to Production stage for 60 days, with a minimum of three last deployed releases.
 * Releases deployed to Pre-production stage for 15 days, with a minimum of one last deployed release.
@@ -250,13 +274,10 @@ For example, your team may want to keep:
 
 The following example retention policy for a release pipeline meets the above requirements:
 
-![Configuring the release retention setting for a release pipeline](media/retention-policy-01.png)
+> [!div class="mx-imgBorder"]
+> ![Configuring the release retention setting for a release pipeline](media/retention-policy-01.png)
 
-In this example, if a release that is deployed to Dev is not
-promoted to QA for 10 days, it is a potential candidate for
-deletion. However, if that same release is deployed to QA eight
-days after being deployed to Dev, its retention timer is reset,
-and it is retained in the system for another 30 days.
+In this example, if a release that is deployed to Dev is not promoted to QA for 10 days, it is a potential candidate for deletion. However, if that same release is deployed to QA eight days after being deployed to Dev, its retention timer is reset, and it is retained in the system for another 30 days.
 
 When specifying custom policies per pipeline, you cannot exceed the maximum limits set by administrator.
 
@@ -264,21 +285,53 @@ When specifying custom policies per pipeline, you cannot exceed the maximum limi
 
 ::: moniker range=">= tfs-2017"
 
-### Interaction between build and release retention
+## Interaction between build and release retention policies
 
-The build linked to a release has its own retention policy,
-which may be shorter than that of the release. If you want to retain
-the build for the same period as the release, set the
-**Retain associated artifacts** checkbox for the appropriate stages. This
-overrides the retention policy for the build, and ensures that the
+The build linked to a release has its own retention policy, which may be shorter than that of the release. If you want to retain the build for the same period as the release, set the **Retain associated artifacts** checkbox for the appropriate stages. This overrides the retention policy for the build, and ensures that the
 artifacts are available if you need to redeploy that release.
 
-When you delete a release pipeline, delete a release, or when the
-retention policy deletes a release automatically, the retention policy
-for the associated build will determine when that build is deleted.
+When you delete a release pipeline, delete a release, or when the retention policy deletes a release automatically, the retention policy for the associated build will determine when that build is deleted.
 
+> [!NOTE]
 > In TFS, interaction between build and release retention is available in TFS 2017 and newer.
 
+## Manual test-runs retention policies
+
+To delete manual test results after a specific number of days, set the retention limit at the project level. Azure DevOps keeps manual test results related to builds, even after you delete those builds. That way, build policies don't delete your test results before you can analyze the data.
+
+1. Sign into your Azure DevOps. You'll need at least project administrator permissions.
+
+1. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
+ 
+> [!div class="mx-imgBorder"]
+> ![project settings](media/project-settings.png)
+
+1. In the Retention page under the Test section, select a limit for how long you want to keep manual test data.
+
+> [!div class="mx-imgBorder"]
+> ![manual tests retention policies](media/manual-tests-retention-policies.png)
+
+## Automated test-runs retention policies
+
+### Builds automated test results
+
+By default, Azure DevOps keeps automated test results related to builds only as long as you keep those builds. To keep test results after you delete your builds, edit the build retention policy. If you use Git for version control, you can specify how long to keep automated test results based on the branch.
+
+1. Sign into Azure DevOps. You'll need at least build level permissions to edit build pipelines.
+ 
+1. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
+
+> [!div class="mx-imgBorder"]
+> ![project settings](media/project-settings.png)
+
+1. Select ![gear icon](../../media/icons/gear-icon.png) Settings under Pipelines and modify your retention policies.
+
+> [!div class="mx-imgBorder"]
+> ![project settings](media/build-pipelines-retention-policies.png)
+
+### Other automated test results
+
+To clean up automated test results that are left over from deleted builds or test results that aren't related to builds, for example, results published from external test systems, set the retention limits at the project level as shown in the [Manual test-runs retention policies](#manual-test-runs-retention-policies)
 
 ## Artifact retention
 
@@ -288,45 +341,22 @@ Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup job
 
 ## FAQ
 
-<!-- BEGINSECTION class="md-qanda" -->
-
 ### Are manual test results deleted?
 
 No
 
 ### If I mark a run or a release to be retained indefinitely, does the retention policy still apply?
 
-No. Neither the pipeline's retention policy nor the maximum
-limits set by the administrator are applied when you mark an
-individual run or release to be retained indefinitely.
-It will remain until you stop retaining it indefinitely.
+No. Neither the pipeline's retention policy nor the maximum limits set by the administrator are applied when you mark an individual run or release to be retained indefinitely. It will remain until you stop retaining it indefinitely.
 
 ### How do I specify that runs deployed to production will be retained longer?
 
-Customize the retention policy on the release pipeline. Specify
-the number of days that releases deployed to production must be
-retained. In addition, indicate that runs associated with that
-release are to be retained. This will override the run retention
-policy.
+Customize the retention policy on the release pipeline. Specify the number of days that releases deployed to production must be retained. In addition, indicate that runs associated with that release are to be retained. This will override the run retention policy.
 
 ### I did not mark runs to be retained indefinitely. However, I see a large number of runs being retained. How can I prevent this?
 
-Runs that are deployed as part of releases are also governed by
-the release retention policy. Customize the release retention
-policy as explained above.
+Runs that are deployed as part of releases are also governed by the release retention policy. Customize the release retention policy as explained above.
 
 ### Are automated test results that are published as part of a release retained until the release is deleted?
 
-Test results published within a stage of a release are
-associated with both the release and the run. These test results
-are retained as specified by the retention policy configured for
-the run and for the test results. If you are not deploying Team
-Foundation or Azure Pipelines Build, and are still
-publishing test results, the retention of these results is
-governed by the retention settings of the release they belong to.
-
-<!-- [!INCLUDE [temp](../includes/qa-agents.md)] -->
-
-<!-- [!INCLUDE [temp](../includes/qa-versions.md)] -->
-
-<!-- ENDSECTION -->
+Test results published within a stage of a release are associated with both the release and the run. These test results are retained as specified by the retention policy configured for the run and for the test results. If you are not deploying Team Foundation or Azure Pipelines Build, and are still publishing test results, the retention of these results is governed by the retention settings of the release they belong to.

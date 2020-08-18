@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Billing FAQs
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
 
 In this article, find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
 
@@ -32,7 +32,7 @@ A: With user assignment-based billing, you only pay for the users you assign an 
 
 In assignment-based billing, all organizations begin with new users added from projects with Stakeholder access. We don't charge for new users who only need free Stakeholder access. If you want all new users to get Basic, change the [default access level](#q-how-can-new-users-get-basic-instead-of-stakeholder-when-added-to-a-project) for your organization to Basic.
 
-[Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) are a great way to automate access level assignment for your organization and under assignment-based billing, you'll find that assignment errors are no longer common.
+[Group rules](../accounts/assign-access-levels-by-group-membership.md) are a great way to automate access level assignment for your organization and under assignment-based billing, you'll find that assignment errors are no longer common.
 
 ### Q: How can new users get Basic instead of Stakeholder when added to a Project?
 
@@ -42,11 +42,11 @@ If you want all new users added to a project to get Basic, change the default ac
 
 ![Default access](media/shared/default-access-level-basic.png)
 
-For more granular control over the access level that's assigned to new users, consider setting up group rules. [Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) take precedence over default access level. The default access level only applies when a user has zero group rules applied. Group rules assign access to users who aren't directly assigned an access level. To have these group rules apply to your existing users, you need to [remove direct assignments](../accounts/assign-access-levels-and-extensions-by-group-membership.md#remove-direct-assignments).
+For more granular control over the access level that's assigned to new users, consider setting up group rules. [Group rules](../accounts/assign-access-levels-by-group-membership.md) take precedence over default access level. The default access level only applies when a user has zero group rules applied. Group rules assign access to users who aren't directly assigned an access level. To have these group rules apply to your existing users, you need to [remove direct assignments](../accounts/assign-access-levels-by-group-membership.md#remove-direct-assignments).
 
 ### Q: Am I charged for users even if they never sign in?
 
-A: If you add a user with Basic or Basic + Test Plans access level, you pay at the time of assignment. When you create a [group rule](../accounts/assign-access-levels-and-extensions-by-group-membership.md) that applies to potential new users, that you haven't added manually, you don't start paying until they sign in and receive an access level.
+A: If you add a user with Basic or Basic + Test Plans access level, you pay at the time of assignment. When you create a [group rule](../accounts/assign-access-levels-by-group-membership.md) that applies to potential new users, that you haven't added manually, you don't start paying until they sign in and receive an access level.
 
 ### Q: How can I stop paying for users who aren't actively using Azure DevOps?
 
@@ -246,10 +246,10 @@ A: No, the organization resource is created in its own resource group with a pre
 6. Move it to **Selected columns**, and then select **Apply**. 
 
 ### Q: Why is the location of my organization resource incorrect? 
-A: If you've [changed your organizations location](../accounts/change-organization-location.md) after you set up billing, the region listed in the Azure portal is the original location and not the new location. To know where your organization is located [check the region listed in Azure DevOps](../accounts/change-organization-location.md). To change the location listed in the Azure portal to match the actual new location of your organization, first [remove billing](change-azure-subscription.md#remove-your-billing-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again.  
+A: If you've [changed your organizations location](../accounts/change-organization-location.md) after you set up billing, the region listed in the Azure portal is the original location and not the new location. To know where your organization is located [check the region listed in Azure DevOps](../accounts/change-organization-location.md). To change the location listed in the Azure portal to match the actual new location of your organization, first [remove billing](change-azure-subscription.md#remove-your-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again.  
 
 ### Q: Why is the name of my organization resource incorrect? 
-A: If you've [renamed your organization](../accounts/rename-organization.md) after setting up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, first [remove billing](change-azure-subscription.md#remove-your-billing-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again. 
+A: If you've [renamed your organization](../accounts/rename-organization.md) after setting up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, first [remove billing](change-azure-subscription.md#remove-your-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again. 
 
 ### Q: Does Azure DevOps support billing tags? 
 A: Yes, you can apply [billing tags](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources#tags-and-billing) to the organization resource in the Azure portal and they're included in billing charges associated with your organization.  
@@ -259,7 +259,7 @@ A: Yes, you can apply [billing tags](https://docs.microsoft.com/azure/azure-reso
 3. Select **Assign tags**. 
 
 ### Q: What happens if I delete my organization resource? 
-A: Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-billing-subscription) and your organization returns to its [free limits](billing-faq.md#q-can-i-use-azure-devops-for-free). To [delete your Azure DevOps organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. 
+A: Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-subscription) and your organization returns to its [free limits](billing-faq.md#q-can-i-use-azure-devops-for-free). To [delete your Azure DevOps organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. 
 
 ## How charges are processed
 

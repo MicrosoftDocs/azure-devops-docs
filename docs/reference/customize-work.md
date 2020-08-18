@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 04/17/2020
+ms.date: 07/20/2020
 ---
 
 # Customize your work tracking experience 
@@ -124,7 +124,7 @@ The following table summarizes the differences between the three supported proce
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Update Microsoft field mappings using the <a href="xml/upload-or-download-the-microsoft-project-mapping-file.md" data-raw-source="[**TFSFieldMapping**](xml/upload-or-download-the-microsoft-project-mapping-file.md)"><strong>TFSFieldMapping</strong></a> command-line tool (see note 4)</td>
+<td align="left">Update Microsoft field mappings using the <a href="/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file" data-raw-source="[**TFSFieldMapping**](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file)"><strong>TFSFieldMapping</strong></a> command-line tool (see note 4)</td>
 <td> </td>
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
@@ -169,7 +169,7 @@ The following table summarizes the differences between the three supported proce
 
 <a id="choose-process-model" />
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ## Choose the process model for your project collection 
 
@@ -244,7 +244,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
   
 
 
-::: moniker range=">= tfs-2013 <=azure-devops-2019"
+::: moniker range="< azure-devops"
 
 <a id="test-experience"></a>
 
@@ -323,9 +323,3 @@ Here are a few options available to you:
 
 [add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
 [add-team-admin]: ../../organizations/settings/add-team-administrator.md
-
- 
- 
-
-
-

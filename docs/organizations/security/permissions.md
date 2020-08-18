@@ -15,7 +15,7 @@ ms.date: 06/05/2020
 
 # Permissions, users, and groups in Azure DevOps
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 This article provides a comprehensive reference for each built-in user, group, and permission. It's a lot of information describing each built-in security user and group as well as each permission. 
 
@@ -75,7 +75,7 @@ To learn how to add users to a group or set a specific permission that you can m
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 
 <table valign="top">
@@ -289,7 +289,7 @@ When you install Azure DevOps Server, the system creates default groups that hav
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Project Settings>Work>Project Configuration](media/permissions/server-level-groups-azdo-2019-update1.png) 
@@ -941,7 +941,7 @@ You manage collection-level permissions through the [web portal admin context](.
     <tr>
         <td id="alter-trace-settings">Alter trace settings</td>
         <td>
-            Can <a href="https://docs.microsoft.com/previous-versions/ms400797%28v%3dvs.80%29">change the trace settings</a> for gathering more detailed diagnostic information about Azure DevOps Web services.
+            Can <a href="/previous-versions/ms400797%28v%3dvs.80%29">change the trace settings</a> for gathering more detailed diagnostic information about Azure DevOps Web services.
         </td>
     </tr>
     <tr>
@@ -1191,7 +1191,7 @@ You manage collection-level permissions through the [web portal admin context](.
     <tr>
         <td id="alter-trace-settings-permission">Alter trace settings</td>
         <td>
-            Can <a href="https://docs.microsoft.com/previous-versions/ms400797%28v%3dvs.80%29" data-raw-source="[change the trace settings](https://docs.microsoft.com/previous-versions/ms400797%28v%3dvs.80%29)">change the trace settings</a> for gathering more detailed diagnostic information about Azure DevOps Web services.
+            Can <a href="/previous-versions/ms400797%28v%3dvs.80%29" data-raw-source="[change the trace settings](/previous-versions/ms400797%28v%3dvs.80%29)">change the trace settings</a> for gathering more detailed diagnostic information about Azure DevOps Web services.
         </td>
     </tr>
     <tr>
@@ -1372,7 +1372,7 @@ You manage project-level permissions from the [web portal admin context](set-pro
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="= azure-devops"
 
 #### [Preview page](#tab/preview-page) 
 

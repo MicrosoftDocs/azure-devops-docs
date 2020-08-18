@@ -1,6 +1,6 @@
 ---
 title: Service connections in Azure Pipelines & TFS
-ms.custom: seodec18, tracking-python
+ms.custom: seodec18, devx-track-python
 description: Service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
@@ -549,6 +549,9 @@ Defines a connection to a Kubernetes cluster.
 For an RBAC enabled cluster, a ServiceAccount is created in the chosen namespace along with RoleBinding object so that the created ServiceAccount is able to perform actions only on the chosen namespace.
 
 For an RBAC disabled cluster, a ServiceAccount is created in the chosen namespace. But the created ServiceAccount has cluster-wide privileges (across namespaces).
+
+> [!NOTE]
+> This option lists all the subscriptions the service connection creator has access to *across different Azure tenants*. If you are unable to see subscriptions from other Azure tenants, please check your AAD permissions in those tenants.
 
 **Service account option**
 

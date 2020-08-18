@@ -62,7 +62,7 @@ Following are the key benefits of using Docker task as compared to directly usin
   </tr>
   <tr>
     <td><code>Dockerfile</code><br/>Dockerfile</td>
-    <td>(Optional) Path to the Dockerfile<br/>Default value: **/Dockerfile</td>
+    <td>(Optional) Absolute path to the Dockerfile<br/>Default value: **/Dockerfile</td>
   </tr>
   <tr>
     <td><code>buildContext</code><br/>Build context</td>

@@ -15,7 +15,7 @@ ms.date: 06/09/2020
 
 # About access levels
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 Access levels grant or restrict access to select web portal features. This is in addition to permissions granted through security groups, which provide or restrict specific tasks. Access levels enable administrators to provide their user base access to the features they need and only pay for those features. 
 
@@ -27,7 +27,7 @@ When you add a user or group to a team or project, they're automatically granted
 To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md). Make sure to set each user's access level based on what you've purchased for that user.
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 To add user accounts or groups to specific access levels, see [Change access levels](change-access-levels.md). Make sure to set each user's access level based on what you've purchased for that user. 
 ::: moniker-end  
 
@@ -46,6 +46,8 @@ Assign users or groups of users to one of the following access levels:
 > As a best practice when adding new users, we recommend assigning the Visual Studio subscriber level when appropriate (as opposed to Basic) to prevent being charged the Basic rate before the user signs in for the first time.
 
 The following table indicates those features available for each supported access level. Visual Studio Test Professional and MSDN Platform subscriptions grant access to the same features as Visual Studio Enterprise. 
+
+<a id="access-level-settings" />
 
 <table>
 <tr valign="bottom">
@@ -197,9 +199,9 @@ read wiki pages. </td>
 </tbody>
 </table>
 
-::: moniker-end    
+::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign  to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you're paying for Basic access in an organization.
 - **Basic + Test Plans**: Provides access for users who have a monthly Test Manager subscription, Visual Studio Test Professional, or MSDN Platforms subscription. 
@@ -368,6 +370,7 @@ read wiki pages. </td>
  
 
 ::: moniker range="tfs-2018"
+
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio Professional subscription. 
 - **Advanced** (legacy access level, deprecated in Azure DevOps Server 2019): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
@@ -377,6 +380,7 @@ read wiki pages. </td>
 ::: moniker-end    
 
 ::: moniker range="tfs-2017"
+
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription. 
 - **Advanced** (TFS 2017): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
@@ -500,7 +504,7 @@ read wiki pages. </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong><a href="../../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team rooms](../../notifications/collaborate-in-a-team-room.md)">Team rooms</a></strong><br/>Requires TFS 2017 or earlier versions. Deprecated for TFS 2018 and later versions.</td>
+<td align="left"><strong><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team rooms</a></strong><br/>Requires TFS 2017 or earlier versions. Deprecated for TFS 2018 and later versions.</td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -632,7 +636,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong><a href="../../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team rooms](../../notifications/collaborate-in-a-team-room.md)">Team rooms</a></strong></td>
+<td align="left"><strong><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team rooms</a></strong></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -683,79 +687,10 @@ Stakeholder access grants access to features differently depending on whether yo
 
 ::: moniker-end
 
-### Features not available to users with Stakeholder access 
+[!INCLUDE [temp](../../includes/features-not-available-stakeholder.md)]
 
-If a Stakeholder needs access to one or more of the following features&mdash;which support the daily work of product owners, team leads, developers, testers, and project administrators&mdash;you need to grant them <strong>Basic</strong> access.  
-
-::: moniker range="azure-devops"
-
-#### For Private projects:
-
-- Change the priority of an item within a backlog  
-- Delete work items or move work items to another project
-- Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension) 
-- Add, edit, or view Analytics views    
-- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
-
-#### For Public projects:
-
-- View Delivery Plans (a Marketplace extension)    
-- Add, edit, or view Analytics views    
-- Access the full set of features under <strong>Repos</strong> or <strong>Test Plans</strong>.
-
-::: moniker-end
-
-
-::: moniker range="azure-devops-2019"
-
-- Change the priority of an item within a backlog  
-- Delete work items or move work items to another project
-- Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)
-- Add, edit, or view Analytics views   
-- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
-
-::: moniker-end
-
-
-::: moniker range="tfs-2018"
-- Change the priority of an item within a backlog
-- Delete work items 
-- Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)    
-- Access the full set of features under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>.  
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-- Change the priority of an item within a backlog
-- Delete work items 
-- Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)
-- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
-- Participate in team rooms, which capture interactive, detailed conversations about the project.  
-
-::: moniker-end
-
-
-::: moniker range="<= tfs-2015"
-
-- Change the priority of an item within a backlog
-- Delete work items 
-- Create shared queries, view charts, and modify the home page  
-- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
-- Participate in team rooms, which capture interactive, detailed conversations about the project.  
-
-::: moniker-end
-
-
-> [!NOTE]
-> Stakeholders that choose a feature that's not available to them  receive an error message indicating that they don't have permissions to complete the task.
 
 <a id="basic" />
-
-
 
 ::: moniker range="azure-devops"
 
@@ -767,7 +702,7 @@ The system automatically recognizes their subscription and enables any other fea
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 ## VS Enterprise access
 
@@ -791,7 +726,7 @@ Users assigned Advanced access can manage test cases when you have [purchased th
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 Users assigned Advanced access have all the Basic features, plus [web-based test case management tools](../../test/create-a-test-plan.md). You can [buy monthly access](../billing/buy-access-tfs-test-hub.md#buy-monthly-access-to-azure-test-plans) or add users who already have a Visual Studio Test Professional with MSDN or MSDN Platforms subscription. 
  
@@ -869,7 +804,7 @@ You can manage access levels programmatically using the [`az devops user add` (A
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019" 
+::: moniker range="azure-devops-2019 || azure-devops-2020" 
 
 You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
@@ -898,7 +833,7 @@ You can manage access levels programmatically using the [User Entitlement - Add 
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## What features are available to users who are added to two different access levels?
 
@@ -918,6 +853,7 @@ Service accounts don't require a CAL or other purchase.
 
 - [Free access to Pipelines Preview](provide-stakeholder-pipeline-access.md)
 - [Manage users and access](../accounts/add-organization-users.md)
+- [Get started as a Stakeholder](get-started-stakeholder.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)
 
@@ -925,12 +861,12 @@ Service accounts don't require a CAL or other purchase.
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 - [Change access levels](change-access-levels.md)
+- [Get started as a Stakeholder](get-started-stakeholder.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)
 - [Compare features between plans](https://azure.microsoft.com/services/devops/compare-features/)
 
 ::: moniker-end
-

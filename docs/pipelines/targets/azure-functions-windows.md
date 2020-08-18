@@ -1,5 +1,5 @@
 ---
-title: Deploy a function app to Azure Functions windows
+title: Deploy a function app to Azure Functions (Windows)
 description: Deploy to Azure Functions windows from Azure Pipelines or TFS
 services: vsts
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.date: 9/11/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy an Azure Function
+# Deploy an Azure Function (Windows)
 
 You can automatically deploy your Azure Function after every successful build.
 

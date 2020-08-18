@@ -499,7 +499,7 @@ The `stageDependencies` object is structured the same way. Within a single stage
   }
 }
 ```
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 You can check job status with dependencies. In this example, Job A will always be skipped and Job B will run.
 Job C will run, since all of its dependencies either succeed or are skipped.
@@ -677,14 +677,13 @@ steps:
 
 Detailed conversion rules are listed further below.
 
-|          |             | To          |             |             |             |             |
-| -------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|          |             | **Boolean** | **Null**    | **Number**  | **String**  | **Version** |
-| **From** | **Boolean** | -           | -           | Yes         | Yes         | -           |
-|          | **Null**    | Yes         | -           | Yes         | Yes         | -           |
-|          | **Number**  | Yes         | -           | -           | Yes         | Partial     |
-|          | **String**  | Yes         | Partial     | Partial     | -           | Partial     |
-|          | **Version** | Yes         | -           | -           | Yes         | -           |
+| From / To   | Boolean | Null    | Number  | String  | Version |
+| ----------- | ------- | ------- | ------- | ------- | ------- |
+| **Boolean** | -       | -       | Yes     | Yes     | -       |
+| **Null**    | Yes     | -       | Yes     | Yes     | -       |
+| **Number**  | Yes     | -       | -       | Yes     | Partial |
+| **String**  | Yes     | Partial | Partial | -       | Partial |
+| **Version** | Yes     | -       | -       | Yes     | -       |
 
 ### Boolean
 

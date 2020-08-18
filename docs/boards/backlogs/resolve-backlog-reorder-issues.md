@@ -16,7 +16,7 @@ ms.date: 10/17/2019
 
 <a id="display-hierarchy">  </a>
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 

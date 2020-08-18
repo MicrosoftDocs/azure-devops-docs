@@ -7,7 +7,7 @@ ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 04/01/2020
+ms.date: 08/11/2020
 ---
 
 # Authorize access to REST APIs with OAuth 2.0

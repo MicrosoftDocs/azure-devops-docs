@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Repository settings
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 11/19/2019
 monikerRange: '>= tfs-2017'
@@ -86,7 +84,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"
+::: moniker range="> azure-devops-2019"
 
 You can use Azure CLI to configure [Case enforcement](#case-enforcement) and [Maximum file size](#maximum-file-size) policies.
 

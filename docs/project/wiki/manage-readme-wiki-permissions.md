@@ -33,7 +33,7 @@ By default, all project contributors have read and edit access of the wiki repos
 > **Feature availability**: The built-in wiki is available with TFS 2018 and later versions. 
 ::: moniker-end
 
-::: moniker range=">=tfs-2018"
+::: moniker range=">= tfs-2018"
 
 To open the Security dialog, choose **More > Wiki Security**.
 
@@ -54,7 +54,7 @@ Users with [Stakeholder access](../../organizations/security/get-started-stakeho
 
 <img src="media/wiki/wiki-stakeholders.png" alt="Wiki stakeholders cannot edit or create pages" style="border: 1px solid #C3C3C3;" />
 
-## Q & A
+## Frequently asked questions (FAQs)
 
 ### Q: Is it possible to grant permissions on a per-page basis?
 

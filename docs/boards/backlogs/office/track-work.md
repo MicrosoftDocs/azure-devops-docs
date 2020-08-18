@@ -8,13 +8,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 05/22/2020
+ms.date: 07/09/2020
 ---
 
 
 # Connect Azure Boards to an Office client 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -70,6 +70,7 @@ The following table indicates the Office clients that are supported for each Azu
 :::row:::
    :::column span="2":::
       Azure DevOps Services  
+      Azure DevOps Server 2020  
       Azure DevOps Server 2019  
       Visual Studio 2019  
       Azure DevOps Office Integration 2019 
@@ -137,7 +138,7 @@ Connection from an Office client to an Azure Boards project requires that you ha
 
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019" 
+::: moniker range=">= azure-devops-2019 < azure-devops" 
 
 - To connect Excel to Azure Boards, you must have installed Office Excel 2010 or later version, including Office Excel 365. 
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
@@ -257,7 +258,7 @@ To work in Project, see [Create your backlog and tasks using Project](create-you
 ::: moniker range="<= tfs-2018" 
 
 > [!NOTE]  
-> While this section illustrates how to connect Excel to an Azure Boards project, the steps for connecting from Project or PowerPoint is similar. 
+> While this section illustrates how to connect Excel to an Azure Boards project, the steps for connecting from Project or PowerPoint are similar. 
 
 ::: moniker-end  
 
@@ -286,7 +287,7 @@ This connection method requires that you have installed [Azure DevOps Open in Ex
 
 2. Choose the query you want to open in Excel. 
 
-3. From the **Results** tab, choose the ![ ](../../media/icons/actions-icon.png) actions icon
+3. From the **Results** tab, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon
 
 	> [!div class="mx-imgBorder"]  
 	> ![QUery Results, context menu, Open in Excel Open Boards>Queries, vertical nav](media/connect/open-in-excel-from-portal.png) 

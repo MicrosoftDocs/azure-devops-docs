@@ -7,13 +7,14 @@ ms.topic: tutorial
 ms.reviewer: karrg
 ms.author: kaelli
 author: Divais
-monikerRange: 'azure-devops'
-ms.date: 10/24/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 07/09/2020
 ---
  
 # Azure Boards with Slack
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+
 
 If you use [Slack](https://slack.com), you can use the [Azure Boards app for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp) to create work items and monitor work item activity in your Azure Boards project from your Slack channel. 
 
