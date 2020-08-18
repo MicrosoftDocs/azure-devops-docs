@@ -414,7 +414,7 @@ Connect to a project, collection, or server from your web browser.
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
-Choose the Current tab for information.
+Choose the Current page tab for information on connecting to projects.
 ::: moniker-end
 
 #### [Current](#tab/current-page)
