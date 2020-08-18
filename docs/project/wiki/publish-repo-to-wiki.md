@@ -10,10 +10,10 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 07/23/2020  
+ms.date: 08/18/2020  
 ---
 
-# Quickstart: Publish a Git repository to a wiki
+# Publish a Git repository to a wiki
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
@@ -58,7 +58,7 @@ Begin by connecting to your project using a [supported web browser](/azure/devop
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose **Overview>Wiki**.
+Choose **Overview > Wiki**.
 
 > [!div class="mx-imgBorder"]  
 > ![Create wiki, provision a Git repo for your wiki, or publish existing repo Markdown files](../../organizations/public/media/wiki/open-wiki-vert-brn.png)
