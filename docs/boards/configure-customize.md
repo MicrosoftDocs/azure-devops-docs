@@ -388,7 +388,7 @@ Talk with your team to determine how they want to manage bugs. Then [change your
 
 ## Add system work item types to a backlog (Private Preview) 
 
-If you want to track issues or impediments along with your requirements or in a portfolio backlog, you can by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
+If you want to track issues or impediments along with your requirements or in a portfolio backlog, you can by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
 
 ::: moniker-end
 
