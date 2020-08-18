@@ -1,7 +1,7 @@
 ---
 title: Customize backlogs and boards 
-titleSuffix: Azure DevOps Services 
-description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model 
+titleSuffix: Azure Boards 
+description: Learn how to add and edit backlog levels for the Inheritance process model 
 ms.custom: inherited-process
 ms.technology: devops-agile
 ms.assetid: 4B6014AA-5CD8-47B9-A1E3-BFB0CCA721AF  
@@ -72,7 +72,7 @@ These same work item types, along with any custom work item types, appear in the
 
 
 
-## Fields added to work item types associated with a backlog level 
+## Fields added to work item types 
 
 When you add a work item type to a backlog level, the following fields are added to the work item type definition as hidden fields (that is, they don't appear on the work item form) to support select Agile tool features.    
 
@@ -130,7 +130,7 @@ You can add a portfolio backlog and custom work item type following these steps.
 
 	::: moniker range="azure-devops"
 	> [!div class="mx-imgBorder"]  
-	![Web portal, Add a portfolio backlog dialog, Save changes](media/backlogs/add-portfolio-backlog-initiative-save.png.png)
+	![Web portal, Add a portfolio backlog dialog, Save changes](media/backlogs/add-portfolio-backlog-initiative-save.png)
 	::: moniker-end 
 	::: moniker range="< azure-devops"
 	> [!div class="mx-imgBorder"]  
@@ -179,7 +179,7 @@ Here, we've renamed the backlog, added *Customer Ticket*, and changed the defaul
  
 
 > [!NOTE]    
-> You can't remove the default, inherited work item type from the Requirements backlog, but you can disable that work item type. 
+> You can't remove the default, inherited work item type from the Requirements backlog. 
 
 <a id="edit-iteration-backlog">  </a>
 
