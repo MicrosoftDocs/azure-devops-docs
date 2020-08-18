@@ -25,12 +25,12 @@ Backlogs and boards are essential Agile tools for creating and managing work for
       **Inherited backlogs** 
    :::column-end:::
    :::column span="2":::
-      - [Add a custom work item type](/azure/devops/organizations/settings/work/customize-process-backlogs-boards) 
+      - [Add a custom work item type](/azure/devops/organizations/settings/work/customize-process-backlogs-boards#edit-product-backlog) 
       ::: moniker range="azure-devops"
-      - [Add an inherited work item type](/azure/devops/organizations/settings/work/customize-process-backlogs-boards) 
+      - [Add an inherited work item type](/azure/devops/organizations/settings/work/customize-process-backlogs-boards#add-oob-to-backlog) 
       ::: moniker-end  
-      - [Change the default work item type](/azure/devops/organizations/settings/work/customize-process-backlogs-boards) 
-      - [Rename a backlog](/azure/devops/organizations/settings/work/customize-process-backlogs-boards#edit-product-backlog)  
+      - [Change the default work item type](/azure/devops/organizations/settings/work/customize-process-backlogs-boards#edit-product-backlog) 
+      - [Rename a backlog](/azure/devops/organizations/settings/work/customize-process-backlogs-boards#edit-product-backlog#edit-product-backlog)  
    :::column-end:::
 :::row-end:::
 ---
@@ -39,7 +39,7 @@ Backlogs and boards are essential Agile tools for creating and managing work for
       **Custom portfolio backlogs**
    :::column-end:::
    :::column span="2":::
-      - [Add a portfolio backlog which displays custom work item types](/azure/devops/organizations/settings/work/customize-process-backlogs-boards#portfolio-backlogs) 
+      - [Add a portfolio backlog which displays custom work item types](/azure/devops/organizations/settings/work/customize-process-backlogs-boards#add-portfolio-backlog) 
       - [Edit or rename a portfolio backlog](/azure/devops/organizations/settings/work/customize-process-backlogs-boards#edit-portfolio-backlog) 
       - [Delete the top-level custom portfolio backlog](/azure/devops/organizations/settings/work/customize-process-backlogs-boards#edit-portfolio-backlog)  
    :::column-end:::
