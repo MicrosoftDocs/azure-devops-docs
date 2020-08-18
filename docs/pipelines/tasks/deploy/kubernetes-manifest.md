@@ -61,7 +61,7 @@ The following list shows the key benefits of this task:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
@@ -193,7 +193,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
@@ -246,11 +246,11 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>secretType</b><br/>Secret type</td>
-    <td>(Required only if <b>action</b> is set to <b>secret</b>)<br/>
+    <td>(Required only if <b>action</b> is set to <b>createSecret</b>)<br/>
     <br/>
     Acceptable values are <b>dockerRegistry</b> and <b>generic</b>. The default value is <b>dockerRegistry</b>.<br/>
     <br/>
@@ -334,7 +334,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>renderType</b><br/>Render engine</td>
@@ -419,7 +419,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>kind</b><br/>Kind</td>
@@ -480,7 +480,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and  <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>resourceToPatch</b><br/>Resource to patch</td>
@@ -568,7 +568,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>arguments</b><br/>Arguments</td>
