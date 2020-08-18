@@ -25,7 +25,9 @@ You can now use the Azure Artifacts &quot;Update Package Version&quot; REST API 
 
 To update Maven packages, use the HTTP PATCH command as follows.
 
-PATCH [https://pkgs.dev.azure.com/{organization}/{project?}/\_apis/packaging/feeds/{feedId}/maven/groups/{groupId}/artifacts/{artifactId}/versions/{packageVersion}?api-version=5.1-preview.1](https://nam06.safelinks.protection.outlook.com/?url=https://pkgs.dev.azure.com/%257Borganization%257D/%257Bproject%257D/_apis/packaging/feeds/%257BfeedId%257D/maven/packages/%257BpackageName%257D/versions/%257BpackageVersion%257D?api-version%3D5.1-preview.1&amp;data=02%7C01%7CHelen.Huang%40microsoft.com%7C598e6128e81e40ed5c6008d84094d5fb%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637330355271044422&amp;sdata=d8Ia87P0GANE3ptVrEWaWgA2r82AiU2xD9x6hpwbjFc%3D&amp;reserved=0)
+`PATCH` 
+`https://pkgs.dev.azure.com/{organization}/{project?}/\_apis/packaging/feeds/{feedId}/maven/groups/{groupId}/artifacts/{artifactId}/versions/{packageVersion}?api-version=5.1-preview.1`
+
 
 You can set the following:
 
