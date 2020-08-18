@@ -7,6 +7,7 @@ ms.custom: process
 ms.assetid: bb4ced9a-bebb-4011-8646-4beb94655afa
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops'
 ms.date: 10/27/2017
 ---
 

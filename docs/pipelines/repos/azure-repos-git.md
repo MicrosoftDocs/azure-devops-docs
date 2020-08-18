@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 07/07/2020
+ms.date: 07/16/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -124,16 +124,78 @@ You can also tell Azure Pipelines to skip running a pipeline that a commit would
 
 ## PR triggers
 
-Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request. In Azure Repos Git, this functionality is implemented using branch policies. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
+Pull request (PR) triggers cause a pipeline to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request. In Azure Repos Git, this functionality is implemented using branch policies. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
 
 >[!NOTE]
 >To configure validation builds for an Azure Repos Git repository, you must be a project administrator of its project.
+
+>[!NOTE]
+>[Draft pull requests](../../repos/git/pull-requests.md#draft-pull-requests) do not trigger a pipeline even if you configure a branch policy.
 
 ::: moniker range=">tfs-2018"
 
 ### Validate contributions from forks
 
 Building pull requests from Azure Repos forks is no different from building pull requests within the same repository or project. You can create forks only within the same organization that your project is part of.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+## Limit job authorization scope
+
+Azure Pipelines provides several security settings to configure the job authorization scope that your pipelines run with.
+
+* [Limit job authorization scope to current project for non-release pipelines](#limit-job-authorization-scope-to-current-project-for-non-release-pipelines)
+* [Limit job authorization scope to current project for release pipelines](#limit-job-authorization-scope-to-current-project-for-release-pipelines)
+* [Limit job authorization scope to referenced Azure DevOps repositories](#limit-job-authorization-scope-to-referenced-azure-devops-repositories)
+
+### Limit job authorization scope to current project for non-release pipelines
+
+> [!NOTE]
+> This setting does not apply to [classic release pipelines](../release/index.md).
+
+Pipelines run with collection scoped access tokens unless **Limit job authorization scope to current project for non-release pipelines** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to the current project. This can impact your pipeline if you are accessing an Azure Repos Git repository in a different project in your organization. 
+
+If your Azure Repos Git repository is in a different project than your pipeline, and **Limit job authorization scope to current project for non-release pipelines** is enabled, you must grant permission to the build service identity for your pipeline to the second project. For more information, see [Pipeline build options - build job authorization scope](../build/options.md#build-job-authorization-scope).
+
+### Limit job authorization scope to current project for release pipelines
+
+> [!NOTE]
+> This setting applies to [classic release pipelines](../release/index.md) only.
+
+Releases run with collection scoped access tokens by default. When **Limit job authorization scope to current project for release pipelines** is enabled, you can reduce the scope of access for all release pipelines to the current project. That means your releases shall fail if they are accessing an Azure Repos Git repository in a different project in your organization. 
+
+If your Azure Repos Git repository is in a different project than your pipeline, and **Limit job authorization scope to current project for release pipelines** is enabled, you must grant permission to the build service identity for your pipeline to the second project. 
+
+### Limit job authorization scope to referenced Azure DevOps repositories
+
+Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step in the pipeline job that uses that repository.
+
+To configure this setting, navigate to **Pipelines**, **Settings** at either **Organization settings** or **Project settings**. If enabled at the organization level, the setting is grayed out and unavailable at the project settings level.
+
+> [!IMPORTANT]
+> **Limit job authorization scope to referenced Azure DevOps repositories** is enabled by default for new organizations and projects created after May 2020.
+
+When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline as a [checkout step](../yaml-schema.md#checkout) in the job that uses the repository. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
+
+There are a few exceptions where you don't need to explicitly reference an Azure Repos Git repository before using it in your pipeline when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled.
+
+* If you do not have an explicit checkout step in your pipeline, it is as if you have a `checkout: self` step, and the `self` repository is checked out.
+* If you are using a script to perform read-only operations on a repository in a public project, you don't need to reference the public project repository in a `checkout` step.
+* If you are using a script that provides its own authentication to the repo, such as a PAT, you don't need to reference that repository in a `checkout` step.
+
+For example, when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, if your pipeline is in the `FabrikamProject/Fabrikam` repo in your organization, and you want to use a script to check out the `FabrikamProject/FabrikamTools` repo, you must also reference this repository in a `checkout` step.
+
+If you are already checking out the `FabrikamTools` repository in your pipeline using a checkout step, you may subsequently use scripts to interact with that repository, such as checking out different branches.
+
+```yml
+steps:
+- checkout: git://FabrikamFiber/FabrikamTools # Azure Repos Git repository in the same organization
+```
+
+> [!NOTE]
+> For many scenarios, multi-repo checkout can be leveraged, removing the need to use scripts to check out additional repositories in your pipeline. For more information, see [Check out multiple repositories in your pipeline](multi-repo-checkout.md).
 
 ::: moniker-end
 
@@ -158,7 +220,15 @@ Problems related to Azure Repos integration fall into three categories:
 
 * Are you configuring the PR trigger in the YAML file or in branch policies for the repo? For an Azure Repos Git repo, you cannot configure a PR trigger in the YAML file. You need to use [branch policies](../../repos/git/branch-policies.md).
 
+[!INCLUDE [qa](includes/qa2-1.md)]
+
 [!INCLUDE [qa](includes/qa3.md)]
+
+[!INCLUDE [qa](includes/qa4.md)]
+
+#### I have multiple repositories in my YAML pipeline. How do I set up triggers for each repository?
+
+See triggers in [Using multiple repositories](multi-repo-checkout.md#triggers).
 
 ### Failing checkout
 
@@ -173,6 +243,8 @@ fatal: repository 'XYZ' not found
 Follow each of these steps to troubleshoot your failing triggers:
 
 * Does the repository still exist? First, make sure it does by opening it in the **Repos** page.
+
+* Are you accessing the repository using a script? If so, check the [Limit job authorization scope to referenced Azure DevOps repositories](#limit-job-authorization-scope-to-referenced-azure-devops-repositories) setting. When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, you won't be able to check out Azure Repos Git repositories using a script unless they are explicitly referenced first in the pipeline.
 
 * What is the [job authorization scope](../process/access-tokens.md#q-a) of the pipeline?
   * If the scope is **collection**: 

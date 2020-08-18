@@ -26,7 +26,7 @@ You can use the test runner of your choice that supports the results format
 you require. Supported results formats include [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html),
 [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd)
 (including [PHPUnit](https://phpunit.readthedocs.io/en/8.0/configuration.html#logging)),
-[NUnit 2](https://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
+[NUnit 2](https://docs.nunit.org/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
 Visual Studio Test (TRX), and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html).
 
 Other built-in tasks such as [Visual Studio Test task](vstest.md) and [Dot NetCore CLI task](../build/dotnet-core-cli.md) automatically publish
@@ -91,7 +91,7 @@ in the **Ecosystems** section of these topics, which also includes examples for 
 
 | Argument | Description |
 | -------- | ----------- |
-|`testRunner` <br/>Test result format| (Required) Specify the format of the results files you want to publish. The following formats are supported:<br />- [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html), [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [NUnit 2](https://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test (TRX) and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html) <br/>Default value: `JUnit` <br/>Argument alias: `testResultsFormat`|
+|`testRunner` <br/>Test result format| (Required) Specify the format of the results files you want to publish. The following formats are supported:<br />- [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html), [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [NUnit 2](https://docs.nunit.org/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test (TRX) and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html) <br/>Default value: `JUnit` <br/>Argument alias: `testResultsFormat`|
 |`testResultsFiles` <br/>Test results files| (Required) Use this to specify one or more test results files.<br />- You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. If using VSTest as the test result format, the file type should be changed to `.trx` e.g. `**/TEST-*.trx` <br />- Multiple paths can be specified, separated by a semicolon.<br />- Additionally accepts [minimatch patterns](../file-matching-patterns.md). <br/>For example, `!TEST[1-3].xml` excludes files named `TEST1.xml`, `TEST2.xml`, or `TEST3.xml`. <br/>Default value: `**/TEST-*.xml`|
 |`searchFolder`<br/>Search folder| (Optional) Folder to search for the test result files. <br/>Default value: `$(System.DefaultWorkingDirectory)`|
 |`mergeTestResults`<br/>Merge test results| When this option is selected, test results from all the files will be reported against a single [test run](../../test/test-glossary.md). If this option is not selected, a separate test run will be created for each test result file. <br />Note: Use merge test results to combine files from same test framework to ensure results mapping and duration are calculated correctly. <br/>Default value: `false`|

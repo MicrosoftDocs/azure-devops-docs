@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 2/14/2019
+ms.date: 07/09/2020
 ---
 
 
 
 # 4. Adjust work to fit sprint capacity
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="adjust-work">  </a>
 
@@ -38,7 +38,7 @@ Use this article to learn how to:
 ## Open a Sprint backlog for a team 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -82,7 +82,7 @@ Use this article to learn how to:
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -130,9 +130,9 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 
 If your team's over capacity, you can move items from the sprint backlog back to the product backlog. This will reset the Iteration Path to the default set for your team. Or, you can move the item into the next sprint your team will work in. All the tasks that you've defined for that item will move with the backlog items.   
 
-::: moniker range=">=azure-devops-2019"
+::: moniker range=">= azure-devops-2019"
 
-Here we select two items at the bottom of the sprint backlog, open the ![ ](../../media/icons/actions-icon.png) action icon for one of the items, choose **Move to iteration**, and then select **Backlog**. 
+Here we select two items at the bottom of the sprint backlog, open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action icon for one of the items, choose **Move to iteration**, and then select **Backlog**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Move work items to backlog](media/adjust-work/move-items-to-backlog-agile.png)

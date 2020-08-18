@@ -1,14 +1,18 @@
 ---
+ms.technology: devops-analytics  
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/14/2020
 ---
 
 <a id="permissions">  </a>
 
-
+::: moniker range=">= azure-devops-2019"
+## Prerequisites  
+::: moniker-end
 
 ::: moniker range="azure-devops"
-
-## Prerequisites  
 
 - You must be a member of a project. If you don't have a team project yet, [create one](/azure/devops/organizations/accounts/set-up-vs). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). 
@@ -17,10 +21,7 @@ ms.topic: include
 
 ::: moniker-end
 
-
-::: moniker range="azure-devops-2019"
-
-## Prerequisites  
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  

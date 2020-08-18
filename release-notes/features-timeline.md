@@ -13,10 +13,10 @@ hide_comments: true
 
 ---
 
-| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a>
-| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a>
-| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a>
-| <a href="https://docs.microsoft.com/azure/devops/?view=azure-devops" target="blank">Documentation</a> |
+\| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a>
+\| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a>
+\| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a>
+\| <a href="https://docs.microsoft.com/azure/devops/?view=azure-devops" target="blank">Documentation</a> \|
 
 ---
 
@@ -89,6 +89,14 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
     <tbody>
+    <tr>
+    <td rowspan="5"><a href="2020/sprint-173-update.md" data-raw-source="[03 August 2020](2020/sprint-173-update.md)">03 August 2020</a></td>
+    <td>Allow stakeholders to drag and drop work items</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Default branch name preference</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Updates to Mac OS 10.14 (Mojave) image </td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>[Feedback] Git Draft Pull Requests should not trigger the pipeline</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Multi-repo triggers for Azure repos</td><td>Pipelines</td><td>Future</td></tr>
     <tr>
     <td rowspan="9"><a href="2020/sprint-172-update.md" data-raw-source="[10 July 2020](2020/sprint-172-update.md)">10 July 2020</a></td>
     <td>State transition restriction rules</td><td>Boards</td><td>Future</td>
@@ -396,7 +404,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Azure Kubernetes Service Cluster link in Kubernetes environments resource view</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Release folder filters in notification subscriptions</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Deploy external Git repositories to Azure Kubernetes Services (AKS)</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Support for BitBucket repositories in DevOps Projects</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Support for Bitbucket repositories in DevOps Projects</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Select a Dockerfile in deployment center for AKS and WebApp Containers</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>New Test Plan page public preview</td><td>Test Plans</td><td>2020</td></tr>
         <tr><td>Auditing for Azure Repos events</td><td>Repos</td><td>2020</td></tr>
@@ -4471,7 +4479,7 @@ Versions in the "Server" column are linked to the appropriate download location.
     </table>
 * TFS 2015 RTM has multiple build numbers, due to the componentized nature of its build and packaging process. The number of the installer, which will show up in Add/Remove Programs, is 14.0.23129.01. The number of the majority of the assemblies, which will show up in the TFS Administration Console, is 14.0.23128.00.
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 

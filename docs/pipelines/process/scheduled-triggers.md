@@ -4,7 +4,7 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 05/27/2020
+ms.date: 07/21/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -186,7 +186,7 @@ mm HH DD MM DW
 Field        | Accepted values
 -------------|----------------
 Minutes      | 0 through 59
-Hours        | 0 though 23
+Hours        | 0 through 23
 Days         | 1 through 31
 Months       | 1 through 12, full English names, first three letters of English names
 Days of week | 0 through 6 (starting with Sunday), full English names, first three letters of English names
@@ -405,9 +405,15 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * * *
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## FAQ
+
+* [I defined a schedule in the YAML file. But it didn't run. What happened?](#i-defined-a-schedule-in-the-yaml-file-but-it-didnt-run-what-happened)
+* [My YAML schedules were working fine. But, they stopped working now. How do I debug this?](#my-yaml-schedules-were-working-fine-but-they-stopped-working-now-how-do-i-debug-this)
+* [My code hasn't changed, yet a scheduled build is triggered. Why?](#my-code-hasnt-changed-yet-a-scheduled-build-is-triggered-why)
+* [I see the planned run in the Scheduled runs panel. However, it does not run at that time. Why?](#i-see-the-planned-run-in-the-scheduled-runs-panel-however-it-does-not-run-at-that-time-why)
+* [Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?](#schedules-defined-in-yaml-pipeline-work-for-one-branch-but-not-the-other-how-do-i-fix-this)
 
 ### I defined a schedule in the YAML file. But it didn't run. What happened?
 
@@ -441,7 +447,9 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * You might have updated the build pipeline or some property of the pipeline. This will cause a new run to be scheduled even if you have not updated your source code. Verify the **History** of changes in the pipeline using the classic editor.
 
-* Azure Pipelines first checks if there are any updates to your code. If Azure Pipelines is unable to reach your repository or get this information, it will either start a scheduled run anyway or it will create a failed run to indicate that it is unable to reach the repository.
+* You might have updated the service connection used to connect to the repository. This will cause a new run to be scheduled even if you have not updated your source code.
+
+* Azure Pipelines first checks if there are any updates to your code. If Azure Pipelines is unable to reach your repository or get this information, it will either start a scheduled run anyway or it will create a failed run to indicate that it is unable to reach the repository. If you notice that a run was created and that failed immediately, this is likely the reason. It is a dummy build to let you know that Azure Pipelines is unable to reach your repository.
 
 ### I see the planned run in the Scheduled runs panel. However, it does not run at that time. Why?
 

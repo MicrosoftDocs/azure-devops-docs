@@ -5,8 +5,6 @@ description: Share code in Git using Visual Studio
 ms.assetid: 0c1dc48e-6f52-499d-a03e-6361c9a838dd
 ms.technology: devops-code-git 
 toc: show
-ms.author: apawast
-author: apawast
 ms.topic: quickstart
 ms.date: 08/29/2017
 monikerRange: '>= tfs-2015'

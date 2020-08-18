@@ -12,17 +12,19 @@ ms.date: 06/03/2020
 
 # Use a control
 
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+
 [!INCLUDE [disclaimer](../../integrate/api/_data/disclaimer.md)]
 
-* [Configure](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/develop/ui-controls/configure)
-* [Use grid](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/develop/ui-controls/grido)
-* [Use menubar](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/develop/ui-controls/menubaro)
-* [Use treeview](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/develop/ui-controls/treeviewo)
-* [Use combo](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/develop/ui-controls/comboo)
-* [Use modal dialog](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/develop/ui-controls/modaldialogo)
-* [Use splitter](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/develop/ui-controls/splittero)
-* [Use wait control](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/develop/ui-controls/waitcontrolo)
-* [Use pivot filter control](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/develop/ui-controls/pivotfiltero)
+* [Configure](/previous-versions/azure/devops/docs/extend/develop/ui-controls/configure)
+* [Use grid](/previous-versions/azure/devops/docs/extend/develop/ui-controls/grido)
+* [Use menubar](/previous-versions/azure/devops/docs/extend/develop/ui-controls/menubaro)
+* [Use treeview](/previous-versions/azure/devops/docs/extend/develop/ui-controls/treeviewo)
+* [Use combo](/previous-versions/azure/devops/docs/extend/develop/ui-controls/comboo)
+* [Use modal dialog](/previous-versions/azure/devops/docs/extend/develop/ui-controls/modaldialogo)
+* [Use splitter](/previous-versions/azure/devops/docs/extend/develop/ui-controls/splittero)
+* [Use wait control](/previous-versions/azure/devops/docs/extend/develop/ui-controls/waitcontrolo)
+* [Use pivot filter control](/previous-versions/azure/devops/docs/extend/develop/ui-controls/pivotfiltero)
 
 > [!TIP]
 > For more information, see the [Formula Design System documentation](https://azdevinternal.azureedge.net/). 

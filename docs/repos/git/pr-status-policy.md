@@ -4,10 +4,8 @@ titleSuffix: Azure Repos
 description: Configure a branch policy to require status from a 3rd party pull request status server
 ms.assetid: 11f567b2-e45f-434c-88eb-d5f43398b451
 ms.technology: devops-code-git
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
-ms.date: 06/18/2018
+ms.date: 08/11/2020
 monikerRange: '>= tfs-2018'
 ---
 
@@ -29,7 +27,7 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
 
     ![Select Branch policies from the context menu](media/pr-status-policy/branches.png)
 
-2. Scroll down to find the policy to **Require approval from external services**. Select **Add status policy**.
+2. Scroll down to find **Status checks**. Select the **+** button.
 
     ![Select the Add policy button](media/pr-status-policy/add-service.png)
 
@@ -38,8 +36,9 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
    ![Select the policy from the list](media/pr-status-policy/choose-service.png)
 
    - **Policy requirement** determines whether or not this policy is optional or required to complete pull requests into the branch. 
-   - **Authorized account** is used to enforce that status from only the specified account will be counted towards the policy fulfillment. 
-   - **Reset conditions** is used to determine when a posted status is no longer valid. If the status posted is specific to the latest code (i.e. a build), check **Reset status whenever there are new changes** to reset the status when the source branch changes. 
+   - **Authorized identity** is used to enforce that status from only the specified identity will be counted towards the policy fulfillment. 
+   - **Reset conditions** is used to determine when a posted status is no longer valid. If the status posted is specific to the latest code (i.e. a build), check **Reset status whenever there are new changes** to reset the status when the source branch changes.
+   - Optionally set a **Path filter**. Learn more about [path filters](branch-policies.md#path-filters) in branch policies. 
    - **Policy applicability** determines whether this policy applies as soon as a pull request is created, or whether the policy applies only after the first status is posted to the pull request.
    - **Default display name** allows you to specify an optional display name for your policy.
 

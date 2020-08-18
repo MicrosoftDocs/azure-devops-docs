@@ -108,7 +108,7 @@ On the Build tab of a build pipeline, add this task:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](media/powershell.png)<br/>**Utility: PowerShell** | Run test.ps1.<br /><br />**Script filename**: `test.ps1` |
+| :::image type="icon" source="media/powershell.png" border="false":::<br/>**Utility: PowerShell** | Run test.ps1.<br /><br />**Script filename**: `test.ps1` |
 
 ### Write a warning
 

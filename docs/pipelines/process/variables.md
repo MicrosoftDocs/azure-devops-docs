@@ -17,7 +17,7 @@ Variables give you a convenient way to get key bits of data into various parts o
 
 When you define the same variable in multiple places with the same name, the most locally scoped variable wins. So, a variable defined at the job level can override a variable set at the stage level. A variable defined at the stage level will override a variable set at the pipeline root level. A variable set in the pipeline root level will override a variable set in the Pipeline settings UI. 
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 Variables are different from [runtime parameters](runtime-parameters.md), which are typed and available during template parsing. 
 ::: moniker-end
 
@@ -237,7 +237,7 @@ To use a variable as an input to a task, wrap it in `$()`.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 
 Using the Azure DevOps CLI, you can create and update variables for the pipeline runs in your project. You can also delete the variables if you no longer need them.
 
@@ -275,7 +275,7 @@ az pipelines variable create --name
 - **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 - **secret**: Optional. Indicates whether the variable's value is a secret. Accepted values are *false* and *true*.
-- **value**: Required for non secret variable. Value of the variable. For secret variables, if **value** parameter is not provided, it is picked from environment variable prefixed with `AZURE_DEVOPS_EXT_PIPELINE_VAR_` or user is prompted to enter it via standard input. For example, a variable named **MySecret** can be input using the environment variable `AZURE_DEVOPS_EXT_PIPELINE_VAR_MySecret`.
+- **value**: Required for non-secret variable. Value of the variable. For secret variables, if **value** parameter is not provided, it is picked from environment variable prefixed with `AZURE_DEVOPS_EXT_PIPELINE_VAR_` or user is prompted to enter it via standard input. For example, a variable named **MySecret** can be input using the environment variable `AZURE_DEVOPS_EXT_PIPELINE_VAR_MySecret`.
 
 #### Example
 
@@ -382,44 +382,45 @@ You need to set secret variables in the pipeline settings UI for your pipeline. 
 
 [!INCLUDE [temp](includes/set-secrets.md)]
 
-The following example shows how to use a secret variable called `mySecret` in a PowerShell script.
-Note that unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
+The following example shows how to use a secret variable called `mySecret` in PowerShell and Bash scripts.
+Unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
 
 ```yaml
 variables:
- GLOBAL_MYSECRET: $(mySecret) # this will not work because the variable needs to be mapped as env
- GLOBAL_MY_MAPPED_ENV_VAR: foo # this will not work because the variable needs to be mapped as env
+ GLOBAL_MYSECRET: $(mySecret) # this will not work because the secret variable needs to be mapped as env
+ GLOBAL_MY_MAPPED_ENV_VAR: $(nonSecretVariable) # this works because it's not a secret.
  
 steps:
 
 - powershell: |
-    # Using an input-macro:
-    Write-Host "This works: $(mySecret)"
-
-    # Using the env var directly:
-    Write-Host "This does not work: $env:MYSECRET"
-  
-    # Using the env var through the variables mapping will not work:
-    Write-Host "This does not work either: $env:GLOBAL_MYSECRET"
-
-    # Using the global var mapped in the pipeline. It is not a secret var:
-    Write-Host "This works: $env:GLOBAL_MY_MAPPED_ENV_VAR" 
-    
-    # Using the mapped env var:
-    Write-Host "This works: $env:MY_MAPPED_ENV_VAR"    # Recommended
-        
+    Write-Host "Using an input-macro works: $(mySecret)"
+    Write-Host "Using the env var directly does not work: $env:MYSECRET"
+    Write-Host "Using a global secret var mapped in the pipeline does not work either: $env:GLOBAL_MYSECRET"
+    Write-Host "Using a global non-secret var mapped in the pipeline works: $env:GLOBAL_MY_MAPPED_ENV_VAR" 
+    Write-Host "Using the mapped env var for this task works and is recommended: $env:MY_MAPPED_ENV_VAR"
   env:
-    MY_MAPPED_ENV_VAR: $(mySecret) # right way to map to an env variable
+    MY_MAPPED_ENV_VAR: $(mySecret) # the recommended way to map to an env variable
+
+- bash: |
+    echo "Using an input-macro works: $(mySecret)"
+    echo "Using the env var directly does not work: $MYSECRET"
+    echo "Using a global secret var mapped in the pipeline does not work either: $GLOBAL_MYSECRET"
+    echo "Using a global non-secret var mapped in the pipeline works: $GLOBAL_MY_MAPPED_ENV_VAR" 
+    echo "Using the mapped env var for this task works and is recommended: $MY_MAPPED_ENV_VAR"
+  env:
+    MY_MAPPED_ENV_VAR: $(mySecret) # the recommended way to map to an env variable
+
+
 ```
 
-The output from the preceding script would look like this:
+The output from both tasks in the preceding script would look like this:
 
 ```text
-This works: ***
-This does not work:
-Global does not work either:
-This works: foo
-This works: ***
+Using an input-macro works: ***
+Using the env var directly does not work:
+Using a global secret var mapped in the pipeline does not work either:
+Using a global non-secret var mapped in the pipeline works: foo
+Using the mapped env var for this task works and is recommended: ***
 ```
 You can also map secret variables using the `variables` definition. This example shows how to use secret variables `$(vmsUser)` and `$(vmsAdminPass)` in an Azure file copy task. 
 
@@ -500,7 +501,7 @@ Each task that needs to use the secret as an environment variable does remapping
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 To set secret variables using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
 ::: moniker-end
 
@@ -558,7 +559,7 @@ You must use YAML to consume output variables in a different job.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using output variables from tasks. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 ::: moniker-end
 
@@ -566,7 +567,7 @@ There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command th
 
 * * *
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 
 ## List variables
 
@@ -649,7 +650,7 @@ steps:
 ### Set a multi-job output variable
 
 If you want to make a variable available to future jobs, you must mark it as
-an output variable by using `isOutput=true`. Then you can map it into future jobs by using the `$[]` syntax and including the step name which set the variable. Multi-job output variables only work for jobs in the same stage. 
+an output variable by using `isOutput=true`. Then you can map it into future jobs by using the `$[]` syntax and including the step name that set the variable. Multi-job output variables only work for jobs in the same stage. 
 When you create a multi-job output variable, you should assign the expression to a variable. In this YAML, `$[ dependencies.A.outputs['setvarStep.myOutputVar'] ]` is assigned to the variable `$(myVarFromJobA)`. 
 
 ```yaml
@@ -809,7 +810,7 @@ You can't pass a variable from one job to another job of a build pipeline, unles
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to setting variables in scripts. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 ::: moniker-end
 
@@ -857,7 +858,7 @@ For more information about counters and other expressions, see [expressions](exp
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to setting variables using expressions. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 ::: moniker-end
 
@@ -888,7 +889,7 @@ To do this, select the variable in the **Variables** tab of the build pipeline, 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 To choose which variables are allowed to be set at queue time using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
 ::: moniker-end
 
@@ -1048,7 +1049,7 @@ Variables are expanded once when the run is started, and again at the beginning 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 ::: moniker-end
 

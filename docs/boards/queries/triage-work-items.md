@@ -16,7 +16,7 @@ ms.date: 01/08/2018
 
 # Triage work items  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Using a work item query you can quickly review and update work items. Oftentimes team use the triage mode for a query to perform the following tasks: 
 - Set the priority of a bug or work item 
@@ -66,14 +66,14 @@ You can update several work items through the triage process, and then do a bulk
 
 ::: moniker range=">= tfs-2018"
 
-Multi-select the work items you want to update, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and then select the option you want from the menu of options.
+Multi-select the work items you want to update, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then select the option you want from the menu of options.
 
 ![Query results multi-select menu](../backlogs/media/bulk-m-query-results-menu-options-ts.png) 
 ::: moniker-end
 
 ::: moniker range="tfs-2017" 
 
-Multi-select the work items you want to update, choose the ![ ](../../media/icons/context-menu.png) context icon, and then select the option you want from the menu of options.
+Multi-select the work items you want to update, choose the :::image type="icon" source="../../media/icons/context-menu.png" border="false"::: context icon, and then select the option you want from the menu of options.
 
 ![Query results multi-select menu, TFS-2017](../backlogs/media/bulk-m-query-r-tfs-2016-menu-options.png)   
 
@@ -81,7 +81,7 @@ Multi-select the work items you want to update, choose the ![ ](../../media/icon
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-Multi-select the work items you want to update, choose the ![ ](../../media/icons/context-menu.png) context icon, and then select the option you want from the menu of options.
+Multi-select the work items you want to update, choose the :::image type="icon" source="../../media/icons/context-menu.png" border="false"::: context icon, and then select the option you want from the menu of options.
 
 ![Query results multi-select menu, TFS 2015](../backlogs/media/bulk-m-query-r-tfs-menu-options.png)  
 
