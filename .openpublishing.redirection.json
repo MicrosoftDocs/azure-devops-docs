@@ -16643,12 +16643,12 @@
     {
       "source_path": "docs/cli/security_tokens.md",
       "redirect_url": "/azure/devops/cli/security-tokens",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/cli/security_endpoint.md",
       "redirect_url": "/azure/devops/cli/security-endpoint",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
