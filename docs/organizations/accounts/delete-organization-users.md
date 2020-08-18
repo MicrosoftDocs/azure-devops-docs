@@ -24,8 +24,12 @@ If users no longer require access to a team, project, or your organization, you 
 
 ## Remove users from your organization
 
+::: moniker range=">= azure-devops-2020"
+
 > [!NOTE]   
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
+
+::: moniker-end
 
 #### [Preview page](#tab/preview-page) 
 
@@ -105,6 +109,7 @@ Choose the **Current page** tab for information on deleting an organization user
 
 ::: moniker-end
 
+Choose the **Preview page** tab for instructions.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 

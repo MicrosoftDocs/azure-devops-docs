@@ -162,6 +162,7 @@ Choose the **Current page** tab for information on adding a user to a project.
 
 ::: moniker-end
 
+Choose the **Preview page** tab for instructions.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -370,6 +371,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 ::: moniker-end
 
+Choose the **Preview page** tab for instructions.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
