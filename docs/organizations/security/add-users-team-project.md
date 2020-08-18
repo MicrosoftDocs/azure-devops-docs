@@ -162,7 +162,11 @@ Choose the **Current page** tab for information on adding a user to a project.
 
 ::: moniker-end
 
+::: moniker-range="azure-devops-2020"
+
 Choose the **Preview page** tab for instructions.
+
+::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -170,7 +174,7 @@ Choose the **Preview page** tab for instructions.
 
 * * *
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range="azure-devops-2019"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -365,7 +369,11 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 ::: moniker-end
 
+::: moniker-range="azure-devops-2020"
+
 Choose the **Preview page** tab for instructions.
+
+::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
@@ -451,9 +459,9 @@ a48cb46f-7366-4f4b-baf5-b3632398ed1e  Fabrikam Team  The default project team. W
 
 * * *
 
-::: moniker range="= azure-devops-2019 || azure-devops-2020"
+::: moniker range="= azure-devops-2019"
 
-You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
+You add team members from **Project Settings > Work > Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
 1. Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
 

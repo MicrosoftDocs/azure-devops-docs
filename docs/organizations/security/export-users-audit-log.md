@@ -112,7 +112,7 @@ f14a4f19-9910-6116-9836-cccd6dd1b7b7  contoso2@contoso.com    contoso2@contoso.c
 
 * * *
 
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range="azure-devops-2019"
 
 You can get a list of users and groups that have accessed your Azure DevOps Server instance by exporting the audit log. The audit log also indicates which access level has been granted.  
 
