@@ -1,6 +1,6 @@
 ---
 title: Delete, remove users from team, project, organization
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Steps for how to delete or remove organization users from Azure DevOps and remove users from a team or project.
 ms.technology: devops-accounts
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.author: chcomley
 author: chcomley
-ms.date: 04/17/2020
-monikerRange: 'azure-devops'
+ms.date: 08/18/2020
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Remove users from Azure DevOps  
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
 If users no longer require access to a team, project, or your organization, you can remove their access.
 
@@ -28,6 +28,8 @@ If users no longer require access to a team, project, or your organization, you 
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
+
+::: moniker range=">= azure-devops-2020"
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
@@ -60,7 +62,15 @@ If users no longer require access to a team, project, or your organization, you 
 > - Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
 > - Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
 
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+Choose the **Current page** tab for information on deleting an organization user. 
+::: moniker-end
+
 #### [Current page](#tab/current-page)
+
+::: moniker range="azure-devops-2019 || azure-devops"
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
@@ -93,7 +103,12 @@ If users no longer require access to a team, project, or your organization, you 
 > - Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
 > - Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
 
+::: moniker-end
+
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range=">= azure-devops-2020"
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
@@ -123,8 +138,11 @@ The following command removes the user with the email address contoso@contoso.co
 az devops user remove --user contoso@contoso.com --org https://dev.azure.com/contoso/ --yes
 ```
 
-* * *
+::: moniker-end
 
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
+
+* * * 
 
 ## Remove users from a team or project
 

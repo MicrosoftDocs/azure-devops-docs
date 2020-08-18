@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/07/2019
+ms.date: 08/18/2020
 ---
 
 
@@ -15,7 +15,7 @@ ms.date: 11/07/2019
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-In this quickstart, learn how to add users to a project or specific team. For anyone to access a project, they must be added to one of the default security groups or a custom group. Usually you add them to the Contributors group. For a quick look at what permissions are assigned to the default groups, see [Permissions and access](permissions-access.md).
+Learn how to add users to a project or specific team. For anyone to access a project, they must be added to one of the default security groups or a custom group. Usually you add them to the Contributors group. For a quick look at what permissions are assigned to the default groups, see [Permissions and access](permissions-access.md).
 
 ::: moniker range="azure-devops"  
 
@@ -50,14 +50,18 @@ Once users have been added to a project, you can browse for their display name o
 
 ## Add users to a project
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"
 
 If you are adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
 
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
 
-#### [Preview page](#tab/preview-page) 
+::: moniker-end
+
+#### [Preview page](#tab/preview-page)
+
+::: moniker range=">= azure-devops-2020"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -103,7 +107,15 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
    > [!NOTE]
    > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+Choose the **Current page** tab for information on adding a user to a project. 
+::: moniker-end
+
 #### [Current page](#tab/current-page) 
+
+::: moniker range="azure-devops-2019 || azure-devops"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -148,7 +160,12 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
    > [!NOTE]
    > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli) 
+::: moniker-end
+
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range=">= azure-devops-2020"
 
 Azure DevOps CLI commands aren't supported for adding users to a project at this time.
 
@@ -256,13 +273,16 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 <a id="add-team-members-team-services" />
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
 
+::: moniker-end
 
-#### [Preview page](#tab/preview-page) 
+#### [Preview page](#tab/preview-page)
+
+::: moniker range=">= azure-devops-2020"
 
 1. Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
 
@@ -300,7 +320,15 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 6. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md)
 
-#### [Current page](#tab/current-page) 
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+Choose the **Current page** tab for information on adding a user to a team. 
+::: moniker-end
+
+#### [Current page](#tab/current-page)
+
+::: moniker range="azure-devops-2019 || azure-devops"
 
 You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
@@ -340,7 +368,12 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 6. To add an account as a team administrator, choose **Add** located in the Team Profile page. For details, see [Add a team administrator](../../organizations/settings/add-team-administrator.md)
 
+::: moniker-end
+
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
+
+::: moniker range=">= azure-devops-2020"
 
 ## List team members
 

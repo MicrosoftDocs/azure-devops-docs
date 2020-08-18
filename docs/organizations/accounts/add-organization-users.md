@@ -1,6 +1,6 @@
 ---
 title: Add users and manage access
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn how to add users to an organization, project, or team, and manage their access level (like Stakeholder), direct assignments, invitations, and more.
 ms.topic: conceptual
@@ -8,15 +8,15 @@ ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-ms.date: 05/15/2020
+ms.date: 08/18/2020
 monikerRange: 'azure-devops'
 ---
 
-# Add users and manage access in Azure DevOps Services
+# Add users and manage access in Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
-This article describes how to add and manage user access through Direct assignment for Azure DevOps Services. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md).
+Learn how to add and manage user access through Direct assignment for Azure DevOps. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md).
 
 The following types of users can join your organization for free:
 
@@ -42,11 +42,14 @@ and add users to groups - all in one view.
  
 You can add up to 50 users in a single transaction. When you add users, each user receives a notification email with a
 link to the organization page.
- 
+
+
 > [!NOTE]   
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
+
+::: moniker range=">= azure-devops-2020"
 
 To give other users access to your organization, add their email addresses.
 
@@ -74,7 +77,15 @@ To give other users access to your organization, add their email addresses.
 	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
 5. Select **Add** to complete your invitation.
 
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+Choose the **Current page** tab for information on adding an organization user. 
+::: moniker-end
+
 #### [Current page](#tab/current-page)
+
+::: moniker range="azure-devops-2019 || azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -95,7 +106,13 @@ To give other users access to your organization, add their email addresses.
    > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
 5. Select **Add** to complete your invitation.
 
+::: moniker-end
+
+
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range=">= azure-devops-2020"
 
 [Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
@@ -143,7 +160,7 @@ ID                                    Display Name          Email               
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com   contoso@contoso.com   stakeholder     Stakeholder     pending 
 ```
 
-You can also add the user to a Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](https://docs.microsoft.com/azure/devops/organizations/security/permissions-access?view=azure-devops).
+You can also add the user to an Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](https://docs.microsoft.com/azure/devops/organizations/security/permissions-access?view=azure-devops).
 
 ```CLI
 az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com
@@ -151,7 +168,11 @@ az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM
 
 You can see all security groups in a project using the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
 
-* * *
+::: moniker-end
+
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
+
+* * * 
 
 For more information about user access, read [about access levels](../security/access-levels.md).
 
@@ -192,7 +213,7 @@ When you add members to projects without setting up billing, they automatically 
 
 ## Manage users
 
-From your web browser you can view and edit certain user information. From the Azure DevOps CLI command, you can see details about a specific user and update their access level.
+From your web browser, you can view and edit certain user information. From the Azure DevOps CLI command, you can see details about a specific user and update their access level.
 
 The Users view shows key information per user in a table. In this view, you can do the following tasks:
 
@@ -205,6 +226,8 @@ The Users view shows key information per user in a table. In this view, you can 
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
+
+::: moniker range=">= azure-devops-2020"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -230,7 +253,15 @@ The Users view shows key information per user in a table. In this view, you can 
 
 5. **Save** your changes.
 
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+Choose the **Current page** tab for information on managing users. 
+::: moniker-end
+
 #### [Current page](#tab/current-page)
+
+::: moniker range="azure-devops-2019 || azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -254,7 +285,12 @@ The Users view shows key information per user in a table. In this view, you can 
 
 5. **Save** your changes.
 
+::: moniker-end
+
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range=">= azure-devops-2020"
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
 
@@ -316,8 +352,11 @@ ID                                    Display Name         Email                
 
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     active
 ```
+::: moniker-end
 
-* * *
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
+
+* * * 
 
 ## FAQs for adding users
 
