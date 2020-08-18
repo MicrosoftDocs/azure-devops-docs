@@ -9,7 +9,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
 ms.date: 08/18/2020
-monikerRange: '>= azure-devops-2020'
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Add users and manage access in Azure DevOps
@@ -108,7 +108,7 @@ Choose the **Current page** tab for information on adding an organization user.
 
 ::: moniker-end
 
-
+Choose the **Preview page** tab for instructions.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -287,6 +287,7 @@ Choose the **Current page** tab for information on managing users.
 
 ::: moniker-end
 
+Choose the **Preview page** tab for instructions.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
