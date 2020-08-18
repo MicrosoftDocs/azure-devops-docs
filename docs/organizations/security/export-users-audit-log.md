@@ -43,9 +43,15 @@ You can get a list of users and groups that have access to your Team Foundation 
 
 ## Export a list of users
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=" azure-devops"
 
 From your web browser or the Azure DevOps CLI command, you can get a list of the users in your organization and view their access level information.
+
+::: moniker-end
+
+::: moniker range=" azure-devops-2020"
+
+From the Azure DevOps CLI command, you can get a list of the users in your organization and view their access level information.
 
 ::: moniker-end
 
