@@ -16646,8 +16646,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/cli/security_endpoint.md",
-      "redirect_url": "/azure/devops/cli/security-endpoint",
+      "source_path": "docs/cli/service_endpoint.md",
+      "redirect_url": "/azure/devops/cli/service-endpoint",
       "redirect_document_id": false
     }
   ]
