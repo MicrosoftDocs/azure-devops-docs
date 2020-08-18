@@ -166,12 +166,6 @@ Choose the **Preview page** tab for instructions.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range=">= azure-devops-2020"
-
-Azure DevOps CLI commands aren't supported for adding users to a project at this time.
-
-::: moniker-end
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
