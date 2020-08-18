@@ -6,6 +6,7 @@ ms.date: 08/19/2020
 ms.topic: include
 ---
 
+- [Pipelines images announcements](#pipelines-images-announcements)
 - [Agent log uploads improved](#agent-log-uploads-improved)
 - [Optionally mount container volumes read-only](#optionally-mount-container-volumes-read-only)
 - [Fine-grained control over container start/stop](#fine-grained-control-over-container-startstop)
