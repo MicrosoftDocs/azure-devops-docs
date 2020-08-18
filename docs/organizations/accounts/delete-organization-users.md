@@ -9,7 +9,7 @@ ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.author: chcomley
 author: chcomley
 ms.date: 08/18/2020
-monikerRange: '>= azure-devops-2020'
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Remove users from Azure DevOps  
@@ -64,9 +64,9 @@ If users no longer require access to a team, project, or your organization, you 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+
 Choose the **Current page** tab for information on deleting an organization user. 
-::: moniker-end
+
 
 #### [Current page](#tab/current-page)
 

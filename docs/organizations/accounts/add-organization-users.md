@@ -9,7 +9,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
 ms.date: 08/18/2020
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Add users and manage access in Azure DevOps
@@ -79,9 +79,9 @@ To give other users access to your organization, add their email addresses.
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+
 Choose the **Current page** tab for information on adding an organization user. 
-::: moniker-end
+
 
 #### [Current page](#tab/current-page)
 
@@ -255,9 +255,9 @@ The Users view shows key information per user in a table. In this view, you can 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
+
 Choose the **Current page** tab for information on managing users. 
-::: moniker-end
+
 
 #### [Current page](#tab/current-page)
 
