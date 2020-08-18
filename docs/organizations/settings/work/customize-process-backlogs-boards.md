@@ -49,7 +49,25 @@ To learn more about what you can customize, see [About process customization and
 
 ## Add a system work item type to a backlog  
 
-If you want to track Issues or Impediments along with your requirements or a portfolio backlog, you can by editing the corresponding backlog.    
+If you want to track Issues or Impediments or other inherited work item types within a backlog or board, you can by editing the corresponding backlog. 
+
+Each **Edit backlog level** dialog automatically includes inherited and custom work item types which haven't been assigned to other backlog levels.
+
+For example, unassigned CMMI work item types are listed under the **Other work item types** section as shown in the following image
+
+> [!div class="mx-imgBorder"]  
+> ![Web portal, Process, Backlog levels, Other work item types section](media/backlogs/cmmi-other-work-item-types.png) 
+
+These same work item types, along with any custom work item types, appear in the **Edit backlog level** dialog of all backlog levels, until they are assigned to a particular backlog level. 
+
+> [!div class="mx-imgBorder"]  
+> ![Web portal, Process, Backlog levels, Edit backlog level dialog](media/backlogs/edit-backlog-level-cmmi-requirements.png) 
+ 
+
+> [!NOTE] 
+> You can't remove the default, inherited work item type from any backlog level, but you can disable the corresponding work item type. For example, you can disable the Requirements work item type for the CMMI Requirement backlog as long as you have added another work item type to support that backlog. 
+
+
 ::: moniker-end 
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
@@ -117,8 +135,7 @@ You can rename the backlog, change the color, add work item types, and change th
 Here, we've renamed the backlog, added **Customer Ticket** and **Issue**, and changed the default type to *Customer Ticket*. Simply check those boxes of the work item types to include on the backlog. 
 
 :::image type="content" source="media/backlogs/add-oob-issue-to-backlog.png" alt-text="Web portal, Add a portfolio backlog dialog, Save changes":::
-
-The **Edit backlog level** dialog automatically includes inherited and custom work item types which haven't been assigned to other backlog levels. You can't remove the default, inherited work item type from the Requirements backlog, but you can disable that work item type. 
+ 
 
 ::: moniker-end  
 
