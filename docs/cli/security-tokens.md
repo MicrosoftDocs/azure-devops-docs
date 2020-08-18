@@ -1,5 +1,5 @@
 ---
-title: CLI Security tokens for permissions management
+title: CLI security tokens for permissions management
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to manage security tokens for permissions management
 ms.topic: reference 
@@ -67,7 +67,7 @@ Token examples for different namespaces are provided in the following sections.
 
    **Example**: `$/Shared/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`
 
-### Namespace name : Analytics
+### Namespace name: Analytics
 
    **Namespace ID**: `58450c49-b02d-465a-ab12-59ae512d6531`
 
@@ -81,7 +81,7 @@ Token examples for different namespaces are provided in the following sections.
 
    **Token format**: `'vstfs:///Classification/Node/Iteration_Identifier/'`
 
-   Suppose, you have the ollowing iterations configured for your team.
+   Suppose, you have the following iterations configured for your team.
    
    - ProjectIteration1
      TeamIteration1
@@ -108,7 +108,7 @@ Token examples for different namespaces are provided in the following sections.
 
    **Token format for project level build permissions**: `PROJECT_ID`
 
-   If you need to update permissions for a particular build definition ID, for exampe, 12, security token for that build definition looks as follows:
+   If you need to update permissions for a particular build definition ID, for example, 12, security token for that build definition looks as follows:
 
    **Token format for project level build permissions**: `PROJECT_ID/12`
 

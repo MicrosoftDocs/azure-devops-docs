@@ -1,7 +1,7 @@
 ---
-title: Create Service Endpoint using Azure DevOps CLI  
+title: Create service endpoint using Azure DevOps CLI  
 titleSuffix: Azure DevOps 
-description: Use Azure DevOps CLI to create Service Endpoint
+description: Learn how to use Azure DevOps CLI to create a service endpoint
 ms.topic: reference 
 ms.prod: devops 
 ms.technology: devops-reference
@@ -51,7 +51,7 @@ $env:AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=<your_secret_here>
 
 ### Use a client certificate
 
-If AAD application uses [certificate for authentication](/azure/active-directory/develop/active-directory-certificate-credentials), then create a .pem file for the certificate and pass the path to the .pem file using the `--azure-rm-service-principal-certificate-path` argument.
+If Azure Active Directory application uses [certificate for authentication](/azure/active-directory/develop/active-directory-certificate-credentials), then create a .pem file for the certificate and pass the path to the .pem file using the `--azure-rm-service-principal-certificate-path` argument.
 
 You can create a.pem file using openssl:
 

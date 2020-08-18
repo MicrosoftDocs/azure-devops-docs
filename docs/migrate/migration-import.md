@@ -215,10 +215,10 @@ The following table explains what each column means.
 
 |    Column                           |    Explanation                                                                                                                                                                                                                                               |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    AD - User (Azure DevOps Server)                             |    Friendly display name used by the identity in   Azure DevOps Server. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
-|    AD - Security Identifier    |    The unique identifier for the on-prem AD identity   in Azure DevOps Server. This column is used to identify users in the collection.                                                                                                                                      |
-|    Azure AD - Expected Import User (Azure DevOps Services)    |    Either the expected sign in address of the matched soon to be active user or "No Match Found (Check Azure AD Sync)" indicating that the identity was not found in during AAd sync and will be imported as historical.                                                                                                                                                                |
-|    Expected Import Status               |    The expected user import status, either "Active" if there was a match between your AD and Azure AD or "Historical" if we could not match the AD identity in your Azure AD.                                                                                                                                                                                                        |
+|    Active Directory - User (Azure DevOps Server)                             |    Friendly display name used by the identity in   Azure DevOps Server. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
+|    Active Directory - Security Identifier    |    The unique identifier for the on-prem AD identity   in Azure DevOps Server. This column is used to identify users in the collection.                                                                                                                                      |
+|    Azure Active Directory - Expected Import User (Azure DevOps Services)    |    Either the expected sign in address of the matched soon to be active user or "No Match Found (Check Azure Active Directory Sync)" indicating that the identity was not found in during Azure Active Directory sync and will be imported as historical.                                                                                                                                                                |
+|    Expected Import Status               |    The expected user import status, either "Active" if there was a match between your Active Directory and Azure Active Directory or "Historical" if we could not match the Active Directory identity in your Azure Active Directory.                                                                                                                                                                                                        |
 |    Validation Date                  |    Last time the identity map log was validated.                                                                                                                                                                                                                 |
 
 As you read through the file, notice the Expected Import Status column has either **Active** or **Historical**. **Active** indicates that it's expected that the identity on this row will map correctly on import and will become active. **Historical** become historical identities on import. It's important that you review the generated mapping file for completeness and correctness.
@@ -389,12 +389,12 @@ Use the table below to decide where you should create your SQL Azure VM if you'r
 
 Below are some additional recommended configurations for your SQL Azure VM.
 
-1. It's recommended that D Series VMs be used as they're optimized for database operations.
-2. Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
-3. [Configure](/sql/relational-databases/databases/move-system-databases#Examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#generating-a-dacpac).
-4. If your source database is still over 1TB after [reducing the size](/azure/devops/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
-5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
-6. You need to have a public facing IP address for the service to reach this machine.
+- It's recommended that D Series VMs be used as they're optimized for database operations.
+- Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
+- [Configure](/sql/relational-databases/databases/move-system-databases#Examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#generating-a-dacpac).
+- If your source database is still over 1TB after [reducing the size](/azure/devops/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
+- Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
+- You need to have a public facing IP address for the service to reach this machine.
 
 <a id="ips" />
 

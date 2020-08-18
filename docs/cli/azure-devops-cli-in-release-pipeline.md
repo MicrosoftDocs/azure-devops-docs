@@ -1,7 +1,7 @@
 ---
 title: Azure DevOps CLI in a release pipeline
 titleSuffix: Azure DevOps 
-description: Use Azure DevOps CLI to create a release pipeline
+description: Learn how to to create a release pipeline using Azure DevOps CLI 
 ms.topic: reference 
 ms.prod: devops 
 ms.technology: devops-reference
@@ -36,7 +36,7 @@ To use the Azure DevOps CLI in a hosted agent using a Release Pipeline, execute 
 	> [!div class="mx-imgBorder"]  
 	> ![Stage 1](media/stage-1.png)
 
-4. Choose the **Tasks** page, and configure the job to use Hosted Mac OS in Agent Pools.
+4. Choose the **Tasks** page, and configure the job to use Hosted macOS in Agent Pools.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Agent Job Configuration](media/job-config.png)
