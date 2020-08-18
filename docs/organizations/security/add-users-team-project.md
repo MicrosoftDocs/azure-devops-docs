@@ -109,9 +109,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
 Choose the **Current page** tab for information on adding a user to a project. 
-::: moniker-end
 
 #### [Current page](#tab/current-page) 
 
@@ -321,9 +319,8 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 ::: moniker-end
 
-::: moniker range="< azure-devops-2020"
 Choose the **Current page** tab for information on adding a user to a team. 
-::: moniker-end
+
 
 #### [Current page](#tab/current-page)
 
