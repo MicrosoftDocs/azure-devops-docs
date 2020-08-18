@@ -70,6 +70,24 @@ These same work item types, along with any custom work item types, appear in the
 
 ::: moniker-end 
 
+
+
+## Fields added to work item types associated with a backlog level 
+
+When you add a work item type to a backlog level, the following fields are added to the work item type definition as hidden fields (that is, they don't appear on the work item form) to support select Agile tool features.    
+
+| Backlog level | Fields added | 
+|---------------|--------------|
+| Portfolio backlog |- Stack rank (Agile, CMMI)<br/>- Backlog Priority (Scrum) | 
+| Requirement backlog |- Stack Rank, Story Points (Agile)<br/>- Stack Rank, Size (CMMI)<br/>- Backlog Priority, Effort (Scrum) |
+| Iteration backlog |- Activity, Remaining Work, Stack Rank (Agile)<br/>- Discipline, Remaining Work, Stack Rank (CMMI)<br/>- Activity, Remaining Work, Backlog Priority (Scrum) |
+
+The Stack Rank and Backlog Priority fields capture the relative priority of work items as they are reordered on a backlog or board. For details on it's usage, see [Behind the scenes: the Backlog Priority or Stack Rank field](https://blogs.msdn.microsoft.com/devops/2014/05/14/behind-the-scenes-the-backlog-priority-or-stack-rank-field/). 
+
+The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/team-velocity.md).  
+
+And, lastly, Remaining Work is used in [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md). 
+
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
@@ -88,29 +106,42 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 <a id="add-portfolio-backlog">  </a>
 
-### Add a portfolio backlog 
+### Add a portfolio backlog  
+
+You can add a portfolio backlog and custom work item type following these steps. 
 	
 1. From the  **Backlog levels** page, choose :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false"::: **New top level portfolio backlog**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Admin context, Process page, select Process](media/process/process-new-portfolio-backlog.png) 
 
-1. Name the backlog level, select the backlog level color, and add the work item type  to associate with this level. Click Add. 
+1. Name the backlog level, select the backlog level color, and add the work item type  to associate with this level. Click **Add**. 
 
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, Add a portfolio backlog dialog, Add new work item type](media/backlogs/add-portfolio-backlog-initiative-s173.png) 
+	::: moniker-end 
+	::: moniker range="< azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Add a portfolio backlog dialog, Add new work item type](media/process/process-add-portfolio-backlog-dialog.png) 
+	::: moniker-end 
 
-1. If you are associating only one work item type with the backlog, then click Save to save your changes. Otherwise, you can add more work item types as needed. 
+1. If you are associating only one work item type with the backlog, then choose **Save** to save your changes. Otherwise, you can add more work item types as needed. 
 
-	![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-add-portfolio-backlog-dialog-save.png)
-
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	![Web portal, Add a portfolio backlog dialog, Save changes](media/backlogs/add-portfolio-backlog-initiative-save.png.png)
+	::: moniker-end 
+	::: moniker range="< azure-devops"
+	> [!div class="mx-imgBorder"]  
+	![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-add-portfolio-backlog-dialog-save.png) 
+	::: moniker-end 
 
 <a id="edit-portfolio-backlog">  </a>
 
 ### Edit, rename, or delete a portfolio backlog 
 
 From the **Backlog levels** page, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false":::  context menu of a portfolio backlog to edit, rename, or delete it.  
-
 
 ![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-portfolio-backlog-context-menu.png)
 
