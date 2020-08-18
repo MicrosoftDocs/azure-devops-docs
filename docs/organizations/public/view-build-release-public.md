@@ -23,17 +23,17 @@ In this article, learn how to view the status of environment and release pipelin
 
 To view the status of recent environments, select  **Pipelines > Environments**. To view a summary or history of any environment, choose an environment.
 
-> ![Pipelines > Recent environments, new navigation ](media/pipelines/view-environments-pipelines.png)
+![Pipelines > Recent environments, new navigation ](media/pipelines/view-environments-pipelines.png)
 
 ## View active release pipelines
 
 To view active release pipelines, select **Pipelines > Releases**.
 
-> ![Pipelines, Recent Releases, new navigation ](media/pipelines/view-releases-pipelines.png)
+![Pipelines, Recent Releases, new navigation ](media/pipelines/view-releases-pipelines.png)
 
 From there, you can drill into the details of a release. For example, here we show  the **Release-3** pipeline.
 
-> ![Pipelines, Environments status page ](media/pipelines/release-chart.png)
+![Pipelines, Environments status page ](media/pipelines/release-chart.png)
 
 ## Next steps
 
