@@ -70,7 +70,7 @@ To understand why a permission is inherited, you can pause over a permission set
 
 #### [Preview page](#tab/preview-page) 
 
-::: moniker range="azure-devops"
+::: moniker range="= azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Permissions, Why link](media/view-permissions/about-permissions-information-preview.png)
@@ -180,7 +180,7 @@ You set most permissions through the web portal. You can use the tools listed in
 Different tools are used depending on whether you are setting permissions at a server, collection, or project level.
 You use the [web portal administration context](../../organizations/security/add-users-team-project.md) to set most permissions.
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 |   Permission level   |  Web portal security pages | az devops CLI |   [Tf permission command-line tool](../../repos/tfvc/permission-command.md)  |   
 |-------------------|:-----------------------------------:|:----------------:|:----------------:|  
@@ -203,7 +203,7 @@ You use the [web portal administration context](../../organizations/security/add
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range=">= tfs-2017 < azure-devops-2020"
 
 |  Permission level |  Web portal security pages | [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator) |    [TFSSecurity CLI](/azure/devops/server/command-line/tfssecurity-cmd) |  [Tf command-line tool](../../repos/tfvc/permission-command.md)  |   
 |-------------------------------------------------------------------------------------|:-----------------------------------:|:--------------------------------------:|:-----------------------------------:|:-----------------------------------:|  

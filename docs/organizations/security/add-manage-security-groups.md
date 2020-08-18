@@ -1,6 +1,6 @@
 ---
 title: Add & manage security groups
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Add and manage security groups in an organization using the Azure DevOps CLI.  
 ms.technology: devops-security
 ms.assetid: 
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.reviewer: geverghe 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azure-devops'
-ms.date: 11/22/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 08/18/2020
 ---
 
 # Add and manage security groups
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)]  
+[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
 Security groups assign a set of permissions to members of the group. For example, members of a Contributors group or Project Administrators group are assigned the permissions that are allowed for those groups. To learn more, see [Permissions and groups](permissions.md).
 
@@ -26,7 +26,7 @@ Azure DevOps is pre-configured with default security groups. You can add and man
 - Manage security group memberships for groups and users
 
 > [!NOTE]
-> For Azure DevOps Services, you can manage security groups using the `az devops security group` command documented in this article, or using the TFSSecurity command. To use the TFSSecurity command, you must install Azure DevOps Server 2019 to get access to the command line tool. To learn more, see [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd).
+> For Azure DevOps, you can manage security groups using the `az devops security group` command documented in this article, or using the TFSSecurity command. To use the TFSSecurity command, you must install Azure DevOps Server 2019 to get access to the command line tool. To learn more, see [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd).
 
 ## Prerequisites 
 

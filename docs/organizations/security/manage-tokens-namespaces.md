@@ -1,6 +1,6 @@
 ---
 title: Manage tokens & namespaces
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Manage security permissions using the Azure DevOps CLI.  
 ms.technology: devops-security
 ms.assetid: 
@@ -9,17 +9,17 @@ ms.manager: geverghe
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azure-devops'
-ms.date: 11/20/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 08/18/2020
 ---
 
 # Manage tokens and namespaces
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)]  
+[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
 Security namespaces are used to store access control lists (ACLs) on tokens. Data stored in security namespaces are used to determine whether a user has permissions to perform a specific action on a specific resource.
 
-Each family of resources (such as work items or Git repositories) is secured through a unique namespace. Each security namespace contains zero or more access control lists (ACLs). Each ACL contains a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps Services.
+Each family of resources (such as work items or Git repositories) is secured through a unique namespace. Each security namespace contains zero or more access control lists (ACLs). Each ACL contains a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps.
 
 You can manage tokens and namespaces for your organization with the [az devops security permission](/cli/azure/ext/azure-devops/devops/security/permission) commands. Use this command to:
 
