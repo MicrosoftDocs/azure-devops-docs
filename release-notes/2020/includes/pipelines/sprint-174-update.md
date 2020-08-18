@@ -6,6 +6,26 @@ ms.date: 08/19/2020
 ms.topic: include
 ---
 
+### Pipelines images announcements
+
+> [!NOTE]
+> We’re constantly working to improve your experience using Azure Pipelines. To learn more about upcoming updates on our Windows/Linux/macOS images updates please check here:
+>
+> Azure Pipelines images are continuously updated in an effort to provide users with the best experience possible. These routine updates are predominantly aimed at addressing bugs or out of date software. They will often have no impact on your pipelines, however this is not always the case. Your pipeline may be impacted in the event, it takes a dependency on a piece of software that has either been removed or updated on the image.
+>
+> To learn more about upcoming updates on our Windows and Linux images, please read the following announcements:
+>
+> - [Window 2016](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/win/Windows2016-Readme.md)
+> - [Windows 2019](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/win/Windows2019-Readme.md)
+> - [Ubuntu 16.04](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/linux/Ubuntu1604-README.md)
+> - [Ubuntu 18.04](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/linux/Ubuntu1804-README.md)
+> - [Ubuntu 20.04](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/linux/Ubuntu2004-README.md)
+> - [Mac OS 10.15](https://github.com/actions/virtual-environments/blob/d6d20c9d84ca1e4f4d1c9767bc00ce26d226c7f9/images/macos/macos-10.15-Readme.md)
+>
+> To view release notes for upcoming (pre-release) and deployed changes, please subscribe to the following release notes:
+>
+> - [Release notes](https://github.com/actions/virtual-environments/releases)
+
 ### Agent log uploads improved
 
 When an agent stops communicating with the Azure Pipelines server, the job it was running becomes abandoned. If you happened to be looking at the streaming console logs, you might have gotten some clues about what the agent was up to right before it stopped responding. But if you weren't, or if you refreshed the page, those console logs were gone. With this release, if the agent stops responding before it sends up its full logs, we'll keep the console logs as the next-best thing. Console logs are limited to 1000 characters per line and can occasionally be incomplete, but they're a lot more helpful than showing nothing! Examining these logs may help you troubleshoot your own pipelines, and it will certainly help our support engineers when they assist with troubleshooting.
