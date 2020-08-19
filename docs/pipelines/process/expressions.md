@@ -195,6 +195,7 @@ Here is another example of setting a variable to act as a counter that starts at
 > [!NOTE]
 > `pipeline.startTime` is not available outside of expressions. `pipeline.startTime` 
 >  formats `system.pipelineStartTime` into a date and time object so that it is available to work with expressions.
+> The default time zone for `pipeline.startTime` is UTC. You can [change the time zone](../../organizations/accounts/change-time-zone.md) for your organization. 
 
 
 ```yaml
