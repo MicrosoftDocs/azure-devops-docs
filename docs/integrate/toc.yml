@@ -50,6 +50,8 @@
       href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 - name: Reference
   items:
+    - name: REST API reference overview
+      href: rest-api-overview.md
     - name: Azure DevOps Services REST API
       href: https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1
     - name: REST APIs for TFS 2015, 2017, and 2018
