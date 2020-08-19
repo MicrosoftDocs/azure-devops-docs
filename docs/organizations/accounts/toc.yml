@@ -1,6 +1,6 @@
 - name: About managing organizations 
   href: organization-management.md 
-- name: Plan your organization structure
+- name: Plan your organizational structure
   href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Create your organization 
   href: create-organization.md 
