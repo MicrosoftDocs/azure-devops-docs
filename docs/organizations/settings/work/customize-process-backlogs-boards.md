@@ -51,6 +51,7 @@ To learn more about what you can customize, see [About process customization and
 
 If you want to track Issues or Impediments or other inherited work item types within a backlog or board, you can by editing the corresponding backlog. The following table lists the available work item types you can add to a backlog. 
 
+---
 :::row:::
    :::column span="1":::
       **Process**
@@ -59,6 +60,7 @@ If you want to track Issues or Impediments or other inherited work item types wi
       **Work item types**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Agile
@@ -67,6 +69,7 @@ If you want to track Issues or Impediments or other inherited work item types wi
       Issue
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Scrum
@@ -75,6 +78,7 @@ If you want to track Issues or Impediments or other inherited work item types wi
       Impediment
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       CMMI
@@ -83,6 +87,7 @@ If you want to track Issues or Impediments or other inherited work item types wi
       Change Request, Issue, Review, Risk 
    :::column-end:::
 :::row-end:::
+---
 
 Each **Edit backlog level** dialog automatically includes inherited and custom work item types which haven't been assigned to other backlog levels. For example, unassigned Agile work item types are listed under the **Other work item types** section as shown in the following image
 
