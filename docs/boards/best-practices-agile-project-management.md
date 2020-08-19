@@ -123,7 +123,7 @@ If you have larger initiatives or scenarios that require shipping several Featur
 
  
 
-## Review, prioritize, estimate, and update your product plan   
+## Review and update your product plan   
 
 Periodically you'll want to review and groom your product plan. The main tools you'll use are your team's Product Backlog or Feature Backlog and Board. 
 
@@ -240,11 +240,13 @@ Each sprint, perform the following tasks:
 
 ## Manage dependencies  
 
+In Microsoft Project, work that depends on the completion of other work is managed using Predecessor/Su
+
 - Dependency Management: Link work items to work items using Predecessor/Successor link types  
 - no critical path 
 
 
-## Review progress and feature deliverables
+## Review progress and feature deliverables 
 
 To gain insight into progress is being made
 
