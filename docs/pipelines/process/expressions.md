@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 06/25/2020
+ms.date: 08/19/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -553,7 +553,9 @@ You can also use dependencies to reference output variables in the previous job 
 jobs:
 - job: A
   steps:
-  - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+  - bash: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+  # or on Windows:
+  # - script: echo ##vso[task.setvariable variable=skipsubsequent;isOutput=true]false
     name: printvar
 
 - job: B
@@ -572,7 +574,9 @@ stages:
   jobs:
   - job: A1
     steps:
-     - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+     - bash: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+     # or on Windows:
+     # - script: echo ##vso[task.setvariable variable=skipsubsequent;isOutput=true]false
        name: printvar
 
 - stage: B
@@ -598,9 +602,13 @@ stages:
   jobs:
   - job: A1
     steps:
-     - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+     - bash: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
        name: printvar
-     - script: echo "##vso[task.setvariable variable=stageexists;isOutput=true]true"
+     - bash: echo "##vso[task.setvariable variable=stageexists;isOutput=true]true"
+     # or on Windows:
+     # - script: echo ##vso[task.setvariable variable=skipsubsequent;isOutput=true]false
+       name: printvar
+     # - script: echo ##vso[task.setvariable variable=stageexists;isOutput=true]true
        name: stagevar
 
 - stage: B
