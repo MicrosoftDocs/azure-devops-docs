@@ -20,6 +20,7 @@ Supported repositories are Azure Repos Git (`git`), GitHub (`github`), and Bitbu
 
 The following combinations of `checkout` steps are supported.
 
+---
 :::row:::
     :::column:::
         No `checkout` steps
@@ -28,7 +29,7 @@ The following combinations of `checkout` steps are supported.
         The default behavior is as if `checkout: self` were the first step, and the current repository is checked out.
     :::column-end:::
 :::row-end:::
-
+---
 :::row:::
     :::column:::
         A single `checkout: none` step
@@ -37,7 +38,7 @@ The following combinations of `checkout` steps are supported.
         No repositories are synced or checked out.
     :::column-end:::
 :::row-end:::
-
+---
 :::row:::
     :::column:::
         A single `checkout: self` step
@@ -46,17 +47,17 @@ The following combinations of `checkout` steps are supported.
         The current repository is checked out.
     :::column-end:::
 :::row-end:::
-
+---
 :::row:::
     :::column:::
-        A single `checkout` step that 
+        A single `checkout` step that <br>
         isn't `self` or `none`
     :::column-end:::
     :::column:::
         The designated repository is checked out instead of `self`.
     :::column-end:::
 :::row-end:::
-
+---
 :::row:::
     :::column:::
         Multiple `checkout` steps
@@ -65,6 +66,7 @@ The following combinations of `checkout` steps are supported.
         Each designated repository is checked out to a folder named after the repository, unless a different `path` is specified in the `checkout` step. To check out `self` as one of the repositories, use `checkout: self` as one of the `checkout` steps.
     :::column-end:::
 :::row-end:::
+---
 
 - If there are no `checkout` steps, the default behavior is as if `checkout: self` were the first step.
 - If there is a single `checkout: none` step, no repositories are synced or checked out.
