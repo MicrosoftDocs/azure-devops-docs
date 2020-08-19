@@ -49,7 +49,8 @@ The following combinations of `checkout` steps are supported.
 
 :::row:::
     :::column:::
-        A single `checkout` step that isn't `self` or `none`
+        A single `checkout` step that 
+        isn't `self` or `none`
     :::column-end:::
     :::column:::
         The designated repository is checked out instead of `self`.
