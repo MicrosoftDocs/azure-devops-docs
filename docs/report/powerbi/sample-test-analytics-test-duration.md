@@ -1,5 +1,5 @@
 ---
-title: Pipeline outcome summary sample Power BI report 
+title: Pipeline test duration sample Power BI reports 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a test duration Power BI report for a given pipeline in the project  
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops'  
-ms.date: 01/30/2020
+ms.date: 08/14/2020
 ---
 
 # Test duration sample report
@@ -20,18 +20,28 @@ ms.date: 01/30/2020
 
 This article shows you how to create a report that shows list of all the tests in a pipeline and the average time taken to execute each test for a selected time range.
 
-[!INCLUDE [temp](includes/preview-note.md)]
-
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/testduration-report1.png)
+> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/test-duration-report1.png)
 
 
-[!INCLUDE [temp](includes/sample-required-reading.md)]
+Specifically, you'll find sample queries for the following reports: 
+
+- Test duration for build workflow
+- Test duration for release workflow
+- Test duration for a particular branch
+- Test duration for a particular test file
+- Test duration for a particular test owner 
+
+
+[!INCLUDE [temp](includes/preview-note.md)]
+
 
 
 ## Sample queries
+
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -156,17 +166,17 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odatapowerbi-testanalytics/testduration-expand1.png)
+    > ![Power BI + OData - Choose expand button](media/odata-powerbi-test-analytics/test-duration-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odatapowerbi-testanalytics/testduration-expand2.png)
+    > ![Power BI + OData - Select all columns](media/odata-powerbi-test-analytics/test-duration-expand2.png)
 
 1. The table now contains the expanded entity **Test.TestName**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odatapowerbi-testanalytics/testduration-expand3.png)
+    > ![Power BI + OData - Expanded entity](media/odata-powerbi-test-analytics/test-duration-expand3.png)
     
 
 ### Change column type
@@ -176,12 +186,12 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column **TotalCount** to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-testanalytics/testduration-changetype1.png)
+    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/test-duration-changetype1.png)
     
 1. Change the type of column **TotalDuration** and **AvgDuration** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-testanalytics/testduration-changetype2.png)
+    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/test-duration-changetype2.png)
 
 
 ### Rename fields and query, then Close & Apply
@@ -191,7 +201,7 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-testanalytics/testduration-rename1.png)
+	> ![Power BI Rename Columns](media/odata-powerbi-test-analytics/test-duration-rename1.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
@@ -212,7 +222,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odatapowerbi-testanalytics/testduration-field.png)
+> ![Sample - Test Summary - Fields](media/odata-powerbi-test-analytics/test-duration-field.png)
 
 For a simple report, do the following steps:
 
@@ -224,14 +234,12 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/testduration-report1.png)
+> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/test-duration-report1.png)
 
-
-## Additional queries
 
 You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
 
-### Test Duration for Release workflow, rather than Build workflow
+## Test duration for Release workflow
 
 You may want to view the test duration of all the tests of a pipeline for **Release** workflow, instead of Build workflow.
 
@@ -278,7 +286,7 @@ TotalDuration div TotalCount as AvgDuration)
 
 ***
 
-### Filter by Branch
+## Filter by branch
 
 You may want to view the test duration for all the tests of a pipeline for a particular branch only. To create the report, perform the following additional steps along with what is defined previously in this article.
 
@@ -331,7 +339,7 @@ TotalDuration div TotalCount as AvgDuration)
 
 ***
 
-### Filter by Test file
+## Filter by test file
 
 You may want to view the test duration of all the tests of a pipeline for a particular test file only. To create the report, perform the following additional steps along with what is defined previously in this article.
 
@@ -384,7 +392,7 @@ TotalDuration div TotalCount as AvgDuration)
 
 ***
 
-### Filter by Test owner
+## Filter by test owner
 
 You may want to view the test duration of all the tests of a pipeline for tests owned by a particular test owner only. To create the report, perform the following additional steps along with what is defined previously in this article.
 

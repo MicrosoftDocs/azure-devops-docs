@@ -1,5 +1,5 @@
 ---
-title: Pipeline outcome summary sample Power BI report 
+title: Pipeline test summary trend sample Power BI reports 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a test summary trend Power BI report for a given pipeline in the project  
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops'  
-ms.date: 01/30/2020
+ms.date: 08/14/2020
 ---
 
 # Test summary trend sample report 
@@ -20,18 +20,28 @@ ms.date: 01/30/2020
 
 This article shows you how to create a report that shows day wise trend of number of total failed tests and test pass rate for a pipeline.
 
-[!INCLUDE [temp](includes/preview-note.md)]
-
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/overalltestpassratetrend-reports1.png)
+> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-reports1.png)
 
 
-[!INCLUDE [temp](includes/sample-required-reading.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
+
+
+Specifically, you'll find sample queries for the following reports: 
+
+
+- Test summary trend for build workflow
+- Test summary trend for release workflow
+- Test summary trend for a particular branch
+- Test summary trend for a particular test file
+- Test summary trend for a particular test owner 
 
 
 ## Sample queries
+
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 #### [Power BI query](#tab/powerbi/)
 
@@ -171,17 +181,17 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odatapowerbi-testanalytics/overalltestpassratetrend-expand1.png)
+    > ![Power BI + OData - Choose expand button](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odatapowerbi-testanalytics/overalltestpassratetrend-expand2.png)
+    > ![Power BI + OData - Select all columns](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-expand2.png)
 
 1. The table now contains the expanded entity **CompletedOn.Date**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odatapowerbi-testanalytics/overalltestpassratetrend-expand3.png)
+    > ![Power BI + OData - Expanded entity](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-expand3.png)
     
 
 ### Change column type
@@ -189,7 +199,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Change the type of column **PassRate** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-testanalytics/overalltestpassratetrend-changetype1.png)
+    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-changetype1.png)
 
 
 ### Rename fields and query, then Close & Apply
@@ -199,7 +209,7 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-testanalytics/overalltestpassratetrend-rename1.png)
+	> ![Power BI Rename Columns](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-rename1.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
@@ -220,7 +230,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odatapowerbi-testanalytics/overalltestpassratetrend-field.png)
+> ![Sample - Test Summary - Fields](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-field.png)
 
 For a simple report, do the following steps:
 
@@ -235,14 +245,12 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/overalltestpassratetrend-reports1.png)
+> ![Sample - Test Summary - Report](media/odata-powerbi-test-analytics/overall-test-pass-rate-trend-reports1.png)
 
-
-## Additional queries
 
 You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
 
-### Test Summary for Release workflow, rather than Build workflow
+## Test summary trend for Release workflow
 
 You may want to view the test summary trend of a pipeline for **Release** workflow, instead of Build workflow.
 
@@ -293,7 +301,7 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 ***
 
-### Filter by Branch
+## Filter by branch
 
 You may want to view the test summary trend of a pipeline for a particular branch only. To create the report, perform the following additional steps along with what is defined previously in this article.
 
@@ -350,7 +358,7 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 ***
 
-### Filter by Test file
+## Filter by test file
 
 You may want to view the test summary trend of a pipeline for a particular test file only. To create the report, perform the following additional steps along with what is defined previously in this article.
 
@@ -407,7 +415,7 @@ iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpact
 
 ***
 
-### Filter by Test owner
+## Filter by test owner
 
 You may want to view the test summary trend of a pipeline for tests owned by a particular test owner only. To create the report, perform the following additional steps along with what is defined previously in this article.
 

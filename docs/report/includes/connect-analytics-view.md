@@ -47,7 +47,7 @@ ms.date: 08/10/2020
      > Don't confuse the team name with the project name, a common mistake. 
      > If the URL you use on the daily basis is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber-Git/Device`", then `Fabrikam-Fiber-Git` is the project name, whereas `Device` is the team name.
 
-	Upon successful sign in, Power BI verifies if your user credentials have the right permissions to access the specified project. If any errors arise, refer to the [Q & A](/azure/devops/report/powerbi/data-donnector-connect.md#q-a) section as it covers the most common problems. 
+	Upon successful sign in, Power BI verifies if your user credentials have the right permissions to access the specified project. If any errors arise, refer to the [Q & A](/azure/devops/report/powerbi/data-connector-connect#q-a) section as it covers the most common problems. 
  
 
 ## Select the Analytics view
@@ -80,7 +80,7 @@ ms.date: 08/10/2020
 	> [Analytics Views](/azure/devops/report/powerbi/what-are-analytics-views) do not apply filters that have defined using Power BI on the server. Any filters applied in Power BI will limit the data shown to end users but will not reduce the amount of data retrieved from Analytics. If the filter is intended to reduce the size of the dataset, it should be applied by [customizing the view](/azure/devops/report/powerbi/analytics-views-create).  
 
 2. **Wait for the data to load**. You can observe its progress by looking at the status messages, which appear directly under 
-	the table name. Should you see any errors, refer to the [Q & A](/azure/devops/report/powerbi/data-donnector-connect.md#q-a) section as it covers the most common problems.  
+	the table name. Should you see any errors, refer to the [Q & A](/azure/devops/report/powerbi/data-connector-connect#q-a) section as it covers the most common problems.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Apply query changes loading dialog](/azure/devops/report/powerbi/media/power-bi-data-loading-onprem.png)
