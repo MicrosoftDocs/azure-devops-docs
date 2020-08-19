@@ -16,7 +16,7 @@ Pipelines often rely on multiple repositories that contain source, tools, script
 
 Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
 
-Supported repositories are Azure Repos Git (`git`), GitHub (`github`), and Bitbucket Cloud (`bitbucket`).
+Supported repositories are [Azure Repos Git](azure-repos-git.md) (`git`), [GitHub](github.md) (`github`), [GitHubEnterprise](github-enterprise.md)(`githubenterprise`), and [Bitbucket Cloud](bitbucket.md) (`bitbucket`).
 
 The following combinations of `checkout` steps are supported.
 
@@ -66,12 +66,6 @@ The following combinations of `checkout` steps are supported.
 :::row-end:::
 ---
 
-- If there are no `checkout` steps, the default behavior is as if `checkout: self` were the first step.
-- If there is a single `checkout: none` step, no repositories are synced or checked out.
-- If there is a single `checkout: self` step, the current repository is checked out.
-- If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
-- If there are multiple `checkout` steps, each designated repository is checked out to a folder named after the repository, unless a different `path` is specified in the `checkout` step. To check out `self` as one of the repositories, use `checkout: self` as one of the `checkout` steps.
-
 > [!NOTE]
 > When you check out Azure Repos Git repositories other than the one containing the pipeline, you may be prompted to authorize access to that resource before the pipeline runs for the first time.
 > For more information, see [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository) in the [FAQ](#faq) section.
@@ -81,7 +75,7 @@ The following combinations of `checkout` steps are supported.
 You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
 
 * Bitbucket cloud repositories
-* GitHub repositories
+* GitHub and GitHub Enterprise Server repositories
 * Azure Repos Git repositories in a different organization than your pipeline
 
 You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
@@ -126,7 +120,7 @@ If the `self` repository is named `CurrentRepo`, the `script` command produces t
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
 
 > [!NOTE]
-> Azure Repos Git repositories in a different organization, GitHub repositories, and Bitbucket Cloud repositories require a [service connection](../library/service-endpoints.md) and must be declared as a [repository resource](#repository-declared-using-a-repository-resource).
+> Only Azure Repos Git repositories in the same organization can use the inline syntax. Azure Repos Git repositories in a different organization, and other supported repository types require a [service connection](../library/service-endpoints.md) and must be declared as a [repository resource](#repository-declared-using-a-repository-resource).
 
 ```yaml
 steps:
