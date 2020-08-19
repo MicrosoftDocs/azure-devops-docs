@@ -76,7 +76,7 @@ To use Composer to install dependencies, add the following snippet to your `azur
 To run tests with phpunit, add the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
-- script: phpunit
+- script: ./phpunit
   displayName: 'Run tests with phpunit'
 ```
 

@@ -21,7 +21,7 @@ Work item fields are used to track information. Each work item type (WIT) defini
 Each field is defined by the following three attributes. 
 - **Data type**: Specifies the type of data that can be entered into the field, such as Boolean, Double, Integer, HTML, and String. For descriptions of each data type, see [Query fields, operators, and macros](../queries/query-operators-variables.md#field-values). 
 - **Friendly name**: Specifies the name assigned to the field and that you select for a **Field** in a query clause. This name may differ from that displayed on the work item form. 
-- **Reference name**: Specifies the name that you use when creating [WIQL query](../queries/wiql-syntax.md) or an [ad hoc work item template](../backlogs/work-item-template.md), using [REST API commands](/rest/api/azure/devops/wit/), or defining [XML work item type definitions](/previous-versions/azure/devops/reference/xml/field-definition-element-reference). Once defined, the reference name cannot be changed.  
+- **Reference name**: Specifies the name that you use when creating [WIQL query](../queries/wiql-syntax.md) or an [ad hoc work item template](../backlogs/work-item-template.md), using [REST API commands](/rest/api/azure/devops/wit/), or defining [XML work item type definitions](../../reference/xml/field-definition-element-reference.md). Once defined, the reference name cannot be changed.  
  
 For a description of each field attribute and how you can list them, see [Field attributes](#field-attributes) and [List field attributes](#list-attributes) later in this article. For an overview of WITs and work items, see [Track work with user stories, issues, bugs, features, and epics](about-work-items.md). 
 

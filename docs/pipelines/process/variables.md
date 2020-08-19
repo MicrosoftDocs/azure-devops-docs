@@ -4,7 +4,7 @@ ms.custom: seodec18, contperfq4
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 05/05/2020
+ms.date: 08/19/2020
 
 monikerRange: '>= tfs-2015'
 ---
@@ -275,7 +275,7 @@ az pipelines variable create --name
 - **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
 - **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
 - **secret**: Optional. Indicates whether the variable's value is a secret. Accepted values are *false* and *true*.
-- **value**: Required for non secret variable. Value of the variable. For secret variables, if **value** parameter is not provided, it is picked from environment variable prefixed with `AZURE_DEVOPS_EXT_PIPELINE_VAR_` or user is prompted to enter it via standard input. For example, a variable named **MySecret** can be input using the environment variable `AZURE_DEVOPS_EXT_PIPELINE_VAR_MySecret`.
+- **value**: Required for non-secret variable. Value of the variable. For secret variables, if **value** parameter is not provided, it is picked from environment variable prefixed with `AZURE_DEVOPS_EXT_PIPELINE_VAR_` or user is prompted to enter it via standard input. For example, a variable named **MySecret** can be input using the environment variable `AZURE_DEVOPS_EXT_PIPELINE_VAR_MySecret`.
 
 #### Example
 
@@ -382,8 +382,8 @@ You need to set secret variables in the pipeline settings UI for your pipeline. 
 
 [!INCLUDE [temp](includes/set-secrets.md)]
 
-The following example shows how to use a secret variable called `mySecret` in a PowerShell script.
-Note that unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
+The following example shows how to use a secret variable called `mySecret` in PowerShell and Bash scripts.
+Unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
 
 ```yaml
 variables:
@@ -394,20 +394,26 @@ steps:
 
 - powershell: |
     Write-Host "Using an input-macro works: $(mySecret)"
-    
     Write-Host "Using the env var directly does not work: $env:MYSECRET"
-  
     Write-Host "Using a global secret var mapped in the pipeline does not work either: $env:GLOBAL_MYSECRET"
-
     Write-Host "Using a global non-secret var mapped in the pipeline works: $env:GLOBAL_MY_MAPPED_ENV_VAR" 
-    
     Write-Host "Using the mapped env var for this task works and is recommended: $env:MY_MAPPED_ENV_VAR"
-        
   env:
     MY_MAPPED_ENV_VAR: $(mySecret) # the recommended way to map to an env variable
+
+- bash: |
+    echo "Using an input-macro works: $(mySecret)"
+    echo "Using the env var directly does not work: $MYSECRET"
+    echo "Using a global secret var mapped in the pipeline does not work either: $GLOBAL_MYSECRET"
+    echo "Using a global non-secret var mapped in the pipeline works: $GLOBAL_MY_MAPPED_ENV_VAR" 
+    echo "Using the mapped env var for this task works and is recommended: $MY_MAPPED_ENV_VAR"
+  env:
+    MY_MAPPED_ENV_VAR: $(mySecret) # the recommended way to map to an env variable
+
+
 ```
 
-The output from the preceding script would look like this:
+The output from both tasks in the preceding script would look like this:
 
 ```text
 Using an input-macro works: ***
@@ -644,7 +650,7 @@ steps:
 ### Set a multi-job output variable
 
 If you want to make a variable available to future jobs, you must mark it as
-an output variable by using `isOutput=true`. Then you can map it into future jobs by using the `$[]` syntax and including the step name which set the variable. Multi-job output variables only work for jobs in the same stage. 
+an output variable by using `isOutput=true`. Then you can map it into future jobs by using the `$[]` syntax and including the step name that set the variable. Multi-job output variables only work for jobs in the same stage. 
 When you create a multi-job output variable, you should assign the expression to a variable. In this YAML, `$[ dependencies.A.outputs['setvarStep.myOutputVar'] ]` is assigned to the variable `$(myVarFromJobA)`. 
 
 ```yaml
@@ -664,7 +670,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   variables:
     myVarFromJobA: $[ dependencies.A.outputs['setvarStep.myOutputVar'] ]  # map in the variable
                                                                           # remember, expressions require single quotes
@@ -686,7 +692,7 @@ jobs:
 # Set an output variable from a job with a matrix
 - job: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   strategy:
     maxParallel: 2
     matrix:
@@ -697,16 +703,16 @@ jobs:
         configuration: release
         platform: x64
   steps:
-  - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the $(configuration) value"
+  - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the $(configuration) value"
     name: setvarStep
-  - script: echo $(setvarStep.myOutputVar)
+  - bash: echo $(setvarStep.myOutputVar)
     name: echovar
 
 # Map the variable from the debug job
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   variables:
     myVarFromJobADebug: $[ dependencies.A.outputs['debugJob.setvarStep.myOutputVar'] ]
   steps:
@@ -720,10 +726,10 @@ jobs:
 # Set an output variable from a job with slicing
 - job: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
     parallel: 2 # Two slices
   steps:
-  - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
+  - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
     name: setvarStep
   - script: echo $(setvarStep.myOutputVar)
     name: echovar
@@ -732,7 +738,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   variables:
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
   steps:
@@ -748,26 +754,26 @@ jobs:
 # Set an output variable from a deployment
 - deployment: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   environment: staging
   strategy:
     runOnce:
       deploy:
         steps:
-        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+        - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
           name: setvarStep
-        - script: echo $(setvarStep.myOutputVar)
+        - bash: echo $(setvarStep.myOutputVar)
           name: echovar
 
 # Map the variable from the job for the first slice
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   variables:
     myVarFromDeploymentJob: $[ dependencies.A.outputs['A.setvarStep.myOutputVar'] ]
   steps:
-  - script: "echo $(myVarFromDeploymentJob)"
+  - bash: "echo $(myVarFromDeploymentJob)"
     name: echovar
 ```
 
