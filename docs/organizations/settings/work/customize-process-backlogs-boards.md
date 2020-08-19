@@ -49,23 +49,54 @@ To learn more about what you can customize, see [About process customization and
 
 ## Add a system work item type to a backlog  
 
-If you want to track Issues or Impediments or other inherited work item types within a backlog or board, you can by editing the corresponding backlog. 
+If you want to track Issues or Impediments or other inherited work item types within a backlog or board, you can by editing the corresponding backlog. The following table lists the available work item types you can add to a backlog. 
 
-Each **Edit backlog level** dialog automatically includes inherited and custom work item types which haven't been assigned to other backlog levels.
+:::row:::
+   :::column span="1":::
+      **Process**
+   :::column-end:::
+   :::column span="2":::
+      **Work item types**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Agile
+   :::column-end:::
+   :::column span="2":::
+      Issue
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Scrum
+   :::column-end:::
+   :::column span="2":::
+      Impediment
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      CMMI
+   :::column-end:::
+   :::column span="2":::
+      Change Request, Issue, Review, Risk 
+   :::column-end:::
+:::row-end:::
 
-For example, unassigned CMMI work item types are listed under the **Other work item types** section as shown in the following image
+Each **Edit backlog level** dialog automatically includes inherited and custom work item types which haven't been assigned to other backlog levels. For example, unassigned Agile work item types are listed under the **Other work item types** section as shown in the following image
 
 > [!div class="mx-imgBorder"]  
-> ![Web portal, Process, Backlog levels, Other work item types section](media/backlogs/cmmi-other-work-item-types.png) 
+> ![Web portal, Process, Backlog levels, Other work item types section, Agile process](media/backlogs/other-work-item-types-agile.png) 
 
 These same work item types, along with any custom work item types, appear in the **Edit backlog level** dialog of all backlog levels, until they are assigned to a particular backlog level. 
 
 > [!div class="mx-imgBorder"]  
-> ![Web portal, Process, Backlog levels, Edit backlog level dialog](media/backlogs/edit-backlog-level-cmmi-requirements.png) 
+> ![Web portal, Process, Backlog levels, Edit backlog level dialog](media/backlogs/edit-backlog-level-requirements-agile.png) 
  
 
 > [!NOTE] 
-> You can't remove the default, inherited work item type from any backlog level, but you can disable the corresponding work item type. For example, you can disable the Requirements work item type for the CMMI Requirement backlog as long as you have added another work item type to support that backlog. 
+> You can't remove the default, inherited work item type from any backlog level, but you can disable the corresponding work item type. For example, you can disable the User Story work item type for the Agile Requirement backlog as long as you have added another work item type to support that backlog. 
 
 
 ::: moniker-end 
