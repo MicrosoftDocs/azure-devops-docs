@@ -6,7 +6,7 @@ ms.date: 08/19/2020
 ms.topic: include
 ---
 
-### Same-organization upstreams for Universal Packages
+### Configure upstream sources for Universal Packages
 
 Now you can configure your Azure Artifacts feeds to automatically download Universal Packages from upstream sources on demand.
 
