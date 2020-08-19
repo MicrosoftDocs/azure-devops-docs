@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 1/16/2020
+ms.date: 08/19/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -203,7 +203,7 @@ You can make a variable available to future jobs and specify it in a condition. 
 jobs:
 - job: Foo
   steps:
-  - script: |
+  - bash: |
       echo "This is job Foo."
       echo "##vso[task.setvariable variable=doThing;isOutput=true]Yes" #set variable doThing to Yes
     name: DetermineResult
