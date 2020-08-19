@@ -72,7 +72,7 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
 
 > [!NOTE]
-> When you specify a scheduled trigger, only branches that you explicitly configure for inclusion are scheduled. Inclusions are processed first, and then exclusions are removed from that list. If you specify an exclusion but no inclusions, no branches are built.
+> If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
 
 > [!NOTE]
 > You cannot use pipeline variables when specifying schedules.
