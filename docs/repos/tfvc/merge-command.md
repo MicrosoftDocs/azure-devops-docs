@@ -134,6 +134,12 @@ c:\projects>tf merge /candidate branch2 branch1 /recursive
 The following example discards changeset 137 as a candidate for merging into branch2.
 
 ```
+c:\projects>tf merge /discard /version:C137~C137 branch1 branch2 /recursive
+```
+
+The following example discards all the changesets up to changeset 137 as a candidate for merging into branch2.
+
+```
 c:\projects>tf merge /discard /version:C137 branch1 branch2 /recursive
 ```
 
