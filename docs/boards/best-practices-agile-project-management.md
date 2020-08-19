@@ -240,11 +240,27 @@ Each sprint, perform the following tasks:
 
 ## Manage dependencies  
 
-In Microsoft Project, work that depends on the completion of other work is managed using Predecessor/Su
+In Microsoft Project, you manage work that depends on the completion of other work by linking them. To manage dependencies in Azure Boards, you can add similar linking by adding Predecessor/Successor link types. You add these links from the Add link dialog for a work item. 
 
-- Dependency Management: Link work items to work items using Predecessor/Successor link types  
-- no critical path 
+> [!div class="mx-imgBorder"]  
+> ![Add link dialog, successor link type. ](media/best-practices/add-link-successor.png)  
+#### Best practice tips: 
 
+- Use Predecessor/Successor link types to track dependencies of work owned by other teams or within other projects
+- Create queries to track, add, and triage dependencies 
+- Use Dependency Tracker to view work that you have dependencies on from other teams 
+- Use the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension to visualize dependencies 
+
+
+#### To learn how:
+
+- [Link user stories, issues, bugs, and other work items](backlogs/add-link.md) 
+- [Triage work items](queries/triage-work-items.md) 
+- [Plan and track dependencies using the Dependency Tracker](extensions/dependency-tracker.md)
+ 
+
+> [!NOTE] Azure Boards doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks. For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
+ 
 
 ## Review progress and feature deliverables 
 
