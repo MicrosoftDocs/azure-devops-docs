@@ -10,18 +10,60 @@ monikerRange: "> azure-devops-2019"
 
 [!INCLUDE [version-team-services](../includes/version-server-2020-rtm.md)]
 
-Pipelines often rely on multiple repositories. You can have different repositories with source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
+Pipelines often rely on multiple repositories that contain source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
 
 ## Specify multiple repositories
 
 Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
 
-- [Repository declared using a repository resource](#repository-declared-using-a-repository-resource)
-- [Repository declared using inline syntax](#repository-declared-using-inline-syntax)
-
 Supported repositories are Azure Repos Git (`git`), GitHub (`github`), and Bitbucket Cloud (`bitbucket`).
 
 The following combinations of `checkout` steps are supported.
+
+:::row:::
+    :::column:::
+        No `checkout` steps
+    :::column-end:::
+    :::column:::
+        The default behavior is as if `checkout: self` were the first step, and the current repository is checked out.
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        A single `checkout: none` step
+    :::column-end:::
+    :::column:::
+        No repositories are synced or checked out.
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        A single `checkout: self` step
+    :::column-end:::
+    :::column:::
+        The current repository is checked out.
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        A single `checkout` step that isn't `self` or `none`
+    :::column-end:::
+    :::column:::
+        The designated repository is checked out instead of `self`.
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        Multiple `checkout` steps
+    :::column-end:::
+    :::column:::
+        Each designated repository is checked out to a folder named after the repository, unless a different `path` is specified in the `checkout` step. To check out `self` as one of the repositories, use `checkout: self` as one of the `checkout` steps.
+    :::column-end:::
+:::row-end:::
 
 - If there are no `checkout` steps, the default behavior is as if `checkout: self` were the first step.
 - If there is a single `checkout: none` step, no repositories are synced or checked out.
@@ -33,7 +75,7 @@ The following combinations of `checkout` steps are supported.
 > When you check out Azure Repos Git repositories other than the one containing the pipeline, you may be prompted to authorize access to that resource before the pipeline runs for the first time.
 > For more information, see [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository) in the [FAQ](#faq) section.
 
-### Repository declared using a repository resource
+## Repository resource definition
 
 You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
 
@@ -78,7 +120,7 @@ steps:
 
 If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitbucketRepo  MyGitHubRepo`. In this example, the names of the repositories are used for the folders, because no `path` is specified in the checkout step. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
 
-### Repository declared using inline syntax
+## Inline syntax checkout
 
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
 
