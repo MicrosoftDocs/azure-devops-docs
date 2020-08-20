@@ -60,8 +60,10 @@ name for the custom task to avoid this risk:
 ```yaml
 steps:
 - task: myPublisherId.myExtensionId.myContributionId.myTaskName@1 #format example
-- task: ms-openapi.OpenApiDocumentTools.openApiDocumentPublisher-release-task.publishOpenApiDocumentsTask@1 #working example
+- task: qetza.replacetokens.replacetokens-task.replacetokens@3 #working example
 ```
+
+To find `myPublisherId` and `myExtensionId`, select **Get** on a task in the marketplace. The values after the `itemName` in your URL string are `myPublisherId` and `myExtensionId`. You can also find the fully-qualified name by adding the task to a [Release pipeline](../release/releases.md) and selecting **View YAML** when editing the task. 
 
 ::: moniker-end
 
