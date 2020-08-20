@@ -20,7 +20,6 @@ As a project manager new to Azure Boards, you have a choice of Agile planning to
 
 In this article, we make the following suggestions: 
 
-
 > [!div class="checklist"]  
 > - Configure your teams to support rollup of development user stories to project management features
 > - Define and work in a sprint cadence  
@@ -33,36 +32,12 @@ In this article, we make the following suggestions:
 > - Review progress and deliverables using the Features backlog, rollup, and delivery plans 
 > - Engage with process improvement during sprint planning and retrospectives 
 
-
-
 > [!NOTE]
 > If your team is committed to practicing Kamban or Scrum methods, see [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](/sprints/scrum-overview.md). 
 
-
-Goals to consider: 
-- Autonomy
-- Alignment 
-- Continuous flow of deliverables 
-- Predictable  
-
-General guidance: 
-Choose how you'll share specs, sprint goals, project goals, and guidance to new team members 
-Basic guidance:
-- [Track work with user stories, issues, bugs, features, and epics](backlogs/backlogs-boards-plans.md) 
-- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs/backlogs-boards-plans.md) 
-
-- 
-
-
-#### To learn more: 
-
-- [Agile culture](plans/agile-culture.md)  
-- [Scaling Agile - Practices that scale](plans/practices-that-scale.md)  
- 
-
 ## Configure your teams   
 
-Azure Boards provides teams the tools to plan and track work. Each project defines a default team, which you can start using immediately. However, if you have a number of development or feature teams, consider defining a team in Azure DevOps for each feature team.   
+Azure Boards provides teams the tools to plan and track work. Each project defines a default team, which you can start using immediately. However, if you have a number of development or feature teams, we recommend that you define a team in Azure DevOps for each feature team.   
 
 #### Best practice tips: 
 
@@ -80,22 +55,21 @@ Azure Boards provides teams the tools to plan and track work. Each project defin
 
 ## Configure your sprints 
 
-Sprints&mdash;specified by Iteration Paths&mdash;are defined for a project and then selected by teams. A sprint cadence can vary between one week to four weeks or longer. You assign work to sprints that teams will deliver at the end of the sprint.  
+Sprints&mdash;specified by Iteration Paths&mdash;are defined for a project and then selected by teams. A sprint cadence can vary between one week to four weeks or longer. You assign work to sprints that teams will deliver at the end of the sprint. Several of the Azure Boards team tools rely on sprint assignments to the team.   
 
 #### Best practice tips: 
 
 - Define a sprint cadence that all teams within your product group will use  
 - Define at least six to twelve iterations that will support planning for six to twelve months 
 - Determine how teams will use iterations to manage backlog items
-	- Unassigned sprint work is assigned to the default backlog
-	- Unassigned sprint work is assigned to a Future backlog 
+	- Unassigned sprint work is assigned to the default backlog, or
+	- Unassigned sprint work is assigned to a Future backlog sprint.
 
 
 
 #### To learn how: 
 
 - [About Area and Iteration Paths, Define and assign Iteration Paths](../organizations/settings/about-areas-iterations.md#iteration-path-guidance)
-- [How many iterations should a team define?](../organizations/settings/about-areas-iterations.md#how-many-iterations-should-a-team-define)
 - [Define Iteration Paths and configure team iterations](../organizations/settings/set-iteration-paths-sprints.md) 
  
  
@@ -103,6 +77,9 @@ Sprints&mdash;specified by Iteration Paths&mdash;are defined for a project and t
 ## Choose the work item types you'll use  
 
 Determine which work item types your team will use to capture customer requirements and development work. Based on your project and the process used to create it, you have a choice from those shown in the following images. Also, each team can determine how they want to track bugs. 
+
+> [!NOTE]
+> The guidance provided in this article are based on the Agile process. 
 
 [!INCLUDE [temp](includes/work-item-types.md)]
 
@@ -191,7 +168,7 @@ With work item tags, team members can assign ad-hoc tags to work items. You can 
 
 - [Add work item tags to categorize and filter lists and boards](queries/add-tags-to-work-items.md)
 - [Create a Wiki for your project](../project/wiki/wiki-create-repo.md) 
-- 
+
 
 ## Forecast and milestone planning  
 
@@ -217,14 +194,14 @@ First you want to make sure you are completing the requirements needed to ship f
 
 With estimates assigned to each requirement, and plugging in 12 as a velocity, the Forecast tool shows which requirements and features the team can complete within the next six sprints. Using the Planning tool, you can quickly assign requirements to the forecasted sprints.  
 
-:::image type="content" source="media/best-practices/forecast-product-backlog-ordered-parent.png" alt-text="Forecast of Requirements backlog, ordered by feature parent":::
+[!INCLUDE [temp](../includes/lightbox-image.md)] 
 
+> [!div class="mx-imgBorder"]  
+> [![Forecast of Requirements backlog, ordered by feature parent](media/best-practices/forecast-product-backlog-ordered-parent.png)](media/best-practices/forecast-product-backlog-ordered-parent.png#lightbox)
+ 
 #### Update your Features board 
 
-With a forecast of when a feature will ship, you can update each feature's iteration path. 
-
-> [!TIP]    
-> Quickly assign values to a feature by adding those fields to the card on the Kanban board. TO learn how, see [Customize cards](boards/customize-cards.md). 
+With a forecast of when a feature will ship, you can update each feature's iteration path. Quickly assign values to a feature by adding those fields to the card on the Kanban board.  
 
 :::image type="content" source="media/best-practices/features-board-iteration-path-updates.png" alt-text="Features board, updated iteration paths":::
 
@@ -244,11 +221,26 @@ However, you can use one or more of the following options to mark a work item as
 
 In Microsoft Project, you manage tasks that depend on the completion of other tasks by linking them. To manage dependencies in Azure Boards, you can add similar linking by adding Predecessor/Successor link types to work items. You add these links from the Add link dialog for a work item. 
 
+
+### Add link dialog
+
+Azure Boards supports a number of link types to track related work. Choose the Predecessor/Successor link types to track work with dependencies. 
+
 > [!div class="mx-imgBorder"]  
 > ![Add link dialog, successor link type](media/best-practices/add-link-successor.png)  
 
+### Visualize work item relationships 
+
+With the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension, you can visualize the link relationships among several work items
+
+[!INCLUDE [temp](../includes/lightbox-image.md)] 
+
 > [!div class="mx-imgBorder"]  
-> ![Visualize work item relationships](media/best-practices/visualize-successor-links-cross-project-wide.png)  
+> [![Visualize work item relationships](media/best-practices/visualize-successor-links-cross-project-wide.png)](media/best-practices/visualize-successor-links-cross-project-wide.png#lightbox)
+
+### Minimum Viable Product vsersus Critical Path Management  
+
+Azure Boards doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks. For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
 
 #### Best practice tips: 
 
@@ -267,11 +259,7 @@ In Microsoft Project, you manage tasks that depend on the completion of other ta
 - [Plan and track dependencies using the Dependency Tracker](extensions/dependency-tracker.md)
  
 
-> [!NOTE] 
-> Azure Boards doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks. For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
- 
-
-## Work in sprints (development team)   
+## Work in sprints   
 
 Sprints allow the development team to focus on completing a pre-selected set of work. Work assign to a sprint appears on the team's sprint backlog. Sprint backlogs are defined only for product backlogs, not for portfolio backlogs.  
 
@@ -302,7 +290,7 @@ Each sprint, perform the following tasks:
 
 ## Review progress and feature deliverables 
 
-The three main tools you'll want to review progress and deliverables are: 
+The three main tools you'll want to use to review progress and deliverables are: 
 
 - Features Kanban board 
 - Features backlog with rollup columns
@@ -316,13 +304,6 @@ Your Features board is another place to review progress and ensure the continuou
 
 > [!div class="mx-imgBorder"]  
 > [![Features board, customized](media/best-practices/features-board-customized.png)](media/best-practices/features-board-customized.png#lightbox)
-
-
-
-
-
-
-
 
 
 
@@ -412,7 +393,7 @@ Teams can define one or more dashboards to share information and monitor real-ti
 ## Related articles
 
 - [Configure and customize Azure Boards](configure-customize.md) 
-- [Visibility across teams](plans/visibility-across-teams.md) 
+- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs/backlogs-boards-plans.md) 
 - [Work with multi-team ownership of backlog items](backlogs/backlogs-overview.md#multi-team)
 
 
