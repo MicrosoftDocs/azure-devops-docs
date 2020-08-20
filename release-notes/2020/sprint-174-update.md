@@ -7,9 +7,9 @@ ms.date: 08/19/2020
 description:
 ---
 
-# Enhanced YAML preview API
+# Enhanced YAML preview API & configure upstream source for universal Packages
 
-In this sprint, we're rolling out a new API endpoint that allows you to retrieve the finalized YAML body.
+In this sprint, we're rolling out a new API endpoint that allows you to retrieve the finalized YAML body. We're also excited to announce that we're adding the ability to configure your upstream source for universal packages with this release.
 
 Check out the [Features](#features) list below for details.
 
