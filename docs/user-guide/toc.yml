@@ -44,7 +44,7 @@
     href: /azure/devops/organizations/security/restrict-access?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
 - name: Concepts
   items:
-  - name: Plan your org structure
+  - name: Plan your organizational structure
     href: /azure/devops/user-guide/plan-your-azure-devops-org-structure?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - name: Source control 
     href: source-control.md

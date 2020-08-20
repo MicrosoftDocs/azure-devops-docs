@@ -8,7 +8,7 @@ ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 10/14/2019
+ms.date: 08/18/2020
 ---
 
 # Manage issues or impediments 
@@ -125,7 +125,7 @@ By default, issues and impediments don't appear on your backlog. Instead, you tr
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). You can only have them appear on your backlog if your project is customized using the On-premises XML process model. To learn more, see [Customize the On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model).
 
@@ -138,6 +138,17 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 ::: moniker-end
 
 <a id="add-to-backlog" /> 
+
+
+::: moniker range="azure-devops"
+
+<a id="add-to-backlog" /> 
+
+## Add issues or impediments to your product backlog  
+
+If you want to track issues or impediments along with your requirements or a portfolio backlog, you can by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
+
+::: moniker-end
 
 
 ## Related articles 
