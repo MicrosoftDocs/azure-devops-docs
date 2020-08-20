@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/24/2020
+ms.date: 08/18/2020
 ---
 
 
@@ -383,6 +383,14 @@ Talk with your team to determine how they want to manage bugs. Then [change your
 
 
 <a id="add-oob-to-backlog" /> 
+
+::: moniker range="azure-devops"
+
+## Add system work item types to a backlog   
+
+If you want to track issues or impediments along with your requirements or in a portfolio backlog, you can by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../organizations/settings/work/customize-process-backlogs-boards.md#add-oob-to-backlog).
+
+::: moniker-end
 
 
 <a id="hierarchy" />
