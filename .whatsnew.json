@@ -1,0 +1,114 @@
+{
+    "$schema": "https://whatsnewapi.azurewebsites.net/schema",
+    "docSetProductName": "Azure DevOps",
+    "rootDirectory": "docs/",
+    "docLinkSettings": {
+      "linkFormat": "relative",
+      "relativeLinkPrefix": "/azure/devops/"
+    },
+    "inclusionCriteria": {
+      "additionalMicrosoftOrgs": [
+        "GitHub"
+      ],
+      "minAdditionsToFile": 62
+    },
+    "areas": [
+      {
+        "name": "artifacts",
+        "heading": "Artifacts"
+      },
+      {
+        "name": "boards",
+        "heading": "Boards"
+      },
+      {
+        "name": "cli",
+        "heading": "CLI"
+      },
+      {
+        "name": "demo-gen",
+        "heading": "Demo-gen"
+      },
+      {
+        "name": "deploy-azure",
+        "heading": "Deploy-azure"
+      },
+      {
+        "name": "dev-resources",
+        "heading": "Dev-resources"
+      },
+      {
+        "name": "extend",
+        "heading": "Extend"
+      },
+      {
+        "name": "get-started",
+        "heading": "Get started"
+      },
+      {
+        "name": "integrate",
+        "heading": "Integrate"
+      },
+      {
+        "name": "java",
+        "heading": "Java"
+      },
+      {
+        "name": "marketplace",
+        "heading": "Marketplace"
+      },
+      {
+        "name": "marketplace-extensibility",
+        "heading": "Marketplace extensibility"
+      },
+      {
+        "name": "migrate",
+        "heading": "Migrate"
+      },
+      {
+        "name": "notifications",
+        "heading": "Notifications"
+      },
+      {
+        "name": "organizations",
+        "heading": "Organizations"
+      },
+      {
+        "name": "pipelines",
+        "heading": "Pipelines"
+      },
+      {
+        "name": "project",
+        "heading": "Project"
+      },
+      {
+        "name": "reference",
+        "heading": "Reference"
+      },
+      {
+        "name": "report",
+        "heading": "Report"
+      },
+      {
+        "name": "repos",
+        "heading": "Repos"
+      },
+      {
+        "name": "security-access-billing",
+        "heading": "Security-access-billing"
+      },
+      {
+        "name": "service-hooks",
+        "heading": "Service-hooks"
+      },
+      {
+        "name": "test",
+        "heading": "Test"
+      },
+      {
+        "name": "user-guide",
+        "heading": "User guide"
+      }
+    ]
+  }
+  
