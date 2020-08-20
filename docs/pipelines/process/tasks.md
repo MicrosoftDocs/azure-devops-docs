@@ -54,12 +54,13 @@ to add tasks to Azure Pipelines or TFS.
 ::: moniker range=">= azure-devops-2019"
 
 In YAML pipelines, you refer to tasks by name. If a name matches both an in-box task
-and a custom task, the in-box task will take precedence. You can use a fully-qualified
+and a custom task, the in-box task will take precedence. You can use the task GUID or a fully-qualified
 name for the custom task to avoid this risk:
 
 ```yaml
 steps:
-- task: myPublisherId.myExtensionId.myContributionId.myTaskName@1
+- task: myPublisherId.myExtensionId.myContributionId.myTaskName@1 #format example
+- task: ms-openapi.OpenApiDocumentTools.openApiDocumentPublisher-release-task.publishOpenApiDocumentsTask@1 #working example
 ```
 
 ::: moniker-end
