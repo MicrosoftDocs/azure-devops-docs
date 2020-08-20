@@ -73,7 +73,7 @@ Avoid creating an area structure that is too complex. You can create areas to pa
 
 
 
-<a id="area-path-guidance" />
+<a id="iteration-path-guidance" />
 
 ## Define and assign Iteration Paths
 

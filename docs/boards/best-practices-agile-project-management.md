@@ -16,7 +16,10 @@ ms.date: 08/07/2020
 
 [!INCLUDE [temp](includes/version-all.md)]
 
-As a project manager new to Azure Boards, you have a choice of Agile planning tools. 
+As a project manager new to Azure Boards, you have a choice of Agile planning tools. This article provides an end-to-end guide of the tools Azure Boards provides for project management. It is "light-weight"  in the sense that it takes a minimal tracking approach.  
+
+In this article, we make the following suggestions: 
+
 
 How choose the tools and methods that will support your team? 
 How choose the most light-weight tracking methods? 
@@ -30,10 +33,10 @@ Light-weight - minimal tracking, status updates, minimal estimation
 Use the guidance provided in this article to get started. Light-weight 
 
 > [!div class="checklist"]  
-> - Configure your teams
-> - Configure your sprints
-> - Choose the work item types you'll use
-> - Review, prioritize, estimate, and update your product plan
+> - Configure your teams to support rollup of development user stories to project management feature deliverables 
+> - Define and work in a sprint cadence  
+> - Identify the work item types your teams will use to track work 
+> - Develop your product plan
 > - Use tags to support queries and filtering
 > - Work in sprints
 > - Forecast and milestone planning
@@ -102,7 +105,7 @@ Sprints&mdash;specified by Iteration Paths&mdash;are defined for a project and t
 
 #### To learn how: 
 
-- [End-to-end sequence to define and assign Iteration Paths](../organizations/settings/about-areas-iterations.md#guidance)
+- [About Area and Iteration Paths, Define and assign Iteration Paths](../organizations/settings/about-areas-iterations.md#iteration-path-guidance)
 - [How many iterations should a team define?](../organizations/settings/about-areas-iterations.md#how-many-iterations-should-a-team-define)
 - [Define Iteration Paths and configure team iterations](../organizations/settings/set-iteration-paths-sprints.md) 
  
@@ -138,14 +141,27 @@ If you have larger initiatives or scenarios that require shipping several Featur
 - [Create your backlog](backlogs/create-your-backlog.md)  
 - [Organize your backlog (map or reparent)](backlogs/organize-backlog.md)  
 
+
+## Create your product plan   
+
+Create your product plan using the Features Backlog. The development team then creates their product plan using the Product Backlog. Periodically you'll want to review and groom your product plans.  
+
+
+### Features backlog 
+Project managers initiate the product plan by adding features to the Features backlog. Each feature should represent a shippable deliverable that addresses a customer need. 
+
+> [!div class="mx-imgBorder"]  
+> ![Features backlog](media/best-practices/features-backlog.png)  
+
+### Product backlog 
+Development teams add user stories to the product backlog under each feature that represents the work they'll do to implement the feature. User stories should be sized so that they can be completed within a sprint. 
+
+> [!div class="mx-imgBorder"]  
+> ![Product backlog](media/best-practices/product-backlog.png)  
  
+### Groom each backlog  
 
-## Review and update your product plan   
-
-Periodically you'll want to review and groom your product plan. The main tools you'll use are your team's Product Backlog or Feature Backlog and Board. 
-
-Use your backlog to perform the following tasks: 
-
+Periodically review each backlog to perform these tasks: 
 - Define work to be performed
 - Open work items and add details 
 - Assign work to team members or to sprints
@@ -161,8 +177,8 @@ Use your backlog to perform the following tasks:
 - Periodically refine your backlog  
 - Make sure features and requirements are sized appropriately
 - Define the acceptance criteria and the definition of done for features and work 
-- Map unmapped work to the Features and Epics 
-- Forecast your backlog 
+- Map unmapped work to Features 
+- Forecast your backlog  
 
 #### To learn how: 
 
@@ -174,7 +190,7 @@ Use your backlog to perform the following tasks:
 
 ## Use tags to support queries and filtering 
  
-With work item tags team members can assign ad-hoc tags to work items. You can use these tags to filter backlogs and boards as well as query on work items.  For tags to be useful to the team, provide some general guidance on how your team should use tags. Consider documenting this guidance in a central place, such as the [project wiki](../project/wiki/about-readme-wiki.md). 
+With work item tags, team members can assign ad-hoc tags to work items. You can use these tags to filter backlogs and boards as well as query on work items.  For tags to be useful to the team, provide some general guidance on how your team should use tags. Consider documenting this guidance in a central place, such as the [project wiki](../project/wiki/about-readme-wiki.md). 
  
 #### Best practice tips: 
 
@@ -185,6 +201,8 @@ With work item tags team members can assign ad-hoc tags to work items. You can u
 #### To learn how: 
 
 - [Add work item tags to categorize and filter lists and boards](queries/add-tags-to-work-items.md)
+- [Create a Wiki for your project](../project/wiki/wiki-create-repo.md) 
+- 
 
 ## Forecast and milestone planning  
 
@@ -238,8 +256,10 @@ However, you can use one or more of the following options to mark a work item as
 In Microsoft Project, you manage tasks that depend on the completion of other tasks by linking them. To manage dependencies in Azure Boards, you can add similar linking by adding Predecessor/Successor link types to work items. You add these links from the Add link dialog for a work item. 
 
 > [!div class="mx-imgBorder"]  
-> ![Add link dialog, successor link type. ](media/best-practices/add-link-successor.png)  
+> ![Add link dialog, successor link type](media/best-practices/add-link-successor.png)  
 
+> [!div class="mx-imgBorder"]  
+> ![Visualize work item relationships](media/best-practices/visualize-successor-links-cross-project-wide.png)  
 
 #### Best practice tips: 
 
@@ -299,7 +319,7 @@ The three main tools you'll want to review progress and deliverables are:
 - Features backlog with rollup columns
 - Delivery plans
 
-### Features Kanbanboard 
+### Features Kanban board 
  
 Your Features board is another place to review progress and ensure the continuous flow of deliverables. The following image illustrates a customized Features board. In progress columns have been added such as *Need more info*, *Spec Complete*, *In Progress*, and *Customer Rollout*. These provide a more natural set of states as Features get proposed, researched, designed, developed, and then deployed to production. 
 
@@ -319,7 +339,7 @@ One quick and visual way to monitor progress is from the Features backlog. By ad
 To review features delivered across several teams, configure a delivery plan. Delivery plans provide an interactive board to review a calendar schedule of stories or features several teams plan to deliver.  
 
 > [!div class="mx-imgBorder"]  
-> ![Delivery plan](boards/plans/media/plans_view2.png) 
+> ![Delivery plan](plans/media/plans_view2.png) 
   
 ### Best practice tips  
 
@@ -342,19 +362,20 @@ To review features delivered across several teams, configure a delivery plan. De
 
 ## Process improvement  
 
-To improve your processes, you need to have shared goals and a shared plan. At the heart of Agile methods is continuous improvement. This is often accomplished through regular practices, such as: 
+At the heart of Agile methods is continuous improvement. To improve your processes, you need to have shared goals and a shared plan. To initiate process improvement activities, consider adding them through regular practices, such as: 
 
 - Sprint planning 
 - Setting sprint goals 
 - Conducting regular retrospectives 
 
-Consider the following areas when setting goals: 
-- What are you learning about your customers? What do you need to know? 
-- What data is being measured? Is it actionable? What data needs to be measured?
-- How is the flow of deliverables? Is it as expected? Where can improvements be made? 
-- Is your team empowered to do there best? What tools or information would help them improve?
-- How well is information being shared? How well are teams collaborating? 
-- How well is your team managing technical debt and closing bugs? 
+Consider the following questions when setting goals: 
+
+- *What are you learning about your customers? What do you need to know?* 
+- *What data is being measured? Is it actionable? What data needs to be measured?*
+- *How is the flow of deliverables? Is it as expected? Where can improvements be made?* 
+- *Is your team empowered to do there best? What tools or information would help them improve?*
+- *How well is information being shared? How well are teams collaborating?* 
+- *How well is your team managing technical debt and closing bugs?*
 
 Some of the Agile tools you can use to support process improvement are team velocity, team dashboards, and the [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) Marketplace extension. 
   
@@ -366,24 +387,29 @@ From the team velocity chart, you can gain an understanding as to how well the t
 > ![Example team velocity chart](../report/dashboards/media/velocity/analytics-velocity-azure-devops.png) 
 
 
-### Retrospective tracking board 
+### Team dashboards  
 
+Teams can define one or more dashboards to share information and monitor real-time data on work progress. 
+ 
+> [!div class="mx-imgBorder"]  
+> ![Example team dashboard](../report/dashboards/media/dashboard-view-with-widgets.png)  
 
-#### Best practice tips  
-- Identify process improvement goals that your team can agrees to, write them down and review them periodically
-- Use team dashboards  
-- At sprint planning meetings, have your team identify at least one sprint goal related to process improvement 
-- Conduct regular retrospectives to capture what went well, what didn't go well, and actions to improve 
-- Consider maintaining an improvement tracking board, such as that available with the [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) Marketplace extension 
+#### Best practice tips 
 
-- 
+- Identify process improvement goals that your team can agree to, write them down and review them periodically  
+- Use team dashboards to share information and work tracking charts to review periodically  
+- At sprint planning meetings, have your team identify at least one sprint goal related to process improvement  
+- Conduct regular retrospectives to capture what went well, what didn't go well, and actions to improve  
+- Maintain an improvement tracking board, such as that available with the [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) Marketplace extension. 
+ 
 
 #### To learn how: 
 
-
-
+- [View or configure team velocity](../report/dashboards/team-velocity.md)
+- [Add, rename, and delete dashboards](../report/dashboards/dashboards.md)
 - [Scaling Agile - Practices that scale](plans/practices-that-scale.md) 
-- 
+- [Retrospectives Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) 
+
 ## Related articles
 
 - [Configure and customize Azure Boards](configure-customize.md) 
@@ -392,7 +418,7 @@ From the team velocity chart, you can gain an understanding as to how well the t
 
 
 ### Industry articles  
-- [](https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset) 
+- [Agile and a continuous improvement mindset](https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset) 
 - [What is KAIZEN™](https://www.kaizen.com/what-is-kaizen.html)
 
 <!---
