@@ -22,13 +22,14 @@ How choose the tools and methods that will support your team?
 How choose the most light-weight tracking methods? 
 Main thing is that your development team will use a product backlog; project management will use a Kanban board to track Features. 
 
+Introduce you to key features to support traditional project management activities 
 Best practices tips here "light-weight" 
 Light-weight - minimal tracking, status updates, minimal estimation 
 
 
 Use the guidance provided in this article to get started. Light-weight 
 
-> [!div class="checklist"]   
+> [!div class="checklist"]  
 > - Configure your teams
 > - Configure your sprints
 > - Choose the work item types you'll use
@@ -50,6 +51,8 @@ You can start from a bottom-up or top-down approach, choose one for your initial
 Goals to consider: 
 - Autonomy
 - Alignment 
+- Continuous flow of deliverables 
+- Predictable  
 
 General guidance: 
 Choose how you'll share specs, sprint goals, project goals, and guidance to new team members 
@@ -99,7 +102,7 @@ Sprints&mdash;specified by Iteration Paths&mdash;are defined for a project and t
 
 #### To learn how: 
 
-- [End-to-end sequence to define and assign Iteration Paths](../organizations/settings/about-areas-iterations.md#end-to-end-sequence-to-define-and-assign-iteration-paths)
+- [End-to-end sequence to define and assign Iteration Paths](../organizations/settings/about-areas-iterations.md#guidance)
 - [How many iterations should a team define?](../organizations/settings/about-areas-iterations.md#how-many-iterations-should-a-team-define)
 - [Define Iteration Paths and configure team iterations](../organizations/settings/set-iteration-paths-sprints.md) 
  
@@ -282,61 +285,121 @@ Each sprint, perform the following tasks:
 - [Configure and monitor sprint burndown](../report/dashboards/configure-sprint-burndown.md) 
 - [Define features and epics](backlogs/define-features-epics.md)  
 
+#### Sprint burndown chart 
+
+> [!div class="mx-imgBorder"]  
+> ![Sprint burndown chart ](media/best-practices/sprint-burndown-chart.png) 
+
 
 ## Review progress and feature deliverables 
+
+The three main tools you'll want to review progress and deliverables are: 
+
+- Features Kanban board 
+- Features backlog with rollup columns
+- Delivery plans
+
+### Features Kanbanboard 
+ 
+Your Features board is another place to review progress and ensure the continuous flow of deliverables. The following image illustrates a customized Features board. In progress columns have been added such as *Need more info*, *Spec Complete*, *In Progress*, and *Customer Rollout*. These provide a more natural set of states as Features get proposed, researched, designed, developed, and then deployed to production. 
+
+> [!div class="mx-imgBorder"]  
+> ![Features board, customized](media/best-practices/features-board-customized.png) 
+
+
+### Rollup 
 
 One quick and visual way to monitor progress is from the Features backlog. By adding the rollup progress bar column, you can see what percentage of work items are completed for each feature, as shown in the following image.  
 
 > [!div class="mx-imgBorder"]  
 > ![Features backlog, progress bars](media/best-practices/feature-backlog-progress.png)  
+ 
+### Delivery plans and multiple team deliverables  
 
-
-To gain insight into progress is being made
+To review features delivered across several teams, configure a delivery plan. Delivery plans provide an interactive board to review a calendar schedule of stories or features several teams plan to deliver.  
 
 > [!div class="mx-imgBorder"]  
-> ![Features board, customized](media/best-practices/features-board-customized.png ) 
+> ![Delivery plan](boards/plans/media/plans_view2.png) 
+  
+### Best practice tips  
 
-Kanban Board: Use to talk to status, blocks/issues/risks/changes, update status; Filter to Current sprint, Assigned To 
+- Customize your Features Kanban board to support your team's processes 
+- Add fields to cards so that you can update their values quickly and easily
+- Update the Iteration Path (Sprint) of Features as you gain clarity as to when they will ship 
+- Review the Features board to talk through status, blocks/issues/risks/changes,and update status
+- Use the filter feature to focus on tagged items, assigned by features, a specific sprint and more  
+- Add rollup columns to your Feature backlog to monitor overall progress based on work item count completion 
+- Use delivery plans to review features being delivered by several teams and discuss cross-team dependencies 
 
-Taskboard: 
+### To learn how: 
 
-#### Best practice tips  
-
-
-#### To learn how: 
-
-
-
-
-### Review team deliverables and cross-team dependencies
-
-1. Use Delivery Plans to review a calendar view of what's being delivered across teams 
- 
-#### Best practice tips  
-#### To learn how: 
+- [Display rollup progress or totals](backlogs/display-rollup.md)
+- [Add columns to your Kanban board](boards/add-columns.md) 
+- [Customize cards](boards/customize-cards.md)
+- [Filter your Kanban board](boards/filter-kanban-board.md)
+- [Review team Delivery Plans](plans/review-team-plans.md)
 
 
 ## Process improvement  
 
-To improve your processes, you need to have a plan and goals. 
-Two charts you can use to support process improvement:  
+To improve your processes, you need to have shared goals and a shared plan. At the heart of Agile methods is continuous improvement. This is often accomplished through regular practices, such as: 
 
-- Team Velocity: How well is the team able to plan and execute a sprint  Use to improve planning/estimating and forecasting 
-- Cycle time: 
+- Sprint planning 
+- Setting sprint goals 
+- Conducting regular retrospectives 
 
-*What are useful process improvement goals for a dev team? feature team?* 
-Make your team accountable. ...
-Measure results. ...
+Consider the following areas when setting goals: 
+- What are you learning about your customers? What do you need to know? 
+- What data is being measured? Is it actionable? What data needs to be measured?
+- How is the flow of deliverables? Is it as expected? Where can improvements be made? 
+- Is your team empowered to do there best? What tools or information would help them improve?
+- How well is information being shared? How well are teams collaborating? 
+- How well is your team managing technical debt and closing bugs? 
 
-https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset
+Some of the Agile tools you can use to support process improvement are team velocity, team dashboards, and the [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) Marketplace extension. 
+  
+### Team velocity 
+
+From the team velocity chart, you can gain an understanding as to how well the team is planning and executing a sprint. As shown in the following example, the velocity chart shows the planned, completed, completed late, and incomplete count of work items for several sprints. Teams can review this chart to help determine how well they are estimating and executing and how they might improve. 
+
+> [!div class="mx-imgBorder"]  
+> ![Example team velocity chart](../report/dashboards/media/velocity/analytics-velocity-azure-devops.png) 
+
+
+### Retrospective tracking board 
 
 
 #### Best practice tips  
+- Identify process improvement goals that your team can agrees to, write them down and review them periodically
+- Use team dashboards  
+- At sprint planning meetings, have your team identify at least one sprint goal related to process improvement 
+- Conduct regular retrospectives to capture what went well, what didn't go well, and actions to improve 
+- Consider maintaining an improvement tracking board, such as that available with the [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) Marketplace extension 
+
+- 
+
 #### To learn how: 
 
 
+
+- [Scaling Agile - Practices that scale](plans/practices-that-scale.md) 
+- 
 ## Related articles
 
 - [Configure and customize Azure Boards](configure-customize.md) 
 - [Visibility across teams](plans/visibility-across-teams.md) 
 - [Work with multi-team ownership of backlog items](backlogs/backlogs-overview.md#multi-team)
+
+
+### Industry articles  
+- [](https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset) 
+- [What is KAIZEN™](https://www.kaizen.com/what-is-kaizen.html)
+
+<!---
+
+ 
+*What are useful process improvement goals for a dev team? feature team?* 
+Make your team accountable. ...
+Measure results. ...
+
+--> 
