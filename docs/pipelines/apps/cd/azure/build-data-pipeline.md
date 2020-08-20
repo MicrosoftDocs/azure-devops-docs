@@ -174,7 +174,7 @@ To make commands easier to run, start by selecting a default region. After you s
         --resource-group $rgName \
         --name databricks-cicd-ws  \
         --location eastus2  \
-        --sku standard
+        --sku trial
     ```
   3. Copy the Subscription ID for your Databricks service to use later. 
 
