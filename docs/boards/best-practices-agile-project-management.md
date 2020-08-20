@@ -26,11 +26,25 @@ Best practices tips here "light-weight"
 Light-weight - minimal tracking, status updates, minimal estimation 
 
 
-use the guidance provided in this article to get started. Light-weight 
+Use the guidance provided in this article to get started. Light-weight 
+
+> [!div class="checklist"]   
+> - Configure your teams
+> - Configure your sprints
+> - Choose the work item types you'll use
+> - Review, prioritize, estimate, and update your product plan
+> - Use tags to support queries and filtering
+> - Work in sprints
+> - Forecast and milestone planning
+> - Manage dependencies
+> - Review progress and feature deliverables 
+> - Process improvement
+
 
 You can start from a bottom-up or top-down approach, choose one for your initial planning.
 
-If your team is committed to practicing Kamban or Scrum methods, see [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](/sprints/scrum-overview.md). 
+> [!NOTE]
+> If your team is committed to practicing Kamban or Scrum methods, see [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](/sprints/scrum-overview.md). 
 
 
 Goals to consider: 
@@ -216,41 +230,23 @@ However, you can use one or more of the following options to mark a work item as
 - [Assign the milestone work item to the sprint](/azure/devops/boards/sprints/assign-work-sprint) in which it's targeted for completion. 
  
 
-	
-## Work in sprints  
-
-*Dev team use sprint backlog to plan and track sprint work.*
-*Project management team - use Kanban board to track sprint work.*
-
-Sprints allow your team to focus on a pre-selected set of work to be accomplished. Work you assign to a sprint appears on your team's sprint backlog. Sprint backlogs are defined only for product backlogs, not for portfolio backlogs.  
-
-Each sprint, perform the following tasks: 
-
-- Plan each sprint with your team 
-- Ensure each work item is scoped to be completed within the sprint
-- Ensure the acceptance criteria for the work is well defined and understood
-- Assign requirements to a sprint and to a team member 
-
-#### To learn how: 
-
-- [Assign backlog items to a sprint](sprints/assign-work-sprint.md) 
-- [Define features and epics](backlogs/define-features-epics.md)  
-- [Create your backlog](backlogs/create-your-backlog.md)  
-- [Forecast your product backlog](sprints/forecast.md)   
-
 ## Manage dependencies  
 
-In Microsoft Project, you manage work that depends on the completion of other work by linking them. To manage dependencies in Azure Boards, you can add similar linking by adding Predecessor/Successor link types. You add these links from the Add link dialog for a work item. 
+In Microsoft Project, you manage tasks that depend on the completion of other tasks by linking them. To manage dependencies in Azure Boards, you can add similar linking by adding Predecessor/Successor link types to work items. You add these links from the Add link dialog for a work item. 
 
 > [!div class="mx-imgBorder"]  
 > ![Add link dialog, successor link type. ](media/best-practices/add-link-successor.png)  
+
+
 #### Best practice tips: 
 
-- Use Predecessor/Successor link types to track dependencies of work owned by other teams or within other projects
+- Use **Predecessor/Successor** link types to track dependencies of work owned by other teams or within other projects
 - Create queries to track, add, and triage dependencies 
-- Use Dependency Tracker to view work that you have dependencies on from other teams 
+- Use the [Dependency Tracker](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker) Marketplace extension to view work that you have dependencies on from other teams 
 - Use the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension to visualize dependencies 
 
+> [!NOTE]   
+> Marketplace extensions are not supported features of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
 
 #### To learn how:
 
@@ -259,27 +255,70 @@ In Microsoft Project, you manage work that depends on the completion of other wo
 - [Plan and track dependencies using the Dependency Tracker](extensions/dependency-tracker.md)
  
 
-> [!NOTE] Azure Boards doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks. For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
+> [!NOTE] 
+> Azure Boards doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks. For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
  
+
+## Work in sprints (development team)   
+
+Sprints allow the development team to focus on completing a pre-selected set of work. Work assign to a sprint appears on the team's sprint backlog. Sprint backlogs are defined only for product backlogs, not for portfolio backlogs.  
+
+#### Best practice tips  
+
+Each sprint, perform the following tasks: 
+
+- Plan each sprint with your team  
+- Use the team's Sprint backlog to review sprint deliverables 
+- Ensure each sprint work item is assigned to a team member 
+- Ensure each work item is scoped to be completed within the sprint
+- Ensure the acceptance criteria for the work is well defined and understood
+- Update the status of sprint work items to track sprint burndown 
+- Check in with other teams on dependencies that your team's work depends on 
+- Monitor sprint progress using the Sprint burndown chart 
+
+#### To learn how: 
+
+- [Assign backlog items to a sprint](sprints/assign-work-sprint.md) 
+- [Configure and monitor sprint burndown](../report/dashboards/configure-sprint-burndown.md) 
+- [Define features and epics](backlogs/define-features-epics.md)  
+
 
 ## Review progress and feature deliverables 
 
+One quick and visual way to monitor progress is from the Features backlog. By adding the rollup progress bar column, you can see what percentage of work items are completed for each feature, as shown in the following image.  
+
+> [!div class="mx-imgBorder"]  
+> ![Features backlog, progress bars](media/best-practices/feature-backlog-progress.png)  
+
+
 To gain insight into progress is being made
 
-Rollup 
+> [!div class="mx-imgBorder"]  
+> ![Features board, customized](media/best-practices/features-board-customized.png ) 
 
 Kanban Board: Use to talk to status, blocks/issues/risks/changes, update status; Filter to Current sprint, Assigned To 
 
 Taskboard: 
 
-### Review team deliverables and dependencies
+#### Best practice tips  
+
+
+#### To learn how: 
+
+
+
+
+### Review team deliverables and cross-team dependencies
 
 1. Use Delivery Plans to review a calendar view of what's being delivered across teams 
  
+#### Best practice tips  
+#### To learn how: 
+
 
 ## Process improvement  
 
-TO improve your processes, you need to have a plan and goals. 
+To improve your processes, you need to have a plan and goals. 
 Two charts you can use to support process improvement:  
 
 - Team Velocity: How well is the team able to plan and execute a sprint  Use to improve planning/estimating and forecasting 
@@ -290,6 +329,11 @@ Make your team accountable. ...
 Measure results. ...
 
 https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset
+
+
+#### Best practice tips  
+#### To learn how: 
+
 
 ## Related articles
 
