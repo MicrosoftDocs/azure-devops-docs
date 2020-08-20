@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 12/06/2019
+ms.date: 08/20/2020
 monikerRange: '>= tfs-2015'
 ---
 
