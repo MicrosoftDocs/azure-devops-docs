@@ -29,6 +29,8 @@ To run the same set of tasks in parallel on multiple agents, or to run some task
 By default, all tasks run in the same context, whether that's on the [host](phases.md) or in a [job container](container-phases.md).
 You may optionally use [step targets](#step-target) to control context for an individual task.
 
+Learn more about how to specify properties for a task with the [YAML schema](../yaml-schema.md#task). 
+
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"

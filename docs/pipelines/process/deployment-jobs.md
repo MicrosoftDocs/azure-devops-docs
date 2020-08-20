@@ -3,7 +3,7 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 5/2/2019
+ms.date: 08/19/2020
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -376,9 +376,9 @@ While executing deployment strategies, you can access output variables across jo
       increments: [10,20]  # creates multiple jobs, one for each increment. Output variable can be referenced with this.
       deploy:
         steps:
-        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+        - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
           name: setvarStep
-        - script: echo $(setvarStep.myOutputVar)
+        - bash: echo $(setvarStep.myOutputVar)
           name: echovar
 
 # Map the variable from the job
@@ -405,9 +405,9 @@ For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
     runOnce:
       deploy:
         steps:
-        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+        - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
           name: setvarStep
-        - script: echo $(setvarStep.myOutputVar)
+        - bash: echo $(setvarStep.myOutputVar)
           name: echovar
 
 # Map the variable from the job
@@ -436,9 +436,9 @@ stages:
       runOnce:
         deploy:
           steps:
-          - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+          - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
             name: setvarStep
-          - script: echo $(System.JobName)
+          - bash: echo $(System.JobName)
   - deployment: A2
     pool:
       vmImage: 'ubuntu-16.04'
