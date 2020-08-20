@@ -1,7 +1,7 @@
 ---
 title: Best practices for Agile project management 
 titleSuffix: Azure Boards
-description: Guidance for project managers new to Azure Boards to plan and track their projects  
+description: Get started guide for project managers new to Azure Boards to plan and track their projects  
 ms.technology: devops-agile
 ms.topic: conceptual
 ms.author: kaelli
@@ -16,36 +16,24 @@ ms.date: 08/07/2020
 
 [!INCLUDE [temp](includes/version-all.md)]
 
-As a project manager new to Azure Boards, you have a choice of Agile planning tools. This article provides an end-to-end guide of the tools Azure Boards provides for project management. It is "light-weight"  in the sense that it takes a minimal tracking approach.  
+As a project manager new to Azure Boards, you have a choice of Agile planning tools. This article provides an end-to-end guide of the tools Azure Boards provides for project management. It is "light-weight" in the sense that it takes a minimal tracking approach.  
 
 In this article, we make the following suggestions: 
 
 
-How choose the tools and methods that will support your team? 
-How choose the most light-weight tracking methods? 
-Main thing is that your development team will use a product backlog; project management will use a Kanban board to track Features. 
-
-Introduce you to key features to support traditional project management activities 
-Best practices tips here "light-weight" 
-Light-weight - minimal tracking, status updates, minimal estimation 
-
-
-Use the guidance provided in this article to get started. Light-weight 
-
 > [!div class="checklist"]  
-> - Configure your teams to support rollup of development user stories to project management feature deliverables 
+> - Configure your teams to support rollup of development user stories to project management features
 > - Define and work in a sprint cadence  
-> - Identify the work item types your teams will use to track work 
-> - Develop your product plan
+> - Use User Stories and Features to track deliverables 
+> - Use your team's Feature and Product backlogs to create your product plan
 > - Use tags to support queries and filtering
-> - Work in sprints
-> - Forecast and milestone planning
-> - Manage dependencies
-> - Review progress and feature deliverables 
-> - Process improvement
+> - Forecast your product plan to gain insight into when deliverables can ship, set milestones
+> - Manage dependencies by linking work items 
+> - Assign work to sprints  
+> - Review progress and deliverables using the Features backlog, rollup, and delivery plans 
+> - Engage with process improvement during sprint planning and retrospectives 
 
 
-You can start from a bottom-up or top-down approach, choose one for your initial planning.
 
 > [!NOTE]
 > If your team is committed to practicing Kamban or Scrum methods, see [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](/sprints/scrum-overview.md). 
@@ -74,7 +62,7 @@ Basic guidance:
 
 ## Configure your teams   
 
-Azure Boards provides teams the tools to plan and track work. Each project defines a default team, which you can start using immediately. However, if you have a number of development or feature teams, you should consider defining a team in Azure DevOps for each feature team.   
+Azure Boards provides teams the tools to plan and track work. Each project defines a default team, which you can start using immediately. However, if you have a number of development or feature teams, consider defining a team in Azure DevOps for each feature team.   
 
 #### Best practice tips: 
 
@@ -86,8 +74,9 @@ Azure Boards provides teams the tools to plan and track work. Each project defin
 #### To learn how: 
 
 - [Configure a hierarchy of teams](plans/configure-hierarchical-teams.md) 
-- [Add a team, move from one default team to several teams](../organizations/settings/add-teams.md)  
- 
+- [Add a team, move from one default team to several teams](../organizations/settings/add-teams.md) 
+- [Agile culture](/azure/devops/learn/agile/agile-culture) 
+- [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams)
 
 ## Configure your sprints 
 
@@ -323,8 +312,18 @@ The three main tools you'll want to review progress and deliverables are:
  
 Your Features board is another place to review progress and ensure the continuous flow of deliverables. The following image illustrates a customized Features board. In progress columns have been added such as *Need more info*, *Spec Complete*, *In Progress*, and *Customer Rollout*. These provide a more natural set of states as Features get proposed, researched, designed, developed, and then deployed to production. 
 
+[!INCLUDE [temp](../includes/lightbox-image.md)] 
+
 > [!div class="mx-imgBorder"]  
-> ![Features board, customized](media/best-practices/features-board-customized.png) 
+> [![Features board, customized](media/best-practices/features-board-customized.png)](media/best-practices/features-board-customized.png#lightbox)
+
+
+
+
+
+
+
+
 
 
 ### Rollup 
@@ -397,7 +396,7 @@ Teams can define one or more dashboards to share information and monitor real-ti
 #### Best practice tips 
 
 - Identify process improvement goals that your team can agree to, write them down and review them periodically  
-- Use team dashboards to share information and work tracking charts to review periodically  
+- Use team dashboards to share information and work tracking charts which you and your team review periodically  
 - At sprint planning meetings, have your team identify at least one sprint goal related to process improvement  
 - Conduct regular retrospectives to capture what went well, what didn't go well, and actions to improve  
 - Maintain an improvement tracking board, such as that available with the [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) Marketplace extension. 
@@ -428,4 +427,19 @@ Teams can define one or more dashboards to share information and monitor real-ti
 Make your team accountable. ...
 Measure results. ...
 
+
+How choose the tools and methods that will support your team? 
+How choose the most light-weight tracking methods? 
+Main thing is that your development team will use a product backlog; project management will use a Kanban board to track Features. 
+
+Introduce you to key features to support traditional project management activities 
+Best practices tips here "light-weight" 
+Light-weight - minimal tracking, status updates, minimal estimation 
+
+
+Use the guidance provided in this article to get started. Light-weight 
+
+
+
+You can start from a bottom-up or top-down approach, choose one for your initial planning.
 --> 
