@@ -19,7 +19,7 @@ In this step-by-step guide, you'll learn how to create a pipeline that continuou
 
 ## Prerequisites
 
-To ensure your Azure DevOps project has the needed authorization through to your Azure Subscription, create a Service Connection of type ARM.  This will be required when creating a pipeline within the project to deploy to Azure Kubernetes Service.  Otherwise the dropdown lists for Cluster and Container Registry are empty.   
+To ensure that your Azure DevOps project has the authorization required to access your Azure subscription, [create an Azure Resource Manager service connection](../../library/connect-to-azure.md?view=azure-devops#create-an-azure-resource-manager-service-connection-using-automated-security). The service connection is required when you create a pipeline in the project to deploy to Azure Kubernetes Service.  Otherwise, the drop-down lists for **Cluster** and **Container Registry** are empty.    
 
 [!INCLUDE [include](../../includes/prerequisites.md)]
 
