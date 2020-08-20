@@ -106,7 +106,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
    * * *
 
-2. In the right panel, select **.NET Desktop**, and then click **Apply**.
+2. In the right panel, click **.NET Desktop**.
 
    You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
