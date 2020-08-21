@@ -924,7 +924,10 @@ You manage collection-level permissions through the [web portal admin context](.
 ::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Collection level permissions and groups](media/permissions/collection-level-permissions.png)   
+> ![Collection level permissions and groups](media/permissions/collection-level-permissions-2020-xml-on-prem.png)   
+
+
+
 
 ::: moniker-end
 
@@ -1135,13 +1138,282 @@ You manage collection-level permissions through the [web portal admin context](.
     </tr>
 </tbody>
 </table>
-
-
-<a href="../accounts/change-application-access-policies.md">Change application connection policies</a> 
-
-
+ 
 ::: moniker-end
 
+::: moniker range="< azure-devops"
+---
+:::row:::
+   :::column span="":::
+      **Permission**
+   :::column-end:::
+   :::column span="3":::
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="administer-build-resource-permissions-permission" />Administer build resource permissions
+   :::column-end:::
+   :::column span="3":::
+      Can modify permissions for build pipelines at the project collection-level. This includes the following artifacts: 
+      - [Set retention policies](../../pipelines/policies/retention.md)
+      - [Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md) 
+      - [Add and manage agent pools](../../pipelines/agents/pools-queues.md) 
+      - [Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md) 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+::: moniker range=">= azure-devops-2019 < azure-devops"
+:::row:::
+   :::column span="":::
+      <a id="administer-process-permissions-permission" />Administer process permissions
+   :::column-end:::
+   :::column span="3":::
+      Can modify permissions for customizing work tracking by creating and customizing [inherited processes](../settings/work/inheritance-process-model.md). Requires the collection to be configured to support the Inherited process model. See also: 
+      - [Customize a project](../settings/work/customize-process.md) 
+      - [Add and manage processes](../settings/work/manage-process.md) 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+::: moniker range="<= tfs-2017"
+:::row:::
+   :::column span="":::
+      <a id="administer-Project-Server-integration-permission" />Administer Project Server integration
+   :::column-end:::
+   :::column span="3":::
+      Can [configure the integration of TFS and Project Server](/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server) to enable data synchronization between the two server products. Applies to TFS 2017 and earlier versions only.
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+::: moniker range="< azure-devops"
+:::row:::
+   :::column span="":::
+      <a id="administer-shelved-changes-permission" />Administer shelved changes
+   :::column-end:::
+   :::column span="3":::
+      Can delete [shelvesets created by other users](../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md). Applies when TFVC is used as the source control. 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="administer-workspaces-permission" />Administer workspaces
+   :::column-end:::
+   :::column span="3":::
+      Can [create and delete workspaces for other users](../../repos/tfvc/create-work-workspaces.md). Applies when TFVC is used as the source control.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="alter-trace-settings-permission" />Alter trace settings
+   :::column-end:::
+   :::column span="3":::
+      Can [change the trace settings](/previous-versions/ms400797%28v%3dvs.80%29)for gathering more detailed diagnostic information about Azure DevOps Web services.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="create-a-workspace-permission" />Create a workspace
+   :::column-end:::
+   :::column span="3":::
+      Can create a version control workspace. Applies when TFVC is used as the source control. This permission is granted to all users as part of their membership within the Project Collection Valid Users group.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="create-new-team-projects-permission" />Create new projects (formerly Create new team projects)
+   :::column-end:::
+   :::column span="3":::
+      Can [add projects to a project collection](../projects/create-project.md). Additional permissions may be required depending on your on-premises deployment. 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="create-new-team-projects-permission" />Create new projects (formerly Create new team projects)
+   :::column-end:::
+   :::column span="3":::
+      Can [add projects to a project collection](../projects/create-project.md). Additional permissions may be required depending on your on-premises deployment. 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+::: moniker range=">= azure-devops-2019 < azure-devops"
+:::row:::
+   :::column span="":::
+      <a id="create-process-permission" />Create process
+   :::column-end:::
+   :::column span="3":::
+      Can [create an inherited process](../settings/work/manage-process.md)"> used to customize work tracking and Azure Boards. Requires the collection to be configured to support the Inherited process model.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="delete-field-permission" />Delete field from organization (formerly Delete field from account )
+   :::column-end:::
+   :::column span="3":::
+      Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md). For on-premises deployments, requires the collection to be configured to support Inherited process model.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="delete-process-permission /">Delete process
+   :::column-end:::
+   :::column span="3":::
+      Can [delete an inherited process](../settings/work/manage-process.md) used to customize work tracking and Azure Boards. Requires the collection to be configured to support Inherited process model. 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+::: moniker range="< azure-devops"
+:::row:::
+   :::column span="":::
+      <a id="delete-team-project-permission" />Delete team project
+   :::column-end:::
+   :::column span="3":::
+      Can [delete a project](../projects/delete-project.md).
+      > [!NOTE]  
+      > Deleting a project deletes all data that is associated with the project. You cannot undo the deletion of a project except 
+      by restoring the collection to a point before the project was deleted.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="edit-collection-level-information-permission">Edit collection-level information
+   :::column-end:::
+   :::column span="3":::
+      Can add users and groups, and edit collection-level permissions for users and groups.
+      Edit collection-level information includes the ability to perform these tasks 
+      for all projects defined in a collection:
+      - Add and administer teams and all team-related features
+      - Edit collection-level permissions for users and groups in the collection
+      - Add or remove collection-level security groups from the collection
+      - Implicitly allows the user to modify version control permissions
+      - Edit project level and collection level permission ACLs
+      - Edit [event subscriptions or alerts](#alerts) (email or SOAP) for teams, projects, or collection level events.
+      When you set **Edit collection-level information** to **Allow**,
+      users can add or remove collection-level groups and implicitly
+      allows these users to modify version control permissions.
+      To grant all these permissions at a command prompt,
+      you must use the `tf.exe permission` command to grant the **AdminConfiguration** and **AdminConnections** permissions,
+      in addition to GENERIC_WRITE.
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+::: moniker range=">= azure-devops-2019 < azure-devops"
+:::row:::
+   :::column span="":::
+      <a id="edit-process-permission" />Edit process
+   :::column-end:::
+   :::column span="3":::
+      Can edit a [custom inherited process](../settings/work/customize-process.md). Requires the collection to be configured to support the Inherited process model. 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+::: moniker range="< azure-devops"
+:::row:::
+   :::column span="":::
+      <a id="make-requests-on-behalf-of-others-permission" />Make requests on behalf of others
+   :::column-end:::
+   :::column span="3":::
+      Can perform operations on behalf of other users or services. 
+      Assign this permission only to on-premises [service accounts](/azure/devops/server/admin/service-accounts-dependencies). 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="manage-build-resources-permission" />Manage build resources
+   :::column-end:::
+   :::column span="3":::
+      Can manage build computers, build agents, and build controllers. 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="manage-process-template-permission" />Manage process template
+   :::column-end:::
+   :::column span="3":::
+      Can [download, create, edit, and upload process templates](../../boards/work-items/guidance/manage-process-templates.md). A process template defines the building blocks of the work item tracking system as well as other subsystems you access through Azure Boards. Requires the collection to be configured to support ON=premises XML process model.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="manage-test-controllers-permission" />Manage test controllers
+   :::column-end:::
+   :::column span="3":::
+      Can register and de-register test controllers. 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="trigger-events-permission" />Trigger events
+   :::column-end:::
+   :::column span="3":::
+      Can trigger project alert events within the collection. Assign only to service accounts. Users with this permission can't remove built-in collection level groups such as Project Collection Administrators. 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="use-build-resources-permission" />Use build resources
+   :::column-end:::
+   :::column span="3":::
+      Can reserve and allocate build agents. Assign only to service accounts for build services.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="view-build-resources-permission" />View build resources
+   :::column-end:::
+   :::column span="3":::
+      Can view, but not use, build controllers and build agents that are configured for an organization or project collection.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="view-collection-level-information-permission" />View instance-level information<br/>or View collection-level information
+   :::column-end:::
+   :::column span="3":::
+      Can view project collection-level group membership and permissions.
+      > [!NOTE]   
+      > If you set the **View instance-level information** permission
+      > to **Deny** or **Not set** for this group,
+      > no users will be able to access projects in the organization or project collection.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      <a id="view-system-synchronization-information-permission" />View system synchronization information
+   :::column-end:::
+   :::column span="3":::
+      Can call the synchronization application programming interfaces. Assign only to service accounts. 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+ 
+
+<!---
 ::: moniker range="< azure-devops"
 
 <table valign="top" width="100%">
@@ -1335,6 +1607,7 @@ You manage collection-level permissions through the [web portal admin context](.
 
 ::: moniker-end
 
+-->
 
 
 <a name="project-level" />
