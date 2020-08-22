@@ -966,16 +966,12 @@ You manage collection-level permissions through the [web portal admin context](.
                     <li>Add or remove instance-level security groups from the collection</li>
                     <li>Implicitly allows the user to modify version control permissions </li>
                     <li>Edit project level and instance-level permission ACLs</li>
-                    <li>Edit <a href="#alerts"event subscriptions</a> (email or SOAP) on project or collection level events.</li>
+                    <li>Edit <a href="#alerts">event subscriptions</a> (email or SOAP) on project or collection level events.</li>
                 </ul>
                 <p>
                     When you set <strong>Edit instance-level information</strong> to <strong>Allow</strong>,
                     users can add or remove collection-level groups and implicitly
                     allows these users to modify version control permissions.
-                    To grant all these permissions at a command prompt,
-                    you must use the <code>tf.exe Permission</code> command to grant
-                    the <strong>AdminConfiguration</strong> and <strong>AdminConnections</strong> permissions,
-                    in addition to GENERIC_WRITE.
                 </p>
             </blockquote>
         </td>
@@ -1022,31 +1018,31 @@ You manage collection-level permissions through the [web portal admin context](.
             <li><a href="../settings/work/customize-process.md" data-raw-source="[Customize a project](../settings/work/customize-process.md)">Customize a project</a></li>
             <li><a href="../settings/work/manage-process.md" data-raw-source="[Add and manage processes](../settings/work/manage-process.md)">Add and manage processes</a></li>
             </ul>
-            <p>Applies to Azure DevOps Server 2019 and later versions. For Azure DevOps Services, users granted Basic and Stakeholder access are granted this permission by default. </p>
+            <p>Users granted Basic and Stakeholder access are granted this permission by default. </p>
         </td>
     </tr>
     <tr>
         <td id="create-process">Create process</td>
         <td>
-            Can <a href="../settings/work/manage-process.md" data-raw-source="[create an inherited process](../settings/work/manage-process.md)">create an inherited process</a> used to customize work tracking and Azure Boards. Applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default. 
+            Can <a href="../settings/work/manage-process.md" data-raw-source="[create an inherited process](../settings/work/manage-process.md)">create an inherited process</a> used to customize work tracking and Azure Boards. Users  granted Basic and Stakeholder access are granted this permission by default. 
         </td>
     </tr>
     <tr>
         <td id="delete-field">Delete field from organization</td>
         <td>
-            Can <a href="../settings/work/customize-process-field.md" data-raw-source="[delete a custom field that was added to a process](../settings/work/customize-process-field.md)">delete a custom field that was added to a process</a>. Applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default. 
+            Can <a href="../settings/work/customize-process-field.md" data-raw-source="[delete a custom field that was added to a process](../settings/work/customize-process-field.md)">delete a custom field that was added to a process</a>. Users granted Basic and Stakeholder access are granted this permission by default. 
         </td>
     </tr>
     <tr>
         <td id="delete-process">Delete process</td>
         <td>
-            Can <a href="../settings/work/manage-process.md" data-raw-source="[delete an inherited process](../settings/work/manage-process.md)">delete an inherited process</a> used to customize work tracking and Azure Boards. Applies to Azure DevOps Server 2019 and later versions. Azure DevOps Services users granted Basic and Stakeholder access for Azure DevOps Services are granted this permission by default. 
+            Can <a href="../settings/work/manage-process.md" data-raw-source="[delete an inherited process](../settings/work/manage-process.md)">delete an inherited process</a> used to customize work tracking and Azure Boards. Users granted Basic and Stakeholder access for Azure DevOps Services are granted this permission by default. 
         </td>
     </tr>
     <tr>
         <td id="edit-process">Edit process</td>
         <td>
-            Can edit a <a href="../settings/work/customize-process.md" data-raw-source="[custom inherited process](../settings/work/customize-process.md)">custom inherited process</a>.  Azure DevOps Services users  granted Basic and Stakeholder access for Azure DevOps Services are granted this permission by default. 
+            Can edit a <a href="../settings/work/customize-process.md" data-raw-source="[custom inherited process](../settings/work/customize-process.md)">custom inherited process</a>. Users granted Basic and Stakeholder access are granted this permission by default. 
         </td>
     </tr>
     <tr><td><h4>Repos</hr></td><td> </td> 
@@ -1574,9 +1570,6 @@ You manage project-level permissions through the [web portal admin context](set-
         <td id="delete-work-items-in-this-project-permission">
 <p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
         <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md)">mark work items in the project as deleted</a>. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
-<ul>
-<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to <strong>Allow</strong> by default.</li> 
-<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to <strong>Not set</strong> by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
 </td>
     </tr>
     <tr>
@@ -1611,7 +1604,7 @@ that have been saved under the Shared area.   </td>
     </tr>
    <tr>
         <td id="delete-test-runs-permission">Delete test runs</td>
-        <td>Can delete a test run.</td>
+        <td>Can <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[delete a test run](../../boards/backlogs/delete-test-artifacts.md)">delete a test run</a>. </td>
     </tr>
     <tr>
         <td id="manage-test-configurations-permission">Manage test configurations</td>
@@ -1754,7 +1747,7 @@ that have been saved under the Shared area.   </td>
     </tr>
     <tr>
         <td id="view-test-runs-permission">View test runs</td>
-        <td>Can view test plans under the project area path.</td>
+        <td>Can <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[delete a test run](../../boards/backlogs/delete-test-artifacts.md)">delete a test run</a>. </td>
     </tr>
 </tbody>
 </table>
