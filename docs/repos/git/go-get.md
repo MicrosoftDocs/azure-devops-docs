@@ -41,8 +41,28 @@ go get dev.azure.com/<organization>/<project>/_git/<repo>/subfolder1/subfolder2
 
 ## Go get with private projects
 
-If your Azure Repos Git repo is in a private project, you need to create a Personal 
-Access Token (PAT) as described in 
+If your Azure Devops Git repo is private you can either use ssh or authenticate with a Personal Access Token (PAT) for https.
+
+### ssh
+
+You need to have SSH keys setup for Azure Devops as described in [Use SSH Key authentication](./use-ssh-keys-to-authenticate.md)
+
+After you have SSH keys setup, add an entry to your `.gitconfig` as following:
+
+```
+[url "git@ssh.dev.azure.com:v3/<organization>/"]
+  insteadOf = https://dev.azure.com/<organization>/
+```
+
+You can now use `go get` in the following format. Note the `.git` that follows the repo name and `_git` is not present as we are using the ssh url.
+
+```
+go get dev.azure.com/<organization>/<project>/<repo>.git
+```
+
+### https
+
+You need to create a Personal Access Token (PAT) as described in 
 [Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). This PAT requires only the Code (read) 
 [scope](../../integrate/get-started/authentication/oauth.md#scopes).
 After you create the PAT, add an entry to your `.gitconfig` as shown in the following example.
