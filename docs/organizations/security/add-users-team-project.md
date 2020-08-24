@@ -39,6 +39,8 @@ In this quickstart, learn how to add users to a project or specific team. For an
 The easiest way to add a number of users to a project is to add groups defined in [Azure Active Directory (Azure AD) or Active Directory (AD)](setup-ad-aad.md).
 
 
+## Prerequisites
+
 [!INCLUDE [temp](../../includes/prerequisites-add-users-org.md)]
 
 [!INCLUDE [temp](../../includes/prerequisites-add-users-server.md)]
