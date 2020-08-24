@@ -117,7 +117,7 @@ To start filtering, choose the :::image type="icon" source="../media/icons/kanba
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-![Enable kanban field-based filtering](media/filter/filter-kb-choose-filter.png)
+![Enable kanban field-based filtering, earlier versions](media/filter/filter-kb-choose-filter.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -182,7 +182,7 @@ Here, we choose two features on which to filter the board.
 ::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board, Filter on assignment field](media/filter/filter-kb-parent-filters-services.png)
+> ![Kanban board, Filter on Parent field](media/filter/filter-kb-parent-filters-services.png)
 
 
 ::: moniker-end
