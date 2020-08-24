@@ -136,7 +136,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 6. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. choose the match(es) that meet your requirements.
 
-	![Add users and group dialog](media/project-level-permissions-add-a-user.png)  
+	![Add users and group dialog, add a user](media/project-level-permissions-add-a-user.png)  
 
    > [!NOTE]
    > The first time you add a user or group to Azure DevOps,
@@ -281,11 +281,11 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 3. Choose **Add**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Profile, choose Add](media/add-users/team-profile-choose-add-preview.png)   
+	> ![Team Profile, choose Add, preview page](media/add-users/team-profile-choose-add-preview.png)   
 
 4. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
-	![Add users and group dialog](media/project-level-permissions-add-a-user.png)
+	![Add users and group dialog, project-level](media/project-level-permissions-add-a-user.png)
 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
@@ -321,11 +321,11 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 3. Choose **Add**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Profile, choose Add](media/add-users/team-profile-choose-add.png)   
+	> ![Team Profile, choose Add, currect page](media/add-users/team-profile-choose-add.png)   
 
 4. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
-	![Add users and group dialog](media/project-level-permissions-add-a-user.png)
+	![Add users and group dialog, current page](media/project-level-permissions-add-a-user.png)
 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
@@ -335,7 +335,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 5. To remove members, return to this page, highlight the user name and choose **Remove**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team profile page, remove a team member, new nav](media/add-users/team-page-remove-team-member-vert.png)   
+	> ![Team profile page, remove a team member](media/add-users/team-page-remove-team-member-vert.png)   
 
    > [!NOTE]
    > To remove a team administrator as a team member, you must first remove them as an administrator. 
@@ -447,7 +447,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 4. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
-	![Add users and group dialog](media/project-level-permissions-add-a-user.png)
+	![Add users and group dialog, 2019-2020](media/project-level-permissions-add-a-user.png)
 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
@@ -457,7 +457,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 5. To remove members, return to this page, highlight the user name and choose **Remove**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team profile page, remove a team member, new nav](media/add-users/team-page-remove-team-member-vert.png)   
+	> ![Team profile page, remove a team member, choose remove](media/add-users/team-page-remove-team-member-vert.png)   
 
    > [!NOTE]
    > To remove a team administrator as a team member, you must first remove them as an administrator. 
@@ -476,7 +476,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 3. Enter the sign-in addresses or display name for each user you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
-	![Add users and group dialog](media/project-level-permissions-add-a-user.png)
+	![Add users and group dialog, 2018 and earlier](media/project-level-permissions-add-a-user.png)
 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, it is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
@@ -485,7 +485,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 4. To remove members, return to this page, highlight the user name, and then choose **Remove**.
 
-	![Team profile page, remove a team member](media/add-users/team-page-remove-team-member.png)
+	![Team profile page, remove a team member, highlight and remove](media/add-users/team-page-remove-team-member.png)
 
    > [!NOTE]
    > To remove a team administrator as a team member, you must first remove them as an administrator. 
