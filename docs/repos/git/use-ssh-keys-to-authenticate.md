@@ -145,24 +145,7 @@ RSA key fingerprint is SHA256:********************************************
 Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added 'ssh.dev.azure.com,65.52.8.37' (RSA) to the list of known hosts.
 Enter passphrase for key '/c/Users/jamal/.ssh/id_rsa':
-remote:
-remote:                    vSTs
-remote:                  vSTSVSTSv
-remote:                vSTSVSTSVST
-remote: VSTS         vSTSVSTSVSTSV
-remote: VSTSVS     vSTSVSTSV STSVS
-remote: VSTSVSTSvsTSVSTSVS   TSVST
-remote: VS  tSVSTSVSTSv      STSVS
-remote: VS   tSVSTSVST       SVSTS
-remote: VS tSVSTSVSTSVSts    VSTSV
-remote: VSTSVST    SVSTSVSTs VSTSV
-remote: VSTSv        STSVSTSVSTSVS
-remote:                VSTSVSTSVST
-remote:                  VSTSVSTs
-remote:                    VSTs    (TM)
-remote:
-remote:  Microsoft (R) Visual Studio (R) Team Services
-remote:
+remote: Azure Repos
 remote: Found 127 objects to send. (50 ms)
 Receiving objects: 100% (127/127), 56.67 KiB | 2.58 MiB/s, done.
 Resolving deltas: 100% (15/15), done.
@@ -177,10 +160,12 @@ When you are asked if you want to continue connecting, type `yes`. Git will clon
 
 <a name="rememberpassphrase"></a>
 
-### Q: After running git clone, I get the following error. What should I do?
+### Q: After running `git clone`, I get the following error. What should I do?
 
+```
 Host key verification failed. 
 fatal: Could not read from remote repository.
+```
 
 **A:** Manually record the SSH key by running:
 `ssh-keyscan -t rsa domain.com >> ~/.ssh/known_hosts`
@@ -335,6 +320,23 @@ IdentitiesOnly yes
 # remember that SSH uses the first matching line for each parameter name.
 Host *
 ```
+
+::: moniker range="<= azure-devops-2019"
+
+### Q: How do I fix errors that mention "no matching key exchange method found"?
+
+**A:** Git for Windows 2.25.1 shipped with a new version of OpenSSH which removed some key exchange protocols by default.
+Specifically, `diffie-hellman-group14-sha1` has been identified as problematic for some Azure DevOps Server and TFS customers.
+You can work around the problem by adding the following to your SSH configuration (`~/.ssh/config`):
+
+```
+Host <your-azure-devops-host>
+    KexAlgorithms +diffie-hellman-group14-sha1
+```
+
+Replace `<your-azure-devops-host>` with the hostname of your Azure DevOps or TFS server, like `tfs.mycompany.com`.
+
+::: moniker-end
 
 ### Q: What notifications may I receive about my SSH keys?
 
