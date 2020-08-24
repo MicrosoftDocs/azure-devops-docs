@@ -1,4 +1,4 @@
-﻿---
+---
 title: Cycle time and lead time control charts
 titleSuffix: Azure DevOps Services  
 description: Configure and use the cycle time and lead time control charts/widgets to improve your team's ability to plan and improve processes  
@@ -35,6 +35,10 @@ In this article you'll learn:
 > * How moving average and standard deviation are calculated in the charts
 
 To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
+
+
+
+## Prerequisites  
 
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
