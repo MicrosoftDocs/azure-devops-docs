@@ -41,39 +41,41 @@ go get dev.azure.com/<organization>/<project>/_git/<repo>/subfolder1/subfolder2
 
 ## Go get with private projects
 
-If your Azure Devops Git repo is private you can either use ssh or authenticate with a Personal Access Token (PAT) for https.
+If your Azure Devops Git repo is private you can either use SSH or authenticate with a Personal Access Token (PAT) for HTTPS.
 
-### ssh
+### SSH
 
-You need to have SSH keys setup for Azure Devops as described in [Use SSH Key authentication](./use-ssh-keys-to-authenticate.md)
+You need to have SSH keys setup for Azure DevOps as described in [Use SSH Key authentication](use-ssh-keys-to-authenticate.md)
 
-After you have SSH keys setup, add an entry to your `.gitconfig` as following:
+After you have SSH keys setup, add this entry to your `.gitconfig`:
 
 ```
 [url "git@ssh.dev.azure.com:v3/<organization>/"]
   insteadOf = https://dev.azure.com/<organization>/
 ```
 
-You can now use `go get` in the following format. Note the `.git` that follows the repo name and `_git` is not present as we are using the ssh url.
+With this entry and a specific URL format, you can now use `go get`.
+Note the `.git` that follows the repo name and `_git` are not present, as we're using the SSH url.
 
 ```
 go get dev.azure.com/<organization>/<project>/<repo>.git
 ```
 
-### https
+### HTTPS
 
 You need to create a Personal Access Token (PAT) as described in 
-[Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). This PAT requires only the Code (read) 
+[Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+This PAT requires only the **Code (read)** 
 [scope](../../integrate/get-started/authentication/oauth.md#scopes).
-After you create the PAT, add an entry to your `.gitconfig` as shown in the following example.
+After you create the PAT, add this entry to your `.gitconfig`:
 
 ```
 [url "https://<user>:<token>@dev.azure.com/<organization>/<project>/_git/<repo>"]
     insteadOf = https://dev.azure.com/<organization>/<project>/_git/<repo>
 ```
 
-After this entry is made into your `.gitconfig`, you can use `go get` 
-in the following format. Note the `.git` that follows the repo name.
+With this entry and a specific URL format, you can now use `go get`.
+Note the `.git` that follows the repo name.
 
 ```
 go get dev.azure.com/<organization>/<project>/_git/<repo>.git
