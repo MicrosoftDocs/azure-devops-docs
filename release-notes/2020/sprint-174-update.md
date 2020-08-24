@@ -3,8 +3,8 @@ title: Sprint 174
 author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
-ms.date: 08/19/2020
-description:
+ms.date: 08/24/2020
+description: In this sprint 174, we're rolling out a new API endpoint that allows you to retrieve the finalized YAML body. We're also excited to announce that we're adding the ability to configure your upstream source for universal packages with this release.
 ---
 
 # Enhanced YAML preview API & configure upstream source for universal Packages
