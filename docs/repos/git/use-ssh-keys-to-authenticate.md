@@ -5,7 +5,7 @@ description: Authenticate to Azure Repos Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 07/28/2020
+ms.date: 08/24/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -132,13 +132,7 @@ Associate the public key generated in the previous step with your user ID.
    ```
 
 SSH may display the server's SSH fingerprint and ask you to verify it.
-
-For cloud-hosted Azure DevOps Services, where clone URLs contain either `ssh.dev.azure.com` or `vs-ssh.visualstudio.com`, the fingerprint should match one of the following formats:
-* MD5: `97:70:33:82:fd:29:3a:73:39:af:6a:07:ad:f8:80:49` (RSA)
-* SHA256: `SHA256:ohD8VZEXGWo6Ez8GSEJQ9WpafgLFsOfLOtGGQCQo6Og` (RSA)
-These fingerprints are also listed in the **SSH public keys** page.
-
-For self-hosted instances of Azure DevOps Server, you should verify that the displayed fingerprint matches one of the fingerprints in the **SSH public keys** page.
+You should verify that the displayed fingerprint matches one of the fingerprints in the **SSH public keys** page.
 
 SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](https://technet.microsoft.com/library/cc959354.aspx).
 Once you accept the host's fingerprint, SSH will not prompt you again unless the fingerprint changes. 
@@ -151,24 +145,7 @@ RSA key fingerprint is SHA256:********************************************
 Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added 'ssh.dev.azure.com,65.52.8.37' (RSA) to the list of known hosts.
 Enter passphrase for key '/c/Users/jamal/.ssh/id_rsa':
-remote:
-remote:                    vSTs
-remote:                  vSTSVSTSv
-remote:                vSTSVSTSVST
-remote: VSTS         vSTSVSTSVSTSV
-remote: VSTSVS     vSTSVSTSV STSVS
-remote: VSTSVSTSvsTSVSTSVS   TSVST
-remote: VS  tSVSTSVSTSv      STSVS
-remote: VS   tSVSTSVST       SVSTS
-remote: VS tSVSTSVSTSVSts    VSTSV
-remote: VSTSVST    SVSTSVSTs VSTSV
-remote: VSTSv        STSVSTSVSTSVS
-remote:                VSTSVSTSVST
-remote:                  VSTSVSTs
-remote:                    VSTs    (TM)
-remote:
-remote:  Microsoft (R) Visual Studio (R) Team Services
-remote:
+remote: Azure Repos
 remote: Found 127 objects to send. (50 ms)
 Receiving objects: 100% (127/127), 56.67 KiB | 2.58 MiB/s, done.
 Resolving deltas: 100% (15/15), done.
@@ -183,10 +160,12 @@ When you are asked if you want to continue connecting, type `yes`. Git will clon
 
 <a name="rememberpassphrase"></a>
 
-### Q: After running git clone, I get the following error. What should I do?
+### Q: After running `git clone`, I get the following error. What should I do?
 
+```
 Host key verification failed. 
 fatal: Could not read from remote repository.
+```
 
 **A:** Manually record the SSH key by running:
 `ssh-keyscan -t rsa domain.com >> ~/.ssh/known_hosts`
@@ -341,6 +320,23 @@ IdentitiesOnly yes
 # remember that SSH uses the first matching line for each parameter name.
 Host *
 ```
+
+::: moniker range="<= azure-devops-2019"
+
+### Q: How do I fix errors that mention "no matching key exchange method found"?
+
+**A:** Git for Windows 2.25.1 shipped with a new version of OpenSSH which removed some key exchange protocols by default.
+Specifically, `diffie-hellman-group14-sha1` has been identified as problematic for some Azure DevOps Server and TFS customers.
+You can work around the problem by adding the following to your SSH configuration (`~/.ssh/config`):
+
+```
+Host <your-azure-devops-host>
+    KexAlgorithms +diffie-hellman-group14-sha1
+```
+
+Replace `<your-azure-devops-host>` with the hostname of your Azure DevOps or TFS server, like `tfs.mycompany.com`.
+
+::: moniker-end
 
 ### Q: What notifications may I receive about my SSH keys?
 
