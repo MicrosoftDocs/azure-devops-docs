@@ -7,18 +7,21 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 08/07/2020
+ms.date: 08/24/2020
 ---
 
 
 
 # Best practices for "light-weight" Agile project management 
 
-[!INCLUDE [temp](includes/version-all.md)]
+[!INCLUDE [temp](includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
-As a project manager new to Azure Boards, you have a choice of Agile planning tools. This article provides an end-to-end guide of the tools Azure Boards provides for project management. It is "light-weight" in the sense that it takes a minimal tracking approach.  
+Azure Boards provides a choice of Agile planning tools, many of which work in combination with each other. This article provides a get-started guide for project managers new to Azure Boards. If you and your teams want to take a minimal tracking approach to plan and manage your projects, start with this guide. 
 
-In this article, we make the following suggestions: 
+> [!NOTE]
+> If your team is committed to practicing Kamban or Scrum methods, see instead [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](/sprints/scrum-overview.md). 
+
+In this article, we make the following suggestions and guidance: 
 
 > [!div class="checklist"]  
 > - Configure your teams to support rollup of development user stories to project management features
@@ -32,17 +35,16 @@ In this article, we make the following suggestions:
 > - Review progress and deliverables using the Features backlog, rollup, and delivery plans 
 > - Engage with process improvement during sprint planning and retrospectives 
 
-> [!NOTE]
-> If your team is committed to practicing Kamban or Scrum methods, see [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](/sprints/scrum-overview.md). 
+
 
 ## Configure your teams   
 
-Azure Boards provides teams the tools to plan and track work. Each project defines a default team, which you can start using immediately. However, if you have a number of development or feature teams, we recommend that you define a team in Azure DevOps for each feature team.   
+Azure Boards provides each team a set of Agile tools to plan and track work. Each project defines a default team, which you can start using immediately. However, if you have a number of development or feature teams, we recommend that you define a team in Azure DevOps for each feature team. This way, each team can work autonomously while collaborating with each other. 
 
 #### Best practice tips: 
 
 - Configure teams along the value streams your organization wants to deliver
-- Define a team for each development group of 6 to 12 developers 
+- Define a team for each development group of six to twelve developers 
 - Configure development teams to support rollup to project management feature teams 
 
 
@@ -55,16 +57,15 @@ Azure Boards provides teams the tools to plan and track work. Each project defin
 
 ## Configure your sprints 
 
-Sprints&mdash;specified by Iteration Paths&mdash;are defined for a project and then selected by teams. A sprint cadence can vary between one week to four weeks or longer. You assign work to sprints that teams will deliver at the end of the sprint. Several of the Azure Boards team tools rely on sprint assignments to the team.   
+Sprints&mdash;specified by Iteration Paths&mdash;are defined for a project and then selected by teams. A sprint cadence can vary between one week to four weeks or longer. Also, you can define sprints within a hierarchy that includes release trains. You assign work to sprints that teams commit to deliver at the end of the sprint. These Azure Boards tools rely on sprint assignments to a team  [Sprint backlogs, Taskboard, and Forecast](sprints/scrum-overview.md) and [Delivery plans](plans/review-team-plans.md). 
 
 #### Best practice tips: 
 
 - Define a sprint cadence that all teams within your product group will use  
-- Define at least six to twelve iterations that will support planning for six to twelve months 
+- Define at least six or more iterations that will support planning for the next six to twelve months 
 - Determine how teams will use iterations to manage backlog items
 	- Unassigned sprint work is assigned to the default backlog, or
-	- Unassigned sprint work is assigned to a Future backlog sprint.
-
+	- Unassigned sprint work is assigned to a designated future backlog sprint.
 
 
 #### To learn how: 
@@ -72,14 +73,14 @@ Sprints&mdash;specified by Iteration Paths&mdash;are defined for a project and t
 - [About Area and Iteration Paths, Define and assign Iteration Paths](../organizations/settings/about-areas-iterations.md#iteration-path-guidance)
 - [Define Iteration Paths and configure team iterations](../organizations/settings/set-iteration-paths-sprints.md) 
  
- 
-
 ## Choose the work item types you'll use  
 
-Determine which work item types your team will use to capture customer requirements and development work. Based on your project and the process used to create it, you have a choice from those shown in the following images. Also, each team can determine how they want to track bugs. 
+Determine which work item types your team will use to capture customer requirements and development work. If your project is based on the Agile process, we recommend using User Stories, Bugs, and Features.  
 
 > [!NOTE]
 > The guidance provided in this article are based on the Agile process. 
+
+If your project is based on another process, such as Basic, Scrum, or CMMI, you have a choice from those shown in the following images. Also, each team can determine how they want to track bugs.
 
 [!INCLUDE [temp](includes/work-item-types.md)]
 
@@ -89,15 +90,16 @@ Determine which work item types your team will use to capture customer requireme
 
 - Use **Features** to capture customer features you want to ship 
 - Quickly add features or requirements from the backlog and fill in details later
-- Use **Requirements**&mdash;User Stories, Product Backlog Items, Issues, or Requirements&mdash;to break-down Features into work the development team will own 
+- Use **Requirements**&mdash;User Stories (Agile),  Issues (Basic) Product Backlog Items (Scrum), or Requirements (CMMI)&mdash;to break-down Features into work the development team will own 
+- Use Bugs to capture code defects 
 - Map Requirements to Features to track progress at the project management level 
-- Size development work to be completed within a sprint 
-- Size feature deliverables to be completed within a sprint or within several sprints 
-- Size Epics to be delivered quarterly or to some milestone objective
+- Size Requirements to be completed within a sprint 
+- Size Features to be completed within a sprint or several sprints 
+- Size Epics to be delivered quarterly or to some milestone objective 
 - Let Developers use Tasks to break-down their work as needed.
 
 
-As project managers, you manage your features and the development team manages the requirements. By mapping them using parent-child links, you gain visibility into the progress of your features. Each work item you add to your team backlog is automatically assigned the default area path and iteration path set for your team. 
+As project managers, you manage the Features and the development team manages the Requirements. By mapping them using parent-child links, you gain visibility into the progress of your features. Each work item you add to your team backlog is automatically assigned the default area path and iteration path set for your team. 
 
 If you have larger initiatives or scenarios that require shipping several Features, you can group these under Epics, again using parent-child links. 
 
@@ -114,13 +116,15 @@ Create your product plan using the Features Backlog. The development team then c
 
 
 ### Features backlog 
+
 Project managers initiate the product plan by adding features to the Features backlog. Each feature should represent a shippable deliverable that addresses a customer need. 
 
 > [!div class="mx-imgBorder"]  
 > ![Features backlog](media/best-practices/features-backlog.png)  
 
 ### Product backlog 
-Development teams add user stories to the product backlog under each feature that represents the work they'll do to implement the feature. User stories should be sized so that they can be completed within a sprint. 
+
+Development teams add User Stories to their product backlog so that  the User Story is automatically assigned the team's default Area Path and Iteration Path. Then, they can map those stories under each Feature that represents the work they'll do to implement the Feature. Each User Story should be sized so that they can be completed within a sprint.  
 
 > [!div class="mx-imgBorder"]  
 > ![Product backlog](media/best-practices/product-backlog.png)  
@@ -128,15 +132,16 @@ Development teams add user stories to the product backlog under each feature tha
 ### Groom each backlog  
 
 Periodically review each backlog to perform these tasks: 
-- Define work to be performed
+- Define work to be performed 
+- Reorder work items using drag-and-drop so that they appear in priority order 
 - Open work items and add details 
 - Assign work to team members or to sprints
-- Reorder work items using drag-and-drop so that they appear in priority order 
 - Capture technical debt and non-feature work required to support a healthy ecosystem of delivery 
-- (Optional) Estimate requirements to gage team velocity and support forecasting 
+- Map unparented work to the Feature they belong to
+- (Optional) Estimate size of requirements to help determine team velocity and support forecasting  
 
 > [!TIP]   
-> You can monitor team velocity based on estimates assigned to completed work or a simple count of work items completed during sprints. However, to use the Forecast feature, you must assign a value to the Story Points, Effort, or Size field. IF you don't want to estimate requirements, you can simply assign a value of 1 to requirement estimates and then use the Forecast tool based on a count of work items. 
+> You can monitor team velocity based on estimates assigned to completed work or a simple count of work items completed during sprints. However, to use the Forecast feature, you must assign a value to the Story Points, Effort, or Size field. If you don't want to estimate requirements, you can simply assign a value of 1 to requirement estimates and then use the Forecast tool based on a count of work items. 
 
 #### Best practice tips: 
 
@@ -157,7 +162,13 @@ Periodically review each backlog to perform these tasks:
 ## Use tags to support queries and filtering 
  
 With work item tags, team members can assign ad-hoc tags to work items. You can use these tags to filter backlogs and boards as well as query on work items.  For tags to be useful to the team, provide some general guidance on how your team should use tags. Consider documenting this guidance in a central place, such as the [project wiki](../project/wiki/about-readme-wiki.md). 
- 
+
+
+> [!div class="mx-imgBorder"]  
+> ![Kanban board, Filter using keyword search](boards/media/filter/filter-kb-text-web-services.png)
+https://review.docs.microsoft.com/en-us/azure/devops/boards/boards/media/filter/filter-kb-text-web-services.png?view=azure-devops
+
+
 #### Best practice tips: 
 
 - Have a policy in place about how your teams will use tags
@@ -172,7 +183,7 @@ With work item tags, team members can assign ad-hoc tags to work items. You can 
 
 ## Forecast and milestone planning  
 
-To gain insight into what features can ship when, you can use the **Forecast** tool. This tool requires that you provide estimates to the Story Points, Effort, or Size field for each requirement. If you want to forecast on a simple count of work items, then simply assign the value of **1** to requirement estimates.
+To gain insight into what features can ship when, use the **Forecast** tool. This tool requires that you provide estimates to the Story Points, Effort, or Size field for each requirement. If you want to forecast on a simple count of work items, then simply assign the value of **1** to requirement estimates.
 
 
 #### Order the features backlog in priority order 
@@ -181,11 +192,11 @@ As project managers, you'll want to always have your features backlog in priorit
 
 Here the features backlog shows the sequence of features to ship. 
 
-:::image type="content" source="media/best-practices/feature-backlog-priority-order.png" alt-text="Requirements backlog, ordered by feature parent":::
+:::image type="content" source="media/best-practices/feature-backlog-priority-order.png" alt-text="Features backlog, ordered by feature parent":::
 
 #### Order the requirements backlog based on parent features 
 
-First you want to make sure you are completing the requirements needed to ship features. As shown in the following image, the requirements backlog has been ordered according to the features you want to ship. This assumes that all requirements in a feature must be complete in order to ship it. 
+First you want to make sure you are completing the requirements needed to ship features. As shown in the following image, the requirements backlog has been ordered according to the features you want to ship. This ordering assumes that all requirements in a feature must be complete in order to ship it. Also, Story Points have been assigned to each User Story. 
 
 :::image type="content" source="media/best-practices/product-backlog-ordered-parent.png" alt-text="Requirements backlog, ordered by feature parent":::
 
@@ -214,7 +225,7 @@ However, you can use one or more of the following options to mark a work item as
 - [Add a work item tag](/azure/devops/boards/queries/add-tags-to-work-items) labeled **Milestone**   
 - [Add a custom field](/azure/devops/organizations/settings/work/customize-process-field) labeled **Milestone** and populate it with a pick list of milestones  
 - [Link work items](/azure/devops/boards/backlogs/add-link) using the Predecessor/Successor or Related link type to a milestone work item 
-- [Assign the milestone work item to the sprint](/azure/devops/boards/sprints/assign-work-sprint) in which it's targeted for completion. 
+- [Assign a milestone work item to the sprint](/azure/devops/boards/sprints/assign-work-sprint) in which it's targeted for completion. 
  
 
 ## Manage dependencies  
@@ -224,7 +235,7 @@ In Microsoft Project, you manage tasks that depend on the completion of other ta
 
 ### Add link dialog
 
-Azure Boards supports a number of link types to track related work. Choose the Predecessor/Successor link types to track work with dependencies. 
+Azure Boards supports a number of link types to track related work. Choose the Predecessor/Successor link types to track work with dependencies. The quickest way to add a number of these links is to add a tag to work items that participate in producing or consuming dependencies, create a query based on this tag, and then add the required links from the triage mode of the query results. 
 
 > [!div class="mx-imgBorder"]  
 > ![Add link dialog, successor link type](media/best-practices/add-link-successor.png)  
@@ -244,6 +255,7 @@ Azure Boards doesn't provide a native view of the critical path. In part, as Agi
 
 #### Best practice tips: 
 
+- Add a `dependency` tag to work items participating in dependency management
 - Use **Predecessor/Successor** link types to track dependencies of work owned by other teams or within other projects
 - Create queries to track, add, and triage dependencies 
 - Use the [Dependency Tracker](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker) Marketplace extension to view work that you have dependencies on from other teams 
@@ -272,7 +284,7 @@ Each sprint, perform the following tasks:
 - Ensure each sprint work item is assigned to a team member 
 - Ensure each work item is scoped to be completed within the sprint
 - Ensure the acceptance criteria for the work is well defined and understood
-- Update the status of sprint work items to track sprint burndown 
+- Update the status of sprint work items as work moves from a *New* to *Active* to *Completed* state to track sprint burndown  
 - Check in with other teams on dependencies that your team's work depends on 
 - Monitor sprint progress using the Sprint burndown chart 
 
@@ -333,10 +345,10 @@ To review features delivered across several teams, configure a delivery plan. De
 
 ### To learn how: 
 
-- [Display rollup progress or totals](backlogs/display-rollup.md)
 - [Add columns to your Kanban board](boards/add-columns.md) 
 - [Customize cards](boards/customize-cards.md)
 - [Filter your Kanban board](boards/filter-kanban-board.md)
+- [Display rollup progress or totals](backlogs/display-rollup.md)
 - [Review team Delivery Plans](plans/review-team-plans.md)
 
 
