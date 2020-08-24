@@ -65,7 +65,7 @@ go get dev.azure.com/<organization>/<project>/<repo>.git
 
 ### HTTPS
 
-To use SSH with `go get`, you must create a PAT as described in [Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). This PAT requires only the **Code (read)** [scope](../../integrate/get-started/authentication/oauth.md#scopes).
+To use HTTPS with `go get`, you must create a PAT as described in [Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). This PAT requires only the **Code (read)** [scope](../../integrate/get-started/authentication/oauth.md#scopes).
 
 After you create the PAT, add this entry to your .gitconfig file:
 
