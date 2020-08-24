@@ -21,7 +21,7 @@ To use the **workspaces** command, you must have the **Read** permission set to 
 
 ```
 tf workspaces [/owner:ownername] [/computer:computername] 
-[/collection:TeamProjectCollectionUrl] [/format:(brief|detailed)] 
+[/collection:TeamProjectCollectionUrl] [/format:(brief|detailed|xml)] 
 [/updateUserName:oldUserName] [/updateComputerName:oldComputerName] 
 [workspacename][/login:username,[password]]
 ```
@@ -90,7 +90,7 @@ tf workspaces /remove:(*|workspace1[,workspace2,...])
 </tr>
 <tr>
 <td><p><strong>/format</strong></p></td>
-<td><p>Specifies the format of the workspace information. <strong>Brief</strong> returns workspace information without mappings. <strong>Detailed</strong> returns workspace information and also the mappings. The detailed format can only be used when the <strong>/collection</strong> option is specified. <strong>Brief</strong> is the default value.</p></td>
+<td><p>Specifies the format of the workspace information. <strong>Brief</strong> returns workspace information without mappings. <strong>Detailed</strong> returns workspace information and also the mappings. <strong>Xml</strong> returns workspace information, mapping, latest access date, and also the owner aliases. The detailed format can only be used when the <strong>/collection</strong> option is specified. <strong>Brief</strong> is the default value.</p></td>
 </tr>
 <tr>
 <td><p><strong>/updateUserName</strong></p></td>

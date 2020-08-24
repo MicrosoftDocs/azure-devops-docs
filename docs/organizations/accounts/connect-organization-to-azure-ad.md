@@ -16,16 +16,16 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-Learn how to connect your Azure DevOps organization to [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). You can sign in with the same username and password used with Microsoft services. Add members to your Azure DevOps organization who are already a part of your work organization. You can also enforce policies for accessing your team's critical resources and key assets. 
+Learn how to connect your Azure DevOps organization to [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). You can sign in with the same username and password that you use with Microsoft services. Add members to your Azure DevOps organization who are already a part of your work organization. You can also enforce policies for accessing your team's critical resources and key assets. 
 
 For more information about using Azure AD with Azure DevOps, see the [conceptual overview](access-with-azure-ad.md).
 
 ## Prerequisites
 
-- Ensure you're a Project Collection Administrator or [owner of the organization](../security/lookup-organization-owner-admin.md) to make the connection.
+- Ensure you're a Project Collection Administrator or [Owner of the organization](../security/lookup-organization-owner-admin.md) to make the connection.
 - Ensure that you exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](faq-azure-access.md#q-how-can-i-convert-an-azure-ad-guest-into-a-member).
 - Inform users of the upcoming change.
-   There's no downtime during this change, but users are affected. Let them know before you begin that there's a short series of steps to complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits continue with their new identity, as long as their emails match.
+   There's no downtime during this change, but users are affected. Let them know before you begin that there's a short series of steps they need to complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits continue with their new identity, as long as their emails match.
 - Delete unwanted users from your organization. For example, you can remove a user who left the company and is no longer an employee.
 - Prepare your mapping list for inviting users to Azure AD.
 
@@ -38,10 +38,10 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
         
         ![Open organization settings, users](../../media/settings/open-organization-settings-users-vert.png)
 
-    4. Compare your Azure DevOps email list with your Azure AD email list. Create an Azure AD email address entry for every user who's in the Azure DevOps organization and NOT in the Azure AD. Afterward, you can [invite users as guests](add-external-user.md) who don't have Azure AD email addresses.
+    4. Compare your Azure DevOps email list with your Azure AD email list. Create an Azure AD email address entry for every user who's in the Azure DevOps organization and not in the Azure AD. Afterward, you can [invite users as guests](add-external-user.md) who don't have Azure AD email addresses.
     
 > [!NOTE]
-> Ensure you're using Azure AD Public. Connecting Azure DevOps Services organizations to Azure AD Government and accessing Azure DevOps Services with user accounts from Azure AD Government is unsupported.
+> Ensure you're using Azure AD Public. Connecting Azure DevOps Services organizations to Azure AD Government and accessing Azure DevOps Services with user accounts from Azure AD Government isn't supported.
 
 ## Connect your organization to Azure AD
 
