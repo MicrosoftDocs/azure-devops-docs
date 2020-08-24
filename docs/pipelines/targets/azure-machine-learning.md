@@ -137,7 +137,7 @@ The files created by this command are stored in the `.azureml` directory.
 
 The example pipeline deploys the trained model without doing any performance checks. In a production scenario, you may want to log metrics so that you can determine the "best" model.
 
-For example, you have a model that is already deployed and has an accuracy of 90. You train a new model based on new checkins to the repo, and the accuracy is only 80, so you don't want to deply it. This is an example of a metric that you can create automation logic around, as you can do a simple comparison to evaluate the model. In other cases, you may have several metrics that are used to indicate the "best" model, and must be evaluated by a human before deployment.
+For example, you have a model that is already deployed and has an accuracy of 90. You train a new model based on new checkins to the repo, and the accuracy is only 80, so you don't want to deploy it. This is an example of a metric that you can create automation logic around, as you can do a simple comparison to evaluate the model. In other cases, you may have several metrics that are used to indicate the "best" model, and must be evaluated by a human before deployment.
 
 Depending on what "best" looks like for your scenario, you may need to create a [release pipeline](../release/index.md) where someone must inspect the metrics to determine if the model should be deployed.
 

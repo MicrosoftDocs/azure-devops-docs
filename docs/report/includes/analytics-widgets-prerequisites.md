@@ -8,10 +8,6 @@ ms.date: 07/14/2020
 
 <a id="permissions">  </a>
 
-::: moniker range=">= azure-devops-2019"
-## Prerequisites  
-::: moniker-end
-
 ::: moniker range="azure-devops"
 
 - You must be a member of a project. If you don't have a team project yet, [create one](/azure/devops/organizations/accounts/set-up-vs). 

@@ -512,7 +512,7 @@ az boards area team add --path  --team
 
 #### Parameters
 
-- **path**: Required. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. 
+- **path**: Required. Absolute path of an area. Example: --path \ProjectName\AreaName. 
 - **team**: Required. Name or ID of the team.
 - **include-sub-areas**: Optional. Include child nodes of the area path. Accepted values: false, true. 
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
@@ -612,7 +612,7 @@ az boards area project update --path
                               [--project]
 ```
 
-- **path**: Required. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.  
+- **path**: Required. Absolute path of an area. Example: --path \ProjectName\AreaName.  
 - **child-id**: Optional. Moves an existing area path and adds it as a child node for the specified path name or ID.  
 - **name**: Optional. Specifies the new name of the area path.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".   
@@ -647,7 +647,7 @@ az boards area team remove --path
 ```
 
 #### Parameters
-- **path**: Required. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.  
+- **path**: Required. Absolute path of an area. Example: --path \ProjectName\AreaName.  
 - **team**: Required. Name or ID of the team.
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". 
 
@@ -658,7 +658,7 @@ For example, the following command removes the \Service Delivery\Voice area path
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
-az boards area team remove --path "\Fabrikam Fiber\Area\Service Delivery\Voice" --team Voice --project "Fabrikam Fiber" --output table
+az boards area team remove --path "\Fabrikam Fiber\Service Delivery\Voice" --team Voice --project "Fabrikam Fiber" --output table
 ```
 
 ::: moniker-end
