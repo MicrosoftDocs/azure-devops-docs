@@ -1162,7 +1162,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
    :::column-end:::
    :::column span="2":::
       > [!div class="mx-imgBorder"]  
-      > ![Collection level permissions, on-premises, On-premises XML process model](media/permissions/collection-level-permissions-2020-xml-on-prem-1.png)
+      > ![Collection level permissions, on-premises, On-premises XML process model](media/permissions/collection-level-permissions-2020-xml-on-premises-1.png)
    :::column-end:::
 :::row-end:::
 ---
@@ -1779,7 +1779,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
    :::column-end:::
    :::column span="2":::
       > [!div class="mx-imgBorder"]  
-      > ![Project-level permissions, on-premises, On-premises XML process model](media/permissions/project-level-permissions-2020-xml-on-prem.png)
+      > ![Project-level permissions, on-premises, On-premises XML process model](media/permissions/project-level-permissions-2020-xml-on-premises.png)
    :::column-end:::
 :::row-end:::
 ---
