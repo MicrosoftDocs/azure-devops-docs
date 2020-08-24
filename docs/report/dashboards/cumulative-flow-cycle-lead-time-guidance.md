@@ -219,13 +219,14 @@ You can also see how process changes affect your lead and cycle time. For exampl
 
 
 ## Try this next
+
+::: moniker range=">= azure-devops-2019" 
 > [!div class="nextstepaction"]
 > [Configure your cumulative flow charts](cumulative-flow.md) or 
 > [Configure a lead time or cycle time chart](cycle-time-and-lead-time.md)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
-## Try this next
 > [!div class="nextstepaction"]
 > [Configure your cumulative flow chart](cumulative-flow.md) 
 ::: moniker-end

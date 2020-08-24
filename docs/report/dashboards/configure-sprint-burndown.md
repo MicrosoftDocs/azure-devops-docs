@@ -132,6 +132,10 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
 
 ::: moniker-end
 
+
+
+
+
 ::: moniker range=">= tfs-2015"
 
 ## The Sprint Burndown widget
@@ -175,13 +179,11 @@ The **Sprint Burndown** widget adds a chart based on Remaining Work defined for 
 
 ::: moniker-end
 
+## Prerequisites  
 
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
-
 ::: moniker range=">= tfs-2015 < azure-devops-2019"
-
-## Prerequisites  
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  
@@ -190,8 +192,6 @@ The **Sprint Burndown** widget adds a chart based on Remaining Work defined for 
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
-
-## Prerequisites  
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  

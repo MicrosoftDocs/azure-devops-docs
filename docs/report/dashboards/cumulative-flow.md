@@ -94,6 +94,13 @@ For the CFD to provide useful information, you'll want to update the status of w
 
 For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
+
+::: moniker range=">= azure-devops-2019"
+
+## Prerequisites  
+
+::: moniker-end
+
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 

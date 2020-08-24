@@ -77,6 +77,14 @@ Use this article to learn:
 
 ::: moniker-end
 
+
+
+::: moniker range=">= azure-devops-2019"
+
+## Prerequisites  
+
+::: moniker-end
+
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 
