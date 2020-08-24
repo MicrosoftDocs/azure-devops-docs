@@ -41,13 +41,13 @@ go get dev.azure.com/<organization>/<project>/_git/<repo>/subfolder1/subfolder2
 
 ## Go get with private projects
 
-If your Azure Devops Git repo is private you can either use SSH or authenticate with a Personal Access Token (PAT) for HTTPS.
+If your Azure DevOps Git repo is private, you can either use SSH or authenticate with a Personal Access Token (PAT) for HTTPS.
 
 ### SSH
 
-You need to have SSH keys setup for Azure DevOps as described in [Use SSH Key authentication](use-ssh-keys-to-authenticate.md)
+To use SSH with `go get`, you must have SSH keys set up for Azure DevOps as described in [Use SSH Key authentication](use-ssh-keys-to-authenticate.md).
 
-After you have SSH keys setup, add this entry to your `.gitconfig`:
+When you have SSH keys set up, add this entry to your .gitconfig file:
 
 ```
 [url "git@ssh.dev.azure.com:v3/<organization>/"]
@@ -55,7 +55,9 @@ After you have SSH keys setup, add this entry to your `.gitconfig`:
 ```
 
 With this entry and a specific URL format, you can now use `go get`.
-Note the `.git` that follows the repo name and `_git` are not present, as we're using the SSH url.
+
+> [!NOTE]
+> The `.git` that follows the repo name and `_git` are not included because you're using the SSH URL.
 
 ```
 go get dev.azure.com/<organization>/<project>/<repo>.git
@@ -63,11 +65,9 @@ go get dev.azure.com/<organization>/<project>/<repo>.git
 
 ### HTTPS
 
-You need to create a Personal Access Token (PAT) as described in 
-[Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
-This PAT requires only the **Code (read)** 
-[scope](../../integrate/get-started/authentication/oauth.md#scopes).
-After you create the PAT, add this entry to your `.gitconfig`:
+To use SSH with `go get`, you must create a PAT as described in [Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). This PAT requires only the **Code (read)** [scope](../../integrate/get-started/authentication/oauth.md#scopes).
+
+After you create the PAT, add this entry to your .gitconfig file:
 
 ```
 [url "https://<user>:<token>@dev.azure.com/<organization>/<project>/_git/<repo>"]
@@ -75,7 +75,9 @@ After you create the PAT, add this entry to your `.gitconfig`:
 ```
 
 With this entry and a specific URL format, you can now use `go get`.
-Note the `.git` that follows the repo name.
+
+> [!NOTE]
+> Be sure to use `.git` after the repo name.
 
 ```
 go get dev.azure.com/<organization>/<project>/_git/<repo>.git
