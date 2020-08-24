@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Do you want an easier way to control who can access your team's critical resources and key business assets in Azure DevOps Services?
-If you already use Microsoft services like Office 365 or [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/), you can use the same identities with your organization.
+If you already use Microsoft services like Microsoft 365 or [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/), you can use the same identities with your organization.
 [Azure AD works with your organization](access-with-azure-ad.md) to control access and authenticate users.
 
 When you organize directory members with [Azure AD groups](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups), you can reuse those groups to manage permissions in bulk for your organization. Just add those groups to the group that you want. For example, add them to built-in groups like Project Collection Administrators or Contributors, or manually created groups like your project management team. Azure AD group members inherit permissions from the Azure DevOps group, so you don't have to manage group members one at a time.

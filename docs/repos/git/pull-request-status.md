@@ -20,19 +20,11 @@ These policies enable teams to enforce many best practices related to reviewing 
 
 Integrating into the PR workflow involves a few different concepts:
 
-* [Service hooks](#service-hooks) - this is how services that want to integrate with a pull request know when a pull request has been created or updated.
 * [Pull request status](#pull-request-status) - provides a way for services to associate success/failure information with a pull request.
 * [Status policy](#status-policy) - provides a mechanism to block pull request completion until the pull request status indicates success.
 * [Custom actions](#custom-actions) - provides a way to extend the status menu using Azure DevOps Services extensions.
 
 In this topic, you'll learn about pull request statuses and how they can be used to integrate in the PR workflow.
-
-## Service hooks
-
-Any service that wants to integrate with pull requests will need to know when a new PR has been created or updated, so that the contents of the PR may be evaluated. 
-[Service hooks](../../service-hooks/overview.md) enable external systems to be alerted when events occur in Azure DevOps Services.
-There are two event triggers for pull requests: - **pull request created** and **pull request updated**. 
-Ensure that there are subscriptions for both of these events to receive notifications any time the code in a PR changes.
 
 ## Pull request status
 

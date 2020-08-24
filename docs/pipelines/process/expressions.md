@@ -4,20 +4,20 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 06/25/2020
+ms.date: 08/19/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Expressions
 
-**Azure Pipelines | TFS 2018 | TFS 2017.3** 
+**Azure Pipelines | TFS 2018 | TFS 2017.3**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.
-The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run. 
+The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run.
 
 ::: moniker range=">= azure-devops-2019"
 ```yaml
@@ -29,12 +29,12 @@ steps:
 
 Another common use of expressions is in defining variables.
 Expressions can be evaluated at [compile time](runs.md#process-the-pipeline) or at [run time](runs.md#run-each-step).
-Compile time expressions can be used anywhere; runtime expressions can be used in variables and conditions. 
+Compile time expressions can be used anywhere; runtime expressions can be used in variables and conditions.
 
 ```yaml
 # Two examples of expressions used to define variables
 # The first one, a, is evaluated when the YAML file is compiled into a plan.
-# The second one, b, is evaluated at runtime. 
+# The second one, b, is evaluated at runtime.
 # Note the syntax ${{}} for compile time and $[] for runtime expressions.
 variables:
   a: ${{ <expression> }}
@@ -43,7 +43,7 @@ variables:
 
 The difference between runtime and compile time expression syntaxes is primarily what context is available.
 In a compile-time expression (`${{ <expression> }}`), you have access to `parameters` and statically defined `variables`.
-In a runtime expression (`$[ <expression> ]`), you have access to more `variables` but no parameters. 
+In a runtime expression (`$[ <expression> ]`), you have access to more `variables` but no parameters.
 
 In this example, a runtime expression sets the  value of `$(isMain)`. A static variable in a compile expression sets the value of `$(compileVar)`.
 
@@ -81,7 +81,7 @@ variables:
 `True` and `False` are boolean literal expressions.
 
 ### Null
-Null is a special literal expression that's returned from a dictionary miss, e.g. (`variables['noSuch']`). Null can be the output of an expression but cannot be called directly within an expression. 
+Null is a special literal expression that's returned from a dictionary miss, e.g. (`variables['noSuch']`). Null can be the output of an expression but cannot be called directly within an expression.
 
 ### Number
 Starts with '-', '.', or '0' through '9'.
@@ -92,7 +92,7 @@ Must be single-quoted. For example: `'this is a string'`.
 To express a literal single-quote, escape it with a single quote.
 For example: `'It''s OK if they''re using contractions.'`.
 
-You can use a pipe character (`|`) for multiline strings. 
+You can use a pipe character (`|`) for multiline strings.
 
 ```yaml
 myKey: |
@@ -193,8 +193,9 @@ Later, if you edit the YAML file, and set the value of `major` back to 1, then t
 Here is another example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
 
 > [!NOTE]
-> `pipeline.startTime` is not available outside of expressions. `pipeline.startTime` 
+> `pipeline.startTime` is not available outside of expressions. `pipeline.startTime`
 >  formats `system.pipelineStartTime` into a date and time object so that it is available to work with expressions.
+> The default time zone for `pipeline.startTime` is UTC. You can [change the time zone](../../organizations/accounts/change-time-zone.md) for your organization.
 
 
 ```yaml
@@ -204,7 +205,7 @@ jobs:
     a: $[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]
   steps:
   - bash: echo $(a)
-``` 
+```
 
 Here is an example of having a counter that maintains a separate value for PRs and CI runs.
 
@@ -273,7 +274,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Each element in the array is converted to a string. Complex objects are converted to empty string.
 * If the right parameter is not an array, the result is the right parameter converted to a string.
 
-In this example, a semicolon gets added between each item in the array. The parameter type is an object. 
+In this example, a semicolon gets added between each item in the array. The parameter type is an object.
 
 ```yaml
 parameters:
@@ -285,7 +286,7 @@ parameters:
     - ZOO
 
 variables:
-   A: ${{ join(';',parameters.myArray) }} 
+   A: ${{ join(';',parameters.myArray) }}
 
 steps:
   - script: echo $A # outputs FOO;BAR;ZOO
@@ -400,8 +401,8 @@ You can use the following status check functions as expressions in conditions, b
 ### succeeded
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
 * For a job:
-  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded. 
-  * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, it will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition. 
+  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
+  * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, it will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition.
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
   * Evaluates to `False` if the pipeline is canceled.
 
@@ -415,9 +416,9 @@ You can use the following status check functions as expressions in conditions, b
 
 ## Conditional insertion
 
-You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax. 
+You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax.
 
-For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md). 
+For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md).
 
 ### Conditionally assign a variable
 ```yml
@@ -458,8 +459,8 @@ Expressions can use the dependencies context to reference previous jobs or stage
 * Reference output variables in the previous stage in a stage
 * Reference output variables in a job in a previous stage in the following stage
 
-The context is called `dependencies` for jobs and stages and works much like variables. 
-Inside a job, if you refer to an output variable from a job in another stage, the context is called `stageDependencies`. 
+The context is called `dependencies` for jobs and stages and works much like variables.
+Inside a job, if you refer to an output variable from a job in another stage, the context is called `stageDependencies`.
 
 Structurally, the `dependencies` object is a map of job and stage names to `results` and `outputs`.
 Expressed as JSON, it would look like:
@@ -479,7 +480,7 @@ Expressed as JSON, it would look like:
 }
 ```
 
-The `stageDependencies` object is structured the same way. Within a single stage, the current stage will not appear. In that case, you will directly reference the dependencies. 
+The `stageDependencies` object is structured the same way. Within a single stage, the current stage will not appear. In that case, you will directly reference the dependencies.
 
 ```json
 "dependencies": {
@@ -527,7 +528,7 @@ jobs:
   - script: Job C
 ```
 
-Similarly, in this example Stage A will always be skipped and Stage B will run. 
+Similarly, in this example Stage A will always be skipped and Stage B will run.
 
 ```yaml
 stages:
@@ -552,11 +553,13 @@ You can also use dependencies to reference output variables in the previous job 
 jobs:
 - job: A
   steps:
-  - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+  - bash: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+  # or on Windows:
+  # - script: echo ##vso[task.setvariable variable=skipsubsequent;isOutput=true]false
     name: printvar
 
 - job: B
-  condition: and(succeeded(), ne(dependencies.A.outputs['printvar.skipsubsequent'], 'true'))
+  condition: and(succeeded(), eq(dependencies.A.outputs['printvar.skipsubsequent'], 'false'))
   dependsOn: A
   steps:
   - script: echo hello from B
@@ -571,11 +574,13 @@ stages:
   jobs:
   - job: A1
     steps:
-     - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+     - bash: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+     # or on Windows:
+     # - script: echo ##vso[task.setvariable variable=skipsubsequent;isOutput=true]false
        name: printvar
 
 - stage: B
-  condition: and(succeeded(), ne(stageDependencies.A.outputs['A1.printvar.skipsubsequent'], 'true'))
+  condition: and(succeeded(), eq(dependencies.A.outputs['A1.printvar.skipsubsequent'], 'false'))
   dependsOn: A
   jobs:
   - job: B1
@@ -584,7 +589,7 @@ stages:
 ```
 
 
-You can also reference output variables that are in a job in a previous stage. In this example, there is both a job dependency and a stage dependency. 
+You can also reference output variables that are in a job in a previous stage. In this example, there is both a job dependency and a stage dependency.
 
 ```yaml
 trigger: none
@@ -597,13 +602,17 @@ stages:
   jobs:
   - job: A1
     steps:
-     - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+     - bash: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+     # or on Windows:
+     # - script: echo ##vso[task.setvariable variable=skipsubsequent;isOutput=true]false
        name: printvar
-     - script: echo "##vso[task.setvariable variable=stageexists;isOutput=true]true"
+     - bash: echo "##vso[task.setvariable variable=stageexists;isOutput=true]true"
+     # or on Windows:
+     # - script: echo ##vso[task.setvariable variable=stageexists;isOutput=true]true
        name: stagevar
 
 - stage: B
-  condition: and(succeeded(), ne(dependencies.A.A1.outputs['printvar.skipsubsequent'], 'true'))
+  condition: and(succeeded(), eq(dependencies.A.outputs['A1.printvar.skipsubsequent'], 'false'))
   dependsOn: A
   jobs:
   - job: B1
@@ -615,6 +624,8 @@ stages:
      - script: echo hello from Stage B2
 
 ```
+
+If you experience issues with output variables having quote characters ('/") in them, see [this troubleshooting guide](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended)
 
 ::: moniker-end
 
@@ -646,11 +657,11 @@ This would return:
 
 ## Type casting
 
-Values in an expression may be converted from one type to another as the expression gets evaluated. 
-When an expression is evaluated, the parameters are coalesced to the relevant data type and then turned back into strings. 
+Values in an expression may be converted from one type to another as the expression gets evaluated.
+When an expression is evaluated, the parameters are coalesced to the relevant data type and then turned back into strings.
 
-For example, in this YAML, the values `true` and `false` are converted  to `1` and `0` when the expression is evaluated. 
-The function `lt()` returns `True` when the left parameter is less than the right parameter. 
+For example, in this YAML, the values `true` and `false` are converted  to `1` and `0` when the expression is evaluated.
+The function `lt()` returns `True` when the left parameter is less than the right parameter.
 
 ```yaml
 variables:
@@ -663,8 +674,8 @@ steps:
 ```
 
 
-In this example, the values `variables.emptyString` and the empty string both evaluate as empty strings. 
-The function `coalesce()` evaluates the parameters in order, and returns the first value that does not equal null or empty-string. 
+In this example, the values `variables.emptyString` and the empty string both evaluate as empty strings.
+The function `coalesce()` evaluates the parameters in order, and returns the first value that does not equal null or empty-string.
 
 
 ```yaml
@@ -740,10 +751,10 @@ steps:
 - bash: |
     MAJOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f1)
     echo "This is the major run number: $MAJOR_RUN"
-    
+
     MINOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f2)
     echo "This is the minor run number: $MINOR_RUN"
-    
+
     # create pipeline variables
     echo "##vso[task.setvariable variable=major]$MAJOR_RUN"
     echo "##vso[task.setvariable variable=minor]$MINOR_RUN"

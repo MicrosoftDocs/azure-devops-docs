@@ -978,7 +978,6 @@ parameters:
   type: enum            # data types, see below
   default: any          # default value; if no default, then the parameter MUST be given by the user at runtime
   values: [ string ]    # allowed list of values (for some data types)
-  secret: bool          # whether to treat this value as a secret; defaults to false
 ```
 
 ### Types
@@ -1465,7 +1464,7 @@ You can use [scheduled triggers in the classic editor](process/scheduled-trigger
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="> azure-devops-2019"
 
 A scheduled trigger specifies a schedule on which branches are built.
 If you specify no scheduled trigger, no scheduled builds occur.
@@ -1483,10 +1482,9 @@ schedules:
   always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
 
-> [!IMPORTANT]
-> When you specify a scheduled trigger, only branches that you explicitly configure for inclusion are scheduled for a build.
-> Inclusions are processed first, and then exclusions are removed from that list.
-> If you specify an exclusion but no inclusions, no branches are built.
+> [!NOTE]
+> If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
+
 
 # [Example](#tab/example)
 

@@ -90,6 +90,22 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
+    <td rowspan="13"><a href="2020/sprint-174-update.md" data-raw-source="[24 August 2020](2020/sprint-174-update.md)">24 August 2020</a></td>
+    <td>System work item types on backlogs and boards</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Audit logging event</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Azure Boards GitHub app repo limit raised (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Customize work item state when pull request is merged (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Pipelines images announcements</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Agent log uploads improved</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Optionally mount container volumes read-only</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Fine-grained control over container start/stop</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Unzip task bundles for each step</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Improve release security by restricting scope of access tokens</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>YAML preview API enhancements</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Configure upstream sources for Universal Packages</td><td>Artifacts</td><td>Future</td></tr>
+    <tr><td>Update Package Version REST API now available for Maven packages</td><td>Artifacts</td><td>Future</td></tr>
+    <tr>
     <td rowspan="5"><a href="2020/sprint-173-update.md" data-raw-source="[03 August 2020](2020/sprint-173-update.md)">03 August 2020</a></td>
     <td>Allow stakeholders to drag and drop work items</td><td>Boards</td><td>Future</td>
     </tr>

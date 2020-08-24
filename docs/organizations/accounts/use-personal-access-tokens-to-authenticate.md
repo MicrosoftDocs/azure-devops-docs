@@ -40,6 +40,6 @@ A: No, we don't have a REST API to renew a PAT. You can only regenerate a PAT wi
 
 ### Q: Can I use basic auth with all of Azure DevOps REST APIs?
 
-A: No. You can use basic auth with most of them, but [organizations and profiles](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1) only support [OAuth](../../integrate/get-started/authentication/oauth.md).
+A: No. You can use basic auth with most of them, but [organizations and profiles](/rest/api/azure/devops/) only support [OAuth](../../integrate/get-started/authentication/oauth.md).
 
 ::: moniker-end
