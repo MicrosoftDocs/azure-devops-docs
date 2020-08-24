@@ -1,6 +1,7 @@
 ---
 title: What are all the default permissions and groups? 
 titleSuffix: Azure DevOps
+description: Reference description and usage guide for all permissions and default security groups for Azure DevOps
 ms.technology: devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
@@ -539,7 +540,7 @@ Security Service Group
 ::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Project collection groups](media/permissions/collection-admin-permissions-vsts.png)
+> ![Project collection groups, on-premises](media/permissions/collection-admin-permissions-vsts.png)
 
 ::: moniker-end
 
@@ -800,7 +801,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 
 
 > [!div class="mx-imgBorder"]  
-> ![Project Settings>Work>Project Configuration](media/permissions/global-security-azdo-server-2019-update-1.png) 
+> ![Server Level permissions](media/permissions/global-security-azdo-server-2019-update-1.png) 
 
 
 <table valign="top" width="100%">
@@ -916,7 +917,7 @@ You manage collection-level permissions through the [web portal admin context](.
 > To enable the new user interface for the Organizations Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not.  
 
 > [!div class="mx-imgBorder"]  
-> ![Collection level permissions and groups](media/permissions/collection-level-permissions-new.png)   
+> ![Organization level permissions and groups](media/permissions/collection-level-permissions-new.png)   
 
 ::: moniker-end
 
@@ -924,7 +925,7 @@ You manage collection-level permissions through the [web portal admin context](.
 ::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Collection level permissions and groups](media/permissions/collection-level-permissions.png)   
+> ![Collection level permissions and groups, on-premises](media/permissions/collection-level-permissions.png)   
 
 ::: moniker-end
 
@@ -1354,12 +1355,12 @@ You manage project-level permissions from the [web portal admin context](set-pro
 #### [Preview page](#tab/preview-page) 
 
 > [!div class="mx-imgBorder"]
-> ![Project-level permissions dialog](media/permissions/project-permissions-contributors-s154.png)
+> ![Project-level permissions dialog, preview page](media/permissions/project-permissions-contributors-s154.png)
 
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]
-> ![Project-level permissions dialog](media/permissions/project-level-permissions.png)
+> ![Project-level permissions dialog, current page](media/permissions/project-level-permissions.png)
 
 * * *  
 
@@ -1368,7 +1369,7 @@ You manage project-level permissions from the [web portal admin context](set-pro
 ::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]
-> ![Project-level permissions dialog](media/permissions/project-level-permissions.png)
+> ![Project-level permissions dialog, on-premises](media/permissions/project-level-permissions.png)
 
 ::: moniker-end
 
@@ -1862,7 +1863,7 @@ Permissions for team dashboards can be set individually. The default permissions
 ### Team dashboard default permissions
 
 > [!div class="mx-imgBorder"]  
-> ![Project dashboard permissions dialog](../../report/dashboards/media/set-permissions/project-setting-permissions.png) 
+> ![Team dashboard permissions dialog](../../report/dashboards/media/set-permissions/project-setting-permissions.png) 
 
 By default, team administrators are granted all permissions for their team dashboards, including managing default and individual dashboard permissions. 
 
@@ -1886,7 +1887,7 @@ By default, team administrators are granted all permissions for their team dashb
 ::: moniker range=">= tfs-2017"
 
 > [!div class="mx-imgBorder"]  
-> ![Project dashboard permissions dialog](../../report/dashboards/media/set-permissions/team-analytics-dashboard-permissions.png) 
+> ![Project team dashboard permissions dialog](../../report/dashboards/media/set-permissions/team-analytics-dashboard-permissions.png) 
 
 Team administrators can change the permissions for individual team dashboards by changing the following two permissions.  
 
@@ -1913,7 +1914,7 @@ You manage build permissions [for each build defined in the web portal](../../pi
 ::: moniker range="< azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Build object-level permissions dialog](media/permissions/build-permissions-vsts.png)
+> ![Build object-level permissions dialog, on-premises](media/permissions/build-permissions-vsts.png)
 
 ::: moniker-end
 
@@ -3091,10 +3092,10 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 > [!div class="mx-tdBreakAll"]  
 > |TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators &<<br/>Project Collection Service Accounts|
 > |---|---|---|:---:|
-> |CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![checkmark](media/checkmark.png)|
-> |GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](media/checkmark.png)|
-> |GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![checkmark](media/checkmark.png)|
-> |UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![checkmark](media/checkmark.png)|
+> |CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|:::image type="icon" source="media/checkmark.png" border="false":::|
+> |GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|:::image type="icon" source="media/checkmark.png" border="false":::|
+> |GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|:::image type="icon" source="media/checkmark.png" border="false":::|
+> |UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|:::image type="icon" source="media/checkmark.png" border="false":::|
 
 
 ## Related articles
