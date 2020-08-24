@@ -978,7 +978,6 @@ parameters:
   type: enum            # data types, see below
   default: any          # default value; if no default, then the parameter MUST be given by the user at runtime
   values: [ string ]    # allowed list of values (for some data types)
-  secret: bool          # whether to treat this value as a secret; defaults to false
 ```
 
 ### Types
