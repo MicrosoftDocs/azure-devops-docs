@@ -103,7 +103,7 @@ For more information, see the following articles:
 
 ## Add users through Azure Active Directory
 
-You can manage your user base with Azure Active Directory (Azure AD). With Azure AD, you can control access the same way that you do with Microsoft services like Office 365 and Microsoft Azure. 
+You can manage your user base with Azure Active Directory (Azure AD). With Azure AD, you can control access the same way that you do with Microsoft services like Microsoft 365 and Microsoft Azure. 
 
 If you already use Azure AD, you can [use your directory to authenticate access to Azure DevOps Services](access-with-azure-ad.md). Recommended practice for managing large user bases is to use Azure AD, however it's optional.  
 

@@ -4,7 +4,7 @@ ms.custom: seodec18, contperfq4
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 05/05/2020
+ms.date: 08/19/2020
 
 monikerRange: '>= tfs-2015'
 ---
@@ -670,7 +670,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   variables:
     myVarFromJobA: $[ dependencies.A.outputs['setvarStep.myOutputVar'] ]  # map in the variable
                                                                           # remember, expressions require single quotes
@@ -692,7 +692,7 @@ jobs:
 # Set an output variable from a job with a matrix
 - job: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   strategy:
     maxParallel: 2
     matrix:
@@ -703,16 +703,16 @@ jobs:
         configuration: release
         platform: x64
   steps:
-  - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the $(configuration) value"
+  - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the $(configuration) value"
     name: setvarStep
-  - script: echo $(setvarStep.myOutputVar)
+  - bash: echo $(setvarStep.myOutputVar)
     name: echovar
 
 # Map the variable from the debug job
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   variables:
     myVarFromJobADebug: $[ dependencies.A.outputs['debugJob.setvarStep.myOutputVar'] ]
   steps:
@@ -726,10 +726,10 @@ jobs:
 # Set an output variable from a job with slicing
 - job: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
     parallel: 2 # Two slices
   steps:
-  - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
+  - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the slice $(system.jobPositionInPhase) value"
     name: setvarStep
   - script: echo $(setvarStep.myOutputVar)
     name: echovar
@@ -738,7 +738,7 @@ jobs:
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   variables:
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
   steps:
@@ -754,26 +754,26 @@ jobs:
 # Set an output variable from a deployment
 - deployment: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   environment: staging
   strategy:
     runOnce:
       deploy:
         steps:
-        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+        - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
           name: setvarStep
-        - script: echo $(setvarStep.myOutputVar)
+        - bash: echo $(setvarStep.myOutputVar)
           name: echovar
 
 # Map the variable from the job for the first slice
 - job: B
   dependsOn: A
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
   variables:
     myVarFromDeploymentJob: $[ dependencies.A.outputs['A.setvarStep.myOutputVar'] ]
   steps:
-  - script: "echo $(myVarFromDeploymentJob)"
+  - bash: "echo $(myVarFromDeploymentJob)"
     name: echovar
 ```
 

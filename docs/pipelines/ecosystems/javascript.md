@@ -5,7 +5,7 @@ ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: conceptual
 ms.custom: seodec18, seo-javascript-september2019, contperfq4
-ms.date: 05/08/2020
+ms.date: 08/19/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -876,7 +876,7 @@ The **Node Tool Installer** task handles this model correctly.
 However, if your work requires the use of `nvm`, you can add the following script to the beginning of each pipeline:
 ```yaml
 steps:
-- script: |
+- bash: |
     NODE_VERSION=12  # or whatever your preferred version is
     npm config delete prefix  # avoid a warning
     . ${NVM_DIR}/nvm.sh
@@ -888,7 +888,7 @@ steps:
 Then `node` and other command-line tools will work for the rest of the pipeline job.
 In each step where you need to use the `nvm` command, you'll need to start the script with:
 ```yaml
-- script: |
+- bash: |
     . ${NVM_DIR}/nvm.sh
     nvm <command>
 ```
