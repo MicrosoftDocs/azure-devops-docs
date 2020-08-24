@@ -132,13 +132,7 @@ Associate the public key generated in the previous step with your user ID.
    ```
 
 SSH may display the server's SSH fingerprint and ask you to verify it.
-
-For cloud-hosted Azure DevOps Services, where clone URLs contain either `ssh.dev.azure.com` or `vs-ssh.visualstudio.com`, the fingerprint should match one of the following formats:
-* MD5: `97:70:33:82:fd:29:3a:73:39:af:6a:07:ad:f8:80:49` (RSA)
-* SHA256: `SHA256:ohD8VZEXGWo6Ez8GSEJQ9WpafgLFsOfLOtGGQCQo6Og` (RSA)
-These fingerprints are also listed in the **SSH public keys** page.
-
-For self-hosted instances of Azure DevOps Server, you should verify that the displayed fingerprint matches one of the fingerprints in the **SSH public keys** page.
+You should verify that the displayed fingerprint matches one of the fingerprints in the **SSH public keys** page.
 
 SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](https://technet.microsoft.com/library/cc959354.aspx).
 Once you accept the host's fingerprint, SSH will not prompt you again unless the fingerprint changes. 
