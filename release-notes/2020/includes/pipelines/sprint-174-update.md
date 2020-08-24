@@ -9,7 +9,7 @@ ms.topic: include
 ### Pipelines images announcements
 
 > [!NOTE]
-> Azure Pipelines images are continuously updated in an effort to provide users with the best experience possible. These routine updates are predominantly aimed at addressing bugs or out of date software. They will often have no impact on your pipelines, however this is not always the case. Your pipeline may be impacted in the event, it takes a dependency on a piece of software that has either been removed or updated on the image.
+> Azure Pipelines images are continuously updated in an effort to provide users with the best experience possible. These routine updates are predominantly aimed at addressing bugs or out of date software. They will often have no impact on your pipelines, however this is not always the case. Your pipeline may be impacted if it takes a dependency on a piece of software that has either been removed or updated on the image.
 >
 > To learn more about upcoming updates on our Windows, Linux and MacOS images, please read the following announcements:
 >
@@ -30,7 +30,7 @@ When an agent stops communicating with the Azure Pipelines server, the job it wa
 
 ### Optionally mount container volumes read-only
 
-When you run a container job in Azure Pipelines, several volumes containing the workspace, tasks, and other materials are mapped as volumes. These volumes default to read/write access. For increased security, you can mount the volumes read-only by altering your container specification in YAML. Each key under `mountReadOnly` can be set to `true` for read-only (the default is `false`)
+When you run a container job in Azure Pipelines, several volumes containing the workspace, tasks, and other materials are mapped as volumes. These volumes default to read/write access. For increased security, you can mount the volumes read-only by altering your container specification in YAML. Each key under `mountReadOnly` can be set to `true` for read-only (the default is `false`).
 
 ```yml
 resources:

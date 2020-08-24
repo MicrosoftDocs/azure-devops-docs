@@ -10,13 +10,13 @@ ms.topic: include
 
 Now you can configure your Azure Artifacts feeds to automatically download Universal Packages from upstream sources on demand.
 
-Previously, you could configure upstream sources on your feed for NuGet, Python, Maven, and npm packages, but not for Universal Packages. This was due to a difference in the storage technology used for Universal Packages, which support much large packages than other supported package types.
+Previously, you could configure upstream sources on your feed for NuGet, Python, Maven, and npm packages, but not for Universal Packages. This was due to a difference in the storage technology used for Universal Packages, which support much larger packages than other supported package types.
 
 You can now configure upstream sources for Universal Packages in the same way as for other package types; open your feed settings, click **Upstream sources** -> **Add upstream source** -> and choose the source type that is right for you. You will see Universal Packages (UPack) as a new option in the next view (see image below). For more information, please see the upstream sources configuration [documentation](https://docs.microsoft.com/azure/devops/artifacts/how-to/set-up-upstream-sources?view=azure-devops#:~:text=Add%20an%20Azure%20Artifacts%20feed%20in%20your%20organization,dialog%20where%20you%20can%20choose%20Add%20upstream%20source.).
 
 <img src="../../media/174-artifacts-1-0.png" width="600" alt="upack">
 
-Note that Universal Packages in upstream sources are only supported between feeds in the same DevOps Organization. We have work this upcoming to add this functionality for use with feeds on other organizations associated with your AAD.
+Note that Universal Packages in upstream sources are only supported between feeds in the same DevOps Organization. We have work planned for this upcoming sprint cycle to add this functionality for use with feeds on other organizations associated with your AAD.
 
 
 ### Update Package Version REST API now available for Maven packages
@@ -35,13 +35,13 @@ You can set the following:
 
 | **Name** | **In** | **Required** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-| artifactId | path | TRUE | string | Artifact ID of the package. |
-| feed | path | TRUE | string | Name or ID of the feed. |
-| groupId | path | TRUE | string | Group ID of the package. |
-| organization | path | TRUE | string | The name of the Azure DevOps organization. |
-| version | path | TRUE | string | Version of the package. |
+| artifactId | path | TRUE | string | Artifact ID of the package |
+| feed | path | TRUE | string | Name or ID of the feed |
+| groupId | path | TRUE | string | Group ID of the package |
+| organization | path | TRUE | string | The name of the Azure DevOps organization |
+| version | path | TRUE | string | Version of the package |
 | project | path || string | Project ID or project name |
-| api-version | query | TRUE | string | Version of the API to use. This should be set to &#39;5.1-preview.1&#39; to use this version of the api. |
+| api-version | query | TRUE | string | Version of the API to use. This should be set to &#39;5.1-preview.1&#39; to use this version of the api |
 |
 
 
