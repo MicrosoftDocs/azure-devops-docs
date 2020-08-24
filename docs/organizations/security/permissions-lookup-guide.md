@@ -673,17 +673,12 @@ Values in parenthesis indicate what level the permission is managed:
 The **Edit project-level information** permission is set through the [Security admin page for a project](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
 for all projects defined in the organization or collection:
 
-::: moniker range="azure-devops"
-
 - Add and administer teams and all team-related features
 - Edit project-level permissions for users and groups in the project
 - Add or remove project-level security groups  
 - Edit project level permission ACLs
 - Edit event subscriptions or alerts for teams or the project 
-
-::: moniker-end
-
-
+ 
 
 ## Edit instance-level or collection-level information
 
