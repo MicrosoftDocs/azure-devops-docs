@@ -8,7 +8,7 @@ ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-ms.date: 08/18/2020
+ms.date: 08/25/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -51,7 +51,7 @@ link to the organization page.
 
 #### [Preview page](#tab/preview-page) 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=" azure-devops"
 
 To give other users access to your organization, add their email addresses.
 
@@ -229,7 +229,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 #### [Preview page](#tab/preview-page) 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range=" azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -390,6 +390,11 @@ A: See [Q: Why can't I add any more members to my project?](faq-user-and-permiss
 #### Q: How is *access* different from *permissions?
 
 A: Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md).
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Create a project](../projects/create-project.md)
 
 ## Related articles
 
