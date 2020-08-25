@@ -42,87 +42,83 @@ GitBash for Windows
 
 ## Example setup using GitHub
 
-This section describes how to use a private GitHub repository from within Azure Pipelines by using YAML. 
+This section describes how to use a private GitHub repository with YAML from within Azure Pipelines. 
 
-When you have repositories that you don't want to expose to the open-source community, a common practice is to make the repositories "private." However, a CI/CD tool like Azure DevOps needs access to the repositories for you to manage them by using the tool. To do this, you might need an SSH key to authenticate access to GitHub. 
+If you have a repository that you don't want to expose to the open-source community, a common practice is to make the repository private. However, a CI/CD tool like Azure DevOps needs access to the repository for you to manage them by using the tool. To give Azure DevOps access, you might need an SSH key to authenticate access to GitHub. 
 
-Here are the steps you need to complete for this scenario:
+Here are the steps to complete for this scenario:
 
-1. Generate a key pair that's used to authenticate access from GitHub to Azure DevOps. To do this, run the following command in Bash:
+1. Generate a key pair to use to authenticate access from GitHub to Azure DevOps:
 
-   ```
-   ssh-keygen -t rsa
-   ```
+   1. In GitBash, run the following command:
 
-   - The CLI asks you for a name to give the SSH key pairs. Enter a name of your choice. In this example, we use **myKey**.
+       ```bash
+       ssh-keygen -t rsa
+       ```
 
-     ![Image of GitBash](https://github.com/ManuelGalindo/images/blob/master/ssh-task-01.png)
+    1. Enter a name for the SSH key pair. In the screenshots, we use **myKey**.
+
+        :::image type="content" alt-text="Screenshot of the GitBash prompt to enter a name for your SSH key pair." source="./media/ssh-task-01.png":::
      
-   - The CLI will ask for a passphrase, this is used to encrypt your private key. You can use it if you like. (Using a passphrase is more secure than not using one)
+    1. (Optional) You can enter a passphrase to encrypt your private key. This step is optional. Using a passphrase is more secure than not using one.
    
-     ![Image of GitBash](https://github.com/ManuelGalindo/images/blob/master/ssh-task-02.png)
+        :::image type="content" alt-text="Screenshot of the GitBash prompt to enter a passphrase for your SSH key pair." source="./media/ssh-task-02.png":::
    
-   - Your SSH key pairs are created. Below is the success message you will see in the CLI.
+       The SSH key pairs are created and the following success message appears:
    
-     ![Image of GitBash](https://github.com/ManuelGalindo/images/blob/master/ssh-task-03.png)
+       :::image type="content" alt-text="Screenshot of the GitBash message that shows that an SSH key pair was created." source="./media/ssh-task-03.png":::
      
-   - You can check your newly create key pair in File Explorer.
+    1. In Windows File Explorer, check your newly created key pair:
    
-     ![Image of Windows File Explorer](https://github.com/ManuelGalindo/images/blob/master/ssh-task-04.png)
+        :::image type="content" alt-text="Screenshot of the key pair files in Windows File Explorer." source="./media/ssh-task-04.png":::
      
-2. Now the public key generated needs to be added to the GitHub repository. (The public key is the one with ".pub" ending). To do this, you need to go the following URL in your browser:
+2. Add the public key to the GitHub repository. (The public key ends in  ".pub"). To do this, go the following URL in your browser: `https://github.com/(organization-name)/(repository-name)/settings/keys`.  
 
-```
-https://github.com/{YourOrganizationName}/{YourRepositoryName}/settings/keys
-```   
-
-   - In here you need to click in "Add deploy key"
+    1. Select **Add deploy key**.
    
-   - Fill the information needed in the following textboxes:
+    1. In the **Add new** dialog box, enter a title, and then copy and paste the SSH key:
    
-     ![Image of GitHub Keys](https://github.com/ManuelGalindo/images/blob/master/ssh-task-05.png)
+        :::image type="content" alt-text="Screenshot of the Add new dialog box." source="./media/ssh-task-05.png":::
      
-   - Once this is done, click "Add key".
+    1.  Select **Add key**.
    
- 3. Now we need to upload our private key to Azure DevOps, we do this following these steps:
+ 3. Upload your private key to Azure DevOps:
  
-   - Inside Azure DevOps on the left side pane click on Pipeline and then select "Library".
+    1. In Azure DevOps, in the left menu, select **Pipelines** > **Library**.
    
-     ![Image of AzureDevOpsMenu](https://github.com/ManuelGalindo/images/blob/master/ssh-task-06.png)
+        :::image type="content" alt-text="Screenshot of the Azure Pipelines menu." source="./media/ssh-task-06.png":::
      
-   - Select "Secure Files" and click on "+ Secure File".
+    1.  Select **Secure Files** > **+ Secure File**:
    
-     ![Image of AzureDevOps ScureFiles](https://github.com/ManuelGalindo/images/blob/master/ssh-task-07.png)
+        :::image type="content" alt-text="Screenshot of the Secure Files menu." source="./media/ssh-task-07.png":::
      
-   - Now upload the key by clicking on "Browse…" and selecting your Private key.
+    1.  Select **Browse**, and then select your private key:
      
-     ![Image of AzureDevOps PrivateKey](https://github.com/ManuelGalindo/images/blob/master/ssh-task-08.png)
+        :::image type="content" alt-text="Screenshot of the Upload file dialog box and the Browse button." source="./media/ssh-task-08.png":::
+       
+  4. Recover your "Known Hosts Entry". In GitBash, enter the following command: 
+   
+      ```
+      ssh-keyscan github.com
+      ```
+   
+      Your "Known Hosts Entry" is the displayed value that doesn't begin with **#** in the GitBash results:
      
-   - You have now added your Private Key to Azure DevOps Secure Files.
-   
-  4. Next is recovering you "Known Hosts Entry", which you can obtain the following way:
-  
-   - In Git Bash type the following command: 
-   
-   ```
-   ssh-keyscan github.com
-   ```
-   
-   - Your "Known Hosts Entry" is the one not starting in '#' from the result given in Git Bash as shown below:
-   
-    ![Image of AzureDevOps PrivateKey](https://github.com/ManuelGalindo/images/blob/master/ssh-task-09.png)
+      :::image type="content" alt-text="Screenshot of key search results in GitBash." source="./media/ssh-task-09.png":::
     
-  5. The last step is creating a YAML Pipeline. Inside the YAML definition, add the following task:
+  5. Create a YAML pipeline. 
   
-  ```
-  - task: InstallSSHKey@0
-   inputs:
-     knownHostsEntry: #{Enter your Known Hosts Entry Here}
-     sshPublicKey: #{Enter your Public key Here}
-     sshKeySecureFile: #{Enter the name of your key in "Secure Files" Here}
-  ```
+     To create a YAML pipeline, in the YAML definition, add the following task:
   
-   - Now the SSH keys are installed, we now proceed with the following script to connect using SSH and not HTTPS by default:
+     ```
+     - task: InstallSSHKey@0
+      inputs:
+        knownHostsEntry: #{Enter your Known Hosts Entry Here}
+        sshPublicKey: #{Enter your Public key Here}
+        sshKeySecureFile: #{Enter the name of your key in "Secure Files" Here}
+     ```
+  
+Now, the SSH keys are installed and you can proceed with the script to connect by using SSH and not the default HTTPS.
    
 
 ## Open source

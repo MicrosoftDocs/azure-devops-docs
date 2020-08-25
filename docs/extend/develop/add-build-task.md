@@ -277,11 +277,11 @@ describe('Sample task tests', function () {
 
     });
 
-    it('should succeed with simple inputs', function(done: MochaDone) {
+    it('should succeed with simple inputs', function(done: Mocha.Done) {
         // Add success test here
     });
 
-    it('it should fail if tool returns 1', function(done: MochaDone) {
+    it('it should fail if tool returns 1', function(done: Mocha.Done) {
         // Add failure test here
     });    
 });

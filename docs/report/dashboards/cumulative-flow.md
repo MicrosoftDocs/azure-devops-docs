@@ -94,6 +94,13 @@ For the CFD to provide useful information, you'll want to update the status of w
 
 For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
+
+::: moniker range=">= azure-devops-2019"
+
+## Prerequisites  
+
+::: moniker-end
+
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 
@@ -125,7 +132,7 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
 
 	![Open Boards > Backlogs, for a team](/azure/devops/boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-    To select another backlog, open the selector and then choose a different team or select the ![home icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
+    To select another backlog, open the selector and then choose a different team or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false":::  **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Select another team](/azure/devops/boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
