@@ -90,7 +90,7 @@
     href: sprint-burndown-scrum.md
   - name: Velocity (Scrum)
     href: velocity.md
-- name: Reference: Data warehouse tables
+- name: Reference&#58; Data warehouse tables
   items:
   - name: Data warehouse tables
     href: table-reference-relational-warehouse-database.md
