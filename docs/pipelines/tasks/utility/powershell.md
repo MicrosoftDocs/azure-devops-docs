@@ -59,7 +59,7 @@ Both of these resolve to the `PowerShell@2` task.
 `pwsh` runs PowerShell Core, which must be installed on the agent or container.
 
 > [!NOTE]
-> Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
+> Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
 
 ::: moniker-end
 
