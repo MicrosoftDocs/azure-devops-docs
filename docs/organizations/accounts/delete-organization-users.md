@@ -68,9 +68,7 @@ If users no longer require access to a team, project, or your organization, you 
 
 ::: moniker-end
 
-
-Choose the **Current page** tab for information on deleting an organization user. 
-
+Choose the **Current page** tab for instructions. 
 
 #### [Current page](#tab/current-page)
 
@@ -88,11 +86,11 @@ Choose the **Current page** tab for information on deleting an organization user
 
 4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
 
-   ![Remove a user from your organization](media/delete-user/remove-user-from-organization-new.png)
+   ![Remove user from organization](media/delete-user/remove-user-from-organization-new.png)
 
 5. Choose **Remove** in the confirmation dialog.
 
-   ![Confirm removing an existing user](media/delete-user/confirm-remove-existing-user.png)
+   ![Confirm to remove an existing user](media/delete-user/confirm-remove-existing-user.png)
 
 6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 

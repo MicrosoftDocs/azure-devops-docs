@@ -82,7 +82,7 @@ To give other users access to your organization, add their email addresses.
 ::: moniker-end
 
 
-Choose the **Current page** tab for information on adding an organization user. 
+Choose the **Current page** for instructions. 
 
 
 #### [Current page](#tab/current-page)
@@ -110,7 +110,7 @@ Choose the **Current page** tab for information on adding an organization user.
 
 ::: moniker-end
 
-Choose the **Preview page** tab for instructions.
+Choose the **Azure DevOps CLI** tab for instructions.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -251,14 +251,14 @@ The Users view shows key information per user in a table. In this view, you can 
    * **Remove direct assignments**
    * **Remove from organization** (deletes user)
 
-     ![Select Users, and then select an item in the context menu](media/manage-users/manage-users-show-context-menu-preview.png)
+     ![Select Users, select an item in the context menu](media/manage-users/manage-users-show-context-menu-preview.png)
 
 5. **Save** your changes.
 
 ::: moniker-end
 
 
-Choose the **Current page** tab for information on managing users. 
+Choose the **Current page** for instructions. 
 
 
 #### [Current page](#tab/current-page)
@@ -289,7 +289,7 @@ Choose the **Current page** tab for information on managing users.
 
 ::: moniker-end
 
-Choose the **Preview page** tab for instructions.
+Choose the **Azure DevOps CLI** tab for instructions.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
