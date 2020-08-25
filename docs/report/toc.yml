@@ -20,13 +20,11 @@
 - name: Extension samples (REST API) 
   items:
   - name: Add a dashboard widget
-    href: ../../extend/develop/add-dashboard-widget.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+    href: ../extend/develop/add-dashboard-widget.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   - name: Add a chart widget 
-    href: ../../extend/develop/add-chart.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+    href: ../extend/develop/add-chart.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
   - name: Add an Analytics widget  
-    href: ../extend-analytics/example-analytics-widget.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
-  - name: Create an Analytics query-based widget
-    href: example-analytics-widget.md 
+    href: extend-analytics/example-analytics-widget.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
 - name: Work tracking field reference 
   items:
   - name: "Rollup of work & other fields"
