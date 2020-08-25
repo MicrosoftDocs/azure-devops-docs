@@ -29,6 +29,8 @@ The following types of users can join your organization for free:
 > [!NOTE]
 > For information about inviting external users, see [Add external user](add-external-user.md).
 
+## Prerequisites
+
 [!INCLUDE [prerequisites-add-users-org](../../includes/prerequisites-add-users-org.md)]
 
 ## Add users to your organization
