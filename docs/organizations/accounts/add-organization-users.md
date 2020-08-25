@@ -2,7 +2,7 @@
 title: Add users and manage access
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Learn how to add users to an organization, project, or team, and manage their access level (like Stakeholder), direct assignments, invitations, and more.
+description: How to add users to an organization, project, or team. How to manage users access level (like Stakeholder), direct assignments, invitations, and more.
 ms.topic: conceptual
 ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
@@ -361,7 +361,7 @@ ID                                    Display Name         Email                
 
 * * * 
 
-## FAQs for adding users
+## FAQ
 
 #### Q: Which email addresses can I add?
 
