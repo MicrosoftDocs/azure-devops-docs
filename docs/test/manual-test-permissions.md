@@ -43,8 +43,8 @@ This table describes the license requirements in more detail:
 | Use the out-of-the-box standard charts | Basic license |
 | Create and manage test plans | Basic + Test Plans license |
 | Create and manage test suites | Basic + Test Plans license |
-| Author test cases using a grid-like view | Basic + Test Plans license |
-| Assign test cases to suites, move test cases, and order tests cases | Basic + Test Plans license |
+| Author test cases using a grid-like view and edit in the Test Runner | Basic + Test Plans license |
+| Assign test cases to suites, move test cases, and order test cases | Basic + Test Plans license |
 | Prepare for execution such as assigning configurations or testers | Basic + Test Plans license | 
 | Prepare User Acceptance Testing | Basic + Test Plans license |
 

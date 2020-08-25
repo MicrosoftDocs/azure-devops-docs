@@ -3062,9 +3062,13 @@ View releases
 <a id="release_management">  </a>
 
 
-::: moniker range="tfs-2015"
+::: moniker range=">= tfs-2015"
 
 ## Release (object-level) 
+
+::: moniker-end
+
+::: moniker range="tfs-2015"
 
 If you are working with the Release Management client and server supported for TFS 2015, see [Automate deployments with Release Management](../../release/previous-version/release-management-overview.md).
 
@@ -3072,9 +3076,7 @@ If you are working with the Release Management client and server supported for T
 
 
 ::: moniker range=">= tfs-2017"
-
-## Release (object-level) 
-
+ 
 You manage permissions [for each release defined in the web portal](../../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the project level, for a specific release pipeline, or for a specific environment in a release pipeline. Within this hierarchy, permissions can be inherited from the parent or overridden.
 
 > [!NOTE]   
@@ -3343,15 +3345,89 @@ There are no UI permissions associated with [managing email notifications or ale
   or users who have the **Edit project-level information**
   can set alerts in that project for others or for a team.
 
+::: moniker range="< azure-devops"
+
 You can manage alert permissions using [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd).
 
-> [!div class="mx-tdBreakAll"]  
-> |TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators &<<br/>Project Collection Service Accounts|
-> |---|---|---|:---:|
-> |CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![checkmark](media/checkmark.png)|
-> |GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](media/checkmark.png)|
-> |GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![checkmark](media/checkmark.png)|
-> |UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![checkmark](media/checkmark.png)|
+---
+:::row:::
+   :::column span="":::
+      **TFSSecurity Action**
+   :::column-end:::
+   :::column span="":::
+      **TFSSecurity Namespace**
+   :::column-end:::
+   :::column span="":::
+      **Description**
+   :::column-end:::
+   :::column span="":::
+      **Project Collection Administrators &**  
+      **Project Collection Service Accounts**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      `CREATE_SOAP_SUBSCRIPTION`
+   :::column-end:::
+   :::column span="":::
+      `EventSubscription`
+   :::column-end:::
+   :::column span="":::
+      Can create a SOAP-based web service subscription.
+   :::column-end:::
+   :::column span="":::
+      :::image type="icon" source="media/checkmark.png" border="false"::: 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      `GENERIC_READ` 
+   :::column-end:::
+   :::column span="":::
+      `EventSubscription`
+   :::column-end:::
+   :::column span="":::
+      Can view subscription events defined for a project.
+   :::column-end:::
+   :::column span="":::
+      :::image type="icon" source="media/checkmark.png" border="false"::: 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      `GENERIC_WRITE` 
+   :::column-end:::
+   :::column span="":::
+      `EventSubscription`
+   :::column-end:::
+   :::column span="":::
+      Can create alerts for other users or for a team.
+   :::column-end:::
+   :::column span="":::
+      :::image type="icon" source="media/checkmark.png" border="false"::: 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      `UNSUBSCRIBE`
+   :::column-end:::
+   :::column span="":::
+     `EventSubscription`
+   :::column-end:::
+   :::column span="":::
+      Can unsubscribe from an event subscription.
+   :::column-end:::
+   :::column span="":::
+      :::image type="icon" source="media/checkmark.png" border="false"::: 
+   :::column-end:::
+:::row-end:::
+---
+
+::: moniker-end
 
 
 ## Related articles

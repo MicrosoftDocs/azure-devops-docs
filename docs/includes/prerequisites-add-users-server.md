@@ -4,9 +4,6 @@ ms.topic: include
 
 ::: moniker range="< azure-devops"  
 
-
-## Prerequisites
-
 You add users to a project or team. You add projects to project collections, and you add teams to projects. 
 
 * If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 

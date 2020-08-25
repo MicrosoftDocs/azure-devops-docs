@@ -120,9 +120,14 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ---
 
-::: moniker range="= azure-devops-2019 || azure-devops-2020"
+
+::: moniker range="< azure-devops"
 
 ## Add an Active Directory user or group to a built-in security group 
+
+::: moniker-end
+
+::: moniker range="= azure-devops-2019 || azure-devops-2020" 
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -159,8 +164,6 @@ The method for adding a user or group to a built-in security group is the same, 
 
 
 ::: moniker range="<= tfs-2018"
-
-## Add an Active Directory user or group to a built-in security group 
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
