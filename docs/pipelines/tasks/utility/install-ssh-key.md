@@ -6,7 +6,7 @@ ms.assetid: 5c9af2eb-5fc5-42dc-9b91-dc234a8c4400
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 02/02/2019
+ms.date: 08/25/2020
 monikerRange: azure-devops
 ---
 
@@ -38,15 +38,15 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 
 ## Prerequisites
 
-GitBash for Windows
+- GitBash for Windows
 
 ## Example setup using GitHub
 
 This section describes how to use a private GitHub repository with YAML from within Azure Pipelines. 
 
-If you have a repository that you don't want to expose to the open-source community, a common practice is to make the repository private. However, a CI/CD tool like Azure DevOps needs access to the repository for you to manage them by using the tool. To give Azure DevOps access, you might need an SSH key to authenticate access to GitHub. 
+If you have a repository that you don't want to expose to the open-source community, a common practice is to make the repository private. However, a CI/CD tool like Azure DevOps needs access to the repository for you to manage the repository by using the tool. To give Azure DevOps access, you might need an SSH key to authenticate access to GitHub. 
 
-Here are the steps to complete for this scenario:
+Here are the steps to complete to use an SSH key to authenticate access to GitHub:
 
 1. Generate a key pair to use to authenticate access from GitHub to Azure DevOps:
 
@@ -88,9 +88,9 @@ Here are the steps to complete for this scenario:
    
         :::image type="content" alt-text="Screenshot of the Azure Pipelines menu." source="./media/ssh-task-06.png":::
      
-    1.  Select **Secure Files** > **+ Secure File**:
+    1.  Select **Secure files** > **+ Secure file**:
    
-        :::image type="content" alt-text="Screenshot of the Secure Files menu." source="./media/ssh-task-07.png":::
+        :::image type="content" alt-text="Screenshot of the Secure files menu." source="./media/ssh-task-07.png":::
      
     1.  Select **Browse**, and then select your private key:
      
@@ -98,7 +98,7 @@ Here are the steps to complete for this scenario:
        
   4. Recover your "Known Hosts Entry". In GitBash, enter the following command: 
    
-      ```
+      ```bash
       ssh-keyscan github.com
       ```
    
@@ -110,7 +110,7 @@ Here are the steps to complete for this scenario:
   
      To create a YAML pipeline, in the YAML definition, add the following task:
   
-     ```
+     ```bash
      - task: InstallSSHKey@0
       inputs:
         knownHostsEntry: #{Enter your Known Hosts Entry Here}
@@ -118,7 +118,7 @@ Here are the steps to complete for this scenario:
         sshKeySecureFile: #{Enter the name of your key in "Secure Files" Here}
      ```
   
-Now, the SSH keys are installed and you can proceed with the script to connect by using SSH and not the default HTTPS.
+Now, the SSH keys are installed and you can proceed with the script to connect by using SSH, and not the default HTTPS.
    
 
 ## Open source
