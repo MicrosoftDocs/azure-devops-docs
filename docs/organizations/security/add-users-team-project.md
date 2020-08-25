@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 08/18/2020
+ms.date: 08/25/2020
 ---
 
 
@@ -121,7 +121,7 @@ Choose the **Current page** tab for information on adding a user to a project.
 
 2. Choose **Project Settings** and then **Security**.
 
-	*To see the full image, click to expand*.
+	*To see the full image, select to expand*.
 
 	[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
@@ -162,11 +162,7 @@ Choose the **Current page** tab for information on adding a user to a project.
 
 ::: moniker-end
 
-::: moniker-range="azure-devops-2020"
-
 Choose the **Preview page** tab for instructions.
-
-::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -368,17 +364,11 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 ::: moniker-end
 
-::: moniker-range="azure-devops-2020"
-
 Choose the **Preview page** tab for instructions.
-
-::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 ::: moniker range=">= azure-devops-2020"
-
-## List team members
 
 From the Azure DevOps CLI command, you can see details about a team or list the individual members of that team. To first see a list of all teams in your organization, use the [az devops team list](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-list) command.
 
