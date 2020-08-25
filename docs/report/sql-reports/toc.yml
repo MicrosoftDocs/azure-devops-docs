@@ -90,7 +90,7 @@
     href: sprint-burndown-scrum.md
   - name: Velocity (Scrum)
     href: velocity.md
-- name: Reference&#58; Data warehouse tables
+- name: Reference-Data warehouse tables
   items:
   - name: Data warehouse tables
     href: table-reference-relational-warehouse-database.md
@@ -120,7 +120,7 @@
     href: work-item-link-history-tables.md
   - name: Work Item Test Result tables
     href: work-item-test-result-tables.md
-- name: Reference&#58; Cube perspectives and measure groups
+- name: Reference-Cube perspectives and measure groups
   items:
   - name: Cube perspectives and measure groups
     href: perspective-measure-groups-cube.md

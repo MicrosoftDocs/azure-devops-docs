@@ -30,7 +30,7 @@
     href: access-analytics-power-bi.md
   - name: Connect using Advanced Functions
     href: data-connector-functions.md
-- name: Sample reports&#58; Analytics views
+- name: Sample reports-Analytics views
   items:
   - name: Active bugs report 
     href: active-bugs-sample-report.md
@@ -42,7 +42,7 @@
     href: create-team-filter.md  
   - name: Calculate time-in-state 
     href: create-timeinstate-report.md
-- name: Sample reports&#58; OData query
+- name: Sample reports-OData query
   items:
   - name: Sample OData reports overview
     href: sample-odata-overview.md
