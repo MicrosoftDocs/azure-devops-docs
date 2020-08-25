@@ -24,7 +24,6 @@ Learn how to add users to a project or specific team. For anyone to access a pro
 > 
 > Once you've added a user to an organization or project, their user identity becomes searchable from an identity field, such as the Assigned To field, or from the security and permission dialogs. After you've added them to one project or team, you can add them to additional projects or teams using the procedures provided in this article. For more information about managing users and organization access, see [Add organization users for Azure DevOps](../accounts/add-organization-users.md). 
 
-
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"  
@@ -37,7 +36,6 @@ Learn how to add users to a project or specific team. For anyone to access a pro
 ::: moniker-end  
 
 The easiest way to add a number of users to a project is to add groups defined in [Azure Active Directory (Azure AD) or Active Directory (AD)](setup-ad-aad.md).
-
 
 ## Prerequisites
 
@@ -56,6 +54,10 @@ Once users have been added to a project, you can browse for their display name o
 
 If you're adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
 
+::: moniker-end
+
+::: moniker range="= azure-devops"
+
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
 
@@ -63,7 +65,7 @@ If you're adding a user to Azure DevOps for the first time, see [Add account use
 
 #### [Preview page](#tab/preview-page)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="= azure-devops"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -115,7 +117,7 @@ Choose the **Current page** tab for information on adding a user to a project.
 
 #### [Current page](#tab/current-page) 
 
-::: moniker range="azure-devops-2019 || azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -268,7 +270,7 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 <a id="add-team-members-team-services" />
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="= azure-devops"
 
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -277,7 +279,7 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 #### [Preview page](#tab/preview-page)
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="= azure-devops"
 
 1. Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
 
@@ -322,7 +324,7 @@ Choose the **Current page** tab for information on adding a user to a team.
 
 #### [Current page](#tab/current-page)
 
-::: moniker range="azure-devops-2019 || azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 

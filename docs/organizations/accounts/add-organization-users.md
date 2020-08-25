@@ -45,9 +45,12 @@ and add users to groups - all in one view.
 You can add up to 50 users in a single transaction. When you add users, each user receives a notification email with a
 link to the organization page.
 
+::: moniker range=" azure-devops"
 
 > [!NOTE]   
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
+
+::: moniker-end
 
 #### [Preview page](#tab/preview-page) 
 
@@ -110,7 +113,7 @@ Choose the **Current page** for instructions.
 
 ::: moniker-end
 
-Choose the **Azure DevOps CLI** tab for instructions.
+The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -289,7 +292,7 @@ Choose the **Current page** for instructions.
 
 ::: moniker-end
 
-Choose the **Azure DevOps CLI** tab for instructions.
+The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -366,11 +369,16 @@ ID                                    Display Name         Email                
 #### Q: Which email addresses can I add?
 
 A: 
+
+::: moniker range=" azure-devops"
+
 * If your organization is connected to Azure Active Directory, you can add only email addresses that are internal to the directory.
 
 * Add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-azure-access.md) to authenticate users and control access through [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
 
 * If your organization is connected to your directory, all users must be directory members. They must sign in to Azure DevOps with work or school accounts that are managed by your directory. If they aren't members, they need to be [added to the directory](add-external-user.md).
+
+::: moniker-end
 
 ![Add members' sign-in addresses or display names](media/add-team-members/add-user-or-group-to-project.png)
 
@@ -379,7 +387,12 @@ After you add members to your project, each member gets an invitation email that
 #### Q: What if they don't get or lose the invitation email?
 
 A:
+
+::: moniker range=" azure-devops"
+
 * **Organizations connected to Azure AD**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you can't assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
+
+::: moniker-end
 
 * **Organizations with Microsoft accounts**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
 
@@ -389,7 +402,7 @@ A: See [Q: Why can't I add any more members to my project?](faq-user-and-permiss
 
 #### Q: How is *access* different from *permissions?
 
-A: Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md).
+A: Access levels control user access to select web portal features, based on the user's subscription. Permissions control a user's access to select operations, based on security group membership or specific Access Control Level (ACL) assignments made to a specific user or group.
 
 ## Next steps
 
