@@ -978,7 +978,6 @@ parameters:
   type: enum            # data types, see below
   default: any          # default value; if no default, then the parameter MUST be given by the user at runtime
   values: [ string ]    # allowed list of values (for some data types)
-  secret: bool          # whether to treat this value as a secret; defaults to false
 ```
 
 ### Types
@@ -1815,6 +1814,9 @@ steps:
 
 ---
 
+> [!NOTE]
+> Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
+
 Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](process/phases.md?tabs=yaml#timeouts).
 
 ## PowerShell
@@ -1854,6 +1856,9 @@ steps:
 ```
 
 ---
+
+> [!NOTE]
+> Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
 
 Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](process/phases.md?tabs=yaml#timeouts).
 
