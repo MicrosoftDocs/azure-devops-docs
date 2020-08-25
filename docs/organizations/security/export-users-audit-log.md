@@ -9,7 +9,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 08/18/2020
+ms.date: 08/25/2020
 ---
 
 # Export a list of users and their access levels
@@ -71,8 +71,6 @@ From the Azure DevOps CLI command, you can get a list of the users in your organ
 
 ::: moniker-end
 
-[!INCLUDE [feature-support-cloud-only](../../includes/feature-support-cloud-only.md)]
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range=">= azure-devops-2020"
@@ -118,7 +116,7 @@ f14a4f19-9910-6116-9836-cccd6dd1b7b7  contoso2@contoso.com    contoso2@contoso.c
 
 * * *
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 You can get a list of users and groups that have accessed your Azure DevOps Server instance by exporting the audit log. The audit log also indicates which access level has been granted.  
 

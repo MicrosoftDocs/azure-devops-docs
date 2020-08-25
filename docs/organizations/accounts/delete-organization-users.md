@@ -107,7 +107,7 @@ Choose the **Current page** tab for instructions.
 
 ::: moniker-end
 
-Choose the **Preview page** tab for instructions.
+The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
