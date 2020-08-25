@@ -28,7 +28,8 @@ Docker Content Trust (DCT) provides the ability to use digital signatures for da
 
 1. Fetch the delegation private key, which is present in the local Docker trust store of your development machine used earlier, and add the same as a [secure file](../../library/secure-files.md) in Pipelines
 2. [Authorize this secure file](../../library/secure-files.md#secure-file-authorization) for use in all pipelines
-3. Create a pipeline based on the following YAML snippet -
+3. The service principal associated to the containerRegistryServiceConnection must have the AcrImageSigner role in the target Container Registry
+4. Create a pipeline based on the following YAML snippet -
 
    ```YAML
    pool:
