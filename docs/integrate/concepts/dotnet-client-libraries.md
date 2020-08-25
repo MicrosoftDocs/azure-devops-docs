@@ -130,23 +130,23 @@ namespace ConsoleApp1
 {
     class Program
     {
-        const string c_collectionUri = "https://dev.azure.com/fabrikam";
-        const string c_projectName = "MyGreatProject";
-        const string c_repoName = "MyRepo";
-        const string c_pat = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        const string collectionUri = "https://dev.azure.com/fabrikam";
+        const string projectName = "MyGreatProject";
+        const string repoName = "MyRepo";
+        const string pat = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
         static void Main(string[] args)
         {
-            var creds = new VssBasicCredential(string.Empty, c_pat);
+            var creds = new VssBasicCredential(string.Empty, pat);
             
             // Connect to Azure DevOps Services
-            var connection = new VssConnection(new Uri(c_collectionUri), creds);
+            var connection = new VssConnection(new Uri(collectionUri), creds);
             
             // Get a GitHttpClient to talk to the Git endpoints
             using var gitClient = connection.GetClient<GitHttpClient>();
             
             // Get data about a specific repository
-            var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
+            var repo = gitClient.GetRepositoryAsync(projectName, repoName).Result;
         }
     }
 }
