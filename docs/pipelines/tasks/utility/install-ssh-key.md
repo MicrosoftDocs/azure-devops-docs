@@ -44,7 +44,7 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 
 This section describes how to use a private GitHub repository with YAML from within Azure Pipelines. 
 
-If you have a repository that you don't want to expose to the open-source community, a common practice is to make the repository private. However, a CI/CD tool like Azure DevOps needs access to the repository for you to manage the repository by using the tool. To give Azure DevOps access, you might need an SSH key to authenticate access to GitHub. 
+If you have a repository that you don't want to expose to the open-source community, a common practice is to make the repository private. However, a CI/CD tool like Azure DevOps needs access to the repository if you want to use the tool to manage the repository. To give Azure DevOps access, you might need an SSH key to authenticate access to GitHub. 
 
 Here are the steps to complete to use an SSH key to authenticate access to GitHub:
 
@@ -56,7 +56,7 @@ Here are the steps to complete to use an SSH key to authenticate access to GitHu
        ssh-keygen -t rsa
        ```
 
-    1. Enter a name for the SSH key pair. In the screenshots, we use **myKey**.
+    1. Enter a name for the SSH key pair. In our example, we use **myKey**.
 
         :::image type="content" alt-text="Screenshot of the GitBash prompt to enter a name for your SSH key pair." source="./media/ssh-task-01.png":::
      
