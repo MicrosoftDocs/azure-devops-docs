@@ -84,7 +84,7 @@ Client libraries are available for .NET developers who build Windows apps and se
 
 From a NuGet package manager command prompt:
 
-```cmd
+```powershell
 PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
 ```
 
@@ -122,36 +122,35 @@ Authentication paths that produce an interactive dialog aren't available in the 
 
 ```csharp
 using System;
-using Microsoft.VisualStudio.Services.Common;
 using Microsoft.TeamFoundation.SourceControl.WebApi;
+using Microsoft.VisualStudio.Services.Common;
 using Microsoft.VisualStudio.Services.WebApi;
-
 
 namespace ConsoleApp1
 {
     class Program
     {
-        const String c_collectionUri = "https://dev.azure.com/fabrikam";
-        const String c_projectName = "MyGreatProject";
-        const String c_repoName = "MyRepo";
+        const string c_collectionUri = "https://dev.azure.com/fabrikam";
+        const string c_projectName = "MyGreatProject";
+        const string c_repoName = "MyRepo";
         const string c_pat = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
         static void Main(string[] args)
         {
-            VssCredentials creds = new VssBasicCredential(string.Empty, c_pat);
-
+            var creds = new VssBasicCredential(string.Empty, c_pat);
+            
             // Connect to Azure DevOps Services
-            VssConnection connection = new VssConnection(new Uri(c_collectionUri), creds);
-
+            var connection = new VssConnection(new Uri(c_collectionUri), creds);
+            
             // Get a GitHttpClient to talk to the Git endpoints
-            using (GitHttpClient gitClient = connection.GetClient<GitHttpClient>())
-            {
-                // Get data about a specific repository
-                var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
-            }
+            using var gitClient = connection.GetClient<GitHttpClient>();
+            
+            // Get data about a specific repository
+            var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
         }
     }
 }
+
 ```
 
 Further authentication samples can be found on our [.NET Samples Page](../get-started/client-libraries/samples.md).
