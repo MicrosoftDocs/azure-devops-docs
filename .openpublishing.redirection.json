@@ -7346,6 +7346,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docspipelines/test/collect-screenshots-and-video.md",
+      "redirect_url": "/azure/devops/pipelines/test/ui-testing-considerations",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build-release/test/continuous-test-java.md",
       "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": false
