@@ -3,7 +3,7 @@ ms.topic: include
 ---
 
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2019"  
 
 You can add users to a project or team, add projects to organizations, and add teams to projects.
 

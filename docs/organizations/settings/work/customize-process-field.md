@@ -128,8 +128,7 @@ You can add a new field and define a pick list or customize the pick list of an 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Priority field, Definition tab dialog](media/field/edit-priority-picklist.png)   
-
-	To reorder the list, simply drag the item to where you want it in the list. 
+	
 	::: moniker-end
 
 2. (Optional) Choose the **Options** tab to define the field as required, specify a default, or allow users to enter their own values. 
