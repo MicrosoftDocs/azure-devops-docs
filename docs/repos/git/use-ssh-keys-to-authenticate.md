@@ -5,7 +5,7 @@ description: Authenticate to Azure Repos Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 08/24/2020
+ms.date: 08/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -172,7 +172,7 @@ fatal: Could not read from remote repository.
 
 ### Q: How can I have Git remember the passphrase for my key on Windows?
 
-**A:** Run the following command included in Git for Windows to start up the `ssh-agent` process in Powershell or the Windows Command Prompt. `ssh-agent` will cache
+**A:** Run the following command included in Git for Windows to start up the `ssh-agent` process in PowerShell or the Windows Command Prompt. `ssh-agent` will cache
 your passphrase so you don't have to provide it every time you connect to your repo.
 
 ```
@@ -238,7 +238,7 @@ On Windows, before running `ssh-add`, you will need to run the following command
 start-ssh-agent.cmd
 ```
 
-This command runs in both Powershell and the Command Prompt. If you are using Git Bash, the command you need to use is:
+This command runs in both PowerShell and the Command Prompt. If you are using Git Bash, the command you need to use is:
 
 ```
 eval `ssh-agent`
@@ -259,67 +259,96 @@ However, this doesn't work with Azure DevOps for technical reasons related to th
 > ```
 
 For Azure DevOps, you'll need to configure SSH to explicitly use a specific key file.  One way to do this to edit your `~/.ssh/config` file (for example, `/home/jamal/.ssh` or `C:\Users\jamal\.ssh`) as follows:
+
+::: moniker range="= azure-devops"
+
 ```
-# The settings in each Host section are applied to any Git SSH remote URL with a matching hostname.
+# The settings in each Host section are applied to any Git SSH remote URL with a
+# matching hostname.
 # Generally:
-# * SSH uses the first matching line for each parameter name, e.g. if there's multiple values for a
-#   parameter across multiple matching Host sections
-# * "IdentitiesOnly yes" prevents keys cached in ssh-agent from being tried before the IdentityFile
-#   values we explicitly set.
-# * On Windows, ~/.ssh/your_private_key maps to %USERPROFILE%\.ssh\your_private_key, e.g.
-#   C:\Users\<username>\.ssh\your_private_key.
+# * SSH uses the first matching line for each parameter name, e.g. if there's
+#   multiple values for a parameter across multiple matching Host sections
+# * "IdentitiesOnly yes" prevents keys cached in ssh-agent from being tried before
+#   the IdentityFile values we explicitly set.
+# * On Windows, ~/.ssh/your_private_key maps to %USERPROFILE%\.ssh\your_private_key,
+#   e.g. C:\Users\<username>\.ssh\your_private_key.
 
-# To use the same key across all hosted Azure DevOps organizations, where the SSH URL host is
-# ssh.dev.azure.com (like git@ssh.dev.azure.com:v3/some_organization/some_project/some_repo), add
-# the Host section below:
+# Most common scenario: to use the same key across all hosted Azure DevOps
+# organizations, add a Host entry like this:
 Host ssh.dev.azure.com
-IdentityFile ~/.ssh/your_private_key
-IdentitiesOnly yes
+  IdentityFile ~/.ssh/your_private_key
+  IdentitiesOnly yes
 
-# Since all hosted Azure DevOps URLs have the same hostname (ssh.dev.azure.com), if you need
-# different keys for different organizations (or just different repos within the same organization),
+# This model will also work if you still use the older SSH URLs with a
+# hostname of vs-ssh.visualstudio.com:
+Host vs-ssh.visualstudio.com
+  IdentityFile ~/.ssh/your_private_key
+  IdentitiesOnly yes
+
+# Less common scenario: if you need different keys for different organizations,
 # you'll need to use host aliases to create separate Host sections.
+# This is because all hosted Azure DevOps URLs have the same hostname
+# (ssh.dev.azure.com), so SSH has no way to distinguish them by default.
 #
 # Imagine that we have the following two SSH URLs:
-# * git@ssh.dev.azure.com:v3/org1/org1_project/org1_repo
-#   * For this, we want to use key1, so we'll use devops_key1 as the Host alias.
-# * git@ssh.dev.azure.com:v3/org2/org2_project/org2_repo
-#   * For this, we want to use key2, so we'll use devops_key2 as the Host alias.
+# * git@ssh.dev.azure.com:v3/Fabrikam/Project1/fab_repo
+#   * For this, we want to use `fabrikamkey`, so we'll create `devops_fabrikam` as
+#     a Host alias and tell SSH to use `fabrikamkey`.
+# * git@ssh.dev.azure.com:v3/Contoso/Project2/con_repo
+#   * For this, we want to use `contosokey`, so we'll create `devops_contoso` as
+#     a Host alias and tell SSH to use `contosokey`.
 #
-# You'll need to substitute ssh.dev.azure.com with the Host alias in the SSH URL you use with Git.
-# The SSH URLs above become:
-# * git@devops_key1:v3/org1/org1_project/org1_repo
-# * git@devops_key2:v3/org2/org2_project/org2_repo
+# To set explicit keys for the two host aliases and to tell SSH to use the correct
+# actual hostname, add the next two Host sections:
+Host devops_fabrikam
+  HostName ssh.dev.azure.com
+  IdentityFile ~/.ssh/private_key_for_fabrikam
+  IdentitiesOnly yes
+Host devops_contoso
+  HostName ssh.dev.azure.com
+  IdentityFile ~/.ssh/private_key_for_contoso
+  IdentitiesOnly yes
 #
-# To set explicit keys for the two host aliases and to tell SSH to use the correct actual hostname,
-# add the next two Host sections:
-Host devops_key1
-HostName ssh.dev.azure.com
-IdentityFile ~/.ssh/private_key_for_org1
-IdentitiesOnly yes
-Host devops_key2
-HostName ssh.dev.azure.com
-IdentityFile ~/.ssh/private_key_for_org2
-IdentitiesOnly yes
+# Then, instead of using the real URLs, tell Git you want to use these URLs:
+# * git@devops_fabrikam:v3/Fabrikam/Project1/fab_repo
+# * git@devops_contoso:v3/Contoso/Project2/con_repo
+#
 
-# If you have an SSH URL where the hostname is vs-ssh.visualstudio.com, from when Azure DevOps was
-# formerly called Visual Studio Team Services, add the following Host section.
-# Alternately, you can just replace the hostname in your SSH URL with ssh.dev.azure.com.  Both
-# ssh.dev.azure.com and vs-ssh.visualstudio.com point to the same place.
-Host vs-ssh.visualstudio.com
-IdentityFile ~/.ssh/your_private_key
-IdentitiesOnly yes
-
-# If you have an on-premises Azure DevOps Server instance, where SSH URLs look like
-# ssh://someHost:22/someCollection/some_project/_git/some_repo, add the following Host section:
-Host someHost
-IdentityFile ~/.ssh/your_private_key
-IdentitiesOnly yes
-
-# Put global defaults here.  Note that "*" also matches any hosts that match the sections above, and
-# remember that SSH uses the first matching line for each parameter name.
+# At the end of the file, you can put global defaults for other SSH hosts you
+# may connect to.  Note that "*" also matches any hosts that match the sections
+# above, and remember that SSH uses the first matching line for each parameter name.
 Host *
 ```
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+```
+# The settings in each Host section are applied to any Git SSH remote URL with a
+# matching hostname.
+# Generally:
+# * SSH uses the first matching line for each parameter name, e.g. if there's
+#   multiple values for a parameter across multiple matching Host sections
+# * "IdentitiesOnly yes" prevents keys cached in ssh-agent from being tried before
+#   the IdentityFile values we explicitly set.
+# * On Windows, ~/.ssh/your_private_key maps to %USERPROFILE%\.ssh\your_private_key,
+#   e.g. C:\Users\<username>\.ssh\your_private_key.
+
+# Say your on-premises Azure DevOps Server instance has SSH URLs like this:
+#   ssh://someHost:22/someCollection/some_project/_git/some_repo
+# Add the following Host section:
+Host someHost
+  IdentityFile ~/.ssh/your_private_key
+  IdentitiesOnly yes
+
+# At the end of the file, you can put global defaults for other SSH hosts you
+# may connect to.  Note that "*" also matches any hosts that match the sections
+# above, and remember that SSH uses the first matching line for each parameter name.
+Host *
+```
+
+::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
