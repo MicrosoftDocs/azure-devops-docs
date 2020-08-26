@@ -34,19 +34,19 @@ For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or 
 ::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board, customize card fields](media/filter/filter-kb-card-field-settings-services.png)
+> ![Kanban board, customize card fields, 2020](media/filter/filter-kb-card-field-settings-services.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018 <= azure-devops-2019"
 
-![Kanban board, customize card fields](media/filter/filter-kb-card-field-settings-ts.png)
+![Kanban board, customize card fields, on-premises](media/filter/filter-kb-card-field-settings-ts.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-![Kanban board, customize card fields](media/filter-kb-card-field-settings.png)
+![Kanban board, customize card fields, earlier versions](media/filter-kb-card-field-settings.png)
 
 ::: moniker-end
 
@@ -57,18 +57,18 @@ For example, here we filter the backlog to only show items that include 'Web' in
 ::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board, Filter using keyword search](../boards/media/filter/filter-kb-text-web-services.png)
+> ![Kanban board, Filter using keyword search](media/filter/filter-kb-text-web-services.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
 
-![Kanban board, Filter using keyword search](../boards/media/filter/filter-options-web.png)
+![Kanban board, Filter using keyword search, earlier versions](media/filter/filter-options-web.png)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-![Kanban board, Filter using keyword search](../boards/media/filter-kb-filter-text-web.png)
+![Kanban board, Filter using keyword search, 2015](../boards/media/filter-kb-filter-text-web.png)
 
 ::: moniker-end
 
@@ -103,7 +103,7 @@ The filter criteria ignores the following characters when the field value starts
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics).
 
-To start filtering, choose the ![Kanban filter icon](../media/icons/kanban-filter-icon.png) Kanban board filter icon.
+To start filtering, choose the :::image type="icon" source="../media/icons/kanban-filter-icon.png" border="false"::: **Filter** icon.
 
 ::: moniker-end
 
@@ -117,7 +117,7 @@ To start filtering, choose the ![Kanban filter icon](../media/icons/kanban-filte
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-![Enable kanban field-based filtering](media/filter/filter-kb-choose-filter.png)
+![Enable kanban field-based filtering, earlier versions](media/filter/filter-kb-choose-filter.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -148,7 +148,7 @@ For example, here we filter for all items assigned to Jamal and Raisa.
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-![Kanban board, Filter on assignment field](media/filter-kb-filters-chosen.png)
+![Kanban board, Filter on assignment field, earlier versions](media/filter-kb-filters-chosen.png)
 
 ::: moniker-end
 
@@ -173,7 +173,7 @@ You can use this feature only when you've created features or epics and linked t
 > [!NOTE]
 > The **Filter by parent**  feature doesn't support filtering of parent work items of the same work item type. For example, you can't filter the Stories backlog by specifying user stories that are parents of nested user stories.
 
-To start filtering, choose the ![Kanban filter icon](../media/icons/kanban-filter-icon.png) Kanban board filter icon. Choose one or more values from the multi-select drop-down menu for the Parent Work Item. These values are derived from the [Features](kanban-epics-features-stories.md) you've defined.
+To start filtering, choose the :::image type="icon" source="../media/icons/kanban-filter-icon.png" border="false"::: **Filter** icon. Choose one or more values from the multi-select drop-down menu for the Parent Work Item. These values are derived from the [Features](kanban-epics-features-stories.md) you've defined.
 
 Here, we choose two features on which to filter the board.
 
@@ -182,7 +182,7 @@ Here, we choose two features on which to filter the board.
 ::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board, Filter on assignment field](media/filter/filter-kb-parent-filters-services.png)
+> ![Kanban board, Filter on Parent field](media/filter/filter-kb-parent-filters-services.png)
 
 
 ::: moniker-end
