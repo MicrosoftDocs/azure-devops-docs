@@ -8,7 +8,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 05/28/2020
+ms.date: 08/25/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -30,9 +30,9 @@ PATs are easy to create when you need them and easy to revoke when you don’t. 
 - [Default permissions and access for Azure DevOps](../security/permissions-access.md)
 - [Revoke other users' PATs](admin-revoke-user-pats.md)
 
-## Frequently asked questions (FAQs)
-
 ::: moniker range="azure-devops"
+
+## FAQ
 
 ### Q: Is there a way to renew a PAT via REST API?
 

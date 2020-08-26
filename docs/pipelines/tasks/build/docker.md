@@ -104,7 +104,7 @@ steps:
   displayName: Build and Push
   inputs:
     command: buildAndPush
-    repository: someUser/contoso
+    repository: contosoRepository
     tags: |
       tag1
       tag2

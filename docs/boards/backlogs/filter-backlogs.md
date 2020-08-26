@@ -23,9 +23,9 @@ If you have many items listed in your product or portfolio backlog&mdash;and you
 
 The filter function is available from boards, backlogs, sprint backlogs, queries, and taskboards. For information on filtering Kanban boards, see [Filter your Kanban board](../boards/filter-kanban-board.md). 
 
-::: moniker range=">= azure-devops-2019"
-
 ## Filter based on keywords or fields   
+
+::: moniker range=">= azure-devops-2019"
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.
 
@@ -56,8 +56,6 @@ To clear and dismiss filtering, choose the :::image type="icon" source="../../me
 
 
 ::: moniker range="tfs-2018"
-
-## Filter based on keywords or fields   
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 

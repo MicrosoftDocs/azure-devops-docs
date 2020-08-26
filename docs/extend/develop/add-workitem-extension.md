@@ -119,6 +119,7 @@ This sample shows how to register an object that's called when events occur on t
 [!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
 <a name="addapage"></a>
+
 ## Add a page
 
 A new page is rendered as a tab on the work item form. New pages appear next to the Details tab.
@@ -164,6 +165,7 @@ See the JavaScript sample in the form group section. The name of the registered 
 In Azure DevOps, by default the group extensions appear in the end of the second column of the form and page contributions appear after all the work item form pages as a tab. Control contributions are not shown in the form by default so users have to manually add them to the form. In TFS, to show/hide or move the control, group and page contributions in work item form, see  [Configure work item form extensions in TFS](./configure-workitemform-extensions.md).
 
 <a name="addmenuaction"></a>
+
 ## Add menu action
 
 ![toolbar item in work item form](./media/add-workitem-extension-toolbar.png)
@@ -202,7 +204,8 @@ To add an item to the work item toolbar, add this contribution to your extension
 | group        | Determines where the menu item appears, related to others. Toolbar items with the same group name are grouped and divided by a separator from the rest of the items.
 | registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contribution ID.
 
-<a name="listenforevents"></a>   
+<a name="listenforevents"></a>  
+ 
 ## Listen for events
 
 To add an observer to the work item, which listens to the work item events, add this contribution to your extension manifest. There's no visualization for observers on the work item form. This is the best way to listen to work item form onSaved event since the observer lives outside of the form and doesn't get destroyed when form closes, which might happen right after save.
