@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 08/04/2020
+ms.date: 08/26/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
