@@ -1,12 +1,12 @@
 ---
-title: Use multiple repositories in your pipeline
+title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
 ms.date: 08/19/2020
 monikerRange: "> azure-devops-2019"
 ---
 
-# Use multiple repositories in your pipeline
+# Check out multiple repositories in your pipeline
 
 [!INCLUDE [version-team-services](../includes/version-server-2020-rtm.md)]
 
@@ -16,7 +16,7 @@ Pipelines often rely on multiple repositories that contain source, tools, script
 
 Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
 
-Supported repositories are [Azure Repos Git](azure-repos-git.md) (`git`), [GitHub](github.md) (`github`), [GitHubEnterprise](github-enterprise.md)(`githubenterprise`), and [Bitbucket Cloud](bitbucket.md) (`bitbucket`).
+Supported repositories are [Azure Repos Git](azure-repos-git.md) (`git`), [GitHub](github.md) (`github`), [GitHubEnterprise](github-enterprise.md) (`githubenterprise`), and [Bitbucket Cloud](bitbucket.md) (`bitbucket`).
 
 The following combinations of `checkout` steps are supported.
 
@@ -24,7 +24,7 @@ The following combinations of `checkout` steps are supported.
     :::column:::
         No `checkout` steps
     :::column-end:::
-    :::column span="2":::
+    :::column span="3":::
         The default behavior is as if `checkout: self` were the first step, and the current repository is checked out.
     :::column-end:::
 :::row-end:::
@@ -33,7 +33,7 @@ The following combinations of `checkout` steps are supported.
     :::column:::
         A single `checkout: none` step
     :::column-end:::
-    :::column span="2":::
+    :::column span="3":::
         No repositories are synced or checked out.
     :::column-end:::
 :::row-end:::
@@ -42,7 +42,7 @@ The following combinations of `checkout` steps are supported.
     :::column:::
         A single `checkout: self` step
     :::column-end:::
-    :::column span="2":::
+    :::column span="3":::
         The current repository is checked out.
     :::column-end:::
 :::row-end:::
@@ -51,7 +51,7 @@ The following combinations of `checkout` steps are supported.
     :::column:::
         A single `checkout` step that isn't `self` or `none`
     :::column-end:::
-    :::column span="2":::
+    :::column span="3":::
         The designated repository is checked out instead of `self`.
     :::column-end:::
 :::row-end:::
@@ -60,7 +60,7 @@ The following combinations of `checkout` steps are supported.
     :::column:::
         Multiple `checkout` steps
     :::column-end:::
-    :::column span="2":::
+    :::column span="3":::
         Each designated repository is checked out to a folder named after the repository, unless a different `path` is specified in the `checkout` step. To check out `self` as one of the repositories, use `checkout: self` as one of the `checkout` steps.
     :::column-end:::
 :::row-end:::
@@ -114,7 +114,8 @@ steps:
 ```
 
 If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitbucketRepo  MyGitHubRepo`. In this example, the names of the repositories are used for the folders, because no `path` is specified in the checkout step. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
-s
+
+
 ## Inline syntax checkout
 
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
