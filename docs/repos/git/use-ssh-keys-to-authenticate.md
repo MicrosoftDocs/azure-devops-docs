@@ -172,7 +172,7 @@ fatal: Could not read from remote repository.
 
 ### Q: How can I have Git remember the passphrase for my key on Windows?
 
-**A:** Run the following command included in Git for Windows to start up the `ssh-agent` process in Powershell or the Windows Command Prompt. `ssh-agent` will cache
+**A:** Run the following command included in Git for Windows to start up the `ssh-agent` process in PowerShell or the Windows Command Prompt. `ssh-agent` will cache
 your passphrase so you don't have to provide it every time you connect to your repo.
 
 ```
@@ -238,7 +238,7 @@ On Windows, before running `ssh-add`, you will need to run the following command
 start-ssh-agent.cmd
 ```
 
-This command runs in both Powershell and the Command Prompt. If you are using Git Bash, the command you need to use is:
+This command runs in both PowerShell and the Command Prompt. If you are using Git Bash, the command you need to use is:
 
 ```
 eval `ssh-agent`
