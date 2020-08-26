@@ -190,7 +190,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>Build.ContainerId</td>
 <td>The ID of the container for your artifact. When you upload an artifact in your pipeline, it is added to a container that is specific for that particular artifact.</td>
 <td>No</td>
-<br><br>
+</tr>
 
 <tr>
 <td>Build.DefinitionName</td>
