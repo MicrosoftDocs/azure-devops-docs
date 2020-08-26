@@ -212,7 +212,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>Build.DefinitionName</td>
-<td>The name of the build pipeline.</td>
+<td>The name of the build pipeline.
 <br><br>
 
 
