@@ -80,7 +80,7 @@ You must use a [repository resource](../yaml-schema.md#repository-resource) if y
 
 You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 
-In the following example, three repositories are declared as repository resources. The [Azure Repos Git repository in another organization](../library/service-endpoints.md#sep-tfsts), [GitHub](../library/service-endpoints.md#sep-github), and [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket) repository resources require [service connections](../library/service-endpoints.md), which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which check out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
+In the following example, three repositories are declared as repository resources. The [Azure Repos Git repository in another organization](../library/service-endpoints.md#sep-tfsts), [GitHub](../library/service-endpoints.md#sep-github), and [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket) repository resources require [service connections](../library/service-endpoints.md), which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which checks out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
 
 ```yaml
 resources:
@@ -159,7 +159,7 @@ If you are using inline syntax, designate the ref by appending `@<ref>`. For exa
 - checkout: git://MyProject/MyRepo@refs/tags/MyTag # checks out the commit referenced by MyTag.
 ```
 
-When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/` branch.
+When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/` branch of the designated repository.
 
 ```yaml
 resources:
@@ -169,6 +169,9 @@ resources:
     endpoint: MyGitHubServiceConnection
     name: MyGitHubOrgOrUser/MyGitHubRepo
     ref: features/tools
+
+steps:
+- checkout: MyGitHubRepo
 ```
 
 ## Triggers
@@ -178,7 +181,7 @@ You can trigger a pipeline when an update is pushed to the `self` repository or 
 - You consume a tool or a library from a different repository. You want to run tests for your application whenever the tool or library is updated.
 - You keep your YAML file in a separate repository from the application code. You want to trigger the pipeline every time an update is pushed to the application repository.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Repository resource triggers only work for Azure Repos Git repositories at present. They do not work for GitHub or Bitbucket repository resources.
 
 If you do not specify a `trigger` section in a repository resource, then the pipeline won't be triggered by changes to that repository. If you specify a `trigger` section, then the behavior for triggering is similar to how CI triggers work for the self repository.
