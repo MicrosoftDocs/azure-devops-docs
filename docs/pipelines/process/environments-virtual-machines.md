@@ -26,6 +26,7 @@ You can define environments in **Environments** under **Pipelines**.
    > [!NOTE]
    > - The Personal Access Token (PAT) of the logged in user is included in the script.  The PAT expires on the day you generate the script.
    > - If your VM already has any agent other running on it, provide a unique name for **agent** to register with the environment.
+
 7.    Once your VM is registered, it will start appearing as an environment resource under the **Resources** tab of the environment.
 
    > [!div class="mx-imgBorder"]

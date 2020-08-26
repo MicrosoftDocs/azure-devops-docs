@@ -126,7 +126,7 @@ If you don't want to create a project in Azure DevOps or TFS, you can create [Az
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
-Choose Current page tab for information on creating a project. 
+Choose the **Current page** tab for information on creating a project. 
 ::: moniker-end
 
 #### [Current page](#tab/current-page)
@@ -164,8 +164,9 @@ Choose Current page tab for information on creating a project.
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
-Choose the Preview page tab for instructions.
+Choose the **Preview page** tab for instructions.
 ::: moniker-end
+
 ::: moniker range="azure-devops-2019"
 
 1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png) Then, select **Create Project**.
@@ -413,7 +414,7 @@ Connect to a project, collection, or server from your web browser.
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
-Choose the Current tab for information.
+Choose the **Current page** tab for information on connecting to projects.
 ::: moniker-end
 
 #### [Current](#tab/current-page)
@@ -439,7 +440,7 @@ Connect to a project, collection, or server from your web browser.
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
-Choose the Preview page tab for information.
+Choose the **Preview page** tab for information.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018 <= azure-devops-2019"  

@@ -4,7 +4,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 02/13/2020
+ms.date: 08/19/2020
 ---
 
 <h3 id="set-in-script">Define and modify your variables in a script</h3>

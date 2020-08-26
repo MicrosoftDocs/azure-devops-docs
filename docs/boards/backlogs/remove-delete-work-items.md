@@ -331,9 +331,13 @@ az boards work-item delete --id 864 --destroy --yes
 
 <a id="restore" />
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= tfs-2015"  
 
 ## Restore or permanently delete work items   
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 You restore deleted work items from the web portal Recycle bin. 
 
@@ -362,8 +366,6 @@ You restore deleted work items from the web portal Recycle bin.
 <a id="restore-work-items" />
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
-
-## Restore or permanently delete work items   
 
 You restore deleted work items from the web portal Recycle bin. 
 
