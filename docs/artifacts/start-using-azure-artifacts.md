@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]  
 
 > [!NOTE]
-> If you are using a version of TFS, you will need to license Azure Artifacts instead of signing up. 
+> If you're using a version of TFS, you will need to license Azure Artifacts instead of signing up. 
 
 ::: moniker range="azure-devops"
 
