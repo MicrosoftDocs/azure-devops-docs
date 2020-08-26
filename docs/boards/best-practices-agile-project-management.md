@@ -120,14 +120,14 @@ Create your product plan using the Features Backlog. The development team then c
 Project managers initiate the product plan by adding features to the Features backlog. Each feature should represent a shippable deliverable that addresses a customer need. 
 
 > [!div class="mx-imgBorder"]  
-> ![Features backlog](media/best-practices/features-backlog.png)  
+> ![Screenshot of Features backlog.](media/best-practices/features-backlog.png)  
 
 ### Product backlog 
 
 Development teams add User Stories to their product backlog so that  the User Story is automatically assigned the team's default Area Path and Iteration Path. Then, they can map those stories under each Feature that represents the work they'll do to implement the Feature. Each User Story should be sized so that they can be completed within a sprint.  
 
 > [!div class="mx-imgBorder"]  
-> ![Product backlog](media/best-practices/product-backlog.png)  
+> ![Screenshot of Product backlog.](media/best-practices/product-backlog.png)  
  
 ### Groom each backlog  
 
@@ -165,8 +165,8 @@ With work item tags, team members can assign ad-hoc tags to work items. You can 
 
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board, Filter using keyword search](boards/media/filter/filter-kb-text-web-services.png)
-https://review.docs.microsoft.com/en-us/azure/devops/boards/boards/media/filter/filter-kb-text-web-services.png?view=azure-devops
+> ![Screenshot of Kanban board, Filter using keyword search.](boards/media/filter/filter-kb-text-web-services.png)
+
 
 
 #### Best practice tips: 
@@ -178,6 +178,7 @@ https://review.docs.microsoft.com/en-us/azure/devops/boards/boards/media/filter/
 #### To learn how: 
 
 - [Add work item tags to categorize and filter lists and boards](queries/add-tags-to-work-items.md)
+- [Filter your Kanban board](boards/filter-kanban-board.md)
 - [Create a Wiki for your project](../project/wiki/wiki-create-repo.md) 
 
 
@@ -192,13 +193,13 @@ As project managers, you'll want to always have your features backlog in priorit
 
 Here the features backlog shows the sequence of features to ship. 
 
-:::image type="content" source="media/best-practices/feature-backlog-priority-order.png" alt-text="Features backlog, ordered by feature parent":::
+:::image type="content" source="media/best-practices/feature-backlog-priority-order.png" alt-text="Screenshot of Features backlog, ordered by feature parent.":::
 
 #### Order the requirements backlog based on parent features 
 
 First you want to make sure you are completing the requirements needed to ship features. As shown in the following image, the requirements backlog has been ordered according to the features you want to ship. This ordering assumes that all requirements in a feature must be complete in order to ship it. Also, Story Points have been assigned to each User Story. 
 
-:::image type="content" source="media/best-practices/product-backlog-ordered-parent.png" alt-text="Requirements backlog, ordered by feature parent":::
+:::image type="content" source="media/best-practices/product-backlog-ordered-parent.png" alt-text="Screenshot of Requirements backlog, ordered by feature parent.":::
 
 
 #### Forecast the requirements backlog 
@@ -208,7 +209,7 @@ With estimates assigned to each requirement, you can set a team velocity. In the
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
 > [!div class="mx-imgBorder"]  
-> [![Forecast of Requirements backlog, ordered by feature parent](media/best-practices/forecast-product-backlog-ordered-parent.png)](media/best-practices/forecast-product-backlog-ordered-parent.png#lightbox)
+> [![Screenshot of Forecast of Requirements backlog, ordered by feature parent.](media/best-practices/forecast-product-backlog-ordered-parent.png)](media/best-practices/forecast-product-backlog-ordered-parent.png#lightbox)
 
 Getting good at estimates and having predictable team velocities are useful team goals for [process improvement](#process-improvement).
  
@@ -216,7 +217,7 @@ Getting good at estimates and having predictable team velocities are useful team
 
 With a forecast of when a feature will ship, you can update each feature's iteration path. Quickly assign values to a feature by adding those fields to the card on the Kanban board.  
 
-:::image type="content" source="media/best-practices/features-board-iteration-path-updates.png" alt-text="Features board, updated iteration paths":::
+:::image type="content" source="media/best-practices/features-board-iteration-path-updates.png" alt-text="Screenshot of Features board with updated iteration paths.":::
 
 
 #### Milestone planning
@@ -240,7 +241,7 @@ In Microsoft Project, you manage tasks that depend on the completion of other ta
 Azure Boards supports a number of link types to track related work. Choose the Predecessor/Successor link types to track work with dependencies. The quickest way to add a number of these links is to add a tag to work items that participate in producing or consuming dependencies, create a query based on this tag, and then add the required links from the triage mode of the query results. 
 
 > [!div class="mx-imgBorder"]  
-> ![Add link dialog, successor link type](media/best-practices/add-link-successor.png)  
+> ![Screenshot of Add link dialog, successor link type.](media/best-practices/add-link-successor.png)  
 
 ### Visualize work item relationships 
 
@@ -249,9 +250,9 @@ With the [Work Item Visualization](https://marketplace.visualstudio.com/items?it
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
 > [!div class="mx-imgBorder"]  
-> [![Visualize work item relationships](media/best-practices/visualize-successor-links-cross-project-wide.png)](media/best-practices/visualize-successor-links-cross-project-wide.png#lightbox)
+> [![Screenshot of Visualize work item relationships.](media/best-practices/visualize-successor-links-cross-project-wide.png)](media/best-practices/visualize-successor-links-cross-project-wide.png#lightbox)
 
-### Minimum Viable Product vsersus Critical Path Management  
+### Minimum Viable Product versus Critical Path Management  
 
 Azure Boards doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks. For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
 
@@ -299,7 +300,7 @@ Each sprint, perform the following tasks:
 #### Sprint burndown chart 
 
 > [!div class="mx-imgBorder"]  
-> ![Sprint burndown chart ](media/best-practices/sprint-burndown-chart.png) 
+> ![Screenshot of Analytics Sprint burndown chart.](media/best-practices/sprint-burndown-chart.png) 
 
 
 ## Review progress and feature deliverables 
@@ -317,7 +318,7 @@ Your Features board is another place to review progress and ensure the continuou
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
 > [!div class="mx-imgBorder"]  
-> [![Features board, customized](media/best-practices/features-board-customized.png)](media/best-practices/features-board-customized.png#lightbox)
+> [![Screenshot of Features board with customized columns.](media/best-practices/features-board-customized.png)](media/best-practices/features-board-customized.png#lightbox)
 
 
 
@@ -326,14 +327,14 @@ Your Features board is another place to review progress and ensure the continuou
 One quick and visual way to monitor progress is from the Features backlog. By adding the rollup progress bar column, you can see what percentage of work items are completed for each feature, as shown in the following image.  
 
 > [!div class="mx-imgBorder"]  
-> ![Features backlog, progress bars](media/best-practices/feature-backlog-progress.png)  
+> ![Screenshot of Features backlog showing progress bars column option.](media/best-practices/feature-backlog-progress.png)  
  
 ### Delivery plans and multiple team deliverables  
 
 To review features delivered across several teams, configure a delivery plan. Delivery plans provide an interactive board to review a calendar schedule of stories or features several teams plan to deliver.  
 
 > [!div class="mx-imgBorder"]  
-> ![Delivery plan](plans/media/plans_view2.png) 
+> ![Screenshot of Delivery plan, annotated.](plans/media/plans_view2.png) 
   
 ### Best practice tips  
 
@@ -379,7 +380,7 @@ Some of the Agile tools you can use to support process improvement are team velo
 From the team velocity chart, you can gain an understanding as to how well the team is planning and executing a sprint. As shown in the following example, the velocity chart shows the planned, completed, completed late, and incomplete count of work items for several sprints. Teams can review this chart to help determine how well they are estimating and executing and how they might improve. 
 
 > [!div class="mx-imgBorder"]  
-> ![Example team velocity chart](../report/dashboards/media/velocity/analytics-velocity-azure-devops.png) 
+> ![Screenshot of Example team velocity chart.](../report/dashboards/media/velocity/analytics-velocity-azure-devops.png) 
 
 
 ### Team dashboards  
@@ -387,7 +388,7 @@ From the team velocity chart, you can gain an understanding as to how well the t
 Teams can define one or more dashboards to share information and monitor real-time data on work progress. 
  
 > [!div class="mx-imgBorder"]  
-> ![Example team dashboard](../report/dashboards/media/dashboard-view-with-widgets.png)  
+> ![Screenshot of Example team dashboard.](../report/dashboards/media/dashboard-view-with-widgets.png)  
 
 #### Best practice tips 
 
@@ -405,37 +406,18 @@ Teams can define one or more dashboards to share information and monitor real-ti
 - [Scaling Agile - Practices that scale](plans/practices-that-scale.md) 
 - [Retrospectives Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) 
 
-## Related articles
+## Try this next
+> [!div class="nextstepaction"]
+> [Configure and customize Azure Boards](configure-customize.md)
 
-- [Configure and customize Azure Boards](configure-customize.md) 
+
+## Related articles
 - [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs/backlogs-boards-plans.md) 
 - [Work with multi-team ownership of backlog items](backlogs/backlogs-overview.md#multi-team)
 
 
 ### Industry articles  
+
 - [Agile and a continuous improvement mindset](https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset) 
 - [What is KAIZEN™](https://www.kaizen.com/what-is-kaizen.html)
 
-<!---
-
- 
-*What are useful process improvement goals for a dev team? feature team?* 
-Make your team accountable. ...
-Measure results. ...
-
-
-How choose the tools and methods that will support your team? 
-How choose the most light-weight tracking methods? 
-Main thing is that your development team will use a product backlog; project management will use a Kanban board to track Features. 
-
-Introduce you to key features to support traditional project management activities 
-Best practices tips here "light-weight" 
-Light-weight - minimal tracking, status updates, minimal estimation 
-
-
-Use the guidance provided in this article to get started. Light-weight 
-
-
-
-You can start from a bottom-up or top-down approach, choose one for your initial planning.
---> 
