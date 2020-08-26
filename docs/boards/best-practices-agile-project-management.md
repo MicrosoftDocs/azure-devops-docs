@@ -203,12 +203,14 @@ First you want to make sure you are completing the requirements needed to ship f
 
 #### Forecast the requirements backlog 
 
-With estimates assigned to each requirement, and plugging in 12 as a velocity, the Forecast tool shows which requirements and features the team can complete within the next six sprints. Using the Planning tool, you can quickly assign requirements to the forecasted sprints.  
+With estimates assigned to each requirement, you can set a team velocity. In the example below, we specify 12 for the velocity, equivalent to stating that on average the team can complete 12 Story Points per sprint. The Forecast tool shows which requirements and features the team can complete within the next six sprints. Using the Planning tool, you can quickly assign requirements to the forecasted sprints.  
 
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
 > [!div class="mx-imgBorder"]  
 > [![Forecast of Requirements backlog, ordered by feature parent](media/best-practices/forecast-product-backlog-ordered-parent.png)](media/best-practices/forecast-product-backlog-ordered-parent.png#lightbox)
+
+Getting good at estimates and having predictable team velocities are useful team goals for [process improvement](#process-improvement).
  
 #### Update your Features board 
 
@@ -351,6 +353,7 @@ To review features delivered across several teams, configure a delivery plan. De
 - [Display rollup progress or totals](backlogs/display-rollup.md)
 - [Review team Delivery Plans](plans/review-team-plans.md)
 
+<a id="process-improvement" /> 
 
 ## Process improvement  
 
