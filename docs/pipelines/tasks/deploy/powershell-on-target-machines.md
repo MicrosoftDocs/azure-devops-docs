@@ -19,9 +19,6 @@ Use this task to execute PowerShell scripts on remote machine(s).
 This task can run both PowerShell scripts and PowerShell-DSC scripts:
 
 * For PowerShell scripts, the computers must have PowerShell 2.0 or higher installed.
-* For PowerShell-DSC scripts, the computers must have 
-  [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855&40ddd5bd-f9e7-49a6-3526-f86656931a02=True)
-  installed. This is installed by default on Windows 8.1, Windows Server 2012 R2, and later.
 
 ::: moniker range="<= tfs-2018"
 
