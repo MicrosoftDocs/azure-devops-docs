@@ -163,6 +163,7 @@ Periodically review each backlog to perform these tasks:
  
 With work item tags, team members can assign ad-hoc tags to work items. You can use these tags to filter backlogs and boards as well as query on work items.  For tags to be useful to the team, provide some general guidance on how your team should use tags. Consider documenting this guidance in a central place, such as the [project wiki](../project/wiki/about-readme-wiki.md). 
 
+The following image illustrates a Kanban board filtered on the *web* keyword which displays cards with the *Web* tag. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Kanban board, Filter using keyword search.](boards/media/filter/filter-kb-text-web-services.png)
@@ -215,7 +216,7 @@ Getting good at estimates and having predictable team velocities are useful team
  
 #### Update your Features board 
 
-With a forecast of when a feature will ship, you can update each feature's iteration path. Quickly assign values to a feature by adding those fields to the card on the Kanban board.  
+With a forecast of when a feature will ship, you can update each feature's iteration path. Quickly assign values to a feature by adding those fields to the card on the Kanban board as shown in the following image. 
 
 :::image type="content" source="media/best-practices/features-board-iteration-path-updates.png" alt-text="Screenshot of Features board with updated iteration paths.":::
 
@@ -240,12 +241,14 @@ In Microsoft Project, you manage tasks that depend on the completion of other ta
 
 Azure Boards supports a number of link types to track related work. Choose the Predecessor/Successor link types to track work with dependencies. The quickest way to add a number of these links is to add a tag to work items that participate in producing or consuming dependencies, create a query based on this tag, and then add the required links from the triage mode of the query results. 
 
+The following Add link dialog illustrates how two work items are linked using the Successor link type. 
+
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Add link dialog, successor link type.](media/best-practices/add-link-successor.png)  
 
 ### Visualize work item relationships 
 
-With the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension, you can visualize the link relationships among several work items
+With the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension, you can visualize the link relationships among several work items as shown in the following image. 
 
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
@@ -278,6 +281,15 @@ Azure Boards doesn't provide a native view of the critical path. In part, as Agi
 
 Sprints allow the development team to focus on completing a pre-selected set of work. Work assign to a sprint appears on the team's sprint backlog. Sprint backlogs are defined only for product backlogs, not for portfolio backlogs.  
 
+
+#### Sprint burndown chart 
+
+By updating the status of work daily throughout a sprint, you can easily track sprint progress with the Sprint burndown chart, as shown in the following image. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Analytics Sprint burndown chart.](media/best-practices/sprint-burndown-chart.png) 
+
+
 #### Best practice tips  
 
 Each sprint, perform the following tasks: 
@@ -297,10 +309,6 @@ Each sprint, perform the following tasks:
 - [Configure and monitor sprint burndown](../report/dashboards/configure-sprint-burndown.md) 
 - [Define features and epics](backlogs/define-features-epics.md)  
 
-#### Sprint burndown chart 
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Analytics Sprint burndown chart.](media/best-practices/sprint-burndown-chart.png) 
 
 
 ## Review progress and feature deliverables 
