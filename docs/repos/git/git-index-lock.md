@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2013'
 
 
 #  Git index.lock file
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 ## What is a Git index.lock file?
 

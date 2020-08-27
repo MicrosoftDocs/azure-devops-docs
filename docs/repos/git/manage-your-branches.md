@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Manage branches
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
+#### Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
 
 Manage the work in your team's Git repo from the **Branches** view on the web. 
 Customize the view to track the branches you care most about so you can stay on top of changes made by your team.

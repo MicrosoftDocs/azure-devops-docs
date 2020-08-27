@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Squash merge pull requests
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
+#### Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
 
 ## Pull requests and Git history
 
