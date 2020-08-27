@@ -29,6 +29,8 @@ The following retention policies are available in Azure DevOps in your **Project
 * **Release** - Set whether to retain a build and view the default and maximum retention settings.
 * **Test** - Set how long to keep automated and manual test runs, results, and attachments. 
 
+If you are using an on-premises server, you can also specify retention policy defaults for a project and when releases are permanently destroyed. Learn more about [release retention](#release).
+
 ## Prerequisites 
 
 By default, members of the Contributors, Build Admins, Project Admins, and Release Admins groups can manage retention policies. 
@@ -55,7 +57,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 :::image type="content" source="media/retention_menu.png" alt-text="Retention settings in Project settings":::
 
 
-## Set pipeline and release retention policies
+### Configure run retention policies
 
 In most cases, you don't need to retain completed runs longer than a certain number of days. 
 Using retention policies, you can control **how many days** you want to keep each run before deleting it. 
@@ -82,28 +84,82 @@ Along with defining how many days to retain runs, you can also decide the minimu
 
 ::: moniker-end
 
+### What parts of the run get deleted
+
+::: moniker range="<= tfs-2018"
+
+When the retention policies mark a build for deletion, you can control which information related to the build is deleted:
+
+* Build record: You can choose to delete the entire build record or keep basic information about the build even after the build is deleted.
+* Source label: If you label sources as part of the build, then you can choose to delete the tag (for Git) or the label (for TFVC) created by a build.
+* Automated test results: You can choose to delete the automated test results associated with the build (for example, results published by the Publish Test Results build task).
+
+The following information is deleted when a build is deleted:
+
+* Logs
+* Published artifacts
+* Published symbols
+
+::: moniker-end
+
+::: moniker range="> tfs-2018"
+
+The following information is deleted when a run is deleted:
+
+* Logs
+* All artifacts
+* All symbols
+* Binaries
+* Test results
+* Run metadata
+
+::: moniker-end
+
+### When are runs deleted
+
+::: moniker range="> tfs-2018"
+
+Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load-balancing purposes. There is no option to change this process.
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+Your retention policies run every day at 3:00 A.M. UTC. There is no option to change this process.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
+
+### Delete a run
+
+You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
+
+> [!NOTE]
+> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
+
+> [!div class="mx-imgBorder"]
+> ![delete a run](media/delete-a-run.png)
+
+::: moniker-end
+
 <a id="release"></a>
 
 ## Release retention policies
+
+> [!NOTE]
+> If you are using Azure Pipelines, you can view but not change the global release retention policies for your project.
+>
 
 The release retention policies for a release pipeline determine how long a release and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline.
 
 The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most recent three will be retained indefinitely - irrespective of the number of days specified. However, you can manually delete these releases when you no longer require them.
 
-
 As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
 
 ::: moniker range=">=azure-devops-2020"
+
 The retention policy for YAML and build pipelines is the same. You can see your pipeline's retention settings in **Project Settings** for **Pipelines** in the **Settings** section.
-
-1. Go to on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
-
-2. Select **Settings** in the Pipelines section.
-    * Set the number of days to keep [artifacts](../artifacts/artifacts-overview.md), [symbols](../../artifacts/concepts/symbols.md) and attachments.
-    * Set the number of days to keep [runs](../process/runs.md)
-    * Set the number of days to keep pull request [runs](../process/runs.md)
-    * Set the number of recent [runs](../process/runs.md) to retain for each pipeline
-
 
 ::: moniker-end
 
@@ -156,7 +212,7 @@ When specifying custom policies per pipeline, you cannot exceed the maximum limi
 
 ::: moniker range=">= tfs-2017"
 
-## Interaction between build and release retention policies
+### Interaction between build and release retention policies
 
 The build linked to a release has its own retention policy, which may be shorter than that of the release. If you want to retain the build for the same period as the release, set the **Retain associated artifacts** checkbox for the appropriate stages. This overrides the retention policy for the build, and ensures that the
 artifacts are available if you need to redeploy that release.
@@ -166,36 +222,38 @@ When you delete a release pipeline, delete a release, or when the retention poli
 > [!NOTE]
 > In TFS, interaction between build and release retention is available in TFS 2017 and newer.
 
-## Manual test-runs retention policies
+## Test retention policies
+
+You can set manual and automated test run policies. 
+
+### Manual test-runs retention policies
 
 To delete manual test results after a specific number of days, set the retention limit at the project level. Azure DevOps keeps manual test results related to builds, even after you delete those builds. That way, build policies don't delete your test results before you can analyze the data.
 
 1. Sign into your Azure DevOps. You'll need at least project administrator permissions.
 
-1. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
+2. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
  
 > [!div class="mx-imgBorder"]
 > ![project settings](media/project-settings.png)
 
-1. In the Retention page under the Test section, select a limit for how long you want to keep manual test data.
+3. In the Retention page under the Test section, select a limit for how long you want to keep manual test data.
 
 > [!div class="mx-imgBorder"]
 > ![manual tests retention policies](media/manual-tests-retention-policies.png)
 
-## Automated test-runs retention policies
-
-### Builds automated test results
+### Automated test-runs retention policies
 
 By default, Azure DevOps keeps automated test results related to builds only as long as you keep those builds. To keep test results after you delete your builds, edit the build retention policy. If you use Git for version control, you can specify how long to keep automated test results based on the branch.
 
 1. Sign into Azure DevOps. You'll need at least build level permissions to edit build pipelines.
  
-1. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
+2. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
 
 > [!div class="mx-imgBorder"]
 > ![project settings](media/project-settings.png)
 
-1. Select ![gear icon](../../media/icons/gear-icon.png) Settings under Pipelines and modify your retention policies.
+3. Select ![gear icon](../../media/icons/gear-icon.png) Settings under Pipelines and modify your retention policies.
 
 > [!div class="mx-imgBorder"]
 > ![project settings](media/build-pipelines-retention-policies.png)
@@ -204,72 +262,20 @@ By default, Azure DevOps keeps automated test results related to builds only as 
 
 To clean up automated test results that are left over from deleted builds or test results that aren't related to builds, for example, results published from external test systems, set the retention limits at the project level as shown in the [Manual test-runs retention policies](#manual-test-runs-retention-policies)
 
-## Artifact retention
+## Set artifact retention policies
 
-Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup jobs to be directed to just those agents, leaving the rest free to do regular work. When a pipeline run is deleted, artifacts stored outside of Azure DevOps are cleaned up through a job run on the agents. When the agent pool gets saturated with cleanup jobs, this can cause a problem. The solution to that is to designate a subset of agents in the pool that are the cleanup agents. If any agents have `Build.Cleanup` set, only those agents will run the cleanup jobs, leaving the rest of the agents free to continue running pipeline jobs.
- 
-::: moniker-end
+You can set artifact retention policies for pipeline runs in the Pipeline settings. 
 
-## What parts of the run get deleted
+1. Sign in to your project (`https://dev.azure.com/{yourorganization}/{yourproject}`). 
 
-::: moniker range="<= tfs-2018"
+2. Go to on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
-When the retention policies mark a build for deletion, you can control which information related to the build is deleted:
+3. Select **Settings** in **Pipelines**.
 
-* Build record: You can choose to delete the entire build record or keep basic information about the build even after the build is deleted.
-* Source label: If you label sources as part of the build, then you can choose to delete the tag (for Git) or the label (for TFVC) created by a build.
-* Automated test results: You can choose to delete the automated test results associated with the build (for example, results published by the Publish Test Results build task).
-
-The following information is deleted when a build is deleted:
-
-* Logs
-* Published artifacts
-* Published symbols
+4. Edit **Days to keep artifacts, symbols and attachments**. 
 
 ::: moniker-end
 
-::: moniker range="> tfs-2018"
-
-The following information is deleted when a run is deleted:
-
-* Logs
-* All artifacts
-* All symbols
-* Binaries
-* Test results
-* Run metadata
-
-::: moniker-end
-
-### Run retention 
-
-### When are runs deleted
-
-::: moniker range="> tfs-2018"
-
-Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load-balancing purposes. There is no option to change this process.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-Your retention policies run every day at 3:00 A.M. UTC. There is no option to change this process.
-
-::: moniker-end
-
-::: moniker range=">=azure-devops-2020"
-
-### Delete a run
-
-You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
-
-> [!NOTE]
-> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
-
-> [!div class="mx-imgBorder"]
-> ![delete a run](media/delete-a-run.png)
-
-::: moniker-end
 
 ::: moniker range=">=azure-devops-2020"
 
@@ -389,12 +395,12 @@ The "All" branches policy is automatically added as the last policy in the evalu
 ::: moniker-end
 
 
-
 ## FAQ
+
 
 ### Are manual test results deleted?
 
-No
+No. Manual test results are not deleted. 
 
 ### If I mark a run or a release to be retained indefinitely, does the retention policy still apply?
 
@@ -411,3 +417,7 @@ Runs that are deployed as part of releases are also governed by the release rete
 ### Are automated test results that are published as part of a release retained until the release is deleted?
 
 Test results published within a stage of a release are associated with both the release and the run. These test results are retained as specified by the retention policy configured for the run and for the test results. If you are not deploying Team Foundation or Azure Pipelines Build, and are still publishing test results, the retention of these results is governed by the retention settings of the release they belong to.
+
+### How do I use the `Build.Cleanup` capability of agents?
+
+Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup jobs to be directed to just those agents, leaving the rest free to do regular work. When a pipeline run is deleted, artifacts stored outside of Azure DevOps are cleaned up through a job run on the agents. When the agent pool gets saturated with cleanup jobs, this can cause a problem. The solution to that is to designate a subset of agents in the pool that are the cleanup agents. If any agents have `Build.Cleanup` set, only those agents will run the cleanup jobs, leaving the rest of the agents free to continue running pipeline jobs.
