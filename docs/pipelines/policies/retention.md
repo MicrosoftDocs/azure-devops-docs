@@ -129,7 +129,7 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 
 ::: moniker range=">=azure-devops-2020"
 
-### Delete a run
+## Delete a run
 
 You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
 
@@ -233,7 +233,7 @@ To delete manual test results after a specific number of days, set the retention
 2. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
  
 > [!div class="mx-imgBorder"]
-> ![project settings](media/project-settings.png)
+> ![configure project settings](media/project-settings.png)
 
 3. In the Retention page under the Test section, select a limit for how long you want to keep manual test data.
 
@@ -249,12 +249,12 @@ By default, Azure DevOps keeps automated test results related to builds only as 
 2. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
 
 > [!div class="mx-imgBorder"]
-> ![project settings](media/project-settings.png)
+> ![manage project settings](media/project-settings.png)
 
 3. Select ![gear icon](../../media/icons/gear-icon.png) Settings under Pipelines and modify your retention policies.
 
 > [!div class="mx-imgBorder"]
-> ![project settings](media/build-pipelines-retention-policies.png)
+> ![edit project settings](media/build-pipelines-retention-policies.png)
 
 ### Other automated test results
 
@@ -277,9 +277,8 @@ You can set artifact retention policies for pipeline runs in the Pipeline settin
 
 ::: moniker range=">=azure-devops-2020"
 
-## Extend retention beyond policies
 
-### Use the Copy Files task to save data longer
+## Use the Copy Files task to save data longer
 
 You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
 
@@ -375,7 +374,7 @@ If you [protect your Git branches with pull request builds](../../repos/git/bran
 ```
 
 > [!div class="mx-imgBorder"]
-> ![retention-policy-for-pull-request-builds](media/retention-policy-for-pull-request-builds.png)
+> ![retention policies for PR builds](media/retention-policy-for-pull-request-builds.png)
 
 ### TFVC and Subversion repositories
 
