@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019' 
-ms.date: 08/30/2019
+ms.date: 08/27/2020
 ---
 
 
@@ -73,17 +73,17 @@ The Configuration dialog for the Cycle Time and Lead Time widgets is the same. Y
 
 ::: moniker range="azure-devops"
 
-1. Choose the ![Actions icon](../../media/icons/actions-icon.png) actions icon and choose **Configure** to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlane, field criteria, and time period you want to monitor.  
+1. Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu icon and choose **Configure** to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlane, field criteria, and time period you want to monitor.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Configure dialog, Lead Time widget](media/lead-cycle/cycle-lead-time-configure-dialog-s156.png)
+	> ![Screenshot of Configure dialog, Lead Time widget, latest version.](media/lead-cycle/cycle-lead-time-configure-dialog-s156.png)
 
 	To select a **Swimlane**, you must select a **Backlog**. 
 
 1. To further filter the work items used to calculate the lead or cycle time, specify the **Field Criteria**. For example, all the work items whose Release field is set to Milestone 1. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Configure dialog, Lead Time widget](media/lead-cycle/field-criteria-release.png)
+	> ![Screenshot of Configure dialog, Lead Time widget, filter criteria.](media/lead-cycle/field-criteria-release.png)
 
 1. For a continuous flow, choose **Rolling period** and specify the number of days you want to view on the chart.  
 
@@ -93,7 +93,7 @@ The Configuration dialog for the Cycle Time and Lead Time widgets is the same. Y
 
 2. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
-	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Screenshot ofExample CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" /> 
 
 	For your lead/cycle time charts to provide useful data, your team must [Update the status](../../boards/boards/kanban-basics.md#track-work) in a timely manner those work items that the widgets track. 
 
@@ -101,9 +101,9 @@ The Configuration dialog for the Cycle Time and Lead Time widgets is the same. Y
 
 ::: moniker range="azure-devops-2019"
 
-1. Choose the ![Actions icon](../../media/icons/actions-icon.png) actions icon and choose **Configure** to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlane, and time period you want to monitor.  
+1. Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu icon and choose **Configure** to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlane, and time period you want to monitor.  
 
-	![Configure dialog, Lead Time widget](media/cycle-lead-time-configure-dialog.png)
+	![Screenshot of Configure dialog, Configure dialog, Lead Time widget, 2019 version.](media/cycle-lead-time-configure-dialog.png)
 
 	To select a **Swimlane**, you must select a **Backlog**. 
 
@@ -115,7 +115,7 @@ The Configuration dialog for the Cycle Time and Lead Time widgets is the same. Y
 
 2. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
-	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/cycle-lead-time-lt-sample-chart.png" alt="Screenshot  Example CFD chart, rolling 30 days, 2019 version" style="border: 2px solid #C3C3C3;" /> 
 
 	For your lead/cycle time charts to provide useful data, your team must [Update the status](../../boards/boards/kanban-basics.md#track-work) in a timely manner those work items that the widgets track. 
 
@@ -129,7 +129,7 @@ Both Lead Time and Cycle Time widgets display as scatter-plot control charts. Th
 
 **Example Lead Time widget**  
 
-<img src="media/lead-time-control-chart.png" alt="Cycle Time widget" style="border: 2px solid #C3C3C3;" />
+<img src="media/lead-time-control-chart.png" alt="Screenshot of Cycle Time widget." style="border: 2px solid #C3C3C3;" />
 
 The chart dots represent completed work items where their position on the horizontal axis represents the date they were completed. Their position on the vertical axis represents the calculated lead time or cycle time. 
 - Larger dots represent multiple work items with the same lead/cycle time 
@@ -147,7 +147,7 @@ The chart dots represent completed work items where their position on the horizo
 
 - Hover over any dot to see which work items contributed to the data point and the lead/cycle time for those items  
 - Choose a dot to open the work item or query that lists the work items   
-- To filter the chart, choose a work item type in the legend (![backlog item icon](../../media/icons/user-story-icon.png),![bug item icon](../../media/icons/bug-icon.png), or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
+- To filter the chart, choose a work item type in the legend (:::image type="icon" source="../../media/icons/user-story-icon.png" border="false":::, :::image type="icon" source="../../media/icons/bug-icon.png" border="false":::, or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
 
 
 ## Moving average and standard deviation calculations 

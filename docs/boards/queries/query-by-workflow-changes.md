@@ -271,7 +271,18 @@ You can quickly find items that you changed, resolved, or closed. You can also f
 </table>
 
 
+## Query changes in work item state 
+
+To list work items that have changed state within a specific date range, you can use the **State Change Date** field to narrow the search and then add clauses for changes to the **State** field. An example is shown in the following image.  
+ 
+> [!div class="mx-imgBorder"] 
+> ![Screenshot of Query Editor to query on State Change Date and State fields](media/workflow/query-state-change-date.png)
+
+
+
+
 <a id="kanban_query_fields">  </a>
+
 ::: moniker range=">= tfs-2015"
 
 ## Kanban board change queries 
@@ -329,19 +340,13 @@ Items in any swimlane that contains &quot;Test&quot;
 </tbody>
 </table>
 
-
-## Query changes in work item state 
-
-To list work items that have changed state within a specific date range, you can use the **State Change Date** field to narrow the search and then add clauses for changes to the **State** field. In example is shown in the following image.  
- 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of Query Editor to query on State Change Date and State fields](media/workflow/query-state-change-date.png)
-
 <a id="kanban-query-results">  </a>
 
 [!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
 ::: moniker-end
+
+
 
 <a id="workflow-fields">  </a>
 
