@@ -69,18 +69,9 @@ for your release.
 Based on the tool that you are using to deploy, check these prerequisites 
 for any computer you plan on using in your environment.
 
-**Windows PowerShell**
-
-* PowerShell 4.0: Install 
-  [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855) 
-  which includes PowerShell 4.0.
-
 **DSC**
 
 * Windows 8.1, Windows Server 2012 R2: DSC is already installed.
-* Windows Server 2012, Windows Server 2008 R2, Windows 8 and Windows 7: Install
-  [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855) 
-  which includes DSC.
 
 **Chef**
 
