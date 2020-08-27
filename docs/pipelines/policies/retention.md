@@ -72,7 +72,7 @@ Along with defining how many days to retain runs, you can also decide the minimu
 1. Go to on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
 2. Select **Settings** in the Pipelines section.
-    * Set the number of days to keep [artifacts](../artifacts/artifacts-overview.md), [symbols, and attachments.
+    * Set the number of days to keep [artifacts](../artifacts/artifacts-overview.md), symbols, and attachments.
     * Set the number of days to keep [runs](../process/runs.md)
     * Set the number of days to keep pull request [runs](../process/runs.md)
     * Set the number of recent [runs](../process/runs.md) to keep for each pipeline
