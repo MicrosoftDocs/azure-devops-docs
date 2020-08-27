@@ -24,7 +24,7 @@ Retention policies let you set how long to keep runs, tests, and releases stored
 The following retention policies are available in Azure DevOps in your **Project settings**: 
 
 * **Pipeline** - Set how long to keep artifacts, symbols, attachments, runs, and pull request runs. 
-* **Release** - Set whether to retain a build and view the default and maximum retention settings.
+* **Release** - Set whether to save builds and view the default and maximum retention settings.
 * **Test** - Set how long to keep automated and manual test runs, results, and attachments. 
 
 If you are using an on-premises server, you can also specify retention policy defaults for a project and when releases are permanently destroyed. Learn more about [release retention](#release).
@@ -49,8 +49,8 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 
 3. Select **Settings** or **Release retention** in **Pipelines** or **Retention** in **Test**.
     * In **Pipelines**, use **Settings** to configure retention for artifacts, symbols, attachments, runs, and pull request runs. 
-    * In **Pipelines**, use **Release retention** to set when to retain builds.
-    * In **Test**, use **Retention** to set how long to retain test runs.     
+    * In **Pipelines**, use **Release retention** to set when to keep builds.
+    * In **Test**, use **Retention** to set how long to keep test runs.     
 
 :::image type="content" source="media/retention_menu.png" alt-text="Retention settings in Project settings":::
 
@@ -71,14 +71,14 @@ Along with defining how many days to retain runs, you can also decide the minimu
 1. Go to on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
 2. Select **Settings** in the Pipelines section.
-    * Set the number of days to keep [artifacts](../artifacts/artifacts-overview.md), [symbols](../../artifacts/concepts/symbols.md) and attachments.
+    * Set the number of days to keep [artifacts](../artifacts/artifacts-overview.md), [symbols, and attachments.
     * Set the number of days to keep [runs](../process/runs.md)
     * Set the number of days to keep pull request [runs](../process/runs.md)
-    * Set the number of recent [runs](../process/runs.md) to retain for each pipeline
+    * Set the number of recent [runs](../process/runs.md) to keep for each pipeline
 
 3. Select **Release Retention** in the Pipelines section. 
     * View the maximum retention policy, default retention policy, and schedule for keeping releases after deletion. 
-    * Set whether to retain builds by default.
+    * Set whether to keep builds by default.
 
 ::: moniker-end
 
@@ -117,13 +117,13 @@ The following information is deleted when a run is deleted:
 
 ::: moniker range="> tfs-2018"
 
-Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load-balancing purposes. There is no option to change this process.
+Your retention policies are processed once a day. The time that the policies get processed variables because we spread the work throughout the day for load-balancing purposes. There is no option to change this process.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-Your retention policies run every day at 3:00 A.M. UTC. There is no option to change this process.
+Your retention policies run every day at 3:00 A.M. UTC. There is no option to change the time the policies run.
 
 ::: moniker-end
 
@@ -270,7 +270,7 @@ You can set artifact retention policies for pipeline runs in the Pipeline settin
 
 3. Select **Settings** in **Pipelines**.
 
-4. Edit **Days to keep artifacts, symbols and attachments**. 
+4. Edit **Days to keep artifacts, symbols, and attachments**. 
 
 ::: moniker-end
 
