@@ -330,6 +330,13 @@ Items in any swimlane that contains &quot;Test&quot;
 </table>
 
 
+## Query changes in work item state 
+
+To list work items that have changed state within a specific date range, you can use the **State Change Date** field to narrow the search and then add clauses for changes to the **State** field. In example is shown in the following image.  
+ 
+> [!div class="mx-imgBorder"] 
+> ![Screenshot of Query Editor to query on State Change Date and State fields](media/workflow/query-state-change-date.png)
+
 <a id="kanban-query-results">  </a>
 
 [!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]

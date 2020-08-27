@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 08/27/2020
 ---
 
 # Query by history   
@@ -17,6 +17,8 @@ ms.date: 11/19/2018
 
 The history of a work item tells you who opened the item, what changed, and why. This information helps you track how an item changes over time. When you enter information in the history field, provide as much information as possible to help the next work item owner understand what has happened and what they have to do.  
 
+> [!NOTE]  
+> There is no Discussion work item field. To query work items with comments entered in the Discussion area, you filter on the History** field. The full content of the text entered into the Discussion text box is added to the History field. 
 
 ## Supported operators and macros 
 
@@ -25,7 +27,7 @@ Query clauses that specify the **History** field can use the **Contains Words** 
 The **History** field is automatically indexed for full-text search when full-text search is available. See Full-Text and partial word searches 
 
 
-## View the History of a work item 
+## Query the History of a work item 
 
 You can use either the web portal or Team Explorer to view the history of a work item or find work items based on the contents of the **History** field. When you perform a search on the contents of the **History**  field, it returns only work items that have changes recorded in that field. That is, it doesn't register changes that were made to text in other fields.  
 
@@ -219,7 +221,8 @@ The name of the team member who modified the work item most recently.
 <td>History</td>
 <td>
 The record of changes that were made to the work item after it was created. Every time that the work item is updated, information is appended to the history, which specifies the date of the change, who made the changes, and which fields were changed. 
-<p>You can&#39;t add formatted text to the history field. Once you&#39;ve saved the work item, you can&#39;t alter the history. </p>
+<blockquote>History field queries return work items whose Discussion comments or Description fields contain words that match the keywords entered. You can't use the History field to query on changes made to other fields. </blockquote> 
+<p>You can't add formatted text to the history field. Once you&#39;ve saved the work item, you can't alter the history. </p>
 <p>The <code>History</code> field, along with the <code>Description</code>, <code>Steps to Repro</code> and <code>Title</code> fields are automatically indexed for full-text search as described in <a href="query-operators-variables.md" data-raw-source="[Query fields, operators, and macros](query-operators-variables.md)">Query fields, operators, and macros</a>. </p>
 <p>Reference name=System.History, Data type=History</p>
 </td>

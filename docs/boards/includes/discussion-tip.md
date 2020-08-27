@@ -34,6 +34,9 @@ Choose one of these icons &mdash;:::image type="icon" source="/azure/devops/medi
 > [!div class="mx-imgBorder"]  
 > ![Discussion section, @mention drop-down menu](/azure/devops/boards/media/discussion-at-mention.png)  
 
+> [!NOTE]  
+> There is no Discussion work item field. To query work items with comments entered in the Discussion area, you filter on the [**History** field](/azure/devops/boards/queries/history-and-auditing). The full content of the text entered into the Discussion text box is added to the History field. 
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"  
