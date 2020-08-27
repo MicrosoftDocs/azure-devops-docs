@@ -23,6 +23,6 @@ trigger:
 
 If you don't specify any tag triggers, then by default, tags will not trigger pipelines.
 
-> [!NOTE]
-> If you specify tags in combination with branch filters, the trigger will fire if either the branch filter is satisfied or the tag filter is satisfied.
+> [!IMPORTANT]
+> If you specify tags in combination with branch filters, the trigger will fire if either the branch filter is satisfied or the tag filter is satisfied. If a pushed tag satisfies a branch filter, the pipeline triggers even if the tag is in the tag exclude list, because the push satisfied the branch filter.
 
