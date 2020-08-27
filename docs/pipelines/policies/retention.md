@@ -11,8 +11,6 @@ monikerRange: '>= tfs-2015'
 
 # Set retention policies for builds, tests, and releases
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
-
 ::: moniker range="<= tfs-2018"
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -57,7 +55,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 :::image type="content" source="media/retention_menu.png" alt-text="Retention settings in Project settings":::
 
 
-### Configure run retention policies
+## Set run retention policies
 
 In most cases, you don't need to retain completed runs longer than a certain number of days. 
 Using retention policies, you can control **how many days** you want to keep each run before deleting it. 
@@ -145,7 +143,7 @@ You can delete runs using the [context menu](../get-started/multi-stage-pipeline
 
 <a id="release"></a>
 
-## Release retention policies
+## Set release retention policies
 
 > [!NOTE]
 > If you are using Azure Pipelines, you can view but not change the global release retention policies for your project.
@@ -222,7 +220,7 @@ When you delete a release pipeline, delete a release, or when the retention poli
 > [!NOTE]
 > In TFS, interaction between build and release retention is available in TFS 2017 and newer.
 
-## Test retention policies
+## Set test retention policies
 
 You can set manual and automated test run policies. 
 
