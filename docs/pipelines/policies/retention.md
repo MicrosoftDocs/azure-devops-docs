@@ -52,7 +52,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
     * In **Pipelines**, use **Release retention** to set when to keep builds.
     * In **Test**, use **Retention** to set how long to keep test runs.     
 
-:::image type="content" source="media/retention_menu.png" alt-text="Retention settings in Project settings":::
+:::image type="content" source="media/retention-menu.png" alt-text="Retention settings in Project settings":::
 
 
 ## Set run retention policies
