@@ -40,6 +40,7 @@ To manage test results, you must have one of the following subscriptions:
 
 You can also buy monthly access to Azure Test Plans and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role).
 
+::: moniker range=">= azure-devops-2019"
 
 ## Configure retention policies
 
@@ -53,7 +54,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
     * In **Test**, use **Retention** to set how long to keep test runs.     
 
 :::image type="content" source="media/retention-menu.png" alt-text="Retention settings in Project settings":::
-
+::: moniker-end
 
 ## Set run retention policies
 
