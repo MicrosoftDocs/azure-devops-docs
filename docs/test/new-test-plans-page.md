@@ -7,7 +7,7 @@ ms.topic: reference
 ms.author: ravishan-msft
 author: ravishan-msft
 ms.date: 06/12/2020
-monikerRange: '>= azure-devops'
+monikerRange: 'azure-devops'
 ---
 # New Test Plans page
 
