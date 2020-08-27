@@ -37,20 +37,12 @@ In this article you'll learn:
 To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
 
-
 ## Prerequisites  
 
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
-
-::: moniker range=">= azure-devops-2019" 
-
-
 ## Add the widget to your dashboard   
 
-::: moniker-end
-
-::: moniker range="azure-devops"
 1. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 2. If you haven't yet [added the widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
