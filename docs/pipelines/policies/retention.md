@@ -45,7 +45,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 
 1. Sign in to your project (`https://dev.azure.com/{yourorganization}/{yourproject}`). 
 
-2. Choose **Project settings**.
+2. Go to on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
 3. Select **Settings** or **Release retention** in **Pipelines** or **Retention** in **Test**.
     * In **Pipelines**, use **Settings** to configure retention for artifacts, symbols, attachments, runs, and pull request runs. 
@@ -55,7 +55,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 :::image type="content" source="media/retention_menu.png" alt-text="Retention settings in Project settings":::
 
 
-## Pipeline retention policies
+## Set pipeline and release retention policies
 
 In most cases, you don't need to retain completed runs longer than a certain number of days. 
 Using retention policies, you can control **how many days** you want to keep each run before deleting it. 
@@ -66,36 +66,19 @@ Along with defining how many days to retain runs, you can also decide the minimu
 
 ::: moniker-end
 
-As an author of a build pipeline, you can customize retention policies on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
-
 ::: moniker range=">= azure-devops-2019"
 
-You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
+1. Go to on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
-# [YAML](#tab/yaml)
+2. Select **Settings** in the Pipelines section.
+    * Set the number of days to keep [artifacts](../artifacts/artifacts-overview.md), [symbols](../../artifacts/concepts/symbols.md) and attachments.
+    * Set the number of days to keep [runs](../process/runs.md)
+    * Set the number of days to keep pull request [runs](../process/runs.md)
+    * Set the number of recent [runs](../process/runs.md) to retain for each pipeline
 
-```yaml
-- task: CopyFiles@2
-  displayName: 'Copy Files to: \\mypath\storage\$(Build.BuildNumber)'
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)'
-    Contents: '_buildOutput/**'
-    TargetFolder: '\\mypath\storage\$(Build.BuildNumber)'
-```
-
-# [Classic](#tab/classic)
-
-1. Add the **Copy Files task** to your Pipeline.  
-
-> [!div class="mx-imgBorder"]
-> ![copy files](media/copy_files_classic_task.png)
-
-2. Configure the **Copy Files task**. 
-
-> [!div class="mx-imgBorder"]
-> ![configure Copy Files](media/copy_files_classic_config.png)
-
-* * *
+3. Select **Release Retention** in the Pipelines section. 
+    * View the maximum retention policy, default retention policy, and schedule for keeping releases after deletion. 
+    * Set whether to retain builds by default.
 
 ::: moniker-end
 
@@ -112,6 +95,16 @@ As an author of a release pipeline, you can customize retention policies for rel
 
 ::: moniker range=">=azure-devops-2020"
 The retention policy for YAML and build pipelines is the same. You can see your pipeline's retention settings in **Project Settings** for **Pipelines** in the **Settings** section.
+
+1. Go to on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
+
+2. Select **Settings** in the Pipelines section.
+    * Set the number of days to keep [artifacts](../artifacts/artifacts-overview.md), [symbols](../../artifacts/concepts/symbols.md) and attachments.
+    * Set the number of days to keep [runs](../process/runs.md)
+    * Set the number of days to keep pull request [runs](../process/runs.md)
+    * Set the number of recent [runs](../process/runs.md) to retain for each pipeline
+
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
@@ -248,7 +241,9 @@ The following information is deleted when a run is deleted:
 
 ::: moniker-end
 
-## When are runs deleted
+### Run retention 
+
+### When are runs deleted
 
 ::: moniker range="> tfs-2018"
 
@@ -264,7 +259,7 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 
 ::: moniker range=">=azure-devops-2020"
 
-## Delete a run
+### Delete a run
 
 You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
 
@@ -276,6 +271,40 @@ You can delete runs using the [context menu](../get-started/multi-stage-pipeline
 
 ::: moniker-end
 
+::: moniker range=">=azure-devops-2020"
+
+## Extend retention beyond policies
+
+### Use the Copy Files task to save data longer
+
+You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
+
+# [YAML](#tab/yaml)
+
+```yaml
+- task: CopyFiles@2
+  displayName: 'Copy Files to: \\mypath\storage\$(Build.BuildNumber)'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: '_buildOutput/**'
+    TargetFolder: '\\mypath\storage\$(Build.BuildNumber)'
+```
+
+# [Classic](#tab/classic)
+
+1. Add the **Copy Files task** to your Pipeline.  
+
+> [!div class="mx-imgBorder"]
+> ![copy files](media/copy_files_classic_task.png)
+
+2. Configure the **Copy Files task**. 
+
+> [!div class="mx-imgBorder"]
+> ![configure Copy Files](media/copy_files_classic_config.png)
+
+* * *
+
+::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
