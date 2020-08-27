@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019' 
-ms.date: 08/30/2019
+ms.date: 08/30/2020
 ---
 
 
@@ -43,26 +43,10 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 
-::: moniker range=">= azure-devops-2019" 
-
-
 ## Add the widget to your dashboard   
 
-::: moniker-end
-
-::: moniker range="azure-devops"
 1. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 2. If you haven't yet [added the widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now. 
-2. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
-3. If you haven't yet [added the widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-
-::: moniker-end
 
 
 <a id="configure-widget"></a>
@@ -71,7 +55,7 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 
 The Configuration dialog for the Cycle Time and Lead Time widgets is the same. You configure these widgets for a team. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. Choose the ![Actions icon](../../media/icons/actions-icon.png) actions icon and choose **Configure** to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlane, field criteria, and time period you want to monitor.  
 
@@ -79,6 +63,9 @@ The Configuration dialog for the Cycle Time and Lead Time widgets is the same. Y
 	> ![Configure dialog, Lead Time widget](media/lead-cycle/cycle-lead-time-configure-dialog-s156.png)
 
 	To select a **Swimlane**, you must select a **Backlog**. 
+
+	> [!NOTE]   
+	> You can only select work item types that have been added to a backlog. To add work item types to a backlog, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md). For On-premises XML process, see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 
 1. To further filter the work items used to calculate the lead or cycle time, specify the **Field Criteria**. For example, all the work items whose Release field is set to Milestone 1. 
 
@@ -107,7 +94,7 @@ The Configuration dialog for the Cycle Time and Lead Time widgets is the same. Y
 
 	To select a **Swimlane**, you must select a **Backlog**. 
 
-1. For a continuous flow, choose Rolling period and specify the number of days you want to view on the chart.  
+1. For a continuous flow, choose **Rolling period** and specify the number of days you want to view on the chart.  
 
 	Or, for a fixed scope view, choose and specify the Start date. Choose this view if your team employs a Scrumban process or follows a standard sprint process. 
 
