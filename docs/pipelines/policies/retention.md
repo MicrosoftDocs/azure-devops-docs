@@ -5,7 +5,7 @@ description: Build and release retention policies in Azure Pipelines and Team Fo
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: jukullam
 author: juliakm
-ms.date: 12/04/2019
+ms.date: 08/26/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -19,30 +19,36 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-With retention policies, you can specify the duration to keep your runs, tests, and releases stored in the system. This data is mainly used for audit and tracking. The older runs, tests, and releases get deleted to conserve storage and reduce clutter.
+In this article, learn how to manage the retention policies for your organization. 
+
+Retention policies let you set how long to keep runs, tests, and releases stored in the system. To save storage space, you want to delete older runs, tests, and releases.   
+
+The following retention policies are available in Azure DevOps in your **Project settings**: 
+
+* **Pipeline** - Set how long to keep artifacts, symbols, attachments, runs, and pull request runs. 
+* **Release** - Set whether to retain a build and view the default and maximum retention settings.
+* **Test** - Set how long to keep automated and manual test runs, results, and attachments. 
 
 ## Prerequisites 
+By default, members of the Contributors, Build Admins, Project Admins, and Release Admins groups can manage retention policies. 
 
-In order to be able to manage the build and release retention policies, you will need to be part of one of the following built-in groups:
-
-* Contributors.
-* Build Admins.
-* Project Admins.
-* Release Admins.
-
-To manage your test result, you must have one of the following subscriptions:
-
+To manage test results, you must have one of the following subscriptions:
 - [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
 - [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
 - [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)
 
-Or, configure [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level.
+You can also buy monthly access to Azure Test Plans and assign the [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level. See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role).
 
-See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role).
+
+## Edit retention policies
+
+You can edit retention settings 
+
+:::image type="content" source="media/retention_menu.png" alt-text="Retention settings in Project settings":::
 
 ## Build retention policies
 
-In most cases you don't need to retain completed runs longer than a certain number of days. 
+In most cases, you don't need to retain completed runs longer than a certain number of days. 
 Using retention policies, you can control **how many days** you want to keep each run before deleting it. 
 
 ::: moniker range="<= tfs-2018"
