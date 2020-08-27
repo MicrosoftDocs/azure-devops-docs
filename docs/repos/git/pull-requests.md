@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 # Review code with pull requests
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Create pull requests to review and merge code in a [Git project](../../organizations/projects/create-project.md).
 Pull requests let your team review code and give feedback on changes before merging it into the master branch.
