@@ -46,14 +46,14 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 
 1. Sign in to your project (`https://dev.azure.com/{yourorganization}/{yourproject}`). 
 
-2. Go to on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
+2. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
 3. Select **Settings** or **Release retention** in **Pipelines** or **Retention** in **Test**.
     * In **Pipelines**, use **Settings** to configure retention for artifacts, symbols, attachments, runs, and pull request runs. 
     * In **Pipelines**, use **Release retention** to set when to keep builds.
     * In **Test**, use **Retention** to set how long to keep test runs.     
 
-:::image type="content" source="media/retention-menu.png" alt-text="Retention settings in Project settings":::
+    :::image type="content" source="media/retention-menu.png" alt-text="Retention settings in Project settings":::
 ::: moniker-end
 
 ## Set run retention policies
@@ -69,7 +69,7 @@ Along with defining how many days to retain runs, you can also decide the minimu
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Go to on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
+1. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
 2. Select **Settings** in the Pipelines section.
     * Set the number of days to keep [artifacts](../artifacts/artifacts-overview.md), symbols, and attachments.
@@ -233,13 +233,13 @@ To delete manual test results after a specific number of days, set the retention
 
 2. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
  
-> [!div class="mx-imgBorder"]
-> ![configure project settings](media/project-settings.png)
+  > [!div class="mx-imgBorder"]
+  > ![configure project settings](media/project-settings.png)
 
 3. In the Retention page under the Test section, select a limit for how long you want to keep manual test data.
 
-> [!div class="mx-imgBorder"]
-> ![manual tests retention policies](media/manual-tests-retention-policies.png)
+  > [!div class="mx-imgBorder"]
+  > ![manual tests retention policies](media/manual-tests-retention-policies.png)
 
 ### Automated test-runs retention policies
 
@@ -249,13 +249,13 @@ By default, Azure DevOps keeps automated test results related to builds only as 
  
 2. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
 
-> [!div class="mx-imgBorder"]
-> ![manage project settings](media/project-settings.png)
+  > [!div class="mx-imgBorder"]
+  > ![manage project settings](media/project-settings.png)
 
 3. Select ![gear icon](../../media/icons/gear-icon.png) Settings under Pipelines and modify your retention policies.
 
-> [!div class="mx-imgBorder"]
-> ![edit project settings](media/build-pipelines-retention-policies.png)
+  > [!div class="mx-imgBorder"]
+  > ![edit project settings](media/build-pipelines-retention-policies.png)
 
 ### Other automated test results
 
