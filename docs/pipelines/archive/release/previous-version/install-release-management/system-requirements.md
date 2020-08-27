@@ -116,7 +116,7 @@ These are the software requirements for all the agents in your environment.
 * Windows 8.1
 * Windows 8
 * Windows 7, Service Pack 1
-* Vista, Service Pack 2 and [PowerShell 2.0](https://www.microsoft.com/download/details.aspx?id=9239) 
+* Vista, Service Pack 2 and [PowerShell 2.0](https://www.microsoft.com/download/details.aspx?id=2560) 
 * Windows Server 2016
 * Windows Server 2012 R2
 * Windows Server 2012
