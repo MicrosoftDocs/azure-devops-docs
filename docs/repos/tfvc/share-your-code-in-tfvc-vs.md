@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Develop and share your code in TFVC using Visual Studio
 
-#### Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Whether your software project is large, small, or brand new, 
 in most cases you'll be better off if you use version control 
