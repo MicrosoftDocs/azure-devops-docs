@@ -167,7 +167,7 @@ To create a custom image, you can use the [Azure VM Image Builder DevOps Task](h
 
 1. Open the Azure VM Image Builder DevOps task and copy your `ManagedImageId`.   
 
-    :::image type="content" source="media/managed_image_vmss.png" alt-text="Managed image Id":::
+    :::image type="content" source="media/managed-image-vmss.png" alt-text="Managed image Id":::
 
 2. Create a virtual machine scale set with [az virtual machine scale set create](/cli/azure/vmss#az-vmss-create). The following example creates a scale set named `vmssScaleSet` and generates SSH keys if they do not exist:
 
