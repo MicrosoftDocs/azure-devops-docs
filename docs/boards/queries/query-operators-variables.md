@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 08/27/2020
 ---
 
 
@@ -172,7 +172,8 @@ You can use query operators in the following table to specify how each value in 
     <td><p>Long-text fields that are indexed for full-text search, which correspond to all <strong>PlainText</strong> and <strong>HTML</strong> fields, and the <strong>History</strong> and <strong>Title</strong> fields.</p></td></tr>
 <tr>
     <td><p><strong>Does Not Contain Words</strong></p></td>
-    <td><p>Does not contain the exact text string or words within the field you selected for filtering. Text string is limited to 100 characters. </p></td>
+    <td><p>Does not contain the exact text string or words within the field you selected for filtering. Text string is limited to 100 characters. </p>
+    <p>Use this operator in combination with a clause with the <strong>Contains Words</strong> operator to include and exclude specific keywords.</p></td>
     <td><p>Text fields that are indexed for full text search.</p></td></tr>
 <tr>
     <td><p><strong>In</strong></p></td>
