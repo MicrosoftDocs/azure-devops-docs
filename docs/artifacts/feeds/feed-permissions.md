@@ -33,17 +33,17 @@ By default, the Project Collection Build Service is a Contributor and your proje
 > [!NOTE]
 > To access a feed in a different organization, a user must be given access to the project hosting that feed.
 
-## Azure artifacts settings
+## Azure Artifacts settings
 
-Azure artifacts settings allow you to specify who can create and administer feeds.
+Azure Artifacts settings allow you to specify who can create and administer feeds.
 
 > [!div class="mx-imgBorder"] 
-> ![Azure artifacts settings button](media/artifacts-settings-button.png)
+> ![Azure Artifacts settings button](media/artifacts-settings-button.png)
 
 By default, everyone in the same organization have the permissions to create feeds. a user who creates a feed is both an owner and an administrator of that feed.
 
 > [!div class="mx-imgBorder"] 
-> ![Azure artifacts settings](media/artifacts-settings.png)
+> ![Azure Artifacts settings](media/artifacts-settings.png)
 
 1. Any user in the organization is allowed to create feeds.
 
