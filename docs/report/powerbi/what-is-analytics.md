@@ -36,7 +36,7 @@ Specifically, Analytics provides you with insights about your Azure DevOps proje
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops-2019"
 
 
 > [!div class="checklist"]  
@@ -79,7 +79,7 @@ Once you've [enabled or installed Analytics](../dashboards/analytics-extension.m
 ::: moniker range="< azure-devops"
 
 > [!NOTE]   
-> Azure DevOps Server 2019 and later versions support Analytics. TFS 2018 and earlier versions do not support Analytics. For TFS 2018 and earlier, you may use [Dashboards](../dashboards/dashboards.md) with a [variety of widgets](../dashboards/widget-catalog.md) that don't require Analytics. You may also use [SQL Server Reporting](../sql-reports/reporting-services-reports.md). 
+> TFS 2018 and earlier versions do not support Analytics. For TFS 2018 and earlier, you may use [Dashboards](../dashboards/dashboards.md) with a [variety of widgets](../dashboards/widget-catalog.md) that don't require Analytics. You may also use [SQL Server Reporting](../sql-reports/reporting-services-reports.md). 
 
 ::: moniker-end
 
