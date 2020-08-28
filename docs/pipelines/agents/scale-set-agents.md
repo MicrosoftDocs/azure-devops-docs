@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 08/12/2020
+ms.date: 08/28/2020
 monikerRange: azure-devops
 ---
 
@@ -406,6 +406,7 @@ The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete,
 * [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
 * [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
 * [How can I delete agents?](#how-can-i-delete-agents)
+* [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
@@ -419,3 +420,7 @@ Create a Scale Set with a Windows Server OS and when creating the Agent Pool sel
 
 Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Agents**.
 Click the 'Enabled' toggle button to disable the agent. The disabled agent will complete the pipeline it is currently running and will not pick up additional work. Within a few minutes after completing its current pipeline job, the agent will be deleted.
+
+### Can I configure the scale set agent pool to have zero agents on standby?
+
+Yes, if you set **Number of agents to keep on standby** to zero, for example to conserve cost for a low volume of jobs, Azure Pipelines starts a VM only when it has a job.
