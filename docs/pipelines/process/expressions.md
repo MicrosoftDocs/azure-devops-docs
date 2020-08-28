@@ -568,7 +568,7 @@ jobs:
       in(dependencies.b.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
     )
   steps:
-  - script: Job C
+  - script: echo Job C
 ```
 
 In this example, Job B depends on an output variable from Job A.
@@ -643,7 +643,7 @@ stages:
     steps:
     - script: echo hello from Job B1
   - job: B2
-    condition: ne(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true')
+    condition: eq(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true')
     steps:
      - script: echo hello from Job B2
 
