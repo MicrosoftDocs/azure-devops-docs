@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 08/19/2020
+ms.date: 08/28/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -500,6 +500,10 @@ The `stageDependencies` object is structured the same way. Within a single stage
   }
 }
 ```
+
+The syntax for referencing stage and job conditions differs. Stage conditions use `[stageDependencies|dependencies].<stage>.outputs['<job>.<step>.<var>']` and job conditions use `stageDependencies.<stage>.<job>.outputs['<step>.<var>']`. 
+
+
 ::: moniker range=">=azure-devops-2020"
 
 You can check job status with dependencies. In this example, Job A will always be skipped and Job B will run.
@@ -612,14 +616,14 @@ stages:
        name: stagevar
 
 - stage: B
-  condition: and(succeeded(), eq(dependencies.A.outputs['A1.printvar.skipsubsequent'], 'false'))
+  condition: and(succeeded(), ne(dependencies.A.outputs['A1.printvar.skipsubsequent'], 'true'))
   dependsOn: A
   jobs:
   - job: B1
     steps:
     - script: echo hello from Stage B
   - job: B2
-    condition: ne(stageDependencies.A.A1.outputs['stagevar.stageexists'], 'true')
+    condition: ne(stageDependencies.A.outputs['A1.stagevar.stageexists'], 'true')
     steps:
      - script: echo hello from Stage B2
 
