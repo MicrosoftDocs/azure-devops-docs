@@ -128,7 +128,7 @@ In the following example, a new resource group and virtual machine scale set are
 
     * **Scaling - Manual scale**
 
-        :::image type="content" source="media/scale-set-agents/manual-scale.png" alt-text="Verify upgrade policy." :::
+        :::image type="content" source="media/scale-set-agents/manual-scale.png" alt-text="Verify manual scale policy." :::
 
 ## Create the scale set agent pool
 
