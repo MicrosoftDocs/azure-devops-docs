@@ -7,7 +7,7 @@
   href: powerbi/reporting-roadmap.md
 - name: Dashboards, charts, reports, & widgets   
   href: dashboards/toc.yml  
-- name: Power BI integration 
+- name: Analytics & Power BI integration (Preview)
   href: powerbi/toc.yml  
 - name: Extend Analytics with OData (Preview)  
   href: extend-analytics/toc.yml  
