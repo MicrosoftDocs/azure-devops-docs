@@ -13,7 +13,7 @@ ms.date: 08/24/2020
 
 # Reporting roadmap for Azure DevOps 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The future of reporting for Azure DevOps and Azure DevOps Server is the Analytics service. Analytics replaces the previous platform based on SQL Server Reporting Services.
 
