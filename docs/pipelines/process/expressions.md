@@ -603,7 +603,7 @@ This requires using the `stageDependencies` context.
     "<JOB_NAME>": {
       "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
       "outputs": {
-          "jobName.stepName.variableName": "value"
+          "stepName.variableName": "value"
       }
     },
     "...": {
