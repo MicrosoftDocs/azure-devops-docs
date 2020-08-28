@@ -516,17 +516,22 @@ To share variables across multiple pipelines in your project, use the web interf
 
 ::: moniker range=">=azure-devops-2020"
 Some tasks define output variables, which you can consume in downstream steps, jobs, and stages.
-You can access variables across jobs and stages by using [dependencies](expressions.md#dependencies). 
+In YAML, you can access variables across jobs and stages by using [dependencies](expressions.md#dependencies). 
 ::: moniker-end
 
-::: moniker range="<azure-devops-2020"
+::: moniker range="azure-devops-2019"
 Some tasks define output variables, which you can consume in downstream steps and jobs within the same stage.
-You can access variables across jobs by using [dependencies](expressions.md#dependencies). 
+In YAML, you can access variables across jobs by using [dependencies](expressions.md#dependencies). 
+::: moniker-end
+
+::: moniker range="<azure-devops-2019"
+Some tasks define output variables, which you can consume in downstream steps within the same job.
 ::: moniker-end
 
 #### [YAML](#tab/yaml/)
 
 For these examples, assume we have a task called `MyTask`, which sets an output variable called `MyVar`.
+Learn more about the syntax in [Expressions - Dependencies](expressions.md#dependencies).
 
 ### Use outputs in the same job
 
@@ -552,6 +557,26 @@ jobs:
     varFromA: $[ dependencies.A.outputs['ProduceVar.MyVar'] ]
   steps:
   - script: echo $(varFromA) # this step uses the mapped-in variable
+```
+
+### Use outputs in a different stage
+(Azure DevOps 2020 and above only)
+
+```yaml
+stages:
+- stage: One
+  jobs:
+  - job: A
+    steps:
+    - task: MyTask@1  # this step generates the output variable
+      name: ProduceVar  # because we're going to depend on it, we need to name the step
+- stage: Two
+  - job: B
+    variables:
+      # map the output variable from A into this job
+      varFromA: $[ stageDependencies.One.A.outputs['ProduceVar.MyVar'] ]
+    steps:
+    - script: echo $(varFromA) # this step uses the mapped-in variable
 ```
 
 #### [Classic](#tab/classic/)
