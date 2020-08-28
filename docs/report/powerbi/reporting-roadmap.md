@@ -7,25 +7,25 @@ ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2018'
-ms.date: 06/26/2020
+monikerRange: '>= tfs-2013'
+ms.date: 08/24/2020
 ---
 
 # Reporting roadmap for Azure DevOps 
 
-[!INCLUDE [temp](../includes/version-azure-devops.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-The future of reporting for Azure DevOps and Azure DevOps Server is Analytics. 
+The future of reporting for Azure DevOps and Azure DevOps Server is the Analytics service. Analytics replaces the previous platform based on SQL Server Reporting Services.
 
 > [!NOTE]  
 > If you are looking for information about the Azure Analysis Services, see 
 [Azure Analysis Services](https://azure.microsoft.com/services/analysis-services/).
 
-## Analytics
+## The Analytics service
 
 ::: moniker range="azure-devops"
 
-Analytics is available for all organizations using Azure DevOps Services. It provides several [advanced widgets](../dashboards/analytics-widgets.md). [Power BI integration](overview.md) and access to the [OData feed](../extend-analytics/quick-ref.md) of Analytics remain in Preview. 
+The Analytics service is available for all organizations using Azure DevOps Services. It provides several [advanced widgets](../dashboards/analytics-widgets.md). [Power BI integration](overview.md) and access to the [OData feed](../extend-analytics/quick-ref.md) of Analytics remain in Preview. 
 
 ::: moniker-end
 
@@ -36,7 +36,7 @@ Analytics is generally available for Azure DevOps Server 2020. It provides sever
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 Analytics is in Public Preview for Azure DevOps Server 2019 and later versions. You gain access to it by [enabling or installing Analytics](../dashboards/analytics-extension.md). Analytics provides several [advanced widgets](../dashboards/analytics-widgets.md), [Power BI integration](overview.md), and access to the [OData feed](../extend-analytics/quick-ref.md).
 
@@ -66,9 +66,7 @@ We have no plans to bring a cloud version of our SQL Server Reporting story to A
 We currently support SQL Server Reporting through TFS 2018, and will continue to support it in Azure DevOps Server 2019.  
 
 We will continue to support SQL Server Reporting until Analytics can replace its functionality. After that, we will likely support both SQL Server Reporting and Analytics for one additional major Azure DevOps Server release. This plan allows customers time to convert their reports to Analytics.
-
-
-
+ 
 ## Roadmap timeline
 
 Check out the [Features Timeline](/azure/devops/release-notes/features-timeline) for the roadmap of reporting features.
