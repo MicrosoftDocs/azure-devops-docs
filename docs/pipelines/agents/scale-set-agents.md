@@ -81,9 +81,7 @@ In the following example, a new resource group and virtual machine scale set are
     --upgrade-policy-mode manual \
     --single-placement-group false \
     --platform-fault-domain-count 1 \
-    --load-balancer "" \
-    --ephemeral-os-disk true \
-    --os-disk-caching readonly
+    --load-balancer ""
     ```
 
     Because Azure Pipelines manages the scale set, the following settings are required:
@@ -101,6 +99,9 @@ In the following example, a new resource group and virtual machine scale set are
 
     * `--ephemeral-os-disk true`
     * `--os-disk-caching readonly`
+
+    > [!IMPORTANT]
+    > Ephemeral OS disks are not supported on all VM sizes. For list of supported VM sizes, see [Ephemeral OS disks for Azure VMs](/azure/virtual-machines/ephemeral-os-disks).
 
     Select any Linux or Windows image - either from Azure Marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines automatically installs the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image. For instructions on creating and using a custom image, see [FAQ](#faq).
     
