@@ -1,14 +1,14 @@
 ---
 title: Fix backlog reorder and nesting issues
 titleSuffix: Azure Boards
-description: Fix error messages due to nesting issues that occur in a Backlog or Board in Azure Boards & TFS 
+description: How to fix error messages due to nesting issues that occur in a Backlog or Board in Azure Boards   
 ms.custom: "boards-backlogs, seodec18"  
 ms.technology: devops-agile
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 10/17/2019
+ms.date: 08/28/2020
 ---
 
 
@@ -20,37 +20,29 @@ ms.date: 10/17/2019
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 
-When a product, portfolio, or sprint backlog contains same-category nested work items, the system cannot properly reorder work items. The system disables the drag-and-drop reorder feature and not all items display under these circumstances&mdash;as described in the section later in this article, [How backlogs and boards display hierarchical (nested) items](#leaf-nodes).  
+Azure Boards backlogs are designed to display a natural hierarchy of work items. When parent-child links are added to work items that don't meet the natural hierarchy, then you'll receive one or more messages indicating there is an issue that needs to be fixed. Some items may not display. Also, the system may disable to drag-and-drop reorder feature.  
 
-In addition to the information provided in this article, you may find the following articles helpful as well:
+Use this article to fix the issues that occur and that display one of the following messages: 
 
-- [Set up your Backlogs and Boards](set-up-your-backlog.md)  
-- [About Boards and Kanban, Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)  
-- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs-boards-plans.md)  
-- [Best tool to add, update, and link work items ](../work-items/best-tool-add-update-link-work-items.md)
+- `You cannot reorder work items and some work items may not be shown.`
+- `You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category".`
+- `Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items will appear when you change the "In progress" filter to Show.`
 
+## Natural work item type hierarchy
+
+The following image indicates the natural hierarchy for the Agile, Scrum, and CMMI processes. In addition to these work item types, additional custom work item types may be added to backlogs and boards. Also, custom backlog levels may be added. 
+
+![Conceptual image of natural hierarchy for the Agile, Scrum, and CMMI processes.](../../reference/media/create-hierarchy-with-different-wits.png) 
+
+When you link work items of the same type with parent-child links&mdash;such as bug-bug or user story-user story, you create same-category links. or between work items that appear on the same backlog level Same-category links are parent-child links among work items that belong to the same work tracking category. The category a work item belongs to is determined by your process backlog levels and your team's selected bug behavior. To understand more about same-category hierarchy, see the section [Recommended configuration](#recommended).
+ 
 <a id="nested" > </a>
 
-## Fix same-category nesting issue
+## Resolve message that doesn't specify work item IDs 
 
-Same-category links are parent-child links among work items of the same type, such as bug-bug, or between work items that appear on the same backlog level. The category a work item belongs to is determined by your process backlog levels and your team's bug behavior. To understand more about same-category hierarchy, see the section [Recommended configuration](#recommended).
+You may see a message such as `You cannot reorder work items and some work items may not be shown`. 
 
-### Error message specifies work item IDs 
-You may see an error message similar to "You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category". 
-
-To fix this, take the following action: 
-
-1. Open the work item listed in the error message.
-
-2. Look for a parent or child link of the same-category. This is a link of the same type, or another type that appear on the same backlog level. Depending on your team's bug behavior setting, bugs may appear with requirements or tasks. 
-
-3. Remove the problem parent-child link. If you would like to keep these items associated, use 'Related' link type instead. 
-
-### Error message doesn't specify work item IDs 
-
-You may see an error message such as "You cannot reorder work items and some work items may not be shown." 
-
-To fix this, take the following actions: 
+To address this message, take the following actions: 
 
 1. Open your Backlog.
 
@@ -71,6 +63,26 @@ To fix this, take the following actions:
 
 The issue should now be resolved.
 
+
+## Resolve message that specifies work item IDs 
+
+You may see a message similar to `You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category"`. 
+
+To address this message, take the following action: 
+
+1. Open the work item listed in the error message.
+
+2. Look for a parent or child link of the same-category. This is a link of the same type, or another type that appear on the same backlog level. Depending on your team's bug behavior setting, bugs may appear with requirements or tasks. 
+
+3. Remove the problem parent-child link. If you would like to keep these items associated, use 'Related' link type instead. 
+
+
+## Resolve message that indicates In Progress work items may disappear on a refresh
+
+The message&mdash;`Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items will appear when you change the "In progress" filter to Show.`&mdash;indicates that the **In Progress** filter has been set. 
+
+
+ 
 <a id="recommended"> </a>
 
 ## Recommended configuration
@@ -81,7 +93,6 @@ Instead of nesting requirements, bugs, and tasks, we recommend that you maintain
 
 Use the Feature work item type when you want to group user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](organize-backlog.md), which creates parent-child links in the background.
 
-![Create work items using different hierarchy](../../reference/media/create-hierarchy-with-different-wits.png) 
 
 <a id="nested" > </a>
 
@@ -155,5 +166,21 @@ Is there a workaround to display intermediate nodes within a hierarchy?  Not at 
 
 ## Related articles
 
-- [Backlogs, boards, and plans](backlogs-boards-plans.md) 
+- [Set up your Backlogs and Boards](set-up-your-backlog.md)  
+- [About Boards and Kanban, Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)  
+- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs-boards-plans.md)  
+
+
+
+<!---
+
+
+
+When a product, portfolio, or sprint backlog contains same-category nested work items, the system cannot properly reorder work items. The system disables the drag-and-drop reorder feature and not all items display under these circumstances&mdash;as described in the section later in this article, [How backlogs and boards display hierarchical (nested) items](#leaf-nodes).  
+ 
+
+
+
+
+-->
 
