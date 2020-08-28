@@ -42,7 +42,7 @@ Specifically, Analytics provides you with insights about your Azure DevOps proje
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/version-selector/minimize.md)]
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ## Data available in Analytics
 
