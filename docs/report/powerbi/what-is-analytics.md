@@ -15,13 +15,17 @@ ms.date: 07/14/2020
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects. 
+The Analytics service is the reporting platform for Azure DevOps, replacing the previous platform based on SQL Server Reporting Services. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations. Use it to answer quantitative questions about the past or present state of your projects.
+
+> [!NOTE]  
+> If you are looking for information about Azure Analysis Services, see 
+> [Azure Analysis Services](https://azure.microsoft.com/services/analysis-services/).
 
 Specifically, Analytics provides you with insights about your Azure DevOps projects through the following tools: 
 
 ::: moniker range=">= azure-devops-2020"
 
->[!div class="checklist"]      
+> [!div class="checklist"]  
 > - Analytics widgets that you can add to your dashboards
 > - In-context Analytics reports available from select Azure DevOps pages
 > - Rollup bars and counts for Azure Boards backlogs 
@@ -34,7 +38,8 @@ Specifically, Analytics provides you with insights about your Azure DevOps proje
 
 ::: moniker range=">= azure-devops-2020"
 
->[!div class="checklist"]      
+
+> [!div class="checklist"]  
 > - Analytics widgets that you can add to your dashboards
 > - Custom reports you can create using Power BI 
 > - Custom reports you can create using OData queries 
