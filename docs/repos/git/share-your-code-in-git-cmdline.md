@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Get started with Git from the command line
 
-#### Azure Repos
+**Azure Repos**
 
 This guide shows you how to share your code in a Git repo in Azure Repos using the command line.
 
