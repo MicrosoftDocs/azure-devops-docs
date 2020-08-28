@@ -7346,6 +7346,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/pipelines/test/collect-screenshots-and-video.md",
+      "redirect_url": "/azure/devops/pipelines/test/ui-testing-considerations",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build-release/test/continuous-test-java.md",
       "redirect_url": "/azure/devops/pipelines/",
       "redirect_document_id": false
@@ -16638,6 +16643,16 @@
     {
       "source_path": "docs/notifications/collaborate-in-a-team-room.md",
       "redirect_url": "/previous-versions/azure/devops/notifications/collaborate-in-a-team-room",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cli/security_tokens.md",
+      "redirect_url": "/azure/devops/cli/security-tokens",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cli/service_endpoint.md",
+      "redirect_url": "/azure/devops/cli/service-endpoint",
       "redirect_document_id": false
     }
   ]

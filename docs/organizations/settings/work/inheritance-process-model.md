@@ -421,91 +421,13 @@ When the display width won't accommodate all columns, columns appear stacked wit
 
 ## Backlog and board customizations 
 
-Backlogs and boards are essential Agile tools for creating and managing work for a team. The standard backlogs&mdash;product, iteration, and portfolio&mdash;inherited from the system process are fully customizable.  In addition, you can add two custom portfolio backlogs. 
-
----
-:::row:::
-   :::column span="":::
-      **Backlog types**
-   :::column-end:::
-   :::column span="2":::
-      **Customization support**  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-      **Inherited backlogs** 
-   :::column-end:::
-   :::column span="2":::
-      - [Add a custom WIT](customize-process-backlogs-boards.md) 
-      ::: moniker range="azure-devops"
-      - [Add an inherited WIT](customize-process-backlogs-boards.md) (Preview)
-      ::: moniker-end  
-      - [Change the default WIT](customize-process-backlogs-boards.md) 
-      - [Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog) 
-      - [Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-      **Custom portfolio backlogs**
-   :::column-end:::
-   :::column span="2":::
-      - [Add a portfolio backlog which displays custom WITs](customize-process-backlogs-boards.md#portfolio-backlogs) 
-      - [Edit or rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) 
-      - [Delete the top-level custom portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) 
-   :::column-end:::
-:::row-end:::
----
- 
+[!INCLUDE [temp](../includes/process-customize-backlogs.md)]
 
 When you change the default WIT for a backlog level, it causes that WIT to appear by default in the quick add panel. For example, *Customer Ticket* appears by default in the following quick add panel for the product backlog. 
 
 ![Product backlog, Quick Add Panel, Displays Default WIT for a backlog level](media/process/process-backlog-boards-quick-add-panel.png)  
 
-
-**What you can't customize**  
-
-::: moniker range="azure-devops"
-
-- You can't remove an inherited portfolio level from the product (but you can rename them)
-- You can't insert a backlog level within the existing set of defined backlogs
-- You can't reorder the backlog levels  
-- You can't create a custom task backlog level, although you can add custom WITs to the iteration backlog  
-- You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
-
-::: moniker-end  
-
-
-::: moniker range="<= azure-devops-2020"
-
-- You can't add or remove an inherited WIT to or from a backlog, for example, you can't add the Issue WIT to the product backlog    
-- You can't remove an inherited portfolio level from the product (but you can rename them)
-- You can't insert a backlog level within the existing set of defined backlogs
-- You can't reorder the backlog levels  
-- You can't create a custom task level, although you can add custom WITs to the iteration backlog  
-- You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
-
-::: moniker-end  
-
-
-### Fields added to WITs associated with a backlog level 
-
-When you add a WIT to a backlog level, the following fields are added to the WIT definition as hidden fields (that is, they don't appear on the work item form) to support select Agile tool features.    
-
-| Backlog level | Fields added | 
-|---------------|--------------|
-| Portfolio backlog |- Stack rank (Agile, CMMI)<br/>- Backlog Priority (Scrum) | 
-| Requirement backlog |- Stack Rank, Story Points (Agile)<br/>- Stack Rank, Size (CMMI)<br/>- Backlog Priority, Effort (Scrum) |
-| Iteration backlog |- Activity, Remaining Work, Stack Rank (Agile)<br/>- Discipline, Remaining Work, Stack Rank (CMMI)<br/>- Activity, Remaining Work, Backlog Priority (Scrum) |
-
-The Stack Rank and Backlog Priority fields capture the relative priority of work items as they are reordered on a backlog or board. For details on it's usage, see [Behind the scenes: the Backlog Priority or Stack Rank field](https://blogs.msdn.microsoft.com/devops/2014/05/14/behind-the-scenes-the-backlog-priority-or-stack-rank-field/). 
-
-The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/team-velocity.md).  
-
-And, lastly, Remaining Work is used [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md). 
+ 
 
 ## Object limits
 

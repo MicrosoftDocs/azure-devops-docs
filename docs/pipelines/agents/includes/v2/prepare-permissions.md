@@ -27,7 +27,7 @@ Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=" >= azure-devops-2019 < azure-devops"
 
 1. Sign in with the user account you plan to use in you Azure DevOps Server web portal (`https://{your-server}/DefaultCollection/`).
 

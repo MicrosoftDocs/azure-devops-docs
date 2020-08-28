@@ -42,7 +42,7 @@ A: Changes made in Azure AD can take up to 1 hour to be visible in Azure DevOps.
 
 <a name="o365aad"></a>
 
-### Q: Can I use Office 365 and Azure AD with Azure DevOps?
+### Q: Can I use Microsoft 365 and Azure AD with Azure DevOps?
 
 A: Yes.
 
@@ -280,7 +280,7 @@ A: If you used a Microsoft account to activate a [Visual Studio with MSDN subscr
 
 ### Q: Can I control access to my organization for external users in the connected directory?
 
-A: Yes, but only for external users who are [added as guests through Office 365](https://support.office.com/article/Share-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232)
+A: Yes, but only for external users who are [added as guests through Microsoft 365](https://support.office.com/article/Share-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232)
 or [added using B2B collaboration by your Azure AD administrator](https://azure.microsoft.com/documentation/articles/active-directory-b2b-collaboration-overview/). These external users are managed outside the connected directory. To learn more, contact your Azure AD administrator. The following setting doesn't affect [users who are added directly to your organization's directory](https://azure.microsoft.com/documentation/articles/active-directory-create-users/).
 
 Before you start, make sure you have at least Basic access, not Stakeholder.
@@ -325,9 +325,9 @@ A: You can download a complete list of organizations backed by an Azure Active D
 
 <a name="connect-o365-azure-ad"></a>
 
-### Q: Can I connect my organization to an Azure AD created from Office 365?
+### Q: Can I connect my organization to an Azure AD created from Microsoft 365?
 
-A: Yes. If you can't find your Azure AD created from Office 365, see
+A: Yes. If you can't find your Azure AD created from Microsoft 365, see
 [Why don't I see the directory that I want to connect?](#why-not-my-directory).
 
 <a name="why-not-my-directory"></a>

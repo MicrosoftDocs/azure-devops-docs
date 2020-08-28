@@ -25,6 +25,24 @@ ms.date: 02/13/2020
 </tr>
 
 <tr>
+<td>Agent.ContainerMapping</td>
+<td>
+<p>A mapping from container resource names in YAML to their Docker IDs at runtime.</p>
+<p>For example: <code><pre>
+{
+  "one_container": {
+    "id": "bdbb357d73a0bd3550a1a5b778b62a4c88ed2051c7802a0659f1ff6e76910190"
+  },
+  "another_container": {
+    "id": "82652975109ec494876a8ccbb875459c945982952e0a72ad74c91216707162bb"
+  }
+}
+</pre></code>
+</p>
+</td>
+</tr>
+
+<tr>
 <td>Agent.HomeDirectory</td>
 <td>The directory the agent is installed into. This contains the agent software. For example: <code>c:\agent</code>.</td>
 </tr>
@@ -190,11 +208,11 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>Build.ContainerId</td>
 <td>The ID of the container for your artifact. When you upload an artifact in your pipeline, it is added to a container that is specific for that particular artifact.</td>
 <td>No</td>
-<br><br>
+</tr>
 
 <tr>
 <td>Build.DefinitionName</td>
-<td>The name of the build pipeline.</td>
+<td>The name of the build pipeline.
 <br><br>
 
 
@@ -382,7 +400,9 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>
 
 
-The local path on the agent where your source code files are downloaded. For example: <code>c:\agent_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>. Important note: if you only check out one Git repository, this path will be the exact path to the code. If you check out multiple repositories, it will revert to its default value, which is <code>$(Pipeline.Workspace)/s</code>.
+The local path on the agent where your source code files are downloaded. For example: <code>c:\agent_work\1\s</code><br><br>By default, new build pipelines update only the changed files. 
+
+Important note: if you only check out one Git repository, this path will be the exact path to the code. If you check out multiple repositories, it will revert to its default value, which is <code>$(Pipeline.Workspace)/s</code>.
 <br><br>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 

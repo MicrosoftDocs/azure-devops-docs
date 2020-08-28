@@ -94,7 +94,7 @@ To update a work item type, you add a `FIELD` element for each new field you wan
 
 For more information, see: 
 - [Add or modify a work item field](../../../reference/add-modify-field.md)
-- [Add or modify work item fields to support reporting](/previous-versions/azure/devops/reference/xml/add-or-modify-work-item-fields-to-support-reporting)
+- [Add or modify work item fields to support reporting](../../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md)
 
 
 ### Update the Microsoft Project Mapping File

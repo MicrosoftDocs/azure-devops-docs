@@ -9,15 +9,15 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
-ms.date: 10/07/2019
-monikerRange: 'azure-devops'
+ms.date: 08/18/2020
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Manage wikis
 
-[!INCLUDE [temp](../../includes/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
-In this article, find the following CLI commands for managing wikis.
+Learn the following CLI commands for managing wikis.
 
 ## Commands
 

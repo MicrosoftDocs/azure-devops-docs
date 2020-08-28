@@ -154,6 +154,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="view-add-work-items.md" data-raw-source="[Open work items](view-add-work-items.md)">Open work items</a></li>
 <li><a href="email-work-items.md#print-items" data-raw-source="[Print work items](email-work-items.md#print-items)">Print work items</a></li>
 <li><a href="../backlogs/create-your-backlog.md#reorder-backlog" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#reorder-backlog)">Prioritize backlog items</a></li>
+<li><a href="../queries/history-and-auditing.md#query-history" data-raw-source="[Query work item history](../queries/history-and-auditing.md#query-history)">Query work item history</a></li>
 <li><a href="../queries/using-queries.md" data-raw-source="[Query for work items](../queries/using-queries.md)">Query for work items</a></li>
 <br/>
 <li><a href="../backlogs/bulk-modify-work-items.md#reassign-work-items">Reassign work items</a></li>
@@ -169,7 +170,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../../notifications/add-links-to-work-items.md" data-raw-source="[Use #ID to link](../../notifications/add-links-to-work-items.md)">Use #ID to link</a></li>
 <li><a href="../../notifications/at-mentions.md" data-raw-source="[Use @mentions](../../notifications/at-mentions.md)">Use @mentions</a></li>
 <br/>
-<li><a href="../queries/history-and-auditing.md#view-the-history-of-a-work-item" data-raw-source="[View history](../queries/history-and-auditing.md#view-the-history-of-a-work-item)">View history</a></li>
+<li><a href="../queries/history-and-auditing.md#view-history" data-raw-source="[View history](../queries/history-and-auditing.md#view-history)">View history</a></li>
 <li><a href="../../project/navigation/mobile-work.md" data-raw-source="[View work items (mobile)](../../project/navigation/mobile-work.md)">View work items (mobile)</a></li>
 <li><a href="view-add-work-items.md" data-raw-source="[View work items (web)](view-add-work-items.md)">View work items (web)</a></li>
 <li><a href="view-add-work-items.md" data-raw-source="[View work assigned to me](view-add-work-items.md)">View work assigned to me</a></li>
@@ -268,7 +269,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../../notifications/add-links-to-work-items.md" data-raw-source="[Use #ID to link](../../notifications/add-links-to-work-items.md)">Use #ID to link</a></li>
 <li><a href="../../notifications/at-mentions.md" data-raw-source="[Use @mentions](../../notifications/at-mentions.md)">Use @mentions</a></li>
 <br/>
-<li><a href="../queries/history-and-auditing.md#view-the-history-of-a-work-item" data-raw-source="[View history](../queries/history-and-auditing.md#view-the-history-of-a-work-item)">View history</a></li>
+<li><a href="../queries/history-and-auditing.md#query-history" data-raw-source="[View history](../queries/history-and-auditing.md#query-history)">View history</a></li>
 <li><a href="../../project/navigation/mobile-work.md" data-raw-source="[View work items (mobile)](../../project/navigation/mobile-work.md)">View work items (mobile)</a></li>
 <li><a href="view-add-work-items.md" data-raw-source="[View work items (web)](view-add-work-items.md)">View work items (web)</a></li>
 <li><a href="view-add-work-items.md" data-raw-source="[View work assigned to me](view-add-work-items.md)">View work assigned to me</a></li>
@@ -363,7 +364,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../../notifications/add-links-to-work-items.md">Use #ID to link</a></li>
 <li><a href="../../notifications/at-mentions.md">Use @mentions</a></li>
 <br/>
-<li><a href="../queries/history-and-auditing.md#view-the-history-of-a-work-item">View history</a></li>
+<li><a href="../queries/history-and-auditing.md#query-history">View history</a></li>
 <li><a href="../../project/navigation/mobile-work.md">View work items (mobile) (requires TFS 2018)</a></li>
 </ul>
 </td>
@@ -446,7 +447,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../boards/kanban-quickstart.md">Update status of work items (Kanban board)</a></li>
 <li><a href="../../notifications/add-links-to-work-items.md">Use #ID to link (requires TFS 2015)</a></li>
 <li><a href="../../notifications/at-mentions.md">Use @mentions (requires TFS 2015)</a></li>
-<li><a href="../queries/history-and-auditing.md#view-the-history-of-a-work-item">View history</a></li>
+<li><a href="../queries/history-and-auditing.md#query-history">View history</a></li>
 </ul>
 </td>
 </tr

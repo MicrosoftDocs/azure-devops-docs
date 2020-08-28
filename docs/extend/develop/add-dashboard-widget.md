@@ -4,15 +4,15 @@ description: Tutorial for creating a widget that you can then add to a dashboard
 ms.technology: devops-ecosystem
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ms.topic: conceptual
-monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/31/2019
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Add a dashboard widget
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [ ](../../includes/version-vsts-plus-azdevserver-2019.md)]
 
 Widgets on a dashboard are implemented as [contributions](./contributions-overview.md) in the [extension framework](../overview.md). 
 A single extension can have multiple contributions. Learn how to create an extension with multiple widgets as contributions.

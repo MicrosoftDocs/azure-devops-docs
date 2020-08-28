@@ -120,4 +120,6 @@ Control branch permission settings from the branch permission view. Users and gr
 | Manage Permissions                               | Can set permissions for the branch.                                                                         |
 | Remove Others' Locks                             | Can remove [locks](lock-branches.md) set on branches by other users.                                                            |
 
+The following permissions are automatically assigned to branch creators: Contribute, Edit Policies, Force Push, Manage Permissions, and Remove Others' Locks.
+
 ::: moniker-end 
