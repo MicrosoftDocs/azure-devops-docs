@@ -54,7 +54,7 @@ Compare your work with the latest version on your Team Foundation Server while c
     -   Choose **Compare with Workspace Version** to see what changes you have made to the version you checked out.
 
         > [!TIP]
-        >  You can also press Ctrl+Shift and then double-click the file.
+        >  You can also press Shift and then double-click the file.
 
     -   Choose **Compare with Latest Version** to see how the changes you have made compare to the latest version of the file on your Team Foundation Server.
 

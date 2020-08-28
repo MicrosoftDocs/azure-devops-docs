@@ -49,7 +49,7 @@ To configure or view CFD charts, see [Configure a cumulative flow chart](cumulat
 <p>The data is always depicted with the first step in the process as the upper left and the last step in the process as the bottom right. </p>
 </td>
 <td><strong>Fixed period CFD for a completed sprint</strong><br/>
-<img src="media/cfd-scope-change.png" alt="CFD metrics"/><br/>
+<img src="media/cfd-scope-change.png" alt="CFD metrics, fixed period"/><br/>
 </td>
 </tr>
 </tbody>
@@ -123,7 +123,7 @@ Two problems show up visually as flat lines and as bulges.
 <p>Flat lines appear when the team doesn&#39;t update their work with a regular cadence. The <a href="../../boards/boards/kanban-basics.md" data-raw-source="[Kanban board](../../boards/boards/kanban-basics.md)">Kanban board</a> provides the quickest way to transition work from one column to another. </p>
 <p>Flat lines can also appear when the work across one or more processes takes longer than planned for. For this to occur, flat lines must appear across many parts of the system because if only one part of the system or two parts of a system have problems then you&#39;ll see a bulge. </p>
 </td>
-<td width="35%"><strong>Flat lines</strong><br/><img src="media/cfd-flatline.png" alt="CFD metrics"/><br/></td>
+<td width="35%"><strong>Flat lines</strong><br/><img src="media/cfd-flatline.png" alt="CFD metrics, flat lines"/><br/></td>
 </tr>
 <tr>
 <td>
@@ -131,7 +131,7 @@ Two problems show up visually as flat lines and as bulges.
 <p>An example of this may be that testing is taking a long period of time but development is taking a short period of time therefore work is accumulating in the development state (bulges indicate that a succeeding step is having a problem, not necessarily the step in which the bulge is occurring).  </p>
 </td>
 <td width="65%"><strong>Bulges</strong><br/>
-<img src="media/cfd-bulge.png" alt="CFD metrics"/><br/>
+<img src="media/cfd-bulge.png" alt="CFD metrics, bulges"/><br/>
 </td>
 </tr>
 </tbody>
@@ -217,15 +217,17 @@ As you can see in the following chart, which shows several outliers, several bug
 
 You can also see how process changes affect your lead and cycle time. For example, on May 15th the team made a concerted effort to limit the work in progress and address stale bugs. You can see that the standard deviation narrows after that date, showing improved predictability. 
 
+::: moniker-end
 
 ## Try this next
+
+::: moniker range=">= azure-devops-2019" 
 > [!div class="nextstepaction"]
 > [Configure your cumulative flow charts](cumulative-flow.md) or 
 > [Configure a lead time or cycle time chart](cycle-time-and-lead-time.md)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
-## Try this next
 > [!div class="nextstepaction"]
 > [Configure your cumulative flow chart](cumulative-flow.md) 
 ::: moniker-end
