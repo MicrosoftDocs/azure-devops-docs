@@ -171,10 +171,9 @@ To create a custom image, you can use the [Azure VM Image Builder DevOps Task](h
 
 2. Create a virtual machine scale set with [az virtual machine scale set create](/cli/azure/vmss#az-vmss-create). The following example creates a scale set named `vmssScaleSet` and generates SSH keys if they do not exist:
 
-```azurecli-interactive
-
-az vmss create -n vmssScaleSet -g myVMSSResourceGroup --image "MyImage"
-```
+  ```azurecli-interactive
+  az vmss create -n vmssScaleSet -g myVMSSResourceGroup --image "MyImage"
+  ```
 
 It takes a few minutes to create and configure all the scale set resources and VMs. There are background tasks that continue to run after the Azure CLI returns you to the prompt. It may be another couple of minutes before you can access the app.
 
