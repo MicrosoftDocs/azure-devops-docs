@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Check in your work to the team's codebase
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Use the **Pending Changes** page (Keyboard: Ctrl + 0, P) in Team Explorer to check in your code into a new changeset.
 
