@@ -213,7 +213,7 @@
     href: /rest/api/azure/devops/wit/queries
   - name: Plans
     href: /rest/api/azure/devops/work/plans
-  - name: Wiql
+  - name: Work Item Query Language 
     href: /rest/api/vsts/wit/wiql 
 - name: Azure DevOps Learn
   items:

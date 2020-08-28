@@ -12,7 +12,7 @@ ms.date: 08/28/2020
 ---
 
 
-# Fix re-ordering and nesting issues 
+# Fix display, reordering, and nesting issues 
 
 <a id="display-hierarchy">  </a>
 
@@ -20,7 +20,7 @@ ms.date: 08/28/2020
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 
-Azure Boards backlogs are designed to display a natural hierarchy of work items. When parent-child links are added to work items that don't meet the natural hierarchy, then you'll receive one or more messages indicating there is an issue that needs to be fixed. Some items may not display. Also, the system may disable to drag-and-drop reorder feature.  
+Azure Boards backlogs are designed to display a natural hierarchy of work items. When you add parent-child links to work items that don't meet the natural hierarchy, you'll receive a message that indicates reordering is disabled. Some items may not display. Also, the system may disable the drag-and-drop reorder feature.  
 
 Use this article to fix the issues that occur and that display one of the following messages: 
 
@@ -55,7 +55,7 @@ To address this message, take the following actions:
 	> [!div class="mx-imgBorder"]  
 	> ![Nested user stories](media/resolve/nested-user-stories.png)  
 	
-	As another example, the following shows that a bug is a child of a user story. Because the team has configured their backlog to display user stories and bugs at the same level (Requirements category), this corresponds to a nested item that disables the ordering feature.
+	As another example, the following shows that a bug is a child of a user story. Because the team has configured their backlog to display user stories and bugs at the same level (Requirements category), this configuration results in a nested item that disables the ordering feature.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Nested user story and bug](media/resolve/nested-user-story-bug.png)  
@@ -64,7 +64,7 @@ To address this message, take the following actions:
 
 4.	Refresh your Backlog.
 
-The issue should now be resolved.
+The issue should now be resolved and the message no longer displays.
 
 
 ## Resolve message that specifies work item IDs 
@@ -75,10 +75,11 @@ To address this message, take the following action:
 
 1. Open the work item listed in the error message.
 
-2. Look for a parent or child link of the same-category. This is a link of the same type, or another type that appear on the same backlog level. Depending on your team's bug behavior setting, bugs may appear with requirements or tasks. 
+2. Look for a parent or child link that links to a work item within the same category as the work item you opened. This is a link to another work item  that appears on the same backlog level as the work item you opened. Depending on your team's bug behavior setting, bugs may appear with requirements or tasks. 
 
 3. Remove the problem parent-child link. If you would like to keep these items associated, use 'Related' link type instead. 
 
+The issue should now be resolved and the message no longer displays.
 
 ## In Progress work items may disappear on a refresh
 
@@ -117,7 +118,7 @@ While you can create a hierarchy of backlog items, tasks, and bugs&mdash;we don'
 
 Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list. In other words, only create parent-child links one level deep between items that belong to a different category. 
 
-Use the Feature work item type when you want to group user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](organize-backlog.md), which creates parent-child links in the background.
+Use the Feature work item type when you want to group user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements ( Capability Maturity Model Integration (CMMI)). You can [quickly map product backlog items to features](organize-backlog.md), which creates parent-child links in the background.
 
 
 <a id="nested" > </a>
