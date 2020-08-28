@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Key definitions for objects and items used to code with Azure Repos
 ms.technology: devops-new-user 
 ms.topic: reference
-monikerRange: 'azure-devops'
+monikerRange: '>=tfs-2018'
 ms.date: 09/10/2018  
 ---
 
