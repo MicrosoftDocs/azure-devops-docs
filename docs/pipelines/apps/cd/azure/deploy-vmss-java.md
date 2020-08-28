@@ -26,6 +26,7 @@ In this tutorial, you build a Java app and deploy it to a virtual machine scale 
 Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
+- The [Azure VM Image Builder DevOps task](https://marketplace.visualstudio.com/items?itemName=AzureImageBuilder.devOps-task-for-azure-image-builder) installed for your DevOps organization. 
 - A forked GitHub repo with the example java project. Fork the [pipelines-java repository](https://github.com/MicrosoftDocs/pipelines-java).
 - Packer deployment file 
 
@@ -81,16 +82,11 @@ steps:
     SourceFolder: $(System.DefaultWorkingDirectory)
     Contents: '**'
     TargetFolder: $(Build.ArtifactStagingDirectory)   
-
-- task: PublishBuildArtifacts@1
-  displayName: Publish Artifact
-  inputs:
-    PathtoPublish: $(Build.ArtifactStagingDirectory)
 ```
 
 ## Create a custom image and upload it to Azure
 
-You need a resource group and a storage account for your custom image. 
+You need a resource group, storage account, and shared image gallery for your custom image. 
 
 1. Create a resource group with [az group create](/cli/azure/group#az-group-create). The following example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
 
@@ -100,87 +96,76 @@ az group create --name myVMSSResourceGroup --location eastus2
 
 2. Next, create a new storage account. The following example creates a storage account named `vmssstorageaccount`.
 
-```azurecli-interactive
-az storage account create \
-  --name vmssstorageaccount \
-  --resource-group myVMSSResourceGroup \
-  --location eastus2 \
-  --sku Standard_LRS 
-```
+  ```azurecli-interactive
+  az storage account create \
+    --name vmssstorageaccount \
+    --resource-group myVMSSResourceGroup \
+    --location eastus2 \
+    --sku Standard_LRS 
+  ```
 
-### Create a service principal
-
-1. Create a service principal to generate values that you will use when you create an image. To find `YOUR_SUBSCRIPTION_ID`, log into the Azure portal and select **Subscriptions**.
+3. Create a [shared image gallery](https://docs.microsoft.com/azure/virtual-machines/shared-images-cli). 
 
   ```azurecli-interactive
-   az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/YOUR_SUBSCRIPTION_ID"
+  az sig create --resource-group myVMSSResourceGroup --gallery-name myVMSSGallery
   ```
-2. From the output, copy the `appId`, `password`, and `tenant`. 
+
+4. Create a new image gallery in the `myVMSSGallery` resource. Learn more about [working with images](https://docs.microsoft.com/azure/virtual-machines/windows/shared-images-portal). 
+
+  ```azurecli-interactive
+  az sig create --resource-group myVMSSResourceGroup --gallery-name myVMSSGallery
+  ```
+
+5. If you haven't already, create an image definition. Copy the `id` of the new image that looks like `/subscriptions/<SUBSCRIPTION ID>/resourceGroups/<RESOURCE GROUP>/providers/Microsoft.Compute/galleries/myVMSSGallery/images/MyImage`. 
+
+  ```azurecli-interactive
+  az sig image-definition create -g myVMSSResourceGroup --gallery-name myVMSSGallery --gallery-image-definition MyImage --publisher GreatPublisher --offer GreatOffer --sku GreatSku --os-type linux
+   ```
+
+### Create a managed identity
+
+1. Create a [managed identity](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) in your resources group. 
+
+  ```azurecli-interactive
+   az identity create -g myVMSSResourceGroup -n myVMSSIdentity
+  ```
+2. From the output, copy the `id`.  The `id` will look like `/subscriptions/<SUBSCRIPTION ID>/resourcegroups/<RESOURCE GROUP>/providers/Microsoft.ManagedIdentity/userAssignedIdentities/<USER ASSIGNED IDENTITY NAME>`. 
+
+3. Open your image portal in the gallery and assign `myVMSSIdentity` the Contributor role. Follow [these steps to add a role assignment](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).  
 
 ### Create the custom image
 
-To create a custom image, you can use the [Build Machine Image task](../../../tasks/deploy/packer-build.md). This task builds a machine image using Packer. For that to work, you first need to add a Packer template to your repository. 
+To create a custom image, you can use the [Azure VM Image Builder DevOps Task](https://marketplace.visualstudio.com/items?itemName=AzureImageBuilder.devOps-task-for-azure-image-builder). 
 
-1. Copy `packer-template.json` file to the root level of your repository.
-
-```json
-{
-	"builders": [{
-		"type": "azure-arm",
-		"subscription_id": "{{ user `subscription_id`}}",
-		"client_id": "{{user `client_id`}}",
-		"client_secret": "{{user `client_secret`}}",
-		"tenant_id": "{{user `tenant_id`}}",
-		"managed_image_resource_group_name": "java-vmss",
-		"managed_image_name": "{{ user `managed_image_name` }}",
-		"os_type": "Linux",
-		"image_publisher": "Canonical",
-		"image_offer": "UbuntuServer",
-		"image_sku": "16.04-LTS",
-		"azure_tags": {
-			"dept": "vmss",
-			"task": "Image deployment"
-		},
-		"location": "East US",
-		"vm_size": "Standard_B1ms"
-	}],
-	"provisioners": [{
-		"execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
-		"inline": [
-
-
-
-			"apt-get update",
-			"curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash",
-			"source ~/.profile",
-			"nvm --version",
-			"nvm install 10",
-
-
-			"/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
-		],
-		"inline_shebang": "/bin/sh -x",
-		"type": "shell"
-	}]
-}
-```
-
-2. Add the `PackerBuild@1` task at the bottom of your YAML file. You will use the `appId`, `password`, and `tenant` values from your service principal. Use the `appId` for the `client_id`, `password` for `client_secret` and  `tenant` for `tenant_id`. 
+1. Add the `AzureImageBuilderTask@1` task at the bottom of your YAML file.  
 
 ```yaml
-- task: PackerBuild@1
-  displayName: 'Build immutable image'
+- task: AzureImageBuilderTask@1
+  displayName: 'Azure VM Image Builder Task'
   inputs:
-    templateType: custom
-    customTemplateLocation: '$(System.DefaultWorkingDirectory)/packer-template.json'
-    customTemplateParameters: '{"subscription_id":"YOUR_SUBSCRIPTION_ID","client_id":"appId","client_secret":"password","tenant_id":"tenant","resource_group":"myVMSSResourceGroup","managed_image_name":"vmss-image-$(Build.BuildId)"}'
+    managedIdentity: '/subscriptions/<SUBSCRIPTION ID>/resourcegroups/<RESOURCE GROUP>/providers/Microsoft.ManagedIdentity/userAssignedIdentities/<USER ASSIGNED IDENTITY NAME>'
+    imageSource: 'marketplace'
+    packagePath: '$(System.DefaultWorkingDirectory)/pipeline-artifacts'
+    inlineScript: |
+      sudo mkdir /lib/buildArtifacts
+      sudo cp  "/tmp/pipeline-artifacts.tar.gz" /lib/buildArtifacts/.
+      cd /lib/buildArtifacts/.
+      sudo tar -zxvf pipeline-artifacts.tar.gz
+      sudo sh install.sh
+    storageAccountName: 'vmssstorageaccount2'
+    distributeType: 'sig'
+    galleryImageId: '/subscriptions/<SUBSCRIPTION ID>/resourceGroups/<RESOURCE GROUP>/providers/Microsoft.Compute/galleries/myVMSSGallery/images/MyImage/versions/0.0.$(Build.BuildId)'
+    replicationRegions: 'eastus2'
+    ibSubscription: '<SUBSCRIPTION ID>'
+    ibAzureResourceGroup: 'myVMSSResourceGroup'
+    ibLocation: 'eastus2'
 ```
 
-3. Run the pipeline to generate your first image.
+2. Run the pipeline to generate your first image.
  
 ## Create a virtual machine scale set
 
-1. Open the Build immutable action task and copy your `ManagedImageId`.   
+1. Open the Azure VM Image Builder DevOps task and copy your `ManagedImageId`.   
 
     :::image type="content" source="media/managed_image_vmss.png" alt-text="Managed image Id":::
 
@@ -188,7 +173,7 @@ To create a custom image, you can use the [Build Machine Image task](../../../ta
 
 ```azurecli-interactive
 
-az vmss create -n vmssScaleSet -g myVMSSResourceGroup --image "ManagedImageId"
+az vmss create -n vmssScaleSet -g myVMSSResourceGroup --image "MyImage"
 ```
 
 It takes a few minutes to create and configure all the scale set resources and VMs. There are background tasks that continue to run after the Azure CLI returns you to the prompt. It may be another couple of minutes before you can access the app.
