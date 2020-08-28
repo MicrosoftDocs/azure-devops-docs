@@ -18,6 +18,15 @@ monikerRange: '>= tfs-2017'
 Set up permissions to control who can read and update the code in a branch on your Git repo.
 You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository).
 
+> [!NOTE] 
+> Branch permissions are different between different versions of TFS, Azure DevOps
+> Server, and Azure DevOps Services.
+>
+> Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
+> in the upper left corner of the window.
+>
+> ![Content version selector](../../media/version-selector.png)
+
 ## Use the branches view to configure security
 
 ::: moniker range=">= azure-devops-2019"
@@ -63,13 +72,6 @@ The user or group will still exist in your Project and this change will not affe
 Control branch permission settings from the branch permission view. Users and groups with permissions set at the repo level will
 [inherit those permissions](../../organizations/security/about-permissions.md#inheritance) by default. 
 
-> [!NOTE] 
-> These permissions have changed in TFS 2017 Update 1 and Azure DevOps Services.
-> Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
-> in the upper left corner of the window.
->
-> ![Content version selector](../../media/version-selector.png)
-
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
 ### Permissions in TFS 2017 Update 1 through TFS 2018 Update 2
@@ -98,7 +100,7 @@ Control branch permission settings from the branch permission view. Users and gr
 
 ::: moniker-end    
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2019" 
 
 ### Permissions in Azure DevOps Services
 
