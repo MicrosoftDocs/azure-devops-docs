@@ -1,7 +1,7 @@
 ---
-title: Fix backlog reorder and nesting issues
+title: Fix cannot reorder backlog 
 titleSuffix: Azure Boards
-description: How to fix error messages due to nesting issues that occur in a Backlog or Board in Azure Boards   
+description: How to fix disable reorder messages due to nesting issues that occur in Azure Boards   
 ms.custom: "boards-backlogs, seodec18"  
 ms.technology: devops-agile
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
@@ -24,9 +24,12 @@ Azure Boards backlogs are designed to display a natural hierarchy of work items.
 
 Use this article to fix the issues that occur and that display one of the following messages: 
 
-- `You cannot reorder work items and some work items may not be shown.`
-- `You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category".`
+- `You cannot reorder work items and some work items may not be shown.`  
+
+- `You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category".`  
+
 - `Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items will appear when you change the "In progress" filter to Show.`
+
 
 ## Natural work item type hierarchy
 
@@ -38,9 +41,9 @@ When you link work items of the same type with parent-child links&mdash;such as 
  
 <a id="nested" > </a>
 
-## Resolve message that doesn't specify work item IDs 
+## Resolve message that you can't reorder work items
 
-You may see a message such as `You cannot reorder work items and some work items may not be shown`. 
+You may see a message such as `You cannot reorder work items and some work items may not be shown`.  No work item IDs are listed. 
 
 To address this message, take the following actions: 
 
@@ -77,10 +80,33 @@ To address this message, take the following action:
 3. Remove the problem parent-child link. If you would like to keep these items associated, use 'Related' link type instead. 
 
 
-## Resolve message that indicates In Progress work items may disappear on a refresh
+## In Progress work items may disappear on a refresh
 
-The message&mdash;`Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items will appear when you change the "In progress" filter to Show.`&mdash;indicates that the **In Progress** filter has been set. 
+The message&mdash;`Items added to the backlog may disappear on a refresh because your team project marks them as "in progress". Those items will appear when you change the "In progress" filter to Show.`&mdash;indicates that the **In Progress** filter for the backlog has been turned off.  
 
+Upon refresh of your browser, the backlog displays those work items based on your selected filters. 
+
+To reset the filters, perform the following steps. 
+
+::: moniker range=">= azure-devops-2019"
+
+From the **View options** selector, you can choose to show or hide **In Progress items**. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) won't appear in the backlog. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+:::image type="content" source="media/create-backlog/in-progress-control-2020.png" alt-text="View options selector, In progress control":::
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+:::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="View options selector, In progress control":::
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+Choose **In progress items** show or hide **In Progress** backlog items. If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) won't appear in the backlog. 
+::: moniker-end
+
+You usually choose to hide **In Progress items** when you want to forecast work. To learn more, see [Forecast your product backlog](../sprints/forecast.md).
 
  
 <a id="recommended"> </a>
@@ -170,17 +196,4 @@ Is there a workaround to display intermediate nodes within a hierarchy?  Not at 
 - [About Boards and Kanban, Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)  
 - [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs-boards-plans.md)  
 
-
-
-<!---
-
-
-
-When a product, portfolio, or sprint backlog contains same-category nested work items, the system cannot properly reorder work items. The system disables the drag-and-drop reorder feature and not all items display under these circumstances&mdash;as described in the section later in this article, [How backlogs and boards display hierarchical (nested) items](#leaf-nodes).  
  
-
-
-
-
--->
-
