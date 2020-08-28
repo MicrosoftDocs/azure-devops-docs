@@ -17,15 +17,16 @@ You can customize how your pipeline runs are numbered. The default value for run
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"
 
-In YAML, this property is called `name`.
+In YAML, this property is called `name` and is at the root level of a pipeline. 
 If not specified, your run is given a unique integer as its name.
 You can give runs much more useful names that are meaningful to your team.
 You can use a combination of tokens, variables, and underscore characters.
 
 ```yaml
 name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+
 steps:
-- script: echo hello world
+  - script: echo $(Build.BuildNumber) # outputs customized build number like project_def_master_20200828.1
 ```
 
 ::: moniker-end
