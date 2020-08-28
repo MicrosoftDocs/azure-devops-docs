@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Commit history
 
-#### Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1**
 
 ## Commit history view
 

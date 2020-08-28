@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Check in to a folder that is controlled by a gated check-in build process
 
-#### Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 When you check in files to a version control folder that is controlled by a [gated check-in build process](../../pipelines/build/triggers.md), there are some additional steps that you must take to complete the check-in.
 

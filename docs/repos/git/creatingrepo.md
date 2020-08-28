@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 #  Create a new Git repo
 
-#### Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2**
 
 A Git repository, or repo, is a folder that you've told Git to help you track file changes in. 
 You can have any number of repos on your computer, each stored in their own folder. 
