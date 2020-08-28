@@ -4,7 +4,7 @@ ms.custom: seodec18, contperfq4
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 08/19/2020
+ms.date: 08/28/2020
 
 monikerRange: '>= tfs-2015'
 ---
@@ -514,7 +514,15 @@ To share variables across multiple pipelines in your project, use the web interf
 
 ## Use output variables from tasks
 
-Some tasks define output variables, which you can consume in downstream steps and jobs within the same stage. You can access variables across jobs by using [dependencies](expressions.md#dependencies). 
+::: moniker range=">=azure-devops-2020"
+Some tasks define output variables, which you can consume in downstream steps, jobs, and stages.
+You can access variables across jobs and stages by using [dependencies](expressions.md#dependencies). 
+::: moniker-end
+
+::: moniker range="<azure-devops-2020"
+Some tasks define output variables, which you can consume in downstream steps and jobs within the same stage.
+You can access variables across jobs by using [dependencies](expressions.md#dependencies). 
+::: moniker-end
 
 #### [YAML](#tab/yaml/)
 
