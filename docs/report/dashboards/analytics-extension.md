@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2019 < azure-devops'
 ms.date: 08/10/2020
 ---
 
-# Enable or install Analytics
+# Install/uninstall or enable/disable the Analytics service
 
 [!INCLUDE [temp](../../includes/version-azure-devops-2019.md)]
 
@@ -92,7 +92,7 @@ You can only pause or disable Analytics that has been previously enabled.
 2. Confirm that you want to pause or disable the service. 
 	 
 	> [!div class="mx-imgBorder"]  
-	> ![Confirm Pause](media/enable-analytics/confirm-pause.png)   ![Confirm  Disable](media/enable-analytics/confirm-disable.png)
+	> ![Confirm Pause dialog.](media/enable-analytics/confirm-pause.png)   ![Confirm  Disable](media/enable-analytics/confirm-disable.png)
 
 
 <a name="resume-analytics"></a>
@@ -111,7 +111,7 @@ For Azure DevOps Server 2019.1, you can resume Analytics after you've paused it 
 3. Confirm that you want to resume the service. 
 	 
 	> [!div class="mx-imgBorder"]  
-	> ![Confirm Pause](media/enable-analytics/confirm-resume.png) 
+	> ![Confirm Resume dialog.](media/enable-analytics/confirm-resume.png) 
 
 	Once enabled, Analytics staging jobs begin to populate the Analytics data tables. This process could take some time depending on the size of your collection. 
 
@@ -175,7 +175,7 @@ If you haven't upgraded to Azure DevOps Server 2019.1, you can install the Analy
 4. Choose <strong>Get it free</strong>. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Get it free](media/install-analytics/choose-get-it-free.png)   
+	> ![Screenshot of Analytics Marketplace extension, Choose Get it free.](media/install-analytics/choose-get-it-free.png)   
 
 5. Select the project collection and then choose **Install**.  
 
@@ -185,7 +185,7 @@ If you haven't upgraded to Azure DevOps Server 2019.1, you can install the Analy
 6. Upon completion of install, you'll see an image similar to the following. Choose <strong>Proceed to collection</strong> to return to the web portal for your collection.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Get it free](media/install-analytics/success-install.png)   
+	> ![Screenshot of Analytics Marketplace extension installed, Proceed to collection.](media/install-analytics/success-install.png)   
 
 	Optionally, if you want to install the Analytics extension on additional project collections, choose the browser back button. 
 
@@ -197,11 +197,11 @@ If you choose to disable the Analytics extension, it will stop any jobs from run
 
 1. Open the extensions menu and choose **Manage Extensions**.
 
-   ![Manage extensions](media/install-analytics/install-devops-extension-13.png)
+   ![Screenshot of Manage extensions tab.](media/install-analytics/install-devops-extension-13.png)
 
 1. In the **Manage** tab, open the shortcut menu for the extension.
 
-   ![Disable or uninstall an extension](media/install-analytics/install-devops-extension-12.png)
+   ![Screenshot of context menu for an extension, Disable or uninstall an extension menu options.](media/install-analytics/install-devops-extension-12.png)
 
 2. Choose **Disable** or **Uninstall** as required.
 
