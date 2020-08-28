@@ -10,7 +10,7 @@ monikerRange: '>= azure-devops-2019 < azure-devops'
 ms.date: 08/10/2020
 ---
 
-# Enable or install Analytics
+# Install/uninstall or enable/disable the Analytics service
 
 [!INCLUDE [temp](../../includes/version-azure-devops-2019.md)]
 

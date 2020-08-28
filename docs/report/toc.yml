@@ -1,6 +1,8 @@
 - name: Reporting
   expanded: false
   href: index.yml
+- name: What is the Analytics service?
+  href: powerbi/what-is-analytics.md
 - name: Reporting roadmap 
   href: powerbi/reporting-roadmap.md
 - name: Dashboards, charts, reports, & widgets   

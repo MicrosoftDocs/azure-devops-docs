@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2018'
-ms.date: 06/26/2020
+ms.date: 08/24/2020
 ---
 
 # Reporting roadmap for Azure DevOps 
