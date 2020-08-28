@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 > - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015  
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015  **
 
 Whether your software project is large, small, or brand new, 
 in most cases you'll be better off if you use version control 
