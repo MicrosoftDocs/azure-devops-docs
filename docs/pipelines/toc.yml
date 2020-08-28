@@ -387,7 +387,7 @@
     href: artifacts/symbols.md
   - name: Universal
     href: artifacts/universal-packages.md
-  - name: Restore NuGet packages (Package Management feeds)
+  - name: Restore NuGet packages
     href: packages/nuget-restore.md
   - name: Restore & publish NuGet packages (Jenkins)
     href: packages/jenkins.md
