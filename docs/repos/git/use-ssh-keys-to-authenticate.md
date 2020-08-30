@@ -95,11 +95,11 @@ compromised, attackers can use it to trick servers into thinking the connection 
 Associate the public key generated in the previous step with your user ID.
 
 1. Open your security settings by browsing to the web portal and selecting your avatar in the upper right of the
-   user interface. Select **Security** in the menu that appears.
+   user interface. Select  **SSH public keys** in the menu that appears.
 
    ![Accessing User Profile in Azure DevOps Services](media/use-ssh-authentication/ssh_profile_access.png)
 
-2. Select **SSH public keys**, and then select **+ New Key**.
+2. Select **+ New Key**.
 
     ![Accessing Security Configuration in Azure DevOps Services](media/use-ssh-authentication/ssh_accessing_security_key.png)
 
