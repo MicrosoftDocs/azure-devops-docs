@@ -146,7 +146,8 @@ Can be used with <strong>/clean</strong> only.
 </tr>
 <tr>
 <td><p><strong>/diff</strong></p></td>
-<td><p>Displays differences between items.</p>
+<td><p>Compares items with source control using MD5 hashes. Use this option to detect items which are different from the workspace
+version but still have their read-only bit set (+R).</p>
 </td>
 </tr>
 <tr>
@@ -155,7 +156,7 @@ Can be used with <strong>/clean</strong> only.
 </tr>
 <tr>
 <td><p><strong>/ignore</strong></p></td>
-<td><p>By default <strong>tf /clean</strong> command will update all items based on the current server state, including ignored by version control items. Use this option to avoid changing the ignored items.<p> You can configure which kinds of items are ignored using a .tfignore file (see <a href="add-files-server.md#tfignore">Add Files: .tfignore file</a>).</p>
+<td><p>By default <strong>tf /clean</strong> command will update all items based on the current server state, including ignored by version control items. Use this option to avoid changing the ignored items.<p> You can configure which kinds of items are ignored using a ".tfignore" file (see <a href="add-files-server.md#tfignore">Add Files: .tfignore file</a>).</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -170,7 +171,7 @@ Can be used with <strong>/clean</strong> only.
 </tr>
 <tr>
 <td><p><strong>/noignore</strong></p></td>
-<td><p>By default <strong>tf /promote</strong> command will promote all items except those that are ignored by version control. Use this option to promote the ignored items as well. This behaviour is similar to using <strong>/noignore</strong> in the <strong>tf add</strong> commnad.<p> You can configure which kinds of items are ignored using a .tfignore file (see <a href="add-files-server.md#tfignore">Add Files: .tfignore file</a>).</p>
+<td><p>By default <strong>tf /promote</strong> command will promote all items except those that are ignored by version control. Use this option to promote the ignored items as well. This behavior is similar to using <strong>/noignore</strong> in the <strong>tf add</strong> command.<p> You can configure which kinds of items are ignored using a ".tfignore" file (see <a href="add-files-server.md#tfignore">Add Files: .tfignore file</a>).</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -238,13 +239,13 @@ The following example invokes the **Promote Candidate Changes** dialog box so th
 tf reconcile /promote
 ```
 
-The following example promotes all items including ingored by version control items, except the "myLib.dll" file.
+The following example promotes all items including ignored by version control items, except the "myLib.dll" file.
 
 ```
 tf reconcile /promote /noignore /exclude:myLib.dll
 ```
 
-The following example adds all locally created items to version control pending changes. This works similar to the **tf add /noprompt** command.
+The following example adds all locally created items to version control pending changes. This command works similar to the **tf add /noprompt** command.
 
 ```
 tf reconcile /promote /adds /noprompt
