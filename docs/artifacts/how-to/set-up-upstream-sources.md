@@ -3,11 +3,11 @@ title: Set up upstream sources for packages
 description: Find out how to configure upstream packages from multiple sources in Azure DevOps Services and TFS
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/07/2020
+ms.date: 08/31/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Configure upstream sources for Azure DevOps Services and TFS packages
+# Configure upstream sources
 
 Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or Azure Active Directory (AAD) tenant). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
