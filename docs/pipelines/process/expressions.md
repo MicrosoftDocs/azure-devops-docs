@@ -782,8 +782,8 @@ steps:
     echo "##vso[task.setvariable variable=minor]$MINOR_RUN"
 
 - bash: |
-    echo My pipeline variable for major run is $MAJOR
-    echo My pipeline variable for minor run is $MINOR
+    echo My pipeline variable for major run is $MAJOR_RUN
+    echo My pipeline variable for minor run is $MINOR_RUN
 ```
 
 <!-- ENDSECTION -->
