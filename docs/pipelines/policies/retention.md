@@ -138,8 +138,8 @@ You can delete runs using the [context menu](../get-started/multi-stage-pipeline
 > [!NOTE]
 > If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
 
-> [!div class="mx-imgBorder"]
-> ![delete a run](media/delete-a-run.png)
+  > [!div class="mx-imgBorder"]
+  > ![delete a run](media/delete-a-run.png)
 
 ::: moniker-end
 
@@ -201,8 +201,8 @@ You may want to retain more releases that have been deployed to specific stages.
 
 The following example retention policy for a release pipeline meets the above requirements:
 
-> [!div class="mx-imgBorder"]
-> ![Configuring the release retention setting for a release pipeline](media/retention-policy-01.png)
+  > [!div class="mx-imgBorder"]
+  > ![Configuring the release retention setting for a release pipeline](media/retention-policy-01.png)
 
 In this example, if a release that is deployed to Dev is not promoted to QA for 10 days, it is a potential candidate for deletion. However, if that same release is deployed to QA eight days after being deployed to Dev, its retention timer is reset, and it is retained in the system for another 30 days.
 
@@ -299,13 +299,13 @@ You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your b
 
 1. Add the **Copy Files task** to your Pipeline.  
 
-> [!div class="mx-imgBorder"]
-> ![copy files](media/copy_files_classic_task.png)
+  > [!div class="mx-imgBorder"]
+  > ![copy files](media/copy_files_classic_task.png)
 
 2. Configure the **Copy Files task**. 
 
-> [!div class="mx-imgBorder"]
-> ![configure Copy Files](media/copy_files_classic_config.png)
+  > [!div class="mx-imgBorder"]
+  > ![configure Copy Files](media/copy_files_classic_config.png)
 
 * * *
 
@@ -360,8 +360,8 @@ For example, your team may want to keep:
 
 The following example retention policy for a build pipeline meets the above requirements:
 
-> [!div class="mx-imgBorder"]
-> ![define git retention policies](media/define-git-retention-policies.png)
+  > [!div class="mx-imgBorder"]
+  > ![define git retention policies](media/define-git-retention-policies.png)
 
 When specifying custom policies for each pipeline, you cannot exceed the maximum limits set by administrator.
 
@@ -375,8 +375,8 @@ If you [protect your Git branches with pull request builds](../../repos/git/bran
   refs/pull/*
 ```
 
-> [!div class="mx-imgBorder"]
-> ![retention policies for PR builds](media/retention-policy-for-pull-request-builds.png)
+  > [!div class="mx-imgBorder"]
+  > ![retention policies for PR builds](media/retention-policy-for-pull-request-builds.png)
 
 ### TFVC and Subversion repositories
 
@@ -388,8 +388,8 @@ When the system is purging old builds, it evaluates each build against the polic
 
 The "All" branches policy is automatically added as the last policy in the evaluation order to enforce the maximum limits for all other branches.
 
-> [!div class="mx-imgBorder"]
-> ![define git retention policy max shown in pipeline](media/define-git-retention-policy-max-shown-in-definition.png)
+  > [!div class="mx-imgBorder"]
+  > ![define git retention policy max shown in pipeline](media/define-git-retention-policy-max-shown-in-definition.png)
 
 ::: moniker-end
 
