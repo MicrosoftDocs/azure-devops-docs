@@ -10,16 +10,16 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
-ms.date: 07/23/2020 
+ms.date: 08/26/2020 
 ---
 
 # Add and edit wiki pages
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
-When the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project, there's a new page where you can add a title and content. There's a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
+You can add a title and content to a page, once the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project. There's a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
-In this article, learn how to do the following tasks:  
+Learn how to do the following tasks:  
 
 > [!div class="checklist"]
 > * Open wiki
@@ -157,7 +157,7 @@ To edit an existing Wiki page, open the page and select **Edit**, or open the co
 
 ::: moniker range=">= azure-devops-2020"
 
-For code wikis, you can edit wiki pages in Repos hub also by using the option **Edit in Repos**. 
+For code wikis, you can edit a page in the side-by-side editor, using the markdown toolbar to create your content. This experience is identical to the process in a project wiki. You can edit wiki pages in the Repos hub also by using the option, **Edit in Repos**.  
 
 > [!div class="mx-imgBorder"]  
 > ![Create wiki and first page](media/wiki/edit-in-repos.png)
@@ -285,7 +285,7 @@ For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wik
 
 ## Make a page the wiki home page
 
-By default, the first page you add when you create a wiki is set as the wiki home page. You can change your wiki homepage, if another page becomes more relevant, by dragging and dropping the page to the top of the tree.
+By default, the first page you add when you create a wiki is set as the wiki home page. You can change your wiki homepage if another page becomes more relevant, by dragging and dropping the page to the top of the tree.
 
 ## Next steps
 
