@@ -14,10 +14,10 @@ monikerRange: '>= tfs-2015'
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-Displays information about both pending changes to files and folders and pending change candidates in one or more workspaces. Or, when you use the **/shelveset** option, displays information about pending changes in a shelveset.
+Displays information both about pending changes to files and folders and pending change candidates in one or more workspaces. Or, when you use the **/shelveset** option, displays information about pending changes in a shelveset.
 
->[!NOTE]
->Pending changes candidate is a file in the workspace's folder or sub folder which was not added to version control. To view all Pending changes candidate in Visual Studio choose **Team Explorer**, open **Pending Changes** menu, in  **Excluded Changes** field push **Detected**. 
+> [!NOTE]
+> A pending changes candidate is a file in the workspace's folder or sub folder that wasn't added to version control. To view all pending changes candidates in Visual Studio, go to **Team Explorer** > **Pending Changes** > **Excluded Changes**, and then select **Detected**.  
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
