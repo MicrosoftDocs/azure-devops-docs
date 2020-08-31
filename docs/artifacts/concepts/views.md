@@ -4,13 +4,13 @@ description: Release views enable continuous integration and delivery of NuGet, 
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 07/8/2020
+ms.date: 08/31/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # What are Azure DevOps Services feed views?
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 *If you're familiar with the principles behind views, you can jump to the [docs page](../feeds/views.md) to quickly start using them.*
 
