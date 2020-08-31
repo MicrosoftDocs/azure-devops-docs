@@ -462,7 +462,7 @@ Expressions can use the dependencies context to reference previous jobs or stage
 The context is called `dependencies` for jobs and stages and works much like variables.
 Inside a job, if you refer to an output variable from a job in another stage, the context is called `stageDependencies`.
 
-If you experience issues with output variables having quote characters (`'` or `"`) in them, see [this troubleshooting guide](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended)
+If you experience issues with output variables having quote characters (`'` or `"`) in them, see [this troubleshooting guide](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended).
 
 ### Stage to stage dependencies
 Structurally, the `dependencies` object is a map of job and stage names to `results` and `outputs`.
