@@ -4,14 +4,14 @@ description: Use the prerelease and release views to publish a package in Azure 
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 06/04/2020
+ms.date: 08/31/2020
 monikerRange: '>= tfs-2017'
 ---
  
 
 # Use the prerelease and release views to publish your packages
 
-**Azure DevOps Services**
+**Azure DevOps Services | Azure DevOps Server 2019**
 
 Feeds are containers that allow users to group packages and control who can access them by modifying the feed permissions.
 
