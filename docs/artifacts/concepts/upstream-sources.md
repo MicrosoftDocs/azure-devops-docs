@@ -4,13 +4,13 @@ description: Upstream sources manage packages from public sources in an Azure De
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 07/20/2020
+ms.date: 08/31/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Upstream sources
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 Check the ([availability note](../overview.md#versions-compatibility)) to ensure compatibility. 
 
