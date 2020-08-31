@@ -561,7 +561,7 @@ When you rename an area or an iteration, or move the node within the tree hierar
 2. In the dialog that opens, enter the new name.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Work>Project Configuration](media/areas/edit-area-rename-dialog-preview.png)
+    > ![Screenshot of Edit area dialog.](media/areas/edit-area-rename-dialog-preview.png)
 
 3. To move the node within the hierarchy, change the Location field.
 
@@ -583,7 +583,7 @@ When you rename an area or an iteration, or move the node within the tree hierar
 2. In the dialog that opens, enter the new name.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Work>Project Configuration, TFS 2018 and earlier on-premises versions](media/areas/edit-area-rename-dialog.png)
+    > !Screenshot of Edit area dialog, TFS 2018 and earlier on-premises versions.](media/areas/edit-area-rename-dialog.png)
 
 3. To move the node within the hierarchy, change the Location field.
 
