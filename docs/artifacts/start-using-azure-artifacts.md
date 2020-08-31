@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: chcomley
 author: chcomley
-ms.date: 07/27/2020
+ms.date: 08/31/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -65,7 +65,7 @@ Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2019"
 
 ## Billing and free monthly usage
 
