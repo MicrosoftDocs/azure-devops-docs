@@ -116,20 +116,6 @@ You add a custom field to support tracking data requirements that aren't met wit
    :::column-end:::
 :::row-end:::
 
-<!---
-:::row:::
-   :::column span="":::
-      WSJF 
-   :::column-end:::
-   :::column span="":::
-      Feature, Epic 
-   :::column-end:::
-   :::column span="2":::
-      Use to add the [Weighted Shortest Job First](#wsjf) field calculated from the Effort, Business Value, Time Criticality. 
-   :::column-end:::
-:::row-end:::
--->
-
 
 For details on adding a custom field, see [Add a custom field to a work item type](../../organizations/settings/work/add-custom-field.md). 
 
@@ -142,38 +128,6 @@ You can capture a value stream using a field or tags. Tags represent a more info
 - You can filter backlogs, boards, and queries based on fields or tags. 
 - The number of tags created can quickly grow as anyone can add new tags as long as they have the correct permissions. 
 
-
-<a id="wsjf" />
-
-<!---
-
-### WSJF (Weighted Shortest Job First)
-
-We recommend using the [WSJF extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension) to compute and store WSJF for your SAFe® deliverables. 
-
-
-> [!NOTE]  
-> The [WSJF extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension) is not a supported feature of Azure Boards and therefore not supported by the product team. It is an open-source project. For questions, suggestions, or issues you have when using this extension, visit the extension page.
-
-
- 
-SAFe® defines WSJF (Weighted Shortest Job First) as a calculation of cost of delay versus job size. This value can help teams prioritize their portfolio backlogs with the items contributing the highest ROI.
-
-![WSJF = (Business Value + Time Criticality - Risk Reduction | Opportunity Enablement Value)/Job Size](media/safe/wsjf.png) 
-
-Four values are used to calculate WSJF:
-
-- Business Value
-- Time Criticality
-- Risk Reduction | Opportunity Enablement Value
-- Job Size
-
-
-![Work item form automatically updates with changes to field values](media/safe/auto-calc-wsjf.gif)  
-
-For details on adding and managing the extension, see the [WSJF extension overview](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension). 
-
--->
 
 <!--- pros/cons of using picklists versus tags  --> 
 
@@ -218,7 +172,7 @@ The following images show the supported conditions and actions you can select fr
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-2020.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions-2020.png)
+> |![list of conditions, 2020](../../organizations/settings/work/media/rules/when-condition-2020.png) | ![list of actions, 2020](../../organizations/settings/work/media/rules/rule-actions-2020.png)
 
 ::: moniker-end
 
@@ -227,7 +181,7 @@ The following images show the supported conditions and actions you can select fr
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-1.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions-2019.png)
+> |![list of conditions, 2019](../../organizations/settings/work/media/rules/when-condition-1.png) | ![list of actions, 2019](../../organizations/settings/work/media/rules/rule-actions-2019.png)
 
 ::: moniker-end
 
