@@ -16,7 +16,7 @@ ms.date: 07/14/2020
 [!INCLUDE [temp](../../boards/includes/version-all.md)]
 
 
-You can add area paths to support teams and to group work items based on product, feature, or business areas. Then, define area paths at the project level and assign them to a team under the team configuration. You can also create a hierarchy of area paths to support subcategories within categories.
+You add area paths to support teams and to group work items based on product, feature, or business areas. Once you define area paths at the project level, you assign them to a team under the team configuration. You can also create a hierarchy of area paths to support subareas, up to 14 levels deep.
 
 > [!NOTE] 
 > Area Paths and Iteration Paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes), or the Azure DevOps CLI commands and [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
@@ -63,7 +63,7 @@ If you're new to managing projects and teams, the most straight forward sequence
 ::: moniker range=">= tfs-2017"
 
 > [!NOTE]
-> While you can assign the same area path to more than one team, this can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).
+> While you can assign the same area path to more than one team, doing so can cause problems if two teams claim ownership over the same set of work items. To learn more, see [About boards and Kanban, Limitations of multi-team Kanban board views](../../boards/boards/kanban-overview.md#limits-multi-team).
 
 ::: moniker-end
 
@@ -423,7 +423,7 @@ All work items assigned to the area paths selected for a team appear on the back
 The default area path determines the default area path assigned to work items that are created from the team context.  
 
 > [!IMPORTANT]  
-> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
+> Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
 
  
 #### [Browser](#tab/browser/)
