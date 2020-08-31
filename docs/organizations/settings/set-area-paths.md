@@ -224,7 +224,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
     Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
     > [!div class="mx-imgBorder"]  
-    > ![Add a new area path](media/areas/m-areas-add-area-path.png) 
+    > ![Add a new area path, 2017 and earlier versions](media/areas/m-areas-add-area-path.png) 
 
 ::: moniker-end
 
@@ -399,7 +399,7 @@ You define both areas and iterations from **Project Settings > Team configuratio
 3. If you need to switch the team context, use the team selector within the breadcrumbs.
 
     > [!div class="mx-imgBorder"]  
-    > ![Team Configuration, Team breadcrumb](media/team-defaults/select-team-context.png) 
+    > ![Team Configuration, Team breadcrumb, TFS 2019](media/team-defaults/select-team-context.png) 
 
 ::: moniker-end
 
@@ -461,21 +461,21 @@ The default area path determines the default area path assigned to work items th
    Here, we show the Areas for the Fabrikam Fiber team.  
 
    > [!div class="mx-imgBorder"]
-   > ![Area page for team](media/team-defaults/open-areas-fabrikam-team.png)
+   > ![Area page for team, on-premises versions](media/team-defaults/open-areas-fabrikam-team.png)
 
 2. Choose the area path(s) to be active for each team.  
 
     > [!div class="mx-imgBorder"]
-    > ![Work, Iterations page for team](media/team-defaults/stdefaults-add-area-paths.png)  
+    > ![Work, Iterations page for team, on-premises versions](media/team-defaults/stdefaults-add-area-paths.png)  
 
     In this instance, we choose to activate all three sub-area paths for the project. The management team can now track progress across all three teams.  
 
-    ![Multiple area paths assigned to team](media/team-defaults/stdefaults-set-team-area-paths-management-team-team-services-list.png)  
+    ![Multiple area paths assigned to team, on-premises versions](media/team-defaults/stdefaults-set-team-area-paths-management-team-team-services-list.png)  
 
 3. When you've finished, refresh the product backlog page for the team, and you'll see those work items assigned to the team. Add Area Path to the columns shown to see the assignments made to work items.  
 
    > [!div class="mx-imgBorder"]  
-   > ![Backlog view of default team](media/add-team/product-backlog-default-team-horz.png)  
+   > ![Backlog view of default team, on-premises versions](media/add-team/product-backlog-default-team-horz.png)  
 
 ::: moniker-end  
 
@@ -578,12 +578,12 @@ When you rename an area or an iteration, or move the node within the tree hierar
 1. To rename an area or iteration path, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the node, and then select **Edit**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Work>Project Configuration](media/areas/edit-area-rename.png)  
+    > ![Open Work>Project Configuration, TFS 2018 and earlier on-premises versions](media/areas/edit-area-rename.png)  
 
 2. In the dialog that opens, enter the new name.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Work>Project Configuration](media/areas/edit-area-rename-dialog.png)
+    > ![Open Work>Project Configuration, TFS 2018 and earlier on-premises versions](media/areas/edit-area-rename-dialog.png)
 
 3. To move the node within the hierarchy, change the Location field.
 
