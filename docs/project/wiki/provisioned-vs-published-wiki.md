@@ -13,8 +13,6 @@ monikerRange: '>= tfs-2018'
 ms.date: 07/23/2020  
 ---
 
-
-
 # Provisioned wikis vs. published code as a wiki
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
@@ -108,7 +106,7 @@ However, the revert process differs depending on the wiki page type.
 
 ## Versioning and unpublishing a wiki
 
-With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning and unpublishing content that you've previously published to a wiki, is supported only for wikis that you've created by publishing code to a wiki.
+With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning and unpublishing content, that you've previously published to a wiki, is supported only for wikis that you've created by publishing code to a wiki.
 
 To learn more, see [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md).
 
