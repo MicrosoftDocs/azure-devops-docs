@@ -761,29 +761,21 @@ runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum.
 ### I want to do something that is not supported by expressions. What options do I have for extending Pipelines functionality?
 
 You can customize your Pipeline with a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it with Bash. This script outputs two new variables, `$MAJOR_RUN` and `$MINOR_RUN`, for the major and minor run numbers.
-The two variables are then used to create two pipeline variables, `$MAJOR` and `$MINOR` with [task.setvariable](../scripts/logging-commands.md#task-commands). These variables are available to downstream steps. To share variables across pipelines see [Variable groups](../../pipelines/library/variable-groups.md).
+The two variables are then used to create two pipeline variables, `$major` and `$minor` with [task.setvariable](../scripts/logging-commands.md#task-commands). These variables are available to downstream steps. To share variables across pipelines see [Variable groups](../../pipelines/library/variable-groups.md).
 
 ```yaml
-trigger:
-    batch: true
-    branches:
-        include:
-        - master
 steps:
 - bash: |
     MAJOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f1)
     echo "This is the major run number: $MAJOR_RUN"
+    echo "##vso[task.setvariable variable=major]$MAJOR_RUN"
 
     MINOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f2)
     echo "This is the minor run number: $MINOR_RUN"
-
-    # create pipeline variables
-    echo "##vso[task.setvariable variable=major]$MAJOR_RUN"
     echo "##vso[task.setvariable variable=minor]$MINOR_RUN"
 
-- bash: |
-    echo My pipeline variable for major run is $MAJOR_RUN
-    echo My pipeline variable for minor run is $MINOR_RUN
+- bash: echo echo My pipeline variable for major run is $(major)
+- bash: echo echo My pipeline variable for minor run is $(minor)
 ```
 
 <!-- ENDSECTION -->
