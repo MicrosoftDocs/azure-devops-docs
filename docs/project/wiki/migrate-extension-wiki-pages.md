@@ -51,7 +51,7 @@ You must be a member of the Contributors group of your team project to migrate w
 
 6. Clone the Wiki extension repo. The Wiki is mapped to a folder given to you during the wiki creation. You can confirm by going to the "manage wiki" option in the existing wiki, as shown below.
 
-   Your existing wiki pages are saved under the folder labelled "Root".
+   Your existing wiki pages are saved under the folder labeled "Root".
 
    For example, you cloned the previously mentioned "sampleWiki" in the location "C:\wiki\sampleWiki". The wiki pages are saved in the path "C:\wiki\sampleWiki\ _extensionWiki"
 
