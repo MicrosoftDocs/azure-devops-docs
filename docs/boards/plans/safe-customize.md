@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 08/31/2020
 ---
 
 
@@ -115,9 +115,11 @@ You add a custom field to support tracking data requirements that aren't met wit
       Use to specify a picklist to support a taxonomy of value streams you want to associate with work. 
    :::column-end:::
 :::row-end:::
+
+<!---
 :::row:::
    :::column span="":::
-      WSFJ 
+      WSJF 
    :::column-end:::
    :::column span="":::
       Feature, Epic 
@@ -126,7 +128,8 @@ You add a custom field to support tracking data requirements that aren't met wit
       Use to add the [Weighted Shortest Job First](#wsjf) field calculated from the Effort, Business Value, Time Criticality. 
    :::column-end:::
 :::row-end:::
- 
+-->
+
 
 For details on adding a custom field, see [Add a custom field to a work item type](../../organizations/settings/work/add-custom-field.md). 
 
@@ -141,6 +144,8 @@ You can capture a value stream using a field or tags. Tags represent a more info
 
 
 <a id="wsjf" />
+
+<!---
 
 ### WSJF (Weighted Shortest Job First)
 
@@ -168,7 +173,7 @@ Four values are used to calculate WSJF:
 
 For details on adding and managing the extension, see the [WSJF extension overview](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension). 
 
-
+-->
 
 <!--- pros/cons of using picklists versus tags  --> 
 

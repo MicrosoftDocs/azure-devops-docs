@@ -331,6 +331,10 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       [**Tags, Value Area**](safe-concepts.md#tags). You can use tags or the Value Area field to track work associated with a specific budget or value stream. 
    :::column-end:::
 :::row-end:::
+
+
+<!---
+
 :::row:::
    :::column span="":::
       Weighted Shortest Job First (WSJF)
@@ -340,6 +344,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
    :::column-end:::
 :::row-end:::
 
+-->
 
 
 ## Azure Boards implementation of SAFe® 
