@@ -128,7 +128,7 @@ For members of the project collection administrators group, this same page can b
 
 ::: moniker range="<= tfs-2018"
 
-   <img alt="Usage page for collection administrators" src="./media/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Usage page for collection admins" src="./media/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 

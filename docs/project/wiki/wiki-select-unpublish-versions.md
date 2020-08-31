@@ -63,7 +63,7 @@ If you no longer want a repository to be published as a wiki, you can choose to 
 2. Confirm that you want to unpublish the wiki by choosing **Unpublish**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Select wiki version](media/wiki/unpublish-wiki.png)
+	> ![Select your wiki version](media/wiki/unpublish-wiki.png)
 
 ## Related articles
 
