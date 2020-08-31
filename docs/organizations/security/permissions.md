@@ -1,6 +1,7 @@
 ---
 title: What are all the default permissions and groups? 
 titleSuffix: Azure DevOps
+description: Reference guide of security groups, service accounts, and permissions for Azure DevOps
 ms.technology: devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
@@ -13,7 +14,7 @@ ms.date: 06/05/2020
 
 
 
-# Permissions, users, and groups in Azure DevOps
+# Permissions, service accounts, and groups in Azure DevOps
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
@@ -293,7 +294,7 @@ When you install Azure DevOps Server, the system creates default groups that hav
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![Project Settings>Work>Project Configuration](media/permissions/server-level-groups-azdo-2019-update1.png) 
+> ![Screenshot of Azure DevOps Security group dialog.](media/permissions/server-level-groups-azdo-2019-update1.png) 
 
 ::: moniker-end
 
@@ -533,14 +534,14 @@ Security Service Group
 > To enable the new user interface for the Organizations Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not.  
 
 > [!div class="mx-imgBorder"]  
-> ![Project collection groups](media/permissions/collection-admin-permissions-vsts-new.png)
+> ![Screenshot of Project collection groups, new user interface.](media/permissions/collection-admin-permissions-vsts-new.png)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Project collection groups](media/permissions/collection-admin-permissions-vsts.png)
+> ![Screenshot of Project collection groups, on-premises versions.](media/permissions/collection-admin-permissions-vsts.png)
 
 ::: moniker-end
 
@@ -801,7 +802,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 
 
 > [!div class="mx-imgBorder"]  
-> ![Project Settings>Work>Project Configuration](media/permissions/global-security-azdo-server-2019-update-1.png) 
+> ![Screenshot of Server-level permissions.](media/permissions/global-security-azdo-server-2019-update-1.png) 
 
 
 <table valign="top" width="100%">
@@ -912,13 +913,13 @@ You manage server-level permissions through the [Team Foundation Administration 
 
 ## Organization-level permissions
 
-You manage collection-level permissions through the [web portal admin context](../../project/navigation/go-to-service-page.md#collection-admin-context) or with the [az devops security group](add-manage-security-groups.md) commands. Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
+You manage organization-level permissions through the [web portal admin context](../../project/navigation/go-to-service-page.md#collection-admin-context) or with the [az devops security group](add-manage-security-groups.md) commands. Project Collection Administrators are granted all organization-level permissions. Other organization-level groups have select permission assignments.
 
 > [!NOTE]   
 > To enable the new user interface for the Organizations Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not.  
 
 > [!div class="mx-imgBorder"]  
-> ![Collection level permissions and groups](media/permissions/collection-level-permissions-new.png)   
+> ![Screenshot of Organization-level permissions and groups, Azure DevOps Services.](media/permissions/collection-level-permissions-new.png)   
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -1159,11 +1160,11 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
 :::row:::
    :::column span="2":::
       > [!div class="mx-imgBorder"]  
-      > ![Collection level permissions, on-premises, Inherited process model](media/permissions/collection-level-permissions-2020-inherited-process-model-1.png)
+      > ![Screenshot of Collection level permissions, on-premises, Inherited process model.](media/permissions/collection-level-permissions-2020-inherited-process-model-1.png)
    :::column-end:::
    :::column span="2":::
       > [!div class="mx-imgBorder"]  
-      > ![Collection level permissions, on-premises, On-premises XML process model](media/permissions/collection-level-permissions-2020-xml-on-premises-1.png)
+      > ![Screenshot of Collection level permissions, on-premises, On-premises XML process model.](media/permissions/collection-level-permissions-2020-xml-on-premises-1.png)
    :::column-end:::
 :::row-end:::
 ---
@@ -1467,12 +1468,12 @@ You manage project-level permissions through the [web portal admin context](set-
 #### [Preview page](#tab/preview-page) 
 
 > [!div class="mx-imgBorder"]
-> ![Project-level permissions dialog](media/permissions/project-permissions-contributors-s154.png)
+> ![Screenshot of Project-level permissions dialog, Azure DevOps Services preview page.](media/permissions/project-permissions-contributors-s154.png)
 
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]
-> ![Project-level permissions dialog](media/permissions/project-level-permissions.png)
+> ![Screenshot of Project-level permissions dialog, Azure DevOps Services current page.](media/permissions/project-level-permissions.png)
 
 * * *  
 
@@ -1790,7 +1791,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
 ::: moniker range="<= tfs-2018"
 
 > [!div class="mx-imgBorder"]
-> ![Project-level permissions dialog](media/permissions/project-level-permissions.png)
+> ![Screenshot of Project-level permissions dialog, TFS-2018 and earlier versions.](media/permissions/project-level-permissions.png)
 
 ::: moniker-end
 
@@ -2097,7 +2098,7 @@ Permissions for team and project dashboards can be set individually. The default
 ### Project dashboard permissions
 
 > [!div class="mx-imgBorder"]  
-> ![Project dashboard permissions dialog](../../report/dashboards/media/set-permissions/add-user-project-permissions.png)  
+> ![Screenshot of Project dashboard permissions dialog](../../report/dashboards/media/set-permissions/add-user-project-permissions.png)  
 
 By default, the creator of the project dashboard is the dashboard owner and granted all permissions for that dashboard. 
 
@@ -2119,7 +2120,7 @@ Permissions for team dashboards can be set individually. The default permissions
 ### Team dashboard default permissions
 
 > [!div class="mx-imgBorder"]  
-> ![Project dashboard permissions dialog](../../report/dashboards/media/set-permissions/project-setting-permissions.png) 
+> ![Screenshot of Team dashboard permissions dialog.](../../report/dashboards/media/set-permissions/project-setting-permissions.png) 
 
 By default, team administrators are granted all permissions for their team dashboards, including managing default and individual dashboard permissions. 
 
@@ -2143,7 +2144,7 @@ By default, team administrators are granted all permissions for their team dashb
 ::: moniker range=">= tfs-2017"
 
 > [!div class="mx-imgBorder"]  
-> ![Project dashboard permissions dialog](../../report/dashboards/media/set-permissions/team-analytics-dashboard-permissions.png) 
+> ![Screenshot of individual team dashboard permissions dialog.](../../report/dashboards/media/set-permissions/team-analytics-dashboard-permissions.png) 
 
 Team administrators can change the permissions for individual team dashboards by changing the following two permissions.  
 
@@ -2163,14 +2164,14 @@ You manage build permissions [for each build defined in the web portal](../../pi
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Build object-level permissions dialog](media/permissions/edit-build-pipeline-object-level-permissions-s163.png)
+> ![Screenshot of Build object-level permissions dialog.](media/permissions/edit-build-pipeline-object-level-permissions-s163.png)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Build object-level permissions dialog](media/permissions/build-permissions-vsts.png)
+> ![Screenshot of Build object-level permissions dialog, Azure DevOps Server 2019 and earlier on-premises versions.](media/permissions/build-permissions-vsts.png)
 
 ::: moniker-end
 

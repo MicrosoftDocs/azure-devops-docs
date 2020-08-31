@@ -216,7 +216,7 @@ Review with your team's what workflow states will most support their Agile pract
 
 With custom controls, you can add rich functionality to a work item form. A custom control is an extension that's been added to the [Marketplace Extensions for Azure DevOps](https://marketplace.visualstudio.com/).  
 
-One example of a custom control is the [WSJF control](#wsjf) described earlier in this article. You can add controls from the Marketplace or create your own. 
+You can add controls from the Marketplace or create your own. 
 
 
 - [WorkBoard OKRs](https://marketplace.visualstudio.com/items?itemName=wobo-okrs.workboard-ado-extension) Integrates WorkBoard helps organizations align, localize and measure Objectives and Key Results (OKRs) across the business. With this integration, teams can view and update their OKRs from within Azure DevOps. 
