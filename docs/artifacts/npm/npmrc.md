@@ -174,11 +174,13 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 1. Select **Build and Release**, and then choose **Builds**.
 
-   ![navigate to builds tab](../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![navigate to builds tab](../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
 1. Create a new pipeline.
 
-   ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
 
@@ -186,25 +188,30 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Package** category, select the **npm** task from the list, and then choose **Add**.
 
-   ![builds-tab-add-task-to-job](../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![builds-tab-add-task-to-job](../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
 
 1. Select the **npm install** task, then browse to and select your **Working folder with package.json**:
 
-   ![Add task to build pipeline](../media/build-definition/build-definition-npm-install.png)
+   > [!div class="mx-imgBorder"]
+   > ![Add task to build pipeline](../media/build-definition/build-definition-npm-install.png)
 
 1. Expand **Custom registries and authentication**, here you have a few options: 
 
    * Registries in my **_.npmrc_**
 
-     ![Add task to build pipeline](../media/build-definition/registries-in-my-npmrc.png)
+      > [!div class="mx-imgBorder"]
+      > ![Add task to build pipeline](../media/build-definition/registries-in-my-npmrc.png)
 
-     > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
+      > [!NOTE]
+      > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
 
    * Registry I select here
 
-     ![Add task to build pipeline](../media/build-definition/registry-i-select-here.png)
+      > [!div class="mx-imgBorder"]
+      > ![Add task to build pipeline](../media/build-definition/registry-i-select-here.png)
 
-     When you choose this option, the task will create a temporary **_.npmrc_** with credentials for the registry you've selected and it will override the project's **_.npmrc_**. This is useful when you want to publish to a specific feed. 
+      When you choose this option, the task will create a temporary **_.npmrc_** with credentials for the registry you've selected and it will override the project's **_.npmrc_**. This is useful when you want to publish to a specific feed. 
    
 1. Select **Save & queue**, and then select **Save**.
 
@@ -234,19 +241,19 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
    > [!div class="mx-imgBorder"] 
    > ![builds-tab-add-task-to-job](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
-   >
 
 1. Select the **npm Authenticate** task underneath **Phase 1**:
 
    > [!div class="mx-imgBorder"] 
    > ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-phase-newnav.png)
-   >
 
 1. Browse to and select your **.npmrc file to authenticate**:
 
-   ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-file.png)
+   > [!div class="mx-imgBorder"]
+   > ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-file.png)
 
-   > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
+   > [!NOTE]
+   > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
 
 1. After setting up your **npm Authenticate** task, you can add other build task(s) for your task runner like **Gulp**.
 
@@ -256,11 +263,13 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 1. Select **Build and Release**, and then choose **Builds**.
 
-   ![navigate to builds tab](../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![navigate to builds tab](../../pipelines/media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
 1. Create a new pipeline.
 
-   ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
 
@@ -268,17 +277,21 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Package** category, select the **npm Authenticate** task from the list, and then choose **Add**.
 
-   ![builds-tab-add-task-to-job](../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![builds-tab-add-task-to-job](../../pipelines/media/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
 
 1. Select the **npm Authenticate** task underneath **Phase 1**:
 
-    ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-phase.png)
+   > [!div class="mx-imgBorder"]
+   > ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-phase.png)
 
 1. Browse to and select your **.npmrc file to authenticate**:
 
-    ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-file.png)
+   > [!div class="mx-imgBorder"]
+   > ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-file.png)
 
-    > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
+   > [!NOTE]
+   > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
 
 1. After setting up your **npm Authenticate** task, you can add other build task(s) for your task runner like **Gulp**.
 
@@ -295,6 +308,7 @@ then it's likely that the npm modules folder is not in your path.
 
 To fix this issue, re-run Node.js setup and ensure the `Add to PATH` option and its child options are selected for installation.
 
-![Add to PATH install option in Node.js setup](./media/node-setup.png)
+> [!div class="mx-imgBorder"]
+> ![Add to PATH install option in Node.js setup](./media/node-setup.png)
 
 Alternatively, you can edit the PATH variable to add `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell).
