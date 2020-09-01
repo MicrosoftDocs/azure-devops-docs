@@ -52,7 +52,7 @@ Flaky test management supports system and custom detection.
    > [!Note]
    > Once a test is marked as flaky, the data is available for all pipelines for that branch aiding troubleshooting in every pipeline. 
 
-* Custom detection - You can integrate your own flaky detection mechanism with Azure Pipelines and utilize the reporting capability. <!---API details are available ![here]()-->
+* Custom detection - You can integrate your own flaky detection mechanism with Azure Pipelines and utilize the reporting capability. For that, you would need to update the test results metadata for flaky tests. API details are available [here](https://docs.microsoft.com/en-us/rest/api/azure/devops/testresults/result%20meta%20data/update)  
 
 ### Flaky test options
 
