@@ -47,7 +47,7 @@ Lets take a broad stroke view of these new sections below.
 
 
 <a name="testplanheader"></a>
-## 1. Test plan header
+## Test plan header
 
 ![test plan header page](media/new-test-plans-page/test-plan-header.png)
 
@@ -81,7 +81,7 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 
 
 <a name="testsuitestree"></a>
-## 2. Test suites tree
+## Test suites tree
 
 ![test suites tree page](media/new-test-plans-page/test-suites-tree.png)
 
@@ -118,7 +118,7 @@ It is now easier to reuse the suites you have created already and import them in
 
 
 <a name="definetab"></a>
-## 3. Define tab
+## Define tab
 
 ![define tab page](media/new-test-plans-page/define-tab-toolbar.png)
 
@@ -174,7 +174,7 @@ Traceability among test artifacts, requirements and bugs is a critical value pro
 
 
 <a name="executetab"></a>
-## 4. Execute tab
+## Execute tab
 
 
 ![execute tab page](media/new-test-plans-page/execute-tab-toolbar.png)

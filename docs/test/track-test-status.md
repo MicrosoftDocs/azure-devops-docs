@@ -38,7 +38,7 @@ The progress report consists of three sections:
 2. **Outcome trend**: This graph renders a daily snapshot to give you an execution and status trendline. It can show data for 14 days (default), 30 days, or a custom range of your choice. Data for today may or may not appear in this chart based on the time of the day you are looking at the report.
 3. **Details**: This section lets you drill down by each test plan and gives you summary of each test suite in it. The section also lets you navigate to a test plan or suite of choice by double clicking on it.
 
-![snippet](media/progress-report/snippet.png)
+![Progress report](media/progress-report/snippet.png)
 
 An example of a healthy outcome trend is as follows because as time is progressing, the number of not run tests are decreasing (i.e. tests are being executed) and the number of passed tests are on the rise.
 
