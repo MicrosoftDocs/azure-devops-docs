@@ -37,7 +37,7 @@ Upstream sources enable you to manage all of your product's dependencies in a si
 - **Simplicity:** your NuGet.config, .npmrc, or settings.xml contains exactly [one feed](#single-feed) (your feed).
 - **Determinism:** your feed resolves package requests in [order](#search-order), so rebuilding the same codebase at the same commit or changeset uses the same set of packages
 - **Provenance:** your feed knows the provenance of packages it saved via upstream sources, so you can verify that you're using the original package, not a custom, or malicious copy published to your feed
-- **Peace of mind:** packages used via upstream sources are guaranteed to be saved in the feed on first use; if the upstream source is disabled/removed, or the remote feed [goes down](#offline-upstream-sources) or deletes a package you depend on, you can continue to develop and build
+- **Peace of mind:** packages used via upstream sources are guaranteed to be saved in the feed on first use; if the upstream source is disabled/removed, or the remote feed [goes down](#offline-upstreams) or deletes a package you depend on, you can continue to develop and build
 
 ## Best practices: feed consumers
 
@@ -145,7 +145,7 @@ If there are any failing upstream sources, the Artifacts UI shows a warning mess
 > [!div class="mx-imgBorder"]
 > ![Upstream health](media/upstream-health.png)
 
-<a name="offline-upstream-sources"></a>
+<a name="offline-upstreams"></a>
 
 ## Offline upstream sources
 
