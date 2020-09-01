@@ -148,7 +148,7 @@ Symbols are deleted based on the pipeline they are associated with. See [how to 
 
 A: Deletion of artifacts doesn't register immediately. It can take up to 24 hours for the usage level to be updated. If you're blocked from uploading artifacts, you can temporarily increase your usage level to continue publishing artifacts. Then, reduce the level once the storage metrics are updated.
 
-The 'used' value on the Billing tab of your Organization Settings page is updated once per day, so when you delete artifacts, it may not reflect immediately. The Artifact Storage tab is updated more frequently, so you may see a small discrepency between the two.  
+The 'used' value on the Billing tab of your Organization Settings page is updated once per day, so when you delete artifacts, it may not reflect immediately. The Artifact Storage tab is updated more frequently, so you may see a small discrepancy between the two.  
 
 ### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 

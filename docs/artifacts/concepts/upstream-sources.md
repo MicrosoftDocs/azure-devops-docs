@@ -37,7 +37,7 @@ Upstream sources enable you to manage all of your product's dependencies in a si
 - **Simplicity:** your NuGet.config, .npmrc, or settings.xml contains exactly [one feed](#single-feed) (your feed).
 - **Determinism:** your feed resolves package requests in [order](#search-order), so rebuilding the same codebase at the same commit or changeset uses the same set of packages
 - **Provenance:** your feed knows the provenance of packages it saved via upstream sources, so you can verify that you're using the original package, not a custom, or malicious copy published to your feed
-- **Peace of mind:** packages used via upstream sources are guaranteed to be saved in the feed on first use; if the upstream source is disabled/removed, or the remote feed [goes down](#offline-upstreams) or deletes a package you depend on, you can continue to develop and build
+- **Peace of mind:** packages used via upstream sources are guaranteed to be saved in the feed on first use; if the upstream source is disabled/removed, or the remote feed [goes down](#offline-upstream-sources) or deletes a package you depend on, you can continue to develop and build
 
 ## Best practices: feed consumers
 
@@ -71,7 +71,7 @@ always-auth=true
 
 If you only use public upstream sources (for example, nuget.org or npmjs.com), the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
 
-If you use multiple Azure DevOps Services upstream sources, or a mixture of public and Azure DevOps Services upstream sources, the order of those upstreams is taken into account in step 3 of the [search order](#search-order). In that case, we recommend putting the public upstream sources first. This ensures that you look for OSS packages from the public repos before checking any Azure DevOps Services upstream sources, which could contain modified versions of public packages.
+If you use multiple Azure DevOps Services upstream sources, or a mixture of public and Azure DevOps Services upstream sources, their order is taken into account in step 3 of the [search order](#search-order). In that case, we recommend putting the public upstream sources first. This ensures that you look for OSS packages from the public repos before checking any Azure DevOps Services upstream sources, which could contain modified versions of public packages.
 
 In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository. If your organization does this, put the Azure DevOps Services upstream source that contains these modified OSS packages before the public upstream sources to ensure you use your organization's modified versions.
 
@@ -145,15 +145,15 @@ If there are any failing upstream sources, the Artifacts UI shows a warning mess
 > [!div class="mx-imgBorder"]
 > ![Upstream health](media/upstream-health.png)
 
-<a name="offline-upstreams"></a>
+<a name="offline-upstream-sources"></a>
 
-## Offline upstreams
+## Offline upstream sources
 
 Upstream sources protect you and your CI/CD infrastructure from outages in public sources. That protection works for both short and long outages.
 
 For outages lasting less than 12 hours, you can continue to use the feed as normal thanks to the [metadata cache](#upstream-metadata-cache).
 
-For outages lasting more than 12 hours, which are infrequent, you will experience issues listing and restoring packages, even if those packages have been installed into the feed. In these scenarios, you can delete either the offline upstream or all upstreams of the affected package type and continue developing and building as normal. If/when the upstream source returns, just re-add it.
+For outages lasting more than 12 hours, which are infrequent, you will experience issues listing and restoring packages, even if those packages have been installed into the feed. In these scenarios, you can delete either the offline upstream or all upstream sources of the affected package type and continue developing and building as normal. If/when the upstream source returns, just re-add it.
 
 ## Legacy upstream source information
 
