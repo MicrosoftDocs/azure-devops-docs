@@ -18,6 +18,8 @@ View the status of your planned testing using an out-of-the-box Progress Report 
 
 [!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
+:::moniker range=">= azure-devops-2020"
+
 ## Progress Report
 To track the progress of more than one test plan or test suite, use the Progress Report. It helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
 1. How much testing is complete?
@@ -61,6 +63,8 @@ When using this progress report it is good to know the following points:
 
 ### Provide feedback
 Reach us at devops_tools@microsoft.com to share your thoughts on the Progress Report. In the process, share screenshots as appropriate.
+
+:::moniker-end
 
 ## Charts
 
