@@ -7,11 +7,11 @@ ms.topic: reference
 ms.author: ravishan-msft
 author: ravishan-msft
 ms.date: 06/12/2020
-monikerRange: 'azure-devops'
+monikerRange: '>=azure-devops-2020'
 ---
 # New Test Plans page
 
-[!INCLUDE [version-header-devops-services](includes/version-header-devops-services.md)]
+[!INCLUDE [version-2020-rtm](includes/version-2020-rtm.md)]
 
 [!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
