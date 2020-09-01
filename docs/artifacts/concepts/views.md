@@ -20,7 +20,7 @@ Views enable you to share subsets of the NuGet, npm, Maven, Python and Universal
 
 Views and upstream sources are designed to work together to make it easy to produce and consume packages at enterprise scale. 
 
-In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's view visibility to people in your organization, or people in your Azure Active Directory (AAD) tenant, depending on your scenario.
+In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's view visibility to people in your organization, or people in your Azure Active Directory (Azure AD) tenant, depending on your scenario.
 
 <a name="local"></a>
 

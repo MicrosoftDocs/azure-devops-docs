@@ -9,7 +9,7 @@ monikerRange: '>= tfs-2017'
 
 # Configure upstream sources
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or Azure Active Directory (AAD) tenant). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and NuGet.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or Azure Active Directory (Azure AD) tenant). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
 For more in-depth information on the concepts and best practices regarding upstream sources, check out the [upstream sources concepts documentation](../concepts/upstream-sources.md).
 
@@ -46,7 +46,7 @@ Selecting this option now means your feed will be configured to find and use pac
 4. Select the feed you would like to configure as an upstream source, and the other fields will populate automatically. 
 5. Select the package types you want to use and click _Add_.
 
-## Add an Azure Artifacts feed in a different organization within your AAD tenant as an upstream source
+## Add an Azure Artifacts feed in a different organization within your Azure AD tenant as an upstream source
 
 > [!IMPORTANT]
 > The Universal Packages protocol currently only supports upstream sources in the same Azure DevOps organization.
