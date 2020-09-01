@@ -7,7 +7,7 @@ ms.custom: "continuous-test, seodec18"
 ms.reviewer: KathrynEE 
 ms.author: kaelli
 author: KathrynEE
-ms.date: 07/16/2019
+ms.date: 08/31/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -36,10 +36,12 @@ The goal of bringing flaky test management in-product is to reduce developer pai
 
 ## Enable flaky test management
 
-To configure flaky test management, choose **Project settings**, and select **Test Management** in the **Pipelines** section.
+To configure flaky test management, choose **Project settings**, and select **Test management** in the **Pipelines** section. 
+
+Slide the On/Off button to **On**. 
 
 > [!div class="mx-imgBorder"]
-> ![Flaky Setting](media/flaky-test-management/flaky_setting.png)
+> ![Screenshot of Test Management, Flaky test detection enabled, System detection.](media/flaky-test-management/system-detection.png)
 
 The default setting for all projects is to use flaky tests for troubleshooting. 
 
@@ -47,16 +49,19 @@ The default setting for all projects is to use flaky tests for troubleshooting.
 
 Flaky test management supports system and custom detection.
 
-* System detection - The in-product flaky detection uses test rerun data. The detection is via VSTest task rerunning of failed tests capability or retry of stage in the pipeline. You can select specific pipelines in the project for which you would like to detect flaky tests. 
+- **System detection**: The in-product flaky detection uses test rerun data. The detection is via **VSTest task** rerunning of failed tests capability or retry of stage in the pipeline. You can select specific pipelines in the project for which you would like to detect flaky tests. 
 
    > [!Note]
-   > Once a test is marked as flaky, the data is available for all pipelines for that branch aiding troubleshooting in every pipeline. 
+   > Once a test is marked as flaky, the data is available for all pipelines for that branch to assist with troubleshooting in every pipeline. 
 
-* Custom detection - You can integrate your own flaky detection mechanism with Azure Pipelines and utilize the reporting capability. For that, you would need to update the test results metadata for flaky tests. API details are available [here](https://docs.microsoft.com/rest/api/azure/devops/testresults/result%20meta%20data/update)  
+- **Custom detection**: You can integrate your own flaky detection mechanism with Azure Pipelines and use the reporting capability. With custom detection, you need to update the test results metadata for flaky tests. For details, see [Test REsults, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result%20meta%20data/update). 
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Test Management, Flaky test detection enabled, Custom detection.](media/flaky-test-management/custom-detection.png) 
 
 ### Flaky test options
 
-The settings in **Flaky test options** allow you to configure how flaky tests should be available in test reporting as well resolution capabilities, as described in the following sections. 
+The  **Flaky test options** specify how flaky tests are available in test reporting as well as resolution capabilities, as described in the following sections. 
 
 ## Flaky test management and reporting
 
@@ -68,17 +73,16 @@ Note: Test summary will be updated only for [Visual Studio Test task](../tasks/t
 > [!div class="mx-imgBorder"]
 > ![Flaky Reporting](media/flaky-test-management/flaky_reporting.png)
 
-## Resolution
 
-### Manual mark and unmark test as flaky
+## Tests marked as flaky
 
 You can mark or unmark a test as flaky based on analysis or context, by choosing **Flaky** (or **UnFlaky**, depending on whether the test is already marked as flaky.)
 
 > [!div class="mx-imgBorder"]
 > ![Mark flaky Test](media/flaky-test-management/mark-flaky-1.png)
 
-When a test is marked flaky or unflaky in a pipeline, no changes are made in the current pipeline. Only on future executions of that test will the changed flaky setting be evaluated. 
-Tests marked as flaky have the *Marked flaky* tag in the UI. 
+When a test is marked flaky or unflaky in a pipeline, no changes are made in the current pipeline. Only on future executions of that test is the changed flaky setting evaluated. 
+Tests marked as flaky have the *Marked flaky* tag in the user interface. 
 
 > [!div class="mx-imgBorder"]
 > ![Confirm flaky Test](media/flaky-test-management/markflaky.png)
