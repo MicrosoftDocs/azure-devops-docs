@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Set up your client's npmrc
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services | TFS 2018 | TFS 2017**
 
 Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server that makes it easy to discover, install, and publish different types of packages. Check out [Start using Azure Artifacts](../start-using-azure-artifacts.md) for more details.
 
