@@ -52,7 +52,7 @@ Flaky test management supports system and custom detection.
    > [!Note]
    > Once a test is marked as flaky, the data is available for all pipelines for that branch aiding troubleshooting in every pipeline. 
 
-* Custom detection - You can integrate your own flaky detection mechanism with Azure Pipelines and utilize the reporting capability. For that, you would need to update the test results metadata for flaky tests. API details are available [here](https://docs.microsoft.com/en-us/rest/api/azure/devops/testresults/result%20meta%20data/update)  
+* Custom detection - You can integrate your own flaky detection mechanism with Azure Pipelines and utilize the reporting capability. For that, you would need to update the test results metadata for flaky tests. API details are available [here](https://docs.microsoft.com/rest/api/azure/devops/testresults/result%20meta%20data/update)  
 
 ### Flaky test options
 
@@ -66,7 +66,7 @@ This setting is available in **Project settings** under *Flaky test options*.
 Note: Test summary will be updated only for [Visual Studio Test task](../tasks/test/vstest.md) and [Publish Test Results task](../tasks/test/publish-test-results.md?view=azure-devops&tabs=yaml). You might need to add a custom script to suppress flaky test failure for other scenarios. 
 
 > [!div class="mx-imgBorder"]
-> ![Flaky Setting](media/flaky-test-management/flaky_reporting.png)
+> ![Flaky Reporting](media/flaky-test-management/flaky_reporting.png)
 
 ## Resolution
 
@@ -75,13 +75,13 @@ Note: Test summary will be updated only for [Visual Studio Test task](../tasks/t
 You can mark or unmark a test as flaky based on analysis or context, by choosing **Flaky** (or **UnFlaky**, depending on whether the test is already marked as flaky.)
 
 > [!div class="mx-imgBorder"]
-> ![Mark flaky Bug](media/flaky-test-management/mark-flaky-1.png)
+> ![Mark flaky Test](media/flaky-test-management/mark-flaky-1.png)
 
 When a test is marked flaky or unflaky in a pipeline, no changes are made in the current pipeline. Only on future executions of that test will the changed flaky setting be evaluated. 
 Tests marked as flaky have the *Marked flaky* tag in the UI. 
 
 > [!div class="mx-imgBorder"]
-> ![Mark flaky Bug](media/flaky-test-management/markflaky.png)
+> ![Confirm flaky Test](media/flaky-test-management/markflaky.png)
 
 
 <!---### Integration with manual bug creation
