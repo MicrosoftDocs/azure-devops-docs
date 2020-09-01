@@ -3,7 +3,7 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 06/11/2020
+ms.date: 09/01/2020
 ---
 
 The **Connect to feed** dialog box generates an appropriately formatted token that you can place into your .npmrc file with a lifespan of 90 days.
@@ -22,12 +22,12 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 3. Select **Other** in the **Project setup** section.
 
    > [!div class="mx-imgBorder"] 
-   >![Connect to feed from Azure Artifacts Linux/Mac credentials](../../media/connect-to-feed-npm-creds-azure-devops-newnav.png)
+   > ![Connect to feed from Azure Artifacts Linux/Mac credentials](../../media/connect-to-feed-npm-creds-azure-devops-newnav.png)
 
 4. Add a .npmrc to your project, in the same directory as your package.json
 
     ```JSON
-    registry=https://pkgs.dev.azure.com/microsoftLearnModule/_packaging/microsoftLearnModule/npm/registry/
+    registry=https://pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/
     
     always-auth=true
     ```
@@ -39,12 +39,12 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 
         ```
         ; begin auth token
-        //pkgs.dev.azure.com/microsoftLearnModule/_packaging/microsoftLearnModule/npm/registry/:username=microsoftLearnModule
-        //pkgs.dev.azure.com/microsoftLearnModule/_packaging/microsoftLearnModule/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-        //pkgs.dev.azure.com/microsoftLearnModule/_packaging/microsoftLearnModule/npm/registry/:email=npm requires email to be set but doesn't use the value
-        //pkgs.dev.azure.com/microsoftLearnModule/_packaging/microsoftLearnModule/npm/:username=microsoftLearnModule
-        //pkgs.dev.azure.com/microsoftLearnModule/_packaging/microsoftLearnModule/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-        //pkgs.dev.azure.com/microsoftLearnModule/_packaging/microsoftLearnModule/npm/:email=npm requires email to be set but doesn't use the value
+        //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/:username=[ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/:email=npm requires email to be set but doesn't use the value
+        //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/:username=[ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+        //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+        //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/:email=npm requires email to be set but doesn't use the value
         ; end auth token
         ```
 
