@@ -4,7 +4,7 @@ description: Authenticating to feeds with npm in Azure DevOps Services
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 03/31/2020
+ms.date: 09/01/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -27,20 +27,21 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
       ::: moniker range=">= azure-devops-2019"
     
       > [!div class="mx-imgBorder"] 
-      >![Connect to feed button in Azure Artifacts](../media/connect-to-feed-azure-devops-newnav.png)
-      > 
+      > ![Connect to feed button in Azure Artifacts](../media/connect-to-feed-azure-devops-newnav.png)
 
       ::: moniker-end
 
       ::: moniker range="<= tfs-2018"
-
-      ![Connect to feed button in Azure Artifacts](../media/connect-to-feed.png)
+      
+      > [!div class="mx-imgBorder"] 
+      > ![Connect to feed button in Azure Artifacts](../media/connect-to-feed.png)
 
       ::: moniker-end
 
       ::: moniker range=">= tfs-2017 < azure-devops"
 
-      ![Connect to feed button in Azure Artifacts](../media/connect-to-feed.png)
+      > [!div class="mx-imgBorder"] 
+      > ![Connect to feed button in Azure Artifacts](../media/connect-to-feed.png)
 
       ::: moniker-end
 
@@ -56,19 +57,20 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
       > [!div class="mx-imgBorder"] 
       >![Connect to feed from Azure Artifacts](../media/npm-azure-devops-newnav.png)
-      > 
 
       ::: moniker-end
 
       ::: moniker range="<= tfs-2018"
 
-      ![Connect to feed from Azure Artifacts](../media/connect-to-feed-npm-registry.png)
+      > [!div class="mx-imgBorder"] 
+      > ![Connect to feed from Azure Artifacts](../media/connect-to-feed-npm-registry.png)
 
       ::: moniker-end
 
       ::: moniker range=">= tfs-2017 < azure-devops"
 
-      ![Connect to feed from Azure Artifacts](../media/connect-to-feed-npm-registry.png)
+      > [!div class="mx-imgBorder"] 
+      > ![Connect to feed from Azure Artifacts](../media/connect-to-feed-npm-registry.png)
 
       ::: moniker-end
         
@@ -120,13 +122,11 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
    > [!div class="mx-imgBorder"] 
    > ![navigate to builds tab](../../pipelines/media/get-started-designer/navigate-to-builds-tab-newnav-tfs-2018-2.png)
-   >
 
 1. Create a new pipeline.
 
    > [!div class="mx-imgBorder"] 
    > ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
-   >
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
 
@@ -136,27 +136,28 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
    > [!div class="mx-imgBorder"] 
    > ![builds-tab-add-task-to-job](../../pipelines/media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
-   >
 
 1. Select the **npm install** task, then browse to and select your **Working folder with package.json**:
 
    > [!div class="mx-imgBorder"] 
    > ![Add task to build pipeline](../media/build-definition/build-definition-npm-install-newnav.png)
-   >
 
 1. Expand **Custom registries and authentication**, here you have a few options: 
 
    * Registries in my **_.npmrc_**
+    
+      > [!div class="mx-imgBorder"] 
+      > ![Add task to build pipeline](../media/build-definition/registries-in-my-npmrc.png)
 
-     ![Add task to build pipeline](../media/build-definition/registries-in-my-npmrc.png)
-
-     > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
+      > [!NOTE]
+      > You can choose credentials to authenticate to services outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
 
    * Registry I select here
 
-     ![Add task to build pipeline](../media/build-definition/registry-i-select-here.png)
+      > [!div class="mx-imgBorder"] 
+      > ![Add task to build pipeline](../media/build-definition/registry-i-select-here.png)
 
-     When you choose this option, the task will create a temporary **_.npmrc_** with credentials for the registry you've selected and it will override the project's **_.npmrc_**. This is useful when you want to publish to a specific feed. 
+      When you choose this option, the task will create a temporary **_.npmrc_** with credentials for the registry you've selected and it will override the project's **_.npmrc_**. This is useful when you want to publish to a specific feed. 
    
 1. Select **Save & queue**, and then select **Save**.
 
