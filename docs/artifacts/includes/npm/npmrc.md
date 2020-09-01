@@ -62,11 +62,21 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
             ```
             node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
             ```
+            You can also use the following commands to convert your access token to Base64:
+            # [Windows](#tab/windows)
+            ```powershell
+            [Convert]::ToBase64String([system.Text.Encoding]::UTF8.GetBytes("YOUR_PAT_GOES_HERE"))
+            ```
+        
+            # [Mac](#tab/mac)
+            ```
+            echo -n "YOUR_PAT_GOES_HERE" | base64
+            ```
         2. Paste your personal access token value and press Enter/Return.
         3. Copy the Base64 encoded value.
 
     4. **Step 4**:  
-        Replace both `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` values in your user `.npmrc` file with your Base64 encoded _personal access token_ from Step 3.
+        Replace both `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` values in your user `.npmrc` file with your Base64 _encoded _personal access token_ from Step 3. You should also replace `yourOrganization` and `yourFeed`, and fill in your username, your PAT, and email.
 
 ::: moniker-end
 
@@ -90,15 +100,7 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 
 2. Base64 encode the PAT.
 
-    # [Windows](#tab/windows)
-    ```powershell
-    [Convert]::ToBase64String([system.Text.Encoding]::UTF8.GetBytes("YOUR_PAT_GOES_HERE"))
-    ```
 
-    # [Mac](#tab/mac)
-    ```
-    echo -n "YOUR_PAT_GOES_HERE" | base64
-    ```
 
 3. In your $home/.npmrc file, add the following lines. Replace `yourorganization` and `yourfeed`, and add your username (can be anything except empty), PAT, and email.
 
