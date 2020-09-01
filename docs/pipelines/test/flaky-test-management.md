@@ -54,7 +54,7 @@ Flaky test management supports system and custom detection.
    > [!Note]
    > Once a test is marked as flaky, the data is available for all pipelines for that branch to assist with troubleshooting in every pipeline. 
 
-- **Custom detection**: You can integrate your own flaky detection mechanism with Azure Pipelines and use the reporting capability. With custom detection, you need to update the test results metadata for flaky tests. For details, see [Test REsults, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result%20meta%20data/update). 
+- **Custom detection**: You can integrate your own flaky detection mechanism with Azure Pipelines and use the reporting capability. With custom detection, you need to update the test results metadata for flaky tests. For details, see [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result%20meta%20data/update). 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Test Management, Flaky test detection enabled, Custom detection.](media/flaky-test-management/custom-detection.png) 
@@ -65,14 +65,13 @@ The  **Flaky test options** specify how flaky tests are available in test report
 
 ## Flaky test management and reporting
 
-Flaky test data for both passed and failed test is available in [Test reporting](review-continuous-test-results-after-build.md). The **Flaky** tag helps you identify flaky tests.  
-By default, flaky tests are included in the Test Summary. However, if you want to ensure flaky test failures don't fail your pipeline, you can choose to not include them in your test summary and suppress the test failure. This will ensure flaky tests (both passed and failed) are removed from the pass percentage and shown in **Tests not reported**, as shown in the screenshot below. 
-This setting is available in **Project settings** under *Flaky test options*. 
-Note: Test summary will be updated only for [Visual Studio Test task](../tasks/test/vstest.md) and [Publish Test Results task](../tasks/test/publish-test-results.md?view=azure-devops&tabs=yaml). You might need to add a custom script to suppress flaky test failure for other scenarios. 
+On the Test management page under **Flaky test options**, you can set options for how flaky tests are included in the Test Summary report. Flaky test data for both passed and failed test is available in [Test results](review-continuous-test-results-after-build.md). The **Flaky** tag helps you identify flaky tests. By default, flaky tests are included in the Test Summary. However, if you want to ensure flaky test failures don't fail your pipeline, you can choose to not include them in your test summary and suppress the test failure. This option ensures flaky tests (both passed and failed) are removed from the pass percentage and shown in **Tests not reported**, as shown in the following screenshot. 
 
 > [!div class="mx-imgBorder"]
 > ![Flaky Reporting](media/flaky-test-management/flaky_reporting.png)
 
+> [!NOTE]
+> The Test summary report is updated only for [Visual Studio Test task](../tasks/test/vstest.md) and [Publish Test Results task](../tasks/test/publish-test-results.md?view=azure-devops&tabs=yaml). You may need to add a custom script to suppress flaky test failure for other scenarios. 
 
 ## Tests marked as flaky
 
@@ -95,4 +94,9 @@ You can create bugs to manage flaky test debt. If you create or add to bug for a
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
 
+## Related articles
 
+- [Review test results](review-continuous-test-results-after-build.md)
+- [Visual Studio Test task](../tasks/test/vstest.md)
+- [Publish Test Results task](../tasks/test/publish-test-results.md?view=azure-devops&tabs=yaml)
+- [Test Results, Result Meta Data - Update REST API](/rest/api/azure/devops/testresults/result%20meta%20data/update)
