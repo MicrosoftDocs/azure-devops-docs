@@ -9,22 +9,22 @@ ms.date: 09/01/2020
 The **Connect to feed** dialog box generates an appropriately formatted token that you can place into your .npmrc file with a lifespan of 90 days.
 
 > [!TIP]
-> If you want to create a token that lasts longer than 90 days, skip to the [second method](#tokenpast90).
+> If you want to create a token that lasts longer than 90 days, make sure you change the default expiration date.
 
-**90-day token:**
+**Project setup:**
 
 ::: moniker range=">= azure-devops-2019"
 
 1. From **Azure Artifacts**, select **Connect to feed**.
 
-2. Select **npm**.
+1. Select **npm**.
 
-3. Select **Other** in the **Project setup** section.
+1. Select **Other** in the **Project setup** section.
 
    > [!div class="mx-imgBorder"] 
    > ![Connect to feed from Azure Artifacts Linux/Mac credentials](../../media/connect-to-feed-npm-creds-azure-devops-newnav.png)
 
-4. Add a .npmrc to your project, in the same directory as your package.json
+1. Add a .npmrc to your project, in the same directory as your package.json
 
     ```JSON
     registry=https://pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/
@@ -32,7 +32,9 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
     always-auth=true
     ```
 
-5. Set up credentials by following these four steps:
+**Setup credentials:**
+
+1. Set up credentials by following these four steps:
 
     1. **Step 1**:  
         Copy the code below to your user `.npmrc` file.
