@@ -80,7 +80,7 @@ This enables you to share project's **_.npmrc_** with the whole team while keepi
 
 ## Set up authentication on your dev box
 
-You should have a project specific **_.npmrc_** containing only your feed's registry information that you discovered from the "Connect to Feed" dialog.  There should be no credentials in this file and the file itself is usually adjacent to your project's **_package.json_**.
+You should have a project specific **_.npmrc_** containing only your feed's registry information that you discovered from the "Connects to Feed" dialog.  There should be no credentials in this file and the file itself is adjacent to your project's **_package.json_**.
 
 > [!IMPORTANT]
 > There can only be a single "registry=" line in your **_.npmrc_**.  Multiple registries are possible with [upstream sources](../concepts/upstream-sources.md), or by using [scopes](..//npm/scopes.md) (not recommended).
@@ -101,7 +101,7 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 
 If you are developing on Linux or Mac, `vsts-npm-auth` is not supported and we recommend generating a token in the following manner for your **_$HOME/.npmrc_**
 
-[!INCLUDE [](../includes/npm/npmrc.md)]
+[!INCLUDE [npmrc.md](../includes/npm/npmrc.md)]
 
 `vsts-npm-auth` is not supported on TFS or Azure DevOps Server.
 
@@ -285,7 +285,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
    > [!div class="mx-imgBorder"]
    > ![phase one npm auth](../media/build-definition/build-definition-npm-auth-task-phase.png)
 
-1. Browse to and select your **.npmrc file to authenticate**:
+1. Browse to and select your **npmrc file to authenticate**:
 
    > [!div class="mx-imgBorder"]
    > ![npmrc file to authenticate](../media/build-definition/build-definition-npm-auth-task-file.png)
@@ -306,7 +306,7 @@ If you receive an error like:
 
 then it's likely that the npm modules folder is not in your path. 
 
-To fix this issue, re-run Node.js setup and ensure the `Add to PATH` option and its child options are selected for installation.
+To fix this issue, rerun Node.js setup and ensure the `Add to PATH` option and its child options are selected for installation.
 
 > [!div class="mx-imgBorder"]
 > ![Add to PATH install option in Node.js setup](./media/node-setup.png)
