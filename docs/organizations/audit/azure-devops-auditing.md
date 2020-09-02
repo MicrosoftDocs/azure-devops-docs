@@ -48,14 +48,14 @@ By default, Project Collection Administrators are the only group that have acces
 
 3. Select **Auditing**.
 
-   ![Auditing](media/azure-devops-auditing/AccessAuditLogRedBox-preview.png)
+   ![Auditing preview page](media/azure-devops-auditing/AccessAuditLogRedBox-preview.png)
    If you don't see Auditing in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
 4. Select **Permissions**, and then find the group or users to provide auditing access to.
 
    ![Select Permissions to provide audit access](media/azure-devops-auditing/select-permissions-preview.png)  
 
 5. Set **View audit log** to **allow**, and then select **Save changes**.
-   ![Auditing access permission](media/azure-devops-auditing/AuditLogPermissionRedBox-preview.png)
+   ![Auditing access permission preview](media/azure-devops-auditing/AuditLogPermissionRedBox-preview.png)
 
 The user or group members have access to view your organization audit events.
 
@@ -66,11 +66,11 @@ The user or group members have access to view your organization audit events.
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 3. Select **Auditing**.
 
-   ![Auditing](media/azure-devops-auditing/AccessAuditLogRedBox.png)
+   ![Auditing view current page](media/azure-devops-auditing/AccessAuditLogRedBox.png)
    If you don't see Auditing in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
 4. Select **Security**, and then find the group or users to provide auditing access to.
 5. Set **View audit log** to **allow**, and then select **Save changes**.
-   ![Auditing access permission](media/azure-devops-auditing/AuditLogPermissionRedBox.png)
+   ![Auditing access permission current view](media/azure-devops-auditing/AuditLogPermissionRedBox.png)
 
 The user or group members have access to view your organization audit events.
 
