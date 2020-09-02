@@ -102,9 +102,9 @@ For more information, see [Azure virtual machine scale set agents](scale-set-age
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
-
 ## Parallel jobs
+
+::: moniker range="azure-devops"
 
 You can use a parallel job in Azure Pipelines to run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure. 
 
@@ -113,8 +113,6 @@ Microsoft provides a free tier of service by default in every organization that 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < azure-devops"
-
-## Parallel jobs
 
 You might need more parallel jobs to use multiple agents at the same time:
 
