@@ -17,9 +17,9 @@ monikerRange: '>= tfs-2015'
 
 Build and deploy your apps. Find guidance based on your language and platform. 
 
-::: moniker range=">= azure-devops-2019"
-
 ## Build your app
+
+::: moniker range=">= azure-devops-2019"
 
 :::row:::
     :::column:::
@@ -97,69 +97,9 @@ Build and deploy your apps. Find guidance based on your language and platform.
     :::column-end:::
 :::row-end:::
 
-## Deploy your app
-
-:::row:::
-    :::column:::
-        :::image type="icon" source="./media/index/logo_kubernetes.png":::
-        [Kubernetes](./kubernetes/deploy.md)
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/index/azure-stack.png":::
-        [Azure Stack](../targets/azure-stack.md)
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/index/sqldatabase.png":::
-        [Azure SQL database](../targets/azure-sqldb.md)
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/index/app-service-web.png":::
-        [Azure Web Apps](../targets/webapp.md)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        :::image type="icon" source="./media/index/logo_linux-color.png":::
-        [Linux VM](../apps/cd/deploy-linuxvm-deploygroups.md)
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/index/logo_npm.png":::
-        [npm](../artifacts/npm.md)
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/index/logo_nuget.png":::
-        [NuGet](../artifacts/nuget.md)
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/index/virtualmachine.png":::
-        [Virtual Machine Manager](../targets/scvmm.md)
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        :::image type="icon" source="./media/index/virtualmachine.png":::
-        [VMware](../targets/vmware.md)
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/index/appservice.png":::
-        [Web App for Containers](../apps/cd/deploy-docker-webapp.md)
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/index/virtualmachine.png":::
-        [Windows VM](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
-    :::column-end:::
-    :::column:::   
-    :::column-end:::
-:::row-end:::
-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-
-
-## Build your app
 
 :::row:::
     :::column:::
@@ -235,7 +175,70 @@ Build and deploy your apps. Find guidance based on your language and platform.
     :::column-end:::
 :::row-end:::
 
-## Deploy your app</h2>
+::: moniker-end
+
+## Deploy your app
+
+::: moniker range=">= azure-devops-2019"
+
+:::row:::
+    :::column:::
+        :::image type="icon" source="./media/index/logo_kubernetes.png":::
+        [Kubernetes](./kubernetes/deploy.md)
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/index/azure-stack.png":::
+        [Azure Stack](../targets/azure-stack.md)
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/index/sqldatabase.png":::
+        [Azure SQL database](../targets/azure-sqldb.md)
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/index/app-service-web.png":::
+        [Azure Web Apps](../targets/webapp.md)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        :::image type="icon" source="./media/index/logo_linux-color.png":::
+        [Linux VM](../apps/cd/deploy-linuxvm-deploygroups.md)
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/index/logo_npm.png":::
+        [npm](../artifacts/npm.md)
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/index/logo_nuget.png":::
+        [NuGet](../artifacts/nuget.md)
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/index/virtualmachine.png":::
+        [Virtual Machine Manager](../targets/scvmm.md)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        :::image type="icon" source="./media/index/virtualmachine.png":::
+        [VMware](../targets/vmware.md)
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/index/appservice.png":::
+        [Web App for Containers](../apps/cd/deploy-docker-webapp.md)
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/index/virtualmachine.png":::
+        [Windows VM](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
+    :::column-end:::
+    :::column:::   
+    :::column-end:::
+:::row-end:::
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 :::row:::
     :::column:::
