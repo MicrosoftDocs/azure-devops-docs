@@ -658,7 +658,7 @@ to help you easily integrate your applications with
 Release Management. The SDK is available as a
 [NuGet package](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Release.Client/).
 Example usage for this SDK can be found
-[here](https://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx).
+[here](https://docs.microsoft.com/archive/blogs/chandananjani/using-releasehttpclient-for-interacting-with-releasemanagement-service).
 
 <a name="update-apr26-16"></a>
 ### Apr 26, 2016 Update (Azure Pipelines)
