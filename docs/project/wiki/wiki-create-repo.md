@@ -13,11 +13,11 @@ monikerRange: '>= tfs-2018'
 ms.date: 07/23/2020  
 ---
 
-# Quickstart: Create a Wiki for your project
+# Create a Wiki for your project
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
-In this quickstart, learn how to open a wiki and provision a Git repo for your wiki.
+Learn how to open a wiki and provision a Git repo for your wiki.
 
 Every team project can have a wiki. Use the wiki to share information with your team to understand and contribute to your project.
 

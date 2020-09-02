@@ -1,6 +1,6 @@
 ---
 title: Add & manage security groups
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 description: Add and manage security groups in an organization using the Azure DevOps CLI.  
 ms.technology: devops-security
 ms.assetid: 
@@ -9,7 +9,7 @@ ms.reviewer: geverghe
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 11/22/2019
+ms.date: 08/18/2020
 ---
 
 # Add and manage security groups

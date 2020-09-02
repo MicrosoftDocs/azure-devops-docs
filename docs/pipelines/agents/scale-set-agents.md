@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 08/12/2020
+ms.date: 08/28/2020
 monikerRange: azure-devops
 ---
 
@@ -81,9 +81,7 @@ In the following example, a new resource group and virtual machine scale set are
     --upgrade-policy-mode manual \
     --single-placement-group false \
     --platform-fault-domain-count 1 \
-    --load-balancer "" \
-    --ephemeral-os-disk true \
-    --os-disk-caching readonly
+    --load-balancer ""
     ```
 
     Because Azure Pipelines manages the scale set, the following settings are required:
@@ -101,6 +99,9 @@ In the following example, a new resource group and virtual machine scale set are
 
     * `--ephemeral-os-disk true`
     * `--os-disk-caching readonly`
+
+    > [!IMPORTANT]
+    > Ephemeral OS disks are not supported on all VM sizes. For list of supported VM sizes, see [Ephemeral OS disks for Azure VMs](/azure/virtual-machines/ephemeral-os-disks).
 
     Select any Linux or Windows image - either from Azure Marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines automatically installs the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image. For instructions on creating and using a custom image, see [FAQ](#faq).
     
@@ -127,7 +128,7 @@ In the following example, a new resource group and virtual machine scale set are
 
     * **Scaling - Manual scale**
 
-        :::image type="content" source="media/scale-set-agents/manual-scale.png" alt-text="Verify upgrade policy." :::
+        :::image type="content" source="media/scale-set-agents/manual-scale.png" alt-text="Verify manual scale policy." :::
 
 ## Create the scale set agent pool
 
@@ -406,6 +407,7 @@ The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete,
 * [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
 * [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
 * [How can I delete agents?](#how-can-i-delete-agents)
+* [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
@@ -419,3 +421,7 @@ Create a Scale Set with a Windows Server OS and when creating the Agent Pool sel
 
 Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Agents**.
 Click the 'Enabled' toggle button to disable the agent. The disabled agent will complete the pipeline it is currently running and will not pick up additional work. Within a few minutes after completing its current pipeline job, the agent will be deleted.
+
+### Can I configure the scale set agent pool to have zero agents on standby?
+
+Yes, if you set **Number of agents to keep on standby** to zero, for example to conserve cost for a low volume of jobs, Azure Pipelines starts a VM only when it has a job.

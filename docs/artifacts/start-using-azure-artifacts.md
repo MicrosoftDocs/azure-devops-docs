@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: chcomley
 author: chcomley
-ms.date: 07/27/2020
+ms.date: 08/31/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]  
 
 > [!NOTE]
-> If you are using a version of TFS, you will need to license Azure Artifacts instead of signing up. 
+> If you're using a version of TFS, you will need to license Azure Artifacts instead of signing up. 
 
 ::: moniker range="azure-devops"
 
@@ -65,11 +65,11 @@ Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2019"
 
 ## Billing and free monthly usage
 
-Azure Artifacts includes a free usage tier of 2 GB. Any usage below this level isn't billed to your subscription. Above this limit, we charge you for your actual usage. The usage limit allows you to control the maximum volume of storage that you're billed for. Once the maximum usage limit is reached, you can no longer upload artifacts. For more information on usage tiers, see the [Azure Artifacts pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
+Azure Artifacts includes a free usage tier of 2 GB. Any usage below this level isn't billed to your subscription. Above this limit, we charge you for your actual usage. The usage limit allows you to control the maximum volume of storage that you're billed for. Once the maximum usage limit is reached, you can no longer upload artifacts and will need to either reduce your artifact storage, or increase your usage limit. For more information on usage tiers, see the [Azure Artifacts pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 > [!NOTE]
 > Organizations created before May 6, 2019 will remain on the per-user billing model, and will be switched over to storage-based charging on October 5, 2020. This date is pushed back from the previously communicated May 9, 2020.  
@@ -92,14 +92,16 @@ To see your storage bill for Azure Artifacts:
 
    ![View storage for Azure Artifacts](media/azure-artifacts-view-storage-used.png)
    
-## View Used Storage 
+## View Artifact Storage 
 
-To navigate and understand your used Azure Artifacts storage: 
+To navigate and understand your Azure Artifacts storage: 
 
 1. In the same ![gear icon](../media/icons/gear-icon.png) **Organization settings** tab, select **Storage** under the Artifacts tab. 
 
 2. Review a breakdown of the different types of storage your organization is currently using. See the [FAQs](#faqs) below for information on what artifacts count towards your storage total. 
 
+> [!NOTE]
+> Based on community feedback, we are working on more granular drilldowns and views into your artifact storage. More information to come. 
 
 ## Pay for Artifacts
 
@@ -114,7 +116,7 @@ Each organization gets Azure Artifacts for free, up until they hit 2 GB of stora
    ![Increase artifacts beyond the free tier with the dropdown menu](media/increase-artifacts-beyond-free-tier.png)
 
 > [!NOTE]
-> If you have reached your storage limit and are blocked from making additional uploads, it can take up to 1 hour after increasing your limit for uploads to be re-enabled. 
+> If you have reached your storage limit, you will be blocked from making additional uploads. It can take up to 1 hour after increasing your limit for uploads to be re-enabled. 
 
 ## FAQs
 
@@ -128,7 +130,7 @@ You are not billed by Azure Artifacts for storage of Pipeline Artifacts, Build A
 
 ### Q: Why do I see 0 GB of storage, even though I'm storing artifacts?
 
-A: Currently, the billing page only shows integers of storage (0 GB, 1 GB, 2 GB, and so on). Even though you have stored artifacts, you most likely haven't reached 1 GB. 1 GB is currently our lowest granularity.
+A: 1 GB is currently our lowest granularity, so you most likely have not reached 1 GB yet. 
 
 ### Q: How can I control how long artifacts are stored?
 
@@ -136,12 +138,17 @@ A: Retention for stored packages can be set via the feed retention policy. See h
 
 Symbols retention is set via pipeline and/or build retention. See [retention policies](../pipelines/policies/retention.md) for more details. 
 
-### Q: How long does it take for deleted artifacts to affect the amount of used storage?
+### Q: How can I delete my artifacts? 
+
+A: To delete packages within your feeds, follow these instructions to [delete and recover packages in Azure Artifacts](how-to/delete-and-recover-packages.md). 
+
+Symbols are deleted based on the pipeline they are associated with. See [how to delete a pipeline run](../pipelines/policies/retention.md#delete-a-run) for more details. 
+
+### Q: How long does it take for deleted artifacts to affect the amount of billed storage?
 
 A: Deletion of artifacts doesn't register immediately. It can take up to 24 hours for the usage level to be updated. If you're blocked from uploading artifacts, you can temporarily increase your usage level to continue publishing artifacts. Then, reduce the level once the storage metrics are updated.
 
-Usage is updated once per day, so when you delete Artifacts, it may not reflect immediately.
-For more information, see [Delete and recover packages in Azure Artifacts](how-to/delete-and-recover-packages.md).
+The 'used' value on the Billing tab of your Organization Settings page is updated once per day, so when you delete artifacts, it may not reflect immediately. The Artifact Storage tab is updated more frequently, so you may see a small discrepancy between the two.  
 
 ### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
@@ -149,6 +156,8 @@ A: If you remove your Azure Subscription from your Azure DevOps organization, yo
 
 ### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
 
-A: Customers from before May 6, 2019 aren't charged for Artifacts storage until July 6, 2020. You can opt in to the new storage model by setting a paid limit above the amount of storage you're currently using. Then, starting on October 5, 2020, you're charged under the new storage model.
+A: Customers from before May 6, 2019 aren't charged for Artifacts storage until October 5, 2020. You can opt in to the new storage model by setting a paid limit above the amount of storage you're currently using. If opted in, your Azure bill will include the storage cost calculated from October 5 onward. 
+
+
 
 ::: moniker-end
