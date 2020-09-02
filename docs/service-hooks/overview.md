@@ -50,11 +50,11 @@ look at the information on the service that you're interested in.
 
 1.	Open the admin page for a project in web access.
     
-    <img alt="Open the admin page" src="./media/devops-service-hooks.png" />
+    <img alt="Screenshot of highlighted Project settings button." src="./media/devops-service-hooks.png" />
 
 2. 	Create a subscription by running the wizard.
 
-    ![Click the link to run the subscription wizard](./media/devops-create-subscription.png)
+    ![Screenshot of highlighted button, Create subscription.](./media/devops-create-subscription.png)
  
 3.	Select the service you want to integrate with.
 
@@ -83,11 +83,11 @@ look at the information on the service that you're interested in.
 
 1.	Open the admin page for a project in web access.
 
-    :::image type="content" source="./media/openadmin.png" alt-text="Open the admin page"::: 
+    :::image type="content" source="./media/openadmin.png" alt-text="Screenshot of the admin page."::: 
 
 2. 	Create a subscription by running the wizard.
 
-    :::image type="content" source="./media/createfirst.png" alt-text="Click the link to run the subscription wizard"::: 
+    :::image type="content" source="./media/createfirst.png" alt-text="Screenshot of highlighted box, Create subscription, to select to run the subscription wizard."::: 
  
 3.	Select the service you want to integrate with.
 

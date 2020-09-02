@@ -97,7 +97,7 @@ https://dev.azure.com/{organization}/{project}/_settings/notifications
 ```
 
 > [!div class="mx-imgBorder"]  
-> ![Navigate to team notifications page](media/nav-team-notifications-hub-newnav.png)  
+> ![Screenshot of team notifications page](media/nav-team-notifications-hub-newnav.png)  
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ https://dev.azure.com/{organization}/{project}/_admin/_notifications
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Navigate to team notifications page](media/nav-team-notifications-hub.png)
+> ![Screenshot of the team notifications page](media/nav-team-notifications-hub.png)
 
 > [!div class="mx-imgBorder"] 
 > ![View team level notifications page](media/view-team-notification-hub.png)
