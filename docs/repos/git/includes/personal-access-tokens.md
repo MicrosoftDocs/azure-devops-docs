@@ -69,11 +69,11 @@ ms.topic: include
 
 ::: moniker range=">= tfs-2017 < azure-devops"
 
-1. Sign in to your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
+1. Sign in to your web portal (```https://{server}:8080/tfs/```).
 
 2. From your home page, open your profile. Go to your security details.
 
-   ![TFS home page, open your profile, go to Security](~/repos/git/media/my-profile-team-services.png)
+   ![Home page, open your profile, go to Security](~/repos/git/media/my-profile-team-services.png)
 
 3. Create a personal access token.
 
@@ -89,7 +89,7 @@ ms.topic: include
 5. Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes)
    for this token to authorize for *your specific tasks*.
 
-   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to TFS, 
+   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate, 
    limit your token's scope to **Agent Pools (read, manage)**. 
 
 6. When you're done, make sure to *copy the token*. For your security, it won't be shown again. Use this token as your password. Select **Close**.
