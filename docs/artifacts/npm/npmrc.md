@@ -126,7 +126,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 1. Create a new pipeline.
 
    > [!div class="mx-imgBorder"] 
-   > ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
+   > ![create new build pipeline](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
 
@@ -180,7 +180,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 1. Create a new pipeline.
 
    > [!div class="mx-imgBorder"]
-   > ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+   > ![create new pipeline](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
 
@@ -231,7 +231,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 1. Create a new pipeline.
 
    > [!div class="mx-imgBorder"] 
-   > ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
+   > ![new build pipeline](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
 
@@ -269,7 +269,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 1. Create a new pipeline.
 
    > [!div class="mx-imgBorder"]
-   > ![builds-tab-mine-new-button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+   > ![new build pipeline button](../../pipelines/media/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_.
 
