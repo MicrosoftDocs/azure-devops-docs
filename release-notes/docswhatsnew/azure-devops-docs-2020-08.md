@@ -142,7 +142,6 @@ Thank you for your feedback on our documentation. This month we made updates to 
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [openpublishbuild](https://github.com/openpublishbuild) - Open Publishing Build Robots (16)
 - [JohyPark](https://github.com/JohyPark) - Joohyung Park (2)
 - [Anduin2017](https://github.com/Anduin2017) - Anduin Xue (1)
 - [artbegolli](https://github.com/artbegolli) - Art Begolli (1)
