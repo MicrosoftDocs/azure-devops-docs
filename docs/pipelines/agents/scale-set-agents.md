@@ -96,11 +96,10 @@ In the following example, a new resource group and virtual machine scale set are
     * `--load-balancer ""`
     * `--instance-count 2` - this setting is not required, but it will give you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines will delete these two VMs and create new ones.
 
-
     > [!IMPORTANT]
     >  If you run this script using Azure CLI on Windows, you must enclose the `""` in `--load-balancer ""` with single quotes like this: `--load-balancer '""'`
 
-    The following parameters to enable [Ephemeral OS disks](/azure/virtual-machines/ephemeral-os-disks) are optional but recommended to improve virtual machine reimage times.
+    If your VM size supports [Ephemeral OS disks](/azure/virtual-machines/ephemeral-os-disks), the following parameters to enable Ephemeral OS disks are optional but recommended to improve virtual machine reimage times.
 
     * `--ephemeral-os-disk true`
     * `--os-disk-caching readonly`
