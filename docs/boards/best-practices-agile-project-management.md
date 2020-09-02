@@ -19,7 +19,7 @@ ms.date: 08/24/2020
 Azure Boards provides a choice of Agile planning tools, many of which work in combination with each other. This article provides a get-started guide for project managers new to Azure Boards. If you and your teams want to take a minimal tracking approach to plan and manage your projects, start with this guide. 
 
 > [!NOTE]
-> If your team is committed to practicing Kamban or Scrum methods, see instead [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](https://docs.microsoft.com/azure/devops/boards/sprints/scrum-overview). 
+> If your team is committed to practicing Kamban or Scrum methods, see instead [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](/sprints/scrum-overview). 
 
 In this article, we make the following suggestions and guidance: 
 
