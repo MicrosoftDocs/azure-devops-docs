@@ -82,7 +82,7 @@ The *free tier* is one parallel job. You also get one free parallel job for each
 
 3. Select **Parallel jobs** under Pipelines, and then select either **Purchase parallel jobs** or **Change** for Microsoft-hosted jobs or **Change** for self-hosted jobs.
 
-   :::image type="content" source="media/shared/manage-parallel-jobs.png" alt-text="manage parllel jobs image":::
+   :::image type="content" source="media/shared/manage-parallel-jobs.png" alt-text="image of manage parallel jobs":::
 
 4. Enter a lesser or greater quantity of Microsoft-hosted or self-hosted jobs, and then select **Save**.
 
