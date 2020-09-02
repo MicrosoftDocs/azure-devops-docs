@@ -47,7 +47,7 @@ In the following example, a new resource group and virtual machine scale set are
 > [!NOTE]
 > In this example, the UbuntuLTS VM image is used for the scale set. If you require
 > a customized VM image as the basis for your agent, create the customized image
-> before creating the scale set by following the steps in [Create a scale set with custom image, software, or disk size](#create-a-scale-set-with-custom-image-software-or-disk-size).
+> before creating the scale set, by following the steps in [Create a scale set with custom image, software, or disk size](#create-a-scale-set-with-custom-image-software-or-disk-size).
 
 1. Browse to [Azure Cloud Shell](https://shell.azure.com/) at `https://shell.azure.com/`.
 
