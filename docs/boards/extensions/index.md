@@ -80,7 +80,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 - [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
-- [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
+
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) 
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)
 - [Split!](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-extension-split-work)
-- [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
+ 
 
 ::: moniker-end
 
