@@ -47,7 +47,7 @@ For more information, see [Install an extension](../../marketplace/install-exten
 2. Enter a search string in the textbox, and then select _Enter_ (or choose the 
    ![start search icon](media/shared/start-search-icon-new.png) icon). 
 
-   :::image type="content" source="media/code-search-get-started/title-bar-search-box-empty-new.png" alt-text="Enter your search string and then begin your search":::
+   :::image type="content" source="media/code-search-get-started/title-bar-search-box-empty-new.png" alt-text="Enter your search string and begin your search":::
 
 ::: moniker-end
 
