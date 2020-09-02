@@ -8,6 +8,8 @@ ms.date: 09/01/2020
 
 The **Connect to feed** dialog box generates an appropriately formatted token that you can place into your .npmrc file with a lifespan of 90 days.
 
+<a id="tokenpast90"></a>
+
 > [!TIP]
 > If you want to create a token that lasts longer than 90 days, make sure you change the default expiration date.
 
@@ -34,49 +36,51 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 
 **Setup credentials:**
 
-1. Set up credentials by following these four steps:
+Set up credentials by following these four steps:
 
-    1. **Step 1**:  
-        Copy the code below to your user `.npmrc` file.
+1. **Step 1**:  
+    Copy the code below to your user `.npmrc` file.
 
-        ```
-        ; begin auth token
-        //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/:username=[ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
-        //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-        //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/:email=npm requires email to be set but doesn't use the value
-        //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/:username=[ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
-        //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-        //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/:email=npm requires email to be set but doesn't use the value
-        ; end auth token
-        ```
+    ```
+    ; begin auth token
+    //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/:username=[ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+    //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+    //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/registry/:email=npm requires email to be set but doesn't use the value
+    //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/:username=[ANY_VALUE_BUT_NOT_AN_EMPTY_STRING]
+    //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+    //pkgs.dev.azure.com/<yourOrganization>/_packaging/<yourFeed>/npm/:email=npm requires email to be set but doesn't use the value
+    ; end auth token
+    ```
 
-    2. **Step 2**:  
-        Generate a [personal access token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) with Packaging read & write scopes.
+2. **Step 2**:  
+    Generate a [personal access token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) with Packaging read & write scopes.
 
-    3. **Step 3**:  
-        Base64 encode the personal access token from Step 2.
+3. **Step 3**:  
+    Base64 encode the personal access token from Step 2. Follow the steps below to safely encode your PAT:
 
-        One safe and secure method of Base64 encoding a string is to:
-
-        1. From a command/shell prompt run the following:
-            ```
-            node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
-            ```
-            You can also use the following commands to convert your access token to Base64:
-            # [Windows](#tab/windows)
-            ```powershell
-            [Convert]::ToBase64String([system.Text.Encoding]::UTF8.GetBytes("YOUR_PAT_GOES_HERE"))
-            ```
+    1. From a command/shell prompt run the following:
         
-            # [Mac](#tab/mac)
-            ```
-            echo -n "YOUR_PAT_GOES_HERE" | base64
-            ```
-        2. Paste your personal access token value and press Enter/Return.
-        3. Copy the Base64 encoded value.
+        ```
+        node -e "require('readline') .createInterface({input:process.stdin,output:process.stdout,historySize:0}) .question('PAT> ',p => { b64=Buffer.from(p.trim()).toString('base64');console.log(b64);process.exit(); })"
+        ```
 
-    4. **Step 4**:  
-        Replace both `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` values in your user `.npmrc` file with your Base64 _encoded _personal access token_ from Step 3. You should also replace `yourOrganization` and `yourFeed`, and fill in your username, your PAT, and email.
+        Other options to convert your personal access token to Base64:
+
+        # [Windows](#tab/windows)
+        ```powershell
+        [Convert]::ToBase64String([system.Text.Encoding]::UTF8.GetBytes("YOUR_PAT_GOES_HERE"))
+        ```
+    
+        # [Mac](#tab/mac)
+        ```
+        echo -n "YOUR_PAT_GOES_HERE" | base64
+        ```
+
+    2. Paste your personal access token value and press Enter/Return.
+    3. Copy the Base64 encoded value.
+
+4. **Step 4**:  
+    Replace both `[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]` values in your user `.npmrc` file with your Base64 _encoded _personal access token_ from Step 3. You should also replace `yourOrganization` and `yourFeed`, and fill in your username, your PAT, and email.
 
 ::: moniker-end
 
@@ -91,26 +95,3 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
     >![Connect to npm feed TFS2018](../../media/tfs2018-connect-to-npm-feed.png)
 
 ::: moniker-end
-
-<a id="tokenpast90"></a>
-
-**Create a token that lasts longer than 90 days:**
-
-1. Browse to security and generate a [PAT](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with a narrow scope of "Packaging (read and write)."
-
-2. Base64 encode the PAT.
-
-
-
-3. In your $home/.npmrc file, add the following lines. Replace `yourorganization` and `yourfeed`, and add your username (can be anything except empty), PAT, and email.
-
-    ```ini
-    ; begin auth token
-    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:username=[ANY_VALUE_BUT_NOT_EMPTY_STRING]
-    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:email=[NPM REQUIRES EMAIL TO BE SET BUT DOES NOT USE THE VALUE]
-    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/:username=[ANY_VALUE_BUT_NOT_EMPTY_STRING]
-    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
-    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/:email=[NPM REQUIRES EMAIL TO BE SET BUT DOES NOT USE THE VALUE]
-    ; end auth token
-    ```
