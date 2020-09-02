@@ -28,7 +28,10 @@ Audit events can be the following occurrences:
 - accessing the auditing feature
 - and much more
 
-Auditing is turned on by default for all Azure DevOps organizations. You can't turn auditing off, which ensures that you never miss an actionable event. Events get stored for 90 days and then they’re deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
+Auditing is turned on by default for all Azure DevOps Services organizations. You can't turn auditing off, which ensures that you never miss an actionable event. Events get stored for 90 days and then they’re deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
+
+> [!NOTE]
+> Azure DevOps Server doesn't support Auditing yet, as it's still in Public Preview.
 
 ## Prerequisites
 
