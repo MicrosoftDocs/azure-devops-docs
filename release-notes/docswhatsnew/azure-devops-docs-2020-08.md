@@ -12,55 +12,52 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 
 ### New articles
 
-- [Best practices for light-weight Agile project management](/azure/devops/boards/best-practices-agile-project-management) - Best practices, Agile management - New article
+- [Best practices for light-weight Agile project management](/azure/devops/boards/best-practices-agile-project-management)
 
 ### Updated articles
 
-- [Fix display, reordering, and nesting issues](/azure/devops/boards/backlogs/resolve-backlog-reorder-issues) - Users/kaelli/cont perf fix backlog
-- [Query by assignment or workflow changes](/azure/devops/boards/queries/query-by-workflow-changes) - Activate and Resolved field updates
+- [Fix display, reordering, and nesting issues](/azure/devops/boards/backlogs/resolve-backlog-reorder-issues)
+- [Query by assignment or workflow changes](/azure/devops/boards/queries/query-by-workflow-changes)
 
 ## CLI
 
 ### New articles
 
-- [Security tokens for permissions management](/azure/devops/cli/security-tokens) - cli updates
-- [Azure DevOps CLI service endpoint](/azure/devops/cli/service-endpoint) - cli updates
+- [Security tokens for permissions management](/azure/devops/cli/security-tokens)
+- [Azure DevOps CLI service endpoint](/azure/devops/cli/service-endpoint)
 
 ## Extend
 
 ### Updated articles
 
-- [Add a build or release task](/azure/devops/extend/develop/add-build-task) - Edit pass: Add build task
-- [Service endpoint authentication schemes](/azure/devops/extend/develop/auth-schemes) - Confirm merge from repo_sync_working_branch to master to sync with https://github.com/MicrosoftDocs/azure-devops-docs (branch master)
+- [Add a build or release task](/azure/devops/extend/develop/add-build-task) - Add build task
+- [Service endpoint authentication schemes](/azure/devops/extend/develop/auth-schemes)
 
 ## Organizations
 
 ### Updated articles
 
-- [Add users and manage access in Azure DevOps](/azure/devops/organizations/accounts/add-organization-users) - Users/chcomley/cli content updates for organizations subfolders and wiki 08 18 2020
-- [About permissions and groups](/azure/devops/organizations/security/about-permissions) - updated table
+- [Add users and manage access in Azure DevOps](/azure/devops/organizations/accounts/add-organization-users)
+- [About permissions and groups](/azure/devops/organizations/security/about-permissions) - Updated table
 - [Permissions, users, and groups in Azure DevOps](/azure/devops/organizations/security/permissions)
-  - Fix build suggestions
-  - Update permission table for collection for on-prem monikers
-- [Customize your backlogs or boards (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-backlogs-boards) - re-adding content on oob wits
+- [Customize your backlogs or boards (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-backlogs-boards)
 
 ## Pipelines
 
 ### New articles
 
 - [Deploy from multiple branches using Azure Pipelines](/azure/devops/pipelines/release/deploy-multiple-branches) - Multiple branches deployment
-- [Collect screenshots](/azure/devops/pipelines/test/collect-screenshots-and-video) - Deleting orphaned live topic pt1
 
 ### Updated articles
 
-- [Azure virtual machine scale set agents](/azure/devops/pipelines/agents/scale-set-agents) - Update BYOS docs
-- [Canary deployment strategy for Kubernetes deployments](/azure/devops/pipelines/ecosystems/kubernetes/canary-demo) - Canary update - added full YAML
+- [Azure virtual machine scale set agents](/azure/devops/pipelines/agents/scale-set-agents)
+- [Canary deployment strategy for Kubernetes deployments](/azure/devops/pipelines/ecosystems/kubernetes/canary-demo) - Canary update
 - [Restore NuGet packages in Azure Pipelines](/azure/devops/pipelines/packages/nuget-restore) - Restore NuGet packages
 - [Set retention policies for builds, tests, and releases](/azure/devops/pipelines/policies/retention) - Retention policies update
-- [Expressions](/azure/devops/pipelines/process/expressions) - fix dependencies/stageDependencies
+- [Expressions](/azure/devops/pipelines/process/expressions) - Update dependencies/stageDependencies
 - [Release pipelines](/azure/devops/pipelines/release/index) - Release Pipelines
 - [Check out multiple repositories in your pipeline](/azure/devops/pipelines/repos/multi-repo-checkout) - Multi-repo checkout content performance improvements
-- [Install SSH Key task](/azure/devops/pipelines/tasks/utility/install-ssh-key) - [PUBLIC_MOVE] commit from public 7984
+- [Install SSH Key task](/azure/devops/pipelines/tasks/utility/install-ssh-key)
 
 ## Report
 
@@ -76,20 +73,20 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 
 ### Updated articles
 
-- [What is the Analytics service?](/azure/devops/report/powerbi/what-is-analytics) - Update What is Analytics Service
+- [What is the Analytics service?](/azure/devops/report/powerbi/what-is-analytics)
 
 ## Repos
 
 ### Updated articles
 
-- [Improve code quality with branch policies](/azure/devops/repos/git/branch-policies) - Branch policies update for Service and 2020
-- [Use SSH key authentication](/azure/devops/repos/git/use-ssh-keys-to-authenticate) - clean up ssh config a bit
+- [Improve code quality with branch policies](/azure/devops/repos/git/branch-policies)
+- [Use SSH key authentication](/azure/devops/repos/git/use-ssh-keys-to-authenticate)
 
 ## User guide
 
 ### Updated articles
 
-- [What are the features in Azure DevOps?](/azure/devops/user-guide/alm-devops-features) - Replace HTML table with Markdown column extension
+- [What are the features in Azure DevOps?](/azure/devops/user-guide/alm-devops-features) - Replac
 
 ## GitHub issue content updates
 
