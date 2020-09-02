@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 12/06/2019
+ms.date: 08/20/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -54,13 +54,16 @@ to add tasks to Azure Pipelines or TFS.
 ::: moniker range=">= azure-devops-2019"
 
 In YAML pipelines, you refer to tasks by name. If a name matches both an in-box task
-and a custom task, the in-box task will take precedence. You can use a fully-qualified
+and a custom task, the in-box task will take precedence. You can use the task GUID or a fully-qualified
 name for the custom task to avoid this risk:
 
 ```yaml
 steps:
-- task: myPublisherId.myExtensionId.myContributionId.myTaskName@1
+- task: myPublisherId.myExtensionId.myContributionId.myTaskName@1 #format example
+- task: qetza.replacetokens.replacetokens-task.replacetokens@3 #working example
 ```
+
+To find `myPublisherId` and `myExtensionId`, select **Get** on a task in the marketplace. The values after the `itemName` in your URL string are `myPublisherId` and `myExtensionId`. You can also find the fully-qualified name by adding the task to a [Release pipeline](../release/releases.md) and selecting **View YAML** when editing the task. 
 
 ::: moniker-end
 

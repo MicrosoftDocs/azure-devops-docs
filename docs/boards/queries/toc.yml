@@ -65,7 +65,7 @@
     href: ../../report/dashboards/charts.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Query fields, operators & macros
     href: query-operators-variables.md
-  - name: WIQL syntax
+  - name: Work Item Query Language (WIQL) syntax
     href: wiql-syntax.md
 
 
