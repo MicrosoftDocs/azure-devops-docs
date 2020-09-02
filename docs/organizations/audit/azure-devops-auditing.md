@@ -7,18 +7,18 @@ ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: roferg
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2020'
-ms.date: 05/11/2020
+monikerRange: 'azure-devops'
+ms.date: 09/02/2020
 ---
 
 # Access, export, and filter audit logs
 
-[!INCLUDE [version-cloud-plus-2020](../../includes/version-cloud-plus-2020.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 > [!Note]
 > Auditing is currently in a Public Preview.
 
-In this article, learn how to access, export, and filter audit logs. Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. 
+You can access, export, and filter audit logs. Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. 
 
 Audit events can be the following occurrences:
 
