@@ -58,8 +58,8 @@ For a description of each group and each permission, see [Permissions and groups
   ::: moniker range="< azure-devops"  
 * You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../projects/create-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
   ::: moniker-end  
-* To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the project, you are automatically added as a member of this group. 
-* To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow. If you created the organization or collection, you are automatically added as a member of this group. 
+* To manage permissions or groups at the project level, you must be a member of the Project Administrators Group. If you created the project, you are automatically added as a member of this group. 
+* To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group. If you created the organization or collection, you are automatically added as a member of this group. 
 
 <a id="project-level" />
 
