@@ -151,10 +151,10 @@ Note: These are tags set on the CI pipeline. These tags are different from the t
 ### Default branch for triggers
 Triggers for resources are created based on the default branch configuration of your YAML, which is master. However, if you want to configure resource triggers from a different branch, you need to change the default branch for the pipeline. 
 1. Go to the edit view of the pipeline and click on the overflow menu on the top-right corner and choose **Triggers**.
-![Commits in pipeline run](media/triggers-view.png)
+![Triggers view in a pipeline](media/triggers-view.png)
 1. Now select 'YAML' tab and go to 'Get sources'.
 1. Now you can set the default branch for your pipeline.
-![Commits in pipeline run](media/triggers-default-branch.png)
+![Triggers default branch for a pipeline](media/triggers-default-branch.png)
 
 
 ### Evaluation of artifact version
@@ -674,7 +674,7 @@ We provide full traceability for any resource consumed at a pipeline or deployme
 ### Pipeline traceability
 For every pipeline run, we show the info about the 
 1. The resource that has triggered the pipeline (if it is triggered by a resource).
-![Commits in pipeline run](media/runs-resource-trigger.png)
+![Resource trigger in a pipeline](media/runs-resource-trigger.png)
 2. Version of the resource and the artifacts consumed.
  ![Consumed artifacts in pipeline run](media/runs-consumed-artifacts.png)
 3. Commits associated with each resource.
