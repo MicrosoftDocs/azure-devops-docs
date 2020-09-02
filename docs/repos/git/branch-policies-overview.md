@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # Branch policies
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 Branch policies are an important part of the Git workflow and enable you to:
 

@@ -182,6 +182,7 @@
     href: backlogs/set-up-your-backlog.md 
   - name: Fix "Ordering backlog items is disabled"
     href: backlogs/resolve-backlog-reorder-issues.md
+    displayname: reorder, disable, nest, natural hierarchy, in progress,   
 - name: Field reference
   items:
   - name: Work item field index
@@ -212,7 +213,7 @@
     href: /rest/api/azure/devops/wit/queries
   - name: Plans
     href: /rest/api/azure/devops/work/plans
-  - name: Wiql
+  - name: Work Item Query Language 
     href: /rest/api/vsts/wit/wiql 
 - name: Azure DevOps Learn
   items:

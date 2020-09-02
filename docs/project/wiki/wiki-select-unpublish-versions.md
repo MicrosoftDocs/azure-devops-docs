@@ -15,7 +15,7 @@ ms.date: 10/11/2019
 
 # Publish, unpublish, and select version of a wiki
 
-[!INCLUDE [temp](../../includes/version-azure-devops.md)]
+[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
 
 When you publish a Git repository to a wiki, you can publish new branch of the repo as versions, select a version to view, or unpublish the repo.
 
@@ -63,7 +63,7 @@ If you no longer want a repository to be published as a wiki, you can choose to 
 2. Confirm that you want to unpublish the wiki by choosing **Unpublish**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Select wiki version](media/wiki/unpublish-wiki.png)
+	> ![Select your wiki version](media/wiki/unpublish-wiki.png)
 
 ## Related articles
 

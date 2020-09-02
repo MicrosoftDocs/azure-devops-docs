@@ -14,7 +14,7 @@ ms.date: 07/23/2020
 
 # Syntax guidance for Markdown usage in Wiki
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../boards/work-items/includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-2018](../../includes/version-vsts-tfs-2018.md)]
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
