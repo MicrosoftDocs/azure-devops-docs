@@ -214,7 +214,7 @@ You can rename or delete a dashboard. Also, you can enable auto-refresh, and the
 
 ::: moniker range=">= azure-devops-2019"
 
-- To rename a dashboard, modify it's description, or change it's automatic refresh setting, open the dashboard, choose the ![gear icon](media/icons/gear-icon.png) gear icon, and change the field options shown. Save your changes. 
+- To rename a dashboard, modify its description, or change its automatic refresh setting, open the dashboard, choose the ![gear icon](media/icons/gear-icon.png) gear icon, and change the field options shown. Save your changes. 
 
 - To delete a dashboard, open the Dashboards directory, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the dashboard, and select the **Delete** menu option.  
 
