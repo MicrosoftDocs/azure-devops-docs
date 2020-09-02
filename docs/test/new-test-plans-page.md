@@ -89,7 +89,7 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 
 The Test suite header allows you to perform the following tasks:
 
-- *Expand/collapse*: This toolbar  allows you to expand or collapse the suite hierarchy tree.
+- *Expand/collapse*: This toolbar option allows you to expand or collapse the suite hierarchy tree.
 - *Show test points from child suites*: This toolbar option is only visible when you are in the "Execute" tab. This allows you to view all the test points for the given suite and its children in one view for easier management of test points without having to navigate to individual suites one at a time. 
 - *Order suites*: You can drag/drop suites to either reorder the hierarchy of suites or move them from one suite hierarchy to another within the test plan. 
 
