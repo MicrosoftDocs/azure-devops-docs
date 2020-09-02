@@ -55,7 +55,7 @@ The profile menu appears as shown below based on whether the **New Account Manag
 :::row:::
    :::column span="2":::
       **New Account Manager enabled**  
-      :::image type="content" source="media/personal/open-profile-menu-s170-new-account-manager.png" alt-text="Select your profile menu, and then Notifications":::
+      :::image type="content" source="media/personal/open-profile-menu-s170-new-account-manager.png" alt-text="Select your profile menu, and then select Notifications":::
    :::column-end:::
    :::column span="2":::
       **New Account Manager not enabled**  
@@ -63,7 +63,7 @@ The profile menu appears as shown below based on whether the **New Account Manag
    :::column-end:::
 :::row-end:::
 
-:::image type="content" source="media/personal/user-notifications.png" alt-text="View personal notifications page":::
+:::image type="content" source="media/personal/user-notifications.png" alt-text="View your personal notifications page":::
 
 ::: moniker-end
 
@@ -72,7 +72,7 @@ The profile menu appears as shown below based on whether the **New Account Manag
 Open your profile menu and choose **Notification settings**. 
 ::: moniker-end
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-:::image type="content" source="media/personal/open-profile-menu-notifications-2020.png" alt-text="Select your profile menu, and then Notification settings":::
+:::image type="content" source="media/personal/open-profile-menu-notifications-2020.png" alt-text="Select your profile menu, and Notification settings":::
 ::: moniker-end
 ::: moniker range="<= tfs-2018"
 > [!div class="mx-imgBorder"] 
@@ -155,7 +155,7 @@ Enter the following URL to reach the organization-level notifications page, repl
 
 1. Choose **Global Notifications**.  
 
-	:::image type="content" source="media/nav-ui/collection-notifications-2020.png" alt-text="Open Global Notifications":::
+	:::image type="content" source="media/nav-ui/collection-notifications-2020.png" alt-text="Select to open Global Notifications":::
 
 ::: moniker-end
 

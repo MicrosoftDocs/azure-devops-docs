@@ -69,13 +69,13 @@ look at the information on the service that you're interested in.
 	> [!NOTE]
     > The list of available actions may be limited based on the event type you selected. 
 
-    :::image type="content" source="./media/Trello_wizard_Action.png" alt-text="Select an action to perform on the target service":::  
+    :::image type="content" source="./media/Trello_wizard_Action.png" alt-text="Select an action for the target service":::  
 
 6.	To confirm the settings are correct, test the subscription and then finish the wizard.
 
-    :::image type="content" source="./media/test1.png" alt-text="Test notification 1":::  
+    :::image type="content" source="./media/test1.png" alt-text="Test notification 1 for Azure DevOps Server 2019, 2020, and Azure DevOps Services":::  
 	
-    :::image type="content" source="./media/test2.png" alt-text="Test notification 2":::  
+    :::image type="content" source="./media/test2.png" alt-text="Test notification 2 for Azure DevOps Server 2019, 2020, and Azure DevOps Services":::  
  
 ::: moniker-end
 
@@ -95,7 +95,7 @@ look at the information on the service that you're interested in.
  
 4.	Select the event to trigger on and any filters (if applicable).
 
-    :::image type="content" source="./media/Trello_wizard_Event.png" alt-text="Select the event to trigger on and any filters":::  
+    :::image type="content" source="./media/Trello_wizard_Event.png" alt-text="Select the event to trigger on and select any desired filters":::  
  
 5.	Select an action to run on the target service. 
 
