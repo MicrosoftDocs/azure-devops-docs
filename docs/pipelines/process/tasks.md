@@ -81,6 +81,9 @@ will automatically use the new version. However, if a new major version is relea
 until you edit the pipeline and manually change to the new major version.
 The build or release log will include an alert that a new major version is available.
 
+Set which version is used by specifying the full version number of a task after the `@` sign (example: `GoTool@0.3.1`). You can only use task versions that exist for your [organization](../../organizations/accounts/organization-management.md). 
+
+
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
