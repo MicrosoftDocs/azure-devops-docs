@@ -1,14 +1,14 @@
 ---
 title: "Azure DevOps docs: What's new for August 1, 2020 - August 31, 2020"
 description: "What's new in the Azure DevOps docs for August 1, 2020 - August 31, 2020."
-ms.date: 09/02/2020
+ms.date: 09/03/2020
 ---
 
-# Azure DevOps docs: What's new for August 1, 2020 - August 31, 2020
+# Azure DevOps docs: What's new for August 1 - August 31, 2020
 
 Welcome to what's new in the Azure DevOps docs from August 1, 2020 through August 31, 2020. This article lists some of the major changes to docs during this period.
 
-## Boards
+## Azure Boards
 
 ### New articles
 
@@ -19,21 +19,19 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 - [Fix display, reordering, and nesting issues](/azure/devops/boards/backlogs/resolve-backlog-reorder-issues)
 - [Query by assignment or workflow changes](/azure/devops/boards/queries/query-by-workflow-changes)
 
-## CLI
+## Developer resources
 
 ### New articles
 
 - [Security tokens for permissions management](/azure/devops/cli/security-tokens)
 - [Azure DevOps CLI service endpoint](/azure/devops/cli/service-endpoint)
 
-## Extend
-
 ### Updated articles
 
 - [Add a build or release task](/azure/devops/extend/develop/add-build-task) - Add build task
 - [Service endpoint authentication schemes](/azure/devops/extend/develop/auth-schemes)
 
-## Organizations
+## Administration
 
 ### Updated articles
 
@@ -42,7 +40,7 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 - [Permissions, users, and groups in Azure DevOps](/azure/devops/organizations/security/permissions)
 - [Customize your backlogs or boards (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-backlogs-boards)
 
-## Pipelines
+## Azure Pipelines
 
 ### New articles
 
@@ -55,11 +53,11 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 - [Restore NuGet packages in Azure Pipelines](/azure/devops/pipelines/packages/nuget-restore) - Restore NuGet packages
 - [Set retention policies for builds, tests, and releases](/azure/devops/pipelines/policies/retention) - Retention policies update
 - [Expressions](/azure/devops/pipelines/process/expressions) - Update dependencies/stageDependencies
-- [Release pipelines](/azure/devops/pipelines/release/index) - Release Pipelines
+- [Release pipelines](/azure/devops/pipelines/release/index)
 - [Check out multiple repositories in your pipeline](/azure/devops/pipelines/repos/multi-repo-checkout) - Multi-repo checkout content performance improvements
 - [Install SSH Key task](/azure/devops/pipelines/tasks/utility/install-ssh-key)
 
-## Report
+## Azure DevOps Reporting and Analytics service
 
 ### New articles
 
@@ -86,7 +84,7 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 
 ### Updated articles
 
-- [What are the features in Azure DevOps?](/azure/devops/user-guide/alm-devops-features) - Replac
+- [What are the features in Azure DevOps?](/azure/devops/user-guide/alm-devops-features)
 
 ## GitHub issue content updates
 
