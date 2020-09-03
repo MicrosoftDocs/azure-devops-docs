@@ -15,7 +15,7 @@ ms.date: 08/18/2020
 
 # Manage requirements 
 
-[!INCLUDE [temp](includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 > *Requirements management is the process of documenting, analyzing, tracing, prioritizing and agreeing on requirements and then controlling change and communicating to relevant stakeholders. It is a continuous process throughout a project. A requirement is a capability to which a project outcome (product or service) should conform.*
 
@@ -24,7 +24,7 @@ This article provides an overview of the tools and features Azure DevOps provide
 
 Requirements management encompasses the following scenarios.   
 
-> [!div class="checklist"]  
+> [!div class="checklist"]  
 > - Define and track status of requirements
 > - Analyze requirements
 > - Assign requirements to timeboxes
@@ -34,7 +34,7 @@ Requirements management encompasses the following scenarios.
 
 Agile requirements management is conducted within an Agile culture where one or more of the following principles are in play:  
 
-> [!div class="checklist"]  
+> [!div class="checklist"]  
 > - Alignment within the organization
 > - Support autonomous teams 
 > - Support Kanban
@@ -45,25 +45,59 @@ Agile requirements management is conducted within an Agile culture where one or 
 
 Capture requirements using work items and work item types 
 Customize work item types to add fields, control extensions,  
-Capture functional and non-functional requirements 
-Excel integration 
+
+### Work items and work item types 
+
+
+### Add work items to product backlog or board 
+
+
+
+### Import and update requirements using Excel 
+
+
+
+### Functional and non-functional requirements 
+
+
+### Excel integration 
+
+
+### Maintain requirement specifications 
+
+Link requirements to specifications 
 Specs - add as attachment, use project Wiki, or place formal docs under version control using an Azure Repos repository. 
 
 
 ## Analyze, prioritize, and refine requirements
 
-Product backlog 
-Stack rank 
-Triage mode 
-Discussion within work item 
+Once you have a working backlog, you'll want to get it in priority order. You'll want to review and refine your requirements and make sure the acceptance criteria is well defined. These tasks are supported through the following Azure Board tools: 
+
+- Product backlog 
+- Stack rank, Priority, Severity 
+- Triage mode 
+- Discussion within work item 
 
 
 ## Group and organize requirements
-Portfolio backlogs
+
+The product backlog starts out as a flat list. However, oftentimes you want to group requirements that support specific features or business objectives. Azure Boards supports this by providing portfolio work item types, portfolio backlogs and boards, and a Mapping pane to quickly link requirements to a portfolio work item. 
+
+An additional way to group requirements and work items in general, is adding tags to work items. 
+
+
+### Epics, features, and portfolio backlogs
 Mapping 
 Epics
 Features
+Tags
 
+### Use tags to support queries and filtering 
+ 
+With work item tags, team members can assign ad-hoc tags to work items. You can use these tags to filter backlogs and boards as well as query on work items.  For example, the following image illustrates a Kanban board filtered on the *web* keyword which displays cards with the *Web* tag. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Kanban board, Filter using keyword search.](../boards/media/filter/filter-kb-text-web-services.png)
 
 ## Implement Kanban or Scrum Agile methods
 
@@ -82,11 +116,6 @@ Link work items, link types
 Minimum Viable Product versus Critical Path Management
 Delivery plans (?) 
 
-## Assign requirements to timeboxes 
-
-Sprints - iteration paths 
-Planning mode 
-
 
 ## Perform milestone planning
 
@@ -95,11 +124,23 @@ Forecast
 
 If you want to integrate your requirements planning with Microsoft Project tools, you may do so via a Marketplace extension.  
 
+
+## Assign requirements to timeboxes 
+
+Sprints - iteration paths 
+Planning mode 
+Forecast 
+Capacity (Scrum)  
+
 ## Monitor and report on progress 
 
 - Kanban board 
 - Rollup 
 - Delivery plans and multiple team deliverables
+
+## Get notified of additions and changes 
+ Set alerts - personal, team, project 
+
 
 ## Required Azure DevOps configuration 
 
