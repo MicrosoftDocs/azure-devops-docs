@@ -27,7 +27,7 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 - [Fix display, reordering, and nesting issues](/azure/devops/boards/backlogs/resolve-backlog-reorder-issues)
 - [Query by assignment or workflow changes](/azure/devops/boards/queries/query-by-workflow-changes)
 - [Customize your backlogs or boards (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-backlogs-boards)
-- [About process customization and inherited processes]() 
+- [About process customization and inherited processes](/azure/devops/organizations/settings/work/inheritance-process-model) 
 - [How workflow states and state categories are used in Backlogs and Boards](/azure/devops/organizations/settings/work/customize-process-backlogs-boards) 
 - [Customize the workflow (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-workflow) 
 
