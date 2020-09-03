@@ -18,6 +18,10 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 
 - [Fix display, reordering, and nesting issues](/azure/devops/boards/backlogs/resolve-backlog-reorder-issues)
 - [Query by assignment or workflow changes](/azure/devops/boards/queries/query-by-workflow-changes)
+- [Customize your backlogs or boards (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-backlogs-boards)
+- [About process customization and inherited processes]() 
+- [How workflow states and state categories are used in Backlogs and Boards](/azure/devops/organizations/settings/work/customize-process-backlogs-boards) 
+- [Customize the workflow (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-workflow) 
 
 ## Developer resources
 
@@ -38,7 +42,6 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 - [Add users and manage access in Azure DevOps](/azure/devops/organizations/accounts/add-organization-users)
 - [About permissions and groups](/azure/devops/organizations/security/about-permissions) - Updated table
 - [Permissions, users, and groups in Azure DevOps](/azure/devops/organizations/security/permissions)
-- [Customize your backlogs or boards (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-backlogs-boards)
 
 ## Azure Pipelines
 
@@ -85,6 +88,11 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 ### Updated articles
 
 - [What are the features in Azure DevOps?](/azure/devops/user-guide/alm-devops-features)
+
+## Archived content
+
+- [Microsoft Project field mapping](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file)
+- [Configure features after an upgrade (and other manual upgrade articles)](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) 
 
 ## GitHub issue content updates
 
