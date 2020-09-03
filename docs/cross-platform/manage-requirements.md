@@ -17,6 +17,7 @@ ms.date: 08/18/2020
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
+> [!NOTE]
 > *Requirements management is the process of documenting, analyzing, tracing, prioritizing and agreeing on requirements and then controlling change and communicating to relevant stakeholders. It is a continuous process throughout a project. A requirement is a capability to which a project outcome (product or service) should conform.*
 
 This article provides an overview of the tools and features Azure DevOps provides to manage requirements. It maps the standard Agile requirements management tasks by project managers to the tools Azure DevOps supports.  It introduces the essential concepts to become familiar with, and then links to the how-to topics to learn more. 
@@ -43,32 +44,66 @@ Agile requirements management is conducted within an Agile culture where one or 
 
 ## Capture requirements  
 
-Capture requirements using work items and work item types 
-Customize work item types to add fields, control extensions,  
+You capture requirements using work items, where each work item is based on a work item type. You have a choice of work item types to use based on the process you select, or you can add a custom work item type. 
+
 
 ### Work items and work item types 
 
 
+You can use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned an identifier which is unique within an Azure DevOps organization. 
+
+The work item types used to capture requirements and code defects are illustrated in the following images based on the four system processes&mdash;Agile, Basic, Scrum, or Capability Maturity Model Integration (CMMI). Each team can determine how they want to track bugs.
+
+[!INCLUDE [temp](../boards/includes/work-item-types.md)]
+
+[!INCLUDE [temp](../boards/includes/note-requirements-terms.md)] 
+Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field and comments made in the **Discussion** section. 
+
+In a nutshell, you use work items to support these tasks: 
+- You use different work item types (WITs) to track different types of information. 
+- You update the work item form to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
+- You can assign a work item to one and only one project member 
+- You assign work items to a timebox or sprint via the iteration path
+- You can use ad hoc search or queries to find or list work items  
+- You can use work item templates to quickly fill in work item fields
+- You can easily discuss work item specifics within the work item form, capturing a discussion thread which you can query on later. 
+
+
 ### Add work items to product backlog or board 
 
+You can quickly add requirements to a product backlog or board by simply specifying a Title. Additional details can be added later. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of add product backlog item](../boards/backlogs/media/create-backlog/add-new-items-agile.png)   
 
 
 ### Import and update requirements using Excel 
 
+Alternatively, you can import and update requirements you've defined through a .csv file or Excel spreadsheet. These tools support import of a hierarchy of 
+
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Excel tree list of requirements to import.](../backlogs/office/media/excel/import-safe-hierarchy-list.png)   
 
 
 ### Functional and non-functional requirements 
 
+Any item of work that you or a development team wants to track can be captured using work items. You can use the same type of work item to capture both functional and non-functional requirements. Non-functional requirements specify criteria associated with system operations rather than specific product or service functionality. 
 
-### Excel integration 
-
-
+You can differentiate your requirements using tags, the Business Value field, or a custom field. 
+ 
 ### Maintain requirement specifications 
 
-Link requirements to specifications 
-Specs - add as attachment, use project Wiki, or place formal docs under version control using an Azure Repos repository. 
+Requirements often require detailed specifications to provide details that aren't readily captured within the work item. You can use Azure DevOps to maintain and version control your requirements under an Azure Repos repository. Or, you can use a project wiki to provide a central source and repository for specif 
 
+You can then link your specifications or attach them to your requirements. 
+ 
 
+### Add custom fields to work items  
+
+You add a custom field to support tracking data requirements that aren't met with the existing set of fields.  
+
+ 
 ## Analyze, prioritize, and refine requirements
 
 Once you have a working backlog, you'll want to get it in priority order. You'll want to review and refine your requirements and make sure the acceptance criteria is well defined. These tasks are supported through the following Azure Board tools: 
@@ -77,6 +112,15 @@ Once you have a working backlog, you'll want to get it in priority order. You'll
 - Stack rank, Priority, Severity 
 - Triage mode 
 - Discussion within work item 
+
+
+### Order features in priority order 
+
+As project managers, you'll want to always have your features backlog in priority order. This conveys to the development team which features are most important to complete first. 
+
+Here the features backlog shows the sequence of features to ship. 
+
+:::image type="content" source="../boards/media/best-practices/feature-backlog-priority-order.png" alt-text="Screenshot of Features backlog, ordered by feature parent.":::
 
 
 ## Group and organize requirements
@@ -97,7 +141,7 @@ Tags
 With work item tags, team members can assign ad-hoc tags to work items. You can use these tags to filter backlogs and boards as well as query on work items.  For example, the following image illustrates a Kanban board filtered on the *web* keyword which displays cards with the *Web* tag. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Kanban board, Filter using keyword search.](../boards/media/filter/filter-kb-text-web-services.png)
+> ![Screenshot of Kanban board, Filter using keyword search.](..//boards/boards/media/filter/filter-kb-text-web-services.png)
 
 ## Implement Kanban or Scrum Agile methods
 
@@ -118,6 +162,10 @@ Delivery plans (?)
 
 
 ## Perform milestone planning
+
+
+To gain insight into what features can ship when, use the **Forecast** tool. This tool requires that you provide estimates to the Story Points, Effort, or Size field for each requirement. If you want to forecast on a simple count of work items, then simply assign the value of **1** to requirement estimates.
+
 
 Size estimate
 Forecast
@@ -151,6 +199,34 @@ Capacity (Scrum)
 
 
 
+## Related articles
+
+
+### Key concepts 
+
+- [About work items](../boards/work-items/about-work-items.md) 
+- [About Area and Iteration Paths (sprints)](../organizations/settings/about-areas-iterations.md) 
+- [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md) 
+
+### Best practices
+ 
+- [Best practices for "light-weight" Agile project management](../boards/best-practices-agile-project-management.md)
+- [Configure and customize Azure Boards](../boards/configure-customize.md)
+
+
+
+### Get started guides and tutorials 
+
+- [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+
+
+### How to guides 
+
+
+<!---
+
+
+
 Tools/Features
 
 - Work items, Product and Portfolio Backlogs
@@ -168,8 +244,6 @@ Tools/Features
 - Delivery Plans
  
 
-
-## Related articles
 
 ---
 :::row:::
@@ -198,7 +272,4 @@ Tools/Features
    :::column-end:::
 :::row-end:::
 
-
-
-- [Best practices for "light-weight" Agile project management](../boards/best-practices-agile-project-management.md)
-- [Configure and customize Azure Boards](../boards/configure-customize.md)
+-->
