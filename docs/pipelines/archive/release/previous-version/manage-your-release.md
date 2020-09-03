@@ -274,7 +274,7 @@ only to vNext environments based on Azure IaaS services.
 
 ### Q: Are there any hands-on labs to help me get started with Release Management?
 
-**A**: Yes. Go  **[here](https://blogs.msdn.com/b/briankel/archive/2013/08/02/visual-studio-2013-application-lifecycle-management-virtual-machine-and-hands-on-labs-demo-scripts.aspx)** 
+**A**: Yes. Go  **[here](https://devblogs.microsoft.com/devops/visual-studio-2013-application-lifecycle-management-virtual-machine-with-hands-on-labs-demo-scripts/)** 
 for hands-on labs to try Release Management and other devops products.
 
 ### Q: Is there a more detailed user guide?
