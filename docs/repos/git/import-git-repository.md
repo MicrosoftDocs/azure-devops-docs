@@ -5,7 +5,7 @@ description: Import a repo from GitHub, GitLab, or Bitbucket into your Azure Dev
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.technology: devops-code-git 
 ms.topic: quickstart
-ms.date: 11/02/2018
+ms.date: 09/03/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -192,6 +192,22 @@ To move over the LFS files (you will need both Git.exe and LFS client in the sam
 - Perform `git lfs fetch source --all`  (this will bring over all LFS files from source to your local repository)
 - Assuming the destination VSTS repository is your ‘target’ remote 
 - Perform `git lfs push target --all`
+
+### Can I import updates if the source changes later?
+
+The import service is for initially importing a entire repository.
+To mirror later changes, you'll need a local clone of the repository with remotes set to both source and destination.
+
+You can sync changes using the following commands.
+We'll treat the Azure Repos import as `origin` and the original repo as `upstream`.
+
+```shell
+git clone --bare <Azure-Repos-clone-URL>
+cd <name-of-repo>
+git remote add --mirror=fetch upstream <original-repo-URL>
+git fetch upstream --tags
+git push origin --all --tags
+```
 
 ::: moniker-end
 
