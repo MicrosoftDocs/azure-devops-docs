@@ -69,7 +69,7 @@ Then the second run on this day would be named: **Fabrikam\_CIBuild_master\_2019
 
 ## Tokens
 
-The following table shows how each token is resolved based on the previous example.
+The following table shows how each token is resolved based on the previous example.  These tokens can only be used to define a run number, they do not work elsewhere in your pipeline.
 
 | Token | Example replacement value |
 | ----- | ------------------------- |
