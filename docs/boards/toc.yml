@@ -15,6 +15,8 @@
     href: work-items/guidance/choose-process.md
   - name: About work items
     href: work-items/about-work-items.md
+  - name: Manage requirements
+    href: ../cross-platform/manage-requirements.md 
   - name: System fields  
     href: ./work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: "Backlogs, boards, & plans"
