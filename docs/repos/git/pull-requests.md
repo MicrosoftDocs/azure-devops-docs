@@ -7,13 +7,13 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 07/10/2020
+ms.date: 08/28/2020
 monikerRange: '>= tfs-2013'
 ---
 
 # Review code with pull requests
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Create pull requests to review and merge code in a [Git project](../../organizations/projects/create-project.md).
 Pull requests let your team review code and give feedback on changes before merging it into the master branch.
@@ -156,9 +156,20 @@ For more information about working with the Azure DevOps Services CLI, see [Get 
 
 <a name="finish"></a>
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2019"
 
 ## Draft pull requests
+
+::: moniker-end
+
+:::moniker range="azure-devops-2019"
+
+> [!NOTE]
+> Draft pull requests were added in the Azure DevOps Server 2019.1 update.
+
+:::moniker-end
+
+::: moniker range=">=azure-devops-2019"
 
 Sometimes you may want to create a pull request but you aren't ready to send it to the entire team for review. A draft pull request indicates that a pull request is a work in progress. You don't have to resort to title prefixes such as WIP or DO NOT MERGE. When the pull request is ready for review, you can publish it, and begin or resume the full review process.
 
@@ -403,7 +414,7 @@ You can make quick updates to your branch directly from the **Files** tab in **C
 
 ![Updating code directly during a pull request in Azure Repos](./media/pull-requests/pr_editing_changes.png)
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2019"
 
 ## Change the target branch of a pull request
 
