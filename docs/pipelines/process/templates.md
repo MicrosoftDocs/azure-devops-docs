@@ -867,7 +867,7 @@ jobs:
 
 If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example, `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
 
-## Limits
+## Imposed limits
 
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
@@ -879,7 +879,7 @@ To help prevent runaway growth, Azure Pipelines imposes the following limits:
 
 ::: moniker range="azure-devops-2019"
 
-## Parameters
+## Template parameters
 
 You can pass parameters to templates.
 The `parameters` section defines what parameters are available in the template and their default values. 
@@ -1054,7 +1054,7 @@ If you want to use a particular, fixed version of the template, be sure to pin t
 Refs are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
 
-## Template expressions
+## Expressions
 
 Use template [expressions](expressions.md) to specify how values are dynamically resolved during pipeline initialization.
 Wrap your template expression inside this syntax: `${{ }}`.
