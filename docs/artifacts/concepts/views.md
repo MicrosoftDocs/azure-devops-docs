@@ -4,13 +4,13 @@ description: Release views enable continuous integration and delivery of NuGet, 
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 07/8/2020
+ms.date: 08/31/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # What are Azure DevOps Services feed views?
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 *If you're familiar with the principles behind views, you can jump to the [docs page](../feeds/views.md) to quickly start using them.*
 
@@ -20,7 +20,7 @@ Views enable you to share subsets of the NuGet, npm, Maven, Python and Universal
 
 Views and upstream sources are designed to work together to make it easy to produce and consume packages at enterprise scale. 
 
-In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's view visibility to people in your organization, or people in your Azure Active Directory (AAD) tenant, depending on your scenario.
+In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's view visibility to people in your organization, or people in your Azure Active Directory (Azure AD) tenant, depending on your scenario.
 
 <a name="local"></a>
 

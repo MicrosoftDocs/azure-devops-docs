@@ -49,8 +49,7 @@ When running Selenium tests for a web app, you can launch the browser in two way
 
    > [!NOTE] 
    > Microsoft Edge browser currently cannot be run in the headless mode.
-   > To follow developments in this space, see this user voice item.
-	
+  	
 1. **Visible UI mode**. In this mode, the browser runs normally and the UI components are visible.
    When running tests in this mode on Windows, [special configuration of the agents](#visible-ui-mode) is required.
 

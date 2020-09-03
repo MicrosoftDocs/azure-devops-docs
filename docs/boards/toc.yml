@@ -3,10 +3,10 @@
 - name: "What is Azure Boards?"
   href: get-started/what-is-azure-boards.md
 - name: "Why use Azure Boards?"
-  displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
   href: get-started/why-use-azure-boards.md
-- name: "About teams & Agile tools"
-  href: /azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
+- name: Best practices for Agile project management
+  href: best-practices-agile-project-management.md
 - name: Get started
   href: get-started/toc.yml
 - name: Basic concepts 
@@ -21,6 +21,8 @@
     href: ./work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: "Backlogs, boards, & plans"
     href: backlogs/backlogs-boards-plans.md
+  - name: "About teams & Agile tools"
+    href: /azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: "Area & iteration paths"
     href: /azure/devops/organizations/settings/about-areas-iterations?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Best tool for the job
@@ -182,6 +184,7 @@
     href: backlogs/set-up-your-backlog.md 
   - name: Fix "Ordering backlog items is disabled"
     href: backlogs/resolve-backlog-reorder-issues.md
+    displayname: reorder, disable, nest, natural hierarchy, in progress,   
 - name: Field reference
   items:
   - name: Work item field index
@@ -212,7 +215,7 @@
     href: /rest/api/azure/devops/wit/queries
   - name: Plans
     href: /rest/api/azure/devops/work/plans
-  - name: Wiql
+  - name: Work Item Query Language 
     href: /rest/api/vsts/wit/wiql 
 - name: Azure DevOps Learn
   items:

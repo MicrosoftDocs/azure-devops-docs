@@ -3,14 +3,14 @@ title: Get started with Python packages
 description: Quickly start hosting python packages in Azure DevOps Services
 ms.technology: devops-artifacts
 ms.topic: quickstart
-ms.date: 06/23/2020
+ms.date: 08/31/2020
 monikerRange: '=azure-devops'
 ms.custom: devx-track-python
 ---
 
 # Get started with Python packages in Azure Artifacts
 
-**Azure DevOps Services** | **Azure DevOps Server 2019 Update 1**
+**Azure DevOps Services | Azure DevOps Server 2019 | Azure DevOps Server 2020**
 
 This quickstart guides you through using Azure Artifacts to publish and consume Python packages by creating and connecting to a feed.
 
