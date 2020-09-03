@@ -262,8 +262,7 @@ stages:
     - task: CmdLine@2
       displayName: Show variables
       inputs:
-        script: >
-          printenv
+        script: 'printenv'
 
 - stage: Stage2
   displayName: stage 2
@@ -276,8 +275,7 @@ stages:
     - task: CmdLine@2
       displayName: Show variables 2
       inputs:
-        script: >
-          printenv
+        script: 'printenv'
           
 - stage: Stage3
   displayName: stage 3
@@ -290,8 +288,7 @@ stages:
     - task: CmdLine@2
       displayName: Show variables 3
       inputs:
-        script: >
-          printenv
+        script: 'printenv'
 ```
 
 <!-- ENDSECTION -->
