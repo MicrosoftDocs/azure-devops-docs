@@ -81,6 +81,9 @@ will automatically use the new version. However, if a new major version is relea
 until you edit the pipeline and manually change to the new major version.
 The build or release log will include an alert that a new major version is available.
 
+You can set which minor version gets used by specifying the full version number of a task after the `@` sign (example: `GoTool@0.3.1`). You can only use task versions that exist for your [organization](../../organizations/accounts/organization-management.md). 
+
+
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
@@ -299,7 +302,7 @@ NodeVersionSpec
 
 Add these tasks:
 
-![icon](../tasks/tool/media/node.png) Tool: Node.js Installer
+![node js installer](../tasks/tool/media/node.png) Tool: Node.js Installer
 
 * Version Spec: 
 
@@ -307,7 +310,7 @@ Add these tasks:
   $(NodeVersionSpec)
   ```
 
-![icon](../tasks/utility/media/command-line.png) Utility: Command Line
+![CLI](../tasks/utility/media/command-line.png) Utility: Command Line
 
 * Script (if you're running on a Windows agent)
   ```
