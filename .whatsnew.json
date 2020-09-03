@@ -19,7 +19,7 @@
       },
       {
         "name": "boards",
-        "heading": "Boards"
+        "heading": "Azure Boards"
       },
       {
         "name": "cli",
@@ -71,11 +71,11 @@
       },
       {
         "name": "organizations",
-        "heading": "Organizations"
+        "heading": "Administration"
       },
       {
         "name": "pipelines",
-        "heading": "Pipelines"
+        "heading": "Azure Pipelines"
       },
       {
         "name": "project",
@@ -87,11 +87,11 @@
       },
       {
         "name": "report",
-        "heading": "Report"
+        "heading": "Azure DevOps Reporting and Analytics service"
       },
       {
         "name": "repos",
-        "heading": "Repos"
+        "heading": "Azure Repos"
       },
       {
         "name": "security-access-billing",
@@ -103,7 +103,7 @@
       },
       {
         "name": "test",
-        "heading": "Test"
+        "heading": "Azure Test Plans"
       },
       {
         "name": "user-guide",
