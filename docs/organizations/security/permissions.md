@@ -1517,13 +1517,13 @@ You manage project-level permissions through the [web portal admin context](set-
                     to perform these tasks for the project:
                 </p>
                 <ul>
+                    <li>Edit the project description</li>
                     <li>Add and administer teams and all team-related features</li>
-                    <li>Edit project-level permissions for users and groups in the project</li>
-                    <li>Add or remove project-level security groups</li>
                     <li>Edit project level permission ACLs</li>
                     <li>Edit <a href="#alerts">event subscriptions</a> (email or SOAP) for teams or project-level events.</li>
                     <li>When combined with the 'Change process of project' permission, allows users to change the Inheritance process for a project.</li>
                 </ul>
+<p>The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the Project Administrators group. It isn't controlled by a permissions surfaced within the user interface.</p> 
             </blockquote>
         </td>
     </tr>
