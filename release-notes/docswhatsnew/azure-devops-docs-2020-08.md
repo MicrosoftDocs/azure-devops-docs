@@ -8,6 +8,14 @@ ms.date: 09/03/2020
 
 Welcome to what's new in the Azure DevOps docs from August 1, 2020 through August 31, 2020. This article lists some of the major changes to docs during this period.
 
+## Administration
+
+### Updated articles
+
+- [Add users and manage access in Azure DevOps](/azure/devops/organizations/accounts/add-organization-users)
+- [About permissions and groups](/azure/devops/organizations/security/about-permissions) - Updated table
+- [Permissions, users, and groups in Azure DevOps](/azure/devops/organizations/security/permissions)
+
 ## Azure Boards
 
 ### New articles
@@ -23,25 +31,21 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 - [How workflow states and state categories are used in Backlogs and Boards](/azure/devops/organizations/settings/work/customize-process-backlogs-boards) 
 - [Customize the workflow (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-workflow) 
 
-## Developer resources
+## Azure DevOps Reporting and Analytics service
 
 ### New articles
 
-- [Security tokens for permissions management](/azure/devops/cli/security-tokens)
-- [Azure DevOps CLI service endpoint](/azure/devops/cli/service-endpoint)
+- [Test duration trend sample report](/azure/devops/report/powerbi/sample-testanalyics-testdurationtrend) - Added documentation for Test Analytics in pipelines
+- [Failed tests sample report](/azure/devops/report/powerbi/sample-testanalytics-failedtests) - Added documentation for Test Analytics in pipelines
+- [Flaky tests sample report](/azure/devops/report/powerbi/sample-testanalytics-flakytests) - Added documentation for Test Analytics in pipelines
+- [Pass rate trend of a test sample report](/azure/devops/report/powerbi/sample-testanalytics-passratetrendoftest) - Added documentation for Test Analytics in pipelines
+- [Test duration sample report](/azure/devops/report/powerbi/sample-testanalytics-testduration) - Added documentation for Test Analytics in pipelines
+- [Test summary sample report](/azure/devops/report/powerbi/sample-testanalytics-testsummary) - Added documentation for Test Analytics in pipelines
+- [Test summary trend sample report](/azure/devops/report/powerbi/sample-testsummarytrend) - Added documentation for Test Analytics in pipelines
 
 ### Updated articles
 
-- [Add a build or release task](/azure/devops/extend/develop/add-build-task) - Add build task
-- [Service endpoint authentication schemes](/azure/devops/extend/develop/auth-schemes)
-
-## Administration
-
-### Updated articles
-
-- [Add users and manage access in Azure DevOps](/azure/devops/organizations/accounts/add-organization-users)
-- [About permissions and groups](/azure/devops/organizations/security/about-permissions) - Updated table
-- [Permissions, users, and groups in Azure DevOps](/azure/devops/organizations/security/permissions)
+- [What is the Analytics service?](/azure/devops/report/powerbi/what-is-analytics)
 
 ## Azure Pipelines
 
@@ -60,28 +64,24 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 - [Check out multiple repositories in your pipeline](/azure/devops/pipelines/repos/multi-repo-checkout) - Multi-repo checkout content performance improvements
 - [Install SSH Key task](/azure/devops/pipelines/tasks/utility/install-ssh-key)
 
-## Azure DevOps Reporting and Analytics service
-
-### New articles
-
-- [Test duration trend sample report](/azure/devops/report/powerbi/sample-testanalyics-testdurationtrend) - Added documentation for Test Analytics in pipelines
-- [Failed tests sample report](/azure/devops/report/powerbi/sample-testanalytics-failedtests) - Added documentation for Test Analytics in pipelines
-- [Flaky tests sample report](/azure/devops/report/powerbi/sample-testanalytics-flakytests) - Added documentation for Test Analytics in pipelines
-- [Pass rate trend of a test sample report](/azure/devops/report/powerbi/sample-testanalytics-passratetrendoftest) - Added documentation for Test Analytics in pipelines
-- [Test duration sample report](/azure/devops/report/powerbi/sample-testanalytics-testduration) - Added documentation for Test Analytics in pipelines
-- [Test summary sample report](/azure/devops/report/powerbi/sample-testanalytics-testsummary) - Added documentation for Test Analytics in pipelines
-- [Test summary trend sample report](/azure/devops/report/powerbi/sample-testsummarytrend) - Added documentation for Test Analytics in pipelines
-
-### Updated articles
-
-- [What is the Analytics service?](/azure/devops/report/powerbi/what-is-analytics)
-
-## Repos
+## Azure Repos
 
 ### Updated articles
 
 - [Improve code quality with branch policies](/azure/devops/repos/git/branch-policies)
 - [Use SSH key authentication](/azure/devops/repos/git/use-ssh-keys-to-authenticate)
+
+## Developer resources
+
+### New articles
+
+- [Security tokens for permissions management](/azure/devops/cli/security-tokens)
+- [Azure DevOps CLI service endpoint](/azure/devops/cli/service-endpoint)
+
+### Updated articles
+
+- [Add a build or release task](/azure/devops/extend/develop/add-build-task) - Add build task
+- [Service endpoint authentication schemes](/azure/devops/extend/develop/auth-schemes)
 
 ## User guide
 
