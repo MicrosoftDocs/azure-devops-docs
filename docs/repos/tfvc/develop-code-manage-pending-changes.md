@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Develop code and manage pending changes
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Most changes that you make to your files are queued as pending changes. As you work, you can organize, manage, and get details about what you've changed.
 
