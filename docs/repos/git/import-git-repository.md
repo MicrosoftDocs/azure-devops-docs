@@ -57,7 +57,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 3. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
-   If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
+   If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
 
    ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
 
@@ -71,7 +71,7 @@ From the repo drop-down, select **Import repository**.
 
 If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
-If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
+If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
 
 ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
 
@@ -93,7 +93,7 @@ On the **Files** page of the empty Git repository, select **Import** and [enter 
 
 The import repo feature was introduced in TFS 2017 Update 1. If you are using TFS 2017 RTM or earlier, you can use the following steps to manually import a repo into TFS. You can also follow these steps to manually import a repo into an Azure DevOps Services repo by replacing TFS with Azure Repos in the following steps.
 
-1. Clone the source repo to a temporary folder on your computer using the `bare` option, as shown in the following command line example, and then navigate to the repo's folder. Note that when cloning using the `bare` option, the folder name includes the `.git` suffix. In this example, `https://github.com/contoso/old-contoso-repo.git` is the source repo to be manually imported.
+1. Clone the source repo to a temporary folder on your computer using the `bare` option, as shown in the following command line example, and then navigate to the repo's folder. When cloning using the `bare` option, the folder name includes the `.git` suffix. In this example, `https://github.com/contoso/old-contoso-repo.git` is the source repo to be manually imported.
 
     ```
     git clone --bare https://github.com/contoso/old-contoso-repo.git
@@ -135,7 +135,7 @@ Although most of the time the import is successful, the following conditions can
 * [What if my Source repository is behind two-factor authentication?](#what-if-my-source-repository-is-behind-two-factor-authentication)
 * [What if my source repository does not support multi_ack?](#multiack)
 * [Can I import from previous versions of Team Foundation Server?](#can-i-import-from-previous-versions-of-team-foundation-server)
-* [Can I use MSA based credentials?](#can-i-use-msa-based-credentials)
+* [Can I use MSA-based credentials?](#can-i-use-msa-based-credentials)
 * [Can I import from TFVC?](#can-i-import-from-tfvc)
 * [What if my source repository contains Git LFS objects?](#what-if-my-source-repository-contains-git-lfs-objects)
 
@@ -165,7 +165,7 @@ This happens because of a contract mismatch between the latest Azure DevOps Serv
 
 ::: moniker range=">= tfs-2017"
 
-### Can I use MSA based credentials?
+### Can I use MSA-based credentials?
 
 Unfortunately, MSA (Microsoft Account, formerly Live ID) based credentials will not work. Import service relies on basic authentication to communicate with the source repository. If the username / password you are using are not basic auth then authentication will fail and import will fail.
 One way to check if the username / password you are using are basic auth or not is to try using Git to clone your repository using the below format
