@@ -35,13 +35,13 @@ Welcome to what's new in the Azure DevOps docs from August 1, 2020 through Augus
 
 ### New articles
 
-- [Test duration trend sample report](/azure/devops/report/powerbi/sample-testanalyics-testdurationtrend) - Added documentation for Test Analytics in pipelines
-- [Failed tests sample report](/azure/devops/report/powerbi/sample-testanalytics-failedtests) - Added documentation for Test Analytics in pipelines
-- [Flaky tests sample report](/azure/devops/report/powerbi/sample-testanalytics-flakytests) - Added documentation for Test Analytics in pipelines
-- [Pass rate trend of a test sample report](/azure/devops/report/powerbi/sample-testanalytics-passratetrendoftest) - Added documentation for Test Analytics in pipelines
-- [Test duration sample report](/azure/devops/report/powerbi/sample-testanalytics-testduration) - Added documentation for Test Analytics in pipelines
-- [Test summary sample report](/azure/devops/report/powerbi/sample-testanalytics-testsummary) - Added documentation for Test Analytics in pipelines
-- [Test summary trend sample report](/azure/devops/report/powerbi/sample-testsummarytrend) - Added documentation for Test Analytics in pipelines
+- [Test duration trend sample report](/azure/devops/report/powerbi/sample-test-analyics-test-duration-trend) - Added documentation for Test Analytics in pipelines
+- [Failed tests sample report](/azure/devops/report/powerbi/sample-test-analytics-failed-tests) - Added documentation for Test Analytics in pipelines
+- [Flaky tests sample report](/azure/devops/report/powerbi/sample-test-analytics-flaky-tests) - Added documentation for Test Analytics in pipelines
+- [Pass rate trend of a test sample report](/azure/devops/report/powerbi/sample-test-analytics-pass-rate-trend-of-test) - Added documentation for Test Analytics in pipelines
+- [Test duration sample report](/azure/devops/report/powerbi/sample-test-analytics-test-duration) - Added documentation for Test Analytics in pipelines
+- [Test summary sample report](/azure/devops/report/powerbi/sample-test-analytics-test-summary) - Added documentation for Test Analytics in pipelines
+- [Test summary trend sample report](/azure/devops/report/powerbi/sample-test-summary-trend) - Added documentation for Test Analytics in pipelines
 
 ### Updated articles
 
