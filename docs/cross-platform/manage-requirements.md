@@ -46,28 +46,30 @@ Agile requirements management is conducted within an Agile culture where one or 
 
 You capture requirements using work items, where each work item is based on a work item type. You have a choice of work item types to use based on the process you select, or you can add a custom work item type. 
 
-
-### Work items and work item types 
-
+### Work item fields and form
 
 You can use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned an identifier which is unique within an Azure DevOps organization. 
+
+Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field and comments made in the **Discussion** section. The following image shows a sample work item form for the User Story work item type.
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of User Story work item form](media/manage-requirements/user-story-work-item-form.png) 
+
+In a nutshell, you use work items to support these tasks: 
+- You update the work item form to add information, update status, reassign to another project member, and to link work items, attach files, and add comments  
+- You can assign a work item to one and only one project member 
+- You assign work items to a timebox or sprint via the iteration path
+- You can use work item templates to quickly fill in work item fields
+- You can easily discuss work item specifics within the work item form, capturing a discussion thread which you can query on later
+- You can use ad hoc search or queries to find or list work items.  
+ 
+### Work item types 
 
 The work item types used to capture requirements and code defects are illustrated in the following images based on the four system processes&mdash;Agile, Basic, Scrum, or Capability Maturity Model Integration (CMMI). Each team can determine how they want to track bugs.
 
 [!INCLUDE [temp](../boards/includes/work-item-types.md)]
 
 [!INCLUDE [temp](../boards/includes/note-requirements-terms.md)] 
-Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field and comments made in the **Discussion** section. 
-
-In a nutshell, you use work items to support these tasks: 
-- You use different work item types (WITs) to track different types of information. 
-- You update the work item form to add information, update status, reassign to another project member or sprint, and to link work items, attach files, and add comments  
-- You can assign a work item to one and only one project member 
-- You assign work items to a timebox or sprint via the iteration path
-- You can use ad hoc search or queries to find or list work items  
-- You can use work item templates to quickly fill in work item fields
-- You can easily discuss work item specifics within the work item form, capturing a discussion thread which you can query on later. 
-
 
 ### Add work items to product backlog or board 
 
@@ -83,7 +85,7 @@ Alternatively, you can import and update requirements you've defined through a .
 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Excel tree list of requirements to import.](../backlogs/office/media/excel/import-safe-hierarchy-list.png)   
+> ![Screenshot of Excel tree list of requirements to import.](../boards/backlogs/office/media/excel/import-safe-hierarchy-list.png)   
 
 
 ### Functional and non-functional requirements 
@@ -103,21 +105,13 @@ You can then link your specifications or attach them to your requirements.
 
 You add a custom field to support tracking data requirements that aren't met with the existing set of fields.  
 
- 
 ## Analyze, prioritize, and refine requirements
 
 Once you have a working backlog, you'll want to get it in priority order. You'll want to review and refine your requirements and make sure the acceptance criteria is well defined. These tasks are supported through the following Azure Board tools: 
 
-- Product backlog 
-- Stack rank, Priority, Severity 
-- Triage mode 
-- Discussion within work item 
-
-
-### Order features in priority order 
-
-As project managers, you'll want to always have your features backlog in priority order. This conveys to the development team which features are most important to complete first. 
-
+- **Product backlog**: Supports drag-and-drop of work items to get them in priority order. Supports bulk-edit of work items to change assignments or update fields. 
+- **Query Results, Triage mode**: Supports review of a list of work items and their forms so that you can quickly update work items and add details. 
+ 
 Here the features backlog shows the sequence of features to ship. 
 
 :::image type="content" source="../boards/media/best-practices/feature-backlog-priority-order.png" alt-text="Screenshot of Features backlog, ordered by feature parent.":::
@@ -136,7 +130,7 @@ Epics
 Features
 Tags
 
-### Use tags to support queries and filtering 
+### Use tags to group work items   
  
 With work item tags, team members can assign ad-hoc tags to work items. You can use these tags to filter backlogs and boards as well as query on work items.  For example, the following image illustrates a Kanban board filtered on the *web* keyword which displays cards with the *Web* tag. 
 
@@ -144,6 +138,7 @@ With work item tags, team members can assign ad-hoc tags to work items. You can 
 > ![Screenshot of Kanban board, Filter using keyword search.](..//boards/boards/media/filter/filter-kb-text-web-services.png)
 
 ## Implement Kanban or Scrum Agile methods
+Two of the major Agile methods are Kanban and Scrum. Azure Boards supports both methods. Or, teams can adapt them to use a combination of methods such as Scrumban. 
 
 ### Implement Kanban  
 
@@ -156,13 +151,19 @@ Sprint backlogs, Taskboards, Sprint burndown chart
 
 ## Manage dependencies
 
-Link work items, link types
-Minimum Viable Product versus Critical Path Management
-Delivery plans (?) 
+In Microsoft Project, you manage tasks that depend on the completion of other tasks by linking them. To manage dependencies in Azure Boards, you can link work items using the Predecessor/Successor link type. Once you've linked work items, you can view link relationships using the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension. The following image illustrates link relationships among several work items. 
+
+[!INCLUDE [temp](../includes/lightbox-image.md)] 
+
+> [!div class="mx-imgBorder"]  
+> [![Screenshot of Visualize work item relationships.](media/best-practices/visualize-successor-links-cross-project-wide.png)](media/best-practices/visualize-successor-links-cross-project-wide.png#lightbox)
+
+### Minimum Viable Product versus Critical Path Management  
+
+Azure Boards doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks. For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
 
 
 ## Perform milestone planning
-
 
 To gain insight into what features can ship when, use the **Forecast** tool. This tool requires that you provide estimates to the Story Points, Effort, or Size field for each requirement. If you want to forecast on a simple count of work items, then simply assign the value of **1** to requirement estimates.
 
@@ -181,13 +182,42 @@ Forecast
 Capacity (Scrum)  
 
 ## Monitor and report on progress 
-
+ 
+To review progress and deliverables, Azure Boards provides the following tools. 
+ 
 - Kanban board 
-- Rollup 
-- Delivery plans and multiple team deliverables
+- Features backlog with rollup columns
+- Delivery plans
+
+### Features Kanban board 
+ 
+Your Features board is another place to review progress and ensure the continuous flow of deliverables. The following image illustrates a customized Features board. In progress columns have been added such as *Need more info*, *Spec Complete*, *In Progress*, and *Customer Rollout*. These provide a more natural set of states as Features get proposed, researched, designed, developed, and then deployed to production. 
+
+[!INCLUDE [temp](../includes/lightbox-image.md)] 
+
+> [!div class="mx-imgBorder"]  
+> [![Screenshot of Features board with customized columns.](../boards/media/best-practices/features-board-customized.png)](media/best-practices/features-board-customized.png#lightbox)
+
+### Rollup columns
+
+One quick and visual way to monitor progress is from the Features backlog. By adding the rollup progress bar column, you can see what percentage of work items are completed for each feature, as shown in the following image.  
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Features backlog showing progress bars column option.](../boards/media/best-practices/feature-backlog-progress.png)  
+ 
+### Delivery plans and multiple team deliverables  
+
+To review features delivered across several teams, configure a delivery plan. Delivery plans provide an interactive board to review a calendar schedule of stories or features several teams plan to deliver.  
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Delivery plan, annotated.](../boards/plans/media/plans_view2.png) 
+ 
 
 ## Get notified of additions and changes 
- Set alerts - personal, team, project 
+
+Azure DevOps provides a robust alert system, allowing project members to set alerts for themselves, a team, or a project.   
+
+As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, as described in this article, or team or project alerts.
 
 
 ## Required Azure DevOps configuration 
