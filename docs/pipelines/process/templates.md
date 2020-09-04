@@ -81,6 +81,21 @@ steps:
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
 
+You can iterate through an object and print out each string in the object. 
+
+```yaml
+parameters:
+- name: listOfStrings
+  type: object
+  default:
+  - one
+  - two
+
+steps:
+- ${{ each value in parameters.listOfStrings }}:
+  - script: echo ${{ value }}
+``` 
+
 ## Extend from a template
 
 To increase security, you can enforce that a pipeline extends from a particular template. The file `start.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. 
@@ -399,6 +414,7 @@ jobs:
 - job: build
   pool: ${{ parameters.pool }}
 ```
+
 
 ## Variable reuse
 
