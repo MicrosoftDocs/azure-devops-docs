@@ -136,7 +136,7 @@ extends:
 
 ## Extend from a template with resources
 
-You can also use `extends` to extend from a template in your azure pipeline that contains resources. 
+You can also use `extends` to extend from a template in your Azure pipeline that contains resources. 
 
 ```yaml
 # File: azure-pipelines.yml
@@ -160,7 +160,7 @@ steps:
 
 ## Insert a template
 
-You can copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
+You can copy content from one YAML and reuse it in a different YAML. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 
 ```yaml
 # File: include-npm-steps.yml
