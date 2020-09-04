@@ -181,7 +181,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
 
 ::: moniker-end
 
-::: moniker range="(>= tfs-2015 <= tfs-2018) || >= azure-devops-2019"
+::: moniker range=">= tfs-2015 <= tfs-2018 || >= azure-devops-2019"
 
 ## Deploy your app
 
