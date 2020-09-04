@@ -31,14 +31,7 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
       ::: moniker-end
 
-      ::: moniker range="<= tfs-2018"
-      
-      > [!div class="mx-imgBorder"] 
-      > ![Connect to feed button in Azure Artifacts TFS](../media/connect-to-feed.png)
-
-      ::: moniker-end
-
-      ::: moniker range=">= tfs-2017 < azure-devops"
+      ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
       > [!div class="mx-imgBorder"] 
       > ![Connect to feed TFS](../media/connect-to-feed.png)
@@ -60,14 +53,7 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
       ::: moniker-end
 
-      ::: moniker range="<= tfs-2018"
-
-      > [!div class="mx-imgBorder"] 
-      > ![Connect to feed npm TFS](../media/connect-to-feed-npm-registry.png)
-
-      ::: moniker-end
-
-      ::: moniker range=">= tfs-2017 < azure-devops"
+      ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
       > [!div class="mx-imgBorder"] 
       > ![Connect to feed TFS project setup](../media/connect-to-feed-npm-registry.png)
@@ -312,3 +298,8 @@ To fix this issue, rerun Node.js setup and ensure the `Add to PATH` option and i
 > ![Add to PATH install option in Node.js setup](./media/node-setup.png)
 
 Alternatively, you can edit the PATH variable to add `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell).
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Publish npm packages to your feed](../../pipelines/artifacts/npm.md)
