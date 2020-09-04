@@ -248,7 +248,11 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 ::: moniker-end
 
+::: moniker range="< azure-devops-2019 || azure-devops"
+
 ## FAQ
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
