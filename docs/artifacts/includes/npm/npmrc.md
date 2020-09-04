@@ -34,7 +34,7 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
     always-auth=true
     ```
 
-**Setup credentials:**
+**Set up credentials:**
 
 Set up credentials by following these four steps:
 
