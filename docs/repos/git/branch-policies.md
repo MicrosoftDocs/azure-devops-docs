@@ -102,9 +102,13 @@ Linking work items provides additional context for your changes and ensures that
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2020" 
+::: moniker range=">= tfs-2017" 
 
 ## Check for comment resolution
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020" 
 
 Configure a comment resolution policy for your branch by selecting **Check for comment resolution**.
 
@@ -115,8 +119,6 @@ For more information on working with pull request comments, see [Pull requests -
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017  < azure-devops-2020"
-
-## Check for comment resolution
 
 Configure a comment resolution policy for your branch by selecting **Check for comment resolution**.
 
@@ -162,10 +164,14 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
 <a name="require-the-pull-request-to-build"></a>
   
 ::: moniker-end 
- 
-::: moniker range=">= azure-devops-2020" 
+
+::: moniker range=">= tfs-2015" 
 
 ## Build validation
+
+::: moniker-end
+ 
+::: moniker range=">= azure-devops-2020" 
 
 Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
 Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/azure/devops/learn/what-is-continuous-integration) (CI) on your development branches to catch problems early.
@@ -199,8 +205,6 @@ When the owner pushes changes that build successfully, the policy status is upda
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < azure-devops-2020" 
-
-## Build validation
 
 Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
 Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/azure/devops/learn/what-is-continuous-integration) (CI) on your development branches to catch problems early.

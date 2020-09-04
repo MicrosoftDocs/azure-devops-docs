@@ -28,17 +28,15 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
 
 ::: moniker-end
 
-::: moniker range=" azure-devops-2019"
-
 ## How do I get started on-premises?
+
+::: moniker range=">= azure-devops-2019"
 
 - Download and install [Azure DevOps Server](https://azure.microsoft.com/services/devops/server/)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-
-## How do I get started on-premises?
 
 - To get started with an on-premises instance, download and install the [latest version of TFS](https://visualstudio.microsoft.com/downloads/). 
 - [Configure the installation](/azure/devops/server/install/get-started), which creates a default  collection.
