@@ -17,7 +17,11 @@ monikerRange: '>= tfs-2015'
 
 Build and deploy your apps. Find guidance based on your language and platform. 
 
+::: moniker range="(>= tfs-2015 <= tfs-2018) || >= azure-devops-2019"
+
 ## Build your app
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -177,7 +181,11 @@ Build and deploy your apps. Find guidance based on your language and platform.
 
 ::: moniker-end
 
+::: moniker range="(>= tfs-2015 <= tfs-2018) || >= azure-devops-2019"
+
 ## Deploy your app
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 

@@ -102,7 +102,11 @@ For more information, see [Azure virtual machine scale set agents](scale-set-age
 
 ::: moniker-end
 
+::: moniker range=">= tfs-2015 || azure-devops"
+
 ## Parallel jobs
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
