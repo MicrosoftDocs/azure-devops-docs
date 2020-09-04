@@ -59,9 +59,14 @@ NuGet 4.8.2 and later supports the Azure Artifacts Credential Provider, which au
 
 Then, run any [NuGet command](/nuget/tools/nuget-exe-cli-reference).
 
-::: moniker range="azure-devops"
+::: moniker range="<= tfs-2018 || azure-devops"
 
 ## Add a feed to NuGet 2
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
 NuGet 2 uses Personal Access Tokens to access feeds.
 
 To use a 2.x client, first get the v3 feed URL: 
@@ -95,7 +100,6 @@ Then, run any [NuGet command](/nuget/tools/nuget-exe-cli-reference).
 
 ::: moniker range="<= tfs-2018"
 
-## Add a feed to NuGet 2
 NuGet 2 uses Personal Access Tokens to access feeds.
 
 To use a 2.x client, first get the v3 feed URL: 
