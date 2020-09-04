@@ -98,7 +98,7 @@ Here's how the default, inherited states map to the state categories for all thr
 </tr>
 <tr valign="top" >
 <td><strong>Resolved:</strong> Assigned to states that represent a solution has been implemented, but are not yet verified. Generally these states apply to bug WITs. Work items in a Resolved state appear on the backlog by default. The Agile tools treat the Resolved state category exactly the same as the In Progress state category. </td> 
-<td>Resolved (Bug, Epic, Feature)</td> 
+<td>Resolved (Bug)</td> 
 <td>n/a </td> 
 </tr>
 <tr valign="top" >
