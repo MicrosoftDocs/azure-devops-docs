@@ -60,7 +60,10 @@ To define the branch control check:
 
 :::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
 
-At run time, the check would validate branches for all linked resources in the run against the allowed list. If any one of the branches do not match the criteria, the check fails and the stage is marked failed.   
+At run time, the check would validate branches for all linked resources in the run against the allowed list. If any one of the branches do not match the criteria, the check fails and the stage is marked failed. 
+
+> [!NOTE]
+> The check requires the branch names to be fully qualified. Make sure the format for branch name is `ref/heads/<branch name`
 
 ## Business hours
 
