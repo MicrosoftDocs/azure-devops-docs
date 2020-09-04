@@ -136,7 +136,7 @@ extends:
 
 ## Extend from a template with resources
 
-You can also use `extends` to extend from a template in your azure pipeline that contains resources. 
+You can also use `extends` to extend from a template in your Azure pipeline that contains resources. 
 
 ```yaml
 # File: azure-pipelines.yml
@@ -160,7 +160,7 @@ steps:
 
 ## Insert a template
 
-You can copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
+You can copy content from one YAML and reuse it in a different YAML. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 
 ```yaml
 # File: include-npm-steps.yml
@@ -867,7 +867,7 @@ jobs:
 
 If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example, `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
 
-## Limits
+## Imposed limits
 
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
@@ -879,7 +879,7 @@ To help prevent runaway growth, Azure Pipelines imposes the following limits:
 
 ::: moniker range="azure-devops-2019"
 
-## Parameters
+## Template parameters
 
 You can pass parameters to templates.
 The `parameters` section defines what parameters are available in the template and their default values. 
@@ -1054,7 +1054,7 @@ If you want to use a particular, fixed version of the template, be sure to pin t
 Refs are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
 
-## Template expressions
+## Expressions
 
 Use template [expressions](expressions.md) to specify how values are dynamically resolved during pipeline initialization.
 Wrap your template expression inside this syntax: `${{ }}`.
