@@ -161,41 +161,6 @@ Parallel jobs are purchased at the organization level, and they are shared by al
 
 1. You start a run in the second project. That run won't start until one of the runs in your first project is completed.
 
-## FAQ
-
-### How do I qualify for the free tier of public projects?
-
-We'll automatically apply the free tier limits for public projects if you meet both of these conditions:
-
-* Your pipeline is part of an Azure Pipelines [public project](../../organizations/public/index.md). 
-* Your pipeline builds a public repository from GitHub or from the same public project in your Azure DevOps organization.
-
-### Are there limits on who can use Azure Pipelines?
-
-You can have as many users as you want when you're using Azure Pipelines. There is no per-user charge for using Azure Pipelines. Users with both [basic and stakeholder access](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) can author as many builds and releases as they want.
-
-### Are there any limits on the number of builds and release pipelines that I can create?
-
-No. You can create hundreds or even thousands of pipelines for no charge. You can register any number of self-hosted agents for no charge.
-
-### As a Visual Studio Enterprise subscriber, do I get additional parallel jobs for TFS and Azure Pipelines?
-
-Yes. Visual Studio Enterprise subscribers get [one parallel job in Team Foundation Server 2017 or later](concurrent-pipelines-tfs.md) and one self-hosted parallel job in each Azure DevOps Services organization where they are a member.
-
-### What about the option to pay for hosted agents by the minute?
-
-Some of our earlier customers are still on a per-minute plan for the hosted agents. In this plan, you pay $0.05/minute for the first 20 hours after the free tier, and $0.01/minute after 20 hours. Because of the following limitations in this plan, you might want to consider moving to the parallel jobs model:
-
-- When you're using the per-minute plan, you can run only one job at a time.
-- If you run builds for more than 14 paid hours in a month, the per-minute plan might be less cost-effective than the parallel jobs model.
-
-### I use XAML build controllers with my organization. How am I charged for those?
-
-You can register one XAML build controller for each self-hosted parallel job in your organization.
-Your organization gets at least one free self-hosted parallel job, so you can register one XAML build controller for no additional charge.
-For each additional XAML build controller, you'll need an additional self-hosted parallel job.
-
-
 ::: moniker-end
 
 
@@ -232,7 +197,7 @@ For example, here's an organization that has multiple  Team Foundation Servers. 
 
 ![Parallel jobs in an organization example](media/concurrent-pipelines-tfs/concurrent-pipelines-in-an-organization-example.png)
 
-## Determine how many parallel jobs you need
+## Determine the number of parallel jobs you need
 
 You can begin by seeing if your teams can get by with the parallel jobs you've got by default. As the number of queued releases exceeds the number of parallel jobs you have, your release queues will grow longer. When you find the queue delays are too long, you can purchase additional parallel jobs as needed.
 
@@ -281,8 +246,51 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 2. View or edit the number of purchased parallel jobs.
 
 
+::: moniker-end
+
+::: moniker range="< azure-devops-2019 || azure-devops"
 
 ## FAQ
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+### How do I qualify for the free tier of public projects?
+
+We'll automatically apply the free tier limits for public projects if you meet both of these conditions:
+
+* Your pipeline is part of an Azure Pipelines [public project](../../organizations/public/index.md). 
+* Your pipeline builds a public repository from GitHub or from the same public project in your Azure DevOps organization.
+
+### Are there limits on who can use Azure Pipelines?
+
+You can have as many users as you want when you're using Azure Pipelines. There is no per-user charge for using Azure Pipelines. Users with both [basic and stakeholder access](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) can author as many builds and releases as they want.
+
+### Are there any limits on the number of builds and release pipelines that I can create?
+
+No. You can create hundreds or even thousands of pipelines for no charge. You can register any number of self-hosted agents for no charge.
+
+### As a Visual Studio Enterprise subscriber, do I get additional parallel jobs for TFS and Azure Pipelines?
+
+Yes. Visual Studio Enterprise subscribers get [one parallel job in Team Foundation Server 2017 or later](concurrent-pipelines-tfs.md) and one self-hosted parallel job in each Azure DevOps Services organization where they are a member.
+
+### What about the option to pay for hosted agents by the minute?
+
+Some of our earlier customers are still on a per-minute plan for the hosted agents. In this plan, you pay $0.05/minute for the first 20 hours after the free tier, and $0.01/minute after 20 hours. Because of the following limitations in this plan, you might want to consider moving to the parallel jobs model:
+
+- When you're using the per-minute plan, you can run only one job at a time.
+- If you run builds for more than 14 paid hours in a month, the per-minute plan might be less cost-effective than the parallel jobs model.
+
+### I use XAML build controllers with my organization. How am I charged for those?
+
+You can register one XAML build controller for each self-hosted parallel job in your organization.
+Your organization gets at least one free self-hosted parallel job, so you can register one XAML build controller for no additional charge.
+For each additional XAML build controller, you'll need an additional self-hosted parallel job.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 
 ### Who can use the system?
 
