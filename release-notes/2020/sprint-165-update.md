@@ -9,7 +9,7 @@ description: In the **Sprint 165 Update** of Azure DevOps, we've added a **previ
 
 # Preview fully parsed YAML document without running the pipeline
 
-With this update, we've added a preview but don't run mode for YAML pipelines so you can try out a YAML pipeline without running it or committing it to a repo. This will let you see a fully parsed YAML document without running the pipeline.
+With this update, we've added a **preview but don't run mode** for YAML pipelines so you can try out a YAML pipeline without running it or committing it to a repo. This will let you see a fully parsed YAML document without running the pipeline.
 
 Check out the [Features](#features) list below for details.
 
