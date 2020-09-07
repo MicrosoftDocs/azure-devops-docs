@@ -86,12 +86,12 @@
         "user-guide/**/**.md": "Azure DevOps"
       },
       "monikerRange": {
-        "report/admin/**": "<= azure-devops-2019",
+        "report/admin/**": "< azure-devops",
         "report/extend-analytics/**": ">= azure-devops-2019",
         "report/powerbi/**": ">= azure-devops-2019",
-        "report/sql-reports/**": "<= azure-devops-2020",
-        "reference/witadmin/**": "<= azure-devops-2019",
-        "reference/mapping/**": "<= azure-devops-2019"
+        "report/sql-reports/**": "< azure-devops",
+        "reference/witadmin/**": "< azure-devops",
+        "reference/mapping/**": "<= tfs-2018"
       },
       "ms.author": {
         "artifacts/**": "rabououn",

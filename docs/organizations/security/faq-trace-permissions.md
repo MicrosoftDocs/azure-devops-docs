@@ -62,7 +62,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 1. Select **Project settings** > **Security**, and then enter the user name into the filter box.
 
-   :::image type="content" source="media/security-page-enter-user-name-2019.png" alt-text="Enter user name into filter box":::
+   :::image type="content" source="media/security-page-enter-user-name-2019.png" alt-text="Enter user name into the filter box":::
 
 2. You should now have a user-specific view that shows what permissions they have. To trace why a user does or doesn't have any of the listed permissions, hover over the permission and choose **Why**.
 
