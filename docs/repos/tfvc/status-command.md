@@ -58,7 +58,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
 	<td><p>Specifies the shelveset that contains the changes you want to list.</p><p>This option cannot be combined with the <strong>/workspace</strong> option.</p></td></tr>
 <tr>
 	<td><p><strong>/user</strong></p></td>
-    <td><p>Lists all pending changes made by the specified user. An asterisk (<strong></strong></em>) symbol includes data about changes from all users. The default is the current user.</p><table><thead>
+    <td><p>Lists all pending changes made by the specified user. An asterisk (<strong></strong></em>) symbol includes data about changes from all users. The default is the current user.</p><p>Acceptable values for this option:</p><ul><li>username</li><li>useraccount</li><li>an asterisk</li></ul><table><thead>
 <tr><th><strong>Note</strong></th></tr></thead><tbody>
 <tr>
 	<td><p>See Remarks, below, for the limitations of this option.</p></td></tr></tbody></table></td></tr>

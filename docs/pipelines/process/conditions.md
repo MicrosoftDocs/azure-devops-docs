@@ -146,7 +146,6 @@ jobs:
     steps:
     - script: echo testNull is blank
     condition: eq('${{ variables.testNull }}', '')
-
 ```
 
 ### Use a template parameter as part of a condition
@@ -194,7 +193,6 @@ extends:
   template: parameters.yml
 ```
 
-
 ### Use the output variable from a job in a condition in a subsequent job
 
 You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](/azure/devops/pipelines/process/variables#set-a-multi-job-output-variable) using `isOutput=true`. 
@@ -231,7 +229,6 @@ If you defined the pipelines using a YAML file, then this is supported. This sce
 You can use the result of the previous job. For example, in this YAML file, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows the job to run because Job A succeeded with issues. 
 
 ```yaml
-
 jobs:
 - job: A
   displayName: Job A
@@ -247,12 +244,12 @@ jobs:
   steps:
   - script: echo Job B ran
 ```
+
 ### I've got a conditional step that runs even when a job is canceled. How do I manage to cancel all jobs at once?
 
 You'll experience this issue if the condition that's configured in the stage doesn't include a job status check function. To resolve the issue, add a job status check function to the condition. If you cancel a job while it's in the queue, the entire job is canceled, including all the other stages, with this function configured. For more information, see [Job status functions](expressions.md#job-status-functions).
 
 ```yaml
-
 stages:
 - stage: Stage1
   displayName: Stage 1
@@ -265,8 +262,7 @@ stages:
     - task: CmdLine@2
       displayName: Show variables
       inputs:
-        script: >
-          printenv
+        script: 'printenv'
 
 - stage: Stage2
   displayName: stage 2
@@ -279,8 +275,7 @@ stages:
     - task: CmdLine@2
       displayName: Show variables 2
       inputs:
-        script: >
-          printenv
+        script: 'printenv'
           
 - stage: Stage3
   displayName: stage 3
@@ -293,9 +288,7 @@ stages:
     - task: CmdLine@2
       displayName: Show variables 3
       inputs:
-        script: >
-          printenv
-
+        script: 'printenv'
 ```
 
 <!-- ENDSECTION -->
