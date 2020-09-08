@@ -4,9 +4,10 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn about parallel jobs in Azure Pipelines
 ms.topic: conceptual
+ms.custom: contperfq1
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
-ms.date: 03/11/2020
+ms.date: 09/08/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -39,7 +40,7 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 > [!IMPORTANT]
 > Starting with Azure DevOps Server 2019, you do not have to pay for self-hosted concurrent jobs in releases. You are only limited by the number of agents that you have.
 
-You do not need to pay for parallel jobs if you are using an on-premise server. The concept of parallel jobs only applies to Azure DevOps Services. 
+You do not need to pay for parallel jobs if you are using an on-premises server. The concept of parallel jobs only applies to Azure DevOps Services. 
 
 ::: moniker-end
 
