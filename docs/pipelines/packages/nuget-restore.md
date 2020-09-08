@@ -38,7 +38,7 @@ To build a solution that relies on NuGet packages from Azure artifacts feeds, we
 - **Command:** restore.
 - **Path to solution, packages.config, or project.json:** The path to the solution, packages.config, or project.json file that references the packages to be restored.
 4. If you've checked in a [NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and specify the file from your repo. If you're using a single Azure Artifacts feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
-5. Check the **Use packages from NuGet.ord** option if you want to include NuGet.org in the generated NuGet.config.
+5. Check the **Use packages from NuGet.org** option if you want to include NuGet.org in the generated NuGet.config.
 6. Select **Save & queue** .
 
 > [!div class="mx-imgBorder"]
