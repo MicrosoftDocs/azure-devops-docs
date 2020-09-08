@@ -84,7 +84,7 @@ Complete the following steps when your Azure DevOps Administrator in Azure AD is
 
 ## Related articles
 
-- [Resolve orphaned organization](resolve-orphaned-organization.md)
 - [Change organization owner](change-organization-ownership.md)
 - [Administrator role permissions in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 - [Delete your organization](delete-your-organization.md)
+- [Get list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
