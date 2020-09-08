@@ -22,7 +22,7 @@ To use scale set agents, you will first create a VM scale set in your Azure subs
 
 The Ubuntu 20.04 image is now available in preview for Azure Pipelines hosted pools. To use this image, update your YAML file to include vmImage:'ubuntu-20.04' . Please note, the ubuntu-latest image label will continue to point to ubuntu-18.04 until ubuntu-20.04 comes out of preview later this year.
 
-Please note, since the ubuntu 20.04 image is in preview, it currently doesn't support all of the tooling available in ubuntu-18.04 . [Learn more](https://github.com/actions/virtual-environments/tree/master/images/linux)
+Please note, since the ubuntu 20.04 image is in preview, it currently doesn't support all of the tooling available in ubuntu-18.04 . [Learn more](https://github.com/actions/virtual-environments/tree/main/images/linux)
 
 ### Support for GitHub packages in YAML pipelines
 
