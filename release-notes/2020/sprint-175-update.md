@@ -10,7 +10,7 @@ description:
 
 # Scale-set agents is now generally available
 
-For the past couple of months, this feature has been in preview. We're now announcing the general availability of scale-set agents.
+In the past couple of months, we released the scale-set agents for preview. And we're now excited to announce its generally availability.
 
 Check out the [Features](#features) list below for details.
 
