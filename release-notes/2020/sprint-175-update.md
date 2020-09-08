@@ -23,7 +23,7 @@ Check out the [Features](#features) list below for details.
 [!INCLUDE [sprint-175-update-links](includes/pipelines/sprint-175-update-links.md)]
 
 ### Azure Boards
-[!INCLUDE 
+[!INCLUDE [sprint-175-update-links](includes/boards/sprint-175-update.md)]
 
 ### Azure Pipelines
 [!INCLUDE [sprint-175-update](includes/pipelines/sprint-175-update.md)]
