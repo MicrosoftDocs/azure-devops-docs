@@ -221,7 +221,7 @@ Users who have Visual Studio Enterprise subscriptions are assigned to **VS Enter
 
 1. Browse to **Server settings**, **Access levels**.
 
-   ![control-panel-server-vs-enterprise-access-levels](media/concurrent-pipelines-tfs/control-panel-server-vs-enterprise-access-levels.png)
+   ![control panel server versus enterprise access levels](media/concurrent-pipelines-tfs/control-panel-server-vs-enterprise-access-levels.png)
 
    URL example: `http://{your_server}:8080/tfs/_admin/_licenses`
 
@@ -241,7 +241,7 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 1. Browse to **Collection settings**, **Pipelines**, **Resource limits**.
 
-   ![control-panel-account-build-and-release-resource-limits](media/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
+   ![Set resource limits](media/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
 
    URL example: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue?_a=resourceLimits`
 
