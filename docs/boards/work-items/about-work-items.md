@@ -1,7 +1,7 @@
 ---
 title: Using work items to track user stories, & more
-titleSuffix: Azure Boards and TFS
-description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & TFS 
+titleSuffix: Azure Boards
+description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & Azure DevOps 
 ms.custom: work-items, seodec18, contentperfq4
 ms.technology: devops-agile
 ms.assetid:  
@@ -235,20 +235,20 @@ Once you have a template defined, you can share it via email or a [dashboard](..
 
 <a id="customize" />
 
-## Customize a WIT 
+## Customize a work item type 
 
 ::: moniker range="azure-devops"
-You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
+You can add or modify the fields contained within a work item type or add a custom work item type. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see:
+You can add or modify the fields contained within a work item type or add a custom work item type. To learn more, see:
 - For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).  
 - For project collections that use the On-premises XML process model: [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
+You can add or modify the fields contained within a work item type or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
 
