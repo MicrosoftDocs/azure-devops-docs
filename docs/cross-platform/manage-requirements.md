@@ -18,14 +18,14 @@ ms.date: 09/08/2020
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 
-This article provides an overview of the tools and features Azure DevOps provides to manage requirements. It maps the standard Agile requirements management tasks by project managers to the tools Azure DevOps supports.  It introduces the essential concepts to become familiar with, and then links to the how-to topics to learn more. 
+This article provides an overview of the tools and features Azure DevOps provides to manage requirements. It maps Agile requirements management tasks by project managers to the tools Azure DevOps supports. It introduces the essential concepts with which to become familiar. More detailed information is provided under the Related articles section.  
 
 
 > [!NOTE]
 > *Requirements management is the process of documenting, analyzing, tracing, prioritizing and agreeing on requirements and then controlling change and communicating to relevant stakeholders. It is a continuous process throughout a project. A requirement is a capability to which a project outcome (product or service) should conform.*
 
 
-Agile requirements management encompasses the following scenarios.   
+Agile requirements management includes support for the following scenarios.   
 
 > [!div class="checklist"]  
 > - Define and track status of requirements
@@ -86,11 +86,10 @@ The work item types used to capture requirements and code defects are illustrate
 
 You can customize default work item types or add a custom work item type. Supported customizations include the following: 
 - Add custom fields 
-- Add custom controls to gain enhanced functionality  
 - Modify workflow states and add custom rules to support business workflow processes 
 - Customize backlogs and boards to support additional work item types 
 - Add custom portfolio backlogs, up to five in total 
- 
+- Add custom controls to work item forms to gain enhanced functionality. 
 
 ### Add work items to product backlog or board 
 
@@ -188,6 +187,13 @@ Azure Board tools that support Scrum practices include:
 - Monitor sprint burndown 
 
 
+#### Sprint burndown chart 
+
+By updating the status of work daily throughout a sprint, you can easily track sprint progress with the Sprint burndown chart, as shown in the following image. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Analytics Sprint burndown chart.](../boards/media/best-practices/sprint-burndown-chart.png) 
+
 ## Manage dependencies
 
 In Microsoft Project, you manage tasks that depend on the completion of other tasks by linking them. To manage dependencies in Azure Boards, you can link work items using the Predecessor/Successor link type. Once you've linked work items, you can view link relationships using the [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) Marketplace extension. The following image illustrates link relationships among several work items. 
@@ -206,25 +212,41 @@ Azure Boards doesn't provide a native view of the critical path. In part, as Agi
 
 To gain insight into what features can ship when, use the **Forecast** tool. This tool requires that you provide estimates to the Story Points, Effort, or Size field for each requirement. If you want to forecast on a simple count of work items, then simply assign the value of **1** to requirement estimates.
 
+With estimates assigned to each requirement, you can set a team velocity. In the example below, we specify 12 for the velocity, equivalent to stating that on average the team can complete 12 Story Points per sprint. The Forecast tool shows which requirements and features the team can complete within the next six sprints. Using the Planning tool, you can quickly assign requirements to the forecasted sprints.  
 
-Size estimate
-Forecast
+[!INCLUDE [temp](../includes/lightbox-image.md)] 
+
+> [!div class="mx-imgBorder"]  
+> [![Screenshot of Forecast of Requirements backlog, ordered by feature parent.](../boards/media/best-practices/forecast-product-backlog-ordered-parent.png)](media/best-practices/forecast-product-backlog-ordered-parent.png#lightbox)
 
 If you want to integrate your requirements planning with Microsoft Project tools, you may do so via a Marketplace extension.  
 
 
+#### Milestone planning
+
+Milestone markers aren't used in Azure Boards work tracking, except for Delivery Plans. [Delivery Plans](plans/review-team-plans.md) provide a calendar view and allow you to define a milestone marker. 
+However, you can use one or more of the following options to mark a work item as a milestone: 
+- Simply prepend or append the word **Milestone** in the title of your work item
+- Add a work item tag labeled **Milestone**   
+- Add a custom field labeled **Milestone** and populate it with a pick list of milestones  
+- Link work items using the Predecessor/Successor or Related link type to a milestone work item 
+- Assign a milestone work item to the sprint in which it's targeted for completion. 
+ 
+
+
 ## Assign requirements to timeboxes 
 
-Sprints - iteration paths 
-Planning mode 
-Forecast 
-Capacity (Scrum)  
+You can quickly assign work items to a sprint through drag-and-drop from the product backlog to the sprint listed within the Planning pane. 
+
+> [!div class="mx-imgBorder"]
+> ![Boards>Backlogs>Open view options and choose Planning](../boards/sprints/media/define-sprints/view-options-planning-menu.png)
+ 
 
 ## Monitor and report on progress 
- 
-To review progress and deliverables, Azure Boards provides the following tools. 
- 
-- Kanban board 
+
+The three main tools you'll want to use to review progress and deliverables are: 
+
+- Features Kanban board 
 - Features backlog with rollup columns
 - Delivery plans
 
@@ -237,7 +259,7 @@ Your Features board is another place to review progress and ensure the continuou
 > [!div class="mx-imgBorder"]  
 > [![Screenshot of Features board with customized columns.](../boards/media/best-practices/features-board-customized.png)](media/best-practices/features-board-customized.png#lightbox)
 
-### Rollup columns
+### Rollup 
 
 One quick and visual way to monitor progress is from the Features backlog. By adding the rollup progress bar column, you can see what percentage of work items are completed for each feature, as shown in the following image.  
 
@@ -257,19 +279,9 @@ To review features delivered across several teams, configure a delivery plan. De
 Azure DevOps provides a robust alert system, allowing project members to set alerts for themselves, a team, or a project.   
 
 As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, as described in this article, or team or project alerts.
-
-
-## Required Azure DevOps configuration 
-
-- Teams, defined and configures
-- Area Paths
-- Iteration Paths 
-- Customize Kanban boards 
-
-
-
+ 
 ## Related articles
-
+ 
 
 ### Key concepts 
 
@@ -283,63 +295,10 @@ As changes occur to work items, code reviews, source control files, and builds, 
 - [Best practices for "light-weight" Agile project management](../boards/best-practices-agile-project-management.md)
 - [Configure and customize Azure Boards](../boards/configure-customize.md)
 
-
-
 ### Get started guides and tutorials 
 
 - [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 
 
 ### How to guides 
-
-
-<!---
-
-
-
-Tools/Features
-
-- Work items, Product and Portfolio Backlogs
-- Change Notification
-- Kanban boards 
-- Stack rank, Priority, Severity 
-- Link work items, Link types, Attachments, tags 
-- Area Paths, Iteration Paths, Forecast, Planning tool 
-- Discussion within work item 
-- Wiki 
-- Customization – Add fields, Customize workflow 
-- Rollup  
-
-## Extensions 
-- Delivery Plans
  
-
-
----
-:::row:::
-   :::column span="":::
-      **Key concepts**
-   :::column-end:::
-   :::column span="":::
-      **Get started and tutorial guides**
-   :::column-end:::
-   :::column span="":::
-      **How-to articles**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-      - [About work items](../boards/work-items/about-work-items.md) 
-      - [About Area and Iteration Paths (sprints)](../organizations/settings/about-areas-iterations.md) 
-      - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md) 
-   :::column-end:::
-   :::column span="":::
-      **Get started and tutorial guides**
-   :::column-end:::
-   :::column span="":::
-      **How-to articles**
-   :::column-end:::
-:::row-end:::
-
--->
