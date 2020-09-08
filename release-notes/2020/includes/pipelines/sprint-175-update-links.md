@@ -7,6 +7,7 @@ ms.topic: include
 ---
     
 - [General availability of Scale-set agents](#general-availability-of-scale-set-agents)
+- [Run this job next](#run-this-job-next)
 - [Template expressions allowed in YAML `resources` block](#template-expressions-allowed-in-yaml-resources-block)
-
+- [Control over automated task updates from Marketplace](#control-over-automated-task-updates-from-marketplace)
     
