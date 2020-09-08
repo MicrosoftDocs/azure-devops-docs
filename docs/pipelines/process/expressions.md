@@ -692,7 +692,7 @@ variables:
 
 steps:
 - script: echo $(firstEval)
-- script: echo $
+- script: echo $(secondEval)
 ```
 
 
