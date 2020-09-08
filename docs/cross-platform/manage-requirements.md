@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 08/18/2020
+ms.date: 09/08/2020
 ---
 
 
@@ -17,13 +17,15 @@ ms.date: 08/18/2020
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-> [!NOTE]
-> *Requirements management is the process of documenting, analyzing, tracing, prioritizing and agreeing on requirements and then controlling change and communicating to relevant stakeholders. It is a continuous process throughout a project. A requirement is a capability to which a project outcome (product or service) should conform.*
 
 This article provides an overview of the tools and features Azure DevOps provides to manage requirements. It maps the standard Agile requirements management tasks by project managers to the tools Azure DevOps supports.  It introduces the essential concepts to become familiar with, and then links to the how-to topics to learn more. 
 
 
-Requirements management encompasses the following scenarios.   
+> [!NOTE]
+> *Requirements management is the process of documenting, analyzing, tracing, prioritizing and agreeing on requirements and then controlling change and communicating to relevant stakeholders. It is a continuous process throughout a project. A requirement is a capability to which a project outcome (product or service) should conform.*
+
+
+Agile requirements management encompasses the following scenarios.   
 
 > [!div class="checklist"]  
 > - Define and track status of requirements
@@ -33,13 +35,13 @@ Requirements management encompasses the following scenarios.
 > - Perform milestone planning 
 > - Monitor and report on progress  
 
-Agile requirements management is conducted within an Agile culture where one or more of the following principles are in play:  
+Agile requirements management is also conducted within an Agile culture which requires support for the following principles and methods:  
 
 > [!div class="checklist"]  
 > - Alignment within the organization
-> - Support autonomous teams 
-> - Support Kanban
-> - Support Scrum methods 
+> - Autonomous teams 
+> - Kanban 
+> - Scrum   
 
 
 ## Capture requirements  
@@ -62,6 +64,16 @@ In a nutshell, you use work items to support these tasks:
 - You can use work item templates to quickly fill in work item fields
 - You can easily discuss work item specifics within the work item form, capturing a discussion thread which you can query on later
 - You can use ad hoc search or queries to find or list work items.  
+
+Other features that support end-to-end traceability are the **Development** and **Deployment** sections. These sections support the following tasks and insights:
+
+- Create a new branch or pull request from a work item
+- Complete the pull request
+- Perform a squash merge
+- Create a branch for several work items
+- Link a work item to existing development and build objects 
+- View the release stages associated with the work item within the work item form in real time 
+- View the status of releases within those work items that are associated with commits in the build and release pipelines  
  
 ### Work item types 
 
@@ -70,6 +82,15 @@ The work item types used to capture requirements and code defects are illustrate
 [!INCLUDE [temp](../boards/includes/work-item-types.md)]
 
 [!INCLUDE [temp](../boards/includes/note-requirements-terms.md)] 
+### Customize work item types  
+
+You can customize default work item types or add a custom work item type. Supported customizations include the following: 
+- Add custom fields 
+- Add custom controls to gain enhanced functionality  
+- Modify workflow states and add custom rules to support business workflow processes 
+- Customize backlogs and boards to support additional work item types 
+- Add custom portfolio backlogs, up to five in total 
+ 
 
 ### Add work items to product backlog or board 
 
@@ -100,11 +121,7 @@ Requirements often require detailed specifications to provide details that aren'
 
 You can then link your specifications or attach them to your requirements. 
  
-
-### Add custom fields to work items  
-
-You add a custom field to support tracking data requirements that aren't met with the existing set of fields.  
-
+ 
 ## Analyze, prioritize, and refine requirements
 
 Once you have a working backlog, you'll want to get it in priority order. You'll want to review and refine your requirements and make sure the acceptance criteria is well defined. These tasks are supported through the following Azure Board tools: 
@@ -121,32 +138,54 @@ Here the features backlog shows the sequence of features to ship.
 
 The product backlog starts out as a flat list. However, oftentimes you want to group requirements that support specific features or business objectives. Azure Boards supports this by providing portfolio work item types, portfolio backlogs and boards, and a Mapping pane to quickly link requirements to a portfolio work item. 
 
-An additional way to group requirements and work items in general, is adding tags to work items. 
+Adhoc tags added to work items are another way you can group requirements. 
 
 
 ### Epics, features, and portfolio backlogs
-Mapping 
-Epics
-Features
-Tags
+
+You group requirements under Features, and Features under Epics, using parent-child hierarchical links. This type of grouping is recommended for organizations with several teams that want to view rollups associated with multiple teams and to take advantage of all portfolio planning tools.
+
+Hierarchical grouping supports the following scenarios. 
+- Manage a portfolio of features that are supported by different development and management teams
+- Support rollup of estimates, work item counts, and more on product backlogs 
+ 
 
 ### Use tags to group work items   
  
 With work item tags, team members can assign ad-hoc tags to work items. You can use these tags to filter backlogs and boards as well as query on work items.  For example, the following image illustrates a Kanban board filtered on the *web* keyword which displays cards with the *Web* tag. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Kanban board, Filter using keyword search.](..//boards/boards/media/filter/filter-kb-text-web-services.png)
+> ![Screenshot of Kanban board, Filter using keyword search.](../boards/boards/media/filter/filter-kb-text-web-services.png)
 
 ## Implement Kanban or Scrum Agile methods
 Two of the major Agile methods are Kanban and Scrum. Azure Boards supports both methods. Or, teams can adapt them to use a combination of methods such as Scrumban. 
 
 ### Implement Kanban  
 
-Kanban board 
+Each product and portfolio backlog is associated with a corresponding Kanban board. Both backlogs and boards are associated with a team, and display work items based on the area and iteration paths selected by the team.
+
+Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. As work completes in one stage, you update the status of an item by dragging it to a downstream stage. 
+
+![Screenshot of Kanban board, Agile template, update status of work item](../boards/boards/media/ALM_CC_MoveCard.png) 
+
+Each team's board supports a number of additional configuration options.
 
 ### Implement Scrum  
 
-Sprint backlogs, Taskboards, Sprint burndown chart 
+Sprint backlogs and Taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. From your requirements backlog, you can drag-and-drop work items onto an iteration path, and then view that work in a separate **Sprint Backlog**. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Boards>Sprints>Backlog](../boards/work-items/media/view-add/view-sprint-backlogs.png)    
+
+Azure Board tools that support Scrum practices include: 
+
+- Assign requirements to a sprint  
+- Add tasks to requirements   
+- Set sprint capacity for team members
+- Adjust work to fit sprint capacity 
+- Share your sprint plan 
+- Filter, update tasks, and update task status 
+- Monitor sprint burndown 
 
 
 ## Manage dependencies
@@ -156,7 +195,7 @@ In Microsoft Project, you manage tasks that depend on the completion of other ta
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
 > [!div class="mx-imgBorder"]  
-> [![Screenshot of Visualize work item relationships.](media/best-practices/visualize-successor-links-cross-project-wide.png)](media/best-practices/visualize-successor-links-cross-project-wide.png#lightbox)
+> [![Screenshot of Visualize work item relationships.](../boards/media/best-practices/visualize-successor-links-cross-project-wide.png)](media/best-practices/visualize-successor-links-cross-project-wide.png#lightbox)
 
 ### Minimum Viable Product versus Critical Path Management  
 
@@ -237,6 +276,7 @@ As changes occur to work items, code reviews, source control files, and builds, 
 - [About work items](../boards/work-items/about-work-items.md) 
 - [About Area and Iteration Paths (sprints)](../organizations/settings/about-areas-iterations.md) 
 - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md) 
+- [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)
 
 ### Best practices
  
