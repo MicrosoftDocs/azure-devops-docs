@@ -396,7 +396,7 @@ Scale set agents currently supports Ubuntu Linux, Windows Server/DataCenter 2016
 
 ### Known issues
 
-* Debian Linux is not supported.
+* Debian or RedHat Linux are not supported. Only Ubuntu is.
 * Windows 10 client does not support running the pipeline agent as a local user and therefore the agent cannot interact with the UI. The agent will run as Local Service instead.
 
 ## Troubleshooting issues
