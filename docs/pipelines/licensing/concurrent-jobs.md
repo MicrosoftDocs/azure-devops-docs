@@ -1,10 +1,9 @@
 ---
 title: Parallel jobs 
 titleSuffix: Azure DevOps
-ms.custom: seodec18
+ms.custom: seodec18,contperfq1
 description: Learn about parallel jobs in Azure Pipelines
 ms.topic: conceptual
-ms.custom: contperfq1
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
 ms.date: 09/08/2020
