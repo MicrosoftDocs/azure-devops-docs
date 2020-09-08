@@ -7,7 +7,14 @@ ms.date: 09/10/2020
 description: 
 ---
 
-## 
+
+# Scale-set agents is now generally available
+
+We've been previewing this feature for the past couple of months, and we're excited to announce the generally availibility of the scale-set agents.
+
+Check out the [Features](#features) list below for details.
+
+## Features
 
 ### Azure Boards
 [!INCLUDE [sprint-175-update-links](includes/boards/sprint-175-update-links.md)]
@@ -31,7 +38,7 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the help menu to report a problem or provide a suggestion.
 
@@ -43,4 +50,3 @@ You can also get advice and your questions answered by the community on [Stack O
 Thanks,
 
 Aaron Hallberg
-  
