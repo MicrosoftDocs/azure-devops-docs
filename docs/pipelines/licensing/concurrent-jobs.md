@@ -28,7 +28,7 @@ This article describes the licensing model for Azure Pipelines in Team Foundatio
 
 A TFS _parallel job_ gives you the ability to run a single release at a time in a project collection. You can keep hundreds or even thousands of release jobs in your collection. But, to run more than one release at a time, you need additional parallel jobs.
 
-One free parallel job is included with every collection in a Team Foundation server. Every Visual Studio Enterprise subscriber in a Team Foundation server contributes one additional parallel job. 
+One free parallel job is included with every collection in a Team Foundation Server. Every Visual Studio Enterprise subscriber in a Team Foundation Server contributes one additional parallel job. 
 
 You can buy additional private jobs from the Visual Studio Marketplace.
 
@@ -38,6 +38,8 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 
 > [!IMPORTANT]
 > Starting with Azure DevOps Server 2019, you do not have to pay for self-hosted concurrent jobs in releases. You are only limited by the number of agents that you have.
+
+You do not need to pay for parallel jobs if you are using an on-premise server. The concept of parallel jobs only applies to Azure DevOps Services. 
 
 ::: moniker-end
 
@@ -168,7 +170,7 @@ Parallel jobs are purchased at the organization level, and they are shared by al
 
 ## How a parallel job is consumed
 
-For example, a collection in a Team Foundation server has one parallel job. This allows users in that collection to run only one release at a time. When additional releases are triggered, they are queued and will wait for the previous one to complete.
+For example, a collection in a Team Foundation Server has one parallel job. This allows users in that collection to run only one release at a time. When additional releases are triggered, they are queued and will wait for the previous one to complete.
 
 A release requires a parallel job only when it is being actively deployed to a stage. Waiting for an approval does not consume a parallel job. However, waiting for a manual intervention in the middle of a deployment does consume a parallel job.
 
