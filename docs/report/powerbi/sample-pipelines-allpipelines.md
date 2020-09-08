@@ -1,5 +1,5 @@
 ---
-title: Pipeline outcome summary sample Power BI report 
+title: Pipeline outcome summary for all pipelines sample report 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a pipeline outcome summary Power BI report for all pipelines in the project  
 ms.technology: devops-analytics
@@ -8,7 +8,7 @@ ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'  
+monikerRange: '>= azure-devops-2020'     
 ms.date: 01/30/2020
 ---
 

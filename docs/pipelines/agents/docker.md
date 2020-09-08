@@ -386,7 +386,7 @@ The suggested base Dockerfiles are just that: suggestions.
 You can extend the Dockerfile to include additional tools and their dependencies, or build your own container using this one as a base layer. Just make sure that the following things are left untouched:
 
 - The `start.sh` script is called by the Dockerfile
-- The `start.sh` script is the last command that the Dockerfile
+- The `start.sh` script is the last command in the Dockerfile
 - Ensure that derivative containers do not remove any of the dependencies stated by the Dockerfile
 
 ## Using Docker within a Docker container

@@ -45,7 +45,7 @@ Your extension's static content is useful when you're enhancing or decorating da
    ```
 2. Remove the `baseUri` property (if set) from your extension manifest.    
 3. Package your extension ([steps](../publish/command-line.md))   
-4. Publish (or republish) your extension ([steps](../publish/overview.md)) 
+4. Publish (or republish) your extension ([steps](/azure/devops/extend/publish/overview)) 
 
 <div class="alert alert-danger">
 > [!IMPORTANT]
@@ -88,5 +88,5 @@ In this model, static content is served from your own service and not included i
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Package, publish, and install extensions](/../publish/overview.md)
+> [Package, publish, and install extensions](/azure/devops/extend/publish/overview)
 

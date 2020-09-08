@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Workfold Command
 ms.assetid: f4d18139-bd2e-4621-be4e-a761ca537280
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Workfold Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Creates, modifies, or displays information about the mappings between your workspace folders and the folders on the server for Team Foundation version control.
 

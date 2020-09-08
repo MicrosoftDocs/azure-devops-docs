@@ -57,7 +57,7 @@ To switch to another project, see [Switch project, repository, or team](go-to-pr
 
 ::: moniker range=">= azure-devops-2019"
 
-To view work items assigned to you across projects, choose the ![ ](../../media/icons/inbox.png) inbox icon, and then choosing **Work Items**. 
+To view work items assigned to you across projects, choose the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon, and then choosing **Work Items**. 
 
 > [!div class="mx-imgBorder"]  
 > ![View work assigned to you across projects](media/projects-page/view-work-across-projects.png) 
@@ -69,7 +69,7 @@ To view work items assigned to you for a specific project, [open **Work>Work Ite
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
+Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Open Projects page](../../media/settings/open-project-hub-horz.png)   
@@ -117,7 +117,7 @@ Similar to the Favorites page, you can filter the work pages by typing a keyword
 
 ::: moniker range=">= azure-devops-2019"
 
-To view pull requests you created  or that are assigned to you across projects, choose the ![ ](../../media/icons/inbox.png) inbox icon, and then choosing **Pull requests**. 
+To view pull requests you created  or that are assigned to you across projects, choose the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon, and then choosing **Pull requests**. 
 
 > [!div class="mx-imgBorder"]  
 > ![View pull requests assigned to you across projects](media/projects-page/view-pull-requests-vert.png) 
@@ -145,7 +145,7 @@ You can view favorites you've set across projects. To learn more about working w
 
 ::: moniker range=">= azure-devops-2019" 
 
-Choose the ![ ](../../media/icons/inbox.png) inbox icon, and then choosing **Favorites**. 
+Choose the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon, and then choosing **Favorites**. 
 
 > [!div class="mx-imgBorder"]  
 > ![View your favorited items](media/favorites/open-favorites-page-vnav.png) 
@@ -163,7 +163,7 @@ To learn more about working with favorites, see [Set personal and team favorites
 
 ### Favorite and unfavorite an item
 
-To mark any item as a favorite, choose the ![ ](../../media/icons/icon-favorite-star.png) star icon next to the object. 
+To mark any item as a favorite, choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon next to the object. 
 
 To remove an item from your favorites list, choose the favorited icon.
 
@@ -184,7 +184,7 @@ To open a team room, choose **Projects>Rooms**. You'll see all the team rooms de
 
 ![Account home, Rooms, selected team room](media/projects-page/account-home-rooms.png)  
 
-To learn more about team rooms, see [Collaborate in a team room](../../notifications/collaborate-in-a-team-room.md).
+To learn more about team rooms, see [Collaborate in a team room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room).
 
 > [!NOTE]  
 > Team Rooms are no longer supported for TFS 2018 and later versions as described in [Deprecation of Team Rooms](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md). 
@@ -194,7 +194,5 @@ To learn more about team rooms, see [Collaborate in a team room](../../notificat
 
 ## Related articles
 
-- [Enable preview features](preview-features.md)  
+- [Manage or enable features](preview-features.md)  
 - [Connect to team projects](../../organizations/projects/connect-to-projects.md)  
-  
-

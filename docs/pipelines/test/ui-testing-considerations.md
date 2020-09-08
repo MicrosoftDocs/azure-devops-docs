@@ -49,8 +49,7 @@ When running Selenium tests for a web app, you can launch the browser in two way
 
    > [!NOTE] 
    > Microsoft Edge browser currently cannot be run in the headless mode.
-   > To follow developments in this space, see this user voice item.
-	
+  	
 1. **Visible UI mode**. In this mode, the browser runs normally and the UI components are visible.
    When running tests in this mode on Windows, [special configuration of the agents](#visible-ui-mode) is required.
 
@@ -78,7 +77,7 @@ A special configuration is required for agents to run UI tests in visible UI mod
 
 Microsoft-hosted agents are pre-configured for UI testing and UI tests for both
 web apps and desktop apps. Microsoft-hosted agents are also
-pre-configured with [popular browsers and matching web-driver versions](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2016-Readme.md)
+pre-configured with [popular browsers and matching web-driver versions](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2016-Readme.md)
 that can be used for running Selenium tests.
 The browsers and corresponding web-drivers are updated on a periodic basis.
 To learn more about running Selenium tests, see [UI test with Selenium](continuous-test-selenium.md)

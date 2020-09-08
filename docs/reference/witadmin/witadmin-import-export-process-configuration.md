@@ -8,7 +8,7 @@ ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 03/20/2018
 ---
 
@@ -57,9 +57,9 @@ witadmin importprocessconfig /collection:CollectionURL [/p:ProjectName] /f:FileN
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  
 
 ## Remarks  
- Installing the latest version of TFS upgrades existing projects. If you are updating an upgraded project, see [Configure features after an upgrade](../configure-features-after-upgrade.md).  
+ Installing the latest version of TFS upgrades existing projects. If you are updating an upgraded project, see [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
 
- If you encounter problems accessing existing test plans or test suites after an upgrade, see [Manual updates to support test management](../xml/update-a-team-project-manually-to-support-test-management.md).  
+ If you encounter problems accessing existing test plans or test suites after an upgrade, see [Manual updates to support test management](/previous-versions/azure/devops/reference/upgrade/update-a-team-project-manually-to-support-test-management).  
 
 ## Examples  
 
@@ -197,7 +197,7 @@ The panel only displays fields that are included in the `FIELDS` section of the 
 If you modify the test suite workflow, then you have to make a similar update if you want to map new states. You would add it within a `TestSuiteWorkItems` section.  See [ProcessConfiguration](../xml/process-configuration-xml-element.md).  
 
 ## Related articles
-- [Configure features after an upgrade](../configure-features-after-upgrade.md) 
+- [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) 
 - [Control XML element reference](../xml/control-xml-element-reference.md)  
 - [Change the work item form layout](../xml/change-work-item-form-layout.md)   
 - [Edit a WIT definition to add web content to a work item form](..//xml/edit-wit-definition-add-web-content-form.md)
@@ -207,7 +207,7 @@ If you modify the test suite workflow, then you have to make a similar update if
 
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
-**A:** You can customize the quick add panel. The [Configure Features Wizard](../configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.  
+**A:** You can customize the quick add panel. The [Configure Features Wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) will update your projects and you'll get access to the latest features.  
 
 Other changes might require you to perform some manual operations when updating your project. To learn about which customizations you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](../customize-work.md).  
 
@@ -252,4 +252,3 @@ Other changes might require you to perform some manual operations when updating 
 ### Q: Do you want to add or change the WITs that appear on your task board or product backlog?  
 
 **A:** If you've added a custom WIT and want to add that to either the backlog or task board, you can. You just can't have them appear in both places. Learn how by reading [Add work item types to backlogs and boards](../add-wits-to-backlogs-and-boards.md).  
-

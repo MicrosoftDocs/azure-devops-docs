@@ -45,7 +45,7 @@ To learn more about the concept of upstream sources, please see the [concepts pa
 
 ### Adding upstreams to a popular feed
 
-Once you enable the nuget.org upstream source, any <!-- what permissions tier? --> that runs a package request against your feed can save packages from nuget.org into your feed. If you've distributed your feed URL to a large set of consumers, this means that users outside your team could save packages you weren't expecting into your feed.
+Once you enable the nuget.org upstream source, any `Owner` or `Contributor` that runs a package request against your feed can save packages from nuget.org into your feed. If you've distributed your feed URL to a large set of consumers, this means that users outside your team could save packages you weren't expecting into your feed.
 
 If you're concerned about this, consider creating a new feed then adding nuget.org and your current feed as upstream sources to that feed.
 

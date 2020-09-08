@@ -14,7 +14,7 @@ ms.date: 06/04/2020
 
 # Choose a process 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Anytime you create a project, you must choose a process or process template based on the process model you use. 
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for Azure Boards. This model supports customization of projects through a WYSIWYG user interface. 
@@ -545,11 +545,11 @@ Work item types that are added to the Hidden Types category don't appear in the 
 ::: moniker range="tfs-2013"
 
 > [!NOTE]    
->**Feature availability**:  If you upgraded your project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md).  
+> If you upgraded your project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
 >
->The following WITs were added with the indicated TFS version: 
->- Shared Parameters added with TFS 2013.2  
->- Test Plan and Test Suite added with TFS 2013.3  
+> The following WITs were added with the indicated TFS version:   
+> - Shared Parameters added with TFS 2013.2   
+> - Test Plan and Test Suite added with TFS 2013.3  
 
 ::: moniker-end
 
@@ -577,7 +577,7 @@ You can customize a process before or after you create a project that uses that 
  
 - [Upload/download process templates](manage-process-templates.md)  
 - [Changes made to process templates](changes-to-process-templates.md)  
-- [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md)  
+- [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)  
 
 
 If you have additional questions, see [Azure DevOps support page](https://azure.microsoft.com/support/devops/).

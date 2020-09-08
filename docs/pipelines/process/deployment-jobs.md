@@ -3,23 +3,23 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 5/2/2019
-monikerRange: azure-devops
+ms.date: 08/19/2020
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Deployment jobs
 
 [!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
-> [!NOTE]
-> - To use deployment jobs, [make sure the multi-stage pipelines experience is turned on](../../project/navigation/preview-features.md).
-> - The job name and stages can not contain keywords.
+> [!IMPORTANT]
+> - Job and stage names cannot contain keywords.
+> - Each job in a stage must have a unique name. 
 
 In YAML pipelines, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that's a collection of steps, which are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. 
 
 Deployment jobs provide the following benefits:
 
- - **Deployment history**: You get end-to-end deployment history across pipelines, down to a specific resource and status of the deployments for auditing.
+ - **Deployment history**: You get the deployment history across pipelines, down to a specific resource and status of the deployments for auditing.
  - **Apply deployment strategy**: You define how your application is rolled out.
 
    > [!NOTE] 
@@ -40,7 +40,7 @@ jobs:
   dependsOn: string 
   condition: string 
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
-  container: containerReference # container to run this job inside
+  container: containerReference # container to run the job inside
   services: { string: string | container } # container resources to run as a service container
   timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
@@ -73,7 +73,7 @@ Deployment jobs use the `$(Pipeline.Workspace)` system variable.
 
 `postRouteTraffic`: Used to run the steps after the traffic is routed. Typically, these tasks monitor the health of the updated version for defined interval. 
 
-`on: failure` or `on: success`: Used to run steps that perform rollback actions or clean-up. 
+`on: failure` or `on: success`: Used to run steps for rollback actions or clean-up. 
 
 ### RunOnce deployment strategy
 
@@ -118,7 +118,7 @@ We currently only support the rolling strategy to VM resources.
 For example, a rolling deployment typically waits for deployments on each set of virtual machines to complete before proceeding to the next set of deployments. You could do a health check after each iteration and if a significant issue occurs, the rolling deployment can be stopped.
 
 Rolling deployments can be configured by specifying the keyword `rolling:` under `strategy:` node. 
-The `strategy.name` variable is available in this strategy block which takes the name of the strategy. In this case, rolling.
+The `strategy.name` variable is available in this strategy block, which takes the name of the strategy. In this case, rolling.
 
 ```YAML
 strategy:
@@ -149,7 +149,7 @@ All the lifecycle hooks are supported and lifecycle hook jobs are created to run
 `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic` are executed once per batch size defined by `maxParallel`. 
 Then, either `on: success` or `on: failure` is executed.
 
-With `maxParallel: <# or % of VMs>`, you can control the number/percentage of virtual machine targets to deploy to in parallel. This ensures that the app is running on these machines and is capable of handling requests while the deployment is taking place on the rest of the machines which reduces overall downtime.
+With `maxParallel: <# or % of VMs>`, you can control the number/percentage of virtual machine targets to deploy to in parallel. This ensures that the app is running on these machines and is capable of handling requests while the deployment is taking place on the rest of the machines, which reduces overall downtime.
 
  > [!NOTE]
  > There are a few known gaps in this feature. For example, when you retry a stage, it will re-run the deployment on all VMs not just failed targets. 
@@ -158,7 +158,7 @@ With `maxParallel: <# or % of VMs>`, you can control the number/percentage of vi
 
 Canary deployment strategy is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. 
 
-Currently, this is applicable to only Kubernetes resources.
+You can only use the canary deployment strategy for Kubernetes resources.
 
 
 ```YAML
@@ -261,12 +261,12 @@ jobs:
 This approach has the following benefits:
 - Records deployment history on a specific resource within the environment, as opposed to recording the history on all resources within the environment.
 - Steps in the deployment job **automatically inherit** the connection details of the resource (in this case, a Kubernetes namespace, `smarthotel-dev.bookings`), because the deployment job is linked to the environment. 
-This is particularly useful in the cases where the same connection detail is set for multiple steps of the job.
+This is useful in the cases where the same connection detail is set for multiple steps of the job.
 
 
 ### Rolling deployment strategy
 
-The rolling strategy for VMs updates up to 5 targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
+The rolling strategy for VMs updates up to five targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
 
 ```YAML
 jobs: 
@@ -345,7 +345,7 @@ jobs:
 ```
 ## Use pipeline decorators to inject steps automatically
 
-[Pipeline decorators](../../extend/develop/add-pipeline-decorator.md) can be used in deployment jobs to auto-inject any custom step (e.g. vulnerability scanner) to every [lifecycle hook](#descriptions-of-lifecycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be leveraged as part of enforcing safe deployment practices.
+[Pipeline decorators](../../extend/develop/add-pipeline-decorator.md) can be used in deployment jobs to auto-inject any custom step (for example, vulnerability scanner) to every [lifecycle hook](#descriptions-of-lifecycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be leveraged as part of enforcing safe deployment practices.
 
 In addition, deployment jobs can be run as a [container job](container-phases.md) along with [services side-car](service-containers.md) if defined.
 
@@ -360,7 +360,8 @@ Define output variables in a deployment job's [lifecycle hooks](#descriptions-of
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
-- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]`  
+- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]` 
+    - For deployment jobs using the **runOnce** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`. For example, if you have a deployment job to a virtual machine named `Vm1`, the output variable would be `$[dependencies.<job-name>.outputs['Deploy_vm1.<step-name>.<variable-name>']]`
 - For **canary** strategy:  `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`  
 - For **rolling** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 
@@ -375,9 +376,9 @@ While executing deployment strategies, you can access output variables across jo
       increments: [10,20]  # creates multiple jobs, one for each increment. Output variable can be referenced with this.
       deploy:
         steps:
-        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+        - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
           name: setvarStep
-        - script: echo $(setvarStep.myOutputVar)
+        - bash: echo $(setvarStep.myOutputVar)
           name: echovar
 
 # Map the variable from the job
@@ -404,9 +405,9 @@ For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
     runOnce:
       deploy:
         steps:
-        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+        - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
           name: setvarStep
-        - script: echo $(setvarStep.myOutputVar)
+        - bash: echo $(setvarStep.myOutputVar)
           name: echovar
 
 # Map the variable from the job
@@ -421,4 +422,66 @@ For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
     name: echovar
 ```
 
+When you define an environment in a deployment job, the syntax of the output variable varies depending on how the environment gets defined. In this example, `env1` uses shorthand notation and `env2` includes the full syntax with a defined resource type. 
+
+```yaml
+stages:
+- stage: MyStage
+  jobs:
+  - deployment: A1
+    pool:
+      vmImage: 'ubuntu-16.04'
+    environment: env1
+    strategy:                  
+      runOnce:
+        deploy:
+          steps:
+          - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+            name: setvarStep
+          - bash: echo $(System.JobName)
+  - deployment: A2
+    pool:
+      vmImage: 'ubuntu-16.04'
+    environment: 
+      name: env1
+      resourceType: virtualmachine
+    strategy:                  
+      runOnce:
+        deploy:
+          steps:
+          - script: echo "##vso[task.setvariable variable=myOutputVarTwo;isOutput=true]this is the second deployment variable value"
+            name: setvarStepTwo
+  
+  - job: B1
+    dependsOn: A1
+    pool:
+      vmImage: 'ubuntu-16.04'
+    variables:
+      myVarFromDeploymentJob: $[ dependencies.A1.outputs['A1.setvarStep.myOutputVar'] ]
+      
+    steps:
+    - script: "echo $(myVarFromDeploymentJob)"
+      name: echovar
+ 
+  - job: B2
+    dependsOn: A2
+    pool:
+      vmImage: 'ubuntu-16.04'
+    variables:
+      myVarFromDeploymentJob: $[ dependencies.A1.outputs['A1.setvarStepTwo.myOutputVar'] ]
+      myOutputVarTwo: $[ dependencies.A2.outputs['Deploy_vmsfortesting.setvarStepTwo.myOutputVarTwo'] ]
+    
+    steps:
+    - script: "echo $(myOutputVarTwo)"
+      name: echovartwo
+```
+
 Learn more about how to [set a multi-job output variable](variables.md#set-a-multi-job-output-variable)
+
+## FAQ
+
+### My pipeline is stuck with the message "Job is pending...". How can I fix this?
+ 
+This can happen when there is a name conflict between two jobs. Verify that any deployment jobs in the same stage have a unique name and that job and stage names do not contain keywords. If renaming does not fix the problem, review [troubleshooting pipeline runs](../troubleshooting/troubleshooting.md).
+
+

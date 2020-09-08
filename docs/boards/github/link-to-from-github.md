@@ -1,4 +1,4 @@
-﻿---
+---
 title: Link GitHub commits and PRs to work items
 titleSuffix: Azure Boards 
 description: Add links to GitHub commits and pull requests to or from Azure Boards work items 
@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/22/2019
+ms.date: 07/09/2020
 ---
 
 
@@ -36,7 +36,7 @@ From a GitHub commit, pull request or issue, use the following syntax to create 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 From a GitHub commit or pull request, use the following syntax to create a link to your Azure Boards work item. Enter the `AB#ID` within the text of a commit message or for a pull request, enter the `AB#ID` within the pull request title or description (not a pull request comment). 
 
@@ -112,7 +112,7 @@ Examples:
 
 ## View or open links from the Development section
 
-The Development section within the work item form lists the links created to GitHub commits and pull requests with the ![ ](../../media/icons/github.png) GitHub icon. 
+The Development section within the work item form lists the links created to GitHub commits and pull requests with the :::image type="icon" source="../../media/icons/github.png" border="false"::: GitHub icon. 
 
 > [!div class="mx-imgBorder"]  
 > ![Development section shows GitHub links](media/link/git-hub-development-links.png)  

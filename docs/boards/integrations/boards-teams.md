@@ -7,13 +7,13 @@ ms.topic: tutorial
 ms.reviewer: karrg
 ms.author: karrg
 author: Divais
-monikerRange: 'azure-devops'
-ms.date: 06/26/2020
+monikerRange: '>= azure-devops-2020'
+ms.date: 07/09/2020
 ---
  
 # Azure Boards with Microsoft Teams
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
 If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can use the [Azure Boards app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000644?tab=Overview) to create work items and monitor work item activity in your Azure Boards project from your Teams channel. 
 
@@ -148,8 +148,8 @@ This command lists all the current subscriptions for the channel and allows you 
 > [!div class="mx-imgBorder"]  
 > ![View subscriptions](./media/integrations-teams/view-subscriptions.png)
 
-[!NOTE]
-Team administrators aren't able to remove or modify subscriptions created by Project administrators.
+> [!NOTE]
+> Team administrators aren't able to remove or modify subscriptions created by Project administrators.
 
 ## Search and share work items using compose extension
 
@@ -173,7 +173,7 @@ Unlinking a project deletes all the subscriptions along with added area paths fr
 
 ## Threaded notifications
 
-- To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular work item are linked together.
+To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular work item are linked together.
 
 ### Compact view of threaded notifications
 
@@ -252,8 +252,8 @@ In your organization if you are using a different email or tenant for Microsoft 
    </td>
    <td>
     <ul>
-	<li>Sign in the Azure DevOps account/li> 
-	<li>In the same browser, start a new tab, navigate to https://teams.microsoft.com//li> 
+	<li>Sign in the Azure DevOps account</li> 
+	<li>In the same browser, start a new tab, navigate to https://teams.microsoft.com</li> 
 	<li>Run the <code>signin</code> command and choose the <strong>Sign in</strong> button. </li>
     </ul>
    </td>
@@ -280,14 +280,10 @@ In your organization if you are using a different email or tenant for Microsoft 
         <u>email1@abc.com</u> (tenant 1) 
    </td>
    <td>
-        <span style="text-decoration:underline;">email2@pqr.com(non default tenant 3)</span>
+        <u>email2@pqr.com</u> (non default tenant 3)
    </td>
    <td>
-    <ul>
-    <li>Sign in the Azure DevOps account</li> 
-	<li>In the same browser, start a new tab, and navigate to <code>https://teams.microsoft.com/</code></li>  
-	<li>Run the <code>signin</code> command and choose <strong>Sign in with different email address</strong>, in the email id picker use the email2 to sign in to Azure DevOps.</li>  
-	</ul>
+    This scenario is not supported today
    </td>
   </tr>
 </table>

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Learn about branch policies in Azure DevOps Services & TFS  
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
-ms.author: apawast
-author: apawast
 ms.topic: overview
 ms.date: 06/01/2020
 monikerRange: '>= tfs-2015'
@@ -13,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # Branch policies
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 Branch policies are an important part of the Git workflow and enable you to:
 

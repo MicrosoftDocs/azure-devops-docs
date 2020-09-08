@@ -4,7 +4,7 @@ description: Secure and share packages using feed permissions in Azure Artifacts
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 06/11/2020
+ms.date: 08/06/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -29,6 +29,32 @@ Feeds have four levels of access: Owners, Contributors, Collaborators, and Reade
 | Edit feed permissions                         |          |          |          | &#x2713; |
 
 By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
+
+> [!NOTE]
+> To access a feed in a different organization, a user must be given access to the project hosting that feed.
+
+## Azure Artifacts settings
+
+Azure Artifacts settings allow you to specify who can create and administer feeds.
+
+> [!div class="mx-imgBorder"] 
+> ![Azure Artifacts settings button](media/artifacts-settings-button.png)
+
+By default, everyone in the same organization have the permissions to create feeds. a user who creates a feed is both an owner and an administrator of that feed.
+
+> [!div class="mx-imgBorder"] 
+> ![Azure Artifacts settings](media/artifacts-settings.png)
+
+1. Any user in the organization is allowed to create feeds.
+
+1. Only feed administrators and users or groups specified in the text box 2 are allowed to create feeds. You can specify a feed administrator by adding users or groups in the **who can administer feeds** section.
+
+1. Users or groups added here are allowed to administer any feed in the organization.
+
+> [!NOTE]
+> It's very important to understand the difference between feed, project, and project collection administrators. A feed administrator can perform all operations on **the feed** (edit feed permissions, delete packages, promote packages, etc.).  
+> A project administrator on the other hand has permissions to administer all aspects of **teams and project** (delete team project, update project visibility, manage test environments etc.).  
+> Project Collection Administrators are granted **all collection-level permissions** to manage resources for projects and project collections (add and delete projects, trigger events, manage build resources and audit streams etc.).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -100,7 +126,7 @@ To restrict access to your feed, simply select a user or group from the permissi
 > [!div class="mx-imgBorder"]
 >![views permissions](media/view-permissions.png)
 
-After restricting your view's visibility, the permissions column should indicate that your view is only available to `feed users`.
+After restricting your view's visibility to `specific people`, the access permissions column should reflect your changes.
 
 > [!div class="mx-imgBorder"]
 >![views permissions](media/view-settings.png)

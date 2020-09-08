@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Create a local clone of an existing repo using Visual Studio or command prompt
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
 ms.date: 11/15/2019
 monikerRange: '>= tfs-2013'
@@ -13,7 +11,7 @@ monikerRange: '>= tfs-2013'
 
 # Clone an existing Git repo
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Create a complete local copy of an existing Git repository by cloning it.
 Cloning a repo downloads all [commits](commits.md) and [branches](branches.md) in the repo.

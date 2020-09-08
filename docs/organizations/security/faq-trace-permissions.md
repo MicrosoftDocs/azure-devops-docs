@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Trace permissions
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 You use permission tracing to determine why a user's permissions aren't allowing them access. In this article, learn how a user or an administrator can investigate the inheritance of permissions.
 
@@ -32,7 +32,7 @@ If a user's having permissions issues and you use default security groups or cus
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 [Change access levels](/azure/devops/organizations/security/change-access-levels?view=azure-devops)
 
@@ -58,11 +58,11 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2020"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Select **Project settings** > **Security**, and then enter the user name into the filter box.
 
-   :::image type="content" source="media/security-page-enter-user-name-2019.png" alt-text="Enter user name into filter box":::
+   :::image type="content" source="media/security-page-enter-user-name-2019.png" alt-text="Enter user name into the filter box":::
 
 2. You should now have a user-specific view that shows what permissions they have. To trace why a user does or doesn't have any of the listed permissions, hover over the permission and choose **Why**.
 

@@ -1,56 +1,56 @@
 ---
-title: Build BitBucket Cloud repositories
-description: Using a BitBucket Cloud repository with Azure Pipelines
+title: Build Bitbucket Cloud repositories
+description: Using a Bitbucket Cloud repository with Azure Pipelines
 ms.topic: reference
 ms.author: vijayma
 author: vijayma
-ms.date: 03/29/2020
+ms.date: 07/07/2020
 monikerRange: azure-devops
 ---
 
-# Build BitBucket Cloud repositories
+# Build Bitbucket Cloud repositories
 
 [!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
-Azure Pipelines can automatically build and validate every pull request and commit to your BitBucket Cloud repository. This article describes how to configure the integration between BitBucket Cloud and Azure Pipelines.
+Azure Pipelines can automatically build and validate every pull request and commit to your Bitbucket Cloud repository. This article describes how to configure the integration between Bitbucket Cloud and Azure Pipelines.
 
-BitBucket and Azure Pipelines are two independent services that integrate well together. Your BitBucket Cloud users do not automatically get access to Azure Pipelines. You must add them explicitly to Azure Pipelines.
+Bitbucket and Azure Pipelines are two independent services that integrate well together. Your Bitbucket Cloud users do not automatically get access to Azure Pipelines. You must add them explicitly to Azure Pipelines.
 
-## Choose a repository to build
+## Access to Bitbucket repositories
 
 # [YAML](#tab/yaml/)
 
-You create a new pipeline by first selecting a BitBucket Cloud repository and then a YAML file in that repository. The repository in which the YAML file is present is called `self` repository. By default, this is the repository that your pipeline builds. 
+You create a new pipeline by first selecting a Bitbucket Cloud repository and then a YAML file in that repository. The repository in which the YAML file is present is called `self` repository. By default, this is the repository that your pipeline builds. 
 
 You can later configure your pipeline to check out a different repository or multiple repositories. To learn how to do this, see [multi-repo checkout](multi-repo-checkout.md).
 
 # [Classic](#tab/classic/)
 
-You create a new pipeline by first selecting **BitBucket Cloud** for repository type, and then one of the repositories you have access to.
+You create a new pipeline by first selecting **Bitbucket Cloud** for repository type, and then one of the repositories you have access to.
 
 ---
 
 Azure Pipelines must be granted access to your repositories to trigger their builds, and fetch their code during builds.
 
-There are 2 authentication types for granting Azure Pipelines access to your BitBucket Cloud repositories while creating a pipeline.
+There are 2 authentication types for granting Azure Pipelines access to your Bitbucket Cloud repositories while creating a pipeline.
 
 | Authentication type            | Pipelines run using              |
 |--------------------------------|----------------------------------|
-| 1. [OAuth](#oauth-authentication)           | Your personal BitBucket identity |
-| 2. [Username and password](#password-authentication) | Your personal BitBucket identity |
+| 1. [OAuth](#oauth-authentication)           | Your personal Bitbucket identity |
+| 2. [Username and password](#password-authentication) | Your personal Bitbucket identity |
 
 ### OAuth authentication
 
-OAuth is the simplest authentication type to get started with for repositories in your BitBucket account. BitBucket status updates will be performed on behalf of your personal BitBucket identity. For pipelines to keep working, your repository access must remain active.
+OAuth is the simplest authentication type to get started with for repositories in your Bitbucket account. Bitbucket status updates will be performed on behalf of your personal Bitbucket identity. For pipelines to keep working, your repository access must remain active.
 
-To use OAuth, login to BitBucket when promoted during pipeline creation. Then, click **Authorize** to authorize with OAuth. An OAuth connection will be saved in your Azure DevOps project for later use, as well as used in the pipeline being created.
+To use OAuth, login to Bitbucket when promoted during pipeline creation. Then, click **Authorize** to authorize with OAuth. An OAuth connection will be saved in your Azure DevOps project for later use, as well as used in the pipeline being created.
 
 ### Password authentication
 
-Builds and BitBucket status updates will be performed on behalf of your personal identity. For builds to keep working, your repository access must remain active.
+Builds and Bitbucket status updates will be performed on behalf of your personal identity. For builds to keep working, your repository access must remain active.
 
 To create a password connection, visit [Service connections](../library/service-endpoints.md) in your Azure DevOps project settings.
-Create a new BitBucket service connection and provide the user name and password to connect to your BitBucket Cloud repository.
+Create a new Bitbucket service connection and provide the user name and password to connect to your Bitbucket Cloud repository.
 
 ## CI triggers
 
@@ -61,7 +61,7 @@ Continuous integration (CI) triggers cause a pipeline to run whenever you push a
 [!INCLUDE [ci-triggers](includes/ci-triggers1.md)]
 
 > [!NOTE]
-> For Bitbucket Cloud repos, using `branches` syntax is the only way to specify tag triggers. The `tags:` syntax is not supported for BitBucket.
+> For Bitbucket Cloud repos, using `branches` syntax is the only way to specify tag triggers. The `tags:` syntax is not supported for Bitbucket.
 
 [!INCLUDE [ci-triggers](includes/ci-triggers3.md)]
 
@@ -115,7 +115,7 @@ You can specify the full name of the branch (for example, `master`) or a wildcar
 > [!NOTE]
 > If you use [templates](../process/templates.md) to author YAML files, then you can only specify triggers in the main YAML file for the pipeline. You cannot specify triggers in the template files.
 
-BitBucket creates a new _ref_ when a pull request is created. The ref points to a _merge commit_, which is the merged code between the source and target branches of the pull request. The PR validation pipeline builds the commit this ref points to. This means that the YAML file that is used to run the pipeline is also a merge between the source and the target branch. As a result, the changes you make to the YAML file in source branch of the pull request can override the behavior defined by the YAML file in target branch.
+Each new run builds the latest commit from the source branch of the pull request. This is different from how Azure Pipelines builds pull requests in other repositories (e.g., Azure Repos or GitHub), where it builds the merge commit. Unfortunately, Bitbucket does not expose information about the merge commit, which contains the merged code between the source and target branches of the pull request.
 
 If no `pr` triggers appear in your YAML file, pull request validations are automatically enabled for all 
 branches, as if you wrote the following `pr` trigger. This configuration triggers a build when any 
@@ -202,20 +202,25 @@ For included branches, a build will be triggered on each push to a pull request 
 
 ---
 
-## Pricing
-
-Azure Pipelines is free for BitBucket Cloud repositories, with multiple free offerings available depending on whether your BitBucket repository is public or private.
-
-If your BitBucket repository is open source, you can make your Azure DevOps project **public** so that anyone can view your pipeline's build results, logs, and test results without signing in. When users outside your organization fork your repository and submit pull requests, they can view the status of builds that automatically validate those pull requests. If both your BitBucket repository and your pipeline are public, you can run up to 10 parallel jobs in Azure Pipelines for free. These free jobs have a maximum timeout of 360 minutes (6 hours) each.
-
-If either your BitBucket repository or your pipeline is private, we still provide a free tier. In this tier, you can run one free parallel job that can run up to 60 minutes each time until you've used 1800 minutes per month. When the free tier is no longer sufficient, you can purchase additional Microsoft-hosted parallel jobs.
-
-Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs.md).
-
 ## FAQ
 
-[!INCLUDE [qa](includes/qa1.md)]
+Problems related to Bitbucket integration fall into the following categories:
+
+* **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
+* **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
+
+### Failing triggers
 
 [!INCLUDE [qa](includes/qa2.md)]
 
+* Webhooks are used to communicate updates from Bitbucket to Azure Pipelines. In Bitbucket, navigate to the settings for your repository, then to Webhooks. Verify that the webhooks exist.
+
+[!INCLUDE [qa](includes/qa2-1.md)]
+
 [!INCLUDE [qa](includes/qa3.md)]
+
+[!INCLUDE [qa](includes/qa4.md)]
+
+### Wrong version
+
+[!INCLUDE [qa](includes/qa1.md)]

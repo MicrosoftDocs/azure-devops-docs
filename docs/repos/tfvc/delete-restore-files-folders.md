@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Delete or restore files and folders using Team Foundation Version control
 ms.assetid: 8891c77c-490c-489c-99c7-860b4a92737c
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 12/05/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Delete or restore files and folders in Team Foundation Version Control (TFVC)
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 You can delete files and folders from TFVC and also restore them, from both in the workspace on your dev machine or on the server.
 

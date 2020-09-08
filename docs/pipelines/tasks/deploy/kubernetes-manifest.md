@@ -61,7 +61,7 @@ The following list shows the key benefits of this task:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
@@ -111,7 +111,7 @@ The following list shows the key benefits of this task:
     <br/>
     Acceptable values are <b>pod</b> and <b>smi</b>. The default value is <b>pod</b>.<br/>
     <br/>
-    For the value <b>smi</b>, the percentage traffic split is done at the request level by using a service mesh. A service mesh must be set up by a cluster admin. This task handles orchestration of SMI <a href="https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/traffic-split-wd.md" data-raw-source="TrafficSplit](https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/traffic-split-wd.md)">TrafficSplit</a> objects.
+    For the value <b>smi</b>, the percentage traffic split is done at the request level by using a service mesh. A service mesh must be set up by a cluster admin. This task handles orchestration of SMI <a href="https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/traffic-split-WD.md" data-raw-source="TrafficSplit](https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/traffic-split-WD.md)">TrafficSplit</a> objects.
     <br/><br/>
     For the value <b>pod</b>, the percentage split isn't possible at the request level in the absence of a service mesh. Instead, the percentage input is used to calculate the replicas for baseline and canary. The calculation is a percentage of replicas that are specified in the input manifests for the stable variant.</td>
   </tr>
@@ -193,7 +193,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
@@ -246,11 +246,11 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>secretType</b><br/>Secret type</td>
-    <td>(Required only if <b>action</b> is set to <b>secret</b>)<br/>
+    <td>(Required only if <b>action</b> is set to <b>createSecret</b>)<br/>
     <br/>
     Acceptable values are <b>dockerRegistry</b> and <b>generic</b>. The default value is <b>dockerRegistry</b>.<br/>
     <br/>
@@ -334,7 +334,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>renderType</b><br/>Render engine</td>
@@ -419,7 +419,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>kind</b><br/>Kind</td>
@@ -480,7 +480,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and  <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>resourceToPatch</b><br/>Resource to patch</td>
@@ -568,7 +568,7 @@ steps:
     <td><b>action</b><br/>Action</td>
     <td>(Required)<br/>
     <br/>
-    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>createSecret</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>arguments</b><br/>Arguments</td>

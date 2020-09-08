@@ -5,7 +5,7 @@ ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: conceptual
 ms.custom: seodec18, seo-javascript-september2019, contperfq4
-ms.date: 05/08/2020
+ms.date: 08/19/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -35,13 +35,13 @@ Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or
 
 ## Create your first pipeline
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 > Are you new to Azure Pipelines? If so, then we recommend you try this section to create before moving on to other sections.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ### [Get the code](#tab/code)
 
@@ -206,7 +206,7 @@ Learn some of the common ways to customize your JavaScript build process.
 
 ## Build environment
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 You can use Azure Pipelines to build your JavaScript apps without needing to set up any infrastructure of your own.
 You can use either Windows or Linux agents to run your builds.
@@ -226,7 +226,7 @@ You can also use a [self-hosted](../agents/agents.md) agent.
 
 ### Use a specific version of Node.js
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 If you need a version of Node.js and npm that is not already installed on the Microsoft-hosted agent, use the [Node tool installer task](../tasks/tool/node-js.md). Add the following snippet to your `azure-pipelines.yml` file.
 
@@ -259,7 +259,7 @@ To update just the npm tool, run the `npm i -g npm@version-number` command in yo
 
 You can build and test your app on multiple versions of Node by using a strategy and the [Node tool installer task](../tasks/tool/node-js.md).
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ```yaml
 pool:
@@ -289,7 +289,7 @@ See [multi-configuration execution](../process/phases.md#parallelexec).
 
 ## Install tools on your build agent
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 If you have defined tools needed for your build as development dependencies in your project's `package.json` or `package-lock.json` file, install these tools along with the rest of your project dependencies through npm. This will install the exact version of the tools defined in the project, isolated from other versions that exist on the build agent.
 
@@ -350,7 +350,7 @@ You can use NPM in a few ways to download packages for your build:
 If you want to specify an npm registry, put the URLs in an `.npmrc` file in your repository.
 If your feed is authenticated, manage its credentials by creating an npm service connection on the **Services** tab under **Project Settings**.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 To install npm packages by using a script in your pipeline, add the following snippet to `azure-pipelines.yml`.
 
@@ -392,7 +392,7 @@ account.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 If you're using [Microsoft-hosted agents](../agents/hosted.md), you get a new machine every time you run a build - which means restoring the dependencies every time.
 
@@ -402,7 +402,7 @@ This can take a significant amount of time. To mitigate this, you can use Azure 
 
 ###  Yarn
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Use a script stage to invoke [Yarn](https://yarnpkg.com) to restore dependencies.  Yarn is available preinstalled on some [Microsoft-hosted agents](../agents/hosted.md). You can install and configure it on self-hosted agents like any other tool.
 
@@ -420,7 +420,7 @@ Use the [CLI](../tasks/utility/command-line.md) or [Bash](../tasks/utility/bash.
 
 ## Run JavaScript compilers
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Use compilers such as [Babel](https://babeljs.io/) and the [TypeScript](https://www.typescriptlang.org/) `tsc` compiler to convert your source code into versions that are usable by the Node.js runtime or in web browsers.
 
@@ -446,7 +446,7 @@ Use the [npm](../tasks/package/npm.md) task in your pipeline if you have a compi
 
 ## Run unit tests
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Configure your pipelines to run your JavaScript tests so that they produce results formatted in the JUnit XML format. You can then publish the results using the built-in [publish test results](../tasks/test/publish-test-results.md) task.
 
@@ -523,7 +523,7 @@ Run tests in headless browsers as part of your pipeline with tools like [Protrac
 
 ## Package web apps
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Package applications to bundle all your application modules with intermediate outputs and dependencies into static assets ready for deployment. Add a pipeline stage after your compilation and tests to run a tool like [Webpack](https://webpack.js.org/) or [ng build](https://github.com/angular/angular-cli/wiki/build) by using the Angular CLI.
 
@@ -553,7 +553,7 @@ Use the [CLI](../tasks/utility/command-line.md) or [Bash](../tasks/utility/bash.
 
 For Angular apps, you can include Angular-specific commands such as **ng test**, **ng build**, and **ng e2e**. To use Angular CLI commands in your pipeline, you need to install the [angular/cli npm package](https://www.npmjs.com/package/@angular/cli) on the build agent.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 > [!NOTE]
 > On Microsoft-hosted Linux agents, preface the command with `sudo`, like `sudo npm install -g`.
@@ -594,7 +594,7 @@ For tests in your pipeline that require a browser to run (such as the **ng test*
 
 All the dependencies for your React and Vue apps are captured in your *package.json* file. Your *azure-pipelines.yml* file contains the standard Node.js script:
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ```yaml
 - script: |
@@ -607,7 +607,7 @@ All the dependencies for your React and Vue apps are captured in your *package.j
 
 The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `www`, that is ready for release. It uses the [Node Installer](../tasks/tool/node-js.md), [Copy File](../tasks/utility/copy-files.md)s, and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks. 
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ```yaml
 trigger:
@@ -646,7 +646,7 @@ To release, point your release task to the `dist` or `build` artifact and use th
 
 You can use a webpack configuration file to specify a compiler (such as Babel or TypeScript) to transpile JSX or TypeScript to plain JavaScript, and to bundle your app.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ```yaml
 - script: |
@@ -677,7 +677,7 @@ It's common to use [Gulp](https://gulpjs.com/) or [Grunt](https://gruntjs.com/) 
 
 ### Gulp
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Gulp is preinstalled on Microsoft-hosted agents. To run the `gulp` command in the YAML file:
 
@@ -726,7 +726,7 @@ In the task, select **Enable Code Coverage** to enable code coverage by using Is
 
 ### Grunt
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Grunt is preinstalled on Microsoft-hosted agents. To run the grunt command in the YAML file:
 
@@ -757,7 +757,7 @@ The simplest way to create a pipeline if your app uses Grunt is to use the **Nod
 After you have built and tested your app, you can upload the build output to Azure Pipelines, create and publish an npm or Maven package,
 or package the build output into a .zip file to be deployed to a web application.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ### Publish files to Azure Pipelines
 
@@ -846,7 +846,7 @@ To create a .zip file archive that is ready for publishing to a web app, use the
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Build and push image to container registry
 
@@ -876,7 +876,7 @@ The **Node Tool Installer** task handles this model correctly.
 However, if your work requires the use of `nvm`, you can add the following script to the beginning of each pipeline:
 ```yaml
 steps:
-- script: |
+- bash: |
     NODE_VERSION=12  # or whatever your preferred version is
     npm config delete prefix  # avoid a warning
     . ${NVM_DIR}/nvm.sh
@@ -888,7 +888,7 @@ steps:
 Then `node` and other command-line tools will work for the rest of the pipeline job.
 In each step where you need to use the `nvm` command, you'll need to start the script with:
 ```yaml
-- script: |
+- bash: |
     . ${NVM_DIR}/nvm.sh
     nvm <command>
 ```

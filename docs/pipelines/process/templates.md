@@ -4,13 +4,13 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 05/05/2020
-monikerRange: 'azure-devops-2019 || azure-devops'
+ms.date: 08/03/2020
+monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
 # Template types & usage
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Templates let you define reusable content, logic, and parameters. Templates function in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
 
@@ -25,7 +25,7 @@ Use templates to define your logic once and then reuse it several times. Templat
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Parameters
 
@@ -71,15 +71,30 @@ parameters:
   default: false
 
 steps:
-- ${{ if eq(parameters.experimentalTemplate, true) }}:
-  - template: experimental.yml
-- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
-  - template: stable.yml
+  - ${{ if eq(parameters.experimentalTemplate, true) }}:
+    - template: experimental.yml
+  - ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
+    - template: stable.yml
 ```
 
 ### Parameter data types
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
+
+You can iterate through an object and print out each string in the object. 
+
+```yaml
+parameters:
+- name: listOfStrings
+  type: object
+  default:
+  - one
+  - two
+
+steps:
+- ${{ each value in parameters.listOfStrings }}:
+  - script: echo ${{ value }}
+``` 
 
 ## Extend from a template
 
@@ -136,7 +151,7 @@ extends:
 
 ## Extend from a template with resources
 
-You can also use `extends` to extend from a template in your azure pipeline that contains resources. 
+You can also use `extends` to extend from a template in your Azure pipeline that contains resources. 
 
 ```yaml
 # File: azure-pipelines.yml
@@ -160,7 +175,7 @@ steps:
 
 ## Insert a template
 
-You can copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
+You can copy content from one YAML and reuse it in a different YAML. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 
 ```yaml
 # File: include-npm-steps.yml
@@ -400,6 +415,7 @@ jobs:
   pool: ${{ parameters.pool }}
 ```
 
+
 ## Variable reuse
 
 Variables can be defined in one YAML and included in another template. This could be useful if you want to store all of your variables in one file. If you are using a template to include variables in a pipeline, the included template can only be used to define variables. You can use steps and more complex logic when you are [extending from a template](#extend-from-a-template). 
@@ -553,7 +569,7 @@ steps:
 
 Within a template expression, you have access to the `parameters` context that contains the values of parameters passed in.
 Additionally, you have access to the `variables` context that contains all the variables specified in the YAML file plus 
-the [system variables](../build/variables.md#system-variables). 
+many of the [predefined variables](../build/variables.md) (noted on each variable in that topic). 
 Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
 Template expansion happens [very early in the run](runs.md#process-the-pipeline), so those variables aren't available.
 
@@ -769,6 +785,22 @@ steps:
     debug: true
 ```
 
+You can also use conditional insertion for variables:
+
+```yaml
+variables:
+  - name: foo
+    value: test
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "start"
+- ${{ if eq(variables.foo, 'test') }}:
+  - script: echo "this is a test"
+```
+
 ### Iterative insertion
 
 The `each` directive allows iterative insertion based on a YAML sequence (array) or mapping (key-value pairs).
@@ -851,19 +883,19 @@ jobs:
 
 If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example, `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
 
-## Limits
+## Imposed limits
 
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 100 separate YAML files may be included (directly or indirectly)
-- No more than 10 megabytes of total YAML content can be included
+- No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600KB - 2MB of on-disk YAML, depending on the specific features used)
 - No more than 2000 characters per template expression are allowed
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-## Parameters
+## Template parameters
 
 You can pass parameters to templates.
 The `parameters` section defines what parameters are available in the template and their default values. 
@@ -1038,7 +1070,7 @@ If you want to use a particular, fixed version of the template, be sure to pin t
 Refs are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
 
-## Template expressions
+## Expressions
 
 Use template [expressions](expressions.md) to specify how values are dynamically resolved during pipeline initialization.
 Wrap your template expression inside this syntax: `${{ }}`.
@@ -1359,7 +1391,8 @@ If you need to escape a value that literally contains `${{`, then wrap the value
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 50 separate YAML files may be included (directly or indirectly)
-- No more than 10 megabytes of total YAML content can be included
+- No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600KB - 2MB of on-disk YAML, depending on the specific features used)
+
 - No more than 2000 characters per template expression are allowed
 
 ::: moniker-end

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Undoing Changes with Git in Azure Repos using reset and revert 
 ms.assetid: 02cdccb4-373d-4bd0-8053-6432f859e495
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
@@ -13,7 +11,7 @@ monikerRange: '>= tfs-2013'
 
 # Undo changes
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 When undoing changes in Git, first decide what type of changes you are looking to undo. These changes fall into three categories:
 

@@ -48,7 +48,7 @@ Save the build pipeline and queue a new build by selecting the **Queue new build
 
 After you've run the build, you're ready to create a release pipeline to deploy your app to:
 
-* <a href="../cd/deploy-cloudservice-cloudservice.md"><img src="../../tasks/deploy/media/azure-cloud-service-deployment-icon.png"/> An Azure Cloud Service</a>
+* <a href="../cd/deploy-cloudservice-cloudservice.md">:::image type="icon" source="../../tasks/deploy/media/azure-cloud-service-deployment-icon.png" border="false"::: An Azure Cloud Service</a>
 
 ## FAQ
 

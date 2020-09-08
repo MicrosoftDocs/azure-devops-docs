@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Proxy Command
 ms.assetid: c36b124d-f1cf-4e6f-a053-3b7d501a234c
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Proxy Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Configures your client computer to use a proxy server. Adds, deletes, and lists proxy records about the location and availability of one or more proxy servers within your deployment, including any remote sites.
 
