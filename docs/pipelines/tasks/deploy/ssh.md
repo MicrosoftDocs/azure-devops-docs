@@ -48,6 +48,37 @@ This task enables you to connect to a remote machine using SSH and run commands 
 | **Advanced - Fail on STDERR** | If this option is selected (the default), the build will fail if the remote commands or script write to **STDERR**. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
+## Supported algorithms
+
+### Key pair algorithms
+
+* RSA
+* DSA
+
+### Encryption algorithms
+
+* aes256-cbc
+* aes192-cbc
+* aes128-cbc
+* blowfish-cbc
+* 3des-cbc
+* arcfour256
+* arcfour128
+* cast128-cbc
+* arcfour
+
+For OpenSSL v1.0.1 and higher (on agent):
+* aes256-ctr
+* aes192-ctr
+* aes128-ctr
+
+For OpenSSL v1.0.1 and higher, NodeJS v0.11.12 and higher (on agent):
+* aes128-gcm
+* aes128-gcm@openssh.com
+* aes256-gcm
+* aes256-gcm@openssh.com
+
+
 ## See also
 
 * [Install SSH Key task](../utility/install-ssh-key.md)
