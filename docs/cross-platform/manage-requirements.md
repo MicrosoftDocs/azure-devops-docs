@@ -239,7 +239,7 @@ However, you can use one or more of the following options to mark a work item as
 You can quickly assign work items to a sprint through drag-and-drop from the product backlog to the sprint listed within the Planning pane. 
 
 > [!div class="mx-imgBorder"]
-> ![Boards>Backlogs>Open view options and choose Planning](../boards/sprints/media/define-sprints/view-options-planning-menu.png)
+> ![Boards>Backlogs>Drag-drop items onto sprint](../boards/sprints/media/define-sprints/drag-drop-backlog-items-to-sprint.png)
  
 
 ## Monitor and report on progress 
@@ -280,25 +280,66 @@ Azure DevOps provides a robust alert system, allowing project members to set ale
 
 As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, as described in this article, or team or project alerts.
  
-## Related articles
- 
+## Related articles 
 
-### Key concepts 
+To learn more about any of the concepts introduced in this article, refer to the following articles. 
+ 
+### Agile and Agile culture
+
+- [What is Agile?](/azure/devops/learn/agile/what-is-agile)
+- [Agile culture](../boards/plans/agile-culture.md) 
+- [Best practices for "light-weight" Agile project management](../boards/best-practices-agile-project-management.md)
+- [Scaling Agile - Practices that scale](../boards/plans/practices-that-scale.md) 
+
+
+### Work items, work item types, and process models 
 
 - [About work items](../boards/work-items/about-work-items.md) 
+- [Add work item tags to categorize and filter lists and boards](queries/add-tags-to-work-items.md)
+- [Choose a process](../boards/work-items/guidance/choose-process.md)
+- [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md) 
+- [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [About Area and Iteration Paths (sprints)](../organizations/settings/about-areas-iterations.md) 
-- [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md) 
-- [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)
 
-### Best practices
- 
-- [Best practices for "light-weight" Agile project management](../boards/best-practices-agile-project-management.md)
+
+### Backlogs and boards
+
+- [Create your backlog](../boards/backlogs/create-your-backlog.md)  
+- [Organize your backlog](../boards/backlogs/organize-backlog.md)  
+- [Define features and epics](../boards/backlogs/define-features-epics.md) 
+- [Refine your backlog](../boards/backlogs/best-practices-product-backlog.md) 
+- [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md) 
+- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](../boards/backlogs/backlogs-boards-plans.md)
 - [Configure and customize Azure Boards](../boards/configure-customize.md)
 
-### Get started guides and tutorials 
+### Kanban 
 
-- [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Start using your Kanban board](../boards/boards/kanban-quickstart.md)
+- [Add columns to your Kanban board](../boards/boards/add-columns.md) 
+- [Customize cards](../boards/boards/customize-cards.md)
+- [Filter your Kanban board](../boards/boards/filter-kanban-board.md)
+- [Kanban best practices](../boards/boards/best-practices-kanban.md)
+
+### Scrum
+
+- [Assign backlog items to a sprint](../boards/sprints/assign-work-sprint.md) 
+- [Configure and monitor sprint burndown](../report/dashboards/configure-sprint-burndown.md) 
+- [Scrum and best practices](../boards/sprints/best-practices-scrum.md)  
+
+### Dependency management 
+- [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md) 
+- [Triage work items](../boards/queries/triage-work-items.md) 
+
+### Milestone planning 
+- [Forecast your product backlog](../boards/sprints/forecast.md)  
+### Monitor and report on progress
+- [Display rollup progress or totals](../boards/backlogs/display-rollup.md)
+- [Review team Delivery Plans](../boards/plans/review-team-plans.md)
 
 
-### How to guides 
- 
+### Notifications
+- [Default and supported notifications](../notifications/oob-built-in-notifications.md) 
+- [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
+- [Manage notifications for a team or group](../notifications/manage-team-group-notifications.md)
+
+
