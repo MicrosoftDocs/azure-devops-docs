@@ -4,7 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
 ms.date: 02/17/2020
-description: In the **Sprint 165 Update** of Azure DevOps, we've added a **preview but don't run** mode for YAML pipelines so you can try out a YAML pipeline without committing it to a repo or running it.
+description: In Sprint 165 Update of Azure DevOps, we've added a preview but don't run mode for YAML pipelines so you can try out a YAML pipeline without committing it to a repo or running it.
 ---
 
 # Preview fully parsed YAML document without running the pipeline
