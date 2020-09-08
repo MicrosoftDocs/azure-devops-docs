@@ -22,7 +22,7 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
 1. One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.
 
-   1. From your **Packages** page, click _Connect to Feed_
+   1. From your **Artifacts** page, click _Connect to Feed_
 
       ::: moniker range=">= azure-devops-2019"
     
