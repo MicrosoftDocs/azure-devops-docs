@@ -25,7 +25,7 @@ Retention policies let you set how long to keep runs, tests, and releases stored
 The following retention policies are available in Azure DevOps in your **Project settings**: 
 
 * **Pipeline** - Set how long to keep artifacts, symbols, attachments, runs, and pull request runs. 
-* **Release** - Set whether to save builds and view the default and maximum retention settings.
+* **Release (classic)** - Set whether to save builds and view the default and maximum retention settings.
 * **Test** - Set how long to keep automated and manual test runs, results, and attachments. 
 
 If you are using an on-premises server, you can also specify retention policy defaults for a project and when releases are permanently destroyed. Learn more about [release retention](#release).
@@ -51,7 +51,7 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 
 3. Select **Settings** or **Release retention** in **Pipelines** or **Retention** in **Test**.
     * In **Pipelines**, use **Settings** to configure retention for artifacts, symbols, attachments, runs, and pull request runs. 
-    * In **Pipelines**, use **Release retention** to set when to keep builds.
+    * In **Pipelines**, use **Release retention** to set when to keep builds consumed by releases.
     * In **Test**, use **Retention** to set how long to keep test runs.     
 
     :::image type="content" source="media/retention-menu.png" alt-text="Retention settings in Project settings":::
@@ -78,27 +78,35 @@ Along with defining how many days to retain runs, you can also decide the minimu
     * Set the number of days to keep pull request [runs](../process/runs.md)
     * Set the number of recent [runs](../process/runs.md) to keep for each pipeline
 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
 > [!NOTE]
 > The only way to configure retention policies for YAML and classic pipelines is through the project settings as described above. You cannot configure per-pipeline retention policies any more.
 
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
 The setting for number of recent runs to keep for each pipeline requires a little more explanation. The interpretation of this setting varies based on the type of repository you build in your pipeline.
 
-- **Azure Repos:** Azure Pipelines always retains the configured number of latest runs for the default branch and for each protected branch of the repository. A branch that has any branch protection policies configured is considered to be a protected branch. As an example, consider a repository with the default branch called **main**. Also, let us assume that the **release** branch in this repository has a protection policy. In this case, if you configured the policy to retain 3 runs, then the latest 3 runs of main as well as the latest 3 runs of release branch are retained. In addition, the latest 3 runs of this pipeline (irrespective of the branch) are also retained. 
+- **Azure Repos:** Azure Pipelines always retains the configured number of latest runs for the default branch and for each protected branch of the repository. A branch that has any branch policies configured is considered to be a protected branch. As an example, consider a repository with the default branch called **main**. Also, let us assume that the **release** branch in this repository has a branch policy. In this case, if you configured the policy to retain 3 runs, then the latest 3 runs of main as well as the latest 3 runs of release branch are retained. In addition, the latest 3 runs of this pipeline (irrespective of the branch) are also retained. 
 
-To clarify this logic further, consider that the list of runs for this pipeline is as follows with the most recent run at the top. The table shows which runs will be retained as per the retention policy to hold 3 latest runs (assuming that the number of days setting in the retention policy does not change this behavior):
+    To clarify this logic further, let us say that the list of runs for this pipeline is as follows with the most recent run at the top. The table shows which runs will be retained if you have configured to retain the latest 3 runs (ignoring the effect of the number of days setting):
 
-  | Run # | Branch | Retained / Not retained | Why? |
-  |-------|--------|-------------------------|------|
-  | Run 10 | main    | Retained | Latest 3 for main |
-  | Run 9  | branch1 | Retained | Latest 3 for pipeline |
-  | Run 8  | branch2 | Retained | Latest 3 for pipeline |
-  | Run 7  | main    | Retained | Latest 3 for main |
-  | Run 6  | main    | Retained | Latest 3 for main |
-  | Run 5  | main    | Not retained | Neither latest 3 for main, nor for pipeline |
-  | Run 4  | main    | Not retained | Neither latest 3 for main, nor for pipeline |
-  | Run 3  | branch1 | Not retained | Neither latest 3 for main, nor for pipeline |
-  | Run 2  | release | Retained | Latest 3 for release |
-  | Run 1  | main    | Not retained | Neither latest 3 for main, nor for pipeline |
+    | Run # | Branch | Retained / Not retained | Why? |
+    |-------|--------|-------------------------|------|
+    | Run 10 | main    | Retained | Latest 3 for main |
+    | Run 9  | branch1 | Retained | Latest 3 for pipeline |
+    | Run 8  | branch2 | Retained | Latest 3 for pipeline |
+    | Run 7  | main    | Retained | Latest 3 for main |
+    | Run 6  | main    | Retained | Latest 3 for main |
+    | Run 5  | main    | Not retained | Neither latest 3 for main, nor for pipeline |
+    | Run 4  | main    | Not retained | Neither latest 3 for main, nor for pipeline |
+    | Run 3  | branch1 | Not retained | Neither latest 3 for main, nor for pipeline |
+    | Run 2  | release | Retained | Latest 3 for release |
+    | Run 1  | main    | Not retained | Neither latest 3 for main, nor for pipeline |
 
 - **All other Git repositories:** Azure Pipelines retains the configured number of latest runs for the default branch of the repository and for the whole pipeline.
 
@@ -180,7 +188,7 @@ You can delete runs using the [context menu](../get-started/multi-stage-pipeline
 > If you are using Azure Pipelines, you can view but not change the global release retention policies for your project.
 >
 
-The release retention policies for a release pipeline determine how long a release and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline.
+The release retention policies for a classic release pipeline determine how long a release and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline.
 
 The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most recent three will be retained indefinitely - irrespective of the number of days specified. However, you can manually delete these releases when you no longer require them.
 
