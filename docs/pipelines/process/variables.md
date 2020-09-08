@@ -4,7 +4,7 @@ ms.custom: seodec18, contperfq4
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 08/28/2020
+ms.date: 09/08/2020
 
 monikerRange: '>= tfs-2015'
 ---
@@ -562,6 +562,8 @@ jobs:
 ### Use outputs in a different stage
 (Azure DevOps 2020 and above only)
 
+To use the output from a different stage at the job level, you use the `stageDependencies` syntax.
+
 ```yaml
 stages:
 - stage: One
@@ -577,6 +579,25 @@ stages:
       varFromA: $[ stageDependencies.One.A.outputs['ProduceVar.MyVar'] ]
     steps:
     - script: echo $(varFromA) # this step uses the mapped-in variable
+```
+
+To use the output at a stage level, you use the `dependencies` syntax.
+
+```yaml
+stages:
+- stage: One
+  jobs:
+  - job: A
+    steps:
+     - task: MyTask@1
+       name: ProduceVar
+
+- stage: Two
+  condition: and(succeeded(), eq(dependencies.One.outputs['A.ProduceVar.MyVar'], 'true'))
+  jobs:
+  - job: B
+    steps:
+    - script: echo hello from Stage B
 ```
 
 #### [Classic](#tab/classic/)
