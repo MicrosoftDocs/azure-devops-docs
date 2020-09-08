@@ -24,7 +24,7 @@ Web Deploy provides several convenient deployment options, such as renaming lock
 
 If you use the Linux agent, the task relies on the [Kudu REST APIs](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-One thing worth checking before deployment is the Azure App Service access restrictions list. This list can include IP addresses or Azure Virtual Network subnets. When there are one or more entries, there is then an implicit "deny all" that exists at the end of the list. To modify the access restriction rules to your app, see [Adding and editing access restriction rules in Azure portal](azure/app-service/app-service-ip-restrictions).
+One thing worth checking before deploying is the Azure App Service access restrictions list. This list can include IP addresses or Azure Virtual Network subnets. When there are one or more entries, there is then an implicit "deny all" that exists at the end of the list. To modify the access restriction rules to your app, see [Adding and editing access restriction rules in Azure portal](/azure/app-service/app-service-ip-restrictions#adding-and-editing-access-restriction-rules-in-the-portal).
 
 The [Azure App Service Manage task](../../../tasks/deploy/azure-app-service-manage.md) is another task that's useful for deployment.
 You can use this task to start, stop, or restart the web app before or after deployment.
