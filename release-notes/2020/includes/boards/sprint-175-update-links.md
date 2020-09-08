@@ -6,8 +6,8 @@ ms.date: 09/10/2020
 ms.topic: include
 ---
     
-- [Allow stakeholders to drag and drop work items](#allow-stakeholders-to-drag-and-drop-work-items)
-- [Allow editing description of system fields](#allow-editing-description-of-system-fields)
-- [When linking a work item to a build, allow user to search and find pipelines across projects ](#when-linking-a-work-item-to-a-build,-allow-user-to-search-and-find-pipelines-across-projects-)
+- [Link your work item to builds in another project](#link-your-work-item-to-builds-in-another-project)
+- [Allow stakeholders to move work items across board columns - GA](#allow-stakeholders-to-move-work-items-across-board-columns-ga)
+- [Editing description (help text) on system fields](#editing-description-help-text-on-system-fields)
 
     
