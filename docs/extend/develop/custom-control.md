@@ -1,6 +1,6 @@
 ---
-title: Add a custom control to the work item form | Extensions for Azure DevOps Services
-description: Describes how to extend the work item form by adding a custom control.
+title: Add a custom control to the work item form | Extensions for Azure DevOps
+description: Describes how to extend the work item form by adding a custom control in Azure DevOps and Team Foundation Server (TFS).
 ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
 ms.technology: devops-ecosystem
 ms.topic: conceptual
@@ -89,10 +89,10 @@ These properties define a user input that the contribution can use:
 
 * **id** - A unique id for the input.
 * **description** - A few sentences describing the input.
-* **type (optional)** - The type of input. Only supported on Azure DevOps Services and TFS 15 RC2 and later.
+* **type (optional)** - The type of input. Only supported on Azure DevOps and TFS 15 RC2 and later.
   * Valid values: 
     * `WorkItemField` - Indicates that the input is a Work Item field. This means that the value provided by the user for this input should be a valid work item field's reference name.
-* **properties (optional)** - Custom properties for the input. Only supported on Azure DevOps Services and TFS 15 RTM.
+* **properties (optional)** - Custom properties for the input. Only supported on Azure DevOps and TFS 15 RTM.
   * Valid keys:
     * `workItemFieldTypes` - Defines an array of field types that this input supports. Valid values are -
         * `String`
@@ -110,7 +110,7 @@ These properties define a user input that the contribution can use:
             * `String`
             * `Number`
             * `Boolean`
-            * `Field` - Only supported in TFS 15 RC1 and RC2 and not in Azure DevOps Services.
+            * `Field` - Only supported in TFS 15 RC1 and RC2 and not in Azure DevOps.
         * `isRequired` - A boolean value which indicates if the input is required to have a value or not
 
 

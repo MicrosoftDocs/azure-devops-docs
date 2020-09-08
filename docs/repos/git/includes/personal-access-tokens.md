@@ -7,7 +7,7 @@ ms.topic: include
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the New account manager page, see [Enable preview features](~/project/navigation/preview-features.md).
+> To enable the new user interface for the New account manager page, see [Manage or enable features](~/project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -67,13 +67,13 @@ ms.topic: include
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
-1. Sign in to your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
+1. Sign in to your web portal (```https://{server}:8080/tfs/```).
 
 2. From your home page, open your profile. Go to your security details.
 
-   ![TFS home page, open your profile, go to Security](~/repos/git/media/my-profile-team-services.png)
+   ![Home page, open your profile, go to Security](~/repos/git/media/my-profile-team-services.png)
 
 3. Create a personal access token.
 
@@ -89,7 +89,7 @@ ms.topic: include
 5. Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes)
    for this token to authorize for *your specific tasks*.
 
-   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to TFS, 
+   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate, 
    limit your token's scope to **Agent Pools (read, manage)**. 
 
 6. When you're done, make sure to *copy the token*. For your security, it won't be shown again. Use this token as your password. Select **Close**.
@@ -245,14 +245,14 @@ If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more info
 
 For more examples of how to use PATs, see [Git credential managers](~/repos/git/set-up-credential-managers.md), [REST APIs](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1#assemble-the-request), [NuGet on a Mac](~/artifacts/nuget/consume.md#mac-os), [[Reporting clients](~/report/powerbi/client-authentication-options.md#enter-credentials-within-a-client), or [Get started with Azure DevOps CLI](~/cli/index.md).
 
+::: moniker range="azure-devops"
+
 ## Modify a PAT
 
 You can regenerate or extend a PAT, and modify its [scope](~/integrate/get-started/authentication/oauth.md#scopes).
 
-::: moniker range="azure-devops"
-
 > [!NOTE]   
-> To enable the new user interface for the New account manager page, see [Enable preview features](~/project/navigation/preview-features.md).
+> To enable the new user interface for the New account manager page, see [Manage or enable features](~/project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -282,19 +282,14 @@ You can regenerate or extend a PAT, and modify its [scope](~/integrate/get-start
 
    ![Modify and Save PAT](~/repos/git/media/modify-pat.png)
 
-::: moniker-end
-
 * * *
-
 
 ## Revoke a PAT
 
 You can revoke a PAT at any time, for various reasons.
 
-::: moniker range="azure-devops"
-
 > [!NOTE]   
-> To enable the new user interface for the New account manager page, see [Enable preview features](~/project/navigation/preview-features.md).
+> To enable the new user interface for the New account manager page, see [Manage or enable features](~/project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -324,7 +319,6 @@ You can revoke a PAT at any time, for various reasons.
 
    ![Confirm revoke](~/repos/git/media/revoke-token-confirmation-dialog-preview.png)
 
-::: moniker-end
-
 * * *
 
+::: moniker-end

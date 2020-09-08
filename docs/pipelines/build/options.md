@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about building your code or deploying your software using build options on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 03/17/2020
+ms.date: 07/22/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -69,7 +69,7 @@ Specify the authorization scope for a build job. Select:
 * **Project Collection** if the build needs access to multiple projects.
 * **Current Project** if you want to restrict this build to have access only the resources in the current project.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ### Scoped build identities
 
@@ -88,13 +88,16 @@ The **project-scoped identity** name has the following format:
 - `{Project Name} Build Service ({Org Name})`
 - For example, if the organization name is `fabrikam-tailspin` and the project name is `SpaceGameWeb`, this account has the name `SpaceGameWeb Build Service (fabrikam-tailspin)`.
 
-By default, the collection-scoped identity is used, unless the **Limit job authorization scope to current project** is set in **Project Settings** > **Settings**.
+By default, the collection-scoped identity is used, unless the **Limit job authorization scope to current project for non-release pipelines** is set in **Project Settings** > **Settings**.
 
-![Limit job authorization scope](media/options/limit-job-authorization-scope.png)
+:::image type="content" source="media/options/limit-job-authorization-scope.png" alt-text="Limit job authorization scope":::
 
-**Limit job authorization scope to current project** can also be set at the organization level in **Organization Settings**. When **Limit job authorization scope to current project** is set in **Organization Settings**, it is grayed out and can't be set in **Project Settings**.
+> [!NOTE]
+> This setting does not apply to [classic release pipelines](../release/index.md).
 
-![Limit job authorization scope disabled](media/options/limit-job-authorization-scope-disabled.png)
+**Limit job authorization scope to current project for non-release pipelines** can also be set at the organization level in **Organization Settings**. When **Limit job authorization scope to current project for non-release pipelines** is set in **Organization Settings**, it is grayed out and can't be set in **Project Settings**.
+
+:::image type="content" source="media/options/limit-job-authorization-scope-disabled.png" alt-text="Limit job authorization scope disabled":::
 
 ### Managing Permissions
 
@@ -103,7 +106,7 @@ One result for setting project-scoped access may be that the project-scoped iden
 A solution is to assign permissions directly to the project-scoped identity, if required. These can be assigned cross-project within the same project collection. 
 
 > [!NOTE]
-> If you don't see the project-scoped identities, you must first enable **Limit job authorization scope to current project** and then run a pipeline in that project.
+> If you don't see the project-scoped identities, you must first enable **Limit job authorization scope to current project for non-release pipelines** and then run a pipeline in that project.
 
 #### Configure permissions to access another repo in the same project project collection
 

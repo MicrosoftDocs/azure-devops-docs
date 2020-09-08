@@ -85,6 +85,12 @@ For more detailed logs to debug pipeline problems, define `System.Debug` and set
 
 ::: moniker-end
 
+::: moniker range="azure-devops-2020"
+
+[!INCLUDE [include](includes/variables-server-2020.md)]
+
+::: moniker-end
+
 ::: moniker range="azure-devops-2019"
 
 [!INCLUDE [include](includes/variables-server2019.md)]

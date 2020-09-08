@@ -7,7 +7,7 @@ ms.assetid:
 ms.custom: seodec18
 ms.author: jukullam
 author: juliakm
-ms.date: 04/15/2020
+ms.date: 09/04/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -22,7 +22,6 @@ You can automatically deploy your web app to an Azure App Service web app after 
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
-> 
 > This guidance applies to Team Foundation Server (TFS) version 2017.3 and later.
 
 ::: moniker-end
@@ -356,9 +355,11 @@ a Web.config transformation or by substituting variables in your Web.config file
 **Azure App Service Deploy task** allows users to modify configuration settings in configuration files (*.config files) inside web packages and XML parameters files (parameters.xml), based on the stage name specified.
 
 ::: moniker range="> tfs-2018"
+
 > [!NOTE]  
 > File transforms and variable substitution are also supported by the separate [File Transform task](../tasks/utility/file-transform.md) for use in Azure Pipelines.
-  You can use the File Transform task to apply file transformations and variable substitutions on any configuration and parameters files.
+You can use the File Transform task to apply file transformations and variable substitutions on any configuration and parameters files.
+
 ::: moniker-end
 
 #### [YAML](#tab/yaml/)

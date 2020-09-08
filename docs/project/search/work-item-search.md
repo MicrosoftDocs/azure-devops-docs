@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-ms.date: 08/19/2019
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2017'
 ---
 

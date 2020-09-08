@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Repository settings
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 11/19/2019
 monikerRange: '>= tfs-2017'
@@ -13,17 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Repository settings
 
-::: moniker range="azure-devops"
-
-#### Azure Repos
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 Update 2
-
-::: moniker-end
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 Update 2**
 
 Git repositories can be customized to a great extent on Azure DevOps Services and Team Foundation Server.
 Global options for entire repositories are configured by repository settings.
@@ -36,7 +24,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 #### [Browser](#tab/browser)
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">=azure-devops-2019"
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
@@ -86,7 +74,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"
+::: moniker range="> azure-devops-2019"
 
 You can use Azure CLI to configure [Case enforcement](#case-enforcement) and [Maximum file size](#maximum-file-size) policies.
 

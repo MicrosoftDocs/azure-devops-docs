@@ -13,7 +13,7 @@ ms.date: 06/04/2020
 
 # Permissions lookup guide for Azure DevOps
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 Use this index to locate the topic on how to manage a specific permission. Most permissions are managed for an object, project, or collection. Other permissions are managed by adding users and groups to a role.   To learn more, see [About permissions and groups](about-permissions.md) and [About security roles](about-security-roles.md), and [Trace permissions](faq-trace-permissions.md).  
 
@@ -255,7 +255,7 @@ Values in parenthesis indicate what level the permission is managed:
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 - **Object**: Permissions are managed at the object-level    
 - **Project**: Permissions are managed at the project level
@@ -673,16 +673,13 @@ Values in parenthesis indicate what level the permission is managed:
 The **Edit project-level information** permission is set through the [Security admin page for a project](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
 for all projects defined in the organization or collection:
 
-::: moniker range="azure-devops"
-
+- Edit the project description
 - Add and administer teams and all team-related features
-- Edit project-level permissions for users and groups in the project
-- Add or remove project-level security groups  
 - Edit project level permission ACLs
 - Edit event subscriptions or alerts for teams or the project 
-
-::: moniker-end
-
+ 
+> [!NOTE]
+> The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the Project Administrators group. It isn't controlled by a permissions surfaced within the user interface. 
 
 
 ## Edit instance-level or collection-level information

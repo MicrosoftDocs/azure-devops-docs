@@ -69,11 +69,11 @@ Learn how to perform these tasks:
 
 ## Add or modify a field 
 
-Locked ![ ](media/process/locked-icon.png) fields and inherited ![ ](media/process/inherited-icon.png) fields correspond to fields inherited from a system process. You can't customize locked fields. You can customize some options for inherited fields. You can fully customize fields that you add to a process. 
+Locked :::image type="icon" source="media/process/locked-icon.png" border="false"::: fields and inherited :::image type="icon" source="media/process/inherited-icon.png" border="false"::: fields correspond to fields inherited from a system process. You can't customize locked fields. You can customize some options for inherited fields. You can fully customize fields that you add to a process. 
 
 1. To begin, choose your inherited process, and then choose the WIT you want to customize. 
 
-2. To add a field, choose the ![ ](media/process/new-field-icon.png) (**New Field** icon).  
+2. To add a field, choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: (**New Field** icon).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](media/field/bug-new-field.png)
@@ -110,7 +110,7 @@ You use different WITs to plan and track different types of work. The main reaso
 
 1. To begin, choose your inherited process, and then choose the WIT you want to customize. 
 
-1. From the **Work Item Types** page, choose the ![ ](../../../media/icons/blue-add-icon.png) **New work item type**.
+1. From the **Work Item Types** page, choose the :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false"::: **New work item type**.
 
 	<img src="media/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
 
@@ -248,7 +248,7 @@ We recommend that you create a test project and apply your customized inherited 
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Work Items Page, Add New Work Item, Bug](media/process/add-custom-field-verify-bug.png) 
 
-3. Verify that the field(s) you added appear on the form. Note that the ![ ](../../../media/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+3. Verify that the field(s) you added appear on the form. Note that the :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: (exclamation mark) icon indicates the field is required.  
 
 <a id="test-import-export-process" />
 

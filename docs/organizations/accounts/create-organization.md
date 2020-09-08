@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # Create an organization or project collection
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 ::: moniker range="= azure-devops"
 
@@ -40,7 +40,7 @@ In this article, learn how to create an organization. An organization is used to
 
 * Complete the following steps if you want to authenticate users and control organization access through your Azure AD.
 
-   - You need a work or school account that's managed by your Azure AD. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
+   - You need a work or school account that's managed by your Azure AD. If you use Azure or Microsoft 365, you might have one already. If you don't, learn how to [sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
    - To use existing on-premises identities, see [use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
    - All users must be members in that directory to access your organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 * Organization names must start with a letter or number, followed by letters, numbers or hyphens, and must end with a letter or number.
@@ -55,7 +55,7 @@ In this article, learn how to create an organization. An organization is used to
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Create a project collection
 

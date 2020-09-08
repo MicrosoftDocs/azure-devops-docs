@@ -4,9 +4,9 @@ titleSuffix: Azure Repos
 description: Reviewing and Publishing Code using Git Pull Requests
 ms.assetid: 731eeda5-133f-46d5-ab60-b27a5280210d
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
+ms.author: vijayma
+author: vijayma
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 #  Create a pull request
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 [Git's workflow](gitworkflow.md) uses [branches](branches.md) to isolate work until you're ready to merge the changes into your default branch, such as `master`. 
 The pull request is the collaborative process that lets the rest of the team discuss changes in a branch and agree to merge them once everyone approves.

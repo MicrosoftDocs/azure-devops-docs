@@ -8,14 +8,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: ">= azure-devops-2019"
-ms.date: 03/06/2020
+ms.date: 07/09/2020
 ---
 
 # Bulk import or update work items using CSV files
 
 [!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
-::: moniker range="azure-devops"
+::: moniker range="> azure-devops-2019"
 
 You can perform bulk import and export of work items using a CSV formatted file. While you can continue to use Excel for bulk import and updates, you can use the native import/export feature that doesn't require Excel. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
@@ -28,9 +28,9 @@ You can perform bulk export of work items using a CSV formatted file. While you 
 ::: moniker-end 
 
 > [!NOTE]   
-> The export feature is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions. The import feature is only available with Azure DevOps Services. 
+> The export feature is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions. The import feature is available with Azure DevOps Server 2020 and Azure DevOps Services. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Import new work items
 
@@ -125,7 +125,7 @@ All work items you import are created in a new state. This rule means that you c
 
 ## Export list as CSV 
 
-From any query, you can export a list of work items as a comma-delimited list. Simply [open the query](view-run-query.md), choose the ![  ](../../media/icons/actions-icon.png) actions icon, and choose **Export to CSV**.
+From any query, you can export a list of work items as a comma-delimited list. Simply [open the query](view-run-query.md), choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose **Export to CSV**.
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ From any query, you can export a list of work items as a comma-delimited list. S
 
 ::: moniker-end 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Q & A
 

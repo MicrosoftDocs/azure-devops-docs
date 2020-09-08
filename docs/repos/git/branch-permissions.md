@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 05/14/2020
 monikerRange: '>= tfs-2017'
@@ -13,12 +11,21 @@ monikerRange: '>= tfs-2017'
 
 # Set branch permissions
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 ## Overview
 
 Set up permissions to control who can read and update the code in a branch on your Git repo.
 You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository).
+
+> [!NOTE] 
+> Branch permissions are different between different versions of TFS, Azure DevOps
+> Server, and Azure DevOps Services.
+>
+> Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
+> in the upper left corner of the window.
+>
+> ![Content version selector](../../media/version-selector.png)
 
 ## Use the branches view to configure security
 
@@ -65,13 +72,6 @@ The user or group will still exist in your Project and this change will not affe
 Control branch permission settings from the branch permission view. Users and groups with permissions set at the repo level will
 [inherit those permissions](../../organizations/security/about-permissions.md#inheritance) by default. 
 
-> [!NOTE] 
-> These permissions have changed in TFS 2017 Update 1 and Azure DevOps Services.
-> Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
-> in the upper left corner of the window.
->
-> ![Content version selector](../../media/version-selector.png)
-
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
 ### Permissions in TFS 2017 Update 1 through TFS 2018 Update 2
@@ -100,12 +100,12 @@ Control branch permission settings from the branch permission view. Users and gr
 
 ::: moniker-end    
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2019" 
 
-### Permissions in Azure DevOps Services
+### Permissions in Azure DevOps Server 2019 through Azure DevOps Services
 
 >[!NOTE]
->[In Azure DevOps Services](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission (which is still available in TFS 2015 through TFS 2018 Update 2) was removed and its functionality divided into the following two new permissions:
+>[The **Exempt from policy enforcement**](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), (which is still available in TFS 2015 through TFS 2018 Update 2) was removed and its functionality divided into the following two new permissions:
 >
 >- **Bypass policies when completing pull requests**
 >- **Bypass policies when pushing**
@@ -121,5 +121,7 @@ Control branch permission settings from the branch permission view. Users and gr
 | Force Push (Rewrite History and Delete Branches) | Can force push to a branch, which can rewrite history. This permission is also required to delete a branch. |
 | Manage Permissions                               | Can set permissions for the branch.                                                                         |
 | Remove Others' Locks                             | Can remove [locks](lock-branches.md) set on branches by other users.                                                            |
+
+The following permissions are automatically assigned to branch creators: Contribute, Edit Policies, Force Push, Manage Permissions, and Remove Others' Locks.
 
 ::: moniker-end 

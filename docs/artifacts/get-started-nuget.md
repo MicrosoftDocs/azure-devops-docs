@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Get started with NuGet packages in Azure DevOps Services and TFS
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services | TFS 2018 | TFS 2017**
 
 ## Before you start
 

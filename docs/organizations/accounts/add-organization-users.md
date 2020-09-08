@@ -1,22 +1,22 @@
 ---
 title: Add users and manage access
-titleSuffix: Azure DevOps Services
+titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Learn how to add users to an organization, project, or team, and manage their access level (like Stakeholder), direct assignments, invitations, and more.
+description: How to add users to an organization, project, or team. How to manage users access level (like Stakeholder), direct assignments, invitations, and more.
 ms.topic: conceptual
 ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-ms.date: 05/15/2020
-monikerRange: 'azure-devops'
+ms.date: 08/25/2020
+monikerRange: '>= azure-devops-2019'
 ---
 
-# Add users and manage access in Azure DevOps Services
+# Add users and manage access in Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
-This article describes how to add and manage user access through Direct assignment for Azure DevOps Services. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md).
+Learn how to add and manage user access through Direct assignment for Azure DevOps. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md).
 
 The following types of users can join your organization for free:
 
@@ -28,6 +28,8 @@ The following types of users can join your organization for free:
 
 > [!NOTE]
 > For information about inviting external users, see [Add external user](add-external-user.md).
+
+## Prerequisites
 
 [!INCLUDE [prerequisites-add-users-org](../../includes/prerequisites-add-users-org.md)]
 
@@ -42,11 +44,17 @@ and add users to groups - all in one view.
  
 You can add up to 50 users in a single transaction. When you add users, each user receives a notification email with a
 link to the organization page.
- 
+
+::: moniker range=" azure-devops"
+
 > [!NOTE]   
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
 
+::: moniker-end
+
 #### [Preview page](#tab/preview-page) 
+
+::: moniker range=" azure-devops"
 
 To give other users access to your organization, add their email addresses.
 
@@ -74,7 +82,15 @@ To give other users access to your organization, add their email addresses.
 	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
 5. Select **Add** to complete your invitation.
 
+::: moniker-end
+
+
+Choose the **Current page** for instructions. 
+
+
 #### [Current page](#tab/current-page)
+
+::: moniker range="azure-devops-2019 || azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -95,7 +111,13 @@ To give other users access to your organization, add their email addresses.
    > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
 5. Select **Add** to complete your invitation.
 
+::: moniker-end
+
+The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users.
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range=">= azure-devops-2020"
 
 [Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
@@ -143,7 +165,7 @@ ID                                    Display Name          Email               
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com   contoso@contoso.com   stakeholder     Stakeholder     pending 
 ```
 
-You can also add the user to a Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](https://docs.microsoft.com/azure/devops/organizations/security/permissions-access?view=azure-devops).
+You can also add the user to an Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](https://docs.microsoft.com/azure/devops/organizations/security/permissions-access?view=azure-devops).
 
 ```CLI
 az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com
@@ -151,7 +173,11 @@ az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM
 
 You can see all security groups in a project using the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
 
-* * *
+::: moniker-end
+
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
+
+* * * 
 
 For more information about user access, read [about access levels](../security/access-levels.md).
 
@@ -192,7 +218,7 @@ When you add members to projects without setting up billing, they automatically 
 
 ## Manage users
 
-From your web browser you can view and edit certain user information. From the Azure DevOps CLI command, you can see details about a specific user and update their access level.
+From your web browser, you can view and edit certain user information. From the Azure DevOps CLI command, you can see details about a specific user and update their access level.
 
 The Users view shows key information per user in a table. In this view, you can do the following tasks:
 
@@ -205,6 +231,8 @@ The Users view shows key information per user in a table. In this view, you can 
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
+
+::: moniker range=" azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -226,11 +254,19 @@ The Users view shows key information per user in a table. In this view, you can 
    * **Remove direct assignments**
    * **Remove from organization** (deletes user)
 
-     ![Select Users, and then select an item in the context menu](media/manage-users/manage-users-show-context-menu-preview.png)
+     ![Select Users, select an item in the context menu](media/manage-users/manage-users-show-context-menu-preview.png)
 
 5. **Save** your changes.
 
+::: moniker-end
+
+
+Choose the **Current page** for instructions. 
+
+
 #### [Current page](#tab/current-page)
+
+::: moniker range="azure-devops-2019 || azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -254,7 +290,13 @@ The Users view shows key information per user in a table. In this view, you can 
 
 5. **Save** your changes.
 
+::: moniker-end
+
+The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users.
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range=">= azure-devops-2020"
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
 
@@ -316,19 +358,27 @@ ID                                    Display Name         Email                
 
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     active
 ```
+::: moniker-end
 
-* * *
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 
-## FAQs for adding users
+* * * 
+
+## FAQ
 
 #### Q: Which email addresses can I add?
 
 A: 
+
+::: moniker range=" azure-devops"
+
 * If your organization is connected to Azure Active Directory, you can add only email addresses that are internal to the directory.
 
 * Add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-azure-access.md) to authenticate users and control access through [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
 
 * If your organization is connected to your directory, all users must be directory members. They must sign in to Azure DevOps with work or school accounts that are managed by your directory. If they aren't members, they need to be [added to the directory](add-external-user.md).
+
+::: moniker-end
 
 ![Add members' sign-in addresses or display names](media/add-team-members/add-user-or-group-to-project.png)
 
@@ -337,7 +387,12 @@ After you add members to your project, each member gets an invitation email that
 #### Q: What if they don't get or lose the invitation email?
 
 A:
+
+::: moniker range=" azure-devops"
+
 * **Organizations connected to Azure AD**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you can't assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
+
+::: moniker-end
 
 * **Organizations with Microsoft accounts**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
 
@@ -347,7 +402,12 @@ A: See [Q: Why can't I add any more members to my project?](faq-user-and-permiss
 
 #### Q: How is *access* different from *permissions?
 
-A: Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md).
+A: Access levels control user access to select web portal features, based on the user's subscription. Permissions control a user's access to select operations, based on security group membership or specific Access Control Level (ACL) assignments made to a specific user or group.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Create a project](../projects/create-project.md)
 
 ## Related articles
 

@@ -130,7 +130,7 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	> ![Choose board level, vert nav](media/configure-team/choose-board-level-vert.png)
 
-4. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+4. Choose the :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](media/configure-team/open-board-settings.png)  
@@ -144,7 +144,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
+1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
 	![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 
@@ -153,7 +153,7 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	>![Open Kanban board](../../boards/boards/media/kanban-basics-intro.png)  
 
-3. Choose the board you want to configure and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
+3. Choose the board you want to configure and then choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to configure the board and set general team settings.  
  
 	For example, from the Kanban board ...  
 
@@ -169,7 +169,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker range="tfs-2015"
 
-1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
+1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
 	![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 
@@ -178,7 +178,7 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	>![Open Kanban board](../../boards/boards/media/kanban-basics-intro.png)  
 
-3. Choose the board you want to configure and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
+3. Choose the board you want to configure and then choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to configure the board and set general team settings.  
 
 	For example, from the Kanban board ...  
 
@@ -194,7 +194,7 @@ You can configure most of your team settings from the common configuration dialo
 
 For details on each configuration option, see one of the following articles:  
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 <table width="80%">
 <tbody valign="top">
@@ -382,13 +382,13 @@ Additional elements you can configure include:
 
 ::: moniker-end
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2020" 
 
 Similar to Kanban boards, each sprint Taskboard can be customized to support information-rich, color-coded cards as well as addition of customized columns. For details, see [Customize sprint Taskboards](../../boards/sprints/customize-taskboard.md). 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops" 
+::: moniker range=">= tfs-2015 < azure-devops-2020" 
 
 Similar to Kanban boards, each sprint Taskboard can be customized to support information-rich, color-coded cards. For details, see [Customize sprint Taskboards](../../boards/sprints/customize-taskboard.md). 
 
@@ -414,7 +414,7 @@ Team administrators can add, configure, and manage permissions for team dashboar
 
 ## Update team description and picture
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2020" 
 
 Team settings also include the team name, description, and team profile image. To add a team picture, open the **Settings** tab, and then choose **Upload image**. The maximum file size is 2.5 MB.
 
@@ -439,7 +439,7 @@ Team administrators can add and modify alerts so that the team can receive email
 
 ## Manage team rooms 
 
-Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](../../notifications/collaborate-in-a-team-room.md).  
+Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room).  
 
 > [!NOTE]  
 > Team rooms are deprecated for TFS 2018 and later versions as described in [Deprecation of team rooms](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md).   
@@ -452,4 +452,3 @@ Team administrators can add users and events to team rooms, and add team rooms. 
 - [About teams and Agile tools](about-teams-and-settings.md)  
 - [Add teams](add-teams.md) 
 - [Add a team administrator](add-team-administrator.md) 
-

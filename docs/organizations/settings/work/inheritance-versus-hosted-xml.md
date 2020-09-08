@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: dahellem
 author: danhellem
 ms.topic: conceptual
-monikerRange: ">= azure-devops-2019"
+monikerRange: "azure-devops"
 ms.date: 4/01/2020
 ---
 

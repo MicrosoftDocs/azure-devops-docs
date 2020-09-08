@@ -187,7 +187,7 @@ xcode
    <tr>
       <td><code>destinationSimulators</code><br/>Simulators</td>
       <td>
-         (Optional) Enter an Xcode simulator name to be used for UI testing. For example, enter <code>iPhone X</code> (iOS and watchOS) or <code>Apple TV 4K</code> (tvOS). A target OS version is optional and can be specified in the format &#39;OS=<i>versionNumber</i>&#39;, such as <code>iPhone X,OS=11.1</code>. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be <a href="https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md#installed-sdks" data-raw-source="[found here](https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md#installed-sdks)">found here</a>. <br/>Default value: iPhone 7
+         (Optional) Enter an Xcode simulator name to be used for UI testing. For example, enter <code>iPhone X</code> (iOS and watchOS) or <code>Apple TV 4K</code> (tvOS). A target OS version is optional and can be specified in the format &#39;OS=<i>versionNumber</i>&#39;, such as <code>iPhone X,OS=11.1</code>. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be <a href="https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#installed-sdks" data-raw-source="[found here](https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md#installed-sdks)">found here</a>. <br/>Default value: iPhone 7
       </td>
    </tr>
    <tr>

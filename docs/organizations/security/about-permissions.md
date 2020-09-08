@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/14/2020
+ms.date: 08/25/2020
 ---
 
 # About permissions and groups
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 To access the resources you manage in Azure DevOps&mdash;such as your code, builds, and work tracking&mdash;you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with Azure DevOps, or Active Directory if integrated with TFS. 
 
@@ -32,8 +32,8 @@ Here's what you need to know about permission settings:
 
 - For most groups and almost all permissions, **Deny** overrides **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user is not able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.
 
-    For members of the **Project Collection Administrators** or **Team Foundation Administrators** groups, Deny doesn't trump Allow. Permissions assigned to these groups take precedent over any Deny set within any other group to which that member might belong. 
-	> **Project Collection Administrators** or **Team Foundation Administrators** permissions will not take precedence for work item operations, such as deletion. **Deny** will override **Allow**  for these permissions.
+For members of the **Project Collection Administrators** or **Team Foundation Administrators** groups, Deny doesn't trump Allow. Permissions assigned to these groups take precedent over any Deny set within any other group to which that member might belong. 
+**Project Collection Administrators** or **Team Foundation Administrators** permissions will not take precedence for work item operations, such as deletion. **Deny** will override **Allow**  for these permissions.
 
 - Changing a permission for a group changes that permission for all users who are members of that group. In other words, depending on the size of the group, you might affect the ability of hundreds of users to do their jobs by changing just one permission. So make sure you understand the impact before you make a change.
 
@@ -51,8 +51,7 @@ When a permission is allowed for a user directly or through membership in a grou
 and it is denied, either directly or through group membership,
 the permission is denied.
 
-	> Members of **Project Collection Administrators** or **Team Foundation Administrators**
-	> retain most allowed permissions, even if they belong to other groups that deny those permissions. Work item operation permissions are the exception to this rule.
+   Members of **Project Collection Administrators** or **Team Foundation Administrators** retain most allowed permissions, even if they belong to other groups that deny those permissions. Work item operation permissions are the exception to this rule.
 
 - Object-level permissions that are assigned for nodes of a hierarchy -
 areas, iterations, version control folders, work item query folders -
@@ -62,21 +61,31 @@ if the same permission is not explicitly allowed or denied for `area-1/sub-area-
 If a permission is set explicitly for an object, like `area-1/sub-area-1`,
 then the parent node is not inherited, regardless of whether it is denied or allowed.
 If it's not set, then the permissions for that node are inherited from the closest ancestor
-that has the permission explicitly set.
+that has the permission explicitly set. Lastly, in the object hierarchy, specificity trumps inheritance. For example, a user whose permissions are explicitly set to **Deny** on 'area-1' but are also explicitly set to **Allow** for 'area-1/sub-area-1' will ultimately receive an **Allow** on 'area-1/sub-area-1'. 
 
 To understand why a permission is inherited, you can pause over a permission setting, and then choose **Why?** To open a  **Security** page, see [View permissions](view-permissions.md).
 
-::: moniker range="azure-devops"
+::: moniker range="= azure-devops"
 
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
 
+::: moniker-end
+
 #### [Preview page](#tab/preview-page) 
 
+::: moniker range="= azure-devops"
+
 > [!div class="mx-imgBorder"]  
-> ![Permissions, Why link](media/view-permissions/about-permissions-information-preview.png)
+> ![Permissions dialog, preview page, Why link annotated.](media/view-permissions/about-permissions-information-preview.png)
 
 A new dialog opens that shows the inheritance information for that permission.  
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+The preview user interface for the Project Permissions Settings Page isn't available for Azure DevOps Server 2020 and earlier versions.  
 
 ::: moniker-end
 
@@ -85,27 +94,27 @@ A new dialog opens that shows the inheritance information for that permission.
 ::: moniker range=">= tfs-2017"
 
 > [!div class="mx-imgBorder"]  
-> ![Permissions, Why link](media/about-permissions-why.png)
+> ![Permissions dialog, current page, Why link annotated.](media/about-permissions-why.png)
 
 A new window opens that shows the inheritance information for that permission.  
 
-![Permissions trace dialog](media/about-permissions-trace.png)
-
-
-* * *
+![Permissions trace dialog.](media/about-permissions-trace.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-![Permissions, Why link](media/permissions/inherited-permissions.png)  
+![Permissions dialog, earlier versions, Why link annotated.](media/permissions/inherited-permissions.png)  
 
 Some object level Security dialog boxes provide an Inheritance on/off option.
 Use this option to disable inheritance for folders, shared queries, and other objects.
 
-![Permissions trace dialog](media/permissions/turn-on-inheritance.png)
+![Permissions trace dialog, earlier versions.](media/permissions/turn-on-inheritance.png)
 
 ::: moniker-end
+
+* * *
+
 
 ### When assigning permissions
  
@@ -145,6 +154,7 @@ and add the same groups to grant access to additional resources.
 ![Conceptual image showing defining AD groups](media/permissions/grant-permissions.png)
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 Of course, you don't need to grant permissions for reports or the project portal if your project doesn't use SQL Server Reporting Services or a SharePoint site.
 ::: moniker-end
 
@@ -174,45 +184,65 @@ You set most permissions through the web portal. You can use the tools listed in
 Different tools are used depending on whether you are setting permissions at a server, collection, or project level.
 You use the [web portal administration context](../../organizations/security/add-users-team-project.md) to set most permissions.
 
-::: moniker range="azure-devops"
+::: moniker range="= azure-devops"
 
-|   Permission level   |  Web portal security pages | az devops CLI |   [Tf permission command-line tool](../../repos/tfvc/permission-command.md)  |   
-|-------------------|:-----------------------------------:|:----------------:|:----------------:|  
-| [Add users to an organization](../accounts/add-organization-users.md)  | ![check mark](../../media/check.png) |  ![check mark](../../media/check.png) |  |    
-| [Add and manage security groups](add-manage-security-groups.md)  | ![check mark](../../media/check.png) |  ![check mark](../../media/check.png) |  |    
-| [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md) |  |  ![check mark](../../media/check.png) |  |  
-| [Organization-level](permissions.md#collection)  | ![check mark](../../media/check.png) |   |  |  
-| [Project and test level](permissions.md#project_test) | ![check mark](../../media/check.png) |   |  |  
-| [Build pipelines](permissions.md#build)   | ![check mark](../../media/check.png) |   |  |   
-|  [Git repository](permissions.md#git-repo)  | ![check mark](../../media/check.png) |   |  ![check mark](../../media/check.png) |  
-| [Team Foundation Version Control](permissions.md#tfvc) | ![check mark](../../media/check.png) |  | ![check mark](../../media/check.png) |  
-| [Area level for work item tracking](permissions.md#area-permissions) | ![check mark](../../media/check.png) |   |  |   
-| [Iteration level for work item tracking](permissions.md#iteration-path-permissions) | ![check mark](../../media/check.png) |   |  |  
-| [Work item query](permissions.md#query)   | ![check mark](../../media/check.png) |   |  |  
-| [Work item tags](permissions.md#tags) | ![check mark](../../media/check.png)  | ![check mark](../../media/check.png) |   | 
-| [Alerts](permissions.md#alerts)     |  |![check mark](../../media/check.png) |  |  
-| [Release pipelines](permissions.md#release_management)  | ![check mark](../../media/check.png) |    |    |  
+| Permission level  | Web portal security pages  | az devops CLI  | [Tf permission command-line tool](../../repos/tfvc/permission-command.md) |  
+|------------------|:---------------------------:|:--------------:|:---------------------:|  
+| [Add users to an organization](../accounts/add-organization-users.md)       |   :::image type="icon" source="../../media/check.png" border="false":::  |   :::image type="icon" source="../../media/check.png" border="false":::  |   |
+| [Add and manage security groups](add-manage-security-groups.md)             |   :::image type="icon" source="../../media/check.png" border="false":::  |   :::image type="icon" source="../../media/check.png" border="false":::  |   |
+| [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md)               |                                      |   :::image type="icon" source="../../media/check.png" border="false":::  |                                                                           |
+| [Organization-level](permissions.md#collection)                                     |   :::image type="icon" source="../../media/check.png" border="false":::  |                                      |                                                                           |
+| [Project and test level](permissions.md#project_test)                               |   :::image type="icon" source="../../media/check.png" border="false":::  |                                      |                                                                           |
+| [Build pipelines](permissions.md#build)     |   :::image type="icon" source="../../media/check.png" border="false":::  |            |                     |
+| [Git repository](permissions.md#git-repo)                                           |   :::image type="icon" source="../../media/check.png" border="false":::  |                                      |   :::image type="icon" source="../../media/check.png" border="false":::                                       |
+| [Team Foundation Version Control](permissions.md#tfvc)                              |   :::image type="icon" source="../../media/check.png" border="false":::  |                                      |   :::image type="icon" source="../../media/check.png" border="false":::                                       |
+| [Area level for work item tracking](permissions.md#area-permissions)                |   :::image type="icon" source="../../media/check.png" border="false":::  |                                      |                                                                           |
+| [Iteration level for work item tracking](permissions.md#iteration-path-permissions) |   :::image type="icon" source="../../media/check.png" border="false":::  |                                      |                                                                           |
+| [Work item query](permissions.md#query)                                             |   :::image type="icon" source="../../media/check.png" border="false":::  |                                      |                                                                           |
+| [Work item tags](permissions.md#tags)                                               |   :::image type="icon" source="../../media/check.png" border="false":::  |   |                                                                           |
+| [Release pipelines](permissions.md#release_management)                              |   :::image type="icon" source="../../media/check.png" border="false":::  |                                      |                                                                           |
+                                                                  |  |
+
+::: moniker-end
+
+::: moniker range="= azure-devops-2020"
+
+| Permission level   | Web portal security pages   | az devops CLI   | [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator) | [TFSSecurity CLI](/azure/devops/server/command-line/tfssecurity-cmd) | [Tf command-line tool](../../repos/tfvc/permission-command.md) |
+|-------------------|:-------------------------:|:------------------:|:------------------------------------------------------------------------------:|:--------------------------------------------------------------------:|-------------------------------------------------|
+| [Add users to a server instance](../accounts/add-organization-users.md)       |     |   :::image type="icon" source="../../media/check.png" border="false":::  |   |  :::image type="icon" source="../../media/check.png" border="false"::: |  | 
+| [Add and manage security groups](add-manage-security-groups.md)             |   :::image type="icon" source="../../media/check.png" border="false":::  |   :::image type="icon" source="../../media/check.png" border="false":::  |   |  :::image type="icon" source="../../media/check.png" border="false"::: |  | 
+| [Server-level](permissions.md#server)         |                   |     |   :::image type="icon" source="../../media/check.png" border="false":::           | :::image type="icon" source="../../media/check.png" border="false"::: |                         |
+| [Collection-level](permissions.md#collection) |  :::image type="icon" source="../../media/check.png" border="false":::  |           |     |   :::image type="icon" source="../../media/check.png" border="false":::   |     |
+| [Project and test level](permissions.md#project_test)                               |   :::image type="icon" source="../../media/check.png" border="false":::  |              |   | :::image type="icon" source="../../media/check.png" border="false":::   |       |
+| [Build level](permissions.md#build)    |   :::image type="icon" source="../../media/check.png" border="false":::  |              |   | :::image type="icon" source="../../media/check.png" border="false":::   |       |
+| [Git repository](permissions.md#git-repo)                                           |   :::image type="icon" source="../../media/check.png" border="false":::  |                                      |                                                                                        |   :::image type="icon" source="../../media/check.png" border="false":::                                  |       :::image type="icon" source="../../media/check.png" border="false"::: |
+| [Team Foundation Version Control](permissions.md#tfvc)                              |   :::image type="icon" source="../../media/check.png" border="false":::  |                                      |                                                                                        |   :::image type="icon" source="../../media/check.png" border="false":::                                  |    :::image type="icon" source="../../media/check.png" border="false"::: |
+| [Area level for work item tracking](permissions.md#area-permissions)  |   :::image type="icon" source="../../media/check.png" border="false":::  |              |   | :::image type="icon" source="../../media/check.png" border="false":::   |       |
+| [Iteration level for work item tracking](permissions.md#iteration-path-permissions)  |   :::image type="icon" source="../../media/check.png" border="false":::  |              |   | :::image type="icon" source="../../media/check.png" border="false":::   |       |
+| [Work item query](permissions.md#query)          |  :::image type="icon" source="../../media/check.png" border="false":::  |                     |  | :::image type="icon" source="../../media/check.png" border="false":::          |            |
+| [Work item tags](permissions.md#tags)          |              |                     |  | :::image type="icon" source="../../media/check.png" border="false":::          |            |
+| [Alerts](permissions.md#alerts)          |              |                     |  | :::image type="icon" source="../../media/check.png" border="false":::          |            |
+| [Releases](permissions.md#release_management)     |   :::image type="icon" source="../../media/check.png" border="false":::  |               |                       |         |    |
 
 
 ::: moniker-end
 
-
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops-2020"
 
 |  Permission level |  Web portal security pages | [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator) |    [TFSSecurity CLI](/azure/devops/server/command-line/tfssecurity-cmd) |  [Tf command-line tool](../../repos/tfvc/permission-command.md)  |   
 |-------------------------------------------------------------------------------------|:-----------------------------------:|:--------------------------------------:|:-----------------------------------:|:-----------------------------------:|  
-|                        [Server-level](permissions.md#server)                        |                                     |  ![check mark](../../media/check.png)   | ![check mark](../../media/check.png) |                                     |  
-|                    [Collection-level](permissions.md#collection)                    | ![check mark](../../media/check.png) |  ![check mark](../../media/check.png)   | ![check mark](../../media/check.png) |                                     |  
-|                [Project and test level](permissions.md#project_test)                | ![check mark](../../media/check.png) |                                        | ![check mark](../../media/check.png) |                                     |  
-|                         [Build level](permissions.md#build)                         | ![check mark](../../media/check.png) |                                        | ![check mark](../../media/check.png) |                                     |  
-|                      [Git repository](permissions.md#git-repo)                      | ![check mark](../../media/check.png) |                                        |                                     | ![check mark](../../media/check.png) |  
-|               [Team Foundation Version Control](permissions.md#tfvc)                | ![check mark](../../media/check.png) |                                        |                                     | ![check mark](../../media/check.png) |  
-|        [Area level for work item tracking](permissions.md#area-permissions)         | ![check mark](../../media/check.png) |                                        | ![check mark](../../media/check.png) |                                     |  
-| [Iteration level for work item tracking](permissions.md#iteration-path-permissions) | ![check mark](../../media/check.png) |                                        | ![check mark](../../media/check.png) |                                     |  
-|                       [Work item query](permissions.md#query)                       | ![check mark](../../media/check.png) |                                        | ![check mark](../../media/check.png) |                                     |  
-|                        [Work item tags](permissions.md#tags)                        |                                     |                                        | ![check mark](../../media/check.png) |                                     |  
-|                           [Alerts](permissions.md#alerts)                           |                                     |                                        | ![check mark](../../media/check.png) |                                     |  
-|                    [Releases](permissions.md#release_management)                    | ![check mark](../../media/check.png) |                                        |                                     |                                     |  
+|                        [Server-level](permissions.md#server)                        |                                     |    :::image type="icon" source="../../media/check.png" border="false":::    |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |  
+|                    [Collection-level](permissions.md#collection)                    |   :::image type="icon" source="../../media/check.png" border="false":::  |    :::image type="icon" source="../../media/check.png" border="false":::    |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |  
+|                [Project and test level](permissions.md#project_test)                |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |  
+|                         [Build level](permissions.md#build)                         |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |  
+|                      [Git repository](permissions.md#git-repo)                      |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |                                     |   :::image type="icon" source="../../media/check.png" border="false":::  |  
+|               [Team Foundation Version Control](permissions.md#tfvc)                |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |                                     |   :::image type="icon" source="../../media/check.png" border="false":::  |  
+|        [Area level for work item tracking](permissions.md#area-permissions)         |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |  
+| [Iteration level for work item tracking](permissions.md#iteration-path-permissions) |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |  
+|                       [Work item query](permissions.md#query)                       |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |  
+|                        [Work item tags](permissions.md#tags)                        |                                     |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |  
+|                           [Alerts](permissions.md#alerts)                           |                                     |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |  
+|                    [Releases](permissions.md#release_management)                    |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |                                     |                                     |  
 
 
 ::: moniker-end
@@ -221,19 +251,19 @@ You use the [web portal administration context](../../organizations/security/add
 
 |   Permission level  |   Web portal security pages  | [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator) |    [TFSSecurity CLI](/azure/devops/server/command-line/tfssecurity-cmd) |  [Tf command-line tool](../../repos/tfvc/permission-command.md) |   [TFSLabConfig command-line tool](/azure/devops/server/command-line/tfslabconfig-cmd)    |
 |-------------------------------------------------------------------------------------|:-----------------------------------:|:--------------------------------------:|:-----------------------------------:|:-----------------------------------:|:-----------------------------------:|
-|                        [Server-level](permissions.md#server)                        |                                     |  ![check mark](../../media/check.png)   | ![check mark](../../media/check.png) |                                     |                                     |
-|                    [Collection-level](permissions.md#collection)                    | ![check mark](../../media/check.png) |  ![check mark](../../media/check.png)   | ![check mark](../../media/check.png) |                                     |                                     |
-|                [Project and test level](permissions.md#project_test)                | ![check mark](../../media/check.png) |                                        | ![check mark](../../media/check.png) |                                     |                                     |
-|                         [Build level](permissions.md#build)                         | ![check mark](../../media/check.png) |                                        | ![check mark](../../media/check.png) |                                     |                                     |
-|                      [Git repository](permissions.md#git-repo)                      | ![check mark](../../media/check.png) |                                        |                                     | ![check mark](../../media/check.png) |                                     |
-|               [Team Foundation Version Control](permissions.md#tfvc)                | ![check mark](../../media/check.png) |                                        |                                     | ![check mark](../../media/check.png) |                                     |
-|        [Area level for work item tracking](permissions.md#area-permissions)         | ![check mark](../../media/check.png) |                                        | ![check mark](../../media/check.png) |                                     |                                     |
-| [Iteration level for work item tracking](permissions.md#iteration-path-permissions) | ![check mark](../../media/check.png) |                                        | ![check mark](../../media/check.png) |                                     |                                     |
-|                       [Work item query](permissions.md#query)                       | ![check mark](../../media/check.png) |                                        | ![check mark](../../media/check.png) |                                     |                                     |
-|                        [Work item tags](permissions.md#tags)                        |                                     |                                        | ![check mark](../../media/check.png) |                                     |                                     |
-|                           [Alerts](permissions.md#alerts)                           |                                     |                                        | ![check mark](../../media/check.png) |                                     |                                     |
-|                    [Releases](permissions.md#release_management)                    | ![check mark](../../media/check.png) |                                        |                                     |                                     |                                     |
-|                        [Lab Management](permissions.md)                         |                                     |                                        |                                     |                                     | ![check mark](../../media/check.png) |
+|                        [Server-level](permissions.md#server)                        |                                     |    :::image type="icon" source="../../media/check.png" border="false":::    |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |                                     |
+|                    [Collection-level](permissions.md#collection)                    |   :::image type="icon" source="../../media/check.png" border="false":::  |    :::image type="icon" source="../../media/check.png" border="false":::    |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |                                     |
+|                [Project and test level](permissions.md#project_test)                |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |                                     |
+|                         [Build level](permissions.md#build)                         |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |                                     |
+|                      [Git repository](permissions.md#git-repo)                      |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |                                     |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |
+|               [Team Foundation Version Control](permissions.md#tfvc)                |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |                                     |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |
+|        [Area level for work item tracking](permissions.md#area-permissions)         |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |                                     |
+| [Iteration level for work item tracking](permissions.md#iteration-path-permissions) |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |                                     |
+|                       [Work item query](permissions.md#query)                       |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |                                     |
+|                        [Work item tags](permissions.md#tags)                        |                                     |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |                                     |
+|                           [Alerts](permissions.md#alerts)                           |                                     |                                        |   :::image type="icon" source="../../media/check.png" border="false":::  |                                     |                                     |
+|                    [Releases](permissions.md#release_management)                    |   :::image type="icon" source="../../media/check.png" border="false":::  |                                        |                                     |                                     |                                     |
+|                        [Lab Management](permissions.md)                         |                                     |                                        |                                     |                                     |   :::image type="icon" source="../../media/check.png" border="false":::  |
 
 ::: moniker-end
 
@@ -259,7 +289,8 @@ For more information, see [Determine permission levels and groups in SharePoint 
 ## Related articles
 
 
-::: moniker range="azure-devops"  
+::: moniker range="= azure-devops"
+
 - [Permissions and groups reference](permissions.md)  
 - [Add users to an organization](../accounts/add-organization-users.md) 
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   

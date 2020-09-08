@@ -124,7 +124,7 @@ Using a ring-deployment strategy you can gather feedback to validate your hypoth
 
 Here's a summary of how the ALM | DevOps Ranger engineering process evolved with ring deployment models.
 
-| Before using Rings |   | With Rings |
+| Before using Rings | Impacted area  | With Rings |
 |--------------------|:-:|-----------:|
 |Manual and error prone|Build|Automated and consistent|
 |Manual and error prone|Release|Automated and consistent|
@@ -178,7 +178,9 @@ Refer to [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to s
 * [Configuring your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
 * [DevOps @ Microsoft](https://aka.ms/devops)
 
-> Authors: Josh Garverick, Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
+> > [!NOTE]   
+> Authors: Josh Garverick, Willy Schaub 
+> Find the origin of this article and connect with the ALM DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  
 *(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,

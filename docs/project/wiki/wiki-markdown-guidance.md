@@ -9,12 +9,12 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2018'
-ms.date: 06/11/2020
+ms.date: 07/23/2020 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../boards/work-items/includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-2018](../../includes/version-vsts-tfs-2018.md)]
 
 [!INCLUDE [version-selector](../../includes/version-selector.md)]
 
@@ -47,7 +47,7 @@ Consistency is maintained in the formatting in TOC.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Add Mermaid diagrams to a Wiki page
 
@@ -76,7 +76,7 @@ There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
 ::: moniker range=">= azure-devops-2019"
 
-## Embed Videos in a Wiki page
+## Embed videos in a Wiki page
 
 To embed videos from YouTube and Microsoft Streams in a wiki page, use the following syntax:
 
@@ -148,7 +148,7 @@ You can also select "@mention" from the edit toolbar.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Page visits for wiki pages
 
@@ -186,11 +186,19 @@ Enter the pound sign (`#`), and then enter a work item ID.
 ## HTML tag support in wiki pages
 
 In wiki pages, you can also create rich content using HTML tags.
+(You can nest markdown within your HTML, but you must include a blank line between the HTML element and the markdown.)
+ ```HTML
+<p>
+  
+  [A markdown link](https://microsoft.com) 
+</p>
+```
 
 ::: moniker range=">= tfs-2018"
 
 > [!NOTE]
 > Pasting rich content as HTML is supported in Azure DevOps Server 2019.1 and later versions.
+
 
 **Example - Embedded video**
 

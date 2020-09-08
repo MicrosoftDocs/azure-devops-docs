@@ -120,7 +120,7 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
    > [!div class="mx-imgBorder"]  
    > ![Published tasks become work items](media/project/published-work-items.png)
 
-   Optionally, you can use ![ ](media/project/get-work-items-task.png) **Get work items** icon, select a work item query, and add work items to your project plan.
+   Optionally, you can use :::image type="icon" source="media/project/get-work-items-task.png" border="false"::: **Get work items** icon, select a work item query, and add work items to your project plan.
 
 6. Assign resources to tasks, and then choose **Publish** to publish your assignments. Or, leave that field blank for the development team to assign. 
 
@@ -268,19 +268,19 @@ Optionally, you can add a mapped work tracking field as a column to the Team Fou
 
 * * *
 
-To add more work tracking fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md). 
+To add more work tracking fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file). 
 
 ## Tips for working in Project and other Team Foundation clients
 
 You can manage your project plan using Project and all the features that Project provides. Because you and other team members can modify TFS work items from the web portal, Excel, Project, and Team Explorer, follow these tips to manage your work effectively:
 
-- When you first open a project plan, choose the Team ribbon ![ ](media/project/refresh.png) **Refresh** icon to download the latest work tracking data.  
+- When you first open a project plan, choose the Team ribbon :::image type="icon" source="media/project/refresh.png" border="false"::: **Refresh** icon to download the latest work tracking data.  
 - Publish your changes and refresh your plan periodically while you work. Otherwise, you can encounter data conflicts between plan data and the work tracking data store.  
 - Save your project plan to maintain scheduling data and other information that isn't stored in the work tracking data store.  
 - When defining areas and iterations, keep in mind that Project and Excel restrict the length of the area and iteration path field to 256 characters.  
-- In Project 2010 and later versions, when you choose the ![ ](media/create-your-backlog-tasks-using-project/IC413649.png) **Pinned task** icon (Manually scheduled tasks, Task Mode field), team members can place a manually scheduled task anywhere in their schedules, and Project will not move it. In order for team members to manually schedule their tasks, you will have to add the necessary project fields to work tracking task definitions.  
+- In Project 2010 and later versions, when you choose the :::image type="icon" source="media/create-your-backlog-tasks-using-project/IC413649.png" border="false"::: **Pinned task** icon (Manually scheduled tasks, Task Mode field), team members can place a manually scheduled task anywhere in their schedules, and Project will not move it. In order for team members to manually schedule their tasks, you will have to add the necessary project fields to work tracking task definitions.  
 
-    Start and finish dates for autoscheduled tasks (![ ](media/create-your-backlog-tasks-using-project/IC413651.png) **Auto Update Task Mode** icon) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project.  
+    Start and finish dates for autoscheduled tasks (:::image type="icon" source="media/create-your-backlog-tasks-using-project/IC413651.png" border="false"::: **Auto Update Task Mode** icon) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project.  
 - Use Project to manage and update changes to these fields:
   - Finish Date
   - Start Date
@@ -318,11 +318,11 @@ You can't delete work items from Excel nor from Project. The only way to delete 
 
 ### Do you want to add Project fields to work items?
 
-For team members to be able to view or modify Project fields from a Team Foundation client, you must customize both the definition file for the task work item type and update [The Microsoft Project Field Mapping File](../../../reference/xml/customize-project-field-mapping-file.md). For resources, see [Schedule projects using Microsoft Project 2010](schedule-projects-using-microsoft-project.md).
+For team members to be able to view or modify Project fields from a Team Foundation client, you must customize both the definition file for the task work item type and update [The Microsoft Project Field Mapping File](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file). For resources, see [Schedule projects using Microsoft Project 2010](schedule-projects-using-microsoft-project.md).
 
 ### Do you want to map additional work tracking fields to Project, or change how fields are mapped?
 
-You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](../../../reference/xml/customize-project-field-mapping-file.md).
+You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file).
 
 ### Project for Mac 
 

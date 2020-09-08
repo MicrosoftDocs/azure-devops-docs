@@ -28,6 +28,7 @@ You can select the exact versions of operating systems, tools, and dependencies 
 When you specify a container in your pipeline, the agent will first
 fetch and start the container.
 Then, each step of the job will run inside the container.
+You cannot have nested containers. Containers are not supported when an agent is already running inside a container. 
 
 ::: moniker range="> azure-devops-2019"
 If you need fine-grained control at the individual step level, [step targets](tasks.md#step-target) allow you to choose container or host for each step.
@@ -54,9 +55,6 @@ minimum requirements. Containers with a `ENTRYPOINT` might not work, since Azure
 will `docker create` an awaiting container and `docker exec` a series of commands which expect
 the container is always up and running.
 
-> [!NOTE]
-> The Red Hat Enterprise Linux 6 build of the agent won't run container job.
-Choose another Linux flavor, such as Red Hat Enterprise Linux 7 or above.
 
 > [!NOTE]
 > For Windows-based Linux containers, Node.js must be pre-installed.
@@ -73,7 +71,7 @@ See [this post](https://blogs.technet.microsoft.com/nanoserver/2016/05/04/node-j
 
 ### Hosted agents
 
-The `windows-2019` and `ubuntu-16.04` pools support running containers.
+Only `windows-2019` and `ubuntu-16.04` pools support running containers.
 The Hosted macOS pool does not support running containers.
 
 ## Single job
@@ -170,6 +168,10 @@ steps:
 
 Other container registries may also work.
 Amazon ECR doesn't currently work, as there are additional client tools required to convert AWS credentials into something Docker can use to authenticate.
+
+
+> [!NOTE]
+> The Red Hat Enterprise Linux 6 build of the agent won't run container job. Choose another Linux flavor, such as Red Hat Enterprise Linux 7 or above.
 
 ## Options
 

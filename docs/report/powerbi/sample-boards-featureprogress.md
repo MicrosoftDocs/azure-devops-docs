@@ -241,7 +241,7 @@ Repeat for every Pivoted StateCategory column.
 1. Enter the following in **Custom column formula**.
 
     ```
-    = ([Proposed]+[InProgress]+[Resolved])/([Proposed]+[InProgress]+[Resolved]+[Completed])
+    = [Completed]/([Proposed]+[InProgress]+[Resolved]+[Completed])
     ```
 
     > [!NOTE]

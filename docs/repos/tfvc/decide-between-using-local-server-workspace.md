@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Decide between using a local or a server workspace
 ms.assetid: 492696f5-cafe-4090-af07-6dbbb0bd6a86
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Decide between using a local or a server workspace
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 When you [create or edit a workspace](create-work-workspaces.md), you can specify whether its location is **Local** or **Server**. 
 

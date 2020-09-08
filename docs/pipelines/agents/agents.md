@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 04/07/2020
+ms.date: 07/14/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 To build your code or deploy your software using Azure Pipelines, you need at least one agent. As you add more code and people, you'll eventually need more.
 
 When your pipeline runs, the system begins one or more jobs.
-An agent is installable software that runs one job at a time.
+An agent is computing infrastructure with installed agent software that runs one job at a time.
 
 ::: moniker range=">= azure-devops-2019"
 Jobs can be run [directly on the host machine of the agent](../process/phases.md) or [in a container](../process/container-phases.md).
@@ -102,9 +102,13 @@ For more information, see [Azure virtual machine scale set agents](scale-set-age
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= tfs-2015 || azure-devops"
 
 ## Parallel jobs
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 You can use a parallel job in Azure Pipelines to run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure. 
 
@@ -113,8 +117,6 @@ Microsoft provides a free tier of service by default in every organization that 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < azure-devops"
-
-## Parallel jobs
 
 You might need more parallel jobs to use multiple agents at the same time:
 
@@ -139,8 +141,10 @@ When you author a pipeline you specify certain **demands** of the agent. The sys
 
 > [!NOTE]
 >
-> Demands and capabilities apply only to self-hosted agents. When using Microsoft-hosted agents, you select an image for the hosted agent. 
-> You cannot use capabilities with hosted agents.
+> Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
+> meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
+> matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
+> to use capabilities with Microsoft-hosted agents.
 
 ### View agent details
 
@@ -158,7 +162,7 @@ You can view the details of an agent, including its version and system capabilit
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"
+::: moniker range="> azure-devops-2019"
 
 You can view the details of an agent, including its version, and system and user capabilities, by using the following [az pipelines agent](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest) Azure CLI methods.
 

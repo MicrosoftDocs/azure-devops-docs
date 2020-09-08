@@ -1,21 +1,21 @@
 ---
 title: Link user stories, issues, and other work items
 titleSuffix: Azure Boards
-description: Link one or more work items to other work items or to a new git branch in Azure Boards or TFS
+description: Learn how to ink one or more work items to other work items or to a new git branch in Azure Boards 
 ms.custom: seodec18  
 ms.technology: devops-agile
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
+ms.topic: quickstart 
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/09/2020 
 ---
 
 
 # Link user stories, issues, bugs, and other work items  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You can add a link to a work item from within the work item form or from a backlog or query results list. From a backlog or query results list, you can [select multiple work items](bulk-modify-work-items.md#multi-select) and then link them to a new or existing work item. In general, use the bulk edit to update several work items to link to the same work item, either new or existing. 
 
@@ -33,7 +33,7 @@ Use this article to learn how to:
 ::: moniker-end    
 
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 >[!div class="checklist"]      
 > * Link one or more work items to an existing work item   
 > * Link one or more work items to a new work item that you add when linking
@@ -54,7 +54,7 @@ For a list of all link types and supported link relationships, see [Linking, tra
 
 1. From the web portal, open a [backlog](create-your-backlog.md) or [query results page](../queries/view-run-query.md), and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
 
-2. Open the![ ](../../media/icons/actions-icon.png) actions icon menu of one of the selected work items, choose **Add link**, and then choose **Existing item**&hellip; or **New item**&hellip;. 
+2. Open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon menu of one of the selected work items, choose **Add link**, and then choose **Existing item**&hellip; or **New item**&hellip;. 
 
     Here we multi-select from the product backlog and choose **Existing item**&hellip;.
 
@@ -80,7 +80,7 @@ For a list of all link types and supported link relationships, see [Linking, tra
 
     Here we multi-select from the Queries page and choose **Link selected item(s) to a new work item**&hellip;.  
 
-    <img src="media/add-link-query-new-work-item-2015.png" alt="TFS 2015, Query results page, multi-select items, open context menu, click Link to a new work item" style="border: 1px solid #C3C3C3;" /> 
+    ![TFS 2015, Query results page, multi-select items, open context menu, click Link to a new work item](media/add-link-query-new-work-item-2015.png)  
    ::: moniker-end
 
 <a id="link-existing"> </a>  
@@ -120,7 +120,7 @@ To link to multiple work items, enter their IDs separated by commas or spaces. I
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2018"
-To view the work items selected for linking, you can choose the ![info icon](../media/icons/info-icon.png).   
+To view the work items selected for linking, you can choose the  :::image type="icon" source="../media/icons/info.png" border="false"::: .   
 > [!div class="mx-imgBorder"]  
 > ![Add link to an existing work item](media/add-link/info-linked-items.png) 
 ::: moniker-end     
@@ -143,7 +143,7 @@ From the Add link to Multiple Items dialog, select the link type, enter a work i
 
 For example, here we use the Related link type to link several items to the user story with ID of *4654*. 
 
-<img src="media/add-link-related-existing-item-vs.png" alt="Visual Studio, Add link dialog" style="border: 1px solid #C3C3C3;" />        
+![Visual Studio, Add link dialog](media/add-link-related-existing-item-vs.png)         
 
 To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different project, you can click the Browse button to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
 
@@ -158,10 +158,10 @@ Here, we have selected to add a link to the selected work items.
 
 1. Specify the link type, work item type, and title of the new work item. Choose **OK**.  
     ::: moniker range=">= tfs-2018"
-    <img src="media/add-link-related-new-item-issue.png" alt="Link to a new work item" style="border: 1px solid #C3C3C3;" /> 
+    ![Link to a new work item](media/add-link-related-new-item-issue.png)  
     ::: moniker-end
     ::: moniker range=">= tfs-2013 <=tfs-2017"
-    <img src="media/bulk-modify-link-new-ts.png" alt="Link to a new work item" style="border: 1px solid #C3C3C3;" />
+    ![Link to a new work item](media/bulk-modify-link-new-ts.png)  
     ::: moniker-end
 
 2. A work item of the type selected opens. Enter additional information and save the work item.
@@ -174,6 +174,7 @@ Here, we have selected to add a link to the selected work items.
 
 
 ::: moniker range="azure-devops"
+
 <a id="remote-link"> </a>  
 
 ## Link to a remote work item 
@@ -194,7 +195,7 @@ For example, here we use the **Remote Related** link type to link to  work item 
 
 The link tab maintains a count of all links to the work item.  The [*Remote Link Count* field](../queries/linking-attachments.md) maintains a count of the number of links added to a work item that link to a work item defined in another project or organization. 
 
-The following image shows an example of two remote links, indicated by the ![ ](../../media/icons/cloud-link.png) cloud icon, added to a user story. 
+The following image shows an example of two remote links, indicated by the  :::image type="icon" source="../../media/icons/cloud-link.png" border="false":::  cloud icon, added to a user story. 
 
 > [!div class="mx-imgBorder"]  
 > ![User Story form, Link tab, showing two external links](media/add-link/link-tab-remote-links.png)  
@@ -208,7 +209,7 @@ The following image shows an example of two remote links, indicated by the ![ ](
 
 You can add a new git branch and link them to existing work items at the same time. 
 
-From a backlog or query results page, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to link to a new git branch, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and then **New branch...**. To learn more, see [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md).  
+From a backlog or query results page, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to link to a new git branch, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then **New branch...**. To learn more, see [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md).  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
@@ -234,7 +235,7 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 
 1.  From the Add link dialog, choose the &hellip; context menu or **Browse** button (Visual Studio) to open the following dialog. 
 
-    <img src="media/add-link-choose-linked-work-item-by-title.png" alt="Choose Linked work items" style="border: 1px solid #C3C3C3;" /> 
+    ![Choose Linked work items](media/add-link-choose-linked-work-item-by-title.png)  
 
     If the work items are defined in another project, then first select the Project. Then, make your selections: 
 
@@ -244,7 +245,7 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
     -   **Title contains**. Use this method to find work items that have a common word or phrase in the title field. In the **and type** list, click the type of work item that you want to retrieve.   
 
         > [!NOTE]
-        >  To minimize the time required to run the query, narrow the filter criteria of the search.  
+        > To minimize the time required to run the query, narrow the filter criteria of the search.  
 
 1.  Click the **Find** button.
 
@@ -258,9 +259,9 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 
 1.  In the list of returned work items, select one or more work items.   
 
-    -   From the web portal: To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key.   
+    - From the web portal: To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key.   
 
-    -   For Visual Studio, select each work item that should link to the current work item. You can also press the SHIFT key while clicking to select a range of work items, or press the CTRL key while clicking to select multiple work items.  
+    - For Visual Studio, select each work item that should link to the current work item. You can also press the SHIFT key while clicking to select a range of work items, or press the CTRL key while clicking to select multiple work items.  
 
 ::: moniker-end
 
@@ -276,7 +277,8 @@ Additional features you can use to quickly link or change links that use the par
 
 ## Related articles
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
+
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)
@@ -287,6 +289,7 @@ Additional features you can use to quickly link or change links that use the par
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
+
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)

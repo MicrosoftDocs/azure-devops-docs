@@ -4,16 +4,16 @@ titleSuffix: Azure Repos
 description:  Conduct a code review in a Git with Azure Repos or Azure DevOps Server, create a pull request.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
-ms.date: 11/15/2019
+ms.author: vijayma
+author: vijayma
+ms.date: 08/28/2020
 monikerRange: '>= tfs-2013'
 ---
 
 # Review code with pull requests
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Create pull requests to review and merge code in a [Git project](../../organizations/projects/create-project.md).
 Pull requests let your team review code and give feedback on changes before merging it into the master branch.
@@ -156,9 +156,20 @@ For more information about working with the Azure DevOps Services CLI, see [Get 
 
 <a name="finish"></a>
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2019"
 
 ## Draft pull requests
+
+::: moniker-end
+
+:::moniker range="azure-devops-2019"
+
+> [!NOTE]
+> Draft pull requests were added in the Azure DevOps Server 2019.1 update.
+
+:::moniker-end
+
+::: moniker range=">=azure-devops-2019"
 
 Sometimes you may want to create a pull request but you aren't ready to send it to the entire team for review. A draft pull request indicates that a pull request is a work in progress. You don't have to resort to title prefixes such as WIP or DO NOT MERGE. When the pull request is ready for review, you can publish it, and begin or resume the full review process.
 
@@ -403,7 +414,7 @@ You can make quick updates to your branch directly from the **Files** tab in **C
 
 ![Updating code directly during a pull request in Azure Repos](./media/pull-requests/pr_editing_changes.png)
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2019"
 
 ## Change the target branch of a pull request
 
@@ -547,38 +558,7 @@ To copy changes made in a pull request to another branch in your repo, follow th
 
 ## Set a new default branch
 
->[!NOTE]
->This step requires [Edit Policies permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
+[!INCLUDE [](includes/change-default-branch-instructions.md)]
 
-Configure your Git repo to use a different default branch to merge code into when your team creates new pull requests.
-You can use a branch other than `master` for new changes or change your main line of development in your repo.
-
-::: moniker range=">= azure-devops-2019"
-
-1. [Go to your project](../../project/navigation/go-to-project-repo.md) and select **Project settings**.
-
-1. Scroll down and select **Repositories** from the **Code** section.
-
-1. Select your repository and expand the branches.
-
-1. Select **...** next to a branch and choose **Set as default branch**.
-
-   ![Set default branch](media/pull-requests/set-default-branch-new-nav.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-1. Select the settings button in your project open to open the project administration page.
-
-   ![Open the administrative area of the web portal for your project](media/pull-requests/gear_icon_settings.png)
-
-1. Select **Version Control**.
-
-1. Select your Git repository. Your branches are displayed under your repo.
-
-1. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.
-
-   ![Set a default branch for a Git repo](media/pull-requests/set_default_branch.png)
-
-::: moniker-end
+There are other aspects you should consider before making this change.
+Learn about them in the topic on [changing your default branch](change-default-branch.md).

@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/21/2020
+ms.date: 08/21/2020
 ---
 
 # Move work items, change work item type 
@@ -47,17 +47,17 @@ In this article you'll learn:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
 * To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
+* To move work items to another project, the project must use an Inherited process model.  
+* To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set.
 * To change the work item type, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 
 	> [!IMPORTANT]  
 	> You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you'll use the [Analytics Service](/azure/devops/report/powerbi/what-is-analytics) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](../../report/admin/disable-data-warehouse.md). 
-
-* To move work items to another project, you must be a member of the **Project Administrators** group or have the **Move work items out of this project** permission set to **Allow**. By default, the **Contributors** group doesn't have this permission set.
 
 ::: moniker-end 
 
@@ -70,7 +70,7 @@ To learn more, see [Set permissions and access for work tracking](../../organiza
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!IMPORTANT]  
 > You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.
@@ -90,13 +90,13 @@ Changing the work item type refreshes the work item form with the fields defined
 
 You can change a single work item or several [multi-selected work items](bulk-modify-work-items.md) to a new type. 
 
-1. Open a work item, choose the ![ ](../media/icons/actions-icon.png) actions icon, and select the ![ ](../media/icons/change-type-icon.png) **Change type...** option. 
+1. Open a work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the :::image type="icon" source="../media/icons/change-type-icon.png" border="false"::: **Change type...** option. 
 
 	![Work item form, Change work item type menu option](media/move-change-delete/change-work-item-type.png)  
 
 	Or, from the backlog or query results page, multi-select several work items whose type you want to change. You can select several work items of the same type or different type so long as you want to change them all to the same work item type.  
 
-	Choose the ![ ](../media/icons/actions-icon.png) actions icon,  and select the ![ ](../media/icons/change-type-icon.png) **Change type...** option.     
+	Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon,  and select the :::image type="icon" source="../media/icons/change-type-icon.png" border="false"::: **Change type...** option.     
 
 	> [!div class="mx-imgBorder"]  
 	> ![Backlog, multi-select, open actions menu, choose Change type option](media/move-change-delete/change-type-new-nav.png)  
@@ -131,7 +131,7 @@ You can only move work items from one project to another project within the orga
 
 	Or, from the backlog or query results page, multi-select several work items whose type you want to change. You can select several work items of the same type or different type so long as you want to change them all to the same work item type. 
 
-	Choose the ![ ](../media/icons/actions-icon.png) actions icon to open the context menu of one of the selected work items, and choose the ![Move work item icon](../media/icons/change-team-project-icon.png) **Move&hellip;** option. 
+	Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the context menu of one of the selected work items, and choose the ![Move work item icon](../media/icons/change-team-project-icon.png) **Move&hellip;** option. 
 
 2. Select the destination project and optionally enter a comment.  
 
