@@ -13,7 +13,7 @@ Stakeholders now have the ability move work items across board columns on both t
 
 You can now search for builds across projects when linking a working item to a Build, Found in build, or&nbsp;Integrated in build.
 
-<img src="../../media/175-boards-1-0.png" width="600" alt="link-work-items" style="border:#F0F0F0 1px solid;">
+<img src="../../media/175-boards-1-0.png" width="600" alt="link-work-items" style="border:#F0F0F0 1px solid;"> 
     
 ### Editing description (help text) on system fields
 
