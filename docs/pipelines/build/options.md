@@ -118,7 +118,7 @@ If your resources are in a different project than your pipeline, and **Limit job
 
 Releases run with collection scoped access tokens by default. When **Limit job authorization scope to current project for release pipelines** is enabled, you can reduce the scope of access for all release pipelines to the current project. That means your releases shall fail if they are accessing an Azure Repos Git repository in a different project in your organization. 
 
-If your resources are in a different project than your pipeline, and **Limit job authorization scope to current project for release pipelines** is enabled, you must grant permission to the build service identity for your pipeline to the second project. 
+If your resources are in a different project than your classic pipeline, and **Limit job authorization scope to current project for release pipelines** is enabled, you must grant permission to the build service identity for your classic release pipeline to the second project. 
 
 ### Limit job authorization scope to referenced Azure DevOps repositories
 
@@ -139,15 +139,15 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 1. In the **FabrikamFiber** project, navigate to **Project settings**, **Repositories**, **FabrikamFiber**.
 
-    ![Repository access](media/options/allow-repo-access.png)
+    ![Configure repository access.](media/options/allow-repo-access.png)
 
 2.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
-    ![Add user](media/options/add-build-service-user.png)
+    ![Add user for repository access.](media/options/add-build-service-user.png)
 
 3. Configure the desired permissions for that user.
 
-    ![Set permissions](media/options/set-repo-permissions.png)
+    ![Configure repository permissions.](media/options/set-repo-permissions.png)
 
 #### Configure permissions to access other resources in the same project collection
 
@@ -155,15 +155,15 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 1. In the **FabrikamFiber** project, navigate to **Project settings**, **Permissions**.
 
-    ![Project settings](media/options/project-permissions.png)
+    ![Configure project settings.](media/options/project-permissions.png)
 
 2.  Choose **Users**, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account. If you don't see any search results initially, select **Expand search**.
 
-    ![Add user](media/options/add-build-service-user-project-permissions.png)
+    ![Select SpaceGameWeb project-scoped build identity user.](media/options/add-build-service-user-project-permissions.png)
 
 3. Configure the desired permissions for that user.
 
-    ![Set permissions](media/options/set-project-permissions.png)
+    ![Configure user permissions.](media/options/set-project-permissions.png)
 
 ::: moniker-end
 
