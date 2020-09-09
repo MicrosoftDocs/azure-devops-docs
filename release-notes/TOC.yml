@@ -524,6 +524,11 @@
 - name: Azure Test Plans
   expanded: true
   items:
+    - name: 2020
+      expanded: true
+      items:
+        - name: September 10
+          href: 2020/testplans/sprint-175-update.md
     - name: 2019
       expanded: true
       items:
