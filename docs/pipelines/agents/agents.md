@@ -164,16 +164,16 @@ You can view the details of an agent, including its version and system capabilit
 
 ::: moniker range="> azure-devops-2019"
 
-You can view the details of an agent, including its version, and system and user capabilities, by using the following [az pipelines agent](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest) Azure CLI methods.
+You can view the details of an agent, including its version, and system and user capabilities, by using the following [az pipelines agent](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest&preserve-view=true) Azure CLI methods.
 
 [List agents](#list-agents) | [Show agent details](#show-agent-details)
 
 > [!NOTE]
-> If this is your first time using [az pipelines](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
+> If this is your first time using [az pipelines](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest&preserve-view=true) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ### List agents
 
-You can list your agents using the [az pipelines agent list](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest#ext-azure-devops-az-pipelines-agent-list) command.
+You can list your agents using the [az pipelines agent list](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-agent-list) command.
 
 ```azurecli
 az pipelines agent list --pool-id
@@ -201,7 +201,7 @@ az pipelines agent list --pool-id
 
 #### Example
 
-The following example lists all agents in pool `ID: 4` in table format. To retrieve the ID of pools, use [az pipelines pool list](pools-queues.md?view=azure-devops&tabs=yaml%2Cazure-devops-cli#list-agent-pools). This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example lists all agents in pool `ID: 4` in table format. To retrieve the ID of pools, use [az pipelines pool list](pools-queues.md?view=azure-devops&tabs=yaml%2Cazure-devops-cli&preserve-view=true#list-agent-pools). This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
 az pipelines agent list --pool-id 4 --output table
@@ -213,7 +213,7 @@ ID    Name          Is Enabled    Status    Version
 
 ### Show agent details
 
-You can retrieve agent details using the [az pipelines agent show](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest#ext-azure-devops-az-pipelines-agent-show) command.
+You can retrieve agent details using the [az pipelines agent show](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest&preserve-view=true#ext-azure-devops-az-pipelines-agent-show) command.
 
 ```azurecli
 az pipelines agent show --agent-id
