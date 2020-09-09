@@ -53,12 +53,15 @@ When you connect from a web browser, you can connect to different projects from 
 - [Search for work items](search/work-item-search.md)
 
 
-### Q: Can I query for work items linked across projects? 
-**A:** No. 
-
 ### Q: Can I link work items across projects? 
 
-**A:** Yes. 
+**A:** Yes. You can use any link type you want to link work items that are defined in different projects. The projects must be defined within the same organization or project collection. To learn more, see [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md).
+
+
+### Q: Can I query for work items linked across projects? 
+
+**A:** No. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
+
 
 ::: moniker range="azure-devops"
 
@@ -78,13 +81,13 @@ When you connect from a web browser, you can connect to different projects from 
 
 ### Q: Can I perform capacity planning across projects? 
 
-Don't think so. 
+**A:** No.  
 
 
-### Q: Manage dependencies across projects 
+### Q: How do I manage dependencies across projects? 
 
 
-### Q: Manage duplicate work items across projects
+### Q: How do I manage duplicate work items across projects? 
 
 
 ## Dashboards and reports 
@@ -102,13 +105,12 @@ Create a query that spans more than one project.
 
 ## Azure Boards configuration and customization 
 
-## Can I apply an Inherited process defined in one organization to another organization?  
-
-**A:** Yes. While there is no import/export user interface functionality, you can use the [Process Migrator for Node.js](https://github.com/Microsoft/process-migrator) application.  
 
 
+### Q: Can I apply an Inherited process defined in one organization to another organization?  
 
-
+**A:** Yes. To perform this operation, you need to export the process and import it to the other organization. While there is no import/export user interface, you can use the [Process Migrator for Node.js](https://github.com/Microsoft/process-migrator) application.  
+ 
 
 ## Security across projects 
 
