@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 08/06/2020
+ms.date: 09/10/2020
 ---
 
 # Get started as a Stakeholder
@@ -185,68 +185,13 @@ You can start viewing and adding work items once you connect to a project. The e
 
 From the Kanban board, you can't add work items, but you can open them and annotate them. To add work items, open the backlog by choosing the **Backlog** link. Also, you can't update the status of a work item by drag-and-drop to a different column or reorder cards within a column. 
 
-<!--- 
-#### [Agile process](#tab/agile-process) 
+<a id="update-status">  </a> 
 
-1. From the User Stories board, choose **New item** and start adding those stories you want to track. 
+## Update status of work items 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Add new item](../../boards/get-started/media/plan-track-work/new-user-story-kanban-board.png) 
+As work completes in one stage, update the status of an item by dragging it to a downstream stage. 
 
-1. Enter return and the system assigns a work item ID to the user story. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Added item](../../boards/get-started/media/plan-track-work/users-stories-board-added-item.png) 
-
-2. Add as many user stories that you want to track. 
-
-#### [Basic process](#tab/basic-process) 
-
-1. From the Issues board, choose **New item** and start adding those issues you want to track. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Add new item](../../boards/get-started/media/track-issues/issues-board-new-item.png) 
-
-2. Enter return and the system assigns a work item ID to the issue. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Added item](../../boards/get-started/media/track-issues/issues-board-added-item.png) 
-
-3. Add as many issues that you want to track.  
-
-#### [Scrum process](#tab/scrum-process) 
-
-1. From the Product Backlog Items board, choose **New item** and start adding those Product Backlog Items you want to track. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Add new item](../../boards/media/add-new-item-kanban-scrum.png) 
-
-2. Enter return and the system assigns a work item ID to the issue. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Added item](../../boards/media/new-kanban-item-added-scrum.png) 
-
-3. Add as many product backlog items that you want to track.  
-
-
-#### [CMMI process](#tab/cmmi-process) 
-
-1. From the Issues board, choose **New item** and start adding those issues you want to track. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Add new item](../../boards/media/add-new-item-kanban-cmmi.png) 
-
-2. Enter return and the system assigns a work item ID to the issue. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Added item](../../boards/media/new-kanban-item-added-cmmi.png) 
-
-3. Add as many requirements that you want to track.  
-
-
-* * *
-
--->
+![Screenshot of Kanban board, Agile template, update status of work item.](../../boards/boards/media/ALM_CC_MoveCard.png)  
 
 ## Add details to a work item
 
@@ -272,7 +217,7 @@ You can only assign work to a user who has been added to the project.
 For example, here we assign the story to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. Choose **Save & Close** when done. 
 
 > [!div class="mx-imgBorder"]
-> ![User Story work item form, add details](../../boards/get-started/media/plan-track-work/user-story-form-add-details.png)
+> ![Screenshot of User Story work item form, add details.](../../boards/get-started/media/plan-track-work/user-story-form-add-details.png)
 
 
 #### [Basic process](#tab/basic-process) 
@@ -280,7 +225,7 @@ For example, here we assign the story to Raisa Pokrovskaya and we add a discussi
 For example, here we assign the issue to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. Choose **Save & Close** when done. 
 
 > [!div class="mx-imgBorder"]
-> ![Issues work item form, add details ](../../boards/get-started/media/track-issues/issue-form-add-details.png)
+> ![Screenshot of Issues work item form, add details](../../boards/get-started/media/track-issues/issue-form-add-details.png)
 
 
 #### [Scrum process](#tab/scrum-process) 
@@ -288,7 +233,7 @@ For example, here we assign the issue to Raisa Pokrovskaya and we add a discussi
 For example, here we assign the Product Backlog Item to Jamal Hartnett and add a description and tags. Choose **Save & Close** when done. 
 
 > [!div class="mx-imgBorder"]
-> ![Scrum Product Backlog work item form, add details ](../../boards/media/pbi-form-cloud.png)
+> ![Screenshot of Scrum Product Backlog work item form, add details.](../../boards/media/pbi-form-cloud.png)
 
 
 
@@ -297,9 +242,9 @@ For example, here we assign the Product Backlog Item to Jamal Hartnett and add a
 For example, here we assign the Requirement to Jamal Hartnett. Choose **Save & Close** when done. 
 
 > [!div class="mx-imgBorder"]  
-> ![Requirement work item form](../../boards/media/requirement-form-cloud.png) 
+> ![Screenshot of Requirement work item form](../../boards/media/requirement-form-cloud.png) 
 
-### CMMI-specific field descriptions
+#### CMMI-specific field descriptions
 
 <table>
 <tbody valign="top">
