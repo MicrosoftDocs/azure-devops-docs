@@ -312,11 +312,11 @@ The agent communicates with Azure Pipelines or TFS to determine which job it nee
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops"
-![Agent topologies](media/agent-topologies-tfs.png)
+![Agent topologies in on-premises installations.](media/agent-topologies-tfs.png)
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-![Agent topologies](media/agent-topologies-devops.png)
+![Agent topologies in Azure DevOps Services.](media/agent-topologies-devops.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
