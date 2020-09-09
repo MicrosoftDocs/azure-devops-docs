@@ -6,8 +6,4 @@ ms.date: 09/10/2020
 ms.topic: include
 ---
     
-- [General availability of Scale-set agents](#general-availability-of-scale-set-agents)
-- [Run this job next](#run-this-job-next)
-- [Template expressions allowed in YAML `resources` block](#template-expressions-allowed-in-yaml-resources-block)
-- [Control over automated task updates from Marketplace](#control-over-automated-task-updates-from-marketplace)
-    
+- [The Test and Feedback extension is now available on the Microsoft Edge store](#the-test-and-feedback-extension-is-now-available-on-the-microsoft-edge-store)
