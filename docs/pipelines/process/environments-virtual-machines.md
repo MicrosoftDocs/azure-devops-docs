@@ -15,7 +15,12 @@ Virtual machines can be added as resources within environments and can be target
 
 ## Virtual machine resource creation
 
+> [!NOTE]
+> You can use this same process to set up physical machines with the registration script. 
+
+
 You can define environments in **Environments** under **Pipelines**.
+
 1. Click **Create Environment**.  
 2. Specify a **Name** (required) for the environment and a **Description**.
 3.    Choose **Virtual Machines** as a  **Resource** to be added to the environment and click **Next**.
