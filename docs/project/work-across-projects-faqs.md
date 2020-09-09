@@ -13,7 +13,7 @@ ms.date: 09/08/2020
 
 # Work across projects
 
-[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)] 
 
 Many enterprise organizations add multiple projects to support their business needs. While we recommend that you maintain a single project to keep things simple, there are instances where multiple projects are needed. 
 

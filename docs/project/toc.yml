@@ -1,5 +1,7 @@
 - name: Collaborate 
   href: index.yml
+- name: Work across projects FAQs
+  href: work-across-projects-faqs.md
 - name: Wikis
   href: wiki/toc.yml
 - name: Public Projects
