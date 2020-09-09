@@ -15,11 +15,11 @@
 <tr>
 <td align="left">Set personal notifications or alerts 
 </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Set team notifications or alerts 
@@ -27,8 +27,8 @@
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Set project-level notifications or alerts 
@@ -37,7 +37,7 @@
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">READMEs</td>
@@ -82,11 +82,11 @@
 <tr>
 <td align="left">View the project page
 </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Edit the project page
@@ -95,16 +95,16 @@
 <td> </td>
 <td> </td>
 <td> </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Navigate using the Project pages
 </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Request feedback</td>
@@ -125,20 +125,20 @@
 <tr>
 <td align="left">Powerful semantic code search
 </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Powerful semantic work tracking search
 </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 </tbody>
 </table>
@@ -168,11 +168,11 @@
 <tr>
 <td align="left">Set personal notifications or alerts 
 </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Set team notifications or alerts 
@@ -180,8 +180,8 @@
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Set project-level notifications or alerts 
@@ -190,7 +190,7 @@
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">READMEs</td>
@@ -235,11 +235,11 @@
 <tr>
 <td align="left">View the project page
 </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Edit the project page
@@ -248,16 +248,16 @@
 <td> </td>
 <td> </td>
 <td> </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Navigate using the Project pages
 </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Request feedback</td>
@@ -278,20 +278,20 @@
 <tr>
 <td align="left">Powerful semantic code search
 </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Powerful semantic work tracking search
 </td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
-<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 </tbody>
 </table>
