@@ -43,6 +43,9 @@ Job authorization scope can be set for the entire Azure DevOps organization or f
 
 :::moniker range="azure-devops-2020"
 
+> [!NOTE]
+> In Azure DevOps Server 2020, **Limit job authorization scope to current project** applies only to YAML pipelines and classic build pipelines. It does not apply to classic release pipelines. Classic release pipelines always run with project collection scope.
+
 To set job authorization scope for the organization:
 
 - Navigate to your organization settings page in the Azure DevOps user interface.
@@ -59,14 +62,12 @@ To set job authorization scope for a specific project:
 
 :::moniker range=">azure-devops-2020"
 
-To set job authorization scope for the organization or project:
+- To set job authorization scope at the organization level for all projects, choose **Organization settings** > **Pipelines** > **Settings**.
+- To set job authorization scope for a specific project, choose **Project settings** > **Pipelines** > **Settings**.
 
-- Navigate to **Pipelines** > **Settings**.
-  - To enable this setting at the organization level for all projects, choose **Organization settings** > **Pipelines** > **Settings**.
-  - To enable this setting for a specific project, choose **Project settings** > **Pipelines** > **Settings**.
-- Enable one or more of the following settings. Enabling these settings are recommended, as it enhances security for your pipelines.
-  - **Limit job authorization scope to current project for non-release pipelines** - This setting applies to YAML pipelines and classic build pipelines, and does not apply to [classic release pipelines](../release/index.md).
-  - **Limit job authorization scope to current project for release pipelines** - This setting applies to [classic release pipelines](../release/index.md) only.
+Enable one or more of the following settings. Enabling these settings are recommended, as it enhances security for your pipelines.
+- **Limit job authorization scope to current project for non-release pipelines** - This setting applies to YAML pipelines and classic build pipelines, and does not apply to [classic release pipelines](../release/index.md).
+- **Limit job authorization scope to current project for release pipelines** - This setting applies to [classic release pipelines](../release/index.md) only.
 
 :::moniker-end
 
