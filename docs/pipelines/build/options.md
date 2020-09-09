@@ -107,7 +107,7 @@ Azure Pipelines provides several security settings to configure the job authoriz
 > This setting applies to YAML pipelines and classic build pipelines.
 > This setting does not apply to [classic release pipelines](../release/index.md).
 
-Pipelines run with collection scoped access tokens unless **Limit job authorization scope to current project for non-release pipelines** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to the current project. This can impact your pipeline if you are accessing an Azure Repos Git repository in a different project in your organization. 
+Pipelines run with collection scoped access tokens unless **Limit job authorization scope to current project for non-release pipelines** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to the current project. This can impact your pipeline if you are accessing resources in another project, such as an Azure Repos Git repository in a different project in your organization. 
 
 If your resources are in a different project than your pipeline, and **Limit job authorization scope to current project for non-release pipelines** is enabled, you must grant permission to the build service identity for your pipeline to the second project, as described in the following [Managing permissions](#managing-permissions) section.
 
@@ -116,7 +116,7 @@ If your resources are in a different project than your pipeline, and **Limit job
 > [!NOTE]
 > This setting applies to [classic release pipelines](../release/index.md) only.
 
-Releases run with collection scoped access tokens by default. When **Limit job authorization scope to current project for release pipelines** is enabled, you can reduce the scope of access for all release pipelines to the current project. That means your releases shall fail if they are accessing an Azure Repos Git repository in a different project in your organization. 
+Releases run with collection scoped access tokens by default. When **Limit job authorization scope to current project for release pipelines** is enabled, you can reduce the scope of access for all release pipelines to the current project. That means your releases shall fail if they are accessing a resource such as an Azure Repos Git repository in a different project in your organization. 
 
 If your resources are in a different project than your classic pipeline, and **Limit job authorization scope to current project for release pipelines** is enabled, you must grant permission to the build service identity for your classic release pipeline to the second project. 
 
