@@ -9,7 +9,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 06/09/2020
+ms.date: 09/10/2020
 ---
 
 
@@ -82,7 +82,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Agile boards</strong><br/>Includes limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a>. On Boards, Stakeholders can't add work items, can't drag-and-drop work items to update status, and can't update fields displayed on cards. 
+<td align="left"><strong>Agile boards</strong><br/>Includes limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a>. On Boards, Stakeholders can't add work items and can't update fields displayed on cards. 
 </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>

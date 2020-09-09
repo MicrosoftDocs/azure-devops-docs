@@ -8,7 +8,7 @@ ms.date: 08/06/2020
 
 ### Features not available to users with Stakeholder access 
 
-If a Stakeholder needs access to one or more of the following features&mdash;which support the daily work of product owners, team leads, developers, testers, and project administrators&mdash;you need to have <strong>Basic</strong> access.  
+If a Stakeholder needs access to one or more of the following features&mdash;which support the daily work of product owners, team leads, developers, testers, and project administrators&mdash;you need to provide them **Basic** access.  
 
 ::: moniker range="azure-devops"
 
@@ -16,8 +16,9 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 
 - Change the priority of an item within a backlog  
 - Delete work items or move work items to another project
-- Add work items, drag-and-drop work items, or change fields on cards on a Kanban board
-- Add new work item tags Delete work items or move work items to another project
+- Add work items and change fields on cards on a Kanban board
+- Add new work item tags
+- Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
 - View Delivery Plans (a Marketplace extension)    
 - Access the full set of features under **Pipelines**, **Repos**, or **Test Plans**.   
