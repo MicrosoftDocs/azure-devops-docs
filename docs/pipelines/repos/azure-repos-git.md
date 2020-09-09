@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 07/16/2020
+ms.date: 09/09/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -153,6 +153,7 @@ Azure Pipelines provides several security settings to configure the job authoriz
 ### Limit job authorization scope to current project for non-release pipelines
 
 > [!NOTE]
+> This setting applies to YAML pipelines and classic build pipelines.
 > This setting does not apply to [classic release pipelines](../release/index.md).
 
 Pipelines run with collection scoped access tokens unless **Limit job authorization scope to current project for non-release pipelines** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to the current project. This can impact your pipeline if you are accessing an Azure Repos Git repository in a different project in your organization. 
