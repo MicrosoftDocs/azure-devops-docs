@@ -88,13 +88,13 @@ YAML pipelines are not available in TFS.
 ::: moniker range=">= tfs-2017"
 **Azure Pipelines, TFS 2017.3 and newer**
 
-![ci trigger git branches](media/ci-trigger-git-branches-neweditor.png)
+![Configure continuous integration trigger branch filters.](media/ci-trigger-git-branches-neweditor.png)
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 **TFS 2017.1 and older versions**
 
-![ci trigger git branches](media/ci-trigger-git-branches.png)
+![Configure continuous integration trigger branch filters in TFS 2017.1 and older versions.](media/ci-trigger-git-branches.png)
 ::: moniker-end
 
 ---
