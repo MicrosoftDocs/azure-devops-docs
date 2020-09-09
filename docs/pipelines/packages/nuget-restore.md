@@ -7,7 +7,7 @@ ms.reviewer: rabououn
 author: ramiMSFT
 ms.custom: "seodec18, contperfq1"
 ms.topic: conceptual
-ms.date: 08/07/2020
+ms.date: 09/08/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -113,7 +113,7 @@ If your NuGet.config contains feeds in a different Azure DevOps organization tha
     > [!div class="mx-imgBorder"]
     > ![Feeds and authentication](media/feeds-and-authentication.png)
 
-8. In the service connection dialog that appears, enter the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3.
+8. In the service connection dialog that appears, select the **External Azure DevOps Server** option and enter a connection name, the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3.
 
     > [!div class="mx-imgBorder"]
     > ![NuGet service connection](media/service-connection.png)
