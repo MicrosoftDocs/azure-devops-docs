@@ -17,7 +17,7 @@ You can now search for builds across projects when linking a working item to a B
     
 ### Editing description (help text) on system fields
 
-You have always been able to edit the description of custom fields. But for system fields like priority, severity, and activity, the description was not editable. This was a feature gap between the Hosted XML and Inherited and was preventing some customers from migrating to the Inherited model. In sprint 175, we now allow you to edit the description on system fields. The edited value will only affect that field in the process and for that work item type. This gives you the flexibility to have different descriptions for the same field on different work item types.
+You have always been able to edit the description of custom fields. But for system fields like priority, severity, and activity, the description was not editable. This was a feature gap between the Hosted XML and Inherited that prevented some customers from migrating to the Inherited model. In sprint 175, you can now edit the description on system fields. The edited value will only affect that field in the process and for that work item type. This gives you the flexibility to have different descriptions for the same field on different work item types.
 
 <img src="../../media/175-boards-2-0.png" width="600" alt="edit-description" style="border:#F0F0F0 1px solid;">    
 
