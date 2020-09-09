@@ -99,6 +99,8 @@ All  environments targeted by deployment jobs of a specific run of a pipeline ca
 
   > [!div class="mx-imgBorder"]
   > ![Environments in run details](media/environments-run.png)
+  
+If you're using an AKS private cluster, the **Workloads** tab isn't available.
 
 ## Approvals
 
