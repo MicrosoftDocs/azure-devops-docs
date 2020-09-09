@@ -15,39 +15,39 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View backlogs and open work items</td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Add work items to a backlog<br/><em>(Stakeholders can only add items to the bottom of the backlog)</em></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Use bulk edit features
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Add child items to a backlog item; prioritize or reorder a backlog; parent items using the Mapping pane; Assign items to a sprint using the Planning pane </td>
 <td> </td>
 <td></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Customize a backlog, configure team settings<br/><em>(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)</em></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 </tbody>
 </table>
@@ -69,39 +69,39 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View backlogs and open work items</td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Add work items to a backlog<br/><em>(Stakeholders can only add items to the bottom of the backlog)</em></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Use bulk edit features
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Add child items to a backlog item; prioritize or reorder a backlog; parent items using the Mapping pane</td>
 <td> </td>
 <td></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Customize a backlog, configure team settings<br/><em>(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)</em></td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 </tbody>
 </table>
