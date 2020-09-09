@@ -20,23 +20,27 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-This topic will help you resolve issues you may encounter when creating a connection to Microsoft Azure using an **Azure Resource Manager** [service connection](../library/service-endpoints.md) for your Azure DevOps CI/CD processes.
+This topic will help you resolve issues you may encounter when creating a connection to Microsoft Azure using an Azure Resource Manager [ARM service connection](../library/service-endpoints.md) for your Azure DevOps CI/CD processes.
 
 <a name="whathappens"></a>
 
 ## What happens when you create a Resource Manager service connection?
 
-You open the **Add Azure Resource Manager service connection** dialog, provide a connection name, and select a subscription from drop-down list of your subscriptions.  
+1. In Azure DevOps, open the Service connections page from the [project settings page](/azure/devops/project/navigation/go-to-service-page?view=azure-devops#open-project-settings). In TFS, open the **Services** page from the "settings" icon in the top menu bar.
+
+1. Choose **+ New service connection** and select the type of service connection you need.
+
+1. In the **Add Azure Resource Manager service connection** dialog, provide a connection name, and select a subscription from drop-down list of your subscriptions.  
 
 > [!div class="mx-imgBorder"]
 > ![The Add Azure Resource Manager service connection dialog](media/azure-rm-endpoint/endpoint-01.png)
 
-When you choose **OK**, the system:
+When you select **OK**, the system:
 
-1. Connects to the Azure Active Directory (Azure AD) tenant for to the selected subscription
-1. Creates an application in Azure AD on behalf of the user
-1. After the application has been successfully created, assigns the application as a contributor to the selected subscription
-1. Creates an Azure Resource Manager service connection using this application's details
+1. Connects to the Azure Active Directory (Azure AD) tenant for to the selected subscription.
+1. Creates an application in Azure AD on behalf of the user.
+1. After the application has been successfully created, assigns the application as a contributor to the selected subscription.
+1. Creates an Azure Resource Manager service connection using this application's details.
 
 <a name="troubleshoot"></a>
 
