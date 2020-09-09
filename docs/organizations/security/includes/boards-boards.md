@@ -17,39 +17,39 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View boards and open work items</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Add work items to a board; update status, reorder, or reparent child tasks through drag-and-drop; update a field on a card</td>
 <td></td>
 <td></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Add child tasks to a checklist</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Assign to a sprint (from card menu)
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Customize a board, configure team settings<br/><em>(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)</em></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 </tbody>
 </table>
@@ -73,32 +73,32 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View boards and open work items</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Add work items to a board; update status through drag-and-drop</td>
 <td></td>
 <td></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Assign to a sprint 
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Customize a board, configure team settings<br/><em>(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)</em></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 </tbody>
 </table>

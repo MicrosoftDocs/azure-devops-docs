@@ -16,80 +16,80 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View work items, such as user stories, bugs, and tasks.</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Create and edit work items, follow a work item.</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Change work item type. </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Move or delete work items.<sup>1</sup> </td>
 <td> </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Search and query work items, save work item queries.
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>Can&#39;t save queries</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">View backlogs, boards, and plans.
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Provide feedback.
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Request feedback.
 </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Agile tools (Kanban boards, backlogs, sprint planning, portfolio management).<sup>2</sup>
 </td>
 <td> Limited interactions </td>
 <td> View only</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Configure Agile tools, set team defaults.<sup>2</sup> 
@@ -97,8 +97,8 @@ ms.topic: include
 <td> </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Create new work item tags.<sup>3</sup></td>
@@ -119,20 +119,20 @@ ms.topic: include
 <tr>
 <td align="left">Customize project information (area paths, iteration paths, and work-tracking processes). 
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Powerful semantic work-tracking search.
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 
 </tbody>
@@ -161,88 +161,88 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View work items, such as user stories, bugs, and tasks.</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Create and edit work items, follow a work item.</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Change work item type.<sup>1</sup></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Move or delete work items.<sup>1</sup> </td>
 <td> </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Search and query work items, save work item queries.
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>Can&#39;t save queries</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">View backlogs, boards, and plans.
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Provide feedback.
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Request feedback.
 </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Agile tools (Kanban boards, backlogs, sprint planning, portfolio management). 
 </td>
 <td> Limited interactions </td>
 <td> View only</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Configure Agile tools, set team defaults.</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Create new work item tags. </td>
@@ -263,20 +263,20 @@ ms.topic: include
 <tr>
 <td align="left">Customize project information (area paths, iteration paths, and work-tracking processes). 
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Powerful semantic work-tracking search.
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 </tbody>
 </table>
@@ -302,80 +302,80 @@ ms.topic: include
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View work items, such as user stories, bugs, and tasks.</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Create and edit work items, follow a work item.</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Change work item type. </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Move or delete work items. </td>
 <td> </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Search and query work items, save work item queries.
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>Can&#39;t save queries</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">View backlogs, boards, and plans.
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Provide feedback.
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Request feedback.
 </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Agile tools (Kanban boards, backlogs, sprint planning, portfolio management).
 </td>
 <td> Limited interactions </td>
 <td> View only</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Configure Agile tools, set team defaults. 
@@ -383,8 +383,8 @@ ms.topic: include
 <td> </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Create new work item tags.</td>
@@ -405,20 +405,20 @@ ms.topic: include
 <tr>
 <td align="left">Customize project information (area paths, iteration paths, and work-tracking processes). 
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Powerful semantic work-tracking search.
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 </tbody>
 </table>

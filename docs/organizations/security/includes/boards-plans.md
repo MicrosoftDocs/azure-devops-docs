@@ -17,17 +17,17 @@ ms.topic: include
 <td align="left">View delivery plans 
 </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Create, edit, or delete a delivery plan<br/><em>(Contributors can only edit or delete plans that they create)</em>
 </td>
 <td></td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Manage permissions for a delivery plan<br/><em>(Contributors can only manage permissions for plans that they create)</em>
@@ -35,7 +35,7 @@ ms.topic: include
 <td> </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 </tbody>
 </table>
