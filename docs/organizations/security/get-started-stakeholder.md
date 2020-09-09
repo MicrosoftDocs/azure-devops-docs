@@ -98,19 +98,20 @@ You can start viewing and adding work items once you connect to a project. The e
 1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open your Kanban board](/azure/devops/boards/boards/media/quickstart/open-kanban-board-agile-s155.png)  
+	> ![Screenshot of Open your Kanban board, cloud version.](/azure/devops/boards/boards/media/quickstart/open-kanban-board-agile-s155.png)  
 
 	To select another team's board, open the selector. Then select a different team, or select the ![home icon](/azure/devops/media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Select another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
+	> ![Screenshot of Select another team's board.](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
 	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
+
 	> [!div class="mx-imgBorder"]  
-	> ![Select product backlog level, Backlog items, Stories, or Requirements](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
+	> ![Screenshot of menu to select product backlog level, Backlog items, Stories, or Requirements.](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
 ::: moniker-end
 
@@ -119,12 +120,12 @@ You can start viewing and adding work items once you connect to a project. The e
 
 1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 
-	![Open your Kanban board](/azure/devops/boards/boards/media/quickstart/open-kanban-board-agile.png)  
+	![Screenshot of Open your Kanban board, on-premises versions.](/azure/devops/boards/boards/media/quickstart/open-kanban-board-agile.png)  
 
 	To select another team's board, open the selector. Then select a different team, or select the ![home icon](/azure/devops/media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Select another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
+	> ![Screenshot of select another team's board, on-premises versions.](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
 	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
@@ -133,7 +134,7 @@ You can start viewing and adding work items once you connect to a project. The e
 	Here we have selected **Backlog Items** for the Scrum process.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Select product backlog level, Backlog items, Stories, or Requirements](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
+	> ![Screenshot of select product backlog level, Backlog items, Stories, or Requirements, on-premises versions.](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
 ::: moniker-end
 
@@ -466,12 +467,12 @@ From the web portal, open a work item and choose **Add tag** and type a keyword 
 ::: moniker range=">= tfs-2017"
 
 > [!div class="mx-imgBorder"]
-> ![Add one or more tags to a work item](../../boards/queries/media/add-tags/add-tag-vsts.png)
+> ![Screenshot of work item form, Add one or more tags to a work item.](../../boards/queries/media/add-tags/add-tag-vsts.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-![Add one or more tags to a work item](../../boards/queries/media/add-tags-to-work-items-vso-tfs.png)  
+![Screenshot of work item form, Add one or more tags to a work item, TFS 2015 version](../../boards/queries/media/add-tags-to-work-items-vso-tfs.png)  
 ::: moniker-end
 
 Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, simply choose the x on the tag,![Delete a tag assigned to a work item](../../boards/queries/media/add-tags/unassign-a-tag.png).   
@@ -502,7 +503,7 @@ You can check the product backlog to see how the team has prioritized work. Back
 From the Kanban board, choose **View as backlog**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Choose Backlog](../../boards/media/switch-to-backlog-cloud.png) 
+> ![Screenshot of link to view Backlog, cloud version.](../../boards/media/switch-to-backlog-cloud.png) 
 
 ::: moniker-end
 
@@ -511,7 +512,7 @@ From the Kanban board, choose **View as backlog**.
 From the Kanban board, choose **View as backlog**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Choose Backlog](../../boards/media/switch-to-backlog-2019.png) 
+> ![Screenshot of link to view Backlog, on-premises version.](../../boards/media/switch-to-backlog-2019.png) 
 
 ::: moniker-end
 
@@ -521,7 +522,7 @@ From the Kanban board, choose **View as backlog**.
 From the Kanban board, choose **Backlog**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Choose Backlog](../../boards/media/switch-to-backlog-2015.png) 
+> ![Screenshot of link to view Backlog, TFDS 2018 and earlier versions.](../../boards/media/switch-to-backlog-2015.png) 
 
 ::: moniker-end
 

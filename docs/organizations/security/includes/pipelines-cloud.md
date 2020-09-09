@@ -41,20 +41,20 @@ View builds
 <tr>
 <td align="left">View release pipelines</td>
 <td><img src="/azure/devops/media/icons/preview.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Define builds with continuous integration
 </td>
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
 </tr>
 <tr>
@@ -62,39 +62,39 @@ View builds
 </td>
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Approve releases
 </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="preview"/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Azure Artifacts (5 users free)
 </td>
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Queue builds, edit build quality
 </td>
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
 </tr>
 <tr>
@@ -103,8 +103,8 @@ View builds
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
 </tr>
 <tr>
@@ -112,9 +112,9 @@ View builds
 </td>
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
 </tr>
 <tr>
@@ -123,8 +123,8 @@ View builds
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 <td>  </td>
 </tr>
 <tr>
@@ -134,18 +134,18 @@ View builds
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Create and edit task groups 
 </td>
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Manage task group permissions
@@ -153,19 +153,19 @@ View builds
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Can view library items such as variable groups 
 </td>
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Use and manage library items such as variable groups 
@@ -173,9 +173,9 @@ View builds
 <td><img src="/azure/devops/media/icons/preview.png" alt="preview"/></td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt=""/></td>
 </tr>
 </tbody>
 </table>

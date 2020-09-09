@@ -11,48 +11,48 @@
 <tr>
 <td align="left">Provide feedback using the Test &amp; Feedback extension
 </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Exploratory testing, view test runs 
 </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Manage test plans and test suites 
 <p>Manage test configurations and test environments </p></td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td><p>Exploratory testing, create and delete test runs </p></td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td><p>Request feedback using the Test &amp; Feedback extension</p></td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 <tr>
 <td align="left">Azure Test Plans (formerly Test Manager, purchased separately)
 </td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
+<td><img src="~/organizations/security/media/checkmark.png" alt=""/></td>
 </tr>
 </tbody>
 </table>
