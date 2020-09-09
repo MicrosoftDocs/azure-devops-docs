@@ -18,9 +18,9 @@ ms.topic: include
 <td align="left">Contribute to a centralized version control, including Code Review (Check in, label, lock, merge, pend a change)
 </td>
 <td>Read only</td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png"/></td>
+<td><img src="~/organizations/security/media/checkmark.png"/></td>
 </tr>
 <tr>
 <td align="left">Check in, revise, undo, or unlock other users&#39; changes
@@ -28,7 +28,7 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td><img src="~/organizations/security/media/checkmark.png"/></td>
 </tr>
 <tr>
 <td align="left">Manage branches, manage permissions 
@@ -36,7 +36,7 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="~/organizations/security/media/checkmark.png" alt="checkmark"/></td>
+<td><img src="~/organizations/security/media/checkmark.png"/></td>
 </tr>
 </tbody>
 </table>
