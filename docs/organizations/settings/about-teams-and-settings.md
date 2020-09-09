@@ -29,7 +29,7 @@ The following scenarios apply:
 - each feature team can be associated with a single feature area path&mdash;such as *Customer Profile*, *Shopping Cart*, *Email*&mdash;or several area paths
 - each management team, which focuses on a set of features, can choose several area paths to monitor
 - each feature team has its distinct backlog to plan, determine priority, and track work
-- portfolio or product owners can create their idea, road map, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies. For more information, see [Portfolio management](../../boards/plans/portfolio-management.md). 
+- portfolio or product owners can create their idea, road map, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies. For more information, see [Portfolio management](../../boards/plans/portfolio-management.md)
 
 ## The default team
 
@@ -69,7 +69,7 @@ These tools automatically filter the set of work items they display by referenci
 - iteration path
 - selected sprints
 
-For more information about each tool and the configuration settings for each tool, see the corresponding articles.
+For more information about each tool and the configuration settings for each tool, see the following corresponding articles.
 
 [!INCLUDE [team-configuration](../../boards/includes/team-configuration.md)]
 
