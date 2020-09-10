@@ -464,7 +464,7 @@ jobs:
 
 ---
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Deployment job
 
