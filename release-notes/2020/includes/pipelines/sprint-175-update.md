@@ -6,14 +6,14 @@ ms.date: 09/10/2020
 ms.topic: include
 ---
 
-### General availability of Scale-set agents
+### General availability of scale-set agents
 
 A few months ago, we announced the [preview of Scale-set agents](https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-170-update#preview-of-scale-set-agents). We are now happy to announce the general availability of this feature. In the last two months, we improved the reliability in performing various scale-set operations. We updated the [guidance](https://docs.microsoft.com/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops) on how you can improve the performance of provisioning new virtual machines. We moved the logic for installing an agent into a custom VM extension so that you can leverage the VM script extension slot for your own needs. Finally, we improved diagnosability by surfacing the errors when we perform scale-up or scale-down operations on Azure.
 
 
 ### Run this job next
 
-With this release, we now allow you to bump the priority of a queued job. Have you ever had a bugfix which you needed to deploy _right this minute_ but had to wait behind CI and PR jobs? Then this change is for you! Users with sufficient permission will see a new "Run next" button on the job details page. Clicking the button will set the job to be run as soon as possible. (You'll still need available parallelism and a suitable agent, of course.)
+Have you ever had a bugfix which you needed to deploy _right this minute_ but had to wait behind CI and PR jobs? With this release, we now allow you to bump the priority of a queued job. Users with sufficient permission will see a new "Run next" button on the job details page. Clicking the button will set the job to be run as soon as possible. (You'll still need available parallelism and a suitable agent, of course.)
 
 
 ### Template expressions allowed in YAML `resources` block
