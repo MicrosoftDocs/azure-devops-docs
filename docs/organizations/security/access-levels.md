@@ -59,9 +59,9 @@ The following table indicates those features available for each supported access
 <tbody valign="top" align="center">
 <tr>
 <td align="left"><strong><a href="../settings/about-settings.md" data-raw-source="[Administer organization](../settings/about-settings.md)">Administer organization</a></strong><br/>Can configure resources when also added to a security group or role: team administrator, Project Administrator, or Project Collection Administrator</td>
-<td>&#10004;</td>
-<td>&#10004;</td>
-<td>&#10004;</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all <a href="../../boards/backlogs/backlogs-overview.md">backlog</a> and <a href="../../boards/sprints/scrum-overview.md">sprint planning</a> tools</td>
