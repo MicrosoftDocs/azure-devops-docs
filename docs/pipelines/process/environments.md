@@ -9,7 +9,7 @@ monikerRange: '>= azure-devops-2020'
 
 # Create and target an environment
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [include](../includes/version-2020-rtm.md)]
 
 An environment is a collection of resources, such as Kubernetes clusters and virtual machines, that can be targeted by deployments from a pipeline. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
 
