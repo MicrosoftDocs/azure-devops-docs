@@ -313,11 +313,57 @@ All YAML pipelines in Azure DevOps Server 2019 run under **collection** job auth
 
 ### How do I determine the job authorization scope of my classic build pipeline?
 
-* If the pipeline is in a public project, then the job authorization scope is **project**.
-* If the pipeline is in a private project, check the Pipeline settings under your Azure DevOps **organization settings**:
-  * If the toggle for "Limit job authorization scope to current project" is enabled, then the scope is **project**.
-  * If the toggle is not enabled, then check the Pipeline settings under your **project settings** in Azure DevOps:
-    * If the toggle for "Limit job authorization scope to current project" is enabled, then the scope is **project**.
-    * If the toggle is not enabled, open the editor for the pipeline, and navigate to the **Options** tab.
+:::moniker range="azure-devops"
+
+* If the pipeline is in a public project, then the job authorization scope is **project** regardless of any other settings.
+
+:::moniker-end
+
+:::moniker range="azure-devops-2020"
+
+* Check the Pipeline settings under your Azure DevOps **Organization settings**:
+  * If **Limit job authorization scope to current project** is enabled, then the scope is **project**.
+  * If **Limit job authorization scope to current project** is not enabled, then check the Pipeline settings under your **Project settings** in Azure DevOps:
+    * If **Limit job authorization scope to current project** is enabled, then the scope is **project**.
+    * If **Limit job authorization scope to current project** is not enabled, open the editor for the pipeline, and navigate to the **Options** tab.
+      * If the **Build job authorization scope** is **Current project**, then scope is **project**.
+      * Otherwise, scope is **collection**.
+
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2020"
+
+* If the pipeline is in a private project, check the Pipeline settings under your Azure DevOps **Organization settings**:
+  * If **Limit job authorization scope to current project for non-release pipelines** is enabled, then the scope is **project**.
+  * If **Limit job authorization scope to current project for non-release pipelines** is not enabled, then check the Pipeline settings under your **Project settings** in Azure DevOps:
+    * If **Limit job authorization scope to current project for non-release pipelines** is enabled, then the scope is **project**.
+    * If **Limit job authorization scope to current project for non-release pipelines** is not enabled, open the editor for the pipeline, and navigate to the **Options** tab.
       * If the **Build job authorization scope** is **Current project**, then scope is **project**.
       * Or else, scope is **collection**.
+
+:::moniker-end
+
+### How do I determine the job authorization scope of my classic release pipeline?
+
+:::moniker range="<=azure-devops-2020"
+
+Classic release pipelines in Azure DevOps Server 2020 and below run with **collection** scope.
+
+:::moniker-end
+
+:::moniker range="azure-devops"
+
+* If the pipeline is in a public project, then the job authorization scope is **project** regardless of any other settings.
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2020"
+
+* If the pipeline is in a private project, check the Pipeline settings under your Azure DevOps **Organization settings**:
+  * If **Limit job authorization scope to current project for release pipelines** is enabled, then the scope is **project**.
+  * If **Limit job authorization scope to current project for release pipelines** is not enabled, then check the Pipeline settings under your **Project settings** in Azure DevOps:
+    * If **Limit job authorization scope to current project for release pipelines** is enabled, then the scope is **project**.
+    * Otherwise, the scope is **collection**.
+
+:::moniker-end
