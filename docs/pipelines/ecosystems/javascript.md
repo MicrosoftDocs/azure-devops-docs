@@ -948,7 +948,7 @@ steps: # Checking out connected repo
 - task: CopyFiles@2
   inputs:
       contents: '*.tgz'
-      targetFolder: $(Build.ArtifactStagingDirectory)
+      targetFolder: $(Build.ArtifactStagingDirectory)/npm
   displayName: 'Copy archives to artifacts staging directory'
 
 - task: CopyFiles@2
