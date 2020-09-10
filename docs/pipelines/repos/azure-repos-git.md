@@ -140,15 +140,20 @@ Building pull requests from Azure Repos forks is no different from building pull
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
+
+SAD put this dow to just a couple of bullets and link to the new topic, only keep
+the repo one fully described here
+
+For the permissions, see if I can move that out of options
 
 ## Limit job authorization scope
 
 Azure Pipelines provides several security settings to configure the job authorization scope that your pipelines run with.
 
-* [Limit job authorization scope to current project for non-release pipelines](#limit-job-authorization-scope-to-current-project-for-non-release-pipelines)
-* [Limit job authorization scope to current project for release pipelines](#limit-job-authorization-scope-to-current-project-for-release-pipelines)
-* [Limit job authorization scope to referenced Azure DevOps repositories](#limit-job-authorization-scope-to-referenced-azure-devops-repositories)
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 ### Limit job authorization scope to current project for non-release pipelines
 
