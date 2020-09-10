@@ -92,20 +92,17 @@ Alternatively, if you are prepared to give the user additional permissions (admi
 > [!WARNING]
 > Users who are assigned to the Global administrator role can read and modify every administrative setting in your Azure AD organization. As a best practice, we recommend that you assign this role to fewer than five people in your organization. 
 
-1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
-   The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner),
-   [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator--company-administrator), or
-   [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
+1. Sign in to the Azure portal using an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner), [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator--company-administrator), or [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
 
-1. Choose **Azure Active Directory** in the left navigation bar.
+1. Select **Azure Active Directory** in the left navigation bar.
 
 1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
-1. In the **MANAGE** section choose **Users**.
+1. In the **MANAGE** section select **Users**.
    
-1. Use the search box to filter the list and then choose the user you want to manage.
+1. Use the search box to filter the list and then select the user you want to manage.
 
-1. In the **MANAGE** section choose **Directory role** and change the role to **Global administrator**.
+1. In the **MANAGE** section select **Directory role** and change the role to **Global administrator**.
 
 1. Save the change.
 
@@ -115,15 +112,15 @@ It typically takes 15 to 20 minutes to apply the changes globally. After this pe
 
 #### The user is not authorized to add applications in the directory
 
-You must have permission to add integrated applications in the directory. The directory administrator has permission to change this setting, as follows:
+You must have permissions to add integrated applications in the directory. The directory administrator has permissions to change this setting.
 
-1. Choose **Azure Active Directory** in the left navigation bar.
+1. Select **Azure Active Directory** in the left navigation bar.
 
 1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
-1. In the **MANAGE** section choose **Users**.
+1. In the **MANAGE** section select **Users**.
 
-1. Choose **User settings**.
+1. Select **User settings**.
 
 1. In the **App registrations** section, change **Users can register applications** to **Yes**.
 
@@ -153,15 +150,15 @@ To resolve these issues:
 
 This error typically occurs when you do not have **Write** permission for the selected Azure subscription when the system attempts to assign the **Contributor** role.
 
-To resolve this issue, ask the subscription administrator to [configure your identity in an **Admin Access** role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+To resolve this issue, ask the subscription administrator to [assign you the appropriate role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 ## What authentication mechanisms are supported? How do Managed Identities work?
 
-Azure Resource Manager service connection can connect to a Microsoft Azure subscription using Service Principal Authentication (SPA) or  Managed Identity Authentication.
+Azure Resource Manager service connection can connect to a Microsoft Azure subscription using Service Principal Authentication (SPA) or Managed Identity Authentication.
 Managed identities for Azure resources provides Azure services with an automatically managed identity in Azure Active Directory. You can use this identity to authenticate to any service that supports Azure AD authentication, without persisting credentials in code or in the service connection.
-See [Configure managed identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm) to learn about managed identities for virtual machines.  
+See [Assigning roles](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm) to learn about managed identities for virtual machines.  
 
 > [!NOTE]
-> Managed identities are not supported on Microsoft Hosted Agents. You will have to [set-up a self hosted agent](/azure/devops/pipelines/agents/agents?view=azure-devops#install) on an Azure VM and configure managed identity for the virtual machine.
+> Managed identities are not supported in Microsoft Hosted Agents. You will have to [set-up a self hosted agent](/azure/devops/pipelines/agents/agents?view=azure-devops#install) on an Azure VM and configure managed identity for the virtual machine.
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
