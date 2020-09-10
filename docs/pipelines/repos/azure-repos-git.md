@@ -155,10 +155,12 @@ Azure Pipelines provides several security settings to configure the job authoriz
 
 ### Limit job authorization scope to current project
 
-- **Limit job authorization scope to current project for non-release pipelines** - This setting applies to YAML pipelines and classic build pipelines. This setting does not apply to [classic release pipelines](../release/index.md).
+Azure Pipelines provides two **Limit job authorization scope to current project** settings:
+
+- **Limit job authorization scope to current project for non-release pipelines** - This setting applies to YAML pipelines and classic build pipelines. This setting does not apply to classic release pipelines.
 - **Limit job authorization scope to current project for release pipelines** - This setting applies to [classic release pipelines](../release/index.md) only.
 
-Pipelines run with collection scoped access tokens unless the relevant setting for the pipeline type is enabled. The **Limit job scope** settings allow you to reduce the scope of access for all pipelines to the current project. This can impact your pipeline if you are accessing an Azure Repos Git repository in a different project in your organization. 
+Pipelines run with collection scoped access tokens unless the relevant setting for the pipeline type is enabled. The **Limit job authorization scope** settings allow you to reduce the scope of access for all pipelines to the current project. This can impact your pipeline if you are accessing an Azure Repos Git repository in a different project in your organization. 
 
 If your Azure Repos Git repository is in a different project than your pipeline, and the **Limit job authorization scope** setting for your pipeline type is enabled, you must grant permission to the build service identity for your pipeline to the second project. For more information, see [Job authorization scope](../process/access-tokens.md#job-authorization-scope).
 
@@ -178,7 +180,7 @@ If your Azure Repos Git repository is in a different project than your pipeline,
 
 :::moniker range=">azure-devops-2019"
 
-For more information on the **Limit job authorization scope** settings, see [Understand job access tokens](../process/acces-tokens.md).
+For more information on **Limit job authorization scope**, see [Understand job access tokens](../process/acces-tokens.md).
 
 :::moniker-end
 
@@ -186,7 +188,7 @@ For more information on the **Limit job authorization scope** settings, see [Und
 
 ### Limit job authorization scope to referenced Azure DevOps repositories
 
-Pipelines can access any Azure DevOps repositories in authorized projects (as described in the previous [Limit job authorization scope to current project](#limit-job-authorization-scope-to-current-project) section) unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step in the pipeline job that uses that repository.
+Pipelines can access any Azure DevOps repositories in authorized projects, as described in the previous [Limit job authorization scope to current project](#limit-job-authorization-scope-to-current-project) section, unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step in the pipeline job that uses that repository.
 
 To configure this setting, navigate to **Pipelines**, **Settings** at either **Organization settings** or **Project settings**. If enabled at the organization level, the setting is grayed out and unavailable at the project settings level.
 
