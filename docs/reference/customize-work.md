@@ -71,85 +71,85 @@ The following table summarizes the differences between the three supported proce
 <tbody valign="top" align="center">
 <tr>
 <td align="left">WYSIWYG editing</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
 <td align="left">Create inherited custom processes</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 <td></td>
 <td> </td>
 </tr>
 <tr>
 <td align="left">Create custom process templates (see note 1)</td>
 <td> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Inherit changes in system processes (Agile, Scrum, CMMI)</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
 <td align="left">Updated process changes automatically apply to projects</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 <td> </td>
 </tr>
 <tr>
 <td align="left">Basic customizations supported (fields, workflow, work item types, backlog levels)</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Global lists</td>
 <td>Picklists</td>
 <td>(see note 2)</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Advanced customizations supported (custom link types, team fields, global workflow, test management, and select process configuration) (see note 3)</td>
 <td> </td>
 <td> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Initial configuration of permissions and security groups (see note 3)</td>
 <td> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Update Microsoft field mappings using the <a href="/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file" data-raw-source="[**TFSFieldMapping**](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file)"><strong>TFSFieldMapping</strong></a> command-line tool (see note 4)</td>
 <td> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Use the <a href="witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md" data-raw-source="[**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)"><strong>witadmin</strong> command-line tools</a> to edit projects</td>
 <td> </td>
 <td> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Use the <strong>witadmin</strong> command-line tools to list information about projects</td>
 <td>  </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">REST API (read)</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">REST API (write)</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 <td> </td>
 <td> </td>
 </tr>
