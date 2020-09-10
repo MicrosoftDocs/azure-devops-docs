@@ -582,24 +582,6 @@ stages:
     - script: echo $(varFromA) # this step uses the mapped-in variable
 ```
 
-To use the output at a stage level, you use the `dependencies` syntax.
-
-```yaml
-stages:
-- stage: One
-  jobs:
-  - job: A
-    steps:
-     - task: MyTask@1
-       name: ProduceVar
-
-- stage: Two
-  condition: and(succeeded(), eq(dependencies.One.outputs['A.ProduceVar.MyVar'], 'true'))
-  jobs:
-  - job: B
-    steps:
-    - script: echo hello from Stage B
-```
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
