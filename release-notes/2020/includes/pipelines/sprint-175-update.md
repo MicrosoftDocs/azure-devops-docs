@@ -8,7 +8,7 @@ ms.topic: include
 
 ### General availability of scale-set agents
 
-A few months ago, we announced the [preview of Scale-set agents](https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-170-update#preview-of-scale-set-agents). We are now happy to announce the general availability of this feature. In the last two months, we improved the reliability in performing various scale-set operations. We updated the [guidance](https://docs.microsoft.com/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops) on how you can improve the performance of provisioning new virtual machines. We moved the logic for installing an agent into a custom VM extension so that you can leverage the VM script extension slot for your own needs. Finally, we improved diagnosability by surfacing the errors when we perform scale-up or scale-down operations on Azure.
+A few months ago, we announced the [preview of Scale-set agents](https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-170-update#preview-of-scale-set-agents). We are now happy to announce the general availability of this feature. In the last two months, we improved the reliability in performing various scale-set operations. We updated the [guidance](https://docs.microsoft.com/azure/devops/pipelines/agents/scale-set-agents) on how you can improve the performance of provisioning new virtual machines. We moved the logic for installing an agent into a custom VM extension so that you can leverage the VM script extension slot for your own needs. Finally, we improved diagnosability by surfacing the errors when we perform scale-up or scale-down operations on Azure.
 
 
 ### Run this job next
