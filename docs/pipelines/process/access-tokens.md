@@ -319,6 +319,14 @@ All YAML pipelines in Azure DevOps Server 2019 run under **collection** job auth
 
 :::moniker-end
 
+:::moniker range="<azure-devops-2020"
+
+* Open the editor for the pipeline and navigate to the **Options** tab.
+  * If the **Build job authorization scope** is **Current project**, then scope is **project**.
+  * Otherwise, scope is **collection**.
+
+:::moniker-end
+
 :::moniker range="azure-devops-2020"
 
 * Check the Pipeline settings under your Azure DevOps **Organization settings**:
