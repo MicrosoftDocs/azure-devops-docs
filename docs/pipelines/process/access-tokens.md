@@ -179,7 +179,28 @@ For more information, see [Azure Repos Git repositories - Limit job authorizatio
 
 :::moniker-end
 
+## Scoped build identities
+
+Azure DevOps uses two built-in identities to execute pipelines.
+
+* A **collection-scoped identity**, which has access to all projects in the collection (or organization for Azure DevOps Services)
+* A **project-scoped identity**, which has access to a single project
+
+ These identities are allocated permissions necessary to perform build/release execution time activities when calling back to the Azure DevOps system. There are built-in default permissions, and you may also manage your own permissions as needed.
+ 
+The **collection-scoped identity** name has the following format:
+- `Project Collection Build Service ({OrgName})`
+- For example, if the organization name is `fabrikam-tailspin`, this account has the name `Project Collection Build Service (fabrikam-tailspin)`.
+ 
+The **project-scoped identity** name has the following format:
+- `{Project Name} Build Service ({Org Name})`
+- For example, if the organization name is `fabrikam-tailspin` and the project name is `SpaceGameWeb`, this account has the name `SpaceGameWeb Build Service (fabrikam-tailspin)`.
+
+By default, the collection-scoped identity is used, unless one of the **Limit job authorization scope** settings is enabled, as described in the previous section.
+
 ## Manage build service account permissions
+
+One result of setting project-scoped access may be that the project-scoped identity may not have permissions to a resource that the collection-scoped one did have.
 
 You may want to change the permissions of job access token in scenarios such as the following:
 
@@ -187,7 +208,7 @@ You may want to change the permissions of job access token in scenarios such as 
 - You want your pipeline to be restricted from changing code in the repository.
 - You want your pipeline to be restricted from creating work items.
 
-To update the permissions of job access token:
+To update the permissions of the job access token:
 
 - First, determine the job authorization scope for your pipeline. See the section above to understand job authorization scope. If the job authorization scope is **collection**, then the corresponding build service account to manage permissions on is **Project Collection Build Service (your-collection-name)**. If the job authorization scope is **project**, then the build service account to manage permissions on is **Your-project-name Build Service (your-collection-name)**.
 
@@ -211,6 +232,8 @@ To update the permissions of job access token:
   - Under the **Users** tab, look for **Your-project-name build service (your-collection-name)**.
   - Make any changes to the non-pipelines-related permissions for this account.
   - Since **Your-project-name Build Service (your-collection-name)** is a user in your organization or collection, you can add this account explicitly to any resource - for e.g., to a feed in Azure Artifacts.
+
+:::moniker range=">=azure-devops-2019"
 
 ### Example - Configure permissions to access another repo in the same project project collection
 
@@ -243,6 +266,8 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 3. Configure the desired permissions for that user.
 
     ![Configure user permissions.](media/access-tokens/set-project-permissions.png)
+
+:::moniker-end
 
 <a name="q-a"></a>
 ## FAQ

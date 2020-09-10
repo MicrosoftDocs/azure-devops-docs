@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about building your code or deploying your software using build options on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 09/09/2020
+ms.date: 09/10/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -69,69 +69,7 @@ Specify the authorization scope for a build job. Select:
 * **Project Collection** if the build needs access to multiple projects.
 * **Current Project** if you want to restrict this build to have access only the resources in the current project.
 
-::: moniker range=">=azure-devops-2020"
-
-### Scoped build identities
-
-Azure DevOps uses two built-in identities to execute pipelines.
-
-* A **collection-scoped identity**, which has access to all projects in the collection (or organization for Azure DevOps Services)
-* A **project-scoped identity**, which has access to a single project
-
- These identities are allocated permissions necessary to perform build/release execution time activities when calling back to the Azure DevOps system. There are built-in default permissions, and you may also manage your own permissions as needed.
- 
-The **collection-scoped identity** name has the following format:
-- `Project Collection Build Service ({OrgName})`
-- For example, if the organization name is `fabrikam-tailspin`, this account has the name `Project Collection Build Service (fabrikam-tailspin)`.
- 
-The **project-scoped identity** name has the following format:
-- `{Project Name} Build Service ({Org Name})`
-- For example, if the organization name is `fabrikam-tailspin` and the project name is `SpaceGameWeb`, this account has the name `SpaceGameWeb Build Service (fabrikam-tailspin)`.
-
-By default, the collection-scoped identity is used, unless one of the **Limit job authorization scope to current project** settings is enabled, as described in the following section.
-
-### Limit job authorization scope to current project
-
-Azure Pipelines provides several security settings to configure the job authorization scope that your pipelines run with. These settings can be configured at organization level or project level. If one of these settings is enabled at organization level, that setting is grayed out at project level. These settings are configured in **Project settings** > **Settings**, or **Organization settings** > **Settings**.
-
-
-* [Limit job authorization scope to current project for non-release pipelines](#limit-job-authorization-scope-to-current-project-for-non-release-pipelines)
-* [Limit job authorization scope to current project for release pipelines](#limit-job-authorization-scope-to-current-project-for-release-pipelines)
-* [Limit job authorization scope to referenced Azure DevOps repositories](#limit-job-authorization-scope-to-referenced-azure-devops-repositories)
-
-#### Limit job authorization scope to current project for non-release pipelines
-
-> [!NOTE]
-> This setting applies to YAML pipelines and classic build pipelines.
-> This setting does not apply to [classic release pipelines](../release/index.md).
-
-Pipelines run with collection scoped access tokens unless **Limit job authorization scope to current project for non-release pipelines** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to the current project. This can impact your pipeline if you are accessing resources in another project, such as an Azure Repos Git repository in a different project in your organization. 
-
-If your resources are in a different project than your pipeline, and **Limit job authorization scope to current project for non-release pipelines** is enabled, you must grant permission to the build service identity for your pipeline to the second project, as described in the following [Managing permissions](#managing-permissions) section.
-
-#### Limit job authorization scope to current project for release pipelines
-
-> [!NOTE]
-> This setting applies to [classic release pipelines](../release/index.md) only.
-
-Releases run with collection scoped access tokens by default. When **Limit job authorization scope to current project for release pipelines** is enabled, you can reduce the scope of access for all release pipelines to the current project. That means your releases shall fail if they are accessing a resource such as an Azure Repos Git repository in a different project in your organization. 
-
-If your resources are in a different project than your classic pipeline, and **Limit job authorization scope to current project for release pipelines** is enabled, you must grant permission to the build service identity for your classic release pipeline to the second project. 
-
-#### Limit job authorization scope to referenced Azure DevOps repositories
-
-This setting applies when referencing Azure Repos Git repositories in your pipeline. For more information, see [Azure Repos Git - Limit job authorization scope to referenced Azure DevOps repositories](../repos/azure-repos-git.md#limit-job-authorization-scope-to-referenced-azure-devops-repositories).
-
-### Managing permissions
-
-One result for setting project-scoped access may be that the project-scoped identity may not have permissions to a resource that the collection-scoped one did have.
- 
-A solution is to assign permissions directly to the project-scoped identity, if required. These can be assigned cross-project within the same project collection. 
-
-> [!NOTE]
-> If you don't see the project-scoped identities, you must first enable **Limit job authorization scope to current project for non-release pipelines** and then run a pipeline in that project.
-
-::: moniker-end
+For more information, see [Understand job access tokens](../process/access-tokens.md).
 
 ## Build (run) number
 
