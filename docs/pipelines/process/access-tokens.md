@@ -5,7 +5,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 09/09/2020
+ms.date: 09/10/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -95,20 +95,46 @@ YAML pipelines are not available in TFS.
 
 Job authorization scope can be set for the entire Azure DevOps organization, for a specific project, or for a specific pipeline. 
 
+::: moniker-end
+
+:::moniker range="azure-devops-2020"
+
+> [!NOTE]
+> In Azure DevOps Server 2020, **Limit job authorization scope to current project** applies only to YAML pipelines and classic build pipelines. It does not apply to classic release pipelines. Classic release pipelines always run with project collection scope.
+
 To set job authorization scope for the organization:
 
 - Navigate to your organization settings page in the Azure DevOps user interface.
 - Select **Settings** under **Pipelines**.
-- Turn on the toggle **Limit job authorization scope to current project** to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
+- Enable **Limit job authorization scope to current project** to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
 
 To set job authorization scope for a specific project:
 
 - Navigate to your project settings page in the Azure DevOps user interface.
 - Select **Settings** under **Pipelines**.
-- Turn on the toggle **Limit job authorization scope to current project** to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
+- Enable **Limit job authorization scope to current project** to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2020"
+
+- To set job authorization scope at the organization level for all projects, choose **Organization settings** > **Pipelines** > **Settings**.
+- To set job authorization scope for a specific project, choose **Project settings** > **Pipelines** > **Settings**.
+
+Enable one or more of the following settings. Enabling these settings are recommended, as it enhances security for your pipelines.
+- **Limit job authorization scope to current project for non-release pipelines** - This setting applies to YAML pipelines and classic build pipelines, and does not apply to [classic release pipelines](../release/index.md).
+- **Limit job authorization scope to current project for release pipelines** - This setting applies to [classic release pipelines](../release/index.md) only.
+
+:::moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 >[!NOTE]
 >If the scope is set to **project** at the organization level, you cannot change the scope in each project.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2020"
 
 To set job authorization scope for a specific pipeline:
 
