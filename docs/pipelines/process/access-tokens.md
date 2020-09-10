@@ -179,7 +179,7 @@ For more information, see [Azure Repos Git repositories - Limit job authorizatio
 
 :::moniker-end
 
-## Build service account
+## Manage build service account permissions
 
 You may want to change the permissions of job access token in scenarios such as the following:
 
