@@ -528,7 +528,6 @@ In YAML, you can access variables across jobs by using [dependencies](expression
 Some tasks define output variables, which you can consume in downstream steps within the same job.
 ::: moniker-end
 
-::: moniker range=">=azure-devops-2020"
 
 #### [YAML](#tab/yaml/)
 
@@ -560,6 +559,7 @@ jobs:
   steps:
   - script: echo $(varFromA) # this step uses the mapped-in variable
 ```
+::: moniker range=">=azure-devops-2020"
 
 ### Use outputs in a different stage
 
