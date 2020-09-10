@@ -528,6 +528,8 @@ In YAML, you can access variables across jobs by using [dependencies](expression
 Some tasks define output variables, which you can consume in downstream steps within the same job.
 ::: moniker-end
 
+::: moniker range=">=azure-devops-2020"
+
 #### [YAML](#tab/yaml/)
 
 For these examples, assume we have a task called `MyTask`, which sets an output variable called `MyVar`.
@@ -560,7 +562,6 @@ jobs:
 ```
 
 ### Use outputs in a different stage
-(Azure DevOps 2020 and above only)
 
 To use the output from a different stage at the job level, you use the `stageDependencies` syntax.
 
@@ -599,6 +600,7 @@ stages:
     steps:
     - script: echo hello from Stage B
 ```
+::: moniker-end
 
 #### [Classic](#tab/classic/)
 
