@@ -218,15 +218,15 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 1. In the **FabrikamFiber** project, navigate to **Project settings**, **Repositories**, **FabrikamFiber**.
 
-    ![Configure repository access.](media/access-token/allow-repo-access.png)
+    ![Configure repository access.](media/access-tokens/allow-repo-access.png)
 
 2.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
-    ![Add user for repository access.](media/access-token/add-build-service-user.png)
+    ![Add user for repository access.](media/access-tokens/add-build-service-user.png)
 
 3. Configure the desired permissions for that user.
 
-    ![Configure repository permissions.](media/access-token/set-repo-permissions.png)
+    ![Configure repository permissions.](media/access-tokens/set-repo-permissions.png)
 
 ### Example - Configure permissions to access other resources in the same project collection
 
@@ -234,15 +234,15 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 1. In the **FabrikamFiber** project, navigate to **Project settings**, **Permissions**.
 
-    ![Configure project settings.](media/access-token/project-permissions.png)
+    ![Configure project settings.](media/access-tokens/project-permissions.png)
 
 2.  Choose **Users**, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account. If you don't see any search results initially, select **Expand search**.
 
-    ![Select SpaceGameWeb project-scoped build identity user.](media/access-token/add-build-service-user-project-permissions.png)
+    ![Select SpaceGameWeb project-scoped build identity user.](media/access-tokens/add-build-service-user-project-permissions.png)
 
 3. Configure the desired permissions for that user.
 
-    ![Configure user permissions.](media/access-token/set-project-permissions.png)
+    ![Configure user permissions.](media/access-tokens/set-project-permissions.png)
 
 <a name="q-a"></a>
 ## FAQ

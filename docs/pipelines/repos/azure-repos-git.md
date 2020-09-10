@@ -180,7 +180,7 @@ If your Azure Repos Git repository is in a different project than your pipeline,
 
 :::moniker range=">azure-devops-2019"
 
-For more information on **Limit job authorization scope**, see [Understand job access tokens](../process/acces-tokens.md).
+For more information on **Limit job authorization scope**, see [Understand job access tokens](../process/access-tokens.md).
 
 :::moniker-end
 
