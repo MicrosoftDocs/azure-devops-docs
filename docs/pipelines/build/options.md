@@ -94,8 +94,6 @@ By default, the collection-scoped identity is used, unless one of the **Limit jo
 
 Azure Pipelines provides several security settings to configure the job authorization scope that your pipelines run with. These settings can be configured at organization level or project level. If one of these settings is enabled at organization level, that setting is grayed out at project level. These settings are configured in **Project settings** > **Settings**, or **Organization settings** > **Settings**.
 
-:::image type="content" source="media/options/limit-job-authorization-scope.png" alt-text="Limit job authorization scope":::
-
 
 * [Limit job authorization scope to current project for non-release pipelines](#limit-job-authorization-scope-to-current-project-for-non-release-pipelines)
 * [Limit job authorization scope to current project for release pipelines](#limit-job-authorization-scope-to-current-project-for-release-pipelines)
@@ -132,38 +130,6 @@ A solution is to assign permissions directly to the project-scoped identity, if 
 
 > [!NOTE]
 > If you don't see the project-scoped identities, you must first enable **Limit job authorization scope to current project for non-release pipelines** and then run a pipeline in that project.
-
-#### Configure permissions to access another repo in the same project project collection
-
-In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permission to access the `FabrikamFiber` repository in the `fabrikam-tailspin/FabrikamFiber` project.
-
-1. In the **FabrikamFiber** project, navigate to **Project settings**, **Repositories**, **FabrikamFiber**.
-
-    ![Configure repository access.](media/options/allow-repo-access.png)
-
-2.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
-
-    ![Add user for repository access.](media/options/add-build-service-user.png)
-
-3. Configure the desired permissions for that user.
-
-    ![Configure repository permissions.](media/options/set-repo-permissions.png)
-
-#### Configure permissions to access other resources in the same project collection
-
-In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permissions to access other resources in the `fabrikam-tailspin/FabrikamFiber` project.
-
-1. In the **FabrikamFiber** project, navigate to **Project settings**, **Permissions**.
-
-    ![Configure project settings.](media/options/project-permissions.png)
-
-2.  Choose **Users**, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account. If you don't see any search results initially, select **Expand search**.
-
-    ![Select SpaceGameWeb project-scoped build identity user.](media/options/add-build-service-user-project-permissions.png)
-
-3. Configure the desired permissions for that user.
-
-    ![Configure user permissions.](media/options/set-project-permissions.png)
 
 ::: moniker-end
 

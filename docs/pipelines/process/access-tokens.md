@@ -212,6 +212,38 @@ To update the permissions of job access token:
   - Make any changes to the non-pipelines-related permissions for this account.
   - Since **Your-project-name Build Service (your-collection-name)** is a user in your organization or collection, you can add this account explicitly to any resource - for e.g., to a feed in Azure Artifacts.
 
+### Example - Configure permissions to access another repo in the same project project collection
+
+In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permission to access the `FabrikamFiber` repository in the `fabrikam-tailspin/FabrikamFiber` project.
+
+1. In the **FabrikamFiber** project, navigate to **Project settings**, **Repositories**, **FabrikamFiber**.
+
+    ![Configure repository access.](media/access-token/allow-repo-access.png)
+
+2.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
+
+    ![Add user for repository access.](media/access-token/add-build-service-user.png)
+
+3. Configure the desired permissions for that user.
+
+    ![Configure repository permissions.](media/access-token/set-repo-permissions.png)
+
+### Example - Configure permissions to access other resources in the same project collection
+
+In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permissions to access other resources in the `fabrikam-tailspin/FabrikamFiber` project.
+
+1. In the **FabrikamFiber** project, navigate to **Project settings**, **Permissions**.
+
+    ![Configure project settings.](media/access-token/project-permissions.png)
+
+2.  Choose **Users**, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account. If you don't see any search results initially, select **Expand search**.
+
+    ![Select SpaceGameWeb project-scoped build identity user.](media/access-token/add-build-service-user-project-permissions.png)
+
+3. Configure the desired permissions for that user.
+
+    ![Configure user permissions.](media/access-token/set-project-permissions.png)
+
 <a name="q-a"></a>
 ## FAQ
 
