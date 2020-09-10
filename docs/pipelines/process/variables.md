@@ -705,11 +705,13 @@ steps:
 
 If you want to make a variable available to future jobs, you must mark it as
 an output variable by using `isOutput=true`. Then you can map it into future jobs by using the `$[]` syntax and including the step name that set the variable. Multi-job output variables only work for jobs in the same stage. 
+
+To pass variables to jobs in different stages, use the [stage dependencies](expressions.md#dependencies) syntax. 
+
 When you create a multi-job output variable, you should assign the expression to a variable. In this YAML, `$[ dependencies.A.outputs['setvarStep.myOutputVar'] ]` is assigned to the variable `$(myVarFromJobA)`. 
 
 ```yaml
 jobs:
-
 # Set an output variable from job A
 - job: A
   pool:
@@ -731,6 +733,27 @@ jobs:
   steps:
   - script: echo $(myVarFromJobA)
     name: echovar
+```
+
+If you're setting a variable from one stage to another, use `stageDependencies`. 
+
+```yaml
+stages:
+- stage: A
+  jobs:
+  - job: A1
+    steps:
+     - bash: echo "##vso[task.setvariable variable=myStageOutputVar;isOutput=true]this is a stage output var"
+       name: printvar
+
+- stage: B
+  dependsOn: A
+  variables:
+    myVarfromStageA: $[ stageDependencies.A.A1.outputs['printvar.myStageOutputVar'] ]
+  jobs:
+  - job: B1
+    steps:
+    - script: echo $(myVarfromStageA)
 ```
 
 If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)
