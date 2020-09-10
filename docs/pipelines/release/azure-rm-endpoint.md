@@ -52,6 +52,7 @@ Errors that may occur when the system attempts to create the service connection 
 * [Failed to obtain an access token](#sessionexpired)
 * [A valid refresh token was not found](#sessionexpired)
 * [Failed to assign contributor role](#contributorrole)
+* [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
 
 <a name="privileges"></a>
 
@@ -151,6 +152,28 @@ To resolve these issues:
 This error typically occurs when you do not have **Write** permission for the selected Azure subscription when the system attempts to assign the **Contributor** role.
 
 To resolve this issue, ask the subscription administrator to [assign you the appropriate role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+
+<a name="missingSubscriptions"></a>
+
+### Some subscriptions are missing from the list of subscriptions
+
+To fix this issue you will need to modify the supported account types and who can use your application. To do so, follow the steps below:
+
+1. Sign in to the Azure portal.
+
+1. If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant in which you want to register an application.
+
+1. Search for and select **Azure Active Directory**.
+
+1. Under **Manage**, select **App registrations**.
+
+1. Select you application from the list of registered applications.
+
+1. Under **Essentials**, select **Supported account types**.
+
+1. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
+
+1. Select **Save**.
 
 ## What authentication mechanisms are supported? How do Managed Identities work?
 
