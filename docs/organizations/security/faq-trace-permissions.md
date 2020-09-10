@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-You use permission tracing to determine why a user's permissions aren't allowing them access. In this article, learn how a user or an administrator can investigate the inheritance of permissions.
+You use permission tracing to determine why a user's permissions aren't allowing them access. Learn how a user or an administrator can investigate the inheritance of permissions.
 
 For more information, see [About permissions](about-permissions.md).
 

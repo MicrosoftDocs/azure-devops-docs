@@ -14,7 +14,7 @@ ms.date: 08/22/2016
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-In this article, learn how to customize how the work item form gets presented to users via contributions that are made through an extension.
+Learn how to customize how the work item form gets presented to users via contributions that are made through an extension.
 
 * [Add a group to the main page](#addagroup)
 * [Add a page (tab)](#addapage) 
