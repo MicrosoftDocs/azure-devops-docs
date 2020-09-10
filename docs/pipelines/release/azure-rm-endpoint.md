@@ -69,33 +69,28 @@ This is a permission issue that may be due to the following causes:
 
 #### The user has only guest permission in the directory
 
-The best approach to resolve this issue, while granting only the minimum additional permissions
-to the user, is to increase the Guest user permissions as follows.
+The best approach to resolve this issue, while granting only the minimum additional permissions to the user, is to increase the Guest user permissions as follows.
 
-1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
-   The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner),
-   [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator--company-administrator), or
-   [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
+1. Sign in to the Azure portal using an administrator account. The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner), [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator--company-administrator), or [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
 
-1. Choose **Azure Active Directory** in the left navigation bar.
+1. Select **Azure Active Directory** in the left navigation bar.
 
 1. Ensure you are editing the appropriate directory corresponding to the user subscription. If not, select **Switch directory** and log in using the appropriate credentials if required.
 
-1. In the **MANAGE** section choose **Users**.
+1. In the **MANAGE** section select **Users**.
 
-1. Choose **User settings**.
+1. Select **User settings**.
 
-1. In the **External users** section, choose **Manage external collaboration settings**.
+1. In the **External users** section, select **Manage external collaboration settings**.
 
 1. The **External collaboration settings** blade opens.
 
 1. Change **Guest user permissions are limited** to **No**.
 
-Alternatively, if you are prepared to give the user additional (administrator-level) permissions,
-you can make the user a member of the **Global administrator** role as follows.
+Alternatively, if you are prepared to give the user additional permissions (administrator-level), you can make the user a member of the **Global administrator** role. To do so follow the steps below:
 
 > [!WARNING]
-> Users with this role have access to all administrative features in Azure Active Directory, as well as services that use Azure Active Directory identities such as Exchange Online, SharePoint Online, and Skype for Business Online. 
+> Users who are assigned to the Global administrator role can read and modify every administrative setting in your Azure AD organization. As a best practice, we recommend that you assign this role to fewer than five people in your organization. 
 
 1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
    The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner),
@@ -138,7 +133,7 @@ You can also create the service principal with an existing user who already has 
 
 <a name="sessionexpired"></a>
 
-### Failed to obtain an access token or A valid refresh token was not found
+### Failed to obtain an access token or a valid refresh token was not found
 
 These errors typically occur when your session has expired.
 
