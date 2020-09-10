@@ -273,7 +273,7 @@ You can also trigger the pipeline when you create or update a pull request in an
 
 ### Why can't I check out a repository from another project? It used to work.
 
-Azure Pipelines provides a **Limit job authorization scope to current project for non-release pipelines** setting, that when enabled, doesn't permit the pipeline to access resources outside of the project that contains the pipeline. This setting can be set at either the organization or project level. If this setting is enabled, you won't be able to check out a repository in another project unless you explicitly grant access. For more information, see [Build job authorization scope](../build/options.md#build-job-authorization-scope).
+Azure Pipelines provides a **Limit job authorization scope to current project for non-release pipelines** setting, that when enabled, doesn't permit the pipeline to access resources outside of the project that contains the pipeline. This setting can be set at either the organization or project level. If this setting is enabled, you won't be able to check out a repository in another project unless you explicitly grant access. For more information, see [Job authorization scope](../process/access-tokens.md#job-authorization-scope).
 
 ### Why am I am prompted to authorize resources the first time I try to check out a different repository?
 
