@@ -143,9 +143,6 @@ To set job authorization scope for a specific pipeline:
 - In the **Options** tab, select **Project collection** or **Current project** for **Build job authorization scope**.
 - Save the build pipeline.
 
->[!NOTE]
->If the scope if restricted to **project** in the organization or project level settings, then the pipeline-level job authorization scope is ignored. The project or organization level setting prevails.
-
 >[!IMPORTANT]
 >If the scopes are not restricted at either the organization level or project level, then you are allowing the pipeline authors to determine the access they need to repositories. If an adversary is able to create or edit a pipeline in one project, he or she will be able to gain access to any repository in your organization. This is why, it is recommended that you restrict the scope at the highest level (organization settings) in order to contain the attack to a single project.
 
@@ -166,6 +163,21 @@ Job authorization scope can be set for each pipeline. To set this scope:
 
 >[!NOTE]
 > If your pipeline is in a **public project**, then the job authorization scope is automatically restricted to **project** no matter what you configure in any setting. Jobs in a public project can access resources such as build artifacts or test results only within the project and not from other projects of the organization.
+
+:::moniker range=">azure-devops-2019"
+
+### Limit job authorization scope to referenced Azure DevOps repositories
+
+In addition to the job authorization scope settings described in the previous section, Azure Pipelines provides a **Limit job authorization scope to referenced Azure DevOps repositories** setting.
+
+Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by a `checkout` step in the pipeline job that uses that repository.
+
+For more information, see [Azure Repos Git repositories - Limit job authorization scope to referenced Azure DevOps repositories](../repos/azure-repos-git.md#limit-job-authorization-scope-to-referenced-azure-devops-repositories).
+
+> [!IMPORTANT]
+> **Limit job authorization scope to referenced Azure DevOps repositories** is enabled by default for new organizations and projects created after May 2020.
+
+:::moniker-end
 
 ## Build service account
 
