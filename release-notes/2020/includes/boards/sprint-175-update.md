@@ -11,7 +11,7 @@ Stakeholders now have the ability move work items across board columns on both t
 
 ### Link your work item to builds in another project
 
-You can now search for builds across projects when linking a working item to a Build, Found in build, or&nbsp;Integrated in build.
+You can now easily track your build dependencies across project just by linking your work item to a Build, Found in build, or Integrated in build.
 
 <img src="../../media/175-boards-1-0.png" width="600" alt="link-work-items" style="border:#F0F0F0 1px solid;">  
 
