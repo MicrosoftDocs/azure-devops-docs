@@ -601,7 +601,7 @@ variables:
   readonly: true
 ```
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 You can also include [variables from templates](process/templates.md#variable-reuse).
 
@@ -1642,7 +1642,8 @@ pool:
 ```
 
 ---
-::: moniker range="azure-devops"
+
+::: moniker range=">=azure-devops-2020"
 
 ## Environment
 
