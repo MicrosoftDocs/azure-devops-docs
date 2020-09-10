@@ -5,7 +5,7 @@ ms.technology: devops-release-notes
 ms.date: 09/10/2020
 ms.topic: include
 ---
-### Allow stakeholders to move work items across board columns - GA
+### Allow stakeholders to move work items across board columns
 
 Stakeholders now have the ability move work items across board columns on both the Kanban and Task boards.
 

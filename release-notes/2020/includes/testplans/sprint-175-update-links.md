@@ -6,4 +6,4 @@ ms.date: 09/10/2020
 ms.topic: include
 ---
     
-- [The Test and Feedback extension is now available on the Microsoft Edge store](#the-test-and-feedback-extension-is-now-available-on-the-microsoft-edge-store)
+- [The Test and Feedback extension is now available in the Microsoft Edge store](#the-test-and-feedback-extension-is-now-available-in-the-microsoft-edge-store)
