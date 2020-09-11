@@ -137,7 +137,7 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
     ```
 	trigger:
-	- master
+	- main
 	
 	pool:
 	  vmImage: 'ubuntu-latest'
