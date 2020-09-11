@@ -38,7 +38,7 @@ You can build your own tasks that use secure files by using inputs with type `se
 
 The Install Apple Provisioning Profile task is a simple example of a task using a secure file. See the [reference documentation](../tasks/utility/install-apple-provisioning-profile.md) and [source code](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InstallAppleProvisioningProfileV1).
 
-To handle secure files during build or release, you can refer to the common module available [here](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/Common/securefiles-common).
+To handle secure files during build or release, you can refer to the common module available [here](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/Common).
 
 ### My task can't access the secure files. What do I do?
 

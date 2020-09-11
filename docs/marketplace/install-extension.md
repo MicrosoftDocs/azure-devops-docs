@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 Add new features and capabilities to your organization by installing extensions.
 
-In this article, learn how to [install extensions](#install-extension) for Azure DevOps.
+Learn how to [install extensions](#install-extension) for Azure DevOps.
 
 To learn about building your own Azure DevOps extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
 

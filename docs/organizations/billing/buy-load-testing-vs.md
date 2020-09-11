@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [loadtest-deprecated-include](../../test/includes/loadtest-deprecated-include.md)]
 
-In this article, learn how to enable paid load testing in Azure DevOps.
+Learn how to enable paid load testing in Azure DevOps.
 
 Azure DevOps offers a cloud-based solution for [load testing your apps](../../test/load-test/index.md). You can create load tests by using Visual Studio Ultimate 2013, Visual Studio Enterprise 2015, or later versions. Then you can run these tests in Azure DevOps.
 

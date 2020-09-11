@@ -167,7 +167,7 @@ You can check out samples on our [.NET Samples Page](../get-started/client-libra
 
 ### Interactive authentication dialog doesn't appear when using the Azure DevOps OM in a Single Threaded Apartment (STA)
 
-The interactive authentication dialog doesn't appear in cases where your code is running from a [Single Threaded Apartment](https://docs.microsoft.com/windows/desktop/com/single-threaded-apartments) (STA).  This issue can commonly occur from [WPF](https://docs.microsoft.com/dotnet/framework/wpf/advanced/wpf-architecture) applications.  To work around this issue, you can change your initialization method to be async and request authentication as in the following example.
+The interactive authentication dialog doesn't appear in cases where your code is running from a [Single Threaded Apartment](https://docs.microsoft.com/windows/desktop/com/single-threaded-apartments) (STA).  This issue can commonly occur from [WPF](https://docs.microsoft.com/dotnet/desktop-wpf/) applications.  To work around this issue, you can change your initialization method to be async and request authentication as in the following example.
 
 ```csharp
 async void InitAzureDevOps()

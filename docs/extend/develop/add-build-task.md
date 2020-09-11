@@ -14,7 +14,7 @@ ms.date: 05/26/2020
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-In this article, learn how to install extensions to your organization for custom build or release tasks in Azure DevOps. 
+Learn how to install extensions to your organization for custom build or release tasks in Azure DevOps. 
 These tasks appear next to Microsoft-provided tasks in the **Add Step** wizard.
 
 ![Screenshot of Build task catalog for extensions in Azure DevOps.](media/build-task-ext-choose-task.png)
