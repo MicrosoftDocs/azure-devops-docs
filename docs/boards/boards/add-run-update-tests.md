@@ -40,7 +40,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 	![Open your Kanban board](media/quickstart/open-kanban-board-agile.png)  
 
-	To choose another team's board, open the selector and select a different team or choose the ![home-icon](/azure/devops/media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team's board, open the selector and select a different team or choose the :::image type="icon" source="/azure/devops/media/icons/home-icon.png" border="false"::: **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team's board](media/quickstart/select-kanban-team-board.png)  

@@ -190,7 +190,7 @@ A: To remove yourself from an organization, do the following steps:
 
 3. Confirm that you want to **Leave** the organization.
 
-    ![confirm-removal-from-organization.png](media/faq/confirm-removal-from-organization.png)
+    ![Screenshot showing confirmation for leaving the organization.](media/faq/confirm-removal-from-organization.png)
 
 <a name="group-based-licensing"></a>
 

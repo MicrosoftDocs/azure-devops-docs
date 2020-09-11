@@ -76,7 +76,7 @@ The following table indicates the Office clients that are supported for each Azu
       Azure DevOps Office Integration 2019 
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
    :::column span="":::
         
@@ -92,13 +92,13 @@ The following table indicates the Office clients that are supported for each Azu
       Visual Studio 2017  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -109,13 +109,13 @@ The following table indicates the Office clients that are supported for each Azu
       Visual Studio 2013  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
 :::row-end:::
 
