@@ -2,8 +2,6 @@
 title: Automating infrastructure deployments in the Cloud with Terraform and Azure Pipelines
 description: DevOps CI CD - Use Terraform to manage infrastructure deployment from Azure Pipelines and TFS
 ms.topic: tutorial
-ms.author: v-edkaim
-author: edkaim
 ms.date: 05/18/2020
 monikerRange: '>= tfs-2018'
 ---

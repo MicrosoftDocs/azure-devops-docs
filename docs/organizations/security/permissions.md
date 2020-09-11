@@ -3379,7 +3379,7 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
       Can create a SOAP-based web service subscription.
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="media/checkmark.png" border="false"::: 
+      ✔️ 
    :::column-end:::
 :::row-end:::
 ---
@@ -3394,7 +3394,7 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
       Can view subscription events defined for a project.
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="media/checkmark.png" border="false"::: 
+      ✔️ 
    :::column-end:::
 :::row-end:::
 ---
@@ -3409,7 +3409,7 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
       Can create alerts for other users or for a team.
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="media/checkmark.png" border="false"::: 
+      ✔️ 
    :::column-end:::
 :::row-end:::
 ---
@@ -3424,7 +3424,7 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
       Can unsubscribe from an event subscription.
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="media/checkmark.png" border="false"::: 
+      ✔️ 
    :::column-end:::
 :::row-end:::
 ---
