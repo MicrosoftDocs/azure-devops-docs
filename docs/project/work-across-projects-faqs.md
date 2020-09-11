@@ -23,25 +23,27 @@ In that event, several questions arise as to what tasks are supported when worki
 
 ### Q: How many projects should I create? 
 
+**A.** In general, we recommend that you create a single project. However, certain business needs may require creating more than one project. To learn more, see one of the following articles. 
 - [About projects and scaling your organization](../organizations/projects/about-projects.md)
 - [Plan your organizational structure](../user-guide/plan-your-azure-devops-org-structure.md)
 
 
 ### Q: Can I connect to more than one project at a time? 
 
-When you connect from a client or IDE, you can only connect to a single project at a time. 
+**A.** When you connect from a client or IDE, you can only connect to a single project at a time. 
 When you connect from a web browser, you can connect to different projects from different browser tabs. 
 
 - [Connect to team projects](../../organizations/projects/connect-to-projects.md)  
 
 
-### Q: How do I view all projects available to me?  
+### Q: How do I view all projects available to me? How do I switch to another project?  
 
+**A.** See [Switch project, repository, team](navigation/go-to-project-repo.md).
 
+## Search across projects 
 
-### Q: How do I switch to another project?  
+**A.** When you install the Code search extension, you can perform cross-project searches within your organization or a collection. To learn more, see [Search across your code base, work items, wiki, or artifacts](search/overview.md).
 
-- [Switch project, repository, team](navigation/go-to-project-repo.md)
 
 ## Azure Boards and work tracking
 
