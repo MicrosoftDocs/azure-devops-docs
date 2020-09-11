@@ -127,7 +127,7 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
    > [!NOTE]
    > Save the pipeline and queue the build. The above step will create an Azure Container Registry. This is required to push the IoT module images.
 
-   ![ARM](media/Iot-devops-using-azure-pipelines/arm.png)
+   ![Screenshot showing the Agent job.](media/Iot-devops-using-azure-pipelines/arm.png)
 
 8. Edit the pipeline, and select **+**, and search for the **Azure IoT Edge** task. Select **add**. This step will build the module images.  
 

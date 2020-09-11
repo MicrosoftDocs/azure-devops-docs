@@ -374,7 +374,7 @@ A:
 * Try again.
 * You might be a guest in Azure AD. Request that an organization administrator, who is a member of Azure AD,  do the mapping. Or, request that an admin of the Azure AD convert you to a member.
 
-   ![guest-azure-ad-cannot-invite.png](media/shared/guest-azure-ad-cannot-invite.png)
+   ![Screenshot showing an error when when resolving disconnected users.](media/shared/guest-azure-ad-cannot-invite.png)
 
 * If the error message includes a user in your domain, but you don't see them active in your directory, the user likely left your company. Go to the organization user settings to remove the user from your organization.
 
@@ -412,7 +412,7 @@ A: Yes, all pieces in the system are updated with the new ID when a user's ID ge
 
 A: You can still connect to Azure AD, but try to resolve the mapping issue after you've connected. If you still need help, [contact support](https://azure.microsoft.com/support/devops/).
 
-![connection-warning.png](media/shared/connection-warning.png)
+![Screenshot showing Azure AD connection warning.](media/shared/connection-warning.png)
 
 Select the bolded text to see which users are affected.
 

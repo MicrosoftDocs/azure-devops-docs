@@ -21,7 +21,7 @@ Follow a Wiki page and get notified by email whenever the page is edited, delete
 
 Get immediate notifications for rename and delete. For edit notifications, you get a 30-minute digest email with all edits that occurred within that period. This digest prevents the emails from spamming your inbox.
 
-   ![follow-wiki-page.png](media/wiki/follow-wiki-page.png)
+   ![Screenshot showing how to follow a page.](media/wiki/follow-wiki-page.png)
 
 When you create a page, you become a default follower of the page. You can unfollow the page in the following two ways:
 

@@ -80,7 +80,7 @@ You make [commits](commits.md) in your local Git repository to save your changes
 #### [Visual Studio](#tab/visual-studio/)
 1. In Team Explorer, select the **Home** button and choose **Branches**. 
 
-   ![Branches](media/gitquickstart-vs2017/branches.png)
+   ![Screenshot showing Branches in Team Explorer.](media/gitquickstart-vs2017/branches.png)
 
 1. Right-click the master branch and choose **New Local Branch From**.
 
@@ -94,7 +94,7 @@ You make [commits](commits.md) in your local Git repository to save your changes
 
 1. When you're satisfied with the changes, save them in Git using a commit. Open the **Changes** view from Team Explorer by selecting the **Home** button and choosing **Changes**.
 
-   ![Changes](media/gitquickstart-vs2017/changes.png)
+   ![Screenshot that shows opening the Changes view.](media/gitquickstart-vs2017/changes.png)
 
 1. Enter a message that describes the commit, and select **Commit All**.
 
