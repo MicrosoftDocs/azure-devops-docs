@@ -193,6 +193,8 @@
     href: ecosystems/xamarin.md
   - name: Xcode
     href: ecosystems/xcode.md
+  - name: GitHub Actions
+    href: ecosystems/github-actions.md
 - name: Build apps
   items:
   - name: Build multiple branches
