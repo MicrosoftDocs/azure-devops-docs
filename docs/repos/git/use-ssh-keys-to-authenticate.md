@@ -99,7 +99,7 @@ Associate the public key generated in the previous step with your user ID.
 1. Open your security settings by browsing to the web portal and selecting your avatar in the upper right of the
    user interface. Select  **SSH public keys** in the menu that appears.
    
-   ![Screenshot that shows the SSH public keys menu item selected in Azure DevOps Services.](media/use-ssh-authentication/select-ssh-public-keys.png)
+   ![Screenshot that shows the SSH public keys menu item and the user avatar selected in Azure DevOps Services.](media/use-ssh-authentication/select-ssh-public-keys.png)
 
 2. Select **+ New Key**.
 
