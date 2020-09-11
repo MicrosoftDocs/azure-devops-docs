@@ -54,6 +54,19 @@ steps:
 
 ### Delete all but one subdirectory
 
+This example will delete `some/one`, `some/three` and  `some/four` but will leave`some/two`.
+
+```yaml
+steps:
+- task: DeleteFiles@1
+  displayName: 'Remove unneeded files'
+  inputs:
+    contents: |
+      some/!(two)
+```
+
+### Delete using brace expansion
+
 This example will delete `some/one` and `some/four` but will leave `some/two` and `some/three`.
 
 ```yaml
@@ -62,7 +75,7 @@ steps:
   displayName: 'Remove unneeded files'
   inputs:
     contents: |
-      some/!({two,three})
+      some/{one,four}
 ```
 
 ## Open source

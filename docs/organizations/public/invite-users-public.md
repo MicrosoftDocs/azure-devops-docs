@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this article, learn how to enable public users to contribute to your project.
+Learn how to enable public users to contribute to your project.
 
 > [!IMPORTANT]
 > Before you add a member, review the notes provided in [private-to-public migration checklist](migration-checklist.md) as well as

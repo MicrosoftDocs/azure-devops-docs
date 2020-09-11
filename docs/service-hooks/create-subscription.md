@@ -1,6 +1,6 @@
 ---
 title: Subscribe to Azure DevOps events from another service
-description: Use service hooks to set up actions to take when specific events occur in Azure DevOps Services.
+description: Use service hooks to set up actions to take when specific events occur in Azure DevOps.
 toc: Hide
 ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
 ms.technology: devops-collab
@@ -33,7 +33,7 @@ For a complete set of supported consumer services and actions, see the [consumer
 ## Create a subscription for a project
 
 To create a subscription for an event, choose which consumer to use and the action you want to take. You will create an HTTP POST 
-request to the subscriptions URL for the Azure DevOps Services organization with the event, consumer and action to 
+request to the subscriptions URL for the Azure DevOps organization with the event, consumer and action to 
 take for the subscription.
 
 ### Before you begin

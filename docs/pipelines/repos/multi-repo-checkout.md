@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 08/27/2020
+ms.date: 09/09/2020
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -265,6 +265,30 @@ The following table shows which versions are checked out for each repository by 
 | `release` in `B` | Yes | latest from `main` | latest from `main` | latest from `main` | commit from `release` that triggered the pipeline |
 
 You can also trigger the pipeline when you create or update a pull request in any of the repositories. To do this, declare the repository resources in the YAML files as in the examples above, and configure a branch policy in the repository (Azure Repos only).
+
+## Repository details
+
+When you check out multiple repositories, some details about the `self` repository are available as [variables](../build/variables.md).
+When you use multi-repo triggers, some of those variables have information about the triggering repository instead.
+Details about all of the repositories consumed by the job are available as a [template context object](../process/templates.md#context) called `resources.repositories`.
+
+For example, to get the ref of a non-`self` repository, you could write a pipeline like this:
+
+```yaml
+resources:
+  repositories:
+  - repository: other
+    type: git
+    name: MyProject/OtherTools
+
+variables:
+  tools.ref: $[ resources.repositories['other'].ref ]
+
+steps:
+- checkout: self
+- checkout: other
+- bash: echo "Tools version: $TOOLS_REF"
+```
 
 ## FAQ
 
