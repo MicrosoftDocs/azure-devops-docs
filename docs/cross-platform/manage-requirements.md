@@ -18,14 +18,14 @@ ms.date: 09/08/2020
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 
-This article provides an overview of the tools and features Azure DevOps provides to manage requirements. It maps Agile requirements management tasks by project managers to the tools Azure DevOps supports. It introduces the essential concepts with which to become familiar. More detailed information is provided under the Related articles section.  
+Become familiar with the essential concepts to manage projects using Agile tools. Gain an overview of Azure DevOps tools and features to manage requirements. This article maps Agile requirements management tasks by project managers to the tools Azure DevOps supports. More detailed information is provided under Related articles at the end of this article.   
 
 
 > [!NOTE]
 > *Requirements management is the process of documenting, analyzing, tracing, prioritizing and agreeing on requirements and then controlling change and communicating to relevant stakeholders. It is a continuous process throughout a project. A requirement is a capability to which a project outcome (product or service) should conform.*
 
 
-Agile requirements management includes support for the following scenarios.   
+Agile requirements management support the following scenarios.   
 
 > [!div class="checklist"]  
 > - Define and track status of requirements
@@ -35,12 +35,12 @@ Agile requirements management includes support for the following scenarios.
 > - Perform milestone planning 
 > - Monitor and report on progress  
 
-Agile requirements management is also conducted within an Agile culture which requires support for the following principles and methods:  
+When managing requirements using Agile methods, you'll also perform within an Agile culture which support the following principles and methods:  
 
 > [!div class="checklist"]  
 > - Alignment within the organization
 > - Autonomous teams 
-> - Kanban 
+> - Kanban and lean management 
 > - Scrum   
 
 
@@ -54,16 +54,17 @@ You can use work items to track anything you need to track. Each work item repre
 
 Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field and comments made in the **Discussion** section. The following image shows a sample work item form for the User Story work item type.
 
+**Example work item form**
+
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of User Story work item form](media/manage-requirements/user-story-work-item-form.png) 
 
 In a nutshell, you use work items to support these tasks: 
-- You update the work item form to add information, update status, reassign to another project member, and to link work items, attach files, and add comments  
-- You can assign a work item to one and only one project member 
-- You assign work items to a timebox or sprint via the iteration path
-- You can use work item templates to quickly fill in work item fields
-- You can easily discuss work item specifics within the work item form, capturing a discussion thread which you can query on later
-- You can use ad hoc search or queries to find or list work items.  
+- Add information, update status, assign to team members, link work items, and attach files 
+- Assign work to a timebox or sprint  
+- Quickly fill in work item fields using work item templates
+- Contribute to a queryable discussion thread which is queryable  
+- Prioritize work and triage work items. 
 
 Other features that support end-to-end traceability are the **Development** and **Deployment** sections. These sections support the following tasks and insights:
 
@@ -77,46 +78,52 @@ Other features that support end-to-end traceability are the **Development** and 
  
 ### Work item types 
 
-The work item types used to capture requirements and code defects are illustrated in the following images based on the four system processes&mdash;Agile, Basic, Scrum, or Capability Maturity Model Integration (CMMI). Each team can determine how they want to track bugs.
+Different work item types support capturing different information and workflow processes. Each work item is based on a work item type. The following images illustrate the default work item types used to capture requirements and code defects. They are based on the four system processes&mdash;Agile, Basic, Scrum, or Capability Maturity Model Integration (CMMI). 
+
+Each Azure DevOps project is defined based on one of these customizable processes. Each team can determine how they want to track bugs.
+
+**Default work item types**
 
 [!INCLUDE [temp](../boards/includes/work-item-types.md)]
 
 [!INCLUDE [temp](../boards/includes/note-requirements-terms.md)] 
+
+
 ### Customize work item types  
 
-You can customize default work item types or add a custom work item type. Supported customizations include the following: 
-- Add custom fields 
-- Modify workflow states and add custom rules to support business workflow processes 
-- Customize backlogs and boards to support additional work item types 
-- Add custom portfolio backlogs, up to five in total 
+You can add custom work item types or customize the default work item types. Supported customizations include the following: 
+- Add custom fields and customize workflow states
+- Add custom rules to support business workflow processes 
+- Add custom portfolio backlogs and customize backlogs and boards  
 - Add custom controls to work item forms to gain enhanced functionality. 
 
 ### Add work items to product backlog or board 
 
-You can quickly add requirements to a product backlog or board by simply specifying a Title. Additional details can be added later. 
+Capturing requirements typically starts by adding a Title to a product backlog. You add details later. 
+
+**Capture requirements on the product backlog** 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of add product backlog item](../boards/backlogs/media/create-backlog/add-new-items-agile.png)   
+> ![Screenshot of add product backlog item](media/manage-requirements/add-new-items-agile.png)   
 
 
 ### Import and update requirements using Excel 
 
-Alternatively, you can import and update requirements you've defined through a .csv file or Excel spreadsheet. These tools support import of a hierarchy of 
+Alternatively, you can import and update requirements you've defined through a .csv file or Excel spreadsheet. These tools support a flat list or a hierarchy of work items. As shown in the following image, a hierarchy of Epics, Features, and User Stories are defined in Excel and then imported to Azure DevOps. 
 
+**Import requirements from Excel** 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Excel tree list of requirements to import.](../boards/backlogs/office/media/excel/import-safe-hierarchy-list.png)   
-
-
 ### Functional and non-functional requirements 
 
-Any item of work that you or a development team wants to track can be captured using work items. You can use the same type of work item to capture both functional and non-functional requirements. Non-functional requirements specify criteria associated with system operations rather than specific product or service functionality. 
+Any work that you or a development team need to track can be captured using work items. You can use the same type of work item to capture both functional and non-functional requirements. Non-functional requirements specify criteria associated with system operations rather than specific product or service functionality. 
 
 You can differentiate your requirements using tags, the Business Value field, or a custom field. 
  
 ### Maintain requirement specifications 
 
-Requirements often require detailed specifications to provide details that aren't readily captured within the work item. You can use Azure DevOps to maintain and version control your requirements under an Azure Repos repository. Or, you can use a project wiki to provide a central source and repository for specif 
+Requirements often require specifications to provide details that aren't readily captured within the work item. You can use Azure DevOps to maintain and version control your requirements under an Azure Repos repository. Or, you can use a project wiki to provide a central source and repository for specifications.  
 
 You can then link your specifications or attach them to your requirements. 
  
@@ -130,28 +137,34 @@ Once you have a working backlog, you'll want to get it in priority order. You'll
  
 Here the features backlog shows the sequence of features to ship. 
 
-:::image type="content" source="../boards/media/best-practices/feature-backlog-priority-order.png" alt-text="Screenshot of Features backlog, ordered by feature parent.":::
+**Prioritize feature backlog** 
+
+:::image type="content" source="media/manage-requirements/features-backlog-priority-order.png" alt-text="Screenshot of Features backlog, ordered by feature parent.":::
 
 
 ## Group and organize requirements
 
-The product backlog starts out as a flat list. However, oftentimes you want to group requirements that support specific features or business objectives. Azure Boards supports this by providing portfolio work item types, portfolio backlogs and boards, and a Mapping pane to quickly link requirements to a portfolio work item. 
-
-Adhoc tags added to work items are another way you can group requirements. 
+The product backlog starts out as a flat list. However, oftentimes you want to group requirements that support specific features or business objectives. Azure Boards supports this by providing portfolio work item types, portfolio backlogs and boards, and a Mapping tool to quickly link requirements to a portfolio work item. 
+Work item tags are another way you can group requirements. 
 
 
 ### Epics, features, and portfolio backlogs
 
 You group requirements under Features, and Features under Epics, using parent-child hierarchical links. This type of grouping is recommended for organizations with several teams that want to view rollups associated with multiple teams and to take advantage of all portfolio planning tools.
 
-Hierarchical grouping supports the following scenarios. 
-- Manage a portfolio of features that are supported by different development and management teams
-- Support rollup of estimates, work item counts, and more on product backlogs 
+By grouping work within a hierarchy, you can manage a portfolio of features that are supported by different development and management teams. Also, you can view a rollup of estimates, progress bars, and  more on product backlogs.
  
+
+**Group User Stories under Features using Mapping** 
+
+:::image type="content" source="(media/manage-requirements/mapping-user-stories-to-features.png" alt-text="Screenshot of Features backlog, ordered by feature parent.":::
+
 
 ### Use tags to group work items   
  
 With work item tags, team members can assign ad-hoc tags to work items. You can use these tags to filter backlogs and boards as well as query on work items.  For example, the following image illustrates a Kanban board filtered on the *web* keyword which displays cards with the *Web* tag. 
+
+**Filter backlogs and boards based on tags** 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Kanban board, Filter using keyword search.](../boards/boards/media/filter/filter-kb-text-web-services.png)
@@ -165,18 +178,23 @@ Each product and portfolio backlog is associated with a corresponding Kanban boa
 
 Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. As work completes in one stage, you update the status of an item by dragging it to a downstream stage. 
 
+**Example Kanban board** 
+
 ![Screenshot of Kanban board, Agile template, update status of work item](../boards/boards/media/ALM_CC_MoveCard.png) 
 
-Each team's board supports a number of additional configuration options.
+Each team can quickly configure their board and the cards to support their business needs.  
+ 
 
 ### Implement Scrum  
 
 Sprint backlogs and Taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. From your requirements backlog, you can drag-and-drop work items onto an iteration path, and then view that work in a separate **Sprint Backlog**. 
 
+**Example Sprint Backlog** 
+
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Boards>Sprints>Backlog](../boards/work-items/media/view-add/view-sprint-backlogs.png)    
 
-Azure Board tools that support Scrum practices include: 
+Supported Scrum practices include the following tasks: 
 
 - Assign requirements to a sprint  
 - Add tasks to requirements   
@@ -191,8 +209,12 @@ Azure Board tools that support Scrum practices include:
 
 By updating the status of work daily throughout a sprint, you can easily track sprint progress with the Sprint burndown chart, as shown in the following image. 
 
+**Example Sprint burndown chart** 
+
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Analytics Sprint burndown chart.](../boards/media/best-practices/sprint-burndown-chart.png) 
+
+
 
 ## Manage dependencies
 
@@ -210,9 +232,26 @@ Azure Boards doesn't provide a native view of the critical path. In part, as Agi
 
 ## Perform milestone planning
 
-To gain insight into what features can ship when, use the **Forecast** tool. This tool requires that you provide estimates to the Story Points, Effort, or Size field for each requirement. If you want to forecast on a simple count of work items, then simply assign the value of **1** to requirement estimates.
+Two tools that support planning what can ship when are team velocity and forecasting.
+
+### Team velocity
+
+One of the advantages of working in sprints is that you gain insight into team velocity. Velocity provides an indication of how much work a team can complete during a sprint based either on a count of completed work items or the sum of requirement estimates. 
+
+**Example team Velocity chart** 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of team velocity chart.](media/manage-requirements/team-velocity.png) 
+
+
+### Forecast requirements
+
+The **Forecast** tool requires that you provide estimates to the Story Points, Effort, or Size field for each requirement.  
 
 With estimates assigned to each requirement, you can set a team velocity. In the example below, we specify 12 for the velocity, equivalent to stating that on average the team can complete 12 Story Points per sprint. The Forecast tool shows which requirements and features the team can complete within the next six sprints. Using the Planning tool, you can quickly assign requirements to the forecasted sprints.  
+
+
+**Example Forecast of requirements backlog** 
 
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
@@ -224,7 +263,7 @@ If you want to integrate your requirements planning with Microsoft Project tools
 
 #### Milestone planning
 
-Milestone markers aren't used in Azure Boards work tracking, except for Delivery Plans. [Delivery Plans](plans/review-team-plans.md) provide a calendar view and allow you to define a milestone marker. 
+Milestone markers aren't used in Azure Boards work tracking, except for Delivery Plans. [Delivery Plans](#delivery-plans) provide a calendar view and allow you to define a milestone marker. 
 However, you can use one or more of the following options to mark a work item as a milestone: 
 - Simply prepend or append the word **Milestone** in the title of your work item
 - Add a work item tag labeled **Milestone**   
@@ -266,6 +305,8 @@ One quick and visual way to monitor progress is from the Features backlog. By ad
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Features backlog showing progress bars column option.](../boards/media/best-practices/feature-backlog-progress.png)  
  
+<a id="delivery-plans" />
+
 ### Delivery plans and multiple team deliverables  
 
 To review features delivered across several teams, configure a delivery plan. Delivery plans provide an interactive board to review a calendar schedule of stories or features several teams plan to deliver.  
@@ -331,10 +372,17 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Triage work items](../boards/queries/triage-work-items.md) 
 
 ### Milestone planning 
+- [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)
 - [Forecast your product backlog](../boards/sprints/forecast.md)  
+
 ### Monitor and report on progress
 - [Display rollup progress or totals](../boards/backlogs/display-rollup.md)
 - [Review team Delivery Plans](../boards/plans/review-team-plans.md)
+
+### Maintain specifications and share information 
+
+- [About Wikis, READMEs, and Markdown](../project/wiki/about-readme-wiki.md)
+- [Share information within work items and social tools](../boards/queries/share-plans.md)
 
 
 ### Notifications
