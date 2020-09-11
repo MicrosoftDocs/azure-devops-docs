@@ -57,11 +57,11 @@ If you have both Azure Pipelines and GitHub Actions workflows, you may want to t
         branches: [ master ]
     ```
 
-1. Select **Azure Pipelines Action** in the Marketplace.  
+1. Select the **Azure Pipelines Action** in the Marketplace.  
 
     :::image type="content" source="media/marketplace-pipelines.png" alt-text="GitHub Actions Marketplace":::
 
-1. Copy the snippet and add it to your GitHub Actions workflow file. Customize the `azure-devops-project-url` and  `azure-pipeline-name` values. Your complete workflow should look like this. 
+1. Copy this workflow and replace the contents of your GitHub Actions workflow file. Customize the `azure-devops-project-url` and  `azure-pipeline-name` values. Your complete workflow should look like this. 
 
     ```yaml
     name: CI
@@ -94,7 +94,7 @@ If you have both Azure Pipelines and GitHub Actions workflows, you may want to t
 If you're not going to continue to use the GitHub Action, delete the workflow with the following steps:
 
 1. Open _.github/workflows_ in your GitHub repository.
-1. Open the workflow you created and **Delete** ().
+1. Open the workflow you created and **Delete**.
 
     :::image type="content" source="media/github-delete.png" alt-text="Delete the GitHub workflow":::
 
