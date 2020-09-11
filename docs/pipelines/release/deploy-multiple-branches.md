@@ -42,7 +42,7 @@ You'll need:
     > [!div class="mx-imgBorder"]  
     > ![Select Artifact filter](media/deploy-multiple-branches/artifact-filter1.png)
 
-1. Add another stage and name it **Prod**. This stage will be triggered when a build artifact is published from the master branch. Repeat steps 4-5 and replace **Build branch** to master.
+1. Add another stage and name it **Prod**. This stage will be triggered when a build artifact is published from the main branch. Repeat steps 4-5 and replace **Build branch** to main.
 
     > [!div class="mx-imgBorder"]  
     > ![Select Artifact filter](media/deploy-multiple-branches/artifact-filter2.png)

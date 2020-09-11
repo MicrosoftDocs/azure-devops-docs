@@ -184,7 +184,7 @@ To deploy to an Azure Web App container, add the following snippet at the end of
 
 ```yaml
 trigger:
-- master
+- main
 
 variables:
   # Container registry service connection established during pipeline creation

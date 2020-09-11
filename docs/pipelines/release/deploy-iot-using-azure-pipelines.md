@@ -106,7 +106,7 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
 
 3. The default option for build pipelines involves using YAML to define the process. For this lab, select **use the classic editor**.
 
-4. The first thing you’ll need to do is to configure the source repository. This build will use the **master** branch of the **IoT Edge module** repo. Leave the defaults and select **Continue**.
+4. The first thing you’ll need to do is to configure the source repository. This build will use the **main** branch of the **IoT Edge module** repo. Leave the defaults and select **Continue**.
 
 5. Select **Empty job**.
 
