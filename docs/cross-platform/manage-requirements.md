@@ -18,7 +18,7 @@ ms.date: 09/08/2020
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 
-Become familiar with the essential concepts to manage projects using Agile tools. Gain an overview of Azure DevOps tools and features to manage requirements. This article maps Agile requirements management tasks by project managers to the tools Azure DevOps supports. More detailed information is provided under Related articles at the end of this article.   
+Become familiar with the essential concepts to manage projects using Agile tools. Gain an overview of Azure DevOps tools and features to manage requirements. This article maps Agile requirements management tasks by project managers to the tools Azure DevOps supports. More detailed information is provided under [Related articles](#related-articles).   
 
 
 > [!NOTE]
@@ -29,10 +29,11 @@ Agile requirements management support the following scenarios.
 
 > [!div class="checklist"]  
 > - Define and track status of requirements
-> - Analyze requirements
+> - Analyze and prioritize requirements
 > - Assign requirements to timeboxes
-> - Manage dependencies 
-> - Perform milestone planning 
+> - Group and organize requirements
+> Manage dependencies 
+> - Determine what can ship and when 
 > - Monitor and report on progress  
 
 When managing requirements using Agile methods, you'll also perform within an Agile culture which support the following principles and methods:  
@@ -47,6 +48,8 @@ When managing requirements using Agile methods, you'll also perform within an Ag
 ## Capture requirements  
 
 You capture requirements using work items, where each work item is based on a work item type. You have a choice of work item types to use based on the process you select, or you can add a custom work item type. 
+
+[!INCLUDE [temp](../boards/includes/note-requirements-terms.md)] 
 
 ### Work item fields and form
 
@@ -86,8 +89,6 @@ Each Azure DevOps project is defined based on one of these customizable processe
 
 [!INCLUDE [temp](../boards/includes/work-item-types.md)]
 
-[!INCLUDE [temp](../boards/includes/note-requirements-terms.md)] 
-
 
 ### Customize work item types  
 
@@ -115,6 +116,8 @@ Alternatively, you can import and update requirements you've defined through a .
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Excel tree list of requirements to import.](../boards/backlogs/office/media/excel/import-safe-hierarchy-list.png)   
+
+
 ### Functional and non-functional requirements 
 
 Any work that you or a development team need to track can be captured using work items. You can use the same type of work item to capture both functional and non-functional requirements. Non-functional requirements specify criteria associated with system operations rather than specific product or service functionality. 
@@ -261,7 +264,7 @@ With estimates assigned to each requirement, you can set a team velocity. In the
 If you want to integrate your requirements planning with Microsoft Project tools, you may do so via a Marketplace extension.  
 
 
-#### Milestone planning
+#### Milestone markers
 
 Milestone markers aren't used in Azure Boards work tracking, except for Delivery Plans. [Delivery Plans](#delivery-plans) provide a calendar view and allow you to define a milestone marker. 
 However, you can use one or more of the following options to mark a work item as a milestone: 
@@ -276,6 +279,8 @@ However, you can use one or more of the following options to mark a work item as
 ## Assign requirements to timeboxes 
 
 You can quickly assign work items to a sprint through drag-and-drop from the product backlog to the sprint listed within the Planning pane. 
+
+**Example assign requirements to sprints** 
 
 > [!div class="mx-imgBorder"]
 > ![Boards>Backlogs>Drag-drop items onto sprint](../boards/sprints/media/define-sprints/drag-drop-backlog-items-to-sprint.png)
@@ -293,6 +298,8 @@ The three main tools you'll want to use to review progress and deliverables are:
  
 Your Features board is another place to review progress and ensure the continuous flow of deliverables. The following image illustrates a customized Features board. In progress columns have been added such as *Need more info*, *Spec Complete*, *In Progress*, and *Customer Rollout*. These provide a more natural set of states as Features get proposed, researched, designed, developed, and then deployed to production. 
 
+**Example of Features board with customized columns** 
+
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
 > [!div class="mx-imgBorder"]  
@@ -301,6 +308,8 @@ Your Features board is another place to review progress and ensure the continuou
 ### Rollup 
 
 One quick and visual way to monitor progress is from the Features backlog. By adding the rollup progress bar column, you can see what percentage of work items are completed for each feature, as shown in the following image.  
+
+**Example of Requirements backlog showing progress rollup** 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Features backlog showing progress bars column option.](../boards/media/best-practices/feature-backlog-progress.png)  
@@ -311,6 +320,8 @@ One quick and visual way to monitor progress is from the Features backlog. By ad
 
 To review features delivered across several teams, configure a delivery plan. Delivery plans provide an interactive board to review a calendar schedule of stories or features several teams plan to deliver.  
 
+**Example of multi-team Delivery Plan** 
+
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Delivery plan, annotated.](../boards/plans/media/plans_view2.png) 
  
@@ -319,13 +330,17 @@ To review features delivered across several teams, configure a delivery plan. De
 
 Azure DevOps provides a robust alert system, allowing project members to set alerts for themselves, a team, or a project.   
 
-As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, as described in this article, or team or project alerts.
+As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, team, project, or organization alerts.
  
+
+<a id="related-articles" />
+
+
 ## Related articles 
 
 To learn more about any of the concepts introduced in this article, refer to the following articles. 
  
-### Agile and Agile culture
+#### Agile and Agile culture
 
 - [What is Agile?](/azure/devops/learn/agile/what-is-agile)
 - [Agile culture](../boards/plans/agile-culture.md) 
@@ -333,7 +348,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Scaling Agile - Practices that scale](../boards/plans/practices-that-scale.md) 
 
 
-### Work items, work item types, and process models 
+#### Work items, work item types, and process models 
 
 - [About work items](../boards/work-items/about-work-items.md) 
 - [Add work item tags to categorize and filter lists and boards](../boards/queries/add-tags-to-work-items.md)
@@ -341,9 +356,10 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md) 
 - [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [About Area and Iteration Paths (sprints)](../organizations/settings/about-areas-iterations.md) 
+- [Work tracking, process, and project limits](/azure/devops/organizations/settings/work/object-limits)
 
 
-### Backlogs and boards
+#### Backlogs and boards
 
 - [Create your backlog](../boards/backlogs/create-your-backlog.md)  
 - [Organize your backlog](../boards/backlogs/organize-backlog.md)  
@@ -353,7 +369,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Tasks supported by Backlogs, Boards, Taskboards, and Plans](../boards/backlogs/backlogs-boards-plans.md)
 - [Configure and customize Azure Boards](../boards/configure-customize.md)
 
-### Kanban 
+#### Kanban 
 
 - [Start using your Kanban board](../boards/boards/kanban-quickstart.md)
 - [Add columns to your Kanban board](../boards/boards/add-columns.md) 
@@ -361,31 +377,35 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Filter your Kanban board](../boards/boards/filter-kanban-board.md)
 - [Kanban best practices](../boards/boards/best-practices-kanban.md)
 
-### Scrum
+#### Scrum
 
 - [Assign backlog items to a sprint](../boards/sprints/assign-work-sprint.md) 
 - [Configure and monitor sprint burndown](../report/dashboards/configure-sprint-burndown.md) 
 - [Scrum and best practices](../boards/sprints/best-practices-scrum.md)  
 
-### Dependency management 
+#### Dependency management 
+
 - [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md) 
 - [Triage work items](../boards/queries/triage-work-items.md) 
 
-### Milestone planning 
+#### Milestone planning 
+
 - [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)
 - [Forecast your product backlog](../boards/sprints/forecast.md)  
 
-### Monitor and report on progress
+#### Monitor and report on progress
+
 - [Display rollup progress or totals](../boards/backlogs/display-rollup.md)
 - [Review team Delivery Plans](../boards/plans/review-team-plans.md)
 
-### Maintain specifications and share information 
+#### Maintain specifications and share information 
 
 - [About Wikis, READMEs, and Markdown](../project/wiki/about-readme-wiki.md)
 - [Share information within work items and social tools](../boards/queries/share-plans.md)
 
 
-### Notifications
+#### Notifications
+
 - [Default and supported notifications](../notifications/oob-built-in-notifications.md) 
 - [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
 - [Manage notifications for a team or group](../notifications/manage-team-group-notifications.md)
