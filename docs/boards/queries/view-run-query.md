@@ -205,7 +205,7 @@ You can perform most tasks for viewing and running queries from each of the quer
 > |Filter the list of queries |✔️ |✔️ |
 > |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
 > |Unfavorite a query: Click :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
-> |Add a new query: Click :::image type="icon" source="/azure/devops/media/icons/add-new-query.png" border="false" |✔️ |✔️ | 
+> |Add a new query: Click :::image type="icon" source="/azure/devops/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
 
 
 For details on adding new queries, see [Create managed queries with the query editor](using-queries.md). 
