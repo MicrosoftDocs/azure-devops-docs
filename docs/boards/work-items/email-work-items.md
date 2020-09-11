@@ -46,13 +46,13 @@ Here's a list of the most common ways in which teams share information and plans
       [Email summary list with links to work item(s)](#email-summary-lists)
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ??
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ??
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ??
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -63,7 +63,7 @@ Here's a list of the most common ways in which teams share information and plans
         
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ??
    :::column-end:::
    :::column span="":::
         
@@ -74,10 +74,10 @@ Here's a list of the most common ways in which teams share information and plans
       [Email link to a work item query](#copy-url)
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ??
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ??
    :::column-end:::
    :::column span="":::
         
@@ -88,10 +88,10 @@ Here's a list of the most common ways in which teams share information and plans
       [Email query results list](#email-summary-lists)
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ??
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ??
    :::column-end:::
    :::column span="":::
         
@@ -103,7 +103,7 @@ Here's a list of the most common ways in which teams share information and plans
       [Export query result list as CSV](#export)
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ??
    :::column-end:::
    :::column span="":::
         

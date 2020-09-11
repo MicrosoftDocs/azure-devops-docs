@@ -18,7 +18,7 @@ ms.date: 07/09/2020
 
 As a member of an Azure Boards project, you can use the majority of features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
-In the tables provided in this article, a :::image type="icon" source="/azure/devops/media/icons/checkmark.png" border="false"::: checkmark indicates that the corresponding access level or security group has access to a feature by default. 
+In the tables provided in this article, a ?? indicates that the corresponding access level or security group has access to a feature by default. 
 
 > [!NOTE]   
 > Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. 
