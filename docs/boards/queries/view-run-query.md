@@ -49,7 +49,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 
 3. Choose a folder within a breadcrumb to open a query folder.
 	> [!div class="mx-imgBorder"]  
-	> ![queries breadcrumb example](media/example-queries/queries-breadcrumb-example.png)
+	> ![Screenshot of queries breadcrumb example.](media/example-queries/queries-breadcrumb-example.png)
 
 ::: moniker-end
 
@@ -82,17 +82,17 @@ Open **Queries>All**. Under the **My Queries** section are two fully customizabl
 - Favorited queries (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![queries selector](media/example-queries/queries-selector.png)  
+	> ![Screenshot of favorited queries breadcrumb selector.](media/example-queries/queries-selector.png)  
 	Or, you can select from any of your favorited items by choosing the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon and choose **Favorites**.  
 
-	![queries selector](media/example-queries/favorites-selector.png)  
+	![[Screenshot of your favorites listing queries.](media/example-queries/favorites-selector.png)  
 
 ### How do I quickly navigate to queries within the same query folder?  
 
 When viewing a query, you can use the queries breadcrumb selector (:::image type="icon" source="../../media/icons/breadcrumb-selector.png" border="false"::: the breadcrumb icon changes to :::image type="icon" source="../../media/icons/context-menu-selector.png" border="false"::: a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
 
 > [!div class="mx-imgBorder"]  
-> ![queries breadcrumb example](media/view-run-queries/folder-selector.png)  
+> ![Screenshot of queries breadcrumb selector.](media/view-run-queries/folder-selector.png)  
 
 ### Can I run several queries at the same time? 
  
@@ -198,14 +198,14 @@ You can perform most tasks for viewing and running queries from each of the quer
 > [!div class="mx-tdCol2BreakAll"]
 > |Task |Favorites |All | 
 > |-------------|----------|---------| 
-> |View all favorited queries, yours or a team you belong to | ?? |  | 
-> |View all your queries or shared queries for the current project |  | ?? | 
-> |Run a query, open the context menu for a query  |?? |?? |
-> |Expand or collapse container folders or query folders |?? |?? |
-> |Filter the list of queries |?? |?? |
-> |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |?? | 
-> |Unfavorite a query: Click ![Un-favorite](../media/icons/icon-favorited.png) |?? |?? | 
-> |Add a new query: Click ![plus sign](../media/icons/add-new-query.png) |?? |?? | 
+> |View all favorited queries, yours or a team you belong to | ✔️ |  | 
+> |View all your queries or shared queries for the current project |  | ✔️ | 
+> |Run a query, open the context menu for a query  |✔️ |✔️ |
+> |Expand or collapse container folders or query folders |✔️ |✔️ |
+> |Filter the list of queries |✔️ |✔️ |
+> |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
+> |Unfavorite a query: Click ![Un-favorite](../media/icons/icon-favorited.png) |✔️ |✔️ | 
+> |Add a new query: Click ![plus sign](../media/icons/add-new-query.png) |✔️ |✔️ | 
 
 
 For details on adding new queries, see [Create managed queries with the query editor](using-queries.md). 

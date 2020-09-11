@@ -46,13 +46,13 @@ Here's a list of the most common ways in which teams share information and plans
       [Email summary list with links to work item(s)](#email-summary-lists)
    :::column-end:::
    :::column span="":::
-      ??
+      ✔️
    :::column-end:::
    :::column span="":::
-      ??
+      ✔️
    :::column-end:::
    :::column span="":::
-      ??
+      ✔️
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -63,7 +63,7 @@ Here's a list of the most common ways in which teams share information and plans
         
    :::column-end:::
    :::column span="":::
-      ??
+      ✔️
    :::column-end:::
    :::column span="":::
         
@@ -74,10 +74,10 @@ Here's a list of the most common ways in which teams share information and plans
       [Email link to a work item query](#copy-url)
    :::column-end:::
    :::column span="":::
-      ??
+      ✔️
    :::column-end:::
    :::column span="":::
-      ??
+      ✔️
    :::column-end:::
    :::column span="":::
         
@@ -88,10 +88,10 @@ Here's a list of the most common ways in which teams share information and plans
       [Email query results list](#email-summary-lists)
    :::column-end:::
    :::column span="":::
-      ??
+      ✔️
    :::column-end:::
    :::column span="":::
-      ??
+      ✔️
    :::column-end:::
    :::column span="":::
         
@@ -103,7 +103,7 @@ Here's a list of the most common ways in which teams share information and plans
       [Export query result list as CSV](#export)
    :::column-end:::
    :::column span="":::
-      ??
+      ✔️
    :::column-end:::
    :::column span="":::
         
@@ -142,17 +142,17 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 ::: moniker range=">= tfs-2018"  
 <a id="team-services-email" />  
-<strong>From the web portal</strong>, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the <strong>Email work item</strong> option. The first 200 items in the list will appear in a formatted table. 
+**From the web portal**, open the work item, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list will appear in a formatted table. 
 
 > [!div class="mx-imgBorder"]  
-> ![Email work items](media/email/email-work-item.png)   
+> ![Screenshot of work item form, context menu, Email work items option.](media/email/email-work-item.png)   
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"  
 
 **From the web portal**, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list will appear in a formatted table. 
 
-![Email work item](../queries/media/share-plans-email-work-item-ts.png)    
+![Screenshot of work item form, context menu, Email work items option, TFS 2017 version.](../queries/media/share-plans-email-work-item-ts.png)    
 
 ::: moniker-end  
 
@@ -162,7 +162,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 **From the web portal**, open the work item and choose the :::image type="icon" source="../media/icons/mail_icon.png" border="false"::: mail icon. The first 200 items in the list will appear in a formatted table.   
 
-![Email work item from on-prem TFS](../queries/media/share-plans-email-work-item-tfs.png)  
+![Screenshot of work item form, context menu, Email work items option, TFS 2015 and earlier versions.](../queries/media/share-plans-email-work-item-tfs.png)  
 
 ::: moniker-end  
 
@@ -214,25 +214,25 @@ Depending on the option and client you choose, summary lists may or may not incl
 ::: moniker range=">= tfs-2018"
 
 > [!div class="mx-imgBorder"]  
-> ![Email work items](media/email/bulk-email-backlog-items.png)   
+> ![Screenshot of backlog, context menu, Email... options.](media/email/bulk-email-backlog-items.png)   
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"
-![Email selected items from a list](../queries/media/share-plans-email-selected-work-items-tfs-15.png) 
+![Screenshot of backlog, context menu, Email... options, TFS 2017 version.](../queries/media/share-plans-email-selected-work-items-tfs-15.png) 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2018"
 If you want to mail a list of all items in the backlog or query, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email** option. 
 
 > [!div class="mx-imgBorder"]  
-> ![Email backlog or query results list](media/email/email-backlog.png)  
+> ![Screenshot of backlog, context menu, Email... option, TFS 2018 and later  versions.](media/email/email-backlog.png)  
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"
 If you want to mail a list of all items in the backlog or query, simply choose the :::image type="icon" source="../media/icons/mail_icon.png" border="false"::: mail icon. 
 
-![Email full backlog or query results list](../queries/media/share-plans-email-summary-list-web-portal.png)  
+![Screenshot of backlog, email icon, TFS 2017 version.](../queries/media/share-plans-email-summary-list-web-portal.png)  
 
 ::: moniker-end  
 
@@ -240,11 +240,11 @@ If you want to mail a list of all items in the backlog or query, simply choose t
 
 **To email items from the web portal for TFS 2015**: Open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.
 
-![Email selected items from a list](../queries/media/share-plans-email-summary-list-ts.png)  
+![Screenshot of backlog, context menu, Email selected items from a list option.](../queries/media/share-plans-email-summary-list-ts.png)  
 
 If you want to mail a list of all items in the backlog or query, simply choose the ![mail icon](../media/icons/mail_icon.png) mail icon. 
 
-![Email full backlog or query results list](../queries/media/share-plans-email-summary-list-web-portal.png)  
+![Screenshot of backlog, email icon, TFS 2015 and earlier versions.]](../queries/media/share-plans-email-summary-list-web-portal.png)  
 
 ::: moniker-end  
 
