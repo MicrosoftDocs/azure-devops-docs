@@ -75,6 +75,8 @@ Learn how to invite external users to your organization. If you access Azure Dev
 
 The external user gets added to the organization to which they were invited and has immediate access.
 
+The guest users can add other guest users to the organization after being granted the Guest Inviter role in AAD.
+
 ## Related articles
 
 * [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
