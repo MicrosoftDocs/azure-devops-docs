@@ -1,11 +1,11 @@
 ---
 title: Trigger a pipeline run from a GitHub action
 description: Start a pipeline run from within a GitHub action
-ms.author: juliakm
+ms.author: jukullam
 ms.custom: github-actions-azure
 ms.date: 09/11/2020
 monikerRange: azure-devops
-author: jukullam
+author: juliakm
 ms.topic: quickstart
 ---
 
@@ -37,7 +37,7 @@ If you have both Azure Pipelines and GitHub Actions workflows, you may want to t
 1. Save by selecting **Add secret**.
 
 
-# Add a GitHub workflow
+## Add a GitHub workflow
 
 1. Open your GitHub repository and select **Actions**.
 
