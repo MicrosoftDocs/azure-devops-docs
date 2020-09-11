@@ -34,6 +34,13 @@ resources:
   containers: [ container ]
   packages: [ package ]
 ```
+### Variables
+When a resource triggers a pipeline the following variables are set:
+
+```yaml
+resources.triggeringAlias
+resources.triggeringCategory
+```
 ---
 
 ## Resources: `pipelines`
