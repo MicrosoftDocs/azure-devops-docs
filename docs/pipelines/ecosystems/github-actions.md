@@ -41,13 +41,13 @@ If you have both Azure Pipelines and GitHub Actions workflows, you may want to t
 
 1. Open your GitHub repository and select **Actions**.
 
-  :::image type="content" source="media/github-actions-header.png" alt-text="Select Actions in the GitHub navigation"::: 
+    :::image type="content" source="media/github-actions-header.png" alt-text="Select Actions in the GitHub navigation"::: 
 
 1. Select _Set up your workflow yourself_. 
 
 1. Delete everything after `branches: [ master ]`. Your remaining workflow should look like this. 
 
-    ```yml
+    ```yaml
     name: CI
 
     on:
@@ -98,7 +98,7 @@ If you're not going to continue to use the GitHub Action, delete the workflow wi
 
     :::image type="content" source="media/github-delete.png" alt-text="Delete the GitHub workflow":::
 
-## Next Steps
+## Next steps
 
 Learn how to connect to the Azure environment and deploy to Azure with GitHub. 
 > [!div class="nextstepaction"]
