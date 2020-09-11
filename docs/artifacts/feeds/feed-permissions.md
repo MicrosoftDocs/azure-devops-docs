@@ -40,7 +40,7 @@ Azure Artifacts settings allow you to specify who can create and administer feed
 > [!div class="mx-imgBorder"] 
 > ![Azure Artifacts settings button](media/artifacts-settings-button.png)
 
-By default, everyone in the same organization have the permissions to create feeds. a user who creates a feed is both an owner and an administrator of that feed.
+By default, everyone in the same organization have the permissions to create feeds. A user who creates a feed is both an owner and an administrator of that feed.
 
 > [!div class="mx-imgBorder"] 
 > ![Azure Artifacts settings](media/artifacts-settings.png)
@@ -142,7 +142,7 @@ To use packages from a feed in Azure Pipelines, the appropriate build identity m
 
 `[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo))
 
-you can also use the `Allow project-scoped builds` feature if you would like to automatically set up permissions for your project-scoped build identity.
+You can also use the `Allow project-scoped builds` feature if you would like to automatically set up permissions for your project-scoped build identity.
 
 1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access the **Feed settings**.
 
