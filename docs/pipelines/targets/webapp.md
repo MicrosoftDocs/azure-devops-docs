@@ -420,11 +420,11 @@ To do this in YAML, you can use one of these techniques:
 * Isolate the deployment steps into a separate job, and add a condition to that job.
 * Add a condition to the step.
 
-The following example shows how to use step conditions to deploy only builds that originate from the master branch:
+The following example shows how to use step conditions to deploy only builds that originate from the main branch:
 
 ```yaml
 - task: AzureWebApp@1
-  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
   inputs:
     azureSubscription: '<Azure service connection>'
     appName: '<name of web app>'
