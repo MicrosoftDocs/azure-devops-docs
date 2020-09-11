@@ -98,7 +98,7 @@ If your workspace isn't under Git source control, you can easily create a Git re
 
 ## Create a build pipeline
 
-You can use Azure Pipelines to build your projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
+You can use Azure Pipelines to build your projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&preserve-view=true&tabs=yaml) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
 
 1. Navigate to your team project on Azure DevOps.
 
@@ -127,7 +127,7 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
    > [!NOTE]
    > Save the pipeline and queue the build. The above step will create an Azure Container Registry. This is required to push the IoT module images.
 
-   ![ARM](media/Iot-devops-using-azure-pipelines/arm.png)
+   ![Azure deployment task](media/Iot-devops-using-azure-pipelines/arm.png)
 
 8. Edit the pipeline, and select **+**, and search for the **Azure IoT Edge** task. Select **add**. This step will build the module images.  
 
