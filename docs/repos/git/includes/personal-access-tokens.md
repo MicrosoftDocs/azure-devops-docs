@@ -15,7 +15,7 @@ ms.topic: include
   
 2. From your home page, open your user settings, and then select **Personal access tokens**.
 
-   ![My profile Team Services](~/repos/git/media/my-profile-team-services-preview.png)
+   ![Select Personal Access Tokens](~/repos/git/media/select-personal-access-tokens.jpg)
 
 3. And then select **+ New Token**.
 
