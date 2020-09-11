@@ -16,10 +16,7 @@ By default, [jobs](phases.md) run on the host machine where the [agent](../agent
 is installed.
 This is convenient and typically well-suited for projects that are just beginning to adopt Azure Pipelines.
 Over time, you may find that you want more control over the context where your tasks run.
-
-
-> [!NOTE] 
-> The Classic editor doesn't support container jobs at this time.
+YAML pipelines offer container jobs for this level of control.
 
 [!INCLUDE [container-vs-host](./includes/container-vs-host.md)]
 
