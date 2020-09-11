@@ -90,6 +90,17 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
+    <td rowspan="8"><a href="2020/sprint-175-update.md" data-raw-source="[10 September 2020](2020/sprint-175-update.md)">10 September 2020</a></td>
+    <td>Allow stakeholders to move work items across board columns</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Link your work item to builds in another project</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Editing description (help text) on system fields</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>General availability of scale-set agents</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Run this job next</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Template expressions allowed in YAML resources block</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Control over automated task updates from Marketplace</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>The Test and Feedback extension is now available in the Microsoft Edge store</td><td>Test Plans</td><td>Future</td></tr>
+    <tr>
     <td rowspan="13"><a href="2020/sprint-174-update.md" data-raw-source="[24 August 2020](2020/sprint-174-update.md)">24 August 2020</a></td>
     <td>System work item types on backlogs and boards</td><td>Boards</td><td>Future</td>
     </tr>
