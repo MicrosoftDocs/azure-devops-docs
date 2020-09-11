@@ -142,7 +142,7 @@ To deploy to an Azure Function App container, add the following snippet at the e
 
 ```yaml
 trigger:
-- master
+- main
 
 variables:
   # Container registry service connection established during pipeline creation
