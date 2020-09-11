@@ -102,7 +102,7 @@ Each form contains a number of controls as shown below and described in [Work it
 
 ::: moniker range=">= tfs-2018"
 
-![Work item form to track features or user stories](../backlogs/media/add-work-item-vsts-user-story-form.png)
+![Screenshot of Work item form to track features or user stories.](../backlogs/media/add-work-item-vsts-user-story-form.png)
 
 ::: moniker-end
 
@@ -114,18 +114,18 @@ The new form and its corresponding features are available from the web portal. T
 
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
 
-![Work item form to track features or user stories](../backlogs/media/add-work-item-vsts-user-story-form.png)
+![Screenshot of Work item form to track features or user stories, new web form.](../backlogs/media/add-work-item-vsts-user-story-form.png)
 
 **Old web form** 
 
-![Work item form to track features or user stories](../backlogs/media/work-item-form-to-track-user-stories.png)
+![Screenshot of Work item form to track features or user stories, old web form.](../backlogs/media/work-item-form-to-track-user-stories.png)
 
 ---
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
-![Work item form to track features or user stories](../backlogs/media/work-item-form-to-track-user-stories.png)
+![Screenshot of Work item form to track features or user stories, TFS 2015 and earlier versions.](../backlogs/media/work-item-form-to-track-user-stories.png)
 ::: moniker-end
 
 
