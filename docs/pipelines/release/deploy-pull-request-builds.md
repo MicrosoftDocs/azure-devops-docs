@@ -37,7 +37,7 @@ This article shows how you can set up a pull request based release for code host
 
 3. Configure one or more target branches. Target branches are the branches for which the pull request is raised. When a pull request is created for one of these branches, it triggers a build, and when the build succeeds, it triggers the PR release. You can optionally specify build tags as well.
 
-   ![Pull request trigger section highlighting the target branch filter](media/deploy-pull-request-builds/pull-request-trigger-target-branch.png)
+   ![Pull request trigger section highlighting target branch](media/deploy-pull-request-builds/pull-request-trigger-target-branch.png)
 
 4. To deploy a PR release in a specific stage you need to explicitly opt-in that stage. An information bar below the **Target Branch Filters** shows the stages that have opted in for PR deployment.
 
@@ -82,7 +82,7 @@ You can use branch policies to enforce successful deployment as a required crite
 
 1. You can also deploy pull release builds if your code is hosted in GitHub.com and a build is generated using Azure Pipelines. After linking the intended build artifact in the release definition, perform steps 1 through 4 in the previous [Create the pull request trigger](#create-the-pull-request-trigger) section, and then configure the status checks in GitHub as described in the following section.
 
-   ![Pull Request trigger section highlighting trigger toggle button](media/deploy-pull-request-builds/artifact-pr-trigger-github.png)
+   ![Pull Request trigger enabled button](media/deploy-pull-request-builds/artifact-pr-trigger-github.png)
 
 ### Configure status checks in GitHub
 
