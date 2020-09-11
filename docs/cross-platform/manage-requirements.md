@@ -157,7 +157,7 @@ By grouping work within a hierarchy, you can manage a portfolio of features that
 
 **Group User Stories under Features using Mapping** 
 
-:::image type="content" source="(media/manage-requirements/mapping-user-stories-to-features.png" alt-text="Screenshot of Features backlog, ordered by feature parent.":::
+:::image type="content" source="media/manage-requirements/mapping-user-stories-to-features.png" alt-text="Screenshot of mapping User Stories under Features using Mapping tool.":::
 
 
 ### Use tags to group work items   
@@ -223,7 +223,7 @@ In Microsoft Project, you manage tasks that depend on the completion of other ta
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
 > [!div class="mx-imgBorder"]  
-> [![Screenshot of Visualize work item relationships.](../boards/media/best-practices/visualize-successor-links-cross-project-wide.png)](media/best-practices/visualize-successor-links-cross-project-wide.png#lightbox)
+> [![Screenshot of Visualize work item relationships.](../boards/media/best-practices/visualize-successor-links-cross-project-wide.png)](../boards/media/best-practices/visualize-successor-links-cross-project-wide.png#lightbox)
 
 ### Minimum Viable Product versus Critical Path Management  
 
@@ -256,7 +256,7 @@ With estimates assigned to each requirement, you can set a team velocity. In the
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
 > [!div class="mx-imgBorder"]  
-> [![Screenshot of Forecast of Requirements backlog, ordered by feature parent.](../boards/media/best-practices/forecast-product-backlog-ordered-parent.png)](media/best-practices/forecast-product-backlog-ordered-parent.png#lightbox)
+> [![Screenshot of Forecast of Requirements backlog, ordered by feature parent.](../boards/media/best-practices/forecast-product-backlog-ordered-parent.png)]../boards/media/best-practices/forecast-product-backlog-ordered-parent.png#lightbox)
 
 If you want to integrate your requirements planning with Microsoft Project tools, you may do so via a Marketplace extension.  
 
@@ -296,7 +296,7 @@ Your Features board is another place to review progress and ensure the continuou
 [!INCLUDE [temp](../includes/lightbox-image.md)] 
 
 > [!div class="mx-imgBorder"]  
-> [![Screenshot of Features board with customized columns.](../boards/media/best-practices/features-board-customized.png)](media/best-practices/features-board-customized.png#lightbox)
+> [![Screenshot of Features board with customized columns.](../boards/media/best-practices/features-board-customized.png)](../boards/media/best-practices/features-board-customized.png#lightbox)
 
 ### Rollup 
 
@@ -336,7 +336,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 ### Work items, work item types, and process models 
 
 - [About work items](../boards/work-items/about-work-items.md) 
-- [Add work item tags to categorize and filter lists and boards](queries/add-tags-to-work-items.md)
+- [Add work item tags to categorize and filter lists and boards](../boards/queries/add-tags-to-work-items.md)
 - [Choose a process](../boards/work-items/guidance/choose-process.md)
 - [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md) 
 - [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
