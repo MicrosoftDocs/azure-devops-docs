@@ -138,10 +138,12 @@ You can quickly email a summary of one or more work items. Summaries include the
 > [!IMPORTANT]     
 > If you use the built-in email feature, you can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
 
+<a id="team-services-email" />  
+
 #### [Browser](#tab/browser/)
 
 ::: moniker range=">= tfs-2018"  
-<a id="team-services-email" />  
+
 **From the web portal**, open the work item, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list will appear in a formatted table. 
 
 > [!div class="mx-imgBorder"]  

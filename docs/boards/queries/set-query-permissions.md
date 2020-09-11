@@ -130,7 +130,7 @@ If you're not a member of the project administrators group, [get added](../../or
 
 1. To set permissions for the folder, choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon for the folder you just added and choose **Security**.
 
-   ![Permissions dialog for a query folder, TFS 2018 and earlier versions.](media/set-permissions-query-folder-security.png)
+   ![Screenshot of context menu for a query folder, TFS 2018 and earlier versions.](media/set-permissions-query-folder-security.png)
 
 2. Change the permissions so that the team member or group can contribute and manage permissions for the folder.  
 
