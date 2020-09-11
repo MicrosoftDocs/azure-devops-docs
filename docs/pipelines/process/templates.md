@@ -531,21 +531,10 @@ You can use parameters to influence how a template is expanded.
 The `parameters` object works like the [`variables` object](expressions.md#variables)
 in an expression. Only predefined variables can be used in template expressions.
 
-::: moniker range="> azure-devops-2020"
-
 > [!NOTE]
 > Expressions are only expanded for `stages`, `jobs`, `steps`, and `containers` (inside `resources`).
 > You cannot, for example, use an expression inside `trigger` or a resource like `repositories`.
-
-::: moniker-end
-
-::: moniker range="<= azure-devops-2020"
-
-> [!NOTE]
-> Expressions are only expanded for `stages`, `jobs`, and `steps`.
-> You cannot, for example, use an expression inside a `resource` or `trigger`.
-
-::: moniker-end
+> Additionally, on Azure DevOps 2020 RTW, you can't use template expressions inside `containers`.
 
 For example, you define a template:
 
