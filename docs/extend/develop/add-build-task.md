@@ -7,14 +7,14 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 05/26/2020
+ms.date: 09/10/2020
 ---
 
 # Add a build or release task
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-In this article, learn how to install extensions to your organization for custom build or release tasks in Azure DevOps. 
+Learn how to install extensions to your organization for custom build or release tasks in Azure DevOps. 
 These tasks appear next to Microsoft-provided tasks in the **Add Step** wizard.
 
 ![Screenshot of Build task catalog for extensions in Azure DevOps.](media/build-task-ext-choose-task.png)
@@ -531,7 +531,7 @@ stages:
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@2
+          - task: TfxInstaller@3
             inputs:
               version: "v0.7.x"
           - task: Npm@1
@@ -558,7 +558,7 @@ stages:
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@2
+          - task: TfxInstaller@3
             inputs:
               version: "v0.7.x"
           - task: Npm@1
@@ -605,7 +605,7 @@ stages:
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@2
+          - task: TfxInstaller@3
             inputs:
               version: "v0.7.x"
           - task: DownloadBuildArtifacts@0

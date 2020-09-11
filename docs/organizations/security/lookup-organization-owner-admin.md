@@ -15,7 +15,7 @@ ms.date: 07/27/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-An administrator or organization Owner can give you access to select features or functions, or change your permissions. In this article, learn how to look up administrators or organization Owners.
+An administrator or organization Owner can give you access to select features or functions, or change your permissions. Learn how to look up administrators or organization Owners.
 
 For an overview of built-in security groups and default permission assignments, see [Default permissions and access](permissions-access.md).
 

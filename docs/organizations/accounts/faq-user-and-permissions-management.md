@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
-In this article, learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. FAQs are grouped by the following subjects:
+Learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. FAQs are grouped by the following subjects:
 - [General permissions](#general-permissions)
 - [Visual Studio subscriptions](#visual-studio-subscriptions)
 - [User access](#user-access)

@@ -15,7 +15,7 @@ ms.date: 11/07/2019
 
 [!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]  
 
-In this article, learn how to configure team tools and manage teams in Azure DevOps.
+Learn how to configure team tools and manage teams in Azure DevOps.
 
 [!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
 

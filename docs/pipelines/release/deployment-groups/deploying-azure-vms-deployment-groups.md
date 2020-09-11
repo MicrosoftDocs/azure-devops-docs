@@ -2,8 +2,6 @@
 title: Deploying to Azure VMs using deployment groups in Azure Pipelines
 description: DevOps CI CD - Deploy to Azure VMs using deployment groups in Azure Pipelines
 ms.topic: tutorial
-ms.author: v-edkaim
-author: edkaim
 ms.date: 05/26/2020
 monikerRange: '>= tfs-2018'
 ---
