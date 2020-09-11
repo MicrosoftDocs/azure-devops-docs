@@ -2,8 +2,6 @@
 title: Using secrets from Azure Key Vault in Azure Pipelines
 description: DevOps CI CD - Use secrets from Azure Key Vault in Azure Pipelines
 ms.topic: tutorial
-ms.author: v-edkaim
-author: edkaim
 ms.date: 05/22/2020
 monikerRange: '>= azure-devops-2019'
 ---
