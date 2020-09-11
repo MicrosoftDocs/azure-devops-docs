@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-In this article, learn about controlling access to your organization via Azure Active Directory (Azure AD).
+Learn about controlling access to your organization via Azure Active Directory (Azure AD).
 If your organization was created with a Microsoft account, connect your organization to your [Azure Azure AD](/azure/active-directory/fundamentals/active-directory-whatis).
 Sign in to Azure DevOps Services with the same username and password that you use with your Microsoft services.
 Enforce policies for accessing your team's critical resources and key assets.
