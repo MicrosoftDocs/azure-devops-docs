@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-In this article, learn how to manage your security policies and the policies that determine which applications can integrate with services and resources in your organization.
+Learn how to manage your security policies and the policies that determine which applications can integrate with services and resources in your organization.
 
 ## Application connection policies
 

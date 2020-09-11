@@ -16,7 +16,7 @@ ms.date: 07/20/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]  
 
-In this article, learn how to delete a project from Azure DevOps. Deleting a project helps simplify navigating to projects that are only in use.
+Learn how to delete a project from Azure DevOps. Deleting a project helps simplify navigating to projects that are only in use.
 
 > [!Caution]
 > Projects are permanently deleted if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).

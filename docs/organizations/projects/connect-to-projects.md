@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-In this article, learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
+Learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
   
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
