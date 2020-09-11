@@ -22,10 +22,10 @@ Become familiar with the essential concepts to manage projects using Agile tools
 
 
 > [!NOTE]
-> *Requirements management is the process of documenting, analyzing, tracing, prioritizing and agreeing on requirements and then controlling change and communicating to relevant stakeholders. It is a continuous process throughout a project. A requirement is a capability to which a project outcome (product or service) should conform.*
+> *Requirements management is a continuous process throughout a project lifecycle&mdash;encompassing the processes of documenting, analyzing, prioritizing, tracking, and collaborating with stakeholders to agree on work to be performed. A single requirement corresponds to a capability which a project outcome&mdash;product, service, architecture, performance&mdash;should conform.*
 
 
-Agile requirements management support the following scenarios.   
+Agile requirements management supports the following scenarios.   
 
 > [!div class="checklist"]  
 > - Define and track status of requirements
@@ -36,7 +36,7 @@ Agile requirements management support the following scenarios.
 > - Determine what can ship and when 
 > - Monitor and report on progress  
 
-When managing requirements using Agile methods, you'll also perform within an Agile culture which support the following principles and methods:  
+When managing requirements using Agile methods, you'll also perform within an Agile culture which supports the following principles and methods:  
 
 > [!div class="checklist"]  
 > - Alignment within the organization
@@ -47,13 +47,13 @@ When managing requirements using Agile methods, you'll also perform within an Ag
 
 ## Capture requirements  
 
-You capture requirements using work items, where each work item is based on a work item type. You have a choice of work item types to use based on the process you select, or you can add a custom work item type. 
+You capture requirements using work items, where each work item is based on a work item type. You have a choice of work item types to use based on the process you select. Or, you can add a custom work item type. 
 
 [!INCLUDE [temp](../boards/includes/note-requirements-terms.md)] 
 
 ### Work item fields and form
 
-You can use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned an identifier which is unique within an Azure DevOps organization. 
+You can use work items to track anything you need to track. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned a unique identifier. 
 
 Each work item supports tracking data contained in work item fields. Also, it captures changes as updates are made within the **History** field and comments made in the **Discussion** section. The following image shows a sample work item form for the User Story work item type.
 
@@ -66,7 +66,7 @@ In a nutshell, you use work items to support these tasks:
 - Add information, update status, assign to team members, link work items, and attach files 
 - Assign work to a timebox or sprint  
 - Quickly fill in work item fields using work item templates
-- Contribute to a queryable discussion thread which is queryable  
+- Contribute to a queryable discussion thread  
 - Prioritize work and triage work items. 
 
 Other features that support end-to-end traceability are the **Development** and **Deployment** sections. These sections support the following tasks and insights:
@@ -92,8 +92,8 @@ Each Azure DevOps project is defined based on one of these customizable processe
 
 ### Customize work item types  
 
-You can add custom work item types or customize the default work item types. Supported customizations include the following: 
-- Add custom fields and customize workflow states
+You can add custom work item types or customize the default work item types. Supported customizations include the following additions:  
+- Add custom fields and workflow states
 - Add custom rules to support business workflow processes 
 - Add custom portfolio backlogs and customize backlogs and boards  
 - Add custom controls to work item forms to gain enhanced functionality. 
@@ -133,7 +133,7 @@ You can then link your specifications or attach them to your requirements.
  
 ## Analyze, prioritize, and refine requirements
 
-Once you have a working backlog, you'll want to get it in priority order. You'll want to review and refine your requirements and make sure the acceptance criteria is well defined. These tasks are supported through the following Azure Board tools: 
+Once you have a working backlog, you'll want to get it in priority order. You'll want to review and refine your requirements and make sure the acceptance criteria is well-defined. These tasks are supported through the following Azure Board tools: 
 
 - **Product backlog**: Supports drag-and-drop of work items to get them in priority order. Supports bulk-edit of work items to change assignments or update fields. 
 - **Query Results, Triage mode**: Supports review of a list of work items and their forms so that you can quickly update work items and add details. 
@@ -147,7 +147,8 @@ Here the features backlog shows the sequence of features to ship.
 
 ## Group and organize requirements
 
-The product backlog starts out as a flat list. However, oftentimes you want to group requirements that support specific features or business objectives. Azure Boards supports this by providing portfolio work item types, portfolio backlogs and boards, and a Mapping tool to quickly link requirements to a portfolio work item. 
+The product backlog starts out as a flat list. However, often you want to group requirements that support specific features or business objectives. Azure Boards supports this by providing portfolio work item types, portfolio backlogs and boards, and a Mapping tool to quickly link requirements to a portfolio work item.  
+
 Work item tags are another way you can group requirements. 
 
 
@@ -173,6 +174,7 @@ With work item tags, team members can assign ad-hoc tags to work items. You can 
 > ![Screenshot of Kanban board, Filter using keyword search.](../boards/boards/media/filter/filter-kb-text-web-services.png)
 
 ## Implement Kanban or Scrum Agile methods
+
 Two of the major Agile methods are Kanban and Scrum. Azure Boards supports both methods. Or, teams can adapt them to use a combination of methods such as Scrumban. 
 
 ### Implement Kanban  
@@ -230,7 +232,7 @@ In Microsoft Project, you manage tasks that depend on the completion of other ta
 
 ### Minimum Viable Product versus Critical Path Management  
 
-Azure Boards doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks. For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
+Azure Boards doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories, and tasks.  
 
 
 ## Perform milestone planning
@@ -296,7 +298,7 @@ The three main tools you'll want to use to review progress and deliverables are:
 
 ### Features Kanban board 
  
-Your Features board is another place to review progress and ensure the continuous flow of deliverables. The following image illustrates a customized Features board. In progress columns have been added such as *Need more info*, *Spec Complete*, *In Progress*, and *Customer Rollout*. These provide a more natural set of states as Features get proposed, researched, designed, developed, and then deployed to production. 
+Your Features board is another place to review progress and ensure the continuous flow of deliverables. The following image illustrates a customized Features board. In progress columns have been added such as *Need more info*, *Spec Complete*, *In Progress*, and *Customer Rollout*. These column labels provide a more natural set of states as Features get proposed, researched, designed, developed, and then deployed to production. 
 
 **Example of Features board with customized columns** 
 
@@ -391,7 +393,9 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Milestone planning 
 
 - [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)
-- [Forecast your product backlog](../boards/sprints/forecast.md)  
+- [Forecast your product backlog](../boards/sprints/forecast.md) 
+- [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects)
+- [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42) 
 
 #### Monitor and report on progress
 
