@@ -36,7 +36,6 @@ From your profile page, you can change your information and  account preferences
 
 #### [Preview page](#tab/preview-page) 
 
-<<<<<<< HEAD
 1. From your home page, select the user settings icon :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::, and then select **Profile**.
 
    ![Open Azure DevOps profile](../../media/open-user-settings-profile-preview.png)
