@@ -198,14 +198,14 @@ You can perform most tasks for viewing and running queries from each of the quer
 > [!div class="mx-tdCol2BreakAll"]
 > |Task |Favorites |All | 
 > |-------------|----------|---------| 
-> |View all favorited queries, yours or a team you belong to | ![Checkmark](../media/icons/checkmark.png) |  | 
-> |View all your queries or shared queries for the current project |  | ![Checkmark](../media/icons/checkmark.png) | 
-> |Run a query, open the context menu for a query  |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) |
-> |Expand or collapse container folders or query folders |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) |
-> |Filter the list of queries |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) |
-> |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |![Checkmark](../media/icons/checkmark.png) | 
-> |Unfavorite a query: Click ![Un-favorite](../media/icons/icon-favorited.png) |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) | 
-> |Add a new query: Click ![plus sign](../media/icons/add-new-query.png) |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) | 
+> |View all favorited queries, yours or a team you belong to | ?? |  | 
+> |View all your queries or shared queries for the current project |  | ?? | 
+> |Run a query, open the context menu for a query  |?? |?? |
+> |Expand or collapse container folders or query folders |?? |?? |
+> |Filter the list of queries |?? |?? |
+> |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |?? | 
+> |Unfavorite a query: Click ![Un-favorite](../media/icons/icon-favorited.png) |?? |?? | 
+> |Add a new query: Click ![plus sign](../media/icons/add-new-query.png) |?? |?? | 
 
 
 For details on adding new queries, see [Create managed queries with the query editor](using-queries.md). 

@@ -39,7 +39,7 @@ To learn more about access levels, see [About access levels](../../organizations
 
 ## Default query permissions
 
-A :::image type="icon" source="/azure/devops/media/icons/checkmark.png" border="false"::: checkmark in the following table indicates that the corresponding access level or security group has access to a feature by default. 
+A ?? in the following table indicates that the corresponding access level or security group has access to a feature by default. 
 
 [!INCLUDE [temp](../../organizations/security/includes/boards-queries.md)]
 
