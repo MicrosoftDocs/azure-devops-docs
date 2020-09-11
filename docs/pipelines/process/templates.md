@@ -535,12 +535,14 @@ in an expression. Only predefined variables can be used in template expressions.
 > [!NOTE]
 > Expressions are only expanded for `stages`, `jobs`, `steps`, and `containers` (inside `resources`).
 > You cannot, for example, use an expression inside `trigger` or a resource like `repositories`.
+
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 > [!NOTE]
 > Expressions are only expanded for `stages`, `jobs`, and `steps`.
 > You cannot, for example, use an expression inside a `resource` or `trigger`.
+
 ::: moniker-end
 
 For example, you define a template:
