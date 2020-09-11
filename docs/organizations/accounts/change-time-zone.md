@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this article, learn how to change the time zone for your organization or your user profile.
+Learn how to change the time zone for your organization or your user profile.
 
 The following time zones are available in Azure DevOps:
 
