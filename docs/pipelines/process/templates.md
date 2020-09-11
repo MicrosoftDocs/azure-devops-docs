@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 08/03/2020
+ms.date: 09/11/2020
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -531,9 +531,17 @@ You can use parameters to influence how a template is expanded.
 The `parameters` object works like the [`variables` object](expressions.md#variables)
 in an expression. Only predefined variables can be used in template expressions.
 
+::: moniker range="> azure-devops-2020"
+> [!NOTE]
+> Expressions are only expanded for `stages`, `jobs`, `steps`, and `containers` (inside `resources`).
+> You cannot, for example, use an expression inside `trigger` or a resource like `repositories`.
+::: moniker-end
+
+::: moniker range="<= azure-devops-2020"
 > [!NOTE]
 > Expressions are only expanded for `stages`, `jobs`, and `steps`.
 > You cannot, for example, use an expression inside a `resource` or `trigger`.
+::: moniker-end
 
 For example, you define a template:
 
