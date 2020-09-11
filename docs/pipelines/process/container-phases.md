@@ -16,10 +16,7 @@ By default, [jobs](phases.md) run on the host machine where the [agent](../agent
 is installed.
 This is convenient and typically well-suited for projects that are just beginning to adopt Azure Pipelines.
 Over time, you may find that you want more control over the context where your tasks run.
-
-
-> [!NOTE] 
-> The Classic editor doesn't support container jobs at this time.
+YAML pipelines offer container jobs for this level of control.
 
 [!INCLUDE [container-vs-host](./includes/container-vs-host.md)]
 
@@ -71,8 +68,8 @@ See [this post](https://blogs.technet.microsoft.com/nanoserver/2016/05/04/node-j
 
 ### Hosted agents
 
-Only `windows-2019` and `ubuntu-*` pools support running containers.
-The Hosted macOS pool does not support running containers.
+Only `windows-2019` and `ubuntu-*` images support running containers.
+The macOS image does not support running containers.
 
 ## Single job
 
@@ -92,9 +89,6 @@ This tells the system to fetch the `ubuntu` image tagged `18.04` from
 [Docker Hub](https://hub.docker.com) and then start the container. When the
 `printenv` command runs, it will happen inside the `ubuntu:18.04` container.
 
-> [!Note]
-> You must specify one of the hosted Ubuntu images in order to run Linux containers. Other pools won't work.
-
 A Windows example:
 
 ```yaml
@@ -109,8 +103,7 @@ steps:
 
 > [!Note]
 > Windows requires that the kernel version of the host and container match.
-> Since this example uses the hosted Windows Container pool, which is running a windows-2019
-> build, we will use the `2019` tag for the container.
+> Since this example uses the Windows 2019 image, we will use the `2019` tag for the container.
 
 ## Multiple jobs
 
