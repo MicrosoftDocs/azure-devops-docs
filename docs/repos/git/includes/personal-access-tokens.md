@@ -13,11 +13,11 @@ ms.topic: include
 
 1. Sign in to your organization in Azure DevOps (```https://dev.azure.com/{yourorganization}```)
   
-2. From your home page, open your user settings, and then select **Profile**.
+2. From your home page, open your user settings, and then select **Personal access tokens**.
 
-   ![My profile Team Services](~/repos/git/media/my-profile-team-services-preview.png)
+   ![Select Personal Access Tokens](~/repos/git/media/select-personal-access-tokens.jpg)
 
-3. Under Security, select **Personal access tokens**, and then select **+ New Token**.
+3. And then select **+ New Token**.
 
    ![Select New Token to create](~/repos/git/media/select-new-token.png)
 
