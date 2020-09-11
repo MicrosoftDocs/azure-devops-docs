@@ -24,7 +24,7 @@ DevOps practices are allowing businesses to stay ahead of the competition by del
 
 Security needs to shift from an afterthought to being evaluated at every step of the process. Securing applications is a continuous process that encompasses secure infrastructure, designing an architecture with layered security, continuous security validation, and monitoring for attacks.
 
-![Security](media/security-validation-cicd-pipeline/security.png)
+![Diagram showing the security evaluation loop.](media/security-validation-cicd-pipeline/security.png)
 
 Continuous security validation should be added at each step from development through production to help ensure the application is always secure. The goal of this approach is to switch the conversation with the security team from approving each release to approving the CI/CD process and having the ability to monitor and audit the process at any time. When building greenfield applications, the diagram below highlights the key validation points in the CI/CD pipeline. Depending on your platform and where your application is at in its lifecycle, you may need to consider implementing the tools gradually. Especially if your product is mature and you haven't previously run any security validation against your site or application.  
 
