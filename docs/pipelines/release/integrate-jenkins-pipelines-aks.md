@@ -47,7 +47,7 @@ You will:
 
 * An Azure subscription. You can get one free from [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* The [Azure Command-Line Interface (CLI)](/cli/azure/index?view=azure-cli-latest).
+* The [Azure Command-Line Interface (CLI)](/cli/azure/index?view=azure-cli-latest&preserve-view=true).
 
 * You need a Spring Boot app.  You can fork the sample app found [here](https://github.com/spring-guides/gs-spring-boot-docker.git).
 
