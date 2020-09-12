@@ -461,7 +461,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
       b7e84409-6553-448a-bbb2-af228e07cbeb
    :::column-end:::
    :::column span="2":::
-      Notes
+      Manages library permissions to create, use, view, and administer library items. These permissions are assigned through [Library asset security roles](/azure/devops/organizations/security/about-security-roles#library-roles).   
    :::column-end:::
 :::row-end:::
 ---
@@ -472,8 +472,8 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       f6a4de49-dbe2-4704-86dc-f8ec1a294436
    :::column-end:::
-   :::column span="":::
-      Notes
+   :::column span="2":::
+      [Manages task group permissions](/azure/devops/organizations/security/permissions#task-group) to edit and delete task groups, and administer task group permissions.   entries 
    :::column-end:::
 :::row-end:::
 ---
@@ -484,8 +484,8 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       62a7ad6b-8b8d-426b-ba10-76a7090e94d5
    :::column-end:::
-   :::column span="":::
-      Notes
+   :::column span="2":::
+      Manages permissions to read and write pipeline cache entries 
    :::column-end:::
 :::row-end:::
 ---
@@ -496,8 +496,8 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       bed337f8-e5f3-4fb9-80da-81e17d06e7a8
    :::column-end:::
-   :::column span="":::
-      Notes
+   :::column span="2":::
+      [Manages permissions for Delivery Plans (object-level)](/azure/devops/organizations/security/permissions#plan-permissions") to view, edit, delete, and manage delivery plans. 
    :::column-end:::
 :::row-end:::
 ---
@@ -508,8 +508,8 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       2dab47f9-bd70-49ed-9bd5-8eb051e59c02
    :::column-end:::
-   :::column span="":::
-      Notes
+   :::column span="2":::
+      [Manages organization or collection-level permissions for processes](/azure/devops/organizations/security/permissions#administer-process-permissions) to create, edit, delete, and view processes and manage process permissions. 
    :::column-end:::
 :::row-end:::
 ---
@@ -520,11 +520,12 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       52d39943-cb85-4d7f-8fa8-c6baac873819
    :::column-end:::
-   :::column span="":::
-      [Project-level permissions](/azure/devops/organizations/security/permissions#project-level-permissions)
+   :::column span="2":::
+      [Manages Project-level permissions](/azure/devops/organizations/security/permissions#project-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
+<!---
 :::row:::
    :::column span="":::
       ProjectServerAdministration
@@ -532,11 +533,12 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       TBD
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       TBD
    :::column-end:::
 :::row-end:::
 ---
+-->
 :::row:::
    :::column span="":::
       Publisher (Publish extensions)
@@ -544,7 +546,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       TBD
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       TBD
    :::column-end:::
 :::row-end:::
@@ -556,8 +558,8 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       c788c23e-1b46-4162-8f5e-d7585343b5de
    :::column-end:::
-   :::column span="":::
-      Notes
+   :::column span="2":::
+      [Manages release (object-level-permissions](/azure/devops/organizations/security/permissions#release-management).
    :::column-end:::
 :::row-end:::
 ---
@@ -568,8 +570,13 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       7c7d32f7-0e86-4cd6-892e-b35dbba870bd
    :::column-end:::
-   :::column span="":::
-      Notes
+   :::column span="2":::
+      ViewTaskEditor                           View task editor          
+      ViewCDWorkflowEditor                     View CD work flow editor  
+      ExportReleaseDefinition                  Export release definition    
+      ViewLegacyUI                             View legacy UI             
+      DeploymentSummaryAcrossProjects          Deployment summary across projects   
+      ViewExternalArtifactCommitsAndWorkItems  View external artifact commits and work items
    :::column-end:::
 :::row-end:::
 ---
@@ -580,7 +587,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       1f4179b3-6bac-4d01-b421-71ea09171400
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       Notes
    :::column-end:::
 :::row-end:::
@@ -592,8 +599,8 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       49b48001-ca20-4adc-8111-5b60c903a50c
    :::column-end:::
-   :::column span="":::
-      Notes
+   :::column span="2":::
+      Manages permissions to create and use service connections or service endpoints. These permissions are assigned through [Service connection security roles](/azure/devops/organizations/security/about-security-roles#service-endpoint-roles).   
    :::column-end:::
 :::row-end:::
 ---
@@ -604,8 +611,8 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       cb594ebe-87dd-4fc9-ac2c-6a10a4c92046
    :::column-end:::
-   :::column span="":::
-      Notes
+   :::column span="2":::
+      Manage permissions to view, edit, and delete service hook subscriptions and publish service hook events. 
    :::column-end:::
 :::row-end:::
 ---
@@ -616,11 +623,12 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       bb50f182-8e5e-40b8-bc21-e8752a1e7ae2
    :::column-end:::
-   :::column span="":::
-      Notes
+   :::column span="2":::
+      Manages permissions to create, delete, enumerate, and use work item tags. 
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range="<= tfs-2015"
 :::row:::
    :::column span="":::
       TeamLabSecurity
@@ -628,11 +636,14 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       9e4894c3-ff9a-4eac-8a85-ce11cafdc6f1
    :::column-end:::
-   :::column span="":::
-      Notes
+   :::column span="2":::
+      [Manages Lab Management permissions](/azure/devops/organizations/security/permissions#lab).
+      > [!NOTE]  
+      > Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 :::row:::
    :::column span="":::
       UtilizationPermissions
@@ -640,8 +651,8 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       83abde3a-4593-424e-b45f-9898af99034d
    :::column-end:::
-   :::column span="":::
-      Notes
+   :::column span="2":::
+      Manages permissions to query usage. 
    :::column-end:::
 :::row-end:::
 ---
@@ -652,7 +663,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       a39371cf-0841-4c16-bbd3-276e341bc052
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       Notes
    :::column-end:::
 :::row-end:::
@@ -664,7 +675,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       3c15a8b7-af1a-45c2-aa97-2cb97078332e
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       Notes
    :::column-end:::
 :::row-end:::
@@ -676,7 +687,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       66312704-deb5-43f9-b51c-ab4ff5e351c3
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       Notes
    :::column-end:::
 :::row-end:::
@@ -688,7 +699,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       TBD
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       TBD
    :::column-end:::
 :::row-end:::
@@ -700,7 +711,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       73e71c45-d483-40d5-bdba-62fd076f7f87
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       Notes
    :::column-end:::
 :::row-end:::
@@ -712,7 +723,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       445d2788-c5fb-4132-bbef-09c4045ad93f
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       Notes
    :::column-end:::
 :::row-end:::
@@ -724,7 +735,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       5a6cd233-6615-414d-9393-48dbb252bd23
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       Notes
    :::column-end:::
 :::row-end:::
@@ -736,7 +747,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column span="":::
       93bafc04-9075-403a-9367-b7164eac6b5c
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       Notes
    :::column-end:::
 :::row-end:::

@@ -3063,7 +3063,7 @@ View releases
 -->
 
 <a id="release_management">  </a>
-
+<a id="release-management">  </a>
 
 ::: moniker range=">= tfs-2015"
 
@@ -3236,7 +3236,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 <a id="lab">  </a>
 
