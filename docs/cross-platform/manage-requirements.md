@@ -28,12 +28,12 @@ Become familiar with the essential concepts to manage projects using Agile tools
 Agile requirements management supports the following scenarios.   
 
 > [!div class="checklist"]  
-> - Define and track status of requirements
-> - Analyze and prioritize requirements
-> - Assign requirements to timeboxes
-> - Group and organize requirements
-> Manage dependencies 
-> - Determine what can ship and when 
+> - Define and track status of requirements  
+> - Analyze and prioritize requirements  
+> - Assign requirements to timeboxes  
+> - Group and organize requirements  
+> - Manage dependencies  
+> - Determine what can ship and when  
 > - Monitor and report on progress  
 
 When managing requirements using Agile methods, you'll also perform within an Agile culture which supports the following principles and methods:  
@@ -131,7 +131,7 @@ Requirements often require specifications to provide details that aren't readily
 You can then link your specifications or attach them to your requirements. 
  
  
-## Analyze, prioritize, and refine requirements
+## Analyze and prioritize requirements
 
 Once you have a working backlog, you'll want to get it in priority order. You'll want to review and refine your requirements and make sure the acceptance criteria is well-defined. These tasks are supported through the following Azure Board tools: 
 
@@ -173,7 +173,7 @@ With work item tags, team members can assign ad-hoc tags to work items. You can 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Kanban board, Filter using keyword search.](../boards/boards/media/filter/filter-kb-text-web-services.png)
 
-## Implement Kanban or Scrum Agile methods
+## Implement Kanban or Scrum  
 
 Two of the major Agile methods are Kanban and Scrum. Azure Boards supports both methods. Or, teams can adapt them to use a combination of methods such as Scrumban. 
 
@@ -328,7 +328,7 @@ To review features delivered across several teams, configure a delivery plan. De
 > ![Screenshot of Delivery plan, annotated.](../boards/plans/media/plans_view2.png) 
  
 
-## Get notified of additions and changes 
+## Get notified of changes 
 
 Azure DevOps provides a robust alert system, allowing project members to set alerts for themselves, a team, or a project.   
 
