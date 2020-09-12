@@ -219,7 +219,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
       11238e09-49f2-40c7-94d0-8f0307204ce4
    :::column-end:::
    :::column span="":::
-      Notes
+      Sets permissions to read, create, and modify organization account. These permissions are assigned to the organization owner and members of the Project Collection Administrators groups.  
    :::column-end:::
 :::row-end:::
 ---
@@ -231,7 +231,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
       58450c49-b02d-465a-ab12-59ae512d6531
    :::column-end:::
    :::column span="":::
-      Notes
+      Manages permissions to read, administer permissions, and execute queries against the Analytics service
    :::column-end:::
 :::row-end:::
 ---
@@ -243,7 +243,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
       d34d3680-dfe5-4cc6-a949-7d9c68f73cba
    :::column-end:::
    :::column span="":::
-      Notes
+      [Manages Analytics views permissions](/azure/devops/organizations/security/permissions#analytics-views-permissions) to read, edit, delete, and generate reports (TBD: object-level or project-level?) 
    :::column-end:::
 :::row-end:::
 ---
@@ -255,7 +255,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
       a6cc6381-a1ca-4b36-b3c1-4e65211e82b6
    :::column-end:::
    :::column span="":::
-      Notes
+      [Manages auditing permissions](/azure/devops/organizations/security/permissions#audit-streams-permissions) to read or write to the audit log and manage or delete audit streams.
    :::column-end:::
 :::row-end:::
 ---
@@ -267,7 +267,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
       5ab15bc8-4ea1-d0f3-8344-cab8fe976877
    :::column-end:::
    :::column span="":::
-      Notes
+      Manages permissions to read or write to external integrations with Azure Boards. 
    :::column-end:::
 :::row-end:::
 ---
@@ -279,7 +279,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
       33344d9c-fc72-4d6f-aba5-fa317101a7e9
    :::column-end:::
    :::column span="":::
-      Notes
+      [Manages object-level build permissions](/azure/devops/organizations/security/permissions#build-object-level) to read or write to the audit log and manage or delete audit streams.
    :::column-end:::
 :::row-end:::
 ---
@@ -291,7 +291,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
       302acaca-b667-436d-a946-87133492041c
    :::column-end:::
    :::column span="":::
-      Notes
+      [Manages organization or collection-level permissions for build resources](/azure/devops/organizations/security/permissions#collection-level) to view, manage, use, or administer permissions.  
    :::column-end:::
 :::row-end:::
 ---
@@ -303,7 +303,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
       bc295513-b1a2-4663-8d1a-7017fd760d18
    :::column-end:::
    :::column span="":::
-      Notes
+      Manages permissions for chat services 
    :::column-end:::
 :::row-end:::
 ---
@@ -315,10 +315,11 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
       3e65f728-f8bc-4ecd-8764-7e378b19bfa7
    :::column-end:::
    :::column span="":::
-      Notes
+      [Manages organization or collection-level general and service account permissions](/azure/devops/organizations/security/permissions#collection-level) .  
    :::column-end:::
 :::row-end:::
 ---
+<!---
 :::row:::
    :::column span="":::
       CollectionManagement
@@ -331,15 +332,17 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
    :::column-end:::
 :::row-end:::
 ---
+-->
 :::row:::
    :::column span="":::
-      CSS
+      CSS (TBD Classification) 
    :::column-end:::
    :::column span="":::
       83e28ad4-2d72-4ceb-97b0-c7726d5502c3
    :::column-end:::
    :::column span="":::
-      Notes
+      [Manages area path (object-level) permissions](/azure/devops/organizations/security/permissions#area-path-object-level) to create, edit, and delete child nodes and set permissions to view or edit work items in a node.   
+     
    :::column-end:::
 :::row-end:::
 ---
@@ -351,7 +354,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
       8adf73b7-389a-4276-b638-fe1653f7efc7
    :::column-end:::
    :::column span="":::
-      Notes
+      [Manages dashboard (object-level) permissions](/azure/devops/organizations/security/permissions#dasboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. 
    :::column-end:::
 :::row-end:::
 ---
@@ -519,7 +522,7 @@ The `Workspaces` security namespace is used only with Team Foundation Version Co
       52d39943-cb85-4d7f-8fa8-c6baac873819
    :::column-end:::
    :::column span="":::
-      Notes
+      [Project-level permissions](/azure/devops/organizations/security/permissions#project-level-permissions)
    :::column-end:::
 :::row-end:::
 ---
