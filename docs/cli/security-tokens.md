@@ -8,7 +8,7 @@ ms.technology: devops-reference
 ms.manager: mijacobs 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azure-devops-2020'
+monikerRange: '>= tfs-2013'
 ms.date: 08/17/2020
 ---
 
