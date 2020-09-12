@@ -1100,7 +1100,7 @@ You manage organization-level permissions through the [web portal admin context]
         <td id="manage-test-controllers">Manage test controllers</td>
         <td>Can register and de-register test controllers.</td>
     </tr>
-    <tr><td><h4>Auditing</hr></td><td> </td> 
+    <tr><td id="audit-streams-permissions"><h4>Auditing</hr></td><td> </td> 
     </tr>
     <tr>
         <td id="delete-audit-streams-permission">Delete audit streams</td>
@@ -2156,6 +2156,7 @@ Team administrators can change the permissions for individual team dashboards by
 ::: moniker-end
 
 <a name="build"></a>
+<a name="build-object-level"></a>
 
 ## Build (object-level)
 
