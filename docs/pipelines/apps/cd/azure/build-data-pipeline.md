@@ -83,6 +83,15 @@ To make commands easier to run, start by selecting a default region. After you s
     rgName='data-pipeline-cicd-rg'
     ```
 
+1. Create variable names for your Data Factory and Data Bricks
+
+    ```bash
+    datafactorydev='data-factory-cicd-dev'
+    datafactorytest='data-factory-cicd-test'
+
+    databricksname='databricks-cicd-ws'
+    ```
+
 ## Create Azure resources
 
 1. Run the following `az group create` command to create a resource group using `rgName`.
@@ -226,19 +235,60 @@ You will use Key Vault to store all connection information for your Azure servic
 1. Check **Grant access permission to all pipelines**. 
 
 ## Add pipeline variables
+
+
+1. [Add a new Azure Databricks service](https://ms.portal.azure.com/#create/hub). 
+    * Resource Group: `data-pipeline-cicd-rg`
+    * Workspace name: `databricks-cicd-ws`    
+    * Location: your closest location
+     
+   1. Add the Azure Databricks extension if it is not already installed. 
+
+   ```azurecli
+    az extension add --name databricks
+    ```   
+    
+   2. Run the following `az databricks workspace create` command to create a new workspace.  
+    ```azurecli
+    az databricks workspace create \
+        --resource-group $rgName \
+        --name databricks-cicd-ws  \
+        --location eastus2  \
+        --sku trial
+    ```
+  3. Copy the Subscription ID for your Databricks service to use later. 
+
+
+
+
 1. [Create a new variable group](../../../library/variable-groups.md) named `datapipeline-vg`.
-1. Add these variables:
-    * LOCATION: `location for your resources in the Azure Portal, example eastus2`
-    * RESOURCE_GROUP: `data-pipeline-cicd-rg`
-    * DATA_FACTORY_NAME: `data factory name from Azure portal (you can use the dev factory)`
-    * DATA_FACTORY_DEV_NAME: `dev data factory name from Azure portal`
-    * DATA_FACTORY_TEST_NAME: `test data factory name from Azure portal`
-    * ADF_PIPELINE_NAME: `DataPipeline`
-    * DATABRICKS_NAME: `databricks name from Azure portal`
-    * AZURE_RM_CONNECTION: `azure_rm_connection`
-    * DATABRICKS_URL: `URL copied from Databricks in Azure portal`
-    * STORAGE_ACCOUNT_NAME: `storage account name from Azure portal`
-    * STORAGE_CONTAINER_NAME: `rawdata`
+
+1. Add the Azure DevOps extension if it is not already installed. 
+
+```azurecli
+az extension add -name azure-devops 
+```  
+1. Sign in in your Azure DevOps Account(..\..\..\..\..\cli\log-in-via-pat.md)
+
+```azurecli
+az devops login --org https://dev.azure.com/<yourorganizationname>
+```
+
+```
+az pipelines variable-group create --name datapipeline-vg -p <yourazuredevopsprojectname> --variables `
+                                    "LOCATION=$region" `
+                                    "RESOURCE_GROUP=$rgName" `
+                                    "DATA_FACTORY_NAME=$datafactorydev" `
+                                    "DATA_FACTORY_DEV_NAME=$datafactorydev" `
+                                    "DATA_FACTORY_TEST_NAME=$datafactorytest" `
+                                    "ADF_PIPELINE_NAME=DataPipeline" `
+                                    "DATABRICKS_NAME=$databricksname" `
+                                    "AZURE_RM_CONNECTION=azure_rm_connection" `
+                                    "DATABRICKS_URL=<URL copied from Databricks in Azure portal>" `
+                                    "STORAGE_ACCOUNT_NAME=$storageName" `
+                                    "STORAGE_CONTAINER_NAME=rawdata"
+```
+
 1. Create a second variable group named `keys-vg` that pulls data variables from Azure key vault. 
 1. Check **Link secrets from an Azure key vault as variables**. Learn how to [link secrets from an Azure key vault](../../../library/variable-groups.md#link-secrets-from-an-azure-key-vault). 
 1. Authorize the Azure subscription. 
