@@ -56,10 +56,8 @@ By default, your organization allows access for all authentication methods.
 You can limit access, but you must specifically restrict access for each method.
 When you deny access to an authentication method, no application can access your organization. Any app that previously had access gets an authentication error and has no access to your organization.
 
- [!NOTE]
-> We only support IP fencing conditional access policies for IPv4 only. Conditional access policies set based on IPv6 are not supported today.
-
 > [!NOTE]
+> We only support IP fencing conditional access policies for IPv4 only. Conditional access policies set based on IPv6 are not supported today.
 > Some third-party extensions may require additional configuration changes.
 
 ## Security policies
