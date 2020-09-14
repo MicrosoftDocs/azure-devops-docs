@@ -28,19 +28,13 @@ monikerRange: '>= tfs-2015'
 A **release** is the package or container that holds a versioned set of artifacts specified in a [release pipeline](index.md) in your DevOps CI/CD processes.
 It includes a snapshot of all the information required to carry out all the tasks and actions in the release pipeline, such as the [stages](../process/stages.md), the tasks for each one, the values of task parameters and variables, and the release policies such as triggers, approvers, and release queuing options. There can be multiple releases from one release pipeline, and information about each one is stored and displayed in Azure Pipelines for the specified [retention period](../policies/retention.md#release).  
 
-A **deployment** is the action of running the [tasks](../process/tasks.md)
-for one stage, which results in the application
-[artifacts](artifacts.md)
-being deployed, tests being run, and whatever other
-actions are specified for that stage. Initiating a release
-starts each deployment based on the settings and policies defined in the original
-release pipeline. There can be multiple deployments of each release even for one stage.
-When a deployment of a release fails for a stage, you can redeploy the same release
-to that stage.
+A **deployment** is the action of running the [tasks](../process/tasks.md) for one stage, which results in the application [artifacts](artifacts.md) being deployed, tests being run, and whatever other actions are specified for that stage. 
+Initiating a release starts each deployment based on the settings and policies defined in the original release pipeline. There can be multiple deployments of each release even for one stage. When a deployment of a release fails for a stage, you can redeploy the same release to that stage.
 
 The following schematic shows the relationship between release pipelines, releases, and deployments.
 
-![Relationship between release pipelines, releases, and deployments](media/release-deploy.png)
+> [!div class="mx-imgBorder"]  
+> ![Relationship between release pipelines, releases, and deployments](media/release-deploy.png)
 
 Releases can be created from a release pipeline in several ways:
 
