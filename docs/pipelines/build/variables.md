@@ -77,7 +77,18 @@ pushes and pulls in your scripts.
 
 ## System.Debug
 
-For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`.
+For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`. 
+
+:: moniker range=>"azure-devops-2020"
+
+1. Edit your pipeline. 
+1. Select **Variables**. 
+1. Add a new variable with the name  `System.Debug` and value `true`.
+
+    :::image type="content" source="media/options/system-debug.png" alt-text="Set System Debug to true":::
+1. Save the new variable. 
+
+:: moniker-end
 
 ::: moniker range="azure-devops"
 
