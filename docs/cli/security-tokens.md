@@ -53,9 +53,9 @@ Token examples for different namespaces are provided later in this article:
 - [Workspaces](#workspaces-namespace)  
 
 
-## Valid namespaces 
+## Security namespaces 
 
-You can use the `az devops security permission namespace list` to list the namespaces defined for your organizaation or on-premises server.   
+You can use the `az devops security permission namespace list` to list the namespaces defined for your organization or on-premises server.   
 
 > [!NOTE]   
 > Some namespaces listed are deprecated and should not be used. For a list of deprecated namespaces, see the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. 
@@ -597,6 +597,7 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 :::row:::
    :::column span="":::
       WorkItemTrackingAdministration
