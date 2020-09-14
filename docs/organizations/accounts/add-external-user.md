@@ -1,4 +1,4 @@
-﻿---
+---
 title: Add, invite guest external users to your organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
@@ -73,7 +73,9 @@ Learn how to invite external users to your organization. If you access Azure Dev
 >[!Note]
 >If you need to resend the invitation email, go to **Users**, select the user, and then select **Resend invite**.
 
-The external user gets added to the organization to which they were invited and has immediate access.
+The external user is added to the organization to which they were invited and has immediate access.
+
+A guest user can add other guest users to the organization after being granted the Guest Inviter role in Azure AD.
 
 ## Related articles
 
