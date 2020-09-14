@@ -6,7 +6,7 @@ ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/24/2018
+ms.date: 09/14/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -19,20 +19,14 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="azure-devops"
+
 > [!NOTE] 
 > This topic covers classic release pipelines. If you author your pipelines using YAML, see [runs](../process/runs.md).
+
 ::: moniker-end
 
-A **release** is the package or container that holds a versioned set of artifacts
-specified in a [release pipeline](index.md) in your DevOps CI/CD processes.
-It includes a snapshot of all the information required to carry out all the tasks
-and actions in the release pipeline, such as the
-[stages](../process/stages.md),
-the tasks for each one, the values of task parameters
-and variables, and the release policies such as triggers, approvers, and release
-queuing options. There can be multiple releases from one release pipeline, and information
-about each one is stored and displayed in Azure Pipelines for the specified
-[retention period](../policies/retention.md#release).  
+A **release** is the package or container that holds a versioned set of artifacts specified in a [release pipeline](index.md) in your DevOps CI/CD processes.
+It includes a snapshot of all the information required to carry out all the tasks and actions in the release pipeline, such as the [stages](../process/stages.md), the tasks for each one, the values of task parameters and variables, and the release policies such as triggers, approvers, and release queuing options. There can be multiple releases from one release pipeline, and information about each one is stored and displayed in Azure Pipelines for the specified [retention period](../policies/retention.md#release).  
 
 A **deployment** is the action of running the [tasks](../process/tasks.md)
 for one stage, which results in the application
