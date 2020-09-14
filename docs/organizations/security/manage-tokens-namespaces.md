@@ -27,8 +27,16 @@ You can manage tokens and namespaces for your organization with the [az devops s
 - View details about those permissions
 - Update or reset permissions
 
+> [!NOTE]   
+> Namespaces and tokens are valid for all versions of Azure DevOps. Some namespaces have been deprecated as listed in [Security namespaces and tokens for permissions management](/azure/devops/cli/security-tokens#deprecated-namespaces). 
+>
+> To list namespaces and manage permissions with command line tools: 
+> - For Azure DevOps Server 2020 and Azure DevOps Services, you can use the `az devops security permission` commands. 
+> - For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd?view=azure-devops-2019) commands. 
+
+
 > [!NOTE]
-> For Azure DevOps Services, you can manage tokens and namespaces using the az devops security permission documented in this article, or using the TFSSecurity command. To use the TFSSecurity command, you must install Azure DevOps Server 2019 to get access to the command line tool. To learn more, see [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd).
+> For Azure DevOps Services, you can manage tokens and namespaces using the `az devops security permission documented in this article, or using the TFSSecurity command. To use the TFSSecurity command, you must install Azure DevOps Server 2019 to get access to the command line tool. To learn more, see [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd).
 
 ## Prerequisites 
 
