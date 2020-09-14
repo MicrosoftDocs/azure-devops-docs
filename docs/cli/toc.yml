@@ -13,12 +13,12 @@
   href: azure-devops-cli-in-release-pipeline.md
 - name: Security permissions
   href: permissions.md
+- name: Security namespaces and tokens
+  href: security-tokens.md
 - name: Service connections
   href: service-endpoint.md
 - name: Troubleshoot common errors
   href: troubleshooting.md
-- name: Security namespaces and tokens
-  href: security-tokens.md
 - name: Azure CLI Reference
   items:
   - name: Command reference
