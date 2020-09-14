@@ -18,7 +18,9 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-Learn how to manage your security policies and the policies that determine which applications can integrate with services and resources in your organization.
+Learn how to manage your security policies and the policies that determine which applications can integrate with services and resources in your organization. By default, your organization allows access for all authentication methods.
+You can limit access, but you must specifically restrict access for each method.
+When you deny access to an authentication method, no application can access your organization. Any app that previously had access gets an authentication error and has no access to your organization.
 
 ## Application connection policies
 
@@ -36,7 +38,13 @@ To access your organization without asking for user credentials multiple times, 
 
 To remove access for PATs, you must [revoke them](use-personal-access-tokens-to-authenticate.md).
 
-You can [restrict Azure AD users from creating new organizations](azure-ad-tenant-policy-restrict-org-creation.md), and for Web flows, CAP is honored 100%. For third-party client flow, like using a PAT with git.exe, we support IP fencing policies - we don't support MFA policies. See the following examples:
+## Tenant level policies
+
+You can use the tenant level policy to restrict creating new organizations to desired users only. Check [restrict organization creation](azure-ad-tenant-policy-restrict-org-creation.md) for more details.
+
+## Conditional access policies 
+
+Azure DevOps honors all conditional access policies 100% for our Web flows. For third-party client flow, like using a PAT with git.exe, we support IP fencing policies only - we don't support MFA policies. See the following examples:
 - Policy 1 - Block all access from outside of IP range x, y, and z.
     * Accessing Azure DevOps via the web, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
     * Accessing Azure DevOps via alt-auth, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
@@ -47,6 +55,9 @@ You can [restrict Azure AD users from creating new organizations](azure-ad-tenan
 By default, your organization allows access for all authentication methods.
 You can limit access, but you must specifically restrict access for each method.
 When you deny access to an authentication method, no application can access your organization. Any app that previously had access gets an authentication error and has no access to your organization.
+
+ [!NOTE]
+> We only support IP fencing conditional access policies for IPv4 only. Conditional access policies set based on IPv6 are not supported today.
 
 > [!NOTE]
 > Some third-party extensions may require additional configuration changes.
