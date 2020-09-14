@@ -79,7 +79,7 @@ pushes and pulls in your scripts.
 
 For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`. 
 
-:: moniker range=>"azure-devops-2020"
+:: moniker range"=>azure-devops-2020"
 
 1. Edit your pipeline. 
 1. Select **Variables**. 
