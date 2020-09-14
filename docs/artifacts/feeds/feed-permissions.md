@@ -4,7 +4,7 @@ description: Secure and share packages using feed permissions in Azure Artifacts
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/06/2020
+ms.date: 09/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -97,7 +97,8 @@ When you're done, select **Save**.
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-![Editing a feed's permissions](media/editfeeddialog1.png)
+> [!div class="mx-imgBorder"]
+> ![Editing a feed's permissions](media/editfeeddialog1.png)
 
 In the edit feed dialog:
 
@@ -152,6 +153,9 @@ You can also use the `Allow project-scoped builds` feature if you would like to 
 
 > [!div class="mx-imgBorder"]
 >![views permissions](media/project-scoped-builds.png)
+
+> [!NOTE]
+> If you want your pipelines to use a package from a feed in a different project, you must set up the other project to grant read/write access to the build service in addition to setting up the appropriate [feed permissions](#adding-usersgroups-permissions-to-a-feed).
 
 ## Sharing packages with everyone in your organization
 
