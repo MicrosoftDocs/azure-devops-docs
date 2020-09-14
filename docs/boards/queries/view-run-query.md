@@ -205,7 +205,7 @@ You can perform most tasks for viewing and running queries from each of the quer
 > |Filter the list of queries |✔️ |✔️ |
 > |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
 > |Unfavorite a query: Click :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
-> |Add a new query: Click :::image type="icon" source="/azure/devops/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
+> |Add a new query: Click :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
 
 
 For details on adding new queries, see [Create managed queries with the query editor](using-queries.md). 
@@ -219,7 +219,7 @@ For details on adding new queries, see [Create managed queries with the query ed
 Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. 
 
 [!div class="mx-imgBorder"]  
-![List of all queries in the project filtered by WIT IQ keyword criteria](media/queries-all-filter.png)
+![Screenshot showing all queries in the project filtered by WIT IQ keyword criteria.](media/queries-all-filter.png)
 
 ::: moniker-end
 
