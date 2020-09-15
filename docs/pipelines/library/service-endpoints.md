@@ -107,7 +107,7 @@ You can control who can create, view, use and manage the service connection with
 | Creator | Members of this role can create the service connection in the project. Contributors are added as members by default|
 | Reader | Members of this role can view the service connection. |
 | User | Members of this role can use the service connection when authoring build or release pipelines or authorize yaml pipelines. |
-| Administrator | In addition to using the service connection, members of this role can manage membership of all other roles for the service connection in the project. Project administrators are added as members by default |
+| Administrator | In addition to using the service connection, members of this role can manage membership of all other roles for the service connection in the project. Project administrators are added as members by default. |
 
 Previously, two special groups, Endpoint Creators and Endpoint Administrator groups were used to control who can create and manage service connections. Now, as part of service connection new UI, we are moving to pure RBAC model i.e. using roles.
 For backward compatibility, in the existing projects, Endpoint Administrators group is added as Administrator role and Endpoint creators group is assigned with creator role which ensures there is no change in the behavior for existing service connections. 
@@ -155,8 +155,8 @@ Or you can choose to lock down the service connection and only allow selected YA
 ### Project permissions - Cross project sharing of service connections
 
 * Only the organization-level administrators from **User permissions** can share the service connection with other projects.
-* The user who is sharing the service connection with a project should have atleast create service connection permission in the target project.
-* The user who shares the service connection with a project becomes the project-level administrator for that service connection  and the project-level inheritance is turned on in the target project.
+* The user who is sharing the service connection with a project should have at least create service connection permission in the target project.
+* The user who shares the service connection with a project becomes the project-level administrator for that service connection and the project-level inheritance is turned on in the target project.
 * The service connection name is appended with the project name and it can be renamed in the target project scope.
 * Organization level administrator can unshare a service connection from any shared project.
 
