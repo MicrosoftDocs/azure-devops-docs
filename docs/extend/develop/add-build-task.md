@@ -537,18 +537,18 @@ stages:
           - task: Npm@1
             inputs:
               command: 'install'
-              workingDir: '/TaskDirectory'
+              workingDir: '/TaskDirectory' # Update to the name of the directory of your task
           - task: Bash@3
             displayName: Compile Javascript
             inputs:
               targetType: "inline"
               script: |
-                cd TaskDirectory
+                cd TaskDirectory # Update to the name of the directory of your task
                 tsc
           - task: Npm@1
             inputs:
               command: 'custom'
-              workingDir: '/TestsDirectory'
+              workingDir: '/TestsDirectory' # Update to the name of the directory of your task's tests
               customCommand: 'testScript'
           - task: PublishTestResults@2
             inputs:
@@ -564,13 +564,13 @@ stages:
           - task: Npm@1
             inputs:
               command: 'install'
-              workingDir: '/TaskDirectory'
+              workingDir: '/TaskDirectory' # Update to the name of the directory of your task
           - task: Bash@3
             displayName: Compile Javascript
             inputs:
               targetType: "inline"
               script: |
-                cd TaskDirectory
+                cd TaskDirectory # Update to the name of the directory of your task
                 tsc
           - task: QueryAzureDevOpsExtensionVersion@3
             inputs:
@@ -589,7 +589,7 @@ stages:
               extensionVersion: '$(Task.Extension.Version)'
               updateTasksVersion: true
               updateTasksVersionType: 'patch'
-              extensionVisibility: 'private'
+              extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
               extensionPricing: 'free'
           - task: CopyFiles@2
             displayName: "Copy Files to: $(Build.ArtifactStagingDirectory)"
@@ -601,7 +601,7 @@ stages:
               PathtoPublish: '$(Build.ArtifactStagingDirectory)'
               ArtifactName: '$(ArtifactName)'
               publishLocation: 'Container'
-  - stage: Download_build_artifacts_and_ publish_the_extension
+  - stage: Download_build_artifacts_and_publish_the_extension
     jobs:
       - job:
         steps:
@@ -624,7 +624,7 @@ stages:
               extensionId: '$(ExtensionID)'
               extensionName: '$(ExtensionName)'
               updateTasksVersion: false
-              extensionVisibility: 'private'
+              extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
               extensionPricing: 'free'
 ```
 
