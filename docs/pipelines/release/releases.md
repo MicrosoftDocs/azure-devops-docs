@@ -30,6 +30,7 @@ It includes a snapshot of all the information required to carry out all the task
 
 A **deployment** is the action of running the [tasks](../process/tasks.md) for one stage, which results in the application [artifacts](artifacts.md) being deployed, tests being run, and whatever other actions are specified for that stage. 
 Initiating a release starts each deployment based on the settings and policies defined in the original release pipeline. There can be multiple deployments of each release even for one stage. When a deployment of a release fails for a stage, you can redeploy the same release to that stage.
+To redeploy a release, simply navigate to the release you want to deploy and select deploy.
 
 The following schematic shows the relationship between release pipelines, releases, and deployments.
 
