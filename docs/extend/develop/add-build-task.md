@@ -549,7 +549,7 @@ stages:
             inputs:
               command: 'custom'
               workingDir: '/TestsDirectory' # Update to the name of the directory of your task's tests
-              customCommand: 'testScript' # See the definition in the explanation section below
+              customCommand: 'testScript' # See the definition in the explanation section below - it may be called test
           - task: PublishTestResults@2
             inputs:
               testResultsFormat: 'JUnit'
@@ -575,7 +575,7 @@ stages:
           - task: QueryAzureDevOpsExtensionVersion@3
             inputs:
               connectTo: 'VsTeam'
-              connectedServiceName: 'ServiceConnection'
+              connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               versionAction: 'Patch'
