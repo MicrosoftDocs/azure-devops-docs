@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: kaelli   
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 09/08/2020
+ms.date: 09/15/2020
 ---
 
 
@@ -33,37 +33,43 @@ In that event, several questions arise as to what tasks are supported when worki
 **A.** When you connect from a web browser, you can connect to different projects from different browser tabs. When you connect from a client or IDE, you can only connect to a single project at a time. For more information, see [Connect to team projects](../../organizations/projects/connect-to-projects.md).
 
 
-### Q: How do I view all projects available to me? How do I switch to another project?  
+### Q: How do I view all projects available to me? 
+
+How do I switch to another project?  
 
 **A.** See [Switch project, repository, team](navigation/go-to-project-repo.md).
 
 ### Q: Can I search across projects? 
 
-**A.** When you install the Code search extension, you can perform cross-project searches within your organization or a collection. To learn more, see [Search across your code base, work items, wiki, or artifacts](search/overview.md).
+**A.** When you install the free [Code search Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), you can perform cross-project searches within your organization or a collection. To learn more, see [Search across your code base, work items, wiki, or artifacts](search/overview.md).
 
 ### Q: How do I turn off cross-project collaboration? 
 
 **A.** If you want to limit users to view or modify select work items, you can by [setting permissions on Area Paths](../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).  However, there's no method for limiting users to linking work items that reside in different projects.  
 
-
-::: moniker range=">= azure-devops-2019"
-
-### Q: Can I export a cross-project query to Excel? 
-
-**A.** No, cross-project queries won't open in Excel. However, you can export a cross-project query to a .csv file, open it in Excel, and import it to Azure Boards.  To learn more, see [Bulk import or update work items using CSV files](../boards/queries/import-work-items-from-csv.md).  
-
-::: moniker-end
-
 ## Dashboards and reports 
 
 ### Q: Can I create a dashboard with information that spans two or more projects? 
 
-**A:** Most dashboard widgets support configuration for the currently connected project. However, query-based dashboard widgets&mdash;such as [Query results](../report/dashboards/widget-catalog.md#query-results) and [Chart for work items](../report/dashboards/charts.md#add-chart-widget)&mdash;can be configured to support cross-project queries. To learn how, see [Create and save managed queries, Query across projects](../boards/queries/using-queries.md#query-across-projects).  
+::: moniker range=">= azure-devops-2020"
 
+**A:** Yes. Project dashboards allow you to add widgets for any project and any team. To learn more, see [Add, rename, and delete dashboards, Add a dashboard](../report/dashboards/dashboards.md#add-a-dashboard). 
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+**A:** Yes. Most dashboard widgets support configuration for the currently connected project. However, you can add query-based dashboard widgets&mdash;such as [Query results](../report/dashboards/widget-catalog.md#query-results) and [Chart for work items](../report/dashboards/charts.md#add-chart-widget)&mdash;to support cross-project queries. To learn how, see [Create and save managed queries, Query across projects](../boards/queries/using-queries.md#query-across-projects).  
+
+::: moniker-end
+
+
+::: moniker range=">= azure-devops-2019"
 
 ### Q: Can I create a report that spans two or more projects? 
 
 **A:** Yes. The Analytics service and Power BI reports support creation of reports that span two or more projects. To learn more, see [Create a Power BI report with an OData Query](../report/powerbi/create-quick-report-odataq.md). 
+
+::: moniker-end
 
 ## Azure Boards and work tracking
 
@@ -84,6 +90,21 @@ In that event, several questions arise as to what tasks are supported when worki
 
 **A:** No. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
 
+::: moniker range=">= azure-devops-2019"
+
+### Q: Can I export a cross-project query to Excel? 
+
+**A.** No, cross-project queries won't open in Excel. However, you can export a cross-project query to a .csv file, open it in Excel, and import it to Azure Boards.  To learn more, see [Bulk import or update work items using CSV files](../boards/queries/import-work-items-from-csv.md).  
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+### Q: Can I export a cross-project query to Excel? 
+
+**A.** No, cross-project queries won't open in Excel.    
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -129,8 +150,6 @@ In that event, several questions arise as to what tasks are supported when worki
 ### Q: How do I manage duplicate work items across projects? 
 
 -->
-
-
 
 ## Azure Boards configuration and customization 
 
@@ -183,3 +202,14 @@ In that event, several questions arise as to what tasks are supported when worki
  
 
 - [Connect to team projects](../../organizations/projects/connect-to-projects.md)  
+
+
+<!---
+
+1. how to centrally manage backlog items (Epic/Features) that are then distributed across multiple projects? So what is the best practice of managing cross-project backlog information?
+2. how they can manage resources across projects inside Azure DevOps? Some team members are working in the same day on multiple projects and they would like to understand their capacity (completed work hours)  across those projects?
+Is there any way to achieve this with Azure DevOps or better approach would be to bring that "organizational" project management one step higher to MS Project?
+
+
+-->
+
