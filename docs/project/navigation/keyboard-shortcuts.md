@@ -25,7 +25,7 @@ For specific guidance on navigating within the web portal, see [Web portal navig
 
 You can use these keyboard shortcuts when working in the web portal for Azure DevOps.  
 
-**Navigate within lists
+**Navigate within lists**
 |Shortcut|Action|
 |--------|------|
 |**Tab**|Move focus|
