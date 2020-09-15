@@ -48,7 +48,7 @@ If your organization time zone is EST, and user profile is PST, all date and tim
 
 #### [Preview page](#tab/preview-page) 
 
-1. From your home page, select the user settings icon ![user-settings-gear.png](../../media/icons/user-settings-gear.png), and then select **Time and Locale**.
+1. From your home page, select the user settings icon :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::, and then select **Time and Locale**.
 
    ![Select User settings icon and then Time and Locale](media/change-time-zone/user-settings-time-locale.png)
 

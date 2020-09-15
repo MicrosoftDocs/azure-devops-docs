@@ -16,13 +16,13 @@ monikerRange: '>= tfs-2017'
 
 If you want to stop receiving select email notifications, you can do so by unsubscribing from them. For a description of each default subscription, see [Default notifications](oob-built-in-notifications.md)  
 
-Start by opening your personal notification settings from your home page. Select the user settings icon ![user-settings-gear.png](../media/icons/user-settings-gear.png), and then select **Profile**. If you don't have a project yet, create one in [Azure DevOps](../organizations/accounts/set-up-vs.md).
+Start by opening your personal notification settings from your home page. Select the user settings icon :::image type="icon" source="../media/icons/user-settings-gear.png" border="false":::, and then select **Profile**. If you don't have a project yet, create one in [Azure DevOps](../organizations/accounts/set-up-vs.md).
 
 ## View subscriptions
 
 ::: moniker range=">= azure-devops-2019"
 
-1. From your home page, select the user settings icon ![user-settings-gear.png](../media/icons/user-settings-gear.png), and then select **Profile**.
+1. From your home page, select the user settings icon :::image type="icon" source="../media/icons/user-settings-gear.png" border="false":::, and then select **Profile**.
 
    ![Open Azure DevOps profile](../media/open-user-settings-profile-preview.png)
 

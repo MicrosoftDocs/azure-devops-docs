@@ -178,7 +178,7 @@ You can favorite several Agile tools for a team from a **Boards** page.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work, Backlogs](media/favorites/open-work-backlogs-vert.png)  
 
-	To choose a specific team backlog, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose a specific team backlog, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 

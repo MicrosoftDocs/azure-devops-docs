@@ -204,8 +204,8 @@ You can perform most tasks for viewing and running queries from each of the quer
 > |Expand or collapse container folders or query folders |✔️ |✔️ |
 > |Filter the list of queries |✔️ |✔️ |
 > |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
-> |Unfavorite a query: Click ![Un-favorite](../media/icons/icon-favorited.png) |✔️ |✔️ | 
-> |Add a new query: Click ![plus sign](../media/icons/add-new-query.png) |✔️ |✔️ | 
+> |Unfavorite a query: Click :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
+> |Add a new query: Click :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
 
 
 For details on adding new queries, see [Create managed queries with the query editor](using-queries.md). 
@@ -218,7 +218,9 @@ For details on adding new queries, see [Create managed queries with the query ed
 
 Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. 
 
-<img src="media/queries-all-filter.png" alt="List of all queries in the project filtered by WIT IQ keyword criteria" style="border: 1px solid #cccccc;"/>
+[!div class="mx-imgBorder"]  
+![Screenshot showing all queries in the project filtered by WIT IQ keyword criteria.](media/queries-all-filter.png)
+
 ::: moniker-end
 
 <a id="email-query" />

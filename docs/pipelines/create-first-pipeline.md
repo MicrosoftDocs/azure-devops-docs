@@ -456,7 +456,7 @@ Create a build pipeline that prints "Hello world."
 
 2. Create a new pipeline.
 
-   ![builds-tab-mine-new-button](media/get-started-designer/builds-tab-mine-new-button.png)
+   ![Screenshot showing the Builds tab and the New button.](media/get-started-designer/builds-tab-mine-new-button.png)
 
 3. Start with an **empty pipeline**.
 
@@ -878,7 +878,7 @@ Define the process for running the script in two stages.
 
 10. **Clone** the **QA** stage.
 
-    ![clone-release-environment](media/get-started-designer/clone-release-environment.png)
+    ![Screenshot that shows selecting Clone in the QA stage.](media/get-started-designer/clone-release-environment.png)
 
     Leave **Automatically approve** and **Deploy automatically...** selected, and select **Create**.
 
@@ -1115,7 +1115,7 @@ If your pipeline has a pattern that you want to replicate in other pipelines, cl
 
 ::: moniker range="<= tfs-2018"
 
-![all-definitions-build-action-menu-replicate-actions](media/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
+![Screenshot showing how to replicate a pipeline.](media/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
 
 ::: moniker-end
 
@@ -1148,7 +1148,7 @@ If you're editing a build pipeline and you want to test some changes that are no
 
 ::: moniker range="<= tfs-2018"
 
-![save-as-draft](media/get-started-designer/save-as-draft.png)
+![Screenshot that shows saving as draft.](media/get-started-designer/save-as-draft.png)
 
 ::: moniker-end
 
