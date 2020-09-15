@@ -40,12 +40,12 @@ You'll need:
 1. Enable the **Artifact filters**. Select Add and specify your artifact. In the **Build branch** select the dev branch then Save.
 
     > [!div class="mx-imgBorder"]  
-    > ![Select Artifact filter](media/deploy-multiple-branches/artifact-filter1.png)
+    > ![Select Artifact filter dev](media/deploy-multiple-branches/artifact-filter1.png)
 
-1. Add another stage and name it **Prod**. This stage will be triggered when a build artifact is published from the master branch. Repeat steps 4-5 and replace **Build branch** to master.
+1. Add another stage and name it **Prod**. This stage will be triggered when a build artifact is published from the main branch. Repeat steps 4-5 and replace **Build branch** to main.
 
     > [!div class="mx-imgBorder"]  
-    > ![Select Artifact filter](media/deploy-multiple-branches/artifact-filter2.png)
+    > ![Select Artifact filter prod](media/deploy-multiple-branches/artifact-filter2.png)
 
 1. Add your appropriate deployment tasks in each stage.
 
