@@ -116,7 +116,11 @@ a39371cf-0841-4c16-bbd3-276e341bc052  VersionControlItems
 ```
 
 
-The following table lists valid namespaces and provides descriptions and links to more information. For a list of deprecated namespaces, see the following section.
+The following table lists valid namespaces and provides descriptions and links to more information.  
+
+> [!NOTE]   
+> Some permissions don't appear in any user interface. These permissions are assigned to security roles, or members of a security group, or internal service accounts. 
+
 
 ---
 :::row:::
@@ -165,7 +169,7 @@ The following table lists valid namespaces and provides descriptions and links t
       d34d3680-dfe5-4cc6-a949-7d9c68f73cba
    :::column-end:::
    :::column span="2":::
-      [Manages object-level Analytics views permissions](/azure/devops/organizations/security/permissions#analytics-views-permissions) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](/azure/devops/report/powerbi/analytics-security). 
+      [Manages object-level Analytics views permissions](/azure/devops/organizations/security/permissions#analytics-views-permissions) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](/azure/devops/report/powerbi/analytics-security).  
       **Token format for project level permissions**: `$/Shared/PROJECT_ID`  
       **Example**: `$/Shared/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
    :::column-end:::
@@ -192,7 +196,7 @@ The following table lists valid namespaces and provides descriptions and links t
       5ab15bc8-4ea1-d0f3-8344-cab8fe976877
    :::column-end:::
    :::column span="2":::
-      Manages permissions to read or write to external integrations with Azure Boards. 
+      Manages read/write permissions of external integrations with Azure Boards. 
    :::column-end:::
 :::row-end:::
 ---
@@ -204,7 +208,7 @@ The following table lists valid namespaces and provides descriptions and links t
       33344d9c-fc72-4d6f-aba5-fa317101a7e9
    :::column-end:::
    :::column span="2":::
-      [Manages object-level build permissions](/azure/devops/organizations/security/permissions#build-object-level).
+      [Manages object-level build permissions](/azure/devops/organizations/security/permissions#build-object-level).  
       **Token format for project-level build permissions**: `PROJECT_ID`  
       If you need to update permissions for a particular build definition ID, for example, 12, security token for that build definition looks as follows:  
       **Token format for project level build permissions**: `PROJECT_ID/12`  
@@ -376,14 +380,15 @@ The following table lists valid namespaces and provides descriptions and links t
       [Manages iteration path (object-level) permissions](/azure/devops/organizations/security/permissions#iteration-path-permissions) to create, edit, and delete child nodes and view child node permissions. You can manage these permissions through the [Project settings, Project configuration administrative interface](/azure/devops/organizations/security/set-permissions-access-work-tracking#create-child-nodes-modify-work-items-under-an-area-path). <br/>
       **Token format**: `'vstfs:///Classification/Node/Iteration_Identifier/'`  
       Suppose, you have the following iterations configured for your team.  
-      - ProjectIteration1  
-        TeamIteration1  
-           - TeamIteration1ChildIteration1  
-           - TeamIteration1ChildIteration2  
-           - TeamIteration1ChildIteration3  
-        TeamIteration2  
-           - TeamIteration2ChildIteration1  
-           - TeamIteration2ChildIteration2  <br/>
+      &ndash; ProjectIteration1  
+      &nbsp;&nbsp;TeamIteration1  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ndash; TeamIteration1ChildIteration1  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ndash; TeamIteration1ChildIteration2  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ndash; TeamIteration1ChildIteration3  
+      &nbsp;&nbsp;TeamIteration2  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ndash; TeamIteration2ChildIteration1  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ndash; TeamIteration2ChildIteration2  
+      <br/>
       To update permissions for `ProjectIteration1\TeamIteration1\TeamIteration1ChildIteration1`, the security token looks as follows:  
       `vstfs:///Classification/Node/ProjectIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1ChildIteration1_Identifier`  
    :::column-end:::
@@ -458,9 +463,9 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
    :::column span="2":::
       [Manages Project-level permissions](/azure/devops/organizations/security/permissions#project-level-permissions). You can manage these permissions through the [Project settings, Security or Permissions administrative interface](/azure/devops/organizations/security/set-project-collection-level-permissions#change-the-permission-level-for-a-project-level-group). <br/>  
-      **Root token format**: `$PROJECT`
-      Token to secure permissions for each project in your organization. 
-      `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  <br/> 
+      **Root token format**: `$PROJECT`  
+      Token to secure permissions for each project in your organization.  
+      `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  <br/>  
       Assume you have a project named `Test Project 1`.  
       You can get the project ID for this project by using `project show` command.  
       `az devops project show --project "Test Project 1"`  
