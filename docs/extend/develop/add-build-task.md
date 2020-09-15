@@ -524,7 +524,7 @@ pool:
   vmImage: "ubuntu-latest"
 
 variables:
-  - group: variable-group
+  - group: variable-group # Rename to whatever you named your variable group in the prerequisite stage of step 6
 
 stages:
   - stage: Run_and_publish_unit_tests
