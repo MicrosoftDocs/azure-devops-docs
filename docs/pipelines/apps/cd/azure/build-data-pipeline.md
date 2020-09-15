@@ -83,7 +83,7 @@ To make commands easier to run, start by selecting a default region. After you s
     rgName='data-pipeline-cicd-rg'
     ```
 
-1. Create variable names for your Data Factory and Data Bricks
+1. Create variable names for your Azure Data Factory and Azure Databricks instances.
 
     ```bash
     datafactorydev='data-factory-cicd-dev'
@@ -197,7 +197,7 @@ To make commands easier to run, start by selecting a default region. After you s
 
 ## Set up Key Vault
 
-You will use Key Vault to store all connection information for your Azure services.
+You will use Azure Key Vault to store all connection information for your Azure services.
 
 ### Create a Databricks personal access token
 1. Go Databricks in the Azure portal and launch your workspace. 
@@ -215,12 +215,12 @@ You will use Key Vault to store all connection information for your Azure servic
     * StorageKey: `your-storage-key`    
     * StorageConnectString: `your-storage-connection`
 
-    1. Run the following `az keyvault secret set` command to add secrets to key vault.  
+    Then, run the following `az keyvault secret set` command to add secrets to your key vault.  
    
-     ```azurecli
-     az keyvault secret set --vault-name "$keyVault" --name "databricks-token" --value "your-databricks-pat"
-     az keyvault secret set --vault-name "$keyVault" --name "StorageKey" --value "your-storage-key"
-     az keyvault secret set --vault-name "$keyVault" --name "StorageConnectString" --value "your-storage-connection"
+    ```azurecli
+    az keyvault secret set --vault-name "$keyVault" --name "databricks-token" --value "your-databricks-pat"
+    az keyvault secret set --vault-name "$keyVault" --name "StorageKey" --value "your-storage-key"
+    az keyvault secret set --vault-name "$keyVault" --name "StorageConnectString" --value "your-storage-connection"
     ```
 
 ## Import the data pipeline solution
@@ -242,20 +242,20 @@ You will use Key Vault to store all connection information for your Azure servic
     * Workspace name: `databricks-cicd-ws`    
     * Location: your closest location
      
-   1. Add the Azure Databricks extension if it is not already installed. 
+   1. Add the Azure Databricks extension if it isn't already installed. 
 
-   ```azurecli
-    az extension add --name databricks
-    ```   
+      ```azurecli
+       az extension add --name databricks
+       ```   
     
    2. Run the following `az databricks workspace create` command to create a new workspace.  
-    ```azurecli
-    az databricks workspace create \
-        --resource-group $rgName \
-        --name databricks-cicd-ws  \
-        --location eastus2  \
-        --sku trial
-    ```
+      ```azurecli
+      az databricks workspace create \
+          --resource-group $rgName \
+          --name databricks-cicd-ws  \
+          --location eastus2  \
+          --sku trial
+      ```
   3. Copy the Subscription ID for your Databricks service to use later. 
 
 
@@ -263,33 +263,33 @@ You will use Key Vault to store all connection information for your Azure servic
 
 1. [Create a new variable group](../../../library/variable-groups.md) named `datapipeline-vg`.
 
-1. Add the Azure DevOps extension if it is not already installed. 
+1. Add the Azure DevOps extension if it isn't already installed. 
 
-```azurecli
-az extension add -name azure-devops 
-```  
-1. Sign in in your Azure DevOps Account(..\..\..\..\..\cli\log-in-via-pat.md)
+   ```azurecli
+   az extension add -name azure-devops 
+   ```  
+1. Sign in to your [Azure DevOps account](../../../../cli/log-in-via-pat.md).
 
-```azurecli
-az devops login --org https://dev.azure.com/<yourorganizationname>
-```
+   ```azurecli
+   az devops login --org https://dev.azure.com/<yourorganizationname>
+   ```
 
-```
-az pipelines variable-group create --name datapipeline-vg -p <yourazuredevopsprojectname> --variables `
-                                    "LOCATION=$region" `
-                                    "RESOURCE_GROUP=$rgName" `
-                                    "DATA_FACTORY_NAME=$datafactorydev" `
-                                    "DATA_FACTORY_DEV_NAME=$datafactorydev" `
-                                    "DATA_FACTORY_TEST_NAME=$datafactorytest" `
-                                    "ADF_PIPELINE_NAME=DataPipeline" `
-                                    "DATABRICKS_NAME=$databricksname" `
-                                    "AZURE_RM_CONNECTION=azure_rm_connection" `
-                                    "DATABRICKS_URL=<URL copied from Databricks in Azure portal>" `
-                                    "STORAGE_ACCOUNT_NAME=$storageName" `
-                                    "STORAGE_CONTAINER_NAME=rawdata"
-```
+   ```
+   az pipelines variable-group create --name datapipeline-vg -p <yourazuredevopsprojectname> --variables `
+                                       "LOCATION=$region" `
+                                       "RESOURCE_GROUP=$rgName" `
+                                       "DATA_FACTORY_NAME=$datafactorydev" `
+                                       "DATA_FACTORY_DEV_NAME=$datafactorydev" `
+                                       "DATA_FACTORY_TEST_NAME=$datafactorytest" `
+                                       "ADF_PIPELINE_NAME=DataPipeline" `
+                                       "DATABRICKS_NAME=$databricksname" `
+                                       "AZURE_RM_CONNECTION=azure_rm_connection" `
+                                       "DATABRICKS_URL=<URL copied from Databricks in Azure portal>" `
+                                       "STORAGE_ACCOUNT_NAME=$storageName" `
+                                       "STORAGE_CONTAINER_NAME=rawdata"
+   ```
 
-1. Create a second variable group named `keys-vg` that pulls data variables from Azure key vault. 
+1. Create a second variable group named `keys-vg` that pulls data variables from Key Vault. 
 1. Check **Link secrets from an Azure key vault as variables**. Learn how to [link secrets from an Azure key vault](../../../library/variable-groups.md#link-secrets-from-an-azure-key-vault). 
 1. Authorize the Azure subscription. 
 1. Choose all of the available secrets to add as variables (`databricks-token`,`StorageConnectString`,`StorageKey`).
@@ -324,8 +324,8 @@ az pipelines variable-group create --name datapipeline-vg -p <yourazuredevopspro
         * Set **/azure-data-pipeline/factorydata** as the root folder
     * Branch to import resource into: Select **Use existing** and **master**
 
-### Link Azure Data Factory to your Key Vault
-1. In the Azure portal UI, open the Key Vault. 
+### Link Azure Data Factory to your key vault
+1. In the Azure portal UI, open the key vault. 
 1. Select **Access policies**.
 1. Select **Add Access Policy**.
 1. For **Configure from template**, select **Key & Secret Management**. 
