@@ -617,7 +617,7 @@ stages:
           - task: PublishAzureDevOpsExtension@3
             inputs:
               connectTo: 'VsTeam'
-              connectedServiceName: 'ServiceConnection'
+              connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
               fileType: 'vsix'
               vsixFile: '/Publisher.*.vsix'
               publisherId: '$(PublisherID)'
