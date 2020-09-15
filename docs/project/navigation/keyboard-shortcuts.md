@@ -34,8 +34,8 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
 |**↑ ↓**|Move focus up/down|
 |**Ctrl+Home**|Move focus to top of list|
 |**Ctrl+End**|Move focus to bottom of list|
-|**Ctrl+** ↑↓|Move item up/down within list|
-|**Shift** ↑↓|Highlight consecutive items|
+|**Ctrl+↑↓**|Move item up/down within list|
+|**Shift+↑↓**|Highlight consecutive items|
 |**Menu**|Open context menu|
 |**Esc**|Dismiss context menu|
 |**Enter**|Choose selected menu item|
