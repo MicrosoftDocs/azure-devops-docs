@@ -549,7 +549,7 @@ stages:
             inputs:
               command: 'custom'
               workingDir: '/TestsDirectory' # Update to the name of the directory of your task's tests
-              customCommand: 'testScript'
+              customCommand: 'testScript' # See the definition in the explanation section below
           - task: PublishTestResults@2
             inputs:
               testResultsFormat: 'JUnit'
