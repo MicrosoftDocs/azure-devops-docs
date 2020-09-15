@@ -209,7 +209,7 @@ az devops security permission list --id
 
 ### Parameters
 
-- **id**: Required. ID of security namespace. To obtain the ID, use the [az devops security permission namespace list](#list-namespaces) command.
+- - **id** or **namespace-id**: Required. ID of security namespace. To obtain the ID, use the [az devops security permission namespace list](#list-namespaces) command.
 - **subject**: Required. The email address or group descriptor of the user.
 - **recurse**: Optional. If true, and the namespace is hierarchical, this parameter returns the child ACLs of the tokens.
 - **token**: Optional. Specify an individual security token.
@@ -247,7 +247,7 @@ az devops security permission namespace show --namespace-id <NAMESPACE_ID>
 
 ### Parameters
 
-- **namespace-id**: Required. ID of security namespace.
+- **id** or **namespace-id**: Required. ID of security namespace.
 
 ### Example
 
@@ -281,7 +281,7 @@ az devops security permission reset --id
 
 ### Parameters
 
-- **id**: Required. ID of security namespace.
+- **id** or **namespace-id**: Required. ID of security namespace.
 - **permission-bit**: Required. Permission bit or addition of permission bits which needs to be reset for given user or group and token.
 - **subject**: Required. The email address or group descriptor of the user.
 - **token**: Required. Individual security token.
@@ -313,7 +313,7 @@ az devops security permission reset-all --id
 
 ### Parameters
 
-- **id**: Required. ID of security namespace.
+- **id** or **namespace-id**: Required. ID of security namespace.
 - **subject**: Required. The email address or group descriptor of the user.
 - **token**: Required. Individual security token.
 - **yes**: Optional. Don't prompt for confirmation.
@@ -344,7 +344,7 @@ az devops security permission show --id
 
 ### Parameters
 
-- **id**: Required. ID of security namespace.
+- **id** or **namespace-id**: Required. ID of security namespace.
 - **subject**: Required. The email address or group descriptor of the user.
 - **token**: Required. Individual security token.
 
@@ -381,11 +381,12 @@ az devops security permission update --id
 
 ### Parameters
 
-- **id**: Required. ID of security namespace.
+
+- **id** or **namespace-id**: Required. ID of security namespace.
 - **subject**: Required. The email address or group descriptor of the user.
 - **token**: Required. Individual security token.
-- **allow-bit**: Optional. Allow bit or addition of bits. Required if --deny-bit is missing.
-- **deny-bit**: Optional. Deny bit or addition of bits. Required if --allow-bit is missing.
+- **allow-bit**: Optional. Allow bit or addition of bits. Required if **--deny-bit** is missing.
+- **deny-bit**: Optional. Deny bit or addition of bits. Required if **--allow-bit** is missing.
 - **merge**: Optional. If set, the existing access control entry (ACE) has its allow and deny merged with the incoming ACE's allow and deny. If unset, the existing ACE is displaced. The accepted values are *false* or *true*.
 
 ### Example
