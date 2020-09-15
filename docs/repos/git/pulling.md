@@ -53,7 +53,7 @@ Changes downloaded by `fetch` aren't applied until you **Pull** or **Sync** the 
 
 1. In **Synchronization**, select **Fetch** to update the incoming commits list.
 
-   ![Fetch](media/pulling/fetch.png)
+   ![Screenshot that shows selecting Fetch.](media/pulling/fetch.png)
 
    There are two **Fetch** links, one near the top and one in the **Incoming Commits** section. You can use either one.
 
@@ -140,7 +140,7 @@ updates files in your open project, so make sure to [commit your changes](commit
 
 1. In **Synchronization**, choose **Pull** to fetch remote changes and merge them into your local branch.
 
-   ![Pull](media/pulling/pull.png)
+   ![Screenshot that shows choosing Pull.](media/pulling/pull.png)
 
    There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either one.
 
