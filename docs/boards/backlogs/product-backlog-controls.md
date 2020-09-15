@@ -136,7 +136,7 @@ Once you've defined your product backlog, you can use the following controls to 
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="":::
-      ![backlogs](../../media/icons/backlogs.png)   
+      :::image type="icon" source="../../media/icons/backlogs.png" border="false":::
    :::column-end:::
    :::column span="":::
       Backlog selector

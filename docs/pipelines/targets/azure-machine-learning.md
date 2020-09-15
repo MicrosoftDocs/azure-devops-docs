@@ -72,7 +72,7 @@ To create a pipeline in the classic editor, use our template so that you automat
 
 1. Select **Use the classic editor** to create a pipeline without YAML.
 
-   ![classic-editor](../media/classic-editor.png)
+   ![Screenshot showing Use the classic editor.](../media/classic-editor.png)
 
 1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 

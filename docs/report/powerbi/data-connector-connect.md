@@ -80,7 +80,7 @@ In the example below the most important part of the error message is:
 
 > Query result exceeds maximum size. Please reduce the number of records by applying additional filters.  
 > 
-> ![QueryExceedsPreferredMaxSizeException](./media/QueryExceedsPreferredMaxSizeException.png)
+> ![Screenshot showing the QueryExceedsPreferredMaxSize exception.](./media/QueryExceedsPreferredMaxSizeException.png)
 
 <a id="QueryExceedsPreferredMaxSizeException">  </a>
 
