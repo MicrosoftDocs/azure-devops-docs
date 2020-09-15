@@ -269,7 +269,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible. 
 
-9. To change the column order, use the left ![left arrow](media/ALM_AC_LeftIcon.png) or right ![right arrow](media/ALM_AC_RightIcon.png) arrow icons. 
+9. To change the column order, use the left ← or right → arrow icons. 
 
 1. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, click X at the top of the column.</p>
 
@@ -299,7 +299,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible.</p>
 
-3. To change the column order, use the left ![left arrow](media/ALM_AC_LeftIcon.png) or right ![right arrow](media/ALM_AC_RightIcon.png) arrow icons. 
+3. To change the column order, use the left ← or right → arrow icons. 
 
 4. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose **X** at the top of the column.</p>
 
