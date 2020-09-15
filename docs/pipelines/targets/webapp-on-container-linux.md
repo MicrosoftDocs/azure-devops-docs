@@ -170,7 +170,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Container settings** from the web app and update the **Image source, Registry** and save.
 
-![Update image source and Registry in container settings](media/webapp-linux/container-settings.png)
+![Screenshot showing Update image source and Registry in container settings.](media/webapp-linux/container-settings.png)
 
 ## Deploy with Azure Web App for Container
 

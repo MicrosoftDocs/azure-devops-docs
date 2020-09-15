@@ -124,7 +124,7 @@ To find out who is a member of the Project Collection Administrators group, chec
 > [!NOTE]   
 > To enable the new user interface for the **Organization Permissions Settings Page v2**, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not. 
 
-1. Choose the ![project-icon.png](../../media/icons/project-icon.png) Azure DevOps logo to open your projects, and then choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.  
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open your projects, and then choose :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**.  
 
 	![Open Organization settings](../../media/open-organization-settings-preview.png)
 
@@ -139,7 +139,7 @@ To find out who is a member of the Project Collection Administrators group, chec
 
 To find out who is a member, check the **Security** settings at the collection level. 
 
-1. Choose the ![project-icon.png](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**, and then choose **Organization settings**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**, and then choose **Organization settings**. 
 
    ![Open Organization settings](../../pipelines/agents/media/agent-pools-tab/organization-settings.png)
 
@@ -152,7 +152,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ::: moniker range="<= tfs-2018"
 
-1. Choose the ![project-icon.png](../../media/icons/project-icon.png) settings icon and choose **Collection settings**.
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: settings icon and choose **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/azure/devops/media/settings/open-account-settings.png)  
@@ -170,7 +170,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ## Show the organization owner 
 
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**, and then choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**, and then choose :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**. 
 
 	![Open organization settings](../../media/open-organization-settings-preview.png)  
 

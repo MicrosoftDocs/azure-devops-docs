@@ -24,11 +24,11 @@ DevOps practices are allowing businesses to stay ahead of the competition by del
 
 Security needs to shift from an afterthought to being evaluated at every step of the process. Securing applications is a continuous process that encompasses secure infrastructure, designing an architecture with layered security, continuous security validation, and monitoring for attacks.
 
-![Security](media/security-validation-cicd-pipeline/security.png)
+![Diagram showing the security evaluation loop.](media/security-validation-cicd-pipeline/security.png)
 
 Continuous security validation should be added at each step from development through production to help ensure the application is always secure. The goal of this approach is to switch the conversation with the security team from approving each release to approving the CI/CD process and having the ability to monitor and audit the process at any time. When building greenfield applications, the diagram below highlights the key validation points in the CI/CD pipeline. Depending on your platform and where your application is at in its lifecycle, you may need to consider implementing the tools gradually. Especially if your product is mature and you haven't previously run any security validation against your site or application.  
 
-![Feedback](media/security-validation-cicd-pipeline/feedback.png)
+![Diagram showing the CI/CD feedback loop.](media/security-validation-cicd-pipeline/feedback.png)
 
 ## IDE / Pull Request
 
@@ -58,17 +58,17 @@ One tool to consider for penetration testing is OWASP ZAP. [OWASP](https://www.o
 
 The application CI/CD pipeline should run within a few minutes, so you don't want to include any long-running processes. The baseline scan is designed to identify vulnerabilities within a couple of minutes making it a good option for the application CI/CD pipeline. The Nightly OWASP ZAP can spider the website and run the full Active Scan to evaluate the most combinations of possible vulnerabilities. OWASP ZAP can be installed on any machine in your network, but we like to use the OWASP Zap/Weekly docker container within Azure Container Services. This allows for the latest updates to the image and also allows being able to spin up multiple instances of the image so several applications within an enterprise can be scanned at the same time. The following figure outlines the steps for both the Application CI/CD pipeline and the longer running Nightly OWASP ZAP pipeline.
 
-![Pipeline](media/security-validation-cicd-pipeline/pipeline.png)
+![Diagram showing steps for Application CI/CD and OWASP ZAP pipelines.](media/security-validation-cicd-pipeline/pipeline.png)
 
 In addition to validating the application, the infrastructure should also be validated to check for any vulnerabilities. When using the public cloud such as Azure, deploying the application and shared infrastructure is easy, so it is important to validate that everything has been done securely. Azure includes many tools to help report and prevent these vulnerabilities including Security Center and Azure Policies. Also, we have set up a scanner that can ensure any public endpoints and ports have been added to an allow list or else it will raise an infrastructure issue. This is run as part of the Network pipeline to provide immediate verification, but it also needs to be executed each night to ensure that there aren't any resources publicly exposed that should not be.
 
-![Endpoint](media/security-validation-cicd-pipeline/endpoint.png)
+![Diagram showing pipeline endpoints.](media/security-validation-cicd-pipeline/endpoint.png)
 
 Once the scans have completed, the Azure Pipelines release is updated with a report that includes the results and bugs are created in the team's backlog. Resolved bugs will close if the vulnerability has been fixed and move back into in-progress if the vulnerability still exists.
 
 The benefit of using this is that the vulnerabilities are created as bugs that provide actionable work that can be tracked and measured. False positives can be suppressed using OWASP ZAP's context file, so only vulnerabilities that are true vulnerabilities are surfaced.
 
-![Backlog Board](media/security-validation-cicd-pipeline/backlogboard.png)
+![Screenshot showing a Backlog Board.](media/security-validation-cicd-pipeline/backlogboard.png)
 
 Even with continuous security validation running against every change to help ensure new vulnerabilities are not introduced, hackers are continuously changing their approaches, and new vulnerabilities are being discovered. Good monitoring tools allow you to help detect, prevent, and remediate issues discovered while your application is running in production. Azure provides a number of tools that provide detection, prevention, and alerting using rules such as OWASP Top 10 / modSecurity and now even using machine learning to detect anomalies and unusual behavior to help identify attackers.
 

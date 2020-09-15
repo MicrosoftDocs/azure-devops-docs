@@ -35,11 +35,11 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
    Access your recently visited boards, backlogs, queries, and sprints. 
 
-   ![search-box-azure-boards.png](media/work-item-search-get-started/search-box-azure-boards.png)
+   ![Screenshot showing recently visited boards, backlogs, queries, and sprints.](media/work-item-search-get-started/search-box-azure-boards.png)
 
    You can also search for the boards, backlogs, queries and sprints across your project by entering the board name in the search box.
 
-   ![search-other-items-in-boards](media/work-item-search-get-started/search-other-items-in-boards.png)
+   ![Screenshot that shows searching items in other boards.](media/work-item-search-get-started/search-other-items-in-boards.png)
 
 ::: moniker-end
 
