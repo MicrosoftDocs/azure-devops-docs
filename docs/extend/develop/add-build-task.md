@@ -554,7 +554,7 @@ stages:
             inputs:
               testResultsFormat: 'JUnit'
               testResultsFiles: '**/ResultsFile.xml'
-  - stage: Package_extension_and_ publish_ build_artifacts
+  - stage: Package_extension_and_publish_build_artifacts
     jobs:
       - job:
         steps:
