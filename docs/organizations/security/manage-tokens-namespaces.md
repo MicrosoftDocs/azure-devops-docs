@@ -76,6 +76,7 @@ The following parameters are optional for all commands, and not listed in the ex
 - **detect**: Automatically detect organization. Accepted values: false, true. Default is true.
 - **org**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `--org https://dev.azure.com/MyOrganizationName/`. 
 
+<a id="list-namespaces" />
 
 ## List security namespaces 
 
@@ -102,7 +103,7 @@ Enter `az devops security permission namespace list` to list the namespaces defi
 > [!div class="tabbedCodeSnippets"]
 ```CLI
 C: az devops security permission namespace list --org https://dev.azure.com/OrganizationName --output table
-Command group 'devops security permission' is in preview. It may be changed/removed in a future release.
+ 
 Id                                    Name
 ------------------------------------  ------------------------------
 c788c23e-1b46-4162-8f5e-d7585343b5de  ReleaseManagement
@@ -405,7 +406,7 @@ ExecuteUnrestrictedQuery  8      Execute query without any restrictions on the q
 The following table lists valid namespaces and provides descriptions and links to more information.  
 
 > [!NOTE]   
-> Some permissions don't appear in any user interface. These permissions are assigned to security roles, or members of a security group, or internal service accounts. 
+> Some permissions don't appear in any user interface. These permissions are assigned to security roles, members of a security group, or internal resources. 
 
 
 ---
@@ -769,7 +770,7 @@ The following table lists valid namespaces and provides descriptions and links t
       TBD
    :::column-end:::
    :::column span="2":::
-      [Manages permissions to create, delete, update, and publish extensions](azure/devops/extend/publish/overview). These permissions are granted when a user creates a publisher via the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher).
+      [Manages permissions to create, delete, update, and publish extensions](/azure/devops/extend/publish/overview). These permissions are granted when a user creates a publisher via the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher).
    :::column-end:::
 :::row-end:::
 ---
@@ -944,7 +945,9 @@ The following table lists valid namespaces and provides descriptions and links t
       5a6cd233-6615-414d-9393-48dbb252bd23
    :::column-end:::
    :::column span="2":::
-      Manages permissions for changing work tracking processes and managing link types. The`WorkItemTrackingProvision namespace is an older security namespace that is mostly used for TFS-2018 and earlier versions. The Process namespace replaces this namespace for managing processes in Azure DevOps Server 2019 and later versions. For token format, see [WorkItemTrackingProvision namespace](#work-item-tracking-provision-namespace).  
+      Manages permissions for changing work tracking processes and managing link types. The `WorkItemTrackingProvision` namespace is an older security namespace that is mostly used for TFS-2018 and earlier versions. The `Process` namespace replaces this namespace for managing processes in Azure DevOps Server 2019 and later versions.  
+      **Root token format**: `/$`   
+      **Token format for a specific project**: `$/PROJECT_ID`  
    :::column-end:::
 :::row-end:::
 ---
@@ -995,13 +998,6 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 
 ## Related articles
 
-- [Manage tokens and namespaces](/azure/devops/organizations/security/manage-tokens-namespaces) 
 - [Security Namespaces REST API](/rest/api/azure/devops/security/security%20namespaces)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd?view=azure-devops-2019) 
-
-
-## Related articles
-
-- [Security REST API](/rest/api/azure/devops/security/)
-- [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)
