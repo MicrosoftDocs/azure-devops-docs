@@ -38,7 +38,7 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
 
    ```YAML
    trigger:
-   - master
+   - main
    
    pool:
      vmImage: 'Ubuntu-16.04'
