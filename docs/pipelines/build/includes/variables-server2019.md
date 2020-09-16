@@ -7,6 +7,8 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
+<a id="agent-variables"></a>
+
 ## Agent variables (DevOps Server 2019)
 
 > [!NOTE]
@@ -120,6 +122,8 @@ This directory is not guaranteed to be writable by pipeline tasks (eg. when mapp
 </table>
 
 ## Build variables (DevOps Server 2019)
+
+<a id="build-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
@@ -453,6 +457,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 </table>
 
 ## System variables (DevOps Server 2019)
+
+<a id="system-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>

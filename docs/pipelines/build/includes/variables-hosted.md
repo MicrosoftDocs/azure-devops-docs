@@ -6,6 +6,7 @@ ms.author: jukullam
 author: juliakm
 ms.date: 02/13/2020
 ---
+<a id="agent-variables"></a>
 
 ##  Agent variables (DevOps Services)
 
@@ -139,6 +140,8 @@ Note: This directory is not guaranteed to be writable by pipeline tasks (eg. whe
 </table>
 
 ## Build variables (DevOps Services)
+
+<a id="build-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th><th>Available in templates?</th></tr>
@@ -524,6 +527,8 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 ## Pipeline variables (DevOps Services)
 
+<a id="pipeline-variables"></a>
+
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
 
@@ -536,6 +541,8 @@ For example, <code>/home/vsts/work/1</code>.</td>
 </table>
 
 ##  Deployment job variables (DevOps Services)
+
+<a id="deployment-job-variables"></a>
 
 These variables are scoped to a specific [Deployment job](../../process/deployment-jobs.md) and will be resolved only at job execution time. 
 
@@ -566,6 +573,8 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 
 
 ## System variables (DevOps Services)
+
+<a id="system-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th><th>Available in templates?</th></tr>
