@@ -35,46 +35,37 @@ In this tutorial, you will learn about:
 
 You'll need:
 
-* A release pipeline that contains at least one stage. If you don't already have one,
-  you can create it by working through any of the following quickstarts and tutorials:
+* A release pipeline that contains at least one stage. If you don't already have one, you can create it by working through any of the following quickstarts and tutorials:
 
   - [Deploy to an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
   - [Azure DevOps Project](../get-started-azure-devops-project.md)
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
-* Two separate targets where you will deploy the app. These could be virtual machines,
-  web servers, on-premises physical deployment groups, or other types of deployment target.
-  In this example, we are using Azure App Services website instances.
-  If you decide to do the same, you will have to choose names that are unique, but it's a good idea to include
-  "QA" in the name of one, and "Production" in the name of the other so that you
-  can easily identify them. Use the Azure portal to create a new web app.
+* Two separate targets where you will deploy the app. These could be virtual machines, web servers, on-premises physical deployment groups, or other types of deployment target.
+  In this example, we are using Azure App Services website instances. If you decide to do the same, you will have to choose names that are unique, but it's a good idea to include
+  "QA" in the name of one, and "Production" in the name of the other so that you can easily identify them. Use the Azure portal to create a new web app.
 
 ## Configure the triggers in your release pipeline
 
 In this section, you will check that the triggers you need for continuous deployment are configured in your release pipeline.
 
-1. In **Azure Pipelines**, open the **Releases** tab. Select your release pipeline and, in
-   the right pane, choose **Edit**.
+1. In **Azure Pipelines**, open the **Releases** tab. Select your release pipeline select **Edit**.
 
-   ![Opening the release pipeline by choosing Edit from the Releases tab](media/define-multistage-release-process/open-for-edit.png)
+   > [!div class="mx-imgBorder"]  
+   > ![edit the release pipelin](media/define-multistage-release-process/open-for-edit.png)
 
-1. Choose the **Continuous deployment trigger** icon in the **Artifacts** section to open the trigger panel.
-   Make sure this is enabled so that a new release is created after every new successful build is completed.
+1. Select the **Continuous deployment trigger** icon in the **Artifacts** section to open the trigger panel. Make sure this is enabled so that a new release is created after every new successful build is completed.
 
-   ![Opening the continuous deployment trigger panel from the left-side Artifacts panel in the Edit view](media/define-multistage-release-process/ci-trigger.png)
+   > [!div class="mx-imgBorder"]    
+   > ![continuous deployment trigger](media/define-multistage-release-process/ci-trigger.png)
 
-   For more information, see [Release triggers](triggers.md).
+1. Select the **Pre-deployment conditions** icon in the **Stages** section to open the conditions panel.
+   Make sure that the trigger for deployment to this stage is set to **After release**. This means that a deployment will be initiated automatically when a new release is created from this release pipeline.   
 
-1. Choose the **Pre-deployment conditions** icon in the **Stages** section to open the conditions panel.
-   Make sure that the trigger for deployment to this stage is set to **After release**.
-   This means that a deployment will be initiated automatically when a new release is created from this release pipeline.   
+   > [!div class="mx-imgBorder"]  
+   > ![pre-deployment conditions](media/define-multistage-release-process/environment-trigger.png)
 
-   ![Choosing the pre-deployment conditions icon for your release stage and setting the trigger to After release](media/define-multistage-release-process/environment-trigger.png)
-
-   Notice that you can also define artifact filters that determine a condition for the release to proceed,
-   and set up a schedule for deployments. You can use features to, for example, specify a branch from
-   which the build artifacts must have been created, or a specific time of day when you know the app will not be heavily used.
-   For more information, see [Stage triggers](triggers.md).
+   You can also setup [Release triggers](triggers.md), [Stage triggers](triggers.md#stage-triggers) or [schedule deployments](triggers.md##scheduled-release-triggers).
 
 ## Extend a release pipeline by adding stages
 
