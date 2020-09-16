@@ -7,6 +7,8 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
+<a id="agent-variables"></a>
+
 ## Agent variables (TFS 2018)
 
 > [!NOTE]
@@ -88,6 +90,8 @@ For example: <code>c:\agent_work</code>.
 </table>
 
 ## Build variables (TFS 2018)
+
+<a id="build-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
@@ -379,6 +383,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 </table>
 
 ## System variables (TFS 2018)
+
+<a id="system-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
