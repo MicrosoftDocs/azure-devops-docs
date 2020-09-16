@@ -392,7 +392,7 @@ If your [repository type](../repos/index.md) is one of the following, you can de
 For example, your team may want to keep:
 
 * User branch builds for five days, with a minimum of a single successful or partially successful build for each branch.
-* Master and feature branch builds for 10 days, with a minimum of three successful or partially successful builds for each of these branches. You exclude a special feature branch that you want to keep for a longer period of time.
+* Main and feature branch builds for 10 days, with a minimum of three successful or partially successful builds for each of these branches. You exclude a special feature branch that you want to keep for a longer period of time.
 * Builds from the special feature branch and all other branches for 15 days, with a minimum of a single successful or partially successful build for each branch.
 
 The following example retention policy for a build pipeline meets the above requirements:

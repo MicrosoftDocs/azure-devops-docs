@@ -27,7 +27,7 @@ You can change your preferred email address for notifications from your organiza
 > [!NOTE]   
 > To enable the new user interface for the New account manager, see [Manage or enable features](../project/navigation/preview-features.md).
 
-1. From your home page, open user settings ![user-settings-gear.png](../media/icons/user-settings-gear.png), and then select **Profile**.
+1. From your home page, open user settings :::image type="icon" source="../media/icons/user-settings-gear.png" border="false":::, and then select **Profile**.
 
    ![Open Azure DevOps profile](../media/open-user-settings-profile-preview.png)
 
