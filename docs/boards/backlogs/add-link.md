@@ -245,18 +245,16 @@ You can link work items to existing builds from the **Add link** dialog.
 
 1. If you don't know the build number&mdash;a combination of the pipeline and build name&mdash;you can search for it choosing the **...** button and using the **Find builds** dialog.  
 
-	Note you can choose a different project within your organization to link to a build. 
+	Note you can choose a different project within your organization to link to a build. With **All** selected, choose **Find** and then apply additional filters to narrow your search.
  
 	> [!div class="mx-imgBorder"]  
 	> ![Find builds dialog, Project filter available](media/add-link/find-builds-dialog.png)   
-
-	Apply additional filters to narrow the search. 
 
 1. Once you select a build, choose **OK** and then **OK** to save your changes and dismiss the dialogs. 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="< azure-devops"
 
 1. From the Add link dialog, choose one of the build link types&mdash;**Build**, **Found in build**, **Integrated in build**&mdash; and specify the build number. 
 
@@ -264,11 +262,11 @@ You can link work items to existing builds from the **Add link** dialog.
 	> ![Add link dialog, build link type selected](media/add-link/add-link-dialog-build.png)   
 
 1. If you don't know the build number&mdash;a combination of the pipeline and build name&mdash;you can search for it choosing the **...** button and using the **Find builds** dialog.  
- 
+
+	With **All** selected, choose **Find** and then apply additional filters to narrow your search.
+
 	> [!div class="mx-imgBorder"]  
 	> ![Find builds dialog, link to a build within your project](media/add-link/find-builds-dialog-2020-and-previous-versions.png)   
-
-	Apply additional filters to narrow the search. 
 
 1. Once you select a build, choose **OK** and then **OK** to save your changes and dismiss the dialogs. 
  
