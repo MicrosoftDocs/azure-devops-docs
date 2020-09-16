@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart 
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020 
+ms.date: 09/16/2020 
 ---
 
 
@@ -26,8 +26,9 @@ Use this article to learn how to:
 >[!div class="checklist"]      
 > * Link one or more work items to an existing work item   
 > * Link one or more work items to a new work item that you add when linking
-> * Add a link to a remote work item
-> * Link several work items to a new git branch
+> * Add a link to a remote work item 
+> * Link several work items to a new git branch 
+> * Link work items to a build artifact
 > * Find work items that you want to link to  
 > * Bulk modify link relationships   
 ::: moniker-end    
@@ -38,6 +39,7 @@ Use this article to learn how to:
 > * Link one or more work items to an existing work item   
 > * Link one or more work items to a new work item that you add when linking
 > * Link several work items to a new git branch
+> * Link work items to a build artifact
 > * Find work items that you want to link to  
 > * Bulk modify link relationships     
 ::: moniker-end    
@@ -223,6 +225,53 @@ From a backlog or query results page, [multi-select the work items](bulk-modify-
 > [!div class="mx-imgBorder"]  
 > ![Link multiple backlog items to a git branch, TFS 2017](media/add-link-new-branch.png)   
 
+::: moniker-end
+
+
+::: moniker range=">= azure-devops-2019"
+
+## Link work items to a build  
+
+You can link work items to existing builds from the **Add link** dialog. 
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+1. From the Add link dialog, choose one of the build link types&mdash;**Build**, **Found in build**, **Integrated in build**&mdash; and specify the build number. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add link dialog, build link type selected](media/add-link/add-link-dialog-build.png)   
+
+1. If you don't know the build number&mdash;a combination of the pipeline and build name&mdash;you can search for it choosing the **...** button and using the **Find builds** dialog.  
+
+	Note you can choose a different project within your organization to link to a build. 
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Find builds dialog, Project filter available](media/add-link/find-builds-dialog.png)   
+
+	Apply additional filters to narrow the search. 
+
+1. Once you select a build, choose **OK** and then **OK** to save your changes and dismiss the dialogs. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+1. From the Add link dialog, choose one of the build link types&mdash;**Build**, **Found in build**, **Integrated in build**&mdash; and specify the build number. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add link dialog, build link type selected](media/add-link/add-link-dialog-build.png)   
+
+1. If you don't know the build number&mdash;a combination of the pipeline and build name&mdash;you can search for it choosing the **...** button and using the **Find builds** dialog.  
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Find builds dialog, link to a build within your project](media/add-link/find-builds-dialog-2020-and-previous-versions.png)   
+
+	Apply additional filters to narrow the search. 
+
+1. Once you select a build, choose **OK** and then **OK** to save your changes and dismiss the dialogs. 
+ 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
