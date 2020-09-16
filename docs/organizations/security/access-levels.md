@@ -82,7 +82,7 @@ The following table indicates those features available for each supported access
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><strong>Agile boards</strong><br/>Includes limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a>. On Boards, Stakeholders can't add work items and can't update fields displayed on cards. 
+<td align="left"><strong>Agile boards</strong><br/>Stakeholders have limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a> and <a href="../../boards/sprints/task-board.md">Taskboards</a>. Stakeholders can't add work items, can't update fields displayed on cards, and can't view or set <a href="../../boards/sprints/set-capacity.md">Capacity</a>.
 </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -244,7 +244,7 @@ The following table indicates those features available for each supported access
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><strong>Agile boards</strong><br/>Includes limited access to <a href="../../boards/boards/kanban-quickstart.md" >Kanban boards</a>. On Boards, Stakeholders can't add work items, can't drag-and-drop work items to update status, and can't update fields displayed on cards. 
+<td align="left"><strong>Agile boards</strong><br/>Stakeholders have limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a> and <a href="../../boards/sprints/task-board.md">Taskboards</a>. Stakeholders can't add work items, can't drag-and-drop cards to update status, can't update fields displayed on cards, and can't view or set <a href="../../boards/sprints/set-capacity.md">Capacity</a>.
 </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -426,7 +426,7 @@ The following table indicates those features available for each supported access
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><strong>Agile boards</strong><br/>Includes limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a>. On Boards, Stakeholders can't add work items, can't drag-and-drop work items to update status, and can't update fields displayed on cards. 
+<td align="left"><strong>Agile boards</strong><br/>Stakeholders have limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a> and <a href="../../boards/sprints/task-board.md">Taskboards</a>. Stakeholders can't add work items, can't drag-and-drop cards to update status, can't update fields displayed on cards, and can't view or set <a href="../../boards/sprints/set-capacity.md">Capacity</a>.
 </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -580,7 +580,7 @@ The following table indicates those features available for each supported access
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><strong>Agile boards</strong><br/>Includes limited access to <a href="../../boards/boards/kanban-quickstart.md" >Kanban boards</a>. On Boards, Stakeholders can't add work items, can't drag-and-drop work items to update status, and can't update fields displayed on cards. 
+<td align="left"><strong>Agile boards</strong><br/>Stakeholders have limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a> and <a href="../../boards/sprints/task-board.md">Taskboards</a>. Stakeholders can't add work items, can't drag-and-drop cards to update status, can't update fields displayed on cards, and can't view or set <a href="../../boards/sprints/set-capacity.md">Capacity</a>.
 </td>
 <td>✔️</td>
 <td>✔️</td>
