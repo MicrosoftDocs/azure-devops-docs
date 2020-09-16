@@ -42,10 +42,19 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 * To add work items and exercise all board features, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 * To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
 
+::: moniker range=">= azure-devops"
 
 > [!NOTE]  
 > Users with **Stakeholder** access can't exercise these **Taskboard** features: add tasks, update fields displayed on cards, or drag-and-drop tasks to update status or change sprint assignment.  
 
+::: moniker-end
+
+::: moniker range="<= azure-devops-2020"
+
+> [!NOTE]  
+> Users with **Stakeholder** access can't exercise these **Taskboard** features: add tasks, update fields displayed on cards, or drag-and-drop tasks to update status or change sprint assignment.  
+
+::: moniker-end
 
 ## Open the sprint Taskboard for your team
 

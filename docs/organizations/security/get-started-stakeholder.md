@@ -188,11 +188,15 @@ From the Kanban board, you can't add work items, but you can open them and annot
 
 <a id="update-status">  </a> 
 
+::: moniker range="azure-devops"
+
 ## Update status of work items 
 
 As work completes in one stage, update the status of an item by dragging it to a downstream stage. 
 
 ![Screenshot of Kanban board, Agile template, update status of work item.](../../boards/boards/media/ALM_CC_MoveCard.png)  
+
+::: moniker-end  
 
 ## Add details to a work item
 

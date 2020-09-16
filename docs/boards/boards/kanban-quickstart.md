@@ -8,7 +8,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 09/10/2020
 ---
 
 # Start using your Kanban board
