@@ -7,7 +7,7 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
-## Agent variables
+## Agent variables (TFS 2017)
 
 > [!NOTE]
 > You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
@@ -70,7 +70,7 @@ For example: <code>c:\agent_work</code>.
 
 </table>
 
-## Build variables
+## Build variables (TFS 2017)
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
@@ -364,7 +364,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 </table>
 
-## System variables
+## System variables (TFS 2017)
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
