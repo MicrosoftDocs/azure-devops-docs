@@ -121,7 +121,7 @@ You can approve deployments from within your channel without navigating to the A
 
 Whenever the running of a stage is pending for approval, a notification card with options to approve or reject the request is posted in the channel. Approvers can review the details of the request in the notification and take appropriate action. In the following example, the deployment was approved and the approval status is displayed on the card.
 
-![Approved](media/integrations-slack/approved.png)
+![Screenshot showing approved notification.](media/integrations-slack/approved.png)
 
 The app supports all the checks and approval scenarios present in Azure Pipelines portal, like single approver, multiple approvers (any one user, any order, in sequence) and teams as approvers. You can approve requests as an individual or on behalf of a team.
 

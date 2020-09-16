@@ -184,13 +184,13 @@ Git will show diffs and merge conflicts in your preferred tools. The settings in
 
 The **Remotes** section allows you to configure the remotes for this repository. This setting corresponds to the [git remote](https://git-scm.com/docs/git-remote) command and is available at the repository scope.
 
-![Remotes](media/git-config/remotes.png)
+![Screenshot showing the Remotes section.](media/git-config/remotes.png)
 
 ### Other
 
 The **Other** section allows you to view the Git configuration settings for this repository, with the exception of settings that are displayed and managed in the Visual Studio Git settings pane.
 
-![Other](media/git-config/other.png)
+![Screenshot showing the Other section.](media/git-config/other.png)
 
 To view all of your Git configuration settings, you can open and view the configuration files themselves, or you can run `git config --list` to display the settings.
 

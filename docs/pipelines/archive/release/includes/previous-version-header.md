@@ -9,7 +9,7 @@ ms.date: 02/19/2020
 
 **Visual Studio 2015 | Azure Pipelines | TFS 2015 | [Previous version](../overview-rm2013.md)**  
 
-![horizontal-line](../media/horizontal-line.png)
+:::image type="icon" source="../media/horizontal-line.png" border="false":::
 
 ![information](../media/info1.png)
 **A newer version of is available**
@@ -28,5 +28,5 @@ If you are already using an earlier server and client
 version, you should be aware that no new features will
 be added to these versions.
  
-![horizontal-line](../media/horizontal-line.png)
+:::image type="icon" source="../media/horizontal-line.png" border="false":::
 

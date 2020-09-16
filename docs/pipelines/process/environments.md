@@ -4,12 +4,12 @@ description: Collection of deployment targets useful for traceability and record
 ms.topic: conceptual
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
 ms.date: 02/10/2020
-monikerRange: azure-devops
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Create and target an environment
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [include](../includes/version-server-2020-rtm.md)]
 
 An environment is a collection of resources, such as Kubernetes clusters and virtual machines, that can be targeted by deployments from a pipeline. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
 

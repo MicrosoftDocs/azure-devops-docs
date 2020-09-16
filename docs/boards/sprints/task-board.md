@@ -56,7 +56,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 	> [!div class="mx-imgBorder"]
 	> ![Open the sprint Taskboard for a team](media/add-tasks/open-sprint-backlog-taskboard-s155-co.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another team](media/add-tasks/team-selector-sprints-agile.png)
@@ -78,7 +78,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 	> [!div class="mx-imgBorder"]
 	> ![Open the sprint Taskboard for a team](media/taskboard/open-taskboard-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another team](media/add-tasks/team-selector-sprints-agile.png)

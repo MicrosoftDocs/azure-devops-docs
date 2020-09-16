@@ -35,17 +35,17 @@ To learn more about collecting and publishing code coverage results for the lang
 Once you have configured a pipeline that collects and publishes code coverage, it posts a code coverage status when a pull request is raised. By default, the server checks for atleast 70% of changed lines being covered by tests. The diff coverage threshold target can be changed to a value of your choice. See the settings configuration section below to learn more about this. 
 
 > [!div class="mx-imgBorder"]
-> ![coverageStatusCheck](media/codecoverage-for-pullrequests/coveragestatuscheck.png)
+> ![Screenshot showing coverage status check.](media/codecoverage-for-pullrequests/coveragestatuscheck.png)
 
 The status check evaluates the diff coverage value for all the code files in the pull request. If you would like to view the % diff coverage value for each of the files, you can turn on details as mentioned in the configuration section. Turning on details posts details as a comment in the pull request.
 
 > [!div class="mx-imgBorder"]
-> ![coverageDetailComments](media/codecoverage-for-pullrequests/coverageDetailsComments.png)
+> ![Screenshot showing coverage detail comments.](media/codecoverage-for-pullrequests/coverageDetailsComments.png)
 
 In the changed files view of a pull request, lines that are changed are also annotated with coverage indicators to show whether those lines are covered.
 
 > [!div class="mx-imgBorder"]
-> ![coverageIndicatorsPR](media/codecoverage-for-pullrequests/coverageIndicatorsPR.png)
+> ![Screenshot showing coverage indicators.](media/codecoverage-for-pullrequests/coverageIndicatorsPR.png)
 
 > [!NOTE] 
 > While you can build code from a wide variety of version control systems that Azure Pipelines supports, the **code coverage for pull requests** feature discussed in this document is currently available only for Azure Repos.

@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Run pipeline jobs inside of a container
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 09/11/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -16,10 +16,7 @@ By default, [jobs](phases.md) run on the host machine where the [agent](../agent
 is installed.
 This is convenient and typically well-suited for projects that are just beginning to adopt Azure Pipelines.
 Over time, you may find that you want more control over the context where your tasks run.
-
-
-> [!NOTE] 
-> The Classic editor doesn't support container jobs at this time.
+YAML pipelines offer container jobs for this level of control.
 
 [!INCLUDE [container-vs-host](./includes/container-vs-host.md)]
 
@@ -71,8 +68,8 @@ See [this post](https://blogs.technet.microsoft.com/nanoserver/2016/05/04/node-j
 
 ### Hosted agents
 
-Only `windows-2019` and `ubuntu-16.04` pools support running containers.
-The Hosted macOS pool does not support running containers.
+Only `windows-2019` and `ubuntu-*` images support running containers.
+The macOS image does not support running containers.
 
 ## Single job
 
@@ -80,21 +77,17 @@ A simple example:
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-18.04'
 
-container: ubuntu:16.04
+container: ubuntu:18.04
 
 steps:
 - script: printenv
 ```
 
-This tells the system to fetch the `ubuntu` image tagged `16.04` from
+This tells the system to fetch the `ubuntu` image tagged `18.04` from
 [Docker Hub](https://hub.docker.com) and then start the container. When the
-`printenv` command runs, it will happen inside the `ubuntu:16.04` container.
-
-> [!Note]
-> You must specify "Hosted Ubuntu 1604" as the
-> pool name in order to run Linux containers. Other pools won't work.
+`printenv` command runs, it will happen inside the `ubuntu:18.04` container.
 
 A Windows example:
 
@@ -110,8 +103,7 @@ steps:
 
 > [!Note]
 > Windows requires that the kernel version of the host and container match.
-> Since this example uses the hosted Windows Container pool, which is running a windows-2019
-> build, we will use the `2019` tag for the container.
+> Since this example uses the Windows 2019 image, we will use the `2019` tag for the container.
 
 ## Multiple jobs
 
@@ -121,7 +113,7 @@ In the following example, the same steps run in multiple versions of Ubuntu Linu
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-18.04'
 
 strategy:
   matrix:
@@ -179,7 +171,7 @@ If you need to control container startup, you can specify `options`.
 
 ```yaml
 container:
-  image: ubuntu:16.04
+  image: ubuntu:18.04
   options: --hostname container-test --ip 192.168.0.1
 
 steps:
@@ -209,7 +201,7 @@ resources:
 jobs:
 - job: RunInContainer
   pool:
-    vmImage: 'ubuntu-16.04'
+    vmImage: 'ubuntu-18.04'
 
   strategy:
     matrix:

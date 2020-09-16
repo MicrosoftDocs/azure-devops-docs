@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 05/26/2020
+ms.date: 09/10/2020
 ---
 
 # Add a build or release task
@@ -531,7 +531,7 @@ stages:
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@2
+          - task: TfxInstaller@3
             inputs:
               version: "v0.7.x"
           - task: Npm@1
@@ -558,7 +558,7 @@ stages:
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@2
+          - task: TfxInstaller@3
             inputs:
               version: "v0.7.x"
           - task: Npm@1
@@ -605,7 +605,7 @@ stages:
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@2
+          - task: TfxInstaller@3
             inputs:
               version: "v0.7.x"
           - task: DownloadBuildArtifacts@0

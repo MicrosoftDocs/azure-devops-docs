@@ -86,7 +86,7 @@ When you inform your users of the completed change, include the following tasks 
 
     b. Select **SSH public keys**, and then select **Add**.
 
-     ![user-settings-security-ssh.png](media/shared/user-settings-security-ssh.png)
+     ![Screenshot that shows adding a SSH public key.](media/shared/user-settings-security-ssh.png)
 
     c. Enter a description and key data, and then select **Save**.
 
