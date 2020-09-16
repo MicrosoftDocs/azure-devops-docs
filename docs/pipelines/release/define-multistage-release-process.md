@@ -45,9 +45,9 @@ You'll need:
   In this example, we are using Azure App Services website instances. If you decide to do the same, you will have to choose names that are unique, but it's a good idea to include
   "QA" in the name of one, and "Production" in the name of the other so that you can easily identify them. Use the Azure portal to create a new web app.
 
-## Configure the triggers in your release pipeline
+## Continuous deployment (CD) triggers
 
-In this section, you will check that the triggers you need for continuous deployment are configured in your release pipeline.
+Enabling continuous deployment trigger will instruct the pipeline to automatically create a new release every time a new build is available.
 
 1. In **Azure Pipelines**, open the **Releases** tab. Select your release pipeline select **Edit**.
 
@@ -69,43 +69,36 @@ In this section, you will check that the triggers you need for continuous deploy
 
 ## Extend a release pipeline by adding stages
 
-In this section, you will add a new stage to the release pipeline. The two stages will deploy your app to the
-"QA" and the "Production" targets (in our example, two Azure App Services websites). This is a typical scenario where you deploy initially to a test or staging server, and then to a
-live or production server. Each [stage](../process/stages.md)
-represents one deployment target, though that target could be a physical or virtual server,
-a groups of servers, or any other legitimate physical or virtual deployment target.
+In this section, you will add a new stage to the release pipeline. The two stages will deploy your app to the "QA" and "Production" stages (in our example, two Azure App Services websites). This is a typical scenario where you deploy initially to a test or staging server, and then to a live or production server. Each [stage](../process/stages.md)
+represents one deployment target.
 
-1. In the **Pipeline** tab of your release pipeline, select the existing stage and rename it to **Production**.
+1. Select the **Pipeline** tab in your release pipeline and select the existing stage. Change the name of your stage to **Production**.
 
-   ![Choosing an existing stage from the Pipelines tab and changing the name to Production in the Stage panel](media/define-multistage-release-process/rename-environment-prod.png)
+   > [!div class="mx-imgBorder"]
+   > ![Choosing an existing stage from the Pipelines tab and changing the name to Production in the Stage panel](media/define-multistage-release-process/rename-environment-prod.png)
 
-1. Open the **+ Add** drop-down list and choose **Clone stage** (the clone option is available only
-   when an existing stage is selected).
+1. Select the **+ Add** drop-down list and choose **Clone stage** (the clone option is available only when an existing stage is selected).
 
-   ![Choosing the Add button from the Stages menu and selecting Clone stage](media/define-multistage-release-process/clone-environment.png)
+   > [!div class="mx-imgBorder"]
+   > ![selecting Clone stage](media/define-multistage-release-process/clone-environment.png)
 
-   Typically, you want to use the same deployment methods with a test and a production stage
-   so that you can be sure the deployed apps will behave in exactly the same way. Therefore, cloning an existing
-   stage is a good way to ensure you have the same settings for both. Then you just need to change the deployment
-   targets (the websites where each copy of the app will be deployed).
+   Typically, you want to use the same deployment methods with a test and a production stage so that you can be sure your deployed apps will behave the same way. Cloning an existing stage is a good way to ensure you have the same settings for both. You then just need to change the deployment targets.
 
-1. The clone of the stage appears after the existing stage in the pipeline, and has the name **Copy of Production**.
-   Select this stage and, in the **Stages** panel, change the name to **QA**.
+1. Your cloned stage will have the name **Copy of Production**. Select it and change the name to **QA**.
 
-   ![Choosing the cloned stage and renaming it to QA in the Stage panel](media/define-multistage-release-process/rename-copy-environment.png)
+   > [!div class="mx-imgBorder"]   
+   > ![changing stage name to QA](media/define-multistage-release-process/rename-copy-environment.png)
 
-1. To reorganize the stages in the pipeline, choose the **Pre-deployment conditions** icon for the **QA** stage and
-   set the trigger to **After release**. The pipeline diagram changes to show that the deployment to the two stages will
-   now execute in parallel.
+1. To reorganize the stages in the pipeline, select the **Pre-deployment conditions** icon in your **QA** stage and set the trigger to **After release**. The pipeline diagram will then show the two stages in parallel.
 
-   ![Choosing the new QA stage and selecting After Release from the Triggers panel](media/define-multistage-release-process/change-trigger-qa.png)
+   > [!div class="mx-imgBorder"]   
+   > ![reorganizing stages](media/define-multistage-release-process/change-trigger-qa.png)
 
-1. Choose the **Pre-deployment conditions** icon for the **Production** stage and
-   set the trigger to **After stage**, then select **QA** in the **Stages** drop-down list.
-   The pipeline diagram changes to show that the deployment to the two stages will
-   now execute in the required order.
+1. Select the **Pre-deployment conditions** icon in your **Production** stage and set the trigger to **After stage**, then select **QA** in the **Stages** drop-down list.
+   The pipeline diagram will now indicate that the two stages will execute in the correct order.
 
-   ![Choosing the new QA stage and selecting After Stage from the Triggers panel](media/define-multistage-release-process/change-trigger-prod.png)
+   > [!div class="mx-imgBorder"]    
+   > ![Selecting QA triggers and stages](media/define-multistage-release-process/change-trigger-prod.png)
 
    Notice that you can specify deployment to start when a deployment to the previous stage is _partially_ successful.
    Usually, this means the deployment tasks were set to continue the deployment even if a specific non-critical task failed
