@@ -184,7 +184,17 @@ You can start viewing and adding work items once you connect to a project. The e
 
 ## Add work items to a product backlog 
 
+::: moniker range="azure-devops"
+
+From the Kanban board, you can't add work items, but you can open them and annotate them. To add work items, open the backlog by choosing the **Backlog** link.  
+
+::: moniker-end  
+
+::: moniker range="<= azure-devops-2020"
+
 From the Kanban board, you can't add work items, but you can open them and annotate them. To add work items, open the backlog by choosing the **Backlog** link. Also, you can't update the status of a work item by drag-and-drop to a different column or reorder cards within a column. 
+
+::: moniker-end  
 
 <a id="update-status">  </a> 
 

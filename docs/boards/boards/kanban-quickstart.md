@@ -100,7 +100,15 @@ To customize the set of fields displayed on the card, see [Customize cards](../.
 
 As work completes in one stage, update the status of an item by dragging it to a downstream stage. 
 
+::: moniker range="<= azure-devops-2020"
+
+> [!NOTE]   
+> Users assigned Stakeholder access aren't about to use the drag-and-drop feature to update status. 
+
+::: moniker-end
+
 ![Kanban board, Agile template, update status of work item](media/ALM_CC_MoveCard.png)  
+
 
 ::: moniker range=">= tfs-2015"
 
@@ -110,10 +118,7 @@ You can quickly update a field or reassign ownership directly from the board. If
 
 ![Kanban, assign items](media/ALM_CC_UpdateFieldOnCard.png)
 
-
 ::: moniker-end
-
-
 
 ## Invite others to work on your Kanban board 
 
