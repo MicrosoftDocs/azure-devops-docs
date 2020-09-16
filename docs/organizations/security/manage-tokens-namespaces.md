@@ -435,6 +435,7 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="":::
       Analytics
@@ -463,6 +464,8 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="":::
       AuditLog
@@ -476,6 +479,8 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="":::
       BoardsExternalIntegration
@@ -488,6 +493,7 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 :::row:::
    :::column span="":::
       Build
@@ -516,6 +522,7 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="":::
       Chat
@@ -527,6 +534,7 @@ The following table lists valid namespaces and provides descriptions and links t
       Manages permissions for chat services integrated with Azure DevOps, such as Slack and Microsoft Teams. For more information, see [Azure Boards with Slack](/azure/devops/boards/integrations/boards-slack), [Azure Boards with Microsoft Teams](/azure/devops/boards/integrations/boards-teams), [Azure Pipelines with Slack](/azure/devops/pipelines/integrations/slack), [Azure Pipelines with Microsoft Teams](/azure/devops/pipelines/integrations/microsoft-teams), [Azure Repos with Slack](/azure/devops/repos/integrations/repos-slack), and [Azure Repos with Microsoft Teams](/azure/devops/repos/integrations/repos-teams). 
    :::column-end:::
 :::row-end:::
+::: moniker-end
 ---
 :::row:::
    :::column span="":::
@@ -552,6 +560,7 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="":::
       DashboardsPrivileges
@@ -564,6 +573,8 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
+::: moniker range="azure-devops"
 :::row:::
    :::column span="":::
       Discussion Threads
@@ -576,6 +587,8 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="":::
       DistributedTask
@@ -588,6 +601,7 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 :::row:::
    :::column span="":::
       Environment
@@ -718,6 +732,7 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="":::
       Plan
@@ -730,6 +745,8 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
+::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="":::
       Process
@@ -742,6 +759,7 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 :::row:::
    :::column span="":::
       Project
@@ -763,18 +781,21 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range="tfs-2017 || tfs-2018"
 :::row:::
    :::column span="":::
       Publisher (Publish extensions)
    :::column-end:::
    :::column span="":::
-      TBD
+       
    :::column-end:::
    :::column span="2":::
-      [Manages permissions to create, delete, update, and publish extensions](/azure/devops/extend/publish/overview). These permissions are granted when a user creates a publisher via the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher).
+      [Manages permissions to create, delete, update, and publish extensions](/azure/devops/extend/publish/overview). These permissions are granted when a user creates a publisher via the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher). 
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="":::
       ReleaseManagement
@@ -795,6 +816,8 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
+::: moniker range="< azure-devops"
 :::row:::
    :::column span="":::
       Server
@@ -807,6 +830,8 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
+::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="":::
       ServiceEndpoints
@@ -819,6 +844,8 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="":::
       ServiceHooks
@@ -831,6 +858,7 @@ The following table lists valid namespaces and provides descriptions and links t
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 :::row:::
    :::column span="":::
       Tagging
@@ -884,7 +912,7 @@ The following table lists valid namespaces and provides descriptions and links t
       a39371cf-0841-4c16-bbd3-276e341bc052
    :::column-end:::
    :::column span="2":::
-      Manages permissions to query usage.  
+      Manages permissions for a [Team Foundation Version Control (TFVC) repository](/azure/devops/organizations/security/permissions#tfvc). You can manage these permissions through the [Project settings, Repository administrative interface](/azure/devops/organizations/security/set-git-tfvc-repository-permissions#set-tfvc-repository-permissions). 
    :::column-end:::
 :::row-end:::
 ---
