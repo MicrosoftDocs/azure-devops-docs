@@ -6,7 +6,7 @@ ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
 ms.topic: tutorial
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/24/2018
+ms.date: 09/16/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,19 +20,16 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-Azure Pipelines and Team Foundation Server (TFS) provide a highly
-configurable and manageable pipeline for releases to multiple stages
-such as development, staging, QA, and production stages; including
-requiring approvals at specific stages.
+Azure Pipelines provide a highly configurable and manageable pipeline for releases to multiple stages such as development, staging, QA, and production. it also offer the opportunity to implement gates and approvals at each specific stage.
 
-In this tutorial, you learn about:
+In this tutorial, you will learn about:
 
 > [!div class="checklist"]
-> * Configuring triggers within the release pipeline
-> * Extending a release pipeline by adding stages
-> * Configuring the stages as a multi-stage release pipeline
-> * Adding approvals to your release pipeline
-> * Creating a release and monitoring the deployment to each stage
+> * Configure triggers within release pipelines
+> * Extend release pipelines by adding stages
+> * Configure stages as a multi-stage release pipeline
+> * Add approvals to release pipelines
+> * Create releases and monitor deployments to each stage
 
 ## Prerequisites
 
