@@ -45,14 +45,14 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 ::: moniker range=">= azure-devops"
 
 > [!NOTE]  
-> Users with **Stakeholder** access can't exercise these **Taskboard** features: add tasks, update fields displayed on cards, or drag-and-drop tasks to update status or change sprint assignment.  
+> Users assigned **Stakeholder** access can't exercise these **Taskboard** features: add tasks, update fields displayed on cards, or use the **Planning** pane to change the sprint assignment.  
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2020"
 
 > [!NOTE]  
-> Users with **Stakeholder** access can't exercise these **Taskboard** features: add tasks, update fields displayed on cards, or drag-and-drop tasks to update status or change sprint assignment.  
+> Users with **Stakeholder** access can't exercise these **Taskboard** features: add tasks, update fields displayed on cards, drag-and-drop tasks to update status, or use the **Planning** pane to change the sprint assignment.   
 
 ::: moniker-end
 
