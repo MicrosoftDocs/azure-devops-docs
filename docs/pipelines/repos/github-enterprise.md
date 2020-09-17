@@ -114,7 +114,7 @@ Problems related to GitHub Enterprise integration fall into the following catego
 
 ### Failing checkout
 
-Do you use Microsoft-hosted agents? If so, these agents may not be able to reach your Github Enterprise Server. See [Not reachable from Microsoft-hosted agents](#not-reachable-from-microsoft-hosted-agents) for more information.
+Do you use Microsoft-hosted agents? If so, these agents may not be able to reach your GitHub Enterprise Server. See [Not reachable from Microsoft-hosted agents](#not-reachable-from-microsoft-hosted-agents) for more information.
 
 ### Wrong version
 
