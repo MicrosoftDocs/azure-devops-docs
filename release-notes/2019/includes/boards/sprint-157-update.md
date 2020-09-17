@@ -9,7 +9,7 @@ Rollup columns show progress bars and/or totals of numeric fields or descendant 
 For example, here we show **Progress by Work Items** which displays progress bars for ascendant work items based on the percentage of descendant items that have been closed. Descendant items for Epics includes all child Features and their child or grand child work items. Descendant items for Features includes all child User Stories and their child work items.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_15.png)
+> ![Track the progress of parent items.](../../media/157_15.png)
 
 ### Taskboard live updates
 
