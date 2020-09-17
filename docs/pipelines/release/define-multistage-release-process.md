@@ -67,10 +67,9 @@ Enabling continuous deployment trigger will instruct the pipeline to automatical
 
    You can also setup [Release triggers](triggers.md), [Stage triggers](triggers.md#stage-triggers) or [schedule deployments](triggers.md##scheduled-release-triggers).
 
-## Extend a release pipeline by adding stages
+## Add stages
 
-In this section, you will add a new stage to the release pipeline. The two stages will deploy your app to the "QA" and "Production" stages (in our example, two Azure App Services websites). This is a typical scenario where you deploy initially to a test or staging server, and then to a live or production server. Each [stage](../process/stages.md)
-represents one deployment target.
+In this section, we will add two new stages to our release pipeline: QA and production (Two Azure App Services websites in this example). This is a typical scenario where you would deploy initially to a test or staging server, and then to a live or production server. Each [stage](../process/stages.md) represents one deployment target.
 
 1. Select the **Pipeline** tab in your release pipeline and select the existing stage. Change the name of your stage to **Production**.
 
@@ -115,31 +114,27 @@ represents one deployment target.
 
 <a name="add-approvals"></a>
 
-## Add approvals within a release pipeline
+## Add Pre-deployment approvals
 
-The release pipeline you have modified deploys to test and then to production. If the deployment to test fails, the trigger
-on the production stage does not fire, and so it is not deployed to production. However, it is typically the case that
-you want the deployment to pause after _successful_ deployment to the test website so that you can verify the app is working correctly before
-you deploy to production. In this section, you will add an approval step to the release pipeline to achieve this.
+The release pipeline we previously modified deploys to QA and production. If the deployment to QA fails then deployment to production won't trigger.
+It is recommended to always verify if your app is working properly in QA or test stage before deploying to production. Adding approvals will ensure all the criteria are met before deploying to the next stage. To add approvals to your pipeline follow the steps below:
 
-1. Back in the **Pipeline** tab of the release pipeline, choose the **Pre-deployment conditions** icon in the **Stages** section
-   to open the conditions panel. Scroll down to the **Pre-deployment approvers** section and enable pre-deployment approvers.
+1. Select the **Pipeline** tab,  **Pre-deployment conditions** icon then **Pre-deployment approvers**.
 
-   ![Viewing the pre-deployment approvers settings from the Stages panel](media/define-multistage-release-process/open-approvers.png)
+   > [!div class="mx-imgBorder"] 
+   > ![pre-deployment approvers panel](media/define-multistage-release-process/open-approvers.png)
 
-1. In the **Approvers** section, choose your user(s) from the list. You
-   can type part of a name to search for matches. Also make sure you clear (untick) the checkbox 
-   **User requesting a release...** so that you can approve your own releases.
+1. In the **Approvers** text box, enter the user(s) that will be responsible for approving the deployment. It is also recommended to uncheck the **The user requesting a release or deployment should not approve it** check box.
 
-   ![Adding approvers from the Pre-deployment condition panel](media/define-multistage-release-process/select-approvers.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Adding pre-deployment approvers](media/define-multistage-release-process/select-approvers.png)
 
-   You can add as many approvers as you need, both individual users and organization groups.
-   It's also possible to set up post-deployment approvals by choosing the icon at the right side of the stage item in the pipeline diagram.
-   For more information, see [Approvals and gates overview](approvals/index.md).
+   You can add as many approvers as you need, both individual users and organization groups. It's also possible to set up post-deployment approvals by selecting the "user" icon at the right side of the stage in the pipeline diagram. For more information, see [Releases gates and approvals](approvals/index.md).
 
-1. Save the modified release pipeline.
+1. Select **Save**.
 
-   ![Saving the release pipeline by choosing Save from the top Releases menu](media/define-multistage-release-process/save-definition.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Saving the release pipeline](media/define-multistage-release-process/save-definition.png)
 
 <a name="create-release"></a>
 
