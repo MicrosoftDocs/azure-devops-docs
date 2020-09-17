@@ -48,10 +48,9 @@ For a list of all link types and supported link relationships, see [Linking, tra
 
 [!INCLUDE [temp](../includes/prerequisites.md)] 
 
-<a id="link"> </a>  
+<a id="link"> </a>
 
-…
-
+&nbsp;
 
 ## Link several work items 
 
