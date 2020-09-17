@@ -100,28 +100,18 @@ represents one deployment target.
    > [!div class="mx-imgBorder"]    
    > ![Selecting QA triggers and stages](media/define-multistage-release-process/change-trigger-prod.png)
 
-   Notice that you can specify deployment to start when a deployment to the previous stage is _partially_ successful.
-   Usually, this means the deployment tasks were set to continue the deployment even if a specific non-critical task failed
-   (the default is that all tasks must succeed). You're most likely to set this option if you create a pipeline containing
-   [fork and join deployments](triggers.md) that deploy to different stages in parallel.  
+   > [!NOTE]   
+   > You can set up your deployment to start when a deployment to the previous stage is _partially_ successful. This means that the deployment will continue even if a specific non-critical task have failed. This is usually used in a fork and join deployments that deploy to different stages in parallel.
+    
+1. Select the **Tasks** drop-down list and select the **QA** stage.
 
-1. Open the **Tasks** drop-down list and choose the **QA** stage.
-   Recall that this stage is a clone of the original **Production** stage in the release pipeline.
-   Therefore, currently, it will deploy the app to the same target as the **Production** stage.
+   > [!div class="mx-imgBorder"] 
+   > ![Tasks drop down and selecting QA stage](media/define-multistage-release-process/open-qa-tasks.png)
 
-   ![Opening the Tasks list from the project menu and viewing the original Production app service name](media/define-multistage-release-process/open-qa-tasks.png)
+1. Depending on the tasks that you are using, change the settings so that this stage deploys to your "QA" target. In our example, we will be using **Deploy Azure App Service** task as shown below. 
 
-1. Depending on the tasks that you are using, change the settings so that this stage deploys to your "QA" target. In our example,
-   using Azure App Services websites, we just need to select the **Deploy Azure App Service** task and select the "QA"
-   website instead of the "Production" website.
-
-   ![Changing the App service name to a new QA deployment-specific name](media/define-multistage-release-process/change-target-environment.png)
-
-   If you are using a different type of task to deploy your app, the way you change the target for the deployment
-   may differ. For example, if you are using deployment groups, you may be able to select a different deployment group,
-   or a different set of tags within the same deployment group.
-
-[!INCLUDE [edit-template-vars-in-environment](../apps/includes/edit-template-vars-in-environment.md)]
+   > [!div class="mx-imgBorder"]
+   > ![Using the deploy azure app service task](media/define-multistage-release-process/change-target-environment.png)
 
 <a name="add-approvals"></a>
 
