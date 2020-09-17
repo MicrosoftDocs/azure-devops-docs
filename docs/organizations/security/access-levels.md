@@ -82,7 +82,7 @@ The following table indicates those features available for each supported access
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><strong>Agile boards</strong><br/>Stakeholders have limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a> and <a href="../../boards/sprints/task-board.md">Taskboards</a>. Stakeholders can't add work items, can't update fields displayed on cards, and can't view or set <a href="../../boards/sprints/set-capacity.md">Capacity</a>.
+<td align="left"><strong>Agile boards</strong><br/>Stakeholders have limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a> and <a href="../../boards/sprints/task-board.md">Taskboards</a>. Stakeholders can add work items and update status through drag-and-drop, but can't update fields displayed on cards and can't view or set <a href="../../boards/sprints/set-capacity.md">Capacity</a>.
 </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -672,7 +672,7 @@ The following table indicates those features available for each supported access
 
 ## Stakeholder access
 
-With Stakeholder access, users can create and modify work items and create and save queries. They have limited access to many of the Azure Boards features. They also can view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. 
+With Stakeholder access, users can create and modify work items and create and save queries. They have limited access to several Azure Boards features. They also can view and approve release pipelines and perform administrative tasks when granted administrative permissions or added to an administrative group. 
  
 To get started as a Stakeholder, see [Get started as a Stakeholder](get-started-stakeholder.md).
 
