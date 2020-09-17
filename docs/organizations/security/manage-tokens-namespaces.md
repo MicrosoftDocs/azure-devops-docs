@@ -30,7 +30,7 @@ You can manage tokens and namespaces for your organization with the [az devops s
 >
 > To list namespaces and manage permissions with command line tools: 
 > - For Azure DevOps Server 2020 and Azure DevOps Services, you can use the `az devops security permission` commands. 
-> - For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd?view=azure-devops-2020&preserve-view=true) commands. 
+> - For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) commands. 
 
 
 ## Hierarchy and tokens
@@ -1028,5 +1028,5 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 ## Related articles
 
 - [Security Namespaces REST API](/rest/api/azure/devops/security/security%20namespaces)
-- [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd?view=azure-devops-2019) 
+- [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)
