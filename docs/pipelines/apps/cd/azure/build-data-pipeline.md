@@ -236,31 +236,6 @@ You will use Azure Key Vault to store all connection information for your Azure 
 
 ## Add pipeline variables
 
-
-1. [Add a new Azure Databricks service](https://ms.portal.azure.com/#create/hub). 
-    * Resource Group: `data-pipeline-cicd-rg`
-    * Workspace name: `databricks-cicd-ws`    
-    * Location: your closest location
-     
-   1. Add the Azure Databricks extension if it isn't already installed. 
-
-      ```azurecli
-       az extension add --name databricks
-       ```   
-    
-   2. Run the following `az databricks workspace create` command to create a new workspace.  
-      ```azurecli
-      az databricks workspace create \
-          --resource-group $rgName \
-          --name databricks-cicd-ws  \
-          --location eastus2  \
-          --sku trial
-      ```
-  3. Copy the Subscription ID for your Databricks service to use later. 
-
-
-
-
 1. [Create a new variable group](../../../library/variable-groups.md) named `datapipeline-vg`.
 
 1. Add the Azure DevOps extension if it isn't already installed. 

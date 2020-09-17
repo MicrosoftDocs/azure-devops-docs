@@ -11,14 +11,12 @@
   href: azure-devops-cli-in-yaml.md  
 - name: Run commands in a release pipeline 
   href: azure-devops-cli-in-release-pipeline.md
-- name: Security permissions
-  href: permissions.md
+- name: Manage permissions 
+  href: ../organizations/security/manage-tokens-namespaces.md?toc=/azure/devops/dev-resources/toc.json&bc=/azure/devops/dev-resources/breadcrumb/toc.json 
 - name: Service connections
   href: service-endpoint.md
 - name: Troubleshoot common errors
   href: troubleshooting.md
-- name: Security tokens
-  href: security-tokens.md
 - name: Azure CLI Reference
   items:
   - name: Command reference
