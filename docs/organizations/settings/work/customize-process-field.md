@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 07/17/2020
+ms.date: 09/17/2020
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -216,6 +216,7 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 ![Layout tab, Relabel a field](media/process/cpfield-relabel-customer-ticket.png) 
 
 
+<a id="modify-description" />
 
 ## Modify Description help text  
 
@@ -247,7 +248,7 @@ Here we modify the Story Points field for User Story.
 Here we modify the custom Published field for User Story. 
 
 > [!div class="mx-imgBorder"]  
-> ![Edit field dialog, User Story, Published custom field.](media/custom-field/edit-field-dialog-definition-description-help-text-custom-field.png.png)
+> ![Edit field dialog, User Story, Published custom field.](media/custom-field/edit-field-dialog-definition-description-help-text-custom-field.png)
 
 
 ::: moniker-end
