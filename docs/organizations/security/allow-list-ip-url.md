@@ -73,7 +73,10 @@ We recommend you open port 443 to all traffic on these IP addresses and domains.
 ### Azure Artifacts
 
 - `*.blob.core.windows.net`
+- `*.visualstudio.com`
 - all IP addresses in the "name": "Storage.{your region}" section of this file (updated weekly): [Azure IP ranges and Service Tags - Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
+
+ 
 
 ## NuGet connections
 
