@@ -16,4 +16,4 @@ Previously, editing and saving files on the web would only save as UTF-8 encodin
 The following screenshot shows and example of the dialog that you will see when you introduce encoding changes by a web push.
 
 > [!div class="mx-imgBorder"]
-> ![.](../../media/151_07.png "")
+> ![Example of the dialog when you introduce encoding changes by a web push.](../../media/151_07.png "")
