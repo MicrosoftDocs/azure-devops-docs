@@ -215,6 +215,44 @@ Here, we relabel the Customer Ticket field to Ticket Number.
  
 ![Layout tab, Relabel a field](media/process/cpfield-relabel-customer-ticket.png) 
 
+
+
+## Modify Description help text  
+
+::: moniker range="azure-devops"
+
+Description help text displays when users hover over a field in the work item form. You can define different help text for the same fields for different work item types. Modification is supported for both custom fields and inherited fields. 
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+Description help text displays when users hover over a field in the work item form. You can define different help text for the same custom fields for different work item types. 
+
+::: moniker-end
+
+To modify the **Description** help text, choose the work item type you want to modify, choose **Edit** for the field and choose the **Definition** tab. The modified value only affects that field in the process and for that work item type. 
+
+::: moniker range="azure-devops"
+
+Here we modify the Story Points field for User Story. 
+
+> [!div class="mx-imgBorder"]  
+> ![Edit field dialog, User Story, Story Points field.](media/custom-field/edit-field-dialog-definition-description-help-text.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+Here we modify the custom Published field for User Story. 
+
+> [!div class="mx-imgBorder"]  
+> ![Edit field dialog, User Story, Published custom field.](media/custom-field/edit-field-dialog-definition-description-help-text-custom-field.png.png)
+
+
+::: moniker-end
+
+
 <a id="show-hide-remove-field">  </a>
 
 ## Show, hide, or remove a field   
@@ -242,7 +280,7 @@ You can choose to show or hide an inherited field or a custom control from appea
 
 
 ::: moniker range=">= azure-devops-2020"
-### Hide an field or custom control
+### Hide a field or custom control
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2019"
