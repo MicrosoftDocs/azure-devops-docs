@@ -12,7 +12,7 @@ We are excited to announce the availability of the [Azure Pipeline app for Jira]
 In addition, it displays build and release information from Azure Pipelines and shows it in the development panel of the issues. This enabled tracking of how and when an issue is delivered, and provides a tight development cycle from issue creation to deployments tracked in Jira.
 
 > [!div class="mx-imgBorder"]
-> ![Azure Pipelines app for Jira.](../../media/154_13.png "Azure Pipelines app for Jira")
+> ![Build and release information tracked in Jira.](../../media/154_13.png)
 
 To learn more about the Azure Pipelines integration with Jira software cloud, see the documentation [here](https://github.com/microsoft/azure-pipelines-jira/blob/master/tutorial.md).
 
