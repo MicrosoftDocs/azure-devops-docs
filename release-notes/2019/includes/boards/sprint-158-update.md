@@ -8,7 +8,7 @@ Rollup can now be done on any field, including custom fields. When adding a Roll
  
 1. On your backlog click "Column options". Then in the panel click "Add Rollup column" and **Configure custom rollup**.
     > [!div class="mx-imgBorder"]
-    > ![Badge](../../media/158_18.png)
+    > ![Rollup on custom fields.](../../media/158_18.png)
 2. Pick between **Progress Bar** and **Total**.
 3. Select a work item type or a Backlog level (usually backlogs aggregate several work item types).
 4. Select the aggregation type. **Count of work items** or **Sum**. For Sum you'll need to select the field to summarize.
