@@ -73,7 +73,7 @@ For more details on each step, see [Continuous integration with Azure Resource M
 
 After you've run the build, you're ready to create a release pipeline to provision your virtual machine:
 
-![icon](../../../tasks/deploy/media/azure-resource-group-deployment-icon.png) [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
+:::image type="icon" source="../../../tasks/deploy/media/azure-resource-group-deployment-icon.png" border="false"::: [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
 
 <!-- BEGINSECTION class="md-qanda" -->
 
