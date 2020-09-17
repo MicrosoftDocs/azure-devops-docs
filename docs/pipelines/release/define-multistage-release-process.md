@@ -140,44 +140,40 @@ It is recommended to always verify if your app is working properly in QA or test
 
 ## Create a release
 
-Now that you have completed the modifications to the release pipeline, it's time to start the deployment. To do this, you
-create a release from the release pipeline. A release may be created automatically; for example, the continuous deployment
-trigger is set in the release pipeline. This means that modifying
-the source code will start a new build and, from that, a new release. However, in this section you will create a new release manually.
+Now that the release pipeline setup is complete, it's time to start the deployment. To do this, we will manually create a new release. Usually a release is created automatically when a new build artifact is available. However, in this scenario we will create it manually.
 
-1. Open the **Release** drop-down list and choose **Create release**.
+1. Select the **Release** drop-down list and choose **Create release**.
 
-   ![Choosing Release from the project menu and selecting Create release](media/define-multistage-release-process/create-release.png)
+   > [!div class="mx-imgBorder"] 
+   > ![create a new release](media/define-multistage-release-process/create-release.png)
 
-1. Enter a description for the release, check that the correct artifacts are selected, and then choose **Create**.
+1. Enter a description for your release, check that the correct artifacts are selected, and then select **Create**.
 
-   ![Updating the Release description in the text area for the Create new release panel](media/define-multistage-release-process/queue-release.png)
+   > [!div class="mx-imgBorder"]
+   > ![create a new release panel](media/define-multistage-release-process/queue-release.png)
 
-1. After a few moments, a banner appears indicating that the new release was created.
-   Choose the link (the name of the release).
+1. A banner will appear indicating that a new release has been create. Select the release link to see more details.
 
-   ![Viewing the release creation banner and choosing the link it provides](media/define-multistage-release-process/release-link.png)
+   > [!div class="mx-imgBorder"]
+   > ![release created successfully](media/define-multistage-release-process/release-link.png)
 
-1. The release summary page opens showing details of the release. In the **Stages** section,
-   you will see the deployment status for the "QA" stage change to "Succeeded" and, at that point,
-   an icon appears indicating that the release is now waiting for approval.
+1. The release summary page will show the status of the deployment to each stage.
 
-   ![Viewing the release summary after the QA stage is successful](media/define-multistage-release-process/approval-waiting.png)
+   > [!div class="mx-imgBorder"]
+   > ![deployment status](media/define-multistage-release-process/approval-waiting.png)
 
-   Other views, such as the list of releases, also display an icon that indicates approval is pending.
-   The icon shows a pop-up containing the stage name and more details when you point to it.
-   This makes it easy for an administrator to see which releases are awaiting approval, as well as the overall progress of all releases.    
+   Other views, such as the list of releases, also display an icon that indicates approval is pending. The icon shows a pop-up containing the stage name and more details when you point to it. This makes it easy for an administrator to see which releases are awaiting approval, as well as the overall progress of all releases.    
 
-   ![Viewing a list of individual release statuses for your app's release pipeline](media/define-multistage-release-process/list-approval-waiting.png)
+   > [!div class="mx-imgBorder"]
+   > ![releases list view](media/define-multistage-release-process/list-approval-waiting.png)
 
-1. Choose the icon or link to open the approval dialog. Enter a brief note about the
-   approval, and choose **Approve**.
+1. Select the _pending_approval_ icon to open the approval window panel. Enter a brief comment, and select **Approve**.
 
-   ![Opening the approval dialog and choosing the Approve button](media/define-multistage-release-process/approve-dialog.png)
+   > [!div class="mx-imgBorder"]
+   > ![approving deployment](media/define-multistage-release-process/approve-dialog.png)
 
-   Notice that you can defer a deployment to a specific day and time; for example, a time when you expect the app to be only lightly loaded.
-   You can also reassign the approval to another user. Release administrators can open _any_ approval
-   and over-ride it to accept or reject that deployment.
+> [!NOTE]   
+> You can schedule deployment at a later date, for example during non-peak hours. You can also reassign approval to a different user. Release administrators can access and override all approval decisions.
 
 <a name="monitor-track"></a>
 
