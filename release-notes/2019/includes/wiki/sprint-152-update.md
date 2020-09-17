@@ -96,6 +96,6 @@ Until now, creating and editing tables in a wiki was difficult. We've made chang
     You no longer have to add spaces to align your markdown columns. With the **Format tables** button, your markdown tables are automatically formatted by adding spaces to the cells to align the columns. If you have large tables, use it with **disable word wrap** to make the tables easier to read.​
 
     > [!div class="mx-imgBorder"]
-    > ![Badge](../../media/152_05.png "Wiki page")
+    > ![Wiki page.](../../media/152_05.png "Wiki page")
 
     You can also use the **Ctrl + Shift + F** shortcut to format your tables.

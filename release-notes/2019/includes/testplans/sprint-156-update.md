@@ -15,7 +15,7 @@ The three sections of the report include the following:
 3. **Details**: this section lets you drill down by each test plan and gives you important analytics for each test suite. 
  
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/156_06.png "Test Plans progress report")
+> ![Test Plans progress report.](../../media/156_06.png "Test Plans progress report")
 
 ### Enhancements to Test Plans page
 
