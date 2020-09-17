@@ -47,7 +47,7 @@ steps:
 Previously, the **HelmDeploy** task used the cluster user credentials for deployments. This resulted in interactive login prompts and failing pipelines for an Azure Active Directory based RBAC enabled cluster. To address this issue, we added a checkbox that lets you use cluster admin credentials instead of a cluster user credentials.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_07.png "Package and deploy Helm charts showing the use cluster admin credentials checkbox")
+> ![Package and deploy Helm charts showing the use cluster admin credentials checkbox.](../../media/155_07.png "Package and deploy Helm charts showing the use cluster admin credentials checkbox")
 
 ### Manage pipeline variables in YAML editor
 
