@@ -119,7 +119,7 @@ You can add a new field and define a pick list or customize the pick list of an 
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press **Enter** to add another item. 
 
-	![Add a custom picklist](media/process/add-a-field-pick-list-up1.png)  
+	![Add a field to Bug dialog, Add a custom picklist.](media/process/add-a-field-pick-list-up1.png)  
 
 	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../media/icons/delete_icon.png) delete icon.  
 
@@ -127,7 +127,7 @@ You can add a new field and define a pick list or customize the pick list of an 
 	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Priority field, Definition tab dialog](media/field/edit-priority-picklist.png)   
+	> ![Edit field Priority in User STory dialog, Definition tab.](media/field/edit-priority-picklist.png)   
 	
 	::: moniker-end
 
@@ -151,7 +151,7 @@ Use an Identity-based field to add a field similar to the Assigned To field. Ide
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then the field name, Identity type, and optionally a description. 
 
-	![Add a custom picklist](media/process/cpfield-identity.png)  
+	![Add a field to Bug dialog, Definition tab, Add an Identity field.](media/process/cpfield-identity.png)  
 
 1. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (Layout tab). 
  
@@ -323,7 +323,7 @@ You may discard changes you made to an inherited field. From the **Layout** page
 
 ## Delete a field  
 
-Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update?view=azure-devops-rest-6.0). 
+Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update). 
 
 1. You delete the field from the **All processes>Fields** page.  
 
@@ -351,10 +351,10 @@ If you're working with test plans or test cases, see these articles:
 - [Create a test plan](../../../manual-test/getting-started/create-a-test-plan.md)  
 - [Create manual test cases](../../../manual-test/getting-started/create-test-cases.md)   
 
- 
 
 <!--- 
 Commenting this out as it is in the process of changing 
+
 ### Custom field names 
 
 The reference name for any new field you add is prefixed with the name of the inherited process for which it was created. For example, if you add Custom 1 field to MyAgile process, the reference name  is `MyAgile.Custom1`. If you add Custom 2 field to MyAgile-Copy process, the reference name assigned to it is `MyAgile-Copy.Custom2`. 
