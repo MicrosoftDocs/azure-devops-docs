@@ -91,7 +91,7 @@ Work items support planning and tracking work. Each work item represents an obje
 
 ## Open your Kanban board from the web portal
 
-You can start viewing and adding work items once you connect to a project. The easiest way to add work items is through the backlog or Kanban board.  Here we show how to add work through a Kanban board. 
+You can start viewing work items once you connect to a project.
 
 ::: moniker range="azure-devops"
 
@@ -182,11 +182,16 @@ You can start viewing and adding work items once you connect to a project. The e
 ::: moniker-end   
 
 
-## Add work items to a product backlog 
+## Add work items 
 
 ::: moniker range="azure-devops"
 
-From the Kanban board, you can't add work items, but you can open them and annotate them. To add work items, open the backlog by choosing the **Backlog** link.  
+From the Kanban board, you can add work items, open them, and modify them. To add work items, open the backlog by choosing the **Backlog** link. To add a work item, select the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus sign, enter a title, and then press Enter.  
+
+> [!div class="mx-imgBorder"]  
+> ![Add a new item on Kanban board, new nav](media/quickstart/add-new-item-agile-s155.png) 
+
+Or, you can add work items to the bottom of the product backlog. Open the backlog by choosing the **Backlog** link.  
 
 ::: moniker-end  
 

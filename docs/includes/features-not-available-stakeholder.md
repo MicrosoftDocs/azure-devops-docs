@@ -16,8 +16,9 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 
 - Change the priority of an item within a backlog  
 - Delete work items or move work items to another project
-- Add work items and change fields on cards on a Kanban board
-- Add new work item tags
+- Change fields on cards on a Kanban board or Taskboard
+- Drag-and-drop work items to the Planning pane to assign to a sprint 
+- Add new work item tags  
 - Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
 - View Delivery Plans (a Marketplace extension)    
@@ -34,7 +35,9 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 
 - Change the priority of an item within a backlog  
 - Delete work items or move work items to another project
-- Add work items, drag-and-drop work items, or change fields on cards on a Kanban board
+- Add work items or drag-and-drop work items 
+- Change fields on cards on a Kanban board or Taskboard
+- Drag-and-drop work items to the Planning pane to assign to a sprint 
 - Add new work item tags 
 - Create shared queries, view charts, and modify dashboards 
 - View Delivery Plans (a Marketplace extension)
