@@ -189,7 +189,7 @@ You can start viewing work items once you connect to a project.
 From the Kanban board, you can add work items, open them, and modify them. To add work items, open the backlog by choosing the **Backlog** link. To add a work item, select the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus sign, enter a title, and then press Enter.  
 
 > [!div class="mx-imgBorder"]  
-> ![Add a new item on Kanban board, new nav](media/quickstart/add-new-item-agile-s155.png) 
+> ![Add a new item on Kanban board, new nav](../../boards/boards/media/quickstart/add-new-item-agile-s155.png) 
 
 Or, you can add work items to the bottom of the product backlog. Open the backlog by choosing the **Backlog** link.  
 
