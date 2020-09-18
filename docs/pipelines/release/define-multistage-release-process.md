@@ -20,16 +20,15 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-Azure Pipelines provide a highly configurable and manageable pipeline for releases to multiple stages such as development, staging, QA, and production. it also offer the opportunity to implement gates and approvals at each specific stage.
+Azure Pipelines provide a highly configurable and manageable pipeline for releases to multiple stages such as development, staging, QA, and production. it also offers the opportunity to implement gates and approvals at each specific stage.
 
 In this tutorial, you will learn about:
 
 > [!div class="checklist"]
-> * Configure triggers within release pipelines
-> * Extend release pipelines by adding stages
-> * Configure stages as a multi-stage release pipeline
-> * Add approvals to release pipelines
-> * Create releases and monitor deployments to each stage
+> * Continuous deployment triggers
+> * Adding stages
+> * Adding Pre-deployment approvals
+> * Creating releases and monitoring deployments
 
 ## Prerequisites
 
@@ -65,7 +64,7 @@ Enabling continuous deployment trigger will instruct the pipeline to automatical
    > [!div class="mx-imgBorder"]  
    > ![pre-deployment conditions](media/define-multistage-release-process/environment-trigger.png)
 
-   You can also setup [Release triggers](triggers.md), [Stage triggers](triggers.md#stage-triggers) or [schedule deployments](triggers.md#scheduled-release-triggers).
+   You can also set up [Release triggers](triggers.md), [Stage triggers](triggers.md#stage-triggers) or [schedule deployments](triggers.md#scheduled-release-triggers).
 
 ## Add stages
 
@@ -116,7 +115,7 @@ In this section, we will add two new stages to our release pipeline: QA and prod
 
 ## Add Pre-deployment approvals
 
-The release pipeline we previously modified deploys to QA and production. If the deployment to QA fails then deployment to production won't trigger.
+The release pipeline we previously modified deploys to QA and production. If the deployment to QA fails, then deployment to production won't trigger.
 It is recommended to always verify if your app is working properly in QA or test stage before deploying to production. Adding approvals will ensure all the criteria are met before deploying to the next stage. To add approvals to your pipeline follow the steps below:
 
 1. Select the **Pipeline** tab,  **Pre-deployment conditions** icon then **Pre-deployment approvers**.
@@ -186,14 +185,14 @@ Deployment logs help you monitor and debug the release of your application. To c
    > [!div class="mx-imgBorder"]
    > ![deployment logs](media/define-multistage-release-process/open-logs-page.png)
 
-   During deployment you can still access the logs page to see the live logs of every task.
+   During deployment, you can still access the logs page to see the live logs of every task.
    
 1. Select any task to see the logs for that specific task. This makes it easier to trace and debug deployment issues. You can also download individual task logs, or a zip of all the log files.
 
    > [!div class="mx-imgBorder"]
    > ![downloading logs](media/define-multistage-release-process/download-logs.png)
 
-1. If you need additional information to debug your deployment you can [run the release in debug mode](../../pipelines/release/variables.md#debug-mode).
+1. If you need additional information to debug your deployment, you can [run the release in debug mode](../../pipelines/release/variables.md#debug-mode).
 
 ## Next step
 
