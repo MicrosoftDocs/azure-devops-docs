@@ -1,19 +1,19 @@
 ---
-title: What settings are supported? 
+title: Settings overview for Azure DevOps
 titleSuffix: Azure DevOps
-description: Configure team, project, collection, and organizational-level settings in Azure DevOps
+description: Overview of settings available to administrators for your team, project, collection, and organization in Azure DevOps.
 ms.technology: devops-settings
 ms.topic: overview
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 07/20/2020
+ms.date: 09/17/2020
 ---
 
 
 
-# About settings at the user, team, project, or organization-level 
+# About settings for users, teams, projects, or organizations
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
