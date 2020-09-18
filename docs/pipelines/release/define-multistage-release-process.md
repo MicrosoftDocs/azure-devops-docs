@@ -27,7 +27,7 @@ In this tutorial, you will learn about:
 > [!div class="checklist"]
 > * Continuous deployment triggers
 > * Adding stages
-> * Adding Pre-deployment approvals
+> * Adding pre-deployment approvals
 > * Creating releases and monitoring deployments
 
 ## Prerequisites
