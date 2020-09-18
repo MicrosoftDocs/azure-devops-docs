@@ -65,7 +65,7 @@ Enabling continuous deployment trigger will instruct the pipeline to automatical
    > [!div class="mx-imgBorder"]  
    > ![pre-deployment conditions](media/define-multistage-release-process/environment-trigger.png)
 
-   You can also setup [Release triggers](triggers.md), [Stage triggers](triggers.md#stage-triggers) or [schedule deployments](triggers.md##scheduled-release-triggers).
+   You can also setup [Release triggers](triggers.md), [Stage triggers](triggers.md#stage-triggers) or [schedule deployments](triggers.md#scheduled-release-triggers).
 
 ## Add stages
 
