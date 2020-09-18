@@ -179,24 +179,21 @@ Now that the release pipeline setup is complete, it's time to start the deployme
 
 ## Monitor and track deployments
 
-In this section, you will see how you can monitor and track deployments - in this example to two Azure App Services websites -
-from the release you created in the previous section.
+Deployment logs help you monitor and debug the release of your application. To check the logs of our deployment follow the steps below:
 
-1. In the release summary, hover over a stage and choose the **Logs** link that appears.
+1. In the release summary, hover over a stage and select **Logs**.
 
-   ![Viewing the live deployment log by choosing the Logs button below a stage image](media/define-multistage-release-process/open-logs-page.png)
+   > [!div class="mx-imgBorder"]
+   > ![deployment logs](media/define-multistage-release-process/open-logs-page.png)
 
-   While the deployment is taking place, the logs page shows the live log from the agent.
-   After the deployment is complete, links to the logs for each task step are displayed in the right pane.
+   During deployment you can still access the logs page to see the live logs of every task.
    
-1. Select any of the pipeline steps to show just the log file contents for that step.
-   This makes it easier to trace and debug individual parts of the overall deployment. Alternatively, download
-   the individual log files, or a zip of all the log files, from the icons and links in the page.
+1. Select any task to see the logs for that specific task. This makes it easier to trace and debug deployment issues. You can also download individual task logs, or a zip of all the log files.
 
-   ![Downloading all release stage log files by choosing Download all logs from the project menu](media/define-multistage-release-process/download-logs.png)
+   > [!div class="mx-imgBorder"]
+   > ![downloading logs](media/define-multistage-release-process/download-logs.png)
 
-1. If you are having problems with a deployment, you can get more information from the log files by
-   [running the release in debug mode](../../pipelines/release/variables.md#debug-mode).
+1. If you need additional information to debug your deployment you can [run the release in debug mode](../../pipelines/release/variables.md#debug-mode).
 
 ## Next step
 
