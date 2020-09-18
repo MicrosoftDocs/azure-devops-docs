@@ -45,11 +45,48 @@ Assign users or groups of users to one of the following access levels:
 > [!TIP]
 > As a best practice when adding new users, we recommend assigning the Visual Studio subscriber level when appropriate (as opposed to Basic) to prevent being charged the Basic rate before the user signs in for the first time.
 
+::: moniker-end  
+
+::: moniker range="azure-devops-2019 || azure-devops-2020"
+
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Basic**: Provides access to most features. Assign  to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you're paying for Basic access in an organization.
+- **Basic + Test Plans**: Provides access for users who have a monthly Test Manager subscription, Visual Studio Test Professional, or MSDN Platforms subscription. 
+- **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
+
+::: moniker-end  
+
+ 
+
+::: moniker range="tfs-2018"
+
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio Professional subscription. 
+- **Advanced** (legacy access level, deprecated in Azure DevOps Server 2019): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
+- **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
+
+
+::: moniker-end    
+
+::: moniker range="tfs-2017"
+
+- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
+- **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription. 
+- **Advanced** (TFS 2017): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
+- **VS Enterprise** (TFS 2017.1 and later versions): Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
+
+
+::: moniker-end
+
+
+
 The following table indicates those features available for each supported access level. Visual Studio Test Professional and MSDN Platform subscriptions grant access to the same features as Visual Studio Enterprise. 
 
 <a id="access-level-settings" />
 
 
+---
+::: moniker range="azure-devops"
 :::row:::
    :::column span="3":::
       **Feature**
@@ -64,6 +101,59 @@ The following table indicates those features available for each supported access
       **Basic + Test Plans &**<br/>**Visual Studio Enterprise**
    :::column-end:::
 :::row-end:::
+---
+::: moniker-end  
+::: moniker range="azure-devops-2019 || azure-devops-2020"
+:::row:::
+   :::column span="3":::
+      **Feature**
+   :::column-end:::
+   :::column span="1":::
+      **Stakeholder**
+   :::column-end:::
+   :::column span="1":::
+      **Basic** &<br/>**Visual Studio Professional**
+   :::column-end:::
+   :::column span="1":::
+      **Basic + Test Plans** &<br/>**Visual Studio Enterprise**
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
+::: moniker range="tfs-2017 || tfs-2018"
+:::row:::
+   :::column span="3":::
+      **Feature**
+   :::column-end:::
+   :::column span="1":::
+      **Stakeholder**
+   :::column-end:::
+   :::column span="1":::
+      **Basic** &<br/>**Visual Studio Professional**
+   :::column-end:::
+   :::column span="1":::
+      **Advanced** & <br/>**Visual Studio Enterprise**
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
+::: moniker range="<= tfs-2015"
+:::row:::
+   :::column span="3":::
+      **Feature**
+   :::column-end:::
+   :::column span="1":::
+      **Stakeholder**<br/>**(Limited)**
+   :::column-end:::
+   :::column span="1":::
+      **Basic**<br/>**(Standard)**
+   :::column-end:::
+   :::column span="1":::
+      **Advanced**<br/>**(Full)**
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
 :::row:::
    :::column span="3":::
       [**Administer organization**](../settings/about-settings.md)  
@@ -79,9 +169,10 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="3":::
-      **Advanced backlog and sprint planning tools** 
+      **Advanced backlog and sprint planning tools**  
       Includes full access to all [backlog](../../boards/backlogs/backlogs-overview.md) and [sprint planning](../../boards/sprints/scrum-overview.md) tools.
    :::column-end:::
    :::column span="1":::
@@ -94,10 +185,10 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="3":::
-      **Advanced home page** 
+      **Advanced home page**  
       Includes [access to projects, work items, and pull requests defined across projects you work in](../../project/navigation/work-across-projects.md).
    :::column-end:::
    :::column span="1":::
@@ -110,10 +201,11 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="3":::
-      Advanced portfolio management
-      Includes full access to define features and epics from a [portfolio backlog](../../boards/backlogs/define-features-epics.md or[Kanban board](../../boards/boards/kanban-epics-features-stories.md.  
+      Advanced portfolio management  
+      Includes full access to define features and epics from a [portfolio backlog](../../boards/backlogs/define-features-epics.md) or [Kanban board](../../boards/boards/kanban-epics-features-stories.md).  
    :::column-end:::
    :::column span="1":::
        
@@ -125,10 +217,12 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
+::: moniker range="azure-devops"
 :::row:::
    :::column span="3":::
-      **Agile boards**
-      Stakeholders have limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md. Stakeholders can add work items and update status through drag-and-drop, but can't update fields displayed on cards and can't [view or set capacity](../../boards/sprints/set-capacity.md).
+      **Agile boards**  
+      Stakeholders have limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md). Stakeholders can add work items and update status through drag-and-drop, but can't update fields displayed on cards and can't [view or set capacity](../../boards/sprints/set-capacity.md).
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -140,6 +234,26 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
+::: moniker-end  
+::: moniker range="< azure-devops"
+:::row:::
+   :::column span="3":::
+      **Agile boards**  
+      Stakeholders have limited access to [Kanban boards](../../boards/boards/kanban-quickstart.md) and [Taskboards](../../boards/sprints/task-board.md).  Stakeholders can't add work items, drag-and-drop cards to update status, update fields displayed on cards, nor [view or set capacity](../../boards/sprints/set-capacity.md).
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
 :::row:::
    :::column span="3":::
       **Agile Portfolio Management**  
@@ -157,7 +271,7 @@ The following table indicates those features available for each supported access
 :::row-end:::
 :::row:::
    :::column span="3":::
-      [**Artifacts**](../../artifacts/overview.md)
+      [**Artifacts**](../../artifacts/overview.md)  
       Includes full access to all Azure Artifacts features, up to 2GB free storage.
    :::column-end:::
    :::column span="1":::
@@ -230,7 +344,7 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="3":::
       **Chart Viewing**  
@@ -246,7 +360,7 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="3":::
       **Code**  
@@ -262,6 +376,8 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="3":::
       [**Delivery Plans**](../../boards/plans/review-team-plans.md)  
@@ -277,6 +393,8 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
+::: moniker-end
 :::row:::
    :::column span="3":::
       [**Request and Manage Feedback**](../../project/feedback/get-feedback.md)
@@ -292,6 +410,7 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="3":::
       **Standard Features**  
@@ -307,6 +426,25 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
+::: moniker range="<= tfs-2017"
+:::row:::
+   :::column span="3":::
+      [**Team rooms**](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)   
+      Requires TFS 2017 or earlier versions. Deprecated for TFS 2018 and later versions.  
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
 :::row:::
    :::column span="3":::
       **Test services in build and release**  
@@ -322,7 +460,7 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
-
+---
 :::row:::
    :::column span="3":::
       **Test Case Management**  
@@ -338,6 +476,7 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="3":::
       **Test Execution and Test Analysis**  
@@ -353,6 +492,7 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="3":::
       Test summary access to Stakeholder license  
@@ -368,6 +508,7 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="3":::
       **View My Work Items**  
@@ -383,6 +524,7 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="3":::
       **View Releases and Manage Approvals**  
@@ -398,474 +540,8 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019 || azure-devops-2020"
-- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign  to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you're paying for Basic access in an organization.
-- **Basic + Test Plans**: Provides access for users who have a monthly Test Manager subscription, Visual Studio Test Professional, or MSDN Platforms subscription. 
-- **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
-
-
-The following table indicates those features available for each supported access level. 
-
-<table>
-<tr valign="bottom">
-<th width="46%">Feature</th>
-<th width="12%">Stakeholder</th>
-<th width="9%">Basic</th>
-<th width="15%">Basic + Test Plans &<br/>VS Enterprise</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left"><strong><a href="../settings/about-settings.md" data-raw-source="[Administer organization](../settings/about-settings.md)">Administer organization</a></strong><br/>Can configure resources when also added to a security group or role: team administrator, Project Administrator, or Project Collection Administrator</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-
-<tr>
-<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlog](../../boards/backlogs/backlogs-overview.md)">backlog</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint planning](../../boards/sprints/scrum-overview.md)">sprint planning</a> tools</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Advanced home page</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[access to projects, work items, and pull requests defined across projects you work in](../../project/navigation/work-across-projects.md)">access to projects, work items, and pull requests defined across projects you work in</a></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Advanced portfolio management</strong><br/>Includes full access to defining features and epics from a portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlog](../../boards/backlogs/define-features-epics.md)">backlog</a> or <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban board](../../boards/boards/kanban-epics-features-stories.md)">Kanban board</a></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Agile boards</strong><br/>Stakeholders have limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a> and <a href="../../boards/sprints/task-board.md">Taskboards</a>. Stakeholders can't add work items, can't drag-and-drop cards to update status, can't update fields displayed on cards, and can't view or set <a href="../../boards/sprints/set-capacity.md">Capacity</a>.
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Agile Portfolio Management</strong><br/>Includes limited access to portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlogs](../../boards/backlogs/define-features-epics.md)">backlogs</a> and <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-epics-features-stories.md)">Kanban boards</a>. Stakeholders can&#39;t change the backlog priority order, and can&#39;t assign items to an iteration, use the mapping pane, or exercise forecasting. </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management)</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Author Release Pipelines and Manage Releases</strong><br/>Includes defining <a href="../../pipelines/release/index.md" data-raw-source="[release pipelines](../../pipelines/release/index.md)">release pipelines</a> and <a href="../../pipelines/release/define-multistage-release-process.md" data-raw-source="[multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md)">multi-stage continuous deployment (CD) pipelines</a>, and <a href="../../pipelines/release/deploy-using-approvals.md" data-raw-source="[using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md)">using approvals and gates to control deployments</a> 
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Basic backlog and sprint planning tools</strong><br/>Includes limited access to add and modify items on <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlogs](../../boards/backlogs/backlogs-overview.md)">backlogs</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint backlogs and taskboards](../../boards/sprints/scrum-overview.md)">sprint backlogs and taskboards</a>. Stakeholders can&#39;t assign items to an iteration, use the mapping pane, or forecasting.
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Build</strong><br/>Includes full access to all features to <a href="../../pipelines/overview.md">manage continuous integration and continuous delivery of software</a> </td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking <a href="../../report/dashboards/charts.md">query charts</a></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Chart Viewing</strong><br/>Can only view work tracking query charts; Stakeholders can&#39;t view query charts from the Queries page, however can view them when added to a dashboard.</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a> or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="../../boards/plans/review-team-plans.md" data-raw-source="[Delivery Plans](../../boards/plans/review-team-plans.md)">Delivery Plans</a></strong><br/>Includes full access to add and view Delivery plans.</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request and Manage Feedback](../../project/feedback/get-feedback.md)">Request and Manage Feedback</a></strong><br/>Includes full access to request and manage feedback on working software. </td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Standard Features</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[working across projects](../../project/navigation/work-across-projects.md)">working across projects</a>, <a href="../../report/dashboards.md" data-raw-source="[View dashboards](../../report/dashboards.md)">View dashboards</a>, <a href="../../project/wiki/filter-print-wiki.md" data-raw-source="[View wikis](../../project/wiki/filter-print-wiki.md)">View wikis</a>, <a href="../../notifications/manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/manage-personal-notifications.md)">Manage personal notifications</a>; Stakeholders can&#39;t view markdown README files defined for repositories and can only
-read wiki pages. </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Test services in build and release</strong><br/>Includes <a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[running unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)">running unit tests with your builds</a>, <a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[reviewing](../../pipelines/test/review-continuous-test-results-after-build.md)">reviewing</a> and <a href="../../pipelines/test/test-analytics.md" data-raw-source="[analyzing](../../pipelines/test/test-analytics.md)">analyzing</a> test results
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Test Execution and Test Analysis</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a>, <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>	
-<tr>
-<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/user-acceptance-testing.md" data-raw-source="[performing user acceptance testing](../../test/user-acceptance-testing.md)">performing user acceptance testing</a> and <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>View My Work Items</strong><br/>Includes limited access to <a href="../../boards/work-items/about-work-items.md" data-raw-source="[add and modify work items](../../boards/work-items/about-work-items.md)">add and modify work items</a>, <a href="../../boards/work-items/follow-work-items.md" data-raw-source="[follow work items](../../boards/work-items/follow-work-items.md)">follow work items</a>, <a href="../../boards/queries/view-run-query.md" data-raw-source="[view and create queries](../../boards/queries/view-run-query.md)">view and create queries</a>, and <a href="../../project/feedback/give-feedback.md" data-raw-source="[submit, view, and change feedback responses](../../project/feedback/give-feedback.md)">submit, view, and change feedback responses</a>. Stakeholders can only assign existing tags to work items (can&#39;t add new tags) and can only save queries under My Queries (can&#39;t save under Shared Queries). 
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes <a href="../../pipelines/release/approvals/index.md" data-raw-source="[viewing releases](../../pipelines/release/approvals/index.md)">viewing releases</a> and <a href="../../pipelines/release/approvals/index.md" data-raw-source="[approving releases](../../pipelines/release/approvals/index.md)">approving releases</a></td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Microsoft published Azure DevOps Extensions</strong></td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end    
- 
-
-::: moniker range="tfs-2018"
-
-- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio Professional subscription. 
-- **Advanced** (legacy access level, deprecated in Azure DevOps Server 2019): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
-- **VS Enterprise**: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
-
-
-::: moniker-end    
-
-::: moniker range="tfs-2017"
-
-- **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription. 
-- **Advanced** (TFS 2017): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
-- **VS Enterprise** (TFS 2017.1 and later versions): Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise.
-
-
-::: moniker-end
-
-::: moniker range="tfs-2017 || tfs-2018"
-
-The following table indicates those features available for each supported access level. 
-
-<table>
-<tr valign="bottom">
-<th width="66%">Feature</th>
-<th width="10%">Stakeholder</th>
-<th width="8%">Basic</th>
-<th width="16%">Advanced &<br/>VS Enterprise</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left"><strong><a href="../settings/about-settings.md" data-raw-source="[Administer organization](../settings/about-settings.md)">Administer organization</a></strong><br/>Can configure resources when also added to a security group or role: team administrator, Project Administrator, or Project Collection Administrator</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlog](../../boards/backlogs/backlogs-overview.md)">backlog</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint planning](../../boards/sprints/scrum-overview.md)">sprint planning</a> tools</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Advanced home page</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[access to projects, work items, and pull requests defined across projects you work in](../../project/navigation/work-across-projects.md)">access to projects, work items, and pull requests defined across projects you work in</a></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Advanced portfolio management</strong><br/>Includes full access to defining features and epics from a portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlog](../../boards/backlogs/define-features-epics.md)">backlog</a> or <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban board](../../boards/boards/kanban-epics-features-stories.md)">Kanban board</a></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Agile boards</strong><br/>Stakeholders have limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a> and <a href="../../boards/sprints/task-board.md">Taskboards</a>. Stakeholders can't add work items, can't drag-and-drop cards to update status, can't update fields displayed on cards, and can't view or set <a href="../../boards/sprints/set-capacity.md">Capacity</a>.
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Agile Portfolio Management</strong><br/>Includes limited access to portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlogs](../../boards/backlogs/define-features-epics.md)">backlogs</a> and <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-epics-features-stories.md)">Kanban boards</a>. Stakeholders can&#39;t change the backlog priority order, and can&#39;t assign items to an iteration, use the mapping pane, or exercise forecasting. </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-
-<tr>
-<td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management)</td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-
-<tr>
-<td align="left"><strong>Author Release Pipelines and Manage Releases</strong><br/>Includes defining <a href="../../pipelines/release/index.md" data-raw-source="[release pipelines](../../pipelines/release/index.md)">release pipelines</a> and <a href="../../pipelines/release/define-multistage-release-process.md" data-raw-source="[multi-stage continuous deployment (CD) pipelines](../../pipelines/release/define-multistage-release-process.md)">multi-stage continuous deployment (CD) pipelines</a>, and <a href="../../pipelines/release/deploy-using-approvals.md" data-raw-source="[using approvals and gates to control deployments](../../pipelines/release/deploy-using-approvals.md)">using approvals and gates to control deployments</a> 
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Basic backlog and sprint planning tools</strong><br/>Includes limited access to add and modify items on <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlogs](../../boards/backlogs/backlogs-overview.md)">backlogs</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint backlogs and taskboards](../../boards/sprints/scrum-overview.md)">sprint backlogs and taskboards</a>. Stakeholders can&#39;t assign items to an iteration, use the mapping pane, or forecasting.
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Build</strong><br/>Includes full access to all features to<a href="../../pipelines/overview.md" data-raw-source="[manage continuous integration and continuous delivery of software](../../pipelines/overview.md)">manage continuous integration and continuous delivery of software</a> </td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking <a href="../../report/dashboards/charts.md" data-raw-source="[query charts](../../report/dashboards/charts.md)">query charts</a></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Chart Viewing</strong><br/>Can only view work tracking query charts; Stakeholders can&#39;t view query charts from the Queries page, however can view them when added to a dashboard.</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="../../boards/plans/review-team-plans.md" data-raw-source="[Delivery Plans](../../boards/plans/review-team-plans.md)">Delivery Plans</a></strong><br/>Includes full access to add and view Delivery plans.</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request and Manage Feedback](../../project/feedback/get-feedback.md)">Request and Manage Feedback</a></strong><br/>Includes full access to request and manage feedback on working software. </td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Standard Features</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[working across projects](../../project/navigation/work-across-projects.md)">working across projects</a>, <a href="../../report/dashboards.md" data-raw-source="[View dashboards](../../report/dashboards.md)">View dashboards</a>, <a href="../../project/wiki/filter-print-wiki.md" data-raw-source="[View wikis](../../project/wiki/filter-print-wiki.md)">View wikis</a>, <a href="../../notifications/manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/manage-personal-notifications.md)">Manage personal notifications</a>. Stakeholders can&#39;t view markdown README files defined for repositories and can only.
-read wiki pages. </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team rooms</a></strong><br/>Requires TFS 2017 or earlier versions. Deprecated for TFS 2018 and later versions.</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Test Execution and Test Analysis</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a>, <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>	
-<tr>
-<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/user-acceptance-testing.md" data-raw-source="[performing user acceptance testing](../../test/user-acceptance-testing.md)">performing user acceptance testing</a> and <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>View My Work Items</strong><br/>Includes limited access to <a href="../../boards/work-items/about-work-items.md" data-raw-source="[add and modify work items](../../boards/work-items/about-work-items.md)">add and modify work items</a>, <a href="../../boards/work-items/follow-work-items.md" data-raw-source="[follow work items](../../boards/work-items/follow-work-items.md)">follow work items</a>, <a href="../../boards/queries/view-run-query.md" data-raw-source="[view and create queries](../../boards/queries/view-run-query.md)">view and create queries</a>, and <a href="../../project/feedback/give-feedback.md" data-raw-source="[submit, view, and change feedback responses](../../project/feedback/give-feedback.md)">submit, view, and change feedback responses</a>. Stakeholders can only assign existing tags to work items (can&#39;t add new tags) and can only save queries under My Queries (can&#39;t save under Shared Queries).
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes <a href="../../pipelines/release/approvals/index.md" data-raw-source="[viewing releases](../../pipelines/release/approvals/index.md)">viewing releases</a> and <a href="../../pipelines/release/approvals/index.md" data-raw-source="[approving releases](../../pipelines/release/approvals/index.md)">approving releases</a></td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end  
-
-::: moniker range="<= tfs-2015"
-- <strong>Stakeholder/Limited</strong>:  Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
-- <strong>Basic/Standard</strong>: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription.
-- <strong>Advanced/Full</strong>: Provides access to premium features. Assign to users with a subscription to Visual Studio Enterprise, Visual Studio Test Professional or MSDN Platforms.
-
-The following table indicates those features available for each supported access level.
-
-<table>
-<tr valign="bottom">
-<th width="64%">Feature</th>
-<th width="12%">Stakeholder (Limited)</th>
-<th width="12%">Basic (Standard)</th>
-<th width="12%">Advanced (Full)</th>
-</tr>
-<tbody valign="top" align="center">
-<tr>
-<td align="left"><strong><a href="../settings/about-settings.md" data-raw-source="[Administer organization](../settings/about-settings.md)">Administer organization</a></strong><br/>Can configure resources when also added to a security group or role: team administrator, Project Administrator, or Project Collection Administrator</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlog](../../boards/backlogs/backlogs-overview.md)">backlog</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint planning](../../boards/sprints/scrum-overview.md)">sprint planning</a> features.</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Advanced home page</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[access to projects, work items, and pull requests defined across projects you work in](../../project/navigation/work-across-projects.md)">access to projects, work items, and pull requests defined across projects you work in</a></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Agile boards</strong><br/>Stakeholders have limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a> and <a href="../../boards/sprints/task-board.md">Taskboards</a>. Stakeholders can't add work items, can't drag-and-drop cards to update status, can't update fields displayed on cards, and can't view or set <a href="../../boards/sprints/set-capacity.md">Capacity</a>.
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Agile Portfolio Management</strong><br/>Includes full access to portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlogs](../../boards/backlogs/define-features-epics.md)">backlogs</a> and <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-epics-features-stories.md)">Kanban boards</a></td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Basic backlog and sprint planning tools</strong><br/>Includes limited access to add and modify items on <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlogs](../../boards/backlogs/backlogs-overview.md)">backlogs</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint backlogs and taskboards](../../boards/sprints/scrum-overview.md)">sprint backlogs and taskboards</a>. Stakeholders can&#39;t assign items to an iteration, use the mapping pane, or forecasting.
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Build</strong><br/>Includes full access to all features to <a href="../../pipelines/overview.md" data-raw-source="[manage continuous integration and continuous delivery of software](../../pipelines/overview.md)">manage continuous integration and continuous delivery of software</a> </td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking <a href="../../report/dashboards/charts.md" data-raw-source="[query charts](../../report/dashboards/charts.md)">query charts</a></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Chart Viewing</strong><br/>Can only view work tracking query charts</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request and Manage Feedback](../../project/feedback/get-feedback.md)">Request and Manage Feedback</a></strong><br/>Includes full access to request and manage feedback on working software. </td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Standard Features</strong><br/>Includes <a href="../../project/navigation/work-across-projects.md" data-raw-source="[working across projects](../../project/navigation/work-across-projects.md)">working across projects</a>, <a href="../../report/dashboards.md" data-raw-source="[viewing dashboards](../../report/dashboards.md)">viewing dashboards</a>, and <a href="../../notifications/manage-personal-notifications.md" data-raw-source="[managing personal notifications](../../notifications/manage-personal-notifications.md)">managing personal notifications</a>; Stakeholders have no access to repositories. </td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team rooms</a></strong></td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
-<td> </td>
-<td> </td>
-<td>✔️</td>
-</tr>
-<tr>
-<td align="left"><strong>Test Execution and Test Analysis</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a>, <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
-</td>
-<td> </td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>	
-<tr>
-<td align="left"><strong>View My Work Items</strong><br/>Includes limited access to <a href="../../boards/work-items/about-work-items.md" data-raw-source="[add and modify work items](../../boards/work-items/about-work-items.md)">add and modify work items</a>, <a href="../../boards/work-items/follow-work-items.md" data-raw-source="[follow work items](../../boards/work-items/follow-work-items.md)">follow work items</a>, <a href="../../boards/queries/view-run-query.md" data-raw-source="[view and create queries](../../boards/queries/view-run-query.md)">view and create queries</a>, and <a href="../../project/feedback/give-feedback.md" data-raw-source="[submit, view, and change feedback responses](../../project/feedback/give-feedback.md)">submit, view, and change feedback responses</a>. Stakeholders can only assign existing tags to work items (can&#39;t add new tags) and can only save queries under My Queries (can&#39;t save under Shared Queries).
-</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end    
- 
 
 <a id="stakeholder-access">  </a>
 <a id="feature-access">  </a>
