@@ -220,7 +220,7 @@ You can also add custom work item types and add them to portfolio backlogs. You 
 For example, here we've added Initiatives, 4th level, and 5th level work item types to support five levels of portfolio backlogs. We've also added a custom work item type named Ticket and added that to the product backlog. 
 
 > [!div class="mx-imgBorder"]
-> ![Backlog navigation levels](media/setup-backlog/backlog-levels-customized.png)
+> ![Add custom work item types to your backlogs.](media/setup-backlog/backlog-levels-customized.png)
 
 For details, see the following resources: 
 

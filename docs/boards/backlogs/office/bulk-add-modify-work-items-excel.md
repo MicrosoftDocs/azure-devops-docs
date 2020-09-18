@@ -279,7 +279,7 @@ You can't perform the following tasks from an Excel worksheet:
 1.  Publish your worksheet. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add work items to Excel](media/excel/2019-publish.png)
+	> ![Publish your worksheet.](media/excel/2019-publish.png)
 
     Make sure your cursor is in a cell that contains data. Otherwise, the **Publish** button might appear disabled.
 
@@ -327,7 +327,7 @@ You can add a hierarchy of work items linked using parent-child links or other t
 	Note the List type has changed to **Tree**, and a second **Title** column appears.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Convert to Tree List dialog](media/excel/converted-tree-list-type.png)
+	> ![List type has changed to Tree, and a second Title column appears.](media/excel/converted-tree-list-type.png)
 
 1. To add more levels to the hierarchy, choose **Add Tree Level** again. For example, if you want to add a hierarchy of Epics, Features, and User Stories, you'll want to have **Title 1**, **Title 2**, and **Title 3** columns.
 
@@ -611,7 +611,7 @@ The **Choose Linked Work Items** dialog works in the same way as the **Get Work 
 1. To reorder the links, choose the field to sort the list on that field. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Links and Attachments dialog, Links tab, Added columns](media/excel/links-tab-added-columns.png) 
+	> ![To reorder the links, choose the field to sort the list on that field.](media/excel/links-tab-added-columns.png) 
 
 This dialog works in the same way as the **Get Work Items** dialog. See [Add existing work items to your worksheet](#get-work-items) described earlier in this article.
 ### Open a linked work item
@@ -662,7 +662,7 @@ You can create a report or chart from the web portal for flat-list queries. See 
 You can create a report using the **New Report** feature based on a flat list of work items. 
 
 > [!div class="mx-imgBorder"]  
-> ![Get work items dialog](media/excel/team-ribbon-new-report.png)
+> ![Create a report using the New Report feature.](media/excel/team-ribbon-new-report.png)
 
 To learn more, see [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md). 
 

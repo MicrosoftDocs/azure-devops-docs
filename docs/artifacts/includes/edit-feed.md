@@ -7,7 +7,7 @@ author: ramiMSFT
 ms.date: 06/19/2020
 ---
 
-With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) (on the right side of the page).
+With your feed selected, select the gear icon :::image type="icon" source="(../../media/icons/gear-icon.png)"::: (on the right side of the page).
 
 ::: moniker range=">= azure-devops-2019"
 
