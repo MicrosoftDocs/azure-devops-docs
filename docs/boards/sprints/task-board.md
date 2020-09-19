@@ -263,7 +263,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 1. To filter on the tasks for a specific team member, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon, and then select their name from the **Assigned to** filter box.
 
 	> [!div class="mx-imgBorder"]
-	> ![Choose another sprint](media/taskboard/filter-by-a-team-member.png)
+	> ![Filter on tasks for a specific team member.](media/taskboard/filter-by-a-team-member.png)
 
 ::: moniker-end
 
