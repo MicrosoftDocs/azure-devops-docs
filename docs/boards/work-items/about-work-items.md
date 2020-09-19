@@ -118,7 +118,7 @@ The new web form provides a number of experiences not provided with the old web 
 
 **Old web form** 
 
-![Work item form to track features or user stories](../backlogs/media/work-item-form-to-track-user-stories.png)
+![Old work item form to track features or user stories.](../backlogs/media/work-item-form-to-track-user-stories.png)
 
 ---
 
