@@ -222,13 +222,16 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 
 ::: moniker range="azure-devops"
 
-Description help text displays when users hover over a field in the work item form. You can define different help text for the same fields for different work item types. Modification is supported for both custom fields and inherited fields. 
+Description help text displays when users hover over a field in the work item form. You can define different help text for the same fields for different work item types. Modification is supported for both custom fields and inherited fields. Note that the implementation differs based on the field type. 
+- **For inherited fields**: Description help text can be defined differently for each work item type and process.   
+- **For custom fields**: Description help text appears the same for the field across all work item types and all processes. 
+
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-Description help text displays when users hover over a field in the work item form. You can define different help text for the same custom fields for different work item types. 
+Description help text displays when users hover over a field in the work item form. You can only modify modify the description help text on a custom field. That help text propagates to all work item types and all processes. You can't customize the help text by process or work item type.
 
 ::: moniker-end
 
