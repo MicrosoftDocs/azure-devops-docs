@@ -69,7 +69,7 @@ We added a new task that allows you to install a specific version of the Kubectl
 
 ### Azure container registry in Docker registry service connection
 
-Now you can create a Docker registry service connection from your project's settings page. To create the connection, choose an Azure container registry in one of the subscriptions associated with your Azure Active Directory (AAD) identity. All tasks requiring service connections to container registries such as **Docker@2** and **KubernetesManifest@0** will support a single way of specifying a connection.
+Now you can create a Docker registry service connection from your project's settings page. To create the connection, choose an Azure container registry in one of the subscriptions associated with your Azure Active Directory (Azure AD) identity. All tasks requiring service connections to container registries such as **Docker@2** and **KubernetesManifest@0** will support a single way of specifying a connection.
 
 > [!div class="mx-imgBorder"]
 > ![Add a Docker service connection.](../../media/150_13.png "Add a Docker service connection")
