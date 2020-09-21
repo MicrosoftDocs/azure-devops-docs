@@ -7,7 +7,7 @@ ms.topic: include
 Administrators can now set a policy to prevent commits from being pushed to a repository based on file types and paths. The file name validation policy will block pushes that match the provided pattern. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_09.png)
+> ![Policy to block files with specified patterns.](../../media/157_09.png)
 
 ### Resolve work items via commits using key words
 
@@ -19,4 +19,4 @@ For more details see the documentation [here](https://docs.microsoft.com/azure/d
 Previously, when adding group level reviewers to a pull request, only one approval was required from the group that was added. Now you can set policies that require more than one reviewer from a team to approve a pull request when adding automatic reviewers. In addition, you can add a policy to prevent requestors approving their own changes. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_10.png)
+> ![Granularity for automatic reviewers.](../../media/157_10.png)

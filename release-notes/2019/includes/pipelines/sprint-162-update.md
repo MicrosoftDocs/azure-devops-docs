@@ -9,14 +9,14 @@ An updated version of the multi-stage pipelines UI is now available by default. 
 To learn more about the multi-stage pipelines user experience, see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops).
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_01.png)
+> ![Updated multi-stage pipelines UI.](../../media/162_01.png)
 
 ### VSTest TestResultsDirectory option is available in the task UI
 
 The VSTest task stores test results and associated files in the `$(Agent.TempDirectory)\TestResults` folder. We've added an option to the task UI to let you configure a different folder to store test results. Now any subsequent tasks that need the files in a particular location can use them.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_02.png)
+> ![VSTest TestResultsDirectory option is available in the task UI.](../../media/162_02.png)
 
 ### Use extends keyword in pipelines
 
@@ -56,26 +56,26 @@ steps:
 We've added markdown support to error messages for automated tests. Now you can easily format error messages for both test run and test result to improve readability and ease the test failure troubleshooting experience in Azure Pipelines. The supported markdown syntax can be found [here](https://docs.microsoft.com/azure/devops/project/wiki/markdown-guidance?view=azure-devops).
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_03.png)
+> ![Markdown support in automated test error messages.](../../media/162_03.png)
 
 ### Collect automatic and user-specified metadata from pipeline
 
 Now you can enable automatic and user-specified metadata collection from pipeline tasks. You can use metadata to enforce artifact policy on an environment using the [evaluate artifact check](https://docs.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#evaluate-artifact).
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_07.png)
+> ![Collect automatic and user-specified metadata from pipeline.](../../media/162_07.png)
 
 ### Updates to service connections UI
 
 We've been working on an updated user experience to manage your service connections. These updates make the service connection experience modern and consistent with the direction of Azure DevOps. We introduced the new UI for service connections as a preview feature earlier this year. Thanks to everyone who tried the new experience and provided their valuable feedback to us.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_08.png)
+> ![Updates to service connections UI.](../../media/162_08.png)
 
 Along with the user experience refresh, we've also added two capabilities which are critical for consuming service connections in YAML pipelines: pipeline authorizations and approvals and checks.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_09.png)
+> ![Pipeline authorizations and approvals and checks.](../../media/162_09.png)
 
 The new user experience will be **turned on by default** with this update. You will still have the option to opt-out of the preview.
 
@@ -87,7 +87,7 @@ The new user experience will be **turned on by default** with this update. You w
 One of the most requested features in Environments was VM deployments. With this update, we are enabling Virtual Machine resource in Environments. You can now orchestrate deployments across multiple machines and perform **rolling** updates using YAML pipelines. You can also install the agent on each of your target servers directly and drive rolling deployment to those servers. In addition, you can use the full task catalog on your target machines.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_10.png)
+> ![VM deployments with Environments.](../../media/162_10.png)
 
 A rolling deployment replaces instances of the previous version of an application with instances of the new version of the application on a set of machines (rolling set) in each iteration. 
 
@@ -135,9 +135,9 @@ When you start a manual run, you may sometimes want to skip a few stages in your
 The updated run pipeline panel presents a list of stages from the YAML file, and you have the option to skip one or more of those stages. You must exercise caution when skipping stages. For instance, if your first stage produces certain artifacts that are needed for subsequent stages, then you should not skip the first stage. The run panel presents a generic warning whenever you skip stages that have downstream dependencies. It is left to you as to whether those dependencies are true artifact dependencies or whether they are just present for sequencing of deployments.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_14.png)
+> ![Skipping stages in a YAML pipeline.](../../media/162_14.png)
 
 Skipping a stage is equivalent to rewiring the dependencies between stages. Any immediate downstream dependencies of the skipped stage are made to depend on the upstream parent of the skipped stage. If the run fails and if you attempt to rerun a failed stage, that attempt will also have the same skipping behavior. To change which stages are skipped, you have to start a new run.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_15.png)
+> ![To change which stages are skipped, start a new run.](../../media/162_15.png)

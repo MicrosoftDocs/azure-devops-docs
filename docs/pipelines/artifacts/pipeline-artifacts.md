@@ -53,7 +53,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/media/publish-pipeline-artifact.png) **Publish Pipeline Artifact**
+:::image type="icon" source="../tasks/utility/media/publish-pipeline-artifact.png" border="false"::: **Publish Pipeline Artifact**
 
 * Artifact name:
 
@@ -139,7 +139,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
+:::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact**
 
 * Artifact name:
 
@@ -211,7 +211,7 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
+:::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact**
 
 * Artifact name:
 
@@ -270,7 +270,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
+:::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact**
 
 * Matching patterns:
 
