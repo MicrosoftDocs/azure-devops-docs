@@ -69,4 +69,4 @@ Finally, we you will have more control when checking in the `azure-pipelines.yml
 Previously, you could execute batch and bash scripts as part of an Azure CLI task. With this update, we added support for PowerShell and PowerShell core scripts to the task. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/159_13.png)
+> ![Support for PowerShell scripts in Azure CLI task.](../../media/159_13.png)
