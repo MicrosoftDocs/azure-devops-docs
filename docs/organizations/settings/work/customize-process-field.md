@@ -151,7 +151,7 @@ Use an Identity-based field to add a field similar to the Assigned To field. Ide
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then the field name, Identity type, and optionally a description. 
 
-	![Add a custom picklist](media/process/cpfield-identity.png)  
+	![Add an Identity field.](media/process/cpfield-identity.png)  
 
 1. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (Layout tab). 
  
