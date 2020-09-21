@@ -55,45 +55,27 @@ This tutorial uses a simple scenario to illustrate the integration between Azure
     az configure --defaults location=westus2
     ```
 
-1. Run the command below to create a variable for the Azure Key Vault's name. Note that this name is required to be globally unique, so it uses string interpolation (double quotes) and the `$RANDOM` helper. If you see a name conflict error later on when creating the key vault, try running this again to generate a new random name before rerunning the key vault creation command.
+1. Run the following command to create a new resource group.
 
-    ```azurecli-interactive
-    keyVaultName="PipelinesKeyVault$RANDOM"
-    ```
-
-1. If you're interested in the generated name, you can print it by running the command below.
-
-    ```azurecli-interactive
-    echo $keyVaultName
-    ```
-    
-    The resulting output should be something like this:
-
-    ```
-    PipelinesKeyVault7954
-    ```
-
-1. Run the following `az group create` command to create a resource group using the name defined earlier.
-
-    ```azurecli-interactive
-    az group create --name <your-resource-group_name>
+    ```Azure CLI
+    az group create --name <your-resource-group>
     ```
    
-1. Run the following `az keyvault create` command to create a resource group using the name defined earlier.
+1. Run the following command to create a new key vault.
 
-    ```azurecli-interactive
+    ```Azure CLI
     az keyvault create \
-      --name $keyVaultName \
-      --resource-group <your-resource-group_name>
+      --name <your-key-vault> \
+      --resource-group <your-resource-group>
     ```
 
-1. Run the following `az keyvault secret set` command to create a secret in the key vault named `Password` with the contents `mysecretpassword`. This will be the secret securely retrieved later on in the pipeline. 
+1. Run the following command to create a new secret in your key vault. Secrets are stored as a key value pair. In the example below, `Password` is the key and `mysecretpassword` is the value. 
 
-    ```azurecli-interactive
+    ```Azure CLI
     az keyvault secret set \
       --name "Password" \
       --value "mysecretpassword" \
-      --vault-name $keyVaultName
+      --vault-name <your-key-vault>
     ```
 
 ## Sign in to Azure Pipelines
