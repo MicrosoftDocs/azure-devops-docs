@@ -83,7 +83,7 @@ subscriptions just after linking a project.
 1. Select the desired area path, event that you are interested in, and leverage the associated 
 filters to customize your Slack channel. To easily set up subscriptions, your recently accessed area paths are shown in the area path dropdown.
 
-   ![screenshot of sign-in](./media/integrations-slack/add-subscriptions.png)
+   ![Set up subscriptions.](./media/integrations-slack/add-subscriptions.png)
 
    In case your team's area path doesn't appear in the Area path dropdown menu, follow the instructions mentioned in the next section, [Add area paths](#add-area-paths). Area paths added using the `/azboards addAreapath` command and area paths for which subscriptions are created in the Slack channel always appear in the Area path dropdown along with recently accessed area paths.
 

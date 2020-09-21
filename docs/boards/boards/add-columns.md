@@ -231,7 +231,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 2. Choose **Columns** and then a column tab to see all the settings you can modify. Your initial column settings will look something like this. 
 
-	![Kanban board, Customize columns, default columns, Agile process](media/add-columns-active-agile-update-1.png)
+	![Kanban board, Customize columns, default columns, Agile process for TFS 2015.1](media/add-columns-active-agile-update-1.png)
 
 3. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 

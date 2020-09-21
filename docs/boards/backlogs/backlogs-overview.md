@@ -184,7 +184,7 @@ you'll see the parent epic of the features and backlog items, even if the epic o
 Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: .  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/multi-ownership/customer-service-backlog-parents-on-s155.png)   
+> ![View backlog items and parent items owned by other teams.](media/multi-ownership/customer-service-backlog-parents-on-s155.png)   
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
@@ -196,7 +196,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: .  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/multi-ownership/customer-service-backlog-parents-on.png)   
+> ![View backlog items and parent items owned by other teams.](media/multi-ownership/customer-service-backlog-parents-on.png)   
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
@@ -241,14 +241,14 @@ belong to one of three different teams: Customer Service, Phone, and Web.
 ::: moniker range=">= azure-devops-2020"  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/multi-ownership/management-team-backlog-epics-s155.png)   
+> ![View Epics and child items owned by other teams.](media/multi-ownership/management-team-backlog-epics-s155.png)   
 
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/multi-ownership/management-team-backlog-epics.png)   
+> ![View Epics and child items owned by other teams.](media/multi-ownership/management-team-backlog-epics.png)   
 
 ::: moniker-end 
 
@@ -259,7 +259,7 @@ Drilling down, you can see all the backlog items and features, even though they
 belong to one of three different teams: Customer Service, Phone, and Web.  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/multi-ownership/management-team-backlog-epics-pre-nav.png)  
+> ![Example that shows the Epics backlog for the Management team.](media/multi-ownership/management-team-backlog-epics-pre-nav.png)  
 
 ::: moniker-end 
 

@@ -68,7 +68,7 @@ All work items you import are created in a new state. This rule means that you c
 6. The system highlights those work items with data issues. You need to resolve the data issues before you can save the work items. In this example, an invalid value has been entered into the Priority field. Fix the data by opening the work item directly. Alternatively, use [bulk edit](../backlogs/bulk-modify-work-items.md) to fix several work items with the same issue.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Import Work Items Save Image](media/import-csv/import-error-1.png)
+	> ![Fix work items with data issues.](media/import-csv/import-error-1.png)
 
 > [!NOTE]   
 > You can add parent-child links between work items you import by indenting the title columns as shown in the example later in this article, [Can I import a CSV file that have parent-child links?](#tree-items). However, you can't specify any other link types when importing or updating work items.  
@@ -111,12 +111,12 @@ All work items you import are created in a new state. This rule means that you c
 4. The results list with work items that contain value changes appear highlighted in bold. Choose **Save Items** to apply the changes.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Import Work Items Save Image](media/import-csv/import-update-2.png)
+	> ![Import Work Items Save Items.](media/import-csv/import-update-2.png)
 
 5. Work items with data issues are highlighted in red and need to be resolved before you can save them. In this example, an invalid value appears in the Assigned To field. Fix the data by opening the work item directly. Alternatively, you can use bulk edit if you have many work items with the same issue.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Import Work Items Save Image](media/import-csv/import-update-error-1.png)
+	> ![Invalid value appears in the Assigned To field.](media/import-csv/import-update-error-1.png)
 
 ::: moniker-end 
 
