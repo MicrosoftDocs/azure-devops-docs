@@ -36,8 +36,8 @@ The content pack has a complete analytic data model, (tables, relationships, and
 
 5. Search for Marketplace and select the Visual Studio Marketplace Extension Statistics and **Get it now**.
 
-    ![connector](media/search.png)
-    ![connector](media/content-pack-details.png)
+    ![Search for Marketplace and select the Visual Studio Marketplace Extension Statistics.](media/search.png)
+    ![View content pack details.](media/content-pack-details.png)
 
 6. Enter the Marketplace publisher ID that you want data for, and then select **Next**.
 
