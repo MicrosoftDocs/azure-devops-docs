@@ -53,7 +53,7 @@ Work items can be filtered by typing a keyword, or using different fields such a
 While developing the new **Work Items** hub, we wanted to ensure that you could re-create each one of the pivots via the **Query Editor**. Previously, we supported querying on items that you’re following and that were assigned to you but this sprint we created two new macros: @RecentMentions and @MyRecentActivity. With these, you can now create a query and obtain the work items where you’ve been mentioned in the last 30 days or create a query that returns your latest activity. Here’s a sneak peek of how these macros can be used:
 
 > [!div class="mx-imgBorder"]
-> ![filters](media/08_28_29.png)
+> ![Macros to create queries.](media/08_28_29.png)
 
 See the [documentation for the Work Items hub](https://visualstudio.microsoft.com/docs/work/work-items/view-add-work-items) for more information.
 
@@ -90,7 +90,7 @@ We’ve added a new **Mentioned** pivot under the **My work items** page. Inside
 This same pivot is also available via our mobile experience, bringing consistency between both mobile and desktop.
 
 > [!div class="mx-imgBorder"]
-> ![mentioned work](media/08_28_30.png)
+> ![Mobile experience for mentioned work.](media/08_28_30.png)
 
 ### Custom Fields and Tags in Notifications
 

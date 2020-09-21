@@ -62,11 +62,15 @@ You [add users to the following roles](../../pipelines/policies/set-permissions.
 
 [!INCLUDE [temp](includes/deployment-pool-roles.md)]
 
+<a id="library-roles" /> 
+
 ## Library asset security roles: Variable groups and secure files
 
 You [add users to a library role](../../pipelines/policies/set-permissions.md) from **Pipelines** or **Build and Release**. To learn more about using these library assets, see [Variable groups](../../pipelines/library/variable-groups.md) and [Secure files](../../pipelines/library/secure-files.md)
 
 [!INCLUDE [temp](includes/library-roles.md)]
+
+<a id="service-endpoint-roles" /> 
 
 ## Service connection security roles
 
