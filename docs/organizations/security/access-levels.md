@@ -204,7 +204,7 @@ The following table indicates those features available for each supported access
 ---
 :::row:::
    :::column span="3":::
-      Advanced portfolio management  
+      **Advanced portfolio management**  
       Includes full access to define features and epics from a [portfolio backlog](../../boards/backlogs/define-features-epics.md) or [Kanban board](../../boards/boards/kanban-epics-features-stories.md).  
    :::column-end:::
    :::column span="1":::
@@ -254,6 +254,7 @@ The following table indicates those features available for each supported access
 :::row-end:::
 ---
 ::: moniker-end 
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="3":::
       **Agile Portfolio Management**  
@@ -269,13 +270,32 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+::: moniker-end 
+::: moniker range="<= tfs-2015"
+:::row:::
+   :::column span="3":::
+      **Agile Portfolio Management**  
+      Includes limited access to portfolio[backlogs](../../boards/backlogs/define-features-epics.md) and [Kanban boards](../../boards/boards/kanban-epics-features-stories.md). Stakeholders can't change the backlog priority order, can't assign items to an iteration, use the mapping pane, or exercise forecasting.  
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+::: moniker-end 
+::: moniker range="> tfs-2018"
 :::row:::
    :::column span="3":::
       [**Artifacts**](../../artifacts/overview.md)  
       Includes full access to all Azure Artifacts features, up to 2GB free storage.
    :::column-end:::
    :::column span="1":::
-      ✔️
+       
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -284,6 +304,26 @@ The following table indicates those features available for each supported access
       ✔️
    :::column-end:::
 :::row-end:::
+---
+::: moniker-end 
+::: moniker range="tfs-2017 || tfs-2018"
+:::row:::
+   :::column span="3":::
+      [**Artifacts**](../../artifacts/overview.md)  
+      Includes full access to all Azure Artifacts features, up to 2GB free storage.
+   :::column-end:::
+   :::column span="1":::
+       
+   :::column-end:::
+   :::column span="1":::
+      
+   :::column-end:::
+   :::column span="1":::
+      ✔️
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end 
 :::row:::
    :::column span="3":::
       **Author Release Pipelines and Manage Releases**  
@@ -493,9 +533,10 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="3":::
-      Test summary access to Stakeholder license  
+      **Test summary access to Stakeholder license**  
       Includes [requesting Stakeholder feedback using the Test & Feedback extension](../../test/request-stakeholder-feedback.md). 
    :::column-end:::
    :::column span="1":::
@@ -509,6 +550,7 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 :::row:::
    :::column span="3":::
       **View My Work Items**  
@@ -525,6 +567,7 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="3":::
       **View Releases and Manage Approvals**  
@@ -541,7 +584,7 @@ The following table indicates those features available for each supported access
    :::column-end:::
 :::row-end:::
 ---
-
+::: moniker-end
 
 <a id="stakeholder-access">  </a>
 <a id="feature-access">  </a>
