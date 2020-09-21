@@ -19,9 +19,9 @@ ms.date: 03/21/2019
 If you have a web page that can be hosted in an iframe, it can also be hosted in Azure DevOps Services. This webpage would be a tab on the backlog pages.
 In this example, we'll add a Hello World tab on the Product Backlog and the Iteration Backlog.
 
-![Tab location on the Azure DevOps Services Product backlog page](../media-procedures/backlog-tab/product-backlog-tab.png)
+![Tab location on the Azure DevOps Services Product Backlog page](../media-procedures/backlog-tab/product-backlog-tab.png)
 
-![Tab location on the Azure DevOps Services Product backlog page](../media-procedures/backlog-tab/iteration-backlog-tab.png)
+![Tab location on the Azure DevOps Services Iteration Backlog page](../media-procedures/backlog-tab/iteration-backlog-tab.png)
 
 ## Create your web page
 
