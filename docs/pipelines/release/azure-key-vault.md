@@ -102,7 +102,6 @@ This tutorial uses a simple scenario to illustrate the integration between Azure
 ## Sign in to Azure Pipelines
 
 > [!TIP]
-> 
 > You will need to switch back and forth between Azure and Azure DevOps during this tutorial. It is recommended that you open a new tab to perform the upcoming Azure DevOps tasks.
 
 [!INCLUDE [include](../ecosystems/includes/sign-in-azure-pipelines.md)]
@@ -119,7 +118,8 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
 1. Go to **Repos**, and then select **Initialize** to initialize a new repo with a README.
 
-    ![Creating the repo](media/azure-key-vault/initialize-repo.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Creating the repo](media/azure-key-vault/initialize-repo.png)
 
 ### Create a new pipeline
 
@@ -127,7 +127,8 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
 1. Select the **Azure Repos Git** option.
 
-    ![Creating the pipeline](media/azure-key-vault/create-pipeline.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Creating the pipeline](media/azure-key-vault/create-pipeline.png)
 
 1. Select the repo created earlier. It should have the same name as your Azure DevOps project.
 
@@ -147,18 +148,21 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
 1. Select **Show assistant** to expand the assistant panel. This panel provides convenient (and searchable) access to pipeline tasks.  
 
-    ![Showing the pipeline assistant](media/azure-key-vault/show-assistant.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Showing the pipeline assistant](media/azure-key-vault/show-assistant.png)
 
 1. Search for **vault** and select the [**Azure Key Vault**](../tasks/deploy/azure-key-vault.md) task.
 
-    ![Selecting the Azure Key Vault task](media/azure-key-vault/azure-key-vault-task.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Selecting the Azure Key Vault task](media/azure-key-vault/azure-key-vault-task.png)
 
 1. Select and authorize the Azure subscription used to create the key vault earlier. Then select the key vault and select **Add** to insert the task at the end of the pipeline. This task connects to your Azure Key Vault and loads its secrets as variables that can be accessed like any other pipeline or environment variables.
 
-    >[!NOTE]
-    >**Make secrets available to whole job** is new and is not present in Azure DevOps Server 2019.
+    > [!NOTE]
+    > **Make secrets available to whole job** is new and is not present in Azure DevOps Server 2019.
 
-    ![Configuring the Azure Key Vault task](media/azure-key-vault/configure-azure-key-vault-task.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Configuring the Azure Key Vault task](media/azure-key-vault/configure-azure-key-vault-task.png)
 
     > [!NOTE]
 	> This process creates a principal in Azure that will need to be granted access to the key vault. You will authorize those permissions in a later step.
@@ -182,7 +186,8 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
 1. Use the search bar at the top of the window to open the key vault created earlier.
 
-    ![Searching for Azure Key Vault](media/azure-key-vault/search-azure-key-vault.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Searching for Azure Key Vault](media/azure-key-vault/search-azure-key-vault.png)
 
 1. Select **Access policies** from under the **Settings** navigation.
 
@@ -224,15 +229,18 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
 1. Select the **CmdLine** task to view its output. Note that while the command executed successfully, the actual secret text was redacted from the logs. Fortunately, the file it was printed to was published for review. 
 
-    ![Reviewing the command line task](media/azure-key-vault/command-line-task.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Reviewing the command line task](media/azure-key-vault/command-line-task.png)
 
 1. Return to the pipeline summary and select the published artifact.
 
-    ![The pipeline summary](media/azure-key-vault/pipeline-summary.png)
+    > [!div class="mx-imgBorder"]  
+    > ![The pipeline summary](media/azure-key-vault/pipeline-summary.png)
 
 1. Select the **secret.txt** artifact from under **Job** to view it.
 
-    ![Viewing the secret in the artifact](media/azure-key-vault/view-artifact.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Viewing the secret in the artifact](media/azure-key-vault/view-artifact.png)
 
 1. The file displays `mysecretpassword`, which was the secret configured in the key vault.
 
