@@ -92,13 +92,13 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
 
    (1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, (4) check that the preview matches the URL that you entered, and then choose **OK**. 
 
-   ![Connect to Team Foundation Server dialog](media/connect/4-steps-connect-to-cloud.png)
+   ![Connect to Team Foundation Server dialog in Boards.](media/connect/4-steps-connect-to-cloud.png)
 
    **TFS**  
 
    (1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your TFS instance. As needed, change the Port number if your deployment uses a non-default port number.   The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
 
-   ![Connect to Team Foundation Server dialog](media/create-your-backlog-tasks-using-project/IC658167.png)
+   ![Connect to Team Foundation Server dialog in TFS.](media/create-your-backlog-tasks-using-project/IC658167.png)
 
    Choose **Close** to close the Add/Remove servers dialog. From the Select a Team Foundation Server dialog, make sure the server you added is selected, and then choose **Connect**. 
 
