@@ -122,7 +122,7 @@ If your pipeline queues but never gets an agent, check the following items.
 > 
 > Learn more:
 > [How a parallel job is consumed by a pipeline](../licensing/concurrent-jobs.md),
-> [Approvals within a pipeline](../release/define-multistage-release-process.md#add-approvals-within-a-release-pipeline),
+> [Add Pre-deployment approvals](../release/define-multistage-release-process.md#add-approvals),
 > [Server jobs](../process/phases.md#server-jobs),
 > [Deployment groups](../release/deployment-groups/index.md)
 
