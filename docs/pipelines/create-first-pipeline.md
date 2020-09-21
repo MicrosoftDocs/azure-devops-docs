@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 
 This is a step-by-step guide to using Azure Pipelines to build a GitHub repository.
 
-## Prerequisites
+## Prerequisites - Azure DevOps
 
 [!INCLUDE [include](includes/prerequisites.md)]
 
@@ -562,7 +562,7 @@ Save and queue a build manually and test your build pipeline.
 1. Go to the build summary. On the **Artifacts** tab of the build, notice that the script is published as an artifact.
 
    > [!div class="mx-imgBorder"] 
-   > ![Open the build console](media/get-started-designer/artifacts-explorer-azure-devops-newnavon.png)
+   > ![Open the build console to see the artifact](media/get-started-designer/artifacts-explorer-azure-devops-newnavon.png)
 
 ::: moniker-end
 
@@ -608,7 +608,7 @@ Save and queue a build manually and test your build pipeline.
 
    This queues a new build on the agent. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
 
-   ![Open the build console](media/get-started-designer/build-console.png)
+   ![Open the build console to see hello world](media/get-started-designer/build-console.png)
 
 1. Go to the build summary.
 
@@ -785,7 +785,7 @@ Define the process for running the script in two stages.
 1. Rename the release pipeline **Hello world**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Rename the release pipeline](media/get-started-designer/rename-release-pipeline-azure-devops-newnavon.png)
+   > ![Rename the release pipeline hello world](media/get-started-designer/rename-release-pipeline-azure-devops-newnavon.png)
    >
 
 1. Save the release pipeline.
@@ -886,7 +886,7 @@ Define the process for running the script in two stages.
 
 12. Rename the release pipeline **Hello world**.
 
-    ![Rename the release pipeline](media/get-started-designer/rename-release-definition.png)
+    ![Rename the release pipeline to hello world](media/get-started-designer/rename-release-definition.png)
 
 13. Save the release pipeline.
 
@@ -1024,7 +1024,7 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 
 <a name="next-steps"></a>
 
-## Next steps
+## Next steps: configure a pipeline
 
 You've learned the basics of creating and running a pipeline.
 Now you're ready to configure your build pipeline for the programming language you're using.
@@ -1300,7 +1300,7 @@ To learn more about build pipeline settings, see:
 [REST API Reference: Create a build pipeline](../integrate/index.md)
 
 > [!NOTE]
-> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest).
+> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest&preserve-view=true).
 
 <!-- ENDSECTION -->
 
