@@ -53,7 +53,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 7. A new run is started. Wait for the run to finish.
 
-Learn more about [working with Java](ecosystems/java.md) in your pipeline.
+Learn more about [working with Java](ecosystems/java.md) in your pipeline.  
 
 #### [.NET](#tab/net)
 
