@@ -59,12 +59,12 @@ The syntax shown works whether you have or haven't [connected your project to a 
 	Also, you can customize the set of columns by specifying `2` for the columnOptions and then a comma-delimited list of the board columns to appear. For example, `columnOptions=2&columns=Proposed,Committed,In%20Progress,In%20Review`, as shown in the following syntax. For column labels that include spaces, you must encode the space with <strong>%20</strong>. For example, <strong>In%20Progress</strong>.
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings,Status badge](media/badges/badge-syntax.png) 
+	> ![Customize the set of columns that appear.](media/badges/badge-syntax.png) 
 
 	And which will cause a badge similar to the following to display. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings,Status badge](media/badges/custom-columns.png) 
+	> ![A badge that displays.](media/badges/custom-columns.png) 
 
 1. When done, choose <strong>Save and close</strong> or <strong>Cancel</strong>.
 

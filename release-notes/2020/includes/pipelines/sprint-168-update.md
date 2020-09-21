@@ -36,7 +36,7 @@ You can navigate to the new experience by selecting **Pipelines** -&gt; **Pipeli
 
 To learn more about the multi-stage pipelines user experience, see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops).
 
-![img](../../media/168-pipelines-2-0.png)
+![Multi stage pipelines.](../../media/168-pipelines-2-0.png)
 
     
 ### Configure Deployment Strategies from Azure portal
@@ -45,4 +45,4 @@ With this capability, we have made it easier for you to configure pipelines that
 
 For more details, check out our documentation on [configuring Deployment Strategies](https://aka.ms/AA7jlh8). 
 
-![img](../../media/168-pipelines-4-0.png)  
+![Configure Deployment Strategies from Azure portal.](../../media/168-pipelines-4-0.png)  

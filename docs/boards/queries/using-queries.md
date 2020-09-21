@@ -123,7 +123,7 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 You create a query by defining one or more clauses. Each clause defines a filter criteria for a single field. Choose **Add new clause** to add another clause and then choose the **Field**, **Operator**, and **Value** for that clause.  
 
 > [!div class="mx-imgBorder"]  
-> ![Add new query, new experience](media/using-queries/define-clause.png)  
+> ![Define a clause.](media/using-queries/define-clause.png)  
 
 For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (=) operator, and the <strong>@Me</strong> macro which represents your user identity.
 
