@@ -47,7 +47,7 @@ A subscription lets you control what your team should be notified about and how 
 
 4. Provide a description to help you identify the subscription later.
 
-    ![Select event category and template](media/new-sub-description.png)
+    ![Provide a description.](media/new-sub-description.png)
 
 5. Choose which team members should receive a notification:
 
@@ -67,7 +67,7 @@ A subscription lets you control what your team should be notified about and how 
 
 7. Optionally configure additional filter criteria.
 
-    ![Select scope](media/new-sub-filter-conditions.png)
+    ![Configure additional filter criteria.](media/new-sub-filter-conditions.png)
 
 8. Select **Finish** to save the new subscription.
 
@@ -90,7 +90,7 @@ A subscription lets you control what your team should be notified about and how 
 
 4. Provide a description to help you identify the subscription later.
 
-    ![Select event category and template](media/new-sub-description.png)
+    ![Provide a description.](media/new-sub-description.png)
 
 5. Choose which team members should receive a notification:
 
@@ -110,7 +110,7 @@ A subscription lets you control what your team should be notified about and how 
 
 7. Optionally configure additional filter criteria.
 
-    ![Select scope](media/new-sub-filter-conditions.png)
+    ![Configure additional filter criteria.](media/new-sub-filter-conditions.png)
 
 8. Select **Finish** to save the new subscription.
 
@@ -133,7 +133,7 @@ A subscription lets you control what your team should be notified about and how 
 
 4. Provide a description to help you identify the subscription later.
 
-    ![Select event category and template](media/new-sub-description.png)
+    ![Provide a description.](media/new-sub-description.png)
 
 5. Choose which team members should receive a notification:
 
@@ -153,7 +153,7 @@ A subscription lets you control what your team should be notified about and how 
 
 7. Optionally configure additional filter criteria.
 
-    ![Select scope](media/new-sub-filter-conditions.png)
+    ![Configure additional filter criteria.](media/new-sub-filter-conditions.png)
 
 8. Select **Finish** to save the new subscription.
 

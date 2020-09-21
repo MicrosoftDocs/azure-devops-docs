@@ -55,7 +55,7 @@ Learn how to delete a project from Azure DevOps. Deleting a project helps simpli
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Select Open Organization settings.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Projects**, and then check one or more projects to delete. Select **Delete**. 
 
