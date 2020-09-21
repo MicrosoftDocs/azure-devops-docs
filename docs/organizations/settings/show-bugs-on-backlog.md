@@ -1,7 +1,7 @@
 ---
-title: Show bugs on backlogs and boards
+title: Make bugs visible on backlogs and boards
 titleSuffix: Azure DevOps 
-description: Choose how bugs appear on Agile tools in Azure Boards and Azure DevOps
+description: Choose how to get bugs and user stories to appear on Agile tools in Azure Boards and Azure DevOps.
 ms.technology: devops-agile
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
 ms.author: kaelli
