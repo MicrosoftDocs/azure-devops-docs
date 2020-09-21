@@ -10,20 +10,23 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
 
-[Azure Key Vault](/azure/key-vault/general/basic-concepts) helps teams to securely store and manage sensitive information such as keys, passwords, certificates, etc., in a centralized storage which are safeguarded by industry-standard algorithms, key lengths, and even hardware security modules. This prevents the disclosure of information through source code, a common mistake that many developers make. Many developers leave confidential details such as database connection strings, passwords, private keys, etc., in their source code which when gained by malicious users can result in undesired consequences. Access to a key vault requires proper authentication and authorization and with RBAC, teams can have even fine granular control who has what permissions over the sensitive data.
-
-In this tutorial, you learn about:
+[Azure Key Vault](/azure/key-vault/general/basic-concepts) helps teams to securely store and manage sensitive information such as API keys, passwords, certificates, etc.
+ 
+In this tutorial, you will learn about:
 
 > [!div class="checklist"]
 > * Creating an Azure Key Vault using the Azure CLI
-> * Adding a secret to and configuring access for the Azure Key Vault 
-> * Securely consuming the Azure Key Vault secret from an Azure Pipeline
+> * Adding a secret and configuring access for the Azure Key Vault 
+> * Securely using secrets in your pipeline
 
 ## Prerequisites
 
 [!INCLUDE [include](../includes/azure-prerequisites.md)]
 
 * An Azure DevOps organization. If you don't have one, you can [create one for free](../get-started/pipelines-sign-up.md). 
+
+> [!TIP]
+> Another way of working with secrets is using [Secret variables](../process/variables.md#secret-variables) in your Azure Pipeline or setting up [secret variables in variable groups](../process/variables.md#reference-secret-variables-in-variable-groups).
 
 <a name="creating-azure-key-vault"></a>
 
