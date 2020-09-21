@@ -54,10 +54,12 @@ ms.date: 09/21/2020
    :::column span="3":::
       The target dates for when the work will start or finish. These fields are filled in by [Microsoft Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project) when you use it for scheduling.  
       You can specify work in hours or in days. There are no inherent time units associated with this field.  
+   :::column-end:::
+:::row-end:::
 ---
 :::row:::
    :::column span="":::
-      [](/azure/devops/boards/queries/planning-ranking-priorities.md" >Triage</a> (Required) </p>
+      [Triage](/azure/devops/boards/queries/planning-ranking-priorities) (Required) </p>
    :::column-end:::
    :::column span="3":::
       Indicates the type of triage decision that is pending for the work item. Use this field when the work item is in the *Proposed* state and specify one of the following values: **Pending** (default), **More Info**, **Info Received**, or **Triaged**.  
