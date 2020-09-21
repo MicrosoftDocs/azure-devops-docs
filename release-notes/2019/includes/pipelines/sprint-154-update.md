@@ -7,12 +7,12 @@ ms.topic: include
 We are excited to announce the availability of the [Azure Pipeline app for Jira](https://marketplace.atlassian.com/apps/1220515/azure-pipelines-for-jira?hosting=cloud&tab=overview). The integration enables bi-directional linking between releases in Azure Pipelines and issues in Jira software cloud. It simplifies the generation of release notes by tracking Jira issues mentioned in GitHub commits deployed with releases. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_12.png "Azure Pipelines app for Jira")
+> ![Azure Pipelines app for Jira.](../../media/154_12.png "Azure Pipelines app for Jira")
 
 In addition, it displays build and release information from Azure Pipelines and shows it in the development panel of the issues. This enabled tracking of how and when an issue is delivered, and provides a tight development cycle from issue creation to deployments tracked in Jira.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_13.png "Azure Pipelines app for Jira")
+> ![Build and release information tracked in Jira.](../../media/154_13.png)
 
 To learn more about the Azure Pipelines integration with Jira software cloud, see the documentation [here](https://github.com/microsoft/azure-pipelines-jira/blob/master/tutorial.md).
 
@@ -26,7 +26,7 @@ In addition, you can now paste a link to a build or release in the Azure Pipelin
 For example, pasting a link to a build shows the details of the build and the current status.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_02.gif "URL unfurling (link previews) in Azure Pipelines app for Slack")
+> ![URL unfurling (link previews) in Azure Pipelines app for Slack.](../../media/154_02.gif "URL unfurling (link previews) in Azure Pipelines app for Slack")
 
 For more details about this update, see the blog post with the full announcement [here](https://devblogs.microsoft.com/devops/link-unfurling-preview-in-azure-pipelines-app-for-slack).
 
@@ -95,7 +95,7 @@ Now you can link your GitHub releases as artifact source in Azure DevOps release
 When you click **Add an artifact** in the release pipeline definition, you will find the new **GitHub Release** source type. You can provide the service connection and the GitHub repo to consume the GitHub release. You can also choose a default version for the GitHub release to consume as latest, specific tag version or select at release creation time. Once a GitHub release is linked, it is automatically downloaded and made available in your release jobs.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_08.png "Add GitHub release as artifact source")
+> ![Add GitHub release as artifact source.](../../media/154_08.png "Add GitHub release as artifact source")
 
 ### Pay for additional pipelines from the Azure DevOps portal
 
@@ -108,14 +108,14 @@ To learn more visit the documentation about buying CI/CD [here](https://docs.mic
 Acting to pending approvals made easier. So far, it was possible to approve a release from the details page of the release. We now make it possible for you to approve releases directly from the Releases hub.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_16.png "Approve releases directly from releases hub")
+> ![Approve releases directly from releases hub.](../../media/154_16.png "Approve releases directly from releases hub")
 
 ### Azure Kubernetes Service Cluster link in Kubernetes environments resource view
 
 We added a link to the resource view of Kubernetes environments so you can navigate to the Azure blade for the corresponding cluster. This applies to environments that are mapped to namespaces in Azure Kubernetes Service clusters.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_17.png "Azure Kubernetes Service Cluster link in Kubernetes resource view of Environments")
+> ![Azure Kubernetes Service Cluster link in Kubernetes resource view of Environments.](../../media/154_17.png "Azure Kubernetes Service Cluster link in Kubernetes resource view of Environments")
 
 ### Release folder filters in notification subscriptions
 
@@ -123,25 +123,25 @@ Folders allow organizing pipelines for easier discoverability and security contr
 Previously, you had to configure multiple subscriptions or have complex query in the subscriptions to get focused emails. With this update, you can now add a release folder clause to the **deployment completed** and **approval pending** events and simplify the subscriptions. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_18.png "Release folder filters in notification subscriptions")
+> ![Release folder filters in notification subscriptions.](../../media/154_18.png "Release folder filters in notification subscriptions")
 
 ### Deploy external Git repositories to Azure Kubernetes Services (AKS)
 
 Previously, we supported Azure Repos and GitHub as code locations in the AKS deployment center. With this update, we are adding support for **External Git** repos so you can deploy your code from any public or private Git repository to AKS.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_25.png "Deploy to AKS from your external Git repos")
+> ![Deploy to AKS from your external Git repos.](../../media/154_25.png "Deploy to AKS from your external Git repos")
 
 ### Support for Bitbucket repositories in DevOps Projects
 
 We've added support for Bitbucket repositories to DevOps Projects. Now you can get OAuth experience and a populated list of repositories and branches to select from when deploying to Azure resources.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_26.png "Bitbucket repositories in DevOps Projects")
+> ![Bitbucket repositories in DevOps Projects.](../../media/154_26.png "Bitbucket repositories in DevOps Projects")
 
 ### Select a Dockerfile in deployment center for AKS and WebApp Containers
 
 You can now select a Dockerfile in the deployment center for AKS and WebApp Containers. This will be helpful when you want to maintain different versions of Dockerfile or have multiple application in the same repo.  With this you will be able to select the specific DockerFile/application you want to push.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_27.png "select a Dockerfile in deployment center for AKS and WebApp Containers")
+> ![select a Dockerfile in deployment center for AKS and WebApp Containers.](../../media/154_27.png "select a Dockerfile in deployment center for AKS and WebApp Containers")

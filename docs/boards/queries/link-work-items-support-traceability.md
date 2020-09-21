@@ -260,7 +260,7 @@ Team Foundation version control (TFVC) lets you link work items to version contr
 
 You can use the Hyperlinks or Storyboard link type to link a work item to a Web site, network share, or document located on a network share. Both of these link types are one-way links. To add links of this type, you can use the same links controls [described earlier for linking work items](#link-work-items). 
 
-![Artifact-to-artifact link types](media/link-tracking-work-item-to-url-link-types.png)  
+![Use the Hyperlinks or Storyboard link type to link a work item to a URL.](media/link-tracking-work-item-to-url-link-types.png)  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 

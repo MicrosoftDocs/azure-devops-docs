@@ -11,9 +11,9 @@ Until now, the [lead and cycle time widgets](https://docs.microsoft.com/azure/de
 With this update questions like this can be answered by filtering on the Board swimlane. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_13.png)
+> ![Lead and Cycle Time widgets advanced filtering.](../../media/157_13.png)
 
 We've also included work item filters in order to limit the work items that appear in the chart.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_16.png)
+> ![Work item filters to limit the work items that appear in the chart.](../../media/157_16.png)

@@ -148,7 +148,7 @@ To quickly assign fields from the card without having to open the work item, add
 	For example, here we uncheck **Show ID**, remove the **State** field, and add the **Priority** field. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings, Fields dialog, Add Priority field](media/customize-boards/settings-fields-agile-change-priority.png) 
+	> ![Add the Priority field.](media/customize-boards/settings-fields-agile-change-priority.png) 
 	
 3. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.
 
@@ -244,15 +244,15 @@ After you close the settings dialog, refresh (F5) your board to view your change
 Here we show the customizations made in this article. The following image also shows a style applied to the color when the Priority=1. 
 
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-customized-view.png) 
+> ![Customizations made in this article.](media/customize-boards/boards-customized-view.png) 
 
 ::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-customized-view-s155.png) 
+> ![Customizations made in this article.](media/customize-boards/boards-customized-view-s155.png) 
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-customized-view.png) 
+> ![Customizations made in this article.](media/customize-boards/boards-customized-view.png) 
 ::: moniker-end
 
 #### [Agile process](#tab/agile-process) 
@@ -261,11 +261,11 @@ Here we show the customizations made in this article. The following image also s
 
 ::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-agile-customized-view-s155.png)  
+> ![Customizations made in this article.](media/customize-boards/boards-agile-customized-view-s155.png)  
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-agile-customized-view.png) 
+> ![Customizations made in this article.](media/customize-boards/boards-agile-customized-view.png) 
 ::: moniker-end
 
 * * *
