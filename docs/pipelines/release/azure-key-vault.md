@@ -32,33 +32,27 @@ In this tutorial, you will learn about:
 
 ## Create an Azure Key Vault
 
-This tutorial uses a simple scenario to illustrate the integration between Azure Pipelines and Azure Key Vault. The first step is to create an Azure Key Vault, which can be done via the portal or CLI. This tutorial uses the CLI.
+This tutorial uses a simple scenario to illustrate the integration between Azure Pipelines and Azure Key Vault. The first step is to create an Azure Key Vault. This can be done through Azure portal or Azure CLI. We will use the CLI in this tutorial
 
 [!INCLUDE [include](../ecosystems/includes/sign-in-azure-cli.md)]
 
 
-1. If you have more than one Azure subscription associated with your account, use the command below to specify a default subscription. You can use `az account list` to generate a list of your subscriptions to find the details you need to specify one.
+1. If you have more than one Azure subscription associated with your account, use the command below to specify a default subscription. You can use `az account list` to generate a list of your subscriptions.
 
-    ```azurecli-interactive
-    az account set --subscription <subscription name or ID>
+    ```Azure CLI
+    az account set --subscription <your_subscription_name_or_ID>
     ```
 
-1. Execute the following command to configure a default Azure region for your subscription. Be sure to update the region to reflect the one you want to use. You can use `az account list-locations` to generate a list of available regions.
+1. Run the following command to set a default Azure region for your subscription. You can use `az account list-locations` to generate a list of available regions.
 
-    ```azurecli-interactive
-    az configure --defaults location=<REGION>
+    ```Azure CLI
+    az configure --defaults location=<your_region>
     ```
 
-    For example, this command would select the westus2 region:
+    For example, this command will select the westus2 region:
 
-    ```azurecli-interactive
+    ```Azure CLI
     az configure --defaults location=westus2
-    ```
-
-1. Creating Bash variables helps make the setup process more convenient and less error-prone. Run the command below to create a variable for the resource group's name.
-
-    ```azurecli-interactive
-    rgName='PipelinesKeyVaultResourceGroup'
     ```
 
 1. Run the command below to create a variable for the Azure Key Vault's name. Note that this name is required to be globally unique, so it uses string interpolation (double quotes) and the `$RANDOM` helper. If you see a name conflict error later on when creating the key vault, try running this again to generate a new random name before rerunning the key vault creation command.
@@ -82,7 +76,7 @@ This tutorial uses a simple scenario to illustrate the integration between Azure
 1. Run the following `az group create` command to create a resource group using the name defined earlier.
 
     ```azurecli-interactive
-    az group create --name $rgName
+    az group create --name <your-resource-group_name>
     ```
    
 1. Run the following `az keyvault create` command to create a resource group using the name defined earlier.
@@ -90,7 +84,7 @@ This tutorial uses a simple scenario to illustrate the integration between Azure
     ```azurecli-interactive
     az keyvault create \
       --name $keyVaultName \
-      --resource-group $rgName
+      --resource-group <your-resource-group_name>
     ```
 
 1. Run the following `az keyvault secret set` command to create a secret in the key vault named `Password` with the contents `mysecretpassword`. This will be the secret securely retrieved later on in the pipeline. 
