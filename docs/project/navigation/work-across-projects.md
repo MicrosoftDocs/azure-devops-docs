@@ -52,6 +52,8 @@ For example, you can quickly access and navigate to the following artifacts defi
 
 To switch to another project, see [Switch project, repository, or team](go-to-project-repo.md). 
 
+For additional notes on working across projects, see [Work across projects FAQs](../work-across-projects-faqs.md). 
+
 
 ## View and open work items
 

@@ -11,13 +11,13 @@ ms.date: 09/15/2020
 ---
 
 
-# Work across projects
+# Work across projects FAQs
 
 [!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)] 
 
-Many enterprise organizations add multiple projects to support their business needs. While we recommend that you maintain a single project to keep things simple, there are instances where multiple projects are needed. 
+Many enterprise organizations add multiple projects to support their business needs. While we recommend that you maintain a single project to keep things simple, there are instances where multiple projects are needed. In that event, several questions arise as to what tasks are supported when working with two or more projects. This article addresses these questions. 
 
-In that event, several questions arise as to what tasks are supported when working with two or more projects. 
+To learn about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
 
 ## Azure DevOps
 
