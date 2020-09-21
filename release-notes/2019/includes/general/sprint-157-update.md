@@ -18,21 +18,21 @@ Here are some example scenarios where users are @mentioned:
 Kyle gets @mentioned when a release deployment is waiting for her approval
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_01.png)
+> ![Release deployment waiting for approval.](../../media/157_01.png)
 
 Brian gets @mentioned when a work item is assigned to him
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_02.png)
+> ![Work item is assigned.](../../media/157_02.png)
 
 Alice gets @mentioned when her pull request gets approved
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_03.png)
+> ![Pull request gets approved.](../../media/157_03.png)
 
 ### Download a list of organizations to a directory
 
 You can now download the complete list of organizations backed by your Azure Active Directory tenant. This list can be retrieved from the **Azure Active Directory** tab in the Organization Settings of any organization associated with the directory. The download details will include the organization ID, Organization Name, Organization URL, and the Organization Owner.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/157_17.png)
+> ![Download the complete list of organizations backed by your Azure Active Directory.](../../media/157_17.png)
