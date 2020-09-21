@@ -135,7 +135,7 @@ xcode
    <tr>
       <td><code>exportOptions</code><br/>Export options</td>
       <td>
-         (Optional) Select a way of providing options for exporting the archive. When the default value of <code>Automatic</code> is selected, the export method is automatically detected from the archive. Select <code>Plist</code> to specify a plist file containing export options. Select <code>Specify</code> to provide a specific <strong>Export method</strong> and <strong>Team ID</strong>. <br/>Default value: auto
+         (Optional) Select a way of providing options for exporting the archive. When the default value of <code>Automatic</code> is selected, the export method is automatically detected from the archive. Select <code>plist</code> to specify a plist file containing export options. Select <code>Specify</code> to provide a specific <strong>Export method</strong> and <strong>Team ID</strong>. <br/>Default value: auto
       </td>
    </tr>
    <tr>
