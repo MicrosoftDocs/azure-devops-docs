@@ -266,213 +266,234 @@ For example, here we assign the Requirement to Jamal Hartnett. Choose **Save & C
 
 #### CMMI-specific field descriptions
 
-<table>
-<tbody valign="top">
-  <tr>
-    <th width="22%">Field</th>
-    <th>Usage</th>
-  </tr>
-  <tr>
-    <td>
-      <p><a href="../../boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md">Impact Assessment</a></p>
-    </td>
-    <td>
-      <p>The customer impact of not implementing this requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories. You capture this information in the rich-text HTML field which corresponds to Impact Assessment.</p>
-      <p>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><a href="../../boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md">Requirement Type</a> (Required) </p>
-    </td>
-    <td>
-      <p>The kind of requirement to implement. You can specify one of the following values: </p>
-      <ul>
-        <li><strong>Business Objective</strong></li>
-        <li><strong>Feature</strong></li>
-        <li><strong>Functional</strong></li>
-        <li><strong>Interface</strong></li>
-        <li><strong>Operational</strong></li>
-        <li><strong>Quality of Service</strong></li>
-        <li><strong>Safety</strong></li>
-        <li><strong>Scenario</strong></li>
-        <li><strong>Security</strong></li>
-      </ul>
-    </td>
-  </tr>
-<tr>
-    <td><p><a href="../../boards/queries/planning-ranking-priorities.md">Value area</a></p></td>
-	<td><p>The area of customer value addressed by the epic, feature, requirement, or backlog item. Values include:</p>
-        <ul>
-        <li>
-            <strong>Architectural </strong>: Technical services to implement business features that deliver solution 
-        </li>
-        <li>
-            <strong>Business</strong>: Services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
-        </li>
-      </ul>
-</td></tr>
-<tr>
-    <td><p><a href="../../boards/queries/query-numeric.md">Original Estimate</a> </p></td>
-    <td><p>The amount of estimated work required to complete a task. Typically, this field doesn&#39;t change after it is assigned.</p>
-<p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
-</td>
-</tr>
-<tr>
-    <td><p><a href="../../boards/queries/query-by-date-or-current-iteration.md">Start Date/Finish Date</a> </p></td>
-    <td><p>The target dates for when the work will start or finish. These fields are filled in by <a href="../../boards/backlogs/office/create-your-backlog-tasks-using-project.md" >Microsoft Project</a> when you use it for scheduling.</p>
-<p>You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
-</td>
-</tr>
-  <tr>
-    <td>
-      <p>
-       <a href="../../boards/queries/planning-ranking-priorities.md" >Triage</a> (Required) </p>
-    </td>
-    <td>
-      <p>Indicates the type of triage decision that is pending for the work item. Use this field when the work item is in the Proposed state and specify one of the following values: <strong>Pending</strong> (default), <strong>More Info</strong>, <strong>Info Received</strong>, and <strong>Triaged</strong>.</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>
-        <a href="../../boards/queries/planning-ranking-priorities.md">Blocked</a></p>
-    </td>
-    <td>
-      <p>Indicates whether a team member is prevented from making progress toward implementing a requirement or task or resolving a bug, change request, or risk. If an issue has been opened to track a blocking problem, you can create a link to the issue. You can specify <strong>Yes</strong> of <strong>No</strong>.</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>
-        <a href="../../boards/queries/planning-ranking-priorities.md" >Committed</a> (Required) </p>
-    </td>
-    <td>
-      <p>Indicates whether the requirement is committed in the project or not. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>
-        <a href="../../boards/queries/build-test-integration.md" >Integrated In</a>  </p>
-    </td>
-    <td>
-      <p>Product build number that incorporates the requirement, change request, or fixes a bug.</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>
-        <a href="../../boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md">User Acceptance Test</a> (Required) </p>
-    </td>
-    <td>
-      <p>The status of the user acceptance test for a requirement. You can specify one of the following values:   </p>
-          <ul>
-            <li><strong>Pass</strong></li>
-            <li><strong>Fail</strong></li>
-            <li><strong>Not Ready</strong></li>
-            <li><strong>Ready</strong></li>
-            <li><strong>Skipped</strong></li>
-            <li><strong>Info Received</strong></li>
-          </ul>
-	<p>You specify <strong>Not Ready</strong> when the requirement is in the Active state, and you specify <strong>Ready</strong>when the requirement is in the Resolved state.</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>
-        <a href="../../boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md">Subject Matter Experts</a> 
-      </p>
-    </td>
-    <td>The names of team members who are familiar with the customer area that this requirement represents.
-    </td>
-  </tr>
-</tbody>
-</table>
 
-* * *
+---
+:::row:::
+   :::column span="":::
+      **Field**
+   :::column-end:::
+   :::column span="3":::
+      **Definition**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Impact Assessment](/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi)
+   :::column-end:::
+   :::column span="3":::
+      The customer impact of not implementing this requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories. You capture this information in the rich-text HTML field which corresponds to Impact Assessment.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Requirement Type](/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi)(Required)  
+   :::column-end:::
+   :::column span="3":::
+      The kind of requirement to implement. You can specify one of the following values:  
+      - **Business Objective**  
+      - **Feature**  
+      - **Functional**  
+      - **Interface**  
+      - **Operational**  
+      - **Quality of Service**  
+      - **Safety**  
+      - **Scenario**  
+      - **Security**  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Start Date/Finish Date](/azure/devops/boards/queries/query-by-date-or-current-iteration)  
+   :::column-end:::
+   :::column span="3":::
+      The target dates for when the work will start or finish. These fields are filled in by [Microsoft Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project) when you use it for scheduling.  
+      You can specify work in hours or in days. There are no inherent time units associated with this field.  
+---
+:::row:::
+   :::column span="":::
+      [](/azure/devops/boards/queries/planning-ranking-priorities.md" >Triage</a> (Required) </p>
+   :::column-end:::
+   :::column span="3":::
+      Indicates the type of triage decision that is pending for the work item. Use this field when the work item is in the *Proposed* state and specify one of the following values: **Pending** (default), **More Info**, **Info Received**, or **Triaged**.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Blocked](/azure/devops/boards/queries/planning-ranking-priorities)  
+   :::column-end:::
+   :::column span="3":::
+      Indicates whether a team member is prevented from making progress toward implementing a requirement or task or resolving a bug, change request, or risk. If an issue has been opened to track a blocking problem, you can create a link to the issue. You can specify **Yes** or **No** (default).  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Committed](/azure/devops/boards/queries/planning-ranking-priorities) (Required)  
+   :::column-end:::
+   :::column span="3":::
+      Indicates whether the requirement is committed in the project or not. You can specify **Yes** or **No** (default).  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Integrated In](/azure/devops/boards/queries/build-test-integration)
+   :::column-end:::
+   :::column span="3":::
+      Product build number that incorporates the requirement, change request, or fixes a bug.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [User Acceptance Test](/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi) (Required)  
+   :::column-end:::
+   :::column span="3":::
+      The status of the user acceptance test for a requirement. You can specify one of the following values:
+      - **Pass**  
+      - **Fail**  
+      - **Not Ready**  
+      - **Ready**  
+      - **Skipped**  
+      - **Info Received**  
+      Specify **Not Ready** when the requirement is in the Active state, and you specify **Ready** when the requirement is in the Resolved state.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Subject Matter Experts](/azure/devops/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi)
+   :::column-end:::
+   :::column span="3":::
+      The names of team members who are familiar with the customer area that this requirement represents.
+   :::column-end:::
+:::row-end:::
+---
 
+***
 
 ### Field descriptions
 
-<table valign="top" width="100%">
-<tbody valign="top" >
-<tr>
-<th width="20%">Field</th>
-<th width="80%">Definition</th>
-</tr>
-<tr>
-    <td width="18%"><p><a href="/azure/devops/boards/queries/titles-ids-descriptions">Title</a> </p></td>
-	<td><p>Enter a description of 255 characters or less. You can always modify the title later.</p></td></tr>
-<tr>
-    <td><p><a href="/azure/devops/boards/queries/query-by-workflow-changes">Assigned To</a></p></td>
-	<td><p>Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.</p></td></tr>
-<tr>
-    <td><p><a href="/azure/devops/boards/queries/query-by-workflow-changes">State</a></p></td>
-	<td><p>When the work item is created, the State defaults to the first state in the workflow. As work progresses, update it to reflect the current state.</p></td></tr>
-<tr>
-    <td><p><a href="/azure/devops/boards/queries/query-by-workflow-changes">Reason</a></p></td>
-	<td><p>Use the default first. Update it when you change state as need. Each State is associated with a default reason.</p></td></tr>
-<tr>
-    <td><a href="../../boards/queries/query-by-area-iteration-path.md">Area</a></td>
-    <td>Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting. To change the dropdown list of areas, see <a href="../settings/set-area-paths.md">Define area paths and assign to a team</a>.</td>
-</tr>
-<tr>
-    <td><a href="../../boards/queries/query-by-area-iteration-path.md">Iteration</a></td>
-    <td>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see <a href="../settings/set-iteration-paths-sprints.md">Define iteration paths and configure team iterations</a>.</td>
-</tr>
-<tr>
-<td><a href="../../boards/queries/titles-ids-descriptions.md" >Description</a></td> 
-<td>Provide enough detail to create shared understanding of scope and support estimation efforts. Focus on the user, what they want to accomplish, and why. Don't describe how to develop the product. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</td> 
-</tr>
-<tr>
-    <td><p><a href="../../boards/queries/titles-ids-descriptions.md">Acceptance Criteria</a> </p></td>
-    <td><p>Provide the criteria to be met before the user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p>
-</td>
-</tr>
-<tr>
-    <td><p><a href="../../boards/queries/planning-ranking-priorities.md">Priority</a></p></td>
-	<td><p>A subjective rating of the issue or task it relates to the business. You can specify the following values:</p>
-<p><strong>1</strong>: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.</p>
-<p><strong>2</strong>: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.</p>
-<p><strong>3</strong>: Resolution of the work item is optional based on resources, time, and risk.</p>
-<p><strong>4</strong>: Resolution of the work item is not required.</p>
-</td>
-</tr>
-<tr>
-<tr>
-    <td><p><a href="../../boards/queries/planning-ranking-priorities.md">Value Area</a></p></td>
-	<td><p>The area of customer value addressed by the epic, feature, requirement, or backlog item. Values include:</p>
-        <ul>
-        <li>
-          <p>
-            <strong>Architectural </strong>: Technical services to implement business features that deliver solution 
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Business</strong>: Services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)
-          </p>
-        </li>
-      </ul>
-</td>
-</tr>
-<tr>
-<td><a href="../../boards/queries/query-numeric.md">Effort</a><br/>
-<a href="../../boards/queries/query-numeric.md">Story Points</a><br/>
-<a href="../../boards/queries/query-numeric.md">Size</a>
-<td>
-<a name="estimates"></a>
-Provide a relative estimate of the amount of work required to complete an issue.
-<p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers. </p>
-<p>The estimates you set are used to calculate <a href="../../report/dashboards/team-velocity.md">velocity</a> and <a href="../../boards/sprints/forecast.md">forecast sprints</a>.</p>
-</td> 
-</tr>
-</tbody>
-</table>
-
-
+---
+:::row:::
+   :::column span="":::
+      **Field**
+   :::column-end:::
+   :::column span="3":::
+      **Definition**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Title](/azure/devops/boards/queries/titles-ids-descriptions)
+   :::column-end:::
+   :::column span="3":::
+      Enter a description of 255 characters or less. You can always modify the title later.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Assigned To](/azure/devops/boards/queries/query-by-workflow-changes)
+   :::column-end:::
+   :::column span="3":::
+      Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [State](/azure/devops/boards/queries/query-by-workflow-changes)
+   :::column-end:::
+   :::column span="3":::
+      When the work item is created, the State defaults to the first state in the workflow. As work progresses, update it to reflect the current status. 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Reason](/azure/devops/boards/queries/query-by-workflow-changes)
+   :::column-end:::
+   :::column span="3":::
+      Use the default first. Update it when you change state as need. Each State is associated with a default reason. 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Area (Path)](/azure/devops/boards/queries/query-by-area-iteration-path)
+   :::column-end:::
+   :::column span="3":::
+      Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting. To change the dropdown list of areas, see [Define area paths and assign to a team](/azure/devops/organizations/settings/set-area-paths).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Iteration (Path)](/azure/devops/boards/queries/query-by-workflow-changes)
+   :::column-end:::
+   :::column span="3":::
+      Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see [Define iteration paths and configure team iterations](/azure/devops/organizations/settings/set-iteration-paths-sprints).
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Description](/azure/devops/boards/queries/titles-ids-descriptions)
+   :::column-end:::
+   :::column span="3":::
+      Provide enough detail to create shared understanding of scope and support estimation efforts. Focus on the user, what they want to accomplish, and why. Don't describe how to develop the product. Do provide sufficient details so that your team can write tasks and test cases to implement the item.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Acceptance Criteria](/azure/devops/boards/queries/titles-ids-descriptions)
+   :::column-end:::
+   :::column span="3":::
+      Provide the criteria to be met before the user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Priority](/azure/devops/boards/queries/planning-ranking-priorities)
+   :::column-end:::
+   :::column span="3":::
+      A subjective rating of the issue or task it relates to the business. You can specify the following values:  
+      - **1**: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.  
+      - **2**: Product cannot ship without the successful resolution of the work item, but it does not need to be addressed immediately.  
+      - **3**: Resolution of the work item is optional based on resources, time, and risk.  
+      - **4**: Resolution of the work item is not required. 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Value Area](/azure/devops/boards/queries/planning-ranking-priorities)
+   :::column-end:::
+   :::column span="3":::
+      A subjective rating of the issue or task it relates to the business. You can specify the following values:  
+      - **Architectural**: Technical services to implement business features that deliver solution .  
+      - **Business**: Services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default).  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [Effort, Story Points, Size](/azure/devops/boards/queries/query-numeric)
+   :::column-end:::
+   :::column span="3":::
+      Provide a relative estimate of the amount of work required to complete an issue. Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers.  
+      The estimates you set are used to calculate [team velocity](/azure/devops/report/dashboards/team-velocity) and [forecast sprints](/azure/devops/boards/sprints/forecast).
+   :::column-end:::
+:::row-end:::
+---
 
 
 <a id="tag" /> 
