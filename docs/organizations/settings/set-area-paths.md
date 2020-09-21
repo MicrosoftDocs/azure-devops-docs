@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 07/14/2020
+ms.date: 09/17/2020
 ---
 
 # Define area paths and assign to a team
@@ -16,7 +16,7 @@ ms.date: 07/14/2020
 [!INCLUDE [temp](../../boards/includes/version-all.md)]
 
 
-You add area paths to support teams and to group work items based on product, feature, or business areas. Once you define area paths at the project level, you assign them to a team under the team configuration. You can also create a hierarchy of area paths to support subareas, up to 14 levels deep.
+Add area paths to support teams and group work items based on product, feature, or business areas. Once you define area paths at the project level, you assign them to a team under the team configuration. You can also create a hierarchy of area paths to support sub-areas, up to 14 levels deep.
 
 > [!NOTE] 
 > Area Paths and Iteration Paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes), or the Azure DevOps CLI commands and [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
@@ -33,32 +33,32 @@ To understand how the system uses area paths, see [About area and iteration path
 
 <a name="permissions"></a>
 
-- Add Area Paths to a project. If you don't have a project yet, [create one now](../projects/create-project.md).
-- Ensure you're a member of the **Project Administrators** group to add an Area Path under the root node or edit or delete any child node. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
-- Have one or more of the following permissions set to **Allow**,  to add, edit, and manage Area Paths under a node:
+- If you don't have a project yet, [create one now](../projects/create-project.md).
+- Ensure you're a member of the **Project Administrators** group to add an area path under the root node or edit or delete any child node. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
+- Have one or more of the following permissions set to **Allow**, to add, edit, and manage Area Paths under a node:
 
     - **Create child nodes**
     - **Delete this node**
     - **Edit this node**
     - **View permissions in this node**
 
-  By default, the user who created the project has these permissions set. To learn more, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
-- Ensure you're [added as a team administrator](add-team-administrator.md) or are a member of the **Project Administrators** group to set team Area Paths.  
+  By default, the user who created the project has these permissions already set. For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
+- Ensure you're [added as a team administrator](add-team-administrator.md) or are a member of the **Project Administrators** group to set team area paths.  
 
 For naming restrictions on Area Paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 
 <a id="guidance" />
 
-## Get started sequence
+## Get started
 
 If you're new to managing projects and teams, the most straight forward sequence for configuring your project and teams is as follows:
 
-1. Determine the number and names of Area Paths that you want to support to categorize your work. At a minimum, you'll want to add one Area Path for each team that you'll define. For guidance, review [About areas and iterations](about-areas-iterations.md).
-2. Determine the number and names of teams you want to support. For guidance, review [About teams and Agile tools](about-teams-and-settings.md).
+1. Determine the number and names of area paths that you want to support to categorize your work. At a minimum, add one area path for each team you define. For more information, review [About areas and iterations](about-areas-iterations.md).
+2. Determine the number and names of teams you want to support. For more information, review [About teams and Agile tools](about-teams-and-settings.md).
 3. Open **Project settings>Project configuration** and define the Area Paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add area paths](#add-areas).
-4. Define the teams you need to support step 2. For guidance, see [Add a team, move from one default team to several teams](add-teams.md).  
-5. Open the team configuration and assign the default and additional Area Path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default area path(s)](#team-area-paths).
-6. Assign the Area Path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
+4. Define the teams you need to support step 2. For more information, see [Add a team, move from one default team to several teams](add-teams.md).  
+5. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default area path(s)](#team-area-paths).
+6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
 
 ::: moniker range=">= tfs-2017"
 
@@ -70,11 +70,11 @@ If you're new to managing projects and teams, the most straight forward sequence
 As needed, you can do the following actions at any time:
 
 - Add additional child nodes
-- Rename an Area Path (except the root area path)
+- Rename an area path (except the root area path)
 - Move a child node under another node
 - Delete a child node
 - Rename a team
-- Change the Area Path assignments made to a team
+- Change the area path assignments made to a team
 
 <a id="open-project-settings" />
 <a id="open-admin-context" />
@@ -84,13 +84,13 @@ As needed, you can do the following actions at any time:
 
 ::: moniker range=">= azure-devops-2019"
 
-You define both areas and iterations for a project from the **Project Settings > Boards > Project configuration**.
+Define both areas and iterations for a project from the **Project Settings** > **Boards** > **Project configuration**.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-You define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, you open the admin context by choosing the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon.
+Define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, open the admin context by choosing the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon.
 
 ::: moniker-end
 
@@ -155,7 +155,7 @@ az boards area project list [--depth]
 #### Parameters 
 
 - **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3. When not specified, only the top-level area paths are returned.
-- **path**: Optional. Absolute path of an area.  `\Area\` must follow after the `\ProjectName`, which distinguishes this from an iteration path.  Example: --path \ProjectName\Area\AreaName. If spaces are used within a node, then enclose in double-quotes, for example, --path "\Fabrikam Fiber\Area\Service Delivery\Performance". When not specified, lists area paths from the root level.  
+- **path**: Optional. Absolute path of an area.  `\Area\` must follow after the `\ProjectName`, which distinguishes this path from an iteration path. For example, --path \ProjectName\Area\AreaName. If spaces are used within a node, then enclose in double-quotes, for example, --path "\Fabrikam Fiber\Area\Service Delivery\Performance". When not specified, lists area paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". 
 
 
@@ -198,7 +198,7 @@ ID     Identifier                            Name                Path           
 
 ## Add an area path 
 
-If you haven't added any areas or teams, you'll see that only one area is defined. You add area paths under the root area path for the project, or as a child to another area path.  
+Only one area is defined, by default. Add area paths under the root area path for the project, or as a child to another area path.  
 
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](media/areas/modify-areas-its-areas-ts.png)
@@ -410,13 +410,13 @@ You define both areas and iterations from **Project Settings > Team configuratio
 
 ::: moniker range=">= tfs-2017"  
 
-All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their sub-area paths.  Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas.
+All work items that are assigned to a team area path appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their subarea paths. Choose to include subarea paths when you want to support rollup views of work done across several teams or areas.
 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2015"  
 
-All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select a single area path, and optionally include their sub-area paths. Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas. 
+All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select a single area path, and optionally include their subarea paths. Choose to include subarea paths when you want to support rollup views of work done across several teams or areas. 
 
 ::: moniker-end  
 
@@ -442,15 +442,15 @@ The default area path determines the default area path assigned to work items th
     > [!div class="mx-imgBorder"]
     > ![Work, Iterations page for team](media/team-defaults/stdefaults-add-area-paths-preview.png)  
 
-    In this instance, we choose to activate the sub-area paths for the project. The management team can now track progress across all teams.  
+    In this instance, we choose to activate the subarea paths for the project. The management team can now track progress across all teams.  
 
     ![Multiple area paths assigned to team](media/team-defaults/stdefaults-set-team-area-paths-team-services-list-preview.png)  
 
-3. When you've finished, refresh the product backlog page for the team, and you'll see those work items assigned to the team. Add Area Path to the columns shown to see the assignments made to work items.
+3. When you've finished, refresh the product backlog page for the team, and you'll see those work items assigned to the team. Add area path to the columns shown to see the assignments made to work items.
 
    ![Backlog view of default team](media/team-defaults/area-path-assigned-to-item.png)
 
-   ![Add Area Path column to backlog](media/team-defaults/add-a-column-backlog.png)
+   ![Add area path column to backlog](media/team-defaults/add-a-column-backlog.png)
 
 ::: moniker-end  
 
@@ -468,11 +468,11 @@ The default area path determines the default area path assigned to work items th
     > [!div class="mx-imgBorder"]
     > ![Work, Iterations page for team, on-premises versions](media/team-defaults/stdefaults-add-area-paths.png)  
 
-    In this instance, we choose to activate all three sub-area paths for the project. The management team can now track progress across all three teams.  
+    In this instance, we choose to activate all three subarea paths for the project. The management team can now track progress across all three teams.  
 
     ![Multiple area paths assigned to team, on-premises versions](media/team-defaults/stdefaults-set-team-area-paths-management-team-team-services-list.png)  
 
-3. When you've finished, refresh the product backlog page for the team, and you'll see those work items assigned to the team. Add Area Path to the columns shown to see the assignments made to work items.  
+3. When you've finished, refresh the product backlog page for the team, and you'll see those work items assigned to the team. Add area path to the columns shown to see the assignments made to work items.  
 
    > [!div class="mx-imgBorder"]  
    > ![Backlog view of default team, on-premises versions](media/add-team/product-backlog-default-team-horz.png)  
@@ -547,7 +547,7 @@ Fabrikam Fiber\Voice                   True                 True
 
 ## Rename, move, or delete an area path
 
-When you rename an area or an iteration, or move the node within the tree hierarchy, the system automatically updates the work items and queries that reference the existing path or paths.  
+The system automatically updates work items and queries that reference your updated area path.  
 
 #### [Browser](#tab/browser/)
 
@@ -556,7 +556,7 @@ When you rename an area or an iteration, or move the node within the tree hierar
 1. To rename an area or iteration path, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the node, and then select **Edit**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Work>Project Configuration](media/areas/edit-area-rename-preview.png)  
+    > ![Screenshot of sequence, Open Work > Project Configuration](media/areas/edit-area-rename-preview.png)  
 
 2. In the dialog that opens, enter the new name.
 
@@ -578,12 +578,12 @@ When you rename an area or an iteration, or move the node within the tree hierar
 1. To rename an area or iteration path, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the node, and then select **Edit**.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Work>Project Configuration, TFS 2018 and earlier on-premises versions](media/areas/edit-area-rename.png)  
+    > ![Screenshot of sequence, Open Work>Project Configuration, TFS 2018 and earlier on-premises versions](media/areas/edit-area-rename.png)  
 
 2. In the dialog that opens, enter the new name.
 
-    > [!div class="mx-imgBorder"]  
-    > !Screenshot of Edit area dialog, TFS 2018 and earlier on-premises versions.](media/areas/edit-area-rename-dialog.png)
+    > [!div class="mx-imgBorder"]
+    > [!Screenshot of Edit area dialog, TFS 2018 and earlier on-premises versions.](media/areas/edit-area-rename-dialog.png)
 
 3. To move the node within the hierarchy, change the Location field.
 
@@ -670,7 +670,7 @@ az boards area team remove --path "\Fabrikam Fiber\Service Delivery\Voice" --tea
 
 ## Chart progress by area
 
-You can quickly generate [queries](../../boards/queries/using-queries.md) to view the progress based on an area path. For example, [visualize progress of work items that are assigned to each team's area path](../../report/dashboards/charts.md), as shown in the following stacked bar chart. Choose Node Name to get the leaf node of the Area Path.
+You can quickly generate [queries](../../boards/queries/using-queries.md) to view the progress based on an area path. For example, [visualize progress of work items that are assigned to each team's area path](../../report/dashboards/charts.md), as shown in the following stacked bar chart. Choose Node Name to get the leaf node of the area path.
 
 ![Stacked bar chart by area and state](media/areas/stacked-bar-chart.png)
 
@@ -678,7 +678,7 @@ You can quickly generate [queries](../../boards/queries/using-queries.md) to vie
 
 ### Q: Do I have to assign an area path to a team?
 
-**A:** No. You assign area paths to teams so that the work items assigned to that area path appear on the team's backlogs and boards. By default, all work items are assigned to the root area path and show up in the default team that's defined for the project.
+**A:** No. You assign area paths to teams so that the work items assigned to that area path appear on the team's backlogs and boards. By default, all work items get assigned to the root area path. These work items appear in the default team that's defined for the project.
 
 ## Next steps
 

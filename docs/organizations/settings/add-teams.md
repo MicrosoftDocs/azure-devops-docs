@@ -1,7 +1,7 @@
 ---
 title: Create new team, move from one team to several teams
 titleSuffix: Azure DevOps 
-description: Add a team to scale your Agile tools in Azure DevOps & Team Foundation Server (TFS)  
+description: Learn how to add a new team to a project to scale your Agile tools in Azure DevOps & Team Foundation Server (TFS).  
 ms.technology: devops-settings
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: kaelli
@@ -549,7 +549,7 @@ C:\WINDOWS\system32>az boards work-item update --id 487 --area "Fabrikam Fiber\S
 
 ## Configure the default project team 
 
-One last step in moving from one team to two teams requires configuring the default project team to exclude subareas.  
+One last step in moving from one team to two teams requires configuring the default project team to exclude sub-areas.  
 
 #### [New Teams page](#tab/preview-page) 
 
@@ -639,7 +639,7 @@ az boards area team add --path  --team
 
 #### Example
 
-For example, the following command adds the Voice area path to the Voice team for the Fabrikam Fiber project, sets it as the default and to include subareas. 
+For example, the following command adds the Voice area path to the Voice team for the Fabrikam Fiber project, sets it as the default and to include sub-areas. 
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
