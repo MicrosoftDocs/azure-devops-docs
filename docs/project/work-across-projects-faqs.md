@@ -30,7 +30,7 @@ To learn about specific cross-project features, see [Work across projects](navig
 
 ### Q: Can I connect to more than one project at a time? 
 
-**A.** When you connect from a web browser, you can connect to different projects from different browser tabs. When you connect from a client or IDE, you can only connect to a single project at a time. For more information, see [Connect to team projects](../../organizations/projects/connect-to-projects.md).
+**A.** When you connect from a web browser, you can connect to different projects from different browser tabs. When you connect from a client or IDE, you can only connect to a single project at a time. For more information, see [Connect to team projects](../organizations/projects/connect-to-projects.md).
 
 
 ### Q: How do I view all projects available to me? 
@@ -170,13 +170,13 @@ How do I switch to another project?
 
 ::: moniker range="azure-devops"
 
-**A**. Yes. Cross-repository policies is designed to create policies which apply to all or a selection of the repositories in the projects. You do this from **Project Settings>Repositories>Policies**. Add a custom policy and specify if it is for all repositories or choose which repositories it should apply to. To learn more about branch policies, see [Improve code quality with branch policies](..repos/git/branch-policies.md).
+**A**. Yes. Cross-repository policies is designed to create policies which apply to all or a selection of the repositories in the projects. You do this from **Project Settings>Repositories>Policies**. Add a custom policy and specify if it is for all repositories or choose which repositories it should apply to. To learn more about branch policies, see [Improve code quality with branch policies](../repos/git/branch-policies.md).
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
 
-**A**. Yes. Cross-repository policies is designed to create policies which apply to all or a selection of the repositories in the projects.  You do this from **Project Settings>Cross-repo policies**. Add branch protection and specify if it is for all repositories or choose which repositories it should apply to. To learn more, see [Cross-repo branch policy administration](/azure/devops/release-notes/2019/sprint-160-update#cross-repo-branch-policy-administration) and [Improve code quality with branch policies](..repos/git/branch-policies.md).
+**A**. Yes. Cross-repository policies is designed to create policies which apply to all or a selection of the repositories in the projects.  You do this from **Project Settings>Cross-repo policies**. Add branch protection and specify if it is for all repositories or choose which repositories it should apply to. To learn more, see [Cross-repo branch policy administration](/azure/devops/release-notes/2019/sprint-160-update#cross-repo-branch-policy-administration) and [Improve code quality with branch policies](../repos/git/branch-policies.md).
 
 ::: moniker-end
 
@@ -185,7 +185,7 @@ How do I switch to another project?
 
 **A**. There is no user interface feature to extract this information. You can use the REST API to get this information as follows:  
 
-1. Get all projects using [Projects-List](rest/api/azure/devops/core/projects/list).
+1. Get all projects using [Projects-List](/rest/api/azure/devops/core/projects/list).
 1. Get all repositories of each project using [Repositories - List](/rest/api/azure/devops/git/repositories/list).
 1. Get all pull requests of each repository using [Pull Requests - Get Pull Requests](/azure/devops/git/pull%20requests/get%20pull%20requests#pullrequeststatus). 
  
@@ -201,7 +201,7 @@ How do I switch to another project?
 ## Related articles
  
 
-- [Connect to team projects](../../organizations/projects/connect-to-projects.md)  
+- [Connect to team projects](../organizations/projects/connect-to-projects.md)  
 
 
 <!---
