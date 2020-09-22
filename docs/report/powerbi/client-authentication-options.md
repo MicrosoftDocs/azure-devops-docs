@@ -196,7 +196,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker range=">= azure-devops-2019 < azure-devops"
 
-	<img src="media/authentication-8-onprem.png" alt="Select the correct URL to the OData Feed and click Edit." style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8-onprem.png" alt="Select the correct URL to the OData Feed and click Edit, on-premises version." style="border: 2px solid #C3C3C3;" />   
 
 	::: moniker-end
 
