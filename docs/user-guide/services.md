@@ -48,7 +48,7 @@ From **Dashboards**, you gain access to user-configurable dashboards.
 
 ::: moniker range=">= azure-devops-2019"
 
-![Azure DevOps Services, main](media/dashboard-overview.png)
+![Azure DevOps Services, Dashboards.](media/dashboard-overview.png)
 
 ::: moniker-end
 
