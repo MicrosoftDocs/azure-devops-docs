@@ -407,7 +407,7 @@ Hover over each color within the chart to see the count of items for a particula
 <a id="cycle-time-widget"></a> 
 ### Cycle time  
 
-![Cumulative flow diagram widget](media/widget-cycle-time.png)  
+![Cycle time widget.](media/widget-cycle-time.png)  
 
 Displays the cycle time of work items closed in a specified timeframe for a single team and backlog level. The cycle time of a work item is defined as the time taken to close a work item after work on it has started. 
 
@@ -512,7 +512,7 @@ Adds a team's burndown chart for a sprint to the dashboard. This widget is based
 
 ### Sprint burndown (Legacy) 
 
-![Sprint burndown widget](media/widget-sprint-burndown-legacy.png)
+![Sprint burndown widget (Legacy).](media/widget-sprint-burndown-legacy.png)
 
 Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
 
@@ -725,7 +725,7 @@ Configurable widget that you can use to track quality continuously from a build 
 <a id="chart-test-plan-widget"></a> 
 ### Chart for test plans  
 	
-![Chart work item query widget](media/widget-chart-test-plans.png)  
+![Chart for test plans.](media/widget-chart-test-plans.png)  
 
 Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots. 
 
