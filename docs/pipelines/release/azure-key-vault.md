@@ -2,7 +2,7 @@
 title: Using secrets from Azure Key Vault in Azure Pipelines
 description: DevOps CI CD - Use secrets from Azure Key Vault in Azure Pipelines
 ms.topic: tutorial
-ms.date: 05/22/2020
+ms.date: 09/22/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -187,16 +187,16 @@ We will use YAML to create our pipeline but first we need to create our new repo
 
 ## Run and review the pipeline
 
-1. Return to the browser tab open to the pipeline.
+1. Return to the open pipeline tab where you left off.
 
-1. Select **Save**, and select **Save** again to commit the change, which triggers the pipeline.
+1. Select **Save** then **Save** again to commit your changes and trigger the pipeline.
 
-1. Select the running job to follow it through to completion. It should complete pretty quickly since it's just pulling in a secret from the key vault and writing it to a file.  
+1. Select the pipeline job view the execution logs.  
 
     > [!NOTE]
-    > You may be asked to permit the pipeline to access a resource, which you can allow. You will only be asked to approve it once. 
+    > You may be asked to allow the pipeline to access Azure resources, if prompted select **Allow**. You will only have to approve it once. 
 
-1. Select the **CmdLine** task to view its output. Note that while the command executed successfully, the actual secret text was redacted from the logs. Fortunately, the file it was printed to was published for review. 
+1. Select the **CmdLine** job to view the logs. Note that the actual secret was not logged. 
 
     > [!div class="mx-imgBorder"]  
     > ![Reviewing the command line task](media/azure-key-vault/command-line-task.png)
@@ -206,26 +206,22 @@ We will use YAML to create our pipeline but first we need to create our new repo
     > [!div class="mx-imgBorder"]  
     > ![The pipeline summary](media/azure-key-vault/pipeline-summary.png)
 
-1. Select the **secret.txt** artifact from under **Job** to view it.
+1. Under **Job** select the **secret.txt** file to view it.
 
     > [!div class="mx-imgBorder"]  
     > ![Viewing the secret in the artifact](media/azure-key-vault/view-artifact.png)
 
-1. The file displays `mysecretpassword`, which was the secret configured in the key vault.
-
-## Summary
-
-In this tutorial, you learned how to access secrets from an Azure Key Vault from Azure Pipelines.
+1. The text file contains our secret: `mysecretpassword`. This conclude the optional verification step we mentioned earlier.
 
 ## Clean up resources
 
-This tutorial created an Azure DevOps project and some resources in Azure. If you're not going to continue to use these resources, delete them with the following steps:
+Follow the steps below to delete the resources we created in this tutorial:
 
-1. If you created an Azure DevOps organization (or a project within an existing organization) for this tutorial, you can [delete the organization](../../organizations/accounts/delete-your-organization.md) (or [project](../../organizations/projects/delete-project.md)) if you no longer wish to use it.
+1. If you created a new organization to host your project, see [how to delete your organization](../../organizations/accounts/delete-your-organization.md), otherwise [delete your project](../../organizations/projects/delete-project.md)).
 
-1. All Azure resources created during this tutorial were assigned to the **PipelinesKeyVaultResourceGroup** resource group. You may delete this using the portal UI or via the CLI command below.
+1. All Azure resources created during this tutorial is hosted under a signle resource group `PipelinesKeyVaultResourceGroup`. Run the following command to delete the resource group and all of its resources.
 
-    ```azurecli-interactive
+    ```aAzure CLI
     az group delete --name PipelinesKeyVaultResourceGroup
     ```
 
