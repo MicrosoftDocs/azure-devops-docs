@@ -338,7 +338,7 @@ Next, we'll create the Dockerfile.
 
     # `exec` the node runtime so it's aware of TERM and INT signals
     # AgentService.js understands how to handle agent self-update and restart
-    # Running it with --once flag at the end will shutdown the agent after the build is executed
+    # Running it with the --once flag at the end will shut down the agent after the build is executed
     exec ./externals/node/bin/node ./bin/AgentService.js interactive
     ```
 
