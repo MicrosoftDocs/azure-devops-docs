@@ -254,7 +254,7 @@ Test execution can abort due to several reasons such as bad test code, errors in
 Irrespective of the reason for the abort, it is important to be able to diagnose the behavior and identify the root cause.
 The aborted tests and test runs can be viewed alongside the completed runs in the **Tests** tab. 
 
-![View aborted tests.](media/review-continuous-test-results-after-build/aborted-test-run.png)
+![View stopped tests.](media/review-continuous-test-results-after-build/aborted-test-run.png)
 
 > [!NOTE]
 > The feature is currently available for both build and release, using the
