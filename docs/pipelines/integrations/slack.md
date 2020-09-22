@@ -129,10 +129,10 @@ The app supports all the checks and approval scenarios present in Azure Pipeline
 
 When a user pastes a pipeline URL, a preview is shown similar to that in the following image. This helps to keep pipeline related conversations relevant and accurate.
 
-![URL unfurling](./media/integrations-slack/build-url-unfurling.png)
+![Build URL unfurling.](./media/integrations-slack/build-url-unfurling.png)
 
 
-![URL unfurling](./media/integrations-slack/release-url-unfurling.png)
+![Release URL unfurling.](./media/integrations-slack/release-url-unfurling.png)
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
 

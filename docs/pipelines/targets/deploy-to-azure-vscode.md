@@ -156,11 +156,11 @@ You can also open the Settings editor from the Command Palette (`Ctrl+Shift+P`) 
 
 When you open the settings editor, you can search and discover settings you are looking for. Search for the name `deployToAzure.UseAzurePipelinesForGithub` and enable as shown below.
 
-![configure CI/CD](media/deploy-to-azure/vscode-settings.png)
+![Search for and enable deployToAzure.UseAzurePipelinesForGithub.](media/deploy-to-azure/vscode-settings.png)
 
 1. To set up a pipeline, choose `Deploy to Azure: Configure CI/CD Pipeline` from the command palette (Ctrl/Cmd + Shift + P) or right-click on the file explorer.
 
-    ![configure CI/CD](media/deploy-to-azure/configure.png)
+    ![Choose Deploy to Azure: Configure CI/CD Pipeline from the command palette.](media/deploy-to-azure/configure.png)
 
     > [!NOTE]
     > If the code is not opened in the workspace, it will ask for folder location. Similarly, if the code in the workspace has more than one folder, it will ask for folder.
@@ -179,9 +179,9 @@ When you open the settings editor, you can search and discover settings you are 
 
 1. Enter GitHub personal access token (PAT), required to populate secrets that are used in GitHub workflows. Set the scope to `repo` and `admin:repo_hook`.
 
-    ![pat scope](media/deploy-to-azure/github-pat.png)
+    ![Enter GitHub personal access token (PAT).](media/deploy-to-azure/github-pat.png)
 
-    ![pat scope](media/deploy-to-azure/github-pat-scope.png)
+    ![Set the scope to repo and admin:repo_hook.](media/deploy-to-azure/github-pat-scope.png)
 
 1. Select an Azure DevOps organization.
 
@@ -193,14 +193,14 @@ When you open the settings editor, you can search and discover settings you are 
 
 1. The configuration of GitHub workflow or Azure Pipeline happens based on the extension setting. The guided workflow will generate a starter YAML file defining the build and deploy process. **Commit & push** the YAML file to proceed with the deployment.
 
-    ![commit YAML](media/deploy-to-azure/azure-starter-yml.png)
+    ![Push YAML starter file.](media/deploy-to-azure/azure-starter-yml.png)
 
     > [!TIP]
     > You can customize the pipeline using all the features offered by [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) and [GitHub Actions](https://github.com/features/actions/).
 
 1. Navigate to your Azure DevOps project to see the pipeline in progress.
 
-    ![actions](media/deploy-to-azure/pipeline-in-progress.png)
+    ![Navigate to your Azure DevOps project to see the pipeline in progress.](media/deploy-to-azure/pipeline-in-progress.png)
 
 1. Navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
 
@@ -208,7 +208,7 @@ When you open the settings editor, you can search and discover settings you are 
 
 1. To set up a pipeline, choose `Deploy to Azure: Configure CI/CD Pipeline` from the command palette (Ctrl/Cmd + Shift + P) or right-click on the file explorer.
 
-    ![configure CI/CD](media/deploy-to-azure/configure.png)
+    ![Configure CI/CD, Azure Repos + Azure Pipelines.](media/deploy-to-azure/configure.png)
 
     > [!NOTE]
     > If the code is not opened in the workspace, it will ask for folder location. Similarly, if the code in the workspace has more than one folder, it will ask for folder.
@@ -227,14 +227,14 @@ When you open the settings editor, you can search and discover settings you are 
 
 1. The configuration of GitHub workflow or Azure Pipeline happens based on the extension setting. The guided workflow will generate a starter YAML file defining the build and deploy process. **Commit & push** the YAML file to proceed with the deployment.
 
-    ![commit YAML](media/deploy-to-azure/pipelines-commit-push.png)
+    ![YAML starter file, Azure Repos + Azure Pipelines.](media/deploy-to-azure/pipelines-commit-push.png)
 
     > [!TIP]
     > You can customize the pipeline using all the features offered by [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) and [GitHub Actions](https://github.com/features/actions/).
 
 1. Navigate to your Azure DevOps project to see the pipeline in progress.
 
-    ![actions](media/deploy-to-azure/azure-pipelines-in-progress.png)
+    ![Navigate to your Azure DevOps project to see the Azure pipeline in progress.](media/deploy-to-azure/azure-pipelines-in-progress.png)
 
 1. Navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
 
