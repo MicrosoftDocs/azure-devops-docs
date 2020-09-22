@@ -349,7 +349,7 @@ Requires TFS 2015.1 or later version.
 
 ## Taskboard automatically updates 
 
-Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the backgroun.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
+Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the background.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
 
 ::: moniker-end
 

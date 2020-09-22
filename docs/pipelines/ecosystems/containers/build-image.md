@@ -64,7 +64,7 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
 
 ## Windows container images
 
-Windows container images can be built using either Microsoft hosted Windows agents or Windows platform based self-hosted agents (all Microsoft hosted Windows platform based agents are shipped with Moby engine and client needed for Docker builds). Learn more about the Windows agent options available with [Microsoft hosted agents](../../agents/hosted.md).
+Windows container images can be built using either Microsoft hosted Windows agents or Windows platform based self-hosted agents (all Microsoft hosted Windows platform-based agents are shipped with Moby engine and client needed for Docker builds). Learn more about the Windows agent options available with [Microsoft hosted agents](../../agents/hosted.md).
 
 > [!NOTE]
 > Linux container images can be built using Microsoft hosted Ubuntu-16.04 agents or Linux platform based self-hosted agents. Currently the Microsoft hosted MacOS agents can't be used to build container images as Moby engine needed for building the images is not pre-installed on these agents.
@@ -92,15 +92,15 @@ steps:
 
 ## Pre-cached images on hosted agents
 
-Some commonly used images are pre-cached on the Microsoft-hosted agents to avoiding long time intervals spent in pulling these images from container registry for every job. Images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/windowsservercore`, `microsoft/nanoserver`, and `microsoft/aspnetcore-build` are pre-cached on Windows agents while `jekyll/builder` and `mcr.microsoft.com/azure-pipelines/node8-typescript` are pre-cached on Linux agents. The list of pre-cached images is available in the [release notes of azure-pipelines-image-generation](https://github.com/microsoft/azure-pipelines-image-generation/releases) repository.
+Some commonly used images are pre-cached on the Microsoft-hosted agents to avoiding long time intervals spent in pulling these images from container registry for every job. Images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/windowsservercore`, `microsoft/nanoserver`, and `microsoft/aspnetcore-build` are pre-cached on Windows agents while `jekyll/builder` and `mcr.microsoft.com/azure-pipelines/node8-typescript` are pre-cached on Linux agents. The list of pre-cached images is available in the [release notes of azure-pipelines-image-generation](https://github.com/actions/virtual-environments/releases) repository.
 
 ## Self-hosted agents
 
 Docker needs to be installed on self-hosted agent machines prior to runs that try to build container images. To address this issue, a step corresponding to [Docker installer task](../../tasks/tool/docker-installer.md) can be placed in the pipeline definition prior to the step related to [Docker task](../../tasks/build/docker.md).
 
-## Script based docker builds
+## Script-based docker builds
 
-Note that it also possible to build (or any Docker command) images by running docker on script as shown below: 
+Note that it is also possible to build (or any Docker command) images by running docker on script as shown below: 
 
 ```
 docker build -f Dockerfile -t foobar.azurecr.io/hello:world .
