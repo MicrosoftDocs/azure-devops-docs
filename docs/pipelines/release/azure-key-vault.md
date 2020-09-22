@@ -91,7 +91,7 @@ This tutorial uses a simple scenario to illustrate the integration between Azure
 
 ### Create a repo
 
-This pipeline will use YAML, which requires a repo. This repo could theoretically be hosted anywhere, but it's easiest to just create a default repo in the newly created Azure DevOps project. 
+We will use YAML to create our pipeline but first we need to create our new repo. 
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
@@ -104,16 +104,16 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
 1. Go to **Pipelines**, and then select **New Pipeline**.
 
-1. Select the **Azure Repos Git** option.
+1. Select **Azure Repos Git**.
 
     > [!div class="mx-imgBorder"]  
     > ![Creating the pipeline](media/azure-key-vault/create-pipeline.png)
 
-1. Select the repo created earlier. It should have the same name as your Azure DevOps project.
+1. Select the repo you created earlier. It should have the same name as your Azure DevOps project.
 
-1. Select the **Starter pipeline** option.
+1. Select **Starter pipeline**.
 
-1. The default pipeline will include a few scripts that run echo commands. Delete them so that the last line of your pipeline is `steps:`. The core will now look something like the YAML below.
+1. The default pipeline will include a few scripts that run echo commands. Those are not needed so we can delete them. Your new YAML file will now look like this:
 
     ```
 	trigger:
@@ -125,7 +125,7 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 	steps:
     ```
 
-1. Select **Show assistant** to expand the assistant panel. This panel provides convenient (and searchable) access to pipeline tasks.  
+1. Select **Show assistant** to expand the assistant panel. This panel provides convenient and searchable list of pipeline tasks.  
 
     > [!div class="mx-imgBorder"]  
     > ![Showing the pipeline assistant](media/azure-key-vault/show-assistant.png)
@@ -135,18 +135,18 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
     > [!div class="mx-imgBorder"]  
     > ![Selecting the Azure Key Vault task](media/azure-key-vault/azure-key-vault-task.png)
 
-1. Select and authorize the Azure subscription used to create the key vault earlier. Then select the key vault and select **Add** to insert the task at the end of the pipeline. This task connects to your Azure Key Vault and loads its secrets as variables that can be accessed like any other pipeline or environment variables.
+1. Select and authorize the Azure subscription you used to create your Azure key vault earlier. Select the key vault and select **Add** to insert the task at the end of the pipeline. This task allows the pipeline to connect to your Azure Key Vault and retrieve secrets to use as pipeline variables.
 
     > [!NOTE]
-    > **Make secrets available to whole job** is new and is not present in Azure DevOps Server 2019.
+    > **Make secrets available to whole job** is not currently supported in Azure DevOps Server.
 
     > [!div class="mx-imgBorder"]  
     > ![Configuring the Azure Key Vault task](media/azure-key-vault/configure-azure-key-vault-task.png)
 
     > [!NOTE]
-	> This process creates a principal in Azure that will need to be granted access to the key vault. You will authorize those permissions in a later step.
+	> This process creates a principal in Azure that will need to be granted access to the key vault. We will set up permissions in a later step.
 
-1. It's important to note that Azure Pipelines protects your secrets, even when using them in the context of a pipeline. You can easily insert them into configurations or as parameters for other tasks, but they won't be printed to pipeline logs that might be inadvertently shared with others. To illustrate this, add the tasks below to the end of the pipeline. They will print the password secret to a file and then publish the file for review so we can confirm that the secret made it all the way through the chain.
+1. This step is optional. To verify the retrieval and processing of our secret through the pipeline, add the script below to your YAML file to print the secret to a text file and publish it for review. This is not recommended and it is for demonstration purposes only.
 
     ```
     - script: echo $(Password) > secret.txt
@@ -155,7 +155,7 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
     ```
 
     > [!NOTE]
-    > YAML is very particular about formatting and indentation. The tasks should be left-aligned in the pipeline such that there is no whitespace before the dash.
+    > YAML is very particular about formatting and indentation. Make sure your YAML file is indented properly.
 
 1. Do not save or run the pipeline yet. It will fail at this time because the pipeline does not have permissions to access the key vault yet.
 
