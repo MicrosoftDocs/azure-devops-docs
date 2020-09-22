@@ -11,7 +11,7 @@ metadata:
   ms.topic: hub-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 09/30/2019 
+  ms.date: 09/22/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -32,12 +32,16 @@ highlightedContent:
       url: /azure/devops/release-notes/docswhatsnew/index
     # Card
     - title: Create your first pipeline
-      itemType: how-to-guide
+      itemType: get-started
       url: ./pipelines/create-first-pipeline.md
     # Card
     - title: Get started for free
-      itemType: how-to-guide
+      itemType: get-started
       url: ./user-guide/sign-up-invite-teammates.md
+    # Card
+    - title: Get started with Stakeholder access
+      itemType: how-to-guide
+      url: /organizations/security/get-started-stakeholder.md
     # Card
     - title: Connect to a project
       itemType: how-to-guide
@@ -71,24 +75,28 @@ productDirectory:
       links:
         - url: ./repos/get-started/what-is-repos.md
           text: What is Azure Repos?
-        - url: ./repos/git/pull-requests-overview.md
-          text: Get started with Git & Visual Studio
-        - url: ./repos/git/pull-requests-overview.md
-          text: Review code with pull requests
         - url: ./repos/git/clone.md
-          text: Clone an existing Git repo
+          text: Clone an existing Git repository
+        - url: ./repos/git/gitquickstart.md
+          text: Get started with Git & Visual Studio
+        - url: ./repos/git/use-ssh-keys-to-authenticate.md
+          text: Connect to your Git repos with SSH
+        - url: ./repos//git/branch-policies.md
+          text: Protect your Git branches with policies
+        - url: ./repos/git/pull-requests.md
+          text: Review and merge code with pull requests
     # Card
     - title: Azure Pipelines
       imageSrc: ./media/index/DevOpsIconPipelines96.svg
       links:
         - url: ./pipelines/get-started/what-is-azure-pipelines.md
           text: What is Azure Pipelines?
-        - url: ./pipelines/get-started/pipelines-get-started.md
-          text: Use Azure Pipelines
         - url: ./pipelines/create-first-pipeline.md
           text: Create your first pipeline
         - url: ./pipelines/yaml-schema.md
-          text: YAML Schema  
+          text: YAML schema  
+        - url: ./pipelines/process/variables.md
+          text: Define variables
     # Card
     - title: Azure Test Plans
       imageSrc: media/index/DevOpsIconTestPlans96.svg
@@ -107,6 +115,10 @@ productDirectory:
       links:
         - url: ./artifacts/overview.md
           text: What is Azure Artifacts?
+        - url: ./artifacts/start-using-azure-artifacts.md
+          text: Start using Azure Artifacts 
+        - url: ./artifacts/artifacts/npm/npmrc.md
+          text: Set up your client's npmrc 
         - url: ./artifacts/get-started-nuget.md
           text: NuGet
         - url: ./artifacts/get-started-npm.md
@@ -117,16 +129,18 @@ productDirectory:
     - title: Azure DevOps Server
       imageSrc: https://docs.microsoft.com/media/common/i_server.svg
       links:
-        - url: ./user-guide/about-azure-devops-services-tfs.md
-          text: Azure DevOps Services vs. Azure DevOps Server
+        - url: /azure/devops/server/admin-quick-ref
+          text: Administrative tasks
+        - url: /azure/devops/server/requirements
+          text: Setup and upgrade requirements
         - url: /azure/devops/server/install/get-started
           text: Install
         - url: /azure/devops/server/upgrade/get-started
           text: Upgrade
         - url: ./migrate/migrate-from-tfs.md
           text: Migrate
-        - url: /azure/devops/server/admin/admin-quick-ref
-          text: Manage
+        - url: ./user-guide/about-azure-devops-services-tfs.md
+          text: Azure DevOps Services vs. Azure DevOps Server
 tools: 
   title: Build & deploy your apps
   items: 
