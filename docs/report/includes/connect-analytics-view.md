@@ -33,10 +33,10 @@ ms.date: 08/10/2020
 2. **Specify the basic parameters to connect to your data**. 
 
 	::: moniker range="azure-devops"
-	![Organization and project name](/azure/devops/report/powerbi/media/create-report/specify-account.png) 
+	![Specify organization and project name.](/azure/devops/report/powerbi/media/create-report/specify-account.png) 
 	::: moniker-end
 	::: moniker range="< azure-devops"
-	![Organization and project name](/azure/devops/report/powerbi/media/onprem-cardentials.png) 
+	![Specify organization and project name.](/azure/devops/report/powerbi/media/onprem-cardentials.png) 
 
 	- For *Collection URL*, enter the URL where your Azure DevOps Server instance is hosted. For example, an example URL is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection`".
 	- For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your Azure DevOps Server instance is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber`").
