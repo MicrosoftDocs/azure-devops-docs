@@ -161,39 +161,29 @@ We will use YAML to create our pipeline but first we need to create our new repo
 
 ### Configure Azure Key Vault access
 
-1. Return to the Azure portal browser tab.
+1. Go to [Azure portal](https://azure.microsoft.com/).
 
-1. Use the search bar at the top of the window to open the key vault created earlier.
+1. Use the search bar at the top to search for your key vault you created earlier and select it.
 
     > [!div class="mx-imgBorder"]  
     > ![Searching for Azure Key Vault](media/azure-key-vault/search-azure-key-vault.png)
 
-1. Select **Access policies** from under the **Settings** navigation.
+1.  Under **Settings** Select **Access policies**.
 
-1. Select **Add Access Policy**.
+1. Select **Add Access Policy** to add a new policy.
 
-1. For **Secret permissions**, select **Get** and **List**. These are the two permissions required by the Azure Pipelines task.
+1. For **Secret permissions**, select **Get** and **List**.
 
-1. Select the option to select a principal to assign this access policy for.
+1. Select the option to select a principal and search for yours.
 
-1. When the Azure Key Vault task was authorized, it created the principal used by Azure Pipelines to connect to your Azure subscription. Use the search bar to locate that principal. The default convention is for these connections to be named as shown below.
+    A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources. Azure assigns a unique object ID to every security principal. The default naming convention is `[Azure DevOps account name]-[Azure DevOps project name]-[subscription ID]` so if your account is https://dev.azure.com/Contoso and your team project is AzureKeyVault, your principal would look something like this `Contoso-AzureKeyVault-[subscription ID]`.
 
-    ```
-    [Azure DevOps account name]-[Azure DevOps project name]-[subscription ID]
-    ```
+    > [!TIP]
+    > You may need to minimize the Azure CLI panel to see the **Select** button in the principal search panel.
     
-    So if your account is at https://dev.azure.com/Contoso and the team project was called **AzureKeyVault**, the principal would be named something like:
+1. Select **Add** to create the access policy.
 
-    ```
-    Contoso-AzureKeyVault-[subscription ID]
-    ``` 
-
-    > [!NOTE]
-    > You may need to minimize the Azure CLI panel to see the **Select** button on the principal search panel.
-
-1. Complete the process to select the principal and select **Add** to create the access policy.
-
-1. Select **Save** to save the updated access policies.
+1. Select **Save**.
 
 ## Run and review the pipeline
 
