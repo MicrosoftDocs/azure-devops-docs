@@ -134,11 +134,11 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 2.  Choose **Users**, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account. If you don't see any search results initially, select **Expand search**.
 
-    ![Add user](media/options/add-build-service-user-project-permissions.png)
+    ![Add user to access other resources.](media/options/add-build-service-user-project-permissions.png)
 
 3. Configure the desired permissions for that user.
 
-    ![Set permissions](media/options/set-project-permissions.png)
+    ![Configure permissions.](media/options/set-project-permissions.png)
 
 ::: moniker-end
 
