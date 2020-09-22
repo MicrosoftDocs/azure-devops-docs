@@ -87,7 +87,7 @@ In this example, we are setting authentication for downloading from a external p
 
 # Use command line tool to 'pip install'.
 - script: |
-     pip install HelloTestPackage
+    pip install HelloTestPackage
 ```
 
 <a name="versions" />
