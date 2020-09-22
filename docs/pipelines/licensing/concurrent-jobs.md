@@ -1,12 +1,12 @@
 ---
-title: Parallel jobs 
+title: Configure and pay for parallel jobs
 titleSuffix: Azure DevOps
 ms.custom: seodec18,contperfq1
-description: Learn about parallel jobs in Azure Pipelines
-ms.topic: conceptual
+description: Configure parallel jobs in Azure Pipelines and pay for them
+ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
-ms.date: 09/08/2020
+ms.date: 09/22/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -17,7 +17,15 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="azure-devops"
 
-For each _parallel job_ in Azure Pipelines, you can run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or your own (self-hosted) infrastructure.
+Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
+
+## What is a parallel job?
+
+When you define a pipeline, you can define it as a collection of [jobs](../process/phases.md). When a pipeline runs, you can run multiple jobs as part of that pipeline.
+
+Each job consumes a *parallel job* that runs on an agent. When there aren't enough parallel jobs available for your organization, the jobs are queued up and run one after the other.
+
+In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or your own (self-hosted) infrastructure. You do not need to pay for parallel jobs if you are using an on-premises server. The concept of parallel jobs only applies to Azure DevOps Services. 
 
 ::: moniker-end
 
@@ -38,8 +46,6 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 
 > [!IMPORTANT]
 > Starting with Azure DevOps Server 2019, you do not have to pay for self-hosted concurrent jobs in releases. You are only limited by the number of agents that you have.
-
-You do not need to pay for parallel jobs if you are using an on-premises server. The concept of parallel jobs only applies to Azure DevOps Services. 
 
 ::: moniker-end
 
@@ -110,13 +116,6 @@ For example, consider an organization that has only one Microsoft-hosted paralle
 4. Release 11 waits for approvals. Fabrikam CI Build 101 starts because a release that's waiting for approvals does not consume a parallel job.
 5. Release 11 is approved. It resumes only after Fabrikam CI Build 101 is completed.
 
-## Relationship between jobs and parallel jobs
-
-The term *job* can refer to multiple concepts, and its meaning depends on the context:
-
-* When you define a pipeline, you can define it as a collection of [jobs](../process/phases.md). When a pipeline runs, you can run multiple jobs as part of that pipeline.
-
-* Each job consumes a *parallel job* that runs on an agent. When there aren't enough parallel jobs available for your organization, the jobs are queued up and run one after the other.
 
 ## Determine how many parallel jobs you need
 
