@@ -10,6 +10,9 @@ monikerRange: '>= azure-devops-2019'
 
 [!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
 
+> [!NOTE]
+> This tutorial will guide you through working with Azure key vault in your pipeline. Another way of working with secrets is using [Secret variables](../process/variables.md#secret-variables) in your Azure Pipeline or referencing [secrets in a variable group](../process/variables.md#reference-secret-variables-in-variable-groups).
+
 [Azure Key Vault](/azure/key-vault/general/basic-concepts) helps teams to securely store and manage sensitive information such as API keys, passwords, certificates, etc.
  
 In this tutorial, you will learn about:
@@ -21,12 +24,7 @@ In this tutorial, you will learn about:
 
 ## Prerequisites
 
-[!INCLUDE [include](../includes/azure-prerequisites.md)]
-
 * An Azure DevOps organization. If you don't have one, you can [create one for free](../get-started/pipelines-sign-up.md). 
-
-> [!TIP]
-> Another way of working with secrets is using [Secret variables](../process/variables.md#secret-variables) in your Azure Pipeline or setting up [secret variables in variable groups](../process/variables.md#reference-secret-variables-in-variable-groups).
 
 <a name="creating-azure-key-vault"></a>
 
