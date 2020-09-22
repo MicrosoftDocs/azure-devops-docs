@@ -37,7 +37,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 1. Hover over the dots and you can open the service of interest for that project. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![web portal, Azure DevOps logo](media/projects-page/projects-page-vert.png)
+	> ![Open the service of interest for that project.](media/projects-page/projects-page-vert.png)
 
 1. You can filter the project and team list using the *Filter projects* search box. Simply type a keyword contained within the name of a project or team. Here we type **Fabrikam** to find all projects or teams with *Fabrikam* in their name. 
 
