@@ -226,7 +226,8 @@ Next, we'll create the Dockerfile.
             libcurl4 \
             libicu60 \
             libunwind8 \
-            netcat
+            netcat \
+            libssl1.0
 
     WORKDIR /azp
 
