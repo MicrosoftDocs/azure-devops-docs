@@ -38,21 +38,6 @@ All users have access to Work Item and Wiki Search.
 
 <a name="config-ts-azuredevops"></a>
 
-##  Install the Search extension
-
-* Work Item and Wiki search are built-in features of Azure DevOps, they require no installation on your part.
-
-* Go to [Azure DevOps Marketplace](https://marketplace.visualstudio.com/) to install the Code Search extension in Azure DevOps as an administrator.
-Non-administrative users can also request to add the Code Search extension. 
-
-For more information, see [Install an extension](../../marketplace/install-extension.md) in the Marketplace documentation.
-
-<a name="uninstall-ts-azuredevops"></a>
-
-## Uninstall the Code Search extension
-
-* For Code Search, see [Uninstall or disable an extension](../../marketplace/uninstall-disable-extensions.md) in the Marketplace documentation. 
-
 ## Prerequisites
 
 To install the Search extension, you must be a Project Collection Administrator (PCA) for the organization.
