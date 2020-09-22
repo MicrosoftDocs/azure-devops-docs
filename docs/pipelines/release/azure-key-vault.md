@@ -196,7 +196,7 @@ We will use YAML to create our pipeline but first we need to create our new repo
     > [!NOTE]
     > You may be asked to allow the pipeline to access Azure resources, if prompted select **Allow**. You will only have to approve it once. 
 
-1. Select the **CmdLine** job to view the logs. Note that the actual secret was not logged. 
+1. Select the **CmdLine** job to view the logs. Note that the actual secret is not part of the logs. 
 
     > [!div class="mx-imgBorder"]  
     > ![Reviewing the command line task](media/azure-key-vault/command-line-task.png)
@@ -211,7 +211,7 @@ We will use YAML to create our pipeline but first we need to create our new repo
     > [!div class="mx-imgBorder"]  
     > ![Viewing the secret in the artifact](media/azure-key-vault/view-artifact.png)
 
-1. The text file contains our secret: `mysecretpassword`. This conclude the optional verification step we mentioned earlier.
+1. The text file contains our secret: `mysecretpassword`. This concludes the optional verification step we mentioned earlier.
 
 ## Clean up resources
 
@@ -219,7 +219,7 @@ Follow the steps below to delete the resources we created in this tutorial:
 
 1. If you created a new organization to host your project, see [how to delete your organization](../../organizations/accounts/delete-your-organization.md), otherwise [delete your project](../../organizations/projects/delete-project.md)).
 
-1. All Azure resources created during this tutorial is hosted under a signle resource group `PipelinesKeyVaultResourceGroup`. Run the following command to delete the resource group and all of its resources.
+1. All Azure resources created during this tutorial are hosted under a single resource group `PipelinesKeyVaultResourceGroup`. Run the following command to delete the resource group and all of its resources.
 
     ```aAzure CLI
     az group delete --name PipelinesKeyVaultResourceGroup
