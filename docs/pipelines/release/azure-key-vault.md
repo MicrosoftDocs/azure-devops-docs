@@ -19,8 +19,8 @@ In this tutorial, you will learn about:
 
 > [!div class="checklist"]
 > * Creating an Azure Key Vault using the Azure CLI
-> * Adding a secret and configuring access for the Azure Key Vault 
-> * Securely using secrets in your pipeline
+> * Adding a secret and configuring access to Azure key vault 
+> * Using secrets in your pipeline
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ In this tutorial, you will learn about:
 
 ## Create an Azure Key Vault
 
-This tutorial uses a simple scenario to illustrate the integration between Azure Pipelines and Azure Key Vault. The first step is to create an Azure Key Vault. This can be done through Azure portal or Azure CLI. We will use the CLI in this tutorial
+Azure key vaults can be created and managed through the Azure portal or Azure CLI. We will use Azure CLI in this tutorial
 
 [!INCLUDE [include](../ecosystems/includes/sign-in-azure-cli.md)]
 
@@ -76,20 +76,15 @@ This tutorial uses a simple scenario to illustrate the integration between Azure
       --vault-name <your-key-vault>
     ```
 
-## Sign in to Azure Pipelines
+## Create a project
 
-> [!TIP]
-> You will need to switch back and forth between Azure and Azure DevOps during this tutorial. It is recommended that you open a new tab to perform the upcoming Azure DevOps tasks.
+Sign in to [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines). Your browser will then navigate to `https://dev.azure.com/your-organization-name` and displays your Azure DevOps dashboard.
 
-[!INCLUDE [include](../ecosystems/includes/sign-in-azure-pipelines.md)]
+If you don't have any projects in your organization yet, select **Create a project to get started** to create a new project. Otherwise, select the **New project** button in the upper-right corner of the dashboard.
 
-[!INCLUDE [include](../ecosystems/includes/create-project.md)]
+## Create a repo
 
-## Create the pipeline
-
-### Create a repo
-
-We will use YAML to create our pipeline but first we need to create our new repo. 
+We will use YAML to create our pipeline but first we need to create a new repo. 
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
@@ -98,7 +93,7 @@ We will use YAML to create our pipeline but first we need to create our new repo
     > [!div class="mx-imgBorder"]  
     > ![Creating the repo](media/azure-key-vault/initialize-repo.png)
 
-### Create a new pipeline
+## Create a new pipeline
 
 1. Go to **Pipelines**, and then select **New Pipeline**.
 
@@ -136,15 +131,12 @@ We will use YAML to create our pipeline but first we need to create our new repo
 1. Select and authorize the Azure subscription you used to create your Azure key vault earlier. Select the key vault and select **Add** to insert the task at the end of the pipeline. This task allows the pipeline to connect to your Azure Key Vault and retrieve secrets to use as pipeline variables.
 
     > [!NOTE]
-    > **Make secrets available to whole job** is not currently supported in Azure DevOps Server.
+    > `Make secrets available to whole job` feature is not currently supported in Azure DevOps Server 2019 and 2020.
 
     > [!div class="mx-imgBorder"]  
     > ![Configuring the Azure Key Vault task](media/azure-key-vault/configure-azure-key-vault-task.png)
 
-    > [!NOTE]
-	> This process creates a principal in Azure that will need to be granted access to the key vault. We will set up permissions in a later step.
-
-1. This step is optional. To verify the retrieval and processing of our secret through the pipeline, add the script below to your YAML file to print the secret to a text file and publish it for review. This is not recommended and it is for demonstration purposes only.
+1. This step is optional. To verify the retrieval and processing of our secret through the pipeline, add the script below to your YAML to write the secret to a text file and publish it for review. This is not recommended and it is for demonstration purposes only.
 
     ```
     - script: echo $(Password) > secret.txt
@@ -152,21 +144,21 @@ We will use YAML to create our pipeline but first we need to create our new repo
     - publish: secret.txt
     ```
 
-    > [!NOTE]
+    > [!TIP]
     > YAML is very particular about formatting and indentation. Make sure your YAML file is indented properly.
 
-1. Do not save or run the pipeline yet. It will fail at this time because the pipeline does not have permissions to access the key vault yet.
+1. Do not save or run the pipeline yet. It will fail because the pipeline does not have permissions to access the key vault yet. Keep this browser tab open, we will resume once we set up the key vault permissions.
 
-### Configure Azure Key Vault access
+## Set up Azure Key Vault access policies
 
 1. Go to [Azure portal](https://azure.microsoft.com/).
 
-1. Use the search bar at the top to search for your key vault you created earlier and select it.
+1. Use the search bar to search for the key vault you created earlier.
 
     > [!div class="mx-imgBorder"]  
     > ![Searching for Azure Key Vault](media/azure-key-vault/search-azure-key-vault.png)
 
-1.  Under **Settings** Select **Access policies**.
+1. Under **Settings** Select **Access policies**.
 
 1. Select **Add Access Policy** to add a new policy.
 
@@ -174,10 +166,10 @@ We will use YAML to create our pipeline but first we need to create our new repo
 
 1. Select the option to select a principal and search for yours.
 
-    A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources. Azure assigns a unique object ID to every security principal. The default naming convention is `[Azure DevOps account name]-[Azure DevOps project name]-[subscription ID]` so if your account is https://dev.azure.com/Contoso and your team project is AzureKeyVault, your principal would look something like this `Contoso-AzureKeyVault-[subscription ID]`.
+    A security principal is an object that represents a user, group, service, or application that's requesting access to Azure resources. Azure assigns a unique object ID to every security principal. The default naming convention is `[Azure DevOps account name]-[Azure DevOps project name]-[subscription ID]` so if your account is "https://dev.azure.com/Contoso" and your team project is "AzureKeyVault", your principal would look something like this `Contoso-AzureKeyVault-[subscription ID]`.
 
     > [!TIP]
-    > You may need to minimize the Azure CLI panel to see the **Select** button in the principal search panel.
+    > You may need to minimize the Azure CLI panel to see the **Select** button.
     
 1. Select **Add** to create the access policy.
 
@@ -185,11 +177,9 @@ We will use YAML to create our pipeline but first we need to create our new repo
 
 ## Run and review the pipeline
 
-1. Return to the open pipeline tab where you left off.
+1. Return to the open pipeline tab where we left off.
 
 1. Select **Save** then **Save** again to commit your changes and trigger the pipeline.
-
-1. Select the pipeline job view the execution logs.  
 
     > [!NOTE]
     > You may be asked to allow the pipeline to access Azure resources, if prompted select **Allow**. You will only have to approve it once. 
@@ -199,7 +189,7 @@ We will use YAML to create our pipeline but first we need to create our new repo
     > [!div class="mx-imgBorder"]  
     > ![Reviewing the command line task](media/azure-key-vault/command-line-task.png)
 
-1. Return to the pipeline summary and select the published artifact.
+1. Return to pipeline summary and select the published artifact.
 
     > [!div class="mx-imgBorder"]  
     > ![The pipeline summary](media/azure-key-vault/pipeline-summary.png)
@@ -209,11 +199,11 @@ We will use YAML to create our pipeline but first we need to create our new repo
     > [!div class="mx-imgBorder"]  
     > ![Viewing the secret in the artifact](media/azure-key-vault/view-artifact.png)
 
-1. The text file contains our secret: `mysecretpassword`. This concludes the optional verification step we mentioned earlier.
+1. The text file contains our secret: `mysecretpassword`. This concludes our verification step that we mentioned earlier.
 
 ## Clean up resources
 
-Follow the steps below to delete the resources we created in this tutorial:
+Follow the steps below to delete the resources you created:
 
 1. If you created a new organization to host your project, see [how to delete your organization](../../organizations/accounts/delete-your-organization.md), otherwise [delete your project](../../organizations/projects/delete-project.md)).
 
