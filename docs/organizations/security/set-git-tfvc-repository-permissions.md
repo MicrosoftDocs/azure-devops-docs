@@ -105,7 +105,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 - To enable or disable inheritance for a specific repository, select the repository and then move the **Inheritance** slider to either an on or off position.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add user or group](media/git-tfvc-perm/disable-inheritance-specific-repo.png)  
+	> ![Enable or disable inheritance for a specific repository.](media/git-tfvc-perm/disable-inheritance-specific-repo.png)  
 
 To learn about inheritance, see [About permissions and groups, Inheritance and security groups](about-permissions.md#inheritance). 
 

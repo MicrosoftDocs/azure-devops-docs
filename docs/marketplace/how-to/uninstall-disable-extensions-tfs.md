@@ -33,7 +33,7 @@ can uninstall or disable extensions.
 
    **TFS 2015 Update 3**
 
-   <img alt="Manage extensions" src="../media/manage-extensions.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Manage extensions in TFS 2015 Update 3." src="../media/manage-extensions.png" style="border: 1px solid #CCCCCC" />
 
    **TFS 2017**
 

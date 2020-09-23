@@ -47,7 +47,7 @@ Post rename, there might be some [actions](#more-work) required from team member
 2. From the Projects page, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon menu for the project that you want to rename and choose **Rename**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Enter a new project name](media/rename-project/choose-rename-menu-option.png)
+	> ![Choose Rename.](media/rename-project/choose-rename-menu-option.png)
 
 3. Edit the name. 
 
@@ -63,7 +63,7 @@ Post rename, there might be some [actions](#more-work) required from team member
 1. Sign in to your organization.
 2. From the **Overview** tab, open the :::image type="icon" source="../../media/icons/context-menu.png" border="false"::: context icon menu for the project that you want to rename and choose **Rename**.
 
-	![Enter a new project name](media/rename-project/collection-rename.png)
+	![Choose Rename.](media/rename-project/collection-rename.png)
 
 3. Edit the name. 
 

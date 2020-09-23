@@ -104,7 +104,7 @@ Feature teams can turn **Show parents** on their backlogs to see context and tho
 Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: . 
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/visibility/web-team-backlog-multi-team-ownership-new-nav.png)   
+> ![Items that are owned by other teams appear with an information icon.](media/visibility/web-team-backlog-multi-team-ownership-new-nav.png)   
 
 ::: moniker-end 
 
@@ -113,7 +113,7 @@ Items that are owned by other teams appear with an information icon,  :::image t
 Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: . 
    
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/visibility/web-team-backlog-multi-team-ownership-prev-nav.png)   
+> ![Items that are owned by other teams appear with an information icon.](media/visibility/web-team-backlog-multi-team-ownership-prev-nav.png)   
 ::: moniker-end 
 
 ::: moniker range="<= tfs-2015" 

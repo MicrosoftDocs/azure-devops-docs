@@ -169,7 +169,7 @@ To mark any item as a favorite, choose the :::image type="icon" source="../../me
 
 To remove an item from your favorites list, choose the favorited icon.
 
-![Account home favorites page](media/projects-page/account-home-remove-from-favorites.png)
+![Favorite and unfavorite an item.](media/projects-page/account-home-remove-from-favorites.png)
 
 ### Filter the list of favorites
 

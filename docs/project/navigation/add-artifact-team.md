@@ -95,7 +95,7 @@ Note that you can only add one TFVC repository per project, but an unlimited num
 Expand  **Pipelines** and choose **Builds** or **Releases**. Then choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
-> ![Work, add artifact](media/add-artifact/add-pipeline-vert.png)
+> ![Add build and release pipelines.](media/add-artifact/add-pipeline-vert.png)
 
 ::: moniker-end
 

@@ -48,7 +48,7 @@ The main problem with this approach is that it would also provide her with a lot
 
 ![Folder mappings](media/optimize-your-workspace/IC720115.png)
 
-![Folder mappings](media/optimize-your-workspace/IC720116.png)
+![Second folder mapping.](media/optimize-your-workspace/IC720116.png)
 
 <table><tbody>
 <tr>
@@ -83,7 +83,7 @@ For example, at Fabrikam Fiber, the codebase and the staff have grown. To isolat
 	<td><p><img src="media/optimize-your-workspace/IC756627.png" alt="Optimize your workspace"/></p></td>
 	<td><p><strong>Develop features</strong> She modifies her default workspace to do work in the Extranet branch, where she participates in the development of the customer-facing website in this branch.</p></td></tr>
 <tr>
-	<td><p><img src="media/optimize-your-workspace/IC646325.png" alt="Optimize your workspace"/></p></td>
+	<td><p><img src="media/optimize-your-workspace/IC646325.png" alt="Integrate and stabilize."/></p></td>
 	<td><p><strong>Integrate and stabilize</strong> She creates two new workspaces to do work in the Test and Dev branches, where she collaborates with other developers and testers to stabilize the code during integration.</p></td></tr></tbody>
 </table>
 

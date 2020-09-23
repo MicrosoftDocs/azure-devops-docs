@@ -41,7 +41,7 @@ From the pipelines landing page you can view pipelines and pipeline runs, create
 
 Choose **Recent** to view recently run pipelines (the default view), or choose **All** to view all pipelines.
 
-![View pipelines](media/view-pipelines.png)
+![Choose Recent to view recently run pipelines or choose All to view all pipelines.](media/view-pipelines.png)
 
 Select a pipeline to manage that pipeline and view its runs. Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
 

@@ -172,7 +172,7 @@ Choose the **Preview page** tab for instructions.
 1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png) Then, select **Create Project**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Open Projects](media/create-project/projects-hub-vert-create-project.png)  
+   > ![Open Projects, then select Create Project.](media/create-project/projects-hub-vert-create-project.png)  
 
 2. In **Create a new project**, provide a name for your project, and optionally a description. Expand **Advanced** to select the initial source control type and work item process.
 
@@ -221,12 +221,12 @@ Creating a project from the web portal is supported for TFS 2015.2 and later ver
 >
 > If you want these features to be to be available, then create your project from Visual Studio/Team Explorer. For more information, see [Process template and plug-in files, Client support for project creation](../../reference/process-templates/overview-process-template-files.md#client-support).
 
-1. If you have TFS 2015.2 or a later version, select the gear button to open the **Projects** page. ![Settings button (TFS Web Portal)](../../media/icons/gear-icon.png) Then choose **New Project**.
+1. If you have TFS 2015.2 or a later version, select the gear button to open the **Projects** page. :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: Then choose **New Project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose new project, horizontal navigation](media/create-project/projects-hub-horz-new-project.png)  
 
-	Otherwise, for TFS 2015 or TFS 2015.1, open the administration overview page by choosing the gear button. ![Settings button (TFS Web Portal)](media/rename-project/gearicon.png) Then select **Server settings** and choose **New project**.
+	Otherwise, for TFS 2015 or TFS 2015.1, open the administration overview page by choosing the gear button. :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: Then select **Server settings** and choose **New project**.
 
    > [!div class="mx-imgBorder"]  
    > ![New Project TFS 2017](media/create-project/new-team-project-tfs-2017.png)
@@ -402,12 +402,12 @@ Connect to a project, collection, or server from your web browser.
 2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the top. Select any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Projects](media/create-project/list-projects.png)  
+	> ![Open Projects, then select Create Project.](media/create-project/list-projects.png)  
 
 3. Or, choose **Organization settings** and then select **Projects** to list all projects.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Projects](media/create-project/list-projects-org-settings.png)  
+	> ![Choose Organization settings and then select Projects to list all projects.](media/create-project/list-projects-org-settings.png)  
 
 	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
 
@@ -428,7 +428,7 @@ Connect to a project, collection, or server from your web browser.
 2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the top. Select any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Projects](media/create-project/list-projects.png)  
+	> ![Select any project to connect to that project.](media/create-project/list-projects.png)  
 
 3. Or, choose **Organization settings** and then select **Projects** to list all projects.
 
@@ -450,12 +450,12 @@ Choose the **Preview page** tab for information.
 2. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the top. Choose any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Projects](media/create-project/list-projects-2019.png)  
+	> ![Select any project to connect to that project.](media/create-project/list-projects-2019.png)  
 
 1. Or, select **Admin settings** and then choose **Projects** to list all projects.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Projects](media/create-project/list-projects-admin-settings-2019.png)  
+	> ![Select Admin settings and then choose Projects.](media/create-project/list-projects-admin-settings-2019.png)  
 
 	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
 
@@ -572,12 +572,12 @@ From Team Explorer, you can view a list of projects by connecting to an organiza
 #### Visual Studio 2017
 
 > [!div class="mx-imgBorder"]  
-> ![Connect to a project dialog](media/create-project/connect-to-a-project-vs-2017.png)  
+> ![Connect to a project dialog 2017.](media/create-project/connect-to-a-project-vs-2017.png)  
 
 #### Visual Studio 2015
 
 > [!div class="mx-imgBorder"]  
-> ![Connect to a project dialog](media/create-project/connect-to-a-project-vs-2015.png)  
+> ![Connect to a project dialog 2015.](media/create-project/connect-to-a-project-vs-2015.png)  
 
 * * *
 

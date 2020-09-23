@@ -1,7 +1,7 @@
 ---
 title: Rollup estimated and actual work using Project
 titleSuffix: Azure Boards 
-description: Provides summed values of select fields for all child work items of a parent.
+description: Use Microsoft Project to automatically generate a rollup of summary tasks. Rollup provides summed values of select fields for all child work items of a parent.
 ms.technology: devops-agile
 ms.assetid: 502d6c76-36a0-4448-b73c-9af43703b562
 ms.author: kaelli
