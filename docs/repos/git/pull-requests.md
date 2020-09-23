@@ -84,7 +84,7 @@ When you publish or update a feature branch, Azure Repos prompts you to create a
 
 ![Creating Pull Request through pushed branch in Azure Repos](media/pull-requests/create-pr-from-push-new-nav.png)
 
-![Creating Pull Request through pushed branch in Azure Repos](media/pull-requests/create-pr-from-push-files-tab-new-nav.png)
+![Creating Pull Request through pushed branch in Azure Repos, Files tab.](media/pull-requests/create-pr-from-push-files-tab-new-nav.png)
 
 Select **Create a pull request** to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
@@ -96,7 +96,7 @@ When you publish or update a feature branch, Azure Repos prompts you to create a
 
 ![Creating Pull Request through pushed branch in Azure Repos](media/pull-requests/create-pr-from-push.png)
 
-![Creating Pull Request through pushed branch in Azure Repos](media/pull-requests/create-pr-from-push-files-tab.png)
+![Creating Pull Request through pushed branch in Azure Repos, Files tab.](media/pull-requests/create-pr-from-push-files-tab.png)
 
 Select **Create a pull request** to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
@@ -198,7 +198,7 @@ To create a draft pull request, choose **Create as draft** when creating the pul
 
 If you start your pull request title with WIP, **Create as draft** is selected as the default.
 
-![Create as draft](media/pull-requests/create-draft-pr-wip.png)
+![Start your pull request title with WIP to Create as draft.](media/pull-requests/create-draft-pr-wip.png)
 
 ### Publish a draft pull request
 
@@ -288,7 +288,7 @@ Link work items to your pull request:
 
 1. Select the **Overview** tab in the pull request.
 
-   ![Pull request overview](media/pull-requests/pull-request-overview-work-items-new-nav.png)
+   ![Select the Overview tab.](media/pull-requests/pull-request-overview-work-items-new-nav.png)
 
 1. Select the add button in the **Work Items** area. ![Add icon in pull requests](media/pull-requests/pr_add_icon.png)
 
