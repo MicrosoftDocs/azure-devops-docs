@@ -43,7 +43,7 @@ When you define a pipeline, you can define it as a collection of [jobs](../proce
 
 In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or your own (self-hosted) infrastructure. You do not need to pay for parallel jobs if you are using an on-premises server. The concept of parallel jobs only applies to Azure DevOps Services. 
 
-## _Microsoft-hosted or self-hosted parallel jobs?
+## Microsoft-hosted or self-hosted parallel jobs?
 If you want to run your jobs on machines that Microsoft manages, use _Microsoft-hosted parallel jobs_. Your jobs will run on [Microsoft-hosted agents](../agents/hosted.md).
 
 If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use _self-hosted parallel jobs_. For self-hosted parallel jobs, you'll start by deploying our [self-hosted agents](../agents/agents.md) on your machines. You can register any number of these self-hosted agents in your organization. 
@@ -54,15 +54,11 @@ If you want Azure Pipelines to orchestrate your builds and releases, but use you
 
 ## How much do parallel jobs cost?
 
-Parallel jobs are purchased at the organization level, and they are shared by all projects in an organization. Currently, there isn't a way to partition or dedicate parallel job capacity to a specific project or agent pool. For example:
-
-* You purchase two parallel jobs in your organization.
-* You start two runs in the first project, and both the parallel jobs are consumed.
-* You start a run in the second project. That run won't start until one of the runs in your first project is completed.
-
 We provide a *free tier* of service by default in every organization for both hosted and self-hosted parallel jobs. 
+Parallel jobs are purchased at the organization level, and they are shared by all projects in an organization. 
 
-### Microsoft-hosted parallel job costs
+
+# [Microsoft-hosted costs](#tab/ms-hosted-costs)
 
 For Microsoft-hosted parallel jobs, you get 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for public projects. For private projects, you get one free job that can run for up to 60 minutes each time. There is no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects. 
 
@@ -84,7 +80,8 @@ When you purchase your first Microsoft-hosted parallel job, the number of parall
 > [Specify jobs in your pipeline](../process/phases.md).
 
 
-### Self-hosted parallel jobs
+# [Self-hosted costs](#tab/self-hosted-costs)
+
 
 For self-hosted parallel jobs, you can register any number of [self-hosted agents](../agents/agents.md) in your organization. We charge based on the number of jobs you want to run at a time, not the number of agents registered. There are no time limits on self-hosted jobs.
 
@@ -99,7 +96,10 @@ For public projects that are self-hosted, you can have unlimited parallel jobs r
 
 When the free tier is no longer sufficient for your self-hosted private project, you can purchase more additional capacity per parallel job. 
 
+
 [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
+
+---
 
 
 ::: moniker range="= tfs-2015"
@@ -113,36 +113,29 @@ When the free tier is no longer sufficient for your self-hosted private project,
 
 ## How many parallel jobs do I need?
 
-1. Start by finding out how many parallel jobs your organization currently uses. 
+As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues will grow longer. When you find the queue delays are too long, you can purchase additional parallel jobs as needed.
 
-2. Browse to **Organization settings** > **Pipelines** > **Retention and parallel jobs** > **Parallel jobs**.
+Figure out how many parallel jobs you need by first seeing how many parallel jobs your organization currently uses:
+
+1. Browse to **Organization settings** > **Pipelines** > **Retention and parallel jobs** > **Parallel jobs**.
 
    ![Location of parallel jobs in organization settings](media/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png)
 
    URL example: `https://{your_organization}/_admin/_buildQueue?_a=resourceLimits`
 
-3. View the maximum number of parallel jobs that are available in your organization.
+2. View the maximum number of parallel jobs that are available in your organization.
 
-4. Select **View in-progress jobs** to display all the builds and releases that are actively consuming an available parallel job or that are queued waiting for a parallel job to be available.
+3. Select **View in-progress jobs** to display all the builds and releases that are actively consuming an available parallel job or that are queued waiting for a parallel job to be available.
 
 
-When you've reached the limit of 1,800 minutes per month for the free tier of Microsoft-hosted parallel jobs, you can start by buying one parallel job to remove this monthly time limit before deciding to purchase more.
-
-As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues will grow longer.
-When you find the queue delays are too long, you can purchase additional parallel jobs as needed.
-
-### Simple estimate
+### Estimate costs
 
 A simple rule of thumb: Estimate that you'll need one parallel job for every four to five users in your organization.
-
-### Detailed estimate
 
 In the following scenarios, you might need multiple parallel jobs:
 
 * If you have multiple teams, and if each of them require CI, you'll likely need a parallel job for each team.
-
 * If your CI trigger applies to multiple branches, you'll likely need a parallel job for each active branch.
-
 * If you develop multiple applications by using one organization or server, you'll likely need additional parallel jobs: one to deploy each application at the same time.
 
 ::: moniker-end
@@ -267,6 +260,16 @@ We'll automatically apply the free tier limits for public projects if you meet b
 
 * Your pipeline is part of an Azure Pipelines [public project](../../organizations/public/index.md). 
 * Your pipeline builds a public repository from GitHub or from the same public project in your Azure DevOps organization.
+
+### Can I assign a parallel job to a specific project or agent pool?
+
+Currently, there isn't a way to partition or dedicate parallel job capacity to a specific project or agent pool. For example:
+
+* You purchase two parallel jobs in your organization.
+* You start two runs in the first project, and both the parallel jobs are consumed.
+* You start a run in the second project. That run won't start until one of the runs in your first project is completed.
+
+
 
 ### Are there limits on who can use Azure Pipelines?
 
