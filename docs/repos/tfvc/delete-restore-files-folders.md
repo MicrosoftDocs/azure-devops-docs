@@ -24,11 +24,11 @@ See [Permissions and groups reference](../../organizations/security/permissions.
 
 Before you delete an item:
 
--   ![Delete item](media/delete-restore-files-folders/IC572373.png) Before you delete a file, look for a check mark icon ![Delete item](media/delete-restore-files-folders/IC51402.gif), which indicates pending edits in the file . If there are pending edits, you should view them (open the context menu by right-clicking the file and choosing **Compare**) and make sure that you do not need them. If you think you might need the edits in the future, consider checking in the file before you delete it.
+-   ![Delete item](media/delete-restore-files-folders/IC572373.png) Before you delete a file, look for a check mark icon ![Delete item check mark.](media/delete-restore-files-folders/IC51402.gif), which indicates pending edits in the file . If there are pending edits, you should view them (open the context menu by right-clicking the file and choosing **Compare**) and make sure that you do not need them. If you think you might need the edits in the future, consider checking in the file before you delete it.
 
--   ![Delete item](media/delete-restore-files-folders/important.png) If you delete a folder, the system will pend delete actions for any folders and files that it contains.
+-   ![Delete item important.](media/delete-restore-files-folders/important.png) If you delete a folder, the system will pend delete actions for any folders and files that it contains.
 
--   ![Delete item](media/delete-restore-files-folders/important.png) If you delete a file on which other files have dependencies, the system will automatically pend delete actions for those files. For example, if you delete a form file, the code and resource file will also be pended for deletion.
+-   ![Delete item important dependencies.](media/delete-restore-files-folders/important.png) If you delete a file on which other files have dependencies, the system will automatically pend delete actions for those files. For example, if you delete a form file, the code and resource file will also be pended for deletion.
 
 ### To delete an item
 
