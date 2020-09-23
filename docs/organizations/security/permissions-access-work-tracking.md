@@ -28,7 +28,7 @@ As a member of an Azure DevOps project, you can use most of the features to trac
 ::: moniker-end
 
 
-In the tables provided in this article, a :::image type="icon" source="/azure/devops/media/icons/checkmark.png" border="false"::: checkmark indicates that the corresponding access level or security group has access to a feature by default. 
+In the tables provided in this article, a ✔️ indicates that the corresponding access level or security group has access to a feature by default. 
 
 > [!NOTE]   
 > Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
@@ -122,11 +122,11 @@ You set project-level information permissions from **Project settings** > **Perm
 <tr>
 <td align="left"><a href="set-project-collection-level-permissions.md" data-raw-source="[View project-level information](set-project-collection-level-permissions.md)">View project-level information</a> 
 </td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 
 
@@ -135,9 +135,9 @@ You set project-level information permissions from **Project settings** > **Perm
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left"><a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)">Area nodes and Iteration nodes: Create, delete, edit child nodes</a><br/></td>
@@ -145,7 +145,7 @@ You set project-level information permissions from **Project settings** > **Perm
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 
 
@@ -154,7 +154,7 @@ You set project-level information permissions from **Project settings** > **Perm
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 
 
@@ -194,8 +194,8 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 
@@ -204,17 +204,17 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 
 <td align="left"><a href="../../boards/queries/using-queries.md" data-raw-source="[View shared work item queries](../../boards/queries/using-queries.md)">View shared work item queries</a></p>
 </td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 
 <tr>
@@ -225,7 +225,7 @@ The following table summarizes a subset of the default permissions assigned to t
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 
 <tr>
@@ -235,8 +235,8 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 
 </tbody>

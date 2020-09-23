@@ -275,7 +275,7 @@ az devops security group membership list --id
 - **id**: Required. Security group descriptor or user email address whose membership details are required.
 - **relationship**: Optional. Get **member of** or **members** information for the group. The accepted values are *memberof* and *members*.
 
-### Example
+### Examples
 
 The following command lists the members of the specified security group and shows the results in table format.
 
@@ -286,6 +286,17 @@ az devops security group membership list --id vssgp.Uy0xLTktMTU1MTM3NDI0NS0yMjc3
 Name                 Type    Email                Descriptor
 -------------------  ------  -------------------  ----------------------------------------------------
 contoso@contoso.com  user    contoso@contoso.com  msa.NDMzMmNjOWYtYzY4Zi03YTNlLTk2ZTktYmYwM2U4NjgxOTRh
+```
+
+Here is another example that lists the members of the EMail team for the Fabrikam Fiber project. 
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops security group membership list --id "[Fabrikam Fiber]\Email" --output table
+Name               Type    Email                       Descriptor
+-----------------  ------  --------------------------  ----------------------------------------------------
+Christie Church    user    fabrikamfiber1@hotmail.com  msa.OThjODMzM2ItMmI4Ny03YTkwLThmZGItYWQwYmQ1YWE4MzJk
+Raisa Pokrovskaya  user    fabrikamfiber5@hotmail.com  msa.ZmUwYjk5NmYtZTAyNS03NzBkLTgxNmYtMzk1NDQwYzViMzgw
 ```
 
 ## Remove a member from a group

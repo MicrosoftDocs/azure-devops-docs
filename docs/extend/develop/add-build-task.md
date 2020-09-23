@@ -7,14 +7,14 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 05/26/2020
+ms.date: 09/10/2020
 ---
 
 # Add a build or release task
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-In this article, learn how to install extensions to your organization for custom build or release tasks in Azure DevOps. 
+Learn how to install extensions to your organization for custom build or release tasks in Azure DevOps. 
 These tasks appear next to Microsoft-provided tasks in the **Add Step** wizard.
 
 ![Screenshot of Build task catalog for extensions in Azure DevOps.](media/build-task-ext-choose-task.png)
@@ -524,58 +524,58 @@ pool:
   vmImage: "ubuntu-latest"
 
 variables:
-  - group: variable-group
+  - group: variable-group # Rename to whatever you named your variable group in the prerequisite stage of step 6
 
 stages:
   - stage: Run_and_publish_unit_tests
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@2
+          - task: TfxInstaller@3
             inputs:
               version: "v0.7.x"
           - task: Npm@1
             inputs:
               command: 'install'
-              workingDir: '/TaskDirectory'
+              workingDir: '/TaskDirectory' # Update to the name of the directory of your task
           - task: Bash@3
             displayName: Compile Javascript
             inputs:
               targetType: "inline"
               script: |
-                cd TaskDirectory
+                cd TaskDirectory # Update to the name of the directory of your task
                 tsc
           - task: Npm@1
             inputs:
               command: 'custom'
-              workingDir: '/TestsDirectory'
-              customCommand: 'testScript'
+              workingDir: '/TestsDirectory' # Update to the name of the directory of your task's tests
+              customCommand: 'testScript' # See the definition in the explanation section below - it may be called test
           - task: PublishTestResults@2
             inputs:
               testResultsFormat: 'JUnit'
               testResultsFiles: '**/ResultsFile.xml'
-  - stage: Package_extension_and_ publish_ build_artifacts
+  - stage: Package_extension_and_publish_build_artifacts
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@2
+          - task: TfxInstaller@3
             inputs:
               version: "v0.7.x"
           - task: Npm@1
             inputs:
               command: 'install'
-              workingDir: '/TaskDirectory'
+              workingDir: '/TaskDirectory' # Update to the name of the directory of your task
           - task: Bash@3
             displayName: Compile Javascript
             inputs:
               targetType: "inline"
               script: |
-                cd TaskDirectory
+                cd TaskDirectory # Update to the name of the directory of your task
                 tsc
           - task: QueryAzureDevOpsExtensionVersion@3
             inputs:
               connectTo: 'VsTeam'
-              connectedServiceName: 'ServiceConnection'
+              connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               versionAction: 'Patch'
@@ -589,7 +589,7 @@ stages:
               extensionVersion: '$(Task.Extension.Version)'
               updateTasksVersion: true
               updateTasksVersionType: 'patch'
-              extensionVisibility: 'private'
+              extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
               extensionPricing: 'free'
           - task: CopyFiles@2
             displayName: "Copy Files to: $(Build.ArtifactStagingDirectory)"
@@ -601,11 +601,11 @@ stages:
               PathtoPublish: '$(Build.ArtifactStagingDirectory)'
               ArtifactName: '$(ArtifactName)'
               publishLocation: 'Container'
-  - stage: Download_build_artifacts_and_ publish_the_extension
+  - stage: Download_build_artifacts_and_publish_the_extension
     jobs:
       - job:
         steps:
-          - task: TfxInstaller@2
+          - task: TfxInstaller@3
             inputs:
               version: "v0.7.x"
           - task: DownloadBuildArtifacts@0
@@ -617,14 +617,14 @@ stages:
           - task: PublishAzureDevOpsExtension@3
             inputs:
               connectTo: 'VsTeam'
-              connectedServiceName: 'ServiceConnection'
+              connectedServiceName: 'ServiceConnection' # Change to whatever you named the service connection
               fileType: 'vsix'
               vsixFile: '/Publisher.*.vsix'
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               extensionName: '$(ExtensionName)'
               updateTasksVersion: false
-              extensionVisibility: 'private'
+              extensionVisibility: 'private' # Change to public if you're publishing to the marketplace
               extensionPricing: 'free'
 ```
 

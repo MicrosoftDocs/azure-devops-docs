@@ -93,7 +93,7 @@ Add each team, one by one.
 	Here we add the *App* team. Choose the team administrator and ensure the **Create an area path with the name of the team** checkbox is checked. Optionally add team members.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Create a subteam with its own area path](media/safe-configure/add-team.png)
+	> ![Add the App team.](media/safe-configure/add-team.png)
 
 	Assign the team's Scrum Master, Program Manager, or Portfolio Manager as the team administrator. As team administrators, they can configure their team's tools to support their Agile practices and business needs. 
 
@@ -149,7 +149,7 @@ If you already have iterations for your default team, you can rename them. You'l
 1. Under the default iteration, which shares the same name as the project, create a child iteration that will represent your first program increment (PI). Optionally, add a start and end date for the PI, but keep in mind that the iteration will be broken down further into sprints.
 
 	> [!div class="mx-imgBorder"]
-	> ![Hierarchical area path](media/safe-configure/define-pi1-iteration.png) 
+	> ![Create a child iteration.](media/safe-configure/define-pi1-iteration.png) 
 
 2. Next, create a child iteration for each Sprint within the PI. Set dates for these sprints to correspond your Agile teams' cadences.  
 
@@ -315,7 +315,7 @@ The following table lists the recommended settings to make based on the team lev
 	And, for Agile teams, choose the  **Working with bugs** option to track bugs along with requirements.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Team configuration, General, Working with bugs, don't track](media/safe-configure/working-with-bugs-requirements.png)
+	> ![Agile Team configuration, General, Working with bugs, don't track](media/safe-configure/working-with-bugs-requirements.png)
 
 1. Choose the **Iterations** tab to configure the team's iterations. 
 

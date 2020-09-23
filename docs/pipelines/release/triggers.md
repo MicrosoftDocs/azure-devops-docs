@@ -72,7 +72,7 @@ See also [stage scheduled triggers](#stage-scheduled-triggers).
 You can configure a pull request trigger that will create a new release when a pull request uploads a new version of the artifact. Enable the trigger and add the branches targeted by pull requests that you want to activate this trigger. 
 
 > [!div class="mx-imgBorder"]
-> ![Selecting a trigger for a release](media/trigger-01a.png)
+> ![Configure a pull request trigger.](media/trigger-01a.png)
 
 However, to use a pull request trigger, you must also enable it for specific stages of the pipeline. Do this in the stage [triggers panel](#prtrigger) for the required stage(s). You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. For more information, see [Deploy pull request builds](deploy-pull-request-builds.md).
 

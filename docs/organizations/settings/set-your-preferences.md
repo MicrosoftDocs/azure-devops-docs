@@ -16,7 +16,7 @@ ms.date: 08/17/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-From your profile page, you can change your information and  account preferences. In this article, learn how to complete the following tasks:
+From your profile page, you can change your information and  account preferences. Learn how to complete the following tasks:
 
 - Change your picture
 - Change your display name
@@ -36,7 +36,7 @@ From your profile page, you can change your information and  account preferences
 
 #### [Preview page](#tab/preview-page) 
 
-1. From your home page, select the user settings icon ![user-settings-gear.png](../../media/icons/user-settings-gear.png), and then select **Profile**.
+1. From your home page, select the user settings icon :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::, and then select **Profile**.
 
    ![Open Azure DevOps profile](../../media/open-user-settings-profile-preview.png)
 
@@ -99,12 +99,12 @@ For **Security**, **Notification settings**, and **Manage features** profile men
 2. Choose **Edit profile**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../media/settings/profile-jamal-h.png)
+	> ![Screenshot of highlighted Edit profile button ](../../media/settings/profile-jamal-h.png)
 
 3. From the **About** page, you can change your profile picture, change your display name, contact information, and country. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../media/settings/edit-profile-about-dialog.png)
+	> ![Screenshot of the About User profile page](../../media/settings/edit-profile-about-dialog.png)
 
 4. From the **Preferences** page, you can change the following information:
     - preferred language
@@ -114,7 +114,7 @@ For **Security**, **Notification settings**, and **Manage features** profile men
     - whether borders appear for fields on work item forms
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../media/settings/edit-profile-preferences-dialog.png)
+	> ![Screenshot of Preferences page with Save changes button](../../media/settings/edit-profile-preferences-dialog.png)
 
 ::: moniker-end
 

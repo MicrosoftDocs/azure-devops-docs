@@ -16,7 +16,7 @@ ms.date: 03/26/2019
 [!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range=">= azure-devops-2019"
-In this article, learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
+Learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
 
 If you want to use a project wiki, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
 ::: moniker-end

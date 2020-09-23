@@ -16647,12 +16647,22 @@
     },
     {
       "source_path": "docs/cli/security_tokens.md",
-      "redirect_url": "/azure/devops/cli/security-tokens",
+      "redirect_url": "/azure/devops/organizations/security/manage-tokens-namespaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cli/security-tokens.md",
+      "redirect_url": "/azure/devops/organizations/security/manage-tokens-namespaces",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/cli/service_endpoint.md",
       "redirect_url": "/azure/devops/cli/service-endpoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cli/permissions.md",
+      "redirect_url": "/azure/devops/organizations/security/manage-tokens-namespaces",
       "redirect_document_id": false
     }
   ]

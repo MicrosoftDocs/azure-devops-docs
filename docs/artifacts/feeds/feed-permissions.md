@@ -4,7 +4,7 @@ description: Secure and share packages using feed permissions in Azure Artifacts
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/06/2020
+ms.date: 09/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -40,7 +40,7 @@ Azure Artifacts settings allow you to specify who can create and administer feed
 > [!div class="mx-imgBorder"] 
 > ![Azure Artifacts settings button](media/artifacts-settings-button.png)
 
-By default, everyone in the same organization have the permissions to create feeds. a user who creates a feed is both an owner and an administrator of that feed.
+By default, everyone in the same organization have the permissions to create feeds. A user who creates a feed is both an owner and an administrator of that feed.
 
 > [!div class="mx-imgBorder"] 
 > ![Azure Artifacts settings](media/artifacts-settings.png)
@@ -79,7 +79,7 @@ Select **Permissions**.
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
->![Editing a feed's permissions](media/editfeeddialog-azure-devops-newnav.png)
+>![Editing a feed's permissions devops 2019 and above](media/editfeeddialog-azure-devops-newnav.png)
 
 Select **Add users/groups**.
 
@@ -97,7 +97,8 @@ When you're done, select **Save**.
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-![Editing a feed's permissions](media/editfeeddialog1.png)
+> [!div class="mx-imgBorder"]
+> ![Editing a feed's permissions TFS 2017 and 2018](media/editfeeddialog1.png)
 
 In the edit feed dialog:
 
@@ -124,12 +125,12 @@ If you want to completely hide your packages, you must restrict both feeds and v
 To restrict access to your feed, simply select a user or group from the permission table in your [Feed Settings](#adding-usersgroups-permissions-to-a-feed) and select **Delete**. You can restrict access to a view by changing its visibility to **specific people** as shown below.
 
 > [!div class="mx-imgBorder"]
->![views permissions](media/view-permissions.png)
+>![changing visibility to specific people](media/view-permissions.png)
 
 After restricting your view's visibility to `specific people`, the access permissions column should reflect your changes.
 
 > [!div class="mx-imgBorder"]
->![views permissions](media/view-settings.png)
+>![views settings](media/view-settings.png)
 
 > [!IMPORTANT]
 > A very important concept to keep in mind is that views inherit their permissions from their parent feed. Setting view permissions to `Specific people` without specifying users or groups will cause the view permissions to default back to their parent feed permissions.
@@ -142,7 +143,7 @@ To use packages from a feed in Azure Pipelines, the appropriate build identity m
 
 `[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo))
 
-you can also use the `Allow project-scoped builds` feature if you would like to automatically set up permissions for your project-scoped build identity.
+You can also use the `Allow project-scoped builds` feature if you would like to automatically set up permissions for your project-scoped build identity.
 
 1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access the **Feed settings**.
 
@@ -151,7 +152,10 @@ you can also use the `Allow project-scoped builds` feature if you would like to 
 1. Select the ellipsis on the right and select **Allow project-scoped builds** from the drop down menu.
 
 > [!div class="mx-imgBorder"]
->![views permissions](media/project-scoped-builds.png)
+>![feed permissions: allow project-scoped builds](media/project-scoped-builds.png)
+
+> [!NOTE]
+> If you want your pipelines to use a package from a feed in a different project, you must set up the other project to grant read/write access to the build service in addition to setting up the appropriate [feed permissions](#adding-usersgroups-permissions-to-a-feed).
 
 ## Sharing packages with everyone in your organization
 

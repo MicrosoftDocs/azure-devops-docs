@@ -193,6 +193,8 @@
     href: ecosystems/xamarin.md
   - name: Xcode
     href: ecosystems/xcode.md
+  - name: GitHub Actions
+    href: ecosystems/github-actions.md
 - name: Build apps
   items:
   - name: Build multiple branches
@@ -373,6 +375,8 @@
     href: artifacts/pipeline-artifacts.md
   - name: Build artifacts
     href: artifacts/build-artifacts.md
+  - name: Releases in Azure Pipelines
+    href: release/releases.md
   - name: Release artifacts and artifact sources
     href: release/artifacts.md
   - name: Maven
