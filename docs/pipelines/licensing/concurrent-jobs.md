@@ -14,6 +14,25 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
+::: moniker range="< azure-devops-2019"
+
+This article describes the licensing model for Azure Pipelines in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
+
+A TFS _parallel job_ gives you the ability to run a single release at a time in a project collection. You can keep hundreds or even thousands of release jobs in your collection. But, to run more than one release at a time, you need additional parallel jobs.
+
+One free parallel job is included with every collection in a Team Foundation Server. Every Visual Studio Enterprise subscriber in a Team Foundation Server contributes one additional parallel job. 
+
+You can buy additional private jobs from the Visual Studio Marketplace.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+> [!IMPORTANT]
+> Starting with Azure DevOps Server 2019, you do not have to pay for self-hosted concurrent jobs in releases. You are only limited by the number of agents that you have.
+
+::: moniker-end
+
 ::: moniker range="azure-devops"
 
 Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
@@ -21,10 +40,6 @@ Learn how to estimate how many parallel jobs you need and buy more parallel jobs
 * Understand how parallel jobs are consumed by a pipeline
 * Estimate yours cost before you add any parallel jobs
 * Learn how to increase the number of parallel jobs for your organization
-
-Review the estimated costs as you start using your resources
-Use the cost management features to set budgets and monitor costs
-Review the forecasted costs and identify spending trends to reveal areas where you might want to act
 
 ## Overview
 
@@ -38,7 +53,7 @@ In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure
 
 ::: moniker range="azure-devops"
 
-## Difference between Microsoft-hosted and self-hosted parallel jobs
+### Difference between Microsoft-hosted and self-hosted parallel jobs
 
 If you want to run your jobs on machines that Microsoft manages, use _Microsoft-hosted parallel jobs_. Your jobs will run on [Microsoft-hosted agents](../agents/hosted.md).
 
@@ -51,7 +66,7 @@ For self-hosted parallel jobs, you'll start by deploying our [self-hosted agents
 
 Consider an organization that has only one Microsoft-hosted parallel job. This job allows users in that organization to collectively run only one job at a time. When additional jobs are triggered, they are queued and will wait for the previous job to finish.
 
-If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
+If you use release or YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
 
 When you run a [server job](../process/phases.md#server-jobs) or deploy to a [deployment group](../process/deployment-group-phases.md) using release pipelines, you don't consume any parallel jobs.
 
@@ -92,7 +107,14 @@ When you purchase your first Microsoft-hosted parallel job, the number of parall
 
 You can register any number of these [self-hosted agents](../agents/agents.md) in your organization. We charge based on the number of jobs you want to run at a time, not the number of agents registered. There are no time limits on self-hosted jobs.
 
-We provide a *free tier* of service by default in your organization:
+We provide a *free tier* of service by default in your organization. 
+
+### Self-hosted parallel job costs
+
+| |  Number of parallel jobs |  Time limit |
+|:----------|:-------------| :------|
+| Public project | Unlimited | None|
+| Private project | One self-hosted job; For each active Visual Studio Enterprise subscriber who is a member of your organization, you get one additional self-hosted parallel job.   |   None |
 
 **Public project**
 - Unlimited parallel jobs
@@ -107,25 +129,6 @@ When the free tier is no longer sufficient for your private project, you can pur
 
 [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
 
-
-::: moniker range="< azure-devops-2019"
-
-This article describes the licensing model for Azure Pipelines in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
-
-A TFS _parallel job_ gives you the ability to run a single release at a time in a project collection. You can keep hundreds or even thousands of release jobs in your collection. But, to run more than one release at a time, you need additional parallel jobs.
-
-One free parallel job is included with every collection in a Team Foundation Server. Every Visual Studio Enterprise subscriber in a Team Foundation Server contributes one additional parallel job. 
-
-You can buy additional private jobs from the Visual Studio Marketplace.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-> [!IMPORTANT]
-> Starting with Azure DevOps Server 2019, you do not have to pay for self-hosted concurrent jobs in releases. You are only limited by the number of agents that you have.
-
-::: moniker-end
 
 ::: moniker range="= tfs-2015"
 
