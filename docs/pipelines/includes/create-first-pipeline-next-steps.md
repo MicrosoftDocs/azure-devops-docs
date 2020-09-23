@@ -7,8 +7,6 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
-## Next steps
-
 You've just learned how to create your first Azure Pipeline. Learn more about configuring pipelines in the language of your choice:
 
 * [.NET Core](../ecosystems/dotnet-core.md)
