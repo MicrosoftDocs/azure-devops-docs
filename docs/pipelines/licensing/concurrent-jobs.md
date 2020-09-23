@@ -101,11 +101,11 @@ When the free tier is no longer sufficient for your self-hosted private project,
 
 ---
 
+::: moniker-end
 
 ::: moniker range="= tfs-2015"
 
 > Do I need parallel jobs in TFS 2015? Short answer: no. [More details](#tfs_before_2017)
-
 ::: moniker-end
 
 
@@ -142,7 +142,7 @@ In the following scenarios, you might need multiple parallel jobs:
 
 ::: moniker range="azure-devops"
 
-## How is a parallel job consumed?
+## How is a parallel job consumed in DevOps Services?
 
 Consider an organization that has only one Microsoft-hosted parallel job. This job allows users in that organization to collectively run only one job at a time. When additional jobs are triggered, they are queued and will wait for the previous job to finish.
 
