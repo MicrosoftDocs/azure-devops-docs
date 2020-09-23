@@ -130,7 +130,7 @@ In order to receive the service hook notifications, you'll need to expose a port
 
     If you already have other service hooks configured, select the green plus `(+)` to create a new service hook subscription.
 
-    ![Select Create a new subscription from the toolbar](media/create-pr-status-server/service-hooks-create.png)
+    ![Select the green plus to create a new service hook subscription.](media/create-pr-status-server/service-hooks-create.png)
 
 6. On the New Service Hooks Subscription dialog, select **Web Hooks** from the list of services, then select **Next**.
 
@@ -333,7 +333,7 @@ Now that your server is running and listening for service hook notifications, cr
 
 6. Once the PR has been created, you will see the status section, with the **Work in progress** entry which links to the URL specified in the payload.
 
-    ![Add WIP to the default PR title](media/create-pr-status-server/pr-with-status.png)
+    ![Status section with the Work in progress entry.](media/create-pr-status-server/pr-with-status.png)
 
 7. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
