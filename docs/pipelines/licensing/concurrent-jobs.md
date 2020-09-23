@@ -37,10 +37,13 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 
 Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
 
+## What is a parallel job? 
+
 When you define a pipeline, you can define it as a collection of [jobs](../process/phases.md). When a pipeline runs, you can run multiple jobs as part of that pipeline. Each job consumes a *parallel job* that runs on an agent. When there aren't enough parallel jobs available for your organization, the jobs are queued up and run one after the other.
 
 In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or your own (self-hosted) infrastructure. You do not need to pay for parallel jobs if you are using an on-premises server. The concept of parallel jobs only applies to Azure DevOps Services. 
 
+## _Microsoft-hosted or self-hosted parallel jobs?
 If you want to run your jobs on machines that Microsoft manages, use _Microsoft-hosted parallel jobs_. Your jobs will run on [Microsoft-hosted agents](../agents/hosted.md).
 
 If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use _self-hosted parallel jobs_. For self-hosted parallel jobs, you'll start by deploying our [self-hosted agents](../agents/agents.md) on your machines. You can register any number of these self-hosted agents in your organization. 
@@ -49,7 +52,7 @@ If you want Azure Pipelines to orchestrate your builds and releases, but use you
 
 ::: moniker range="azure-devops"
 
-## Parallel jobs costs
+## How much do parallel jobs cost?
 
 Parallel jobs are purchased at the organization level, and they are shared by all projects in an organization. Currently, there isn't a way to partition or dedicate parallel job capacity to a specific project or agent pool. For example:
 
@@ -64,10 +67,11 @@ We provide a *free tier* of service by default in every organization for both ho
 For Microsoft-hosted parallel jobs, you get 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for public projects. For private projects, you get one free job that can run for up to 60 minutes each time. There is no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects. 
 
 
-| |  Number of parallel jobs |  Time limit |
-|:----------|:-------------| :------|
-| Public project | 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time  | No overall time limit per month|
-| Private project | One free job that can run for up to 60 minutes each time   |   1,800 minutes (30 hours) per month |
+
+|           |  Number of parallel jobs |  Time limit |
+| ----------| -------------------------| ------------|
+| **Public project** | 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time  | No overall time limit per month|
+| **Private project** | One free job that can run for up to 60 minutes each time   |   1,800 minutes (30 hours) per month |
 
 
 When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
@@ -87,10 +91,10 @@ For self-hosted parallel jobs, you can register any number of [self-hosted agent
 For public projects that are self-hosted, you can have unlimited parallel jobs running. For private projects, you can have one job and one additional job for each active Visual Studio Enterprise subscriber who is a member of your organization. 
 
 
-| |  Number of parallel jobs |  Time limit |
-|:----------|:-------------| :------|
-| Public project | Unlimited | None|
-| Private project | One self-hosted job; For each active Visual Studio Enterprise subscriber who is a member of your organization, you get one additional self-hosted parallel job.   |   None |
+|           |  Number of parallel jobs |  Time limit |
+|:----------|--------------------------| ------------|
+| **Public project** | Unlimited | None|
+| **Private project** | One self-hosted job; For each active Visual Studio Enterprise subscriber who is a member of your organization, you get one additional self-hosted parallel job.   |   None |
 
 
 When the free tier is no longer sufficient for your self-hosted private project, you can purchase more additional capacity per parallel job. 
@@ -107,9 +111,7 @@ When the free tier is no longer sufficient for your self-hosted private project,
 
 ::: moniker range="azure-devops"
 
-## Determine how many parallel jobs you need
-
-You can 
+## How many parallel jobs do I need?
 
 1. Start by finding out how many parallel jobs your organization currently uses. 
 
@@ -147,7 +149,7 @@ In the following scenarios, you might need multiple parallel jobs:
 
 ::: moniker range="azure-devops"
 
-### How a parallel job is consumed
+## How is a parallel job consumed?
 
 Consider an organization that has only one Microsoft-hosted parallel job. This job allows users in that organization to collectively run only one job at a time. When additional jobs are triggered, they are queued and will wait for the previous job to finish.
 
@@ -169,7 +171,7 @@ When you run a [server job](../process/phases.md#server-jobs) or deploy to a [de
 
 ::: moniker range="< azure-devops-2019"
 
-## How a parallel job is consumed
+## How is a parallel job consumed?
 
 For example, a collection in a Team Foundation Server has one parallel job. This allows users in that collection to run only one release at a time. When additional releases are triggered, they are queued and will wait for the previous one to complete.
 
