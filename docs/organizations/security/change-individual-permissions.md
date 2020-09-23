@@ -178,7 +178,7 @@ You add members to a custom security group in the same way you add users to a bu
 
 2. Change the permission, setting a permission as **Allow** or **Deny**.
 
-    ![Set permissions for a single user account](media/change-individual-permissions/set-individual-permissions.png)  
+    ![Change the permission for a single user account.](media/change-individual-permissions/set-individual-permissions.png)  
 
     For a description of each permission, see [Permissions and groups reference, project-level permissions](permissions.md#project-level-permissions).
 
