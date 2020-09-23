@@ -23,10 +23,10 @@ To learn about specific cross-project features, see [Work across projects](navig
 
 ### Q: How many projects should I create? 
 
-**A.** In general, we recommend that you create a single project. However, certain business needs may require creating more than one project. To learn more, see one of the following articles.  
+**A.** In general, we recommend that you create a single project. However, certain business needs, such as supporting a public project or applying security policies, may require creating more than one project. To learn more, see one of the following articles.  
 - [About projects and scaling your organization](../organizations/projects/about-projects.md)
 - [Plan your organizational structure](../user-guide/plan-your-azure-devops-org-structure.md)
-
+- [What is a public project?](../organizations/public/about-public-projects.md)
 
 ### Q: Can I connect to more than one project at a time? 
 
