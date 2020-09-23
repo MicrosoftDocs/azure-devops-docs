@@ -83,7 +83,7 @@ When you merge the PR, the system reads through the description and updates the 
 ![set state in pr image](media/pr-set-state-of-work-items.png)
  
 ### How it works
-The systems looks at three different criteria when attempting to set the state of #mentioned work items. State, State Category, and keyword. In that order.
+The system looks at three different criteria when attempting to set the state of #mentioned work items. State, State Category, and keyword. In that order.
 
   - **If** the value matches a state, **then** set it to that state. 
   - **Else If** the value matches a state category, **then** set the work item to first state in that category (see note below)
