@@ -2,7 +2,7 @@
 title: Artifacts in Azure Pipelines
 titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
-description: Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
+description: Learn how to publish and consume many different types of packages and artifacts with Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
 ms.date: 02/26/2020

@@ -1,6 +1,6 @@
 ---
-title: Permissions | REST API Reference for VSTS
-description: Work with feeds programmatically using the REST APIs for VSTS .
+title: Permissions | REST API Reference for Azure DevOps
+description: Work with permissions programmatically by using the REST APIs for Azure DevOps.
 ms.assetid: 72a0f637-2b25-4532-a1d3-1e4d446b3aba
 ms.date: 09/29/2016
 ms.technology: devops-ecosystem

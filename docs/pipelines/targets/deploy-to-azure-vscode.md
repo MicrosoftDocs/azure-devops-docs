@@ -1,6 +1,6 @@
 ---
 title: Deploy to Azure App Service using Visual Studio Code
-description: Deploy to an Azure SQL database from Azure Pipelines or TFS
+description: Deploy to Azure App Service from Azure Pipelines or GitHub Actions by using Visual Studio Code.
 ms.assetid: F8AB2F49-FC90-4436-8E47-1F707D76C038
 ms.topic: conceptual
 ms.custom: seodec18
