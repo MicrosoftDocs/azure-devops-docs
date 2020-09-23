@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
-You might not receive an expected notification email. In this article, learn how to check the notification statistics.
+You might not receive an expected notification email. Learn how to check the notification statistics.
 
 An email is generated when an [event](oob-supported-event-types.md) occurs within Azure DevOps Services that matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
 

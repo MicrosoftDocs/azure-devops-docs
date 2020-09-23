@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 08/03/2020
+ms.date: 09/17/2020
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -532,8 +532,9 @@ The `parameters` object works like the [`variables` object](expressions.md#varia
 in an expression. Only predefined variables can be used in template expressions.
 
 > [!NOTE]
-> Expressions are only expanded for `stages`, `jobs`, and `steps`.
-> You cannot, for example, use an expression inside a `resource` or `trigger`.
+> Expressions are only expanded for `stages`, `jobs`, `steps`, and `containers` (inside `resources`).
+> You cannot, for example, use an expression inside `trigger` or a resource like `repositories`.
+> Additionally, on Azure DevOps 2020 RTW, you can't use template expressions inside `containers`.
 
 For example, you define a template:
 
@@ -888,8 +889,8 @@ If you need to escape a value that literally contains `${{`, then wrap the value
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 100 separate YAML files may be included (directly or indirectly)
+- No more than 20 levels of template nesting (templates including other templates)
 - No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600KB - 2MB of on-disk YAML, depending on the specific features used)
-- No more than 2000 characters per template expression are allowed
 
 ::: moniker-end
 
@@ -1392,7 +1393,6 @@ Templates and template expressions can cause explosive growth to the size and co
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 50 separate YAML files may be included (directly or indirectly)
 - No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600KB - 2MB of on-disk YAML, depending on the specific features used)
-
 - No more than 2000 characters per template expression are allowed
 
 ::: moniker-end

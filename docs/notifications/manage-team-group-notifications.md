@@ -192,6 +192,7 @@ Manage your group notifications by updating the group's **Delivery settings**.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
+ 
   ![Open Organization settings](../media/settings/open-admin-settings-vert.png)
 
 3. Select **Global notifications** > **Subscribers**, enter and find your group, and then select **Delivery settings**.
@@ -200,7 +201,7 @@ Manage your group notifications by updating the group's **Delivery settings**.
 
 4. Choose which option best fits your group's needs, and then select **Save**.  
 
-    ![Delivery settings options](media/group-delivery-settings.png)
+   ![Delivery settings options](media/group-delivery-settings.png)
 
 Your group delivery settings are updated for notifications.
 

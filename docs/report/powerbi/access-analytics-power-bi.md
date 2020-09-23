@@ -88,7 +88,7 @@ You can access Analytics data through the Power BI Desktop OData feed.
     d. Replace `[Implementation="2.0"]` with the following string:  
         `[Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]` 
     
-    ![The Advanced Editor Query pane](media/odataquery-powerbi-advancededitor2.png)
+    ![Replaced string.](media/odataquery-powerbi-advancededitor2.png)
     
 1. Select **Close & Apply**. 
 

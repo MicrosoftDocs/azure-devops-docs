@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this article, learn the answers to frequently asked questions (FAQs) about setting up Visual Studio with Azure DevOps.
+Learn the answers to frequently asked questions (FAQs) about setting up Visual Studio with Azure DevOps.
 
 ## Visual Studio
 

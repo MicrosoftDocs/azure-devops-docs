@@ -6,6 +6,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: September 10
+          href: 2020/sprint-175-update.md
         - name: August 24
           href: 2020/sprint-174-update.md
         - name: August 03
@@ -362,6 +364,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: September 10
+          href: 2020/boards/sprint-175-update.md
         - name: August 24
           href: 2020/boards/sprint-174-update.md
         - name: August 03
@@ -454,6 +458,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: September 10
+          href: 2020/pipelines/sprint-175-update.md
         - name: August 24
           href: 2020/pipelines/sprint-174-update.md
         - name: August 03
@@ -520,6 +526,11 @@
 - name: Azure Test Plans
   expanded: true
   items:
+    - name: 2020
+      expanded: true
+      items:
+        - name: September 10
+          href: 2020/testplans/sprint-175-update.md
     - name: 2019
       expanded: true
       items:

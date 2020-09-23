@@ -40,7 +40,7 @@ To create a pull request in Azure Repos:
 
    ![Creating Pull Request through pushed branch in Azure DevOps Services](media/pull-requests/create-pr-from-push.png)
 
-   ![Creating Pull Request through pushed branch in Azure DevOps Services](media/pull-requests/create-pr-from-push-files-tab.png)
+   ![Creating Pull Request through pushed branch in Azure DevOps Services, Files tab.](media/pull-requests/create-pr-from-push-files-tab.png)
  
    You can also initiate a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Project](../../organizations/projects/connect-to-projects.md).
 
@@ -48,7 +48,7 @@ To create a pull request in Azure Repos:
 
    From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal for your current branch.   
 
-   ![Pull Requests](media/pull-requests/new-pull-request.png)
+   ![Select New Pull Request.](media/pull-requests/new-pull-request.png)
 
 3. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include VSTS work items and hyperlinks to allow others to have as much context as possible when reviewing your changes. Add any team member who you would like to review the changes. 
 

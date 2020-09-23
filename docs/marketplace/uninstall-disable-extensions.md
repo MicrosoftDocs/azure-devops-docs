@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
 
-In this article, learn how to uninstall or disable an extension that you don't need.
+Learn how to uninstall or disable an extension that you don't need.
 
 ## Prerequisites
 
