@@ -194,7 +194,7 @@ If you've already created your backlog, and now you want to organize it, you can
 1. Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Boards>Backlogs>Open view options and choose Parents ON](media/organize-backlog/turn-mapping-on-agile.png)
+	> ![Choose the view options icon and select Mapping.](media/organize-backlog/turn-mapping-on-agile.png)
 
 	The Mapping pane displays immediately. 
 

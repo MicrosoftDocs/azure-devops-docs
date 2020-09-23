@@ -47,7 +47,7 @@ The following resources are provisioned on the Azure using an ARM template:
 
 1. Click the **Deploy to Azure** button below to initiate resource provisioning. Provide all the necessary information and select **Purchase**. You may use any combination of allowed administrative usernames and passwords as they are not used again in this tutorial. The **Env Prefix Name** is prefixed to all of the resource names in order to ensure that those resources are generated with globally unique names. Try to use something personal or random, but if you see a naming conflict error during validation or creation, try changing this parameter and running again.
 
-    [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Falmvm%2Fmaster%2Flabs%2Fvstsextend%2Fdeploymentgroups%2Farmtemplate%2Fazurewebsqldeploy.json)
+    [![Deploy to Azure button.](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Falmvm%2Fmaster%2Flabs%2Fvstsextend%2Fdeploymentgroups%2Farmtemplate%2Fazurewebsqldeploy.json)
 
     ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/deploy-azure.png)
 
@@ -56,11 +56,11 @@ The following resources are provisioned on the Azure using an ARM template:
 
 1. Once the deployment completes, you can review all of the resources generated in the specified resource group using the Azure portal. Select the DB server VM with **sqlSrv** in its name to view its details.
 
-    ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/resource-group.png)
+    ![Resource group deploy to Azure.](media/deploying-azure-vms-deployment-groups/resource-group.png)
 
 1. Make a note of the **DNS name**. This value is required in a later step. You can use the copy button to copy it to the clipboard.
 
-    ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/sql-dns.png)
+    ![SQL DNS deploy to Azure.](media/deploying-azure-vms-deployment-groups/sql-dns.png)
 
 ## Creating and configuring a deployment group
 

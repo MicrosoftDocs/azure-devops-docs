@@ -1,6 +1,6 @@
 ---
 title: Use packages from nuget.org
-description: Use packages from npmjs.com in Azure DevOps Services and Team Foundation Server via upstream sources or scopes
+description: Use packages from nuget.org in Azure DevOps Services and Team Foundation Server via upstream sources or scopes.
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.technology: devops-artifacts
 ms.topic: conceptual

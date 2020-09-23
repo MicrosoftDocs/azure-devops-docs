@@ -209,7 +209,7 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column **PassRate** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/failed-tests-changetype2.png)
+    > ![Change the type of column PassRate to Decimal Number.](media/odata-powerbi-test-analytics/failed-tests-changetype2.png)
 
 
 ### Rename fields and query, then Close & Apply
