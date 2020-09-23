@@ -10,8 +10,7 @@ ms.date: 09/22/2020
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Run parallel jobs 
+# Configure and pay for parallel jobs
 
 [!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
@@ -19,7 +18,15 @@ monikerRange: '>= tfs-2015'
 
 Learn how to estimate how many parallel jobs you need and buy more parallel jobs for your organization. 
 
-## What is a parallel job?
+* Understand how parallel jobs are consumed by a pipeline
+* Estimate yours cost before you add any parallel jobs
+* Learn how to increase the number of parallel jobs for your organization
+
+Review the estimated costs as you start using your resources
+Use the cost management features to set budgets and monitor costs
+Review the forecasted costs and identify spending trends to reveal areas where you might want to act
+
+## Overview
 
 When you define a pipeline, you can define it as a collection of [jobs](../process/phases.md). When a pipeline runs, you can run multiple jobs as part of that pipeline.
 
@@ -28,6 +35,77 @@ Each job consumes a *parallel job* that runs on an agent. When there aren't enou
 In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or your own (self-hosted) infrastructure. You do not need to pay for parallel jobs if you are using an on-premises server. The concept of parallel jobs only applies to Azure DevOps Services. 
 
 ::: moniker-end
+
+::: moniker range="azure-devops"
+
+## Difference between Microsoft-hosted and self-hosted parallel jobs
+
+If you want to run your jobs on machines that Microsoft manages, use _Microsoft-hosted parallel jobs_. Your jobs will run on [Microsoft-hosted agents](../agents/hosted.md).
+
+If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use _self-hosted parallel jobs_. 
+
+For self-hosted parallel jobs, you'll start by deploying our [self-hosted agents](../agents/agents.md) on your machines. You can register any number of these self-hosted agents in your organization. 
+
+
+## Parallel job example
+
+Consider an organization that has only one Microsoft-hosted parallel job. This job allows users in that organization to collectively run only one job at a time. When additional jobs are triggered, they are queued and will wait for the previous job to finish.
+
+If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
+
+When you run a [server job](../process/phases.md#server-jobs) or deploy to a [deployment group](../process/deployment-group-phases.md) using release pipelines, you don't consume any parallel jobs.
+
+![Simple example of parallel jobs](media/concurrent-pipelines-vsts/concurrent-pipelines-simple-example.png)
+
+1. FabrikamFiber CI Build 102 (master branch) starts first.
+2. Deployment of FabrikamFiber Release 11 is triggered by completion of FabrikamFiber CI Build 102.
+3. FabrikamFiber CI Build 101 (feature branch) is triggered. The build can't start yet because Release 11's deployment is active. So the build stays queued.
+4. Release 11 waits for approvals. Fabrikam CI Build 101 starts because a release that's waiting for approvals does not consume a parallel job.
+5. Release 11 is approved. It resumes only after Fabrikam CI Build 101 is completed.
+
+
+## Cost of hosted and self-hosted parallel jobs
+
+We provide a *free tier* of service by default in every organization. 
+
+### Microsoft-hosted parallel jobs
+
+**Public project**
+- 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time 
+- No overall time limit per month
+
+**Private project**
+- One free job that can run for up to 60 minutes each time
+- 1,800 minutes (30 hours) per month
+
+When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
+
+When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization is still 1. To be able to run two jobs concurrently, you will need to purchase two parallel jobs if you are currently on the free tier. The first purchase only removes the time limits on the first job.
+ 
+> [!TIP]
+> If your pipeline exceeds the maximum job timeout, try splitting your pipeline 
+> into multiple jobs. For more information on jobs, see 
+> [Specify jobs in your pipeline](../process/phases.md).
+
+
+### Self-hosted parallel jobs
+
+You can register any number of these [self-hosted agents](../agents/agents.md) in your organization. We charge based on the number of jobs you want to run at a time, not the number of agents registered. There are no time limits on self-hosted jobs.
+
+We provide a *free tier* of service by default in your organization:
+
+**Public project**
+- Unlimited parallel jobs
+- No time limits
+
+**Private project**
+- One self-hosted parallel job
+- For each active Visual Studio Enterprise subscriber who is a member of your organization, you get one additional self-hosted parallel job.
+- No time limits
+
+When the free tier is no longer sufficient for your private project, you can purchase more additional capacity per parallel job. 
+
+[Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
 
 
 ::: moniker range="< azure-devops-2019"
@@ -56,66 +134,7 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 ::: moniker-end
 
 
-
 ::: moniker range="azure-devops"
-
-## Microsoft-hosted CI/CD
-
-If you want to run your jobs on machines that Microsoft manages, use _Microsoft-hosted parallel jobs_. Your jobs run on our pool of [Microsoft-hosted agents](../agents/hosted.md).
-
-We provide a *free tier* of service by default in every organization:
-
-- Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month.
-- Private project: One free job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month.
- 
-> [!TIP]
-> If your pipeline exceeds the maximum job timeout, try splitting your pipeline 
-> into multiple jobs. For more information on jobs, see 
-> [Specify jobs in your pipeline](../process/phases.md).
-
-When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
-
-> [!NOTE] 
-> When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization is still 1. To be able to run two jobs concurrently, you will need to purchase two parallel jobs if you are currently on the free tier. The first purchase only removes the time limits on the first job.
-
-## Self-hosted CI/CD
-
-If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use _self-hosted parallel jobs_. You start by deploying our [self-hosted agents](../agents/agents.md) on your machines. You can register any number of these self-hosted agents in your organization. We charge based on the number of jobs you want to run at a time, not the number of agents registered. 
-
-We provide a *free tier* of service by default in your organization:
-
-- Public project: Unlimited parallel jobs.
-- Private project: One self-hosted parallel job. Additionally, for each active Visual Studio Enterprise subscriber who is a member of your organization, you get one additional self-hosted parallel job.
-
-When the free tier is no longer sufficient:
-
-- Private project: You can pay for additional capacity per parallel job. [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
-
-There are no time limits on self-hosted jobs.
-
-
-
-
-## How a parallel job is consumed by a pipeline
-
-For example, consider an organization that has only one Microsoft-hosted parallel job. This job allows users in that organization to collectively run only one job at a time. When additional jobs are triggered, they are queued and will wait for the previous job to finish.
-
-> [!NOTE] 
-> If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
-
-
-> [!NOTE] 
-> When you run a [server job](../process/phases.md#server-jobs) or deploy to a [deployment group](../process/deployment-group-phases.md) using release pipelines, you don't consume any parallel jobs.
-
-
-![Simple example of parallel jobs](media/concurrent-pipelines-vsts/concurrent-pipelines-simple-example.png)
-
-1. FabrikamFiber CI Build 102 (master branch) starts first.
-2. Deployment of FabrikamFiber Release 11 is triggered by completion of FabrikamFiber CI Build 102.
-3. FabrikamFiber CI Build 101 (feature branch) is triggered. The build can't start yet because Release 11's deployment is active. So the build stays queued.
-4. Release 11 waits for approvals. Fabrikam CI Build 101 starts because a release that's waiting for approvals does not consume a parallel job.
-5. Release 11 is approved. It resumes only after Fabrikam CI Build 101 is completed.
-
 
 ## Determine how many parallel jobs you need
 
