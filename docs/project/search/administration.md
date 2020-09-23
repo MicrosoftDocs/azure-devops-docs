@@ -18,7 +18,6 @@ Learn how to install and uninstall the Search extension for Code, Wiki, and Work
 
 
 * **Configure Search (Code, Work Item, and Wiki) in Azure DevOps Server or Team Foundation Server (TFS)**
-  - [Install the Search extension](#install-tfs)
   - [Configure Search](#config-tfs)
   - [Secure Search](#secure-search)
   - [Upgrade Search](#upgrading-search)
@@ -43,9 +42,13 @@ All users have access to Work Item and Wiki Search.
 To install the Search extension, you must be a Project Collection Administrator (PCA) for the organization.
 Non-administrative users can also request the extension is added.
 
-<a name="install-tfs"></a>
+<a name="config-tfs"></a>
 
-## Install Search extension
+## Configure Search
+
+Configure the Search service using the dedicated pages in the Server Configuration Wizard
+as you install Azure DevOps Server. You can also [configure and unconfigure Search](#uninstall-tfs)
+afterwards by running the Server Configuration Wizard again or by launching the Search Configuration Wizard.
 
 ### Availability
 
@@ -56,23 +59,6 @@ Non-administrative users can also request the extension is added.
 * Wiki Search is available in TFS 2018 Update 2 and and later versions.
 
 * Work Item and Wiki search are built-in extensions that are installed by default during Search configuration.
-
-### Installation
-
-Code Search is an opt-in feature, and can be installed later from the Local Gallery. 
-Go to **Local Gallery** (```http://{server}/_gallery```) as an administrator.
-Non-administrative users can also request the extension be added to TFS or Azure DevOps Server. 
-
-For more information, see [Install an extension](../../marketplace/get-tfs-extensions.md) 
-in the Local gallery documentation.
-
-<a name="config-tfs"></a>
-
-## Configure Search
-
-Configure the Search service using the dedicated pages in the Server Configuration Wizard
-as you install Azure DevOps Server. You can also [configure and unconfigure Search](#uninstall-tfs)
-afterwards by running the Server Configuration Wizard again or by launching the Search Configuration Wizard.
 
 <a name="hardware-recommendations"></a>
 
@@ -220,7 +206,8 @@ Consider the following points when configuring Search:
 
 * If you don't set the checkbox to install the Code Search extension for all your project collections when 
   configuring Search, your project collection administrator can install it from the Local Gallery. Ensure you
-  navigate to the Local Gallery (`http://{Server}/_gallery`) from your Azure DevOps Server or TFS portal page. 
+  navigate to the Local Gallery (`http://{Server}/_gallery`) from your Azure DevOps Server or TFS portal page. For more information, see [Install an extension](../../marketplace/get-tfs-extensions.md) 
+in the Local gallery documentation.
 
 * The search index folder should be on a separate fast hard drive, backed by fast storage such
   as a solid-state drive (SSD) or Storage Area Network (SAN) to maximize search performance.
