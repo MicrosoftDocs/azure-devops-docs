@@ -224,8 +224,6 @@ You can also create new build or release definitions by exporting an existing on
 
 [!INCLUDE [include](includes/get-status-badge.md)]
 
-[!INCLUDE [include](includes/create-first-pipeline-next-steps.md)]
-
 ::: moniker-end
 
 
@@ -1020,11 +1018,17 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2020"
-
 <a name="next-steps"></a>
 
-## Next steps: configure a pipeline
+## Next steps
+
+:::moniker range="azure-devops"
+
+[!INCLUDE [include](includes/create-first-pipeline-next-steps.md)]
+
+:::moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 
 You've learned the basics of creating and running a pipeline.
 Now you're ready to configure your build pipeline for the programming language you're using.
