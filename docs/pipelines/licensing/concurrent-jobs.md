@@ -129,7 +129,7 @@ When the free tier is no longer sufficient for your private project, you can pur
 
 [Buy self-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines).
 
-
+::: moniker-end
 ::: moniker range="= tfs-2015"
 
 > Do I need parallel jobs in TFS 2015? Short answer: no. [More details](#tfs_before_2017)
