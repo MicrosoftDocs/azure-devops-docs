@@ -131,7 +131,7 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-![icon](media/copy-files.png) **Utility: Copy Files**
+:::image type="icon" source="media/copy-files.png" border="false"::: **Utility: Copy Files**
 
 * Source folder
 
@@ -213,7 +213,7 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-![icon](media/copy-files.png) **Utility: Copy Files**
+:::image type="icon" source="media/copy-files.png" border="false"::: **Utility: Copy Files**
 
 * Source folder
 

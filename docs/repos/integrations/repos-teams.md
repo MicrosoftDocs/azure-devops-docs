@@ -57,13 +57,13 @@ displays as shown in the following image. Use the `@azure repos` handle to start
 1. Once the app has been installed in your team, authenticate yourself to Azure Repos using the `@azure repos signin` command. Use **Sign in with different email** if your Microsoft Teams and Azure Boards are in different tenants. 
    
    > [!div class="mx-imgBorder"]
-   > ![Sign in prompt image ](./media/integrations-teams/SignIn.png)
+   > ![Sign in prompt with different email.](./media/integrations-teams/SignIn.png)
 
    > [!div class="mx-imgBorder"]
    > ![Sign in prompt image ](./media/integrations-teams/SignIn1.png)
 
    > [!div class="mx-imgBorder"]
-   > ![Sign in prompt image ](./media/integrations-teams/SignIn-Complete.png)
+   > ![Sign in complete.](./media/integrations-teams/SignIn-Complete.png)
 
 
 2. To start monitoring all Git repositories in a project, use the following slash command inside a channel:

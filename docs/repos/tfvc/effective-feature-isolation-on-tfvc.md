@@ -78,7 +78,7 @@ As the number of your feature branches increase, your storage requirements and b
 
 Similarly, the **Source Control Explorer** view becomes noisy and impractical as the number of branches increases. Unless you have a consistent naming convention, finding a specific feature branch among hundreds of feature branches is challenging.
 
-![Feature isolation noise](./media/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise-vside.png)
+![Feature isolation noise in Source Control Explorer view.](./media/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise-vside.png)
 
 > [!TIP]
 >

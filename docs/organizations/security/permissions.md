@@ -1100,7 +1100,7 @@ You manage organization-level permissions through the [web portal admin context]
         <td id="manage-test-controllers">Manage test controllers</td>
         <td>Can register and de-register test controllers.</td>
     </tr>
-    <tr><td><h4>Auditing</hr></td><td> </td> 
+    <tr><td id="audit-streams-permissions"><h4>Auditing</hr></td><td> </td> 
     </tr>
     <tr>
         <td id="delete-audit-streams-permission">Delete audit streams</td>
@@ -2156,6 +2156,7 @@ Team administrators can change the permissions for individual team dashboards by
 ::: moniker-end
 
 <a name="build"></a>
+<a name="build-object-level"></a>
 
 ## Build (object-level)
 
@@ -3062,7 +3063,7 @@ View releases
 -->
 
 <a id="release_management">  </a>
-
+<a id="release-management">  </a>
 
 ::: moniker range=">= tfs-2015"
 
@@ -3235,7 +3236,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 <a id="lab">  </a>
 

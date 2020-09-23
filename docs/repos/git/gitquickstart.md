@@ -80,7 +80,7 @@ You make [commits](commits.md) in your local Git repository to save your changes
 #### [Visual Studio](#tab/visual-studio/)
 1. In Team Explorer, select the **Home** button and choose **Branches**. 
 
-   ![Branches](media/gitquickstart-vs2017/branches.png)
+   ![Screenshot showing Branches in Team Explorer.](media/gitquickstart-vs2017/branches.png)
 
 1. Right-click the master branch and choose **New Local Branch From**.
 
@@ -88,13 +88,13 @@ You make [commits](commits.md) in your local Git repository to save your changes
 
 1. Enter a descriptive branch name for your work to remind you and others what kind of work is in the branch. Select **Create Branch**.
 
-   ![Creating a Local Branch off the Master branch in Visual Studio](media/gitquickstart-vs2017/new-local-branch.png) 
+   ![Enter a descriptive branch name and select Create Branch.](media/gitquickstart-vs2017/new-local-branch.png) 
 
 1. Make changes to your files in the cloned repo. From the Team Explorer **Home** view, you can open Visual Studio solutions in the repo or browse the repo contents using **Show Folder View**. Git keeps track of changes made to your code both inside and outside of Visual Studio.
 
 1. When you're satisfied with the changes, save them in Git using a commit. Open the **Changes** view from Team Explorer by selecting the **Home** button and choosing **Changes**.
 
-   ![Changes](media/gitquickstart-vs2017/changes.png)
+   ![Screenshot that shows opening the Changes view.](media/gitquickstart-vs2017/changes.png)
 
 1. Enter a message that describes the commit, and select **Commit All**.
 
@@ -149,7 +149,7 @@ Once you push the changes, you can create a [pull request](pullrequest.md). A pu
 
    You can also go to the **Synchronization** view from **Changes** by choosing **Sync** immediately after making a commit.
 
-   ![Synchronization](media/gitquickstart-vs2017/commit-created-locally.png)
+   ![Choose Sync immediately after making a commit.](media/gitquickstart-vs2017/commit-created-locally.png)
 
 1. Select **Push** to share your commit with the remote repository.
 
@@ -163,7 +163,7 @@ Once you push the changes, you can create a [pull request](pullrequest.md). A pu
 
 1. In **Pull Requests**, you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open a web browser where you can create the new pull request in the Azure Repos web portal.
 
-   ![Pull Requests](media/gitquickstart-vs2017/new-pull-request.png)
+   ![Select New Pull Request.](media/gitquickstart-vs2017/new-pull-request.png)
 
 1. Verify your branches. In this example, we want to merge the commits from the `ReadMeFix` branch into the `master` branch. Enter a title and optional description, specify any reviewers, optionally associate any work items, and then select **Create**.
 
@@ -204,7 +204,7 @@ Pulling often makes sure that your feature branches from your main branch are us
 #### [Visual Studio](#tab/visual-studio/)
 1. In Team Explorer, select **Home** and choose **Sync** to open **Synchronization**.
 
-   ![Synchronization](media/gitquickstart-vs2017/sync.png)
+   ![Synchronization with others.](media/gitquickstart-vs2017/sync.png)
 
 1. You can download the latest changes to your branch using the **Pull** link. There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either because they both do the same thing.
 

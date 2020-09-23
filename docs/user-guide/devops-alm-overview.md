@@ -65,7 +65,7 @@ TFVC is a centralized version control system that lets you apply granular permis
 
 You can use TFVC to scale from small to large projects, and by using server work spaces, you can scale up to very large code bases with millions of files per branch and large binary files. And with compare and annotate you can identify the exact changes that they made.
 
-[![Eclipse](media/overview/code-tfvc-eclipse.png)](../repos/tfvc/share-your-code-in-tfvc-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Visual Studio](media/overview/code-tfvc-visualstudio.png)](../repos/tfvc/share-your-code-in-tfvc-vs.md#workspace)&#160;&#160;&#160;&#160;&#160;&#160;[![Xcode](media/overview/code-tfvc-xcode.png)](../repos/tfvc/share-your-code-in-tfvc-xcode.md)  
+[![Eclipse, TFVC.](media/overview/code-tfvc-eclipse.png)](../repos/tfvc/share-your-code-in-tfvc-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Visual Studio, TFVC.](media/overview/code-tfvc-visualstudio.png)](../repos/tfvc/share-your-code-in-tfvc-vs.md#workspace)&#160;&#160;&#160;&#160;&#160;&#160;[![Xcode, TFVC.](media/overview/code-tfvc-xcode.png)](../repos/tfvc/share-your-code-in-tfvc-xcode.md)  
 
 
 ### Package management and code search 
