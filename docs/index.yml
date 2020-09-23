@@ -117,7 +117,7 @@ productDirectory:
           text: What is Azure Artifacts?
         - url: ./artifacts/start-using-azure-artifacts.md
           text: Start using Azure Artifacts 
-        - url: ./artifacts/artifacts/npm/npmrc.md
+        - url: ./artifacts/npm/npmrc.md
           text: Set up your client's npmrc 
         - url: ./artifacts/get-started-nuget.md
           text: NuGet
