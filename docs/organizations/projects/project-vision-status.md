@@ -191,7 +191,7 @@ For projects that selected TFVC for version control, the README.md file needs to
 8. Select **Overview>Summary** to review your project summary page with the README file displayed.  
 
    > [!div class="mx-imgBorder"]  
-   > ![About this project dialog, new nav](media/share-project/tfvc-project-summary-with-readme.png)
+   > ![Project summary page with the README file displayed.](media/share-project/tfvc-project-summary-with-readme.png)
 
 ::: moniker-end
 
@@ -256,7 +256,7 @@ You can change the repository used to support your project vision, including poi
 3. Select a different repository or choose the Wiki option.
 
    > [!div class="mx-imgBorder"]  
-   > ![Choose Repository where the README file exists, new nav](media/share-project/change-repo-new-nav.png)  
+   > ![Select a different repository or choose the Wiki option.](media/share-project/change-repo-new-nav.png)  
 
    > [!TIP]  
    > If you choose the Wiki option, only the Wiki home page displays. To access additional Wiki pages, you must navigate to the Wiki.
