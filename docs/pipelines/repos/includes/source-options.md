@@ -67,7 +67,7 @@ steps:
 
 You can configure the **Submodules** setting from the properties of the **Get sources** task in your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
-![GitHub options](../media/github/github-options.png)
+![Configure Submodules setting.](../media/github/github-options.png)
 
 ---
 
@@ -134,7 +134,7 @@ steps:
 
 You can configure the **Shallow fetch** setting from the properties of the **Get sources** task in your pipeline.
 
-![GitHub options](../media/github/github-options.png)
+![Configure Shallow fetch setting.](../media/github/github-options.png)
 
 ---
 
@@ -168,7 +168,7 @@ steps:
 
 Select the **Don't sync sources** setting from the properties of the **Get sources** task in your pipeline.
 
-![GitHub options](../media/github/github-options.png)
+![Select the Don't sync sources setting.](../media/github/github-options.png)
 
 ---
 
@@ -226,7 +226,7 @@ This gives the following clean options.
 
 Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
 
-![GitHub options](../media/github/github-clean-sources.png)
+![Select the Clean setting.](../media/github/github-clean-sources.png)
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
   ```

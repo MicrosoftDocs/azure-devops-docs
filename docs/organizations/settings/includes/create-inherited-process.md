@@ -16,15 +16,15 @@ The first step is to create an inherited process that you can customize. The def
 	Here, we create an inherited process from the Agile system process.   
 	::: moniker range="azure-devops"
 	> [!div class="mx-imgBorder"]  
-	> ![Context menu, Choose Create inherited process](/azure/devops/organizations/settings/work/media/process/create-inherited-process-menu-agile.png) 
+	> ![Context menu, Choose Create inherited process, Azure DevOps.](/azure/devops/organizations/settings/work/media/process/create-inherited-process-menu-agile.png) 
 	::: moniker-end 
 	::: moniker range="azure-devops-2020"
 	> [!div class="mx-imgBorder"]  
-	> ![Context menu, Choose Create inherited process](/azure/devops/organizations/settings/work/media/process/create-inherited-process-2020.png) 
+	> ![Context menu, Choose Create inherited process, Azure DevOps Server 2020.](/azure/devops/organizations/settings/work/media/process/create-inherited-process-2020.png) 
 	::: moniker-end 
 	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
-	> ![Context menu, Choose Create inherited process](/azure/devops/organizations/settings/work/media/process/create-inherited-process-menu-agile.png) 
+	> ![Context menu, Choose Create inherited process, Azure DevOps Server 2019.](/azure/devops/organizations/settings/work/media/process/create-inherited-process-menu-agile.png) 
 	::: moniker-end 
 	::: moniker range=">= azure-devops-2019 < azure-devops"
 	> [!IMPORTANT]  

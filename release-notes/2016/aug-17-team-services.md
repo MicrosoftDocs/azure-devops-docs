@@ -149,7 +149,7 @@ Does your team have a lot of build definitions. You can now use folders to keep 
 
 ![Definitions, All](media/8_17_14.png)
 
-![Manage folders](media/8_17_15.png)
+![Manage folders in All Definitions tab.](media/8_17_15.png)
 
 > [!TIP]
 > Have a batch of definitions that need the same permissions? Put them in a folder and then you can give permissions to the folder.

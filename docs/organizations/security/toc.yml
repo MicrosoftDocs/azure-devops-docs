@@ -84,6 +84,8 @@
     href: change-individual-permissions.md
   - name: Grant or restrict permissions to select tasks
     href: restrict-access.md   
+  - name: Manage permissions with CLI
+    href: manage-tokens-namespaces.md 
 - name: Set permissions for an object or role
   items: 
   - name: Set work tracking & plan permissions 
@@ -131,8 +133,6 @@
     href: permissions-lookup-guide.md
   - name: Permissions & groups 
     href: permissions.md
-  - name: Manage tokens & namespaces
-    href: manage-tokens-namespaces.md 
   - name: Git permissions prior to TFS 2017 Update 1
     href: git-permissions-before-2017.md
   - name: Web site settings & security (on-premises)

@@ -1,6 +1,6 @@
 ---
 title: YAML schema
-ms.custom: seodec18, devx-track-python
+ms.custom: seodec18
 description: An overview of all YAML syntax.
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
@@ -464,7 +464,7 @@ jobs:
 
 ---
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Deployment job
 
@@ -601,7 +601,7 @@ variables:
   readonly: true
 ```
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 You can also include [variables from templates](process/templates.md#variable-reuse).
 
@@ -1642,7 +1642,8 @@ pool:
 ```
 
 ---
-::: moniker range="azure-devops"
+
+::: moniker range=">=azure-devops-2020"
 
 ## Environment
 

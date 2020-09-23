@@ -69,6 +69,7 @@ To resolve the problem, consider the following:
 	To resolve, recreate the PAT and ensure the scope for the token includes the required permissions: `repo, read:user, user:email, admin:repo_hook`. 
 
 <a id="update-wits" />
+
 ## Update XML definitions for select work item types 
 
 If your organization uses the Hosted XML or On-premises XML process model to customize the work tracking experience and you want to link to and view the GitHub link types from the Development section in the work item forms, you'll need to update the XML definitions for the work item types. 
