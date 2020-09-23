@@ -43,7 +43,7 @@ When you define a pipeline, you can define it as a collection of [jobs](../proce
 
 In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or your own (self-hosted) infrastructure. You do not need to pay for parallel jobs if you are using an on-premises server. The concept of parallel jobs only applies to Azure DevOps Services. 
 
-## Microsoft-hosted or self-hosted parallel jobs?
+### Microsoft-hosted vs. self-hosted parallel jobs
 If you want to run your jobs on machines that Microsoft manages, use _Microsoft-hosted parallel jobs_. Your jobs will run on [Microsoft-hosted agents](../agents/hosted.md).
 
 If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use _self-hosted parallel jobs_. For self-hosted parallel jobs, you'll start by deploying our [self-hosted agents](../agents/agents.md) on your machines. You can register any number of these self-hosted agents in your organization. 
@@ -137,6 +137,49 @@ In the following scenarios, you might need multiple parallel jobs:
 * If you have multiple teams, and if each of them require CI, you'll likely need a parallel job for each team.
 * If your CI trigger applies to multiple branches, you'll likely need a parallel job for each active branch.
 * If you develop multiple applications by using one organization or server, you'll likely need additional parallel jobs: one to deploy each application at the same time.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+## How do I buy more parallel jobs?
+
+To buy more parallel jobs:
+
+* [Billing must be set up for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md)
+
+* You need [Project Collection Administrator or organization Owner permissions](../../organizations/security/lookup-organization-owner-admin.md)
+
+Buy more parallel jobs within your organization settings:
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+
+3. Select **Parallel jobs** under Pipelines, and then select either **Purchase parallel jobs** for Microsoft-hosted jobs or **Change** for self-hosted jobs.
+
+   :::image type="content" source="../../organizations/billing/media/shared/manage-parallel-jobs.png" alt-text="manage parallel jobs image":::
+
+4. Enter your desired amount, and then **Save**.
+
+## How do I change the quantity of parallel jobs for my organization?
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+  
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+
+3. Select **Parallel jobs** under Pipelines, and then select either **Purchase parallel jobs** or **Change** for Microsoft-hosted jobs or **Change** for self-hosted jobs.
+
+   :::image type="content" source="../../organizations/billing/media/shared/manage-parallel-jobs.png" alt-text="image of manage parallel jobs":::
+
+4. Enter a lesser or greater quantity of Microsoft-hosted or self-hosted jobs, and then select **Save**.
+
+  > [!IMPORTANT]
+  > Hosted XAML build controller isn't supported. If you have an organization where you need to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx),
+  > set up an [on-premises build server](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx)
+  > and switch to an [on-premises build controller](https://msdn.microsoft.com/library/ee330987%28v=vs.120%29.aspx). For more information about the hosted XAML model, see [Get started with XAML](../../pipelines/get-started-yaml.md).
 
 ::: moniker-end
 
