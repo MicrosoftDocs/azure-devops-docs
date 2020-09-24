@@ -39,13 +39,13 @@ highlightedContent:
       itemType: get-started
       url: ./user-guide/sign-up-invite-teammates.md
     # Card
-    - title: Get started with Stakeholder access
-      itemType: how-to-guide
-      url: /organizations/security/get-started-stakeholder.md
-    # Card
     - title: Connect to a project
       itemType: how-to-guide
       url: ./organizations/projects/connect-to-projects.md
+    # Card
+    - title: Get started with Stakeholder access
+      itemType: how-to-guide
+      url: /organizations/security/get-started-stakeholder.md
     # Card
     - title: Authenticate access with personal access tokens
       itemType: how-to-guide
@@ -69,6 +69,8 @@ productDirectory:
           text: Plan & track work
         - url: ./boards/backlogs/office/bulk-add-modify-work-items-excel.md
           text: Bulk add or modify work items
+        - url: ./boards/index.yml
+          text: See more >
     # Card
     - title: Azure Repos
       imageSrc: ./media/index/DevOpsIconRepos96.svg
@@ -81,10 +83,10 @@ productDirectory:
           text: Get started with Git & Visual Studio
         - url: ./repos/git/use-ssh-keys-to-authenticate.md
           text: Connect to your Git repos with SSH
-        - url: ./repos//git/branch-policies.md
-          text: Protect your Git branches with policies
         - url: ./repos/git/pull-requests.md
           text: Review and merge code with pull requests
+        - url: ./repos/index.yml
+          text: See more >
     # Card
     - title: Azure Pipelines
       imageSrc: ./media/index/DevOpsIconPipelines96.svg
@@ -97,6 +99,10 @@ productDirectory:
           text: YAML schema  
         - url: ./pipelines/process/variables.md
           text: Define variables
+        - url: ./pipelines/library/service-endpoints.md
+          text: Manage service connections
+        - url: ./pipelines/index.yml
+          text: See more >
     # Card
     - title: Azure Test Plans
       imageSrc: media/index/DevOpsIconTestPlans96.svg
@@ -109,6 +115,8 @@ productDirectory:
           text: Run automated tests
         - url: ./test/create-test-cases.md
           text: Create manual tests
+        - url: ./test/index.yml
+          text: See more >
     # Card
     - title: Azure Artifacts
       imageSrc: ./media/index/DevOpsIconArtifacts96.svg
@@ -125,6 +133,8 @@ productDirectory:
           text: Use npm to store JavaScript packages
         - url: ./artifacts/get-started-maven.md
           text: Maven packages
+        - url: ./artifacts/index.yml
+          text: See more >
     # Card
     - title: Azure DevOps Server
       imageSrc: https://docs.microsoft.com/media/common/i_server.svg
@@ -141,6 +151,8 @@ productDirectory:
           text: Migrate
         - url: ./user-guide/about-azure-devops-services-tfs.md
           text: Azure DevOps Services vs. Azure DevOps Server
+        - url: /azure/devops/server/server/
+          text: See more >
 tools: 
   title: Build & deploy your apps
   items: 
@@ -211,6 +223,8 @@ additionalContent:
               url: ./report/dashboards/widget-catalog.md
             - text: Work tracking query-based charts
               url: ./report/dashboards/charts.md
+            - text: Connect to Power BI data connector
+              url: ./report/powerbi/data-connector-connect.md
             - text: What are Analytic views?
               url: ./report/powerbi/what-are-analytics-views.md
             - url: ./report/index.yml
@@ -224,10 +238,10 @@ additionalContent:
               text: Markdown syntax guidance
             - url: ./organizations/public/create-public-project.md
               text: Create a public project
-            - url: ./boards/work-items/follow-work-items.md
-              text: Follow work
-            - url: ./project/navigation/set-favorites.md
-              text: Set favorites
+            - url: ./service-hooks/overview.md
+              text: Integrate with service hooks
+            - url: ./notifications/manage-your-personal-notifications.md
+              text: Manage personal notifications 
             - url: /azure/devops/project/index
               text: "See more >"
         # Card
@@ -281,6 +295,8 @@ additionalContent:
               url: ./reference/on-premises-xml-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
             - text: Hosted XML process model
               url: ./organizations/settings/work/hosted-xml-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+            - text: Process templates
+              url: ./reference/process-templates/.md 
         # Card
         - title: Marketplace & extensibility
           links:
