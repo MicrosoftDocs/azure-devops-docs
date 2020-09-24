@@ -102,7 +102,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 	> [!NOTE]  
 	> Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.  
 	 
-	![Pull Request page, Create pull reques.](media/git-dev-pr-complete.png)  
+	![Pull Request page, Create pull request.](media/git-dev-pr-complete.png)  
 
 	Check the box for **Squash changes when merging** and then complete the merge. 
 
