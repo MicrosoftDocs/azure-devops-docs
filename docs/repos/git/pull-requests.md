@@ -305,7 +305,7 @@ Link work items to your pull request:
 
 1. Select **Overview** in the pull request.
 
-   ![Pull request overview](media/pull-requests/pull-request-overview-work-items.png)
+   ![Select Overview in the pull request.](media/pull-requests/pull-request-overview-work-items.png)
 
 1. Select the add button in the **Work Items** area. ![Add button in pull requests](media/pull-requests/pr_add_icon.png)
 
