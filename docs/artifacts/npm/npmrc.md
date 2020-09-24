@@ -118,7 +118,7 @@ To restore your packages, run the following command in your project directory:
 
 ```cmd
 npm install
-``
+```
 
 ::: moniker-end
 
