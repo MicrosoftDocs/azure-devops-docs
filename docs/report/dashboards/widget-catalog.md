@@ -764,7 +764,7 @@ The widget provides the basic trend of the test results. To get deeper insights 
 <!--- QUESTION - Is this available on 2019? --> 
 
 > [!div class="mx-imgBorder"]  
-> ![Test results trend widget](media/widget-test-results-trend-advanced.png)
+> ![Test results trend widget (Advanced).](media/widget-test-results-trend-advanced.png)
 
 <!---
 > [!NOTE]   
