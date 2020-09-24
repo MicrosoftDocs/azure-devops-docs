@@ -23,6 +23,10 @@ highlightedContent:
       itemType: overview
       url: ./user-guide/what-is-azure-devops.md
     # Card
+    - title: Azure DevOps Services vs. Azure DevOps Server
+      itemType: overview
+      url: ./user-guide/about-azure-devops-services-tfs.md
+    # Card
     - title: What's new in Azure DevOps? 
       itemType: whats-new 
       url: /azure/devops/release-notes/index
@@ -42,10 +46,6 @@ highlightedContent:
     - title: Connect to a project
       itemType: how-to-guide
       url: ./organizations/projects/connect-to-projects.md
-    # Card
-    - title: Get started with Stakeholder access
-      itemType: how-to-guide
-      url: /organizations/security/get-started-stakeholder.md
     # Card
     - title: Authenticate access with personal access tokens
       itemType: how-to-guide
@@ -126,8 +126,6 @@ productDirectory:
         - url: ./artifacts/start-using-azure-artifacts.md
           text: Start using Azure Artifacts 
         - url: ./artifacts/npm/npmrc.md
-          text: Set up your client's npmrc 
-        - url: ./artifacts/get-started-nuget.md
           text: NuGet
         - url: ./artifacts/get-started-npm.md
           text: Use npm to store JavaScript packages
@@ -149,8 +147,6 @@ productDirectory:
           text: Upgrade
         - url: ./migrate/migrate-from-tfs.md
           text: Migrate
-        - url: ./user-guide/about-azure-devops-services-tfs.md
-          text: Azure DevOps Services vs. Azure DevOps Server
         - url: /azure/devops/server/server/
           text: See more >
 tools: 
@@ -296,7 +292,7 @@ additionalContent:
             - text: Hosted XML process model
               url: ./organizations/settings/work/hosted-xml-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
             - text: Process templates
-              url: ./reference/process-templates/.md 
+              url: ./reference/process-templates/overview-process-template-files.md 
         # Card
         - title: Marketplace & extensibility
           links:

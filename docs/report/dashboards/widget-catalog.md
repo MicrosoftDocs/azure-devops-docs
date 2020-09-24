@@ -460,7 +460,7 @@ Provides links to the following features:
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 The following links are displayed when the corresponding resource is configured for the project: 
 
-![Other links widget](media/widget-other-links-tfs.png)  
+![Other links widget, TFS-2018 and earlier versions.](media/widget-other-links-tfs.png)  
 
 - [View project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md) (opens either a SharePoint site or URL that's been configured as the project's portal.  
 - [View process guidance](../../project/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance.  
@@ -512,7 +512,7 @@ Adds a team's burndown chart for a sprint to the dashboard. This widget is based
 
 ### Sprint burndown (Legacy) 
 
-![Sprint burndown widget](media/widget-sprint-burndown-legacy.png)
+![Sprint burndown widget, legacy versions.](media/widget-sprint-burndown-legacy.png)
 
 Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
 
@@ -527,7 +527,7 @@ Adds the team's burndown chart for the current sprint to the dashboard. This cha
 
 ### Sprint burndown 
 
-![Sprint burndown widget](media/widget-sprint-burndown.png)
+![Sprint burndown widget, Azure DevOps Server 2019 and earlier versions.](media/widget-sprint-burndown.png)
 
 Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.
 Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
@@ -759,18 +759,14 @@ The widget provides the basic trend of the test results. To get deeper insights 
 
 ::: moniker range=">= azure-devops-2019"
 <a id="test-trend-results-advanced"></a>
+
 ### Test Results Trend (Advanced)
 
 <!--- QUESTION - Is this available on 2019? --> 
 
 > [!div class="mx-imgBorder"]  
-> ![Test results trend widget](media/widget-test-results-trend-advanced.png)
-
-<!---
-> [!NOTE]   
-> **Feature availability:** The Test Results Trend (Advanced) widget is only available for an Azure DevOps Services organization that has the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) installed. 
--->
-
+> ![Test results trend widget, Advanced version based on Analytics service.](media/widget-test-results-trend-advanced.png)
+ 
 The Test Results Trend (Advanced) widget provides near real-time visibility into test data for multiple builds and releases. The widget shows a trend of your test results for selected pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.
 
 The widget supports tracking advanced metrics for one or more build pipelines or release pipelines. The widget also allows filtering of test results by outcome, stacking metrics, and more. 
