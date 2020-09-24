@@ -47,6 +47,7 @@ Following are the key benefits of using Docker task as compared to directly usin
 | `Dockerfile`<br/>Dockerfile | (Optional) Path to the Dockerfile<br/>Default value: `**/Dockerfile` |
 | `buildContext`<br/>Build context | (Optional) Path to the build context<br/>Default value: `**` |
 | `arguments`<br/>Arguments | (Optional) Additional arguments to be passed onto the docker client<br />Be aware that if you use value `buildAndPush` for the `command` parameter, then the `arguments` property will be ignored.
+| `addPipelineData` <br/>Add Pipeline Data | (Optional) Adds the above mentioned metadata as labels to the image <br/>Possible values: `true`, `false`<br/>Default value: `true` |
 
 ## Login
 Following YAML snippet showcases container registry login using a Docker registry service connection - 
