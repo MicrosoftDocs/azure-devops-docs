@@ -35,13 +35,13 @@ highlightedContent:
       itemType: whats-new 
       url: /azure/devops/release-notes/docswhatsnew/index
     # Card
-    - title: Create your first pipeline
-      itemType: get-started
-      url: ./pipelines/create-first-pipeline.md
-    # Card
     - title: Get started for free
       itemType: get-started
       url: ./user-guide/sign-up-invite-teammates.md
+    # Card
+    - title: Create your first pipeline
+      itemType: get-started
+      url: ./pipelines/create-first-pipeline.md
     # Card
     - title: Connect to a project
       itemType: how-to-guide
