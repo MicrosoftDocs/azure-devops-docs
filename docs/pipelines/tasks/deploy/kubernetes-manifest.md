@@ -65,13 +65,13 @@ The following list shows the key benefits of this task:
   </tr>
   <tr>
     <td><b>kubernetesServiceConnection</b><br/>Kubernetes service connection</td>
-    <td>(Required)<br/>
+    <td>(Required unless the task is used in a <a href="../../process/environments-kubernetes.md" data-raw-source="[Kubernetes environment](../../process/environments-kubernetes.md)">Kubernetes environment</a>)<br/>
     <br/>
     The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
     <td><b>namespace</b><br/>Namespace</td>
-    <td>(Required)<br/>
+    <td>(Required unless the task is used in a <a href="../../process/environments-kubernetes.md" data-raw-source="[Kubernetes environment](../../process/environments-kubernetes.md)">Kubernetes environment</a>)<br/>
     <br/>
     The namespace within the cluster to deploy to.</td>
   </tr>
