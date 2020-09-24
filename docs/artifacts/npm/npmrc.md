@@ -296,6 +296,8 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 ::: moniker-end
 
+::: moniker range="= tfs-2017 || = tfs-2018 || = azure-devops"
+
 ## Troubleshooting `vsts-npm-auth`
 
 If you receive an error like:
@@ -311,6 +313,8 @@ To fix this issue, rerun Node.js setup and ensure the `Add to PATH` option and i
 > ![Add to PATH install option in Node.js setup](./media/node-setup.png)
 
 Alternatively, you can edit the PATH variable to add `%APPDATA%\npm` (Command Prompt) or `$env:APPDATA\npm` (PowerShell).
+
+::: moniker-end
 
 ## Next steps
 
