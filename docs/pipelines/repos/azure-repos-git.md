@@ -184,7 +184,7 @@ For more information on **Limit job authorization scope**, see [Understand job a
 
 :::moniker-end
 
-:::moniker range=">azure-devops-2020"
+:::moniker range="azure-devops"
 
 ### Limit job authorization scope to referenced Azure DevOps repositories
 
