@@ -94,7 +94,7 @@ You can add each of the in-context Analytics reports to a dashboard.
 1. Choose the dashboard and choose **OK**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Analytics in-context report, Copy to dashboard](media/add-charts/select-a-dashboard-dialogue.png)  
+	> ![Choose the dashboard and choose OK.](media/add-charts/select-a-dashboard-dialogue.png)  
 
 1. (Optional) Open the dashboard and choose the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon for the widget to configure the size or change other report properties. 
 
@@ -191,7 +191,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 
 1. Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.  
 
-	![Add a test plan chart to a dashboard](media/add-a-chart-test-plan.png)  
+	![Select the dashboard to add the test chart to.](media/add-a-chart-test-plan.png)  
    ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"

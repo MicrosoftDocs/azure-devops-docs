@@ -1,6 +1,6 @@
 ---
 title: Azure File Copy task version 3 or earlier
-description: Azure Pipelines and Team Foundation Server build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
+description: Use Azure Pipelines and Team Foundation Server Azure File Copy build task version 3 or earlier to copy files to Azure storage blobs or VMs.
 ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
 ms.prod: devops
 ms.technology: devops-cicd

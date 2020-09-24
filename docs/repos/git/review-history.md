@@ -102,7 +102,7 @@ To retrieve a previous version of a file that was deleted in a previous commit:
 
 2. Right-click the commit containing the version of the file you want to restore and select **View Commit Details**. 
 
-   ![View changes](media/history/vs-view-commit-details.png) 
+   ![View commit details.](media/history/vs-view-commit-details.png) 
 
 3. Right click the file to restore in the **Commit Details** in Team Explorer and select **Open**.
 

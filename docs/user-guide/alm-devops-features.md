@@ -483,7 +483,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Support your team to be in sync by <a href="../boards/boards/definition-of-done.md" data-raw-source="[specifying requirements to fulfill prior to handoff of items to a downstream work stage](../boards/boards/definition-of-done.md)">specifying requirements to fulfill prior to handoff of items to a downstream work stage</a>.</p><br/>
 <p><b>Filter by field values or parent work items</b></p>
 <p>Choose the <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> field filter icon to <a href="../boards/boards/filter-kanban-board.md" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
-<img src="media/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter"/><br/><br/>
+<img src="media/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter fields."/><br/><br/>
 
 <p><b>Cumulative Flow Diagram </b></p>
 <p>With the CFD, you can <a href="../report/dashboards/cumulative-flow.md" data-raw-source="[monitor the count of work items as they progressively move through various states which you define](../report/dashboards/cumulative-flow.md)">monitor the count of work items as they progressively move through various states which you define</a>.  </p>
@@ -874,7 +874,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Get started with TFVC in Visual Studio </b></p>
 <p><a href="../repos/tfvc/share-your-code-in-tfvc-vs.md" data-raw-source="[Develop and share your code](../repos/tfvc/share-your-code-in-tfvc-vs.md)">Develop and share your code</a>. Learn how to configure your workspace, check-in your code, compare file changes, and view file history. </p>
-<img src="media/features/features-tfvc-ui-vs.png" alt="Visual Studio Git UI pages"/><br/><br/>
+<img src="media/features/features-tfvc-ui-vs.png" alt="Visual Studio TFVC UI pages"/><br/><br/>
 
 <p><b>Set up local or server workspaces</b></p>
 <p><a href="https://msdn.microsoft.com/library/ms181384.aspx" data-raw-source="[Create a local workspace](https://msdn.microsoft.com/library/ms181384.aspx)">Create a local workspace</a> that maps to the code base of interest. </p>
@@ -1537,7 +1537,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Other links widget</b></p>
 <p>Provides quick access links from a team dashboard to <a href="../report/dashboards/widget-catalog.md#other-links-widget" data-raw-source="[request feedback, define sprints, and modify your team&#39;s area paths](../report/dashboards/widget-catalog.md#other-links-widget)">request feedback, define sprints, and modify your team&#39;s area paths</a>.</p>
-<img src="media/features/alm-feature-widget-other-links.png" alt="Request feedback"/><br/><br/>
+<img src="media/features/alm-feature-widget-other-links.png" alt="Other links widget."/><br/><br/>
 
 <p><b>Query tile </b></p>
 <p>Configurable tile to display the <a href="../report/dashboards/widget-catalog.md#query-tile-widget" data-raw-source="[results and link to a shared query](../report/dashboards/widget-catalog.md#query-tile-widget)">results and link to a shared query</a>. </p>
@@ -1980,7 +1980,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Your profile and preferences</b></p>
 <p>Choose your name to access <a href="../organizations/settings/set-your-preferences.md" data-raw-source="[your profile settings](../organizations/settings/set-your-preferences.md)">your profile settings</a>, set preferences, <a href="../repos/git/command-prompt.md#pat" data-raw-source="[create personal access tokens (Azure DevOps Services)](../repos/git/command-prompt.md#pat)">create personal access tokens (Azure DevOps Services)</a>, <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[set alerts](../notifications/manage-your-personal-notifications.md)">set alerts</a>, and log-in or out.</p>
-<img src="media/features/alm-index-my-profile-menu.png" alt="Profile drop down menu"/><br/><br/>
+<img src="media/features/alm-index-my-profile-menu.png" alt="My Profile menu."/><br/><br/>
 
 <p><b>Switch team context</b></p>
 <p>Navigate to a different team or project from the top row.</p>
@@ -1989,7 +1989,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Change team settings</b></p>
 <p>Customize features to meet your team needs by <a href="../organizations/settings/manage-teams.md" data-raw-source="[configuring your team assets](../organizations/settings/manage-teams.md)">configuring your team assets</a>.</p>
-<img src="media/features/alm-feature-team-settings-gear-icon.png" alt="Switch team context"/><br/><br/>
+<img src="media/features/alm-feature-team-settings-gear-icon.png" alt="Change team settings."/><br/><br/>
 
 
 <p><b>Keyboard shortcuts</b></p>
