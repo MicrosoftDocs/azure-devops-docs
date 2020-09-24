@@ -200,7 +200,7 @@ Follow the steps below to delete the resources you created:
 
 1. All Azure resources created during this tutorial are hosted under a single resource group `PipelinesKeyVaultResourceGroup`. Run the following command to delete the resource group and all of its resources.
 
-    ```aAzure CLI
+    ```Azure CLI
     az group delete --name PipelinesKeyVaultResourceGroup
     ```
 
