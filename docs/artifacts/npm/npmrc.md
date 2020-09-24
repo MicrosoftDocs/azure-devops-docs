@@ -84,7 +84,7 @@ You should have a project specific **_.npmrc_** containing only your feed's regi
 > [!IMPORTANT]
 > There can only be a single "registry=" line in your **_.npmrc_**.  Multiple registries are possible with [upstream sources](../concepts/upstream-sources.md), or by using [scopes](..//npm/scopes.md) (not recommended).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops"
 
 ### Windows
 
@@ -102,7 +102,23 @@ If you are developing on Linux or Mac, `vsts-npm-auth` is not supported and we r
 
 [!INCLUDE [npmrc.md](../includes/npm/npmrc.md)]
 
-`vsts-npm-auth` is not supported on TFS or Azure DevOps Server.
+`vsts-npm-auth` is not supported on on-premises TFS and Azure DevOps Server.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+To work with packages from Azure Artifacts, set up your project to reference this feed. Create a new text file `.npmrc` in the same directory as your `package.json` and copy the snippet below:
+
+```
+@[YOUR_SCOPE]/registry=FabrikamBasic/_packaging/FabrikamFeed/npm/registry/
+```
+
+To restore your packages, run the following command in your project directory:
+
+```cmd
+npm install
+``
 
 ::: moniker-end
 
