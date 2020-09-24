@@ -166,7 +166,7 @@ Job authorization scope can be set for each pipeline. To set this scope:
 
 :::moniker range="azure-devops"
 
-## Limit job authorization scope to referenced Azure DevOps repositories
+### Limit job authorization scope to referenced Azure DevOps repositories
 
 In addition to the job authorization scope settings described in the previous section, Azure Pipelines provides a **Limit job authorization scope to referenced Azure DevOps repositories** setting.
 
