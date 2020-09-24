@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 09/23/2020
+ms.date: 09/24/2020
 monikerRange: '>= tfs-2015'
 ---
 

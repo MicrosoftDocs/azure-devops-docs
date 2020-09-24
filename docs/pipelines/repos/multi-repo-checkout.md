@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 09/23/2020
+ms.date: 09/24/2020
 monikerRange: "> azure-devops-2019"
 ---
 
