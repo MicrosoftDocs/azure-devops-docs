@@ -166,7 +166,7 @@ Job authorization scope can be set for each pipeline. To set this scope:
 
 :::moniker range="azure-devops"
 
-### Limit job authorization scope to referenced Azure DevOps repositories
+## Limit job authorization scope to referenced Azure DevOps repositories
 
 In addition to the job authorization scope settings described in the previous section, Azure Pipelines provides a **Limit job authorization scope to referenced Azure DevOps repositories** setting.
 
@@ -196,7 +196,7 @@ The **project-scoped identity** name has the following format:
 - `{Project Name} Build Service ({Org Name})`
 - For example, if the organization name is `fabrikam-tailspin` and the project name is `SpaceGameWeb`, this account has the name `SpaceGameWeb Build Service (fabrikam-tailspin)`.
 
-By default, the collection-scoped identity is used, unless one of the **Limit job authorization scope** settings is enabled, as described in the previous section.
+By default, the collection-scoped identity is used, unless configured otherwise as described in the previous [Job athorization scope](#job-authorization-scope) section.
 
 ## Manage build service account permissions
 
