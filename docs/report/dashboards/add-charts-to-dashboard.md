@@ -131,7 +131,7 @@ Each time a build is run, it logs information about the build, including the run
 
 2. Build summary charts look like this:  
 
-	![Add a test plan chart to a dashboard](media/add-a-dashboard-build-summary.png)  
+	![Build summary chart.](media/add-a-dashboard-build-summary.png)  
 
 	Hover over a bar to view build information and run time. Choose a bar to go to the build summary page.   
 

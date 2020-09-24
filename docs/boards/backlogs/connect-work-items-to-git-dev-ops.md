@@ -102,7 +102,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 	> [!NOTE]  
 	> Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.  
 	 
-	![Pull Request page, Create pull request](media/git-dev-pr-complete.png)  
+	![Can't create a new pull request until you complete the previous pull request.](media/git-dev-pr-complete.png)  
 
 	Check the box for **Squash changes when merging** and then complete the merge. 
 
@@ -143,7 +143,7 @@ All items listed under the Development section also appear under the :::image ty
 
 To link a work item to an existing object, click the ![Add link](../media/icons/add-link-icon.png) Add links icon and then choose the link type.  
 
-![Select multiple items from backlog](media/add-work-items-link-to-existing-branch.png)
+![Select Add links icon and then choose the link type.](media/add-work-items-link-to-existing-branch.png)
 
 [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md).   
 
@@ -185,7 +185,7 @@ Keep in mind that the Development section only appears within the web portal wor
 
 With Git commits, any work items that have been linked to a commit will be listed under the Associated work items in the build summary page. 
 
-<img src="media/developer-associated-work-items-build.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />  
+<img src="media/developer-associated-work-items-build.png" alt="Linked work items listed under Associated work items in the build summary page." style="border: 1px solid #C3C3C3;" />  
 
 <!--- Add info about option to set build linking; link to release notes if needed --> 
 
