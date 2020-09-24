@@ -108,7 +108,7 @@ When the code you've written on your dev machine is ready, you can push your cha
 
 2. Go to the commits page (Keyboard: Ctrl + 0, C).
 
-   ![Push changes](media/share-your-code-in-git-vs/IC682976.png)
+   ![Go to the commits page.](media/share-your-code-in-git-vs/IC682976.png)
 
 3. Push your changes.
 

@@ -2,7 +2,7 @@
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Work item tracking artifact uri query | REST API Reference for Team Foundation Server
-description: REST APIs for Team Foundation Server.
+description: Learn how to get the work items referenced by artifactUri by using the REST APIs for Team Foundation Server.
 ms.assetid: 70F8A8F8-474C-4664-A26C-A5DC714E6242
 ms.topic: article
 ms.author: chcomley

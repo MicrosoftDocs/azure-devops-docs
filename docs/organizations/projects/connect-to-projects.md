@@ -188,7 +188,7 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 
 1. Select the projects to work on.
 
-   ![Connect to Team Foundation Server dialog box](media/connect-projects-tfs/IC671574.png)
+   ![Select the projects to work on.](media/connect-projects-tfs/IC671574.png)
 
    If it's your first time connecting, add TFS to the list of recognized servers.
 
@@ -217,7 +217,7 @@ Your client remembers the set of connections you've configured. You can switch f
 
 1. From **Connect**, choose the **Connect to a Project** link to sign in with different credentials.
 
-   ![connect to projects](media/te-connect-page-connect-to-project-vs2019.png)  
+   ![Sign in with different credentials.](media/te-connect-page-connect-to-project-vs2019.png)  
 
 1. Select a different user or select **Add an account** to access a project using different credentials.
 
@@ -234,7 +234,7 @@ Your client remembers the set of connections you've configured. You can switch f
 
 1. From **Connect**, choose **Connect to Team Project** to sign in with different credentials.
 
-   ![connect to projects](media/te-connect-page-connect-to-team-project.png)  
+   ![Sign in with different credentials.](media/te-connect-page-connect-to-team-project.png)  
 
 1. Select a different user from the drop-down or select **Add an account** to access a project using different credentials.
 
@@ -248,7 +248,7 @@ Your client remembers the set of connections you've configured. You can switch f
 
 1. From **Connect**, choose **Connect to Team Project** to sign in with different credentials.
 
-   ![connect to projects](media/te-connect-page-connect-to-team-project.png)  
+   ![Sign in with different credentials.](media/te-connect-page-connect-to-team-project.png)  
 
    The **Switch User** link appears only when you're actively connected to a project on Azure DevOps Services.  
 

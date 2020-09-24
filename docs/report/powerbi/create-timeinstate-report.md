@@ -233,7 +233,7 @@ You can create a trend chart of an average time in state across all work items t
 To demonstrate, the same visualization used above are updated to show an average across all work items. This representation can help build understanding of the amount of work in progress and how it impacts the overall time in state for the teams. This team has a pattern of committing to work that they aren't ready to start work on. (Note that the data for the following report is based on different data than the previous report.)
 
 > [!div class="mx-imgBorder"]  
-> ![Trend of the Average Time in State](media/AverageTimeInStateTrend.png)
+> ![Trend chart based on State Time in Days.](media/AverageTimeInStateTrend.png)
 
 
 ### Add *State Time in Days - Latest* (Is Last Day In State)
@@ -241,11 +241,11 @@ To demonstrate, the same visualization used above are updated to show an average
 When evaluating time-in-state for each work item in a table or when filtered by a field like *Area Path*, do not use the *State Time in Days* column in an aggregation. The aggregation will use the value for every day the work item was in the state. For example, if a work item was *In Progress* on Monday and moved to *Completed* on Thursday, the time-in-state is 3 days, but the sum of *State Time in Days* column is 6 days (1+2+3) which is clearly incorrect.
 
 > [!div class="mx-imgBorder"]  
-> ![Trend of the Average Time in State](media/StateTimeInDaysTable.png) 
+> ![Add State Time in Days - Latest.](media/StateTimeInDaysTable.png) 
 
 To resolve this issue, use *State Time in Days* and apply the filter *Is Last Day In State* equals 'True'. This eliminates all the historical data necessary for a trend and focuses instead on just the latest value for each state.
 
-<img src="media/StateTimeInDaysTableIsLast.png" alt="Trend of the Average Time in State" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/StateTimeInDaysTableIsLast.png" alt="Use State Time in Days and apply the filter Is Last Day In State equals 'True'." style="border: 1px solid #C3C3C3;" /> 
 
 ### Add *State Time in Days - In Progress*
 

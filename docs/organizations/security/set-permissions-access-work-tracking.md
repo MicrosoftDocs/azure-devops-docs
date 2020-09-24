@@ -125,7 +125,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 1. Choose the ... context menu for the node you want to manage and select **Security**.  
 
-    ![Open the security dialog](media/set-permissions-area-node-open.png)
+    ![In the context menu, select Security.](media/set-permissions-area-node-open.png)
 
 ::: moniker-end   
 
@@ -137,7 +137,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 1. Choose the context menu for the node you want to manage.  
 
-    ![Open the security dialog](../../reference/media/ALM_CW_OpenSecurityDialog.png)  
+    ![Choose the context menu for the node you want to manage.](../../reference/media/ALM_CW_OpenSecurityDialog.png)  
 
 2. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 

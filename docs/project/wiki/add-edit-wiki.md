@@ -160,7 +160,7 @@ To edit an existing Wiki page, open the page and select **Edit**, or open the co
 For code wikis, you can edit a page in the side-by-side editor, using the markdown toolbar to create your content. This experience is identical to the process in a project wiki. You can edit wiki pages in the Repos hub also by using the option, **Edit in Repos**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Create wiki and first page](media/wiki/edit-in-repos.png)
+> ![Edit wiki page.](media/wiki/edit-in-repos.png)
 
 > [!NOTE]  
 > If you have branch policies in your code wiki, use **Edit in Repos** to create a branch and continue editing.
