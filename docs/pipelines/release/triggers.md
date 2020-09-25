@@ -47,15 +47,12 @@ If you chose to enable pull-request triggers, a release will be created every ti
 
 ## Scheduled release triggers
 
-If you want to create and start a release at specific times, define one or more scheduled release triggers. Choose the schedule icon in the **Artifacts** section of your pipeline and enable scheduled release triggers. You can configure multiple schedules.
+Scheduled release trigger allow you to create new releases at specific times.
+
+Select the schedule icon under the **Artifacts** section. Toggle the Enabled/Disabled button and specify your release schedule. You can set up multiple schedules to trigger a release.
 
 > [!div class="mx-imgBorder"]
-> ![Defining a scheduled release trigger](media/trigger-04.png)
-
-> [!NOTE]
-> Automated release triggers for GitHub release is not supported currently.
-
-See also [stage scheduled triggers](#stage-scheduled-triggers).
+> ![Defining schedules to trigger releases](media/trigger-04.png)
 
 ::: moniker range="> tfs-2018"
 
