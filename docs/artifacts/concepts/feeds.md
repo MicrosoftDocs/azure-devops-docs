@@ -46,7 +46,7 @@ There some important things to note regarding public feeds:
 
 ## Restoring a deleted feed
 
-If you accidentally delete a feed, Azure Artifacts provides a 30 days window to recover your feed to its original state. After the 30 days, the feed will be deleted permanently. During the recovery window, the feed name will be reserved, package download unavailable and write access suspended for that feed.
+If you accidentally delete a feed, Azure Artifacts provides a 30 days window to recover your feed to its original state. After the 30 days, the feed will be deleted permanently. During the recovery window, the feed name will be reserved, package download unavailable, and write access suspended for that feed.
 
 You can view the feeds pending permanent deletion in your **Feeds** dropdown list under the **Deleted Feeds** tab.
 
@@ -67,12 +67,18 @@ You can view the feeds pending permanent deletion in your **Feeds** dropdown lis
 
 ## Permanently deleting a feed
 
-A feed pending deletion will still use storage space. If you want to permanently delete your feed before the pending period is up, you can do this in the pending feeds settings. 
+A feed pending deletion will still use storage space. If you want to permanently delete your feed before the 30 days period is up, you can do this from the deleted feeds settings. 
 
-1. In the feed pending deletion, click **Feed Settings**
+1. Under **Deleted feeds** select your feed.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Deleted feeds list](media/deleted-feeds-dropdown.png)
 
 2. Select **Permanently delete** and confirm the deletion
 
-Once the feed is permanently deleted, the feed and all of its packages cannot be viewed or restored. The feed name will be available for reuse fifteen minutes after permanent deletion.
+    > [!div class="mx-imgBorder"] 
+    > ![Permanently delete feed](media/permanently-delete-feed.png)
+
+Once the feed is permanently deleted, users won't be able to view or restore its packages. The feed name will be available for reuse 15 minutes after the deletion.
 
 ::: moniker-end
