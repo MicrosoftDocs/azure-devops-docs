@@ -1,8 +1,8 @@
 ---
-title: Release triggers for stages, branches, and pipelines
+title: Classic release triggers for stages, branches, and pipelines
 description: DevOps CI CD - Understand triggers in Azure Pipelines
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
-ms.topic: conceptual
+ms.topic: Tutorial
 ms.author: ronai
 author: RoopeshNair
 ms.custom: seodec18, contentperfq1
@@ -71,19 +71,16 @@ To use a pull request trigger, you must also enable it for specific stages. We w
 
 ## Stage triggers
 
-You can choose to have the deployment to each stage triggered automatically when a release is created by a continuous deployment trigger, based on:
-
-* **The result of deploying to a previous stage in the pipeline**.
-  Use this setting if you want the release to be first deployed and validated in another stage(s) before it is deployed to this stage.
-  Triggers are configured for each stage, but the combination of these allows you to orchestrate the overall deployment - such as the sequence in which automated deployments occur across all the stages in a release pipeline. For example, you can set up a linear pipeline where a release is deployed first to the **Test** and **QA** stages.
-  Then, if these two deployments succeed, it will be deployed to a **Staging** stage. In addition, you can configure the trigger to fire for partially succeeded (but not failed) deployments.
+Stage triggers allow you set up specific conditions to trigger deployment to a specific stage.
 
   > [!div class="mx-imgBorder"]
   > ![The stage trigger conditions settings](media/trigger-02a.png)
 
-* **Filters based on the artifacts**.
-  You can add one or more filters for each artifact linked to the release pipeline, and specify if you want to include or exclude particular branches of the code.
-  Deployment will be triggered to this stage only if all the artifact conditions are successfully met. Unlike [build branch filters](#release-triggers), variables _cannot_ be used in artifact filter conditions.
+* **Select trigger**.
+  Set the trigger that will start the deployment to this stage automatically. Select "Release" to deploy to the stage every time a new release is created. Use the "Stage" option to deploy after deployments to selected stages are successful. To allow only manual deployments, select "Manual"..
+
+* **Artifacts filter**.
+  Select artifact condition(s) to trigger a new deployment. A release will be deployed to this stage only if all artifact conditions are met.
 
   > [!div class="mx-imgBorder"]
   > ![The artifact filter trigger conditions settings](media/trigger-02b.png)
