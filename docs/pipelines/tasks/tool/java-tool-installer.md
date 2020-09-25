@@ -78,7 +78,7 @@ The file should be an archive (.zip, .gz) of the `JAVA_HOME` directory so that i
     cleanDestinationDirectory: false
 ```
 
-Here's an example of using "pre-installed" feature. This feature allows you to use Java versions that are pre-installed on the Microsoft-hosted agent. You can find available pre-installed versions of Java in [Software section](../../agents/hosted#software).
+Here's an example of using "pre-installed" feature. This feature allows you to use Java versions that are pre-installed on the Microsoft-hosted agent. You can find available pre-installed versions of Java in [Software section](../../agents/hosted.md#software).
 
 ```yaml
 - task: JavaToolInstaller@0
