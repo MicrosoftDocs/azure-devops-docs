@@ -674,9 +674,7 @@ The **Edit project-level information** permission is set through the [Security a
 for all projects defined in the organization or collection:
 
 - Edit the project description
-- Add and administer teams and all team-related features
-- Edit project level permission ACLs
-- Edit event subscriptions or alerts for teams or the project 
+- [Modify project services visibility](../settings/set-services.md)
  
 > [!NOTE]
 > The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the Project Administrators group. It isn't controlled by a permissions surfaced within the user interface. 
