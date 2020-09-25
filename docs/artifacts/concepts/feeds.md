@@ -12,9 +12,9 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-In Azure Artifacts, packages are stored in *feeds*. Feeds are an organizational construct that allow you to group packages and control who has access to them with [permissions](../feeds/feed-permissions.md).
+Artifacts Feeds are organizational constructs that allow you to store, manage and group your packages and control who to share it with using [feeds permissions](../feeds/feed-permissions.md).
 
-Feeds are not package type dependent. You can store every package type (npm, NuGet, Maven, Python, and Universal) in a single feed.
+Feeds are not package-type dependent. You can store all the following package types in a single feed: npm, NuGet, Maven, Python, and Universal packages. 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -49,7 +49,8 @@ If you accidentally delete a feed, Azure Artifacts gives you the opportunity to 
 
 You can view your feed's pending deletion in your **Feeds** dropdown under the **Deleted Feeds** sub header.
 
-![Go to Azure Artifacts](media/deleted-feeds-dropdown.png)
+> [!div class="mx-imgBorder"] 
+> ![Deleted feeds dropdown](media/deleted-feeds-dropdown.png)
 
 1. In the feed pending deletion, click **Feed Settings**
 
