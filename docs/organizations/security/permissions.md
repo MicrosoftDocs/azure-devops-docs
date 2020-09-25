@@ -721,9 +721,22 @@ For each project that you create, the system creates the followings project-leve
         </td>
     </tr>
     <tr>
-        <td>Project Administrators</td>
-        <td>Has permissions to administer all aspects of teams and project, although they can&#39;t create team projects.</td>
-        <td>Assign to users who manage user permissions, create or edit teams, modify team settings, define area an iteration path, or customize work item tracking.</td>
+        <td id="project-administrator-group">Project Administrators</td>
+        <td>Has permissions to administer all aspects of teams and project, although they can't create team projects.</td>
+        <td>Assign to users who manage user permissions, create or edit teams, modify team settings, define area an iteration path, or customize work item tracking.
+        <blockquote>
+<p>Members of the Project Administrators group are granted permissions to perform the following tasks: 
+<ul>
+                    <li>Add and remove users from project membership</li>
+                    <li>Add and remove custom security groups from a project</li>
+                    <li>Add and administer all project teams and team-related features</li>
+                    <li>Edit project level permission ACLs</li>
+                    <li>Edit <a href="#alerts">event subscriptions</a> (email or SOAP) for teams or project-level events.</li>
+</ul> 
+        </blockquote>
+
+
+</td>
     </tr>
     <tr>
         <td>Project Valid Users</td>
@@ -1489,6 +1502,9 @@ You manage project-level permissions through the [web portal admin context](set-
 
 You manage project-level permissions through the [web portal admin context](set-project-collection-level-permissions.md#project-level) or the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
 
+> [!NOTE]
+> Several permissions are granted to members of the [Project Administrators group<]("#project-administrator-group) and aren't surfaced within the user interface.  
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -1518,12 +1534,8 @@ You manage project-level permissions through the [web portal admin context](set-
                 </p>
                 <ul>
                     <li>Edit the project description</li>
-                    <li>Add and administer teams and all team-related features</li>
-                    <li>Edit project level permission ACLs</li>
-                    <li>Edit <a href="#alerts">event subscriptions</a> (email or SOAP) for teams or project-level events.</li>
-                    <li>When combined with the 'Change process of project' permission, allows users to change the Inheritance process for a project.</li>
+                    <li><a href="../settings/set-services.md">Modify project services visibility</a></li>
                 </ul>
-<p>The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the Project Administrators group. It isn't controlled by a permissions surfaced within the user interface.</p> 
             </blockquote>
         </td>
     </tr>
