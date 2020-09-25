@@ -1503,7 +1503,7 @@ You manage project-level permissions through the [web portal admin context](set-
 You manage project-level permissions through the [web portal admin context](set-project-collection-level-permissions.md#project-level) or the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions). Project Administrators are granted all project-level permissions. Other project-level groups have select permission assignments.
 
 > [!NOTE]
-> Several permissions are granted to members of the [Project Administrators group<]("#project-administrator-group) and aren't surfaced within the user interface.  
+> Several permissions are granted to members of the [Project Administrators group](#project-administrator-group) and aren't surfaced within the user interface.  
 
 ::: moniker-end
 
