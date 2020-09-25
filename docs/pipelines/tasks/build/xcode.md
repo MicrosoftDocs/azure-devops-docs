@@ -248,6 +248,11 @@ xcode
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
+
+## Using multiple provisioning profiles
+
+Currently there's no support of multiple provisioning profiles for Xcode task (for example for iOS App Extension)
+
 ## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
