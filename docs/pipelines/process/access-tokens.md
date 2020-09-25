@@ -144,7 +144,7 @@ To set job authorization scope for a specific pipeline:
 - Save the build pipeline.
 
 >[!IMPORTANT]
->If the scopes are not restricted at either the organization level or project level, then you are allowing the pipeline authors to determine the access they need to repositories. If an adversary is able to create or edit a pipeline in one project, he or she will be able to gain access to any repository in your organization. This is why, it is recommended that you restrict the scope at the highest level (organization settings) in order to contain the attack to a single project.
+>If the scopes are not restricted at either the organization level or project level, then you are allowing the pipeline authors to determine the access they need to repositories. If an adversary is able to create or edit a pipeline in one project, they will be able to gain access to any repository in your organization. This is why, it is recommended that you restrict the scope at the highest level (organization settings) in order to contain the attack to a single project.
 
 ::: moniker-end
 
