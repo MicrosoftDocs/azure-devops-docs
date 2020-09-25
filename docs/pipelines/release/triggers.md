@@ -5,7 +5,7 @@ ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.custom: seodec18
+ms.custom: seodec18, contentperfq1
 ms.date: 07/14/2020
 monikerRange: '>= tfs-2015'
 ---
@@ -23,8 +23,7 @@ monikerRange: '>= tfs-2015'
 > This topic covers classic release pipelines. To understand triggers in YAML pipelines, see [pipeline triggers](../build/triggers.md).
 ::: moniker-end
 
-You can configure when releases should be created, and when those releases should be deployed to stages, in your DevOps CI/CD processes.
-The former is configured through [release triggers](#release-triggers), and the latter through [stage triggers](#env-triggers) - both in a release pipeline.
+Release triggers are an automation tool to deploy your application. When the trigger conditions are met, the pipeline will deploy your artifacts to the environment/stages you already specified. 
 
 <a id="release-triggers"></a>
 
