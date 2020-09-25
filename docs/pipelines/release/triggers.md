@@ -29,24 +29,19 @@ Release triggers are an automation tool to deploy your application. When the tri
 
 ## Continuous deployment triggers
 
-If you specify [certain types of artifacts](artifacts.md#sources) in a release pipeline, you can enable continuous deployment.
-This instructs Azure Pipelines to create new releases automatically when it detects new artifacts are available. At present this option is available only for Team Foundation Build artifacts and Git-based sources such as Team Foundation Git, GitHub, and other Git repositories.
+Continuous deployment triggers allow you to create a release every time a new build artifact is available. This feature is currently available only to build from Azure DevOps, TFS and Git-based repositories.
 
 > [!div class="mx-imgBorder"]
 > ![Selecting a trigger for a release](media/trigger-01.png)
 
-If you have linked multiple Team Foundation Build artifacts to a release pipeline, you can configure continuous deployment for each of them.
-In other words, you can choose to have a release created automatically when a new build of any of those artifacts is produced.
+Build branch filters allow you to trigger a release only for a build that is from one of the branches selected here.
 
-You add build branch filters if you want to create the release only when the build is produced by compiling code from certain branches (only applicable when the code is in a TFVC, Git, or GitHub repository) or when the build has certain tags. These can be both include and exclude filters.
-For example, use **features/*** to include all builds under the **features** branch. You can also include [custom variables](variables.md) in a filter value.
+You also have the option to specify branch tags. If you do so, a release will be triggered only if a new build tagged with the keywords specified here, is available.
 
-Alternatively, you can specify a filter to use the default branch specified in the build pipeline. This is useful when, for example, the default build branch changes in every development sprint. It means you don't need to update the trigger filter across all release pipelines for every change - instead you just change the default branch in the build pipeline.
+If you chose to enable pull-request triggers, a release will be created every time a selected artifact is available as part of a pull request workflow.
 
 > [!NOTE]
-> Note that, even though a release is automatically created, it might not be deployed automatically to any stages. The [stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
-
-For information about the ID of the requester for CI triggers, see [How are the identity variables set?](../build/variables.md#how-are-the-identity-variables-set)
+> Automatically creating a release does not mean it will be automatically deployed to a stage. You must set up stages triggers to deploy your app to the various stages.
 
 <a id="scheduled-triggers"></a>
 
