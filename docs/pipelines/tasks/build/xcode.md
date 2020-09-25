@@ -232,7 +232,7 @@ xcode
    <tr>
       <td><code>testRunTitle</code><br/>Test run title</td>
       <td>
-         (Optional) If xcpretty and publishJUnitResults are enabled above, specify test run title.
+         (Optional) If xcpretty and publishJUnitResults are enabled above, you can specify test run title.
       </td>
    </tr>
    <tr>
