@@ -38,8 +38,6 @@ Build branch filters allow you to trigger a release only for a build that is fro
 
 You also have the option to specify branch tags. If you do so, a release will be triggered only if a new build tagged with the keywords specified here, is available.
 
-If you chose to enable pull-request triggers, a release will be created every time a selected artifact is available as part of a pull request workflow.
-
 > [!NOTE]
 > Automatically creating a release does not mean it will be automatically deployed to a stage. You must set up stages triggers to deploy your app to the various stages.
 
@@ -60,15 +58,12 @@ Select the schedule icon under the **Artifacts** section. Toggle the Enabled/Dis
 
 ## Pull request triggers
 
-You can configure a pull request trigger that will create a new release when a pull request uploads a new version of the artifact. Enable the trigger and add the branches targeted by pull requests that you want to activate this trigger. 
+If you chose to enable the pull-request triggers, a release will be created every time a selected artifact is available as part of a pull request workflow.
 
 > [!div class="mx-imgBorder"]
 > ![Configure a pull request trigger.](media/trigger-01a.png)
 
-However, to use a pull request trigger, you must also enable it for specific stages of the pipeline. Do this in the stage [triggers panel](#prtrigger) for the required stage(s). You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. For more information, see [Deploy pull request builds](deploy-pull-request-builds.md).
-
-> [!NOTE]
-> Note that, even though a release is automatically created, it might not be deployed automatically to any stages. The [stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
+To use a pull request trigger, you must also enable it for specific stages. We will go through stage triggers in the next section. You may also want to set up a [branch policies](../../repos/git/pr-status-policy.md) for your branches.
 
 ::: moniker-end
 
