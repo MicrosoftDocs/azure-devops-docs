@@ -35,7 +35,7 @@ There are two types of feeds: project scoped and organization scoped feeds. All 
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019 "
 
-Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade to TFS 2017 in order to use Azure Artifacts. If this is the first time using your feed, you might be asked to [assign a license](/azure/devops/artifacts/start-using-azure-artifacts?view=tfs-2018#assign-licenses-in-tfs)
+Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade to TFS 2017 in order to use Azure Artifacts. If this is the first time using your feed, you might be asked to [assign a license](/azure/devops/artifacts/start-using-azure-artifacts?view=tfs-2018#assign-licenses-in-tfs&preserve-view=true)
 
 1. Go to **Build & Release** and select **Packages**.
 
@@ -57,4 +57,4 @@ Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade
 
 ::: moniker-end
 
-You can change these settings later by [editing the feed](../feeds/edit-feed.md).
+See [Set feeds and views permissions ](../feeds/feed-permissions.md) to learn more about managing your feeds.
