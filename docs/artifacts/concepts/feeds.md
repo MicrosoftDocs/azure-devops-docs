@@ -4,7 +4,7 @@ description: Feeds manage and set permissions for packages in Azure DevOps Servi
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 09/25/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -38,6 +38,10 @@ There some important things to note regarding public feeds:
 * Public feeds aren't intended as a replacement for existing registries of record (NuGet.org, npmjs.com, etc.)
 * Public feeds can't have upstream sources
 * Public users cannot currently download universal packages. All other package protocol types are supported for public access.
+
+## Create a feed
+
+[!INCLUDE [](../includes/create-feed.md)]
 
 ## Restoring a deleted feed
 
