@@ -89,6 +89,8 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 ## Backlog configuration 
 
+[!INCLUDE [temp](../includes/note-add-backlog-board.md)]
+
 Each backlog is associated with a team. Team configuration settings determine the work items that will appear on the team backlog. Specifically, the team administrator defines the following for their team: 
 
 - Selects the Area Paths that are active for the team, only work items assigned to these area paths appear on the team's backlog  
