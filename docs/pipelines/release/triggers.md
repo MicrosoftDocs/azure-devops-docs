@@ -6,7 +6,7 @@ ms.topic: Tutorial
 ms.author: ronai
 author: RoopeshNair
 ms.custom: seodec18, contentperfq1
-ms.date: 07/14/2020
+ms.date: 09/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -123,32 +123,6 @@ Allow you to configure actions when multiple releases are queued for deployment.
 
 > [!NOTE]
 > **TFS 2015**: The following features are not available in TFS 2015 - continuous deployment triggers for multiple artifact sources, multiple scheduled triggers combining scheduled and continuous deployment triggers in the same pipeline, continuous deployment based on the branch or tag of a build.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
-
-### Parallel forked and joined deployments
-
-The **Triggering stage** list lets you select more than one stage. This allows you to configure parallel (_forked_ and _joined_) deployment pipelines where the deployment to a stage occurs only when deployment to **all** the selected stages succeeds.
-
-For example, the following schematic shows a pipeline where deployment occurs in parallel to the **QA** and **Pre-prod** stages after deployment to the **Dev** stage succeeds. However, deployment to the **Production** stage occurs only after successful deployment to both the **QA** and **Pre-prod** stages.
-
-> [!div class="mx-imgBorder"]
-> ![Configuring a parallel (forked and joined) deployment pipeline](media/trigger-03.png)
-
-In combination with the ability to define [pre- and post-deployment approvals](approvals/approvals.md), this capability enables the configuration of complex and fully managed deployment pipelines to suit almost any release scenario.  
-
-::: moniker-end
-
-Note that you can always deploy a release directly to any of the stages in your release pipeline by selecting the **Deploy** action when you create a new release. In this case, the stage triggers you configure, such as a trigger on successful deployment to another stage, do not apply. The deployment occurs irrespective of these settings.
-This gives you the ability to override the release pipeline. Performing such direct deployments requires the **Manage deployments** permission, which should
-only be given to selected and approved users.
-
-::: moniker range="tfs-2015"
-
-> [!NOTE]
-> **TFS 2015**: Parallel fork and joined deployments are not available in TFS 2015
 
 ::: moniker-end
 
