@@ -107,8 +107,17 @@ Select the users who can approve or reject deployments to this stage. By default
   > [!div class="mx-imgBorder"]
   > ![Pre-deployment approvals](media/pre-deployment-approval.png)
 
+* **Gates**:
+Allow you to set up specific gates to evaluate before the deployment.
 
-You can combine the automated settings to have deployments created automatically either when a new build is available or according to a schedule.
+  > [!div class="mx-imgBorder"]
+  > ![Gates set up](media/gates.png)
+
+* **Deployment queue settings**:
+Allow you to configure actions when multiple releases are queued for deployment.
+
+  > [!div class="mx-imgBorder"]
+  > ![deployment queue settings](media/deploy-queue.png)
 
 ::: moniker range="tfs-2015"
 
