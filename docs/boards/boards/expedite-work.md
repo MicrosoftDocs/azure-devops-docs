@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 03/15/2019
+ms.date: 09/24/2020
 ---
 
 # Expedite work with swimlanes
@@ -41,6 +41,9 @@ You can use swimlanes to sort work on your Kanban board to track items that you 
 ## Track work in swimlanes  
 
 Once you've set up your swimlanes, you can drag items into a swimlane as well as reorder them within the lane.  
+
+> [!TIP]  
+> When you have many swimlanes or cards on your board, you may encounter slow performance when dragging a card. We recommend that you use swimlanes in conjunction with card styles, tags, and board filters to manage your work items. If you have a lot of cards in the default lane, place that lane lower on the board to enhance performance when dragging a card to another swimlane.  
 
 ::: moniker range=">= tfs-2018"  
 
