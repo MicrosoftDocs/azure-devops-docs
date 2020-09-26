@@ -21,7 +21,7 @@ Your Kanban board supports your ability to visualize the flow of work as it move
 
 For example, you can create three swimlanes&mdash;Expedite, Standard, and Parked&mdash;to track high-priority work, standard work, and work that's currently blocked.  
 
-![Kanban board showing three swimlanes](media/ALM_EW_IntroChart_3C.png) 
+![Conceptual image of Kanban board showing three swimlanes](media/ALM_EW_IntroChart_3C.png) 
 
 > [!TIP]
 > Type **o** to expand all swimlanes and **u** to collapse all swimlanes. To move the focus up or down, enter the ↑↓ up/down arrows. For more tips, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
@@ -48,13 +48,13 @@ Once you've set up your swimlanes, you can drag items into a swimlane as well as
 ::: moniker range=">= tfs-2018"  
 
 > [!div class="mx-imgBorder"]
-> ![Kanban board, Drag items into a swimlane](media/expedite/swimlanes-move-item.png)  
+> ![Screenshot of Kanban board, Drag items into a swimlane. ](media/expedite/swimlanes-move-item.png)  
 
 ::: moniker-end   
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"  
 
-![Kanban board, Drag items into a swimlane](media/ALM_EW_MoveToNewLane.png) 
+![Screenshot of Kanban board, Drag items into a swimlane, TFS 2017 and earlier versions.](media/ALM_EW_MoveToNewLane.png) 
 
 ::: moniker-end   
 
@@ -63,13 +63,13 @@ You can also focus on a single swimlane by collapsing all other lanes.
 ::: moniker range=">= tfs-2018"  
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board, Collapsed swimlanes](media/expedite/collapse-lanes.png)  
+> ![Screenshot of Kanban board, Collapsed swimlanes.](media/expedite/collapse-lanes.png)  
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"  
 
-![Kanban board, Collapsed swimlanes](media/ALM_EW_CollapseLanes.png)
+![Screenshot of Kanban board, Collapsed swimlanes, TFS 2017 and earlier versions.](media/ALM_EW_CollapseLanes.png)
 
 ::: moniker-end   
 
@@ -88,7 +88,7 @@ Once you've identified one or two, add them to your Kanban board.
 1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
+	> ![Screenshot of gear icon to open board settings for a team.](../../organizations/settings/media/configure-team/open-board-settings.png)  
 
 2. Choose **Swimlanes** and then choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of the swimlane you want to add.  
 
@@ -118,7 +118,7 @@ Once you've identified one or two, add them to your Kanban board.
 
 2. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board. 
 
-	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
+	![Screenshot of Kanban board, open common configuration settings.](media/add-columns-open-settings-ts.png)  
 
 3. Choose **Swimlanes** and then choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of the swimlane you want to add.  
 
@@ -147,7 +147,7 @@ Once you've identified one or two, add them to your Kanban board.
 
 8. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board. 
 
-	![Kanban board, open common configuration settings](../../boards/boards/media/kanban-card-customize-open-settings.png) 
+	![Kanban board, open common configuration settings, TFS 2015 version.](../../boards/boards/media/kanban-card-customize-open-settings.png) 
 
 9. Choose **Swimlanes**, and then choose the :::image type="icon" source="../media/icons/add_icon.png" border="false"::: plus icon, and enter the name of the swimlane you want to add.       
 
