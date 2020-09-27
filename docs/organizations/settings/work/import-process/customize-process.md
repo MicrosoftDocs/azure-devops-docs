@@ -7,7 +7,7 @@ ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/16/2019
+ms.date: 09/25/2020
 ---
 
 # Customize a Hosted XML process
@@ -251,19 +251,13 @@ Identity fields correspond to fields used to contain account, user, or group nam
 * Authorized As (System.AuthorizedAs)
 * Changed By (System.ChangedBy)
 * Created By (System.CreatedBy)
-
-The following fields are considered identity fields only if an identity rule is applied to their **FIELD** definitions:
-
 * Activated By (Microsoft.VSTS.Common.ActivatedBy)
 * Closed By (Microsoft.VSTS.Common.ClosedBy)
 * Resolved By (Microsoft.VSTS.Common.ResolvedBy)
 
-##### Rules that cause a string field to be considered an identity field
+##### Add a custom identity field
 
-A string field is recognized as an identity field when you specify **VALIDUSER** with one of the following rule elements within its **FIELD** definition:
-
-* **ALLOWEDVALUES**
-* **PROHIBITEDVALUES**
+A string field is recognized as an identity field when you specify the attribute **syncnamechanges** as True.   
 
 ##### Rule restrictions on identity fields
 
