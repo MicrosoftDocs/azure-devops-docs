@@ -27,9 +27,8 @@ Use this task to install and update NuGet package dependencies, or package and p
 
 If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
 
-
 > [!TIP]
-> Looking for help to get started? See the how-tos for [restoring](../../../artifacts/nuget/consume.md) and [publishing](../../../artifacts/nuget/publish.md) packages.
+> Looking for help to get started? See how to [restore](../../../artifacts/nuget/consume.md) and [publish](../../../artifacts/nuget/publish.md) packages.
 > This version of the NuGet task uses NuGet 4.1.0 by default. To select a different version of NuGet, use the [Tool Installer](../tool/nuget.md).
 
 Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core-cli.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
@@ -96,7 +95,7 @@ For **byBuildNumber**, the version will be set to the build number, ensure that 
 
 ### Restore
 
-Restore all solutions. Packages are restored into a packages folder alongside solutions using currently selected feeds.
+Restore all your solutions with packages from a selected feed.
 
 ```YAML
 # Restore from a project scoped feed in the same organization
@@ -130,7 +129,7 @@ Restore all solutions. Packages are restored into a packages folder alongside so
 
 ### Package
 
-Package a your solution to your Artifact Staging directory
+Create a NuGet package in the destination folder.
 
 ```YAML
 # Package a project
@@ -144,7 +143,7 @@ Package a your solution to your Artifact Staging directory
 ### Push
 
 > [!NOTE]
-> Release pipelines download pipeline artifacts to `System.ArtifactsDirectory` so you can use the `$(System.ArtifactsDirectory)/**/*.nupkg` for the `packagesToPush` input in release pipelines.
+> Pipeline artifacts are downloaded to `System.ArtifactsDirectory` directory. `packagesToPush` value can be set to `$(System.ArtifactsDirectory)/**/*.nupkg` in your release pipeline.
 
 Push/Publish a package to a feed defined in your NuGet.config.
 
