@@ -72,7 +72,7 @@ You can select specific sets of virtual machines from the environment to receive
 ## Apply deployment strategy 
 
 You can apply a deployment strategy to define how your application is rolled out. The `runOnce` strategy and the `rolling` strategy for VMs are both supported.
-[Here](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops&preserve-view=true#deployment-strategies&preserve-view=true) is the reference documentation for deployment strategies and the details about various life-cycle hooks.
+[Here](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs#deployment-strategies&preserve-view=true) is the reference documentation for deployment strategies and the details about various life-cycle hooks.
 
 ## Deployment history views
 
