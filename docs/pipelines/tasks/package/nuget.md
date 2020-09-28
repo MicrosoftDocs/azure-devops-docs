@@ -145,44 +145,44 @@ Create a NuGet package in the destination folder.
 > [!NOTE]
 > Pipeline artifacts are downloaded to `System.ArtifactsDirectory` directory. `packagesToPush` value can be set to `$(System.ArtifactsDirectory)/**/*.nupkg` in your release pipeline.
 
-Push/Publish a package to a feed defined in your NuGet.config.
+* Push/Publish a package to a feed defined in your NuGet.config.
 
-```YAML
-# Push a project
-- task: NuGetCommand@2
-  inputs:
-    command: 'push'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg'
-    feedsToUse: 'config'
-    nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
-```
+    ```YAML
+    # Push a project
+    - task: NuGetCommand@2
+      inputs:
+        command: 'push'
+        packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg'
+        feedsToUse: 'config'
+        nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
+    ```
 
-Push/Publish a package to a feed in the same organization you define in the task
+* Push/Publish a package to a project scoped
 
-```YAML
-# Push a project
-- task: NuGetCommand@2
-  inputs:
-    command: 'push'
-    feedsToUse: 'select'
-    vstsFeed: 'my-project/my-project-scoped-feed'
-    publishVstsFeed: 'myTestFeed'
-```
+    ```YAML
+    # Push a project
+    - task: NuGetCommand@2
+      inputs:
+        command: 'push'
+        feedsToUse: 'select'
+        vstsFeed: 'my-project/my-project-scoped-feed'
+        publishVstsFeed: 'myTestFeed'
+    ```
 
-Push/Publish a package to NuGet.org
+* Push/Publish a package to NuGet.org
 
-```YAML
-# Push a project
-- task: NuGetCommand@2
-  inputs:
-    command: 'push'
-    feedsToUse: 'config'
-    includeNugetOrg: 'true'
-```
+    ```YAML
+    # Push a project
+    - task: NuGetCommand@2
+      inputs:
+        command: 'push'
+        feedsToUse: 'config'
+        includeNugetOrg: 'true'
+    ```
 
 ## Open source
 
-These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome. 
+Check out the Azure Pipelines and Team Foundation Server out-of-the-box tasks [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome. 
 
 ## FAQ
 
