@@ -250,17 +250,17 @@ You may want to label your source code files to enable your team to easily ident
 
 You can't currently configure this setting in YAML but you can in the classic editor. When editing a YAML pipeline, you can access the classic editor by choosing either **Triggers** from the YAML editor menu.
 
-![Git options](../media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+![Configure Git options, YAML.](../media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 From the classic editor, choose **YAML**, choose the **Get sources** task, and then configure the desired properties there.
 
-![Git options](../media/pipelines-options-for-git/yaml-pipeline-git-options.png)
+![From the Classic editor, choose YAML > Get sources.](../media/pipelines-options-for-git/yaml-pipeline-git-options.png)
 
 # [Classic](#tab/classic)
 
 You can configure the **Tag sources** setting from the properties of the **Get sources** task in your pipeline.
 
-![Git options](../media/github/github-options.png)
+![Configure Git options, Classic.](../media/github/github-options.png)
 
 ---
 
