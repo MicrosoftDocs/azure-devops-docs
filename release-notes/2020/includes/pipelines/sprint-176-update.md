@@ -6,10 +6,6 @@ ms.date: 10/01/2020
 ms.topic: include
 ---
 
-### Add a new auth scope for contributing PR comments
-
-This release adds a new OAuth scope for reading/writing pull request comments. If you have a bot or automation which only needs to interact with comments, you can give it a PAT with only this scope. This process reduces the blast radius if the automation has a bug or if the token were compromised.
-
 ### Configure draft PR validation for GitHub repos
 
 Customers have varied processes for their pull requests. In some cases, they want to run validation builds on their _draft PRs_. In others, they do not want draft PRs to consume and waste their parallel jobs.
