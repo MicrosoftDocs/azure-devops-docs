@@ -67,7 +67,7 @@ jobs:
 ```
 
 You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined.
-[Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#deployment-job&preserve-view=true) is the complete YAML schema for a deployment job.
+[Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema#deployment-job&preserve-view=true) is the complete YAML schema for a deployment job.
 
 ## Apply deployment strategy 
 

@@ -73,7 +73,7 @@ You can identify if the timeout is from portal, by checking for the portal deplo
 
 #### Azure Pipelines Agent
 
-If the issue is coming from Azure Pipelines agent, you can increase the timeout by setting timeoutInMinutes as key in the YAML to 0. Check out this article for more details: https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml.
+If the issue is coming from Azure Pipelines agent, you can increase the timeout by setting timeoutInMinutes as key in the YAML to 0. Check out this article for more details: https://docs.microsoft.com/azure/devops/pipelines/process/phases?tabs=yaml.
 
 #### Portal Deployment
 
