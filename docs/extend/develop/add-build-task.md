@@ -628,7 +628,7 @@ stages:
               extensionPricing: 'free'
 ```
 
-For more help with triggers, such as CI and PR triggers, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md?view=azure-devops).
+For more help with triggers, such as CI and PR triggers, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
 
 > [!NOTE]
 > Each job uses a new user agent and requires dependencies to be installed.

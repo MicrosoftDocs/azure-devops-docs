@@ -588,7 +588,7 @@ You can change the field name, the index, and the report attributes for any fiel
 
 - [Query quick reference](../queries/query-index-quick-ref.md)
 - [Work item field index](guidance/work-item-field.md) 
-- [Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019#choose-process-model)
+- [Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019&preserve-view=true#choose-process-model)
 - [Add or modify a field to track work](../../reference/add-modify-field.md)
 - [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md)
 
