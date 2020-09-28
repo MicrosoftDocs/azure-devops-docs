@@ -18,4 +18,4 @@ When deploying to an App Service with Application Insights configured and you ha
 
 ### How should I configure my agent if it is behind a proxy while deploying to App Service?
 
-When your self-hosted agent requires a web proxy, you can inform the agent about the proxy during configuration. This allows your agent to connect to Azure Pipelines or TFS through the proxy. Learn more about [running a self-hosted agent behind a web proxy](/azure/devops/pipelines/agents/proxy?view=azure-devops&tabs=windows)
+When your self-hosted agent requires a web proxy, you can inform the agent about the proxy during configuration. This allows your agent to connect to Azure Pipelines or TFS through the proxy. Learn more about [running a self-hosted agent behind a web proxy](/azure/devops/pipelines/agents/proxy?tabs=windows)

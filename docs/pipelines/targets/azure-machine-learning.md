@@ -104,7 +104,7 @@ You now have a pipeline that's ready to train your model!
 There are two primary ways to use automation with the Azure Machine Learning service:
 
 * The [Machine Learning CLI](/azure/machine-learning/service/reference-azure-machine-learning-cli) is an extension to the Azure CLI. It provides commands for working with the Azure Machine Learning service.
-* The [Azure Machine Learning SDK](/python/api/overview/azure/ml/intro?view=azure-ml-py) is Python package that provides programmatic access to the Azure Machine Learning service.
+* The [Azure Machine Learning SDK](/python/api/overview/azure/ml/intro?view=azure-ml-py&preserve-view=true) is Python package that provides programmatic access to the Azure Machine Learning service.
    * The Python SDK includes [automated machine learning](/azure/machine-learning/service/concept-automated-ml) to assist in automating the time consuming, iterative tasks of machine learning model development. 
 
 The example with this document uses the Machine Learning CLI.
@@ -125,7 +125,7 @@ In most cases, your data science team will provide the files and resources neede
 * __Deployment environment__ (`inferenceConfig.yml`): Defines the packages needed to run and score the model in the deployment environment.
 
 
-Some of these files are directly used when developing a model. For example, the `train.py` and `score.py` files. However the data scientist may be programmatically creating the run configuration and environment settings. If so, they can create the `.runconfig` and training environment files, by using [RunConfiguration.save()](https://docs.microsoft.com/python/api/azureml-core/azureml.core.runconfiguration?view=azure-ml-py#save-path-none--name-none--separate-environment-yaml-false-). Alternatively, default run configuration files will be created for all compute targets already in the workspace when running the following command.
+Some of these files are directly used when developing a model. For example, the `train.py` and `score.py` files. However the data scientist may be programmatically creating the run configuration and environment settings. If so, they can create the `.runconfig` and training environment files, by using [RunConfiguration.save()](https://docs.microsoft.com/python/api/azureml-core/azureml.core.runconfiguration?view=azure-ml-py&preserve-view=true#save-path-none--name-none--separate-environment-yaml-false-). Alternatively, default run configuration files will be created for all compute targets already in the workspace when running the following command.
 
 ```azure-cli
 az ml folder attach --experiment-name myexp -w myws -g mygroup
@@ -143,7 +143,7 @@ Depending on what "best" looks like for your scenario, you may need to create a 
 
 You should work with your data scientists to understand what metrics are important for your model.
 
-To log metrics during training, use the [Run](/python/api/azureml-core/azureml.core.run.run?view=azure-ml-py) class.
+To log metrics during training, use the [Run](/python/api/azureml-core/azureml.core.run.run?view=azure-ml-py&preserve-view=true) class.
 
 ## Azure CLI Deploy task
 
