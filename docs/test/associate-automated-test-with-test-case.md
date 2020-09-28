@@ -132,6 +132,6 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
 * [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
-* [Run automated tests with Microsoft Test Manager](https://docs.microsoft.com/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager?view=azure-devops&preserve-view=true)
+* [Run automated tests with Microsoft Test Manager](https://docs.microsoft.com/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

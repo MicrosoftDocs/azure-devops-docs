@@ -62,11 +62,11 @@ Follow the [Build, test, and push Docker container apps](../languages/docker.md)
 
 #### [Java](#tab/java)
 
-Set up a CI pipeline for [building an image](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image?view=azure-devops&preserve-view=true) and [pushing it to a container registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/push-image?view=azure-devops&preserve-view=true).
+Set up a CI pipeline for [building an image](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image) and [pushing it to a container registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/push-image).
 
 #### [Nodejs](#tab/nodejs)
 
-Set up a CI pipeline for [building an image](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image?view=azure-devops&preserve-view=true) and [pushing it to a container registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/push-image?view=azure-devops&preserve-view=true).
+Set up a CI pipeline for [building an image](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image) and [pushing it to a container registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/push-image).
 
 ::: moniker-end
 
