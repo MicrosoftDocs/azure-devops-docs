@@ -81,7 +81,7 @@ This example will extract all .zip files recursively, including both root files 
 steps:
 - task: ExtractFiles@1
   inputs:
-    archiveFilePatterns: '*/**.zip'
+    archiveFilePatterns: '**/*.zip'
     cleanDestinationFolder: true
 ```
 
