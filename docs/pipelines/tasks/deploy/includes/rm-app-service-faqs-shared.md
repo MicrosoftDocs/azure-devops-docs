@@ -10,7 +10,7 @@ ms.author: ninallam
 
 ### How should I configure my service connection?
 
-This task requires an [Azure Resource Manager service connection](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops).
+This task requires an [Azure Resource Manager service connection](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops&preserve-view=true).
 
 ### How should I configure Web Job Deployment with [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview)?
 
