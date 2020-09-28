@@ -179,7 +179,18 @@ Create a NuGet package in the destination folder.
         feedsToUse: 'config'
         includeNugetOrg: 'true'
     ```
+### Custom
 
+Run any other NuGet command besides the default ones: pack, push and restore.
+
+```YAML
+# list local NuGet resources.
+- task: NuGetCommand@2
+  displayName: 'list locals'
+  inputs:
+    command: custom
+    arguments: 'nuget locals all -list'
+```
 ## Open source
 
 Check out the Azure Pipelines and Team Foundation Server out-of-the-box tasks [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome. 
