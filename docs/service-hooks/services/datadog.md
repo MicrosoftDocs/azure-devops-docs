@@ -1,13 +1,13 @@
 ---
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Create a service hook for Azure DevOps Services and TFS with Datadog
+title: Create a service hook for Azure DevOps Services and Azure DevOps Server with Datadog.
 description: Use Datadog with your Azure DevOps Services organization
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/27/2020
+ms.date: 09/29/2020
 ---
 # Create a service hook for Azure DevOps with Datadog 
 
@@ -22,6 +22,8 @@ Create events and metrics in Datadog in response to events from Azure DevOps. Us
 3. Create a new key or select an existing one, and then copy the key to your clipboard. 
 
 ## Start sending DevOps events to Datadog
+
+::: moniker range=" azure-devops"
 
 1. Go to **Project settings > Service hooks**: `https://{orgName}/{project_name}/_settings/serviceHooks`.
 
@@ -41,6 +43,17 @@ Create events and metrics in Datadog in response to events from Azure DevOps. Us
 5. Indicate whether your Datadog account is US or EU.
 
    ![Indicate whether your Datadog account is US or EU](../media/datadog-US-or-EU.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+1. Go to **Project settings > Service hooks**: `https://{orgName}/{project_name}/_settings/serviceHooks`.
+
+2. Select **Create subscription**.
+3. .........
+
+::: moniker-end
 
 7.	Test the service hook subscription and finish the wizard.
 8.	Repeat steps 2-5 for each event type you want to send to Datadog. Datadog accepts and encourages users to send all event types.
