@@ -113,7 +113,7 @@ Once you have your Event Grid stream configured you can set up subscriptions on 
 
 7. Enter the workspace ID and primary key, and then select **Set up**. The primary key is stored securely within Azure DevOps and never displayed again in the UI. We recommend rotating the key regularly, which you can do by getting a new key from Azure Monitor Log and editing the stream.
 
-   :::image type="content" source="media/auditing-streaming/create-stream-azure-monitor-logs.png" alt-text="Enter workspace ID and primary key to create":::
+   :::image type="content" source="media/auditing-streaming/create-stream-azure-monitor-logs.png" alt-text="Enter workspace ID and primary key and then select Set up.":::
 
 The stream is enabled and new events begin to flow within minutes. 
 

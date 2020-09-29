@@ -54,7 +54,7 @@ When you combine a feature flag with an experiment, led by a hypothesis, you int
 >
 > **For** {user} **who** {action} **the** {solution} **is a** {how} **that** {value} **unlike** {competition} **we** {do better}
 
-![Feature Flag](./media/phase-features-with-ff/phase-features-with-ff-ab-test.png)
+![Feature Flag with AB testing.](./media/phase-features-with-ff/phase-features-with-ff-ab-test.png)
 
 As shown, the email feature (option A) is more popular with your users and wins.
 
@@ -85,13 +85,13 @@ You have probably guessed it - feature flags!
 
 You would like to include hidden features in your release and enable them for **all** users in production. For example, you want to be able to collect verbose logging data for troubleshooting. Using a feature flag, you can enable and disable verbose logging as needed.
 
-![Feature Flag](./media/phase-features-with-ff/phase-features-with-ff-all-or-nothing.png)
+![Feature Flag for everyone.](./media/phase-features-with-ff/phase-features-with-ff-all-or-nothing.png)
 
 ### Enable or disable a feature for selected users
 
 With this scenario, you can target specific users or groups of users. For example, you could enable the verbose logging feature for a specific user experiencing a problem or enable a preview feature for early adopters.
 
-![Feature Flag](./media/phase-features-with-ff/phase-features-with-ff-user-group.png)
+![Feature Flag for selected users.](./media/phase-features-with-ff/phase-features-with-ff-user-group.png)
 
 ### Enable | disable a feature as selected by user
 

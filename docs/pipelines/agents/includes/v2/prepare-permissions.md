@@ -43,11 +43,11 @@ Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#
 
 2. From your home page, open your profile. Go to your security details.
 
-   ![test](/azure/devops/repos/git/media/my-profile-team-services.png)
+   ![Go to your security details.](/azure/devops/repos/git/media/my-profile-team-services.png)
 
 3. [Create a personal access token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate).
 
-   ![test](/azure/devops/repos/git/media/add-personal-access-token.png)
+   ![Create a personal access token.](/azure/devops/repos/git/media/add-personal-access-token.png)
 
 4. For the scope select **Agent Pools (read, manage)** and make sure all the other boxes are cleared.
    If it's a [deployment group](/azure/devops/pipelines/release/deployment-groups/index) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.

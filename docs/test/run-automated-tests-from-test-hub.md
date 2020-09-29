@@ -247,7 +247,7 @@ Enter the following values in the Run with options dialog and then choose **OK**
  
 * **Release Stage**: Select the name of the stage configured in your release pipeline.<p />
 
-![Configuring the Run with options dialog](media/run-auto-tests-from-hub-09a.png)
+![Configured Run with options dialog.](media/run-auto-tests-from-hub-09a.png)
 
 ### Q: Why use release stages to run tests? 
 

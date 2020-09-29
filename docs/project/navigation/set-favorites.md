@@ -151,7 +151,7 @@ Or, you can favorite a project from the **Projects** page by choosing the ![favo
 2. The **Mine** page shows your favorited dashboards, and all dashboards of teams that you belong to. The **All** page (shown below) lists all dashboards defined for the project in alphabetical order. You can filter the list by team or by keyword.   
  
 	> [!div class="mx-imgBorder"]  
-	> ![Dashboards, Browse all dashboards option](../../report/dashboards/media/dashboards/all-dashboards-list.png)  
+	> ![The All page lists all dashboards.](../../report/dashboards/media/dashboards/all-dashboards-list.png)  
 
 	> [!TIP]
 	> You can change the sort order of the list by choosing the column label.  
@@ -159,7 +159,7 @@ Or, you can favorite a project from the **Projects** page by choosing the ![favo
 3. To favorite a dashboard, hover over the dashboard and choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Dashboards, Browse all dashboards option](../../report/dashboards/media/dashboards/favorite-dashboard.png)  
+	> ![Favorite a dashboard.](../../report/dashboards/media/dashboards/favorite-dashboard.png)  
 
 	Favoriting a dashboard will cause it to appear on your **Favorites** page and towards the top in the **Dashboards** selection menu.
    

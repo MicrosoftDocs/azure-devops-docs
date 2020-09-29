@@ -218,9 +218,21 @@ xcode
       </td>
    </tr>
    <tr>
+      <td><code>xcprettyArgs</code><br/>Arguments for xcpretty</td>
+      <td>
+         (Optional) If xcpretty is enabled above, specify arguments for xcpretty. See <a href="https://github.com/supermarin/xcpretty" data-raw-source="[xcpretty](https://github.com/supermarin/xcpretty)">xcpretty</a> on GitHub for a list of xcpretty arguments.
+      </td>
+   </tr>
+   <tr>
       <td><code>publishJUnitResults</code><br/>Publish test results to Azure Pipelines/TFS</td>
       <td>
          (Optional) If xcpretty is enabled above, specify whether to publish JUnit test results to Azure Pipelines/TFS. <br/>Default value: false
+      </td>
+   </tr>
+   <tr>
+      <td><code>testRunTitle</code><br/>Test run title</td>
+      <td>
+         (Optional) If xcpretty and publishJUnitResults are enabled above, you can specify test run title.
       </td>
    </tr>
    <tr>
@@ -235,6 +247,11 @@ xcode
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
+
+
+## Using multiple provisioning profiles
+
+Currently there's no support of multiple provisioning profiles for Xcode task (for example for iOS App Extension)
 
 ## FAQ
 <!-- BEGINSECTION class="md-qanda" -->

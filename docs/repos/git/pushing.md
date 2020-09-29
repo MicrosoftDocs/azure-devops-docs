@@ -39,7 +39,7 @@ In this tutorial you learn how to:
 
    You can also go to **Synchronization** from the **Changes** view by choosing **Sync** immediately after making a commit.
 
-   ![Synchronization](media/gitquickstart-vs2017/commit-created-locally.png)
+   ![Go to Synchronization from the Changes view immediately after making a commit.](media/gitquickstart-vs2017/commit-created-locally.png)
 
 1. Select **Push** to share your commit with the remote repository.
 

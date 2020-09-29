@@ -99,7 +99,7 @@ We recommend setting this option to **True** at the global level. Valid settings
 Requires Visual Studio 2017 Update 5 and later.
 1. In Team Explorer, go to **Settings**. Go to **Global Settings** and set **Prune remote branches during fetch** to **True** (recommended). Select **Update** to save.
 
-    ![Go to Team Explorer Settings](media/git-config/fetch-prune.png)
+    ![Go to Team Explorer Settings, Visual Studio.](media/git-config/fetch-prune.png)
 
 #### [Command Line](#tab/command-line/)
 To prune branches on every `fetch`, open a command prompt, and run:
@@ -126,7 +126,7 @@ Requires Visual Studio 2017 Update 5 and later.
 
 2. Set **Rebase local branch when pulling** to the desired setting, and select **Update** to save.
 
-    ![Go to Team Explorer Settings](media/git-config/pull-rebase.png)
+    ![Rebase local branch when pulling.](media/git-config/pull-rebase.png)
 
 Note that it is not possible to configure `pull.rebase` to **Interactive** in Visual Studio. Visual Studio does not have interactive rebase support.
 To configure `pull.rebase` to use interactive mode, use the command line.
@@ -175,7 +175,7 @@ The **Ignore & attributes files** section is available at repository scope and a
 ### Diff & merge Tools
 Git will show diffs and merge conflicts in your preferred tools. The settings in this section correspond to the `git config` [diff.tool](https://git-scm.com/docs/git-config#git-config-difftool) and [merge.tool](https://git-scm.com/docs/git-config#git-config-mergetool) settings. You can configure Git to use Visual Studio as your merge or diff tool in **Global Settings** and **Repository Settings** by selecting **Use Visual Studio**. To configure other diff and merge tools, use `git config` with the [diff.tool](https://git-scm.com/docs/git-config#git-config-difftool) or [merge.tool](https://git-scm.com/docs/git-config#git-config-mergetool) switch.
 
-![Go to Team Explorer Settings](media/git-config/diff-merge-tools.png)
+![Diff and merge tools.](media/git-config/diff-merge-tools.png)
 
 
 

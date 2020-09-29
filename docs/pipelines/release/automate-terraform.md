@@ -171,7 +171,7 @@ Now that the application has been built, it's time to release it. However, no de
 
 1. Select the **Replace tokens** task. If you recall the **webapp.tf** file reviewed earlier, there were several resources that were unknown at the time and marked with token placeholders, such as **__terraformstorageaccount__**. This task replaces those tokens with variable values relevant to the deployment, including those from the pipeline's **Variables**. You may review those under **Variables** if you like, but return to **Tasks** afterwards.
 
-    ![Configuring the CD agent](media/automate-terraform/cd-variables.png)
+    ![Select the Replace tokens task.](media/automate-terraform/cd-variables.png)
 
 1. Select the **Install Terraform** task. This installs and configures the specified version of Terraform on the agent for the remaining tasks.
 
@@ -217,11 +217,11 @@ Now that the application has been built, it's time to release it. However, no de
 
 1. Once the release has completed, select the **Azure App Service Deploy** task.
 
-    ![Tracking the release](media/automate-terraform/completed-pipeline.png)
+    ![Select the Azure App Service Deploy task.](media/automate-terraform/completed-pipeline.png)
 
 1. Copy the name of the app service from the task title. Note that the name you see will vary slightly.
 
-    ![Tracking the release](media/automate-terraform/app-service-name.png)
+    ![Copy the name of the app service from the task title.](media/automate-terraform/app-service-name.png)
 
 1. Open a new browser tab and navigate to the app service. The domain format is **[app service name].azurewebsites.net**, so the final URL will be something like:
  
@@ -229,7 +229,7 @@ Now that the application has been built, it's time to release it. However, no de
     https://pulterraformweb99ac17bf.azurewebsites.net.
     ```
 
-    ![Tracking the release](media/automate-terraform/deployed-app.png)
+    ![Open a new browser tab and navigate to the app service.](media/automate-terraform/deployed-app.png)
 
 ## Summary
 

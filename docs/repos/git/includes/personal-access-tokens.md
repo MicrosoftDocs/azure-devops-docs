@@ -258,7 +258,7 @@ You can regenerate or extend a PAT, and modify its [scope](~/integrate/get-start
 
 1. From your home page, open your user settings, and then select **Profile**.
 
-   ![My profile Team Services](~/repos/git/media/my-profile-team-services-preview.png)
+   ![My profile Team Services, Preview page, modify a PAT.](~/repos/git/media/my-profile-team-services-preview.png)
 
 2. Under Security, select **Personal access tokens**. Select the token for which you want to modify, and then select **Edit**.
 
@@ -295,7 +295,7 @@ You can revoke a PAT at any time, for various reasons.
 
 1. From your home page, open your user settings, and then select **Profile**.
 
-   ![My profile Team Services](~/repos/git/media/my-profile-team-services-preview.png)
+   ![My profile Team Services, Preview page, revoke a PAT.](~/repos/git/media/my-profile-team-services-preview.png)
 
 2. Under Security, select **Personal access tokens**. Select the token for which you want to revoke access, and then select **Revoke**.
 
