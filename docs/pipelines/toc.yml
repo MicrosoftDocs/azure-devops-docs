@@ -454,7 +454,7 @@
   - name: Set retention policies
     href: policies/retention.md
     displayName: service endpoints
-  - name: Paying for parallel jobs
+  - name: Configure and pay for parallel jobs
     href: licensing/concurrent-jobs.md
   - name: Pipeline permissions and security roles
     href: policies/permissions.md
