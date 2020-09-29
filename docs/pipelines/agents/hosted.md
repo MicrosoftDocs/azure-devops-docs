@@ -14,10 +14,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="< azure-devops"
 
-> [!IMPORTANT]
-> Microsoft-hosted agents are only available with Azure DevOps Services, which is hosted in the cloud. You cannot use Microsoft-hosted agents or the Azure Pipelines agent pool with on-premises TFS or Azure DevOps Server. With these on-premises versions, you must use [self-hosted agents](agents.md).
-
-To view Microsoft-hosted agents content, select **Azure DevOps Services** from the documentation version selector.
+Microsoft-hosted agents are only available with Azure DevOps Services, which is hosted in the cloud. You cannot use Microsoft-hosted agents or the Azure Pipelines agent pool with on-premises TFS or Azure DevOps Server. With these on-premises versions, you must use [self-hosted agents](agents.md).
 
 [!INCLUDE [include](../../includes/version-selector.md)]
 
