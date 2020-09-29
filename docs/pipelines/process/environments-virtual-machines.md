@@ -67,12 +67,12 @@ jobs:
 ```
 
 You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined.
-[Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#deployment-job&preserve-view=true) is the complete YAML schema for a deployment job.
+[Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema#deployment-job&preserve-view=true) is the complete YAML schema for a deployment job.
 
 ## Apply deployment strategy 
 
 You can apply a deployment strategy to define how your application is rolled out. The `runOnce` strategy and the `rolling` strategy for VMs are both supported.
-[Here](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops#deployment-strategies&preserve-view=true) is the reference documentation for deployment strategies and the details about various life-cycle hooks.
+[Here](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs#deployment-strategies&preserve-view=true) is the reference documentation for deployment strategies and the details about various life-cycle hooks.
 
 ## Deployment history views
 

@@ -21,7 +21,7 @@ All the above challenges have been evolved seamlessly with the introduction of t
 A deployment group installs a deployment agent on each of the target servers in the configured group and instructs the release pipeline to gradually deploy the application to those servers. Multiple pipelines can be created for the roll-out deployments so that the latest version of an application can be delivered in a phased manner to multiple user groups for validation of newly introduced features.
 
 > [!NOTE]
-> Deployment groups are a concept used in Classic pipelines. If you are using YAML pipelines, see [Environments](/azure/devops/pipelines/process/environments?view=azure-devops).
+> Deployment groups are a concept used in Classic pipelines. If you are using YAML pipelines, see [Environments](/azure/devops/pipelines/process/environments).
 
 In this tutorial, you learn about:
 

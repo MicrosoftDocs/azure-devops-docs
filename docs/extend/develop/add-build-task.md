@@ -496,11 +496,11 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 
 ### Prerequisites
 
-- A project in your organization. If you need to create one, see [Create a project](../../organizations/projects/create-project.md?view=azure-devops&tabs=preview-page).
+- A project in your organization. If you need to create one, see [Create a project](../../organizations/projects/create-project.md?tabs=preview-page).
 - An [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
 
 
-You must first create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How use a variable group](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=yaml#use-a-variable-group).
+You must first create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How use a variable group](../../pipelines/library/variable-groups.md?tabs=yaml#use-a-variable-group).
 
 Declare the following variables in the variable group:
 - `publisherId`: ID of your marketplace publisher.
@@ -508,13 +508,13 @@ Declare the following variables in the variable group:
 - `extensionName`: Name of your extension, as declared in the vss-extension.json file.
 - `artifactName`: Name of the artifact being created for the VSIX file.
 
-Create a new Visual Studio Marketplace service connection and grant access permissions for all pipelines. For more information about creating a service connection, see [Service connections](../../pipelines/library/service-endpoints.md?view=azure-devops&tabs=yaml).
+Create a new Visual Studio Marketplace service connection and grant access permissions for all pipelines. For more information about creating a service connection, see [Service connections](../../pipelines/library/service-endpoints.md?tabs=yaml).
 
 ![Screenshot that shows the new service connection pane.](media/new-service-connection.png)
 
 ![Screenshot that shows the Visual Studio Marketplace new service connection pane.](media/new-vs-marketplace-service-connection.png)
 
-Use the following example to create a new pipeline with YAML. Learn more about how to [Create your first pipeline](../../pipelines/create-first-pipeline.md?view=azure-devops&tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](../../pipelines/yaml-schema.md?view=azure-devops&tabs=schema%2Cparameter-schema).
+Use the following example to create a new pipeline with YAML. Learn more about how to [Create your first pipeline](../../pipelines/create-first-pipeline.md?tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](../../pipelines/yaml-schema.md?tabs=schema%2Cparameter-schema).
 
 ```yaml
 trigger: 
@@ -628,7 +628,7 @@ stages:
               extensionPricing: 'free'
 ```
 
-For more help with triggers, such as CI and PR triggers, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md?view=azure-devops).
+For more help with triggers, such as CI and PR triggers, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md).
 
 > [!NOTE]
 > Each job uses a new user agent and requires dependencies to be installed.

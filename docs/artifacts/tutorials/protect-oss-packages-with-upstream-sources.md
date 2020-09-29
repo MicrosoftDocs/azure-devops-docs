@@ -134,7 +134,7 @@ After you've got the feed URL, create a new text file named `.npmrc` in the root
 
 #### [NuGet](#tab/nuget/)
 
-1. Go to your feed [or create a feed if you haven't](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops&tabs=new-nav#create-a-feed). 
+1. Go to your feed [or create a feed if you haven't](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?tabs=new-nav#create-a-feed). 
 
 2. Select **Connect to feed**:
 

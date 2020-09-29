@@ -79,7 +79,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>useGlobalConfig</code><br/>Use global Azure CLI configuration</td>
-    <td>(Optional) If this is false, this task will use its own separate <a href= "https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-file">Azure CLI configuration directory</a>. This can be used to run Azure CLI tasks in <b>parallel</b> releases" <br/>Default value: false</td>
+    <td>(Optional) If this is false, this task will use its own separate <a href= "https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&preserve-view=true#cli-configuration-file">Azure CLI configuration directory</a>. This can be used to run Azure CLI tasks in <b>parallel</b> releases" <br/>Default value: false</td>
 </tr>
 <tr>
     <td><code>workingDirectory</code><br/>Working Directory</td>

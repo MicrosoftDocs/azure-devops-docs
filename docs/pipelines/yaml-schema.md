@@ -1134,7 +1134,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from a pipeline resource by using a `download` task. See the [download](/azure/devops/pipelines/yaml-schema?view=azure-devops#download) keyword.
+You can consume artifacts from a pipeline resource by using a `download` task. See the [download](/azure/devops/pipelines/yaml-schema#download) keyword.
 
 ### Container resource
 
@@ -2191,7 +2191,7 @@ Syntax highlighting is available for the pipeline schema via a Visual Studio Cod
 You can [download Visual Studio Code](https://code.visualstudio.com), [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and [check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).
 The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.
 
-You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](https://docs.microsoft.com/rest/api/azure/devops/distributedtask/yamlschema/get?view=azure-devops-rest-5.1).
+You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](https://docs.microsoft.com/rest/api/azure/devops/distributedtask/yamlschema/get?view=azure-devops-rest-5.1&preserve-view=true).
 
 <!-- For people who get here by searching for, say, "azure pipelines template YAML schema", 
      look around a bit, and then type "Ctrl-F JSON" when they don't see anything promising
