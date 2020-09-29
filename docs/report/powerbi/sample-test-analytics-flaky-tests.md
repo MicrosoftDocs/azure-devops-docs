@@ -207,7 +207,7 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column **FlakyRate** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/flaky-tests-changetype1.png)
+    > ![Change the type of column FlakyRate to Decimal Number.](media/odata-powerbi-test-analytics/flaky-tests-changetype1.png)
 
 
 ### Rename fields and query, then Close & Apply

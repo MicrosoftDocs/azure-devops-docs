@@ -115,8 +115,7 @@ The second and third groups support restricting state transitions. These two gro
    :::column-end:::
    :::column span="2":::
       > [!div class="mx-imgBorder"]  
-      > ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
-   :::column-end:::
+      > ![Actions, restrict a transaction based on State.]
 :::row-end:::
 ---  
 :::row:::  
@@ -131,7 +130,7 @@ The second and third groups support restricting state transitions. These two gro
    :::column-end:::
    :::column span="2":::
       > [!div class="mx-imgBorder"]  
-      > ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
+      > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-restrict-transition-to-state.png)
    :::column-end:::
 :::row-end:::
 --- 

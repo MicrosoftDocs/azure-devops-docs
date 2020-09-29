@@ -112,7 +112,7 @@ You can customize Kanban boards to display intermediate columns. For each column
    Rename each column and choose the correct state for each column so that the column-to-state mapping is correct. As needed, add one or more columns. When done, choose **Save and close**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Open team Kanban board](media/scrum-to-agile/column-settings-fixed.png)
+   > ![Kanban board fixed.](media/scrum-to-agile/column-settings-fixed.png)
 
 
 ## Update work items
@@ -155,7 +155,7 @@ Your next step is to bulk update work items. The recommended sequence is:
    This should result in an updated list without errors.
 
    > [!div class="mx-imgBorder"]  
-   > ![Error state of changed work item type](media/scrum-to-agile/mismatch-items-fixed.png)
+   > ![Updated list without errors.](media/scrum-to-agile/mismatch-items-fixed.png)
 
 6. To save your changes, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Save items**.
 

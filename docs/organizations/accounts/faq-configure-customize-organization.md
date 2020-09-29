@@ -109,7 +109,7 @@ A: Some features require you to install an extension, which might be available f
 
 A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-![Create your organization](media/sign-up-visual-studio-team-services/my-info-organization-list.png)
+![Create another organization.](media/sign-up-visual-studio-team-services/my-info-organization-list.png)
 
 <a name="another-team-project"></a>
 

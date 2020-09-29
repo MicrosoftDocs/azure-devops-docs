@@ -1,7 +1,7 @@
 ---
 title: Extension Statistics Power BI Content pack  | Visual Studio Marketplace
 titleSuffix: Visual Studio Marketplace
-description: Get started using Power BI to analyze data collected for your extension on Visual Studio Marketplace 
+description: Get started using the Extension Statistics Power BI content pack from Visual Studio Marketplace to analyze data collected for your extension.
 ms.technology: devops-marketplace
 ms.assetid: 435be0b3-ec45-41dd-a804-03b9342fa7cc
 ms.author: chcomley
@@ -36,8 +36,8 @@ The content pack has a complete analytic data model, (tables, relationships, and
 
 5. Search for Marketplace and select the Visual Studio Marketplace Extension Statistics and **Get it now**.
 
-    ![connector](media/search.png)
-    ![connector](media/content-pack-details.png)
+    ![Search for Marketplace and select the Visual Studio Marketplace Extension Statistics.](media/search.png)
+    ![View content pack details.](media/content-pack-details.png)
 
 6. Enter the Marketplace publisher ID that you want data for, and then select **Next**.
 

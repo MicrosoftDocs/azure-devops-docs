@@ -89,7 +89,7 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 2. Choose the repository, branch, and folder that contain the Markdown files and name the wiki repository. The Git repo must be within the team project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create wiki, publish existing repo Markdown files](media/wiki/publish-wiki-options.png)
+	> ![Name the wiki repository.](media/wiki/publish-wiki-options.png)
 
 	Specify the root of the repository when you want to publish all Markdown files in the repository to your wiki.  
 
