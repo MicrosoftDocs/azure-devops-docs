@@ -39,7 +39,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
     > [!div class="mx-imgBorder"]  
     > ![Open Work, Sprints, for a team](media/add-tasks/open-sprint-backlog-s155-co.png)
 
-   To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+   To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose another team](media/add-tasks/team-selector-sprints-agile.png)  
@@ -59,7 +59,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 1. ![Open Work, Sprints, for a team](media/add-tasks/open-sprints-backlog-agile.png)
 
-   To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+   To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose another team](media/add-tasks/team-selector-sprints-agile.png)  

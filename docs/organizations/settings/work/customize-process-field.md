@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 07/17/2020
+ms.date: 09/17/2020
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -119,7 +119,7 @@ You can add a new field and define a pick list or customize the pick list of an 
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press **Enter** to add another item. 
 
-	![Add a custom picklist](media/process/add-a-field-pick-list-up1.png)  
+	![Add a field to Bug dialog, Add a custom picklist.](media/process/add-a-field-pick-list-up1.png)  
 
 	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../media/icons/delete_icon.png) delete icon.  
 
@@ -127,7 +127,7 @@ You can add a new field and define a pick list or customize the pick list of an 
 	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Priority field, Definition tab dialog](media/field/edit-priority-picklist.png)   
+	> ![Edit field Priority in User STory dialog, Definition tab.](media/field/edit-priority-picklist.png)   
 	
 	::: moniker-end
 
@@ -151,7 +151,7 @@ Use an Identity-based field to add a field similar to the Assigned To field. Ide
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then the field name, Identity type, and optionally a description. 
 
-	![Add a custom picklist](media/process/cpfield-identity.png)  
+	![Add a field to Bug dialog, Definition tab, Add an Identity field.](media/process/cpfield-identity.png)  
 
 1. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (Layout tab). 
  
@@ -215,6 +215,48 @@ Here, we relabel the Customer Ticket field to Ticket Number.
  
 ![Layout tab, Relabel a field](media/process/cpfield-relabel-customer-ticket.png) 
 
+
+<a id="modify-description" />
+
+## Modify Description help text  
+
+::: moniker range="azure-devops"
+
+Description help text displays when users hover over a field in the work item form. You can define different help text for the same fields for different work item types. Modification is supported for both custom fields and inherited fields. Note that the implementation differs based on the field type. 
+- **For inherited fields**: Description help text can be defined differently for each work item type and process.   
+- **For custom fields**: Description help text appears the same for the field across all work item types and all processes. 
+
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+Description help text displays when users hover over a field in the work item form. You can only modify modify the description help text on a custom field. That help text propagates to all work item types and all processes. You can't customize the help text by process or work item type.
+
+::: moniker-end
+
+To modify the **Description** help text, choose the work item type you want to modify, choose **Edit** for the field and choose the **Definition** tab. The modified value only affects that field in the process and for that work item type. 
+
+::: moniker range="azure-devops"
+
+Here we modify the Story Points field for User Story. 
+
+> [!div class="mx-imgBorder"]  
+> ![Edit field dialog, User Story, Story Points field.](media/custom-field/edit-field-dialog-definition-description-help-text.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+Here we modify the custom Published field for User Story. 
+
+> [!div class="mx-imgBorder"]  
+> ![Edit field dialog, User Story, Published custom field.](media/custom-field/edit-field-dialog-definition-description-help-text-custom-field.png)
+
+
+::: moniker-end
+
+
 <a id="show-hide-remove-field">  </a>
 
 ## Show, hide, or remove a field   
@@ -242,7 +284,7 @@ You can choose to show or hide an inherited field or a custom control from appea
 
 
 ::: moniker range=">= azure-devops-2020"
-### Hide an field or custom control
+### Hide a field or custom control
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2019"
@@ -284,7 +326,7 @@ You may discard changes you made to an inherited field. From the **Layout** page
 
 ## Delete a field  
 
-Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update?view=azure-devops-rest-6.0). 
+Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update). 
 
 1. You delete the field from the **All processes>Fields** page.  
 
@@ -312,10 +354,10 @@ If you're working with test plans or test cases, see these articles:
 - [Create a test plan](../../../manual-test/getting-started/create-a-test-plan.md)  
 - [Create manual test cases](../../../manual-test/getting-started/create-test-cases.md)   
 
- 
 
 <!--- 
 Commenting this out as it is in the process of changing 
+
 ### Custom field names 
 
 The reference name for any new field you add is prefixed with the name of the inherited process for which it was created. For example, if you add Custom 1 field to MyAgile process, the reference name  is `MyAgile.Custom1`. If you add Custom 2 field to MyAgile-Copy process, the reference name assigned to it is `MyAgile-Copy.Custom2`. 

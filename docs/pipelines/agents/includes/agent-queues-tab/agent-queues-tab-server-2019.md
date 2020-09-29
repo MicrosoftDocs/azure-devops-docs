@@ -9,5 +9,5 @@ ms.date: 02/12/2020
 
 Navigate to your project and choose **Project settings**, **Agent pools**.
 
-![Project settings, Agent pools](../../media/agent-queues-tab/agent-queues-2019.png)
+![Navigate to your project and choose Project settings, Agent pools (2019).](../../media/agent-queues-tab/agent-queues-2019.png)
 

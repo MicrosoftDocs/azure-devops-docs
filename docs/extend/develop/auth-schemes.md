@@ -7,17 +7,15 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 03/02/2016
+ms.date: 09/10/2020
 ---
 
 # Service endpoint authentication schemes
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-For Azure DevOps and TFS to be able to connect to the external service, in addition to using the credentials, there's also need to know how to 
-set the credentials in the HTTP request header when calling the external endpoint. Azure DevOps  supports a closed set of authentication schemes 
-that can be utilized by a custom service endpoint type. This set is closed so that Azure DevOps would be able to interpret the authentication scheme used 
-in any custom endpoint & support connecting to the external service.
+Learn how to set the credentials in the HTTP request header when you're calling the external endpoint. Azure DevOps and TFS can then connect to the external service using the credentials. Azure DevOps supports a closed set of authentication schemes 
+that can be utilized by a custom service endpoint type. Azure DevOps interprets the authentication scheme that's used in any custom endpoint & support connection to the external service.
 
 See the following authentication schemes that are part of the closed set.
 
@@ -25,7 +23,7 @@ See the following authentication schemes that are part of the closed set.
 
 ## Basic authentication
 
-This scheme takes 2 inputs - Username & Password (confidential)
+This scheme takes two inputs - Username & Password (confidential)
 
 Default authentication header used is: "Basic {{ #base64 endpoint.username \":\" endpoint.password }}"
 
@@ -81,9 +79,9 @@ Default authentication header used is: "Basic {{ #base64 endpoint.username \":\"
 }
 ```
 
-## Token based authentication
+## Token-based authentication
 
-This scheme takes 1 input - API Token (confidential)
+This scheme takes one input - API Token (confidential)
 
 Default authentication header used is: {{endpoint.apitoken}}
 
@@ -127,9 +125,9 @@ Default authentication header used is: {{endpoint.apitoken}}
 }
 ```
 
-## Certificate based authentication
+## Certificate-based authentication
 
-This scheme takes 1 input - Certificate (confidential)
+This scheme takes one input - Certificate (confidential)
 
 The value of certificate has to be provided in the text area.
 
@@ -168,13 +166,13 @@ The value of certificate has to be provided in the text area.
 
 ## No authentication
 
-This scheme is used when an endpoint type doesn't require to take any input. For e.g. external services that support anonymous access to its resources.
+This scheme is used when an endpoint type doesn't require to take any input. For example, external services that support anonymous access to its resources.
 
 ```json
 {
     "id": "endpoint-auth-scheme-none",
     "description": "i18n:Creates an endpoint authentication scheme with no authentication.",
-    "type": "ms.vss-endpoint.service-endpoint-auth-scheme-none",
+    "type": "ms.vss-endpoint.endpoint-auth-scheme-none",
     "targets": [
         "ms.vss-endpoint.endpoint-auth-schemes"
     ],

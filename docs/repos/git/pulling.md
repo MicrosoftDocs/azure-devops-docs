@@ -53,7 +53,7 @@ Changes downloaded by `fetch` aren't applied until you **Pull** or **Sync** the 
 
 1. In **Synchronization**, select **Fetch** to update the incoming commits list.
 
-   ![Fetch](media/pulling/fetch.png)
+   ![Screenshot that shows selecting Fetch.](media/pulling/fetch.png)
 
    There are two **Fetch** links, one near the top and one in the **Incoming Commits** section. You can use either one.
 
@@ -95,11 +95,11 @@ Team Explorer merges when you do a **Pull** or a **Sync** from the **Changes** v
 
 1. In Team Explorer, select the **Home** button and choose **Sync**.
 
-   ![Synchronization view](media/pulling/synchronization-menu.png)
+   ![Synchronization view, Visual Studio.](media/pulling/synchronization-menu.png)
 
 1. In **Synchronization**, select **Sync**.
 
-   ![Synchronization view](media/pulling/sync.png)
+   ![In Synchronization, select Sync.](media/pulling/sync.png)
 
 1. Review the confirmation message when the sync operation completes.
 
@@ -136,11 +136,11 @@ updates files in your open project, so make sure to [commit your changes](commit
 
 1. In Team Explorer, select the **Home** button and choose **Sync**.
 
-   ![Synchronization view](media/pulling/synchronization-menu.png)
+   ![Synchronization view in Team Explorer.](media/pulling/synchronization-menu.png)
 
 1. In **Synchronization**, choose **Pull** to fetch remote changes and merge them into your local branch.
 
-   ![Pull](media/pulling/pull.png)
+   ![Screenshot that shows choosing Pull.](media/pulling/pull.png)
 
    There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either one.
 

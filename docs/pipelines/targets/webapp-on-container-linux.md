@@ -62,11 +62,11 @@ Follow the [Build, test, and push Docker container apps](../languages/docker.md)
 
 #### [Java](#tab/java)
 
-Set up a CI pipeline for [building an image](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image?view=azure-devops) and [pushing it to a container registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/push-image?view=azure-devops).
+Set up a CI pipeline for [building an image](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image) and [pushing it to a container registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/push-image).
 
 #### [Nodejs](#tab/nodejs)
 
-Set up a CI pipeline for [building an image](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image?view=azure-devops) and [pushing it to a container registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/push-image?view=azure-devops).
+Set up a CI pipeline for [building an image](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image) and [pushing it to a container registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/push-image).
 
 ::: moniker-end
 
@@ -170,7 +170,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to **Container settings** from the web app and update the **Image source, Registry** and save.
 
-![container-settings](media/webapp-linux/container-settings.png)
+![Screenshot showing Update image source and Registry in container settings.](media/webapp-linux/container-settings.png)
 
 ## Deploy with Azure Web App for Container
 
@@ -184,7 +184,7 @@ To deploy to an Azure Web App container, add the following snippet at the end of
 
 ```yaml
 trigger:
-- master
+- main
 
 variables:
   # Container registry service connection established during pipeline creation

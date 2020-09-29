@@ -845,7 +845,7 @@ a number of tasks to your task catalog:
   special tokens in any configuration file with the
   required environment-specific values at release time.
 
-  ![Inline Powershell script](media/rm-archived/release-notes-12.png)
+  ![The Tokenization task.](media/rm-archived/release-notes-12.png)
 
 * The **Rollback** task that checks whether any of
   the previous tasks in the environment have failed,

@@ -53,7 +53,7 @@ Choose the package from **Azure Artifacts** select the appropriate option from t
 Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
 > [!div class="mx-imgBorder"]
-> ![Unpublish npm package Azure DevOps Services](../media/delete/deprecate-unpublish-npm-package.png)
+> ![Choose the package and select the appropriate option.](../media/delete/deprecate-unpublish-npm-package.png)
 
 ::: moniker-end
 

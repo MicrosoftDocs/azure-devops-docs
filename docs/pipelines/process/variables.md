@@ -528,6 +528,7 @@ In YAML, you can access variables across jobs by using [dependencies](expression
 Some tasks define output variables, which you can consume in downstream steps within the same job.
 ::: moniker-end
 
+
 #### [YAML](#tab/yaml/)
 
 For these examples, assume we have a task called `MyTask`, which sets an output variable called `MyVar`.
@@ -558,9 +559,9 @@ jobs:
   steps:
   - script: echo $(varFromA) # this step uses the mapped-in variable
 ```
+::: moniker range=">=azure-devops-2020"
 
 ### Use outputs in a different stage
-(Azure DevOps 2020 and above only)
 
 To use the output from a different stage at the job level, you use the `stageDependencies` syntax.
 
@@ -581,24 +582,7 @@ stages:
     - script: echo $(varFromA) # this step uses the mapped-in variable
 ```
 
-To use the output at a stage level, you use the `dependencies` syntax.
-
-```yaml
-stages:
-- stage: One
-  jobs:
-  - job: A
-    steps:
-     - task: MyTask@1
-       name: ProduceVar
-
-- stage: Two
-  condition: and(succeeded(), eq(dependencies.One.outputs['A.ProduceVar.MyVar'], 'true'))
-  jobs:
-  - job: B
-    steps:
-    - script: echo hello from Stage B
-```
+::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -705,11 +689,13 @@ steps:
 
 If you want to make a variable available to future jobs, you must mark it as
 an output variable by using `isOutput=true`. Then you can map it into future jobs by using the `$[]` syntax and including the step name that set the variable. Multi-job output variables only work for jobs in the same stage. 
+
+To pass variables to jobs in different stages, use the [stage dependencies](expressions.md#dependencies) syntax. 
+
 When you create a multi-job output variable, you should assign the expression to a variable. In this YAML, `$[ dependencies.A.outputs['setvarStep.myOutputVar'] ]` is assigned to the variable `$(myVarFromJobA)`. 
 
 ```yaml
 jobs:
-
 # Set an output variable from job A
 - job: A
   pool:
@@ -731,6 +717,27 @@ jobs:
   steps:
   - script: echo $(myVarFromJobA)
     name: echovar
+```
+
+If you're setting a variable from one stage to another, use `stageDependencies`. 
+
+```yaml
+stages:
+- stage: A
+  jobs:
+  - job: A1
+    steps:
+     - bash: echo "##vso[task.setvariable variable=myStageOutputVar;isOutput=true]this is a stage output var"
+       name: printvar
+
+- stage: B
+  dependsOn: A
+  variables:
+    myVarfromStageA: $[ stageDependencies.A.A1.outputs['printvar.myStageOutputVar'] ]
+  jobs:
+  - job: B1
+    steps:
+    - script: echo $(myVarfromStageA)
 ```
 
 If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)

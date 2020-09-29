@@ -80,12 +80,12 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 1. Choose the **Verification** tab and then the **Verify view** button. 
 
  	> [!div class="mx-imgBorder"]  
-	> ![Analytics>All, Edit the Stories -Last 30 days view](media/create-report/verify-view.png)  
+	> ![Choose the Verification tab and then the Verify view button.](media/create-report/verify-view.png)  
 
 	Wait until the verification process completes. Verification time varies according to the amount of data defined in your view. For example, a view that includes all work item types and specifies "All history", will take more time to verify than a view that includes only stories and specifies a rolling period of 30 days.
 
  	> [!div class="mx-imgBorder"]  
-	> ![Analytics>All, Edit the Stories -Last 30 days view](media/create-report/verified-view.png)  
+	> ![Wait until the verification process completes.](media/create-report/verified-view.png)  
 
 2. If your view successfully verifies, then proceed to the next step. If it is unsuccessful, click the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
 

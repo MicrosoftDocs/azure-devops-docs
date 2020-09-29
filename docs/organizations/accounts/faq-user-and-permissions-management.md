@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
-In this article, learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. FAQs are grouped by the following subjects:
+Learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. FAQs are grouped by the following subjects:
 - [General permissions](#general-permissions)
 - [Visual Studio subscriptions](#visual-studio-subscriptions)
 - [User access](#user-access)
@@ -190,7 +190,7 @@ A: To remove yourself from an organization, do the following steps:
 
 3. Confirm that you want to **Leave** the organization.
 
-    ![confirm-removal-from-organization.png](media/faq/confirm-removal-from-organization.png)
+    ![Screenshot showing confirmation for leaving the organization.](media/faq/confirm-removal-from-organization.png)
 
 <a name="group-based-licensing"></a>
 

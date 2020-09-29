@@ -7,4 +7,4 @@ ms.topic: include
 Upstream sources are now available for Maven feeds. This includes the primary Maven Central repository and Azure Artifacts feeds. To add Maven upstreams to an existing feed, visit **Feed settings**, select the **Upstream sources pivot**, then select **Add upstream source**.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/149_01.png)
+> ![Upstream sources for Maven.](../../media/149_01.png)

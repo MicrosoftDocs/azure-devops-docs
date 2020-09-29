@@ -134,7 +134,7 @@ After you've got the feed URL, create a new text file named `.npmrc` in the root
 
 #### [NuGet](#tab/nuget/)
 
-1. Go to your feed [or create a feed if you haven't](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops&tabs=new-nav#create-a-feed). 
+1. Go to your feed [or create a feed if you haven't](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?tabs=new-nav#create-a-feed). 
 
 2. Select **Connect to feed**:
 
@@ -150,7 +150,7 @@ After you've got the feed URL, create a new text file named `.npmrc` in the root
 4. Copy the XML snippet under **Project Setup** to your clipboard.
 
    > [!div class="mx-imgBorder"] 
-   >![Connect to feed button on the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
+   >![Copy the XML snippet under Project Setup to your clipboard.](../media/connect-to-feed-azure-devops-newnav.png)
    >
 
 5. Create a new file named `nuget.config` in the root of your project.
