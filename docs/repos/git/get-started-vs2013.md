@@ -174,7 +174,7 @@ Now you can add reviewers to get their feedback on your changes before you merge
 * [Set up TFS on a server](/azure/devops/server/install/get-started).
 * [Create a project](../../organizations/projects/create-project.md).  Be sure to select **Git** from the version control options:
 
-	![Select Git from the Version Control menu](media/get-started/CreateProjGitPCW.png)
+	![Select Git from the Version Control menu for TFS.](media/get-started/CreateProjGitPCW.png)
 
 [//]: # (Update with a real screenshot)
 

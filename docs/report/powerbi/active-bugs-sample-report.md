@@ -178,7 +178,7 @@ Need help connecting? See [Connect with Power BI Data Connector](data-connector-
 2. Click the context menu icon next to the **Work Item Id** field and change it from **Count** to **Count (Distinct)**.
 
    > [!div class="mx-imgBorder"]
-   > ![Select work item field](media/active-bugs-report/choose-count-distinct.png)
+   > ![Change Work Item Id field from Count to Count (Distinct).](media/active-bugs-report/choose-count-distinct.png)
 
 3. Next, (1) select the **Date** field in the fields list as your axis. To see a daily trend, (2) click the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
 
@@ -236,7 +236,7 @@ Need help connecting? See [Connect with Power BI Data Connector](data-connector-
 2. To publish your report to Power BI, choose the **Publish** tab. For additional information, see [Collaborate in your Power BI app workspace](/power-bi/service-collaborate-power-bi-workspace).
 
     > [!div class="mx-imgBorder"]
-    > ![Latest active bug count](media/active-bugs-report/publish-powerbi.png)
+    > ![Choose the Publish tab.](media/active-bugs-report/publish-powerbi.png)
 
 ## Continue to explore your data
 

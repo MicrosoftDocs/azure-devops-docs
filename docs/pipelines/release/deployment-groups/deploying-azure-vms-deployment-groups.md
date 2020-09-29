@@ -2,8 +2,6 @@
 title: Deploying to Azure VMs using deployment groups in Azure Pipelines
 description: DevOps CI CD - Deploy to Azure VMs using deployment groups in Azure Pipelines
 ms.topic: tutorial
-ms.author: v-edkaim
-author: edkaim
 ms.date: 05/26/2020
 monikerRange: '>= tfs-2018'
 ---
@@ -23,7 +21,7 @@ All the above challenges have been evolved seamlessly with the introduction of t
 A deployment group installs a deployment agent on each of the target servers in the configured group and instructs the release pipeline to gradually deploy the application to those servers. Multiple pipelines can be created for the roll-out deployments so that the latest version of an application can be delivered in a phased manner to multiple user groups for validation of newly introduced features.
 
 > [!NOTE]
-> Deployment groups are a concept used in Classic pipelines. If you are using YAML pipelines, see [Environments](/azure/devops/pipelines/process/environments?view=azure-devops).
+> Deployment groups are a concept used in Classic pipelines. If you are using YAML pipelines, see [Environments](/azure/devops/pipelines/process/environments).
 
 In this tutorial, you learn about:
 
@@ -49,7 +47,7 @@ The following resources are provisioned on the Azure using an ARM template:
 
 1. Click the **Deploy to Azure** button below to initiate resource provisioning. Provide all the necessary information and select **Purchase**. You may use any combination of allowed administrative usernames and passwords as they are not used again in this tutorial. The **Env Prefix Name** is prefixed to all of the resource names in order to ensure that those resources are generated with globally unique names. Try to use something personal or random, but if you see a naming conflict error during validation or creation, try changing this parameter and running again.
 
-    [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Falmvm%2Fmaster%2Flabs%2Fvstsextend%2Fdeploymentgroups%2Farmtemplate%2Fazurewebsqldeploy.json)
+    [![Deploy to Azure button.](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Falmvm%2Fmaster%2Flabs%2Fvstsextend%2Fdeploymentgroups%2Farmtemplate%2Fazurewebsqldeploy.json)
 
     ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/deploy-azure.png)
 
@@ -58,11 +56,11 @@ The following resources are provisioned on the Azure using an ARM template:
 
 1. Once the deployment completes, you can review all of the resources generated in the specified resource group using the Azure portal. Select the DB server VM with **sqlSrv** in its name to view its details.
 
-    ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/resource-group.png)
+    ![Resource group deploy to Azure.](media/deploying-azure-vms-deployment-groups/resource-group.png)
 
 1. Make a note of the **DNS name**. This value is required in a later step. You can use the copy button to copy it to the clipboard.
 
-    ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/sql-dns.png)
+    ![SQL DNS deploy to Azure.](media/deploying-azure-vms-deployment-groups/sql-dns.png)
 
 ## Creating and configuring a deployment group
 

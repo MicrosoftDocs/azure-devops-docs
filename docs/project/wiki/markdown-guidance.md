@@ -388,8 +388,8 @@ Ordered lists start with a number followed by a period for each list item. Unord
 **Example:**  
 ```markdown
 1. First item.
-2. Second item.
-3. Third item.
+1. Second item.
+1. Third item.
 ```
 
 **Result:**  
@@ -605,7 +605,7 @@ You can Use `[ ]` or `[x]` to support checklists. Precede the checklist with eit
 After you've added a task list, you can check the boxes to mark items as completed. These actions are expressed and stored within the comment as [ ] and [x] in Markdown.
 
 > [!div class="mx-imgBorder"]  
-> ![Apply Markdown task list format to a highlighted list in a PR](media/markdown-guidance/checklist-pr-applied-check.png)
+> ![Check the boxes to mark items as completed.](media/markdown-guidance/checklist-pr-applied-check.png)
 
 **Example - Format a list as a task list**
 
@@ -868,7 +868,7 @@ $$
 
 **Result:**
 > [!div class="mx-imgBorder"]
-> ![Greek letters](media/markdown-guidance/mathematical-notation-sums-integrals.png)
+> ![Sums and Integrals.](media/markdown-guidance/mathematical-notation-sums-integrals.png)
 
 ::: moniker-end
 

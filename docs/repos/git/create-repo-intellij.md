@@ -110,7 +110,7 @@ Now that we've got a Git repo with some sample code, let's take a look at how we
    Choose the correct repo, **DeepSpace**, and click the **Clone** button.
    (You may also want to choose where on your hard drive the repo is cloned to by changing the Parent Directory.)
 
-   ![Clone](media/create-repo-intellij/clone.png)
+   ![Screenshot that shows cloning a repo.](media/create-repo-intellij/clone.png)
 
 4. After the clone finishes, IntelliJ will ask you if you want to open the project.
    Click **Yes** and you should end up with the **DeepSpace** project opened in IntelliJ IDEA.

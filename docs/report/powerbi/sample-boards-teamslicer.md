@@ -90,17 +90,17 @@ The following table describes each part of the query.
 1. Choose the expand button.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding team column](media/odatapowerbi-expandteam.png)
+    > ![Choose the expand button.](media/odatapowerbi-expandteam.png)
 
 1. Select the fields to flatten.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding team column](media/odatapowerbi-expandteam2.png)
+    > ![Select the fields to flatten.](media/odatapowerbi-expandteam2.png)
 
 1. Table will now contain entity field(s).
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding team column](media/odatapowerbi-expandteam3.png)
+    > ![Table will now contain entity field(s).](media/odatapowerbi-expandteam3.png)
 
 [!INCLUDE [temp](includes/sample-finish-query.md)]
 
@@ -113,7 +113,7 @@ After selecting Close & Apply, and returning to Power BI, follow these steps:
 1. Create a relationship between your Report query and the Teams query. It is likely that Power BI will auto-detect and create the relationship for you. Here is an example of a relationship between the query in the [Open Bugs](sample-boards-openbugs.md) report and the Teams query:
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-timeslicer-relationships.png)
+    > ![Example of relationship between queries.](media/odatapowerbi-timeslicer-relationships.png)
     
 ## Add the Team Filter to an existing report
 
@@ -123,7 +123,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Power BI + OData - expanding an entity column](media/odatapowerbi-timeslicer-fields.png)
+> ![The example assumes that no one renamed any columns.](media/odatapowerbi-timeslicer-fields.png)
 
 To add a team filter to the Power BI report, follow these steps:
 

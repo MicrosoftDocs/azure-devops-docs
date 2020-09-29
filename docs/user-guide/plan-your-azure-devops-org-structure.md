@@ -138,7 +138,7 @@ Consider the specific strategic work scoped to one of the organizations you crea
 
 Configure your project by visiting its URL and select the **Project settings** button at the lower left of the page.
 
-![open-project-settings-vert-brn.png](../media/settings/open-project-settings-vert-brn.png)
+![Screenshot showing the Project settings button.](../media/settings/open-project-settings-vert-brn.png)
 
 To learn more about managing projects, see [Manage projects in Azure DevOps](../organizations/projects/index.md). You can move a project to a different organization by migrating the data. To learn more about migrating your project, see [Migration options](../migrate/migrate-from-tfs.md).
 
@@ -175,7 +175,7 @@ Forks can be useful when you're working with vendor teams that shouldn't have di
 
 The following image displays a sample of how "your company" could structure its organizations, projects, work items, teams, and repos.
 
-![azure-devops-org_project_team_visual.png](media/azure-devops-org_project_team_visual.png)
+![Diagram showing organizational structure for a company.](media/azure-devops-org_project_team_visual.png)
 
 ## More about organizational structure
 

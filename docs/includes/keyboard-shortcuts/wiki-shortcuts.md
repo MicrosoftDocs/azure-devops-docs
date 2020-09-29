@@ -31,8 +31,8 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
       &nbsp;&nbsp;&nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new page  
       &nbsp;&nbsp;&nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit page  
       &nbsp;&nbsp;&nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create new sub-page  
-      **Ctrl+**![Down arrow"](/azure/devops/boards/media/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page down the order  
-      **Ctrl+**![Up arrow](/azure/devops/boards/media/icons/Arrow_Up.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page up the order  
+      **Ctrl+↓**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page down the order  
+      **Ctrl+↑**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page up the order  
       **Ctrl+P**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print page  
       **Ctrl+Shift+b**&nbsp;&nbsp;Create work item from selected text    
    :::column-end:::
@@ -68,8 +68,8 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
       &nbsp;&nbsp;&nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new page  
       &nbsp;&nbsp;&nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit page  
       &nbsp;&nbsp;&nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new sub-page  
-      **Ctrl+**<img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page up the order  
-      **Ctrl+**<img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page down the order  
+      **Ctrl+↑**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page up the order  
+      **Ctrl+↓**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page down the order  
       **Ctrl+P**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print page  
       **Ctrl+Shift+f**&nbsp;&nbsp;Filter page  
    :::column-end:::

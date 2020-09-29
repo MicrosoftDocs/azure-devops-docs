@@ -111,7 +111,7 @@ Then, click **Work items**.
 
 The browser opens to the **Assigned to me** page. From there, you can choose **Following** or **My activity** to access the other pages. To learn more about the **Work Items** view, see [View and add work items](../../boards/work-items/view-add-work-items.md). 
 
-![Mobile work item form, Change State action](media/mobile-work-account-work-items-pages.png)  
+![The browser opens to the Assigned to me page.](media/mobile-work-account-work-items-pages.png)  
 
 ## Related articles  
 

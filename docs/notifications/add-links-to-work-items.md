@@ -62,7 +62,6 @@ Narrow the list of suggested work items by entering keywords that match the work
 
 To further filter the list, continue to enter keywords until you've found a match. You can enter up to five keywords.
 
-
 ## Link to work items in pull requests, comments, and commits
 
 You can also use the **#ID** control in pull request discussions, commit comments, changeset comments, and shelveset comments.
@@ -71,6 +70,41 @@ You can also use the **#ID** control in pull request discussions, commit comment
 > [!NOTE]  
 > Requires TFS 2015 Update 2 or a later version.
 ::: moniker-end
+
+::: moniker range="azure-devops"
+
+## Set work item state in pull request
+
+When you create a PR, in the description, you can set the state value of the linked work items. You must follow the specific syntax.
+
+``` {state value}: #ID ```
+When you merge the PR, the system reads through the description and updates the work item state accordingly. In the follow example we set work items #300 and #301 to Resolved, #323 and #324 to Closed.
+
+![set state in pr image](media/pr-set-state-of-work-items.png)
+ 
+### How it works
+The system looks at three different criteria when attempting to set the state of #mentioned work items. State, State Category, and keyword. In that order.
+
+  - **If** the value matches a state, **then** set it to that state. 
+  - **Else If** the value matches a state category, **then** set the work item to first state in that category (see note below)
+  - **Else If** the value matches a keyword, **then** set the work item to matching keyword state (see grid below)
+  - **Else**, ignore it and do nothing
+
+Keyword logic is to help with intent matching. For example, you might put in “Resolves” but you really meant “Resolved”. 
+
+| Keyword   |      Action      | 
+|:----------|:-------------|
+| Proposed, Proposes, Propose | Set to the first state in the Proposed category  | 
+| InProgress | Set to the first state in the In Progress category |
+| Completed, Completes, Complete | Set to the first state in the Completed category |
+| Resolved, Resolves, Resolve| Set to the first state in the Resolved category |
+| Fixes, Fixed, Fix | Close work item (except Bug, that gets set to Resolved) |
+
+> [!NOTE]  
+> Category matching is not supported on projects using a Hosted XML process. It is only available for projects using an inherited process.
+
+::: moniker-end
+
 
 ::: moniker range=">= tfs-2018"
 

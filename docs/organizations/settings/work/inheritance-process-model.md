@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/17/2020
+ms.date: 09/17/2020
 ---
 
 # About process customization and inherited processes  
@@ -137,6 +137,9 @@ Fields are defined for all projects and processes in the organization. That mean
       ::: moniker range=">= azure-devops-2020"
       - [Modify picklist (drop-down menu)](customize-process-field.md#pick-list)  
       ::: moniker-end  
+      ::: moniker range="azure-devops"
+      - [Modify Description help text](customize-process-field.md#modify-description)  
+      ::: moniker-end  
    :::column-end:::
 :::row-end:::
 ---
@@ -155,6 +158,7 @@ Fields are defined for all projects and processes in the organization. That mean
       - [Change the field label](customize-process-field.md#rename-field)  
       - [Set Required/Default options](customize-process-field.md#options)  
       - [Move the field within the layout](customize-process-form.md#move-field)  
+      - [Modify Description help text](customize-process-field.md#modify-description)  
       ::: moniker range=">= azure-devops-2020"
       - [Show/Hide field on form](customize-process-field.md#show-hide-field)
       ::: moniker-end  
@@ -176,8 +180,6 @@ Fields are defined for all projects and processes in the organization. That mean
 :::row-end:::
 ---
 
- 
-
 When adding custom fields, note the following limits:  
 *   A maximum of 64 fields can be defined for each WIT  
 *   A maximum of 512 fields can be defined per process   
@@ -186,10 +188,19 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 ### What you can't customize 
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 - You can't change the field name or data type once you've defined it
 - You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
+- You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+- You can't change the field name or data type once you've defined it
+- You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located
+- You can't modify the Description help text of inherited fields  
 - You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
 ::: moniker-end
@@ -201,6 +212,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 - With regards to picklists, you currently can't perform these operations:
     - Change the picklist of an inherited field, such as the Activity or Discipline field  
     - Change the picklist order, picklists display in alphabetic order
+- You can't modify the Description help text of inherited fields
 - Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
 > [!NOTE]    
@@ -227,7 +239,7 @@ Renaming a field or changing the data type aren't supported actions. However, yo
 
 ### Can I delete or restore a deleted field? 
 
-You can delete a field, and later restore it. Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update?view=azure-devops-rest-6.0). 
+You can delete a field, and later restore it. Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update). 
 
 Instead of deleting a field, you may want to instead hide or remove the field from a work item form. For details, see [Add and manage fields, Show, hide, or remove a field](customize-process-field.md#show-hide-remove-field).
 

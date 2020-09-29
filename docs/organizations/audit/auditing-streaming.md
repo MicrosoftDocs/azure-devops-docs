@@ -18,7 +18,7 @@ ms.date: 05/14/2020
 > [!Note]
 > Audit streaming is currently in a Public Preview.
 
-In this article, learn how to create an [audit](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Sending auditing data to other Security Incident and Event Management (SIEM) tools opens possibilities, such as alerting on specific auditing events, creating views on auditing data, and performing anomaly detection. It also allows you to store more than the 90-days worth of auditing data, which Azure DevOps keeps.
+Learn how to create an [audit](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Sending auditing data to other Security Incident and Event Management (SIEM) tools opens possibilities, such as alerting on specific auditing events, creating views on auditing data, and performing anomaly detection. It also allows you to store more than the 90-days worth of auditing data, which Azure DevOps keeps.
 
 Audit streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every 5 minutes, new audit events are bundled and streamed to your targets. Currently, the following stream targets are available for configuration:
 
@@ -113,7 +113,7 @@ Once you have your Event Grid stream configured you can set up subscriptions on 
 
 7. Enter the workspace ID and primary key, and then select **Set up**. The primary key is stored securely within Azure DevOps and never displayed again in the UI. We recommend rotating the key regularly, which you can do by getting a new key from Azure Monitor Log and editing the stream.
 
-   :::image type="content" source="media/auditing-streaming/create-stream-azure-monitor-logs.png" alt-text="Enter workspace ID and primary key to create":::
+   :::image type="content" source="media/auditing-streaming/create-stream-azure-monitor-logs.png" alt-text="Enter workspace ID and primary key and then select Set up.":::
 
 The stream is enabled and new events begin to flow within minutes. 
 

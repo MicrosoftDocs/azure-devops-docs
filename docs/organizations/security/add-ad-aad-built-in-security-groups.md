@@ -21,7 +21,7 @@ Review [Default permissions and access](permissions-access.md) to gain insight i
 
 ::: moniker range="azure-devops"
 
-In this article, learn how to do the following task:
+Learn how to do the following task:
 > [!div class="checklist"]
 > * Add an Azure AD user or group to a built-in security group
 
@@ -29,7 +29,7 @@ In this article, learn how to do the following task:
 
 ::: moniker range="< azure-devops"
 
-In this article, learn how to do the following task:
+Learn how to do the following task:
 > [!div class="checklist"]
 > * Add an Active Directory user or group to a built-in security group
 

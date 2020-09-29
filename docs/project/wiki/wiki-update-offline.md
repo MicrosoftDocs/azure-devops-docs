@@ -78,7 +78,7 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 3. Use the URL that you copied to clone the repo in the IDE that you use. To learn more, see one of the following articles:
 	- [Clone an existing Git repo](../../repos/git/clone.md)
 	- [Using Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol)
-	- [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?view=azure-devops&tabs=visual-studio)
+	- [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?tabs=visual-studio)
 
 ## Add pages to your local Git repository
 
@@ -118,7 +118,7 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
    For example, we added to following files to the How-to-contribute folder. These subpages appear under the How to contribute page in the wiki.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Local branch wiki Git repo](media/wiki/add-sub-pages.png)
+	> ![Subpages under the How to contribute page in the wiki.](media/wiki/add-sub-pages.png)
 
 2. Add a **.order** file in the folder with the order of the subpages as they should appear in the wiki. To understand the use of the **.order** file to sequence pages, see [Wiki Git repository files and file structure](wiki-file-structure.md).
 	 

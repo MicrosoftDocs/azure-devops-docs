@@ -127,8 +127,8 @@ Use this directional link to create one-to-many relationships between a single p
 </tr>
 <tr>
 <td><strong>Duplicate-Duplicate of</strong> <sup>1</sup><br/> 
-<img src="media/link-work-items-support-traceability/duplicate-tree-forward.png" alt="Duplicate link type image"/> 
-<img src="media/link-work-items-support-traceability/duplicate-of-tree-reverse.png" alt="Duplicate of link type image"/> 
+<img src="media/link-work-items-support-traceability/duplicate-tree-forward.png" alt="Duplicate of tree forward."/> 
+<img src="media/link-work-items-support-traceability/duplicate-of-tree-reverse.png" alt="Duplicate of tree reverse."/> 
 </td>
 <td><p>System.LinkTypes.Duplicate-Forward<br/>
 System.LinkTypes.Duplicate-Reverse</p>
@@ -165,8 +165,8 @@ Link category: System-defined</p></td>
 </tr>
 <tr>
 <td><strong>Successor-Predecessor</strong><br/>
-<img src="media/link-work-items-support-traceability/successor-dependency-forward.png" alt="Duplicate link type image"/> 
-<img src="media/link-work-items-support-traceability/predecessor-dependency-reverse.png" alt="Duplicate of link type image"/> 
+<img src="media/link-work-items-support-traceability/successor-dependency-forward.png" alt="Successor dependency, forward."/> 
+<img src="media/link-work-items-support-traceability/predecessor-dependency-reverse.png" alt="Predecessor dependency, reverse."/> 
 </td>
 <td><p>System.LinkTypes.Dependency</p>
 <p>Topology type: Dependency<br/>

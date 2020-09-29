@@ -2,7 +2,7 @@
 title: Restrictions and conventions for naming objects
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Requirements for labeling objects like organization, project, tags, templates, and more, by length, uniqueness, and special characters 
+description: Requirements for consistency in labeling objects like organizations, projects, tags, templates, and more, by length, uniqueness, and special characters. 
 ms.technology: devops-settings
 ms.topic: reference
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
