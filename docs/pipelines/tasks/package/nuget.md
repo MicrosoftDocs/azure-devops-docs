@@ -47,7 +47,7 @@ Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../bu
 | -------- | ----------- |
 | `command`<br/>Command | The NuGet command to run. Select 'Custom' to add arguments or to use a different command.<br/>Options: `restore`, `pack`, `custom`, `push` |
 | `restoreSolution`<br/>Path to solution, packages.config, or project.json | The path to the solution, packages.config, or project.json file that references the packages to be restored. |
-| `feedsToUse`<br/>Feeds to use | You can either select a feed from Azure Artifacts and/or NuGet.org here, or commit a nuget.config file to your source code repository and set its path here. Options: `select`, `config`. |
+| `feedsToUse`<br/>Feeds to use | You can either select a feed from Azure Artifacts and/or NuGet.org, or commit a nuget.config file to your source code repository and set its path here. Options: `select`, `config`. |
 | `vstsFeed`<br/>Use packages from this Azure Artifacts/TFS feed | Include the selected feed in the generated NuGet.config. You must have Azure Artifacts installed and licensed to select a feed here. |
 | `includeNuGetOrg`<br/>Use packages from NuGet.org | Include NuGet.org in the generated NuGet.config. Default value is `true`. Required when `feedsToUse` == `Select`.|
 | `nugetConfigPath`<br/>Path to NuGet.config | The NuGet.config in your repository that specifies the feeds from which to restore packages. Required when `feedsToUse` == `Config`|
@@ -119,6 +119,19 @@ Restore all your solutions with packages from a selected feed.
 ```
 
 ```YAML
+# Restore from a feed in a different organization
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: config
+    nugetConfigPath: ./nuget.config
+    restoreSolution: '**/*.sln'
+    externalFeedCredentials: 'MyServiceConnectionName'
+    noCache: true
+  continueOnError: true
+```
+
+```YAML
 # Restore from feed(s) set in nuget.config
 - task: NuGetCommand@2
   inputs:
@@ -126,7 +139,6 @@ Restore all your solutions with packages from a selected feed.
     feedsToUse: 'config'
     nugetConfigPath: 'nuget.config'
 ```
-
 ### Package
 
 Create a NuGet package in the destination folder.
