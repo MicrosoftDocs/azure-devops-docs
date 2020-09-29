@@ -99,7 +99,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 
 
 | Feature | YAML | Classic Build |  Classic Release |Notes| 
-|---------|---------|---------|---------|---------|---------|---------|
+|---------|---------|---------|---------|---------|
 | [Agents](../agents/agents.md) |  Yes | Yes | Yes | Specifies a required resource on which the pipeline runs.|
 | [Approvals](../release/approvals/index.md) | Yes | No  | Yes | Defines a set of validations required prior to completing a deployment stage. |
 | [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes | Yes | Supports publishing or consuming different package types. |
@@ -133,7 +133,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 TFS 2015 through TFS 2018 supports the Classic interface only. The following table indicates which pipeline features are available when defining build or release pipelines. 
 
 | Feature | Classic Build |  Classic Release |Notes| 
-|---------|---------|---------|---------|---------|---------|---------|
+|---------|---------|---------|---------|
 | [Agents](../agents/agents.md) |  Yes | Yes |  Specifies a required resource on which the pipeline runs.|
 | [Approvals](../release/approvals/index.md) |  No  | Yes | Defines a set of validations required prior to completing a deployment stage. |
 | [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes | Supports publishing or consuming different package types. |
