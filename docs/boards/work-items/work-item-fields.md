@@ -433,7 +433,7 @@ https://dev.azure.com/fabrikam/_apis/wit/fields/System.IterationPath
 
 ::: moniker range=">= tfs-2018 < azure-devops"  
 
-You can list the attributes assigned to a field by using the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get). Enter your organization name for *OrganizationName*. To get started using REST, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/?view=vsts-rest-tfs-4.1)
+You can list the attributes assigned to a field by using the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get/?view=vsts-rest-tfs-4.1&preserve-view=true). Enter your organization name for *OrganizationName*. To get started using REST, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/?view=vsts-rest-tfs-4.1&preserve-view=true)
 
 > [!div class="tabbedCodeSnippets"]
 > ```REST
@@ -588,7 +588,7 @@ You can change the field name, the index, and the report attributes for any fiel
 
 - [Query quick reference](../queries/query-index-quick-ref.md)
 - [Work item field index](guidance/work-item-field.md) 
-- [Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019#choose-process-model)
+- [Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019&preserve-view=true#choose-process-model)
 - [Add or modify a field to track work](../../reference/add-modify-field.md)
 - [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md)
 
