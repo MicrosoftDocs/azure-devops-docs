@@ -133,7 +133,7 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 
 ::: moniker range="<= tfs-2018"
 
-Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
+Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](/azure/devops/reference/add-wits-to-backlogs-and-boards).
 
 ::: moniker-end
 
