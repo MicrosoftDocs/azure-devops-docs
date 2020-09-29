@@ -82,7 +82,7 @@
       topicHref: /azure/devops/organizations/projects/about-projects
     - name: Audit
       tocHref: /azure/devops/organizations/audit/ 
-      topicHref: /azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&tabs=preview-page#access-auditing
+      topicHref: /azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&preserve-view=true&tabs=preview-page#access-auditing
     - name: Notifications
       tocHref: /azure/devops/notifications
       topicHref: /azure/devops/notifications/about-notifications
