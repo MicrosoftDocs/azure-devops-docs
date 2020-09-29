@@ -86,7 +86,7 @@ For OpenSSL v1.0.1 and higher, NodeJS v0.11.12 and higher (on agent):
 
 ## See also
 
-* [Install SSH Key task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/install-ssh-key?view=azure-devops)
+* [Install SSH Key task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/install-ssh-key)
 
 * [SSH task](ssh.md)
 

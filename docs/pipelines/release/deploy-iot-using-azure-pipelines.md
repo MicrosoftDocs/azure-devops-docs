@@ -98,7 +98,7 @@ If your workspace isn't under Git source control, you can easily create a Git re
 
 ## Create a build pipeline
 
-You can use Azure Pipelines to build your projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&preserve-view=true&tabs=yaml) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
+You can use Azure Pipelines to build your projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?tabs=yaml) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
 
 1. Navigate to your team project on Azure DevOps.
 

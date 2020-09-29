@@ -90,7 +90,7 @@ This further guarantees that the PR will not be able to be merged until the late
 
 ![Status policy reset conditions](media/pull-request-status/pull-request-status-policy-reset-conditions.png)
 
-See the REST API examples for posting status [on an iteration](/rest/api/vsts/git/pull%20request%20statuses/create?view=vsts-rest-4.1#on-iteration) and [on a pull request](/rest/api/vsts/git/pull%20request%20statuses/create?view=vsts-rest-4.1#on-pull-request).
+See the REST API examples for posting status [on an iteration](/rest/api/vsts/git/pull%20request%20statuses/create#on-iteration) and [on a pull request](/rest/api/vsts/git/pull%20request%20statuses/create#on-pull-request).
 
 ## Status policy
 
