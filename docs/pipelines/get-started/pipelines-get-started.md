@@ -110,7 +110,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 | [Dependencies](../process/stages.md) |  Yes | Yes | Yes | Specifies a requirement that must be met in order to run the next job or stage.  |
 | [Deployment groups](../release/deployment-groups/index.md) | Yes | No | Yes | Defines a logical set of deployment target machines. | 
 | [Deployment group jobs](../process/deployment-group-phases.md)|No | No | Yes | Specifies a job to release to a deployment group. | 
-| [Deployment jobs](../process/deployment-group-phases.md) | Yes | No |  No | Defines the deployment steps. | 
+| [Deployment jobs](../process/deployment-jobs.md) | Yes | No |  No | Defines the deployment steps. | 
 | [Environment](../process/environments.md) | Yes | No | No | Represents a collection of resources targeted for deployment. Available with Azure Pipelines only.|
 | [Gates](../release/approvals/gates.md) | No | No | Yes | Supports automatic collection and evaluation of external health signals prior to completing a release stage. Available with Classic Release only. |
 | [Jobs](key-pipelines-concepts.md) | Yes | Yes | Yes | Defines the execution sequence of a set of steps.|
