@@ -40,10 +40,11 @@ GET https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version=1.0
 
 ### Supported versions
 
-|Product                     | 1.0 | 2.0 | 3.0 | 4.0 | 5.0 | 6.0 |
-|:----------------------------:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Azure DevOps Services       | X   | X   | X   | X   | X   | X   |
-| Azure DevOps Server 2020    | X   | X   | X   | X   | X   | X   |
+
+| Product                     | 1.0 | 2.0 | 3.0 | 4.0 | 5.0 | 6.0 |
+|-----------------------------|-----|-----|-----|-----|-----|-----|
+| Azure DevOps Services       | X   | X   | X   | X   | X   | X  |
+| Azure DevOps Server 2020    | X   | X   | X   | X   | X   | X  |
 | Azure DevOps Server 2019    | X   | X   | X   | X   | X   | -   |
 | Team Foundation Server 2018 | X   | X   | X   | X   | -   | -   |
 | Team Foundation Server 2017 | X   | X   | X   | -   | -   | -   |
