@@ -193,6 +193,8 @@
     href: ecosystems/xamarin.md
   - name: Xcode
     href: ecosystems/xcode.md
+  - name: GitHub Actions
+    href: ecosystems/github-actions.md
 - name: Build apps
   items:
   - name: Build multiple branches
@@ -373,6 +375,8 @@
     href: artifacts/pipeline-artifacts.md
   - name: Build artifacts
     href: artifacts/build-artifacts.md
+  - name: Releases in Azure Pipelines
+    href: release/releases.md
   - name: Release artifacts and artifact sources
     href: release/artifacts.md
   - name: Maven
@@ -387,7 +391,7 @@
     href: artifacts/symbols.md
   - name: Universal
     href: artifacts/universal-packages.md
-  - name: Restore NuGet packages (Package Management feeds)
+  - name: Restore NuGet packages
     href: packages/nuget-restore.md
   - name: Restore & publish NuGet packages (Jenkins)
     href: packages/jenkins.md
@@ -450,7 +454,7 @@
   - name: Set retention policies
     href: policies/retention.md
     displayName: service endpoints
-  - name: Paying for parallel jobs
+  - name: Configure and pay for parallel jobs
     href: licensing/concurrent-jobs.md
   - name: Pipeline permissions and security roles
     href: policies/permissions.md

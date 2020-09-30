@@ -47,14 +47,14 @@ steps:
 Previously, the **HelmDeploy** task used the cluster user credentials for deployments. This resulted in interactive login prompts and failing pipelines for an Azure Active Directory based RBAC enabled cluster. To address this issue, we added a checkbox that lets you use cluster admin credentials instead of a cluster user credentials.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_07.png "Package and deploy Helm charts showing the use cluster admin credentials checkbox")
+> ![Package and deploy Helm charts showing the use cluster admin credentials checkbox.](../../media/155_07.png "Package and deploy Helm charts showing the use cluster admin credentials checkbox")
 
 ### Manage pipeline variables in YAML editor
 
 We updated the experience for managing pipeline variables in the YAML editor. You no longer have to go to the classic editor to add or update variables in your YAML pipelines.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_11.png)
+> ![Manage pipeline variables in YAML editor.](../../media/155_11.png)
 
 ### New predefined variables in YAML pipeline
 
@@ -79,12 +79,12 @@ We continue to improve multi-stage YAML pipelines, we now let you add manual app
 With complete segregation of roles between infrastructure (environment) and application (pipeline) owners, you will ensure manual sign off for deployment in a particular pipeline and get central control in applying the same checks across all deployments to the environment.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_24.png)
+> ![Approvals in multi-stage YAML pipelines.](../../media/155_24.png)
 
 The pipeline runs deploying to dev will stop for approval at the start of the stage.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_25.png)
+> ![Pipeline runs deploying to dev will stop for approval.](../../media/155_25.png)
 
 ### Updates to hosted pipelines images
 
@@ -114,7 +114,7 @@ For a full list of tools available for a particular image, go to **Settings > Ag
 In this update, we enhanced the DevOps Projects virtual machine (VM) workflow to include the VMs that don't comply with the per location quota restriction.  Previously, you had to choose the VM by name and offering. Now, you have an on-demand view with more details about the VM offerings such as cost/month, RAM, data disks etc. This makes it easier for you to select the virtual machine that you need.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_21.png)
+> ![Enhancements to DevOps Project for virtual machine.](../../media/155_21.png)
 
 ### Single hosted pool
 
@@ -135,12 +135,12 @@ Flaky tests can affect developers' productivity since test failures may not be r
 System detection is available via VSTest task rerun capability. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. All further executions of test for the same branch are also marked flaky until its resolved and unmarked. You can also plug in your custom detection mechanism using our APIs. Once a test is identified as flaky, you can get the details in the in-context test report in the pipeline. You can then decide whether the flaky tests impact your pipeline failure. By default, flaky test information is available as additional meta-data.  
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_13.png)
+> ![In-product support for flaky test management.](../../media/155_13.png)
 
 Here is an example of a report with the test summary. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_14.png)
+> ![Example of a report with the test summary.](../../media/155_14.png)
 
 For more details about flaky test management, see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/test/flaky-test-management?view=azure-devops).
 
@@ -164,7 +164,7 @@ Terraform is an open-source tool for developing, changing and versioning infrast
 To learn more about the Terraform extension, see the documentation [here](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks).
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_28.png)
+> ![Terraform integration with Azure Pipelines.](../../media/155_28.png)
 
 ### Integration with Google Analytics
 
@@ -175,7 +175,7 @@ The Google Analytics experiments extension for Azure DevOps adds experimentation
 You can download the [Google Analytics experiments extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.GoogleAnalytics) from the Marketplace. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/155_23.png)
+> ![Integration with Google Analytics.](../../media/155_23.png)
 
 ### Pipeline caching (public preview)
 

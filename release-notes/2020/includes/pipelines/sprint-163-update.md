@@ -29,7 +29,7 @@ steps:
 > `MyServiceConnection` must be an Azure Repos / Team Foundation Server service connection, see the picture below.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/163_03.png)
+> ![MyServiceConnection must be an Azure Repos/Team Foundation Server service connection.](../../media/163_03.png)
 
 ### Step targeting and command isolation
 
@@ -84,7 +84,7 @@ The following events are available now:
 We've enhanced the [evaluate artifact check](https://docs.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#evaluate-artifact) to make it easier to add policies from a list of out of the box policy definitions. The policy definition will be generated automatically and added to the **check configuration** which can be updated if needed.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/163_04.png)
+> ![Enhancement to evaluate artifacts checks policy in pipelines.](../../media/163_04.png)
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/163_05.png)
+> ![Policy definition generated automatically and added to check configuration.](../../media/163_05.png)

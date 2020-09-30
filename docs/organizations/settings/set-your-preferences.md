@@ -2,30 +2,30 @@
 title: View, change user preferences 
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Change picture, set preferred email, or other user preferences from your profile defined for Azure DevOps 
+description: Change picture, set preferred email, or other user preferences from your profile defined for Azure DevOps or TFS. 
 ms.technology: devops-settings
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/24/2020 
+ms.date: 08/17/2020 
 ---
 
 # Set user preferences
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-From your profile page, you can change your information and  account preferences. In this article, learn how to complete the following tasks:
+From your profile page, you can change your information and  account preferences. Learn how to complete the following tasks:
 
 - Change your picture
 - Change your display name
 - Change your preferred email
 - Change your directory
-- Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme.
+- Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme
 
 > [!IMPORTANT]
-> You can't change your user interface theme in Azure DevOps if you're using Internet Explorer (IE).
+> You can't change your user interface (UI) theme in Azure DevOps if you're using Internet Explorer (IE).
 
 ## Change profile settings  
 
@@ -36,13 +36,13 @@ From your profile page, you can change your information and  account preferences
 
 #### [Preview page](#tab/preview-page) 
 
-1. From your home page, select the user settings icon ![user-settings-gear.png](../../media/icons/user-settings-gear.png), and then select **Profile**.
+1. From your home page, select the user settings icon :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::, and then select **Profile**.
 
    ![Open Azure DevOps profile](../../media/open-user-settings-profile-preview.png)
 
-2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
+2. From the **Profile** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**. Select the **Time and Locale** tab to change more settings, like language, date and time pattern, time zone, and UI.
 
-   ![Edit the About page](media/edit-about-page-preview.png)
+   ![Edit the Profile page](media/edit-about-page-preview.png)
 
 #### [Current page](#tab/current-page) 
 
@@ -50,7 +50,11 @@ From your profile page, you can change your information and  account preferences
 
    ![Open profile user settings](media/open-profile-user-settings.png)
 
-2. You can change your profile picture, display name, contact information, and country. Select **Save**.
+2. Select **Edit profile**.
+
+   :::image type="content" source="media/select-edit-no-preview.png" alt-text="Select Edit profile no preview":::
+
+1. You can change your profile picture, display name, contact information, and country. Select **Save**. Select the **Preferences** tab to change more settings, like language, date and time pattern, time zone, and UI.
 
    ![Edit the About page](media/edit-about-page.png)
 
@@ -95,12 +99,12 @@ For **Security**, **Notification settings**, and **Manage features** profile men
 2. Choose **Edit profile**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../media/settings/profile-jamal-h.png)
+	> ![Screenshot of highlighted Edit profile button ](../../media/settings/profile-jamal-h.png)
 
 3. From the **About** page, you can change your profile picture, change your display name, contact information, and country. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../media/settings/edit-profile-about-dialog.png)
+	> ![Screenshot of the About User profile page](../../media/settings/edit-profile-about-dialog.png)
 
 4. From the **Preferences** page, you can change the following information:
     - preferred language
@@ -110,9 +114,11 @@ For **Security**, **Notification settings**, and **Manage features** profile men
     - whether borders appear for fields on work item forms
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../media/settings/edit-profile-preferences-dialog.png)
+	> ![Screenshot of Preferences page with Save changes button](../../media/settings/edit-profile-preferences-dialog.png)
 
 ::: moniker-end
+
+Your profile settings are updated.
 
 ## Related articles
 
@@ -121,11 +127,3 @@ For **Security**, **Notification settings**, and **Manage features** profile men
 - [Manage or enable features](../../project/navigation/preview-features.md)  
 - [Set favorites](../../notifications/howto-manage-personal-notifications.md)  
 - [Personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
-- [Alternate authentication credentials](../../repos/git/auth-overview.md#alternate-credentials)  
-- [OAuth authorizations](../../integrate/get-started/authentication/oauth.md)  
-- [SSH public keys](../../repos/git/use-ssh-keys-to-authenticate.md)  
-- [Manage authorizations](manage-authorizations.md)  
-
-
-
-

@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../includes/version-all.md)]
 
-In this article, learn the answers to frequently asked questions (FAQs) about creating and configuring an organization in Azure DevOps. FAQs are grouped by the following subjects:
+Learn the answers to frequently asked questions (FAQs) about creating and configuring an organization in Azure DevOps. FAQs are grouped by the following subjects:
 
 - [General](#general-organization-faqs)
 - [Create an organization](#create-organization-faqs)
@@ -109,7 +109,7 @@ A: Some features require you to install an extension, which might be available f
 
 A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-![Create your organization](media/sign-up-visual-studio-team-services/my-info-organization-list.png)
+![Create another organization.](media/sign-up-visual-studio-team-services/my-info-organization-list.png)
 
 <a name="another-team-project"></a>
 

@@ -34,6 +34,10 @@ Teams track their velocity to help them determine how much work they can perform
 
 Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. Each team is associated with one and only one velocity chart.  
 
+> [!NOTE]
+> For TFS 2018 and earlier versions, you can only view team velocity. There is no configuration of this report.  
+
+
 Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog.  
 
 **Example Velocity chart from the work tracking data store**  
@@ -73,6 +77,14 @@ Use this article to learn:
 
 ::: moniker-end
 
+
+
+::: moniker range=">= azure-devops-2019"
+
+## Prerequisites  
+
+::: moniker-end
+
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 
@@ -103,7 +115,7 @@ Use this article to learn:
 
 	![Open Boards > Backlogs, for a team](/azure/devops/boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-    To select another backlog, open the selector and then choose a different team or select the ![home icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
+    To select another backlog, open the selector and then choose a different team or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false":::  **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Select another team](/azure/devops/boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -192,7 +204,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 	![Open Boards, Backlogs, for a team](../../boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another team](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 

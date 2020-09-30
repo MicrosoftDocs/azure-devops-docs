@@ -151,7 +151,7 @@ Or, you can favorite a project from the **Projects** page by choosing the ![favo
 2. The **Mine** page shows your favorited dashboards, and all dashboards of teams that you belong to. The **All** page (shown below) lists all dashboards defined for the project in alphabetical order. You can filter the list by team or by keyword.   
  
 	> [!div class="mx-imgBorder"]  
-	> ![Dashboards, Browse all dashboards option](../../report/dashboards/media/dashboards/all-dashboards-list.png)  
+	> ![The All page lists all dashboards.](../../report/dashboards/media/dashboards/all-dashboards-list.png)  
 
 	> [!TIP]
 	> You can change the sort order of the list by choosing the column label.  
@@ -159,7 +159,7 @@ Or, you can favorite a project from the **Projects** page by choosing the ![favo
 3. To favorite a dashboard, hover over the dashboard and choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Dashboards, Browse all dashboards option](../../report/dashboards/media/dashboards/favorite-dashboard.png)  
+	> ![Favorite a dashboard.](../../report/dashboards/media/dashboards/favorite-dashboard.png)  
 
 	Favoriting a dashboard will cause it to appear on your **Favorites** page and towards the top in the **Dashboards** selection menu.
    
@@ -178,7 +178,7 @@ You can favorite several Agile tools for a team from a **Boards** page.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work, Backlogs](media/favorites/open-work-backlogs-vert.png)  
 
-	To choose a specific team backlog, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose a specific team backlog, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 

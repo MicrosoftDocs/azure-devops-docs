@@ -32,7 +32,7 @@ When defining work items or running queries, the following operational limits ap
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
 | Attachment size | 60 MB | 
-| Queries  |  30 seconds | 
+| Queries  |  2 minutes | 
 | Query results | 20,000 items | 
 | Query length | 32,000 characters |
 
@@ -63,17 +63,17 @@ The default maximum attachment size is 4 MB. You can [change the maximum size up
 
 ::: moniker range="azure-devops"
 
-When working with teams, work item tags, backlogs, and boards, the following operational limits apply.  
+When working with teams, work item tags, backlogs, and boards, the following operational display and object limits apply.  
 
 | User interface |  Limit | 
 |--------|-------|
 | Backlogs | 10,000 work items | 
-| Boards | 400 cards  | 
+| Boards | 1000 cards (excluding those cards in the [*Proposed* and *Completed* workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) | 
 | Taskboard | 1000 tasks  | 
 | Teams | 5,000 per project | 
 | Work item tags | 150,000 tag definitions per project | 
 
-Each backlog can display up to 10,000 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
+Each backlog can display up to 10,000 work items. This is simply a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
 #### Additional notes:
 

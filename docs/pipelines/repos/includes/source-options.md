@@ -67,7 +67,7 @@ steps:
 
 You can configure the **Submodules** setting from the properties of the **Get sources** task in your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
-![GitHub options](../media/github/github-options.png)
+![Configure Submodules setting.](../media/github/github-options.png)
 
 ---
 
@@ -134,7 +134,7 @@ steps:
 
 You can configure the **Shallow fetch** setting from the properties of the **Get sources** task in your pipeline.
 
-![GitHub options](../media/github/github-options.png)
+![Configure Shallow fetch setting.](../media/github/github-options.png)
 
 ---
 
@@ -168,7 +168,7 @@ steps:
 
 Select the **Don't sync sources** setting from the properties of the **Get sources** task in your pipeline.
 
-![GitHub options](../media/github/github-options.png)
+![Select the Don't sync sources setting.](../media/github/github-options.png)
 
 ---
 
@@ -226,7 +226,7 @@ This gives the following clean options.
 
 Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
 
-![GitHub options](../media/github/github-clean-sources.png)
+![Select the Clean setting.](../media/github/github-clean-sources.png)
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
   ```
@@ -250,17 +250,17 @@ You may want to label your source code files to enable your team to easily ident
 
 You can't currently configure this setting in YAML but you can in the classic editor. When editing a YAML pipeline, you can access the classic editor by choosing either **Triggers** from the YAML editor menu.
 
-![Git options](../media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+![Configure Git options, YAML.](../media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 From the classic editor, choose **YAML**, choose the **Get sources** task, and then configure the desired properties there.
 
-![Git options](../media/pipelines-options-for-git/yaml-pipeline-git-options.png)
+![From the Classic editor, choose YAML > Get sources.](../media/pipelines-options-for-git/yaml-pipeline-git-options.png)
 
 # [Classic](#tab/classic)
 
 You can configure the **Tag sources** setting from the properties of the **Get sources** task in your pipeline.
 
-![Git options](../media/github/github-options.png)
+![Configure Git options, Classic.](../media/github/github-options.png)
 
 ---
 

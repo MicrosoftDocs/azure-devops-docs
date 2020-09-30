@@ -7,13 +7,13 @@ ms.technology: devops-code-git
 ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
-ms.date: 07/10/2020
+ms.date: 08/28/2020
 monikerRange: '>= tfs-2013'
 ---
 
 # Review code with pull requests
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Create pull requests to review and merge code in a [Git project](../../organizations/projects/create-project.md).
 Pull requests let your team review code and give feedback on changes before merging it into the master branch.
@@ -84,7 +84,7 @@ When you publish or update a feature branch, Azure Repos prompts you to create a
 
 ![Creating Pull Request through pushed branch in Azure Repos](media/pull-requests/create-pr-from-push-new-nav.png)
 
-![Creating Pull Request through pushed branch in Azure Repos](media/pull-requests/create-pr-from-push-files-tab-new-nav.png)
+![Creating Pull Request through pushed branch in Azure Repos, Files tab.](media/pull-requests/create-pr-from-push-files-tab-new-nav.png)
 
 Select **Create a pull request** to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
@@ -96,7 +96,7 @@ When you publish or update a feature branch, Azure Repos prompts you to create a
 
 ![Creating Pull Request through pushed branch in Azure Repos](media/pull-requests/create-pr-from-push.png)
 
-![Creating Pull Request through pushed branch in Azure Repos](media/pull-requests/create-pr-from-push-files-tab.png)
+![Creating Pull Request through pushed branch in Azure Repos, Files tab.](media/pull-requests/create-pr-from-push-files-tab.png)
 
 Select **Create a pull request** to go to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
@@ -138,17 +138,17 @@ Initiate pull requests directly from Visual Studio.
 
 1. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal.
 
-   ![Pull Requests](media/pull-requests/new-pull-request.png)
+   ![Select New Pull Request.](media/pull-requests/new-pull-request.png)
 
    In **Pull Requests**, you can also view pull requests opened by you or assigned to you.
 
    You can also initiate pull requests from Visual Studio from the **Branches** view in Team Explorer by right-clicking the branch name and selecting **Create pull request** while connected to your project.
 
-   ![Pull Requests](media/pull-requests/new-pr-from-branch.png)
+   ![Initiate pull request from the Branches view.](media/pull-requests/new-pr-from-branch.png)
 
 ### From the Azure DevOps Services CLI
 
-You can now manage your pull requests and other resources from the command line with [azure-devops](/cli/azure/ext/azure-devops/?view=azure-cli-latest). Azure Repos and Azure DevOps Server, formerly Team Foundation Server 2017 Update 2 or later, support pull requests by using the command line.
+You can now manage your pull requests and other resources from the command line with [azure-devops](/cli/azure/ext/azure-devops/?view=azure-cli-latest&preserve-view=true). Azure Repos and Azure DevOps Server, formerly Team Foundation Server 2017 Update 2 or later, support pull requests by using the command line.
 
 For a list of commands to create and manage pull requests, see [Manage pull requests](/cli/vsts/code/pr).
 
@@ -156,9 +156,20 @@ For more information about working with the Azure DevOps Services CLI, see [Get 
 
 <a name="finish"></a>
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2019"
 
 ## Draft pull requests
+
+::: moniker-end
+
+:::moniker range="azure-devops-2019"
+
+> [!NOTE]
+> Draft pull requests were added in the Azure DevOps Server 2019.1 update.
+
+:::moniker-end
+
+::: moniker range=">=azure-devops-2019"
 
 Sometimes you may want to create a pull request but you aren't ready to send it to the entire team for review. A draft pull request indicates that a pull request is a work in progress. You don't have to resort to title prefixes such as WIP or DO NOT MERGE. When the pull request is ready for review, you can publish it, and begin or resume the full review process.
 
@@ -187,7 +198,7 @@ To create a draft pull request, choose **Create as draft** when creating the pul
 
 If you start your pull request title with WIP, **Create as draft** is selected as the default.
 
-![Create as draft](media/pull-requests/create-draft-pr-wip.png)
+![Start your pull request title with WIP to Create as draft.](media/pull-requests/create-draft-pr-wip.png)
 
 ### Publish a draft pull request
 
@@ -277,7 +288,7 @@ Link work items to your pull request:
 
 1. Select the **Overview** tab in the pull request.
 
-   ![Pull request overview](media/pull-requests/pull-request-overview-work-items-new-nav.png)
+   ![Select the Overview tab.](media/pull-requests/pull-request-overview-work-items-new-nav.png)
 
 1. Select the add button in the **Work Items** area. ![Add icon in pull requests](media/pull-requests/pr_add_icon.png)
 
@@ -294,7 +305,7 @@ Link work items to your pull request:
 
 1. Select **Overview** in the pull request.
 
-   ![Pull request overview](media/pull-requests/pull-request-overview-work-items.png)
+   ![Select Overview in the pull request.](media/pull-requests/pull-request-overview-work-items.png)
 
 1. Select the add button in the **Work Items** area. ![Add button in pull requests](media/pull-requests/pr_add_icon.png)
 
@@ -322,7 +333,7 @@ Keep these fields up to date so reviewers know what the changes in the pull requ
 The **Overview** tab shows the current state of the pull request at a glance.
 Review the title, description, and discussion to understand proposed changes and see issues brought up by other reviewers.  
 
-![Pull request overview](media/pull-requests/pull-request-overview.png)
+![Review a pull request.](media/pull-requests/pull-request-overview.png)
 
 Starting with Visual Studio 2017 Update 6, you can check out the source branch from a pull request directly from **Pull Requests** in **Team Explorer**. Right-click the pull request and choose **Checkout Source Branch**.
 
@@ -348,7 +359,7 @@ Catch up with a pull request after being away from it by stepping through change
 
 Browse a list of changes from the author using **Updates**.
 
-![Pull request updates](media/pull-requests/pull-request-updates.png)
+![Browse a list of changes from the author.](media/pull-requests/pull-request-updates.png)
 
 You can select and view changes made in commits on the branch in **Commits**.
 
@@ -365,11 +376,11 @@ Reply directly to the author or other reviewers by using `@username` and referen
 
 Update comment status to let reviewers know what you are doing to address the concerns brought up in their review. New comments start in **Active** status. Select **Resolve** or **Reply &amp; resolve** to update comments in the conversation.
 
-![Reviewing comments in Azure Repos pull requests](./media/pull-requests/pr-comments-reply-and-resolve.png)
+![Update comments in Azure Repos pull requests.](./media/pull-requests/pr-comments-reply-and-resolve.png)
 
 Additional options are available in the comment resolution drop-down list.
 
-![Reviewing comments in Azure Repos pull requests](./media/pull-requests/pr-comment-resolution.png)
+![Additional options in Azure Repos pull requests.](./media/pull-requests/pr-comment-resolution.png)
 
 - **Active**: Comment is still under review.
 - **Pending**: The issue in this comment will be addressed, but isn't fixed yet.
@@ -403,7 +414,7 @@ You can make quick updates to your branch directly from the **Files** tab in **C
 
 ![Updating code directly during a pull request in Azure Repos](./media/pull-requests/pr_editing_changes.png)
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2019"
 
 ## Change the target branch of a pull request
 

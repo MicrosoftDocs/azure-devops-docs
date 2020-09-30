@@ -102,7 +102,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
     ![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-    To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -268,13 +268,13 @@ Whenever you see the plus ![plus-icon](../../media/icons/blue-add-icon.png), you
 
 ::: moniker range="<= tfs-2018"
 
-To add a work item, choose the ![plus icon](../media/icons/green_plus_icon.png) and choose from the options provided.
+To add a work item, choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: and choose from the options provided.
 
 Here we add a product backlog item as a child to the Customer Web - Phase 1 feature. 
 
 ![Add a child item to a backlog work item](media/org-backlog-features-add-child-ts.png)
 
-Whenever you see the plus ![plus icon](../media/icons/green_plus_icon.png), you can add a child item. 
+Whenever you see the plus :::image type="icon" source="../media/icons/green_plus_icon.png" border="false":::, you can add a child item. 
 The work item always corresponds to the hierarchy of work item types that are defined for your project.   
 
 ::: moniker-end

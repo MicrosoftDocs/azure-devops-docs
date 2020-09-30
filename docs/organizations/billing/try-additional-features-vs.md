@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
-In this article, learn how to try Azure Test Plans for free for 30 days.
+Learn how to try Azure Test Plans for free for 30 days.
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 

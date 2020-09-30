@@ -3,23 +3,23 @@ title: New test plans page
 description: New Test Plans page
 ms.assetid: FFBBD2F9-C1C5-4273-916A-28834B794CC3
 ms.technology: devops-test
-ms.topic: reference
-ms.author: ravishan-msft
-author: ravishan-msft
+ms.topic: conceptual
+ms.author: sdanie
+author: steved0x
 ms.date: 06/12/2020
-monikerRange: '>= azure-devops'
+monikerRange: '>=azure-devops-2020'
 ---
 # New Test Plans page
 
-[!INCLUDE [version-header-devops-services](includes/version-header-devops-services.md)]
+[!INCLUDE [version-2020-rtm](includes/version-2020-rtm.md)]
 
 [!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
-A new Test Plans Page (Test Plans*) for your planned testing needs is available for all Azure DevOps Services organizations. The new page provides you with streamlined views to help you focus on the task at hand - be it test planning, authoring, execution or tracking. It is also clutter-free and consistent with the rest of Azure DevOps offering. We hope that you find it easy and intuitive to use.
+A new Test Plans Page (Test Plans*) for your planned testing needs is available for all Azure DevOps Services organizations. The new page provides you with streamlined views to help you focus on the task at hand - be it test planning, authoring, execution, or tracking. It is also clutter-free and consistent with the rest of Azure DevOps offering. We hope that you find it easy and intuitive to use.
 
 This new page has been in public preview for past few quarters and has been made default for all Test Plans users. During this time, we have continued to add the missing features/capabilities and address the feedback you have been providing us.
 
-We had originally planned to pull out the old page by mid June 2020 with the assumption that most of the gaps have been addressed. However, recently, we have received consistent feedback about one capability which is not efficient/missing in the new page, which was to do with reviewing the test outcomes, test suites and test case details side-by-side when looking at the test case list - more details [here](https://developercommunity.visualstudio.com/idea/1060525/keep-the-old-test-plans-view.html). We are in the process of evaluating the possible options given the constraints of the design system. As such, we are pausing on the deadline for switching to the new Test Plans page. Once we have more clarity on the solution, we will revisit the deadline timelines.
+We had originally planned to pull out the old page by mid June 2020 with the assumption that most of the gaps have been addressed. However, recently, we have received consistent feedback about one capability, which is not efficient/missing in the new page, which was to do with reviewing the test outcomes, test suites and test case details side-by-side when looking at the test case list - more details [here](https://developercommunity.visualstudio.com/idea/1060525/keep-the-old-test-plans-view.html). We are in the process of evaluating the possible options given the constraints of the design system. As such, we are pausing on the deadline for switching to the new Test Plans page. Once we have more clarity on the solution, we will revisit the deadline timelines.
 
 We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the following steps:
 
@@ -35,19 +35,19 @@ We highly recommend leveraging the new page and [sharing your feedback](#feedbac
 ![test plan overview page](media/new-test-plans-page/test-plan-overview.png)
 
 
-The new Test Plans page has total of 6 sections of which the first 4 are new, while the Charts & Extensibility sections are the existing functionality. 
+The new Test Plans page has total of six sections of which the first four are new, while the Charts & Extensibility sections are the existing functionality. 
 1. **Test plan header**: Use this to locate, favorite, edit, copy or clone a test plan.
-2. **Test suites tree**: Use this to add, manage, export or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
-3. **Define tab**: Collate, add and manage test cases in a test suite of choice via this tab.
+2. **Test suites tree**: Use this to add, manage, export, or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
+3. **Define tab**: Collate, add, and manage test cases in a test suite of choice via this tab.
 4. **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
-5. **Chart tab**: Track test execution and status via charts which can also be pinned to dashboards.
+5. **Chart tab**: Track test execution and status via charts, which can also be pinned to dashboards.
 6. **Extensibility**: Supports the [current extensibility points](/azure/devops/extend/overview) within the product.
 
 Lets take a broad stroke view of these new sections below.
 
 
 <a name="testplanheader"></a>
-## 1. Test plan header
+## Test plan header
 
 ![test plan header page](media/new-test-plans-page/test-plan-header.png)
 
@@ -76,12 +76,12 @@ The context menu on the Test Plan header provides the following options:
 
 ![copy test plan page](media/new-test-plans-page/copy-test-plan-dialog.png)
 
-We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging it you can copy or clone test plans within the project. Its backing REST API is covered [here](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). The API lets you copy/clone a test plan across projects too.<br>
+We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging 'Copy test plan' capability, you can copy or clone test plans within the project. Its backing REST API is covered [here](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). The API lets you copy/clone a test plan across projects too.<br>
 For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/07/22/test-planning-and-management-guide-updated/).
 
 
 <a name="testsuitestree"></a>
-## 2. Test suites tree
+## Test suites tree
 
 ![test suites tree page](media/new-test-plans-page/test-suites-tree.png)
 
@@ -89,7 +89,7 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 
 The Test suite header allows you to perform the following tasks:
 
-- *Expand/collapse*: This toolbar options allows you to expand or collapse the suite hierarchy tree.
+- *Expand/collapse*: This toolbar option allows you to expand or collapse the suite hierarchy tree.
 - *Show test points from child suites*: This toolbar option is only visible when you are in the "Execute" tab. This allows you to view all the test points for the given suite and its children in one view for easier management of test points without having to navigate to individual suites one at a time. 
 - *Order suites*: You can drag/drop suites to either reorder the hierarchy of suites or move them from one suite hierarchy to another within the test plan. 
 
@@ -98,7 +98,7 @@ The Test suite header allows you to perform the following tasks:
 
 The context menu on the Test suites tree provides the following options:
 
-- *Create new suites*: You can create 3 different types of suites as follows: 
+- *Create new suites*: You can create three different types of suites as follows: 
 	- Use static suite or folder suite to organize your tests.
 	- Use requirement-based suite to directly link to the requirements/user stories for seamless traceability.
 	- Use query-based to dynamically organize test cases that meet a query criteria.
@@ -114,16 +114,16 @@ The context menu on the Test suites tree provides the following options:
 
 ![test suites tree import page](media/new-test-plans-page/import-test-suites.png)
 
-It is now easier to reuse the suites you have created already and import them into the current suite/plan. You can select the project, test plan and test suite from which you want to import the tests. Depending upon the suite selected, then entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone/copy. 
+It is now easier to reuse the suites you have created already and import them into the current suite/plan. You can select the project, test plan, and test suite from which you want to import the tests. Depending upon the suite selected, the entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone/copy. 
 
 
 <a name="definetab"></a>
-## 3. Define tab
+## Define tab
 
 ![define tab page](media/new-test-plans-page/define-tab-toolbar.png)
 
 
-Define tab lets you collate, add and manage test cases for a test suite. Whereas the execute tab is for assigning test points and executing them. 
+Define tab lets you collate, add, and manage test cases for a test suite. Whereas the execute tab is for assigning test points and executing them. 
 
 > The Define tab and certain operations are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Everything else should be exercisable by a user with 'Basic' access level.
 
@@ -137,7 +137,7 @@ The Define tab allows you to perform the following tasks:
 - *Add Existing test cases using a query*: This option allows you to add existing test cases to the suite by specifying a query. 
 - *Order test cases by drag/drop*: You can reorder test cases by dragging/dropping of one or more test cases within a given suite. The order of test cases only applies to manual test cases and not to automated tests.
 - *Move test cases from one suite to another*: Using drag/drop, you can move test cases from one test suite to another. 
-- *Export / Import as CSV*: Using this option, you can export the existing test cases to Excel CSV file, make changes to the CSV file and then import the file back into the suite. This has been one of the most requested feature and we are happy to share that we are opening this for beta testing. See [here for more options.](https://pkuma-msft.github.io/azure-test-plans/articles/testcase-import-export-csv.html)
+- *Export / Import as CSV*: Using this option, you can export the existing test cases to Excel CSV file, make changes to the CSV file and then import the file back into the suite. This has been one of the most requested features and we are happy to share that we are opening this for beta testing. See [here for more options.](https://pkuma-msft.github.io/azure-test-plans/articles/testcase-import-export-csv.html)
 - *Show grid*: You can use the grid mode for viewing/editing test cases along with test steps.
 - *Full screen view*: You can view the contents of the entire Define tab in a full screen mode using this option. 
 - *Filtering*: Using the filter bar, you can filter the list of test cases using the fields of "test case title", "assigned to" and "state". You can also sort the list by clicking on the column headers.
@@ -174,7 +174,7 @@ Traceability among test artifacts, requirements and bugs is a critical value pro
 
 
 <a name="executetab"></a>
-## 4. Execute tab
+## Execute tab
 
 
 ![execute tab page](media/new-test-plans-page/execute-tab-toolbar.png)

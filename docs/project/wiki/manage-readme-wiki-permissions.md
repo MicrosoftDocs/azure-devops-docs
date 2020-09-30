@@ -50,11 +50,11 @@ If you don't have access to create a wiki page, you need to contact an administr
 
 ## Stakeholder wiki access
 
-Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read wiki pages and view revisions, however they can't perform any edit operations. For example, stakeholders can't create, edit, reorder, or revert changes to pages. These permissions can't be changed. They have full access to Wikis in public projects.
+Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read wiki pages and view revisions, however they can't do any edit operations. For example, stakeholders aren't able to create, edit, reorder, or revert changes to pages. These permissions can't be changed. They have full access to Wikis in public projects.
 
 <img src="media/wiki/wiki-stakeholders.png" alt="Wiki stakeholders cannot edit or create pages" style="border: 1px solid #C3C3C3;" />
 
-## Frequently asked questions (FAQs)
+## FAQ
 
 ### Q: Is it possible to grant permissions on a per-page basis?
 

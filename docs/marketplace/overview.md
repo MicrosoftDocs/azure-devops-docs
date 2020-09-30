@@ -60,7 +60,7 @@ Add an extension to your organization by first searching for and then installing
 
 You can search for extensions from the marketplace with the [az devops extension search](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-search) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
-```CLI
+```azurecli
 az devops extension search --search-query
 ```
 
@@ -72,7 +72,7 @@ az devops extension search --search-query
 
 The following command searches the marketplace for the term **Timetracker** and returns the *Publisher ID* and *Extension ID* in table format.  
 
-```CLI 
+```azurecli 
 az devops extension search --search-query Timetracker --output table
 
 Publisher Id    Extension Id    Name

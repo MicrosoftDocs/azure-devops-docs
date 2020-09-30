@@ -24,40 +24,40 @@
     href: ../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Revoke users' PATs (for admins)
     href: ../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Manage user access  
+- name: Manage user access
   items:
   - name: Add users & manage access (cloud)
-    href: ../accounts/add-organization-users.md 
+    href: ../accounts/add-organization-users.md
   - name: Change access levels (on-premises)
-    href: change-access-levels.md 
-  - name: Add users to a project or team 
+    href: change-access-levels.md
+  - name: Add users to a project or team
     href: add-users-team-project.md
-  - name: Remove user accounts 
-    href: remove-users-prohibit-access.md 
-- name: Manage access with Active Directory  
+  - name: Remove user accounts
+    href: remove-users-prohibit-access.md
+- name: Manage access with Active Directory
   items:
   - name: Active Directory groups 
     href: /azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: About access with Azure AD
-    href: ../accounts/access-with-azure-ad.md  
-  - name: Set up Active Directory or Azure AD  
+    href: ../accounts/access-with-azure-ad.md
+  - name: Set up Active Directory or Azure AD
     href: setup-ad-aad.md
-  - name: Add & delete users in Azure AD
-    href: ../accounts/add-users-to-azure-ad.md 
-  - name: Add AD/Azure AD security groups to built-in security groups  
+  - name: Add or delete users in Azure AD
+    href: https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Add AD/Azure AD security groups to built-in security groups
     href: add-ad-aad-built-in-security-groups.md
   - name: Manage groups
-    href: ../accounts/manage-azure-active-directory-groups.md 
+    href: ../accounts/manage-azure-active-directory-groups.md
   - name: Manage group rules
-    href: ../accounts/assign-access-levels-and-extensions-by-group-membership.md 
+    href: ../accounts/assign-access-levels-by-group-membership.md
   - name: Connect organization to Azure AD
-    href: ../accounts/connect-organization-to-azure-ad.md 
+    href: ../accounts/connect-organization-to-azure-ad.md
   - name: Change Azure AD connection
-    href: ../accounts/change-azure-ad-connection.md 
+    href: ../accounts/change-azure-ad-connection.md
   - name: Disconnect from Azure AD
-    href: ../accounts/disconnect-organization-from-azure-ad.md 
+    href: ../accounts/disconnect-organization-from-azure-ad.md
   - name: Get list of orgs backed by Azure AD
-    href: ../accounts/get-list-of-organizations-connected-to-azure-active-directory.md 
+    href: ../accounts/get-list-of-organizations-connected-to-azure-active-directory.md
 - name: Manage access policies (cloud)
   items:
   - name: Manage security & app access policies
@@ -84,6 +84,8 @@
     href: change-individual-permissions.md
   - name: Grant or restrict permissions to select tasks
     href: restrict-access.md   
+  - name: Manage permissions with CLI
+    href: manage-tokens-namespaces.md 
 - name: Set permissions for an object or role
   items: 
   - name: Set work tracking & plan permissions 
@@ -131,8 +133,6 @@
     href: permissions-lookup-guide.md
   - name: Permissions & groups 
     href: permissions.md
-  - name: Manage tokens & namespaces
-    href: manage-tokens-namespaces.md 
   - name: Git permissions prior to TFS 2017 Update 1
     href: git-permissions-before-2017.md
   - name: Web site settings & security (on-premises)

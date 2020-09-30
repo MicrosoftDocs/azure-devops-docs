@@ -62,11 +62,15 @@ You [add users to the following roles](../../pipelines/policies/set-permissions.
 
 [!INCLUDE [temp](includes/deployment-pool-roles.md)]
 
+<a id="library-roles" /> 
+
 ## Library asset security roles: Variable groups and secure files
 
 You [add users to a library role](../../pipelines/policies/set-permissions.md) from **Pipelines** or **Build and Release**. To learn more about using these library assets, see [Variable groups](../../pipelines/library/variable-groups.md) and [Secure files](../../pipelines/library/secure-files.md)
 
 [!INCLUDE [temp](includes/library-roles.md)]
+
+<a id="service-endpoint-roles" /> 
 
 ## Service connection security roles
 
@@ -93,6 +97,6 @@ For details, see [Manage teams and configure team tools](../settings/manage-team
 
 - [About permissions and groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
-- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md). 
+- [Add or delete users using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
  
  

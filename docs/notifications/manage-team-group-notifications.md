@@ -47,7 +47,7 @@ A subscription lets you control what your team should be notified about and how 
 
 4. Provide a description to help you identify the subscription later.
 
-    ![Select event category and template](media/new-sub-description.png)
+    ![Provide a description.](media/new-sub-description.png)
 
 5. Choose which team members should receive a notification:
 
@@ -67,7 +67,7 @@ A subscription lets you control what your team should be notified about and how 
 
 7. Optionally configure additional filter criteria.
 
-    ![Select scope](media/new-sub-filter-conditions.png)
+    ![Configure additional filter criteria.](media/new-sub-filter-conditions.png)
 
 8. Select **Finish** to save the new subscription.
 
@@ -90,7 +90,7 @@ A subscription lets you control what your team should be notified about and how 
 
 4. Provide a description to help you identify the subscription later.
 
-    ![Select event category and template](media/new-sub-description.png)
+    ![Provide a description.](media/new-sub-description.png)
 
 5. Choose which team members should receive a notification:
 
@@ -110,7 +110,7 @@ A subscription lets you control what your team should be notified about and how 
 
 7. Optionally configure additional filter criteria.
 
-    ![Select scope](media/new-sub-filter-conditions.png)
+    ![Configure additional filter criteria.](media/new-sub-filter-conditions.png)
 
 8. Select **Finish** to save the new subscription.
 
@@ -133,7 +133,7 @@ A subscription lets you control what your team should be notified about and how 
 
 4. Provide a description to help you identify the subscription later.
 
-    ![Select event category and template](media/new-sub-description.png)
+    ![Provide a description.](media/new-sub-description.png)
 
 5. Choose which team members should receive a notification:
 
@@ -153,7 +153,7 @@ A subscription lets you control what your team should be notified about and how 
 
 7. Optionally configure additional filter criteria.
 
-    ![Select scope](media/new-sub-filter-conditions.png)
+    ![Configure additional filter criteria.](media/new-sub-filter-conditions.png)
 
 8. Select **Finish** to save the new subscription.
 
@@ -192,6 +192,7 @@ Manage your group notifications by updating the group's **Delivery settings**.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
+ 
   ![Open Organization settings](../media/settings/open-admin-settings-vert.png)
 
 3. Select **Global notifications** > **Subscribers**, enter and find your group, and then select **Delivery settings**.
@@ -200,7 +201,7 @@ Manage your group notifications by updating the group's **Delivery settings**.
 
 4. Choose which option best fits your group's needs, and then select **Save**.  
 
-    ![Delivery settings options](media/group-delivery-settings.png)
+   ![Delivery settings options](media/group-delivery-settings.png)
 
 Your group delivery settings are updated for notifications.
 

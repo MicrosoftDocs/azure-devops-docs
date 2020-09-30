@@ -67,18 +67,18 @@ The follow table indicates which preview features can be enabled per user or tea
       [New account manager](#account-manager)  
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
       &nbsp;  
       &nbsp;  
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -90,18 +90,18 @@ The follow table indicates which preview features can be enabled per user or tea
       [New Settings Search in the organization settings panel](#search-org-settings)  
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️  
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -113,18 +113,18 @@ The follow table indicates which preview features can be enabled per user or tea
       [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️  
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -135,13 +135,13 @@ The follow table indicates which preview features can be enabled per user or tea
    :::column-end:::
    :::column span="1":::
       &nbsp;  
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
    :::column-end:::
    :::column span="1"::: 
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 ---
@@ -176,16 +176,16 @@ The follow table indicates those features that you can enable as a user, project
       [Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download)  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+      ✔️   
       &nbsp;   
    :::column-end:::
    :::column span="1":::
       &nbsp;     
-      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+      ✔️   
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+      ✔️   
+      ✔️   
    :::column-end:::
 :::row-end:::
 ---

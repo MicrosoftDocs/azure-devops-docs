@@ -1,6 +1,6 @@
 ---
 title: Publish packages to Azure Artifacts
-ms.custom: seodec18, tracking-python
+ms.custom: seodec18, devx-track-python
 description: Publish Python packages to Azure Artifacts feeds via builds with Azure Pipelines
 services: vsts
 ms.topic: conceptual
@@ -69,7 +69,7 @@ The example below will enable you to authenticate to a list of Azure Artifacts f
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/package/media/python-twine-authenticate.png) **Package: Python Twine Upload Authenticate**
+:::image type="icon" source="../tasks/package/media/python-twine-authenticate.png" border="false"::: **Package: Python Twine Upload Authenticate**
 
 * My feeds 
 
@@ -100,7 +100,7 @@ Check out the [YAML schema reference](../yaml-schema.md#script) for more details
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/media/powershell.png) **Utility: PowerShell**
+:::image type="icon" source="../tasks/utility/media/powershell.png" border="false"::: **Utility: PowerShell**
 
 * Type:
 

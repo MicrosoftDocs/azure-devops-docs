@@ -166,7 +166,7 @@ The new build pipeline offers you some new options. For example:
 
 #### TF Version Control
 
-![xaml source settings git tfs](media/migrate-from-xaml-builds/xaml-build-template-12-tf-version-control.png)
+![XAML source settings, TFVC.](media/migrate-from-xaml-builds/xaml-build-template-12-tf-version-control.png)
 
 | XAML process parameter | TFS 2017 and newer equivalent | Azure Pipelines equivalent |
 |-|-|-|
@@ -178,7 +178,7 @@ The new build pipeline offers you some new options. See [Build TFVC repositories
 
 #### Git
 
-![xaml source settings git tfs](media/migrate-from-xaml-builds/git-template-12-xaml-git.png)
+![XAML source settings, Git.](media/migrate-from-xaml-builds/git-template-12-xaml-git.png)
 
 | XAML process parameter | TFS 2017 and newer equivalent | Azure Pipelines equivalent |
 |-|-|-|
@@ -189,7 +189,7 @@ The new build pipeline offers you some new options. See [Pipeline options for Gi
 
 #### Build
 
-![xaml source settings git tfs](media/migrate-from-xaml-builds/xaml-build-template-12-build.png)
+![XAML source settings, Build.](media/migrate-from-xaml-builds/xaml-build-template-12-build.png)
 
 On the **Build** tab (TFS 2017 and newer) or the **Tasks** tab (Azure Pipelines), after you select the Visual Studio Build task, you'll see the arguments that are equivalent to the XAML build parameters.
 
@@ -214,13 +214,13 @@ Learn more: [Visual Studio Build task](../tasks/build/visual-studio-build.md) (f
 
 #### Test
 
-![xaml source settings git tfs](media/migrate-from-xaml-builds/xaml-build-template-12-test.png)
+![XAML source settings, Test.](media/migrate-from-xaml-builds/xaml-build-template-12-test.png)
 
 See [continuous testing](../ecosystems/dotnet-core.md#run-your-tests) and [Visual Studio Test task](../tasks/test/vstest.md).
 
 #### Publish Symbols
 
-![xaml source settings git tfs](media/migrate-from-xaml-builds/xaml-build-template-12-publish-symbols.png)
+![XAML source settings, Publish.](media/migrate-from-xaml-builds/xaml-build-template-12-publish-symbols.png)
 
 | XAML process parameter | TFS 2017 and newer, Azure Pipelines equivalent |
 |-|-|
@@ -228,7 +228,7 @@ See [continuous testing](../ecosystems/dotnet-core.md#run-your-tests) and [Visua
 
 #### Advanced
 
-![xaml source settings git tfs](media/migrate-from-xaml-builds/xaml-build-template-12-advanced.png)
+![XAML source settings, Advanced.](media/migrate-from-xaml-builds/xaml-build-template-12-advanced.png)
 
 | XAML process parameter | TFS 2017 and newer equivalent| Azure Pipelines equivalent |
 |-|-|-|

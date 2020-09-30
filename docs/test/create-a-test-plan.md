@@ -145,7 +145,7 @@ Now add test suites for the backlog items that need manual tests. These tests co
 <a name="findplan"></a>
 ## Find a test case in a test plan
 
-In **Test Plans** for your test plan, use the ![filter-icon](media/create-a-test-plan/filter-icon.png) filter icon (**1**) to show the search and filter lists (**2**) that help you find the tests you want to work with.
+In **Test Plans** for your test plan, use the :::image type="icon" source="media/create-a-test-plan/filter-icon.png" border="false"::: filter icon (**1**) to show the search and filter lists (**2**) that help you find the tests you want to work with.
 Or filter the list of tests using **Outcome**, **Tester**, and **Configuration** (**3**).
 
   ![Finding a test plan](media/create-a-test-plan/select-test-plan.png)

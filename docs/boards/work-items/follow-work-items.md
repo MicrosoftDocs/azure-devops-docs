@@ -136,7 +136,7 @@ From this view, you can view all items you're following across all projects. Als
 You can also view and manage work that you're following from **Boards>Work Items** and pivot to **Following**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Boards>Queries>All>Followed work items, new nav](media/follow-work/open-work-items-vert.png)   
+> ![Boards>Work Items, and pivot to Following.](media/follow-work/open-work-items-vert.png)   
 
 ::: moniker-end   
 

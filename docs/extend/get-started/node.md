@@ -5,16 +5,16 @@ description: Tutorial for creating your first web extension for Azure DevOps and
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.author: apawast
-author: apawast
-ms.date: 05/11/2018
+ms.author: chcomley
+author: chcomley
+ms.date: 08/12/2020
 ---
 
 # Develop a web extension
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../report/includes/version-tfs-2017-through-vsts.md)]
 
-Extensions enhance Azure DevOps and Team Foundation Server (TFS) with new web experiences, dashboard widgets, build tasks, and more. Extensions are developed using standard technologies like HTML, JavaScript, and CSS. They're packaged and published to the Visual Studio Marketplace, and can then be installed into an organization.
+Use extensions to enhance Azure DevOps and Team Foundation Server (TFS) with new web experiences, dashboard widgets, build tasks, and more. You can develop extensions using standard technologies like HTML, JavaScript, and CSS. They're packaged and published to the Visual Studio Marketplace, and can then be installed into an organization.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
@@ -33,9 +33,7 @@ This tutorial guides you through creating your first web extension, which includ
 
 You must have the following permission and installations.
 
-- You're an organization Owner. 
-
-   If you don't have a personal organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
+- You're an organization Owner. If you don't have an organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
 
 - Install [Node.js](https://nodejs.org).
 
@@ -55,14 +53,14 @@ An extension is composed of a set of files that includes a required manifest fil
    npm init -y
    ```
    
-   > This file describes the libraries required by your extension.
+   This file describes the libraries required by your extension.
 
 3. Install the Microsoft VSS Web Extension SDK package and save it to your NPM package manifest:
    ```
    npm install vss-web-extension-sdk --save
    ```
 
-   > This SDK includes a JavaScript library that provides APIs required for communicating with the page your extension is embedded in.
+   This SDK includes a JavaScript library that provides APIs required for communicating with the page your extension is embedded in.
 
 4. Create an extension manifest file named `vss-extension.json` at the root of your extension directory with the following content:
 
@@ -109,9 +107,9 @@ An extension is composed of a set of files that includes a required manifest fil
     ```
 
     >[!NOTE]
-    >The `public` property controls whether the extension is visible to everyone on the Visual Studio Marketplace. During development you should keep your extensions private.
+    >The `public` property controls whether the extension is visible to everyone on the Visual Studio Marketplace. Keep your extensions private during development.
 
-5. Create a file named `my-hub.html` at the root of your extension directory with the following content:
+5. Create a file named `my-hub.html` at the root of your extension directory with the following content, which is for the view (also known as a hub) contributed into the web experience.
 
     ```html
     <!DOCTYPE html>
@@ -139,9 +137,7 @@ An extension is composed of a set of files that includes a required manifest fil
     </html>
     ```
 
-    This is the content for the view (also known as a hub) contributed into the Azure DevOps web experience.
-
-6. At this point, your extension directory should look like this:
+6. Your extension directory should look like the following example.
 
     ```
     |-- my-hub.html
@@ -156,9 +152,9 @@ You're now ready to package, publish, and test your extension.
 
 ## Package and publish your extension
 
-#### Create a publisher
+### Create a publisher
 
-All extensions, including extensions from Microsoft, live under a publisher. Anyone can create a publisher and publish extensions under it. You can also give other people access to your publisher if a team is developing the extension.
+All extensions, including extensions from Microsoft, are under a publisher. Anyone can create a publisher and publish extensions under it. You can also give other people access to your publisher if a team is developing the extension.
 
 1. Sign in to the Visual Studio [Marketplace management portal](https://aka.ms/vsmarketplace-manage)
 
@@ -166,12 +162,12 @@ All extensions, including extensions from Microsoft, live under a publisher. Any
 
 3. In the Create Publisher form, enter your name in the publisher name field. The ID field should get set automatically based on your name:
 
-    :::image type="content" source="media/create-publisher.png" alt-text="Create publisher." :::
+    <img src="media/create-publisher.png" alt="Creat publisher" style="border: 1px solid #C3C3C3;" /> 
 
     >[!NOTE]
-    >Remember the ID. You need to set it in the manifest file of your extension.
+    >Make note of the ID. You need to set it in the manifest file of your extension.
 
-You're now ready to package your extension and publish (upload) it to the Marketplace. Keep this browser window open as you'll need to return here after you package your extension.
+You're now ready to package your extension and publish (upload) it to the Marketplace. Keep this browser window open as you'll return here after you package your extension.
 
 #### Package your extension
 
@@ -185,14 +181,15 @@ You're now ready to package your extension and publish (upload) it to the Market
     }
     ```     
 
-2. TFX requires the VSS Web Extensions SDK. If you haven't already installed it, open a command prompt and run this command: 
+2. TFX requires the VSS Web Extensions SDK. If you haven't already installed it, open a command prompt and run the following command. 
    
    ```
    npm install vss-web-extension-sdk --save
    ```
 
 
-3. From a command prompt, run the TFX tool's packaging command from your extension directory:
+3. From a command prompt, run the TFX tool's packaging command from your extension directory.
+
    ```
    tfx extension create
    ```
@@ -213,19 +210,17 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 1. From the [management portal](https://aka.ms/vsmarketplace-manage), select your publisher from the drop-down at the top of the page.
 
-2. Tap **New Extension** and select **Azure DevOps**:
-       
-    ![Upload new extension for Azure DevOps or TFS](media/upload-new-extension.png)
+2. Select **New extension**, and then select **Azure DevOps**.
 
-3. Select the link in the center of the Upload dialog to open a browse dialog. 
+    <img src="media/upload-new-extension.png" alt="Visual Studio Marketplace new extension development" style="border: 1px solid #C3C3C3;" /> 
 
-4. Locate the .vsix file (created in the packaging step above) and choose **Upload**:
+3. Drag and drop your file or select **click** to find your VSIX file, which you created in the previous packaging step, and then choose **Upload**. 
 
    ![Upload new extension for Azure DevOps or TFS](media/upload-new-extension2.png)
 
-5. After a few seconds, your extension appears in the list of published extensions. Don't worry, the extension is only visible to you.
+   After a few seconds, your extension appears in the list of published extensions. Don't worry, the extension is only visible to you.
 
-   ![Upload new extension for Azure DevOps or TFS](media/published-extension.png)
+   <img src="media/published-extension.png" alt="Extension appears in the list of published extensions." style="border: 1px solid #C3C3C3;" /> 
 
 ## Install your extension
 
@@ -233,28 +228,38 @@ To test an extension, it must be installed to an organization in Azure DevOps or
 
 1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare**.
 
-   ![Upload new extension for Azure DevOps or TFS](media/share-menu.png)
+   <img src="media/share-menu.png" alt="Select extension and choose Share." style="border: 1px solid #C3C3C3;" /> 
 
-2. Select the **+ Organization** button, enter the name of your organization, and press enter.
+2. Select **Organization**, and then enter the name of your organization. Select **Enter**.
 
-   ![Share with account](media/share-dialog.png)
+   <img src="media/share-dialog.png" alt="Share with organization" style="border: 1px solid #C3C3C3;" /> 
 
-3. Select the **X** to close this panel.
+3. Close the panel.
 
-Your extension can now be installed into this organization.
+   Your extension can now be installed into this organization.
 
-4. Right-click your extension and choose  **View Extension** to open its details page
+4. In the Marketplace, select your extension to open its overview page.
 
-   ![Details page](media/details-page.png)
+:::moniker range="<= tfs-2018"
 
-   >[!NOTE]
-   >Because your extension is private, only you (as the publisher of the extension) and any member of the organization it is shared with can see this page.
+   <img src="media/details-page.png" alt="Overview page" style="border: 1px solid #C3C3C3;" /> 
 
-5. Select **Get it free** to start the installation process. The organization you shared the extension with should be selected:
+:::moniker-end
 
-   ![Install extension panel](media/install-dialog.png)
+::: moniker range=">= azure-devops-2019"
+   
+  <img src="media/details-page2.png" alt="Overview page" style="border: 1px solid #C3C3C3;" /> 
 
-6. Select **Install**.
+:::moniker-end
+
+  > [!NOTE]
+  > Because your extension is private, only you and any member of the organization it is shared with can see this page.
+
+1. Select **Get it free** to start the installation process. Select the organization you shared the extension with from the dropdown menu.
+
+   <img src="media/install-dialog.png" alt="Instal extension panel" style="border: 1px solid #C3C3C3;" /> 
+
+2. Select **Install**.
 
 Congratulations! Your extension is now installed into an organization and is ready to be tested.
 
@@ -262,17 +267,29 @@ Congratulations! Your extension is now installed into an organization and is rea
 
 Your extension contributed a view named "My Hub" to the project-level Code area. Let's navigate to it.
 
-1. Tap the **Proceed to organization** button at the end of the installation wizard to navigate to the home page of the organization the extension was installed to (`https://dev.azure.com/{organization}`).
+1. Select **Proceed to organization** at the end of the installation wizard to navigate to the home page of the organization the extension was installed to (`https://dev.azure.com/{organization}`).
+
+:::moniker range="<= tfs-2018"
 
 2. Select any of the projects listed to navigate into it:
 
-   ![Install extension panel](media/account-home2.png)
+   <img src="media/account-home2.png" alt="select project" style="border: 1px solid #C3C3C3;" /> 
 
-   > If there are no projects in your organization, you are prompted to create one.
+   If there aren't any projects in your organization, you're prompted to create one.
 
 3. Navigate to the Code area and then to the hub contributed by your extension (**My Hub**):
 
    ![My hub](media/my-hub.png)
+
+:::moniker-end
+
+:::moniker range=">= azure-devops-2019"
+
+2. Select **Organization settings**, and then select **Extensions** to see your newly installed extension.
+
+   <img src="media/organization-settings-extensions.png" alt="Organization settings, extensions page" style="border: 1px solid #C3C3C3;" /> 
+
+:::moniker-end
    
 ## Debugging your extension
 
@@ -285,14 +302,19 @@ To debug the extension using Visual Studio or Browser Developer Tools and speed 
 }
 ```     
 
-Changing the manifest tells Azure DevOps to load the extension from your local web server instance (for example, IISExpress in Visual Studio).
+Changing the manifest loads the extension from your local web server instance. For example, IISExpress in Visual Studio.
 After you change the manifest, deploy and install this debugging extension only once.
 
 > [!NOTE]
-> You have to run your local web server in SSL mode, because Azure DevOps and TFS demand that web page is served from a secure source otherwise you obtain an error in browser console during the extension IFRAME loading.
+> Run your local web server in SSL mode, because Azure DevOps and TFS demand that the web page is served from a secure source otherwise you obtain an error in browser console during the extension IFRAME loading.
 
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Explore the samples](https://github.com/Microsoft/vsts-extension-samples/)
+> [Explore the extension samples](../develop/samples-overview.md)
+
+## Related articles
+
+- [Developer Formula Design System](https://developer.microsoft.com/azure-devops/)
+

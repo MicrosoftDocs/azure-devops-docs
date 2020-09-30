@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
 
-If you don't have permissions to install extensions, you can request extensions instead. As a Project Collection Administrator, you get an email when another project member requests an extension. After you approve the request, the extension is automatically installed to Azure DevOps. In this article, learn how to do the following tasks:
+If you don't have permissions to install extensions, you can request extensions instead. As a Project Collection Administrator, you get an email when another project member requests an extension. After you approve the request, the extension is automatically installed to Azure DevOps. Learn how to do the following tasks:
 
 - [Request and approve extensions](#request-and-approve-extensions)
   - [Prerequisites](#prerequisites)
@@ -143,4 +143,4 @@ Tell your team about installed extensions, so they can start using their capabil
 - [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md)
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 - [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
-- [Assign access levels and extensions by group membership](../organizations/accounts/assign-access-levels-and-extensions-by-group-membership.md)
+- [Assign access levels by group membership](../organizations/accounts/assign-access-levels-by-group-membership.md)

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Compare files
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 This article provides a guide for comparing files when using Team Foundation Version Control (TFVC). If you're using Git for version control, see [comparing files with Git and Visual Studio](../../repos/git/review-history.md).  
 
@@ -54,7 +54,7 @@ Compare your work with the latest version on your Team Foundation Server while c
     -   Choose **Compare with Workspace Version** to see what changes you have made to the version you checked out.
 
         > [!TIP]
-        >  You can also press Ctrl+Shift and then double-click the file.
+        >  You can also press Shift and then double-click the file.
 
     -   Choose **Compare with Latest Version** to see how the changes you have made compare to the latest version of the file on your Team Foundation Server.
 
