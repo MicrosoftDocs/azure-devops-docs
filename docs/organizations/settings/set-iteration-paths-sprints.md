@@ -348,7 +348,7 @@ For example, the following command adds Sprint 36 which starts on September 1, 2
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az boards iteration project create --name "Sprint 36" --start-date 2019-09-01 --finish-date 2019-09-30
+az boards iteration project create --name "Sprint 36" --start-date 2019-09-01 --finish-date 2019-09-30
 {
   "attributes": {
     "finishDate": "2019-09-30T00:00:00Z",
@@ -445,7 +445,7 @@ For example, the following command lists the area paths for the Service Delivery
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az boards iteration team list  --team "Service Delivery"  --project "Fabrikam Fiber" --output table
+az boards iteration team list  --team "Service Delivery"  --project "Fabrikam Fiber" --output table
 ID                                    Name       Start Date                 Finish Date                Time Frame    Path
 ------------------------------------  ---------  -------------------------  -------------------------  ------------  ---------------------------------
 c7063041-ff3a-4d7f-bb46-c433c7030d59  Sprint 1   2019-01-01T00:00:00+00:00  2019-01-18T00:00:00+00:00  past          Fabrikam Fiber\Release 1\Sprint 1
@@ -615,7 +615,7 @@ For example, the following command adds \Fabrikam Fiber\Iteration\Release 2 path
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az boards iteration team add --id a0554e98-b1f1-4230-8500-733c739a0113 --team "Service Delivery" --project "Fabrikam Fiber"
+az boards iteration team add --id a0554e98-b1f1-4230-8500-733c739a0113 --team "Service Delivery" --project "Fabrikam Fiber"
 {
   "attributes": {
     "finishDate": null,
@@ -710,7 +710,7 @@ For example, the following command updates the start and end dates of the Sprint
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az boards iteration project update --path "\Fabrikam Fiber\Iteration\Release 1\Sprint 3" --finish-date 2019-08-31 --start-date 2019-08-01 --project "Fabrikam Fiber" --output table
+az boards iteration project update --path "\Fabrikam Fiber\Iteration\Release 1\Sprint 3" --finish-date 2019-08-31 --start-date 2019-08-01 --project "Fabrikam Fiber" --output table
 ID     Identifier                            Name      Start Date            Finish Date           Path                                          Has Children
 -----  ------------------------------------  --------  --------------------  --------------------  --------------------------------------------  --------------
 55340  862e961a-ac7a-4fcc-9ebc-8afd0c12fed5  Sprint 3  2019-08-01T00:00:00Z  2019-08-31T00:00:00Z  \Fabrikam Fiber\Iteration\Release 1\Sprint 3  False

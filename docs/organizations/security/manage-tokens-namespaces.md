@@ -102,7 +102,7 @@ Enter `az devops security permission namespace list` to list the namespaces defi
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C: az devops security permission namespace list --org https://dev.azure.com/OrganizationName --output table
+az devops security permission namespace list --org https://dev.azure.com/OrganizationName --output table
  
 Id                                    Name
 ------------------------------------  ------------------------------

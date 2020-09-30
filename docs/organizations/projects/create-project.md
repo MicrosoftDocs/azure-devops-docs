@@ -279,7 +279,7 @@ The following command creates a new project named *MyFirstProject* under the Fab
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops project create --name MyFirstProject --description "Test project 1" --org https://dev.azure.com/fabrikam/ --process Agile --source-control  git --output table
+az devops project create --name MyFirstProject --description "Test project 1" --org https://dev.azure.com/fabrikam/ --process Agile --source-control  git --output table
 ID                                    Name             Visibility    Process    Source Control
 ------------------------------------  ---------------  ------------  ---------  ----------------
 be87c31a-fbb3-4377-b207-57a8caf65e31  MyFirstProject1  Private       Agile      Git
@@ -507,7 +507,7 @@ The following command lists the projects defined under the Fabrikam organization
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops project list --org https://dev.azure.com/fabrikam/ --output table
+az devops project list --org https://dev.azure.com/fabrikam/ --output table
 ID                                    Name                Visibility
 ------------------------------------  ------------------  ------------
 647c53b6-01aa-462a-adb7-da81d5620167  Agile 11            Private
@@ -551,7 +551,7 @@ The following command lists information for `MyFirstProject` under the Fabrikam 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops project show --project MyFirstProject --open --org https://dev.azure.com/fabrikam/ --output table
+az devops project show --project MyFirstProject --open --org https://dev.azure.com/fabrikam/ --output table
 ID                                    Name            Visibility    Process            Source Control
 ------------------------------------  --------------  ------------  -----------------  ----------------
 40751c1d-236b-418d-9df4-d5cc7c0e7bd6  MyFirstProject  Private       Scrum - Inherited  Git

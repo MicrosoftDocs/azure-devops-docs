@@ -21,13 +21,13 @@ Before you start, [install the Gradle build tool](https://gradle.org/install/). 
 
 From a command prompt, verify that you have the Java JDK or JRE version 7 or later:
 
-```azurecli
+```cli
 java -version
 ```
 
 And then install Gradle. Once it completes, confirm the installation from a command prompt:
 
-```azurecli
+```cli
 gradle -v
 ```
 
@@ -115,7 +115,7 @@ public class HelloWorld {
 
 Build the code by running Gradle from a command prompt:
 
-```azurecli
+```cli
 gradle build
 ```
 
@@ -125,7 +125,7 @@ If the build is successful, you will see `BUILD SUCCESSFUL` displayed when it co
 
 Run the following from a command prompt:
 
-```azurecli
+```cli
 gradle wrapper
 ```
 

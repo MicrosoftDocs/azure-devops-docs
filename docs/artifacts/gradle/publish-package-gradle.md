@@ -23,7 +23,7 @@ Note that Gradle itself requires a prior installation of the Java JDK or JRE (ve
 
 To verify that you have the Java JDK or JRE version 7 or later installed, run the following command in an elevated command prompt:
 
-```azurecli
+```CLI
 java -version
 ```
 
@@ -31,7 +31,7 @@ If the above command returns a java version then you can now install Gradle, oth
 
 Once Gradle installation is complete, you can confirm the installation with the following command:
 
-```azurecli
+```CLI
 gradle -v
 ```
 
@@ -153,7 +153,7 @@ publishing and downloading to use separate organizations, if you prefer.
 
 Run the following command in an elevated command prompt:
 
-```azurecli
+```CLI
 gradle publish
 ```
 

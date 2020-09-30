@@ -150,7 +150,7 @@ For example, the following command renames the Account Management team to Organi
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops team update --team "Account Management" --name "Organization Management" --description "Management team focused on creating and maintaining customer services for organizations"
+az devops team update --team "Account Management" --name "Organization Management" --description "Management team focused on creating and maintaining customer services for organizations"
 {
   "description": "Management team focused on creating and maintaining customer services for organizations",
   "id": "7f099146-29a2-4798-9949-77c9f5f79653",
@@ -328,7 +328,7 @@ az devops team delete --id
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops team delete --id 5385556a-254d-4ad4-bd11-71955e3a7070 --project "Fabrikam Fiber"
+az devops team delete --id 5385556a-254d-4ad4-bd11-71955e3a7070 --project "Fabrikam Fiber"
 Are you sure you want to delete this team? (y/n): y
 
 ```
