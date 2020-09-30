@@ -35,8 +35,8 @@ You might receive this error when you try to connect to Azure DevOps Services or
 |The TFS configuration has changed.|If the configuration for the on-premises Azure DevOps Server has changed, you must create a new connection. You might also need to [clear the client cache](../../organizations/projects/connect-to-projects.md).|  
 |You work remotely and need to connect to a TFS Proxy server to check in files to Team Foundation version control.| [Configure Visual Studio to connect to TFS Proxy](../../organizations/projects/connect-to-projects.md).|  
 |You're connecting to a later version of TFS than your Visual Studio client version.|Your version of Visual Studio or Team Explorer might be incompatible with Team Foundation Server. You might need to install one or more GDR packs. See [Requirements and compatibility](/azure/devops/server/requirements) for details.|  
-|Your firewall is blocking TFS services.|See [Allow a program to communicate through Windows Firewall](https://technet.microsoft.com/library/cc766312.aspx).|  
-|Visual Studio stops responding when you run a query in Visual Studio.|Your computer might be configured to bypass the proxy server. Verify the configuration of the BypassProxyOnLocal setting on your computer. For more information, see [BypassProxyOnLocal Configuration](https://msdn.microsoft.com/library/ee248646.aspx).|  
+|Your firewall is blocking TFS services.|See [Allow a program to communicate through Windows Firewall](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766312(v=ws.10)).|  
+|Visual Studio stops responding when you run a query in Visual Studio.|Your computer might be configured to bypass the proxy server. Verify the configuration of the BypassProxyOnLocal setting on your computer. For more information, see [BypassProxyOnLocal Configuration](/previous-versions/visualstudio/visual-studio-2008/ee248646(v=vs.90)).|  
   
 ## Several users can't connect to an on-premises Azure DevOps Server 
   
@@ -55,4 +55,4 @@ You might receive this error when you try to connect to Azure DevOps Services or
 |Trust relationships between domains aren't configured correctly.|If a group of users can't access Team Foundation Server, you might have trust issues between domains.|  
 |When users connect to different versions of TFS from Visual Studio, for example, they connect to TFS 2012 and then TFS 2008, they can get the TF31002 error.|This error can occur because the GUIDs for the TFS 2012 collection are the same as TFS 2008. The local client cache gets confused because it tries to maintain the same GUID-based local cache for both the 2008 server and the new Project Collection in 2012.<br /><br /> To fix, run the **TFSConfig ChangeServerID** command. See [TFSConfig ChangeServerID command](/azure/devops/server/command-line/tfsconfig-cmd#changeserverid).|  
   
- If the previous resolutions don't solve the problem, go to the [MSDN Forums - Visual Studio Team System &mdash;Team Foundation Server - Administration](https://go.microsoft.com/fwlink/?LinkId=54490).
+ If the previous resolutions don't solve the problem, go to the [MSDN Forums - Visual Studio Team System &mdash;Team Foundation Server - Administration](../../user-guide/provide-feedback.md).
