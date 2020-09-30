@@ -20,7 +20,7 @@ If you need to switch your team project, choose the :::image type="icon" source=
 You can view and open a wiki page defined for a project using the `az devops wiki show` command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index).
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki show --wiki
                       [--open]
                       [--project]
@@ -51,7 +51,7 @@ az devops wiki show --wiki
 Open a wiki named 'myprojectwiki'.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki show --wiki myprojectwiki --open
 ```
 
@@ -60,7 +60,7 @@ az devops wiki show --wiki myprojectwiki --open
 To get the content of a page via the Azure DevOps CLI, enter the `az devops wiki show` command. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page show --path
                          --wiki
                          [--include-content]
@@ -84,7 +84,7 @@ az devops wiki page show --path
 Get wiki page content with path 'my wiki' in a wiki named 'myprojectwiki'.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page show --path 'my wiki' --wiki 'myprojectwiki' --content "Hello World"
 ```
 

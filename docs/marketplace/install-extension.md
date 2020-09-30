@@ -62,7 +62,7 @@ You can install an extension with the [az devops extension install](/cli/azure/e
 
 If necessary, first search for an extension with the [az devops extension search](overview.md#search-extension) command.
 
-```CLI 
+```azurecli 
 az devops extension install --extension-id
                             --publisher-id
                             [--org]
@@ -78,7 +78,7 @@ az devops extension install --extension-id
 
 The following command installs the **Timetracker** extension and shows the result in YAML format.  
 
-```CLI
+```azurecli
 az devops extension install --extension-id Timetracker --publisher-id 7pace --output yaml
 
 baseUri: null

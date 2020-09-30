@@ -92,7 +92,7 @@ We'll start out by creating a Git repository, and importing the code from your l
 repository on the client computer. If you have not already cloned the Demo_CI repository to your
 client computer, do so now by running the following git command:
 
-```CLI
+```azurecli
 git clone https://github.com/PowerShell/Demo_CI
 ```
 

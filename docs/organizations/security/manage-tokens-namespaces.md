@@ -83,7 +83,7 @@ The following parameters are optional for all commands, and not listed in the ex
 You can list all available namespaces for an organization with the [az devops security permission namespace list](/cli/azure/ext/azure-devops/devops/security/permission/namespace#ext-azure-devops-az-devops-security-permission-namespace-list) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission namespace list [--local-only]
 ```
 
@@ -101,7 +101,7 @@ Enter `az devops security permission namespace list` to list the namespaces defi
 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 C: az devops security permission namespace list --org https://dev.azure.com/OrganizationName --output table
  
 Id                                    Name
@@ -176,7 +176,7 @@ a39371cf-0841-4c16-bbd3-276e341bc052  VersionControlItems
 The following command lists only the local security namespaces for your organization and shows the results in table format.  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission namespace list --local-only --output table
 
 Id                                    Name
@@ -200,7 +200,7 @@ e06e1c24-e93d-4e4a-908a-7d951187b483  TestManagement
 You can list the tokens for a specified namespace and user or group with the [az devops security permission list](/cli/azure/ext/azure-devops/devops/security/permission#ext-azure-devops-az-devops-security-permission-list) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission list --id
                                    --subject
                                    [--recurse]
@@ -219,7 +219,7 @@ az devops security permission list --id
 The following command lists the tokens in table format for the specified namespace, which corresponds to Analytics, and associated with the user  contoso@contoso.com.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission list --id 58450c49-b02d-465a-ab12-59ae512d6531 --subject contoso@contoso.com --output table
 
 Token                                   Effective Allow    Effective Deny
@@ -241,7 +241,7 @@ $/69265579-a1e0-4a30-a141-ac9e3bb82572  0                  0
 You can show details of permissions available in each namespace with the [az devops security permission namespace show](/cli/azure/ext/azure-devops/devops/security/permission/namespace#ext-azure-devops-az-devops-security-permission-namespace-show) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission namespace show --namespace-id <NAMESPACE_ID>
 ```
 
@@ -254,7 +254,7 @@ az devops security permission namespace show --namespace-id <NAMESPACE_ID>
 The following command shows details of the available permissions for the specified namespace ID and returns the results in table format.  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission namespace show --namespace-id 58450c49-b02d-465a-ab12-59ae512d6531 --output table
 
 Name                      Permission Description                                    Permission Bit
@@ -272,7 +272,7 @@ ReadEuii                  Read EUII data                                        
 You can reset the permission bits for a specified user or group with the [az devops security permission reset](/cli/azure/ext/azure-devops/devops/security/permission#ext-azure-devops-az-devops-security-permission-reset) command. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission reset --id
                                     --permission-bit
                                     --subject
@@ -291,7 +291,7 @@ az devops security permission reset --id
 The following command resets a token's permission bit 8 for the user contoso@contoso.com in the specified namespace and returns the results in table format.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission reset --id 58450c49-b02d-465a-ab12-59ae512d6531 --permission-bit 8 --subject contoso@contoso.com --token 0611925a-b287-4b0b-90a1-90f1a96e9f1f --output table
 
 Name                      Bit    Permission Description                                    Permission Value
@@ -304,7 +304,7 @@ ExecuteUnrestrictedQuery  8      Execute query without any restrictions on the q
 You can clear all permissions of a token for a user or group with the [az devops security permission reset-all](/cli/azure/ext/azure-devops/devops/security/permission#ext-azure-devops-az-devops-security-permission-reset-all) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission reset-all --id
                                         --subject
                                         --token
@@ -323,7 +323,7 @@ az devops security permission reset-all --id
 The following command clears all permissions for the user contoso@contoso.com in the specified namespace without requiring confirmation. The result is shown in the CLI.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission reset-all --id 58450c49-b02d-465a-ab12-59ae512d6531 --subject contoso@contoso.com --token 0611925a-b287-4b0b-90a1-90f1a96e9f1f --yes --output table
 
 Result
@@ -336,7 +336,7 @@ True
 You can show the permissions for a specified token, namespace, and user or group with the [az devops security permission show](/cli/azure/ext/azure-devops/devops/security/permission#ext-azure-devops-az-devops-security-permission-show) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission show --id
                                    --subject
                                    --token
@@ -353,7 +353,7 @@ az devops security permission show --id
 The following command shows a token's permission details for the user contoso@contoso.com in the specified namespace and returns the results in table format.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission show --id 58450c49-b02d-465a-ab12-59ae512d6531 --subject contoso@contoso.com --token 0611925a-b287-4b0b-90a1-90f1a96e9f1f --output table
 
 Name                      Bit    Permission Description                                    Permission Value
@@ -370,7 +370,7 @@ ReadEuii                  16     Read EUII data                                 
 You can assign *allow* or *deny* permissions to a specified user or group with the [az devops security permission update](/cli/azure/ext/azure-devops/devops/security/permission#ext-azure-devops-az-devops-security-permission-update) command. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission update --id
                                      --subject
                                      --token
@@ -394,7 +394,7 @@ az devops security permission update --id
 The following command updates the permissions for **ExecuteUnrestrictedQuery** (bit 8) for the user contoso@contoso.com in the specified namespace, and shows the results in table format.  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security permission update --allow-bit 8 --id 58450c49-b02d-465a-ab12-59ae512d6531 --subject contoso@contoso.com --token 56af920d-393b-4236-9a07-24439ccaa85c --output table
 
 Name                      Bit    Permission Description                                    Permission Value
