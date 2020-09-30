@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 ## On developer machines
 
-1. Navigate to your feed ([or create a feed if you haven't](../feeds/create-feed.md)). 
+1. Navigate to your feed ([or create a feed if you haven't](../index.yml)). 
 
 2. Select **Connect to feed**:
 

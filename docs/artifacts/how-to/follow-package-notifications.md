@@ -28,6 +28,4 @@ If you’re using release views, you can get notifications when new version of a
 
 ## Follow a package from the notification settings page
 
- In addition to following a package from the _Feeds_ page, you can [manage your personal notifications](../../notifications/howto-manage-personal-notifications.md) and set up a personal notification for a package or set of packages from the _Notification Settings_ page.
-
-
+ In addition to following a package from the _Feeds_ page, you can [manage your personal notifications](../../notifications/manage-your-personal-notifications.md) and set up a personal notification for a package or set of packages from the _Notification Settings_ page.

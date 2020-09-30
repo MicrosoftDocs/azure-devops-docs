@@ -25,7 +25,7 @@ To learn more about the concept of upstream sources, please see the [concepts pa
 
 ## Enable the upstream on a new feed
 
-1. [Create a new feed](../feeds/create-feed.md). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
+1. [Create a new feed](../index.yml). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
 1. [Update your NuGet configuration](#update-nuget-configuration).
 
 <a name="existing-feed"></a>
@@ -77,6 +77,3 @@ You can see the packages you have saved in your feed by selecting the appropriat
 ![Viewing your cached packages](media/view-cached-packages.png)
 
 ::: moniker-end
-
-
-
