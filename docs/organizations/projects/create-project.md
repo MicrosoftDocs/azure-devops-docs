@@ -249,7 +249,7 @@ Creating a project from the web portal is supported for TFS 2015.2 and later ver
 You can create a project using the [az devops project create](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops project create --name
                          [--description]
                          [--open]
@@ -278,7 +278,7 @@ az devops project create --name
 The following command creates a new project named *MyFirstProject* under the Fabrikam organization. The project has the *Agile* process, and *git* source control. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 C:\WINDOWS\system32>az devops project create --name MyFirstProject --description "Test project 1" --org https://dev.azure.com/fabrikam/ --process Agile --source-control  git --output table
 ID                                    Name             Visibility    Process    Source Control
 ------------------------------------  ---------------  ------------  ---------  ----------------
@@ -484,7 +484,7 @@ You can choose a project to open project settings for that project on this page.
 You can list projects defined for an organization using the [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command. To get started using Azure DevOps CLI, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops project list [--org]
                        [--skip]
                        [--top]
@@ -506,7 +506,7 @@ az devops project list [--org]
 The following command lists the projects defined under the Fabrikam organization. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 C:\WINDOWS\system32>az devops project list --org https://dev.azure.com/fabrikam/ --output table
 ID                                    Name                Visibility
 ------------------------------------  ------------------  ------------
@@ -528,7 +528,7 @@ aba0ed07-3174-4793-9f2c-d2c5fa6b44d7  MyPublicProject     Public
 You can list project information and optionally open the project in the web portal using the [az devops project show](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-show) command.  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops project show --project
                        [--open]
                        [--org]
@@ -550,7 +550,7 @@ az devops project show --project
 The following command lists information for `MyFirstProject` under the Fabrikam organization and opens it in the web portal. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 C:\WINDOWS\system32>az devops project show --project MyFirstProject --open --org https://dev.azure.com/fabrikam/ --output table
 ID                                    Name            Visibility    Process            Source Control
 ------------------------------------  --------------  ------------  -----------------  ----------------
