@@ -187,7 +187,7 @@ How do I switch to another project?
 
 1. Get all projects using [Projects-List](/rest/api/azure/devops/core/projects/list).
 1. Get all repositories of each project using [Repositories - List](/rest/api/azure/devops/git/repositories/list).
-1. Get all pull requests of each repository using [Pull Requests - Get Pull Requests](/azure/devops/git/pull%20requests/get%20pull%20requests#pullrequeststatus). 
+1. Get all pull requests of each repository using [Pull Requests - Get Pull Requests](/rest/api/azure/devops/git/pull%20requests/get%20pull%20requests#pullrequeststatus). 
  
 
 
