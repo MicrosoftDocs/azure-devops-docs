@@ -6,7 +6,7 @@ ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.manager: shashban
 ms.author: shashban
 author: shashban
-ms.date: 03/11/2020
+ms.date: 09/30/2020
 monikerRange: azure-devops
 ---
 
@@ -172,6 +172,14 @@ You can also see the complete logs of the policy checks from the pipeline view.
 :::image type="content" source="media/checks/policy-check-failed-logs.png" alt-text="Viewing detailed logs.":::
 
 * * *
+
+## Exclusive lock
+
+The **exclusive lock** check allows only a single run from the pipeline to proceed.
+All stages in all runs of that pipeline which use the resource are paused.
+When the stage using the lock completes, then another stage can proceed to use the resource.
+Also, only one stage will be allowed to continue.
+Any other stages which tried to take the lock will be cancelled.
 
 ## FAQ
 
