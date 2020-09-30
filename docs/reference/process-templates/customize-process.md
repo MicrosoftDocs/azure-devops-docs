@@ -27,7 +27,7 @@ Process templates define the objects and processes available to you when you cre
 
 
 > [!NOTE]    
->If you're looking for **project templates** for software development, see [Creating Visual Studio templates](https://msdn.microsoft.com/library/ms247121.aspx). This topic describes process templates used to create Projects defined on Azure DevOps Services and TFS.  
+>If you're looking for **project templates** for software development, see [Creating Visual Studio templates](/visualstudio/ide/creating-project-and-item-templates). This topic describes process templates used to create Projects defined on Azure DevOps Services and TFS.  
   
 Default process templates define default configurations as well as the following artifacts that your team uses to plan and track work, collaborate, and share information.
 
@@ -229,4 +229,4 @@ The Process Editor Tool provides a user interface that you can use to customize 
     -   Review files to be uploaded and their folder structure    
     -   Add files to be uploaded.  
 
-You can't customize Office Excel reports and dashboards through the process template files. These artifacts are created for a project depending on the selections that you make in the New Team Project wizard. For more information, see [Customizing TFS Project Portals](/previous-versions/visualstudio/visual-studio-2010/ff678492(v=vs.100)).  
+You can't customize Office Excel reports and dashboards through the process template files. These artifacts are created for a project depending on the selections that you make in the New Team Project wizard. For more information, see [Customizing TFS Project Portals](/previous-versions/visualstudio/visual-studio-2010/ff678492(v=vs.100)).
