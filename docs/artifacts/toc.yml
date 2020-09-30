@@ -95,7 +95,7 @@
   - name: Maven quickstart
     href: get-started-maven.md
   - name: Set up a project to work with Maven feed
-    href: ../pipelines/packages/maven.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
+    href: ../pipelines/artifacts/maven.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
   - name: Publish a Maven package from the command line
     href: maven/publish.md
   - name: Set up authentication
@@ -109,7 +109,7 @@
   - name: Python quickstart 
     href: quickstarts/python-packages.md
   - name: Publish to a Python feed
-    href: ../pipelines/targets/pypi.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+    href: ../pipelines/artifacts/pypi.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
 - name: Universal Packages
   items:
   - name: Universal packages quickstart
@@ -131,6 +131,6 @@
   - name: Use symbols in WinDbg
     href: symbols/debug-with-symbols-windbg.md
   - name: Publish symbols
-    href: /azure/devops/pipelines/artifacts/symbols?toc=/azure/devops/artifacts/toc.json
+    href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
   - name: Setting up GitHub SourceLinking
     href: symbols/setting-up-github-sourcelinking.md
