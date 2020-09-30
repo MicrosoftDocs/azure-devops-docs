@@ -31,7 +31,7 @@ Some examples are:
   install the certificate.
 
 * Install software on the machines running the load test agents in the cloud to collect data or metrics;
-  for example, installing [Network Monitor](https://blogs.technet.com/b/netmon/) to capture network traffic statistics. 
+  for example, installing [Network Monitor](/archive/blogs/netmon/) to capture network traffic statistics. 
   You can use a setup script to install it on the agent machine and use a cleanup script to save the data to remote storage
   such as Azure Storage (by using a SAS key).
 
@@ -92,4 +92,4 @@ in the cloud, assuming you have added `WebDeploy_x64_en-US.msi` to the deploymen
 * [Load test with Visual Studio](getting-started-with-performance-testing.md)
 * [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
 
-[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

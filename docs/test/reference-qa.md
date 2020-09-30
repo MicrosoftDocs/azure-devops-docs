@@ -53,7 +53,7 @@ every test case that is returned by the query that you define.
 
 ### Q: Can I copy or clone test plans and test suites?
 
-**A:** Yes. For test plans, use [this API](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). For test suites, use [this API](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1). We plan to expose these capabilities through the out-of-box UI in a future release.
+**A:** Yes. For test plans, use [this API](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). For test suites, use [this API](/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1). We plan to expose these capabilities through the out-of-box UI in a future release.
 
 ### Q: Can I export the test plan to share or review offline?
 
@@ -74,7 +74,7 @@ into a Word document, if you want. All the formatting in the report is retained.
 ### Q: When I export a test plan, can I customize the report?
 
 **A:** You can only do this if you are using an on-premises Team Foundation Server. 
-You can [edit the XSLT file](https://msdn.microsoft.com/library/dd380763.aspx#XSLT).
+You can [edit the XSLT file](/previous-versions/dd380763(v=vs.140)#XSLT).
 
 ### Q: Can I track changes to test plans and test suites that I create with Azure DevOps?
 
@@ -460,7 +460,7 @@ unless you chose to indefinitely retain a build associated with those results.
 **A**: By default, a XAML build pipeline is set up to delete builds older 
 than the 10 most recent builds. But related test results aren't automatically
 deleted when those builds are deleted. 
-[Learn more](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx). 
+[Learn more](/previous-versions/visualstudio/visual-studio-2013/ms181716(v=vs.120)). 
 
 ### Q: Why isn't test data deleted for XAML builds by default? 
 
@@ -595,4 +595,4 @@ b. To assign configuration to test case(s), navigate to test plan > test suite a
 
 *****
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]
