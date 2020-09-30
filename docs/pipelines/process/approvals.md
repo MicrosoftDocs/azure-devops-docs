@@ -175,8 +175,8 @@ You can also see the complete logs of the policy checks from the pipeline view.
 
 ## Exclusive lock
 
-The **exclusive lock** check allows only a single run to proceed.
-All other stages which use the resource are paused.
+The **exclusive lock** check allows only a single run from the pipeline to proceed.
+All stages in all runs of that pipeline which use the resource are paused.
 When the stage using the lock completes, then another stage can proceed to use the resource.
 Also, only one stage will be allowed to continue.
 Any other stages which tried to take the lock will be cancelled.
