@@ -74,7 +74,7 @@ For example, the following command adds an information banner, which expires on 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops admin banner add --message "INFORMATION: Network domain updates will occur on September 3" --expiration  2019-09-04 --type  info
+az devops admin banner add --message "INFORMATION: Network domain updates will occur on September 3" --expiration  2019-09-04 --type  info
 {
   "3d584103-6a94-4f46-8696-f424278da072": {
     "expirationDate": "2019-09-04T00:00:00-07:00",
@@ -102,7 +102,7 @@ For example, the following command indicates that two banners have been defined.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops admin banner list
+az devops admin banner list
 {
   "04c4d27f-1fee-4f23-9c44-57ed6a9efef8": {
     "level": "info",
@@ -121,7 +121,7 @@ To list the banners in table format, use the `--output table` command option.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops admin banner list 
+az devops admin banner list 
 ID                                    Message                            Type     Expiration Date
 ------------------------------------  ---------------------------------  -------  -----------------
 04c4d27f-1fee-4f23-9c44-57ed6a9efef8  BANNER-MESSAGE-BANNER-MESSAGE      Info
@@ -147,7 +147,7 @@ For example, the following command removes the banner with `id=e090e7b0-4499-4b8
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops admin banner remove --id e090e7b0-4499-4b8f-a09b-1eddf7fdeb44
+az devops admin banner remove --id e090e7b0-4499-4b8f-a09b-1eddf7fdeb44
 ```
 
 ## List banner details
@@ -169,7 +169,7 @@ Here we list the details for banner with `id=7653f414-3c01-424f-8f84-e51aa99b797
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops admin banner show --id 7653f414-3c01-424f-8f84-e51aa99b797c
+az devops admin banner show --id 7653f414-3c01-424f-8f84-e51aa99b797c
 {
   "7653f414-3c01-424f-8f84-e51aa99b797c": {
     "expirationDate": "2019-09-04T07:00:00+00:00",
@@ -204,7 +204,7 @@ For example, the following command updates the message string for the banner and
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops admin banner update --id 7653f414-3c01-424f-8f84-e51aa99b797c --message "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac lectus eget erat porttitor dapibus vulputate in ipsum. Etiam id faucibus nisi, at ornare tellus. Curabitur faucibus pharetra orci, id finibus leo iaculis et. Morbi nec felis facilisis, ultricies magna nec, convallis sem. Sed pharetra porta mi eu venenatis. Cras consectetur et dui a accumsan. Maecenas non dolor eu lacus mollis pulvinar. Fusce gravida id lacus sed consequat. Cras tempus ante tincidunt purus rhoncus, at consectetur tellus sollicitudin. Proin sed tellus vel libero maximus ornare. Nullam facilisis, nibh sit amet faucibus rutrum, diam massa ullamcorper purus, sed tempor est erat in sapien. Sed sit amet lectus vel massa facilisis interdum id sit amet nisi. Vestibulum eu purus et mi ultricies consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum mattis rutrum. Nulla hendrerit nibh ut sapien viverra faucibus.   " --expiration  2019-12-31
+az devops admin banner update --id 7653f414-3c01-424f-8f84-e51aa99b797c --message "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac lectus eget erat porttitor dapibus vulputate in ipsum. Etiam id faucibus nisi, at ornare tellus. Curabitur faucibus pharetra orci, id finibus leo iaculis et. Morbi nec felis facilisis, ultricies magna nec, convallis sem. Sed pharetra porta mi eu venenatis. Cras consectetur et dui a accumsan. Maecenas non dolor eu lacus mollis pulvinar. Fusce gravida id lacus sed consequat. Cras tempus ante tincidunt purus rhoncus, at consectetur tellus sollicitudin. Proin sed tellus vel libero maximus ornare. Nullam facilisis, nibh sit amet faucibus rutrum, diam massa ullamcorper purus, sed tempor est erat in sapien. Sed sit amet lectus vel massa facilisis interdum id sit amet nisi. Vestibulum eu purus et mi ultricies consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum mattis rutrum. Nulla hendrerit nibh ut sapien viverra faucibus.   " --expiration  2019-12-31
 {
   "7653f414-3c01-424f-8f84-e51aa99b797c": {
     "expirationDate": "2019-12-31T00:00:00-08:00",

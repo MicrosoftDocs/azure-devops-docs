@@ -217,7 +217,7 @@ Each team is assigned a unique ID.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops team list --project "Fabrikam Fiber" --output table
+az devops team list --project "Fabrikam Fiber" --output table
 ID                                    Name                Description
 ------------------------------------  ------------------  ----------------------------------------------------------------------------
 7f099146-29a2-4798-9949-77c9f5f79653  Account Management  Management team focused on creating and maintaining customer services
@@ -258,7 +258,7 @@ The following command adds a team named **Web** to the Fabrikam Fiber project, a
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az devops team create --name Web --project "Fabrikam Fiber"
+az devops team create --name Web --project "Fabrikam Fiber"
 {
   "description": "",
   "id": "5385556a-254d-4ad4-bd11-71955e3a7070",
@@ -443,7 +443,7 @@ You can only move one work item at a time using Azure DevOps CLI. In this exampl
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az boards work-item update --id 487 --area "Fabrikam Fiber\Service Delivery\Email"
+az boards work-item update --id 487 --area "Fabrikam Fiber\Service Delivery\Email"
 {
   "fields": {
     "Microsoft.VSTS.Common.BacklogPriority": 1944453550.0,
@@ -643,7 +643,7 @@ For example, the following command adds the Voice area path to the Voice team fo
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az boards area team add --path "\Fabrikam Fiber\Voice" --team Voice --project "Fabrikam Fiber" --include-sub-areas --set-as-default --include-sub-areas true --output table
+az boards area team add --path "\Fabrikam Fiber\Voice" --team Voice --project "Fabrikam Fiber" --include-sub-areas --set-as-default --include-sub-areas true --output table
 Area                                   Include sub areas    Is Default
 -------------------------------------  -------------------  ------------
 Fabrikam Fiber\Service Delivery\Voice  False                False

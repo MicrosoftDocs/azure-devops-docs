@@ -171,7 +171,7 @@ For example, the following command lists the area paths to a depth of 3 for the 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az boards area project list --depth 3 --project 'Fabrikam Fiber' --output table
+az boards area project list --depth 3 --project 'Fabrikam Fiber' --output table
 ID     Identifier                            Name                Path                                                Has Children
 -----  ------------------------------------  ------------------  --------------------------------------------------  --------------
 55302  91d8644a-e430-4fd0-aa95-742ea98770a3  Fabrikam Fiber      \Fabrikam Fiber\Area                                True
@@ -275,7 +275,7 @@ For example, the following command adds the Voice area path to the Fabrikam Fibe
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az boards area project create --name Voice --project "Fabrikam Fiber"
+az boards area project create --name Voice --project "Fabrikam Fiber"
 {
   "attributes": null,
   "children": null,
@@ -295,7 +295,7 @@ And, here is the same command with the table output format.
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az boards area project create --name Voice --project "Fabrikam Fiber" --output table
+az boards area project create --name Voice --project "Fabrikam Fiber" --output table
 ID     Identifier                            Name    Path                         Has Children
 -----  ------------------------------------  ------  ---------------------------  --------------
 55413  3c16691b-160c-4498-ab42-aa77b7f354fc  Voice  \Fabrikam Fiber\Area\Voice  False
@@ -365,7 +365,7 @@ For example, the following command lists the area paths for the Service Delivery
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az boards area team list --team "Service Delivery" --project "Fabrikam Fiber" --output table
+az boards area team list --team "Service Delivery" --project "Fabrikam Fiber" --output table
 Area                             Include sub areas    Is Default
 -------------------------------  -------------------  ------------
 Fabrikam Fiber\Service Delivery  True                 True
@@ -528,7 +528,7 @@ For example, the following command adds the Voice area path to the Voice team fo
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az boards area team add --path "\Fabrikam Fiber\Voice" --team Voice --project "Fabrikam Fiber" --include-sub-areas --set-as-default --include-sub-areas true --output table
+az boards area team add --path "\Fabrikam Fiber\Voice" --team Voice --project "Fabrikam Fiber" --include-sub-areas --set-as-default --include-sub-areas true --output table
 Area                                   Include sub areas    Is Default
 -------------------------------------  -------------------  ------------
 Fabrikam Fiber\Service Delivery\Voice  False                False
@@ -627,7 +627,7 @@ For example, the following command renames the Voice area path to Voice and Web 
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
-C:\WINDOWS\system32>az boards area project update --path "\Fabrikam Fiber\Area\Voice" --name "Voice and Web" --project "Fabrikam Fiber" --output table
+az boards area project update --path "\Fabrikam Fiber\Area\Voice" --name "Voice and Web" --project "Fabrikam Fiber" --output table
 ID     Identifier                            Name           Path                                Has Children
 -----  ------------------------------------  -------------  ----------------------------------  --------------
 55412  b00f86a2-3d49-4ad2-af01-da2537947baa  Voice and Web  \Fabrikam Fiber\Area\Voice and Web  False
