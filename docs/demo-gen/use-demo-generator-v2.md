@@ -75,7 +75,7 @@ Tasks with versions `ARM Outputs:4.*` are not valid for deploy job `Agent job` i
 
 **Cause:** In Azure DevOps, users have different access levels - Basic, Stakeholder and Visual Studio Subscriber. Access levels determine what features are available to users. In order to provision projects using the demo generator, you need at least a **Basic** access level. This error indicates the user has a *stakeholder* license which does not grant permissions to writing shared queries
 
-**Fix:** You should change the access level, from stakeholder to basic. Please refer to this article on docs:  [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops) for more information on how to add users to your organization, and specify the level of features they can use
+**Fix:** You should change the access level, from stakeholder to basic. Please refer to this article on docs:  [Add users to your organization or project](../organizations/accounts/add-organization-users.md?view=azure-devops) for more information on how to add users to your organization, and specify the level of features they can use
 
 -------------
 
@@ -85,5 +85,3 @@ The following permissions are needed to perform this operation: Create new proje
 **Cause:** You do not have permissions to create new projects in the Azure DevOps organization you have selected. You will need to be a part of the Project Administrators group or have explicit permissions to create new projects
 
 **Fix:**  Please make sure you have the required permissions or try selecting a different Azure DevOps org where you project creation permission.
-
-
