@@ -120,7 +120,7 @@ in a build or release summary, and the corresponding mapping with the attributes
 | [**Test result**](../../test/test-glossary.md) | Title | /TestRun/Results/UnitTestResult.Attributes["**testName**"].Value Or /TestRun/Results/WebTestResult.Attributes["**testName**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**testName**"].Value |
 |  | Date started | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value |
 |  | Date completed | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value + /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value + /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value + /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value |
-|  | Duration (See note 1) | /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value |
+|  | Duration<sup>1</sup> | /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value |
 |  | Owner | /TestRun/TestDefinitions/UnitTest/Owners/Owner.Attributes["**name**"].Value |
 |  | Outcome | /TestRun/Results/UnitTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/WebTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**outcome**"].Value |
 |  | Error message | /TestRun/Results/UnitTestResult/Output/ErrorInfo/**Message.InnerText** Or /TestRun/Results/WebTestResultOutput/ErrorInfo/**Message.InnerText** Or /TestRun/Results/TestResultAggregation/Output/ErrorInfo/**Message.InnerText** |
@@ -144,7 +144,7 @@ in a build or release summary, and the corresponding mapping with the attributes
 | [**Test result**](../../test/test-glossary.md) | Title | /testsuites/testsuite/testcase/Attributes["**name**"].Value |
 |  | Date started | /testsuites/testsuite.Attributes["**timestamp**"].Value |
 |  | Date completed | /testsuites/testsuite.Attributes["**timestamp**"].Value +  /testsuites/testsuite/testcase.Attributes["**time**"].Value |
-|  | Duration (See note 1) | /testsuites/testsuite/testcase/.Attributes["**time**"].Value |
+|  | Duration<sup>1</sup> | /testsuites/testsuite/testcase/.Attributes["**time**"].Value |
 |  | Owner | /testsuites/testsuite/testcase/Attributes["**owner**"].Value |
 |  | Outcome | **Failed**: if exists /Testsuites/testsuite/testcase/**failure** Or /Testsuites/testsuite/testcase/**error**  **Not Executed**: if exists Testsuites/testsuite/testcase/**skipped**  **Passed**: for all other cases |
 |  | Error message | /Testsuites/testsuite/testcase/failure.Attributes["**message**"].Value Or /Testsuites/testsuite/testcase/error.Attributes["**message**"].Value Or /Testsuites/testsuite/testcase/skipped.Attributes["**message**"].Value |
@@ -168,7 +168,7 @@ in a build or release summary, and the corresponding mapping with the attributes
 | [**Test result**](../../test/test-glossary.md) | Title | /test-results/results/test-case.Attributes["**name**"].Value |
 |  | Date started | /test-results.Attributes["**date**"].Value + /test-results.Attributes["**time**"].Value |
 |  | Date completed | Date started + /test-results/results/test-case.Attributes["**time**"].Value |
-|  | Duration (See note 1) | /test-results/results/test-case.Attributes["**time**"].Value |
+|  | Duration<sup>1</sup> | /test-results/results/test-case.Attributes["**time**"].Value |
 |  | Owner | build or release requested for user |
 |  | Outcome | **Failed**: if exists /test-results/results/test-case/**failure**  **Not Executed**: if exists /test-results/results/test-case.Attributes["**result**"].Value=="Ignored"  **Passed**: for all other cases |
 |  | Error message | /test-results/results/test-casefailure/**message.InnerText** |
@@ -192,7 +192,7 @@ in a build or release summary, and the corresponding mapping with the attributes
 | [**Test result**](../../test/test-glossary.md) | Title | /test-suite[@type='Assembly']/test-case.Attributes["**name**"].Value |
 |  | Date started | /test-suite[@type='Assembly']/test-case.Attributes["**start-time**"].Value |
 |  | Date completed | /test-suite[@type='Assembly']/test-case.Attributes["**end-time**"].Value |
-|  | Duration (See note 1) | /test-suite[@type='Assembly']/test-case.Attributes["**duration**"].Value |
+|  | Duration<sup>1</sup> | /test-suite[@type='Assembly']/test-case.Attributes["**duration**"].Value |
 |  | Owner | build or release requested for user |
 |  | Outcome | /test-results/test-suite/results/test-case.Attributes["**result**"].Value |
 |  | Error message | /test-suite[@type='Assembly']/test-case/failure/**message** |
@@ -216,7 +216,7 @@ in a build or release summary, and the corresponding mapping with the attributes
 | [**Test result**](../../test/test-glossary.md) | Title | /assemblies/assembly/collection/test.Attributes["**method**"].Value |
 |  | Date started | /assemblies/assembly/**run-date** + /assemblies/assembly/**run-time** |
 |  | Date completed | Date started + /assemblies/assembly/collection/test.Attributes["**time**"].Value |
-|  | Duration (See note 1) | /assemblies/assembly/collection/test.Attributes["**time**"].Value |
+|  | Duration<sup>1</sup> | /assemblies/assembly/collection/test.Attributes["**time**"].Value |
 |  | Owner | /assemblies/assembly/collection/test/traits/trait[@name='owner'].Attributes["**value**"].Value |
 |  | Outcome | /assemblies/assembly/collection/test/failure.Attributes["**result**"].Value |
 |  | Error message | /assemblies/assembly/collection/test/failure/**message** |
@@ -240,7 +240,7 @@ in a build or release summary, and the corresponding mapping with the attributes
 | [**Test result**](../../test/test-glossary.md) | Title | /Site/Testing/Test/**Name.InnerText** |
 |  | Date started | /Site/Testing/**StartTestTime.InnerText** |
 |  | Date completed | Date Started + /Site/Testing/Test/Results/**NamedMeasurement[@name= 'Execution Time']/Value.InnerText** |
-|  | Duration (See note 1) | /Site/Testing/Test/Results/**NamedMeasurement[@name= 'Execution Time']/Value.InnerText** |
+|  | Duration<sup>1</sup> | /Site/Testing/Test/Results/**NamedMeasurement[@name= 'Execution Time']/Value.InnerText** |
 |  | Owner | Build or release requested for user |
 |  | Outcome | /Site/Testing/**Test.Attributes["Status"].Value** |
 |  | Error message | - |
@@ -254,9 +254,9 @@ in a build or release summary, and the corresponding mapping with the attributes
 
 * * *
 
-^1 **Duration** is used only when **Date started** and **Date completed** are not available.
+<sup>1</sup> **Duration** is used only when **Date started** and **Date completed** are not available.
 
-^2 Fully Qualified name format is **Namespace.Testclass.Methodname** with a character limit of 512. If the test is data driven and has parameters, the character limit will include the parameters.
+<sup>2</sup> The fully Qualified name format is **Namespace.Testclass.Methodname** with a character limit of 512. If the test is data driven and has parameters, the character limit will include the parameters.
 
 <a name="docker"></a>
 
