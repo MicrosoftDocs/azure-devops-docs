@@ -25,7 +25,7 @@ ms.date: 02/13/2020
 
 ### How do I modify other parts of my build pipeline?
 
-* [Build and release tasks(../tasks/index.md) to run tests, scripts, and a wide range of other processes.
+* [Build and release tasks](../tasks/index.md) to run tests, scripts, and a wide range of other processes.
 
 * [Specify build options](../build/options.md) such as specifying how completed builds are named, building multiple configurations, creating work items on failure.
 
