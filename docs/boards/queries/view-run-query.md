@@ -111,7 +111,7 @@ Yes. Simply open a query in a new browser tab to run several queries at the same
 
 You can run a query in the CLI with the [az boards query](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az boards query [--id]
                 [--org]
                 [--path]
@@ -131,7 +131,7 @@ az boards query [--id]
 
 The following command runs a query with the specified ID and shows the result in table format.  
 
-```CLI
+```azurecli
 az boards query --id 6c286d74-26a5-4cce-bfcf-bf9123495bfe  --output table
 
 Priority    Node Name         Work Item Type    Title                             Remaining Work
@@ -146,7 +146,7 @@ Priority    Node Name         Work Item Type    Title                           
 
 The following command runs a query with the specified WIQL and shows the result in table format.  
 
-```CLI 
+```azurecli 
 az boards query --wiql "SELECT [Microsoft.VSTS.Common.Priority], [System.NodeName], [System.WorkItemType], [System.Title], [Microsoft.VSTS.Scheduling.RemainingWork], [System.AssignedTo], [System.State], [System.Tags], [System.AreaPath] FROM workitems WHERE [System.WorkItemType] = 'Bug' AND [System.AreaPath] = 'Fabrikam Fiber' ORDER BY [System.WorkItemType]" --output table
 
 Priority    Node Name       Work Item Type    Title                  Remaining Work

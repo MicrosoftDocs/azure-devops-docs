@@ -127,7 +127,7 @@ The **Users page** isn't available for on-premises server instances. However, yo
 
 You can add users to an organization by using the [az devops user add](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-add) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
-```CLI
+```azurecli
 az devops user add –-email-id 
 		   --license-type {advanced, earlyAdopter, express, professional, stakeholder}
 		   [--send-email-invite {false, true}]
@@ -156,7 +156,7 @@ The following table provides a mapping of the access level selected through the 
 
 The following command adds the user with the email address contoso@contoso.com to your organization. It grants stakeholder level access to the user and shows the result in table format.
 
-```CLI
+```azurecli
 az devops user add --email-id contoso@contoso.com --license-type stakeholder --output table
 
 ID                                    Display Name          Email                 License Type    Access Level    Status
@@ -167,7 +167,7 @@ ID                                    Display Name          Email               
 
 You can also add the user to an Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](https://docs.microsoft.com/azure/devops/organizations/security/permissions-access?view=azure-devops).
 
-```CLI
+```azurecli
 az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com
 ```
 
@@ -306,7 +306,7 @@ The **Users page** isn't available for on-premises server instances. However, yo
 
 You can update a user's license type with the [az devops user update](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
-```CLI
+```azurecli
 az devops user update  --license-type {advanced, earlyAdopter, express, professional, stakeholder}
                       --user [--org]
 ```
@@ -322,7 +322,7 @@ az devops user update  --license-type {advanced, earlyAdopter, express, professi
 
 The following command updates the license type for email address contoso@contoso.com from **Basic** to **Stakeholder** and shows the result in table format.
 
-```CLI
+```azurecli
 az devops user update --license-type stakeholder --user contoso@contoso.com --output table
 
 ID                                    Display Name         Email                License Type    Access Level    Status
@@ -337,7 +337,7 @@ ID                                    Display Name         Email                
 
 You can show details for users in your organization with the [az devops user show](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-show) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
-```CLI
+```azurecli
 az devops user show --user [--org]
 ```
 
@@ -350,7 +350,7 @@ az devops user show --user [--org]
 
 The following command returns user details for the email address contoso@contoso.com in table format.
 
-```CLI
+```azurecli
 az devops user show --user contoso@contoso.com --output table
 
 ID                                    Display Name         Email                License Type    Access Level    Status

@@ -122,7 +122,7 @@ You can publish a Git repository to a wiki with the [az devops wiki create](/cli
 > [!NOTE]
 > You can't publish code as Wiki if your project doesn't have a Git repository already defined. If necessary, [create a new Git repo](/cli/azure/ext/azure-devops/repos#ext-azure-devops-az-repos-create), and then return to this page.
 
-```CLI 
+```azurecli 
 az devops wiki create [--mapped-path]
                       [--name]
                       [--org]
@@ -150,7 +150,7 @@ az devops wiki create [--mapped-path]
 
 The following command creates a **codewiki** named "My New Wiki" published from the **MyRepo** repository. The wiki is published in the **wikis** folder in the **master** branch and the result is shown in table format.
 
-```CLI 
+```azurecli 
 az devops wiki create --name "My New Wiki" --type codewiki --repository MyRepo --mapped-path /wikis --version master --output table
 
 ID                                    Name         Type

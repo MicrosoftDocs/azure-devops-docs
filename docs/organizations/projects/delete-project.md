@@ -76,7 +76,7 @@ Your project is deleted and can be restored up to 28 days afterward.
 
 You can delete a team project with the [az devops project delete](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az devops project delete --id
                          [--org]
                          [--yes] 
@@ -96,7 +96,7 @@ az devops project delete --id
 
 The following command deletes the team project with the specified ID without prompting you for confirmation.
 
-```CLI 
+```azurecli 
 az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 ``` 
 

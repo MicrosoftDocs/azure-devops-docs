@@ -94,7 +94,7 @@ You can also use keyboard shortcuts to add a new page by pressing **n** or add a
 To add a wiki page, enter the `az devops wiki page create` command. 
 
 > [!div class="tabbedCodeSnippets"]
-```Azure CLI
+```azurecli
 az devops wiki page create --path
                            --wiki
                            [--comment]
@@ -125,14 +125,14 @@ accepted values: ascii, utf-16be, utf-16le, utf-8
 Create a new page with path 'my page' in a wiki named 'myprojectwiki' with inline content.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page update --path 'my page' --wiki myprojectwiki --content "Hello World"
 ```
 
 Update content of page with path 'my page' in a wiki with content from a file.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.txt --encoding utf-8
 ```
 
@@ -181,7 +181,7 @@ To delete a page, open the context menu from the tree or the one inside the page
 To edit a wiki page, enter the `az devops wiki page update` command. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page update --path
                            --version
                            --wiki
@@ -212,14 +212,14 @@ az devops wiki page update --path
 Update content of page with path 'my page' in a wiki named 'myprojectwiki' with inline content.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page update --path 'my page' --wiki myprojectwiki --content "Hello World" --version 4ae78ad5835cb7dd55072fe210c9ee7eb6d6413b
 ```
 
 Update content of page with path 'my page' in a wiki with content from a file.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.txt --encoding utf-8 --version 4ae78ad5835cb7dd55072fe210c9ee7eb6d6413b
 ```
 
@@ -228,7 +228,7 @@ az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.t
 To delete a wiki page, enter the `az devops wiki page delete` command. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page delete --path
                            --wiki
                            [--comment]
@@ -254,7 +254,7 @@ az devops wiki page delete --path
 Delete a wiki page with path 'my wiki' in a wiki named 'myprojectwiki'.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page delete --path 'my wiki' --wiki 'myprojectwiki'
 ```
 

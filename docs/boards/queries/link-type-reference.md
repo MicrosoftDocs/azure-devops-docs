@@ -661,7 +661,7 @@ To get a list of link types, you can use one of the supported command line tools
 
 You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/ext/azure-devops/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index). 
 
-```CLI
+```azurecli
 az boards work-item relation list-type [--org]
 ```
 
@@ -674,7 +674,7 @@ az boards work-item relation list-type [--org]
 
 The following command lists the work item link types in table format that are defined for the fabrikam organization. For additional formats, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).  
 
-```CLI
+```azurecli
 az boards work-item relation list-type --org fabrikam --output table
 Name                  ReferenceName                                                Enabled    Usage
 --------------------  -----------------------------------------------------------  ---------  ------------
@@ -701,7 +701,7 @@ Artifact Link         ArtifactLink                                              
 
 The default json format provides additional information about the attributes defined for the link types. For example, the information for the link types *Produces For* and *Consumes From* are listed as follows. 
 
-```CLI
+```output
   {
     "attributes": {
       "acyclic": true,
