@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
-ms.date: 04/20/2020
+ms.date: 09/30/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -107,6 +107,50 @@ in the **Ecosystems** section of these topics, which also includes examples for 
 
 This table lists the fields reported in the [Tests tab](../../test/review-continuous-test-results-after-build.md)
 in a build or release summary, and the corresponding mapping with the attributes in the supported test result formats. 
+
+#### [Visual Studio Test (TRX)](#tab/trx)
+
+| Scope | Field | Visual Studio Test (TRX) |
+|-|-|-|
+| [**Test run**](../../test/test-glossary.md) | Title | **Test run title** specified in the task |
+|  | Date started | /TestRun/Times.Attributes["**start**"].Value |
+|  | Date completed | /TestRun/Times.Attributes["**finish**"].Value |
+|  | Duration | Date completed - Date started |
+|  | Attachments | Refer to **Attachments support** section below |
+| [**Test result**](../../test/test-glossary.md) | Title | /TestRun/Results/UnitTestResult.Attributes["**testName**"].Value Or /TestRun/Results/WebTestResult.Attributes["**testName**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**testName**"].Value |
+|  | Date started | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value |
+|  | Date completed | /TestRun/Results/UnitTestResult.Attributes["**startTime**"].Value + /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**startTime**"].Value + /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**startTime**"].Value + /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value |
+|  | Duration (See note 1) | /TestRun/Results/UnitTestResult.Attributes["**duration**"].Value Or /TestRun/Results/WebTestResult.Attributes["**duration**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**duration**"].Value |
+|  | Owner | /TestRun/TestDefinitions/UnitTest/Owners/Owner.Attributes["**name**"].Value |
+|  | Outcome | /TestRun/Results/UnitTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/WebTestResult.Attributes["**outcome**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**outcome**"].Value |
+|  | Error message | /TestRun/Results/UnitTestResult/Output/ErrorInfo/**Message.InnerText** Or /TestRun/Results/WebTestResultOutput/ErrorInfo/**Message.InnerText** Or /TestRun/Results/TestResultAggregation/Output/ErrorInfo/**Message.InnerText** |
+|  | Stack trace | /TestRun/Results/UnitTestResult/Output/ErrorInfo/**StackTrace.InnerText** Or /TestRun/Results/WebTestResultOutput/ErrorInfo/**StackTrace.InnerText** Or /TestRun/Results/TestResultAggregation/Output/ErrorInfo/**StackTrace.InnerText** |
+|  | Attachments | Refer to **Attachments support** section below |
+|  | Console log | /TestRun/Results/UnitTestResult/Output/**StdOut.InnerText** Or /TestRun/Results/WebTestResultOutput/Output/**StdOut.InnerText** Or /TestRun/Results/TestResultAggregation/Output/**StdOut.InnerText** |
+|  | Console error log | /TestRun/Results/UnitTestResult/Output/**StdErr.InnerText** Or /TestRun/Results/WebTestResultOutput/Output/**StdErr.InnerText** Or /TestRun/Results/TestResultAggregation/Output/**StdErr.InnerText** |
+|  | Agent name | /TestRun/Results/UnitTestResult.Attributes["**computerName**"].Value Or /TestRun/Results/WebTestResult.Attributes["**computerName**"].Value Or /TestRun/Results/TestResultAggregation.Attributes["**computerName**"].Value |
+|  | Test file | /TestRun/TestDefinitions/UnitTest.Attributes["**storage**"].Value |
+|  | Priority | /TestRun/TestDefinitions/UnitTest.Attributes["**priority**"].Value |
+
+
+#### [JUnit](#tab/junit)
+
+
+#### [NUnit 2](#tab/nunit2)
+
+
+
+#### [NUnit 3](#tab/nunit3)
+
+
+#### [xUnit 2](#tab/xunit2)
+
+
+
+#### [CTest](#tab/ctest)
+
+
+---
 
 | Scope | Field | Visual Studio Test (TRX) | JUnit | NUnit 2 | NUnit 3 | xUnit 2 | CTest |
 | ----------------- | ----- | ------------------------ | ----- | ------- | ------- | ------- | ------- |
