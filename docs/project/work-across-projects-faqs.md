@@ -110,7 +110,7 @@ How do I switch to another project?
 
 ### Q: Can I link work items across organizations? 
 
-**A:** Yes. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](/azure/devops/boards/backlogs/add-link#link-to-a-remote-work-item).
+**A:** Yes. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../boards/backlogs/add-link.md#link-to-a-remote-work-item).
 
 ::: moniker-end
 
@@ -212,4 +212,3 @@ Is there any way to achieve this with Azure DevOps or better approach would be t
 
 
 -->
-

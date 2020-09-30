@@ -355,18 +355,17 @@ When enabled, you can enter keywords to search all settings within the Organizat
 ### Social tools 
 
 - [Wiki](../wiki/add-edit-wiki.md)  
-- [Combine email recipients](../../notifications/howto-manage-team-notifications.md) 
+- [Combine email recipients](../../notifications/manage-team-group-notifications.md) 
 - [New experience in Code, Work Item, & Wiki search](/azure/devops/release-notes/2017/oct-06-vsts#code)  
-- [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md)   
-- [Team expansion for notifications](../../notifications/howto-manage-team-notifications.md)
+- [Out of the box notifications](../../notifications/manage-your-personal-notifications.md)   
+- [Team expansion for notifications](../../notifications/manage-team-group-notifications.md)
 
 ### Organization, project, and billing management
-- [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)   
+- [Streamlined User Management](../../organizations/accounts/add-organization-users.md)   
 
 ::: moniker-end
 
 ## Related articles
 
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)
-- [Azure DevOps Feature Timeline](/azure/devops/release-notes/features-timeline) 
-
+- [Azure DevOps Feature Timeline](/azure/devops/release-notes/features-timeline)

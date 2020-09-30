@@ -361,13 +361,13 @@ Consider the following techniques for using IPSec to secure Elasticsearch on a W
 * **Configure security with authentication only:**
   - Ensures only authorized users can access the Elasticsearch port. It requires only service-side rules (firewall rules on only the server running Elasticsearch).
   - Prerequisite: Azure DevOps Server or TFS must be configured with a domain account.
-  - Follow the steps in [Creating Firewall Rules that Allow IPsec-protected Network Traffic](https://technet.microsoft.com/library/cc754873%28v%3Dws.10%29.aspx).<p />
+  - Follow the steps in [Creating Firewall Rules that Allow IPsec-protected Network Traffic](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754873(v=ws.10)).<p />
 
 * **Configure security with authentication, integrity protection, and encryption:**
   - Ensures encryption and integrity protection are applied along with authentication. It requires 
     both client-side and service-side rules (firewall rules on the server running Elasticsearch and all Azure DevOps Server or TFS App Tier servers).
   - Prerequisite: Azure DevOps Server or TFS must be configured with a domain account.
-  - Follow the steps in [Isolating a Server by Requiring Encryption and Group Membership](https://technet.microsoft.com/library/cc772460%28v%3Dws.10%29.aspx).
+  - Follow the steps in [Isolating a Server by Requiring Encryption and Group Membership](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772460(v=ws.10)).
 
 <a name="upgrading-search"></a>
 
@@ -663,8 +663,4 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 Search for Azure DevOps Server and TFS has the following limitation: 
 
 * If you do a disaster recovery (DR) operation and move your server back 
-  to an earlier snapshot of your SQL database, you need to [reindex all your collections](#re-index).  
-
-
-
-
+  to an earlier snapshot of your SQL database, you need to [reindex all your collections](#re-index).

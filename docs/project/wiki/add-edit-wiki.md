@@ -29,7 +29,7 @@ Learn how to do the following tasks:
 > * Reorder wiki pages
 > * Make a page the wiki home page
 
-While you author pages using [Markdown format](../../reference/markdown-guidance.md), you can also use the format pane for rich-text formatting and inserting images, attachments, and links.  
+While you author pages using [Markdown format](./markdown-guidance.md), you can also use the format pane for rich-text formatting and inserting images, attachments, and links.  
 
 > [!div class="mx-imgBorder"]  
 > ![Wiki home page](media/wiki/wiki-edit.png)
@@ -291,5 +291,3 @@ By default, the first page you add when you create a wiki is set as the wiki hom
 
 > [!div class="nextstepaction"]
 > [View wiki page history and revert](wiki-view-history.md)
-
-

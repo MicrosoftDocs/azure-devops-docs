@@ -484,12 +484,12 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 **Example:**  
 
 ```
-[C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
+[C# language reference](/dotnet/csharp/language-reference/)
 ```
 
 **Result:**
 
-[C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
+[C# language reference](/dotnet/csharp/language-reference/)
 
 ::: moniker range=">= tfs-2018"
 
@@ -880,4 +880,3 @@ $$
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Widget catalog](../../report/dashboards/widget-catalog.md)
 - [Add and edit Wiki pages](add-edit-wiki.md)
-

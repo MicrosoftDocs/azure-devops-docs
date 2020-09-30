@@ -82,7 +82,7 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 
 ## Add pages to your local Git repository
 
-We author pages using [Markdown format](../../reference/markdown-guidance.md). Add a Markdown file to your local branch for each page and subpage that you want to add to your wiki.
+We author pages using [Markdown format](./markdown-guidance.md). Add a Markdown file to your local branch for each page and subpage that you want to add to your wiki.
 
 ### Add pages
 
@@ -151,7 +151,7 @@ If there are any errors in the process, the pages appear in your wiki with a war
 - [Clone an existing Git repo](../../repos/git/clone.md)
 - [Share code with push](../../repos/git/pushing.md)
 - [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
-- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
+- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](./markdown-guidance.md).
 
 <!---
 
@@ -181,4 +181,4 @@ In the web portal, you can view the repo files based on the following URL:
 
 While that's a lot of steps, the main steps that are specific to updating a wiki is step 3. The rest follow the standard steps for updating a Git repo.
 
--->  
+-->
