@@ -40,7 +40,7 @@ If you're new to Azure DevOps, see our overview articles that are designed to gi
 
 <p><b>Integrated Development Environments (IDE)
 </b></p>
-Track work and integrate with your code, build, and test environments from the following clients:<br/>- <a href="../java/download-eclipse-plug-in.md" data-raw-source="[Eclipse (Team Explorer Everywhere)](../java/download-eclipse-plug-in.md)">Eclipse (Team Explorer Everywhere)</a><br/>- <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[Visual Studio](https://visualstudio.microsoft.com/downloads/)">Visual Studio</a><br/>- <a href="../java/download-android-studio-plug-in.md" data-raw-source="[Android Studio](../java/download-android-studio-plug-in.md)">Android Studio</a><br/>- <a href="../java/download-intellij-plug-in.md" data-raw-source="[IntelliJ](../java/download-intellij-plug-in.md)">IntelliJ</a><br/>- <a href="../java/vscode-extension.md" data-raw-source="[Visual Studio Code](../java/vscode-extension.md)">Visual Studio Code</a><br/>
+Track work and integrate with your code, build, and test environments from the following clients:<br/>- <a href="/previous-versions/azure/devops/java/download-eclipse-plug-in" data-raw-source="[Eclipse (Team Explorer Everywhere)](/previous-versions/azure/devops/java/download-eclipse-plug-in)">Eclipse (Team Explorer Everywhere)</a><br/>- <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[Visual Studio](https://visualstudio.microsoft.com/downloads/)">Visual Studio</a><br/>- <a href="/previous-versions/azure/devops/java/download-android-studio-plug-in" data-raw-source="[Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)">Android Studio</a><br/>- <a href="/previous-versions/azure/devops/java/download-intellij-plug-in" data-raw-source="[IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)">IntelliJ</a><br/>- <a href="/previous-versions/azure/devops/java/vscode-extension" data-raw-source="[Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)">Visual Studio Code</a><br/>
 To learn how to connect, see <a href="../organizations/projects/connect-to-projects.md" data-raw-source="[Connect to a project](../organizations/projects/connect-to-projects.md)">Connect to a project</a>.<br/><br/>
 <p><b>Office integration clients</b></p>
 Use features supported by these familiar clients to manage your project and illustrate your requirements.<br/>- <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Excel</a><br/>- <a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Project</a><br/>- <a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[PowerPoint - Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">PowerPoint - Storyboarding</a><br/>
@@ -70,7 +70,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Permissions</b></p>
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
-- <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a><br/>- <a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build &amp; Release](../pipelines/policies/set-permissions.md)">Build &amp; Release</a><br/>- <a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Git](../organizations/security/set-git-tfvc-repository-permissions.md)">Git</a><br/>- <a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](../organizations/security/set-git-tfvc-repository-permissions.md)">TFVC</a><br/>- <a href="../report/dashboard-permissions.md" data-raw-source="[Dashboards](../report/dashboard-permissions.md)">Dashboards</a><br/>- <a href="../boards/queries/set-query-permissions.md" data-raw-source="[Queries](../boards/queries/set-query-permissions.md)">Queries</a><br/>- <a href="../organizations/settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../organizations/settings/manage-teams.md)">Manage teams and configure team tools</a><br/>- <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a><br/>- <a href="../organizations/security/permissions.md#tags" data-raw-source="[Work item tags](../organizations/security/permissions.md#tags)">Work item tags</a><br/>
+- <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a><br/>- <a href="../pipelines/policies/set-permissions.md" data-raw-source="[Build &amp; Release](../pipelines/policies/set-permissions.md)">Build &amp; Release</a><br/>- <a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Git](../organizations/security/set-git-tfvc-repository-permissions.md)">Git</a><br/>- <a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[TFVC](../organizations/security/set-git-tfvc-repository-permissions.md)">TFVC</a><br/>- <a href="/azure/devops/report/dashboards/dashboard-permissions" data-raw-source="[Dashboards](../report/dashboards/dashboard-permissions.md)">Dashboards</a><br/>- <a href="../boards/queries/set-query-permissions.md" data-raw-source="[Queries](../boards/queries/set-query-permissions.md)">Queries</a><br/>- <a href="../organizations/settings/manage-teams.md" data-raw-source="[Manage teams and configure team tools](../organizations/settings/manage-teams.md)">Manage teams and configure team tools</a><br/>- <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Test](../organizations/security/set-project-collection-level-permissions.md)">Test</a><br/>- <a href="../organizations/security/permissions.md#tags" data-raw-source="[Work item tags](../organizations/security/permissions.md#tags)">Work item tags</a><br/>
 
 </td>
 </tr>
@@ -202,7 +202,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Estimates and time tracking</b></p>
-<p>Track <a href="https://msdn.microsoft.com/library/dd997792.aspx" data-raw-source="[estimated, completed, and remaining work](https://msdn.microsoft.com/library/dd997792.aspx)">estimated, completed, and remaining work</a> for tasks and other work items. Several reports and dashboards provide charts that display data based on team capacity and remaining work.</p>
+<p>Track <a href="/azure/devops/boards/queries/query-numeric?viewFallbackFrom=vsts" data-raw-source="[estimated, completed, and remaining work](../boards/queries/query-numeric.md?viewFallbackFrom=vsts)">estimated, completed, and remaining work</a> for tasks and other work items. Several reports and dashboards provide charts that display data based on team capacity and remaining work.</p>
 
 
 
@@ -263,7 +263,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Restrict access</b></p>
-<p><a href="https://msdn.microsoft.com/library/dn249791.aspx" data-raw-source="[Limit who can create or modify work items or a work item field](https://msdn.microsoft.com/library/dn249791.aspx)">Limit who can create or modify work items or a work item field</a> based on area path, work item type, or based on your specific conditions. </p>
+<p><a href="/azure/devops/organizations/security/restrict-access?viewFallbackFrom=vsts" data-raw-source="[Limit who can create or modify work items or a work item field](../organizations/security/restrict-access.md?viewFallbackFrom=vsts)">Limit who can create or modify work items or a work item field</a> based on area path, work item type, or based on your specific conditions. </p>
 
 
 <p><b>Field index </b></p>
@@ -409,21 +409,21 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Custom pick lists </b></p>
-<p><a href="https://msdn.microsoft.com/library/ms194947.aspx" data-raw-source="[Define or modify pick list values](https://msdn.microsoft.com/library/ms194947.aspx)">Define or modify pick list values</a> by editing the work item type definition.</p>
+<p><a href="/azure/devops/reference/xml/define-pick-lists?viewFallbackFrom=vsts" data-raw-source="[Define or modify pick list values](../reference/xml/define-pick-lists.md?viewFallbackFrom=vsts)">Define or modify pick list values</a> by editing the work item type definition.</p>
 </td>
 <td width="33%">
 
 
 
 <p><b>Modify the workflow </b></p>
-<p><a href="https://msdn.microsoft.com/library/ms194981.aspx" data-raw-source="[Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
+<p><a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
 
 
 <p><b>Change the work item form </b></p>
-<p><a href="https://msdn.microsoft.com/library/ms194952.aspx" data-raw-source="[Change the layout of your work item form](https://msdn.microsoft.com/library/ms194952.aspx)">Change the layout of your work item form</a> by adding fields, custom controls, or tabs.</p>
+<p><a href="/azure/devops/reference/xml/design-work-item-form?viewFallbackFrom=vsts" data-raw-source="[Change the layout of your work item form](../reference/xml/design-work-item-form.md?viewFallbackFrom=vsts)">Change the layout of your work item form</a> by adding fields, custom controls, or tabs.</p>
 
 <p><b>Add a custom work item type </b></p>
-<p><a href="https://msdn.microsoft.com/library/ms404855.aspx" data-raw-source="[Add a custom work item type](https://msdn.microsoft.com/library/ms404855.aspx)">Add a custom work item type</a> to track different data requirements.</p>
+<p><a href="/azure/devops/reference/customize-work?viewFallbackFrom=vsts" data-raw-source="[Add a custom work item type](../reference/customize-work.md?viewFallbackFrom=vsts)">Add a custom work item type</a> to track different data requirements.</p>
 
 
 </td>
@@ -610,7 +610,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-team-velocity-chart.png" alt="Team velocity chart"/><br/><br/>
 
 <p><b>Sprint burndown charts</b></p>
-<p>Monitor progress and review team patterns from <a href="../boards/sprints/sprint-burndown.md" data-raw-source="[sprint burndown charts](../boards/sprints/sprint-burndown.md)">sprint burndown charts</a>.</p>
+<p>Monitor progress and review team patterns from <a href="/azure/devops/report/dashboards/configure-sprint-burndown" data-raw-source="[sprint burndown charts](../report/dashboards/configure-sprint-burndown.md)">sprint burndown charts</a>.</p>
 <img src="media/features/alm-index-sprint-burndown-widget.png" alt="Sprint burndown chart"/><br/>
 
 
@@ -664,16 +664,16 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-kanban-flow.png" alt="Add columns to map your workflow"/><br/><br/>
 
 <p><b>Customize the workflow</b></p>
-<p>For Azure DevOps Services: <a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md)">add custom workflow states to support your business tracking needs</a>.  For TFS: <a href="https://msdn.microsoft.com/library/ms194981.aspx" data-raw-source="[Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
+<p>For Azure DevOps Services: <a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md)">add custom workflow states to support your business tracking needs</a>.  For TFS: <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
 
  <p><b>States  </b></p>
-<p>States allow you to <a href="https://msdn.microsoft.com/library/ms194981.aspx" data-raw-source="[track the status of work](https://msdn.microsoft.com/library/ms194981.aspx)">track the status of work</a>. For  example, a bug moves from <strong>Active</strong>, <strong>Resolved</strong>, and <strong>Closed</strong> to correspond to when it&#39;s defined, fixed, and verified as fixed.</p>
+<p>States allow you to <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[track the status of work](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">track the status of work</a>. For  example, a bug moves from <strong>Active</strong>, <strong>Resolved</strong>, and <strong>Closed</strong> to correspond to when it&#39;s defined, fixed, and verified as fixed.</p>
 
 <p><b>Transitions</b></p>
-<p>Transitions specify the <a href="https://msdn.microsoft.com/library/ms194981.aspx" data-raw-source="[valid progressions and regressions from state to state](https://msdn.microsoft.com/library/ms194981.aspx)">valid progressions and regressions from state to state</a> for a work item type.</p>
+<p>Transitions specify the <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[valid progressions and regressions from state to state](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">valid progressions and regressions from state to state</a> for a work item type.</p>
 
 <p><b>Reasons</b></p>
-<p>Each transition <a href="https://msdn.microsoft.com/library/ms194981.aspx" data-raw-source="[specifies a default reason as well as optional reasons](https://msdn.microsoft.com/library/ms194981.aspx)">specifies a default reason as well as optional reasons</a> for tracking the change in state.  </p>
+<p>Each transition <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[specifies a default reason as well as optional reasons](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">specifies a default reason as well as optional reasons</a> for tracking the change in state.  </p>
 
 
 
@@ -681,7 +681,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Update fields during workflow changes (TFS)  </b></p>
-<p>You can <a href="https://msdn.microsoft.com/library/ms194981.aspx" data-raw-source="[define rules that change a field value](https://msdn.microsoft.com/library/ms194981.aspx)">define rules that change a field value</a> whenever you change the state, perform a transition, or select a reason.   </p>
+<p>You can <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[define rules that change a field value](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">define rules that change a field value</a> whenever you change the state, perform a transition, or select a reason.   </p>
 
 <p><b>Apply workflow conditional field rules (TFS)  </b></p>
 <p>You can define rules that <a href="../reference/xml/apply-rule-work-item-field.md" data-raw-source="[change a field value based on the contents of other fields](../reference/xml/apply-rule-work-item-field.md)">change a field value based on the contents of other fields</a> during workflow changes. </p>
@@ -692,7 +692,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Event-generated workflow changes or field assignments (TFS)</b></p>
-<p><a href="https://msdn.microsoft.com/library/ms194990.aspx" data-raw-source="[Add an action](https://msdn.microsoft.com/library/ms194990.aspx)">Add an action</a> to a custom workflow definition to automatically transition work items or specify a field value based on an internal TFS event or external event. </p>
+<p><a href="/azure/devops/reference/xml/automate-field-assignments-state-transition-reason?viewFallbackFrom=vsts" data-raw-source="[Add an action](../reference/xml/automate-field-assignments-state-transition-reason.md?viewFallbackFrom=vsts)">Add an action</a> to a custom workflow definition to automatically transition work items or specify a field value based on an internal TFS event or external event. </p>
 
 <p><b>Visual workflow design tool (TFS)</b></p>
 <p>You can change the workflow or view the workflow state diagram  by using the <a href="https://visualstudiogallery.msdn.microsoft.com/898a828a-af00-42c6-bbb2-530dc7b8f2e1" data-raw-source="[Process Editor](https://visualstudiogallery.msdn.microsoft.com/898a828a-af00-42c6-bbb2-530dc7b8f2e1)">Process Editor</a>, a power tool for Visual Studio. </p>
@@ -715,7 +715,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Personal and team notifications or alerts</b></p>
-<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting <a href="../notifications/howto-manage-personal-notifications.md" data-raw-source="[personal notifications](../notifications/howto-manage-personal-notifications.md)">personal notifications</a> or <a href="../notifications/howto-manage-team-notifications.md" data-raw-source="[team notifications](../notifications/howto-manage-team-notifications.md)">team notifications</a>.</p>
+<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting <a href="/azure/devops/notifications/manage-your-personal-notifications" data-raw-source="[personal notifications](../notifications/manage-your-personal-notifications.md)">personal notifications</a> or <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team notifications](../notifications/manage-team-group-notifications.md)">team notifications</a>.</p>
 <img src="media/features/features-notifications-option.png" alt="Open Notifications from Organization menu"/><br/><br/>
 
 <p><b>Share queries and sprint plans</b></p>
@@ -877,41 +877,41 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/features-tfvc-ui-vs.png" alt="Visual Studio TFVC UI pages"/><br/><br/>
 
 <p><b>Set up local or server workspaces</b></p>
-<p><a href="https://msdn.microsoft.com/library/ms181384.aspx" data-raw-source="[Create a local workspace](https://msdn.microsoft.com/library/ms181384.aspx)">Create a local workspace</a> that maps to the code base of interest. </p>
+<p><a href="/azure/devops/repos/tfvc/set-up-team-foundation-version-control-your-dev-machine?viewFallbackFrom=vsts" data-raw-source="[Create a local workspace](../repos/tfvc/set-up-team-foundation-version-control-your-dev-machine.md?viewFallbackFrom=vsts)">Create a local workspace</a> that maps to the code base of interest. </p>
 
 
 <p><b>Resolve conflicts</b></p>
-<p><a href="https://msdn.microsoft.com/library/ms181432.aspx" data-raw-source="[Support for Resolve conflicts that arise](https://msdn.microsoft.com/library/ms181432.aspx)">Support for Resolve conflicts that arise</a> when several people work concurrently on a file.</p>
+<p><a href="/azure/devops/repos/tfvc/resolve-team-foundation-version-control-conflicts?viewFallbackFrom=vsts" data-raw-source="[Support for Resolve conflicts that arise](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md?viewFallbackFrom=vsts)">Support for Resolve conflicts that arise</a> when several people work concurrently on a file.</p>
 
 <p><b>Compare files and folders</b></p>
-<p><a href="https://msdn.microsoft.com/library/bb385981.aspx" data-raw-source="[Compare server folders and local folders](https://msdn.microsoft.com/library/bb385981.aspx)">Compare server folders and local folders</a> to each other, and view the differences between the contents of each folder.</p>
+<p><a href="/previous-versions/bb385981(v=vs.140)" data-raw-source="[Compare server folders and local folders](/previous-versions/bb385981(v=vs.140))">Compare server folders and local folders</a> to each other, and view the differences between the contents of each folder.</p>
 
 </td>
 <td width="33%">
 
 
 <p><b>Track changesets</b></p>
-<p>Find information about which <a href="https://msdn.microsoft.com/library/dd405662.aspx" data-raw-source="[branches have received a particular set of changes and when those changes were merged](https://msdn.microsoft.com/library/dd405662.aspx)">branches have received a particular set of changes and when those changes were merged</a>.</p>
+<p>Find information about which <a href="/azure/devops/repos/tfvc/view-where-when-changesets-have-been-merged?viewFallbackFrom=vsts" data-raw-source="[branches have received a particular set of changes and when those changes were merged](../repos/tfvc/view-where-when-changesets-have-been-merged.md?viewFallbackFrom=vsts)">branches have received a particular set of changes and when those changes were merged</a>.</p>
 
 <p><b>Request code review</b></p>
-<p>Increase overall code quality and reduce the risk of creating bugs by <a href="https://msdn.microsoft.com/library/hh474795.aspx#code_review_request" data-raw-source="[requesting a code review when you check-in code](https://msdn.microsoft.com/library/hh474795.aspx#code_review_request)">requesting a code review when you check-in code</a>.</p>
+<p>Increase overall code quality and reduce the risk of creating bugs by <a href="/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs?viewFallbackFrom=vsts#code_review_request" data-raw-source="[requesting a code review when you check-in code](../repos/tfvc/share-your-code-in-tfvc-vs.md?viewFallbackFrom=vsts#code_review_request)">requesting a code review when you check-in code</a>.</p>
 
 <p><b>Review history of a file</b></p>
-<p><a href="https://msdn.microsoft.com/library/ms245475.aspx" data-raw-source="[Get detailed information about what changes have been made to your files](https://msdn.microsoft.com/library/ms245475.aspx)">Get detailed information about what changes have been made to your files</a>.</p>
+<p><a href="/azure/devops/repos/tfvc/get-history-item?viewFallbackFrom=vsts" data-raw-source="[Get detailed information about what changes have been made to your files](../repos/tfvc/get-history-item.md?viewFallbackFrom=vsts)">Get detailed information about what changes have been made to your files</a>.</p>
 
 <p><b>Suspend work</b></p>
-<p><a href="https://msdn.microsoft.com/library/ms181403.aspx" data-raw-source="[Use shelvesets](https://msdn.microsoft.com/library/ms181403.aspx)">Use shelvesets</a> when you need to set aside some or all of your work in progress. </p>
+<p><a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets?viewFallbackFrom=vsts" data-raw-source="[Use shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md?viewFallbackFrom=vsts)">Use shelvesets</a> when you need to set aside some or all of your work in progress. </p>
 
 <p><b>Manage branches, isolate risk</b></p>
-<p>Use branches and locks to <a href="https://msdn.microsoft.com/library/ms181423.aspx" data-raw-source="[isolate risk introduced by work done by different teams](https://msdn.microsoft.com/library/ms181423.aspx)">isolate risk introduced by work done by different teams</a>.</p>
+<p>Use branches and locks to <a href="/azure/devops/repos/tfvc/use-branches-isolate-risk-team-foundation-version-control?viewFallbackFrom=vsts" data-raw-source="[isolate risk introduced by work done by different teams](../repos/tfvc/use-branches-isolate-risk-team-foundation-version-control.md?viewFallbackFrom=vsts)">isolate risk introduced by work done by different teams</a>.</p>
 
 <p><b>Merge branches</b></p>
-<p><a href="https://msdn.microsoft.com/library/ms181428.aspx" data-raw-source="[Integrate work completed in different branches](https://msdn.microsoft.com/library/ms181428.aspx)">Integrate work completed in different branches</a> during certain phases of your project.</p>
+<p><a href="/azure/devops/repos/tfvc/merge-folders-files?viewFallbackFrom=vsts" data-raw-source="[Integrate work completed in different branches](../repos/tfvc/merge-folders-files.md?viewFallbackFrom=vsts)">Integrate work completed in different branches</a> during certain phases of your project.</p>
 
 
 
 <p><b>Set check-in and check-out policies</b></p>
-<p>Enforce practices that lead to better code and more efficient group development by <a href="https://msdn.microsoft.com/library/ms182076.aspx" data-raw-source="[setting check-in/check-out rules](https://msdn.microsoft.com/library/ms182076.aspx)">setting check-in/check-out rules</a>.</p>
+<p>Enforce practices that lead to better code and more efficient group development by <a href="/visualstudio/code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies" data-raw-source="[setting check-in/check-out rules](/visualstudio/code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies)">setting check-in/check-out rules</a>.</p>
 
 
 </td>
@@ -925,14 +925,14 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Subscribe to alerts when check-ins occur</b></p>
-<p>Get notified when someone checks in code to your TFVC project by <a href="https://msdn.microsoft.com/library/ms181407.aspx#alerts" data-raw-source="[subscribing to receive email alerts](https://msdn.microsoft.com/library/ms181407.aspx#alerts)">subscribing to receive email alerts</a>.</p>
+<p>Get notified when someone checks in code to your TFVC project by <a href="/azure/devops/repos/tfvc/check-your-work-team-codebase?viewFallbackFrom=vsts#alerts" data-raw-source="[subscribing to receive email alerts](../repos/tfvc/check-your-work-team-codebase.md?viewFallbackFrom=vsts#alerts)">subscribing to receive email alerts</a>.</p>
 
 <p><b>Version control locks</b></p>
-<p><a href="https://msdn.microsoft.com/library/ms181418.aspx" data-raw-source="[Lock files or folders](https://msdn.microsoft.com/library/ms181418.aspx)">Lock files or folders</a> when you need to prevent them from being checked out or modified. </p>
+<p><a href="/previous-versions/ms181418(v=vs.140)" data-raw-source="[Lock files or folders](/previous-versions/ms181418(v=vs.140))">Lock files or folders</a> when you need to prevent them from being checked out or modified. </p>
 
 
 <p><b>Download files from the server</b></p>
-<p><a href="https://msdn.microsoft.com/library/ms181387.aspx" data-raw-source="[Get the latest files from the server](https://msdn.microsoft.com/library/ms181387.aspx)">Get the latest files from the server</a> on a regular basis so that the code you develop is compatible with the code developed by others on your team.</p>
+<p><a href="/azure/devops/repos/tfvc/download-get-files-from-server?viewFallbackFrom=vsts" data-raw-source="[Get the latest files from the server](../repos/tfvc/download-get-files-from-server.md?viewFallbackFrom=vsts)">Get the latest files from the server</a> on a regular basis so that the code you develop is compatible with the code developed by others on your team.</p>
 
 
 <p><b>TFVC permissions</b></p>
@@ -960,7 +960,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Azure Artifacts is the new name for what was previously Package Management. Azure Artifacts helps you <a href="../artifacts/overview.md" data-raw-source="[manage code sharing by automating common tasks for discovering, consuming, and sharing components](../artifacts/overview.md)">manage code sharing by automating common tasks for discovering, consuming, and sharing components</a>.</p>
 
 <p><b>Create feeds </b></p>
-<p><a href="../artifacts/feeds/create-feed.md" data-raw-source="[Create feeds](../artifacts/feeds/create-feed.md)">Create feeds</a> to share code through packages.</p>
+<p><a href="/azure/devops/artifacts/" data-raw-source="[Create feeds](../artifacts/index.yml)">Create feeds</a> to share code through packages.</p>
 
 <p><b>Move existing file shares to the cloud</b></p>
 <p>Eliminate dependencies on on-premises file shares and hosted instances of NuGet.Server by <a href="../artifacts/nuget/move-from-fileshares.md" data-raw-source="[moving your packages to Azure DevOps Services](../artifacts/nuget/move-from-fileshares.md)">moving your packages to Azure DevOps Services</a>.</p>
@@ -1009,7 +1009,7 @@ Use features supported by these familiar clients to manage your project and illu
     :::column:::
         **Define builds**  
   
-        Start from a build template and customize your build from there. Build for [Windows](../pipelines/apps/windows/dot-net.md), [iOS](../pipelines/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../pipelines/apps/mobile/xamarin.md) for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.  
+        Start from a build template and customize your build from there. Build for [Windows](../pipelines/apps/windows/dot-net.md), [iOS](../pipelines/ecosystems/xcode.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../pipelines/ecosystems/xamarin.md) for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.  
   
         **Customize build process using scripts**  
   
@@ -1084,7 +1084,7 @@ Use features supported by these familiar clients to manage your project and illu
   
         **Build summary charts**  
   
-        View real-time build status and [add build summary charts to your dashboards](../report/add-widget-to-dashboard.md).  
+        View real-time build status and [add build summary charts to your dashboards](../report/dashboards/add-widget-to-dashboard.md).  
   
         :::image type="content" source="media/features/alm-feature-build-summary-widget.png" alt-text="Screenshot of a bar chart showing build summary data. Most bars are green, indicating that the builds finished successfully. A few bars are red.":::  
   
@@ -1215,13 +1215,13 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Get started by <a href="../test/create-test-cases.md" data-raw-source="[creating test plans and test cases](../test/create-test-cases.md)">creating test plans and test cases</a> to track manual testing for sprints or milestones.</p>
 
 <p><b>Shared steps and shared parameters</b></p>
-<p><a href="https://msdn.microsoft.com/library/dd286655.aspx" data-raw-source="[Create shared steps](https://msdn.microsoft.com/library/dd286655.aspx)">Create shared steps</a> to include often repeated sequence of steps in your manual test cases, such as logging in. Repeat manual tests with different data using <a href="../test/repeat-test-with-different-data.md" data-raw-source="[shared parameters](../test/repeat-test-with-different-data.md)">shared parameters</a>. </p>
+<p><a href="/previous-versions/dd286655(v=vs.140)" data-raw-source="[Create shared steps](/previous-versions/dd286655(v=vs.140))">Create shared steps</a> to include often repeated sequence of steps in your manual test cases, such as logging in. Repeat manual tests with different data using <a href="../test/repeat-test-with-different-data.md" data-raw-source="[shared parameters](../test/repeat-test-with-different-data.md)">shared parameters</a>. </p>
 
 </td>
 <td width="33%">
 
 <p><b>Coded UI testing</b></p>
-<p>Use Visual Studio to create <a href="https://msdn.microsoft.com/library/dd286726.aspx" data-raw-source="[coded UI tests](https://msdn.microsoft.com/library/dd286726.aspx)">coded UI tests</a> to test your application&#39;s user interface.</p>
+<p>Use Visual Studio to create <a href="/visualstudio/test/use-ui-automation-to-test-your-code" data-raw-source="[coded UI tests](/visualstudio/test/use-ui-automation-to-test-your-code)">coded UI tests</a> to test your application&#39;s user interface.</p>
 
 <p><b>Run test with your builds for continuous integration</b></p>
 <p>Use continuous integration builds to <a href="../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[run tests automatically](../pipelines/ecosystems/dotnet-core.md#run-your-tests)">run tests automatically</a>.</p>
@@ -1320,7 +1320,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Sprint burndown charts</b></p>
-<p>Monitor progress and review team patterns from <a href="../boards/sprints/sprint-burndown.md" data-raw-source="[sprint burndown charts](../boards/sprints/sprint-burndown.md)">sprint burndown charts</a></p>
+<p>Monitor progress and review team patterns from <a href="/azure/devops/report/dashboards/configure-sprint-burndown" data-raw-source="[sprint burndown charts](../report/dashboards/configure-sprint-burndown.md)">sprint burndown charts</a></p>
 <img src="media/features/alm-index-sprint-burndown-widget.png" alt="Sprint burndown chart"/><br/><br/>
 
 <p><b>Add release summary to dashboard (Azure DevOps Services) </b></p>
@@ -1352,7 +1352,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Track the progress of work on your backlogs <a href="../report/dashboards/cumulative-flow.md" data-raw-source="[through the CFD charts](../report/dashboards/cumulative-flow.md)">through the CFD charts</a>.  </p>
 
 <p><b>Power BI dashboards (Azure DevOps Services)</b></p>
-<p>You can create dashboards, individual reports, or explore data collected for your Azure DevOps organization once you <a href="../report/powerbi/report-on-vso-with-power-bi-vs.md" data-raw-source="[connect to Power BI](../report/powerbi/report-on-vso-with-power-bi-vs.md)">connect to Power BI</a>. </p>
+<p>You can create dashboards, individual reports, or explore data collected for your Azure DevOps organization once you <a href="/azure/devops/report/powerbi/data-connector-connect" data-raw-source="[connect to Power BI](../report/powerbi/data-connector-connect.md)">connect to Power BI</a>. </p>
 
 
 </td>
@@ -1377,7 +1377,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started </b></p>
-<p>You can <a href="../report/powerbi/report-on-vso-with-power-bi-vs.md" data-raw-source="[create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md)">create dashboards, individual reports, or explore data</a> collected for your organization once you connect to Power BI. </p>
+<p>You can <a href="/azure/devops/report/powerbi/data-connector-connect" data-raw-source="[create dashboards, individual reports, or explore data](../report/powerbi/data-connector-connect.md)">create dashboards, individual reports, or explore data</a> collected for your organization once you connect to Power BI. </p>
 
 
 
@@ -1412,7 +1412,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Reporting Services reports</b></p>
-<p>You can <a href="https://msdn.microsoft.com/library/dd380714.aspx" data-raw-source="[analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](https://msdn.microsoft.com/library/dd380714.aspx)">analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services</a>. These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a project based on the process - <a href="../boards/work-items/guidance/choose-process.md" data-raw-source="[Agile, Scrum, or CMMI](../boards/work-items/guidance/choose-process.md)">Agile, Scrum, or CMMI</a> - that you choose.   </p>
+<p>You can <a href="/azure/devops/report/sql-reports/reporting-services-reports" data-raw-source="[analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](../report/sql-reports/reporting-services-reports.md)">analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services</a>. These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a project based on the process - <a href="../boards/work-items/guidance/choose-process.md" data-raw-source="[Agile, Scrum, or CMMI](../boards/work-items/guidance/choose-process.md)">Agile, Scrum, or CMMI</a> - that you choose.   </p>
 
 <p><b>Add Reporting Services reports</b></p>
 <p>If you need to add reporting services to a project or on-premises TFS after you&#39;ve created your team projects, you can by <a href="../report/admin/add-reports-to-a-team-project.md" data-raw-source="[adding a report server and uploading reports](../report/admin/add-reports-to-a-team-project.md)">adding a report server and uploading reports</a>.</p>
@@ -1427,13 +1427,13 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Build reports</b></p>
 <p>Build reports track the quality of software under development. By defining tests to run automatically as part of each build definition and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code.</p>
 
-- <a href="https://msdn.microsoft.com/library/dd380683.aspx" data-raw-source="[Build Quality Indicators](https://msdn.microsoft.com/library/dd380683.aspx)">Build Quality Indicators</a> (Agile &amp; CMMI)<br/>- <a href="https://msdn.microsoft.com/library/dd380643.aspx" data-raw-source="[Build Success Over Time](https://msdn.microsoft.com/library/dd380643.aspx)">Build Success Over Time</a><br/>- <a href="https://msdn.microsoft.com/library/dd380708.aspx" data-raw-source="[Build Summary](https://msdn.microsoft.com/library/dd380708.aspx)">Build Summary</a><br/>
+- <a href="/azure/devops/report/sql-reports/build-quality-indicators-report" data-raw-source="[Build Quality Indicators](../report/sql-reports/build-quality-indicators-report.md)">Build Quality Indicators</a> (Agile &amp; CMMI)<br/>- <a href="/azure/devops/report/sql-reports/build-success-over-time-report" data-raw-source="[Build Success Over Time](../report/sql-reports/build-success-over-time-report.md)">Build Success Over Time</a><br/>- <a href="/azure/devops/report/sql-reports/build-summary-report" data-raw-source="[Build Summary](../report/sql-reports/build-summary-report.md)">Build Summary</a><br/>
 <br/>
 
 <p><b>Test and bug reports</b></p>
 <p>Test planning reports support monitoring the test progress and coverage of backlog items or user stories. Bug tracking reports illustrate the team&#39;s capacity to find and resolve bugs.</p>
 
-- <a href="https://msdn.microsoft.com/library/dd380713.aspx" data-raw-source="[Test Case Readiness](https://msdn.microsoft.com/library/dd380713.aspx)">Test Case Readiness</a><br/>- <a href="https://msdn.microsoft.com/library/dd380702.aspx" data-raw-source="[Test Plan Progress](https://msdn.microsoft.com/library/dd380702.aspx)">Test Plan Progress</a><br/>- <a href="https://msdn.microsoft.com/library/dd380736.aspx" data-raw-source="[Bug Status](https://msdn.microsoft.com/library/dd380736.aspx)">Bug Status</a> (Agile &amp; CMMI)<br/>- <a href="https://msdn.microsoft.com/library/dd380674.aspx" data-raw-source="[Bug Trends](https://msdn.microsoft.com/library/dd380674.aspx)">Bug Trends</a> (Agile &amp; CMMI)<br/>- <a href="https://msdn.microsoft.com/library/dd380731.aspx" data-raw-source="[Reactivations](https://msdn.microsoft.com/library/dd380731.aspx)">Reactivations</a> (Agile &amp; CMMI)<br/>
+- <a href="/azure/devops/report/sql-reports/test-case-readiness-report" data-raw-source="[Test Case Readiness](../report/sql-reports/test-case-readiness-report.md)">Test Case Readiness</a><br/>- <a href="/azure/devops/report/sql-reports/test-plan-progress-report" data-raw-source="[Test Plan Progress](../report/sql-reports/test-plan-progress-report.md)">Test Plan Progress</a><br/>- <a href="/azure/devops/report/sql-reports/bug-status-report" data-raw-source="[Bug Status](../report/sql-reports/bug-status-report.md)">Bug Status</a> (Agile &amp; CMMI)<br/>- <a href="/azure/devops/report/sql-reports/bug-trends-report" data-raw-source="[Bug Trends](../report/sql-reports/bug-trends-report.md)">Bug Trends</a> (Agile &amp; CMMI)<br/>- <a href="/azure/devops/report/sql-reports/reactivations-report" data-raw-source="[Reactivations](../report/sql-reports/reactivations-report.md)">Reactivations</a> (Agile &amp; CMMI)<br/>
 <br/>
 
 <p><b>Required team activities to generate useful reports</b></p>
@@ -1447,10 +1447,10 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Project management reports provide insight into how much work the team is tackling within a sprint or release, and the rate of their progress. By linking work items and updating specific fields as work is performed, you can track the progress of individual stories and be able to more accurately estimate future activities. </p>
 
 <p><em>Scrum reports</em></p>
-- <a href="https://msdn.microsoft.com/library/dn641200.aspx">Backlog Overview</a><br/>- <a href="https://msdn.microsoft.com/library/ff731579.aspx">Release Burndown</a><br/>- <a href="https://msdn.microsoft.com/library/ff731588.aspx">Sprint Burndown</a><br/>- <a href="https://msdn.microsoft.com/library/ff731575.aspx">Velocity</a><br/><br/>
+- <a href="/azure/devops/report/sql-reports/backlog-overview-scrum">Backlog Overview</a><br/>- <a href="/azure/devops/report/sql-reports/release-burndown">Release Burndown</a><br/>- <a href="/azure/devops/report/sql-reports/sprint-burndown-scrum">Sprint Burndown</a><br/>- <a href="/azure/devops/report/sql-reports/velocity">Velocity</a><br/><br/>
 <p><em>Agile and CMMI</em></p>
 
-- <a href="https://msdn.microsoft.com/library/dd380678.aspx">Burndown and Burn Rate</a><br/>- <a href="https://msdn.microsoft.com/library/dd380673.aspx">Remaining Work</a><br/>- <a href="https://msdn.microsoft.com/library/ee461517.aspx">Requirements Overview</a> (CMMI)<br/>- <a href="https://msdn.microsoft.com/library/ee461582.aspx">Requirements Progress</a> (CMMI)<br/>- <a href="https://msdn.microsoft.com/library/dd380706.aspx">Status of All Iterations</a> (similar to Velocity)<br/>- <a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Overview</a>   (Agile)<br/>- <a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Progress</a> (Agile)<br/>- <a href="https://msdn.microsoft.com/library/ee707132.aspx">Unplanned Work</a><br/>
+- <a href="/azure/devops/report/sql-reports/burndown-and-burn-rate-report">Burndown and Burn Rate</a><br/>- <a href="/azure/devops/report/sql-reports/remaining-work-report">Remaining Work</a><br/>- <a href="/azure/devops/report/sql-reports/requirements-overview-report-cmmi">Requirements Overview</a> (CMMI)<br/>- <a href="/azure/devops/report/sql-reports/requirements-progress-report-cmmi">Requirements Progress</a> (CMMI)<br/>- <a href="/azure/devops/report/sql-reports/status-on-all-iterations-report">Status of All Iterations</a> (similar to Velocity)<br/>- <a href="/azure/devops/?viewFallbackFrom=vsts">Stories Overview</a>   (Agile)<br/>- <a href="/azure/devops/?viewFallbackFrom=vsts">Stories Progress</a> (Agile)<br/>- <a href="/azure/devops/report/sql-reports/unplanned-work">Unplanned Work</a><br/>
 <br/>
 
 <p><b>Set permissions to view or create reports</b></p>
@@ -1640,10 +1640,10 @@ Use features supported by these familiar clients to manage your project and illu
 <p><a href="https://visualstudio.microsoft.com/products/how-to-buy-vs" data-raw-source="[Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs)">Visual Studio subscriptions</a> are a way for you to get the Visual Studio IDE, team collaboration benefits like Azure DevOps Services and TFS, and subscriber benefits like dev/test use of Windows, Windows Server, and SQL Server. </p>
 
 <p><b>Extensions</b></p>
-<p>You can <a href="../marketplace/get-vsts-extensions.md" data-raw-source="[get and quickly install extensions](../marketplace/get-vsts-extensions.md)">get and quickly install extensions</a> to add functionality to Visual Studio, Visual Studio Code, or Azure DevOps Services.</p>
+<p>You can <a href="/azure/devops/marketplace/install-extension" data-raw-source="[get and quickly install extensions](../marketplace/install-extension.md)">get and quickly install extensions</a> to add functionality to Visual Studio, Visual Studio Code, or Azure DevOps Services.</p>
 
 <p><b>Try Azure Test Plans for free</b></p>
-<p>You can <a href="../billing/try-additional-features-vs.md" data-raw-source="[Try Azure Test Plans for free](../billing/try-additional-features-vs.md)">start a trial for Azure Test Plans for free</a>.</p>
+<p>You can <a href="/azure/devops/organizations/billing/try-additional-features-vs" data-raw-source="[Try Azure Test Plans for free](../organizations/billing/try-additional-features-vs.md)">start a trial for Azure Test Plans for free</a>.</p>
 
 
 <p><b>Get extensions for...</b></p>
@@ -1676,7 +1676,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started with REST APIs</b></p>
-<p>Learn the basic patterns for <a href="../integrate/get-started/rest/basics.md" data-raw-source="[using the REST APIs](../integrate/get-started/rest/basics.md)">using the REST APIs</a> for Azure DevOps Services and TFS.</p>
+<p>Learn the basic patterns for <a href="/rest/api/azure/devops/" data-raw-source="[using the REST APIs](/rest/api/azure/devops/)">using the REST APIs</a> for Azure DevOps Services and TFS.</p>
 
 <p><b>Authorization</b></p>
 <p>Get authorization from your customers to access Azure DevOps Services resources using <a href="../integrate/get-started/Authentication/oauth.md" data-raw-source="[OAuth 2.0](../integrate/get-started/Authentication/oauth.md)">OAuth 2.0</a>.</p>
@@ -1689,7 +1689,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>.NET client libraries</b></p>
 <p>For .NET developers building Windows apps and services that integrate with Azure DevOps,
-<a href="../integrate/get-started/client-libraries/dotnet.md" data-raw-source="[client libraries](../integrate/get-started/client-libraries/dotnet.md)">client libraries</a> are available
+<a href="/azure/devops/integrate/concepts/dotnet-client-libraries" data-raw-source="[client libraries](../integrate/concepts/dotnet-client-libraries.md)">client libraries</a> are available
 for integrating with work item tracking, version control, build, and other services are now available.
 These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute
 the libraries needed by your app or service.</p>
@@ -1724,9 +1724,9 @@ the libraries needed by your app or service.</p>
 when events happen in your Azure DevOps Projects</p>
 
 <p><b>Create integrations</b></p>
-<p>Integrate other services like <a href="../service-hooks/services/hipchat.md" data-raw-source="[HipChat](../service-hooks/services/hipchat.md)">HipChat</a>,
+<p>Integrate other services like <a href="/azure/devops/service-hooks/overview" data-raw-source="[HipChat](../service-hooks/overview.md)">HipChat</a>,
 <a href="../service-hooks/services/slack.md" data-raw-source="[Slack](../service-hooks/services/slack.md)">Slack</a>,
-and <a href="../service-hooks/services/uservoice.md" data-raw-source="[UserVoice](../service-hooks/services/uservoice.md)">UserVoice</a> with Azure DevOps
+and <a href="/azure/devops/service-hooks/overview" data-raw-source="[UserVoice](../service-hooks/overview.md)">UserVoice</a> with Azure DevOps
 using <a href="../service-hooks/overview.md" data-raw-source="[service hooks](../service-hooks/overview.md)">service hooks</a>.</p>
 
 
@@ -1764,7 +1764,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Language Interface Packs (LIPs)</b></p>
-<p>By using a <a href="https://msdn.microsoft.com/library/ms246590.aspx" data-raw-source="[Windows Language Interface Pack (LIP)](https://msdn.microsoft.com/library/ms246590.aspx)">Windows Language Interface Pack (LIP)</a>, you can install a language version of Windows, and then install various User Interface Language Packs. Language packs switch your English Visual Studio Professional user interface into any of these languages and have a majority of the user interface localized. </p>
+<p>By using a <a href="/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio" data-raw-source="[Windows Language Interface Pack (LIP)](/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio)">Windows Language Interface Pack (LIP)</a>, you can install a language version of Windows, and then install various User Interface Language Packs. Language packs switch your English Visual Studio Professional user interface into any of these languages and have a majority of the user interface localized. </p>
 
 </td>
 <td width="33%">
@@ -1774,20 +1774,20 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <ul>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[English](https://msdn.microsoft.com/library/fda2bad5.aspx)">English</a></li>
-<li><a href="https://msdn.microsoft.com/v/library/fda2bad5.aspx" data-raw-source="[Chinese Simplified](https://msdn.microsoft.com/v/library/fda2bad5.aspx)">Chinese Simplified</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Chinese Traditional](https://msdn.microsoft.com/library/fda2bad5.aspx)">Chinese Traditional</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Czech](https://msdn.microsoft.com/library/fda2bad5.aspx)">Czech</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[German](https://msdn.microsoft.com/library/fda2bad5.aspx)">German</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[French](https://msdn.microsoft.com/library/fda2bad5.aspx)">French</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Italian](https://msdn.microsoft.com/library/fda2bad5.aspx)">Italian</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Japanese](https://msdn.microsoft.com/library/fda2bad5.aspx)">Japanese</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Korean](https://msdn.microsoft.com/library/fda2bad5.aspx)">Korean</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Polish](https://msdn.microsoft.com/library/fda2bad5.aspx)">Polish</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Brazilian Portuguese](https://msdn.microsoft.com/library/fda2bad5.aspx)">Portuguese (Brazil)</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Russian](https://msdn.microsoft.com/library/fda2bad5.aspx)">Russian</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Spanish](https://msdn.microsoft.com/library/fda2bad5.aspx)">Spanish</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Turkish](https://msdn.microsoft.com/library/fda2bad5.aspx)">Turkish</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[English](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">English</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[Chinese Simplified](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">Chinese Simplified</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[Chinese Traditional](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">Chinese Traditional</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[Czech](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">Czech</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[German](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">German</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[French](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">French</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[Italian](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">Italian</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[Japanese](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">Japanese</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[Korean](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">Korean</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[Polish](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">Polish</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[Brazilian Portuguese](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">Portuguese (Brazil)</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[Russian](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">Russian</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[Spanish](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">Spanish</a></li>
+<li><a href="/azure/devops/user-guide/devops-alm-overview?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts" data-raw-source="[Turkish](./devops-alm-overview.md?toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json&viewFallbackFrom=vsts)">Turkish</a></li>
 </ul>
 
 <br/>
@@ -1797,22 +1797,22 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Visual Studio language pack</b></p>
-<p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="https://msdn.microsoft.com/library/ms246590.aspx" data-raw-source="[switch the UI display to different languages](https://msdn.microsoft.com/library/ms246590.aspx)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
+<p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio" data-raw-source="[switch the UI display to different languages](/visualstudio/install/microsoft-language-interface-packs-lips-and-visual-studio)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
 <ul>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">English</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Chinese Simplified</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Chinese Traditional</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Czech</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">German</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">French</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Italian</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Japanese</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Korean</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Polish</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Portuguese (Brazil)</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Russian</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Spanish</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Turkish</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">English</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">Chinese Simplified</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">Chinese Traditional</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">Czech</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">German</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">French</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">Italian</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">Japanese</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">Korean</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">Polish</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">Portuguese (Brazil)</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">Russian</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">Spanish</a></li>
+<li><a href="/visualstudio/welcome-to-visual-studio-2015">Turkish</a></li>
 </ul>
 <br/>
 
@@ -1843,14 +1843,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is Application Insights</b></p>
-<p>Application Insights, an extensible analytics service that monitors your live web application, supports developers to continuously improve the performance and usability of apps. With it you can <a href="https://azure.microsoft.com/documentation/articles/app-insights-overview/" data-raw-source="[detect and diagnose performance issues, and understand what users actually do with your app](https://azure.microsoft.com/documentation/articles/app-insights-overview/)">detect and diagnose performance issues, and understand what users actually do with your app</a>. </p>
+<p>Application Insights, an extensible analytics service that monitors your live web application, supports developers to continuously improve the performance and usability of apps. With it you can <a href="/azure/azure-monitor/app/app-insights-overview" data-raw-source="[detect and diagnose performance issues, and understand what users actually do with your app](/azure/azure-monitor/app/app-insights-overview)">detect and diagnose performance issues, and understand what users actually do with your app</a>. </p>
 
 
 <p><b>Web site availability monitoring </b></p>
-<p>Know when your site or service goes down by <a href="https://azure.microsoft.com/documentation/articles/app-insights-monitor-web-app-availability/" data-raw-source="[setting up tests and performance thresholds to monitor both uptime and responsiveness](https://azure.microsoft.com/documentation/articles/app-insights-monitor-web-app-availability/)">setting up tests and performance thresholds to monitor both uptime and responsiveness</a>. </p>
+<p>Know when your site or service goes down by <a href="/azure/azure-monitor/app/monitor-web-app-availability" data-raw-source="[setting up tests and performance thresholds to monitor both uptime and responsiveness](/azure/azure-monitor/app/monitor-web-app-availability)">setting up tests and performance thresholds to monitor both uptime and responsiveness</a>. </p>
 
 <p><b>Web site performance &amp; usage </b></p>
-<p>Open the Performance blade to see <a href="https://azure.microsoft.com/documentation/articles/app-insights-monitor-performance-live-website-now/#view-performance-telemetry" data-raw-source="[request, response time, dependency and other data](https://azure.microsoft.com/documentation/articles/app-insights-monitor-performance-live-website-now/#view-performance-telemetry)">request, response time, dependency and other data</a>.</p>
+<p>Open the Performance blade to see <a href="/azure/azure-monitor/app/monitor-performance-live-website-now#view-performance-telemetry" data-raw-source="[request, response time, dependency and other data](/azure/azure-monitor/app/monitor-performance-live-website-now#view-performance-telemetry)">request, response time, dependency and other data</a>.</p>
 
 
 <p><b>Power BI integration</b></p>
@@ -1868,24 +1868,24 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Diagnose failures and exceptions</b></p>
-<p>Quickly diagnose causes and <a href="https://azure.microsoft.com/documentation/articles/app-insights-asp-net-exceptions/" data-raw-source="[correlate failed requests with exceptions and other events at both the client and server](https://azure.microsoft.com/documentation/articles/app-insights-asp-net-exceptions/)">correlate failed requests with exceptions and other events at both the client and server</a>.</p>
+<p>Quickly diagnose causes and <a href="/azure/azure-monitor/app/asp-net-exceptions" data-raw-source="[correlate failed requests with exceptions and other events at both the client and server](/azure/azure-monitor/app/asp-net-exceptions)">correlate failed requests with exceptions and other events at both the client and server</a>.</p>
 </td>
 <td width="33%">
 
 
 <p><b>Usage analysis</b></p>
-<p>Gain a clear view of <a href="https://azure.microsoft.com/documentation/articles/app-insights-overview-usage/" data-raw-source="[where your users are coming from and how they use your app ](https://azure.microsoft.com/documentation/articles/app-insights-overview-usage/)">where your users are coming from and how they use your app </a>. Add custom instrumentation to determine usage patterns and next version investment areas.  </p>
+<p>Gain a clear view of <a href="/azure/azure-monitor/app/usage-overview" data-raw-source="[where your users are coming from and how they use your app ](/azure/azure-monitor/app/usage-overview)">where your users are coming from and how they use your app </a>. Add custom instrumentation to determine usage patterns and next version investment areas.  </p>
 
 <p><b>Diagnose dependency issues</b></p>
-<p>See how long your application <a href="https://azure.microsoft.com/documentation/articles/app-insights-dependencies/" data-raw-source="[waits for dependencies and how often a dependency call fails](https://azure.microsoft.com/documentation/articles/app-insights-dependencies/)">waits for dependencies and how often a dependency call fails</a>. Dependencies are external components that your app calls such as an HTTP service, database, or file system. </p>
+<p>See how long your application <a href="/azure/azure-monitor/app/asp-net-dependencies" data-raw-source="[waits for dependencies and how often a dependency call fails](/azure/azure-monitor/app/asp-net-dependencies)">waits for dependencies and how often a dependency call fails</a>. Dependencies are external components that your app calls such as an HTTP service, database, or file system. </p>
 
 
 <p><b>Custom data collectors </b></p>
-<p>Add custom data collectors to your app using the <a href="https://azure.microsoft.com/documentation/articles/app-insights-api-custom-events-metrics/" data-raw-source="[Application Insights API to customize your telemetry data](https://azure.microsoft.com/documentation/articles/app-insights-api-custom-events-metrics/)">Application Insights API to customize your telemetry data</a>.   </p>
+<p>Add custom data collectors to your app using the <a href="/azure/azure-monitor/app/api-custom-events-metrics" data-raw-source="[Application Insights API to customize your telemetry data](/azure/azure-monitor/app/api-custom-events-metrics)">Application Insights API to customize your telemetry data</a>.   </p>
 
 
 <p><b>Continuous data export</b></p>
-<p>Perform custom analysis on your telemetry through <a href="https://azure.microsoft.com/documentation/articles/app-insights-export-telemetry/" data-raw-source="[continuous export of your data](https://azure.microsoft.com/documentation/articles/app-insights-export-telemetry/)">continuous export of your data</a>. </p>
+<p>Perform custom analysis on your telemetry through <a href="/azure/azure-monitor/app/export-telemetry" data-raw-source="[continuous export of your data](/azure/azure-monitor/app/export-telemetry)">continuous export of your data</a>. </p>
 
 
 
@@ -1909,7 +1909,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by <a href="https://visualstudio.microsoft.com/app-center/" data-raw-source="[adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](https://visualstudio.microsoft.com/app-center/)">adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows</a>. </p>
 
 <p><b>Simplified distribution </b></p>
-<p><a href="https://docs.microsoft.com/appcenter/distribution/" data-raw-source="[Manage distribution of development and production versions of your apps](https://docs.microsoft.com/appcenter/distribution/)">Manage distribution of development and production versions of your apps</a> and use independent bundle identifiers that can run in parallel on the same device.</p>
+<p><a href="/appcenter/distribution/" data-raw-source="[Manage distribution of development and production versions of your apps](/appcenter/distribution/)">Manage distribution of development and production versions of your apps</a> and use independent bundle identifiers that can run in parallel on the same device.</p>
 
 
 <p><b>Integrate with Azure DevOps Services and TFS</b></p>
@@ -1935,19 +1935,19 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Invite or recruit testers</b></p>
-<p><a href="https://docs.microsoft.com/appcenter/dashboard/" data-raw-source="[Invite beta testers and distribute your beta versions](https://docs.microsoft.com/appcenter/dashboard/)">Invite beta testers and distribute your beta versions</a> through the dashboard.</p>
+<p><a href="/appcenter/dashboard/" data-raw-source="[Invite beta testers and distribute your beta versions](/appcenter/dashboard/)">Invite beta testers and distribute your beta versions</a> through the dashboard.</p>
 
 
 <p><b>Usage</b></p>
-<p><a href="https://docs.microsoft.com/appcenter/analytics/event-metrics" data-raw-source="[Get advanced metrics](https://docs.microsoft.com/appcenter/analytics/event-metrics)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
+<p><a href="/appcenter/analytics/event-metrics" data-raw-source="[Get advanced metrics](/appcenter/analytics/event-metrics)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
 
 <p><b>Crash reports</b></p>
-<p>Get the information you need to analyze and respond to crashes by getting <a href="https://docs.microsoft.com/appcenter/diagnostics/enabling-diagnostics" data-raw-source="[symbolicated stack traces and environment details](https://docs.microsoft.com/appcenter/diagnostics/enabling-diagnostics)">symbolicated stack traces and environment details</a>.
+<p>Get the information you need to analyze and respond to crashes by getting <a href="/appcenter/diagnostics/enabling-diagnostics" data-raw-source="[symbolicated stack traces and environment details](/appcenter/diagnostics/enabling-diagnostics)">symbolicated stack traces and environment details</a>.
  </p>
 
 
 <p><b>Webhooks</b></p>
-<p>Use webhooks to <a href="https://docs.microsoft.com/appcenter/dashboard/webhooks/" data-raw-source="[receive notifications about new versions, crash groups, and feedback](https://docs.microsoft.com/appcenter/dashboard/webhooks/)">receive notifications about new versions, crash groups, and feedback</a>. </p>
+<p>Use webhooks to <a href="/appcenter/dashboard/webhooks/" data-raw-source="[receive notifications about new versions, crash groups, and feedback](/appcenter/dashboard/webhooks/)">receive notifications about new versions, crash groups, and feedback</a>. </p>
 
 
 </td>
@@ -2076,7 +2076,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Quick work item search</b></p>
-<p>Find work items based on <a href="https://msdn.microsoft.com/library/cc668120.aspx" data-raw-source="[ID, assignment, changed date, or keyword](https://msdn.microsoft.com/library/cc668120.aspx)">ID, assignment, changed date, or keyword</a>. </p>
+<p>Find work items based on <a href="/azure/devops/boards/queries/example-queries?viewFallbackFrom=vsts" data-raw-source="[ID, assignment, changed date, or keyword](../boards/queries/example-queries.md?viewFallbackFrom=vsts)">ID, assignment, changed date, or keyword</a>. </p>
 <img src="media/features/alm-index-search-work-items-vsts.png" alt="Search work item box"/><br/><br/>
 
 
@@ -2084,7 +2084,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><a href="../project/search/overview.md" data-raw-source="[Find code based on keywords and semantic search filters](../project/search/overview.md)">Find code based on keywords and semantic search filters</a> across your Git repositories.</p>
 <img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 <p><b>CodeLens search</b></p>
-<p><a href="https://msdn.microsoft.com/library/dn269218.aspx" data-raw-source="[Find references and changes to your code, linked bugs, work items, code reviews, and unit tests](https://msdn.microsoft.com/library/dn269218.aspx)">Find references and changes to your code, linked bugs, work items, code reviews, and unit tests</a>.</p>
+<p><a href="/visualstudio/ide/find-code-changes-and-other-history-with-codelens" data-raw-source="[Find references and changes to your code, linked bugs, work items, code reviews, and unit tests](/visualstudio/ide/find-code-changes-and-other-history-with-codelens)">Find references and changes to your code, linked bugs, work items, code reviews, and unit tests</a>.</p>
 
 <p><b>Work item queries</b></p>
 <p>Open shared queries or create your own query using the query editor <a href="../boards/queries/using-queries.md" data-raw-source="[to list work items or show hierarchical or dependent items](../boards/queries/using-queries.md)">to list work items or show hierarchical or dependent items</a>.  </p>
@@ -2247,7 +2247,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><a href="../organizations/security/permissions.md" data-raw-source="[Provide or restrict access](../organizations/security/permissions.md)">Provide or restrict access</a> for practically any feature, function, or object at the collection or project level. </p>
 
 <p><b>SharePoint permissions (TFS)</b></p>
-<p>Grant permissions to <a href="https://msdn.microsoft.com/library/bb558971.aspx" data-raw-source="[view and contribute to SharePoint project portals](https://msdn.microsoft.com/library/bb558971.aspx)">view and contribute to SharePoint project portals</a>.</p>
+<p>Grant permissions to <a href="/azure/devops/organizations/security/add-users-team-project?viewFallbackFrom=vsts" data-raw-source="[view and contribute to SharePoint project portals](../organizations/security/add-users-team-project.md?viewFallbackFrom=vsts)">view and contribute to SharePoint project portals</a>.</p>
 
 <p><b>SQL Server reporting permissions (TFS)</b></p>
 <p>Grant permissions to <a href="../report/admin/grant-permissions-to-reports.md" data-raw-source="[view and author Excel and SQL Server reports](../report/admin/grant-permissions-to-reports.md)">view and author Excel and SQL Server reports</a>.</p>
@@ -2280,7 +2280,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Migrate from on-premises to hosted</b></p>
-<p>You can <a href="https://docs.microsoft.com/azure/devops/migrate/migrate-from-tfs" data-raw-source="[migrate source code and work items](https://docs.microsoft.com/azure/devops/migrate/migrate-from-tfs)">migrate source code and work items</a> from an on-premises TFS to the cloud. </p>
+<p>You can <a href="/azure/devops/migrate/migrate-from-tfs" data-raw-source="[migrate source code and work items](../migrate/migrate-from-tfs.md)">migrate source code and work items</a> from an on-premises TFS to the cloud. </p>
 
 </td>
 <td width="33%">
@@ -2382,7 +2382,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 <p><b>Scrum process tools</b></p>
-<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or project that you select or create. Agile Scrum tools support <a href="../boards/sprints/assign-work-sprint.md" data-raw-source="[sprint planning](../boards/sprints/assign-work-sprint.md)">sprint planning</a>, <a href="../boards/sprints/set-capacity.md" data-raw-source="[capacity planning](../boards/sprints/set-capacity.md)">capacity planning</a>, <a href="../boards/sprints/task-board.md" data-raw-source="[task boards](../boards/sprints/task-board.md)">task boards</a>, and <a href="../boards/sprints/sprint-burndown.md" data-raw-source="[burndown charts](../boards/sprints/sprint-burndown.md)">burndown charts</a>.  </p>
+<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or project that you select or create. Agile Scrum tools support <a href="../boards/sprints/assign-work-sprint.md" data-raw-source="[sprint planning](../boards/sprints/assign-work-sprint.md)">sprint planning</a>, <a href="../boards/sprints/set-capacity.md" data-raw-source="[capacity planning](../boards/sprints/set-capacity.md)">capacity planning</a>, <a href="../boards/sprints/task-board.md" data-raw-source="[task boards](../boards/sprints/task-board.md)">task boards</a>, and <a href="/azure/devops/report/dashboards/configure-sprint-burndown" data-raw-source="[burndown charts](../report/dashboards/configure-sprint-burndown.md)">burndown charts</a>.  </p>
 
 
 <p><b>Manage processes (Azure DevOps Services) </b></p>
@@ -2415,7 +2415,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a process template?</b></p>
-<p>A process template is the forerunner and on-premises version of a process. It provides the  building blocks of the work item tracking system as well as other sub-systems you access through your project. Process templates support full <a href="https://msdn.microsoft.com/library/ms243782.aspx" data-raw-source="[customization of all its objects](https://msdn.microsoft.com/library/ms243782.aspx)">customization of all its objects</a>. </p>
+<p>A process template is the forerunner and on-premises version of a process. It provides the  building blocks of the work item tracking system as well as other sub-systems you access through your project. Process templates support full <a href="/azure/devops/reference/process-templates/customize-process?viewFallbackFrom=vsts" data-raw-source="[customization of all its objects](../reference/process-templates/customize-process.md?viewFallbackFrom=vsts)">customization of all its objects</a>. </p>
 
 <p><b>Manage process templates </b></p>
 <p><a href="../boards/work-items/guidance/manage-process-templates.md" data-raw-source="[Download and upload process templates](../boards/work-items/guidance/manage-process-templates.md)">Download and upload process templates</a> to support customization and upgrade of your work tracking experience and team projects. </p>
@@ -2427,7 +2427,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Process template files</b></p>
-<p>You customize the initial configuration of team projects by <a href="https://msdn.microsoft.com/library/ms243856.aspx" data-raw-source="[customizing one or more process template files](https://msdn.microsoft.com/library/ms243856.aspx)">customizing one or more process template files</a>. By customizing these files, you can define the initial configuration of all team projects that are created from the process template. </p>
+<p>You customize the initial configuration of team projects by <a href="/azure/devops/reference/process-templates/overview-process-template-files?viewFallbackFrom=vsts" data-raw-source="[customizing one or more process template files](../reference/process-templates/overview-process-template-files.md?viewFallbackFrom=vsts)">customizing one or more process template files</a>. By customizing these files, you can define the initial configuration of all team projects that are created from the process template. </p>
 
 
 <p><b>Configure Features Wizard</b></p>
@@ -2442,7 +2442,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Customize the Microsoft Project field mapping file </b></p>
-<p>You can <a href="https://msdn.microsoft.com/library/ms404686.aspx" data-raw-source="[customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project](https://msdn.microsoft.com/library/ms404686.aspx)">customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project</a>. And, you can change how specific fields are published.  </p>
+<p>You can <a href="/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts" data-raw-source="[customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project](/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts)">customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project</a>. And, you can change how specific fields are published.  </p>
 
 
 </td>
@@ -2525,7 +2525,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>A team is an organizing unit used to support a number of <a href="../organizations/settings/manage-teams.md" data-raw-source="[team-configurable tools](../organizations/settings/manage-teams.md)">team-configurable tools</a> to plan and manage work and facilitate collaboration.  </p>
 
 <p><b>Add team members</b></p>
-<p>Add organizations-<a href="../organizations/accounts/add-team-members.md" data-raw-source="[Azure DevOps Services](../organizations/accounts/add-team-members.md)">Azure DevOps Services</a> | <a href="../organizations/security/add-users-team-project.md" data-raw-source="[TFS](../organizations/security/add-users-team-project.md)">TFS</a>--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
+<p>Add organizations-<a href="/azure/devops/organizations/security/add-users-team-project" data-raw-source="[Azure DevOps Services](../organizations/security/add-users-team-project.md)">Azure DevOps Services</a> | <a href="../organizations/security/add-users-team-project.md" data-raw-source="[TFS](../organizations/security/add-users-team-project.md)">TFS</a>--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
 <img src="media/features/alm-feature-manage-members.png" alt="Manage users, add team members"/><br/><br/>
 
 
@@ -2631,7 +2631,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the <a href="../boards/backlogs/connect-work-items-to-git-dev-ops.md" data-raw-source="[Git Development section](../boards/backlogs/connect-work-items-to-git-dev-ops.md)">Git Development section</a>. Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
 <img src="media/features/alm-feature-git-dev-section.png" alt="Work item form Development section"/><br/><br/>
 <p><b>TFVC code changes </b></p>
-<p><a href="https://msdn.microsoft.com/library/ms245475.aspx" data-raw-source="[Get detailed information about what changes have been made to your files](https://msdn.microsoft.com/library/ms245475.aspx)">Get detailed information about what changes have been made to your files</a>, compare files and folders, view where and when changesets have been merged, and view file changes using annotate.</p>
+<p><a href="/azure/devops/repos/tfvc/get-history-item?viewFallbackFrom=vsts" data-raw-source="[Get detailed information about what changes have been made to your files](../repos/tfvc/get-history-item.md?viewFallbackFrom=vsts)">Get detailed information about what changes have been made to your files</a>, compare files and folders, view where and when changesets have been merged, and view file changes using annotate.</p>
 
 <p><b>Build changes</b></p>
 <p>Determine who <a href="../pipelines/build/history.md" data-raw-source="[changed what in the build definition and when they did it](../pipelines/build/history.md)">changed what in the build definition and when they did it</a>.</p>
@@ -2652,7 +2652,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ## Related articles
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
-- [Azure DevOps Services - Features update](https://aka.ms/azuredevops/releasenotes)
+- [Azure DevOps Services - Features update](/azure/devops/release-notes/2020/sprint-175-update)
 - [Azure DevOps Blog](https://devblogs.microsoft.com/devops/)  
 
 <br/>
@@ -2665,4 +2665,4 @@ Send suggestions on **[UserVoice](https://developercommunity.visualstudio.com/co
 
 See also our [comprehensive feedback and support page](provide-feedback.md).
 
---> 
+-->
