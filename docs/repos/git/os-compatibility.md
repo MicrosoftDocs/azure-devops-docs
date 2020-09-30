@@ -5,25 +5,15 @@ description: How Git interacts with multiple platform filesystems
 ms.assetid: 7e02f9e9-ebb1-4d7a-aeb2-37445a6cf8c7
 ms.technology: devops-code-git
 ms.topic: conceptual
-ms.date: 10/03/2018
+ms.date: 08/14/2020
 monikerRange: '>= tfs-2018'
 ---
 
 # Git Cross-Platform Compatibility
 
-::: moniker range="azure-devops"
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
-#### Azure Repos
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
-
-::: moniker-end
-
-The Windows, macOS, and Linux file systems each have limitations and behaviors that are not always supported by one or more of the other platforms. Since Git is a cross-platform technology, it is possible for a developer on one platform to make a commit containing files or folders that have incompatible names with another platform's file system. Protecting your repo from this is important because developers on other platforms may unknowingly checkout a commit that corrupts their working direction due to unsupported file or paths names.
+The Windows, macOS, and Linux file systems each have limitations and behaviors that are not always supported by one or more of the other platforms. Since Git is a cross-platform technology, it is possible for a developer on one platform to make a commit containing files or folders that have incompatible names with another platform's file system. Protecting your repo from this is important because developers on other platforms may unknowingly checkout a commit that corrupts their working directory due to unsupported file or paths names.
 
 Azure Repos offers [three cross-platform compatibility settings](repository-settings.md) that help protect your repo from people pushing commits that are incompatible with one or more platforms. The three file system limitations these settings are related to are:
 

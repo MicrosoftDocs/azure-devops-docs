@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Merge Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 The **merge** command applies changes from one branch into another.
 
@@ -132,6 +132,12 @@ c:\projects>tf merge /candidate branch2 branch1 /recursive
 ```
 
 The following example discards changeset 137 as a candidate for merging into branch2.
+
+```
+c:\projects>tf merge /discard /version:C137~C137 branch1 branch2 /recursive
+```
+
+The following example discards all the changesets up to changeset 137 as a candidate for merging into branch2.
 
 ```
 c:\projects>tf merge /discard /version:C137 branch1 branch2 /recursive

@@ -35,7 +35,7 @@ To delete your organization, you need Project Collection Administrator permissio
 
 ## Prerequisites
 
-If your organization uses an Azure subscription to bill purchases, you must [first remove billing from your organization](../billing/change-azure-subscription.md#remove-your-billing-subscription) before you can delete your organization in Azure DevOps.
+If your organization uses an Azure subscription to bill purchases, you must [first remove billing from your organization](../billing/change-azure-subscription.md#remove-your-subscription) before you can delete your organization in Azure DevOps.
 
 ## Delete organization
 

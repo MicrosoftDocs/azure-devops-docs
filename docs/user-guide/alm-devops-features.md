@@ -483,7 +483,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Support your team to be in sync by <a href="../boards/boards/definition-of-done.md" data-raw-source="[specifying requirements to fulfill prior to handoff of items to a downstream work stage](../boards/boards/definition-of-done.md)">specifying requirements to fulfill prior to handoff of items to a downstream work stage</a>.</p><br/>
 <p><b>Filter by field values or parent work items</b></p>
 <p>Choose the <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> field filter icon to <a href="../boards/boards/filter-kanban-board.md" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
-<img src="media/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter"/><br/><br/>
+<img src="media/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter fields."/><br/><br/>
 
 <p><b>Cumulative Flow Diagram </b></p>
 <p>With the CFD, you can <a href="../report/dashboards/cumulative-flow.md" data-raw-source="[monitor the count of work items as they progressively move through various states which you define](../report/dashboards/cumulative-flow.md)">monitor the count of work items as they progressively move through various states which you define</a>.  </p>
@@ -874,7 +874,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Get started with TFVC in Visual Studio </b></p>
 <p><a href="../repos/tfvc/share-your-code-in-tfvc-vs.md" data-raw-source="[Develop and share your code](../repos/tfvc/share-your-code-in-tfvc-vs.md)">Develop and share your code</a>. Learn how to configure your workspace, check-in your code, compare file changes, and view file history. </p>
-<img src="media/features/features-tfvc-ui-vs.png" alt="Visual Studio Git UI pages"/><br/><br/>
+<img src="media/features/features-tfvc-ui-vs.png" alt="Visual Studio TFVC UI pages"/><br/><br/>
 
 <p><b>Set up local or server workspaces</b></p>
 <p><a href="https://msdn.microsoft.com/library/ms181384.aspx" data-raw-source="[Create a local workspace](https://msdn.microsoft.com/library/ms181384.aspx)">Create a local workspace</a> that maps to the code base of interest. </p>
@@ -1001,94 +1001,111 @@ Use features supported by these familiar clients to manage your project and illu
 
 ## Continuous delivery
 
-
 <a id="build"></a>
 
 ### Build
 
-<table>
-<tbody>
-<tr valign="top">
-<td width="32%">
-
-
-<p><b>Define builds</b></p>
-<p>Start from a build template and customize your build from there. Build for <a href="../pipelines/apps/windows/dot-net.md" data-raw-source="[Windows](../pipelines/apps/windows/dot-net.md)">Windows</a>, <a href="../pipelines/apps/mobile/xcode-ios.md" data-raw-source="[iOS](../pipelines/apps/mobile/xcode-ios.md)">iOS</a>, Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. <a href="../pipelines/apps/mobile/xamarin.md" data-raw-source="[Build Xamarin apps](../pipelines/apps/mobile/xamarin.md)">Build Xamarin apps</a> for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.</p>
-
-<p><b>Customize build process using scripts</b></p>
-<p><a href="../pipelines/scripts/powershell.md" data-raw-source="[Use a script](../pipelines/scripts/powershell.md)">Use a script</a> to add your team&#39;s business logic to your build process.</p>
-
-
-<p><b>Build agents and agent pools </b></p>
-<p>At least one <a href="../pipelines/agents/agents.md" data-raw-source="[agent](../pipelines/agents/agents.md)">agent</a> is require to build your code. As you scale your system with more code, people, and builds, you&#39;ll need more build agents organized within <a href="../pipelines/agents/pools-queues.md" data-raw-source="[agent pools](../pipelines/agents/pools-queues.md)">agent pools</a>. You can use both on-premises or Microsoft-hosted agent pools.</p>
-
-
-<p><b>Gated check-in (TFVC, Azure DevOps Services) </b></p>
-<p>Use <a href="../pipelines/repos/tfvc.md#gated" data-raw-source="[gated check-in](../pipelines/repos/tfvc.md#gated)">gated check-in</a> to protect against breaking changes when checking code into TFVC.  </p>
-
-
-<p><b>Branch policies (Git)</b></p>
-<p>Improve code quality by <a href="../repos/git/branch-policies.md" data-raw-source="[setting branch policies](../repos/git/branch-policies.md)">setting branch policies</a> to ensure build are never broken or getting the right people to review changes. </p>
-
-
-</td>
-<td width="38%">
-<p><b>Specify your build steps</b></p>
-<p>Add steps to specify what you <a href="../pipelines/tasks/index.md#build" data-raw-source="[want to build](../pipelines/tasks/index.md#build)">want to build</a>, the <a href="../pipelines/tasks/index.md#test" data-raw-source="[tests to run](../pipelines/tasks/index.md#test)">tests to run</a>, and <a href="../pipelines/tasks/index.md" data-raw-source="[all the other steps](../pipelines/tasks/index.md)">all the other steps</a> needed to complete the process.</p>
-
-pipelines\tasks\build\media
-<p><img src="../pipelines/tasks/build/media/android-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gradle.md" data-raw-source="[Build an Android app using Gradle](../pipelines/tasks/build/gradle.md)">Build an Android app using Gradle</a></p>
-<p><img src="../pipelines/tasks/build/media/android-signing.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/android-signing.md" data-raw-source="[Sign and align Android APK files](../pipelines/tasks/build/android-signing.md)">Sign and align Android APK files</a></p>
-<p><img src="../pipelines/tasks/build/media/ant.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/ant.md" data-raw-source="[Build with Apache Ant](../pipelines/tasks/build/ant.md)">Build with Apache Ant</a> </p>
-<p><img src="../pipelines/tasks/build/media/gradle.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gradle.md" data-raw-source="[Build using a Gradle wrapper script](../pipelines/tasks/build/gradle.md)">Build using a Gradle wrapper script</a>  </p>
-<p><img src="../pipelines/tasks/build/media/grunt.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/grunt.md" data-raw-source="[Grunt: The JavaScript Task Runner](../pipelines/tasks/build/grunt.md)">Grunt: The JavaScript Task Runner</a> </p>
-<p><img src="../pipelines/tasks/build/media/gulp.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gulp.md" data-raw-source="[Gulp: Node.js task-based build system](../pipelines/tasks/build/gulp.md)">Gulp: Node.js task-based build system</a></p>
-<p><img src="../pipelines/tasks/build/media/publish-build-artifacts.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/index-sources-publish-symbols.md" data-raw-source="[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)">Index source code and publish symbols</a></p>
-<p><img src="../pipelines/tasks/build/media/maven.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/maven.md" data-raw-source="[Build with Apache Maven](../pipelines/tasks/build/maven.md)">Build with Apache Maven</a></p>
-<p><img src="../pipelines/tasks/build/media/msbuild.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/msbuild.md" data-raw-source="[Build with MSbuild](../pipelines/tasks/build/msbuild.md)">Build with MSbuild</a></p>
-<p><img src="../pipelines/tasks/build/media/sonarqube.png" alt=""/>&#160;&#160;<a href="https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/" data-raw-source="[SonarQube for MSbuild](https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/)">SonarQube for MSbuild</a></p>
-<p><img src="../pipelines/tasks/build/media/visual-studio-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/visual-studio-build.md" data-raw-source="[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)">Visual Studio and MSbuild</a></p>
-<p><img src="../pipelines/tasks/build/media/xamarin-android.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-android.md" data-raw-source="[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)">Build an Android app with Xamarin</a> </p>
-<p><img src="../pipelines/tasks/build/media/xamarin-ios.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-ios.md" data-raw-source="[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)">Build an iOS app with Xamarin on macOS</a> </p>
-
-
-<p><b>Build variables</b></p>
-<p>Use <a href="../pipelines/build/variables.md" data-raw-source="[predefined variables](../pipelines/build/variables.md)">predefined variables</a> or add your custom variables when configuring your build definition or your build scripts.</p>
-
-
-</td>
-<td width="30%">
-
-
-<p><b>Continuous integration builds</b></p>
-<p><a href="../pipelines/build/triggers.md#ci" data-raw-source="[Define a CI build](../pipelines/build/triggers.md#ci)">Define a CI build</a> that compiles and tests your solutions whenever your team checks in code.</p>
-
-
-<p><b>Build summary charts</b></p>
-<p>View real-time build status and <a href="../report/add-widget-to-dashboard.md" data-raw-source="[add build summary charts to your dashboards](../report/add-widget-to-dashboard.md)">add build summary charts to your dashboards</a>.  </p>
-<img src="media/features/alm-feature-build-summary-widget.png" alt="build summary chart"/><br/><br/>
-
-
-<p><b>Code coverage charts </b></p>
-<p>From the Code Coverage tab on a Build summary page, you can view percentage of code coverage as well as upload code coverage data in Jacoco or Cobertura formats.</p>
-
-
-<p><b>Audit changes </b></p>
-<p>Determine who <a href="../pipelines/build/history.md" data-raw-source="[changed what in the build definition and when they did it](../pipelines/build/history.md)">changed what in the build definition and when they did it</a>. </p>
-
-
-<p><b>Build retention policies</b></p>
-<p><a href="../pipelines/policies/retention.md" data-raw-source="[Define policies to automatically delete old completed builds ](../pipelines/policies/retention.md)">Define policies to automatically delete old completed builds </a> to minimize clutter.</p>
-
-<p><b>Build permissions</b></p>
-<p>Determine who can <a href="../organizations/security/permissions.md#build" data-raw-source="[define, delete, and manage builds](../organizations/security/permissions.md#build)">define, delete, and manage builds</a>.</p>
-
-
-</td>
-</tr>
-</tbody>
-</table>
-
+:::row:::
+    :::column:::
+        **Define builds**  
+  
+        Start from a build template and customize your build from there. Build for [Windows](../pipelines/apps/windows/dot-net.md), [iOS](../pipelines/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../pipelines/apps/mobile/xamarin.md) for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.  
+  
+        **Customize build process using scripts**  
+  
+        [Use a script](../pipelines/scripts/powershell.md) to add your team&#39;s business logic to your build process.  
+  
+        **Build agents and agent pools**  
+  
+        At least one [agent](../pipelines/agents/agents.md) is required to build your code. As you scale your system with more code, people, and builds, you&#39;ll need more build agents organized within [agent pools](../pipelines/agents/pools-queues.md). You can use both on-premises or Microsoft-hosted agent pools.  
+  
+        **Gated check-in (TFVC, Azure DevOps Services)**  
+  
+        Use [gated check-in](../pipelines/repos/tfvc.md#gated) to protect against breaking changes when checking code into TFVC.  
+  
+        **Branch policies (Git)**  
+  
+        Improve code quality by [setting branch policies](../repos/git/branch-policies.md) to ensure builds are never broken or getting the right people to review changes.
+    :::column-end:::
+    :::column:::
+        **Specify your build steps**  
+  
+        Add steps to specify what you [want to build](../pipelines/tasks/index.md#build), the [tests to run](../pipelines/tasks/index.md#test), and [all the other steps](../pipelines/tasks/index.md) needed to complete the process.  
+  
+        pipelines\tasks\build\media  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/android-build.png":::
+        &#160;&#160;[Build an Android app using Gradle](../pipelines/tasks/build/gradle.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/android-signing.png":::
+        &#160;&#160;[Sign and align Android APK files](../pipelines/tasks/build/android-signing.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/ant.png":::
+        &#160;&#160;[Build with Apache Ant](../pipelines/tasks/build/ant.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/gradle.png":::
+        &#160;&#160;[Build using a Gradle wrapper script](../pipelines/tasks/build/gradle.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/grunt.png":::
+        &#160;&#160;[Grunt: The JavaScript Task Runner](../pipelines/tasks/build/grunt.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/gulp.png":::
+        &#160;&#160;[Gulp: Node.js task-based build system](../pipelines/tasks/build/gulp.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/publish-build-artifacts.png":::
+        &#160;&#160;[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/maven.png":::
+        &#160;&#160;[Build with Apache Maven](../pipelines/tasks/build/maven.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/msbuild.png":::
+        &#160;&#160;[Build with MSbuild](../pipelines/tasks/build/msbuild.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/sonarqube.png":::
+        &#160;&#160;[SonarQube for MSbuild](https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/visual-studio-build.png":::
+        &#160;&#160;[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/xamarin-android.png":::
+        &#160;&#160;[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)  
+  
+        :::image type="icon" source="../pipelines/tasks/build/media/xamarin-ios.png":::
+        &#160;&#160;[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)  
+  
+        **Build variables**  
+  
+        Use [predefined variables](../pipelines/build/variables.md) or add your custom variables when configuring your build definition or your build scripts.
+    :::column-end:::
+    :::column:::
+        **Continuous integration builds**  
+  
+        [Define a CI build](../pipelines/build/triggers.md#ci) that compiles and tests your solutions whenever your team checks in code.  
+  
+        **Build summary charts**  
+  
+        View real-time build status and [add build summary charts to your dashboards](../report/add-widget-to-dashboard.md).  
+  
+        :::image type="content" source="media/features/alm-feature-build-summary-widget.png" alt-text="Screenshot of a bar chart showing build summary data. Most bars are green, indicating that the builds finished successfully. A few bars are red.":::  
+  
+        **Code coverage charts**  
+  
+        From the Code Coverage tab on a Build summary page, you can view percentage of code coverage as well as upload code coverage data in Jacoco or Cobertura formats.  
+  
+        **Audit changes**  
+  
+        Determine who [changed what in the build definition and when they did it](../pipelines/build/history.md).  
+  
+        **Build retention policies**  
+  
+        [Define policies to automatically delete old completed builds ](../pipelines/policies/retention.md) to minimize clutter.  
+  
+        **Build permissions**  
+  
+        Determine who can [define, delete, and manage builds](../organizations/security/permissions.md#build).
+    :::column-end:::
+:::row-end:::  
+  
 <a id="release"></a>
 
 ### Release
@@ -1520,7 +1537,7 @@ pipelines\tasks\build\media
 
 <p><b>Other links widget</b></p>
 <p>Provides quick access links from a team dashboard to <a href="../report/dashboards/widget-catalog.md#other-links-widget" data-raw-source="[request feedback, define sprints, and modify your team&#39;s area paths](../report/dashboards/widget-catalog.md#other-links-widget)">request feedback, define sprints, and modify your team&#39;s area paths</a>.</p>
-<img src="media/features/alm-feature-widget-other-links.png" alt="Request feedback"/><br/><br/>
+<img src="media/features/alm-feature-widget-other-links.png" alt="Other links widget."/><br/><br/>
 
 <p><b>Query tile </b></p>
 <p>Configurable tile to display the <a href="../report/dashboards/widget-catalog.md#query-tile-widget" data-raw-source="[results and link to a shared query](../report/dashboards/widget-catalog.md#query-tile-widget)">results and link to a shared query</a>. </p>
@@ -1963,7 +1980,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Your profile and preferences</b></p>
 <p>Choose your name to access <a href="../organizations/settings/set-your-preferences.md" data-raw-source="[your profile settings](../organizations/settings/set-your-preferences.md)">your profile settings</a>, set preferences, <a href="../repos/git/command-prompt.md#pat" data-raw-source="[create personal access tokens (Azure DevOps Services)](../repos/git/command-prompt.md#pat)">create personal access tokens (Azure DevOps Services)</a>, <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[set alerts](../notifications/manage-your-personal-notifications.md)">set alerts</a>, and log-in or out.</p>
-<img src="media/features/alm-index-my-profile-menu.png" alt="Profile drop down menu"/><br/><br/>
+<img src="media/features/alm-index-my-profile-menu.png" alt="My Profile menu."/><br/><br/>
 
 <p><b>Switch team context</b></p>
 <p>Navigate to a different team or project from the top row.</p>
@@ -1972,7 +1989,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Change team settings</b></p>
 <p>Customize features to meet your team needs by <a href="../organizations/settings/manage-teams.md" data-raw-source="[configuring your team assets](../organizations/settings/manage-teams.md)">configuring your team assets</a>.</p>
-<img src="media/features/alm-feature-team-settings-gear-icon.png" alt="Switch team context"/><br/><br/>
+<img src="media/features/alm-feature-team-settings-gear-icon.png" alt="Change team settings."/><br/><br/>
 
 
 <p><b>Keyboard shortcuts</b></p>
@@ -2414,7 +2431,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Configure Features Wizard</b></p>
-<p>Use the Configure Features Wizard to <a href="../reference/configure-features-after-upgrade.md" data-raw-source="[configure team projects after a TFS upgrade to access new features](../reference/configure-features-after-upgrade.md)">configure team projects after a TFS upgrade to access new features</a>.  </p>
+<p>Use the Configure Features Wizard to <a href="/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade" data-raw-source="[configure team projects after a TFS upgrade to access new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)">configure team projects after a TFS upgrade to access new features</a>.  </p>
 
 </td>
 <td width="33%">
@@ -2481,7 +2498,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>You customize a project defined on an on-premises TFS by <a href="../reference/customize-work.md" data-raw-source="[modifying definition files for work item types or process configuration, or changing field attributes](../reference/customize-work.md)">modifying definition files for work item types or process configuration, or changing field attributes</a>.  </p>
 
 <p><b>Update a project after an upgrade (TFS)</b></p>
-<p>Some features added when you upgrade your on-premises application server may require you to <a href="../reference/configure-features-after-upgrade.md" data-raw-source="[configure features to access them](../reference/configure-features-after-upgrade.md)">configure features to access them</a>. </p>
+<p>Some features added when you upgrade your on-premises application server may require you to <a href="/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade" data-raw-source="[configure features to access them](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)">configure features to access them</a>. </p>
 
 
 <p><b>Upload reports (TFS) </b></p>
@@ -2558,7 +2575,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team rooms</b></p>
-<p>Team rooms, like chat rooms, provide teams with a <a href="../notifications/collaborate-in-a-team-room.md" data-raw-source="[space to discuss work in progress, ask questions, share status, and clarify issues](../notifications/collaborate-in-a-team-room.md)">space to discuss work in progress, ask questions, share status, and clarify issues</a> that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
+<p>Team rooms, like chat rooms, provide teams with a <a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[space to discuss work in progress, ask questions, share status, and clarify issues](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">space to discuss work in progress, ask questions, share status, and clarify issues</a> that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
 
 
 <p><b>Team groups</b></p>

@@ -1,13 +1,13 @@
 ---
-title: REST API versioning for Azure DevOps Services (and TFS)
-description: Learn how versioning works for REST APIs for Azure DevOps Services and TFS
+title: REST API versioning for Azure DevOps and TFS
+description: Learn how versioning works for REST APIs for Azure DevOps and TFS
 ms.assetid: 5fc6efd4-9947-40f2-b4f6-9695a24de87c
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
-ms.date: 05/30/2019
+ms.date: 09/29/2020
 ---
 
 # REST API Versioning
@@ -40,13 +40,15 @@ GET https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version=1.0
 
 ### Supported versions
 
-| Product                     | 1.0    | 2.0    | 3.0    | 4.0    | 5.0   |
-|:----------------------------|:------:|:------:|:------:|:------:|:------:|
-| Azure DevOps Services | X      | X      | X      | X      |   X   |
-| Azure DevOps Server 2019| X        |  X   |   X   |   X   |      X   |
-| Team Foundation Server 2018 | X      | X      | X      | X      | - |
-| Team Foundation Server 2017 | X      | X      | X      | -      | - |
-| Team Foundation Server 2015 | X      | X      | -      | -      | - |
+
+| Product                     | 1.0 | 2.0 | 3.0 | 4.0 | 5.0 | 6.0 |
+|-----------------------------|-----|-----|-----|-----|-----|-----|
+| Azure DevOps Services       | X   | X   | X   | X   | X   | X  |
+| Azure DevOps Server 2020    | X   | X   | X   | X   | X   | X  |
+| Azure DevOps Server 2019    | X   | X   | X   | X   | X   | -   |
+| Team Foundation Server 2018 | X   | X   | X   | X   | -   | -   |
+| Team Foundation Server 2017 | X   | X   | X   | -   | -   | -   |
+| Team Foundation Server 2015 | X   | X   | -   | -   | -   | -   |
 
 
 Major API version releases align with Team Foundation Server RTM releases. For example, the `3.0` API set was introduced with Team Foundation Server 2017.

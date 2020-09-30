@@ -16,7 +16,7 @@ ms.date: 12/19/2017
 
 [!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)] 
 
-You may be able to resolve errors and warnings that the [Configure Features](../configure-features-after-upgrade.md) wizard displays. These problems occur because definitions in the project conflict with definitions in the process templates uploaded to your project collection. You should change the process template to resolve the error and rerun the wizard. Or, you can change your project and then rerun the wizard.    
+You may be able to resolve errors and warnings that the [Configure Features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) wizard displays. These problems occur because definitions in the project conflict with definitions in the process templates uploaded to your project collection. You should change the process template to resolve the error and rerun the wizard. Or, you can change your project and then rerun the wizard.    
 
 > [!IMPORTANT]  
 > This article applies only to projects defined on an on-premises Team Foundation Server (TFS). 
@@ -46,7 +46,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
   
 3. Upload the process template to Team Foundation Server. See [Upload, download, and delete process templates](../../boards/work-items/guidance/manage-process-templates.md).  
   
-   See also [Update a customized process template to access new features](../update-customized-process-template.md).  
+   See also [Update a customized process template to access new features](/previous-versions/azure/devops/reference/upgrade/update-customized-process-template).  
   
 ###  <a name="team_project"></a> Resolve errors by modifying your project or project collection  
  To resolve an error or warning, you may choose to modify the project or project collection using the **witadmin** command. See [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).  
@@ -156,4 +156,4 @@ You may be able to resolve errors and warnings that the [Configure Features](../
   
 ## Related articles
 
--  [Update a customized process template to access new features](../update-customized-process-template.md)
+-  [Update a customized process template to access new features](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options)

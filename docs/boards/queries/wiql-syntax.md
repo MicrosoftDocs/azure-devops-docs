@@ -395,6 +395,7 @@ is the equivalent of:
 
 ::: moniker-end
 
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 ### Custom macros 
 

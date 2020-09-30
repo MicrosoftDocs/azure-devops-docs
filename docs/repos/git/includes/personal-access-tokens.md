@@ -13,11 +13,11 @@ ms.topic: include
 
 1. Sign in to your organization in Azure DevOps (```https://dev.azure.com/{yourorganization}```)
   
-2. From your home page, open your user settings, and then select **Profile**.
+2. From your home page, open your user settings, and then select **Personal access tokens**.
 
-   ![My profile Team Services](~/repos/git/media/my-profile-team-services-preview.png)
+   ![Select Personal Access Tokens](~/repos/git/media/select-personal-access-tokens.jpg)
 
-3. Under Security, select **Personal access tokens**, and then select **+ New Token**.
+3. And then select **+ New Token**.
 
    ![Select New Token to create](~/repos/git/media/select-new-token.png)
 
@@ -69,11 +69,11 @@ ms.topic: include
 
 ::: moniker range=">= tfs-2017 < azure-devops"
 
-1. Sign in to your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
+1. Sign in to your web portal (```https://{server}:8080/tfs/```).
 
 2. From your home page, open your profile. Go to your security details.
 
-   ![TFS home page, open your profile, go to Security](~/repos/git/media/my-profile-team-services.png)
+   ![Home page, open your profile, go to Security](~/repos/git/media/my-profile-team-services.png)
 
 3. Create a personal access token.
 
@@ -89,7 +89,7 @@ ms.topic: include
 5. Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes)
    for this token to authorize for *your specific tasks*.
 
-   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to TFS, 
+   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate, 
    limit your token's scope to **Agent Pools (read, manage)**. 
 
 6. When you're done, make sure to *copy the token*. For your security, it won't be shown again. Use this token as your password. Select **Close**.
@@ -258,7 +258,7 @@ You can regenerate or extend a PAT, and modify its [scope](~/integrate/get-start
 
 1. From your home page, open your user settings, and then select **Profile**.
 
-   ![My profile Team Services](~/repos/git/media/my-profile-team-services-preview.png)
+   ![My profile Team Services, Preview page, modify a PAT.](~/repos/git/media/my-profile-team-services-preview.png)
 
 2. Under Security, select **Personal access tokens**. Select the token for which you want to modify, and then select **Edit**.
 
@@ -295,7 +295,7 @@ You can revoke a PAT at any time, for various reasons.
 
 1. From your home page, open your user settings, and then select **Profile**.
 
-   ![My profile Team Services](~/repos/git/media/my-profile-team-services-preview.png)
+   ![My profile Team Services, Preview page, revoke a PAT.](~/repos/git/media/my-profile-team-services-preview.png)
 
 2. Under Security, select **Personal access tokens**. Select the token for which you want to revoke access, and then select **Revoke**.
 

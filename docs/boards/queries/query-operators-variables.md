@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 08/27/2020
 ---
 
 
@@ -93,6 +93,7 @@ The value you specify for a field must conform to the data type for that field. 
 1. The **Boolean** data type field is supported for TFS 2017 and later versions. 
 2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
 
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 <a id="operators" /> 
 
@@ -171,7 +172,8 @@ You can use query operators in the following table to specify how each value in 
     <td><p>Long-text fields that are indexed for full-text search, which correspond to all <strong>PlainText</strong> and <strong>HTML</strong> fields, and the <strong>History</strong> and <strong>Title</strong> fields.</p></td></tr>
 <tr>
     <td><p><strong>Does Not Contain Words</strong></p></td>
-    <td><p>Does not contain the exact text string or words within the field you selected for filtering. Text string is limited to 100 characters. </p></td>
+    <td><p>Does not contain the exact text string or words within the field you selected for filtering. Text string is limited to 100 characters. </p>
+    <p>Use this operator in combination with a clause with the <strong>Contains Words</strong> operator to include and exclude specific keywords.</p></td>
     <td><p>Text fields that are indexed for full text search.</p></td></tr>
 <tr>
     <td><p><strong>In</strong></p></td>

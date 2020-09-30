@@ -46,18 +46,18 @@ If you don't have a Microsoft account or GitHub account, follow these steps.
 3. Enter a password you want to use with Azure DevOps and choose **Next**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Enter your password and sign in](media/acquisition/enter-password-for-devops.png)
+	> ![Enter a password.](media/acquisition/enter-password-for-devops.png)
 
 3. Check your email account and enter the code provided. Choose  **Next**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Enter your password and sign in](media/acquisition/verify-new-account.png)
+	> ![Enter the code provided.](media/acquisition/verify-new-account.png)
 
 	An organization is created based on your sign-in account name. Sign in to your organization at any time by specifying (`https://dev.azure.com/{yourorganization}`).
 
 4. A project is created based on your sign-in account name. You can make changes to the settings shown, or change them later. To get started with Azure DevOps, choose **Continue**.
 
-   ![Choose Continue to sign up for Azure DevOps](media/acquisition/create-project-new-account.png)
+   ![Choose Continue to get started with Azure DevOps.](media/acquisition/create-project-new-account.png)
 
 	Your project name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
 
@@ -76,12 +76,12 @@ If you have a Microsoft account, follow these steps to sign up for Azure Boards.
 
 3. Enter your password and select **Sign in**.
 
-   ![Enter your password and sign in](/azure/devops/media/enter-password-sign-in.png)
+   ![Enter your password and sign in.](/azure/devops/media/enter-password-sign-in.png)
 
 4. To get started with Azure Boards, select **Continue**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Continue to sign up for Azure DevOps](/azure/devops/media/sign-up-azure-devops.png)
+	> ![Select Continue.](/azure/devops/media/sign-up-azure-devops.png)
 
 	An organization is created based on the account you used to sign in. Use the following URL to sign in to your organization at any time:
 
@@ -130,7 +130,7 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create new project dialog](media/sign-up/nf-create-project.png)
+	> ![Create a project.](media/sign-up/nf-create-project.png)
 
 	The name can't contain special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]), can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Visibility can be either public or private. With public visibility, anyone on the internet can view your project. With private visibility, only people who you give access to can view your project.
 	

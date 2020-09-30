@@ -16,6 +16,10 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
+          - text: August 2020
+            url: azure-devops-docs-2020-08.md
+          - text: July 2020
+            url: azure-devops-docs-2020-07.md
           - text: June 2020
             url: azure-devops-docs-2020-06.md
           - text: May 2020

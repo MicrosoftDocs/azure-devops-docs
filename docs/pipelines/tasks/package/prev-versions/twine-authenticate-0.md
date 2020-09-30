@@ -1,7 +1,7 @@
 ---
 title: Python Twine Upload Authenticate version 0
-ms.custom: seodec18, tracking-python
-description: Sets up authentication with twine to Python feeds so you can publish Python packages in your pipeline. 
+ms.custom: seodec18, devx-track-python
+description: Learn how Python Twine Upload Authenticate version 0 sets up authentication with twine to Python feeds so you can publish Python packages in your pipeline.
 ms.topic: reference
 ms.author: dastahel
 author: davidstaheli

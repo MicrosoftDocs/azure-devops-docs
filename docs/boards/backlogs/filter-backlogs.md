@@ -23,9 +23,9 @@ If you have many items listed in your product or portfolio backlog&mdash;and you
 
 The filter function is available from boards, backlogs, sprint backlogs, queries, and taskboards. For information on filtering Kanban boards, see [Filter your Kanban board](../boards/filter-kanban-board.md). 
 
-::: moniker range=">= azure-devops-2019"
-
 ## Filter based on keywords or fields   
+
+::: moniker range=">= azure-devops-2019"
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.
 
@@ -48,7 +48,7 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 Here we show a filtered backlog based on the keyword "issues". Filtered pages show the :::image type="icon" source="../../media/icons/filtered.png" border="false"::: filtered icon. The filtered set is always a flat list, even if you've selected to show a hierarchical backlog view. 
 
 > [!div class="mx-imgBorder"]  
-> ![Filter by keyword](media/filter/filter-issues-keyword.png)   
+> ![Filtered backlog based on the keyword issues.](media/filter/filter-issues-keyword.png)   
 
 To clear and dismiss filtering, choose the :::image type="icon" source="../../media/icons/close-filter.png" border="false"::: close filter icon.
 
@@ -56,8 +56,6 @@ To clear and dismiss filtering, choose the :::image type="icon" source="../../me
 
 
 ::: moniker range="tfs-2018"
-
-## Filter based on keywords or fields   
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 

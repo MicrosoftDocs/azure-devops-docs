@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 12/04/2018
 ---
@@ -56,7 +56,7 @@ The following images show the pages available when you connect to a Git reposito
 
 > |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
 > |------|---------|---------|  
-> | ![Visual studio 2019, Team Explorer Home page with Git as source control](media/vs-2019-te/te-git-full.png) |![Visual studio 2017, Team Explorer Home page with Git as source control](media/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](media/IC827210.png) |  
+> | ![Visual studio 2019, Team Explorer Home page with Git as source control](media/vs-2019-te/te-git-full.png) |![Visual studio 2017, Team Explorer Home page with Git as source control](media/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page with Git as source control.](media/IC827210.png) |  
 
 To learn more about each page, see the following articles. 
 
@@ -74,7 +74,7 @@ To learn more about each page, see the following articles.
 <ul>
 <li><a href="../project/navigation/index.md" data-raw-source="[Web portal](../project/navigation/index.md)">Web portal</a></li>
 <li><a href="../boards/sprints/task-board.md" data-raw-source="[Task Board](../boards/sprints/task-board.md)">Task Board</a></li>
-<li><a href="../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team Room](../notifications/collaborate-in-a-team-room.md)">Team Room</a></li>
+<li><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team Room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team Room</a></li>
 </ul>
 <p><strong>Builds</strong></p>
 <ul>
@@ -131,7 +131,7 @@ The following images show the pages available when you connect to a TFVC reposit
 > 
 > |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
 > |------|---------|---------|
-> | ![Visual Studio 2019, Team Explorer Home page w/ TFVC as source control](media/vs-2019-te/te-tfvc.png) | ![Visual Studio 2017, Team Explorer Home page w/ TFVC as source control](media/vs-2017-te/te-tfvc.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](media/IC827209.png) |  
+> | ![Visual Studio 2019, Team Explorer Home page w/ TFVC as source control](media/vs-2019-te/te-tfvc.png) | ![Visual Studio 2017, Team Explorer Home page w/ TFVC as source control](media/vs-2017-te/te-tfvc.png) | ![Visual Studio 2015, Team Explorer Home page with a TFVC repository as source control](media/IC827209.png) |  
 
 To learn more about each page, see the following articles. 
 
@@ -149,7 +149,7 @@ To learn more about each page, see the following articles.
 <ul>
 <li><a href="../project/navigation/index.md" data-raw-source="[Web portal](../project/navigation/index.md)">Web portal</a></li>
 <li><a href="../boards/sprints/task-board.md" data-raw-source="[Task Board](../boards/sprints/task-board.md)">Task Board</a></li>
-<li><a href="../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team Room](../notifications/collaborate-in-a-team-room.md)">Team Room</a></li>
+<li><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team Room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team Room</a></li>
 </ul>
 <p><strong>Builds</strong></p>
 <ul>

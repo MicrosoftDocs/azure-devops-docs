@@ -1,6 +1,6 @@
 ---
 title: Subscribe to Azure DevOps events from another service
-description: Use service hooks to set up actions to take when specific events occur in Azure DevOps Services.
+description: Use service hooks to set up actions to take when specific events occur in Azure DevOps.
 toc: Hide
 ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
 ms.technology: devops-collab
@@ -14,7 +14,7 @@ ms.date: 07/27/2020
 [!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
 
 
-Using the [Subscriptions](https://docs.microsoft.com/rest/api/vsts/hooks/?view=vsts-rest-4.1) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
+Using the [Subscriptions](https://docs.microsoft.com/rest/api/vsts/hooks/) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
 
 Supported events:
 
@@ -33,14 +33,14 @@ For a complete set of supported consumer services and actions, see the [consumer
 ## Create a subscription for a project
 
 To create a subscription for an event, choose which consumer to use and the action you want to take. You will create an HTTP POST 
-request to the subscriptions URL for the Azure DevOps Services organization with the event, consumer and action to 
+request to the subscriptions URL for the Azure DevOps organization with the event, consumer and action to 
 take for the subscription.
 
 ### Before you begin
 
 To create a subscription, the following data is required:
 
-- project ID (use the [Project REST API](https://docs.microsoft.com/rest/api/vsts/core/projects?view=vsts-rest-4.1) to get the project ID)
+- project ID (use the [Project REST API](https://docs.microsoft.com/rest/api/vsts/core/projects) to get the project ID)
 - event ID and settings (see the [event reference](./events.md))
 - consumer and action IDs and settings (see the [consumer reference](./consumers.md))
 

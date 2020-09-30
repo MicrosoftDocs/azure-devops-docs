@@ -21,7 +21,7 @@ Enable live updates to automatically refresh your Kanban board when changes occu
 Choose the :::image type="icon" source="/azure/devops/media/icons/view-options-icon.png" border="false"::: view options icon and move the slider for **Live updates** to On.  
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board](/azure/devops/boards/boards/media/turn-live-updates-on-agile.png) 
+> ![Move the slider for Live updates to On.](/azure/devops/boards/boards/media/turn-live-updates-on-agile.png) 
 ::: moniker-end
 
 

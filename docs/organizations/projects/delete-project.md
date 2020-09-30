@@ -16,7 +16,7 @@ ms.date: 07/20/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]  
 
-In this article, learn how to delete a project from Azure DevOps. Deleting a project helps simplify navigating to projects that are only in use.
+Learn how to delete a project from Azure DevOps. Deleting a project helps simplify navigating to projects that are only in use.
 
 > [!Caution]
 > Projects are permanently deleted if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
@@ -55,7 +55,7 @@ In this article, learn how to delete a project from Azure DevOps. Deleting a pro
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Select Open Organization settings.](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Projects**, and then check one or more projects to delete. Select **Delete**. 
 
@@ -76,7 +76,7 @@ Your project is deleted and can be restored up to 28 days afterward.
 
 You can delete a team project with the [az devops project delete](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az devops project delete --id
                          [--org]
                          [--yes] 
@@ -96,7 +96,7 @@ az devops project delete --id
 
 The following command deletes the team project with the specified ID without prompting you for confirmation.
 
-```CLI 
+```azurecli 
 az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 ``` 
 

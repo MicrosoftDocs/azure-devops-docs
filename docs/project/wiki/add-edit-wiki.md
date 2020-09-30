@@ -10,16 +10,16 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
-ms.date: 07/23/2020 
+ms.date: 08/26/2020 
 ---
 
 # Add and edit wiki pages
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
-When the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project, there's a new page where you can add a title and content. There's a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
+You can add a title and content to a page, once the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project. There's a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
-In this article, learn how to do the following tasks:  
+Learn how to do the following tasks:  
 
 > [!div class="checklist"]
 > * Open wiki
@@ -94,7 +94,7 @@ You can also use keyboard shortcuts to add a new page by pressing **n** or add a
 To add a wiki page, enter the `az devops wiki page create` command. 
 
 > [!div class="tabbedCodeSnippets"]
-```Azure CLI
+```azurecli
 az devops wiki page create --path
                            --wiki
                            [--comment]
@@ -125,14 +125,14 @@ accepted values: ascii, utf-16be, utf-16le, utf-8
 Create a new page with path 'my page' in a wiki named 'myprojectwiki' with inline content.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page update --path 'my page' --wiki myprojectwiki --content "Hello World"
 ```
 
 Update content of page with path 'my page' in a wiki with content from a file.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.txt --encoding utf-8
 ```
 
@@ -157,10 +157,10 @@ To edit an existing Wiki page, open the page and select **Edit**, or open the co
 
 ::: moniker range=">= azure-devops-2020"
 
-For code wikis, you can edit wiki pages in Repos hub also by using the option **Edit in Repos**. 
+For code wikis, you can edit a page in the side-by-side editor, using the markdown toolbar to create your content. This experience is identical to the process in a project wiki. You can edit wiki pages in the Repos hub also by using the option, **Edit in Repos**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Create wiki and first page](media/wiki/edit-in-repos.png)
+> ![Edit wiki page.](media/wiki/edit-in-repos.png)
 
 > [!NOTE]  
 > If you have branch policies in your code wiki, use **Edit in Repos** to create a branch and continue editing.
@@ -181,7 +181,7 @@ To delete a page, open the context menu from the tree or the one inside the page
 To edit a wiki page, enter the `az devops wiki page update` command. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page update --path
                            --version
                            --wiki
@@ -212,14 +212,14 @@ az devops wiki page update --path
 Update content of page with path 'my page' in a wiki named 'myprojectwiki' with inline content.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page update --path 'my page' --wiki myprojectwiki --content "Hello World" --version 4ae78ad5835cb7dd55072fe210c9ee7eb6d6413b
 ```
 
 Update content of page with path 'my page' in a wiki with content from a file.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.txt --encoding utf-8 --version 4ae78ad5835cb7dd55072fe210c9ee7eb6d6413b
 ```
 
@@ -228,7 +228,7 @@ az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.t
 To delete a wiki page, enter the `az devops wiki page delete` command. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page delete --path
                            --wiki
                            [--comment]
@@ -254,7 +254,7 @@ az devops wiki page delete --path
 Delete a wiki page with path 'my wiki' in a wiki named 'myprojectwiki'.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page delete --path 'my wiki' --wiki 'myprojectwiki'
 ```
 
@@ -285,7 +285,7 @@ For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wik
 
 ## Make a page the wiki home page
 
-By default, the first page you add when you create a wiki is set as the wiki home page. You can change your wiki homepage, if another page becomes more relevant, by dragging and dropping the page to the top of the tree.
+By default, the first page you add when you create a wiki is set as the wiki home page. You can change your wiki homepage if another page becomes more relevant, by dragging and dropping the page to the top of the tree.
 
 ## Next steps
 

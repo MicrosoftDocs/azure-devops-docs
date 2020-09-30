@@ -2,23 +2,23 @@
 title: Access, export, filter audit logs for Azure DevOps
 titleSuffix: Azure DevOps 
 description: Get started accessing, reviewing, exporting, and filtering audit logs for Azure DevOps.  
-ms.technology: devops-settings
+ms.technology: devops-audit
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: chcomley
 author: roferg
 ms.topic: quickstart
-monikerRange: '>= azure-devops-2020'
-ms.date: 05/11/2020
+monikerRange: 'azure-devops'
+ms.date: 09/02/2020
 ---
 
 # Access, export, and filter audit logs
 
-[!INCLUDE [version-cloud-plus-2020](../../includes/version-cloud-plus-2020.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 > [!Note]
 > Auditing is currently in a Public Preview.
 
-In this article, learn how to access, export, and filter audit logs. Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. 
+You can access, export, and filter audit logs. Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. 
 
 Audit events can be the following occurrences:
 
@@ -28,7 +28,10 @@ Audit events can be the following occurrences:
 - accessing the auditing feature
 - and much more
 
-Auditing is turned on by default for all Azure DevOps organizations. You can't turn auditing off, which ensures that you never miss an actionable event. Events get stored for 90 days and then they’re deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
+Auditing is turned on by default for all Azure DevOps Services organizations. You can't turn auditing off, which ensures that you never miss an actionable event. Events get stored for 90 days and then they’re deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
+
+> [!NOTE]
+> Azure DevOps Server doesn't support Auditing yet, as it's still in Public Preview.
 
 ## Prerequisites
 
@@ -48,14 +51,14 @@ By default, Project Collection Administrators are the only group that have acces
 
 3. Select **Auditing**.
 
-   ![Auditing](media/azure-devops-auditing/AccessAuditLogRedBox-preview.png)
+   ![Auditing preview page](media/azure-devops-auditing/AccessAuditLogRedBox-preview.png)
    If you don't see Auditing in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
 4. Select **Permissions**, and then find the group or users to provide auditing access to.
 
-   ![Select Permissions to provide audit access](media/azure-devops-auditing/select-permissions-preview.png)  
+   ![Screenshot of highlighted Permissions tab.](media/azure-devops-auditing/select-permissions-preview.png)  
 
 5. Set **View audit log** to **allow**, and then select **Save changes**.
-   ![Auditing access permission](media/azure-devops-auditing/AuditLogPermissionRedBox-preview.png)
+   ![Screenshot of Auditing access permission preview.](media/azure-devops-auditing/AuditLogPermissionRedBox-preview.png)
 
 The user or group members have access to view your organization audit events.
 
@@ -66,11 +69,11 @@ The user or group members have access to view your organization audit events.
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 3. Select **Auditing**.
 
-   ![Auditing](media/azure-devops-auditing/AccessAuditLogRedBox.png)
+   ![Screenshot of Auditing view current page](media/azure-devops-auditing/AccessAuditLogRedBox.png)
    If you don't see Auditing in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
 4. Select **Security**, and then find the group or users to provide auditing access to.
 5. Set **View audit log** to **allow**, and then select **Save changes**.
-   ![Auditing access permission](media/azure-devops-auditing/AuditLogPermissionRedBox.png)
+   ![Screenshot of Auditing access permission current view.](media/azure-devops-auditing/AuditLogPermissionRedBox.png)
 
 The user or group members have access to view your organization audit events.
 

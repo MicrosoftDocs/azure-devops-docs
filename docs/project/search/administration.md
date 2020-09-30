@@ -14,7 +14,7 @@ ms.date: 07/23/2020
 
 **Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS-2018 - TFS 2017**
 
-In this article, learn how to install and uninstall the Search extension for Code, Wiki, and Work item in Azure DevOps Server.
+Learn how to install and uninstall the Search extension for Code, Wiki, and Work item in Azure DevOps Server.
 
 
 * **Configure Search (Code, Work Item, and Wiki) in Azure DevOps Server or Team Foundation Server (TFS)**
@@ -590,11 +590,11 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
    your Azure DevOps Server or TFS instance:
 
    ::: moniker range=">= azure-devops-2019"
-   ![Checking that the extension is installed](media/shared/goto-marketplace-new.png)
+   ![Screenshot of checking that the extension is installed](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
-   ![Checking that the extension is installed](media/shared/goto-marketplace.png)
+   ![Screenshot of Checking the extension is installed](media/shared/goto-marketplace.png)
    ::: moniker-end
 
 2. Remove the Search feature:
@@ -632,22 +632,22 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 1. Uninstall the Search extension, like for Code, Work item, or Wiki, for each collection where it's installed. Navigate to the **Manage Extensions** page of each collection in your Azure DevOps Server or TFS instance.
 
    ::: moniker range=">= azure-devops-2019"
-   ![Checking that the extension is installed](media/shared/goto-marketplace-new.png)
+   ![Screenshot Checking that the extension is installed](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
    ::: moniker range="< azure-devops-2019"
-   ![Checking that the extension is installed](media/shared/goto-marketplace.png)
+   ![Screenshot of Checking that the extension's installed](media/shared/goto-marketplace.png)
    ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
-2. Remove the Search feature:
+1. Remove the Search feature:
 
    - Open the In the Remove Feature dialog,  Administration Console.
    - In the left pane, select the name of the Azure DevOps Server.
    - In the right pane, choose **Remove Feature**.
    - In the Remove Feature dialog, select **Search service**, and then choose **Remove**.<p />
 
-3. Remove the Elasticsearch service and data
+2. Remove the Elasticsearch service and data
 
    - Open **PowerShell** as an administrator.
    - Open the **Configure Search.ps1** folder, along with the rest of the files that are required for a remote install of Search.

@@ -97,7 +97,7 @@ You can view the projects defined for your organization by opening the **Project
 2. From there, you can choose a project from the set of projects listed.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Projects, horizontal nav](media/about-projects/projects-hub-horz.png)
+    > ![Choose a project from the set of projects listed.](media/about-projects/projects-hub-horz.png)
 
 ::: moniker-end
 

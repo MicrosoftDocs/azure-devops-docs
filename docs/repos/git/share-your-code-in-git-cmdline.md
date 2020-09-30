@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Get started with Git from the command line
 
-#### Azure Repos
+**Azure Repos**
 
 This guide shows you how to share your code in a Git repo in Azure Repos using the command line.
 
@@ -32,7 +32,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
     If the CLI can open your default browser, it will do so and load a sign-in page. Otherwise, you need to open a
     browser page and follow the instructions on the command line to enter an authorization code after navigating to
     [https://aka.ms/devicelogin](https://aka.ms/devicelogin) in your browser. For more information, see the
-    [Azure CLI login page](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest).
+    [Azure CLI login page](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest&preserve-view=true).
   
 4. For seamless commanding, set the organization and project as defaults in configuration.
  

@@ -4,17 +4,17 @@ description: Upstream sources manage packages from public sources in an Azure De
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 07/20/2020
+ms.date: 08/31/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Upstream sources
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 Check the ([availability note](../overview.md#versions-compatibility)) to ensure compatibility. 
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (for example, npmjs.com, nuget.org, Maven Central, and PyPI) and authenticated feeds (that is, other Azure DevOps Services feeds in your organization or in organizations in your Azure Active Directory (AAD) tenant). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (for example, npmjs.com, NuGet.org, Maven Central, and PyPI) and authenticated feeds (that is, other Azure DevOps Services feeds in your organization or in organizations in your Azure Active Directory (Azure AD) tenant). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
 Already familiar with the concepts and want to jump right in? Start with these how-tos:
 
@@ -71,7 +71,7 @@ always-auth=true
 
 If you only use public upstream sources (for example, nuget.org or npmjs.com), the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
 
-If you use multiple Azure DevOps Services upstream sources, or a mixture of public and Azure DevOps Services upstream sources, the order of those upstreams is taken into account in step 3 of the [search order](#search-order). In that case, we recommend putting the public upstream sources first. This ensures that you look for OSS packages from the public repos before checking any Azure DevOps Services upstream sources, which could contain modified versions of public packages.
+If you use multiple Azure DevOps Services upstream sources, or a mixture of public and Azure DevOps Services upstream sources, their order is taken into account in step 3 of the [search order](#search-order). In that case, we recommend putting the public upstream sources first. This ensures that you look for OSS packages from the public repos before checking any Azure DevOps Services upstream sources, which could contain modified versions of public packages.
 
 In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository. If your organization does this, put the Azure DevOps Services upstream source that contains these modified OSS packages before the public upstream sources to ensure you use your organization's modified versions.
 
@@ -127,7 +127,7 @@ If you must push a package-version that already exists on one of your upstream s
 
 ### Metadata cached from upstream sources
 
-When you configure an upstream source and begin to query it through your feed, the feed will keep a cache of the metadata that you queried (most often, the package you asked for and its available versions) for 24 hours. There is a 3-6 hour delay between when a package is pushed to an upstream source and when it is available for download by your feed. This depends on job timing and package data propagation.
+When you configure an upstream source and begin to query it through your feed, the feed will keep a cache of the metadata that you queried (most often, the package you asked for and its available versions) for 24 hours. There is a 3-6 hour delay between when a package is pushed to an upstream source and when it is available for download by your feed. This delay depends on job timing and package data propagation.
 
 > [!NOTE]
 > To force a refresh on the cached version of your package, use the [NuGet - download package](/rest/api/azure/devops/artifactspackagetypes/nuget/download%20package) HTTP request with a `HEAD` call instead of `GET`.
@@ -136,7 +136,7 @@ When you configure an upstream source and begin to query it through your feed, t
 
 ### Upstream health
 
-If a feed has failing upstream sources, the metadata no longer can be refreshed for packages of the same protocol. You can view the health status of the upstream source by doing the following:
+If a feed has failing upstream sources, the metadata no longer can be refreshed for packages of the same protocol. Follow the steps below to view the health status of the upstream source:
 
 With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**, then select **Upstream sources** in your feed settings UI. 
 
@@ -147,13 +147,13 @@ If there are any failing upstream sources, the Artifacts UI shows a warning mess
 
 <a name="offline-upstreams"></a>
 
-## Offline upstreams
+## Offline upstream sources
 
 Upstream sources protect you and your CI/CD infrastructure from outages in public sources. That protection works for both short and long outages.
 
 For outages lasting less than 12 hours, you can continue to use the feed as normal thanks to the [metadata cache](#upstream-metadata-cache).
 
-For outages lasting more than 12 hours, which are infrequent, you will experience issues listing and restoring packages, even if those packages have been installed into the feed. In these scenarios, you can delete either the offline upstream or all upstreams of the affected package type and continue developing and building as normal. If/when the upstream source returns, just re-add it.
+For outages lasting more than 12 hours, which are infrequent, you will experience issues listing and restoring packages, even if those packages have been installed into the feed. In these scenarios, you can delete either the offline upstream or all upstream sources of the affected package type and continue developing and building as normal. If/when the upstream source returns, just re-add it.
 
 ## Legacy upstream source information
 

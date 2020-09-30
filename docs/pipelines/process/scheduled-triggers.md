@@ -72,7 +72,7 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
 
 > [!NOTE]
-> When you specify a scheduled trigger, only branches that you explicitly configure for inclusion are scheduled. Inclusions are processed first, and then exclusions are removed from that list. If you specify an exclusion but no inclusions, no branches are built.
+> If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
 
 > [!NOTE]
 > You cannot use pipeline variables when specifying schedules.
@@ -186,7 +186,7 @@ mm HH DD MM DW
 Field        | Accepted values
 -------------|----------------
 Minutes      | 0 through 59
-Hours        | 0 though 23
+Hours        | 0 through 23
 Days         | 1 through 31
 Months       | 1 through 12, full English names, first three letters of English names
 Days of week | 0 through 6 (starting with Sunday), full English names, first three letters of English names
@@ -282,11 +282,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
 
-    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-week-day-night.png)
+    ![Scheduled trigger frequency 1.](media/triggers/scheduled-trigger-git-week-day-night.png)
 
 * Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
 
-    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-weekly-night.png)
+    ![Scheduled trigger frequency 2.](media/triggers/scheduled-trigger-git-weekly-night.png)
 
 The equivalent YAML scheduled trigger is:
 
@@ -379,11 +379,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
 
-    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-week-day-night.png)
+    ![Scheduled trigger frequency 1, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-week-day-night.png)
 
 * Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
 
-    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-weekly-night.png)
+    ![Scheduled trigger frequency 2, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-weekly-night.png)
 
 ::: moniker-end
 
@@ -391,7 +391,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.3 through TFS 2018**
 
-![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
+![Scheduled trigger different frequencies, TFS 2017.3 through TFS 2018.](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
 ::: moniker-end
 
@@ -399,7 +399,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.1 and older versions**
 
-![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-different-frequencies.png)
+![Scheduled trigger different frequencies, TFS 2017.1 and older versions.](media/triggers/scheduled-trigger-git-different-frequencies.png)
 
 ::: moniker-end
 

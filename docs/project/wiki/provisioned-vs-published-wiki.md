@@ -13,8 +13,6 @@ monikerRange: '>= tfs-2018'
 ms.date: 07/23/2020  
 ---
 
-
-
 # Provisioned wikis vs. published code as a wiki
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
@@ -67,13 +65,13 @@ The following table summarizes those operations or features that may differ, dep
 > [!div class="mx-tdCol2BreakAll"]
 > |Operation |    Provisioned wiki    | Publish code as wiki |
 > |--------|--------------|--------------|  
-> |[Support multiple wikis, name the wiki](publish-repo-to-wiki.md)  |  | :::image type="icon" source="media/checkmark.png" border="false":::|
-> |[Add or edit pages from **Repos>Files** or **Code>Files**](publish-repo-to-wiki.md) |  |:::image type="icon" source="media/checkmark.png" border="false"::: |
-> |[Revert to an earlier revision from the **Wiki**](wiki-view-history.md#revert-provision) |:::image type="icon" source="media/checkmark.png" border="false"::: |  |
-> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |  |:::image type="icon" source="media/checkmark.png" border="false"::: |
-> |[Maintain versioned wikis](#versioning) |  | :::image type="icon" source="media/checkmark.png" border="false"::: |
-> |[Select a wiki version](wiki-select-unpublish-versions.md) |  | :::image type="icon" source="media/checkmark.png" border="false"::: |
-> |[Unpublish a wiki](wiki-select-unpublish-versions.md) |  | :::image type="icon" source="media/checkmark.png" border="false"::: |
+> |[Support multiple wikis, name the wiki](publish-repo-to-wiki.md)  |  | ✔️|
+> |[Add or edit pages from **Repos>Files** or **Code>Files**](publish-repo-to-wiki.md) |  |✔️ |
+> |[Revert to an earlier revision from the **Wiki**](wiki-view-history.md#revert-provision) |✔️ |  |
+> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |  |✔️ |
+> |[Maintain versioned wikis](#versioning) |  | ✔️ |
+> |[Select a wiki version](wiki-select-unpublish-versions.md) |  | ✔️ |
+> |[Unpublish a wiki](wiki-select-unpublish-versions.md) |  | ✔️ |
 
 <a id="add-pages"></a>
 
@@ -108,7 +106,7 @@ However, the revert process differs depending on the wiki page type.
 
 ## Versioning and unpublishing a wiki
 
-With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning and unpublishing content that you've previously published to a wiki, is supported only for wikis that you've created by publishing code to a wiki.
+With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning and unpublishing content, that you've previously published to a wiki, is supported only for wikis that you've created by publishing code to a wiki.
 
 To learn more, see [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md).
 

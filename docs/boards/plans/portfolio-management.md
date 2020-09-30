@@ -147,7 +147,7 @@ During the planning meeting, you can open each item, make notes, and assign the 
 Here, all backlog items have been assigned to feature teams. While all features and epics remain owned by Account Management. 
 
 > [!div class="mx-imgBorder"]  
-> ![Management team common backlog](media/portfolio/account-management-backlog-assigned.png) 
+> ![All backlog items have been assigned to feature teams.](media/portfolio/account-management-backlog-assigned.png) 
 
 ::: moniker-end
 
@@ -167,7 +167,7 @@ During the planning meeting, you can open each item, make notes, and assign the 
 Here, all backlog items have been assigned to feature teams. While all features and epics remain owned by Account Management. 
 
 > [!div class="mx-imgBorder"]  
-> ![Management team common backlog](media/portfolio/account-management-backlog-assigned.png) 
+> ![All backlog items have been assigned to feature teams.](media/portfolio/account-management-backlog-assigned.png) 
 
 ::: moniker-end
 

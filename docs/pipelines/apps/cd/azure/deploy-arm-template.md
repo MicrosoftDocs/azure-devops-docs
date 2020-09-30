@@ -36,7 +36,7 @@ https://github.com/Azure/azure-quickstart-templates/
 
 The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-webapp-linux-managed-mysql/). 
 
-:::code language="json" source="~/../quickstart-templates/101-webapp-linux-managed-mysql/azuredeploy.json" highlight="112-201":::
+:::code language="json" source="~/../quickstart-templates/101-webapp-linux-managed-mysql/azuredeploy.json":::
 
 The template defines several resources:
 
@@ -94,7 +94,7 @@ The template defines several resources:
     The task references both the artifact you built with the Copy Files task and your pipeline variables. Set these values when   configuring your task.
 
     - **Deployment scope (deploymentScope)**: Set the deployment scope to `Resource Group`. You can target your deployment to a management group, an Azure subscription, or a resource group. 
-    - **Azure Resource Manager connection (azureResourceManagerConnection)**: Select your Azure Resource Manager service connection. To configure new service connection, select the Azure subscription from the list and click **Authorize**. See [Connect to Microsoft Azure](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops) for more details
+    - **Azure Resource Manager connection (azureResourceManagerConnection)**: Select your Azure Resource Manager service connection. To configure new service connection, select the Azure subscription from the list and click **Authorize**. See [Connect to Microsoft Azure](/azure/devops/pipelines/library/connect-to-azure) for more details
     - **Subscription (subscriptionId)**: Select the subscription where the deployment should go.
     - **Action (action)**: Set to `Create or update resource group` to create a new resource group or to update an existing one. 
     - **Resource group**: Set to`ARMPipelinesLAMP-rg` to name your new resource group. If this is an existing resource group, it will be updated.

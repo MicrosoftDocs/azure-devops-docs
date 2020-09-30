@@ -147,7 +147,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 
 ### Test PBIs  
 
-From the web portal or Test Manager, you can [create test cases that automatically link to a PBI or bug](../../../test/create-test-cases.md). Or, you can link a PBI or bug to a test case from the ![Links tab icon](../../backlogs/media/icon-links-tab-wi.png) (links tab).  
+From the web portal or Test Manager, you can [create test cases that automatically link to a PBI or bug](../../../test/create-test-cases.md). Or, you can link a PBI or bug to a test case from the :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab).  
 
 
 <img src="media/IC793453.png" alt="Web portal, Select the test suite and add a test case" style="border: 1px solid #C3C3C3;" /> 
@@ -157,7 +157,7 @@ The test case contains a number of fields, many of which are automated and integ
 
 ![Scrum Test case work item form](media/scrum-test-case-form.png)  
 
-The ![Links tab icon](../../backlogs/media/icon-links-tab-wi.png) (links tab) captures the links to all the PBIs and bugs in a test case. By linking PBIs and bugs to test cases, the team can track the progress made in testing each item.  
+The :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab) captures the links to all the PBIs and bugs in a test case. By linking PBIs and bugs to test cases, the team can track the progress made in testing each item.  
 
 ### Track code defects
 

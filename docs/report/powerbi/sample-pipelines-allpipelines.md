@@ -28,7 +28,7 @@ An example is shown in the following image.
 As shown in the above image, you can select any pipeline from the "Pipeline Name" drop down at top right and the report will show the outcome summary for the selected pipeline only
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/allpipelines-report2.png)
+> ![Report shows the outcome summary for the selected pipeline only.](media/odatapowerbi-pipelines/allpipelines-report2.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -219,7 +219,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/allpipelines-report1.png)
+> ![Finished sample - Pipelines Outcome Summary - Report.](media/odatapowerbi-pipelines/allpipelines-report1.png)
 
 
 ## Full list of Pipelines sample reports 
