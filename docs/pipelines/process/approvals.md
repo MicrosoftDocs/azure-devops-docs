@@ -171,6 +171,8 @@ You can also see the complete logs of the policy checks from the pipeline view.
 
 :::image type="content" source="media/checks/policy-check-failed-logs.png" alt-text="Viewing detailed logs.":::
 
+* * *
+
 ## Exclusive lock
 
 The **exclusive lock** check allows only a single run to proceed.
@@ -178,8 +180,6 @@ All other stages which use the resource are paused.
 When the stage using the lock completes, then another stage can proceed to use the resource.
 Also, only one stage will be allowed to continue.
 Any other stages which tried to take the lock will be cancelled.
-
-* * *
 
 ## FAQ
 
