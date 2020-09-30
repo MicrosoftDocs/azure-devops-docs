@@ -26,25 +26,29 @@ Learn how to add or remove an administrator for your team. It's always a good id
 
 ::: moniker range="azure-devops"
 
-- You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).  
-- You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.
+- To add a user as a team administrator: 
+	- You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).  
+	- You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.
+- To be added as a team administrator, you must be granted **Basic** or higher access-level. Users granted Stakeholder access can't be added as a team administrator.
 -   
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-- You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).  
-- You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.
- 
+- To add a user as a team administrator: 
+	- You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).  
+	- You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.
+- To be added as a team administrator, you must be granted **Basic** or higher access-level. Users granted Stakeholder access can't be added as a team administrator. 
 ::: moniker-end
 
-To get added as a team administrator, ask another team administrator or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) to add you.  
 
 To add a team, see [Add teams](add-teams.md).
 
 <a id="open-admin-context">  </a>
 
 ## Add an administrator
+
+To get added as a team administrator, ask another team administrator or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) to add you.  
 
 ::: moniker range="azure-devops"
 
