@@ -14,10 +14,10 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
-Use this task to install and update NuGet package dependencies, or package and publish NuGet packages. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.
-
 > [!NOTE]
-> Moving forward, the [NuGet Authenticate](nuget-authenticate.md) task is the recommended way to use authenticated feeds within a pipeline. 
+> The [NuGet Authenticate](nuget-authenticate.md) task is the new recommended way to authenticate with Azure Artifacts and other NuGet repositories. 
+
+Use this task to install and update NuGet package dependencies, or package and publish NuGet packages. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.
 
 ::: moniker range="<= tfs-2018"
 
@@ -27,12 +27,10 @@ Use this task to install and update NuGet package dependencies, or package and p
 
 If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
 
+If you are working with .NET Core or .NET Standard, use the [.NET Core](../build/dotnet-core-cli.md) task, which has full support for all package scenarios and it's currently supported by dotnet.
 
 > [!TIP]
-> Looking for help to get started? See the how-tos for [restoring](../../../artifacts/nuget/consume.md) and [publishing](../../../artifacts/nuget/publish.md) packages.
 > This version of the NuGet task uses NuGet 4.1.0 by default. To select a different version of NuGet, use the [Tool Installer](../tool/nuget.md).
-
-Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core-cli.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
 
 ::: moniker range="> tfs-2018"
 
@@ -48,11 +46,11 @@ Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../bu
 | -------- | ----------- |
 | `command`<br/>Command | The NuGet command to run. Select 'Custom' to add arguments or to use a different command.<br/>Options: `restore`, `pack`, `custom`, `push` |
 | `restoreSolution`<br/>Path to solution, packages.config, or project.json | The path to the solution, packages.config, or project.json file that references the packages to be restored. |
-| `feedsToUse`<br/>Feeds to use | You can either select a feed from Azure Artifacts and/or NuGet.org here, or commit a nuget.config file to your source code repository and set its path here. |
+| `feedsToUse`<br/>Feeds to use | You can either select a feed from Azure Artifacts and/or NuGet.org, or commit a nuget.config file to your source code repository and set its path here. Options: `select`, `config`. |
 | `vstsFeed`<br/>Use packages from this Azure Artifacts/TFS feed | Include the selected feed in the generated NuGet.config. You must have Azure Artifacts installed and licensed to select a feed here. |
-| `includeNuGetOrg`<br/>Use packages from NuGet.org | Include NuGet.org in the generated NuGet.config. |
-| `nugetConfigPath`<br/>Path to NuGet.config | The NuGet.config in your repository that specifies the feeds from which to restore packages.|
-| `externalFeedCredentials`<br/>Credentials for feeds outside this organization/collection | Credentials to use for external registries located in the selected NuGet.config. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically. |
+| `includeNuGetOrg`<br/>Use packages from NuGet.org | Include NuGet.org in the generated NuGet.config. Default value is `true`. Required when `feedsToUse` == `Select`.|
+| `nugetConfigPath`<br/>Path to NuGet.config | The NuGet.config in your repository that specifies the feeds from which to restore packages. Required when `feedsToUse` == `Config`|
+| `externalFeedCredentials`<br/>Credentials for feeds outside this organization/collection | Credentials to use for external registries located in the selected NuGet.config. This is the name of your NuGet service connection. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically. |
 | `noCache`<br/>Disable local cache | Prevents NuGet from using packages from local machine caches. |
 | `disableParallelProcessing`<br/>Disable parallel processing | Prevents NuGet from installing multiple packages in parallel. |
 | `restoreDirectory`<br/>Destination directory | Specifies the folder in which packages are installed. If no folder is specified, packages are restored into a packages/ folder alongside the selected solution, packages.config, or project.json. |
@@ -96,7 +94,7 @@ For **byBuildNumber**, the version will be set to the build number, ensure that 
 
 ### Restore
 
-Restore all solutions. Packages are restored into a packages folder alongside solutions using currently selected feeds.
+Restore all your solutions with packages from a selected feed.
 
 ```YAML
 # Restore from a project scoped feed in the same organization
@@ -120,6 +118,19 @@ Restore all solutions. Packages are restored into a packages folder alongside so
 ```
 
 ```YAML
+# Restore from a feed in a different organization
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: config
+    nugetConfigPath: ./nuget.config
+    restoreSolution: '**/*.sln'
+    externalFeedCredentials: 'MyServiceConnectionName'
+    noCache: true
+  continueOnError: true
+```
+
+```YAML
 # Restore from feed(s) set in nuget.config
 - task: NuGetCommand@2
   inputs:
@@ -127,10 +138,9 @@ Restore all solutions. Packages are restored into a packages folder alongside so
     feedsToUse: 'config'
     nugetConfigPath: 'nuget.config'
 ```
-
 ### Package
 
-Package a your solution to your Artifact Staging directory
+Create a NuGet package in the destination folder.
 
 ```YAML
 # Package a project
@@ -144,46 +154,57 @@ Package a your solution to your Artifact Staging directory
 ### Push
 
 > [!NOTE]
-> Release pipelines download pipeline artifacts to `System.ArtifactsDirectory` so you can use the `$(System.ArtifactsDirectory)/**/*.nupkg` for the `packagesToPush` input in release pipelines.
+> Pipeline artifacts are downloaded to `System.ArtifactsDirectory` directory. `packagesToPush` value can be set to `$(System.ArtifactsDirectory)/**/*.nupkg` in your release pipeline.
 
-Push/Publish a package to a feed defined in your NuGet.config.
+* Push/Publish a package to a feed defined in your NuGet.config.
+
+    ```YAML
+    # Push a project
+    - task: NuGetCommand@2
+      inputs:
+        command: 'push'
+        packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg'
+        feedsToUse: 'config'
+        nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
+    ```
+
+* Push/Publish a package to a project scoped
+
+    ```YAML
+    # Push a project
+    - task: NuGetCommand@2
+      inputs:
+        command: 'push'
+        feedsToUse: 'select'
+        vstsFeed: 'my-project/my-project-scoped-feed'
+        publishVstsFeed: 'myTestFeed'
+    ```
+
+* Push/Publish a package to NuGet.org
+
+    ```YAML
+    # Push a project
+    - task: NuGetCommand@2
+      inputs:
+        command: 'push'
+        feedsToUse: 'config'
+        includeNugetOrg: 'true'
+    ```
+### Custom
+
+Run any other NuGet command besides the default ones: pack, push and restore.
 
 ```YAML
-# Push a project
+# list local NuGet resources.
 - task: NuGetCommand@2
+  displayName: 'list locals'
   inputs:
-    command: 'push'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg'
-    feedsToUse: 'config'
-    nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
+    command: custom
+    arguments: 'nuget locals all -list'
 ```
-
-Push/Publish a package to a feed in the same organization you define in the task
-
-```YAML
-# Push a project
-- task: NuGetCommand@2
-  inputs:
-    command: 'push'
-    feedsToUse: 'select'
-    vstsFeed: 'my-project/my-project-scoped-feed'
-    publishVstsFeed: 'myTestFeed'
-```
-
-Push/Publish a package to NuGet.org
-
-```YAML
-# Push a project
-- task: NuGetCommand@2
-  inputs:
-    command: 'push'
-    feedsToUse: 'config'
-    includeNugetOrg: 'true'
-```
-
 ## Open source
 
-These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome. 
+Check out the Azure Pipelines and Team Foundation Server out-of-the-box tasks [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome. 
 
 ## FAQ
 
