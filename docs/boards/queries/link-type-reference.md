@@ -701,7 +701,7 @@ Artifact Link         ArtifactLink                                              
 
 The default json format provides additional information about the attributes defined for the link types. For example, the information for the link types *Produces For* and *Consumes From* are listed as follows. 
 
-```azurecli
+```output
   {
     "attributes": {
       "acyclic": true,
@@ -749,7 +749,7 @@ You can list link types supported for your project collection using the [**witad
 
 Here we list the link types for the fabrikam-sever default collection: 
 
-```azurecli
+```CLI
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer>witadmin listlinktypes /collection:http://fabrikam-server/DefaultCollection
 
 Reference Name: Microsoft.VSTS.TestCase.SharedParameterReferencedBy
