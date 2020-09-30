@@ -41,7 +41,7 @@ The new Test Plans page has total of six sections of which the first four are ne
 3. **Define tab**: Collate, add, and manage test cases in a test suite of choice via this tab.
 4. **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
 5. **Chart tab**: Track test execution and status via charts, which can also be pinned to dashboards.
-6. **Extensibility**: Supports the [current extensibility points](/azure/devops/extend/overview) within the product.
+6. **Extensibility**: Supports the [current extensibility points](../extend/overview.md) within the product.
 
 Lets take a broad stroke view of these new sections below.
 
@@ -76,8 +76,8 @@ The context menu on the Test Plan header provides the following options:
 
 ![copy test plan page](media/new-test-plans-page/copy-test-plan-dialog.png)
 
-We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging 'Copy test plan' capability, you can copy or clone test plans within the project. Its backing REST API is covered [here](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). The API lets you copy/clone a test plan across projects too.<br>
-For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/07/22/test-planning-and-management-guide-updated/).
+We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging 'Copy test plan' capability, you can copy or clone test plans within the project. Its backing REST API is covered [here](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). The API lets you copy/clone a test plan across projects too.<br>
+For more guidelines on Test Plans usage, refer [here](/archive/blogs/visualstudioalmrangers/test-planning-and-management-guide-updated).
 
 
 <a name="testsuitestree"></a>
@@ -228,4 +228,4 @@ Reach us at `devops_tools@microsoft.com` to share your thoughts on the new page.
 > `The group <group> only accepts messages from people in its organization or on its allowed senders list, and your email address isn't on the list.`
 >
 > Even if you receive this message, your feedback to `devops_tools@microsoft.com` is getting through.
-> Thank you for your feedback and patience while we resolve the issue that is causing the message. 
+> Thank you for your feedback and patience while we resolve the issue that is causing the message.
