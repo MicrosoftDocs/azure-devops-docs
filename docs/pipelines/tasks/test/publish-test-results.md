@@ -429,12 +429,12 @@ YAML builds are not yet available on TFS.
      docker stop dotnetcoreapp
      ```
 
-1. Add a **Publish Test Results** task to publish results to the pipeline, and edit the its properties as follows:
+1. Add a **Publish Test Results** task to publish results to the pipeline, and edit its properties as follows:
 
    * **Test result format**: `VSTest`
    * **Test results files**: `**/*.trx`
 
-1. Add a [Bash task](../utility/bash.md) to publish the final image to the repository, and edit the its properties as follows:
+1. Add a [Bash task](../utility/bash.md) to publish the final image to the repository, and edit its properties as follows:
 
    * **Type**: `Inline`
    * **Script**:
@@ -499,7 +499,7 @@ The Publish Test Results task provides support for attachments for both test run
 
 ## FAQ
 
-#### What is the maximum permittable limit of FQN?
+#### What is the maximum permissible limit of FQN?
 
 The maximum FQN limit is 512 characters.
 
