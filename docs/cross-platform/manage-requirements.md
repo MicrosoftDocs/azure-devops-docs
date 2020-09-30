@@ -358,7 +358,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md) 
 - [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [About Area and Iteration Paths (sprints)](../organizations/settings/about-areas-iterations.md) 
-- [Work tracking, process, and project limits](/azure/devops/organizations/settings/work/object-limits)
+- [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md)
 
 
 #### Backlogs and boards
@@ -392,7 +392,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Milestone planning 
 
-- [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)
+- [View or configure team velocity](../report/dashboards/team-velocity.md)
 - [Forecast your product backlog](../boards/sprints/forecast.md) 
 - [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects)
 - [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42) 
@@ -413,5 +413,3 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Default and supported notifications](../notifications/oob-built-in-notifications.md) 
 - [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
 - [Manage notifications for a team or group](../notifications/manage-team-group-notifications.md)
-
-
