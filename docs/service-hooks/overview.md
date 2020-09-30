@@ -121,7 +121,7 @@ look at the information on the service that you're interested in.
 #### Q: What permissions do I need to set up a subscription?
 
 A: *Edit subscriptions* and *View subscriptions*. By default, only project administrators 
-have these permissions. To grant them to other users directly, you can use the [command line tool](/azure/devops/organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/vsts/) REST API. 
+have these permissions. To grant them to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
 
 #### Q: What are the security implications of granting *Edit subscriptions* and *View subscriptions* permissions?
 
