@@ -298,7 +298,7 @@ You can delete a work item with the [az boards work-item delete](/cli/azure/ext/
 > [!NOTE] 
 > You can restore work items you **delete**, but cannot restore work items you choose to **destroy**.
 
-```CLI 
+```azurecli 
 az boards work-item delete --id
                            [--destroy]
                            [--org]
@@ -318,7 +318,7 @@ az boards work-item delete --id
 
 The following command permanently deletes the bug with the ID 864 and doesn't prompt you for confirmation.
 
-```CLI
+```azurecli
 az boards work-item delete --id 864 --destroy --yes
 ```
 

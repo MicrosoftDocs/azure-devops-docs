@@ -127,7 +127,7 @@ In most cases, your data science team will provide the files and resources neede
 
 Some of these files are directly used when developing a model. For example, the `train.py` and `score.py` files. However the data scientist may be programmatically creating the run configuration and environment settings. If so, they can create the `.runconfig` and training environment files, by using [RunConfiguration.save()](https://docs.microsoft.com/python/api/azureml-core/azureml.core.runconfiguration?view=azure-ml-py&preserve-view=true#save-path-none--name-none--separate-environment-yaml-false-). Alternatively, default run configuration files will be created for all compute targets already in the workspace when running the following command.
 
-```azure-cli
+```azurecli
 az ml folder attach --experiment-name myexp -w myws -g mygroup
 ```
 

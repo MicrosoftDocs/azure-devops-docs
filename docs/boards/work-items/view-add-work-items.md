@@ -150,7 +150,7 @@ Additional menu options support the following tasks:
 
 You can view a new work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI
+```azurecli
 az boards work-item show --id
                          [--open]
                          [--org]
@@ -166,7 +166,7 @@ az boards work-item show --id
 
 The following command opens the bug with the ID 864 in your default web browser. It also displays the results in the Azure DevOps CLI in table format.
 
-```CLI
+```azurecli
 az boards work-item show --id 864  --open --output table
 
 ID    Type    Title      Assigned To          State

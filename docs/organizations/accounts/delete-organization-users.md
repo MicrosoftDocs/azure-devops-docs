@@ -121,7 +121,7 @@ The **Users page** isn't available for on-premises server instances. However, yo
 
 You can remove a user from an organization by using the [az devops user remove](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-remove) command. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
-```CLI
+```azurecli
 az devops user add --user
                       [--org]
                       [--yes]
@@ -137,7 +137,7 @@ az devops user add --user
 
 The following command removes the user with the email address contoso@contoso.com from the contoso organization.  
 
-```CLI
+```azurecli
 az devops user remove --user contoso@contoso.com --org https://dev.azure.com/contoso/ --yes
 ```
 

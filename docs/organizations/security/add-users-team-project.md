@@ -382,7 +382,7 @@ From the Azure DevOps CLI command, you can see details about a team or list the 
 
 You can list the individual members of a team in your organization with the [az devops team list-member](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-list-member) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
-```CLI
+```azurecli
 az devops team list-member --team
                            [--org]
                            [--project]
@@ -402,7 +402,7 @@ az devops team list-member --team
 
 The following command lists the first five members of the team named **Fabrikam Team** and returns the details in table format.  
 
-```CLI 
+```azurecli 
 az devops team list-member --team "Fabrikam Team" --top 5 --output table
 
 ID                                    Name               Email
@@ -420,7 +420,7 @@ bd30c189-db0f-4dd6-9418-5d8b41dc1754  Raisa Pokrovskaya  fabrikamfiber5@hotmail.
 
 You can view details about a team in your organization with the [az devops team show](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI
+```azurecli
 az devops team show --team
                     [--org]
                     [--project]
@@ -436,7 +436,7 @@ az devops team show --team
 
 The following command shows information about the team in your organization named **Fabrikam Team** and returns the details in table format.  
 
-```CLI
+```azurecli
 az devops team show --team "Fabrikam Team" --output table
 
 ID                                    Name          Description

@@ -112,7 +112,7 @@ You can create a wiki with the [az devops wiki create](/cli/azure/ext/azure-devo
 > [!NOTE]
 > If you want to provision more than one wiki, then you must [publish code as a wiki](/azure/devops/project/wiki/publish-repo-to-wiki#publish-a-git-repository-to-a-wiki). You can set up multiple wiki repos within a single project.
 
-```CLI 
+```azurecli 
 az devops wiki create [--mapped-path]
                       [--name]
                       [--org]
@@ -140,7 +140,7 @@ az devops wiki create [--mapped-path]
 
 The following command creates a wiki named "Fabrikam Fiber" and shows the output in table format.
 
-```CLI 
+```azurecli 
 az devops wiki create --name "Fabrikam Fiber" --output table
 
 ID                                    Name                 Type

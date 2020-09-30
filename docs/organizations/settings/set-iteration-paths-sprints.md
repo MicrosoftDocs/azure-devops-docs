@@ -143,7 +143,7 @@ From the web portal, choose the :::image type="icon" source="../../media/icons/g
 You can list the iterations defined for a project using [az boards iteration project list](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards iteration project list [--depth]
                                  [--path]
                                  [--project]
@@ -164,7 +164,7 @@ az boards iteration project list [--depth]
 For example, the following command lists the area paths to a depth of 3 for the Fabrikam Fiber project. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards iteration project list --depth 3 --project "Fabrikam Fiber" --output table
 ID     Identifier                            Name            Path                                           Has Children    Start Date            Finish Date
 -----  ------------------------------------  --------------  ---------------------------------------------  --------------  --------------------  --------------------
@@ -322,7 +322,7 @@ For Scrum-based projects, you see the following set of sprints.
 You can add iteration paths to a project using [az boards iteration project create](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards iteration project create --name
                                    [--finish-date]
                                    [--path]
@@ -347,8 +347,8 @@ az boards iteration project create --name
 For example, the following command adds Sprint 36 which starts on September 1, 2019 and ends September 30, 2019 as an iteration path to the default project at the root node.  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards iteration project create --name "Sprint 36" --start-date 2019-09-01 --finish-date 2019-09-30
+```azurecli
+az boards iteration project create --name "Sprint 36" --start-date 2019-09-01 --finish-date 2019-09-30
 {
   "attributes": {
     "finishDate": "2019-09-30T00:00:00Z",
@@ -423,7 +423,7 @@ You open team settings from the top navigation bar. Select the team you want and
 You can list the iteration paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards iteration team list --team
                               [--project]
                               [--timeframe]
@@ -444,8 +444,8 @@ az boards iteration team list --team
 For example, the following command lists the area paths for the Service Delivery team. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards iteration team list  --team "Service Delivery"  --project "Fabrikam Fiber" --output table
+```azurecli
+az boards iteration team list  --team "Service Delivery"  --project "Fabrikam Fiber" --output table
 ID                                    Name       Start Date                 Finish Date                Time Frame    Path
 ------------------------------------  ---------  -------------------------  -------------------------  ------------  ---------------------------------
 c7063041-ff3a-4d7f-bb46-c433c7030d59  Sprint 1   2019-01-01T00:00:00+00:00  2019-01-18T00:00:00+00:00  past          Fabrikam Fiber\Release 1\Sprint 1
@@ -585,7 +585,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 You can add iteration paths, set the default iteration path, or set the backlog iteration path for a team using one of the following [az boards iteration team](/cli/azure/ext/azure-devops/boards/iteration/team)[Azure DevOps CLI](../../cli/index.md) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).   
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards iteration team add --id --team
                              [--project]
 
@@ -614,8 +614,8 @@ az boards iteration team set-backlog-iteration --id --team
 For example, the following command adds \Fabrikam Fiber\Iteration\Release 2 path to the Service Delivery team for the Fabrikam Fiber project. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards iteration team add --id a0554e98-b1f1-4230-8500-733c739a0113 --team "Service Delivery" --project "Fabrikam Fiber"
+```azurecli
+az boards iteration team add --id a0554e98-b1f1-4230-8500-733c739a0113 --team "Service Delivery" --project "Fabrikam Fiber"
 {
   "attributes": {
     "finishDate": null,
@@ -676,7 +676,7 @@ You can rename, move, or delete an iteration path for a project, using the follo
 To rename or move a project iteration path, use the `az boards area project update` command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards iteration project delete --path
                                    [--project]
                                    [--yes]
@@ -709,8 +709,8 @@ az boards iteration project update --path
 For example, the following command updates the start and end dates of the Sprint 3 iteration path for the Fabrikam Fiber project. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards iteration project update --path "\Fabrikam Fiber\Iteration\Release 1\Sprint 3" --finish-date 2019-08-31 --start-date 2019-08-01 --project "Fabrikam Fiber" --output table
+```azurecli
+az boards iteration project update --path "\Fabrikam Fiber\Iteration\Release 1\Sprint 3" --finish-date 2019-08-31 --start-date 2019-08-01 --project "Fabrikam Fiber" --output table
 ID     Identifier                            Name      Start Date            Finish Date           Path                                          Has Children
 -----  ------------------------------------  --------  --------------------  --------------------  --------------------------------------------  --------------
 55340  862e961a-ac7a-4fcc-9ebc-8afd0c12fed5  Sprint 3  2019-08-01T00:00:00Z  2019-08-31T00:00:00Z  \Fabrikam Fiber\Iteration\Release 1\Sprint 3  False
