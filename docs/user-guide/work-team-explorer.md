@@ -167,8 +167,8 @@ To learn more about each page, see the following articles.
 <li><strong>My Work</strong>: <a href="../repos/tfvc/suspend-your-work-manage-your-shelvesets.md" data-raw-source="[Suspend/resume work](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">Suspend/resume work</a>  &#124; <a href="../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md" data-raw-source="[Code review](../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)">Code review</a></li>
 <li><strong>Pending Changes</strong>: <a href="../repos/tfvc/develop-code-manage-pending-changes.md" data-raw-source="[Manage pending changes](../repos/tfvc/develop-code-manage-pending-changes.md)">Manage pending changes</a> &#124; <a href="../repos/tfvc/suspend-your-work-manage-your-shelvesets.md" data-raw-source="[Find shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">Find shelvesets</a> &#124; <a href="../repos/tfvc/resolve-team-foundation-version-control-conflicts.md" data-raw-source="[Resolve conflicts](../repos/tfvc/resolve-team-foundation-version-control-conflicts.md)">Resolve conflicts</a></li>
 <li><strong>Source Control Explorer</strong>: <a href="../repos/tfvc/add-files-server.md" data-raw-source="[Add/view files and folders](../repos/tfvc/add-files-server.md)">Add/view files and folders</a></li>
-<li><a href="/azure/devops/repos/tfvc/add-check-policies" data-raw-source="[Add Check-In Policies](/azure/devops/repos/tfvc/add-check-policies)">Add Check-In Policies</a></li>
-<li><a href="/azure/devops/repos/tfvc/use-team-foundation-version-control-commands" data-raw-source="[Version control commands](/azure/devops/repos/tfvc/use-team-foundation-version-control-commands)">Version control commands</a></li>
+<li><a href="/azure/devops/repos/tfvc/add-check-policies" data-raw-source="[Add Check-In Policies](../repos/tfvc/add-check-policies.md)">Add Check-In Policies</a></li>
+<li><a href="/azure/devops/repos/tfvc/use-team-foundation-version-control-commands" data-raw-source="[Version control commands](../repos/tfvc/use-team-foundation-version-control-commands.md)">Version control commands</a></li>
 </ul>
 </td>
 
@@ -176,8 +176,8 @@ To learn more about each page, see the following articles.
 
 <p><strong>Default experience</strong> (Visual Studio 2019 only)</p> 
 <ul>
-<li><a href="/azure/devops/boards/work-items/view-add-work-items" data-raw-source="[View and add work items](/azure/devops/boards/work-items/view-add-work-items)">View and add work items</a></li>
-<li><a href="/azure/devops/boards/work-items/set-work-item-experience-vs" data-raw-source="[Set the Work Items experience in Visual Studio](/azure/devops/boards/work-items/set-work-item-experience-vs)">Set the Work Items experience in Visual Studio</a></li>
+<li><a href="/azure/devops/boards/work-items/view-add-work-items" data-raw-source="[View and add work items](../boards/work-items/view-add-work-items.md)">View and add work items</a></li>
+<li><a href="/azure/devops/boards/work-items/set-work-item-experience-vs" data-raw-source="[Set the Work Items experience in Visual Studio](../boards/work-items/set-work-item-experience-vs.md)">Set the Work Items experience in Visual Studio</a></li>
 </ul>
 <p><strong>Legacy experience</strong> (All versions of Visual Studio)</p> 
 <ul>
@@ -291,7 +291,7 @@ If your project is missing one or more pages, you may be able to [add functional
 
 The **Reports** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the project.
 
-From the **Documents** page, you can [open project portal](../report/sharepoint-dashboards/share-information-using-the-project-portal.md) and [manage documents and document libraries](../report/sharepoint-dashboards/manage-documents-and-document-libraries.md). This page appears only if your project has been configured with a SharePoint Products portal.
+From the **Documents** page, you can [open project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) and [manage documents and document libraries](/previous-versions/azure/devops/report/sharepoint-dashboards/manage-documents-and-document-libraries). This page appears only if your project has been configured with a SharePoint Products portal.
 
 If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/azure/devops/server/admin/admin-quick-ref).
 
@@ -318,7 +318,7 @@ From the **Settings** page, you can configure administrative features for either
 <li><a href="../organizations/settings/set-area-paths.md" data-raw-source="[Work Item Areas](../organizations/settings/set-area-paths.md)">Work Item Areas</a></li>
 <li><a href="../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Work Item Iterations](../organizations/settings/set-iteration-paths-sprints.md)">Work Item Iterations</a></li>
 <li><a href="../project/configure-or-add-a-project-portal.md" data-raw-source="[Portal Settings](../project/configure-or-add-a-project-portal.md)">Portal Settings</a></li>
-<li><a href="../notifications/howto-manage-team-notifications.md" data-raw-source="[Project Alerts](../notifications/howto-manage-team-notifications.md)">Project Alerts</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Project Alerts](../notifications/manage-team-group-notifications.md)">Project Alerts</a></li>
 </ul>
 </td>
 
