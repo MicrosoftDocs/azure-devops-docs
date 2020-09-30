@@ -63,7 +63,7 @@ Choose **Overview > Wiki**.
 > [!div class="mx-imgBorder"]  
 > ![Create wiki, provision a Git repo for your wiki, or publish existing repo Markdown files](../../organizations/public/media/wiki/open-wiki-vert-brn.png)
 
-If you need to switch your team project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
+If you need to switch your team project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all team projects and teams](../navigation/work-across-projects.md).  
 
 ::: moniker-end
 
@@ -179,7 +179,7 @@ ID                                    Name         Type
 
 ### Edit a page
 
-You can use the links available in edit mode to preview your changes or highlight changes made from the previous version. To discard your changes, select **Cancel**. For details about supported Markdown features, see [Syntax guidance for Markdown usage](../../reference/markdown-guidance.md).  
+You can use the links available in edit mode to preview your changes or highlight changes made from the previous version. To discard your changes, select **Cancel**. For details about supported Markdown features, see [Syntax guidance for Markdown usage](./markdown-guidance.md).  
 
 1. When finished with your updates, choose **Commit**, and then fill in the Commit dialog form.
 
@@ -235,7 +235,7 @@ Each update you make requires you commit your changes to the repository. You can
     > [!div class="mx-imgBorder"]  
     > ![Filter wiki TOC](media/wiki/publish-wiki-new-file-dialog.png)
 
-3. Enter the contents of the page. For details about supported Markdown features, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
+3. Enter the contents of the page. For details about supported Markdown features, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](./markdown-guidance.md).
 
 4. When done, choose **Commit**, and then fill in the Commit dialog form.
 
@@ -318,4 +318,3 @@ Displayed in the following example, Test has both a folder and an md file, which
 
 > [!div class="nextstepaction"]
 > [Version, select, or un-publish a published wiki](wiki-select-unpublish-versions.md)
-
