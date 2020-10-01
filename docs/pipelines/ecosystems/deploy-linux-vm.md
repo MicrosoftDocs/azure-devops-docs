@@ -75,7 +75,7 @@ You can create an environment in **Environments** within **Pipelines**.
 4.	Choose the Windows or Linux for the **Operating System** and copy PS registration script. 
 5.	Run the copied script from an administrator PowerShell command prompt on each of the target VMs registered with this environment.
     > [!NOTE]
-    > - The Personal Access Token (PAT) of the logged in user is pre-inserted in the script. It expires on the day you generate the script.
+    > - The Personal Access Token (PAT) of the logged in user is pre-inserted in the script and expires after three hours.
     > - If your VM already has any agent running on it, provide a unique name to register with environment.
 6.	Once VM is registered, it will start appearing as an environment resource under **Resources**.
     > [!div class="mx-imgBorder"]
