@@ -31,17 +31,17 @@
   - name: Visual Studio for Mac
     href: /visualstudio/mac
   - name: Eclipse
-    href: /azure/devops/java/download-eclipse-plug-in
+    href: /previous-versions/azure/devops/java/download-eclipse-plug-in
   - name: IntelliJ IDEA
-    href: /azure/devops/java/download-intellij-plug-in
+    href: /previous-versions/azure/devops/java/download-intellij-plug-in
 - name: Resources
   items:
   - name: Settings, security, & usage
-    href: /azure/devops/organizations/index
+    href: ../organizations/index.yml
   - name: Manage projects 
-    href: /azure/devops/organizations/projects/index
+    href: ../organizations/projects/about-projects.md
   - name: Marketplace & extensibility
-    href: /azure/devops/marketplace-extensibility/index
+    href: ../marketplace-extensibility/index.yml
   - name: Search your Wiki
     href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/
   - name: Code search video
@@ -54,4 +54,3 @@
       href: /azure/devops/learn/what-is-devops
     - name: Git at Scale
       href: /azure/devops/learn/git/git-at-scale
-
