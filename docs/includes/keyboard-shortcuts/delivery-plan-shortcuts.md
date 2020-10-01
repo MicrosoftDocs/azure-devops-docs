@@ -7,7 +7,7 @@ ms.topic: include
 
 ::: moniker range=">= tfs-2017"
 
-You can use the following keyboard shortcuts when [interacting with a delivery plan](/azure/devops/boards/plans/review-team-plans). To view the valid shortcuts, enter **?** when viewing a plan from the **Boards>Plans** or **Work>Plans** page.
+You can use the following keyboard shortcuts when [interacting with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, enter **?** when viewing a plan from the **Boards>Plans** or **Work>Plans** page.
 
 To toggle between card titles only and card details, enter **t**. 
 
@@ -46,5 +46,3 @@ To toggle between card titles only and card details, enter **t**.
 :::row-end:::
  
 ::: moniker-end
-
-

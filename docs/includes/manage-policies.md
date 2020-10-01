@@ -8,7 +8,7 @@ ms.topic: include
 Complete the following steps to change application connection, security, and user policies for your organization in Azure DevOps. 
 
 > [!NOTE]   
-> To enable the user interface for the New user hub, see [Manage or enable features](/azure/devops/project/navigation/preview-features).
+> To enable the user interface for the New user hub, see [Manage or enable features](../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -26,7 +26,7 @@ Complete the following steps to change application connection, security, and use
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-    [Why am I asked to choose between my work or school account and my personal account?](/azure/devops/organizations/accounts/faq-user-and-permissions-management)
+    [Why am I asked to choose between my work or school account and my personal account?](../organizations/accounts/faq-user-and-permissions-management.md)
 
 2. Select ![gear icon](/azure/devops/media/icons/gear-icon.png) **Organization settings**.
 
@@ -38,4 +38,3 @@ Complete the following steps to change application connection, security, and use
    
 
 * * *
-
