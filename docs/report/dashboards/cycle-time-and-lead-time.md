@@ -44,7 +44,7 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 ## Add the widget to your dashboard   
 
 1. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
-2. If you haven't yet [added the widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+2. If you haven't yet [added the widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
 
 
 <a id="configure-widget"></a>
@@ -156,4 +156,3 @@ We recommend your team review the lead/cycle time charts before or during each r
 - [Cumulative flow diagram](cumulative-flow.md)
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
 - [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes
-

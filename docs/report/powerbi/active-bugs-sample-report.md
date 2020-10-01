@@ -40,8 +40,8 @@ In order to create a Power BI report that references an Analytics view, you must
 ::: moniker range="azure-devops"
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-- If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to a project, except stakeholders, can view **Analytics views**.
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- If you haven't been added as a team member, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to a project, except stakeholders, can view **Analytics views**.
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked bugs for some period of time in order to generate a trend report. 
 
@@ -50,9 +50,9 @@ In order to create a Power BI report that references an Analytics view, you must
 ::: moniker range="azure-devops-2019"
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-- If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to a project, except stakeholders, can view **Analytics views**.
+- If you haven't been added as a team member, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to a project, except stakeholders, can view **Analytics views**.
 - Have [enabled or installed Analytics](../dashboards/analytics-extension.md).
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked bugs for some period of time in order to generate a trend report.  
 

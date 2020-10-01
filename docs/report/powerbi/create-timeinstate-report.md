@@ -62,7 +62,7 @@ To simplify quickly generating reports, we designed Analytics views to work with
     )
     ```
 
-	The *Work Items Count* measure uses the [`CALCULATE`](https://msdn.microsoft.com/query-bi/dax/calculate-function-dax), [`COUNTROWS`](https://msdn.microsoft.com/query-bi/dax/countrows-function-dax),  and [`LASTDATE`](https://msdn.microsoft.com/query-bi/dax/lastdate-function-dax) DAX functions which are described in more detail [later in this article](#dax-functions).
+	The *Work Items Count* measure uses the [`CALCULATE`](/dax/calculate-function-dax), [`COUNTROWS`](/dax/countrows-function-dax),  and [`LASTDATE`](/dax/lastdate-function-dax) DAX functions which are described in more detail [later in this article](#dax-functions).
 
 	> [!NOTE]   
 	> Remember to replace *View Name* with the table name for the Analytics view. For example, here we replace *View Name* with *Stories - Last 30 days*. 
@@ -147,7 +147,7 @@ CALCULATE (
 )
 ```
 
-This calculated column uses three DAX functions, [`MAX`](https://msdn.microsoft.com/query-bi/dax/max-function-dax), [`ALLEXCEPT`](https://msdn.microsoft.com/query-bi/dax/allexcept-function-dax), and  [`EARLIER`](https://msdn.microsoft.com/query-bi/dax/earlier-function-dax), described in more detail [later in this article](#dax-functions). Keep in mind that because this is a calculated column it is run for each and every row in the table and each time it is run it has the context of that specific row. 
+This calculated column uses three DAX functions, [`MAX`](/dax/max-function-dax), [`ALLEXCEPT`](/dax/allexcept-function-dax), and  [`EARLIER`](/dax/earlier-function-dax), described in more detail [later in this article](#dax-functions). Keep in mind that because this is a calculated column it is run for each and every row in the table and each time it is run it has the context of that specific row. 
 
 > [!div class="mx-imgBorder"]  
 > ![Table report, Title, Date, and Previous Date selected](media/time-in-state-previous-date.png) 
@@ -182,7 +182,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > )
 > ```
 
-This calculated column uses the [`ISBLANK`](https://msdn.microsoft.com/query-bi/dax/isblank-function-dax) and [`DATEDIFF`](https://msdn.microsoft.com/query-bi/dax/datediff-function-dax) DAX functions described [later in this article](#dax-functions).
+This calculated column uses the [`ISBLANK`](/dax/isblank-function-dax) and [`DATEDIFF`](/dax/datediff-function-dax) DAX functions described [later in this article](#dax-functions).
 
 ## Add *Is Last Day in State*  
 
@@ -265,7 +265,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > ```
 > 
 > [!NOTE]
-> You may need to revise the definition based on the workflow states used by your project. For example, the project used in the examples in this article use the 'In Progress' workflow state, however, Agile, Scrum, and CMMI processes typically use the 'Active' or 'Committed' states to represent work in progress. For an overview, see [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories).
+> You may need to revise the definition based on the workflow states used by your project. For example, the project used in the examples in this article use the 'In Progress' workflow state, however, Agile, Scrum, and CMMI processes typically use the 'Active' or 'Committed' states to represent work in progress. For an overview, see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).
 
 The following image shows the impact of considering all time-in-state for every existing work item (shown left) versus only those work items in a specific state on a given day (shown right).
 
@@ -324,7 +324,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > )
 > ```
 
-This calculated column uses the [`LOOKUPVALUE`](https://msdn.microsoft.com/query-bi/dax/lookupvalue-function-dax), described [later in this article](#dax-functions).
+This calculated column uses the [`LOOKUPVALUE`](/dax/lookupvalue-function-dax), described [later in this article](#dax-functions).
  
 The first `LOOKUPVALUE` parameter, `'View Name'[State]`, specifies to return the value of [State]. 
 
@@ -468,23 +468,23 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 
 Additional information is provided in this section for the DAX functions used to created the calculated columns and measure added in this article. 
 
-* [`CALCULATE`](https://msdn.microsoft.com/query-bi/dax/calculate-function-dax): This function is the basis for nearly all examples. The basic structure is an expression followed by a series of filters which are applied to the expression.     
+* [`CALCULATE`](/dax/calculate-function-dax): This function is the basis for nearly all examples. The basic structure is an expression followed by a series of filters which are applied to the expression.     
 
-* [`COUNTROWS`](https://msdn.microsoft.com/query-bi/dax/countrows-function-dax): This function, `COUNTROWS ( 'View Name' )`, simply counts the number of rows which remain after the filters are applied. 
+* [`COUNTROWS`](/dax/countrows-function-dax): This function, `COUNTROWS ( 'View Name' )`, simply counts the number of rows which remain after the filters are applied. 
 	
-* [`LASTDATE`](https://msdn.microsoft.com/query-bi/dax/lastdate-function-dax): We apply the `LASTDATE` filter to an expression, for example `LASTDATE ( 'View Name'[Date] )`, to find the newest date across all rows in the table and eliminate the rows that do not share the same date. With the snapshot table generated by an Analytics view this filter effectively picks the last day of the selected period.    
+* [`LASTDATE`](/dax/lastdate-function-dax): We apply the `LASTDATE` filter to an expression, for example `LASTDATE ( 'View Name'[Date] )`, to find the newest date across all rows in the table and eliminate the rows that do not share the same date. With the snapshot table generated by an Analytics view this filter effectively picks the last day of the selected period.    
 
-* [`MAX`](https://msdn.microsoft.com/query-bi/dax/max-function-dax): Returns the largest numeric value in a column, or between two scalar expressions. We apply  `MAX ( 'View Name'[Date] )`, to determine the most recent date after all filters have been applied.  
+* [`MAX`](/dax/max-function-dax): Returns the largest numeric value in a column, or between two scalar expressions. We apply  `MAX ( 'View Name'[Date] )`, to determine the most recent date after all filters have been applied.  
 
-* [`ALLEXCEPT`](https://msdn.microsoft.com/query-bi/dax/allexcept-function-dax): Removes all context filters in the table except filters that have been applied to the specified columns. Essentially, `ALLEXCEPT ('View Name'', 'View Name'[Work Item Id])` reduces the rows in the table down to only those that share the same work item ID as the current row.   
+* [`ALLEXCEPT`](/dax/allexcept-function-dax): Removes all context filters in the table except filters that have been applied to the specified columns. Essentially, `ALLEXCEPT ('View Name'', 'View Name'[Work Item Id])` reduces the rows in the table down to only those that share the same work item ID as the current row.   
 
-* [`EARLIER`](https://msdn.microsoft.com/query-bi/dax/earlier-function-dax): Returns the current value of the specified column in an outer evaluation pass of the mentioned column. For example, `'View Name'[Date] < EARLIER ( 'View Name'[Date] )`, further reduces the data set to only those rows that occurred before the date for the current row which is referenced by using the `EARLIER` function. `EARLIER` does not refer to previous dates, it specifically defines the row context of the calculated column 
+* [`EARLIER`](/dax/earlier-function-dax): Returns the current value of the specified column in an outer evaluation pass of the mentioned column. For example, `'View Name'[Date] < EARLIER ( 'View Name'[Date] )`, further reduces the data set to only those rows that occurred before the date for the current row which is referenced by using the `EARLIER` function. `EARLIER` does not refer to previous dates, it specifically defines the row context of the calculated column 
 
-* [`ISBLANK`](https://msdn.microsoft.com/query-bi/dax/isblank-function-dax): Checks whether a value is blank, and returns TRUE or FALSE. `ISBLANK` evaluates the current row to determine if *Date Previous* has a value. If it does not, the If statement sets *Date Diff in Days* to 1.
+* [`ISBLANK`](/dax/isblank-function-dax): Checks whether a value is blank, and returns TRUE or FALSE. `ISBLANK` evaluates the current row to determine if *Date Previous* has a value. If it does not, the If statement sets *Date Diff in Days* to 1.
 
-* [`DATEDIFF`](https://msdn.microsoft.com/query-bi/dax/datediff-function-dax): Returns the count of interval boundaries crossed between two dates. `DATEDIFF` subtracts *Date Previous* from *Date* to determine the number of days between them.
+* [`DATEDIFF`](/dax/datediff-function-dax): Returns the count of interval boundaries crossed between two dates. `DATEDIFF` subtracts *Date Previous* from *Date* to determine the number of days between them.
 
-* [`LOOKUPVALUE`](https://msdn.microsoft.com/query-bi/dax/lookupvalue-function-dax): Returns the value in *result_columnName* for the row that meets all criteria specified by *search_columnName* and *search_value*.  
+* [`LOOKUPVALUE`](/dax/lookupvalue-function-dax): Returns the value in *result_columnName* for the row that meets all criteria specified by *search_columnName* and *search_value*.  
 
 ## Related articles
 
@@ -492,5 +492,5 @@ Additional information is provided in this section for the DAX functions used to
 - [Create Analytics views](analytics-views-create.md)
 - [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
 - [Dataset design for the Power BI Connector](data-connector-dataset.md)
-- [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories)
+- [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

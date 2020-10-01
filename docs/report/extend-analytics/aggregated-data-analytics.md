@@ -335,7 +335,7 @@ When you need to use a mathematical expression to calculate properties for use i
 
 ## Generate a Cumulative Flow Diagram from aggregate data
 
-Let's say you want to create a [cumulative flow diagram](../guidance/cumulative-flow-cycle-lead-time-guidance.md) in Power BI. You can use a query similar to the one below:
+Let's say you want to create a [cumulative flow diagram](../dashboards/cumulative-flow-cycle-lead-time-guidance.md) in Power BI. You can use a query similar to the one below:
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
