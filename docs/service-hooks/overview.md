@@ -33,9 +33,9 @@ integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](http
 Pipelines                  |  Collaborate 	                    | Customer support	                    | Plan and track 	             | Integrate
 -------------------		           |  -------------	                    | ----------------		                | ---------		                 | -------
 [AppVeyor](https://www.appveyor.com/docs/) | [Flowdock](https://www.flowdock.com/api/integration-getting-started) | [UserVoice](https://feedback.uservoice.com/knowledgebase/articles/363410-vsts-azure-devops-integration)  | [Trello](./services/trello.md) | [Azure Service Bus](../pipelines/tasks/utility/publish-to-azure-service-bus.md)
-[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)	   |	HipChat (No longer supported)	|	[Zendesk](https://support.zendesk.com/hc/articles/204890268-Creating-webhooks-with-the-HTTP-target) 		|  |	[Azure Storage](https://docs.microsoft.com/azure/azure-functions/functions-integrate-storage-queue-output-binding)
+[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)	   |	HipChat (No longer supported)	|	[Zendesk](https://support.zendesk.com/hc/articles/204890268-Creating-webhooks-with-the-HTTP-target) 		|  |	[Azure Storage](/azure/azure-functions/functions-integrate-storage-queue-output-binding)
 [Jenkins](./services/jenkins.md)   |	[Hubot](https://hubot.github.com/docs/)	|											|			|	[Grafana](./services/grafana.md) |
-[MyGet](https://docs.myget.org/docs/reference/webhooks)	   |	[Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription)	|											|			|	[Web Hooks](./services/webhooks.md) |
+[MyGet](https://docs.myget.org/docs/reference/webhooks)	   |	[Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription)	|											|			|	[Web Hooks](./services/webhooks.md) |
 [Slack](./services/slack.md)	   |[Slack](./services/slack.md)	|	|	[Slack](./services/slack.md)	| [Zapier](https://zapier.com/apps/webhook/integrations) 
 | [Microsoft Teams](./services/teams.md) | [Microsoft Teams](./services/teams.md) |   |[Microsoft Teams](./services/teams.md) | [Datadog](./services/datadog.md)  
 
@@ -174,6 +174,4 @@ A: Atlassian officially dropped support for HipChat. See more on that announceme
 
 * [Troubleshoot service hooks and FAQs](troubleshoot.md)
 * [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
-* [Billing information](../organizations/billing/index.md)
-
-
+* [Billing information](../organizations/billing/overview.md)
