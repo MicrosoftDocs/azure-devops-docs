@@ -14,7 +14,7 @@ ms.date: 07/27/2020
 [!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
 
 
-Using the [Subscriptions](https://docs.microsoft.com/rest/api/vsts/hooks/) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
+Using the [Subscriptions](/rest/api/vsts/hooks/) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
 
 Supported events:
 
@@ -40,7 +40,7 @@ take for the subscription.
 
 To create a subscription, the following data is required:
 
-- project ID (use the [Project REST API](https://docs.microsoft.com/rest/api/vsts/core/projects) to get the project ID)
+- project ID (use the [Project REST API](/rest/api/vsts/core/projects) to get the project ID)
 - event ID and settings (see the [event reference](./events.md))
 - consumer and action IDs and settings (see the [consumer reference](./consumers.md))
 
@@ -123,7 +123,7 @@ The resource version is the same as the [API version](../integrate/concepts/rest
 
 #### Q: Are there services that I can subscribe to manually?
 
-A: Yes. [Here](./index.md) are the services that you can subscribe to from the administration page for a project.
+A: Yes. [Here](./overview.md) are the services that you can subscribe to from the administration page for a project.
 
 #### Q: Are there C# libraries that I can use to create subscriptions?
 
@@ -220,4 +220,4 @@ namespace Microsoft.Samples.VisualStudioOnline
 }
 ```
 
-<!-- ENDSECTION --> 
+<!-- ENDSECTION -->
