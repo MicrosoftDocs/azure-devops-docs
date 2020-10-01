@@ -46,7 +46,7 @@ https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repositor
 | Parameter              | Type    | Default | Notes
 |:-----------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance               | string  |         | [Azure DevOps organization](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance               | string  |         | [Azure DevOps organization](/rest/api/azure/devops/) ({account}.visualstudio.com) or [TFS server](/rest/api/azure/devops/) ({server:port}).
 | project                | string  |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository             | string  |         | ID or name of the [repository](./repositories.md).
 | Query
@@ -489,4 +489,3 @@ You can also modify the version with the `versionOptions` parameter.
 | None           | No modification to the version specified by the `versionType` and `version` parameters.
 
 When you specify a version with [recursion](#afolderanditschildren), the version is applied to the item and its children.
-

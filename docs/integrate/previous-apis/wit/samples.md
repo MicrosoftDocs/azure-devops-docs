@@ -272,7 +272,7 @@ If you already have the query id, you can skip step 1. The code sample below sho
 ## Query Work Items with WIQL
 <a name="queryworkitemswithwiql" />
 
-If you don't know the query you want to execute, you can use the [work item query language (WIQL)](https://msdn.microsoft.com/library/bb130306.aspx) to dynamically create a query in your code.
+If you don't know the query you want to execute, you can use the [work item query language (WIQL)](/previous-versions/visualstudio/visual-studio-2013/bb130306(v=vs.120)) to dynamically create a query in your code.
 
 >[!div class="tabbedCodeSnippets" cs='C#' cl='.NET Client Library']
 >```cs
@@ -1034,6 +1034,6 @@ A: See the [https://github.com/Microsoft/vsts-restapi-samplecode](https://github
 
 #### Q: Where can I find more information on the .NET library?
 
-A: Yes, see the [overview of client libraries](../../get-started/client-libraries/dotnet.md)
+A: Yes, see the [overview of client libraries](../../concepts/dotnet-client-libraries.md)
 
-<!-- ENDSECTION --> 
+<!-- ENDSECTION -->
