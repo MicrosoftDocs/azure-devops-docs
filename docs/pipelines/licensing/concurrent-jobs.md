@@ -58,7 +58,7 @@ We provide a *free tier* of service by default in every organization for both ho
 Parallel jobs are purchased at the organization level, and they are shared by all projects in an organization. 
 
 
-# [Microsoft-hosted costs](#tab/ms-hosted-costs)
+# [Microsoft-hosted](#tab/ms-hosted)
 
 For Microsoft-hosted parallel jobs, you get 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for public projects. For private projects, you get one free job that can run for up to 60 minutes each time. There is no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects. 
 
@@ -80,7 +80,7 @@ When you purchase your first Microsoft-hosted parallel job, the number of parall
 > [Specify jobs in your pipeline](../process/phases.md).
 
 
-# [Self-hosted costs](#tab/self-hosted-costs)
+# [Self-hosted](#tab/self-hosted)
 
 
 For self-hosted parallel jobs, you can register any number of [self-hosted agents](../agents/agents.md) in your organization. We charge based on the number of jobs you want to run at a time, not the number of agents registered. There are no time limits on self-hosted jobs.
