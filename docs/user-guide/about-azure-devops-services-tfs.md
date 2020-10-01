@@ -55,15 +55,12 @@ Two of the following additional areas differ in their support:
 
 Are you on Azure DevOps Server and considering moving? Read [Migration options](../migrate/migrate-from-tfs.md) to understand your options.
 
-<!---
-## Fundamental differences between Azure DevOps Server and Azure DevOps Services
-
-When you plan a move, a few fundamental differences between Azure DevOps Server and Azure DevOps Services are important for you to understand.
--->
 
 <a name="scope-scale-data"></a>
 
-## Scope and scale data
+## Scope and scale data 
+
+As your business grows you may need to scale up your Azure DevOps instance. 
 
 ### Azure DevOps Services scales by using organizations and projects
 
@@ -109,7 +106,7 @@ Learn more: [Plan your organizational structure in Azure DevOps](plan-your-azure
 ## Authentication
 
 With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You either authenticate with [Microsoft account](https://www.microsoft.com/account) credentials or with
-[Azure AD](/azure/active-directory/active-directory-whatis)  
+[Azure AD](/azure/active-directory/active-directory-whatis) 
 credentials, depending on your organization setup. You can also set up Azure AD to require features such as multi-factor-authentication, IP address restrictions, and so on.
 
 We recommend that you configure your organizations to use Azure AD rather than
