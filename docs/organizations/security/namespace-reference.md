@@ -53,7 +53,7 @@ Token examples for different namespaces are provided in the next section.
 
 
 
-## Object-level namespaces
+## Object-level namespaces and permissions
 
 
 ---
@@ -75,11 +75,11 @@ Token examples for different namespaces are provided in the next section.
       AnalyticsViews
    :::column-end:::
    :::column span="1":::
-      Read                
+      `Read                
       Edit                
       Delete              
       Execute             
-      ManagePermissions   
+      ManagePermissions`   
    :::column-end:::
    :::column span="2":::
       [Manages object-level Analytics views permissions](/azure/devops/organizations/security/permissions#analytics-views-permissions) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](/azure/devops/report/powerbi/analytics-security).  
@@ -96,7 +96,7 @@ Token examples for different namespaces are provided in the next section.
       Build  
    :::column-end:::
    :::column span="1":::
-      ViewBuilds                       
+      `ViewBuilds                       
       EditBuildQuality                 
       RetainIndefinitely               
       DeleteBuilds                     
@@ -110,7 +110,7 @@ Token examples for different namespaces are provided in the next section.
       EditBuildDefinition              
       DeleteBuildDefinition            
       OverrideBuildCheckInValidation   
-      AdministerBuildPermissions       
+      AdministerBuildPermissions`       
    :::column-end:::
    :::column span="2":::
       [Manages object-level build permissions](/azure/devops/organizations/security/permissions#build-object-level).  
@@ -128,14 +128,14 @@ Token examples for different namespaces are provided in the next section.
       CSS  
    :::column-end:::
    :::column span="1":::
-      GENERIC_READ         
+      `GENERIC_READ         
       GENERIC_WRITE        
       CREATE_CHILDREN      
       DELETE               
       WORK_ITEM_READ       
       WORK_ITEM_WRITE      
       MANAGE_TEST_PLANS    
-      MANAGE_TEST_SUITES   
+      MANAGE_TEST_SUITES`   
    :::column-end:::
    :::column span="2":::
       [Manages area path (object-level) permissions](/azure/devops/organizations/security/permissions#area-path-object-level) to create, edit, and delete child nodes and set permissions to view or edit work items in a node. You can manage these permissions through the [Project settings, Project configuration administrative interface](/azure/devops/organizations/security/set-permissions-access-work-tracking#create-child-nodes-modify-work-items-under-an-area-path).  
@@ -150,12 +150,12 @@ Token examples for different namespaces are provided in the next section.
       DashboardsPrivileges  
    :::column-end:::
    :::column span="1":::
-      Read              
+      `Read              
       Create                  
       Edit                    
       Delete                  
       ManagePermissions       
-      MaterializeDashboards   
+      MaterializeDashboards`   
    :::column-end:::
    :::column span="2":::
       [Manages dashboard (object-level) permissions](/azure/devops/organizations/security/permissions#dasboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](/azure/devops/report/dashboards/dashboard-permissions#set-permissions-for-a-project-dashboard).   
@@ -170,7 +170,7 @@ Token examples for different namespaces are provided in the next section.
       Git Repositories    
    :::column-end:::
    :::column span="1":::
-      Administer                
+      `Administer                
       GenericRead               
       GenericContribute         
       ForcePush                 
@@ -185,7 +185,7 @@ Token examples for different namespaces are provided in the next section.
       RemoveOthersLocks         
       ManagePermissions         
       PullRequestContribute    
-      PullRequestBypassPolicy  
+      PullRequestBypassPolicy`  
    :::column-end:::
    :::column span="2":::
       [Manages Git repository (object-level) permissions](/azure/devops/organizations/security/permissions#git-repository-permissions-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](/azure/devops/organizations/security/set-git-tfvc-repository-permissions#set-git-repository-permissions).  
@@ -203,10 +203,10 @@ Token examples for different namespaces are provided in the next section.
       Iteration 
    :::column-end:::
    :::column span="1":::
-      GENERIC_READ      
+      `GENERIC_READ      
       GENERIC_WRITE     
       CREATE_CHILDREN   
-      DELETE          
+      DELETE`          
    :::column-end:::
    :::column span="2":::
       [Manages iteration path (object-level) permissions](/azure/devops/organizations/security/permissions#iteration-path-permissions) to create, edit, and delete child nodes and view child node permissions. You can manage these permissions through the [Project settings, Project configuration administrative interface](/azure/devops/organizations/security/set-permissions-access-work-tracking#create-child-nodes-modify-work-items-under-an-area-path). <br/>
@@ -233,9 +233,9 @@ Token examples for different namespaces are provided in the next section.
       MetaTask  
    :::column-end:::
    :::column span="1":::
-      Administer  
+      `Administer  
       Edit         
-      Delete      
+      Delete`      
    :::column-end:::
    :::column span="2":::
       [Manages task group permissions](/azure/devops/organizations/security/permissions#task-group) to edit and delete task groups, and administer task group permissions.  
@@ -250,10 +250,10 @@ Token examples for different namespaces are provided in the next section.
       Plan  
    :::column-end:::
    :::column span="1":::
-      View     
+      `View     
       Edit   
       Delete   
-      Manage   
+      Manage`   
    :::column-end:::
    :::column span="2":::
       [Manages permissions for Delivery Plans](/azure/devops/organizations/security/permissions#plan-permissions") to view, edit, delete, and manage delivery plans. You can manage these permissions through the [user interface for each plan](/azure/devops/organizations/security/set-permissions-access-work-tracking#edit-or-manage-permissions-for-delivery-plans).      
@@ -269,7 +269,7 @@ Token examples for different namespaces are provided in the next section.
       ReleaseManagement 
    :::column-end:::
    :::column span="1":::
-      ViewReleaseDefinition        
+      `ViewReleaseDefinition        
       EditReleaseDefinition        
       DeleteReleaseDefinition       
       ManageReleaseApprovers        
@@ -282,7 +282,7 @@ Token examples for different namespaces are provided in the next section.
       DeleteReleases                 
       ManageDeployments             
       ManageReleaseSettings         
-      ManageTaskHubExtension         
+      ManageTaskHubExtension`         
    :::column-end:::
    :::column span="2":::
       [Manages release object-level-permissions](/azure/devops/organizations/security/permissions#release-management).  
@@ -305,12 +305,12 @@ Token examples for different namespaces are provided in the next section.
       WorkItemQueryFolders 
    :::column-end:::
    :::column span="1":::
-      Read   
+      `Read   
       Contribute                 
       Delete                    
       ManagePermissions          
       FullControl                
-      RecordQueryExecutionInfo   
+      RecordQueryExecutionInfo`   
    :::column-end:::
    :::column span="2":::
       [Manages permissions for work item query folders](set-permissions-access-work-tracking.md#work-item-queries).  
@@ -321,12 +321,12 @@ Token examples for different namespaces are provided in the next section.
 ---
 
 
-## Project-level 
+## Project-level namespaces and permissions
 
-Project  
-Tagging
-VersionControlItems   
-
+- Project  
+- Tagging
+- VersionControlItems   
+- 
 
 ---
 :::row:::
@@ -643,12 +643,31 @@ Note non UI permissions
 :::row-end:::
 ---
 
-## Role-based namespaces and permissions
+::: moniker range="< azure-devops"
+
+## Server-level namespaces and permissions
+
+- CollectionManagement  
+- Server  
+- Warehouse  
 
 
+---
 :::row:::
    :::column span="1":::
-      ExtensionManagement
+      **Namespace**
+   :::column-end:::
+   :::column span="1":::
+      **Permissions**
+   :::column-end:::
+   :::column span="2":::
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      CollectionManagement 
    :::column-end:::
    :::column span="1":::
       GENERIC_READ                   
@@ -661,6 +680,53 @@ Note non UI permissions
    :::column-end:::
 :::row-end:::
 ---
+:::row:::
+   :::column span="1":::
+      Server
+   :::column-end:::
+   :::column span="1":::
+      GenericRead    
+      GenericWrite   
+      Impersonate    
+      TriggerEvent   
+   :::column-end:::
+   :::column span="2":::
+      [Manages permissions set at the server-level](/azure/devops/organizations/security/permissions#server-permissions). This includes permissions to create and delete project collections, edit instance-level information, make requests on behalf of others, and trigger events. You can manage these permissions, which are granted to members of the Team Foundation Administrators group, through the [Azure DevOps Server administration console](/azure/devops/server/admin/add-administrator). 
+      <br/>
+      ID: `1f4179b3-6bac-4d01-b421-71ea09171400`
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Warehouse
+   :::column-end:::
+   :::column span="1":::
+      Administer                  
+   :::column-end:::
+   :::column span="2":::
+      Can process or change settings for the data warehouse or SQL Server Analysis cube by using the [Warehouse Control Web Service](/azure/devops/report/admin/manage-reports-data-warehouse-cube?view=azure-devops-2020&preserve-view=true). You can manage the Administer Warehouse permission through the [Azure DevOps Server administration console](/azure/devops/server/admin/add-administrator). 
+      <br/>
+      ID: `b8fbab8b-69c8-4cd9-98b5-873656788efb`
+   :::column-end:::
+:::row-end:::
+---
+
+::: moniker-end
+
+## Role-based namespaces and permissions
+
+- DistributedTask (Agent pools, project)
+- Environment
+- ExtensionManagement
+- Library
+- ServiceEndpoints
+
+DistributedTask (Agent pools, project)
+Environment
+ExtensionManagement
+Library
+ServiceEndpoints
 
 
 ---
@@ -669,109 +735,187 @@ Note non UI permissions
       **Namespace**
    :::column-end:::
    :::column span="1":::
-      **ID**
+      **Permissions**
    :::column-end:::
    :::column span="2":::
-      **Notes**
+      **Description**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      DistributedTask 
+   :::column-end:::
+   :::column span="1":::
+      View                    
+      Manage                  
+      Listen                  
+      AdministerPermissions   
+      Use                     
+      Create                  
+   :::column-end:::
+   :::column span="2":::
+      Manages permissions to view, manage, listen, create, and use [distributed tasks in Azure Pipelines](/azure/devops/pipelines/tasks/deploy/app-center-distribute).  
+      <br/>
+      ID: `101eae8c-1709-47f9-b228-0e476c35b3ba`
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Environment
+   :::column-end:::
+   :::column span="1":::
+      View                    
+      Manage                  
+      ManageHistory   
+      Administer     
+      Use                     
+      Create                  
+   :::column-end:::
+   :::column span="2":::
+      Manages read and write permissions to the Environment security namespace at the project collection host level to the Pipelines service principal. 
+      <br/>
+      ID: `83d4c2e6-e57d-4d6e-892b-b87222b7ad20`
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      ExtensionManagement
+   :::column-end:::
+   :::column span="1":::
+      ViewExtensions     
+      ManageExtensions   
+      ManageSecurity    
+   :::column-end:::
+   :::column span="2":::
+ 
+      <br/>
+      ID: `5d6d7b80-3c63-4ab0-b699-b6a5910f8029`
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Library
+   :::column-end:::
+   :::column span="1":::
+      View          
+      Administer    
+      Create       
+      ViewSecrets   
+      Use           
+      Owner         
+   :::column-end:::
+   :::column span="2":::
+      Manages library permissions to create, use, view, and administer library items. These permissions are assigned through [Library asset security roles](/azure/devops/organizations/security/about-security-roles#library-roles).   
+      <br/>
+      ID: `b7e84409-6553-448a-bbb2-af228e07cbeb`
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      ServiceEndpoints
+   :::column-end:::
+   :::column span="1":::
+      Use                 
+      Administer          
+      Create              
+      ViewAuthorization   
+      ViewEndpoint        
+   :::column-end:::
+   :::column span="2":::
+      Manages permissions to create and use service connections or service endpoints. These permissions are assigned through [Service connection security roles](/azure/devops/organizations/security/about-security-roles#service-endpoint-roles).   
+      <br/>
+      ID: `49b48001-ca20-4adc-8111-5b60c903a50c`
+   :::column-end:::
+:::row-end:::
+---
+
+
+## Internal namespaces and permissions
+
+- BlobStoreBlobPrivileges
+- Boards
+- BoardsExternalIntegration
+- Chat
+- Discussion Threads
+- EventSubscriber
+- EventSubscription
+- Identity
+- Identity2
+- Licensing
+- PermissionLevel
+- PipelineCachePrivileges
+- ReleaseManagement
+- SearchSecurity
+- ServiceHooks
+- WorkItemTrackingAdministration
+- WorkItemTrackingProvision
+ 
+ 
+---
+:::row:::
+   :::column span="1":::
+      **Namespace**
+   :::column-end:::
+   :::column span="1":::
+      **Permissions**
+   :::column-end:::
+   :::column span="2":::
+      **Description**
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="":::
-      AccountAdminSecurity
+      BlobStoreBlobPrivileges
    :::column-end:::
    :::column span="":::
       11238e09-49f2-40c7-94d0-8f0307204ce4
    :::column-end:::
    :::column span="2":::
       Sets permissions to read, create, and modify organization account. These permissions are assigned to the organization owner and members of the Project Collection Administrator group.  
-   :::column-end:::
-:::row-end:::
----
-::: moniker range=">= azure-devops-2019"
-:::row:::
-   :::column span="":::
-      Analytics
-   :::column-end:::
-   :::column span="":::
-      58450c49-b02d-465a-ab12-59ae512d6531
-   :::column-end:::
-   :::column span="2":::
-      Manages permissions to read, administer permissions, and execute queries against the Analytics service.  
-      **Token format for project-level permissions**: `$/PROJECT_ID`  
-      **Example**: `$/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
+
+      <br/>
+      ID: `52d39943-cb85-4d7f-8fa8-c6baac873819`
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="":::
-      AnalyticsViews
+      Boards
    :::column-end:::
    :::column span="":::
-      d34d3680-dfe5-4cc6-a949-7d9c68f73cba
+      View             
+      Create          
+      ChangeMetadata   
+      MoveCard         
+      Delete           
+      Manage          
    :::column-end:::
    :::column span="2":::
-      [Manages object-level Analytics views permissions](/azure/devops/organizations/security/permissions#analytics-views-permissions) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](/azure/devops/report/powerbi/analytics-security).  
-      **Token format for project level permissions**: `$/Shared/PROJECT_ID`  
-      **Example**: `$/Shared/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
+      Manages permissions and access to Kanban boards.  
+      <br/>
+      ID: `251e12d9-bea3-43a8-bfdb-901b98c0125e`
    :::column-end:::
 :::row-end:::
 ---
-::: moniker-end
-::: moniker range=">= azure-devops-2020"
-:::row:::
-   :::column span="":::
-      AuditLog
-   :::column-end:::
-   :::column span="":::
-      a6cc6381-a1ca-4b36-b3c1-4e65211e82b6
-   :::column-end:::
-   :::column span="2":::
-      [Manages auditing permissions](/azure/devops/organizations/security/permissions#audit-streams-permissions) to read or write to the audit log and manage or delete audit streams.  
-      **Token format**: `/AllPermissions`
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="":::
       BoardsExternalIntegration
    :::column-end:::
    :::column span="":::
-      5ab15bc8-4ea1-d0f3-8344-cab8fe976877
+      Read    
+      Write    
    :::column-end:::
    :::column span="2":::
       Manages read/write permissions of external integrations with Azure Boards. 
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-:::row:::
-   :::column span="":::
-      Build
-   :::column-end:::
-   :::column span="":::
-      33344d9c-fc72-4d6f-aba5-fa317101a7e9
-   :::column-end:::
-   :::column span="2":::
-      [Manages object-level build permissions](/azure/devops/organizations/security/permissions#build-object-level).  
-      **Token format for project-level build permissions**: `PROJECT_ID`  
-      If you need to update permissions for a particular build definition ID, for example, 12, security token for that build definition looks as follows:  
-      **Token format for project level build permissions**: `PROJECT_ID/12`  
-      **Example**: `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba/12`  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-      BuildAdministration
-   :::column-end:::
-   :::column span="":::
-      302acaca-b667-436d-a946-87133492041c
-   :::column-end:::
-   :::column span="2":::
-      [Manages organization or collection-level permissions for build resources](/azure/devops/organizations/security/permissions#collection-level) to view, manage, use, or administer permissions.  
+      <br/>
+      ID: `5ab15bc8-4ea1-d0f3-8344-cab8fe976877`
    :::column-end:::
 :::row-end:::
 ---
@@ -781,92 +925,45 @@ Note non UI permissions
       Chat
    :::column-end:::
    :::column span="":::
-      bc295513-b1a2-4663-8d1a-7017fd760d18
+      ReadChatRoomMetadata      
+      UpdateChatRoomMetadata    
+      CreateChatRoom           
+      CloseChatRoom            
+      DeleteChatRoom            
+      AddRemoveChatRoomMember   
+      ReadChatRoomMessage      
+      WriteChatRoomMessage    
+      UpdateChatRoomMessage     
+      DeleteChatRoomMessage    
+      ReadChatRoomTranscript    
+      ManageChatPermissions     
    :::column-end:::
    :::column span="2":::
       Manages permissions for chat services integrated with Azure DevOps, such as Slack and Microsoft Teams. For more information, see [Azure Boards with Slack](/azure/devops/boards/integrations/boards-slack), [Azure Boards with Microsoft Teams](/azure/devops/boards/integrations/boards-teams), [Azure Pipelines with Slack](/azure/devops/pipelines/integrations/slack), [Azure Pipelines with Microsoft Teams](/azure/devops/pipelines/integrations/microsoft-teams), [Azure Repos with Slack](/azure/devops/repos/integrations/repos-slack), and [Azure Repos with Microsoft Teams](/azure/devops/repos/integrations/repos-teams). 
+      <br/>
+      ID: `bc295513-b1a2-4663-8d1a-7017fd760d18`
    :::column-end:::
 :::row-end:::
 ::: moniker-end
 ---
-:::row:::
-   :::column span="":::
-      Collection
-   :::column-end:::
-   :::column span="":::
-      3e65f728-f8bc-4ecd-8764-7e378b19bfa7
-   :::column-end:::
-   :::column span="2":::
-      [Manages organization or collection-level general and service account permissions](/azure/devops/organizations/security/permissions#collection-level). You can manage these permissions through the [Organization or Collection settings administrative interface](/azure/devops/organizations/security/set-project-collection-level-permissions). 
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-      CSS   
-   :::column-end:::
-   :::column span="":::
-      83e28ad4-2d72-4ceb-97b0-c7726d5502c3
-   :::column-end:::
-   :::column span="2":::
-      [Manages area path (object-level) permissions](/azure/devops/organizations/security/permissions#area-path-object-level) to create, edit, and delete child nodes and set permissions to view or edit work items in a node. You can manage these permissions through the [Project settings, Project configuration administrative interface](/azure/devops/organizations/security/set-permissions-access-work-tracking#create-child-nodes-modify-work-items-under-an-area-path).   
-   :::column-end:::
-:::row-end:::
----
-::: moniker range=">= tfs-2015"
-:::row:::
-   :::column span="":::
-      DashboardsPrivileges
-   :::column-end:::
-   :::column span="":::
-      8adf73b7-389a-4276-b638-fe1653f7efc7
-   :::column-end:::
-   :::column span="2":::
-      [Manages dashboard (object-level) permissions](/azure/devops/organizations/security/permissions#dasboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](/azure/devops/report/dashboards/dashboard-permissions#set-permissions-for-a-project-dashboard).   
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="":::
       Discussion Threads
    :::column-end:::
    :::column span="":::
-      0d140cae-8ac1-4f48-b6d1-c93ce0301a12
+      Administer          
+      GenericRead         
+      GenericContribute   
+      Moderate            
    :::column-end:::
    :::column span="2":::
       Manages permissions to view, manage, moderate, and contribute to [code review discussions setup for Azure Pipelines](/azure/devops/pipelines/process/environments-kubernetes#setup-review-app). 
+      <br/>
+      ID: `0d140cae-8ac1-4f48-b6d1-c93ce0301a128`
    :::column-end:::
 :::row-end:::
----
-::: moniker-end
-::: moniker range=">= tfs-2017"
-:::row:::
-   :::column span="":::
-      DistributedTask
-   :::column-end:::
-   :::column span="":::
-      101eae8c-1709-47f9-b228-0e476c35b3ba
-   :::column-end:::
-   :::column span="2":::
-      Manages permissions to view, manage, listen, create, and use [distributed tasks in Azure Pipelines](/azure/devops/pipelines/tasks/deploy/app-center-distribute).  
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-:::row:::
-   :::column span="":::
-      Environment
-   :::column-end:::
-   :::column span="":::
-      83d4c2e6-e57d-4d6e-892b-b87222b7ad20
-   :::column-end:::
-   :::column span="2":::
-      Manages read and write permissions to the Environment security namespace at the project collection host level to the Pipelines service principal. 
-   :::column-end:::
-:::row-end:::
----
+
 :::row:::
    :::column span="":::
       EventSubscriber
@@ -999,40 +1096,6 @@ Note non UI permissions
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= azure-devops-2019"
-:::row:::
-   :::column span="":::
-      Process
-   :::column-end:::
-   :::column span="":::
-      2dab47f9-bd70-49ed-9bd5-8eb051e59c02
-   :::column-end:::
-   :::column span="2":::
-      [Manages organization or collection-level permissions for processes](/azure/devops/organizations/security/permissions#administer-process-permissions) to create, edit, delete, and view processes and manage process permissions. You can manage these permissions through the [Organization or Collection settings, Process administrative interface](/azure/devops/organizations/security/set-permissions-access-work-tracking#customize-an-inherited-process).
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-:::row:::
-   :::column span="":::
-      Project
-   :::column-end:::
-   :::column span="":::
-      52d39943-cb85-4d7f-8fa8-c6baac873819
-   :::column-end:::
-   :::column span="2":::
-      [Manages Project-level permissions](/azure/devops/organizations/security/permissions#project-level-permissions). You can manage these permissions through the [Project settings, Security or Permissions administrative interface](/azure/devops/organizations/security/set-project-collection-level-permissions#change-the-permission-level-for-a-project-level-group). <br/>  
-      **Root token format**: `$PROJECT`  
-      Token to secure permissions for each project in your organization.  
-      `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  <br/>  
-      Assume you have a project named `Test Project 1`.  
-      You can get the project ID for this project by using `project show` command.  
-      `az devops project show --project "Test Project 1"`  
-      The command returns a project-id, for example, `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`.  
-      Therefore, the token to secure project-related permissions for `Test Project 1` is:  
-      `'$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'`  
-   :::column-end:::
-:::row-end:::
 ---
 ::: moniker range="tfs-2017 || tfs-2018"
 :::row:::
@@ -1046,58 +1109,6 @@ Note non UI permissions
       [Manages permissions to create, delete, update, and publish extensions](/azure/devops/extend/publish/overview). These permissions are granted when a user creates a publisher via the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage/createpublisher). 
    :::column-end:::
 :::row-end:::
----
-::: moniker-end
-::: moniker range=">= tfs-2017"
-:::row:::
-   :::column span="":::
-      ReleaseManagement
-   :::column-end:::
-   :::column span="":::
-      c788c23e-1b46-4162-8f5e-d7585343b5de
-   :::column-end:::
-   :::column span="2":::
-      [Manages release (object-level-permissions](/azure/devops/organizations/security/permissions#release-management).  
-      **Token format for project-level permissions**: `PROJECT_ID`  
-      **Example**: `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
-      If you need to update permissions for a particular release definition ID, for example, 12, security token for that release definition looks as follows:  
-      **Token format for project-level release permissions**: `PROJECT_ID/12`  
-      **Example**: `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba/12`  
-      If the release definition ID lives in a folder, then the security tokens look as follows:  
-      **Token format**: `PROJECT_ID/{folderName}/12`  
-      For stages, tokens look like: `PROJECT_ID/{folderName}/{DefinitionId}/Environment/{EnvironmentId}`.  
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range="< azure-devops"
-:::row:::
-   :::column span="":::
-      Server
-   :::column-end:::
-   :::column span="":::
-      1f4179b3-6bac-4d01-b421-71ea09171400
-   :::column-end:::
-   :::column span="2":::
-      [Manages permissions set at the server-level](/azure/devops/organizations/security/permissions#server-permissions). This includes permissions to create and delete project collections, edit instance-level information, make requests on behalf of others, and trigger events. You can manage these permissions, which are granted to members of the Team Foundation Administrators group, through the [Azure DevOps Server administration console](/azure/devops/server/admin/add-administrator). 
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range=">= tfs-2015"
-:::row:::
-   :::column span="":::
-      ServiceEndpoints
-   :::column-end:::
-   :::column span="":::
-      49b48001-ca20-4adc-8111-5b60c903a50c
-   :::column-end:::
-   :::column span="2":::
-      Manages permissions to create and use service connections or service endpoints. These permissions are assigned through [Service connection security roles](/azure/devops/organizations/security/about-security-roles#service-endpoint-roles).   
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="":::
@@ -1112,20 +1123,6 @@ Note non UI permissions
 :::row-end:::
 ---
 ::: moniker-end
-:::row:::
-   :::column span="":::
-      Tagging
-   :::column-end:::
-   :::column span="":::
-      bb50f182-8e5e-40b8-bc21-e8752a1e7ae2
-   :::column-end:::
-   :::column span="2":::
-      Manages permissions to create, delete, enumerate, and use work item tags. You can manage the **Create tag definition** permission through the [Project settings, Permissions administrative interface](/azure/devops/organizations/security/set-project-collection-level-permissions#change-the-permission-level-for-a-project-level-group). <br/> 
-      **Token format for project-level permissions**: `/PROJECT_ID`  
-      **Example**: `/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
-   :::column-end:::
-:::row-end:::
----
 ::: moniker range="<= tfs-2015"
 :::row:::
    :::column span="":::
@@ -1138,71 +1135,6 @@ Note non UI permissions
       [Manages Lab Management permissions](/azure/devops/organizations/security/permissions#lab).
       > [!NOTE]  
       > Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range="azure-devops"
-:::row:::
-   :::column span="":::
-      UtilizationPermissions
-   :::column-end:::
-   :::column span="":::
-      83abde3a-4593-424e-b45f-9898af99034d
-   :::column-end:::
-   :::column span="2":::
-      Manages permissions to query usage.  
-      **Token format**: `/`
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-:::row:::
-   :::column span="":::
-      VersionControlItems 
-   :::column-end:::
-   :::column span="":::
-      a39371cf-0841-4c16-bbd3-276e341bc052
-   :::column-end:::
-   :::column span="2":::
-      Manages permissions for a [Team Foundation Version Control (TFVC) repository](/azure/devops/organizations/security/permissions#tfvc). You can manage these permissions through the [Project settings, Repository administrative interface](/azure/devops/organizations/security/set-git-tfvc-repository-permissions#set-tfvc-repository-permissions). 
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-      VersionControlItems2
-   :::column-end:::
-   :::column span="":::
-      3c15a8b7-af1a-45c2-aa97-2cb97078332e
-   :::column-end:::
-   :::column span="2":::
-      Manages permissions for a [Team Foundation Version Control (TFVC) repository](/azure/devops/organizations/security/permissions#tfvc). You can manage these permissions through the [Project settings, Repository administrative interface](/azure/devops/organizations/security/set-git-tfvc-repository-permissions#set-tfvc-repository-permissions). 
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
-      VersionControlPrivileges
-   :::column-end:::
-   :::column span="":::
-      66312704-deb5-43f9-b51c-ab4ff5e351c3
-   :::column-end:::
-   :::column span="2":::
-      Manages project-level permissions for [Team Foundation Version Control (TFVC) repository](/azure/devops/organizations/security/permissions#tfvc). You can manage these permissions through the [Project settings, Permissions administrative interface](/azure/devops/organizations/security/set-project-collection-level-permissions#change-the-permission-level-for-a-project-level-group).
-   :::column-end:::
-:::row-end:::
----
-::: moniker range="< azure-devops"
-:::row:::
-   :::column span="":::
-      Warehouse
-   :::column-end:::
-   :::column span="":::
-          
-   :::column-end:::
-   :::column span="2":::
-      Can process or change settings for the data warehouse or SQL Server Analysis cube by using the [Warehouse Control Web Service](/azure/devops/report/admin/manage-reports-data-warehouse-cube?view=azure-devops-2020&preserve-view=true). You can manage the Administer Warehouse permission through the [Azure DevOps Server administration console](/azure/devops/server/admin/add-administrator). 
    :::column-end:::
 :::row-end:::
 ---
@@ -1233,20 +1165,6 @@ Note non UI permissions
    :::column-end:::
 :::row-end:::
 ---
-:::row:::
-   :::column span="":::
-      Workspaces
-   :::column-end:::
-   :::column span="":::
-      93bafc04-9075-403a-9367-b7164eac6b5c
-   :::column-end:::
-   :::column span="2":::
-      Manages permissions for administering schleved changes, workspaces, and the ability to create a workspace at the organizaiton or collection level. The Workspaces namespace is only valid with the TFVC repository. You can manage these permissions through the [Organization or Collection settings administrative interface](/azure/devops/organizations/security/set-project-collection-level-permissions).   
-      **Root token format**: `/`  
-      **Token format for a specific workspace**: `/{workspace_name};{owner_id}`  
-   :::column-end:::
-:::row-end:::
-
 
 
 <a id="deprecated-namespaces" /> 
