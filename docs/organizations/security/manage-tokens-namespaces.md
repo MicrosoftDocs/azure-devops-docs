@@ -97,7 +97,7 @@ az devops security permission namespace list [--local-only]
 Enter `az devops security permission namespace list` to list the namespaces defined for your organization or on-premises server.   
 
 > [!NOTE]   
-> Some namespaces listed are deprecated and should not be used. For a list of deprecated namespaces, see the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. 
+> Some namespaces listed are deprecated and should not be used. For a list of deprecated namespaces, see the [Namespace reference, Deprecated and read-only namespaces](namespace-reference.md#deprecated-namespaces). 
 
 
 > [!div class="tabbedCodeSnippets"]
