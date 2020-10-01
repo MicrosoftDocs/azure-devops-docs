@@ -57,11 +57,10 @@ If your organization is backed by Azure AD, then you can disable or delete the A
 For information on removing users from AD or Azure AD, see one of the following articles: 
 
 * [Delete users from Azure AD](/azure/active-directory/add-users-azure-active-directory#delete-a-user)
-* [Delete a User Account from Active Directory](https://technet.microsoft.com/library/cc753730.aspx)
+* [Delete a User Account from Active Directory](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))
 
 ## Related articles
 
 * [About permissions and groups](../../organizations/security/about-permissions.md)
 * [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
 * [About security and identity](about-security-identity.md)
-

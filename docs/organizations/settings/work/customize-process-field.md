@@ -351,8 +351,8 @@ Deleting a field deletes all data associated with that field, including historic
 
 If you're working with test plans or test cases, see these articles: 
 
-- [Create a test plan](../../../manual-test/getting-started/create-a-test-plan.md)  
-- [Create manual test cases](../../../manual-test/getting-started/create-test-cases.md)   
+- [Create a test plan](../../../test/create-a-test-plan.md)  
+- [Create manual test cases](../../../test/create-test-cases.md)   
 
 
 <!--- 
@@ -366,4 +366,4 @@ By adding all customizations to the same base inherited process, you simplify th
 
 Each ![locked icon](media/process/locked-icon.png) system process&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;contains 100 or more work item fields. 
 
---> 
+-->

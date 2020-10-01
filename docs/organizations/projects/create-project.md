@@ -29,7 +29,7 @@ This article describes how to use Azure DevOps to create a project and establish
 
 If you don't want to create a project in Azure DevOps or TFS, you can create [Azure DevOps Projects](/azure/devops-project/).
 
-<!---Projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). -->  
+<!---Projects differ from [software application projects or solutions](/visualstudio/ide/creating-solutions-and-projects). -->  
 
 ::: moniker range="< azure-devops"
 > [!NOTE]
@@ -56,7 +56,7 @@ If you don't want to create a project in Azure DevOps or TFS, you can create [Az
 ::: moniker range="<= tfs-2017"  
 
 - You create a project within a project collection. If you haven't created a project collection yet, do that now. For more information, see [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
-- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
+- You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 - Ask your TFS administrator about the following resources and get additional permissions as needed:
 
     - Which project collection should you connect to when you create your project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you support hundreds of projects, you should create all your projects within a single project collection. If you need to create additional collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
@@ -376,7 +376,7 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 > [!NOTE]
 > For TFS 2018 and later versions, use the web portal. Creating a project from Visual Studio/Team Explorer is not supported for TFS 2018 and later versions, including Azure DevOps Server 2019 and Azure DevOps Services.
 >
-> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](../../report/sharepoint-dashboards/about-sharepoint-integration.md) to learn about the options available to you.
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
 
 ::: moniker-end
 

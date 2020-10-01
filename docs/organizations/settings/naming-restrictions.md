@@ -1085,7 +1085,7 @@ If the build computer is firewall enabled, make sure that the program <strong>tf
 
 ### Build types
 
-Build types configure the conditions under which a single solution or a set of solutions in a project are built. To conduct a build, you must either create a new build type or use an existing [build type](../../pipelines/get-started-designer.md).
+Build types configure the conditions under which a single solution or a set of solutions in a project are built. To conduct a build, you must either create a new build type or use an existing [build type](../../pipelines/create-first-pipeline.md).
 
 Build type names  must conform to the following restrictions.  
 
@@ -1122,7 +1122,7 @@ Build type names  must conform to the following restrictions.
 
 ### Build quality 
 
-The build quality lets you attach a quality level or completion state to a completed build. Team Foundation Build also lets you create new values for the [build quality type](../../pipelines/get-started-designer.md). See [Rate the quality of a completed build](/previous-versions/ms181734(v%3dvs.140)) for a list of the default build quality values.
+The build quality lets you attach a quality level or completion state to a completed build. Team Foundation Build also lets you create new values for the [build quality type](../../pipelines/create-first-pipeline.md). See [Rate the quality of a completed build](/previous-versions/ms181734(v%3dvs.140)) for a list of the default build quality values.
 
 Build quality names must conform to the following restrictions.  
 

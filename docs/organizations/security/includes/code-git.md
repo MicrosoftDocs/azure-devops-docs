@@ -1,6 +1,6 @@
 ::: moniker range=">= tfs-2017"
 
-Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from the top-level **Git Repositories** entry. Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see [Set branch permissions](/azure/devops/repos/git/branch-permissions) and [Improve code quality with branch policies](/azure/devops/repos/git/branch-policies).
+Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry. Individual repositories inherit permissions from the top-level **Git Repositories** entry. Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see [Set branch permissions](../../../repos/git/branch-permissions.md) and [Improve code quality with branch policies](../../../repos/git/branch-policies.md).
 
 <table>
 <tr valign="bottom">
@@ -60,7 +60,7 @@ Set permissions across all Git repositories by making changes to the top-level *
 
 ::: moniker range="tfs-2015"
 
-Set permissions across all Git repositories by making changes to the top-level <strong>Git repositories</strong> entry. Individual repositories inherit permissions from the top-level <strong>Git Repositories</strong> entry. Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see <a href="/azure/devops/repos/git/branch-permissions" data-raw-source="[Set branch permissions](/azure/devops/repos/git/branch-permissions)">Set branch permissions</a> and <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[Improve code quality with branch policies](/azure/devops/repos/git/branch-policies)">Improve code quality with branch policies</a>.
+Set permissions across all Git repositories by making changes to the top-level <strong>Git repositories</strong> entry. Individual repositories inherit permissions from the top-level <strong>Git Repositories</strong> entry. Branches inherit a subset of permissions from assignments made at the repository level. For branch permissions and policies, see <a href="/azure/devops/repos/git/branch-permissions" data-raw-source="[Set branch permissions](../../../repos/git/branch-permissions.md)">Set branch permissions</a> and <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[Improve code quality with branch policies](../../../repos/git/branch-policies.md)">Improve code quality with branch policies</a>.
 
 By default, the project-level Readers groups have read-only permissions.
 
@@ -73,14 +73,14 @@ By default, the project-level Readers groups have read-only permissions.
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left"><strong>Branch Creation</strong>: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[branch policies](/azure/devops/repos/git/branch-policies)">branch policies</a>. At the branch level, can push their changes to the branch and lock the branch.
+<td align="left"><strong>Branch Creation</strong>: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[branch policies](../../../repos/git/branch-policies.md)">branch policies</a>. At the branch level, can push their changes to the branch and lock the branch.
 </td>
 <td>✔️</td>
 <td>✔️</td>
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><strong>Contribute</strong>: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[branch policies](/azure/devops/repos/git/branch-policies)">branch policies</a>. At the branch level, can push their changes to the branch and lock the branch.
+<td align="left"><strong>Contribute</strong>: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[branch policies](../../../repos/git/branch-policies.md)">branch policies</a>. At the branch level, can push their changes to the branch and lock the branch.
 </td>
 <td>✔️</td>
 <td>✔️</td>

@@ -24,13 +24,13 @@ Sign in to Azure DevOps Services with the same username and password that you us
 Enforce policies for accessing your team's critical resources and key assets.
 
 > [!NOTE]
-> To use existing on-premises identities with Azure DevOps, you can integrate directories with Azure AD by using [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/). To switch your organization to another directory, learn [how to change your directory in Azure AD](change-azure-ad-connection.md).
+> To use existing on-premises identities with Azure DevOps, you can integrate directories with Azure AD by using [Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity). To switch your organization to another directory, learn [how to change your directory in Azure AD](change-azure-ad-connection.md).
 
 ## How Azure AD controls access to Azure DevOps
 
 Your organization authenticates users through your organization's directory. Only users who are members or guests in that directory get access to your organization.
 Disabled or removed users from your directory have no access to your organization by any mechanism. Mechanisms include PATs, SSH, or any other alternate credentials.
-Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) manage users in your directory, so they control who gets access to your organization.
+Only specific [Azure AD administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) manage users in your directory, so they control who gets access to your organization.
 
 Without Azure AD, you're solely responsible for controlling organization access. All users must sign in with Microsoft accounts.
 
@@ -40,13 +40,13 @@ Without Azure AD, you're solely responsible for controlling organization access.
 
 ### Q: What do I need to set up an existing Azure DevOps Services instance with Azure AD?
 
-A: Ensure you meet the prerequisites in the following article, [Connect your organization to Azure AD](https://docs.microsoft.com/azure/devops/organizations/accounts/connect-organization-to-azure-ad?view=azure-devops).
+A: Ensure you meet the prerequisites in the following article, [Connect your organization to Azure AD](./connect-organization-to-azure-ad.md?view=azure-devops).
 
 ### Q: What happens to current users?
 
 A: Your work in Azure DevOps Services is associated with your credentials for Azure AD.
 After your organization is connected to your directory, users continue working seamlessly if their credential addresses appear in the connected directory.
-If users' addresses don't appear, you must [add those users to your directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory). Your organization might have policies about adding users to the directory, so find out more first.
+If users' addresses don't appear, you must [add those users to your directory](/azure/active-directory/fundamentals/add-users-azure-active-directory). Your organization might have policies about adding users to the directory, so find out more first.
 
 ### Q: What if we can't use the same sign-in addresses?
 
@@ -62,9 +62,8 @@ A: [Restore the user](/azure/active-directory/active-directory-users-restore), r
 
 ## Related articles
 
-* [Add or delete users using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
-* [Connect your organization to Azure AD](connect-organization-to-aad.md)
-* [Disconnect your organization from Azure AD](disconnect-organization-from-aad.md)
+* [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
+* [Connect your organization to Azure AD](./connect-organization-to-azure-ad.md)
+* [Disconnect your organization from Azure AD](./disconnect-organization-from-azure-ad.md)
 * [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-

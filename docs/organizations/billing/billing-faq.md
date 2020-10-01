@@ -114,7 +114,7 @@ A: The most common reason customers have received extra free user license grants
 
 ### Q: How do I pay for Azure DevOps support?
  
-Keep in mind that if you're already using Azure, chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/), so you can [create a support request](https://docs.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request). Also, you don't need to pay for [billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). You can report a service outage from our [service status page](https://status.dev.azure.com/). 
+Keep in mind that if you're already using Azure, chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/), so you can [create a support request](/azure/azure-portal/supportability/how-to-create-azure-support-request). Also, you don't need to pay for [billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). You can report a service outage from our [service status page](https://status.dev.azure.com/). 
  
 A: If you need technical support with Azure DevOps and don't have an [Azure support plan](https://azure.microsoft.com/support/plans/) already, complete the following steps:
  
@@ -127,7 +127,7 @@ A: If you need technical support with Azure DevOps and don't have an [Azure supp
   - All support plans let you create unlimited support requests for a fixed monthly price.
   - All paid plans, including the Developer plan, offer technical support for Azure DevOps.
 3. Submit a support ticket.
-  - Now you can [open a request via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) or [learn how to create a support request](https://docs.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request). 
+  - Now you can [open a request via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) or [learn how to create a support request](/azure/azure-portal/supportability/how-to-create-azure-support-request). 
 
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
@@ -175,7 +175,7 @@ A: No, but this feature is in our backlog to add in the future.
 
 ## Understanding your bill
 
-Azure DevOps charges appear with other Azure charges on your [Azure bill](https://docs.microsoft.com/azure/cost-management-billing/understand/review-individual-bill). This section helps you with understanding how to drill into your Azure DevOps specific charges.
+Azure DevOps charges appear with other Azure charges on your [Azure bill](/azure/cost-management-billing/understand/review-individual-bill). This section helps you with understanding how to drill into your Azure DevOps specific charges.
 
 Complete the following step to view by cost analysis.
 
@@ -252,7 +252,7 @@ A: If you've [changed your organizations location](../accounts/change-organizati
 A: If you've [renamed your organization](../accounts/rename-organization.md) after setting up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, first [remove billing](change-azure-subscription.md#remove-your-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again. 
 
 ### Q: Does Azure DevOps support billing tags? 
-A: Yes, you can apply [billing tags](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources#tags-and-billing) to the organization resource in the Azure portal and they're included in billing charges associated with your organization.  
+A: Yes, you can apply [billing tags](/azure/azure-resource-manager/management/tag-resources#tags-and-billing) to the organization resource in the Azure portal and they're included in billing charges associated with your organization.  
 
 1. Go to https://portal.azure.com/#blade/HubsExtension/BrowseAll.
 2. Select the organization resource.

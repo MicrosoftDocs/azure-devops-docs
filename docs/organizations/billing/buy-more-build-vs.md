@@ -87,9 +87,9 @@ The *free tier* is one parallel job. You also get one free parallel job for each
 4. Enter a lesser or greater quantity of Microsoft-hosted or self-hosted jobs, and then select **Save**.
 
   > [!IMPORTANT]
-  > Hosted XAML build controller isn't supported. If you have an organization where you need to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx),
-  > set up an [on-premises build server](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx)
-  > and switch to an [on-premises build controller](https://msdn.microsoft.com/library/ee330987%28v=vs.120%29.aspx). For more information about the hosted XAML model, see [Get started with XAML](../../pipelines/get-started-yaml.md).
+  > Hosted XAML build controller isn't supported. If you have an organization where you need to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)),
+  > set up an [on-premises build server](/previous-versions/visualstudio/visual-studio-2013/ms252495(v=vs.120))
+  > and switch to an [on-premises build controller](/previous-versions/visualstudio/visual-studio-2013/ee330987(v=vs.120)). For more information about the hosted XAML model, see [Get started with XAML](../../pipelines/create-first-pipeline.md).
 
 ## Next steps
 
@@ -102,4 +102,3 @@ The *free tier* is one parallel job. You also get one free parallel job for each
 - [Buy cloud-based load testing](buy-load-testing-vs.md)
 - [Buy access to TFS test hub](buy-access-tfs-test-hub.md)
 - [Add user for billing management](add-backup-billing-managers.md)
-

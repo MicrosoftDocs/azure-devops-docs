@@ -1,5 +1,3 @@
-
-
 | Permission | Reader | Contributor | Owner |
 | ---------- | ------ | ----------- | ----- |
 | List and restore/install packages             | ✔️ | ✔️ | ✔️ |
@@ -7,4 +5,4 @@
 | Unlist/deprecate packages                     |          | ✔️ | ✔️ |
 | Delete/unpublish package                      |          |          | ✔️ |
 | Edit feed permissions                         |          |          | ✔️ | 
-| [Rename and delete feed](/azure/devops/artifacts/feeds/edit-feed)        |          |          | ✔️ |
+| [Rename and delete feed](../../../artifacts/index.yml)        |          |          | ✔️ |

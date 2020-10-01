@@ -3,7 +3,7 @@
 - name: Quickstarts
   items:
   - name: Build OSS repositories 
-    href: /azure/devops/pipelines/repos/index?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+    href: ../../pipelines/repos/index.md?bc=%252fazure%252fdevops%252fproject%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fproject%252ftoc.json
   - name: Create a public project
     href: create-public-project.md
   - name: Invite users to contribute 
@@ -50,5 +50,3 @@
     href: ../../extend/develop/public-project.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
   - name: Data protection overview
     href: ../../organizations/security/data-protection.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
-
-

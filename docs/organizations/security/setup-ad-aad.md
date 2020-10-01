@@ -37,7 +37,7 @@ Use this article to access articles that show you how to:
 ::: moniker-end
 
 > [!NOTE]
-> Without Azure AD, all Azure DevOps users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, you need to set up an [Azure subscription in order to manage billing](../../billing/set-up-billing-for-your-organization-vs.md).
+> Without Azure AD, all Azure DevOps users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, you need to set up an [Azure subscription in order to manage billing](../billing/set-up-billing-for-your-organization-vs.md).
 
 ::: moniker range="azure-devops"
 
@@ -47,7 +47,7 @@ Use this article to access articles that show you how to:
 
 ## Manage organizational access with Azure AD
 
-* [Add or delete users using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
+* [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
 * [Connect Azure DevOps organization to Azure AD](../../organizations/accounts/connect-organization-to-azure-ad.md)
 * [Disconnect Azure DevOps organization from Azure AD](../../organizations/accounts/disconnect-organization-from-azure-ad.md)
 * [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) 
@@ -74,8 +74,7 @@ Use these resources to learn about installing Active Directory. Typically, you s
 ## Related articles
 
 * [About security and identity](about-security-identity.md)
-* [How billing works](../../billing/overview.md)
-* [Set up billing to pay for users, pipelines, and cloud-based load testing in Azure DevOps](../../billing/set-up-billing-for-your-organization-vs.md) 
+* [How billing works](../billing/overview.md)
+* [Set up billing to pay for users, pipelines, and cloud-based load testing in Azure DevOps](../billing/set-up-billing-for-your-organization-vs.md) 
 * [What is Azure Active Directory?](/azure/active-directory/active-directory-whatis)
 * [Get started with Azure AD](/azure/active-directory/get-started-azure-ad)
- 
