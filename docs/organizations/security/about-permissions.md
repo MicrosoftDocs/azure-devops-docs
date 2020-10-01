@@ -190,7 +190,7 @@ You use the [web portal administration context](../../organizations/security/add
 |------------------|:---------------------------:|:--------------:|:---------------------:|  
 | [Add users to an organization](../accounts/add-organization-users.md)       |   ✔️  |   ✔️  |   |
 | [Add and manage security groups](add-manage-security-groups.md)             |   ✔️  |   ✔️  |   |
-| [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md)               |                                      |   ✔️  |                                                                           |
+| [Manage permissions](manage-tokens-namespaces.md)               |    ✔️    |   ✔️  |        |
 | [Organization-level](permissions.md#collection)                                     |   ✔️  |                                      |                                                                           |
 | [Project and test level](permissions.md#project_test)                               |   ✔️  |                                      |                                                                           |
 | [Build pipelines](permissions.md#build)     |   ✔️  |            |                     |
@@ -211,6 +211,7 @@ You use the [web portal administration context](../../organizations/security/add
 |-------------------|:-------------------------:|:------------------:|:------------------------------------------------------------------------------:|:--------------------------------------------------------------------:|-------------------------------------------------|
 | [Add users to a server instance](../accounts/add-organization-users.md)       |     |   ✔️  |   |  ✔️ |  | 
 | [Add and manage security groups](add-manage-security-groups.md)             |   ✔️  |   ✔️  |   |  ✔️ |  | 
+| [Manage permissions](manage-tokens-namespaces.md)       |   ✔️  |   ✔️  |   |  ✔️ |  | 
 | [Server-level](permissions.md#server)         |                   |     |   ✔️           | ✔️ |                         |
 | [Collection-level](permissions.md#collection) |  ✔️  |           |     |   ✔️   |     |
 | [Project and test level](permissions.md#project_test)                               |   ✔️  |              |   | ✔️   |       |

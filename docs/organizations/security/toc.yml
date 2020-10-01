@@ -10,8 +10,6 @@
     href: about-security-roles.md 
   - name: Security key concepts
     href: security-glossary.md 
-  - name: Sign-in to a project
-    href: ../projects/connect-to-projects.md
 - name: Authentication
   items:
   - name: Authentication guidance 
@@ -139,5 +137,4 @@
     href: /azure/devops/server/admin/websitesettings?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: TFSSecurity command (on-premises)
     href: /azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Get started as a Stakeholder
-    href: get-started-stakeholder.md 
+
