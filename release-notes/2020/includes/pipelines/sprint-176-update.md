@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.topic: include
 ---
 
-### Configure draft PR validation for GitHub repos
+### Configure draft PR validation for GitHub repositories
 
 Customers have varied processes for their pull requests. In some cases, they want to run validation builds on their _draft PRs_. In others, they do not want draft PRs to consume and waste their parallel jobs.
 
