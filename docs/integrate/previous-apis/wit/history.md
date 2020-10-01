@@ -33,7 +33,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/history?api-ve
 | Parameter | Type    | Default | Notes	
 |:----------|:--------|:--------|:--------------------------------------
 | URL
-| instance  | string  |         | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](../../get-started/rest/basics.md) ({server:port}).
+| instance  | string  |         | [VS Team Services account](/rest/api/azure/devops/) ({account}.visualstudio.com) or [TFS server](/rest/api/azure/devops/) ({server:port}).
 | id        | int     |         | ID of the work item.
 | Query
 | api-version| string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -162,7 +162,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/history/{revis
 | Parameter | Type    | Notes	
 |:----------|:--------|:--------------------------------------
 | URL
-| instance  | string  | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](../../get-started/rest/basics.md) ({server:port}).
+| instance  | string  | [VS Team Services account](/rest/api/azure/devops/) ({account}.visualstudio.com) or [TFS server](/rest/api/azure/devops/) ({server:port}).
 | id        | int     | ID of the work item.
 | revision  | int     | Revision of the work item to view discussion history.
 | Query
@@ -189,5 +189,3 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/history/2?api-
   "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/history/2"
 }
 ```
-
-

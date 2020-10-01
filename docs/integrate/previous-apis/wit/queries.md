@@ -4907,7 +4907,7 @@ Content-type: Application/json
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | name      | string  | Name of the query.
-| wiql      | string  | [Query string](https://msdn.microsoft.com/library/bb130306.aspx).
+| wiql      | string  | [Query string](/previous-versions/visualstudio/visual-studio-2013/bb130306(v=vs.120)).
 
 #### Sample request
 
@@ -5114,7 +5114,7 @@ Content-type: Application/json
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
-| wiql      | string  | New [query string](https://msdn.microsoft.com/library/bb130306.aspx).
+| wiql      | string  | New [query string](/previous-versions/visualstudio/visual-studio-2013/bb130306(v=vs.120)).
 
 #### Sample request
 

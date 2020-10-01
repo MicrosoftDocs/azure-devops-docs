@@ -97,7 +97,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems?api-version={versio
 | api-version       | string                                                            |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | ids               | string                                                            |         | A comma-separated list of up to 200 IDs of the work items to get.
 | fields            | string                                                            |         | A comma-separated list of up to 100 fields to get with each work item.<br/>If not specified, all fields with values are returned. Calculated fields such as Attached File Count must be specifically queried for using this parameter.
-| asOf              | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Gets the work items as they existed at this time.
+| asOf              | [DateTime](/dotnet/standard/base-types/standard-date-and-time-format-strings) |         | Gets the work items as they existed at this time.
 | $expand           | enum { all, relations, none }                                     | none    | Gets work item relationships (work item links, hyperlinks, file attachments, etc.).
 | ErrorPolicy       | string { throw, omit }                                            | throw   | Determines if the call will throw an error when encountering a work item (default behavior) that doesn't exist or simply omit it.
 
@@ -2330,4 +2330,3 @@ DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workit
 #### Sample code
 
 * [C# (DeleteWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L732)
-

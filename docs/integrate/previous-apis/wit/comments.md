@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/comments/{revi
 | Parameter | Type    | Default | Notes	
 |:----------|:--------|:--------|:--------------------------------------
 | URL
-| instance  | string  |         | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](../../get-started/rest/basics.md) ({server:port}).
+| instance  | string  |         | [VS Team Services account](/rest/api/azure/devops/) ({account}.visualstudio.com) or [TFS server](/rest/api/azure/devops/) ({server:port}).
 | id        | int     |         | ID of the work item.
 | revision  | int     |         | Revision number of the comment.
 | Query
@@ -71,7 +71,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/comments?api-v
 | Parameter | Type    | Default | Notes	
 |:----------|:--------|:--------|:------------------------------
 | URL
-| instance  | string  |         | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](../../get-started/rest/basics.md) ({server:port}).
+| instance  | string  |         | [VS Team Services account](/rest/api/azure/devops/) ({account}.visualstudio.com) or [TFS server](/rest/api/azure/devops/) ({server:port}).
 | id        | int     |         | ID of the work item.
 | Query
 | api-version   | string             |       | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -123,4 +123,3 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/comments?fromR
 #### Sample code
 
 * [C# (GetPageOfWorkItemComments method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/CommentsSample.cs#L30)
-

@@ -37,8 +37,8 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/changesets?api-version={vers
 | searchCriteria.author        | string                  |         | Person who checked in the changeset.<br/>Example: `searchCriteria.author=johnsmith@live.com`.
 | searchCriteria.fromId        | int                     |         | ID of the oldest changeset to return.
 | searchCriteria.toId          | int                     |         | ID of the newest changeset to return.
-| searchCriteria.fromDate      | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Date and time of the earliest changeset to return.
-| searchCriteria.toDate        | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Date and time of the latest changesets to return.
+| searchCriteria.fromDate      | [DateTime](/dotnet/standard/base-types/standard-date-and-time-format-strings) |         | Date and time of the earliest changeset to return.
+| searchCriteria.toDate        | [DateTime](/dotnet/standard/base-types/standard-date-and-time-format-strings) |         | Date and time of the latest changesets to return.
 | $top                         | int                     | 100     | The maximum number of results to return.
 | $skip                        | int                     | 0       | Number of results to skip.
 | $orderby                     | "id asc" or "id desc"   | id desc | Results are sorted by ID in descending order by default. Use `id asc` to sort by ID in ascending order.
@@ -2352,5 +2352,3 @@ GET https://mytfsserver/DefaultCollection/_apis/tfvc/changesets/16/workitems?api
   "value": []
 }
 ```
-
-
