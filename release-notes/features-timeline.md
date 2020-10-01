@@ -92,6 +92,14 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
+    <td rowspan="5"><a href="2020/sprint-176-update.md" data-raw-source="[01 October 2020](2020/sprint-176-update.md)">01 October 2020</a></td>
+    <td>Customize work item state when pull request is merged</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Parent field on the task board</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Org-level setting for default branch</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Add a new auth scope for contributing PR comments</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Configure draft PR validation for GitHub repositories</td><td>Pipelines</td><td>Future</td></tr>
+    <tr>
     <td rowspan="8"><a href="2020/sprint-175-update.md" data-raw-source="[10 September 2020](2020/sprint-175-update.md)">10 September 2020</a></td>
     <td>Allow stakeholders to move work items across board columns</td><td>Boards</td><td>Future</td>
     </tr>
