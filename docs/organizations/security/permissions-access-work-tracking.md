@@ -230,7 +230,7 @@ The following table summarizes a subset of the default permissions assigned to t
 
 <tr>
 <td align="left">
-<a href="../../report/dashboards.md" data-raw-source="[Add and edit dashboards](../../report/dashboards.md)">Add and edit dashboards</a> 
+<a href="/azure/devops/report/dashboards/dashboards" data-raw-source="[Add and edit dashboards](../../report/dashboards/dashboards.md)">Add and edit dashboards</a> 
 </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -289,5 +289,4 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 - [Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 
 - [Get started as a Stakeholder](get-started-stakeholder.md)  
 - [Add another team](../../organizations/settings/add-teams.md)  
-- [Manage teams and configure team tools](../settings/manage-teams.md)   
-
+- [Manage teams and configure team tools](../settings/manage-teams.md)

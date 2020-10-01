@@ -18,4 +18,4 @@ To enable the customer to purchase App Center resources by using a CSP-based Azu
 
 * The customer has organization admin rights in App Center, which grants them access to the Billing tab.
 
-* The customer has owner role permissions to the CSP-based Azure subscription in order to make purchases. Learn more about [how to add users with co-owner permissions](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator).
+* The customer has owner role permissions to the CSP-based Azure subscription in order to make purchases. Learn more about [how to add users with co-owner permissions](/azure/billing/billing-add-change-azure-subscription-administrator).

@@ -535,7 +535,7 @@ A: You can find detailed information about individual permissions and their rela
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Manage projects](../projects/index.md)
+> [Manage projects](../projects/about-projects.md)
 
 ## Related articles
 

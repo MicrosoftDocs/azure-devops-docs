@@ -165,7 +165,7 @@ When you add a project, look at using the following elements to structure it to 
 - [Add a team](../../organizations/settings/add-teams.md) for each product team that develops a set of features for a product. Note that each team you create automatically creates a security group for that team which you can use to manage permissions for a team. See also, [Portfolio management](../../boards/plans/portfolio-management.md).
 - [Grant or restrict access to select features and functions](../security/restrict-access.md) using custom security groups.
 - [Create query folders](../../boards/queries/organize-queries.md) to organize queries for teams or product areas into folders.
-- [Define or modify notifications](../../notifications/index.md) set at the project level.
+- [Define or modify notifications](../../notifications/about-notifications.md) set at the project level.
 
 ## Customizing and configuring projects
 
@@ -217,9 +217,9 @@ In addition to connecting through a web browser, you can connect to a project fr
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-- [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in)
+- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
 - [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
+- [Azure Test Plans](/previous-versions/jj635157(v=vs.140)) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
 ::: moniker-end
@@ -229,11 +229,11 @@ In addition to connecting through a web browser, you can connect to a project fr
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-- [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in)
+- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
 - [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Office Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
 - [PowerPoint Storyboarding](../../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
-- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
+- [Azure Test Plans](/previous-versions/jj635157(v=vs.140)) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
 ::: moniker-end

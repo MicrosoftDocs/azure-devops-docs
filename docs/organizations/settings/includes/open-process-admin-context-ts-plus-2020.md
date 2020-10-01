@@ -26,7 +26,7 @@ You create, manage, and make customizations to processes from **Organization set
 	> ![Choose Process.](/azure/devops/organizations/settings/work/media/process/open-process-page-s150.png) 
 
 	> [!IMPORTANT]  
-	> If you don't see **Process**, then you're working from TFS-2018 or earlier version. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](/azure/devops/reference/customize-work).
+	> If you don't see **Process**, then you're working from TFS-2018 or earlier version. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../../reference/customize-work.md).
 
 
 ::: moniker-end
@@ -47,4 +47,3 @@ You create, manage, and make customizations to processes from **Collection Setti
 	> ![Choose Process.](/azure/devops/organizations/settings/work/media/process/open-process-2020.png) 
 
 ::: moniker-end
- 

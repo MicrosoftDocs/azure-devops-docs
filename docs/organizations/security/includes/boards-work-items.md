@@ -71,7 +71,7 @@ ms.topic: include
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><a href="/azure/devops/project/feedback/give-feedback" data-raw-source="[Provide feedback](/azure/devops/project/feedback/give-feedback)">Provide feedback</a> (through the Microsoft Feedback client)
+<td align="left"><a href="/azure/devops/project/feedback/give-feedback" data-raw-source="[Provide feedback](../../../project/feedback/give-feedback.md)">Provide feedback</a> (through the Microsoft Feedback client)
 </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -79,7 +79,7 @@ ms.topic: include
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><a href="/azure/devops/project/feedback/get-feedback" data-raw-source="[Request feedback](/azure/devops/project/feedback/get-feedback)">Request feedback</a> 
+<td align="left"><a href="/azure/devops/project/feedback/get-feedback" data-raw-source="[Request feedback](../../../project/feedback/get-feedback.md)">Request feedback</a> 
 </td>
 <td> </td>
 <td> </td>
@@ -94,7 +94,7 @@ ms.topic: include
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 > [!NOTE]   
-> You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you can use the [Analytics Service](/azure/devops/report/powerbi/what-is-analytics) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](/azure/devops/report/admin/disable-data-warehouse).
+> You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you can use the [Analytics Service](../../../report/powerbi/what-is-analytics.md) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](../../../report/admin/disable-data-warehouse.md).
 
 ::: moniker-end    
 
@@ -153,7 +153,7 @@ ms.topic: include
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><a href="/azure/devops/project/feedback/give-feedback" data-raw-source="[Provide feedback](/azure/devops/project/feedback/give-feedback)">Provide feedback</a> (through the Microsoft Feedback client)
+<td align="left"><a href="/azure/devops/project/feedback/give-feedback" data-raw-source="[Provide feedback](../../../project/feedback/give-feedback.md)">Provide feedback</a> (through the Microsoft Feedback client)
 </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -161,7 +161,7 @@ ms.topic: include
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><a href="/azure/devops/project/feedback/get-feedback" data-raw-source="[Request feedback](/azure/devops/project/feedback/get-feedback)">Request feedback</a> 
+<td align="left"><a href="/azure/devops/project/feedback/get-feedback" data-raw-source="[Request feedback](../../../project/feedback/get-feedback.md)">Request feedback</a> 
 </td>
 <td> </td>
 <td> </td>
@@ -220,7 +220,7 @@ ms.topic: include
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><a href="/azure/devops/project/feedback/give-feedback" data-raw-source="[Provide feedback](/azure/devops/project/feedback/give-feedback)">Provide feedback</a> (through the Microsoft Feedback client)
+<td align="left"><a href="/azure/devops/project/feedback/give-feedback" data-raw-source="[Provide feedback](../../../project/feedback/give-feedback.md)">Provide feedback</a> (through the Microsoft Feedback client)
 </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -228,7 +228,7 @@ ms.topic: include
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><a href="/azure/devops/project/feedback/get-feedback" data-raw-source="[Request feedback](/azure/devops/project/feedback/get-feedback)">Request feedback</a> 
+<td align="left"><a href="/azure/devops/project/feedback/get-feedback" data-raw-source="[Request feedback](../../../project/feedback/get-feedback.md)">Request feedback</a> 
 </td>
 <td> </td>
 <td> </td>
@@ -279,7 +279,7 @@ ms.topic: include
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><a href="/azure/devops/project/feedback/give-feedback" data-raw-source="[Provide feedback](/azure/devops/project/feedback/give-feedback)">Provide feedback</a> (through the Microsoft Feedback client)
+<td align="left"><a href="/azure/devops/project/feedback/give-feedback" data-raw-source="[Provide feedback](../../../project/feedback/give-feedback.md)">Provide feedback</a> (through the Microsoft Feedback client)
 </td>
 <td>✔️</td>
 <td>✔️</td>
@@ -287,7 +287,7 @@ ms.topic: include
 <td>✔️</td>
 </tr>
 <tr>
-<td align="left"><a href="/azure/devops/project/feedback/get-feedback" data-raw-source="[Request feedback](/azure/devops/project/feedback/get-feedback)">Request feedback</a> 
+<td align="left"><a href="/azure/devops/project/feedback/get-feedback" data-raw-source="[Request feedback](../../../project/feedback/get-feedback.md)">Request feedback</a> 
 </td>
 <td> </td>
 <td> </td>
@@ -297,7 +297,4 @@ ms.topic: include
 </tbody>
 </table>
 
-::: moniker-end    
-
-
-
+::: moniker-end
