@@ -62,5 +62,5 @@ If you see that hours are counted twice in reports that contain task hours, you 
 10. Verify that the changes have been picked up by viewing the Progress dashboard or other work report.  
   
 ## Related notes 
- [Add or change Project-to-TFS field mapping](../../reference/xml/add-or-change-how-project-fields-map-to-tfs-fields.md)   
+ [Add or change Project-to-TFS field mapping](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file)   
  [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
