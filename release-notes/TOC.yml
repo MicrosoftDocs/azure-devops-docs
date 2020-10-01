@@ -6,6 +6,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: October 01
+          href: 2020/sprint-176-update.md
         - name: September 10
           href: 2020/sprint-175-update.md
         - name: August 24
@@ -364,6 +366,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: October 01
+          href: 2020/boards/sprint-176-update.md
         - name: September 10
           href: 2020/boards/sprint-175-update.md
         - name: August 24
@@ -413,6 +417,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: October
+          href: 2020/repos/sprint-173-update.md      
         - name: August 03
           href: 2020/Repos/sprint-173-update.md
         - name: May 4
@@ -448,7 +454,7 @@
           href: 2019/repos/sprint-152-update.md
         - name: April 30
           href: 2019/repos/sprint-151-update.md
-        - name: April 8
+        - name: April 8 
           href: 2019/repos/sprint-150-update.md
         - name: February 4
           href: 2019/repos/sprint-147-update.md
@@ -458,6 +464,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: October 01
+          href: 2020/pipelines/sprint-176-update.md
         - name: September 10
           href: 2020/pipelines/sprint-175-update.md
         - name: August 24
