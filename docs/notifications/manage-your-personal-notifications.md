@@ -279,7 +279,7 @@ To manage your notification settings, select the Notifications option under the 
 	
 ![Access personal notifications settings via the profile menu](../project/wiki/media/personal-profile-menu.png)
 
-Learn more about [team subscriptions](manage-team-notifications.md).
+Learn more about [team subscriptions](./manage-team-group-notifications.md).
 
 ![Personal notification settings](../project/wiki/media/personal-notifications.png)
 
