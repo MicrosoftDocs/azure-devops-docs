@@ -9,7 +9,7 @@ ms.custom: has-adal-ref
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+ms.date: 09/29/2020
 ---
 
 # Security key concepts
@@ -131,6 +131,11 @@ A security model that limits actions based on membership within a role. To learn
 ## Service account
 
 An account used to monitor or manage select services, such as build or test services.
+
+## Service principal
+
+A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. When an application is given permission to access resources in a tenant (upon registration or consent), a service principal object is created. To learn more, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
+
 
 ## Secure Sockets Layer (SSL)
 
