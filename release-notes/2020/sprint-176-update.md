@@ -4,12 +4,12 @@ author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
 ms.date: 10/01/2020
-description: As an addition to the default repo branch setting, we have now added a default branch name for the org-level so that projects default to the organization setting when the branch name isn't specified.
+description: As an addition to the default repository branch setting, we have now added a default branch name for the org-level so that projects default to the organization setting when the branch name isn't specified.
 ---
 
 # Org-level setting for default branch
 
-As an addition to the [default repo branch setting](https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-173-update#default-branch-name-preference), we have now added a default branch name for the org-level so that projects default to the organization setting when the branch name isn't specified.
+As an addition to the [default repository branch setting](https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-173-update#default-branch-name-preference), we have now added a default branch name for the org-level so that projects default to the organization setting when the branch name isn't specified.
 
 Check out the [Features](#features) list below for details.
 

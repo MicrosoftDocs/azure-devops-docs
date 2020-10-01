@@ -366,6 +366,8 @@
       items:
         - name: October 01
           href: 2020/boards/sprint-176-update.md
+        - name: September 10
+          href: 2020/boards/sprint-175-update.md
         - name: August 24
           href: 2020/boards/sprint-174-update.md
         - name: August 03
@@ -450,7 +452,7 @@
           href: 2019/repos/sprint-152-update.md
         - name: April 30
           href: 2019/repos/sprint-151-update.md
-        - name: April 8
+        - name: April 8 
           href: 2019/repos/sprint-150-update.md
         - name: February 4
           href: 2019/repos/sprint-147-update.md
