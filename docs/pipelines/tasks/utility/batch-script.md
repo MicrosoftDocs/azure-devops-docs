@@ -2,10 +2,7 @@
 title: Batch Script task
 description: Execute .bat or .cmd scripts when building your code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
@@ -17,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run a Windows .bat or .cmd script.
+Use this task to run a Windows .bat or .cmd script.
 Optionally, allow it to permanently modify environment variables.
 
 > [!NOTE]
@@ -71,7 +68,7 @@ On the Build tab of a build pipeline, add this task:
    <tr>
       <td>
 
-![](media/batch-script.png)
+:::image type="icon" source="media/batch-script.png" border="false":::
 
 <br/>**Utility: Batch Script**</td>
 
@@ -88,7 +85,7 @@ On the Build tab of a build pipeline, add this task:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

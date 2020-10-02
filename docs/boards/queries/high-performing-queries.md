@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Guidelines for creating high-performing work item queries in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -17,7 +15,7 @@ ms.date: 09/26/2019
 
 # Guidance to create high-performing queries  
  
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 While you can easily create a work item query, creating a high performing query requires a deeper understanding. Query performance can not only impact your individual productivity, but also dashboard performance and resource rate limits.  
 

@@ -1,11 +1,8 @@
 ---
 title: Build, test, and deploy Xcode apps
 description: Automatically build Xcode projects with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: e9dd0efb-8932-4a77-93be-28e209d486ca
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 02/14/2019

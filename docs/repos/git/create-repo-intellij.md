@@ -3,11 +3,7 @@ title: Azure Repos Plugin for IntelliJ, IDEA, Android Studio
 titleSuffix: Azure Repos
 description: Intro to the IntelliJ plugin available for Azure Repos.
 ms.assetid:
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Azure Repos Plugin for IntelliJ IDEA and Android Studio
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
 
 IntelliJ IDEA is an IDE produced by JetBrains. You can find out more about it at [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/).
 The Azure Repos Plugin for IntelliJ allows you to connect to your Git repositories on Azure DevOps Services and Team Foundation Server (TFS) in a seamless and intuitive way.
@@ -114,7 +110,7 @@ Now that we've got a Git repo with some sample code, let's take a look at how we
    Choose the correct repo, **DeepSpace**, and click the **Clone** button.
    (You may also want to choose where on your hard drive the repo is cloned to by changing the Parent Directory.)
 
-   ![Clone](media/create-repo-intellij/clone.png)
+   ![Screenshot that shows cloning a repo.](media/create-repo-intellij/clone.png)
 
 4. After the clone finishes, IntelliJ will ask you if you want to open the project.
    Click **Yes** and you should end up with the **DeepSpace** project opened in IntelliJ IDEA.

@@ -1,34 +1,25 @@
 1. Sign in to your organization 
 (```https:dev.azure.com/{organization}```).
 
-0.	From your home page, open your profile. 
-Go to your security details.
+2. From your home page, open the user settings icon, and then select **Profile**.
 
-	<img alt="Go to Azure DevOps Services home, open your profile, go to Security" src="/azure/devops/extend/media-procedures/create-pat/my-profile.png" style="border: 1px solid #CCCCCC" />
+   :::image type="content" source="../../media/user-profile-select-profile.png" alt-text="Select Profile after selecting the user settings icon":::
  
-1. Under **Security**, go to **Personal access tokens**, 
-then choose **Add**.
+3. Under **Security**, select **Personal access tokens**, and then select **New Token**.
 
-   <img alt="Add personal access token" src="/azure/devops/extend/media-procedures/create-pat/add-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   :::image type="content" source="../../media/create-new-personal-access-token.png" alt-text="Create your new personal access token":::
+
+4. Complete the form:
+   - Name your token
+   - Select **All accessible organizations**, which is the only value that works when publishing via CLI. If you select only one organization, it results in an error, even if the PAT is valid 
+   - Select an expiration time frame for your token. This is required because the Visual Studio Marketplace publishing APIs work outside of the context of an organization
+   - Set the scope of access associated with this token. Be sure to select the **Marketplace (publish)** scope. This scope limits the token to only being able 
+   to publish extensions to the Marketplace.
+   - Select **Create**
  
-1. Add a description for your token, 
-then select an expiration timeframe for your token.
-
-1. In the **Accounts** list, 
-select **All accessible accounts**. 
-This is required because the Visual Studio Marketplace 
-publishing APIs work outside the context of an organization.
-
-1. Select the **Marketplace (publish)** scope. 
-This limits the token to only being able 
-to publish extensions to the Marketplace.
-
-   <img alt="Marketplace scope" src="/azure/devops/extend/media-procedures/create-pat/marketplace-scope.png" style="border: 1px solid #CCCCCC" />
-       
-1. Finish creating your token. 
+   :::image type="content" source="../../media/create-pat-final-steps.png" alt-text="..":::
     
-2. Copy your generated personal access token. 
-Make sure to keep it secret.
+5. Copy your generated personal access token. Make sure to keep it secret.
 
-   <img alt="Copy personal access token" src="/azure/devops/extend/media-procedures/create-pat/copy-pat.png" style="border: 1px solid #CCCCCC" />
+   :::image type="content" source="../../media/copy-new-token-to-clipboard.png" alt-text="Copy your token and keep it a secret":::
    

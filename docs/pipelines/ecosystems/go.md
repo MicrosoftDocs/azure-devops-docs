@@ -1,13 +1,8 @@
 ---
 title: Build and test Go projects 
 description: Build and test Go projects with Azure Pipelines & Azure DevOps
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.reviewer: azooinmyluggage
 ms.custom: seodec18
 ms.date: 01/28/2020
@@ -178,7 +173,10 @@ Use `go get` to download the source code for a Go project or to install a tool i
 
 #### dep ensure
 
-Use `dep ensure` if your project uses dep to download dependencies imported in your code. Running `dep ensure` clones imported repositories into your project's vendor directory. Its `Gopkg.lock` and `Gopkg.toml` files guarantee that everyone working on the project uses the same version of dependencies as your build. Add the following snippet to your `azure-pipelines.yml` file. Note: this script runs in bash on Linux and macOS agents, but must be modified for Windows.
+Use `dep ensure` if your project uses dep to download dependencies imported in your code. Running `dep ensure` clones imported repositories into your project's vendor directory. Its `Gopkg.lock` and `Gopkg.toml` files guarantee that everyone working on the project uses the same version of dependencies as your build. Add the following snippet to your `azure-pipelines.yml` file. 
+
+> [!NOTE]
+> This script runs on Linux and macOS agents and can be used for older versions of Go that require a specific folder structure. The script is written for Unix shells, and as a result cannot work with Windows agents. 
 
 ```yaml
 - script: |

@@ -2,11 +2,9 @@
 title: Search the Wiki in Azure DevOps
 titleSuffix: Azure DevOps 
 description: Search the wiki for a team project or across the account in Azure DevOps
-ms.prod: devops
 ms.technology: devops-collab
 ms.custom: wiki
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach

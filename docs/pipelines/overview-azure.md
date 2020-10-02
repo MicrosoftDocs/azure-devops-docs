@@ -2,10 +2,7 @@
 title: Deploy to Azure index to content
 ms.custom: seodec18
 description: Learn how to deploy to Azure using Azure Pipelines. Tutorials, references, and other documentation.  
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235  
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 05/08/2018

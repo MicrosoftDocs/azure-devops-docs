@@ -2,10 +2,7 @@
 title: Copy and Publish Build Artifacts task
 description: Copy build artifacts to a staging folder and publish them with Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 67C942BB-6DC7-4016-9364-50E3A3FEACDD
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
@@ -17,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 **TFS 2015**
 
-Use this task in a build or release pipeline to copy build artifacts to a staging folder and then publish them to the server or a file share.
+Use this task to copy build artifacts to a staging folder and then publish them to the server or a file share.
 Files are copied to the `$(Build.ArtifactStagingDirectory)` staging folder and then published.
 
 ::: moniker range="> tfs-2015"
@@ -25,7 +22,7 @@ Files are copied to the `$(Build.ArtifactStagingDirectory)` staging folder and t
 > [!IMPORTANT]
 > 
 > If you're using Azure Pipelines, or Team Foundation Server (TFS) 2017 or newer, we recommend that you do NOT use this deprecated task.
-> Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).
+> Instead, use the **[Copy Files](copy-files.md)** and **[Publish Build Artifacts](publish-build-artifacts.md)** tasks. See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).
 
 ::: moniker-end
 
@@ -88,7 +85,7 @@ None
 
 </table>
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

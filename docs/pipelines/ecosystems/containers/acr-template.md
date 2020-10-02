@@ -1,11 +1,8 @@
 ---
 title: Build and push to Azure Container Registry
 description: Build and push images to Azure Container Registry
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: 2ae9bd01-22ff-4147-a5bb-24d884812635
-ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 09/28/2019

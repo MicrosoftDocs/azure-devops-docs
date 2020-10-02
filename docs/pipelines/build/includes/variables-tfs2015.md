@@ -1,6 +1,5 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
@@ -8,7 +7,9 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
-## Agent variables
+<a id="agent-variables"></a>
+
+## Agent variables (TFS 2015)
 
 > [!NOTE]
 > You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
@@ -85,7 +86,9 @@ For example: <code>c:\agent_work</code>.
 
 </table>
 
-## Build variables
+## Build variables (TFS 2015)
+
+<a id="build-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
@@ -205,7 +208,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.Provider</td>
 <td>The type of <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository you selected](../repos/index.md)">repository you selected</a>.
 <ul>
-<li><code>TfsGit</code>: <a href="/azure/devops/repos/git/overview" data-raw-source="[TFS Git repository](../../../repos/git/overview.md)">TFS Git repository</a>
+<li><code>TfsGit</code>: <a href="/azure/devops/repos/git/overview" data-raw-source="[TFS Git repository](../../../repos/git/index.yml)">TFS Git repository</a>
 <li><code>TfsVersionControl</code>: <a href="/azure/devops/repos/tfvc/overview" data-raw-source="[Team Foundation Version Control](/azure/devops/repos/tfvc/overview)">Team Foundation Version Control</a>
 <li><code>Git</code>: Git repository hosted on an external server
 <li><code>Svn</code>: Subversion (available on TFS 2015.4)
@@ -228,8 +231,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.Uri</td>
 <td>The URL for the repository. For example:
 <ul>
-<li>Git: <code><a href="https://fabrikamfiber/tfs/DefaultCollection/Scripts/_git/Scripts" data-raw-source="https://fabrikamfiber/tfs/DefaultCollection/Scripts/_git/Scripts">https://fabrikamfiber/tfs/DefaultCollection/Scripts/_git/Scripts</a></code>
-<li>TFVC: <code><a href="https://fabrikamfiber/tfs/DefaultCollection/" data-raw-source="https://fabrikamfiber/tfs/DefaultCollection/">https://fabrikamfiber/tfs/DefaultCollection/</a></code>
+<li>Git: <code>https://fabrikamfiber/tfs/DefaultCollection/Scripts/_git/Scripts</code>
+<li>TFVC: <code>https://fabrikamfiber/tfs/DefaultCollection/</code>
 </ul>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
@@ -354,7 +357,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.SourceTfvcShelveset</td>
 <td>Defined if your <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository](../repos/index.md)">repository</a> is Team Foundation Version Control.
 <br/><br/>
-If you are running a <a href="/azure/devops/pipelines/build/triggers#gated" data-raw-source="[gated build](../triggers.md#gated)">gated build</a> or a <a href="/azure/devops/pipelines/create-first-pipeline#queueabuild" data-raw-source="[shelveset build](../../create-first-pipeline.md#queueabuild)">shelveset build</a>, this is set to the name of the <a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets" data-raw-source="[shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">shelveset</a> you are building.
+If you are running a <a href="/azure/devops/pipelines/repos/tfvc#gated" data-raw-source="[gated build](../../repos/tfvc.md#gated)">gated build</a> or a <a href="/azure/devops/pipelines/create-first-pipeline#queueabuild" data-raw-source="[shelveset build](../../create-first-pipeline.md#queueabuild)">shelveset build</a>, this is set to the name of the <a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets" data-raw-source="[shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">shelveset</a> you are building.
 <br/><br/>
 Note: This variable yields a value that is invalid for build use in a build number format.
 </td>
@@ -369,7 +372,9 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 </table>
 
-## System variables
+## System variables (TFS 2015)
+
+<a id="system-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
@@ -412,7 +417,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.PullRequest.SourceBranch</td>
-<td>The branch that is being reviewed in a pull request. For example: <code>users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
+<td>The branch that is being reviewed in a pull request. For example: <code>refs/heads/users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
 </tr>
 
 <tr>

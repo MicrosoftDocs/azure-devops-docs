@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Understand how Azure DevOps tools support various software development roles
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -43,7 +41,7 @@ Developers use Visual Studio or other [tools](tools.md) to develop their applica
 	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md)
 	- [Share your code in Git by using Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
 	- [Share your code in Git by using Xcode](../repos/git/share-your-code-in-git-xcode.md)
-	- [Share your code in Git by using IntelliJ](../java/download-intellij-plug-in.md)
+	- [Share your code in Git by using IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
 	- [Get started with using Git and Azure DevOps Services](../repos/git/gitquickstart.md)
 - To get started with using TFVC, see one of the following resources: 
 	- [Develop and share your code in TFVC by using Visual Studio](../repos/tfvc/share-your-code-in-tfvc-vs.md)
@@ -62,12 +60,12 @@ Project managers (PMs) typically plan the feature set to deliver, set priorities
   
 For more information about getting started, see [About Azure Boards and Agile tools](../boards/get-started/what-is-azure-boards.md).  
 
-If you use Excel or Project to plan and track your work, you can integrate these tools with Azure DevOps. For more information, see [Bulk modify by using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks by using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
+You can integrate Microsoft Excel and Microsoft Project with Azure DevOps to plan and track your work. For more information, see [Bulk modify by using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks by using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
 
 
 ### DevOps: builders, testers, and release managers
 
-An advantage of working with Azure DevOps is the suite of tools and integrated functionality that support build, testing, and deploying software applications. See the following general DevOps-associated tasks that Azure DevOps supports:
+An advantage of working with Azure DevOps is the suite of tools and integrated functionality that support build, testing, and deploying software applications. See the following general DevOps-associated tasks that Azure DevOps supports.
 
 - Define builds
 - Unit test your code 
@@ -137,7 +135,7 @@ Responsible for configuring organization-level resources, including the followin
 - Customize work tracking processes  
 - Install and manage extensions
 
-To get started, see [Manage organizations](../organizations/accounts/organization-management.md) and [Settings](../organizations/settings/index.md).
+To get started, see [Manage organizations](../organizations/accounts/organization-management.md) and [Settings](../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -149,7 +147,7 @@ Responsible for configuring collection-level resources. These tasks include:
 - Manage collection-level permissions 
 - Install and manage extensions
 
-To get started, see [Settings](../organizations/settings/index.md).
+To get started, see [Settings](../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects).
 
 ### TFS administrators
 

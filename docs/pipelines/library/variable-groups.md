@@ -3,10 +3,7 @@ title: Variable groups for Azure Pipelines and TFS
 ms.custom: seodec18
 description: Share common variables across pipelines using variable groups
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 02/05/2019
@@ -30,7 +27,7 @@ that might need to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml
 ## Create a variable group
 
 #### [YAML](#tab/yaml/)
-Variable groups can’t be created in YAML, but they can be used as described in [Use a variable group](#use-a-variable-group).
+Variable groups can't be created in YAML, but they can be used as described in [Use a variable group](#use-a-variable-group).
 
 #### [Classic](#tab/classic/)
 1. Open the **Library** tab to see a list of existing variable groups for your project.
@@ -58,7 +55,7 @@ Choose **+ Variable group**.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="= azure-devops"
+::: moniker range="> azure-devops-2019"
 
 Using the Azure DevOps CLI, you can create and update variable groups for the pipeline runs in your project. You can also [manage the variable groups](#manage-a-variable-group) as well as [manage the individual variables within a variable group](#manage-variables-in-a-variable-group).
 
@@ -181,8 +178,51 @@ variables:
   value: 'value of my-bare-variable'
 ```
 
-Next you must authorize the variable group (this is a security feature: if you only had to name the variable group in YAML, then anyone who can push code
-to your repository could extract the contents of secrets in the variable group).
+To reference a variable group, you can use macro syntax or a runtime expression. In this example, the group `my-variable-group` has a variable named `myhello`.
+
+```yaml
+variables:
+- group: my-variable-group
+- name: my-passed-variable
+  value: $[variables.myhello] # uses runtime expression
+
+steps:
+- script: echo $(myhello) # uses macro syntax
+- script: echo $(my-passed-variable) 
+```
+
+You can reference multiple variable groups in the same pipeline. 
+If multiple variable groups include the same variable, the variable group included last in your YAML file will set the variable's value. 
+
+```yaml
+variables:
+- group: my-first-variable-group
+- group: my-second-variable-group
+```
+
+You can also reference a variable group in a template. In the template `variables.yml`, the group `my-variable-group` is referenced. The variable group includes a variable named `myhello`. 
+
+```yaml
+# variables.yml
+variables:
+- group: my-variable-group
+```
+In this pipeline, the variable `$(myhello)` from the variable group `my-variable-group` included in `variables.yml` is referenced.
+
+```yaml
+# azure-pipeline.yml
+stages:
+- stage: MyStage
+  variables:
+  - template: variables.yml
+  jobs:
+  - job: Test
+    steps:
+    - script: echo $(myhello)
+```
+
+To work with variable groups, you must authorize the group. This is a security feature: if you only had to name the variable group in YAML, then anyone who can push code
+to your repository could extract the contents of secrets in the variable group.
 To do this, or if you encounter a resource authorization error in your build,
 use one of the following techniques:
 
@@ -225,9 +265,9 @@ also see a drop-down list of stages in the pipeline - you can link the variable 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
-There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using a variable group. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service). 
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using a variable group.
 
 ::: moniker-end
 
@@ -244,7 +284,7 @@ cannot be accessed directly in scripts - instead they must be passed as argument
 Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
 will automatically be made available to all the definitions or stages to which the variable group is linked.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Manage a variable group
 
@@ -573,9 +613,9 @@ When you set a variable with the same name in multiple scopes, the following pre
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
-There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables in a group. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service). 
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables in a group.
 
 ::: moniker-end
 

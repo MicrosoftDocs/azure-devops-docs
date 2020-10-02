@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Discussion History (deprecated) | REST API Reference for Team Foundation Server
 description: Work with work item discussion history programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 572C9AF7-91A1-41F9-80A5-905AD9C39464
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -35,7 +33,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/history?api-ve
 | Parameter | Type    | Default | Notes	
 |:----------|:--------|:--------|:--------------------------------------
 | URL
-| instance  | string  |         | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](../../get-started/rest/basics.md) ({server:port}).
+| instance  | string  |         | [VS Team Services account](/rest/api/azure/devops/) ({account}.visualstudio.com) or [TFS server](/rest/api/azure/devops/) ({server:port}).
 | id        | int     |         | ID of the work item.
 | Query
 | api-version| string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -164,7 +162,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/history/{revis
 | Parameter | Type    | Notes	
 |:----------|:--------|:--------------------------------------
 | URL
-| instance  | string  | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](../../get-started/rest/basics.md) ({server:port}).
+| instance  | string  | [VS Team Services account](/rest/api/azure/devops/) ({account}.visualstudio.com) or [TFS server](/rest/api/azure/devops/) ({server:port}).
 | id        | int     | ID of the work item.
 | revision  | int     | Revision of the work item to view discussion history.
 | Query
@@ -191,5 +189,3 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/history/2?api-
   "url": "https://mytfsserver/DefaultCollection/_apis/wit/workItems/299/history/2"
 }
 ```
-
-

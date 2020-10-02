@@ -3,9 +3,6 @@ title: Deploy to App Services and Cosmos DB
 description: Use Azure Pipelines to enable Continuous Integration (CI) and Continuous Deployment (CD) for your ASP.NET App service and Azure Cosmos DB.
 ms.custom: seodec18
 ms.author: mlearned
-ms.manager: mijacobs
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.date: 12/07/2018
 author: mlearned
@@ -119,7 +116,7 @@ Follow the steps below to test and review the CI/CD pipeline.
 1. Once the release finishes, navigate to your Cosmos DB service to see your new database.
 
 
-The continuous integration trigger you enabled earlier ensures a build executes for every commit that is pushed to the master branch. The build will complete and start a deployment to Azure. Navigate to Cosmos DB in the Azure portal, and you will see the CD pipeline created a new database.
+The continuous integration trigger you enabled earlier ensures a build executes for every commit that is pushed to the main branch. The build will complete and start a deployment to Azure. Navigate to Cosmos DB in the Azure portal, and you will see the CD pipeline created a new database.
 
 ## Clean up resources
 

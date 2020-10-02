@@ -3,8 +3,6 @@ title: View organization-level notifications statistics
 titleSuffix: Azure DevOps
 description: View organization-level notifications statistics in Azure DevOps or Team Foundation Server (TFS)
 ms.technology: devops-collab
-ms.prod: devops
-ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

@@ -1,24 +1,22 @@
 ---
 title: Set up billing for your organization
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
-description: Use an Azure subscription to pay for users, CI/CD concurrency, and extensions
-ms.prod: devops
+ms.custom: seodec18, contentperfq4, contentperfq1
+description: Use an Azure subscription to configure billing and pay for users, CI/CD concurrency, and extensions for Azure DevOps.
 ms.technology: devops-billing
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
-ms.topic: quickstart
-ms.manager: mijacobs
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 12/18/2019 
+ms.date: 08/11/2020 
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Set up billing for your organization
+# Set up billing
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this quickstart, learn to set up billing for your organization. Do so before making purchases, so you have it in place once you're ready to buy.
+Set up billing in Azure DevOps before you make purchases. That way, you have it in place once you're ready to buy. You only need to set up billing once for your organization. 
 
 *All services are billed via Azure*. You're not required to use any other Azure services.
 
@@ -27,12 +25,17 @@ In this quickstart, learn to set up billing for your organization. Do so before 
 ## Prerequisites
 
 * If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/).
-* To set up billing, you must have [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner).
+* To set up billing, you must have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md) in Azure DevOps.
 
 > [!NOTE]
-> The Azure Free Trial isn't supported.
+> The [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/) isn't supported.
 
-## Set up billing
+## Set up billing for your organization
+
+> [!NOTE]
+> A user interface limitation prevents the subscription picker from displaying more than 50 subscriptions. If your user account has access to more than 50 subscriptions and the target subscription you want to change the billing for isn't visible, you can follow either of the following two workarounds:
+> - Create a new user account. Grant the account Owner/Contributor rights to the target subscription and administrative privileges to the Azure DevOps organization. Use the new account to link the organization to the target subscription.
+> - Open a [support ticket](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -52,7 +55,7 @@ In this quickstart, learn to set up billing for your organization. Do so before 
 
    ![Select your Azure subscription](media/shared/select-azure-subscription.png)
 
-Billing is set up.
+Billing is set up for your Azure DevOps organization.
 
 ## Next steps
 
@@ -64,5 +67,5 @@ Billing is set up.
 * [Buy Azure Test Plans](buy-basic-access-add-users.md)
 * [Buy CI/CD](buy-more-build-vs.md)
 * [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
-* [Buy cloud-based load testing](buy-load-testing-vs.md).
-
+* [Buy cloud-based load testing](buy-load-testing-vs.md)
+* [Azure cost management and billing](/azure/cost-management-billing/cost-management-billing-overview)

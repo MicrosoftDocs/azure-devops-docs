@@ -2,11 +2,7 @@
 title: Collaborate more and build faster with packages
 description: Componentize a large codebase with source and package composition using Azure Artifacts in Azure DevOps Services or Team Foundation Server
 ms.assetid: EA33E340-EC9A-4F75-A201-82CE9685662B
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 09/29/2016
 ms.topic: reference
 monikerRange: '>= tfs-2017'

@@ -1,11 +1,7 @@
 ---
 title: Install a Maven artifact using Gradle
 description: Install a Maven artifact using Gradle in an Azure DevOps Services build
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.reviewer: dastahel
 ms.topic: conceptual
 ms.date: 01/31/2018
@@ -38,7 +34,7 @@ gradle -v
 You're ready to start! This tutorial will guide you through the process of installing a Maven artifact using Gradle.
 
 > [!NOTE]
-> This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone a repo](/azure/devops/repos/git/clone).
+> This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone a repo](../../repos/git/clone.md).
 
 ## Set up authentication
 

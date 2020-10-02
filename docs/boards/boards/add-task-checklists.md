@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Add task checklists to your Kanban board for lightweight tracking when working in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -61,7 +59,7 @@ In this article, you'll learn:
 
     <img src="media/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />  
 
-3. If you have details you want to add about a task, open the parent work item and then choose the ![ ](../media/icons/icon-links-tab-wi.png) links icon/tab. 
+3. If you have details you want to add about a task, open the parent work item and then choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: links icon/tab. 
 
    <img src="media/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
 

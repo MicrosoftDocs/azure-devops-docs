@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - July 10
 description: VSTS release notes for July 10 2013
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: fb442da5-ffd1-4c26-9864-78fa94c32735

@@ -2,7 +2,6 @@
 title: New navigation, Test & Feedback extension GA, and cherry-pick – Oct 12
 description: VSTS release notes for October 12 2016
 ms.ContentId: 6f6e8dae-afd4-485f-acb2-63b71913dfaa
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
@@ -97,7 +96,7 @@ Xcode 8 requires specifying an export options plist when exporting an app packag
 ## FindBugs in the Gradle build task
 You can now request FindBugs standalone static analysis in the Gradle build task (in addition to the PMD and Checkstyle analysis). The results of the static analysis appear in the build summary, and resulting files are available from the __Artifact__ tab of the build result.
 
-For more details see [Maven and Gradle build tasks support powerful code analysis tools](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/12/maven-and-gradle-build-tasks-support-powerful-code-analysis-tools/).
+For more details see [Maven and Gradle build tasks support powerful code analysis tools](https://devblogs.microsoft.com/devops/maven-and-gradle-build-tasks-support-powerful-code-analysis-tools/).
 ## Build improvements
 
 ### Visual Studio “15” build task
@@ -148,7 +147,7 @@ In an earlier sprint, we made it easier to create a new Azure Resource Manager s
 
 ## Test & Feedback extension general availability
 
-We are pleased to announce that __Exploratory Testing__ extension is now __Test & Feedback__ extension and is free for all.  You can find more information in the [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/08/test-feedback-overview/).
+We are pleased to announce that __Exploratory Testing__ extension is now __Test & Feedback__ extension and is free for all.  You can find more information in the [blog post](https://devblogs.microsoft.com/devops/test-feedback-overview/).
 
 ## Testing improvements
 ### Update existing bugs from Web Runner

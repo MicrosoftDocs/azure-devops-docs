@@ -4,21 +4,19 @@ titleSuffix: Azure DevOps
 description: View or update your project home page to share project vision, objectives, and activity for Azure DevOps
 ms.topic: quickstart
 ms.technology: devops-collab
-ms.prod: devops
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
 ms.date: 03/26/2019
 ---
 
-# Quickstart: Share your project vision, view project activity
+# Share your project vision, view project activity
 
 [!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range=">= azure-devops-2019"
-In this quickstart, you learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
+Learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
 
 If you want to use a project wiki, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
 ::: moniker-end
@@ -53,7 +51,7 @@ If you haven't set up your project summary yet, you'll see this welcome page:
 
 Select one of the following tasks to get started:
 
-- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../../organizations/accounts/add-team-members.md).
+- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). You can only invite users who have already been [added to your organization](../security/add-users-team-project.md#add-users-to-a-project)).
 - **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
 - **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-a-readme-file-for-a-git-repo) for your project summary page.
 - **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
@@ -96,7 +94,7 @@ You can share your project and objective, as well as ways for team members to co
 
    A default README file is added to the project repository, in this case, the **Fabrikam Test** repo.
 
-3. Return to **Overview>Summary** and choose the README file for the project page. Choose the ![ ](../../media/icons/edit.png) edit icon.
+3. Return to **Overview>Summary** and choose the README file for the project page. Choose the :::image type="icon" source="../../media/icons/edit.png" border="false"::: edit icon.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
@@ -193,7 +191,7 @@ For projects that selected TFVC for version control, the README.md file needs to
 8. Select **Overview>Summary** to review your project summary page with the README file displayed.  
 
    > [!div class="mx-imgBorder"]  
-   > ![About this project dialog, new nav](media/share-project/tfvc-project-summary-with-readme.png)
+   > ![Project summary page with the README file displayed.](media/share-project/tfvc-project-summary-with-readme.png)
 
 ::: moniker-end
 
@@ -223,7 +221,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 In addition to sharing information, the project summary page pulls data from the applications to give visitors a bird's-eye view of your project activity.
 
 ::: moniker range=">= azure-devops-2019"
-To add users to the project, choose the ![ ](media/share-project/add-members-new-nav.png) **add** button. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
+To add users to the project, choose the :::image type="icon" source="media/share-project/add-members-new-nav.png" border="false"::: **add** button. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
 > [!div class="mx-imgBorder"]
 > ![Project stats](media/share-project/project-stats-new-nav.png)
@@ -248,7 +246,7 @@ You can change the repository used to support your project vision, including poi
 
 1. Open **Overview > Summary** .
 
-2. Choose the ![ ](../../media/icons/edit.png) edit icon.
+2. Choose the :::image type="icon" source="../../media/icons/edit.png" border="false"::: edit icon.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
@@ -258,7 +256,7 @@ You can change the repository used to support your project vision, including poi
 3. Select a different repository or choose the Wiki option.
 
    > [!div class="mx-imgBorder"]  
-   > ![Choose Repository where the README file exists, new nav](media/share-project/change-repo-new-nav.png)  
+   > ![Select a different repository or choose the Wiki option.](media/share-project/change-repo-new-nav.png)  
 
    > [!TIP]  
    > If you choose the Wiki option, only the Wiki home page displays. To access additional Wiki pages, you must navigate to the Wiki.

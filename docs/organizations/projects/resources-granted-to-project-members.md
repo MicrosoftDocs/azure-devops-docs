@@ -3,12 +3,10 @@ title: Resources granted to project members
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn about security and data access considerations and resources granted when you add members to a project or organization 
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 
 toc: show
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
@@ -17,7 +15,7 @@ ms.date: 01/03/2019
 
 # Resources granted to project members
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 The project is a container and security boundary for your software development assets: work items, code, builds, etc.
 When you add someone as a member of a project, you are also trusting that person with some additional privileges.

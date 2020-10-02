@@ -3,19 +3,17 @@ title: Use work item templates to update stories, & more
 titleSuffix: Azure Boards   
 description: Add and manage work item templates to pre-populate fields in work item forms in Azure DevOps, Team Foundation Server, and Visual Studio
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 09/18/2019
+ms.date: 07/09/2020
 ---
 
 # Use templates to add and update work items 
 
-**Azure Boards | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015** 
+**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013 | Visual Studio 2015** 
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?LinkId=824070 -->
 
@@ -64,10 +62,10 @@ The steps to capture a work item differ based on the platform, version, and clie
 
 1. From the web portal, open a work item which you'll use as the basis for a template.  
 
-2. Choose the ![ ](../media/icons/actions-icon.png) actions icon to open the menu. Choose **Templates** and then **Capture**.   
+2. Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu. Choose **Templates** and then **Capture**.   
 
     > [!div class="mx-imgBorder"]  
-    > ![Capture work item field definitions as a template, vsts](media/templates/wi-templates-capture-bug-vsts-s136.png) 
+    > ![Capture work item field definitions as a template, latest version](media/templates/wi-templates-capture-bug-vsts-s136.png) 
 
     Name the template, select the team for which you want to save it under, and optionally define or clear fields. Save the template when finished. 
 
@@ -88,7 +86,7 @@ The steps to capture a work item differ based on the platform, version, and clie
 
     Within the web portal, work item templates are associated with a team. Only those templates defined for a team are accessible when working in a team context, either through a work item form or bulk update context menu.
 
-2. Choose the ![ ](../media/icons/actions-icon.png) actions icon to open the menu. Choose **Templates** and then **Capture**.   
+2. Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu. Choose **Templates** and then **Capture**.   
 
     ![Capture work item field definitions as a template](media/templates/wi-templates-capture-bug-tfs.png) 
 
@@ -207,12 +205,12 @@ The main method for adding a work item using a template is to open the template 
 
 #### [Browser](#tab/browser/)
 
-1. Choose the ![ ](../../media/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
+1. Choose the :::image type="icon" source="../../media/icons/admin-gear-icon.png" border="false"::: gear icon to open the settings for a team. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open team admin context](../../media/open-admin-context-standard.png)
 
-1. Choose the **Work>Templates** tab. Then, choose the ![Actions icon](../media/icons/actions-icon.png) actions icon for the template you want to copy and select **Copy link**.  
+1. Choose the **Work>Templates** tab. Then, choose the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions icon for the template you want to copy and select **Copy link**.  
 
     <img src="media/wi-templates-copy-url-vsts.png" alt="Copy link of a template" style="border: 1px solid #CCCCCC;" />
 
@@ -285,7 +283,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 ### Apply a template within a work item form 
 
-1. Open a new work item or an existing work item that you want to update using the fields defined within a template, choose the ![ ](../media/icons/actions-icon.png) actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
+1. Open a new work item or an existing work item that you want to update using the fields defined within a template, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
 
     > [!div class="mx-imgBorder"]
     > ![Apply a template to an existing work item within the form](media/templates/apply-template-vsts-s136.png) 
@@ -303,7 +301,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 ### Apply a template within a work item form 
 
-1. Open the work item that you want to update using the fields defined within a template, choose the ![ ](../media/icons/actions-icon.png) actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
+1. Open the work item that you want to update using the fields defined within a template, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
 
 
 ~~~
@@ -415,11 +413,11 @@ You manage templates from  team settings. All templates are defined for a team. 
 
 1. From the web portal, open settings for a team. 
 
-    Choose the ![ ](../../media/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
+    Choose the :::image type="icon" source="../../media/icons/admin-gear-icon.png" border="false"::: gear icon to open the settings for a team. 
 
     Here we open the admin page for the Web team. 
 
-    <img src="media/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wit-templates-open-team-admin-context.png" alt="Open the admin page for the Web team." style="border: 1px solid #CCCCCC;" />  
 
 1. Choose **Work>Templates**.  
 
@@ -447,13 +445,13 @@ For example, choose User Story to view templates defined to capture user stories
 
 ### Edit, delete, or copy link to a template  
 
-From the work item type page, choose ![ ](../media/icons/actions-icon.png) the actions icon for an existing template to access the menu options to **Edit**, **Delete**, or **Copy link**. 
+From the work item type page, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template to access the menu options to **Edit**, **Delete**, or **Copy link**. 
 
 <img src="media/wi-templates-template-action-menu.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />  
 
 ### Copy or duplicate a template  
 
-1. To duplicate an existing template, choose ![ ](../media/icons/actions-icon.png) the actions icon for an existing template and select the **Create copy** option. 
+1. To duplicate an existing template, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template and select the **Create copy** option. 
 
     <img src="media/wi-templates-copy-template.png" alt="Copy an existing template" style="border: 1px solid #CCCCCC;" />  
 
@@ -495,7 +493,7 @@ You can cut, copy, paste, rename, and delete templates and folders using the con
 
 2. Save the template, provide a Name in the dialog provided.  
 
-    <img src="media/wi-templates-new-template-save-as-te.png" alt="Add a new template, Visual Studio " style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wi-templates-new-template-save-as-te.png" alt="Provide a Name in the dialog provided." style="border: 1px solid #CCCCCC;" />  
 
     Once you've saved the template, click Copy link to capture the URL for the template that you can use to add work items using the template.  
 
@@ -503,7 +501,7 @@ You can cut, copy, paste, rename, and delete templates and folders using the con
 
 To edit, delete, or perform another action on a template, open its context menu (right-click) and choose the option you want.  
 
-<img src="media/wi-templates-context-menu-te.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />  
+<img src="media/wi-templates-context-menu-te.png" alt="Open context menu and choose the option you want." style="border: 1px solid #CCCCCC;" />  
 
 To make frequently-used templates more accessible, you can set a default template for each work item type. To do so, right-click on a template in Team Explorer and click **Set As Default**. A checkmark will appear on the icon to indicate that it is now the default. 
 
@@ -613,7 +611,7 @@ From the Work Item Templates tool, you can set a default for each work item type
 
 ### Q: How do I delete a work item template? 
 
-**A:** From the work item type page, choose ![ ](../media/icons/actions-icon.png) the actions icon for an existing template and select the **Delete** option. 
+**A:** From the work item type page, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template and select the **Delete** option. 
 
 > [!div class="mx-imgBorder"]  
 > ![Delete template](media/templates/delete-template.png)

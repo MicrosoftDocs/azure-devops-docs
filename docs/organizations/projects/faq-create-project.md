@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: View frequently asked questions (FAQs), like creating a project and how to resolve various errors.
 ms.assetid: 90e03b82-a6e8-47af-ad8c-5b134f4e3134
-ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/19/2017
@@ -15,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ---
 # Troubleshoot creating a project
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 ## Resolve errors
 
@@ -71,7 +69,7 @@ Contact the TFS system administrator and request that they verify the server con
 
 ::: moniker-end
 
-## Q & A  
+## FAQs 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ### Q: How do I add my custom process template to the list?
@@ -107,7 +105,7 @@ The log shows each action taken by the wizard at the time of the failure and may
 
 -   To add a SharePoint web application: [Add SharePoint products to your deployment](/azure/devops/server/admin/add-sharepoint-to-tfs).
 
--   To configure a project portal to use an existing website or SharePoint site: [Configure a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
+-   To configure a project portal to use an existing website or SharePoint site: [Configure a project portal](../../project/configure-or-add-a-project-portal.md).
 
 ::: moniker-end
 

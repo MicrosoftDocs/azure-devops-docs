@@ -3,17 +3,15 @@ title: advanced package search syntax
 titleSuffix: Azure Artifacts
 description: Advanced options for using Package Search across all your feeds in a Azure DevOps organization
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 04/18/2019
 ---
 
-# How To: Use Package Search
+# Advanced artifact or package search
 
 [!INCLUDE [version-header](../../includes/version-vsts-only.md)]
 
@@ -91,4 +89,4 @@ Within a phrase:
 
 * Boolean operators are treated as literal text.
 
-[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]
+

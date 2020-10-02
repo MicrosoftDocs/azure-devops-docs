@@ -2,14 +2,11 @@
 title: PowerShell task
 description: Execute PowerShell scripts in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 02/18/2020
+ms.date: 08/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -17,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run a PowerShell script.
+Use this task to run a PowerShell script.
 
 ::: moniker range="<= tfs-2018"
 
@@ -35,7 +32,7 @@ Use this task in a build or release pipeline to run a PowerShell script.
 
 [!INCLUDE [temp](../includes/yaml/PowerShellV2.md)]
 
-The Powershell task also has two shortcuts in YAML:
+The PowerShell task also has two shortcuts in YAML:
 
 ```yaml
 - powershell:  # inline script
@@ -59,9 +56,10 @@ The Powershell task also has two shortcuts in YAML:
 
 Both of these resolve to the `PowerShell@2` task.
 `powershell` runs Windows PowerShell and will only work on a Windows agent.
-`pwsh` runs PowerShell Core, which must be available on the agent or container.
+`pwsh` runs PowerShell Core, which must be installed on the agent or container.
 
-This task will select the version of PowerShell or PowerShell Core that's available on the agent.
+> [!NOTE]
+> Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
 
 ::: moniker-end
 
@@ -95,9 +93,9 @@ This task will select the version of PowerShell or PowerShell Core that's availa
 
 ### Hello World
 
-Create ```test.ps1``` at the root of your repo:
+Create `test.ps1` at the root of your repo:
 
-```ps
+```powershell
 Write-Host "Hello World from $Env:AGENT_NAME."
 Write-Host "My ID is $Env:AGENT_ID."
 Write-Host "AGENT_WORKFOLDER contents:"
@@ -113,13 +111,13 @@ On the Build tab of a build pipeline, add this task:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](media/powershell.png)<br/>**Utility: PowerShell** | Run test.ps1.<br /><br />**Script filename**: `test.ps1` |
+| :::image type="icon" source="media/powershell.png" border="false":::<br/>**Utility: PowerShell** | Run test.ps1.<br /><br />**Script filename**: `test.ps1` |
 
 ### Write a warning
 
 Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
- ```ps
+ ```powershell
 # Writes a warning to build summary and to log in yellow text
 Write-Host  "##vso[task.LogIssue type=warning;]This is the warning"
 ```
@@ -128,33 +126,57 @@ Write-Host  "##vso[task.LogIssue type=warning;]This is the warning"
 
 Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
- ```ps
+ ```powershell
 # Writes an error to build summary and to log in red text
 Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 ```
 
 > [!TIP]
-> 
+>
 > If you want this error to fail the build, then add this line:
->  ```ps
+>
+>  ```powershell
 > exit 1
-> ``` 
+> ```
 
 ### ApplyVersionToAssemblies.ps1
 
 [Use a script to customize your build pipeline](../../scripts/powershell.md)
 
+### Call PowerShell script with multiple arguments
+
+Create PowerShell script `test2.ps1`:
+
+```powershell
+param ($input1, $input2)
+Write-Host "$input1 $input2"
+```
+
+In your YAML pipeline, call:
+
+```yaml
+- task: PowerShell@2
+  inputs:
+    targetType: 'filePath'
+    filePath: $(System.DefaultWorkingDirectory)\test2.ps1
+    arguments: > # Use this to avoid newline characters in multiline string
+      -input1 "Hello"
+      -input2 "World"
+  displayName: 'Print Hello World'
+```
+
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn about PowerShell scripts?
 
-[Scripting with Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)
+[Scripting with Windows PowerShell](/powershell/scripting/overview)
 
 [Microsoft Script Center (the Scripting Guys)](https://technet.microsoft.com/scriptcenter/bb410849.aspx)
 

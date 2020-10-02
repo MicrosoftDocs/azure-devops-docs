@@ -2,15 +2,14 @@
 title: Azure DevOps Release Notes - Preview fully parsed YAML document without running the pipeline
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 02/17/2020
-description: In the **Sprint 165 Update** of Azure DevOps, we've added a **preview but don't run** mode for YAML pipelines so you can try out a YAML pipeline without committing it to a repo or running it.
+description: In Sprint 165 Update of Azure DevOps, we've added a preview but don't run mode for YAML pipelines so you can try out a YAML pipeline without committing it to a repo or running it.
 ---
 
 # Preview fully parsed YAML document without running the pipeline
 
-With this update, we've added a preview but don't run mode for YAML pipelines so you can try out a YAML pipeline without running it or committing it to a repo. This will let you see a fully parsed YAML document without running the pipeline.
+With this update, we've added a **preview but don't run mode** for YAML pipelines so you can try out a YAML pipeline without running it or committing it to a repo. This will let you see a fully parsed YAML document without running the pipeline.
 
 Check out the [Features](#features) list below for details.
 
@@ -50,7 +49,7 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the help menu to report a problem or provide a suggestion.
 

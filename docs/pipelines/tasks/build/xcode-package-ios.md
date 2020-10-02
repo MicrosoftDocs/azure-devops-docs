@@ -2,10 +2,7 @@
 title: Xcode Package iOS build and release task
 ms.custom: seodec18
 description: Xcode Package iOS build and release task for Azure Pipelines and Team Foundation Server (TFS)
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: FF3E5771-481B-4D72-B3D5-ED9B3379E298
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 11/13/2017
@@ -17,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to generate an .ipa file from Xcode build output.
+Use this task to generate an .ipa file from Xcode build output.
 
 ## Deprecated
 **The Xcode Package iOS task has been deprecated.
@@ -100,7 +97,7 @@ Make sure to specify the variable values on the <a href="../../build/variables.m
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]

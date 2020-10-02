@@ -3,11 +3,7 @@ title: Rename or move files and folders | Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Rename or move files and folders using Team Foundation Version Control (TFVC) commands
 ms.assetid: 90839209-cb51-4c00-ae19-08e7343093ea
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Rename or move files and folders in TFVC
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 > [!IMPORTANT]
 > If you're not using TFVC for version control, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer) to

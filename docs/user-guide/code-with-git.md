@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn how to share code within a Git repo and new project
 ms.assetid: 
-ms.prod: devops
 ms.technology: devops-new-user
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/23/2019
@@ -18,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-In this quickstart, you learn how to share your code with others. After you create a new organization and project in Azure DevOps, you can begin coding with Git.
+In this quickstart, learn how to share your code with others. After you create a new organization and project in Azure DevOps, you can begin coding with Git.
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with. Cloning also downloads all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) in the repo, and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
@@ -129,5 +127,4 @@ In the following steps, we make a change to the files on your computer, commit t
 ## Next steps  
 
 > [!div class="nextstepaction"]
-> [Set up continuous integration & delivery](../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
-
+> [Set up continuous integration & delivery](../pipelines/create-first-pipeline.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json)

@@ -2,13 +2,8 @@
 title: Pipeline reports
 description: Get meaningful insights with pipeline reports in the pipeline
 ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: continuous-test, seodec18
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.date: 08/21/2019
 monikerRange: '>=azure-devops-2019'
 ---
@@ -25,7 +20,15 @@ Teams track their pipeline health and efficiency to ensure continuous delivery t
 
 Ensure that you have installed the [Analytics Marketplace extension](../../report/dashboards/analytics-extension.md) for Azure DevOps Server.
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019 || azure-devops"
+
 ## View pipeline reports
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 
 A summary of the pass rate can be viewed in the **Analytics** tab of a pipeline. To drill into the trend and insights, click on the card to view the full report.
 
@@ -34,8 +37,6 @@ A summary of the pass rate can be viewed in the **Analytics** tab of a pipeline.
 <a name="viewinbuild"></a>
 
 ::: moniker range="azure-devops"
-
-## View pipeline reports
 
 A summary of the pass rate and duration can be viewed in the **Analytics** tab of a pipeline. To drill into the trend and insights, click on the card to view the full report.
 

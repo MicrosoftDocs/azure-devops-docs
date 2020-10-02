@@ -2,11 +2,9 @@
 title: Components of the SQL Server data warehouse 
 titleSuffix: TFS
 description: Understand the components of the Team Foundation Server data warehouse 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: 5aafaefc-84c1-4f8d-a716-753f5b74caa0
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/26/2017
@@ -79,7 +77,7 @@ Each tool or plug-in in Team Foundation uses a relational database in SQL Server
 
 ## Excel reports 
  
- Team Foundation integrates with Microsoft Excel to allow you to use Microsoft Excel to manage your project and produce reports. Microsoft Excel provides pivot tables and charts for viewing and analyzing multi-dimensional data. You can bind these pivot tables directly to the Team Foundation cube, so you can interact with the data in the cube. For more information about using Microsoft Excel for reporting, see [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md).  
+ Team Foundation integrates with Microsoft Excel to allow you to use Microsoft Excel to manage your project and produce reports. Microsoft Excel provides pivot tables and charts for viewing and analyzing multi-dimensional data. You can bind these pivot tables directly to the Team Foundation cube, so you can interact with the data in the cube. For more information about using Microsoft Excel for reporting, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
   
 <a name="security"></a> 
 

@@ -2,10 +2,7 @@
 title: Extract Files task
 description: Extract files from archives to a target folder using minimatch patterns on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: fe025768-2cb4-4939-b22f-8f69155bf310
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
@@ -17,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to extract files from archives to a target folder using match patterns.
+Use this task to extract files from archives to a target folder using match patterns.
 A range of standard archive formats is supported, including .zip, .jar, .war, .ear, .tar, .7z, and more.
 
 ## Demands
@@ -74,11 +71,37 @@ None
 
 </table>
 
+## Examples
+
+### Extract all .zip files recursively
+
+This example will extract all .zip files recursively, including both root files and files from sub-folders
+
+```yaml
+steps:
+- task: ExtractFiles@1
+  inputs:
+    archiveFilePatterns: '**/*.zip'
+    cleanDestinationFolder: true
+```
+
+### Extract all .zip files from subfolder
+
+This example will extract `test/one.zip`, `test/two.zip` but will leave `test/nested/three.zip`.
+
+```yaml
+steps:
+- task: ExtractFiles@1
+  inputs:
+    archiveFilePatterns: 'test/*.zip'
+    cleanDestinationFolder: true
+```
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

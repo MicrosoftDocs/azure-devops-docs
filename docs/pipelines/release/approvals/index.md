@@ -3,13 +3,10 @@ title: Understand approvals, gates, and checks
 ms.custom: seodec18
 description: Understand deployment approvals and gates in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: shashban
 author: azooinmyluggage
-ms.date: 08/24/2018
+ms.date: 04/22/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -51,13 +48,28 @@ are useful include the following.
 | You want to ensure there are no incidents from the monitoring or incident management system for the app after it's been deployed, before promoting the release. | [Post-deployment gates](gates.md) |
 | After deployment, you want to wait for a specified time before prompting some users for a manual sign out.  | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
 | During the deployment pipeline, a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) | 
-| During the deployment pipeline, you want to prompt the user to enter a value for a parameter used by the deployment tasks, or allow the user to edit the details of this release. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) | 
+| During the deployment pipeline, you want to prompt the user to enter a value for a parameter used by the deployment tasks, or allow the user to edit the details of this release. | [Manual Intervention](../deploy-using-approvals.md#configure-a-manual-intervention) | 
 | During the deployment pipeline, you want to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment jobs.  | Planned | 
 
 You can combine all three techniques within a release pipeline to fully achieve your own deployment requirements.
 
 In addition, you can install an extension that integrates with **ServiceNow** to help you control and manage your deployments
 though Service Management methodologies such as ITIL. For more information, see [Release deployment control using ServiceNow](servicenow.md).
+
+> [!NOTE]
+> The time delay before the pre-deployment gates are executed is capped at 48 hours. If you need to delay the overall launch of your gates instead, it is recommended to use a [delay task](../../tasks/utility/delay.md) in your release pipeline.
+
+```YAML
+# Delay
+# Delay further execution of a workflow by a fixed time
+jobs:
+- job: RunsOnServer
+  pool: Server
+  steps:
+  - task: Delay@1
+    inputs:
+      delayForMinutes: '0'
+```
 
 ## Related articles
 

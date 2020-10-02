@@ -2,7 +2,6 @@
 title: New Release Definition Editor and improved pull request workflows – July 14
 description: VSTS release notes for July 13 2017
 ms.ContentId: 3db4e4d9-ac9e-426c-81bc-dac28ea16988
-ms.prod: devops
 ms.technology: devops-release-notes
 author: alexcnichols
 ms.author: alexn
@@ -139,7 +138,7 @@ When a new major (or preview) version of the task group is available, the defini
 ### Task group import and export
 Although task groups have enabled reuse within a project, we know that recreating a task group across projects and accounts can be painful. With task group import/export, as we’ve done for release definitions, now you can export as a JSON file and import where you want it. We’ve also enabled nested task groups, which first expand when they are exported.
 
-![Publish as preview](media/07_14_07.png)
+![Task group import and export.](media/07_14_07.png)
 
 ### Multi Configuration support in Server Side (Agentless) tasks
 By specifying variable multipliers for server side (agentless) tasks, you can now run the same set of tasks in a phase on multiple configurations, which run in parallel. 
@@ -174,7 +173,7 @@ Due to security concerns, we have added SVG constraints to make extensions safer
 * The badges provided in the manifest can not be SVGs unless they are from [approved badge providers](https://visualstudio.microsoft.com/docs/integrate/extensions/develop/manifest#approvedbadges).
 * Images in README.md and CHANGELOG.md can not be SVGs unless they are from approved badge providers.
 
-## Feedback
+## How to provide feedback
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize through the new feedback menu. 
 
 ![Feedback menu](media/07_14_00.png)

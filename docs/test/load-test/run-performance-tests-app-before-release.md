@@ -2,10 +2,8 @@
 title: Load test before release
 description: Run load tests on your app before release with Azure DevOps, Cloud-based Load Testing, and Visual Studio
 ms.assetid: 2C83E7E1-93BE-44F9-A041-AC23963404D3
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: tutorial
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -19,7 +17,7 @@ monikerRange: '> tfs-2018'
 [!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 Find performance issues before you release your app by running load tests with Visual Studio 
-Enterprise using [Cloud-based Load Testing](https://go.microsoft.com/fwlink/?LinkID=317257)
+Enterprise using [Cloud-based Load Testing](./get-started-simple-cloud-load-test.md)
 to provide virtual machines in the cloud that generate the load of many users accessing your web site at the same time.
 All you need is an [Azure DevOps subscription](https://go.microsoft.com/fwlink/?LinkId=307137).
 

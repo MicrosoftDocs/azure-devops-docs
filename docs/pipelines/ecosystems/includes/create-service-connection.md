@@ -1,6 +1,5 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
@@ -25,4 +24,4 @@ Now create the service connection:
    ![New service connection dialog box](../media/add-service-connection-dialog-box.png)
 
 > [!Tip]
-> If you need to create a connection to an Azure subscription that's owned by someone else, see [Create an Azure Resource Manager service connection with an existing service principal](https://docs.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal).
+> If you need to create a connection to an Azure subscription that's owned by someone else, see [Create an Azure Resource Manager service connection with an existing service principal](https://docs.microsoft.com/azure/devops/pipelines/library/connect-to-azure#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal).

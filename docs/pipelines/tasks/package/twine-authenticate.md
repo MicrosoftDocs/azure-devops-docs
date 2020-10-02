@@ -1,13 +1,8 @@
 ---
 title: Python Twine Upload Authenticate
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-python
 description: Sets up authentication with twine to Python feeds so you can publish Python packages in your pipeline. 
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 08/02/2019
 monikerRange: 'azure-devops'
 ---
@@ -46,12 +41,12 @@ In this example, we are setting authentication for publishing to a private Azure
 ```YAML 
 # Install python distributions like wheel, twine etc
 - script: |
-   pip install wheel
-   pip install twine
+     pip install wheel
+     pip install twine
   
 # Build the python distribution from source
 - script: |
-   python setup.py bdist_wheel
+     python setup.py bdist_wheel
    
 - task: TwineAuthenticate@1
   displayName: 'Twine Authenticate'
@@ -61,7 +56,7 @@ In this example, we are setting authentication for publishing to a private Azure
   
 # Use command line script to 'twine upload', use -r to pass the repository name and --config-file to pass the environment variable set by the authenticate task.
 - script: |
-   python -m twine upload -r myTestFeed --config-file $(PYPIRC_PATH) dist/*.whl
+     python -m twine upload -r myTestFeed --config-file $(PYPIRC_PATH) dist/*.whl
 ```
 
 The 'artifactFeed' input will contain the project and the feed name if the feed is project scoped. If the feed is organization scoped, only the feed name must be provided. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
@@ -73,12 +68,12 @@ In this example, we are setting authentication for publishing to official python
 ```YAML 
 # Install python distributions like wheel, twine etc
 - script: |
-   pip install wheel
-   pip install twine
+     pip install wheel
+     pip install twine
   
 # Build the python distribution from source
 - script: |
-   python setup.py bdist_wheel
+     python setup.py bdist_wheel
    
 - task: TwineAuthenticate@1
   displayName: 'Twine Authenticate'
@@ -88,7 +83,7 @@ In this example, we are setting authentication for publishing to official python
   
 # Use command line script to 'twine upload', use -r to pass the repository name and --config-file to pass the environment variable set by the authenticate task.
 - script: |
-   python -m twine upload -r "pypitest" --config-file $(PYPIRC_PATH) dist/*.whl
+     python -m twine upload -r "pypitest" --config-file $(PYPIRC_PATH) dist/*.whl
 ```
 
 <a name="versions" />
@@ -106,7 +101,7 @@ In this example, we are setting authentication for publishing to official python
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

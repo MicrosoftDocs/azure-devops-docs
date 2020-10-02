@@ -2,12 +2,8 @@
 title: NuGet Installer task Version 0.*
 ms.custom: seodec18
 description: Learn all about how you can use NuGet packages when building code in Azure Pipelines and Team Foundation Server
-ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: 43289B55-AB44-415C-BD44-DC6C8BC0479E
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 08/10/2016
 ---
 
@@ -15,7 +11,7 @@ ms.date: 08/10/2016
 
 **Azure Pipelines (deprecated) | TFS 2017 (deprecated in 2017 Update 2)**
 
-Use this task in a build or release pipeline to install and update NuGet package dependencies.
+Use this task to install and update NuGet package dependencies.
 
 ## Demands
 

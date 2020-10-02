@@ -2,12 +2,10 @@
 title: Restrictions and conventions for naming objects
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Requirements for labeling objects like organization, project, tags, templates, and more, by length, uniqueness, and special characters 
+description: Requirements for consistency in labeling objects like organizations, projects, tags, templates, and more, by length, uniqueness, and special characters. 
 ms.technology: devops-settings
-ms.prod: devops
 ms.topic: reference
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
@@ -16,7 +14,7 @@ ms.date: 02/25/2020
 
 # Naming restrictions and conventions  
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../includes/version-all.md)]  
 
 Most components in Azure DevOps must follow naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
 
@@ -33,7 +31,7 @@ The length restrictions in this article are measured by the number of Unicode ch
 
 As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](/windows/win32/fileio/naming-a-file).
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013 < azure-devops"
 
 <a id="ComputerNames">   </a>
 
@@ -43,8 +41,8 @@ As with other operating system files, ASCII control characters (ASCII 1-31) and 
 
 The computer name where you install Azure DevOps is associated with the name of the server. 
 Both the operating system and Active Directory impose certain restrictions on computer names as described in these articles:  
-*	[Rename a Computer that Hosts a Stand-Alone Instance of SQL Server](/sql/database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server)  
-*	[Windows Server Active Directory](https://support.microsoft.com/en-us/help/909264/naming-conventions-in-active-directory-for-computers-domains-sites-and)
+*    [Rename a Computer that Hosts a Stand-Alone Instance of SQL Server](/sql/database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server)  
+*    [Windows Server Active Directory](https://support.microsoft.com/en-us/help/909264/naming-conventions-in-active-directory-for-computers-domains-sites-and)
 
 ::: moniker-end
 
@@ -1087,7 +1085,7 @@ If the build computer is firewall enabled, make sure that the program <strong>tf
 
 ### Build types
 
-Build types configure the conditions under which a single solution or a set of solutions in a project are built. To conduct a build, you must either create a new build type or use an existing [build type](../../pipelines/get-started-designer.md).
+Build types configure the conditions under which a single solution or a set of solutions in a project are built. To conduct a build, you must either create a new build type or use an existing [build type](../../pipelines/create-first-pipeline.md).
 
 Build type names  must conform to the following restrictions.  
 
@@ -1124,7 +1122,7 @@ Build type names  must conform to the following restrictions.
 
 ### Build quality 
 
-The build quality lets you attach a quality level or completion state to a completed build. Team Foundation Build also lets you create new values for the [build quality type](../../pipelines/get-started-designer.md). See [Rate the quality of a completed build](/previous-versions/ms181734) for a list of the default build quality values.
+The build quality lets you attach a quality level or completion state to a completed build. Team Foundation Build also lets you create new values for the [build quality type](../../pipelines/create-first-pipeline.md). See [Rate the quality of a completed build](/previous-versions/ms181734(v%3dvs.140)) for a list of the default build quality values.
 
 Build quality names must conform to the following restrictions.  
 
@@ -1421,7 +1419,7 @@ Workspace names must conform to the following restrictions.
 
 ## Wiki page title naming conventions
 
-[!INCLUDE [temp](../../../docs/project/wiki/includes/wiki-naming-conventions.md)]
+[!INCLUDE [temp](../../project/wiki/includes/wiki-naming-conventions.md)]
 
 
 ## Related articles 

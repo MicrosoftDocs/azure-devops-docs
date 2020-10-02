@@ -1,13 +1,8 @@
 ---
 title: Building multiple branches
 description: Build multiple branches using Azure Pipelines or TFS
-ms.prod: devops
-ms.technology: devops-cicd
 ms.author: mlearned
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.assetid: E9684A1D-8D2B-4D5E-808A-D3677D314DB6
 ms.date: 04/02/2019
 monikerRange: '>=tfs-2017'
@@ -41,7 +36,7 @@ You can build every commit and pull request to your Git repository using Azure P
 A common workflow with Git is to create temporary branches from your master branch.  These branches are called topic or feature branches and help you isolate your work.  In this workflow, you create a branch for a particular feature or bug fix.  Eventually, you merge the code back to the master branch and delete the topic branch.
 
 #### [YAML](#tab/yaml/)
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Unless you specify a [trigger](../yaml-schema.md#push-trigger) in your YAML file, a change in any of the branches will trigger a build. Add the following snippet to your YAML file in the `master` branch. This will cause any changes to `master` and `feature/*` branches to be automatically built.
 
@@ -93,7 +88,7 @@ The master branch typically produces deployable artifacts such as binaries.  You
 #### [YAML](#tab/yaml/)
 Edit the `azure-pipelines.yml` file in your `master` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to [publish artifacts](../tasks/utility/publish-build-artifacts.md) task.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ```yaml
 - task: PublishBuildArtifacts@1
@@ -131,7 +126,7 @@ Use policies to protect your branches by requiring successful builds before merg
 ### GitHub repository
 
 #### [YAML](#tab/yaml/)
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Unless you specify `pr` triggers in your YAML file, pull request builds are automatically enabled for all branches.
 You can specify the target branches for your pull request builds. 

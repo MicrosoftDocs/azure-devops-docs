@@ -1,5 +1,5 @@
-- name: Learn about TFVC
-  href: overview.md
+- name: TFVC
+  href: index.yml
 - name: Quickstarts
   items:
   - name: Visual Studio
@@ -16,6 +16,8 @@
     href: get-code-reviewed-vs.md
 - name: Concepts
   items:
+  - name: What is TFVC?
+    href: what-is-tfvc.md
   - name: Compare TFVC and Git 
     href: comparison-git-tfvc.md
   - name: Use Git and TFVC
@@ -184,6 +186,8 @@
       href: permission-command.md
     - name: Proxy
       href: proxy-command.md
+    - name: Reconcile
+      href: reconcile-command.md
     - name: Resolve
       href: resolve-command.md
     - name: Rollback

@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Team Settings | REST API Reference for Team Foundation Server
 description: Work with team settings programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 7e545cbe-a332-448e-95e6-6a56e9c48249
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -104,7 +102,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber/_apis/work/teamsettings
 
 #### Sample code
 
-* [C# (GetTeamSettings method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/Work/TeamSettingsSample.cs#L15)
+* [C# (GetTeamSettings method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Work/TeamSettingsSample.cs#L15)
 
 ## Update a team's settings
 <a id="SetTeamSettings"></a>
@@ -207,4 +205,4 @@ PATCH https://mytfsserver/DefaultCollection/fabrikam-fiber/_apis/work/teamsettin
 
 #### Sample code
 
-* [C# (UpdateTeamSettings method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/Work/TeamSettingsSample.cs#L34)
+* [C# (UpdateTeamSettings method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Work/TeamSettingsSample.cs#L34)

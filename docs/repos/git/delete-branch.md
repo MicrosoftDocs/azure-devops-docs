@@ -3,11 +3,7 @@ title: Delete a branch in your Git repo
 titleSuffix: Azure Repos
 description: Use the branches page to delete a Git branch in Azure DevOps Services or Team Foundation Server
 ms.assetid: c033e522-5729-49b6-a27c-f13c9f0e57ba
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 10/11/2018
 monikerRange: '>= tfs-2017'
@@ -15,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Delete a Git branch from the web portal
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 >[!IMPORTANT]
 > This topic covers deleting a Git branch via the web in Azure DevOps Services and TFS. If you need to delete a Git branch in your own repo from Visual Studio or the command line,

@@ -1,31 +1,29 @@
 ---
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Create a service hook with Jenkins
 description: Use Jenkins with your Azure DevOps Services organization
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: phwilson
-author: chasewilson
-ms.date: 11/20/2019
+ms.date: 07/27/2020
 ---
 
 # Create a service hook for Azure DevOps Services and TFS with Jenkins
 
-[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
+[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
 
 If you use Jenkins to build your apps, you can store your code in Azure DevOps Services
 and continue to use Jenkins for your continuous integration builds.
 You can trigger a Jenkins build when you push code to your project's
 Git repository or when you check in code to Team Foundation version control.
 
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
+
 ## Configure Jenkins
 
 1. If you haven't already, set up a [Jenkins](https://jenkins-ci.org/) server.
 
-2. If you're setting up Jenkins on-premises, [enable HTTPS](https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins).
+2. If you're setting up Jenkins on-premises, [enable HTTPS](https://jenkins.io/doc/book/installing/#configuring-http).
 
 ## Set up a Jenkins build
 
@@ -54,11 +52,11 @@ to connect Azure DevOps Services to Jenkins.
 
 1. Go to your project Service Hooks page: 
 
-	`https://{orgName}/{project_name}/_settings/serviceHooks`
+    `https://{orgName}/{project_name}/_settings/serviceHooks`
 
-	![Project administration page](./media/add-devops-service-hook.png)
+    ![Project administration page](./media/add-devops-service-hook.png)
 
-	Select **Create Subscription**.
+    Select **Create Subscription**.
 
 1. Add Jenkins.
 
@@ -86,9 +84,9 @@ to connect Azure DevOps Services to Jenkins.
 
     `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-	![Project administration page](./media/add-service-hook.png)
+    ![Project administration page](./media/add-service-hook.png)
 
-	Select **Create Subscription**.
+    Select **Create Subscription**.
 
 1. Add Jenkins.
 

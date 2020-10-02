@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Follow these steps to resolve connection issues with Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-new-user
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
@@ -63,7 +61,7 @@ Your work or school Azure AD account doesn't have access, but your personal Micr
 
 ### Mitigation
 
-In some cases, you might not know you have two identities with the same sign in address. The work or school Azure AD account might have been created by an administrator when you were added to Office365 or Azure AD.
+In some cases, you might not know you have two identities with the same sign-in address. The work or school Azure AD account might have been created by an administrator when you were added to Office365 or Azure AD.
 
 To sign out of your current work or school Azure AD account, select **Sign in with your personal MSA account**, and then sign in by using your personal Microsoft account. After authentication, you should have access to the organization.
 
@@ -81,7 +79,7 @@ Your personal Microsoft account doesn't have access, but your Azure AD account d
 
 ### Mitigation
 
-If you enter your credentials correctly, but are redirected back to the original sign-in page, we recommend clearing all cookies, and then reattempting to sign in. If that doesn't fix the issue, contact customer support.
+When you get redirected back to the original sign-in page, we recommend that you clear all cookies, and then reattempt to sign in. If that doesn't fix the issue, contact [customer support](https://support.microsoft.com/).
 
 ::: moniker-end
 
@@ -109,7 +107,7 @@ For additional troubleshooting tips, see [TF31002: Unable to connect to this Tea
 
 ## Switch organizations
 
-When you use two or more organizations that are linked to Azure AD, such as organizations  created in the Azure portal, the sign-out function might not work as expected. For example, you can't switch between different organizations to connect to multiple organizations that are linked to directory tenants.
+When you use two or more organizations that are linked to Azure AD, the sign-out function might not work as expected. For example, you can't switch between different organizations to connect to multiple organizations that are linked to directory tenants.
 
 When this problem occurs, a blank screen flashes several times. Then, one of the following error messages appears after you connect to or add a new connection in the **Connect to Team Foundation Server** dialog box:
 
@@ -127,17 +125,17 @@ Another solution is to delete your browser cookies. For more information, see th
 
 ## Connect to TFS with Secure Sockets Layer
 
-If you connect to a TFS instance that has Secure Sockets Layer (SSL) configured, you must install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS - Configuring client computers](/azure/devops/server/admin/setup-secure-sockets-layer#config-client-computers). 
+If you connect to a TFS instance that has Secure Sockets Layer (SSL) configured, install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS - Configuring client computers](/azure/devops/server/admin/setup-secure-sockets-layer#config-client-computers). 
 
 ## Clear the cache on client computers
 
-When the on-premises TFS configuration changes, such as when you move or split a project collection, you may need to clear the cache.
+When the on-premises TFS configuration changes, such as when you move or split a project collection, clear the cache.
 
 1. Sign in to your client computer for TFS by using the credentials of the user whose cache you want to clear.
 
 2. Close any open instances of Visual Studio.
 
-3. Open a browser and go to one of the following folders, depending on the operating system that's running on your computer:
+3. Open a browser and go to one of the following folders, depending on the operating system your computer runs on:
 
     - **Windows 10**
         *Drive*:\\Users\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\6.0\Cache

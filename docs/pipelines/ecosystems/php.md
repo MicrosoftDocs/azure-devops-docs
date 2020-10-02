@@ -1,11 +1,8 @@
 ---
 title: Build and test PHP apps
 description: Build and test PHP apps with Azure Pipelines, Azure DevOps
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
-ms.manager: mijacobs
 ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18
@@ -79,7 +76,7 @@ To use Composer to install dependencies, add the following snippet to your `azur
 To run tests with phpunit, add the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
-- script: phpunit
+- script: ./phpunit
   displayName: 'Run tests with phpunit'
 ```
 

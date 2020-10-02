@@ -3,12 +3,7 @@ title: Migrate from Travis to Azure Pipelines
 titleSuffix: Azure Pipelines
 description: How to migrate from Travis to Azure Pipelines
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: F4592A2E-714A-4208-AD46-00D1A6D709C4
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 12/20/2018
 monikerRange: azure-devops
 ---
@@ -117,7 +112,7 @@ dependency installation step or execution inside a docker container:
 | `julia`       | `sudo apt-get install julia`<br>`julia -e "using Pkg; Pkg.build(); end"`<br>`julia --check-bounds=yes -e "Pkg; Pkg.test(coverage=true); end"` |
 | `nix`         | `docker run -v $(pwd):/src -w /src nixos/nix nix-build`
 | `perl6`       | `sudo apt-get install rakudo`<br>`PERL6LIB=lib prove -v -r --exec=perl6 t/`
-| `rust`        | `sudo apt-get install rustc`<br>`cargo build --verbose`<br>`cargo test --verbose` |
+| `rust`        | `curl -sSf https://sh.rustup.rs | sh -s -- -y`<br>`cargo build --verbose`<br>`cargo test --verbose` |
 | `scala`       | <code>echo "deb https://dl.bintray.com/sbt/debian /" &#124; sudo tee -a /etc/apt/sources.list.d/sbt.list</code><br>`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823`<br>`sudo apt-get update`<br>`sudo apt-get install sbt`<br>`sbt ++2.11.6 test` |
 | `smalltalk`   | `docker run -v $(pwd):/src -w /src hpiswa/smalltalkci smalltalkci` |
 

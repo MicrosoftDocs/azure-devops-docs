@@ -2,10 +2,7 @@
 title: Deploy to VMware
 description: Provision and manage virtual machines (VMs) in VMware vCenter Server
 ms.assetid: 1A6903E4-B0B3-426E-9E07-67492ADB1F42
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

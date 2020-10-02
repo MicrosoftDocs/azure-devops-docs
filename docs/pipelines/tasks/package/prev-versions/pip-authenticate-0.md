@@ -1,11 +1,8 @@
 ---
-title: Python Pip Authenticate
-ms.custom: seodec18
-description: Sets up authentication with pip so you can perform pip commands in your pipeline. 
+title: Python Pip Authenticate version 0
+ms.custom: seodec18, devx-track-python
+description: Learn how Python Pip Authenticate version 0 configures authentication with pip so you can perform pip commands in your pipeline.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 10/31/2018
@@ -39,5 +36,5 @@ Provides authentication for the `pip` client that can be used to install Python 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 

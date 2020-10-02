@@ -1,13 +1,9 @@
 ---
 title: Use packages from nuget.org
-description: Use packages from npmjs.com in Azure DevOps Services and Team Foundation Server via upstream sources or scopes
+description: Use packages from nuget.org in Azure DevOps Services and Team Foundation Server via upstream sources or scopes.
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 01/20/2018
 monikerRange: '>= tfs-2018'
 ---
@@ -29,7 +25,7 @@ To learn more about the concept of upstream sources, please see the [concepts pa
 
 ## Enable the upstream on a new feed
 
-1. [Create a new feed](../feeds/create-feed.md). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
+1. [Create a new feed](../index.yml). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
 1. [Update your NuGet configuration](#update-nuget-configuration).
 
 <a name="existing-feed"></a>
@@ -49,7 +45,7 @@ To learn more about the concept of upstream sources, please see the [concepts pa
 
 ### Adding upstreams to a popular feed
 
-Once you enable the nuget.org upstream source, any <!-- what permissions tier? --> that runs a package request against your feed can save packages from nuget.org into your feed. If you've distributed your feed URL to a large set of consumers, this means that users outside your team could save packages you weren't expecting into your feed.
+Once you enable the nuget.org upstream source, any `Owner` or `Contributor` that runs a package request against your feed can save packages from nuget.org into your feed. If you've distributed your feed URL to a large set of consumers, this means that users outside your team could save packages you weren't expecting into your feed.
 
 If you're concerned about this, consider creating a new feed then adding nuget.org and your current feed as upstream sources to that feed.
 
@@ -81,6 +77,3 @@ You can see the packages you have saved in your feed by selecting the appropriat
 ![Viewing your cached packages](media/view-cached-packages.png)
 
 ::: moniker-end
-
-
-

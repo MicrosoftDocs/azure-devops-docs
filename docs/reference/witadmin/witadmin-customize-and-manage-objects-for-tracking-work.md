@@ -2,14 +2,13 @@
 title: witAdmin:Customize and manage objects for tracking work 
 titleSuffix: TFS  
 description: Tracks your team's progress by creating and customizing objects that track work items.
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: witadmin
 ms.assetid: 7853f6db-98c9-4012-b6a5-51618c41d58c
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 03/20/2018
 ---
 

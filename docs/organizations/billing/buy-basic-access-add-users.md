@@ -3,25 +3,23 @@ title: Manage paid access for users in Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Assign paid access and control the default access of your new users in Azure DevOps
-ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/10/2019
+ms.date: 02/27/2020
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Manage paid access for users
+# Manage paid access for users
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 > [!NOTE]
-> We’ve recently simplified Azure DevOps billing, so now rather than complete a purchase process, you assign and remove users. You're billed according to these assignments. This article is repurposed to help you take advantage of the tools we have for managing paid access for users. This way you only pay for what you need.
+> We've recently simplified Azure DevOps billing, so now rather than complete a purchase process, you assign and remove users. You're billed according to these assignments. This article is repurposed to help you take advantage of the tools we have for managing paid access for users. This way you only pay for what you need.
 
-In this quickstart, learn how to manage paid access to [Azure Boards](https://azure.microsoft.com/services/devops/boards/), [Azure Repos](https://azure.microsoft.com/services/devops/repos/) and [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/).
+Learn how to manage paid access to [Azure Boards](https://azure.microsoft.com/services/devops/boards/), [Azure Repos](https://azure.microsoft.com/services/devops/repos/) and [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/).
 
 Visual Studio subscribers get access included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time.
 
@@ -32,7 +30,7 @@ Visual Studio subscribers get access included with their subscription, and their
 Ensure the following is true:
 
 * [Billing is set up for your organization](set-up-billing-for-your-organization-vs.md)
-* You have [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* You have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
 
 <a name="buy-access-vs-marketplace"></a>
 
@@ -49,7 +47,7 @@ Keep the following information in mind:
 
 ## Select the default access level for new users
 
-After you set up billing for your organization all new users get the free Stakeholder access if they’re added directly to a Project. That way you aren't surprised by charges for new users who weren’t added directly to the organization by a Project Collection Administrator. 
+After you set up billing for your organization all new users get the free Stakeholder access if they're added directly to a Project. That way you aren't surprised by charges for new users who weren't added directly to the organization by a Project Collection Administrator. 
 
 To change the access level for new users added to projects, do the following tasks:
 
@@ -69,7 +67,7 @@ To change the access level for new users added to projects, do the following tas
 
 ## Automate access level assignment with group rules
 
-Larger organizations may want to automate access level assignments, so you don't have to manually do so every time a user is added or removed. [Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) are a great way to automate access level assignment for your organization, and under assignment-based billing, you’ll find that assignment errors are no longer very common.
+Larger organizations may want to automate access level assignments, so you don't have to manually do so every time a user is added or removed. [Group rules](../accounts/assign-access-levels-by-group-membership.md) are a great way to automate access level assignment for your organization, and under assignment-based billing, you'll find that assignment errors are no longer very common.
 
 ## Reduce charges for users who no longer need access
 
@@ -93,7 +91,25 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
 ## Pay for a user once across multiple organizations
 
-If you have more than one Azure DevOps organization, you can turn on multi-org billing and pay for each Basic or Basic + Test Plan user once, for all organizations under the same billing Azure subscription. For more details, see the [multi-org billing FAQ](billing-faq.md#multi-org-billing).
+If you have more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plan** user once, for all organizations under the same billing Azure subscription. For more details, see [multi-organization billing FAQs](billing-faq.md#multi-organization-billing). Complete the following steps.
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+
+3. Select **Billing**.
+
+   ![Select Billing from Organization settings](media/shared/select-billing-organization-settings.png)
+
+4. Select **Configure user billing**.
+   
+   ![Select Configure user billing](media/buy-more-basic-access/select-configure-user-billing.png)
+
+5. Select **Multi-organization**, and then select **Save**.
+
+   ![Select Multi-organization](media/buy-more-basic-access/select-multi-organization-billing.png)
 
 ## Next steps
 

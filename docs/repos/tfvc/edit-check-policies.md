@@ -3,11 +3,7 @@ title: Edit Check-In Policies
 titleSuffix: Azure Repos
 description: Edit Check-In Policies
 ms.assetid: 3bc445f1-d354-4991-9381-f10739b5d0fe
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/18/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Edit Check-In Policies
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Administrators of Team Foundation version control can add and edit check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to version control; for example a user can be required to associate a work item with a changeset. For more information on check-ins, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411). Before editing a check-in policy, you must first create one. For more information, see [Add Check-In Policies](add-check-policies.md). The default available check-in policy types include:
 

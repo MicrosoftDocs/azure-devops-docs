@@ -3,9 +3,7 @@ title: New work item web form
 titleSuffix: TFS 
 description: The new web form and work item tracking experience supports more integrated and collaborative experiences
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017 <= azure-devops-2019'
@@ -76,7 +74,7 @@ Within the discussion section, you can use the [<strong>@mention</strong> contro
 
 ### Access to other tasks
 
-Looking for the toolbar task options? You access them now through the ![](../../media/icons/actions-icon.png) actions icon.  
+Looking for the toolbar task options? You access them now through the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon.  
 
 <img src="../../boards/backlogs/media/new-form-action-menu.png" alt="New form, User story, Actions menu" style="border: 1px solid #C3C3C3;" />  
 
@@ -94,7 +92,7 @@ As this switch is set on a per-user basis, other users will continue to see the 
 <a id="switch-back">  </a> 
 ### Switch back to the old form 
 
-If your admin has enabled opt-in to support switch back. Simply choose the ![](../../media/icons/actions-icon.png) actions icon to open the context menu to switch back to the old layouts.  
+If your admin has enabled opt-in to support switch back. Simply choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon to open the context menu to switch back to the old layouts.  
 
 ![New web form, user story, Back to old form menu option](../media/m-new-form-user-story-switch-to-old-form.png)
 

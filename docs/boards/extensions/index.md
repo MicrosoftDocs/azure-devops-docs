@@ -4,9 +4,7 @@ description: Learn about Azure Boards extensions
 titleSuffix: Azure Boards 
 ms.custom: extensions
 ms.technology: devops-agile
-ms.prod: devops
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -20,7 +18,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Integration 
 
@@ -32,7 +30,14 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 ## Product planning 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= tfs-2017 <= azure-devops"
+
+> [!NOTE]   
+> Several extensions, such as the Feature Timeline and Epic Roadmap extension and the Dependency Tracker extension, are not supported features of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
 
 - [Delivery Plans](../plans/review-team-plans.md)
 - [Feature Timeline](feature-timeline.md)
@@ -70,19 +75,12 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 ::: moniker-end
 
 
-
-
-
-
-
-
-
 ## Customize work item types
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 - [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
-- [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
+
 
 ::: moniker-end
 
@@ -92,15 +90,17 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) 
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)
 - [Split!](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-extension-split-work)
-- [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
+ 
 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
-## Query 
+## Query and reporting
 
 - [Wiql Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
+- [Wiql to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata) 
+- [Open in Power BI](https://marketplace.visualstudio.com/items?itemName=stansw.vsts-open-in-powerbi) 
 
 ::: moniker-end
 
@@ -118,11 +118,20 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
 
+ 
 ## Command line interface
 
+::: moniker range=">= azure-devops-2020"
+
 - [Azure DevOps CLI](../../cli/index.md)
+- [Azure Boards Teams Tool CLI](https://marketplace.visualstudio.com/items?itemName=jessehouwing.azure-boards-teams-tool&ssr=false#overview)
+
+::: moniker-end
+
+
+::: moniker range="<= azure-devops-2019"
+
 - [Azure Boards Teams Tool CLI](https://marketplace.visualstudio.com/items?itemName=jessehouwing.azure-boards-teams-tool&ssr=false#overview)
 
 ::: moniker-end

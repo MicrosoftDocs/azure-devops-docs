@@ -3,12 +3,7 @@ title: Service Containers
 titleSuffix: Azure Pipelines & TFS
 description: Run containerized services alongside pipeline jobs
 ms.assetid: a6af47c5-2358-487a-ba3c-d213930fceb8
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 01/14/2019
 monikerRange: azure-devops
 ---
@@ -32,9 +27,8 @@ Service containers must define a `CMD` or `ENTRYPOINT`.
 The pipeline will `docker run` the provided container without additional arguments.
 
 Azure Pipelines can run Linux or [Windows Containers](/virtualization/windowscontainers/about/). Use either
-the Hosted Ubuntu 1604 pool for Linux containers, or the Hosted Windows Container pool for Windows containers.
+hosted Ubuntu for Linux containers, or the Hosted Windows Container pool for Windows containers.
 (The Hosted macOS pool does not support running containers.)
-If you want to use a self-hosted agent, it must be running [Windows Server version 1803](/windows-server/get-started/get-started-with-1803) or newer.
 
 # [YAML](#tab/yaml)
 
@@ -147,9 +141,9 @@ container: my_container
 services:
   postgres: $[ variables['postgresService'] ]
 steps:
-  - script: |
-      apt install -y postgresql-client
-      psql --host=postgres --username=postgres --command="SELECT 1;"
+- script: |
+    apt install -y postgresql-client
+    psql --host=postgres --username=postgres --command="SELECT 1;"
 ```
 
 ## Ports
@@ -158,7 +152,7 @@ When specifying a container resource or an inline container, you can specify an 
 
 ```yaml
 resources:
-  container:
+  containers:
   - container: my_service
     image: my_service:latest
     ports:

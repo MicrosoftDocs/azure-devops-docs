@@ -2,12 +2,8 @@
 title: Guide for getting started with Azure Repos 
 titleSuffix: Azure Repos 
 description: Sign up and get started using Azure Repos 
-ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.date: 09/10/2018
 ms.custom: seo-javascript-september2019
 monikerRange: '>= tfs-2013'

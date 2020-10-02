@@ -2,10 +2,7 @@
 title: Download Build Artifacts task
 description: Download Build Artifacts task for use in a build or release pipeline
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: a433f589-fce1-4460-9ee6-44a624aeb1fb
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -17,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to download build artifacts.
+Use this task to download build artifacts.
 
 ::: moniker range="> tfs-2018"
 

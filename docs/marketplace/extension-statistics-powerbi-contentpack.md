@@ -1,11 +1,9 @@
 ---
 title: Extension Statistics Power BI Content pack  | Visual Studio Marketplace
 titleSuffix: Visual Studio Marketplace
-description: Get started using Power BI to analyze data collected for your extension on Visual Studio Marketplace 
-ms.prod: devops
+description: Get started using the Extension Statistics Power BI content pack from Visual Studio Marketplace to analyze data collected for your extension.
 ms.technology: devops-marketplace
 ms.assetid: 435be0b3-ec45-41dd-a804-03b9342fa7cc
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
@@ -15,7 +13,7 @@ ms.date: 11/25/2019
 
 # Extension Statistics Power BI content pack
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
 
 Gain insight and analyze the progress of your extension by using Extension Statistics Power BI content pack. All data elements in the extension hub are also available in Power BI content pack.
 The content pack has a complete analytic data model, (tables, relationships, and measures), a set of default reports, and a default dashboard. Reports and dashboards are fully customizable, but the data model isn't.
@@ -34,12 +32,12 @@ The content pack has a complete analytic data model, (tables, relationships, and
 
 4. Select **Get** under **Services** on the Get Data page.
 
-    ![get-data-final.png](media/get-data-final.png)
+    ![Screenshot showing Get under Services.](media/get-data-final.png)
 
 5. Search for Marketplace and select the Visual Studio Marketplace Extension Statistics and **Get it now**.
 
-    ![connector](media/search.png)
-    ![connector](media/content-pack-details.png)
+    ![Search for Marketplace and select the Visual Studio Marketplace Extension Statistics.](media/search.png)
+    ![View content pack details.](media/content-pack-details.png)
 
 6. Enter the Marketplace publisher ID that you want data for, and then select **Next**.
 
@@ -65,7 +63,7 @@ The content pack has a complete analytic data model, (tables, relationships, and
 
 ## Available data and reports
 
-Once you're connected, you see an initial dashboard with details on all of your extensions. All data available in the Marketplace extension hub is available in the content pack. For more information about the extension, see [Extension reporting hub](/azure/devops/extend/extension-report).
+Once you're connected, you see an initial dashboard with details on all of your extensions. All data available in the Marketplace extension hub is available in the content pack. For more information about the extension, see [Extension reporting hub](../extend/extension-report.md).
 
 The Power BI content pack provides data for all extensions and you can use the filters to view data for an extension or use the extension report to compare data between extensions.
 

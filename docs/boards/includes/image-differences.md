@@ -1,10 +1,14 @@
 ---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/09/2020
 ---
 
 <a id="image-diff"></a>  
 
-<!---
+
 
 ::: moniker range="azure-devops"
 
@@ -13,11 +17,10 @@ ms.topic: include
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 > [!NOTE]    
-> The images you see from your web portal may differ from the images you see in this article. These differences result from updates made to your on-premises TFS. However, the basic functionality available to you remains the same unless explicitly mentioned. 
+> The images you see from your web portal may differ from the images you see in this article. These differences result from updates made to your on-premises Azure DevOps. However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
 ::: moniker-end
 
--->

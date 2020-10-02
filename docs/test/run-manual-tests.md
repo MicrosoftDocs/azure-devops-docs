@@ -2,10 +2,8 @@
 title: Run manual tests
 description: Test tools - Run manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -48,12 +46,15 @@ that you need for more advanced testing features.
 
    ![Use Microsoft Test Runner to record your test results](media/run-manual-tests/RunTestsStartApp.png)
 
-1. Mark each test step as either passed or failed based on the expected results. 
-   If a test step fails, you can enter a comment on why it failed  or
+1. Mark each test step as either passed or failed based on the expected results. If a test step fails, you can enter a comment on why it failed  or
    [collect diagnostic data for the test](collect-diagnostic-data.md).
 
    ![Mark test steps](media/run-manual-tests/RunTest_3.png)
 
+      > [!IMPORTANT]
+      >  Any test step that has expected result is called a validation test step. Testers must mark a test step with a status if it is a validation test step. The overall result for a test case reflects the status of all the test steps that the tester marked. Therefore, the test case will have a status of failed if the tester marked any test step as failed or not marked.  
+
+ 
 1. Create a bug to describe what failed.
 
    ![Submit a bug](media/run-manual-tests/RunTest_4.png)

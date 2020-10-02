@@ -2,10 +2,7 @@
 title: Deploy apps to an Azure VM Scale Set
 description: Implement deployment of your app to an Azure Virtual Machine Scale Set without learning concepts such as provisioners and builders
 ms.assetid: C08EC3FB-6787-4956-86D3-B4085B69FCBA
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
@@ -122,7 +119,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 1. Create a new release, select the latest build, and 
    ensure that the application has been deployed correctly and has generated the VHD.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

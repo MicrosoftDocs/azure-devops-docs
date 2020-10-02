@@ -3,11 +3,7 @@ title: Workfold Command
 titleSuffix: Azure Repos
 description: Workfold Command
 ms.assetid: f4d18139-bd2e-4621-be4e-a761ca537280
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Workfold Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Creates, modifies, or displays information about the mappings between your workspace folders and the folders on the server for Team Foundation version control.
 
@@ -79,7 +75,7 @@ tf workfold /decloak serverfolder
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains the folders that you want to compare with server folders (for example, <a href="http://myserver:8080/tfs/DefaultCollection/" data-raw-source="http://myserver:8080/tfs/DefaultCollection/">http://myserver:8080/tfs/DefaultCollection/</a>).</p></td>
+<td><p>The URL of the project collection that contains the folders that you want to compare with server folders (for example, http://myserver:8080/tfs/DefaultCollection/).</p></td>
 </tr>
 <tr>
 <td><p><i>username</i></p></td>

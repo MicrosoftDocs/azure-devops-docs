@@ -41,6 +41,7 @@ For example, `VSTS_AGENT_INPUT_PASSWORD` instead of specifying `--password`.
 root of the agent directory. The work directory is owned by a given
 agent and should not share between multiple agents.
 - `--acceptTeeEula` - accept the Team Explorer Everywhere End User License Agreement (macOS and Linux only)
+- `--disableloguploads` - don't stream or send console log output to the server. Instead, you may retrieve them from the agent host's filesystem after the job completes.
 
 ### Windows-only startup
 - `--runAsService` - configure the agent to run as a Windows service (requires administrator permission)

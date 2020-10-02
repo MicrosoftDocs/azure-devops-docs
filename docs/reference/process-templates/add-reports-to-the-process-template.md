@@ -2,14 +2,12 @@
 title: Add reports via a process template 
 titleSuffix: TFS
 description: You can specify the folder structure and set of reports that will appear by using the Reporting plugin for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: f7efa9a7-5de0-4bf2-9a9d-c53234b0513b
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= azure-devops-2019' 
+monikerRange: '< azure-devops' 
 ms.date: 04/10/2018
 ---
 

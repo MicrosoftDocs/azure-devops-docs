@@ -1,11 +1,9 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 02/19/2020
+ms.date: 07/22/2020
 ---
 
 Publish Maven artifacts to a feed in **Azure Artifacts** to share them with your team and organization.
@@ -19,8 +17,28 @@ mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -Dgro
 
 1. [Set up the Maven client with your feed](../../maven/pom-and-settings.md).
 
-2. Navigate to the directory containing your Maven artifact's **pom.xml** file.  If you've just created an artifact, the **pom.xml** file will be in the *myFirstApp* folder.
+2. Navigate to the directory containing your Maven artifact's **pom.xml** file.  If you've just created an artifact, the **pom.xml** file will be in the _myFirstApp_ folder.
 
-3. From the directory containing your **pom.xml** file, run the command, `mvn build` and `mvn deploy`. The Maven artifact should appear in your feed.
+3. From the directory containing your **pom.xml** file, run the following commands to build and deploy your Maven artifact:
 
-See the [Maven CLI docs](https://maven.apache.org/plugins/maven-deploy-plugin/) for more publish options.
+    - **Build your package**:
+        ```Command
+        mvn build
+        ``` 
+    - **Publish your package**:
+    
+        ```Command
+        mvn deploy
+        ``` 
+
+Your Maven artifact should appear in your feed now. See the [Apache Maven Deploy Plugin](https://maven.apache.org/plugins/maven-deploy-plugin/) to learn more about Maven deployment.
+
+> [!TIP]
+> If you want to publish a 3rd party assembly to a Maven feed, you can use the [deploy:deploy-file Mojo](https://maven.apache.org/plugins/maven-deploy-plugin/usage.html). This mojo is used primarily to publish artifacts that were not built by Maven and you can use it with or without a POM file.
+
+```Command
+mvn deploy:deploy-file -Dpackaging="jar" -DrepositoryId="MyFeedName" -Durl="MyFeedURL" -DgroupId="MyGroup" -DartifactId="myFirstApp" -Dversion="jarFileVersion" -Dfile="jarFileLocalPath"
+```
+
+> [!IMPORTANT]
+> Maven snapshot artifacts are not currently supported in upstream sources.

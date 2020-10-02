@@ -2,7 +2,6 @@
 title: Create a dashboard without a team - Sprint 162 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 12/16/2019
 description: In the **Sprint 162 Update** of Azure DevOps, we are excited to announce that you can create a dashboard without associating it to a team.
@@ -52,7 +51,7 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the help menu to report a problem or provide a suggestion.
 

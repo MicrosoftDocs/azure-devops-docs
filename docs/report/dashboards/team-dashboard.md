@@ -3,11 +3,9 @@ title: Team home page or dashboard
 titleSuffix: TFS
 description: View progress and gain quick access to code, builds, and work items from the team home page in Team Foundation Server (TFS)  
 ms.custom: dashboards
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 2F69B746-DB11-4AD2-8003-5D39D0D17070  
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= tfs-2015'

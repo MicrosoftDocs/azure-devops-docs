@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Save project data, like source code, custom build templates, build data, and work items.
 ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
-ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018
@@ -16,9 +14,9 @@ monikerRange: '>= tfs-2013'
 
 # Save project data
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
-When you delete a project, you cannot recover its data later. Therefore, you should save project data.
+When you delete a project, you can't recover its data later. So, you should save project data.
 
 You can use the following procedures to save data that users most care about, such as source code, build data, and work items.
 
@@ -41,7 +39,7 @@ You can use the following procedures to save data that users most care about, su
 
     If you use Git, [clone your repositories](../../repos/git/gitquickstart.md) to retain the full project history and all the branches.
 
-* **Build data**: To save logs and data in your drop build folders, see [View build results](https://msdn.microsoft.com/library/ms181733.aspx).
+* **Build data**: To save logs and data in your drop build folders, see [View build results](/previous-versions/ms181733(v=vs.140)).
 
 * **Work item tracking data:** Create a work item query and open it [using Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md). Save the Excel spreadsheet.
 

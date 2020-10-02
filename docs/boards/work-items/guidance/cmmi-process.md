@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 ms.custom: work-items
 description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -18,7 +16,7 @@ ms.date: 04/11/2019
  
 <meta name="keywords" content="CMMI tools" />
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They are based on the [Capability Maturity Model Integration (CMMI)](https://msdn.microsoft.com/library/ee461556.aspx) process.
 
@@ -75,13 +73,13 @@ All processes&mdash;Agile, Scrum, and CMMI&mdash;support <a href="../../../repor
 ## Create light-weight charts  
 To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
 
-[![Edit query](../../../report/dashboards/media/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/media/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/media/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
+[![Edit query](../../../report/dashboards/media/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/media/gs-chart-create.png)](../../../report/charts.md)[![Add dashboard.](../../../report/dashboards/media/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
 
 [!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 <a id="reports"></a>
 ## SQL Server reports  
 
@@ -98,7 +96,7 @@ If you need to add reporting services or update reports to the latest versions, 
 
 You can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to perform common tasks quickly. These dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
 
-To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
+To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../project/configure-or-add-a-project-portal.md).
 
 ::: moniker-end
 
@@ -115,7 +113,7 @@ As updates are made to the CMMI process template, the version number is updated.
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | CMMI name | Major version |
 > |-------------|-------------------|--------------|
-> | Azure DevOps Server 2019 | CMMI | 17 |
+> | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | CMMI | 17 |
 > | TFS 2018 | CMMI | 16 |
 > | TFS 2017 | CMMI | 15 |
 > | TFS 2015 | CMMI | 7 |

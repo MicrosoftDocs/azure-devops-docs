@@ -3,10 +3,7 @@ title: .NET Core CLI task
 ms.custom: seodec18
 description: Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 5541a522-603c-47ad-91fc-a4b1d163081b
-ms.manager: mijacobs
 ms.author: puagarw
 author: pulkitaggarwl
 ms.date: 10/30/2019
@@ -19,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to build, test, package, or publish a dotnet application, or to run a custom dotnet command. For package commands, this task supports NuGet.org and authenticated feeds like Package Management and MyGet.
+Use this task to build, test, package, or publish a dotnet application, or to run a custom dotnet command. For package commands, this task supports NuGet.org and authenticated feeds like Package Management and MyGet.
 
 If your .NET Core or .NET Standard build depends on NuGet packages, make sure to add two copies of this step: one with the `restore` command and one with the `build` command.
 
@@ -40,7 +37,7 @@ If your .NET Core or .NET Standard build depends on NuGet packages, make sure to
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td><code>command</code><br/>Command</td><td>The dotnet command to run. Select <code>custom</code> to add arguments or use a command not listed here.<br/>Options: <code>build</code>, <code>push</code>, <code>pack</code>, <code>restore</code>, <code>run</code>, <code>test</code>, <code>custom</code></td></tr>
+<tr><td><code>command</code><br/>Command</td><td>The dotnet command to run. Select <code>custom</code> to add arguments or use a command not listed here.<br/>Options: <code>build</code>, <code>push</code>, <code>pack</code>, <code>publish</code>, <code>restore</code>, <code>run</code>, <code>test</code>, <code>custom</code></td></tr>
 <tr><td><code>selectOrConfig</code><br/>Feeds to use</td><td>You can either choose to select a feed from Azure Artifacts and/or NuGet.org here, or commit a NuGet.config file to your source code repository and set its path using the <code>nugetConfigPath</code> argument.<br/>Options: <code>select</code>, <code>config</code><br/>Argument aliases: <code>feedsToUse</code></td></tr>
 <tr><td><code>versioningScheme</code><br/>Automatic package versioning</td><td>Cannot be used with include referenced projects. If you choose &#39;Use the date and time&#39;, this will generate a <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[SemVer](https://semver.org/spec/v1.0.0.html)">SemVer</a>-compliant version formatted as <code>X.Y.Z-ci-datetime</code> where you choose X, Y, and Z.
 
@@ -63,7 +60,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>searchPatternPack</code><br/>Path to csproj or nuspec file(s) to pack</td><td>Pattern to search for csproj or nuspec files to pack. You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with <code>!</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.csproj;!&ast;&ast;/&ast;.Tests.csproj</code><br/>Argument aliases: <code>packagesToPack</code></td></tr>
 <tr><td><code>configurationToPack</code><br/>Configuration to Package</td><td>When using a csproj file this specifies the configuration to package.<br/>Argument aliases: <code>configuration</code></td></tr>
 <tr><td><code>outputDir</code><br/>Package Folder</td><td>Folder where packages will be created. If empty, packages will be created alongside the csproj file.<br/>Argument aliases: <code>packDirectory</code></td></tr>
-<tr><td><code>nobuild</code><br/>Do not build</td><td>Don&#39;t build the project before packing. Corresponds to the <code>--no-build</code> command line parameter.</td></tr>
+<tr><td><code>nobuild</code><br/>Do not build</td><td>Don&#39;t build the project before packing. Corresponds to the <code>--no-build</code> parameter of the `build` command.</td></tr>
 <tr><td><code>includesymbols</code><br/>Include Symbols</td><td>Additionally creates symbol NuGet packages. Corresponds to the <code>--include-symbols</code> command line parameter.</td></tr>
 <tr><td><code>includesource</code><br/>Include Source</td><td>Includes source code in the package. Corresponds to the <code>--include-source</code> command line parameter.</td></tr>
 <tr><td><code>publishWebProjects</code><br/>Publish Web Projects</td><td>If true, the task will try to find the web projects in the repository and run the publish command on them. Web projects are identified by presence of either a web.config file or wwwroot folder in the directory.</td></tr>
@@ -108,9 +105,9 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
   inputs:
     command: 'build'
     projects: |
-     src/proj1/proj1.csproj 
-     src/proj2/proj2.csproj 
-     src/other/other.sln    # Pass a solution instead of a csproj.
+      src/proj1/proj1.csproj 
+      src/proj2/proj2.csproj 
+      src/other/other.sln    # Pass a solution instead of a csproj.
 ```
 
 ## Push
@@ -161,17 +158,21 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 
 ## Publish
 
-### Publish a package to external endpoint
+### Publish projects to specified folder
 
 ```YAML
-# Publish package to an external endpoint with a stored NuGet config file and stored credentials.
+# Publish projects to specified folder.
 - task: DotNetCoreCLI@2
+  displayName: 'dotnet publish'
   inputs:
-    command: 'pack'
-    selectOrConfig: 'config'
-    nugetConfigPath: '$(System.DefaultWorkingDirectory)/NuGet.config'
-    externalEndpoints: $(externalFeedCredential)
+    command: publish
+    publishWebProjects: false
+    projects: '**/*.csproj'
+    arguments: '-o $(Build.ArtifactStagingDirectory)/Output'
+    zipAfterPublish: true
+    modifyOutputPath: true
 ```
+
 ## Test
 
 ### Run tests in your repository
@@ -183,7 +184,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
     command: 'test'
 ```
 
-## Q & A
+## FAQ
 
 ### Why is my build, publish, or test step failing to restore packages?
 
@@ -204,10 +205,10 @@ However, for situations where a team of developers works on a large range of pro
 
 ### File structure for output files is different from previous builds
 
-Azure DevOps hosted agents are configured with .Net Core 3.0, 2.1 and 2.2.
-CLI for .Net Core 3.0 has a different behavior while publishing projects using output folder argument. When publishing projects with the output folder argument (-o), the output folder is created in the root directory and not in the project file’s directory. Hence while publishing more than one projects, all the files are published to the same directory, which causes an issue.
+Azure DevOps hosted agents are configured with .NET Core 3.0, 2.1 and 2.2.
+CLI for .NET Core 3.0 has a different behavior while publishing projects using output folder argument. When publishing projects with the output folder argument (-o), the output folder is created in the root directory and not in the project file’s directory. Hence while publishing more than one projects, all the files are published to the same directory, which causes an issue.
 
-To resolve this issue, use the *Add project name to publish path* parameter (modifyOutputPath in YAML) in the .Net Core CLI task. This creates a sub folder with project file’s name, inside the output folder. Hence all your projects will be published under different sub-folder’s inside the main output folder.
+To resolve this issue, use the *Add project name to publish path* parameter (modifyOutputPath in YAML) in the .NET Core CLI task. This creates a sub folder with project file’s name, inside the output folder. Hence all your projects will be published under different sub-folder’s inside the main output folder.
 
 ```YAML
 steps:

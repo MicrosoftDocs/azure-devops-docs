@@ -3,7 +3,6 @@ title: Create your backlog and tasks using Microsoft Project
 titleSuffix: Azure Boards
 description: Add items, plan, order, and estimate your backlog of deliverables in Azure Boards or Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: be5cef4f-755f-4ffe-8dd7-876d1e02c330
 ms.manager: mijacobs 
 ms.author: kaelli
@@ -69,7 +68,7 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
    > [!NOTE]    
    > The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
-3. In Project, start with a blank worksheet. If you don't see the **Team** ribbon see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
+3. In Project, start with a blank worksheet. If you don't see the **Team** ribbon see step 2 or [Azure DevOps-Office integration issues](tfs-office-integration-issues.md). 
 
    > [!TIP]  
    > If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
@@ -93,13 +92,13 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
 
    (1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, (4) check that the preview matches the URL that you entered, and then choose **OK**. 
 
-   ![Connect to Team Foundation Server dialog](media/connect/4-steps-connect-to-cloud.png)
+   ![Connect to Team Foundation Server dialog in Boards.](media/connect/4-steps-connect-to-cloud.png)
 
    **TFS**  
 
    (1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your TFS instance. As needed, change the Port number if your deployment uses a non-default port number.   The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
 
-   ![Connect to Team Foundation Server dialog](media/create-your-backlog-tasks-using-project/IC658167.png)
+   ![Connect to Team Foundation Server dialog in TFS.](media/create-your-backlog-tasks-using-project/IC658167.png)
 
    Choose **Close** to close the Add/Remove servers dialog. From the Select a Team Foundation Server dialog, make sure the server you added is selected, and then choose **Connect**. 
 
@@ -121,7 +120,7 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
    > [!div class="mx-imgBorder"]  
    > ![Published tasks become work items](media/project/published-work-items.png)
 
-   Optionally, you can use ![ ](media/project/get-work-items-task.png) **Get work items** icon, select a work item query, and add work items to your project plan.
+   Optionally, you can use :::image type="icon" source="media/project/get-work-items-task.png" border="false"::: **Get work items** icon, select a work item query, and add work items to your project plan.
 
 6. Assign resources to tasks, and then choose **Publish** to publish your assignments. Or, leave that field blank for the development team to assign. 
 
@@ -145,7 +144,7 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
    > [!NOTE]    
    >The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
-1. In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
+1. In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [Azure DevOps-Office integration issues](tfs-office-integration-issues.md). 
 
    > [!TIP]  
    >If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
@@ -269,19 +268,19 @@ Optionally, you can add a mapped work tracking field as a column to the Team Fou
 
 * * *
 
-To add more work tracking fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md). 
+To add more work tracking fields or change the way fields are mapped, see [Customize the Microsoft Project field mapping file](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file). 
 
 ## Tips for working in Project and other Team Foundation clients
 
 You can manage your project plan using Project and all the features that Project provides. Because you and other team members can modify TFS work items from the web portal, Excel, Project, and Team Explorer, follow these tips to manage your work effectively:
 
-- When you first open a project plan, choose the Team ribbon ![ ](media/project/refresh.png) **Refresh** icon to download the latest work tracking data.  
+- When you first open a project plan, choose the Team ribbon :::image type="icon" source="media/project/refresh.png" border="false"::: **Refresh** icon to download the latest work tracking data.  
 - Publish your changes and refresh your plan periodically while you work. Otherwise, you can encounter data conflicts between plan data and the work tracking data store.  
 - Save your project plan to maintain scheduling data and other information that isn't stored in the work tracking data store.  
 - When defining areas and iterations, keep in mind that Project and Excel restrict the length of the area and iteration path field to 256 characters.  
-- In Project 2010 and later versions, when you choose the ![ ](media/create-your-backlog-tasks-using-project/IC413649.png) **Pinned task** icon (Manually scheduled tasks, Task Mode field), team members can place a manually scheduled task anywhere in their schedules, and Project will not move it. In order for team members to manually schedule their tasks, you will have to add the necessary project fields to work tracking task definitions.  
+- In Project 2010 and later versions, when you choose the :::image type="icon" source="media/create-your-backlog-tasks-using-project/IC413649.png" border="false"::: **Pinned task** icon (Manually scheduled tasks, Task Mode field), team members can place a manually scheduled task anywhere in their schedules, and Project will not move it. In order for team members to manually schedule their tasks, you will have to add the necessary project fields to work tracking task definitions.  
 
-    Start and finish dates for autoscheduled tasks (![ ](media/create-your-backlog-tasks-using-project/IC413651.png) **Auto Update Task Mode** icon) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project.  
+    Start and finish dates for autoscheduled tasks (:::image type="icon" source="media/create-your-backlog-tasks-using-project/IC413651.png" border="false"::: **Auto Update Task Mode** icon) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project.  
 - Use Project to manage and update changes to these fields:
   - Finish Date
   - Start Date
@@ -311,7 +310,7 @@ You can manage your project plan using Project and all the features that Project
 - [Create your backlog](../create-your-backlog.md)
 - [Azure DevOps Service and TFS compatibility](/azure/devops/server/requirements) 
 
-If the Team ribbon fails to appear, see [TFS-Office integration issues](tfs-office-integration-issues.md). 
+If the Team ribbon fails to appear, see [Azure DevOps-Office integration issues](tfs-office-integration-issues.md). 
 
 ### Delete work items
 
@@ -319,11 +318,11 @@ You can't delete work items from Excel nor from Project. The only way to delete 
 
 ### Do you want to add Project fields to work items?
 
-For team members to be able to view or modify Project fields from a Team Foundation client, you must customize both the definition file for the task work item type and update [The Microsoft Project Field Mapping File](../../../reference/xml/customize-project-field-mapping-file.md). For resources, see [Schedule projects using Microsoft Project 2010](schedule-projects-using-microsoft-project.md).
+For team members to be able to view or modify Project fields from a Team Foundation client, you must customize both the definition file for the task work item type and update [The Microsoft Project Field Mapping File](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file). For resources, see [Schedule projects using Microsoft Project 2010](schedule-projects-using-microsoft-project.md).
 
 ### Do you want to map additional work tracking fields to Project, or change how fields are mapped?
 
-You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](../../../reference/xml/customize-project-field-mapping-file.md).
+You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file).
 
 ### Project for Mac 
 

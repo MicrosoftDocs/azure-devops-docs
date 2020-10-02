@@ -1,15 +1,13 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Items | REST API Reference for Team Foundation Server
 description: Work with Git items (files and folders) programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: B9F8F05A-1852-49CE-8B3E-75A30D41487A
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 06/09/2020
 ---
 
 # Git items
@@ -20,11 +18,11 @@ ms.date: 08/04/2016
 
 Items are the files, folders, and submodules in a repository.
 Files are [blobs](./blobs.md) in the API and folders are [trees](./trees.md).
-If the repository contains [submodules](https://git-scm.com/docs/git-submodule), they will appear as [commits](./commits.md).
+If the repository contains [submodules](https://git-scm.com/docs/git-submodule), they appear as [commits](./commits.md).
 
 ![Items are blobs and trees](./media/git-items.png)
 
-There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/ItemsSample.cs) available for this endpoint.
+There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Git/ItemsSample.cs) available for this endpoint.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
@@ -42,20 +40,20 @@ This API does content negotiation based on the `Accept` header you send.
 <a name="afile" />
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/items?api-version={version}&scopePath={filePath}[&includeContentMetadata={bool}&lastProcessedChange={bool}]
+https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/items?api-version={version}&scopePath={filePath}[&includeContentMetadata={bool}&lastProcessedChange={bool}]
 ```
 
 | Parameter              | Type    | Default | Notes
 |:-----------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance               | string  |         | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
+| instance               | string  |         | [Azure DevOps organization](/rest/api/azure/devops/) ({account}.visualstudio.com) or [TFS server](/rest/api/azure/devops/) ({server:port}).
 | project                | string  |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository             | string  |         | ID or name of the [repository](./repositories.md).
 | Query
 | api-version            | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | scopePath              | string  | /       | Path to the item in the repository. `/WebSite/WebSite/Views/Home/_Home.cshtml`
 | includeContentMetadata | bool    | false   | Use `true` to include additional metadata about the item content, like the file type.
-| latestProcessedChange  | bool    | false   | `true` gets the [commit](./commits.md) that contains the previous change to the retrieved version of the item. Of course, the root item ("/") has no commits associated with it, so there will not be a commit returned with the root item.
+| latestProcessedChange  | bool    | false   | `true` gets the [commit](./commits.md) that contains the previous change to the retrieved version of the item. The root item ("/") has no commits associated with it, so there will not be a commit returned with the root item.
 
 [!INCLUDE [ID_vs_Name](_data/id_or_name.md)]
 
@@ -109,7 +107,7 @@ Set `scopePath` to the folder that you want to get in a zipped format and includ
 Accept: application/zip
 ```
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/items?api-version={version}&scopePath={folderPath}
+GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/items?api-version={version}&scopePath={folderPath}
 ```
 
 You can get a .zip file that contains the contents of a [specific version](#getaspecificversion) of folder, too.
@@ -126,7 +124,7 @@ Set the accept header to `application/json` to get the metadata for a file, or f
 Accept: application/json
 ```
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/items?api-version={version}&scopepath=/mywebsite/mywebsite/views/home/_home.cshtml
+GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/items?api-version={version}&scopepath=/mywebsite/mywebsite/views/home/_home.cshtml
 ```
 
 #### Response
@@ -487,8 +485,7 @@ You can also modify the version with the `versionOptions` parameter.
 | Value          | Effect
 |:---------------|:----------------------------------------------------------------------------------------------------------------------------
 | firstParent    | The parent branch to the version specified by the `versionType` and `version` parameters.
-| previousChange | The last version of the item that was changed prior to the version specified by the `versionType` and `version` parameters.
+| previousChange | The last version of the item that was changed before the version specified by the `versionType` and `version` parameters.
 | None           | No modification to the version specified by the `versionType` and `version` parameters.
 
 When you specify a version with [recursion](#afolderanditschildren), the version is applied to the item and its children.
-

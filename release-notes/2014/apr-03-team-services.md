@@ -1,7 +1,6 @@
 ---
 title: Visual Studio Online General Availability
 description: VSTS release notes for April 3 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: bfe41b66-a230-42f6-b0f0-07f2b164496c

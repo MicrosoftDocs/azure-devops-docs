@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Use board controls available with your Kanban board in Azure Boards, Azure DevOps, & Team Foundation Server   
 ms.custom: boards-kanban  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -16,7 +14,7 @@ ms.date: 11/19/2018
 
 # Kanban board controls
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You can quickly switch from the backlog view to the board view using the **Backlog** and **Board** links. Use the following icons to enable other user interface features. 
 

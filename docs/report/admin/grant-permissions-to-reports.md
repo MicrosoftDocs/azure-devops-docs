@@ -3,13 +3,11 @@ title: Grant permissions to view or create reports
 titleSuffix: TFS
 description: Grant permissions to view or create SQL Server reports configured to support Team Foundation Server
 ms.assetid: FBE3ECC1-51A0-43EC-9923-B7C4FC78E333  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= azure-devops-2019" 
+monikerRange: '< azure-devops' 
 ms.date: 11/19/2018
 ---
 
@@ -82,7 +80,7 @@ If members need to create or customize reports, add their accounts to the **TfsW
 
 7. Add the account.  
 
-	![Add member to Tfs_Analysis data reader role](media/IC665046.png)
+	![Add the account.](media/IC665046.png)
 
 > [!IMPORTANT]  
 > Accounts that you add to the **TfsWarehouseDataReader** roles can view data for all team projects that are hosted in all team project collections in the TFS deployment. There is no way to limit access to a team project or collection.  
@@ -95,7 +93,7 @@ If members need to create or customize reports, add their accounts to the **TfsW
 
 ## Related notes
  
-- [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md)  
+- [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md)  
 
     
 

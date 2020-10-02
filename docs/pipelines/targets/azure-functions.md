@@ -2,10 +2,7 @@
 title: Deploy a function app to Azure Functions
 description: Deploy to Azure Functions from Azure Pipelines or TFS
 services: vsts
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.assetid: C6709131-D245-4C32-BE62-CD36044A1878
 ms.custom: seodec18
 ms.author: puagarw
@@ -121,9 +118,9 @@ You must supply an Azure service connection to the AzureFunctionApp task. Add th
 
 ```yaml
 variables: 
-    ## Add this under variables section in the pipeline
-    azureSubscription: <Name of the Azure subscription>
-    appName: <Name of the Function App>
+  ## Add this under variables section in the pipeline
+  azureSubscription: <Name of the Azure subscription>
+  appName: <Name of the Function App>
 ```
 
 The snippet assumes that the build steps in your YAML file build and publishes the source as an artifact. The **Azure Function App Deploy** task will pull the artifact corresponding to the BuildId from the **Source type** specified, and then deploys the artifact to the Azure Function App Service.
@@ -164,7 +161,7 @@ To deploy to Azure Function, add the following snippet at the end of your **azur
 
 ```yaml
 trigger:
-- master
+- main
 
 variables:
   # Azure service connection established during pipeline creation

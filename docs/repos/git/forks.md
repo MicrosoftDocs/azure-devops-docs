@@ -3,11 +3,7 @@ title: Fork your repository
 titleSuffix: Azure Repos
 description: Learn to isolate code using forks in Azure DevOps Services & TFS
 ms.assetid: d212c1ec-19b9-4d5a-bb7f-2a909f151180
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2018'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Forks
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
 A fork is a complete copy of a repository, including all files, commits, and (optionally) branches.
 Forks are a great way to support an Inner Source workflow: you can create a
@@ -48,6 +44,11 @@ If your repository has a large number of casual or infrequent committers (simila
 Typically only core contributors to your project have direct commit rights into your repository.
 You should ask collaborators from outside this core set of people to work from a fork of the repository. 
 This will isolate their changes from yours until you've had a chance to vet the work.
+
+> [!NOTE]
+> To enable forking at the organization level, go to **Project Settings** > **Repositories**, then select the repository and **Options** next to the **Security** tab to turn on forks.
+>
+> For some versions this might require enabling forking as a Preview Feature, see **User settings** > **Preview Features**, then select `For this organization` from the drop-down, and make sure `Git Forks` is turned on.
 
 ## The forking workflow
 

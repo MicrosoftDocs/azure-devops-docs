@@ -2,12 +2,8 @@
 title: NuGet Packager task Version 0.*
 ms.custom: seodec18
 description: Learn all about how you can produce NuGet packages when building code in Azure Pipelines and Team Foundation Server
-ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: E725F98F-8753-4946-A3D0-B7B0C92AFF22
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 08/10/2016
 ---
 
@@ -15,7 +11,7 @@ ms.date: 08/10/2016
 
 **Azure Pipelines (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
 
-Use this task in a build or release pipeline to create a NuGet package from either a .csproj or .nuspec file.
+Use this task to create a NuGet package from either a .csproj or .nuspec file.
 
 ::: moniker range="<= tfs-2018"
 

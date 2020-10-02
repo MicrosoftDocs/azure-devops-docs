@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Add and update pages offline for your  built-in team project wiki 
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
@@ -98,17 +96,17 @@ If you need to revert to an earlier revision for a page that you have published 
 
 1. Preview any version by choosing the commit id from the **Revisions** page for the selected file.
 
-2. Copy the full ID of the commit by selecting the ![ ](../../media/icons/copy-clone-icon.png) copy-clone icon.  Here we copy the commit id, `ca6d475a22eb1db930cf238f3b80862a78a689e4`, with the abbreviated ID of `ca6d475a`.
+2. Copy the full ID of the commit by selecting the :::image type="icon" source="../../media/icons/copy-clone-icon.png" border="false"::: copy-clone icon.  Here we copy the commit id, `ca6d475a22eb1db930cf238f3b80862a78a689e4`, with the abbreviated ID of `ca6d475a`.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Copy the full commit id for an earlier commit](media/wiki/revert-publish-as-code-copy-commit-id.png)
 
-3. Open the **Code > Commits** page and paste the ID that you copied into the Commit ID box and choose the ![ ](../../media/icons/search-icon.png) search icon.
+3. Open the **Code > Commits** page and paste the ID that you copied into the Commit ID box and choose the :::image type="icon" source="../../media/icons/search-icon.png" border="false"::: search icon.
  
 	> [!div class="mx-imgBorder"]  
-	> ![Copy the full commit id for an earlier commit](media/wiki/revert-publish-as-code-paste-commit-id.png)
+	> ![Paste the commit id for an earlier commit.](media/wiki/revert-publish-as-code-paste-commit-id.png)
 	
-4. From the commit page, open the ![ ](../../media/icons/actions-icon.png) actions icon and choose the **Revert** option.  
+4. From the commit page, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and choose the **Revert** option.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose revert menu option of an earlier commit](media/wiki/revert-publish-as-code-option.png)
@@ -123,7 +121,7 @@ If you need to revert to an earlier revision for a page that you have published 
 6. Select **Create Pull Request**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Revert commit dialog](media/wiki/revert-publish-as-code-commit-confirm.png)
+	> ![Select Create Pull Request.](media/wiki/revert-publish-as-code-commit-confirm.png)
 		
 	If instead, you receive an error message as shown, it indicates that you must create a local branch and make your changes manually as described in the next section.
 

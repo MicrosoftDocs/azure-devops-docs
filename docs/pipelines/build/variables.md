@@ -2,11 +2,8 @@
 title: Predefined variables
 ms.custom: seodec18
 description: A comprehensive list of all available predefined variables
-ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
+ms.topic: conceptual
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
-ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 01/30/2020
@@ -55,7 +52,7 @@ variable. You can do this at the step or task level:
 
 ```yaml
 steps:
- - bash: echo This script could use $SYSTEM_ACCESSTOKEN
+  - bash: echo This script could use $SYSTEM_ACCESSTOKEN
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
   - powershell: Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"
@@ -63,7 +60,7 @@ steps:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-You can configure the default scope for `System.AccessToken` using [build job authorization scope](options.md#build-job-authorization-scope). 
+You can configure the default scope for `System.AccessToken` using [build job authorization scope](../process/access-tokens.md#job-authorization-scope). 
 
 # [Classic](#tab/classic)
 
@@ -80,11 +77,27 @@ pushes and pulls in your scripts.
 
 ## System.Debug
 
-For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`.
+For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`. 
+
+
+1. Edit your pipeline. 
+1. Select **Variables**. 
+1. Add a new variable with the name  `System.Debug` and value `true`.
+
+    :::image type="content" source="media/options/system-debug.png" alt-text="Set System Debug to true":::
+
+1. Save the new variable. 
+
 
 ::: moniker range="azure-devops"
 
 [!INCLUDE [include](includes/variables-hosted.md)]
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+[!INCLUDE [include](includes/variables-server-2020.md)]
 
 ::: moniker-end
 

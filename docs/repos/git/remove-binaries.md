@@ -2,13 +2,9 @@
 title: Remove large binaries from your Git history
 description: Learn how to remove a large binary from your Git history to manage the size of cloned repositories 
 ms.assetid: ea4cadcc-c8c7-4f05-adc3-9a3ba07a2bd6
-ms.prod: devops
 ms.topic: article
 ms.technology: devops-code-git
-ms.manager: mijacobs
 ms.date: 04/27/2018
-ms.author: edwardf
-author: edwardaf
 monikerRange: '>= tfs-2015'
 ---
 
@@ -49,7 +45,7 @@ __Note: You may need to clone or fix your local repo before beginning this work.
 
 By default, you likely only have the ability to change their local project files and repository and to push your changes to the server, so you do not have the ability to make other changes, such as deletions or rebasing, at the server level. Therefore, you will need to either acquire project Force push (preferred) or admin permissions from your administrator or find someone who has them and is willing to help.  For more information on git permissions, go [here](../../organizations/security/set-git-tfvc-repository-permissions.md).
 
-> ![Command Prompt - git push --force](./media/remove-binaries/RemoveBinaries-force-push-permissions.png)
+> ![Command Prompt - git push --force permissions.](./media/remove-binaries/RemoveBinaries-force-push-permissions.png)
 
 Next, you need to rebase the repository. 
 
@@ -116,7 +112,7 @@ __Use with caution, as you can easily lose data on the server!!__
 
 *Notice that you must authenticate to the server for this to work*
 
-If you are using Azure Repos, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](auth-overview.md?view=azure-devops#personal-access-tokens).
+If you are using Azure Repos, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](auth-overview.md#personal-access-tokens).
 
 Now, the branch will be permanently gone from the server, and subsequent clones and syncs by project team members will not download the large files you were trying to remove.  Users will need to pull down from the server in order to make sure that they are in sync with the new server repo state.
 

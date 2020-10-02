@@ -2,14 +2,11 @@
 title: Publish Code Coverage Results task
 description: Publish Cobertura or JaCoCo code coverage results from an Azure Pipelines or TFS build
 ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
-ms.date: 12/07/2018
+ms.date: 04/20/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -32,7 +29,7 @@ in the pipeline.
 
 ## Demands
 
-[none]
+To generate the HTML code coverage report you need dotnet 2.0.0 or later on the agent. The dotnet folder needs to be in the environment path. If there are multiple folders containing dotnet, the one with version 2.0.0 must be before any others in the path list.
 
 ::: moniker range="> tfs-2018"
 
@@ -48,19 +45,11 @@ To publish code coverage results for Javascript with istanbul using YAML, see [J
 
 ## Arguments
 
-<table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Summary file</td><td>(Required) Path of the summary file containing code coverage statistics, such as line, method, and class coverage. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura/coverage.xml`</td></tr>
-<tr><td>Path to Source files</rd><td>(Optional) Path to source files is required when coverage XML reports do not contain absolute path to source files.
-For example, JaCoCo reports do not use absolute paths and when publishing JaCoCo coverage for Java apps, the pattern would be similar to `$(System.DefaultWorkingDirectory)/MyApp/src/main/java/`.
-This input is also needed if tests are run in a docker container. This input should point to absolute path to source files on the host. For e.g., `$(System.DefaultWorkingDirectory)/MyApp/`</td></tr>
-<tr><td>Fail when code coverage results are missing</td><td>(Optional) Available only on Azure Pipelines and TFS 2018 and later. Fail the task if code coverage did not produce any results to publish.</td></tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
+|Argument|Description|
+|--- |--- |
+|`summaryFileLocation` <br/>Path to summary files|(Required) Path of the summary file containing code coverage statistics, such as line, method, and class coverage. The value may contain minimatch patterns. <br/>For example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura/coverage.xml`|
+|`pathToSources` <br/>Path to Source files|(Optional) Path to source files is required when coverage XML reports do not contain absolute path to source files. <br/>For example, JaCoCo reports do not use absolute paths and when publishing JaCoCo coverage for Java apps, the pattern would be similar to `$(System.DefaultWorkingDirectory)/MyApp/src/main/java/`. <br/>This input is also needed if tests are run in a docker container. This input should point to absolute path to source files on the host. <br/>For example, `$(System.DefaultWorkingDirectory)/MyApp/`|
+|`failIfCoverageEmpty`<br/>Fail if code coverage results are missing|(Optional) Fail the task if code coverage did not produce any results to publish.|
 
 ## Docker
 For apps using docker, build and tests may run inside the container, generating code coverage results within the container. In order to publish the results to  the pipeline, the resulting artifacts should be to be made available to the **Publish Code Coverage Results** task. For reference you can see a similar example for publishing test results under [Build, test, and publish results with a Docker file](publish-test-results.md) section for **Docker**.
@@ -76,7 +65,7 @@ In order to view the code coverage results in the pipeline, see [Review code cov
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 ### Is code coverage data merged when multiple files are provided as input to the task or multiple tasks are used in the pipeline? 
 At present, the code coverage reporting functionality provided by this task is limited and it does not merge coverage data. If you provide multiple files as input to the task, only the first match is considered. 

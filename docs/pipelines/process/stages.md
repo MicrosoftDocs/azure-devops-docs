@@ -3,12 +3,7 @@ title: Stages in Azure Pipelines
 ms.custom: seodec18
 description: Understand stages in Azure Pipelines
 ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 05/03/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -24,11 +19,7 @@ monikerRange: '>= tfs-2015'
 The concept of stages varies depending on whether you use YAML pipelines or classic release pipelines.
 
 #### [YAML](#tab/yaml/)
-::: moniker range="azure-devops"
-
-> [!NOTE]
->
-> To use stages in YAML, [make sure the Multi-stage pipelines experience is turned on](../../project/navigation/preview-features.md).
+::: moniker range=">=azure-devops-2019"
 
 You can organize the jobs in your pipeline into stages. Stages are the major divisions in a pipeline: "build this app", "run these tests", and "deploy to pre-production" are good examples of stages. They are a logical boundary in your pipeline at which you can pause the pipeline and perform various checks.
 
@@ -37,7 +28,10 @@ Every pipeline has at least one stage even if you do not explicitly define it. S
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-Stages are not supported in this version of Azure DevOps Server.
+
+> [!NOTE]
+> Support for stages was added in Azure DevOps Server 2019.1.
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
@@ -62,7 +56,15 @@ and [queuing policies](#queuing-policies).
 ## Specify stages
 
 #### [YAML](#tab/yaml/)
-::: moniker range="azure-devops"
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]
+> Support for stages was added in Azure DevOps Server 2019.1.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
 
 In the simplest case, you do not need any logical boundaries in your pipeline. In that case, you do not have to explicitly use the `stage` keyword. You can directly specify the jobs in your YAML file.
 
@@ -103,6 +105,17 @@ stages:
 
 If you choose to specify a `pool` at the stage level, then all jobs defined in that stage will use that pool unless otherwise specified at the job-level.
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]
+> In Azure DevOps Server 2019, pools can only be specified at job level.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
+
 ```yaml
 stages:
 - stage: A
@@ -126,10 +139,6 @@ stages:
   jobs: [ job | templateReference]
 ```
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-Stages are not supported in this version of Azure DevOps Server.
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
@@ -161,9 +170,17 @@ for a stage in a release pipeline. You can:
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops-2019"
 
-When you define multiple stages in a pipeline, by default, they run one after the other in the order in which you define them in the YAML file.
+> [!NOTE]
+> Support for stages was added in Azure DevOps Server 2019.1.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
+
+When you define multiple stages in a pipeline, by default, they run one after the other in the order in which you define them in the YAML file. Pipelines must contain at least one stage with no dependencies.
+
 
 The syntax for defining multiple stages and their dependencies is:
 
@@ -226,10 +243,6 @@ stages:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-Stages are not supported in this version of Azure DevOps Server.
-::: moniker-end
-
 ::: moniker range="< azure-devops-2019"
 YAML is not supported in this version of TFS.
 ::: moniker-end
@@ -248,12 +261,19 @@ You can specify the conditions under which each stage runs. By default, a stage 
 
 > [!NOTE]
 >
-> Conditions for failed ('JOBNAME/STAGENAME') and succeeded ('JOBNAME/STAGENAME') as shown in the following example work only for [YAML pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml).
+> Conditions for failed ('JOBNAME/STAGENAME') and succeeded ('JOBNAME/STAGENAME') as shown in the following example work only for [YAML pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/stages?tabs=yaml).
 
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]
+> Support for stages was added in Azure DevOps Server 2019.1.
+
+::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
 
 Example to run a stage based upon the status of running a previous stage:
 
@@ -285,10 +305,6 @@ stages:
 
 You cannot currently specify that a stage run based on the value of an output variable set in a previous stage.
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-Stages are not supported in this version of Azure DevOps Server.
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
@@ -407,6 +423,7 @@ YAML is not supported in this version of TFS.
 
 #### [Classic](#tab/classic/)
 
-For information on approvals in classic pipelines, see [Release approvals and gates overview](../release/approvals/index.md).
+You can add manual approvals at the start or end of each stage in the pipeline. See [Release approvals and gates overview](../release/approvals/index.md) for more information.
+
 
 * * *

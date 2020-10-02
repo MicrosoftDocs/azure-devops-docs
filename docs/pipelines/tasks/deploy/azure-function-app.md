@@ -1,11 +1,8 @@
 ---
 title: Azure Function App task
-description: The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs.
-ms.prod: devops
-ms.technology: devops-cicd
+description: Learn how to use the Azure Function App task to deploy Azure Functions apps to Azure.
 ms.topic: reference
 ms.assetid: 2A56E8FD-07F1-43EF-AFB9-22B611DADC97
-ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 5/2/2019

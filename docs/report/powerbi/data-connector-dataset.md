@@ -3,9 +3,7 @@ title: Analytics Views - Dataset design
 titleSuffix: Azure DevOps
 description: Describes the dataset that is created in Power BI for an Analytics View 
 ms.technology: devops-analytics
-ms.prod: devops
 ms.assetid: 8E92B372-B312-4BAD-960A-B3CB0202E2A1  
-ms.manager: mijacobs
 ms.reviewer: angurusw
 ms.author: kaelli
 author: KathrynEE
@@ -72,7 +70,7 @@ You can select the following Analytics-based fields in an Analytics view:
 > | Tags | Semicolon delimited list of Tags | 
 > | WorkItemRevisionSK | The Analytics unique key for the work item revision, used to join related entities | 
 
-For information about state categories, see [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories). For more detailed information on Analytics data model, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
+For information about state categories, see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md). For more detailed information on Analytics data model, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
 
 To access any additional fields available through [Analytics](../extend-analytics/analytics-metadata.md), include the corresponding Surrogate Keys(SK) or Work Item Id in the Analytics view and create the necessary mapping tables based on the Analytics Navigational Property. 
 
@@ -147,4 +145,3 @@ For example, if you want to show a table of work items and values for the associ
 - [Data Connector - Example reports](./data-connector-examples.md)
 - [Functions available in Power BI Data Connector](data-connector-functions.md) 
 
-   

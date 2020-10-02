@@ -2,21 +2,19 @@
 title: Change individual or group permissions
 titleSuffix: Azure DevOps
 description: Add custom security groups, change permissions for groups or individuals tutorial
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/20/2019
+ms.date: 06/22/2020
 ---
 
 
 # Change individual or group permissions
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 The standard way to set permissions is by adding them to one or more built-in security groups. However, sometimes you may want to grant additional permissions to select users, where not all permissions are assigned to the security group. For example, if you want to give some users the ability to add or edit area and iteration paths, but don't want them to have all permissions available to members of the Project Administrators group.
 
@@ -34,6 +32,12 @@ In this article you learn how to do the following tasks:
 > * Change the permission assignments for an individual user 
 
 If you're new to managing permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
+
+
+## Prerequisites
+
+* To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the project, you are automatically added as a member of this group. 
+* To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow. If you created the organization or collection, you are automatically added as a member of this group. 
 
 [!INCLUDE [temp](../../includes/image-differences.md)]
 
@@ -89,7 +93,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 ::: moniker-end
 
-::: moniker range="= azure-devops-2019"
+::: moniker range="= azure-devops-2019 || azure-devops-2020"
 
 1. Choose **Project settings** > **Security**.
 
@@ -174,7 +178,7 @@ You add members to a custom security group in the same way you add users to a bu
 
 2. Change the permission, setting a permission as **Allow** or **Deny**.
 
-    ![Set permissions for a single user account](media/change-individual-permissions/set-individual-permissions.png)  
+    ![Change the permission for a single user account.](media/change-individual-permissions/set-individual-permissions.png)  
 
     For a description of each permission, see [Permissions and groups reference, project-level permissions](permissions.md#project-level-permissions).
 

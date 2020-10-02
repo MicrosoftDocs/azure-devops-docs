@@ -1,6 +1,5 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
@@ -17,11 +16,11 @@ The Azure Cloud Shell is a free Bash shell that you can run directly within the 
 It has the Azure CLI preinstalled and configured to use with your Azure subscription.
 Click the **Cloud Shell** button on the menu in the upper-right of the [Azure portal](https://portal.azure.com).
 
-[![Cloud Shell](/azure/media/cloud-shell-try-it/cloud-shell-menu.png)](https://portal.azure.com)
+[![Cloud Shell](https://docs.microsoft.com/azure/includes/media/cloud-shell-try-it/cloud-shell-menu.png)](https://portal.azure.com)
 
 The button launches an interactive shell that you can use to run all of the following steps:
 
-[![Screenshot showing the Cloud Shell window in the portal](/azure/media/cloud-shell-try-it/cloud-shell-safari.png)](https://portal.azure.com)
+[![Screenshot showing the Cloud Shell window in the portal]((https://docs.microsoft.com/azure/includes/media/cloud-shell-try-it/cloud-shell-safari.png)](https://portal.azure.com)
 
 Create a resource group with the [az group create](/cli/azure/group#az-group-create) command. The following example creates a resource group named *myResourceGroup* in the *eastus* location.
 

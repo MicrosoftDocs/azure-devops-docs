@@ -3,19 +3,17 @@ title: Understand options and choices for configuring and customizing work track
 titleSuffix: Azure Boards
 description: Learn about choices to customize or configure Azure Boards and the impact on tools available
 ms.technology: devops-agile
-ms.prod: devops
 ms.topic: overview
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/24/2020
+ms.date: 08/18/2020
 ---
 
 
 
-# Configuration and customization of Azure Boards 
+# Configure and customize Azure Boards 
 
 [!INCLUDE [temp](includes/version-vsts-only.md)]
 
@@ -27,7 +25,7 @@ This article provides guidance to configure and customize Azure Boards. You shou
 - Track time estimates or actual work completed 
 
 > [!NOTE]   
-> This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup, Analytics, and some portolio planning tools, are only available for the cloud at this time. 
+> This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup, Analytics, and some portfolio planning tools, are only available for the cloud at this time. 
 
 
 If you're just getting started as a Project Administrator, see also [Get started as an administrator](../user-guide/project-admin-tutorial.md).
@@ -79,6 +77,14 @@ One of the main choices teams have is choosing the work item types they use to t
    :::column-end:::
    :::column span="2":::
       **Tasks and tools supported**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="2":::
+      ----------------------------
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -368,14 +374,23 @@ Most Azure Boards tools support a filtered view of work items based on area path
 
 Each team can choose how they want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](sprints/task-board.md).
 
-[!INCLUDE [temp](includes/basic-process-bug-note.md)]
-
 If you use the Scrum process, your default setup is to track bugs along with product backlog items (PBIs). If you work in a project based on the [Agile or CMMI processes](work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
 
 Talk with your team to determine how they want to manage bugs. Then [change your team settings](../organizations/settings/show-bugs-on-backlog.md) accordingly.
 
 > [!TIP]  
 > After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](backlogs/resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
+
+
+<a id="add-oob-to-backlog" /> 
+
+::: moniker range="azure-devops"
+
+## Add system work item types to a backlog   
+
+If you want to track issues or impediments along with your requirements or in a portfolio backlog, you can by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../organizations/settings/work/customize-process-backlogs-boards.md#add-oob-to-backlog).
+
+::: moniker-end
 
 
 <a id="hierarchy" />

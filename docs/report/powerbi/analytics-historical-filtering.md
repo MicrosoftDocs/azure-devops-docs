@@ -2,10 +2,8 @@
 title: Filtering on historical data from Analytics
 titleSuffix: Azure DevOps
 description: TBD
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

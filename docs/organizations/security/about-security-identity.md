@@ -2,11 +2,9 @@
 title: How are security and identity managed?
 titleSuffix: Azure DevOps
 description: Understand how Azure DevOps manages authentication, authorization, security groups and permissions, security roles, access levels, and default perms 
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 toc: show
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -16,7 +14,7 @@ ms.date: 11/26/2019
 
 # About security and identity
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
@@ -43,7 +41,7 @@ Authentication verifies a user's identity based on the credentials provided when
 - Microsoft account (MSA)
 - Active Directory (AD)
 
-Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your organization in Azure DevOps, you can simply use Microsoft accounts. For additional information, see [Access Azure DevOps with Azure Active Directory (Azure AD)](../accounts/access-with-azure-ad.md).
+Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your organization in Azure DevOps, you can simply use Microsoft accounts. For additional information, see [About accessing Azure DevOps with Azure Active Directory (Azure AD)](../accounts/access-with-azure-ad.md).
 
 For on-premises deployments, AD is recommended when managing a large group of users. For additional information, see [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups).
 
@@ -51,28 +49,24 @@ For on-premises deployments, AD is recommended when managing a large group of us
 
 Other applications and services can integrate with services and resources in Azure DevOps. To access your account without asking for user credentials multiple times, apps can use the following  authentication methods.
 
-*	[Alternate credentials](../../repos/git/auth-overview.md) 
+- [Alternate credentials](../../repos/git/auth-overview.md) 
 as a single set of credentials across all tools that don't have 
 plug-in, extension, or native support. For example, 
 you can use basic authentication to access 
-[REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md), 
+[REST APIs for Azure DevOps](/rest/api/azure/devops/), 
 but you must turn on alternate credentials.
 
-*	[Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
-to generate tokens for: 
+- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to generate tokens for:  
+	- Accessing specific resources or activities, like builds or work items
+	- Clients like Xcode and Nuget that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication 
+	- Accessing [Azure DevOps REST APIs](/rest/api/azure/devops/)
 
-	*	Accessing specific resources or activities, like builds or work items
-	*	Clients like Xcode and Nuget that require usernames and passwords 
-		as basic credentials and don't support Microsoft account 
-		and Azure Active Directory features like multi-factor authentication 
-	*	Accessing [Azure DevOps REST APIs](../../integrate/get-started/rest/basics.md)
-
-*	[OAuth](/azure/devops/integrate/get-started/Authentication/oauth) 
-to generate tokens for accessing [REST APIs](/azure/devops/integrate/get-started/rest/basics). The [Accounts](/rest/api/azure/devops/account) 
+- [OAuth](../../integrate/get-started/authentication/oauth.md) 
+to generate tokens for accessing [REST APIs](/rest/api/azure/devops/). The [Accounts](/rest/api/azure/devops/account) 
 and [Profiles](/rest/api/azure/devops/profile) 
 APIs support only OAuth. 
 
-*	[SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
+- [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
 to generate encryption keys when you use Linux, macOS, 
 or Windows running [Git for Windows](https://www.git-scm.com/download/win) 
 and can't use 
@@ -237,7 +231,7 @@ Certain features are only available to users who have the appropriate licensing 
 
 - [Permissions and groups reference](permissions.md)
 - [Default permissions and access for Azure DevOps](permissions-access.md)
-- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md)
+- [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups)
 - [Setting up HTTPS with Secure Sockets Layer (SSL)](/azure/devops/server/admin/setup-secure-sockets-layer)
 
@@ -260,4 +254,4 @@ When you consider Azure DevOps Server security, you must understand the differen
 Besides configuring permissions for authorization, you might need authorization within source code control and within work items. These permissions are managed separately at the command line, but are integrated as part of the Team Explorer interface. For more information about source control permissions, see Team Foundation Version Control. For more information about work item customization, see Working with Team Foundation Work Items.
 
    
- -->  
+ -->

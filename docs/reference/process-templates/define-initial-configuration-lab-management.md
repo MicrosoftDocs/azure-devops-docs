@@ -2,13 +2,12 @@
 title: Define the initial configuration of Lab Management 
 titleSuffix: TFS
 description: Customize the project's initial security configuration for Lab Management and Team Foundation Server
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: cd34554f-1ab8-450d-b997-942e7a2352cf
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
+monikerRange: '< tfs-2018' 
 ms.date: 09/08/2017
 ---
 
@@ -51,5 +50,5 @@ The names of the file, the folder, and the plug-in for the default process templ
 > ```  
   
 ## Related articles  
--  [Configure and administer Lab Management](https://msdn.microsoft.com/library/dd936084.aspx)   
+-  [Configure and administer Lab Management](/previous-versions/dd936084(v=vs.140))   
 -  [Control access to functional areas](control-access-to-functional-areas.md)

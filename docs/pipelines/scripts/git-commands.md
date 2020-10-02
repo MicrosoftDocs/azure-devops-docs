@@ -3,12 +3,7 @@ title: Run Git commands in a script
 ms.custom: seodec18
 description: Learn how you can run a Git command in a build script for your workflow by using Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 03/22/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -104,7 +99,7 @@ On the [variables tab](../build/variables.md) set this variable:
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 # [YAML](#tab/yaml)
 
@@ -141,7 +136,7 @@ Certain kinds of changes to the local repository are not automatically cleaned u
 
 If you run into problems using an on-premises agent, make sure the repo is clean:
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 # [YAML](#tab/yaml)
 
@@ -182,7 +177,7 @@ On the [build tab](../tasks/index.md) add this task:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](../tasks/utility/media/command-line.png)<br/>[Utility: Command Line](../tasks/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
+|  :::image type="icon" source="../tasks/utility/media/command-line.png"::: <br/>[Utility: Command Line](../tasks/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
 
 ### Merge a feature branch to master
 
@@ -222,9 +217,9 @@ On the [build tab](../tasks/index.md) add this as the last task:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](../tasks/utility/media/batch-script.png)<br/>[Utility: Batch Script](../tasks/utility/batch-script.md)<br />Run merge.bat. | **Path**: `merge.bat` |
+| :::image type="icon" source="../tasks/utility/media/batch-script.png"::: <br/>[Utility: Batch Script](../tasks/utility/batch-script.md)<br />Run merge.bat. | **Path**: `merge.bat` |
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

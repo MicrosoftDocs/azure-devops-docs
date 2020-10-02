@@ -2,17 +2,14 @@
 title: Pipeline run sequence
 description: Learn how Azure Pipelines runs your jobs, tasks, and scripts
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
-ms.date: 05/29/2019
+ms.date: 04/01/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
 # Pipeline run sequence
+
+Runs represent one execution of a pipeline. During a run, the pipeline is processed, and agents process one or more job. A pipeline run includes [jobs, steps, and tasks](../get-started/key-pipelines-concepts.md). Runs power both continuous integration (CI) and continuous delivery (CD) pipelines. 
 
 ![Pipeline overview](media/run-overview.svg)
 
@@ -39,9 +36,11 @@ Let's break down each action one by one.
 ![Expand YAML templates](media/run-expansion.svg)
 
 To turn a pipeline into a run, Azure Pipelines goes through several steps in this order:
-1. First, expand [templates](templates.md) and evaluate [template expressions](templates.md#template-expressions).
+1. First, expand [templates](templates.md) and evaluate [template expressions](templates.md).
 2. Next, evaluate dependencies at the [stage](stages.md) level to pick the first stage(s) to run.
-3. For each stage selected to run, evaluate [dependencies at the job level](phases.md#dependencies) to pick the first job(s) to run.
+3. For each stage selected to run, two things happen:
+    * All resources used in all jobs are gathered up and validated for [authorization](approvals.md) to run.
+    * Evaluate [dependencies at the job level](phases.md#dependencies) to pick the first job(s) to run.
 4. For each job selected to run, expand [multi-configs](phases.md#parallelexec) (`strategy: matrix` or `strategy: parallel` in YAML) into multiple runtime jobs.
 5. For each runtime job, evaluate [conditions](conditions.md) to decide whether that job is eligible to run.
 6. [Request an agent](#request-an-agent) for each eligible runtime job.
@@ -54,6 +53,11 @@ This ordering helps answer a common question: why can't I use certain variables 
 Step 1, template expansion, operates solely on the text of the YAML document.
 Runtime variables don't exist during that step.
 After step 1, template parameters have been completely resolved and no longer exist.
+
+It also answers another common issue: why can't I use variables to resolve service connection / environment names?
+Resources are authorized before a stage can start running, so stage- and job-level variables aren't available.
+Pipeline-level variables can be used, but only those explicitly included in the pipeline.
+Variable groups are themselves a resource subject to authorization, so their data is likewise not available when checking resource authorization.
 
 ## Request an agent
 
@@ -173,7 +177,8 @@ To help detect these conditions, the agent sends a heartbeat message once per mi
 If the server doesn't receive a heartbeat for five consecutive minutes, it assumes the agent will not come back.
 The job is marked as a failure, letting the user know they should re-try the pipeline.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
+
 ## Manage runs through the CLI
 
 Using the Azure DevOps CLI, you can list the pipeline runs in your project and view details about a specific run. You can also add and delete tags in your pipeline run. 

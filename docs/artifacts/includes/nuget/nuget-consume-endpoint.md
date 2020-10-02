@@ -1,8 +1,6 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 02/19/2020
@@ -10,7 +8,7 @@ ms.date: 02/19/2020
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Go to your feed ([or create a feed if you haven't](../../feeds/create-feed.md)). 
+1. Go to your feed ([or create a feed if you haven't](../../index.yml)). 
 
 2. Select **Connect to feed**:
 
@@ -30,7 +28,7 @@ ms.date: 02/19/2020
 
 ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-1. Go to your feed ([or create a feed if you haven't](../../feeds/create-feed.md)). 
+1. Go to your feed ([or create a feed if you haven't](../../index.yml)). 
 
 2. Select **Connect to feed**:
 

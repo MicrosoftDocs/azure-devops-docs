@@ -3,21 +3,19 @@ title: View or run a query
 titleSuffix: Azure Boards
 description: View, run, or favorite a query in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 10/18/2019
+ms.date: 07/09/2020
 ---
 
 
 # View, run, or email a work item query  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 To find work items assigned to you or your team, run a query. A number of work item queries are predefined with your process. Also, members of your team may have created shared queries that you can view and run. Oftentimes, it's easier to define a new query by building on the query definition that's already available to you. 
 
@@ -30,7 +28,7 @@ To find work items assigned to you or your team, run a query. A number of work i
 
 ## Run a query 
 
-To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. You can also run a query by using the Azure Devops CLI.
+To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. You can also run a query by using the Azure DevOps CLI.
 
 #### [Browser](#tab/browser)
 
@@ -51,7 +49,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 
 3. Choose a folder within a breadcrumb to open a query folder.
 	> [!div class="mx-imgBorder"]  
-	> ![queries breadcrumb example](media/example-queries/queries-breadcrumb-example.png)
+	> ![Screenshot of queries breadcrumb example.](media/example-queries/queries-breadcrumb-example.png)
 
 ::: moniker-end
 
@@ -80,21 +78,21 @@ Open **Queries>All**. Under the **My Queries** section are two fully customizabl
 
 ### How do I quickly navigate to queries I view frequently?  
 
-- Favorite those queries and other artifacts that you view frequently. Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a query. 
-- Favorited queries (![ ](../../media/icons/icon-favorited.png) favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
+- Favorite those queries and other artifacts that you view frequently. Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a query. 
+- Favorited queries (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![queries selector](media/example-queries/queries-selector.png)  
-	Or, you can select from any of your favorited items by choosing the ![ ](../../media/icons/inbox.png) inbox icon and choose **Favorites**.  
+	> ![Screenshot of favorited queries breadcrumb selector.](media/example-queries/queries-selector.png)  
+	Or, you can select from any of your favorited items by choosing the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon and choose **Favorites**.  
 
-	![queries selector](media/example-queries/favorites-selector.png)  
+	![[Screenshot of your favorites listing queries.](media/example-queries/favorites-selector.png)  
 
 ### How do I quickly navigate to queries within the same query folder?  
 
-When viewing a query, you can use the queries breadcrumb selector (![ ](../../media/icons/breadcrumb-selector.png) the breadcrumb icon changes to ![ ](../../media/icons/context-menu-selector.png) a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
+When viewing a query, you can use the queries breadcrumb selector (:::image type="icon" source="../../media/icons/breadcrumb-selector.png" border="false"::: the breadcrumb icon changes to :::image type="icon" source="../../media/icons/context-menu-selector.png" border="false"::: a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
 
 > [!div class="mx-imgBorder"]  
-> ![queries breadcrumb example](media/view-run-queries/folder-selector.png)  
+> ![Screenshot of queries breadcrumb selector.](media/view-run-queries/folder-selector.png)  
 
 ### Can I run several queries at the same time? 
  
@@ -109,11 +107,11 @@ Yes. Simply open a query in a new browser tab to run several queries at the same
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 You can run a query in the CLI with the [az boards query](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az boards query [--id]
                 [--org]
                 [--path]
@@ -133,7 +131,7 @@ az boards query [--id]
 
 The following command runs a query with the specified ID and shows the result in table format.  
 
-```CLI
+```azurecli
 az boards query --id 6c286d74-26a5-4cce-bfcf-bf9123495bfe  --output table
 
 Priority    Node Name         Work Item Type    Title                             Remaining Work
@@ -148,7 +146,7 @@ Priority    Node Name         Work Item Type    Title                           
 
 The following command runs a query with the specified WIQL and shows the result in table format.  
 
-```CLI 
+```azurecli 
 az boards query --wiql "SELECT [Microsoft.VSTS.Common.Priority], [System.NodeName], [System.WorkItemType], [System.Title], [Microsoft.VSTS.Scheduling.RemainingWork], [System.AssignedTo], [System.State], [System.Tags], [System.AreaPath] FROM workitems WHERE [System.WorkItemType] = 'Bug' AND [System.AreaPath] = 'Fabrikam Fiber' ORDER BY [System.WorkItemType]" --output table
 
 Priority    Node Name       Work Item Type    Title                  Remaining Work
@@ -170,7 +168,7 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 
 ::: moniker range=">= azure-devops-2019"
 
-From either the **Favorites** or **All** page, choose the ![ ](../media/icons/actions-icon.png) actions icon of a query to run, edit, rename, or delete the query. 
+From either the **Favorites** or **All** page, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon of a query to run, edit, rename, or delete the query. 
 
 ![New query experience, Favorites page, query context menu](media/view-run-queries/query-context-menu-favorites-page.png)  
 
@@ -183,7 +181,7 @@ For shared queries, you can also choose to perform one of these tasks:
 
 ::: moniker range="<= tfs-2018"  
 
-Choose the ![ ](../media/icons/context_menu.png) context menu icon of a query to edit, rename, or delete the query.
+Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon of a query to edit, rename, or delete the query.
 
 ![Web portal, Boards>Queries, Open Shared queries, Active Bugs](media/using-queries-active-bugs-ts.png)
 
@@ -200,14 +198,14 @@ You can perform most tasks for viewing and running queries from each of the quer
 > [!div class="mx-tdCol2BreakAll"]
 > |Task |Favorites |All | 
 > |-------------|----------|---------| 
-> |View all favorited queries, yours or a team you belong to | ![Checkmark](../media/icons/checkmark.png) |  | 
-> |View all your queries or shared queries for the current project |  | ![Checkmark](../media/icons/checkmark.png) | 
-> |Run a query, open the context menu for a query  |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) |
-> |Expand or collapse container folders or query folders |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) |
-> |Filter the list of queries |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) |
-> |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |![Checkmark](../media/icons/checkmark.png) | 
-> |Unfavorite a query: Click ![Un-favorite](../media/icons/icon-favorited.png) |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) | 
-> |Add a new query: Click ![plus sign](../media/icons/add-new-query.png) |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) | 
+> |View all favorited queries, yours or a team you belong to | ✔️ |  | 
+> |View all your queries or shared queries for the current project |  | ✔️ | 
+> |Run a query, open the context menu for a query  |✔️ |✔️ |
+> |Expand or collapse container folders or query folders |✔️ |✔️ |
+> |Filter the list of queries |✔️ |✔️ |
+> |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
+> |Unfavorite a query: Click :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
+> |Add a new query: Click :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
 
 
 For details on adding new queries, see [Create managed queries with the query editor](using-queries.md). 
@@ -220,7 +218,9 @@ For details on adding new queries, see [Create managed queries with the query ed
 
 Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. 
 
-<img src="media/queries-all-filter.png" alt="List of all queries in the project filtered by WIT IQ keyword criteria" style="border: 1px solid #cccccc;"/>
+[!div class="mx-imgBorder"]  
+![Screenshot showing all queries in the project filtered by WIT IQ keyword criteria.](media/queries-all-filter.png)
+
 ::: moniker-end
 
 <a id="email-query" />
@@ -231,7 +231,7 @@ From the **Query Editor** or **Results** view, you can email a formatted list of
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose the ![ ](../media/icons/actions-icon.png) actions icon to open the menu and select from the options listed, **Email query** or **Copy query URL**. 
+Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu and select from the options listed, **Email query** or **Copy query URL**. 
  
 > [!div class="mx-imgBorder"]  
 > ![Web portal, Query Editor/Results, Open Actions menu, Choose Email query or Copy query URL](media/view-run-queries/email-query-new-exp.png)  
@@ -249,7 +249,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 ![Web portal, Query Editor/Results, Copy query URL](media/view-run-queries/copy-url-old-exp.png)  
 
 > [!NOTE]
-> With **Email query**, the system will email the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
+> With **Email query**, the system will email the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 
 ::: moniker-end
 
@@ -263,5 +263,5 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 - [Create and save managed queries with the query editor](using-queries.md)
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
 - [Set personal or team favorites](../../project/navigation/set-favorites.md) 
-- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 - [About access levels](../../organizations/security/access-levels.md)

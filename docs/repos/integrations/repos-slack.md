@@ -2,12 +2,11 @@
 title: Azure Repos with Slack
 titleSuffix: Azure Repos
 description: Monitor Azure Repos from Slack
-ms.prod: devops
 ms.technology: devops-code-git
 ms.topic: conceptual
 ms.manager: bijuv
-ms.author: karrg
-author: RGKarthik
+ms.author: Divais
+author: Divais
 monikerRange: 'azure-devops'
 ms.date: 10/21/2019
 ---
@@ -34,8 +33,8 @@ Read this article to learn how to:
 
 ## Prerequisites
 
-- To create subscriptions in a Slack channel for repository-related events, you must be a member of the Azure Project Administrators group. 
-To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md).
+- To create subscriptions in a Slack channel for repository-related events, you must be a member of the Azure Project Administrators group or Team Administrators group. 
+To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the organization. See [Change application 
 access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
 
@@ -114,6 +113,9 @@ To view, add and remove subscriptions for a channel, use the `subscriptions` com
 
 This command lists all the current subscriptions for the channel and allows you to add new subscriptions or remove existing ones. 
 When adding subscriptions, you can customize the notifications you get by using various filters, as described in the following section.
+
+[!NOTE]
+Team administrators aren't able to remove or modify subscriptions created by Project administrators.
 
 > [!div class="mx-imgBorder"]
 > ![View subscriptions](./media/integrations-slack/subscriptions-list.png)

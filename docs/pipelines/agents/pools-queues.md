@@ -1,14 +1,9 @@
 ---
-ms.prod: devops
 title: Agents pools
 ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
-ms.technology: devops-cicd
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.date: 02/25/2020
 monikerRange: '>= tfs-2015'
 ---
@@ -151,7 +146,7 @@ If you are a project team member, you create and manage agent queues from the ag
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"
+::: moniker range="> azure-devops-2019"
 
 [List agent pools](#list-agent-pools) | [Show agent pool details](#show-agent-pool-details) | [List agent queues](#list-agent-queues) | [Show agent queue details](#show-agent-queue-details)
 
@@ -413,7 +408,7 @@ Users in the **Agent Pool Service Accounts** group have permission to listen to 
 
 ::: moniker-end
 
-## Q & A
+## FAQ
 
 ### If I don't schedule a maintenance window, when will the agents run maintenance?
 

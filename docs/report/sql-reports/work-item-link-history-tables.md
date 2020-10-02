@@ -1,12 +1,10 @@
 ---
 title: Work Item Link History tables
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use Work Item Link History tables to query for links between bugs, tasks, and other types of work items.
 ms.assetid: 8fc040dc-8ff4-4ca6-be89-86a60a460cfa
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -43,7 +41,7 @@ You can query for links between bugs, tasks, and other types of work items by us
   
 - total story points for each user story in a team project under a specified area path  
   
-  For information about the Coalesce function that is used in the sample query, see the following page on the Microsoft Web site: [COALESCE (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=178080).  
+  For information about the Coalesce function that is used in the sample query, see the following page on the Microsoft Web site: [COALESCE (Transact-SQL)](/sql/t-sql/language-elements/coalesce-transact-sql).  
   
 > [!NOTE]
 >  This query assumes that a user story is linked to other work items through Child links.  

@@ -2,10 +2,7 @@
 title: Decrypt File (OpenSSL) task
 description: A thin utility task for file decryption using OpenSSL
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 7C6A6b71-4355-4AFC-A274-480EAB5678E9
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
@@ -17,7 +14,7 @@ monikerRange: azure-devops
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to decrypt files using OpenSSL.
+Use this task to decrypt files using OpenSSL.
 
 ::: moniker range="> tfs-2018"
 

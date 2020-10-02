@@ -3,11 +3,7 @@ title: Git frequently asked questions
 titleSuffix: Azure Repos
 description: Tips, Tricks, and HOWTO to complete some less-common Git tasks.
 ms.assetid: b1262306-214c-4422-8eda-d03d05825241
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 #  Frequently Asked Git Questions
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 ### Is there an easy way to get a remote branch downloaded into my local repository?
 

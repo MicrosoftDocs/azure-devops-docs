@@ -1,8 +1,6 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 02/19/2020
@@ -67,7 +65,7 @@ If you're using [upstream sources](../../nuget/upstream-sources.md), package ver
 
 ## Use symbols to debug
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files for packages without knowing product names, build numbers, or package names. If [symbols have been published](/azure/devops/pipelines/artifacts/symbols) for your packages, [connect Visual Studio to the symbol server in Azure Artifacts](../../symbols/debug-with-symbols-visual-studio.md) to use symbols as you debug your packages.
+Symbol servers enable debuggers to automatically retrieve the correct symbol files for packages without knowing product names, build numbers, or package names. If [symbols have been published](../../../pipelines/artifacts/symbols.md) for your packages, [connect Visual Studio to the symbol server in Azure Artifacts](../../symbols/debug-with-symbols-visual-studio.md) to use symbols as you debug your packages.
 
 <!-- TODO can we make this an FAQ bit at the end, so it's out of the way? -->
 

@@ -3,10 +3,7 @@ title: Manage your release with RM for VS and TFS
 ms.custom: seodec18
 description: Manage your release with Microsoft Release Management server and client for Visual Studio 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: FF4993B5-4961-4735-B678-54110C36FA48
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -184,7 +181,7 @@ To access this client, use the following URL:
 
 `http://<your-team-foundation-server-name>:1000/ReleaseManagement`
 
-## Q & A
+## FAQ
 
 ### Q: Can I deploy components of my multi-tiered app separately?
 
@@ -277,7 +274,7 @@ only to vNext environments based on Azure IaaS services.
 
 ### Q: Are there any hands-on labs to help me get started with Release Management?
 
-**A**: Yes. Go  **[here](https://blogs.msdn.com/b/briankel/archive/2013/08/02/visual-studio-2013-application-lifecycle-management-virtual-machine-and-hands-on-labs-demo-scripts.aspx)** 
+**A**: Yes. Go  **[here](https://devblogs.microsoft.com/devops/visual-studio-2013-application-lifecycle-management-virtual-machine-with-hands-on-labs-demo-scripts/)** 
 for hands-on labs to try Release Management and other devops products.
 
 ### Q: Is there a more detailed user guide?

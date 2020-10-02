@@ -2,10 +2,8 @@
 title: Get App Insights data with load tests
 description: Get app performance data from Application Insights using the features of Azure DevOps and TFS
 ms.assetid: 5658166B-CA7F-4C6B-B55D-AE745FB78D5C
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -22,7 +20,7 @@ monikerRange: '> tfs-2018'
 
 When you load test your app in the cloud using Azure DevOps, 
 you can compare app performance with virtual user load using 
-[Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/).
+[Application Insights](/azure/azure-monitor/app/app-insights-overview).
 Then, by doing a quick root cause analysis, you can figure out which code 
 is causing performance problems.
 
@@ -83,8 +81,7 @@ is causing performance problems.
 * [FAQs for load testing](reference-qa.md#qaappinsights)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
 * [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
-* [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
-[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

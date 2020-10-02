@@ -2,10 +2,7 @@
 title: Visual Studio Test Agent Deployment task
 description: Deploy and configure the Test Agent to run tests on a set of machines to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: 9A2D83B7-305A-4A67-ABA9-2B028A573EA0
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -33,7 +30,7 @@ For more details, see [Testing with unified agents and jobs](../../test/test-wit
 
 ## TFS 2017 and earlier
 
-Use this task in a build or release pipeline to deploy and configure the test agent to run tests on a set of machines.
+Use this task to deploy and configure the test agent to run tests on a set of machines.
 The test agent deployed by this task can collect data or run distributed tests using the [Visual Studio Test](vstest.md) task.
 
 ### Demands and prerequisites
@@ -67,7 +64,7 @@ This task requires the target computer to have:
 |          **Agent Configuration - Username**           |                                                                             Required. The username that the test agent will use. Must be an account on the test machines that has administrative permissions.<br />- Formats such as **username**, **domain\username**, **machine-name\username**, and **.\username** are supported.<br />- UPN formats such as <strong>username@domain.com</strong> and built-in system accounts such as **NT Authority\System** are not supported.                                                                             |
 |          **Agent Configuration - Password**           |                                                                                                                                                                                          Required. The password for the **Username** for the test agent. To protect the password, create a [variable](../../build/variables.md) and use the "padlock" icon to hide it.                                                                                                                                                                                           |
 |        **Agent Configuration - Run UI tests**         |                                                                                                                                        When set, the test agent will run as an interactive process. This is required when interacting with UI elements or starting applications during the tests. For example, Coded UI or Selenium tests that are running on full fidelity browsers will require this option to be set.                                                                                                                                         |
-| **Agent Configuration - Enable data collection only** |                                                                                                                                                                                            When set, the test agent will return previously collected data and not re-run the tests. At present this is only available for Code Coverage. Also see Q&A section below.                                                                                                                                                                                             |
+| **Agent Configuration - Enable data collection only** |                                                                                                                                                                                            When set, the test agent will return previously collected data and not re-run the tests. At present this is only available for Code Coverage. Also see FAQ section below.                                                                                                                                                                                             |
 |           **Advanced - Test agent version**           |                                                                                                                                                                                                                                                              The version of the test agent to use.                                                                                                                                                                                                                                                               |
 |          **Advanced - Test agent location**           |                       Optional. The path to the test agent (<a href="https://go.microsoft.com/fwlink/?LinkId=536423">vstf_testagent.exe</a>) if different from the default path.<br />- If you use a copy of the test agent located on your local computer or network, specify the path to that instance.<br />- The location must be accessible by either the build agent (using the identity it is running under) or the test agent (using the identity configured above).<br />- For Azure test machines, the web location can be used.                        |
 |           **Advanced - Update test agent**            |                                                                                                                                                                                                            If set, and the test agent is already installed on the test machines, the task will check if a new version of the test agent is available.                                                                                                                                                                                                            |
@@ -154,7 +151,7 @@ The supported options for these scenarios are:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 #### When would I use the Enable Data Collection Only option?

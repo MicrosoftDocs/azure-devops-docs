@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18  
 description: Understand how to structure your project to support collaboration on building software solutions.
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/20/2019
@@ -16,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # About projects and scaling your organization
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 A project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. It represents a fundamental container where data is stored when added to Azure DevOps.
 
@@ -49,7 +47,7 @@ The collection-project-team structure provides teams a high-level of autonomy to
 
 When you connect to Azure DevOps, you connect to an organization or project collection. Within that container, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 You can scale your organization in the following ways:
 
 - To support different business units, you can add projects
@@ -60,8 +58,8 @@ You can scale your organization in the following ways:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-You can scale your on-premises TFS deployment in the following ways:
+::: moniker range="< azure-devops"
+You can scale your on-premises Azure DevOps deployment in the following ways:
 
 - To increase performance, you can add server instances
 - To support different business units, you can add project collections and projects
@@ -80,7 +78,7 @@ You can view the projects defined for your organization by opening the **Project
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
     > ![Open Projects](media/about-projects/projects-hub-vert.png)  
@@ -91,7 +89,7 @@ You can view the projects defined for your organization by opening the **Project
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-1. Choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
     > ![Open Projects, horizontal nav](../../media/settings/open-project-hub-horz.png)
@@ -99,7 +97,7 @@ You can view the projects defined for your organization by opening the **Project
 2. From there, you can choose a project from the set of projects listed.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Projects, horizontal nav](media/about-projects/projects-hub-horz.png)
+    > ![Choose a project from the set of projects listed.](media/about-projects/projects-hub-horz.png)
 
 ::: moniker-end
 
@@ -122,7 +120,7 @@ Even if you have many teams working on hundreds of different applications and so
 
 ### Reasons to add another project
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 Instances where you may want to add another project include the following:
 
 - To prohibit or manage access to the information contained within a project to select groups
@@ -133,7 +131,7 @@ Instances where you may want to add another project include the following:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="< azure-devops"
 Instances where you may want to add another project include the following:
 
 - To prohibit or manage access to the information contained within a project
@@ -143,7 +141,7 @@ Instances where you may want to add another project include the following:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 ## Private and public projects
 
@@ -167,7 +165,7 @@ When you add a project, look at using the following elements to structure it to 
 - [Add a team](../../organizations/settings/add-teams.md) for each product team that develops a set of features for a product. Note that each team you create automatically creates a security group for that team which you can use to manage permissions for a team. See also, [Portfolio management](../../boards/plans/portfolio-management.md).
 - [Grant or restrict access to select features and functions](../security/restrict-access.md) using custom security groups.
 - [Create query folders](../../boards/queries/organize-queries.md) to organize queries for teams or product areas into folders.
-- [Define or modify notifications](../../notifications/index.md) set at the project level.
+- [Define or modify notifications](../../notifications/about-notifications.md) set at the project level.
 
 ## Customizing and configuring projects
 
@@ -176,7 +174,7 @@ You can configure and customize most services and applications to support your b
 ::: moniker range=">= azure-devops-2019"
 
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
-- **Source control**: For each [Git repository](../../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
+- **Source control**: For each [Git repository](../../repos/git/index.yml), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize an inheritance process](../settings/work/inheritance-process-model.md).
 - **Azure Pipelines**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.yml).  
 - **Azure Test Plans**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
@@ -186,7 +184,7 @@ You can configure and customize most services and applications to support your b
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
-- **Source control**: For each [Git repository](../../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
+- **Source control**: For each [Git repository](../../repos/git/index.yml), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
 - **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.yml).  
 - **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
@@ -206,7 +204,7 @@ As your organization grows, you'll want to add teams to provide them the Agile t
 - Incrementally adopt [practices that scale](../../boards/plans/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.
 - Structure projects to gain [visibility across teams](../../boards/plans/visibility-across-teams.md) or to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](../../boards/plans/scaled-agile-framework.md).
 
-To review  stories and short videos on how Microsoft transitioned from waterfall to Agile, see [Scaling Agile Across the Enterprise](https://stories.visualstudio.com/scaling-agile-across-the-enterprise/).
+To review  stories and short videos on how Microsoft transitioned from waterfall to Agile, see Scaling Agile Across the Enterprise.
 
 <a id="clients">  </a>
 
@@ -219,9 +217,9 @@ In addition to connecting through a web browser, you can connect to a project fr
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-- [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in)
+- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
 - [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
+- [Azure Test Plans](/previous-versions/jj635157(v=vs.140)) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
 ::: moniker-end
@@ -231,11 +229,11 @@ In addition to connecting through a web browser, you can connect to a project fr
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
-- [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in)
+- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
 - [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Office Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
 - [PowerPoint Storyboarding](../../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
-- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
+- [Azure Test Plans](/previous-versions/jj635157(v=vs.140)) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
 ::: moniker-end
@@ -247,7 +245,14 @@ See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server
 ### Q: Can I move or transfer a project to another organization or collection? 
 
 **A:** Not without losing data. You can't move a project from one collection/organization to another collection/organization without losing data. You can either manually copy resources and leave some behind, or some third party tool, such as [Opshub Visual Studio Migration Utility](https://www.opshub.com/products/opshub-visual-studio-migration-utility/) that copies data using the REST APIs. 
- 
+### Q: What programmatic tools support projects?
+
+**A.** See [Projects REST API](/rest/api/azure/devops/core/projects). 
+
+::: moniker range=">= azure-devops-2020"
+Also, you can use the [**az devops projects** commands](/cli/azure/ext/azure-devops/devops/project).  
+::: moniker-end
+
 
 ## Related articles
 

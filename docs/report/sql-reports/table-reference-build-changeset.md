@@ -1,15 +1,13 @@
 ---
 title: Build Changeset tables 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Uses FactBuildChangeset to query for data about the changesets.
 ms.assetid: 66ab6ac3-ff81-4ed7-9535-dd7ce9ebbb37
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 10/17/2017
 ---
 

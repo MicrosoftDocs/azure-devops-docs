@@ -2,10 +2,7 @@
 title: Xamarin Test Cloud task
 description: This task is deprecated. Use the App Center Test task instead. 
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 8e5b1533-631e-4095-9c58-9f62411b6e64
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -50,7 +47,7 @@ None
 | **Advanced - Parallelization** | Select None, By test fixture, or By test method. |
 | **Advanced - System Language** | Select your language. If it isn't displayed, select Other and then enter its locale below. For example: `en_AU`. |
 | **Advanced - test-cloud.exe Location** | Location of test-cloud.exe. In most cases leave this set to the default value. |
-| **Advanced - Optional Arguments** | (Optional) Arguments passed to test-cloud.exe. See [Submitting UITests at the Command Line](/xamarin/tools/ci/teamcity#submitting-xamarinuitests-to-test-cloud). |
+| **Advanced - Optional Arguments** | (Optional) Arguments passed to test-cloud.exe. See [Submitting UITests at the Command Line](/xamarin/tools/ci/teamcity#submitting-xamarinuitests-to-app-center). |
 | **Advanced - Publish results to VSO/TFS** | Select if you want to pass the **--nunit-xml** option to test-cloud.exe so that results from the NUnit xml file are be published to TFS or Azure Pipelines. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
@@ -62,7 +59,7 @@ None
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

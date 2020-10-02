@@ -1,29 +1,40 @@
 ---
 title: Publish and then download a Universal Package
-description: Using Universal Packages in Azure DevOps Services
+description: Using Universal Packages in Azure DevOps Services. How to publish and download universal packages to and from Azure Artifacts.
 ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
-ms.date: 08/27/2019
+ms.date: 06/24/2020
 monikerRange: 'azure-devops'
 ---
 
 # Publish and then download a Universal Package
 
-Universal Packages store one or more files together in a single unit that has a name and version. You can publish Universal Packages from the command line by using the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest). 
+Universal Packages store one or more files together in a single unit that has a name and version. You can publish Universal Packages from the command line by using the [Azure CLI](/cli/azure/?preserve-view=true&view=azure-cli-latest). 
 
 This quickstart shows you how to publish your first Universal Package by using the CLI, and how to download it by using the CLI. To see your package, you can go to your feed in Azure Artifacts.
 
 ## Prerequisites
 
-1. Download and install the latest [build](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) of the Azure CLI.
+1. Download and install the latest [build](/cli/azure/?preserve-view=true&view=azure-cli-latest) of the Azure CLI.
 2. If you're using Linux, ensure you've installed the [.NET Core Linux prerequisites](/dotnet/core/linux-prerequisites).
-3. Version 0.14.0 or greater of the Azure DevOps extension for the Azure CLI is required. Install the Azure DevOps extension using the command `az extension add --name azure-devops`. 
-You can check what extension version you currently have installed with the command `az --version`, and upgrade to the latest Azure DevOps extension with the command `az extension update --name azure-devops`.
+3. Version 0.14.0 or greater of the Azure DevOps extension for the Azure CLI is required. 
+
+You can install the Azure DevOps extension using the following command:
+   ```cmd
+   az extension add --name azure-devops
+   ```
+
+To check the extension version that you currently have, run the following command: 
+   ```cmd
+   az --version
+   ```
+
+You can upgrade to the latest Azure DevOps extension with the following command:
+
+   ```cmd
+   az extension update --name azure-devops
+   ```
 
 ## Prepare files for publishing
 
@@ -31,17 +42,16 @@ Create a new directory, and copy the files you want to publish as a package into
 
 ## Create a feed
 
-A feed is a container for packages.
-You consume and publish packages through a particular feed.
+A feed is a container that host your packages. You can publish and consume your packages through a particular feed.
 
-If you don't already have an Azure Artifacts feed, create one now and note its name. If you already have a feed, just note the name and [Skip to the next step](#publish-a-package).
+If you don't already have an Azure Artifacts feed, create one now and note its name. If you already have a feed, just note the name and [Skip to the next step](#publish-a-package) of this article to learn how to publish your universal packages.
 
-1. Go to **Azure Artifacts**:
+1. Go to **Artifacts**:
 
    > [!div class="mx-imgBorder"] 
    > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
-1. Select **+ New feed**:
+1. Select **Create feed**:
 
    > [!div class="mx-imgBorder"] 
    > ![New feed button](../media/new-feed-button-azure-devops-newnav.png)
@@ -53,12 +63,16 @@ If you don't already have an Azure Artifacts feed, create one now and note its n
    - Choose the upstream sources for your feed.
    - When you're done, select **Create**.
 
-   Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling [upstream sources](../concepts/upstream-sources.md) to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
+   Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team.
+   
+   Enabling [upstream sources](../concepts/upstream-sources.md) to public sources makes it easy to use your favorite OSS packages as well as gives you more protection against outages and corrupted or compromised packages.
 
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box](../media/new-feed-dialog.png)
 
-You can change these settings later by editing the feed. With your feed selected, select **Edit feed** (the gear icon).
+You can still change these settings later from your feed settings.
+
+With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access the **Feed settings**.
 
 > [!div class="mx-imgBorder"] 
 > ![Edit feed button](../media/editfeed-azure-devops-newnav.png)
@@ -66,7 +80,7 @@ You can change these settings later by editing the feed. With your feed selected
 
 ## Log in to Azure DevOps
 
-The following sections vary based on whether you've opted in to the new [Azure DevOps Services URLs](/azure/devops/extend/develop/work-with-urls).
+The following sections vary based on whether you've opted in to the new [Azure DevOps Services URLs](../../extend/develop/work-with-urls.md).
 
 # [New URLs](#tab/azuredevops)
 
@@ -96,12 +110,12 @@ Next, set the organization that you just logged in to as the CLI's default. Agai
 az devops configure --defaults organization=https://[your-organization].visualstudio.com project=ContosoWebApp
 ```
 
----
+-----
 
 <a name="publish-a-package"></a>
 ## Publish a Universal Package
 
-Publish a package with `az artifacts universal publish`. The following example publishes a package named *my-first-package* with version *1.0.0* to the *FabrikamFiber* feed in the *fabrikam* organization with a placeholder description.
+Publish a package with `az artifacts universal publish`. The following example publishes a package named _my-first-package_ with version _1.0.0_ to the _FabrikamFiber_ feed in the _fabrikam_ organization with a placeholder description.
 
 Update these values as desired, and use the feed name that you noted earlier. Package names must be lowercase and can use only letters, numbers, and dashes (`-`). Package versions must be lowercase [Semantic Versioning (SemVer) 2.0.0](https://semver.org/spec/v2.0.0.html) without build metadata (`+` suffix).
 
@@ -117,7 +131,7 @@ az artifacts universal publish --organization https://dev.azure.com/fabrikam --f
 az artifacts universal publish --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "Your description" --path .
 ```
 
----
+-----
 
 ## View the package in your feed
 
@@ -128,7 +142,7 @@ To see the package that you just published, go to the organization that you spec
 
 ## Download a Universal Package
 
-Now that you've published a package, you can download it to a different directory on your machine. To do that, make a new directory and switch to it. Then, download your package.
+Now that you've published a package, you can download it to a different directory on your machine. To do that, make a new directory and switch to it. Then run the command in the example to download your package.
 
 You must use the Azure CLI to download the package. Azure DevOps doesn't support direct HTTP/HTTPS download links or other ways to download the package. 
 
@@ -146,11 +160,13 @@ az artifacts universal download --organization https://dev.azure.com/fabrikam --
 az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .
 ```
 
----
+-----
 
 ### Filtered Universal Package downloads
 
-For large Universal Packages, you might want to download a few files instead of the entire package. You can use the ```--file-filter``` feature to download a subset of the Universal Package files. The ```--file-filter``` command follows the [.gitignore syntax](https://git-scm.com/docs/gitignore#_pattern_format). Make sure you have the latest Azure DevOps CLI extension: ```az extension update -n azure-devops```
+For large Universal Packages, you might want to download a few files instead of the entire package. You can use the ```--file-filter``` feature to download a subset of the Universal Package files.
+
+The ```--file-filter``` command follows the [.gitignore syntax](https://git-scm.com/docs/gitignore#_pattern_format). Make sure you have the latest Azure DevOps CLI extension: ```az extension update -n azure-devops```
 
 The following example uses a minimatch pattern to download all ```.exe```'s and ```dll```'s in your Universal Package. Don't forget to update these values to match the values that you selected when you published your package.
 
@@ -166,7 +182,7 @@ az artifacts universal download --organization https://dev.azure.com/fabrikam --
 az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
 ```
 
----
+-----
 
 ### Downloading the latest version
 
@@ -183,4 +199,6 @@ Note that while Semantic Versioning specifies that versions must increase over t
 
 ## Next steps
 
-In this quickstart, you published your first Universal Package and then downloaded back to your machine. To learn more about the Universal Package CLI, append `-h` to any CLI command. To use Universal Packages in a build, see the [Azure Pipelines doc for Universal Packages](../../pipelines/artifacts/universal-packages.md) or see the full [Universal Packages task documentation](../../pipelines/tasks/package/universal-packages.md).
+In this quickstart, you published your first Universal Package and then downloaded back to your machine. To learn more about the Universal Package CLI, append `-h` to any CLI command.
+
+To use Universal Packages in Azure Pipelines, see the [Azure Pipelines doc for Universal Packages](../../pipelines/artifacts/universal-packages.md) or see the full [Universal Packages task documentation](../../pipelines/tasks/package/universal-packages.md).

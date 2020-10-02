@@ -1,13 +1,9 @@
 ---
 title: Security through templates
 description: Using template features to improve pipeline security.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
-ms.manager: mijacobs
-ms.author: jukullam
 ms.reviewer: macoope
-ms.date: 2/04/2020
+ms.date: 08/03/2020
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -35,7 +31,7 @@ parameters:
   type: stepList
   default: []
 steps:
-- ${{ each step in parameters.usersteps }}
+- ${{ each step in parameters.usersteps }}:
   - ${{ step }}
 ```
 
@@ -46,7 +42,7 @@ resources:
   - repository: templates
     type: git
     name: MyProject/MyTemplates
-    ref: tags/v1
+    ref: refs/tags/v1
 
 extends:
   template: template.yml@templates
@@ -177,6 +173,63 @@ extends:
   template: template.yml
   parameters:
     userpool: private-pool-1
+```
+
+### Set required templates
+
+To require that a specific template gets used, you can set the [required template check](../process/approvals.md#required-template) for a resource or environment. The required template check can be used when extending from a template. 
+
+You can check on the status of a check when viewing a pipeline job. When a pipeline doesn't extend from the require template, the check will fail and the run will stop. You will see that your check failed. 
+
+   > [!div class="mx-imgBorder"]
+   > ![approval check fails](../process/media/approval-fail.png)
+
+When the required template is used, you'll see that your check passed.
+
+   > [!div class="mx-imgBorder"]
+   > ![approval check passes](../process/media/approval-pass.png)
+
+
+Here the template `params.yml` is required with an approval on the resource. To trigger the pipeline to fail, comment out the reference to `params.yml`. 
+
+```yaml
+# params.yml
+parameters:
+- name: yesNo 
+  type: boolean
+  default: false
+- name: image
+  displayName: Pool Image
+  type: string
+  default: ubuntu-latest
+  values:
+  - windows-latest
+  - vs2017-win2016
+  - ubuntu-latest
+  - ubuntu-16.04
+  - macOS-latest
+  - macOS-10.14
+
+steps:
+- script: echo ${{ parameters.yesNo }}
+- script: echo ${{ parameters.image }}
+```
+
+```yaml
+# azure-pipeline.yml
+
+resources:
+ containers:
+     - container: my-container
+       endpoint: my-service-connection
+       image: mycontainerimages
+
+extends:
+    template: params.yml
+    parameters:
+        yesNo: true
+        image: 'windows-latest'
+
 ```
 
 ### Additional steps

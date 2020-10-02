@@ -1,14 +1,9 @@
 ---
-ms.prod: devops
 title: Running a self-hosted agent in Docker
 ms.topic: conceptual
 description: Instructions for running your pipelines agent in Docker
-ms.technology: devops-cicd
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
-ms.date: 01/09/2020
+ms.date: 05/29/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -21,6 +16,7 @@ We'll walk through a complete container example, including handling agent self-u
 Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. 
 You'll pass a few [environment variables](#environment-variables) to `docker run` which configure the agent to connect to Azure Pipelines or Azure DevOps Server.
 Finally, you'll want to [customize the container](#adding-tools-and-customizing-the-container) to suit your needs.
+Tasks and scripts may depend on specific tools being available on the container's `PATH`, and it is your responsibility to ensure these tools are available.
 
 ::: moniker range="azure-devops-2019"
 
@@ -184,6 +180,9 @@ Now that you have created an image, you can spin up a container.
 
 You can optionally control the pool and agent work directory using additional [environment variables](#environment-variables).
 
+If you want a fresh agent container for every pipeline run, you should pass the [`--once` flag](v2-windows.md#run-once) to the `run` command.
+You must also use some kind of container orchestration system like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/) to start new copies of the container when the work completes.
+
 ## Linux
 
 ### Install Docker
@@ -210,7 +209,7 @@ Next, we'll create the Dockerfile.
 4. Save the following content to `~/dockeragent/Dockerfile`:
 
     ```docker
-    FROM ubuntu:16.04
+    FROM ubuntu:18.04
 
     # To make it easier for build and release pipelines to run apt-get,
     # configure apt to not require confirmation (assume the -y argument by default)
@@ -224,10 +223,11 @@ Next, we'll create the Dockerfile.
             jq \
             git \
             iputils-ping \
-            libcurl3 \
-            libicu55 \
+            libcurl4 \
+            libicu60 \
             libunwind8 \
-            netcat
+            netcat \
+            libssl1.0
 
     WORKDIR /azp
 
@@ -339,6 +339,7 @@ Next, we'll create the Dockerfile.
 
     # `exec` the node runtime so it's aware of TERM and INT signals
     # AgentService.js understands how to handle agent self-update and restart
+    # Running it with the --once flag at the end will shut down the agent after the build is executed
     exec ./externals/node/bin/node ./bin/AgentService.js interactive
     ```
 
@@ -366,12 +367,15 @@ Now that you have created an image, you can spin up a container.
 
 You can optionally control the pool and agent work directory using additional [environment variables](#environment-variables).
 
+If you want a fresh agent container for every pipeline run, you should pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
+You must also use some kind of container orchestration system like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/) to start new copies of the container when the work completes.
+
 ## Environment variables
 
 | Environment variable | Description                                                 |
 |----------------------|-------------------------------------------------------------|
 | AZP_URL              | The URL of the Azure DevOps or Azure DevOps Server instance |
-| AZP_TOKEN            | Personal Access Token (PAT) granting access to `AZP_URL`    |
+| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user that has permission to [configure agents](pools-queues.md#creating-agent-pools), at `AZP_URL`    |
 | AZP_AGENT_NAME       | Agent name (default value: the container hostname)          |
 | AZP_POOL             | Agent pool name (default value: `Default`)                  |
 | AZP_WORK             | Work directory (default value: `_work`)                     |
@@ -380,10 +384,11 @@ You can optionally control the pool and agent work directory using additional [e
 ## Adding tools and customizing the container
 
 In this walkthrough, you created a basic build agent.
+The suggested base Dockerfiles are just that: suggestions.
 You can extend the Dockerfile to include additional tools and their dependencies, or build your own container using this one as a base layer. Just make sure that the following things are left untouched:
 
 - The `start.sh` script is called by the Dockerfile
-- The `start.sh` script is the last command that the Dockerfile
+- The `start.sh` script is the last command in the Dockerfile
 - Ensure that derivative containers do not remove any of the dependencies stated by the Dockerfile
 
 ## Using Docker within a Docker container

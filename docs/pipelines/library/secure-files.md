@@ -3,9 +3,6 @@ title: Secure files for Azure Pipelines and TFS
 ms.custom: seodec18
 description: Understand secure files for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
 ms.author: vijayma
 ms.date: 12/18/2018
 monikerRange: '>= tfs-2015'
@@ -26,7 +23,7 @@ The contents of the secure files are encrypted and can only be used during the b
 
 There's a size limit of 10 MB for each secure file.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -41,7 +38,7 @@ You can build your own tasks that use secure files by using inputs with type `se
 
 The Install Apple Provisioning Profile task is a simple example of a task using a secure file. See the [reference documentation](../tasks/utility/install-apple-provisioning-profile.md) and [source code](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InstallAppleProvisioningProfileV1).
 
-To handle secure files during build or release, you can refer to the common module available [here](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/Common/securefiles-common).
+To handle secure files during build or release, you can refer to the common module available [here](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/Common).
 
 ### My task can't access the secure files. What do I do?
 

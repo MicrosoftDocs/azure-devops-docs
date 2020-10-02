@@ -3,12 +3,7 @@ title: Azure Pipelines New User Guide - Key concepts
 ms.custom: seodec18
 description: Learn how Azure Pipelines works with your code and tools to automate build and deployment, and the key concepts behind it.
 ms.topic: overview
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
-ms.date: 01/15/2020
+ms.date: 04/23/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -34,7 +29,7 @@ Learn about the key concepts and components that are used in Azure Pipelines. Un
 
 ## Agent
 
-When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one job at a time.
+When your build or deployment runs, the system begins one or more jobs. An agent is computing infrastructure with installed agent software that runs one job at a time.
 
 For more in-depth information about the different types of agents and how to use them, see [Build and release agents](../agents/agents.md).
 
@@ -54,6 +49,10 @@ Continuous delivery &#40;CD&#41; is a process by which code is built, tested, an
 
 Continuous integration &#40;CI&#41; is the practice used by development teams to simplify the testing and building of code. CI helps to catch bugs or problems early in the development cycle, which makes them easier and faster to fix. Automated tests and builds are run as part of the CI process. The process can run on a set schedule, whenever code is pushed, or both. Items known as artifacts are produced from CI systems. They're used by the continuous delivery release pipelines to drive automatic deployments.
 
+## Deployment group
+
+A deployment group is a set of deployment target machines that have agents installed. A deployment group is just another grouping of agents, like an agent pool. You can set the deployment targets in a pipeline for a job using a deployment group. Learn more about provisioning agents for [deployment groups](../release/deployment-groups/howto-provision-deployment-group-agents.md). 
+
 ## Environment
 
 An environment is a collection of resources, where you deploy your application. It can contain one or more virtual machines, containers, web apps, or any service that's used to host the application being developed. A pipeline might deploy the app to one or more environments after build is completed and tests are run.
@@ -68,7 +67,7 @@ A pipeline defines the continuous integration and deployment process for your ap
 
 ## Run
 
-A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests.
+A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests. During a run, Azure Pipelines will first process the pipeline and then hand off the run to one or more agents. Each agent will run jobs. Learn more about the [pipeline run sequence](../process/runs.md).  
 
 ## Script
 

@@ -2,12 +2,9 @@
 title: Manage branching strategies in TFVC for DevOps
 description: Learn to manage branching strategies with a DevOps mindset in Team Foundation Version Control (TFVC)
 ms.assetid: 7910781F-8DA2-4AFB-B73C-B1833A364734
-ms.prod: devops
 ms.topic: article
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.date: 04/25/2018
-ms.author: sdanie
 author: wpschaub
 monikerRange: '>= tfs-2015'
 ---

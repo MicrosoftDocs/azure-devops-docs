@@ -2,7 +2,6 @@
 title: New Analytics reports and Azure Boards app for Slack - Sprint 155 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 07/30/2019
 description: In the **Sprint 155 Update** of Azure DevOps, we are introducing new Azure Boards Analytics reports to make it easier for you to track important team metrics.
@@ -72,7 +71,7 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

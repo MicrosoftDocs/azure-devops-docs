@@ -2,9 +2,7 @@
 title: Azure Boards FAQs 
 description: Answers to frequently asked questions about Azure Boards 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -14,7 +12,7 @@ ms.date: 02/07/2020
 
 # Azure Boards FAQs 
 
-[!INCLUDE [temp](includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](includes/version-all.md)]
  
 
 Find answers to frequently asked questions when using Azure Boards. For FAQs specific to Microsoft Excel integration to add or modify work items defined in Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md). 
@@ -79,9 +77,17 @@ If you are tracking dependencies across one or more organizations, you may want 
 
 ### Q: Can I copy a work item including its subtasks? 
 
-**A:** No. Cloning doesn't copy work item subtasks.  
+::: moniker range="azure-devops"
+**A:** Yes. Azure Boards (cloud service) now supports copying child work items when copying a work item. For details, see [Copy or clone work items](backlogs/copy-clone-work-items.md#copy-clone).  
 
-Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item including subtasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_backlogs/backlog/Boards/Roadmap%20Items/?workitem=1666194).
+::: moniker-end
+::: moniker range="< azure-devops"
+
+**A:** No. Cloning doesn't copy work item subtasks for on-premises deployments. 
+
+Is this feature on the roadmap? Yes. In fact, it has been released on Azure Boards (cloud service).  
+
+::: moniker-end
 
 ### Q: Can I create a work item template that creates links to other work items? 
 
@@ -91,6 +97,8 @@ Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item 
 - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
 - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
+
+[!INCLUDE [temp](includes/faq-copy-clone.md)]
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -109,6 +117,10 @@ Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](
 ## Backlogs and boards 
 
 Each backlog and board represents a filtered list of work items based on area path and iteration path assignments. To understand how the filtering is applied, see [About teams and Agile tools, Team defaults referenced by backlogs and boards](../organizations/settings/about-teams-and-settings.md#team-defaults).
+
+### Q: How do I add a backlog or board?  
+
+**A:** To add a backlog or board, you add a team. Each team is configured with it's own set of it's own set of backlogs and boards as described in [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). 
 
 ### Q: How do I migrate my existing backlog to Azure Boards?  
 
@@ -130,6 +142,8 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 ### Q: Can I define sprints and use with my Kanban board? 
 
 **A:** Yes. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md). 
+
+[!INCLUDE [temp](includes/faq-critical-path.md)]
 
 
 ## Queries 

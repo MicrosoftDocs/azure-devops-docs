@@ -3,9 +3,7 @@ title: Resolve validation errors
 titleSuffix: Azure DevOps Services  
 description: Fix errors reported upon importing a process to support customization of tracking work in Azure DevOps Services.  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -17,7 +15,7 @@ ms.date: 03/20/2018
 **Azure DevOps Services (Hosted XML)**
 
 > [!IMPORTANT]  
-> Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Azure DevOps Services process customization. 
+> Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Data Import Service](../../../../migrate/migration-overview.md). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Azure DevOps Services process customization. 
 >
 > If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
 >
@@ -1226,7 +1224,7 @@ For more information, see [ProcessConfiguration XML element reference](../../../
 
 ### TF400572: The Project Process Settings must be configured for this feature to be used.
 
-This is caused by templates that are from TFS 2010 or earlier, before the Project Process Settings existed. Try running [Configure features after an upgrade](../../../../reference/configure-features-after-upgrade.md) to resolve, or add the [ProcessConfiguration XML file](../../../../reference/xml/process-configuration-xml-element.md) to the process template. 
+This is caused by templates that are from TFS 2010 or earlier, before the Project Process Settings existed. Try running [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) to resolve, or add the [ProcessConfiguration XML file](../../../../reference/xml/process-configuration-xml-element.md) to the process template. 
 
 
 <a id="wit-definitions"></a>

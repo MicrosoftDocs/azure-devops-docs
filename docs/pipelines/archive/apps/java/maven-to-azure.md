@@ -3,12 +3,7 @@ title: Build and Deploy your Java application to an Azure Web App
 ms.custom: seodec18
 description: Build and Deploy your Java application to an Azure Web App
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: E6A051F3-8B84-4724-9110-F84DB1F3DCD5
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.date: 08/04/2016
 monikerRange: 'tfs-2017'
 ---
@@ -120,7 +115,7 @@ On the Build tab, add these tasks:
 
 After a successful build, check your site: ```http://{web_app_name}.azurewebsites.net/{war_file_name}```
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

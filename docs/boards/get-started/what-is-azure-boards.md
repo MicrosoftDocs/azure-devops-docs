@@ -3,15 +3,13 @@ title: Understand what you get with Azure Boards
 titleSuffix: Azure Boards
 description: Main features and functions supported by Azure Boards available from Azure DevOps Services and Team Foundation Server (TFS) 
 ms.custom: boards-get-started
-ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 02/05/2020
+ms.date: 07/09/2020
 ---
 
 # What is Azure Boards?
@@ -169,11 +167,11 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 
 **Assign backlog items to a sprint**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint-s155.png)  
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint.png)  
 ::: moniker-end
@@ -184,11 +182,11 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 
 **Assign backlog items to a sprint**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues-s155.png)  
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
 ::: moniker-end
@@ -198,11 +196,11 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 
 **Assign backlog items to a sprint**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/scrum-assign-sprint.png)  
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
 ::: moniker-end
@@ -212,11 +210,11 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 
 **Assign backlog items to a sprint**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/cmmi-assign-sprint.png)  
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/cmmi-assign-sprint-on-prem.png)  
 ::: moniker-end
@@ -245,11 +243,11 @@ You'll find you can work more effectively through these actions:
 
 **Group items to create a hierarchy**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/agile-hierarchy-cloud.png)
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Backlogs, show parents](media/about-boards/agile-hierarchy-with-header.png)  
 ::: moniker-end
@@ -258,11 +256,11 @@ You'll find you can work more effectively through these actions:
 
 **Group items to create a hierarchy**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/hierarchy-cloud.png) 
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/hierarchy.png) 
 ::: moniker-end
@@ -271,11 +269,11 @@ You'll find you can work more effectively through these actions:
 
 **Group items to create a hierarchy**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/scrum-hierarchy.png) 
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Backlogs, show parents](media/about-boards/scrum-hierarchy-on-prem.png)  
 ::: moniker-end
@@ -284,11 +282,11 @@ You'll find you can work more effectively through these actions:
 
 **Group items to create a hierarchy**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/cmmi-hierarchy.png) 
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Backlogs, show parents](media/about-boards/cmmi-hierarchy-on-prem.png)  
 ::: moniker-end

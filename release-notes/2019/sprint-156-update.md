@@ -2,7 +2,6 @@
 title: Azure DevOps Services release notes - Enhancements to Azure Boards - Sprint 156 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 08/12/2019
 description: In the **Sprint 156 Update** of Azure DevOps, we continue to improve Azure Boards to include items that can help improve the user experience. 
@@ -94,7 +93,7 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

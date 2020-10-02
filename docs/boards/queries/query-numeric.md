@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -16,7 +14,7 @@ ms.date: 10/03/2019
 
 # Query by numeric fields    
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 How do I determine how much work each developer has completed on my team? Is there a way to sum up the effort or story points for an iteration? 
 
@@ -312,7 +310,7 @@ The following table describes the activity-based and numeric fields that you can
 <tr>
     <td><p>Requires Test</p></td>
     <td><p>Indicates the task requires a test. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
-<p>Reference name=&quot;Microsoft.VSTS.CMMI.RequiresTest, Data type=String</p>
+<p>Reference name=Microsoft.VSTS.CMMI.RequiresTest, Data type=String</p>
 </td>
     <td>Task (CMMI)</td>
 </tr>

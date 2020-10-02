@@ -2,10 +2,8 @@
 title: Create manual tests
 description: Test tools - Create manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

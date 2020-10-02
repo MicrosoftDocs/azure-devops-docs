@@ -2,10 +2,8 @@
 title: Connect with data by using OData queries
 titleSuffix: Azure DevOps
 description: Write and test OData queries for use in Power BI integration
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -60,6 +58,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
     &$orderby=CreatedDate desc
     &$top=10
 ``` 
+To query across projects, omit `/{project}` entirely. 
 
 For more information about how to write OData queries against Analytics, see [OData query quick reference](../extend-analytics/quick-ref.md). 
 
@@ -135,7 +134,7 @@ Replace `[Implementation="2.0"]` with the following string:
 
 `[Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]` 
 
-![Power BI - OData Feed - Advanced Editor - Scroll Right](media/odataquery-powerbi-advancededitor2.png)
+![Replace the string.](media/odataquery-powerbi-advancededitor2.png)
 
 > [!NOTE]
 > The following actions help accomplish this preventative measure: 

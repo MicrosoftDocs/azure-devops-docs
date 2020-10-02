@@ -1,12 +1,11 @@
 ---
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Azure Pipelines with Slack
 description: Connect and monitor your pipelines in Azure Pipelines to Slack by subscribing to notifications right from Slack 
 ms.manager: bijuv
-ms.author: atinb
-author: atinb
+ms.author: divais
+author: divais
 ms.date: 12/17/2019
 monikerRange: 'azure-devops'
 ---
@@ -87,6 +86,9 @@ To manage the subscriptions for a channel, use the following command:
 
 This command will list all the current subscriptions for the channel and allow you to add new subscriptions.
 
+[!NOTE]
+Team administrators aren't able to remove or modify subscriptions created by Project administrators.
+
 > [!div class="mx-imgBorder"]
 > ![Subscriptions list image](media/integrations-slack/subscriptions-list.png)
 
@@ -119,7 +121,7 @@ You can approve deployments from within your channel without navigating to the A
 
 Whenever the running of a stage is pending for approval, a notification card with options to approve or reject the request is posted in the channel. Approvers can review the details of the request in the notification and take appropriate action. In the following example, the deployment was approved and the approval status is displayed on the card.
 
-![Approved](media/integrations-slack/approved.png)
+![Screenshot showing approved notification.](media/integrations-slack/approved.png)
 
 The app supports all the checks and approval scenarios present in Azure Pipelines portal, like single approver, multiple approvers (any one user, any order, in sequence) and teams as approvers. You can approve requests as an individual or on behalf of a team.
 
@@ -127,10 +129,10 @@ The app supports all the checks and approval scenarios present in Azure Pipeline
 
 When a user pastes a pipeline URL, a preview is shown similar to that in the following image. This helps to keep pipeline related conversations relevant and accurate.
 
-![URL unfurling](./media/integrations-slack/build-url-unfurling.png)
+![Build URL unfurling.](./media/integrations-slack/build-url-unfurling.png)
 
 
-![URL unfurling](./media/integrations-slack/release-url-unfurling.png)
+![Release URL unfurling.](./media/integrations-slack/release-url-unfurling.png)
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
 
@@ -139,15 +141,15 @@ For this feature to work, users have to be signed-in. Once they are signed in, t
 
 If you want to clean up your channel, use the following commands to unsubscribe from all pipelines within a project.
 
-	```
-	/azpipelines unsubscribe all [project url]
-	```
+```
+/azpipelines unsubscribe all [project url]
+```
 
-	For example:
+For example:
 
-	```
-	/azpipelines unsubscribe all https://dev.azure.com/myorg/myproject
-	```
+```
+/azpipelines unsubscribe all https://dev.azure.com/myorg/myproject
+```
 
 This command deletes all the subscriptions related to any pipeline in the project and removes the pipelines from the channel. 
 

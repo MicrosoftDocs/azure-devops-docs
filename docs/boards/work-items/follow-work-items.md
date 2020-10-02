@@ -4,9 +4,7 @@ titleSuffix: Azure Boards & Azure Repos
 description: Track updates made to a work item or pull request by following it when using Azure Boards or Azure Repos 
 ms.custom: work-items, seodec18
 ms.technology: devops-collab
-ms.prod: devops
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -16,8 +14,7 @@ ms.date: 11/19/2018
 
 # Tutorial: Follow a user story, bug, issue, or other work item or pull request  
 
-**Azure Boards | Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
-
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
 
 <a id="follow"></a>  
 
@@ -55,7 +52,7 @@ This article shows you how to:
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
@@ -64,18 +61,16 @@ This article shows you how to:
 
 ::: moniker-end 
 
-follow-work-with-notifications
-
 ## Follow a work item
 
-When you want to track the progress of a single work item, choose the ![ ](../media/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
+When you want to track the progress of a single work item, choose the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: follow icon. This signals the system to notify you when changes are made to the work item.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Follow icon control](media/follow-work/follow-work-item.png) 
 
-If you want to specify conditions on when you'll get notified of changes, choose the ![ ](../media/icons/gear_icon.png) gear icon and choose from the options provided. 
+If you want to specify conditions on when you'll get notified of changes, choose the :::image type="icon" source="../media/icons/gear_icon.png" border="false"::: gear icon and choose from the options provided. 
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Notification settings dialog for follow](media/follow-work/notification-settings-for-follow.png) 
@@ -94,7 +89,7 @@ By default, you are **Subscribed** to receive a notification when any change is 
 ::: moniker range="tfs-2017"
 
 > [!NOTE]   
-> The **Follow a work item** feature is available from TFS 2017 and later versions. The **Follow a pull request** feature is available from TFS 2017.1 and later versions. To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://visualstudio.microsoft.com/downloads). 
+> The **Follow a work item** feature is available from TFS 2017 and later versions. The **Follow a pull request** feature is available from TFS 2017.1 and later versions. To update your on-premises Azure DevOps, visit the [Visual Studio downloads page for Team Foundation Server](https://visualstudio.microsoft.com/downloads). 
 
 ::: moniker-end
 
@@ -102,13 +97,13 @@ You'll only receive notifications when other members of your team modifies the w
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md)
 
-To stop following changes, choose the ![ ](../media/icons/following-icon.png) following icon.
+To stop following changes, choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  following icon.
  
 <a id="follow-pr"></a>
 
 ## Follow a pull request 
 
-To track the progress of a single pull request, choose the ![ ](../media/icons/actions-icon.png) actions icon for the pull request, and select the ![ ](../media/icons/follow-icon.png) **Follow** option. This signals the system to notify you when changes are made to the PR.  
+To track the progress of a single pull request, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for the pull request, and select the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: **Follow** option. This signals the system to notify you when changes are made to the PR.  
 
 <img src="media/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />  
 
@@ -116,7 +111,7 @@ You'll only receive notifications when other members of your team modifies the P
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
-To stop following changes, open the PR context menu and choose the ![ ](../media/icons/following-icon.png) Following icon. 
+To stop following changes, open the PR context menu and choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  Following icon. 
 
 ## Manage work items that you're following  
 
@@ -141,7 +136,7 @@ From this view, you can view all items you're following across all projects. Als
 You can also view and manage work that you're following from **Boards>Work Items** and pivot to **Following**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Boards>Queries>All>Followed work items, new nav](media/follow-work/open-work-items-vert.png)   
+> ![Boards>Work Items, and pivot to Following.](media/follow-work/open-work-items-vert.png)   
 
 ::: moniker-end   
 
@@ -162,6 +157,15 @@ From this view, you can view all items you're following across all projects. Als
 You can also view and manage work that you're following from your Project pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
 
 ::: moniker-end 
+
+## Query work items that you're following
+
+You can use the **@Follows** macro in a query to filter a list based on work items you're following in addition to other query filters. 
+
+For example, the following query shows how to query across all projects for active work items that you're following. You use the ID field and the In operator with the **@Follows** macro.  
+
+
+:::image type="content" source="media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
 
 ## Try this next
 

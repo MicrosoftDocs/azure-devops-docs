@@ -1,7 +1,6 @@
 ---
 title: Test artifacts as work items – Oct 14
 description: VSTS release notes for October 14 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: cfb7eacd-1d58-492d-83a2-c645ceae76cf
@@ -14,7 +13,7 @@ author: yukom
 
 ## Test artifacts as work items
 
-Work item based Test Plans and Test Suites, which were available with [TFS 2013 Update 3](https://blogs.msdn.com/b/bharry/archive/2014/05/30/visual-studio-team-foundation-server-2013-update-3-ctp1-vs-2013-3-1-if-you-wish.aspx), are now available on Visual Studio Online. Now that Test suites are work items you can assign owners to each suite and use the Summary field to capture important notes. Changes to Test Plans and Test Suites can be audited with work item history and permissions can be managed at a more granular level with the new **Manage Test Suites** permission.
+Work item based Test Plans and Test Suites, which were available with [TFS 2013 Update 3](https://devblogs.microsoft.com/bharry/visual-studioteam-foundation-server-2013-update-3-ctp1-vs-2013-3-1-if-you-wish/), are now available on Visual Studio Online. Now that Test suites are work items you can assign owners to each suite and use the Summary field to capture important notes. Changes to Test Plans and Test Suites can be audited with work item history and permissions can be managed at a more granular level with the new **Manage Test Suites** permission.
 
 Have a look at the screenshots below. In the first you’ll see the test artifacts as displayed inside the Test hub. We’ve got a Test Plan (“Sprint 72 Tests”), two Test Suites (“Sprint 72 Tests”, and “98: Copy/paste the preserves HTML formatting”), and three associated Tests Cases.
 

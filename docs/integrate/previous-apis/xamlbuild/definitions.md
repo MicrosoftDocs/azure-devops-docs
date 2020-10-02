@@ -1,18 +1,16 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Build Definitions (XAML Build) | REST API Reference for Team Foundation Server
-description: Get build definitions programmatically using the REST APIs for Team Foundation Server.
+description: Get build definitions for XAML Builds programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: d0424288-2fbd-4a65-8a60-0d272a42eca7
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
 ms.date: 08/04/2016
 ---
 
-# Build definitions
+# XAML build definitions
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 

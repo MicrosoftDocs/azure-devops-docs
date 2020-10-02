@@ -1,7 +1,6 @@
 ---
 title: Card configuration options – Apr 10
 description: VSTS release notes for April 10 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 585770d3-173f-4c37-bad9-acfb4ea143ff

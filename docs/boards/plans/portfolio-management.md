@@ -3,19 +3,17 @@ title: Portfolio management
 titleSuffix: Azure Boards
 description: Work with a hierarchical team structure to manage product and portfolio backlogs and  to track progress across teams
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 07/09/2020
 ---
 
 # Portfolio management 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Portfolio backlogs provide product owners insight into the work performed by several agile feature teams. Product owners can define the high-level goals as Epics or Features, and feature teams can break these down into the user stories they'll prioritize and develop.  
 
@@ -96,7 +94,7 @@ Each feature team has its own team home page or dashboards, product and portfoli
 
 The Customer Service feature team's view of the backlog only includes those work items assigned to their area path, **Fabrikam Fiber/Customer Service**. Here we show parents which provide a few of the features and epics to which the backlog items belong. Items that are owned by other teams appear with hollow-filled bars. For example, Mobile feedback and Text alerts belong to the Account Management team. 
 
-Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png).
+Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: .
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership](../backlogs/media/multi-ownership/customer-service-backlog-parents-on.png)   
@@ -106,7 +104,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png). 
+Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: . 
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership](../backlogs/media/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
@@ -149,7 +147,7 @@ During the planning meeting, you can open each item, make notes, and assign the 
 Here, all backlog items have been assigned to feature teams. While all features and epics remain owned by Account Management. 
 
 > [!div class="mx-imgBorder"]  
-> ![Management team common backlog](media/portfolio/account-management-backlog-assigned.png) 
+> ![All backlog items have been assigned to feature teams.](media/portfolio/account-management-backlog-assigned.png) 
 
 ::: moniker-end
 
@@ -169,7 +167,7 @@ During the planning meeting, you can open each item, make notes, and assign the 
 Here, all backlog items have been assigned to feature teams. While all features and epics remain owned by Account Management. 
 
 > [!div class="mx-imgBorder"]  
-> ![Management team common backlog](media/portfolio/account-management-backlog-assigned.png) 
+> ![All backlog items have been assigned to feature teams.](media/portfolio/account-management-backlog-assigned.png) 
 
 ::: moniker-end
 
@@ -215,7 +213,7 @@ To track dependencies across organizations, see [Plan and track dependencies usi
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 To view feature progress based on linked requirements, you can add a rollup column or view the Feature Timeline. To learn more, see [Display rollup](../backlogs/display-rollup.md) and [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md). 
 

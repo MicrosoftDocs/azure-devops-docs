@@ -2,21 +2,19 @@
 title: Service hooks event reference | Azure DevOps Services
 description: Events supported by Azure DevOps Services and Team Foundation Server
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: phwilson
-author: chasewilson
-ms.date: 08/04/2016
+ms.date: 07/27/2020
 ---
 
 # Azure DevOps Services service hooks events
 
+[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+
 ## Available event types
 
-* Build and release
+* **Build and release**
   * [Build completed](#build.complete)
   * [Release created](#ms.vss-release.release-created-event)
   * [Release abandoned](#ms.vss-release.release-abandoned-event)
@@ -25,31 +23,33 @@ ms.date: 08/04/2016
   * [Release deployment completed](#ms.vss-release.deployment-completed-event)
   * [Release deployment started](#ms.vss-release.deployment-started-event)
 
-::: moniker range="azure-devops"
-* Pipelines
+::: moniker range=">= azure-devops-2020"
+* **Pipelines**
   * [Run state changed](#run.statechanged)
   *	[Run stage state changed](#run.stagestatechanged)
   * [Run stage waiting for approval](#run.stageapprovalpending)
   * [Run stage approval completed](#run.stageapprovalcompleted)
 ::: moniker-end
 
-* Code
+* **Code**
   * [Code checked in](#tfvc.checkin)
   * [Code pushed](#git.push)
   * [Pull request created](#git.pullrequest.created)
   * [Pull request merge commit created](#git.pullrequest.merged)
   * [Pull request updated](#git.pullrequest.updated)
 
-* Work item 
+* **Work items**
   * [Work item commented on](#workitem.commented)
   * [Work item created](#workitem.created)
   * [Work item deleted](#workitem.deleted)
   * [Work item restored](#workitem.restored)
   * [Work item updated](#workitem.updated)
 
-Deprecated event types:
+::: moniker range="<= tfs-2017"
+**Deprecated event types**:
 
 * [Team room message posted](#message.posted)
+::: moniker-end
 
 > [!NOTE]
 > The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving WebHooks from Azure DevOps Services.
@@ -57,6 +57,7 @@ Deprecated event types:
 ## Build and release
 
 <a name="build.complete"></a>
+
 ### Build completed
 
 A build completes
@@ -1186,13 +1187,15 @@ A deployment was started
 }
 ```
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
+
 ## Pipelines
 
 > [!NOTE]
-> [Multi-stage pipelines](https://go.microsoft.com/fwlink/?linkid=2097082) preview feature needs to be enabled for these events
+> [Multi-stage pipelines](../pipelines/get-started/multi-stage-pipelines-experience.md) preview feature needs to be enabled for these events.
 
 <a name="run.statechanged"></a>
+
 ### Run state changed
 
 Overall status of a pipeline run changed. A new run has started, or a run has transitioned to canceling, canceled, failed, partially succeeded or succeeded state.
@@ -2468,6 +2471,8 @@ Filter events to include only work items commented on.
 }
 ```
 
+::: moniker range="<= tfs-2017"
+
 ## Deprecated event types
 
 <a name="message.posted"></a>
@@ -2529,6 +2534,8 @@ Triggers when a message is posted to a team room
 }
 ```
 
+::: moniker-end
+
 ## Resource containers
 
 The event payload contains a `resourceContainers` dictionary that includes the IDs of the project, collection/account, or server that the event initiated from. Some products/environments also include a `baseUrl` field with each entry that provides the full URL to the container. This URL can be used to create a connection to the container in order to make REST API calls.
@@ -2536,4 +2543,3 @@ The event payload contains a `resourceContainers` dictionary that includes the I
 * **Team Foundation Server 2015**: includes project, collection, and server. Does not include `baseUrl`.
 * **Team Foundation Server 2017**: includes project, collection, and server. Includes `baseUrl` for each.
 * **Azure DevOps Services**: includes project and collection (account). Includes `baseUrl` for each.
-

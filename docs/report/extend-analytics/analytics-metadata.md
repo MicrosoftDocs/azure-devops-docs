@@ -2,15 +2,13 @@
 title: Explore the OData metadata for Analytics 
 titleSuffix: Azure DevOps  
 description: Understand the entity model OData metadata defined for Analytics in Azure DevOps  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: angurusw
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/14/2020
 ---
 
 # Explore the Analytics OData metadata
@@ -50,7 +48,7 @@ You construct the service root URL for a project as shown:
 
 [!INCLUDE [temp](../includes/api-versioning.md)]
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData

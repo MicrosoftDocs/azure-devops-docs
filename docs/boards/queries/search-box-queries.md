@@ -3,10 +3,8 @@ title: Perform ad hoc searches for quick queries
 titleSuffix: Azure Boards
 description: Use the search box and quickly filter for assigned to, created by, state, or work item type in Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -17,7 +15,7 @@ ms.date: 03/26/2019
 
 # Perform a semantic or ad hoc work item search
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 <a id="search-box"/>
 
@@ -56,7 +54,7 @@ Free text search easily searches across all work item fields, including custom f
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/media/shared/start-search-icon.png) start search icon. 
+1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon. 
 
     > [!div class="mx-imgBorder"]
     > ![Work Item Search box](../../project/navigation/media/search/work-item-search-vert.png)    

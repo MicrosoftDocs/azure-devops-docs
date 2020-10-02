@@ -3,12 +3,7 @@ title: Use PowerShell scripts to customize pipelines
 ms.custom: seodec18
 description: Learn how you can use a script to customize the build pipeline in your workflow by using Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 07/03/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -172,7 +167,27 @@ $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 <a name="oauth"></a>
 ## Use the OAuth token to access the REST API
 
-To enable your script to use the build pipeline OAuth token, go to the **Options** tab of the build pipeline and select **Allow Scripts to Access OAuth Token**.
+#### [YAML](#tab/yaml)
+
+You can use `$env:SYSTEM_ACCESSTOKEN` in your script in a YAML pipeline to access the OAuth token. 
+
+```yaml
+- task: PowerShell@2
+  inputs:
+   targetType: inline
+   script: |
+      $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=5.0"
+      Write-Host "URL: $url"
+      $pipeline = Invoke-RestMethod -Uri $url -Headers @{
+          Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
+      }
+      Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
+```
+
+
+#### [Classic](#tab/classic)
+
+To enable your script to use the build process OAuth token, go to the **Tasks** tab of the build definition and within your build phase, select **Allow Scripts to Access OAuth Token** which is located in the **Additional options** section.
 
 After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md). For example:
 
@@ -186,7 +201,10 @@ Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
 ```
 
 
-## Q&A
+--- 
+
+
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 

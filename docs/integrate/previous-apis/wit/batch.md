@@ -2,10 +2,8 @@
 title: WIT Batch | REST API Reference for Team Foundation Server
 description: Edit or change multiple work items programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 0f4a6185-6518-4bda-a5b6-2eddf0319afe
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

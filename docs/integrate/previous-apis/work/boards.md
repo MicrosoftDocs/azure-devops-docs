@@ -2,10 +2,8 @@
 title: Kanban boards | REST API Reference for Team Foundation Server
 description: Work with Kanban boards programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: B7F1D3A8-8D3D-4538-945A-9D45EB81885D
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

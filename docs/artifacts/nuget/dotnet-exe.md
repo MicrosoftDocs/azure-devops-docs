@@ -2,11 +2,7 @@
 title: Use dotnet with Azure Artifacts feeds
 description: Authenticating to feeds with NuGet in Azure Artifacts
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 11/14/2019
 monikerRange: 'azure-devops'
@@ -16,7 +12,7 @@ monikerRange: 'azure-devops'
 
 ## On developer machines
 
-1. Navigate to your feed ([or create a feed if you haven't](../feeds/create-feed.md)). 
+1. Navigate to your feed ([or create a feed if you haven't](../index.yml)). 
 
 2. Select **Connect to feed**:
 

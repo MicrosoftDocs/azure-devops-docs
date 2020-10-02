@@ -2,7 +2,6 @@
 title: Pipeline compliance and security validations - Sprint 141 Update
 author: erindormier
 ms.author: egeaney
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 10/1/2018
 description: In the Sprint 141 Update of Azure DevOps Services, you can now include compliance and security validations in your Azure Pipelines.
@@ -157,11 +156,11 @@ We still believe that the best experience is for corporate users to [connect Azu
 
 For organizations that already use AAD identities with Azure DevOps, this feature does not apply. For organizations that currently use MSA identities, please note that all existing users can continue to sign in with their MSA identities as they do today. This only applies for users added in the future (who potentially can't create an MSA with their corporate email address).
 
-Here's an example scenario where this experience may be useful: Dorothy is the Azure DevOps organization owner for her company, Fabrikam. She and her team of 10 team members all sign into Azure DevOps with MSA identities that use their corporate email address, e.g. Dorothy@fabrikam.com. Sam is a new team member who joined the company today. Dorothy invites him to Azure DevOps by using his email, sam@fabrikam.com. When he clicks on the join now link in the email, he can sign into Azure DevOps with the same AAD identity he was given to access his email with O365. This allows Sam to collaborate with his 11 colleagues and gives Dorothy the freedom to connect her Azure DevOps organization to AAD when she's ready.
+Here's an example scenario where this experience may be useful: Dorothy is the Azure DevOps organization owner for her company, Fabrikam. She and her team of 10 team members all sign into Azure DevOps with MSA identities that use their corporate email address, e.g. Dorothy@fabrikam.com. Sam is a new team member who joined the company today. Dorothy invites him to Azure DevOps by using his email, sam@fabrikam.com. When he clicks on the join now link in the email, he can sign into Azure DevOps with the same AAD identity he was given to access his email with Microsoft 365. This allows Sam to collaborate with his 11 colleagues and gives Dorothy the freedom to connect her Azure DevOps organization to AAD when she's ready.
 
 See our [blog post](https://blogs.msdn.microsoft.com/devops/2018/09/27/using-azuread-identities-in-azure-devops-organizations-backed-by-microsoft-accounts/) for more information.
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

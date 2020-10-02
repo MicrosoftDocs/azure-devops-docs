@@ -2,7 +2,6 @@
 title:  New Azure Boards and Azure Repos app for Microsoft Teams - Sprint 159 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 10/14/2019
 description: In the **Sprint 159 Update** of Azure DevOps, we are excited to announce the new Microsoft Teams app for Azure Boards and Azure Repos.
@@ -62,7 +61,7 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

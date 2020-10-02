@@ -3,18 +3,13 @@ title: Simple, Secure CI App Signing
 ms.custom: seodec18
 description: Sign your mobile app during CI with Azure Pipelines or Team Foundation Server
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: ed39a1b4-bce0-416e-b3a2-253b21722b02
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.reviewer: dastahel
 ms.date: 01/16/2018
 monikerRange: '>= tfs-2017 < tfs-2018'
 ---
 
-# Sign your mobile app
+# Sign your mobile app in your Xcode, Xamarin.iOS, Android, or Xamarin.Android build
 
 **[Azure Pipelines](app-signing.md) | [TFS 2018](app-signing.md) | TFS 2017.2**
 
@@ -56,7 +51,7 @@ This article covers:
 
 4. Next, go to Azure Pipelines / TFS and open your Xcode or Xamarin.iOS build pipeline and go to the **Variables** tab. Here, enter the password for the .p12 file:
    - **P12_PWD**: Password to the .p12 file in its unencrypted form. *Be sure to click the "lock" icon.* This will secure your password and obscure it in all logs.
-	![Xcode Build settings](media/secure-certs/secure-certs-10.png)
+	![Enter the password for the .p12 file.](media/secure-certs/secure-certs-10.png)
 
 5. Finally, update your Xcode or Xamarin.iOS step with references to these two files. The build step will automatically determine the correct "signing identity" based on the contents of the .p12, create a temporary keychain with the .p12 in it and use that exclusively for this build, install the mobile provisioning profile, determine the correct UUID based on the contents of the .mobileprovision profile, and then remove everything after the build.
 
@@ -114,7 +109,7 @@ You can add an extra layer of security by to your project by encrypting your .p1
     - **P12 Password**: $(P12_PWD)
     - **Provisioning Profile File**: _build.mobileprovision
     - **Remove Profile After Build**: Checked if you want the provisioning profile to be removed from the system after the build. Only check this if you will have one agent that only runs this build, as it is installed in a global location and could be accessed by other builds.
-      ![Xcode Build settings](media/secure-certs/secure-certs-5.png)
+      ![Update the Xcode Build step to reference the decrypted files.](media/secure-certs/secure-certs-5.png)
 
    You are now all set! Any build agent that is running will now be able to securely build your app without any certificate management on the build machine itself. Simply repeat the process of adding different certificates and provisioning profiles to your source repository to enable separate dev, beta (ad hoc), and distribution builds.
 
@@ -223,7 +218,7 @@ Follow these steps:
 
 You are now all set! Any build agent will now be able to securely build your app without any certificate management on the build machine itself.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

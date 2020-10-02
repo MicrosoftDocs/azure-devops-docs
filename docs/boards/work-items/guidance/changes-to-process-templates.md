@@ -3,25 +3,23 @@ title: Changes made to process templates
 titleSuffix: Azure Boards  
 description: Summary of changes made to Agile, Scrum, and CMMI process templates to support updating existing projects after a TFS upgrade  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688 
 ms.topic: reference 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/11/2019
+ms.date: 08/06/2020
 ---
 
 # Changes made to process templates  
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 To support the addition of new features, changes are introduced periodically to the core system processes or process template&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md). A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
 > [!NOTE]    
 > This article describes changes made to the core system processes with updates made to the on-premises Azure DevOps Server, formerly named Team Foundation Server (TFS). These processes are available for both cloud and on-premises versions of Azure Boards. Projects hosted on Azure Boards [update automatically with each service upgrade](/azure/devops/release-notes/index). Whereas, updates to projects defined on-premises may require running the Configure Feature Wizard after upgrading to a later version.  The Configure Features Wizard has been deprecated for Azure DevOps Server 2019. You can only run the wizard on TFS 2018 and earlier versions.        
-If you've customized your project and haven't upgraded your on-premises deployment for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you upgrade](../../../reference/new-features-added.md) for a description of each feature added with the updates. 
+If you've customized your project and haven't upgraded your on-premises deployment for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you upgrade](/previous-versions/azure/devops/reference/upgrade/new-features-added) for a description of each feature added with the updates. 
 
 
 <table>
@@ -30,7 +28,14 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <th width="22%">Version</th>
 <th width="78%">Changes introduced</th>
 </tr>
-
+<tr>
+<td>
+<p>Azure DevOps Services (August 2020) </p>
+</td>
+<td>
+<p>The logic managing the <strong>Activated By</strong>, <strong>Activated Date</strong>, <strong>Resolved By</strong>, and <strong>Resolved Date</strong> fields has changed. The values assigned to these fields are now governed based on the state categories of <em>Proposed</em> and <em>Resolved</em>. To learn more, see <a href="../../queries/query-by-workflow-changes.md#activated-resolved-fields" data-raw-source="[Query by assignment or workflow changes](../../queries/query-by-workflow-changes.md#activated-resolved-fields)">Query by assignment or workflow changes, Activated By/Date and Resolved By/Date fields </a>.</p>
+</td>
+</tr>
 <tr>
 <td>
 <p>Azure DevOps Server 2019</p>
@@ -39,14 +44,13 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <p>Predefined Shared Queries are no longer created upon project creation. The definitions for Shared Queries have been removed from the process template. Shared Queries defined in custom process templates are created. You can also add Shared Queries to a process template as described in <a href="../../../reference/process-templates/add-work-item-queries-process-template.md" data-raw-source="[Add work item queries to a process template](../../../reference/process-templates/add-work-item-queries-process-template.md)">Add work item queries to a process template</a>.</p>
 </td>
 </tr>
-
 <tr>
 <td>
 <p>TFS 2017</p>
 </td>
 <td>
 <p>Added the <strong>WebLayout</strong> section within the <strong>FORM</strong> section of all work item type (WIT) definitions. This section supports the new work item tracking experience in the web portal. It includes the <strong>SystemControls</strong> section and the new <strong>LinksControlOptions</strong> for managing link relationships.  To learn more, see <a href="../../../reference/process/new-work-item-experience.md" data-raw-source="[New work item experience](../../../reference/process/new-work-item-experience.md)">New work item experience</a>, <a href="../../../reference/xml/weblayout-xml-elements.md" data-raw-source="[WebLayout and Control elements](../../../reference/xml/weblayout-xml-elements.md)">WebLayout and Control elements</a>, and <a href="../../../reference/xml/linkscontroloptions-xml-elements.md" data-raw-source="[LinksControlOptions XML elements (Web form)](../../../reference/xml/linkscontroloptions-xml-elements.md)">LinksControlOptions XML elements (Web form)</a>.</p>
-<p><strong>Note</strong>: When you upgrade an on-premises TFS to TFS 2017, the new web form is automatically available when you add projects to a collection. For existing projects, an admin is required to <a href="../../../reference/manage-new-form-rollout.md" data-raw-source="[enable the new form](../../../reference/manage-new-form-rollout.md)">enable the new form</a>. The reason the new form isn&#39;t automatically enabled for existing projects is to prevent overwriting customizations made to existing WIT definitions.</p>
+<p><strong>Note</strong>: When you upgrade an on-premises Azure DevOps to TFS 2017, the new web form is automatically available when you add projects to a collection. For existing projects, an admin is required to <a href="../../../reference/manage-new-form-rollout.md" data-raw-source="[enable the new form](../../../reference/manage-new-form-rollout.md)">enable the new form</a>. The reason the new form isn&#39;t automatically enabled for existing projects is to prevent overwriting customizations made to existing WIT definitions.</p>
 </td>
 </tr>
 <tr>
@@ -286,12 +290,12 @@ Removed the Sprint type definition and All Sprints query, whose functionality ha
 
 ## Related upgrade notes
 
-To update your existing projects hosted on an on-premises TFS to access new features, [run the Configure Features wizard](../../../reference/configure-features-after-upgrade.md). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
+To update your existing projects hosted on an on-premises Azure DevOps to access new features, [run the Configure Features wizard](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
 
 See the following resources as they relate to updating your project:  
 
-- [Update a customized process template to access new features](../../../reference/update-customized-process-template.md)
-- [Add features using a manual update process](../../../reference/add-features-manually.md)
-- [Before you upgrade TFS](../../../reference/upgrade-tfs-2008-or-2010.md)
-- [Additional configuration options](../../../reference/additional-configuration-options.md)
+- [Update a customized process template to access new features](/previous-versions/azure/devops/reference/upgrade/update-customized-process-template)
+- [Add features using a manual update process](/previous-versions/azure/devops/reference/upgrade/add-features-manually)
+- [Before you upgrade TFS](/previous-versions/azure/devops/reference/upgrade/upgrade-tfs-2008-or-2010)
+- [Additional configuration options](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options)
 - [Upload reports to a project](../../../Report/admin/upload-reports.md)

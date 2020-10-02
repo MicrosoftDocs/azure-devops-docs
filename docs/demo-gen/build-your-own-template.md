@@ -3,7 +3,6 @@ title: Build an Azure DevOps Demo Generator template
 description: Learn to build a template for the Azure DevOps Services Demo Generator
 ms.prod: devops  
 ms.technology: devops-new-user
-ms.manager: mijacobs
 ms.author: sraj
 author: hsachinraj
 ms.topic: conceptual
@@ -57,7 +56,7 @@ Setup an Azure DevOps project and make sure it is ready to be extracted. The ext
 
 1. You will see a new tab labeled **Private**. Select the tab.
 
-    ![privateTab.png](media/privatetab.png)
+    ![Screenshot showing the Private tab.](media/privatetab.png)
 
 1. Under the private tab, you have the option to import template from your local drive, GitHub or any https URL. 
     

@@ -2,7 +2,6 @@
 title: Review summarized test results – VSTS Sprint 138 Update
 author: alexcnichols
 ms.author: alexn
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 08/03/2018
 description: In the Sprint 138 Update of Visual Studio Team Services (VSTS), the results pages for Build and release pipelines has been enhanced with a summarized view of test results that organizes related outcomes into a hierarchy.
@@ -160,7 +159,7 @@ We have a new and improved build history widget that you can add to your dashboa
 
 As a Project Collection Administrator (PCA) you can now [set up billing](/azure/devops/billing/set-up-billing-for-your-organization-vs) or [remove billing](/azure/devops/billing/change-azure-subscription?view=azure-devops#remove-your-billing-subscription) for an organization directly through the Azure Portal. Look for the new **Setup billing** and **Remove billing** commands on your organization in the portal.
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
