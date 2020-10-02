@@ -92,7 +92,7 @@ You can view the projects defined for your organization by opening the **Project
 1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Projects, horizontal nav](../../media/settings/open-project-hub-horz.png)
+    > ![Screenshot of open Projects button, horizontal nav](../../media/settings/open-project-hub-horz.png)
 
 2. From there, you can choose a project from the set of projects listed.
 
@@ -106,7 +106,7 @@ You can view the projects defined for your organization by opening the **Project
 1. Choose the name of the server.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Projects, horizontal nav](media/about-projects/open-projects-tfs-15.png)
+    > ![Screenshot of open Projects, TFS 2013 - 2015](media/about-projects/open-projects-tfs-15.png)
 
 2. From there, you can choose a project from the set of projects listed.
 
