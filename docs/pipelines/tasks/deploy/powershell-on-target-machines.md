@@ -2,10 +2,7 @@
 title: PowerShell on Target Machines task
 description: PowerShell on Target Machines build task
 ms.assetid: 7E6E54ED-4605-471A-B1E6-9D00C10CA66E
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -17,13 +14,13 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to execute PowerShell scripts on remote machine(s).
+Use this task to execute PowerShell scripts on remote machine(s).
 
 This task can run both PowerShell scripts and PowerShell-DSC scripts:
 
 * For PowerShell scripts, the computers must have PowerShell 2.0 or higher installed.
 * For PowerShell-DSC scripts, the computers must have 
-  [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855&40ddd5bd-f9e7-49a6-3526-f86656931a02=True)
+  [the latest version of the Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=54616)
   installed. This is installed by default on Windows 8.1, Windows Server 2012 R2, and later.
 
 ::: moniker range="<= tfs-2018"
@@ -68,7 +65,7 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]

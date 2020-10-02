@@ -4,20 +4,17 @@ titleSuffix: Azure Boards
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards, Azure DevOps Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 monikerRange: ">= tfs-2013"
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 10/16/2019
+ms.date: 07/09/2020
 ---
 
-# Create and save managed queries with the query editor
+# Create and save managed queries
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
 
@@ -126,7 +123,7 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 You create a query by defining one or more clauses. Each clause defines a filter criteria for a single field. Choose **Add new clause** to add another clause and then choose the **Field**, **Operator**, and **Value** for that clause.  
 
 > [!div class="mx-imgBorder"]  
-> ![Add new query, new experience](media/using-queries/define-clause.png)  
+> ![Define a clause.](media/using-queries/define-clause.png)  
 
 For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (=) operator, and the <strong>@Me</strong> macro which represents your user identity.
 
@@ -194,9 +191,9 @@ As the following examples show, the grouped clauses are translated to the corres
 > [!div class="mx-tdCol2BreakAll"]
 > |Query | Grouped clauses|Logical expression|
 > |---|---|---|
-> |1| ![ ](media/using-queries/and-or-clause-no-grouping.png)|![ ](media/using-queries/and-or-clause-no-grouping-wiql.png)|
-> |2| ![ ](media/using-queries/and-or-clause-with-grouping.png)|![ ](media/using-queries/and-or-clause-with-grouping-wiql.png)|
-> |3| ![ ](media/using-queries/and-or-clause-reverse-grouping.png)|![ ](media/using-queries/and-or-clause-reverse-grouping-wiql.png)|
+> |1| ![Screenshot showing a group clause query. Filters are set up for the Work item type field and either the State field or the Assigned to field.](media/using-queries/and-or-clause-no-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type, State, and Assigned to fields. An OR operator groups the State and Assigned to fields.](media/using-queries/and-or-clause-no-grouping-wiql.png)|
+> |2| ![Screenshot showing a group clause query, with filters for both the Work item type field and one of either the State field or the Assigned to field.](media/using-queries/and-or-clause-with-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type with the State or Assigned to fields, which are grouped by an OR operator.](media/using-queries/and-or-clause-with-grouping-wiql.png)|
+> |3| ![Screenshot showing a group clause query. Filters are set up for either the Work item type field or both the State field and the Assigned to field.](media/using-queries/and-or-clause-reverse-grouping.png)|![Screenshot of a logical expression. An OR operator links the Work item type to both the State and the Assigned to fields, which are linked by an AND operator.](media/using-queries/and-or-clause-reverse-grouping-wiql.png)|
 
 These queries return work items that are type Bug and meet the following logical expressions:  
 - **Query 1**: AND State=Active OR Assigned to @Me  
@@ -204,12 +201,12 @@ These queries return work items that are type Bug and meet the following logical
 - **Query 3**: OR (State=Active AND Assigned to @Me)  
 
 
-To group one or more clauses, select them and then choose the ![ ](../media/icons/group-clauses-icon.png) group clauses icon.
+To group one or more clauses, select them and then choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Web portal, Group Selected Query Clauses](media/view-run-queries/group-clauses.png)  
 
-You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the ![ ](../media/icons/group-clauses-icon.png) group clauses icon.
+You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Group multiple query clauses](media/using-queries/multiple-clauses.png)
@@ -227,7 +224,7 @@ If your query results don't return expected results, follow these steps:
 
 ## Ungroup a clause
 
-To ungroup a clause, choose the ![ ](../media/icons/ungroup-clause.png) ungroup clauses icon for the grouped clause. 
+To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
 
 <a id="tree-query" />
 
@@ -386,7 +383,7 @@ That's the basics about using queries. For an index of query examples, see [Crea
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
 - [Define a query as a hyperlink](define-query-hyperlink.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
-- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
 If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page. 
 

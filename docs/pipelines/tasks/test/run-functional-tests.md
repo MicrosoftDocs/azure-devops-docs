@@ -2,10 +2,7 @@
 title: Run Functional Tests task
 description: Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: DAA55EF5-A6A2-4962-80A0-7D25E64D1DE2
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -36,7 +33,7 @@ For more details, see [Testing with unified agents and jobs](../../test/test-wit
 
 ## TFS 2017 and earlier
 
-Use this task in a build or release pipeline to run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
+Use this task to run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
 Use this task when you want to run tests on remote machines, and you cannot run tests on the build machine.
 
 ### Demands and prerequisites
@@ -156,7 +153,7 @@ These scenarios are supported for:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-test-azurerg-machine-group](../includes/qa-test-azurerg-machine-group.md)]

@@ -3,11 +3,7 @@ title: Permission Command
 titleSuffix: Azure Repos
 description: Permission Command
 ms.assetid: 7a0b5521-ee07-44eb-9b8f-f145d918ebeb
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Permission Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Modifies the user access control list (ACL) and displays authorization settings for an item under version control.
 
@@ -56,7 +52,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
 </tr>
 <tr>
 <td><p><em>TeamProjectCollectionUrl</em></p></td>
-<td><p>The URL of the project collection that contains the item for which you want to modify permissions (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the project collection that contains the item for which you want to modify permissions (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
 </tr>
 <tr>
 <td><p><em>Itemspec</em></p></td>

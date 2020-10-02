@@ -1,13 +1,8 @@
 ---
 title: Build Xamarin apps
 description: Build Xamarin projects with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.reviewer: dastahel
 ms.custom: seodec18
 ms.date: 03/27/2018
@@ -43,7 +38,7 @@ Create a file named **azure-pipelines.yml** in the root of your repository. Then
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xamarin
 pool:
-  vmImage: 'macOS-10.14' # For Windows, use 'vs2017-win2016'
+  vmImage: 'macOS-10.15' # For Windows, use 'windows-2019'
 ```
 
 ## Build a Xamarin.Android app
@@ -115,7 +110,7 @@ To fulfill these mandatory requisites use the Microsoft Provided tasks for [inst
       packageApp: true
 ```
 > [!TIP]
-> The Xamarin.iOS build task will <u>only</u> generate an .ipa package if the agent running the job has the [appropriate provisioning profile and Apple certificate installed](../apps/mobile/app-signing.md?view=azure-devops&tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app). If you enable the packageApp option and the agent does not have the appropriate apple provisioning profile(.mobileprovision) and apple certificate(.p12) the build may report succeeded but there will be no .ipa generated.
+> The Xamarin.iOS build task will <u>only</u> generate an .ipa package if the agent running the job has the [appropriate provisioning profile and Apple certificate installed](../apps/mobile/app-signing.md?tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app). If you enable the packageApp option and the agent does not have the appropriate apple provisioning profile(.mobileprovision) and apple certificate(.p12) the build may report succeeded but there will be no .ipa generated.
 
 For Microsoft Hosted agents the .ipa package is by default located under path:  
 `{iOS.csproj root}/bin/{Configuration}/{iPhone/iPhoneSimulator}/`
@@ -134,7 +129,7 @@ You can configure the output path by adding an argument to the Xamarin.iOS task 
 
 This example locates the .ipa in the Build Artifact Staging Directory ready to be pushed into Azure DevOps as an artifact to each build run.To push it into Azure DevOps simply add a [Publish Artifact task](../tasks/utility/publish-build-artifacts.md) to the end of your pipeline.
 
-See [Sign your mobile iOS app during CI](../apps/mobile/app-signing.md?view=azure-devops&tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app) for more information about signing and provisioning your iOS app.
+See [Sign your mobile iOS app during CI](../apps/mobile/app-signing.md?tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app) for more information about signing and provisioning your iOS app.
 
 # [Classic](#tab/classic)
 Expand menu Advanced for the Xamarin.iOS build task and add **/p:IpaPackageDir="/Users/vsts/agent/2.153.2/work/1/a"** in the input field Arguments to place the generated .ipa package in the Build Artifact Staging Directory. To push it into Azure DevOps simply add a [Publish Artifact task](../tasks/utility/publish-build-artifacts.md) to the end of your pipeline. 

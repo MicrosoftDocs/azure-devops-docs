@@ -2,12 +2,11 @@
 title: Add the Attachments control
 titleSuffix: TFS
 description: Add a file attachment control to a work item form for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: ff6ce2b2-1062-4b53-93ac-c226366281af
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 05/10/2017  

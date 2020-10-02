@@ -3,12 +3,8 @@ title: Share your code with Git using Visual Studio 2013
 titleSuffix: Azure Repos
 description: Share code in Git using Visual Studio 2013
 ms.assetid: d4d85217-1967-412d-b253-b6c6289dc459
-ms.prod: devops
 ms.technology: devops-code-git 
 toc: show
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: quickstart
 ms.date: 08/29/2017
 monikerRange: '>= tfs-2013'
@@ -22,7 +18,7 @@ monikerRange: '>= tfs-2013'
 > - [Visual Studio 2015 Update 2](share-your-code-in-git-vs.md)
 > - [Visual Studio 2013](share-your-code-in-git-vs-2013.md)   
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015  
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015  **
 
 Whether your software project is large, small, or brand new, 
 in most cases you'll be better off if you use version control 
@@ -112,7 +108,7 @@ When the code you've written on your dev machine is ready, you can push your cha
 
 2. Go to the commits page (Keyboard: Ctrl + 0, C).
 
-   ![Push changes](media/share-your-code-in-git-vs/IC682976.png)
+   ![Go to the commits page.](media/share-your-code-in-git-vs/IC682976.png)
 
 3. Push your changes.
 

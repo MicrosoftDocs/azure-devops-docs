@@ -3,10 +3,8 @@ title: Plan, code, collaborate, ship applications
 titleSuffix: Azure DevOps 
 ms.custom: seodec18
 description: Get an integrated set of features to help you plan, code, collaborate, and ship your applications faster.
-ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/08/2019
@@ -66,9 +64,9 @@ You can use all the services included with Azure DevOps, or choose just what you
 
 ## Choose Azure DevOps Server
 
-Choose on-premises Azure DevOps Server when you need:
+Choose on-premises Azure DevOps Server when:
 
-- Your data to stay within your network.
+- You need your data to stay within your network.
 - Your work tracking customization requirements are met better with the on-premises XML process model over the inheritance process model. The on-premises model supports modification of XML definition files.
 
 When you deploy Azure DevOps Server, you can also configure the following servers or integration points:
@@ -123,7 +121,7 @@ This content supports a platform/version selector. Toggle the Content version se
 
 <!---
 [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
-[DevOps overview for Azure DevOps Services and TFS](index.md)
+[DevOps overview for Azure DevOps Services and TFS](../get-started/index.yml)
 
 
 [![Sign up for Azure DevOps Services](media/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](media/what-is-vsts-add-code-ide-step-2.png)](code-with-git.md)
@@ -136,4 +134,4 @@ notice. You bear the risk of using it.*
 *This document does not provide you with any legal rights to any
 intellectual property in any Microsoft product. You may copy and use
 this document for your internal, reference purposes.*
---> 
+-->

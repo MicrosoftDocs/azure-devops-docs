@@ -2,10 +2,7 @@
 title: GitHub Release task
 description: Create, edit, or discard a GitHub release.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 7B5A6198-ADF8-4B16-9939-7ADDF85708B2
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
@@ -73,8 +70,8 @@ The following YAML creates a GitHub release every time the task runs. The build 
     tagSource: manual
     tag: $(Build.BuildNumber)      
     assets: |
-         $(Build.ArtifactStagingDirectory)/*.exe
-         $(Build.ArtifactStagingDirectory)/README.txt
+      $(Build.ArtifactStagingDirectory)/*.exe
+      $(Build.ArtifactStagingDirectory)/README.txt
 ```
 
 You can also control the creation of the release based on repository tags. The following YAML creates a GitHub release only when the commit that triggers the pipeline has a Git tag associated with it. The GitHub release is created with the same tag version as the associated Git tag.

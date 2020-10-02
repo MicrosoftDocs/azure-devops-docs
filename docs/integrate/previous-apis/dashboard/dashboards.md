@@ -2,10 +2,8 @@
 title: Dashboards | REST API Reference for Team Foundation Server
 description: Work with dashboard programmatically using the REST APIs for VSTS.
 ms.assetid: EE46001A-8B9C-4E09-B99B-4F104013DFAD
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -48,7 +46,7 @@ GET https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_api
 | Parameter    | Type         | Default    | Notes
 | :----------- | :----------- | :--------- | :-----------------
 | URL
-| account      | string       |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string       |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string       |            | Your Visual Studio Project.
 | teamId       | string       |            | Your Team ID.
 | Query
@@ -110,7 +108,7 @@ POST https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_ap
 | Parameter    | Type       | Default   | Notes
 | :----------- | :--------- | :-------- | :-----------------------------------------------------
 | URL
-| account      | string     |           | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string     |           | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string     |           | Your Visual Studio Project.
 | teamId       | string     |           | Your Team ID.
 | Query
@@ -205,7 +203,7 @@ GET https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_api
 | Parameter    | Type         | Default    | Notes
 | :----------- | :----------- | :--------- | :-----------------
 | URL
-| account      | string       |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string       |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string       |            | Your Visual Studio Project.
 | teamId       | string       |            | Your Team ID.
 | id           | string       |            | ID of the dashboard.
@@ -575,7 +573,7 @@ DELETE https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_
 | Parameter    | Type       | Default    | Notes
 | :----------- | :--------- | :--------- | :-----------------
 | URL
-| account      | string     |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string     |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string     |            | Your Visual Studio Project.
 | teamId       | string     |            | Your Team ID.
 | id           | string     |            | ID of the dashboard.

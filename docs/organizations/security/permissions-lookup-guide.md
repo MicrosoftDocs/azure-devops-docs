@@ -3,21 +3,19 @@ title: Permissions and role lookup guide
 titleSuffix: Azure DevOps
 description: Index to permissions defined for Azure DevOps
 ms.technology: devops-security
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 01/27/2020
+ms.date: 06/04/2020
 ---
 
 # Permissions lookup guide for Azure DevOps
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
-Use this index to locate the topic on how to manage a specific permission. Most permissions are managed for an object, project, or collection. Other permissions are managed by adding users and groups to a role.   To learn more, see [About permissions and groups](about-permissions.md) and [About security roles](about-security-roles.md). 
+Use this index to locate the topic on how to manage a specific permission. Most permissions are managed for an object, project, or collection. Other permissions are managed by adding users and groups to a role.   To learn more, see [About permissions and groups](about-permissions.md) and [About security roles](about-security-roles.md), and [Trace permissions](faq-trace-permissions.md).  
 
 Values in parenthesis indicate what level the permission is managed:
 
@@ -45,13 +43,13 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)">Agent queues (Project, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)">Agent pools (Collection, Role)</a></li>
 <li><a href="/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions" data-raw-source="[Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)">Alerts (Collection)</a></li>
-<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Alerts (Team)](../../notifications/howto-manage-team-notifications.md)">Alerts (Team)</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Alerts (Team)](../../notifications/manage-team-group-notifications.md)">Alerts (Team)</a></li>
 <li><a href="../../report/powerbi/analytics-security.md" data-raw-source="[Analytics Service (Project)](../../report/powerbi/analytics-security.md)">Analytics Service (Project)</a></li>
 <li><a href="../../report/powerbi/analytics-security.md" data-raw-source="[Analytics views (Object)](../../report/powerbi/analytics-security.md)">Analytics views (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Area path (Object)](set-permissions-access-work-tracking.md)">Area path (Object)</a></li>
 <li><a href="../../artifacts/feeds/feed-permissions.md" data-raw-source="[Azure Artifacts](../../artifacts/feeds/feed-permissions.md)">Azure Artifacts</a></li>
-<li><a href="permissions.md#view-audit-log-permission">Audit log</a></li>
-
+<li><a href="permissions.md#manage-audit-streams-permission">Audit log</a></li>
+<li><a href="permissions.md#view-audit-log-permission">Audit streams</a></li>
 
 
 </ul>
@@ -88,7 +86,8 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>D</h3>
 <ul>
-<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
+<li><a href="permissions.md#delete-audit-streams-permission">Delete audit streams (Collection)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Delete (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Delete and restore work items (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
@@ -147,12 +146,13 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>M-N</h3>
 <ul>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Make requests on behalf of others (Collection)</a></li>
+<li><a href="permissions.md#make-requests-on-behalf-of-others">Make requests on behalf of others (Collection)</a></li>
+<li><a href="permissions.md#manage-audit-streams-permission">Manage audit streams (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage build resources (Collection)</a></li>
 
 <li><a href="../../pipelines/policies/permissions.md">Manage build qualities (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Manage deployments (Object)</a></li>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Manage enterprise policies (Collection)</a></li>
+<li><a href="permissions.md#manage-enterprise-policies-permission">Manage enterprise policies (Collection)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Manage permissions (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md">Manage project properties (Project)</a></li>
 
@@ -228,8 +228,8 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="permissions.md#work-item-tags">Update tag definition (Project)</a></li> 
 <li><a href="set-project-collection-level-permissions.md#collection-level">Use build resources (Collection)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Variable groups (Object, Role)</a></li>
-<li><a href="set-project-collection-level-permissions.md#project-level">View analytics(Project)</a></li>
-<li><a href="set-project-collection-level-permissions.md#collection-level">View audit log (Collection)</a></li>
+<li><a href="permissions.md#view-analytics-permission">View analytics (Project)</a></li>
+<li><a href="permissions.md#view-audit-log-permission">View audit log (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">View build resources (Collection)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">View builds (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">View release pipeline (Object)</a></li>
@@ -242,7 +242,6 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">View work items in this node (Area Path, Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">View permissions for this node (Area Path, Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">View permissions for this node (Iteration Path, Object)</a></li>
-
 <li><a href="set-permissions-access-work-tracking.md">Work items (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md">Workspaces (Collection)</a></li> 
 </ul>
@@ -256,7 +255,7 @@ Values in parenthesis indicate what level the permission is managed:
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 - **Object**: Permissions are managed at the object-level    
 - **Project**: Permissions are managed at the project level
@@ -284,7 +283,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)">Agent queues (Project, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)">Agent pools (Collection, Role)</a></li>
 <li><a href="/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions" data-raw-source="[Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)">Alerts (Collection)</a></li>
-<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Alerts (Team)](../../notifications/howto-manage-team-notifications.md)">Alerts (Team)</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Alerts (Team)](../../notifications/manage-team-group-notifications.md)">Alerts (Team)</a></li>
 <li><a href="../../report/powerbi/analytics-security.md" data-raw-source="[Analytics Service (Project)](../../report/powerbi/analytics-security.md)">Analytics Service (Project)</a></li>
 <li><a href="../../report/powerbi/analytics-security.md" data-raw-source="[Analytics views (Object)](../../report/powerbi/analytics-security.md)">Analytics views (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Area path (Object)](set-permissions-access-work-tracking.md)">Area path (Object)</a></li>
@@ -327,7 +326,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>D</h3>
 <ul>
-<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Delete (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Delete and restore work items (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
@@ -387,7 +386,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>M-N</h3>
 <ul>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Make requests on behalf of others (Collection)</a></li>
+<li><a href="permissions.md#make-requests-on-behalf-of-others">Make requests on behalf of others (Collection)</a></li>
 <li><a href="permissions.md#server-permissions">Make requests on behalf of others (Server)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage build resources (Collection)</a></li>
 
@@ -520,7 +519,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)">Agent queues (Project, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)">Agent pools (Collection, Role)</a></li>
 <li><a href="/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions" data-raw-source="[Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)">Alerts (Collection)</a></li>
-<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Alerts (Team)](../../notifications/howto-manage-team-notifications.md)">Alerts (Team)</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Alerts (Team)](../../notifications/manage-team-group-notifications.md)">Alerts (Team)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Area path (Object)](set-permissions-access-work-tracking.md)">Area path (Object)</a></li>
 <li><a href="../../artifacts/feeds/feed-permissions.md" data-raw-source="[Azure Artifacts](../../artifacts/feeds/feed-permissions.md)">Azure Artifacts</a></li>
 </ul>
@@ -547,7 +546,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>D</h3>
 <ul>
-<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete builds (Object)</a></li>
 <li><a href="../settings/work/customize-process-field.md" data-raw-source="[Delete field from account](../settings/work/customize-process-field.md)">Delete field from account</a></li>
@@ -672,32 +671,26 @@ Values in parenthesis indicate what level the permission is managed:
 ## Edit project-level information
 
 The **Edit project-level information** permission is set through the [Security admin page for a project](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
-for all team projects defined in the account or collection:
-				
-- Create and modify areas and iterations
-- Edit check-in policies
-- Edit shared work item queries
-- Edit project level permission ACL</li>
-- Manage process templates
-- Customize a project
-- Create and modify global lists
-- Edit event subscriptions or alerts for teams or project events.
+for all projects defined in the organization or collection:
+
+- Edit the project description
+- [Modify project services visibility](../settings/set-services.md)
+ 
+> [!NOTE]
+> The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the Project Administrators group. It isn't controlled by a permissions surfaced within the user interface. 
 
 
 ## Edit instance-level or collection-level information
 
-The **Edit instance-level information** (formerly **Edit collection level information**) permission is set through the [Security admin page for an account or collection](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
+The **Edit instance-level information** (formerly **Edit collection level information**) permission is set through the [Security admin page for an organization or collection](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
 for all team projects defined in the account or collection:
-				
+                
 - Add and administer teams and all team-related features
-- Create and modify areas and iterations
-- Edit check-in policies
-- Edit shared work item queries
+- Edit collection-level permissions for users and groups in the collection
+- Add or remove collection-level security groups from the collection
+- Implicitly allows the user to modify version control permissions 
 - Edit project level and collection level permission ACLs
-- Manage process templates
-- Customize a project or process
-- Create and modify global lists
-- Edit event subscriptions or alerts for teams, team projects, or collection level events.
+- Edit event subscriptions or alerts for teams, projects, or collection level events.
 
 
 ## Related notes

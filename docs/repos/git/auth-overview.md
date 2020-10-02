@@ -3,11 +3,7 @@ title: Authenticate with your Git repos
 titleSuffix: Azure Repos
 description: Choose between HTTPS, SSH, personal access tokens, and alternate credentials to securely sign in to your Git repos.
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
-ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: mijacobs
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 11/26/2019
 monikerRange: '>= tfs-2015'
@@ -15,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # Authentication overview
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 Update 3
+[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
 
 Choose a method to securely access the code in Azure Repos, Azure DevOps Server 2019, or Team Foundation Server (TFS) Git repositories.
 Use these credentials with Git at a command prompt. These credentials also work with any Git client that supports HTTPS or SSH authentication.

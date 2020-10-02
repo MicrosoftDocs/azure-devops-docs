@@ -2,12 +2,8 @@
 title: Version Control - Map TFVC actions to Git
 titleSuffix: Azure Repos
 description: Learn to map Team Foundation Version Control (TFVC) commands and workflows to Git version control
-ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
-ms.manager: mijacobs
-ms.author: sdanie
-author: wpschaub
 ms.topic: conceptual
 ms.date: 04/25/2018
 monikerRange: '>= tfs-2013'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Learn to map your familiar Team Foundation Version Control (TFVC) commands and workflows to Git 
 
-Do you plan to adopt Git, are familiar with [TFVC](../tfvc/index.md) actions, and wondering how they map to [Git](index.md)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
+Do you plan to adopt Git, are familiar with [TFVC](../tfvc/index.yml) actions, and wondering how they map to [Git](index.yml)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
 
 This article will not delve deep into the [Git commands](https://git-scm.com/book/commands), as they are well documented in the product documentation, but show examples to help you make the right decisions, while moving through a typical create -> clone -> branch -> change -> commit -> push [workflow](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
 

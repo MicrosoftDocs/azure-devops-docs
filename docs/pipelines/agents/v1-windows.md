@@ -3,12 +3,7 @@ title: Deploy an agent on Windows for TFS 2015
 titleSuffix: TFS
 description: Use Build and Release agents for Team Foundation Server (TFS) 2015 to build or deploy your Windows and Azure applications.
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 9FD46361-985B-4886-A042-9C322CE3CD92
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.date: 03/15/2019
 monikerRange: 'tfs-2015'
 ---
@@ -156,7 +151,7 @@ Prints usage information.
 
 [!INCLUDE [include](includes/capabilities.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

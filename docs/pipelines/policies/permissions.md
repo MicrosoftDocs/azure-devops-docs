@@ -3,10 +3,7 @@ title: Pipeline permissions and security roles
 ms.topic: conceptual
 ms.custom: seodec18
 description: Understand how permissions and roles are used to securely manage build and release operations in Azure Pipelines and Team Foundation Server (TFS).
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
-ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 02/12/2018
@@ -29,11 +26,7 @@ For permissions, you grant or restrict permissions by setting the permission sta
 
 Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below.
 
-::: moniker range="azure-devops"
-
-> [!NOTE]   
->  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the ![ ](/azure/devops/media/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../../organizations/security/provide-stakeholder-pipeline-access.md).
-
+::: moniker range=">=azure-devops-2020"
 
 [!INCLUDE [temp](../../organizations/security/includes/pipelines-cloud.md)]
 
@@ -98,9 +91,9 @@ The following permissions are defined for pipelines. All of these can be set at 
 > | **Delete build pipeline** | Can delete build pipeline(s). |
 > | **Delete builds** | Can delete builds for a pipeline. Builds that are deleted are [retained](retention.md) in the **Deleted** tab for a period of time before they are destroyed. |
 > | **Destroy builds** | Can delete builds from the **Deleted** tab. |
-> | **Edit build pipeline** | Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. |
+> | **Edit build pipeline** | Can create pipelines and save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. |
 > | **Edit build quality** | Can add tags to a build. |
-> | **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../build/triggers.md#gated). This does not apply to PR builds. |
+> | **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../repos/tfvc.md#gated). This does not apply to PR builds. |
 > | **Retain indefinitely** | Can toggle the retain indefinitely flag on a build. |
 > | **Stop builds** | Can stop builds queued by other team members or by the system.  |
 > | **View build pipeline** | Can view build pipeline(s). |
@@ -160,7 +153,7 @@ The following permissions are defined for releases. The scope column explains wh
 > | **Delete releases** | Can delete releases for a pipeline. | Project, Release pipeline |
 > | **Edit release pipeline** | Can save any changes to a release pipeline, including configuration variables, triggers, artifacts, and retention policy as well as configuration within a stage of the release pipeline. To make changes to a specific stage in a release pipeline, the user also needs **Edit release stage** permission. | Project, Release pipeline |
 > | **Edit release stage** | Can edit stage(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs **Edit release pipeline** permission. This permission also controls whether a user can edit the configuration inside the stage of a specific release instance. The user also needs **Manage releases** permission to save the modified release. | Project, Release pipeline, Stage |
-> | **Manage deployments** | Can initiate a direct deployment of a release to a stage. This permission is only for direct deployments that are manually initiated by selecting the **Deploy** or **Redeploy** actions in a release. If the condition on a stage is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release. | Project, Release pipeline, Stage |
+> | **Manage deployments** | Can initiate a deployment of a release to a stage. This permission is only for deployments that are manually initiated by selecting the **Deploy** or **Redeploy** actions in a release. If the condition on a stage is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release. If the condition is set to start after some stage, manually initiated deployments do not wait for those stages to be successful.  | Project, Release pipeline, Stage |
 > | **Manage release approvers** | Can add or edit approvers for stage(s) in release pipeline(s). This permissions also controls whether a user can edit the approvers inside the stage of a specific release instance. | Project, Release pipeline, Stage |
 > | **Manage releases** | Can edit the configuration in releases. To edit the configuration of a specific stage in a release instance (including variables marked as `settable at release time`), the user also needs **Edit release stage** permission. | Project, Release pipeline |
 > | **View release pipeline** | Can view release pipeline(s). | Project, Release pipeline |
@@ -210,6 +203,10 @@ You [add users to the following roles](set-permissions.md) from the collection-l
 
 [!INCLUDE [temp](../../organizations/security/includes/deployment-pool-roles.md)]
 
+
+## Environment permissions 
+
+You can use roles to control who [can create, view, and manage environments](../process/environments.md#security). When you create an environment in a YAML, contributors and project administrators will be granted the administrator role. When you create an environment through the UI, only the creator will have the administrator role. 
 
 ## Related notes 
 

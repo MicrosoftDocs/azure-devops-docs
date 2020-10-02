@@ -2,16 +2,14 @@
 title: Pipeline pass rate sample Power BI report 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a pipeline pass rate Power BI report  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'   
-ms.date: 12/10/2019
+monikerRange: '>= azure-devops-2020'      
+ms.date: 07/14/2020
 ---
 
 # Pipeline pass rate trend sample report 
@@ -194,7 +192,7 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column **TotalCount** to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/passratetrend-changecolumntype2.png)
+    > ![Change the type of column TotalCount to Whole Number.](media/odatapowerbi-pipelines/passratetrend-changecolumntype2.png)
 
 
 ### Rename fields and query, then Close & Apply

@@ -1,13 +1,9 @@
 ---
 title: Repository protection
 description: Securing repos and forks.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: c1cfe88b-96aa-4804-998c-027a287e5696
-ms.manager: mijacobs
-ms.author: jukullam
 ms.reviewer: macoope
-ms.date: 2/04/2020
+ms.date: 05/14/2020
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -61,6 +57,9 @@ Users in your organization with the right permissions can create new branches co
 That code can run through the same pipeline as your protected branches.
 Further, if the YAML file in the new branch is changed, then the updated YAML will be used to run the pipeline.
 While this design allows for great flexibility and self-service, not all changes are safe (whether made maliciously or not).
+
+If your pipeline consumes source code or is defined in Azure Repos, you must fully understand the [Azure Repos permissions model](../../organizations/security/permissions.md#git-repository-object-level).
+In particular, a user with **Create Branch** permission at the repository level can introduce code to the repo even if that user lacks **Contribute** permission.
 
 <!-- Coming Q1 CY20
 One way to solve this problem is by keeping the YAML file for your pipeline in a different repository than your source code.

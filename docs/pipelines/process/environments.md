@@ -1,22 +1,17 @@
 ---
 title: Environment
 description: Collection of deployment targets useful for traceability and recording deployment history
-ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
+ms.topic: conceptual
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 02/10/2020
-monikerRange: azure-devops
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Create and target an environment
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [include](../includes/version-server-2020-rtm.md)]
 
-An environment is a collection of resources that can be targeted by deployments from a pipeline. Environments can include Kubernetes clusters, Azure web apps, virtual machines, databases. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
+An environment is a collection of resources, such as Kubernetes clusters and virtual machines, that can be targeted by deployments from a pipeline. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
 
 The advantages of using environments include the following.
 
@@ -104,6 +99,8 @@ All  environments targeted by deployment jobs of a specific run of a pipeline ca
 
   > [!div class="mx-imgBorder"]
   > ![Environments in run details](media/environments-run.png)
+  
+If you're using an AKS private cluster, the **Workloads** tab isn't available.
 
 ## Approvals
 

@@ -5,11 +5,7 @@ ms.global_help.title: Split columns
 description: Implement Kanban pull model by dividing each column into Doing and Done when working in Azure Boards or Team Foundation Server  
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
-ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -66,7 +62,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -90,7 +86,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
+1. Choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
 
 	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
 
@@ -111,7 +107,7 @@ Only split columns where clear hand-offs exist and you want teams to pull the it
 ::: moniker range="tfs-2015"  
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
+1. Choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
 
 	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
 

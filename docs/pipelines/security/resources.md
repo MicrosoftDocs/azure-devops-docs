@@ -1,13 +1,9 @@
 ---
 title: Pipeline resources
 description: Permissions and approvals on important resources.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 9e635504-f56a-4d59-8629-ced0cbb03c77
-ms.manager: mijacobs
-ms.author: jukullam
 ms.reviewer: macoope
-ms.date: 2/04/2020
+ms.date: 07/16/2020
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -35,11 +31,20 @@ In Azure Pipelines, all of the following are considered *protected* resources:
 They cannot be accessed by users and pipelines outside of a project.
 - You can run additional manual or automated checks every time a pipeline uses one of these resources.
 
+## Protecting repository resources
+Repositories can optionally be protected.
+At the organization or project level, you may choose to limit the scope of the Azure Pipelines access token to mentioned repositories.
+When you do this, Azure Pipelines will add two additional protections:
+1. The access token given to the agent for running jobs will only have access to repositories explicitly mentioned in the `resources` section of the pipeline.
+2. Repositories added to the pipeline will have to be authorized by someone with read access to the repository the first time that pipeline uses the repository.
+
+This setting is on by default for all organizations created after May 2020.
+Organizations created before that should enable it in **Organization settings**.
+
 ## Open resources
 
 All the other resources in a project are considered *open* resources.
 Open resources include:
-- repositories
 - artifacts
 - pipelines
 - test plans

@@ -3,10 +3,7 @@ title: Release without deployment agents
 ms.custom: seodec18
 description: Release your app to Microsoft Azure or on-premises without using deployment agents
 ms.assetid: 3C4A0EA1-C4ED-4674-8E9F-AE54D6DA05C0
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -72,18 +69,9 @@ for your release.
 Based on the tool that you are using to deploy, check these prerequisites 
 for any computer you plan on using in your environment.
 
-**Windows PowerShell**
-
-* PowerShell 4.0: Install 
-  [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855) 
-  which includes PowerShell 4.0.
-
 **DSC**
 
 * Windows 8.1, Windows Server 2012 R2: DSC is already installed.
-* Windows Server 2012, Windows Server 2008 R2, Windows 8 and Windows 7: Install
-  [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855) 
-  which includes DSC.
 
 **Chef**
 
@@ -355,7 +343,7 @@ You also need a build definition that builds your app.
 1. [Start a new release](manage-your-release.md#StartRelease).
 1. [Approve steps in a stage](manage-your-release.md#ApproveSteps).
 
-## Q & A
+## FAQ
 
 ### Q: Are there any DSC actions that are not currently supported by Release Management?
 

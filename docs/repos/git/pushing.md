@@ -3,11 +3,7 @@ title: Sync your changes to a remote Git repo
 titleSuffix: Azure Repos
 description: Using Git Push to share code with Git.
 ms.assetid: 6c388abd-1b63-4957-9814-9ec5f104fa5b
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: tutorial
 ms.date: 11/15/2019
 monikerRange: '>= tfs-2013'
@@ -15,7 +11,7 @@ monikerRange: '>= tfs-2013'
 
 # Share code with push
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Share changes made in [commits](commits.md) and [branches](branches.md) using the `push` command.
 Push your branches to the remote repository. Git adds your commits to an existing branch on the remote or creates a new branch with the same commits as your local branch.
@@ -43,7 +39,7 @@ In this tutorial you learn how to:
 
    You can also go to **Synchronization** from the **Changes** view by choosing **Sync** immediately after making a commit.
 
-   ![Synchronization](media/gitquickstart-vs2017/commit-created-locally.png)
+   ![Go to Synchronization from the Changes view immediately after making a commit.](media/gitquickstart-vs2017/commit-created-locally.png)
 
 1. Select **Push** to share your commit with the remote repository.
 

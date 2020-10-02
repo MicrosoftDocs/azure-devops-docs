@@ -1,14 +1,11 @@
 ---
 title: Run pipelines with Anaconda environments
 description: Set up and use Anaconda environments with Azure Pipelines, Azure DevOps
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 50ed6bb4-5f35-4e1e-aafc-295eb10198df
-ms.manager: mijacobs
 ms.author: vijayma
 ms.reviewer: dastahel
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-python
 ms.date: 10/10/2019
 monikerRange: azure-devops
 author: vijayma
@@ -108,6 +105,11 @@ The `conda create` command will create an environment with the arguments you pas
   displayName: Create Anaconda environment
 ```
 
+> [!NOTE]
+> To add specific conda channels, you need to add an extra line for conda config:
+> `conda config --add channels conda-forge`
+
+
 ---
 
 ### From YAML
@@ -169,7 +171,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 ```yaml
 - bash: |
     source activate myEnvironment
-    pytest --junitxml=junit/unit-test.xml
+    python -m pytest --junitxml=junit/unit-test.xml
   displayName: pytest
 
 - task: PublishTestResults@2
@@ -214,7 +216,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 On Hosted macOS, the agent user doesn't have ownership of the directory where Miniconda is installed.
 For a fix, see the "Hosted macOS" tab under [Add conda to your system path](#add-conda-to-your-system-path).
 
-### Why is my build hanging on a `conda create` or `conda install` step?
+### Why does my build stop responding on a `conda create` or `conda install` step?
 If you forget to pass `--yes`, conda will stop and wait for user interaction.
 
 ### Why is my script on Windows stopping after it activates the environment?

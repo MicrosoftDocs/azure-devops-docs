@@ -2,15 +2,13 @@
 title: Query for linked work items 
 titleSuffix: Azure DevOps 
 description: How to guidance for creating a query for linked work items using Analytics for Azure DevOps   
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/2/2018
+ms.date: 07/14/2020
 ---
 
 # Query for linked work items 
@@ -29,7 +27,7 @@ In this article you'll learn:
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
-
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!NOTE]
 > The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
@@ -39,18 +37,18 @@ In this article you'll learn:
 > https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 > ```
 
+::: moniker-end
+
+
 [!INCLUDE [temp](../includes/api-versioning.md)]
 
-
-
-## Parent/Child hierarchy
+## Parent-child hierarchy
 
 You can include items related through Parent/Child links by using ```$expand``` on the Parent and Children properties.
 
 ### Example: Parent to child query
 
 To return information about an item's children use ```$expand``` on the **Children** navigation property.
-
 
 **Request**
 

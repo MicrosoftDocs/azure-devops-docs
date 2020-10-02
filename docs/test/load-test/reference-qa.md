@@ -2,10 +2,8 @@
 title: FAQs for load testing  
 description: FAQs for load testing topics using the features of Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -218,7 +216,7 @@ For more details, see [this blog post](https://devblogs.microsoft.com/devops/spe
 
 ### Q: How can I increase the capacity of my load tests?
 
-**A**: You can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257), so you can run your tests across multiple virtual machines in the cloud.
+**A**: You can use the [Cloud-based Load Testing service](./get-started-simple-cloud-load-test.md), so you can run your tests across multiple virtual machines in the cloud.
 
 <a name="howmanyusers"></a>
 ### Q: How many virtual users can I configure in my load test?
@@ -227,7 +225,7 @@ For more details, see [this blog post](https://devblogs.microsoft.com/devops/spe
 
 ### Q: Can I analyze load tests that ran previously?
 
-**A**: Yes, to open and manage those results, click ![Manage results toolbar button](media/run-performance-tests-app-before-release/manage-results.png) in the load test editor. You can have multiple tests open at the same time to compare runs, and [create trend analysis reports](https://msdn.microsoft.com/library/dd728091%28v=vs.140%29.aspx) to compare them.
+**A**: Yes, to open and manage those results, click ![Manage results toolbar button](media/run-performance-tests-app-before-release/manage-results.png) in the load test editor. You can have multiple tests open at the same time to compare runs, and [create trend analysis reports](/previous-versions/dd728091(v=vs.140)) to compare them.
 
 ### Q: Is there a difference between what I can analyze during a running test versus a completed test?
 
@@ -248,74 +246,7 @@ and [coded UI tests](/visualstudio/test/use-ui-automation-to-test-your-code).
 
 ### Q: Why should I use Cloud-based Load Testing?
 
-**A**: If you don't want to set up machines for load testing, or you don't have available resources, you can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using Azure DevOps to access it.
-
----
-
-<a name="qaazure"></a>
-## Azure load testing
-
-[Go to related topic &gt;](app-service-web-app-performance-test.md)
-
-### Q: Why can't I see my existing Azure DevOps subscription to run load tests? 
-
-**A**: To use an Azure DevOps subscription for running load tests from the Azure
-portal, one of the following criteria must be satisfied:
-
-* The subscription is backed by Azure Active Directory,
-  [Has an Azure subscription](/azure/active-directory/active-directory-how-subscriptions-associated-directory)
-  is linked to it, and the user is a member of the linked Azure subscription.
-
-* The subscription is backed by [Azure Active Directory](/azure/active-directory/)
-  and the user is an owner of the subscription.
-
-<a name="qaazure-limits"></a>
-### Q: What is the maximum test duration and number of concurrent users? 
-
-**A**: The limitations for load testing in the Azure Portal depend on the web application service tier license type, as follows:
-
-| License type |  Max duration (mins) | Max user load (VUser) |
-| --- |:---:|:---:|
-| Free | 1 | 40 |
-| Shared | 30 | 1,000 |
-| Basic/Standard/Premium | 60 | 20,000 |
-
-
-### Q: Where can I check how much test time I've used so far?
-
-**A**: You can check this in the Azure Portal. For details, see
-[Manage pricing and data volume in Application Insights](/azure/application-insights/app-insights-pricing#understand-your-usage-and-estimate-costs).
-
-### Q: What is the default option and are my existing tests impacted?
-
-**A**: The default option for performance load tests is a manual test -
-the same as before the multiple URL test option was added to the portal.
-Your existing tests continue to use the configured URL and will work as before.
-
-### Q: What features not supported in the Visual Studio Web Test file?
-
-**A**: At present this feature does not support Web Test plug-ins, data 
-sources, and extraction rules. You must edit your Web Test file to remove 
-these. We hope to add support for these features in future updates.
-
-### Q: Does it support any other Web Test file formats?
-  
-**A**: At present only Visual Studio Web Test format files are supported.
-We'd be pleased to hear from you if you need support for other file formats. 
-Email us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
-
-<a name="Team ServicesAccount"></a>
-### Q: What else can I do with an Azure DevOps subscription?
-
-**A**: Share your code, build, test, track work, and ship software - all in the cloud 
-using any tool or language. Learn more about how [Azure DevOps](https://visualstudio.microsoft.com/products/what-is-visual-studio-online-vs) 
-features and services help your team collaborate more easily and deploy continuously.
-
-### Q: Can I get more detailed profiler information?
-
-**A**: Yes, see [Profiling live Azure web apps with Application Insights](/azure/application-insights/app-insights-profiler).
-
----
+**A**: If you don't want to set up machines for load testing, or you don't have available resources, you can use the [Cloud-based Load Testing service](./get-started-simple-cloud-load-test.md). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using Azure DevOps to access it.
 
 <a name="set-up-tests"></a>
 ## Setting up tests
@@ -444,7 +375,7 @@ For more information, see
 
 **A**: You can view the service status at the top of the 
 [Azure DevOps support page](https://azure.microsoft.com/support/devops/) 
-and on our [service blog](https://blogs.msdn.com/b/vsoservice/). 
+and on our [service blog](https://blogs.msdn.microsoft.com/vsoservice/?p=15015). 
 You can also subscribe to alerts for service status by following 
 [this post in our support forum](https://social.msdn.microsoft.com/Forums/vstudio/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status).
 
@@ -564,7 +495,7 @@ for your app there. If you see data collected there, report your issue to
 **A**: This can happen because:
 
 * No apps are configured to push analytics data to Application Insights. See 
-  [Get started with Visual Studio Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-get-started/).
+  [Get started with Visual Studio Application Insights](/azure/azure-monitor/app/app-insights-overview).
   Also check that you can see the apps in **Application Insights** in the 
   Azure portal, as shown here:
   
@@ -628,7 +559,7 @@ information to your REST API calls. If your call fails with a
 **VssVersionNotSpecifiedException** exception, 
 you must include **?api-version=1.0-preview.1** 
 in your REST API calls. To do this, see
-[Get started with the REST APIs](../../integrate/get-started/rest/basics.md).
+[Get started with the REST APIs](/rest/api/azure/devops/).
 
 ### Q: I noticed that user code fails to execute if it depends on the test names. Are test names changed when run against the service?
 
@@ -705,7 +636,7 @@ See [Load Test Run Settings Properties](/visualstudio/test/load-test-run-setting
 * VS1550083
 
 [Contact Azure DevOps support](https://azure.microsoft.com/support/devops). 
-You will have to give them your test run id.
+You will have to give them your test run ID.
 
 ### Q: My run was aborted because the .loadtest xml file could not be parsed. What do I do?
 
@@ -734,7 +665,7 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ### Q: My load test got an error when it started or was aborted during the run. What do I do?
 
-**A**: Generally, these problems happen due to issues with the cloud-based load testing service. Just try and run your load test again. If these problems still happen, contact Azure DevOps support. You will have to give them your test run id.
+**A**: Generally, these problems happen due to issues with the cloud-based load testing service. Just try and run your load test again. If these problems still happen, contact Azure DevOps support. You will have to give them your test run ID.
 
 ### Q: Where can I find information about other errors?
 
@@ -754,7 +685,7 @@ To fix this problem, create another load test. Delete the failed test run.
 * [Driving Unit Tests from Cloud-based Load test](https://devblogs.microsoft.com/devops/driving-unit-tests-from-cloud-load-test/)
 * [Parameterizing tests to run in different environments](/archive/blogs/edglas/parameterizing-tests-to-run-in-different-environments)
 * [A Web Performance Test primer](/archive/blogs/edglas/web-test-authoring-and-debugging-techniques-for-visual-studio-2010)
-* [Managing Load Test results](https://docs.microsoft.com/archive/blogs/slumley/managing-load-test-results)
+* [Managing Load Test results](/archive/blogs/slumley/managing-load-test-results)
 * [Getting 90th and 95th percentile results in a Load Test](/archive/blogs/slumley/how-to-get-90th-and-95th-percentile-information-as-well-as-timing-details-for-every-page-test-and-transcation)
 * [Understanding Load Test results schema](/archive/blogs/billbar/what-is-the-data-in-the-vsts-load-test-results-store)
 * [Load Test plug-ins](/archive/blogs/slumley/load-test-plug-ins)
@@ -773,9 +704,9 @@ To fix this problem, create another load test. Delete the failed test run.
 **Blogs and other references**
 
 * [Quick Reference Guide for VS Performance Testing](https://vsptqrg.codeplex.com/)
-* [Geoff Gray's blog](https://blogs.msdn.microsoft.com/geoffgr/)
+* [Geoff Gray's blog](/archive/blogs/geoffgr/)
 * [Ed Glas' blog](https://devblogs.microsoft.com/devops/content-index-for-visual-studio-web-tests-and-load-tests-2/)
-* [Sean Lumley's blog](https://blogs.msdn.microsoft.com/slumley/)
+* [Sean Lumley's blog](/archive/blogs/slumley/)
 
 **Samples**
 
@@ -785,4 +716,4 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ---
 
-[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

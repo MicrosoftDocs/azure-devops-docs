@@ -2,10 +2,7 @@
 title: Jenkins Download Artifacts task
 description: Download artifacts produced by a Jenkins job
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 86c37a92-59a7-444b-93c7-220fcf91e29c
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -17,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to download artifacts produced by a Jenkins job.
+Use this task to download artifacts produced by a Jenkins job.
 
 ::: moniker range="<= tfs-2018"
 

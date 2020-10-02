@@ -2,21 +2,18 @@
 title: Pull requests
 titleSuffix: Azure Repos  
 description: Learn about pull requests in Azure DevOps Services & TFS  
-ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: overview
-ms.date: 09/10/2018
-layout: LandingPage
+ms.author: vijayma
+author: vijayma
+ms.date: 06/01/2020
 monikerRange: '>= tfs-2013'
 ---
 
 # Get feedback with pull requests
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Pull requests combine the review and merge of your code into a single collaborative process.
 Once you're done fixing a bug or new feature in a branch, create a new pull request.
@@ -37,44 +34,8 @@ The review catches these problems before the merge, protecting your important br
 Cross-pollinate expertise and spread problem solving strategies by using a wide range of reviewers in your code reviews.
 Diffusing skills and knowledge makes your team stronger and more resilient.
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="pullrequest.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Review code with pull requests" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Review code with pull requests</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="pull-requests.md#link-work-items">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Link work items to pull requests" src="../../media/index/i_tasks.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Link work items to pull requests</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+- [Review code with pull requests](pullrequest.md)
+- [Link work items to pull requests](pull-requests.md#link-work-items)
 
 ## Give great feedback
 
@@ -97,63 +58,9 @@ The pull request owner should reply to the comments, accepting the suggestion or
 Sometimes a suggestion is good, but the changes are outside the scope of the pull request.
 Take these suggestions and create new work items and feature branches separate from the pull request to make those changes.
 
-<ul class="panelContent cardsFTitle">
-        <li>
-        <a href="pull-request-templates.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Provide reviewer guidance with pull request templates" src="../../media/index/i_tasks.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Provide reviewer guidance with pull request templates</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <li>
-        <a href="pull-requests.md#leave-comments">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Leave comments" src="https://docs.microsoft.com/media/common/i_blog.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Leave comments</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="pull-requests.md#vote-on-the-changes">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Vote on the changes" src="media/logos/check.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Vote on the changes</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+- [Provide reviewer guidance with pull request templates](pull-request-templates.md)
+- [Leave comments](pull-requests.md#leave-comments)
+- [Vote on the changes](pull-requests.md#vote-on-the-changes)
 
 ## Protect branches with policies
 
@@ -164,141 +71,19 @@ Developers pushing changes directly to the protected branches will have their pu
 Add additional conditions to your pull requests to enforce a higher level of code quality in your key branches.
 A clean build of the merged code and approval from multiple reviewers are some extra requirements you can set to protect your key branches.
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="branch-policies-overview.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Branch policies overview" src="../../media/index/i_branch-policies.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Branch policies overview</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="branch-policies.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="How to configure branch policies" src="https://docs.microsoft.com/media/common/i_policy.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>How to configure branch policies</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="branch-permissions.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Branch permissions" src="https://docs.microsoft.com/media/common/i_protect.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Branch permissions</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+- [Branch policies overview](branch-policies-overview.md)
+- [How to configure branch policies](branch-policies.md)
+- [Branch permissions](branch-permissions.md)
 
 ## Extend pull request workflows with pull request status
 
 Pull requests and branch policies enable teams to enforce many best practices related to reviewing code and running automated builds, but many teams have additional requirements and validations to perform on code. To cover these individual and custom needs, Azure Repos offers pull request statuses. Pull request statuses integrate into the PR workflow and allow external services to programmatically sign off on a code change by associating simple success/failure type information with a pull request. 
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="pull-request-status.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Pull request status overview" src="https://docs.microsoft.com/media/common/i_pull-request.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Pull request status overview</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="create-pr-status-server.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Create a PR status server with Node.js" src="https://docs.microsoft.com/media/common/nodejs.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Create a PR status server with Node.js</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="create-pr-status-server-with-azure-functions.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Use Azure Functions to create custom branch policies" src="https://docs.microsoft.com/media/index/azurefunctions.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Use Azure Functions to create custom branch policies</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="pr-status-policy.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Configure a branch policy for an external service" src="https://docs.microsoft.com/media/common/i_web.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Configure a branch policy for an external service</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+- [Pull request status overview](pull-request-status.md)
+- [Create a PR status server with Node.js](create-pr-status-server.md)
+- [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)
+- [Configure a branch policy for an external service](pr-status-policy.md)
 
 ## Videos 
+
 > [!VIDEO https://www.youtube.com/embed/J_DHkUKxI0E?start=0]

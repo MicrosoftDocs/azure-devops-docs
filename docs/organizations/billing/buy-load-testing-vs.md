@@ -3,24 +3,22 @@ title: Buy cloud-based load testing - Azure DevOps
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18 Services
 description: Purchase and enable cloud-based load testing in Azure DevOps.
-ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/10/2019
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Buy cloud-based load testing for Azure DevOps
+# Buy cloud-based load testing for Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 [!INCLUDE [loadtest-deprecated-include](../../test/includes/loadtest-deprecated-include.md)]
 
-In this quickstart, learn how to enable paid load testing in Azure DevOps.
+Learn how to enable paid load testing in Azure DevOps.
 
 Azure DevOps offers a cloud-based solution for [load testing your apps](../../test/load-test/index.md). You can create load tests by using Visual Studio Ultimate 2013, Visual Studio Enterprise 2015, or later versions. Then you can run these tests in Azure DevOps.
 

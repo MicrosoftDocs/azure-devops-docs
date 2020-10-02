@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 07/05/2019
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Azure SQL Database deployment
 # Deploy an Azure SQL Database using DACPAC or run scripts using SQLCMD

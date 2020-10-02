@@ -3,11 +3,7 @@ title: Develop your app in Team Foundation version control
 titleSuffix: Azure Repos
 description: Develop your app in Team Foundation version control
 ms.assetid: 8535caa8-584a-454b-8c71-ce0cd362d9b1
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Develop your app in Team Foundation version control
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 When your codebase is under version control, you can develop your app-create and open files in Solution Explorer and write your code-while version control does other work for you. When you check files in and out, it keeps track of your changes and creates a history of your project.
 

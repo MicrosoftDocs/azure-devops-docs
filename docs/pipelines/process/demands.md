@@ -2,14 +2,11 @@
 title: Demands
 ms.custom: seodec18
 description: Configure custom demands for your pipeline in Azure Pipelines, Azure DevOps Server, or Team Foundation Server.
-ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
+ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 07/30/2019
+ms.date: 07/14/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -22,7 +19,11 @@ monikerRange: '>= tfs-2015'
 Use demands to make sure that the capabilities your pipeline needs are present on the agents that run it. Demands are asserted automatically by tasks or manually by you.
 
 > [!NOTE]
-> Demands are only applicable when your pipeline runs on self-hosted agents.
+>
+> Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
+> meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
+> matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
+> to use capabilities with Microsoft-hosted agents.
 
 ## Task demands
 
@@ -45,8 +46,8 @@ Or if you need to add multiple demands, add one per line.
 pool:
   name: Default
   demands:
-    - SpecialSoftware # Check if SpecialSoftware capability exists
-    - Agent.OS -equals Linux # Check if Agent.OS == Linux
+  - SpecialSoftware # Check if SpecialSoftware capability exists
+  - Agent.OS -equals Linux # Check if Agent.OS == Linux
 ```
 
 For multiple demands:

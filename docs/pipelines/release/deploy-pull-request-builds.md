@@ -1,10 +1,7 @@
 ---
 title: Deploy pull request builds
 description: DevOps CI CD - Deploy pull request builds from Azure Repos and GitHub
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
-ms.manager: mijacobs
 ms.author: moala
 author: raiyanalam
 ms.date: 12/18/2018
@@ -40,7 +37,7 @@ This article shows how you can set up a pull request based release for code host
 
 3. Configure one or more target branches. Target branches are the branches for which the pull request is raised. When a pull request is created for one of these branches, it triggers a build, and when the build succeeds, it triggers the PR release. You can optionally specify build tags as well.
 
-   ![Pull request trigger section highlighting the target branch filter](media/deploy-pull-request-builds/pull-request-trigger-target-branch.png)
+   ![Pull request trigger section highlighting target branch](media/deploy-pull-request-builds/pull-request-trigger-target-branch.png)
 
 4. To deploy a PR release in a specific stage you need to explicitly opt-in that stage. An information bar below the **Target Branch Filters** shows the stages that have opted in for PR deployment.
 
@@ -65,7 +62,7 @@ You can use branch policies to enforce successful deployment as a required crite
 
 2. Open the context menu for the branch for which the PRs are raised by selecting the ... icon. Select **Branch policies** from the context menu.
 
-   ![Branches section inside Azure Repos, highlighting branch policy option for master branch](media/deploy-pull-request-builds/branch-policies-menu.png)
+   ![Branches section inside Azure Repos, highlighting branch policy option for main branch](media/deploy-pull-request-builds/branch-policies-menu.png)
 
 3. Select **Add status policy** to display the **Add status policy** page in the right pane. In the **status to check** dropdown, a list of recent statuses that have been posted are displayed. The status of the PR release is also posted here with the release definition name. The release definition should have run at least once with the PR trigger switched on to see this status. Select the status corresponding to your release definition and save the policy.
 
@@ -73,7 +70,7 @@ You can use branch policies to enforce successful deployment as a required crite
 
    You can further customize the policy for this status, for example by making the policy required or optional. For more information, see [Configure a branch policy for an external service](../../repos/git/pr-status-policy.md).
 
-4. After configuring the status policy, a new row is displayed in the policy list. Once the policy is configured, anytime a PR is raised for the configured branch (master), the PR waits for the status of the release to be posted from the corresponding release definition.
+4. After configuring the status policy, a new row is displayed in the policy list. Once the policy is configured, anytime a PR is raised for the configured branch (main), the PR waits for the status of the release to be posted from the corresponding release definition.
 
    ![Configured status policies list](media/deploy-pull-request-builds/status-policies.png)
 
@@ -85,7 +82,7 @@ You can use branch policies to enforce successful deployment as a required crite
 
 1. You can also deploy pull release builds if your code is hosted in GitHub.com and a build is generated using Azure Pipelines. After linking the intended build artifact in the release definition, perform steps 1 through 4 in the previous [Create the pull request trigger](#create-the-pull-request-trigger) section, and then configure the status checks in GitHub as described in the following section.
 
-   ![Pull Request trigger section highlighting trigger toggle button](media/deploy-pull-request-builds/artifact-pr-trigger-github.png)
+   ![Pull Request trigger enabled button](media/deploy-pull-request-builds/artifact-pr-trigger-github.png)
 
 ### Configure status checks in GitHub
 
@@ -103,7 +100,7 @@ You can use branch policies to enforce successful deployment as a required crite
 - [Supported build source repositories](../repos/index.md)
 
 ## Additional resources 
-- [Azure Repos](../../repos/git/index.md)
+- [Azure Repos](../../repos/git/index.yml)
 - [Branch policies](../../repos/git/branch-policies-overview.md)
 - [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)
 

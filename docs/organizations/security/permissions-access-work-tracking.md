@@ -1,12 +1,9 @@
-﻿---
+---
 title: Default work tracking permissions & access 
 titleSuffix: Azure Boards & TFS 
 description: Default permissions and access levels for tracking work tracking in Azure Boards & Team Foundation Server
-ms.technology: devops-security
-ms.prod: devops
-ms.topic: conceptual
+ms.technology: devops-agile
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -16,7 +13,7 @@ ms.date: 11/20/2019
 
 # Permissions and access for work tracking
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -31,7 +28,7 @@ As a member of an Azure DevOps project, you can use most of the features to trac
 ::: moniker-end
 
 
-In the tables provided in this article, a ![ ](/azure/devops/media/icons/checkmark.png) checkmark indicates that the corresponding access level or security group has access to a feature by default. 
+In the tables provided in this article, a ✔️ indicates that the corresponding access level or security group has access to a feature by default. 
 
 > [!NOTE]   
 > Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
@@ -66,7 +63,10 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 ## Queries and semantic search 
 
-[**Queries**](../../boards/queries/view-run-query.md) are filtered lists of work items based on criteria that you define by using a query editor. [Adhoc searches](../../boards/queries/search-box-queries.md) are powered by a semantic search engine.
+[**Queries**](../../boards/queries/view-run-query.md) are filtered lists of work items based on criteria that you define by using a query editor. [Adhoc searches](../../boards/queries/search-box-queries.md) are powered by a semantic search engine. 
+
+> [!TIP]    
+> By default, Contributors can't create and save shared queries. We recommend that Project Administrators create a query folder for each team and give the team administrators or the team group query permissions to manage their folder. You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to. To learn more, see [Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md).
 
 [!INCLUDE [temp](includes/boards-queries.md)]
 
@@ -75,7 +75,9 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 ## Delivery plans feature access
 
-[Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access. 
+[Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access.  
+
+You can manage permissions for individual plans. To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans/edit-delivery-plan-permissions.md).
 
 [!INCLUDE [temp](includes/boards-plans.md)]
 
@@ -120,11 +122,11 @@ You set project-level information permissions from **Project settings** > **Perm
 <tr>
 <td align="left"><a href="set-project-collection-level-permissions.md" data-raw-source="[View project-level information](set-project-collection-level-permissions.md)">View project-level information</a> 
 </td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 
 
@@ -133,9 +135,9 @@ You set project-level information permissions from **Project settings** > **Perm
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left"><a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)">Area nodes and Iteration nodes: Create, delete, edit child nodes</a><br/></td>
@@ -143,7 +145,7 @@ You set project-level information permissions from **Project settings** > **Perm
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 
 
@@ -152,7 +154,7 @@ You set project-level information permissions from **Project settings** > **Perm
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 
 
@@ -192,8 +194,8 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 
@@ -202,17 +204,17 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 
 <td align="left"><a href="../../boards/queries/using-queries.md" data-raw-source="[View shared work item queries](../../boards/queries/using-queries.md)">View shared work item queries</a></p>
 </td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 
 <tr>
@@ -223,18 +225,18 @@ The following table summarizes a subset of the default permissions assigned to t
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 
 <tr>
 <td align="left">
-<a href="../../report/dashboards.md" data-raw-source="[Add and edit dashboards](../../report/dashboards.md)">Add and edit dashboards</a> 
+<a href="/azure/devops/report/dashboards/dashboards" data-raw-source="[Add and edit dashboards](../../report/dashboards/dashboards.md)">Add and edit dashboards</a> 
 </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 
 </tbody>
@@ -287,5 +289,4 @@ If your on-premises TFS deployment includes reporting or SharePoint Products, ad
 - [Set permissions and access for work tracking](set-permissions-access-work-tracking.md) 
 - [Get started as a Stakeholder](get-started-stakeholder.md)  
 - [Add another team](../../organizations/settings/add-teams.md)  
-- [Manage teams and configure team tools](../settings/manage-teams.md)   
-
+- [Manage teams and configure team tools](../settings/manage-teams.md)

@@ -2,8 +2,6 @@
 title: Customize your pipeline
 ms.custom: seodec18
 description: Step-by-step tutorial to customize a pipeline
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
@@ -38,16 +36,16 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
       vmImage: 'Ubuntu-16.04'
 
     steps:
-      - task: Maven@3
-        inputs:
-          mavenPomFile: 'pom.xml'
-          mavenOptions: '-Xmx3072m'
-          javaHomeOption: 'JDKVersion'
-          jdkVersionOption: '1.8'
-          jdkArchitectureOption: 'x64'
-          publishJUnitResults: false
-          testResultsFiles: '**/surefire-reports/TEST-*.xml'
-          goals: 'package'
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'pom.xml'
+        mavenOptions: '-Xmx3072m'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.8'
+        jdkArchitectureOption: 'x64'
+        publishJUnitResults: false
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+        goals: 'package'
    ```
 
    > [!Note]
@@ -185,19 +183,19 @@ To build a project using different versions of that language, you can use a `mat
       vmImage: $(imageName)
 
     steps:
-      - task: Maven@3
-        inputs:
-          mavenPomFile: "pom.xml"
-          mavenOptions: "-Xmx3072m"
-          javaHomeOption: "JDKVersion"
-          jdkVersionOption: $(jdk_version)
-          jdkArchitectureOption: "x64"
-          publishJUnitResults: true
-          testResultsFiles: "**/TEST-*.xml"
-          goals: "package"
+    - task: Maven@3
+      inputs:
+        mavenPomFile: "pom.xml"
+        mavenOptions: "-Xmx3072m"
+        javaHomeOption: "JDKVersion"
+        jdkVersionOption: $(jdk_version)
+        jdkArchitectureOption: "x64"
+        publishJUnitResults: true
+        testResultsFiles: "**/TEST-*.xml"
+        goals: "package"
     ```
 
-* Select **Save** and then confirm the changes to see your build run three jobs on three different platforms and SDKs.
+* Select **Save** and then confirm the changes to see your build run two jobs on three different platforms and SDKs.
 
 ## Customize CI triggers
 
@@ -249,6 +247,6 @@ You've just learned the basics of customizing your pipeline. Next we recommend t
 
 Or, to grow your CI pipeline to a CI/CD pipeline, include a [deployment job](../pipelines/process/deployment-jobs.md) with steps to deploy your app to an [environment](../pipelines/process/environments.md).
 
-To learn more about the topics in this guide see [Jobs](../pipelines/process/phases.md), [Tasks](../pipelines/process/tasks.md), [Catalog of Tasks](../pipelines/tasks/index.md), [Variables](../pipelines/process/variables.md), [Triggers](../pipelines/build/triggers.md), or [Troubleshooting](../pipelines/troubleshooting.md).
+To learn more about the topics in this guide see [Jobs](../pipelines/process/phases.md), [Tasks](../pipelines/process/tasks.md), [Catalog of Tasks](../pipelines/tasks/index.md), [Variables](../pipelines/process/variables.md), [Triggers](../pipelines/build/triggers.md), or [Troubleshooting](../pipelines/troubleshooting/troubleshooting.md).
 
 To learn what else you can do in YAML pipelines, see [YAML schema reference](yaml-schema.md).

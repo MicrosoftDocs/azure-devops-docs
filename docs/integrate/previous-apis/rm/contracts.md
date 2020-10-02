@@ -1,11 +1,9 @@
 ---
 title: Release API Contracts | VSTS
 ms.assetid: 9889e558-78df-e571-6884-75fdfd014546
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 generated: true
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -328,7 +326,7 @@ Extends: [VariableGroupProviderData](#VariableGroupProviderData)
 
 | Field        | Type
 | :----------- | :--------
-| <code>lastRefreshedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>lastRefreshedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>serviceEndpointId</code> | GUID
 | <code>vault</code> | string
 
@@ -344,7 +342,7 @@ Extends: [VariableValue](#VariableValue)
 | :----------- | :--------
 | <code>contentType</code> | string
 | <code>enabled</code> | boolean
-| <code>expires</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>expires</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 
 
 
@@ -388,7 +386,7 @@ Represents a change associated with a build.
 | <code>id</code> | string | Something that identifies the change. For a commit, this would be the SHA1. For a TFVC changeset, this would be the changeset id.
 | <code>location</code> | string | The location of the full representation of the resource.
 | <code>message</code> | string | A description of the change. This might be a commit message or changeset description.
-| <code>timestamp</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx) | A timestamp for the change.
+| <code>timestamp</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings) | A timestamp for the change.
 
 
 
@@ -616,19 +614,19 @@ Extends: [AutoTriggerIssue](#AutoTriggerIssue)
 | <code>deploymentStatus</code> | [DeploymentStatus](#DeploymentStatus)
 | <code>id</code> | int32
 | <code>lastModifiedBy</code> | [IdentityRef](#IdentityRef)
-| <code>lastModifiedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>lastModifiedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>operationStatus</code> | [DeploymentOperationStatus](#DeploymentOperationStatus)
 | <code>postDeployApprovals</code> | array ([ReleaseApproval](#ReleaseApproval))
 | <code>preDeployApprovals</code> | array ([ReleaseApproval](#ReleaseApproval))
-| <code>queuedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>queuedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>reason</code> | [DeploymentReason](#DeploymentReason)
 | <code>release</code> | [ReleaseReference](#ReleaseReference)
 | <code>releaseDefinition</code> | [ReleaseDefinitionShallowReference](#ReleaseDefinitionShallowReference)
 | <code>releaseEnvironment</code> | [ReleaseEnvironmentShallowReference](#ReleaseEnvironmentShallowReference)
 | <code>requestedBy</code> | [IdentityRef](#IdentityRef)
 | <code>requestedFor</code> | [IdentityRef](#IdentityRef)
-| <code>scheduledDeploymentTime</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
-| <code>startedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>scheduledDeploymentTime</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
+| <code>startedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 
 
 
@@ -675,9 +673,9 @@ Extends: [AutoTriggerIssue](#AutoTriggerIssue)
 | <code>id</code> | int32 |
 | <code>job</code> | [ReleaseTask](#ReleaseTask) |
 | <code>lastModifiedBy</code> | [IdentityRef](#IdentityRef) |
-| <code>lastModifiedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx) |
+| <code>lastModifiedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings) |
 | <code>operationStatus</code> | [DeploymentOperationStatus](#DeploymentOperationStatus) |
-| <code>queuedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx) |
+| <code>queuedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings) |
 | <code>reason</code> | [DeploymentReason](#DeploymentReason) |
 | <code>releaseDeployPhases</code> | array ([ReleaseDeployPhase](#ReleaseDeployPhase)) |
 | <code>requestedBy</code> | [IdentityRef](#IdentityRef) |
@@ -823,8 +821,8 @@ Extends: [BaseDeploymentInput](#BaseDeploymentInput)
 | <code>isDeleted</code> | boolean
 | <code>latestDeploymentsOnly</code> | boolean
 | <code>maxDeploymentsPerEnvironment</code> | int32
-| <code>maxModifiedTime</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
-| <code>minModifiedTime</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>maxModifiedTime</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
+| <code>minModifiedTime</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>operationStatus</code> | [DeploymentOperationStatus](#DeploymentOperationStatus)
 | <code>queryOrder</code> | [ReleaseQueryOrder](#ReleaseQueryOrder)
 
@@ -1015,10 +1013,10 @@ Class to represent favorite entry
 | Field        | Type
 | :----------- | :--------
 | <code>createdBy</code> | [IdentityRef](#IdentityRef)
-| <code>createdOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>createdOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>description</code> | string
 | <code>lastChangedBy</code> | [IdentityRef](#IdentityRef)
-| <code>lastChangedDate</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>lastChangedDate</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>path</code> | string
 
 
@@ -1248,7 +1246,7 @@ Extends: [DeploymentInput](#DeploymentInput)
 | <code>cC</code> | [EmailRecipients](#EmailRecipients)
 | <code>inReplyTo</code> | string
 | <code>messageId</code> | string
-| <code>replyBy</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>replyBy</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>replyTo</code> | [EmailRecipients](#EmailRecipients)
 | <code>sections</code> | array ([MailSectionType](#MailSectionType))
 | <code>senderType</code> | [SenderType](#SenderType)
@@ -1280,10 +1278,10 @@ Extends: [DeploymentInput](#DeploymentInput)
 | :----------- | :--------
 | <code>approver</code> | [IdentityRef](#IdentityRef)
 | <code>comments</code> | string
-| <code>createdOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>createdOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>id</code> | int32
 | <code>instructions</code> | string
-| <code>modifiedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>modifiedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>name</code> | string
 | <code>release</code> | [ReleaseShallowReference](#ReleaseShallowReference)
 | <code>releaseDefinition</code> | [ReleaseDefinitionShallowReference](#ReleaseDefinitionShallowReference)
@@ -1469,7 +1467,7 @@ Extends: [ExecutionInput](#ExecutionInput)
 <a id="ReferenceLinks"></a>
 
 ## ReferenceLinks
-The class to represent a collection of REST reference links.  Example: { self: { href: "<http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1>" } }
+The class to represent a collection of REST reference links.  Example: `{ self: { href: "http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1" } }`
 
 
 | Field        | Type      | Notes
@@ -1488,7 +1486,7 @@ The class to represent a collection of REST reference links.  Example: { self: {
 | <code>artifacts</code> | array ([Artifact](#Artifact))
 | <code>comment</code> | string
 | <code>createdBy</code> | [IdentityRef](#IdentityRef)
-| <code>createdOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>createdOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>definitionSnapshotRevision</code> | int32
 | <code>description</code> | string
 | <code>environments</code> | array ([ReleaseEnvironment](#ReleaseEnvironment))
@@ -1496,7 +1494,7 @@ The class to represent a collection of REST reference links.  Example: { self: {
 | <code>keepForever</code> | boolean
 | <code>logsContainerUrl</code> | string
 | <code>modifiedBy</code> | [IdentityRef](#IdentityRef)
-| <code>modifiedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>modifiedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>name</code> | string
 | <code>poolName</code> | string
 | <code>projectReference</code> | [ProjectReference](#ProjectReference)
@@ -1534,11 +1532,11 @@ The class to represent a collection of REST reference links.  Example: { self: {
 | <code>approver</code> | [IdentityRef](#IdentityRef) | Gets or sets the identity who should approve.
 | <code>attempt</code> | int32 | Gets attempt which specifies as which deployment attempt it belongs.
 | <code>comments</code> | string | Gets or sets comments for approval.
-| <code>createdOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx) | Gets date on which it got created.
+| <code>createdOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings) | Gets date on which it got created.
 | <code>history</code> | array ([ReleaseApprovalHistory](#ReleaseApprovalHistory)) | Gets history which specifies all approvals associated with this approval.
 | <code>id</code> | int32 | Gets the unique identifier of this field.
 | <code>isAutomated</code> | boolean | Gets or sets as approval is automated or not.
-| <code>modifiedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx) | Gets date on which it got modified.
+| <code>modifiedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings) | Gets date on which it got modified.
 | <code>rank</code> | int32 | Gets or sets rank which specifies the order of the approval. e.g. Same rank denotes parallel approval.
 | <code>release</code> | [ReleaseShallowReference](#ReleaseShallowReference) | Gets releaseReference which specifies the reference of the release to which this approval is associated.
 | <code>releaseDefinition</code> | [ReleaseDefinitionShallowReference](#ReleaseDefinitionShallowReference) | Gets releaseDefinitionReference which specifies the reference of the release definition to which this approval is associated.
@@ -1559,8 +1557,8 @@ The class to represent a collection of REST reference links.  Example: { self: {
 | <code>approver</code> | [IdentityRef](#IdentityRef)
 | <code>changedBy</code> | [IdentityRef](#IdentityRef)
 | <code>comments</code> | string
-| <code>createdOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
-| <code>modifiedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>createdOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
+| <code>modifiedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>revision</code> | int32
 
 
@@ -1638,13 +1636,13 @@ Extends: [Condition](#Condition)
 | <code>artifacts</code> | array ([Artifact](#Artifact))
 | <code>comment</code> | string
 | <code>createdBy</code> | [IdentityRef](#IdentityRef)
-| <code>createdOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>createdOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>description</code> | string
 | <code>environments</code> | array ([ReleaseDefinitionEnvironment](#ReleaseDefinitionEnvironment))
 | <code>id</code> | int32
 | <code>lastRelease</code> | [ReleaseReference](#ReleaseReference)
 | <code>modifiedBy</code> | [IdentityRef](#IdentityRef)
-| <code>modifiedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>modifiedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>name</code> | string
 | <code>path</code> | string
 | <code>properties</code> | [PropertiesCollection](#PropertiesCollection)
@@ -1800,7 +1798,7 @@ Extends: [ReleaseDefinitionEnvironmentStep](#ReleaseDefinitionEnvironmentStep)
 | Field        | Type
 | :----------- | :--------
 | <code>changedBy</code> | [IdentityRef](#IdentityRef)
-| <code>changedDate</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>changedDate</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>changeType</code> | [AuditAction](#AuditAction)
 | <code>comment</code> | string
 | <code>definitionId</code> | int32
@@ -1872,16 +1870,16 @@ Extends: [ReleaseDefinitionEnvironmentStep](#ReleaseDefinitionEnvironmentStep)
 | Field        | Type
 | :----------- | :--------
 | <code>conditions</code> | array ([ReleaseCondition](#ReleaseCondition))
-| <code>createdOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>createdOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>definitionEnvironmentId</code> | int32
 | <code>demands</code> | array ([Demand](#Demand))
 | <code>deployPhasesSnapshot</code> | array ([DeployPhase](#DeployPhase))
 | <code>deploySteps</code> | array ([DeploymentAttempt](#DeploymentAttempt))
 | <code>environmentOptions</code> | [EnvironmentOptions](#EnvironmentOptions)
 | <code>id</code> | int32
-| <code>modifiedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>modifiedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>name</code> | string
-| <code>nextScheduledUtcTime</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>nextScheduledUtcTime</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>owner</code> | [IdentityRef](#IdentityRef)
 | <code>postApprovalsSnapshot</code> | [ReleaseDefinitionApprovals](#ReleaseDefinitionApprovals)
 | <code>postDeployApprovals</code> | array ([ReleaseApproval](#ReleaseApproval))
@@ -1895,7 +1893,7 @@ Extends: [ReleaseDefinitionEnvironmentStep](#ReleaseDefinitionEnvironmentStep)
 | <code>releaseDefinition</code> | [ReleaseDefinitionShallowReference](#ReleaseDefinitionShallowReference)
 | <code>releaseDescription</code> | string
 | <code>releaseId</code> | int32
-| <code>scheduledDeploymentTime</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>scheduledDeploymentTime</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>schedules</code> | array ([ReleaseSchedule](#ReleaseSchedule))
 | <code>status</code> | [EnvironmentStatus](#EnvironmentStatus)
 | <code>timeToDeploy</code> | double
@@ -1947,7 +1945,7 @@ Extends: [ReleaseDefinitionEnvironmentStep](#ReleaseDefinitionEnvironmentStep)
 | Field        | Type
 | :----------- | :--------
 | <code>comment</code> | string
-| <code>scheduledDeploymentTime</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>scheduledDeploymentTime</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>status</code> | [EnvironmentStatus](#EnvironmentStatus)
 
 
@@ -2003,7 +2001,7 @@ Extends: [ReleaseDefinitionEnvironmentStep](#ReleaseDefinitionEnvironmentStep)
 | <code>_links</code> | [ReferenceLinks](#ReferenceLinks)
 | <code>artifacts</code> | array ([Artifact](#Artifact))
 | <code>createdBy</code> | [IdentityRef](#IdentityRef)
-| <code>createdOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>createdOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>description</code> | string
 | <code>id</code> | int32
 | <code>modifiedBy</code> | [IdentityRef](#IdentityRef)
@@ -2022,7 +2020,7 @@ Extends: [ReleaseDefinitionEnvironmentStep](#ReleaseDefinitionEnvironmentStep)
 | Field        | Type
 | :----------- | :--------
 | <code>changedBy</code> | [IdentityRef](#IdentityRef)
-| <code>changedDate</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>changedDate</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>changeDetails</code> | string
 | <code>changeType</code> | string
 | <code>comment</code> | string
@@ -2104,16 +2102,16 @@ Extends: [ReleaseDefinitionEnvironmentStep](#ReleaseDefinitionEnvironmentStep)
 | Field        | Type
 | :----------- | :--------
 | <code>agentName</code> | string
-| <code>dateEnded</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
-| <code>dateStarted</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
-| <code>finishTime</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>dateEnded</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
+| <code>dateStarted</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
+| <code>finishTime</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>id</code> | int32
 | <code>issues</code> | array ([Issue](#Issue))
 | <code>lineCount</code> | int64
 | <code>logUrl</code> | string
 | <code>name</code> | string
 | <code>rank</code> | int32
-| <code>startTime</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>startTime</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>status</code> | [TaskStatus](#TaskStatus)
 | <code>task</code> | [WorkflowTaskReference](#WorkflowTaskReference)
 | <code>timelineRecordId</code> | GUID
@@ -2443,11 +2441,11 @@ Extends: [ReleaseTriggerBase](#ReleaseTriggerBase)
 | Field        | Type
 | :----------- | :--------
 | <code>createdBy</code> | [IdentityRef](#IdentityRef)
-| <code>createdOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>createdOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>description</code> | string
 | <code>id</code> | int32
 | <code>modifiedBy</code> | [IdentityRef](#IdentityRef)
-| <code>modifiedOn</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>modifiedOn</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>name</code> | string
 | <code>providerData</code> | [VariableGroupProviderData](#VariableGroupProviderData)
 | <code>type</code> | string

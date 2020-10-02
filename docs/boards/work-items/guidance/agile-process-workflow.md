@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: How to guide for using the Agile process to track work using its work item types working in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -16,7 +14,7 @@ ms.date: 12/20/2018
 
 # Agile process work item types and workflow  
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Teams use the work item types (WITs) provided with the Agile process to plan and track progress of software projects. Teams define user stories to manage the backlog of work and then, using the Kanban board, track progress by updating the status of those stories.
 
@@ -181,7 +179,7 @@ If you use [Microsoft Project](../../backlogs/office/create-your-backlog-tasks-u
  
 ### Test user stories
 
-From the web portal or Test Manager, you can [create test cases that automatically link to a user story or bug](../../../test/create-test-cases.md). Or, you can link a user story to a test case from the ![Links tab icon](../../backlogs/media/icon-links-tab-wi.png) (links tab). 
+From the web portal or Test Manager, you can [create test cases that automatically link to a user story or bug](../../../test/create-test-cases.md). Or, you can link a user story to a test case from the :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab). 
 
 ![Test plan web portal](media/IC793453.png)
 
@@ -189,7 +187,7 @@ The test case contains a number of fields, many of which are automated and integ
 
 <img src="media/agile-test-case-form.png" alt="Test case form" style="border: 1px solid #C3C3C3;" /> 
 
-The ![Links tab icon](../../backlogs/media/icon-links-tab-wi.png) (links tab) captures the links to user stories and bugs in a test case. By linking user stories and bugs to test cases, the team can track the progress made in testing each item. By defining these links, you support information that appears in the [Stories Overview Report](../../../report/sql-reports/stories-overview-report-agile.md) report.
+The :::image type="icon" source="../../backlogs/media/icon-links-tab-wi.png" border="false"::: (links tab) captures the links to user stories and bugs in a test case. By linking user stories and bugs to test cases, the team can track the progress made in testing each item. By defining these links, you support information that appears in the [Stories Overview Report](../../../report/sql-reports/stories-overview-report-agile.md) report.
 
 ### Track code defects
 

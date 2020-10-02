@@ -2,16 +2,14 @@
 title: Manual test progress status sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate an overall execution state or progress status of manual tests
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '> azure-devops-2019'
-ms.date: 12/10/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 07/14/2020
 ---
 
 # Progress status sample report 
@@ -170,7 +168,6 @@ Your report should appear similar to the following image.
 
 ## Related articles
 
-- [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
-- [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
-- [Analytics OData query quick reference](/azure/devops/report/extend-analytics/quick-ref)
-
+- [Overview of sample reports using OData queries](./sample-odata-overview.md)
+- [Connect using Power BI and OData queries](./odataquery-connect.md)
+- [Analytics OData query quick reference](../extend-analytics/quick-ref.md)

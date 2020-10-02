@@ -2,10 +2,8 @@
 title: TF30005-The New Team Project Wizard group... 
 titleSuffix: Azure DevOps & TFS
 description: Occurs when the New Team Project Wizard is unable to connect to the application-tier server {name} while creating a project.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eecc6e96-3c39-4cff-aad4-5ab57582ba2e
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

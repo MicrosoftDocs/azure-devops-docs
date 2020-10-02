@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Pull Request | REST API Reference for Team Foundation Server
-description: Work with Git programmatically using the REST APIs for Team Foundation Server.
+description: Work with Git pull requests programmatically using the Git Pull Request API for Team Foundation Server.
 ms.assetid: 47DDF67E-C4BE-4D96-BA20-360A652F3280
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -33,4 +31,4 @@ Use these APIs to work with a Pull Request in a Team Foundation managed Git repo
 
 [!INCLUDE [ID_vs_Name](../_data/id_or_name.md)]
 
-There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/PullRequestsSample.cs) available for this area.
+There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Git/PullRequestsSample.cs) available for this area.

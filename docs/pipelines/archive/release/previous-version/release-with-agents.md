@@ -3,10 +3,7 @@ title: Release an app with deployment agents
 ms.custom: seodec18
 description: Release your app to environments with deployment agents in Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: 34E3CA4A-A37E-4B8F-9BC2-4613851469A1
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -85,7 +82,7 @@ You also need a build definition that builds your app.
 1.  [Start a new release](manage-your-release.md#StartRelease).
 1.  [Approve steps in a stage](manage-your-release.md#ApproveSteps).
 
-## Q&A
+## FAQ
 
 ### Q: Can I deploy components of my multi-tiered app separately?
 

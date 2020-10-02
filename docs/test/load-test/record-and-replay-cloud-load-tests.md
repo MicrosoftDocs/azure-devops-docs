@@ -2,10 +2,8 @@
 title: Record and replay load tests
 description: Get app performance data by recording and replaying cloud-based load tests using the features of Azure DevOps
 ms.assetid: 4D07F0F0-01FE-4BC7-A338-599D54E81134
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -62,7 +60,7 @@ you can represent user scenarios that:
 * Simulate a complete user scenario
 
 If you develop or test web apps, you may already be familiar with the
-[F12 developer tools](https://docs.microsoft.com/microsoft-edge/devtools-guide)
+[F12 developer tools](/microsoft-edge/devtools-guide)
 in your browser. These enable you carry out a range of tasks from 
 inspecting the HTML, CSS, and JavaScript, to viewing the traffic between 
 the browser and the server. You can use this ability to view traffic 
@@ -239,16 +237,15 @@ If you find that this is the cause of your test failures, you can export and run
 This export mechanism downloads a Visual Studio load test project containing the required web performance 
 test and load test for your application. See 
 [how to fix dynamic parameters using Visual Studio](/visualstudio/test/fix-non-detectable-dynamic-parameters-in-a-web-performance-test). 
-Sean Lumley's [blog post](https://blogs.msdn.microsoft.com/slumley/2007/04/10/how-to-debug-a-web-test/)
+Sean Lumley's [blog post](/archive/blogs/slumley/how-to-debug-a-web-test)
 has a detailed example of how dynamic parameters can be identified by inspecting the test and test results.
 
 ## See also
 
 * [FAQs for load testing](reference-qa.md#recordreplay)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Run Apache JMeter load tests with Azure DevOps](get-started-jmeter-test.md)
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
-[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

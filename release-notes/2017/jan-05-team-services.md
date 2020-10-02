@@ -2,7 +2,6 @@
 title: Getting personal – Jan 5
 description: VSTS release notes for Jan 5 2017
 ms.ContentId: 9b76c2f3-39ce-4c98-9cef-237853ee0349
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
@@ -106,7 +105,7 @@ With so many good solutions available that integrate well with TFS and Team Serv
 
 There are several alternatives you can use. The Team room is used both for a notification hub as well as for chat. TFS and Team Services already integrate with many other collaboration products including [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), [Slack](https://slack.com/), [HipChat](https://www.hipchat.com/), [Campfire](https://campfirenow.com/) and [Flowdock](https://www.flowdock.com/). You can also use [Zapier](https://zapier.com/) to create your own integrations, or get very granular control over the notifications that show up.
 
-More information is available in this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).
+More information is available in this [blog post](https://devblogs.microsoft.com/devops/deprecation-of-the-team-rooms-in-team-services-and-tfs/).
 
 ## New notification settings experience
 Notifications help you and your teams stay informed about activity in your Team Services projects. With this update, it’s now easier to manage what notifications you and your teams receive. 
@@ -182,7 +181,7 @@ Test Impact Analysis for managed automated tests is now available via a checkbox
 If enabled, only the relevant set of managed automated tests that need to be run to validate a given code change will run. Test Impact Analysis requires the latest version of Visual Studio, and is presently supported in CI for managed automated tests.
 
 ## SonarQube MSBuild tasks
-SonarQube MSBuild tasks are now available from an extension provided by SonarSource. For more details, please read [SonarSource have announced their own SonarQube Team Services / TFS integration](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/13/sonarsource-have-announced-their-own-sonarqube-team-services-tfs-integration/).
+SonarQube MSBuild tasks are now available from an extension provided by SonarSource. For more details, please read [SonarSource have announced their own SonarQube Team Services / TFS integration](https://devblogs.microsoft.com/devops/sonarsource-have-announced-their-own-sonarqube-team-services-tfs-integration/).
 
 ## Improved experience for Code Search results
 There have been improvements to the Code Search results pane:
@@ -226,7 +225,7 @@ Variable groups are used to group your variables and their values that you want 
 
 Open __Library__ tab in __Build &amp; Release__ hub and choose __+ Variable group__ in the toolbar. Find more information about variable groups under [Release definitions in Microsoft Release Management](https://visualstudio.microsoft.com/docs/release/author-release-definition/more-release-definition#var-groups) in the Visual Studio documentation.
 
-![default artifact](media/01_05_18.png)
+![Choose variable group.](media/01_05_18.png)
 
 As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 

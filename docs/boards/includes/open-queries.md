@@ -21,6 +21,6 @@ If it is your first time opening **Work**, the page opens to **Favorites** which
 
 From your web browser, open **Boards>Queries**. 
 
-![Web portal, choose Boards>Queries](/azure/devops/boards/queries/media/view-run-queries/open-hub-page.png)  
+![From your web browser, open Boards>Queries](/azure/devops/boards/queries/media/view-run-queries/open-hub-page.png)  
 
 ::: moniker-end

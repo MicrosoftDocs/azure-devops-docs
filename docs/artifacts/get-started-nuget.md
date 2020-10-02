@@ -1,20 +1,16 @@
 ﻿---
 title: Get started with NuGet packages
 description: Quickly start hosting NuGet packages in Azure DevOps Services or Team Foundation Server
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
-ms.date: 01/24/2018
+ms.date: 03/06/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Get started with NuGet packages in Azure DevOps Services and TFS
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services | TFS 2018 | TFS 2017**
 
 ## Before you start
 
@@ -53,7 +49,7 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 ## Automate the process with continuous integration
 
 You can use continuous integration systems like Team Build to automate the packing and publishing of your packages. 
-To get started with continuous integration, see the [NuGet in Team Build guidance](/azure/devops/pipelines/artifacts/nuget).
+To get started with continuous integration, see the [NuGet in Team Build guidance](../pipelines/artifacts/nuget.md).
 
 ## What's next?
 

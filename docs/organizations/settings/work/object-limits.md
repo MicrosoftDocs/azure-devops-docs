@@ -2,16 +2,14 @@
 title: Work tracking, process, and project limits
 titleSuffix: Azure DevOps Services
 description: Limits placed on the number of objects that can be specified for work tracking objects, queries and more  
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: ">= tfs-2013"
-ms.date: 12/18/2019
+ms.date: 07/24/2020
 ---
 
 # Work tracking, process, and project limits
@@ -34,17 +32,17 @@ When defining work items or running queries, the following operational limits ap
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
 | Attachment size | 60 MB | 
-| Queries  |  30 seconds | 
+| Queries  |  2 minutes | 
 | Query results | 20,000 items | 
 | Query length | 32,000 characters |
 
 
-If you need a limit increased, [file a support ticket](https://support.microsoft.com/supportforbusiness/productselection?sapId=4d7c8158-200d-893b-5161-06d00803fd9c). To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
+To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
 
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019" 
+::: moniker range="< azure-devops" 
 
 When defining work items, the following operational limits apply. 
 
@@ -65,17 +63,17 @@ The default maximum attachment size is 4 MB. You can [change the maximum size up
 
 ::: moniker range="azure-devops"
 
-When working with teams, work item tags, backlogs, and boards, the following operational limits apply.  
+When working with teams, work item tags, backlogs, and boards, the following operational display and object limits apply.  
 
 | User interface |  Limit | 
 |--------|-------|
 | Backlogs | 10,000 work items | 
-| Boards | 400 cards  | 
+| Boards | 1000 cards (excluding those cards in the [*Proposed* and *Completed* workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) | 
 | Taskboard | 1000 tasks  | 
 | Teams | 5,000 per project | 
 | Work item tags | 150,000 tag definitions per project | 
 
-Each backlog can display up to 10,000 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
+Each backlog can display up to 10,000 work items. This is simply a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
 #### Additional notes:
 
@@ -130,7 +128,7 @@ The following table lists the maximum number of objects that you can define for 
 
 | Object                                              | Inheritance | Hosted XML |
 | --------------------------------------------------- | ----------: | ---------: |
-| Number of processes you can have in an organization |          64 |         64 |
+| Number of processes you can have in an organization |          128|         64 |
 | Work item types defined for a process               |          64 |         64 |
 | Fields defined for an organization                  |        8192 |       8192 |
 | Fields defined for a process                        |        1024 |       1024 |
@@ -153,7 +151,7 @@ For additional restrictions and conformance requirements of the Hosted XML proce
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019" 
+::: moniker range=">= azure-devops-2019 < azure-devops" 
 
 The following table lists the maximum number of objects that you can define for the Inheritance and On-premises XML process models. While these represent hard limits, practical limits may also apply. 
 
@@ -222,7 +220,7 @@ We recommend that you consider the following guidance in order to minimize perfo
 
 
 
-::: moniker range="<= azure-devops-2019" 
+::: moniker range="< azure-devops" 
 
 - Minimize the number of custom fields you define. All custom fields contribute to the total allowed for a process, collection, or organization. Note that you can specify different behavior for the same field in a different WIT. That is, you can specify different rules, picklists, and more. 
 - Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate. 
@@ -275,7 +273,7 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)

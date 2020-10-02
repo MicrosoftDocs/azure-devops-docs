@@ -2,15 +2,13 @@
 title: Default Analytics views
 titleSuffix: Azure DevOps
 description: Filtered set of data based on Analytics for Azure DevOps which supports creating Power BI reports  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: angurusw
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/14/2020
 ---
 
 # Default Analytics views
@@ -26,7 +24,7 @@ A default set of Analytics views are provided, as shown below.
 ::: moniker range="azure-devops"
 
 > [!NOTE]  
-> To access <strong>Analytics views</strong>, you must enable the feature as described in [Enable preview features](/azure/devops/project/navigation/preview-features).  
+> To access **Analytics views**, you must enable the feature as described in [Manage or enable features](../../project/navigation/preview-features.md).  
 
 ::: moniker-end
 

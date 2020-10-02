@@ -2,15 +2,13 @@
 title: Query trend data
 titleSuffix: Azure DevOps 
 description: How to query Analytics trend data and consume it in a client tool when working from Azure DevOps   
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/14/2020
 ---
 
 # Query trend data
@@ -32,7 +30,7 @@ In this article you'll learn:
 
 Using the OData Aggregation Extensions, you can return aggregated data from Azure DevOps that is conducive to reporting. For example you could show bug trend for the month of March. Bug trends are a common and critical part of managing any project so you can put this to good use immediately.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!NOTE]
 > The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.

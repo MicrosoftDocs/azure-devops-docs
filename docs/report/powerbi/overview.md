@@ -3,15 +3,12 @@ title: Learn about Power BI integration and supported connection methods
 titleSuffix: Azure DevOps
 description: Describes the different integration options you can use to connect to Power BI to access Analytics for Azure DevOps
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
-ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: mijacobs
-ms.author: stansw
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>=azure-devops-2019'
-ms.date: 10/04/2019
+ms.date: 07/14/2020
 ---
 
 # About Power BI integration
@@ -38,11 +35,11 @@ Before you get started using Power BI to work with Analytics, make sure you have
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 
 1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
-1. [Enable or install the Analytics extension](../dashboards/analytics-extension.md).  
+1. [Verify that Analytics](../dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service.   
 1. Configure the [permissions required to access Analytics](analytics-security.md).  
 1. Review the [knowledge base of Power BI articles](/power-bi).  
 1. If you are not familiar with Analytics, read "[What is Analytics](what-is-analytics.md)" before continuing.
@@ -108,5 +105,5 @@ For specific examples, see one of the following articles:
 
 - [Extend Analytics with OData](../extend-analytics/quick-ref.md)    
 - [Dashboards, charts, reports & widgets](../dashboards/overview.md)  
-- [Power BI Desktop](/power-bi/desktop-get-the-desktop) 
-- [Power BI documentation](/power-bi)  
+- [Power BI Desktop](/power-bi/fundamentals/desktop-get-the-desktop) 
+- [Power BI documentation](/power-bi)

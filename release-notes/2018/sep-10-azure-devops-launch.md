@@ -2,7 +2,6 @@
 title: Introducing Azure DevOps
 author: alexcnichols
 ms.author: alexn
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 9/10/2018
 description: The single service that was Visual Studio Team Services (VSTS) is now becoming our new set of Azure DevOps services. Throughout our documentation, websites, and in-product you'll start to notice new icons and names for Azure DevOps all up and each of our services within Azure DevOps.
@@ -84,7 +83,7 @@ See the [build public repositories](/azure/devops/pipelines/build/ci-public?toc=
 > To use this capability, you must have the **Build YAML pipelines** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your organization.
 
 
-YAML-based build pipelines are now broadly available. Automate your continuous integration pipeline using a [YAML file checked into the repository](/azure/devops/pipelines/get-started-yaml?view=azure-devops) alongside the rest of your code. It's easy to get started with a single-job build. As your needs grow, easily scale out using [multiple jobs](/azure/devops/pipelines/process/multiple-phases?tabs=yaml&view=azure-devops), [external templates](/azure/devops/pipelines/yaml-schema?view=azure-devops), and [matrix execution](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#multi-configuration).
+YAML-based build pipelines are now broadly available. Automate your continuous integration pipeline using a [YAML file checked into the repository](/azure/devops/pipelines/get-started-yaml?view=azure-devops) alongside the rest of your code. It's easy to get started with a single-job build. As your needs grow, easily scale out using [multiple jobs](/azure/devops/pipelines/process/multiple-phases?tabs=yaml&view=azure-devops), [external templates](/azure/devops/pipelines/yaml-schema?view=azure-devops), and [matrix execution](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#multi-job-configuration).
 
 ### Create YAML build pipelines using the new wizard
 
@@ -216,7 +215,7 @@ Good news! If you are only using the Azure Pipelines service, you do not have to
 
 See the [Provide Stakeholders access to edit build and release pipelines](/azure/devops/organizations/security/provide-stakeholder-pipeline-access) documentation for more information.
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

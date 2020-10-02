@@ -1,12 +1,9 @@
 ---
 title: Use the Azure portal to create a pipeline
 description: Use the Azure portal to create a pipeline
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.author: mlearned
 author: mlearned
-ms.manager: mijacobs
 ms.assetid: 3DE9D448-714C-434D-90AB-D50EE9AF91FB
 ms.custom: "mvc, seodec18"
 ms.date: 05/06/2018
@@ -118,8 +115,13 @@ When you configured your CI/CD pipeline in this quickstart, a build and release 
 
 ## Videos
 
-| | |
-| --- | --- |
-| <iframe width="340" height="190" src="https://www.youtube.com/embed/_YGR9hOR_PI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe width="340" height="190" src="https://www.youtube.com/embed/3etwjubReJs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> |
-| <iframe width="340" height="190" src="https://www.youtube.com/embed/itwqMf9aR0w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe width="340" height="190" src="https://www.youtube.com/embed/P72xfZLkFJ0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> |
-| | |
+:::row:::
+    :::column:::
+        <iframe width="340" height="190" src="https://www.youtube.com/embed/_YGR9hOR_PI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+        <iframe width="340" height="190" src="https://www.youtube.com/embed/itwqMf9aR0w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+    :::column-end:::
+    :::column:::
+        <iframe width="340" height="190" src="https://www.youtube.com/embed/3etwjubReJs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+        <iframe width="340" height="190" src="https://www.youtube.com/embed/P72xfZLkFJ0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+    :::column-end:::
+:::row-end:::

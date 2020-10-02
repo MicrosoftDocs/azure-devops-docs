@@ -3,17 +3,15 @@ title: Use advanced code search options
 titleSuffix: Azure Repos
 description: Advanced options for using Code Search across all your projects in Azure DevOps
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2017'
 ms.date: 10/10/2019
 ---
 
-# How To: Use Code Search
+# Advanced code search  
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
@@ -64,7 +62,7 @@ project. You can navigate up to higher levels to broaden your search.
 
 In a Git project, you see a list of the repositories it contains. 
 Use the project and repository checkboxes to widen your search to more or all projects, or to 
-narrow your search to fewer projects and repositories. If there is more than a few 
+narrow your search to fewer projects and repositories. If there are more than a few 
 projects or repositories, use the **Show more** link to see them all.
 
 Code Search can index multiple branches in a Git repository - by default it indexes 
@@ -73,10 +71,8 @@ Specify the branches for each repository that you want Code
 Search to index in the **Options** tab of the **Repositories** section in the
 [project settings page](../navigation/go-to-service-page.md#open-project-settings).
 
-::: moniker range="azure-devops-2019"
-
+::: moniker range=">= azure-devops-2019"
 ![Configure Git branches to include in search](media/advanced-work-item-search-syntax/configure-branches.png)
-
 ::: moniker-end
 
 In a TFVC project, you see a list of folder paths in that project for 
@@ -156,7 +152,7 @@ Within a phrase:
 ### Search for special characters
 
 > [!NOTE]
-> This feature is currently available only for Azure DevOps Services customers and not TFS.
+> This feature is currently available only for Azure DevOps Services.
 
 You can include special characters in a search string, or search specifically for special characters,
 according to the following rules:
@@ -309,4 +305,4 @@ pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
 In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
 to the new browser tab. 
 
-[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]
+

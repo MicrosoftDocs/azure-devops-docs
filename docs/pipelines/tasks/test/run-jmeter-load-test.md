@@ -2,10 +2,7 @@
 title: Cloud-based Apache JMeter Load Test task (Deprecated)
 description: Runs the Apache JMeter load test in cloud
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: F20661EB-E0F7-4AFD-9A86-9FE9D1A93382
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -19,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [loadtest-deprecated-include](../../../test/includes/loadtest-deprecated-include.md)]
 
-Use this task in a build or release pipeline to run Apache JMeter load tests in the cloud.
+Use this task to run Apache JMeter load tests in the cloud.
 
 ## Demands
 
@@ -56,7 +53,7 @@ The agent must have the following capability:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

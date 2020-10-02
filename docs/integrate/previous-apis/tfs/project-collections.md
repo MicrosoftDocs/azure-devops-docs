@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Project Collections | REST API Reference for Team Foundation Server
 description: Work with project collections programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 8172F58D-5131-4571-91D0-C1E11B05C4FE
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -20,7 +18,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [disclaimer](../_data/disclaimer.md)]
 
-[Project collections](https://msdn.microsoft.com/library/dd236915.aspx) contain [projects](./projects.md) that have source code, work items, and other resources.
+[Project collections](/azure/devops/server/admin/manage-project-collections?viewFallbackFrom=azure-devops) contain [projects](./projects.md) that have source code, work items, and other resources.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
@@ -67,4 +65,4 @@ GET https://mytfsserver/DefaultCollection/_apis/projectCollections/d81542e4-cdfa
 
 #### Sample code
 
-* [C# (ListProjectCollections method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/ProjectsAndTeams/ProjectCollectionsSample.cs#L14)
+* [C# (ListProjectCollections method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProjectCollectionsSample.cs#L14)

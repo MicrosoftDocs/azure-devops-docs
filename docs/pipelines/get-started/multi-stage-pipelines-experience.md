@@ -3,12 +3,9 @@ title: Multi-stage pipelines user experience
 ms.custom: seodec18
 description: Learn how to navigate using the multi-stage pipelines user interface
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 12/09/2019
+ms.date: 04/20/2020
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -44,7 +41,7 @@ From the pipelines landing page you can view pipelines and pipeline runs, create
 
 Choose **Recent** to view recently run pipelines (the default view), or choose **All** to view all pipelines.
 
-![View pipelines](media/view-pipelines.png)
+![Choose Recent to view recently run pipelines or choose All to view all pipelines.](media/view-pipelines.png)
 
 Select a pipeline to manage that pipeline and view its runs. Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
 
@@ -98,15 +95,20 @@ If the pipeline is running, you can cancel it by choosing **Cancel**. If the run
 
 ![Cancel pipeline run](media/cancel-pipeline-run.png)
 
-### Download logs
+<a name="download-logs"></a>
+### Pipeline run context menu
 
-From the context menu you can download logs, add tags, edit the pipeline, and configure [retention](../policies/retention.md) for the run.
+From the context menu you can download logs, add tags, edit the pipeline, delete the run, and configure [retention](../policies/retention.md) for the run.
 
 ![Pipeline run summary context menu](media/pipeline-run-summary-context-menu.png)
 
+> [!NOTE]
+> You can't delete a run if the run is retained. If you don't see **Delete**, choose **Stop retaining run**, and then delete the run. If you see both **Delete** and **View retention releases**, one or more configured retention policies still apply to your run. Choose **View retention releases**, delete the policies (only the policies for the selected run are removed), and then delete the run.
+
+
 ### Jobs and stages
 
-The jobs pane displays on overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
+The jobs pane displays an overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
 
 ![Pipeline jobs](media/pipeline-jobs-pane.png)
 
@@ -126,7 +128,20 @@ You can configure pipelines security on a project level from the context menu on
 
 To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You can manage security for for Azure Pipelines in the web portal, either from the user or admin context. For more information on configuring pipelines security, see [Pipeline permissions and security roles](../policies/permissions.md).
 
+## Next steps
 
+Learn more about configuring pipelines in the language of your choice:
+
+* [.NET Core](../ecosystems/dotnet-core.md)
+* [Go](../ecosystems/go.md)
+* [Java](../ecosystems/java.md)
+* [Node.js](../ecosystems/javascript.md)
+* [Python](../ecosystems/python.md)
+* [Containers](../ecosystems/containers/build-image.md) and [Container jobs](../process/container-phases.md)
+
+Learn more about building [Azure Repos](../repos/azure-repos-git.md) and [GitHub](../repos/github.md) repositories.
+
+To learn what else you can do in YAML pipelines, see [Customize your pipeline](../customize-pipeline.md), and for a complete reference see [YAML schema reference](../yaml-schema.md).
 
 
 

@@ -2,12 +2,12 @@
 title: XML element index
 titleSuffix: Azure DevOps & TFS
 description: Index of XML elements used to customize the work tracking experience for Hosted XML and On-premises XML process models for Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: f65e3ae0-817a-413e-b5c3-0ebadc3ba944
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops' 
 ms.date: 04/04/2017
 ---
 

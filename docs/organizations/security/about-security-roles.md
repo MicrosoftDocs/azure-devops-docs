@@ -5,21 +5,20 @@ description: Learn about security roles and where they are used to manage permis
 ms.technology: devops-security
 ms.assetid: 
 toc: show
-ms.prod: devops
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 03/09/2020
 ---
 
 # About security roles
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 <a id="security-roles" />
-While the majority of features and functional tasks are managed by <a href="about-permissions.md" data-raw-source="[individual permissions](about-permissions.md)">individual permissions</a>, there are several artifacts and features that the system manages through role-based permissions. You can add users or groups to a role. Each role determines the set of operations that the user can perform as described in the following sections.  
+
+While the majority of features and functional tasks are managed by [individual permissions](about-permissions.md), there are several artifacts and features that the system manages through role-based permissions. You can add users or groups to a role. Each role determines the set of operations that the user can perform as described in the following sections.  
 
 Many role-based permissions can be set for all artifacts of a specific type in a project, or for the project or collection and then selectively inherited for a specific artifact. Role memberships for individual items  automatically inherit those set for the project or collection. If required, you can turn off Inheritance for a specific artifact.
 
@@ -53,21 +52,25 @@ You [add users to the following security roles](../../pipelines/policies/set-per
 
 ## Deployment group security roles
 
-You [add users to the following roles](../../pipelines/policies/set-permissions.md) from **Pipelines** or **Build and Release**.  For information on adding and managing deployment groups, see [Deployment groups](/azure/devops/pipelines/release/deployment-groups). 
+You [add users to the following roles](../../pipelines/policies/set-permissions.md) from **Pipelines** or **Build and Release**.  For information on adding and managing deployment groups, see [Deployment groups](../../pipelines/release/deployment-groups/index.md). 
 
 [!INCLUDE [temp](includes/deployment-group-roles.md)]
 
 ## Deployment pool security roles
 
-You [add users to the following roles](../../pipelines/policies/set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](/azure/devops/pipelines/release/deployment-groups).   
+You [add users to the following roles](../../pipelines/policies/set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](../../pipelines/release/deployment-groups/index.md).   
 
 [!INCLUDE [temp](includes/deployment-pool-roles.md)]
+
+<a id="library-roles" /> 
 
 ## Library asset security roles: Variable groups and secure files
 
 You [add users to a library role](../../pipelines/policies/set-permissions.md) from **Pipelines** or **Build and Release**. To learn more about using these library assets, see [Variable groups](../../pipelines/library/variable-groups.md) and [Secure files](../../pipelines/library/secure-files.md)
 
 [!INCLUDE [temp](includes/library-roles.md)]
+
+<a id="service-endpoint-roles" /> 
 
 ## Service connection security roles
 
@@ -94,6 +97,5 @@ For details, see [Manage teams and configure team tools](../settings/manage-team
 
 - [About permissions and groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
-- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md). 
- 
+- [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
  

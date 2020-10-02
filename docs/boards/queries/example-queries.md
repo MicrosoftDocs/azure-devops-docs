@@ -3,11 +3,9 @@ title: List work items with managed queries
 titleSuffix: Azure Boards 
 description: Track work by creating queries to list work items in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -17,7 +15,7 @@ ms.date: 09/26/2019
 
 # About managed queries  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 List bugs, user stories, or other work items based on field criteria you specify using queries. You can then review these lists with your team, triage work, or perform bulk work item updates. 
 
@@ -60,7 +58,7 @@ For a quick reference to query editor tasks and sample queries, see [Query quick
 - You can open any query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md), where you can update the fields of one or more work items and publish your changes to the database for tracking work items.  
 - You can [visualize status or progress](../../report/dashboards/charts.md) by creating a pie-chart, column chart, or trend chart for flat-list queries. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 For additional tips when working with the new queries experience or the directory-focused queries views, see [Tips for working with the directory-focused **Queries** pages](view-run-query.md#tips-queries-hub). 
 ::: moniker-end
 
@@ -165,6 +163,7 @@ You can list work items based on the following criteria...
 ::: moniker range=">= azure-devops-2019"
 
 ### Team focus queries
+
 - [Assigned to a member of a team](query-by-workflow-changes.md#group)  
 - [Assigned to a team's area path](query-by-area-iteration-path.md#team-area-path)  
 - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  
@@ -172,7 +171,7 @@ You can list work items based on the following criteria...
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 ### Team focus queries
 

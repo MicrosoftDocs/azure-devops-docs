@@ -1,11 +1,9 @@
 ﻿---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Developing extensions for vertical web navigation
 description: Guidance for developing extensions to be used with vertical web navigation
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: 'azure-devops'
 ms.author: apawast
 author: apawast
@@ -13,6 +11,8 @@ ms.date: 10/02/2019
 ---
 
 # Guidance for extension developers impacted by vertical navigation
+
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Vertical navigation brings with it changes that impact some extensions. This includes support for extension icons along with changes to team context.
 

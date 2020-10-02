@@ -2,7 +2,6 @@
 title: Pipeline container jobs - Sprint 140 Update
 author: alexcnichols
 ms.author: alexn
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 9/20/2018
 description: In the Sprint 140 Update of Azure DevOps Services, you'll find a new way to customize build dependencies to your specific requirements with the introduction of container jobs in Azure Pipelines.
@@ -65,7 +64,7 @@ The **.NET Core** task in Azure Pipelines now supports code coverage so that you
 
 ### Leverage restructured Process REST APIs
 
-In the REST API version 5.1 (Preview) we combined several Inherited Process related APIs into a single domain. This will make it easier for you to find and consume the right endpoints. See the [Process Behaviors](/rest/api/vsts/processes/behaviors/list?view=vsts-rest-5.0) documentation for more information. We have also created a [few samples](https://github.com/Microsoft/vsts-dotnet-samples/tree/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTrackingProcess) using the C# client libraries.
+In the REST API version 5.1 (Preview) we combined several Inherited Process related APIs into a single domain. This will make it easier for you to find and consume the right endpoints. See the [Process Behaviors](/rest/api/vsts/processes/behaviors/list?view=vsts-rest-5.0) documentation for more information. We have also created a [few samples](https://github.com/microsoft/azure-devops-dotnet-samples/tree/master/ClientLibrary/Samples/WorkItemTrackingProcess) using the C# client libraries.
 
 ## Azure Artifacts
 
@@ -138,7 +137,7 @@ As you've noticed with the new navigation in Azure DevOps, we're focused on brin
 > [!div class="mx-imgBorder"]
 > ![PAT page](media/140_01.png)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

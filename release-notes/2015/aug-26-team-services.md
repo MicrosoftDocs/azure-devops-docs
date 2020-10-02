@@ -1,7 +1,6 @@
 ---
 title: Sprint planning improvements and SonarQube analysis build tasks – Aug 26
 description: VSTS release notes for August 26 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: a08691ea-e68d-4846-a306-adb0e30b28b4

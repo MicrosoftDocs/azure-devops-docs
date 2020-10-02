@@ -1,11 +1,9 @@
 ---
 title: Notification API Contracts | VSTS
 ms.assetid: 9889e558-78df-e571-6884-75fdfd014546
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 generated: true
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -412,7 +410,7 @@ Encapsulates notifications result properties. It defines the number of notificat
 
 | Field        | Type
 | :----------- | :--------
-| <code>date</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>date</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>hitCount</code> | int32
 | <code>path</code> | string
 | <code>type</code> | [NotificationStatisticType](#NotificationStatisticType)
@@ -436,7 +434,7 @@ Encapsulates notifications result properties. It defines the number of notificat
 
 | Field        | Type
 | :----------- | :--------
-| <code>date</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx)
+| <code>date</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings)
 | <code>hitCountMinimum</code> | int32
 | <code>path</code> | string
 | <code>type</code> | [NotificationStatisticType](#NotificationStatisticType)
@@ -481,7 +479,7 @@ A subscription defines criteria for matching events and how the subscription's s
 | <code>flags</code> | [SubscriptionFlags](#SubscriptionFlags) | Read-only indicators that further describe the subscription.
 | <code>id</code> | string | Subscription identifier.
 | <code>lastModifiedBy</code> | [IdentityRef](#IdentityRef) | User that last modified (or created) the subscription.
-| <code>modifiedDate</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx) | Date when the subscription was last modified. If the subscription has not been updated since it was created, this value will indicate when the subscription was created.
+| <code>modifiedDate</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings) | Date when the subscription was last modified. If the subscription has not been updated since it was created, this value will indicate when the subscription was created.
 | <code>permissions</code> | [SubscriptionPermissions](#SubscriptionPermissions) | The permissions the user have for this subscriptions.
 | <code>scope</code> | [SubscriptionScope](#SubscriptionScope) | The container in which events must be published from in order to be matched by the subscription. If empty, the scope is the current host (typically an organization or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
 | <code>status</code> | [SubscriptionStatus](#SubscriptionStatus) | Status of the subscription. Typically indicates whether the subscription is enabled or not.
@@ -558,7 +556,7 @@ Encapsulates the properties of an operator constraint. An operator constraint de
 <a id="ReferenceLinks"></a>
 
 ## ReferenceLinks
-The class to represent a collection of REST reference links.  Example: { self: { href: "<http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1>" } }
+The class to represent a collection of REST reference links.  Example: `{ self: { href: "http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1" } }`
 
 
 | Field        | Type      | Notes
@@ -599,7 +597,7 @@ Encapsulates the properties of a SubscriptionEvaluationRequest. It defines the s
 
 | Field        | Type      | Notes
 | :----------- | :-------- | :----------
-| <code>minEventsCreatedDate</code> | [date-time](https://msdn.microsoft.com/library/az4se3k1.aspx) | The min created date for the events used for matching in UTC. Use all events created since this date
+| <code>minEventsCreatedDate</code> | [date-time](/dotnet/standard/base-types/standard-date-and-time-format-strings) | The min created date for the events used for matching in UTC. Use all events created since this date
 | <code>subscriptionCreateParameters</code> | [NotificationSubscriptionCreateParameters](#NotificationSubscriptionCreateParameters) | User or group that will receive notifications for events matching the subscription's filter criteria. If not specified, defaults to the calling user.
 
 

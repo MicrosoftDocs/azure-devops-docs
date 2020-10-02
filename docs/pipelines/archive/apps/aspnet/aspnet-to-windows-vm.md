@@ -1,12 +1,7 @@
 ---
 title: Build and Deploy an ASP.NET app
 description: Set up a continuous integration (CI) build for your ASP.NET app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.author: sdanie
-author: steved0x
-ms.manager: mijacobs
 ms.assetid: 6728CA49-5D44-4603-96E1-3BC3CF8D9793
 ms.date: 06/27/2017
 ms.custom: "mvc, seodec18"
@@ -29,7 +24,7 @@ You create the virtual machine using Azure Powershell, and then you set up CI/CD
 
 [!INCLUDE [temp](../includes/vsts-and-azure-setup.md)]
 
-On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0).
+On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](/powershell/azure/azurerm/install-azurerm-ps).
 
 [!INCLUDE [temp](../includes/create-azure-windows-vm.md)]
 
@@ -79,7 +74,7 @@ Select the **IIS Web App Deploy** task to configure your IIS instance settings a
 
 Navigate to the **Code** hub in the Azure Repos portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
 
-![Screenshot showing update to code](./media/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-update-code.png)
+![Screenshot showing edit action to update code](./media/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-update-code.png)
 
 Add the following line of text as indicated in the image above:
 ```html

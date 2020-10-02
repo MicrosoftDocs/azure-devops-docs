@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Repositories | REST API Reference for Team Foundation Server
 description: Work with Git repositories programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: BCB55CB9-4E2B-4D8B-ABC8-A503254F2FE9
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -20,7 +18,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
-There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/Git/RepositoriesSample.cs) available for this endpoint.
+There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Git/RepositoriesSample.cs) available for this endpoint.
 
 
 ## Get a list of repositories

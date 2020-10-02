@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-agile
-ms.prod: devops
 ms.topic: include
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/09/2020
@@ -43,7 +43,7 @@ ms.date: 01/09/2020
 <ul>
 <li><a href="/azure/devops/boards/sprints/assign-work-sprint">Sprint backlogs</a></li>
 <li><a href="/azure/devops/boards/sprints/set-capacity">Sprint capacity</a></li>
-<li><a href="/azure/devops/boards/sprints/task-board">Task board</a></li>
+<li><a href="/azure/devops/boards/sprints/task-board">Taskboard</a></li>
 <li><a href="/azure/devops/boards/sprints/sprint-burndown">Sprint burndown</a></li>
 </ul>
 </td>
@@ -149,7 +149,7 @@ Not applicable
 <ul>
 <li><a href="/azure/devops/boards/sprints/assign-work-sprint" >Sprint backlogs</a></li>
 <li><a href="/azure/devops/boards/sprints/set-capacity" >Sprint capacity</a></li>
-<li><a href="/azure/devops/boards/sprints/task-board" >Task board</a></li>
+<li><a href="/azure/devops/boards/sprints/task-board" >Taskboard</a></li>
 <li><a href="/azure/devops/boards/sprints/sprint-burndown" >Sprint burndown</a></li>
 </ul>
 </td>
@@ -257,7 +257,7 @@ Not applicable
 <ul>
 <li><a href="/azure/devops/boards/sprints/assign-work-sprint" data-raw-source="[Sprint backlogs](/azure/devops/boards/sprints/assign-work-sprint.md)">Sprint backlogs</a></li>
 <li><a href="/azure/devops/boards/sprints/set-capacity" data-raw-source="[Sprint capacity](/azure/devops/boards/sprints/set-capacity.md)">Sprint capacity</a></li>
-<li><a href="/azure/devops/boards/sprints/task-board" data-raw-source="[Task board](/azure/devops/boards/sprints/task-board.md)">Task board</a></li>
+<li><a href="/azure/devops/boards/sprints/task-board" data-raw-source="[Taskboard](/azure/devops/boards/sprints/task-board.md)">Taskboard</a></li>
 <li><a href="/azure/devops/boards/sprints/sprint-burndown" data-raw-source="[Sprint burndown](/azure/devops/boards/sprints/sprint-burndown.md)">Sprint burndown</a></li>
 </ul>
 </td>

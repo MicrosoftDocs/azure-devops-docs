@@ -3,8 +3,6 @@ title: Why am I not receiving notification emails?
 titleSuffix: Azure DevOps
 description: Discover why you aren't receiving emails from your Azure DevOps or TFS notification subscriptions and fix it.
 ms.technology: devops-collab
-ms.prod: devops
-ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
@@ -19,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 An email is sent when an [event](oob-supported-event-types.md) occurs that matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
 
-In this article, learn why you may not be receiving an expected subscription or notification email.
+Learn why you may not be receiving an expected subscription or notification email.
 
 If you're not receiving an expected notification email, it could be for one of the following reasons.
 

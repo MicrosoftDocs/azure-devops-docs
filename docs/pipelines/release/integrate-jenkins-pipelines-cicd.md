@@ -1,13 +1,10 @@
 ---
 title: Deploy Jenkins CI builds
 description: Set up continuous integration (CI) and continuous deployment (CD) for your apps using Jenkins and Azure Pipelines
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 ms.author: ronai
 author: mlearned
 ms.reviewer: vijayma
-ms.manager: mijacobs
 ms.assetid: CE485C57-C26A-4B9D-9D75-2FDDFB3361D6
 ms.custom: "mvc, seodec18"
 ms.date: 01/15/2019
@@ -46,7 +43,7 @@ Azure using Azure Pipelines.
 * You'll need the source code for your app hosted in a repository such as GitHub, Azure Repos, GitHub Enterprise Server,
   Bitbucket Cloud, or any another source control provider that Jenkins can interact with.
 * You'll need a Jenkins server where you run your CI builds. You can quickly
-  [set up a Jenkins server on Azure](https://docs.microsoft.com/azure/jenkins/install-jenkins-solution-template). 
+  [set up a Jenkins server on Azure](/azure/developer/jenkins/configure-on-linux-vm). 
 * You'll need a Jenkins project that builds you app. For example, 
   you can [build a Java app with Maven](https://jenkins.io/doc/tutorials/build-a-java-app-with-maven/) on Jenkins.
 
@@ -60,7 +57,7 @@ In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
 For more information, see [Jenkins service connection](../library/service-endpoints.md#sep-jenkins).
 If you are not familiar with the general concepts in this section, see
-[Accessing your project settings](https://docs.microsoft.com/azure/devops/project/navigation/go-to-service-page?view=azure-devops#open-project-settings)
+[Accessing your project settings](https://docs.microsoft.com/azure/devops/project/navigation/go-to-service-page#open-project-settings)
 and [Creating and using a service connection](../library/service-endpoints.md).
 
 
@@ -69,7 +66,7 @@ and [Creating and using a service connection](../library/service-endpoints.md).
 Create a new release pipeline and add a Jenkins artifact to it.
 After you select the Jenkins service connection, you can select an existing Jenkins job to deploy. 
 
-It's possible to [store the output from a Jenkins build in Azure blob storage](https://docs.microsoft.com/azure/storage/common/storage-java-jenkins-continuous-integration-solution?toc=%2Fen-us%2Fazure%2Fjenkins%2Ftoc.json&bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json).
+It's possible to [store the output from a Jenkins build in Azure blob storage](/azure/developer/jenkins/azure-storage-blobs-as-build-artifact-repository).
 If you have configured this in your Jenkins project, choose **Download artifacts from Azure storage**
 and select the default version and source alias.
 
@@ -96,15 +93,15 @@ jobs:
   pool:
     name: Default
   steps:
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        connectionType: 'AzureRM'
-        azureSubscription: your-subscription-name
-        appType: webAppLinux
-        webAppName: 'MyApp'
-        deployToSlotOrASE: false
-        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-        takeAppOfflineFlag: true
+  - task: AzureRmWebAppDeployment@4
+    inputs:
+      connectionType: 'AzureRM'
+      azureSubscription: your-subscription-name
+      appType: webAppLinux
+      webAppName: 'MyApp'
+      deployToSlotOrASE: false
+      packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+      takeAppOfflineFlag: true
 ...
 ```
 

@@ -4,7 +4,6 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 description: Visual Studio Team Services (VSTS) release notes for Sprint 123 Update on September 15, 2017 with multi-phase builds and new Queries experience.
@@ -323,7 +322,7 @@ See the [documentation](https://aka.ms/vsmarketplace_parser) for more informatio
 > [!div class="mx-imgBorder"]
 > ![markdown-it parser](media/09_15_18.png)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize through the new feedback menu.
 

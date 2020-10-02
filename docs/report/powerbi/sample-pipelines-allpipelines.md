@@ -1,16 +1,14 @@
 ---
-title: Pipeline outcome summary sample Power BI report 
+title: Pipeline outcome summary for all pipelines sample report 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a pipeline outcome summary Power BI report for all pipelines in the project  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'  
+monikerRange: '>= azure-devops-2020'     
 ms.date: 01/30/2020
 ---
 
@@ -30,7 +28,7 @@ An example is shown in the following image.
 As shown in the above image, you can select any pipeline from the "Pipeline Name" drop down at top right and the report will show the outcome summary for the selected pipeline only
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/allpipelines-report2.png)
+> ![Report shows the outcome summary for the selected pipeline only.](media/odatapowerbi-pipelines/allpipelines-report2.png)
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
@@ -46,6 +44,7 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
                &"$apply=filter( "
 	       &"CompletedDate ge {startdate} "
+	       &")"
                 &"/groupby( "
         &"(Pipeline/PipelineName), "
         &"aggregate( "
@@ -68,6 +67,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?%20
 $apply=filter(
 	CompletedDate ge {startdate}
+	)
 /groupby(
 (Pipeline/PipelineName), 
 aggregate(
@@ -219,7 +219,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/allpipelines-report1.png)
+> ![Finished sample - Pipelines Outcome Summary - Report.](media/odatapowerbi-pipelines/allpipelines-report1.png)
 
 
 ## Full list of Pipelines sample reports 

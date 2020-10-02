@@ -3,12 +3,7 @@ title: Run the agent behind a web proxy
 ms.custom: seodec18
 description: Learn how you can run a v2 private build and release agent behind a web proxy for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 6AC4BA22-9F6F-44B5-BB15-445A7CFD2AD4
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.date: 03/15/2019
 monikerRange: '>= tfs-2015'
 ---

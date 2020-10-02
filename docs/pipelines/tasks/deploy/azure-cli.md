@@ -2,10 +2,7 @@
 title: Azure CLI task
 description: Azure Pipelines and Team Foundation Server build task to run a shell or batch script containing Microsoft Azure CLI commands
 ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: UshaN
 author: UshaN
@@ -17,7 +14,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to run a shell or batch 
+Use this task to run a shell or batch 
 script containing Azure CLI commands against an Azure subscription.
 
 This task is used to run Azure CLI commands on 
@@ -78,11 +75,11 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>addSpnToEnvironment</code><br/>Access service principal details in script</td>
-    <td>(Optional) Adds service principal id and key of the Azure endpoint you chose to the script's execution environment. You can use these variables: <b>$servicePrincipalId, $servicePrincipalKey and $tenantId</b> in your script. This is honored only when the Azure endpoint has Service Principal authentication scheme<br/>Default value: false</td>
+    <td>(Optional) Adds service principal id and key of the Azure endpoint you chose to the script's execution environment. You can use these variables: <b>$env:servicePrincipalId, $env:servicePrincipalKey and $env:tenantId</b> in your script. This is honored only when the Azure endpoint has Service Principal authentication scheme<br/>Default value: false</td>
 </tr>
 <tr>
     <td><code>useGlobalConfig</code><br/>Use global Azure CLI configuration</td>
-    <td>(Optional) If this is false, this task will use its own separate <a href= "https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-file">Azure CLI configuration directory</a>. This can be used to run Azure CLI tasks in <b>parallel</b> releases" <br/>Default value: false</td>
+    <td>(Optional) If this is false, this task will use its own separate <a href= "https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&preserve-view=true#cli-configuration-file">Azure CLI configuration directory</a>. This can be used to run Azure CLI tasks in <b>parallel</b> releases" <br/>Default value: false</td>
 </tr>
 <tr>
     <td><code>workingDirectory</code><br/>Working Directory</td>
@@ -112,8 +109,8 @@ Following is an example of a YAML snippet which lists the version of Azure CLI a
     scriptType: ps
     scriptLocation: inlineScript
     inlineScript: |
-        az --version
-        az account show
+      az --version
+      az account show
 ```
 
 ::: moniker-end
@@ -128,7 +125,7 @@ Following is an example of a YAML snippet which lists the version of Azure CLI a
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]

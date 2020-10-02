@@ -1,12 +1,10 @@
 ---
 title: Git permissions prior to TFS 2017 Update 1
 description: Git repository project permissions in usage for TFS 2017 update 1 and earlier versions 
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: EF010374-22A9-4179-B49F-9B601ACBB5A0
 toc: hide
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/01/2016

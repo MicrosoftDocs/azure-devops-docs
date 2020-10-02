@@ -2,10 +2,8 @@
 title: IIS Basic Authentication invalidates using PATs
 description: Enabling IIS Basic Authentication invalidates using Personal Access Tokens
 ms.assetid: 173198c4-9b65-4c4a-a8f1-931b6b6c295a
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
@@ -14,7 +12,7 @@ ms.date: 04/22/2019
 
 # Enabling IIS Basic Authentication invalidates using Personal Access Tokens
 
-[!INCLUDE [version-header-tfs-only](../../../includes/version-header-tfs-only.md)]
+[!INCLUDE [version-all](../../../includes/version-all.md)]
 
 We recommend you keep [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) turned 
 off at all times when using Azure DevOps Server.  Only if necessary should you enable IIS Basic Authentication. When IIS 

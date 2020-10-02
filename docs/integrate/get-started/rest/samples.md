@@ -2,10 +2,9 @@
 title: REST API samples for Azure DevOps and TFS
 description: REST API samples for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
+ms.custom: has-adal-ref
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
@@ -13,6 +12,8 @@ ms.date: 08/25/2016
 ---
 
 # Get started sample
+
+[!INCLUDE [version-all](../../../includes/version-all.md)]
 
 ## Personal Access Tokens
 
@@ -104,8 +105,7 @@ A: See the [https://github.com/Microsoft/vsts-restapi-samplecode](https://github
 
 #### Q: Where can I find more information on the .NET library?
 
-A: Yes, see the [overview of client libraries](../client-libraries/dotnet.md)
+A: Yes, see the [overview of client libraries](../../concepts/dotnet-client-libraries.md)
 
 
-<!-- ENDSECTION --> 
-
+<!-- ENDSECTION -->

@@ -3,11 +3,7 @@ title: Help Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Help Command (Team Foundation Version Control)
 ms.assetid: 8cd73edc-8d60-42be-a840-616e6207a1d8
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Help Command (Team Foundation Version Control)
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Displays help on the command line that contains information about syntax for a Team Foundation version control command.
 

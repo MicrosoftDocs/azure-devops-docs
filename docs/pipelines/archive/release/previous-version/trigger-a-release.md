@@ -3,10 +3,7 @@ title: Trigger a release in Release Management
 ms.custom: seodec18
 description: Trigger a release from a build in Release Management server/client for Visual Studio 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: A6079FE1-80FC-4C98-8F4A-832AB99CC5D3
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -92,7 +89,7 @@ Also, if you haven't yet set up your build system,
    **Deployment Step** to **Automated** for this stage, the release will not 
    be started. You must mark these steps as automated in the release path.
 
-## Q & A
+## FAQ
 
 <a name="blogposts"></a>
 ### Q: Where can I find out about other release scenarios?

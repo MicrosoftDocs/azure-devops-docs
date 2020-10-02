@@ -2,17 +2,15 @@
 title: FAQs and problem solutions for Search   
 description: Learn the answers to frequently asked questions (FAQs) and troubleshooting info about Search in Azure DevOps Server and TFS.
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sunar
 author: chcomley
-ms.date: 11/18/2019
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2017 < azure-devops'
 ---
 
-# Troubleshoot Search
+# Troubleshoot search
 
 [!INCLUDE [version-header-tfs-only](../../includes/version-header-tfs-only.md)]
 

@@ -4,19 +4,17 @@ titleSuffix: Azure Boards
 description: Map your Kanban board, support your team's work flow in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 08/15/2019
+ms.date: 07/09/2020
 ---
 
 # Add columns to your Kanban board
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 Kanban's number one practice is to visualize the flow of work. Accordingly, your number one task is to visualize your team's workflow. You do this by identifying the types of work and handoffs that occur regularly as your team moves items off the backlog and into a shippable state.
 
@@ -28,7 +26,7 @@ For example, the main workflow stages performed by our example dev team are capt
 
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to access your board and implement Kanban.
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!NOTE]    
 > If you're looking at how to add columns to a sprint Taskboard, see [Customize a Taskboard](../sprints/customize-taskboard.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
@@ -113,7 +111,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -137,7 +135,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 4. To change the column order, simply drag the column tab to the position you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, open **Settings**, choose **Columns**, and choose the ![](../../media/icons/actions-icon.png) actions icon from the column tab and select **Remove** from the menu.  
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, open **Settings**, choose **Columns**, and choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon from the column tab and select **Remove** from the menu.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Settings dialog, Columns tab, open Column tab menu, remove column](media/columns/remove-column.png)    
@@ -176,7 +174,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 4. To change the column order, simply drag the column tab to the position you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab ![](../../media/icons/actions-icon.png) actions icon and select **Remove** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Remove** from the menu. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, delete a column](media/columns/remove-column.png)  
@@ -215,7 +213,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 4. To change the column order, simply drag the column tab to the position you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab ![](../../media/icons/actions-icon.png) actions icon and select **Delete** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Delete** from the menu. 
 
 	![Kanban board, delete a column](media/kanban-delete-column.png)  
 
@@ -225,7 +223,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-1. the ![ ](../media/icons/team-settings-gear-icon.png) gear icon, to open the common configuration settings dialog for the Kanban board. 
+1. the :::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false"::: gear icon, to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](../../boards/boards/media/kanban-card-customize-open-settings.png)  
 
@@ -233,7 +231,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 2. Choose **Columns** and then a column tab to see all the settings you can modify. Your initial column settings will look something like this. 
 
-	![Kanban board, Customize columns, default columns, Agile process](media/add-columns-active-agile-update-1.png)
+	![Kanban board, Customize columns, default columns, Agile process for TFS 2015.1](media/add-columns-active-agile-update-1.png)
 
 3. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
@@ -249,7 +247,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 4. To change the column order, simply drag the column tab to the position you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab ![](../../media/icons/actions-icon.png) actions icon and select **Delete** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Delete** from the menu. 
 
 	![Kanban board, delete a column](media/kanban-delete-column.png)  
 
@@ -271,7 +269,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible. 
 
-9. To change the column order, use the left ![left arrow](media/ALM_AC_LeftIcon.png) or right ![right arrow](media/ALM_AC_RightIcon.png) arrow icons. 
+9. To change the column order, use the left ← or right → arrow icons. 
 
 1. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, click X at the top of the column.</p>
 
@@ -285,7 +283,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-1. Choose the ![ ](../media/icons/team-settings-gear-icon.png) gear icon, to open Customize Columns.  
+1. Choose the :::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false"::: gear icon, to open Customize Columns.  
 
 	![Kanban board, open common configuration settings](media/columns/open-settings-2013.png)  
 
@@ -301,7 +299,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible.</p>
 
-3. To change the column order, use the left ![left arrow](media/ALM_AC_LeftIcon.png) or right ![right arrow](media/ALM_AC_RightIcon.png) arrow icons. 
+3. To change the column order, use the left ← or right → arrow icons. 
 
 4. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose **X** at the top of the column.</p>
 

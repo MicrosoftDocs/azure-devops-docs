@@ -1,14 +1,10 @@
 ---
 title: Version Control - How to Simply Git Log History
 description: How git log history simplification works, and why it can lead to confusion.
-ms.prod: devops
 ms.topic: article
 ms.technology: devops-code-git
 ms.assetid: 663ea04b-ee1e-41f9-8c5b-dfc269b093c2
-ms.manager: mijacobs
 ms.date: 06/01/2016
-ms.author: mlearned
-author: mlearned
 monikerRange: '>= tfs-2015'
 ---
 
@@ -89,14 +85,12 @@ Now let's look at the log for our `test.txt` file:
     &gt; git log test.txt
     
     commit 6b33d99b996c430a60c9552b79245d1aa8320339
-    Author: hross &lt;robrodbe@microsoft.com&gt;
-    Date:   Mon Feb 15 10:45:33 2016 -0500
+        Date:   Mon Feb 15 10:45:33 2016 -0500
 
         We have added an animal
 
     commit 206613ccd9a54b055b184c7b6c16f2ece8067e51
-    Author: hross &lt;robrodbe@microsoft.com&gt;
-    Date:   Mon Feb 15 10:44:18 2016 -0500
+        Date:   Mon Feb 15 10:44:18 2016 -0500
 
         Initial commit
 </pre>
@@ -122,14 +116,12 @@ Now let's take a look at the history for our `test.txt` file:
     &gt; git log test.txt
     
     commit fdd4dfd816c4efebc5bdb240f49e934e299db581
-    Author: hross &lt;robrodbe@microsoft.com&gt;
-    Date:   Mon Feb 15 10:51:06 2016 -0500
+        Date:   Mon Feb 15 10:51:06 2016 -0500
 
         We have added a fruit
 
     commit 206613ccd9a54b055b184c7b6c16f2ece8067e51
-    Author: hross &lt;robrodbe@microsoft.com&gt;
-    Date:   Mon Feb 15 10:44:18 2016 -0500
+        Date:   Mon Feb 15 10:44:18 2016 -0500
 
         Initial commit
 </pre>
@@ -143,26 +135,22 @@ As you can see, although it simplified the log without the `full-history` flag, 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
     commit 5d0bb77a24e265dc154654fb3b5be331b53bf977
     Merge: 6b33d99 fdd4dfd
-    Author: hross &lt;robrodbe@microsoft.com&gt;
-    Date:   Mon Feb 15 10:59:34 2016 -0500
+        Date:   Mon Feb 15 10:59:34 2016 -0500
 
         Fixed merge conflict
 
     commit fdd4dfd816c4efebc5bdb240f49e934e299db581
-    Author: hross &lt;robrodbe@microsoft.com&gt;
-    Date:   Mon Feb 15 10:51:06 2016 -0500
+        Date:   Mon Feb 15 10:51:06 2016 -0500
 
         We have added a fruit
 
     commit 6b33d99b996c430a60c9552b79245d1aa8320339
-    Author: hross &lt;robrodbe@microsoft.com&gt;
-    Date:   Mon Feb 15 10:45:33 2016 -0500
+        Date:   Mon Feb 15 10:45:33 2016 -0500
 
         We have added an animal
 
     commit 206613ccd9a54b055b184c7b6c16f2ece8067e51
-    Author: hross &lt;robrodbe@microsoft.com&gt;
-    Date:   Mon Feb 15 10:44:18 2016 -0500
+        Date:   Mon Feb 15 10:44:18 2016 -0500
 
         Initial commit
 </pre>

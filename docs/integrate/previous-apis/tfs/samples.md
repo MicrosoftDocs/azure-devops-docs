@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Work Item Tracking Samples | REST API Reference for Team Foundation Server
-description: Samples for work item tracking using the REST APIs and .NET Libraries for Team Foundation Server. 
+title: Projects and Teams Samples | REST API Reference for Team Foundation Server
+description: Samples for project and team tracking using the REST APIs and .NET Libraries for Team Foundation Server. 
 ms.assetid: 94639057-d0b4-472e-952d-182efcc165fa
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -528,10 +526,7 @@ A: See the [https://github.com/Microsoft/vsts-restapi-samplecode](https://github
 
 #### Q: Where can I find more information on the .NET libraries?
 
-A: Yes, see the [overview of client libraries](../../get-started/client-libraries/dotnet.md)
+A: Yes, see the [overview of client libraries](../../concepts/dotnet-client-libraries.md)
 
 
-<!-- ENDSECTION --> 
-
-
-
+<!-- ENDSECTION -->

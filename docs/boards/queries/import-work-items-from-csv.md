@@ -3,24 +3,34 @@ title: Import or update work items from a CSV file
 titleSuffix: Azure Boards
 description: Bulk import or update work items from a CSV formatted file 
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: ">= azure-devops-2019"
-ms.date: 12/02/2019
+ms.date: 07/09/2020
 ---
 
 # Bulk import or update work items using CSV files
 
 [!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
-Learn how to import new work items or update existing items from a CSV file. Import is now directly native to the Azure Boards product. While you can continue to use Excel for bulk import and updates, the Excel is no longer required. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+::: moniker range="> azure-devops-2019"
+
+You can perform bulk import and export of work items using a CSV formatted file. While you can continue to use Excel for bulk import and updates, you can use the native import/export feature that doesn't require Excel. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+
+::: moniker-end 
+
+::: moniker range="azure-devops-2019"
+
+You can perform bulk export of work items using a CSV formatted file. While you can continue to use Excel for bulk import and updates, you can use the native export feature from Queries that doesn't require Excel. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+
+::: moniker-end 
 
 > [!NOTE]   
-> This feature is available with Azure DevOps Services, [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609), and later versions. 
+> The export feature is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions. The import feature is available with Azure DevOps Server 2020 and Azure DevOps Services. 
+
+::: moniker range=">= azure-devops-2020"
 
 ## Import new work items
 
@@ -58,7 +68,10 @@ All work items you import are created in a new state. This rule means that you c
 6. The system highlights those work items with data issues. You need to resolve the data issues before you can save the work items. In this example, an invalid value has been entered into the Priority field. Fix the data by opening the work item directly. Alternatively, use [bulk edit](../backlogs/bulk-modify-work-items.md) to fix several work items with the same issue.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Import Work Items Save Image](media/import-csv/import-error-1.png)
+	> ![Fix work items with data issues.](media/import-csv/import-error-1.png)
+
+> [!NOTE]   
+> You can add parent-child links between work items you import by indenting the title columns as shown in the example later in this article, [Can I import a CSV file that have parent-child links?](#tree-items). However, you can't specify any other link types when importing or updating work items.  
 
 ## Update existing work items
 
@@ -98,12 +111,39 @@ All work items you import are created in a new state. This rule means that you c
 4. The results list with work items that contain value changes appear highlighted in bold. Choose **Save Items** to apply the changes.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Import Work Items Save Image](media/import-csv/import-update-2.png)
+	> ![Import Work Items Save Items.](media/import-csv/import-update-2.png)
 
 5. Work items with data issues are highlighted in red and need to be resolved before you can save them. In this example, an invalid value appears in the Assigned To field. Fix the data by opening the work item directly. Alternatively, you can use bulk edit if you have many work items with the same issue.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Import Work Items Save Image](media/import-csv/import-update-error-1.png)
+	> ![Invalid value appears in the Assigned To field.](media/import-csv/import-update-error-1.png)
+
+::: moniker-end 
+
+
+::: moniker range=">= azure-devops-2019"
+
+## Export list as CSV 
+
+From any query, you can export a list of work items as a comma-delimited list. Simply [open the query](view-run-query.md), choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose **Export to CSV**.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]   
+> Requires Azure DevOps Server 2019 Update 1 or later version. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Export a query as CSV](../work-items/media/email/export.png)   
+
+::: moniker-end 
+
+::: moniker range=">= azure-devops-2020"
 
 ## Q & A
 
@@ -122,23 +162,25 @@ ID,Work Item Type,Title,Assigned To,State,Priority,Tags
 ,"Epic","Track Telementry for data imports",,"To Do","2",
 ```
 
-### Can I import a CSV file that has a child parent relationship?
+<a id="tree-items" /> 
 
-Yes, child work items can be created by having indented title columns. The following example creates three child Issues under an Epic.
+### Can I import a CSV file that have parent-child links?
+
+Yes, you can add child work items by indenting title columns. The following example add three child Issues under the already defined Epic.
 
 > [!div class="tabbedCodeSnippets"]
 ```CSV
 ID,Work Item Type,Title 1,Title 2,Assigned To,State,Priority,Tags
-"16509","Epic","Track Telementry for data imports",,,"To Do","2",
-"16504","Issue",,"Fix issues with code",,"To Do","1",
-"16506","Issue",,"Open private preview for select customers",,"To Do","2",
-"16507","Issue",,"Enable feature for customer champs",,"To Do","2",
+"165","Epic","Track Telementry for data imports",,,"To Do","2",
+,"Issue",,"Fix issues with code",,"To Do","1",
+,"Issue",,"Open private preview for select customers",,"To Do","2",
+,"Issue",,"Enable feature for customer champs",,"To Do","2",
 ```
 
 Here is a better visual in Excel
 
 > [!div class="mx-imgBorder"]  
-> ![Excel view image](media/import-csv/import-csv-directlinks-1.png)
+> ![Excel view image](media/import-csv/import-add-child-items.png)
 
 ### How do I know if my imported file has errors?
 
@@ -148,6 +190,11 @@ Any problems with the formatting of your CSV file appear in the Results page of 
 > ![CSV Error image](media/import-csv/import-csv-error-1.png)
 
 The work items results always lists the data errors found for individual work items. Fix each error either from the web portal, or in the CSV file and import again.
+
+
+::: moniker-end 
+
+
 
 ## Related articles
 

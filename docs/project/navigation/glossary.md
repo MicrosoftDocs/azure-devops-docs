@@ -3,10 +3,8 @@ title: Key concepts, objects, and terms
 titleSuffix: Azure DevOps
 description: Understand the key concepts that support navigation and managing projects available with Azure DevOps
 ms.custom: Navigation
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -51,7 +49,7 @@ An interactive, electronic sign board that supports visualization of the flow of
 
 ## Git repository
 
-A Git repository supports a distributed version control system for tracking changes, reviewing contributions to the code, and more. Each developer has a copy of the source repository on their dev machine. You can add multiple Git repositories to a project. Learn more: [Git Repositories](../../repos/git/index.md).  
+A Git repository supports a distributed version control system for tracking changes, reviewing contributions to the code, and more. Each developer has a copy of the source repository on their dev machine. You can add multiple Git repositories to a project. Learn more: [Git Repositories](../../repos/git/index.yml).  
 
 > [!NOTE]   
 > Git in Visual Studio and Azure DevOps Services is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with Azure DevOps Services.

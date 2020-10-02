@@ -2,10 +2,7 @@
 title: Service Fabric Application Deployment task 
 description: Service Fabric Application Deployment task
 ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -17,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to deploy a Service Fabric application to a cluster.
+Use this task to deploy a Service Fabric application to a cluster.
 This task deploys an Azure Service Fabric application to a cluster 
 according to the settings defined in the publish profile.
 

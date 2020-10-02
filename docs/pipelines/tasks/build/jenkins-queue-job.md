@@ -3,10 +3,7 @@ title: Jenkins Queue Job build and release task
 ms.custom: seodec18
 description: Queue a job on a Jenkins server build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: B0C3028E-B5DF-436D-B888-A4A8FA2627A0
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/17/2019
@@ -17,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to queue a job on a Jenkins server.
+Use this task to queue a job on a Jenkins server.
 
 ::: moniker range="<= tfs-2018"
 
@@ -127,7 +124,7 @@ Results will be downloaded to the **$(Build.StagingDirectory)/jenkinsResults/Job
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../includes/build-step-common-qa.md)]

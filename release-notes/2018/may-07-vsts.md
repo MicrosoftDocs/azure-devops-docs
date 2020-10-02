@@ -2,7 +2,6 @@
 title: Deploy to Azure Kubernetes Service (AKS) using DevOps Projects – VSTS Sprint 134 Update
 author: alexcnichols
 ms.author: alexn
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 5/7/2018
 description: The Sprint 134 Update of Visual Studio Team Services (VSTS) brings better support for Ruby, Python, and Java languages in Build and even more deployment options to Release.
@@ -118,7 +117,7 @@ You can also target [Azure Service Fabric](https://azure.microsoft.com/services/
 
 ### Release hybrid applications to Azure Stack
 
-Support for **Azure Stack** is out of private preview and now generally available! [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) is an integrated system of software and validated hardware that extends Azure services and capabilities on-premises. You can now have an even more consistent DevOps process that encompasses all elements build, deploy, and test whether you’re running cloud, on-premises, or hybrid applications. No code changes are required&#8212;simply [connect to Azure Stack](/azure/devops/pipelines/library/service-endpoints?view=azure-devops#sep-azure-rm) using the same tools and features as you do for any other deployment target. You’ll now see the **AzureStack** option in the **Environment** field on the **Add Azure Resource Manager Service Endpoint** dialog when adding a new **Service** from project admin settings or a build or release definition. See the [Deploy apps to Azure Stack](/azure/devops/pipelines/targets/azure-stack?view=azure-devops) documentation for more information.
+Support for **Azure Stack** is out of private preview and now generally available! [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) is an integrated system of software and validated hardware that extends Azure services and capabilities on-premises. You can now have an even more consistent DevOps process that encompasses all elements build, deploy, and test whether you’re running cloud, on-premises, or hybrid applications. No code changes are required&#8212;simply [connect to Azure Stack](/azure/devops/pipelines/library/service-endpoints?view=azure-devops#sep-azure-classic) using the same tools and features as you do for any other deployment target. You’ll now see the **AzureStack** option in the **Environment** field on the **Add Azure Resource Manager Service Endpoint** dialog when adding a new **Service** from project admin settings or a build or release definition. See the [Deploy apps to Azure Stack](/azure/devops/pipelines/targets/azure-stack?view=azure-devops) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![Connect to Azure](media/134_08.png)

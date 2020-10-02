@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
-title: Data and Setting Storage | Extensions for Azure DevOps Services
-description: Add an action for your extension that extends Azure DevOps Services.
+title: Data and Setting Storage | Extensions for Azure DevOps
+description: Add an action for your extension that extends Azure DevOps and Team Foundation Server (TFS).
 ms.assetid: 4662d1cf-ddb6-4079-8eb4-6f553861c1b4
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -14,7 +12,9 @@ ms.date: 08/04/2016
 
 # Data storage
 
-Azure DevOps Services extensions have the ability to store user preferences and complex data structures directly on Microsoft-provided infrastructure. This ensures your user's data is secure and backed up just like other organization and project data. It also means for simple data storage needs, you (as the extension provider) are not required to setup or manage (or pay for) third-party data storage services.
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+
+Azure DevOps and TFS extensions have the ability to store user preferences and complex data structures directly on Microsoft-provided infrastructure. This ensures your user's data is secure and backed up just like other organization and project data. It also means for simple data storage needs, you (as the extension provider) are not required to setup or manage (or pay for) third-party data storage services.
 
 There are two ways to interact with the data storage service: REST APIs or a Microsoft-provided client service available as part of the VSS SDK. It is highly recommended that extension developers use the provided client service APIs, which provide a convenient wrapper over the REST APIs. 
 

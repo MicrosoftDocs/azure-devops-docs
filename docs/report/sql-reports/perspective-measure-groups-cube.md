@@ -1,12 +1,10 @@
 ---
 title: Perspectives and measure groups
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Generate reports of aggregated information about the data stored in team project collections
 ms.assetid: 9ab451df-ce11-4fc9-9aac-bedd154ba0d4
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -68,6 +66,6 @@ By using the SQL Server Analysis Services cube for Visual Studio Team Foundation
   
 ## Related notes
 -  [Resolve schema conflicts occurring in the data warehouse](../admin/resolve-schema-conflicts.md)   
--  [Create status and trend reports in Excel](../excel/create-status-and-trend-excel-reports.md)   
+-  [Create status and trend reports in Excel](../create-status-and-trend-excel-reports.md)   
 -  [Manage reports, data warehouse, and cube](../admin/manage-reports-data-warehouse-cube.md)
--  [Dashboards and reports](../overview.md)   
+-  [Dashboards and reports](../dashboards/overview.md)

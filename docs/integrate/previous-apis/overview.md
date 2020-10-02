@@ -2,11 +2,10 @@
 title: REST API documentation for Team Foundation Server 2015, 2017, 2018 (RTW and Update 1)
 description: Overview of REST APIs and their references for Team Foundation Server.
 ms.assetid: 5C49CA02-A8C1-4B8D-AE52-B955FAFC7B06
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
+ms.custom: has-adal-ref
 ms.author: chcomley
 author: chcomley
 ms.date: 08/04/2016
@@ -58,15 +57,15 @@ There are many ways to authenticate your application or service with Team Servic
 
 | Type of application | Description | example |Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
-| Interactive client-side  | GUI based client side application | Windows app enumerating bugs for a user | [Active Directory authentication library (ADAL)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
-| Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying work items for a user | [ADAL](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
+| Interactive client-side  | GUI based client side application | Windows app enumerating bugs for a user | [Active Directory authentication library (ADAL)](/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
+| Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying work items for a user | [ADAL](/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
 | Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](/samples/azure-samples/active-directory-dotnetcore-devicecodeflow-v2/invoke-protected-api-text/) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
-| Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/oauth) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
-| TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](https://docs.microsoft.com/azure/devops/integrate/concepts/dotnet-client-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
+| Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](../get-started/authentication/oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
+| TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | [TFS Extension](https://www.visualstudio.com/docs/integrate/extensions/get-started/node#files) | TFS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](https://www.visualstudio.com/docs/integrate/extensions/develop/add-dashboard-widget) |
 
 > [!NOTE]
-> You can find more information on authentication on our [authentication guidance page](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance).
+> You can find more information on authentication on our [authentication guidance page](../get-started/authentication/authentication-guidance.md).
 
 ### Assemble the request
 
@@ -323,43 +322,14 @@ items that your team uses every day.</td>
 
 ## Related Content
 
-* Check out the [Integrate documentation](https://docs.microsoft.com/azure/devops/integrate/) for REST API samples and use cases.
-    * [Authentication guidance](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance)
-    * [Samples](https://docs.microsoft.com/azure/devops/integrate/get-started/client-libraries/samples)
+* Check out the [Integrate documentation](../index.md) for REST API samples and use cases.
+    * [Authentication guidance](../get-started/authentication/authentication-guidance.md)
+    * [Samples](../get-started/client-libraries/samples.md)
 
 ## Client Libraries
 * Discover the client libraries for these REST APIs.
-    * [.Net](https://docs.microsoft.com/azure/devops/integrate/concepts/dotnet-client-libraries)
+    * [.Net](../concepts/dotnet-client-libraries.md)
     * [Node.js](https://github.com/Microsoft/vsts-node-api)
     * [Python](https://github.com/Microsoft/vsts-python-api)
     * [Swagger 2.0](https://github.com/MicrosoftDocs/vsts-rest-api-specs)
     * [Web Extensions SDK](https://github.com/Microsoft/vss-web-extension-sdk)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

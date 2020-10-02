@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Key concepts and glossary of terms for Sprints and Scrum tools in Azure Boards and Team Foundation Server (TFS)  
 ms.custom: boards-sprints
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -16,7 +14,7 @@ ms.date: 11/19/2018
 
 #  Sprints and Scrum key concepts
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 
 This article provides a short dictionary of terms and available tools used in tracking work using Sprints and Scrum methods. See also: 
@@ -70,7 +68,6 @@ As shown here, a velocity of 20 indicates that it will take five sprints to comp
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlog, Forecast results for 6 sprints](media/forecast-s125.png)
 
-[!INCLUDE [temp](../../includes/glossary-terms/issues.md)] 
 
 [!INCLUDE [temp](../../includes/glossary-terms/iterations.md)] 
 
@@ -91,6 +88,7 @@ The role of product owners is to act as the interface between customers and the 
 
 
 ## Scrum master role
+
 Scrum Masters help build and maintain healthy teams by employing Scrum processes. They guide, coach, teach, and assist Scrum teams in the proper employment of Scrum methods. Scrum Masters also act as change agents to help teams overcome impediments and to drive the team toward significant productivity increases. Learn more: [Scrum best practices, Role of the Scrum Master](best-practices-scrum.md#scrum-master-role).   
 
 [!INCLUDE [temp](../../includes/glossary-terms/sprints.md)] 

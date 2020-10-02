@@ -2,10 +2,7 @@
 title: Manage a VM in DevTest Labs
 description: Create, manage, and delete Azure virtual machines (VMs) in Azure DevTest Labs in Azure Pipelines and TFS
 ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -50,10 +47,10 @@ extension from Visual Studio Marketplace, Azure DevOps tab:
 Carry out these tasks to create the Azure Resource Manager (ARM) template that you can
 use to create an Azure Virtual Machine on demand.
 
-1. Follow the steps in [these documents](/azure/devtest-lab/devtest-lab-overview)
+1. Follow the steps in [these documents](/azure/devtest-labs/devtest-lab-overview)
    on the Azure website to create an ARM template in your subscription.
 
-1. Follow the steps in [these documents](/azure/devtest-lab/devtest-lab-overview)
+1. Follow the steps in [these documents](/azure/devtest-labs/devtest-lab-overview)
    on the Azure website to save the ARM template as a file
    on your computer. Name the file **CreateVMTemplate.json**.
 
@@ -244,7 +241,7 @@ release pipeline in Azure Pipelines.
    improvements to the extension, visit the 
    [DevTest Labs feedback forum](https://feedback.azure.com/forums/320373-azure-devtest-labs).  
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

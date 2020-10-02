@@ -3,14 +3,12 @@ title: Change the time zone in Azure DevOps
 titleSuffix: Azure DevOps Services
 ms.custom: 
 description: Learn how to change the time zone for your organization or for your user profile
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/30/2019
+ms.date: 04/27/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -18,14 +16,14 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this article, learn how to change the time zone for your organization or your user profile.
+Learn how to change the time zone for your organization or your user profile.
 
 The following time zones are available in Azure DevOps:
 
 * **Azure DevOps organization time zone** - the main time zone setting. This setting is where all your iteration dates, builds, and release schedules depend upon, and so on. Changing your organization time zone affects its dependencies.
-* **Azure DevOps user profile time zone** - only used for the user interface (UI). This setting is used for the UI to make your experience more personal and to display timestamps for when users browse Azure DevOps using the time zone configured for that specific user.
+* **Azure DevOps user profile time zone** - only used for the user interface (UI). Your user profile time zone setting is used for a more personalized experience. It also displays timestamps for when users browse Azure DevOps using the time zone that's configured for that specific user.
 
-If your Azure DevOps organization time zone is set to EST, but your user profile time zone setting is set to PST, all date and time fields are displayed in PST time zone.
+If your organization time zone is EST, and user profile is PST, all date and time fields display in PST time zone.
 
 ## Change your organization time zone
 
@@ -50,7 +48,7 @@ If your Azure DevOps organization time zone is set to EST, but your user profile
 
 #### [Preview page](#tab/preview-page) 
 
-1. From your home page, select the user settings icon ![user-settings-gear.png](../../media/icons/user-settings-gear.png), and then select **Time and Locale**.
+1. From your home page, select the user settings icon :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::, and then select **Time and Locale**.
 
    ![Select User settings icon and then Time and Locale](media/change-time-zone/user-settings-time-locale.png)
 

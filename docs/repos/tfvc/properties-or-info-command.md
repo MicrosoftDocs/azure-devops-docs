@@ -3,11 +3,7 @@ title: Properties Command
 titleSuffix: Azure Repos
 description: Properties Command
 ms.assetid: f306bc7a-db55-47d8-aa22-e2399260e838
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Properties Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Displays information about items under version control.
 
@@ -35,7 +31,7 @@ itemspec [/version:versionspec] [/workspace]
 <tr><th><p><strong>Argument </strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>The URL of the project collection that contains the items for which you want to display properties (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td></tr>
+    <td><p>The URL of the project collection that contains the items for which you want to display properties (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr>
 <tr>
 	<td><p><em>Itemspec</em></p></td>
 	<td><p>Identifies the files and folders that are specified for property retrieval.</p><p>For more information about how Visual Studio Team Foundation Server parses <em>itemspecs</em> to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>

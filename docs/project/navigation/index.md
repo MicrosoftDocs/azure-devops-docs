@@ -3,10 +3,8 @@ title: Navigating within the web portal
 titleSuffix: Azure DevOps
 description: Navigate within the user interface/web portal of Azure DevOps
 ms.custom: "Navigation, seodec18"
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -52,7 +50,7 @@ Here's what you need to know to get up and running using the web portal.
 - [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation  
 - [**Search box**](search-basics.md): use to find code, work items, or wiki content  
 - [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
-- [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources.  
+- [**Settings**](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects): use to add teams, manage security, and configure other project and organization-level resources.  
 
 ::: moniker-end
 
@@ -66,7 +64,7 @@ Here's what you need to know to get up and running using the web portal.
 - [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation   
 - [**Search box**](search-basics.md): use to find code, work items, or wiki content 
 - [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
-- [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources. 
+- [**Settings**](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects): use to add teams, manage security, and configure other project and organization-level resources. 
 
 ::: moniker-end
 
@@ -143,7 +141,7 @@ Although you can access source code, work items, and builds from both clients, s
 <li><p><a href="../../boards/backlogs/create-your-backlog.md" data-raw-source="[Product backlog](../../boards/backlogs/create-your-backlog.md)">Product backlog</a>, <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Portfolio backlogs](../../boards/boards/kanban-epics-features-stories.md)">Portfolio backlogs</a>, <a href="../../boards/sprints/assign-work-sprint.md" data-raw-source="[Sprint backlogs](../../boards/sprints/assign-work-sprint.md)">Sprint backlogs</a>, <a href="../../boards/sprints/task-board.md" data-raw-source="[Task boards](../../boards/sprints/task-board.md)">Task boards</a>, <a href="../../boards/sprints/set-capacity.md" data-raw-source="[Capacity planning](../../boards/sprints/set-capacity.md)">Capacity planning</a> </p></li>
 <li><p><a href="../../boards/boards/kanban-basics.md" data-raw-source="[Kanban board](../../boards/boards/kanban-basics.md)">Kanban board</a></p></li>
 <li><p><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards](../../report/dashboards/dashboards.md)">Dashboards</a>, <a href="../../report/dashboards/widget-catalog.md" data-raw-source="[Widgets](../../report/dashboards/widget-catalog.md)">Widgets</a>, and <a href="../../report/dashboards/charts.md" data-raw-source="[Charts](../../report/dashboards/charts.md)">Charts</a></p></li>
-<li><p><a href="../../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team rooms](../../notifications/collaborate-in-a-team-room.md)">Team rooms</a></p></li>
+<li><p><a href="/previous-versions/azure/devops/notifications/collaborate-in-a-team-room" data-raw-source="[Team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room)">Team rooms</a></p></li>
 <li><p><a href="../feedback/get-feedback.md" data-raw-source="[Request feedback](../feedback/get-feedback.md)">Request feedback</a></p></li>
 <li><p>Web-based Test Management</p></li>
 <li><p>Administration pages to administer accounts, team projects, and teams</p></li>
@@ -152,8 +150,8 @@ Although you can access source code, work items, and builds from both clients, s
 <li><p>Task specific interfaces that integrate with Git and TFVC, such as:
 </p>
 <ul>
-<li><p><b>Git: </b> <a href="../../repos/git/commits.md#stage-your-changes-and-commit" data-raw-source="[Changes](../../repos/git/commits.md#stage-your-changes-and-commit)">Changes</a> |  <a href="../../repos/git/branches.md" data-raw-source="[Branches](../../repos/git/branches.md)">Branches</a> | <a href="../../repos/git/pullrequest.md" data-raw-source="[Pull Requests](../../repos/git/pullrequest.md)">Pull Requests</a> | <a href="../../repos/git/pulling.md" data-raw-source="[Sync](../../repos/git/pulling.md)">Sync</a> | <a href="../../boards/backlogs/add-work-items.md" data-raw-source="[Work Items](../../boards/backlogs/add-work-items.md)">Work Items</a> | <a href="https://msdn.microsoft.com/library/ms181721.aspx" data-raw-source="[Builds](https://msdn.microsoft.com/library/ms181721.aspx)">Builds</a> </p></li>
-<li><p><b>TFVC: </b> <a href="../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work" data-raw-source="[My Work](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work)">My Work</a> | <a href="../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work" data-raw-source="[Pending Changes](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work)">Pending Changes</a> | <a href="../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed" data-raw-source="[Source Control Explorer](../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed)">Source Control Explorer</a>  | <a href="../../boards/backlogs/add-work-items.md" data-raw-source="[Work Items](../../boards/backlogs/add-work-items.md)">Work Items</a> | <a href="https://msdn.microsoft.com/library/ms181721.aspx" data-raw-source="[Builds](https://msdn.microsoft.com/library/ms181721.aspx)">Builds</a> </p></li>
+<li><p><b>Git: </b> <a href="../../repos/git/commits.md#stage-your-changes-and-commit" data-raw-source="[Changes](../../repos/git/commits.md#stage-your-changes-and-commit)">Changes</a> |  <a href="../../repos/git/branches.md" data-raw-source="[Branches](../../repos/git/branches.md)">Branches</a> | <a href="../../repos/git/pullrequest.md" data-raw-source="[Pull Requests](../../repos/git/pullrequest.md)">Pull Requests</a> | <a href="../../repos/git/pulling.md" data-raw-source="[Sync](../../repos/git/pulling.md)">Sync</a> | <a href="../../boards/backlogs/add-work-items.md" data-raw-source="[Work Items](../../boards/backlogs/add-work-items.md)">Work Items</a> | <a href="/previous-versions/ms181721(v=vs.140)" data-raw-source="[Builds](/previous-versions/ms181721(v=vs.140))">Builds</a> </p></li>
+<li><p><b>TFVC: </b> <a href="../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work" data-raw-source="[My Work](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work)">My Work</a> | <a href="../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work" data-raw-source="[Pending Changes](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work)">Pending Changes</a> | <a href="../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed" data-raw-source="[Source Control Explorer](../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed)">Source Control Explorer</a>  | <a href="../../boards/backlogs/add-work-items.md" data-raw-source="[Work Items](../../boards/backlogs/add-work-items.md)">Work Items</a> | <a href="/previous-versions/ms181721(v=vs.140)" data-raw-source="[Builds](/previous-versions/ms181721(v=vs.140))">Builds</a> </p></li>
 </ul>
 </li>
 <li><p>Greater integration with work items and Office-integration clients. You can open a work item or query result in an office supported client.</p></li>
@@ -164,8 +162,8 @@ Although you can access source code, work items, and builds from both clients, s
 
 ## Resources  
 
-- [Manage projects](../../organizations/projects/index.md) 
-- [Project & Organizational Settings](../../organizations/settings/index.md) 
+- [Manage projects](../../organizations/projects/about-projects.md) 
+- [Project & Organizational Settings](../../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects) 
 
 
 <!---

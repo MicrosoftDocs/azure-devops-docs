@@ -1,18 +1,16 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Reporting Work Item Revisions | REST API Reference for Team Foundation Server
 description: Report on work item revisions programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 4BE2F320-EF74-11E4-B774-1AF21D5D46B0
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
 ms.date: 08/04/2016
 ---
 
-# Work item revisions
+# Reporting work item revisions
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 

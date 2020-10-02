@@ -3,12 +3,7 @@ title: Migrate from XAML builds
 ms.custom: seodec18
 description: How to migrate from XAML builds to new builds in your Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 77D7057E-FE9B-4DF8-89CC-244E2A38CA35
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.date: 04/17/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -171,7 +166,7 @@ The new build pipeline offers you some new options. For example:
 
 #### TF Version Control
 
-![xaml source settings git tfs](media/migrate-from-xaml-builds/xaml-build-template-12-tf-version-control.png)
+![XAML source settings, TFVC.](media/migrate-from-xaml-builds/xaml-build-template-12-tf-version-control.png)
 
 | XAML process parameter | TFS 2017 and newer equivalent | Azure Pipelines equivalent |
 |-|-|-|
@@ -183,7 +178,7 @@ The new build pipeline offers you some new options. See [Build TFVC repositories
 
 #### Git
 
-![xaml source settings git tfs](media/migrate-from-xaml-builds/git-template-12-xaml-git.png)
+![XAML source settings, Git.](media/migrate-from-xaml-builds/git-template-12-xaml-git.png)
 
 | XAML process parameter | TFS 2017 and newer equivalent | Azure Pipelines equivalent |
 |-|-|-|
@@ -194,7 +189,7 @@ The new build pipeline offers you some new options. See [Pipeline options for Gi
 
 #### Build
 
-![xaml source settings git tfs](media/migrate-from-xaml-builds/xaml-build-template-12-build.png)
+![XAML source settings, Build.](media/migrate-from-xaml-builds/xaml-build-template-12-build.png)
 
 On the **Build** tab (TFS 2017 and newer) or the **Tasks** tab (Azure Pipelines), after you select the Visual Studio Build task, you'll see the arguments that are equivalent to the XAML build parameters.
 
@@ -219,13 +214,13 @@ Learn more: [Visual Studio Build task](../tasks/build/visual-studio-build.md) (f
 
 #### Test
 
-![xaml source settings git tfs](media/migrate-from-xaml-builds/xaml-build-template-12-test.png)
+![XAML source settings, Test.](media/migrate-from-xaml-builds/xaml-build-template-12-test.png)
 
 See [continuous testing](../ecosystems/dotnet-core.md#run-your-tests) and [Visual Studio Test task](../tasks/test/vstest.md).
 
 #### Publish Symbols
 
-![xaml source settings git tfs](media/migrate-from-xaml-builds/xaml-build-template-12-publish-symbols.png)
+![XAML source settings, Publish.](media/migrate-from-xaml-builds/xaml-build-template-12-publish-symbols.png)
 
 | XAML process parameter | TFS 2017 and newer, Azure Pipelines equivalent |
 |-|-|
@@ -233,7 +228,7 @@ See [continuous testing](../ecosystems/dotnet-core.md#run-your-tests) and [Visua
 
 #### Advanced
 
-![xaml source settings git tfs](media/migrate-from-xaml-builds/xaml-build-template-12-advanced.png)
+![XAML source settings, Advanced.](media/migrate-from-xaml-builds/xaml-build-template-12-advanced.png)
 
 | XAML process parameter | TFS 2017 and newer equivalent| Azure Pipelines equivalent |
 |-|-|-|
@@ -345,7 +340,7 @@ In XAML builds, if you change the template, then you also change the behavior of
 
 If you want to create a reusable and automatically updated piece of logic, then [create a task group](../library/task-groups.md). You can then later modify the task group in one place and cause all the pipelines that use it to automatically be changed.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -357,7 +352,7 @@ XAML builds are deprecated. We strongly recommend that you migrate to the new bu
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 If you're not yet ready to migrate, then to enable XAML builds you must connect a XAML build controller to your organization. See [Configure and manage your build system](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx).
 

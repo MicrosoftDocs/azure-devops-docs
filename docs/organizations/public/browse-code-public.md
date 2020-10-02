@@ -3,9 +3,7 @@ title: Browse repos, files, branches, pushes, commits, pull requests
 titleSuffix: Azure DevOps Services
 description: Review the code base and current work by browsing repos, files, branches, pushes, commits, & pull requests 
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x 
 ms.topic: quickstart
@@ -52,7 +50,7 @@ Within a Git repository, you can view any of the following items: **Files**, **C
 In the following example, we view **Commits**.
 
 > [!div class="mx-imgBorder"]
-> ![Download code ](media/browse-code/view-commits-vert.png)
+> ![View Commits.](media/browse-code/view-commits-vert.png)
 
 ## Next steps
 

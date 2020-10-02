@@ -2,11 +2,9 @@
 title: Notification FAQs
 titleSuffix: Azure DevOps
 description: General questions and answers about notifications set in Azure DevOps or Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-collab
 toc: show
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/30/2019
@@ -36,5 +34,5 @@ Previously, each recipient received an individually addressed email, which could
 ## Related articles
 
 - [About notifications](about-notifications.md)
-- [Manage personal notifications](manage-team-notifications.md)
+- [Manage personal notifications](./manage-team-group-notifications.md)
 - [Unsubscribe from a notification](unsubscribe-default-notification.md)

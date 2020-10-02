@@ -1,4 +1,3 @@
-
 ```js
 	// Get the data service
 	VSS.getService(VSS.ServiceIds.ExtensionData).then(function(dataService) {
@@ -13,4 +12,4 @@
 	});
 ```
 
-See [store and manage data](/azure/devops/extend/develop/data-storage) to learn more about storing user preferences and collections of documents.
+See [store and manage data](../../../../../extend/develop/data-storage.md) to learn more about storing user preferences and collections of documents.

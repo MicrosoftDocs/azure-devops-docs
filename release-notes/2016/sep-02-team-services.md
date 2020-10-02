@@ -1,7 +1,6 @@
 ---
 title: Custom work item types and stakeholder support for exploratory testing – Sept 2
 description: VSTS release notes for September 02 2016
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 6dacf469-d201-4cc9-8fd4-4fab64c975bc
@@ -98,7 +97,7 @@ The Azure SQL Database Deployment task has been enhanced to run SQL scripts agai
 
 ## User lifecycle management improvements
 
-We made changes to better support securing access to your Team Service. Check out this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/23/user-lifecycle-management-improvements-in-visual-studio-team-services/) for all the details.
+We made changes to better support securing access to your Team Service. Check out this [blog post](https://devblogs.microsoft.com/devops/user-lifecycle-management-improvements-in-visual-studio-team-services/) for all the details.
 
 As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 

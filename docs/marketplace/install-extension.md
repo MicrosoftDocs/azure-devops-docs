@@ -2,29 +2,27 @@
 title: Install extensions
 description: Learn how to install extensions and assign extensions for Azure DevOps
 ms.topic: quickstart
-ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/05/2019
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Quickstart: Install extensions
+# Install extensions
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
 
 Add new features and capabilities to your organization by installing extensions.
 
-In this quickstart, learn how to [install extensions](#install-extension).
+Learn how to [install extensions](#install-extension) for Azure DevOps.
 
-To learn about building your own Azure DevOps extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
+To learn about building your own Azure DevOps extensions, see [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) extensions.
 
 ## Prerequisites
 
-* Only [Project Collection Administrators or organization Owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, you can [request extensions](request-vsts-extension.md) instead.
+* Only [Project Collection Administrators or organization Owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
 * Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 
 <a id="install-extension" /> 
@@ -38,13 +36,13 @@ To learn about building your own Azure DevOps extensions, see [developing](https
 
    ![Select the shopping bag icon to browse the Marketplace](media/shopping-bag-icon-browse-marketplace.png)
 
-3.	Find the extension that you want to install.
+3. Find the extension that you want to install.
 
-4.	Select **Get** or **Get it free**.
+4. Select **Get it free**.
 
-    ![Get extension](media/get-vsts-extensions/get-extension.png)
+      ![Get extension](media/get-vsts-extensions/get-extension.png)
 
-5.  Select your organization from the dropdown menu, and then select **Install** to install the extension.
+5. Select your organization from the dropdown menu, and then select **Install** to install the extension.
 
     ![Select organization for this extension](media/get-vsts-extensions/select-install-extension.png)
 
@@ -58,13 +56,13 @@ Your extension is now installed! You can now go to your organization to use your
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="= azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can install an extension with the [az devops extension install](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-install) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 If necessary, first search for an extension with the [az devops extension search](overview.md#search-extension) command.
 
-```CLI 
+```azurecli 
 az devops extension install --extension-id
                             --publisher-id
                             [--org]
@@ -80,7 +78,7 @@ az devops extension install --extension-id
 
 The following command installs the **Timetracker** extension and shows the result in YAML format.  
 
-```CLI
+```azurecli
 az devops extension install --extension-id Timetracker --publisher-id 7pace --output yaml
 
 baseUri: null
@@ -116,7 +114,6 @@ version: 5.0.1.34507
 [!INCLUDE [temp](../includes/note-cli-not-supported.md)] 
 
 * * *
-
 
 ## Next steps
 

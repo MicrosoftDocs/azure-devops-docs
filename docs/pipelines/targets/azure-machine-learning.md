@@ -3,14 +3,13 @@ title: Azure Machine Learning training and deployment
 titleSuffix: Azure Pipelines
 description: Train machine learning models and deploy to web services from Azure Pipelines. Learn how to create a pipeline that uses the Azure Machine Learning service to train and deploy models.
 services: machine-learning
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 manager: jillfra
 ms.assetid: C426EDB7-675F-41D7-9AFF-44540D6402A6
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 09/24/2019
+ms.date: 09/24/2019 
+ms.custom: devx-track-azurecli
 monikerRange: azure-devops
 ---
 
@@ -73,7 +72,7 @@ To create a pipeline in the classic editor, use our template so that you automat
 
 1. Select **Use the classic editor** to create a pipeline without YAML.
 
-   ![classic-editor](../media/classic-editor.png)
+   ![Screenshot showing Use the classic editor.](../media/classic-editor.png)
 
 1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
@@ -87,11 +86,11 @@ To create a pipeline in the classic editor, use our template so that you automat
    |---------|---------|
    |resourceGroupName     | Name of an existing resource group|
    |workspaceName     | Name of the workspace (will be created if it does not already exist) |
-   |runConfig     | Name of the runconfig file (the text before *.runconfig if you are looking at your file system). Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/.azureml/sklearn.runconfig)|
+   |runConfig     | Name of the runconfig file (the text before *.runconfig if you are looking at your file system). Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/examples/runconfigs/sklearn.runconfig)|
    |modelAssetPath     | The cloud path where the experiment run stores the model file. This should be equivalent to the path which will be used as the working directory when loading individual models in the score.py file. This could either be the root folder of all model files or the full path of the model file itself depending on how score.py loads it|
    |modelName     | Name of model to register. This should be the same as used by the score.py when loading models|
    |serviceName     | Name of the service to be deployed (will be overwritten if already present)|
-   |inferenceConfigFile      | Path to a JSON or YAML file containing inference configuration. Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/inferenceConfig.yml)|
+   |inferenceConfigFile      | Path to a JSON or YAML file containing inference configuration. Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/models/diabetes/config/inference-config.yml)|
    |deploymentConfigFile     |  Path to a JSON or YAML file containing deployment metadata. Sample [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmsdata.visualstudio.com%2FVienna%2F_git%2FAzureMlCli%3Fpath%3D%252Fsrc%252Fazure-cli-ml%252Ftests%252Fo16n_unit_tests%252Fdata%252FAksDeployConfig.yml%26version%3DGBmaster&data=01%7C01%7Cv-srmar%40microsoft.com%7C73ff3ab12e664f0c9e8a08d6cf9d4ecc%7C72f988bf86f141af91ab2d7cd011db47%7C1&sdata=AQS2lpDU97igwSw7zRO%2FAqJLalVhvHvHxBogByRsgoE%3D&reserved=0)|
    |aksComputeName     | Name of the existing AKS|
 
@@ -105,7 +104,7 @@ You now have a pipeline that's ready to train your model!
 There are two primary ways to use automation with the Azure Machine Learning service:
 
 * The [Machine Learning CLI](/azure/machine-learning/service/reference-azure-machine-learning-cli) is an extension to the Azure CLI. It provides commands for working with the Azure Machine Learning service.
-* The [Azure Machine Learning SDK](/python/api/overview/azure/ml/intro?view=azure-ml-py) is Python package that provides programmatic access to the Azure Machine Learning service.
+* The [Azure Machine Learning SDK](/python/api/overview/azure/ml/intro?view=azure-ml-py&preserve-view=true) is Python package that provides programmatic access to the Azure Machine Learning service.
    * The Python SDK includes [automated machine learning](/azure/machine-learning/service/concept-automated-ml) to assist in automating the time consuming, iterative tasks of machine learning model development. 
 
 The example with this document uses the Machine Learning CLI.
@@ -126,9 +125,9 @@ In most cases, your data science team will provide the files and resources neede
 * __Deployment environment__ (`inferenceConfig.yml`): Defines the packages needed to run and score the model in the deployment environment.
 
 
-Some of these files are directly used when developing a model. For example, the `train.py` and `score.py` files. However the data scientist may be programmatically creating the run configuration and environment settings. If so, they can create the `.runconfig` and training environment files, by using [RunConfiguration.save()](https://docs.microsoft.com/python/api/azureml-core/azureml.core.runconfiguration?view=azure-ml-py#save-path-none--name-none--separate-environment-yaml-false-). Alternatively, default run configuration files will be created for all compute targets already in the workspace when running the following command.
+Some of these files are directly used when developing a model. For example, the `train.py` and `score.py` files. However the data scientist may be programmatically creating the run configuration and environment settings. If so, they can create the `.runconfig` and training environment files, by using [RunConfiguration.save()](https://docs.microsoft.com/python/api/azureml-core/azureml.core.runconfiguration?view=azure-ml-py&preserve-view=true#save-path-none--name-none--separate-environment-yaml-false-). Alternatively, default run configuration files will be created for all compute targets already in the workspace when running the following command.
 
-```azure-cli
+```azurecli
 az ml folder attach --experiment-name myexp -w myws -g mygroup
 ```
 
@@ -138,13 +137,13 @@ The files created by this command are stored in the `.azureml` directory.
 
 The example pipeline deploys the trained model without doing any performance checks. In a production scenario, you may want to log metrics so that you can determine the "best" model.
 
-For example, you have a model that is already deployed and has an accuracy of 90. You train a new model based on new checkins to the repo, and the accuracy is only 80, so you don't want to deply it. This is an example of a metric that you can create automation logic around, as you can do a simple comparison to evaluate the model. In other cases, you may have several metrics that are used to indicate the "best" model, and must be evaluated by a human before deployment.
+For example, you have a model that is already deployed and has an accuracy of 90. You train a new model based on new checkins to the repo, and the accuracy is only 80, so you don't want to deploy it. This is an example of a metric that you can create automation logic around, as you can do a simple comparison to evaluate the model. In other cases, you may have several metrics that are used to indicate the "best" model, and must be evaluated by a human before deployment.
 
 Depending on what "best" looks like for your scenario, you may need to create a [release pipeline](../release/index.md) where someone must inspect the metrics to determine if the model should be deployed.
 
 You should work with your data scientists to understand what metrics are important for your model.
 
-To log metrics during training, use the [Run](/python/api/azureml-core/azureml.core.run.run?view=azure-ml-py) class.
+To log metrics during training, use the [Run](/python/api/azureml-core/azureml.core.run.run?view=azure-ml-py&preserve-view=true) class.
 
 ## Azure CLI Deploy task
 
@@ -175,7 +174,7 @@ The following Azure Machine Learning service CLI commands are used in the exampl
 | az ml pipeline list | Lists Azure Machine Learning pipelines. |
 | az ml computetarget delete | Deletes a compute target. |
 
-For more information on these commands, see the [CLI extension reference](https://docs.microsoft.com/cli/azure/ext/azure-cli-ml/ml?view=azure-cli-latest).
+For more information on these commands, see the [CLI extension reference](https://docs.microsoft.com/cli/azure/ext/azure-cli-ml/ml?view=azure-cli-latest&preserve-view=true).
 
 ## Next steps
 

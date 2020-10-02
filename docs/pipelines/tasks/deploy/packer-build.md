@@ -2,10 +2,7 @@
 title: Build Machine Image task
 description: Build a machine image using Packer to use for Azure Virtual machine scale set deployment
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 845fd4f4-642d-4694-8514-047948a5a556
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/07/2018
@@ -16,7 +13,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to build a machine image using Packer. This image can be used for Azure Virtual machine scale set deployment.
+Use this task to build a machine image using Packer. This image can be used for Azure Virtual machine scale set deployment.
 
 ::: moniker range="> tfs-2018"
 

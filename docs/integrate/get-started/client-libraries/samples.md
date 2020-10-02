@@ -2,10 +2,8 @@
 title: .NET Client Library Samples for Azure DevOps Services
 description: C# samples showing how to integrate with Azure DevOps Services and Team Foundation Server from apps and services on Windows.
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
@@ -13,6 +11,8 @@ ms.date: 08/04/2016
 ---
 
 # C# client library samples 
+
+[!INCLUDE [version-all](../../../includes/version-all.md)]
 
 Samples showing how to extend and integrate with Team Foundation Server and Azure DevOps Services using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
 
@@ -47,9 +47,12 @@ using Microsoft.VisualStudio.Services.Common;
 /// </summary>
 public static void SampleREST()
 {
-    // Create a connection object, which we will use to get httpclient objects.  This is more robust
-    // then newing up httpclient objects directly.  Be sure to send in the full collection uri.
-    // For example:  http://myserver:8080/tfs/defaultcollection
+    // Connection object could be created once per application and we will use it to get httpclient objects. 
+    // Httpclients have been reused between callers and threads.
+    // Their lifetime has been managed by connection (we don't have to dispose them).
+    // This is more robust then newing up httpclient objects directly.  
+    
+    // Be sure to send in the full collection uri, i.e. http://myserver:8080/tfs/defaultcollection
     // We are using default VssCredentials which uses NTLM against a Team Foundation Server.  See additional provided
     // examples for creating credentials for other types of authentication.
     VssConnection connection = new VssConnection(new Uri(collectionUri), new VssCredentials());

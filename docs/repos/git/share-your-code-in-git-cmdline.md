@@ -3,19 +3,16 @@ title: Share your code with Git from the command line
 titleSuffix: Azure Repos
 description: Share code in Git using the command line
 ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: quickstart
-ms.date: 09/10/2018
-monikerRange: '>= tfs-2015'
+ms.date: 05/11/2020 
+ms.custom: devx-track-azurecli
+monikerRange: 'azure-devops'
 ---
 
 # Get started with Git from the command line
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
+**Azure Repos**
 
 This guide shows you how to share your code in a Git repo in Azure Repos using the command line.
 
@@ -35,7 +32,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
     If the CLI can open your default browser, it will do so and load a sign-in page. Otherwise, you need to open a
     browser page and follow the instructions on the command line to enter an authorization code after navigating to
     [https://aka.ms/devicelogin](https://aka.ms/devicelogin) in your browser. For more information, see the
-    [Azure CLI login page](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest).
+    [Azure CLI login page](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest&preserve-view=true).
   
 4. For seamless commanding, set the organization and project as defaults in configuration.
  

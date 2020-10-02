@@ -3,11 +3,7 @@ title: Copy changes to a branch with cherry-pick
 titleSuffix: Azure Repos
 description: Copy and port changes from one branch to another in Git with cherry-pick,
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: tutorial
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
@@ -16,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Copy changes with cherry-pick
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2**
 
 Copy commits from one branch to another using cherry-pick. Unlike a merge or rebase, cherry-pick only brings the changes from the commits you select, instead of all the changes in a branch.
 
@@ -49,7 +45,6 @@ Use `git log` to find the commit ID of the commit whose changes you want to copy
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
 &gt; git log app.ts
 <font color="#b5bd68">commit d34bcef232f6cf033e1252b7300465d3e561b2ee
-Author: Francis Totten &lt; frank@fabrikam.com &gt;
 Date:   Wed May 18 21:10:39 2016 +0000
 
 add complex query parsing logic</font>

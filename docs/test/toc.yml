@@ -31,8 +31,6 @@
       href: load-test/getting-started-with-performance-testing.md
     - name: Load test with Azure DevOps
       href: load-test/get-started-simple-cloud-load-test.md
-    - name: Load test with Azure portal
-      href: load-test/app-service-web-app-performance-test.md
     - name: View and compare results
       href: load-test/performance-reports.md
 - name: Tutorials
@@ -59,7 +57,7 @@
       href: how-long-to-keep-test-results.md
     - name: Associate tests with test cases
       href: associate-automated-test-with-test-case.md
-    - name: Run tests from test plans
+    - name: Run automated tests from test plans
       href: run-automated-tests-from-test-hub.md
     - name: Delete test artifacts
       href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md 
@@ -115,10 +113,12 @@
     href: /rest/api/azure/devops/testplan/test%20%20plans
 - name: Resources
   items:
+  - name: Azure Pipelines Test
+    href: ../pipelines/test/test-glossary.md
   - name: Azure DevOps Blog, Test
-    href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/
+    href: https://devblogs.microsoft.com/devops/
   - name: Plug-ins for Visual Studio
-    href: https://go.microsoft.com/fwlink/?LinkID=246630
+    href: https://devblogs.microsoft.com/devops/visual-studio-11-beta-unit-testing-plugins-list/
   - name: Create custom code & plug-ins
     href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
 

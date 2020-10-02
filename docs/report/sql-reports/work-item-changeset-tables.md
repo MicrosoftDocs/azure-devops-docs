@@ -2,11 +2,9 @@
 title: Work Item Changeset tables 
 description: Query for data about work items that are linked to changesets 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference 
 ms.assetid: 0c017c1e-b19b-40b6-9927-b88b48700976
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017

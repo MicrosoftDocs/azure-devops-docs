@@ -2,11 +2,9 @@
 title: Apply a team filter to a Power BI report
 titleSuffix: Azure DevOps 
 description: Sample report that show how to create a trend report with a team filter using an Analytics view
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
 ms.reviewer: angurusw
-ms.manager: mijacobs
 ms.author: kaelli
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
@@ -155,5 +153,5 @@ Now you can filter all visualization on a report using a slicer or any other sup
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](analytics-views-create.md)
-- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
 - [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](/power-bi/desktop-bidirectional-filtering)

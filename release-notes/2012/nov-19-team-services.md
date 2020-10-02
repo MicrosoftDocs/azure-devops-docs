@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Nov 19
 description: VSTS release notes for November 19 2012
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: df593025-ff5b-4410-88bb-b350ea9f19f1
@@ -18,11 +17,11 @@ Have you ever wanted to grab a set of work items or a query result and send them
 
 How does it work? You start from a query in the work items hub. From the toolbar, click the email icon. You can also select individual work items (or multiple items by holding down the CTRL key) and then click Email selected work items from the context menu.
 
-![Send work items in email](media/11_19_01.png)
+![Send work items in email step 1.](media/11_19_01.png)
 
 Enter the name(s) of a person in your project, format the mail to your liking, and click Send. Quick and easy.
 
-![Send work items in email](media/11_19_02.png)
+![Send work items in email step 2.](media/11_19_02.png)
 
 ## Build file counts and sizes
 

@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: WIT Attachments | REST API Reference for Team Foundation Server
 description: Work with work item attachments programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 55EF1F80-21BC-4497-9D17-1171C5F504BD
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -74,8 +72,8 @@ POST https://mytfsserver/DefaultCollection/_apis/wit/attachments?fileName=textAs
 ### Sample code
 [View sample](./work-items.md#addanattachment) for a full example on uploading an attachment to a work item.
 
-* [C# (UploadTextFile method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/AttachmentsSample.cs#L23)
-* [C# (UploadBinaryFile method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/AttachmentsSample.cs#L49)
+* [C# (UploadTextFile method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/AttachmentsSample.cs#L23)
+* [C# (UploadBinaryFile method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/AttachmentsSample.cs#L49)
 
 
 >[!div class="tabbedCodeSnippets" cs='C#' javascript='JavaScript']
@@ -207,4 +205,4 @@ Status code: 200
 
 #### Sample code
 
-* [C# (DownloadAttachment method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/AttachmentsSample.cs#L69)
+* [C# (DownloadAttachment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/AttachmentsSample.cs#L69)

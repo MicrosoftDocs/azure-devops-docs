@@ -2,21 +2,16 @@
 title: Branch policies
 titleSuffix: Azure Repos    
 description: Learn about branch policies in Azure DevOps Services & TFS  
-ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: overview
-ms.date: 09/18/2018
-layout: LandingPage
+ms.date: 06/01/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Branch policies
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 Branch policies are an important part of the Git workflow and enable you to:
 
@@ -41,194 +36,18 @@ Keep your branch strategy simple by building your strategy from these three conc
 
 A strategy that extends these concepts and avoids contradictions will result in a version control workflow for your team that is consistent and easy to follow. 
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="git-branching-guidance.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Adopt a branching strategy" src="../../media/index/i_branch-policies.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Adopt a branching strategy</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="branch-policies.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="How to configure branch policies" src="https://docs.microsoft.com/media/common/i_policy.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>How to configure branch policies</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="branch-permissions.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Branch permissions" src="https://docs.microsoft.com/media/common/i_protect.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Branch permissions</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="require-branch-folders.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Require branch folders" src="media/logos/folder.png" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Require branch folders</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="pr-status-policy.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Configure a branch policy for an external service" src="https://docs.microsoft.com/media/common/i_web.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Configure a branch policy for an external service</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+- [Adopt a branching strategy](git-branching-guidance.md)
+- [How to configure branch policies](branch-policies.md)
+- [Branch permissions](branch-permissions.md)
+- [Require branch folders](require-branch-folders.md)
+- [Configure a branch policy for an external service](pr-status-policy.md)
 
 ## Branching how to guides
 
 Learn how to perform common tasks when working with branches.
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="branches.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Branches tutorial" src="../../media/index/i_branch-policies.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Branches tutorial</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="create-branch.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="How to create a branch" src="media/logos/add.png" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>How to create a branch</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="delete-branch.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="How to delete a branch" src="media/logos/delete.png" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>How to delete a branch</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="restore-deleted-branch.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Restore a deleted branch" src="media/logos/restore.png" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Restore a deleted branch</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="lock-branches.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="How to lock branches" src="media/logos/lock-branches.png" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>How to lock branches</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
-
-
+- [Branches tutorial](branches.md)
+- [How to create a branch](create-branch.md)
+- [How to delete a branch](delete-branch.md)
+- [Restore a deleted branch](restore-deleted-branch.md)
+- [How to lock branches](lock-branches.md)

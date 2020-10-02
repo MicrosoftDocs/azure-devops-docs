@@ -1,6 +1,5 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam

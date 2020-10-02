@@ -2,10 +2,7 @@
 title: Command Line task
 description: Execute tools from a command prompt when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 72C7D4F4-E626-42FF-BCA8-24D58D9A960F
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
@@ -17,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run a program from the command prompt.
+Use this task to run a program from the command prompt.
 
 ::: moniker range="<= tfs-2018"
 
@@ -99,7 +96,7 @@ On the Build tab of a build pipeline, add these tasks:
 <table>
    <tr>
       <td>
-<img src="media/command-line.png" alt=""/>
+:::image type="icon" source="media/command-line.png" border="false":::
 <br/><strong>Utility: Command Line</strong>
       </td>
 <td>
@@ -112,7 +109,7 @@ On the Build tab of a build pipeline, add these tasks:
 </tr>
 <tr>
 <td>
-<img src="media/command-line.png" alt=""/>
+:::image type="icon" source="media/command-line.png" border="false":::
 <br/><strong>Utility: Command Line</strong></td>
 <td>
 <p>Display the operating system version.</p>
@@ -123,7 +120,7 @@ On the Build tab of a build pipeline, add these tasks:
         </tr>
         <tr>
       <td>
-<img src="media/command-line.png" alt=""/>
+:::image type="icon" source="media/command-line.png" border="false":::
 <br/><strong>Utility: Command Line</strong></td>
 <td>
 <p>Display the environment variables.</p>
@@ -134,7 +131,7 @@ On the Build tab of a build pipeline, add these tasks:
         </tr>
         <tr>
       <td>
-<img src="media/command-line.png" alt=""/>
+:::image type="icon" source="media/command-line.png" border="false":::
 <br/><strong>Utility: Command Line</strong></td>
 <td>
 <p>Display all files in all the folders created by the build pipeline.</p>
@@ -154,7 +151,7 @@ On the Build tab of a build pipeline, add these tasks:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

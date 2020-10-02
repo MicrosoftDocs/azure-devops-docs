@@ -2,15 +2,13 @@
 title: OData API versioning
 titleSuffix: Azure DevOps 
 description: How Analytics for Azure DevOps manages changes to the OData API  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: prprice
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/14/2020
 ---
 
 # OData API versioning
@@ -31,7 +29,7 @@ The API version follows the _odata element in the request path and has value as 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData

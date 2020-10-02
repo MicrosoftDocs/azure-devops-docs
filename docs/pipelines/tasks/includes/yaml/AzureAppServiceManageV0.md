@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Azure App Service manage
 # Start, stop, restart, slot swap, slot delete, install site extensions or enable continuous monitoring for an Azure App Service

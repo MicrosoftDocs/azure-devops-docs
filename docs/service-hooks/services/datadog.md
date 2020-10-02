@@ -1,26 +1,23 @@
 ---
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Create a service hook for Azure DevOps Services and TFS with Datadog
 description: Use Datadog with your Azure DevOps Services organization
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
-ms.manager: mijacobs
-monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/31/2019
+monikerRange: '>= azure-devops-2019'
+ms.date: 07/27/2020
 ---
-
-# Create a service hook for Azure DevOps Services and TFS with Datadog
+# Create a service hook for Azure DevOps with Datadog 
 
 [!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
-Create events and metrics in Datadog in response to events from Azure DevOps Services. Use these metrics and events in Datadog to create dashboards, troubleshoot issues, and create monitors to alert you of critical issues. Accepts all Azure DevOps event types.
+Create events and metrics in Datadog in response to events from Azure DevOps. Use these metrics and events in Datadog to create dashboards, troubleshoot issues, and create monitors to alert you of critical issues. Accepts all Azure DevOps event types.
 
 ## Get your Datadog API key
 
-1. If you don't have a Datadog account, get one [here]( https://aka.ms/AzureDevOpsDataDog).
+1. If you don't have a Datadog account, get one at [Get started with Datadog](https://aka.ms/AzureDevOpsDataDog).
 2. In the Datadog app, go to [Integrations > API](https://aka.ms/AzureDevOpsDataDogAPI)
 3. Create a new key or select an existing one, and then copy the key to your clipboard. 
 
@@ -53,7 +50,7 @@ Create events and metrics in Datadog in response to events from Azure DevOps Ser
 
 ### Q: Can I create service hook subscriptions programmatically?
 
-A: Yes. See details on configuring service hooks programmatically [here](https://docs.microsoft.com/azure/devops/service-hooks/create-subscription?view=azure-devops). Submit to either of the following Datadog endpoints: 
+A: Yes. For details, see [Create a service hooks subscription programmatically](../create-subscription.md). Submit to either of the following Datadog endpoints: 
 - **US:** `https://app.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
 - **EU:** `https://app.datadoghq.eu/intake/webhook/azuredevops?api_key=<API_KEY>`
 

@@ -2,8 +2,6 @@
 title: Azure virtual machine scale set deployment task
 description: Deploy virtual machine scale set image
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 4dda660c-b643-4598-a4a2-61080d0002d9
 ms.manager: dastahel
 ms.custom: seodec18
@@ -17,7 +15,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy a virtual machine scale set image.
+Use this task to deploy a virtual machine scale set image.
 
 ::: moniker range="> tfs-2018"
 

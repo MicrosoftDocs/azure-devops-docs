@@ -2,10 +2,8 @@
 title: Get insights across exploratory test sessions
 description: Manual and exploratory testing - get insights with exploratory testing across your test sessions by using the Microsoft Test & Feedback extension
 ms.assetid: 4A7DE54F-FE15-49AA-B88B-B3B848EC68F9
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -137,7 +135,7 @@ Use a query to explore the work items that users have not yet explored.
 * [Add findings to existing bugs with exploratory testing](add-to-bugs-exploratory-testing.md)
 * [Explore work items with exploratory testing](explore-workitems-exploratory-testing.md)
 * [Use the Test &amp; Feedback extension in Standalone mode](standalone-mode-exploratory-testing.md)
-* [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
+* [Exploratory testing with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager)
 * [Overview of manual and exploratory testing](index.yml)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

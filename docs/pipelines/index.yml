@@ -12,7 +12,7 @@ metadata:
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 09/30/2019 
+  ms.date: 05/13/2020 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -32,8 +32,6 @@ landingContent:
         links:
           - text: Sign up for free
             url: ./get-started/pipelines-sign-up.md
-          - text: Define a pipeline
-            url: ./get-started/pipelines-get-started.md
           - text: Create your first pipeline
             url: create-first-pipeline.md
           - text: Customize your pipeline
@@ -61,7 +59,7 @@ landingContent:
           - text: PHP  
             url: ./ecosystems/python-webapp.md
           - text: "See more >"
-            url: ./ecosystems/index.md
+            url: ./ecosystems/ecosystems.md
   - title: Key concepts
     linkLists:
       - linkListType: concept
@@ -88,7 +86,7 @@ landingContent:
             url: ./repos/azure-repos-git.md
           - text: Team Foundation version control 
             url: ./repos/tfvc.md
-          - text: BitBucket Cloud
+          - text: Bitbucket Cloud
             url: ./repos/pipeline-options-for-git.md
           - text: Subversion 
             url: ./repos/pipeline-options-for-git.md
@@ -110,8 +108,12 @@ landingContent:
             url: ./library/connect-to-azure.md
           - text: Deploy to Azure SQL Database
             url: ./targets/azure-sqldb.md
+          - text: Deploy to Azure using VS Code
+            url: ./targets/deploy-to-azure-vscode.md
           - text: Deploy to Azure Kubernetes Service
             url: ./ecosystems/kubernetes/aks-template.md
+          - text: Use secrets from Azure Key Vault
+            url: ./release/azure-key-vault.md
   - title: Set up continuous testing
     linkLists:
       - linkListType: tutorial
@@ -162,6 +164,8 @@ landingContent:
             url: ./library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Set build and release retention policies
             url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Automate infrastructure deployments with Terraform
+            url: ./release/automate-terraform.md
   - title: Reference guidance
     linkLists:
       - linkListType: reference
@@ -170,7 +174,7 @@ landingContent:
             url: yaml-schema.md
           - text: Variable groups
             url: ./library/variable-groups.md
-          - text: Release variables and debugging
+          - text: Classic release and artifacts variables
             url: ./release/variables.md
           - text: Tasks
             url: ./tasks/index.md
@@ -179,7 +183,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Troubeshoot builds and releases
-            url: troubleshooting.md
+            url: troubleshooting/troubleshooting.md
           - text: Run a release in debug mode
             url: ./release/variables.md#run-a-release-in-debug-mode
           - text: Troubleshoot Azure Resource Manager service connections

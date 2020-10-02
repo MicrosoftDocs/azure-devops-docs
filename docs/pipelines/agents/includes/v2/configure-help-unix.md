@@ -20,6 +20,18 @@ You must pass `--unattended` and the answers to all questions.
 
 `./config.sh --help` always lists the latest required and optional responses.
 
+## Diagnostics
+
+If you're having trouble with your self-hosted agent, you can try running diagnostics.
+After configuring the agent:
+
+```bash
+./run.sh --diagnostics
+```
+
+This will run through a diagnostic suite that may help you troubleshoot the problem.
+The diagnostics feature is available starting with agent version 2.165.0.
+
 ## Help on other options
 
 To learn about other options:

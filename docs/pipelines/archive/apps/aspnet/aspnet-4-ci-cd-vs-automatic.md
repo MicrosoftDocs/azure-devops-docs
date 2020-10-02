@@ -3,12 +3,7 @@ title: Deploy CI/CD pipeline ASP.NET web app to Azure
 ms.custom: seodec18
 description: Use Visual Studio to automatically generate a CI/CD pipeline to deploy your ASP.NET web app to Azure in Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 498BF7D8-2932-46FB-BD38-E8EBD1C5CABA
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.date: 02/10/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -23,7 +18,7 @@ In this walkthrough we'll show how to use Visual Studio to automatically define 
 [!INCLUDE [include](../../../apps/aspnet/includes/ci-cd-description.md)]
 
 > [!TIP]
-> If you don't yet have an app but want to try this out, then see the [Q&A below](#new_solution).
+> If you don't yet have an app but want to try this out, then see the [FAQ below](#new_solution).
 
 [!INCLUDE [include](../../../apps/aspnet/includes/setup.md)]
 
@@ -41,7 +36,7 @@ To create both the build (CI) and release (CD) pipelines for a project, in Visua
 
 [!INCLUDE [include](../../../apps/aspnet/includes/commit-build-release.md)]
 
-## Q&A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

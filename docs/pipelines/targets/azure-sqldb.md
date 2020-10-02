@@ -2,14 +2,11 @@
 title: Deploy to Azure SQL Database
 description: Deploy to an Azure SQL database from Azure Pipelines or TFS
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 12/07/2018
+ms.date: 04/27/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -63,9 +60,9 @@ See also [authentication information when using the Azure SQL Database Deploymen
 Instead of using a DACPAC, you can also use SQL scripts to deploy your database. Here is a simple example of a SQL script that creates an empty database.
 
 ```sql
-  USE [master]
+  USE [main]
   GO
-  IF NOT EXISTS (SELECT name FROM master.sys.databases WHERE name = N'DatabaseExample')
+  IF NOT EXISTS (SELECT name FROM main.sys.databases WHERE name = N'DatabaseExample')
   CREATE DATABASE [DatabaseExample]
   GO
 ```
@@ -95,6 +92,7 @@ New-AzureRmSqlServerFirewallRule -ResourceGroupName $ResourceGroup -ServerName $
 param
 (
   [String] [Parameter(Mandatory = $true)] $ServerName,
+  [String] [Parameter(Mandatory = $true)] $ResourceGroupName,
   [String] $AzureFirewallName = "AzureWebAppFirewall"
 )
 
@@ -102,14 +100,14 @@ $ErrorActionPreference = 'Stop'
 
 function New-AzureSQLServerFirewallRule {
   $agentIP = (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
-  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $AzureFirewallName -ServerName $ServerName
+  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
 function Update-AzureSQLServerFirewallRule{
   $agentIP= (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
-  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $AzureFirewallName -ServerName $ServerName
+  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
 
-If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $AzureFirewallName -ErrorAction SilentlyContinue) -eq $null)
+If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue) -eq $null)
 {
   New-AzureSQLServerFirewallRule
 }
@@ -141,14 +139,15 @@ Remove-AzureRmSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $A
 param
 (
   [String] [Parameter(Mandatory = $true)] $ServerName,
+  [String] [Parameter(Mandatory = $true)] $ResourceGroupName,
   [String] $AzureFirewallName = "AzureWebAppFirewall"
 )
 
 $ErrorActionPreference = 'Stop'
 
-If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $AzureFirewallName -ErrorAction SilentlyContinue))
+If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue))
 {
-  Remove-AzureSqlDatabaseServerFirewallRule -RuleName $AzureFirewallName -ServerName $ServerName
+  Remove-AzureSqlDatabaseServerFirewallRule -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
 ```
 
@@ -238,11 +237,11 @@ To do this in YAML, you can use one of these techniques:
 * Isolate the deployment steps into a separate job, and add a condition to that job.
 * Add a condition to the step.
 
-The following example shows how to use step conditions to deploy only those builds that originate from master branch.
+The following example shows how to use step conditions to deploy only those builds that originate from main branch.
 
 ```yaml
 - task: SqlAzureDacpacDeployment@1
-  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
   inputs:
     azureSubscription: '<Azure service connection>'
     ServerName: '<Database server name>'

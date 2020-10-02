@@ -2,10 +2,7 @@
 title: Create a virtual network for build-deploy-test 
 description: Provision and manage VMs in SCVMM - Create a virtual network for build-deploy-test scenarios using Network Virtualization
 ms.assetid: 64620E9B-D2D1-4516-921A-40A159019513
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -347,7 +344,7 @@ environments. You can create as many environments as you need with just a click 
 * [SCVMM deployment](scvmm.md)
 * [Hyper-V Network Virtualization Overview](/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server)
 
-## Q&A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

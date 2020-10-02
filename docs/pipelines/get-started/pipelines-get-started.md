@@ -2,10 +2,7 @@
 title: Use Azure Pipelines
 ms.custom: seodec18
 description: Learn the basics about Azure Pipelines and how to use it to automatically build and release code.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 11/15/2019
@@ -102,7 +99,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 
 
 | Feature | YAML | Classic Build |  Classic Release |Notes| 
-|---------|---------|---------|---------|---------|---------|---------|
+|---------|---------|---------|---------|---------|
 | [Agents](../agents/agents.md) |  Yes | Yes | Yes | Specifies a required resource on which the pipeline runs.|
 | [Approvals](../release/approvals/index.md) | Yes | No  | Yes | Defines a set of validations required prior to completing a deployment stage. |
 | [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes | Yes | Supports publishing or consuming different package types. |
@@ -113,9 +110,9 @@ Certain pipeline features are only available when using YAML or when defining bu
 | [Dependencies](../process/stages.md) |  Yes | Yes | Yes | Specifies a requirement that must be met in order to run the next job or stage.  |
 | [Deployment groups](../release/deployment-groups/index.md) | Yes | No | Yes | Defines a logical set of deployment target machines. | 
 | [Deployment group jobs](../process/deployment-group-phases.md)|No | No | Yes | Specifies a job to release to a deployment group. | 
-| [Deployment jobs](../process/deployment-group-phases.md) | Yes | No |  No | Defines the deployment steps. Requires Multi-stage pipelines experience. | 
+| [Deployment jobs](../process/deployment-jobs.md) | Yes | No |  No | Defines the deployment steps. | 
 | [Environment](../process/environments.md) | Yes | No | No | Represents a collection of resources targeted for deployment. Available with Azure Pipelines only.|
-| [Gates](../release/approvals/gates.md) | No | No | Yes | Supports automatic collection and evaluation of external health signals prior to completing a release stage. Available with Azure Pipelines only. |
+| [Gates](../release/approvals/gates.md) | No | No | Yes | Supports automatic collection and evaluation of external health signals prior to completing a release stage. Available with Classic Release only. |
 | [Jobs](key-pipelines-concepts.md) | Yes | Yes | Yes | Defines the execution sequence of a set of steps.|
 | [Service connections](../library/service-endpoints.md) | Yes | Yes | Yes | Enables a connection to a remote service that is required to execute tasks in a job.   |
 | [Service containers](../process/service-containers.md) | Yes |No | No  |Enables you to manage the lifecycle of a containerized service.   |
@@ -136,7 +133,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 TFS 2015 through TFS 2018 supports the Classic interface only. The following table indicates which pipeline features are available when defining build or release pipelines. 
 
 | Feature | Classic Build |  Classic Release |Notes| 
-|---------|---------|---------|---------|---------|---------|---------|
+|---------|---------|---------|---------|
 | [Agents](../agents/agents.md) |  Yes | Yes |  Specifies a required resource on which the pipeline runs.|
 | [Approvals](../release/approvals/index.md) |  No  | Yes | Defines a set of validations required prior to completing a deployment stage. |
 | [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes | Supports publishing or consuming different package types. |

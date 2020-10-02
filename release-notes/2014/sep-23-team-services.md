@@ -1,7 +1,6 @@
 ---
 title: Work item improvements - Sep 23
 description: VSTS release notes for September 23 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 2e03cd71-13f5-41d8-a82d-6ea1b4f66b6d

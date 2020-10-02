@@ -1,12 +1,10 @@
 ---
-title: Quickstart guide to customizing your board
+title: Quickstart guide to configure and manage your project  
 titleSuffix: Azure Boards 
-description: Customize your issues board to show fields, add columns, and change card color
+description: Understand how to manage your project
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -17,7 +15,7 @@ ms.date: 07/17/2019
 
 # Configure settings and manage your Azure Boards project
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You can start using Azure Boards and configure resources as you go. No up-front work is required. Most settings define defaults.
 

@@ -2,24 +2,27 @@
   href: example-queries.md
 - name: Ad hoc vs managed queries
   href: adhoc-vs-managed-queries.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+- name: Ad hoc search
+  href: search-box-queries.md
 - name: Query quick reference
   href: query-index-quick-ref.md
-- name: Quickstarts
+- name: Define, run, and manage queries
   items:
   - name: View, run, or email a query 
     href: view-run-query.md
-  - name: Ad hoc search
-    href: search-box-queries.md
-- name: Tutorials
-  items:
   - name: Create managed queries
     href: using-queries.md
   - name: Triage work items  
     href: triage-work-items.md
-- name: Concepts
-  items:
-  - name: High-performing queries
-    href: high-performing-queries.md 
+  - name: Organize queries with folders
+    href: organize-queries.md
+  - name: Set query permissions (Security) 
+    href: set-query-permissions.md
+  - name: Define a query as a hyperlink 
+    href: define-query-hyperlink.md 
+  - name: Bulk import or update work items (CSV)
+    href: import-work-items-from-csv.md 
+    displayname: import, export, csv
 - name: Samples
   expanded: true
   items:
@@ -54,24 +57,17 @@
   - name: Query by build & test integration fields
     displayname: Automation Status, Found In, Integration Build, Issue, Parameters, Steps, System Info, Repo Steps, Test Suite Type, Automated, Query Text, LocalDataSource
     href: build-test-integration.md  
-- name: How-to Guides
+- name: Best practices, monitoring, & reports
   items:
-  - name: Organize queries with folders
-    href: organize-queries.md
-  - name: Set query permissions (Security) 
-    href: set-query-permissions.md
-  - name: Define a query as a hyperlink 
-    href: define-query-hyperlink.md 
-  - name: Bulk import or update work items (CSV)
-    href: import-work-items-from-csv.md 
-- name: Reference
-  items:
-  - name: "Query fields, operators & macros"
+  - name: High-performing queries
+    href: high-performing-queries.md 
+  - name: Create work tracking charts
+    href: ../../report/dashboards/charts.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: Query fields, operators & macros
     href: query-operators-variables.md
-  - name: Query keyboard shortcuts
-    href: queries-keyboard-shortcuts.md
-  - name: WIQL syntax
+  - name: Work Item Query Language (WIQL) syntax
     href: wiql-syntax.md
+
 
 
 

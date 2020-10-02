@@ -2,10 +2,7 @@
 title: Deploy nginx to a Linux VM
 description: Deploy a web application to an nginx web server on a Linux virtual machine using Deployment Groups in Azure Pipelines
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -13,7 +10,7 @@ ms.date: 02/23/2020
 monikerRange: '>= tfs-2018'
 ---
 
-# Deploy to a Linux Virtual Machine
+# Deploy a web app to an nginx web server on a Linux Virtual Machine
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
@@ -58,13 +55,13 @@ Follow the additional steps described below based on the runtime stack used for 
 
 #### [Java](#tab/java)
 
-- For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) template, which provides a fully supported OpenJDK-based runtime.
-- For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) Azure template and [configure Tomcat 9.x as a service](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file).
-- For deploying Java EE based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) + WildFly/JBoss 14 
+- For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) template, which provides a fully supported OpenJDK-based runtime.
+- For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) Azure template and [configure Tomcat 9.x as a service](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file).
+- For deploying Java EE based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) + WildFly/JBoss 14 
 
 #### [JavaScript](#tab/java-script)
 
-To install a javascript app or a Node.js app, you'll need a Linux VM with Nginx web server to deploy the app.
+To install a JavaScript app or a Node.js app, you'll need a Linux VM with Nginx web server to deploy the app.
 If you don't already have a Linux VM with Nginx, create one now in Azure using the steps in
 [this example](/azure/virtual-machines/linux/quick-create-cli).
 

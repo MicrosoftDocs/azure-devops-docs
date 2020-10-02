@@ -2,7 +2,6 @@
 title:  Rollup on backlogs and Azure App Service deployment improvements - Sprint 157 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 09/06/2019
 description: In the **Sprint 157 Update** of Azure DevOps, we added new service hooks subscriptions for YAML pipelines. 
@@ -78,7 +77,7 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - May 28
 description: VSTS release notes for May 28 2013
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 07422a87-fd33-4a13-a201-5fe9b7bc694f

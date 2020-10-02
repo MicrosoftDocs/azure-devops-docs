@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn how to add, run, and quickly update manual test cases
 ms.technology: devops-new-user
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 04/23/2019
@@ -18,9 +16,9 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
 
-In this quickstart, you learn how to add, run, update, and expand and collapse inline tests in Azure DevOps.
+In this quickstart, learn how to add, run, update, and expand and collapse inline tests in Azure DevOps.
 
-A quick way to start manual testing is to add the test to the user story or bug that you want to test. From the Kanban board, you can quickly define inline tests, or a set of manual tests for a backlog item. You also can run these tests and update their status. If you're new to working with the Kanban board, see the [Kanban quickstart](../boards/boards/kanban-quickstart.md).
+To start manual testing, add the test to the user story or bug that you want to test. From the Kanban board, you can define inline tests or a set of manual tests for a backlog item. You also can run these tests and update their status. If you're new to working with the Kanban board, see the [Kanban quickstart](../boards/boards/kanban-quickstart.md).
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
 
@@ -62,7 +60,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
    ![Add manual test](media/add-manual-test.png)
 
-   Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite are automatically created under which the manual test cases are grouped.  
+   Inline tests are the same as test cases in a test suite. A default test plan and test suite automatically get created under which the manual test cases are grouped.  
 
 	For example, a test suite is created for the following user story, and inline tests are added to that suite. User story 314 is highlighted. It has two manual tests defined with the IDs 337 and 341.  
 
@@ -88,9 +86,9 @@ Before you run the test, you must add details.
 
 	<img src="../boards/boards/media/i-test-add-test.png" alt="Open the context menu of a backlog item to add inline test case" style="border: 2px solid #C3C3C3;" />
 
-	Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite are automatically created under which the manual test cases are grouped.  
+	Inline tests are the same as test cases in a test suite. A default test plan and test suite automatically get created under which the manual test cases are grouped. 
 
-	For example, a test suite is created for each user story, and all inline tests are added to that suite. The following user story 152 is highlighted. It has three manual tests defined with the IDs 153, 155, and 161.  
+	For example, a test suite gets created for each user story, and all inline tests are added to that suite. The following user story 152 is highlighted. It has three manual tests defined with the IDs 153, 155, and 161.  
 
 	<img src="../boards/boards/media/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" style="border: 2px solid #C3C3C3;" /> 
 
@@ -183,10 +181,13 @@ Select the inline test summary to expand a collapsed set of tests. Select the sa
 ## Next steps
   
 > [!div class="nextstepaction"]
-> [Learn more about test case management](../test/create-test-cases.md)
 > [Kanban quickstart](../boards/boards/kanban-quickstart.md)
 
-To begin web-based exploratory testing for a user story, you must install the Exploratory testing. For more information, see how to [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
-
+## Related articles
+- [Learn more about test case management](../test/create-test-cases.md)
+- [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md)
+- [Essential services](services.md)
+- [Client-server tools](tools.md)
+- [Software development roles](roles.md)
 
 

@@ -68,9 +68,9 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Set personal notifications
-            url: ../notifications/howto-manage-personal-notifications.md
+            url: ../notifications/manage-your-personal-notifications.md
           - text: Set team notifications
-            url: ../notifications/howto-manage-team-notifications.md
+            url: ../notifications/manage-team-group-notifications.md
   - title: Request and provide feedback
     linkLists:
       - linkListType: overview
@@ -117,5 +117,3 @@ landingContent:
             url: ./search/work-item-search.md
           - text: Search wiki
             url: ./wiki/search-wiki.md
-
-

@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 title: Basic Authentication for Team Foundation Server
 description: Use the TFS Cross Platform (tfx) command line interface against TFS using basic authentication.
 ms.assetid: 6dc7f977-4b62-4bd6-b77a-1c6cade1ffa8
-ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
@@ -13,6 +11,8 @@ ms.date: 03/10/2017
 ---
 
 # Use the TFS Cross Platform Command Line with TFS using basic authentication or personal access tokens (PATs)
+
+[!INCLUDE [version-all](../../../includes/version-all.md)]
 
 > [!IMPORTANT]
 > Basic authentication is not recommended.  Turning on IIS basic authentication causes various issues, and you should 

@@ -2,11 +2,9 @@
 title: Buy Azure DevOps for Cloud Solution Providers
 titleSuffix: Azure DevOps Services
 description: Cloud Solution Provider (CSP) partners can purchase Azure DevOps for customers
-ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 05/10/2019
@@ -22,7 +20,7 @@ Partners in the Cloud Solution Provider (CSP) program can enable their customers
 
 To enable your customer to purchase Azure DevOps by using a CSP-based Azure subscription, confirm the following statements are true:
 
-- The customer has [Project Collection Administrator (PCA) or organization Owner permissions](../../accounts/faq-add-delete-users.md)
+- The customer has [Project Collection Administrator (PCA) or organization Owner permissions](../../security/lookup-organization-owner-admin.md)
 - The customer has [Contributor or Owner role permissions](../add-backup-billing-managers.md) to the CSP-based Azure subscription
 
 When your customer gains access to the CSP-based Azure subscription, they can [set up billing](../set-up-billing-for-your-organization-vs.md) or [change billing](../change-azure-subscription.md) for their Azure DevOps organization and further charges are billed to the CSP subscription.

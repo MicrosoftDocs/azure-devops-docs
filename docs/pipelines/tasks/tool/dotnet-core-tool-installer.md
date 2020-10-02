@@ -1,22 +1,19 @@
 ---
 title: Use .NET Core task
 description: Acquires a specific version of .NET Core from the internet or the tools cache and adds it to the PATH
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
 ms.assetid: B0CE7256-7898-45D3-9CB5-176B752BFEA6
-ms.manager: mijacobs
 ms.author: puagarw
 author: pulkitaggarwl
 ms.date: 10/21/2019
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Use .NET Core task
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to acquire a specific version of .NET Core from the Internet or the tools cache
+Use this task to acquire a specific version of .NET Core from the Internet or the tools cache
 and add it to the PATH. 
 
 You can also use this task to change the version of .NET Core used in subsequent tasks like [.NET Core cli task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/DotNetCoreCLIV2).
@@ -29,7 +26,7 @@ One other reason to use tool installer is if you want to decouple your pipeline 
 
 - Support for patterns in version to fetch latest in minor/major version. For example, you can now specify 2.2.x to get the latest patch.
 
-- Perfrom Multi-level lookup. This input is only applicable to Windows based agents. It configures the .Net Core's host process behavior for looking for a suitable shared framework on the machine. For more information, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+- Perfrom Multi-level lookup. This input is only applicable to Windows based agents. It configures the .NET Core's host process behavior for looking for a suitable shared framework on the machine. For more information, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
 
 - Installs NuGet version 4.4.1 and sets up proxy configuration if present in NuGet config.
 

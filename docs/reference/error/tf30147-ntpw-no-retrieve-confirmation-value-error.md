@@ -2,10 +2,8 @@
 title: TF30147-The New Team Project Wizard ... 
 description: Occurs when the New Team Project Wizard is building the  wizard page that summarizes all the selections you made and text you typed up to that point.
 titleSuffix: Azure DevOps & TFS
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6347fdd8-cac5-4614-91b4-ef4d5f4dc06d
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

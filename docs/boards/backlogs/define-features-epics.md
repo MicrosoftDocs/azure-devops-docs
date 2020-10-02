@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Define features and epics to organize your product and portfolio backlogs  
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -71,7 +69,7 @@ you can <a href="../../organizations/settings/select-backlog-navigation-levels.m
 
 For example, when you choose **Epics**, you'll see a list of all Epics in your team's active area paths. From there, you can drill down to see child features and backlog items.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -84,14 +82,14 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 	> ![Choose another team](../sprints/media/assign-items-sprint/backlog-team-selector-s155.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -104,7 +102,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
     ![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-    To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -114,7 +112,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
     > [!div class="mx-imgBorder"]  
     > ![Choose product backlog level, Backlog items, Stories, or Requirements](media/features-epics/choose-features-epics-agile.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Column Options](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -270,13 +268,13 @@ Whenever you see the plus ![plus-icon](../../media/icons/blue-add-icon.png), you
 
 ::: moniker range="<= tfs-2018"
 
-To add a work item, choose the ![plus icon](../media/icons/green_plus_icon.png) and choose from the options provided.
+To add a work item, choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: and choose from the options provided.
 
 Here we add a product backlog item as a child to the Customer Web - Phase 1 feature. 
 
 ![Add a child item to a backlog work item](media/org-backlog-features-add-child-ts.png)
 
-Whenever you see the plus ![plus icon](../media/icons/green_plus_icon.png), you can add a child item. 
+Whenever you see the plus :::image type="icon" source="../media/icons/green_plus_icon.png" border="false":::, you can add a child item. 
 The work item always corresponds to the hierarchy of work item types that are defined for your project.   
 
 ::: moniker-end
@@ -303,6 +301,8 @@ If you want bugs to show up on your backlog and you're not seeing them, [enable 
 
 [!INCLUDE [temp](../includes/faq-copy-clone.md)]
 
+[!INCLUDE [temp](../includes/faq-critical-path.md)]
+
 
 ## Try this next  
 
@@ -319,4 +319,4 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)   
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)  
 - [Product backlog controls](product-backlog-controls.md)
-- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)

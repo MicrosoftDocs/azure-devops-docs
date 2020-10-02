@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Understand the tools that support connecting to Azure DevOps 
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -19,7 +17,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-In this article, learn about the tools and clients that connect to Azure DevOps.
+Learn about the tools and clients that connect to Azure DevOps.
 
 ::: moniker range=">= tfs-2013 < azure-devops"
 
@@ -55,10 +53,10 @@ Developers have access to many tools through these versions of Visual Studio and
 - **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size, and with a need to scale. It supports designing, building, and managing complex enterprise applications.
 - **Visual Studio Test Professional**: Provides access to Microsoft Test and development tools to support quality and collaboration throughout the development process.
 - **Visual Studio Team Explorer**: Free solution for non-developers to interact with Team Foundation Server and Visual Studio Team Services.  
-- **[Eclipse/Team Explorer Everywhere](../java/download-eclipse-plug-in.md)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connects to Azure DevOps.  
-- **[Android Studio with the Azure DevOps Services Plug-in for Android Studio](../java/download-android-studio-plug-in.md)**: Free plug-in to support Android developers and connect to Git repositories on Azure DevOps.
-- **[IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../java/download-intellij-plug-in.md)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on Azure DevOps.
-- **[Visual Studio Code](../java/vscode-extension.md)**: Free, open-source code editor with a free extension to support connecting to Git repositories on Azure DevOps.  
+- **[Eclipse/Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)**: Free plug in to support teams running Eclipse on Linux, macOS, or Windows that connects to Azure DevOps.  
+- **[Android Studio with the Azure DevOps Services Plug-in for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)**: Free plug in to support Android developers and connect to Git repositories on Azure DevOps.
+- **[IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)**: Free plug in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on Azure DevOps.
+- **[Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)**: Free, open-source code editor with a free extension to support connecting to Git repositories on Azure DevOps.  
 
 To get started with client libraries, see [Client library samples](../integrate/get-started/client-libraries/samples.md).
 
@@ -111,14 +109,14 @@ When you install any edition of Visual Studio or [Team Foundation Server Standal
 
 ::: moniker range=">= tfs-2013 < tfs-2017"
 
-- [Project Professional](../reference/tfs-ps-sync/synchronize-tfs-project-server.md): With Project Professional and the Team Foundation Server Extensions for Project Server, you can manage projects that synchronize data that exists in both TFS and Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
+- [Project Professional](/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server): With Project Professional and the Team Foundation Server Extensions for Project Server, you can manage projects that synchronize data that exists in both TFS and Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
 
 ::: moniker-end
 
 ::: moniker range="= tfs-2017"
 
 >[!IMPORTANT]
->Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a Microsoft partner. See [Synchronize TFS with Project Server](../reference/tfs-ps-sync/sync-ps-tfs.md) for details.
+>Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a Microsoft partner. See [Synchronize TFS with Project Server](/previous-versions/azure/devops/reference/tfs-ps-sync/sync-ps-tfs) for details.
 
 ::: moniker-end
 
@@ -126,7 +124,7 @@ When you install any edition of Visual Studio or [Team Foundation Server Standal
 
 The following clients support specific tasks, such as managing testing efforts, providing feedback, or modifying work items:
 
-- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx): Manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts. Test Plans is installed with Visual Studio Test Professional and Visual Studio Enterprise. 
+- [Azure Test Plans](/previous-versions/jj635157(v=vs.140)): Manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts. Test Plans is installed with Visual Studio Test Professional and Visual Studio Enterprise. 
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md): This extension provides a lightweight plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features created in Azure DevOps. This extension is free to Stakeholders. 
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md): Your Stakeholders can use this client to record feedback for your application as video, audio, or type-written comments. This client is installed with all versions of Visual Studio, or it can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=48142). All feedback is stored in the work item data store and requires [Stakeholders to have permissions](../project/feedback/give-permissions-feedback.md).  
 
@@ -164,7 +162,7 @@ The following extensions are available and are built and maintained by the Azure
 - [Azure Test Plans](../organizations/billing/buy-basic-access-add-users.md): Run tests by using your browser with simple pass/fail of steps, add comments/attachments, take screenshots, and file bugs. You can accomplish it all with automatic end-to-end traceability.  
 - [Azure Artifacts](../artifacts/start-using-azure-artifacts.md): Build packages of reusable code components and share them. The Azure Artifacts extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm. It makes packages available to your team, your builds, and your releases.
 - [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing. Enables developers to quickly locate relevant information within the code base of all projects that are hosted within an organization or collection. You can discover implementation examples, browsing definitions, and error text.
-- [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Quickly find relevant work items by searching across all work item fields over all projects in an organization. Do full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, to quickly narrow down a list of work items.  
+- [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): To quickly find relevant work items, search across all work item fields over all projects in an organization. Do full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, to quickly narrow down a list of work items.  
   
 Find additional extensions in Azure DevOps **Organization settings** > **Extensions** > **Browse marketplace**.
 
@@ -196,7 +194,7 @@ With HockeyApp, you can develop, distribute, and beta test your mobile apps. Hoc
 - Open-source SDKs to let you know what code is running in your apps
 - Integration with your existing build system and work item management solution
 
-To learn more, see [Microsoft Azure - HockeyApp](/azure/application-insights/app-insights-overview).
+To learn more, see [Microsoft Azure - HockeyApp](https://azure.microsoft.com/updates/hockeyapp-available-for-purchase-through-azure/).
 
 ## Command-line tools
 
@@ -223,7 +221,7 @@ Extensions are simple add-ons that you can use to customize and extend your DevO
 
 You build extensions by using our RESTful API library. Publish your extensions to the Azure DevOps Marketplace. You can privately maintain or share them with millions of developers who use Visual Studio and Azure DevOps.
 
-To learn more, visit the [Azure DevOps Marketplace](https://marketplace.visualstudio.com) and see [Overview of extensions](../extend/index.md).
+To learn more, visit the [Azure DevOps Marketplace](https://marketplace.visualstudio.com) and see [Overview of extensions](../extend/overview.md).
 
 ## REST APIs  
  

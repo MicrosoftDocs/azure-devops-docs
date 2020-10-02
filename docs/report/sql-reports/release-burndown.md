@@ -1,12 +1,10 @@
 ---
 title: Release Burndown
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Shows how quickly your team has delivered backlog items and track how much work the team must still perform to complete a product release.
 ms.assetid: 9044206f-c993-451d-bcc8-6f3980c90b3e
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -35,7 +33,7 @@ By reviewing the release burndown report, you can understand how quickly your te
 ### Required activities for tracking release burndown  
  For the burndown graph to be useful and accurate, your team must perform the following activities for tracking work items:  
   
--   Specify the number of releases you want to track and [define the start and end dates for each sprint](https://msdn.microsoft.com/f292f3bc-b472-4399-a7e4-49151d4c0484).  
+-   Specify the number of releases you want to track and [define the start and end dates for each sprint](../../boards/sprints/define-sprints.md).  
   
 -   Define product backlog items and bugs, and assign each to a sprint or iteration.  (**Iteration** field). Make sure that all backlog items are assigned to your team's area path or subarea.  
   
@@ -52,4 +50,4 @@ By reviewing the release burndown report, you can understand how quickly your te
   
 ## Related notes 
  [Scrum process](../../boards/work-items/guidance/scrum-process.md)   
-[Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) 
+[Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)

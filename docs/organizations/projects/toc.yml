@@ -1,17 +1,23 @@
 - name: About projects
   href: about-projects.md
+- name: Create a project
+  href: create-project.md
+- name: Connect to a project
+  href: connect-to-projects.md
+- name: Get started as a Stakeholder
+  href: ../security/get-started-stakeholder.md 
+- name: When to add a team or project
+  href: about-projects.md
 - name: What do I get with a project?
-  href: /azure/devops/user-guide/services?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Resources granted to members
-  href: resources-granted-to-project-members.md 
-- name: Share your project vision  
-  href: project-vision-status.md
-- name: Connect a project to GitHub  
-  href: /azure/devops/boards/github/install-github-app?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: How-to guides
+  href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Manage projects
   items:
-  - name: Create a project
-    href: create-project.md
+  - name: Project & team quick reference
+    href: project-team-quick-reference.md
+  - name: Connect a project to GitHub  
+    href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Share your project vision  
+    href: project-vision-status.md
   - name: Rename a project
     href: rename-project.md
   - name: Delete a project
@@ -19,24 +25,16 @@
   - name: Restore a project
     href: restore-project.md
   - name: Change service visibility
-    href: /azure/devops/organizations/settings/set-services?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../settings/set-services.md 
   - name: Set project visibility
-    href: /azure/devops/organizations/public/make-project-public?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../public/make-project-public.md
   - name: Save project data
     href: save-project-data.md
-  - name: Connect a project
-    href: connect-to-projects.md
-- name: Troubleshooting
-  items:
-  - name: Create a project
-    href: faq-create-project.md
-  - name: Rename a project
-    href: faq-rename-project.md
-  - name: Add administrators
-    href: ../accounts/faq-add-administrators.md
-  - name: Set up Visual Studio
-    href: ../accounts/faq-set-up-vs.md
-  - name: Troubleshoot connection
-    href: /azure/devops/user-guide/troubleshoot-connection?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: "TF31002: Unable to connect"
-    href: /azure/devops/reference/error/tf31002-unable-connect-tfs?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Resources granted to project members
+    href: resources-granted-to-project-members.md 
+- name: Public projects
+  href: ../public/about-public-projects.md 
+
+
+
+ 

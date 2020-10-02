@@ -2,11 +2,7 @@
 title: Set up a multi-developer NuGet environment
 description: Set up the NuGet developer environment for Azure Artifacts in Azure DevOps Services or Team Foundation Server
 ms.assetid: EA79E902-C679-4AA7-BE33-E865F593EB06
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2017'

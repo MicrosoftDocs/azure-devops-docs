@@ -1,23 +1,21 @@
-﻿---
+---
 title: Publish Markdown files from Git repository to wiki
 titleSuffix: Azure DevOps  
 description: Maintain Markdown files in a Git code repository and publish them to your team project wiki in Azure DevOps
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.topic: quickstart
 ms.assetid:
-ms.manager: mijacobs
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: '>= azure-devops-2019'
-ms.date: 02/14/2020 
+monikerRange: '>= tfs-2018'
+ms.date: 08/18/2020  
 ---
 
-# Quickstart: Publish a Git repository to a wiki
+# Publish a Git repository to a wiki
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 In this quickstart, learn how to do the following tasks:
 
@@ -60,12 +58,12 @@ Begin by connecting to your project using a [supported web browser](/azure/devop
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose **Overview>Wiki**.
+Choose **Overview > Wiki**.
 
 > [!div class="mx-imgBorder"]  
-> ![![Create wiki, provision a Git repo for your wiki, or publish existing repo Markdown files](../../organizations/public/media/wiki/open-wiki-vert-brn.png)
+> ![Create wiki, provision a Git repo for your wiki, or publish existing repo Markdown files](../../organizations/public/media/wiki/open-wiki-vert-brn.png)
 
-If you need to switch your team project, choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
+If you need to switch your team project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all team projects and teams](../navigation/work-across-projects.md).  
 
 ::: moniker-end
 
@@ -91,7 +89,7 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 2. Choose the repository, branch, and folder that contain the Markdown files and name the wiki repository. The Git repo must be within the team project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create wiki, publish existing repo Markdown files](media/wiki/publish-wiki-options.png)
+	> ![Name the wiki repository.](media/wiki/publish-wiki-options.png)
 
 	Specify the root of the repository when you want to publish all Markdown files in the repository to your wiki.  
 
@@ -117,14 +115,14 @@ For the Wiki that's provisioned with the Markdown files you've added, you can no
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range="= azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can publish a Git repository to a wiki with the [az devops wiki create](/cli/azure/ext/azure-devops/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). Run this command when you maintain Markdown files in an existing Git repo and you want to publish them to a wiki.
 
 > [!NOTE]
 > You can't publish code as Wiki if your project doesn't have a Git repository already defined. If necessary, [create a new Git repo](/cli/azure/ext/azure-devops/repos#ext-azure-devops-az-repos-create), and then return to this page.
 
-```CLI 
+```azurecli 
 az devops wiki create [--mapped-path]
                       [--name]
                       [--org]
@@ -144,11 +142,15 @@ az devops wiki create [--mapped-path]
 - **type**: Type of wiki to create. The accepted values are **projectwiki** (default) and **codewiki**.
 - **version**: (Required for the **codewiki** type). Repository branch name to publish the code wiki from.
 
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
+
 #### Example 
 
 The following command creates a **codewiki** named "My New Wiki" published from the **MyRepo** repository. The wiki is published in the **wikis** folder in the **master** branch and the result is shown in table format.
 
-```CLI 
+```azurecli 
 az devops wiki create --name "My New Wiki" --type codewiki --repository MyRepo --mapped-path /wikis --version master --output table
 
 ID                                    Name         Type
@@ -167,7 +169,7 @@ ID                                    Name         Type
 
 1. To edit, rename, or delete a page, open **Repos>Files** or **Code>Files**.
 
-2. Choose the page you want, open the ![ ](../../media/icons/actions-icon.png) actions icon, and then choose the operation you want.
+2. Choose the page you want, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then choose the operation you want.
 
     > [!div class="mx-imgBorder"]  
     > ![Edit, rename, or delete wiki content](media/wiki/publish-code-edit-rename-file.png)
@@ -177,7 +179,7 @@ ID                                    Name         Type
 
 ### Edit a page
 
-You can use the links available in edit mode to preview your changes or highlight changes made from the previous version. To discard your changes, select **Cancel**. For details about supported Markdown features, see [Syntax guidance for Markdown usage](../../reference/markdown-guidance.md).  
+You can use the links available in edit mode to preview your changes or highlight changes made from the previous version. To discard your changes, select **Cancel**. For details about supported Markdown features, see [Syntax guidance for Markdown usage](./markdown-guidance.md).  
 
 1. When finished with your updates, choose **Commit**, and then fill in the Commit dialog form.
 
@@ -221,7 +223,7 @@ Each update you make requires you commit your changes to the repository. You can
 
 ### Add a page from the web portal
 
-1. From **Repos>Files** or **Code>Files** for the published repo, open the ![ ](../../media/icons/actions-icon.png) actions icon and choose **File**.
+1. From **Repos>Files** or **Code>Files** for the published repo, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and choose **File**.
 
     > [!div class="mx-imgBorder"]  
     > ![Add a page to the wiki from the web portal](media/wiki/publish-code-add-edit-files-folder.png)
@@ -233,13 +235,13 @@ Each update you make requires you commit your changes to the repository. You can
     > [!div class="mx-imgBorder"]  
     > ![Filter wiki TOC](media/wiki/publish-wiki-new-file-dialog.png)
 
-3. Enter the contents of the page. For details about supported Markdown features, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
+3. Enter the contents of the page. For details about supported Markdown features, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](./markdown-guidance.md).
 
 4. When done, choose **Commit**, and then fill in the Commit dialog form.
 
 ### Upload files to a folder
 
-1. If you have existing content already defined, you can upload it into a folder. Open the ![ ](../../media/icons/actions-icon.png) actions icon and choose **Upload file(s)**.
+1. If you have existing content already defined, you can upload it into a folder. Open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and choose **Upload file(s)**.
 
     > [!div class="mx-imgBorder"]  
     > ![Upload files to a folder option](media/wiki/publish-wiki-upload-files.png)
@@ -316,4 +318,3 @@ Displayed in the following example, Test has both a folder and an md file, which
 
 > [!div class="nextstepaction"]
 > [Version, select, or un-publish a published wiki](wiki-select-unpublish-versions.md)
-

@@ -2,7 +2,6 @@
 title: Deployment for Azure Database for MySQL, Kubernetes with Helm, and Ruby on Rails – VSTS Sprint 133 Update
 author: alexcnichols
 ms.author: alexn
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 4/16/2018
 description: In the **Sprint 133 Update** of Visual Studio Team Services (VSTS), we continue to expand on the languages and platforms we support for build and release.
@@ -98,7 +97,7 @@ trigger:
 
 If you want to disable the trigger or override the trigger settings in the YAML files you can do so on the definition.
 
-See the [YAML build triggers](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted-triggers.md) documentation for more information.
+See the [YAML build triggers](/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![ci triggers from yaml](media/133_04.png)

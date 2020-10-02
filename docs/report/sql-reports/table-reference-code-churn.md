@@ -1,12 +1,10 @@
 ---
 title: Code Churn tables 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about the changes in the code that is under version control  
 ms.assetid: c158a791-7f9d-4440-aa47-87a9497da9e2
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -34,6 +32,6 @@ You can query for data about the changes in the code that is under version contr
   
 ## Related notes
 -  [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md)   
--  [Code Churn](../excel/code-churn-excel-report.md)   
+-  [Code Churn](/previous-versions/azure/devops/report/excel/code-churn-excel-report)   
 -  [Run Coverage tables](run-coverage-tables.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

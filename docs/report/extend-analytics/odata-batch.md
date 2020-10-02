@@ -2,14 +2,12 @@
 title: OData batch support 
 titleSuffix: Azure DevOps 
 description: Guidelines for extension developers who want to learn how to write good OData queries 
-ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: mijacobs
 ms.reviewer: prprice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/2/2018
+ms.date: 07/14/2020
 ---
 
 # OData batch support
@@ -32,13 +30,12 @@ The $batch endpoint is located at:
 >  https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/$batch
 > ``` 
 > 
-> 
 > [!NOTE]
 > The $batch endpoint is not available with a project scope, but the queries within a batch can contain project scoping.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData

@@ -2,11 +2,7 @@
 title: Consume NuGet packages in Visual Studio
 description: Consume NuGet packages from Azure DevOps Services or Team Foundation Server by adding a feed to Visual Studio
 ms.assetid: BF919E28-65C2-40E3-8A49-5BF0DA3DE598
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 11/14/2019
 monikerRange: '>= tfs-2017'

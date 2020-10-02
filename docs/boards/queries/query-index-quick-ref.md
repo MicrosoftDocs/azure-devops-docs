@@ -1,22 +1,20 @@
 ---
 title: Look up definitions and sample queries 
 titleSuffix: Azure Boards
-description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:  
 ms.topic: reference  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 10/02/2019
+ms.date: 05/15/2020
 ---
 
 # Query quick reference 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Use this index to quickly access information on query editor tasks, operators available based on data type, and access sample queries. 
 
@@ -138,7 +136,7 @@ The following table indicates the operators and macros available for the differe
 </tr>
 <tr>
 	<td><strong>String</strong> </td>
-    <td>Also includes <strong>picklistString</strong><sup>2</sup>. Short single-line text that can contain up to 255 Unicode characters. String fields support the <strong>Title</strong> field, picklists (drop-down menus), user account ids, <strong>Tags</strong>, and other fields. <p>Query samples: <a href="titles-ids-descriptions.md" data-raw-source="[Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md)">Query by titles, IDs, and rich-text fields</a> and <a href="planning-ranking-priorities.md" data-raw-source="[Query by picklist value](planning-ranking-priorities.md)">Query by picklist value</a>.</p></td>
+    <td>Also includes <strong>picklistString</strong><sup>2</sup>. Short single-line text that can contain up to 255 Unicode characters. String fields support the <strong>Title</strong> field, picklists (drop-down menus), user accounts, <strong>Tags</strong>, and other fields. <p>Query samples: <a href="titles-ids-descriptions.md" data-raw-source="[Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md)">Query by titles, IDs, and rich-text fields</a> and <a href="planning-ranking-priorities.md" data-raw-source="[Query by picklist value](planning-ranking-priorities.md)">Query by picklist value</a>.</p></td>
     <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
     <p><strong>Macros</strong>: <strong>[Any]</strong>, valid with the <strong>Work Item Type</strong> field<br/>
     <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong><sup>7</sup>, valid with the <strong>Team Project</strong> field </p>
@@ -168,8 +166,13 @@ The following table indicates the operators and macros available for the differe
 7. The <strong>@Project</strong> macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 8. The <strong>@TeamAreas</strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 9. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
-11. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
+11. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
 
+
+
+[!INCLUDE [temp](../includes/note-macro-web-portal.md)]
+
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 <a id="samples" />
 

@@ -2,10 +2,8 @@
 title: Processes | REST API Reference for Team Foundation Server
 description: Work with processes programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 118682B4-1067-4F9C-A38F-26B02F235334
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -78,7 +76,7 @@ GET https://mytfsserver/DefaultCollection/_apis/process/processes?api-version=1.
 
 #### Sample code
 
-* [C# (ListProcesses method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/ProjectsAndTeams/ProcessesSample.cs#L13)
+* [C# (ListProcesses method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProcessesSample.cs#L13)
 
 ## Get a process
 <a id="GetProcess"></a>
@@ -120,4 +118,4 @@ GET https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-
 
 #### Sample code
 
-* [C# (GetProcess method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/ProjectsAndTeams/ProcessesSample.cs#L29)
+* [C# (GetProcess method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProcessesSample.cs#L29)

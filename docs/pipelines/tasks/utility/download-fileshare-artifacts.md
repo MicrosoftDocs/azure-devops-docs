@@ -1,10 +1,7 @@
 ---
 title: Download Fileshare Artifacts task
 description: Download Fileshare Artifacts task for Azure Pipelines and TFS
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 515F989D-28E5-4EB3-99E4-7F81E9977F6C
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -16,7 +13,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to download fileshare artifacts.
+Use this task to download fileshare artifacts.
 
 ::: moniker range="azure-devops"
 

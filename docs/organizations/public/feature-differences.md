@@ -3,10 +3,8 @@ title: Differences and limitations
 titleSuffix: Azure DevOps Services Public Project
 description: Differences and limitations for non-members
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid: 
 ms.reviewer:
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

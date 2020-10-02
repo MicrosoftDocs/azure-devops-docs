@@ -2,12 +2,10 @@
 title: Code, workitem, and wiki search - index of topics
 description: Search with Azure DevOps and TFS
 ms.assetid: A8EB4B0C-5656-4070-9A0F-488AB8288BBE
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: overview
-ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -21,11 +19,11 @@ using just a web browser.
 
 ## 5-minute quickstarts
 
-| | | 
-| --- | --- |
-| <br />[Search code](code-search.md) | <br />[Search work items](work-item-search.md) 
-| <br />[Search packages](advanced-package-syntax.md) |<br />[Search wiki](../wiki/search-wiki.md) 
-| | | 
+- [Search code](code-search.md)
+- [Search work items](work-item-search.md) 
+- [Search packages](advanced-package-syntax.md)
+- [Search wiki](../wiki/search-wiki.md) 
+
 
 ## Videos
 

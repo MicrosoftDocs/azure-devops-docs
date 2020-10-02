@@ -6,11 +6,11 @@ ms.topic: include
 
 |Query editor   |Action  |Query results |  Action  |
 |-------------|----------|---------|---------|
-|![Left/right arrow](/azure/devops/boards/media/icons/Arrow_Next.png) ![ ](/azure/devops/boards/media/icons/Arrow_Previous.png) |Move focus left/right |![Left/right arrow](/azure/devops/boards/media/icons/Arrow_Next.png) ![ ](/azure/devops/boards/media/icons/Arrow_Previous.png) |Scroll left/right |
-|![Up/Down arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![ ](/azure/devops/boards/media/icons/Arrow_Down.png) |Move focus up/down |**PgUp/PgDn**|Scroll up/down |
-|**Shift+**![Up/Down arrow](/azure/devops/boards/media/icons/Arrow_Up.png)![ ](/azure/devops/boards/media/icons/Arrow_Down.png) |Highlight consecutive clauses |**Shift+**![Up/Down arrow](/azure/devops/boards/media/icons/Arrow_Up.png)![ ](/azure/devops/boards/media/icons/Arrow_Down.png) | Highlight consecutive rows|
-|**Shift+**![Left arrow](/azure/devops/boards/media/icons/Arrow_Next.png) |Move focus left one field at a time |**Shift+Alt,n** | Move focus to next item |
-|**Shift+**![Right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png) |Move focus right one field at a time |**Shift+Alt,p** | Move focus to previous item |
+|**← →**|Move focus left/right |**← →**|Scroll left/right |
+|**↑↓**|Move focus up/down |**PgUp/PgDn**|Scroll up/down |
+|**Shift+↑↓**|Highlight consecutive clauses |**Shift+↑↓**| Highlight consecutive rows|
+|**Shift+←**|Move focus left one field at a time |**Shift+Alt,n** | Move focus to next item |
+|**Shift+→**|Move focus right one field at a time |**Shift+Alt,p** | Move focus to previous item |
 |**End** |Move focus to end of current clause | **End** |Move focus to bottom of list|
 |**Enter** |Move focus down |**Enter** |Open selected work item |
 |**Tab** |Move focus right, one field at a time |**Home** |Move focus to top of list |

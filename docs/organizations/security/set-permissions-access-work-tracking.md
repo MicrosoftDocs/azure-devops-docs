@@ -2,20 +2,18 @@
 title: Set permissions and access for work tracking
 titleSuffix: Azure DevOps
 description: How to grant or restrict access to work tracking tasks for Azure DevOps & Team Foundation Server
-ms.technology: devops-security
-ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 03/15/2019
+ms.date: 04/23/2020
 ---
 
 # Set permissions and access for work tracking
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md).
 > [!NOTE]
@@ -82,48 +80,6 @@ Project collection-level permissions include all permissions you can set at the 
 </tbody>
 </table>
 
-## Edit project-level or collection-level/instance-level information
-
-The **Edit project-level information** and **Edit instance-level information** (also referred to as Edit collection-level information) provide permissions to several work tracking features as summarized below. To add users or set permissions at these levels, see [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
-
-<table width="80%">
-<tbody valign="top">
-<tr>
-<th width="35%">Edit project-level information</th>
-<th width="65%">Edit instance-level information</th>
-</tr>
-
-<tr>
-<td>
-<ul>
-<li>Add and administer teams and all team-related features</li>
-<li>Create and modify areas and iterations</li>
-<li>Edit shared work item queries</li>
-<li>Edit project level permission ACLs</li>
-<li>Manage process templates</li>
-<li>Customize a project</li>
-<li>Create and modify global lists</li>
-<li>Edit event subscriptions (email or SOAP) on project level events.</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Add and administer teams and all team-related features</li>
-<li>Create and modify areas and iterations</li>
-<li>Edit check-in policies</li>
-<li>Edit shared work item queries</li>
-<li>Edit project level and collection level permission ACLs</li>
-<li>Manage process templates</li>
-<li>Customize a project or process</li>
-<li>Create and modify global lists</li>
-<li>Edit event subscriptions (email or SOAP) on project or collection level events.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-
 <a name="set-permissions-area-path" /> 
 
 ## Create child nodes, modify work items under an area path   
@@ -155,7 +111,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
-1. From the web portal for the project, choose the ![ ](../../media/icons/gear_icon.png) gear icon.  
+1. From the web portal for the project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon.  
 
     > [!div class="mx-imgBorder"]  
     > ![Web portal, Open Admin context, project level](../settings/media/areas/modify-areas-its-open-admin-context-ts.png)
@@ -169,19 +125,19 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 1. Choose the ... context menu for the node you want to manage and select **Security**.  
 
-    ![Open the security dialog](media/set-permissions-area-node-open.png)
+    ![In the context menu, select Security.](media/set-permissions-area-node-open.png)
 
 ::: moniker-end   
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
+1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then choose **Areas**. 
 
     ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
 
 1. Choose the context menu for the node you want to manage.  
 
-    ![Open the security dialog](../../reference/media/ALM_CW_OpenSecurityDialog.png)  
+    ![Choose the context menu for the node you want to manage.](../../reference/media/ALM_CW_OpenSecurityDialog.png)  
 
 2. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 
@@ -233,9 +189,12 @@ To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans
 
 ## Move or permanently delete work items 
 
-By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the Recycle bin. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
+By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the **Recycle Bin**. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
 
 For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the project and choose the user or group you want to grant permissions. (To learn how to access project-level **Security**, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).)
+
+> [!NOTE]   
+> The **Move work items out of this project** permission requires the project uses the Inherited process model. 
 
 In this example, we grant members assigned to the team administrator role, who belong to the Team Admin groups, permissions to move work items to another project and to permanently delete work items.   
 

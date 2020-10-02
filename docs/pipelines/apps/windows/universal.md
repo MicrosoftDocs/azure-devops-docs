@@ -2,12 +2,7 @@
 title: Build your Universal Windows Platform app
 ms.custom: seodec18
 description: Define a CI pipeline that builds your Universal Windows Platform (UWP) solution on Team Foundation Server and Visual Azure Pipelines.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: E3E15C22-3211-4FCC-A10C-5717EA8B116E
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 12/20/2017
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'

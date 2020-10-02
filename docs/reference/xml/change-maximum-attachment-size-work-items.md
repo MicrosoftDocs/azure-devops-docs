@@ -2,14 +2,13 @@
 title: Change the maximum attachment size for work items
 titleSuffix: TFS
 description: Use the TFS web service to increase the size of files you attach for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: a37734d7-8db0-44e5-9e4a-31ddf9261e9e
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: conceptual
-monikerRange: '<= azure-devops'
+monikerRange: '< azure-devops'
 ms.date: 05/10/2017  
 ---
 

@@ -3,14 +3,13 @@ title: Customize your work tracking experience
 titleSuffix: Azure DevOps 
 description: Guide to configuring and customizing work tracking features in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: process
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/20/2020
 ---
 
 # Customize your work tracking experience 
@@ -72,79 +71,85 @@ The following table summarizes the differences between the three supported proce
 <tbody valign="top" align="center">
 <tr>
 <td align="left">WYSIWYG editing</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
 <td align="left">Create inherited custom processes</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 <td></td>
 <td> </td>
 </tr>
 <tr>
 <td align="left">Create custom process templates (see note 1)</td>
 <td> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Inherit changes in system processes (Agile, Scrum, CMMI)</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
 <td align="left">Updated process changes automatically apply to projects</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
 <td> </td>
 </tr>
 <tr>
 <td align="left">Basic customizations supported (fields, workflow, work item types, backlog levels)</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Global lists</td>
 <td>Picklists</td>
 <td>(see note 2)</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 <tr>
-<td align="left">Advanced customizations supported (custom link types, team fields, global workflow)</td>
+<td align="left">Advanced customizations supported (custom link types, team fields, global workflow, test management, and select process configuration) (see note 3)</td>
 <td> </td>
 <td> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 <tr>
-<td align="left">Update Microsoft field mappings using the <a href="xml/upload-or-download-the-microsoft-project-mapping-file.md" data-raw-source="[**TFSFieldMapping**](xml/upload-or-download-the-microsoft-project-mapping-file.md)"><strong>TFSFieldMapping</strong></a> command-line tool</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td align="left">Initial configuration of permissions and security groups (see note 3)</td>
+<td> </td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td align="left">Update Microsoft field mappings using the <a href="/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file" data-raw-source="[**TFSFieldMapping**](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file)"><strong>TFSFieldMapping</strong></a> command-line tool (see note 4)</td>
+<td> </td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Use the <a href="witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md" data-raw-source="[**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)"><strong>witadmin</strong> command-line tools</a> to edit projects</td>
 <td> </td>
 <td> </td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">Use the <strong>witadmin</strong> command-line tools to list information about projects</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>  </td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">REST API (read)</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 <tr>
 <td align="left">REST API (write)</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
 <td> </td>
 <td> </td>
 </tr>
@@ -155,10 +160,16 @@ The following table summarizes the differences between the three supported proce
 
 1. A process determines the building blocks used to track work. A process template specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas.     
 2. Hosted XML customization supports adding and updating global lists with a process update (subject to limits on maximum size of each list). To learn more, see [Work tracking object limits](../organizations/settings/work/object-limits.md).  
+3. The Inherited process model doesn't support customization of the following features available with customization of process templates. Instead, you customize these areas within the web portal interface on a project-by-project basis. Or, you can use REST APIs or the Azure DevOps CLI command tool.   
+	- Configure areas and iterations  
+	- Work item queries  
+	- Security groups and permissions   
+	- Permissions and access to functional areas such as version control and build  
+4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. Starting with Visual Studio 2019, the Team Foundation plug-in for Office no longer supports Office Project.
 
 <a id="choose-process-model" />
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ## Choose the process model for your project collection 
 
@@ -196,7 +207,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 <td>
 <ul>
 <li><a href="../organizations/security/access-levels.md" data-raw-source="[About access levels](../organizations/security/access-levels.md)">About access levels</a></li>
-<li><a href="../organizations/accounts/add-team-members.md" data-raw-source="[Add team members (Azure DevOps Services)](../organizations/accounts/add-team-members.md)">Add team members (Azure DevOps Services)</a></li>
+<li><a href="../organizations/security/add-users-team-project.md" data-raw-source="[Add team members (Azure DevOps Services)](../organizations/security/add-users-team-project.md)">Add team members (Azure DevOps Services)</a></li>
 <li><a href="../organizations/security/change-access-levels.md" data-raw-source="[Change access levels (on-premises deployments)](../organizations/security/change-access-levels.md)">Change access levels (on-premises deployments)</a></li>
 <li><a href="../organizations/settings/add-teams.md#add-team-members" data-raw-source="[Add team members (on-premises deployments)](../organizations/settings/add-teams.md#add-team-members)">Add team members (on-premises deployments)</a></li>
 </ul>
@@ -233,7 +244,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
   
 
 
-::: moniker range=">= tfs-2013 <=azure-devops-2019"
+::: moniker range="< azure-devops"
 
 <a id="test-experience"></a>
 
@@ -304,7 +315,7 @@ Do you want to customize your tools in a way that's not supported?
 Here are a few options available to you:  
 
 - Check out [Marketplace extensions](https://marketplace.visualstudio.com/vsts) to see if there's a tool available for your purposes  
-- Determine if a [Service hook](../service-hooks/index.md) will satisfy your needs  
+- Determine if a [Service hook](../service-hooks/overview.md) will satisfy your needs  
 - Create your own tool using [REST APIs](../integrate/index.md)  
 - Add a feature request to our [Developer Community page](https://developercommunity.visualstudio.com/content/idea/post.html?space=21).   
 
@@ -312,9 +323,3 @@ Here are a few options available to you:
 
 [add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
 [add-team-admin]: ../../organizations/settings/add-team-administrator.md
-
- 
- 
-
-
-

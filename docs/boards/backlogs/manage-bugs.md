@@ -4,18 +4,16 @@ titleSuffix: Azure Boards
 description: Manage technical debt and triage bugs using Agile tools in Azure Boards & TFS 
 ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 07/22/2019
+ms.date: 07/09/2020
 ---
 
 # Define, triage, and manage bugs
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
@@ -138,7 +136,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 <td>
 <p>When Test Manager creates bugs, it automatically populates <strong>System Info</strong> and <strong>Found in Build</strong> with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see <a href="../../test/test-different-configurations.md" data-raw-source="[Test different configurations](../../test/test-different-configurations.md)">Test different configurations</a>.</p>
 <p>When you resolve the bug, use <strong>Integrated in Build</strong> to indicate the name of the build that incorporates the code that fixes the bug. </p>
-<p>For on-premises TFS, to access a drop-down menu of all builds that have been run, you can update the <code>FIELD</code> definitions for Found in Build and Integrated in Build to reference a global list. The global list is automatically updated with each build that is run. To learn more, see <a href="../queries/build-test-integration.md" data-raw-source="[Query based on build and test integration fields](../queries/build-test-integration.md)">Query based on build and test integration fields</a>.</p>
+<p>For on-premises Azure DevOps, to access a drop-down menu of all builds that have been run, you can update the <code>FIELD</code> definitions for Found in Build and Integrated in Build to reference a global list. The global list is automatically updated with each build that is run. To learn more, see <a href="../queries/build-test-integration.md" data-raw-source="[Query based on build and test integration fields](../queries/build-test-integration.md)">Query based on build and test integration fields</a>.</p>
 <p>For information about how to define build names, see <a href="../../pipelines/build/options.md" data-raw-source="[build number format options](../../pipelines/build/options.md)">build number format options</a>. </p>
 </td>
 </tr>
@@ -279,7 +277,7 @@ Choose the **Verify** option to re-run tests which identified the bug. (Requires
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017"  
-<img src="../media/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
+![Bug work item form, Actions menu, Verify option](../media/verify-bug-menu-option.png)  
 
 To learn more about running test from the web portal, see [Run tests for web apps](../../test/run-manual-tests.md).
 ::: moniker-end  
@@ -296,6 +294,9 @@ You close a bug once it's verified as fixed. However, you may also close a bug f
 - Cannot Reproduce - tests prove that the bug can't be reproduced
 - Obsolete - the bug's feature is no longer in the product
 - Copied to Backlog - a PBI or user story has been opened to track the bug
+
+> [!TIP]   
+> Once a bug has been closed and the fix is actively released in deployments, recommended practice is to never reopen it due to regression. Instead, you should consider opening a new bug and link to the older, closed bug.   
 
 It's always a good idea to describe any additional details for closing a bug in the Discussion field (new web form) or the History field (old web form) to avoid future confusion as to why the bug was closed. 
 
@@ -349,12 +350,12 @@ You can use Power BI to create more complex reports than what you can get from a
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 
 
 ### Pre-defined SQL Server bug reports
 
-If you work from an on-premises Azure DevOps Server or TFS and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project, you have access to the following reports (Agile and CMMI processes only).  
+If you work from an on-premises Azure DevOps Server and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project, you have access to the following reports (Agile and CMMI processes only).  
 
 - [Bug Status](../../report/sql-reports/bug-status-report.md)  
 - [Bug Trends](../../report/sql-reports/bug-trends-report.md)  
@@ -369,7 +370,7 @@ To learn how to add SQL Server reports for a project, see [Add reports to a proj
 
 SonarQube provides a way of automatically measuring some technical debt. SonarQube finds important violations of best coding practices. You implement Sonar to ensure that developers follow important code metrics like appropriate class and method size or low cyclomatic complexity (a quantitative measure of the number of linearly independent paths through a program's source code).  
 
-By integrating your on-premises TFS with a SonarQube server, you can get the following data:  
+By integrating your on-premises Azure DevOps with a SonarQube server, you can get the following data:  
 - Results of .NET and JavaScript code analysis  
 - Code clone analysis  
 - Code coverage data from tests  

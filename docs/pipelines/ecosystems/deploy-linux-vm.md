@@ -2,10 +2,7 @@
 title: Deploy to a Linux VM
 description: Deploy a web application to a web server on a Linux VM with an environment
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ushan
 author: N-usha
@@ -55,9 +52,9 @@ Use Ubuntu 16.04 for this quickstart. Follow additional steps for Java or JavaSc
 
 #### [Java](#tab/java)
 
-- For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) template, which provides a fully supported OpenJDK-based runtime.
-- For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) Azure template and [configure Tomcat 9.x as a service](https://tomcat.apache.org/tomcat-9.0-doc/setup.html).
-- For deploying Java EE-based Wildfly app, follow the [blog post](https://azure.github.io/AppService/2020/01/31/Wildfly-on-App-Service.html) here. To provision the VM, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/Oracle.OracleWebLogicServer12cEnterprise) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) + WildFly/JBoss 14 
+- For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) template, which provides a fully supported OpenJDK-based runtime.
+- For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) Azure template and [configure Tomcat 9.x as a service](https://tomcat.apache.org/tomcat-9.0-doc/setup.html).
+- For deploying Java EE-based Wildfly app, follow the [blog post](https://azure.github.io/AppService/2020/01/31/Wildfly-on-App-Service.html) here. To provision the VM, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu13-ubuntu-2004) + WildFly/JBoss 14 
 
 
 #### [JavaScript](#tab/java-script)
@@ -78,7 +75,7 @@ You can create an environment in **Environments** within **Pipelines**.
 4.	Choose the Windows or Linux for the **Operating System** and copy PS registration script. 
 5.	Run the copied script from an administrator PowerShell command prompt on each of the target VMs registered with this environment.
     > [!NOTE]
-    > - The Personal Access Token (PAT) of the logged in user is pre-inserted in the script. It expires on the day you generate the script.
+    > - The Personal Access Token (PAT) of the logged in user is pre-inserted in the script and expires after three hours.
     > - If your VM already has any agent running on it, provide a unique name to register with environment.
 6.	Once VM is registered, it will start appearing as an environment resource under **Resources**.
     > [!div class="mx-imgBorder"]
@@ -175,16 +172,16 @@ For more guidance, follow the steps mentioned in [Build your Node.js app with gu
 1. Edit your pipeline and include a [deployment job](../process/deployment-jobs.md) by referencing the environment and the VM resources you created earlier:
     ```YAML
     jobs:  
-      - deployment: VMDeploy
-        displayName: web
-        environment:
-          name:  <environment name>
-          resourceType: VirtualMachine
-          tags: web1
-        strategy:
+    - deployment: VMDeploy
+      displayName: web
+      environment:
+        name:  <environment name>
+        resourceType: VirtualMachine
+        tags: web1
+      strategy:
     ```
 2. You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined for each virtual machine in the environment.
-[Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#deployment-job) is the complete YAML schema for Deployment job.
+[Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema#deployment-job) is the complete YAML schema for Deployment job.
 
 3. You can specify either `runOnce` or `rolling` as a deployment strategy. 
 
@@ -258,6 +255,6 @@ The **Deployments**  view provides complete traceability of commits and work ite
 > ![VMjobs_view](media/vm-jobsview.png)
 
 ## Next Steps
-To learn more about the topics in this guide see [Jobs](../process/phases.md), [Tasks](../process/tasks.md), [Catalog of Tasks](../tasks/index.md), [Variables](../process/variables.md), [Triggers](../build/triggers.md), or [Troubleshooting](../troubleshooting.md).
+To learn more about the topics in this guide see [Jobs](../process/phases.md), [Tasks](../process/tasks.md), [Catalog of Tasks](../tasks/index.md), [Variables](../process/variables.md), [Triggers](../build/triggers.md), or [Troubleshooting](../troubleshooting/troubleshooting.md).
 
 To learn what else you can do in YAML pipelines, see [YAML schema reference](../yaml-schema.md).

@@ -3,20 +3,18 @@ title: Practices that scale
 titleSuffix: Azure Boards
 description: Scaling Agile recommended practices for working in Azure Boards, Azure DevOps, & Team Foundation Server    
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 07/14/2020
 ---
 
 
 # Scaling Agile - Practices that scale  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Enterprise organizations adopt Agile practices for a number of reasons. Prime among these include:  
 
@@ -55,6 +53,7 @@ Engaging customers throughout your product lifecycle is a primary Agile principl
 
 
 ## Improve project visibility
+
 <meta name="keywords" content="Agile culture,Agile project management,Agile tools" />
 The more insight you and your teams have into the goal, vision, and progress of the work being done, the better enabled you&#39;ll be to reduce risks and manage dependencies. 
 
@@ -82,7 +81,7 @@ You improve organizational effectiveness by attending to the culture you want to
   - **Release retrospectives** can help organizations identify areas to improve communications and internal practices and fuel improvement for the next release.
   - **Operational reviews**: are typically held monthly and include representatives from a whole value stream. Spanning a portfolio of projects and other initiatives and using objective, quantitative data, design these retrospectives to provoke discussions about the dynamics affecting performance between teams. 
 
-	See the [Agile Retrospective Resource Wiki](https://retrospectivewiki.org/index.php?title=Main_Page) for ideas, tips, and tools  for planning and conducting retrospectives. 
+	See the [Agile Retrospective Resource Wiki](https://retrospectivewiki.org/index.php?title=Agile_Retrospective_Resource_Wiki) for ideas, tips, and tools  for planning and conducting retrospectives. See also the [Marketplace Retrospectives extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives).
 - **Improvement tracking board**: Good ideas to improve processes can arise from any one at any time. Capturing those ideas in order to discuss and decide on how to act on them in a timely manner is a key to support process improvement efforts.  
 
 	A white board provides any easy and visual means with which to capture ideas. Also, you can create an Improvement tracking team and capture ideas that you track on an electronic [Kanban board](../boards/kanban-basics.md).  

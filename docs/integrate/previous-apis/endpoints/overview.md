@@ -1,5 +1,4 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Service Endpoints Overview | REST API Reference for Team Foundation Server

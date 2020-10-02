@@ -1,11 +1,8 @@
 ---
 title: Deploy to Azure Kubernetes Service
 description: Build and push images to Azure Container Registry; Deploy to Azure Kubernetes Service
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: cdf9ed1b-6986-43c3-8270-5d7d31c1ddf1
-ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 09/28/2019
@@ -21,6 +18,8 @@ monikerRange: 'azure-devops'
 In this step-by-step guide, you'll learn how to create a pipeline that continuously builds and deploys your app. Every time you change your code in a repository that contains a Dockerfile, the images are pushed to your Azure Container Registry, and the manifests are then deployed to your Azure Kubernetes Service cluster.
 
 ## Prerequisites
+
+To ensure that your Azure DevOps project has the authorization required to access your Azure subscription, [create an Azure Resource Manager service connection](../../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-using-automated-security). The service connection is required when you create a pipeline in the project to deploy to Azure Kubernetes Service.  Otherwise, the drop-down lists for **Cluster** and **Container Registry** are empty.    
 
 [!INCLUDE [include](../../includes/prerequisites.md)]
 
@@ -53,7 +52,8 @@ az aks create \
     --name myapp \
     --node-count 1 \
     --enable-addons monitoring \
-    --generate-ssh-keys
+    --generate-ssh-keys \
+    --kubernetes-version 1.16.10
 ```
 
 ## Sign in to Azure Pipelines

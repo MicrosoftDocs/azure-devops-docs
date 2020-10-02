@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Best practices to manage and refine your product backlog in Azure Boards & TFS 
 ms.custom: "boards-backlogs, seodec18"  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -16,7 +14,7 @@ ms.date: 11/19/2018
 
 # Refine your backlog  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 

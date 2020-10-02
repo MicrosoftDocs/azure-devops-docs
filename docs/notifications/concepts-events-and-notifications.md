@@ -3,8 +3,6 @@ title: Events, subscriptions, and notifications
 titleSuffix: Azure DevOps 
 description: Learn about events and subscriptions in Azure DevOps and Team Foundation Server (TFS), and how they're used to create notifications to users.
 ms.technology: devops-collab
-ms.prod: devops
-ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
@@ -37,7 +35,7 @@ Individual users can choose to opt out of any default subscription while other t
 
 ### Custom email subscriptions
 
-Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team notifications](manage-team-notifications.md) or [manage organization notifications](manage-organization-notifications.md).
+Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team notifications](./manage-team-group-notifications.md) or [manage organization notifications](manage-organization-notifications.md).
 
 Individuals can also create custom subscriptions, which apply only to them. Learn how to [manage personal subscriptions](manage-your-personal-notifications.md).
 

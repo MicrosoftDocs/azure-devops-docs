@@ -2,14 +2,11 @@
 title: Container Structure Test Task
 description: Test container structure by container task and integrate test reporting into your build and release pipelines 
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: admahesh
 author: Additi
-ms.date: 10/01/2019
+ms.date: 04/20/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -30,6 +27,17 @@ This task helps you run container structure tests and publish test results to Az
 
 > [!NOTE]
 > This is an early preview feature. More upcoming features will be rolled out in upcoming sprints. 
+
+## Arguments
+
+|Argument|Description|
+|--- |--- |
+|`dockerRegistryServiceConnection`<br/>Docker registry service connection| (Required) Select a Docker registry service connection. Required for commands that need to authenticate with a registry.|
+|`repository` <br/>Container repository| (Required) Name of the repository|
+|`tag` <br/>Tag| The tag is used in pulling the image from docker registry service connection <br/>Default value: `$(Build.BuildId)`|
+|`configFile` <br/>Config file path| (Required) Config files path, that contains container structure tests. Either .yaml or .json files|
+|`testRunTitle` <br/>Test run title| (Optional) Provide a name for the Test Run|
+|`failTaskOnFailedTests` <br/>Fail task if there are test failures| (Optional) Fail the task if there are any test failures. Check this option to fail the task if test failures are detected.|
 
 ## Build, Test and Publish Test
 

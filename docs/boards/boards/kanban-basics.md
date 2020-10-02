@@ -3,10 +3,7 @@ title: Understand and configure your Kanban board
 titleSuffix: Azure Boards
 description: Use the Kanban board, process, and tools to plan and track work in Azure Boards or Team Foundation Server
 ms.custom: boards-kanban  
-ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +12,7 @@ ms.date: 01/08/2018
 
 # Kanban basics
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 To maximize a team's ability to consistently deliver high quality software, Kanban emphasize two main practices. The first, visualize the flow of work, requires you to map your team's workflow stages and configure your Kanban board to match. The second, constrain the amount of work in progress, requires you to set work-in-progress (WIP) limits. You're then ready to track progress on your Kanban board and monitor key metrics to reduce lead or cycle time.  
 
@@ -125,7 +122,7 @@ Updating your Kanban board as work progresses helps keep you and your team in sy
 
 As with most Agile practices, Kanban encourages monitoring key metrics to fine tune your processes. After your team has used the Kanban board for several weeks, check out your Cumulative Flow Diagram (CFD).
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Choose the **Analytics** tab, and then choose **View full report** for the Cumulative Flow Diagram as shown in the following image. 
 

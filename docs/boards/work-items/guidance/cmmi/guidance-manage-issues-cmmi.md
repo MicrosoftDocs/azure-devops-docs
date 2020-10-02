@@ -2,11 +2,9 @@
 title: CMMI process guidance, Manage issues  
 titleSuffix: Azure Boards
 description: Use the issue work item to help you to track problems with the project plan and its activities and tasks  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4f90afe9-9748-42e9-9117-e98ee6543417
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +13,7 @@ ms.date: 01/20/2017
 
 # Manage issues (CMMI)
 
-[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 You can use the issue work item to help you track problems with the project plan and its activities and tasks. Issues are not to be confused with bugs. The bug work item type is provided to track problems with the code and specific failing tests. The issue work item type is provided to help you track all other problems with the project. Some examples are ambiguity in the requirements, unavailability of personnel or other resources, problems with environments, other project risks that are occurring, and, in general, anything that puts successful delivery of the project at risk.  
   

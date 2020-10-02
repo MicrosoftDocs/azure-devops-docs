@@ -4,19 +4,17 @@ titleSuffix: Azure Boards
 description: Choose a process or process template, work with project artifacts in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: work-items 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 09/18/2019
+ms.date: 06/04/2020
 ---
 
 # Choose a process 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Anytime you create a project, you must choose a process or process template based on the process model you use. 
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for Azure Boards. This model supports customization of projects through a WYSIWYG user interface. 
@@ -366,9 +364,12 @@ used by the three default processes.
 
 ### Workflow states, transitions, and reasons
 
-Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. 
+Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state.
 
-Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state. 
+> [!IMPORTANT]  
+> For Azure DevOps Services and Azure DevOps Server 2019, the default workflow transitions support any state to any state transition. You can customize these workflows to restrict some transitions .See [Customize work tracking objects to support your team's processes](../../../reference/customize-work.md).  
+> 
+> Also, you can view the supported workflow transitions for each work item type by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Markeplace extension. This extension adds a new hub under Boards labeled **State Visualizer**. On that page you can choose a work item type and view the workflow state model.  
 
 The following diagrams show the typical forward progression of 
 those WITs used to track work and code defects for the three default processes. 
@@ -544,11 +545,11 @@ Work item types that are added to the Hidden Types category don't appear in the 
 ::: moniker range="tfs-2013"
 
 > [!NOTE]    
->**Feature availability**:  If you upgraded your project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md).  
+> If you upgraded your project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
 >
->The following WITs were added with the indicated TFS version: 
->- Shared Parameters added with TFS 2013.2  
->- Test Plan and Test Suite added with TFS 2013.3  
+> The following WITs were added with the indicated TFS version:   
+> - Shared Parameters added with TFS 2013.2   
+> - Test Plan and Test Suite added with TFS 2013.3  
 
 ::: moniker-end
 
@@ -576,7 +577,7 @@ You can customize a process before or after you create a project that uses that 
  
 - [Upload/download process templates](manage-process-templates.md)  
 - [Changes made to process templates](changes-to-process-templates.md)  
-- [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md)  
+- [Configure features after a TFS upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)  
 
 
 If you have additional questions, see [Azure DevOps support page](https://azure.microsoft.com/support/devops/).

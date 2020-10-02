@@ -2,14 +2,11 @@
 title: YAML schema
 ms.custom: seodec18
 description: An overview of all YAML syntax.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 2/18/2020
+ms.date: 08/26/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -339,6 +336,7 @@ container:
   options: string  # arguments to pass to container at startup
   endpoint: string  # endpoint for a private container registry
   env: { string: string }  # list of environment variables to add
+  # you can also use any of the other supported container attributes
 ```
 
 # [Example](#tab/example)
@@ -438,6 +436,10 @@ Only two jobs run simultaneously.
 
 * * *
 
+> [!NOTE]
+> The `matrix` syntax doesn't support automatic job scaling but you can implement similar
+> functionality using the `each` keyword. For an example, see [nedrebo/parameterized-azure-jobs](https://github.com/nedrebo/parameterized-azure-jobs).
+
 #### Parallel
 
 This strategy specifies how many duplicates of a job should run.
@@ -462,7 +464,7 @@ jobs:
 
 ---
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Deployment job
 
@@ -479,6 +481,8 @@ jobs:
   pool:                # see the following "Pool" schema
     name: string
     demands: string | [ string ]
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
   dependsOn: string
   condition: string
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
@@ -548,7 +552,7 @@ For more information about steps, see the schema references for:
 
 - [Script](#script)
 - [Bash](#bash)
-- [Pwsh](#pwsh)
+- [pwsh](#pwsh)
 - [PowerShell](#powershell)
 - [Checkout](#checkout)
 - [Task](#task)
@@ -588,7 +592,20 @@ variables:
 
 You can repeat `name`/`value` pairs and `group`.
 
-You can also include variables from templates.
+Variables can also be set as read only to [enhance security](security/inputs.md#variables). 
+
+```yaml
+variables:
+- name: myReadOnlyVar
+  value: myValue
+  readonly: true
+```
+
+::: moniker range=">=azure-devops-2020"
+
+You can also include [variables from templates](process/templates.md#variable-reuse).
+
+::: moniker-end
 
 #### [Example](#tab/example/)
 
@@ -648,7 +665,7 @@ variables:
 ## Template references
 
 > [!NOTE]
-> Be sure to see the full [template expression syntax](process/templates.md#template-expressions), which is all forms of `${{ }}`.
+> Be sure to see the full [template expression syntax](process/templates.md), which is all forms of `${{ }}`.
 
 ::: moniker range="> azure-devops-2019"
 
@@ -663,7 +680,7 @@ Azure Pipelines supports four kinds of templates:
 - [Variable](#variable-templates)
 
 You can also use templates to control what is allowed in a pipeline and to define how parameters can be used.
-- [Parameter](#parameter-templates)
+- [Parameter](#parameters)
 
 ::: moniker-end
 
@@ -947,13 +964,14 @@ steps:
 
 ---
 
-### Parameter templates
+## Parameters
 
-You can use templates to define how parameters can be used. 
+You can use parameters in templates and pipelines. 
 
-# [Schema](#tab/schema)
+### [Schema](#tab/parameter-schema)
 
-In the main pipeline:
+The type and name fields are required when defining parameters. See all [parameter data types](process/runtime-parameters.md#parameter-data-types).
+
 
 ```yaml
 parameters:
@@ -961,19 +979,43 @@ parameters:
   type: enum            # data types, see below
   default: any          # default value; if no default, then the parameter MUST be given by the user at runtime
   values: [ string ]    # allowed list of values (for some data types)
-  secret: bool          # whether to treat this value as a secret; defaults to false
 ```
 
-And in the extended template:
+### Types
+
+[!INCLUDE [parameter-data-types](process/includes/parameter-data-types.md)]
+
+### [YAML Example](#tab/yaml-example)
 
 ```yaml
-parameters: { string: any }   # expected parameters
+# File: azure-pipelines.yml
+parameters:
+- name: image
+  displayName: Pool Image
+  type: string
+  default: ubuntu-latest
+  values:
+  - windows-latest
+  - vs2017-win2016
+  - ubuntu-latest
+  - ubuntu-16.04
+  - macOS-latest
+  - macOS-10.14
+
+trigger: none
+
+jobs:
+- job: build
+  displayName: build
+  pool: 
+    vmImage: ${{ parameters.image }}
+  steps:
+  - script: echo The image parameter is ${{ parameters.image }}```
 ```
-See all [parameter data types](process/templates.md#parameter-data-types). 
 
-# [Example](#tab/example)
+### [Template Example](#tab/template-example)
 
-In this example, the pipeline using the template supplies the values to fill into the template.
+You can use parameters to extend a template. In this example, the pipeline using the template supplies the values to fill into the template.
 
 ```yaml
 # File: simple-param.yml
@@ -998,6 +1040,8 @@ extends:
 ```
 
 See [templates](process/templates.md) for more about working with templates.
+
+---
 
 ::: moniker-end
 
@@ -1024,7 +1068,7 @@ resources:
 ### Pipeline resource
 
 If you have an Azure pipeline that produces artifacts, your pipeline can consume the artifacts by using the `pipeline` keyword to define a pipeline resource.
-You can also enable [pipeline-completion triggers](build/triggers.md#pipeline-triggers).
+You can also enable [pipeline-completion triggers](process/pipeline-triggers.md).
 
 # [Schema](#tab/schema)
 
@@ -1090,7 +1134,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from a pipeline resource by using a `download` task. See the [download](/azure/devops/pipelines/yaml-schema?view=azure-devops#download) keyword.
+You can consume artifacts from a pipeline resource by using a `download` task. See the [download](/azure/devops/pipelines/yaml-schema#download) keyword.
 
 ### Container resource
 
@@ -1101,6 +1145,30 @@ The `container` keyword lets you specify your container images.
 [Service containers](process/service-containers.md) run alongside a job to provide various dependencies like databases.
 
 # [Schema](#tab/schema)
+
+::: moniker range="azure-devops"
+
+```yaml
+resources:
+  containers:
+  - container: string  # identifier (A-Z, a-z, 0-9, and underscore)
+    image: string  # container image name
+    options: string  # arguments to pass to container at startup
+    endpoint: string  # reference to a service connection for the private registry
+    env: { string: string }  # list of environment variables to add
+    ports: [ string ] # ports to expose on the container
+    volumes: [ string ] # volumes to mount on the container
+    mapDockerSocket: bool # whether to map in the Docker daemon socket; defaults to true
+    mountReadOnly:  # volumes to mount read-only - all default to false
+      externals: boolean  # components required to talk to the agent
+      tasks: boolean  # tasks required by the job
+      tools: boolean  # installable tools like Python and Ruby
+      work: boolean # the work directory
+```
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
 
 ```yaml
 resources:
@@ -1114,6 +1182,24 @@ resources:
     volumes: [ string ] # volumes to mount on the container
     mapDockerSocket: bool # whether to map in the Docker daemon socket; defaults to true
 ```
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+```yaml
+resources:
+  containers:
+  - container: string  # identifier (A-Z, a-z, 0-9, and underscore)
+    image: string  # container image name
+    options: string  # arguments to pass to container at startup
+    endpoint: string  # reference to a service connection for the private registry
+    env: { string: string }  # list of environment variables to add
+    ports: [ string ] # ports to expose on the container
+    volumes: [ string ] # volumes to mount on the container
+```
+
+::: moniker-end
 
 # [Example](#tab/example)
 
@@ -1140,7 +1226,7 @@ resources:
 
 ::: moniker range="azure-devops-2019"
 
-If your pipeline has [templates in another repository](process/templates.md#use-other-repositories), you must let the system know about that repository.
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must let the system know about that repository.
 The `repository` keyword lets you specify an external repository.
 
 ::: moniker-end
@@ -1162,6 +1248,16 @@ resources:
     name: string  # repository name (format depends on `type`)
     ref: string  # ref name to use; defaults to 'refs/heads/master'
     endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
+    trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
+      branches:
+        include: [ string ] # branch names which will trigger a build
+        exclude: [ string ] # branch names which will not
+      tags:
+        include: [ string ] # tag names which will trigger a build
+        exclude: [ string ] # tag names which will not
+      paths:
+        include: [ string ] # file paths which must match to trigger a build
+        exclude: [ string ] # file paths which will not trigger a build
 ```
 
 # [Example](#tab/example)
@@ -1192,7 +1288,7 @@ The `git` type refers to Azure Repos Git repos.
   GitHub repos require a [GitHub service connection](library/service-endpoints.md) for authorization.
 
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
-  An example is `name: MyBitBucket/vscode`.
+  An example is `name: MyBitbucket/vscode`.
   Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
 
 ## Triggers
@@ -1200,6 +1296,7 @@ The `git` type refers to Azure Repos Git repos.
 * [Push trigger](#push-trigger)
 * [Pull request trigger](#pr-trigger)
 * [Scheduled trigger](#scheduled-trigger)
+* [Pipeline trigger](#pipeline-trigger)
 
 > [!NOTE]
 > Trigger blocks can't contain variables or template expressions.
@@ -1209,7 +1306,6 @@ The `git` type refers to Azure Repos Git repos.
 A push trigger specifies which branches cause a continuous integration build to run.
 If you specify no push trigger, pushes to any branch trigger a build.
 Learn more about [triggers](build/triggers.md?tabs=yaml#ci-triggers) and how to specify them.
-Also, be sure to see the note about [wildcards in triggers](build/triggers.md#wildcards).
 
 #### [Schema](#tab/schema/)
 
@@ -1233,7 +1329,7 @@ Full syntax:
 
 ```yaml
 trigger:
-  batch: boolean # batch changes if true (the default); start a new build for every push if false
+  batch: boolean # batch changes if true; start a new build for every push if false (default)
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
@@ -1245,13 +1341,15 @@ trigger:
     exclude: [ string ] # file paths which will not trigger a build
 ```
 
+If you specify an `exclude` clause without an `include` clause for `branches`, `tags`, or `paths`, it is equivalent to specifying `*` in the `include` clause.
+
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
 ```yaml
 trigger:
-  batch: boolean # batch changes if true (the default); start a new build for every push if false
+  batch: boolean # batch changes if true; start a new build for every push if false (default)
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
@@ -1260,12 +1358,14 @@ trigger:
     exclude: [ string ] # file paths which will not trigger a build
 ```
 
-::: moniker-end
-
 > [!IMPORTANT]
 > When you specify a trigger, only branches that you explicitly configure for inclusion trigger a pipeline.
 > Inclusions are processed first, and then exclusions are removed from that list.
 > If you specify an exclusion but no inclusions, nothing triggers.
+
+::: moniker-end
+
+
 
 #### [Example](#tab/example/)
 
@@ -1351,10 +1451,20 @@ pr:
     exclude: [ string ] # file paths which will not trigger a build
 ```
 
+::: moniker range="> azure-devops-2019"
+
+If you specify an `exclude` clause without an `include` clause for `branches` or `paths`, it is equivalent to specifying `*` in the `include` clause.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
 > [!IMPORTANT]
 > When you specify a pull request trigger, only branches that you explicitly configure for inclusion trigger a pipeline.
 > Inclusions are processed first, and then exclusions are removed from that list.
 > If you specify an exclusion but no inclusions, nothing triggers.
+
+::: moniker-end
 
 # [Example](#tab/example)
 
@@ -1393,15 +1503,15 @@ pr:
 ::: moniker range="<= azure-devops-2019"
 
 YAML scheduled triggers are unavailable in either this version of Azure DevOps Server or Visual Studio Team Foundation Server.
-You can use [scheduled triggers in the classic editor](build/triggers.md?tabs=classic#scheduled-triggers).
+You can use [scheduled triggers in the classic editor](process/scheduled-triggers.md?tabs=classic).
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="> azure-devops-2019"
 
 A scheduled trigger specifies a schedule on which branches are built.
 If you specify no scheduled trigger, no scheduled builds occur.
-Learn more about [scheduled triggers](build/triggers.md?tabs=yaml#scheduled-triggers) and how to specify them.
+Learn more about [scheduled triggers](process/scheduled-triggers.md?tabs=yaml) and how to specify them.
 
 # [Schema](#tab/schema)
 
@@ -1412,13 +1522,12 @@ schedules:
   branches:
     include: [ string ] # which branches the schedule applies to
     exclude: [ string ] # which branches to exclude from the schedule
-  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last run. The default is false.
+  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
 
-> [!IMPORTANT]
-> When you specify a scheduled trigger, only branches that you explicitly configure for inclusion are scheduled for a build.
-> Inclusions are processed first, and then exclusions are removed from that list.
-> If you specify an exclusion but no inclusions, no branches are built.
+> [!NOTE]
+> If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
+
 
 # [Example](#tab/example)
 
@@ -1442,7 +1551,7 @@ schedules:
 
 In the preceding example, two schedules are defined.
 
-The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last run.
+The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last successful scheduled run.
 It runs the pipeline for `master` and all `releases/*` branches, except for those branches under `releases/ancient/*`.
 
 The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays for all `releases/*` branches.
@@ -1452,11 +1561,24 @@ It does so regardless of whether the code has changed since the last run.
 
 ::: moniker-end
 
+### Pipeline trigger
+
+Pipeline completion triggers are configured using a [pipeline resource](#pipeline-resource). For more information, see [Pipeline completion triggers](./process/pipeline-triggers.md).
+
 ## Pool
 
 The `pool` keyword specifies which [pool](agents/pools-queues.md) to use for a job of the pipeline.
 A `pool` specification also holds information about the job's strategy for running.
+
+::: moniker range="azure-devops-2019"
+
+In Azure DevOps Server 2019 you can specify a pool at the job level in YAML, and at the pipeline level in the pipeline settings UI. In Azure DevOps Server 2019.1 you can also specify a pool at the pipeline level in YAML if you have a single implicit job.
+:::moniker-end
+
+::: moniker range=">azure-devops-2019"
 You can specify a pool at the pipeline, stage, or job level.
+:::moniker-end
+
 The pool specified at the lowest level of the hierarchy is used to run the job.
 
 # [Schema](#tab/schema)
@@ -1520,7 +1642,8 @@ pool:
 ```
 
 ---
-::: moniker range="azure-devops"
+
+::: moniker range=">=azure-devops-2020"
 
 ## Environment
 
@@ -1536,7 +1659,7 @@ environment:                # create environment and/or record deployments
   name: string              # name of the environment to run this job on.
   resourceName: string      # name of the resource in the environment to record the deployments against
   resourceId: number        # resource identifier
-  resourceType: string      # type of the resource you want to target. Supported types - virtualMachine, Kubernetes, appService
+  resourceType: string      # type of the resource you want to target. Supported types - virtualMachine, Kubernetes
   tags: string | [ string ] # tag names to filter the resources in the environment
 strategy:                 # deployment strategy
   runOnce:                # default strategy
@@ -1550,10 +1673,10 @@ If you specify an environment or one of its resources but don't need to specify 
 ```yaml
 environment: environmentName.resourceName
 strategy:                 # deployment strategy
-    runOnce:              # default strategy
-      deploy:
-        steps:
-        - script: echo Hello world
+  runOnce:              # default strategy
+    deploy:
+      steps:
+      - script: echo Hello world
 ```
 
 # [Example](#tab/example)
@@ -1562,19 +1685,19 @@ You can reduce the deployment target's scope to a particular resource within the
 
 ```yaml
 environment: 'smarthotel-dev.bookings'
-  strategy:
-    runOnce:
-      deploy:
-        steps:
-        - task: KubernetesManifest@0
-          displayName: Deploy to Kubernetes cluster
-          inputs:
-            action: deploy
-            namespace: $(k8sNamespace)
-            manifests: $(System.ArtifactsDirectory)/manifests/*
-            imagePullSecrets: $(imagePullSecret)
-            containers: $(containerRegistry)/$(imageRepository):$(tag)
-            # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
+strategy:
+  runOnce:
+    deploy:
+      steps:
+      - task: KubernetesManifest@0
+        displayName: Deploy to Kubernetes cluster
+        inputs:
+          action: deploy
+          namespace: $(k8sNamespace)
+          manifests: $(System.ArtifactsDirectory)/manifests/*
+          imagePullSecrets: $(imagePullSecret)
+          containers: $(containerRegistry)/$(imageRepository):$(tag)
+          # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
 ```
 
 ---
@@ -1697,7 +1820,7 @@ steps:
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
-## Pwsh
+## pwsh
 
 The `pwsh` keyword is a shortcut for the [PowerShell task](tasks/utility/powershell.md) when that task's **pwsh** value is set to **true**.
 The task runs a script in PowerShell Core on Windows, macOS, and Linux.
@@ -1724,7 +1847,7 @@ steps:
 
 ```yaml
 steps:
-- pwsh: echo Hello $(name)
+- pwsh: Write-Host Hello $(name)
   displayName: Say hello
   name: firstStep
   workingDirectory: $(build.sourcesDirectory)
@@ -1734,6 +1857,9 @@ steps:
 ```
 
 ---
+
+> [!NOTE]
+> Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
 
 Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](process/phases.md?tabs=yaml#timeouts).
 
@@ -1764,7 +1890,7 @@ steps:
 
 ```yaml
 steps:
-- powershell: echo Hello $(name)
+- powershell: Write-Host Hello $(name)
   displayName: Say hello
   name: firstStep
   workingDirectory: $(build.sourcesDirectory)
@@ -1774,6 +1900,9 @@ steps:
 ```
 
 ---
+
+> [!NOTE]
+> Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
 
 Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](process/phases.md?tabs=yaml#timeouts).
 
@@ -2061,6 +2190,9 @@ Learn more about [conditions](process/conditions.md?tabs=yaml),
 Syntax highlighting is available for the pipeline schema via a Visual Studio Code extension.
 You can [download Visual Studio Code](https://code.visualstudio.com), [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and [check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).
 The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.
-<!-- For people who get here by searching for, say, "azure pipelines template YAML schema",
+
+You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](https://docs.microsoft.com/rest/api/azure/devops/distributedtask/yamlschema/get?view=azure-devops-rest-5.1&preserve-view=true).
+
+<!-- For people who get here by searching for, say, "azure pipelines template YAML schema", 
      look around a bit, and then type "Ctrl-F JSON" when they don't see anything promising
      in the first few screenfuls. -->

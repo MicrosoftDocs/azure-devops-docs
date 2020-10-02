@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to follow wiki pages and get notifications in Azure DevOps 
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
@@ -23,7 +21,7 @@ Follow a Wiki page and get notified by email whenever the page is edited, delete
 
 Get immediate notifications for rename and delete. For edit notifications, you get a 30-minute digest email with all edits that occurred within that period. This digest prevents the emails from spamming your inbox.
 
-   ![follow-wiki-page.png](media/wiki/follow-wiki-page.png)
+   ![Screenshot showing how to follow a page.](media/wiki/follow-wiki-page.png)
 
 When you create a page, you become a default follower of the page. You can unfollow the page in the following two ways:
 
@@ -47,5 +45,4 @@ To reduce noise, you don’t get notified for pages that you follow when the act
 - [Clone an existing Git repo](../../repos/git/clone.md)
 - [Share code with push](../../repos/git/pushing.md)
 - [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
-- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md)
-
+- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](./markdown-guidance.md)

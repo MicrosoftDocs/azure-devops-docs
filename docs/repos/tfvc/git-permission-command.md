@@ -3,11 +3,7 @@ title: Git permission command
 titleSuffix: Azure Repos
 description: Git permission command
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: reference
 ms.date:  01/07/2019
 monikerRange: '>= tfs-2015'
@@ -16,9 +12,9 @@ monikerRange: '>= tfs-2015'
 
 # Git permission command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
-Modifies the user access control list (ACL) and displays authorization settings for a git repository or branch within a git repository.        
+Modifies the user access control list (ACL) and displays authorization settings for a Git repository or branch within a Git repository.        
 
 **Requirements:** 
 * To view permissions, you must be able to view the artifact for the type of information you are requesting: **View collection-level information** for project collections, **View project-level information** for projects, and **Read** for repository (and branch if you are viewing branch permissions).
@@ -49,7 +45,7 @@ tf git permission [/allow:(* |perm1[,perm2,...]]
 |      **/remove:***(\* \|perm1[,perm2,...])*       | The permissions to remove (sometimes referred to as not set). You can use all three of **/allow**, **/deny**, and **/remove** in the same invocation. For more information on how allow, deny, and remove settings interact, see [Permission settings](../../organizations/security/about-permissions.md#permission-settings). |
 |   **/user:**<em>username1[,username2,...]</em>    |                                                                                                              The user or users for which to allow, deny, or remove. You must specify at least one user or group.                                                                                                               |
 |  **/group:**<em>groupname1[,groupname2,...]</em>  |                                                                                      The groups or groups for which to allow, deny, or remove. You must specify at least one user or group. Groups and individuals can be used together.                                                                                       |
-| **/collection:**<em>TeamProjectCollectionUrl</em> |                                                 Specifies the URL of the project collection that contains the permissions to view or modify. For example: <http://myserver:8080/tfs/DefaultCollection> or https://fabrikam-fiber.visualstudio.com. This parameter is required.                                                 |
+| **/collection:**<em>TeamProjectCollectionUrl</em> |                                                 Specifies the URL of the project collection that contains the permissions to view or modify. For example: `http://myserver:8080/tfs/DefaultCollection` or `https://fabrikam-fiber.visualstudio.com`. This parameter is required.                                                 |
 |  **/teamproject:**<em>TeamProjectIdentifier</em>  |                                                                                                                       Specifies the name of the project that contains the permissions to view or modify.                                                                                                                       |
 |   **/repository:**<em>RepositoryIdentifier</em>   |                                                                                                                        Specifies the name of the repo that contains the permissions to view or modify.                                                                                                                         |
 |          **/branch:**<em>BranchName</em>          |                                                                                      Specifies the name of the branch that contains the permissions to view or modify. If you specify **/branch**, you must also specify **/repository**.                                                                                      |

@@ -1,12 +1,10 @@
 ---
 title: Work Item History tables
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for historical data about bugs, tasks, and other types of work items defined in an on-premises Team Foundation Server 
 ms.assetid: 54f07bd4-dc55-4f68-a28e-e61ccce77060
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -85,8 +83,8 @@ group by d.DateSK, wi.System_Id, wi.System_Title
   
   
 ## Related notes 
-- [COALESCE (Transact-SQL)](https://msdn.microsoft.com/library/ms190349.aspx)  
+- [COALESCE (Transact-SQL)](/sql/t-sql/language-elements/coalesce-transact-sql)  
 -  [Test cases and work items](perspective-test-analyze-report-work.md)    
--  [Burndown](../excel/burndown-excel-report.md)    
--  [Test Team Progress](../excel/test-team-progress-excel-report.md)    
--  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)  
+-  [Burndown](/previous-versions/azure/devops/report/excel/burndown-excel-report)    
+-  [Test Team Progress](/previous-versions/azure/devops/report/excel/test-team-progress-excel-report)    
+-  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

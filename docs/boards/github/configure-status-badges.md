@@ -1,16 +1,14 @@
-﻿---
+---
 title: Enable Kanban board badge status for GitHub repo
 titleSuffix: Azure Boards
 description: Configure your Kanban board badge status to appear on your GitHub repo  
 ms.assetid: 
-ms.prod: devops
 ms.technology: devops-agile
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/19/2019
+ms.date: 07/09/2020
 ---
 
 # Configure status badges to add to GitHub README files 
@@ -43,7 +41,7 @@ The syntax shown works whether you have or haven't [connected your project to a 
 
 1.  [Open your Kanban board](../boards/kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -53,7 +51,7 @@ The syntax shown works whether you have or haven't [connected your project to a 
 	> [!div class="mx-imgBorder"]
 	> ![Settings,Status badge](media/badges/status-badge.png) 
 
-1. Choose the badge type you want and choose the ![ ](../../media/icons/copy.png) copy icon to copy the Markdown syntax for the badge. 
+1. Choose the badge type you want and choose the :::image type="icon" source="../../media/icons/copy.png" border="false"::: copy icon to copy the Markdown syntax for the badge. 
 
 	In progress items ignores the first and last columns.
 	All columns includes the first and last columns. 
@@ -61,12 +59,12 @@ The syntax shown works whether you have or haven't [connected your project to a 
 	Also, you can customize the set of columns by specifying `2` for the columnOptions and then a comma-delimited list of the board columns to appear. For example, `columnOptions=2&columns=Proposed,Committed,In%20Progress,In%20Review`, as shown in the following syntax. For column labels that include spaces, you must encode the space with <strong>%20</strong>. For example, <strong>In%20Progress</strong>.
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings,Status badge](media/badges/badge-syntax.png) 
+	> ![Customize the set of columns that appear.](media/badges/badge-syntax.png) 
 
 	And which will cause a badge similar to the following to display. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings,Status badge](media/badges/custom-columns.png) 
+	> ![A badge that displays.](media/badges/custom-columns.png) 
 
 1. When done, choose <strong>Save and close</strong> or <strong>Cancel</strong>.
 

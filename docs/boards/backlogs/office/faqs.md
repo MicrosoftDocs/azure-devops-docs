@@ -2,20 +2,18 @@
 title: FAQs for working in Excel
 titleSuffix: Azure Boards
 description: Find answers to frequently asked questions about working in Microsoft Excel to track work in Azure Boards
-ms.prod: devops
 ms.technology: devops-agile
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/22/2019
+ms.date: 07/09/2020
 ---
 
 
 # FAQs: Work in Excel connected to Azure Boards 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
 
@@ -39,7 +37,7 @@ Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 
 ### Q: Can I use Excel on my Mac?
 
-**A:** No. macOS isn't supported. Excel must be installed on the same computer where Visual Studio or Team Explorer are installed. These applications require Windows.
+**A:** No. macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel or other Office client isn't supported.  
 
 ### Q: Can I open a query in Excel from the web portal?  
 
@@ -48,7 +46,7 @@ Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 > [!div class="mx-imgBorder"]  
 > ![Azure DevOps Open in Excel extension](media/excel/open-in-excel.png)
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2020" 
 
 ### Q: Can I import or update work items without using Excel?  
 
@@ -58,11 +56,11 @@ Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 
 ### Q: How do I connect an existing Excel workbook to Azure DevOps?  
 
-**A:** See [Azure Boards and Office integration, Connect from Excel or Project](track-work.md#excel-project). 
+**A:** See [Connect Azure Boards to an Office client](track-work.md#excel-project). 
 
 ### Q: How do I share an Excel workbook with others? 
 
-If you want to share an Excel workbook that has work items listed within it, you may want to disconnect the connection to Azure DevOps to prevent accidental publishing of changes by others. You can disconnect the workbook, share it or work offline, and later reconnect the workbook. For details, see [Azure Boards and Office integration, Disconnect a document file from the network](track-work.md#WorkingOffline).
+If you want to share an Excel workbook that has work items listed within it, you may want to disconnect the connection to Azure DevOps to prevent accidental publishing of changes by others. You can disconnect the workbook, share it or work offline, and later reconnect the workbook. For details, see [Connect Azure Boards to an Office client, Disconnect a document file from the network](track-work.md#WorkingOffline).
 
 
 ### Q: How do I connect when special protocols are in use on my network?  
@@ -73,26 +71,25 @@ If you want to share an Excel workbook that has work items listed within it, you
 
 ### Q: How do I disable the Team menu? 
 
-**A:** If you want to disable the add-in, see [Add or remove an add-in](https://support.office.com/en-sg/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460). 
+**A:** If you want to disable the add-in, see [Add or remove an add-in](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460). 
 
 ## Work with linked work items
 
 ### Q: How do I publish to a tree? 
 
-**A:** Follow the instructions provided in [Bulk add or modify work items with Excel, Add linked backlog items and tasks](bulk-add-modify-work-items-excel.md#tree-list) 
+**A:** Follow the instructions provided in [Bulk add or modify work items with Excel, Import work items, tree list](bulk-add-modify-work-items-excel.md#tree-list) 
 
-### Q: Can I bulk-edit link types other than parent-child links? 
+### Q: Can I bulk-edit link types other than tree-topology link types? 
 
-**A:** No. Excel only supports adding and modifying parent-child or hierarchical links.   
+**A:** No. Excel only supports adding and modifying hierarchical links.   
 
 To bulk edit links of other types, you can use the following clients: 
 
-::: moniker range="azure-devops" 
-
--   Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.  
--   Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
--   Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
--  Use the [az boards work-item relation add](/cli/azure/ext/azure-devops/boards/work-item/relation) command.
+::: moniker range=">= azure-devops-2020" 
+ 
+- Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
+- Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
+- Use the [az boards work-item relation add](/cli/azure/ext/azure-devops/boards/work-item/relation) command.
 
 ::: moniker-end   
 
@@ -138,23 +135,50 @@ If you start your worksheet from an existing query, you'll see all the column fi
 > ![Choose columns dialog](media/excel/choose-columns.png)
 
 
+<a name="resolve-publishing-errors"></a>
 
 ### Q: How do I resolve publishing issues? 
 
-**A:** To resolve publishing errors, see one of these topics:   
+::: moniker range=">= azure-devops-2019" 
 
-- [Data conflicts](resolve-excel-data-conflicts-publish-refresh.md)  
-- [Data validation errors](resolve-excel-data-validation-errors.md)  
-- [Invalid links](resolve-excel-invalid-links-tree-list.md)  
+**A:** To resolve publishing errors that arise when working in Excel, see one of the following topics:     
+
+::: moniker-end  
+
+::: moniker range="<= tfs-2018" 
+
+**A:** To resolve publishing errors that arise when working in Excel or Project, see one of the following topics:     
+
+::: moniker-end  
+
+- [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md): 
+	A data conflict occurs when one team member changes a field value in either Project or Excel at the same time another team member changes the same field in Azure DevOps.
+
+- [Resolve data validation errors](resolve-excel-data-validation-errors.md):
+	A data validation error occurs if a team member changes a work item in a way that violates the rules for that type of work item.
+  
+- [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
+	An invalid link occurs if a team member views work items in Excel as a hierarchy or tree list, and moves a work item or sorts the list so that it breaks the dependencies between work items. You can resolve this error by reviewing the error message and repositioning work items to reflect the work item structure.
+
+- [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md): 
+	If you determine that hours are counted twice in reports that contain task hours, you can correct the problem by using the Work Items With Summary Values team query.
 
 ### Can I delete work items from Excel?
 
 ::: moniker range="azure-devops" 
+
 **A:** No. You can't delete work items from Excel. The only way to delete work items is from the web portal or the `az boards work-item delete` command-line tool. For details, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
 
 ::: moniker-end  
 
-::: moniker range="< azure-devops" 
+::: moniker range="azure-devops-2020" 
+
+**A:** No. You can't delete work items from Excel. The only way to delete work items is from the web portal, or with the `az boards work-item delete` or **witadmin** command-line tools. For details, see [Remove or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
+
+::: moniker-end 
+
+
+::: moniker range="< azure-devops-2020" 
 
 **A:** No. You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command-line tool. For details, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md).
 

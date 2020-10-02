@@ -1,14 +1,10 @@
 ---
 title: Delete and recover packages | Azure Artifacts
 description: Recover deleted packages and set up policies to automatically delete packages hosted in Azure DevOps Services and Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 06/30/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -27,9 +23,10 @@ You must be an **owner** to delete an artifact.
 
 Choose the artifact from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
-![Delete Maven artifact Azure DevOps Services](../media/delete/delete-maven-package.png)
+> [!div class="mx-imgBorder"]
+> ![Delete Maven artifact Azure DevOps Services](../media/delete/delete-maven-package.png)
 
-Deleting packages respects [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
+Deleting packages respects [feed immutability](../artifacts-key-concepts.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
 #### [npm](#tab/npm/)
 There are two options available to remove a version of an npm package from a feed.
@@ -38,7 +35,7 @@ There are two options available to remove a version of an npm package from a fee
 Deprecating a version can help you discourage new usage of it by presenting a warning message when the package is installed.
 2. **Unpublish:** Unpublishing a version of a package makes it unavailable for install. After unpublishing, a package can be [restored from the Recycle Bin](#recover-a-deleted-package-from-the-recycle-bin) within 30 days of deletion. After 30 days, it is permanently unavailable to restore. Unpublishing a package will cause others that depend on it to break.
 
-Deprecate and unpublish both respect [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
+Deprecate and unpublish both respect [feed immutability](../artifacts-key-concepts.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
 ::: moniker range="azure-devops"
 
@@ -49,12 +46,14 @@ You must be a **contributor** to deprecate and an **owner** to unpublish.
 
 Choose the package from **Azure Artifacts** select the appropriate option from the menu:
 
-![Unpublish npm package Azure DevOps Services](../media/delete/deprecate-unpublish-npm-package-newnav.png)
+> [!div class="mx-imgBorder"]
+> ![Unpublish npm package Azure DevOps Services](../media/delete/deprecate-unpublish-npm-package-newnav.png)
 
 
 Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
-![Unpublish npm package Azure DevOps Services](../media/delete/deprecate-unpublish-npm-package.png)
+> [!div class="mx-imgBorder"]
+> ![Choose the package and select the appropriate option.](../media/delete/deprecate-unpublish-npm-package.png)
 
 ::: moniker-end
 
@@ -66,7 +65,8 @@ You must be a **contributor** to deprecate and an **owner** to unpublish.
 
 Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
-![Unpublish npm package in TFS](../media/delete/deprecate-unpublish-npm-package.png)
+> [!div class="mx-imgBorder"]
+> ![Unpublish npm package in TFS](../media/delete/deprecate-unpublish-npm-package.png)
 
 ::: moniker-end
 
@@ -85,7 +85,7 @@ There are two options available to remove a version of a NuGet package from a fe
 1. **Unlist:** Unlisting a version of a package modifies how the package appears in NuGet clients (see the [NuGet docs](/nuget/policies/deleting-packages) for a full description of how unlist works). Unlisting a version can help you prevent new usage of it without breaking dependent projects and builds.
 2. **Delete:**  Deleting a version of a package makes it unavailable for install. After deleting, a package can be [restored from the Recycle Bin](#recover-a-deleted-package-from-the-recycle-bin) within 30 days of deletion. After 30 days, it is permanently unavailable to restore. Deleting a package will cause others that depend on it to break.
 
-Unlist and delete both respect [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
+Unlist and delete both respect [feed immutability](../artifacts-key-concepts.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
 You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
 ::: moniker range=">= azure-devops-2019"
@@ -96,7 +96,8 @@ You must be a **contributor** to unlist and an **owner** to delete.
 
 Choose the package from **Azure Artifacts** and select the appropriate option from the menu:
 
-![Unlist or delete npm package Azure DevOps Services](../media/delete/unlist-delete-nuget-package-newnav.png)
+> [!div class="mx-imgBorder"]
+> ![Unlist or delete npm package Azure DevOps Services](../media/delete/unlist-delete-nuget-package-newnav.png)
 
 ::: moniker-end
 
@@ -104,7 +105,8 @@ Choose the package from **Azure Artifacts** and select the appropriate option fr
 
 Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
-![Unlist or delete npm package Azure DevOps Services](../media/delete/unlist-delete-nuget-package.png)
+> [!div class="mx-imgBorder"]
+> ![Unlist or delete npm package Azure DevOps Services](../media/delete/unlist-delete-nuget-package.png)
 
 ::: moniker-end
 
@@ -116,7 +118,8 @@ You must be a **contributor** to unlist and an **owner** to delete.
 
 Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
-![Unlist or delete npm package TFS](../media/delete/unlist-delete-nuget-package.png)
+> [!div class="mx-imgBorder"]
+> ![Unlist or delete npm package TFS](../media/delete/unlist-delete-nuget-package.png)
 
 ::: moniker-end
 
@@ -125,15 +128,15 @@ Choose the package from the **Packages** page in the **Build and Release** page 
 
    ::: moniker range=">= azure-devops-2019"
 
-   > [!div class="mx-imgBorder"] 
-   >![Connect to feed button in the upper-right of the page](../media/connect-to-feed-azure-devops-newnav.png)
-   > 
+    > [!div class="mx-imgBorder"] 
+    > ![Connect to feed button in the upper-right of the page](../media/connect-to-feed-azure-devops-newnav.png)
 
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
 
-   ![Connect to feed button in the upper-right of the page](../media/connect-to-feed.png)
+    > [!div class="mx-imgBorder"]
+    > ![Connect to feed button in the upper-right of the page](../media/connect-to-feed.png)
 
    ::: moniker-end
 
@@ -152,14 +155,16 @@ You must be an **owner** to delete a Python package.
 
 Choose the package from **Azure Artifacts** and select _Delete latest_ from the menu:
 
-![Unlist or delete Universal package](../media/delete/delete-python-package.png)
+> [!div class="mx-imgBorder"]
+> ![Unlist or delete Universal package](../media/delete/delete-python-package.png)
 
 #### [Universal](#tab/universal/)
 You must be an **owner** to delete a Universal Package.
 
 Choose the package from **Azure Artifacts** and select _Delete latest_ from the menu:
 
-![Unlist or delete Universal package](../media/delete/delete-universal-package.png)
+> [!div class="mx-imgBorder"]
+> ![Unlist or delete Universal package](../media/delete/delete-universal-package.png)
 
 * * *
 ## Automatically delete old package versions with retention policies
@@ -170,21 +175,25 @@ With retention policies, you can set the **maximum number of versions** to retai
 
 If you'd like to retain a package version indefinitely, you can promote it to a [view](../concepts/views.md). Versions that are promoted to views are exempt from retention policies, and are retained *in addition to* those retained by the maximum number of versions retention policy. Retention policies will not delete any version that has been promoted to a view.
 
+> [!NOTE]
+> Package demotion is not currently supported. If you want this feature to be added to future releases, please feel free to **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). See [Get started with feed views](../feeds/views.md#get-started-with-feed-views) for more information.
+
 To configure retention policies:
 
 ::: moniker range=">= azure-devops-2019"
 
 1. Navigate to Azure Artifacts:
 
-    ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"]
+    > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
 2. Select the gear icon in your feed and select **Feed settings**:
-
-    ![Top right of screen, gear icon and then feed settings](../media/feed-settings-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"]
+    > ![Top right of screen, gear icon and then feed settings](../media/feed-settings-azure-devops-newnav.png)
 
 2. From the **Feed details** tab, in the **Retention policies** setting, enter the maximum number of versions per package to retain, and the number of days to keep recently downloaded packages:
-
-    ![Edit retention policy settings for old packages in Azure DevOps Services or TFS](../media/retention-policy-settings.png)
+    > [!div class="mx-imgBorder"]
+    > ![Edit retention policy settings for old packages in Azure DevOps Services or TFS](../media/retention-policy-settings.png)
 
 3. Click **Save**.
 
@@ -193,30 +202,35 @@ To configure retention policies:
 ::: moniker range="<= tfs-2018"
 
 1. Navigate to your feed from the **Packages** page in the **Build and Release** page group and select the gear icon: 
-
-    ![Edit an Azure DevOps Services feed in Package](../media/edit-feed-full.png)
+    > [!div class="mx-imgBorder"]
+    > ![Edit an Azure DevOps Services feed in Package](../media/edit-feed-full.png)
 
 2. From the **Retention** tab, enter the maximum number of versions per package to retain:
-
-    ![Edit retention policy settings for old packages in Azure DevOps Services or TFS](../media/retention-policy-settings-tfs.png)
+    > [!div class="mx-imgBorder"]
+    > ![Edit retention policy settings for old packages in Azure DevOps Services or TFS](../media/retention-policy-settings-tfs.png)
 
 3. Click **Save**.
 
 ::: moniker-end
 
+> [!NOTE]
+> When you enable retention policies, a version of a package will be deleted when **both** of the following criteria are met:
+> 1. The number of published versions of that package reaches the **maximum number of versions** limit, **AND** 
+> 2. A version of that package has not been downloaded within the number of **days to keep recently downloaded packages**.
+
 ## Recover a deleted package from the recycle bin
 
-If you've deleted/unpublished an npm package, NuGet package, or Maven artifact from Azure Artifacts, builds that depend on that package will start to fail.  You won't be able to repush that package to the feed because of [immutability](../artifacts-key-concepts.md#immutability).  In order to recover the package and have builds start working again, a feed owner can recover it from the Recycle Bin.
+If you've deleted/unpublished an npm package, NuGet package, or Maven artifact from Azure Artifacts, builds that depend on that package will start to fail.  You won't be able to re-push that package to the feed because of [immutability](../artifacts-key-concepts.md#immutability).  In order to recover the package and have builds start working again, a feed owner can recover it from the Recycle Bin.
 
 ::: moniker range=">= azure-devops-2019"
 
 1. Navigate to Azure Artifacts:
-
-    ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
+    > [!div class="mx-imgBorder"]
+    > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
 2. Select "Recycle Bin".
-
-   > Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
+    > [!NOTE]
+    > Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
 
 3. Click on a package to get more details such as *Version*, *Deleted date/time*, and *Scheduled permanent deletion*.
 
@@ -227,17 +241,18 @@ If you've deleted/unpublished an npm package, NuGet package, or Maven artifact f
 ::: moniker range="<= tfs-2018"
 
 1. Find the Recycle Bin in the **Packages** page underneath the **Build and Release** page group in Azure DevOps Services: 
-
-    ![Azure DevOps Services Recycle Bin](../media/recycle-bin/find-recycle-bin.png)
-
+    > [!div class="mx-imgBorder"]
+    > ![Azure DevOps Services Recycle Bin](../media/recycle-bin/find-recycle-bin.png)
+    
+    > [!NOTE]
     > Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
 
 2. Click a package to get more details such as: *Version*, *Deleted date/time*, and *Scheduled permanent deletion:*
-
-    ![Azure DevOps Services Recycle Bin package view](../media/recycle-bin/recycle-bin-view.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure DevOps Services Recycle Bin package view](../media/recycle-bin/recycle-bin-view.png)
 
 3. Select a version to *Restore to feed:*
-
-    ![Restore an Azure DevOps Services package with Recycle Bin](../media/recycle-bin/recycle-bin-restore.png)
+    > [!div class="mx-imgBorder"]
+    > ![Restore an Azure DevOps Services package with Recycle Bin](../media/recycle-bin/recycle-bin-restore.png)
 
 ::: moniker-end

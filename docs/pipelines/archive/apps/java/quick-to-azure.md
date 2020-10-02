@@ -3,12 +3,7 @@ title: Quick Start - Build and Deploy a Java app | Azure Pipelines
 ms.custom: seodec18
 description: Set up a continuous integration (CI) build for your Java app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: E67B2B25-5928-4784-A6CD-E998F4FDE620
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.date: 06/27/2017
 monikerRange: 'azure-devops'
 ---

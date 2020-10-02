@@ -5,9 +5,7 @@ description: Turn live updates on or off for a  Kanban board in Azure Boards or 
 ms.custom: boards-kanban 
 ms.topic: quickstart
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -29,7 +27,7 @@ Enable live updates to automatically refresh your Kanban board when changes occu
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose the ![ ](../media/icons/view-options-icon.png) view options icon and move the slider for **Live updates** to On.  
+Choose the :::image type="icon" source="../media/icons/view-options-icon.png" border="false"::: view options icon and move the slider for **Live updates** to On.  
 
 > [!div class="mx-imgBorder"]  
 > ![Kanban board](media/turn-live-updates-on-agile.png) 
@@ -39,15 +37,18 @@ Choose the ![ ](../media/icons/view-options-icon.png) view options icon and move
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
-From the Kanban board, choose the ![ ](../media/icons/live-updates-icon.png) **Live updates** icon.  
+From the Kanban board, choose the :::image type="icon" source="../media/icons/live-updates-icon.png" border="false"::: **Live updates** icon.  
 
-![Kanban board, live updates icon](/azure/devops/boards/media/kanban-live-updates.png)  
+![Kanban board, live updates icon](../media/kanban-live-updates.png)  
+
+::: moniker-end
+
 
 As one team member updates the status of a work item, other team members will see those updates in real time as they occur.  
 
 ![Live update](media/kanban-live-updates.gif)  
 
-::: moniker-end
+
 
 [!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 

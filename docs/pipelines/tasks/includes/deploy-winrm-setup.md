@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+ms.prod: devops
+ms.technology: devops-cicd-tasks
 ---
 
 <!-- Windows Remote Management details and setup -->
@@ -31,7 +36,8 @@ Existing Classic virtual machines can be also selected by using the
 task.
 
 * **Azure Resource Group**. If you have an 
-[Azure Resource Group](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-hero-tutorial/)
+[Azure Resource Group](/azure/virtual-machines/windows/tutorial-manage-vm)
+
 already defined in the Azure portal, you must configure it to use the WinRM HTTPS 
 protocol. You need to open port 5986 in the firewall, and install a 
 self-signed certificate.

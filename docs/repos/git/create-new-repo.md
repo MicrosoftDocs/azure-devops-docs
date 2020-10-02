@@ -3,11 +3,7 @@ title: Create a new Git repo in your project
 titleSuffix: Azure Repos
 description: Create a new Git repo in an Azure DevOps Services or Team Foundation Server Project
 ms.assetid: 9c6fabfa-ae17-4e65-93a2-9e476f9f88ba
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
-author: apawast
 ms.topic: quickstart
 ms.date: 11/02/2018
 monikerRange: '>= tfs-2015'
@@ -15,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # Create a new Git repo in your project
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
 
 Azure DevOps Services and TFS projects contain Git repositories, work items, builds, and releases. You can use Git repos in your projects to manage your source code as your project grows. This guide shows you how to create a Git repo using the web portal for either Azure DevOps Services (hosted on Azure) or Team Foundation Server (TFS - on-premises).
 

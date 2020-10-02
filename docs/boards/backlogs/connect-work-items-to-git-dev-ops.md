@@ -4,14 +4,12 @@ titleSuffix: Azure Boards
 description: Create a branch, commit, or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
 ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
-ms.date: 12/04/2018
+ms.date: 07/09/2020
 ---
 
 # Drive Git development from a work item   
@@ -20,7 +18,6 @@ ms.date: 12/04/2018
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
-<!---
 Review this article to learn:  
 
 >[!div class="checklist"]    
@@ -29,10 +26,9 @@ Review this article to learn:
 > * Perform a squash merge  
 > * Create a branch for several work items  
 > * Link a work item to existing development and build objects    
--->
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"  
 
 > [!IMPORTANT]   
 > This article addresses creating new branches and adding links to commits and pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
@@ -66,7 +62,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	<img src="media/git-dev-pr-create-branch.png" alt="User story work item form, Development section, create new branch" style="border: 1px solid #C3C3C3;" /> 
  
-	... or, from the form's ![Actions icon](../media/icons/actions-icon.png) Actions menu.  
+	... or, from the form's   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu.  
 
 	<img src="media/git-dev-pr-create-branch-from-action-menu.png" alt="User story work item form, Action menu, add new branch" style="border: 1px solid #C3C3C3;" /> 
 
@@ -93,7 +89,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	If this is the first time pushing changes from a new branch, you'll need to publish the branch before pushing your changes. For more details, see [Share code with push](../../repos/git/pushing.md).   
 
-4. <a id="create-pull-request">  </a> Create a [pull request](../../repos/git/pull-requests.md)  from the work item form.  
+4. <a id="create-pull-request">  </a> Create a [pull request](../../repos/git/pull-requests.md) from the work item form.  
 
 	You create a pull request to merge the changes you made to a master branch and get your changes reviewed by other members of your team.  
 
@@ -101,16 +97,16 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 5.	Your view will switch to **Code**, Pull Requests page. Complete creating the pull request as shown. 
   
- 	<img src="media/git-dev-create-pull-request.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" />  
+ 	![Code view, Pull Request page.](media/git-dev-create-pull-request.png)   
 
 	> [!NOTE]  
-	> Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.
+	> Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.  
 	 
-	<img src="media/git-dev-pr-complete.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" /> 
+	![Pull Request page, Create pull request.](media/git-dev-pr-complete.png)  
 
 	Check the box for **Squash changes when merging** and then complete the merge. 
 
-	<img src="media/git-dev-complete-merge.png" alt="Complete pull request dialog box, check squash-merge" style="border: 1px solid #C3C3C3;" /> 
+	![Complete pull request dialog box, check squash-merge](media/git-dev-complete-merge.png)  
 
 6. Upon completion, you should see a similar screen as follows.   
 
@@ -119,7 +115,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 7.	Open the work item form or refresh the form, expand the Development section (click the ![full screen icon](../media/icons/fullscreen_icon.png) icon), and you'll see the links that have been added to support the operations you just completed.  
 
-	<img src="media/git-dev-development-section-completed-links.png" alt="Work item form, Development section, links added" style="border: 1px solid #C3C3C3;" /> 
+	![Work item form, Development section, links added](media/git-dev-development-section-completed-links.png)  
 
 
 <a id="add-branch-multi-wi">  </a>
@@ -141,44 +137,44 @@ And, we specify the name of the branch.
 
 ## Link to existing development and build objects
 
-All items listed under the Development section also appear under the ![Links tab icon](media/icon-links-tab-wi.png) Links tab. All development actions initiated from the Development section are also logged under the ![History tab icon](media/icon-history-tab-wi.png) History tab. 
+All items listed under the Development section also appear under the :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: Links tab. All development actions initiated from the Development section are also logged under the ![History tab icon](media/icon-history-tab-wi.png) History tab. 
 
 ![Links tab, development links](media/add-work-item-dev-links.png)  
 
 To link a work item to an existing object, click the ![Add link](../media/icons/add-link-icon.png) Add links icon and then choose the link type.  
 
-![Select multiple items from backlog](media/add-work-items-link-to-existing-branch.png)
+![Select Add links icon and then choose the link type.](media/add-work-items-link-to-existing-branch.png)
 
 [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md).   
 
 
 ### Remove a link 
 
-If you want to remove a link, you can do so from the Development section by highlighting it first and then click the ![delete icon](../media/icons/delete_icon.png) delete icon.  
+If you want to remove a link, you can do so from the Development section by highlighting it first and then click the :::image type="icon" source="../media/icons/delete_icon.png" border="false"::: delete icon.  
 
 ![Development section, delete a link](media/add-work-item-remove-dev-link.png)  
 
-Or, you can select it from the ![Links tab icon](media/icon-links-tab-wi.png) Links tab and click the ![delete icon](../media/icons/delete-link.png) remove link icon.
+Or, you can select it from the :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: Links tab and click the :::image type="icon" source="../media/icons/delete_icon.png" border="false"::: remove link icon.
 
 ## Related articles
 
 Learn more about tracking work with work items and developing with Git from these resources: 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"  
 
 - [Add work items](add-work-items.md)  
-- [Git overview](../../repos/git/overview.md) 
+- [Git overview](../../repos/git/index.yml) 
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md) 
-- [TFVC overview](../../repos/tfvc/overview.md)  
+- [TFVC overview](../../repos/tfvc/index.yml)  
 - [Create your backlog](create-your-backlog.md)   
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= tfs-2018"
 
 - [Add work items](add-work-items.md)  
-- [Git overview](../../repos/git/overview.md)  
-- [TFVC overview](../../repos/tfvc/overview.md)  
+- [Git overview](../../repos/git/index.yml)  
+- [TFVC overview](../../repos/tfvc/index.yml)  
 - [Create your backlog](create-your-backlog.md)   
 
 ::: moniker-end
@@ -189,7 +185,7 @@ Keep in mind that the Development section only appears within the web portal wor
 
 With Git commits, any work items that have been linked to a commit will be listed under the Associated work items in the build summary page. 
 
-<img src="media/developer-associated-work-items-build.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />  
+<img src="media/developer-associated-work-items-build.png" alt="Linked work items listed under Associated work items in the build summary page." style="border: 1px solid #C3C3C3;" />  
 
 <!--- Add info about option to set build linking; link to release notes if needed --> 
 
@@ -200,7 +196,7 @@ With Git commits, any work items that have been linked to a commit will be liste
 Links shown in this section appear as a result of these actions:   
 - Creating a branch, commit, or pull request from the work item    
 - Specifying the work item ID during a commit, pull request, or other supported Git or TFVC operation   
-- Specifically linking the work item from the Development section or ![Links tab icon](media/icon-links-tab-wi.png) Links tab to a source code branch, build, or other supported Git or TFVC operation.  
+- Specifically linking the work item from the Development section or :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: Links tab to a source code branch, build, or other supported Git or TFVC operation.  
 
 Hovering over any entry listed under the Development section activates the hyperlink to the associated object.    
 

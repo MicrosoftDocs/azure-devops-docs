@@ -2,10 +2,8 @@
 title: Run cloud-based load tests on your machines
 description: Run cloud-based load tests by using your own subscription and machines using Azure DevOps and TFS
 ms.assetid: FF61D623-7947-4769-B310-B3F477584BA2
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -130,7 +128,6 @@ A build template to help with this configuration is under development.
 * [FAQs for load testing](reference-qa.md#jmeter-tests)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
 * [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
-* [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 

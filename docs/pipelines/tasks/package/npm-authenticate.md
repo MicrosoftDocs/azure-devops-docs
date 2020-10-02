@@ -3,13 +3,10 @@ title: npm Authenticate task (for task runners)
 ms.custom: seodec18
 description: Don't use this task if you're also using the npm task. Provides npm credentials to an `.npmrc` file in your repository for the scope of the build. This enables npm task runners like gulp and Grunt to authenticate with private registries.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: ad884ca2-732e-4b85-b2d3-ed71bcbd2788
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
-ms.date: 05/04/2018
+ms.date: 04/21/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -17,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to provide npm credentials to an `.npmrc` file in your repository for the scope of the build. This enables npm, as well as npm task runners like gulp and Grunt, to authenticate with private registries.
+Use this task to provide npm credentials to an `.npmrc` file in your repository for the scope of the build. This enables npm, as well as npm task runners like gulp and Grunt, to authenticate with private registries.
 
 ::: moniker range="> tfs-2018"
 
@@ -29,11 +26,10 @@ Use this task in a build or release pipeline to provide npm credentials to an `.
 
 ## Arguments
 
-| Argument                                                                                           | Description                                                         |
-| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `workingFile`<br/>.npmrc file to authenticate   | Path to the .npmrc file that specifies the registries you want to work with. Select the file, not the folder, for example &quot;/packages/mypackage.npmrc&quot;. |
-| `customEndpoint`<br/>Credentials for registries outside this organization/collection | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-npm">npm service connection</a> names for registries outside this organization/collection. The specified .npmrc file must contain registry entries corresponding to the service connections. If you only need registries in this organization/collection, leave this blank; the build’s credentials are used automatically. |
-| [!INCLUDE [temp](../includes/control-options-arguments-md.md)] | |
+|Argument| Description |
+| -------|------------ |
+| `workingFile`<br/>.npmrc file to authenticate | Path to the .npmrc file that specifies the registries you want to work with. Select the file, not the folder. <br/>For example \/packages/mypackage.npmrc"|
+| `customEndpoint`<br/>Credentials for registries outside this organization/collection | (Optional) Comma-separated list of [npm service connection](../../library/service-endpoints.md)names for registries outside this organization/collection. The specified `.npmrc` file must contain registry entries corresponding to the service connections. If you only need registries in this organization/collection, leave this blank. The build’s credentials are used automatically.|
 
 
 ## Examples
@@ -93,7 +89,7 @@ The registry URL pointing to an Azure Artifacts feed may or may not contain the 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 ### How does this task work?

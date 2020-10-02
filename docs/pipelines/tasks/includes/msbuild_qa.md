@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 12/23/2019
+ms.prod: devops
+ms.technology: devops-cicd-tasks
 ---
 
 ### Should I use the Visual Studio Build task or the MSBuild task?
@@ -63,14 +68,15 @@ On the Variables tab, make sure you&#39;ve got variables defined for your config
 </tr>
 </table>
 </li>
-<li><p>On the Options tab select <strong>MultiConfiguration</strong> and specify the Multipliers, separated by commas. For example: <code>BuildConfiguration, BuildPlatform</code></p>
-<p>Select Parallel if you want to distribute the jobs (one for each combination of values) to multiple agents in parallel if they are available.</p>
+<li><p>On the Options tab select <strong>Parallel</strong> if you want to distribute the jobs (one for each combination of values) to multiple agents in parallel if they are available.</p>
 </li>
 <li><p>On the Build tab, select this step and specify the Platform and Configuration arguments. For example:</p>
 <ul>
 <li>Platform: <code>$(BuildPlatform)</code></li>
 <li>Configuration: <code>$(BuildConfiguration)</code></li>
 </ul>
+</li>
+<li><p>Under the agent job of the assigned task, on the Parallelism tab, select <strong>Multi-configuration</strong> and specify the Multipliers separated by commas. For example: <code>BuildConfiguration, BuildPlatform</code></p>
 </li>
 </ol>
 
