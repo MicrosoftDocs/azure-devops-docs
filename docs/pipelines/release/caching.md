@@ -443,6 +443,36 @@ steps:
 - script: composer install
 ```
 
+## Docker images
+
+Caching docker images will dramatically reduce the time it takes to run your pipeline.
+
+```YAML
+pool:
+  vmImage: ubuntu-16.04
+
+steps:
+  - task: Cache@2
+    inputs:
+      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
+      path: $(Pipeline.Workspace)/docker
+      cacheHitVar: DOCKER_CACHE_RESTORED
+    displayName: Caching Docker image
+
+  - script: |
+      docker load $(Pipeline.Workspace)/docker/cache.tar
+    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
+
+  - script: |
+      mkdir -p $(Pipeline.Workspace)/docker
+      for fn in ${{ parameters.cacheImages }}
+      do
+        docker pull -q $fn
+      done
+      docker save ${{ parameters.cacheImages }} | $(Pipeline.Workspace)/docker/cachedDocker.tar
+    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
+```
+
 ## Known issues and feedback
 
 If you experience problems enabling caching for your project, first check the list of [pipeline caching issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the microsoft/azure-pipelines-tasks repo. If you don't see your issue listed, [create a new issue](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching).
