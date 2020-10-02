@@ -68,5 +68,4 @@ Billing is set up for your Azure DevOps organization.
 * [Buy CI/CD](buy-more-build-vs.md)
 * [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
 * [Buy cloud-based load testing](buy-load-testing-vs.md)
-* [Azure cost management and billing](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview)
-
+* [Azure cost management and billing](/azure/cost-management-billing/cost-management-billing-overview)

@@ -22,7 +22,7 @@ Learn how to turn on the Azure Active Directory (Azure AD) tenant policy, which 
 
 You must be an Azure DevOps Administrator in Azure AD to manage this policy. 
 
-For more information about the new built-in Azure AD roles, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+For more information about the new built-in Azure AD roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 If you don't see the policy section in Azure DevOps, you aren't an administrator. To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then choose **Azure Active Directory > Roles and administrators**. In case that you aren't an Azure DevOps administrator, talk to your administrator.
 
@@ -82,4 +82,3 @@ The error message is customized.
 * [About access with Azure AD](access-with-azure-ad.md)
 * [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
 * [Resolve orphaned organization](resolve-orphaned-organization.md)
-

@@ -68,7 +68,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	From the team profile, you can do these additional tasks:  
    - [Add team administrators](add-team-administrator.md)
    - [Add team members](#add-team-members)
-   - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
+   - [Navigate to team notifications](../../notifications/manage-team-group-notifications.md)
    - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
@@ -106,7 +106,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	From the team profile, you can do these additional tasks:  
    - [Add team administrators](add-team-administrator.md)
    - [Add team members](#add-team-members)
-   - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
+   - [Navigate to team notifications](../../notifications/manage-team-group-notifications.md)
    - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).

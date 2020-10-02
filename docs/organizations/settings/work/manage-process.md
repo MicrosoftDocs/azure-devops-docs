@@ -45,7 +45,7 @@ Learn how to perform these tasks:
 
 <a id="create-inherited-process"></a>
 ## Create an inherited process
-You can create an inherited process from any one of the four system processes:[Basic](../../../boards/get-started/track-issues-tasks.md), [Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md).   
+You can create an inherited process from any one of the four system processes:[Basic](../../../boards/get-started/plan-track-work.md), [Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md).   
 
 1. From the **Process** page, open the **&hellip;** context menu of the process you'll use to create an inherited process, and then choose **Create inherited process**. 
 
@@ -193,7 +193,3 @@ Project Collection Administrators can [add projects](../../projects/create-proje
 ### Programmatically work with processes 
 
 You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](/rest/api/azure/devops/processes/processes).
-
-
-
-

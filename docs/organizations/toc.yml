@@ -14,15 +14,15 @@
   - name: Set user preferences
     href: ./settings/set-your-preferences.md
   - name: Manage or enable features
-    href: /azure/devops/project/navigation/preview-features?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../project/navigation/preview-features.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Set personal favorites
-    href: /azure/devops/project/navigation/set-favorites?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../project/navigation/set-favorites.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Personal access tokens
     href: ./accounts/use-personal-access-tokens-to-authenticate.md
   - name: SSH public keys
-    href: /azure/devops/repos/git/use-ssh-keys-to-authenticate?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../repos/git/use-ssh-keys-to-authenticate.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Alternate credentials
-    href: /azure/devops/repos/git/auth-overview?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json#ssh-key-authentication
+    href: ../repos/git/auth-overview.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json#ssh-key-authentication
   - name: Manage authorizations
     href: ./settings/manage-authorizations.md
 - name: Organizations
@@ -50,31 +50,31 @@
 - name: Pipelines (Build & release)
   items:
   - name: Agent pools & queues
-    href: /azure/devops/pipelines/agents/pools-queues?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../pipelines/agents/pools-queues.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Parallel jobs 
-    href: /azure/devops/pipelines/licensing/concurrent-jobs?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../pipelines/licensing/concurrent-jobs.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Retention & limits
-    href: /azure/devops/pipelines/policies/retention?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../pipelines/policies/retention.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Test Management (Flaky tests)   
-    href: /azure/devops/pipelines/test/flaky-test-management?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../pipelines/test/flaky-test-management.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Service connections (endpoints)
-    href: /azure/devops/pipelines/library/service-endpoints?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../pipelines/library/service-endpoints.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Deployment pools & groups
-    href: /azure/devops/pipelines/release/deployment-groups/index?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../pipelines/release/deployment-groups/index.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
 - name: Repos (Code)
   items:
   - name: Create & manage Git repositories
-    href: /azure/devops/repos/git/create-new-repo?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../repos/git/create-new-repo.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Manage Git branch policies
-    href: /azure/devops/repos/git/branch-policies?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../repos/git/branch-policies.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Manage repository permissions
-    href: /azure/devops/organizations/security/set-git-tfvc-repository-permissions?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ./security/set-git-tfvc-repository-permissions.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Add TFVC Check-In Policies
-    href: /azure/devops/repos/tfvc/add-check-policies?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../repos/tfvc/add-check-policies.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
 - name: Test
   items:
   - name: Set test retention policies
-    href: /azure/devops/test/how-long-to-keep-test-results?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../test/how-long-to-keep-test-results.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
 - name: Artifacts
   items:
   - name: View storage
@@ -102,7 +102,7 @@
     - name: Rename a project
       href: ./projects/faq-rename-project.md
     - name: Add administrators
-      href: ./accounts/faq-add-administrators.md
+      href: ./accounts/faq-user-and-permissions-management.md
     - name: Organization settings
       href: ./accounts/faq-configure-customize-organization.md
 - name: REST API reference

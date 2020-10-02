@@ -127,8 +127,8 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 > | Restriction type                 | Restriction       |  
 > | ------------------------- | ---------------------- |  
 > | Node length | Must not contain more than 255 characters | 
-> | Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? * : " & < # % + <br/>Must not contain characters that the [local file system prohibits](https://msdn.microsoft.com/library/aa365247.aspx). |
-> | Reserved names | Must contain more than a period (.) or two periods (..)<br/>Must not be a [system-reserved name](https://msdn.microsoft.com/library/aa365247.aspx) such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX<br/>| 
+> | Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? * : " & < # % + <br/>Must not contain characters that the [local file system prohibits](/windows/win32/fileio/naming-a-file). |
+> | Reserved names | Must contain more than a period (.) or two periods (..)<br/>Must not be a [system-reserved name](/windows/win32/fileio/naming-a-file) such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX<br/>| 
 > | Path length | Must contain fewer than 4,000 Unicode characters | 
 > | Path hierarchy depth | Must be fewer than 14 levels deep | 
 

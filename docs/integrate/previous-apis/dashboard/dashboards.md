@@ -46,7 +46,7 @@ GET https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_api
 | Parameter    | Type         | Default    | Notes
 | :----------- | :----------- | :--------- | :-----------------
 | URL
-| account      | string       |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string       |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string       |            | Your Visual Studio Project.
 | teamId       | string       |            | Your Team ID.
 | Query
@@ -108,7 +108,7 @@ POST https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_ap
 | Parameter    | Type       | Default   | Notes
 | :----------- | :--------- | :-------- | :-----------------------------------------------------
 | URL
-| account      | string     |           | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string     |           | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string     |           | Your Visual Studio Project.
 | teamId       | string     |           | Your Team ID.
 | Query
@@ -203,7 +203,7 @@ GET https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_api
 | Parameter    | Type         | Default    | Notes
 | :----------- | :----------- | :--------- | :-----------------
 | URL
-| account      | string       |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string       |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string       |            | Your Visual Studio Project.
 | teamId       | string       |            | Your Team ID.
 | id           | string       |            | ID of the dashboard.
@@ -573,7 +573,7 @@ DELETE https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_
 | Parameter    | Type       | Default    | Notes
 | :----------- | :--------- | :--------- | :-----------------
 | URL
-| account      | string     |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string     |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string     |            | Your Visual Studio Project.
 | teamId       | string     |            | Your Team ID.
 | id           | string     |            | ID of the dashboard.

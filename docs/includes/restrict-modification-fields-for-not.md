@@ -25,6 +25,6 @@ For example, the Priority field, for the User Story work item type, becomes read
 
 :::image type="content" source="/azure/devops/organizations/settings/work/media/rules/rule-priority-field-read-only-for-not.png" alt-text="Custom rule, Current user is not a member of a group, make Priority field read-only":::
 
-To learn more, see [Add a rule to a work item type (Inheritance process)](/azure/devops/organizations/settings/work/custom-rules). 
+To learn more, see [Add a rule to a work item type (Inheritance process)](../organizations/settings/work/custom-rules.md). 
 
 ::: moniker-end
