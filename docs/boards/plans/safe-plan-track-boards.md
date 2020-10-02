@@ -111,9 +111,9 @@ Each program manager defines and prioritizes their features. Here, we show the F
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, Add Features](media/safe-plan-track/add-feature.png)
 
-2.	Continue adding Epics as needed by continuing to type in their titles. You can add details later. 
+2.	Continue adding Features as needed by continuing to type in their titles. You can add details later. 
 
-	When finished, you should have a list of Features as shown. THe Node Name indicates the last node in the area path specified for the work item. By adding Features from the team's Feature Backlog, the Area Path is automatically assigned the team's Default Area Path. For the Fiber Suite, that is Fabrikam\Fiber Suite. 
+	When finished, you should have a list of Features as shown. The Node Name indicates the last node in the area path specified for the work item. By adding Features from the team's Feature Backlog, the Area Path is automatically assigned the team's Default Area Path. For the Fiber Suite, that is Fabrikam\Fiber Suite. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, List Features](media/safe-plan-track/define-features.png)
