@@ -81,11 +81,11 @@ Token examples for different namespaces are provided in the next section.
       AnalyticsViews
    :::column-end:::
    :::column span="1":::
-      `Read                
-      Edit                
-      Delete              
-      Execute             
-      ManagePermissions`   
+      `Read`                
+      `Edit`                
+      `Delete`              
+      `Execute`             
+      `ManagePermissions`   
    :::column-end:::
    :::column span="2":::
       [Manages object-level Analytics views permissions](/azure/devops/organizations/security/permissions#analytics-views-permissions) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](/azure/devops/report/powerbi/analytics-security).  
@@ -102,21 +102,21 @@ Token examples for different namespaces are provided in the next section.
       Build  
    :::column-end:::
    :::column span="1":::
-      `ViewBuilds                       
-      EditBuildQuality                 
-      RetainIndefinitely               
-      DeleteBuilds                     
-      ManageBuildQualities             
-      DestroyBuilds                    
-      UpdateBuildInformation           
-      QueueBuilds                      
-      ManageBuildQueue                 
-      StopBuilds                       
-      ViewBuildDefinition              
-      EditBuildDefinition              
-      DeleteBuildDefinition            
-      OverrideBuildCheckInValidation   
-      AdministerBuildPermissions`       
+      `ViewBuilds`                       
+      `EditBuildQuality`                 
+      `RetainIndefinitely`               
+      `DeleteBuilds`                     
+      `ManageBuildQualities`             
+      `DestroyBuilds`                    
+      `UpdateBuildInformation`           
+      `QueueBuilds`                      
+      `ManageBuildQueue`                 
+      `StopBuilds`                       
+      `ViewBuildDefinition`              
+      `EditBuildDefinition`              
+      `DeleteBuildDefinition`            
+      `OverrideBuildCheckInValidation`   
+      `AdministerBuildPermissions`       
    :::column-end:::
    :::column span="2":::
       [Manages object-level build permissions](/azure/devops/organizations/security/permissions#build-object-level).  
@@ -134,14 +134,14 @@ Token examples for different namespaces are provided in the next section.
       CSS  
    :::column-end:::
    :::column span="1":::
-      `GENERIC_READ         
-      GENERIC_WRITE        
-      CREATE_CHILDREN      
-      DELETE               
-      WORK_ITEM_READ       
-      WORK_ITEM_WRITE      
-      MANAGE_TEST_PLANS    
-      MANAGE_TEST_SUITES`   
+      `GENERIC_READ`         
+      `GENERIC_WRITE`        
+      `CREATE_CHILDREN`      
+      `DELETE`               
+      `WORK_ITEM_READ`       
+      `WORK_ITEM_WRITE`      
+      `MANAGE_TEST_PLANS`    
+      `MANAGE_TEST_SUITES`   
    :::column-end:::
    :::column span="2":::
       [Manages area path (object-level) permissions](/azure/devops/organizations/security/permissions#area-path-object-level) to create, edit, and delete child nodes and set permissions to view or edit work items in a node. You can manage these permissions through the [Project settings, Project configuration administrative interface](/azure/devops/organizations/security/set-permissions-access-work-tracking#create-child-nodes-modify-work-items-under-an-area-path).  
@@ -156,12 +156,12 @@ Token examples for different namespaces are provided in the next section.
       DashboardsPrivileges  
    :::column-end:::
    :::column span="1":::
-      `Read              
-      Create                  
-      Edit                    
-      Delete                  
-      ManagePermissions       
-      MaterializeDashboards`   
+      `Read`              
+      `Create`                  
+      `Edit`                    
+      `Delete`                  
+      `ManagePermissions`       
+      `MaterializeDashboards`   
    :::column-end:::
    :::column span="2":::
       [Manages dashboard (object-level) permissions](/azure/devops/organizations/security/permissions#dasboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](/azure/devops/report/dashboards/dashboard-permissions#set-permissions-for-a-project-dashboard).   
@@ -176,22 +176,22 @@ Token examples for different namespaces are provided in the next section.
       Git Repositories    
    :::column-end:::
    :::column span="1":::
-      `Administer                
-      GenericRead               
-      GenericContribute         
-      ForcePush                 
-      CreateBranch              
-      CreateTag                 
-      ManageNote                
-      PolicyExempt             
-      CreateRepository          
-      DeleteRepository          
-      RenameRepository          
-      EditPolicies              
-      RemoveOthersLocks         
-      ManagePermissions         
-      PullRequestContribute    
-      PullRequestBypassPolicy`  
+      `Administer`                
+      `GenericRead`               
+      `GenericContribute`         
+      `ForcePush`                 
+      `CreateBranch`              
+      `CreateTag`                 
+      `ManageNote`                
+      `PolicyExempt`             
+      `CreateRepository`          
+      `DeleteRepository`          
+      `RenameRepository`          
+      `EditPolicies`              
+      `RemoveOthersLocks`         
+      `ManagePermissions`         
+      `PullRequestContribute`    
+      `PullRequestBypassPolicy`  
    :::column-end:::
    :::column span="2":::
       [Manages Git repository (object-level) permissions](/azure/devops/organizations/security/permissions#git-repository-permissions-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](/azure/devops/organizations/security/set-git-tfvc-repository-permissions#set-git-repository-permissions).  
@@ -209,10 +209,10 @@ Token examples for different namespaces are provided in the next section.
       Iteration 
    :::column-end:::
    :::column span="1":::
-      `GENERIC_READ      
-      GENERIC_WRITE     
-      CREATE_CHILDREN   
-      DELETE`          
+      `GENERIC_READ`      
+      `GENERIC_WRITE`     
+      `CREATE_CHILDREN`   
+      `DELETE`          
    :::column-end:::
    :::column span="2":::
       [Manages iteration path (object-level) permissions](/azure/devops/organizations/security/permissions#iteration-path-permissions) to create, edit, and delete child nodes and view child node permissions. You can manage these permissions through the [Project settings, Project configuration administrative interface](/azure/devops/organizations/security/set-permissions-access-work-tracking#create-child-nodes-modify-work-items-under-an-area-path). <br/>
@@ -239,9 +239,9 @@ Token examples for different namespaces are provided in the next section.
       MetaTask  
    :::column-end:::
    :::column span="1":::
-      `Administer  
-      Edit         
-      Delete`      
+      `Administer`  
+      `Edit`         
+      `Delete`      
    :::column-end:::
    :::column span="2":::
       [Manages task group permissions](/azure/devops/organizations/security/permissions#task-group) to edit and delete task groups, and administer task group permissions.  
@@ -256,10 +256,10 @@ Token examples for different namespaces are provided in the next section.
       Plan  
    :::column-end:::
    :::column span="1":::
-      `View     
-      Edit   
-      Delete   
-      Manage`   
+      `View`     
+      `Edit`   
+      `Delete`   
+      `Manage`   
    :::column-end:::
    :::column span="2":::
       [Manages permissions for Delivery Plans](/azure/devops/organizations/security/permissions#plan-permissions") to view, edit, delete, and manage delivery plans. You can manage these permissions through the [user interface for each plan](/azure/devops/organizations/security/set-permissions-access-work-tracking#edit-or-manage-permissions-for-delivery-plans).      
@@ -275,20 +275,20 @@ Token examples for different namespaces are provided in the next section.
       ReleaseManagement 
    :::column-end:::
    :::column span="1":::
-      `ViewReleaseDefinition        
-      EditReleaseDefinition        
-      DeleteReleaseDefinition       
-      ManageReleaseApprovers        
-      ManageReleases                 
-      ViewReleases                   
-      CreateReleases               
-      EditReleaseEnvironment         
-      DeleteReleaseEnvironment      
-      AdministerReleasePermissions   
-      DeleteReleases                 
-      ManageDeployments             
-      ManageReleaseSettings         
-      ManageTaskHubExtension`         
+      `ViewReleaseDefinition`        
+      `EditReleaseDefinition`        
+      `DeleteReleaseDefinition`       
+      `ManageReleaseApprovers`        
+      `ManageReleases`  
+      `ViewReleases`                   
+      `CreateReleases`               
+      `EditReleaseEnvironment`         
+      `DeleteReleaseEnvironment`      
+      `AdministerReleasePermissions`   
+      `DeleteReleases`                 
+      `ManageDeployments`             
+      `ManageReleaseSettings`         
+      `ManageTaskHubExtension`         
    :::column-end:::
    :::column span="2":::
       [Manages release object-level-permissions](/azure/devops/organizations/security/permissions#release-management).  
@@ -311,12 +311,12 @@ Token examples for different namespaces are provided in the next section.
       WorkItemQueryFolders 
    :::column-end:::
    :::column span="1":::
-      `Read   
-      Contribute                 
-      Delete                    
-      ManagePermissions          
-      FullControl                
-      RecordQueryExecutionInfo`   
+      `Read`    
+      `Contribute`   
+      `Delete`                    
+      `ManagePermissions`          
+      `FullControl`                
+      `RecordQueryExecutionInfo`   
    :::column-end:::
    :::column span="2":::
       [Manages permissions for work item query folders](set-permissions-access-work-tracking.md#work-item-queries).  
@@ -781,7 +781,6 @@ Note non UI permissions
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Project Administrators group 
       - **Administrator** role (all permissions) to the user who created a specific Environment.
-
       <br/>
       ID: `83d4c2e6-e57d-4d6e-892b-b87222b7ad20`
    :::column-end:::
@@ -816,7 +815,13 @@ Note non UI permissions
       Owner`         
    :::column-end:::
    :::column span="2":::
-      Manages library permissions to create, use, view, and administer library items. These permissions are assigned through [Library asset security roles](/azure/devops/organizations/security/about-security-roles#library-roles).   
+      Manages permissions to create and manage library items, which include secure files and variable groups. Role memberships for individual items are automatically inherited from those of the Library node.  By default, the following permissions are assigned: 
+      - **Reader** role (`View` permissions only) to all members of the Project Valid Users group and the Project Collection Build Service account
+      - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributors group 
+      - **Creator** role (`View`, `Use`, `Create`, and `Owner` permissions) to the member who created the library item
+      - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups.  
+      <br/>
+      To learn more, see [Library asset security roles](../../pipelines/library.md).   
       <br/>
       ID: `b7e84409-6553-448a-bbb2-af228e07cbeb`
    :::column-end:::
@@ -834,6 +839,12 @@ Note non UI permissions
       ViewEndpoint`        
    :::column-end:::
    :::column span="2":::
+      Manages permissions to create and manage service connections. Role memberships for individual items are automatically inherited from those defined at the project-level.  By default, the following roles are assigned: 
+      - **Reader** role (`View` permissions only) to all members of the Project Valid Users group and the Project Collection Build Service account
+      - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Endpoint  group 
+      - **Creator** role (`View`, `Use`, `Create`, and `Owner` permissions) to the member who created the library item
+      - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups.  
+      <br/>
       Manages permissions to create and use service connections or service endpoints. These permissions are assigned through [Service connection security roles](/azure/devops/organizations/security/about-security-roles#service-endpoint-roles).   
       <br/>
       ID: `49b48001-ca20-4adc-8111-5b60c903a50c`
