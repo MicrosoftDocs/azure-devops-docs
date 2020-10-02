@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 10/01/2020
 ---
 
-# Namespace reference  
+# Security namespace and permission reference for Azure DevOps 
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
@@ -21,21 +21,14 @@ Security namespaces are used to store access control lists (ACLs) on tokens. Dat
 - Azure DevOps service account  
 - Azure DevOps service principal  
  
-
 Each family of resources, such as work items or Git repositories, is secured through a unique namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps.
-
-You can manage tokens and namespaces for your organization with the [az devops security permission](/cli/azure/ext/azure-devops/devops/security/permission) commands. Use this command to:
-
-- View the permissions associated with tokens and namespaces
-- View details about those permissions
-- Update or reset permissions
 
 > [!NOTE]   
 > Namespaces and tokens are valid for all versions of Azure DevOps. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. 
->
-> To list namespaces and manage permissions with command line tools: 
+You manage most permissions through the web portal. For those that aren't surfaced through the web portal, you can manage them using command line tools or REST API:
 > - For Azure DevOps Server 2020 and Azure DevOps Services, you can use the `az devops security permission` commands. 
 > - For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) commands. 
+> For all Azure DevOps instances, you can use the [Security REST API](/rest/api/azure/devops/security). 
 
 ## Security namespaces and their IDs
 
@@ -46,7 +39,6 @@ The following sections lists valid namespaces and provides descriptions and link
 - Server-level
 - Role-based 
 - Internal only 
-
 
 ## Hierarchy and tokens
 
@@ -60,7 +52,6 @@ If the tokens have variable-length path parts, then a separator character is use
 Token examples for different namespaces are provided in the next section. 
 
 ## Object-level namespaces and permissions
-
 
 ---
 :::row:::
@@ -574,10 +565,10 @@ Note non UI permissions
 :::row-end:::
 ---
 ::: moniker range=">= azure-devops-2019"
-<a id=process " />
+
 :::row:::
    :::column span="1":::
-      Process 
+      Process <a id="process" />
    :::column-end:::
    :::column span="1":::
       `Edit`                           
@@ -676,7 +667,7 @@ The following table describes those security namespaces and permissions defined 
       `TriggerEvent`   
    :::column-end:::
    :::column span="2":::
-      Manages permissions set at the server-level. This includes permissions to edit instance-level information, make requests on behalf of others, and trigger events.  
+      Manages permissions set at the server-level. This includes permissions to edit instance-level information, make requests on behalf of others, and trigger events.
       <br/>
       ID: `1f4179b3-6bac-4d01-b421-71ea09171400`
    :::column-end:::
@@ -734,11 +725,9 @@ The following table describes those security namespaces and permissions defined 
    :::column span="2":::
       Manages permissions to access agent pool resources. By default, the following roles and permissions are assigned at the project level and inherited for each agent pool that is created: 
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group 
-      - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups.  
-
+      - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups. 
       - **User** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
- 
       <br/>
       ID: `101eae8c-1709-47f9-b228-0e476c35b3ba`  
    :::column-end:::
@@ -801,8 +790,7 @@ The following table describes those security namespaces and permissions defined 
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributors group 
       - **Creator** role (`View`, `Use`, `Create`, and `Owner` permissions) to the member who created the library item
       - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups.  
-      <br/>
-      To learn more, see [Library asset security roles](../../pipelines/library.md).   
+      To learn more, see [Library asset security roles](../../pipelines/library.md). 
       <br/>
       ID: `b7e84409-6553-448a-bbb2-af228e07cbeb`
    :::column-end:::
@@ -824,8 +812,7 @@ The following table describes those security namespaces and permissions defined 
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group and the Project Collection Build Service account
       - **Creator** role (`View`, `Use`, and `Create` permissions) to to members of the Endpoint Creators service security group.  
       - **Administrator** role (all permissions) to members of the Endpoint Administrators service security group.  
-      <br/>
-      Roles are assigned through [Service connection security roles](about-security-roles.md#service-endpoint-roles).   
+      Roles are assigned through [Service connection security roles](about-security-roles.md#service-endpoint-roles).
       <br/>
       ID: `49b48001-ca20-4adc-8111-5b60c903a50c`
    :::column-end:::
@@ -835,24 +822,7 @@ The following table describes those security namespaces and permissions defined 
 
 ## Internal namespaces and permissions
 
-- BlobStoreBlobPrivileges
-- Boards
-- BoardsExternalIntegration
-- Chat
-- Discussion Threads
-- EventSubscriber
-- EventSubscription
-- Identity
-- Identity2
-- Licensing
-- PermissionLevel
-- PipelineCachePrivileges
-- ReleaseManagement
-- SearchSecurity
-- ServiceHooks
-- WorkItemTrackingAdministration
-- WorkItemTrackingProvision
- 
+The following table describes the security namespaces and permissions that aren't surfaced through the user interface in anyway. They are primarily used to grant access to internal resources and shouldn't be altered in any way. Other permissions are assigned to members of default security groups. 
  
 ---
 :::row:::
@@ -944,8 +914,8 @@ The following table describes those security namespaces and permissions defined 
       ID: `bc295513-b1a2-4663-8d1a-7017fd760d18`
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ---
+::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="":::
@@ -963,7 +933,8 @@ The following table describes those security namespaces and permissions defined 
       ID: `0d140cae-8ac1-4f48-b6d1-c93ce0301a128`
    :::column-end:::
 :::row-end:::
-
+---
+::: moniker-end
 :::row:::
    :::column span="":::
       EventSubscriber
@@ -1047,7 +1018,6 @@ The following table describes those security namespaces and permissions defined 
       `Delete`  
       `Assign`     
       `Revoke`  
-
    :::column-end:::
    :::column span="2":::
       TBD 
@@ -1089,6 +1059,23 @@ The following table describes those security namespaces and permissions defined 
    :::column-end:::
 :::row-end:::
 ---
+<!---
+:::row:::
+   :::column span="":::
+      Proxy
+   :::column-end:::
+   :::column span="":::
+      `Read`
+      `Manage`  
+   :::column-end:::
+   :::column span="2":::
+      Grants read permissions to members of the Project Valid Users group and manage permissions to members of the Project Administrators group.  
+      <br/>
+      ID: `cb4d56d2-e84b-457e-8845-81320a133fbb` 
+   :::column-end:::
+:::row-end:::
+---
+-->
 :::row:::
    :::column span="":::
       ReleaseManagement

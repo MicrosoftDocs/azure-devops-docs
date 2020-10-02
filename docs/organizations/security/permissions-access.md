@@ -341,6 +341,8 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 
 ::: moniker-end
 
+<!---
+
 ::: moniker range=">= tfs-2017"
 
 ## Role-based defaults
@@ -348,6 +350,8 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 [!INCLUDE [temp](includes/default-role-assignments.md)]
 
 ::: moniker-end
+
+-->
 
 
 ## Related articles

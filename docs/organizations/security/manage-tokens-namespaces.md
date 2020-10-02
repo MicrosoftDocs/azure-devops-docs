@@ -15,34 +15,14 @@ ms.date: 09/14/2020
 
 [!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
-Security namespaces are used to store access control lists (ACLs) on tokens. Data stored in security namespaces are used to determine whether a user has permissions to perform a specific action on a specific resource.
+Permissions grant access to perform a specific action on a specific resource. You manage most permissions through the web portal. However, you can manage permissions using command line tools or the REST API.  
 
-Each family of resources (such as work items or Git repositories) is secured through a unique namespace. Each security namespace contains zero or more access control lists (ACLs). Each ACL contains a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps.
+Azure DevOps grants a number of permissions by default to members of default security groups. You can add and manage permissions at a more granular level with the `az devops security permission` commands. Use these commands to:
 
-You can manage tokens and namespaces for your organization with the [az devops security permission](/cli/azure/ext/azure-devops/devops/security/permission) commands. Use this command to:
-
-- View the permissions associated with tokens and namespaces
+- View the permissions associated with security namespaces
 - View details about those permissions
 - Update or reset permissions
 
-> [!NOTE]   
-> Namespaces and tokens are valid for all versions of Azure DevOps. Some namespaces have been deprecated as listed in [Security namespaces and tokens for permissions management](/azure/devops/cli/security-tokens#deprecated-namespaces). 
->
-> To list namespaces and manage permissions with command line tools: 
-> - For Azure DevOps Server 2020 and Azure DevOps Services, you can use the `az devops security permission` commands. 
-> - For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) commands. 
-
-
-## Hierarchy and tokens
-
-A security namespace can be either hierarchical or flat. 
-Tokens in a hierarchical namespace exist in a hierarchy with effective permissions inherited from parent tokens to child tokens.
-Tokens in a flat namespace have no concept of a parent-child relationship between any two tokens.
-
-Tokens in a hierarchical namespace either have a fixed length for each path part, or variable length.
-If the tokens have variable-length path parts, then a separator character is used to distinguish where one path part ends and another begins.
-
-Token examples for different namespaces are provided in the next section. 
 
 ## Prerequisites 
 
@@ -53,7 +33,7 @@ Token examples for different namespaces are provided in the next section.
 
 ## Security permission commands
 
-You can manage security permissions for a user or security group by using the `az devops security permission` commands. Enter the following command to list all available commands.  
+Enter the following command to list all available commands.  
 
 `az devops security permission -h`
 
@@ -80,7 +60,7 @@ The following parameters are optional for all commands, and not listed in the ex
 
 ## List security namespaces 
 
-You can list all available namespaces for an organization with the [az devops security permission namespace list](/cli/azure/ext/azure-devops/devops/security/permission/namespace#ext-azure-devops-az-devops-security-permission-namespace-list) command.
+You can list all available namespaces for an organization with the [az devops security permission namespace list](/cli/azure/ext/azure-devops/devops/security/permission/namespace#ext-azure-devops-az-devops-security-permission-namespace-list) command.  For a description of all security namespaces and associated tokens, see [Security namespace and permission reference](namespace-reference.md).
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli
