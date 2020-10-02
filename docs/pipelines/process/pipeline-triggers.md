@@ -70,6 +70,9 @@ resources:
 
 If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the latest version of the code from its default branch.
 
+> ![NOTE]
+> There must be a version of the triggered pipeline's YAML that contains a branch filter that matches the triggering branch in the **Default branch for manual and scheduled builds** setting that contains the trigger, or else the triggered pipeline won't run. Typically this setting is set to the same branch as your repo's default branch. If your triggered pipeline's YAML isn't in this default branch, you can change this setting for that pipeline to pont to the branch that contains the YAML in the YAML setting.
+
 When you specify both CI triggers and pipeline triggers, you can expect new runs to be started every time (a) an update is made to the repository and (b) a run of the upstream pipeline is completed. Consider an example of a pipeline `B` that depends on `A`. Let us also assume that both of these pipelines use the same repository for the source code, and that both of them also have CI triggers configured. When you push an update to the repository, then:
 
 - A new run of `A` is started.
