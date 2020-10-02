@@ -35,52 +35,6 @@ For a comparison chart of Stakeholder versus Basic access, see the [Feature matr
 
 
 
-::: moniker range=">= tfs-2015"
-
-## Dashboards, charts, reports, and widgets
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-
-You can define and manage team and project dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You can set [individual dashboard permissions](../../report/dashboards/dashboard-permissions.md) to grant or restrict the ability to edit or delete dashboards. 
-
-Users granted Stakeholder access to private projects can't view or create query charts. Stakeholder access to public projects can view and create query charts.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 < azure-devops"
-
-You can define and manage team dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-[!INCLUDE [temp](includes/report.md)]
-
-::: moniker-end
-
-::: moniker range="tfs-2013" 
-
-## Dashboards and charts
-
-You can pin charts to a team dashboard **Home** page. 
-
-[!INCLUDE [temp](includes/report.md)]
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019" 
-
-## Power BI Integration and Analytics views
-
-From the web portal **Analytics views**, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for Azure DevOps. To learn more, see [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md). 
-
-You set [permissions](../../report/powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level. Users with **Stakeholder** access have no access to view or edit Analytics views.
-
-[!INCLUDE [temp](includes/analytics.md)]
-
-::: moniker-end
 
 
 <a id="agile-tools-and-work-tracking" />
@@ -340,7 +294,63 @@ To manage notifications, see [Manage personal notifications](../../notifications
 [!INCLUDE [temp](includes/collaborate.md)]
 
 
-## Related notes
+::: moniker range=">= tfs-2015"
+
+## Dashboards, charts, reports, and widgets
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+You can define and manage team and project dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You can set [individual dashboard permissions](../../report/dashboards/dashboard-permissions.md) to grant or restrict the ability to edit or delete dashboards. 
+
+Users granted Stakeholder access to private projects can't view or create query charts. Stakeholder access to public projects can view and create query charts.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < azure-devops"
+
+You can define and manage team dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
+[!INCLUDE [temp](includes/report.md)]
+
+::: moniker-end
+
+::: moniker range="tfs-2013" 
+
+## Dashboards and charts
+
+You can pin charts to a team dashboard **Home** page. 
+
+[!INCLUDE [temp](includes/report.md)]
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019" 
+
+## Power BI Integration and Analytics views
+
+From the web portal **Analytics views**, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for Azure DevOps. To learn more, see [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md). 
+
+You set [permissions](../../report/powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level. Users with **Stakeholder** access have no access to view or edit Analytics views.
+
+[!INCLUDE [temp](includes/analytics.md)]
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+## Role-based defaults
+
+[!INCLUDE [temp](includes/default-role-assignments.md)]
+
+::: moniker-end
+
+
+## Related articles
 
 - [Add users to a project or team](../../organizations/security/add-users-team-project.md)  
 - [Permissions and groups reference](permissions.md)  

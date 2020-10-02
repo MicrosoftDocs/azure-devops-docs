@@ -4,12 +4,10 @@
   href: access-levels.md 
 - name: About permissions & groups
   href: about-permissions.md 
-- name: Security roles & concepts
-  items:
-  - name: About security roles
-    href: about-security-roles.md 
-  - name: Security key concepts
-    href: security-glossary.md 
+- name: About security roles
+  href: about-security-roles.md 
+- name: Security key concepts
+  href: security-glossary.md 
 - name: Authentication
   items:
   - name: Authentication guidance 
@@ -70,8 +68,6 @@
   items:
   - name: View permissions 
     href: view-permissions.md
-  - name: Manage security groups
-    href: add-manage-security-groups.md 
   - name: Look up the organization owner or a Project Administrator
     href: lookup-organization-owner-admin.md
   - name: Set Git or TFVC repository permissions
@@ -82,8 +78,6 @@
     href: change-individual-permissions.md
   - name: Grant or restrict permissions to select tasks
     href: restrict-access.md   
-  - name: Manage permissions with CLI
-    href: manage-tokens-namespaces.md 
 - name: Set permissions for an object or role
   items: 
   - name: Set work tracking & plan permissions 
@@ -131,6 +125,12 @@
     href: permissions-lookup-guide.md
   - name: Permissions & groups 
     href: permissions.md
+  - name: Security namespaces & permissions
+    href: namespace-reference.md  
+  - name: Manage security groups with CLI
+    href: add-manage-security-groups.md 
+  - name: Manage permissions with CLI
+    href: manage-tokens-namespaces.md 
   - name: Git permissions prior to TFS 2017 Update 1
     href: git-permissions-before-2017.md
   - name: Web site settings & security (on-premises)
