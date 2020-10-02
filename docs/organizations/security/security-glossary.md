@@ -9,12 +9,12 @@ ms.custom: has-adal-ref
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+ms.date: 09/29/2020
 ---
 
 # Security key concepts
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 This article provides definitions for select terms used to manage authentication and permissions for Azure DevOps.
  
@@ -132,11 +132,16 @@ A security model that limits actions based on membership within a role. To learn
 
 An account used to monitor or manage select services, such as build or test services.
 
+## Service principal
+
+A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. When an application is given permission to access resources in a tenant (upon registration or consent), a service principal object is created. To learn more, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
+
+
 ## Secure Sockets Layer (SSL)
 
 SSL is a protocol used to strengthen the security of cloud-hosted and on-premises applications by configuring it to use Hypertext Transfer Protocol Secure (HTTPS) with Secure Sockets Layer (SSL).
 
-SSL is always used to protect Azure DevOps data. To learn more, see [Data Protection Overview](/azure/devops/organizations/security/data-protection).
+SSL is always used to protect Azure DevOps data. To learn more, see [Data Protection Overview](./data-protection.md).
 
 For on-premises deployments, SSL is optional. To learn more, see [Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server](/azure/devops/server/admin/setup-secure-sockets-layer).
 
@@ -160,7 +165,7 @@ An Azure Active Directory used to manage access or billing. To learn more, see [
 
 Tokens are arbitrary strings representing resources in Azure DevOps. Token format differs per resource type, however hierarchy and separator characters are common between all tokens. For details, see [REST API Security](/rest/api/azure/devops/security). 
 
-> *Each family of Azure DevOps resources (work items, Git repositories, an so on) is secured using a different namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag and a set of zero or more ACEs. Each ACE contains an identity descriptor, an allowed permissions bitmask and a denied permissions bitmask*. 
+*Each family of Azure DevOps resources (work items, Git repositories, an so on) is secured using a different namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag and a set of zero or more ACEs. Each ACE contains an identity descriptor, an allowed permissions bitmask and a denied permissions bitmask*. 
 
 For Azure DevOps Services, you can manage tokens and namespaces using the **az devops security permission** commands. For details, see [Manage tokens and namespaces](manage-tokens-namespaces.md).
 
@@ -181,6 +186,3 @@ Valid users are users that are recognized by Azure DevOps as being able to conne
 
 - [Permissions lookup guide](permissions-lookup-guide.md)
 - [REST API Security](/rest/api/azure/devops/security)
-
-
-

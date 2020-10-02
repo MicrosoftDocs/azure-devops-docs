@@ -1,4 +1,4 @@
-﻿---
+---
 title: Differences between provisioned and published wiki
 titleSuffix: Azure DevOps
 description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository in Azure DevOps 
@@ -9,8 +9,8 @@ ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: 'azure-devops'
-ms.date: 06/11/2020 
+monikerRange: '>= tfs-2018'
+ms.date: 07/23/2020  
 ---
 
 # Provisioned wikis vs. published code as a wiki
@@ -65,13 +65,13 @@ The following table summarizes those operations or features that may differ, dep
 > [!div class="mx-tdCol2BreakAll"]
 > |Operation |    Provisioned wiki    | Publish code as wiki |
 > |--------|--------------|--------------|  
-> |[Support multiple wikis, name the wiki](publish-repo-to-wiki.md)  |  | ![checkmark](media/checkmark.png) |
-> |[Add or edit pages from **Repos>Files** or **Code>Files**](publish-repo-to-wiki.md) |  |![checkmark](media/checkmark.png)  |
-> |[Revert to an earlier revision from the **Wiki**](wiki-view-history.md#revert-provision) |![checkmark](media/checkmark.png) |  |
-> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |  |![checkmark](media/checkmark.png)  |
-> |[Maintain versioned wikis](#versioning) |  | ![checkmark](media/checkmark.png) |
-> |[Select a wiki version](wiki-select-unpublish-versions.md) |  | ![checkmark](media/checkmark.png) |
-> |[Unpublish a wiki](wiki-select-unpublish-versions.md) |  | ![checkmark](media/checkmark.png) |
+> |[Support multiple wikis, name the wiki](publish-repo-to-wiki.md)  |  | ✔️|
+> |[Add or edit pages from **Repos>Files** or **Code>Files**](publish-repo-to-wiki.md) |  |✔️ |
+> |[Revert to an earlier revision from the **Wiki**](wiki-view-history.md#revert-provision) |✔️ |  |
+> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |  |✔️ |
+> |[Maintain versioned wikis](#versioning) |  | ✔️ |
+> |[Select a wiki version](wiki-select-unpublish-versions.md) |  | ✔️ |
+> |[Unpublish a wiki](wiki-select-unpublish-versions.md) |  | ✔️ |
 
 <a id="add-pages"></a>
 
@@ -106,7 +106,7 @@ However, the revert process differs depending on the wiki page type.
 
 ## Versioning and unpublishing a wiki
 
-With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning and unpublishing content that you've previously published to a wiki, is supported only for wikis that you've created by publishing code to a wiki.
+With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning and unpublishing content, that you've previously published to a wiki, is supported only for wikis that you've created by publishing code to a wiki.
 
 To learn more, see [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md).
 
@@ -118,7 +118,7 @@ Deleting a project wiki isn't supported with wiki APIs, but you can delete the w
 
    ![Clone the wiki repository](media/wiki/clone-wiki.png)
 
-2. Get the git repository ID that is backing this wiki. Use [this REST API](https://docs.microsoft.com/rest/api/vsts/wiki/wikis/get) to get all the wikis in the project.
+2. Get the git repository ID that is backing this wiki. Use [this REST API](/rest/api/vsts/wiki/wikis/get) to get all the wikis in the project.
    
    For example: GET https://dev.azure.com/fabrikam/_apis/wiki/wikis?api-version=4.1
    This returns all the wikis in the project, "sampleProject". Here you can get the repository ID of the wiki that you want to delete.

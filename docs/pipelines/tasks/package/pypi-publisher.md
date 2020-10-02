@@ -1,6 +1,6 @@
 ---
 title: PyPI Publisher task (Deprecated)
-ms.custom: seodec18, tracking-python
+ms.custom: seodec18, devx-track-python
 description: How to upload a package to PyPI when building code in Azure Pipelines and TFS
 ms.assetid: ADFFA0DA-D282-4D83-ADC0-43B4EB7ECB52
 ms.manager: madhurig

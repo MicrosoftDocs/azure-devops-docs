@@ -226,7 +226,8 @@ Next, we'll create the Dockerfile.
             libcurl4 \
             libicu60 \
             libunwind8 \
-            netcat
+            netcat \
+            libssl1.0
 
     WORKDIR /azp
 
@@ -338,6 +339,7 @@ Next, we'll create the Dockerfile.
 
     # `exec` the node runtime so it's aware of TERM and INT signals
     # AgentService.js understands how to handle agent self-update and restart
+    # Running it with the --once flag at the end will shut down the agent after the build is executed
     exec ./externals/node/bin/node ./bin/AgentService.js interactive
     ```
 
@@ -386,7 +388,7 @@ The suggested base Dockerfiles are just that: suggestions.
 You can extend the Dockerfile to include additional tools and their dependencies, or build your own container using this one as a base layer. Just make sure that the following things are left untouched:
 
 - The `start.sh` script is called by the Dockerfile
-- The `start.sh` script is the last command that the Dockerfile
+- The `start.sh` script is the last command in the Dockerfile
 - Ensure that derivative containers do not remove any of the dependencies stated by the Dockerfile
 
 ## Using Docker within a Docker container

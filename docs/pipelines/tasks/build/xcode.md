@@ -135,7 +135,7 @@ xcode
    <tr>
       <td><code>exportOptions</code><br/>Export options</td>
       <td>
-         (Optional) Select a way of providing options for exporting the archive. When the default value of <code>Automatic</code> is selected, the export method is automatically detected from the archive. Select <code>Plist</code> to specify a plist file containing export options. Select <code>Specify</code> to provide a specific <strong>Export method</strong> and <strong>Team ID</strong>. <br/>Default value: auto
+         (Optional) Select a way of providing options for exporting the archive. When the default value of <code>Automatic</code> is selected, the export method is automatically detected from the archive. Select <code>plist</code> to specify a plist file containing export options. Select <code>Specify</code> to provide a specific <strong>Export method</strong> and <strong>Team ID</strong>. <br/>Default value: auto
       </td>
    </tr>
    <tr>
@@ -187,7 +187,7 @@ xcode
    <tr>
       <td><code>destinationSimulators</code><br/>Simulators</td>
       <td>
-         (Optional) Enter an Xcode simulator name to be used for UI testing. For example, enter <code>iPhone X</code> (iOS and watchOS) or <code>Apple TV 4K</code> (tvOS). A target OS version is optional and can be specified in the format &#39;OS=<i>versionNumber</i>&#39;, such as <code>iPhone X,OS=11.1</code>. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be <a href="https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md#installed-sdks" data-raw-source="[found here](https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md#installed-sdks)">found here</a>. <br/>Default value: iPhone 7
+         (Optional) Enter an Xcode simulator name to be used for UI testing. For example, enter <code>iPhone X</code> (iOS and watchOS) or <code>Apple TV 4K</code> (tvOS). A target OS version is optional and can be specified in the format &#39;OS=<i>versionNumber</i>&#39;, such as <code>iPhone X,OS=11.1</code>. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be <a href="https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#installed-sdks" data-raw-source="[found here](https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md#installed-sdks)">found here</a>. <br/>Default value: iPhone 7
       </td>
    </tr>
    <tr>
@@ -218,9 +218,21 @@ xcode
       </td>
    </tr>
    <tr>
+      <td><code>xcprettyArgs</code><br/>Arguments for xcpretty</td>
+      <td>
+         (Optional) If xcpretty is enabled above, specify arguments for xcpretty. See <a href="https://github.com/supermarin/xcpretty" data-raw-source="[xcpretty](https://github.com/supermarin/xcpretty)">xcpretty</a> on GitHub for a list of xcpretty arguments.
+      </td>
+   </tr>
+   <tr>
       <td><code>publishJUnitResults</code><br/>Publish test results to Azure Pipelines/TFS</td>
       <td>
          (Optional) If xcpretty is enabled above, specify whether to publish JUnit test results to Azure Pipelines/TFS. <br/>Default value: false
+      </td>
+   </tr>
+   <tr>
+      <td><code>testRunTitle</code><br/>Test run title</td>
+      <td>
+         (Optional) If xcpretty and publishJUnitResults are enabled above, you can specify test run title.
       </td>
    </tr>
    <tr>
@@ -235,6 +247,11 @@ xcode
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
+
+
+## Using multiple provisioning profiles
+
+Currently there's no support of multiple provisioning profiles for Xcode task (for example for iOS App Extension)
 
 ## FAQ
 <!-- BEGINSECTION class="md-qanda" -->

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Use Visual Studio and Team Foundation Server with Git
 ms.assetid: 0017E2D7-ECD9-44B9-9AF0-8279136E6B9B
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: 'tfs-2013'
@@ -13,7 +11,7 @@ monikerRange: 'tfs-2013'
 
 
 #  Use Visual Studio and Team Foundation Server with Git
-#### Azure Repos | TFS 2015 | Visual Studio 2013
+**Azure Repos | TFS 2015 | Visual Studio 2013**
 
 <table>
 <tr>

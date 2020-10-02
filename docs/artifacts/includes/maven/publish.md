@@ -3,7 +3,7 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 06/26/2020
+ms.date: 07/22/2020
 ---
 
 Publish Maven artifacts to a feed in **Azure Artifacts** to share them with your team and organization.
@@ -39,3 +39,6 @@ Your Maven artifact should appear in your feed now. See the [Apache Maven Deploy
 ```Command
 mvn deploy:deploy-file -Dpackaging="jar" -DrepositoryId="MyFeedName" -Durl="MyFeedURL" -DgroupId="MyGroup" -DartifactId="myFirstApp" -Dversion="jarFileVersion" -Dfile="jarFileLocalPath"
 ```
+
+> [!IMPORTANT]
+> Maven snapshot artifacts are not currently supported in upstream sources.

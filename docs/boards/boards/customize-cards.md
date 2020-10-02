@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 06/25/2020 
+ms.date: 07/09/2020 
 ---
 
 
@@ -128,10 +128,14 @@ What rules should you apply to highlight work items? Here are a few examples and
 
 By showing a field on a card, you can edit that field directly on the board without having to open the card, unless it's a read-only field, such as the Change By and Changed Date fields. You can also customize the cards that appear on the Kanban board for features and epics. You follow similar steps, however you start from the [corresponding portfolio backlog](../../boards/backlogs/define-features-epics.md).  
 
+::: moniker range=">= azure-devops-2020"
+> [!NOTE]  
+> To show the parent work item, choose the Parent field. You can't change the Parent field from the card. Instead, choosing that field opens the parent work item. You can also filter your board based on parent work items, whether the Parent field is added to cards or not.  
+::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"
  
-As a first step, you'll see that you can determine which fields appear on each card type. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work//add-custom-field.md). 
+As a first step, you'll see that you can determine which fields appear on each card type. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work/add-custom-field.md). 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 < azure-devops-2019"  
@@ -143,7 +147,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -159,9 +163,9 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 	If you want work estimates to show, check **Show Effort**. **Show Effort** corresponds to these fields: Effort ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Story Points ([Agile](../../boards/work-items/guidance/agile-process.md)), and Size ([CMMI](../../boards/work-items/guidance/cmmi-process.md)).
 
-4. To add a field, choose the ![ ](../media/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add. 
+4. To add a field, choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of a field  you want to add. 
 
-5. To remove a field, choose the ![ ](../../media/icons/delete-icon.png) delete icon next to the field.
+5. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.
 
 6. When done with your changes, choose **Save**.
 
@@ -170,7 +174,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+1. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](media/customize-cards/open-config-dialog.png) 
 
@@ -185,9 +189,9 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 	If you want work estimates to show, check **Show Effort**. **Show Effort** corresponds to these fields: Effort ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Story Points ([Agile](../../boards/work-items/guidance/agile-process.md)), and Size ([CMMI](../../boards/work-items/guidance/cmmi-process.md)).
 
-4. To add a field, choose the ![ ](../media/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add. 
+4. To add a field, choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of a field  you want to add. 
 
-5. To remove a field, choose the ![ ](../../media/icons/delete-icon.png) delete icon next to the field.
+5. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.
 
 6. When done with your changes, choose **Save**.
 
@@ -198,7 +202,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+1. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](media/customize-cards/open-config-dialog.png) 
 
@@ -216,9 +220,9 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 	If you want work estimates to show, check **Show Effort** or **Show Cost**. These options will cause the following fields to appear based on the respective process: Effort ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Story Points ([Agile](../../boards/work-items/guidance/agile-process.md)), and Size ([CMMI](../../boards/work-items/guidance/cmmi-process.md)).
 
-4. To add a field, choose the ![ ](../../media/icons/add-icon.png) plus icon and enter the name of a field you want to add. 
+4. To add a field, choose the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus icon and enter the name of a field you want to add. 
 
-5. To remove a field, choose the ![ ](../../media/icons/delete-icon.png) delete icon next to the field.
+5. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.
 
 6. When done with your changes, choose **Save**.
 
@@ -236,9 +240,9 @@ You can apply style rules to change the color of cards on Kanban boards and task
 
 1. [Open the Kanban board](kanban-quickstart.md) or [taskboard](../sprints/task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
 
-2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to open the **Settings** dialog. 
+2. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to open the **Settings** dialog. 
 
-3. Choose **Styles** to specify a style rule. Choose the ![ ](../../media/icons/green_plus_icon.png) plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
+3. Choose **Styles** to specify a style rule. Choose the :::image type="icon" source="../../media/icons/green_plus_icon.png" border="false"::: plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
 
 	In this example we show the **Styles** dialog for the taskboard. 
 
@@ -256,7 +260,7 @@ You can apply style rules to change the color of cards on Kanban boards and task
 
      ![Taskboard, Style dialog, example style rule](../sprints/media/customize/task-board-card-style-rule-stale-tasks.png)   
 
-4. To copy or delete a style rule, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Clone** or **Delete**, respectively.
+4. To copy or delete a style rule, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Clone** or **Delete**, respectively.
 
 5. When done with your changes, choose **Save**.
 
@@ -270,9 +274,9 @@ Requires TFS 2015.1 or later version.
 
 1. [Open the Kanban board](kanban-quickstart.md) or [taskboard](../sprints/task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
 
-2. Choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the **Settings** dialog. 
+2. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the **Settings** dialog. 
 
-3. Choose **Styles** to specify a style rule. Choose the ![ ](../../media/icons/green_plus_icon.png) plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
+3. Choose **Styles** to specify a style rule. Choose the :::image type="icon" source="../../media/icons/green_plus_icon.png" border="false"::: plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
 
 	In this example we show the **Styles** dialog for the taskboard. 
 
@@ -290,7 +294,7 @@ Requires TFS 2015.1 or later version.
 
      ![taskboard, Style dialog, example style rule](../sprints/media/customize/task-board-card-style-rule-stale-tasks.png)   
 
-4. To copy or delete a style rule, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Clone** or **Delete**, respectively.
+4. To copy or delete a style rule, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Clone** or **Delete**, respectively.
 
 5. When done with your changes, choose **Save**.
 
@@ -309,7 +313,7 @@ Requires TFS 2015.1 or later version.
 
 1. Open the Settings dialog for the Kanban board you want to customize. 
 
-2. Choose **Tag colors** and then choose the ![ ](../../media/icons/green_plus_icon.png) plus icon to add a tag color. Then, select the tag and the color you want to appear on the cards.  
+2. Choose **Tag colors** and then choose the :::image type="icon" source="../../media/icons/green_plus_icon.png" border="false"::: plus icon to add a tag color. Then, select the tag and the color you want to appear on the cards.  
 
    ::: moniker range=">= tfs-2017"
    > [!div class="mx-imgBorder"]  
@@ -338,7 +342,7 @@ As shown in the following examples, the **Task** and **Test** annotations indica
 > [!div class="mx-tdBreakAll"]  
 > | Task annotations  |Test annotations  |No annotations |
 > |-------------|----------|----------|    
-> |<img src="media/annotate-task.png" alt="Task annotations enabled" style="border: 1px solid #C3C3C3;" /> | <img src="media/annotate-test.png" alt="Test annotations enabled" style="border: 1px solid #C3C3C3;" />  | <img src="media/annotate-none.png" alt="Annotations disabled" style="border: 1px solid #C3C3C3;" /> | 
+> |![Task annotations enabled](media/annotate-task.png) | ![Test annotations enabled](media/annotate-test.png) | ![Annotations disabled](media/annotate-none.png) | 
 
 To learn more about using these features, see [Add task checklists](../../boards/boards/add-task-checklists.md) and [Add, run, and update inline tests](../../boards/boards/add-run-update-tests.md).  
 
@@ -356,6 +360,8 @@ To learn more about using these features, see [Add task checklists](../../boards
 ::: moniker range=">= tfs-2017"  
 
 ### Enable or disable an annotation
+
+When you disable an annotation, you also disable the feature to add the associated object from the Kanban board. For example, if you disable the Tests annotation, you disable the ability to add tests from the Kanban board. 
 
 ::: moniker-end
 
@@ -400,10 +406,10 @@ You can control the test plan under which inline tests you add through the Kanba
 
 2. Choose **Annotations** and make sure that **Test** annotation is enabled. This is a requirement to configure inline tests.
 
-3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select one test plan from the query provided.  
+3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select one test plan from the query provided.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Settings, Tag colors dialog (Kanban)](media/customize-cards/settings-tests.png)  
+	> ![Configure inline tests.](media/customize-cards/settings-tests.png)  
 
 	In a test plan, a test case can exist in multiple test suites. For example, you may define several test suites for each product feature and the test cases test scenarios across features. The test case might exist in both feature's test suite with the same configurations and test steps. As a result of this setup, the tester might run the same test case multiple times for the same product version. To avoid the redundancies that can occur under this scenario, you should choose **Show same outcome of the tests in multiple suites under the same plan** checkbox. When checked, the Test Points of the same Test Case and configuration, shows the same latest outcome. When the tester runs any one test, the output is synced with all other test points (which are of same Test Case work item and same configuration) in the Test Plans. The tester can use the outcome and choose not to run the test again.
 
@@ -417,7 +423,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 2. Choose **Annotations** and make sure that **Test** annotation is enabled. This is a requirement to configure inline tests.
 
-3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select one test plan from the query provided.  
+3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select one test plan from the query provided.  
 
 	![Settings dialog, Tests tab (Kanban), TFS 2015](media/c-cards-test-settings.png)   
 
@@ -430,7 +436,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 ### Open the test plan, test suite from a card
 
-From a card on the Kanban board, you can easily navigate to the underlying test plan and test suite under which the tests are created. Choose the ![ ](../../media/icons/open-icon.png) open icon to open another browser tab showing **Test** and associated test plan and test suite that controls the inline tests.
+From a card on the Kanban board, you can easily navigate to the underlying test plan and test suite under which the tests are created. Choose the :::image type="icon" source="../../media/icons/open-icon.png" border="false"::: open icon to open another browser tab showing **Test** and associated test plan and test suite that controls the inline tests.
 
 <img src="media/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" style="border: 1px solid #C3C3C3;" />  
 

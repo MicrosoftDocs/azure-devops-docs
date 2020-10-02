@@ -1,12 +1,12 @@
 ---
 title: YAML schema
-ms.custom: seodec18, tracking-python
+ms.custom: seodec18
 description: An overview of all YAML syntax.
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 05/15/2020
+ms.date: 08/26/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -336,6 +336,7 @@ container:
   options: string  # arguments to pass to container at startup
   endpoint: string  # endpoint for a private container registry
   env: { string: string }  # list of environment variables to add
+  # you can also use any of the other supported container attributes
 ```
 
 # [Example](#tab/example)
@@ -463,7 +464,7 @@ jobs:
 
 ---
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Deployment job
 
@@ -551,7 +552,7 @@ For more information about steps, see the schema references for:
 
 - [Script](#script)
 - [Bash](#bash)
-- [Pwsh](#pwsh)
+- [pwsh](#pwsh)
 - [PowerShell](#powershell)
 - [Checkout](#checkout)
 - [Task](#task)
@@ -600,7 +601,7 @@ variables:
   readonly: true
 ```
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 You can also include [variables from templates](process/templates.md#variable-reuse).
 
@@ -978,7 +979,6 @@ parameters:
   type: enum            # data types, see below
   default: any          # default value; if no default, then the parameter MUST be given by the user at runtime
   values: [ string ]    # allowed list of values (for some data types)
-  secret: bool          # whether to treat this value as a secret; defaults to false
 ```
 
 ### Types
@@ -1015,7 +1015,7 @@ jobs:
 
 ### [Template Example](#tab/template-example)
 
-You can use a parameters to extend a template. In this example, the pipeline using the template supplies the values to fill into the template.
+You can use parameters to extend a template. In this example, the pipeline using the template supplies the values to fill into the template.
 
 ```yaml
 # File: simple-param.yml
@@ -1134,7 +1134,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from a pipeline resource by using a `download` task. See the [download](/azure/devops/pipelines/yaml-schema?view=azure-devops#download) keyword.
+You can consume artifacts from a pipeline resource by using a `download` task. See the [download](/azure/devops/pipelines/yaml-schema#download) keyword.
 
 ### Container resource
 
@@ -1145,6 +1145,30 @@ The `container` keyword lets you specify your container images.
 [Service containers](process/service-containers.md) run alongside a job to provide various dependencies like databases.
 
 # [Schema](#tab/schema)
+
+::: moniker range="azure-devops"
+
+```yaml
+resources:
+  containers:
+  - container: string  # identifier (A-Z, a-z, 0-9, and underscore)
+    image: string  # container image name
+    options: string  # arguments to pass to container at startup
+    endpoint: string  # reference to a service connection for the private registry
+    env: { string: string }  # list of environment variables to add
+    ports: [ string ] # ports to expose on the container
+    volumes: [ string ] # volumes to mount on the container
+    mapDockerSocket: bool # whether to map in the Docker daemon socket; defaults to true
+    mountReadOnly:  # volumes to mount read-only - all default to false
+      externals: boolean  # components required to talk to the agent
+      tasks: boolean  # tasks required by the job
+      tools: boolean  # installable tools like Python and Ruby
+      work: boolean # the work directory
+```
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
 
 ```yaml
 resources:
@@ -1158,6 +1182,24 @@ resources:
     volumes: [ string ] # volumes to mount on the container
     mapDockerSocket: bool # whether to map in the Docker daemon socket; defaults to true
 ```
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+```yaml
+resources:
+  containers:
+  - container: string  # identifier (A-Z, a-z, 0-9, and underscore)
+    image: string  # container image name
+    options: string  # arguments to pass to container at startup
+    endpoint: string  # reference to a service connection for the private registry
+    env: { string: string }  # list of environment variables to add
+    ports: [ string ] # ports to expose on the container
+    volumes: [ string ] # volumes to mount on the container
+```
+
+::: moniker-end
 
 # [Example](#tab/example)
 
@@ -1206,6 +1248,16 @@ resources:
     name: string  # repository name (format depends on `type`)
     ref: string  # ref name to use; defaults to 'refs/heads/master'
     endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
+    trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
+      branches:
+        include: [ string ] # branch names which will trigger a build
+        exclude: [ string ] # branch names which will not
+      tags:
+        include: [ string ] # tag names which will trigger a build
+        exclude: [ string ] # tag names which will not
+      paths:
+        include: [ string ] # file paths which must match to trigger a build
+        exclude: [ string ] # file paths which will not trigger a build
 ```
 
 # [Example](#tab/example)
@@ -1236,7 +1288,7 @@ The `git` type refers to Azure Repos Git repos.
   GitHub repos require a [GitHub service connection](library/service-endpoints.md) for authorization.
 
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
-  An example is `name: MyBitBucket/vscode`.
+  An example is `name: MyBitbucket/vscode`.
   Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
 
 ## Triggers
@@ -1455,7 +1507,7 @@ You can use [scheduled triggers in the classic editor](process/scheduled-trigger
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="> azure-devops-2019"
 
 A scheduled trigger specifies a schedule on which branches are built.
 If you specify no scheduled trigger, no scheduled builds occur.
@@ -1473,10 +1525,9 @@ schedules:
   always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
 
-> [!IMPORTANT]
-> When you specify a scheduled trigger, only branches that you explicitly configure for inclusion are scheduled for a build.
-> Inclusions are processed first, and then exclusions are removed from that list.
-> If you specify an exclusion but no inclusions, no branches are built.
+> [!NOTE]
+> If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
+
 
 # [Example](#tab/example)
 
@@ -1519,11 +1570,12 @@ Pipeline completion triggers are configured using a [pipeline resource](#pipelin
 The `pool` keyword specifies which [pool](agents/pools-queues.md) to use for a job of the pipeline.
 A `pool` specification also holds information about the job's strategy for running.
 
-::: moniker range=">azure-devops-2020"
-You can specify a pool at the pipeline or job level.
+::: moniker range="azure-devops-2019"
+
+In Azure DevOps Server 2019 you can specify a pool at the job level in YAML, and at the pipeline level in the pipeline settings UI. In Azure DevOps Server 2019.1 you can also specify a pool at the pipeline level in YAML if you have a single implicit job.
 :::moniker-end
 
-::: moniker range="<=azure-devops-2020"
+::: moniker range=">azure-devops-2019"
 You can specify a pool at the pipeline, stage, or job level.
 :::moniker-end
 
@@ -1590,7 +1642,8 @@ pool:
 ```
 
 ---
-::: moniker range="azure-devops"
+
+::: moniker range=">=azure-devops-2020"
 
 ## Environment
 
@@ -1767,7 +1820,7 @@ steps:
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
-## Pwsh
+## pwsh
 
 The `pwsh` keyword is a shortcut for the [PowerShell task](tasks/utility/powershell.md) when that task's **pwsh** value is set to **true**.
 The task runs a script in PowerShell Core on Windows, macOS, and Linux.
@@ -1804,6 +1857,9 @@ steps:
 ```
 
 ---
+
+> [!NOTE]
+> Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
 
 Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](process/phases.md?tabs=yaml#timeouts).
 
@@ -1844,6 +1900,9 @@ steps:
 ```
 
 ---
+
+> [!NOTE]
+> Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
 
 Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](process/phases.md?tabs=yaml#timeouts).
 
@@ -2132,7 +2191,7 @@ Syntax highlighting is available for the pipeline schema via a Visual Studio Cod
 You can [download Visual Studio Code](https://code.visualstudio.com), [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and [check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).
 The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.
 
-You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](https://docs.microsoft.com/rest/api/azure/devops/distributedtask/yamlschema/get?view=azure-devops-rest-5.1).
+You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](https://docs.microsoft.com/rest/api/azure/devops/distributedtask/yamlschema/get?view=azure-devops-rest-5.1&preserve-view=true).
 
 <!-- For people who get here by searching for, say, "azure pipelines template YAML schema", 
      look around a bit, and then type "Ctrl-F JSON" when they don't see anything promising

@@ -3,11 +3,9 @@ title: Collaborate on code
 titleSuffix: Azure Repos
 description: What do you get with Azure Repos  
 ms.technology: devops-new-user
-ms.author: apawast
-author: apawast
 ms.date: 06/01/2020
 ms.topic: overview
-monikerRange: 'azure-devops'
+monikerRange: '>=tfs-2018'
 ---
 
 # What is Azure Repos?

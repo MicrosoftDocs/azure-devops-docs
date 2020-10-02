@@ -7,6 +7,7 @@ ms.custom: process
 ms.assetid: f4c6c550-ed55-4bff-a5a7-0e25e87249a5
 ms.author: kaelli
 ms.topic: reference
+monikerRange: '< azure-devops'
 ms.date: 02/14/2017
 ---
 
@@ -21,7 +22,7 @@ You may want to automatically transition work items from one state to another st
  `ACTION` is an optional child element of `ACTIONS`.  
   
 > [!NOTE]  
-> The Work Item Tracking API is part of the Visual Studio ALM SDK, as described by the following page on the Microsoft website: [Extending Team Foundation](https://go.microsoft.com/fwlink/?LinkId=121098).  
+> The Work Item Tracking API is part of the Visual Studio ALM SDK, as described by the following page on the Microsoft website: [Extending Team Foundation](/previous-versions/visualstudio/visual-studio-2013/bb130146(v=vs.120)).  
   
  For example, a tool is preset to automatically transition a work item to "Resolved" after the user checks in a change. However, as an integration provider, you do not know what state the work item type author has declared as "Resolved". The author might mean Resolved, Closed, Completed, Ready For Test, Include In Build, and so on. One option would be to require all work item type authors to include a state explicitly named "Resolved".  
   
@@ -103,7 +104,7 @@ To integrate a tool with Work Item Tracking, the tool must perform the following
   
 2.  Set the work item to the "to" state.  
   
-     The Work Item Tracking API provides methods for performing these steps. The Work Item Tracking API is part of the Visual Studio ALM SDK. For more information, see the following page on the Microsoft website: [Team Foundation Server SDK](https://go.microsoft.com/fwlink/?LinkId=121098).  
+     The Work Item Tracking API provides methods for performing these steps. The Work Item Tracking API is part of the Visual Studio ALM SDK. For more information, see the following page on the Microsoft website: [Team Foundation Server SDK](/previous-versions/visualstudio/visual-studio-2013/bb130146(v=vs.120)).  
   
     > [!NOTE]  
     >  The transaction action that caused a particular state transition to occur is not recorded. If you must track which action caused a transition, you can specify an additional work item field to track it, or you can define a Reason value.  
@@ -190,4 +191,4 @@ To integrate a tool with Work Item Tracking, the tool must perform the following
 - [Customize your work tracking experience](../customize-work.md)
 - [Control](control-xml-element-reference.md)    
 - [Apply a field rule](apply-rule-work-item-field.md)  
-- [Change the workflow](change-workflow-wit.md)   
+- [Change the workflow](change-workflow-wit.md)

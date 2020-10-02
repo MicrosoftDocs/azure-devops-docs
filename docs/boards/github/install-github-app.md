@@ -168,7 +168,7 @@ You can configure additional Azure Boards/Azure DevOps projects, GitHub.com repo
 3. Scroll down and choose <strong>Uninstall</strong>. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose repositories](media/github-app/uninstall.png)  
+	> ![Choose Uninstall.](media/github-app/uninstall.png)  
 
 4. Confirm that you understand that uninstalling the Azure Boards app will remove all connections you've made to connect to GitHub repositories. 
 
@@ -179,9 +179,9 @@ Once you've integrated Azure Boards with GitHub using the Azure Boards app, you 
 1. From you Azure Boards project web portal, choose (1) <strong>Project Settings</strong>, expand <strong>Boards</strong> as needed, and then choose (2) <strong>GitHub connections</strong>.
 
 	> [!div class="mx-imgBorder"]  
-	> ![  ](media/github-app/open-project-settings-github-connections.png)  
+	> ![Select GitHub connections in Project Settings](media/github-app/open-project-settings-github-connections.png)  
 
-1. To add or remove repositories, open the ![ ](../../media/icons/actions-icon.png) actions icon for the connection and choose <strong>Add</strong> repositories or <strong>Remove</strong> repositories from the menu. 
+1. To add or remove repositories, open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the connection and choose <strong>Add</strong> repositories or <strong>Remove</strong> repositories from the menu. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add or remove GitHub repositories](media/github/repo-actions-menu.png)  

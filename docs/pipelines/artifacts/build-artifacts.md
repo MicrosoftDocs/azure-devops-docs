@@ -52,7 +52,7 @@ YAML is not supported in TFS.
 
 
 
-![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+:::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -98,7 +98,7 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 You can create multiple artifact items. For example:
 
-![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+:::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -114,7 +114,7 @@ You can create multiple artifact items. For example:
 
 * Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
-![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+:::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -167,7 +167,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-![icon](../tasks/utility/media/copy-files.png) **Utility: Copy Files**
+:::image type="icon" source="../tasks/utility/media/copy-files.png" border="false"::: **Utility: Copy Files**
 
 * Source folder:
 
@@ -187,7 +187,7 @@ YAML is not supported in TFS.
    $(Build.ArtifactStagingDirectory)
    ```
 
-![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+:::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -208,7 +208,7 @@ YAML is not supported in TFS.
 
 ### Consume artifacts in release pipelines
 
-You can download artifacts produced by either a build pipeline (created in a classic editor) or a YAML pipeline (created through a YAML file) in a release pipeline and deploy them to the target of your choice. At present, you cannot download artifact produced by a YAML pipeline in another YAML pipeline.
+You can download artifacts produced by either a build pipeline (created in a classic editor) or a YAML pipeline (created through a YAML file) in a release pipeline and deploy them to the target of your choice.
 
 ### Consume an artifact in the next job of your pipeline
 
@@ -242,7 +242,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-![icon](../tasks/utility/media/downloadbuildartifacts.png) **Utility: Download Build Artifacts**
+:::image type="icon" source="../tasks/utility/media/downloadbuildartifacts.png" border="false"::: **Utility: Download Build Artifacts**
 
 * Download artifacts produced by: Current build
 
@@ -283,9 +283,9 @@ YAML is not supported in TFS.
 
 Use these tasks to publish artifacts:
 
-* ![icon](../tasks/utility/media/copy-files.png) [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
-* ![icon](../tasks/utility/media/delete-files.png) [Utility: Delete Files](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
-* ![icon](../tasks/utility/media/publish-build-artifacts.png) [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
+* :::image type="icon" source="../tasks/utility/media/copy-files.png" border="false"::: [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
+* :::image type="icon" source="../tasks/utility/media/delete-files.png" border="false"::: [Utility: Delete Files](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
+* :::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
 
 ## Explore, download, and deploy your artifacts
 

@@ -6,7 +6,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= azure-devops-2019" 
+monikerRange: '< azure-devops' 
 ms.date: 04/23/2020
 ---
 
@@ -62,9 +62,9 @@ Jump to the bottom of this article to confirm that reports are available for the
 
 ## Verify your options and upgrade if necessary
 
-1.	Find out what version and edition of SQL Server you have by following the instructions provided in [Validate a SQL Server Installation](https://technet.microsoft.com/library/bb510455.aspx). 
+1.	Find out what version and edition of SQL Server you have by following the instructions provided in [Validate a SQL Server Installation](/sql/database-engine/install-windows/validate-a-sql-server-installation). 
 	If the answer is SQL Server Express, keep following these steps. If it's any other edition, but you don't see any version and edition information about reporting or analysis services, jump ahead to [Add Reporting Services](#AddRSandAS). If you do see information about these services, then your SQL Server already has them installed, and you can jump ahead to [Add Reporting to TFS](#AddRStoTFS).  
-2.	If your deployment is using SQL Server Express, [upgrade to a different edition](https://msdn.microsoft.com/library/cc707783.aspx). For more information about the editions that support reporting in TFS, see [Requirements and compatibility, SQL Server](/azure/devops/server/requirements#sql-server). 
+2.	If your deployment is using SQL Server Express, [upgrade to a different edition](/sql/database-engine/install-windows/upgrade-to-a-different-edition-of-sql-server-setup). For more information about the editions that support reporting in TFS, see [Requirements and compatibility, SQL Server](/azure/devops/server/requirements#sql-server). 
 
 <a id="AddRSandAS">  </a>
 
@@ -201,6 +201,4 @@ You can learn more about installing and configuring SQL Server for use with on-p
 
 ### Change the data reader account  
 - [Change the service account or password for SQL Server Reporting](/azure/devops/server/admin/change-service-account-or-password-sql-reporting)
-- [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies) 
-
-
+- [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies)

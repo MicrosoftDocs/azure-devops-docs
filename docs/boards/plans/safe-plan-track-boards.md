@@ -14,7 +14,7 @@ ms.date: 05/28/2020
 
 # Plan and track SAFe® programs and portfolios  
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
 Once you've configured your Agile tools to support SAFe®, trace relationships can be created from Stories all the way up to Epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
 
@@ -45,7 +45,7 @@ The following sections indicate how to work from Excel or through the web portal
 You can import work items using Excel. As shown in the following image, Epics, Features, and User Stories are defined in a tree-list with their Value Area, Area Path and a few tags defined. The State value is New. 
 
 > [!div class="mx-imgBorder"]
-> ![Portfolio backlog, Add Epics](media/safe-plan-track/excel-import-plan.png) 
+> ![Import a top-down plan using Excel.](media/safe-plan-track/excel-import-plan.png) 
 
 Once you publish the list, work item IDs are assigned. Each team can then start working with their work items, adding details and assigning work to team members and to sprints. 
 
@@ -86,7 +86,7 @@ To learn more about using the project wiki, see [About Wikis, READMEs, and Markd
 	Here we assign the first epic to Jamal, add a Description, and specify Business for the Value Area. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Portfolio backlog, List Epics](media/safe-plan-track/epic-form.png)
+	> ![Define details of Epics.](media/safe-plan-track/epic-form.png)
 
 	To perform bulk updates to several work items, see [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
@@ -126,7 +126,7 @@ Each program manager defines and prioritizes their features. Here, we show the F
 
 In this next step you'll map each Feature to it's parent Epic. The Mapping tool quickly create parent-child links between Epics and Features. 
 
-1. From the Features backlog, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Mapping**.  
+1. From the Features backlog, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, Turn on Mapping](media/safe-plan-track/turn-on-mapping.png)
@@ -141,9 +141,9 @@ In this next step you'll map each Feature to it's parent Epic. The Mapping tool 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, Drag and drop feature onto epic](media/safe-plan-track/map-feature-to-epic.png)
 
-1.	When finished, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and enable **Parents** and turn **Mapping** off. 
+1.	When finished, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and enable **Parents** and turn **Mapping** off. 
 
-	Your list should look something like that shown in the following image. The  ![ ](../../media/icons/info.png) info icon appears next to each Epic, indicating that the work item is owned by another team than the one currently selected.  
+	Your list should look something like that shown in the following image. The   :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon appears next to each Epic, indicating that the work item is owned by another team than the one currently selected.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, with Parents enabled](media/safe-plan-track/list-epics-features.png)
@@ -182,10 +182,10 @@ In a similar manner to portfolio and program teams, each Agile feature team add 
 
 Just as you earlier mapped each Feature to it's parent Epic, now you'll map each User Story to it's parent Feature. The Mapping tool quickly create parent-child links between Features and User Stories. 
 
-1. From the Stories backlog, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Mapping**.  
+1. From the Stories backlog, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Features backlog, Turn on Mapping](media/safe-plan-track/turn-on-mapping-for-stories.png)
+	> ![Stories backlog, Turn on Mapping](media/safe-plan-track/turn-on-mapping-for-stories.png)
 
 2.	Choose the Fiber Suite's backlog of Features. 
 
@@ -197,9 +197,9 @@ Just as you earlier mapped each Feature to it's parent Epic, now you'll map each
 	> [!div class="mx-imgBorder"]
 	> ![Stories backlog, Drag and drop user story onto feature](media/safe-plan-track/map-story-to-feature.png)
 
-1.	When finished, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and enable **Parents** and turn **Mapping** off. 
+1.	When finished, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and enable **Parents** and turn **Mapping** off. 
 
-	Your list should look something like that shown in the following image. The ![ ](../../media/icons/info.png) info icon appears next to each Epic and Feature, indicating that the work item is owned by another team than the one currently selected.  
+	Your list should look something like that shown in the following image. The  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon appears next to each Epic and Feature, indicating that the work item is owned by another team than the one currently selected.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Stories backlog, with Parents enabled](media/safe-plan-track/stories-parented-list.png)
@@ -269,7 +269,7 @@ In a similar manner to Agile release teams sprint planning, each program team ca
 Here we show the Fiber Suite program team plan the releases for their features.  
 
 > [!div class="mx-imgBorder"]
-> ![App team, Backlogs, Sprint planning](media/safe-plan-track/plan-release-train.png)
+> ![The Fiber Suite program team plans the releases for their features.](media/safe-plan-track/plan-release-train.png)
 
 
 

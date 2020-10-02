@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 05/18/2020
+ms.date: 07/09/2020
 ---
 
 # Work item fields and attributes
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Work item fields are used to track information. Each work item type (WIT) definition specifies the fields defined for that WIT. Each field is associated with a number of attributes, many of which are set by the system and cannot be changed. 
 
@@ -80,7 +80,7 @@ You can view the data type of fields defined for your organization by [opening t
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 When your project collection uses the Inheritance process model to customize work tracking, you can view the data type of fields by [opening the Process>Fields page](../../organizations/settings/work/customize-process-field.md#review-fields). 
 
@@ -433,7 +433,7 @@ https://dev.azure.com/fabrikam/_apis/wit/fields/System.IterationPath
 
 ::: moniker range=">= tfs-2018 < azure-devops"  
 
-You can list the attributes assigned to a field by using the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get). Enter your organization name for *OrganizationName*. To get started using REST, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/?view=vsts-rest-tfs-4.1)
+You can list the attributes assigned to a field by using the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get/?view=vsts-rest-tfs-4.1&preserve-view=true). Enter your organization name for *OrganizationName*. To get started using REST, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/?view=vsts-rest-tfs-4.1&preserve-view=true)
 
 > [!div class="tabbedCodeSnippets"]
 > ```REST
@@ -542,7 +542,7 @@ To access the Work Item Field Explorer, you must install the Process Editor Tool
 
 ## Project integration and project field mapping  
 
-You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](../../reference/xml/customize-project-field-mapping-file.md). 
+You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file. 
 
 ::: moniker-end  
 
@@ -554,7 +554,7 @@ To add fields to a process, you add them to one or more work item types. To lear
 
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see:
 - For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).  
@@ -584,11 +584,11 @@ You can change the field name, the index, and the report attributes for any fiel
 ::: moniker-end  
 
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - [Query quick reference](../queries/query-index-quick-ref.md)
 - [Work item field index](guidance/work-item-field.md) 
-- [Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019#choose-process-model)
+- [Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019&preserve-view=true#choose-process-model)
 - [Add or modify a field to track work](../../reference/add-modify-field.md)
 - [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md)
 

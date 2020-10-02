@@ -13,7 +13,7 @@ With this update, we've added user assignment-based billing. Instead of having t
 We’ve also added a new setting that lets you choose whether you want new users added to your organization to get full Basic access or limited/free Stakeholder access. In the past, new users got Basic if there were unassigned Basic licenses available, but Stakeholder if there weren’t. All organizations will start with their default access level set to Stakeholder, so there won’t be any unexpected charges for new users. If your organization typically kept extra unassigned licenses, so new users added to projects got full Basic access, make sure to [change your default access level to Basic](https://go.microsoft.com/fwlink/?linkid=2093704&clcid=0x409). 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/158_16.png)
+> ![Default access level for new users.](../../media/158_16.png)
 
 **Daily billing**
 
@@ -24,4 +24,4 @@ As part of the change to assignment-based billing, we've also switched from mont
 Organization and project permissions management have a new look and performance has been improved. Now, new group members will appear in the list as they are added without requiring a forced page refresh. Head over to your **Organizations Settings** and take a look.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/158_11.png)
+> ![Manage organization and project permissions.](../../media/158_11.png)

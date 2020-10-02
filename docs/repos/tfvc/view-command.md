@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Retrieve a file using the TFVC View Command for Azure DevOps Services or TFS
 ms.assetid: d67fcb55-6f54-434f-ba05-4564f976b8d9
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # View Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 The **view** command retrieves a specific version of a file to a temporary folder on your computer and displays it.
 

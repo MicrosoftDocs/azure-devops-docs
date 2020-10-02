@@ -9,7 +9,7 @@ ms.topic: include
 ::: moniker range=">= tfs-2015"
 
 
-You can use the following keyboard shortcuts when [working with queries](/azure/devops/boards/queries/using-queries) in the web portal. To view the valid shortcuts, enter **?** from **Boards>Queries** or **Work>Queries**. 
+You can use the following keyboard shortcuts when [working with queries](../../boards/queries/using-queries.md) in the web portal. To view the valid shortcuts, enter **?** from **Boards>Queries** or **Work>Queries**. 
 
 ::: moniker-end  
 
@@ -21,7 +21,7 @@ You can use the following keyboard shortcuts when [working with queries](/azure/
 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 
 :::row:::
@@ -62,4 +62,3 @@ You can use the following keyboard shortcuts when [working with queries](/azure/
 :::row-end:::
  
 ::: moniker-end
- 

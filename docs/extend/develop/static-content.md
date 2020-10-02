@@ -88,5 +88,4 @@ In this model, static content is served from your own service and not included i
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Package, publish, and install extensions](/../publish/overview.md)
-
+> [Package, publish, and install extensions](../publish/overview.md)

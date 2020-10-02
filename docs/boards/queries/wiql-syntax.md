@@ -10,13 +10,13 @@ ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A
 ms.author: kaelli  
 author: KathrynEE  
 monikerRange: '>= tfs-2013'
-ms.date: 01/16/2020
+ms.date: 07/09/2020
 ---
 
 
 # Syntax for the Work Item Query Language (WIQL) 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]   
+[!INCLUDE [temp](../includes/version-all.md)]   
 
 You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md)  or when using the [Work Item Query Language (REST API)](/rest/api/azure/devops/wit/wiql).  
 
@@ -269,7 +269,7 @@ ORDER BY [System.Id]
 
 The following table lists the macros or variables you can use within a WIQL query. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 
 |  Macro       |       Usage        |
@@ -284,7 +284,7 @@ The following table lists the macros or variables you can use within a WIQL quer
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 
 |      Macro     |                 Usage   |
@@ -395,6 +395,7 @@ is the equivalent of:
 
 ::: moniker-end
 
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 ### Custom macros 
 
@@ -511,7 +512,7 @@ The following table summarizes the differences between work item queries and que
 You can specify one of the following system link type names.  
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 You can specify one of the system link type names, listed below, or [a custom link type you've defined with the On-premises XML process](../../reference/xml/link-type-element-reference.md). 
 ::: moniker-end
 

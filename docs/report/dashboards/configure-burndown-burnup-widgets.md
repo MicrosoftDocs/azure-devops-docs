@@ -7,8 +7,8 @@ ms.technology: devops-analytics
 ms.topic: tutorial
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azure-devops-2019' 
-ms.date: 07/08/2019
+monikerRange: '>= azure-devops-2019'  
+ms.date: 07/14/2020
 ---
 
 # Configure a Burndown or Burnup widget 
@@ -34,7 +34,7 @@ Use the burndown chart to track completion of a predefined scope of work over a 
 ![Burndown Widget - Release Burndown Example](./media/burndown-widget/burndownup-release-burndown.png)
 
 **Burndown widget configured to display a Bug Burndown**
-![Burndown Widget - Release Burndown Example](./media/burndown-widget/burndownup-bug-burndown.png)
+![Burndown Widget - Bug Burndown Example](./media/burndown-widget/burndownup-bug-burndown.png)
 
  
 ## Metrics 
@@ -64,7 +64,7 @@ Burndown charts also help teams understand risks to their release. If the projec
 
 As the following diagram shows, charts based on the Burndown and Burnup widgets provide a number of calculated elements. 
 
-![Burndown Widget - Release Burndown Example](./media/burndown-widget/burndownup-release-burndown-with-markup.png)
+![Burndown Widget - Release Burndown with markup](./media/burndown-widget/burndownup-release-burndown-with-markup.png)
 
 
 | Element | Description|  
@@ -80,6 +80,7 @@ As the following diagram shows, charts based on the Burndown and Burnup widgets 
 |**Total&nbsp;Scope** |Represents to the total scope of the burndown. The plotted points include both completed and remaining work. The total scope line indicates the scope change of your project. For past data points, the plotted total scope represents actual total scope as of the end of each interval/iteration. For future data points, the plotted total scope represents a projected scope change, based on past scope changes.|
 |**Burndown**|Represents the burndown. The burndown line tells you how fast you are burning down the work. For past data points, the plotted burndown represents actual burndown as of the end of each interval/iteration. For future data points, the plotted burndown represents a projected burndown, based on past burndown.
 
+## Prerequisites  
 
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
@@ -87,15 +88,15 @@ As the following diagram shows, charts based on the Burndown and Burnup widgets 
  
 The Configuration dialog for the Burndown and Burnup widgets is the same. You configure these widgets for one or more teams. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).
 
-::: moniker range="azure-devops"
-1. If you haven't yet [added the Burndown widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-1. To open the configuration dialog, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option.  
+::: moniker range=">= azure-devops-2020"
+1. If you haven't yet [added the Burndown widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
+1. To open the configuration dialog, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option.  
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now.    
-1. If you haven't yet [added the Burndown widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-1. To open the configuration dialog, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option.   
+1. If you haven't yet [added the Burndown widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
+1. To open the configuration dialog, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option.   
 ::: moniker-end
 
 
@@ -126,8 +127,8 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
    > [!NOTE]   
    > If your project has been customized using a [Hosted XML process](../../organizations/settings/work/hosted-xml-process-model.md) and has created a customized bug work item category name, then the Burndown and Burnup widgets won't be able to query for work items within that category. To query for bugs, the customized bug work item type must belong to the default **Bug Category**, reference name `Microsoft.BugCategory`.  
    
-	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../organizations/settings/work/customize-process-wit.md).   
-	![Burndown Widget - Configuration - Select work item types](./media/burndown-widget/burndownup-config-select-work-item-type.png)  
+	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../organizations/settings/work/customize-process-work-item-type.md).   
+	![Burndown Widget - Configuration - Select work item types, custom](./media/burndown-widget/burndownup-config-select-work-item-type.png)  
 
    > [!NOTE]   
    > When setting filters in this step or the following step, it is important to understand how filters are applied to historical data. Read [Filters applied to historical data](../powerbi/analytics-historical-filtering.md) for more information.
@@ -136,7 +137,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	You can filter by any field available in your project, even a specific tag.   For example, you can narrow your burndown to top priority items by adding a filter **Priority <= 2**.      
 	![Burndown Widget - Configuration - Select field criteria](./media/burndown-widget/burndownup-config-select-field-criteria.png)  
 	You may add multiple field criteria, by selecting **Add criteria**. For example, you can also select a custom field such as Release, to create a burndown chart of only those items assigned to a specific release.    
-	![Burndown Widget - Configuration - Select field criteria](./media/burndown-widget/burndownup-config-select-multiple-field-criteria.png)  
+	![Burndown Widget - Configuration - Select multiple field criteria](./media/burndown-widget/burndownup-config-select-multiple-field-criteria.png)  
    
 	> [!NOTE]  
 	> All field criteria are AND-ed together. That is, work items must match all the field criteria to be included in the burndown or burnup chart.
@@ -192,7 +193,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	![Burndown Widget - Configuration - select time period daily](./media/burndown-widget/burndownup-config-select-time-period-daily.png)
 
 	If you select **Weeks**, then you'll be able to select the **Last day of week**. The remaining work for each interval will be calculated based on that day.  
-	![Burndown Widget - Configuration - select time period daily](./media/burndown-widget/burndownup-config-select-time-period-weekly.png)
+	![Burndown Widget - Configuration - select time period weekly](./media/burndown-widget/burndownup-config-select-time-period-weekly.png)
 
 	If you select **Months**, then burndown will be calculated based the last day of each month.  
 

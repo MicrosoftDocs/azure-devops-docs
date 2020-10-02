@@ -9,13 +9,13 @@ author: KathrynEE
 ms.custom: contentperfq4
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 05/22/2020
+ms.date: 07/09/2020
 ---
 
 
 # Bulk add or modify work items with Excel 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 When you have many work items to add or modify, using Microsoft Excel can save you time. Excel supports adding work items, updating existing work items, adding links and attachments to multiple work items, and more. In addition, you can use native Excel features to support other actions, such as summing a column, copy-and-paste rows, perform fill down, and more. 
 
@@ -37,7 +37,7 @@ In this article you'll learn how to perform the following tasks:
 
 For information about connecting to Excel, see [Connect Azure Boards to an Office client](track-work.md). For answers to specific questions about the integration of Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards ](faqs.md).  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!NOTE]  
 > If you don't have access to Excel, you can still perform bulk import and update using CSV formatted files. To learn more, see [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md).
@@ -214,16 +214,29 @@ You can't perform the following tasks from an Excel worksheet:
 ::: moniker range="azure-devops" 
 
 - You can't delete work items 
-- You can't change the work item type of an existing work item 
+- You can't change the work item type of an existing work item
+- You can't move work items to another project  
 - You can't import or update test case steps or other test artifacts 
 - You can't add work items in any other State than the new State 
 - You can't add to a work item discussion thread 
-- You can't link to a remote work item 
-- You can't move work items to another project 
+- You can't link to a remote work item. 
+
 
 ::: moniker-end  
 
-::: moniker range="< azure-devops" 
+::: moniker range="azure-devops-2020" 
+
+- You can't delete work items 
+- You can't change the work item type of an existing work item
+- You can't move work items to another project  
+- You can't import or update test case steps or other test artifacts 
+- You can't add work items in any other State than the new State 
+- You can't add to a work item discussion thread. 
+
+
+::: moniker-end  
+
+::: moniker range="<= azure-devops-2019" 
 
 - You can't delete work items 
 - You can't import or update test case steps or other test artifacts 
@@ -266,7 +279,7 @@ You can't perform the following tasks from an Excel worksheet:
 1.  Publish your worksheet. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add work items to Excel](media/excel/2019-publish.png)
+	> ![Publish your worksheet.](media/excel/2019-publish.png)
 
     Make sure your cursor is in a cell that contains data. Otherwise, the **Publish** button might appear disabled.
 
@@ -314,7 +327,7 @@ You can add a hierarchy of work items linked using parent-child links or other t
 	Note the List type has changed to **Tree**, and a second **Title** column appears.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Convert to Tree List dialog](media/excel/converted-tree-list-type.png)
+	> ![List type has changed to Tree, and a second Title column appears.](media/excel/converted-tree-list-type.png)
 
 1. To add more levels to the hierarchy, choose **Add Tree Level** again. For example, if you want to add a hierarchy of Epics, Features, and User Stories, you'll want to have **Title 1**, **Title 2**, and **Title 3** columns.
 
@@ -553,7 +566,7 @@ You can use the Select User feature to find user accounts and assign values to p
 
 You can perform a number of actions from the **Links** tab of the **Links and Attachments** dialog. Specifically, you can: 
 - Review the existing links defined for the selected work item 
-- Add links to one or more work items or select objects 
+- Add links to a selected work items to one or more work items or select objects 
 - Delete links 
 - Open a linked work item (opens in the web portal)  
 - Edit the link type of an existing link 
@@ -563,6 +576,8 @@ For more information on linking work items, see [Link user stories, issues, bugs
 
 
 ### View and add links 
+
+You can't use the Links and Attachments dialog to bulk update work item links. You can only bulk update tree-topology link types using a tree list. 
 
 1. To link a work item to other work items, choose the work item and then choose **Links and Attachments**. From the Links tab, choose **Link to** and then choose the **Link Type** and work item(s) you want to link to. Choose **OK** and then **Publish**. 
 
@@ -588,7 +603,7 @@ The **Choose Linked Work Items** dialog works in the same way as the **Get Work 
 
 ### Add columns to the links list
 
-1. From the **Links** tab, choose the ![ ](media/icons/choose-columns.png) **Columns** icon, and add the fields you want displayed. Here we add the Assigned to and State fields. 
+1. From the **Links** tab, choose the :::image type="icon" source="media/icons/choose-columns.png" border="false"::: **Columns** icon, and add the fields you want displayed. Here we add the Assigned to and State fields. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Links and Attachments dialog, Links tab, Added columns](media/excel/link-tabs-choose-columns-dialog.png) 
@@ -596,7 +611,7 @@ The **Choose Linked Work Items** dialog works in the same way as the **Get Work 
 1. To reorder the links, choose the field to sort the list on that field. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Links and Attachments dialog, Links tab, Added columns](media/excel/links-tab-added-columns.png) 
+	> ![To reorder the links, choose the field to sort the list on that field.](media/excel/links-tab-added-columns.png) 
 
 This dialog works in the same way as the **Get Work Items** dialog. See [Add existing work items to your worksheet](#get-work-items) described earlier in this article.
 ### Open a linked work item
@@ -612,7 +627,7 @@ The work item opens in your web portal.
 
 You can edit any link listed. You can change the link type and the work items linked to.
   
-1. Choose the link and choose the ![ ](media/icons/edit.png) **Edit** icon. 
+1. Choose the link and choose the :::image type="icon" source="media/icons/edit.png" border="false"::: **Edit** icon. 
 
 1. Change the link type as needed. 
 
@@ -647,7 +662,7 @@ You can create a report or chart from the web portal for flat-list queries. See 
 You can create a report using the **New Report** feature based on a flat list of work items. 
 
 > [!div class="mx-imgBorder"]  
-> ![Get work items dialog](media/excel/team-ribbon-new-report.png)
+> ![Create a report using the New Report feature.](media/excel/team-ribbon-new-report.png)
 
 To learn more, see [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md). 
 
@@ -670,7 +685,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 
 ## Related articles
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)

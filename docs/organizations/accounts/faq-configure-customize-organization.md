@@ -14,9 +14,10 @@ monikerRange: '>= tfs-2013'
 
 # Create and configure organization FAQs
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
-In this article, learn the answers to frequently asked questions (FAQs) about creating and configuring an organization in Azure DevOps. FAQs are grouped by the following subjects: 
+Learn the answers to frequently asked questions (FAQs) about creating and configuring an organization in Azure DevOps. FAQs are grouped by the following subjects:
+
 - [General](#general-organization-faqs)
 - [Create an organization](#create-organization-faqs)
 - [Configure an organization](#configure-organization-faqs)
@@ -56,11 +57,11 @@ A: [Find Visual Studio subscriptions that include Azure DevOps](faq-user-and-per
 
 A: If you're a new user, you can change your profile details. Change your profile details only once.
 
-1.    Confirm your profile details.
+1. Confirm your profile details.
 
     ![Confirm profile details](media/sign-up-visual-studio-team-services/create-profile-msa.png)
 
-2.    Continue creating your organization.
+2. Continue creating your organization.
 
     ![Create your organization](media/sign-up-visual-studio-team-services/my-info-new-organization.png)
 
@@ -68,7 +69,7 @@ A: If you're a new user, you can change your profile details. Change your profil
 
 ### Q: How do I find the region where my organization is located? 
 
-A: [Find your organization's region](/azure/devops/organizations/accounts/change-organization-location).
+A: [Find your organization's region](./change-organization-location.md).
 
 ### Q: How do I change my project name, organization location, or process? 
 
@@ -76,9 +77,9 @@ A: Change these when you sign up for your organization.
 
 ![Change organization details](/azure/devops/media/change-details-standard1.png)
 
-Azure DevOps uses Agile as the default [process](/azure/devops/boards/work-items/guidance/choose-process) to organize your work. Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps is available. For a better experience, select a location that's closest to most users in your organization. 
+Azure DevOps uses Agile as the default [process](../../boards/work-items/guidance/choose-process.md) to organize your work. Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps is available. For a better experience, select a location that's closest to most users in your organization. 
 
-If a new region or location opens later, you can [change your organization location or region](/azure/devops/organizations/accounts/change-organization-location). You can also select another process, like Scrum, if that works best for you.
+If a new region or location opens later, you can [change your organization location or region](./change-organization-location.md). You can also select another process, like Scrum, if that works best for you.
 
 ![Rename project, change organization location, or select another process](/azure/devops/media/change-details-standard2.png)
 
@@ -108,7 +109,7 @@ A: Some features require you to install an extension, which might be available f
 
 A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-![Create your organization](media/sign-up-visual-studio-team-services/my-info-organization-list.png)
+![Create another organization.](media/sign-up-visual-studio-team-services/my-info-organization-list.png)
 
 <a name="another-team-project"></a>
 
@@ -116,13 +117,13 @@ A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.c
 
 A: Yes, multiple projects help you keep work separate when you have development projects for different teams. Only one project collection is supported.
 
-To create projects, you need project collection administrator or organization owner permissions. For details, see [Create a project](/azure/devops/organizations/projects/create-project).
+To create projects, you need project collection administrator or organization owner permissions. For details, see [Create a project](../projects/create-project.md).
 
-To learn more about projects and when you should or shouldn't add one, see [About projects and scaling your organization](/azure/devops/organizations/projects/about-projects).
+To learn more about projects and when you should or shouldn't add one, see [About projects and scaling your organization](../projects/about-projects.md).
 
 ### Q: Can I delete a project that I created?
 
-A: Yes, you can [delete a project](/azure/devops/organizations/projects/delete-project) that you don't use anymore.
+A: Yes, you can [delete a project](../projects/delete-project.md) that you don't use anymore.
 
 ### Q: Where can I find my organization name (URL)?
 
@@ -130,7 +131,7 @@ A: [Sign in to your Visual Studio profile](https://go.microsoft.com/fwlink/?Link
 
 ### Q: Can I delete an organization that I don't need anymore? 
 
-A: Yes. See [Delete or recover your organization](/azure/devops/organizations/accounts/delete-your-organization).
+A: Yes. See [Delete or recover your organization](./delete-your-organization.md).
 
 <a name="SignInOrganizationDifferences"></a>
 
@@ -172,7 +173,7 @@ A: Yes, see [Disconnect your organization from Azure Active Directory](disconnec
 
 A: Azure DevOps storage features help make sure that your data is available in case of hardware failure, service disruption, or datacenter disasters. Azure DevOps helps protect data from accidental or malicious deletion.
 
-We follow industry best practices and have enterprise-grade security measures to help protect your code and project data. Also, all communication between your computer and the service takes place over an encrypted HTTPS connection. Learn [how your data is secured and protected](/azure/devops/organizations/security/data-protection).
+We follow industry best practices and have enterprise-grade security measures to help protect your code and project data. Also, all communication between your computer and the service takes place over an encrypted HTTPS connection. Learn [how your data is secured and protected](../security/data-protection.md).
 
 ### Q: Do I still own my code and intellectual property? What do you do with my personal information?
 
@@ -209,11 +210,11 @@ A: Azure DevOps Administrators can claim ownership of organizations where the cu
 
 ### Q: Can I change my organization Owner?
  
-A: Yes. If you have at least Basic access, you can change the organization Owner in your organization settings. For more information, see [Change the organization owner](/azure/devops/organizations/accounts/change-organization-ownership-vs).
+A: Yes. If you have at least Basic access, you can change the organization Owner in your organization settings. For more information, see [Change the organization owner](./change-organization-ownership.md).
 
 ### Q: Can I change the organization name (URL), too?
 
-A: Only the organization Owner can change the URL. If you're the organization Owner, learn how to [change the organization URL](rename-vsts-organization.md).
+A: Only the organization Owner can change the URL. If you're the organization Owner, learn how to [change the organization URL](./rename-organization.md).
 
 ### Q: Can I reverse an organization Owner change?
 
@@ -285,7 +286,7 @@ A: See [Delete your organization](delete-your-organization.md), which includes p
 
 ### Q: How do I restore my organization?
 
-A: See [Recover your organization](recover-your-vsts-organization.md).
+A: See [Recover your organization](./recover-your-organization.md).
 
 <a name="get-support"></a>
 
