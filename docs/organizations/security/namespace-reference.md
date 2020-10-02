@@ -790,7 +790,7 @@ The following table describes those security namespaces and permissions defined 
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributors group 
       - **Creator** role (`View`, `Use`, `Create`, and `Owner` permissions) to the member who created the library item
       - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups.  
-      To learn more, see [Library asset security roles](../../pipelines/library.md). 
+      To learn more, see [Library asset security roles](../../pipelines/library/index.md). 
       <br/>
       ID: `b7e84409-6553-448a-bbb2-af228e07cbeb`
    :::column-end:::
@@ -1053,7 +1053,6 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
    :::column span="2":::
       Manages permissions to read and write [pipeline cache entries](/azure/devops/pipelines/release/caching). These permissions are only assigned to internal Azure DevOps service principles. 
-      TBD 
       <br/>
       ID: `62a7ad6b-8b8d-426b-ba10-76a7090e94d5` 
    :::column-end:::
