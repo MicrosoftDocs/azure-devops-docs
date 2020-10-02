@@ -49,7 +49,7 @@ Normal release cadence for new Azure DevOps Server versions is once every three-
 
 The following features can be included with your import, but are currently in a preview state. 
 
-* [Analytics](https://docs.microsoft.com/azure/devops/report/powerbi/what-is-analytics?view=azure-devops) - Note this is only supported for Azure DevOps Server 2019 and later.
+* [Analytics](../report/powerbi/what-is-analytics.md?view=azure-devops) - Note this is only supported for Azure DevOps Server 2019 and later.
 
 When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new organization along with all your other data. Should you choose to not include these features then their data will not be copied.
 
@@ -84,11 +84,11 @@ A: No, when it comes to service updates, Hosted XML organizations are treated th
 
 ### Q: Will my organization be stuck in Hosted XML forever?
 
-A: You are using the Hosted XML process because the Inheritance process model does not contain all features yet. However, you can now [clone a hosted XML process to an Inheritance process](https://docs.microsoft.com/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited).
+A: You are using the Hosted XML process because the Inheritance process model does not contain all features yet. However, you can now [clone a hosted XML process to an Inheritance process](../organizations/settings/work/upgrade-hosted-to-inherited.md).
 
 ### Q: Will migrating from Hosted XML into Inheritance process model be a manual process?
 
-A: No, the migration is automated. Simply follow the steps to [clone a hosted XML process to an Inheritance process](https://docs.microsoft.com/azure/devops/organizations/settings/work/upgrade-hosted-to-inherited).
+A: No, the migration is automated. Simply follow the steps to [clone a hosted XML process to an Inheritance process](../organizations/settings/work/upgrade-hosted-to-inherited.md).
 
 
 ### Q: What happens in Hosted XML when Microsoft makes a change to a system process?
@@ -117,6 +117,4 @@ A: Yes, you can contact [AzureDevOpsImport@microsoft.com](mailto:AzureDevOpsImpo
 > [!VIDEO https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3199/player]
 
 <!-- ENDSECTION --> 
-
- 
 

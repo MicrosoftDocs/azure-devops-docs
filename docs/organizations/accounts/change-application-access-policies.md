@@ -26,7 +26,7 @@ When you deny access to an authentication method, no application can access your
 
 To access your organization without asking for user credentials multiple times, applications use the following authentication methods.
 
-* [**OAuth**](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md). The [Organizations](/rest/api/azure/devops/account) and [Profiles](/rest/api/azure/devops/profile/) APIs support only OAuth.
+* [**OAuth**](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs for Azure DevOps](/rest/api/azure/devops/). The [Organizations](/rest/api/azure/devops/account) and [Profiles](/rest/api/azure/devops/profile/) APIs support only OAuth.
 
 * [**SSH authentication**](../../repos/git/use-ssh-keys-to-authenticate.md) to generate encryption keys for using Linux, macOS, and Windows running [Git for Windows](https://www.git-scm.com/download/win), but you can't use [Git credential managers](../../repos/git/set-up-credential-managers.md) or [personal access tokens](use-personal-access-tokens-to-authenticate.md) (PATs) for HTTPS authentication.
  
@@ -34,7 +34,7 @@ To access your organization without asking for user credentials multiple times, 
 
    * Accessing specific resources or activities, like builds or work items
    * Clients like Xcode and NuGet that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication
-   * Accessing [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md)
+   * Accessing [REST APIs for Azure DevOps](/rest/api/azure/devops/)
 
 To remove access for PATs, you must [revoke them](use-personal-access-tokens-to-authenticate.md).
 
@@ -76,7 +76,7 @@ You can enable or disable the following security policies.
 
    Depending on which conditions the user satisfies, you can require multi-factor authentication, further checks, or block access.
 
-   For more information, see the REST API reference article, section [API version mapping](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-server-rest-5.0).
+   For more information, see the REST API reference article, section [API version mapping](/rest/api/azure/devops/?view=azure-devops-server-rest-5.0).
 
 ## Prerequisites
 
@@ -93,5 +93,3 @@ To change a policy, you need at least Basic access and organization Owner or Pro
 - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
 - [What is Conditional Access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access)
 - [Detailed instructions and requirements for Conditional Access](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps)
-
-

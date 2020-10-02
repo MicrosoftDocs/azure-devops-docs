@@ -1089,7 +1089,7 @@ You manage organization-level permissions through the [web portal admin context]
         <td>Can modify permissions for build pipelines at the organization or project collection-level. This includes: 
             <ul>
             <li><a href="../../pipelines/policies/retention.md" data-raw-source="[Set retention policies](../../pipelines/policies/retention.md)">Set retention policies</a></li>
-            <li><a href="../../pipelines/licensing/concurrent-pipelines-ts.md" data-raw-source="[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)">Set resource limits for pipelines</a></li>
+            <li><a href="/azure/devops/pipelines/licensing/concurrent-jobs" data-raw-source="[Set resource limits for pipelines](../../pipelines/licensing/concurrent-jobs.md)">Set resource limits for pipelines</a></li>
             <li><a href="../../pipelines/agents/pools-queues.md" data-raw-source="[Add and manage agent pools](../../pipelines/agents/pools-queues.md)">Add and manage agent pools</a></li>
             <li><a href="../../pipelines/release/deployment-groups/index.md" data-raw-source="[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)">Add and manage deployment pools</a></li>
             </ul>
@@ -1209,7 +1209,7 @@ The permissions available for Azure DevOps Server 2019 and later versions vary d
    :::column span="3":::
       Can modify permissions for build pipelines at the project collection-level. This includes the following artifacts: 
       - [Set retention policies](../../pipelines/policies/retention.md)
-      - [Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md) 
+      - [Set resource limits for pipelines](../../pipelines/licensing/concurrent-jobs.md) 
       - [Add and manage agent pools](../../pipelines/agents/pools-queues.md) 
       - [Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md) 
    :::column-end:::
@@ -3085,7 +3085,7 @@ View releases
 
 ::: moniker range="tfs-2015"
 
-If you are working with the Release Management client and server supported for TFS 2015, see [Automate deployments with Release Management](../../release/previous-version/release-management-overview.md).
+If you are working with the Release Management client and server supported for TFS 2015, see [Automate deployments with Release Management](../../pipelines/archive/release/previous-version/release-management-overview.md).
 
 ::: moniker-end
 

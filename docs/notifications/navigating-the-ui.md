@@ -180,5 +180,5 @@ To learn more, see [Manage Global notifications](manage-organization-notificatio
 
 - [Manage personal notification settings](manage-your-personal-notifications.md)
 - [Follow a specific work item](../boards/work-items/follow-work-items.md)  
-- [Manage notifications for a team](manage-team-notifications.md)  
+- [Manage notifications for a team](./manage-team-group-notifications.md)  
 - [Change your preferred email address](change-email-address.md)

@@ -63,7 +63,7 @@ Optional tasks to consider include:
 	You can then complete the following tasks: 
 	- Add [team members](../security/add-users-team-project.md#add-team-members)
 	- Add [team admins](add-team-administrator.md)
-	- Navigate to [team notifications](../../notifications/howto-manage-team-notifications.md)
+	- Navigate to [team notifications](../../notifications/manage-team-group-notifications.md)
 	- Navigate to team [iterations](set-iteration-paths-sprints.md#open-team-settings) and [area paths](set-area-paths.md#open-team-settings). 
 	- Update the [team description or profile picture](#team-description).
 
@@ -430,7 +430,7 @@ Team settings also include the team name, description, and team profile image. T
 
 ## Manage team notifications 
 
-Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. A number of alerts are defined for each team. For details, see [Manage team alerts](../../notifications/howto-manage-team-notifications.md).
+Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. A number of alerts are defined for each team. For details, see [Manage team alerts](../../notifications/manage-team-group-notifications.md).
 
 
 <a id="team-rooms" />
@@ -451,4 +451,4 @@ Team administrators can add users and events to team rooms, and add team rooms. 
 - [About projects and scaling your organization](../projects/about-projects.md)
 - [About teams and Agile tools](about-teams-and-settings.md)  
 - [Add teams](add-teams.md) 
-- [Add a team administrator](add-team-administrator.md) 
+- [Add a team administrator](add-team-administrator.md)

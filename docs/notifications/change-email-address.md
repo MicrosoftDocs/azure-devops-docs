@@ -82,6 +82,6 @@ For additional settings, see [Set your preferences](../organizations/settings/se
 ## Related articles
 
 - [Set your preferences](../organizations/settings/set-your-preferences.md)
-- [Manage personal notifications](manage-personal-notifications.md)
+- [Manage personal notifications](./manage-your-personal-notifications.md)
 - [Manage team notifications](manage-team-group-notifications.md)
 - [Manage organization notifications](manage-organization-notifications.md)

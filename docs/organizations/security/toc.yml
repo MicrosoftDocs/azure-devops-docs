@@ -39,7 +39,7 @@
   - name: Set up Active Directory or Azure AD
     href: setup-ad-aad.md
   - name: Add or delete users in Azure AD
-    href: https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/active-directory/fundamentals/add-users-azure-active-directory?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Add AD/Azure AD security groups to built-in security groups
     href: add-ad-aad-built-in-security-groups.md
   - name: Manage groups
@@ -137,4 +137,3 @@
     href: /azure/devops/server/admin/websitesettings?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: TFSSecurity command (on-premises)
     href: /azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-

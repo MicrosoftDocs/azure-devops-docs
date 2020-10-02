@@ -141,7 +141,7 @@ A service principal is the local representation, or application instance, of a g
 
 SSL is a protocol used to strengthen the security of cloud-hosted and on-premises applications by configuring it to use Hypertext Transfer Protocol Secure (HTTPS) with Secure Sockets Layer (SSL).
 
-SSL is always used to protect Azure DevOps data. To learn more, see [Data Protection Overview](/azure/devops/organizations/security/data-protection).
+SSL is always used to protect Azure DevOps data. To learn more, see [Data Protection Overview](./data-protection.md).
 
 For on-premises deployments, SSL is optional. To learn more, see [Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server](/azure/devops/server/admin/setup-secure-sockets-layer).
 
@@ -186,6 +186,3 @@ Valid users are users that are recognized by Azure DevOps as being able to conne
 
 - [Permissions lookup guide](permissions-lookup-guide.md)
 - [REST API Security](/rest/api/azure/devops/security)
-
-
-
