@@ -36,8 +36,8 @@ None
 |----------|-------------|
 | `versionSpec`<br/>JDK Version | (Required) Specify which JDK version to download and use. <br/>Default value: `8` |
 |`jdkArchitectureOption`<br/> JDK Architecture | Specify the bit version of the JDK. <br/>Options: `x64, x86`|
-| `jdkSourceOption`<br/>JDK source | (Required) Specify the source for the compressed JDK, either Azure blob storage or a local directory on the agent or source repository. |
-| `jdkFile` <br/>JDK file | (Required) Applicable when `jdkSourceOption == LocalDirectory`. Specify the path to the folder that contains the compressed JDK. The path could be in your source repository or a local path on the agent.|
+| `jdkSourceOption`<br/>JDK source | (Required) Specify the source for the compressed JDK, either Azure blob storage or a local directory on the agent or source repository or use the pre-installed version of Java (available for Microsoft-hosted agents). Please see example below about how to use pre-installed version of Java |
+| `jdkFile` <br/>JDK file | (Required) Applicable when `jdkSourceOption == LocalDirectory`. Specify the path to the jdk archive file that contains the compressed JDK. The path could be in your source repository or a local path on the agent. The file should be an archive (.zip, .tar.gz, .7z), containing bin folder either on the root level or inside a single directory. For macOS - there's support of .pkg and .dmg files containing only one .pkg file inside.|
 |`azureResourceManagerEndpoint`<br/> Azure Subscription | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the Azure Resource Manager subscription for the JDK.|
 |`azureStorageAccountName`<br/> Storage Account Name | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the Storage account name in which the JDK is located. Azure Classic and Resource Manager storage accounts are listed. |
 |`azureContainerName`<br/>Container Name | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the name of the container in the storage account in which the JDK is located.|
@@ -76,6 +76,16 @@ The file should be an archive (.zip, .gz) of the `JAVA_HOME` directory so that i
     azureCommonVirtualFile: 'jdk1.6.0_45.zip'
     jdkDestinationDirectory: '$(agent.toolsDirectory)/jdk6'
     cleanDestinationDirectory: false
+```
+
+Here's an example of using "pre-installed" feature. This feature allows you to use Java versions that are pre-installed on the Microsoft-hosted agent. You can find available pre-installed versions of Java in [Software section](../../agents/hosted.md#software).
+
+```yaml
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '8'
+    jdkArchitectureOption: 'x86'
+    jdkSourceOption: 'PreInstalled'
 ```
 
 ## Open source

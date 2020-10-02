@@ -8,12 +8,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/20/2019
+ms.date: 07/27/2020
 ---
 
 # Add AD/Azure AD users or groups to a built-in security group
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 As described in [About security and identity](about-security-identity.md), there are two main types of built-in security groups: project-level and collection-level. In general, you add users and groups to a project-level group such as Contributors and Readers. For users that need to administrate select features and functions, add them or associated groups to the Build Administrators or Project Administrators groups.
 
@@ -21,15 +21,15 @@ Review [Default permissions and access](permissions-access.md) to gain insight i
 
 ::: moniker range="azure-devops"
 
-In this article, learn how to do the following task:
+Learn how to do the following task:
 > [!div class="checklist"]
 > * Add an Azure AD user or group to a built-in security group
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
-In this article, learn how to do the following task:
+Learn how to do the following task:
 > [!div class="checklist"]
 > * Add an Active Directory user or group to a built-in security group
 
@@ -72,7 +72,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
 
-5. Choose ![ ](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
+5. Choose :::image type="icon" source="../../media/icons/add-light-icon.png" border="false":::**Add** to add a user or a user group.
 
 6. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
@@ -105,7 +105,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
 
-5. Choose ![ ](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
+5. Choose :::image type="icon" source="../../media/icons/add-light-icon.png" border="false":::**Add** to add a user or a user group.
 
 6. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
@@ -120,9 +120,14 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ---
 
-::: moniker range="= azure-devops-2019"
+
+::: moniker range="< azure-devops"
 
 ## Add an Active Directory user or group to a built-in security group 
+
+::: moniker-end
+
+::: moniker range="= azure-devops-2019 || azure-devops-2020" 
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -144,7 +149,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user would automatically inherit Contributor permissions. 
 
-5. Choose ![ ](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
+5. Choose :::image type="icon" source="../../media/icons/add-light-icon.png" border="false":::**Add** to add a user or a user group.
 
 6. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
@@ -160,11 +165,9 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ::: moniker range="<= tfs-2018"
 
-## Add an Active Directory user or group to a built-in security group 
-
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-2. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open **Project Settings**.
+2. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open **Project Settings**.
 
    ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)   
 
@@ -182,7 +185,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 	By default, the default team group and all other teams you add to the project are included as members of the Contributors group. So, you can choose to [add a new user as a member of a team](add-users-team-project.md#add-team-members) instead, and the user automatically inherits Contributor permissions.
 
-5. Choose ![ ](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
+5. Choose :::image type="icon" source="../../media/icons/add-light-icon.png" border="false":::**Add** to add a user or a user group.
 
 6. Enter the name of the user into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meet your choice.
 

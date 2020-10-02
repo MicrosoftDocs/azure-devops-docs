@@ -6,7 +6,7 @@ ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 03/05/2020
+ms.date: 08/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -32,7 +32,7 @@ Use this task to run a PowerShell script.
 
 [!INCLUDE [temp](../includes/yaml/PowerShellV2.md)]
 
-The Powershell task also has two shortcuts in YAML:
+The PowerShell task also has two shortcuts in YAML:
 
 ```yaml
 - powershell:  # inline script
@@ -57,6 +57,9 @@ The Powershell task also has two shortcuts in YAML:
 Both of these resolve to the `PowerShell@2` task.
 `powershell` runs Windows PowerShell and will only work on a Windows agent.
 `pwsh` runs PowerShell Core, which must be installed on the agent or container.
+
+> [!NOTE]
+> Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
 
 ::: moniker-end
 
@@ -90,9 +93,9 @@ Both of these resolve to the `PowerShell@2` task.
 
 ### Hello World
 
-Create ```test.ps1``` at the root of your repo:
+Create `test.ps1` at the root of your repo:
 
-```ps
+```powershell
 Write-Host "Hello World from $Env:AGENT_NAME."
 Write-Host "My ID is $Env:AGENT_ID."
 Write-Host "AGENT_WORKFOLDER contents:"
@@ -108,13 +111,13 @@ On the Build tab of a build pipeline, add this task:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](media/powershell.png)<br/>**Utility: PowerShell** | Run test.ps1.<br /><br />**Script filename**: `test.ps1` |
+| :::image type="icon" source="media/powershell.png" border="false":::<br/>**Utility: PowerShell** | Run test.ps1.<br /><br />**Script filename**: `test.ps1` |
 
 ### Write a warning
 
 Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
- ```ps
+ ```powershell
 # Writes a warning to build summary and to log in yellow text
 Write-Host  "##vso[task.LogIssue type=warning;]This is the warning"
 ```
@@ -123,21 +126,45 @@ Write-Host  "##vso[task.LogIssue type=warning;]This is the warning"
 
 Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
- ```ps
+ ```powershell
 # Writes an error to build summary and to log in red text
 Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 ```
 
 > [!TIP]
-> 
+>
 > If you want this error to fail the build, then add this line:
->  ```ps
+>
+>  ```powershell
 > exit 1
-> ``` 
+> ```
 
 ### ApplyVersionToAssemblies.ps1
 
 [Use a script to customize your build pipeline](../../scripts/powershell.md)
+
+### Call PowerShell script with multiple arguments
+
+Create PowerShell script `test2.ps1`:
+
+```powershell
+param ($input1, $input2)
+Write-Host "$input1 $input2"
+```
+
+In your YAML pipeline, call:
+
+```yaml
+- task: PowerShell@2
+  inputs:
+    targetType: 'filePath'
+    filePath: $(System.DefaultWorkingDirectory)\test2.ps1
+    arguments: > # Use this to avoid newline characters in multiline string
+      -input1 "Hello"
+      -input2 "World"
+  displayName: 'Print Hello World'
+```
+
 
 ## Open source
 

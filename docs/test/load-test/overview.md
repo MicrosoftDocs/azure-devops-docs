@@ -6,7 +6,7 @@ ms.technology: devops-test
 ms.topic: overview
 ms.author: sdanie
 author: steved0x
-ms.date: 01/18/2019
+ms.date: 07/16/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '> tfs-2018'
 
 Web performance and load test functionality in Visual Studio is deprecated.
 Visual Studio 2019 will be the last version of Visual Studio containing web performance and load test features
-[(more details)](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
+[(more details)](/visualstudio/releases/2019/release-notes-preview).
 
 Cloud load testing (CLT) functionality in Azure DevOps is deprecated.
 The changes to cloud load testing functionality in Azure DevOps affect the following products for the load testing service:
@@ -38,22 +38,22 @@ Visual Studio 2019 is also the last release for Test Controller and Test Agent (
 for setting up a load test rig on-premises.
 
 While no new features will be added, load test in VS 2019 will continue to be supported for any issues that may
-arise during the support lifecycle of the product. See [Product Lifecycle and Servicing](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs). 
+arise during the support lifecycle of the product. See [Product Lifecycle and Servicing](/visualstudio/productinfo/vs-servicing-vs). 
  
 ### Cloud-based load testing service (CLT) availability timeframe for:
+
+> [!IMPORTANT]
+> The scheduled removal of CLT on March 31, 2020 has been delayed due to COVID-19. While CLT is currently still available, we recommend that new customers do not onboard at this time, and we recommend that existing customers migrate to an alternative offering. Some options are listed in the following [alternatives](#alternatives) section.
 
 1. Existing customers of CLT:
 
    * For existing Azure DevOps customers using cloud-load testing functionality in the Azure DevOps portal,
-     this feature will no longer be available as of March 31, 2020.  
+     this feature will no longer be available as of March 31, 2020.
 
-   * For existing Azure customers using the performance test feature in App Services or Application Insights,
-     this feature will no longer be available as of March 31, 2020. 
-
-   * For Visual Studio users leveraging cloud-based load testing, this feature will no longer be supported
+    * For Visual Studio users leveraging cloud-based load testing, this feature will no longer be supported
      as of March 31, 2020. Visual Studio Enterprise customers can, however, continue to run load tests on-premises
      using Test Controller/Test Agent and will be supported for any issues that may arise during the
-     [support lifecycle](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs) of the Visual Studio version.  
+     [support lifecycle](/visualstudio/productinfo/vs-servicing-vs) of the Visual Studio version.  
  
 1. New customers of CLT:
 
@@ -116,4 +116,3 @@ functionality and is deprecated. Some customers have used .webtest for other pur
 such as running API tests, even though it was not designed for that purpose.
 Many API testing alternatives are available in the market. [SOAP UI](https://www.soapui.org/) is a free,
 open-source alternative to consider, and is also available as a commercial option with additional capabilities.
-

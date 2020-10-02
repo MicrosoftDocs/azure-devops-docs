@@ -113,7 +113,7 @@ In addition, the following configuration or customization tasks should be perfor
 
 You can filter each supported view by typing a keyword or using one or more of the fields. Provided field include State, Work item type, and Iteration Path. Based on the keyword that you enter, the filter function lists work items based on any displayed column field.  
 
-To show the filter toolbar, choose the ![ ](../../media/icons/filter-icon.png) filter icon. 
+To show the filter toolbar, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon. 
 
 > [!div class="mx-imgBorder"]  
 > ![Filter by keyword or field](media/tracker/filter.png)  
@@ -205,19 +205,19 @@ To learn more, see [Link user stories, issues, bugs, and other work items](../ba
 
 ## Remove dependency links
 
-You can remove a dependency by choosing the ![ ](../../media/icons/actions-icon.png) actions icon from the linked work item and choose **Remove Dependency Link** option from the menu. 
+You can remove a dependency by choosing the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon from the linked work item and choose **Remove Dependency Link** option from the menu. 
 
 > [!div class="mx-imgBorder"]  
-> ![Create links manually](media/tracker/remove-dependency-link.png)
+> ![Remove dependency links.](media/tracker/remove-dependency-link.png)
 
 Optionally, you can remove the link from the work item's **Links** tab. 
 
 ## Create a query of dependencies 
 
-To open a set of dependent work items, select them in the same way you would via a [bulk edit](../backlogs/bulk-modify-work-items.md), choose the ![ ](../../media/icons/actions-icon.png) actions icon from one of the selected linked work items and choose **Open in Query** option from the menu. 
+To open a set of dependent work items, select them in the same way you would via a [bulk edit](../backlogs/bulk-modify-work-items.md), choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon from one of the selected linked work items and choose **Open in Query** option from the menu. 
 
 > [!div class="mx-imgBorder"]  
-> ![Create links manually](media/tracker/open-as-query.png)
+> ![Create a query of dependencies.](media/tracker/open-as-query.png)
 
 A new tab opens to the Query Results page. 
 
@@ -243,7 +243,7 @@ Each column on the bar chart represents another area path that is producing depe
 Within the table, you can perform the following actions. 
 
 - Filter the list of work items by choosing one of the area path bars and progress states in the bar chart graph 
-- Expand or collapse the list of work items to show the full list of dependent work items using the ![ ](../media/icons/expand_icon.png) expand and ![ ](../media/icons/collapse_icon.png) collapse icons 
+- Expand or collapse the list of work items to show the full list of dependent work items using the :::image type="icon" source="../media/icons/expand_icon.png" border="false"::: expand and :::image type="icon" source="../media/icons/collapse_icon.png" border="false"::: collapse icons 
 - Add or remove column fields by opening Column Options
 - Switch the sequence of work items by choosing the Display: **Consumer on top** or **Producer on top**
 
@@ -302,7 +302,7 @@ The Incorrect Flow  view shows those dependencies that are out of order. At leas
 The Risk Graph provides a visualization of how dependencies flow from Consumer team to Producer team, or from Producer to Consumers. The graph allows a team to, at a glance, understand the magnitude of dependencies and level of risks associated. In addition, the risk graph view demonstrates the value of linking dependencies and laddering them up to Stories. 
 
 > [!div class="mx-imgBorder"]  
-> ![Dependency Tracker Risk Graph, Consuming From](media/tracker/risk-graph-1.png)
+> ![Dependency Tracker Risk Graph](media/tracker/risk-graph-1.png)
 
 There are two views: **Consuming From** and **Producing For**. The workflow state color coding is configurable. The width of the lines indicate how many dependencies exist in that area, the thicker the link the more dependencies as indicated in the legend.
 
@@ -331,7 +331,7 @@ You can drill down into specifics by choosing one of the dependencies.
 
 You must be a member of the  Project Collection Administrator Group in order to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
 
-To change the configuration, choose the ![ ](../../media/icons/blue-gear.png) gear icon  and modify the syntax listed. Choose **Save** when done. 
+To change the configuration, choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon  and modify the syntax listed. Choose **Save** when done. 
 
 The main properties you can modify are summarized as follows: 
 - The link types to use to create dependency links. Defaults are the Successor/Predecessor link types. Only customize when you use the [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md) to customize work tracking.  

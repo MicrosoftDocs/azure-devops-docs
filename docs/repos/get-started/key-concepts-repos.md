@@ -3,10 +3,8 @@ title: Key concepts and terminology used for Azure Repos
 titleSuffix: Azure Repos  
 description: Key definitions for objects and items used to code with Azure Repos
 ms.technology: devops-new-user 
-ms.author: apawast
-author: apawast
 ms.topic: reference
-monikerRange: 'azure-devops'
+monikerRange: '>=tfs-2018'
 ms.date: 09/10/2018  
 ---
 

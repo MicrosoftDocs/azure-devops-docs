@@ -18,7 +18,7 @@ Use this task to run unit and functional tests (Selenium, Appium, Coded UI test,
 using the Visual Studio Test Runner. Other than MSTest-based tests, test frameworks that have a
 Visual Studio test adapter, such as xUnit, NUnit, Chutzpah, can also be executed.  
 
-Tests that target the .NET core framework can be executed by specifying the appropriate target framework value.  
+Tests that target the .NET core framework can be executed by specifying the appropriate target framework value in the [.runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
 
 Tests can be distributed on multiple agents using version 2 of this task. For more information, see [Run tests in parallel using the Visual Studio Test task](../../test/parallel-testing-vstest.md).
 

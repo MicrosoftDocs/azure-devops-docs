@@ -34,5 +34,5 @@ Previously, each recipient received an individually addressed email, which could
 ## Related articles
 
 - [About notifications](about-notifications.md)
-- [Manage personal notifications](manage-team-notifications.md)
+- [Manage personal notifications](./manage-team-group-notifications.md)
 - [Unsubscribe from a notification](unsubscribe-default-notification.md)

@@ -9,12 +9,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/10/2019
+ms.date: 07/09/2020
 ---
 
 # Work items quick reference
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Use this index to quickly access concepts related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
 
@@ -154,6 +154,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="view-add-work-items.md" data-raw-source="[Open work items](view-add-work-items.md)">Open work items</a></li>
 <li><a href="email-work-items.md#print-items" data-raw-source="[Print work items](email-work-items.md#print-items)">Print work items</a></li>
 <li><a href="../backlogs/create-your-backlog.md#reorder-backlog" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#reorder-backlog)">Prioritize backlog items</a></li>
+<li><a href="../queries/history-and-auditing.md#query-history" data-raw-source="[Query work item history](../queries/history-and-auditing.md#query-history)">Query work item history</a></li>
 <li><a href="../queries/using-queries.md" data-raw-source="[Query for work items](../queries/using-queries.md)">Query for work items</a></li>
 <br/>
 <li><a href="../backlogs/bulk-modify-work-items.md#reassign-work-items">Reassign work items</a></li>
@@ -169,7 +170,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../../notifications/add-links-to-work-items.md" data-raw-source="[Use #ID to link](../../notifications/add-links-to-work-items.md)">Use #ID to link</a></li>
 <li><a href="../../notifications/at-mentions.md" data-raw-source="[Use @mentions](../../notifications/at-mentions.md)">Use @mentions</a></li>
 <br/>
-<li><a href="../queries/history-and-auditing.md#view-the-history-of-a-work-item" data-raw-source="[View history](../queries/history-and-auditing.md#view-the-history-of-a-work-item)">View history</a></li>
+<li><a href="../queries/history-and-auditing.md#view-history" data-raw-source="[View history](../queries/history-and-auditing.md#view-history)">View history</a></li>
 <li><a href="../../project/navigation/mobile-work.md" data-raw-source="[View work items (mobile)](../../project/navigation/mobile-work.md)">View work items (mobile)</a></li>
 <li><a href="view-add-work-items.md" data-raw-source="[View work items (web)](view-add-work-items.md)">View work items (web)</a></li>
 <li><a href="view-add-work-items.md" data-raw-source="[View work assigned to me](view-add-work-items.md)">View work assigned to me</a></li>
@@ -187,7 +188,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 <table valign="top">
 <tbody valign="top">
@@ -268,7 +269,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../../notifications/add-links-to-work-items.md" data-raw-source="[Use #ID to link](../../notifications/add-links-to-work-items.md)">Use #ID to link</a></li>
 <li><a href="../../notifications/at-mentions.md" data-raw-source="[Use @mentions](../../notifications/at-mentions.md)">Use @mentions</a></li>
 <br/>
-<li><a href="../queries/history-and-auditing.md#view-the-history-of-a-work-item" data-raw-source="[View history](../queries/history-and-auditing.md#view-the-history-of-a-work-item)">View history</a></li>
+<li><a href="../queries/history-and-auditing.md#query-history" data-raw-source="[View history](../queries/history-and-auditing.md#query-history)">View history</a></li>
 <li><a href="../../project/navigation/mobile-work.md" data-raw-source="[View work items (mobile)](../../project/navigation/mobile-work.md)">View work items (mobile)</a></li>
 <li><a href="view-add-work-items.md" data-raw-source="[View work items (web)](view-add-work-items.md)">View work items (web)</a></li>
 <li><a href="view-add-work-items.md" data-raw-source="[View work assigned to me](view-add-work-items.md)">View work assigned to me</a></li>
@@ -363,7 +364,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../../notifications/add-links-to-work-items.md">Use #ID to link</a></li>
 <li><a href="../../notifications/at-mentions.md">Use @mentions</a></li>
 <br/>
-<li><a href="../queries/history-and-auditing.md#view-the-history-of-a-work-item">View history</a></li>
+<li><a href="../queries/history-and-auditing.md#query-history">View history</a></li>
 <li><a href="../../project/navigation/mobile-work.md">View work items (mobile) (requires TFS 2018)</a></li>
 </ul>
 </td>
@@ -446,7 +447,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../boards/kanban-quickstart.md">Update status of work items (Kanban board)</a></li>
 <li><a href="../../notifications/add-links-to-work-items.md">Use #ID to link (requires TFS 2015)</a></li>
 <li><a href="../../notifications/at-mentions.md">Use @mentions (requires TFS 2015)</a></li>
-<li><a href="../queries/history-and-auditing.md#view-the-history-of-a-work-item">View history</a></li>
+<li><a href="../queries/history-and-auditing.md#query-history">View history</a></li>
 </ul>
 </td>
 </tr
@@ -470,7 +471,7 @@ You customize work item types using the Inheritance process model.
 <td width="33%">
 <ul>
 <li><a href="../../organizations/settings/work/customize-process-field.md#boolean-field">Add a checkbox (Boolean) field</a></li>
-<li><a href="../../organizations/settings/work/customize-process-wit.md#add-wit">Add a custom work item type (WIT)</a></li>
+<li><a href="../../organizations/settings/work/customize-process-work-item-type.md#add-wit">Add a custom work item type (WIT)</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md">Add/remove custom fields from a WIT</a></li>
 <li><a href="../../organizations/settings/work/customize-process-form.md#groups">Add/remove custom groups on a WIT form</a></li>
 <li><a href="../../organizations/settings/work/customize-process-form.md#pages">Add/remove custom pages on a WIT form</a></li>
@@ -485,7 +486,7 @@ You customize work item types using the Inheritance process model.
 <td width="33%">
 <ul>
 <li><a href="../../organizations/settings/work/customize-process-field.md#rename-field">Change a field label</a></li>
-<li><a href="../../organizations/settings/work/customize-process-wit.md#overview">Change the WIT color or description</a></li>
+<li><a href="../../organizations/settings/work/customize-process-work-item-type.md#overview">Change the WIT color or description</a></li>
 <li><a href="../../organizations/settings/work/change-process-agile-to-scrum.md">Change the reference process from Agile to Scrum</a></li>
 <li><a href="../../organizations/settings/work/change-process-basic-to-agile.md">Change the reference process from Basic to Agile</a></li>
 <li><a href="../../organizations/settings/work/change-process-scrum-to-agile.md">Change the reference process from Scrum to Agile</a></li>
@@ -495,8 +496,8 @@ You customize work item types using the Inheritance process model.
 <li><a href="../../organizations/settings/set-area-paths.md">Define Area Paths</a></li>
 <li><a href="../../organizations/settings/set-iteration-paths-sprints.md">Define Iteration Paths</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md#delete-field">Delete field</a></li> 
-<li><a href="../../organizations/settings/work/customize-process-wit.md#destroy">Delete a WIT</a></li>
-<li><a href="../../organizations/settings/work/customize-process-wit.md#enable-disable">Enable/disable a WIT</a></li>
+<li><a href="../../organizations/settings/work/customize-process-work-item-type.md#destroy">Delete a WIT</a></li>
+<li><a href="../../organizations/settings/work/customize-process-work-item-type.md#enable-disable">Enable/disable a WIT</a></li>
 </ul>
 </td>
 <td width="34%">
@@ -518,7 +519,7 @@ You customize work item types using the Inheritance process model.
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 You customize work item types using either the Inheritance process model or On-premises XML process model, depending on the selection made when [creating the project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2019) on which the project is defined.
 
@@ -532,7 +533,7 @@ You customize work item types using either the Inheritance process model or On-p
 <li><a href="../../organizations/settings/work/customize-process-field.md#boolean-field">Add a checkbox (Boolean) field</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md">Add a custom field (Inheritance)</a></li>
 <li><a href="../../reference/add-modify-field.md">Add a custom field (On-premises XML)</a></li>
-<li><a href="../../organizations/settings/work/customize-process-wit.md#add-wit">Add a custom work item type (WIT)</a></li>
+<li><a href="../../organizations/settings/work/customize-process-work-item-type.md#add-wit">Add a custom work item type (WIT)</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md">Add/remove custom fields from a WIT</a></li>
 <li><a href="../../organizations/settings/work/customize-process-form.md#groups">Add/remove custom groups on a WIT form</a></li>
 <li><a href="../../organizations/settings/work/customize-process-form.md#pages">Add/remove custom pages on a WIT form</a></li>
@@ -547,7 +548,7 @@ You customize work item types using either the Inheritance process model or On-p
 <td width="33%">
 <ul>
 <li><a href="../../organizations/settings/work/customize-process-field.md#rename-field">Change a field label</a></li>
-<li><a href="../../organizations/settings/work/customize-process-wit.md#overview">Change the WIT color or description</a></li>
+<li><a href="../../organizations/settings/work/customize-process-work-item-type.md#overview">Change the WIT color or description</a></li>
 <li><a href="../../organizations/settings/work/change-process-agile-to-scrum.md">Change the reference process from Agile to Scrum</a></li>
 <li><a href="../../organizations/settings/work/change-process-basic-to-agile.md">Change the reference process from Basic to Agile</a></li>
 <li><a href="../../organizations/settings/work/change-process-scrum-to-agile.md">Change the reference process from Scrum to Agile</a></li>
@@ -557,8 +558,8 @@ You customize work item types using either the Inheritance process model or On-p
 <li><a href="../../organizations/settings/set-area-paths.md">Define Area Paths</a></li>
 <li><a href="../../organizations/settings/set-iteration-paths-sprints.md">Define Iteration Paths</a></li>
 <li><a href="../../organizations/settings/work/customize-process-field.md#delete-field">Delete field</a></li> 
-<li><a href="../../organizations/settings/work/customize-process-wit.md#destroy">Delete a WIT</a></li>
-<li><a href="../../organizations/settings/work/customize-process-wit.md#enable-disable">Enable/disable a WIT</a></li>
+<li><a href="../../organizations/settings/work/customize-process-work-item-type.md#destroy">Delete a WIT</a></li>
+<li><a href="../../organizations/settings/work/customize-process-work-item-type.md#enable-disable">Enable/disable a WIT</a></li>
 </ul>
 </td>
 <td width="34%">

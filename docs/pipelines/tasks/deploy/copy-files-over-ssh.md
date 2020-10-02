@@ -53,9 +53,40 @@ In addition to Linux, macOS is partially supported (see [FAQ](#is-this-task-supp
 | **Advanced - Flatten folders** | If this option is selected, the folder structure is not preserved and all the files will be copied into the specified target folder on the remote machine. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
+## Supported algorithms
+
+### Key pair algorithms
+
+* RSA
+* DSA
+
+### Encryption algorithms
+
+* aes256-cbc
+* aes192-cbc
+* aes128-cbc
+* blowfish-cbc
+* 3des-cbc
+* arcfour256
+* arcfour128
+* cast128-cbc
+* arcfour
+
+For OpenSSL v1.0.1 and higher (on agent):
+* aes256-ctr
+* aes192-ctr
+* aes128-ctr
+
+For OpenSSL v1.0.1 and higher, NodeJS v0.11.12 and higher (on agent):
+* aes128-gcm
+* aes128-gcm@openssh.com
+* aes256-gcm
+* aes256-gcm@openssh.com
+
+
 ## See also
 
-* [Install SSH Key task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/install-ssh-key?view=azure-devops)
+* [Install SSH Key task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/install-ssh-key)
 
 * [SSH task](ssh.md)
 

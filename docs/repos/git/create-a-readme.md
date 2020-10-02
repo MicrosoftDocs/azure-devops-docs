@@ -5,8 +5,6 @@ description: Tips, advice, and suggestions on how to create a great readme file 
 ms.assetid: fcd84ee1-909c-4837-9c39-bf036afe6232
 toc: show
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
@@ -15,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 # Create a README for your repo
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
 
 Your Git repo should have a readme file so that viewers know what your code does and how they can get started using it. 
 Your readme should speak to the following audiences:

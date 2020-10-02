@@ -52,7 +52,7 @@ To simplify quickly generating reports, we designed Analytics views to work with
     > [!div class="mx-imgBorder"]  
     > ![Power BI, Modeling tab, New Measure](media/new-measure.png)  
 
-3. Replace the default text with the following code and then click the ![ ](media/checkmark.png) checkmark.
+3. Replace the default text with the following code and then click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
     ```DAX  
     Work Items Count = 
@@ -62,7 +62,7 @@ To simplify quickly generating reports, we designed Analytics views to work with
     )
     ```
 
-	The *Work Items Count* measure uses the [`CALCULATE`](https://msdn.microsoft.com/query-bi/dax/calculate-function-dax), [`COUNTROWS`](https://msdn.microsoft.com/query-bi/dax/countrows-function-dax),  and [`LASTDATE`](https://msdn.microsoft.com/query-bi/dax/lastdate-function-dax) DAX functions which are described in more detail [later in this article](#dax-functions).
+	The *Work Items Count* measure uses the [`CALCULATE`](/dax/calculate-function-dax), [`COUNTROWS`](/dax/countrows-function-dax),  and [`LASTDATE`](/dax/lastdate-function-dax) DAX functions which are described in more detail [later in this article](#dax-functions).
 
 	> [!NOTE]   
 	> Remember to replace *View Name* with the table name for the Analytics view. For example, here we replace *View Name* with *Stories - Last 30 days*. 
@@ -92,7 +92,7 @@ The following steps will help you resolve this issue.
 
 1. Verify that the *State Category* field is included in the Analytics view. This field is included in all default shared views. 
 
-2. Choose **New Column** and replace the default text with the following code and then click the ![ ](media/checkmark.png) checkmark.
+2. Choose **New Column** and replace the default text with the following code and then click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
     ```DAX  
     State Sort Order =  
@@ -136,7 +136,7 @@ However, this approach has two main problems:
 
 To resolve these problems, the calculated column should find the previous day by scanning the *Date* field. 
 
-To add the *Date Previous* calculated column, from the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark.
+To add the *Date Previous* calculated column, from the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 ```DAX  
 Date Previous =
@@ -147,7 +147,7 @@ CALCULATE (
 )
 ```
 
-This calculated column uses three DAX functions, [`MAX`](https://msdn.microsoft.com/query-bi/dax/max-function-dax), [`ALLEXCEPT`](https://msdn.microsoft.com/query-bi/dax/allexcept-function-dax), and  [`EARLIER`](https://msdn.microsoft.com/query-bi/dax/earlier-function-dax), described in more detail [later in this article](#dax-functions). Keep in mind that because this is a calculated column it is run for each and every row in the table and each time it is run it has the context of that specific row. 
+This calculated column uses three DAX functions, [`MAX`](/dax/max-function-dax), [`ALLEXCEPT`](/dax/allexcept-function-dax), and  [`EARLIER`](/dax/earlier-function-dax), described in more detail [later in this article](#dax-functions). Keep in mind that because this is a calculated column it is run for each and every row in the table and each time it is run it has the context of that specific row. 
 
 > [!div class="mx-imgBorder"]  
 > ![Table report, Title, Date, and Previous Date selected](media/time-in-state-previous-date.png) 
@@ -166,7 +166,7 @@ This calculated column uses three DAX functions, [`MAX`](https://msdn.microsoft.
 
 It is important to consider the first day of the dataset where *Date Previous* is blank. In this example we give that row a standard value of 1 to keep the calculation consistent.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX 
@@ -182,13 +182,13 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > )
 > ```
 
-This calculated column uses the [`ISBLANK`](https://msdn.microsoft.com/query-bi/dax/isblank-function-dax) and [`DATEDIFF`](https://msdn.microsoft.com/query-bi/dax/datediff-function-dax) DAX functions described [later in this article](#dax-functions).
+This calculated column uses the [`ISBLANK`](/dax/isblank-function-dax) and [`DATEDIFF`](/dax/datediff-function-dax) DAX functions described [later in this article](#dax-functions).
 
 ## Add *Is Last Day in State*  
 
 In this next step, we calculate if a given row represents the last day a specific work item was in a state. This supports default aggregations in Power BI with the next column we'll add, the *State Time in Days*.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX 
@@ -208,7 +208,7 @@ The time that a work item spent in a specific state can now be calculated by sum
 > [!IMPORTANT]  
 > Requires that you have added the *Date Diff in Days* and *Is Last Day in State* calculated columns to the table.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX 
@@ -233,7 +233,7 @@ You can create a trend chart of an average time in state across all work items t
 To demonstrate, the same visualization used above are updated to show an average across all work items. This representation can help build understanding of the amount of work in progress and how it impacts the overall time in state for the teams. This team has a pattern of committing to work that they aren't ready to start work on. (Note that the data for the following report is based on different data than the previous report.)
 
 > [!div class="mx-imgBorder"]  
-> ![Trend of the Average Time in State](media/AverageTimeInStateTrend.png)
+> ![Trend chart based on State Time in Days.](media/AverageTimeInStateTrend.png)
 
 
 ### Add *State Time in Days - Latest* (Is Last Day In State)
@@ -241,17 +241,17 @@ To demonstrate, the same visualization used above are updated to show an average
 When evaluating time-in-state for each work item in a table or when filtered by a field like *Area Path*, do not use the *State Time in Days* column in an aggregation. The aggregation will use the value for every day the work item was in the state. For example, if a work item was *In Progress* on Monday and moved to *Completed* on Thursday, the time-in-state is 3 days, but the sum of *State Time in Days* column is 6 days (1+2+3) which is clearly incorrect.
 
 > [!div class="mx-imgBorder"]  
-> ![Trend of the Average Time in State](media/StateTimeInDaysTable.png) 
+> ![Add State Time in Days - Latest.](media/StateTimeInDaysTable.png) 
 
 To resolve this issue, use *State Time in Days* and apply the filter *Is Last Day In State* equals 'True'. This eliminates all the historical data necessary for a trend and focuses instead on just the latest value for each state.
 
-<img src="media/StateTimeInDaysTableIsLast.png" alt="Trend of the Average Time in State" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/StateTimeInDaysTableIsLast.png" alt="Use State Time in Days and apply the filter Is Last Day In State equals 'True'." style="border: 1px solid #C3C3C3;" /> 
 
 ### Add *State Time in Days - In Progress*
 
 In the examples above *State Time in Days* for a given work item is only counted during the period of time when the work item was in that specific state. If your goal is to have the time-in-state for a given work item count towards an average continuously, You must change the calculation. For example, if we want to track the "In Progress" state, we add the *State Time in Days - In Progress* calculated column. 
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX
@@ -265,7 +265,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > ```
 > 
 > [!NOTE]
-> You may need to revise the definition based on the workflow states used by your project. For example, the project used in the examples in this article use the 'In Progress' workflow state, however, Agile, Scrum, and CMMI processes typically use the 'Active' or 'Committed' states to represent work in progress. For an overview, see [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories).
+> You may need to revise the definition based on the workflow states used by your project. For example, the project used in the examples in this article use the 'In Progress' workflow state, however, Agile, Scrum, and CMMI processes typically use the 'Active' or 'Committed' states to represent work in progress. For an overview, see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).
 
 The following image shows the impact of considering all time-in-state for every existing work item (shown left) versus only those work items in a specific state on a given day (shown right).
 
@@ -276,7 +276,7 @@ The following image shows the impact of considering all time-in-state for every 
 
 Analyzing performance across multiple states is also possible using the "Continuous" pattern. However, this approach only works with a trend chart.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX
@@ -312,7 +312,7 @@ The *Date Previous* calculated column can also be used to lookup past values suc
 > [!IMPORTANT]  
 > Requires that you have added the [*Date Previous* calculated column](#date-previous) to the table.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX 
@@ -324,7 +324,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > )
 > ```
 
-This calculated column uses the [`LOOKUPVALUE`](https://msdn.microsoft.com/query-bi/dax/lookupvalue-function-dax), described [later in this article](#dax-functions).
+This calculated column uses the [`LOOKUPVALUE`](/dax/lookupvalue-function-dax), described [later in this article](#dax-functions).
  
 The first `LOOKUPVALUE` parameter, `'View Name'[State]`, specifies to return the value of [State]. 
 
@@ -344,7 +344,7 @@ Using the *State Previous* column, we can flag the rows for each work item where
 > [!IMPORTANT]  
 > Requires that you have added the [*State Previous*](#add-state-previous) calculated column to the table.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX 
@@ -368,7 +368,7 @@ With *State Previous* and *State Changed* calculated columns, you can create a c
 > [!IMPORTANT]  
 > Requires that you have added the [*State Previous*](#add-state-previous) and [*State Changed*](#state-changed) calculated columns to the table.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX 
@@ -383,7 +383,7 @@ As we move into the more complicated measures, we need to have a representation 
 > [!IMPORTANT]
 > Requires that you have added the [*State Changed*](#state-changed) calculated column to the table.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark. 
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark. 
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX
@@ -404,7 +404,7 @@ Calculating restarts, *State Restart Time in Days*, is a fairly complex calculat
 > [!NOTE]   
 > You may need to revise the following definitions based on the workflow states used by your project. For example, if your project uses 'New' in place of 'Proposed'. 
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX
@@ -419,7 +419,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 
 Then, look further back to the past and see if there were some active states before this proposed state. Lastly, sum up all the days when work item was in active state before the last proposed. 
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX
@@ -440,7 +440,7 @@ Since the *State Restart Time in Days* is updated for each row of data, you can 
 
 Similar to *State Restart Time in Days*, the *State Rework Time in Days* looks for the first time a work item was in the Completed state category. After that time, each day a work item spends in a state other than Completed, counts as rework.
 
-From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](media/checkmark.png) checkmark.
+From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the :::image type="icon" source="media/checkmark.png" border="false"::: checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX
@@ -468,23 +468,23 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 
 Additional information is provided in this section for the DAX functions used to created the calculated columns and measure added in this article. 
 
-* [`CALCULATE`](https://msdn.microsoft.com/query-bi/dax/calculate-function-dax): This function is the basis for nearly all examples. The basic structure is an expression followed by a series of filters which are applied to the expression.     
+* [`CALCULATE`](/dax/calculate-function-dax): This function is the basis for nearly all examples. The basic structure is an expression followed by a series of filters which are applied to the expression.     
 
-* [`COUNTROWS`](https://msdn.microsoft.com/query-bi/dax/countrows-function-dax): This function, `COUNTROWS ( 'View Name' )`, simply counts the number of rows which remain after the filters are applied. 
+* [`COUNTROWS`](/dax/countrows-function-dax): This function, `COUNTROWS ( 'View Name' )`, simply counts the number of rows which remain after the filters are applied. 
 	
-* [`LASTDATE`](https://msdn.microsoft.com/query-bi/dax/lastdate-function-dax): We apply the `LASTDATE` filter to an expression, for example `LASTDATE ( 'View Name'[Date] )`, to find the newest date across all rows in the table and eliminate the rows that do not share the same date. With the snapshot table generated by an Analytics view this filter effectively picks the last day of the selected period.    
+* [`LASTDATE`](/dax/lastdate-function-dax): We apply the `LASTDATE` filter to an expression, for example `LASTDATE ( 'View Name'[Date] )`, to find the newest date across all rows in the table and eliminate the rows that do not share the same date. With the snapshot table generated by an Analytics view this filter effectively picks the last day of the selected period.    
 
-* [`MAX`](https://msdn.microsoft.com/query-bi/dax/max-function-dax): Returns the largest numeric value in a column, or between two scalar expressions. We apply  `MAX ( 'View Name'[Date] )`, to determine the most recent date after all filters have been applied.  
+* [`MAX`](/dax/max-function-dax): Returns the largest numeric value in a column, or between two scalar expressions. We apply  `MAX ( 'View Name'[Date] )`, to determine the most recent date after all filters have been applied.  
 
-* [`ALLEXCEPT`](https://msdn.microsoft.com/query-bi/dax/allexcept-function-dax): Removes all context filters in the table except filters that have been applied to the specified columns. Essentially, `ALLEXCEPT ('View Name'', 'View Name'[Work Item Id])` reduces the rows in the table down to only those that share the same work item ID as the current row.   
+* [`ALLEXCEPT`](/dax/allexcept-function-dax): Removes all context filters in the table except filters that have been applied to the specified columns. Essentially, `ALLEXCEPT ('View Name'', 'View Name'[Work Item Id])` reduces the rows in the table down to only those that share the same work item ID as the current row.   
 
-* [`EARLIER`](https://msdn.microsoft.com/query-bi/dax/earlier-function-dax): Returns the current value of the specified column in an outer evaluation pass of the mentioned column. For example, `'View Name'[Date] < EARLIER ( 'View Name'[Date] )`, further reduces the data set to only those rows that occurred before the date for the current row which is referenced by using the `EARLIER` function. `EARLIER` does not refer to previous dates, it specifically defines the row context of the calculated column 
+* [`EARLIER`](/dax/earlier-function-dax): Returns the current value of the specified column in an outer evaluation pass of the mentioned column. For example, `'View Name'[Date] < EARLIER ( 'View Name'[Date] )`, further reduces the data set to only those rows that occurred before the date for the current row which is referenced by using the `EARLIER` function. `EARLIER` does not refer to previous dates, it specifically defines the row context of the calculated column 
 
-* [`ISBLANK`](https://msdn.microsoft.com/query-bi/dax/isblank-function-dax): Checks whether a value is blank, and returns TRUE or FALSE. `ISBLANK` evaluates the current row to determine if *Date Previous* has a value. If it does not, the If statement sets *Date Diff in Days* to 1.
+* [`ISBLANK`](/dax/isblank-function-dax): Checks whether a value is blank, and returns TRUE or FALSE. `ISBLANK` evaluates the current row to determine if *Date Previous* has a value. If it does not, the If statement sets *Date Diff in Days* to 1.
 
-* [`DATEDIFF`](https://msdn.microsoft.com/query-bi/dax/datediff-function-dax): Returns the count of interval boundaries crossed between two dates. `DATEDIFF` subtracts *Date Previous* from *Date* to determine the number of days between them.
+* [`DATEDIFF`](/dax/datediff-function-dax): Returns the count of interval boundaries crossed between two dates. `DATEDIFF` subtracts *Date Previous* from *Date* to determine the number of days between them.
 
-* [`LOOKUPVALUE`](https://msdn.microsoft.com/query-bi/dax/lookupvalue-function-dax): Returns the value in *result_columnName* for the row that meets all criteria specified by *search_columnName* and *search_value*.  
+* [`LOOKUPVALUE`](/dax/lookupvalue-function-dax): Returns the value in *result_columnName* for the row that meets all criteria specified by *search_columnName* and *search_value*.  
 
 ## Related articles
 
@@ -492,5 +492,5 @@ Additional information is provided in this section for the DAX functions used to
 - [Create Analytics views](analytics-views-create.md)
 - [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
 - [Dataset design for the Power BI Connector](data-connector-dataset.md)
-- [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories)
+- [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

@@ -19,4 +19,4 @@ ms.date: 08/17/2016
         });
     });
 ```
-See [Host navigation](/azure/devops/extend/develop/host-navigation) for additional samples.
+See [Host navigation](../../../../../extend/develop/host-navigation.md) for additional samples.

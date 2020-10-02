@@ -9,13 +9,13 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/11/2019
+ms.date: 07/09/2020
 ---
 
 
 # Scrum process   
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a project using the Scrum process. They are based on [Scrum principles and values](https://www.scrum.org/). 
 
@@ -74,14 +74,14 @@ All processes&mdash;Agile, Scrum, and CMMI&mdash;support [building status and tr
 
 To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
 
-[![Edit query](../../../report/dashboards/media/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/media/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/media/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
+[![Edit query](../../../report/dashboards/media/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/media/gs-chart-create.png)](../../../report/charts.md)[![Add dashboard.](../../../report/dashboards/media/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
 
 [!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
 
 <a id="reports"></a>
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Scrum process and SQL Server reports
 
@@ -119,7 +119,7 @@ As updates are made to the Scrum process template, the version number is updated
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | Scrum process name | Major version |
 > |-------------|-------------------|--------------|
-> | Azure DevOps Server 2019 | Scrum | 17 |
+> | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | Scrum | 17 |
 > | TFS 2018 | Scrum | 16 |
 > | TFS 2017 | Scrum | 15 |
 > | TFS 2015 | Scrum | 3 |

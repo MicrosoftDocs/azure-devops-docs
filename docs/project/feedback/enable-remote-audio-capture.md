@@ -42,7 +42,7 @@ To record audio as part of a feedback or testing session on a remote machine tha
   
      `HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp\fDisableAudioCapture`  
   
-     For more information about how to set values of registry keys, see the following page on the Microsoft website: [How to add, modify, or delete registry subkeys and values by using a registration entries (.reg) file](https://go.microsoft.com/fwlink/?LinkId=227171).  
+     For more information about how to set values of registry keys, see the following page on the Microsoft website: [How to add, modify, or delete registry subkeys and values by using a registration entries (.reg) file](/project/add-user-accounts-in-project-server).  
   
 2.  To connect to the remote machine, choose **Start**, choose **Run**, enter `mstsc`, and then choose the **OK** button.  
   

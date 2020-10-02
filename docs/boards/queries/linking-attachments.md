@@ -8,13 +8,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 10/02/2019
+ms.date: 07/09/2020
 ---
 
 
 # Query by link or attachment count  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on one or more of the following integer fields:
 
@@ -29,7 +29,7 @@ You can [link work items to track related work and dependencies](link-work-items
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019" 
+::: moniker range=">= tfs-2017 < azure-devops" 
 - Attachment File Count
 - (Discussion) Comment Count 
 - External Link count
@@ -39,7 +39,7 @@ You can [link work items to track related work and dependencies](link-work-items
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 - Attachment File Count
 - External Link count
 - Hyperlink Count
@@ -271,7 +271,7 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 <td><a id="parent"/>
 <p>Parent</p></td>
 <td><p>When included as a column option in a backlog or query results list, the Title of the parent work item is displayed. Internally, the system stores the ID of the work item within an Integer field. </p>
-<blockquote>The Parent field is available from Azure DevOps Services only at this time. You can't specify this field within a query clause. </blockquote> 
+<blockquote>The Parent field is available from Azure DevOps Services and Azure DevOps Server 2020. You can't specify this field within a query clause. </blockquote> 
 <p>Reference Name=System.Parent, Data type=Integer</p>
 </td>
 <td>All</td>
@@ -306,14 +306,14 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019" 
+::: moniker range=">= tfs-2015 < azure-devops" 
 
 ### Visualize related work and other objects 
 
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= azure-devops-2019" 
+::: moniker range=">= tfs-2013 < azure-devops" 
 
 ### Add custom link types or customize the links controls 
 

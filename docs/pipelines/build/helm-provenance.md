@@ -30,7 +30,7 @@ In this step-by-step guide you'll learn how to package and sign Helm charts in a
 
 3. You'll be prompted for the passphrase. Give the value and click ok.
 
-   ![Passphrase](media/helm-provenance/passphrase.png)
+   ![Screenshot that shows giving the passphrase.](media/helm-provenance/passphrase.png)
 
 4. After creating the key, you can see the list of keys which contains both private and public using the following command.
 

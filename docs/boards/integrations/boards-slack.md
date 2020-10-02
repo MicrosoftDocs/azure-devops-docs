@@ -7,13 +7,14 @@ ms.topic: tutorial
 ms.reviewer: karrg
 ms.author: kaelli
 author: Divais
-monikerRange: 'azure-devops'
-ms.date: 10/24/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 07/09/2020
 ---
  
 # Azure Boards with Slack
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
+
 
 If you use [Slack](https://slack.com), you can use the [Azure Boards app for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp) to create work items and monitor work item activity in your Azure Boards project from your Slack channel. 
 
@@ -82,7 +83,7 @@ subscriptions just after linking a project.
 1. Select the desired area path, event that you are interested in, and leverage the associated 
 filters to customize your Slack channel. To easily set up subscriptions, your recently accessed area paths are shown in the area path dropdown.
 
-   ![screenshot of sign-in](./media/integrations-slack/add-subscriptions.png)
+   ![Set up subscriptions.](./media/integrations-slack/add-subscriptions.png)
 
    In case your team's area path doesn't appear in the Area path dropdown menu, follow the instructions mentioned in the next section, [Add area paths](#add-area-paths). Area paths added using the `/azboards addAreapath` command and area paths for which subscriptions are created in the Slack channel always appear in the Area path dropdown along with recently accessed area paths.
 

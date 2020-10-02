@@ -60,9 +60,9 @@ See also [authentication information when using the Azure SQL Database Deploymen
 Instead of using a DACPAC, you can also use SQL scripts to deploy your database. Here is a simple example of a SQL script that creates an empty database.
 
 ```sql
-  USE [master]
+  USE [main]
   GO
-  IF NOT EXISTS (SELECT name FROM master.sys.databases WHERE name = N'DatabaseExample')
+  IF NOT EXISTS (SELECT name FROM main.sys.databases WHERE name = N'DatabaseExample')
   CREATE DATABASE [DatabaseExample]
   GO
 ```
@@ -237,11 +237,11 @@ To do this in YAML, you can use one of these techniques:
 * Isolate the deployment steps into a separate job, and add a condition to that job.
 * Add a condition to the step.
 
-The following example shows how to use step conditions to deploy only those builds that originate from master branch.
+The following example shows how to use step conditions to deploy only those builds that originate from main branch.
 
 ```yaml
 - task: SqlAzureDacpacDeployment@1
-  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
   inputs:
     azureSubscription: '<Azure service connection>'
     ServerName: '<Database server name>'

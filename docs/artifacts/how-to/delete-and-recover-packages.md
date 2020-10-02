@@ -26,7 +26,7 @@ Choose the artifact from the **Packages** page in the **Build and Release** page
 > [!div class="mx-imgBorder"]
 > ![Delete Maven artifact Azure DevOps Services](../media/delete/delete-maven-package.png)
 
-Deleting packages respects [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
+Deleting packages respects [feed immutability](../artifacts-key-concepts.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
 #### [npm](#tab/npm/)
 There are two options available to remove a version of an npm package from a feed.
@@ -35,7 +35,7 @@ There are two options available to remove a version of an npm package from a fee
 Deprecating a version can help you discourage new usage of it by presenting a warning message when the package is installed.
 2. **Unpublish:** Unpublishing a version of a package makes it unavailable for install. After unpublishing, a package can be [restored from the Recycle Bin](#recover-a-deleted-package-from-the-recycle-bin) within 30 days of deletion. After 30 days, it is permanently unavailable to restore. Unpublishing a package will cause others that depend on it to break.
 
-Deprecate and unpublish both respect [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
+Deprecate and unpublish both respect [feed immutability](../artifacts-key-concepts.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
 ::: moniker range="azure-devops"
 
@@ -53,7 +53,7 @@ Choose the package from **Azure Artifacts** select the appropriate option from t
 Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
 > [!div class="mx-imgBorder"]
-> ![Unpublish npm package Azure DevOps Services](../media/delete/deprecate-unpublish-npm-package.png)
+> ![Choose the package and select the appropriate option.](../media/delete/deprecate-unpublish-npm-package.png)
 
 ::: moniker-end
 
@@ -85,7 +85,7 @@ There are two options available to remove a version of a NuGet package from a fe
 1. **Unlist:** Unlisting a version of a package modifies how the package appears in NuGet clients (see the [NuGet docs](/nuget/policies/deleting-packages) for a full description of how unlist works). Unlisting a version can help you prevent new usage of it without breaking dependent projects and builds.
 2. **Delete:**  Deleting a version of a package makes it unavailable for install. After deleting, a package can be [restored from the Recycle Bin](#recover-a-deleted-package-from-the-recycle-bin) within 30 days of deletion. After 30 days, it is permanently unavailable to restore. Deleting a package will cause others that depend on it to break.
 
-Unlist and delete both respect [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
+Unlist and delete both respect [feed immutability](../artifacts-key-concepts.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
 You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
 ::: moniker range=">= azure-devops-2019"

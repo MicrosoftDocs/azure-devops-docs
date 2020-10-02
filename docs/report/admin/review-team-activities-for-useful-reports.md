@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= azure-devops-2019" 
+monikerRange: '< azure-devops' 
 ms.date: 11/19/2018
 ---
 
@@ -42,9 +42,9 @@ Build reports track the quality of software under development. By defining tests
 <b>Build and test activities</b> 
 <ol>
 <li><a href="../../pipelines/agents/agents.md" data-raw-source="[Configure a build system](../../pipelines/agents/agents.md)">Configure a build system</a></li>
-<li><a href="../../pipelines/get-started-designer.md" data-raw-source="[Get started with CI/CD](../../pipelines/get-started-designer.md)">Get started with CI/CD</a></li>
+<li><a href="/azure/devops/pipelines/create-first-pipeline" data-raw-source="[Get started with CI/CD](../../pipelines/create-first-pipeline.md)">Get started with CI/CD</a></li>
 <li><a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[Run tests in your build process](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)">Run tests in your build process</a></li>
-<li>(Optional) <a href="https://msdn.microsoft.com/library/ms181734.aspx" data-raw-source="[Rate completed builds](https://msdn.microsoft.com/library/ms181734.aspx)">Rate completed builds</a> to populate the Build Quality dimension.</li>
+<li>(Optional) <a href="/previous-versions/ms181734(v=vs.140)" data-raw-source="[Rate completed builds](/previous-versions/ms181734(v=vs.140))">Rate completed builds</a> to populate the Build Quality dimension.</li>
 </ol>
 </td>
 <td>

@@ -37,7 +37,7 @@ If your .NET Core or .NET Standard build depends on NuGet packages, make sure to
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td><code>command</code><br/>Command</td><td>The dotnet command to run. Select <code>custom</code> to add arguments or use a command not listed here.<br/>Options: <code>build</code>, <code>push</code>, <code>pack</code>, <code>restore</code>, <code>run</code>, <code>test</code>, <code>custom</code></td></tr>
+<tr><td><code>command</code><br/>Command</td><td>The dotnet command to run. Select <code>custom</code> to add arguments or use a command not listed here.<br/>Options: <code>build</code>, <code>push</code>, <code>pack</code>, <code>publish</code>, <code>restore</code>, <code>run</code>, <code>test</code>, <code>custom</code></td></tr>
 <tr><td><code>selectOrConfig</code><br/>Feeds to use</td><td>You can either choose to select a feed from Azure Artifacts and/or NuGet.org here, or commit a NuGet.config file to your source code repository and set its path using the <code>nugetConfigPath</code> argument.<br/>Options: <code>select</code>, <code>config</code><br/>Argument aliases: <code>feedsToUse</code></td></tr>
 <tr><td><code>versioningScheme</code><br/>Automatic package versioning</td><td>Cannot be used with include referenced projects. If you choose &#39;Use the date and time&#39;, this will generate a <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[SemVer](https://semver.org/spec/v1.0.0.html)">SemVer</a>-compliant version formatted as <code>X.Y.Z-ci-datetime</code> where you choose X, Y, and Z.
 
@@ -158,17 +158,21 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 
 ## Publish
 
-### Publish a package to external endpoint
+### Publish projects to specified folder
 
 ```YAML
-# Publish package to an external endpoint with a stored NuGet config file and stored credentials.
+# Publish projects to specified folder.
 - task: DotNetCoreCLI@2
+  displayName: 'dotnet publish'
   inputs:
-    command: 'publish'
-    selectOrConfig: 'config'
-    nugetConfigPath: '$(System.DefaultWorkingDirectory)/NuGet.config'
-    externalEndpoints: $(externalFeedCredential)
+    command: publish
+    publishWebProjects: false
+    projects: '**/*.csproj'
+    arguments: '-o $(Build.ArtifactStagingDirectory)/Output'
+    zipAfterPublish: true
+    modifyOutputPath: true
 ```
+
 ## Test
 
 ### Run tests in your repository

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Overview of Git history
 ms.assetid: 0094b6c0-d841-48e6-bb5d-82596198ef08
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 07/30/2018
 monikerRange: '>= tfs-2013'
@@ -20,7 +18,7 @@ Commits can have multiple parents, creating a history that looks like a graph in
 This difference in history is incredibly important and is the main reason users find Git confusing.
 
 >[!NOTE]
->If you can't find a change in your Git history that you know you made, learn more about how Git history simplification works at [Git lost my changes: Taking a look at Git's history simplification](/azure/devops/articles/git-log-history-simplification?view=azure-devops).
+>If you can't find a change in your Git history that you know you made, learn more about how Git history simplification works at [Git lost my changes: Taking a look at Git's history simplification](/azure/devops/articles/git-log-history-simplification).
 
 ## Commit history basics
 

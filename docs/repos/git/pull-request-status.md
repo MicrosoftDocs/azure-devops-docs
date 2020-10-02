@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Pull request workflow extensibility using status and policy
 ms.assetid: 6ba68828-c05d-4afa-b29f-9ca39be5a0ce
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 06/18/2018
 monikerRange: '>= tfs-2018'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2018'
 
 # Customize and extend pull request workflows with pull request status
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 Update 2
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 Update 2**
 
 [Pull requests](pull-requests.md) are a great tool for facilitating code reviews and managing code movement within a repository. 
 [Branch policies](branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 
@@ -22,19 +20,11 @@ These policies enable teams to enforce many best practices related to reviewing 
 
 Integrating into the PR workflow involves a few different concepts:
 
-* [Service hooks](#service-hooks) - this is how services that want to integrate with a pull request know when a pull request has been created or updated.
 * [Pull request status](#pull-request-status) - provides a way for services to associate success/failure information with a pull request.
 * [Status policy](#status-policy) - provides a mechanism to block pull request completion until the pull request status indicates success.
 * [Custom actions](#custom-actions) - provides a way to extend the status menu using Azure DevOps Services extensions.
 
 In this topic, you'll learn about pull request statuses and how they can be used to integrate in the PR workflow.
-
-## Service hooks
-
-Any service that wants to integrate with pull requests will need to know when a new PR has been created or updated, so that the contents of the PR may be evaluated. 
-[Service hooks](../../service-hooks/overview.md) enable external systems to be alerted when events occur in Azure DevOps Services.
-There are two event triggers for pull requests: - **pull request created** and **pull request updated**. 
-Ensure that there are subscriptions for both of these events to receive notifications any time the code in a PR changes.
 
 ## Pull request status
 
@@ -100,7 +90,7 @@ This further guarantees that the PR will not be able to be merged until the late
 
 ![Status policy reset conditions](media/pull-request-status/pull-request-status-policy-reset-conditions.png)
 
-See the REST API examples for posting status [on an iteration](/rest/api/vsts/git/pull%20request%20statuses/create?view=vsts-rest-4.1#on-iteration) and [on a pull request](/rest/api/vsts/git/pull%20request%20statuses/create?view=vsts-rest-4.1#on-pull-request).
+See the REST API examples for posting status [on an iteration](/rest/api/vsts/git/pull%20request%20statuses/create#on-iteration) and [on a pull request](/rest/api/vsts/git/pull%20request%20statuses/create#on-pull-request).
 
 ## Status policy
 

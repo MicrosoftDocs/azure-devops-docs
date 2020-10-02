@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 # Manage your notifications
 
-[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../includes/version-all.md)]
 
 As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications for alerts that you define. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, as described in this article, or [team or project alerts](manage-team-group-notifications.md).
 
@@ -38,7 +38,7 @@ In this tutorial, learn how to do the following tasks:
 ## View your personal notifications
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../project/navigation/preview-features.md).
+> To enable the new user interface for the Project Permissions Settings Page, see [Manage or enable features](../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -57,7 +57,7 @@ From the web portal, select the icon with your initials or picture, and then sel
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"  
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 > [!div class="mx-imgBorder"] 
 >![Navigate to personal notifications page](media/nav-personal-notifications-hub.png) 
@@ -121,7 +121,7 @@ This view shows all subscriptions that you've created or that have been created 
 ::: moniker range="azure-devops"  
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../project/navigation/preview-features.md).
+> To enable the new user interface for the Project Permissions Settings Page, see [Manage or enable features](../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -137,7 +137,7 @@ This view shows all subscriptions that you've created or that have been created 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"  
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 <img src="media/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />  
 
@@ -160,7 +160,7 @@ With custom personal subscriptions, you can define precise criteria for the even
 ::: moniker range="azure-devops"  
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../project/navigation/preview-features.md).
+> To enable the new user interface for the Project Permissions Settings Page, see [Manage or enable features](../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -279,7 +279,7 @@ To manage your notification settings, select the Notifications option under the 
 	
 ![Access personal notifications settings via the profile menu](../project/wiki/media/personal-profile-menu.png)
 
-Learn more about [team subscriptions](manage-team-notifications.md).
+Learn more about [team subscriptions](./manage-team-group-notifications.md).
 
 ![Personal notification settings](../project/wiki/media/personal-notifications.png)
 

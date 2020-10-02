@@ -43,7 +43,7 @@ landingContent:
         links:
           - text: Sign up for free
             url: ./get-started/sign-up-invite-teammates.md
-          - text: Plan and track work
+          - text: Plan & track work
             url: ./get-started/plan-track-work.md
           - text: Get started as a Stakeholder
             url: ../organizations/security/get-started-stakeholder.md
@@ -53,13 +53,13 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: About Backlogs and Agile project management
+          - text: About Backlogs & Agile project management
             url: ./backlogs/backlogs-overview.md
       - linkListType: quickstart
         links:
           - text: Create your backlog
             url: ./backlogs/create-your-backlog.md
-          - text: Define features and epics
+          - text: Define features & epics
             url: ./backlogs/define-features-epics.md
           - text: Organize your backlog
             url: ./backlogs/organize-backlog.md
@@ -87,7 +87,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: About Sprints and Scrum 
+          - text: About Sprints & Scrum 
             url: ./sprints/scrum-overview.md
       - linkListType: tutorial
         links:
@@ -97,7 +97,7 @@ landingContent:
             url: ./sprints/set-capacity.md
           - text: Monitor sprint burndown
             url: ./sprints/sprint-burndown.md
-  - title: List and manage work items
+  - title: List & manage work items
     linkLists:
       - linkListType: tutorial
         links:
@@ -105,7 +105,7 @@ landingContent:
             url: ./queries/using-queries.md
           - text: Perform ad hoc searches
             url: ./queries/search-box-queries.md
-          - text: Define, triage, and manage bugs
+          - text: Define, triage, & manage bugs
             url: ./backlogs/manage-bugs.md
           - text: Remove, delete, or restore work items  
             url: ./backlogs/remove-delete-work-items.md
@@ -115,7 +115,7 @@ landingContent:
         links:
           - text: Connect Azure Boards to GitHub
             url: ./github/connect-to-github.md
-          - text: Link GitHub commits, pull requests, and issues to work items
+          - text: Link GitHub commits, pull requests, & issues to work items
             url: ./github/link-to-from-github.md
       - linkListType: concept
         links:
@@ -129,13 +129,13 @@ landingContent:
             url: ./queries/add-tags-to-work-items.md
           - text: Azure Boards with Microsoft Teams
             url: ./integrations/boards-teams.md
-  - title: Configure and customize
+  - title: Configure & customize
     linkLists:
       - linkListType: concept
         links:
-          - text: About teams and Agile tools
+          - text: About teams & Agile tools
             url: ../organizations/settings/about-teams-and-settings.md
-          - text: Configure and customize Boards 
+          - text: Configure & customize Boards 
             url: configure-customize.md
       - linkListType: tutorial
         links:
@@ -147,13 +147,15 @@ landingContent:
             url: ../organizations/settings/work/add-custom-field.md
           - text: Customize the workflow
             url: ../organizations/settings/work/customize-process-workflow.md
+          - text: See more...
+            url: /azure/devops/reference/index
   - title: Agile at Scale
     linkLists:
       - linkListType: tutorial
         links:
           - text: Portfolio management
             url: ./plans/portfolio-management.md
-          - text: Review team deliverables and plans
+          - text: Review team deliverables & plans
             url: ./plans/review-team-plans.md
           - text: Implement Scaled Agile Framework®
             url: ./plans/scaled-agile-framework.md
@@ -161,9 +163,9 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Fix re-ordering and nesting issues
+          - text: Fix re-ordering & nesting issues
             url: ./backlogs/resolve-backlog-reorder-issues.md
-          - text: Set up your Backlogs and Boards
+          - text: Set up your Backlogs & Boards
             url: ./backlogs/set-up-your-backlog.md
           - text: FAQs 
             url: faqs.md

@@ -9,12 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 10/14/2019
+ms.date: 07/09/2020
 ---
+
 
 # Backlogs, portfolios, and Agile project management 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 
 ::: moniker range=">= tfs-2017"
@@ -36,7 +37,7 @@ If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-a
 
 #### In a nutshell you use Backlogs to: 
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 - Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure your working on the highest priority items first
@@ -49,7 +50,7 @@ If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-a
 
 ::: moniker-end 
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops-2020"  
 
 - Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure your working on the highest priority items first
@@ -87,6 +88,8 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 
 ## Backlog configuration 
+
+[!INCLUDE [temp](../includes/note-add-backlog-board.md)]
 
 Each backlog is associated with a team. Team configuration settings determine the work items that will appear on the team backlog. Specifically, the team administrator defines the following for their team: 
 
@@ -149,17 +152,17 @@ When you have a number of initiatives your teams are working on, you may want to
 
 For example, here the Customer Service team has organized several backlog items under two features and one epic. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/overview/customer-service-backlog-parents-on.png)  
+> ![Screenshot of Backlog that shows parents and multi-team ownership.](media/overview/customer-service-backlog-parents-on.png)  
 
 ::: moniker-end 
 
 ::: moniker range="<= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/overview/customer-service-backlog-parents-on.png)  
+> ![Screenshot of Backlog that shows parents and multi-team ownership, Azure DevOps Server 2019 and earlier versions.](media/overview/customer-service-backlog-parents-on.png)  
 
 ::: moniker-end 
 
@@ -178,12 +181,12 @@ When you have several teams, your hierarchical views may show items that belong 
 Your team's product backlog lists only those items whose area path matches those assigned to your team. However, if you show parents, 
 you'll see the parent epic of the features and backlog items, even if the epic or feature is owned by another team. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"  
 
-Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png).  
+Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: .  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/multi-ownership/customer-service-backlog-parents-on-s155.png)   
+> ![Screenshot of backlog items and parent items owned by other teams.](media/multi-ownership/customer-service-backlog-parents-on-s155.png)   
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
@@ -192,10 +195,10 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 ::: moniker range="azure-devops-2019"
 
-Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png).  
+Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: .  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/multi-ownership/customer-service-backlog-parents-on.png)   
+> ![Screenshot of backlog items and parent items owned by other teams, Azure DevOps Server 2019 version.](media/multi-ownership/customer-service-backlog-parents-on.png)   
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
@@ -204,10 +207,10 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png). 
+Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: . 
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
+> ![Backlog that shows parents and multi-team ownership, TFS 2018 and TFS 2017 versions.](media/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
@@ -218,14 +221,14 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 Backlog displays with work item icons is supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items that are owned by other teams appear with hollow-filled bars.  
 
-<img src="media/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership, TFS 2017 version." style="border: 1px solid #C3C3C3;" /> 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015" 
 
 Items that are owned by other teams appear with hollow-filled bars.  
 
-![Team backlog is filtered based on area path ownership](media/ALM_OB_CustServTeamBacklog.png)  
+![Team backlog is filtered based on area path ownership, TFS 2015 and earlier versions.](media/ALM_OB_CustServTeamBacklog.png)  
 
 ::: moniker-end   
 
@@ -237,17 +240,17 @@ Here's another example that shows the **Epics** backlog for the **Management** t
 Drilling down, you can see all the backlog items and features, even though they 
 belong to one of three different teams: Customer Service, Phone, and Web.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/multi-ownership/management-team-backlog-epics-s155.png)   
+> ![View Epics and child items owned by other teams.](media/multi-ownership/management-team-backlog-epics-s155.png)   
 
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/multi-ownership/management-team-backlog-epics.png)   
+> ![View Epics and child items owned by other teams, Azure DevOps Server 2019 version.](media/multi-ownership/management-team-backlog-epics.png)   
 
 ::: moniker-end 
 
@@ -258,7 +261,7 @@ Drilling down, you can see all the backlog items and features, even though they
 belong to one of three different teams: Customer Service, Phone, and Web.  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](media/multi-ownership/management-team-backlog-epics-pre-nav.png)  
+> ![Example that shows the Epics backlog for the Management team, TFS 2017 and TFS 2018 versions.](media/multi-ownership/management-team-backlog-epics-pre-nav.png)  
 
 ::: moniker-end 
 

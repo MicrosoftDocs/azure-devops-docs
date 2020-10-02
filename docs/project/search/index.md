@@ -19,11 +19,11 @@ using just a web browser.
 
 ## 5-minute quickstarts
 
-| | | 
-| --- | --- |
-| <br />[Search code](code-search.md) | <br />[Search work items](work-item-search.md) 
-| <br />[Search packages](advanced-package-syntax.md) |<br />[Search wiki](../wiki/search-wiki.md) 
-| | | 
+- [Search code](code-search.md)
+- [Search work items](work-item-search.md) 
+- [Search packages](advanced-package-syntax.md)
+- [Search wiki](../wiki/search-wiki.md) 
+
 
 ## Videos
 

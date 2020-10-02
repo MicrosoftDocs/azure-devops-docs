@@ -66,7 +66,7 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 
 	<img src="media/wiki/clone-wiki.png" alt="Clone wiki Git repository" style="border: 1px solid #C3C3C3;" />
 
-2. From the **Clone repo** dialog, select the ![ ](../../media/icons/copy-clone-icon.png) copy-clone icon.  
+2. From the **Clone repo** dialog, select the :::image type="icon" source="../../media/icons/copy-clone-icon.png" border="false"::: copy-clone icon.  
 
 	<img src="media/wiki/clone-wiki-dialog.png" alt="Copy the wiki url" style="border: 1px solid #C3C3C3;" />
 
@@ -78,11 +78,11 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 3. Use the URL that you copied to clone the repo in the IDE that you use. To learn more, see one of the following articles:
 	- [Clone an existing Git repo](../../repos/git/clone.md)
 	- [Using Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol)
-	- [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?view=azure-devops&tabs=visual-studio)
+	- [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?tabs=visual-studio)
 
 ## Add pages to your local Git repository
 
-We author pages using [Markdown format](../../reference/markdown-guidance.md). Add a Markdown file to your local branch for each page and subpage that you want to add to your wiki.
+We author pages using [Markdown format](./markdown-guidance.md). Add a Markdown file to your local branch for each page and subpage that you want to add to your wiki.
 
 ### Add pages
 
@@ -118,7 +118,7 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
    For example, we added to following files to the How-to-contribute folder. These subpages appear under the How to contribute page in the wiki.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Local branch wiki Git repo](media/wiki/add-sub-pages.png)
+	> ![Subpages under the How to contribute page in the wiki.](media/wiki/add-sub-pages.png)
 
 2. Add a **.order** file in the folder with the order of the subpages as they should appear in the wiki. To understand the use of the **.order** file to sequence pages, see [Wiki Git repository files and file structure](wiki-file-structure.md).
 	 
@@ -151,7 +151,7 @@ If there are any errors in the process, the pages appear in your wiki with a war
 - [Clone an existing Git repo](../../repos/git/clone.md)
 - [Share code with push](../../repos/git/pushing.md)
 - [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
-- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
+- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](./markdown-guidance.md).
 
 <!---
 
@@ -181,4 +181,4 @@ In the web portal, you can view the repo files based on the following URL:
 
 While that's a lot of steps, the main steps that are specific to updating a wiki is step 3. The rest follow the standard steps for updating a Git repo.
 
--->  
+-->

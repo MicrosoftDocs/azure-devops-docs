@@ -5,7 +5,6 @@ ms.assetid: 00303E47-5B7F-4A25-901B-0B6F2007911D
 ms.topic: article
 ms.technology: devops-code-tfvc
 ms.date: 04/25/2018
-ms.author: apawast
 author: wpschaub
 monikerRange: '>= tfs-2015'
 ---
@@ -79,7 +78,7 @@ As the number of your feature branches increase, your storage requirements and b
 
 Similarly, the **Source Control Explorer** view becomes noisy and impractical as the number of branches increases. Unless you have a consistent naming convention, finding a specific feature branch among hundreds of feature branches is challenging.
 
-![Feature isolation noise](./media/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise-vside.png)
+![Feature isolation noise in Source Control Explorer view.](./media/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise-vside.png)
 
 > [!TIP]
 >

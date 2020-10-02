@@ -8,13 +8,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 05/22/2020
+ms.date: 07/09/2020
 ---
 
 
 # Connect Azure Boards to an Office client 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -70,12 +70,13 @@ The following table indicates the Office clients that are supported for each Azu
 :::row:::
    :::column span="2":::
       Azure DevOps Services  
+      Azure DevOps Server 2020  
       Azure DevOps Server 2019  
       Visual Studio 2019  
       Azure DevOps Office Integration 2019 
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
    :::column span="":::
         
@@ -91,13 +92,13 @@ The following table indicates the Office clients that are supported for each Azu
       Visual Studio 2017  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -108,13 +109,13 @@ The following table indicates the Office clients that are supported for each Azu
       Visual Studio 2013  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
+      ✔️  
    :::column-end:::
 :::row-end:::
 
@@ -137,7 +138,7 @@ Connection from an Office client to an Azure Boards project requires that you ha
 
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019" 
+::: moniker range=">= azure-devops-2019 < azure-devops" 
 
 - To connect Excel to Azure Boards, you must have installed Office Excel 2010 or later version, including Office Excel 365. 
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
@@ -257,7 +258,7 @@ To work in Project, see [Create your backlog and tasks using Project](create-you
 ::: moniker range="<= tfs-2018" 
 
 > [!NOTE]  
-> While this section illustrates how to connect Excel to an Azure Boards project, the steps for connecting from Project or PowerPoint is similar. 
+> While this section illustrates how to connect Excel to an Azure Boards project, the steps for connecting from Project or PowerPoint are similar. 
 
 ::: moniker-end  
 
@@ -286,7 +287,7 @@ This connection method requires that you have installed [Azure DevOps Open in Ex
 
 2. Choose the query you want to open in Excel. 
 
-3. From the **Results** tab, choose the ![ ](../../media/icons/actions-icon.png) actions icon
+3. From the **Results** tab, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon
 
 	> [!div class="mx-imgBorder"]  
 	> ![QUery Results, context menu, Open in Excel Open Boards>Queries, vertical nav](media/connect/open-in-excel-from-portal.png) 
@@ -301,18 +302,18 @@ To connect from your Office client to an Azure DevOps Services project, perform 
 1.  If you're client is signed into a user account, make sure that it is your Azure DevOps user account. If not, choose your account name and sign in as another user.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Ribbon, Choose New List](media/connect/sign-in-as-other-user.png)
+	> ![Screenshot of Excel Team Ribbon, Choose New List. ](media/connect/sign-in-as-other-user.png)
 
 1.  If you don't see the **Team** ribbon (or the **Team** menu if you use Office 2007), see [Azure DevOps Office integration issues](tfs-office-integration-issues.md). 
 
 1. Choose the **Team** tab, place your cursor in Cell A1, and then choose **New List**.  
 
-	![New List](media/excel/team-ribbon.png)
+	![Screenshot of Excel New List option.](media/excel/team-ribbon.png)
 
 1.	The Connect to Azure DevOps Server dialog opens. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Ribbon, Choose New List](media/connect/connect-to-azure-devops.png)
+	> ![Connect to Azure DevOps Server dialog.](media/connect/connect-to-azure-devops.png)
 
 	If you are signed-in to your Office client with your Azure DevOps user account, then the set of servers, both cloud and on-premises, you have access to is automatically populated in the drop-down menu. 
 
@@ -322,7 +323,7 @@ To connect from your Office client to an Azure DevOps Services project, perform 
 
 	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, and (4) check that the preview matches the URL that you entered. Then choose **OK**. 
 
-	![Connect to Azure DevOps Server dialog](media/connect/4-steps-connect-to-cloud.png)
+	![Connect to Azure DevOps Server sub-dialogs to add or remove a server.](media/connect/4-steps-connect-to-cloud.png)
 
 	If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).  
 4.  With the server selected, choose the project you want to connect to, and then choose **Connect**. 
@@ -334,7 +335,7 @@ To connect from your Office client to an Azure DevOps Services project, perform 
 
 5. From the New List dialog, choose **Input list**. Or, if you want to work with a list of work items defined in a query, choose **Query list**.
 
-    ![Select input list](media/excel/2019-input-list-dialog.png)
+    ![New list dialog, Select input list.](media/excel/2019-input-list-dialog.png)
 
 #### [Connect client to Azure DevOps on-premises](#tab/open-excel-on-prem) 
 
@@ -345,18 +346,18 @@ To connect from your Office client to an Azure DevOps Server project, perform th
 1.  If you're client is signed into a user account, make sure that it is your Azure DevOps account. If not, choose your account name and sign in as another user.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Ribbon, Choose New List](media/connect/sign-in-as-other-user.png)
+	> ![Screenshot to select sign-in on Excel ribbon.](media/connect/sign-in-as-other-user.png)
 
 1.  If you don't see the **Team** ribbon (or the **Team** menu if you use Office 2007), see [Azure DevOps-Office integration issues](tfs-office-integration-issues.md). 
 
 1. Choose the **Team** tab, place your cursor in Cell A1, and then choose **New List**.  
 
-	![New List](media/excel/team-ribbon.png)
+	![Screenshot of Excel New List option on Team ribbon.](media/excel/team-ribbon.png)
 
 1.	The Connect to Azure DevOps Server dialog opens. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Ribbon, Choose New List](media/connect/connect-to-azure-devops.png)
+	> ![Connect to Azure DevOps Server dialog, on-premises version](media/connect/connect-to-azure-devops.png)
 
 	If you are signed-in to your Office client with your Azure DevOps user account, then the set of servers, both cloud and on-premises, you have access to is automatically populated in the drop-down menu. 
 
@@ -366,7 +367,7 @@ To connect from your Office client to an Azure DevOps Server project, perform th
 
 	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your Azure DevOps Server instance. As needed, change the Port number if your deployment uses a non-default port number. The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
 
-    ![Connect to Team Foundation Server dialog](media/connect/4-steps-connect-to-on-prem.png)
+    ![Connect to Azure Server sub-dialogs, on-premises versions](media/connect/4-steps-connect-to-on-prem.png)
 
 	Choose **Close** to close the Add/Remove servers dialog. From the Select an Azure DevOps Server dialog, make sure the server you added is selected, and then choose **Connect**. 
 
@@ -374,13 +375,13 @@ To connect from your Office client to an Azure DevOps Server project, perform th
 4.  With the server selected, choose the project you want to connect to, and then choose **Connect**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Connect to Azure DevOps dialog, choose project ](media/connect/choose-project.png)
+	> ![Connect to Azure DevOps dialog, choose project, on-premises version. ](media/connect/choose-project.png)
 
 	Make sure your Azure DevOps user account appears at the bottom of the dialog. If it isn't, choose **Switch User** and sign in to the correct account.  
 
 5. From the New List dialog, choose **Input list**. Or, if you want to work with a list of work items defined in a query, choose **Query list**.
 
-    ![Select input list](media/excel/2019-input-list-dialog.png)
+    ![New list, Select input list, on-premises version.](media/excel/2019-input-list-dialog.png)
 
 
 #### [Open Excel from Visual Studio](#tab/open-excel-vs) 
@@ -391,14 +392,14 @@ To connect from your Office client to an Azure DevOps Server project, perform th
 	> To work from Visual Studio 2019/Team Explorer, you need to select the  **Tools>Options>Work Items>General** Legacy experience. For more information, see [Set the Work Items experience in Visual Studio 2019](../../work-items/set-work-item-experience-vs.md).  
 	>  
 	> [!div class="mx-imgBorder"]  
-	> ![Options dialog, Work Items, General](media/connect/work-items-legacy-experience.png)
+	> ![Visual Studio Options dialog, Work Items, General](media/connect/work-items-legacy-experience.png)
 
 2. Connect to your Azure DevOps project that contains the work items you want to add to or update. For more information, see [Connect to a project](../../../organizations/projects/connect-to-projects.md).
 
 3.  Right-click the query you want to open and choose. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Explorer, Work Items, Query, context menu](media/connect/open-from-visual-studio-query.png)
+	> ![Screenshot of Team Explorer, Work Items, Query, context menu.](media/connect/open-from-visual-studio-query.png)
 
 	Excel opens with the work items listed in the query you selected. 
 

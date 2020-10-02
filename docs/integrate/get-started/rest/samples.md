@@ -13,6 +13,8 @@ ms.date: 08/25/2016
 
 # Get started sample
 
+[!INCLUDE [version-all](../../../includes/version-all.md)]
+
 ## Personal Access Tokens
 
 When using the REST APIs or .NET Libraries, you need to authenticate with Azure DevOps Services. Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for Azure DevOps Services including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
@@ -103,8 +105,7 @@ A: See the [https://github.com/Microsoft/vsts-restapi-samplecode](https://github
 
 #### Q: Where can I find more information on the .NET library?
 
-A: Yes, see the [overview of client libraries](../client-libraries/dotnet.md)
+A: Yes, see the [overview of client libraries](../../concepts/dotnet-client-libraries.md)
 
 
-<!-- ENDSECTION --> 
-
+<!-- ENDSECTION -->

@@ -12,7 +12,7 @@ ms.date: 02/22/2017
 
 # Resolve data validation errors (publish and refresh)
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 A data validation error occurs when a change in the work item list or project plan violates a rule of the work item type. The following examples show common data validation errors:  
   

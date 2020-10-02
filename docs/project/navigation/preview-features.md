@@ -1,31 +1,48 @@
 ---
-title: Turn preview features on or off 
+title: Manage preview features
 titleSuffix: Azure DevOps Services
-description: Enable/disable or activate/deactivate features in preview at the user, team project, or account level  
+description: Enable/disable or activate/deactivate features in preview at the user, team project, or organization level  
 ms.custom: Navigation
 ms.technology: devops-collab
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'azure-devops'
-ms.date: 06/22/2020
+monikerRange: '>= azure-devops-2020'
+ms.date: 07/24/2020
 ---
 
 
-# Enable preview features 
+# Manage or enable features 
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)] 
+[!INCLUDE [temp](../../includes/version-cloud-plus-2020.md)] 
+
+::: moniker range="azure-devops"
 
 As new features are introduced, you can turn them on or off. That way, you can try them out, provide feedback, and work with those features that meet your requirements.  
 
-Some features provide a new user interface and functionality, which can be managed per user or team member. Others support a default experience for the account and are managed by an account administrator. 
- 
+Some preview features provide access to entire new functionality. Others, such as the New Wiki experience, reflect a change to the user interface, but little or no change in functionality. 
+
 > [!NOTE]   
 > You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to Azure DevOps Server. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
 
+Some preview features provide access to entire new functionality. Others, such as the New Wiki experience, reflect a change to the user interface, but little or no change in functionality. 
 
-Some preview features provide access to entire new functionality. Others, such as the New TFVC Page and New Wiki experience, reflect a change to the user interface, but little or no change in functionality. 
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
+
+::: moniker range="azure-devops-2020"
+
+There are a few features you or an administrator can enable or disable. Some  features provide access to entire new functionality, while others provide a change to the user interface.  
+
+::: moniker-end
+
+
+
+::: moniker range="azure-devops"
+
+The follow table indicates which preview features can be enabled per user or team member, and those that can be enabled for the organization.  You must be a member of the Project Collection Administrators group to change a preview feature at the organization-level. 
 
 
 ---
@@ -50,90 +67,132 @@ Some preview features provide access to entire new functionality. Others, such a
       [New account manager](#account-manager)  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       ✔️   
+       ✔️   
       &nbsp;  
       &nbsp;  
-      ![](../../media/icons/checkmark.png)  
+       ✔️   
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
       [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
-      [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
       [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)  
       [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
       [New service connections experience](../../pipelines/library/service-endpoints.md)  
+      [New Settings Search in the organization settings panel](#search-org-settings)  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png) 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [New Settings Search in the organization settings panel](#search-org-settings)  
       [New Teams page](../../organizations/settings/add-teams.md)  
       [New Test Plans Page](../../test/new-test-plans-page.md)  
       New TFVC Page  
       New Wiki experience  
+      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      &nbsp;  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png) 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      &nbsp;  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
       [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
       [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
       Task Insights for Failed Pipeline Runs 
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
       &nbsp;  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       ✔️   
+       ✔️   
    :::column-end:::
-   :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+   :::column span="1"::: 
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 ---
 
+::: moniker-end
+
+
+::: moniker range="azure-devops-2020"
+
+The follow table indicates those features that you can enable as a user, project administrator, or project collection administrator.  
+
+
+---
+:::row:::
+   :::column span="2":::
+      **Feature**
+   :::column-end:::
+   :::column span="1":::
+      **User**
+   :::column-end:::
+   :::column span="1":::
+      **Project**
+   :::column-end:::
+   :::column span="1":::
+      **Collection**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [New service connections experience](../../pipelines/library/service-endpoints.md)    
+      [Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download)  
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+      &nbsp;   
+   :::column-end:::
+   :::column span="1":::
+      &nbsp;     
+      ✔️   
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+      ✔️   
+   :::column-end:::
+:::row-end:::
+---
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 <a id="user-level">  </a>
 
@@ -147,7 +206,7 @@ To access the Preview features options, open your profile menu. The profile menu
 
 #### [New Account Manager enabled](#tab/new-account-enabled)
 
-Choose the ![](../../media/icons/user-settings-gear.png) profile icon, and then choose **Preview features**. 
+Choose the :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: profile icon, and then choose **Preview features**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Open User settings](media/preview-features/open-profile-menu-s170.png)   
@@ -189,7 +248,38 @@ When you enable a feature at the organization level, you essentially turn it on 
 > [!div class="mx-imgBorder"]  
 > ![Preview features options for the organization, part 2](media/preview-features/org-features-s170-3.png)
 
+::: moniker-end
 
+::: moniker range="azure-devops-2020"
+
+## Enable or disable a feature   
+
+1. Open your profile menu by choosing your image icon and select **Manage features**.  
+
+	:::image type="content" source="media/manage-features/open-profile-2020.png" alt-text="Open profile menu":::
+
+1. Select the level from the menu provided. 
+
+	> [!TIP]  
+	> If you don't see the **for this project** or **for this collection** menu options, then you aren't an administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
+
+1. To enable or disable a feature, choose the slider. 
+
+	**User-level**  
+	:::image type="content" source="media/manage-features/manage-features-user-2020.png" alt-text="Manage features for the user":::
+
+	**Project-level**  
+	:::image type="content" source="media/manage-features/manage-features-project-2020.png" alt-text="Manage features for the project":::
+
+	**Collection-level**  
+	:::image type="content" source="media/manage-features/manage-features-collection-2020.png" alt-text="Manage features for the collection":::
+
+When you enable a feature at the project or collection-level, you essentially turn it on for all users. If you disable a feature at the project or collection-level, user settings are not changed. Users can enable or disable the feature on their own. 
+
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 <a id="experimental-themes">  </a>
 
@@ -227,6 +317,7 @@ When enabled, you can enter keywords to search all settings within the Organizat
 
 ### Azure Pipelines
 
+- [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
 - [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
 - [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)
 - [Test analytics in new web platform](../../pipelines/test/test-analytics.md)  
@@ -264,18 +355,17 @@ When enabled, you can enter keywords to search all settings within the Organizat
 ### Social tools 
 
 - [Wiki](../wiki/add-edit-wiki.md)  
-- [Combine email recipients](../../notifications/howto-manage-team-notifications.md) 
+- [Combine email recipients](../../notifications/manage-team-group-notifications.md) 
 - [New experience in Code, Work Item, & Wiki search](/azure/devops/release-notes/2017/oct-06-vsts#code)  
-- [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md)   
-- [Team expansion for notifications](../../notifications/howto-manage-team-notifications.md)
+- [Out of the box notifications](../../notifications/manage-your-personal-notifications.md)   
+- [Team expansion for notifications](../../notifications/manage-team-group-notifications.md)
 
 ### Organization, project, and billing management
-- [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)   
+- [Streamlined User Management](../../organizations/accounts/add-organization-users.md)   
 
-
+::: moniker-end
 
 ## Related articles
 
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)
-- [Azure DevOps Feature Timeline](/azure/devops/release-notes/features-timeline) 
-
+- [Azure DevOps Feature Timeline](/azure/devops/release-notes/features-timeline)

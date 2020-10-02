@@ -18,7 +18,7 @@ ms.date: 10/17/2017
 
 You can track your team's progress by using SQL Server Report Designer to create reports. Before you can base these reports on data from Visual Studio Team Foundation Server (TFS), you must first create a Report Server project in Visual Studio.  
   
- For an overview of Report Designer, see the following page on the Microsoft Web site: [Designing and Implementing Reports Using Report Designer](https://go.microsoft.com/fwlink/?LinkId=181954). For more information about how to create reports in Report Designer, see [Create a Detailed Report using Report Designer](create-a-detailed-report-using-report-designer.md) and [Create an aggregate report using Report Designer and the Analysis Services Cube](create-aggregate-report-report-designer-analysis-services-cube.md).  
+ For an overview of Report Designer, see the following page on the Microsoft Web site: [Designing and Implementing Reports Using Report Designer](/previous-versions/sql/sql-server-2008-r2/ms159253(v=sql.105)). For more information about how to create reports in Report Designer, see [Create a Detailed Report using Report Designer](create-a-detailed-report-using-report-designer.md) and [Create an aggregate report using Report Designer and the Analysis Services Cube](create-aggregate-report-report-designer-analysis-services-cube.md).  
   
  **Requirements**  
   
