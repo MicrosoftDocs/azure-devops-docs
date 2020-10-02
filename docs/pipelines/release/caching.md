@@ -456,7 +456,21 @@ steps:
     inputs:
       key: 'docker | "$(Agent.OS)" | caching-docker.yml'
       path: $(Pipeline.Workspace)/docker
+      cacheHitVar: DOCKER_CACHE_RESTORED
     displayName: Caching Docker image
+
+  - script: |
+      docker load $(Pipeline.Workspace)/docker/cache.tar
+    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
+
+  - script: |
+      mkdir -p $(Pipeline.Workspace)/docker
+      for fn in ${{ parameters.cacheImages }}
+      do
+        docker pull -q $fn
+      done
+      docker save ${{ parameters.cacheImages }} | $(Pipeline.Workspace)/docker/cachedDocker.tar
+    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
 ```
 
 ## Known issues and feedback
