@@ -41,15 +41,16 @@ You manage most permissions through the web portal. For those that aren't surfac
 
 ## Security namespaces and their IDs
 
-The following sections lists valid namespaces and provides descriptions and links to more information. Many security namespaces correspond to permissions you set through a Security or Permissions user interface. Some namespaces govern access assigned to to members of default security groups or Azure DevOps service principals. Information is grouped as follows: 
+This article describes the valid namespaces, lists the associated permissions, and provides links to more information. Many security namespaces correspond to permissions you set through a **Security** or **Permissions** web portal interface. Other namespaces or select permissions aren't surface through the web portal. They grant access by default to members of security groups or Azure DevOps service principals. Namespaces have been grouped into the following categories following how they're managed through the web portal. 
+
 - Object-level 
 - Project-level
 - Organization or collection-level 
-- Server-level
+- Server-level (on-premises only) 
 - Role-based 
 - Internal only 
 
-## Hierarchy and tokens
+### Hierarchy and tokens
 
 A security namespace can be either hierarchical or flat. 
 Tokens in a hierarchical namespace exist in a hierarchy with effective permissions inherited from parent tokens to child tokens.
@@ -61,7 +62,6 @@ If the tokens have variable-length path parts, then a separator character is use
 Token examples for different namespaces are provided in the next section. 
 
 ## Object-level namespaces and permissions
-
 
 The following table describes the namespaces that manage object-level permissions. Most of the listed permissions are managed through the web portal user interface for each object.  
 
