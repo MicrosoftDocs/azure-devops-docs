@@ -13,6 +13,14 @@ ms.date: 09/14/2020
 
 # Manage permissions with command line tool
 
+
+<!--- QUESTIONS   
+
+What is --local option? 
+
+--> 
+
+
 [!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
 Permissions grant access to perform a specific action on a specific resource. You manage most permissions through the web portal. However, you can manage permissions using command line tools or the REST API.  
@@ -26,10 +34,12 @@ Azure DevOps grants a number of permissions by default to members of default sec
 
 ## Prerequisites 
 
-- To manage tokens and namespaces, you must be a member of the Project Collection Administrators security group.  
+- To manage tokens and namespaces, you must be a member of the Project Collection Administrators security group. For more information on tokens, see [Security namespace and permission reference](namespace-reference.md).  
 - You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
 - Sign into Azure DevOps using `az login`.  
-- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.  
+- For the examples in this article, set the default organization as follows: 
+    - For **Azure DevOps Services**:  `az devops configure --defaults organization=YourOrganizationURL`.  
+    - For **Azure DevOps Server**: `az devops configure --defaults organization=https://ServerName/CollectionName`
 
 ## Security permission commands
 
@@ -173,6 +183,48 @@ dc02bf3d-cd48-46c3-8a41-345094ecc94b  ViewActivityPaneSecurity
 e06e1c24-e93d-4e4a-908a-7d951187b483  TestManagement
 6ec4592e-048c-434e-8e6c-8671753a8418  SettingEntries
 302acaca-b667-436d-a946-87133492041c  BuildAdministration
+2725d2bc-7520-4af4-b0e3-8d876494731f  Location
+83abde3a-4593-424e-b45f-9898af99034d  UtilizationPermissions
+c0e7a722-1cad-4ae6-b340-a8467501e7ce  WorkItemsHub
+0582eb05-c896-449a-b933-aa3d99e121d6  WebPlatform
+66312704-deb5-43f9-b51c-ab4ff5e351c3  VersionControlPrivileges
+93bafc04-9075-403a-9367-b7164eac6b5c  Workspaces
+093cbb02-722b-4ad6-9f88-bc452043fa63  CrossProjectWidgetView
+35e35e8e-686d-4b01-aff6-c369d6e36ce0  WorkItemTrackingConfiguration
+0d140cae-8ac1-4f48-b6d1-c93ce0301a12  Discussion Threads
+5ab15bc8-4ea1-d0f3-8344-cab8fe976877  BoardsExternalIntegration
+7ffa7cf4-317c-4fea-8f1d-cfda50cfa956  DataProvider
+81c27cc8-7a9f-48ee-b63f-df1e1d0412dd  Social
+9a82c708-bfbe-4f31-984c-e860c2196781  Security
+a60e0d84-c2f8-48e4-9c0c-f32da48d5fd1  IdentityPicker
+84cc1aa4-15bc-423d-90d9-f97c450fc729  ServicingOrchestration
+33344d9c-fc72-4d6f-aba5-fa317101a7e9  Build
+8adf73b7-389a-4276-b638-fe1653f7efc7  DashboardsPrivileges
+445d2788-c5fb-4132-bbef-09c4045ad93f  WorkItemTrackingAdministration
+101eae8c-1709-47f9-b228-0e476c35b3ba  DistributedTask
+2e9eb7ed-3c0a-47d4-87c1-0ffdd275fd87  Git Repositories
+a39371cf-0841-4c16-bbd3-276e341bc052  VersionControlItems
+3c15a8b7-af1a-45c2-aa97-2cb97078332e  VersionControlItems2
+2bf24a2b-70ba-43d3-ad97-3d9e1f75622f  EventSubscriber
+5a6cd233-6615-414d-9393-48dbb252bd23  WorkItemTrackingProvision
+49b48001-ca20-4adc-8111-5b60c903a50c  ServiceEndpoints
+cb594ebe-87dd-4fc9-ac2c-6a10a4c92046  ServiceHooks
+bc295513-b1a2-4663-8d1a-7017fd760d18  Chat
+3e65f728-f8bc-4ecd-8764-7e378b19bfa7  Collection
+cb4d56d2-e84b-457e-8845-81320a133fbb  Proxy
+bed337f8-e5f3-4fb9-80da-81e17d06e7a8  Plan
+2dab47f9-bd70-49ed-9bd5-8eb051e59c02  Process
+11238e09-49f2-40c7-94d0-8f0307204ce4  AccountAdminSecurity
+b7e84409-6553-448a-bbb2-af228e07cbeb  Library
+83d4c2e6-e57d-4d6e-892b-b87222b7ad20  Environment
+52d39943-cb85-4d7f-8fa8-c6baac873819  Project
+58b176e7-3411-457a-89d0-c6d0ccb3c52b  EventSubscription
+83e28ad4-2d72-4ceb-97b0-c7726d5502c3  CSS
+9e4894c3-ff9a-4eac-8a85-ce11cafdc6f1  TeamLabSecurity
+fc5b7b85-5d6b-41eb-8534-e128cb10eb67  ProjectAnalysisLanguageMetrics
+bb50f182-8e5e-40b8-bc21-e8752a1e7ae2  Tagging
+f6a4de49-dbe2-4704-86dc-f8ec1a294436  MetaTask
+bf7bfa03-b2b7-47db-8113-fa2e002cc5b1  Iteration
 ```
 
 ## List tokens for a security namespace 

@@ -15,6 +15,15 @@ ms.date: 10/01/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
+
+<!--- QUESTIONS   
+
+Note access level restrictions. 
+Note non UI permissions
+
+--> 
+ 
+
 Security namespaces are used to store access control lists (ACLs) on tokens. Data stored in security namespaces determines the level of access the following entities have to perform a specific action on a specific resource.
 - Organization owner  
 - Member of an Azure DevOps instance  
@@ -52,6 +61,9 @@ If the tokens have variable-length path parts, then a separator character is use
 Token examples for different namespaces are provided in the next section. 
 
 ## Object-level namespaces and permissions
+
+
+The following table describes the namespaces that manage object-level permissions. Most of the listed permissions are managed through the web portal user interface for each object.  
 
 ---
 :::row:::
@@ -157,7 +169,7 @@ Token examples for different namespaces are provided in the next section.
    :::column span="2":::
       [Manages dashboard (object-level) permissions](/azure/devops/organizations/security/permissions#dasboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](/azure/devops/report/dashboards/dashboard-permissions#set-permissions-for-a-project-dashboard).   
       <br/>
-      ID: '8adf73b7-389a-4276-b638-fe1653f7efc7'
+      ID: `8adf73b7-389a-4276-b638-fe1653f7efc7`
    :::column-end:::
 :::row-end:::
 ---
@@ -340,36 +352,38 @@ The following table describes the namespaces that manage project-level permissio
       Project
    :::column-end:::
    :::column span="1":::
-      `GENERIC_READ                   
-      GENERIC_WRITE                  
-      DELETE                         
-      PUBLISH_TEST_RESULTS          
-      ADMINISTER_BUILD               
-      START_BUILD                    
-      EDIT_BUILD_STATUS              
-      UPDATE_BUILD                   
-      DELETE_TEST_RESULTS            
-      VIEW_TEST_RESULTS              
-      MANAGE_TEST_ENVIRONMENTS       
-      MANAGE_TEST_CONFIGURATIONS     
-      WORK_ITEM_DELETE               
-      WORK_ITEM_MOVE                 
-      WORK_ITEM_PERMANENTLY_DELETE   
-      RENAME                         
-      MANAGE_PROPERTIES             
-      MANAGE_SYSTEM_PROPERTIES       
-      BYPASS_PROPERTY_CACHE         
-      BYPASS_RULES                   
-      SUPPRESS_NOTIFICATIONS         
-      UPDATE_VISIBILITY              
-      CHANGE_PROCESS                 
-      AGILETOOLS_BACKLOG`             
+      `GENERIC_READ`                   
+      `GENERIC_WRITE`                  
+      `DELETE`                         
+      `PUBLISH_TEST_RESULTS`          
+      `ADMINISTER_BUILD`               
+      `START_BUILD`                    
+      `EDIT_BUILD_STATUS`              
+      `UPDATE_BUILD`                   
+      `DELETE_TEST_RESULTS`            
+      `VIEW_TEST_RESULTS`              
+      `MANAGE_TEST_ENVIRONMENTS`       
+      `MANAGE_TEST_CONFIGURATIONS`     
+      `WORK_ITEM_DELETE`               
+      `WORK_ITEM_MOVE`                 
+      `WORK_ITEM_PERMANENTLY_DELETE`   
+      `RENAME`                         
+      `MANAGE_PROPERTIES`             
+      `MANAGE_SYSTEM_PROPERTIES`       
+      `BYPASS_PROPERTY_CACHE`         
+      `BYPASS_RULES`                   
+      `SUPPRESS_NOTIFICATIONS`         
+      `UPDATE_VISIBILITY`              
+      `CHANGE_PROCESS`                 
+      `AGILETOOLS_BACKLOG`             
+      `AGILETOOLS_PLANS` <!--- TBD, this doesn't get listed --> 
    :::column-end:::
    :::column span="2":::
-      [Manages Project-level permissions](/azure/devops/organizations/security/permissions#project-level-permissions). You can manage these permissions through the [Project settings, Security or Permissions administrative interface](/azure/devops/organizations/security/set-project-collection-level-permissions#change-the-permission-level-for-a-project-level-group). <br/>  
+      [Manages Project-level permissions](/azure/devops/organizations/security/permissions#project-level-permissions).   
+      > The `AGILETOOLS_BACKLOG` and `AGILETOOLS_PLANS` permissions manage access to Azure Boards backlogs and Delivery Plans. These permissions replace checks for Stakeholder licensing. 
       **Root token format**: `$PROJECT`  
       Token to secure permissions for each project in your organization.  
-      `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  <br/>  
+      `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  
       Assume you have a project named `Test Project 1`.  
       You can get the project ID for this project by using `project show` command.  
       `az devops project show --project "Test Project 1"`  
@@ -420,38 +434,28 @@ The following table describes the namespaces that manage project-level permissio
       `ManageBranch`         
    :::column-end:::
    :::column span="2":::
-      Manages permissions for a [Team Foundation Version Control (TFVC) repository](/azure/devops/organizations/security/permissions#tfvc). You can manage these permissions through the [Project settings, Repository administrative interface](/azure/devops/organizations/security/set-git-tfvc-repository-permissions#set-tfvc-repository-permissions).  
+      Manages permissions for a [Team Foundation Version Control (TFVC) repository](/azure/devops/organizations/security/permissions#tfvc). You can manage these permissions through the [Project settings, Repository administrative interface](set-git-tfvc-repository-permissions.md#set-tfvc-repository-permissions).  
       <br/>
       ID: `a39371cf-0841-4c16-bbd3-276e341bc052`
    :::column-end:::
 :::row-end:::
 ---
 
-Note access level restrictions. 
-Note non UI permissions
 
 ::: moniker range="azure-devops"
 ## Organization-level namespaces and permissions 
+
+
+The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the [web portal admin context](set-project-collection-level-permissions.md#collection-level). The organization owner and members of the Project Collection Administrators group are granted most of these permissions.  
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 ## Collection-level namespaces and permissions 
+
+
+The following table describes the namespaces that manage organization-level permissions. Most of the listed permissions are managed through the [web portal admin context](set-project-collection-level-permissions.md#collection-level). Members of the Project Collection Administrators group are granted most of these permissions.  
+
 ::: moniker-end
-
-- AccountAdminSecurity
-- Analytics
-- AuditLog (Organization)
-- BuildAdministration (Organization)
-- Collection (Organization)
-- ExtensionManagement
-- Process (Organization)
-- Workspaces (Organization
-- UtilizationPermissions
-- VersionControlPrivileges
-
-
-
-
 
 ---
 :::row:::
@@ -466,44 +470,6 @@ Note non UI permissions
    :::column-end:::
 :::row-end:::
 ---
-:::row:::
-   :::column span="1":::
-      AccountAdminSecurity
-   :::column-end:::
-   :::column span="1":::
-      `Read`       
-      `Create`    
-      `Modify`     
-   :::column-end:::
-   :::column span="2":::
-      Sets permissions to read, create, and modify organization account resources. These permissions are assigned to the organization owner and members of the Project Collection Administrator group.  
-      <br/>
-      ID: `11238e09-49f2-40c7-94d0-8f0307204ce4`
-   :::column-end:::
-:::row-end:::
----
-::: moniker range=">= azure-devops-2019"
-:::row:::
-   :::column span="1":::
-      Analytics
-   :::column-end:::
-   :::column span="1":::
-      `Read`                       
-      `Administer`                 
-      `Stage`                      
-      `ExecuteUnrestrictedQuery`   
-      `ReadEuii`                   
-   :::column-end:::
-   :::column span="2":::
-      Manages permissions to read, administer permissions, and execute queries against the Analytics service.  
-      **Token format for project-level permissions**: `$/PROJECT_ID`  
-      **Example**: `$/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
-      <br/>
-      ID: `58450c49-b02d-465a-ab12-59ae512d6531`
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="1":::
@@ -532,10 +498,10 @@ Note non UI permissions
       `ViewBuildResources`                   
       `ManageBuildResources`                 
       `UseBuildResources`                    
-      `AdministerBuildResourcePermissions``   
+      `AdministerBuildResourcePermissions`   
    :::column-end:::
    :::column span="2":::
-      [Manages organization or collection-level permissions for build resources](/azure/devops/organizations/security/permissions#collection-level) to view, manage, use, or administer permissions.  
+      [Manages access to to view, manage, use, or administer permissions for build resources](/azure/devops/organizations/security/permissions#collection-level).  
       <br/>
       ID: `302acaca-b667-436d-a946-87133492041c`
    :::column-end:::
@@ -555,17 +521,16 @@ Note non UI permissions
       `SYNCHRONIZE_READ`             
       `MANAGE_TEST_CONTROLLERS`      
       `DELETE_FIELD`                 
-      `MANAGE_ENTERPRISE_POLICIES``   
+      `MANAGE_ENTERPRISE_POLICIES`   
    :::column-end:::
    :::column span="2":::
-      [Manages organization or collection-level general and service account permissions](/azure/devops/organizations/security/permissions#collection-level). You can manage these permissions through the [Organization or Collection settings administrative interface](/azure/devops/organizations/security/set-project-collection-level-permissions). 
+      [Manages general and service account permissions](/azure/devops/organizations/security/permissions#collection-level). You can manage these permissions through the [Organization or Collection settings administrative interface](/azure/devops/organizations/security/set-project-collection-level-permissions).  
       <br/>
       ID: `3e65f728-f8bc-4ecd-8764-7e378b19bfa7`
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker range=">= azure-devops-2019"
-
 :::row:::
    :::column span="1":::
       Process <a id="process" />
@@ -616,7 +581,11 @@ Note non UI permissions
       `AdminConfiguration`   
    :::column-end:::
    :::column span="2":::
-      Manages collection-level permissions for [Team Foundation Version Control (TFVC) repository](/azure/devops/organizations/security/permissions#tfvc). You can manage these permissions through the [Organization settings, Permissions administrative interface](set-project-collection-level-permissions.md).
+      Manages collection-level permissions for [Team Foundation Version Control (TFVC) repository](permissions.md#tfvc). You can manage these permissions through the [Organization settings, Permissions administrative interface](set-project-collection-level-permissions.md).
+      ::: moniker range="< azure-devops"
+      > The `AdminConfiguration` permission grants users the ability to edit server-level permissions for users and groups. 
+      > The `AdminConnections` permission grants users the ability to read the contents of a file or folder of an on-premises, server-level repository.
+      ::: moniker-end
       <br/>
       ID: `66312704-deb5-43f9-b51c-ab4ff5e351c3`
    :::column-end:::
@@ -691,11 +660,8 @@ The following table describes those security namespaces and permissions defined 
 
 ## Role-based namespaces and permissions
 
-- DistributedTask (Agent pools, project)
-- Environment
-- ExtensionManagement
-- Library
-- ServiceEndpoints
+
+The following table describes the security namespaces and permissions used to manage role-based security. 
  
 ---
 :::row:::
@@ -822,7 +788,7 @@ The following table describes those security namespaces and permissions defined 
 
 ## Internal namespaces and permissions
 
-The following table describes the security namespaces and permissions that aren't surfaced through the user interface in anyway. They are primarily used to grant access to internal resources and shouldn't be altered in any way. Other permissions are assigned to members of default security groups. 
+The following table describes the security namespaces and permissions that aren't surfaced through the user interface. They are primarily used to grant access to members of default security groups or to internal resources and shouldn't be altered in any way.  
  
 ---
 :::row:::
@@ -837,6 +803,44 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
 :::row-end:::
 ---
+:::row:::
+   :::column span="1":::
+      AccountAdminSecurity
+   :::column-end:::
+   :::column span="1":::
+      `Read`       
+      `Create`    
+      `Modify`     
+   :::column-end:::
+   :::column span="2":::
+      Manages permissions to read or modify the organization account owner. These permissions are assigned to the organization owner and members of the Project Collection Administrator group.  
+      <br/>
+      ID: `11238e09-49f2-40c7-94d0-8f0307204ce4`
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range=">= azure-devops-2019"
+:::row:::
+   :::column span="1":::
+      Analytics
+   :::column-end:::
+   :::column span="1":::
+      `Read`                       
+      `Administer`                 
+      `Stage`                      
+      `ExecuteUnrestrictedQuery`   
+      `ReadEuii`                   
+   :::column-end:::
+   :::column span="2":::
+      Manages permissions to read, administer permissions, and execute queries against the Analytics service.  
+      **Token format for project-level permissions**: `$/PROJECT_ID`  
+      **Example**: `$/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
+      <br/>
+      ID: `58450c49-b02d-465a-ab12-59ae512d6531`
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
 :::row:::
    :::column span="":::
       BlobStoreBlobPrivileges
@@ -889,6 +893,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="":::
