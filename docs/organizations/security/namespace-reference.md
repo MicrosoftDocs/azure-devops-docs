@@ -379,8 +379,8 @@ The following table describes the namespaces that manage project-level permissio
       `AGILETOOLS_PLANS` <!--- TBD, this doesn't get listed --> 
    :::column-end:::
    :::column span="2":::
-      [Manages Project-level permissions](/azure/devops/organizations/security/permissions#project-level-permissions).   
-      > The `AGILETOOLS_BACKLOG` and `AGILETOOLS_PLANS` permissions manage access to Azure Boards backlogs and Delivery Plans. These permissions replace checks for Stakeholder licensing. 
+      [Manages Project-level permissions](permissions.md#project-level-permissions).   
+      > The `AGILETOOLS_BACKLOG` and `AGILETOOLS_PLANS` permissions manage access to Azure Boards backlogs and Delivery Plans. These permissions replace checks for Stakeholder licensing.    
       **Root token format**: `$PROJECT`  
       Token to secure permissions for each project in your organization.  
       `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  
@@ -693,7 +693,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group 
       - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups. 
       - **User** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
-      - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
+      - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group   
       <br/>
       ID: `101eae8c-1709-47f9-b228-0e476c35b3ba`  
    :::column-end:::
@@ -716,7 +716,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group 
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Project Administrators group 
-      - **Administrator** role (all permissions) to the user who created a specific Environment.
+      - **Administrator** role (all permissions) to the user who created a specific Environment.    
       <br/>
       ID: `83d4c2e6-e57d-4d6e-892b-b87222b7ad20`  
    :::column-end:::
@@ -732,7 +732,7 @@ The following table describes the security namespaces and permissions used to ma
       `ManageSecurity`    
    :::column-end:::
    :::column span="2":::
-      The **Manager** role is the only role used to manage the security of Marketplace extensions. Members of the Manager role can install extensions and respond to requests for extensions to be installed. The other permissions are assigned automatically to members of default security groups and service principals. To add users to the Manager role, see [Manage extension permissions](../../marketplace/how-to/grant-permissions.md).
+      The **Manager** role is the only role used to manage the security of Marketplace extensions. Members of the Manager role can install extensions and respond to requests for extensions to be installed. The other permissions are assigned automatically to members of default security groups and service principals. To add users to the Manager role, see [Manage extension permissions](../../marketplace/how-to/grant-permissions.md).    
       <br/>
       ID: `5d6d7b80-3c63-4ab0-b699-b6a5910f8029`  
    :::column-end:::
@@ -756,7 +756,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributors group 
       - **Creator** role (`View`, `Use`, `Create`, and `Owner` permissions) to the member who created the library item
       - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups.  
-      To learn more, see [Library asset security roles](../../pipelines/library/index.md). 
+      To learn more, see [Library asset security roles](../../pipelines/library/index.md).    
       <br/>
       ID: `b7e84409-6553-448a-bbb2-af228e07cbeb`
    :::column-end:::
@@ -778,7 +778,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group and the Project Collection Build Service account
       - **Creator** role (`View`, `Use`, and `Create` permissions) to to members of the Endpoint Creators service security group.  
       - **Administrator** role (all permissions) to members of the Endpoint Administrators service security group.  
-      Roles are assigned through [Service connection security roles](about-security-roles.md#service-endpoint-roles).
+      Roles are assigned through [Service connection security roles](about-security-roles.md#service-endpoint-roles).   
       <br/>
       ID: `49b48001-ca20-4adc-8111-5b60c903a50c`
    :::column-end:::
@@ -1113,8 +1113,9 @@ The following table describes the security namespaces and permissions that aren'
       <br/>
       ID: `ca535e7e-67ce-457f-93fe-6e53aa4e4160` 
    :::column-end:::
-::: moniker-end
 :::row-end:::
+---
+::: moniker-end
 ::: moniker range=">= tfs-2017"
 :::row:::
    :::column span="":::
@@ -1207,7 +1208,7 @@ The following table describes the security namespaces and permissions that aren'
       `ManageLinkTypes`  
    :::column-end:::
    :::column span="2":::
-      Manages permissions for changing work tracking processes and managing link types. The WorkItemTrackingProvision namespace is an older security namespace that is mostly used for TFS-2018 and earlier versions. The {Process](#process) namespace replaces this namespace for managing processes in Azure DevOps Server 2019 and later versions.  
+      Manages permissions for changing work tracking processes and managing link types. The WorkItemTrackingProvision namespace is an older security namespace that is mostly used for TFS-2018 and earlier versions. The [Process](#process) namespace replaces this namespace for managing processes in Azure DevOps Server 2019 and later versions.  
       **Root token format**: `/$`   
       **Token format for a specific project**: `$/PROJECT_ID`  
       <br/>
@@ -1223,6 +1224,36 @@ The following table describes the security namespaces and permissions that aren'
 
 The following namespaces are either deprecated or read-only. You shouldn't use them. 
 
+:::row:::
+   :::column span="2":::
+      - `CrossProjectWidgetView`
+      - `DataProvider`
+      - `Favorites`
+      - `Graph`
+      - `IdentityPicker`
+      - `Job`
+      - `Location`
+      - `ProjectAnalysisLanguageMetrics`
+      - `Proxy`
+      - `Registry`
+      - `Security`
+   :::column-end:::
+   :::column span="2":::
+      - `ServicingOrchestration`
+      - `SettingEntries`
+      - `Social`
+      - `StrongBox`
+      - `TestManagement`
+      - `ViewActivityPaneSecurity`
+      - `WebPlatform`
+      - `WorkItemsHub`
+      - `WorkItemTracking`
+      - `WorkItemTrackingConfiguration`
+   :::column-end:::
+:::row-end:::
+---
+
+<!--- 
 - `CrossProjectWidgetView`
 - `DataProvider`
 - `Favorites`
@@ -1245,9 +1276,11 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 - `WorkItemTracking`
 - `WorkItemTrackingConfiguration`
 
+--> 
 
 ## Related articles
 
-- [Security Namespaces REST API](/rest/api/azure/devops/security/security%20namespaces)
+- [About security, permissions, and membership](about-security-identity.md)
+- [Security Namespaces REST API](/rest/api/azure/devops/security/)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)
