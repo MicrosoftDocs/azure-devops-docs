@@ -5,7 +5,7 @@ ms.custom: seodec18
 description: Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
-ms.date: 04/10/2020
+ms.date: 10/05/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 > [!NOTE]
-> We recommend upgrading from build artifacts to [pipeline artifacts](pipeline-artifacts.md) for faster output storage speeds. 
+> We recommend upgrading from **build artifacts** (`PublishBuildArtifacts@1` and `DownloadBuildArtifacts@0`) to **[pipeline artifacts](pipeline-artifacts.md)** (`PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2`) for faster output storage speeds. 
 
 Artifacts are the files that you want your build to produce. Artifacts can be anything that your team needs to test or deploy your app.
 
@@ -49,8 +49,6 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 > [!TIP]
 > If you want to try this and you don't already have a Git repo with an **environment-variables.txt** file at the root, you can quickly [create one](../../repos/git/create-new-repo.md).
-
-
 
 :::image type="icon" source="../tasks/utility/media/publish-build-artifacts.png" border="false"::: **Utility: Publish Build Artifacts**
 
@@ -132,8 +130,10 @@ You can create multiple artifact items. For example:
 
 The completed build delivers two sets of artifacts.
 
-![Artifacts tab of a build with two artifacts](media/build-with-two-artifacts.png)
+> [!div class="mx-imgBorder"]
+> ![Artifacts tab of a build with two artifacts](media/build-with-two-artifacts.png)
 
+> [!TIP]
 > You would probably never need to drop two copies of the same files. The point of this example is to show how you can drop multiple sets of artifacts that can be independently organized, explored, downloaded, and used by your deployment pipeline.
 
 * * *
