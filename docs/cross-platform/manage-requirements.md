@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Learn about the tools and features available to manage requirements 
 ms.technology: devops-agile 
 ms.topic: overview
-ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
