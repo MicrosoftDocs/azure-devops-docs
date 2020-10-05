@@ -338,3 +338,8 @@ If you use a file share, specify the UNC file path to the folder. You can contro
 If you're using TFS 2015 RTM, the steps in the preceding examples are not available. Instead, you copy and publish your artifacts by using a single task: [Build: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md).
 
 ::: moniker-end
+
+## Next steps
+
+- [Publish and download artifacts in Azure Pipelines](./pipeline-artifacts.md)
+- [Define your multi-stage classic pipeline](../release/define-multistage-release-process.md)
