@@ -32,7 +32,6 @@ For more information, see **[Build and Release in Azure Pipelines and TFS](../..
 The **previous versions** of Release Management are deprecated. No new features will be added to these versions:
 
 * **[Server and client version for Visual Studio 2015](overview-rm2015.md)**
-* **[Server and client version for Visual Studio 2013](https://msdn.microsoft.com/library/dn217874%28v%3Dvs.120%29.aspx)**
+* **[Server and client version for Visual Studio 2013](/previous-versions/visualstudio/visual-studio-2013/dn217874(v=vs.120))**
 
 > New to DevOps? **[Learn More](https://visualstudio.microsoft.com/devops)** about how implementing DevOps helps you continuously deliver value to your customers.
-

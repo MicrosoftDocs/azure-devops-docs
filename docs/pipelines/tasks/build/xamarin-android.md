@@ -40,7 +40,7 @@ AndroidSDK, MSBuild, Xamarin.Android
    <tr>
       <td><code>project</code><br/>Project</td>
       <td>
-         (Required) Relative path from repo root of Xamarin.Android project(s) to build.  Wildcards can be used <a href= "https://go.microsoft.com/fwlink/?linkid=856077">more information</a>. <br/> For example, <code>**/*.csproj</code> for all csproj files in all subfolders. The project must have a PackageForAndroid target if <code>Create App Package</code> is selected.
+         (Required) Relative path from repo root of Xamarin.Android project(s) to build.  Wildcards can be used <a href= "/azure/devops/pipelines/tasks/file-matching-patterns">more information</a>. <br/> For example, <code>**/*.csproj</code> for all csproj files in all subfolders. The project must have a PackageForAndroid target if <code>Create App Package</code> is selected.
          <br/>Default value: **/*.csproj
          <br/>Argument aliases: <code>projectFile</code>
       </td>
@@ -159,7 +159,7 @@ AndroidSDK, MSBuild, Xamarin.Android
 
 ## Example
 
-[Build your Xamarin app](../../apps/mobile/xamarin.md)
+[Build your Xamarin app](../../ecosystems/xamarin.md)
 
 ## Open source
 

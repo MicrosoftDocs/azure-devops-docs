@@ -10,7 +10,7 @@ ms.author: ninallam
 
 ### How should I configure my service connection?
 
-This task requires an [Azure Resource Manager service connection](/azure/devops/pipelines/release/azure-rm-endpoint).
+This task requires an [Azure Resource Manager service connection](../../../release/azure-rm-endpoint.md).
 
 ### How should I configure Web Job Deployment with [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview)?
 
@@ -18,4 +18,4 @@ When deploying to an App Service with Application Insights configured and you ha
 
 ### How should I configure my agent if it is behind a proxy while deploying to App Service?
 
-When your self-hosted agent requires a web proxy, you can inform the agent about the proxy during configuration. This allows your agent to connect to Azure Pipelines or TFS through the proxy. Learn more about [running a self-hosted agent behind a web proxy](/azure/devops/pipelines/agents/proxy?tabs=windows)
+When your self-hosted agent requires a web proxy, you can inform the agent about the proxy during configuration. This allows your agent to connect to Azure Pipelines or TFS through the proxy. Learn more about [running a self-hosted agent behind a web proxy](../../../agents/proxy.md?tabs=windows)

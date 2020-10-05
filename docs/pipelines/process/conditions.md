@@ -195,7 +195,7 @@ extends:
 
 ### Use the output variable from a job in a condition in a subsequent job
 
-You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](/azure/devops/pipelines/process/variables#set-a-multi-job-output-variable) using `isOutput=true`. 
+You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](./variables.md#set-a-multi-job-output-variable) using `isOutput=true`. 
 
 ```yaml
 jobs:
@@ -297,4 +297,4 @@ stages:
 ## Related articles
 
 - [Specify jobs in your pipeline](../process/phases.md)  
-- [Add stages, dependencies, & conditions](../process/stages.md)   
+- [Add stages, dependencies, & conditions](../process/stages.md)

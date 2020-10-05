@@ -18,7 +18,7 @@ monikerRange: '> tfs-2015'
 
 [!INCLUDE [](../../artifacts/includes/availability-symbols.md)]
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers, or package names. To learn more about symbols, read the [concept page](/azure/devops/artifacts/concepts/symbols). To consume symbols, see [this page for Visual Studio](/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio) or [this page for WinDbg](/azure/devops/artifacts/symbols/debug-with-symbols-windbg).
+Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers, or package names. To learn more about symbols, read the [concept page](../../artifacts/concepts/symbols.md). To consume symbols, see [this page for Visual Studio](../../artifacts/symbols/debug-with-symbols-visual-studio.md) or [this page for WinDbg](../../artifacts/symbols/debug-with-symbols-windbg.md).
 
 ## Publish symbols
 To publish symbols to the symbol server in Azure Artifacts, include the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task in your build pipeline. Configure the task as follows:
@@ -56,7 +56,7 @@ Add the task to your build pipeline and configure it as follows:
 
 ## Portable PDBs
 
-If you're using [portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), you still need to use the **Index Sources and Publish Symbols** task to publish symbols. For portable PDBs, the build does the indexing, however you should [use SourceLink](https://docs.microsoft.com/dotnet/standard/library-guidance/sourcelink) to index the symbols as part of the build. Note that Azure Artifacts doesn't presently support ingesting NuGet symbol packages and so the task is used to publish the generated PDB files into the symbols service directly.
+If you're using [portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), you still need to use the **Index Sources and Publish Symbols** task to publish symbols. For portable PDBs, the build does the indexing, however you should [use SourceLink](/dotnet/standard/library-guidance/sourcelink) to index the symbols as part of the build. Note that Azure Artifacts doesn't presently support ingesting NuGet symbol packages and so the task is used to publish the generated PDB files into the symbols service directly.
 
 ## Use indexed symbols to debug your app
 

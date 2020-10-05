@@ -201,6 +201,6 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Related articles
-- [Azure Boards with Slack](https://aka.ms/AzureBoardsSlackIntegration)
-- [Azure Repos with Slack](https://aka.ms/AzureReposSlackIntegration)
+- [Azure Boards with Slack](../../boards/integrations/boards-slack.md)
+- [Azure Repos with Slack](../../repos/integrations/repos-slack.md)
 - [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)

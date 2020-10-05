@@ -63,7 +63,7 @@ At present, TIA is supported for:
 * VS2015 Update 3 onwards on the build agent
 * Local and hosted build agents
 * CI and in PR workflows
-* Git, GitHub, Other Git, TFVC repos (including partially mapped TFVC repositories with a [workaround](../../articles/test-impact-for-partially-mapped-tfvc-repositories.md))
+* Git, GitHub, Other Git, TFVC repos (including partially mapped TFVC repositories with a [workaround](../../repos/tfvc/test-impact-for-partially-mapped-tfvc-repositories.md))
 * IIS interactions (over REST, SOAP APIs), using HTTP/HTTPS protocols
 * Automated Tests
 * Single machine topology. Tests and app (SUT) must be running on the same machine.
@@ -182,4 +182,4 @@ For an example of the XML file format, see [TIA custom dependency mapping](https
 * [TIA advanced configuration](https://blogs.msdn.microsoft.com/devops/2017/06/13/accelerated-continuous-testing-with-test-impact-analysis-part-3/)
 * [TIA custom dependency mapping](https://blogs.msdn.microsoft.com/devops/2017/08/04/accelerated-continuous-testing-with-test-impact-analysis-part-4/)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]
