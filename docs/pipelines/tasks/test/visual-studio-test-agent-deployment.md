@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2015'
 
 This task is deprecated in Azure Pipelines and TFS 2018 and later. Use version 2.x or higher of the [Visual Studio Test](vstest.md)
 task together with [jobs](../../process/phases.md) to run unit and functional tests on the universal agent.
-For more details, see [Testing with unified agents and jobs](../../test/test-with-unified-agent-and-phases.md).
+For more details, see [Testing with unified agents and jobs](../../ecosystems/dotnet-core.md#run-your-tests).
 
 ::: moniker-end
 
@@ -39,7 +39,7 @@ This task requires the target computer to have:
 
 * Windows 7 Service Pack 1 or Windows 2008 R2 Service Pack 2 or higher
 * .NET 4.5 or higher
-* PSRemoting enabled by running the [Enable-PSRemoting](https://technet.microsoft.com/library/hh849694.aspx) PowerShell script
+* PSRemoting enabled by running the [Enable-PSRemoting](/powershell/module/microsoft.powershell.core/enable-psremoting) PowerShell script
 
 #### Windows Remote Management (WinRM)
 
@@ -57,7 +57,7 @@ This task requires the target computer to have:
 
 |                       Argument                        |                                                                                                                                                                                                                                                                           Description                                                                                                                                                                                                                                                                            |
 |-------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                     **Machines**                      |                                             A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. The maximum is 32 machines (or 32 agents). Can be:<br />- The name of an <a href="https://azure.microsoft.com/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task.                                              |
+|                     **Machines**                      |                                             A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. The maximum is 32 machines (or 32 agents). Can be:<br />- The name of an <a href="/azure/azure-resource-manager/management/overview">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task.                                              |
 |                    **Admin Login**                    | The username of either a domain or a local administrative account on the target host(s). This parameter is required when used with a list of machines. It is optional when specifying a machine group and, if specified, overrides the credential settings defined for the machine group.<br />- Formats such as **username**, **domain\username**, **machine-name\username**, and **.\username** are supported.<br />- UPN formats such as <strong>username@domain.com</strong> and built-in system accounts such as **NT Authority\System** are not supported. |
 |                     **Password**                      |                                                                                   The password for the administrative account specified above. This parameter is required when used with a list of machines. It is optional when specifying a machine group and, if specified, overrides the credential settings defined for the machine group. Consider using a secret variable global to the build or release pipeline to hide the password. Example: `$(passwordVariable)`                                                                                    |
 |                     **Protocol**                      |                                                                                                                                                                                                                                   The protocol that will be used to connect to the target host, either **HTTP** or **HTTPS**.                                                                                                                                                                                                                                    |
@@ -137,7 +137,7 @@ The supported options for these scenarios are:
 ### More information
 
 * [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://devblogs.microsoft.com/devops/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
-* [Set up automated testing for your builds](https://msdn.microsoft.com/Library/vs/alm/Test/automated-tests/set-up-automated-testing-builds)
+* [Set up automated testing for your builds](../../index.yml)
 * [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/DeployVisualStudioTestAgentV2/README.md)
 
 ### Related tasks
