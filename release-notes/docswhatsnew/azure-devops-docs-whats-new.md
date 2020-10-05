@@ -65,6 +65,58 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2020 through Se
 
 - [What are the features in Azure DevOps?](/azure/devops/user-guide/alm-devops-features) - Links
 
+## GitHub issue content updates
+
+Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2020-09-01..2020-09-30).
+
+- ["Extract all .zip files recursively" Example is incorrect #9366](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9366)
+- [Note In Support For Output Variables Is Out Of Date And Incorrect #9348](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9348)
+- [Example for ordered lists in wiki #9317](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9317)
+- [Changes from Release Branch to Master #9304](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9304)
+- [Variable "Resources.TriggeringAlias" is not documented #9266](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9266)
+- [No Authentication is still wrong #9254](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9254)
+- [Where is the developer supposed to set up the system.debug? #9247](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9247)
+- [Use commas, not hyphens. #9244](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9244)
+- [Link to list of pre-cached images outdated #9241](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9241)
+- [Missing npm file path in target folder #9221](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9221)
+- [Spaces are not handled as documented in PipAuthenticate@1/artifactFeeds #9212](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9212)
+- [Mermaid Diagrams #9206](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9206)
+- [If I import a git repository, is there a way to retain a link to the github repository I imported in order to pull changes in the github repo into my azure devops imported repo? #9174](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9174)
+- [Node task can't find working directory "TaskDirectory". #9166](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9166)
+- [Parameter 'chartType' does not clearly describe parameter options #9163](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9163)
+- [Document does not explain how to embed bug number manually.  #9162](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9162)
+- [Document is missing IP's and ranges from Azure DevOps page #9156](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9156)
+- [Can you be more specific with the list of domains to whitelist for NuGet connections to work? #9146](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9146)
+- [Documentation for Incoming Web Hook missing URL fragment #9115](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9115)
+- [ToC in "Common service connection types" #9099](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9099)
+- [What's wrong with a 91 days PAT?! #9020](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9020)
+- [A rare MS apostrophe error...but twice? #8995](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8995)
+- [Link with text "Add issues or impediments to your product backlog" does not seem to link to anything #8992](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8992)
+- [Cross Project Linking #8950](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8950)
+- [Feed permission documentation on regarding pipelines should include more info on project permissions #8929](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8929)
+- [Add Link to Define variables #8908](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8908)
+- [Variables across stages #8837](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8837)
+- [Better formatting for Results Format Mapping #8715](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8715)
+- [Extra spaces in YAML example #8533](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8533)
+- [Clarify the Authentication Method. #8438](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8438)
+- [Missing publish command #8393](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8393)
+- [Poor documentation about objects and repetition constructs #8385](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8385)
+- [Add physical machines to environment? #8357](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8357)
+- [Defining minor version #8351](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8351)
+- [This should show an example on how to use variables in `condition` #8294](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8294)
+- [The example for NuGet package caching is incorrect #7985](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7985)
+- [What if the subscription is missing from the list of subscriptions? #7906](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7906)
+- [Permissions to Add comments only #7639](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7639)
+- [Redeploy successful release #7612](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7612)
+- [This documentation page needs A LOT of work #6967](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6967)
+- [Using CacheBeta with NuGet is Failing Builds #6281](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6281)
+- [Improve info about agent configuration PAT #6209](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6209)
+- [Default kudu/scm access restrictions prohibit devops deployment #4847](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4847)
+- [Needs more explanation on the task icon or schema definition for it necessary? #4571](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4571)
+- [So what can you do with a menu action and how? #4303](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4303)
+- [Reconcile #1561](https://github.com/MicrosoftDocs/azure-devops-docs/issues/1561)
+- [reconcile command is missing #1066](https://github.com/MicrosoftDocs/azure-devops-docs/issues/1066)
+
 ## Community contributors
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
