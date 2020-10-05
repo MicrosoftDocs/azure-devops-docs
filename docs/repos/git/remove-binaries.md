@@ -33,7 +33,7 @@ Imagine that you commit a large file, such as a video, to your git server. In a 
 > The following steps will remove the video from your branch history,
 > but the file remains in your repo history when you clone your repo from Azure Repos. Removing the files from your branch history prevents the files from being updated, which will
 > create another version of the large file in your repo. Learn more about [managing large files in Git](manage-large-files.md) and 
-> see this [blog post](https://blogs.msdn.microsoft.com/congyiw/2015/12/14/why-does-cloning-from-vsts-return-old-unreferenced-objects/) for a detailed explanation and workaround for this behavior 
+> see this [blog post](/archive/blogs/congyiw/why-does-cloning-from-vsts-return-old-unreferenced-objects) for a detailed explanation and workaround for this behavior 
 > when using Azure Repos Git repos.
 
 To fix this, you have to start at the source, which, in this case, is the server repository. Ask the team to stop pushing to the repository, but if additional pushes happen during this process, you will have to account for them, too, so as not to lose any data.

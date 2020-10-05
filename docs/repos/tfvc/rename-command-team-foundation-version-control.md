@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 The **rename** command changes the name or the path of a file or folder. You can use the **rename** command or the aliases **move** or **ren**, to move a file or folder to a new location.
 
 > [!NOTE]
-> The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+> The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)).
 
 **Required Permissions**
 
@@ -103,7 +103,7 @@ You can rename an item for which another file of the same name has been added pe
 
 An item that is explicitly mapped cannot be renamed without first changing the mapping. For example, if there is a working folder mapping of $/ProjectX/MyApp to c:\\MyApp, you cannot rename MyApp. You can rename items under *MyApp* but not *MyApp* itself.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 ## Examples
 The following example changes the name of 314.c to 1254.c.
 
@@ -131,7 +131,7 @@ c:\projects>tf rename Form1.vb MainPage.vb /lock:checkin
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Add Command](add-command.md)
 
@@ -143,8 +143,8 @@ c:\projects>tf rename Form1.vb MainPage.vb /lock:checkin
 
 [Understanding Lock Types](understand-lock-types.md)
 
-[Pending Changes](https://msdn.microsoft.com/library/ms181409)
+[Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181409(v=vs.100))
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

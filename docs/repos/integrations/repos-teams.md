@@ -310,5 +310,5 @@ If these steps don't resolve your authentication issue, please out to us at [Dev
 
 ## Related articles
 
-- [Azure Boards with Teams](https://aka.ms/AzureBoardsTeamsIntegration)
-- [Azure Pipelines with Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
+- [Azure Boards with Teams](../../boards/integrations/boards-teams.md)
+- [Azure Pipelines with Teams](../../pipelines/integrations/microsoft-teams.md)
