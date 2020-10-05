@@ -15,8 +15,8 @@ monikerRange: '>= tfs-2015'
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 > [!NOTE]
-> This content applies to files managed by Team Foundation Version Control (TFVC) that you need to lock or unlock. For help unlocking files in use by programs on your PC, use the [Handle](https://technet.microsoft.com/sysinternals/bb896655.aspx) and
-[Process Explorer](https://technet.microsoft.com/sysinternals/processexplorer) tools to help you find which program that is locking your file(s).
+> This content applies to files managed by Team Foundation Version Control (TFVC) that you need to lock or unlock. For help unlocking files in use by programs on your PC, use the [Handle](/sysinternals/downloads/handle) and
+[Process Explorer](/sysinternals/downloads/process-explorer) tools to help you find which program that is locking your file(s).
 
 A folder or file tracked by TFVC can be locked or unlocked to deny or restore the user's privileges. 
 Privileges include checking out an item for edit into a different workspace or checking in Pending Changes to an item from a different workspace. 
@@ -71,4 +71,4 @@ See [Permissions and groups reference](../../organizations/security/permissions.
 
  [Lock Command](lock-command.md) 
 
- [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md) 
+ [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)

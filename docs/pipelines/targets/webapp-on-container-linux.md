@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Deploy an Azure Web App Container
 
-You can automatically deploy your web app to an [Azure Web App for Linux Containers](https://docs.microsoft.com/azure/app-service/containers/quickstart-docker-go) after every successful build.
+You can automatically deploy your web app to an [Azure Web App for Linux Containers](/azure/app-service/containers/quickstart-docker-go) after every successful build.
 
 ## Before you begin
 
@@ -58,15 +58,15 @@ However, if you are a new user, then you might get a better start by using our s
 
 #### [.NET Core](#tab/dotnet-core/)
 
-Follow the [Build, test, and push Docker container apps](../languages/docker.md) till **push an image** section to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
+Follow the [Build, test, and push Docker container apps](../ecosystems/containers/build-image.md) till **push an image** section to set up the build pipeline. When you're done, you'll have a YAML pipeline to build, test, and push the image to container registry.
 
 #### [Java](#tab/java)
 
-Set up a CI pipeline for [building an image](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image) and [pushing it to a container registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/push-image).
+Set up a CI pipeline for [building an image](../ecosystems/containers/build-image.md) and [pushing it to a container registry](../ecosystems/containers/push-image.md).
 
 #### [Nodejs](#tab/nodejs)
 
-Set up a CI pipeline for [building an image](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image) and [pushing it to a container registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/push-image).
+Set up a CI pipeline for [building an image](../ecosystems/containers/build-image.md) and [pushing it to a container registry](../ecosystems/containers/push-image.md).
 
 ::: moniker-end
 

@@ -832,7 +832,7 @@
   - name: REST API reference
     href: /rest/api/azure/devops/
   - name: Azure DevOps CLI
-    href: /azure/devops/cli
+    href: ../cli/index.md
   - name: Microsoft Learn
     items:
     - name: Create a build pipeline

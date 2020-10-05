@@ -201,7 +201,7 @@ You will use Azure Key Vault to store all connection information for your Azure 
 
 ### Create a Databricks personal access token
 1. Go Databricks in the Azure portal and launch your workspace. 
-1. Generate and copy a personal access token in the Azure Databricks UI ([steps](https://docs.microsoft.com/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token)). 
+1. Generate and copy a personal access token in the Azure Databricks UI ([steps](/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token)). 
 
 ### Copy the account key and connection string for your storage account 
 1. Go to your storage account. 
@@ -276,7 +276,7 @@ You will use Azure Key Vault to store all connection information for your Azure 
 
 1. Go to **Key vault** > **Properties** in the Azure portal UI. 
 1. Copy the **DNS Name** and **Resource ID**. 
-1. [Create a secret scope in your Azure Databricks workspace](https://docs.microsoft.com/azure/databricks/security/secrets/secret-scopes) named `testscope`. 
+1. [Create a secret scope in your Azure Databricks workspace](/azure/databricks/security/secrets/secret-scopes) named `testscope`. 
 
 ### Add a new cluster in Azure Databricks
 
@@ -289,7 +289,7 @@ You will use Azure Key Vault to store all connection information for your Azure 
 
 ### Set up your code repository in Azure Data Factory
 
-1. Go to **Author & Monitor** in Azure Data Factory. Learn more about [setting up Azure Data Factory](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal). 
+1. Go to **Author & Monitor** in Azure Data Factory. Learn more about [setting up Azure Data Factory](/azure/data-factory/quickstart-create-data-factory-portal). 
 1. Select **Set up code repository** and connect your repo. 
     * Repository type: Azure DevOps Git
     * Azure DevOps organization: Your active account
@@ -348,4 +348,4 @@ If you're not going to continue to use this application, delete your data pipeli
   
 ## Next steps
 > [!div class="nextstepaction"]
-> [Learn more about data in Azure Data Factory](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities)
+> [Learn more about data in Azure Data Factory](/azure/data-factory/concepts-pipelines-activities)

@@ -12,7 +12,7 @@ From your web browser, (1) check that you have selected the right project, (2) c
 If it is your first time opening **Work**, the page opens to **Favorites** which lists all queries you have favorited. Otherwise, you can choose **All** to view all queries you've defined and shared queries defined for the project.  
 
 > [!TIP]    
-> Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your **Project** page. To learn more, see [Set personal or team favorites](/azure/devops/project/navigation/set-favorites). 
+> Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your **Project** page. To learn more, see [Set personal or team favorites](../../project/navigation/set-favorites.md). 
 
 ::: moniker-end
 

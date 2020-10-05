@@ -44,7 +44,7 @@ tf unshelve [/move] [shelvesetname[;username]] itemspec
 <tr>
 <td><p><i>Itemspec</i></p></td>
 <td><p>Identifies the file or folder revisions to unshelve into the current workspace. If this parameter is not included, all pending changes in the specified shelveset are unshelved, by default. Server paths are not allowed.</p>
-<p>For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30">Command-Line Options</a>.</p>
+<p>For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p>
 &gt;<strong>Note:</strong><br/>&gt;You can specify more than one <em>Itemspec</em> argument.
 </td>
 </tr>
@@ -92,7 +92,7 @@ When you unshelve a shelveset, Team Foundation restores each shelved revision in
 
 You can use the **unshelve** command to restore individual file revisions from a shelveset to your workspace. You should run get after unshelving to reconcile any changes checked into the server since the shelveset was created.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 #### Recycle Shelved Changes
 
@@ -129,11 +129,11 @@ c:\>tf unshelve /move buddytest_1256
 
 #### Tasks
 
-[Shelve and Unshelve Pending Changes](https://msdn.microsoft.com/library/ms181404)
+[Shelve and Unshelve Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181404(v=vs.100))
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Shelve Command](shelve-command.md)
 
@@ -145,4 +145,4 @@ c:\>tf unshelve /move buddytest_1256
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

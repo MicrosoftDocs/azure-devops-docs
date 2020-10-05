@@ -251,4 +251,4 @@ This tutorial created an Azure DevOps project and some resources in Azure. If yo
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Terraform with Azure](https://docs.microsoft.com/azure/developer/terraform/overview)
+> [Terraform with Azure](/azure/developer/terraform/overview)

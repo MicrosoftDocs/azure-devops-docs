@@ -212,7 +212,7 @@ In the context of the [Visual Studio Test task](../tasks/test/vstest.md), parall
 
 2. **Parallelism offered by the Visual Studio Test Platform (vstest.console.exe)**. Visual Studio Test Platform can run
    test assemblies in parallel. Users of vstest.console.exe will recognize this as the
-   [/parallel switch](https://docs.microsoft.com/visualstudio/test/vstest-console-options?view=vs-2017).
+   [/parallel switch](/visualstudio/test/vstest-console-options?view=vs-2017).
    It does so by launching a test host process on each available core, and handing it tests in an assembly to execute.
    This works for any framework that has a test adapter for the Visual Studio test platform because the unit of parallelization
    is a test assembly or test file. This, when combined with the parallelism offered by test frameworks (described above),

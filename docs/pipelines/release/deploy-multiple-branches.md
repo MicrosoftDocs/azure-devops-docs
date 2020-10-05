@@ -20,7 +20,7 @@ You'll need:
 
 * A working build for your repository
 
-  - [Build multiple branches](/azure/devops/pipelines/build/ci-build-git)
+  - [Build multiple branches](../build/ci-build-git.md)
  
 * Two separate targets where you will deploy the app. These could be virtual machines, web servers, on-premises physical deployment groups, or other types of deployment target. You will have to choose names that are unique, but it's a good idea to include "Dev" in the name of one, and "Prod" in the name of the other so that you can easily identify them.
 

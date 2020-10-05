@@ -287,7 +287,7 @@ To link a work item to a diagram, open the work item in Visual Studio, choose th
 
 ![Open linked model element from a work item](media/IC588262.png)
 
-Or, you can link a model element to a work item. See [Link model elements and work items](https://msdn.microsoft.com/library/dd465152.aspx).
+Or, you can link a model element to a work item. See [Link model elements and work items](/visualstudio/modeling/link-model-elements-and-work-items).
 
 ::: moniker-end
 
@@ -323,4 +323,3 @@ For additional information, see these topics:
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
 
 ::: moniker-end
-

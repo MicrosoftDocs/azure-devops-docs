@@ -24,9 +24,9 @@
   - name: "Filter backlogs & queries"
     href: filter-backlogs.md
   - name: Select backlog levels
-    href: /azure/devops/organizations/settings/select-backlog-navigation-levels?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../../organizations/settings/select-backlog-navigation-levels.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
   - name: Show bugs on backlogs & boards
-    href: /azure/devops/organizations/settings/show-bugs-on-backlog?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../../organizations/settings/show-bugs-on-backlog.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
 - name: Best practices, monitoring, & reports
   items:
   - name: Refine your backlog
@@ -36,4 +36,3 @@
   - name: View/configure velocity
     href: ../../report/dashboards/team-velocity.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 
- 

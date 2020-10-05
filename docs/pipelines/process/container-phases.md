@@ -64,7 +64,7 @@ Docker must be installed. Be sure your pipelines agent has permission to access 
 
 The Windows container must support running Node.js.
 A base Windows Nano Server container is missing dependencies required to run Node.
-See [this post](https://blogs.technet.microsoft.com/nanoserver/2016/05/04/node-js-on-nano-server/) for more information about what it takes to run Node on Windows Nano Server.
+See [this post](/archive/blogs/nanoserver/node-js-on-nano-server) for more information about what it takes to run Node on Windows Nano Server.
 
 ### Hosted agents
 

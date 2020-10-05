@@ -106,7 +106,7 @@ For information on Azure service connections, see the [following section](#endpo
 
 ### Deploy a Java app
 
-If you're building a [Java app](../apps/java/build-gradle.md), use the following snippet to deploy the web archive (.war) to a Linux Webapp:
+If you're building a [Java app](../ecosystems/java.md), use the following snippet to deploy the web archive (.war) to a Linux Webapp:
 
 ```yaml
 - task: AzureWebApp@1
@@ -222,7 +222,7 @@ By default, your deployment happens to the root application in the Azure Web App
 ```
 
 * **VirtualApplication**: the name of the Virtual Application that has been configured in the Azure portal. See [Configure an App Service app in the Azure portal
-](https://azure.microsoft.com/documentation/articles/web-sites-configure/) for more details.
+](/azure/app-service/configure-common) for more details.
 
 ::: moniker-end
 
@@ -342,8 +342,8 @@ You can control the order of deployment. To learn more, see [Stages](../process/
 * * *
 ## Configuration changes
 
-For most language stacks, [app settings](https://docs.microsoft.com/azure/app-service/configure-common?toc=%2fazure%2fapp-service%2fcontainers%2ftoc.json#configure-app-settings) and [connection strings](https://docs.microsoft.com/azure/app-service/configure-common?toc=%2fazure%2fapp-service%2fcontainers%2ftoc.json#configure-connection-strings) can be set as environment variables at runtime. 
-App settings can also be resolved from Key Vault using [Key Vault references](https://docs.microsoft.com/azure/app-service/app-service-key-vault-references).
+For most language stacks, [app settings](/azure/app-service/configure-common?toc=%252fazure%252fapp-service%252fcontainers%252ftoc.json#configure-app-settings) and [connection strings](/azure/app-service/configure-common?toc=%252fazure%252fapp-service%252fcontainers%252ftoc.json#configure-connection-strings) can be set as environment variables at runtime. 
+App settings can also be resolved from Key Vault using [Key Vault references](/azure/app-service/app-service-key-vault-references).
 
 For ASP.NET and ASP.NET Core developers, setting app settings in App Service are like setting them in <appSettings> in Web.config.
 You might want to apply a specific configuration for your web app target before deploying to it. 
