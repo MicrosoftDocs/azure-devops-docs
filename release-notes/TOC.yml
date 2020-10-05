@@ -345,7 +345,7 @@
       expanded: true
       items:
       - name: September
-        href: docswhatsnew/azure-devops-docs-2020-09.md
+        href: docswhatsnew/azure-devops-docs-whats-new.md
       - name: August
         href: docswhatsnew/azure-devops-docs-2020-08.md
       - name: July
