@@ -8,67 +8,67 @@ ms.date: 10/05/2020
 
 Welcome to what's new in the Azure DevOps docs from September 1, 2020 through September 30, 2020. This article lists some of the major changes to docs during this period.
 
-## Administration
-
-### Updated articles
-
-- [Manage permissions with command line tool](/azure/devops/organizations/security/manage-tokens-namespaces.md) - Namespace updates
-
 ## Artifacts
 
 ### Updated articles
 
-- [Set up your client's npmrc](/azure/devops/artifacts/npm/npmrc.md) - npmrc setup
+- [Set up your client's npmrc](/azure/devops/artifacts/npm/npmrc) - npmrc setup
 
-## Azure Boards
-
-### Updated articles
-
-- [Link user stories, issues, bugs, and other work items](/azure/devops/boards/backlogs/add-link.md) - Add link, build cross-project
-
-## Azure Pipelines
-
-### New articles
-
-- [Quickstart: trigger a pipeline run from GitHub Actions](/azure/devops/pipelines/ecosystems/github-actions.md) - Users/jukullam/GitHub actions with pipelines
+## Boards
 
 ### Updated articles
 
-- [Publish Test Results task](/azure/devops/pipelines/tasks/test/publish-test-results.md) - Update test results formatting
-- [NuGet task](/azure/devops/pipelines/tasks/package/nuget.md) - NuGet push, pack and restore
-- [Configure and pay for parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs.md) - Updates for parallel jobs content performance improvements
-- [Use secrets from Azure Key Vault in Azure Pipelines](/azure/devops/pipelines/release/azure-key-vault.md) - Azure key-vault
-- [Define your multi-stage continuous deployment (CD) pipeline](/azure/devops/pipelines/release/define-multistage-release-process.md) - Multi-stage deployments
-- [Build a data pipeline with DevOps, Azure Data Factory, and machine learning](/azure/devops/pipelines/apps/cd/azure/build-data-pipeline.md)
-  - Confirm merge from repo_sync_working_branch to master to sync with https://github.com/MicrosoftDocs/azure-devops-docs (branch master)
-  - added command to create variable-group
-- [Troubleshoot Azure Resource Manager service connections](/azure/devops/pipelines/release/azure-rm-endpoint.md) - ARM service connections
-- [Access repositories, artifacts, and other resources](/azure/devops/pipelines/process/access-tokens.md) - New limit job scope setting
-- [Set retention policies for builds, tests, and releases](/azure/devops/pipelines/policies/retention.md) - More content in pipeline retention
-- [Azure Pipelines ecosystem support](/azure/devops/pipelines/ecosystems/ecosystems.md) - Build errors
+- [Link user stories, issues, bugs, and other work items](/azure/devops/boards/backlogs/add-link) - Add link, build cross-project
 
-## Azure Repos
+## Organizations
+
+### Updated articles
+
+- [About access levels](/azure/devops/organizations/security/access-levels) - Updates in display limits and updates to reflect drag-and-drop feature
+- [Manage permissions with command line tool](/azure/devops/organizations/security/manage-tokens-namespaces) - Namespace updates
+- [Add team, go from one default team to others](/azure/devops/organizations/settings/add-teams) - Settings - Add teams
+
+## Pipelines
 
 ### New articles
 
-- [Reconcile Command](/azure/devops/repos/tfvc/reconcile-command.md) - [TFVC] Add Reconcile command
+- [Quickstart: trigger a pipeline run from GitHub Actions](/azure/devops/pipelines/ecosystems/github-actions) - GitHub Actions with pipelines
+
+### Updated articles
+
+- [Build a data pipeline with DevOps, Azure Data Factory, and machine learning](/azure/devops/pipelines/apps/cd/azure/build-data-pipeline) - Added command to create variable-group
+- [Azure Pipelines ecosystem support](/azure/devops/pipelines/ecosystems/ecosystems) - Build errors
+- [Configure and pay for parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs) - Updates for parallel jobs content performance improvements
+- [Set retention policies for builds, tests, and releases](/azure/devops/pipelines/policies/retention) - More content in pipeline retention
+- [Access repositories, artifacts, and other resources](/azure/devops/pipelines/process/access-tokens) - New limit job scope setting
+- [Use secrets from Azure Key Vault in Azure Pipelines](/azure/devops/pipelines/release/azure-key-vault) - Azure key-vault
+- [Troubleshoot Azure Resource Manager service connections](/azure/devops/pipelines/release/azure-rm-endpoint) - ARM service connections
+- [Define your multi-stage continuous deployment (CD) pipeline](/azure/devops/pipelines/release/define-multistage-release-process) - Multi-stage deployments
+- [NuGet task](/azure/devops/pipelines/tasks/package/nuget) - NuGet push, pack and restore
+- [Publish Test Results task](/azure/devops/pipelines/tasks/test/publish-test-results) - Update test results formatting
 
 ## Project
 
 ### New articles
 
-- [Work across projects FAQs](/azure/devops/project/work-across-projects-faqs.md) - Initial draft - Work across projects FAQs
+- [Work across projects FAQs](/azure/devops/project/work-across-projects-faqs) - Work across projects FAQs
+
+## Repos
+
+### New articles
+
+- [Reconcile Command](/azure/devops/repos/tfvc/reconcile-command) - TFVC Add Reconcile command
 
 ## User guide
 
 ### Updated articles
 
+- [What are the features in Azure DevOps?](/azure/devops/user-guide/alm-devops-features) - Links
 
 ## Community contributors
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [openpublishbuild](https://github.com/openpublishbuild) - Open Publishing Build Robots (13)
 - [Styxxy](https://github.com/Styxxy) - Hans De Mulder (3)
 - [radujipa](https://github.com/radujipa) - Radu Jipa (2)
 - [wesleycamargo](https://github.com/wesleycamargo) - Wesley Camargo (2)
