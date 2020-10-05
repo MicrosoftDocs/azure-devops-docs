@@ -37,10 +37,10 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ## Prerequisites
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).  
-* To view or set capacity, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels). Users with **Stakeholder** access can't view or set capacity.
-* To set capacity, you must be a member of the team.  For details, see [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project#add-users-to-a-team). 
+* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
+* To view or set capacity, you must be granted **Basic** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md). Users with **Stakeholder** access can't view or set capacity.
+* To set capacity, you must be a member of the team.  For details, see [Add users to a project or team](../../organizations/security/add-users-team-project.md#add-users-to-a-team). 
 
 <a id="customize-activity-list">  </a> 
 
@@ -338,4 +338,3 @@ Setting capacity and [estimating remaining work for each task](assign-work-sprin
 - [Velocity](../../report/dashboards/team-velocity.md)  
 - [Forecasting](../sprints/forecast.md)    
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
-
