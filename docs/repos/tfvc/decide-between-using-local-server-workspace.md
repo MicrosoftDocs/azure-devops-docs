@@ -69,7 +69,7 @@ Visual Studio does not put the solution back online automatically, the user must
 
 ## Manage project collection workspace settings for your team
 
-If you are an [administrator](https://msdn.microsoft.com/library/ms253077), you can specify which type of workspace Visual Studio creates for your team members by default: Local or Server. You can also enable asynchronous checkout for your team's server workspaces.
+If you are an [administrator](../../organizations/security/permissions.md?viewFallbackFrom=vsts), you can specify which type of workspace Visual Studio creates for your team members by default: Local or Server. You can also enable asynchronous checkout for your team's server workspaces.
 
 1.  On the menu bar, choose **Team**, **Project Collection Settings**, **Source Control**.
 

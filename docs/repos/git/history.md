@@ -18,7 +18,7 @@ Commits can have multiple parents, creating a history that looks like a graph in
 This difference in history is incredibly important and is the main reason users find Git confusing.
 
 >[!NOTE]
->If you can't find a change in your Git history that you know you made, learn more about how Git history simplification works at [Git lost my changes: Taking a look at Git's history simplification](/azure/devops/articles/git-log-history-simplification).
+>If you can't find a change in your Git history that you know you made, learn more about how Git history simplification works at [Git lost my changes: Taking a look at Git's history simplification](./git-log-history-simplification.md).
 
 ## Commit history basics
 
@@ -82,4 +82,3 @@ There are three people who merge commits from their own branches into the master
 ![console log of git graph](media/history/gitlogconsole.png)
 
 Now that you understand how branches and merges create the shape of the graph, this shouldn't be too scary!
-

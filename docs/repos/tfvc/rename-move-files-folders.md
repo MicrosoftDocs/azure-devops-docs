@@ -57,7 +57,7 @@ You should avoid renaming items managed by TFVC using your operating system (for
 
 ## Tips
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
+You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
 
 -   If you are beginning a new task, it's a good practice to [download the latest files from the server](download-get-files-from-server.md) before you make changes to files in your workspace.  
 -   Avoid renaming an item that has been branched but not yet checked in. If you try to do so, a conflict will occur.  

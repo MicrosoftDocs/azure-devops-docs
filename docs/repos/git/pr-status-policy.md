@@ -14,12 +14,12 @@ monikerRange: '>= tfs-2018'
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 Update 2**
 
-Branch policies are a powerful feature to ensure high quality code in your repo by establishing requirements for all pull requests. External services can use the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107) to post detailed status to your PRs. The branch policy for external services brings the ability for those 3rd party services to participate in the PR workflow and establish policy requirements. This article guides you through the process of configuring a branch policy for a service that is posting PR status. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
+Branch policies are a powerful feature to ensure high quality code in your repo by establishing requirements for all pull requests. External services can use the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses) to post detailed status to your PRs. The branch policy for external services brings the ability for those 3rd party services to participate in the PR workflow and establish policy requirements. This article guides you through the process of configuring a branch policy for a service that is posting PR status. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
 ## Prerequisites
 
 * An organization in Azure DevOps with a Git repo. If you don't have an organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
-* A service that posts status to PRs. See [Create a pull request status server](https://go.microsoft.com/fwlink/?linkid=854108).
+* A service that posts status to PRs. See [Create a pull request status server](./create-pr-status-server.md).
 
 ## Configure the branch policy 
 
@@ -59,4 +59,4 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
     ![Policy status approved and completion unblocked](media/pr-status-policy/pr-policy-succeeded.png)
 
 ## Summary
-In this article, you learned how to configure a branch policy for an external service. 
+In this article, you learned how to configure a branch policy for an external service.

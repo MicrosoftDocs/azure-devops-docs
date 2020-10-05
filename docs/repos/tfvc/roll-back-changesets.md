@@ -21,7 +21,7 @@ A [changeset](find-view-changesets.md) is a permanent part of the history of you
 
 **Required permissions**
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
+You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
 
 ## Roll back changes from a single changeset
 

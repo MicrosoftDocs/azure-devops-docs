@@ -19,7 +19,7 @@ When you check in files to a version control folder that is controlled by a [gat
 ![Build process](media/check-folder-controlled-by-gated-check-build-process/IC572351.png)
 **Required permissions**
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
+You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
 
 <a name="begin_checkin"></a>
 
@@ -39,7 +39,7 @@ If the **Gated Check-in** dialog box appears during your check-in, then your cha
 
     -   **Cancel the check-in operation and continue working**: If you do not want to try building your changes yet, choose **Cancel**, and then when the system asks you if you want to delete the shelveset, choose **Yes**.
 
-    -   **Cancel the check-in operation and start a private build of your changes**: If you want to build the code yourself in a private build, choose **Cancel**. You can now build the shelveset manually. For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
+    -   **Cancel the check-in operation and start a private build of your changes**: If you want to build the code yourself in a private build, choose **Cancel**. You can now build the shelveset manually. For more information, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
 
     -   **Proceed with the check-in operation while keeping your changes in your workspace**: To proceed with the check-in operation and continue working with your changes, see [Proceed with the Gated Check-in after Keeping the Changes in Your Workspace](check-folder-controlled-by-gated-check-build-process.md#proceed_and_keep_changes).
 
@@ -105,6 +105,6 @@ If you want to proceed with the gated check-in operation and you do not plan to 
 
  [Use a gated check-in build process to validate changes](../../pipelines/build/triggers.md) 
 
- [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411) 
+ [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)) 
 
- [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md) 
+ [Suspend your work and manage your shelvesets](suspend-your-work-manage-your-shelvesets.md)

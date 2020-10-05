@@ -652,7 +652,7 @@ such as Slack to receive such notifications.
 **Release Management client SDK**
 
 In the last update, we published the
-[Release Management REST APIs](/azure/devops/integrate/).
+[Release Management REST APIs](../../../integrate/index.md).
 In this update, we are publishing a C# client SDK
 to help you easily integrate your applications with
 Release Management. The SDK is available as a
@@ -729,7 +729,7 @@ deploying a release. Most of these APIs also work with the
 on-premises releases of Release Management in TFS 2015 Update 2
 (the differences between TFS and Azure Pipelines versions are indicated
 in the documentation). You'll find some basic examples that use the APIs in
-[this blog post](https://docs.microsoft.com/archive/blogs/chandananjani/using-releasemanagement-rest-apis).
+[this blog post](/archive/blogs/chandananjani/using-releasemanagement-rest-apis).
 
 <a name="apr26-import"></a>
 **Import, export, and clone release pipelines**
@@ -1217,4 +1217,3 @@ Tie the output of the first task to the input list of machines in the second tas
  * **Azure Service Principals**. When adding an Azure service connection,
    you can now specify a service principal based authentication. This
    will be required if you use 2-Factor Authentication with Azure Active Directory.
-

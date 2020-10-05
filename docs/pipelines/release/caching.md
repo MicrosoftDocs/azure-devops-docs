@@ -321,7 +321,7 @@ steps:
 > [!TIP]
 > Environment variables always override any settings in the NuGet.Config file. If your pipeline failed with the error: `Information, There is a cache miss.`, you must create a pipeline variable for `NUGET_PACKAGES` to point to the new local path on the agent (exp d:\a\1\). Your pipeline should pick up the changes then and continue the task successfully.
 
-See [Package reference in project files](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) for more details.
+See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details.
 
 ## Node.js/npm
 
