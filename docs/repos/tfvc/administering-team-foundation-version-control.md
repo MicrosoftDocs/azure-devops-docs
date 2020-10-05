@@ -40,8 +40,7 @@ Explains how to dispose of obsolete files.
 [Destroy Version Controlled Files](destroy-version-controlled-files.md)  
 Describes how to destroy files and folders.
 
-[Migrate from Visual SourceSafe](https://msdn.microsoft.com/library/ms253060)  
+[Migrate from Visual SourceSafe](/previous-versions/visualstudio/visual-studio-2013/ms253060(v=vs.120))  
 Explains how to use the Team Foundation VSSConverter command-line tool to migrate projects, files, version history, labels, and user information from your Microsoft Visual SourceSafe 2005 database to Team Foundation version control.
 ## Reference
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
-
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

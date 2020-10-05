@@ -47,7 +47,7 @@ For detailed information about the individual source file revisions of which a p
 
 You can compare a shelved revision to its base shelveset version without unshelving the item into your workspace. You can use this feature to conduct a quick peer code review.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ### Examples
 
@@ -73,7 +73,7 @@ c:\projects>tf shelvesets /owner:*
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Status Command](status-command.md)
 
@@ -89,4 +89,4 @@ c:\projects>tf shelvesets /owner:*
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

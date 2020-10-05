@@ -143,7 +143,7 @@ git config [--local|--global|--system] pull.rebase [true|false|interactive|prese
 Cryptographic network provider is a Git configuration setting at global scope that configures which SSL backend to use at runtime, and corresponds to the `git config` http.sslBackend setting. The values are:
 
 - OpenSSL: Use [OpenSSL](https://www.openssl.org/) for TLS and SSL protocols.
-- Secure Channel: Use [Secure Channel (schannel)](https://msdn.microsoft.com/library/windows/desktop/aa380123) for TLS and SSL protocols. Schannel is the native
+- Secure Channel: Use [Secure Channel (schannel)](/windows/win32/secauthn/secure-channel) for TLS and SSL protocols. Schannel is the native
 Windows solution, accessing the Windows Credential Store, thereby
 allowing for enterprise-wide management of certificates.
 - Unset (default): If this setting is unset, OpenSSL is the default.
@@ -242,4 +242,3 @@ When enabled, this setting allows you to `push --force` from within Visual Studi
 
 >[!WARNING]
 >Use `push --force` with caution as it can overwrite changes that have been pushed to the branch since your last pull. For more information, see [push --force](https://git-scm.com/docs/git-push#git-push---force).
-

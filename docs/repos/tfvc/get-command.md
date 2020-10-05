@@ -76,7 +76,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
 </tr>
 <tr>
 <td><p><strong>/remap</strong></p></td>
-<td><p>See <a href="https://docs.microsoft.com/archive/blogs/phkelley/tf-get-remap">phkelley&#39;s blog: tf get /remap</a>.</p></td>
+<td><p>See <a href="/archive/blogs/phkelley/tf-get-remap">phkelley&#39;s blog: tf get /remap</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/version</strong>:<i>versionspec</i></p></td>

@@ -40,7 +40,7 @@ To remove access to Team Foundation version control files, you must belong to th
 
 4.  Create a new file and save the file in the same location and with the same name and extension as the latest version of the file that you want to overwrite.
 
-5.  Check in the file. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+5.  Check in the file. For more information, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)).
 
     > [!NOTE]
     > You might want to make sure that any client user who has a local copy of the file on their computer, removes any reference to the file in Solution Explorer and manually removes any copy of the file on their client computer.
