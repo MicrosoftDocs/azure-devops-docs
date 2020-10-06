@@ -248,6 +248,12 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
 ::: moniker-end
 
+<a id="tags" /> 
+
+## Set permissions on work item tags
+
+
+
 ::: moniker range="<= azure-devops-2019"  
 
 ## Additional options for restricting access to work items   
