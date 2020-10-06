@@ -4,12 +4,12 @@ ms.custom: seodec18
 description: How to build a Continuous Integration and Continuous Deployment pipeline with DSC
 ms.topic: conceptual
 ms.date: 07/10/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2017'
 ---
 
 # Building a Continuous Integration and Continuous Deployment pipeline with DSC
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017](../includes/version-tfs-2017.md)]
 
 ::: moniker range="<= tfs-2018"
 
