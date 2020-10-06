@@ -4,8 +4,8 @@ description: Run unit and functional tests (Selenium, Appium, Coded UI test, etc
 ms.topic: reference
 ms.assetid: EF087383-EE5E-42C7-9A53-AB56C98420F9
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 04/21/2020
 monikerRange: 'azure-devops'
 ---
