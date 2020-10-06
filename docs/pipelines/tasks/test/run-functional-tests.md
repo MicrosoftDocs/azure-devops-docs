@@ -4,8 +4,8 @@ description: Run Coded UI/Selenium/Functional tests on a set of machines using t
 ms.assetid: DAA55EF5-A6A2-4962-80A0-7D25E64D1DE2
 ms.topic: reference
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
