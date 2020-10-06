@@ -13,7 +13,7 @@
 - name: Link work items
   href: ../backlogs/add-link.md
 - name: Go mobile
-  href: /azure/devops/project/navigation/mobile-work?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  href: ../../project/navigation/mobile-work.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
 - name: Collaborate with others
   items:
   - name: Follow work
@@ -69,11 +69,5 @@
     href: work-item-template-examples.md
   - name: Define a work item URL
     href: work-item-url-hyperlink.md
-
-
- 
-
-
-
 
 

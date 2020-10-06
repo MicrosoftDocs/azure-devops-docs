@@ -35,7 +35,7 @@ Individual users can choose to opt out of any default subscription while other t
 
 ### Custom email subscriptions
 
-Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team notifications](manage-team-notifications.md) or [manage organization notifications](manage-organization-notifications.md).
+Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team notifications](./manage-team-group-notifications.md) or [manage organization notifications](manage-organization-notifications.md).
 
 Individuals can also create custom subscriptions, which apply only to them. Learn how to [manage personal subscriptions](manage-your-personal-notifications.md).
 

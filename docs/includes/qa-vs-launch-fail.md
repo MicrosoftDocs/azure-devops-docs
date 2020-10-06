@@ -4,4 +4,4 @@ A: This link requires [Visual Studio 2013 or later](https://visualstudio.microso
 It doesn't launch earlier versions of Visual Studio. 
 
 To connect earlier versions, see 
-[Which versions of Visual Studio can I use with Azure DevOps?](/azure/devops/organizations/projects/connect-to-projects)
+[Which versions of Visual Studio can I use with Azure DevOps?](../organizations/projects/connect-to-projects.md)

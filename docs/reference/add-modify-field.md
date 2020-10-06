@@ -46,7 +46,7 @@ Work item fields are maintained for a project collection. You add fields when yo
 -   **Import a global workflow definition**. All new fields that are defined within the global workflow are added to the collection. You define a global workflow when you want to maintain a set of work item fields that several types of work items share. For more information, see [Customize global workflow](xml/global-workflow-xml-element-reference.md).
 
 ::: moniker range="< tfs-2017"
--   **Map a project collection to an instance of Project Web App (PWA)**. After you install the Team Foundation Server Extensions for Project Server, configure the integration by mapping various components of Team Foundation. When you map a collection, a global workflow definition that supports several fields in Project Server fields is imported. For more information, see [Project Server fields added to TFS to support data synchronization](./tfs-ps-sync/project-server-fields-added-to-tfs.md).
+-   **Map a project collection to an instance of Project Web App (PWA)**. After you install the Team Foundation Server Extensions for Project Server, configure the integration by mapping various components of Team Foundation. When you map a collection, a global workflow definition that supports several fields in Project Server fields is imported. For more information, see [Project Server fields added to TFS to support data synchronization](/previous-versions/azure/devops/reference/tfs-ps-sync/project-server-fields-added-to-tfs).
 ::: moniker-end 
 
 All fields that are defined in all WITs and all global workflows for all projects make up the complete set of fields defined within the collection. You can change the attribute of, rename, and delete existing fields. However, you incur certain costs when you make these kinds of changes, specifically for on-premises server and reporting. 
@@ -351,23 +351,23 @@ To list or review fields, you can use one of the following tools, depending on t
 
 <tr>
 <td align="left"><a href="../organizations/settings/work/customize-process-field.md#review-fields" data-raw-source="[Web portal: List inherited and custom-defined fields](../organizations/settings/work/customize-process-field.md#review-fields)">Web portal: List inherited and custom-defined fields</a></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/><sup>1</sup></td>
+<td>✔️</td>
+<td>✔️<sup>1</sup></td>
 <td> </td>
 </tr>
 
 <tr>
 <td align="left"><a href="#wi-explorer" data-raw-source="[Work Item Field Explorer](#wi-explorer)">Work item field explorer</a></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 
 <tr>
 <td align="left"><a href="witadmin/manage-work-item-fields.md" data-raw-source="[witadmin listfields command line tool](witadmin/manage-work-item-fields.md)">witadmin listfields command line tool</a></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
 </tr>
 
 </tbody>

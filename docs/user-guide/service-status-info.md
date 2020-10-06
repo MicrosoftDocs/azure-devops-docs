@@ -77,8 +77,8 @@ You can use [the RSS feed](https://status.dev.azure.com/_rss) to subscribe and r
 
 ## Using REST APIs
 
-For users who are looking to build an automated solution to [monitor the infrastructure incidents](https://docs.microsoft.com/azure/service-health/service-health-overview), 
-we [provide REST APIs](https://docs.microsoft.com/rest/api/resourcehealth/) to retrieve the current health status of each of the Azure DevOps Services. 
+For users who are looking to build an automated solution to [monitor the infrastructure incidents](/azure/service-health/service-health-overview), 
+we [provide REST APIs](/rest/api/resourcehealth/) to retrieve the current health status of each of the Azure DevOps Services. 
 
 [!INCLUDE [rest-api-docs-rollout](../includes/rest-api-docs-rollout.md)] 
 
@@ -88,4 +88,3 @@ If you're experiencing an issue with Azure DevOps and see a corresponding event 
 action to notify us. However, if you don't see your issue reported on the Azure DevOps Services health page, refer 
 to the resources available on [Azure DevOps support page](https://azure.microsoft.com/support/devops/). That page has 
 resources to report bugs, interact with a friendly support bot, and contact our support team for additional assistance.
-   

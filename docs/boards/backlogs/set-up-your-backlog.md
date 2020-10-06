@@ -190,7 +190,7 @@ To learn more about checklists, see the following articles:
 
 ## Add other work item types to your Kanban Board checklist items
 
-If you added work item types to the Task Category as described in [Add custom work item types to your Taskboard](#taskboard-types) later in this article, you can choose whether or not these types appear within a checklist on your product Kanban board. You do this by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. For details, see [Customize cards](../boards/customize-cards.md#annotations).
+If you added work item types to the Task Category as described in [Add custom work item types to your Taskboard](#taskboard-types) later in this article, you can choose whether or not these types appear within a checklist on your product Kanban board. You do this by opening the Board Settings, choose **Annotations**, and enable the work item types you want to appear on the board. You can enable up to 5 annotations. For details see [Customize cards](../boards/customize-cards.md#annotations). 
 
 For example, here  we've chosen to track bugs along with tasks, and we enable Issue and Ticket as well as Task and Bug. To learn more about checklists, see [Add task checklists](../boards/add-task-checklists.md) and [Add, run, and update inline tests](../boards/add-run-update-tests.md). 
 
@@ -209,8 +209,9 @@ Your team can also choose to hide or show one or more backlog level. Feature tea
 
 For details, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md). 
 
+<a id="add-custom-types" />
 
-## Add custom work item types to your backlogs and portfolio backlog levels 
+## Add custom work item types to your backlogs and portfolio backlog levels  
 
 If you want to track different work item types on your product backlog, you can do that by adding custom work item types and adding them to a specific backlog level. 
 
@@ -219,7 +220,7 @@ You can also add custom work item types and add them to portfolio backlogs. You 
 For example, here we've added Initiatives, 4th level, and 5th level work item types to support five levels of portfolio backlogs. We've also added a custom work item type named Ticket and added that to the product backlog. 
 
 > [!div class="mx-imgBorder"]
-> ![Backlog navigation levels](media/setup-backlog/backlog-levels-customized.png)
+> ![Add custom work item types to your backlogs.](media/setup-backlog/backlog-levels-customized.png)
 
 For details, see the following resources: 
 
@@ -232,7 +233,6 @@ For details, see the following resources:
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-
 
 **Inheritance process model:**  
 - [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md)
@@ -255,16 +255,40 @@ For details, see the following resources:
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
-
-<a id="taskboard-types" />
+<a id="taskboard-types" /> 
 
 ## Add custom work item types to your Taskboard
+
+To add custom work item types to appear on your sprint Taskboard, follow the steps outlined next based on the process model your project uses. 
+
+::: moniker range=">= azure-devops-2019 "
+> [!NOTE]
+> You can enable work item types that you add to your Iteration backlog to appear as a checklist on your product Kanban board. To learn how, see [Customize your Kanban Board checklist items](#customize-checklist-2019) provided earlier in this article. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+### Inheritance process model 
+
+For example, if you want to track a custom work item type, Tickets, along with Tasks and Bugs, you perform the following tasks: 
+
+1. Define the Ticket custom work item type. See [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
+
+2. Add the Ticket work item types to the Iteration backlog. For details, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md).  
+
+
+::: moniker-end
+
+
+::: moniker range="< azure-devops"
+
+### On-premises XML process model 
 
 For on-premises deployments that use the On-premises XML process model to customize work tracking, you can add existing and custom work item types to the sprint Taskboards. For example, if you want to track Issues (or Impediments for the Scrum process) and a custom work item type, Tickets, along with Tasks and Bugs, you would perform the following tasks: 
 
 1. Define the Ticket custom work item type. See [Add or modify a work item type](../../reference/add-modify-wit.md). 
-2. Add Issue and Ticket work item types to the Task Category by modifying the Categories XML file. For details, see [Categories XML element reference](../..//reference/xml/categories-xml-element-reference.md).  
+2. Add Issue and Ticket work item types to the Task Category by modifying the Categories XML file. For details, see [Categories XML element reference](../../reference/xml/categories-xml-element-reference.md).  
 
 	For example, here we add Issue and Ticket to the Task Category.  
 
@@ -296,14 +320,6 @@ For on-premises deployments that use the On-premises XML process model to custom
 4. To verify your changes, open a Sprint backlog and make sure you can add an Issue or Ticket in the same way you add a Task. See [Add tasks](../sprints/add-tasks.md). 
 
 ::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-> [!NOTE]
-> If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product Kanban board. To learn how, see [Customize your Kanban Board checklist items](#customize-checklist-2019) provided earlier in this article. 
-
-::: moniker-end
-
 
 ## Other factors that can affect which work items appear
 

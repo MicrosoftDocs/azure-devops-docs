@@ -91,7 +91,7 @@ Draft pull requests can be created by selecting **Create as draft** from the **C
 Once you have created a draft pull request, you will see a badge indicating its status next to the title. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](media/143_03.png)
+> ![Badge indicating status.](media/143_03.png)
 
 Draft pull requests do not include reviewers or run builds by default but allow you to manually add reviewers and run builds. To promote the pull request to a normal pull request, simply click the **Publish** button from the pull request detail page.
 
@@ -145,7 +145,7 @@ Up until now, project contributors could not create pipelines unless they are ex
 By default, **Azure Pipelines** used to re-run all jobs when you redeploy a previously failed run. Now, you can override this behavior by configuring the **Deployment Option** when deploying. By selecting the **All jobs and limit to failed targets in a deployment group** option, the re-run will run all the jobs and skip the deployments to the targets that are already up to date.  
 
 > [!div class="mx-imgBorder"]
-> ![Badge](media/143_08.png)
+> ![Deploy to failed targets in a Deployment Group.](media/143_08.png)
 
 ### Support for Infrastructure as Code
 
@@ -165,7 +165,7 @@ With this update, we've made it a bit easier to understand the provenance of you
 ) (for Python), and [Universal Packages](https://docs.microsoft.com/azure/devops/pipelines/artifacts/universal-packages?toc=%2Fazure%2Fdevops%2Fartifacts%2Ftoc.json&view=azure-devops&tabs=yaml) tasks.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](media/143_10.png)
+> ![Provenance information on packages.](media/143_10.png)
 
 ### Azure Artifacts REST API documentation updates
 

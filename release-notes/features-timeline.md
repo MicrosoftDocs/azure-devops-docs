@@ -41,8 +41,8 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166 data-raw-source="[Sign-in attempts and manage events for PAT, SSH will be available in the Audit Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166)">Sign-in attempts and manage events for PAT, SSH will be available in the Audit Log</a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1740955 data-raw-source="[Reductions in upstream publication latency ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1740955)">Reductions in upstream publication latency </a></td><td>Artifacts</td><td>TBD</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1740951 data-raw-source="[Same-org upstream support for Universal Packages ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1740951)">Same-org upstream support for Universal Packages </a></td><td>Artifacts</td><td>N/A</td></tr>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498 data-raw-source="[Delivery Plans 2.0](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498)">Delivery Plans 2.0</a></td><td>Boards</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666194 data-raw-source="[Clone work item including subtasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666194)">Clone work item including subtasks</a></td><td>Boards</td><td>Future</td></tr>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_queries/edit/1746741 data-raw-source="[Allow 'other' system work item types to be added to a backlog level](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_queries/edit/1746741)">Allow "other" system work item types to be added to a backlog level</a></td><td>Boards</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628 data-raw-source="[Analytics for consumption of parallel jobs](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1718628)">Analytics for consumption of parallel jobs</a></td><td>Pipelines</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289 data-raw-source="[Elastic self-hosted pools (Kubernetes)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705289)">Elastic self-hosted pools (Kubernetes)</a></td><td>Pipelines</td><td>TBD</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1702526 data-raw-source="[Require approval for repository resources in pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1702526)">Require approval for repository resources in pipelines</a></td><td>Pipelines</td><td>2020</td></tr>
@@ -53,10 +53,10 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616285 data-raw-source="[Persona-based new Test Plans page](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616285)">Persona-based new Test Plans page</a></td><td>Test Plans</td><td>Future</td></tr>
 <td rowspan="7"><strong>2020 Q4</strong></td>
 <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1566498" data-raw-source="[Billing management - usage limits, feeds and symbols drill-down ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1566498)">Billing management - usage limits, feeds and symbols drill-down </a></td><td>Artifacts</td><td>TBD</td>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1739478 data-raw-source="[Delivery Plans 2.0 - Dependency tracking](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1739478)">Delivery Plans 2.0 - Dependency tracking</a></td><td>Boards</td><td>Future</td></tr>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1739477 data-raw-source="[Delivery Plans 2.0 - Condensed views](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1739477)">Delivery Plans 2.0 - Condensed views</a></td><td>Boards</td><td>Future</td></tr>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196 data-raw-source="[Preview attachments for word, excel, ppt, project, pdf from the work item](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196)">Preview attachments for word, excel, ppt, project, pdf from the work item</a></td><td>Boards</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666195 data-raw-source="[Customize work item state after PR is closed](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666195)">Customize work item state after PR is closed</a></td><td>Boards</td><td>Future</td></tr>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498 data-raw-source="[Delivery Plans 2.0](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1729498)">Delivery Plans 2.0</a></td><td>Boards</td><td>Future</td></tr>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_queries/edit/1774447 data-raw-source="[Remove rule that assigns Bug to the person who created it](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_queries/edit/1774447)">Remove rule that assigns Bug to the person who created it</a></td><td>Boards</td><td>Future</td></tr>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196 data-raw-source="[Preview attachments for word, excel, ppt, project, pdf from the work item](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196)">Preview attachments for word, excel, ppt, project, pdf from the work item</a></td><td>Boards</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283 data-raw-source="[Improvements to YAML editor](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1705283)">Improvements to YAML editor</a></td><td>Pipelines</td><td>2020</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1702531 data-raw-source="[Conversion from classic build pipelines to YAML pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1702531)">Conversion from classic build pipelines to YAML pipelines</a></td><td>Pipelines</td><td>2020</td></tr>
 <td rowspan="10"><strong>Future</strong></td>
@@ -89,6 +89,41 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
     <tbody>
+    <tr>
+    <td rowspan="5"><a href="2020/sprint-176-update.md" data-raw-source="[01 October 2020](2020/sprint-176-update.md)">01 October 2020</a></td>
+    <td>Customize work item state when pull request is merged</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Parent field on the task board</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Org-level setting for default branch</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Add a new auth scope for contributing PR comments</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Configure draft PR validation for GitHub repositories</td><td>Pipelines</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="8"><a href="2020/sprint-175-update.md" data-raw-source="[10 September 2020](2020/sprint-175-update.md)">10 September 2020</a></td>
+    <td>Allow stakeholders to move work items across board columns</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Link your work item to builds in another project</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Editing description (help text) on system fields</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>General availability of scale-set agents</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Run this job next</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Template expressions allowed in YAML resources block</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Control over automated task updates from Marketplace</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>The Test and Feedback extension is now available in the Microsoft Edge store</td><td>Test Plans</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="13"><a href="2020/sprint-174-update.md" data-raw-source="[24 August 2020](2020/sprint-174-update.md)">24 August 2020</a></td>
+    <td>System work item types on backlogs and boards</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Audit logging event</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Azure Boards GitHub app repo limit raised (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Customize work item state when pull request is merged (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Pipelines images announcements</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Agent log uploads improved</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Optionally mount container volumes read-only</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Fine-grained control over container start/stop</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Unzip task bundles for each step</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Improve release security by restricting scope of access tokens</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>YAML preview API enhancements</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Configure upstream sources for Universal Packages</td><td>Artifacts</td><td>Future</td></tr>
+    <tr><td>Update Package Version REST API now available for Maven packages</td><td>Artifacts</td><td>Future</td></tr>
     <tr>
     <td rowspan="5"><a href="2020/sprint-173-update.md" data-raw-source="[03 August 2020](2020/sprint-173-update.md)">03 August 2020</a></td>
     <td>Allow stakeholders to drag and drop work items</td><td>Boards</td><td>Future</td>

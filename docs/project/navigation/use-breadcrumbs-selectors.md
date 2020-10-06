@@ -224,7 +224,7 @@ From a specific page, you can open the directory from the breadcrumbs or a selec
 	> ![Team members](media/breadcrumbs/team-profile-members.png)
 
 - To view or change the team configuration, choose **Team Settings**.  
-	You can then add [team members](../../organizations/security/add-users-team-project.md#add-team-members), [team admins](../../organizations/settings/add-team-administrator.md), or navigate to [team notifications](../../notifications/howto-manage-team-notifications.md), or team [iterations](../../organizations/settings/set-iteration-paths-sprints.md#open-team-settings) and [area paths](../../organizations/settings/set-area-paths.md#open-team-settings). 
+	You can then add [team members](../../organizations/security/add-users-team-project.md#add-team-members), [team admins](../../organizations/settings/add-team-administrator.md), or navigate to [team notifications](../../notifications/manage-team-group-notifications.md), or team [iterations](../../organizations/settings/set-iteration-paths-sprints.md#open-team-settings) and [area paths](../../organizations/settings/set-area-paths.md#open-team-settings). 
 
 See also [Manage and configure team tools](../../organizations/settings/manage-teams.md).
 
@@ -236,4 +236,4 @@ See also [Manage and configure team tools](../../organizations/settings/manage-t
 - [Add an artifact or team](add-artifact-team.md) 
 - [Set favorites](set-favorites.md) 
 - [Open a service or page](go-to-service-page.md) 
-- [Filter basics](filter-basics.md) 
+- [Filter basics](filter-basics.md)

@@ -37,15 +37,24 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ## Prerequisites
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).  
-* To add work items and exercise all board features, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md).  
+* To add work items and exercise all board features, you must be granted **Basic** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
+* To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**.  By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).  
 
+::: moniker range=">= azure-devops"
 
 > [!NOTE]  
-> Users with **Stakeholder** access can't exercise these **Taskboard** features: add tasks, update fields displayed on cards, or drag-and-drop tasks to update status or change sprint assignment.  
+> Users assigned **Stakeholder** access can't exercise these **Taskboard** features: update fields displayed on cards or use the **Planning** pane to change the sprint assignment.  
 
+::: moniker-end
+
+::: moniker range="<= azure-devops-2020"
+
+> [!NOTE]  
+> Users with **Stakeholder** access can't exercise these **Taskboard** features: add tasks, update fields displayed on cards, drag-and-drop tasks to update status, or use the **Planning** pane to change the sprint assignment.   
+
+::: moniker-end
 
 ## Open the sprint Taskboard for your team
 
@@ -56,7 +65,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 	> [!div class="mx-imgBorder"]
 	> ![Open the sprint Taskboard for a team](media/add-tasks/open-sprint-backlog-taskboard-s155-co.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another team](media/add-tasks/team-selector-sprints-agile.png)
@@ -78,7 +87,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 	> [!div class="mx-imgBorder"]
 	> ![Open the sprint Taskboard for a team](media/taskboard/open-taskboard-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another team](media/add-tasks/team-selector-sprints-agile.png)
@@ -263,7 +272,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 1. To filter on the tasks for a specific team member, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon, and then select their name from the **Assigned to** filter box.
 
 	> [!div class="mx-imgBorder"]
-	> ![Choose another sprint](media/taskboard/filter-by-a-team-member.png)
+	> ![Filter on tasks for a specific team member.](media/taskboard/filter-by-a-team-member.png)
 
 ::: moniker-end
 
@@ -354,7 +363,7 @@ As you can see, the taskboard provides a lot of support for your Scrum activitie
 | ![Settings icon](../media/icons/team-settings-gear-icon.png)    | [Open board settings](../../boards/boards/customize-cards.md)    |
 | ![full screen icon](../media/icons/fullscreen_icon.png)/![exit full screen icon](../media/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode         |
 
-See also [Backlog keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md).
+See also [Backlog keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
 
 -->
 

@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 In just a few steps, you can provision Azure virtual machines (VMs)
-using [Resource Manager (RM) templates](https://azure.microsoft.com/documentation/articles/resource-group-template-deploy/).
+using [Resource Manager (RM) templates](/azure/azure-resource-manager/templates/deploy-powershell).
 Managing the pipelines for virtual machines in this
 way is considered **Infrastructure as code** and is
 a good DevOps practice.
@@ -73,7 +73,7 @@ For more details on each step, see [Continuous integration with Azure Resource M
 
 After you've run the build, you're ready to create a release pipeline to provision your virtual machine:
 
-![icon](../../../tasks/deploy/media/azure-resource-group-deployment-icon.png) [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
+:::image type="icon" source="../../../tasks/deploy/media/azure-resource-group-deployment-icon.png" border="false"::: [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
 
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -87,4 +87,3 @@ After you've run the build, you're ready to create a release pipeline to provisi
 <!-- ENDSECTION -->
 
 [!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]
-

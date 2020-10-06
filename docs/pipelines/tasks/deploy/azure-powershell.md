@@ -62,7 +62,7 @@ Azure PowerShell task uses Azure/AzureRM/Az PowerShell Module to interact with A
 </table>
 
 ### Service Connection Issues
-To troubleshoot issues related to service connections, see [Service Connection troubleshooting](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
+To troubleshoot issues related to service connections, see [Service Connection troubleshooting](../../release/azure-rm-endpoint.md)
 
 ## Open source
 

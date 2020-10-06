@@ -25,7 +25,7 @@ Upload your code to Azure Pipelines or your on-premises Team Foundation Server. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
-2. Edit or [create a Java web app](https://azure.microsoft.com/documentation/articles/web-sites-java-apps/get-started/) and enable Apache Tomcat.
+2. Edit or [create a Java web app](/azure/) and enable Apache Tomcat.
 
 3. Click the deployment credentials part (outlined in red below). Create a user name and password. Click Save. If you previously enabled publishing for a web app, you don't need to do this step.
 

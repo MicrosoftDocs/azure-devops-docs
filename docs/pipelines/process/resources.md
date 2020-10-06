@@ -34,6 +34,15 @@ resources:
   containers: [ container ]
   packages: [ package ]
 ```
+
+### Variables
+
+When a resource triggers a pipeline, the following variables are set:
+
+```yaml
+resources.triggeringAlias
+resources.triggeringCategory
+```
 ---
 
 ## Resources: `pipelines`
@@ -151,10 +160,10 @@ Note: These are tags set on the CI pipeline. These tags are different from the t
 ### Default branch for triggers
 Triggers for resources are created based on the default branch configuration of your YAML, which is master. However, if you want to configure resource triggers from a different branch, you need to change the default branch for the pipeline. 
 1. Go to the edit view of the pipeline and click on the overflow menu on the top-right corner and choose **Triggers**.
-![Commits in pipeline run](media/triggers-view.png)
+![Triggers view in a pipeline](media/triggers-view.png)
 1. Now select 'YAML' tab and go to 'Get sources'.
 1. Now you can set the default branch for your pipeline.
-![Commits in pipeline run](media/triggers-default-branch.png)
+![Triggers default branch for a pipeline](media/triggers-default-branch.png)
 
 
 ### Evaluation of artifact version
@@ -514,7 +523,7 @@ Note: location variable is only applicable for `ACR` type of container resources
 
 ## [Example](#tab/example)
 
-In this example, there is an [Azure Resource Manager service connection](../library/service-endpoints.md#common-service-connection-types) named `arm-connection`. Learn more about [Azure container registries, repositories, and images](https://docs.microsoft.com/azure/container-registry/container-registry-concepts). 
+In this example, there is an [Azure Resource Manager service connection](../library/service-endpoints.md#common-service-connection-types) named `arm-connection`. Learn more about [Azure container registries, repositories, and images](/azure/container-registry/container-registry-concepts). 
 
 ```yaml
 resources:
@@ -593,7 +602,7 @@ With other resources (such as pipelines, containers, build, and packages) you ca
 
 Here are the steps to configure the webhook triggers:
 1. Set up a webhook on your external service. When creating your webhook, you need to provide the following info:
-    - Request Url - `https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<**WebHook Name**>?api-version=6.0-preview`
+    - Request Url - `https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<WebHook Name>?api-version=6.0-preview`
     - Secret - This is optional. If you need to secure your JSON payload, provide the **Secret** value
 2. Create a new "Incoming Webhook" service connection. This is a newly introduced Service Connection Type that will allow you to define three important pieces of information:
     - **Webhook Name**: The name of the webhook should match webhook created in your external service.
@@ -674,7 +683,7 @@ We provide full traceability for any resource consumed at a pipeline or deployme
 ### Pipeline traceability
 For every pipeline run, we show the info about the 
 1. The resource that has triggered the pipeline (if it is triggered by a resource).
-![Commits in pipeline run](media/runs-resource-trigger.png)
+![Resource trigger in a pipeline](media/runs-resource-trigger.png)
 2. Version of the resource and the artifacts consumed.
  ![Consumed artifacts in pipeline run](media/runs-consumed-artifacts.png)
 3. Commits associated with each resource.

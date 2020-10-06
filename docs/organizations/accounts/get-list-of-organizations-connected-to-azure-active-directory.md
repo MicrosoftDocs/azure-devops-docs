@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this article, learn how to download a complete list of organizations backed by an Azure Active Directory (Azure AD) tenant. 
+Learn how to download a complete list of organizations backed by an Azure Active Directory (Azure AD) tenant. 
 On this list, you can find the following information:
 - organization IDs
 - organization names
@@ -52,5 +52,4 @@ Using any organization backed by your Azure AD, complete the following steps. If
 * [Disconnect from Azure AD](disconnect-organization-from-azure-ad.md)
 * [Change Azure AD connection](change-azure-ad-connection.md)
 * [Enforce Conditional Access policies](change-application-access-policies.md)
-* [Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
-
+* [Manage access with Azure AD groups](./manage-azure-active-directory-groups.md)

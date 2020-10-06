@@ -30,6 +30,6 @@ You can query for data about work items that are linked to test results by using
  [Test results](perspective-test-analyze-report-test-results.md)   
  [Test Result tables](test-result-tables.md)   
  [Current Work Item tables](table-reference-current-work-items.md)   
- [Test Management Reports](../excel/test-management-reports.md)   
- [Testing overview](../overview.md)   
+ [Test Management Reports](/previous-versions/azure/devops/report/excel/test-management-reports)   
+ [Testing overview](../dashboards/overview.md)   
  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

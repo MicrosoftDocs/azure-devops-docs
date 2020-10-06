@@ -46,7 +46,7 @@ If you wish to provide the personal access token through an HTTP header, you mus
 Authorization: Basic BASE64PATSTRING
 ``` 
 <br />
-Here it is in C# using the <a href="https://msdn.microsoft.com/library/system.net.http.httpclient.aspx" data-raw-source="[HttpClient class](https://msdn.microsoft.com/library/system.net.http.httpclient.aspx)">HttpClient class</a>.
+Here it is in C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
 
 ```cs
 public static async void GetProjects()

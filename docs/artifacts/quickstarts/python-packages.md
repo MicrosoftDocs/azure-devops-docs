@@ -3,14 +3,14 @@ title: Get started with Python packages
 description: Quickly start hosting python packages in Azure DevOps Services
 ms.technology: devops-artifacts
 ms.topic: quickstart
-ms.date: 06/23/2020
+ms.date: 08/31/2020
 monikerRange: '=azure-devops'
 ms.custom: devx-track-python
 ---
 
 # Get started with Python packages in Azure Artifacts
 
-**Azure DevOps Services** | **Azure DevOps Server 2019 Update 1**
+**Azure DevOps Services | Azure DevOps Server 2019 | Azure DevOps Server 2020**
 
 This quickstart guides you through using Azure Artifacts to publish and consume Python packages by creating and connecting to a feed.
 
@@ -101,7 +101,7 @@ For more information, check out the following resources to:
 
 ## Next steps
 
-To consume or publish Python packages as part of your continuous integration/continuous delivery (CI/CD) pipeline, see [Publish Python packages in Azure Pipelines](../../pipelines/targets/pypi.md).
+To consume or publish Python packages as part of your continuous integration/continuous delivery (CI/CD) pipeline, see [Publish Python packages in Azure Pipelines](../../pipelines/artifacts/pypi.md).
 
 To learn more about how to create, configure, and use Python packages as part of your project or pipeline, see [Build Python apps](../../pipelines/ecosystems/python.md).
 

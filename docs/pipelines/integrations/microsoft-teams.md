@@ -135,7 +135,7 @@ The app supports all of the checks and approval scenarios present in the Azure P
 To help users search and share information about pipelines, Azure Pipelines app for Microsoft Teams supports compose extension. You can now search for pipelines by pipeline ID or by pipeline name. For compose extension to work, users will have to sign into Azure Pipelines project that they are interested in either by running `@azure pipelines signin` command or by signing into the compose extension directly.
 
 > [!div class="mx-imgBorder"]
-> ![URL unfurling](./media/integrations-teams/compose-extension.png)
+> ![Compose extension.](./media/integrations-teams/compose-extension.png)
 
 
 ## Previews of pipeline URLs
@@ -143,10 +143,10 @@ To help users search and share information about pipelines, Azure Pipelines app 
 When a user pastes a pipeline URL, a preview is shown similar to that in the following image. This helps to keep pipeline related conversations relevant and accurate. Users can choose between compact and expanded cards.
 
 > [!div class="mx-imgBorder"]
-> ![URL unfurling](./media/integrations-teams/build-url-unfurling-teams.png)
+> ![Build URL unfurling.](./media/integrations-teams/build-url-unfurling-teams.png)
 
 > [!div class="mx-imgBorder"]
-> ![URL unfurling](./media/integrations-teams/release-url-unfurling-teams.png)
+> ![Release URL unfurling.](./media/integrations-teams/release-url-unfurling-teams.png)
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a team in Microsoft Teams.
 
@@ -302,5 +302,5 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Related articles
-- [Azure Boards with Microsoft Teams](https://aka.ms/AzureBoardsTeamsIntegration)
-- [Azure Repos with Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
+- [Azure Boards with Microsoft Teams](../../boards/integrations/boards-teams.md)
+- [Azure Repos with Microsoft Teams](../../repos/integrations/repos-teams.md)

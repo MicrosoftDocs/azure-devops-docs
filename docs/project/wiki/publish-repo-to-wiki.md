@@ -10,10 +10,10 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 07/23/2020  
+ms.date: 08/18/2020  
 ---
 
-# Quickstart: Publish a Git repository to a wiki
+# Publish a Git repository to a wiki
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
@@ -58,12 +58,12 @@ Begin by connecting to your project using a [supported web browser](/azure/devop
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose **Overview>Wiki**.
+Choose **Overview > Wiki**.
 
 > [!div class="mx-imgBorder"]  
 > ![Create wiki, provision a Git repo for your wiki, or publish existing repo Markdown files](../../organizations/public/media/wiki/open-wiki-vert-brn.png)
 
-If you need to switch your team project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
+If you need to switch your team project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all team projects and teams](../navigation/work-across-projects.md).  
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 2. Choose the repository, branch, and folder that contain the Markdown files and name the wiki repository. The Git repo must be within the team project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create wiki, publish existing repo Markdown files](media/wiki/publish-wiki-options.png)
+	> ![Name the wiki repository.](media/wiki/publish-wiki-options.png)
 
 	Specify the root of the repository when you want to publish all Markdown files in the repository to your wiki.  
 
@@ -122,7 +122,7 @@ You can publish a Git repository to a wiki with the [az devops wiki create](/cli
 > [!NOTE]
 > You can't publish code as Wiki if your project doesn't have a Git repository already defined. If necessary, [create a new Git repo](/cli/azure/ext/azure-devops/repos#ext-azure-devops-az-repos-create), and then return to this page.
 
-```CLI 
+```azurecli 
 az devops wiki create [--mapped-path]
                       [--name]
                       [--org]
@@ -150,7 +150,7 @@ az devops wiki create [--mapped-path]
 
 The following command creates a **codewiki** named "My New Wiki" published from the **MyRepo** repository. The wiki is published in the **wikis** folder in the **master** branch and the result is shown in table format.
 
-```CLI 
+```azurecli 
 az devops wiki create --name "My New Wiki" --type codewiki --repository MyRepo --mapped-path /wikis --version master --output table
 
 ID                                    Name         Type
@@ -179,7 +179,7 @@ ID                                    Name         Type
 
 ### Edit a page
 
-You can use the links available in edit mode to preview your changes or highlight changes made from the previous version. To discard your changes, select **Cancel**. For details about supported Markdown features, see [Syntax guidance for Markdown usage](../../reference/markdown-guidance.md).  
+You can use the links available in edit mode to preview your changes or highlight changes made from the previous version. To discard your changes, select **Cancel**. For details about supported Markdown features, see [Syntax guidance for Markdown usage](./markdown-guidance.md).  
 
 1. When finished with your updates, choose **Commit**, and then fill in the Commit dialog form.
 
@@ -235,7 +235,7 @@ Each update you make requires you commit your changes to the repository. You can
     > [!div class="mx-imgBorder"]  
     > ![Filter wiki TOC](media/wiki/publish-wiki-new-file-dialog.png)
 
-3. Enter the contents of the page. For details about supported Markdown features, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
+3. Enter the contents of the page. For details about supported Markdown features, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](./markdown-guidance.md).
 
 4. When done, choose **Commit**, and then fill in the Commit dialog form.
 
@@ -318,4 +318,3 @@ Displayed in the following example, Test has both a folder and an md file, which
 
 > [!div class="nextstepaction"]
 > [Version, select, or un-publish a published wiki](wiki-select-unpublish-versions.md)
-

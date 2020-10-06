@@ -64,7 +64,7 @@ To filter the list, enter the user name or alias until you've found a match.
 You can also use group mentions. Enter the name of a team or a security group, choose the search icon, and then select from the options listed.
 
 > [!NOTE]
-> For feature availability, check the [Feature Timeline](https://docs.microsoft.com/azure/devops/release-notes/features-timeline).
+> For feature availability, check the [Feature Timeline](/azure/devops/release-notes/features-timeline).
 
 ::: moniker-end
 

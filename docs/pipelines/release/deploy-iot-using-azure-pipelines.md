@@ -27,11 +27,11 @@ In this tutorial, you'll learn how to build an Azure Internet of Things (IoT) so
 
 1. [Docker CE](https://docs.docker.com/install/).
 
-1. Create an [Azure Container Registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal).
+1. Create an [Azure Container Registry](/azure/container-registry/container-registry-get-started-portal).
 
 ## Create an IoT Edge project
 
-The following steps creates an [IoT Edge](https://docs.microsoft.com/azure/iot-edge/tutorial-csharp-module#create-a-module-project) module project that's based on .NET Core SDK by using VS Code and Azure IoT tools.
+The following steps creates an [IoT Edge](/azure/iot-edge/tutorial-csharp-module#create-a-module-project) module project that's based on .NET Core SDK by using VS Code and Azure IoT tools.
 
 1. In the VS Code, select **View > Command Palette** to open the VS Code command palette.
 
@@ -98,7 +98,7 @@ If your workspace isn't under Git source control, you can easily create a Git re
 
 ## Create a build pipeline
 
-You can use Azure Pipelines to build your projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
+You can use Azure Pipelines to build your projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../agents/hosted.md?tabs=yaml) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
 
 1. Navigate to your team project on Azure DevOps.
 
@@ -106,7 +106,7 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
 
 3. The default option for build pipelines involves using YAML to define the process. For this lab, select **use the classic editor**.
 
-4. The first thing you’ll need to do is to configure the source repository. This build will use the **master** branch of the **IoT Edge module** repo. Leave the defaults and select **Continue**.
+4. The first thing you’ll need to do is to configure the source repository. This build will use the **main** branch of the **IoT Edge module** repo. Leave the defaults and select **Continue**.
 
 5. Select **Empty job**.
 
@@ -127,7 +127,7 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
    > [!NOTE]
    > Save the pipeline and queue the build. The above step will create an Azure Container Registry. This is required to push the IoT module images.
 
-   ![ARM](media/Iot-devops-using-azure-pipelines/arm.png)
+   ![Screenshot showing the Azure deployment task.](media/Iot-devops-using-azure-pipelines/arm.png)
 
 8. Edit the pipeline, and select **+**, and search for the **Azure IoT Edge** task. Select **add**. This step will build the module images.  
 
@@ -174,7 +174,7 @@ The build pipeline has already built a Docker image and pushed it to an Azure Co
 
    - **Script Location**: Set the type to **Inline script** and copy paste the below script
     
-     ```CLI
+     ```azurecli
      (az extension add --name azure-cli-iot-ext && az iot hub device-identity show --device-id YOUR_DEVICE_ID --hub-name YOUR_HUB_NAME) || (az iot hub device-identity create --hub-name YOUR_HUB_NAME --device-id YOUR_DEVICE_ID --edge-enabled && TMP_OUTPUT="$(az iot hub device-identity show-connection-string --device-id YOUR_DEVICE_ID --hub-name YOUR_HUB_NAME)" && RE="\"cs\":\s?\"(.*)\"" && if [[ $TMP_OUTPUT =~ $RE ]]; then CS_OUTPUT=${BASH_REMATCH[1]}; fi && echo "##vso[task.setvariable variable=CS_OUTPUT]${CS_OUTPUT}")
      ```
 

@@ -13,11 +13,11 @@ ms.topic: include
 
 1. Sign in to your organization in Azure DevOps (```https://dev.azure.com/{yourorganization}```)
   
-2. From your home page, open your user settings, and then select **Profile**.
+2. From your home page, open your user settings, and then select **Personal access tokens**.
 
-   ![My profile Team Services](~/repos/git/media/my-profile-team-services-preview.png)
+   ![Select Personal Access Tokens](~/repos/git/media/select-personal-access-tokens.jpg)
 
-3. Under Security, select **Personal access tokens**, and then select **+ New Token**.
+3. And then select **+ New Token**.
 
    ![Select New Token to create](~/repos/git/media/select-new-token.png)
 
@@ -25,10 +25,10 @@ ms.topic: include
 
    ![Enter basic token information](~/repos/git/media/create-new-pat.png)
 
-5. Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes)
+5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
    for this token to authorize for *your specific tasks*.
 
-   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps Services, 
+   For example, to create a token to enable a [build and release agent](../../../pipelines/agents/agents.md) to authenticate to Azure DevOps Services, 
    limit your token's scope to **Agent Pools (Read & manage)**. To read audit log events, and manage and delete streams, select **Read Audit Log**, and then select **Create**. 
 
    ![Select scopes for your PAT](~/repos/git/media/select-pat-scopes-preview.png)
@@ -53,10 +53,10 @@ ms.topic: include
 
    ![Enter basic token information](~/repos/git/media/create-new-pat.png)
 
-5. Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes)
+5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
    for this token to authorize for *your specific tasks*.
 
-   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps Services, 
+   For example, to create a token to enable a [build and release agent](../../../pipelines/agents/agents.md) to authenticate to Azure DevOps Services, 
    limit your token's scope to **Agent Pools (Read & manage)**, and then select **Create**. 
 
    ![Select scopes for your PAT](~/repos/git/media/select-pat-scopes.png)
@@ -69,11 +69,11 @@ ms.topic: include
 
 ::: moniker range=">= tfs-2017 < azure-devops"
 
-1. Sign in to your Team Foundation Server web portal (```https://{server}:8080/tfs/```).
+1. Sign in to your web portal (```https://{server}:8080/tfs/```).
 
 2. From your home page, open your profile. Go to your security details.
 
-   ![TFS home page, open your profile, go to Security](~/repos/git/media/my-profile-team-services.png)
+   ![Home page, open your profile, go to Security](~/repos/git/media/my-profile-team-services.png)
 
 3. Create a personal access token.
 
@@ -86,10 +86,10 @@ ms.topic: include
 
    ![Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token](~/repos/git/media/setup-personal-access-token.png)
 
-5. Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes)
+5. Select the [scopes](../../../integrate/get-started/authentication/oauth.md#scopes)
    for this token to authorize for *your specific tasks*.
 
-   For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to TFS, 
+   For example, to create a token to enable a [build and release agent](../../../pipelines/agents/agents.md) to authenticate, 
    limit your token's scope to **Agent Pools (read, manage)**. 
 
 6. When you're done, make sure to *copy the token*. For your security, it won't be shown again. Use this token as your password. Select **Close**.
@@ -243,7 +243,7 @@ When your code is working, it's a good time to switch from basic auth to <a href
 
 If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more information, see [Using IIS Basic Authentication with TFS on-premises](~/integrate/get-started/authentication/iis-basic-auth.md).
 
-For more examples of how to use PATs, see [Git credential managers](~/repos/git/set-up-credential-managers.md), [REST APIs](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1#assemble-the-request), [NuGet on a Mac](~/artifacts/nuget/consume.md#mac-os), [[Reporting clients](~/report/powerbi/client-authentication-options.md#enter-credentials-within-a-client), or [Get started with Azure DevOps CLI](~/cli/index.md).
+For more examples of how to use PATs, see [Git credential managers](~/repos/git/set-up-credential-managers.md), [REST APIs](/rest/api/azure/devops/?view=azure-devops-rest-5.1#assemble-the-request), [NuGet on a Mac](~/artifacts/nuget/consume.md#mac-os), [[Reporting clients](~/report/powerbi/client-authentication-options.md#enter-credentials-within-a-client), or [Get started with Azure DevOps CLI](~/cli/index.md).
 
 ::: moniker range="azure-devops"
 
@@ -258,7 +258,7 @@ You can regenerate or extend a PAT, and modify its [scope](~/integrate/get-start
 
 1. From your home page, open your user settings, and then select **Profile**.
 
-   ![My profile Team Services](~/repos/git/media/my-profile-team-services-preview.png)
+   ![My profile Team Services, Preview page, modify a PAT.](~/repos/git/media/my-profile-team-services-preview.png)
 
 2. Under Security, select **Personal access tokens**. Select the token for which you want to modify, and then select **Edit**.
 
@@ -295,7 +295,7 @@ You can revoke a PAT at any time, for various reasons.
 
 1. From your home page, open your user settings, and then select **Profile**.
 
-   ![My profile Team Services](~/repos/git/media/my-profile-team-services-preview.png)
+   ![My profile Team Services, Preview page, revoke a PAT.](~/repos/git/media/my-profile-team-services-preview.png)
 
 2. Under Security, select **Personal access tokens**. Select the token for which you want to revoke access, and then select **Revoke**.
 

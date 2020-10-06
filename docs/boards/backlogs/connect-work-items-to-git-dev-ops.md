@@ -97,12 +97,12 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 5.	Your view will switch to **Code**, Pull Requests page. Complete creating the pull request as shown. 
   
- 	![Pull Request page, Create pull request](media/git-dev-create-pull-request.png)   
+ 	![Code view, Pull Request page.](media/git-dev-create-pull-request.png)   
 
 	> [!NOTE]  
 	> Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.  
 	 
-	![Pull Request page, Create pull request](media/git-dev-pr-complete.png)  
+	![Pull Request page, Create pull request.](media/git-dev-pr-complete.png)  
 
 	Check the box for **Squash changes when merging** and then complete the merge. 
 
@@ -137,24 +137,24 @@ And, we specify the name of the branch.
 
 ## Link to existing development and build objects
 
-All items listed under the Development section also appear under the ![Links tab icon](media/icon-links-tab-wi.png) Links tab. All development actions initiated from the Development section are also logged under the ![History tab icon](media/icon-history-tab-wi.png) History tab. 
+All items listed under the Development section also appear under the :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: Links tab. All development actions initiated from the Development section are also logged under the ![History tab icon](media/icon-history-tab-wi.png) History tab. 
 
 ![Links tab, development links](media/add-work-item-dev-links.png)  
 
 To link a work item to an existing object, click the ![Add link](../media/icons/add-link-icon.png) Add links icon and then choose the link type.  
 
-![Select multiple items from backlog](media/add-work-items-link-to-existing-branch.png)
+![Select Add links icon and then choose the link type.](media/add-work-items-link-to-existing-branch.png)
 
 [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md).   
 
 
 ### Remove a link 
 
-If you want to remove a link, you can do so from the Development section by highlighting it first and then click the ![delete icon](../media/icons/delete_icon.png) delete icon.  
+If you want to remove a link, you can do so from the Development section by highlighting it first and then click the :::image type="icon" source="../media/icons/delete_icon.png" border="false"::: delete icon.  
 
 ![Development section, delete a link](media/add-work-item-remove-dev-link.png)  
 
-Or, you can select it from the ![Links tab icon](media/icon-links-tab-wi.png) Links tab and click the ![delete icon](../media/icons/delete-link.png) remove link icon.
+Or, you can select it from the :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: Links tab and click the :::image type="icon" source="../media/icons/delete_icon.png" border="false"::: remove link icon.
 
 ## Related articles
 
@@ -185,7 +185,7 @@ Keep in mind that the Development section only appears within the web portal wor
 
 With Git commits, any work items that have been linked to a commit will be listed under the Associated work items in the build summary page. 
 
-<img src="media/developer-associated-work-items-build.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />  
+<img src="media/developer-associated-work-items-build.png" alt="Linked work items listed under Associated work items in the build summary page." style="border: 1px solid #C3C3C3;" />  
 
 <!--- Add info about option to set build linking; link to release notes if needed --> 
 
@@ -196,7 +196,7 @@ With Git commits, any work items that have been linked to a commit will be liste
 Links shown in this section appear as a result of these actions:   
 - Creating a branch, commit, or pull request from the work item    
 - Specifying the work item ID during a commit, pull request, or other supported Git or TFVC operation   
-- Specifically linking the work item from the Development section or ![Links tab icon](media/icon-links-tab-wi.png) Links tab to a source code branch, build, or other supported Git or TFVC operation.  
+- Specifically linking the work item from the Development section or :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: Links tab to a source code branch, build, or other supported Git or TFVC operation.  
 
 Hovering over any entry listed under the Development section activates the hyperlink to the associated object.    
 

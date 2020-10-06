@@ -32,7 +32,7 @@ The New Team Project Wizard encountered a problem downloading or extracting the 
   
 1.  Confirm that your local computer is connected to the network and can access network resources.  
   
-2.  Contact the administrator for the server that hosts SharePoint Products to confirm the availability of the server on the network and request that the process templates be added to the server. For more information, see [Retrieve and Restore Missing Site Templates](https://msdn.microsoft.com/library/bb909677.aspx).  
+2.  Contact the administrator for the server that hosts SharePoint Products to confirm the availability of the server on the network and request that the process templates be added to the server. For more information, see [Retrieve and Restore Missing Site Templates](/previous-versions/visualstudio/visual-studio-2010/bb909677(v=vs.100)).  
   
 3.  If the server is available on the network and the process templates are available on the server, review the amount of available storage space for program downloads onto your local hard disk. For information about how to increase the available download space, see the online Help for your operating system.  
   

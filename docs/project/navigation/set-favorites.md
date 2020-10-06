@@ -51,8 +51,8 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project through the web portal. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
-* You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* You must connect to a project through the web portal. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
+* You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, you must have **Stakeholder** access or higher.
 * To favorite repositories, or delivery plans, you must have **Basic** access or higher. 
 * To favorite test plans, you must have **Basic + Test Plans** access level or equivalent.  
@@ -61,15 +61,15 @@ In this tutorial you'll learn how to view your personal favorites and to favorit
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-* You must connect to a project through the web portal. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
-* You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* You must connect to a project through the web portal. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). To connect to the web portal, see [Connect to a project](../../organizations/projects/connect-to-projects.md).
+* You must be a member of the **Contributors** or an administrators security group of the project. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To favorite projects, backlogs, boards, queries, dashboards, or pipeline views, you must have **Stakeholder** access or higher.
 * To favorite repositories, or delivery plans, you must have **Basic** access or higher. 
 * To favorite test plans, you must have **Basic + Test Plans** access level or equivalent.   
 
 ::: moniker-end 
 
-For details about the different access levels, see [About access levels](/azure/devops/organizations/security/access-levels). 
+For details about the different access levels, see [About access levels](../../organizations/security/access-levels.md). 
 
 
 <a id="view-favorites">  </a>
@@ -151,7 +151,7 @@ Or, you can favorite a project from the **Projects** page by choosing the ![favo
 2. The **Mine** page shows your favorited dashboards, and all dashboards of teams that you belong to. The **All** page (shown below) lists all dashboards defined for the project in alphabetical order. You can filter the list by team or by keyword.   
  
 	> [!div class="mx-imgBorder"]  
-	> ![Dashboards, Browse all dashboards option](../../report/dashboards/media/dashboards/all-dashboards-list.png)  
+	> ![The All page lists all dashboards.](../../report/dashboards/media/dashboards/all-dashboards-list.png)  
 
 	> [!TIP]
 	> You can change the sort order of the list by choosing the column label.  
@@ -159,7 +159,7 @@ Or, you can favorite a project from the **Projects** page by choosing the ![favo
 3. To favorite a dashboard, hover over the dashboard and choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Dashboards, Browse all dashboards option](../../report/dashboards/media/dashboards/favorite-dashboard.png)  
+	> ![Favorite a dashboard.](../../report/dashboards/media/dashboards/favorite-dashboard.png)  
 
 	Favoriting a dashboard will cause it to appear on your **Favorites** page and towards the top in the **Dashboards** selection menu.
    
@@ -178,7 +178,7 @@ You can favorite several Agile tools for a team from a **Boards** page.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work, Backlogs](media/favorites/open-work-backlogs-vert.png)  
 
-	To choose a specific team backlog, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose a specific team backlog, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -320,7 +320,7 @@ Similarly, you can unfavorite an artifact from the same page where you favorited
 
 ## Related articles
 
-- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md) 
+- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md) 
 - [Set your preferences](../../organizations/settings/set-your-preferences.md) 
 
 

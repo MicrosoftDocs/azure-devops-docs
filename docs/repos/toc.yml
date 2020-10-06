@@ -27,9 +27,9 @@
   - name: Visual Studio for Mac
     href: /visualstudio/mac
   - name: Eclipse
-    href: /azure/devops/java/download-eclipse-plug-in
+    href: /previous-versions/azure/devops/java/download-eclipse-plug-in
   - name: IntelliJ IDEA
-    href: /azure/devops/java/download-intellij-plug-in
+    href: /previous-versions/azure/devops/java/download-intellij-plug-in
 - name: Azure DevOps Learn
   items:
   - name: What is Git?
@@ -51,18 +51,14 @@
 - name: Resources
   items:
   - name: GitHub & Azure Boards 
-    href: /azure/devops/boards/github/index
+    href: ../boards/github/index.md
   - name: Manage projects
-    href: /azure/devops/organizations/projects/index
+    href: ../organizations/projects/about-projects.md
   - name: "Default Git permissions (Security)"
-    href: /azure/devops/organizations/security/default-git-permissions
+    href: ../organizations/security/default-git-permissions.md
   - name: "Default TFVC permissions (Security)"
-    href: /azure/devops/organizations/security/default-tfvc-permissions
+    href: ../organizations/security/default-tfvc-permissions.md
   - name: "Set permissions (Security)"
-    href: /azure/devops/organizations/security/set-git-tfvc-repository-permissions
+    href: ../organizations/security/set-git-tfvc-repository-permissions.md
   - name: Marketplace extensions
     href: https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads
-
-
-
-

@@ -41,7 +41,7 @@ From the pipelines landing page you can view pipelines and pipeline runs, create
 
 Choose **Recent** to view recently run pipelines (the default view), or choose **All** to view all pipelines.
 
-![View pipelines](media/view-pipelines.png)
+![Choose Recent to view recently run pipelines or choose All to view all pipelines.](media/view-pipelines.png)
 
 Select a pipeline to manage that pipeline and view its runs. Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
 
@@ -108,7 +108,7 @@ From the context menu you can download logs, add tags, edit the pipeline, delete
 
 ### Jobs and stages
 
-The jobs pane displays on overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
+The jobs pane displays an overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
 
 ![Pipeline jobs](media/pipeline-jobs-pane.png)
 

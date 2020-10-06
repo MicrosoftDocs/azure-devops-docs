@@ -2,7 +2,7 @@
 ms.topic: include
 ms.technology: devops-collab
 title: Azure Pipelines with Slack
-ms.manager: mijacobs
+ms.manager: bijuv
 ms.author: atinb
 author: atinb
 ms.date: 02/13/2020
@@ -13,7 +13,7 @@ ms.date: 02/13/2020
 
 ### Sorry, something went wrong. Please try again.
 
-The Azure Pipelines app uses the OAuth authentication protocol, and requires [Third-party application access via OAuth for the organization](/azure/devops/organizations/accounts/change-application-access-policies#change-application-access-policies) to be enabled. To enable this setting, navigate to **Organization Settings** > **Security** > **Policies**, and set the **Third-party application access via OAuth for the organization** setting to **On**.
+The Azure Pipelines app uses the OAuth authentication protocol, and requires [Third-party application access via OAuth for the organization](../../../organizations/accounts/change-application-access-policies.md) to be enabled. To enable this setting, navigate to **Organization Settings** > **Security** > **Policies**, and set the **Third-party application access via OAuth for the organization** setting to **On**.
 
 > [!div class="mx-imgBorder"]
 > ![Enable the Third-party application access via OAuth for the organization setting](../media/troubleshooting/third-party-app-consent.png)

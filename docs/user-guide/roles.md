@@ -41,7 +41,7 @@ Developers use Visual Studio or other [tools](tools.md) to develop their applica
 	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md)
 	- [Share your code in Git by using Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
 	- [Share your code in Git by using Xcode](../repos/git/share-your-code-in-git-xcode.md)
-	- [Share your code in Git by using IntelliJ](../java/download-intellij-plug-in.md)
+	- [Share your code in Git by using IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
 	- [Get started with using Git and Azure DevOps Services](../repos/git/gitquickstart.md)
 - To get started with using TFVC, see one of the following resources: 
 	- [Develop and share your code in TFVC by using Visual Studio](../repos/tfvc/share-your-code-in-tfvc-vs.md)
@@ -135,7 +135,7 @@ Responsible for configuring organization-level resources, including the followin
 - Customize work tracking processes  
 - Install and manage extensions
 
-To get started, see [Manage organizations](../organizations/accounts/organization-management.md) and [Settings](../organizations/settings/index.md).
+To get started, see [Manage organizations](../organizations/accounts/organization-management.md) and [Settings](../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -147,7 +147,7 @@ Responsible for configuring collection-level resources. These tasks include:
 - Manage collection-level permissions 
 - Install and manage extensions
 
-To get started, see [Settings](../organizations/settings/index.md).
+To get started, see [Settings](../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects).
 
 ### TFS administrators
 

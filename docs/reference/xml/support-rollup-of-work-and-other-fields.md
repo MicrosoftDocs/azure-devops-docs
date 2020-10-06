@@ -213,11 +213,11 @@ If you need to add reports to your on-premises TFS deployment, see [Add reports 
 
 ## TFS-Project Server integration 
 
-Like Project, Project Server natively supports rollup of summary tasks. If you have TFS-Project Server integration deployed, then you have rollup. To learn about how fields are synchronized, see [Understand how updates to specific fields are managed](../tfs-ps-sync/understand-how-updates-to-specific-fields-managed.md). If you need to add fields or change how fields are mapped, see [Customize the field mapping](../tfs-ps-sync/customize-field-mapping-tfs-project-server.md).  
+Like Project, Project Server natively supports rollup of summary tasks. If you have TFS-Project Server integration deployed, then you have rollup. To learn about how fields are synchronized, see [Understand how updates to specific fields are managed](/previous-versions/azure/devops/reference/tfs-ps-sync/understand-how-updates-to-specific-fields-managed). If you need to add fields or change how fields are mapped, see [Customize the field mapping](/previous-versions/azure/devops/reference/tfs-ps-sync/customize-field-mapping-tfs-project-server).  
   
 
 > [!IMPORTANT]
-> TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md).
+> TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server).
 
 ::: moniker-end 
 

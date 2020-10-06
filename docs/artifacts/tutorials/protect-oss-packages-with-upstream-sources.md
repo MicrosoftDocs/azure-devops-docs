@@ -9,7 +9,7 @@ monikerRange: '>= tfs-2017'
 
 # Protect your open-source software packages with upstream sources
 
-Upstream sources enable you to manage your product's OSS dependencies in a single feed. Using upstream sources makes it easy to use your favorite OSS packages, and can also give you additional protection against outages and corrupted or compromised packages. You can also publish private dependencies in the same feed that manages your OSS dependencies. Read all about [upstream sources and their benefits](/azure/devops/artifacts/concepts/upstream-sources).
+Upstream sources enable you to manage your product's OSS dependencies in a single feed. Using upstream sources makes it easy to use your favorite OSS packages, and can also give you additional protection against outages and corrupted or compromised packages. You can also publish private dependencies in the same feed that manages your OSS dependencies. Read all about [upstream sources and their benefits](../concepts/upstream-sources.md).
 
 This tutorial covers how to upgrade an existing project that uses OSS packages from public registries like nuget.org, npmjs.com, etc. to instead get those dependencies from an Azure Artifacts feed with upstream sources.
 
@@ -134,7 +134,7 @@ After you've got the feed URL, create a new text file named `.npmrc` in the root
 
 #### [NuGet](#tab/nuget/)
 
-1. Go to your feed [or create a feed if you haven't](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops&tabs=new-nav#create-a-feed). 
+1. Go to your feed [or create a feed if you haven't](../get-started-nuget.md?tabs=new-nav#create-a-feed). 
 
 2. Select **Connect to feed**:
 
@@ -150,7 +150,7 @@ After you've got the feed URL, create a new text file named `.npmrc` in the root
 4. Copy the XML snippet under **Project Setup** to your clipboard.
 
    > [!div class="mx-imgBorder"] 
-   >![Connect to feed button on the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
+   >![Copy the XML snippet under Project Setup to your clipboard.](../media/connect-to-feed-azure-devops-newnav.png)
    >
 
 5. Create a new file named `nuget.config` in the root of your project.

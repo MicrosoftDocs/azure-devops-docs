@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 1/16/2020
+ms.date: 08/19/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -134,6 +134,20 @@ and(always(), eq(variables['Build.Reason'], 'Schedule'))
 
 > **Release.Artifacts.{artifact-alias}.SourceBranch** is equivalent to **Build.SourceBranch**.
 
+### Run if a variable is null
+
+```yaml
+variables:
+- name: testNull
+  value: ''
+
+jobs:
+  - job: A
+    steps:
+    - script: echo testNull is blank
+    condition: eq('${{ variables.testNull }}', '')
+```
+
 ### Use a template parameter as part of a condition
 
 When you declare a parameter in the same pipeline that you have a condition, parameter expansion happens before conditions are considered. In this case, you can embed parameters inside conditions. The script in this YAML file will run because `parameters.doThing` is true.
@@ -179,16 +193,15 @@ extends:
   template: parameters.yml
 ```
 
-
 ### Use the output variable from a job in a condition in a subsequent job
 
-You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](/azure/devops/pipelines/process/variables#set-a-multi-job-output-variable) using `isOutput=true`. 
+You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](./variables.md#set-a-multi-job-output-variable) using `isOutput=true`. 
 
 ```yaml
 jobs:
 - job: Foo
   steps:
-  - script: |
+  - bash: |
       echo "This is job Foo."
       echo "##vso[task.setvariable variable=doThing;isOutput=true]Yes" #set variable doThing to Yes
     name: DetermineResult
@@ -216,7 +229,6 @@ If you defined the pipelines using a YAML file, then this is supported. This sce
 You can use the result of the previous job. For example, in this YAML file, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows the job to run because Job A succeeded with issues. 
 
 ```yaml
-
 jobs:
 - job: A
   displayName: Job A
@@ -232,12 +244,12 @@ jobs:
   steps:
   - script: echo Job B ran
 ```
+
 ### I've got a conditional step that runs even when a job is canceled. How do I manage to cancel all jobs at once?
 
 You'll experience this issue if the condition that's configured in the stage doesn't include a job status check function. To resolve the issue, add a job status check function to the condition. If you cancel a job while it's in the queue, the entire job is canceled, including all the other stages, with this function configured. For more information, see [Job status functions](expressions.md#job-status-functions).
 
 ```yaml
-
 stages:
 - stage: Stage1
   displayName: Stage 1
@@ -250,8 +262,7 @@ stages:
     - task: CmdLine@2
       displayName: Show variables
       inputs:
-        script: >
-          printenv
+        script: 'printenv'
 
 - stage: Stage2
   displayName: stage 2
@@ -264,8 +275,7 @@ stages:
     - task: CmdLine@2
       displayName: Show variables 2
       inputs:
-        script: >
-          printenv
+        script: 'printenv'
           
 - stage: Stage3
   displayName: stage 3
@@ -278,9 +288,7 @@ stages:
     - task: CmdLine@2
       displayName: Show variables 3
       inputs:
-        script: >
-          printenv
-
+        script: 'printenv'
 ```
 
 <!-- ENDSECTION -->
@@ -289,4 +297,4 @@ stages:
 ## Related articles
 
 - [Specify jobs in your pipeline](../process/phases.md)  
-- [Add stages, dependencies, & conditions](../process/stages.md)   
+- [Add stages, dependencies, & conditions](../process/stages.md)

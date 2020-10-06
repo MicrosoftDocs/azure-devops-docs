@@ -22,7 +22,7 @@ The response will contain the rendered YAML.
 Currently, pipelines agents will automatically update to the latest version when required. This typically happens when there is a new feature or task which requires a newer agent version to function correctly. With this update, we're adding the ability to disable automatic upgrades at a pool level. In this mode, if no agent of the correct version is connected to the pool, pipelines will fail with a clear error message instead of requesting agents to update. This feature is mostly of interest for customers with self-hosted pools and very strict change-control requirements. Automatic updates are enabled by default, and we don’t recommend most customers disable them.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/165_02.png)
+> ![Disable automatic agents upgrades at a pool level.](../../media/165_02.png)
 
 ### Azure File Copy Task now supports AzCopy V10
 

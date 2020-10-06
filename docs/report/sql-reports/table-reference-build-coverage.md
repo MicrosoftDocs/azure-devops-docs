@@ -38,7 +38,7 @@ For information about the measures and dimensions that are associated with these
   
 ## Related notes
 -  [Builds](perspective-build-analyze-report-build-details-coverage.md)   
--  [Code Churn](../excel/code-coverage-excel-report.md)   
+-  [Code Churn](/previous-versions/azure/devops/report/excel/code-coverage-excel-report)   
 -  [Run Coverage tables](run-coverage-tables.md)    
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../pipelines/overview.md) 
+- [Continuous integration on any platform](../../pipelines/overview.md)

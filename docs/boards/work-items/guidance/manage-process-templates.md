@@ -155,7 +155,7 @@ You can upload, download, and delete process templates for a project collection.
    </td>
    <td>To download the process template to a local computer.<br/>
    <p>In the <strong>Download Process Template</strong> dialog box, select a folder where the process template will be downloaded.</p>
-   <p>If you&#39;re downloading a process template to use to <a href="../../../reference/configure-features-after-upgrade.md" data-raw-source="[configure new features](../../../reference/configure-features-after-upgrade.md)">configure new features</a>, <a href="../../../reference/add-features-manually.md" data-raw-source="[manually add new features](../../../reference/add-features-manually.md)">manually add new features</a> or <a href="../../../reference/update-customized-process-template.md" data-raw-source="[update a custom process template to enable new features](../../../reference/update-customized-process-template.md)">update a custom process template to enable new features</a>--choose the process that corresponds to the one you used previously to create your project. For example, if you&#39;re updating a project based on the Scrum process template, then select <strong>Scrum</strong>. Note that all version numbers have been removed from the process templates. If you don&#39;t see Agile, CMMI, or Scrum, then you need to <a href="https://visualstudio.microsoft.com/downloads/download-visual-studio-vs" data-raw-source="[update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs)">update TFS</a>. </p>
+   <p>If you&#39;re downloading a process template to use to <a href="/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade" data-raw-source="[configure new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)">configure new features</a>, <a href="/previous-versions/azure/devops/reference/upgrade/add-features-manually" data-raw-source="[manually add new features](/previous-versions/azure/devops/reference/upgrade/add-features-manually)">manually add new features</a> or <a href="/previous-versions/azure/devops/reference/upgrade/additional-configuration-options" data-raw-source="[update a custom process template to enable new features](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options)">update a custom process template to enable new features</a>--choose the process that corresponds to the one you used previously to create your project. For example, if you&#39;re updating a project based on the Scrum process template, then select <strong>Scrum</strong>. Note that all version numbers have been removed from the process templates. If you don&#39;t see Agile, CMMI, or Scrum, then you need to <a href="https://visualstudio.microsoft.com/downloads/download-visual-studio-vs" data-raw-source="[update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs)">update TFS</a>. </p>
    <p>You can determine which process template to select based on the <a href="#wit_correlation" data-raw-source="[work item types defined for your existing project](#wit_correlation)">work item types defined for your existing project</a>.</p>
    </td>
    </tr>
@@ -316,7 +316,7 @@ Periodically, updates are made to the process templates to support new features.
 
 ### Update a process template to enable new features 
 
-When you upgrade your on-premises Azure DevOps to a later version, new features may become available. [To gain access to these new features](../../../reference/configure-features-after-upgrade.md), you may need to [update a customized process template](../../../reference/update-customized-process-template.md). 
+When you upgrade your on-premises Azure DevOps to a later version, new features may become available. [To gain access to these new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade), you may need to [update a customized process template](/previous-versions/azure/devops/reference/upgrade/additional-configuration-options). 
 
 ::: moniker-end
 
@@ -327,5 +327,3 @@ When you upgrade your on-premises Azure DevOps to a later version, new features 
 You can add a project from the web portal or Visual Studio/Team Explorer. Some process template files are ignored when you create a project from the web portal. For details, see [Process template and plug-in files, Client support for project creation](../../../reference/process-templates/overview-process-template-files.md#client-support). 
 
 ::: moniker-end
-
-

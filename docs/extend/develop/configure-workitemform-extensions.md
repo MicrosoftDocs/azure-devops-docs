@@ -16,7 +16,7 @@ ms.date: 10/10/2017
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-A work item type can be exported as XML using `witadmin` tool, that includes the layout of the work item form. As part of the walkthrough, you add the page, group, and control contributions to the layout.  [Read more information on WebLayout XML](/azure/devops/reference/xml/weblayout-xml-elements). In this example, we add the control to the Agile "User Story" work item type.
+A work item type can be exported as XML using `witadmin` tool, that includes the layout of the work item form. As part of the walkthrough, you add the page, group, and control contributions to the layout.  [Read more information on WebLayout XML](../../reference/xml/weblayout-xml-elements.md). In this example, we add the control to the Agile "User Story" work item type.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
@@ -130,4 +130,4 @@ Note that if a control contribution has any required input defined, users must g
 
 <br>
 <strong>Step 7:</strong>  Finally, import this <em>.xml</em> file, using <code>witadmin</code>.
-<code>witadmin importwitd /collection:CollectionURL /p:Project /f:FileName</code> 
+<code>witadmin importwitd /collection:CollectionURL /p:Project /f:FileName</code>

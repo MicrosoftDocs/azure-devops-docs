@@ -1,7 +1,7 @@
 ---
 title: Using work items to track user stories, & more
-titleSuffix: Azure Boards and TFS
-description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & TFS 
+titleSuffix: Azure Boards
+description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & Azure DevOps 
 ms.custom: work-items, seodec18, contentperfq4
 ms.technology: devops-agile
 ms.assetid:  
@@ -102,7 +102,7 @@ Each form contains a number of controls as shown below and described in [Work it
 
 ::: moniker range=">= tfs-2018"
 
-![Work item form to track features or user stories](../backlogs/media/add-work-item-vsts-user-story-form.png)
+![Screenshot of Work item form to track features or user stories.](../backlogs/media/add-work-item-vsts-user-story-form.png)
 
 ::: moniker-end
 
@@ -114,18 +114,18 @@ The new form and its corresponding features are available from the web portal. T
 
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
 
-![Work item form to track features or user stories](../backlogs/media/add-work-item-vsts-user-story-form.png)
+![Screenshot of Work item form to track features or user stories, new web form.](../backlogs/media/add-work-item-vsts-user-story-form.png)
 
 **Old web form** 
 
-![Work item form to track features or user stories](../backlogs/media/work-item-form-to-track-user-stories.png)
+![Screenshot of Work item form to track features or user stories, old web form.](../backlogs/media/work-item-form-to-track-user-stories.png)
 
 ---
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
-![Work item form to track features or user stories](../backlogs/media/work-item-form-to-track-user-stories.png)
+![Screenshot of Work item form to track features or user stories, TFS 2015 and earlier versions.](../backlogs/media/work-item-form-to-track-user-stories.png)
 ::: moniker-end
 
 
@@ -173,7 +173,7 @@ Anyone who has write access to a project can assign work items, including users 
 
 When your system is configured with Azure Active Directory (Azure AD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
-You can grant access to a project by adding security groups that you created in Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** pages. To learn more, see [Access with Azure Active Directory (Azure AD)](../../organizations/accounts/add-users-to-azure-ad.md).
+You can grant access to a project by adding security groups that you created in Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** pages. For more information, see [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019" 
@@ -235,20 +235,20 @@ Once you have a template defined, you can share it via email or a [dashboard](..
 
 <a id="customize" />
 
-## Customize a WIT 
+## Customize a work item type 
 
 ::: moniker range="azure-devops"
-You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
+You can add or modify the fields contained within a work item type or add a custom work item type. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see:
+You can add or modify the fields contained within a work item type or add a custom work item type. To learn more, see:
 - For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).  
 - For project collections that use the On-premises XML process model: [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
+You can add or modify the fields contained within a work item type or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
 ::: moniker-end
 
 
@@ -277,4 +277,4 @@ To add users to a project, see [Add users to a project or team](../../organizati
 - [About Kanban and Agile project management](../boards/kanban-overview.md) 
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 - [Agile, Scrum, and CMMI processes](./guidance/choose-process.md)  
-- [Work item field index](./guidance/work-item-field.md)  
+- [Work item field index](./guidance/work-item-field.md)

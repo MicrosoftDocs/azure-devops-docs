@@ -271,7 +271,18 @@ You can quickly find items that you changed, resolved, or closed. You can also f
 </table>
 
 
+## Query changes in work item state 
+
+To list work items that have changed state within a specific date range, you can use the **State Change Date** field to narrow the search and then add clauses for changes to the **State** field. An example is shown in the following image.  
+ 
+> [!div class="mx-imgBorder"] 
+> ![Screenshot of Query Editor to query on State Change Date and State fields](media/workflow/query-state-change-date.png)
+
+
+
+
 <a id="kanban_query_fields">  </a>
+
 ::: moniker range=">= tfs-2015"
 
 ## Kanban board change queries 
@@ -329,12 +340,13 @@ Items in any swimlane that contains &quot;Test&quot;
 </tbody>
 </table>
 
-
 <a id="kanban-query-results">  </a>
 
 [!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
 ::: moniker-end
+
+
 
 <a id="workflow-fields">  </a>
 
@@ -461,7 +473,7 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
    :::column span="2":::
       The current assignment of the work item to Doing (False) or Done (True) Kanban column. Only assigned when [split-columns](../boards/split-columns.md) is enabled for a Kanban board column. 
-      Reference name=`BoardColumnDone`
+      Reference name=`System.BoardColumnDone`
    :::column-end:::
    :::column span="1":::
       Boolean  
@@ -506,7 +518,7 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
    :::column span="2":::
       The name of the team member who set the state to closed, completed, or done.   
-      Reference name=`System.ClosedBy`
+      Reference name=`Microsoft.VSTS.Common.ClosedBy`
    :::column-end:::
    :::column span="1":::
       String (Identity)
@@ -541,7 +553,7 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
    :::column span="2":::
       The name of the team member who created the work item. 
-      Reference name=`Microsoft.VSTS.Common.CreatedBy`
+      Reference name=`System.CreatedBy`
    :::column-end:::
    :::column span="1":::
       String (Identity)
@@ -556,7 +568,7 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
    :::column span="2":::
       The date and time when a work item was created. 
-      Reference name=`Microsoft.VSTS.Common.CreatedDate`
+      Reference name=`System.CreatedDate`
    :::column-end:::
    :::column span="1":::
       DateTime
@@ -604,7 +616,7 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker range="< azure-devops"
       The name of the team member who changed the status of a work item to *Resolved* or done workflow state. 
       ::: moniker-end 
-      Reference name=`Microsoft.VSTS.Common.ActivatedBy`
+      Reference name=`Microsoft.VSTS.Common.ResolvedBy`
    :::column-end:::
    :::column span="1":::
       String (Identity)
@@ -629,7 +641,7 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker range="< azure-devops"
       The date and time when the work item was moved into a *Resolved* or done workflow state. 
       ::: moniker-end 
-      Reference name=`Microsoft.VSTS.Common.ActivatedDate`
+      Reference name=`Microsoft.VSTS.Common.ResolvedDate`
    :::column-end:::
    :::column span="1":::
       DateTime
@@ -710,7 +722,7 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
    :::column span="2":::
       The date and time when the value of the State field changed.
-      Reference name=`Microsoft.VSTS.Common.ActivatedDate`
+      Reference name=`Microsoft.VSTS.Common.StateChangeDate`
    :::column-end:::
    :::column span="1":::
       DateTime
@@ -775,6 +787,7 @@ Several date and identity fields are set based on workflow states or transitions
 
 ::: moniker-end
 
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 ::: moniker range="< azure-devops"
 

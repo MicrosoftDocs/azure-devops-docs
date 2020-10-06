@@ -6,7 +6,7 @@ ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.manager: shashban
 ms.author: shashban
 author: shashban
-ms.date: 03/11/2020
+ms.date: 09/30/2020
 monikerRange: azure-devops
 ---
 
@@ -60,7 +60,10 @@ To define the branch control check:
 
 :::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
 
-At run time, the check would validate branches for all linked resources in the run against the allowed list. If any one of the branches do not match the criteria, the check fails and the stage is marked failed.   
+At run time, the check would validate branches for all linked resources in the run against the allowed list. If any one of the branches do not match the criteria, the check fails and the stage is marked failed. 
+
+> [!NOTE]
+> The check requires the branch names to be fully qualified. Make sure the format for branch name is `ref/heads/<branch name>`
 
 ## Business hours
 
@@ -73,7 +76,7 @@ The check fails if execution of the stage does not start within the **Timeout** 
 
 ## Invoke Azure function
 
-Azure functions are the serverless computation platform offered by Azure. with Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
+Azure functions are the serverless computation platform offered by Azure. With Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
 Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](../tasks/utility/azure-function.md)
 
 :::image type="content" source="media/checks/azure-function-check.png" alt-text="Configuring Azure function check.":::
@@ -169,6 +172,14 @@ You can also see the complete logs of the policy checks from the pipeline view.
 :::image type="content" source="media/checks/policy-check-failed-logs.png" alt-text="Viewing detailed logs.":::
 
 * * *
+
+## Exclusive lock
+
+The **exclusive lock** check allows only a single run from the pipeline to proceed.
+All stages in all runs of that pipeline which use the resource are paused.
+When the stage using the lock completes, then another stage can proceed to use the resource.
+Also, only one stage will be allowed to continue.
+Any other stages which tried to take the lock will be cancelled.
 
 ## FAQ
 
