@@ -300,7 +300,7 @@
   - name: Deploy pull request builds
     href: release/deploy-pull-request-builds.md
   - name: Classic CD pipelines
-    href: release/define-multistage-release-process.
+    href: release/define-multistage-release-process.md
   - name: Pipelines with PowerShell DSC
     href: release/dsc-cicd.md
   - name: Stage templates in Azure Pipelines
