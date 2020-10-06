@@ -20,8 +20,6 @@
     displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers
   - name: Multi-stage pipelines user experience
     href: get-started/multi-stage-pipelines-experience.md
-  - name: Pipelines with PowerShell DSC
-    href: get-started/dsc-cicd.md
 # - name: Clean up pipeline steps
 #   href: get-started/pipelines-get-started.md
 - name: Pipeline basics
@@ -302,7 +300,9 @@
   - name: Deploy pull request builds
     href: release/deploy-pull-request-builds.md
   - name: Classic CD pipelines
-    href: release/define-multistage-release-process.md
+    href: release/define-multistage-release-process.
+  - name: Pipelines with PowerShell DSC
+    href: release/dsc-cicd.md
   - name: Stage templates in Azure Pipelines
     href: release/env-templates.md
   - name: Deploy apps to Azure (Classic)
