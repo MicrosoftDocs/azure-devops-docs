@@ -166,7 +166,6 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
 
 [!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
 
-
 ::: moniker range="azure-devops-2019"
 
 > [!NOTE]
@@ -174,41 +173,31 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
 
 ::: moniker-end
 
+
+[!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
+
 ::: moniker range="< azure-devops"
 
-For the [On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model), you can customize work item types to support these restriction requests: 
+For the [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
 - Restrict who can create or modify a work item 
 - Restrict who can create specific work item types, such as Epics or Features 
 
-For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](/azure/devops/reference/xml/apply-rule-work-item-field#apply-ignore). 
+For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-ignore). 
 
 You  restrict access to work tracking objects in one of two ways:
-- [Set a condition field rule](/azure/devops/reference/xml/apply-rule-work-item-field), [a condition-based field rule](/azure/devops/reference/xml/assign-conditional-based-values-and-rules) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
-- By [adding WITs to the Hidden Categories group](/azure/devops/reference/xml/use-categories-to-group-work-item-types), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](/azure/devops/boards/backlogs/work-item-template) that opens the work item form and share that link with those team members who you do want to create them. 
+- [Set a condition field rule](../../reference/xml/apply-rule-work-item-field.md), [a condition-based field rule](../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
+- By [adding WITs to the Hidden Categories group](../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
    
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2020"
 
-## Restrict modification of select fields based on a user or group 
- 
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
-
-::: moniker range="azure-devops"
 
 ## Restrict modification of closed work items
- 
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/restrict-modification-closed-work-items.md)]
 
 ::: moniker range="< azure-devops"
-
-## Restrict modification of closed work items
-
 
 Depending on your business processes, you may want to prevent users from continuing to modify or update work items that have been closed or completed. You can add rules to work item types to prevent users from re-opening closed work items. 
 
@@ -227,7 +216,7 @@ For on-premises deployments, you can add rules to a work item type to prevent re
 </TRANSITION>  
 ```
 
-To learn more, see [Apply a field rule](/azure/devops/reference/xml/apply-rule-work-item-field).  
+To learn more, see [Apply a field rule](../../reference/xml/apply-rule-work-item-field.md).  
 
 ::: moniker-end
 

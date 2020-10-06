@@ -3,13 +3,13 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 5/2/2019
+ms.date: 08/19/2020
 monikerRange: '>= azure-devops-2020'
 ---
 
 # Deployment jobs
 
-[!INCLUDE [version-team-services](../includes/version-team-services.md)]
+[!INCLUDE [version-2020-rtm](../includes/version-server-2020-rtm.md)]
 
 > [!IMPORTANT]
 > - Job and stage names cannot contain keywords.
@@ -353,9 +353,7 @@ In addition, deployment jobs can be run as a [container job](container-phases.md
  
 Define output variables in a deployment job's [lifecycle hooks](#descriptions-of-lifecycle-hooks) and consume them in other downstream steps and jobs within the same stage. 
 
-   > [!NOTE] 
-   > You cannot consume output variables in different stages. 
-   > To share variables between stages, output an [artifact](../artifacts/pipeline-artifacts.md) in one stage and then consume it in a subsequent stage.
+To share variables between stages, output an [artifact](../artifacts/pipeline-artifacts.md) in one stage and then consume it in a subsequent stage, or use the `stageDependencies` syntax described in [variables](variables.md#use-outputs-in-a-different-stage).
  
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
@@ -376,9 +374,9 @@ While executing deployment strategies, you can access output variables across jo
       increments: [10,20]  # creates multiple jobs, one for each increment. Output variable can be referenced with this.
       deploy:
         steps:
-        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+        - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
           name: setvarStep
-        - script: echo $(setvarStep.myOutputVar)
+        - bash: echo $(setvarStep.myOutputVar)
           name: echovar
 
 # Map the variable from the job
@@ -405,9 +403,9 @@ For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
     runOnce:
       deploy:
         steps:
-        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+        - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
           name: setvarStep
-        - script: echo $(setvarStep.myOutputVar)
+        - bash: echo $(setvarStep.myOutputVar)
           name: echovar
 
 # Map the variable from the job
@@ -436,9 +434,9 @@ stages:
       runOnce:
         deploy:
           steps:
-          - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+          - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
             name: setvarStep
-          - script: echo $(System.JobName)
+          - bash: echo $(System.JobName)
   - deployment: A2
     pool:
       vmImage: 'ubuntu-16.04'

@@ -12,9 +12,9 @@ monikerRange: '>= tfs-2015'
 
 # Add Check-In Policies
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
-Administrators of Team Foundation version control can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control, for example a user can be required to associate a work item with a changeset. For more information about check-ins, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411). By default, the following check-in policy types are available:
+Administrators of Team Foundation version control can add check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to source control, for example a user can be required to associate a work item with a changeset. For more information about check-ins, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)). By default, the following check-in policy types are available:
 
 -   **Builds**   Requires that the last build was successful before a check-in.
 
@@ -67,4 +67,4 @@ Administrators of Team Foundation version control can add check-in policy requir
 
 #### Other Resources
 
-[Walkthrough: Customizing Checkin Policies and Notes](https://msdn.microsoft.com/library/ms181281)
+[Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100))

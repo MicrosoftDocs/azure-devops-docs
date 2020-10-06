@@ -61,14 +61,6 @@ This guide covers the basics of using Azure Pipelines to work with Maven artifac
     Copy-Item -Force "$(settingsxml.secureFilePath)" "${HOME}/.m2/settings.xml"
     ```
 
-## Publish your package
-
-Run this command to publish your package:
-
-```
-mvn deploy
-```
-
 ::: moniker-end
 
 ::: moniker range=">=azure-devops-2019"
@@ -122,6 +114,8 @@ Run this command in your project directory to restore your package.
 mvn build
 ```
 
+::: moniker-end
+
 ## Publish your package
 
 Run this command in your project directory to publish your package.
@@ -129,5 +123,3 @@ Run this command in your project directory to publish your package.
 ```
 mvn deploy
 ```
-
-::: moniker-end

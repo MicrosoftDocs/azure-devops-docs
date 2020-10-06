@@ -125,7 +125,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 1. Choose the ... context menu for the node you want to manage and select **Security**.  
 
-    ![Open the security dialog](media/set-permissions-area-node-open.png)
+    ![In the context menu, select Security.](media/set-permissions-area-node-open.png)
 
 ::: moniker-end   
 
@@ -137,7 +137,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 1. Choose the context menu for the node you want to manage.  
 
-    ![Open the security dialog](../../reference/media/ALM_CW_OpenSecurityDialog.png)  
+    ![Choose the context menu for the node you want to manage.](../../reference/media/ALM_CW_OpenSecurityDialog.png)  
 
 2. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 
@@ -189,9 +189,12 @@ To learn more, see [Edit or manage Delivery Plan permissions](../../boards/plans
 
 ## Move or permanently delete work items 
 
-By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the Recycle bin. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
+By default, Project Administrators and Contributors can change the work item type and delete work items by moving them to the **Recycle Bin**. Only Project Administrators can permanently delete work items and test artifacts. Project admins can grant permissions to other team members as needed. 
 
 For example, as a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the project and choose the user or group you want to grant permissions. (To learn how to access project-level **Security**, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).)
+
+> [!NOTE]   
+> The **Move work items out of this project** permission requires the project uses the Inherited process model. 
 
 In this example, we grant members assigned to the team administrator role, who belong to the Team Admin groups, permissions to move work items to another project and to permanently delete work items.   
 

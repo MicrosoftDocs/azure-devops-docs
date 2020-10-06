@@ -238,5 +238,5 @@ Members of the Team Foundation Server Administrators group configure resources f
 
 ## Related articles 
 
-- [Manage projects](../../organizations/projects/index.md)
+- [Manage projects](../../organizations/projects/about-projects.md)
 - [About team, project, and admin settings](../../organizations/settings/about-settings.md)

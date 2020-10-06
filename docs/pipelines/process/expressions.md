@@ -4,20 +4,20 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 06/25/2020
+ms.date: 08/28/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Expressions
 
-**Azure Pipelines | TFS 2018 | TFS 2017.3** 
+**Azure Pipelines | TFS 2018 | TFS 2017.3**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.
-The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run. 
+The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run.
 
 ::: moniker range=">= azure-devops-2019"
 ```yaml
@@ -29,12 +29,12 @@ steps:
 
 Another common use of expressions is in defining variables.
 Expressions can be evaluated at [compile time](runs.md#process-the-pipeline) or at [run time](runs.md#run-each-step).
-Compile time expressions can be used anywhere; runtime expressions can be used in variables and conditions. 
+Compile time expressions can be used anywhere; runtime expressions can be used in variables and conditions.
 
 ```yaml
 # Two examples of expressions used to define variables
 # The first one, a, is evaluated when the YAML file is compiled into a plan.
-# The second one, b, is evaluated at runtime. 
+# The second one, b, is evaluated at runtime.
 # Note the syntax ${{}} for compile time and $[] for runtime expressions.
 variables:
   a: ${{ <expression> }}
@@ -43,7 +43,7 @@ variables:
 
 The difference between runtime and compile time expression syntaxes is primarily what context is available.
 In a compile-time expression (`${{ <expression> }}`), you have access to `parameters` and statically defined `variables`.
-In a runtime expression (`$[ <expression> ]`), you have access to more `variables` but no parameters. 
+In a runtime expression (`$[ <expression> ]`), you have access to more `variables` but no parameters.
 
 In this example, a runtime expression sets the  value of `$(isMain)`. A static variable in a compile expression sets the value of `$(compileVar)`.
 
@@ -81,7 +81,7 @@ variables:
 `True` and `False` are boolean literal expressions.
 
 ### Null
-Null is a special literal expression that's returned from a dictionary miss, e.g. (`variables['noSuch']`). Null can be the output of an expression but cannot be called directly within an expression. 
+Null is a special literal expression that's returned from a dictionary miss, e.g. (`variables['noSuch']`). Null can be the output of an expression but cannot be called directly within an expression.
 
 ### Number
 Starts with '-', '.', or '0' through '9'.
@@ -92,7 +92,7 @@ Must be single-quoted. For example: `'this is a string'`.
 To express a literal single-quote, escape it with a single quote.
 For example: `'It''s OK if they''re using contractions.'`.
 
-You can use a pipe character (`|`) for multiline strings. 
+You can use a pipe character (`|`) for multiline strings.
 
 ```yaml
 myKey: |
@@ -193,8 +193,9 @@ Later, if you edit the YAML file, and set the value of `major` back to 1, then t
 Here is another example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
 
 > [!NOTE]
-> `pipeline.startTime` is not available outside of expressions. `pipeline.startTime` 
+> `pipeline.startTime` is not available outside of expressions. `pipeline.startTime`
 >  formats `system.pipelineStartTime` into a date and time object so that it is available to work with expressions.
+> The default time zone for `pipeline.startTime` is UTC. You can [change the time zone](../../organizations/accounts/change-time-zone.md) for your organization.
 
 
 ```yaml
@@ -204,7 +205,7 @@ jobs:
     a: $[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]
   steps:
   - bash: echo $(a)
-``` 
+```
 
 Here is an example of having a counter that maintains a separate value for PRs and CI runs.
 
@@ -237,7 +238,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Evaluates the trailing parameters and inserts them into the leading parameter string
 * Min parameters: 1. Max parameters: N
 * Example: `format('Hello {0} {1}', 'John', 'Doe')`
-* Uses [.NET custom date and time format specifiers](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) for date formatting (`yyyy`, `yy`, `MM`, `M`, `dd`, `d`, `HH`, `H`, `m`, `mm`, `ss`, `s`, `f`, `ff`, `ffff`, `K`)
+* Uses [.NET custom date and time format specifiers](/dotnet/standard/base-types/custom-date-and-time-format-strings) for date formatting (`yyyy`, `yy`, `MM`, `M`, `dd`, `d`, `HH`, `H`, `m`, `mm`, `ss`, `s`, `f`, `ff`, `ffff`, `K`)
 * Example: `format('{0:yyyyMMdd}', pipeline.startTime)`. In this case `pipeline.startTime` is a special date time object variable.
 * Escape by doubling braces. For example: `format('literal left brace {{ and literal right brace }}')`
 
@@ -273,7 +274,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Each element in the array is converted to a string. Complex objects are converted to empty string.
 * If the right parameter is not an array, the result is the right parameter converted to a string.
 
-In this example, a semicolon gets added between each item in the array. The parameter type is an object. 
+In this example, a semicolon gets added between each item in the array. The parameter type is an object.
 
 ```yaml
 parameters:
@@ -285,7 +286,7 @@ parameters:
     - ZOO
 
 variables:
-   A: ${{ join(';',parameters.myArray) }} 
+   A: ${{ join(';',parameters.myArray) }}
 
 steps:
   - script: echo $A # outputs FOO;BAR;ZOO
@@ -400,8 +401,8 @@ You can use the following status check functions as expressions in conditions, b
 ### succeeded
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
 * For a job:
-  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded. 
-  * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, it will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition. 
+  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
+  * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, it will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition.
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
   * Evaluates to `False` if the pipeline is canceled.
 
@@ -415,9 +416,9 @@ You can use the following status check functions as expressions in conditions, b
 
 ## Conditional insertion
 
-You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax. 
+You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax.
 
-For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md). 
+For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md).
 
 ### Conditionally assign a variable
 ```yml
@@ -458,9 +459,12 @@ Expressions can use the dependencies context to reference previous jobs or stage
 * Reference output variables in the previous stage in a stage
 * Reference output variables in a job in a previous stage in the following stage
 
-The context is called `dependencies` for jobs and stages and works much like variables. 
-Inside a job, if you refer to an output variable from a job in another stage, the context is called `stageDependencies`. 
+The context is called `dependencies` for jobs and stages and works much like variables.
+Inside a job, if you refer to an output variable from a job in another stage, the context is called `stageDependencies`.
 
+If you experience issues with output variables having quote characters (`'` or `"`) in them, see [this troubleshooting guide](../troubleshooting/troubleshooting.md#variables-having--single-quote-appended).
+
+### Stage to stage dependencies
 Structurally, the `dependencies` object is a map of job and stage names to `results` and `outputs`.
 Expressed as JSON, it would look like:
 
@@ -469,39 +473,79 @@ Expressed as JSON, it would look like:
   "<STAGE_NAME>" : {
     "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
     "outputs": {
-        "jobName.stepName.variableName": "variable"
+        "jobName.stepName.variableName": "value"
     }
-  }
   },
-    "...": {
+  "...": {
     // another stage
   }
 }
 ```
 
-The `stageDependencies` object is structured the same way. Within a single stage, the current stage will not appear. In that case, you will directly reference the dependencies. 
+Use this form of `dependencies` to map in variables or check conditions at a stage level.
+In this example, Stage B runs whether Stage A is successful or skipped.
+
+```yaml
+stages:
+- stage: A
+  condition: false
+  jobs:
+  - job: A1
+    steps:
+    - script: echo Job A1
+- stage: B
+  condition: in(dependencies.A.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
+  jobs:
+  - job: B1
+    steps:
+    - script: echo Job B1
+```
+
+Stages can also use output variables from another stage.
+In this example, Stage B depends on a variable in Stage A.
+
+```yaml
+stages:
+- stage: A
+  jobs:
+  - job: A1
+    steps:
+     - bash: echo "##vso[task.setvariable variable=shouldrun;isOutput=true]true"
+     # or on Windows:
+     # - script: echo ##vso[task.setvariable variable=shouldrun;isOutput=true]true
+       name: printvar
+
+- stage: B
+  condition: and(succeeded(), eq(dependencies.A.outputs['A1.printvar.shouldrun'], 'true'))
+  dependsOn: A
+  jobs:
+  - job: B1
+    steps:
+    - script: echo hello from Stage B
+```
+
+> [!NOTE]
+> By default, each stage in a pipeline depends on the one just before it in the YAML file.
+> If you need to refer to a stage that isn't immediately prior to the current one, you can override this automatic default by adding a `dependsOn` section to the stage.
+
+### Job to job dependencies within one stage
+At the job level within a single stage, the `dependencies` data doesn't contain stage-level information.
 
 ```json
 "dependencies": {
-    "<JOB_NAME>": {
-      "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
-      "outputs": {
-        "variable1": "value1",
-        "variable2": "value2",
-      }
-    },
-      "...": {
-    // another job
-  }
+  "<JOB_NAME>": {
+    "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
+    "outputs": {
+      "stepName.variableName": "value1"
+    }
   },
-    "...": {
-    // another stage
+  "...": {
+    // another job
   }
 }
 ```
-::: moniker range=">=azure-devops-2020"
 
-You can check job status with dependencies. In this example, Job A will always be skipped and Job B will run.
+In this example, Job A will always be skipped and Job B will run.
 Job C will run, since all of its dependencies either succeed or are skipped.
 
 ```yaml
@@ -524,67 +568,56 @@ jobs:
       in(dependencies.b.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
     )
   steps:
-  - script: Job C
+  - script: echo Job C
 ```
 
-Similarly, in this example Stage A will always be skipped and Stage B will run. 
-
-```yaml
-stages:
-- stage: A
-  condition: false
-  jobs:
-  - job: A1
-    steps:
-    - script: echo Job A1
-- stage: B
-  condition: in(dependencies.A.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
-  jobs:
-  - job: B1
-    steps:
-    - script: echo Job B1
-```
-
-
-You can also use dependencies to reference output variables in the previous job in the same stage. In this example, Job B depends on an output variable from Job A.
+In this example, Job B depends on an output variable from Job A.
 
 ```yaml
 jobs:
 - job: A
   steps:
-  - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+  - bash: echo "##vso[task.setvariable variable=shouldrun;isOutput=true]true"
+  # or on Windows:
+  # - script: echo ##vso[task.setvariable variable=shouldrun;isOutput=true]true
     name: printvar
 
 - job: B
-  condition: and(succeeded(), ne(dependencies.A.outputs['printvar.skipsubsequent'], 'true'))
+  condition: and(succeeded(), eq(dependencies.A.outputs['printvar.shouldrun'], 'true'))
   dependsOn: A
   steps:
   - script: echo hello from B
 ```
 
 
-By default, each stage in a pipeline depends on the one just before it in the YAML file. Stages can also use output variables from the prior stage. Here Stage B depends on a variable in Stage A.
+::: moniker range=">=azure-devops-2020"
 
-```yaml
-stages:
-- stage: A
-  jobs:
-  - job: A1
-    steps:
-     - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
-       name: printvar
+### Job to job dependencies across stages
 
-- stage: B
-  condition: and(succeeded(), ne(stageDependencies.A.outputs['A1.printvar.skipsubsequent'], 'true'))
-  dependsOn: A
-  jobs:
-  - job: B1
-    steps:
-    - script: echo hello from Stage B
+At the job level, you can also reference outputs from a job in a previous stage.
+This requires using the `stageDependencies` context.
+
+```json
+"stageDependencies": {
+  "<STAGE_NAME>" : {
+    "<JOB_NAME>": {
+      "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
+      "outputs": {
+          "stepName.variableName": "value"
+      }
+    },
+    "...": {
+      // another job
+    }
+  },
+  "...": {
+    // another stage
+  }
+}
 ```
 
-
-You can also reference output variables that are in a job in a previous stage. In this example, there is both a job dependency and a stage dependency. 
+In this example, job B1 will run whether job A1 is successful or skipped.
+Job B2 will check the value of the output variable from job A1 to determine whether it should run.
 
 ```yaml
 trigger: none
@@ -597,22 +630,22 @@ stages:
   jobs:
   - job: A1
     steps:
-     - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+     - bash: echo "##vso[task.setvariable variable=shouldrun;isOutput=true]true"
+     # or on Windows:
+     # - script: echo ##vso[task.setvariable variable=shouldrun;isOutput=true]true
        name: printvar
-     - script: echo "##vso[task.setvariable variable=stageexists;isOutput=true]true"
-       name: stagevar
 
 - stage: B
-  condition: and(succeeded(), ne(dependencies.A.A1.outputs['printvar.skipsubsequent'], 'true'))
   dependsOn: A
   jobs:
   - job: B1
+    condition: in(stageDependencies.A.A1.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
     steps:
-    - script: echo hello from Stage B
+    - script: echo hello from Job B1
   - job: B2
-    condition: ne(stageDependencies.A.A1.outputs['stagevar.stageexists'], 'true')
+    condition: eq(stageDependencies.A.A1.outputs['printvar.shouldrun'], 'true')
     steps:
-     - script: echo hello from Stage B2
+     - script: echo hello from Job B2
 
 ```
 
@@ -646,11 +679,11 @@ This would return:
 
 ## Type casting
 
-Values in an expression may be converted from one type to another as the expression gets evaluated. 
-When an expression is evaluated, the parameters are coalesced to the relevant data type and then turned back into strings. 
+Values in an expression may be converted from one type to another as the expression gets evaluated.
+When an expression is evaluated, the parameters are coalesced to the relevant data type and then turned back into strings.
 
-For example, in this YAML, the values `true` and `false` are converted  to `1` and `0` when the expression is evaluated. 
-The function `lt()` returns `True` when the left parameter is less than the right parameter. 
+For example, in this YAML, the values `true` and `false` are converted  to `1` and `0` when the expression is evaluated.
+The function `lt()` returns `True` when the left parameter is less than the right parameter.
 
 ```yaml
 variables:
@@ -659,12 +692,12 @@ variables:
 
 steps:
 - script: echo $(firstEval)
-- script: echo $
+- script: echo $(secondEval)
 ```
 
 
-In this example, the values `variables.emptyString` and the empty string both evaluate as empty strings. 
-The function `coalesce()` evaluates the parameters in order, and returns the first value that does not equal null or empty-string. 
+In this example, the values `variables.emptyString` and the empty string both evaluate as empty strings.
+The function `coalesce()` evaluates the parameters in order, and returns the first value that does not equal null or empty-string.
 
 
 ```yaml
@@ -704,7 +737,7 @@ To string:
 ### Number
 
 * To Boolean: `0` &rarr; `False`, any other number &rarr; `True`
-* To version: Must be greater than zero and must contain a non-zero decimal. Must be less than [Int32.MaxValue](https://msdn.microsoft.com/library/system.int32.maxvalue%28v=vs.110%29.aspx) (decimal component also).
+* To version: Must be greater than zero and must contain a non-zero decimal. Must be less than [Int32.MaxValue](/dotnet/api/system.int32.maxvalue) (decimal component also).
 * To string:
 Converts the number to a string with no thousands separator and no decimal separator.
 
@@ -712,7 +745,7 @@ Converts the number to a string with no thousands separator and no decimal separ
 
 * To Boolean: `''` (the empty string) &rarr; `False`, any other string &rarr; `True`
 * To null: `''` (the empty string) &rarr; `Null`, any other string not convertible
-* To number: `''` (the empty string) &rarr; 0, otherwise, runs C#'s `Int32.TryParse` using [InvariantCulture](https://msdn.microsoft.com/library/system.globalization.cultureinfo.invariantculture%28v=vs.110%29.aspx) and the following rules: AllowDecimalPoint | AllowLeadingSign | AllowLeadingWhite | AllowThousands | AllowTrailingWhite. If `TryParse` fails, then it's not convertible.
+* To number: `''` (the empty string) &rarr; 0, otherwise, runs C#'s `Int32.TryParse` using [InvariantCulture](/dotnet/api/system.globalization.cultureinfo.invariantculture) and the following rules: AllowDecimalPoint | AllowLeadingSign | AllowLeadingWhite | AllowThousands | AllowTrailingWhite. If `TryParse` fails, then it's not convertible.
 * To version:
 runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum. If `TryParse` fails, then it's not convertible.
 
@@ -728,30 +761,21 @@ runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum.
 ### I want to do something that is not supported by expressions. What options do I have for extending Pipelines functionality?
 
 You can customize your Pipeline with a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it with Bash. This script outputs two new variables, `$MAJOR_RUN` and `$MINOR_RUN`, for the major and minor run numbers.
-The two variables are then used to create two pipeline variables, `$MAJOR` and `$MINOR` with [task.setvariable](../scripts/logging-commands.md#task-commands). These variables are available to downstream steps. To share variables across pipelines see [Variable groups](../../pipelines/library/variable-groups.md).
+The two variables are then used to create two pipeline variables, `$major` and `$minor` with [task.setvariable](../scripts/logging-commands.md#task-commands). These variables are available to downstream steps. To share variables across pipelines see [Variable groups](../../pipelines/library/variable-groups.md).
 
 ```yaml
-trigger:
-    batch: true
-    branches:
-        include:
-        - master
 steps:
 - bash: |
     MAJOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f1)
     echo "This is the major run number: $MAJOR_RUN"
-    
+    echo "##vso[task.setvariable variable=major]$MAJOR_RUN"
+
     MINOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f2)
     echo "This is the minor run number: $MINOR_RUN"
-    
-    # create pipeline variables
-    echo "##vso[task.setvariable variable=major]$MAJOR_RUN"
     echo "##vso[task.setvariable variable=minor]$MINOR_RUN"
 
-- bash: |
-    echo My pipeline variable for major run is $MAJOR
-    echo My pipeline variable for minor run is $MINOR
+- bash: echo "My pipeline variable for major run is $(major)"
+- bash: echo "My pipeline variable for minor run is $(minor)"
 ```
 
 <!-- ENDSECTION -->
-

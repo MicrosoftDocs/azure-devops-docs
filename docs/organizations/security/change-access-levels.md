@@ -18,7 +18,7 @@ ms.date: 06/02/2019
 
 Users must be added to a group with the appropriate permissions, to connect and use the functions and features that Azure DevOps Server provides. To use select web portal features, they must also belong to the access level that enables access to that feature. For an overview of each access level, see [About access levels](access-levels.md).
 
-This article applies to managing access levels for project collections defined on an on-premises Azure DevOps. To manage access levels for the Azure DevOps Services (the cloud service), see [Add users to your organization or project](../accounts/add-organization-users.md). For Azure DevOps feature availability, see the [Azure DevOps Feature Matrix](/azure/devops/user-guide/alm-devops-features).
+This article applies to managing access levels for project collections defined on an on-premises Azure DevOps. To manage access levels for the Azure DevOps Services (the cloud service), see [Add users to your organization or project](../accounts/add-organization-users.md). For Azure DevOps feature availability, see the [Azure DevOps Feature Matrix](../../user-guide/alm-devops-features.md).
 
 > [!IMPORTANT]  
 > Make sure that you select the correct version of this article for Azure DevOps Services or Azure DevOps Server, renamed from Team Foundation Server (TFS). The version selector is located above the table of contents. <br/>
@@ -37,7 +37,7 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 ## Prerequisites
 
-* You must be a member of the Administrators group. If you aren't a member, [get added now](https://docs.microsoft.com/azure/devops/server/admin/add-administrator?view=azure-devops).
+* You must be a member of the Administrators group. If you aren't a member, [get added now](/azure/devops/server/admin/add-administrator?view=azure-devops).
 * <a id="add-user" />If you're managing access for a large group of users, it's a best practice to first create either a [Windows group, a group in Active Directory, or Azure DevOps security group](/azure/devops/server/admin/setup-ad-groups), and then add individuals to those groups.
 
 ::: moniker-end
@@ -189,5 +189,4 @@ For details on the features available to each access level, see [About access le
 - [About access levels](access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)  
-- [Web portal navigation](../../project/navigation/index.md)  
-
+- [Web portal navigation](../../project/navigation/index.md)

@@ -2,7 +2,7 @@
 title: View and add work items from Work Items hub
 titleSuffix: Azure Boards
 description: View and filter work items user stories, issues, bugs, & other work items from the Work Items hub and 7 personalized pivot views   
-ms.custom: boards-work-items, seodec18, contentperfq4, devx-track-azurecli
+ms.custom: boards-work-items, seodec18, contentperfq4
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
@@ -150,7 +150,7 @@ Additional menu options support the following tasks:
 
 You can view a new work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item?#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI
+```azurecli
 az boards work-item show --id
                          [--open]
                          [--org]
@@ -166,7 +166,7 @@ az boards work-item show --id
 
 The following command opens the bug with the ID 864 in your default web browser. It also displays the results in the Azure DevOps CLI in table format.
 
-```CLI
+```azurecli
 az boards work-item show --id 864  --open --output table
 
 ID    Type    Title      Assigned To          State
@@ -314,5 +314,5 @@ Use the following three controls to manage your views in the web portal.
 - [Work across projects](../../project/navigation/work-across-projects.md)
 
 > [!NOTE]
-> You can create and manage work items from the command line or scripts using the [Azure DevOps CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest).
+> You can create and manage work items from the command line or scripts using the [Azure DevOps CLI](/cli/azure/ext/azure-devops/?view=azure-cli-latest&preserve-view=true).
 

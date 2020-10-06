@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Undo Changes in Another User's Workspace
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Updated: October 2011
 
@@ -20,7 +20,7 @@ If a team member is blocked from checking in a file that is locked by someone el
 
 If you must also remove an exclusive lock on a file, but not the pending changes, you can use the **tf lock** command. For more information, see [Lock Command](lock-command.md).
 
-If you must also delete another user's workspace, you can use the **tf workspace** command. For more information, see [Remove a Workspace](https://msdn.microsoft.com/library/ms245474).
+If you must also delete another user's workspace, you can use the **tf workspace** command. For more information, see [Remove a Workspace](/previous-versions/ms245474(v=vs.110)).
 
 **Required Permissions**
 

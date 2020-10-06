@@ -49,7 +49,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 
 3. Choose a folder within a breadcrumb to open a query folder.
 	> [!div class="mx-imgBorder"]  
-	> ![queries breadcrumb example](media/example-queries/queries-breadcrumb-example.png)
+	> ![Screenshot of queries breadcrumb example.](media/example-queries/queries-breadcrumb-example.png)
 
 ::: moniker-end
 
@@ -82,17 +82,17 @@ Open **Queries>All**. Under the **My Queries** section are two fully customizabl
 - Favorited queries (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![queries selector](media/example-queries/queries-selector.png)  
+	> ![Screenshot of favorited queries breadcrumb selector.](media/example-queries/queries-selector.png)  
 	Or, you can select from any of your favorited items by choosing the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon and choose **Favorites**.  
 
-	![queries selector](media/example-queries/favorites-selector.png)  
+	![[Screenshot of your favorites listing queries.](media/example-queries/favorites-selector.png)  
 
 ### How do I quickly navigate to queries within the same query folder?  
 
 When viewing a query, you can use the queries breadcrumb selector (:::image type="icon" source="../../media/icons/breadcrumb-selector.png" border="false"::: the breadcrumb icon changes to :::image type="icon" source="../../media/icons/context-menu-selector.png" border="false"::: a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
 
 > [!div class="mx-imgBorder"]  
-> ![queries breadcrumb example](media/view-run-queries/folder-selector.png)  
+> ![Screenshot of queries breadcrumb selector.](media/view-run-queries/folder-selector.png)  
 
 ### Can I run several queries at the same time? 
  
@@ -111,7 +111,7 @@ Yes. Simply open a query in a new browser tab to run several queries at the same
 
 You can run a query in the CLI with the [az boards query](/cli/azure/ext/azure-devops/boards#ext-azure-devops-az-boards-query) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az boards query [--id]
                 [--org]
                 [--path]
@@ -131,7 +131,7 @@ az boards query [--id]
 
 The following command runs a query with the specified ID and shows the result in table format.  
 
-```CLI
+```azurecli
 az boards query --id 6c286d74-26a5-4cce-bfcf-bf9123495bfe  --output table
 
 Priority    Node Name         Work Item Type    Title                             Remaining Work
@@ -146,7 +146,7 @@ Priority    Node Name         Work Item Type    Title                           
 
 The following command runs a query with the specified WIQL and shows the result in table format.  
 
-```CLI 
+```azurecli 
 az boards query --wiql "SELECT [Microsoft.VSTS.Common.Priority], [System.NodeName], [System.WorkItemType], [System.Title], [Microsoft.VSTS.Scheduling.RemainingWork], [System.AssignedTo], [System.State], [System.Tags], [System.AreaPath] FROM workitems WHERE [System.WorkItemType] = 'Bug' AND [System.AreaPath] = 'Fabrikam Fiber' ORDER BY [System.WorkItemType]" --output table
 
 Priority    Node Name       Work Item Type    Title                  Remaining Work
@@ -175,7 +175,7 @@ From either the **Favorites** or **All** page, choose the  :::image type="icon" 
 For shared queries, you can also choose to perform one of these tasks: 
 - **Add to team queries**: Select the team to add the query as a team favorite
 - **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).   
-- **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/add-widget-to-dashboard.md). 
+- **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
 
 ::: moniker-end
 
@@ -198,14 +198,14 @@ You can perform most tasks for viewing and running queries from each of the quer
 > [!div class="mx-tdCol2BreakAll"]
 > |Task |Favorites |All | 
 > |-------------|----------|---------| 
-> |View all favorited queries, yours or a team you belong to | ![Checkmark](../media/icons/checkmark.png) |  | 
-> |View all your queries or shared queries for the current project |  | ![Checkmark](../media/icons/checkmark.png) | 
-> |Run a query, open the context menu for a query  |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) |
-> |Expand or collapse container folders or query folders |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) |
-> |Filter the list of queries |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) |
-> |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |![Checkmark](../media/icons/checkmark.png) | 
-> |Unfavorite a query: Click ![Un-favorite](../media/icons/icon-favorited.png) |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) | 
-> |Add a new query: Click ![plus sign](../media/icons/add-new-query.png) |![Checkmark](../media/icons/checkmark.png) |![Checkmark](../media/icons/checkmark.png) | 
+> |View all favorited queries, yours or a team you belong to | ✔️ |  | 
+> |View all your queries or shared queries for the current project |  | ✔️ | 
+> |Run a query, open the context menu for a query  |✔️ |✔️ |
+> |Expand or collapse container folders or query folders |✔️ |✔️ |
+> |Filter the list of queries |✔️ |✔️ |
+> |Favorite a query: Click ![Favorite](../media/icons/icon-favorite-star.png) |  |✔️ | 
+> |Unfavorite a query: Click :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
+> |Add a new query: Click :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
 
 
 For details on adding new queries, see [Create managed queries with the query editor](using-queries.md). 
@@ -218,7 +218,9 @@ For details on adding new queries, see [Create managed queries with the query ed
 
 Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. 
 
-<img src="media/queries-all-filter.png" alt="List of all queries in the project filtered by WIT IQ keyword criteria" style="border: 1px solid #cccccc;"/>
+[!div class="mx-imgBorder"]  
+![Screenshot showing all queries in the project filtered by WIT IQ keyword criteria.](media/queries-all-filter.png)
+
 ::: moniker-end
 
 <a id="email-query" />

@@ -15,7 +15,7 @@ ms.date: 11/07/2019
 
 [!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]  
 
-In this article, learn how to configure team tools and manage teams in Azure DevOps.
+Learn how to configure team tools and manage teams in Azure DevOps.
 
 [!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
 
@@ -63,7 +63,7 @@ Optional tasks to consider include:
 	You can then complete the following tasks: 
 	- Add [team members](../security/add-users-team-project.md#add-team-members)
 	- Add [team admins](add-team-administrator.md)
-	- Navigate to [team notifications](../../notifications/howto-manage-team-notifications.md)
+	- Navigate to [team notifications](../../notifications/manage-team-group-notifications.md)
 	- Navigate to team [iterations](set-iteration-paths-sprints.md#open-team-settings) and [area paths](set-area-paths.md#open-team-settings). 
 	- Update the [team description or profile picture](#team-description).
 
@@ -430,7 +430,7 @@ Team settings also include the team name, description, and team profile image. T
 
 ## Manage team notifications 
 
-Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. A number of alerts are defined for each team. For details, see [Manage team alerts](../../notifications/howto-manage-team-notifications.md).
+Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. A number of alerts are defined for each team. For details, see [Manage team alerts](../../notifications/manage-team-group-notifications.md).
 
 
 <a id="team-rooms" />
@@ -439,7 +439,7 @@ Team administrators can add and modify alerts so that the team can receive email
 
 ## Manage team rooms 
 
-Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](../../notifications/collaborate-in-a-team-room.md).  
+Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room).  
 
 > [!NOTE]  
 > Team rooms are deprecated for TFS 2018 and later versions as described in [Deprecation of team rooms](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md).   
@@ -451,5 +451,4 @@ Team administrators can add users and events to team rooms, and add team rooms. 
 - [About projects and scaling your organization](../projects/about-projects.md)
 - [About teams and Agile tools](about-teams-and-settings.md)  
 - [Add teams](add-teams.md) 
-- [Add a team administrator](add-team-administrator.md) 
-
+- [Add a team administrator](add-team-administrator.md)

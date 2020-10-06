@@ -8,7 +8,7 @@ ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 10/14/2019
+ms.date: 08/18/2020
 ---
 
 # Manage issues or impediments 
@@ -24,7 +24,7 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 ::: moniker range="> tfs-2018"
 
 > [!IMPORTANT]  
-> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) process. By default, these work item types don't appear on the product backlog or taskboard. 
+> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
 > 
 > If your project was created using the [Basic](../get-started/plan-track-work.md) process, which tracks work using Epics, Issues, and Tasks, then you track Issues using the product backlog. To learn more, see [Track issues and tasks](../get-started/plan-track-work.md).
 
@@ -34,7 +34,7 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 ::: moniker range="<= tfs-2018"
 
 > [!IMPORTANT]  
-> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) process. By default, these work item types don't appear on the product backlog or taskboard. 
+> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
 
 ::: moniker-end
 
@@ -125,9 +125,9 @@ By default, issues and impediments don't appear on your backlog. Instead, you tr
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). You can only have them appear on your backlog if your project is customized using the On-premises XML process model. To learn more, see [Customize the On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model).
+Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). You can only have them appear on your backlog if your project is customized using the On-premises XML process model. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
 
 ::: moniker-end
 
@@ -140,11 +140,20 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 <a id="add-to-backlog" /> 
 
 
+::: moniker range="azure-devops"
+
+<a id="add-to-backlog" /> 
+
+## Add issues or impediments to your product backlog  
+
+If you want to track issues or impediments along with your requirements or a portfolio backlog, you can by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
+
+::: moniker-end
+
+
 ## Related articles 
 
 - [Add work items](add-work-items.md)
 - [Work item form controls](../work-items/work-item-form-controls.md)
 - [Manage bugs or code defects](manage-bugs.md)
-- [Create your backlog](create-your-backlog.md) 
-
-
+- [Create your backlog](create-your-backlog.md)

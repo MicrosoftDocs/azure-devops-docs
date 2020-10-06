@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # View file changes using annotate
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 You can annotate a file to learn who made changes and what changes they made in all earlier versions of the file.
 

@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2015'
 
 # Explore the feature isolation strategy using Team Foundation Version Control (TFVC)
 
-Are you planning to implement [Team Foundation Version Control](overview.md)'s feature isolation strategy in Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
+Are you planning to implement [Team Foundation Version Control](./what-is-tfvc.md)'s feature isolation strategy in Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
 
 - Is it practical with large development teams?
 - Does it align well with your agile process(es)?
@@ -70,7 +70,7 @@ This strategy also keeps features from getting out of sync with the parent branc
 >
 > Keep your feature branch **short-lived**! 
 > 
-> Unlike main or other central branches, feature branches have a limited life time. They are scoped to features, bugs, and hot fixes, which are typically developed within a sprint or iteration. Consider removing your feature branch once your feature has met your team's definition of done [DoD](https://aka.ms/vsardod) and changes have been merged with the parent branch.
+> Unlike main or other central branches, feature branches have a limited life time. They are scoped to features, bugs, and hot fixes, which are typically developed within a sprint or iteration. Consider removing your feature branch once your feature has met your team's definition of done [DoD](/archive/blogs/visualstudioalmrangers/?p=2395) and changes have been merged with the parent branch.
 
 As the number of your feature branches increase, your storage requirements and branch hierarchy visualization noise increases. With only five feature branches, the diagram is already noisy and rapidly losing its monitoring qualities. Can you imagine the impact of your team creating hundreds of feature branches?
  
@@ -78,7 +78,7 @@ As the number of your feature branches increase, your storage requirements and b
 
 Similarly, the **Source Control Explorer** view becomes noisy and impractical as the number of branches increases. Unless you have a consistent naming convention, finding a specific feature branch among hundreds of feature branches is challenging.
 
-![Feature isolation noise](./media/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise-vside.png)
+![Feature isolation noise in Source Control Explorer view.](./media/effective-feature-isolation-on-tfvc/feature-isolation-basic-noise-vside.png)
 
 > [!TIP]
 >
@@ -114,8 +114,8 @@ Now that you're using feature isolation, you should explore continuous integrati
 * [Branching Strategies with TFVC (new guidance)](./effective-tfvc-branching-strategies-for-devops.md)
 * [Branching and Merging Guidance (latest copy of classic guidance)](https://vsardata.blob.core.windows.net/projects/TFS%20Version%20Control%20Part%201%20-%20Branching%20Strategies.pdf)
 * [Continuous Integration](/azure/devops/learn/what-is-continuous-integration)
-* [Feature Toggles](https://msdn.microsoft.com/magazine/dn683796.aspx)
-* [Team Foundation Version Control (TFVC)](overview.md)
+* [Feature Toggles](/archive/msdn-magazine/2014/may/alm-rangers-software-development-with-feature-toggles)
+* [Team Foundation Version Control (TFVC)](./what-is-tfvc.md)
 
 > Author: Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  

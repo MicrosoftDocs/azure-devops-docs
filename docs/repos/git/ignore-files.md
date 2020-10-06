@@ -5,13 +5,13 @@ description: Use gitignore, git update-index, and repo management to ignore and 
 ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
 ms.technology: devops-code-git 
 ms.topic: tutorial
-ms.date: 11/15/2019
+ms.date: 08/24/2020
 monikerRange: '>= tfs-2013'
 ---
 
 # Ignore file changes with Git
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Not every file created or updated in your code should be committed to Git.
 Temporary files from your development environment, test outputs, and logs are all examples of files that you create but aren't part of your codebase.
@@ -149,15 +149,15 @@ To resume change tracking:
 git update-index --no-assume-unchanged <file>
 ```
 
-#### Permanently ignore changes to a file
+#### Permanently stop tracking a file
 
-If a file is already tracked by Git, adding that file to your *.gitignore* isn't enough to ignore changes to the file.
-You also need to remove the information about the file from Git's index.
+If a file is already tracked by Git, `.gitignore` doesn't apply.
+Git will continue to track changes to that file.
 
-> [!NOTE]
-> These steps don't delete the file from your system. They just tell Git to ignore future updates to the file.
+If you want to stop tracking a file, you need to explicitly tell Git you want it removed from tracking.
+By following these directions, the file will remain in your local working directory but will no longer be tracked in Git.
 
-1. Add the file in your *.gitignore*.
+1. Add the file in your `.gitignore`.
 
 1. Run the following command:
 

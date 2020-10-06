@@ -12,9 +12,9 @@ monikerRange: '>= tfs-2015'
 
 # Edit Check-In Policies
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
-Administrators of Team Foundation version control can add and edit check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to version control; for example a user can be required to associate a work item with a changeset. For more information on check-ins, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411). Before editing a check-in policy, you must first create one. For more information, see [Add Check-In Policies](add-check-policies.md). The default available check-in policy types include:
+Administrators of Team Foundation version control can add and edit check-in policy requirements. These check-in policies require the user to take actions when they conduct a check-in to version control; for example a user can be required to associate a work item with a changeset. For more information on check-ins, see [Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100)). Before editing a check-in policy, you must first create one. For more information, see [Add Check-In Policies](add-check-policies.md). The default available check-in policy types include:
 
 -   **Builds**   Requires that the last build was successful before a check-in.  
 -   **Code Analysis**   Requires that code analysis is run before check-in.  
@@ -42,7 +42,7 @@ To complete this procedure, you must have the **Edit project-level information**
 
         Click the check boxes for the types of code analysis that you want performed. Options are **Enforce check-in to only contain files that are part of current solution**, **Enforce C/C++ Code Analysis (/analyze)**, and **Enforce Code Analysis For Managed Code**. If you select the **Enforce Code Analysis For Managed Code** check box, select the desired rule settings under **Rule settings for Managed Code Analysis**.
 
-        For more information about how to use code analysis tools, see [Creating and Using Code Analysis Check-In Policies](https://msdn.microsoft.com/library/ms182075).
+        For more information about how to use code analysis tools, see [Creating and Using Code Analysis Check-In Policies](/visualstudio/code-quality/creating-and-using-code-analysis-check-in-policies).
 
     -   **Work Items**   Requires that one or more work items be associated with the check-in. This policy type cannot be modified.
 
@@ -56,4 +56,4 @@ To complete this procedure, you must have the **Edit project-level information**
 [Working with Changesets](find-view-changesets.md)  
 #### Other Resources
 
-[Walkthrough: Customizing Checkin Policies and Notes](https://msdn.microsoft.com/library/ms181281)
+[Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100))

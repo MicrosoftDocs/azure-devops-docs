@@ -16,13 +16,13 @@ monikerRange: '>= tfs-2015'
 
 Add new features and capabilities to your organization by installing extensions.
 
-In this article, learn how to [install extensions](#install-extension) for Azure DevOps.
+Learn how to [install extensions](#install-extension) for Azure DevOps.
 
-To learn about building your own Azure DevOps extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
+To learn about building your own Azure DevOps extensions, see [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) extensions.
 
 ## Prerequisites
 
-* Only [Project Collection Administrators or organization Owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, you can [request extensions](request-vsts-extension.md) instead.
+* Only [Project Collection Administrators or organization Owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
 * Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 
 <a id="install-extension" /> 
@@ -62,7 +62,7 @@ You can install an extension with the [az devops extension install](/cli/azure/e
 
 If necessary, first search for an extension with the [az devops extension search](overview.md#search-extension) command.
 
-```CLI 
+```azurecli 
 az devops extension install --extension-id
                             --publisher-id
                             [--org]
@@ -78,7 +78,7 @@ az devops extension install --extension-id
 
 The following command installs the **Timetracker** extension and shows the result in YAML format.  
 
-```CLI
+```azurecli
 az devops extension install --extension-id Timetracker --publisher-id 7pace --output yaml
 
 baseUri: null

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Shelve Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Stores a set of pending changes, together with pending check-in notes, a comment, and a list of associated work items on the server that is running Visual Studio Team Foundation Server without actually checking them into the version control server.
 
@@ -78,7 +78,7 @@ If you include the **/move** option, the **shelve** command rolls back all shelv
 
 If you include the **/delete** option, Team Foundation permanently removes the specified shelveset from the Team Foundation server.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ## Examples
 
@@ -110,11 +110,11 @@ c:\projects> tf shelve HelloWorld_24 /delete
 
 #### Tasks
 
-[Shelve and Unshelve Pending Changes](https://msdn.microsoft.com/library/ms181404)
+[Shelve and Unshelve Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181404(v=vs.100))
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Checkin Command](checkin-command.md)
 
@@ -126,8 +126,8 @@ c:\projects> tf shelve HelloWorld_24 /delete
 
 [Working with Shelvesets](suspend-your-work-manage-your-shelvesets.md)
 
-[Pending Changes](https://msdn.microsoft.com/library/ms181409)
+[Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181409(v=vs.100))
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

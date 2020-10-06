@@ -35,7 +35,7 @@ You grant or restrict permissions to a user by setting one or more permissions f
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Security>User>Permissions dialog, set Analytics permissions](media/analytics-security-permissions.png) 
 
-	To learn more about working with permissions, see [Security & identity](../../organizations/security/index.md).
+	To learn more about working with permissions, see [Security & identity](../../organizations/security/about-security-identity.md).
 
 > [!NOTE]  
 > Analytics does not support security at the area path level. Therefore, if a user has access to a project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through Analytics. Therefore, to protect your data, the best practice is to not allow reporting against Analytics for any user who does not have access to all data within a project.  

@@ -172,7 +172,7 @@ The following table indicates the operators and macros available for the differe
 
 [!INCLUDE [temp](../includes/note-macro-web-portal.md)]
 
-
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 <a id="samples" />
 

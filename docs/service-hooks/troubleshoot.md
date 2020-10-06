@@ -141,7 +141,7 @@ A: Use tfssecurity.exe from the command line, for example:
 ```
 
 > [!NOTE]
-> The GUID represents the project ID, which can be retrieved using the [Projects](/azure/devops/integrate/previous-apis/tfs/projects) REST API.
+> The GUID represents the project ID, which can be retrieved using the [Projects](../integrate/previous-apis/tfs/projects.md) REST API.
 
 #### Q: Can I programmatically create subscriptions? 
 

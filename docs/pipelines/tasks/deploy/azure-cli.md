@@ -33,7 +33,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 
 - [Azure Resource Manager service connection](../../library/connect-to-azure.md) to your Azure account
 
-- Microsoft hosted agents have Azure CLI pre-installed. However if you are using private agents, [install Azure CLI](https://azure.microsoft.com/documentation/articles/xplat-cli-install/) on the computer(s) that run the build and release agent. 
+- Microsoft hosted agents have Azure CLI pre-installed. However if you are using private agents, [install Azure CLI](/cli/azure/install-azure-cli) on the computer(s) that run the build and release agent. 
   If an agent is already running on the machine on which the Azure CLI is installed, restart the agent to ensure all the relevant stage variables are updated.
   
 ## Task Inputs
@@ -79,7 +79,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>useGlobalConfig</code><br/>Use global Azure CLI configuration</td>
-    <td>(Optional) If this is false, this task will use its own separate <a href= "https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-file">Azure CLI configuration directory</a>. This can be used to run Azure CLI tasks in <b>parallel</b> releases" <br/>Default value: false</td>
+    <td>(Optional) If this is false, this task will use its own separate <a href= "/cli/azure/azure-cli-configuration?preserve-view=true&view=azure-cli-latest#cli-configuration-file">Azure CLI configuration directory</a>. This can be used to run Azure CLI tasks in <b>parallel</b> releases" <br/>Default value: false</td>
 </tr>
 <tr>
     <td><code>workingDirectory</code><br/>Working Directory</td>

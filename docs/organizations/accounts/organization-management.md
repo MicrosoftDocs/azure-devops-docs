@@ -103,7 +103,7 @@ For more information, see the following articles:
 
 ## Add users through Azure Active Directory
 
-You can manage your user base with Azure Active Directory (Azure AD). With Azure AD, you can control access the same way that you do with Microsoft services like Office 365 and Microsoft Azure. 
+You can manage your user base with Azure Active Directory (Azure AD). With Azure AD, you can control access the same way that you do with Microsoft services like Microsoft 365 and Microsoft Azure. 
 
 If you already use Azure AD, you can [use your directory to authenticate access to Azure DevOps Services](access-with-azure-ad.md). Recommended practice for managing large user bases is to use Azure AD, however it's optional.  
 
@@ -111,7 +111,7 @@ The process of adding users to projects when you're managing them through Azure 
 
 1. [Connect your organization to Azure AD](connect-organization-to-azure-ad.md). If you need to set up Azure AD, do that now.  
 2. Go to [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) and sign in with your organization account.  
-3. [Add organization users to your Azure AD](add-users-to-azure-ad.md).  
+3. [Add organization users to your Azure AD](/azure/active-directory/fundamentals/add-users-azure-active-directory).  
 4. [Add an Azure AD group to an Azure DevOps group](manage-azure-active-directory-groups.md).  
 5. [Create bulk assignments of access levels for users](add-organization-users.md), or [define group rules and assign access levels](assign-access-levels-by-group-membership.md).    
 
@@ -180,7 +180,7 @@ You can then pay for more users with Basic access, buy more services, and purcha
 <h4>Manage extensions</h4>
 <ul>
 <li><a href="../../marketplace/install-extension.md" >Install extensions</a></li>
-<li><a href="../../marketplace/approve-extensions.md">Approve requests for extensions</a></li>
+<li><a href="/azure/devops/marketplace/request-extensions">Approve requests for extensions</a></li>
 <li><a href="../../marketplace/uninstall-disable-extensions.md">Uninstall or disable extensions</a></li>
 </td>
 <td width="33%"> 

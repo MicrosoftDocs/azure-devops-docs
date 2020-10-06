@@ -28,7 +28,7 @@ continuous integration, and continuous delivery. Your team can build often,
 test early, and ship faster.
 
 > To set up Visual Studio without Azure DevOps Services, 
-> learn how to [get started](https://msdn.microsoft.com/library/e2h7fzkw.aspx). 
+> learn how to [get started](/visualstudio/install/install-visual-studio-2015). 
 > To host your own server, 
 > learn how to [install and set up Azure DevOps Server](/azure/devops/server/install/get-started).
 
@@ -36,7 +36,7 @@ Azure DevOps Services is free for [up to five users with access to Basic feature
 Learn [what else you get with Azure DevOps Services](https://visualstudio.microsoft.com/pricing/visual-studio-team-services-pricing-vs). 
 If you want, you can also use Azure DevOps Services with any IDE or code editor, like the following examples:
 
-* [Eclipse, Android Studio, or IntelliJ](../../java/index.md)
+* [Eclipse, Android Studio, or IntelliJ](/previous-versions/azure/devops/java/)
 * Xcode (see [Git](../../repos/git/share-your-code-in-git-xcode.md) or [TFVC](../../repos/tfvc/share-your-code-in-tfvc-xcode.md))
 * [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
@@ -107,4 +107,3 @@ or change them later in Visual Studio options.
 * Add code to [Git](../../repos/git/share-your-code-in-git-vs.md) or [Team Foundation Version Control](../../repos/tfvc/share-your-code-in-tfvc-vs.md).
 
 * [Create your backlog](../../boards/backlogs/create-your-backlog.md) to organize your work, [manage your process](../../organizations/settings/work/manage-process.md), or [customize your process](../../organizations/settings/work/customize-process.md).
-

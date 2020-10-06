@@ -56,7 +56,7 @@ Azure DevOps Services is hosted entirely in Azure data centers and uses many of 
 Azure DevOps Services uses Azure Storage as the primary repository for service metadata and customer data. Depending on the type of data and the storage and retrieval needs, we use Azure Blob (binary large objects) storage and Azure SQL data storage. To provide a seamless experience, we work hard to abstract these details from the end user. However, to discuss the details surrounding Azure DevOps approach to data protection, some background in these elements is important.
 
 **Azure Blob storage** is used to store large chunks of unstructured data. All projects use the Azure Blob storage service. This data includes potentially sensitive or private information such as the contents of source files and the attachments on work items. For most projects, the majority of storage in use is this type of unstructured blob storage.  For more information, see documentation on
-[Azure Blob Storage](https://azure.microsoft.com/documentation/articles/storage-dotnet-how-to-use-blobs/).
+[Azure Blob Storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
 **Azure SQL database storage** is used to store the structured and transactional aspects of your organization, including project metadata, the versioned source control history, and work item details. Database storage gives you fast access to the important elements of your project and provides indexes into the blob storage to look up files and attachments. For more information, see documentation on
 [Azure SQL Database](/azure/sql-database/).
@@ -157,9 +157,9 @@ you and Azure DevOps, we encrypt via HTTPS / SSL.
 
 Also, data we store on your behalf in Azure DevOps is encrypted as follows:
 
-* For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) to protect against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
+* For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) to protect against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
 
-* Azure Blob Storage connections are encrypted to protect your data in transit. To protect data at rest stored in our Azure Blob Storage, we have adopted [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
+* Azure Blob Storage connections are encrypted to protect your data in transit. To protect data at rest stored in our Azure Blob Storage, we have adopted [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption).
 
 To learn more about how we encrypt your data, visit the following [blog post](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/).
 
@@ -217,7 +217,7 @@ service is critical to establishing trust with our customers. This white
 paper is part of our effort to shed light on how we manage and protect
 your data. In addition, we maintain a
 [blog](https://blogs.msdn.microsoft.com/vsoservice/?p=15015) that provides real-time updates whenever a service disruption, planned, or unplanned, takes place so you can adjust your activities as needed. Furthermore, Brian Harry, the corporate vice-president in charge of Azure DevOps, maintains an active
-[blog](https://docs.microsoft.com/archive/blogs/korbyp/brian-harry-blogs) addressing, among other things,
+[blog](/archive/blogs/korbyp/brian-harry-blogs) addressing, among other things,
 lessons learned by operating the service.
 
 ## Compliance certifications
@@ -290,7 +290,7 @@ your review and education.
 - [Azure DevOps data location](data-location.md)
 - [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
 - [Azure DevOps support](https://azure.microsoft.com/support/devops/)
-- [Developer Services Agreement](/azure/devops/user-guide/services)
+- [Developer Services Agreement](../../user-guide/services.md)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
 - [Create and revoke your PATs](../accounts/use-personal-access-tokens-to-authenticate.md)

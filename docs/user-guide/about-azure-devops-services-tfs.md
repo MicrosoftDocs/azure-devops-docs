@@ -55,15 +55,12 @@ Two of the following additional areas differ in their support:
 
 Are you on Azure DevOps Server and considering moving? Read [Migration options](../migrate/migrate-from-tfs.md) to understand your options.
 
-<!---
-## Fundamental differences between Azure DevOps Server and Azure DevOps Services
-
-When you plan a move, a few fundamental differences between Azure DevOps Server and Azure DevOps Services are important for you to understand.
--->
 
 <a name="scope-scale-data"></a>
 
-## Scope and scale data
+## Scope and scale data 
+
+As your business grows you may need to scale up your Azure DevOps instance. 
 
 ### Azure DevOps Services scales by using organizations and projects
 
@@ -109,7 +106,7 @@ Learn more: [Plan your organizational structure in Azure DevOps](plan-your-azure
 ## Authentication
 
 With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You either authenticate with [Microsoft account](https://www.microsoft.com/account) credentials or with
-[Azure AD](/azure/active-directory/active-directory-whatis)  
+[Azure AD](/azure/active-directory/active-directory-whatis) 
 credentials, depending on your organization setup. You can also set up Azure AD to require features such as multi-factor-authentication, IP address restrictions, and so on.
 
 We recommend that you configure your organizations to use Azure AD rather than
@@ -170,7 +167,7 @@ Although the **On-premises XML** process model option is powerful, it can cause 
 
 Azure DevOps Server 2013, for example, introduced several new features that depended on new work-item types and other process template
 changes. When you upgrade from 2012 to 2013, each project collection gets new versions of each of the
-"in the box" process templates that include these changes. However, these changes aren't automatically incorporated into existing projects. Instead, after you finish upgrading, you have to include the changes in each project by using the [Configure features](../reference/configure-features-after-upgrade.md)
+"in the box" process templates that include these changes. However, these changes aren't automatically incorporated into existing projects. Instead, after you finish upgrading, you have to include the changes in each project by using the [Configure features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)
 wizard or a more manual process.
 
 To help you avoid these issues in Azure DevOps Services, custom process templates and the **witadmin.exe** tool have always been disabled. This approach has enabled us to automatically update all projects with each Azure DevOps Services upgrade. Meanwhile, the product team is working hard to make customizing processes possible in ways that we can support easily and continuously. We recently introduced the first of these changes and more changes are on the way.
@@ -209,7 +206,7 @@ Azure DevOps Services and Azure DevOps Server 2019 also provide access to the fo
 
 - [The Analytics service](../report/powerbi/what-is-analytics.md) and [Analytics widgets](../report/dashboards/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
 - [Microsoft Power BI integration](../report/powerbi/overview.md), which supports getting Analytics data into Power BI reports and provides a combination of simplicity and power.
-- [OData support](../report/extend-analytics/index.md), which allows you to directly query the Analytics service from a supported browser, and then use the returned JSON data as you want. You can generate queries that span many projects or your entire organization.
+- [OData support](../report/extend-analytics/quick-ref.md), which allows you to directly query the Analytics service from a supported browser, and then use the returned JSON data as you want. You can generate queries that span many projects or your entire organization.
 
 To learn more about the Analytics service and future releases, see our [Reporting roadmap](../report/powerbi/reporting-roadmap.md).
 

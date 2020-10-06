@@ -14,7 +14,7 @@ ms.date: 07/23/2020
 
 **Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS-2018 - TFS 2017**
 
-In this article, learn how to install and uninstall the Search extension for Code, Wiki, and Work item in Azure DevOps Server.
+Learn how to install and uninstall the Search extension for Code, Wiki, and Work item in Azure DevOps Server.
 
 
 * **Configure Search (Code, Work Item, and Wiki) in Azure DevOps Server or Team Foundation Server (TFS)**
@@ -361,13 +361,13 @@ Consider the following techniques for using IPSec to secure Elasticsearch on a W
 * **Configure security with authentication only:**
   - Ensures only authorized users can access the Elasticsearch port. It requires only service-side rules (firewall rules on only the server running Elasticsearch).
   - Prerequisite: Azure DevOps Server or TFS must be configured with a domain account.
-  - Follow the steps in [Creating Firewall Rules that Allow IPsec-protected Network Traffic](https://technet.microsoft.com/library/cc754873%28v%3Dws.10%29.aspx).<p />
+  - Follow the steps in [Creating Firewall Rules that Allow IPsec-protected Network Traffic](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754873(v=ws.10)).<p />
 
 * **Configure security with authentication, integrity protection, and encryption:**
   - Ensures encryption and integrity protection are applied along with authentication. It requires 
     both client-side and service-side rules (firewall rules on the server running Elasticsearch and all Azure DevOps Server or TFS App Tier servers).
   - Prerequisite: Azure DevOps Server or TFS must be configured with a domain account.
-  - Follow the steps in [Isolating a Server by Requiring Encryption and Group Membership](https://technet.microsoft.com/library/cc772460%28v%3Dws.10%29.aspx).
+  - Follow the steps in [Isolating a Server by Requiring Encryption and Group Membership](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772460(v=ws.10)).
 
 <a name="upgrading-search"></a>
 
@@ -590,11 +590,11 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
    your Azure DevOps Server or TFS instance:
 
    ::: moniker range=">= azure-devops-2019"
-   ![Checking that the extension is installed](media/shared/goto-marketplace-new.png)
+   ![Screenshot of checking that the extension is installed](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
-   ![Checking that the extension is installed](media/shared/goto-marketplace.png)
+   ![Screenshot of Checking the extension is installed](media/shared/goto-marketplace.png)
    ::: moniker-end
 
 2. Remove the Search feature:
@@ -632,22 +632,22 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 1. Uninstall the Search extension, like for Code, Work item, or Wiki, for each collection where it's installed. Navigate to the **Manage Extensions** page of each collection in your Azure DevOps Server or TFS instance.
 
    ::: moniker range=">= azure-devops-2019"
-   ![Checking that the extension is installed](media/shared/goto-marketplace-new.png)
+   ![Screenshot Checking that the extension is installed](media/shared/goto-marketplace-new.png)
    ::: moniker-end
 
    ::: moniker range="< azure-devops-2019"
-   ![Checking that the extension is installed](media/shared/goto-marketplace.png)
+   ![Screenshot of Checking that the extension's installed](media/shared/goto-marketplace.png)
    ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
-2. Remove the Search feature:
+1. Remove the Search feature:
 
    - Open the In the Remove Feature dialog,  Administration Console.
    - In the left pane, select the name of the Azure DevOps Server.
    - In the right pane, choose **Remove Feature**.
    - In the Remove Feature dialog, select **Search service**, and then choose **Remove**.<p />
 
-3. Remove the Elasticsearch service and data
+2. Remove the Elasticsearch service and data
 
    - Open **PowerShell** as an administrator.
    - Open the **Configure Search.ps1** folder, along with the rest of the files that are required for a remote install of Search.
@@ -663,8 +663,4 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 Search for Azure DevOps Server and TFS has the following limitation: 
 
 * If you do a disaster recovery (DR) operation and move your server back 
-  to an earlier snapshot of your SQL database, you need to [reindex all your collections](#re-index).  
-
-
-
-
+  to an earlier snapshot of your SQL database, you need to [reindex all your collections](#re-index).

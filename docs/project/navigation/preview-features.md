@@ -67,18 +67,18 @@ The follow table indicates which preview features can be enabled per user or tea
       [New account manager](#account-manager)  
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
       &nbsp;  
       &nbsp;  
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -90,18 +90,18 @@ The follow table indicates which preview features can be enabled per user or tea
       [New Settings Search in the organization settings panel](#search-org-settings)  
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️  
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -113,18 +113,18 @@ The follow table indicates which preview features can be enabled per user or tea
       [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️  
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -135,13 +135,13 @@ The follow table indicates which preview features can be enabled per user or tea
    :::column-end:::
    :::column span="1":::
       &nbsp;  
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
    :::column-end:::
    :::column span="1"::: 
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 ---
@@ -176,16 +176,16 @@ The follow table indicates those features that you can enable as a user, project
       [Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download)  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+      ✔️   
       &nbsp;   
    :::column-end:::
    :::column span="1":::
       &nbsp;     
-      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+      ✔️   
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+      ✔️   
+      ✔️   
    :::column-end:::
 :::row-end:::
 ---
@@ -355,18 +355,17 @@ When enabled, you can enter keywords to search all settings within the Organizat
 ### Social tools 
 
 - [Wiki](../wiki/add-edit-wiki.md)  
-- [Combine email recipients](../../notifications/howto-manage-team-notifications.md) 
+- [Combine email recipients](../../notifications/manage-team-group-notifications.md) 
 - [New experience in Code, Work Item, & Wiki search](/azure/devops/release-notes/2017/oct-06-vsts#code)  
-- [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md)   
-- [Team expansion for notifications](../../notifications/howto-manage-team-notifications.md)
+- [Out of the box notifications](../../notifications/manage-your-personal-notifications.md)   
+- [Team expansion for notifications](../../notifications/manage-team-group-notifications.md)
 
 ### Organization, project, and billing management
-- [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)   
+- [Streamlined User Management](../../organizations/accounts/add-organization-users.md)   
 
 ::: moniker-end
 
 ## Related articles
 
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)
-- [Azure DevOps Feature Timeline](/azure/devops/release-notes/features-timeline) 
-
+- [Azure DevOps Feature Timeline](/azure/devops/release-notes/features-timeline)

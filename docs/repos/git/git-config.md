@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2018'
 
 # Git preferences and settings in Visual Studio
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
 Visual Studio allows you to configure and view common Git settings and preferences, such as your name and email address, your preferred diff and merge tools, and more. These preferences and settings can be viewed and configured in **Team Explorer** on either the **Global Settings** page (applies to all your repositories) or the **Repository Settings** page (applies to the current repository).
 
@@ -99,7 +99,7 @@ We recommend setting this option to **True** at the global level. Valid settings
 Requires Visual Studio 2017 Update 5 and later.
 1. In Team Explorer, go to **Settings**. Go to **Global Settings** and set **Prune remote branches during fetch** to **True** (recommended). Select **Update** to save.
 
-    ![Go to Team Explorer Settings](media/git-config/fetch-prune.png)
+    ![Go to Team Explorer Settings, Visual Studio.](media/git-config/fetch-prune.png)
 
 #### [Command Line](#tab/command-line/)
 To prune branches on every `fetch`, open a command prompt, and run:
@@ -126,7 +126,7 @@ Requires Visual Studio 2017 Update 5 and later.
 
 2. Set **Rebase local branch when pulling** to the desired setting, and select **Update** to save.
 
-    ![Go to Team Explorer Settings](media/git-config/pull-rebase.png)
+    ![Rebase local branch when pulling.](media/git-config/pull-rebase.png)
 
 Note that it is not possible to configure `pull.rebase` to **Interactive** in Visual Studio. Visual Studio does not have interactive rebase support.
 To configure `pull.rebase` to use interactive mode, use the command line.
@@ -143,7 +143,7 @@ git config [--local|--global|--system] pull.rebase [true|false|interactive|prese
 Cryptographic network provider is a Git configuration setting at global scope that configures which SSL backend to use at runtime, and corresponds to the `git config` http.sslBackend setting. The values are:
 
 - OpenSSL: Use [OpenSSL](https://www.openssl.org/) for TLS and SSL protocols.
-- Secure Channel: Use [Secure Channel (schannel)](https://msdn.microsoft.com/library/windows/desktop/aa380123) for TLS and SSL protocols. Schannel is the native
+- Secure Channel: Use [Secure Channel (schannel)](/windows/win32/secauthn/secure-channel) for TLS and SSL protocols. Schannel is the native
 Windows solution, accessing the Windows Credential Store, thereby
 allowing for enterprise-wide management of certificates.
 - Unset (default): If this setting is unset, OpenSSL is the default.
@@ -175,7 +175,7 @@ The **Ignore & attributes files** section is available at repository scope and a
 ### Diff & merge Tools
 Git will show diffs and merge conflicts in your preferred tools. The settings in this section correspond to the `git config` [diff.tool](https://git-scm.com/docs/git-config#git-config-difftool) and [merge.tool](https://git-scm.com/docs/git-config#git-config-mergetool) settings. You can configure Git to use Visual Studio as your merge or diff tool in **Global Settings** and **Repository Settings** by selecting **Use Visual Studio**. To configure other diff and merge tools, use `git config` with the [diff.tool](https://git-scm.com/docs/git-config#git-config-difftool) or [merge.tool](https://git-scm.com/docs/git-config#git-config-mergetool) switch.
 
-![Go to Team Explorer Settings](media/git-config/diff-merge-tools.png)
+![Diff and merge tools.](media/git-config/diff-merge-tools.png)
 
 
 
@@ -184,13 +184,13 @@ Git will show diffs and merge conflicts in your preferred tools. The settings in
 
 The **Remotes** section allows you to configure the remotes for this repository. This setting corresponds to the [git remote](https://git-scm.com/docs/git-remote) command and is available at the repository scope.
 
-![Remotes](media/git-config/remotes.png)
+![Screenshot showing the Remotes section.](media/git-config/remotes.png)
 
 ### Other
 
 The **Other** section allows you to view the Git configuration settings for this repository, with the exception of settings that are displayed and managed in the Visual Studio Git settings pane.
 
-![Other](media/git-config/other.png)
+![Screenshot showing the Other section.](media/git-config/other.png)
 
 To view all of your Git configuration settings, you can open and view the configuration files themselves, or you can run `git config --list` to display the settings.
 
@@ -242,4 +242,3 @@ When enabled, this setting allows you to `push --force` from within Visual Studi
 
 >[!WARNING]
 >Use `push --force` with caution as it can overwrite changes that have been pushed to the branch since your last pull. For more information, see [push --force](https://git-scm.com/docs/git-push#git-push---force).
-

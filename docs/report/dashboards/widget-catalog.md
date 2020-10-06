@@ -5,7 +5,7 @@ description: Determine which widgets you want to add to your dashboards when wor
 ms.custom: dashboards
 ms.technology: devops-analytics
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
-ms.topic: reference
+ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'
@@ -407,7 +407,7 @@ Hover over each color within the chart to see the count of items for a particula
 <a id="cycle-time-widget"></a> 
 ### Cycle time  
 
-![Cumulative flow diagram widget](media/widget-cycle-time.png)  
+![Cycle time widget](media/widget-cycle-time.png)  
 
 Displays the cycle time of work items closed in a specified timeframe for a single team and backlog level. The cycle time of a work item is defined as the time taken to close a work item after work on it has started. 
 
@@ -453,16 +453,16 @@ Requires TFS 2015.1 or later version.
 ![Other links widget](media/widget-other-links.png)  
 
 Provides links to the following features: 
-- Opens a form to initiate a [request to provide feedback](/azure/devops/project/feedback/get-feedback?toc=/azure/devops/project/feedback/toc.json).
+- Opens a form to initiate a [request to provide feedback](../../project/feedback/get-feedback.md?toc=%252fazure%252fdevops%252fproject%252ffeedback%252ftoc.json).
 - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md).
 - Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-area-paths.md).
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 The following links are displayed when the corresponding resource is configured for the project: 
 
-![Other links widget](media/widget-other-links-tfs.png)  
+![Other links widget, TFS-2018 and earlier versions.](media/widget-other-links-tfs.png)  
 
-- [View project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md) (opens either a SharePoint site or URL that's been configured as the project's portal.  
+- [View project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) (opens either a SharePoint site or URL that's been configured as the project's portal.  
 - [View process guidance](../../project/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance.  
 - [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md). 
 
@@ -512,7 +512,7 @@ Adds a team's burndown chart for a sprint to the dashboard. This widget is based
 
 ### Sprint burndown (Legacy) 
 
-![Sprint burndown widget](media/widget-sprint-burndown-legacy.png)
+![Sprint burndown widget, legacy versions.](media/widget-sprint-burndown-legacy.png)
 
 Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint. Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
 
@@ -527,7 +527,7 @@ Adds the team's burndown chart for the current sprint to the dashboard. This cha
 
 ### Sprint burndown 
 
-![Sprint burndown widget](media/widget-sprint-burndown.png)
+![Sprint burndown widget, Azure DevOps Server 2019 and earlier versions.](media/widget-sprint-burndown.png)
 
 Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.
 Teams [use the burndown chart to mitigate risk and check for scope creep](configure-sprint-burndown.md) throughout the sprint cycle. 
@@ -723,9 +723,10 @@ Configurable widget that you can use to track quality continuously from a build 
 ::: moniker range=">= tfs-2017"
 
 <a id="chart-test-plan-widget"></a> 
+
 ### Chart for test plans  
 	
-![Chart work item query widget](media/widget-chart-test-plans.png)  
+![Chart for test plans](media/widget-chart-test-plans.png)  
 
 Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots. 
 
@@ -759,18 +760,14 @@ The widget provides the basic trend of the test results. To get deeper insights 
 
 ::: moniker range=">= azure-devops-2019"
 <a id="test-trend-results-advanced"></a>
+
 ### Test Results Trend (Advanced)
 
 <!--- QUESTION - Is this available on 2019? --> 
 
 > [!div class="mx-imgBorder"]  
-> ![Test results trend widget](media/widget-test-results-trend-advanced.png)
-
-<!---
-> [!NOTE]   
-> **Feature availability:** The Test Results Trend (Advanced) widget is only available for an Azure DevOps Services organization that has the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) installed. 
--->
-
+> ![Test results trend widget, Advanced version based on Analytics service.](media/widget-test-results-trend-advanced.png)
+ 
 The Test Results Trend (Advanced) widget provides near real-time visibility into test data for multiple builds and releases. The widget shows a trend of your test results for selected pipelines. You can use it to track the daily count of test, pass rate, and test duration. Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.
 
 The widget supports tracking advanced metrics for one or more build pipelines or release pipelines. The widget also allows filtering of test results by outcome, stacking metrics, and more. 
@@ -841,7 +838,7 @@ Requires TFS 2015.1 or later version.
 
 ![Team room widget](media/widget-team-room.png)
 
-Provides status and access to [team rooms](../../notifications/collaborate-in-a-team-room.md). Available for TFS 2015.1 through TFS 2017.2 versions.  
+Provides status and access to [team rooms](/previous-versions/azure/devops/notifications/collaborate-in-a-team-room). Available for TFS 2015.1 through TFS 2017.2 versions.  
   
 Team rooms support increased team productivity by providing a space to discuss work in progress, ask questions, share status, and clarify issues that arise. Team administrators can create additional team rooms.  
 
@@ -902,4 +899,4 @@ Using the REST API service, you can [create a dashboard widget](../../extend/dev
 
 - [Add, rename, and delete dashboards](dashboards.md)  
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
-- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)   
+- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)

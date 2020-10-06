@@ -83,6 +83,15 @@ To make commands easier to run, start by selecting a default region. After you s
     rgName='data-pipeline-cicd-rg'
     ```
 
+1. Create variable names for your Azure Data Factory and Azure Databricks instances.
+
+    ```bash
+    datafactorydev='data-factory-cicd-dev'
+    datafactorytest='data-factory-cicd-test'
+
+    databricksname='databricks-cicd-ws'
+    ```
+
 ## Create Azure resources
 
 1. Run the following `az group create` command to create a resource group using `rgName`.
@@ -174,7 +183,7 @@ To make commands easier to run, start by selecting a default region. After you s
         --resource-group $rgName \
         --name databricks-cicd-ws  \
         --location eastus2  \
-        --sku standard
+        --sku trial
     ```
   3. Copy the Subscription ID for your Databricks service to use later. 
 
@@ -188,11 +197,11 @@ To make commands easier to run, start by selecting a default region. After you s
 
 ## Set up Key Vault
 
-You will use Key Vault to store all connection information for your Azure services.
+You will use Azure Key Vault to store all connection information for your Azure services.
 
 ### Create a Databricks personal access token
 1. Go Databricks in the Azure portal and launch your workspace. 
-1. Generate and copy a personal access token in the Azure Databricks UI ([steps](https://docs.microsoft.com/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token)). 
+1. Generate and copy a personal access token in the Azure Databricks UI ([steps](/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token)). 
 
 ### Copy the account key and connection string for your storage account 
 1. Go to your storage account. 
@@ -206,12 +215,12 @@ You will use Key Vault to store all connection information for your Azure servic
     * StorageKey: `your-storage-key`    
     * StorageConnectString: `your-storage-connection`
 
-    1. Run the following `az keyvault secret set` command to add secrets to key vault.  
+    Then, run the following `az keyvault secret set` command to add secrets to your key vault.  
    
-     ```azurecli
-     az keyvault secret set --vault-name "$keyVault" --name "databricks-token" --value "your-databricks-pat"
-     az keyvault secret set --vault-name "$keyVault" --name "StorageKey" --value "your-storage-key"
-     az keyvault secret set --vault-name "$keyVault" --name "StorageConnectString" --value "your-storage-connection"
+    ```azurecli
+    az keyvault secret set --vault-name "$keyVault" --name "databricks-token" --value "your-databricks-pat"
+    az keyvault secret set --vault-name "$keyVault" --name "StorageKey" --value "your-storage-key"
+    az keyvault secret set --vault-name "$keyVault" --name "StorageConnectString" --value "your-storage-connection"
     ```
 
 ## Import the data pipeline solution
@@ -226,20 +235,36 @@ You will use Key Vault to store all connection information for your Azure servic
 1. Check **Grant access permission to all pipelines**. 
 
 ## Add pipeline variables
+
 1. [Create a new variable group](../../../library/variable-groups.md) named `datapipeline-vg`.
-1. Add these variables:
-    * LOCATION: `location for your resources in the Azure Portal, example eastus2`
-    * RESOURCE_GROUP: `data-pipeline-cicd-rg`
-    * DATA_FACTORY_NAME: `data factory name from Azure portal (you can use the dev factory)`
-    * DATA_FACTORY_DEV_NAME: `dev data factory name from Azure portal`
-    * DATA_FACTORY_TEST_NAME: `test data factory name from Azure portal`
-    * ADF_PIPELINE_NAME: `DataPipeline`
-    * DATABRICKS_NAME: `databricks name from Azure portal`
-    * AZURE_RM_CONNECTION: `azure_rm_connection`
-    * DATABRICKS_URL: `URL copied from Databricks in Azure portal`
-    * STORAGE_ACCOUNT_NAME: `storage account name from Azure portal`
-    * STORAGE_CONTAINER_NAME: `rawdata`
-1. Create a second variable group named `keys-vg` that pulls data variables from Azure key vault. 
+
+1. Add the Azure DevOps extension if it isn't already installed. 
+
+   ```azurecli
+   az extension add -name azure-devops 
+   ```  
+1. Sign in to your [Azure DevOps account](../../../../cli/log-in-via-pat.md).
+
+   ```azurecli
+   az devops login --org https://dev.azure.com/<yourorganizationname>
+   ```
+
+   ```
+   az pipelines variable-group create --name datapipeline-vg -p <yourazuredevopsprojectname> --variables `
+                                       "LOCATION=$region" `
+                                       "RESOURCE_GROUP=$rgName" `
+                                       "DATA_FACTORY_NAME=$datafactorydev" `
+                                       "DATA_FACTORY_DEV_NAME=$datafactorydev" `
+                                       "DATA_FACTORY_TEST_NAME=$datafactorytest" `
+                                       "ADF_PIPELINE_NAME=DataPipeline" `
+                                       "DATABRICKS_NAME=$databricksname" `
+                                       "AZURE_RM_CONNECTION=azure_rm_connection" `
+                                       "DATABRICKS_URL=<URL copied from Databricks in Azure portal>" `
+                                       "STORAGE_ACCOUNT_NAME=$storageName" `
+                                       "STORAGE_CONTAINER_NAME=rawdata"
+   ```
+
+1. Create a second variable group named `keys-vg` that pulls data variables from Key Vault. 
 1. Check **Link secrets from an Azure key vault as variables**. Learn how to [link secrets from an Azure key vault](../../../library/variable-groups.md#link-secrets-from-an-azure-key-vault). 
 1. Authorize the Azure subscription. 
 1. Choose all of the available secrets to add as variables (`databricks-token`,`StorageConnectString`,`StorageKey`).
@@ -251,7 +276,7 @@ You will use Key Vault to store all connection information for your Azure servic
 
 1. Go to **Key vault** > **Properties** in the Azure portal UI. 
 1. Copy the **DNS Name** and **Resource ID**. 
-1. [Create a secret scope in your Azure Databricks workspace](https://docs.microsoft.com/azure/databricks/security/secrets/secret-scopes) named `testscope`. 
+1. [Create a secret scope in your Azure Databricks workspace](/azure/databricks/security/secrets/secret-scopes) named `testscope`. 
 
 ### Add a new cluster in Azure Databricks
 
@@ -264,7 +289,7 @@ You will use Key Vault to store all connection information for your Azure servic
 
 ### Set up your code repository in Azure Data Factory
 
-1. Go to **Author & Monitor** in Azure Data Factory. Learn more about [setting up Azure Data Factory](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal). 
+1. Go to **Author & Monitor** in Azure Data Factory. Learn more about [setting up Azure Data Factory](/azure/data-factory/quickstart-create-data-factory-portal). 
 1. Select **Set up code repository** and connect your repo. 
     * Repository type: Azure DevOps Git
     * Azure DevOps organization: Your active account
@@ -274,8 +299,8 @@ You will use Key Vault to store all connection information for your Azure servic
         * Set **/azure-data-pipeline/factorydata** as the root folder
     * Branch to import resource into: Select **Use existing** and **master**
 
-### Link Azure Data Factory to your Key Vault
-1. In the Azure portal UI, open the Key Vault. 
+### Link Azure Data Factory to your key vault
+1. In the Azure portal UI, open the key vault. 
 1. Select **Access policies**.
 1. Select **Add Access Policy**.
 1. For **Configure from template**, select **Key & Secret Management**. 
@@ -323,4 +348,4 @@ If you're not going to continue to use this application, delete your data pipeli
   
 ## Next steps
 > [!div class="nextstepaction"]
-> [Learn more about data in Azure Data Factory](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities)
+> [Learn more about data in Azure Data Factory](/azure/data-factory/concepts-pipelines-activities)

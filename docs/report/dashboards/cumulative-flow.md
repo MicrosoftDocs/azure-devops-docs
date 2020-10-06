@@ -26,7 +26,7 @@ You use cumulative flow diagrams (CFD) to monitor the flow of work through a sys
 
 ::: moniker range=">= azure-devops-2020" 
 
-CFDs help teams monitor the count of work items as they progressively move through various workflow states. These diagrams can show the flow of epics, features, user stories, issues, product backlog items, or requirements, depending on the process&mdash;[Agile](../../boards/work-items/guidance/agile-process.md), [Basic](../../boards/get-started/track-issues-tasks.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or ([CMMI](../../boards/work-items/guidance/cmmi-process.md)&mdash;selected for your project.
+CFDs help teams monitor the count of work items as they progressively move through various workflow states. These diagrams can show the flow of epics, features, user stories, issues, product backlog items, or requirements, depending on the process&mdash;[Agile](../../boards/work-items/guidance/agile-process.md), [Basic](../../boards/get-started/plan-track-work.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or ([CMMI](../../boards/work-items/guidance/cmmi-process.md)&mdash;selected for your project.
 
 ::: moniker-end
 
@@ -94,6 +94,13 @@ For the CFD to provide useful information, you'll want to update the status of w
 
 For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
+
+::: moniker range=">= azure-devops-2019"
+
+## Prerequisites  
+
+::: moniker-end
+
 [!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 
@@ -125,7 +132,7 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
 
 	![Open Boards > Backlogs, for a team](/azure/devops/boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-    To select another backlog, open the selector and then choose a different team or select the ![home icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
+    To select another backlog, open the selector and then choose a different team or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false":::  **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Select another team](/azure/devops/boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -278,7 +285,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 1. If you want fixed scope CFD charts, make sure that you've [defined the sprint iterations](../../boards/sprints/define-sprints.md) for those sprints of interest.  
-1. To add a CFD chart to your team dashboard, see [Add a widget to a dashboard](../add-widget-to-dashboard.md). Add the Cumulative Flow Diagram widget.  
+1. To add a CFD chart to your team dashboard, see [Add a widget to a dashboard](./add-widget-to-dashboard.md). Add the Cumulative Flow Diagram widget.  
 
 	![Cumulative flow diagram widget](media/cfd-choose-widget.png)  
 
@@ -292,7 +299,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 1. If you haven't yet [enabled or installed Analytics](analytics-extension.md), do that now.  
 1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 1. If you want fixed scope CFD charts, make sure that you've [defined the sprint iterations](../../boards/sprints/define-sprints.md) for those sprints of interest.  
-1. To add a CFD chart to your team dashboard, see [Add a widget to a dashboard](../add-widget-to-dashboard.md). Add the Cumulative Flow Diagram widget.  
+1. To add a CFD chart to your team dashboard, see [Add a widget to a dashboard](./add-widget-to-dashboard.md). Add the Cumulative Flow Diagram widget.  
 
 	![Cumulative flow diagram widget](media/cfd-choose-widget.png)  
 
@@ -339,4 +346,3 @@ Each team can set their preferences for the in-context cumulative flow charts.
 - [Widget catalog](widget-catalog.md)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 
-  

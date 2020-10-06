@@ -9,15 +9,15 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.reviewer: sancha
-ms.date: 10/07/2019
-monikerRange: 'azure-devops'
+ms.date: 08/18/2020
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Manage wikis
 
-[!INCLUDE [temp](../../includes/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
-In this article, find the following CLI commands for managing wikis.
+Learn the following CLI commands for managing wikis.
 
 ## Commands
 
@@ -38,7 +38,7 @@ In this article, find the following CLI commands for managing wikis.
 To create a wiki, enter the `az devops wiki create` command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki create [--mapped-path]
                       [--name]
                       [--project]
@@ -61,14 +61,14 @@ az devops wiki create [--mapped-path]
 Create a named project wiki.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki create --name myprojectwiki
 ```
 
 Create a code wiki from a folder in a code repository.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki create --name WIKI_NAME --type codewiki
 --repository REPO_NAME --mapped-path PATH_TO_PUBLISH
 ```
@@ -78,7 +78,7 @@ az devops wiki create --name WIKI_NAME --type codewiki
 To delete a wiki, enter the `az devops wiki delete` command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki delete 
                       [--wiki]
                       [--project]
@@ -98,7 +98,7 @@ az devops wiki delete
 Delete a wiki without a prompt for confirmation.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki delete --wiki myprojectwiki --yes
 ```
 
@@ -107,7 +107,7 @@ az devops wiki delete --wiki myprojectwiki --yes
 To list all the wikis in a project or an organization, enter the `az devops wiki list` command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki list 
                     [--project]
                     [--scope {organization, project}]
@@ -125,14 +125,14 @@ az devops wiki list
 List all wikis for a project.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki list
 ```
 
 List all wikis in the organization.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki list --scope organization
 ```
 
@@ -141,7 +141,7 @@ az devops wiki list --scope organization
 To show details of a wiki, enter the `az devops wiki show` command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki show --wiki
                     [--open]
                     [--project]
@@ -160,7 +160,7 @@ az devops wiki show --wiki
 Show the wiki named 'myprojectwiki' and open the wiki page in your web browser.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki show --wiki myprojectwiki --open
 ```
 
@@ -169,7 +169,7 @@ az devops wiki show --wiki myprojectwiki --open
 To add a new wiki page, enter the `az devops wiki page create` command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page create --path
                            --wiki
                            [--comment]
@@ -196,14 +196,14 @@ az devops wiki page create --path
 Create a new page with path 'my page' in a wiki named 'myprojectwiki' with inline content.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page create --path 'my page' --wiki myprojectwiki --content "Hello World"
 ```
 
 Create a new page with path 'my page' in a wiki named 'myprojectwiki' with content from a file.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page create --path 'my page' --wiki myprojectwiki --file-path a.txt --encoding utf-8
 ```
 

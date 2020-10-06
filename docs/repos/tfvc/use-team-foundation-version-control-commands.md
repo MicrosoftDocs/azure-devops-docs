@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Use Team Foundation version control commands
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 You can use version control commands to do nearly all tasks you can do in Visual Studio, and also several tasks that can't be done in Visual Studio. You can use the **tf.exe** tool to run version control commands from a command prompt or within a script.
 
@@ -372,7 +372,7 @@ Use the following syntax to specify a *versionspec*.
 </div>
 
 <p>Updates the workspace to match the codebase as it existed on 3/22/2004 at 09:00 (9 AM).</p>
-<p>For more information about .NET Framework-supported date and time formats see <a href="https://msdn.microsoft.com/library/system.datetime" data-raw-source="[DateTime](https://msdn.microsoft.com/library/system.datetime)">DateTime</a> and <a href="https://msdn.microsoft.com/library/az4se3k1" data-raw-source="[Standard Date and Time Format Strings](https://msdn.microsoft.com/library/az4se3k1)">Standard Date and Time Format Strings</a>.</p></td>
+<p>For more information about .NET Framework-supported date and time formats see <a href="/dotnet/api/system.datetime" data-raw-source="[DateTime](/dotnet/api/system.datetime)">DateTime</a> and <a href="/dotnet/standard/base-types/standard-date-and-time-format-strings" data-raw-source="[Standard Date and Time Format Strings](/dotnet/standard/base-types/standard-date-and-time-format-strings)">Standard Date and Time Format Strings</a>.</p></td>
 </tr>
 <tr>
 <td><p>Workspace (current)</p></td>

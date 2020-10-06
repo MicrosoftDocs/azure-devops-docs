@@ -102,7 +102,7 @@ If pre-deployment or post-deployment conditions have been set for an environment
 Graphical views of the gates and a quick action to view logs helps to keep releases moving.
 
 > [!div class="mx-imgBorder"]
-> ![Release environment actions](media/135_05b.png)
+> ![Graphical view and quick actions.](media/135_05b.png)
 
 #### Commits and work items
 

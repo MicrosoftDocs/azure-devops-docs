@@ -5,7 +5,7 @@ description: What do you get with Azure Repos
 ms.technology: devops-new-user
 ms.date: 06/01/2020
 ms.topic: overview
-monikerRange: 'azure-devops'
+monikerRange: '>=tfs-2018'
 ---
 
 # What is Azure Repos?
@@ -41,8 +41,8 @@ Connect your favorite development environment to Azure Repos to access your repo
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)
 - [Visual Studio](../git/share-your-code-in-git-vs-2017.md)
 - [Xcode](../git/share-your-code-in-git-xcode.md)
-- [Eclipse](/azure/devops/java/download-eclipse-plug-in)
-- [IntelliJ](/azure/devops/java/download-intellij-plug-in)
+- [Eclipse](/previous-versions/azure/devops/java/download-eclipse-plug-in)
+- [IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
 
 ### Review code with pull requests
 

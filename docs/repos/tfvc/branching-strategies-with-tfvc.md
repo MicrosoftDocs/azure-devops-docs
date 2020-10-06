@@ -12,9 +12,9 @@ monikerRange: '>= tfs-2015'
 
 
 # Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
-Do you plan to adopt Team Foundation Version Control ([TFVC](overview.md)) with Team Foundation Server (TFS) or Azure DevOps Services? Are you wondering how to best use branches? This article will not delve deep into branching features, as they are well documented in the product [documentation](use-branches-isolate-risk-team-foundation-version-control.md) and [guidance](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/), but will explore a few common branching strategies to help you make the right decision.
+Do you plan to adopt Team Foundation Version Control ([TFVC](./what-is-tfvc.md)) with Team Foundation Server (TFS) or Azure DevOps Services? Are you wondering how to best use branches? This article will not delve deep into branching features, as they are well documented in the product [documentation](use-branches-isolate-risk-team-foundation-version-control.md) and [guidance](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions), but will explore a few common branching strategies to help you make the right decision.
 
 Unlike Git branches, which are repository scoped, TFVC branches are path scoped and not as lightweight. Set your bar for creating branches high and only branch when you have a need for code or release isolation.
 
@@ -77,7 +77,7 @@ Although not recommended, you can continue to evolve the strategies, by introduc
 
 ![Service HotFix Release Isolation branching strategy](./media/branching-strategies-with-tfvc/branching-scenarios-service-hotfix-release-isolation.png)
 
-At this point, you have successfully explored a few of the common TFVC branching scenarios. You can evolve them, or investigate other strategies such as [feature toggling](https://msdn.microsoft.com/magazine/dn683796.aspx), toggling features on and off to determine whether a feature is available at run time.
+At this point, you have successfully explored a few of the common TFVC branching scenarios. You can evolve them, or investigate other strategies such as [feature toggling](/archive/msdn-magazine/2014/may/alm-rangers-software-development-with-feature-toggles), toggling features on and off to determine whether a feature is available at run time.
 
 ## Q&A
 
@@ -87,7 +87,7 @@ By keeping branches short-lived,  merge conflicts are kept to as few as possible
 
 ### Why only branch if necessary?
 
-To embrace [DevOps](https://aka.ms/devops), you need to rely on automation of build, test, and deployment. Change is **continuous**, frequent, and merge operations more challenging as merge conflicts often require manual intervention. It is therefore recommended to avoid branching and rely on other strategies, such as feature toggling.
+To embrace [DevOps](/azure/devops/learn/), you need to rely on automation of build, test, and deployment. Change is **continuous**, frequent, and merge operations more challenging as merge conflicts often require manual intervention. It is therefore recommended to avoid branching and rely on other strategies, such as feature toggling.
 
 ### Why remove branches?
 
@@ -99,7 +99,7 @@ Yes. It is not recommended, unless teams must share source and cannot share a co
 
 ### What about the code promotion strategy?
 
-The Code Promotion strategy feels like a relic from the waterfall development era. It is typically with long testing cycles, and separate development and testing teams. The strategy is no longer recommended. For more information on this strategy, see the [branching guidance](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/). 
+The Code Promotion strategy feels like a relic from the waterfall development era. It is typically with long testing cycles, and separate development and testing teams. The strategy is no longer recommended. For more information on this strategy, see the [branching guidance](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions). 
 
 ### When merging **dev** to **main** branch, why are no changes detected?
 

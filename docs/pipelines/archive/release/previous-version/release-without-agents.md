@@ -69,18 +69,9 @@ for your release.
 Based on the tool that you are using to deploy, check these prerequisites 
 for any computer you plan on using in your environment.
 
-**Windows PowerShell**
-
-* PowerShell 4.0: Install 
-  [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855) 
-  which includes PowerShell 4.0.
-
 **DSC**
 
 * Windows 8.1, Windows Server 2012 R2: DSC is already installed.
-* Windows Server 2012, Windows Server 2008 R2, Windows 8 and Windows 7: Install
-  [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855) 
-  which includes DSC.
 
 **Chef**
 
@@ -100,7 +91,7 @@ for any computer you plan on using in your environment.
 
 Microsoft Azure makes it easy to set up VMs to use as servers 
 in your environment. Azure adds your VMs to
-**[cloud services](https://azure.microsoft.com/documentation/articles/cloud-services-what-is/)**.
+**[cloud services](/azure/cloud-services/cloud-services-choose-me)**.
 You'll need a Microsoft Azure account to create your VMs.
 If you don't have one yet, sign up for free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
@@ -201,7 +192,7 @@ Use on-premises environments if you want to deploy using Chef.
    - `winrm quickconfig -transport:http`
 
    More details about how to configure Windows Remote Management can be found 
-   **[here](https://msdn.microsoft.com/library/aa384372%28v=vs.85%29.aspx)**, 
+   **[here](/windows/win32/winrm/installation-and-configuration-for-windows-remote-management)**, 
    including how to set up session time-outs for a machine.
    For Chef, check that each server is set up as required in the prerequisites 
    section above.

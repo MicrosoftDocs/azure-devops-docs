@@ -139,7 +139,7 @@ connect Visual Studio to Azure DevOps.
 1. Fix any performance issues that you find in your app's code, 
    then rerun the test. 
 
-1. To [simulate real-world loads](https://msdn.microsoft.com/library/ff406975%28v=vs.140%29.aspx) 
+1. To [simulate real-world loads](/previous-versions/ff406975(v=vs.140)) 
    more closely, you can refine your test by specifying web performance 
    test properties, load test scenario properties, and
    [run settings properties](/visualstudio/test/load-test-run-settings-properties).

@@ -55,13 +55,13 @@ Choose **+ Variable group**.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="= azure-devops"
+::: moniker range="> azure-devops-2019"
 
 Using the Azure DevOps CLI, you can create and update variable groups for the pipeline runs in your project. You can also [manage the variable groups](#manage-a-variable-group) as well as [manage the individual variables within a variable group](#manage-variables-in-a-variable-group).
 
 ### Prerequisites
 
-- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](/azure/devops/cli/index).
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).
 - Sign into Azure DevOps using `az login`.
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 
@@ -267,7 +267,7 @@ also see a drop-down list of stages in the pipeline - you can link the variable 
 
 ::: moniker range=">=azure-devops-2020"
 
-There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using a variable group. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service). 
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using a variable group.
 
 ::: moniker-end
 
@@ -615,7 +615,7 @@ When you set a variable with the same name in multiple scopes, the following pre
 
 ::: moniker range=">=azure-devops-2020"
 
-There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables in a group. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service). 
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables in a group.
 
 ::: moniker-end
 

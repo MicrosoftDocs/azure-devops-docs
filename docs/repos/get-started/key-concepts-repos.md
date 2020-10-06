@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Key definitions for objects and items used to code with Azure Repos
 ms.technology: devops-new-user 
 ms.topic: reference
-monikerRange: 'azure-devops'
+monikerRange: '>=tfs-2018'
 ms.date: 09/10/2018  
 ---
 
@@ -58,7 +58,7 @@ Git is the most commonly used version control system today and is quickly becomi
 
 Git in Azure Repos is standard Git. You can use the clients and tools of your choice, such as Git for Windows, Mac, partners' Git services, and tools such as Visual Studio and Visual Studio Code.
 
-Learn more: [Git and Azure Repos](../git/overview.md).
+Learn more: [Git and Azure Repos](../git/index.yml).
 
 ## Git workflow
 

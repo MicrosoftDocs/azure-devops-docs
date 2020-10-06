@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Administering Team Foundation Version Control
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Topics in this section describe how to complete common administrative version control tasks using Team Foundation.
 ## In This Section
@@ -40,8 +40,7 @@ Explains how to dispose of obsolete files.
 [Destroy Version Controlled Files](destroy-version-controlled-files.md)  
 Describes how to destroy files and folders.
 
-[Migrate from Visual SourceSafe](https://msdn.microsoft.com/library/ms253060)  
+[Migrate from Visual SourceSafe](/previous-versions/visualstudio/visual-studio-2013/ms253060(v=vs.120))  
 Explains how to use the Team Foundation VSSConverter command-line tool to migrate projects, files, version history, labels, and user information from your Microsoft Visual SourceSafe 2005 database to Team Foundation version control.
 ## Reference
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
-
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

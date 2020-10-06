@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this article, learn how to perform a work item search to quickly find work items defined within a public project.
+Learn how to perform a work item search to quickly find work items defined within a public project.
 
 <a name="start-search"></a>
 

@@ -2,7 +2,7 @@
 title: Artifacts in Azure Pipelines
 titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
-description: Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
+description: Learn how to publish and consume many different types of packages and artifacts with Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
 ms.date: 02/26/2020
@@ -32,7 +32,7 @@ The following table describes supported artifact types in Azure Pipelines.
 | [npm](npm.md)                              | You can publish npm packages to Azure Artifacts or npm registries.                                                       |
 | [NuGet](nuget.md)                          | You can publish NuGet packages to Azure Artifacts, other NuGet services (like NuGet.org), or internal NuGet repositories. |
 | [PyPI](pypi.md)                            | You can publish Python packages to Azure Artifacts or PyPI repositories. |
-| [Symbols](symbols.md)                        | [Symbol files](/azure/devops/artifacts/concepts/symbols) contain debugging information for compiled executables. You can publish symbols to symbol servers. Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing specific product, package, or build information. |
+| [Symbols](symbols.md)                        | [Symbol files](../../artifacts/concepts/symbols.md) contain debugging information for compiled executables. You can publish symbols to symbol servers. Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing specific product, package, or build information. |
 | [Universal](universal-packages.md)         | Universal Packages store one or more files together in a single unit that has a name and version. Unlike pipeline artifacts that reside in the pipeline, Universal Packages reside within a feed in Azure Artifacts. |
 
 > [!NOTE]

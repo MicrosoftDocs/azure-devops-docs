@@ -28,7 +28,7 @@ In general, use the following guidance when assigning users to an access level a
 
 To learn more about administrative tasks see [About user, team, project, and organization-level settings](../settings/about-settings.md).  For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about access levels, see [About access levels](access-levels.md). 
 
-In the tables provided in this article, a :::image type="icon" source="/azure/devops/media/icons/checkmark.png" border="false"::: checkmark indicates that the corresponding access level or security group has access to a feature by default. 
+In the tables provided in this article, a ✔️ indicates that the corresponding access level or security group has access to a feature by default. 
 
 
 For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
@@ -332,7 +332,7 @@ Users granted Basic access or higher can access Package management features. Use
 
 ## Notifications, alerts, and team collaboration tools 
 
-To manage notifications, see [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md) and [Manage team notifications](../../notifications/howto-manage-team-notifications.md).
+To manage notifications, see [Manage personal notifications](../../notifications/manage-your-personal-notifications.md) and [Manage team notifications](../../notifications/manage-team-group-notifications.md).
 
 > [!NOTE]  
 > There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
@@ -347,4 +347,3 @@ To manage notifications, see [Manage personal notifications](../../notifications
 - [About access levels](access-levels.md)
 - [Web portal navigation](../../project/navigation/index.md) 
 
- 
