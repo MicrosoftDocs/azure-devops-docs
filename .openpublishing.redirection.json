@@ -16666,7 +16666,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/pipeines/get-started/dsc-cicd.md.md",
+      "source_path": "docs/pipelines/get-started/dsc-cicd.md.md",
       "redirect_url": "/azure/devops/pipelines/release/dsc-cicd",
       "redirect_document_id": false
     }
