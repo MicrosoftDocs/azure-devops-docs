@@ -137,7 +137,7 @@ productDirectory:
     - title: Azure DevOps Server
       imageSrc: https://docs.microsoft.com/media/common/i_server.svg
       links:
-        - url: /azure/devops/server/admin-quick-ref
+        - url: /azure/devops/server/admin/admin-quick-ref
           text: Administrative tasks
         - url: /azure/devops/server/requirements
           text: Setup and upgrade requirements
