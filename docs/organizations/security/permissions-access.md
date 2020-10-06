@@ -343,6 +343,7 @@ To manage notifications, see [Manage personal notifications](../../notifications
 ## Related notes
 
 - [Add users to a project or team](../../organizations/security/add-users-team-project.md)  
+- [Security and permission management tools](security-tools-reference.md)  
 - [Permissions and groups reference](permissions.md)  
 - [About access levels](access-levels.md)
 - [Web portal navigation](../../project/navigation/index.md) 
