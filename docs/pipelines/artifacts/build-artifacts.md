@@ -296,7 +296,7 @@ Use these tasks to publish artifacts:
 When the build is done, if you watched it run, select the **Summary** tab and see your artifact in the **Build artifacts published** section.
 
 > [!div class="mx-imgBorder"]
-> ![Artifacts tab of a build with one artifact](media/build-artifact-tab-current.png)
+> ![Published build artifact](media/published-build-artifact.png)
 
 ::: moniker-end
 
@@ -305,7 +305,7 @@ When the build is done, if you watched it run, select the **Summary** tab and se
 When the build is done, if you watched it run, select the name of the completed build and then select the **Artifacts** tab to see your artifact.
 
 > [!div class="mx-imgBorder"]
-> ![Artifacts tab of a build with one artifact TFS](media/build-artifact-tab.png)
+> ![Published build artifact TFS](media/build-artifact-tab.png)
 
 ::: moniker-end
 
