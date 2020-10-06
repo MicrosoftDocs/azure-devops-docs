@@ -1,7 +1,7 @@
 ---
 title: Authenticate with your Git repos
 titleSuffix: Azure Repos
-description: Choose between HTTPS, SSH, personal access tokens, and alternate credentials to securely sign in to your Git repos.
+description: Choose between HTTPS, SSH, and personal access tokens to securely sign in to your Git repos.
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.technology: devops-code-git
 ms.topic: conceptual
@@ -30,7 +30,6 @@ Azure DevOps Server was formerly named Visual Studio Team Foundation Server.
 |---------------------|:-------------:|:------------:|:---------------------|-------------|   
 | Personal access tokens | You need an easy to configure credential or need configurable access controls | Very secure (when using HTTPS) |  Easy | Optional ([Git credential managers](set-up-credential-managers.md)) |   
 | SSH | You already have SSH keys set up, or are on macOS or Linux | Very secure | Intermediate | Windows users will need the SSH tools included with [Git for Windows](https://git-for-windows.github.io/)  |
-| Alternate credentials | You can't use personal access tokens or SSH |  Least secure | Easy | See [important information about alternate credentials](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/) |
 
 ## Personal access tokens
 
@@ -66,12 +65,17 @@ If you don't have SSH set up on your computer, you should use PATs and HTTPS ins
 
 Learn more about [setting up SSH with Azure DevOps](use-ssh-keys-to-authenticate.md)
 
-::: moniker range="azure-devops"
+## OAuth
 
-## Alternate credentials
+Use [OAuth](/azure/devops/integrate/get-started/Authentication/oauth) 
+to generate tokens for accessing [REST APIs](/azure/devops/integrate/get-started/rest/basics). The [Accounts](/rest/api/azure/devops/account) 
+and [Profiles](/rest/api/azure/devops/profile) 
+APIs support only OAuth. 
 
-Create an alternate user name and password to access your Git repository using alternate credentials.
-Unlike PATs, this login doesn't expire and can't be scoped to limit access to your Azure DevOps Services data.
-Use alternate credentials as a last resort when you can't use PATs or SSH keys.
-
-::: moniker-end
+- [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
+to generate encryption keys when you use Linux, macOS, 
+or Windows running [Git for Windows](https://www.git-scm.com/download/win) 
+and can't use 
+[Git credential managers](../../repos/git/set-up-credential-managers.md) 
+or [personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
+ 
