@@ -4,8 +4,8 @@ ms.custom: seodec18
 description: Index Sources & Publish Symbols build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
-ms.author: pbora
-author: PBoraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 04/13/2020
 monikerRange: '>= tfs-2015'
 ---

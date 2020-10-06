@@ -4,8 +4,8 @@ description: Runs the load test in cloud with a build or release pipeline with A
 ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
 ms.topic: reference
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---

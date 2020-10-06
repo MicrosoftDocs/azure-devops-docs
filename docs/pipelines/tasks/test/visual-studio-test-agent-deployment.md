@@ -4,8 +4,8 @@ description: Deploy and configure the Test Agent to run tests on a set of machin
 ms.assetid: 9A2D83B7-305A-4A67-ABA9-2B028A573EA0
 ms.topic: reference
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
