@@ -14,7 +14,10 @@ ms.date: 10/06/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
  
-While you set most permissions through the web portal, you can use other tools to manage security groups and permissions. Different tools are used depending on at what level&mdash;object, project, collection, or server&mdash; you manage security.
+While you set most permissions through the web portal, you can use other tools to manage security groups and permissions. For permissions that aren't available to manage through the web portal,you have the option to manage them using a command line tool. 
+
+<!--- To learn more about permissions not available through a user interface, see the Security namespace and permission reference for Azure DevOps, Internal namespaces and permissions.  ---> 
+
 
 [!INCLUDE [version-selector-minimize](../../includes/version-selector-minimize.md)]
 
@@ -24,7 +27,8 @@ Additional options include the following tools:
 
 - Manage security groups using [az devops security CLI](add-manage-security-groups.md)  
 - Manage permissions using [az devops permissions CLI](manage-tokens-namespaces.md)  
-- [Tf permission command-line tool](../../repos/tfvc/permission-command.md)  
+- [Tf Team Foundation Version Control (TFVC) permission command-line tool](../../repos/tfvc/permission-command.md)  
+- [Tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)  
 - [Security REST API commands](/rest/api/azure/devops/security/)
 
 ::: moniker-end
@@ -35,7 +39,8 @@ Additional options include the following tools:
 - Manage security groups using [az devops security CLI](add-manage-security-groups.md)  
 - Manage permissions using [az devops permissions CLI](manage-tokens-namespaces.md) 
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)  
-- [Tf permission command-line tool](../../repos/tfvc/permission-command.md)  
+- [Tf Team Foundation Version Control (TFVC) permission command-line tool](../../repos/tfvc/permission-command.md)  
+- [Tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)  
 - [Security REST API commands](/rest/api/azure/devops/security/)
 
 ::: moniker-end
@@ -44,7 +49,8 @@ Additional options include the following tools:
 ::: moniker range="< azure-devops-2020"
 
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)  
-- [Tf permission command-line tool](../../repos/tfvc/permission-command.md)  
+- [Tf Team Foundation Version Control (TFVC) permission command-line tool](../../repos/tfvc/permission-command.md)  
+- [Tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)   
 - [Security REST API commands](/rest/api/azure/devops/security/)
 
 ::: moniker-end
@@ -63,7 +69,7 @@ You can use the tools listed in the following table to set permissions. Links in
 |------------------|:---------------------------:|:--------------:|:---------------------:|  
 | [Add users to an organization](../accounts/add-organization-users.md)                |   ✔️  |   ✔️  |     |  
 | [Organization-level, auditing, enterprise policies, process, workspaces](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |   ✔️  |     |  
-| [Project-level and test management](set-project-collection-level-permissions.md#project-level)  |   ✔️  |   ✔️  |     |  
+| [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level)  |   ✔️  |   ✔️  |     |  
 | [Git repository](set-git-tfvc-repository-permissions.md)                             |   ✔️  |   ✔️  |  ✔️ |  
 | [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)            |   ✔️  |   ✔️  |  ✔️ |  
 | [Builds, Task groups](../../pipelines/policies/permissions.md#pipeline-permissions)  |   ✔️  |   ✔️  |     |  
@@ -87,7 +93,7 @@ You can use the tools listed in the following table to set permissions. Links in
 |-------------------|:---------------------------:|:---------------:|:----------------:|:----------:| 
 | [Add users to a server instance](../accounts/add-organization-users.md)              |   ✔️  |  ✔️  |   ✔️   |     | 
 | [Collection-level, enterprise policies, process, workspaces](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️  |   ✔️   |     | 
-| [Project-level and test management](set-project-collection-level-permissions.md#project-level)  |   ✔️  |  ✔️  |   ✔️   |     | 
+| [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level)  |   ✔️  |  ✔️  |   ✔️   |     | 
 | [Git repository](set-git-tfvc-repository-permissions.md)                             |   ✔️  |  ✔️  |   ✔️   |  ✔️ | 
 | [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)            |   ✔️  |  ✔️ |   ✔️   |  ✔️ | 
 | [Builds](../../pipelines/policies/permissions.md#pipeline-permissions)               |   ✔️  |  ✔️  |   ✔️   |     | 
@@ -114,7 +120,7 @@ You can use the tools listed in the following table to set permissions. Links in
 |---------------------------|:-------------------:|:-----------:|:-------------------:|  
 | [Add users to a server instance](../accounts/add-organization-users.md)             |   ✔️  |  ✔️ |     | 
 | [Collection-level, process, workspaces](set-project-collection-level-permissions.md#collection-level)    |   ✔️  |  ✔️ |     | 
-| [Project-level and test management](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
+| [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
 | [Git repository](set-git-tfvc-repository-permissions.md)                            |   ✔️  |  ✔️ |  ✔️   | 
 | [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️   | 
 | [Builds](../../pipelines/policies/permissions.md#pipeline-permissions)              |   ✔️  |  ✔️ |     | 
@@ -139,7 +145,7 @@ You can use the tools listed in the following table to set permissions. Links in
 |---------------------------|:-------------------:|:-----------:|:-------------------:|  
 | [Add users to a server instance](../accounts/add-organization-users.md)             |   ✔️  |  ✔️ |     | 
 | [Collection-level, workspaces](set-project-collection-level-permissions.md#collection-level)    |   ✔️  |  ✔️ |     | 
-| [Project-level and test management](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
+| [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
 | [Git repository](set-git-tfvc-repository-permissions.md)                            |   ✔️  |  ✔️ |  ✔️   | 
 | [Team Foundation Version Control](set-git-tfvc-repository-permissions.md)           |   ✔️  |  ✔️ |  ✔️   | 
 | [Builds](../../pipelines/policies/permissions.md#pipeline-permissions)              |   ✔️  |  ✔️ |     | 
@@ -166,7 +172,7 @@ You can use the tools listed in the following table to set permissions. Links in
 |---------------------------|:-------------------:|:-----------:|:-------------------:|  
 | [Add users to a server instance](../accounts/add-organization-users.md)             |   ✔️  |  ✔️ |     | 
 | [Collection-level](set-project-collection-level-permissions.md#collection-level)    |   ✔️  |  ✔️ |     | 
-| [Project-level and test management](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
+| [Project-level, test management, create tags](set-project-collection-level-permissions.md#project-level) |   ✔️  |  ✔️ |     | 
 | [Builds](../../pipelines/policies/permissions.md#pipeline-permissions)              |   ✔️  |  ✔️ |     | 
 | [Build resources](set-project-collection-level-permissions.md#collection-level)     |   ✔️  |  ✔️ |     | 
 | [Git repository](git-permissions-before-2017.md)                                    |   ✔️  |  ✔️ |  ✔️ | 

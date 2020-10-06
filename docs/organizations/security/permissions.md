@@ -644,6 +644,7 @@ Security Service Group
 <!---
 Build Administrators
 Contributors
+Endpoint Administrators - cloud
 Project Administrators
 Project Valid Users
 Readers
