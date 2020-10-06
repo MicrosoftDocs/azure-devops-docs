@@ -696,6 +696,7 @@ for all team projects defined in the account or collection:
 ## Related notes
 
 - [Grant or restrict permissions to select tasks](restrict-access.md)
+- [Security and permission management tools](security-tools-reference.md)  
 - [About permissions and groups](about-permissions.md)
 - [About security roles](about-security-roles.md). 
 - [Permissions and groups reference](permissions.md) 
