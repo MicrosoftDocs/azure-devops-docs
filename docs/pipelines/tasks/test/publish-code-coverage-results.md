@@ -4,8 +4,8 @@ description: Publish Cobertura or JaCoCo code coverage results from an Azure Pip
 ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
 ms.topic: reference
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 04/20/2020
 monikerRange: '>= tfs-2015'
 ---
