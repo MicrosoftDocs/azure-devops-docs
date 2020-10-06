@@ -16,7 +16,7 @@ ms.date: 10/06/2020
  
 While you set most permissions through the web portal, you can use other tools to manage security groups and permissions. Different tools are used depending on at what level&mdash;object, project, collection, or server&mdash; you manage security.
 
-[!INCLUDE [version-selector-minimize](../../includes/version-selector-minimize.md.md)]
+[!INCLUDE [version-selector-minimize](../../includes/version-selector-minimize.md)]
 
 Additional options include the following tools: 
 
@@ -131,6 +131,7 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Notifications or alerts](permissions.md#alerts)                                    |   ✔️  |  ✔️ |     | 
 
 
+::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
