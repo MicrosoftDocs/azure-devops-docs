@@ -131,7 +131,7 @@
     href: permissions-lookup-guide.md
   - name: Permissions & groups 
     href: permissions.md
-  - name: Security and permission management tools 
+  - name: Security management tools 
     href: security-tools-reference.md
   - name: Git permissions prior to TFS 2017 Update 1
     href: git-permissions-before-2017.md
