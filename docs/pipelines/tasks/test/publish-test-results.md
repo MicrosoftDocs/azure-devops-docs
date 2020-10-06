@@ -4,8 +4,8 @@ description: Publish Test Results to integrate test reporting into your build an
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
 ms.topic: reference
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 09/30/2020
 monikerRange: '>= tfs-2015'
 ---
