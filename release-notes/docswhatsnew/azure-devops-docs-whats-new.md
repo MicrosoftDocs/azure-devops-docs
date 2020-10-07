@@ -86,7 +86,6 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Parameter 'chartType' does not clearly describe parameter options #9163](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9163)
 - [Document does not explain how to embed bug number manually.  #9162](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9162)
 - [Document is missing IP's and ranges from Azure DevOps page #9156](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9156)
-- [Can you be more specific with the list of domains to whitelist for NuGet connections to work? #9146](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9146)
 - [Documentation for Incoming Web Hook missing URL fragment #9115](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9115)
 - [ToC in "Common service connection types" #9099](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9099)
 - [What's wrong with a 91 days PAT?! #9020](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9020)
