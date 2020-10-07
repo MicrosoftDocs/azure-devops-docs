@@ -34,6 +34,8 @@ landingContent:
             url: ./get-started/pipelines-sign-up.md
           - text: Create your first pipeline
             url: create-first-pipeline.md
+          - text: Clone or import a pipeline
+            url: ./get-started/clone-import-pipeline.md
           - text: Customize your pipeline
             url: customize-pipeline.md
   - title: Build and deploy any language, any ecosystem
