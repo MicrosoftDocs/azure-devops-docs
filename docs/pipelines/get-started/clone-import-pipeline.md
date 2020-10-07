@@ -45,12 +45,16 @@ For YAML pipelines, the process for cloning is to copy the YAML from the source 
 :::moniker-end
 
 :::moniker range="< azure-devops-2019"
-    This version of TFS doesn't support YAML pipelines.
+
+This version of TFS doesn't support YAML pipelines.
+
 :::moniker-end
 
 #### [Classic](#tab/classic/)
 
 If your new pipeline can be created by copying another pipeline in the same project, follow the instructions in this section. If your pipeline is in another project, you can use [import/export](#export-and-import-a-pipeline) to copy the pipeline.
+
+:::moniker range=">= azure-devops-2019"
 
 1. Navigate to the pipeline details page for your pipeline. If you have the `definitionId` you can browse to it using the following URL: `https://dev.azure.com/{org}/{project}/_build?definitionId={id}&_a=summary`
 
@@ -62,6 +66,14 @@ If your new pipeline can be created by copying another pipeline in the same proj
 
 > [!NOTE]
 > The **Clone** entry is only present on the context menu if your pipeline was created in the classic editor.
+
+:::moniker-end
+
+:::moniker range="< azure-devops-2019"
+
+To clone a build definition, navigate to **Build Definition**s on the **Builds** hub, choose **...** beside the desired build definition, and choose **Clone**.
+
+:::moniker-end
 
 * * *
 
@@ -102,12 +114,22 @@ In a YAML pipeline, exporting and importing is the same process as cloning. You 
 :::moniker-end
 
 :::moniker range="< azure-devops-2019"
-    This version of TFS doesn't support YAML pipelines.
+
+This version of TFS doesn't support YAML pipelines.
+
 :::moniker-end
 
 #### [Classic](#tab/classic/)
 
 In addition to cloning, you can also create new build or release definitions by exporting an existing definition and then importing it. This is especially useful in cases where the new definition has to be created in a separate project.
+
+:::moniker range="tfs-2018"
+
+If you're using TFS 2018, see [Export and import build definitions](/azure/devops/release-notes/2017/jun-22-team-services#export-and-import-build-definitions) for instructions.
+
+:::moniker-end
+
+:::moniker range=">= azure-devops-2019"
 
 1. Navigate to the pipeline details page for your pipeline. 
 
@@ -129,6 +151,14 @@ In addition to cloning, you can also create new build or release definitions by 
 
 > [!NOTE]
 > The **Export** item is only present on the context menu if your pipeline was created in the classic editor.
+
+:::moniker-end
+
+:::moniker range="tfs-2017"
+
+This version of TFS doesn't support import/export for build definitions. For release definitions, you can import/export using the [Clone release definition (for TFS 2015 U2 and above)](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.rm-import-export) extension.
+
+:::moniker-end
 
 * * *
 
