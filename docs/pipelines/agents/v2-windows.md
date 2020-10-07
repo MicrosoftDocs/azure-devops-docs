@@ -186,7 +186,7 @@ Learn more at [Communication with Azure Pipelines or TFS](agents.md#communicatio
 
 For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#interactive-or-service).
 
-If you choose to run as a service (which we recommend), the username you run as should be 20 characters or less.
+If you choose to run as a service (which we recommend), the username you run as should be 20 characters or fewer.
 
 ## Run the agent
 
