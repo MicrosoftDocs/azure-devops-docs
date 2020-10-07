@@ -896,7 +896,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column span="2":::
       Manages read/write permissions of external integrations with Azure Boards.   
       <br/>
-     ** ID:** `5ab15bc8-4ea1-d0f3-8344-cab8fe976877`
+     **ID:** `5ab15bc8-4ea1-d0f3-8344-cab8fe976877`
    :::column-end:::
 :::row-end:::
 ---
@@ -964,12 +964,12 @@ The following table describes the security namespaces and permissions that aren'
 ---
 :::row:::
    :::column span="":::
-      EventSubscription
+      EventSubscription  
    :::column-end:::
    :::column span="":::
-      `GENERIC_READ`
-      `GENERIC_WRITE`
-      `UNSUBSCRIBE`
+      `GENERIC_READ`  
+      `GENERIC_WRITE`  
+      `UNSUBSCRIBE`  
       `CREATE_SOAP_SUBSCRIPTION`  
    :::column-end:::
    :::column span="2":::
@@ -1167,10 +1167,10 @@ The following table describes the security namespaces and permissions that aren'
       ::: moniker range="<= tfs-2015"
       [Manages Lab Management permissions](/azure/devops/organizations/security/permissions#lab).
       > [!NOTE]  
-      > Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
-      ::: moniker-end
-      <br/>
-      **ID:** `9e4894c3-ff9a-4eac-8a85-ce11cafdc6f1` 
+      > Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).  
+      ::: moniker-end   
+      <br/>  
+      **ID:** `9e4894c3-ff9a-4eac-8a85-ce11cafdc6f1`   
    :::column-end:::
 :::row-end:::
 ---
