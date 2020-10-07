@@ -2189,7 +2189,7 @@ Learn more about [conditions](process/conditions.md?tabs=yaml),
 
 Syntax highlighting is available for the pipeline schema via a Visual Studio Code extension.
 You can [download Visual Studio Code](https://code.visualstudio.com), [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and [check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).
-The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.
+The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/main/service-schema.json) for validation.
 
 You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](/rest/api/azure/devops/distributedtask/yamlschema/get?preserve-view=true&view=azure-devops-rest-5.1).
 

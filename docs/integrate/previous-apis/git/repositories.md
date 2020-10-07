@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
-There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Git/RepositoriesSample.cs) available for this endpoint.
+There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/Git/RepositoriesSample.cs) available for this endpoint.
 
 
 ## Get a list of repositories
