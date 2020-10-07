@@ -566,7 +566,7 @@ To avoid taking up resources when your job is unresponsive or waiting too long, 
 
 * Forever on self-hosted agents
 * For 360 minutes (6 hours) on Microsoft-hosted agents with a public project and public repository
-* For 60 minutes on Microsoft-hosted agents with a private project or private repository (unless [additional capacity](/azure/devops/pipelines/agents/hosted#capabilities-and-limitations) is paid for)
+* For 60 minutes on Microsoft-hosted agents with a private project or private repository (unless [additional capacity](../agents/hosted.md#capabilities-and-limitations) is paid for)
 
 The timeout period begins when the job starts running. It does not include the
 time the job is queued or is waiting for an agent.

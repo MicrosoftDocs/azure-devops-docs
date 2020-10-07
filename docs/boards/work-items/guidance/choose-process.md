@@ -31,7 +31,7 @@ The work tracking objects contained within the default processes and process tem
 ::: moniker range=">= azure-devops-2019"
 
 > [!TIP]  
-> To view and manage Inherited process models, see [Manage processes](/azure/devops/organizations/settings/work/manage-process).
+> To view and manage Inherited process models, see [Manage processes](../../../organizations/settings/work/manage-process.md).
 
 ::: moniker-end
 
@@ -122,7 +122,7 @@ Choose the process that provides the best fit for your team.
             you can track requirements, change requests, risks, and reviews.
             </p>
             <p>
-            This process supports <a href="https://msdn.microsoft.com/library/ee461556.aspx" data-raw-source="[formal change management activities](https://msdn.microsoft.com/library/ee461556.aspx)">formal change management activities</a>.
+            This process supports <a href="/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi?viewFallbackFrom=vsts" data-raw-source="[formal change management activities](./cmmi/guidance-background-to-cmmi.md?viewFallbackFrom=vsts)">formal change management activities</a>.
             Tasks support tracking Original Estimate, Remaining Work, and Completed Work.
             </p>
             </td>

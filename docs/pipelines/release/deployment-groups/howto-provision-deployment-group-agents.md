@@ -44,7 +44,7 @@ For information about agents and pipelines, see:
 
 1. In the **Register machines using command line** section of the next page, select the target machine operating system.
 
-1. Choose **Use a personal access token in the script for authentication**. [Learn more](https://go.microsoft.com/fwlink/?linkid=844181).
+1. Choose **Use a personal access token in the script for authentication**. [Learn more](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 1. Choose **Copy the script to clipboard**.
 
@@ -86,7 +86,7 @@ For information about agents and pipelines, see:
    
 1. Optionally, specify a name for the agent. If not specified, it uses the VM name appended with `-DG`.
 
-1. Enter the [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181) to use for authentication against Azure Pipelines.
+1. Enter the [Personal Access Token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to use for authentication against Azure Pipelines.
 
 1. Optionally, specify a comma-separated list of tags that will be configured on the agent.
    Tags are not case-sensitive, and each must no more than 256 characters.
@@ -189,7 +189,7 @@ To use the template:
    * **Azure Pipelines/TFS endpoint**: Select an existing Team Foundation Server/TFS service connection that points
      to your target. Agent registration for deployment groups requires access to your Visual
      Studio project. If you do not have an existing service connection, choose **Add** and create one now.
-     Configure it to use a [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181)
+     Configure it to use a [Personal Access Token (PAT)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
      with scope restricted to **Deployment Group**.
 
    * **Project**: Specify the project containing the deployment group.

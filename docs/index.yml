@@ -137,7 +137,7 @@ productDirectory:
     - title: Azure DevOps Server
       imageSrc: https://docs.microsoft.com/media/common/i_server.svg
       links:
-        - url: /azure/devops/server/admin-quick-ref
+        - url: /azure/devops/server/admin/admin-quick-ref
           text: Administrative tasks
         - url: /azure/devops/server/requirements
           text: Setup and upgrade requirements
@@ -238,7 +238,7 @@ additionalContent:
               text: Integrate with service hooks
             - url: ./notifications/manage-your-personal-notifications.md
               text: Manage personal notifications 
-            - url: /azure/devops/project/index
+            - url: ./project/index.yml
               text: "See more >"
         # Card
         - title: GitHub integration
@@ -267,13 +267,13 @@ additionalContent:
             - text: Organizations
               url: ./organizations/accounts/organization-management.md
             - text: Projects
-              url: ./organizations/projects/index.md
+              url: ./organizations/projects/about-projects.md
             - text: Teams 
-              url: ./organizations/settings/scale/index.md
+              url: ./organizations/settings/about-teams-and-settings.md
             - text: Repos, pipelines, & test
               url: ./pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Notifications
-              url: ./notifications/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
+              url: ./notifications/about-notifications.md?bc=%252fazure%252fdevops%252freference%252forganizations%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
             - text: Auditing
               url: ./organizations/audit/azure-devops-auditing.md
           # Card
@@ -312,6 +312,6 @@ additionalContent:
             - text: REST APIs
               url: /rest/api/vsts/
             - text: DevOps resource center
-              url: https://docs.microsoft.com/azure/devops/learn/
+              url: /azure/devops/learn/
   # footer (optional)
   footer: "[Blogs](https://devblogs.microsoft.com/devops/) - [Twitter](https://twitter.com/AzureDevOps) - [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops) - [Issue Reporting](https://azure.microsoft.com/support/devops/) - [Developer Community](https://azure.microsoft.com/support/devops/) - [Service Status](https://status.dev.azure.com/)"

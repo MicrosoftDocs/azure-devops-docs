@@ -41,7 +41,7 @@ If you specify the *commandname* parameter, the command line displays informatio
 
 The option **/?** is an alias for **help**. If you use the **/?** option together with a command, the system invokes the **help** command and it displays information about syntax.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 ## Examples
 The following example displays a list of the version control commands.
 
@@ -69,4 +69,4 @@ c:\projects>tf workspace /?
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

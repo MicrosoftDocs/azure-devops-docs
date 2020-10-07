@@ -59,9 +59,9 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
         > [!NOTE]
         > **/preview** cannot be specified with **/keephistory**.
 
-        This action retains the historical information about all the files in aFolder. You can use the **tf history** command to view the history of a file. You can also view the history in Source Control Explorer. For more information, see [History Command](history-command.md) and [View Historical Data](https://msdn.microsoft.com/library/ms181415).
+        This action retains the historical information about all the files in aFolder. You can use the **tf history** command to view the history of a file. You can also view the history in Source Control Explorer. For more information, see [History Command](history-command.md) and [View Historical Data](/previous-versions/visualstudio/visual-studio-2010/ms181415(v=vs.100)).
 
-    -   Use the **/stopat** option to retain the historical information up to and including a *versionSpec* value. The *versionSpec* value can be the latest version, a specific changeset, or a date. For more information about *versionspec* values, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be).
+    -   Use the **/stopat** option to retain the historical information up to and including a *versionSpec* value. The *versionSpec* value can be the latest version, a specific changeset, or a date. For more information about *versionspec* values, see [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)).
 
         To destroy all the files in the project MyTeamProject and, at the same time, retain the history for the files up to and including 10/23/2005, type:
 
@@ -89,7 +89,7 @@ After you delete the files, you can synchronize the Team Foundation warehouse. O
 
 #### Concepts
 
-[Operations Available Only From the Command-Line (Team Foundation Version Control)](https://msdn.microsoft.com/library/ms194957)
+[Operations Available Only From the Command-Line (Team Foundation Version Control)](/previous-versions/visualstudio/visual-studio-2010/ms194957(v=vs.100))
 
 #### Other Resources
 

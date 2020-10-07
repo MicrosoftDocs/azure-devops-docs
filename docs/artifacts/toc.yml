@@ -52,8 +52,6 @@
     href: how-to/delete-and-recover-packages.md
   - name: Follow a package for publish alerts
     href: how-to/follow-package-notifications.md
-  - name: Upgrading a legacy feed
-    href: reference/feed-upgrade-learn-more.md
 - name: NuGet
   items:
   - name: NuGet quickstart

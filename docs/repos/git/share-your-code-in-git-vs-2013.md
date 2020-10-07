@@ -152,6 +152,6 @@ A: Yes. See [Use Git from the command prompt](command-prompt.md).
 
 #### Q: Where can I learn more?
 
-A: [Use Visual Studio and Team Foundation Server with Git](overview.md)
+A: [Use Visual Studio and Team Foundation Server with Git](./index.yml)
 
-<!-- ENDSECTION --> 
+<!-- ENDSECTION -->

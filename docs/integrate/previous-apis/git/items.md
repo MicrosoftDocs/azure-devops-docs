@@ -22,7 +22,7 @@ If the repository contains [submodules](https://git-scm.com/docs/git-submodule),
 
 ![Items are blobs and trees](./media/git-items.png)
 
-There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Git/ItemsSample.cs) available for this endpoint.
+There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/Git/ItemsSample.cs) available for this endpoint.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 

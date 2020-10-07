@@ -52,4 +52,4 @@ To complete this procedure, you must have the **Edit project-level information**
 
 #### Other Resources
 
-[Walkthrough: Customizing Check-in Policies and Notes](https://msdn.microsoft.com/library/ms181281)
+[Walkthrough: Customizing Check-in Policies and Notes](/previous-versions/ms181281(v=vs.100))

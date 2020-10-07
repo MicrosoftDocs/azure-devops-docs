@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
 
-[ASP.NET Core](https://www.asp.net/core) is a lean and composable framework for building web and cloud applications, which can be deployed to [Docker containers](https://www.docker.com/what-docker) running on an [Azure Container Service](https://azure.microsoft.com/documentation/articles/container-service-intro/). Visual Studio 2017 RC.3 and newer with the [Continuous Delivery Tools for Visual Studio extension](https://aka.ms/CD4VS) provide an easy way to set up a full continuous integration (CI) and continuous deployment (CD) pipeline for such applications.
+[ASP.NET Core](https://www.asp.net/core) is a lean and composable framework for building web and cloud applications, which can be deployed to [Docker containers](https://www.docker.com/what-docker) running on an [Azure Container Service](/previous-versions/azure/container-service/kubernetes/container-service-intro-kubernetes). Visual Studio 2017 RC.3 and newer with the [Continuous Delivery Tools for Visual Studio extension](https://aka.ms/CD4VS) provide an easy way to set up a full continuous integration (CI) and continuous deployment (CD) pipeline for such applications.
 
 [!INCLUDE [temp](../../../apps/aspnet/includes/ci-cd-description.md)]
 
@@ -76,7 +76,7 @@ monikerRange: '>= tfs-2015'
 
 <h3 id="create_acs">How do I create an Azure Container Service?</h3>
 
-Follow the instructions on [Deploy an Azure Container Service cluster](https://azure.microsoft.com/documentation/articles/container-service-deployment/). Alternately, see [Continuous Integration and Deployment of Multi-Container Docker Applications to Azure Container Service](https://azure.microsoft.com/documentation/articles/container-service-setup-ci-cd/). Note that you'll always be asked to create a new resource group for the container service because the service is composed of many separate resources that you'll certainly want to manage as a group.
+Follow the instructions on [Deploy an Azure Container Service cluster](/previous-versions/azure/container-service/dcos-swarm/container-service-intro). Alternately, see [Continuous Integration and Deployment of Multi-Container Docker Applications to Azure Container Service](https://azure.microsoft.com/documentation/articles/container-service-setup-ci-cd/). Note that you'll always be asked to create a new resource group for the container service because the service is composed of many separate resources that you'll certainly want to manage as a group.
 
 A key piece of information you need for the service is the public SSH key. Creating this is described in [How to use SSH keys with Windows on Azure](/azure/virtual-machines/linux/ssh-from-windows). In this topic, be sure to read both the "Create a private key" and "Create a private key for PuTTY" because the latter describes how to obtain the public SSH key that you need in the Azure portal.
 

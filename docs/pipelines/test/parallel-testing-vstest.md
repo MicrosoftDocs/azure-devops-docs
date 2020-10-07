@@ -4,8 +4,8 @@ description: Continuous testing. Speed up testing by running tests in parallel u
 ms.assetid: 8AEECA6C-6CC8-418C-AF75-6527E365FD88
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 11/13/2019
 monikerRange: '>= tfs-2017'
 ---
@@ -212,7 +212,7 @@ In the context of the [Visual Studio Test task](../tasks/test/vstest.md), parall
 
 2. **Parallelism offered by the Visual Studio Test Platform (vstest.console.exe)**. Visual Studio Test Platform can run
    test assemblies in parallel. Users of vstest.console.exe will recognize this as the
-   [/parallel switch](https://docs.microsoft.com/visualstudio/test/vstest-console-options?view=vs-2017).
+   [/parallel switch](/visualstudio/test/vstest-console-options?view=vs-2017).
    It does so by launching a test host process on each available core, and handing it tests in an assembly to execute.
    This works for any framework that has a test adapter for the Visual Studio test platform because the unit of parallelization
    is a test assembly or test file. This, when combined with the parallelism offered by test frameworks (described above),
