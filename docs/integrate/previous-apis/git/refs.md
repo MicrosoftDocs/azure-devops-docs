@@ -22,7 +22,7 @@ Refs are named references to Git objects.
 The most common type of ref is a branch.
 A branch is a ref that points to a commit.
 
-There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Git/RefsSample.cs) available for this endpoint.
+There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/Git/RefsSample.cs) available for this endpoint.
 
 ## Get a list of references
 
