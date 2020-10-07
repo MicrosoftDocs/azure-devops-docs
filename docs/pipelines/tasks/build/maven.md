@@ -59,7 +59,7 @@ The build agent must have the following capability:
    <tr>
       <td><code>testResultsFiles</code><br/>Test results files</td>
       <td>
-         (Required) Specify the path and pattern of test results files to publish. Wildcards can be used (<a href="https://go.microsoft.com/fwlink/?linkid=856077" data-raw-source="[more information](https://go.microsoft.com/fwlink/?linkid=856077)">more information</a>). For example, <code><em>*/TEST-</em>.xml</code> for all XML files whose name starts with <code>TEST-</code>. If no root path is specified, files are matched beneath the default working directory, the value of which is available in the variable: $(System.DefaultWorkingDirectory). <br/> For example, a value of &#39;
+         (Required) Specify the path and pattern of test results files to publish. Wildcards can be used (<a href="/azure/devops/pipelines/tasks/file-matching-patterns" data-raw-source="[more information](../file-matching-patterns.md)">more information</a>). For example, <code><em>*/TEST-</em>.xml</code> for all XML files whose name starts with <code>TEST-</code>. If no root path is specified, files are matched beneath the default working directory, the value of which is available in the variable: $(System.DefaultWorkingDirectory). <br/> For example, a value of &#39;
          <strong>
             /TEST-
             <em>
@@ -163,7 +163,7 @@ The build agent must have the following capability:
 
 ## Example
 
-[Build and Deploy your Java application to an Azure Web App](../../apps/java/build-maven.md)
+[Build and Deploy your Java application to an Azure Web App](../../ecosystems/java.md)
 
 ## Open source
 

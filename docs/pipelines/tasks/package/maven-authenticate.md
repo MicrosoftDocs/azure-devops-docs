@@ -163,6 +163,6 @@ The Maven Authenticate task doesn't have access to the custom settings.xml file 
 </server>
 ```
 
-The access token variable can be set in your pipelines using these [instructions](https://go.microsoft.com/fwlink/?linkid=2100801).
+The access token variable can be set in your pipelines using these [instructions](../../build/variables.md#systemaccesstoken).
 
 <!-- ENDSECTION -->

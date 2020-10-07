@@ -14,10 +14,9 @@ monikerRange: '>= tfs-2013'
 
 **Visual Studio 2013 | Azure Pipelines | Team Foundation Server 2013**  
 
-Go to the **[Release Management 2013 documentation in MSDN Library](https://msdn.microsoft.com/library/dn217874%28v%3Dvs.120%29.aspx)**.
+Go to the **[Release Management 2013 documentation in MSDN Library](/previous-versions/visualstudio/visual-studio-2013/dn217874(v=vs.120))**.
 
 ![Manage your release in RM 2013](media/overview-05.png)
 
 ![information](media/info1.png) 
-Go to the **[Release Management 2013 documentation in MSDN Library](https://msdn.microsoft.com/library/dn217874%28v%3Dvs.120%29.aspx)**.
-
+Go to the **[Release Management 2013 documentation in MSDN Library](/previous-versions/visualstudio/visual-studio-2013/dn217874(v=vs.120))**.

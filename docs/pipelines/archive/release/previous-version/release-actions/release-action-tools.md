@@ -39,7 +39,7 @@ The following sections describe the tools provided with Release Management:
 
 This tool executes a SQL query in a specific database. It is based on the 
 standard sqlcmd executable distributed with SQL Server. Refer to the 
-**[sqlcmd](https://msdn.microsoft.com/library/ms162773%28v%3Dsql.120%29.aspx)** 
+**[sqlcmd](/sql/tools/sqlcmd-utility?viewFallbackFrom=sql-server-2014)** 
 documentation for further information about this executable. The 
 configuration variables for this tool are:
 
@@ -170,7 +170,7 @@ PowerShell script. The configuration variables of this tool are:
 This tool deploys a DACPAC package. It is based on a SQL Server command line 
 utility. There are a lot of possible parameters for this executable but this 
 is the list of parameters that are used for this tool. See 
-[SQL package command line utility](https://msdn.microsoft.com/library/hh550080.aspx) 
+[SQL package command line utility](/sql/tools/sqlpackage) 
 for more details. The configuration variables of this tool are:
 
 | **Parameter** | **Variable** | **Mandatory** | **Description** |

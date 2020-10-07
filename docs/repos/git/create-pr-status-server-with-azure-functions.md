@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2018'
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
-The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/services/functions/) to validate PRs in an Azure DevOps Services Git repository. With Azure Functions you don't have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provide a fully managed compute platform with high reliability and security.
+The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses). This article guides you through the process of creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/services/functions/) to validate PRs in an Azure DevOps Services Git repository. With Azure Functions you don't have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provide a fully managed compute platform with high reliability and security.
 
 For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
@@ -280,5 +280,5 @@ Now that your server is running and listening for service hook notifications, cr
 7. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
 ## Next Steps
-* In this article, you learned the basics of how to create a serverless Azure function that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 
-* [Configure a branch policy for an external service](https://go.microsoft.com/fwlink/?linkid=854109).
+* In this article, you learned the basics of how to create a serverless Azure function that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](/rest/api/azure/devops/git/pull%20request%20statuses). 
+* [Configure a branch policy for an external service](./pr-status-policy.md).

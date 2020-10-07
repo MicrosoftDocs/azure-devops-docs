@@ -24,7 +24,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is TFVC?
-            url: ./overview.md
+            url: ./what-is-tfvc.md
           - text: Compare Git and TFVC
             url: ./comparison-git-tfvc.md
   - title: Get started with TFVC
@@ -55,4 +55,3 @@ landingContent:
             url: /cli/azure/ext/azure-devops/repos
           - text: TFVC REST API
             url: /rest/api/azure/devops/tfvc/
-

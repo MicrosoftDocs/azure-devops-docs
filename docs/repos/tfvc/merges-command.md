@@ -67,9 +67,9 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
 
 ## Remarks
 
-For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](https://msdn.microsoft.com/library/ms181450).
+For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ## Examples
 
@@ -95,13 +95,13 @@ c:\projects>tf merges /recursive Beta1_branch RTM_branch
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)  
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
 [Merge Command](merge-command.md)  
 [Branch Command](branch-command.md)  
 #### Concepts
 
-[Informational Commands](https://msdn.microsoft.com/library/ms181450)  
+[Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))  
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)  
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))  
 [Branching and Merging](use-branches-isolate-risk-team-foundation-version-control.md)

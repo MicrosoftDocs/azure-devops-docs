@@ -22,7 +22,7 @@ You can view a changeset to see what the exact file changes were, discover the o
 
 **Required Permissions**
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
+You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
 
 ## Find a changeset by ID
 

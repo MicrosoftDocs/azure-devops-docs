@@ -82,7 +82,7 @@ Verify that all your branches were moved over to the new repo.
 > 
 > Important - Remember to clean up the original project by either deleting the repo (be careful, there's no undo) or locking the branches so that no one accidentally keeps updating it.
 
-For detailed information on planning your team project collections and team projects, refer to the [TFS Planning, Disaster Avoidance and Recovery, and TFS on Azure Iaas Guide](https://aka.ms/vsarsolutions).
+For detailed information on planning your team project collections and team projects, refer to the [TFS Planning, Disaster Avoidance and Recovery, and TFS on Azure Iaas Guide](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions).
 
 > Authors: Jesse Houwing, Mike Fourie, and Willy Schaub | Connect with the authors and ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md) 
 

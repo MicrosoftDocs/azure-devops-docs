@@ -134,7 +134,7 @@ Connection from an Office client to an Azure Boards project requires that you ha
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
 	> [!NOTE]   
 	> The only way to get the Azure DevOps Office Integration plug-in is by installing one of the latest editions of Visual Studio or the Azure DevOps Office Integration installer. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel.  
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).  
+- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../get-started/sign-up-invite-teammates.md).  
 
 ::: moniker-end  
 
@@ -144,7 +144,7 @@ Connection from an Office client to an Azure Boards project requires that you ha
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
 	> [!NOTE]   
 	> The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration 2017 plug-in supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](/azure/devops/organizations/projects/create-project). 
+- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md). 
 
 ::: moniker-end  
 
@@ -157,7 +157,7 @@ Connection from an Office client to an Azure Boards project requires that you ha
 - Installed Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 	> [!NOTE]   
 	> The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration 2017 plug-in supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](/azure/devops/organizations/projects/create-project). 
+- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md). 
 
 ::: moniker-end  
 
@@ -170,7 +170,7 @@ Connection from an Office client to an Azure Boards project requires that you ha
 - Installed Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 	> [!NOTE]   
 	> The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration 2017 plug-in supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](/azure/devops/organizations/projects/create-project). 
+- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md). 
 
 ::: moniker-end  
  
@@ -536,5 +536,4 @@ For additional extensions that integrate with Microsoft Project, see [Azure Boar
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
 - [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
 - [Create your backlog](../../backlogs/create-your-backlog.md)
-- [Requirements and compatibility](/azure/devops/server/requirements) 
-
+- [Requirements and compatibility](/azure/devops/server/requirements)

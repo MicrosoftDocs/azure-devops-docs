@@ -19,7 +19,7 @@ ms.date: 08/24/2020
 Azure Boards provides a choice of Agile planning tools, many of which work in combination with each other. This article provides a get-started guide for project managers new to Azure Boards. If you and your teams want to take a minimal tracking approach to plan and manage your projects, start with this guide. 
 
 > [!NOTE]
-> If your team is committed to practicing Kamban or Scrum methods, see instead [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](/azure/devops/boards/sprints/scrum-overview). 
+> If your team is committed to practicing Kamban or Scrum methods, see instead [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](./sprints/scrum-overview.md). 
 
 In this article, we make the following suggestions and guidance: 
 
@@ -226,10 +226,10 @@ With a forecast of when a feature will ship, you can update each feature's itera
 Milestone markers aren't used in Azure Boards work tracking, except for Delivery Plans. [Delivery Plans](plans/review-team-plans.md) provide a calendar view and allow you to define a milestone marker. 
 However, you can use one or more of the following options to mark a work item as a milestone: 
 - Simply prepend or append the word **Milestone** in the title of your work item
-- [Add a work item tag](/azure/devops/boards/queries/add-tags-to-work-items) labeled **Milestone**   
-- [Add a custom field](/azure/devops/organizations/settings/work/customize-process-field) labeled **Milestone** and populate it with a pick list of milestones  
-- [Link work items](/azure/devops/boards/backlogs/add-link) using the Predecessor/Successor or Related link type to a milestone work item 
-- [Assign a milestone work item to the sprint](/azure/devops/boards/sprints/assign-work-sprint) in which it's targeted for completion. 
+- [Add a work item tag](./queries/add-tags-to-work-items.md) labeled **Milestone**   
+- [Add a custom field](../organizations/settings/work/customize-process-field.md) labeled **Milestone** and populate it with a pick list of milestones  
+- [Link work items](./backlogs/add-link.md) using the Predecessor/Successor or Related link type to a milestone work item 
+- [Assign a milestone work item to the sprint](./sprints/assign-work-sprint.md) in which it's targeted for completion. 
  
 
 ## Manage dependencies  
@@ -428,4 +428,3 @@ Teams can define one or more dashboards to share information and monitor real-ti
 
 - [Agile and a continuous improvement mindset](https://www.belatrixsf.com/blog/agile-and-a-continuous-improvement-mindset) 
 - [What is KAIZEN™](https://www.kaizen.com/what-is-kaizen.html)
-

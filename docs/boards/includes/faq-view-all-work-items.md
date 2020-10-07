@@ -13,4 +13,4 @@ ms.date: 02/17/2020
 - `Work Item Type = [Any]`
 - `State = [Any]` 
 
-From there, you can add filters to refine the query. To learn more, see [Create and save managed queries with the query editor](/azure/devops/boards/queries/using-queries).
+From there, you can add filters to refine the query. To learn more, see [Create and save managed queries with the query editor](../queries/using-queries.md).

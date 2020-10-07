@@ -308,5 +308,5 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 ## Related articles
 
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-- [Azure Pipelines with Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
-- [Azure Repos with Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
+- [Azure Pipelines with Microsoft Teams](../../pipelines/integrations/microsoft-teams.md)
+- [Azure Repos with Microsoft Teams](../../repos/integrations/repos-teams.md)
