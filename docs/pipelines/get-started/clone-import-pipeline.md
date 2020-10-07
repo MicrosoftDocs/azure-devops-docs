@@ -82,3 +82,7 @@ You can also create new build or release definitions by exporting an existing on
 > The **Export** item is only present on the context menu if your pipeline was created in the classic editor.
 
 * * *
+
+## Next steps
+
+Learn to [customize the pipeline](../customize-pipeline.md) you just cloned or imported.
