@@ -65,4 +65,4 @@ GET https://mytfsserver/DefaultCollection/_apis/projectCollections/d81542e4-cdfa
 
 #### Sample code
 
-* [C# (ListProjectCollections method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProjectCollectionsSample.cs#L14)
+* [C# (ListProjectCollections method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/ProjectCollectionsSample.cs#L14)

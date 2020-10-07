@@ -60,7 +60,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/comments/2?api
 
 #### Sample code
 
-* [C# (GetSingleWorkItemComment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/CommentsSample.cs#L13)
+* [C# (GetSingleWorkItemComment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/CommentsSample.cs#L13)
 
 ## Get a page of comments
 
@@ -122,4 +122,4 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/comments?fromR
 
 #### Sample code
 
-* [C# (GetPageOfWorkItemComments method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/CommentsSample.cs#L30)
+* [C# (GetPageOfWorkItemComments method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/CommentsSample.cs#L30)
