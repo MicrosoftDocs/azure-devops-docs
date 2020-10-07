@@ -152,7 +152,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 <a id="work-item-queries"></a>
 
-## Define and edit queries or query folders
+## Set permissions on queries or query folders
 
 You can specify who can add or edit query folders or queries at the object-level. 
 To manage permissions for a query or query folder, you must be the creator of the query or folder, a member of the Project Administrators or Project Collection Administrators group, or granted explicit access through the object's Security dialog. 

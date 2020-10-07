@@ -7,8 +7,8 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 10/01/2020
+monikerRange: '<= azure-devops'
+ms.date: 10/07/2020
 ---
 
 # Security namespace and permission reference for Azure DevOps 
@@ -41,7 +41,7 @@ You manage most permissions through the web portal. For those that aren't surfac
 
 ## Security namespaces and their IDs
 
-This article describes the valid namespaces, lists the associated permissions, and provides links to more information. Many security namespaces correspond to permissions you set through a **Security** or **Permissions** web portal interface. Other namespaces or select permissions aren't surface through the web portal. They grant access by default to members of security groups or Azure DevOps service principals. Namespaces have been grouped into the following categories following how they're managed through the web portal. 
+This article describes the valid namespaces, lists the associated permissions, and provides links to more information. Many security namespaces correspond to permissions you set through a **Security** or **Permissions** web portal page. Other namespaces or select permissions aren't surface through the web portal. They grant access by default to members of security groups or Azure DevOps service principals. Namespaces have been grouped into the following categories based on how they're managed through the web portal. 
 
 - Object-level 
 - Project-level
@@ -52,18 +52,16 @@ This article describes the valid namespaces, lists the associated permissions, a
 
 ### Hierarchy and tokens
 
-A security namespace can be either hierarchical or flat. 
-Tokens in a hierarchical namespace exist in a hierarchy with effective permissions inherited from parent tokens to child tokens.
-Tokens in a flat namespace have no concept of a parent-child relationship between any two tokens.
+A security namespace can be either hierarchical or flat. Tokens in a hierarchical namespace exist in a hierarchy with effective permissions inherited from parent tokens to child tokens. Tokens in a flat namespace have no concept of a parent-child relationship between any two tokens.
 
 Tokens in a hierarchical namespace either have a fixed length for each path part, or variable length.
 If the tokens have variable-length path parts, then a separator character is used to distinguish where one path part ends and another begins.
 
-Token examples for different namespaces are provided in the next section. 
+Security tokens are case-insensitive. Token examples for different namespaces are provided in the following sections. 
 
 ## Object-level namespaces and permissions
 
-The following table describes the namespaces that manage object-level permissions. Most of the listed permissions are managed through the web portal user interface for each object.  
+The following table describes the namespaces that manage object-level permissions. Most of the listed permissions are managed through the web portal page for each object. Permissions are set at the project-level and inherited at the object-level unless changed.
 
 ---
 :::row:::
@@ -91,11 +89,12 @@ The following table describes the namespaces that manage object-level permission
       `ManagePermissions`   
    :::column-end:::
    :::column span="2":::
-      [Manages object-level Analytics views permissions](/azure/devops/organizations/security/permissions#analytics-views-permissions) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](/azure/devops/report/powerbi/analytics-security).  
+      [Manages Analytics views permissions at the project-level and object-level](permissions.md#analytics-views-permissions) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](/azure/devops/report/powerbi/analytics-security).  
+      <br/>
       **Token format for project level permissions**: `$/Shared/PROJECT_ID`  
       **Example**: `$/Shared/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`   
       <br/>
-      ID: `d34d3680-dfe5-4cc6-a949-7d9c68f73cba`
+      **ID:** `d34d3680-dfe5-4cc6-a949-7d9c68f73cba`
    :::column-end:::
 :::row-end:::
 ---
@@ -122,13 +121,14 @@ The following table describes the namespaces that manage object-level permission
       `AdministerBuildPermissions`       
    :::column-end:::
    :::column span="2":::
-      [Manages object-level build permissions](/azure/devops/organizations/security/permissions#build-object-level).  
+      [Manages build permissions at the project-level and object-level](permissions.md#build-object-level).  
+      <br/>
       **Token format for project-level build permissions**: `PROJECT_ID`  
       If you need to update permissions for a particular build definition ID, for example, 12, security token for that build definition looks as follows:  
-      **Token format for project level build permissions**: `PROJECT_ID/12`  
+      **Token format for project-level, specific build permissions**: `PROJECT_ID/12`  
       **Example**: `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba/12`  
       <br/>
-      ID: `33344d9c-fc72-4d6f-aba5-fa317101a7e9`
+      **ID:** `33344d9c-fc72-4d6f-aba5-fa317101a7e9`
    :::column-end:::
 :::row-end:::
 ---
@@ -147,9 +147,9 @@ The following table describes the namespaces that manage object-level permission
       `MANAGE_TEST_SUITES`   
    :::column-end:::
    :::column span="2":::
-      [Manages area path (object-level) permissions](/azure/devops/organizations/security/permissions#area-path-object-level) to create, edit, and delete child nodes and set permissions to view or edit work items in a node. You can manage these permissions through the [Project settings, Project configuration administrative interface](/azure/devops/organizations/security/set-permissions-access-work-tracking#create-child-nodes-modify-work-items-under-an-area-path).  
+      [Manages area path object-level permissions](permissions.md#area-path-object-level) to create, edit, and delete child nodes and set permissions to view or edit work items in a node. You can manage these permissions through the [Set permissions and access for work tracking,  Create child nodes, modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path).  
       <br/>
-      ID: `83e28ad4-2d72-4ceb-97b0-c7726d5502c3`
+      **ID:** `83e28ad4-2d72-4ceb-97b0-c7726d5502c3`
    :::column-end:::
 :::row-end:::
 ---
@@ -167,9 +167,9 @@ The following table describes the namespaces that manage object-level permission
       `MaterializeDashboards`   
    :::column-end:::
    :::column span="2":::
-      [Manages dashboard (object-level) permissions](/azure/devops/organizations/security/permissions#dasboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](/azure/devops/report/dashboards/dashboard-permissions#set-permissions-for-a-project-dashboard).   
+      [Manages dashboard object-level permissions](permissions.md#dasboard-permissions) to edit and delete dashboards and manage permissions for a project dashboard. You can manage these permissions through the [Dashboards user interface](../../report/dashboards/dashboard-permissions.md#set-permissions-for-a-project-dashboard).   
       <br/>
-      ID: `8adf73b7-389a-4276-b638-fe1653f7efc7`
+      **ID:** `8adf73b7-389a-4276-b638-fe1653f7efc7`
    :::column-end:::
 :::row-end:::
 ---
@@ -197,13 +197,14 @@ The following table describes the namespaces that manage object-level permission
       `PullRequestBypassPolicy`  
    :::column-end:::
    :::column span="2":::
-      [Manages Git repository (object-level) permissions](/azure/devops/organizations/security/permissions#git-repository-permissions-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](/azure/devops/organizations/security/set-git-tfvc-repository-permissions#set-git-repository-permissions).  
+      [Manages Git repository permissions at the project-level and object-level](permissions.md#git-repository-permissions-object-level). You can manage these permissions through the [Project settings, Repositories administrative interface](set-git-tfvc-repository-permissions.md#set-git-repository-permissions).  
+      <br/>
       **Token format for project-level permissions**: `repoV2/PROJECT_ID`  
       You need to append `RepositoryID` to update repository-level permissions.  
-      **Token format for repository level permissions**: `repoV2/PROJECT_ID/REPO_ID`  
-      For more information on the Git Repositories namespace and its tokens refer to this blog post, [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/).  
       <br/>
-      ID: `2e9eb7ed-3c0a-47d4-87c1-0ffdd275fd87`
+      **Token format for repository-specific permissions**: `repoV2/PROJECT_ID/REPO_ID`  
+      <br/>
+      **ID:** `2e9eb7ed-3c0a-47d4-87c1-0ffdd275fd87`
    :::column-end:::
 :::row-end:::
 ---
@@ -218,7 +219,7 @@ The following table describes the namespaces that manage object-level permission
       `DELETE`          
    :::column-end:::
    :::column span="2":::
-      [Manages iteration path (object-level) permissions](/azure/devops/organizations/security/permissions#iteration-path-permissions) to create, edit, and delete child nodes and view child node permissions. You can manage these permissions through the [Project settings, Project configuration administrative interface](/azure/devops/organizations/security/set-permissions-access-work-tracking#create-child-nodes-modify-work-items-under-an-area-path). <br/>
+      [Manages iteration path object-level permissions](permissions.md#iteration-path-permissions) to create, edit, and delete child nodes and view child node permissions. To manage through the web portal, see [Set permissions and access for work tracking, Create child nodes](set-permissions-access-work-tracking.md#set-permissions-area-path). <br/>
       **Token format**: `'vstfs:///Classification/Node/Iteration_Identifier/'`  
       Suppose, you have the following iterations configured for your team.  
       &ndash; ProjectIteration1  
@@ -233,7 +234,7 @@ The following table describes the namespaces that manage object-level permission
       To update permissions for `ProjectIteration1\TeamIteration1\TeamIteration1ChildIteration1`, the security token looks as follows:  
       `vstfs:///Classification/Node/ProjectIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1ChildIteration1_Identifier`  
       <br/>
-      ID: `bf7bfa03-b2b7-47db-8113-fa2e002cc5b1`
+      **ID:** `bf7bfa03-b2b7-47db-8113-fa2e002cc5b1`
    :::column-end:::
 :::row-end:::
 ---
@@ -247,9 +248,9 @@ The following table describes the namespaces that manage object-level permission
       `Delete`      
    :::column-end:::
    :::column span="2":::
-      [Manages task group permissions](/azure/devops/organizations/security/permissions#task-group) to edit and delete task groups, and administer task group permissions.  
+      [Manages task group permissions](permissions.md#task-group) to edit and delete task groups, and administer task group permissions. To manage through the web portal, see [Pipeline permissions and security roles, Task group permissions](../../pipelines/policies/permissions.md#task-group-permissions). 
       <br/>
-      ID: `f6a4de49-dbe2-4704-86dc-f8ec1a294436`
+      **ID:** `f6a4de49-dbe2-4704-86dc-f8ec1a294436`
    :::column-end:::
 :::row-end:::
 ---
@@ -265,9 +266,9 @@ The following table describes the namespaces that manage object-level permission
       `Manage`   
    :::column-end:::
    :::column span="2":::
-      [Manages permissions for Delivery Plans](/azure/devops/organizations/security/permissions#plan-permissions") to view, edit, delete, and manage delivery plans. You can manage these permissions through the [user interface for each plan](/azure/devops/organizations/security/set-permissions-access-work-tracking#edit-or-manage-permissions-for-delivery-plans).      
+      [Manages permissions for Delivery Plans](permissions.md#plan-permissions") to view, edit, delete, and manage delivery plans. You can manage these permissions through the [web portal for each plan](set-permissions-access-work-tracking#edit-or-manage-permissions-for-delivery-plans).      
       <br/>
-      ID: `bed337f8-e5f3-4fb9-80da-81e17d06e7a8`
+      **ID:** `bed337f8-e5f3-4fb9-80da-81e17d06e7a8`
    :::column-end:::
 :::row-end:::
 ---
@@ -294,17 +295,19 @@ The following table describes the namespaces that manage object-level permission
       `ManageTaskHubExtension`         
    :::column-end:::
    :::column span="2":::
-      [Manages release object-level-permissions](/azure/devops/organizations/security/permissions#release-management).  
+      [Manages release definition permissions at the project and object-level](permissions.md#release-management).  
+      <br/>
       **Token format for project-level permissions**: `PROJECT_ID`  
       **Example**: `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
       If you need to update permissions for a particular release definition ID, for example, 12, security token for that release definition looks as follows:  
-      **Token format for project-level release permissions**: `PROJECT_ID/12`  
+      <br/>
+      **Token format for specific release definition permissions**: `PROJECT_ID/12`  
       **Example**: `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba/12`  
       If the release definition ID lives in a folder, then the security tokens look as follows:  
       **Token format**: `PROJECT_ID/{folderName}/12`  
       For stages, tokens look like: `PROJECT_ID/{folderName}/{DefinitionId}/Environment/{EnvironmentId}`.  
       <br/>
-      ID: `c788c23e-1b46-4162-8f5e-d7585343b5de`
+      **ID:** `c788c23e-1b46-4162-8f5e-d7585343b5de`
    :::column-end:::
 :::row-end:::
 ---
@@ -322,9 +325,9 @@ The following table describes the namespaces that manage object-level permission
       `RecordQueryExecutionInfo`   
    :::column-end:::
    :::column span="2":::
-      [Manages permissions for work item query folders](set-permissions-access-work-tracking.md#work-item-queries).  
+      [Manages permissions for work item queries and query folders](permissions.md#query). To manage these through the web portal, see [Set permissions and access for work tracking, Set permissions on queries or query folders](set-permissions-access-work-tracking.md#work-item-queries).  
       <br/>
-      ID: `71356614-aad7-4757-8f2c-0fb3bff6f680`
+      **ID:** `71356614-aad7-4757-8f2c-0fb3bff6f680`
    :::column-end:::
 :::row-end:::
 ---
@@ -381,17 +384,18 @@ The following table describes the namespaces that manage project-level permissio
    :::column span="2":::
       [Manages Project-level permissions](permissions.md#project-level-permissions).   
       > The `AGILETOOLS_BACKLOG` and `AGILETOOLS_PLANS` permissions manage access to Azure Boards backlogs and Delivery Plans. These permissions replace checks for Stakeholder licensing.    
+      <br/>
       **Root token format**: `$PROJECT`  
       Token to secure permissions for each project in your organization.  
       `$PROJECT:vstfs:///Classification/TeamProject/PROJECT_ID`.  
       Assume you have a project named `Test Project 1`.  
-      You can get the project ID for this project by using `project show` command.  
+      You can get the project ID for this project by using the [`az devops project show` command](../projects/create-project.md#show-project).  
       `az devops project show --project "Test Project 1"`  
       The command returns a project-id, for example, `xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`.  
       Therefore, the token to secure project-related permissions for `Test Project 1` is:  
       `'$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'`  
       <br/>
-      ID: `52d39943-cb85-4d7f-8fa8-c6baac873819`
+      **ID:** `52d39943-cb85-4d7f-8fa8-c6baac873819`
    :::column-end:::
 :::row-end:::
 ---
@@ -406,11 +410,12 @@ The following table describes the namespaces that manage project-level permissio
       `Delete`      
    :::column-end:::
    :::column span="2":::
-      Manages permissions to create, delete, enumerate, and use work item tags. You can manage the **Create tag definition** permission through the [Project settings, Permissions administrative interface](/azure/devops/organizations/security/set-project-collection-level-permissions#change-the-permission-level-for-a-project-level-group). <br/> 
+      Manages permissions to create, delete, enumerate, and use work item tags. You can manage the **Create tag definition** permission through the [Project settings, Permissions administrative interface](set-project-collection-level-permissions.md#change-the-permission-level-for-a-project-level-group).  
+      <br/>
       **Token format for project-level permissions**: `/PROJECT_ID`  
       **Example**: `/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`  
       <br/>
-      ID: `bb50f182-8e5e-40b8-bc21-e8752a1e7ae2`
+      **ID:** `bb50f182-8e5e-40b8-bc21-e8752a1e7ae2`
    :::column-end:::
 :::row-end:::
 ---
@@ -434,9 +439,9 @@ The following table describes the namespaces that manage project-level permissio
       `ManageBranch`         
    :::column-end:::
    :::column span="2":::
-      Manages permissions for a [Team Foundation Version Control (TFVC) repository](/azure/devops/organizations/security/permissions#tfvc). You can manage these permissions through the [Project settings, Repository administrative interface](set-git-tfvc-repository-permissions.md#set-tfvc-repository-permissions).  
+      Manages permissions for a [Team Foundation Version Control (TFVC) repository](permissions.md#tfvc). There is only one TFVC repository for a project. You can manage these permissions through the [Project settings, Repository administrative interface](set-git-tfvc-repository-permissions.md#set-tfvc-repository-permissions).  
       <br/>
-      ID: `a39371cf-0841-4c16-bbd3-276e341bc052`
+      **ID:** `a39371cf-0841-4c16-bbd3-276e341bc052`
    :::column-end:::
 :::row-end:::
 ---
@@ -470,7 +475,7 @@ The following table describes the namespaces that manage organization-level perm
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
       AuditLog  
@@ -1284,3 +1289,4 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 - [Security Namespaces REST API](/rest/api/azure/devops/security/)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)
+- [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)

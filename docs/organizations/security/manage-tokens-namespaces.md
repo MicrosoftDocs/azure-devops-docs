@@ -268,6 +268,8 @@ $/56af920d-393b-4236-9a07-24439ccaa85c  0                  0
 $/69265579-a1e0-4a30-a141-ac9e3bb82572  0                  0
 ```
 
+<a id="show" /> 
+
 ## Show namespace details
 
 You can show details of permissions available in each namespace with the [az devops security permission namespace show](/cli/azure/ext/azure-devops/devops/security/permission/namespace#ext-azure-devops-az-devops-security-permission-namespace-show) command.
