@@ -14,7 +14,7 @@
   - name: Create your first pipeline from the CLI
     href: create-first-pipeline-cli.md
   - name: Clone or import a pipeline
-    href: clone-import-pipeline.md
+    href: ./get-started/clone-import-pipeline.md
 # - name: Publish build results
 #   href: get-started/pipelines-get-started.md
   - name: Customize your pipeline
