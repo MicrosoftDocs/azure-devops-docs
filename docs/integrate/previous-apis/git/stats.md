@@ -24,7 +24,7 @@ In the picture below, `feature1` is 2 commits ahead of and 3 commits behind `mas
 
 ![Two branches illustrating ahead/behind](./media/ahead-behind.png)
 
-There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Git/BranchStatsSample.cs) available for this endpoint.
+There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/Git/BranchStatsSample.cs) available for this endpoint.
 
 
 ## Get branch statistics

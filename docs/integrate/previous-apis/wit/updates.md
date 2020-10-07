@@ -506,7 +506,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
 
 #### Sample code
 
-* [C# (GetListOfWorkItemUpdates method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/UpdatesSample.cs#L19)
+* [C# (GetListOfWorkItemUpdates method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/UpdatesSample.cs#L19)
 
 ### A page at a time
 
@@ -633,7 +633,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?$skip=
 
 #### Sample code
 
-* [C# (GetListOfWorkItemUpdatesPaged method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/UpdatesSample.cs#L43)
+* [C# (GetListOfWorkItemUpdatesPaged method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/UpdatesSample.cs#L43)
 
 ## Get a work item update
 
@@ -726,7 +726,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates/2?api-
 
 #### Sample code
 
-* [C# (GetWorkItemUpdate method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/UpdatesSample.cs#L68)
+* [C# (GetWorkItemUpdate method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/UpdatesSample.cs#L68)
 
 If the update included changes to the links or attachments, those are included, too.
 
