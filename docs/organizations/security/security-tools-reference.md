@@ -165,8 +165,7 @@ You can use the tools listed in the following table to set permissions. Links in
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
-
- [TFSLabConfig command-line tool](/azure/devops/server/command-line/tfslabconfig-cmd)   
+ 
 
 | Permission level  |   Web portal security pages  |  TFSSecurity CLI | Tf CLI |   
 |---------------------------|:-------------------:|:-----------:|:-------------------:|  
@@ -184,7 +183,8 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Notifications or alerts](permissions.md#alerts)                                    |       |  ✔️ |     | 
 | [Releases](../../pipelines/policies/permissions.md#release-permissions)             |   ✔️  |  ✔️ |     | 
 
- 
+In addition, Lab Management permissions can be manaded through the [TFSLabConfig command-line tool](/azure/devops/server/command-line/tfslabconfig-cmd).
+   
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
@@ -208,10 +208,22 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ## Related articles
 
-::: moniker range="<= azure-devops-2020" 
+::: moniker range="azure-devops" 
 
 - [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)  
 - [Set permissions at the project or collection level](set-project-collection-level-permissions.md)  
+- [Add users to a project or team](add-users-team-project.md)  
+- [Add and manage security groups CLI](add-manage-security-groups.md)        
+- [Manage permissions CLI](manage-tokens-namespaces.md)              
+- [Permissions and groups reference](permissions.md)  
+
+::: moniker-end  
+
+::: moniker range="azure-devops-2020" 
+
+- [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)  
+- [Set permissions at the project or collection level](set-project-collection-level-permissions.md)  
+- [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator)  
 - [Add users to a project or team](add-users-team-project.md)  
 - [Add and manage security groups CLI](add-manage-security-groups.md)        
 - [Manage permissions CLI](manage-tokens-namespaces.md)              
