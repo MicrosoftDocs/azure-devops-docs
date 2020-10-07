@@ -523,6 +523,8 @@ aba0ed07-3174-4793-9f2c-d2c5fa6b44d7  MyPublicProject     Public
 
 ```
 
+<a id="show-project" /> 
+
 ### Show project information, and open in web portal
 
 You can list project information and optionally open the project in the web portal using the [az devops project show](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-show) command.  
