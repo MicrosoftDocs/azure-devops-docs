@@ -291,7 +291,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workItemT
 
 #### Sample code
 
-* [C# (GetListOfWorkItemTypeCategories method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemTypeCategoriesSample.cs#L23)
+* [C# (GetListOfWorkItemTypeCategories method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemTypeCategoriesSample.cs#L23)
 
 ## Get a work item type category
 <a name="getaworkitemtypecategory" />
@@ -337,4 +337,4 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workItemT
 
 #### Sample code
 
-* [C# (GetWorkItemCategory method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemTypeCategoriesSample.cs#L43)
+* [C# (GetWorkItemCategory method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemTypeCategoriesSample.cs#L43)

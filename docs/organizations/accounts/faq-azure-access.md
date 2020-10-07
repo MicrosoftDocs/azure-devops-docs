@@ -7,7 +7,7 @@ ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/20/2020
+ms.date: 10/01/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -32,7 +32,7 @@ Learn the answers to the following frequently asked questions (FAQs) about acces
 ### Q:  Why don't I see my organization in the Azure portal?
 
 A:  In both applications, you must have
-[Azure Service Administrator or Co-administrator](/azure/billing-add-change-azure-subscription-administrator) 
+[Azure Service Administrator or Coadministrator](/azure/billing-add-change-azure-subscription-administrator) 
 permissions for the Azure subscription that's linked to your organization in Azure DevOps.
 Also, in the [Azure portal](https://portal.azure.com), you must have Project Collection Administrator or organization Owner permissions.
 
@@ -156,11 +156,11 @@ The user making the UserType change must have the following items:
    ![Check UserType in Azure portal](media/faq/check-user-type-in-azure-portal.png)
 
 4. Open an Administrative Windows PowerShell prompt.
-5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, as pictured below. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) page.
+5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, pictured as follows. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) page.
 
    ![Administrator action in Windows PowerShell](media/faq/Administrator-action-Windows-PowerShell.png)
 
-6. Once the installation completes, execute `Connect-AzureAD`. You're prompted to sign in to the Azure AD. Be sure to use an ID that meets the criteria above.
+6. Once the installation completes, execute `Connect-AzureAD`. You're prompted to sign in to the Azure AD. Be sure to use an ID that meets the previously mentioned criteria.
 7. Execute `Get-AzureADuser -SearchString "<display_name>"`, where <display_name> is part of the entire display name for the user, as seen inside the Azure portal). The command returns four columns for the user found - ObjectId, DisplayName, UserPrincipalName, UserType - and the UserType should say *guest*.
 8. Execute `Set-AzureADUser -ObjectID <string> -UserType Member`, where <string> is the value of ObjectId returned by the previous command. The user is set to member status.
 9. Execute `Get-AzureADuser -SearchString "<display_name>"` again to verify the UserType has changed. You can also verify in the Azure Active Directory section of the Azure portal.
@@ -242,7 +242,7 @@ access level. The user also appears in the security settings.
 
 ### Q: Can I use Azure AD groups to query work items by using the "In Group" clause?
 
-A: No, querying on Azure AD groups isn't supported.
+A: No, querying on Azure AD groups aren't supported.
 
 ### Q: Can I use Azure AD groups to set up field rules in my work item templates?
 
@@ -356,8 +356,7 @@ A: Yes. For more information, see [Switch to another Azure AD](change-azure-ad-c
 
 ### Q: My alternate credentials don't work anymore. What do I do?
 
-A: Alternate credentials don't work after you connect your organization to a directory. 
-[Set up your credentials](https://support.microsoft.com/kb/2991274) again for the organization that you connected.
+A: Azure DevOps no longer supports Alternate Credentials authentication since the beginning of March 2, 2020. If you're still using Alternate Credentials, we strongly encourage you to switch to a more secure authentication method (for example, personal access tokens). [Learn more](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
 
 ### Q: Some users are disconnected, but they have matching identities in Azure AD. What should I do?
 A: 
