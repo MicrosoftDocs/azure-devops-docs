@@ -26,7 +26,7 @@ Repositories contain objects representing core Git concepts:
 
 and other resources that represent the history of those items or act on their state.
 
-There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/tree/master/ClientLibrary/Samples/Git) available for this area.
+There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/tree/main/ClientLibrary/Samples/Git) available for this area.
 
 [!INCLUDE [ID_vs_Name](_data/id_or_name.md)]
 
