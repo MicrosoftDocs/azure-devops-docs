@@ -44,7 +44,7 @@ Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic
 
 ### Q: Why can't one of my service accounts access the Azure DevOps REST API?
 
-A: Your service account may not have "materialized." Since signing in isn't possible with a service account that doesn't have interactive signing in permissions, check out [this work-around](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Quickstarts/dotnet/MaterializeUserQuickStarts/Program.cs).
+A: Your service account may not have "materialized." Since signing in isn't possible with a service account that doesn't have interactive signing in permissions, check out [this work-around](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Quickstarts/dotnet/MaterializeUserQuickStarts/Program.cs).
 
 ### Q: I'm making an interactive client-side application. Should I use [Azure DevOps Services Client Libraries](../../concepts/dotnet-client-libraries.md) or [Azure DevOps Services REST APIs](/rest/api/vsts)?
 A: We recommend using Azure DevOps Services Client Libraries over REST APIs when accessing Azure DevOps Services resources. They're simpler and more easily maintained when version changes to our REST endpoints occur. If functionality is missing from the client libraries, [ADAL](/azure/active-directory/develop/active-directory-authentication-libraries) is the best authentication mechanism to use with our REST APIs.

@@ -31,4 +31,4 @@ Use these APIs to work with a Pull Request in a Team Foundation managed Git repo
 
 [!INCLUDE [ID_vs_Name](../_data/id_or_name.md)]
 
-There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Git/PullRequestsSample.cs) available for this area.
+There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/Git/PullRequestsSample.cs) available for this area.
