@@ -39,31 +39,31 @@ There are various account types supported. The methods used to manage authentica
 ---
 :::row:::
    :::column span="1":::
-      **Accounts**
-        * Users  
-        * Organization owner   
-        * Service accounts  
-        * Service principals  
-        * Job agents  
+      **Accounts**  
+      ✔️ Users  
+      ✔️ Organization owner   
+      ✔️ Service accounts  
+      ✔️ Service principals  
+      ✔️ Job agents  
    :::column-end:::
    :::column span="1":::
-      **Authentication**
-        * User credentials  
-        * Windows authentication  
-        * Two-factor authentication (2FA)  
-        * SSH key authentication  
-        * Personal access tokens  
-        * Oauth  
-        * Active Directory authentication library  
+      **Authentication**  
+      ✔️ User credentials  
+      ✔️ Windows authentication  
+      ✔️ Two-factor authentication (2FA)  
+      ✔️ SSH key authentication  
+      ✔️ Personal access tokens  
+      ✔️ Oauth  
+      ✔️ Active Directory authentication library  
    :::column-end:::
    :::column span="1":::
-      **Authorization**
-        * Security group membership  
-        * Role-based access control  
-        * Security namespaces  
-        * Permission ACLs and ACEs  
-        * Access levels  
-        * Feature flags  
+      **Authorization**  
+      ✔️ Security group membership  
+      ✔️ Role-based access control  
+      ✔️ Security namespaces  
+      ✔️ Permission ACLs and ACEs  
+      ✔️ Access levels  
+      ✔️ Feature flags  
    :::column-end:::
 :::row-end:::
 ---
@@ -167,6 +167,27 @@ Also, for select features, users and groups may need to belong to an access leve
 ### Security group membership 
 
 Several default security groups are defined and automatically configured with default permissions. Most users are assigned to the Contributors group for a project to provide them access to the features they need to access. Administrators should be added to the Project Collection Administrators or Project Administrators group. 
+
+In addition, you can create custom security groups. Security groups are defined at the following levels: 
+- Project-level
+- Organization- or collection-level
+- Server-level (on-premises only)
+
+> [!TIP]    
+> Accounts that are assigned to more than one security group are restricted to those permissions granting the least access. For example, if you add a user to the Readers group and the Project Administrators group, the effective permissions of the Readers group are enforced for the user. 
+ 
+
+### Role-based access control 
+
+
+### Security namespaces and permissions
+ 
+### Access levels
+
+
+
+### Feature flags
+
 
 ## Security groups and permissions
 
