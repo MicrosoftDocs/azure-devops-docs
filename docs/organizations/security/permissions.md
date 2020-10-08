@@ -14,7 +14,7 @@ ms.date: 06/05/2020
 
 
 
-# Permissions, service accounts, and groups in Azure DevOps
+# Security groups, service accounts, and permissions in Azure DevOps
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
