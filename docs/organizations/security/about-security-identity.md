@@ -1,5 +1,5 @@
 ---
-title: How are security and identity managed?
+title: How are security, accounts, membership, and permissions managed?
 titleSuffix: Azure DevOps
 description: Understand how Azure DevOps manages authentication, authorization, security groups and permissions, security roles, access levels, and default perms 
 ms.technology: devops-security
@@ -22,6 +22,7 @@ Accounts get access to Azure Devops through authentication of their security cre
 
 There are various account types supported. The methods used to manage authentication and authorization include the following: 
 
+<!---
 :::row:::
    :::column span="1":::
       **Accounts**
@@ -34,33 +35,38 @@ There are various account types supported. The methods used to manage authentica
    :::column-end:::
 :::row-end:::
 ---
+-->
+---
 :::row:::
    :::column span="1":::
-      - Users  
-      - Organization owner   
-      - Service accounts  
-      - Service principals  
-      - Job agents  
+      **Accounts**
+        * Users  
+        * Organization owner   
+        * Service accounts  
+        * Service principals  
+        * Job agents  
    :::column-end:::
    :::column span="1":::
-      - User credentials  
-      - Windows authentication  
-      - Two-factor authentication (2FA)  
-      - SSH key authentication  
-      - Personal access tokens  
-      - Oauth  
-      - Active Directory authentication library  
+      **Authentication**
+        * User credentials  
+        * Windows authentication  
+        * Two-factor authentication (2FA)  
+        * SSH key authentication  
+        * Personal access tokens  
+        * Oauth  
+        * Active Directory authentication library  
    :::column-end:::
    :::column span="1":::
-      - Security group membership  
-      - Role-based access control  
-      - Security namespaces  
-      - Permission ACLs and ACEs  
-      - Access levels  
-      - Feature flags  
+      **Authorization**
+        * Security group membership  
+        * Role-based access control  
+        * Security namespaces  
+        * Permission ACLs and ACEs  
+        * Access levels  
+        * Feature flags  
    :::column-end:::
 :::row-end:::
-
+---
 
 <!---
 The main security concepts to understand are
@@ -145,13 +151,22 @@ To learn more about how we store your credentials, see [Credential storage for A
 To learn more about how to choose the right authentication mechanism, see [Guidance for authentication](../../integrate/get-started/authentication/authentication-guidance.md).
 
 ## Authorization
-Authorization verifies that the identity which is attempting to connect has the necessary permissions to access a service, feature, function, object, or method.
 
-Authorization always occurs after successful authentication. If a connection is not authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group did not have authorization to perform that action.
+Authorization verifies that the identity which is attempting to connect has the necessary permissions to access a service, feature, function, object, or method. Authorization always occurs after successful authentication. If a connection is not authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group did not have authorization to perform that action.
 
+Authorization depends on the permissions assigned to the account. Permissions are granted either directly to an account, or through membership in a security group or security role. Access levels and feature flags can also grant or restrict access to a feature. 
+
+<!--- 
+Permissions can be inherited based on assignments made to a project  
 Authorization is based on users and groups, and the permissions assigned directly to both those users and groups and permissions those users and groups might inherit by belonging to one or more Azure DevOps security groups. These users and groups can be Azure AD or AD users and groups. For on-premises deployments, they can also be local Windows users and groups.
 
 Also, for select features, users and groups may need to belong to an access level that grants them access to a feature. 
+
+--> 
+
+### Security group membership 
+
+Several default security groups are defined and automatically configured with default permissions. Most users are assigned to the Contributors group for a project to provide them access to the features they need to access. Administrators should be added to the Project Collection Administrators or Project Administrators group. 
 
 ## Security groups and permissions
 
