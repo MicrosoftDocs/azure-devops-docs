@@ -12,31 +12,85 @@ monikerRange: '>= tfs-2013'
 ms.date: 10/01/2020
 ---
 
-# About security and identity
+# About security, membership, and permissions
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
+Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access. Both our cloud service, Azure DevOps Services, and on-premises server, Azure DevOps Server, support software development projects, from planning through deployment. Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects.
 
-For anyone to access a project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Default permissions and access assignments](permissions-access.md).
+Accounts get access to Azure Devops through authentication of their security credentials and authorization of their account entitlements to access a feature or function. 
 
-Azure DevOps Services, our cloud-hosted application, is based on the capabilities of Azure DevOps Server 2019 (formerly known as Team Foundation Server), with additional cloud services. Both support software development projects, from planning through deployment. 
-Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 
+There are various account types supported. The methods used to manage authentication and authorization include the following: 
 
-This article introduces the main security concepts employed by Azure DevOps. To learn more about the steps Microsoft takes to keep your projects in Azure DevOps safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../organizations/security/data-protection.md).
+:::row:::
+   :::column span="1":::
+      **Accounts**
+   :::column-end:::
+   :::column span="1":::
+      **Authorization**
+   :::column-end:::
+   :::column span="1":::
+      **Authentication**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      > [!div class="checklist"]  
+      > * Users
+      > * Owner
+      > * Service accounts
+      > * Service principals
+      > * Job agents
+   :::column-end:::
+   :::column span="1":::
+      > [!div class="checklist"]  
+      > * User credentials
+      > * Windows authentication 
+      > * Two-factor authentication (2FA) 
+      > * SSH key authentication 
+      > * Personal access tokens
+      > * Oauth
+      > * Active Directory authentication library
+   :::column-end:::
+   :::column span="1":::
+      > [!div class="checklist"]  
+      > * Security group membership
+      > * Role-based access control 
+      > * Security namespaces
+      > * Permission ACLs and ACEs
+      > * Access levels 
+      > * Feature flags 
+   :::column-end:::
+:::row-end:::
 
+
+<!---
 The main security concepts to understand are
 
-- Authentication
-- Authorization 
+- Accounts and membership 
+- Authentication 
+- Authorization and permissions 
 - Security groups
 - Security roles
 - Permission levels and permissions 
 - Access levels  
 
+
+For anyone to access a project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Default permissions and access assignments](permissions-access.md).
+
+-->
+ 
+
+
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
+
+To learn more about the steps Microsoft takes to keep your projects in Azure DevOps safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../organizations/security/data-protection.md).
+
+
+
 ## Authentication
 
-Authentication verifies a user's identity based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these additional systems:
+Authentication verifies an account identity based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these additional systems:
 - Azure Active Directory (Azure AD)
 - Microsoft account (MSA)
 - Active Directory (AD)
