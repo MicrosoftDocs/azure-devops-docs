@@ -33,33 +33,31 @@ There are various account types supported. The methods used to manage authentica
       **Authentication**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
-      > [!div class="checklist"]  
-      > * Users
-      > * Owner
-      > * Service accounts
-      > * Service principals
-      > * Job agents
+      - Users
+      - Owner
+      - Service accounts
+      - Service principals
+      - Job agents
    :::column-end:::
    :::column span="1":::
-      > [!div class="checklist"]  
-      > * User credentials
-      > * Windows authentication 
-      > * Two-factor authentication (2FA) 
-      > * SSH key authentication 
-      > * Personal access tokens
-      > * Oauth
-      > * Active Directory authentication library
+      - User credentials
+      - Windows authentication 
+      - Two-factor authentication (2FA) 
+      - SSH key authentication 
+      - Personal access tokens
+      - Oauth
+      - Active Directory authentication library
    :::column-end:::
    :::column span="1":::
-      > [!div class="checklist"]  
-      > * Security group membership
-      > * Role-based access control 
-      > * Security namespaces
-      > * Permission ACLs and ACEs
-      > * Access levels 
-      > * Feature flags 
+      - Security group membership
+      - Role-based access control 
+      - Security namespaces
+      - Permission ACLs and ACEs
+      - Access levels 
+      - Feature flags 
    :::column-end:::
 :::row-end:::
 
