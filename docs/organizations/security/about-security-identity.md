@@ -36,28 +36,28 @@ There are various account types supported. The methods used to manage authentica
 ---
 :::row:::
    :::column span="1":::
-      - Users
-      - Owner
-      - Service accounts
-      - Service principals
-      - Job agents
+      - Users  
+      - Organization owner   
+      - Service accounts  
+      - Service principals  
+      - Job agents  
    :::column-end:::
    :::column span="1":::
-      - User credentials
-      - Windows authentication 
-      - Two-factor authentication (2FA) 
-      - SSH key authentication 
-      - Personal access tokens
-      - Oauth
-      - Active Directory authentication library
+      - User credentials  
+      - Windows authentication  
+      - Two-factor authentication (2FA)  
+      - SSH key authentication  
+      - Personal access tokens  
+      - Oauth  
+      - Active Directory authentication library  
    :::column-end:::
    :::column span="1":::
-      - Security group membership
-      - Role-based access control 
-      - Security namespaces
-      - Permission ACLs and ACEs
-      - Access levels 
-      - Feature flags 
+      - Security group membership  
+      - Role-based access control  
+      - Security namespaces  
+      - Permission ACLs and ACEs  
+      - Access levels  
+      - Feature flags  
    :::column-end:::
 :::row-end:::
 
@@ -84,6 +84,19 @@ For anyone to access a project, you must add them to a security group. For a qui
 
 To learn more about the steps Microsoft takes to keep your projects in Azure DevOps safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../organizations/security/data-protection.md).
 
+## Accounts 
+
+While the main types of accounts of interest are the user accounts that you add to your organization or project, Azure DevOps support other types of accounts to support various operations. These include the following account types: 
+- Organization owner: The creator of an Azure DevOps Services organization or assigned owner  
+- Service accounts: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK.  
+- Service principals: Internal Azure DevOps accounts to to support internal operations. 
+- Job agents: Internal accounts used to run specific jobs on a regular schedule
+- Third party accounts: Accounts that require access to support Web hooks, service connections, or other third-party applications.
+
+
+<!---
+The organization owner and members of the Project Collection Administrators group are granted 
+--> 
 
 
 ## Authentication
@@ -279,6 +292,7 @@ Certain features are only available to users who have the appropriate licensing 
 - [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups)
 - [Setting up HTTPS with Secure Sockets Layer (SSL)](/azure/devops/server/admin/setup-secure-sockets-layer)
+- [Default permissions and access assignments](permissions-access.md)
 
 <!-- TODO: Cover how to set permissions for Reporting Services and SharePoint as mainline sections.
 
