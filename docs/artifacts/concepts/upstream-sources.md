@@ -47,7 +47,7 @@ To take full advantage of the benefits of upstream sources as a consumer of anot
 
 ### Use a single feed on the client
 
-In order for your feed to provide [deterministic restore](#search-order), it's important to ensure that your package feed configuration file&mdash;your _.npmrc_ or _nuget.config_ references only your Azure Artifacts feed with upstream sources enabled. For NuGet, the `<packageSources>` section should look like:
+In order for your feed to provide [deterministic restore](#search-order), it's important to ensure that your package feed configuration file&mdash;your _.npmrc_ or _nuget.config_&mdash; references only your Azure Artifacts feed with upstream sources enabled. For NuGet, the `<packageSources>` section should look like:
 
 ```xml
 <packageSources>
