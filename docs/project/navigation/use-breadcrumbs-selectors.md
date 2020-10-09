@@ -134,7 +134,7 @@ For example, when working in the **Queries** pages, you can navigate to a subfol
 Also, you can choose a query that you've favorited from the selector menu, Or, you can choose to browse all queries which returns you to the **All Queries** page. 
   
 > [!div class="mx-imgBorder"]  
-> ![Queries, Query selector](media/breadcrumbs/query-bd-and-selector.png) 
+> ![Screenshot of Queries, Query selector.](media/breadcrumbs/query-bd-and-selector.png) 
 
 ::: moniker-end
 
@@ -145,7 +145,7 @@ Breadcrumb-and-selector navigation elements are used within most services that s
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Queries, Query selector](media/breadcrumbs/build-bc-selector.png) 
+> ![Screenshot of Build Definitions, Query selector.](media/breadcrumbs/build-bc-selector.png) 
 
 ::: moniker-end
 
@@ -224,7 +224,7 @@ From a specific page, you can open the directory from the breadcrumbs or a selec
 	> ![Team members](media/breadcrumbs/team-profile-members.png)
 
 - To view or change the team configuration, choose **Team Settings**.  
-	You can then add [team members](../../organizations/security/add-users-team-project.md#add-team-members), [team admins](../../organizations/settings/add-team-administrator.md), or navigate to [team notifications](../../notifications/manage-team-group-notifications.md), or team [iterations](../../organizations/settings/set-iteration-paths-sprints.md#open-team-settings) and [area paths](../../organizations/settings/set-area-paths.md#open-team-settings). 
+	You can then add [team members](../../organizations/security/add-users-team-project.md#add-team-members), [team admins](../../organizations/settings/add-team-administrator.md), or navigate to [team notifications](../../notifications/manage-team-group-global-organization-notifications.md), or team [iterations](../../organizations/settings/set-iteration-paths-sprints.md#open-team-settings) and [area paths](../../organizations/settings/set-area-paths.md#open-team-settings). 
 
 See also [Manage and configure team tools](../../organizations/settings/manage-teams.md).
 
