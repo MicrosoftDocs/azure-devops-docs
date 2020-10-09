@@ -16664,6 +16664,11 @@
       "source_path": "docs/cli/permissions.md",
       "redirect_url": "/azure/devops/organizations/security/manage-tokens-namespaces",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/artifacts/reference/feed-upgrade-learn-more.md",
+      "redirect_url": "/previous-versions/azure/devops/docs/artifacts/reference/feed-upgrade-learn-more",
+      "redirect_document_id": false
     }
   ]
 }
