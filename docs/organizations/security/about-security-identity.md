@@ -40,29 +40,29 @@ There are various account types supported. The methods used to manage authentica
 :::row:::
    :::column span="1":::
       **Accounts**  
-      ✔️ Users  
-      ✔️ Organization owner   
-      ✔️ Service accounts  
-      ✔️ Service principals  
-      ✔️ Job agents  
+      &#8226;&nbsp;Users  
+      &#8226;&nbsp;Organization owner   
+      &#8226;&nbsp;Service accounts  
+      &#8226;&nbsp;Service principals  
+      &#8226;&nbsp;Job agents  
    :::column-end:::
    :::column span="1":::
       **Authentication**  
-      ✔️ User credentials  
-      ✔️ Windows authentication  
-      ✔️ Two-factor authentication (2FA)  
-      ✔️ SSH key authentication  
-      ✔️ Personal access tokens  
-      ✔️ Oauth  
-      ✔️ Active Directory authentication library  
+      &#8226;&nbsp;User credentials  
+      &#8226;&nbsp;Windows authentication  
+      &#8226;&nbsp;Two-factor authentication (2FA)  
+      &#8226;&nbsp;SSH key authentication  
+      &#8226;&nbsp;Personal access tokens  
+      &#8226;&nbsp;Oauth  
+      &#8226;&nbsp;Active Directory authentication library  
    :::column-end:::
    :::column span="1":::
       **Authorization**  
-      ✔️ Security group membership  
-      ✔️ Role-based access control  
-      ✔️ Access levels  
-      ✔️ Feature flags  
-      ✔️ Security namespaces and permissions 
+      &#8226;&nbsp;Security group membership  
+      &#8226;&nbsp;Role-based access control  
+      &#8226;&nbsp;Access levels  
+      &#8226;&nbsp;Feature flags  
+      &#8226;&nbsp;Security namespaces & permissions 
    :::column-end:::
 :::row-end:::
 ---
@@ -200,7 +200,7 @@ You can populate these groups by using individual users. However, for ease of ma
 
 ![Conceptual image of security groups and permission levels, TFS-2018 and earlier versions](media/permissions/permissions-overview.png) 
 
-
+::: moniker-end
  
 For a description of each default security group, see [Security groups, service accounts, and permissions](permissions.md#groups).
 <a id="security-roles" />
@@ -251,47 +251,6 @@ There are five possible assignments made to a permission. They grant or restrict
 
 <!--- To learn more, see [Security namespaces and permission reference](access-levels.md). --> 
  
-
-
-## Security groups and permissions
-
-Azure DevOps is pre-configured with default security groups. Default permissions are assigned to the default security groups.   
-
-
-<table width="80%">
-<tbody valign="top">
-<tr>
-<th width="35%">Security area</th>
-<th width="65%">Groups, levels, and states</th>
-</tr>
-<tr>
-<td>Security groups</td>
-<td>
-<ul>
-<li>Project-level</li>
-<li>Organization or collection level</li>
-<li>Server-level (Azure DevOps Server and TFS only) 
-</ul>
-</td>
-</tr>
-<tr>
-<td>Permission levels</td>
-<td>
-<ul>
-<li>Object-level</li>
-<li>Project-level</li>
-<li>Organization or collection level</li>
-<li>Server-level (Azure DevOps Server and TFS only)
-</ul>
-</td>
-</tr>
-<tr>
-<td>Permission states</td>
-<td>
-<p>
-</tr>
-</tbody>
-</table>
  
 <!--- 
 Azure DevOps controls access through these three inter-connected functional areas:
