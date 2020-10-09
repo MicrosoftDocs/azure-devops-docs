@@ -8,40 +8,40 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/07/2020
+ms.date: 10/09/2020
 ---
 
 # Security namespace and permission reference for Azure DevOps 
 
-[!INCLUDE [version-all](../../includes/version-all.md)]
-
-
-<!--- QUESTIONS   
-
-Note access level restrictions. 
-Note non UI permissions
-
---> 
- 
+[!INCLUDE [version-all](../../includes/version-azure-devops.md)]
 
 Security namespaces are used to store access control lists (ACLs) on tokens. Data stored in security namespaces determines the level of access the following entities have to perform a specific action on a specific resource.
-- Organization owner  
-- Member of an Azure DevOps instance  
+- Azure DevOps user 
+- Azure DevOps Organization owner  
+- Member of an Azure DevOps security group 
 - Azure DevOps service account  
 - Azure DevOps service principal  
  
 Each family of resources, such as work items or Git repositories, is secured through a unique namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps.
 
 > [!NOTE]   
-> Namespaces and tokens are valid for all versions of Azure DevOps. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. 
-You manage most permissions through the web portal. For those that aren't surfaced through the web portal, you can manage them using command line tools or REST API:
-> - For Azure DevOps Server 2020 and Azure DevOps Services, you can use the `az devops security permission` commands. 
-> - For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) commands. 
-> For all Azure DevOps instances, you can use the [Security REST API](/rest/api/azure/devops/security). 
+> Namespaces and tokens are valid for all versions of Azure DevOps. Those listed here are valid for Azure DevOps 2019 and later versions.  Namespaces are subject to change over time.To get the latest list of namespaces, exercise one of the command line tools or REST API. Some namespaces have been deprecated as listed in the [Deprecated and read-only namespaces](#deprecated-namespaces) section later in this article. 
+
+
+## Permission management tools 
+
+The recommended method for managing permissions is through the web portal. However, if you need to set a permission that isn't surfaced through the web portal or to set more granular permissions, you can use one of the command line tools or REST API.  
+- For Azure DevOps Server 2020 and Azure DevOps Services, you can use the `az devops security permission` commands. 
+- For on-premises Azure DevOps instances, you can use the [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) commands. 
+- For Azure DevOps git repositories,[Tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)
+- For Team Foundation Version Control (TFVC) repositories, [Tf TFVC permission command-line tool](../../repos/tfvc/permission-command.md)
+
+For all Azure DevOps instances, you can use the [Security REST API](/rest/api/azure/devops/security). 
 
 ## Security namespaces and their IDs
 
 This article describes the valid namespaces, lists the associated permissions, and provides links to more information. Many security namespaces correspond to permissions you set through a **Security** or **Permissions** web portal page. Other namespaces or select permissions aren't surface through the web portal. They grant access by default to members of security groups or Azure DevOps service principals. Namespaces have been grouped into the following categories based on how they're managed through the web portal. 
+
 
 - Object-level 
 - Project-level
@@ -50,7 +50,8 @@ This article describes the valid namespaces, lists the associated permissions, a
 - Role-based 
 - Internal only 
 
-### Hierarchy and tokens
+
+### Hierarchy and tokens 
 
 A security namespace can be either hierarchical or flat. Tokens in a hierarchical namespace exist in a hierarchy with effective permissions inherited from parent tokens to child tokens. Tokens in a flat namespace have no concept of a parent-child relationship between any two tokens.
 
@@ -382,8 +383,8 @@ The following table describes the namespaces that manage project-level permissio
       `AGILETOOLS_PLANS` <!--- TBD, this doesn't get listed --> 
    :::column-end:::
    :::column span="2":::
-      [Manages Project-level permissions](permissions.md#project-level-permissions).   
-      > The `AGILETOOLS_BACKLOG` and `AGILETOOLS_PLANS` permissions manage access to Azure Boards backlogs and Delivery Plans. These permissions replace checks for Stakeholder licensing.    
+      [Manages Project-level permissions](permissions.md#project-level-permissions).  
+      The `AGILETOOLS_BACKLOG` permission manages access to Azure Boards backlogs. This is an internal permission setting and shouldn't be changed.  
       <br/>
       **Root token format**: `$PROJECT`  
       Token to secure permissions for each project in your organization.  
@@ -699,8 +700,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group 
       - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups. 
       - **User** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
-      - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group   
-      <br/>  
+      - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group<br/><br/>
       **ID:** `101eae8c-1709-47f9-b228-0e476c35b3ba`  
    :::column-end:::
 :::row-end:::
@@ -722,8 +722,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group 
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributor group 
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Project Administrators group 
-      - **Administrator** role (all permissions) to the user who created a specific Environment.    
-      <br/>
+      - **Administrator** role (all permissions) to the user who created a specific Environment.<br/><br/>
       **ID:** `83d4c2e6-e57d-4d6e-892b-b87222b7ad20`  
    :::column-end:::
 :::row-end:::
@@ -762,8 +761,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Creator** role (`View`, `Use`, and `Create` permissions) to all members of the Contributors group 
       - **Creator** role (`View`, `Use`, `Create`, and `Owner` permissions) to the member who created the library item
       - **Administrator** role (all permissions) to members of the Build Administrators, Project Administrators, and Release Administrators groups.  
-      To learn more, see [Library asset security roles](../../pipelines/library/index.md).    
-      <br/>
+      To learn more, see [Library asset security roles](../../pipelines/library/index.md).<br/><br/>
       **ID:** `b7e84409-6553-448a-bbb2-af228e07cbeb`
    :::column-end:::
 :::row-end:::
@@ -784,8 +782,7 @@ The following table describes the security namespaces and permissions used to ma
       - **Reader** role (`View` permissions only) to all members of the Project Valid Users group and the Project Collection Build Service account
       - **Creator** role (`View`, `Use`, and `Create` permissions) to to members of the Endpoint Creators service security group.  
       - **Administrator** role (all permissions) to members of the Endpoint Administrators service security group.  
-      Roles are assigned through [Service connection security roles](about-security-roles.md#service-endpoint-roles).  
-      <br/>
+      Roles are assigned through [Service connection security roles](about-security-roles.md#service-endpoint-roles).<br/><br/>
       **ID:** `49b48001-ca20-4adc-8111-5b60c903a50c`
    :::column-end:::
 :::row-end:::
@@ -794,7 +791,7 @@ The following table describes the security namespaces and permissions used to ma
 
 ## Internal namespaces and permissions
 
-The following table describes the security namespaces and permissions that aren't surfaced through the user interface. They are primarily used to grant access to members of default security groups or to internal resources and shouldn't be altered in any way.  
+The following table describes the security namespaces and permissions that aren't surfaced through the web portal. They are primarily used to grant access to members of default security groups or to internal resources. We strongly recommend that you don't alter these permission settings in any way.    
  
 ---
 :::row:::
@@ -1004,23 +1001,6 @@ The following table describes the security namespaces and permissions that aren'
 ---
 :::row:::
    :::column span="":::
-      Identity2
-   :::column-end:::
-   :::column span="":::
-      `Read`     
-      `Write`  
-      `Delete`  
-      `Impersonate`  
-   :::column-end:::
-   :::column span="2":::
-      TBD 
-      <br/>
-      **ID:** `bf7bfa03-b2b7-47db-8113-fa2e002cc5b1` 
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="":::
       Licensing
    :::column-end:::
    :::column span="":::
@@ -1032,7 +1012,7 @@ The following table describes the security namespaces and permissions that aren'
       `Revoke`  
    :::column-end:::
    :::column span="2":::
-      TBD 
+      Manages the ability to view, add, modify, and remove license levels. These permissions are automatically granted to members of the Project Collection Administrators groups.    
       <br/>
       **ID:** `453e2db3-2e81-474f-874d-3bf51027f2ee` 
    :::column-end:::
@@ -1049,7 +1029,7 @@ The following table describes the security namespaces and permissions that aren'
       `Delete`  
    :::column-end:::
    :::column span="2":::
-      TBD 
+      Manages the ability to create and download permission reports.  
       <br/>
       **ID:** `25fb0ed7-eb8f-42b8-9a5e-836a25f67e37` 
    :::column-end:::
@@ -1100,7 +1080,7 @@ The following table describes the security namespaces and permissions that aren'
       `ViewExternalArtifactCommitsAndWorkItems`     
    :::column-end:::
    :::column span="2":::
-      TBD 
+      Manages access to Release Management user interface elements.  
       <br/>
       **ID:** `7c7d32f7-0e86-4cd6-892e-b35dbba870bd ` 
    :::column-end:::
@@ -1138,39 +1118,6 @@ The following table describes the security namespaces and permissions that aren'
       Manages permissions to view, edit, and delete service hook subscriptions and publish service hook events. These permissions are automatically assigned to members of the Project Collection Administrators group. `DeleteSubscriptions` is no longer used; `EditSubscriptions` can delete service hooks.  
       <br/>
       **ID:** `cb594ebe-87dd-4fc9-ac2c-6a10a4c92046` 
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-:::row:::
-   :::column span="":::
-      TeamLabSecurity
-   :::column-end:::
-   :::column span="":::
-      `Read`  
-      `Create `  
-      `Write`  
-      `Edit`  
-      `Delete`  
-      `Start`  
-      `Stop`  
-      `Pause`  
-      `ManageSnapshots`  
-      `ManageLocation`  
-      `DeleteLocation`  
-      `ManagePermissions`  
-      `ManageChildPermissions`  
-      `ManageTestMachines`  
-   :::column-end:::
-   :::column span="2":::
-      TBD
-      ::: moniker range="<= tfs-2015"
-      [Manages Lab Management permissions](/azure/devops/organizations/security/permissions#lab).
-      > [!NOTE]  
-      > Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).  
-      ::: moniker-end   
-      <br/>  
-      **ID:** `9e4894c3-ff9a-4eac-8a85-ce11cafdc6f1`   
    :::column-end:::
 :::row-end:::
 ---
@@ -1239,25 +1186,29 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
       - `DataProvider`
       - `Favorites`
       - `Graph`
+      - `Identity2`
       - `IdentityPicker`
       - `Job`
       - `Location`
       - `ProjectAnalysisLanguageMetrics`
       - `Proxy`
-      - `Registry`
+      - `Publish` 
+      - `Registry` 
       - `Security`
    :::column-end:::
    :::column span="2":::
-      - `ServicingOrchestration`
-      - `SettingEntries`
-      - `Social`
-      - `StrongBox`
+      - `ServicingOrchestration`  
+      - `SettingEntries`  
+      - `Social`  
+      - `StrongBox`  
+      - `TeamLabSecurity`  
       - `TestManagement`
-      - `ViewActivityPaneSecurity`
-      - `WebPlatform`
-      - `WorkItemsHub`
-      - `WorkItemTracking`
-      - `WorkItemTrackingConfiguration`
+      - `VersionControlItems2`  
+      - `ViewActivityPaneSecurity` 
+      - `WebPlatform`  
+      - `WorkItemsHub` 
+      - `WorkItemTracking` 
+      - `WorkItemTrackingConfiguration` 
    :::column-end:::
 :::row-end:::
 ---
@@ -1294,3 +1245,63 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)
 - [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)
+
+
+<!--- QUESTIONS   
+
+Note access level restrictions. 
+Note non UI permissions
+
+
+---
+:::row:::
+   :::column span="":::
+      Identity2
+   :::column-end:::
+   :::column span="":::
+      `Read`     
+      `Write`  
+      `Delete`  
+      `Impersonate`  
+   :::column-end:::
+   :::column span="2":::
+      TBD 
+      <br/>
+      **ID:** `bf7bfa03-b2b7-47db-8113-fa2e002cc5b1` 
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+:::row:::
+   :::column span="":::
+      TeamLabSecurity
+   :::column-end:::
+   :::column span="":::
+      `Read`  
+      `Create `  
+      `Write`  
+      `Edit`  
+      `Delete`  
+      `Start`  
+      `Stop`  
+      `Pause`  
+      `ManageSnapshots`  
+      `ManageLocation`  
+      `DeleteLocation`  
+      `ManagePermissions`  
+      `ManageChildPermissions`  
+      `ManageTestMachines`  
+   :::column-end:::
+   :::column span="2":::
+      TBD
+      ::: moniker range="<= tfs-2015"
+      [Manages Lab Management permissions](/azure/devops/organizations/security/permissions#lab).
+      > [!NOTE]  
+      > Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).  
+      ::: moniker-end   
+      <br/>  
+      **ID:** `9e4894c3-ff9a-4eac-8a85-ce11cafdc6f1`   
+   :::column-end:::
+:::row-end:::
+---
+
+--> 
