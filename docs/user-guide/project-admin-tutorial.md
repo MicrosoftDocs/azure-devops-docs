@@ -151,15 +151,13 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 A number of notifications are predefined for each project you add. Notifications are based on subscription rules. Subscriptions arise from the following areas:
 
 - [Out-of-the-box or default subscriptions](../notifications/oob-built-in-notifications.md).
-- [Team notifications](../notifications/manage-team-group-notifications.md), managed by a team administrator.
+- [Team, organization, and collection-level notifications](../notifications/manage-team-group-global-organization-notifications.md), managed by a team administrator or member of the Project Collection Administrators group.
 - Project notifications, managed by a member of the Project Administrators group.
-- [Organization and collection level notifications](../notifications/manage-organization-notifications.md), managed by a member of the Project Collection Administrators group.
 
 If users believe they're getting too many notifications, direct them to [opt out of a subscription](../notifications/manage-your-personal-notifications.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Personal notifications](media/services/personal-notifications.png)   
-
 
 ::: moniker range="< azure-devops"  
 
