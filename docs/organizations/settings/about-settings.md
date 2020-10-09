@@ -139,7 +139,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 <tr>
 <td> <strong>Notifications</strong> </td>
 <td><ul>
-<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Manage team notifications](../../notifications/manage-team-group-notifications.md)">Manage team notifications</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage team notifications</a></li>
 </ul></td>
 <td>A number of team notifications are automatically defined when a team is added. To learn more about how notifications are managed, see <a href="../../notifications/about-notifications.md" data-raw-source="[About notifications](../../notifications/about-notifications.md)">About notifications</a>.   </td>
 </tr>
@@ -228,7 +228,7 @@ From the administrative **Project settings** pages, you can configure settings a
 <td><ul>
 <li>Manage project-level notifications</li>
 </ul></td>
-<td>A number of project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-notifications.md)">team level</a>.</td>
+<td>A number of project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-global-organization-notifications.md)">team level</a>.</td>
 </tr>
 <tr>
 <td><strong>Service Hooks</strong></td>
@@ -409,9 +409,9 @@ For an overview of managing your organization, see [About organization managemen
 <tr>
 <td><strong>Notifications</strong></td>
 <td><ul>
-<li><a href="/azure/devops/notifications/manage-organization-notifications" data-raw-source="[Manage collection-level notifications](../../notifications/manage-organization-notifications.md)">Manage collection-level notifications</a> </li>
+<li><a href="/azure/devops/notifications/manage-organization-notifications" data-raw-source="[Manage collection-level notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage collection-level notifications</a> </li>
 </ul></td>
-<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-notifications.md)">team level</a>. </td>
+<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-global-organization-notifications.md)">team level</a>. </td>
 </tr>
 <tr>
 <td><strong>Extensions</strong></td>
@@ -498,7 +498,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 <td><ul>
 <li>Manage collection-level notifications </li>
 </ul></td>
-<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-notifications.md)">team level</a>. </td>
+<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-global-organization-notifications.md)">team level</a>. </td>
 </tr>
 <tr>
 <td><strong>Boards, Process</strong> </td>
@@ -581,7 +581,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <td><ul>
 <li>Manage collection-level notifications </li>
 </ul></td>
-<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-notifications.md)">team level</a>. </td>
+<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-global-organization-notifications.md)">team level</a>. </td>
 </tr>
 <tr>
 <td><strong>Build and release, Agent pools, Deployment pools</strong></td>
