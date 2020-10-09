@@ -1,4 +1,4 @@
-﻿---
+---
 title: Share your project vision & view project activity
 titleSuffix: Azure DevOps 
 description: View or update your project home page to share project vision, objectives, and activity for Azure DevOps
@@ -37,7 +37,7 @@ From the project home page, share your project with your team, add project membe
   - Change the repository that you use to share your project mission
   - Manage project membership
 - To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
-- To view the project page, you must be a valid member of the project. For more information, see [Permissions and groups, Valid user groups](../../organizations/security/about-permissions.md#validusers).
+- To view the project page, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-security-identity.md#validusers).
 
 ## Open project summary
 
@@ -90,7 +90,7 @@ You can share your project and objective, as well as ways for team members to co
 2. With the **Add a README** check box checked, choose **Initialize**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Initialize README file, new nav](media/share-project/initialize-readme-new-nav.png)
+   > ![Screenshot of Initialize README file, latest versions](media/share-project/initialize-readme-new-nav.png)
 
    A default README file is added to the project repository, in this case, the **Fabrikam Test** repo.
 
@@ -120,7 +120,7 @@ You can share your project and objective, as well as ways for team members to co
 2. With the **Add a README** check box checked, choose **Initialize**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Initialize README file, new nav](media/share-project/initialize-readme-prev-nav.png)
+   > ![Screenshot of Initialize README file, new nav](media/share-project/initialize-readme-prev-nav.png)
 
    A default README file is added to the project repository, in this case, the **Fabrikam Test** repo.
 
