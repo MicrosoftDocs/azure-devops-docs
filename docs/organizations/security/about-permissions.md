@@ -144,39 +144,6 @@ you'll want to [change access levels](change-access-levels.md), not permissions.
 Setting the access level for  users or groups doesn't provide them access to a project or the web portal. Only users or groups added to a team or security group can connect to a project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the project or a team](add-users-team-project.md).
 
 
-## Manage large numbers of users 
-
-If you need to set permissions for large numbers of users,
-create a group in Windows, Active Directory, or Azure Active Directory,
-add these groups to a default or custom security group,
-and add the same groups to grant access to additional resources.
-
-![Conceptual image showing defining AD groups](media/permissions/grant-permissions.png)
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-
-Of course, you don't need to grant permissions for reports or the project portal if your project doesn't use SQL Server Reporting Services or a SharePoint site.
-::: moniker-end
-
-<a name="validusers"></a>
-
-## Valid user groups
-
-When you add accounts of users directly to a built-in group or through a Windows group, they are automatically added to one of the valid user groups.
-
--   *Server*\\Team Foundation Valid Users: All members added to server-level groups.
--   *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
--   *TeamProjectName*\\Project Valid Users: All members added to project-level groups.
-
-The default permissions assigned to these groups are primarily limited to
-read access, such as **View build resources**, **View project-level
-information**, and **View collection-level information**.
-
-This means that all users that you add to one project can view the objects in other projects within a collection.
-If you need to restrict view access, then you can [set restrictions through the area path node](../../organizations/security/set-permissions-access-work-tracking.md).
-
-If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,
-no users in the group are able to access the project, collection, or deployment, depending on the group you set.
 
 ## Tools used to set permissions
 
