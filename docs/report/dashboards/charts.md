@@ -87,7 +87,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 ::: moniker-end
 
-To learn more about default groups, see [About permissions and groups](../../organizations/security/about-permissions.md).
+To learn more about default groups, see [About permissions and inheritance(../../organizations/security/about-permissions.md).
 
 
 ## Create a flat-list query  

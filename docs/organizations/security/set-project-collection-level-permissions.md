@@ -539,7 +539,7 @@ A: You can find detailed information about individual permissions and their rela
 
 ## Related articles
 
-- [About permissions and groups](about-permissions.md)
+- [About permissions and inheritance](about-permissions.md)
 - [Permissions lookup reference](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)

@@ -8,11 +8,11 @@ toc: show
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 08/25/2020
+monikerRange: '<= azure-devops'
+ms.date: 10/09/2020
 ---
 
-# About permissions and groups
+# About permissions and inheritance  
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 

@@ -8,7 +8,7 @@ toc: show
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/09/2020
 ---
 
@@ -43,14 +43,16 @@ While the main types of accounts of interest are the user accounts that you add 
 
 The most effective means for managing accounts is by adding them to security groups. 
 
+> [!NOTE]  
+> The organization owner and members of the Project Collection Administrators group are granted full access to most all features and functions. 
 
+### To learn more 
 
-To learn more, see the following articles: 
-
-- [Add users and manage access]() 
-<!---
-The organization owner and members of the Project Collection Administrators group are granted 
---> 
+- [Create your organization](../accounts/create-organization.md)
+- [Change the organization owner](../accounts/change-organization-ownership.md)
+- [Add users and manage access](../accounts/add-organization-users.md) 
+- [Service accounts](permissions.md) 
+ 
 
 
 ## Authentication
@@ -264,6 +266,7 @@ Permissions are assigned at various levels based on the structure of the Azure D
 - **Collection-level**
 - **Server-level**  
 ::: moniker-end
+
 #### Permission states 
 
 There are five possible assignments made to a permission. They grant or restrict access as indicated. 
@@ -275,7 +278,10 @@ There are five possible assignments made to a permission. They grant or restrict
 	- **Inherited deny** 
 	- **Not set** 
 
-<!--- To learn more, see [Security namespaces and permission reference](access-levels.md). --> 
+#### To learn more
+- [About permissions and inheritance](about-permissions.md)
+<!--- [Security namespaces and permission reference](access-levels.md) --> 
+
  
  
 <!--- 
@@ -287,7 +293,7 @@ Azure DevOps controls access through these three inter-connected functional area
 
 -   **Access level management** controls access to features provided via the web portal, the web application for Azure DevOps. Based on  what has been purchased for a user, administrators set the user's access  level to Basic, VS Enterprise (previously Advanced), or Stakeholder. 
 
-Each functional area uses groups to simplify management across the deployment. You add users and groups through the web administration context. Permissions are automatically set based on the security group that you add users to, or based on the object, project, collection, or server level to which you add groups. On the other hand, access level management controls access for all users and groups at the server level.
+Each functional area uses groups to simplify management across the deployment. You add users and groups through the web administration context. Permissions are automatically set based on the security group that you add users to, or based on the object, project, collection, or server level to which you add groups. On the other hand, access level management controls access for all users at the server level.
 
 <img src="media/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
 
@@ -305,7 +311,7 @@ see [Permissions and groups reference](permissions.md).
 -->
 ## Try this next
 > [!div class="nextstepaction"]
-> [About permissions and groups](about-permissions.md)
+> [About permissions and inheritance](about-permissions.md)
 
 ## Related articles
 

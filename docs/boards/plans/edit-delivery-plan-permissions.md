@@ -83,6 +83,6 @@ By default all members of an organization or project collection can view Deliver
 ## Related articles
 
 - [Review team delivery plans](review-team-plans.md)  
-- [About permissions and groups](../../organizations/security/about-permissions.md)
+- [About permissions and inheritance(../../organizations/security/about-permissions.md)
 - [About access levels](../../organizations/security/access-levels.md)
 

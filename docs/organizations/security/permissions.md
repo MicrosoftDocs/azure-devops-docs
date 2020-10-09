@@ -20,7 +20,7 @@ ms.date: 06/05/2020
 
 This article provides a comprehensive reference for each built-in user, group, and permission. It's a lot of information describing each built-in security user and group as well as each permission. 
 
-For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [About permissions and groups](about-permissions.md). In addition to security groups, there are also [security roles](about-security-roles.md), which provide permissions for select areas. 
+For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [About permissions and inheritance](about-permissions.md). In addition to security groups, there are also [security roles](about-security-roles.md), which provide permissions for select areas. 
 
 To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
