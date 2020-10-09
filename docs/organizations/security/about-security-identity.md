@@ -38,7 +38,7 @@ There are various account types supported. The methods used to manage authentica
 -->
 ---
 :::row:::
-   :::column span="1":::
+   :::column span=".6":::
       **Accounts**  
       &#8226;&nbsp;Users  
       &#8226;&nbsp;Organization owner   
@@ -46,7 +46,7 @@ There are various account types supported. The methods used to manage authentica
       &#8226;&nbsp;Service principals  
       &#8226;&nbsp;Job agents  
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.2":::
       **Authentication**  
       &#8226;&nbsp;User credentials  
       &#8226;&nbsp;Windows authentication  
@@ -56,7 +56,7 @@ There are various account types supported. The methods used to manage authentica
       &#8226;&nbsp;Oauth  
       &#8226;&nbsp;Active Directory authentication library  
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.2":::
       **Authorization**  
       &#8226;&nbsp;Security group membership  
       &#8226;&nbsp;Role-based access control  
@@ -163,6 +163,8 @@ Also, for select features, users and groups may need to belong to an access leve
 
 --> 
 
+<a id="security-group-membership" /> 
+
 ### Security group membership 
 
 Several default security groups are defined and automatically configured with default permissions. Most users are assigned to the Contributors group for a project to provide them access to the features they need to access. Administrators should be added to the Project Collection Administrators or Project Administrators group. 
@@ -209,9 +211,9 @@ For a description of each default security group, see [Security groups, service 
 
 With Role-based access control, accounts are assigned to a role, with each role assigned one or more permissions. The following table lists the artifacts whose   permissions are managed by role.  
 
-| Collection-level | Project-level | Object-level |
-|:----------------:|:----------------:|:----------------:|
-|- Agent pools<br/>- Deployment pools<br/>- Marketplace extensions|- Agent pools<br/>- Agent queues<br/>- Service connections|- Team administrator<br/>- Secure files<br/>- Variable groups|
+| Object-level  | Project-level |Collection-level |
+|----------------|----------------|----------------|
+|&#8226;&nbsp; Secure files<br/>&#8226;&nbsp; Variable groups|&#8226;&nbsp; Agent pools<br/>&#8226;&nbsp; Agent queues<br/>&#8226;&nbsp; Service connections&#8226;&nbsp; Team administrator<br/>|&#8226;&nbsp;Agent pools<br/>&#8226;&nbsp; Deployment pools<br/>&#8226;&nbsp; Marketplace extensions|
  
 
 <a id="access-levels" />
@@ -229,7 +231,7 @@ Access to select, new features are controlled by feature flags. Periodically, Az
 
 Security namespaces store data that determines the level of access that Azure DevOps accounts have to perform a specific action on a specific resource. Each family of resources, such as work items or Git repositories, is secured through a unique namespace. Each security namespace contains zero or more access control lists (ACLs). Each ACL contains a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. 
 
-**Permission levels**
+#### Permission levels 
 
 Permissions are assigned at various levels based on the structure of the Azure DevOps instance. 
 
@@ -238,7 +240,7 @@ Permissions are assigned at various levels based on the structure of the Azure D
 - **Organization** or **collection-level**:
 - **Server-level** (on-premises only): 
 
-**Permission states**
+#### Permission states 
 
 There are five possible assignments made to a permission. They grant or restrict access as indicated. 
 - User or group has permissions to perform a task: 
@@ -280,6 +282,9 @@ see [Permissions and groups reference](permissions.md).
 
 
 ## Related articles
+
+- [Securing Azure Pipelines](../../pipelines/security/overview.md) 
+
 
 To learn more, see [About security roles](about-security-roles.md).
 
