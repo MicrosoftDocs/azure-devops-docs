@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 10/01/2020
+ms.date: 10/09/2020
 ---
 
 # About security, membership, and permissions
@@ -18,19 +18,18 @@ ms.date: 10/01/2020
 
 Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access. Both our cloud service, Azure DevOps Services, and on-premises server, Azure DevOps Server, support software development projects, from planning through deployment. Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects.
 
-Accounts get access to Azure Devops through authentication of their security credentials and authorization of their account entitlements to access a feature or function. 
-
-The following table summarizes the  various account types supported and the methods used to manage authentication and authorization.
+Accounts get access to Azure Devops through authentication of their security credentials and authorization of their account entitlements to access a feature or function. The following table summarizes the  various account types supported and the methods used to manage authentication and authorization.
 
 | Accounts | Authentication |Authorization |
 |----------------|----------------|----------------|
 |&#8226;&nbsp;Users<br/>&#8226;&nbsp;Organization owner<br/>&#8226;&nbsp;Service accounts<br/>&#8226;&nbsp;Service principals<br/>&#8226;&nbsp;Job agents|&#8226;&nbsp;User credentials<br/>&#8226;&nbsp;Windows authentication<br/>&#8226;&nbsp;Two-factor authentication (2FA)<br/>&#8226;&nbsp;SSH key authentication<br/>&#8226;&nbsp;Personal access tokens<br/>&#8226;&nbsp;Oauth<br/>&#8226;&nbsp;Active Directory authentication library  |&#8226;&nbsp;Security group membership<br/>&#8226;&nbsp;Role-based access control<br/>&#8226;&nbsp;Access levels<br/> &#8226;&nbsp;Feature flags<br/>&#8226;&nbsp;Security namespaces & permissions|
 
- 
-
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-To learn more about the steps Microsoft takes to keep your projects in Azure DevOps safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../organizations/security/data-protection.md).
+::: moniker range="azure-devops"
+To learn more about the steps Microsoft takes to keep your projects in Azure DevOps Services safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../organizations/security/data-protection.md).
+::: moniker-end
+
 
 ## Accounts 
 
@@ -202,13 +201,13 @@ For a description of each default security group, see [Security groups, service 
 When you add accounts of users directly to a security group, they are automatically added to one of the valid user groups.
 
 ::: moniker range="azure-devops"
-- *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
-- *TeamProjectName*\\Project Valid Users: All members added to project-level groups.
+- *OrganizationName*\\Project Collection Valid Users: All members added to organization-level groups.
+- *ProjectName*\\Project Valid Users: All members added to project-level groups.
 ::: moniker-end
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 - *Server*\\Azure DevOps Valid Users: All members added to server-level groups.
 - *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
-- *TeamProjectName*\\Project Valid Users: All members added to project-level groups.
+- *ProjectName*\\Project Valid Users: All members added to project-level groups.
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
 - *Server*\\Team Foundation Valid Users: All members added to server-level groups.
@@ -253,11 +252,18 @@ Security namespaces store data that determines the level of access that Azure De
 
 Permissions are assigned at various levels based on the structure of the Azure DevOps instance. 
 
-- **Object-level**: Object-level 
-- **Project-level**:
-- **Organization** or **collection-level**:
-- **Server-level** (on-premises only): 
+::: moniker range="azure-devops"
+- **Object-level** 
+- **Project-level** 
+- **Organization-level**  
+::: moniker-end
 
+::: moniker range="< azure-devops"
+- **Object-level** 
+- **Project-level**
+- **Collection-level**
+- **Server-level**  
+::: moniker-end
 #### Permission states 
 
 There are five possible assignments made to a permission. They grant or restrict access as indicated. 
