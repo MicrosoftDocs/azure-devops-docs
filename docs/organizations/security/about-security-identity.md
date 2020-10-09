@@ -20,68 +20,12 @@ Azure DevOps employs a number of security concepts to ensure only those who shou
 
 Accounts get access to Azure Devops through authentication of their security credentials and authorization of their account entitlements to access a feature or function. 
 
-There are various account types supported. The methods used to manage authentication and authorization include the following: 
+The following table summarizes the  various account types supported and the methods used to manage authentication and authorization.
 
-<!---
-:::row:::
-   :::column span="1":::
-      **Accounts**
-   :::column-end:::
-   :::column span="1":::
-      **Authorization**
-   :::column-end:::
-   :::column span="1":::
-      **Authentication**
-   :::column-end:::
-:::row-end:::
----
--->
----
-:::row:::
-   :::column span=".6":::
-      **Accounts**  
-      &#8226;&nbsp;Users  
-      &#8226;&nbsp;Organization owner   
-      &#8226;&nbsp;Service accounts  
-      &#8226;&nbsp;Service principals  
-      &#8226;&nbsp;Job agents  
-   :::column-end:::
-   :::column span="1.2":::
-      **Authentication**  
-      &#8226;&nbsp;User credentials  
-      &#8226;&nbsp;Windows authentication  
-      &#8226;&nbsp;Two-factor authentication (2FA)  
-      &#8226;&nbsp;SSH key authentication  
-      &#8226;&nbsp;Personal access tokens  
-      &#8226;&nbsp;Oauth  
-      &#8226;&nbsp;Active Directory authentication library  
-   :::column-end:::
-   :::column span="1.2":::
-      **Authorization**  
-      &#8226;&nbsp;Security group membership  
-      &#8226;&nbsp;Role-based access control  
-      &#8226;&nbsp;Access levels  
-      &#8226;&nbsp;Feature flags  
-      &#8226;&nbsp;Security namespaces & permissions 
-   :::column-end:::
-:::row-end:::
----
+| Accounts | Authentication |Authorization |
+|----------------|----------------|----------------|
+|&#8226;&nbsp;Users<br/>&#8226;&nbsp;Organization owner<br/>&#8226;&nbsp;Service accounts<br/>&#8226;&nbsp;Service principals<br/>&#8226;&nbsp;Job agents|&#8226;&nbsp;User credentials<br/>&#8226;&nbsp;Windows authentication<br/>&#8226;&nbsp;Two-factor authentication (2FA)<br/>&#8226;&nbsp;SSH key authentication<br/>&#8226;&nbsp;Personal access tokens<br/>&#8226;&nbsp;Oauth<br/>&#8226;&nbsp;Active Directory authentication library  |&#8226;&nbsp;Security group membership<br/>&#8226;&nbsp;Role-based access control<br/>&#8226;&nbsp;Access levels<br/> &#8226;&nbsp;Feature flags<br/>&#8226;&nbsp;Security namespaces & permissions|
 
-<!---
-The main security concepts to understand are
-
-- Accounts and membership 
-- Authentication 
-- Authorization and permissions 
-- Security groups
-- Security roles
-- Permission levels and permissions 
-- Access levels  
-
-
-For anyone to access a project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Default permissions and access assignments](permissions-access.md).
-
--->
  
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
@@ -90,15 +34,21 @@ To learn more about the steps Microsoft takes to keep your projects in Azure Dev
 
 ## Accounts 
 
-While the main types of accounts of interest are the user accounts that you add to your organization or project, Azure DevOps support other types of accounts to support various operations. These include the following account types:  
+While the main types of accounts of interest are the user accounts that you add to your organization or project, Azure DevOps supports other types of accounts to perform various operations. These include the following account types:  
 
-- **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner  
+- **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner.  
 - **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK.  
 - **Service principals**: Internal Azure DevOps accounts to to support internal operations. 
-- **Job agents**: Internal accounts used to run specific jobs on a regular schedule
+- **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
 - **Third party accounts**: Accounts that require access to support Web hooks, service connections, or other third-party applications.
 
+The most effective means for managing accounts is by adding them to security groups. 
 
+
+
+To learn more, see the following articles: 
+
+- [Add users and manage access]() 
 <!---
 The organization owner and members of the Project Collection Administrators group are granted 
 --> 
@@ -161,23 +111,63 @@ Authorization is based on users and groups, and the permissions assigned directl
 
 Also, for select features, users and groups may need to belong to an access level that grants them access to a feature. 
 
+- Default security groups
+- Custom security groups
+- Security groups 
+- Team groups 
+- Azure Active Directory 
+- Active Directory (on-premises) 
+- Workgroups (on-premises) 
+- Windows group 
 --> 
 
 <a id="security-group-membership" /> 
 
 ### Security group membership 
 
-Several default security groups are defined and automatically configured with default permissions. Most users are assigned to the Contributors group for a project to provide them access to the features they need to access. Administrators should be added to the Project Collection Administrators or Project Administrators group. 
+With the creation of an organization, collection, or project&mdash;Azure DevOps creates a set of default security groups which are automatically assigned default permissions. Additional security groups are defined with the following actions: 
+- When you add a custom security group. You can create custom security groups at the following levels: 
+	- Project-level
+	- Organization- or collection-level
+	- Server-level (on-premises only)
+- When you add a team, a team security group is created 
 
-In addition, you can create custom security groups. Security groups are defined at the following levels: 
-- Project-level
-- Organization- or collection-level
-- Server-level (on-premises only)
+::: moniker range="azure-devops"
+Security group members can be a combination of users, other groups, and Azure Active Directory groups.  
+::: moniker-end
+::: moniker range="< azure-devops"
+Security group members can be a combination of users, other groups, and Active Directory groups or a Workgroup.  
+::: moniker-end
+
+Most users are assigned to the Contributors group for a project to provide them access to the features they need to access. Administrators should be added to the Project Collection Administrators or Project Administrators group. 
 
 > [!TIP]    
 > Accounts that are assigned to more than one security group are restricted to those permissions granting the least access. For example, if you add a user to the Readers group and the Project Administrators group, the effective permissions of the Readers group are enforced for the user. 
 
+### Populate security groups
 
+You can populate these groups by adding individual users. However, for ease of management, it's easier if you populate these groups by using Azure Active Directory (ADD), Active Directory (AD), or Windows security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
+
+::: moniker range="azure-devops"
+
+:::image type="content" source="media/about-security/add-active-directory-groups.png" alt-text="Conceptual image showing adding Azure Active Directory groups to Azure DevOps security groups, cloud":::
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
+
+:::image type="content" source="media/about-security/add-active-directory-groups.png" alt-text="Conceptual image showing adding Active Directory groups to Azure DevOps security groups , on-premises":::
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+![Conceptual image showing defining AD groups](media/permissions/grant-permissions.png)
+
+Of course, you don't need to grant permissions for reports or the project portal if your project doesn't use SQL Server Reporting Services or a SharePoint site.
+::: moniker-end
+
+### Permission levels 
 
 ::: moniker range="azure-devops"
 
@@ -186,7 +176,6 @@ As shown in the following image, security groups defined at the project and coll
 :::image type="content" source="media/about-security/security-groups-permission-management-cloud.png" alt-text="Conceptual image mapping default security groups to permission levels, cloud":::
 
 ::: moniker-end
-
 
 ::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
 
@@ -198,8 +187,6 @@ As shown in the following image, security groups defined at the project and coll
 
 ::: moniker range="< azure-devops-2019"
 
-You can populate these groups by using individual users. However, for ease of management, it's easier if you populate these groups by using Azure AD or AD security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
-
 ![Conceptual image of security groups and permission levels, TFS-2018 and earlier versions](media/permissions/permissions-overview.png) 
 
 ::: moniker-end
@@ -207,13 +194,44 @@ You can populate these groups by using individual users. However, for ease of ma
 For a description of each default security group, see [Security groups, service accounts, and permissions](permissions.md#groups).
 <a id="security-roles" />
 
+ 
+<a name="validusers"></a>
+
+### Valid user groups
+
+When you add accounts of users directly to a security group, they are automatically added to one of the valid user groups.
+
+::: moniker range="azure-devops"
+- *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
+- *TeamProjectName*\\Project Valid Users: All members added to project-level groups.
+::: moniker-end
+::: moniker range="azure-devops-2019 || azure-devops-2020"
+- *Server*\\Azure DevOps Valid Users: All members added to server-level groups.
+- *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
+- *TeamProjectName*\\Project Valid Users: All members added to project-level groups.
+::: moniker-end
+::: moniker range="< azure-devops-2019"
+- *Server*\\Team Foundation Valid Users: All members added to server-level groups.
+- *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
+- *TeamProjectName*\\Project Valid Users: All members added to project-level groups.
+::: moniker-end
+
+The default permissions assigned to these groups are primarily limited to
+read access, such as **View build resources**, **View project-level information**, and **View collection-level information**.
+
+This means that all users that you add to one project can view the objects in other projects within a collection.
+If you need to restrict view access, then you can [set restrictions through the area path node](../../organizations/security/set-permissions-access-work-tracking.md).
+
+If you remove or deny the **View instance-level information** permission for one of the valid users groups,
+no members of the group are able to access the project, collection, or deployment, depending on the group you set.
+
 ### Role-based access control  
 
 With Role-based access control, accounts are assigned to a role, with each role assigned one or more permissions. The following table lists the artifacts whose   permissions are managed by role.  
 
 | Object-level  | Project-level |Collection-level |
 |----------------|----------------|----------------|
-|&#8226;&nbsp; Secure files<br/>&#8226;&nbsp; Variable groups|&#8226;&nbsp; Agent pools<br/>&#8226;&nbsp; Agent queues<br/>&#8226;&nbsp; Service connections&#8226;&nbsp; Team administrator<br/>|&#8226;&nbsp;Agent pools<br/>&#8226;&nbsp; Deployment pools<br/>&#8226;&nbsp; Marketplace extensions|
+|&#8226;&nbsp; Secure files<br/>&#8226;&nbsp; Variable groups|&#8226;&nbsp; Agent pools<br/>&#8226;&nbsp; Agent queues<br/>&#8226;&nbsp; Service connections<br/>&#8226;&nbsp; Team administrator|&#8226;&nbsp;Agent pools<br/>&#8226;&nbsp; Deployment pools<br/>&#8226;&nbsp; Marketplace extensions|
  
 
 <a id="access-levels" />
@@ -279,7 +297,9 @@ To learn more about other groups and their permission assignments,
 see [Permissions and groups reference](permissions.md).
 
 -->
-
+## Try this next
+> [!div class="nextstepaction"]
+> [About permissions and groups](about-permissions.md)
 
 ## Related articles
 
@@ -287,7 +307,7 @@ see [Permissions and groups reference](permissions.md).
 
 
 To learn more, see [About security roles](about-security-roles.md).
-
+- [Default permissions and access assignments](permissions-access.md)
 - [Permissions and groups reference](permissions.md)
 - [Default permissions and access for Azure DevOps](permissions-access.md)
 - [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
