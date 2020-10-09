@@ -18,7 +18,7 @@ ms.date: 07/22/2019
 
 Learn how to view your permissions or the permissions that are set for others in Azure DevOps. If you don't have a permission to access a feature or function, you can request it from the right resource.
 
-Permissions are set at the collection, project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
+Permissions are set at the collection, project, and object level as described in [About permissions and inheritance](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
 
 ## Prerequisites
 

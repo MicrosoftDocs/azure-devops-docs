@@ -17,7 +17,7 @@ ms.date: 07/09/2020
 
 You can grant or restrict access to resources that you manage in Azure DevOps. You may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.
 
-If you're new to administrating permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
+If you're new to administrating permissions and groups, review [About permissions and inheritance](about-permissions.md)to learn about permission states and inheritance.
 
 In this article you learn how to do the following tasks: 
 
@@ -232,7 +232,7 @@ To learn more, see [Apply a field rule](../../reference/xml/apply-rule-work-item
 - [Trace permissions](faq-trace-permissions.md)
 - [Default permissions and access](permissions-access.md) 
 - [Permission lookup guide](permissions-lookup-guide.md) 
-- [About permissions and groups](about-permissions.md)
+- [About permissions and inheritance](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
 

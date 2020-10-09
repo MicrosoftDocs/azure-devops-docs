@@ -31,7 +31,7 @@ In this article you learn how to do the following tasks:
 > * Add members to a custom security group 
 > * Change the permission assignments for an individual user 
 
-If you're new to managing permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
+If you're new to managing permissions and groups, review [About permissions and inheritance](about-permissions.md)to learn about permission states and inheritance.
 
 
 ## Prerequisites
@@ -257,7 +257,7 @@ From the web portal, open the Security dialog for the object whose permissions y
 ## Related articles
 
 - [Permissions lookup guide](permissions-lookup-guide.md)
-- [About permissions and groups](about-permissions.md)
+- [About permissions and inheritance](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
 

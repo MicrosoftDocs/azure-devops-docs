@@ -61,6 +61,6 @@ For information on removing users from AD or Azure AD, see one of the following 
 
 ## Related articles
 
-* [About permissions and groups](../../organizations/security/about-permissions.md)
+* [About permissions and inheritance(../../organizations/security/about-permissions.md)
 * [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
 * [About security and identity](about-security-identity.md)
