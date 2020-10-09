@@ -7,7 +7,7 @@ ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/16/2019
+ms.date: 10/06/2020
 ---
 
 # Migrate data from Azure DevOps Server to Azure DevOps Services  
@@ -31,13 +31,16 @@ The data migration tool for Azure DevOps provides a high fidelity way to migrate
 
 The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases. Currently the following versions of Azure DevOps Server are supported for import:
 
+* Azure DevOps Server 2020
 * Azure DevOps Server 2019.1.1
-* Azure DevOps Server 2019 Update 1
 
 > [!NOTE]
 > The data migration tool doesn't support imports from Azure DevOps Server release candidates (RC). If you're planning on importing your collection database to Azure DevOps Services using this service, it's important that you don't upgrade your production database to an RC release. If you do upgrade, then you will need to wait and upgrade to the release to web (RTW) version when it's available or restore a backup copy of your database from a previous Azure DevOps Server version to import. 
 
 Normal release cadence for new Azure DevOps Server versions is once every three-to-four months. Meaning that support for a given version of Azure DevOps Server for migration to Azure DevOps Services should last for anywhere between six-to-eight months. It's important to ensure that your planning accounts for this support window to avoid having to suddenly upgrade to migrate. 
+
+
+<!--- 
 
 ## Preview features
 
@@ -54,6 +57,8 @@ The following features can be included with your import, but are currently in a 
 When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new organization along with all your other data. Should you choose to not include these features then their data will not be copied.
 
 For a list of items not included with an import, see the [migration guide and tool](https://aka.ms/AzureDevOpsImport).
+
+-->
 
 ## Data migration tool for Azure DevOps resources
 

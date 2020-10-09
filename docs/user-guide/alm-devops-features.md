@@ -715,7 +715,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Personal and team notifications or alerts</b></p>
-<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting <a href="/azure/devops/notifications/manage-your-personal-notifications" data-raw-source="[personal notifications](../notifications/manage-your-personal-notifications.md)">personal notifications</a> or <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team notifications](../notifications/manage-team-group-notifications.md)">team notifications</a>.</p>
+<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting <a href="/azure/devops/notifications/manage-your-personal-notifications" data-raw-source="[personal notifications](../notifications/manage-your-personal-notifications.md)">personal notifications</a> or <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team notifications](../notifications/manage-team-group-global-organization-notifications.md)">team notifications</a>.</p>
 <img src="media/features/features-notifications-option.png" alt="Open Notifications from Organization menu"/><br/><br/>
 
 <p><b>Share queries and sprint plans</b></p>
@@ -2240,7 +2240,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md)">granted explicit permissions to edit a specific process</a>.  </p>
 
 <p><b>Valid users</b></p>
-<p>Understand how <a href="../organizations/security/about-permissions.md#validusers" data-raw-source="[valid user groups are populated and the permissions they&#39;re granted](../organizations/security/about-permissions.md#validusers)">valid user groups are populated and the permissions they&#39;re granted</a>.</p>
+<p>Understand how <a href="../organizations/security/about-permissions.md#validusers" data-raw-source="[valid user groups are populated and the permissions they&#39;re granted](../organizations/security/about-permissions.md#valid-user-groups)">valid user groups are populated and the permissions they&#39;re granted</a>.</p>
 
 
 <p><b>Permission reference</b></p>

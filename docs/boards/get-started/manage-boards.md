@@ -101,7 +101,7 @@ To learn more, see these articles:
 A number of notifications are predefined for each project. Notifications are based on subscription rules. Subscriptions arise from the following areas:
 
 - [Out-of-the-box or default subscriptions](../../notifications/oob-built-in-notifications.md).
-- [Team notifications](../../notifications/manage-team-group-notifications.md), managed by a team administrator.
+- [Team notifications](../../notifications/manage-team-group-global-organization-notifications.md), managed by a team administrator.
 - Project notifications, managed by a member of the Project Administrators group.
 
 If users believe they're getting too many notifications, they can [opt out of a subscription](../../notifications/manage-your-personal-notifications.md). 
