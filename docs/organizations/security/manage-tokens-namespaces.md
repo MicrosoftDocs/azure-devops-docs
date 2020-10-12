@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 09/14/2020
+ms.date: 10/12/2020
 ---
 
 # Manage permissions with command line tool
@@ -441,6 +441,7 @@ The following table lists valid namespaces and provides descriptions and links t
  
 ## Related articles
 
+- [Security namespace and permission reference](namespace-reference.md)
 - [Security Namespaces REST API](/rest/api/azure/devops/security/security%20namespaces)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)
