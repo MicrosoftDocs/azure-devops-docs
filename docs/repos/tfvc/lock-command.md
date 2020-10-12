@@ -65,7 +65,7 @@ You can use the lock command to temporarily freeze the Team Foundation version c
 > [!NOTE]
 > As a courtesy to your teammates, notify them when you apply a lock to an item, explain why you are doing this, and estimate when you plan to remove the lock, if you can.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ### How to Lock an Item
 
@@ -137,7 +137,7 @@ c:\projects>tf lock /lock:none src/
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Checkout and Edit Commands](checkout-or-edit-command.md)
 
@@ -151,6 +151,6 @@ c:\projects>tf lock /lock:none src/
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
 
 [Working with Version Control Locks](work-version-control-locks.md)

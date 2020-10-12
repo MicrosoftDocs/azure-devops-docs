@@ -9,7 +9,7 @@ ms.date: 02/13/2020
 
 ### Create the Azure app service
 
-An [Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) is where you'll deploy your application. Technically speaking, an app service is a resource with a specific pricing tier in Azure that can then host multiple, distinct applications. In this example we'll use a [Web App](https://azure.microsoft.com/documentation/articles/app-service-web-overview/).
+An [Azure App Service](/azure/app-service/overview) is where you'll deploy your application. Technically speaking, an app service is a resource with a specific pricing tier in Azure that can then host multiple, distinct applications. In this example we'll use a [Web App](/azure/app-service/overview).
 If you're creating a new App Service for this example, you can use the [Free pricing tier](https://azure.microsoft.com/pricing/details/app-service/).
 
 To create a new Web App, simply go to the App Services blade on the Azure portal, click **+Add**, select the **Web App** template, click **Create**, and enter a name and other details. The web app URL will then be `{name}.azurewebsites.net.`
@@ -39,4 +39,4 @@ In a few moments the site will then give you a URL such as <code>https://df8381c
 <p></p>
 </div>
 
-Learn more at the [Web Apps Overview](https://azure.microsoft.com/documentation/articles/app-service-web-overview/).
+Learn more at the [Web Apps Overview](/azure/app-service/overview).

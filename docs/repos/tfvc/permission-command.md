@@ -56,7 +56,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
 </tr>
 <tr>
 <td><p><em>Itemspec</em></p></td>
-<td><p>Identifies the file or folder for which to modify permissions. For more information about how Team Foundation parses <em>itemspecs</em> to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p>
+<td><p>Identifies the file or folder for which to modify permissions. For more information about how Team Foundation parses <em>itemspecs</em> to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -140,7 +140,7 @@ You can specify more than one <em>Itemspec</em> argument.
 ## Remarks
 You can use the <strong>permission</strong> command (or alternatively its shortcut, <strong>perm</strong>) to manage authorization settings for Team Foundation version control server objects. However, this command does not let you manage authentication settings such as creating or modifying Team Foundation security groups.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 ## Examples
 The following example displays the Team Foundation access control lists (ACLs) for 314.cs.
 
@@ -188,8 +188,8 @@ c:\projects>tf permission /deny:PendChange /user:somealias $/testproject/1256.cs
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

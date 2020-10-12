@@ -33,7 +33,7 @@ To manage permissions for a collaboration tool, see the following articles:
 To manage notifications, see the following articles:
 
 - [Manage personal notifications](../../notifications/manage-your-personal-notifications.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json)
-- [Manage team notifications](../../notifications/manage-team-group-notifications.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json)
+- [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md?bc=%252fazure%252fdevops%252fnotifications%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fnotifications%252ftoc.json)
 
 >[!NOTE]
 >There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).

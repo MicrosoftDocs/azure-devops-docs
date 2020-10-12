@@ -4,8 +4,8 @@ description: Acquires the test platform from nuget.org or the tools cache and ca
 ms.topic: reference
 ms.assetid: 2C65196A-54FD-4A02-9BE8-D9D1837B7111
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 04/21/2020
 monikerRange: 'azure-devops'
 ---

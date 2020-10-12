@@ -32,7 +32,7 @@ Requires the Package Management extension.
 |View|(Optional) Select a view to see package versions only promoted to that view.|
 |Definition|(Required) Select the package to download. This can be the artifact ID or the package name.|
 |Version|(Required) Version of the package.|
-|Files|(Optional) Specify files to be downloaded as multiline minimatch patterns. [More Information](https://aka.ms/minimatchexamples). The default pattern (**) will download all files within the artifact.|
+|Files|(Optional) Specify files to be downloaded as multiline minimatch patterns. [More Information](../file-matching-patterns.md). The default pattern (**) will download all files within the artifact.|
 |Extract|(Optional) Specify whether to extract the package contents at the destination directory.|
 |DownloadPath|(Required) Path on the agent machine where the package will be downloaded.|
 
@@ -70,7 +70,7 @@ Requires the Package Management extension.
 
 ### How do I find the ID of the feed (or project) I want to download my artifact from
 
-The get feed api can be used to retrieve the feed and project ID for your feed. The api is documented [here](https://go.microsoft.com/fwlink/?linkid=2099537).
+The get feed api can be used to retrieve the feed and project ID for your feed. The api is documented [here](/rest/api/azure/devops/artifacts/feed%20%20management/get%20feed).
 
 ### Can I use the project or feed name instead of IDs
 

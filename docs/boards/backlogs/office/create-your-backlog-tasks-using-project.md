@@ -35,7 +35,7 @@ Use this article to learn how to:
 
 ::: moniker range="<= tfs-2015"  
 > [!NOTE] 
-> You can also manage projects using Project Professional and [Project Server synchronized with TFS](../../../reference/tfs-ps-sync/synchronize-tfs-project-server.md), but you can't use Project Professional to both publish and refresh to TFS and synchronize with TFS.
+> You can also manage projects using Project Professional and [Project Server synchronized with TFS](/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server), but you can't use Project Professional to both publish and refresh to TFS and synchronize with TFS.
  
 ::: moniker-end  
 
