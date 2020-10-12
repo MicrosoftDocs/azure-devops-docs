@@ -38,35 +38,35 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
       ::: moniker-end
 
-   1. Select **npm**.
+   2. Select **npm**.
 
-   1. Select **Get the tools** in the top-right corner
+   3. Select **Get the tools** in the top-right corner.
  
    ::: moniker range=">= azure-devops"   
-
-      1. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
-
-      1. Follow the instructions under the **Project setup** section to set up your project. See the **Restore packages** and **Publish packages** sections if you want to publish or restore your packages..
-
-      > [!div class="mx-imgBorder"] 
-      >![Connect to feed DevOps services](../media/npm-azure-devops-newnav.png)
-
+   
+      4. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
+   
+      5. Follow the instructions under the **Project setup** section to set up your project. See the **Restore packages** and **Publish packages** sections if you want to publish or restore your packages.
+   
+         > [!div class="mx-imgBorder"] 
+         > ![Connect to feed DevOps services](../media/npm-azure-devops-newnav.png)
+   
    ::: moniker-end
 
    ::: moniker range="> tfs-2018 < azure-devops"
 
-      1. Follow the instructions in the **Project setup** and **Restore packages** sections.
+      4. Follow the instructions in the **Project setup** and **Restore packages** sections.
 
          > [!div class="mx-imgBorder"] 
-         >![Connect to feed server 2019 and 2020](../media/connect-to-feed-devops-server.png)
+         > ![Connect to feed server 2019 and 2020](../media/connect-to-feed-devops-server.png)
 
    ::: moniker-end
 
    ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-      1. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
+      4. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
 
-      1. Follow the instructions under the **Project setup** section to set up your project. See the **Restore packages** and **Publish packages** sections if you want to publish or restore your packages.
+      5. Follow the instructions under the **Project setup** section to set up your project. See the **Restore packages** and **Publish packages** sections if you want to publish or restore your packages.
 
          > [!div class="mx-imgBorder"] 
          > ![Connect to feed TFS project setup](../media/connect-to-feed-npm-registry.png)
