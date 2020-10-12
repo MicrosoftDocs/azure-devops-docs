@@ -644,6 +644,7 @@ Security Service Group
 <!---
 Build Administrators
 Contributors
+Endpoint Administrators - cloud
 Project Administrators
 Project Valid Users
 Readers
@@ -2858,7 +2859,7 @@ Members of the Project Administrators group are automatically granted these perm
 
 <a id="query">  </a>
 
-## Work item query and folder (object-level)
+## Work item query and query folder (object-level)
 
 You manage query and query folder permissions through the [web portal](../../boards/queries/set-query-permissions.md). Project Administrators are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project.
 
@@ -3448,9 +3449,10 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 ## Related articles
 
 - [About permissions](about-permissions.md)  
-- [Service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)
-- [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md) 
+- [Security and permission management tools](security-tools-reference.md)  
+- [Service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)  
+- [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
 - [Make a user a team admin](../settings/manage-teams.md)  
-- [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
+ 

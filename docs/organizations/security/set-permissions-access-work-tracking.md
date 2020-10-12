@@ -152,7 +152,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 <a id="work-item-queries"></a>
 
-## Define and edit queries or query folders
+## Set permissions on queries or query folders
 
 You can specify who can add or edit query folders or queries at the object-level. 
 To manage permissions for a query or query folder, you must be the creator of the query or folder, a member of the Project Administrators or Project Collection Administrators group, or granted explicit access through the object's Security dialog. 
@@ -247,6 +247,16 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 > Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
 
 ::: moniker-end
+
+
+<! --- 
+<a id="tags" /> 
+
+## Set permissions on work item tags
+
+By default, all users of the Contributors group can create and add tags to work items.  
+
+-->  
 
 ::: moniker range="<= azure-devops-2019"  
 
