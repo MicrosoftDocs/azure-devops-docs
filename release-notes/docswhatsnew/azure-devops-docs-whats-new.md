@@ -23,7 +23,7 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2020 through Se
 ### Updated articles
 
 - [Link user stories, issues, bugs, and other work items](/azure/devops/boards/backlogs/add-link) - Add link, build cross-project
-- [Plan and track work](/devops/boards/get-started/plan-track-work)
+- [Plan and track work](/azure/devops/boards/get-started/plan-track-work)
 - [Update and monitor your Taskboard](/azure/devops/boards/sprints/task-board)
 - [About process customization and inherited processes](/azure/devops/organizations/settings/work/inheritance-process-model)
 - [Add and manage fields (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-field)
