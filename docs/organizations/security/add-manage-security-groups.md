@@ -77,10 +77,10 @@ az devops security group create [--description]
 ### Optional parameters
 
 - **description**: Description of the new security group.
-- **email-id**: Create new group using the email address as a reference to an existing group from an Azure Active Directory (AAD) backed provider. Required if **name** or **origin-id** is missing.
+- **email-id**: Create new group using the email address as a reference to an existing group from an Azure Active Directory  backed provider. Required if **name** or **origin-id** is missing.
 - **groups**: A comma-separated list of descriptors referencing groups you want the newly created group to join.
 - **name**: Name of the new security group. Required if **origin-id** or **email-id** is missing.
-- **origin-id**: Create new group using the OriginID as a reference to an existing group from an AAD backed provider. Required if **name** or **email-id** is missing.
+- **origin-id**: Create new group using the OriginID as a reference to an existing group from an Azure AD backed provider. Required if **name** or **email-id** is missing.
 - **project**: Name or ID of the project in which the group should be created.
 - **scope**: Create group at project or organization level. Accepted values are *organization* and *project* (default).
 
