@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 08/19/2020
+ms.date: 10/08/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -12,7 +12,10 @@ monikerRange: '>= tfs-2017'
 
 **Azure Pipelines | TFS 2018 | TFS 2017.3** 
 
-You can specify the conditions under which each job runs. By default, a job runs if it does not depend on any other job, or if all of the jobs that it depends on have completed and succeeded. You can customize this behavior by forcing a job to run even if a previous job fails or by specifying a custom condition.
+You can specify the conditions under which each stage, job, or step runs.
+By default, a job or stage runs if it does not depend on any other job or stage, or if all of the jobs or stages that it depends on have completed and succeeded.
+By default, a step runs if nothing in its job has failed yet and the step immediately preceding it has finished.
+You can customize this behavior by forcing a stage, job, or step to run even if a previous dependency fails or by specifying a custom condition.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -62,6 +65,11 @@ stages:
       - script: echo Hello Stage B!
       - script: echo $(isMain)
 ```
+
+Conditions are evaluated to decide whether to start a stage, job, or step.
+This means that nothing computed at runtime inside that unit of work will be available.
+For example, if you have a job which sets a variable using a runtime expression using `$[ ]` syntax, you can't use that variable in your custom condition. 
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -195,7 +203,7 @@ extends:
 
 ### Use the output variable from a job in a condition in a subsequent job
 
-You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](/azure/devops/pipelines/process/variables#set-a-multi-job-output-variable) using `isOutput=true`. 
+You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](./variables.md#set-a-multi-job-output-variable) using `isOutput=true`. 
 
 ```yaml
 jobs:
@@ -297,4 +305,4 @@ stages:
 ## Related articles
 
 - [Specify jobs in your pipeline](../process/phases.md)  
-- [Add stages, dependencies, & conditions](../process/stages.md)   
+- [Add stages, dependencies, & conditions](../process/stages.md)

@@ -67,9 +67,9 @@ tf workspace [/collection:TeamProjectCollectionUrl] [/comment: ("comment"|@comme
 
 ## Remarks
 
-A [workspace](create-work-workspaces.md) is a local copy of the files and folders on the server, plus any changes that you have made locally. When you add, edit, delete, move, rename, or otherwise change any version-controlled item, your changes are isolated in your workspace where you can make and test your changes. Your [pending changes](https://msdn.microsoft.com/library/ms181409) are committed to the server and become available to other users outside your workspace when you perform a check-in.
+A [workspace](create-work-workspaces.md) is a local copy of the files and folders on the server, plus any changes that you have made locally. When you add, edit, delete, move, rename, or otherwise change any version-controlled item, your changes are isolated in your workspace where you can make and test your changes. Your [pending changes](/previous-versions/visualstudio/visual-studio-2010/ms181409(v=vs.100)) are committed to the server and become available to other users outside your workspace when you perform a check-in.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ### Creating a Workspace
 
@@ -146,12 +146,12 @@ c:\projects> tf workspace Beta1;jenh
 [Cloak and Uncloak Folders in a Workspace](optimize-your-workspace.md)  
 ### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)  
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
 [Workspaces Command](workspaces-command.md)  
 ### Concepts
 
 [Create a Workspace to Work with your Project](create-work-workspaces.md)  
 ### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)   
-[Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)  
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))   
+[Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)

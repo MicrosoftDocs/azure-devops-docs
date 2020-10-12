@@ -38,4 +38,4 @@ To configure check-out settings, you must have the **Edit project-level informat
 
 #### Tasks
 
-[Enable Team Foundation Version Control to Get the Latest Files on Check-Out](https://msdn.microsoft.com/library/bb385989)
+[Enable Team Foundation Version Control to Get the Latest Files on Check-Out](/previous-versions/visualstudio/visual-studio-2010/bb385989(v=vs.100))

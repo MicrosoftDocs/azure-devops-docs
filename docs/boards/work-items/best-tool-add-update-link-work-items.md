@@ -356,9 +356,9 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 <td><strong>Notifications</strong></td>
 <td> 
 <ul>
-<li><a href="../../notifications/howto-manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)">Manage personal notifications</a></li>
-<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Manage team and project notifications](../../notifications/howto-manage-team-notifications.md)">Manage team and project notifications</a></li>
-<li><a href="../../notifications/howto-manage-organization-notifications.md" data-raw-source="[Manage organization notifications](../../notifications/howto-manage-organization-notifications.md)">Manage organization notifications</a></li>
+<li><a href="/azure/devops/notifications/manage-your-personal-notifications" data-raw-source="[Manage personal notifications](../../notifications/manage-your-personal-notifications.md)">Manage personal notifications</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Manage team and project notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage team and project notifications</a></li>
+<li><a href="/azure/devops/notifications/manage-organization-notifications" data-raw-source="[Manage organization notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage organization notifications</a></li>
 </ul>
 </td>
 </tr>
@@ -386,4 +386,3 @@ See also [Azure Boards extensions developed by Microsoft](../extensions/index.md
 - [Navigate in the web portal](../../project/navigation/index.md)
 - [Navigate in Team Explorer](../../user-guide/work-team-explorer.md)
 - [Why use Azure Boards?](../get-started/why-use-azure-boards.md)
-

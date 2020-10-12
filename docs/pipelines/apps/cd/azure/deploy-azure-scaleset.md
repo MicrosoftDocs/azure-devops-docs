@@ -39,7 +39,7 @@ A custom **Packer** configuration JSON file can also be used.
 
 Before you begin, you need a CI build that creates your app. To set up CI, see:
 
-* [Build and deploy your app](../../index.md)
+* [Build and deploy your app](/previous-versions/azure/devops/pipelines/apps/)
 
 ## Create the release pipeline
 
@@ -131,4 +131,3 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 <!-- ENDSECTION -->
 
 [!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]
-

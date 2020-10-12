@@ -128,7 +128,7 @@ You can use the **workfold** command of the **tf** command-line utility to creat
 
 You can also specify an asterisk (\*) wildcard to map a Team Foundation Server folder and its immediate items to your local workspace. This is often referred to as single folder mapping.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ### Options for Workspace Mapping
 
@@ -191,7 +191,7 @@ c:\projects>tf workfold $/projects/project_one C:\DifferentWorkfold
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Workspace Command](workspace-command.md)
 
@@ -201,6 +201,6 @@ c:\projects>tf workfold $/projects/project_one C:\DifferentWorkfold
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
 
 [Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)

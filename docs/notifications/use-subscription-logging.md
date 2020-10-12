@@ -16,8 +16,9 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [version-vsts-tfs-2018](../includes/version-vsts-tfs-2018.md)]
 
-> [!NOTE]  
-> This article applies to Azure DevOps, TFS 2018 Update 2, and later versions. For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+[!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
+
+ For certain activities, when you select **Team members by role**, you can choose to have the user that initiated the activity receive a notification. This notification is controlled by the **Skip initiator** checkbox. By default, this box is checked, meaning the user that starts the change isn't notified about it.
 
 Subscription logging is a valuable tool for troubleshooting.  It provides diagnostic information from the notifications pipeline and is disabled by default.  Once enabled, up to 25 logs, or one hour's worth of logs, are collected for the subscription.
 

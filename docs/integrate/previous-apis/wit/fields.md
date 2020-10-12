@@ -7655,7 +7655,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/fields?api-version=1.0
 
 #### Sample code
 
-* [C# (GetReadonlyWorkItemFields method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/FieldsSample.cs#L40)
+* [C# (GetReadonlyWorkItemFields method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/FieldsSample.cs#L40)
 
 ## Get a work item field
 
@@ -7713,4 +7713,4 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/fields/System.IterationPath?
 
 #### Sample code
 
-* [C# (GetFieldDetails method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/FieldsSample.cs#L40)
+* [C# (GetFieldDetails method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/FieldsSample.cs#L40)

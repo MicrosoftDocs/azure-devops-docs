@@ -78,7 +78,7 @@ msbuild, visualstudio
    </tr>
    <tr>
       <td><code>msbuildArgs</code><br/>MSBuild Arguments</td>
-      <td>(Optional) You can pass additional arguments to MSBuild. For syntax, see <a href="https://msdn.microsoft.com/library/ms164311.aspx" data-raw-source="[MSBuild Command-Line Reference](https://msdn.microsoft.com/library/ms164311.aspx)">MSBuild Command-Line Reference</a>.</td>
+      <td>(Optional) You can pass additional arguments to MSBuild. For syntax, see <a href="/visualstudio/msbuild/msbuild-command-line-reference" data-raw-source="[MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)">MSBuild Command-Line Reference</a>.</td>
    </tr>
    <tr>
       <td><code>platform</code><br/>Platform</td>

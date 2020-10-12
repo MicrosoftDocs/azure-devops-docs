@@ -91,9 +91,6 @@ After you've installed the agent on a machine, you can install any other softwar
 
 ## Azure virtual machine scale set agents
 
-> [!NOTE]
-> This feature is currently in preview.
-
 Azure virtual machine scale set agents are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
 
 You specify a virtual machine scale set, a number of agents to keep on standby, a maximum number of virtual machines in the scale set, and Azure Pipelines manages the scaling of your agents for you.

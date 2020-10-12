@@ -9,7 +9,7 @@
   href: customize-boards.md 
   displayName: cards, columns, field, swimlanes, settings, backlog levels 
 - name: Track work as a Stakeholder
-  href: /azure/devops/organizations/security/get-started-stakeholder?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  href: ../../organizations/security/get-started-stakeholder.md?bc=%252fazure%252fdevops%252fboards%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fboards%252ftoc.json
 - name: Manage your project
   href: manage-boards.md
   displayName: add users, areas, iterations, sprints, project, wiki, notifications, extensions

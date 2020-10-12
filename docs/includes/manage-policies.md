@@ -16,11 +16,11 @@ Complete the following steps to change application connection, security, and use
 
 2. Select ![gear icon](/azure/devops/media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)
+   ![Screenshot of Organization settings button, preview page.](/azure/devops/media/settings/open-admin-settings-vert.png)
 
 3. Select **Policies**,  and then next to your policy, move the toggle to *on* or *off*.
 
-  ![Select policy, and then turn On or Off](/azure/devops/media/change-policies-preview.png)
+  ![Screenshot of select policy, and then turn On or Off.](/azure/devops/media/change-policies-preview.png)
    
 #### [Current page](#tab/current-page)
 
@@ -30,11 +30,11 @@ Complete the following steps to change application connection, security, and use
 
 2. Select ![gear icon](/azure/devops/media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)
+   ![Screenshot of Organization settings button, current page.](/azure/devops/media/settings/open-admin-settings-vert.png)
 
 3. Select **Policies** and then from the dropdown next to the policy, select **On** or **Off**.
 
-  ![Select policy, and then from the dropdown, turn On or Off](/azure/devops/media/change-policies-current-view.png)
+  ![Screenshot of select policy, and then from the dropdown, turn On or Off.](/azure/devops/media/change-policies-current-view.png)
    
 
 * * *

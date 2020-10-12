@@ -181,7 +181,7 @@ For more guidance, follow the steps mentioned in [Build your Node.js app with gu
       strategy:
     ```
 2. You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined for each virtual machine in the environment.
-[Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema#deployment-job) is the complete YAML schema for Deployment job.
+[Here](../yaml-schema.md?tabs=schema#deployment-job) is the complete YAML schema for Deployment job.
 
 3. You can specify either `runOnce` or `rolling` as a deployment strategy. 
 

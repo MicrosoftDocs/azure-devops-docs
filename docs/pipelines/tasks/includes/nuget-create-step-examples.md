@@ -56,7 +56,7 @@ Make sure you've prepared the build as described [above](#prepare).
 
 #### Create the feed
 
-See [Create a feed](../../../artifacts/feeds/create-feed.md).
+See [Create a feed](../../../artifacts/index.yml).
 
 
 #### [Build](../../index.yml) tasks
@@ -104,7 +104,7 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 <ul>
 <li>Path/Pattern to nupkg: <code>***.nupkg</code></li>
 <li>Feed type: Internal NuGet Feed</li>
-<li>Internal feed URL: See <a href="/azure/devops/artifacts/nuget/consume#get-nuget-pkg-url" data-raw-source="[Find your NuGet package source URL](/azure/devops/artifacts/nuget/consume#get-nuget-pkg-url)">Find your NuGet package source URL</a>.
+<li>Internal feed URL: See <a href="/azure/devops/artifacts/nuget/consume#get-nuget-pkg-url" data-raw-source="[Find your NuGet package source URL](../../../artifacts/nuget/consume.md#get-nuget-pkg-url)">Find your NuGet package source URL</a>.
 </li>
 </ul>
 </td>

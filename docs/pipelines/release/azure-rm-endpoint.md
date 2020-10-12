@@ -26,7 +26,7 @@ This topic will help you resolve issues you may encounter when creating a connec
 
 ## What happens when you create a Resource Manager service connection?
 
-1. In Azure DevOps, open the Service connections page from the [project settings page](/azure/devops/project/navigation/go-to-service-page#open-project-settings). In TFS, open the **Services** page from the "settings" icon in the top menu bar.
+1. In Azure DevOps, open the Service connections page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings). In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
 1. Choose **+ New service connection** and select the type of service connection you need.
 
@@ -182,6 +182,6 @@ Managed identities for Azure resources provides Azure services with an automatic
 See [Assigning roles](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm) to learn about managed identities for virtual machines.  
 
 > [!NOTE]
-> Managed identities are not supported in Microsoft Hosted Agents. You will have to [set-up a self hosted agent](/azure/devops/pipelines/agents/agents#install) on an Azure VM and configure managed identity for the virtual machine.
+> Managed identities are not supported in Microsoft Hosted Agents. You will have to [set-up a self hosted agent](../agents/agents.md#install) on an Azure VM and configure managed identity for the virtual machine.
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

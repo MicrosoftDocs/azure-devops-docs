@@ -827,12 +827,15 @@
     href: ../migrate/build-deployment-best-practices.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
   - name: Progressively expose releases using deployment rings
     href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+  - name: Progressively expose features in production
+    href: ../migrate/phase-features-with-feature-flags.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+    displayName: feature-flags
 - name: Developer resources
   items:
   - name: REST API reference
     href: /rest/api/azure/devops/
   - name: Azure DevOps CLI
-    href: /azure/devops/cli
+    href: ../cli/index.md
   - name: Microsoft Learn
     items:
     - name: Create a build pipeline

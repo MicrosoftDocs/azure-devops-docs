@@ -31,7 +31,7 @@ When you need a command and are not sure which one to use, type **tf msdn** for 
 
 When you specify the *commandname* parameter, the help topic opens for that specific command. If the system cannot find a match for the *commandname*, it searches for aliases and short names. If it does not find a matching command, alias, or short name, you will get an error message.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 ## Examples
 The following example displays a help topic that lists all the version control commands, including a brief explanation of syntax.
 
@@ -53,4 +53,4 @@ c:\projects>tf msdn workspace
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
