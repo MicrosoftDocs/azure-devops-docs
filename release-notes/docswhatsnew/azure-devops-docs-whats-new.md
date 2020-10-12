@@ -16,9 +16,47 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2020 through Se
 
 ## Boards
 
+### New articles
+
+- [Manage requirements](/azure/devops/cross-platform/manage-requirements)
+
 ### Updated articles
 
 - [Link user stories, issues, bugs, and other work items](/azure/devops/boards/backlogs/add-link) - Add link, build cross-project
+- [Plan and track work](/devops/boards/get-started/plan-track-work)
+- [Update and monitor your Taskboard](/azure/devops/boards/sprints/task-board)
+- [About process customization and inherited processes](/azure/devops/organizations/settings/work/inheritance-process-model)
+- [Add and manage fields (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-field)
+
+## Cross-service features
+
+### New articles
+
+- [Work across projects FAQs](/azure/devops/project/work-across-projects-faqs) - Work across projects FAQs
+
+### Updated articles
+
+- [Manage banners](/azure/devops/organizations/settings/manage-banners)
+- [Manage authorizations](/azure/devops/organizations/settings/manage-authorizations)
+- [Show bugs on backlog](/azure/devops/organizations/settings/show-bugs-on-backlog)
+- [Add team administrator](/azure/devops/organizations/settings/add-team-administrator)
+- [Set area paths](/azure/devops/organizations/settings/set-area-paths)
+- [About teams and settings](/azure/devops/organizations/settings/about-teams-and-settings)
+- [Add teams](/azure/devops/organizations/settings/add-teams)
+- [Wiki Markdown guidance](/azure/devops/project/wiki/wiki-markdown-guidance)
+- [Create and embed a work item from wiki](/azure/devops/project/wiki/create-embed-wit-from-wiki)
+- [Add comments to wiki pages](/azure/devops/project/wiki/add-comments-wiki)
+- [Use #ID to link to work items](/azure/devops/notifications/add-links-to-work-items)
+
+## Developer resources
+
+### Updated articles
+
+- [Add a build or release task](/azure/devops/extend/develop/add-build-task)
+- [Service endpoint authentication schemes](/azure/devops/extend/develop/auth-schemes)
+- [Workplace messaging apps](/azure/devops/service-hooks/services/workplace-messaging-apps)
+- [Webhooks](/azure/devops/service-hooks/services/webhooks)
+- [Integrate custom build tasks into extensions](/azure/devops/extend/develop/integrate-build-task)
 
 ## Organizations
 
@@ -27,6 +65,9 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2020 through Se
 - [About access levels](/azure/devops/organizations/security/access-levels) - Updates in display limits and updates to reflect drag-and-drop feature
 - [Manage permissions with command line tool](/azure/devops/organizations/security/manage-tokens-namespaces) - Namespace updates
 - [Add team, go from one default team to others](/azure/devops/organizations/settings/add-teams) - Settings - Add teams
+- [Get started as a Stakeholder](/azure/devops/organizations/security/get-started-stakeholder)
+- [Allowed address lists and network connections](/azure/devops/organizations/security/allow-list-ip-url)
+- [Permissions, service accounts, and groups in Azure DevOps](/azure/devops/organizations/security/permissions)
 
 ## Pipelines
 
@@ -46,17 +87,19 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2020 through Se
 - [NuGet task](/azure/devops/pipelines/tasks/package/nuget) - NuGet push, pack and restore
 - [Publish Test Results task](/azure/devops/pipelines/tasks/test/publish-test-results) - Update test results formatting
 
-## Project
-
-### New articles
-
-- [Work across projects FAQs](/azure/devops/project/work-across-projects-faqs) - Work across projects FAQs
-
 ## Repos
 
 ### New articles
 
 - [Reconcile Command](/azure/devops/repos/tfvc/reconcile-command) - TFVC Add Reconcile command
+
+## Test plans
+
+### Updated articles
+
+- [FAQs for Test Case Management Reporting](/azure/devops/test/reference-tcm)
+- [New Test Plans page](/azure/devops/test/new-test-plans-page)
+
 
 ## User guide
 
