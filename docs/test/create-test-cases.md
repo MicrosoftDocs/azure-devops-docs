@@ -81,7 +81,7 @@ the tests.
    ![Send emails to testers](media/create-test-cases/AssignMultipleTestersEmail.png)
 
    The email contains a link that testers can open to see the list of assigned tests.
-   Testers need just [Basic access](https://visualstudio.microsoft.com/products/visual-studio-online-Basic-vs)
+   Testers need just [Basic access](https://docs.microsoft.com/azure/devops/organizations/security/access-levels)
    to run tests from Azure Test Plans.
 
 ## See also
