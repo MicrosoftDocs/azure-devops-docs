@@ -38,15 +38,15 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
       ::: moniker-end
 
-   3. Select **npm**.
+   1. Select **npm**.
 
-   4. Select **Get the tools** in the top-right corner
+   1. Select **Get the tools** in the top-right corner
  
 ::: moniker range=">= azure-devops"   
 
-   5. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
+   1. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
 
-   6. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections.
+   1. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections.
 
       > [!div class="mx-imgBorder"] 
       >![Connect to feed DevOps services](../media/npm-azure-devops-newnav.png)
@@ -55,7 +55,7 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
 ::: moniker range="> tfs-2018 < azure-devops"
 
-   5. Follow the instructions in the **Project setup** and **Restore packages** sections.
+   1. Follow the instructions in the **Project setup** and **Restore packages** sections.
 
       > [!div class="mx-imgBorder"] 
       >![Connect to feed server 2019 and 2020](../media/connect-to-feed-devops-server.png)
@@ -64,9 +64,9 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-   5. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
+   1. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
 
-   6. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections.
+   1. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections.
 
       > [!div class="mx-imgBorder"] 
       > ![Connect to feed TFS project setup](../media/connect-to-feed-npm-registry.png)
