@@ -58,7 +58,7 @@ The `Skip initiator` checkbox option on a subscription causes the initiator of t
 
 ## Check "Do not deliver" setting for organization
 
-Navigate to the organization level notifications page and select the `Settings` tab. [See how to manage notification settings](manage-organization-notifications-settings.md). If the [delivery setting](#check-do-not-deliver-setting-for-your-team-or-group) is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings inherit this value. This setting alone doesn't necessarily indicate an email isn't delivered, but it could contribute to the problem. Next, see if a group or team delivery setting inherits this value and blocks delivery to your group or team.
+Navigate to the organization level notifications page and select the `Settings` tab. [See how to manage notification settings](manage-team-group-global-organization-notifications.md). If the [delivery setting](#check-do-not-deliver-setting-for-your-team-or-group) is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings inherit this value. This setting alone doesn't necessarily indicate an email isn't delivered, but it could contribute to the problem. Next, see if a group or team delivery setting inherits this value and blocks delivery to your group or team.
 
 ## Check "Do not deliver" setting for your team or group
 

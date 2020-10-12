@@ -115,7 +115,7 @@ https://dev.azure.com/{organization}/{project}/_admin/_notifications
 
 ::: moniker-end
 
-To learn more, see [Manage notifications for a team or group](manage-team-group-notifications.md)
+To learn more, see [Manage notifications for a team or group](manage-team-group-global-organization-notifications.md)
 
 <a id="open-org-level" />
 
@@ -174,11 +174,11 @@ https://dev.azure.com/{organization}/_admin/_notifications
 
 ::: moniker-end
 
-To learn more, see [Manage Global notifications](manage-organization-notifications.md)
+To learn more, see [Manage team and Global notifications](manage-team-group-global-organization-notifications.md)
 
 ## Related articles
 
 - [Manage personal notification settings](manage-your-personal-notifications.md)
 - [Follow a specific work item](../boards/work-items/follow-work-items.md)  
-- [Manage notifications for a team](./manage-team-group-notifications.md)  
+- [Manage notifications for a team](./manage-team-group-global-organization-notifications.md)  
 - [Change your preferred email address](change-email-address.md)

@@ -70,7 +70,7 @@ landingContent:
           - text: Set personal notifications
             url: ../notifications/manage-your-personal-notifications.md
           - text: Set team notifications
-            url: ../notifications/manage-team-group-notifications.md
+            url: ../notifications/manage-team-group-global-organization-notifications.md
   - title: Request and provide feedback
     linkLists:
       - linkListType: overview

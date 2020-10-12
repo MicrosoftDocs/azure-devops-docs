@@ -118,7 +118,7 @@ The browser opens to the **Assigned to me** page. From there, you can choose **F
 Additional experiences are in the works to improve and expand on the mobile experience. For more information, see the blog post: [The mobile work item form (preview)](https://devblogs.microsoft.com/devops/the-mobile-work-item-form/).
   
 - [Set personal notifications](../../notifications/manage-your-personal-notifications.md)  
-- [Set team notifications](../../notifications/manage-team-group-notifications.md)  
+- [Set team notifications](../../notifications/manage-team-group-global-organization-notifications.md)  
 - [Follow a work item](../../boards/work-items/follow-work-items.md)    
 
 
