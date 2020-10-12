@@ -8,7 +8,7 @@ toc: show
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 06/05/2020
 --- 
 
@@ -310,7 +310,7 @@ You can't remove or delete the default server level groups.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 
 <table valign="top" width="100%">
@@ -2859,7 +2859,7 @@ Members of the Project Administrators group are automatically granted these perm
 
 <a id="query">  </a>
 
-## Work item query and folder (object-level)
+## Work item query and query folder (object-level)
 
 You manage query and query folder permissions through the [web portal](../../boards/queries/set-query-permissions.md). Project Administrators are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project.
 
