@@ -166,11 +166,11 @@ When a chart contains more than seven items within the data series, values in th
 
    ::: moniker range=">= azure-devops-2019"  
    > [!div class="mx-imgBorder"]  
-   > ![Charts, New chart button](media/charts/new-chart-new-qe.png)   
+   > ![Screenshot of New chart button.](media/charts/new-chart-new-qe.png)   
    ::: moniker-end  
 
    ::: moniker range="<= tfs-2018"  
-   <img src="media/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link" style="border: 2px solid #C3C3C3;" />  
+   <img src="media/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link." style="border: 2px solid #C3C3C3;" />  
    ::: moniker-end  
 
 	If you have Stakeholder access, the **Charts** and **New Chart** links won't appear. 
@@ -178,7 +178,7 @@ When a chart contains more than seven items within the data series, values in th
 2. Select the chart type and field for grouping values. When you use pie, bar, and column charts, select a single field to view a count of work items.  
    ::: moniker range=">= azure-devops-2019"  
    > [!div class="mx-imgBorder"]  
-   > ![Charts, New chart button](media/charts/config-pie-chart-priority-qe.png)  
+   > ![Screenshot of pie chart configure dialog.](media/charts/config-pie-chart-priority-qe.png)  
    ::: moniker-end  
 
    ::: moniker range="<= tfs-2018"  
@@ -216,12 +216,12 @@ Use a pie chart to show group percentages with six or fewer categories. Good exa
 For example, the following query filters User Stories based on the State for Cut, In Progress, and Completed since the start of the year. 
 
 > [!div class="mx-imgBorder"]  
-> ![Query Editor, filter User Stories by State](media/charts/pie-chart-query.png) 
+> ![Query Editor, filter User Stories by State.](media/charts/pie-chart-query.png) 
 
 The pie chart configuration is as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Configure chart dialog, Pie chart](media/charts/pie-chart-configured.png)  
+> ![Configure chart dialog, Pie chart.](media/charts/pie-chart-configured.png)  
 The combined query and chart configuration yield the following pie chart. 
 
 ![Charts, pie chart example ](media/charts/pie-chart-user-stories-progress.png)  

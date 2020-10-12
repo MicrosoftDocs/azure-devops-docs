@@ -16,7 +16,7 @@ ms.date: 10/06/2020
  
 While you set most permissions through the web portal, you can use other tools to manage security groups and permissions. For permissions that aren't available to manage through the web portal,you have the option to manage them using a command line tool. 
 
-<!--- To learn more about permissions not available through a user interface, see the Security namespace and permission reference for Azure DevOps, Internal namespaces and permissions.  ---> 
+To learn more about permissions not available through a user interface, see the [Security namespace and permission reference, Internal namespaces and permissions](namespace-reference.md#internal).  
 
 
 [!INCLUDE [version-selector-minimize](../../includes/version-selector-minimize.md)]
@@ -216,7 +216,7 @@ For more information, see [Determine permission levels and groups in SharePoint 
 - [Add and manage security groups CLI](add-manage-security-groups.md)        
 - [Manage permissions CLI](manage-tokens-namespaces.md)              
 - [Permissions and groups reference](permissions.md)  
-
+- [Security namespace and permission reference](namespace-reference.md)
 ::: moniker-end  
 
 ::: moniker range="azure-devops-2020" 
@@ -228,7 +228,7 @@ For more information, see [Determine permission levels and groups in SharePoint 
 - [Add and manage security groups CLI](add-manage-security-groups.md)        
 - [Manage permissions CLI](manage-tokens-namespaces.md)              
 - [Permissions and groups reference](permissions.md)  
-
+- [Security namespace and permission reference](namespace-reference.md)
 ::: moniker-end  
 
 ::: moniker range="< azure-devops-2020" 
@@ -238,5 +238,5 @@ For more information, see [Determine permission levels and groups in SharePoint 
 - [Add users to a project or team](add-users-team-project.md)             
 - [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator)  
 - [Permissions and groups reference](permissions.md)  
-
+- [Security namespace and permission reference](namespace-reference.md)
 ::: moniker-end  

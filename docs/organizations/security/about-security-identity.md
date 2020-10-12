@@ -46,7 +46,9 @@ The most effective means for managing accounts is by adding them to security gro
 > [!NOTE]  
 > The organization owner and members of the Project Collection Administrators group are granted full access to most all features and functions. 
 
-### To learn more 
+#### To learn more
+
+See one of the following articles:
 
 - [Create your organization](../accounts/create-organization.md)
 - [Change the organization owner](../accounts/change-organization-ownership.md)
@@ -106,25 +108,10 @@ Authorization verifies that the identity which is attempting to connect has the 
 
 Authorization depends on the permissions assigned to the account. Permissions are granted either directly to an account, or through membership in a security group or security role. Access levels and feature flags can also grant or restrict access to a feature. 
 
-<!--- 
-Permissions can be inherited based on assignments made to a project  
-Authorization is based on users and groups, and the permissions assigned directly to both those users and groups and permissions those users and groups might inherit by belonging to one or more Azure DevOps security groups. These users and groups can be Azure AD or AD users and groups. For on-premises deployments, they can also be local Windows users and groups.
-
-Also, for select features, users and groups may need to belong to an access level that grants them access to a feature. 
-
-- Default security groups
-- Custom security groups
-- Security groups 
-- Team groups 
-- Azure Active Directory 
-- Active Directory (on-premises) 
-- Workgroups (on-premises) 
-- Windows group 
---> 
 
 <a id="security-group-membership" /> 
 
-### Security group membership 
+## Security group membership 
 
 With the creation of an organization, collection, or project&mdash;Azure DevOps creates a set of default security groups which are automatically assigned default permissions. Additional security groups are defined with the following actions: 
 - When you add a custom security group. You can create custom security groups at the following levels: 
@@ -145,7 +132,7 @@ Most users are assigned to the Contributors group for a project to provide them 
 > [!TIP]    
 > Accounts that are assigned to more than one security group are restricted to those permissions granting the least access. For example, if you add a user to the Readers group and the Project Administrators group, the effective permissions of the Readers group are enforced for the user. 
 
-### Populate security groups
+## Populate security groups
 
 You can populate these groups by adding individual users. However, for ease of management, it's easier if you populate these groups by using Azure Active Directory (ADD), Active Directory (AD), or Windows security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
 
@@ -168,7 +155,7 @@ You can populate these groups by adding individual users. However, for ease of m
 Of course, you don't need to grant permissions for reports or the project portal if your project doesn't use SQL Server Reporting Services or a SharePoint site.
 ::: moniker-end
 
-### Permission levels 
+## Permission levels 
 
 ::: moniker range="azure-devops"
 
@@ -198,7 +185,7 @@ For a description of each default security group, see [Security groups, service 
  
 <a name="validusers"></a>
 
-### Valid user groups
+## Valid user groups
 
 When you add accounts of users directly to a security group, they are automatically added to one of the valid user groups.
 
@@ -226,7 +213,7 @@ If you need to restrict view access, then you can [set restrictions through the 
 If you remove or deny the **View instance-level information** permission for one of the valid users groups,
 no members of the group are able to access the project, collection, or deployment, depending on the group you set.
 
-### Role-based access control  
+## Role-based access control  
 
 With Role-based access control, accounts are assigned to a role, with each role assigned one or more permissions. The following table lists the artifacts whose   permissions are managed by role.  
 
@@ -234,25 +221,32 @@ With Role-based access control, accounts are assigned to a role, with each role 
 |----------------|----------------|----------------|
 |&#8226;&nbsp; Secure files<br/>&#8226;&nbsp; Variable groups|&#8226;&nbsp; Agent pools<br/>&#8226;&nbsp; Agent queues<br/>&#8226;&nbsp; Service connections<br/>&#8226;&nbsp; Team administrator|&#8226;&nbsp;Agent pools<br/>&#8226;&nbsp; Deployment pools<br/>&#8226;&nbsp; Marketplace extensions|
  
+To learn more, see [About security roles](about-security-roles.md).  
+
 
 <a id="access-levels" />
 
-### Access levels
+## Access levels
 
-Certain features are only available to users who have the appropriate licensing level. Administrators control access by assigning users or security groups to an access level. To learn more, see [Access levels](access-levels.md). 
+Certain features are only available to users who have the appropriate licensing level. Administrators control access by assigning users or security groups to an access level. Access levels control what features are visible to users in the web portal,
+and are dependent on user licenses; permissions control a user's ability to use features across Azure DevOps.
+
+If you're just trying to give someone access to Agile portfolio management and test case management features, you'll want to [change access levels](change-access-levels.md), not permissions. To learn more, see [Access levels](access-levels.md). 
 
 
-### Feature flags 
+## Feature flags 
  
 Access to select, new features are controlled by feature flags. Periodically, Azure DevOps Services introduces new features by placing them behind a feature flag. Features under a private preview require the organization owner to request that the feature be turned on. Other features may be introduced as a preview feature which general users can enable or disable. To learn more, see [Manage or enable features](../../project/navigation/preview-features.md).
  
-### Security namespaces and permissions 
+## Security namespaces and permissions 
 
 Security namespaces store data that determines the level of access that Azure DevOps accounts have to perform a specific action on a specific resource. Each family of resources, such as work items or Git repositories, is secured through a unique namespace. Each security namespace contains zero or more access control lists (ACLs). Each ACL contains a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. 
 
+To learn more, see [Security namespaces and permission reference](namespace-reference.md).  
+
 #### Permission levels 
 
-Permissions are assigned at various levels based on the structure of the Azure DevOps instance. 
+Permissions are assigned at various levels based on the structure of the Azure DevOps instance. To learn more, see [About permissions and inheritance](about-permissions.md).  
 
 ::: moniker range="azure-devops"
 - **Object-level** 
@@ -277,38 +271,26 @@ There are five possible assignments made to a permission. They grant or restrict
 	- **Deny** 
 	- **Inherited deny** 
 	- **Not set** 
+ 
 
-#### To learn more
-- [About permissions and inheritance](about-permissions.md)
-<!--- [Security namespaces and permission reference](access-levels.md) --> 
+
+## Azure Repos and Azure Pipelines security 
+
+Since repositories and build and release pipelines pose unique security challenges, additional features beyond those discussed in this article are employed. To learn more, see the following: 
+
+- [Securing Azure Pipelines](../../pipelines/security/overview.md)
+- [Plan how to secure your YAML pipelines](../../pipelines/security/approach.md)
+- [Repository protection](../../pipelines/security/repos.md)
+- [Pipeline resources](../../pipelines/security/resources.md)
+- [Recommendations to securely structure projects in your pipeline](../../pipelines/security/projects.md)
+- [Security through templates](../../pipelines/security/templates.md)
+- [How to securely use variables and parameters in your pipeline](../../pipelines/security/inputs.md)
+- [Recommendations to secure shared infrastructure in Azure Pipelines](../../pipelines/security/infrastructure.md)
+- [Other security considerations](../../pipelines/security/misc.md)
+- [Add continuous security validation](../../pipelines/migrate/security-validation-cicd-pipeline.md)  
+
 
  
- 
-<!--- 
-Azure DevOps controls access through these three inter-connected functional areas:
-
--   **Membership management** supports adding individual Windows user accounts and groups to default security groups. Also, you can create Azure DevOps security groups. Each default group is associated with a set of default permissions. All users added to any security group are added to the Valid Users group. A valid user is someone who can connect to the project.
-
--   **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build pipeline, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**. To learn more about inheritance, see [About permissions and groups](about-permissions.md#inheritance).
-
--   **Access level management** controls access to features provided via the web portal, the web application for Azure DevOps. Based on  what has been purchased for a user, administrators set the user's access  level to Basic, VS Enterprise (previously Advanced), or Stakeholder. 
-
-Each functional area uses groups to simplify management across the deployment. You add users and groups through the web administration context. Permissions are automatically set based on the security group that you add users to, or based on the object, project, collection, or server level to which you add groups. On the other hand, access level management controls access for all users at the server level.
-
-<img src="media/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
-
-You can create local groups or Active Directory (AD) [groups to manage your users](/azure/devops/server/admin/setup-ad-groups). If you decide to use groups, make sure that membership in those groups is limited to valid users. Because group membership can be altered by their owners at any time, if those owners did not consider Azure DevOps Server access when they created those groups, their changes to membership can cause unwanted side effects within the server.
-
-### Default permissions set for the Contributors group 
-
-The following image shows the default permission assignments made to the Contributors group.
-
-![Contributor role default permissions](media/contributor-permissions.png)
-
-To learn more about other groups and their permission assignments,
-see [Permissions and groups reference](permissions.md).
-
--->
 ## Try this next
 > [!div class="nextstepaction"]
 > [About permissions and inheritance](about-permissions.md)
@@ -332,18 +314,44 @@ To learn more, see [About security roles](about-security-roles.md).
 Azure DevOps security concepts fall into three general categories: topology, authentication, and authorization. Topology includes where and how on-premises servers are deployed, the network traffic that passes between Azure DevOps servers and clients, and the services that must run on Azure DevOps. Authentication includes the determination of the validity of Azure DevOps users, groups, and services. Authorization includes the determination of whether valid Azure DevOps users, groups, and services have the appropriate permissions to perform actions. Also, you must consider Azure DevOps Server dependencies on other components and services in order to optimize the security of your on-premises network.
 When you consider Azure DevOps Server security, you must understand the difference between authentication and authorization.
 
-
- > [!NOTE] 
- > Permissions are different than access levels.
- > Access levels control what features are visible to users in the web portal,
- > and are dependent on user licenses; permissions control a user's ability to use features across Azure DevOps.
- > If you're just trying to give someone access to a team room or to Agile portfolio management
- > and test case management features,
- > you'll want to [change access levels](change-access-levels.md), not permissions.
-
 ## Permissions 
 
 Besides configuring permissions for authorization, you might need authorization within source code control and within work items. These permissions are managed separately at the command line, but are integrated as part of the Team Explorer interface. For more information about source control permissions, see Team Foundation Version Control. For more information about work item customization, see Working with Team Foundation Work Items.
 
-   
- -->
+Azure DevOps controls access through these three inter-connected functional areas:
+
+-   **Membership management** supports adding individual Windows user accounts and groups to default security groups. Also, you can create Azure DevOps security groups. Each default group is associated with a set of default permissions. All users added to any security group are added to the Valid Users group. A valid user is someone who can connect to the project.
+
+-   **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build pipeline, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**. To learn more about inheritance, see [About permissions and groups](about-permissions.md#inheritance).
+
+-   **Access level management** controls access to features provided via the web portal, the web application for Azure DevOps. Based on  what has been purchased for a user, administrators set the user's access  level to Basic, VS Enterprise (previously Advanced), or Stakeholder. 
+
+Each functional area uses groups to simplify management across the deployment. You add users and groups through the web administration context. Permissions are automatically set based on the security group that you add users to, or based on the object, project, collection, or server level to which you add groups. On the other hand, access level management controls access for all users at the server level.
+
+<img src="media/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
+
+You can create local groups or Active Directory (AD) [groups to manage your users](/azure/devops/server/admin/setup-ad-groups). If you decide to use groups, make sure that membership in those groups is limited to valid users. Because group membership can be altered by their owners at any time, if those owners did not consider Azure DevOps Server access when they created those groups, their changes to membership can cause unwanted side effects within the server.
+
+### Default permissions set for the Contributors group 
+
+The following image shows the default permission assignments made to the Contributors group.
+
+![Contributor role default permissions](media/contributor-permissions.png)
+
+To learn more about other groups and their permission assignments,
+see [Permissions and groups reference](permissions.md).
+
+Permissions can be inherited based on assignments made to a project  
+Authorization is based on users and groups, and the permissions assigned directly to both those users and groups and permissions those users and groups might inherit by belonging to one or more Azure DevOps security groups. These users and groups can be Azure AD or AD users and groups. For on-premises deployments, they can also be local Windows users and groups.
+
+Also, for select features, users and groups may need to belong to an access level that grants them access to a feature. 
+
+- Default security groups
+- Custom security groups
+- Security groups 
+- Team groups 
+- Azure Active Directory 
+- Active Directory (on-premises) 
+- Workgroups (on-premises) 
+- Windows group 
+--> 

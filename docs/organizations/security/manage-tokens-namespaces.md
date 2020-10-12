@@ -14,13 +14,6 @@ ms.date: 09/14/2020
 # Manage permissions with command line tool
 
 
-<!--- QUESTIONS   
-
-What is --local option? 
-
---> 
-
-
 [!INCLUDE [version-azure-devops-plus-azure-devops-server-2020](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]
 
 Permissions grant access to perform a specific action on a specific resource. You manage most permissions through the web portal. However, you can manage permissions using command line tools or the REST API.  
@@ -451,3 +444,10 @@ The following table lists valid namespaces and provides descriptions and links t
 - [Security Namespaces REST API](/rest/api/azure/devops/security/security%20namespaces)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)
+
+
+<!--- QUESTIONS   
+
+What is --local option? 
+
+--> 
