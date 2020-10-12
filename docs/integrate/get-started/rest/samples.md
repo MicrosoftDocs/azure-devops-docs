@@ -77,7 +77,7 @@ Here, we're using two of the .NET Client Libraries. Make sure these .NET Client 
 
 See the following example of getting a list of projects for your organization via .NET Client Libraries.
 
-`````cs
+```cs
 using Microsoft.TeamFoundation.Core.WebApi;
 using Microsoft.VisualStudio.Services.Common;
 
