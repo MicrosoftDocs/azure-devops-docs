@@ -145,17 +145,14 @@ as part of the configuration:
 * [Roslyn](https://github.com/dotnet/roslyn) compiler platform
 * [ANTLR](https://www.antlr.org/) language recognition parser
 
-**NOTES**:
- 
-1. Search uses a modified version of Elasticsearch. It works only with this modified version.  
-2. A newer version of Elasticsearch ships with TFS 2018 Update 2 and onward, and Azure DevOps Server.
-   All content is reindexed after installation when you upgrade from an older version of Search results.
-   Depending on the volume of content (code files, work items, and wiki pages), reindexing can take some time to complete.
-3. The system or server administrator must ensure that Server JRE is
-   maintained and updated in line with the software provider's recommendations. 
-   Also see the [Java installation notes](#java-notes) that follow.
-4. The Azul Zulu OpenJDK doesn't automatically install updates.
-   Ensure you regularly [check for updates](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk).
+> [!NOTE]
+> - Search uses a modified version of Elasticsearch. It works only with this modified version.
+> - A newer version of Elasticsearch ships with TFS 2018 Update 2 and onward, and Azure DevOps Server.
+> All content is reindexed after installation when you upgrade from an older version of Search results.
+> Depending on the volume of content (code files, work items, and wiki pages), reindexing can take some time to complete.
+> - The system or server administrator must ensure that Server JRE is maintained and updated in line with the software provider's recommendations. Also see the [Java installation notes](#java-notes) that > follow.
+> - The Azul Zulu OpenJDK doesn't automatically install updates.
+> Ensure you regularly [check for updates](https://www.azul.com/downloads/zulu-community/?&version=java-8-lts&os=windows&os-details=Windows&architecture=x86-64-bit&package=jdk).
 
 <a name="java-notes"></a>
 
