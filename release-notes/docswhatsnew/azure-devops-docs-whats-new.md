@@ -37,7 +37,6 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2020 through Se
 ### Updated articles
 
 - [Build a data pipeline with DevOps, Azure Data Factory, and machine learning](/azure/devops/pipelines/apps/cd/azure/build-data-pipeline) - Added command to create variable-group
-- [Azure Pipelines ecosystem support](/azure/devops/pipelines/ecosystems/ecosystems) - Build errors
 - [Configure and pay for parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs) - Updates for parallel jobs content performance improvements
 - [Set retention policies for builds, tests, and releases](/azure/devops/pipelines/policies/retention) - More content in pipeline retention
 - [Access repositories, artifacts, and other resources](/azure/devops/pipelines/process/access-tokens) - New limit job scope setting
