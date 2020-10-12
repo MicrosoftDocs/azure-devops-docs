@@ -1973,6 +1973,7 @@ The task publishes (uploads) a file or folder as a pipeline artifact that other 
 steps:
 - publish: string # path to a file or folder
   artifact: string # artifact name
+  displayName: string  # friendly name to display in the UI
 ```
 
 # [Example](#tab/example)
@@ -1981,6 +1982,7 @@ steps:
 steps:
 - publish: $(Build.SourcesDirectory)/build
   artifact: WebApp
+  displayName: Publish artifact WebApp
 ```
 
 ---
@@ -1999,6 +2001,7 @@ steps:
 - download: [ current | pipeline resource identifier | none ] # disable automatic download if "none"
   artifact: string ## artifact name, optional; downloads all the available artifacts if not specified
   patterns: string # patterns representing files to include; optional
+  displayName: string  # friendly name to display in the UI
 ```
 ### Artifact download location
 
@@ -2018,6 +2021,7 @@ steps:
 - download: current  # refers to artifacts published by current pipeline
   artifact: WebApp
   patterns: '**/.js'
+  displayName: Download artifact WebApp
 - download: MyAppA   # downloads artifacts available as part of the pipeline resource
 ```
 

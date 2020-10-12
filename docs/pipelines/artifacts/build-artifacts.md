@@ -279,6 +279,8 @@ YAML is not supported in TFS.
 
 * The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
 
+* Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.  
+
 * You can [get build artifacts from the REST API](/rest/api/vsts/build/artifacts).
 
 ## Related tasks for publishing artifacts
