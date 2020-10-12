@@ -125,6 +125,8 @@
     href: permissions-lookup-guide.md
   - name: Permissions & groups 
     href: permissions.md
+  - name: Security management tools 
+    href: security-tools-reference.md
   - name: Security namespaces & permissions
     href: namespace-reference.md  
   - name: Manage security groups with CLI
