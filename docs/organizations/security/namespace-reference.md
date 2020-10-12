@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/09/2020
+ms.date: 10/12/2020
 ---
 
 # Security namespace and permission reference for Azure DevOps 
@@ -1121,6 +1121,7 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
@@ -1212,31 +1213,7 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
    :::column-end:::
 :::row-end:::
 ---
-
-<!--- 
-- `CrossProjectWidgetView`
-- `DataProvider`
-- `Favorites`
-- `Graph`
-- `IdentityPicker`
-- `Job`
-- `Location`
-- `ProjectAnalysisLanguageMetrics`
-- `Proxy`
-- `Registry`
-- `Security`
-- `ServicingOrchestration`
-- `SettingEntries`
-- `Social`
-- `StrongBox`
-- `TestManagement`
-- `ViewActivityPaneSecurity`
-- `WebPlatform`
-- `WorkItemsHub`
-- `WorkItemTracking`
-- `WorkItemTrackingConfiguration`
-
---> 
+ 
 
 ## Related articles
 
@@ -1247,7 +1224,7 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 - [Git repo tokens for the security service](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)
 
 
-<!--- QUESTIONS   
+<!---   
 
 Note access level restrictions. 
 Note non UI permissions
