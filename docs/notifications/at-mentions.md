@@ -49,7 +49,7 @@ Use the <strong>@mention</strong> control to start or continue a discussion with
 
 ::: moniker range=">= tfs-2015 < azure-devops"
 
-For team members to receive notifications, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).
+[!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
 ::: moniker-end
 
