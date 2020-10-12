@@ -1,4 +1,4 @@
-- name: About security & identity
+- name: About security, membership, & permissions
   href: about-security-identity.md
 - name: About access levels 
   href: access-levels.md 
