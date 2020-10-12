@@ -8,9 +8,10 @@ ms.technology: devops-accounts
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2013'
-ms.date: 07/20/2020
+monikerRange: '<= azure-devops'
+ms.date: 10/12/2020
 ---
+
 
 # Create a project in Azure DevOps
 
@@ -47,7 +48,7 @@ If you don't want to create a project in Azure DevOps or TFS, you can create [Az
 
 ::: moniker range=">= tfs-2018 < azure-devops"  
 
-- You create a project within a project collection. If you haven't created a project collection yet, do that now. For more information, see [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
+- You create a project within a project collection. If you haven't created a project collection yet, do that now. For more information, see [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020#create-a-project-collection&preserve-view=true).
 - You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 
 ::: moniker-end  
@@ -55,7 +56,7 @@ If you don't want to create a project in Azure DevOps or TFS, you can create [Az
 
 ::: moniker range="<= tfs-2017"  
 
-- You create a project within a project collection. If you haven't created a project collection yet, do that now. For more information, see [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
+- You create a project within a project collection. If you haven't created a project collection yet, do that now. For more information, see [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=tfs-2017#create-a-project-collection&preserve-view=true ).
 - You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 - Ask your TFS administrator about the following resources and get additional permissions as needed:
 
@@ -99,7 +100,7 @@ If you don't want to create a project in Azure DevOps or TFS, you can create [Az
 2. Choose the organization, and then select **New project**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Open Projects](media/create-project/projects-hub-select-new-project.png)  
+   > ![Screenshot of Open Projects.](media/create-project/projects-hub-select-new-project.png)  
 
 3. Enter information into the form provided. Provide a name for your project. Your project name can't contain special characters, such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`, can't begin with an underscore, can't begin or end with a period, and must be 64 or fewer characters. Enter an optional description. Choose the visibility, initial source control type, and work item process. For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
@@ -111,7 +112,7 @@ If you don't want to create a project in Azure DevOps or TFS, you can create [Az
 4. Select **Create**. The welcome page appears.
 
    > [!div class="mx-imgBorder"]  
-   > ![Project creation confirmation dialog, new nav](media/create-project/project-creation-complete-preview.png)
+   > ![Project creation confirmation dialog.](media/create-project/project-creation-complete-preview.png)
 
    Select one of the following options to continue:
 
@@ -138,7 +139,7 @@ Choose the **Current page** tab for information on creating a project.
 2. Choose the organization, and then select **Create Project**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Open Projects](media/create-project/projects-hub-vert-create-project.png)  
+   > ![Screenshot of Open Projects, current page.](media/create-project/projects-hub-vert-create-project.png)  
 
 3. Enter information into the form provided. Provide a name for your project. Your project name can't contain special characters, such as `/ : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]`, can't begin with an underscore, can't begin or end with a period, and must be 64 or fewer characters. Enter an optional description. Choose the visibility, initial source control type, and work item process. For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
@@ -150,7 +151,7 @@ Choose the **Current page** tab for information on creating a project.
 4. Select **Create**. The welcome page appears.
 
    > [!div class="mx-imgBorder"]  
-   > ![Project creation confirmation dialog, new nav](media/create-project/project-creation-complete-new-nav.png)
+   > ![Project creation confirmation dialog, current page.](media/create-project/project-creation-complete-new-nav.png)
 
    Select one of the following options to continue:
 
@@ -172,19 +173,19 @@ Choose the **Preview page** tab for instructions.
 1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png) Then, select **Create Project**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Open Projects, then select Create Project.](media/create-project/projects-hub-vert-create-project.png)  
+   > ![Screenshot of Open Projects, then select Create Project.](media/create-project/projects-hub-vert-create-project.png)  
 
 2. In **Create a new project**, provide a name for your project, and optionally a description. Expand **Advanced** to select the initial source control type and work item process.
 
    > [!div class="mx-imgBorder"]  
-   > ![Create new project form, 2019](media/create-project/create-new-project-2019.png)  
+   > ![Create new project form, Azure DevOps 2019 version.](media/create-project/create-new-project-2019.png)  
 
    For more information, see [Choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
 3. Select **Create**. The welcome page appears.
 
    > [!div class="mx-imgBorder"]  
-   > ![Project creation confirmation dialog, new nav](media/create-project/project-creation-complete-new-nav.png)
+   > ![Project creation confirmation dialog, Azure DevOps 2019 version.](media/create-project/project-creation-complete-new-nav.png)
 
    Select one of the following options to continue:
 
@@ -402,7 +403,7 @@ Connect to a project, collection, or server from your web browser.
 2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the top. Select any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Projects, then select Create Project.](media/create-project/list-projects.png)  
+	> ![Screenshot of Open Projects, then select Create Project, preview page.](media/create-project/list-projects.png)  
 
 3. Or, choose **Organization settings** and then select **Projects** to list all projects.
 
@@ -433,7 +434,7 @@ Connect to a project, collection, or server from your web browser.
 3. Or, choose **Organization settings** and then select **Projects** to list all projects.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Projects](media/create-project/list-projects-org-settings.png)  
+	> ![Screenshot of Open Projects, then select Create Project, current page.](media/create-project/list-projects-org-settings.png)  
 
 	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
 
@@ -450,7 +451,7 @@ Choose the **Preview page** tab for information.
 2. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the top. Choose any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Select any project to connect to that project.](media/create-project/list-projects-2019.png)  
+	> ![Select any project to connect to that project, previous versions.](media/create-project/list-projects-2019.png)  
 
 1. Or, select **Admin settings** and then choose **Projects** to list all projects.
 
