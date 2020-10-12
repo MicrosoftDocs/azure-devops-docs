@@ -496,11 +496,13 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 
 ## FAQs
 
-### Q: When do I need to add someone to the Project Collection Administrator role in Azure DevOps?
+::: moniker range="< azure-devops"
+
+#### Q: When do I need to add someone to the Project Collection Administrator role?
 
 A: It varies. For most organizations that use Azure DevOps, Project Collection Administrators manage the collections that members of the **Team Foundation Administrators** group create. Members of the **Project Collection Administrators** group don't create the collections themselves. Project collection administrators also do many operations required to maintain the collection. Operations include creating team projects, adding users to groups, modifying the settings for the collection, and so on.
 
-### Q: What are the optimal permissions to administer a project collection across all of its components and dependencies?
+#### Q: What are the optimal permissions to administer a project collection across all of its components and dependencies?
 
 A: Project collection administrators must be members of the following groups or have the following permissions:
 
@@ -510,7 +512,7 @@ A: Project collection administrators must be members of the following groups or 
 
 - Reporting Services: If the collection is configured with reporting resources, then a member of the **Team Foundation Content Manager** group.
 
-### Q: I'm an admin, but I don't have permission to add a Project Collection Administrator. What do I need?
+#### Q: I'm an admin, but I don't have permission to add a Project Collection Administrator. What do I need?
 
 A: The following permissions are required:
 
@@ -523,7 +525,9 @@ A: The following permissions are required:
 > [!Important]
 > To perform administrative tasks like creating project collections, your user requires administrative permissions. The service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies) and [Team Foundation Background Job Agent](/azure/devops/server/architecture/background-job-agent).
 
-### Q: Where can I find information about each individual permission?
+::: moniker-end 
+
+#### Q: Where can I find information about each individual permission?
 
 A: You can find detailed information about individual permissions and their relationship to default security groups in the [Permission and groups reference](../../organizations/security/permissions.md). To give a user project administration permission, complete the following steps:
 

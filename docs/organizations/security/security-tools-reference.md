@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '<= azure-devops'
-ms.date: 10/06/2020
+ms.date: 10/12/2020
 ---
 
 # Security and permission management tools for Azure DevOps
@@ -183,7 +183,7 @@ You can use the tools listed in the following table to set permissions. Links in
 | [Notifications or alerts](permissions.md#alerts)                                    |       |  ✔️ |     | 
 | [Releases](../../pipelines/policies/permissions.md#release-permissions)             |   ✔️  |  ✔️ |     | 
 
-In addition, Lab Management permissions can be manaded through the [TFSLabConfig command-line tool](/azure/devops/server/command-line/tfslabconfig-cmd).
+In addition, Lab Management permissions can be managed through the [TFSLabConfig command-line tool](/azure/devops/server/command-line/tfslabconfig-cmd).
    
 ::: moniker-end
 

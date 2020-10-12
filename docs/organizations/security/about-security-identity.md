@@ -9,22 +9,23 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '<= azure-devops'
-ms.date: 10/09/2020
+ms.date: 10/12/2020
 ---
 
 # About security, membership, and permissions
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access. Both our cloud service, Azure DevOps Services, and on-premises server, Azure DevOps Server, support software development projects, from planning through deployment. Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects.
-
-Accounts get access to Azure Devops through authentication of their security credentials and authorization of their account entitlements to access a feature or function. The following table summarizes the  various account types supported and the methods used to manage authentication and authorization.
+Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access.  Accounts get access to Azure Devops through authentication of their security credentials and authorization of their account entitlements to access a feature or function. The following table summarizes the  various account types supported and the methods used to manage authentication and authorization. 
 
 | Accounts | Authentication |Authorization |
 |----------------|----------------|----------------|
 |&#8226;&nbsp;Users<br/>&#8226;&nbsp;Organization owner<br/>&#8226;&nbsp;Service accounts<br/>&#8226;&nbsp;Service principals<br/>&#8226;&nbsp;Job agents|&#8226;&nbsp;User credentials<br/>&#8226;&nbsp;Windows authentication<br/>&#8226;&nbsp;Two-factor authentication (2FA)<br/>&#8226;&nbsp;SSH key authentication<br/>&#8226;&nbsp;Personal access tokens<br/>&#8226;&nbsp;Oauth<br/>&#8226;&nbsp;Active Directory authentication library  |&#8226;&nbsp;Security group membership<br/>&#8226;&nbsp;Role-based access control<br/>&#8226;&nbsp;Access levels<br/> &#8226;&nbsp;Feature flags<br/>&#8226;&nbsp;Security namespaces & permissions|
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
+
+
+Both our cloud service, Azure DevOps Services, and on-premises server, Azure DevOps Server, support software development projects, from planning through deployment. Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects.
 
 ::: moniker range="azure-devops"
 To learn more about the steps Microsoft takes to keep your projects in Azure DevOps Services safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../organizations/security/data-protection.md).
@@ -134,7 +135,7 @@ Most users are assigned to the Contributors group for a project to provide them 
 
 ## Populate security groups
 
-You can populate these groups by adding individual users. However, for ease of management, it's easier if you populate these groups by using Azure Active Directory (ADD), Active Directory (AD), or Windows security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
+You can populate these groups by adding individual users. However, for ease of management, it's easier if you populate these groups by using Azure Active Directory (Azure AD), Active Directory (AD), or Windows security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
 
 ::: moniker range="azure-devops"
 
@@ -287,7 +288,7 @@ Since repositories and build and release pipelines pose unique security challeng
 - [How to securely use variables and parameters in your pipeline](../../pipelines/security/inputs.md)
 - [Recommendations to secure shared infrastructure in Azure Pipelines](../../pipelines/security/infrastructure.md)
 - [Other security considerations](../../pipelines/security/misc.md)
-- [Add continuous security validation](../../pipelines/migrate/security-validation-cicd-pipeline.md)  
+- [Add continuous security validation](../../migrate/security-validation-cicd-pipeline.md)  
 
 
  
@@ -296,11 +297,7 @@ Since repositories and build and release pipelines pose unique security challeng
 > [About permissions and inheritance](about-permissions.md)
 
 ## Related articles
-
-- [Securing Azure Pipelines](../../pipelines/security/overview.md) 
-
-
-To learn more, see [About security roles](about-security-roles.md).
+ 
 - [Default permissions and access assignments](permissions-access.md)
 - [Permissions and groups reference](permissions.md)
 - [Default permissions and access for Azure DevOps](permissions-access.md)
