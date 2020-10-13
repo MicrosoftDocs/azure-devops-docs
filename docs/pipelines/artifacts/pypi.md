@@ -64,7 +64,7 @@ The example below will enable you to authenticate to a list of Azure Artifacts f
     externalFeeds: 'feed_name1, feed_name2'
 ```
 
-* **artifactFeeds**: a list of Azure Artifacts feeds within your organization. If you only have one Azure Artifacts feed, use **artifactFeed** (without the ending 's') instead.
+* **artifactFeeds**: a list of Azure Artifacts feeds within your organization. If you only have one Azure Artifacts feed, use **artifactFeed** (singular) instead.
 * **externalFeeds**: a list of [service connections](../library/service-endpoints.md) from external organizations including PyPI or feeds in other organizations in Azure DevOps.
 
 # [Classic](#tab/classic)
