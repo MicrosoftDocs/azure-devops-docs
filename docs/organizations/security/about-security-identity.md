@@ -16,7 +16,7 @@ ms.date: 10/12/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access.  Accounts get access to Azure Devops through authentication of their security credentials and authorization of their account entitlements to access a feature or function. The following table summarizes the  various account types supported and the methods used to manage authentication and authorization. 
+Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access.  Accounts get access to Azure DevOps through authentication of their security credentials and authorization of their account entitlements to access a feature or function. The following table summarizes the  various account types supported and the methods used to manage authentication and authorization. 
 
 | Accounts | Authentication |Authorization |
 |----------------|----------------|----------------|
