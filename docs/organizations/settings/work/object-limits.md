@@ -67,7 +67,7 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 
 | User interface |  Limit | 
 |--------|-------|
-| Backlogs | 10,000 work items | 
+| Backlogs | 1000 work items | 
 | Boards | 1000 cards (excluding those cards in the [*Proposed* and *Completed* workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) | 
 | Taskboard | 1000 tasks  | 
 | Teams | 5,000 per project | 
