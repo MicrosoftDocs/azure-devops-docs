@@ -6,7 +6,7 @@ ms.technology: devops-test
 ms.topic: overview
 ms.author: sdanie
 author: steved0x
-ms.date: 07/16/2020
+ms.date: 10/13/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -57,7 +57,7 @@ arise during the support lifecycle of the product. See [Product Lifecycle and Se
  
 1. New customers of CLT:
 
-   Azure DevOps organizations and Azure subscriptions with no prior usage of cloud-based load testing functionality will not have access to this feature effective October 12,      2020.
+   Azure DevOps organizations and Azure subscriptions with no prior usage of cloud-based load testing functionality will not have access to this feature effective October 12, 2020.
    
 ## Alternatives
 
