@@ -48,18 +48,17 @@ arise during the support lifecycle of the product. See [Product Lifecycle and Se
 1. Existing customers of CLT:
 
    * For existing Azure DevOps customers using cloud-load testing functionality in the Azure DevOps portal,
-     this feature will no longer be available as of March 31, 2020.
+     this feature currently continues to be available but is on the path of being retired by March 31, 2021.
 
-    * For Visual Studio users leveraging cloud-based load testing, this feature will no longer be supported
-     as of March 31, 2020. Visual Studio Enterprise customers can, however, continue to run load tests on-premises
+    * For Visual Studio users leveraging cloud-based load testing, this feature is no longer supported
+     effective March 31, 2020. Visual Studio Enterprise customers can, however, continue to run load tests on-premises
      using Test Controller/Test Agent and will be supported for any issues that may arise during the
      [support lifecycle](/visualstudio/productinfo/vs-servicing-vs) of the Visual Studio version.  
  
 1. New customers of CLT:
 
-   New Azure DevOps organizations and new Azure subscriptions created after March 31st, 2019
-   will not have access to the cloud-based load testing functionality. 
-
+   Azure DevOps organizations and Azure subscriptions with no prior usage of cloud-based load testing functionality will not have access to this feature effective October 12,      2020.
+   
 ## Alternatives
 
 For customers who prefer to continue using a self-service model for load test and cloud-load testing,
