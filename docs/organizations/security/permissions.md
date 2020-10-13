@@ -8,7 +8,7 @@ toc: show
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 06/05/2020
 --- 
 
@@ -310,7 +310,7 @@ You can't remove or delete the default server level groups.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 
 <table valign="top" width="100%">

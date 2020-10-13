@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/26/2019
+ms.date: 10/01/2020
 ---
 
 # About security and identity
@@ -48,13 +48,6 @@ For on-premises deployments, AD is recommended when managing a large group of us
 ### Authentication methods, integrating with other services and apps
 
 Other applications and services can integrate with services and resources in Azure DevOps. To access your account without asking for user credentials multiple times, apps can use the following  authentication methods.
-
-- [Alternate credentials](../../repos/git/auth-overview.md) 
-as a single set of credentials across all tools that don't have 
-plug-in, extension, or native support. For example, 
-you can use basic authentication to access 
-[REST APIs for Azure DevOps](/rest/api/azure/devops/), 
-but you must turn on alternate credentials.
 
 - [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to generate tokens for:  
 	- Accessing specific resources or activities, like builds or work items
