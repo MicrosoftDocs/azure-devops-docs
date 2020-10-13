@@ -54,7 +54,7 @@ Step 1, template expansion, operates solely on the text of the YAML document.
 Runtime variables don't exist during that step.
 After step 1, template parameters have been completely resolved and no longer exist.
 
-It also answers another common issue: why can't I use variables to resolve service connection / environment names?
+It also answers another common issue: why can't I use [variables](variables.md) to resolve service connection / environment names?
 Resources are authorized before a stage can start running, so stage- and job-level variables aren't available.
 Pipeline-level variables can be used, but only those explicitly included in the pipeline.
 Variable groups are themselves a resource subject to authorization, so their data is likewise not available when checking resource authorization.

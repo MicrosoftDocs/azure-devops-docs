@@ -63,7 +63,7 @@ Optional tasks to consider include:
 	You can then complete the following tasks: 
 	- Add [team members](../security/add-users-team-project.md#add-team-members)
 	- Add [team admins](add-team-administrator.md)
-	- Navigate to [team notifications](../../notifications/manage-team-group-notifications.md)
+	- Navigate to [team notifications](../../notifications/manage-team-group-global-organization-notifications.md)
 	- Navigate to team [iterations](set-iteration-paths-sprints.md#open-team-settings) and [area paths](set-area-paths.md#open-team-settings). 
 	- Update the [team description or profile picture](#team-description).
 
@@ -122,7 +122,7 @@ You can configure most of your team settings from the common configuration dialo
 1. (1) Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu.
 
 	> [!div class="mx-imgBorder"]
-	> ![Open Kanban board](../../boards/boards/media/quickstart/open-kanban-board-agile.png)
+	> ![Open Kanban board, versions Azure DevOps Server 2019 and on.](../../boards/boards/media/quickstart/open-kanban-board-agile.png)
 
 2. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
@@ -151,14 +151,14 @@ You can configure most of your team settings from the common configuration dialo
 2. Open **Work>Backlogs>Board**. 
 
 	> [!div class="mx-imgBorder"]
-	>![Open Kanban board](../../boards/boards/media/kanban-basics-intro.png)  
+	>![Open Kanban board, versions TFS 2017-2018.](../../boards/boards/media/kanban-basics-intro.png)  
 
 3. Choose the board you want to configure and then choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to configure the board and set general team settings.  
  
 	For example, from the Kanban board ...  
 
 	> [!div class="mx-imgBorder"]
-	> ![Kanban board, open common configuration settings](media/configure-team/open-settings-vsts-horz.png)
+	> ![Kanban board, open common configuration settings, versions TFS 2017-2018.](media/configure-team/open-settings-vsts-horz.png)
 
 4. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
 
@@ -176,13 +176,13 @@ You can configure most of your team settings from the common configuration dialo
 2. Open **Work>Backlogs>Board**. 
 
 	> [!div class="mx-imgBorder"]
-	>![Open Kanban board](../../boards/boards/media/kanban-basics-intro.png)  
+	>![Open Kanban board, version TFS 2015.](../../boards/boards/media/kanban-basics-intro.png)  
 
 3. Choose the board you want to configure and then choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to configure the board and set general team settings.  
 
 	For example, from the Kanban board ...  
 
-	![Kanban board, open common configuration settings](media/configure-team/open-settings-tfs-2015-horz.png)
+	![Kanban board, open common configuration settings, version TFS 2015.](media/configure-team/open-settings-tfs-2015-horz.png)
 
 
 4. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
@@ -430,7 +430,7 @@ Team settings also include the team name, description, and team profile image. T
 
 ## Manage team notifications 
 
-Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. A number of alerts are defined for each team. For details, see [Manage team alerts](../../notifications/manage-team-group-notifications.md).
+Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. A number of alerts are defined for each team. For details, see [Manage team alerts](../../notifications/manage-team-group-global-organization-notifications.md).
 
 
 <a id="team-rooms" />

@@ -318,7 +318,7 @@ From the **Settings** page, you can configure administrative features for either
 <li><a href="../organizations/settings/set-area-paths.md" data-raw-source="[Work Item Areas](../organizations/settings/set-area-paths.md)">Work Item Areas</a></li>
 <li><a href="../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Work Item Iterations](../organizations/settings/set-iteration-paths-sprints.md)">Work Item Iterations</a></li>
 <li><a href="../project/configure-or-add-a-project-portal.md" data-raw-source="[Portal Settings](../project/configure-or-add-a-project-portal.md)">Portal Settings</a></li>
-<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Project Alerts](../notifications/manage-team-group-notifications.md)">Project Alerts</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Project Alerts](../notifications/manage-team-group-global-organization-notifications.md)">Project Alerts</a></li>
 </ul>
 </td>
 
