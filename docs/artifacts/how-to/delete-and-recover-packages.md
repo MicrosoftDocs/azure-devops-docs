@@ -4,23 +4,26 @@ description: Recover deleted packages and set up policies to automatically delet
 ms.technology: devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.topic: conceptual
-ms.date: 06/30/2020
+ms.date: 10/13/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Delete packages and recover deleted packages from the recycle bin in Azure Artifacts
+# Delete and recover packages
 
-Azure Artifacts keeps all of your artifacts safe for as long as you need them, whether you published them directly or saved them from upstream sources. But, as older artifacts fall out of use, you may want to clean them up or let Azure Artifacts clean them up automatically. In this article, you’ll learn how to:
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-1. Delete packages from feeds in Azure Artifacts
-1. Set up retention policies to automatically delete older, unwanted packages from feeds
-1. Recover recently deleted packages from the recycle bin
+Azure Artifacts keeps all of your artifacts safe for as long as you need them, whether you published them directly or saved them from upstream sources. But, as older artifacts fall out of use, you may want to clean them up or let Azure Artifacts remove them automatically. In this article, you’ll learn how to:
+
+1. Delete packages from Azure Artifacts feeds.
+1. Set up retention policies to automatically delete older, unwanted packages from feeds.
+1. Recover recently deleted packages from the recycle bin.
+
+> [!NOTE]
+> To delete, recover packages and set up retention policies, you need to be an **Owner** of that particular feed.
 
 ## Delete packages from Azure Artifacts feeds
 
 #### [Maven](#tab/maven/)
-You must be an **owner** to delete an artifact.
-
 Choose the artifact from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
 
 > [!div class="mx-imgBorder"]
