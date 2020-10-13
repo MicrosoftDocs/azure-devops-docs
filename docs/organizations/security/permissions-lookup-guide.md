@@ -43,7 +43,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)">Agent queues (Project, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)">Agent pools (Collection, Role)</a></li>
 <li><a href="/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions" data-raw-source="[Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)">Alerts (Collection)</a></li>
-<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Alerts (Team)](../../notifications/howto-manage-team-notifications.md)">Alerts (Team)</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Alerts (Team)](../../notifications/manage-team-group-global-organization-notifications.md)">Alerts (Team)</a></li>
 <li><a href="../../report/powerbi/analytics-security.md" data-raw-source="[Analytics Service (Project)](../../report/powerbi/analytics-security.md)">Analytics Service (Project)</a></li>
 <li><a href="../../report/powerbi/analytics-security.md" data-raw-source="[Analytics views (Object)](../../report/powerbi/analytics-security.md)">Analytics views (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Area path (Object)](set-permissions-access-work-tracking.md)">Area path (Object)</a></li>
@@ -283,7 +283,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)">Agent queues (Project, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)">Agent pools (Collection, Role)</a></li>
 <li><a href="/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions" data-raw-source="[Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)">Alerts (Collection)</a></li>
-<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Alerts (Team)](../../notifications/howto-manage-team-notifications.md)">Alerts (Team)</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Alerts (Team)](../../notifications/manage-team-group-global-organization-notifications.md)">Alerts (Team)</a></li>
 <li><a href="../../report/powerbi/analytics-security.md" data-raw-source="[Analytics Service (Project)](../../report/powerbi/analytics-security.md)">Analytics Service (Project)</a></li>
 <li><a href="../../report/powerbi/analytics-security.md" data-raw-source="[Analytics views (Object)](../../report/powerbi/analytics-security.md)">Analytics views (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Area path (Object)](set-permissions-access-work-tracking.md)">Area path (Object)</a></li>
@@ -519,7 +519,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Agent queues (Project, Role)](../../pipelines/policies/set-permissions.md)">Agent queues (Project, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Agent pools (Collection, Role)](../../pipelines/policies/set-permissions.md)">Agent pools (Collection, Role)</a></li>
 <li><a href="/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions" data-raw-source="[Alerts (Collection)](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions)">Alerts (Collection)</a></li>
-<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Alerts (Team)](../../notifications/howto-manage-team-notifications.md)">Alerts (Team)</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Alerts (Team)](../../notifications/manage-team-group-global-organization-notifications.md)">Alerts (Team)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Area path (Object)](set-permissions-access-work-tracking.md)">Area path (Object)</a></li>
 <li><a href="../../artifacts/feeds/feed-permissions.md" data-raw-source="[Azure Artifacts](../../artifacts/feeds/feed-permissions.md)">Azure Artifacts</a></li>
 </ul>
@@ -674,9 +674,7 @@ The **Edit project-level information** permission is set through the [Security a
 for all projects defined in the organization or collection:
 
 - Edit the project description
-- Add and administer teams and all team-related features
-- Edit project level permission ACLs
-- Edit event subscriptions or alerts for teams or the project 
+- [Modify project services visibility](../settings/set-services.md)
  
 > [!NOTE]
 > The permission to add or remove project-level security groups and add and manage project-level group membership is assigned to all members of the Project Administrators group. It isn't controlled by a permissions surfaced within the user interface. 

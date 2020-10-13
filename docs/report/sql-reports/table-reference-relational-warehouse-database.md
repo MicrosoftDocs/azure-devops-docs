@@ -76,7 +76,7 @@ You can query for information about test results and analyze how well the tests 
 |[Build Coverage tables](table-reference-build-coverage.md)|The extent to which the code was covered by tests that were performed against the build.|  
 |[Work Item Test Result tables](work-item-test-result-tables.md)|Links between work items and test results.|  
   
- For more information, see [Testing overview](../../test/index.yml) and [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx). 
+ For more information, see [Testing overview](../../test/index.yml) and [Using Code Coverage to Determine How Much Code is being Tested](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested). 
   
 <a name="WorkItems"></a>
 
@@ -95,4 +95,3 @@ You can query for information about tasks, bugs, and other types of work items b
 |[Work Item Changeset tables](work-item-changeset-tables.md)|Links between work items and changesets.|  
 |[Work Item Test Result tables](work-item-test-result-tables.md)|Links between work items and test results.|  
   
- 

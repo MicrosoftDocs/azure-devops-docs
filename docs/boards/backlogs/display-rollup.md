@@ -83,7 +83,7 @@ Each user can set their own column options which persist for each backlog across
 2. Choose **Column options**, or choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and then select **Column options**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open column options](media/rollup/open-column-options.png) 
+	> ![Choose Column options and then select Column options.](media/rollup/open-column-options.png) 
 
 	> [!TIP]  
 	> Remember that the Column options you choose are for the selected backlog level. They persist across your sessions until you change them. 

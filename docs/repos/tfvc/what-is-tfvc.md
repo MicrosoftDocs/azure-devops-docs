@@ -106,7 +106,7 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
   Install a bit of software to create a build server, and then fill in a few fields to create a Continuous integration (CI) or nightly build process that enables you to leverage the power, convenience, scalability, and reliability of an automated build system to build your app.
 
-- [Naming restrictions in Team Foundation](https://msdn.microsoft.com/library/aa980550)     
+- [Naming restrictions in Team Foundation](../../organizations/settings/naming-restrictions.md)     
 
   Provides information about naming syntax, conventions, and limitations.
 
@@ -121,6 +121,4 @@ We are not currently republishing the following sections. However, you can read 
 ## Related articles 
 
 - [What is version control?](/azure/devops/learn/git/what-is-version-control)  
-- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)  
-
-
+- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)

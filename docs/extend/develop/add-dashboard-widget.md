@@ -67,7 +67,7 @@ Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) th
 
 This part presents a widget that prints "Hello World" using JavaScript.
 
-![Overview dashboard in with a sample widget](../media-procedures/add-dashboard-widget/sample.png)
+![Overview dashboard with a sample widget](../media-procedures/add-dashboard-widget/sample.png)
 
 ### Step 1: Get the client SDK - `VSS.SDK.min.js`
 
@@ -357,7 +357,7 @@ Widgets can call any of the [REST APIs](/rest/api/vsts/?view=azure-devops) in Az
 In this example, we use the REST API for WorkItemTracking to fetch information about an existing query and display some query info in the widget right 
 below the "Hello World" text. 
 
-![Overview dashboard in with a sample widget](../media-procedures/add-dashboard-widget/sample2.png)
+![Overview dashboard with a sample widget using the REST API for WorkItemTracking.](../media-procedures/add-dashboard-widget/sample2.png)
 
 <a id="step-1-files" />
 
@@ -652,7 +652,7 @@ In [Part 2](#part-2) of this guide, you saw how to create a widget that shows qu
 In this part, we add the ability to configure the query to be used instead of the hard-coded one.
 When in configuration mode, the user gets to see a live preview of the widget based on their changes. These changes get saved to the widget on the dashboard when the user selects **Save**.
 
-![Overview dashboard in with a sample widget](../media-procedures/add-dashboard-widget/sampleConfiguration.png)
+![Overview dashboard live preview of the widget based on changes.](../media-procedures/add-dashboard-widget/sampleConfiguration.png)
 
 ### Step 1: HTML
 
@@ -990,7 +990,7 @@ Choose your widget and select the 'Add' button to add it to your dashboard.
 
 You would see a message asking you to configure the widget.
 
-![Overview dashboard in with a sample widget](../media-procedures/add-dashboard-widget/sampleWidgetWithNoSettings.png)
+![Overview dashboard with a sample widget from the catalog.](../media-procedures/add-dashboard-widget/sampleWidgetWithNoSettings.png)
 
 There are two ways to configure widgets. One is to hover on the widget, select the ellipsis that appears on the top-right corner and then select Configure.
 The other is to select the Edit button in the bottom right of the dashboard, and then select the configure button that appears on the top-right corner of the widget.

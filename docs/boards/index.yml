@@ -96,7 +96,7 @@ landingContent:
           - text: Set capacity
             url: ./sprints/set-capacity.md
           - text: Monitor sprint burndown
-            url: ./sprints/sprint-burndown.md
+            url: ../report/dashboards/configure-sprint-burndown.md
   - title: List & manage work items
     linkLists:
       - linkListType: tutorial
@@ -148,7 +148,7 @@ landingContent:
           - text: Customize the workflow
             url: ../organizations/settings/work/customize-process-workflow.md
           - text: See more...
-            url: /azure/devops/reference/index
+            url: ../reference/index.yml
   - title: Agile at Scale
     linkLists:
       - linkListType: tutorial
@@ -188,5 +188,4 @@ landingContent:
           - text: Azure DevOps CLI
             url: /cli/azure/ext/azure-devops/boards
           - text: REST API
-            url: /rest/api/azure/devops/work  
-
+            url: /rest/api/azure/devops/work

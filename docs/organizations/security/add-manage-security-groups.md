@@ -61,7 +61,7 @@ The following parameters are optional for all commands, and not listed in the ex
 You can create a security group with the [az devops security group create](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-create) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group create [--description]
                                 [--email-id]
                                 [--groups]
@@ -86,7 +86,7 @@ az devops security group create [--description]
 The following command creates the **Account Management** security group in the project **MyFirstProject** and shows the result in table format.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group create --name "Account Management" --project MyFirstProject --description "Management team focused on creating and maintaining customer services" --output table
 
 Name                                 Description
@@ -99,7 +99,7 @@ Name                                 Description
 You can delete a security group with the [az devops security group delete](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-delete) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group delete --id
                                 [--yes]
 ```
@@ -114,7 +114,7 @@ az devops security group delete --id
 The following command deletes the security group with the specified descriptor and doesn't prompt for confirmation.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group delete --id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xODI5NDgwMzA1LTEzNjM2MTczNTEtMjI0NzE1OTUyMC03ODEzNDk2MjItMC0wLTAtMC0x --yes
 ```
 
@@ -123,7 +123,7 @@ az devops security group delete --id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xODI5NDgwMzA1L
 You can list all the security groups in a project or organization with the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group list [--continuation-token]
                               [--project]
                               [--scope {organization, project}]
@@ -142,7 +142,7 @@ az devops security group list [--continuation-token]
 The following command lists the name and descriptor for all security groups in **MyFirstProject**, and shows the results in table format.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group list --project MyFirstProject --output table
 
 Name                                     Descriptor
@@ -162,7 +162,7 @@ Name                                     Descriptor
 You can show the details of a security group with the [az devops security group show](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-show) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group show --id
 ```
 
@@ -175,7 +175,7 @@ az devops security group show --id
 The following command shows details for the **Project Valid Users** security group in table format.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group show --id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xODI5NDgwMzA1LTEzNjM2MTczNTEtMjI0NzE1OTUyMC03ODEzNDk2MjItMC0wLTAtMC0z --output table
 
 Name                                  Description
@@ -188,7 +188,7 @@ Name                                  Description
 You can update the name and description of a security group with the [az devops security group update](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-update) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group update --id
                                 [--description]
                                 [--name]
@@ -205,7 +205,7 @@ az devops security group update --id
 The following command changes the name of the security group with the specified descriptor and shows the result in YAML format.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group update --id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xODI5NDgwMzA1LTEzNjM2MTczNTEtMjI0NzE1OTUyMC03ODEzNDk2MjItMS0zNDU1MDI4NTE4LTI5Nzg5OTAxNTYtMjI4OTU2NzYyOS0xOTM2NDU3NTYw --name "Management Team" --output yaml
 
 description: Management team focused on creating and maintaining customer services
@@ -236,7 +236,7 @@ url: https://vssps.dev.azure.com/kelliott/_apis/Graph/Groups/vssgp.Uy0xLTktMTU1M
 You can add a member to a security group with the [az devops security group membership add](/cli/azure/ext/azure-devops/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-add) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group membership add --group-id
                                         --member-id
 ```
@@ -251,7 +251,7 @@ az devops security group membership add --group-id
 The following command adds the user contoso@contoso.com to the specified security group and shows the results in table format.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group membership add --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0yMjc3MTY5NTAtOTkzNjA1MTg2LTI1ODQxNTkyOTktMjYzMDUyNzA2OC0xLTQxNDY0Mzc4MzktMzgxMDM2MDM5MS0yNjE0MjU5MzI3LTI5MjI2MTc3OTA --member-id contoso@contoso.com --output table
 
 Name                                 Type    Email
@@ -265,7 +265,7 @@ contoso@contoso.com                  user    contoso@contoso.com
 You can list memberships for a group or user with the [az devops security group membership list](/cli/azure/ext/azure-devops/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-list) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group membership list --id
                                          [--relationship {memberof, members}]
 ```
@@ -280,7 +280,7 @@ az devops security group membership list --id
 The following command lists the members of the specified security group and shows the results in table format.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group membership list --id vssgp.Uy0xLTktMTU1MTM3NDI0NS0yMjc3MTY5NTAtOTkzNjA1MTg2LTI1ODQxNTkyOTktMjYzMDUyNzA2OC0xLTQxNDY0Mzc4MzktMzgxMDM2MDM5MS0yNjE0MjU5MzI3LTI5MjI2MTc3OTA --output table
 
 Name                 Type    Email                Descriptor
@@ -291,7 +291,7 @@ contoso@contoso.com  user    contoso@contoso.com  msa.NDMzMmNjOWYtYzY4Zi03YTNlLT
 Here is another example that lists the members of the EMail team for the Fabrikam Fiber project. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group membership list --id "[Fabrikam Fiber]\Email" --output table
 Name               Type    Email                       Descriptor
 -----------------  ------  --------------------------  ----------------------------------------------------
@@ -304,7 +304,7 @@ Raisa Pokrovskaya  user    fabrikamfiber5@hotmail.com  msa.ZmUwYjk5NmYtZTAyNS03N
 You can remove a member from a security group with the [az devops security group membership remove](/cli/azure/ext/azure-devops/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-remove) command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group membership remove --group-id
                                            --member-id
                                            [--yes]
@@ -321,7 +321,7 @@ az devops security group membership remove --group-id
 The following command removes the user contoso@contoso.com from the specified security group without prompting for confirmation.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops security group membership remove --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0yMjc3MTY5NTAtOTkzNjA1MTg2LTI1ODQxNTkyOTktMjYzMDUyNzA2OC0xLTQxNDY0Mzc4MzktMzgxMDM2MDM5MS0yNjE0MjU5MzI3LTI5MjI2MTc3OTA --member-id contoso@contoso.com --yes
 ```
 

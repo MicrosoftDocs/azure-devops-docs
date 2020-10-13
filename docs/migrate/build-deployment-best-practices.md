@@ -193,15 +193,15 @@ and Fortify Integration
 ## References
 
 [1] Visual Studio team, 
-[Automate deployments with Release Management](https://msdn.microsoft.com/Library/vs/alm/Release/overview), 
+[Automate deployments with Release Management](../pipelines/overview.md?viewFallbackFrom=azure-devops), 
 MSDN Article
 
 [2] Visual Studio team, 
-[Build and Deploy Continuously](https://msdn.microsoft.com/library/ee308011%28v=vs.100%29.aspx), 
+[Build and Deploy Continuously](/previous-versions/visualstudio/visual-studio-2010/ee308011(v=vs.100)), 
 MSDN Article
 
 [3] Visual Studio team, 
-[Building a Release Pipeline with Team Foundation Server 2012](https://msdn.microsoft.com/library/dn449957.aspx), 
+[Building a Release Pipeline with Team Foundation Server 2012](/previous-versions/msp-n-p/dn449957(v=pandp.10)), 
 MSDN Article
 
 *(c) 2015 Microsoft Corporation. All rights reserved. This document is

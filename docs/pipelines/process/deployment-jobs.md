@@ -353,9 +353,7 @@ In addition, deployment jobs can be run as a [container job](container-phases.md
  
 Define output variables in a deployment job's [lifecycle hooks](#descriptions-of-lifecycle-hooks) and consume them in other downstream steps and jobs within the same stage. 
 
-   > [!NOTE] 
-   > You cannot consume output variables in different stages. 
-   > To share variables between stages, output an [artifact](../artifacts/pipeline-artifacts.md) in one stage and then consume it in a subsequent stage.
+To share variables between stages, output an [artifact](../artifacts/pipeline-artifacts.md) in one stage and then consume it in a subsequent stage, or use the `stageDependencies` syntax described in [variables](variables.md#use-outputs-in-a-different-stage).
  
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.

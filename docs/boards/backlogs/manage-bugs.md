@@ -199,7 +199,7 @@ For information about fields specific to the CMMI process, see [Bugs, issues, an
 
 You can create bugs during test sessions using one of the following tools: 
 - **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md)   
-- **Test Runner**: see [Update an existing bug while using Test Runner](https://msdn.microsoft.com/library/dd286731.aspx).  
+- **Test Runner**: see [Update an existing bug while using Test Runner](/previous-versions/dd286731(v=vs.140)).  
 
 
 <a id="triage"> </a>
@@ -336,8 +336,8 @@ To track your bugs and integrate with other resources available to you, see thes
 
 ### Integrate & Test resources
 
-- [UserVoice](../../service-hooks/services/uservoice.md)  
-- [Zendesk](../../service-hooks/services/zendesk.md)  
+- [UserVoice](../../service-hooks/overview.md)  
+- [Zendesk](../../service-hooks/overview.md)  
 - [Developer testing tools scenarios and capabilities](/visualstudio/test/developer-testing-scenarios)  
 - [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)  
 

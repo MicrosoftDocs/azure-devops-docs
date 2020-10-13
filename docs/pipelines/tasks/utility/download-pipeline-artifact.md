@@ -16,7 +16,7 @@ monikerRange: azure-devops
 Use this task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
 
 > [!NOTE]
-> For more information, including Azure CLI commands, see [downloading artifacts](https://docs.microsoft.com/azure/devops/pipelines/artifacts/pipeline-artifacts?view=azure-devops&tabs=yaml#downloading-artifacts).
+> For more information, including Azure CLI commands, see [downloading artifacts](../../artifacts/pipeline-artifacts.md?tabs=yaml#downloading-artifacts).
 
 ::: moniker range="azure-devops"
 
@@ -104,7 +104,7 @@ Use this task to download pipeline artifacts from earlier stages in this pipelin
 
 ### How can I find the ID of the Pipeline I want to download an artifact from? 
 
-You can find the ID of the pipeline in the 'Pipeline variables'. The pipeline ID is the [system.definitionId](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables) variable. 
+You can find the ID of the pipeline in the 'Pipeline variables'. The pipeline ID is the [system.definitionId](../../build/variables.md?tabs=yaml#system-variables) variable. 
 
 ## Open source
 

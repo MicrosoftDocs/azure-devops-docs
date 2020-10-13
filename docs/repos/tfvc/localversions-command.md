@@ -103,9 +103,9 @@ When you get or check out a file, you usually download the most current version.
 
 For example, you might have checked out some files and not checked in your work for several weeks. Other people on your team may have checked in changes to the same files during that time. In this case, the versions of these files in your workspace would be older than the current versions on your server for Team Foundation version control. You can use the **localversions** command to get information about which versions of these files are in your workspace.
 
-For information about other Team Foundation commands that provide additional information about items in your server for Team Foundation version control and the workspaces that map to it, see [Informational Commands](https://msdn.microsoft.com/library/ms181450).
+For information about other Team Foundation commands that provide additional information about items in your server for Team Foundation version control and the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 
-For more information about how to find and use the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information about how to find and use the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ## Examples
 The following example displays the version of the `ControllerBase.cs` file in the workspace that is mapped to the `c:\\workspaces\\FeatureA\\catalog\\controller` folder.
@@ -124,7 +124,7 @@ c:\workspaces\FeatureA\catalog\>tf localversions . /recursive /format:detailed
 
 #### Concepts
 
-[Informational Commands](https://msdn.microsoft.com/library/ms181450)  
+[Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))  
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

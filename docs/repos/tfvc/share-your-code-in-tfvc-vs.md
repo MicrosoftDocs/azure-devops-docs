@@ -151,7 +151,7 @@ Your whole team can work on the code now. All your changes are tracked in versio
 
 Yes:
 
- * [Upgrade From Visual SourceSafe](https://msdn.microsoft.com/library/ms253060).
+ * [Upgrade From Visual SourceSafe](/previous-versions/visualstudio/visual-studio-2013/ms253060(v=vs.120)).
  * [Migrate from Team Foundation Server into Azure DevOps Services](../../migrate/migrate-from-tfs.md).
 
 <a name="workspace_exists"></a>
@@ -159,8 +159,8 @@ Yes:
 
 You might already have a workspace on your computer. To see your workspace, open Source 
 Control Explorer. Or change your workspace. Find out how to [manage files under 
-source control](https://msdn.microsoft.com/library/ms181370.aspx) or 
-[manage workspaces](https://msdn.microsoft.com/library/ms181383.aspx).
+source control](./use-source-control-explorer-manage-files-under-version-control.md?viewFallbackFrom=vsts) or 
+[manage workspaces](./create-work-workspaces.md?viewFallbackFrom=vsts).
 
 ![In Team Explorer, click Source Control Explorer or Manage Workspaces](media/share-your-code-in-tfvc-vs/OpenSCE_ManageWorkspaces.png)
 

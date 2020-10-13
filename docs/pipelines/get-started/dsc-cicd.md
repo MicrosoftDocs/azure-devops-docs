@@ -31,10 +31,10 @@ code is tested, and that a current build of your code is available at all times.
 
 To use this example, you should be familiar with the following:
 
-- CI-CD concepts. A good reference can be found at [The Release Pipeline Model](/azure/devops/pipelines/get-started/key-pipelines-concepts).
+- CI-CD concepts. A good reference can be found at [The Release Pipeline Model](./key-pipelines-concepts.md).
 - [Git](https://git-scm.com/) source control
 - The [Pester](https://github.com/pester/Pester) testing framework
-- [Desired State Configuration](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview)(DSC)
+- [Desired State Configuration](/powershell/scripting/dsc/overview/overview)(DSC)
 
 ## What you will need
 
@@ -72,7 +72,7 @@ must have [Team Foundation Server 2017](https://visualstudio.microsoft.com/tfs/)
 ### BuildAgent
 
 The computer that runs the Windows build agent that builds the project. This computer must have a
-Windows build agent installed and running. See [Deploy an agent on Windows](/azure/devops/pipelines/agents/v2-windows)
+Windows build agent installed and running. See [Deploy an agent on Windows](../agents/v2-windows.md)
 for instructions on how to install and run a Windows build agent.
 
 You also need to install both the `xDnsServer` and `xNetworking` DSC modules on this computer.
@@ -100,7 +100,7 @@ git clone https://github.com/PowerShell/Demo_CI
 
 1. On your client computer, navigate to your TFS server in a web browser.
 
-1. [Create a new team project](/azure/devops/organizations/projects/create-project) named Demo_CI.
+1. [Create a new team project](../../organizations/projects/create-project.md) named Demo_CI.
 
    Make sure that **Version control** is set to **Git**.
 1. On your client computer, add a remote to the repository you just created in TFS with the following command:
@@ -109,7 +109,7 @@ git clone https://github.com/PowerShell/Demo_CI
 
    Where `<YourTFSRepoURL>` is the clone URL to the TFS repository you created in the previous step.
 
-   If you don't know where to find this URL, see [Clone an existing Git repo](/azure/devops/repos/git/clone).
+   If you don't know where to find this URL, see [Clone an existing Git repo](../../repos/git/clone.md).
 1. Push the code from your local repository to your TFS repository with the following command:
 
    `git push tfs --all`
@@ -121,7 +121,7 @@ git clone https://github.com/PowerShell/Demo_CI
 
 1. Navigate to your Azure DevOps subscription in a web browser.
 
-1. [Create a new team project](/azure/devops/organizations/projects/create-project) named Demo_CI.
+1. [Create a new team project](../../organizations/projects/create-project.md) named Demo_CI.
    Make sure that **Version control** is set to **Git**.
 
 1. On your client computer, add a remote to the repository you just created with the following
@@ -132,7 +132,7 @@ git clone https://github.com/PowerShell/Demo_CI
    Where `<YourDevOpsRepoURL>` is the clone URL to the Azure DevOps repository you created in the
    previous step.
 
-   If you don't know where to find this URL, see [Clone an existing Git repo](/azure/devops/repos/git/clone).
+   If you don't know where to find this URL, see [Clone an existing Git repo](../../repos/git/clone.md).
 
 1. Push the code from your local repository to your TFS repository with the following command:
 
@@ -211,7 +211,7 @@ Notice the `Node` statement:
 Node $AllNodes.Where{$_.Role -eq 'DNSServer'}.NodeName
 ```
 
-This finds any nodes that were defined as having a role of `DNSServer` in the [configuration data](https://docs.microsoft.com/powershell/scripting/dsc/configurations/configData),
+This finds any nodes that were defined as having a role of `DNSServer` in the [configuration data](/powershell/scripting/dsc/configurations/configData),
 which is created by the `DevEnv.ps1` script.
 
 You can read more about the `Where` method in [about_arrays](/powershell/module/microsoft.powershell.core/about/about_arrays)
@@ -402,7 +402,7 @@ and [PoshSpec](https://github.com/Ticketmaster/poshspec/wiki/Introduction) synta
 Now that we've uploaded our code to a repo and looked at what it does, let's define our build.
 
 Here, we'll cover only the build steps that you'll add to the build. For instructions on how to
-create a build definition in Azure DevOps, see [Create and queue a build definition](/azure/devops/pipelines/create-first-pipeline).
+create a build definition in Azure DevOps, see [Create and queue a build definition](../create-first-pipeline.md).
 
 Create a new build definition (select the **Starter Pipeline** template) named "InfraDNS". Add the following
 steps to you build definition:
@@ -475,7 +475,7 @@ with every code check-in.
 
 To do this, add a new release definition associated with the `InfraDNS` build definition you created
 previously. Be sure to select **Continuous deployment** so that a new release will be triggered any
-time a new build is completed. ([What are release pipelines?](/azure/devops/pipelines/release/)) and
+time a new build is completed. ([What are release pipelines?](../release/index.md)) and
 configure it as follows:
 
 Add the following steps to the release definition:

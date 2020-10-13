@@ -17,10 +17,10 @@ ms.date: 06/22/2020
 
 That said, you may find that one or more of the following features supports both CPM and MVP. You gain access to these features by installing a Marketplace extension.
  
-- [Delivery Plans](/azure/devops/boards/plans/review-team-plans)
-- [Feature Timeline](/azure/devops/boards/extensions/feature-timeline)  
-- [Dependency Tracker](/azure/devops/boards/extensions/dependency-tracker)  
+- [Delivery Plans](../plans/review-team-plans.md)
+- [Feature Timeline](../extensions/feature-timeline.md)  
+- [Dependency Tracker](../extensions/dependency-tracker.md)  
 
 If your organization supports connection to Microsoft Project, you may find additional [Marketplace extensions](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance) that support connection of Azure DevOps to Microsoft Project.  
 
-For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
+For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42).

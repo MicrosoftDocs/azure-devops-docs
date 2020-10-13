@@ -268,13 +268,13 @@ Whenever you see the plus ![plus-icon](../../media/icons/blue-add-icon.png), you
 
 ::: moniker range="<= tfs-2018"
 
-To add a work item, choose the ![plus icon](../media/icons/green_plus_icon.png) and choose from the options provided.
+To add a work item, choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: and choose from the options provided.
 
 Here we add a product backlog item as a child to the Customer Web - Phase 1 feature. 
 
 ![Add a child item to a backlog work item](media/org-backlog-features-add-child-ts.png)
 
-Whenever you see the plus ![plus icon](../media/icons/green_plus_icon.png), you can add a child item. 
+Whenever you see the plus :::image type="icon" source="../media/icons/green_plus_icon.png" border="false":::, you can add a child item. 
 The work item always corresponds to the hierarchy of work item types that are defined for your project.   
 
 ::: moniker-end
