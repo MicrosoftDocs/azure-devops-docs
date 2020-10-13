@@ -147,11 +147,9 @@ $B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(":$MyP
 git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 
-To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential managers:
+To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential manager:
 
-* [Git Credential Manager for macOS and Linux](https://github.com/microsoft/Git-Credential-Manager-Core)
-* [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows)
-	(requires [Git for Windows](https://www.git-scm.com/download/win))
+* [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core) (Windows also requires [Git for Windows](https://www.git-scm.com/download/win))
 
 ### Use a PAT in your code
 
