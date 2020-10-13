@@ -82,7 +82,7 @@ Welcome to what's new in the Azure DevOps docs from September 1, 2020 through Se
 - [Set retention policies for builds, tests, and releases](/azure/devops/pipelines/policies/retention) - More content in pipeline retention
 - [Access repositories, artifacts, and other resources](/azure/devops/pipelines/process/access-tokens) - New limit job scope setting
 - [Use secrets from Azure Key Vault in Azure Pipelines](/azure/devops/pipelines/release/azure-key-vault) - Azure key-vault
-- [Troubleshoot Azure Resource Manager service connections](/azure/devops/pipelines/release/azure-rm-endpoint) - ARM service connections
+- [Troubleshoot Azure Resource Manager service connections](/azure/devops/pipelines/release/azure-rm-endpoint) - Azure Resource Manager service connections
 - [Define your multi-stage continuous deployment (CD) pipeline](/azure/devops/pipelines/release/define-multistage-release-process) - Multi-stage deployments
 - [NuGet task](/azure/devops/pipelines/tasks/package/nuget) - NuGet push, pack and restore
 - [Publish Test Results task](/azure/devops/pipelines/tasks/test/publish-test-results) - Update test results formatting
