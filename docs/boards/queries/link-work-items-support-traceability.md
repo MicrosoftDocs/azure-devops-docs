@@ -260,7 +260,7 @@ Team Foundation version control (TFVC) lets you link work items to version contr
 
 You can use the Hyperlinks or Storyboard link type to link a work item to a Web site, network share, or document located on a network share. Both of these link types are one-way links. To add links of this type, you can use the same links controls [described earlier for linking work items](#link-work-items). 
 
-![Artifact-to-artifact link types](media/link-tracking-work-item-to-url-link-types.png)  
+![Use the Hyperlinks or Storyboard link type to link a work item to a URL.](media/link-tracking-work-item-to-url-link-types.png)  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
@@ -287,7 +287,7 @@ To link a work item to a diagram, open the work item in Visual Studio, choose th
 
 ![Open linked model element from a work item](media/IC588262.png)
 
-Or, you can link a model element to a work item. See [Link model elements and work items](https://msdn.microsoft.com/library/dd465152.aspx).
+Or, you can link a model element to a work item. See [Link model elements and work items](/visualstudio/modeling/link-model-elements-and-work-items).
 
 ::: moniker-end
 
@@ -323,4 +323,3 @@ For additional information, see these topics:
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
 
 ::: moniker-end
-

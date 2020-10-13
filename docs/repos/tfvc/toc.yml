@@ -209,4 +209,4 @@
 - name: Resources
   items:
   - name: Administering TFVC
-    href: /azure/devops/repos/tfvc/administering-team-foundation-version-control
+    href: ./administering-team-foundation-version-control.md

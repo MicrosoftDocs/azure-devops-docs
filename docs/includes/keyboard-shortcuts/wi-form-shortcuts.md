@@ -6,7 +6,7 @@ ms.topic: include
 
 ::: moniker range=">= azure-devops-2019"
 
-You can use the following keyboard shortcuts when [interacting with a work item form](/azure/devops/boards/work-items/work-item-form-controls). To view the valid shortcuts, enter **?** from within the form.
+You can use the following keyboard shortcuts when [interacting with a work item form](../../boards/work-items/work-item-form-controls.md). To view the valid shortcuts, enter **?** from within the form.
 
 
 ::: moniker-end
@@ -95,4 +95,4 @@ You can use the following keyboard shortcuts when working in the editor from a w
 
 **Ctrl + b** = Bold<br/>**Ctrl + c** = Copy text<br/>**Ctrl + i** = Italics<br/>**Ctrl + k** = Insert hyperlink<br/>**Ctrl + s** = Save<br/>**Ctrl + u** = Underline<br/>**Ctrl + v** = Paste text<br/>**Ctrl + y** = Redo<br/>**Ctrl + z** = Undo<br/>**Ctrl + .** = Bullet list<br/>**Ctrl + /** = Numbered list<br/> **CTRL+Spacebar** = Remove formatting  
 
-::: moniker-end  
+::: moniker-end

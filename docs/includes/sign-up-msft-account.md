@@ -24,7 +24,7 @@ An organization is created based on the account you used to sign in. Sign in to 
 
 You can rename and delete your organization, or change the organization location. To learn more, see the following articles:
 
-- [Rename an organization](/azure/devops/organizations/accounts/rename-organization)
-- [Change the location of your organization](/azure/devops/organizations/accounts/change-organization-location)
+- [Rename an organization](../organizations/accounts/rename-organization.md)
+- [Change the location of your organization](../organizations/accounts/change-organization-location.md)
 
-If you signed in with an existing Microsoft account, your next step is to [Create a project](/azure/devops/user-guide/sign-up-invite-teammates#CreateProject). If you signed in with a newly created Microsoft account, then your project is automatically created and named after your account name. To learn more about managing projects, see [Manage projects](/azure/devops/organizations/projects/about-projects).
+If you signed in with an existing Microsoft account, your next step is to [Create a project](../user-guide/sign-up-invite-teammates.md#CreateProject). If you signed in with a newly created Microsoft account, then your project is automatically created and named after your account name. To learn more about managing projects, see [Manage projects](../organizations/projects/about-projects.md).

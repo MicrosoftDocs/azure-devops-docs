@@ -22,7 +22,7 @@ This means you can quickly edit these arguments without needing to click through
 Templates come with a set of predefined process parameters.
 ::: moniker range="<= tfs-2018"
 
-![Schematic showing tasks](media/2017-user-experience/process-parameters-view-1.png)
+![Predefined process parameters.](media/2017-user-experience/process-parameters-view-1.png)
 ::: moniker-end
 
 > [!NOTE]
@@ -37,7 +37,7 @@ You can link additional arguments across all tasks to new or existing process pa
 
 ![Schematic showing tasks](media/2017-user-experience/tasks-linking.png)
 
-![Schematic showing tasks](media/2017-user-experience/process-parameters-view-2.png)
+![Link additional arguments.](media/2017-user-experience/process-parameters-view-2.png)
 ::: moniker-end
 
 ::: moniker range="> tfs-2018"
@@ -46,7 +46,7 @@ Select **Unlink** if you need to disconnect an argument from a process parameter
 ::: moniker range="<= tfs-2018"
 You can also unlink arguments from process parameters.
 
-![Schematic showing tasks](media/2017-user-experience/tasks-unlinking.png)
+![Unlink arguments.](media/2017-user-experience/tasks-unlinking.png)
 ::: moniker-end
 
 Process parameters differ from variables in the kind of input supported by them. Variables only take in string inputs while process parameters in addition to string inputs support additional data types like check boxes and drop-down list boxes.

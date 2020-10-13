@@ -269,7 +269,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 ::: moniker range=">= azure-devops-2020" 
 
-- If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+- If you haven't yet [added the Velocity widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
 
 ::: moniker-end
 
@@ -277,7 +277,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now.    
 
-1. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+1. If you haven't yet [added the Velocity widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
 
 ::: moniker-end
 

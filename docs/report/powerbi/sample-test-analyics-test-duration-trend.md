@@ -178,12 +178,12 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column **TotalCount** to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/test-duration-changetype1.png)
+    > ![Power BI + OData - change Total Count column type.](media/odata-powerbi-test-analytics/test-duration-changetype1.png)
     
 1. Change the type of column **TotalDuration** and **AvgDuration** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/test-duration-changetype2.png)
+    > ![Power BI + OData - change Total Duration column type.](media/odata-powerbi-test-analytics/test-duration-changetype2.png)
 
 
 ### Rename fields and query, then Close & Apply

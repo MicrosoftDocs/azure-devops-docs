@@ -123,7 +123,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 You can rename a team or its description using [Azure DevOps team update](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops team update --team
                       [--description]
                       [--name]
@@ -149,8 +149,8 @@ az devops team update --team
 For example, the following command renames the Account Management team to Organization Management. For addition output formats, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli). 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az devops team update --team "Account Management" --name "Organization Management" --description "Management team focused on creating and maintaining customer services for organizations"
+```azurecli
+az devops team update --team "Account Management" --name "Organization Management" --description "Management team focused on creating and maintaining customer services for organizations"
 {
   "description": "Management team focused on creating and maintaining customer services for organizations",
   "id": "7f099146-29a2-4798-9949-77c9f5f79653",
@@ -312,7 +312,7 @@ C:\WINDOWS\system32>az devops team update --team "Account Management" --name "Or
 You can delete a team using [az devops team delete](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-delete).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops team delete --id
                       [--project]
                       [--yes]
@@ -327,8 +327,8 @@ az devops team delete --id
 #### Example
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az devops team delete --id 5385556a-254d-4ad4-bd11-71955e3a7070 --project "Fabrikam Fiber"
+```azurecli
+az devops team delete --id 5385556a-254d-4ad4-bd11-71955e3a7070 --project "Fabrikam Fiber"
 Are you sure you want to delete this team? (y/n): y
 
 ```

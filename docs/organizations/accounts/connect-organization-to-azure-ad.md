@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-Learn how to connect your Azure DevOps organization to [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). You can sign in with the same username and password that you use with Microsoft services. Add members to your Azure DevOps organization who are already a part of your work organization. You can also enforce policies for accessing your team's critical resources and key assets. 
+Learn how to connect your Azure DevOps organization to [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis). You can sign in with the same username and password that you use with Microsoft services. Add members to your Azure DevOps organization who are already a part of your work organization. You can also enforce policies for accessing your team's critical resources and key assets. 
 
 For more information about using Azure AD with Azure DevOps, see the [conceptual overview](access-with-azure-ad.md).
 
@@ -111,7 +111,7 @@ When you inform your users of the completed change, include the following tasks 
     d. When the token's created, copy it, as it can't be viewed again.
 
 - [Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Doing so ensures that you won't be prompted to choose between accounts.
-- Adjust your Visual Studio subscription if the UPN used inside your Azure DevOps Services organization has changed. You can have it reassigned to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
+- Adjust your Visual Studio subscription if the UPN used inside your Azure DevOps Services organization has changed. You can have it reassigned to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
 
 ## Related articles
 
@@ -120,5 +120,3 @@ When you inform your users of the completed change, include the following tasks 
 * [Disconnect from Azure AD](disconnect-organization-from-azure-ad.md)
 * [Change Azure AD connection](change-azure-ad-connection.md)
 * [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](faq-azure-access.md#connect-to-disconnect-from-or-change-azure-ad-connection)
-
-

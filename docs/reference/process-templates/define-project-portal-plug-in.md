@@ -18,14 +18,14 @@ ms.date: 10/11/2017
 
 ::: moniker range=">= tfs-2018"
 > [!IMPORTANT]   
-> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](../../report/sharepoint-dashboards/about-sharepoint-integration.md) to learn about the options available to you.
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 
 When you create a project from Visual Studio Team Explorer, the project portal plug-in creates a SharePoint site and uploads several files contained within the process template. These files will appear under the specifies the folder structure and set of reports that will appear under the **Documents** node in Team Explorer. 
 
-By using the portal plug-in, you can define the initial document libraries, library structure, and documents of a [project's portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md). You can also include the tasks that create dashboards and Excel reports that are designed to work with the default [process templates](../../boards/work-items/guidance/choose-process.md).  
+By using the portal plug-in, you can define the initial document libraries, library structure, and documents of a [project's portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal). You can also include the tasks that create dashboards and Excel reports that are designed to work with the default [process templates](../../boards/work-items/guidance/choose-process.md).  
 
 The tasks that you specify in the plug-in for SharePoint Products are run only when you create a SharePoint site when you [create a project](../../organizations/projects/create-project.md). For more information about site requirements and administration, see [SharePoint Products requirements for Team Foundation Server](/azure/devops/server/requirements#sharepoint). 
 
@@ -300,4 +300,4 @@ You use the **activateFeatures** element to cause the creation of the dashboards
 - [CMMI](../../boards/work-items/guidance/cmmi-process.md) 
 - [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md) 
 
-::: moniker-end  
+::: moniker-end

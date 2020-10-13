@@ -4,15 +4,19 @@ ms.custom: "seodec18, contentperfQ4"
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 09/08/2020
+ms.date: 09/29/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Microsoft-hosted agents
 
+[!INCLUDE [include](../includes/version-team-services.md)]
+
 ::: moniker range="< azure-devops"
 
-Microsoft-hosted agents are only available with Azure DevOps. You cannot use Microsoft-hosted agents or the Azure Pipelines agent pool with TFS or Azure DevOps Server. With these server versions, you must use [self-hosted agents](agents.md).
+Microsoft-hosted agents are only available with Azure DevOps Services, which is hosted in the cloud. You cannot use Microsoft-hosted agents or the Azure Pipelines agent pool with on-premises TFS or Azure DevOps Server. With these on-premises versions, you must use [self-hosted agents](agents.md).
+
+[!INCLUDE [include](../../includes/version-selector.md)]
 
 ::: moniker-end
 
@@ -235,7 +239,7 @@ Microsoft-hosted agents do not offer:
 * The ability to get bigger or more powerful build machines.
 * The ability to pre-install custom software (other than through [tool installer tasks](../process/tasks.md#tool-installers) in your pipeline).
 * Potential performance advantages that you might get by using self-hosted agents that might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
-* The ability to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
+* The ability to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 
 If Microsoft-hosted agents don't meet your needs, then you can deploy your own [self-hosted agents](agents.md#install) or use [scale set agents](scale-set-agents.md).
 
@@ -353,7 +357,7 @@ If you refer to the server by its DNS name, then make sure that your server is p
 
 #### .NET Core
   .NET Core 2.2.105 is default on VM images but Mono version 6.0 or greater requires .NET Core 2.2.300+. 
-  If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops).
+  If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](../tasks/tool/dotnet-core-tool-installer.md).
 
 #### Boost
   The VM images contain prebuilt Boost libraries with their headers in the directory designated by `BOOST_ROOT` environment variable. In order to include the Boost headers, the path `$BOOST_ROOT/include` should be added to the search paths.

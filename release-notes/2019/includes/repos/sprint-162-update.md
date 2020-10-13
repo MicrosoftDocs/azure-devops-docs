@@ -9,19 +9,19 @@ We've updated the Repos landing pages user experience to make it modern, fast, a
 Web experience:
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_11.png)
+> ![New web platform conversion landing pages.](../../media/162_11.png)
 
 Mobile experience:
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_12.png)
+> ![New mobile platform conversion landing pages.](../../media/162_12.png)
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_13.png)
+> ![Example of new mobile platform landing pages.](../../media/162_13.png)
 
 ### Support for Kotlin language 
 
 We're excited to announce that we now support Kotlin language highlighting in the file editor. Highlighting will improve the readability of your Kotlin text file and help you quickly scan to find errors. We prioritized this feature based on a suggestion from the [Developer Community](https://developercommunity.visualstudio.com/idea/365651/kotlin-language-highlighting-support.html).
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/162_16.png)
+> ![Support for Kotlin language.](../../media/162_16.png)

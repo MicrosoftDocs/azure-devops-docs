@@ -64,7 +64,7 @@ There are many ways to authenticate your application or service with Azure DevOp
 | Interactive JavaScript | GUI-based JavaScript application | AngularJS single page app displaying work items for a user | [Microsoft Authentication Library](/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
 | Non-interactive client-side | Headless text only client-side application | Console app displaying all bugs assigned to a user | [Device Profile](/samples/azure-samples/active-directory-dotnetcore-devicecodeflow-v2/invoke-protected-api-text/) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Interactive web | GUI-based web application | Custom Web dashboard displaying build summaries |[OAuth](./get-started/authentication/oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
-| TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./get-started/client-libraries/dotnet.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
+| TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | [Azure DevOps Services extension](../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walk through](../extend/develop/add-dashboard-widget.md) |
 
 > [!NOTE]
@@ -92,7 +92,7 @@ If you wish to provide the personal access token through an HTTP header, you mus
 Authorization: Basic BASE64PATSTRING
 ``` 
 
-Here it is in C# using the [HttpClient class](https://msdn.microsoft.com/library/system.net.http.httpclient.aspx).
+Here it is in C# using the [HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118)).
 
 ```cs
 public static async void GetProjects()
@@ -207,5 +207,3 @@ or [Git](previous-apis/git/overview.md).
     * [Samples](./get-started/rest/samples.md)
 * Discover the [.NET Client Libraries](./concepts/dotnet-client-libraries.md) for these REST APIs
     * [Samples](./get-started/client-libraries/samples.md)
-
-

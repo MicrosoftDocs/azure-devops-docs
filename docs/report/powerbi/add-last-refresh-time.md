@@ -53,7 +53,7 @@ The steps below show how to add a column to your model which will contain the la
     ```
 
     > [!IMPORTANT]  
-    > These examples use UTC. You can adjust the query code based on your specific timezone as described in [DateTimeZone functions](https://msdn.microsoft.com/query-bi/m/datetimezone-functions).
+    > These examples use UTC. You can adjust the query code based on your specific timezone as described in [DateTimeZone functions](/powerquery-m/datetimezone-functions).
 
 4. When finish, choose **Done**.
 

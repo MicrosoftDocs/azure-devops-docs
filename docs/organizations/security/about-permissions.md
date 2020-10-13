@@ -190,7 +190,7 @@ You use the [web portal administration context](../../organizations/security/add
 |------------------|:---------------------------:|:--------------:|:---------------------:|  
 | [Add users to an organization](../accounts/add-organization-users.md)       |   ✔️  |   ✔️  |   |
 | [Add and manage security groups](add-manage-security-groups.md)             |   ✔️  |   ✔️  |   |
-| [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md)               |                                      |   ✔️  |                                                                           |
+| [Manage permissions](manage-tokens-namespaces.md)               |    ✔️    |   ✔️  |        |
 | [Organization-level](permissions.md#collection)                                     |   ✔️  |                                      |                                                                           |
 | [Project and test level](permissions.md#project_test)                               |   ✔️  |                                      |                                                                           |
 | [Build pipelines](permissions.md#build)     |   ✔️  |            |                     |
@@ -211,6 +211,7 @@ You use the [web portal administration context](../../organizations/security/add
 |-------------------|:-------------------------:|:------------------:|:------------------------------------------------------------------------------:|:--------------------------------------------------------------------:|-------------------------------------------------|
 | [Add users to a server instance](../accounts/add-organization-users.md)       |     |   ✔️  |   |  ✔️ |  | 
 | [Add and manage security groups](add-manage-security-groups.md)             |   ✔️  |   ✔️  |   |  ✔️ |  | 
+| [Manage permissions](manage-tokens-namespaces.md)       |   ✔️  |   ✔️  |   |  ✔️ |  | 
 | [Server-level](permissions.md#server)         |                   |     |   ✔️           | ✔️ |                         |
 | [Collection-level](permissions.md#collection) |  ✔️  |           |     |   ✔️   |     |
 | [Project and test level](permissions.md#project_test)                               |   ✔️  |              |   | ✔️   |       |
@@ -282,7 +283,7 @@ see [Grant permissions to view or create SQL Server reports in TFS](../../report
 For information about how to set permissions for SharePoint Products integrated with TFS,
 see [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md).
 
-For more information, see [Determine permission levels and groups in SharePoint 2013](https://technet.microsoft.com/library/cc262690.aspx).
+For more information, see [Determine permission levels and groups in SharePoint 2013](/SharePoint/sites/determine-permission-levels-and-groups-in-sharepoint-server).
 
 ::: moniker-end  
 
@@ -306,4 +307,4 @@ For more information, see [Determine permission levels and groups in SharePoint 
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
 - [Make a user a team admin](../settings/manage-teams.md)  
 - [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
-::: moniker-end  
+::: moniker-end
