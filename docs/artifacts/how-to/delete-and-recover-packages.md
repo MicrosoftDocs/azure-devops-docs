@@ -68,22 +68,28 @@ Select **Build and Release**, then **Packages**. select the appropriate package 
 ::: moniker-end
 
 ### Deprecate or unpublish an npm package using npm
-1. [Set up the npm client with your feed](../npm/npmrc.md).
-2. Deprecate a package by running `npm deprecate <package>[@<version>] <message>`.
-3. Unpublish a package by running `npm unpublish <package>@<version>`. 
+1. You must first [set up your client's npmrc](../npm/npmrc.md).
+1. To deprecate a package, run the following command:
+    ```
+    npm deprecate <package>[@<version>] <message>
+    ```
+1. To unpublish a package, run the following command:
+    ```
+    npm unpublish <package>@<version>
+    ```
 
-At this time, it's not possible to use `npm unpublish <package>` to unpublish all versions.
+> [!NOTE]
+> `npm unpublish` will not unpublish all versions of the package.
 
-See the [deprecate](https://docs.npmjs.com/cli/deprecate) or [unpublish](https://docs.npmjs.com/cli/unpublish) CLI docs for more info.
+See the [deprecate](https://docs.npmjs.com/cli/deprecate) or [unpublish](https://docs.npmjs.com/cli/unpublish) npm documentation for more info.
 
 #### [NuGet](#tab/nuget/)
 There are two options available to remove a version of a NuGet package from a feed.
 
-1. **Unlist:** Unlisting a version of a package modifies how the package appears in NuGet clients (see the [NuGet docs](/nuget/policies/deleting-packages) for a full description of how unlist works). Unlisting a version can help you prevent new usage of it without breaking dependent projects and builds.
-2. **Delete:**  Deleting a version of a package makes it unavailable for install. After deleting, a package can be [restored from the Recycle Bin](#recover-a-deleted-package-from-the-recycle-bin) within 30 days of deletion. After 30 days, it is permanently unavailable to restore. Deleting a package will cause others that depend on it to break.
+1. **Unlist:** Unlisting a package version hides it from the search results, Visual Studio UI and from appearning on nuget.org.
+2. **Delete:**  Deleting a version of a package makes it unavailable to install. Deleted packages can be restored from the Recycle Bin within 30 days of deletion. After 30 days, , the package will be deleted permanently.
 
-Unlist and delete both respect [feed immutability](../artifacts-key-concepts.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
-You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
+When you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
 ::: moniker range=">= azure-devops-2019"
 
