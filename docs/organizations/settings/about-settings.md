@@ -129,7 +129,6 @@ Individual contributors can set their user preferences, enable features that are
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=" >= 2015"
 :::row:::
    :::column span="1":::
       Favorites
@@ -141,7 +140,6 @@ Individual contributors can set their user preferences, enable features that are
       For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
@@ -222,7 +220,8 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view - [Columns](../../boards/boards/add-columns.md) and [WIP limits](../../boards/boards/wip-limits.md). 
    :::column-end:::
 :::row-end:::
-::: moniker range=" >= tfs-2017
+::: moniker-end
+::: moniker range=" >= tfs-2017"
 :::row:::
    :::column span="1":::
       Dashboards
@@ -247,6 +246,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team.
    :::column-end:::
 :::row-end:::
+::: moniker-end
 :::row:::
    :::column span="1":::
       Notifications
@@ -271,17 +271,13 @@ Members of the [Project Administrators group](../security/set-project-collection
 See also [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
 ::: moniker range=">= azure-devops-2019"
-
 **Project settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
-
 > [!div class="mx-imgBorder"]  
 > ![Project settings, new nav](media/about/project-settings-new-nav.png) 
-
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-
 **Project-level settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image.
 
@@ -373,7 +369,7 @@ From the administrative **Project settings** pages, you can configure settings a
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=" tfs-2013
+::: moniker range=" tfs-2013"
 :::row:::
    :::column span="1":::
       Security
@@ -445,7 +441,7 @@ From the administrative **Project settings** pages, you can configure settings a
    :::column span="1":::
       - [Manage Agent queues and agent pools](../../pipelines/agents/pools-queues.md)
       - [Manage service connections](../../pipelines/library/service-endpoints.md)
-      - [Manage deployment pools and groups](../../pipelines/release/deployment-groups/?view=azure-devops)
+      - [Manage deployment pools and groups](../../pipelines/release/deployment-groups/index.md)
       - [Set retention policies](../../pipelines/policies/retention.md)
    :::column-end:::
    :::column span="1":::
@@ -464,7 +460,7 @@ From the administrative **Project settings** pages, you can configure settings a
       - [Add Team Foundation Version Control (TFVC) Check-In Policies](../../repos/tfvc/add-check-policies.md)
    :::column-end:::
    :::column span="1":::
-      You can manage code using [Git repositories](../../repos/git/?view=azure-devops) or one [TFVC repository.](../../repos/tfvc/??view=azure-devops).
+      You can manage code using [Git repositories](../../repos/git/index.yml) or one [TFVC repository.](../../repos/tfvc/index.yml).
    :::column-end:::
 :::row-end:::
 ::: moniker range=" >= tfs-2018"
@@ -481,6 +477,7 @@ From the administrative **Project settings** pages, you can configure settings a
       Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. You can customize the test plans, test suites, and test cases using an inherited process. For more information, see [Customize a process](work/customize-process.md).
    :::column-end:::
 :::row-end:::
+::: moniker-end
 ::: moniker range=" <= tfs-2017"
 :::row:::
    :::column span="1":::
@@ -800,6 +797,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) in the Azure DevOps tab to support planning and tracking of work items, sprints, scrums, and so on; build and release flows; code testing and tracking; and collaboration among team members.
    :::column-end:::
 :::row-end:::
+::: moniker-end
 ::: moniker range=">= tfs-2018"
 :::row:::
    :::column span="1":::
@@ -827,7 +825,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range=">= tfs-2018
+::: moniker range=">= tfs-2018"
 :::row:::
    :::column span="1":::
       Build and release
@@ -836,7 +834,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       - [Set retention policies](../../pipelines/policies/retention.md)
       - [Set resource limits for pipelines](../../pipelines/licensing/concurrent-jobs.md)
       - [Add and manage agent pools](../../pipelines/agents/pools-queues.md)
-      - [Add and manage deployment pools](../../pipelines/release/deployment-groups/)
+      - [Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)
    :::column-end:::
    :::column span="1":::
      You manage resources that support CI/CD operations for all projects through the **Agent pools**, **Deployment pools**, and **Retention and limits** pages.
