@@ -73,6 +73,8 @@ If your new pipeline can be created by copying another pipeline in the same proj
 
 To clone a build definition, navigate to **Build Definitions** on the **Builds** hub, choose **...** beside the desired build definition, and choose **Clone**.
 
+:::image type="content" source="media/clone-build-definition-tfs-2018.png" alt-text="Export a build definition in TFS 2018.":::
+
 :::moniker-end
 
 * * *
