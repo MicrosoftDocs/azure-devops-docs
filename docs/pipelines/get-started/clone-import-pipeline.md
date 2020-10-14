@@ -71,9 +71,11 @@ If your new pipeline can be created by copying another pipeline in the same proj
 
 :::moniker range="< azure-devops-2019"
 
-To clone a build definition, navigate to **Build Definitions** on the **Builds** hub, choose **...** beside the desired build definition, and choose **Clone**.
+1. To clone a build definition, navigate to **Build Definitions** on the **Builds** hub, choose **...** beside the desired build definition, and choose **Clone**.
 
-:::image type="content" source="media/clone-build-definition-tfs-2018.png" alt-text="Clone a build definition in TFS 2018.":::
+   :::image type="content" source="media/clone-build-definition-tfs-2018.png" alt-text="Clone a build definition in TFS 2018.":::
+
+2. Your pipeline is cloned with **-clone** appended to the name. Choose **Save** or **Save & queue** to save the cloned pipeline.
 
 :::moniker-end
 
