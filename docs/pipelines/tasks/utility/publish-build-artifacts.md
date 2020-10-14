@@ -45,7 +45,7 @@ None
 | [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
 
 > [!NOTE]
-> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](https://docs.microsoft.com/en-us/previous-versions/ex526337(v=vs.140)) for more details.
+> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
 
 [!INCLUDE [example](../includes/copyfiles-publishbuildartifacts-usage.md)]
 

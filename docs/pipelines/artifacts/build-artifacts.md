@@ -41,7 +41,7 @@ Artifacts can be published at any stage of pipeline. You can use two methods for
 * **artifactName**: the name of the artifact that you want to create.
 
 > [!NOTE]
-> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](https://docs.microsoft.com/en-us/previous-versions/ex526337(v=vs.140)) for more details.
+> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
 
 ::: moniker-end
 
@@ -91,7 +91,7 @@ YAML is not supported in TFS.
 * **artifactName**: the name of the artifact that you want to create.
 
 > [!NOTE]
-> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](https://docs.microsoft.com/en-us/previous-versions/ex526337(v=vs.140)) for more details.
+> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
 
 ::: moniker-end
 
@@ -167,7 +167,7 @@ The completed build delivers two sets of artifacts.
 * **artifactName**: the name of the artifact that you want to create.
 
 > [!NOTE]
-> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](https://docs.microsoft.com/en-us/previous-versions/ex526337(v=vs.140)) for more details.
+> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
 
 ::: moniker-end
 
