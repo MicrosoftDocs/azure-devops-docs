@@ -2,7 +2,7 @@
 title: Clone or import a pipeline
 description: Create a pipeline by cloning or importing an existing pipeline
 ms.topic: conceptual
-ms.date: 10/07/2020
+ms.date: 10/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -71,7 +71,7 @@ If your new pipeline can be created by copying another pipeline in the same proj
 
 :::moniker range="< azure-devops-2019"
 
-To clone a build definition, navigate to **Build Definition**s on the **Builds** hub, choose **...** beside the desired build definition, and choose **Clone**.
+To clone a build definition, navigate to **Build Definitions** on the **Builds** hub, choose **...** beside the desired build definition, and choose **Clone**.
 
 :::moniker-end
 
@@ -125,7 +125,13 @@ In addition to cloning, you can also create new build or release definitions by 
 
 :::moniker range="tfs-2018"
 
-If you're using TFS 2018, see [Export and import build definitions](/azure/devops/release-notes/2017/jun-22-team-services#export-and-import-build-definitions) for instructions.
+To export a build definition, navigate to **Build Definitions** on the **Builds** hub, choose **...** beside the desired build definition, choose **Export**, and download the .json file that contains the build definition.
+
+:::image type="content" source="media/export-build-definition-tfs-2018.png" alt-text="Export a build definition in TFS 2018.":::
+
+To import a build definition, choose **+Import** from the **Build Definitions** page.
+
+:::image type="content" source="media/import-build-definition-tfs-2018.png" alt-text="Import a build definition in TFS 2018.":::
 
 :::moniker-end
 
