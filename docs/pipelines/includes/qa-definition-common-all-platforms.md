@@ -9,7 +9,7 @@ ms.date: 02/13/2020
 
 ### What other kinds of apps can I build?
 
-[Build and deploy your app examples](../apps/index.md)
+[Build and deploy your app examples](/previous-versions/azure/devops/pipelines/apps/)
 
 ### What other kinds of build tasks are available?
 

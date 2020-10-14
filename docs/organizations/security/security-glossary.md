@@ -67,7 +67,7 @@ Conditional access provides support for securing Azure DevOps resources backed b
 
 ## Inheritance
 
-Permissions that aren't directly allowed or denied for a user, may be inherited. To learn more, see [About permissions and groups](about-permissions.md).   
+Permissions that aren't directly allowed or denied for a user, may be inherited. To learn more, see [About permissions and inheritance](about-permissions.md).   
 
 <!---
 ## Membership 
@@ -114,7 +114,7 @@ Personal access tokens (PATs) are alternate passwords that you can use to authen
 
 ## Permission
 
-The assignment made to a user or group to use a feature or function. Permissions are assigned to default security groups. To learn more, see [About permissions and groups](about-permissions.md).
+The assignment made to a user or group to use a feature or function. Permissions are assigned to default security groups. To learn more, see [About permissions and inheritance](about-permissions.md).
 
 ## Permission state
 
@@ -122,7 +122,7 @@ The state assigned to a feature or function to a user's or group's permission. U
 
 ## Security group
 
-A method by which you can organize users and other domain objects to simplify administration of permissions and access. Azure DevOps  support a number of default security groups as well as the ability to create custom groups. To learn more, see [About permissions and groups](about-permissions.md).
+A method by which you can organize users and other domain objects to simplify administration of permissions and access. Azure DevOps  support a number of default security groups as well as the ability to create custom groups. To learn more, see [About permissions and inheritance](about-permissions.md).
 
 ## Security role
 
@@ -178,7 +178,7 @@ For Azure DevOps Server, see [Use TFSSecurity to manage groups and permissions f
 
 ## Valid users
 
-Valid users are users that are recognized by Azure DevOps as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they are automatically added to one of the valid user groups. To learn more, see [About permissions and groups](about-permissions.md).
+Valid users are users that are recognized by Azure DevOps as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they are automatically added to one of the valid user groups. To learn more, see [About permissions and inheritance](about-permissions.md).
 
 
 
