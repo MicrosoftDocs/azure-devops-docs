@@ -204,6 +204,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view - [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). 
    :::column-end:::
 :::row-end:::
+::: moniker-end
 ::: moniker range="tfs-2013"
 :::row:::
    :::column span="1":::
@@ -234,6 +235,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team.
    :::column-end:::
 :::row-end:::
+::: moniker-end
 ::: moniker range=" tfs-2015"
 :::row:::
    :::column span="1":::
@@ -533,13 +535,50 @@ From the administrative **Project settings** pages, you can configure settings a
    :::column-end:::
 :::row-end:::
 ::: moniker-end
+:::row:::
+   :::column span="1":::
+      Team configuration
+   :::column-end:::
+   :::column span="1":::
+      - [Manage and configure team tools](manage-teams.md)
+      - [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)
+   :::column-end:::
+   :::column span="1":::
+      For more information, see [About teams and Agile tools](about-teams-and-settings.md).
+   :::column-end:::
+:::row-end:::
+::: moniker range= "azure-devops"
+:::row:::
+   :::column span="1":::
+      GitHub connections
+   :::column-end:::
+   :::column span="1":::
+      - [Connect Azure Boards to GitHub](../../boards/github/connect-to-github.md)
+      - [Install and configure Azure Boards app for GitHub](../../boards/github/install-github-app.md)
+      - [Link gitHub commits, pull requests, and issues to work items](../../boards/github/link-to-from-github.md)
+   :::column-end:::
+   :::column span="1":::
+      By connecting your Azure Boards project with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+:::row:::
+   :::column span="1":::
+      Service connections
+   :::column-end:::
+   :::column span="1":::
+      - [Manage service connections in Azure Pipelines](../../pipelines/library/service-endpoints.md#project-level-permissions)
+   :::column-end:::
+   :::column span="1":::
+      For more information, see a [list of common service connection types](../../pipelines/library/service-endpoints.md#common-service-connection-types).
+   :::column-end:::
+:::row-end:::
 
 <a id="admin" />
 
 ## Project Collection Administrator (PCA) role and managing collections of projects 
 
 Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) configure resources for all projects that are defined for an organization or collection. They also can do all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
-
 
 ::: moniker range=">= azure-devops-2019"
   
@@ -550,7 +589,6 @@ From the administrative **Organization settings** pages, you can configure setti
 > ![Organization settings, new nav](media/about/collection-settings-new-nav.png) 
 
 ::: moniker-end
-
 
 ::: moniker range="<= tfs-2018"
 
@@ -703,6 +741,10 @@ For an overview of managing collections, see [Configure and manage TFS resources
    :::column-end:::
    :::column span="1":::
       - [Change application access policies](../accounts/change-application-access-policies.md)
+      - [Disable Request Access policy](../accounts/disable-request-access-policy.md)
+      - [Restrict users from creating new organizations with Azure Active Directory policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
+      - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
+      - [Enable Conditional Access or Multi-factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa)
    :::column-end:::
    :::column span="1":::
       Set policies to allow or disallow access by other applications or services to the organization.
@@ -811,6 +853,20 @@ For an overview of managing collections, see [Configure and manage TFS resources
    :::column-end:::
 :::row-end:::
 ::: moniker-end
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+      Audit
+   :::column-end:::
+   :::column span="1":::
+      - [Access, export, and filter audit logs](../audit/azure-devops-auditing.md)
+      - [Create audit streaming](../audit/auditing-streaming.md)
+   :::column-end:::
+   :::column span="1":::
+      The auditing page provdides a simple view into the audit events recorded for your organization. For more information, see [Review audit log](../audit/azure-devops-auditing.md#review-audit-log), [Export audit events](../audit/azure-devops-auditing.md#export-auditing-events), or learn more about Audit [categories](../audit/azure-devops-auditing.md#categories) and [areas](../audit/azure-devops-auditing.md#areas).
+   :::column-end:::
+:::row-end:::
+::: moniker-end
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
@@ -840,6 +896,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
      You manage resources that support CI/CD operations for all projects through the **Agent pools**, **Deployment pools**, and **Retention and limits** pages.
    :::column-end:::
 :::row-end:::
+::: moniker-end
 ::: moniker range=" tfs-2015 || tfs-2017"
 :::row:::
    :::column span="1":::
@@ -855,6 +912,22 @@ For an overview of managing collections, see [Configure and manage TFS resources
    :::column-end:::
 :::row-end:::
 ::: moniker-end
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+      Artifact storage
+   :::column-end:::
+   :::column span="1":::
+      - [Delete and recover packages in Azure Artifacts](../../artifacts/how-to/delete-and-recover-packages.md)
+      - [View Artifact storage](../../artifacts/start-using-azure-artifacts.md#view-artifact-storage)
+   :::column-end:::
+   :::column span="1":::
+     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Pay for Artifacts](../../artifacts/start-using-azure-artifacts.md#pay-for-artifacts).
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+
+
 
 ::: moniker range="< azure-devops"
 

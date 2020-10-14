@@ -5,7 +5,7 @@ description: Import a repo from GitHub, GitLab, or Bitbucket into your Azure Dev
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.technology: devops-code-git 
 ms.topic: quickstart
-ms.date: 09/03/2020
+ms.date: 10/14/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -206,7 +206,7 @@ git clone --bare <Azure-Repos-clone-URL>
 cd <name-of-repo>
 git remote add --mirror=fetch upstream <original-repo-URL>
 git fetch upstream --tags
-git push origin --all --tags
+git push origin --all
 ```
 
 ::: moniker-end
