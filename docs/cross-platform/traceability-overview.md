@@ -1,6 +1,6 @@
 
 ---
-title: Manage requirements, Agile methods
+title: Understand traceability using Azure DevOps and Azure 
 titleSuffix: Azure DevOps
 description: Learn about the tools and features available to manage end-to-end traceability, automation, monitoring 
 ms.technology: devops-agile 
@@ -12,7 +12,7 @@ ms.date: 09/08/2020
 ---
 
 
-# Overview 
+# Traceability, automation, and process improvement 
 
 Agile teams have characteristics including, but not limited to the following
 

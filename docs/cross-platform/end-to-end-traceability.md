@@ -97,7 +97,8 @@ The release deployments control shows release information for those work items t
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Release pipeline Options>Integrations settings.](media/traceability/release-pipeline-options.png) 
 
- 
+> [!div class="mx-imgBorder"]  
+> ![Conceptual image of code, build, and release links to work items.](media/traceability/concept-build-release-links.png) 
 
 The work item deployment control displays the status of releases within those work items that are associated with commits in the build and those release pipelines you've configured to report deployment information to Azure Boards. 
 
