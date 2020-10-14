@@ -52,7 +52,7 @@ This version of TFS doesn't support YAML pipelines.
 
 #### [Classic](#tab/classic/)
 
-If your new pipeline can be created by copying another pipeline in the same project, follow the instructions in this section. If your pipeline is in another project, you can use [import/export](#export-and-import-a-pipeline) to copy the pipeline.
+If your new pipeline can be created by copying another classic pipeline in the same project, follow the instructions in this section. If your pipeline is in another project, you can use [import/export](#export-and-import-a-pipeline) to copy the pipeline.
 
 :::moniker range=">= azure-devops-2019"
 
@@ -83,7 +83,7 @@ If your new pipeline can be created by copying another pipeline in the same proj
 
 ## Export and Import a pipeline
 
-You can create a new pipeline by exporting an existing one and then importing it. This is useful in cases where the new pipeline has to be created in a separate project.
+You can create a new classic pipeline by exporting an existing one and then importing it. This is useful in cases where the new pipeline has to be created in a separate project.
 
 #### [YAML](#tab/yaml/)
 
