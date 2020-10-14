@@ -8,7 +8,7 @@ monikerRange: '>= tfs-2017'
 
 # Clone or import a pipeline
 
-Instead of creating a pipeline from scratch, you can often copy an existing pipeline and use it as a starting point. For YAML pipelines, the process is as easy as copying the YAML from one pipeline to another. For pipelines created in the classic editor, the procedure depends on whether the pipeline to copy is in the same project as the new pipeline. If the pipeline to copy is in the same project, you can clone it, and if it is in a different project you can export it from that project and import it into your project.
+One approach to creating a pipeline is to copy an existing pipeline and use it as a starting point. For YAML pipelines, the process is as easy as copying the YAML from one pipeline to another. For pipelines created in the classic editor, the procedure depends on whether the pipeline to copy is in the same project as the new pipeline. If the pipeline to copy is in the same project, you can clone it, and if it is in a different project you can export it from that project and import it into your project.
 
 ## Clone a pipeline
 
@@ -56,7 +56,7 @@ If your new pipeline can be created by copying another pipeline in the same proj
 
 :::moniker range=">= azure-devops-2019"
 
-1. Navigate to the pipeline details page for your pipeline. If you have the `definitionId` you can browse to it using the following URL: `https://dev.azure.com/{org}/{project}/_build?definitionId={id}&_a=summary`
+1. Navigate to the pipeline details page for your pipeline.
 
 2. Choose **...** and select **Clone**.
 
@@ -79,13 +79,13 @@ To clone a build definition, navigate to **Build Definitions** on the **Builds**
 
 ## Export and Import a pipeline
 
-You can create a new pipeline by exporting an existing one and then importing it. This is especially useful in cases where the new pipeline has to be created in a separate project.
+You can create a new pipeline by exporting an existing one and then importing it. This is useful in cases where the new pipeline has to be created in a separate project.
 
 #### [YAML](#tab/yaml/)
 
 :::moniker range=">= azure-devops-2019"
 
-In a YAML pipeline, exporting and importing is the same process as cloning. You can simply copy the pipeline YAML from the editor and paste it into the YAML editor for your new pipeline.
+In a YAML pipeline, exporting from one project and importing into another is the same process as cloning. You can simply copy the pipeline YAML from the editor and paste it into the YAML editor for your new pipeline.
 
 :::moniker-end
 
@@ -121,7 +121,7 @@ This version of TFS doesn't support YAML pipelines.
 
 #### [Classic](#tab/classic/)
 
-In addition to cloning, you can also create new build or release definitions by exporting an existing definition and then importing it. This is especially useful in cases where the new definition has to be created in a separate project.
+To copy a pipeline definition from another project, you can export an existing definition from that project, and then import it.
 
 :::moniker range="tfs-2018"
 
