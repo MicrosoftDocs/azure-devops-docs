@@ -8,7 +8,7 @@ monikerRange: '>= tfs-2017'
 
 # Clone or import a pipeline
 
-Instead of creating a pipeline from scratch, you can often copy an existing pipeline and use it as a starting point. For YAML pipelines, the process is as easy as copying the YAML from one pipeline to another. For pipelines created in the classic editor, the procedure depends on whether the pipeline to copy is in the same project as the new . If the pipeline to copy is in the same project, you can clone it, and if it is in a different project you can export it from that project and import it into your project.
+Instead of creating a pipeline from scratch, you can often copy an existing pipeline and use it as a starting point. For YAML pipelines, the process is as easy as copying the YAML from one pipeline to another. For pipelines created in the classic editor, the procedure depends on whether the pipeline to copy is in the same project as the new pipeline. If the pipeline to copy is in the same project, you can clone it, and if it is in a different project you can export it from that project and import it into your project.
 
 ## Clone a pipeline
 
