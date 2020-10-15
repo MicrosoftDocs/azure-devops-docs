@@ -2,7 +2,7 @@
 title: Clone or import a pipeline
 description: Create a pipeline by cloning or importing an existing pipeline
 ms.topic: conceptual
-ms.date: 10/14/2020
+ms.date: 10/15/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -36,7 +36,7 @@ For YAML pipelines, the process for cloning is to copy the YAML from the source 
 
 1. [Navigate](multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
 
-    ![Pipeline details](media/pipeline-overview.png)
+    :::image type="content" source="media/pipeline-edit.png" alt-text="Edit pipeline."::: 
 
 2. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
 
@@ -109,7 +109,7 @@ In a YAML pipeline, exporting from one project and importing into another is the
 
 1. [Navigate](multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
 
-    ![Pipeline details](media/pipeline-overview.png)
+    :::image type="content" source="media/pipeline-edit.png" alt-text="Edit pipeline."::: 
 
 2. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
 
@@ -133,7 +133,7 @@ To export a build definition, navigate to **Build Definitions** on the **Builds*
 
 :::image type="content" source="media/export-build-definition-tfs-2018.png" alt-text="Export a build definition in TFS 2018.":::
 
-To import a build definition, choose **+Import** from the **Build Definitions** page.
+To import a build definition, choose **+Import** from the **Build Definitions** page, and select the .json file saved from the previous step.
 
 :::image type="content" source="media/import-build-definition-tfs-2018.png" alt-text="Import a build definition in TFS 2018.":::
 
@@ -148,7 +148,7 @@ To import a build definition, choose **+Import** from the **Build Definitions** 
     > [!div class="mx-imgBorder"]
     > ![Export pipeline menu](media/classic-export-definition.png)
 
-3. When prompted, save the JSON file in your local machine. The browser will save the file in the download directory as per your browser settings.
+3. When prompted, save the JSON file on your local machine. The browser will save the file in the download directory as per your browser settings.
 
 4. To import the pipeline, navigate to the **Builds** or **Releases** page in your project. Choose **+New** and select the corresponding import pipeline option.
 
