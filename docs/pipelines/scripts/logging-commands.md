@@ -478,7 +478,8 @@ Add a tag for current build.
 
 Update the release name for the running release.
 
-Note: Supported in Azure DevOps, and Azure DevOps Server as of version 2020.
+> [!NOTE]
+> Supported in Azure DevOps and Azure DevOps Server beginning in version 2020.
 
 #### Example
 
