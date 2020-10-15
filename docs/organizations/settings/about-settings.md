@@ -189,10 +189,10 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
-     ** Boards, Team configuration**
+     **Boards, Team configuration**
    :::column-end:::
    :::column span="1":::
-      - [Backlog levels](select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  2015
+      - [Backlog levels](select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Show bugs on backlogs & boards](show-bugs-on-backlog.md)
       - [Set working days](set-working-days.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Configure area paths](set-area-paths.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
