@@ -17,7 +17,7 @@ ms.date: 10/15/2020
 
 ::: moniker range="azure-devops"
 
-You configure resources either for yourself, your team, a project, or your organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role you belong to. 
+You configure resources either for yourself or for your team, project, or organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role that you belong to. 
 
 If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
@@ -28,7 +28,7 @@ If you're just getting started as a Project Administrator, see [Get started as a
 
 ::: moniker range="< azure-devops"
 
-You configure resources either for yourself, your team, a project, or your project collection from the **Settings** page. The settings you can configure depend on the security group or administrative role you belong to.
+You configure resources either for yourself or for your team, project, or project collection from the **Settings** page. The settings you can configure depend on the security group or administrative role that you belong to.
 
 ::: moniker-end  
 
