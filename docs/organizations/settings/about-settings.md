@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 10/13/2020
+ms.date: 10/15/2020
 ---
 
 # About settings for users, teams, projects, or organizations
@@ -38,19 +38,19 @@ Individual contributors can set their user preferences, enable features that are
 
 :::row:::
    :::column span="1":::
-      Area
+      **Area**
    :::column-end:::
    :::column span="1":::
-      Supported tasks
+      **Supported tasks**
    :::column-end:::
    :::column span="1":::
-      Notes
+      **Notes**
    :::column-end:::
 :::row-end:::
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="1":::
-      General
+      **General**
    :::column-end:::
    :::column span="1":::
       - [Set your preferences](set-your-preferences.md)
@@ -64,7 +64,7 @@ Individual contributors can set their user preferences, enable features that are
 ::: moniker range="< azure-devops-2020"
 :::row:::
    :::column span="1":::
-      General
+      **General**
    :::column-end:::
    :::column span="1":::
       - [Set your preferences](set-your-preferences.md)
@@ -76,7 +76,7 @@ Individual contributors can set their user preferences, enable features that are
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Security
+      **Security**
    :::column-end:::
    :::column span="1":::
       - [View permissions](../security/view-permissions.md)
@@ -86,11 +86,10 @@ Individual contributors can set their user preferences, enable features that are
       For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md). 
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      Authentication
+      **Authentication**
    :::column-end:::
    :::column span="1":::
       - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
@@ -102,10 +101,10 @@ Individual contributors can set their user preferences, enable features that are
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range= ">= tfs-2017 < azure-devops"
+::: moniker range=">= tfs-2017 < azure-devops"
 :::row:::
    :::column span="1":::
-      Authentication
+      **Authentication**
    :::column-end:::
    :::column span="1":::
       - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
@@ -119,7 +118,7 @@ Individual contributors can set their user preferences, enable features that are
 ::: moniker range="tfs-2015"
 :::row:::
    :::column span="1":::
-      Authentication
+      **Authentication**
    :::column-end:::
    :::column span="1":::
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
@@ -131,7 +130,7 @@ Individual contributors can set their user preferences, enable features that are
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Favorites
+      **Favorites**
    :::column-end:::
    :::column span="1":::
       - [Set personal or team favorites](../../project/navigation/set-favorites.md)
@@ -143,7 +142,7 @@ Individual contributors can set their user preferences, enable features that are
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
-      Notifications
+      **Notifications**
    :::column-end:::
    :::column span="1":::
       - [View your subscriptions, opt-out as needed](about-settings.md)
@@ -166,18 +165,18 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 
 :::row:::
    :::column span="1":::
-      Area
+      **Area**
    :::column-end:::
    :::column span="1":::
-      Supported tasks
+      **Supported tasks**
    :::column-end:::
    :::column span="1":::
-      Notes
+      **Notes**
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Team profile
+      **Team profile**
    :::column-end:::
    :::column span="1":::
       - [Add users to a project or specific team](../security/add-users-team-project.md)
@@ -190,7 +189,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
-      Boards, Team configuration
+     ** Boards, Team configuration**
    :::column-end:::
    :::column span="1":::
       - [Backlog levels](select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  2015
@@ -208,7 +207,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 ::: moniker range="tfs-2013"
 :::row:::
    :::column span="1":::
-      Boards, Team configuration
+      **Boards, Team configuration**
    :::column-end:::
    :::column span="1":::
       - [Show bugs on backlogs & boards](show-bugs-on-backlog.md)
@@ -225,7 +224,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 ::: moniker range=" >= tfs-2017"
 :::row:::
    :::column span="1":::
-      Dashboards
+      **Dashboards**
    :::column-end:::
    :::column span="1":::
       - [Create team dashboards](../../report/dashboards/dashboards.md)
@@ -239,7 +238,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 ::: moniker range=" tfs-2015"
 :::row:::
    :::column span="1":::
-      Dashboards
+      **Dashboards**
    :::column-end:::
    :::column span="1":::
       - [Create team dashboards](../../report/dashboards/dashboards.md)
@@ -251,7 +250,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Notifications
+      **Notifications**
    :::column-end:::
    :::column span="1":::
       - [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md)
@@ -272,18 +271,25 @@ Members of the [Project Administrators group](../security/set-project-collection
 
 See also [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 **Project settings**  
-From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
+From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image. 
 > [!div class="mx-imgBorder"]  
-> ![Project settings, new nav](media/about/project-settings-new-nav.png) 
+> ![Screenshot of Project settings, new navigation.](media/about/project-settings-new-nav.png) 
+::: moniker-end
+
+::: moniker range="azure-devops-2019 || azure-devops-2020"
+**Project-level settings**  
+From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
+
+![Screenshot of Project settings page, Azure DevOps Server versions.](media/about/project-settings-server-2020.png)  
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 **Project-level settings**  
-From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image.
+From the administrative **Project settings** page, you can configure settings available from the tabs shown in the following image.
 
-![Project settings, conceptual](media/about/project-settings-prev-nav.png)  
+![Screenshot of Project settings tab selected, TFS versions.](media/about/collection-settings-tfs-nav.png)  
 
 > [!NOTE]  
 > Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
@@ -292,19 +298,19 @@ From the administrative **Project settings** pages, you can configure settings a
 
 :::row:::
    :::column span="1":::
-      Area
+     **Area**
    :::column-end:::
    :::column span="1":::
-      Supported tasks
+      **Supported tasks**
    :::column-end:::
    :::column span="1":::
-      Notes
+      **Notes**
    :::column-end:::
 :::row-end:::
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      General
+      **General**
    :::column-end:::
    :::column span="1":::
       - Set project description
@@ -318,7 +324,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="1":::
-      General
+      **General**
    :::column-end:::
    :::column span="1":::
       - Set project description
@@ -331,7 +337,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      Services
+      **Services**
    :::column-end:::
    :::column span="1":::
       - [Turn a service on or off](set-services.md)
@@ -343,7 +349,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Teams
+      **Teams**
    :::column-end:::
    :::column span="1":::
       - [Add another team and team members](add-teams.md)
@@ -356,7 +362,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
-      Security
+      **Security**
    :::column-end:::
    :::column span="1":::
       - [Add user to a project](../security/add-users-team-project.md)
@@ -374,7 +380,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker range=" tfs-2013"
 :::row:::
    :::column span="1":::
-      Security
+      **Security**
    :::column-end:::
    :::column span="1":::
       - [Add user to a project](../security/add-users-team-project.md)
@@ -390,7 +396,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Notifications
+      **Notifications**
    :::column-end:::
    :::column span="1":::
       - [Manage project-level notifications](../../notifications/manage-team-group-global-organization-notifications.md)
@@ -402,7 +408,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker range=" >= tfs-2017"
 :::row:::
    :::column span="1":::
-      Service hooks
+      **Service hooks**
    :::column-end:::
    :::column span="1":::
       - [Configure service hooks](../../service-hooks/overview.md)
@@ -413,7 +419,7 @@ From the administrative **Project settings** pages, you can configure settings a
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Dashboards
+      **Dashboards**
    :::column-end:::
    :::column span="1":::
       - [Set default dashboard permissions](../../report/dashboards/dashboard-permissions.md)
@@ -425,7 +431,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Boards, Project configuration
+      **Boards, Project configuration**
    :::column-end:::
    :::column span="1":::
       - [Define area paths](set-area-paths.md)
@@ -438,7 +444,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker range=" >= tfs-2015"
 :::row:::
    :::column span="1":::
-      Build and release (Agent Pools, Release)
+      **Build and release (Agent Pools, Release)**
    :::column-end:::
    :::column span="1":::
       - [Manage Agent queues and agent pools](../../pipelines/agents/pools-queues.md)
@@ -453,7 +459,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Repos, Code version control
+      **Repos, Code version control**
    :::column-end:::
    :::column span="1":::
       - [Create additional Git repositories](../../repos/git/creatingrepo.md)
@@ -468,7 +474,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker range=" >= tfs-2018"
 :::row:::
    :::column span="1":::
-      Test
+      **Test**
    :::column-end:::
    :::column span="1":::
       - [Set test retention policies](../../test/how-long-to-keep-test-results.md)
@@ -483,7 +489,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker range=" <= tfs-2017"
 :::row:::
    :::column span="1":::
-      Test
+      **Test**
    :::column-end:::
    :::column span="1":::
       - [Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)
@@ -497,7 +503,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker range=" >= tfs-2018"
 :::row:::
    :::column span="1":::
-      Wiki
+      **Wiki**
    :::column-end:::
    :::column span="1":::
       - [Create a wiki for your project](../../project/wiki/wiki-create-repo.md)
@@ -512,7 +518,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker range=" tfs-2015 || tfs-2017"
 :::row:::
    :::column span="1":::
-      Wiki
+      **Wiki**
    :::column-end:::
    :::column span="1":::
       - [Manage README and Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
@@ -525,7 +531,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker range=" >= tfs-2015"
 :::row:::
    :::column span="1":::
-      Extensions
+      **Extensions**
    :::column-end:::
    :::column span="1":::
       - [Request a Marketplace extension](../../marketplace/request-extensions.md)
@@ -537,7 +543,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Team configuration
+      **Team configuration**
    :::column-end:::
    :::column span="1":::
       - [Manage and configure team tools](manage-teams.md)
@@ -547,10 +553,10 @@ From the administrative **Project settings** pages, you can configure settings a
       For more information, see [About teams and Agile tools](about-teams-and-settings.md).
    :::column-end:::
 :::row-end:::
-::: moniker range= "azure-devops"
+::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      GitHub connections
+      **GitHub connections**
    :::column-end:::
    :::column span="1":::
       - [Connect Azure Boards to GitHub](../../boards/github/connect-to-github.md)
@@ -564,7 +570,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Service connections
+      **Service connections**
    :::column-end:::
    :::column span="1":::
       - [Manage service connections in Azure Pipelines](../../pipelines/library/service-endpoints.md#project-level-permissions)
@@ -580,25 +586,33 @@ From the administrative **Project settings** pages, you can configure settings a
 
 Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) configure resources for all projects that are defined for an organization or collection. They also can do all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
   
 **Organization settings**  
-From the administrative **Organization settings** pages, you can configure settings available from the tabs shown in the following image.
+From the administrative **Organization settings** page, you can configure settings available from the tabs shown in the following image.
 
 > [!div class="mx-imgBorder"]  
-> ![Organization settings, new nav](media/about/collection-settings-new-nav.png) 
+> ![Screenshot of Organization settings options, cloud](media/about/organization-settings-options-cloud.png) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019 || azure-devops-2020"
+**Project collection-level settings**  
+From the administrative page for a collection, you can configure the settings shown in the following image. 
+
+![Screenshot of Collection settings options, server versions.](media/about/collection-settings-options-server-versions.png) 
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-**Project collection-level settings**  
-From the administrative pages for a collection, you can configure the settings shown in the following image. 
+**Collection-level settings**  
+From the administrative page for a collection, you can configure the settings shown in the following image. 
 
 > [!NOTE]  
 > Project collection settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 
-![Collection settings, TFS, conceptual](media/about/collection-settings-tfs-nav.png) 
+![Screenshot of Collection settings options, TFS.](media/about/collection-settings-tfs-nav.png) 
 
 ::: moniker-end
 
@@ -622,19 +636,19 @@ For an overview of managing collections, see [Configure and manage TFS resources
 
 :::row:::
    :::column span="1":::
-      Area
+      **Area**
    :::column-end:::
    :::column span="1":::
-      Supported tasks
+      **Supported tasks**
    :::column-end:::
    :::column span="1":::
-      Notes
+      **Notes**
    :::column-end:::
 :::row-end:::
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="1":::
-      Preview features
+      **Preview features**
    :::column-end:::
    :::column span="1":::
       - [Enable preview features](../../project/navigation/preview-features.md)
@@ -644,14 +658,13 @@ For an overview of managing collections, see [Configure and manage TFS resources
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="azure-devops"
+::: moniker range=" >= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      Overview (Settings)
+      **Settings**
    :::column-end:::
    :::column span="1":::
-      - Add and manage organization information: [change organization owner](../accounts/change-organization-ownership.md), [Rename](../accounts/rename-organization.md), [Delete](../accounts/delete-your-organization.md), [Recover](../accounts/recover-your-organization.md)
-      - [Find or change your organization location](../accounts/change-organization-location.md)
+      - Add and manage organization information: [change organization owner](../accounts/change-organization-ownership.md), [Rename](../accounts/rename-organization.md), [Delete](../accounts/delete-your-organization.md)- [Recover](../accounts/recover-your-organization.md), [Find or change your organization location](../accounts/change-organization-location.md)
       - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
    :::column-end:::
    :::column span="1":::
@@ -659,28 +672,13 @@ For an overview of managing collections, see [Configure and manage TFS resources
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-::: moniker range="azure-devops-2019 || azure-devops-2020"
+::: moniker range="<= tfs-2018"
 :::row:::
    :::column span="1":::
-      Settings
+      **Settings**
    :::column-end:::
    :::column span="1":::
-      - Add and manage organization information: [change organization owner](../accounts/change-organization-ownership.md), [Rename](../accounts/rename-organization.md), [Delete](../accounts/delete-your-organization.md), [Recover](../accounts/recover-your-organization.md)
-      - [Find or change your organization location](../accounts/change-organization-location.md)
-      - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
-   :::column-end:::
-   :::column span="1":::
-      From the **Settings** page, you can manage the time zone, owner, region, and other settings that apply to all projects.
-   :::column-end:::
-:::row-end:::
-::: moniker-end
-::: moniker range=">= tfs-2018"
-:::row:::
-   :::column span="1":::
-      Settings
-   :::column-end:::
-   :::column span="1":::
-      - Add and manage organization information: [change organization owner](../accounts/change-organization-ownership.md), [Rename](../accounts/rename-organization.md), [Delete](../accounts/delete-your-organization.md), [Recover](../accounts/recover-your-organization.md)
+      - Add and manage organization information: [change organization owner](../accounts/change-organization-ownership.md), [Rename](../accounts/rename-organization.md), [Delete](../accounts/delete-your-organization.md)- [Recover](../accounts/recover-your-organization.md)
       - [Find or change your organization location](../accounts/change-organization-location.md)
       - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
    :::column-end:::
@@ -692,7 +690,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      Billing
+      **Billing**
    :::column-end:::
    :::column span="1":::
       - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
@@ -709,7 +707,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range="<= azure-devops-2020"
 :::row:::
    :::column span="1":::
-      Billing
+      **Billing**
    :::column-end:::
    :::column span="1":::
       - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
@@ -722,7 +720,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Projects
+      **Projects**
    :::column-end:::
    :::column span="1":::
       - Add and manage projects: [Create](../projects/create-project.md), [Rename](../projects/rename-project.md), [Delete](../projects/delete-project.md)
@@ -733,11 +731,10 @@ For an overview of managing collections, see [Configure and manage TFS resources
       A project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, minimize the number of projects you create, to keep things simple. For more information, see [About projects and scaling your organization](../projects/about-projects.md).
    :::column-end:::
 :::row-end:::
-::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      Policy
+      **Policy**
    :::column-end:::
    :::column span="1":::
       - [Change application access policies](../accounts/change-application-access-policies.md)
@@ -754,7 +751,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      Users
+      **Users**
    :::column-end:::
    :::column span="1":::
       - [Add and manage users](../accounts/add-organization-users.md)
@@ -769,7 +766,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range="<= azure-devops-2020"
 :::row:::
    :::column span="1":::
-      Users
+      **Users**
    :::column-end:::
    :::column span="1":::
       - [Add and manage users](../accounts/add-organization-users.md)
@@ -783,7 +780,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      Security
+      **Security**
    :::column-end:::
    :::column span="1":::
       - [Change individual permissions](../security/change-individual-permissions.md)
@@ -801,7 +798,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range=" < azure-devops"
 :::row:::
    :::column span="1":::
-      Security
+      **Security**
    :::column-end:::
    :::column span="1":::
       - [Change individual permissions](../security/change-individual-permissions.md)
@@ -815,7 +812,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Notifications
+      **Notifications**
    :::column-end:::
    :::column span="1":::
       - [Manage collection-level notifications](../../notifications/manage-team-group-global-organization-notifications.md)
@@ -827,7 +824,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
-      Extensions
+      **Extensions**
    :::column-end:::
    :::column span="1":::
       - [Install and manage Marketplace extensions](../../marketplace/install-extension.md)
@@ -843,7 +840,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range=">= tfs-2018"
 :::row:::
    :::column span="1":::
-      Usage
+      **Usage**
    :::column-end:::
    :::column span="1":::
       - [Monitor usage](../../integrate/concepts/rate-limits.md)
@@ -856,7 +853,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      Audit
+      **Audit**
    :::column-end:::
    :::column span="1":::
       - [Access, export, and filter audit logs](../audit/azure-devops-auditing.md)
@@ -870,7 +867,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      Boards, Process
+      **Boards, Process**
    :::column-end:::
    :::column span="1":::
       - [Customize a project](work/customize-process.md)
@@ -884,7 +881,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range=">= tfs-2018"
 :::row:::
    :::column span="1":::
-      Build and release
+      **Build and release**
    :::column-end:::
    :::column span="1":::
       - [Set retention policies](../../pipelines/policies/retention.md)
@@ -900,7 +897,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range=" tfs-2015 || tfs-2017"
 :::row:::
    :::column span="1":::
-      Build and release
+      **Build and release**
    :::column-end:::
    :::column span="1":::
       - [Set retention policies](../../pipelines/policies/retention.md)
@@ -915,7 +912,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      Artifact storage
+      **Artifact storage**
    :::column-end:::
    :::column span="1":::
       - [Delete and recover packages in Azure Artifacts](../../artifacts/how-to/delete-and-recover-packages.md)
@@ -926,8 +923,6 @@ For an overview of managing collections, see [Configure and manage TFS resources
    :::column-end:::
 :::row-end:::
 ::: moniker-end
-
-
 
 ::: moniker range="< azure-devops"
 
