@@ -180,7 +180,7 @@ To fix this issue you will need to modify the supported account types and who ca
 
 ### Automatically created service principal client secret is expired
 
-An issue that often arises with automatically created service principals is that the service principal's token expires and needs to be renewed. Users can renew the token for automatically created service principals by following these steps::
+An issue that often arises with automatically created service principals is that the service principal's token expires and needs to be renewed. If you run into issues refreshing the token, check out [our other troubleshooting resolutions](#troubleshoot). Users can renew the token for automatically created service principals by following these steps:
 
 1. Navigate to the ARM service connection that was created through the "Automatic" method.
 
