@@ -195,14 +195,29 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [5 Implications for Change Management in an Agile World](https://www.imaworldwide.com/blog/5-implications-for-change-management-in-an-agile-world)
 - [Change Management meets Agile, how does that work?](https://www.andchange.com/themes/change-management-meets-agile/)
 - [Managing Change Requests in Scrum](https://www.infoq.com/news/2008/12/change-requests-in-scrum/)
-
 - [Identify And Avoid Project Scope Creep](https://thedigitalprojectmanager.com/scope-creep/)
 
-<!--- 
+
  
-### TBD
+### Work items and process guidance 
 
 - [Manage change using Change request form](/azure/devops/boards/work-items/guidance/cmmi/guidance-manage-change)  
+- [Add work item tags to categorize and filter lists and boards](/azure/devops/boards/queries/add-tags-to-work-items)
+
+#### Monitor and report on progress
+
+- [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)
+
+
+#### Notifications
+
+- [Default and supported notifications](/azure/devops/notifications/oob-built-in-notifications) 
+- [Manage personal notifications](/azure/devops/notifications/manage-your-personal-notifications)
+- [Manage notifications for a team or group](/azure/devops/notifications/manage-team-group-notifications)
+
+
+!--- 
+
 
 #### Agile and Agile culture
 
@@ -215,7 +230,6 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Work items, work item types, and process models 
 
 - [About work items](../boards/work-items/about-work-items.md) 
-- [Add work item tags to categorize and filter lists and boards](../boards/queries/add-tags-to-work-items.md)
 - [Choose a process](../boards/work-items/guidance/choose-process.md)
 - [About process customization and inherited processes](../organizations/settings/work/inheritance-process-model.md) 
 - [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
@@ -270,10 +284,5 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Share information within work items and social tools](../boards/queries/share-plans.md)
 
 
-#### Notifications
-
-- [Default and supported notifications](../notifications/oob-built-in-notifications.md) 
-- [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
-- [Manage notifications for a team or group](../notifications/manage-team-group-notifications.md)
 
 --> 
