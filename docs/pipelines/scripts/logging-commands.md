@@ -477,7 +477,8 @@ Add a tag for current build.
 #### Usage
 
 Update the release name for the running release.
-Note: this is not supported in Azure DevOps Server or TFS.
+
+Note: Supported in Azure DevOps, and Azure DevOps Server as of version 2020.
 
 #### Example
 
