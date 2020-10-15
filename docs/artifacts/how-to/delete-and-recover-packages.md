@@ -93,36 +93,27 @@ When you publish a particular version of a package to a feed, that version numbe
 
 ::: moniker range=">= azure-devops-2019"
 
-### Unlisting or deleting a NuGet package in Azure DevOps Services
+### Unlisting or deleting a NuGet package
 
-You must be a **contributor** to unlist and an **owner** to delete.
+You must be a **contributor** to unlist a package and an **owner** to delete it.
 
-Choose the package from **Azure Artifacts** and select the appropriate option from the menu:
+From within your feed, select the appropriate package and select **Unlist** or **Delete**.
 
 > [!div class="mx-imgBorder"]
-> ![Unlist or delete npm package Azure DevOps Services](../media/delete/unlist-delete-nuget-package-newnav.png)
+> ![Unlist or delete nuget packages](../media/delete/unlist-delete-nuget-package-newnav.png)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
-
-Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
-
-> [!div class="mx-imgBorder"]
-> ![Unlist or delete npm package Azure DevOps Services](../media/delete/unlist-delete-nuget-package.png)
-
-::: moniker-end
-
-::: moniker range=">=tfs-2017 < azure-devops"
+::: moniker range=">=tfs-2017 < azure-devops-2019"
 
 ### Unlisting or deleting a NuGet package in Team Foundation Server
 
-You must be a **contributor** to unlist and an **owner** to delete.
+You must be a **contributor** to unlist a package and an **owner** to delete it.
 
-Choose the package from the **Packages** page in the **Build and Release** page group and select the appropriate option from the menu:
+Select **Build and Release**, then **Packages**. select the appropriate package and select **Unlist** or **Delete**.
 
 > [!div class="mx-imgBorder"]
-> ![Unlist or delete npm package TFS](../media/delete/unlist-delete-nuget-package.png)
+> ![Unlist or delete nuget package TFS](../media/delete/unlist-delete-nuget-package.png)
 
 ::: moniker-end
 
