@@ -86,8 +86,8 @@ See the [deprecate](https://docs.npmjs.com/cli/deprecate) or [unpublish](https:/
 #### [NuGet](#tab/nuget/)
 There are two options available to remove a version of a NuGet package from a feed.
 
-1. **Unlist:** Unlisting a package version hides it from the search results, Visual Studio UI and from appearning on nuget.org.
-2. **Delete:**  Deleting a version of a package makes it unavailable to install. Deleted packages can be restored from the Recycle Bin within 30 days of deletion. After 30 days, , the package will be deleted permanently.
+1. **Unlist:** Unlisting a package version hides it from the search results, Visual Studio UI and from appearing on NuGet.org.
+2. **Delete:**  Deleting a version of a package makes it unavailable to install. Deleted packages can be restored from the Recycle Bin within 30 days of deletion. The packages will be deleted permanently afterwards.
 
 When you publish a particular version of a package to a feed, that version number is permanently reserved. You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
@@ -142,7 +142,7 @@ Select **Build and Release**, then **Packages**. select the appropriate package 
     nuget.exe delete {your_package_id} {version} -Source {feed URL} -ApiKey key
     ```
 
-NuGet.exe currently only perform the **unlist** packages operation. Azure DevOps Services and TFS interpret the `nuget.exe delete` command as an **unlist** operation. To **delete** a package, you must use the REST API or the web interface.
+NuGet.exe currently only performs the **unlist** packages operation. Azure DevOps Services and TFS interpret the `nuget.exe delete` command as an **unlist** operation. To **delete** a package, you must use the REST API or the web interface.
 
 #### [Python](#tab/python/)
 You must be an **owner** to delete a Python package.
