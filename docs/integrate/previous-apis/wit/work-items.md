@@ -186,7 +186,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&ap
 
 ### Sample code
 
-* [C# (GetWorkItemsByIDs method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L20)
+* [C# (GetWorkItemsByIDs method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L20)
 
 
 ### With specific fields
@@ -243,7 +243,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&fi
 
 #### Sample code
 
-* [C# (GetWorkItemsWithSpecificFields method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L38)
+* [C# (GetWorkItemsWithSpecificFields method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L38)
 
 
 ### As of a date
@@ -300,7 +300,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&fi
 
 #### Sample code
 
-* [C# (GetWorkItemsAsOfDate method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L67)
+* [C# (GetWorkItemsAsOfDate method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L67)
 
 
 ###  With links and attachments
@@ -571,7 +571,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&$e
 
 #### Sample code
 
-* [C# (GetWorkItemsWithLinksAndAttachments method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L98)
+* [C# (GetWorkItemsWithLinksAndAttachments method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L98)
 
 
 ##  Get a work item
@@ -648,7 +648,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/309?api-version=1.
 
 #### Sample code
 
-* [C# (GetWorkItemsByID method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L122)
+* [C# (GetWorkItemsByID method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L122)
 
 <a name="getaworkitemwithlinksandattachments" />
 ###  With links and attachments
@@ -817,7 +817,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/309?$expand=all&ap
 
 #### Sample code
 
-* [C# (GetWorkItemFullyExpanded method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L140)
+* [C# (GetWorkItemFullyExpanded method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L140)
 
 
 ##  Get default values
@@ -1026,7 +1026,7 @@ PATCH https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workite
 
 #### Sample code
 
-* [C# (CreateWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L66)
+* [C# (CreateWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L66)
 
 <a name="withaworkitemlink" />
 ### With a work item link
@@ -1134,8 +1134,8 @@ PATCH https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workite
 
 #### Sample code
 
-* [C# (CreateAndLinkToWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L198)
-* [C# (ByPassRulesOnCreate method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L271)
+* [C# (CreateAndLinkToWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L198)
+* [C# (ByPassRulesOnCreate method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L271)
 
 ##  Update work items
 <a name="updateworkitems" />
@@ -1279,7 +1279,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
 
 #### Sample code
 
-* [C# (ChangeFieldValue method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L316)
+* [C# (ChangeFieldValue method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L316)
 
 ### Move work item
 <a name="moveworkitem" />
@@ -1372,7 +1372,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/398?api-version=
 
 #### Sample code
 
-* [C# (MoveToAnotherProject method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L356)
+* [C# (MoveToAnotherProject method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L356)
 
 
 ### Change work item type
@@ -1459,7 +1459,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/398?api-version=
 
 #### Sample code
 
-* [C# (ChangeType method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L398)
+* [C# (ChangeType method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L398)
 
 ### Add a tag
 <a name="addatag" />
@@ -1566,7 +1566,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
 
 #### Sample code
 
-* [C# (AddTags method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L429)
+* [C# (AddTags method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L429)
 
 ### Add a link
 <a name="addalink" />
@@ -1676,7 +1676,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
 
 #### Sample code
 
-* [C# (LinkToOtherWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L454)
+* [C# (LinkToOtherWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L454)
 
 ### Update a link
 <a name="updatealink" />
@@ -1780,7 +1780,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
 
 #### Sample code
 
-* [C# (UpdateLinkComment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L487)
+* [C# (UpdateLinkComment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L487)
 
 ### Remove a link
 <a name="removealink" />
@@ -1875,7 +1875,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
 
 #### Sample code
 
-* [C# (RemoveLink method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L517)
+* [C# (RemoveLink method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L517)
 
 ### Add an attachment
 <a name="addanattachment" />
@@ -1998,7 +1998,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
 
 #### Sample code
 
-* [C# (AddAttachment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L547)
+* [C# (AddAttachment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L547)
 
 ### Remove an attachment
 <a name="removeanattachment" />
@@ -2092,7 +2092,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
 
 #### Sample code
 
-* [C# (RemoveAttachment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L598)
+* [C# (RemoveAttachment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L598)
 
 ### Add a hyperlink
 <a name="addhyperlink" />
@@ -2207,7 +2207,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
 
 #### Sample code
 
-* [C# (UpdateWorkItemAddHyperLink method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L631)
+* [C# (UpdateWorkItemAddHyperLink method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L631)
 
 ### Make an update bypassing rules
 <a name="updatebypassingrules" />
@@ -2315,7 +2315,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/335?bypassRules=
 
 #### Sample code
 
-* [C# (UpdateWorkItemUsingByPassRules method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L711)
+* [C# (UpdateWorkItemUsingByPassRules method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L711)
 
 ## Delete a work item
 <a name="deleteaworkitem" />
@@ -2329,4 +2329,4 @@ DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workit
 
 #### Sample code
 
-* [C# (DeleteWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L732)
+* [C# (DeleteWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemsSample.cs#L732)

@@ -9,7 +9,7 @@ permissions.](#configuration-failed-please-make-sure-that-the-organization-organ
 ### Sorry, something went wrong. Please try again.
 
 The Azure Boards app uses the OAuth authentication protocol, and requires [Third-party application access via OAuth for the 
-organization](/azure/devops/organizations/accounts/change-application-access-policies#change-application-access-policies) to be enabled. 
+organization](../../../organizations/accounts/change-application-access-policies.md) to be enabled. 
 To enable this setting, navigate to **Organization Settings** > **Security** > **Policies**, and set the **Third-party application access
  via OAuth for the organization** setting to **On**.
 

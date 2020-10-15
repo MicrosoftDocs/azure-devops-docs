@@ -130,7 +130,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="email-work-items.md#export" data-raw-source="[Export a work item list](email-work-items.md#export)">Export a work item list</a></li>
 <li><a href="follow-work-items.md" data-raw-source="[Follow a work item](follow-work-items.md)">Follow a work item</a></li>
 <li><a href="../sprints/forecast.md" data-raw-source="[Forecast work items](../sprints/forecast.md)">Forecast work items</a></li>
-<li><a href="../../notifications/howto-manage-personal-notifications.md" data-raw-source="[Get notified of work item changes](../../notifications/howto-manage-personal-notifications.md)">Get notified of work item changes</a></li>
+<li><a href="/azure/devops/notifications/manage-your-personal-notifications" data-raw-source="[Get notified of work item changes](../../notifications/manage-your-personal-notifications.md)">Get notified of work item changes</a></li>
 <li><a href="../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic" data-raw-source="[Group work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic)">Group work items</a></li>
 <br/>
 <li><a href="../backlogs/add-link.md" data-raw-source="[Link to cross-organization work items](../backlogs/add-link.md)">Link to cross-organization work items</a></li>
@@ -231,7 +231,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="email-work-items.md#export" data-raw-source="[Export a work item list](email-work-items.md#export)">Export a work item list</a></li>
 <li><a href="follow-work-items.md" data-raw-source="[Follow a work item](follow-work-items.md)">Follow a work item</a></li>
 <li><a href="../sprints/forecast.md" data-raw-source="[Forecast work items](../sprints/forecast.md)">Forecast work items</a></li>
-<li><a href="../../notifications/howto-manage-personal-notifications.md" data-raw-source="[Get notified of work item changes](../../notifications/howto-manage-personal-notifications.md)">Get notified of work item changes</a></li>
+<li><a href="/azure/devops/notifications/manage-your-personal-notifications" data-raw-source="[Get notified of work item changes](../../notifications/manage-your-personal-notifications.md)">Get notified of work item changes</a></li>
 <li><a href="../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic" data-raw-source="[Group work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic)">Group work items</a></li>
 <br/>
 <li><a href="../backlogs/add-link.md" data-raw-source="[Link to development objects](../backlogs/add-link.md)">Link to development objects</a></li>
@@ -331,7 +331,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="email-work-items.md" data-raw-source="[Email work item list](email-work-items.md)">Email work item list</a></li>
 <li><a href="follow-work-items.md" data-raw-source="[Follow a work item](follow-work-items.md)">Follow a work item</a></li>
 <li><a href="../sprints/forecast.md" data-raw-source="[Forecast work items](../sprints/forecast.md)">Forecast work items</a></li>
-<li><a href="../../notifications/howto-manage-personal-notifications.md">Get notified of work item changes</a></li>
+<li><a href="/azure/devops/notifications/manage-your-personal-notifications">Get notified of work item changes</a></li>
 <li><a href="../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic">Group work items</a></li>
 <br/>
 <li><a href="../backlogs/add-link.md">Link to development objects</a></li>
@@ -415,7 +415,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <br/>
 <li><a href="email-work-items.md" data-raw-source="[Email work item list](email-work-items.md)">Email work item list</a></li>
 <li><a href="../sprints/forecast.md" data-raw-source="[Forecast work items](../sprints/forecast.md)">Forecast work items</a></li>
-<li><a href="../../notifications/howto-manage-personal-notifications.md">Get notified of work item changes</a></li>
+<li><a href="/azure/devops/notifications/manage-your-personal-notifications">Get notified of work item changes</a></li>
 <li><a href="../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic">Group work items</a></li>
 <br/>
 <li><a href="../backlogs/add-link.md">Link to development objects</a></li>

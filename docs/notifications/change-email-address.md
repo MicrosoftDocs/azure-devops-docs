@@ -33,7 +33,7 @@ You can change your preferred email address for notifications from your organiza
 
 2. Change your contact information, and then select **Save**.
 
-   ![Edit the About page](media/edit-contact-info-preview.png)
+   ![Edit the About page, preview.](media/edit-contact-info-preview.png)
 
 
 #### [Current page](#tab/current-page) 
@@ -44,7 +44,7 @@ You can change your preferred email address for notifications from your organiza
 
 2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
 
-   ![Edit the About page](../organizations/settings/media/edit-about-page.png)
+   ![Edit the About page, current view.](../organizations/settings/media/edit-about-page.png)
 
 * * *
 
@@ -83,5 +83,4 @@ For additional settings, see [Set your preferences](../organizations/settings/se
 
 - [Set your preferences](../organizations/settings/set-your-preferences.md)
 - [Manage personal notifications](./manage-your-personal-notifications.md)
-- [Manage team notifications](manage-team-group-notifications.md)
-- [Manage organization notifications](manage-organization-notifications.md)
+- [Manage team and organization notifications](manage-team-group-global-organization-notifications.md)

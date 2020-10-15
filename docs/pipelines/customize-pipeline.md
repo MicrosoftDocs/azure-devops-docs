@@ -234,7 +234,7 @@ Sometimes you'll want to prevent new runs from starting on your pipeline.
 ### Other settings
 * **YAML file path.** If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
 * **Automatically link work items included in this run.** The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When this option is selected, you'll need to specify a specific branch. Work items will only be associated with runs of that branch. 
-* To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/howto-manage-team-notifications.md)
+* To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/manage-team-group-global-organization-notifications.md)
 
 You've just learned the basics of customizing your pipeline. Next we recommend that you learn more about customizing a pipeline for the language you use:
 

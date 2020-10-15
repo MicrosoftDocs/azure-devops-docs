@@ -139,7 +139,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 <tr>
 <td> <strong>Notifications</strong> </td>
 <td><ul>
-<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Manage team notifications](../../notifications/manage-team-group-notifications.md)">Manage team notifications</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage team notifications</a></li>
 </ul></td>
 <td>A number of team notifications are automatically defined when a team is added. To learn more about how notifications are managed, see <a href="../../notifications/about-notifications.md" data-raw-source="[About notifications](../../notifications/about-notifications.md)">About notifications</a>.   </td>
 </tr>
@@ -221,14 +221,14 @@ From the administrative **Project settings** pages, you can configure settings a
 <li><a href="../security/permissions.md#project-level" data-raw-source="[Manage project-level permissions](../security/permissions.md#project-level)">Manage project-level permissions</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Set build and release permissions](../../pipelines/policies/set-permissions.md)">Set build and release permissions</a></li>
 </ul></td>
-<td>Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. <p>For an overview of security concepts, see <a href="../security/about-permissions.md" data-raw-source="[About permissions and groups](../security/about-permissions.md)">About permissions and groups</a> and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of project-level permissions, see <a href="../security/permissions.md#project-level" data-raw-source="[Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level)">Permissions and groups reference, Project-level permissions</a>.</p> </td>
+<td>Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. <p>For an overview of security concepts, see <a href="../security/about-security-identity.md">About security, membership, and permissions</a>  and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of project-level permissions, see <a href="../security/permissions.md#project-level" data-raw-source="[Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level)">Permissions and groups reference, Project-level permissions</a>.</p> </td>
 </tr>
 <tr>
 <td> <strong>Notifications</strong> </td>
 <td><ul>
 <li>Manage project-level notifications</li>
 </ul></td>
-<td>A number of project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-notifications.md)">team level</a>.</td>
+<td>A number of project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-global-organization-notifications.md)">team level</a>.</td>
 </tr>
 <tr>
 <td><strong>Service Hooks</strong></td>
@@ -404,14 +404,14 @@ For an overview of managing your organization, see [About organization managemen
 <li><a href="../accounts/connect-organization-to-azure-ad.md" data-raw-source="[Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)">Connect to Azure Active Directory</a></li>
 <li><a href="../accounts/change-application-access-policies.md" data-raw-source="[Manage conditional access](../accounts/change-application-access-policies.md)">Manage conditional access</a></li>
 </ul></td>
-<td>For an overview of security concepts, see <a href="../security/about-permissions.md" data-raw-source="[About permissions and groups](../security/about-permissions.md)">About permissions and groups</a> and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
+<td>For an overview of security concepts, see <a href="../security/about-security-identity.md">About security, membership, and permissions</a>  and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
 </tr>
 <tr>
 <td><strong>Notifications</strong></td>
 <td><ul>
-<li><a href="/azure/devops/notifications/manage-organization-notifications" data-raw-source="[Manage collection-level notifications](../../notifications/manage-organization-notifications.md)">Manage collection-level notifications</a> </li>
+<li><a href="/azure/devops/notifications/manage-organization-notifications" data-raw-source="[Manage collection-level notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage collection-level notifications</a> </li>
 </ul></td>
-<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-notifications.md)">team level</a>. </td>
+<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-global-organization-notifications.md)">team level</a>. </td>
 </tr>
 <tr>
 <td><strong>Extensions</strong></td>
@@ -491,14 +491,14 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 <li><a href="/azure/devops/server/admin/setup-ad-groups" data-raw-source="[Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups)">Set up groups for use in Azure DevOps Server deployments</a></li>
 <li><a href="/azure/devops/server/admin/add-administrator" data-raw-source="[Add administrators to Azure DevOps Server](/azure/devops/server/admin/add-administrator)">Add administrators to Azure DevOps Server</a></li>
 </ul></td>
-<td>For an overview of security concepts, see <a href="../security/about-permissions.md" data-raw-source="[About permissions and groups](../security/about-permissions.md)">About permissions and groups</a> and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
+<td>For an overview of security concepts, see <a href="../security/about-security-identity.md">About security, membership, and permissions</a>  and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
 </tr>
 <tr>
 <td><strong>Notifications</strong></td>
 <td><ul>
 <li>Manage collection-level notifications </li>
 </ul></td>
-<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-notifications.md)">team level</a>. </td>
+<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-global-organization-notifications.md)">team level</a>. </td>
 </tr>
 <tr>
 <td><strong>Boards, Process</strong> </td>
@@ -574,14 +574,14 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <li><a href="/azure/devops/server/admin/setup-ad-groups" data-raw-source="[Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups)">Set up groups for use in TFS deployments</a></li>
 <li><a href="/azure/devops/server/admin/add-administrator" data-raw-source="[Add administrators to TFS](/azure/devops/server/admin/add-administrator)">Add administrators to TFS</a></li>
 </ul></td>
-<td>For an overview of security concepts, see <a href="../security/about-permissions.md" data-raw-source="[About permissions and groups](../security/about-permissions.md)">About permissions and groups</a> and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
+<td>For an overview of security concepts, see <a href="../security/about-security-identity.md">About security, membership, and permissions</a>  and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
 </tr>
 <tr>
 <td><strong>Notifications</strong></td>
 <td><ul>
 <li>Manage collection-level notifications </li>
 </ul></td>
-<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-notifications.md)">team level</a>. </td>
+<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-global-organization-notifications.md)">team level</a>. </td>
 </tr>
 <tr>
 <td><strong>Build and release, Agent pools, Deployment pools</strong></td>

@@ -268,7 +268,7 @@ You can use pipeline variables to pass literal values when creating ConfigMap, a
 
 ### My Kubernetes cluster is behind a firewall and I am using hosted agents. How can I deploy to this cluster?
 
-You can grant hosted agents access through your firewall by allowing the IP addresses for the hosted agents. For more details, see [Agent IP ranges](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted#agent-ip-ranges)
+You can grant hosted agents access through your firewall by allowing the IP addresses for the hosted agents. For more details, see [Agent IP ranges](../../agents/hosted.md#agent-ip-ranges)
 
 ## Open source
 
