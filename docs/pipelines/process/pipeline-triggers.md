@@ -4,7 +4,7 @@ description: Configure pipeline triggers
 ms.topic: conceptual
 ms.author: ashkir
 author: ashokirla
-ms.date: 08/14/2020
+ms.date: 10/15/2020
 monikerRange: ">=azure-devops-2019"
 ---
 
@@ -81,79 +81,21 @@ When the a pipeline completes, the Azure DevOps runtime evaluates any pipelines 
 
 If your pipeline completion triggers don't seem to be firing, check the value of the **Default branch for manual and scheduled builds** setting for the triggered pipeline. The branch filters in that version of the pipeline are used to determine whether the pipeline completion trigger initiates a run of the pipeline. By default, **Default branch for manual and scheduled builds** is set to the default branch of the repository, but you can change it after the pipeline is created.
 
-To view and update the **Default branch for manual and scheduled builds** setting, 
+To view and update the **Default branch for manual and scheduled builds** setting,
 
-In this example, the repository's default branch is `main`, and we have the following two pipelines in the same repository.
+1. [Navigate](../get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
 
-```yml
-# source-pipeline
+    :::image type="content" source="media/pipeline-triggers/pipeline-edit.png" alt-text="Edit pipeline."::: 
 
-trigger:
-- main
+2. Choose **...** and select **Triggers**.
 
-pool:
-  vmImage: 'ubuntu-latest'
+    :::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
 
-steps:
-- script: echo Source pipeline
-```
+3. Select **YAML**, **Get sources**, and view the **Default branch for manual and scheduled builds** setting. If you change it, choose **Save** or **Save & queue** to save the change.
 
-```yml
-# triggered-pipeline
+    :::image type="content" source="media/pipeline-triggers/default-branch-setting.png" alt-text="Default branch for manual and scheduled builds setting."::: 
 
-resources:
- pipelines:
-   - pipeline: source
-     source: source-pipeline
-     trigger:
-       branches:
-        include:
-          - main
-
-trigger: none
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-- script: echo triggered pipeline
-```
-
-When the `source-pipeline` pipeline runs for `main` and completes, the `triggered-pipeline` runs, also for `main`.
-
-When the `source-pipeline` pipeline runs for `main` and completes, the Azure DevOps runtime evaluates the pipelines with pipeline completion triggers that reference the completed pipeline. Each pipeline can have multiple versions in different branches, so it looks at the branch specified by the **Default branch for manual and scheduled builds** setting to see if there is a version of the pipeline in that branch with branch filters that match the branch of the recently completed pipeline. If there is a match, the version of the pipeline that runs is different depending on whether the triggering pipeline is in the same repository as the completed pipeline.
-
-- If the triggering pipeline is in a different repository, the pipeline version in the branch specified by **Default branch for manual and scheduled builds** is run.
-- If the triggering pipeline is in the same repository, the pipeline version in the same branch as the triggering pipeline is run. Note that this version is run, even if it does not have branch filters that match the triggering pipeline's branch.
-
-Next, we create a new branch named `feature1` based off of `main`, and we update the branch filters for `triggered-pipeline` to include all branches that start with `feature`.
-
-```yml
-# triggered-pipeline feature1 branch version
-
-resources:
- pipelines:
-   - pipeline: source
-     source: source-pipeline
-     trigger:
-       branches:
-        include:
-          - main
-          - feature*
-
-trigger: none
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-- script: echo triggered pipeline
-```
-
-If we then run `source-pipeline` on `feature1`, `triggered-pipeline` won't run. 
-
-> ![NOTE]
-> There must be a version of the triggered pipeline's YAML that contains a branch filter that matches the triggering branch in the **Default branch for manual and scheduled builds** setting that contains the trigger, or else the triggered pipeline won't run. Typically this setting is set to the same branch as your repo's default branch. If your triggered pipeline's YAML isn't in this default branch, you can change this setting for that pipeline to point to the branch that contains the YAML in the YAML setting.
+### Behavior when pipeline completion triggers and CI triggers are present
 
 When you specify both CI triggers and pipeline triggers, you can expect new runs to be started every time (a) an update is made to the repository and (b) a run of the upstream pipeline is completed. Consider an example of a pipeline `B` that depends on `A`. Let us also assume that both of these pipelines use the same repository for the source code, and that both of them also have CI triggers configured. When you push an update to the repository, then:
 
