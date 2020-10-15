@@ -1,6 +1,6 @@
 ---
 title: Administer code, wiki, and work item search
-description: Setup notes and administration links for Microsoft Code, Wiki & Work Item Search in Azure DevOps Server and Team Foundation Server (TFS)
+description: Setup notes and administration links for Code, Wiki & Work Item Search in Azure DevOps Server and Team Foundation Server (TFS).
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 10/12/2020
 
 **Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS-2018 - TFS 2017**
 
-Learn how to install and uninstall the Search extension for Code, Wiki, and Work item in Azure DevOps Server.
+Learn how to install and uninstall the Search extension for Code, Wiki, and Work item in Azure DevOps Server and TFS.
 
 
 * **Configure Search (Code, Work Item, and Wiki) in Azure DevOps Server or Team Foundation Server (TFS)**

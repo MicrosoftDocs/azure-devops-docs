@@ -32,7 +32,8 @@ Visual Studio Test (TRX), and [xUnit 2](https://xunit.github.io/docs/format-xml-
 Other built-in tasks such as [Visual Studio Test task](vstest.md) and [Dot NetCore CLI task](../build/dotnet-core-cli.md) automatically publish
 test results to the pipeline, while tasks such as [Ant](../build/ant.md), [Maven](../build/maven.md),
 [Gulp](../build/gulp.md), [Grunt](../build/grunt.md), [.NET Core](../build/dotnet-core-cli.md) and [Xcode](../build/xcode.md)
-provide publishing results as an option within the task.
+provide publishing results as an option within the task, or build libraries such as [Cobertura](https://cobertura.github.io/cobertura/)
+and [JaCoCo](https://www.eclemma.org/jacoco/).
 If you are using any of these tasks, you do not need a separate **Publish Test Results** task in the pipeline.
 
 The published test results are displayed in the [Tests tab](../../test/review-continuous-test-results-after-build.md)
@@ -45,8 +46,6 @@ The following example shows the task configured to publish test results.
 
 You can also use this task in a build pipeline to **publish code coverage results**
 produced when running tests to Azure Pipelines or TFS in order to obtain coverage reporting. 
-The task supports popular coverage result formats such as [Cobertura](https://cobertura.github.io/cobertura/)
-and [JaCoCo](https://www.eclemma.org/jacoco/).
 
 ## Check prerequisites
 
