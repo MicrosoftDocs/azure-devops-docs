@@ -1,4 +1,3 @@
-
 ---
 title: Understand traceability using Azure DevOps and Azure 
 titleSuffix: Azure DevOps

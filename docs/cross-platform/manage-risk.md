@@ -73,7 +73,7 @@ Agile change management is built on the following four main values:
 
 Risk implies that actual outcomes may vary, sometimes significantly, from desired outcomes. Both the probability of this variance and the degree of variance between actual and desired outcomes is encapsulated in the term "risk." When you manage risk, you strategically minimize the variance between the outcome that you want and the actual outcome.  
   
- The ability to identify, classify, analyze, and manage risks is an organizational capability that is required to achieve a Standard CMMI Appraisal Method for Process Improvement (SCAMPI) appraisal at level 3. For more information about CMMI, see [Background to CMMI](guidance-background-to-cmmi.md).  
+ The ability to identify, classify, analyze, and manage risks is an organizational capability that is required to achieve a Standard CMMI Appraisal Method for Process Improvement (SCAMPI) appraisal at level 3. For more information about CMMI, see [Background to CMMI](/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi).  
   
  By managing these event-driven risks, a significant contribution is made to the overall goal of managing risk at the project, portfolio, and organizational levels. Good event-driven risk management contributes to an outcome that is satisfactory to all stakeholders and that deviates little from the initially desired outcome. It contributes to an expectation of "no surprises!"  
   
@@ -90,7 +90,7 @@ Risk implies that actual outcomes may vary, sometimes significantly, from desire
   
  The work item form for a risk stores data in the fields that the following illustration shows:  
   
- ![Risk work item form](media/procguid_cmmiriskform.png "ProcGuid_CMMIriskform")  
+ ![Risk work item form](/azure/devops/boards/work-items/guidance/cmmi/media/procguid_cmmiriskform.png)  
   
 ##  Select actions to be taken  
  After you create a list of risks and they have been sufficiently analyzed, it is time to decide what, if any, actions will be taken to manage these risks. Are there any actions that will reduce the probability of occurrence that you want to take now or describe in an iteration plan? Are there any actions that would mitigate the impact of occurrence that you want to take now or describe in an iteration plan? Taking actions to reduce or mitigate risks costs time and resources. This must be traded against using those resources and the available time to move the project work forward and turn the scope into working software. Document the risk reduction and mitigation actions that you plan on the Mitigation tab of the risk.  
