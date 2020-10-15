@@ -7,7 +7,7 @@ ms.topic: overview
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/15/2020
 ---
 
@@ -47,6 +47,7 @@ Individual contributors can set their user preferences, enable features that are
       **Notes**
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="1":::
@@ -60,6 +61,7 @@ Individual contributors can set their user preferences, enable features that are
       For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md)
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range="< azure-devops-2020"
 :::row:::
@@ -73,6 +75,7 @@ Individual contributors can set their user preferences, enable features that are
       For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md)
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 :::row:::
    :::column span="1":::
@@ -86,6 +89,7 @@ Individual contributors can set their user preferences, enable features that are
       For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md). 
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
@@ -100,6 +104,7 @@ Individual contributors can set their user preferences, enable features that are
       For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=">= tfs-2017 < azure-devops"
 :::row:::
@@ -114,6 +119,7 @@ Individual contributors can set their user preferences, enable features that are
       For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range="tfs-2015"
 :::row:::
@@ -127,6 +133,7 @@ Individual contributors can set their user preferences, enable features that are
       For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 :::row:::
    :::column span="1":::
@@ -139,6 +146,7 @@ Individual contributors can set their user preferences, enable features that are
       For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
@@ -153,6 +161,7 @@ Individual contributors can set their user preferences, enable features that are
       Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When a project is created, a number of notifications are defined. If you want to opt out of these, you can.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 
 <a id="team" />
@@ -174,6 +183,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       **Notes**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       **Team profile**
@@ -186,6 +196,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       Members of a team are included within the team group, which can be used in queries and **@mentions** in pull requests and work item discussions.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
@@ -203,6 +214,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view - [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). 
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range="tfs-2013"
 :::row:::
@@ -220,6 +232,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view - [Columns](../../boards/boards/add-columns.md) and [WIP limits](../../boards/boards/wip-limits.md). 
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=" >= tfs-2017"
 :::row:::
@@ -234,6 +247,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=" tfs-2015"
 :::row:::
@@ -247,6 +261,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 :::row:::
    :::column span="1":::
@@ -259,6 +274,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       Many team notifications are automatically defined when a team is added. For more information about how notifications are managed, see [About notifications](../../notifications/about-notifications.md).
    :::column-end:::
 :::row-end:::
+---
 
 
 
@@ -307,6 +323,7 @@ From the administrative **Project settings** page, you can configure settings av
       **Notes**
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
@@ -320,6 +337,7 @@ From the administrative **Project settings** page, you can configure settings av
       Update the project description or change its visibility.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range="< azure-devops"
 :::row:::
@@ -333,6 +351,7 @@ From the administrative **Project settings** page, you can configure settings av
       Update the project description or change its visibility.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=">= azure-devops-2019"
 :::row:::
@@ -346,6 +365,7 @@ From the administrative **Project settings** page, you can configure settings av
       Services that aren't use by project members can be disabled so that they don't appear in the web portal. Turning off a service removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn on the service.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 :::row:::
    :::column span="1":::
@@ -359,6 +379,7 @@ From the administrative **Project settings** page, you can configure settings av
       A default team is created when you create a project. You add a team when you want to provide a group of users in your organization a set of Agile tools, which they have full ownership to configure and manage. Teams have access to a product backlog, portfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more. For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md). 
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
@@ -376,6 +397,7 @@ From the administrative **Project settings** page, you can configure settings av
       Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=" tfs-2013"
 :::row:::
@@ -393,6 +415,7 @@ From the administrative **Project settings** page, you can configure settings av
       Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 :::row:::
    :::column span="1":::
@@ -405,6 +428,7 @@ From the administrative **Project settings** page, you can configure settings av
       Many project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-group-global-organization-notifications.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range=" >= tfs-2017"
 :::row:::
    :::column span="1":::
@@ -417,6 +441,7 @@ From the administrative **Project settings** page, you can configure settings av
       With service hooks, you can automate a task on other services, such as [Campfire, Flowdock, HipChat, and more](../../service-hooks/overview.md). You can use service hooks in custom apps and services to drive activities as events happen.
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       **Dashboards**
@@ -428,6 +453,7 @@ From the administrative **Project settings** page, you can configure settings av
       New dashboards added to a project inherit the default dashboard permissions. The default permissions allow team members to create and edit dashboards for their team.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 :::row:::
    :::column span="1":::
@@ -441,6 +467,7 @@ From the administrative **Project settings** page, you can configure settings av
       Area and iteration paths set at the project level are then used to set team defaults. To configure additional product backlogs, Kanban boards, and dashboards, you first [add a team](add-teams.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range=" >= tfs-2015"
 :::row:::
    :::column span="1":::
@@ -456,6 +483,7 @@ From the administrative **Project settings** page, you can configure settings av
       Area and iteration paths set at the project level are then used to set team defaults. To configure additional product backlogs, Kanban boards, and dashboards, you first [add a team](add-teams.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 :::row:::
    :::column span="1":::
@@ -471,6 +499,7 @@ From the administrative **Project settings** page, you can configure settings av
       You can manage code using [Git repositories](../../repos/git/index.yml) or one [TFVC repository.](../../repos/tfvc/index.yml).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range=" >= tfs-2018"
 :::row:::
    :::column span="1":::
@@ -485,6 +514,7 @@ From the administrative **Project settings** page, you can configure settings av
       Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. You can customize the test plans, test suites, and test cases using an inherited process. For more information, see [Customize a process](work/customize-process.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=" <= tfs-2017"
 :::row:::
@@ -499,6 +529,7 @@ From the administrative **Project settings** page, you can configure settings av
       Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. You can customize the test plans, test suites, and test cases using an inherited process. For more information, see [Customize a process](work/customize-process.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=" >= tfs-2018"
 :::row:::
@@ -514,6 +545,7 @@ From the administrative **Project settings** page, you can configure settings av
       To share information with your team, you can use Markdown format within a project Wiki, within your project README file, or other repository README file. For more information, see [About READMes and Wikis](../../project/wiki/about-readme-wiki.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=" tfs-2015 || tfs-2017"
 :::row:::
@@ -527,6 +559,7 @@ From the administrative **Project settings** page, you can configure settings av
       To share information with your team, you can use Markdown format within a project Wiki, within your project README file, or other repository README file. For more information, see [About READMes and Wikis](../../project/wiki/about-readme-wiki.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=" >= tfs-2015"
 :::row:::
@@ -540,6 +573,7 @@ From the administrative **Project settings** page, you can configure settings av
       Individual contributors and project administrators can request a Marketplace extension is installed. Only members of the Project Collection Administrators group can respond to these requests and actually install extensions.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 :::row:::
    :::column span="1":::
@@ -553,6 +587,7 @@ From the administrative **Project settings** page, you can configure settings av
       For more information, see [About teams and Agile tools](about-teams-and-settings.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
@@ -567,6 +602,7 @@ From the administrative **Project settings** page, you can configure settings av
       By connecting your Azure Boards project with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 :::row:::
    :::column span="1":::
@@ -579,6 +615,7 @@ From the administrative **Project settings** page, you can configure settings av
       For more information, see a [list of common service connection types](../../pipelines/library/service-endpoints.md#common-service-connection-types).
    :::column-end:::
 :::row-end:::
+---
 
 <a id="admin" />
 
@@ -645,6 +682,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       **Notes**
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="1":::
@@ -657,6 +695,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       Organization administrators can enable or disable account-level features that are in preview.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=" >= azure-devops-2019"
 :::row:::
@@ -671,6 +710,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       From the **Settings** page, you can manage the time zone, owner, region, and other settings that apply to all projects.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range="<= tfs-2018"
 :::row:::
@@ -686,6 +726,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       From the **Settings** page, you can manage the time zone, owner, region, and other settings that apply to all projects.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
@@ -703,6 +744,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       All billing gets managed through Azure. For more information, see [Billing overview](../billing/overview.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range="<= azure-devops-2020"
 :::row:::
@@ -717,6 +759,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       All billing gets managed through Azure. For more information, see [Billing overview](../billing/overview.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 :::row:::
    :::column span="1":::
@@ -731,6 +774,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       A project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, minimize the number of projects you create, to keep things simple. For more information, see [About projects and scaling your organization](../projects/about-projects.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
@@ -747,6 +791,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       Set policies to allow or disallow access by other applications or services to the organization.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
@@ -762,6 +807,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       For large organizations with a sizable number of users, we recommend that you [manage user access through Azure Active Directory](../accounts/access-with-azure-ad.md). For a small number of users, you can manage user access by adding their Microsoft Service Account (MSA) email. From the account-level Users page, you can also [export the set of users and their access levels](../security/export-users-audit-log.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range="<= azure-devops-2020"
 :::row:::
@@ -776,6 +822,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       For a small number of users, you can manage user access by adding their Microsoft Service Account (MSA) email. From the account-level Users page, you can also [export the set of users and their access levels](../security/export-users-audit-log.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
@@ -794,6 +841,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=" < azure-devops"
 :::row:::
@@ -809,6 +857,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 :::row:::
    :::column span="1":::
@@ -821,6 +870,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       Many notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-group-global-organization-notifications.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
@@ -836,6 +886,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) in the Azure DevOps tab to support planning and tracking of work items, sprints, scrums, and so on; build and release flows; code testing and tracking; and collaboration among team members.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=">= tfs-2018"
 :::row:::
@@ -849,6 +900,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       Certain rate limits are in place to ensure performance across the cloud service platform.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
@@ -863,6 +915,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       The auditing page provdides a simple view into the audit events recorded for your organization. For more information, see [Review audit log](../audit/azure-devops-auditing.md#review-audit-log), [Export audit events](../audit/azure-devops-auditing.md#export-auditing-events), or learn more about Audit [categories](../audit/azure-devops-auditing.md#categories) and [areas](../audit/azure-devops-auditing.md#areas).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=">= azure-devops-2019"
 :::row:::
@@ -877,6 +930,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       Process customization applies to Azure Boards only. You can customize the Agile tools and work tracking artifacts. Create and customize an inherited process, and then update the project to use that process. For more information, see [About process customization and inherited processes](work/inheritance-process-model.md).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=">= tfs-2018"
 :::row:::
@@ -893,6 +947,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
      You manage resources that support CI/CD operations for all projects through the **Agent pools**, **Deployment pools**, and **Retention and limits** pages.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range=" tfs-2015 || tfs-2017"
 :::row:::
@@ -908,6 +963,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
      You manage resources that support CI/CD operations for all projects through the **Agent pools** page.
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
@@ -922,6 +978,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
      Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Pay for Artifacts](../../artifacts/start-using-azure-artifacts.md#pay-for-artifacts).
    :::column-end:::
 :::row-end:::
+---
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
