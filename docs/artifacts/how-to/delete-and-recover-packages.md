@@ -118,31 +118,31 @@ Select **Build and Release**, then **Packages**. select the appropriate package 
 ::: moniker-end
 
 ### Unlisting a NuGet package using NuGet.exe
-1. Get your feed URL by navigating to your feed and selecting **Connect to feed**:
+1. Navigate to your feed and select **Connect to feed**
 
    ::: moniker range=">= azure-devops-2019"
 
     > [!div class="mx-imgBorder"] 
-    > ![Connect to feed button in the upper-right of the page](../media/connect-to-feed-azure-devops-newnav.png)
+    > ![Connect to feed button](../media/connect-to-feed-azure-devops-newnav.png)
 
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
 
     > [!div class="mx-imgBorder"]
-    > ![Connect to feed button in the upper-right of the page](../media/connect-to-feed.png)
+    > ![Connect to feed button TFS](../media/connect-to-feed.png)
 
    ::: moniker-end
 
-2. Copy the _Package Source URL_ from the **Connect to feed** window.
+2. Select **NuGet.exe** then find and Copy the _Package Source_ URL.
 
-3. Then, run:
+3. Run the following command:
 
-```no-highlight
-nuget.exe delete {your_package_id} {version} -Source {feed URL} -ApiKey key
-```
+    ```
+    nuget.exe delete {your_package_id} {version} -Source {feed URL} -ApiKey key
+    ```
 
-Currently, NuGet.exe can only **unlist** packages; Azure DevOps Services and TFS interpret `nuget.exe delete` as an unlist operation to be consistent with NuGet.org. To **delete** a package, you must use either the REST APIs or the web interface. 
+NuGet.exe currently only perform the **unlist** packages operation. Azure DevOps Services and TFS interpret the `nuget.exe delete` command as an **unlist** operation. To **delete** a package, you must use the REST API or the web interface.
 
 #### [Python](#tab/python/)
 You must be an **owner** to delete a Python package.
