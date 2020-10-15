@@ -163,11 +163,12 @@ From within your feed, select the appropriate package and select **Delete latest
 * * *
 ## Automatically delete old package versions with retention policies
 
-Over time, the number of versions for each package being hosted in Azure Artifacts or Team Foundation Server (TFS) can grow quickly. You can configure retention policies to automatically delete old packages in Azure DevOps Services or TFS to improve client performance and release storage space.
+Over time, the number of versions for each package being hosted in your feed can grow quickly. You can set up retention policies to automatically delete old packages and save storage space.
 
-With retention policies, you can set the **maximum number of versions** to retain per package, once that number is hit the oldest version of the package will be deleted. You can also set the number of **days to keep recently downloaded packages**. Packages will only be deleted by retention policies if they have not been downloaded within the number of days set.
+- **maximum number of versions**: allow you to chose how many versions of a package you want to keep.
+- **days to keep recently downloaded packages**. Packages will be deleted only if they have not been downloaded for the number of days set in here.
 
-If you'd like to retain a package version indefinitely, you can promote it to a [view](../concepts/views.md). Versions that are promoted to views are exempt from retention policies, and are retained *in addition to* those retained by the maximum number of versions retention policy. Retention policies will not delete any version that has been promoted to a view.
+If you'd like to retain a package indefinitely, you can promote it to a [view](../concepts/views.md). Versions that got promoted to views are exempt from retention policies and will be deleted.
 
 > [!NOTE]
 > Package demotion is not currently supported. If you want this feature to be added to future releases, please feel free to **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). See [Get started with feed views](../feeds/views.md#get-started-with-feed-views) for more information.
@@ -176,34 +177,34 @@ To configure retention policies:
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Navigate to Azure Artifacts:
+1. Navigate to Azure Artifacts.
 
     > [!div class="mx-imgBorder"]
     > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
-2. Select the gear icon in your feed and select **Feed settings**:
+2. Select the gear icon in your feed and select **Feed settings**.
     > [!div class="mx-imgBorder"]
     > ![Top right of screen, gear icon and then feed settings](../media/feed-settings-azure-devops-newnav.png)
 
-2. From the **Feed details** tab, in the **Retention policies** setting, enter the maximum number of versions per package to retain, and the number of days to keep recently downloaded packages:
+2. From the **Feed details** tab, in the **Retention policies** setting, enter the maximum number of versions per package to retain, and the number of days to keep recently downloaded packages.
     > [!div class="mx-imgBorder"]
     > ![Edit retention policy settings for old packages in Azure DevOps Services or TFS](../media/retention-policy-settings.png)
 
-3. Click **Save**.
+3. Select **Save**.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-1. Navigate to your feed from the **Packages** page in the **Build and Release** page group and select the gear icon: 
+1. Select **Build and Release**, then **Packages** to navigate to your feed and select the gear icon. 
     > [!div class="mx-imgBorder"]
     > ![Edit an Azure DevOps Services feed in Package](../media/edit-feed-full.png)
 
-2. From the **Retention** tab, enter the maximum number of versions per package to retain:
+2. From the **Retention** tab, enter the maximum number of versions per package to retain.
     > [!div class="mx-imgBorder"]
     > ![Edit retention policy settings for old packages in Azure DevOps Services or TFS](../media/retention-policy-settings-tfs.png)
 
-3. Click **Save**.
+3. Select **Save**.
 
 ::: moniker-end
 
