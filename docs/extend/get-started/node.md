@@ -220,7 +220,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
    After a few seconds, your extension appears in the list of published extensions. Don't worry, the extension is only visible to you.
 
-   <img src="media/published-extension.png" alt="Upload new extension for Azure DevOps or TFS" style="border: 1px solid #C3C3C3;" /> 
+   <img src="media/published-extension.png" alt="Extension appears in the list of published extensions." style="border: 1px solid #C3C3C3;" /> 
 
 ## Install your extension
 
@@ -228,7 +228,7 @@ To test an extension, it must be installed to an organization in Azure DevOps or
 
 1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare**.
 
-   <img src="media/share-menu.png" alt="Upload new extension for Azure DevOps or TFS" style="border: 1px solid #C3C3C3;" /> 
+   <img src="media/share-menu.png" alt="Select extension and choose Share." style="border: 1px solid #C3C3C3;" /> 
 
 2. Select **Organization**, and then enter the name of your organization. Select **Enter**.
 

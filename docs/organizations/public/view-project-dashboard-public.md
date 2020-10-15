@@ -48,7 +48,7 @@ To view a dashboard, choose **Dashboards**. You see the set of dashboards define
 Anonymous users won't be able to view or interact with select widgets. In place of the widget display, you'll see an image similar to the one as shown.  
 
 > [!div class="mx-imgBorder"]
-> ![Open Dashboards, anonymous user](media/unavailable-widget-image.png)
+> ![Unavailable dashboard widget.](media/unavailable-widget-image.png)
 
 The following dashboard widgets aren't available to anonymous users:
 

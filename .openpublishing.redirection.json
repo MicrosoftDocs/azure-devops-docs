@@ -16664,6 +16664,29 @@
       "source_path": "docs/cli/permissions.md",
       "redirect_url": "/azure/devops/organizations/security/manage-tokens-namespaces",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/get-started/dsc-cicd.md",
+      "redirect_url": "/azure/devops/pipelines/release/dsc-cicd"
+    },
+    {
+      "source_path": "docs/notifications/manage-team-group-notifications.md",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-global-organization-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/notifications/manage-organization-notification-settings.md",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-global-organization-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/notifications/manage-organization-notifications.md",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-global-organization-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "release-notes/docswhatsnew/azure-devops-docs-2020-09.md",
+      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
     }
   ]
 }

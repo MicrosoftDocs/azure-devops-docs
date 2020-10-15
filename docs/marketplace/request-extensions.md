@@ -110,7 +110,7 @@ To approve extensions, you must have [**edit collection-level information** perm
 
    After you approve extension requests, the extensions are automatically installed.
 
-4. [Assign those extensions](./assign-paid-extensions.md) to users who need access.
+4. [Assign those extensions](./install-extension.md) to users who need access.
 
 ::: moniker-end
 
@@ -131,7 +131,7 @@ To approve extensions, you must have [**edit collection-level information** perm
 
    After you approve extension requests, the extensions are automatically installed.
 
-4. [Assign those extensions](./assign-paid-extensions.md) to users who need access.
+4. [Assign those extensions](./install-extension.md) to users who need access.
 
 ::: moniker-end
 

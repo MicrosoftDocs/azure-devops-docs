@@ -83,7 +83,7 @@ Because work-items maintain their history when migrated from a private to public
 * Confirm that none of your pipelines expose sensitive data: credentials/secrets, obscure URLs, and private environment names.
 * Confirm that non-members don't require access to your private feeds. Builds can still access feeds, but non-members cannot.
 
-If you need to migrate build pipelines to a new project (perhaps because you're moving code or work items), you can import and export them using [YAML](../../pipelines/get-started-yaml.md).
+If you need to migrate build pipelines to a new project (perhaps because you're moving code or work items), you can import and export them using [YAML](../../pipelines/create-first-pipeline.md).
 
 ## Test
 
@@ -148,4 +148,3 @@ The new repository should be created in a project you don't mind making public.
 
 > [!div class="nextstepaction"]
 > - [Manage Azure Secrets on GitHub Repositories](https://azure.microsoft.com/blog/managing-azure-secrets-on-github-repositories/)
- 

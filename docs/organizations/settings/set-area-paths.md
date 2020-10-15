@@ -146,7 +146,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 You can list the area paths defined for a project using [az boards area project list](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area project list [--depth]
                             [--path]
                             [--project]
@@ -170,8 +170,8 @@ az boards area project list [--depth]
 For example, the following command lists the area paths to a depth of 3 for the Fabrikam Fiber project. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area project list --depth 3 --project 'Fabrikam Fiber' --output table
+```azurecli
+az boards area project list --depth 3 --project 'Fabrikam Fiber' --output table
 ID     Identifier                            Name                Path                                                Has Children
 -----  ------------------------------------  ------------------  --------------------------------------------------  --------------
 55302  91d8644a-e430-4fd0-aa95-742ea98770a3  Fabrikam Fiber      \Fabrikam Fiber\Area                                True
@@ -251,7 +251,7 @@ Only one area is defined, by default. Add area paths under the root area path fo
 You can add area paths to a project using [az boards area project create](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area project create --name
                               [--path]
                               [--project]
@@ -274,8 +274,8 @@ az boards area project create --name
 For example, the following command adds the Voice area path to the Fabrikam Fiber project at the root node.  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area project create --name Voice --project "Fabrikam Fiber"
+```azurecli
+az boards area project create --name Voice --project "Fabrikam Fiber"
 {
   "attributes": null,
   "children": null,
@@ -294,8 +294,8 @@ C:\WINDOWS\system32>az boards area project create --name Voice --project "Fabrik
 And, here is the same command with the table output format. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area project create --name Voice --project "Fabrikam Fiber" --output table
+```azurecli
+az boards area project create --name Voice --project "Fabrikam Fiber" --output table
 ID     Identifier                            Name    Path                         Has Children
 -----  ------------------------------------  ------  ---------------------------  --------------
 55413  3c16691b-160c-4498-ab42-aa77b7f354fc  Voice  \Fabrikam Fiber\Area\Voice  False
@@ -351,7 +351,7 @@ You open team settings from the top navigation bar. Select the team you want and
 You can list the area paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area team list --team
                          [--project] 
 ```
@@ -364,8 +364,8 @@ az boards area team list --team
 For example, the following command lists the area paths for the Service Delivery team. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area team list --team "Service Delivery" --project "Fabrikam Fiber" --output table
+```azurecli
+az boards area team list --team "Service Delivery" --project "Fabrikam Fiber" --output table
 Area                             Include sub areas    Is Default
 -------------------------------  -------------------  ------------
 Fabrikam Fiber\Service Delivery  True                 True
@@ -503,7 +503,7 @@ The default area path determines the default area path assigned to work items th
 You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area team add --path  --team
                         [--include-sub-areas {false, true}]
                         [--project]
@@ -527,8 +527,8 @@ az boards area team add --path  --team
 For example, the following command adds the Voice area path to the Voice team for the Fabrikam Fiber project, sets it as the default and to include sub-areas. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area team add --path "\Fabrikam Fiber\Voice" --team Voice --project "Fabrikam Fiber" --include-sub-areas --set-as-default --include-sub-areas true --output table
+```azurecli
+az boards area team add --path "\Fabrikam Fiber\Voice" --team Voice --project "Fabrikam Fiber" --include-sub-areas --set-as-default --include-sub-areas true --output table
 Area                                   Include sub areas    Is Default
 -------------------------------------  -------------------  ------------
 Fabrikam Fiber\Service Delivery\Voice  False                False
@@ -605,7 +605,7 @@ You can rename, move, or delete an area path for a project, using [az boards are
 To rename or move an area path, use the `az boards area project update` command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area project update --path
                               [--child-id]
                               [--name]
@@ -626,8 +626,8 @@ az boards area project update --path
 For example, the following command renames the Voice area path to Voice and Web for the Fabrikam Fiber project. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area project update --path "\Fabrikam Fiber\Area\Voice" --name "Voice and Web" --project "Fabrikam Fiber" --output table
+```azurecli
+az boards area project update --path "\Fabrikam Fiber\Area\Voice" --name "Voice and Web" --project "Fabrikam Fiber" --output table
 ID     Identifier                            Name           Path                                Has Children
 -----  ------------------------------------  -------------  ----------------------------------  --------------
 55412  b00f86a2-3d49-4ad2-af01-da2537947baa  Voice and Web  \Fabrikam Fiber\Area\Voice and Web  False
@@ -640,7 +640,7 @@ ID     Identifier                            Name           Path                
 To remove an area path from a team, use [az boards area team remove](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-remove).
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area team remove --path
                            --team
                            [--project]
@@ -657,7 +657,7 @@ az boards area team remove --path
 For example, the following command removes the \Service Delivery\Voice area path from the Voice team of the Fabrikam Fiber project. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area team remove --path "\Fabrikam Fiber\Service Delivery\Voice" --team Voice --project "Fabrikam Fiber" --output table
 ```
 

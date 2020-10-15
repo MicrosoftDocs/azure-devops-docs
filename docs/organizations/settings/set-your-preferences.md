@@ -85,7 +85,7 @@ From your profile page, you can change your information and  account preferences
 For **Security**, **Notification settings**, and **Manage features** profile menu options, see the following articles. 
 - [Use personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
 - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
-- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)  
+- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)  
 - [Manage or enable features](../../project/navigation/preview-features.md). 
 
 ::: moniker-end
@@ -122,8 +122,8 @@ Your profile settings are updated.
 
 ## Related articles
 
-- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)  
+- [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)  
 - [Usage](../../integrate/concepts/rate-limits.md)  
 - [Manage or enable features](../../project/navigation/preview-features.md)  
-- [Set favorites](../../notifications/howto-manage-personal-notifications.md)  
-- [Personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
+- [Set favorites](../../notifications/manage-your-personal-notifications.md)  
+- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)

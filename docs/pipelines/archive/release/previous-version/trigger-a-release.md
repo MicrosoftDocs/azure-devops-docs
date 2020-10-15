@@ -28,15 +28,15 @@ If you haven't created your release path yet, go
 **[here](manage-your-release.md)** to do that.
 
 Also, if you haven't yet set up your build system, 
-**[do that now](https://msdn.microsoft.com/library/ms252495.aspx)**.
+**[do that now](../../../agents/agents.md)**.
 
 ## Configure your build pipeline
  
 1. If you don't have permission to edit build definitions, 
-   **[get them now](https://msdn.microsoft.com/library/ms252587%28v%3Dvs.140%29.aspx)**.
+   **[get them now](../../../../organizations/security/permissions.md)**.
 
 1. From Visual Studio, Team Explorer, 
-   **[connect to the project](https://msdn.microsoft.com/library/ms181475%28v%3Dvs.140%29.aspx)** 
+   **[connect to the project](../../../../organizations/projects/connect-to-projects.md?viewFallbackFrom=vsts)** 
    that you want to work in (Keyboard: Ctrl + 0, C).
 
 1. On the ![Builds icon](media/trigger-release-09.png)&nbsp;**Builds** page 
@@ -113,10 +113,10 @@ Also, if you haven't yet set up your build system,
 with the corresponding release management process template.
 
 1. If you don't have permission to contribute files or to edit build definitions, 
-   **[get them now](https://msdn.microsoft.com/library/ms252587%28v%3Dvs.140%29.aspx)**.
+   **[get them now](../../../../organizations/security/permissions.md)**.
 
 1. From Visual Studio, Team Explorer, 
-   **[connect to the project](https://msdn.microsoft.com/library/ms181475%28v%3Dvs.140%29.aspx)** 
+   **[connect to the project](../../../../organizations/projects/connect-to-projects.md?viewFallbackFrom=vsts)** 
    you want to work in (Keyboard: Ctrl + 0, C).
 
 1. In the folder **\Program Files (x86)\ Microsoft Visual Studio 12.0\ReleaseManagement\bin**

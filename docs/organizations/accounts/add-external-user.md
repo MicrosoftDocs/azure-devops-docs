@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-Learn how to invite external users to your organization. If you access Azure DevOps via Azure Active Directory (Azure AD), you must add the identities of those users to your Azure AD. Doing so also grants the users additional privileges. For more information, see [additional organization-level resources](resources-granted-to-project-members.md).
+Learn how to invite external users to your organization. If you access Azure DevOps via Azure Active Directory (Azure AD), you must add the identities of those users to your Azure AD. Doing so also grants the users additional privileges. For more information, see [additional organization-level resources](../projects/resources-granted-to-project-members.md).
 
 ## Prerequisites
 
@@ -80,8 +80,6 @@ A guest user can add other guest users to the organization after being granted t
 ## Related articles
 
 * [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
-* [Migrate to group-based resource management](migrate-to-group-based-resource-management-in-VSTS.md)
+* [Migrate to group-based resource management](./assign-access-levels-by-group-membership.md)
 * [Assign access levels to users by group membership](assign-access-levels-by-group-membership.md)
 * [Restrict invitations to new users](../security/restrict-invitations.md)
-
-

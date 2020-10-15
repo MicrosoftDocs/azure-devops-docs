@@ -50,7 +50,7 @@ You must be a [Project Collection Administrator](../organizations/security/set-p
 
 You can uninstall an extension with the [az devops extension uninstall](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-uninstall) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
-```CLI 
+```azurecli 
 az devops extension uninstall --extension-name
                               --publisher-name
                               [--org]
@@ -68,7 +68,7 @@ az devops extension uninstall --extension-name
 
 The following command uninstalls the **Timetracker** extension without prompting for confirmation.  
 
-```CLI
+```azurecli
 az devops extension uninstall --extension-name Timetracker --publisher-name 7pace --yes
 ```
 <a id="disable-extension" /> 
@@ -77,7 +77,7 @@ az devops extension uninstall --extension-name Timetracker --publisher-name 7pac
 
 You can disable an extension with the [az devops extension disable](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-disable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
-```CLI 
+```azurecli 
 az devops extension disable --extension-name
                             --publisher-name
                             [--org]
@@ -93,7 +93,7 @@ az devops extension disable --extension-name
 
 The following command disables the **Timetracker** extension and shows the result in table format.  
 
-```CLI
+```azurecli
 az devops extension disable --extension-name Timetracker --publisher-name 7pace --output table
 
 Publisher Id    Extension Id    Name         Version      Last Updated     States
@@ -137,7 +137,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 You can enable an extension with the [az devops extension enable](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-enable) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
-```CLI 
+```azurecli 
 az devops extension enable --extension-name
                            --publisher-name
                            [--org]
@@ -153,7 +153,7 @@ az devops extension enable --extension-name
 
 The following command enables the **Timetracker** extension and shows the result in table format.  
 
-```CLI 
+```azurecli 
 az devops extension enable --extension-name Timetracker --publisher-name 7pace --output table
 
 Publisher Id    Extension Id    Name         Version      Last Updated     States
@@ -165,7 +165,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 You can list the extensions that are installed in your organization with the [az devops extension list](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-list) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
-```CLI
+```azurecli
 az devops extension list [--include-built-in {false, true}]
                          [--include-disabled {false, true}]
                          [--org]
@@ -181,7 +181,7 @@ az devops extension list [--include-built-in {false, true}]
 
 The following command lists extensions in your organization. It excludes the **disabled** and **built-in** extensions, and shows the results in table format.
 
-```CLI 
+```azurecli 
 az devops extension list --include-built-in false --include-disabled false -output table
 
 Publisher Id    Extension Id             Name                     Version              Last Updated     States         		 Flags
@@ -210,7 +210,7 @@ ms-devlabs      WorkItemVisualizatio...  Work Item Visualizat...  1.4.64        
 
 You can list the details about an extension with the [az devops extension show](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-show) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
-```CLI 
+```azurecli 
 az devops extension show --extension-name
                          --publisher-name
                          [--org]
@@ -226,7 +226,7 @@ az devops extension show --extension-name
 
 The following command shows information about the **Timetracker** extension in table format.  
 
-```CLI 
+```azurecli 
 az devops extension show --extension-name Timetracker --publisher-name 7pace --output table
 
 Publisher Id    Extension Id    Name         Version      Last Updated     States

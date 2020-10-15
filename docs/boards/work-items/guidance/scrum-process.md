@@ -74,7 +74,7 @@ All processes&mdash;Agile, Scrum, and CMMI&mdash;support [building status and tr
 
 To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
 
-[![Edit query](../../../report/dashboards/media/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/media/gs-chart-create.png)](../../../report/charts.md)[![Add dashboard.](../../../report/dashboards/media/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
+[![Edit query](../../../report/dashboards/media/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/media/gs-chart-create.png)](../../../report/dashboards/charts.md)[![Add dashboard.](../../../report/dashboards/media/gs-chart-add-dashboard.png)](../../../report/dashboards/add-charts-to-dashboard.md)  
 
 
 [!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
@@ -99,7 +99,7 @@ If you need to add reporting services or update reports to the latest versions, 
 
 ## SharePoint portal dashboards 
 
-You can access the [Release](../../../report/sharepoint-dashboards/release-scrum.md) dashboard displayed through the SharePoint project portal. This dashboard displays project data, support investigation tasks, and help teams to perform common tasks quickly. 
+You can access the [Release](/previous-versions/azure/devops/report/sharepoint-dashboards/release-scrum) dashboard displayed through the SharePoint project portal. This dashboard displays project data, support investigation tasks, and help teams to perform common tasks quickly. 
 
 To access this dashboard, your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../project/configure-or-add-a-project-portal.md).
 

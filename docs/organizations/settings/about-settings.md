@@ -83,7 +83,7 @@ Individual contributors can set their user preferences, enable features that are
 <td><ul>
 <li><a href="../../notifications/unsubscribe-default-notification.md" data-raw-source="[View your subscriptions, opt-out as needed](../../notifications/unsubscribe-default-notification.md)">View your subscriptions, opt-out as needed</a></li>
 <li><a href="../../notifications/change-email-address.md" data-raw-source="[Change your preferred email address](../../notifications/change-email-address.md)">Change your preferred email address</a></li>
-<li><a href="../../notifications/howto-manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)">Manage personal notifications</a></li>
+<li><a href="/azure/devops/notifications/manage-your-personal-notifications" data-raw-source="[Manage personal notifications](../../notifications/manage-your-personal-notifications.md)">Manage personal notifications</a></li>
 </ul></td>
 <td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When a project is created, a number of notifications are defined. If you want to opt out of these, you can.  </li>
 </ul></td>
@@ -139,7 +139,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 <tr>
 <td> <strong>Notifications</strong> </td>
 <td><ul>
-<li><a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[Manage team notifications](../../notifications/howto-manage-team-notifications.md)">Manage team notifications</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage team notifications</a></li>
 </ul></td>
 <td>A number of team notifications are automatically defined when a team is added. To learn more about how notifications are managed, see <a href="../../notifications/about-notifications.md" data-raw-source="[About notifications](../../notifications/about-notifications.md)">About notifications</a>.   </td>
 </tr>
@@ -221,21 +221,21 @@ From the administrative **Project settings** pages, you can configure settings a
 <li><a href="../security/permissions.md#project-level" data-raw-source="[Manage project-level permissions](../security/permissions.md#project-level)">Manage project-level permissions</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Set build and release permissions](../../pipelines/policies/set-permissions.md)">Set build and release permissions</a></li>
 </ul></td>
-<td>Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. <p>For an overview of security concepts, see <a href="../security/about-permissions.md" data-raw-source="[About permissions and groups](../security/about-permissions.md)">About permissions and groups</a> and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of project-level permissions, see <a href="../security/permissions.md#project-level" data-raw-source="[Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level)">Permissions and groups reference, Project-level permissions</a>.</p> </td>
+<td>Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. <p>For an overview of security concepts, see <a href="../security/about-security-identity.md">About security, membership, and permissions</a>  and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of project-level permissions, see <a href="../security/permissions.md#project-level" data-raw-source="[Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level)">Permissions and groups reference, Project-level permissions</a>.</p> </td>
 </tr>
 <tr>
 <td> <strong>Notifications</strong> </td>
 <td><ul>
 <li>Manage project-level notifications</li>
 </ul></td>
-<td>A number of project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the <a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[team level](../../notifications/howto-manage-team-notifications.md)">team level</a>.</td>
+<td>A number of project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-global-organization-notifications.md)">team level</a>.</td>
 </tr>
 <tr>
 <td><strong>Service Hooks</strong></td>
 <td><ul>
-<li><a href="../../service-hooks/index.md" data-raw-source="[Configure service hooks](../../service-hooks/index.md)">Configure service hooks</a></li>
+<li><a href="/azure/devops/service-hooks/overview" data-raw-source="[Configure service hooks](../../service-hooks/overview.md)">Configure service hooks</a></li>
 </ul></td>
-<td>With service hooks, you can automate a task on other services, such as <a href="../../service-hooks/services/campfire.md" data-raw-source="[Campfire](../../service-hooks/services/campfire.md)">Campfire</a>, <a href="../../service-hooks/services/flowdock.md" data-raw-source="[Flowdock](../../service-hooks/services/flowdock.md)">Flowdock</a>, <a href="../../service-hooks/services/hipchat.md" data-raw-source="[HipChat](../../service-hooks/services/hipchat.md)">HipChat</a>, and more. You can use service hooks in custom apps and services to drive activities as events happen. </td>
+<td>With service hooks, you can automate a task on other services, such as <a href="/azure/devops/service-hooks/overview" data-raw-source="[Campfire](../../service-hooks/overview.md)">Campfire</a>, <a href="/azure/devops/service-hooks/overview" data-raw-source="[Flowdock](../../service-hooks/overview.md)">Flowdock</a>, <a href="/azure/devops/service-hooks/overview" data-raw-source="[HipChat](../../service-hooks/overview.md)">HipChat</a>, and more. You can use service hooks in custom apps and services to drive activities as events happen. </td>
 </tr>
 <tr>
 <td><strong>Dashboards</strong> </td>
@@ -374,7 +374,7 @@ For an overview of managing your organization, see [About organization managemen
 <td><ul>
 <li>Add and manage projects: <a href="../projects/create-project.md" data-raw-source="[Create](../projects/create-project.md)">Create</a>, <a href="../projects/rename-project.md" data-raw-source="[Rename](../projects/rename-project.md)">Rename</a>, <a href="../projects/delete-project.md" data-raw-source="[Delete](../projects/delete-project.md)">Delete</a></li>
 <li><a href="../security/add-users-team-project.md" data-raw-source="[Add users to projects](../security/add-users-team-project.md)">Add users to projects</a></li>
-<li><a href="../accounts/save-team-project-data.md" data-raw-source="[Save project data](../accounts/save-team-project-data.md)">Save project data</a></li>
+<li><a href="/azure/devops/organizations/projects/save-project-data" data-raw-source="[Save project data](../projects/save-project-data.md)">Save project data</a></li>
 </ul></td>
 <td>A project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you&#39;ll want to minimize the number of projects you create, to keep things simple. Learn more <a href="../projects/about-projects.md" data-raw-source="[About projects and scaling your organization](../projects/about-projects.md)">About projects and scaling your organization</a>. </td>
 </tr>
@@ -404,20 +404,20 @@ For an overview of managing your organization, see [About organization managemen
 <li><a href="../accounts/connect-organization-to-azure-ad.md" data-raw-source="[Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)">Connect to Azure Active Directory</a></li>
 <li><a href="../accounts/change-application-access-policies.md" data-raw-source="[Manage conditional access](../accounts/change-application-access-policies.md)">Manage conditional access</a></li>
 </ul></td>
-<td>For an overview of security concepts, see <a href="../security/about-permissions.md" data-raw-source="[About permissions and groups](../security/about-permissions.md)">About permissions and groups</a> and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
+<td>For an overview of security concepts, see <a href="../security/about-security-identity.md">About security, membership, and permissions</a>  and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
 </tr>
 <tr>
 <td><strong>Notifications</strong></td>
 <td><ul>
-<li><a href="../../notifications/howto-manage-organization-notifications.md" data-raw-source="[Manage collection-level notifications](../../notifications/howto-manage-organization-notifications.md)">Manage collection-level notifications</a> </li>
+<li><a href="/azure/devops/notifications/manage-organization-notifications" data-raw-source="[Manage collection-level notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage collection-level notifications</a> </li>
 </ul></td>
-<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the <a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[team level](../../notifications/howto-manage-team-notifications.md)">team level</a>. </td>
+<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-global-organization-notifications.md)">team level</a>. </td>
 </tr>
 <tr>
 <td><strong>Extensions</strong></td>
 <td><ul>
 <li><a href="../../marketplace/install-extension.md" data-raw-source="[Install and manage Marketplace extensions](../../marketplace/install-extension.md)">Install and manage Marketplace extensions</a></li>
-<li><a href="../../marketplace/approve-extensions.md" data-raw-source="[Approve extensions](../../marketplace/approve-extensions.md)">Approve extensions</a></li>
+<li><a href="/azure/devops/marketplace/request-extensions" data-raw-source="[Approve extensions](../../marketplace/request-extensions.md)">Approve extensions</a></li>
 <li><a href="../../marketplace/how-to/grant-permissions.md" data-raw-source="[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)">Grant permissions to manage extensions</a></li>
 <li><a href="../../marketplace/uninstall-disable-extensions.md" data-raw-source="[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)">Uninstall or disable extensions</a></li>
 </ul></td>
@@ -443,7 +443,7 @@ For an overview of managing your organization, see [About organization managemen
 <td><strong>Build and release</strong></td>
 <td><ul>
 <li><a href="../../pipelines/policies/retention.md" data-raw-source="[Set retention policies](../../pipelines/policies/retention.md)">Set retention policies</a></li>
-<li><a href="../../pipelines/licensing/concurrent-pipelines-ts.md" data-raw-source="[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)">Set resource limits for pipelines</a></li>
+<li><a href="/azure/devops/pipelines/licensing/concurrent-jobs" data-raw-source="[Set resource limits for pipelines](../../pipelines/licensing/concurrent-jobs.md)">Set resource limits for pipelines</a></li>
 <li><a href="../../pipelines/agents/pools-queues.md" data-raw-source="[Add and manage agent pools](../../pipelines/agents/pools-queues.md)">Add and manage agent pools</a></li>
 <li><a href="../../pipelines/release/deployment-groups/index.md" data-raw-source="[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)">Add and manage deployment pools</a></li>
 </ul></td>
@@ -478,7 +478,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 <td><ul>
 <li>Add and manage projects: <a href="../projects/create-project.md" data-raw-source="[Create](../projects/create-project.md)">Create</a>, <a href="../projects/rename-project.md" data-raw-source="[Rename](../projects/rename-project.md)">Rename</a>, <a href="../projects/delete-project.md" data-raw-source="[Delete](../projects/delete-project.md)">Delete</a></li>
 <li><a href="../security/add-users-team-project.md" data-raw-source="[Add users to projects](../security/add-users-team-project.md)">Add users to projects</a></li>
-<li><a href="../accounts/save-team-project-data.md" data-raw-source="[Save project data](../accounts/save-team-project-data.md)">Save project data</a></li>
+<li><a href="/azure/devops/organizations/projects/save-project-data" data-raw-source="[Save project data](../projects/save-project-data.md)">Save project data</a></li>
 </ul></td>
 <td>A project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you&#39;ll want to minimize the number of projects you create, to keep things simple. Learn more <a href="../projects/about-projects.md" data-raw-source="[About projects and scaling your organization](../projects/about-projects.md)">About projects and scaling your organization</a>. </td>
 </tr>
@@ -491,14 +491,14 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 <li><a href="/azure/devops/server/admin/setup-ad-groups" data-raw-source="[Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups)">Set up groups for use in Azure DevOps Server deployments</a></li>
 <li><a href="/azure/devops/server/admin/add-administrator" data-raw-source="[Add administrators to Azure DevOps Server](/azure/devops/server/admin/add-administrator)">Add administrators to Azure DevOps Server</a></li>
 </ul></td>
-<td>For an overview of security concepts, see <a href="../security/about-permissions.md" data-raw-source="[About permissions and groups](../security/about-permissions.md)">About permissions and groups</a> and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
+<td>For an overview of security concepts, see <a href="../security/about-security-identity.md">About security, membership, and permissions</a>  and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
 </tr>
 <tr>
 <td><strong>Notifications</strong></td>
 <td><ul>
 <li>Manage collection-level notifications </li>
 </ul></td>
-<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the <a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[team level](../../notifications/howto-manage-team-notifications.md)">team level</a>. </td>
+<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-global-organization-notifications.md)">team level</a>. </td>
 </tr>
 <tr>
 <td><strong>Boards, Process</strong> </td>
@@ -512,7 +512,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 <td><strong>Build and release, Agent pools, Deployment pools</strong></td>
 <td><ul>
 <li><a href="../../pipelines/policies/retention.md" data-raw-source="[Set retention policies](../../pipelines/policies/retention.md)">Set retention policies</a></li>
-<li><a href="../../pipelines/licensing/concurrent-pipelines-ts.md" data-raw-source="[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)">Set resource limits for pipelines</a></li>
+<li><a href="/azure/devops/pipelines/licensing/concurrent-jobs" data-raw-source="[Set resource limits for pipelines](../../pipelines/licensing/concurrent-jobs.md)">Set resource limits for pipelines</a></li>
 <li><a href="../../pipelines/agents/pools-queues.md" data-raw-source="[Add and manage agent pools](../../pipelines/agents/pools-queues.md)">Add and manage agent pools</a></li>
 <li><a href="../../pipelines/release/deployment-groups/index.md" data-raw-source="[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)">Add and manage deployment pools</a></li>
 </ul></td>
@@ -522,8 +522,8 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 <td><strong>Extensions</strong></td>
 <td><ul>
 <li><a href="../../marketplace/install-extension.md" data-raw-source="[Install and manage Marketplace extensions](../../marketplace/install-extension.md)">Install and manage Marketplace extensions</a></li>
-<li><a href="../../marketplace/approve-extensions.md" data-raw-source="[Approve extensions](../../marketplace/approve-extensions.md)">Approve extensions</a></li>
-<li><a href="../../marketplace/assign-paid-extensions.md" data-raw-source="[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)">Assign paid extension access to users</a></li>
+<li><a href="/azure/devops/marketplace/request-extensions" data-raw-source="[Approve extensions](../../marketplace/request-extensions.md)">Approve extensions</a></li>
+<li><a href="/azure/devops/marketplace/install-extension" data-raw-source="[Assign paid extension access to users](../../marketplace/install-extension.md)">Assign paid extension access to users</a></li>
 <li><a href="../billing/buy-basic-access-add-users.md" data-raw-source="[Change the number of paid users](../billing/buy-basic-access-add-users.md)">Change the number of paid users</a> </li>
 <li><a href="../../marketplace/how-to/grant-permissions.md" data-raw-source="[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)">Grant permissions to manage extensions</a></li>
 <li><a href="../../marketplace/uninstall-disable-extensions.md" data-raw-source="[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)">Uninstall or disable extensions</a></li>
@@ -561,7 +561,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <td><ul>
 <li>Add and manage projects: <a href="../projects/create-project.md" data-raw-source="[Create](../projects/create-project.md)">Create</a>, <a href="../projects/rename-project.md" data-raw-source="[Rename](../projects/rename-project.md)">Rename</a>, <a href="../projects/delete-project.md" data-raw-source="[Delete](../projects/delete-project.md)">Delete</a></li>
 <li><a href="../security/add-users-team-project.md" data-raw-source="[Add users to projects](../security/add-users-team-project.md)">Add users to projects</a></li>
-<li><a href="../accounts/save-team-project-data.md" data-raw-source="[Save project data](../accounts/save-team-project-data.md)">Save project data</a></li>
+<li><a href="/azure/devops/organizations/projects/save-project-data" data-raw-source="[Save project data](../projects/save-project-data.md)">Save project data</a></li>
 </ul></td>
 <td>A project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you&#39;ll want to minimize the number of projects you create, to keep things simple. Learn more <a href="../projects/about-projects.md" data-raw-source="[About projects and scaling your organization](../projects/about-projects.md)">About projects and scaling your organization</a>. </td>
 </tr>
@@ -574,20 +574,20 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <li><a href="/azure/devops/server/admin/setup-ad-groups" data-raw-source="[Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups)">Set up groups for use in TFS deployments</a></li>
 <li><a href="/azure/devops/server/admin/add-administrator" data-raw-source="[Add administrators to TFS](/azure/devops/server/admin/add-administrator)">Add administrators to TFS</a></li>
 </ul></td>
-<td>For an overview of security concepts, see <a href="../security/about-permissions.md" data-raw-source="[About permissions and groups](../security/about-permissions.md)">About permissions and groups</a> and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
+<td>For an overview of security concepts, see <a href="../security/about-security-identity.md">About security, membership, and permissions</a>  and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
 </tr>
 <tr>
 <td><strong>Notifications</strong></td>
 <td><ul>
 <li>Manage collection-level notifications </li>
 </ul></td>
-<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the <a href="../../notifications/howto-manage-team-notifications.md" data-raw-source="[team level](../../notifications/howto-manage-team-notifications.md)">team level</a>. </td>
+<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the <a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[team level](../../notifications/manage-team-group-global-organization-notifications.md)">team level</a>. </td>
 </tr>
 <tr>
 <td><strong>Build and release, Agent pools, Deployment pools</strong></td>
 <td><ul>
 <li><a href="../../pipelines/policies/retention.md" data-raw-source="[Set retention policies](../../pipelines/policies/retention.md)">Set retention policies</a></li>
-<li><a href="../../pipelines/licensing/concurrent-pipelines-ts.md" data-raw-source="[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)">Set resource limits for pipelines</a></li>
+<li><a href="/azure/devops/pipelines/licensing/concurrent-jobs" data-raw-source="[Set resource limits for pipelines](../../pipelines/licensing/concurrent-jobs.md)">Set resource limits for pipelines</a></li>
 <li><a href="../../pipelines/agents/pools-queues.md" data-raw-source="[Add and manage agent pools](../../pipelines/agents/pools-queues.md)">Add and manage agent pools</a></li>
 <li><a href="../../pipelines/release/deployment-groups/index.md" data-raw-source="[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)">Add and manage deployment pools</a></li>
 </ul></td>
@@ -596,9 +596,9 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <tr>
 <td><strong>Extensions</strong></td>
 <td><ul>
-<li><a href="../../marketplace/install-vsts-extension.md" data-raw-source="[Install and manage Marketplace extensions](../../marketplace/install-vsts-extension.md)">Install and manage Marketplace extensions</a></li>
-<li><a href="../../marketplace/approve-extensions.md" data-raw-source="[Approve extensions](../../marketplace/approve-extensions.md)">Approve extensions</a></li>
-<li><a href="../../marketplace/assign-paid-extensions.md" data-raw-source="[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)">Assign paid extension access to users</a></li>
+<li><a href="/azure/devops/marketplace/install-extension" data-raw-source="[Install and manage Marketplace extensions](../../marketplace/install-extension.md)">Install and manage Marketplace extensions</a></li>
+<li><a href="/azure/devops/marketplace/request-extensions" data-raw-source="[Approve extensions](../../marketplace/request-extensions.md)">Approve extensions</a></li>
+<li><a href="/azure/devops/marketplace/install-extension" data-raw-source="[Assign paid extension access to users](../../marketplace/install-extension.md)">Assign paid extension access to users</a></li>
 <li><a href="../billing/buy-basic-access-add-users.md" data-raw-source="[Change the number of paid users](../billing/buy-basic-access-add-users.md)">Change the number of paid users</a> </li>
 <li><a href="../../marketplace/how-to/grant-permissions.md" data-raw-source="[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)">Grant permissions to manage extensions</a></li>
 <li><a href="../../marketplace/uninstall-disable-extensions.md" data-raw-source="[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)">Uninstall or disable extensions</a></li>
@@ -629,6 +629,6 @@ For additional information, see [Team Foundation Server Administration Documenta
 
 ## Related articles
 
-- [Resources granted to project members](../accounts/resources-granted-to-project-members.md) 
+- [Resources granted to project members](../projects/resources-granted-to-project-members.md) 
 - [Permissions and groups reference](../security/permissions.md) 
 - [Rate limits](../../integrate/concepts/rate-limits.md)
