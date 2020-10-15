@@ -180,7 +180,7 @@ To fix this issue you will need to modify the supported account types and who ca
 
 ### Automatically created service principal client secret is expired
 
-The recommended way to create a service connection in Azure Devops Services is through the "Automatic" method. This will create a service principal for you in the Azure Portal so you don't need to do so manually. An issue that often arises is that service principal's token will expire, and users have to create a new one. This isn't the case, and users can generate a new secret for that automatically created service principal. To do so, follow the steps below:
+An issue that often arises with automatically created service principals is that the service principal's token expires and needs to be renewed. Users can renew the token for automatically created service principals by following these steps::
 
 1. Navigate to the ARM service connection that was created through the "Automatic" method.
 
