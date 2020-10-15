@@ -18,7 +18,7 @@ ms.date: 12/13/2019
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. This sequence walks you through the sign-up process for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). In the end, you'll have a project the uses the [Basic process for work tracking](what-is-azure-boards-basic-process.md).
+Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. This sequence walks you through the sign-up process for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). In the end, you'll have a project the uses the [Basic process for work tracking](./what-is-azure-boards.md).
 
 You can sign up for free with either a Microsoft or GitHub account. If you don't have a Microsoft account, this article will guide you in acquiring one. 
 
@@ -168,7 +168,7 @@ You can add and invite others to work on your project by adding their email addr
         - **Project Administrators**: Assign to users who will configure project resources.  
 		
 	> [!NOTE]  
-	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
+	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
 
 4. When you're done, select **Add** to complete your invitation.
 
@@ -201,6 +201,4 @@ You can rename your project or change it's visibility. To learn more about manag
 - [Manage projects](../../organizations/projects/about-projects.md)
 - [Manage organizations](../../organizations/accounts/organization-management.md)
 - [About access levels](../../organizations/security/access-levels.md)
-- [Define organizations and projects](../../user-guide/define-organizations-and-projects.md)
-
-
+- [Define organizations and projects](../../user-guide/plan-your-azure-devops-org-structure.md)

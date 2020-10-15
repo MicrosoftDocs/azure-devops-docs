@@ -1039,7 +1039,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | [.NET](apps/aspnet/build-aspnet-4.md) | ASP.NET |
 | [.NET Core](ecosystems/dotnet-core.md) | ASP.NET Core |
 | [C++](apps/windows/cpp.md) | .NET Desktop | 
-| [Go](apps/go/go.md) | Go |
+| [Go](./ecosystems/go.md) | Go |
 | [Java](ecosystems/java.md) | Gradle |
 | [JavaScript](ecosystems/javascript.md) | Node.js |
 | [Xcode](ecosystems/xcode.md) | Xcode |
@@ -1076,7 +1076,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
   * [Visual Studio with Git for Windows](../repos/git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
   * [Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
   * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
-  * [IntelliJ](../java/download-intellij-plug-in.md)
+  * [IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
   * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
 
 * Services
@@ -1095,7 +1095,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
   * [Visual Studio with TFVC](../repos/tfvc/share-your-code-in-tfvc-vs.md)
   * [Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
   * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
-  * [IntelliJ](../java/download-intellij-plug-in.md)
+  * [IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
   * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
 
 * Services
@@ -1238,9 +1238,9 @@ When you manually queue a build, you can, for a single run of the build:
 
 * In a TFVC repository
 
-  - Specify the source version as a [label](https://msdn.microsoft.com/library/ms181439.aspx) or [changeset](https://msdn.microsoft.com/library/ms181408.aspx).
+  - Specify the source version as a [label](../repos/tfvc/use-labels-take-snapshot-your-files.md?viewFallbackFrom=vsts) or [changeset](../repos/tfvc/find-view-changesets.md?viewFallbackFrom=vsts).
 
-  - Run a private build of a [shelveset](https://msdn.microsoft.com/library/ms181403.aspx). (You can use this option on either a [Microsoft-hosted agent](agents/hosted.md) or a [self-hosted agent](agents/agents.md).)
+  - Run a private build of a [shelveset](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md?viewFallbackFrom=vsts). (You can use this option on either a [Microsoft-hosted agent](agents/hosted.md) or a [self-hosted agent](agents/agents.md).)
 
 ::: moniker-end
 
@@ -1308,5 +1308,4 @@ To learn more about build pipeline settings, see:
 
 <!-- ENDSECTION -->
 
-::: moniker-end 
-
+::: moniker-end

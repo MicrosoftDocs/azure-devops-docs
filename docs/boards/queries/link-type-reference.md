@@ -659,7 +659,7 @@ To get a list of link types, you can use one of the supported command line tools
 
 ### az boards work-item relation list-type  
 
-You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/ext/azure-devops/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index). 
+You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/ext/azure-devops/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az boards work-item relation list-type [--org]
@@ -916,4 +916,3 @@ The following table provides descriptions for each of the link type attributes r
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 - [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology)
 - [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list)
-

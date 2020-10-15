@@ -76,7 +76,7 @@ GET https://mytfsserver/DefaultCollection/_apis/process/processes?api-version=1.
 
 #### Sample code
 
-* [C# (ListProcesses method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProcessesSample.cs#L13)
+* [C# (ListProcesses method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/ProcessesSample.cs#L13)
 
 ## Get a process
 <a id="GetProcess"></a>
@@ -118,4 +118,4 @@ GET https://mytfsserver/DefaultCollection/_apis/process/processes/adcc42ab-9882-
 
 #### Sample code
 
-* [C# (GetProcess method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProcessesSample.cs#L29)
+* [C# (GetProcess method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/ProcessesSample.cs#L29)

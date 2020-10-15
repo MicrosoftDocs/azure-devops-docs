@@ -115,7 +115,7 @@ The second and third groups support restricting state transitions. These two gro
    :::column-end:::
    :::column span="2":::
       > [!div class="mx-imgBorder"]  
-      > ![Actions, restrict a transaction based on State.]
+      > ![Actions, restrict a transaction based on State.](media/customize-workflow/actions-restrict-transition-to-state.png)
 :::row-end:::
 ---  
 :::row:::  

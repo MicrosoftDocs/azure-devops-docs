@@ -523,7 +523,7 @@ Note: location variable is only applicable for `ACR` type of container resources
 
 ## [Example](#tab/example)
 
-In this example, there is an [Azure Resource Manager service connection](../library/service-endpoints.md#common-service-connection-types) named `arm-connection`. Learn more about [Azure container registries, repositories, and images](https://docs.microsoft.com/azure/container-registry/container-registry-concepts). 
+In this example, there is an [Azure Resource Manager service connection](../library/service-endpoints.md#common-service-connection-types) named `arm-connection`. Learn more about [Azure container registries, repositories, and images](/azure/container-registry/container-registry-concepts). 
 
 ```yaml
 resources:

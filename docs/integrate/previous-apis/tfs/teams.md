@@ -68,7 +68,7 @@ GET https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181
 
 
 #### Sample code
-* [C# (ListOrderedTeams method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/TeamsSample.cs#L13)
+* [C# (ListOrderedTeams method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/TeamsSample.cs#L13)
 
 
 <a id="GetTeamsPageAtATime"></a>
@@ -136,7 +136,7 @@ GET https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181
 
 #### Sample code
 
-* [C# (GetTeam method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/TeamsSample.cs#L42)
+* [C# (GetTeam method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/TeamsSample.cs#L42)
 
 ## Get a team's members
 <a id="GetaTeamMembers"></a>
@@ -196,7 +196,7 @@ GET https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-9181
 
 #### Sample code
 
-* [C# (GetTeamMembers method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/TeamsSample.cs#L63)
+* [C# (GetTeamMembers method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/TeamsSample.cs#L63)
 
 ### A page at a time
 
@@ -280,7 +280,7 @@ POST https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-865
 
 #### Sample code
 
-* [C# (CreateTeam method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/TeamsSample.cs#L90)
+* [C# (CreateTeam method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/TeamsSample.cs#L90)
 
 ## Update a team
 <a id="Update"></a>
@@ -340,7 +340,7 @@ POST https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-865
 
 #### Sample code
 
-* [C# (RenameTeam method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/TeamsSample.cs#L121)
+* [C# (RenameTeam method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/TeamsSample.cs#L121)
 
 ## Delete a team
 <a id="Delete"></a>
@@ -373,4 +373,4 @@ DELETE https://mytfsserver/DefaultCollection/_apis/projects/8e5a3cfb-fed3-46f3-8
 
 #### Sample code
 
-* [C# (DeleteTeam method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/TeamsSample.cs#L148)
+* [C# (DeleteTeam method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/TeamsSample.cs#L148)

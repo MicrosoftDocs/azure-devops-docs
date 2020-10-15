@@ -38,7 +38,7 @@ tf resolve [itemspec]
 <tbody>
 <tr>
 <td><p><em>Itemspec</em></p></td>
-<td><p>Used to identify the file or folder for which to resolve version conflicts. If omitted, all items with conflicts will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p>
+<td><p>Used to identify the file or folder for which to resolve version conflicts. If omitted, all items with conflicts will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -145,7 +145,7 @@ You can use the <strong>Resolve</strong> command to select a resolution for pend
 
 If version conflicts are detected between your version and the version on the destination server during a get, check-in, or merge operation, a prompt appears for you to select a conflict resolution using the **resolve** command. You must resolve conflicts before you can check in your pending changes.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 ## Examples
 The following example invokes the **Resolve Conflicts** dialog box so that you can tell Team Foundation Server how to deal with pending changes that conflict with the server version.
 
@@ -163,7 +163,7 @@ tf resolve /auto:automerge
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Merge Command](merge-command.md)
 
@@ -179,7 +179,7 @@ tf resolve /auto:automerge
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
 
 [Resolving Folder Differences and File Conflicts](resolve-team-foundation-version-control-conflicts.md)
 
