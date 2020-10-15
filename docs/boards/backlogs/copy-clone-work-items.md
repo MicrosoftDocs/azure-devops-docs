@@ -30,8 +30,12 @@ There are two types of copy functions you can use. The first is to duplicate a s
 
 The second copy function is to copy a multi-selected list of work items to the clipboard, referred to as copy as HTML or copy to clipboard. 
 
+::: moniker range="< azure-devops"
+
 > [!TIP]    
 > You can't copy or clone linked work items at this time. To learn more, see the [Q & A section](#faq-copy-clone) later in this article. 
+
+::: moniker-end
 
 
 Use this article to learn how to:  
@@ -67,7 +71,7 @@ Clone a work item when you want to create another instance of it. This action op
 	Optionally, check one or more of the boxes: 
 	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
 	- **Include existing attachments**: To include attachments in the copied work item
-	- **Include child work items**: To include existing links to child work items in the copied work item. 
+	- **Include child work items**: To include existing links to child work items in the copied work item. This feature isn't recursive. Only those work items directly linked as children to the work item being copied are included.  
 
 1. In the work item form that opens, update other fields as needed. All work items start in the New state.   
 
@@ -209,6 +213,7 @@ The formatted table contains a link to each work item included in your selected 
 ## Copy the URL
 
 #### [Browser](#tab/browser/)
+
 ::: moniker range=">= tfs-2017"
 Copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](media/icon-copy-to-clipboard.png) copy-to-clipboard icon.  
 
@@ -223,6 +228,7 @@ Right click the link ID to open the browser copy link option.
 
 
 #### [Visual Studio](#tab/visual-studio/)
+
 In Visual Studio, right-click the work item tab to copy the URL. The URL opens the work item in the web portal.  
 
 ![Copy full path hyperlink for a work item from Visual Studio](media/add-work-items-copy-url-for-a-work-item.png)

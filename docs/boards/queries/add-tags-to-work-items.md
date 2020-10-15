@@ -1,14 +1,14 @@
 ---
 title: Add tags to work items 
 titleSuffix: Azure Boards
-description: Add work item tags to categorize and filter lists & boards when working in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Add work item tags to categorize and filter lists & boards when working in Azure Boards and Azure DevOps 
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 07/09/2020
 ---
 
@@ -19,8 +19,7 @@ ms.date: 07/09/2020
 
 Tagging work items helps you quickly filter the product backlog or a work 
 item query by categories that you define. 
-A tag corresponds to a one or two keyword phrase that you define and that  
-supports your needs to filter a backlog or query, or define a query. 
+A tag corresponds to a one or two keyword phrase that you define and that supports your needs to filter a backlog or query, or define a query. 
 
 Tags are a better choice to filter work items than using text strings as described in [Guidance to create high-performing queries](high-performing-queries.md).
 
