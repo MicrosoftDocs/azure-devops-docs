@@ -37,7 +37,9 @@ The following image indicates the natural hierarchy for the Agile, Scrum, and CM
 
 ![Conceptual image of natural hierarchy for the Agile, Scrum, and CMMI processes.](../../reference/media/create-hierarchy-with-different-wits.png) 
 
-When you link work items of the same type with parent-child links&mdash;such as bug-bug or user story-user story, you create same-category links. or between work items that appear on the same backlog level Same-category links are parent-child links among work items that belong to the same work tracking category. The category a work item belongs to is determined by your process backlog levels and your team's selected bug behavior. To understand more about same-category hierarchy, see the section [Recommended configuration](#recommended).
+You break this natural hierarchy when you create same-category links between work items. 
+
+When you link work items of the same type with parent-child links&mdash;such as bug-bug or user story-user story&mdash;you create same-category links. Also, when you create parent-child links between work items that belong to the same category&mdash;such as the Requirements category or Task category&mdash;you create same-category links. The category a work item belongs to is determined by your process backlog levels and your team's selected bug behavior. To understand more about same-category hierarchy, see the section [Recommended configuration](#recommended).
  
 <a id="nested" > </a>
 
@@ -114,7 +116,7 @@ You usually choose to hide **In Progress items** when you want to forecast work.
 
 ## Recommended configuration
 
-While you can create a hierarchy of backlog items, tasks, and bugs&mdash;we don't recommend that you create same-category hierarchies. That is, don't create parent-child links among work items of the same type, such as story-story, bug-bug, task-task, or issue-issue. The reason is that the Backlog, Board, and Sprints experiences don't support reordering for same-category hierarchy. Since ordering is executed by hierarchy level, same-category hierarchy introduces confusion by ordering a work item that doesn't belong on that level. 
+While you can create a hierarchy of backlog items, tasks, and bugs&mdash;we recommend that you don't create same-category hierarchies. That is, don't create parent-child links among work items of the same type, such as story-story, bug-bug, task-task, or issue-issue. The reason is that the Backlog, Board, and Sprints experiences don't support reordering for same-category hierarchy. Since ordering is executed by hierarchy level, same-category hierarchy introduces confusion by ordering a work item that doesn't belong on that level. 
 
 Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list. In other words, only create parent-child links one level deep between items that belong to a different category. 
 
@@ -122,7 +124,6 @@ Use the Feature work item type when you want to group user stories (Agile), issu
 
 
 <a id="nested" > </a>
-
 
 <a id="bugs-as-tasks" > </a>
 
