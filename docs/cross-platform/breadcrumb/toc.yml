@@ -1,0 +1,8 @@
+- name: Azure DevOps
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
+  items: 
+  - name: Cross-platform
+    tocHref: /azure/devops/cross-platform/
+    topicHref: /azure/devops/cross-platform/index
+ 

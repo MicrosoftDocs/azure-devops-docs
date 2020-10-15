@@ -1,7 +1,7 @@
 ---
 title: CMMI process guidance, Manage change 
 titleSuffix: Azure Boards
-description: Use the change request work items to track and control all changes to the product and supporting systems - Team Foundation Server  
+description: Use the change request work items to track and control all changes to the product and supporting systems  
 ms.technology: devops-agile
 ms.assetid: 9c6fde5a-fdbd-4ac4-bd29-8049ff316351
 ms.topic: conceptual
