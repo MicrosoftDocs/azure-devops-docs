@@ -596,7 +596,7 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       - [Connect Azure Boards to GitHub](../../boards/github/connect-to-github.md)
       - [Install and configure Azure Boards app for GitHub](../../boards/github/install-github-app.md)
-      - [Link gitHub commits, pull requests, and issues to work items](../../boards/github/link-to-from-github.md)
+      - [Link GitHub commits, pull requests, and issues to work items](../../boards/github/link-to-from-github.md)
    :::column-end:::
    :::column span="1":::
       By connecting your Azure Boards project with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.
@@ -912,7 +912,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       - [Create audit streaming](../audit/auditing-streaming.md)
    :::column-end:::
    :::column span="1":::
-      The auditing page provdides a simple view into the audit events recorded for your organization. For more information, see [Review audit log](../audit/azure-devops-auditing.md#review-audit-log), [Export audit events](../audit/azure-devops-auditing.md#export-auditing-events), or learn more about Audit [categories](../audit/azure-devops-auditing.md#categories) and [areas](../audit/azure-devops-auditing.md#areas).
+      The auditing page provides a simple view into the audit events recorded for your organization. For more information, see [Review audit log](../audit/azure-devops-auditing.md#review-audit-log), [Export audit events](../audit/azure-devops-auditing.md#export-auditing-events), or learn more about Audit [categories](../audit/azure-devops-auditing.md#categories) and [areas](../audit/azure-devops-auditing.md#areas).
    :::column-end:::
 :::row-end:::
 ---
