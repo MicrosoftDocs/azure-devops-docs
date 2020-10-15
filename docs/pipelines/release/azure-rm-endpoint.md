@@ -6,7 +6,7 @@ ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 09/09/2020
+ms.date: 10/15/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -53,6 +53,7 @@ Errors that may occur when the system attempts to create the service connection 
 * [A valid refresh token was not found](#sessionexpired)
 * [Failed to assign contributor role](#contributorrole)
 * [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
+* [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
 
 <a name="privileges"></a>
 
@@ -174,6 +175,20 @@ To fix this issue you will need to modify the supported account types and who ca
 1. Under **Supported account types**, _Who can use this application or access this API?_ select **Accounts in any organizational directory**.
 
 1. Select **Save**.
+
+<a name="autoCreatedSecretExpiration"></a>
+
+### Automatically created Service Principal token is expired
+
+The recommended way to create a service connection in Azure Devops Services is through the "Automatic" method. This will create a service principal for you in the Azure Portal so you don't need to do so manually. An issue that often arises is that service principal's token will expire, and users have to create a new one. This isn't the case, and users can generate a new secret for that automatically created service principal. To do so, follow the steps below:
+
+1. Navigate to the ARM service connection that was created through the "Automatic" method.
+
+1. Click "Edit" in the top right of the page.
+
+1. Click "Verify" on the service connection page. 
+
+1. Click "Save". The client secret for that service principal has now been renewed for 2 years.
 
 ## What authentication mechanisms are supported? How do Managed Identities work?
 
