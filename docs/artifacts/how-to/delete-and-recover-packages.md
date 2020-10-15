@@ -97,7 +97,7 @@ When you publish a particular version of a package to a feed, that version numbe
 
 You must be a **contributor** to unlist a package and an **owner** to delete it.
 
-From within your feed, select the appropriate package and select **Unlist** or **Delete**.
+From within your feed, select the appropriate package and select **Unlist** or **Delete latest**.
 
 > [!div class="mx-imgBorder"]
 > ![Unlist or delete nuget packages](../media/delete/unlist-delete-nuget-package-newnav.png)
@@ -110,7 +110,7 @@ From within your feed, select the appropriate package and select **Unlist** or *
 
 You must be a **contributor** to unlist a package and an **owner** to delete it.
 
-Select **Build and Release**, then **Packages**. select the appropriate package and select **Unlist** or **Delete**.
+Select **Build and Release**, then **Packages**. select the appropriate package and select **Unlist** or **Delete latest**.
 
 > [!div class="mx-imgBorder"]
 > ![Unlist or delete nuget package TFS](../media/delete/unlist-delete-nuget-package.png)
@@ -147,18 +147,18 @@ NuGet.exe currently only perform the **unlist** packages operation. Azure DevOps
 #### [Python](#tab/python/)
 You must be an **owner** to delete a Python package.
 
-Choose the package from **Azure Artifacts** and select _Delete latest_ from the menu:
+From within your feed, select the appropriate package and select **Delete latest**.
 
 > [!div class="mx-imgBorder"]
-> ![Unlist or delete Universal package](../media/delete/delete-python-package.png)
+> ![Unlist or delete a Python package](../media/delete/delete-python-package.png)
 
 #### [Universal](#tab/universal/)
 You must be an **owner** to delete a Universal Package.
 
-Choose the package from **Azure Artifacts** and select _Delete latest_ from the menu:
+From within your feed, select the appropriate package and select **Delete latest**.
 
 > [!div class="mx-imgBorder"]
-> ![Unlist or delete Universal package](../media/delete/delete-universal-package.png)
+> ![Unlist or delete a Universal package](../media/delete/delete-universal-package.png)
 
 * * *
 ## Automatically delete old package versions with retention policies
