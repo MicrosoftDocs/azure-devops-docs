@@ -121,7 +121,7 @@ This content supports a platform/version selector. Toggle the Content version se
 
 <!---
 [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
-[DevOps overview for Azure DevOps Services and TFS](index.md)
+[DevOps overview for Azure DevOps Services and TFS](../get-started/index.yml)
 
 
 [![Sign up for Azure DevOps Services](media/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](media/what-is-vsts-add-code-ide-step-2.png)](code-with-git.md)
@@ -134,4 +134,4 @@ notice. You bear the risk of using it.*
 *This document does not provide you with any legal rights to any
 intellectual property in any Microsoft product. You may copy and use
 this document for your internal, reference purposes.*
---> 
+-->

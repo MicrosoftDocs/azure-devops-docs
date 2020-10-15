@@ -18,7 +18,7 @@ ms.date: 07/22/2019
 
 Learn how to view your permissions or the permissions that are set for others in Azure DevOps. If you don't have a permission to access a feature or function, you can request it from the right resource.
 
-Permissions are set at the collection, project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
+Permissions are set at the collection, project, and object level as described in [About permissions and inheritance](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ Permissions are set at the collection, project, and object level as described in
 2. Choose **Users**. To filter the list, enter a name into the *Search groups or users* box.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Find a user or group name](media/view-permissions/search-user-name-s154.png) 
+	> ![Screenshot of find a user or group name, preview page.](media/view-permissions/search-user-name-s154.png) 
 
 3. Choose the name you want. The project-level permissions for that user displays. These permissions are based on the groups the user belongs to or the permissions set specifically for the user's account.    
 	> [!div class="mx-imgBorder"]  
@@ -70,7 +70,7 @@ Permissions are set at the collection, project, and object level as described in
 2. Begin entering the name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
 
     > [!div class="mx-imgBorder"]
-    > ![Find a user or group name](media/view-permissions/search-user-name-vert-nav.png)  
+    > ![Screenshot of find a user or group name, current page.](media/view-permissions/search-user-name-vert-nav.png)  
 
 3. Choose the name you want. The project-level permissions you have set are based on the groups you belong to or the permissions set for your account.      
 

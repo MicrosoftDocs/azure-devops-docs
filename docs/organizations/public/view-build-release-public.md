@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
-Learn how to view the status of environment and release pipelines for public projects. If you're a contributor, you can also [define environment pipelines](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json).  
+Learn how to view the status of environment and release pipelines for public projects. If you're a contributor, you can also [define environment pipelines](../../pipelines/repos/index.md?bc=%252fazure%252fdevops%252forganizations%252fpublic%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252fpublic%252ftoc.json).  
 
 [!INCLUDE [temp](includes/anon-user.md)]
 

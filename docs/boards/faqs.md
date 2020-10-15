@@ -118,6 +118,10 @@ Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](
 
 Each backlog and board represents a filtered list of work items based on area path and iteration path assignments. To understand how the filtering is applied, see [About teams and Agile tools, Team defaults referenced by backlogs and boards](../organizations/settings/about-teams-and-settings.md#team-defaults).
 
+### Q: How do I add a backlog or board?  
+
+**A:** To add a backlog or board, you add a team. Each team is configured with it's own set of it's own set of backlogs and boards as described in [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). 
+
 ### Q: How do I migrate my existing backlog to Azure Boards?  
 
 **A:** See [Azure Boards migration and integration](extensions/migrate-integrate.md).

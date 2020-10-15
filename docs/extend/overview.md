@@ -62,7 +62,7 @@ You can develop an extension for your continuous delivery pipeline as described 
     - [Build your first extension](./get-started/node.md)
     - [Samples](./develop/samples-overview.md)
 3. Familiarize yourself with our RESTful APIs. If you're integrating from a third party app or service, you'll also want to check out our Service Hooks
-    - [REST APIs](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1)
+    - [REST APIs](/rest/api/azure/devops/?view=azure-devops-rest-5.1)
     - [Service Hooks](../service-hooks/overview.md)
 4. Once your extension is ready, you'll want to package it, publish it to the Marketplace, and then we hope you'll share it with the community!
     - [Package, publish, and install your extension](./publish/overview.md)
@@ -80,4 +80,3 @@ You can develop an extension for your continuous delivery pipeline as described 
 * [Extension Publisher Page](https://marketplace.visualstudio.com/manage)
 * [Visual Studio Partner Program](https://vspartner.com/)
 * [Extension manifest reference](./develop/manifest.md)
-

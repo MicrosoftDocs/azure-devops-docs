@@ -119,8 +119,27 @@ Here are the steps to complete to use an SSH key to authenticate access to GitHu
      ```
   
 Now, the SSH keys are installed and you can proceed with the script to connect by using SSH, and not the default HTTPS.
-   
+
+## Usage and best practices
+
+If you install an SSH key in the [hosted pools](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops), in later steps in your pipeline, you can connect to a remote system in which the matching public key is already in place. For example, you can connect to a Git repository or to a VM in Azure.
+
+We recommend that you don't pass in your public key as plain text to the task configuration. Instead, [set a secret variable](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables) in your pipeline for the contents of your `mykey.pub` file. Then, call the variable in your pipeline definition as `$(myPubKey)`. For the secret part of your key, use the [Secure File library](https://docs.microsoft.com/azure/devops/pipelines/library/secure-files?view=azure-devops) in Azure Pipelines.  
+
+To create your task, use the following example of a well-configured Install SSH Key task:
+
+```yaml
+steps:
+- task: InstallSSHKey@0
+  displayName: 'Install an SSH key'
+  inputs:
+    knownHostsEntry: 'SHA256:1Hyr55tsxGifESBMc0s+2NtutnR/4+LOkVwrOGrIp8U johndoe@contoso'
+    sshPublicKey: '$(myPubKey)'
+    sshKeySecureFile: 'id_rsa'
+```
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
+
+

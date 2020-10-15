@@ -1256,7 +1256,7 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositorie
 | mergeCommitMessage | string | Commit message for the merge commit
 | deleteSourceBranch | boolean | When true, the source branch will be deleted after the pull request is completed
 | squashMerge | boolean | When true, a squash merge is used when the pull request is completed.  When false, a fast-forward merge is used
-| bypassPolicy | boolean | When true, if the user is [exempt from policy enforcement](https://go.microsoft.com/fwlink/?linkid=841587) for the target branch, the merge will bypass policy requirements.
+| bypassPolicy | boolean | When true, if the user is [exempt from policy enforcement](../../../../repos/git/branch-policies.md) for the target branch, the merge will bypass policy requirements.
 
 
 ### Title
@@ -1743,5 +1743,3 @@ PATCH https://mytfsserver/DefaultCollection/_apis/git/repositories/3411ebc1-d5aa
   "artifactId": "vstfs:///Git/PullRequestId/a7573007-bbb3-4341-b726-0c4148a07853%2f3411ebc1-d5aa-464f-9615-0b527bc66719%2f21"
 }
 ```
-
-

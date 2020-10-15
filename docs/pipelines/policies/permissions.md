@@ -20,7 +20,7 @@ To support security of your pipeline operations, you can add users to a built-in
 
 This topic provides a description of the permissions and roles used to secure operations. To learn how to add a user or group to Azure Pipelines, see [Users](set-permissions.md).
 
-For permissions, you grant or restrict permissions by setting the permission state to Allow or Deny, either for a security group or an individual user. For a role, you add a user or group to the role. To learn more about how permissions are set, including inheritance, see [About permissions and groups](../../organizations/security/about-permissions.md). To learn how inheritance is supported for role-based membership, see [About security roles](../../organizations/security/about-security-roles.md).
+For permissions, you grant or restrict permissions by setting the permission state to Allow or Deny, either for a security group or an individual user. For a role, you add a user or group to the role. To learn more about how permissions are set, including inheritance, see [About permissions and inheritance(../../organizations/security/about-permissions.md). To learn how inheritance is supported for role-based membership, see [About security roles](../../organizations/security/about-security-roles.md).
 
 ## Default permissions assigned to built-in security groups
 

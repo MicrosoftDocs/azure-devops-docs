@@ -75,7 +75,7 @@ in a `revert`, making it safe to use when working with others.
 Open up the **Changes** view in Team Explorer. Select **Actions** and choose **View History** from the drop-down. In the history window that appears, right-click the commit to undo and
 select **Revert** from the context menu.
 
-![Reset a branch from Visual Studio](media/vs_revert_changes.png)
+![Revert changes from Visual Studio.](media/vs_revert_changes.png)
 
 # [Command Line](#tab/command-line)
 

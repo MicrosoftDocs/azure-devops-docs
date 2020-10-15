@@ -216,7 +216,7 @@ For more details, see [this blog post](https://devblogs.microsoft.com/devops/spe
 
 ### Q: How can I increase the capacity of my load tests?
 
-**A**: You can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257), so you can run your tests across multiple virtual machines in the cloud.
+**A**: You can use the [Cloud-based Load Testing service](./get-started-simple-cloud-load-test.md), so you can run your tests across multiple virtual machines in the cloud.
 
 <a name="howmanyusers"></a>
 ### Q: How many virtual users can I configure in my load test?
@@ -225,7 +225,7 @@ For more details, see [this blog post](https://devblogs.microsoft.com/devops/spe
 
 ### Q: Can I analyze load tests that ran previously?
 
-**A**: Yes, to open and manage those results, click ![Manage results toolbar button](media/run-performance-tests-app-before-release/manage-results.png) in the load test editor. You can have multiple tests open at the same time to compare runs, and [create trend analysis reports](https://msdn.microsoft.com/library/dd728091%28v=vs.140%29.aspx) to compare them.
+**A**: Yes, to open and manage those results, click ![Manage results toolbar button](media/run-performance-tests-app-before-release/manage-results.png) in the load test editor. You can have multiple tests open at the same time to compare runs, and [create trend analysis reports](/previous-versions/dd728091(v=vs.140)) to compare them.
 
 ### Q: Is there a difference between what I can analyze during a running test versus a completed test?
 
@@ -246,7 +246,7 @@ and [coded UI tests](/visualstudio/test/use-ui-automation-to-test-your-code).
 
 ### Q: Why should I use Cloud-based Load Testing?
 
-**A**: If you don't want to set up machines for load testing, or you don't have available resources, you can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using Azure DevOps to access it.
+**A**: If you don't want to set up machines for load testing, or you don't have available resources, you can use the [Cloud-based Load Testing service](./get-started-simple-cloud-load-test.md). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using Azure DevOps to access it.
 
 <a name="set-up-tests"></a>
 ## Setting up tests
@@ -495,7 +495,7 @@ for your app there. If you see data collected there, report your issue to
 **A**: This can happen because:
 
 * No apps are configured to push analytics data to Application Insights. See 
-  [Get started with Visual Studio Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-get-started/).
+  [Get started with Visual Studio Application Insights](/azure/azure-monitor/app/app-insights-overview).
   Also check that you can see the apps in **Application Insights** in the 
   Azure portal, as shown here:
   
@@ -559,7 +559,7 @@ information to your REST API calls. If your call fails with a
 **VssVersionNotSpecifiedException** exception, 
 you must include **?api-version=1.0-preview.1** 
 in your REST API calls. To do this, see
-[Get started with the REST APIs](../../integrate/get-started/rest/basics.md).
+[Get started with the REST APIs](/rest/api/azure/devops/).
 
 ### Q: I noticed that user code fails to execute if it depends on the test names. Are test names changed when run against the service?
 
@@ -685,7 +685,7 @@ To fix this problem, create another load test. Delete the failed test run.
 * [Driving Unit Tests from Cloud-based Load test](https://devblogs.microsoft.com/devops/driving-unit-tests-from-cloud-load-test/)
 * [Parameterizing tests to run in different environments](/archive/blogs/edglas/parameterizing-tests-to-run-in-different-environments)
 * [A Web Performance Test primer](/archive/blogs/edglas/web-test-authoring-and-debugging-techniques-for-visual-studio-2010)
-* [Managing Load Test results](https://docs.microsoft.com/archive/blogs/slumley/managing-load-test-results)
+* [Managing Load Test results](/archive/blogs/slumley/managing-load-test-results)
 * [Getting 90th and 95th percentile results in a Load Test](/archive/blogs/slumley/how-to-get-90th-and-95th-percentile-information-as-well-as-timing-details-for-every-page-test-and-transcation)
 * [Understanding Load Test results schema](/archive/blogs/billbar/what-is-the-data-in-the-vsts-load-test-results-store)
 * [Load Test plug-ins](/archive/blogs/slumley/load-test-plug-ins)
@@ -704,9 +704,9 @@ To fix this problem, create another load test. Delete the failed test run.
 **Blogs and other references**
 
 * [Quick Reference Guide for VS Performance Testing](https://vsptqrg.codeplex.com/)
-* [Geoff Gray's blog](https://blogs.msdn.microsoft.com/geoffgr/)
+* [Geoff Gray's blog](/archive/blogs/geoffgr/)
 * [Ed Glas' blog](https://devblogs.microsoft.com/devops/content-index-for-visual-studio-web-tests-and-load-tests-2/)
-* [Sean Lumley's blog](https://blogs.msdn.microsoft.com/slumley/)
+* [Sean Lumley's blog](/archive/blogs/slumley/)
 
 **Samples**
 
@@ -716,4 +716,4 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ---
 
-[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

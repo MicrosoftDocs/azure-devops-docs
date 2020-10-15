@@ -129,10 +129,10 @@ The app supports all the checks and approval scenarios present in Azure Pipeline
 
 When a user pastes a pipeline URL, a preview is shown similar to that in the following image. This helps to keep pipeline related conversations relevant and accurate.
 
-![URL unfurling](./media/integrations-slack/build-url-unfurling.png)
+![Build URL unfurling.](./media/integrations-slack/build-url-unfurling.png)
 
 
-![URL unfurling](./media/integrations-slack/release-url-unfurling.png)
+![Release URL unfurling.](./media/integrations-slack/release-url-unfurling.png)
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
 
@@ -201,6 +201,6 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Related articles
-- [Azure Boards with Slack](https://aka.ms/AzureBoardsSlackIntegration)
-- [Azure Repos with Slack](https://aka.ms/AzureReposSlackIntegration)
+- [Azure Boards with Slack](../../boards/integrations/boards-slack.md)
+- [Azure Repos with Slack](../../repos/integrations/repos-slack.md)
 - [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)

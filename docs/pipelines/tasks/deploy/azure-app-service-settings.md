@@ -50,7 +50,7 @@ steps:
     appName: $(WebApp_Name)
     package: $(System.DefaultWorkingDirectory)/**/*.zip
 
-- task: AzureAppServiceSettings@0
+- task: AzureAppServiceSettings@1
   displayName: Azure App Service Settings
   inputs:
     azureSubscription: $(azureSubscription)

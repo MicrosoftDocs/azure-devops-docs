@@ -25,7 +25,7 @@ For details of how translations are processed, see [File transforms and variable
 
 * File transformations are useful in many scenarios, particularly when you are deploying to an App service and want to add,
   remove or modify configurations for different environments (such as Dev, Test, or Prod) by following the standard
-  [Web.config Transformation Syntax](https://docs.microsoft.com/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations).
+  [Web.config Transformation Syntax](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/web-config-transformations).
 
 * You can also use this functionality to transform other files, including Console or Windows service application configuration files
   (for example, FabrikamService.exe.config).
@@ -125,4 +125,3 @@ For XML, Variables defined in the build or release pipelines will be matched aga
 ## Open source
 
 This task is open source on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
-

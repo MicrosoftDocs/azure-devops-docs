@@ -428,7 +428,7 @@ Troubleshooting steps:
 
 #### Detect files and folders in use
 
-On Windows, tools like [Process Monitor](https://technet.microsoft.com/sysinternals/processmonitor.aspx) can be to capture a trace of file events under a specific directory. Or, for a snapshot in time, tools like [Process Explorer](https://technet.microsoft.com/sysinternals/processexplorer.aspx) or [Handle](https://technet.microsoft.com/sysinternals/handle.aspx) can be used.
+On Windows, tools like [Process Monitor](/sysinternals/downloads/procmon) can be to capture a trace of file events under a specific directory. Or, for a snapshot in time, tools like [Process Explorer](/sysinternals/downloads/process-explorer) or [Handle](/sysinternals/downloads/handle) can be used.
 
 #### Anti-virus exclusion
 

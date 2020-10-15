@@ -170,7 +170,7 @@ steps:
 | Argument                       | Description                                                         |
 | ------------------------------ | ------------------------------------------------------------------- |
 | feedsToUse                     | Value should be `external` when you're downloading from an external source.|
-| externalFeedCredentials        | Name of a service connection to another Azure DevOps organization or server. See [service connections](/azure/devops/pipelines/library/service-endpoints#sep-tfsts).                    |
+| externalFeedCredentials        | Name of a service connection to another Azure DevOps organization or server. See [service connections](../library/service-endpoints.md#sep-tfsts).                    |
 | feedDownloadExternal           | Feed that the package will be downloaded from.        |
 | packageDownloadExternal        | Name of the package to be downloaded.                             |
 | versionDownloadExternal        | Version of the package to be downloaded.        |

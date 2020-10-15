@@ -20,7 +20,7 @@ monikerRange: '> tfs-2018'
 
 When you load test your app in the cloud using Azure DevOps, 
 you can compare app performance with virtual user load using 
-[Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/).
+[Application Insights](/azure/azure-monitor/app/app-insights-overview).
 Then, by doing a quick root cause analysis, you can figure out which code 
 is causing performance problems.
 
@@ -84,4 +84,4 @@ is causing performance problems.
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
-[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)]

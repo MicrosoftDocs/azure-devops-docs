@@ -7,7 +7,7 @@ ms.topic: include
 
 ::: moniker range=">= tfs-2018"
 
-You can use the following keyboard shortcuts when [managing or editing Wiki pages](/azure/devops/project/wiki/add-edit-wiki). To view the valid shortcuts, enter **?** from a **Wiki** page. 
+You can use the following keyboard shortcuts when [managing or editing Wiki pages](../../project/wiki/add-edit-wiki.md). To view the valid shortcuts, enter **?** from a **Wiki** page. 
 
 ::: moniker-end
 
@@ -95,4 +95,3 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
 
 ::: moniker-end
 
- 

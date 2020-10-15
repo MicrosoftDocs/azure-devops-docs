@@ -86,6 +86,9 @@ Keep in mind:
 > [!NOTE]
 > You will not be billed by Azure Artifacts for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching. For more information, see [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts.md#q-which-artifacts-count-toward-my-total-billed-storage).
 
+> [!CAUTION]
+> Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.
+
 ### Limiting which files are included
 
 `.artifactignore` files use the identical file-globbing syntax of `.gitignore` (with very few limitations) to provide a version-controlled way to specify which files should _not_ be added to a pipeline artifact.

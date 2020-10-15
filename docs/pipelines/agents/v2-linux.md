@@ -69,7 +69,7 @@ You can install those dependencies on supported Linux platforms by running `./bi
 
 **TFS 2018 RTM and older**: The shipped agent is based on CoreCLR 1.0.
 We recommend that, if able, you should upgrade to a later agent version (2.125.0 or higher).
-See [Azure Pipelines agent prereqs](?view=azure-devops#check-prerequisites) for more about what's required to run a newer agent.
+See [Azure Pipelines agent prereqs](?view=azure-devops&preserve-view=true#check-prerequisites) for more about what's required to run a newer agent.
 
 If you must stay on the older agent, make sure your machine is prepared with our prerequisites for either of the supported distributions:
 
