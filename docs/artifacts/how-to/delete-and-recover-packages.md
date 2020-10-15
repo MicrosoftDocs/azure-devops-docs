@@ -127,7 +127,7 @@ Select **Build and Release**, then **Packages**. select the appropriate package 
 
    ::: moniker-end
 
-   ::: moniker range="<= tfs-2018"
+   ::: moniker range=">=tfs-2017 < azure-devops-2019"
 
     > [!div class="mx-imgBorder"]
     > ![Connect to feed button TFS](../media/connect-to-feed.png)
@@ -194,7 +194,7 @@ To configure retention policies:
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">=tfs-2017 < azure-devops-2019"
 
 1. Select **Build and Release**, then **Packages** to navigate to your feed and select the gear icon. 
     > [!div class="mx-imgBorder"]
@@ -215,39 +215,35 @@ To configure retention policies:
 
 ## Recover a deleted package from the recycle bin
 
-If you've deleted/unpublished an npm package, NuGet package, or Maven artifact from Azure Artifacts, builds that depend on that package will start to fail.  You won't be able to re-push that package to the feed because of [immutability](../artifacts-key-concepts.md#immutability).  In order to recover the package and have builds start working again, a feed owner can recover it from the Recycle Bin.
+Deleted packages will remain in the recycle bin for 30 days after which it will be permanently deleted. You must be assigned an **owner** role in order for you to recover deleted packages.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Navigate to Azure Artifacts:
+1. Select Azure Artifacts.
+
     > [!div class="mx-imgBorder"]
     > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
 2. Select "Recycle Bin".
-    > [!NOTE]
-    > Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
 
-3. Click on a package to get more details such as *Version*, *Deleted date/time*, and *Scheduled permanent deletion*.
+3. Select the appropriate package then select the package version.
 
-4. Select a version to *Restore to feed*.
+4. Select **Restore to feed**.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range=">=tfs-2017 < azure-devops-2019"
 
-1. Find the Recycle Bin in the **Packages** page underneath the **Build and Release** page group in Azure DevOps Services: 
+1. Select **Build and Release**, then **Packages** to navigate to your feed and select **Recycle bin**. 
     > [!div class="mx-imgBorder"]
-    > ![Azure DevOps Services Recycle Bin](../media/recycle-bin/find-recycle-bin.png)
-    
-    > [!NOTE]
-    > Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
+    > ![Recycle Bin TFS](../media/recycle-bin/find-recycle-bin.png)
 
-2. Click a package to get more details such as: *Version*, *Deleted date/time*, and *Scheduled permanent deletion:*
+2. Select the appropriate package then select the package version.
     > [!div class="mx-imgBorder"]
-    > ![Azure DevOps Services Recycle Bin package view](../media/recycle-bin/recycle-bin-view.png)
+    > ![Recycle Bin package view TFS](../media/recycle-bin/recycle-bin-view.png)
 
-3. Select a version to *Restore to feed:*
+3. Select **Restore to feed**.
     > [!div class="mx-imgBorder"]
-    > ![Restore an Azure DevOps Services package with Recycle Bin](../media/recycle-bin/recycle-bin-restore.png)
+    > ![Restore package TFS](../media/recycle-bin/recycle-bin-restore.png)
 
 ::: moniker-end
