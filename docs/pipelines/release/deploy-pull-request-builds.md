@@ -34,24 +34,26 @@ Pull request trigger creates a release every time a new version of your selected
 
 2. Select the pull request trigger toggle and set it to **Enabled**.
 
-   ![Pull Request trigger section highlighting trigger toggle button](media/deploy-pull-request-builds/pull-request-trigger-enabled.png)
+   > [!div class="mx-imgBorder"]  
+   > ![Pull Request trigger toggle](media/deploy-pull-request-builds/pull-request-trigger-enabled.png)
 
-3. Configure one or more target branches. Target branches are the branches for which the pull request is raised. When a pull request is created for one of these branches, it triggers a build, and when the build succeeds, it triggers the PR release. You can optionally specify build tags as well.
+3. Set up one or more target branches. Target branches are the branches for which the pull request is raised. When a pull request is created for one of these branches, it triggers a build, and when the build succeeds, it triggers the PR release. You can optionally specify build tags as well.
 
-   ![Pull request trigger section highlighting target branch](media/deploy-pull-request-builds/pull-request-trigger-target-branch.png)
+   > [!div class="mx-imgBorder"]
+   > ![Target branch filters](media/deploy-pull-request-builds/pull-request-trigger-target-branch.png)
 
-4. To deploy a PR release in a specific stage you need to explicitly opt-in that stage. An information bar below the **Target Branch Filters** shows the stages that have opted in for PR deployment.
+4. To deploy to a specific stage you need to explicitly opt-in that stage. The **Stages** section shows the stages that are enabled for pull request deployments.
 
-   ![Pull request trigger section highlighting information on current opt-in status of stages](media/deploy-pull-request-builds/pull-request-trigger-stage.png)
+   > [!div class="mx-imgBorder"]
+   > ![Stages enabled for pull request deployments](media/deploy-pull-request-builds/pull-request-trigger-stage.png)
 
-   To opt-in a stage for PR deployment, select **Pre-deployment conditions** for the intended stage. Inside the **Triggers** section, set **Pull request deployment** to on, which allows PR releases to be deployed to this stage. 
+   To opt-in a stage for PR deployment, select the **Pre-deployment conditions** icon for that specific stage and under the **Triggers** section, select **Pull request deployment** to set it to **Enabled**. 
 
-   >[!IMPORTANT]
-   > For critical stages like production, **Pull request deployment** should not be turned on.
+   > [!div class="mx-imgBorder"]
+   > ![Pull request deployment toggle button](media/deploy-pull-request-builds/deploy-to-dev-stage.png)
 
-   ![Release definition highlighting pre-deployment conditions of 'Dev' Environment](media/deploy-pull-request-builds/deploy-to-dev-stage.png)
-
-Whenever a new build is generated from a PR branch, a release is deployed to the opted-in stages and the release status is posted back to the repository. The following section shows how you can display this status in your pull request, and optionally block the PR from being completed if the deployment failed.
+> [!IMPORTANT]
+> For critical stages like production, **Pull request deployment** should not be turned on.
 
 ### Configure status policy in Azure Repos
 
