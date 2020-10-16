@@ -358,7 +358,7 @@ pr:
 
 ### Draft PR validation
 
-By default, pull request triggers build draft pull requests as well as pull requests that are ready for review. To disable pull request triggers for draft pull requests, configure the `drafts` property.
+By default, pull request triggers fire on draft pull requests as well as pull requests that are ready for review. To disable pull request triggers for draft pull requests, set the `drafts` property to `false`.
 
 ```yaml
 pr:
