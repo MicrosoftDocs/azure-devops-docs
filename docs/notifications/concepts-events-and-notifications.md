@@ -29,13 +29,13 @@ A notification **subscription** is associated with a [supported event type](oob-
 
 Many useful email subscriptions are pre-defined and enabled by default in the system. They're known as **default subscriptions**. Default subscriptions provide out-of-box support for the most common notification scenarios. See the list of [available default subscriptions](oob-built-in-notifications.md).
 
-An organization or team administrator can choose which of the default subscriptions to make available to their users. Learn how to [manage team notifications](manage-team-group-notifications.md) or [manage organization level notifications](manage-organization-notifications.md).
+An organization or team administrator can choose which of the default subscriptions to make available to their users. Learn how to [manage team and organization notifications](manage-team-group-global-organization-notifications.md).
 
 Individual users can choose to opt out of any default subscription while other team members continue to be subscribed. Learn how to [manage personal notification subscriptions](manage-your-personal-notifications.md).
 
 ### Custom email subscriptions
 
-Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team notifications](./manage-team-group-notifications.md) or [manage organization notifications](manage-organization-notifications.md).
+Organization or team administrators can create **Custom email subscriptions** that apply to all members of the organization or team. Learn how to [manage team and organization notifications](./manage-team-group-global-organization-notifications.md).
 
 Individuals can also create custom subscriptions, which apply only to them. Learn how to [manage personal subscriptions](manage-your-personal-notifications.md).
 

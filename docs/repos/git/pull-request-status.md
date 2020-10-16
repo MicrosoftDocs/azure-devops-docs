@@ -28,7 +28,7 @@ In this topic, you'll learn about pull request statuses and how they can be used
 
 ## Pull request status
 
-Pull request status provides a way for services to associate simple success/failure type information with a pull request, using the [Status API](https://go.microsoft.com/fwlink/?linkid=854107). 
+Pull request status provides a way for services to associate simple success/failure type information with a pull request, using the [Status API](/rest/api/azure/devops/git/pull%20request%20statuses). 
 A status consists of four key pieces of data:
 
 * **State**. One of the following predefined states: `succeeded`, `failed`, `pending`, `notSet`, `notApplicable`, or `error`.
@@ -125,13 +125,13 @@ This orchestration policy could be marked `succeeded` when it is finished evalua
 
 ## Custom actions
 
-In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [Azure DevOps Services extensions](../../extend/index.md) to give trigger actions to the end user. For example, if status corresponds to a test run that can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview.md). Check out the [Contributions guide sample](https://github.com/Microsoft/vsts-extension-samples/blob/master/contributions-guide/vss-extension.json#L670) on Github where you can see the parts of code that add the following sample items to the status menu..
+In addition to predefined service hook events that can trigger the service to update PR status, it is possible to extend the status menu by using [Azure DevOps Services extensions](../../extend/overview.md) to give trigger actions to the end user. For example, if status corresponds to a test run that can be restarted by the end user, it is possible to have a **Restart** menu item to the status menu that would trigger tests to run. To add a status menu, you'll need to use the [contribution model](../../extend/develop/contributions-overview.md). Check out the [Contributions guide sample](https://github.com/Microsoft/vsts-extension-samples/blob/master/contributions-guide/vss-extension.json#L670) on Github where you can see the parts of code that add the following sample items to the status menu..
 
 ![Status menu](media/pull-request-status/custom-status-menu-entries.png)
 
 ## Next Steps
 
-Learn more about the [PR Status API](https://go.microsoft.com/fwlink/?linkid=854107) and check out the how-to guides:
+Learn more about the [PR Status API](/rest/api/azure/devops/git/pull%20request%20statuses) and check out the how-to guides:
 
 * [Create a pull request status server with Node.js](create-pr-status-server.md)
 * [Use Azure Functions to create custom branch policies](create-pr-status-server-with-azure-functions.md)

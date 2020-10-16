@@ -155,23 +155,23 @@ You can access the following actions for which you have permissions. If you are 
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
-* To delete or remove work items, you must be granted **Stakeholder** access or higher  For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* You must connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
+* To delete or remove work items, you must be granted **Stakeholder** access or higher  For details, see [About access levels](../../organizations/security/access-levels.md).
 * To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to Allow. By default, the Contributors group has **Delete and restore work items** set to **Allow**.
 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
-* To remove or delete work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
+* To remove or delete work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
 * To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to Allow. The **Contributors** group has **Delete and restore work items** at the project-level set to **Allow** by default.
 
 ::: moniker-end
@@ -179,10 +179,10 @@ You can access the following actions for which you have permissions. If you are 
 
 ::: moniker range="<= tfs-2015" 
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
-* To delete or remove work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
+* To delete or remove work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
 * To delete work items, you must be a member of the <strong>Project Administrators <strong>group or have the **Delete work items in this project</strong> permission set to **Allow</strong>. By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
 
 ::: moniker-end
@@ -583,7 +583,3 @@ When you restore a work item, the following actions occur:
 - Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted.   
 
 ::: moniker-end
-
-
-
-

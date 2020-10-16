@@ -8,7 +8,7 @@ ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/13/2020
+ms.date: 10/01/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -29,8 +29,8 @@ Enforce policies for accessing your team's critical resources and key assets.
 ## How Azure AD controls access to Azure DevOps
 
 Your organization authenticates users through your organization's directory. Only users who are members or guests in that directory get access to your organization.
-Disabled or removed users from your directory have no access to your organization by any mechanism. Mechanisms include PATs, SSH, or any other alternate credentials.
-Only specific [Azure AD administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) manage users in your directory, so they control who gets access to your organization.
+Disabled or removed users from your directory have no access to your organization by any mechanism. For example, mechanisms such as personal access tokens (PATs) or  SSH.
+Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) manage users in your directory, so they control who gets access to your organization.
 
 Without Azure AD, you're solely responsible for controlling organization access. All users must sign in with Microsoft accounts.
 
@@ -40,7 +40,7 @@ Without Azure AD, you're solely responsible for controlling organization access.
 
 ### Q: What do I need to set up an existing Azure DevOps Services instance with Azure AD?
 
-A: Ensure you meet the prerequisites in the following article, [Connect your organization to Azure AD](./connect-organization-to-azure-ad.md?view=azure-devops).
+A: Ensure you meet the prerequisites in the following article, [Connect your organization to Azure AD](./connect-organization-to-azure-ad.md?view=azure-devops&preserve-view=true).
 
 ### Q: What happens to current users?
 
@@ -54,7 +54,7 @@ A: Add these users to the directory with new work or school accounts, and reassi
 
 ### Q: What happens to tools that use my credentials, like alternate credentials?
 
-A: Alternate credentials won't work anymore for tools that run outside a web browser, like the Git command-line tool. [Set up your credentials](https://support.microsoft.com/kb/2991274/) again for the organization that you connected. See [important information about alternate credentials](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
+A: Azure DevOps no longer supports Alternate Credentials authentication since the beginning of March 2, 2020. If you're still using Alternate Credentials, we strongly encourage you to switch to a more secure authentication method (for example, personal access tokens). [Learn more](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
 
 ### Q: What if I accidentally delete a user in Azure AD?
 

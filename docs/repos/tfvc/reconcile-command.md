@@ -40,7 +40,7 @@ tf reconcile [itemspec]
 <tbody>
 <tr>
 <td><p><em>itemspec</em></p></td>
-<td><p>Used to identify the file or folder for which to apply the reconcile command. If omitted, all suitable items will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see <a href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p>
+<td><p>Used to identify the file or folder for which to apply the reconcile command. If omitted, all suitable items will be included. For more information about how Visual Studio Team Foundation Server parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
@@ -201,7 +201,7 @@ You can use the **reconcile** command to synchronize your local workspace state 
 Use **/clean** to update the local workspace according to the server's state.
 Use **/promote** to promote locally added and deleted items to pending changes in version control.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ## Examples
 
@@ -261,7 +261,7 @@ tf reconcile /promote /deletes /noprompt
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Add Command](add-command.md)
 
@@ -277,6 +277,6 @@ tf reconcile /promote /deletes /noprompt
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
 
 [Comparing Folders and Files](compare-folders-files.md)

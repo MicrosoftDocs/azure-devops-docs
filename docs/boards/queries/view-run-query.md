@@ -175,7 +175,7 @@ From either the **Favorites** or **All** page, choose the  :::image type="icon" 
 For shared queries, you can also choose to perform one of these tasks: 
 - **Add to team queries**: Select the team to add the query as a team favorite
 - **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).   
-- **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/add-widget-to-dashboard.md). 
+- **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
 
 ::: moniker-end
 

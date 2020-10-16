@@ -355,10 +355,10 @@ When enabled, you can enter keywords to search all settings within the Organizat
 ### Social tools 
 
 - [Wiki](../wiki/add-edit-wiki.md)  
-- [Combine email recipients](../../notifications/manage-team-group-notifications.md) 
+- [Combine email recipients](../../notifications/manage-team-group-global-organization-notifications.md) 
 - [New experience in Code, Work Item, & Wiki search](/azure/devops/release-notes/2017/oct-06-vsts#code)  
 - [Out of the box notifications](../../notifications/manage-your-personal-notifications.md)   
-- [Team expansion for notifications](../../notifications/manage-team-group-notifications.md)
+- [Team expansion for notifications](../../notifications/manage-team-group-global-organization-notifications.md)
 
 ### Organization, project, and billing management
 - [Streamlined User Management](../../organizations/accounts/add-organization-users.md)   

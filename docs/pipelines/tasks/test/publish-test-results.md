@@ -4,8 +4,8 @@ description: Publish Test Results to integrate test reporting into your build an
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
 ms.topic: reference
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 09/30/2020
 monikerRange: '>= tfs-2015'
 ---
@@ -32,7 +32,8 @@ Visual Studio Test (TRX), and [xUnit 2](https://xunit.github.io/docs/format-xml-
 Other built-in tasks such as [Visual Studio Test task](vstest.md) and [Dot NetCore CLI task](../build/dotnet-core-cli.md) automatically publish
 test results to the pipeline, while tasks such as [Ant](../build/ant.md), [Maven](../build/maven.md),
 [Gulp](../build/gulp.md), [Grunt](../build/grunt.md), [.NET Core](../build/dotnet-core-cli.md) and [Xcode](../build/xcode.md)
-provide publishing results as an option within the task.
+provide publishing results as an option within the task, or build libraries such as [Cobertura](https://cobertura.github.io/cobertura/)
+and [JaCoCo](https://www.eclemma.org/jacoco/).
 If you are using any of these tasks, you do not need a separate **Publish Test Results** task in the pipeline.
 
 The published test results are displayed in the [Tests tab](../../test/review-continuous-test-results-after-build.md)
@@ -45,14 +46,12 @@ The following example shows the task configured to publish test results.
 
 You can also use this task in a build pipeline to **publish code coverage results**
 produced when running tests to Azure Pipelines or TFS in order to obtain coverage reporting. 
-The task supports popular coverage result formats such as [Cobertura](https://cobertura.github.io/cobertura/)
-and [JaCoCo](https://www.eclemma.org/jacoco/).
 
 ## Check prerequisites
 
 If you're using a Windows self-hosted agent, be sure that your machine has this prerequisite installed:
 
-- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or a later version
+- [.NET Framework](/dotnet/framework/install/) 4.6.2 or a later version
 
 <a name="demands"></a>
 
@@ -455,7 +454,7 @@ YAML builds are not yet available on TFS.
        docker push $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID
        ```
 1. If you use Azure Container Registry, ensure you have
-   [pre-created the registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
+   [pre-created the registry](/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
    Copy the admin user name and password shown in the **Access keys** section of the registry settings in Azure portal.
 
 1. In the **Variables** tab of the build pipeline, define two variables:

@@ -68,7 +68,7 @@ All processes&mdash;Agile, Scrum, and CMMI&mdash;support [building status and tr
 
 To get started, you can define a shared flat query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
 
-[![Edit query](../../../report/dashboards/media/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/media/gs-chart-create.png)](../../../report/charts.md)[![Add to dashboard.](../../../report/dashboards/media/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
+[![Edit query](../../../report/dashboards/media/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/media/gs-chart-create.png)](../../../report/dashboards/charts.md)[![Add to dashboard.](../../../report/dashboards/media/gs-chart-add-dashboard.png)](../../../report/dashboards/add-charts-to-dashboard.md)  
 
 
 
@@ -94,7 +94,7 @@ If you need to add reporting services or update reports to the latest versions, 
 
 You can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to perform common tasks quickly. These dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
 
-To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../project/configure-or-add-a-project-portal.md).
+To use [SharePoint dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards) your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../project/configure-or-add-a-project-portal.md).
 
 ::: moniker-end
 
@@ -179,7 +179,7 @@ The project administrator for each project [defines area and iteration paths](..
 <tr>
 <td><p>Bug Triage</p></td>
 <td><p>Lists all active bugs that are not assigned to a team member.</p>
-<p>The <a href="https://msdn.microsoft.com/library/dd380707.aspx" data-raw-source="[Triage Workbook references](https://msdn.microsoft.com/library/dd380707.aspx)">Triage Workbook references</a> this query. </p></td>
+<p>The <a href="/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts" data-raw-source="[Triage Workbook references](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts)">Triage Workbook references</a> this query. </p></td>
 </tr>
 <tr>
 <td><p>Completed Tasks</p></td>
@@ -192,7 +192,7 @@ The project administrator for each project [defines area and iteration paths](..
 <tr>
 <td><p>Open Issues</p></td>
 <td><p>Lists all issues under the specified iteration path that are not closed and any tasks that are linked to the issues and then sorts the issues by rank and priority.</p>
-<p>The <a href="https://msdn.microsoft.com/library/dd380707.aspx" data-raw-source="[Issues Workbook](https://msdn.microsoft.com/library/dd380707.aspx)">Issues Workbook</a> references this query. </p></td>
+<p>The <a href="/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts" data-raw-source="[Issues Workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks?viewFallbackFrom=vsts)">Issues Workbook</a> references this query. </p></td>
 </tr>
 <tr>
 <td><p>Open Test Cases</p></td>
@@ -236,8 +236,8 @@ The **Work Items With Summary Values** shared query, which is located in the **T
 You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your project has been configured with a SharePoint portal. 
 Each workbook references a shared query.  
 
--  The [Issues workbook](../../../report/sharepoint-dashboards/workbooks.md) uses the Open Issues shared query
--  The [Triage workbook](../../../report/sharepoint-dashboards/workbooks.md) uses the Untriaged Work Items shared query  
+-  The [Issues workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) uses the Open Issues shared query
+-  The [Triage workbook](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks) uses the Untriaged Work Items shared query  
 
 Because these queries support workbooks, if you change these queries, it will affect those workbooks that use them.
 

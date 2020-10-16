@@ -54,7 +54,7 @@ Step 1, template expansion, operates solely on the text of the YAML document.
 Runtime variables don't exist during that step.
 After step 1, template parameters have been completely resolved and no longer exist.
 
-It also answers another common issue: why can't I use variables to resolve service connection / environment names?
+It also answers another common issue: why can't I use [variables](variables.md) to resolve service connection / environment names?
 Resources are authorized before a stage can start running, so stage- and job-level variables aren't available.
 Pipeline-level variables can be used, but only those explicitly included in the pipeline.
 Variable groups are themselves a resource subject to authorization, so their data is likewise not available when checking resource authorization.
@@ -185,7 +185,7 @@ Using the Azure DevOps CLI, you can list the pipeline runs in your project and v
 
 ### Prerequisites
 
-- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](/azure/devops/cli/index).
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).
 - Sign into Azure DevOps using `az login`.
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 

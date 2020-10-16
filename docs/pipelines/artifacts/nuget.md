@@ -121,7 +121,7 @@ YAML is not supported in TFS.
 In the **NuGet** task, select **Pack options** and select one of the values for **Automatic package versioning**.
 
 * * *
-Although Semantic Versioning with prerelease labels is a good solution for packages produced in CI builds, including a prerelease label is not ideal when you want to release a package to your users. The challenge is that after packages are produced, they're [immutable](/azure/devops/artifacts/feeds/immutability). They can't be updated or replaced. 
+Although Semantic Versioning with prerelease labels is a good solution for packages produced in CI builds, including a prerelease label is not ideal when you want to release a package to your users. The challenge is that after packages are produced, they're [immutable](../../artifacts/artifacts-key-concepts.md). They can't be updated or replaced. 
 
 When you're producing a package in a build, you can't know whether it will be the version that you aim to release to your users or just a step along the way toward that release. Although none of the following solutions are ideal, you can use one of these depending on your preference:
 
@@ -150,7 +150,7 @@ In the previous section, you learned how to create a package with every build. W
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
-To publish to an Azure Artifacts feed, set the **Project Collection Build Service** identity to be a **Contributor** on the feed. To learn more about permissions to Package Management feeds, see [Secure and share packages using feed permissions](/azure/devops/artifacts/feeds/feed-permissions). Add the following snippet to your `azure-pipelines.yml` file.
+To publish to an Azure Artifacts feed, set the **Project Collection Build Service** identity to be a **Contributor** on the feed. To learn more about permissions to Package Management feeds, see [Secure and share packages using feed permissions](../../artifacts/feeds/feed-permissions.md). Add the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
 steps:
@@ -218,7 +218,7 @@ To publish to an external NuGet feed, you must first create a service connection
 
 ## Publish symbols for your packages
 
-When you push packages to a Package Management feed, you can also [publish symbols](/azure/devops/pipelines/artifacts/symbols).
+When you push packages to a Package Management feed, you can also [publish symbols](./symbols.md).
 
 ## FAQ
 
