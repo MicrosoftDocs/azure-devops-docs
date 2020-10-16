@@ -79,7 +79,7 @@ You can bulk update work items to add or remove tags from the web portal.
 You bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags). Or, you can use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to bulk add or remove tags.   
 
 > [!div class="mx-imgBorder"]
-> ![Bulk add to several work items](media/add-tags/bulk-add-tags.png) 
+> ![Edit work items dialog, Bulk add to several work items.](media/add-tags/bulk-add-tags.png) 
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ To query work items based on tags, add a clause for each tag you want to use to 
 For example, here we query for all work items that are tagged either ```Web``` or ```Service```. 
 
 > [!div class="mx-imgBorder"]
-> ![Bulk add to several work items](media/add-tags/query-tags-add-or.png) 
+> ![Screenshot of Query Editor to query on tags.](media/add-tags/query-tags-add-or.png) 
 
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
@@ -124,12 +124,12 @@ For example, here we query for all work items that are tagged either ```Web``` o
 Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  to select it from the menu of options.    
 
 > [!div class="mx-imgBorder"]
-> ![Add Tags to the selected columns to display](media/add-tags/column-options-add-tags-field.png)
+> ![Column options dialog, Add Tags to the selected columns to display.](media/add-tags/column-options-add-tags-field.png)
 
 All tags that have been added to the listed work items appear.
 
 > [!div class="mx-imgBorder"]
-> ![View with Tags column added](media/add-tags/backlog-with-tags.png) 
+> ![Screenshot of product backlog, View with Tags column added.](media/add-tags/backlog-with-tags.png) 
  
 ::: moniker-end
   
@@ -138,11 +138,11 @@ All tags that have been added to the listed work items appear.
 
 1. Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions icon to select it from the menu of options.    
 
-	![Add Tags to the selected columns to display](media/add-tags-to-query-results.png)
+	![Column options dialog, Add Tags to the selected columns to display, TFS-2015 and earlier versions.](media/add-tags-to-query-results.png)
 
 2. All tags that are assigned to the listed work items appear.
 
-	![View with Tags column added](media/query-results-with-tags-listed.png) 
+	![Product backlog view with Tags column added, TFS-2015 and earlier versions.](media/query-results-with-tags-listed.png) 
  
 ::: moniker-end
 
