@@ -8,14 +8,14 @@ ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 06/03/2020
+ms.date: 10/16/2020
 ---
 
 # Restrict new user invitations from Project and Team Administrators 
 
 [!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
-By default, all administrators can invite new users to Azure DevOps. Disabling this policy will block Team and Project Administrators from inviting new users. Project Collection Administrators (PCAs) can add new users to the organization, regardless of the policy status.
+By default, all administrators can invite new users to their Azure DevOps organization. Disabling this policy will block Team and Project Administrators from inviting new users to the organization. Project Collection Administrators (PCAs) can add new users to the organization, regardless of the policy status. If a user is already a member of the organization, Project and Team Adminstrators will still be able to add that user to their project.
 
 <!---
 
