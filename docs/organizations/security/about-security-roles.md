@@ -95,7 +95,7 @@ For details, see [Manage teams and configure team tools](../settings/manage-team
 
 ## Related articles
 
-- [About permissions and groups](about-permissions.md)
+- [About permissions and inheritance](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
 - [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
  

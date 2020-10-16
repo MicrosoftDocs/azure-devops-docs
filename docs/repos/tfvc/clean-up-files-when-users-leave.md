@@ -35,4 +35,4 @@ To perform these procedures, you must be a member of the **Team Foundation Admin
 
 #### Tasks
 
-[Remove a User From a Project or Project Collection](https://msdn.microsoft.com/library/ms253182)
+[Remove a User From a Project or Project Collection](/previous-versions/visualstudio/visual-studio-2010/ms253182(v=vs.100))

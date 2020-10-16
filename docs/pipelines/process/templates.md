@@ -178,7 +178,7 @@ steps:
 You can copy content from one YAML and reuse it in a different YAML. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 
 ```yaml
-# File: include-npm-steps.yml
+# File: templates/include-npm-steps.yml
 
 steps:
 - script: npm install

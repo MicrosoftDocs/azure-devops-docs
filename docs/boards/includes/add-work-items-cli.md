@@ -11,7 +11,7 @@ ms.date: 07/09/2020
 
 ### Add work item
 
-You can add a new work item with the [az boards work-item create](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-create) command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index). 
+You can add a new work item with the [az boards work-item create](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 ```azurecli
 az boards work-item create --title

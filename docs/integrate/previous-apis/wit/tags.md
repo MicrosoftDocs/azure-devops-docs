@@ -106,7 +106,7 @@ GET https://mytfsserver/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-45d
 
 #### Sample code
 
-* [C# (GetListOfTags method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L21)
+* [C# (GetListOfTags method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L21)
 
 ### Including inactive tags
 
@@ -201,7 +201,7 @@ GET https://mytfsserver/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-45d
 
 #### Sample code
 
-* [C# (GetListOfTagsIncludeInactive method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L41)
+* [C# (GetListOfTagsIncludeInactive method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L41)
 
 ## Get a tag
 
@@ -241,7 +241,7 @@ GET https://mytfsserver/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-45d
 
 #### Sample code
 
-* [C# (GetTagByName method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L62)
+* [C# (GetTagByName method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L62)
 
 ### By ID
 
@@ -265,7 +265,7 @@ GET https://mytfsserver/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-45d
 
 #### Sample code
 
-* [C# (GetTagById method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L87)
+* [C# (GetTagById method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L87)
 
 ## Create a tag
 <a name="createatag" />
@@ -317,7 +317,7 @@ POST https://mytfsserver/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-45
 
 #### Sample code
 
-* [C# (CreateTag method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L112)
+* [C# (CreateTag method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L112)
 
 ## Update a tag
 
@@ -372,7 +372,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-4
 
 #### Sample code
 
-* [C# (UpdateTag method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L128)
+* [C# (UpdateTag method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L128)
 
 ## Delete a tag
 Before you decide to delete a tag, consider that they may be associated with historical revisions of work items or other resources.
@@ -400,8 +400,8 @@ DELETE https://mytfsserver/DefaultCollection/_apis/tagging/scopes/6ce954b1-ce1f-
 
 #### Sample code
 
-* [C# (DeleteTag method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L154)
+* [C# (DeleteTag method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L154)
 
 ## Samples
 
-* [Delete all inactive tags (DeleteAllInactiveTags method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L168)
+* [Delete all inactive tags (DeleteAllInactiveTags method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/TagsSample.cs#L168)

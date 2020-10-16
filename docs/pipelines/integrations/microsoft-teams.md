@@ -302,5 +302,5 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Related articles
-- [Azure Boards with Microsoft Teams](https://aka.ms/AzureBoardsTeamsIntegration)
-- [Azure Repos with Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
+- [Azure Boards with Microsoft Teams](../../boards/integrations/boards-teams.md)
+- [Azure Repos with Microsoft Teams](../../repos/integrations/repos-teams.md)

@@ -20,7 +20,7 @@ If a team member is blocked from checking in a file that is locked by someone el
 
 If you must also remove an exclusive lock on a file, but not the pending changes, you can use the **tf lock** command. For more information, see [Lock Command](lock-command.md).
 
-If you must also delete another user's workspace, you can use the **tf workspace** command. For more information, see [Remove a Workspace](https://msdn.microsoft.com/library/ms245474).
+If you must also delete another user's workspace, you can use the **tf workspace** command. For more information, see [Remove a Workspace](/previous-versions/ms245474(v=vs.110)).
 
 **Required Permissions**
 

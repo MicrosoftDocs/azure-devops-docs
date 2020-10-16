@@ -102,4 +102,4 @@ If you're not going to continue to use the GitHub Action, delete the workflow wi
 
 Learn how to connect to the Azure environment and deploy to Azure with GitHub. 
 > [!div class="nextstepaction"]
-> [Deploy to Azure using GitHub Actions](https://docs.microsoft.com/azure/developer/github/github-actions)
+> [Deploy to Azure using GitHub Actions](/azure/developer/github/github-actions)

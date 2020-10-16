@@ -179,7 +179,7 @@ Build policies reduce breaks and keep your test results passing. Build policies 
 If a build validation policy is enabled, a new build is queued when either a new pull request is created, or if changes are pushed to an existing pull request targeting the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
 
 >[!IMPORTANT]
->Before specifying a build validation policy, you must have a build pipeline. If you don't have one, see [Create a build pipeline](../../pipelines/apps/index.md) and choose the type of build that matches your project type.
+>Before specifying a build validation policy, you must have a build pipeline. If you don't have one, see [Create a build pipeline](/previous-versions/azure/devops/pipelines/apps/) and choose the type of build that matches your project type.
 
 ![Add build policy](media/branch-policies/add-build-policy.png)
 
@@ -212,7 +212,7 @@ Build policies reduce breaks and keep your test results passing. Build policies 
 If a build validation policy is enabled, a new build is queued when either a new pull request is created, or if changes are pushed to an existing pull request targeting the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
 
 >[!IMPORTANT]
->Before specifying a build validation policy, you must have a build definition. If you don't have one, see [Create a build definition](../../pipelines/apps/index.md) and choose the type of build that matches your project type.
+>Before specifying a build validation policy, you must have a build definition. If you don't have one, see [Create a build definition](/previous-versions/azure/devops/pipelines/apps/) and choose the type of build that matches your project type.
 
 ![Add build policy](media/branch-policies/add-build-policy-2018.png)
 
@@ -240,7 +240,7 @@ When the owner pushes changes that build successfully, the policy status is upda
 
 ## <a name="require-approval-from-external-services"></a>Status checks
 
-External services can use the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107) to post detailed status to your PRs. The branch policy for additional services brings the ability for those third-party services to participate in the PR workflow and establish policy requirements.
+External services can use the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses) to post detailed status to your PRs. The branch policy for additional services brings the ability for those third-party services to participate in the PR workflow and establish policy requirements.
 
 ![Require external services to approve](media/branch-policies/require-approval-from-additional-services.png)
 
@@ -252,7 +252,7 @@ For instructions on configuring this policy, see [Configure a branch policy for 
 
 ## <a name="require-approval-from-external-services"></a>Require approval from external services
 
-External services can use the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107) to post detailed status to your PRs. The branch policy for additional services brings the ability for those third-party services to participate in the PR workflow and establish policy requirements.
+External services can use the PR [Status API](/rest/api/azure/devops/git/pull%20request%20statuses) to post detailed status to your PRs. The branch policy for additional services brings the ability for those third-party services to participate in the PR workflow and establish policy requirements.
 
 ![Require external services to approve](media/branch-policies/require-approval-from-additional-services-2018.png)
 
@@ -431,6 +431,6 @@ The configured policies are still evaluated when you add changes to a pull reque
 
 #### Where can I get more information on advanced policy configurations?
 
-Check out the [REST API documentation](https://go.microsoft.com/fwlink/?LinkId=526702) for more details.
+Check out the [REST API documentation](../../integrate/index.md?viewFallbackFrom=vsts) for more details.
 
-::: moniker-end 
+::: moniker-end
