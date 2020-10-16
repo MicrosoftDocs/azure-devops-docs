@@ -9,87 +9,97 @@ author: KathrynEE
 monikerRange: '<= azure-devops'
 ms.date: 10/05/2020
 ---
-
-
+ 
 
 # End-to-end traceability 
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-Main points: 
-- Requirements traceability 
-	- Linking requirements through deployment 
-- Tests, manual and automated, adding manual tests to pipelines to be run automatically 
-- Reports and analytics 
-	- Monitor coverage 
-	- Test summaries 
-  
+One of the chief advantages of adopting a platform such as Azure DevOps is the support it provides to trace work from requirements to deployment. You gain insight at each step of decisions made and the features being deployed. Git repository. The features and scenarios illustrated in this article are supported when you use Azure Repos git repositories. 
 
-Become familiar with the essential concepts to manage projects using Agile tools. Gain an overview of Azure DevOps tools and features to manage requirements. This article maps Agile requirements management tasks by project managers to the tools Azure DevOps supports. More detailed information is provided under [Related articles](#related-articles).   
+The following are some of the supported tasks to facilitate end-to-end traceability:
 
-When we demo traceability to customers, the main demo we show is 
-- Create a work item
-- Create a branch from the work item
-- Make a change in the branch, create a pull request
-- Validate the pull request using a build
-- Merge the pull request, build the master branch
-- Deploy it to production and in all of this show how every artifact is linked to the other. For instance, the production deployment shows the work items and commits, the work item shows which build it was part of, etc.   
-
-(In this article - source control is Git in Azure DevOps - this supports end-to-end traceability) 
-
+> [!div class="checklist"]  
+> - Create a branch from a requirement 
+> - Create a pull request of updated branch 
+> - Validate the pull request using a build pipeline 
+> - Create and run inline tests on requirements
+> - Merge the pull request into the main, default branch 
+> - Deploy changes into production with deployment status to Azure Boards 
+> - Monitor and report on requirements traceability 
 
 > [!NOTE]
-> *Your journey to end-to-end traceability is all about tracking where work originates right through to delivery (and back through the customer feedback loop). To be able to do this you first have to start by understanding where you're at.*  
-> *Traceability in software engineering is the ability to trace work items across the development lifecycle. It's used to keep track of what's going on in the development lifecycle — and show what's happened. Achieving regulatory compliance is a common purpose for traceability in software engineering.*  - tasktop 
+> *Tracking the origin of work through delivery, and the ability to trace work across the development lifecycle, is essential to achieving end-to-end traceability.*  
+
+End-to-end traceability is supported by linking various objects such as work items, branches, commits, pull requests, builds, and releases. Build in reports and Analytics support the ability to monitor traceability in real time. This article presents an overview of Azure DevOps traceability support without going into the details of how to enable and support traceability. More detailed information is provided under [Related articles](#related-articles).   
+
 
 While commiting the code changes you should associate the work item
 After commiting the CI Build will trigger. Post that in that work item, there will be link reference to the Build
 And when this build is deployed to any of the release environments, it will be displayed under. You can check this new feature introduced in Azure DevOps here
 But if you want all this information in a table, in one single view. You have to use Azure DevOps REST APIs to build a customer report to get all the data in one place.
 
+## Traceability and linking 
 
-## Drive development from requirements  
 
-Create a branch from a work item  
+Throughout the development lifecycle, you can capture which code changes, builds, and releases support the completion of a work item. In this way, your team can understand what work was done or how a bug was fixed through the audit trail of changes to the code base.
+
+The link types used to construct these links for Git repositories&mdash;as illustrated in the following image&mdash;are *Build*, *Found in build*, *Integrated in build*, *Branch*, *Commit*, *Pull Request*, and *Integrated in release stage*.
+
+> [!div class="mx-imgBorder"]  
+> ![Conceptual image of code, build, and release links to work items.](media/traceability/concept-build-release-links.png) 
+
+## Branch from a requirement  
+
+You can accomplish many tasks with a single click from the product Kanban board. Here we show creating a branch from a requirement by opening the work item card menu. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Kanban board card, menu, choose New branch option.](media/traceability/board-card-menu-new-branch.png)   
 
+You can name and label a branch off the default main branch from the dialog that opens. The work item is automatically linked to the branch you created with the *Branch* link type. 
+
 > [!div class="mx-imgBorder"]  
 > ![Create a branch dialog.](media/traceability/create-branch-dialog.png)   
-Work item automatically linked to the branch you created. 
 
 
-Part of traceability is linkage (make image Git-specific) 
-Work items linked to code artifacts and build and release pipelines
-As you develop your software, you can capture which code changes and builds support the completion of a work item. In this way, your team can understand what work was done or how a bug was fixed through the audit trail of changes to the code base.
+## Create a pull request from a requirement
 
-The link types used to construct these links—as illustrated in the following image—are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, Versioned Item, and Integrated in release environment.
+After code changes have been made to the new branch, developers can then create a pull request from the requirement by opening the work item form. 
+
 > [!div class="mx-imgBorder"]  
-> ![Conceputal image illustrating external link types](/azure/devops/boards/queries/media/link-tracking-artifact-to-artifact-link-types.png)   
+> ![Work item form, Create a pull request.](media/traceability/work-item-form-pull-request.png)   
 
+Another advantage of driving software development from the Kanban board and work item is to encourage developers to input comments as they work to further the audit trail of changes occuring. 
 
+ 
 ## Run tests from requirements 
-Requirements traceability is the ability to relate and document two or more phases of a development process, which can then be traced both forward or backward from its origin. Requirements traceability help teams to get insights into indicators such as quality of requirements or readiness to ship the requirement. A fundamental aspect of requirements traceability is association of the requirements to test cases, bugs and code changes.
 
-Add, run, and update inline tests
-you can quickly define inline tests, or a set of manual tests, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. 
-
-> [!NOTE]
-> *Test traceability is the ability to link a test to a set of requirements and confidently verify that the application works as expected.*
-
+Just like you can create a new branch from the Kanban board, you can also add tests to the work item. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Kanban board card, menu, choose Add test option.](media/traceability/board-card-menu-add-test.png)   
 
+> [!NOTE]
+> *Test traceability supports linking a test to a set of requirements and validating that the application works as expected.*
+
+After adding and defining the tests, you can run them from the Kanban board. 
+
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Kanban board card, test menu, choose Run test.](media/traceability/board-card-menu-run-test.png)  
 
-Test integration with the Kanban board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities in Test Manager later, when required. When test cases are created from the Kanban board and updated afterwards in Test Manager, or vice-versa, when users create requirement-based suites with Test Manager and update them in Test Manager, the Kanban board shows the correct status. 
+Test integration with the Kanban board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities in Test Manager later. The Kanban board shows the test added to support the requirement when test cases are created from the Kanban board or when requirement-based test suites are created under Azure Test Plans. 
 
-<a id="related-articles" />
+## Manual and automated testing
+
+Teams that are moving from manual testing to continuous, automated testing, and have a subset of tests already automated, can execute them as part of a pipeline or on demand . Referred to as *planned testing*, automated tests can be associated to the test cases in a test plan and executed from Azure Test Plans. Once associated, these tests contribute towards the quality metrics of the corresponding requirements.
+
+
+## Deploy changes into production
+
+
 
 ## Link requirements to deployments
+
 - Deploy it to production and in all of this show how every artifact is linked to the other. For instance, the production deployment shows the work items and commits, the work item shows which build it was part of, etc.   
 The release deployments control shows release information for those work items that have been associated to a Git commit which is part of a build being released. 
 
@@ -97,8 +107,7 @@ The release deployments control shows release information for those work items t
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Release pipeline Options>Integrations settings.](media/traceability/release-pipeline-options.png) 
 
-> [!div class="mx-imgBorder"]  
-> ![Conceptual image of code, build, and release links to work items.](media/traceability/concept-build-release-links.png) 
+
 
 The work item deployment control displays the status of releases within those work items that are associated with commits in the build and those release pipelines you've configured to report deployment information to Azure Boards. 
 
@@ -112,11 +121,8 @@ When you open the work item, you can see the stages the release is being deploye
 > [!div class="mx-imgBorder"]  
 > ![Release Settings Stages](/azure/devops/boards/work-items/media/deployments-control/deployments-control-1.png)
 
-## Manual and automated testing
 
-Teams that are moving from manual testing to continuous (automated) testing, and have a subset of tests already automated, can execute them as part of the pipeline or on demand (see test report). Referred to as Planned testing, automated tests can be associated to the test cases in a test plan and executed from Azure Test Plans. Once associated, these tests contribute towards the quality metrics of the corresponding requirements.
-
-
+ 
 ## Requirements Traceability Matrix
 
 Requirements traceability is the ability to relate and document two or more phases of a development process, which can then be traced both forward or backward from its origin. Requirements traceability help teams to get insights into indicators such as quality of requirements or readiness to ship the requirement. A fundamental aspect of requirements traceability is association of the requirements to test cases, bugs and code changes.
@@ -178,9 +184,11 @@ To track the quality of work items that belong to the Requirements category. Thi
 
 ### Test failures
 
-
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of test failures.](/azure/devops/pipelines/test/media/test-analytics/test-failures.png)
+
+<a id="related-articles" />
+
 
 ## Related articles 
 
@@ -194,7 +202,13 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Linking, traceability, and managing dependencies](/azure/devops/boards/queries/link-work-items-support-traceability)
 
 
-### Reports and Analytics
+### Testing
+
+- [Add, run, and update inline tests](/azure/devops/boards/boards/add-run-update-tests)
+- [Associate automated tests with test cases](azure/devops/test/associate-automated-test-with-test-case)
+
+
+## Reports and Analytics
 
 - [Requirements traceability](/azure/devops/pipelines/test/requirements-traceability)
 - [Requirements tracking sample report](/azure/devops/report/powerbi/sample-stories-overview) 
@@ -203,3 +217,28 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Test Analytics](/azure/devops/pipelines/test/test-analytics)
 - [Review code coverage results](/azure/devops/pipelines/test/review-code-coverage-results)
 - [Code coverage for pull requests](/azure/devops/pipelines/test/codecoverage-for-pullrequests)
+
+<!---
+
+Main points: 
+- Requirements traceability 
+	- Linking requirements through deployment 
+- Tests, manual and automated, adding manual tests to pipelines to be run automatically 
+- Reports and analytics 
+	- Monitor coverage 
+	- Test summaries 
+  
+
+Become familiar with the essential concepts to manage projects using Agile tools. Gain an overview of Azure DevOps tools and features to manage requirements. 
+
+When we demo traceability to customers, the main demo we show is 
+- Create a work item
+- Create a branch from the work item
+- Make a change in the branch, create a pull request
+- Validate the pull request using a build
+- Merge the pull request, build the master branch
+- Deploy it to production and in all of this show how every artifact is linked to the other. For instance, the production deployment shows the work items and commits, the work item shows which build it was part of, etc.   
+
+(In this article - source control is Git in Azure DevOps - this supports end-to-end traceability) 
+
+-->
