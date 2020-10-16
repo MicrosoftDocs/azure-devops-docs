@@ -476,10 +476,10 @@ In YAML pipelines, we recommend that you put your deployment steps in a deployme
 
 ```YAML
 jobs:
-- deployment: string   # name of the deployment job (A-Z, a-z, 0-9, and underscore)
+- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. Avoid using "deploy" keyword as that is not supported.
   displayName: string  # friendly name to display in the UI
-  pool:                # see the following "Pool" schema
-    name: string
+  pool:                # see pool schema
+    name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.
     demands: string | [ string ]
   workspace:
     clean: outputs | resources | all # what to clean up before the job runs
