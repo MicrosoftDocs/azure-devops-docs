@@ -16,20 +16,21 @@ Pull requests provide an effective way to have code reviewed before it is merged
 
 Configuring pull request based releases has two parts:
 
-1. Setting up a pull request trigger for the intended artifact in a release pipeline.
-2. Setting up a branch policy (in Azure Repos) or a status check (in GitHub) for the release pipeline
+1. Setting up a pull request trigger.
+2. Setting up a branch policy (in Azure Repos) or a status check (in GitHub) for your release pipeline.
 
 Once a pull request release is configured, anytime a pull request is raised for the protected branch a release is triggered automatically, deployed to the specified environments, and the status of the deployment is displayed in the PR page. Pull request deployments may help you catch deployment issues early in the cycle, maintain better code quality, and release with higher confidence.
 
 This article shows how you can set up a pull request based release for code hosted in Azure Repos and in GitHub.
 
-## PR release with code hosted on Azure Repos
+### Create a pull request trigger
 
-### Create the pull request trigger
+Pull request trigger creates a release every time a new version of your selected Artifact is available. You can set up PR triggers with both Azure repos or GitHub repositories.
 
-1. Select the trigger of the artifact for which you want to set up a PR trigger.
+1. Under **Artifacts** select the **Continuous deployment trigger** icon.
 
-   ![Release definition highlighting trigger on an artifact](media/deploy-pull-request-builds/artifact-pr-trigger.png)
+   > [!div class="mx-imgBorder"]
+   > ![Continuous deployment trigger](media/deploy-pull-request-builds/artifact-pr-trigger.png)
 
 2. Select the pull request trigger toggle and set it to **Enabled**.
 
