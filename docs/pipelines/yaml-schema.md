@@ -1466,7 +1466,7 @@ pr:
   paths:
     include: [ string ] # file paths which must match to trigger a build
     exclude: [ string ] # file paths which will not trigger a build
-  drafts: boolean # whether to build draft PRs, defaults to true
+  drafts: boolean # For GitHub only, whether to build draft PRs, defaults to true
 ```
 
 :::moniker-end
