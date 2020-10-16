@@ -23,7 +23,7 @@ Once a pull request release is configured, anytime a pull request is raised for 
 
 This article shows how you can set up a pull request based release for code hosted in Azure Repos and in GitHub.
 
-### Create a pull request trigger
+## Create a pull request trigger
 
 Pull request trigger creates a release every time a new version of your selected Artifact is available. You can set up PR triggers with both Azure repos or GitHub repositories.
 
@@ -55,31 +55,35 @@ Pull request trigger creates a release every time a new version of your selected
 > [!IMPORTANT]
 > For critical stages like production, **Pull request deployment** should not be turned on.
 
-### Configure status policy in Azure Repos
+## Set up branch policy for Azure Repos
 
-You can use branch policies to enforce successful deployment as a required criteria for a PR to be merged. The following steps detail how to configure policy in Azure Repos for a posted status.
+You can use branch policies to implement a list of criteria that must be met for a PR to be merged.
 
-1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
+1. Under **Repos** select **Branches** to access the list of branches for your repository.
 
-   ![Open up the Branches page on the web](../../repos/git/media/branches/branches_nav-new-nav.png)
+   > [!div class="mx-imgBorder"]
+   > ![Branches in Azure repos](../../repos/git/media/branches/branches_nav-new-nav.png)
 
-2. Open the context menu for the branch for which the PRs are raised by selecting the ... icon. Select **Branch policies** from the context menu.
+2. Select the the context menu `...` for your appropriate branch and select **Branch policies**.
 
-   ![Branches section inside Azure Repos, highlighting branch policy option for main branch](media/deploy-pull-request-builds/branch-policies-menu.png)
+   > [!div class="mx-imgBorder"]
+   > ![Branch policies for main branch](media/deploy-pull-request-builds/branch-policies-menu.png)
 
-3. Select **Add status policy** to display the **Add status policy** page in the right pane. In the **status to check** dropdown, a list of recent statuses that have been posted are displayed. The status of the PR release is also posted here with the release definition name. The release definition should have run at least once with the PR trigger switched on to see this status. Select the status corresponding to your release definition and save the policy.
+3. Select **Add status policy** and select a status policy from the **status to check** dropdown menu. The dropdown contains a list of recent statuses. The release definition should have run at least once with the PR trigger switched on in order to get the status. Select the status corresponding to your release definition and save the policy.
 
-   ![How to select a status for status policy](media/deploy-pull-request-builds/add-status-policy.png)
+   > [!div class="mx-imgBorder"]
+   > ![Add status policy](media/deploy-pull-request-builds/add-status-policy.png)
 
-   You can further customize the policy for this status, for example by making the policy required or optional. For more information, see [Configure a branch policy for an external service](../../repos/git/pr-status-policy.md).
+   You can further customize the policy for this status, like making the policy required or optional. For more information, see [Configure a branch policy for an external service](../../repos/git/pr-status-policy.md).
 
-4. After configuring the status policy, a new row is displayed in the policy list. Once the policy is configured, anytime a PR is raised for the configured branch (main), the PR waits for the status of the release to be posted from the corresponding release definition.
+4. You should now be able to see your new status policy in the list. Users won't be able to merge any changes to the target branch until "succeeded" status is posted to the pull request.
+   > [!div class="mx-imgBorder"]
+   > ![Status policy list](media/deploy-pull-request-builds/status-policies.png)
 
-   ![Configured status policies list](media/deploy-pull-request-builds/status-policies.png)
-
-5. You can view the status of the pipeline run in the policies section of the pull request **Overview** page. Depending on your policy settings, you can view the posted release status under the **Required**, **Optional**, or **Status** sections. The release status is updated each time the pipeline runs.
-
-   ![Pull request page that highlights a configured policy that has passed](media/deploy-pull-request-builds/pull-request-policy-status.png)
+5. You can view the status of your policies in the pull request Overview page. Depending on your policy settings, you can view the posted release status under the **Required**, **Optional**, or **Status** sections. The release status gets updated every time the pipeline is triggered.
+   
+   > [!div class="mx-imgBorder"]
+   > ![Pull request policies status](media/deploy-pull-request-builds/pull-request-policy-status.png)
 
 ## PR release with code hosted on GitHub
 
