@@ -116,6 +116,10 @@ enter a name for the pool and then select the projects for which you want it to 
 When you navigate to the **Deployment Groups** page in the target project(s), you
 will see the deployment group you added and you can assign project-specific machine tags as required.
 
+### Automatically deploy to new targets in a deployment group
+When new targets are added to a deployment group, you can configure the environment to automatically deploy the last successful release to the new targets. 
+![Add dg_targets](media/dg_add_targets.png)
+
 ## Related topics
 
 * [Run on machine group job](../../process/deployment-group-phases.md)
