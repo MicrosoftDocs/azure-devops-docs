@@ -13,6 +13,18 @@ ms.date: 09/08/2020
 
 # Traceability, automation, and process improvement 
 
+
+Agile methods are built on the following four main values:   
+
+> [!div class="checklist"]  
+> - Individuals & interactions over processes & tools
+> - Working software over comprehensive documentation
+> - Customer collaboration over contract negotiation
+> - Responding to change over following a plan
+
+
+
+
 Agile teams have characteristics including, but not limited to the following
 
 Faster release cycles

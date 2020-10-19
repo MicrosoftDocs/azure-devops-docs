@@ -15,49 +15,27 @@ ms.date: 10/15/2020
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-Managing change is an aspect of managing requirements in so far as the change occurs to a product plan or requirements. From the point of this article, the change to track is those that occur once a sprint starts. 
-And, in keeping with Agile methods, want to keep it lightweight. The focus here is to gain insight into the types of changes that are occuring, where they arise, and how they impact the team in their ability to deliver.  
-
-This article maps Agile change management tasks by project managers to the tools Azure DevOps supports. More detailed information is provided under [Related articles](#related-articles).   
+Managing change is an aspect of managing requirements and your project plan. This article provides an overview of the types of changes to monitor and methods for managing change. 
 
 > [!NOTE]
 > *Change management is defined as the methods and manners in which a company describes and implements change within both its internal and external processes. ... Developing a structured approach to change is critical to help ensure a beneficial transition while mitigating disruption. Asq.org*  
 
-Agile methods emphasize *"Responding to change over following a plan"*.   
-When managing change using Agile methods, you want to meet the following scenarios.   
+In keeping with the Agile manifesto that encourages "*Responding to change over following a plan*, how should you manage change? 
+ 
+In keeping with Agile methods, you want to keep your change management process lightweight. The focus here is to gain insight into the types of changes that are occuring, where they arise, and how they impact the team in their ability to deliver.  When managing change using Agile methods, you want to meet the following scenarios.   
 
 > [!div class="checklist"]  
 > - Define and track status of change  
 > - Analyze and prioritize change requirements  
 > - Monitor and report on changes  
-
-Control scope changes, minimize scope creep   
-Identify planned, completed, and incomplete work  
-Support a change management process  
-
-
-Agile methods are built on the following four main values:   
-
-> [!div class="checklist"]  
-> - Individuals & interactions over processes & tools
-> - Working software over comprehensive documentation
-> - Customer collaboration over contract negotiation
-> - Responding to change over following a plan
-
-
-Change management culture  :  
-
-> [!div class="checklist"]  
-> - Alignment within the organization
-> - Autonomous teams 
-> - Kanban and lean management 
-> - Scrum   
  
-The point is that when does change occur? Everything is iterative. Good practice is to constantly refine the backlog to ensure acceptance criteria is well defined and your team is building the software your customers want.  
+ 
+This article maps Agile change management tasks by project managers to the tools Azure DevOps supports. More detailed information is provided under [Related articles](#related-articles).   
+
 
 ## Where does change arise?   
 
-Very briefly, change can occur from a number of areas: 
+Very briefly, for the purposes of this article, changes can occur from a number of areas: 
 
 - Business needs and customer needs change  
 - New priorities arise 
@@ -65,6 +43,22 @@ Very briefly, change can occur from a number of areas:
 - Resources change, organizations change  
 - New dependencies are discovered  
 
+Best change management practices must be integrated into the organization culture. 
+- Continuous improvement 
+- Adoption of Agile practices and an entrepreneurial mindset  
+- Transparent operations
+- Daily communication 
+- More upfront work to minimize change 
+- Early engagement of the change
+- Consistent communication
+- Senior leader engagement
+ 
+
+B- usiness Case for Action to define what the change is
+- From-To Definition to identify gaps between “is” and “will be”
+- Key Role Mapping to identify where Sponsors are needed, and who specifically these individuals are by name
+- Readiness Planning to have strategies and tactics available to manage resistance
+- Communication Planning by audience, with feedback loops to gather feedback that identifies potential sources of resistance
 
 Minimize these types of change: 
 - Poorly understood acceptance criteria 
@@ -73,20 +67,31 @@ Minimize these types of change:
 
 ## Goals for managing change
 
-- Control Scope Changes
+Agile project managers focus on the following goals when managing change: 
+
+- Ensure customer needs are being met
+- Control scope changes, minimize scope creep 
+
+- Complete on time and within budget  
+- Meet customer needs, requirements 
+- Meet business objectives 
+- Meet human objectives - organization, team objectives 
+- 
+- Develop contingency plans in the event of change 
+
 - Identify planned, completed, and incomplete work
-- Minimize scope creep 
+ 
 - Support a change management process
 
 ## Options for tracking change 
 
-You can track changes informally or formally. The more informal tracking, while lightweight in process, leads to less capability to track the change. In the end, the way you track changes should mesh with the change management culture established in your organization.  
+The point is that when does change occur? Everything is iterative. Good practice is to constantly refine the backlog to ensure acceptance criteria is well defined and your team is building the software your customers want.  
 
-Here are the main ways you can track change: 
-- Track changes to requirements within the requirement work item through discussions, changes to acceptance criteria, or attachments 
-- Add a *change* tag to work items to support tracking changes to the scope of work 
-- Add a bug that tracks a change in scope or additional work 
-- Add a change request work item type to formally track ... 
+You can track changes informally or formally. The more informal tracking, while lightweight in process, leads to less capability to track the change. In the end, the way you track changes should mesh with the change management culture established in your organization. 
+
+The methods you adopt will probably depend on how large your organizaiton is, the need to provide an audit trail, your organization's change management culture and processes.  
+
+### Manage change at the product plan level 
 
 From an Agile methodology point of view you can minimize the need to track changes by following these suggestions: 
 - Constantly refine the product plan and product backlog for dependencies, risks 
@@ -94,59 +99,33 @@ From an Agile methodology point of view you can minimize the need to track chang
 - Work to minimize accepting changes after the start of the sprint, while still adhering to Agile principles 
 
 
-
-Goals: 
-
-
-
-Change request work item (formal tracking)
-Lightweight:  Capture details of change within work item
-Version Specifications
-
-
-
-
-Lightweight and formal change management 
-
+### Manage change during a sprint 
  
+Here are the main ways you can track change: 
+- Track changes to requirements within the requirement work item through discussions, changes to acceptance criteria, or attachments 
+- Add a *change* tag to work items to support tracking changes to the scope of work 
+- Add a bug that tracks a change in scope or additional work 
+- Add a change request work item type to formally track 
 
 
+#### Change request form 
 
-Where does change come from: 
-- business needs 
-- pulse surveys 
-- Sponsorship 
-- Change management culture
+To formally track change, you may want to define a change request work item type, similar to the one shown in the following image for the [Capability Maturity Model Integration (CMMI) process](/azure/devops/boards/work-items/guidance/cmmi-process).
 
-= Insights into change 
-- Measure churn 
-- 
+> [!div class="mx-imgBorder"]  
+> ![Change request work item form.](media/manage-change/change-request-form.png) 
 
+This form provides rich-text fields to capture the impact of the change on the following areas: 
+- Architecture
+- User experience
+- Test
+- Design and development
+- Technical publications 
 
-Iterative 
-
-Agile requirements management supports the following scenarios.   
-
-> [!div class="checklist"]  
-> - Define and track status of change requirements  
+You can adopt this form or customize your own to track the changes of most interest to your organization's needs. 
  
-> - Determine what can ship and when  
-> - Monitor and report on progress  
-> - Control Scope Changes 
-> - Identify planned, completed, and incomplete work 
-> - Minimize scope creep  
-> - Support a change management process
-
-
-
-Early engagement of change manager
-Consistent communication
-Senior leader engagement
-Early wins
-
- risk reduction approach to software development
-
-
+ 
+ 
 ## Monitor and report on changes    
 
  changes should be added to the backlog, tag 
@@ -176,6 +155,33 @@ Apply a “Change Request” tag
 > ![Screenshot of team velocity chart.](media/manage-requirements/team-velocity.png) 
 
  
+<!---
+
+
+Agile requirements management supports the following scenarios.   
+
+> [!div class="checklist"]  
+> - Define and track status of change requirements  
+ 
+> - Determine what can ship and when  
+> - Monitor and report on progress  
+> - Control Scope Changes 
+> - Identify planned, completed, and incomplete work 
+> - Minimize scope creep  
+> - Support a change management process
+
+
+
+Early engagement of change manager
+Consistent communication
+Senior leader engagement
+Early wins
+
+ risk reduction approach to software development
+
+
+-->
+
 ## Get notified of changes 
 
 Azure DevOps provides a robust alert system, allowing project members to set alerts for themselves, a team, or a project.   
