@@ -17,7 +17,7 @@ Pull requests provide an effective way to have code reviewed before it is merged
 Configuring pull request based releases has two parts:
 
 1. Setting up a pull request trigger.
-2. Setting up a branch policy (in Azure Repos) or a status check (in GitHub) for your release pipeline.
+2. Setting up a branch policy (in Azure Repos) or status checks (in GitHub) for your release pipeline.
 
 Once a pull request release is configured, anytime a pull request is raised for the protected branch a release is triggered automatically, deployed to the specified environments, and the status of the deployment is displayed in the PR page. Pull request deployments may help you catch deployment issues early in the cycle, maintain better code quality, and release with higher confidence.
 
@@ -85,15 +85,17 @@ You can use branch policies to implement a list of criteria that must be met for
    > [!div class="mx-imgBorder"]
    > ![Pull request policies status](media/deploy-pull-request-builds/pull-request-policy-status.png)
 
-### Configure status checks in GitHub
+## Set up status checks for GitHub repositories
 
-1. Configure status checks for branch in GitHub. To learn more about status checks, see [how to enable required status checks in GitHub](https://help.github.com/articles/enabling-required-status-checks/). Note that the status corresponding to the release definition appears in GitHub only after the release definition is run at least once with the **Pull request deployment** setting enabled.
+Enabling status checks for a GitHub repository allow an administrator to choose which status checks must pass before a pull request is merged into the target branch. Follow the [GitHub how-to guide](https://docs.github.com/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks) to enable status checks for your GitHub repository. The status checks will appear in your PRs only after your release pipeline is run at least once with the **Pull request deployment** condition set to **Enabled**.
 
-   ![GitHub branch protection rule setting, which highlights a recent status check found for this repository](media/deploy-pull-request-builds/github-branch-protection-rule.png)
+   > [!div class="mx-imgBorder"]
+   > ![Status checks GitHub](media/deploy-pull-request-builds/github-branch-protection-rule.png)
 
-2. The next time the pipeline runs, the status of the release is posted back to GitHub and is displayed on the PR page.
-
-   ![Pull request page in GitHub highlighting a succeeded status check](media/deploy-pull-request-builds/github-pr-status-check.png)
+You can view your status checks in your pull request under the **Conversation** tab.
+   
+   > [!div class="mx-imgBorder"]
+   > ![Pull request status checks](media/deploy-pull-request-builds/github-pr-status-check.png)
 
 ## Related articles
 
@@ -104,5 +106,3 @@ You can use branch policies to implement a list of criteria that must be met for
 - [Azure Repos](../../repos/git/index.yml)
 - [Branch policies](../../repos/git/branch-policies-overview.md)
 - [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)
-
-If you encounter issues or have suggestions, please feel free to [post a comment or create a post on Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
