@@ -407,23 +407,25 @@ The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete,
 
 ### Unhealthy Agents
 
-When agents or virtual machines are failing to start, not connecting to Azure DevOps, or going offline unexpectedly, Azure DevOps logs the failures to the Agent Pool's Diagnostics tab and tries to delete the associated virtual machine. Networking configuration, image customization, and pending reboots can cause these issues. Connecting to the VM to debug and gather logs can help with the investigation.
+When agents or virtual machines are failing to start, not connecting to Azure DevOps, or going offline unexpectedly, Azure DevOps logs the failures to the Agent Pool's **Diagnostics** tab and tries to delete the associated virtual machine. Networking configuration, image customization, and pending reboots can cause these issues. Connecting to the VM to debug and gather logs can help with the investigation.
 
-If you would like Azure DevOps to save an unhealthy agent VM for investigation and not automatically delete it when it detects the unhealthy state, navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Settings**. Check the option **Save an unhealthy agent for investigation** and click **Save**.
+If you would like Azure DevOps to save an unhealthy agent VM for investigation and not automatically delete it when it detects the unhealthy state, navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Choose **Settings**, select the option **Save an unhealthy agent for investigation**, and choose **Save**.
 
 :::image type="content" source="media/scale-set-agents/save-setting.png" alt-text="Save unhealthy agent setting.":::
 
-Now, when an unhealthy agent is detected in the scale set, Azure DevOps will save that Agent and associate virtual machine. This agent will be visible on the **Diagnostics** tab of the Agent pool UI. Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Diagnostics**.
+Now, when an unhealthy agent is detected in the scale set, Azure DevOps saves that agent and associated virtual machine. The saved agent will be visible on the **Diagnostics** tab of the Agent pool UI. Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, select your agent pool, choose **Diagnostics**, and make note of the agent name.
 
 :::image type="content" source="media/scale-set-agents/saved-agents-card.png" alt-text="Saved agents card.":::
 
-Find the associated virtual machine in your Azure virtual machine scale set via the Azure Portal. It will be in the **Instances** list. Click on the instance, and then click on connect.
+Find the associated virtual machine in your Azure virtual machine scale set via the Azure Portal, in the **Instances** list.
 
 :::image type="content" source="media/scale-set-agents/instances.png" alt-text="Azure Portal virtual machine scale set instances.":::
 
-:::image type="content" source="media/scale-set-agents/connect.png" alt-text="Connect to virtual machine instance":::
+Select the instance, choose **Connect**, and perform your investigation.
 
-When you are done with your investigation, you will need to delete the saved agent. Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Diagnostics**. Find the agent on the **Agents saved for investigation** card, and click **Delete**. This will remove the agent from the pool and delete the associated virtual machine.
+:::image type="content" source="media/scale-set-agents/connect.png" alt-text="Connect to virtual machine instance.":::
+
+To delete the saved agent when you are done with your investigation, navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Choose the tab labeled **Diagnostics**. Find the agent on the **Agents saved for investigation** card, and choose **Delete**. This removes the agent from the pool and deletes the associated virtual machine.
 
 :::image type="content" source="media/scale-set-agents/saved-agents-card-delete.png" alt-text="Saved agents card delete button.":::
      
