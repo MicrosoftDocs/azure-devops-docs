@@ -43,3 +43,25 @@ Goals
 - Use industry terms liberally to drive SEO 
 - Consider linking to GitHub content where appropriate 
 - Link to templates, code samples that help implement select scenarios   
+
+
+## Best practices
+
+Prioritize enabling the team over providing oversight.
+-  Plan using fixed schedule and variable scope (unless otherwise justified).
+-  Have an actively involved executive sponsor.
+-  Have a dedicated Scrum Master (if doing Scrum).
+-  Have a dedicated Product Owner with sole accountability for product decisions.
+-  Have a technical leader on the development team.
+-  Perform an envisioning workshop.
+-  Develop personas, user journeys, and user stories.
+-  Implement whole pieces of functionality instead of one layer at a time.
+-  Testers work as part of the development team.
+-  Perform frequent customer demonstrations.
+-  Perform retrospectives for process improvement.
+-  Automate deployments to all environments.
+-  Consider a reactive  architecture
+-  Develop in short iterations that result in high quality software at the end of each iteration.
+-  Ensure the project management role is filled.
+-  Identify a regular communication rhythm with full team.
+-  Include Premier and Premier developer offerings early in the engagement.

@@ -207,7 +207,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 ### Testing
 
 - [Add, run, and update inline tests](/azure/devops/boards/boards/add-run-update-tests)
-- [Associate automated tests with test cases](azure/devops/test/associate-automated-test-with-test-case)  
+- [Associate automated tests with test cases](/azure/devops/test/associate-automated-test-with-test-case)  
 
 
 ## Reports and Analytics

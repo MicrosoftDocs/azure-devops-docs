@@ -35,13 +35,27 @@ This article maps Agile change management tasks by project managers to the tools
 
 ## Where does change arise?   
 
-Very briefly, for the purposes of this article, changes can occur from a number of areas: 
+Very briefly, for the purposes of this article, valid changes can occur from a number of areas: 
 
 - Business needs and customer needs change  
 - New priorities arise 
 - Feature requirements change as new information arises 
 - Resources change, organizations change  
 - New dependencies are discovered  
+
+Less valid changes that can occur and contribute to scope creep include - many of these arise as Agile culture hasn't been completely adopted.  
+- A team member is unclear on a requirement or project scope or acceptance criteria
+- A team member is focused on developing what they believe to be best rather than what is required 
+- One or more team members make decisions without communicating with others 
+- Requirements aren't clearly articulated 
+- Requirements aren't well prioritized 
+- No agreement within the team on how to handle change
+- Poor estimates
+- New requests aren't negotiated
+- Stakeholders and customer input isn't sought out early enou, well enough, complete
+- Team members don't raise issues proactively 
+- Testing takes longer than expected 
+ 
 
 Best change management practices must be integrated into the organization culture. 
 - Continuous improvement 
@@ -64,6 +78,11 @@ Minimize these types of change:
 - Poorly understood acceptance criteria 
 - what more? 
 
+Log change to the backlog or change tracker
+Eliminate as many approvals as possible
+Have a light change control form, if necessary
+Keep the stakeholders and operations involved
+
 
 ## Goals for managing change
 
@@ -76,12 +95,78 @@ Agile project managers focus on the following goals when managing change:
 - Meet customer needs, requirements 
 - Meet business objectives 
 - Meet human objectives - organization, team objectives 
-- 
-- Develop contingency plans in the event of change 
+- Keep everyone informed 
 
+- Develop contingency plans in the event of change 
 - Identify planned, completed, and incomplete work
- 
 - Support a change management process
+
+- Assist teams in their continual improvement processes 
+
+> [!NOTE]
+> *What is Scope creep? Scope creep occurs when the deliverables or features of a project expand from what was originally defined, without a commensurate change in additional time or budget.*  
+ 
+ 
+## Best practices for managing change
+
+Changes should be added to the backlog, tag 
+Keep the process lightweight and eliminate as much waste as possible.
+
+
+- Log changes to the backlog  
+- Eliminate as many approvals as possible
+- Have a light change control form as needed
+- Keep all stakeholders and teams involved
+
+#### Ensure Definition of DOne, acceptance criteria is well defined
+The Definition of Done is the criteria necessary in order to consider something done or complete. It is most often created for User Stories to ensure the team agrees what is required to finish a story, but also can be created for Sprints themselves for the team to agree on when a Sprint is done.
+
+Ensures that all team members (including the Product Owner) understand what is required for a User Story to be completed within a sprint. If this is not established early for a scrum team, it is possible to get to the sprint demo and have stories that team members think are done, but in reality, have not been fully implemented. "Wait, I was supposed to write automated unit tests too?"
+
+**Example 1: A Product Backlog Item is considered “Done” when:**
+
+- Solution builds successfully.
+- Code written and merged into master branch
+- Unit Tests implemented on all features to an appropriate code coverage
+- All regression tests run and pass
+- All acceptance criteria met
+- Code has been peer reviewed and comments addressed
+- User Story moved to Resolved state
+- Remaining hours for tasks set to zero and tasks closed.
+- No open Sev1 or Sev2 bugs
+- Deploys successfully to non development environment (automated)
+- Static Code Analysis is run with results no worse than the baseline
+
+**Example 2: A Sprint is considered “Done” when:**
+- The time period allocated for the Sprint has passed
+- Unfinished work has been moved to the Backlog
+- Completed work has been deployed to target environment(s) and demoed in a Sprint Review to the Product Owner
+- Sprint Summary email has been sent to the team detailing:
+- User Stories Completed
+- Velocity of the sprint
+- Sprint Burndown
+- Notable accomplishments, highlights, or milestones that were hit
+- Retrospective conducted
+
+
+
+#### Questions to ask before accepting a change
+
+Does it serve the sprint goal?    
+Is there a clear business value for the change? 
+Upon release, sill the customer use the result of the scope change?
+What is the urgency for the change request?
+If new scope is added to the sprint backlog, is there something that can be removed? 
+
+### Avoid scope creep  
+1. Know your project goals from the start
+2. Get serious about documenting requirements
+3. Use project management software to keep everyone on track
+4. Create a change control process
+5. Set (and stick to) a clear schedule
+6. Learn the proper ways to communicate with stakeholders and your team
+7. Protect your team against “Gold plating”
+
 
 ## Options for tracking change 
 
@@ -89,7 +174,10 @@ The point is that when does change occur? Everything is iterative. Good practice
 
 You can track changes informally or formally. The more informal tracking, while lightweight in process, leads to less capability to track the change. In the end, the way you track changes should mesh with the change management culture established in your organization. 
 
-The methods you adopt will probably depend on how large your organizaiton is, the need to provide an audit trail, your organization's change management culture and processes.  
+The methods you adopt will depend on several factors, such as the following:
+- Change management processes adopted by your organization
+- The need to maintain an audit trail 
+- Communicate changes occurring across teams ... .  
 
 ### Manage change at the product plan level 
 
@@ -98,15 +186,19 @@ From an Agile methodology point of view you can minimize the need to track chang
 - Ensure the acceptance criteria and requirements are well understood at the start of a sprint 
 - Work to minimize accepting changes after the start of the sprint, while still adhering to Agile principles 
 
+> [!NOTE]
+> *Continuous Improvement is a Scrum approach in which the team learns from experience and stakeholder engagement to constantly keep the Prioritized Product Backlog updated with any changes in requirements.*
+
+
 
 ### Manage change during a sprint 
  
 Here are the main ways you can track change: 
-- Track changes to requirements within the requirement work item through discussions, changes to acceptance criteria, or attachments 
+- Track changes to requirements within the requirement work item through discussions, changes to acceptance criteria, or attachments
 - Add a *change* tag to work items to support tracking changes to the scope of work 
 - Add a bug that tracks a change in scope or additional work 
 - Add a change request work item type to formally track 
-
+- Set up notifications to automatically communicate change within your team or organization 
 
 #### Change request form 
 
@@ -124,36 +216,29 @@ This form provides rich-text fields to capture the impact of the change on the f
 
 You can adopt this form or customize your own to track the changes of most interest to your organization's needs. 
  
- 
+Also, you can customize your backlogs and boards to manage change request work items alongside requirements. 
  
 ## Monitor and report on changes    
 
- changes should be added to the backlog, tag 
-Keep the process lightweight and eliminate as much waste as possible.
 
-Log change to the backlog or change tracker
-Eliminate as many approvals as possible
-Have a light change control form, if necessary
-Keep the stakeholders and operations involved
+How to monitor change? Goals and methods.  
 
-
-## Minimize scope creep 
+- Monitor and review change additions - query by tag or work items 
+- Monitor scope creep - sprint burndown 
+- Review was ever queries 
 
 
-Team Velocity Analytics built-in report
-Was Ever queries
-Apply a “Change Request” tag
- 
- 
+### Monitor scope creep 
 
-#### Velocity insight into team deliverable  
+Monitor scope creep - sprint burndown 
+
+Monitor scope creep - release period  
+
+
+Questions for retrospective scope creep change management
+
+
   
-
-**Example team Velocity chart** 
-
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of team velocity chart.](media/manage-requirements/team-velocity.png) 
-
  
 <!---
 
@@ -170,23 +255,24 @@ Agile requirements management supports the following scenarios.
 > - Minimize scope creep  
 > - Support a change management process
 
-
-
 Early engagement of change manager
 Consistent communication
 Senior leader engagement
 Early wins
 
  risk reduction approach to software development
-
-
 -->
 
 ## Get notified of changes 
 
 Azure DevOps provides a robust alert system, allowing project members to set alerts for themselves, a team, or a project.   
 
-As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, team, project, or organization alerts.
+As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, team, project, or organization alerts. 
+
+To support change management, you can set up alerts to go out to your team for the following instances: 
+- Change request is filed 
+- A requirement is tagged with a change request tag 
+ 
  
 
 <a id="related-articles" />
@@ -198,11 +284,10 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 #### Industry articles
 
+- [Managing Change Requests in Scrum](https://www.infoq.com/news/2008/12/change-requests-in-scrum/) 
+- [Identify And Avoid Project Scope Creep](https://thedigitalprojectmanager.com/scope-creep/)
 - [5 Implications for Change Management in an Agile World](https://www.imaworldwide.com/blog/5-implications-for-change-management-in-an-agile-world)
 - [Change Management meets Agile, how does that work?](https://www.andchange.com/themes/change-management-meets-agile/)
-- [Managing Change Requests in Scrum](https://www.infoq.com/news/2008/12/change-requests-in-scrum/)
-- [Identify And Avoid Project Scope Creep](https://thedigitalprojectmanager.com/scope-creep/)
-
 
  
 ### Work items and process guidance 
@@ -213,7 +298,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 #### Monitor and report on progress
 
 - [View or configure team velocity](/azure/devops/report/dashboards/team-velocity)
-
+- [Burndown guidance, scope management](/azure/devops/report/dashboards/burndown-guidance)
 
 #### Notifications
 
