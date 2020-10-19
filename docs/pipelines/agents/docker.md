@@ -401,11 +401,11 @@ If you're sure you want to do this, see the [bind mount](https://docs.docker.com
 
 ### Deploy and configure Azure Kubernetes Service 
 
-Here is the the documentation [Quickstart: Deploy an Azure Kubernetes Service (AKS) cluster using the Azure portal](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal). After this your PowerShell or Shell console can use the kubectl command line.
+Follow the steps in [Quickstart: Deploy an Azure Kubernetes Service (AKS) cluster using the Azure portal](/azure/aks/kubernetes-walkthrough-portal). After this your PowerShell or Shell console can use the kubectl command line.
 
 ### Deploy and configure Azure Container Registry
 
-Here is the documentation [Quickstart: Create an Azure container registry using the Azure portal](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal). After this you can push and pull containers from the ACR.
+Follow the steps in [Quickstart: Create an Azure container registry using the Azure portal](/azure/container-registry/container-registry-get-started-portal). After this you can push and pull containers from the ACR.
 
 ### Configure Secrets and Deploy a ReplicaSet
 
