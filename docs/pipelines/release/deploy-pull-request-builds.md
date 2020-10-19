@@ -25,7 +25,7 @@ This article shows how you can set up a pull request based release for code host
 
 ## Create a pull request trigger
 
-Pull request trigger creates a release every time a new version of your selected Artifact is available. You can set up PR triggers for both Azure repos or GitHub repositories.
+Pull request trigger creates a release every time a new version of your selected Artifact is available. You can set up PR triggers for both Azure Repos or GitHub repositories.
 
 1. Under **Artifacts** select the **Continuous deployment trigger** icon.
 
