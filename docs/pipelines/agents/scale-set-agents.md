@@ -418,9 +418,9 @@ Now, when an unhealthy agent is detected in the scale set, Azure DevOps saves th
 
 :::image type="content" source="media/scale-set-agents/saved-agents-card.png" alt-text="Saved agents card.":::
 
-Find the associated virtual machine in your Azure virtual machine scale set via the Azure Portal, in the **Instances** list.
+Find the associated virtual machine in your Azure virtual machine scale set via the Azure portal, in the **Instances** list.
 
-:::image type="content" source="media/scale-set-agents/instances.png" alt-text="Azure Portal virtual machine scale set instances.":::
+:::image type="content" source="media/scale-set-agents/instances.png" alt-text="Azure portal virtual machine scale set instances.":::
 
 Select the instance, choose **Connect**, and perform your investigation.
 
