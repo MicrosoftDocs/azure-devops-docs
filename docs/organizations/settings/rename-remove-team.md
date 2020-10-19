@@ -1,7 +1,7 @@
 ---
 title: Rename or remove/delete a team 
 titleSuffix: Azure DevOps 
-description: Rename or remove/delete a team in Azure DevOps 
+description: Learn how to rename or remove, delete a team in Azure DevOps. 
 ms.technology: devops-settings
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: kaelli
@@ -47,7 +47,7 @@ When you remove or delete a team, you delete all team configuration settings, in
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
-   ![Open Project settings, and then Teams](media/shared/open-project-settings-teams-preview.png)
+   ![Screenshot of Open Project settings, and then Teams, new Teams page.](media/shared/open-project-settings-teams-preview.png)
 
 2. Choose the team you want to rename, and then choose **Settings**.  
 
@@ -68,7 +68,7 @@ When you remove or delete a team, you delete all team configuration settings, in
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
-   ![Open Project settings, and then Teams](media/shared/open-project-settings-team-new-nav.png)
+   ![Screenshot of Open Project settings, and then Teams, current page.](media/shared/open-project-settings-team-new-nav.png)
 
 2. Choose the team you want to rename. Under the Team Profile, enter the new name and optionally update the description.  Choose **Save** when done. 
 
@@ -265,7 +265,7 @@ az devops team update --team "Account Management" --name "Organization Managemen
 1. Choose **Delete** in the confirmation box to complete the delete operation. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Delete team confirmation dialog](media/rename-remove-team/delete-team-confirmation.png) 
+	> ![Screenshot of Delete team confirmation dialog, new teams page.](media/rename-remove-team/delete-team-confirmation.png) 
 
 ::: moniker-end
 
@@ -283,7 +283,7 @@ az devops team update --team "Account Management" --name "Organization Managemen
 	> [!IMPORTANT]   
 	> Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
 
-2. To complete the delete operation, you must type the name of the WIT as shown. 
+2. To complete the delete operation, you must enter the name of the WIT as shown. 
 
 	![Delete team confirmation dialog](media/add-team/multiple-teams-delete-team-confirmation-dialog.png)
 
@@ -296,7 +296,7 @@ az devops team update --team "Account Management" --name "Organization Managemen
 
 	![Web portal, admin context-project level, Delete team](media/add-team/multiple-teams-delete-team.png)
 
-2. To complete the delete operation, you must type the name of the WIT as shown. 
+2. To complete the delete operation, you must enter the name of the WIT as shown. 
 
 	![Delete team confirmation dialog](media/add-team/multiple-teams-delete-team-confirmation-dialog.png)
 
