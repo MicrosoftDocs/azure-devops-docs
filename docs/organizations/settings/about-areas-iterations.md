@@ -1,7 +1,7 @@
 ---
 title: How are area and iteration paths used?
 titleSuffix: Azure DevOps
-description: Understand how areas and iterations are used in Azure DevOps and TFS.
+description: Understand how areas and iterations are used in Azure DevOps.
 ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
