@@ -72,7 +72,7 @@ After code changes have been made to the new branch, developers can then create 
 Another advantage of driving software development from the Kanban board and work item is to encourage developers to input comments as they work to further the audit trail of changes occuring. 
 
  
-## Run tests from requirements 
+## Add and run tests from requirements 
 
 Just like you can create a new branch from the Kanban board, you can also add tests to the work item. 
 
@@ -82,46 +82,48 @@ Just like you can create a new branch from the Kanban board, you can also add te
 > [!NOTE]
 > *Test traceability supports linking a test to a set of requirements and validating that the application works as expected.*
 
-After adding and defining the tests, you can run them from the Kanban board. 
+After adding and defining the tests, you can run them from the Kanban board and set the test status.  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Kanban board card, test menu, choose Run test.](media/traceability/board-card-menu-run-test.png)  
 
 Test integration with the Kanban board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities in Test Manager later. The Kanban board shows the test added to support the requirement when test cases are created from the Kanban board or when requirement-based test suites are created under Azure Test Plans. 
 
-## Manual and automated testing
+### Manual and automated testing
 
-Teams that are moving from manual testing to continuous, automated testing, and have a subset of tests already automated, can execute them as part of a pipeline or on demand . Referred to as *planned testing*, automated tests can be associated to the test cases in a test plan and executed from Azure Test Plans. Once associated, these tests contribute towards the quality metrics of the corresponding requirements.
+Teams that are moving from manual testing to continuous, automated testing, and have a subset of tests already automated, can execute them as part of a pipeline or on demand. Referred to as *planned testing*, automated tests can be associated to the test cases in a test plan and executed from Azure Test Plans. Once associated, these tests contribute towards the quality metrics of the corresponding requirements.
 
 
 ## Deploy changes into production
+ 
+After you define a pipeline to build and release the code changes, you can track the deployment of the requirement to each release stage. From the work item form, you can quickly open the links to builds and releases from the **Deployment** and **Development** control sections. 
 
+#### Deployment and Development controls 
 
-
-## Link requirements to deployments
-
-- Deploy it to production and in all of this show how every artifact is linked to the other. For instance, the production deployment shows the work items and commits, the work item shows which build it was part of, etc.   
-The release deployments control shows release information for those work items that have been associated to a Git commit which is part of a build being released. 
-
+When you open the work item form, you can see the stages the requirement has been deployed to, and drill down for greater details by choosing the links. Under the **Development** section, you can open the branch ,commit, or pull requests that have been linked to the requirement.
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Release pipeline Options>Integrations settings.](media/traceability/release-pipeline-options.png) 
+> ![Work item form, Deployment control, Release Settings Stages.](/azure/devops/boards/work-items/media/deployments-control/deployments-control-1.png)
+ 
+The  **Deployment** control shows release information for those work items that have been associated to a Git commit which is part of a build being released. 
 
-
-
-The work item deployment control displays the status of releases within those work items that are associated with commits in the build and those release pipelines you've configured to report deployment information to Azure Boards. 
-
-The following example shows multiple environments that the release is targeting which the selected work item is associated with. 
+#### Release view
+The following image illustrates the multiple environments that the release is targeting which the selected work item is associated with. 
 
 > [!div class="mx-imgBorder"]  
 > ![Example showing multiple environments that the release is targeting.](/azure/devops/boards/work-items/media/deployments-control/releases-stages-1.png)
 
-When you open the work item, you can see the stages the release is being deployed, in real time.
+#### Release settings 
+
+You manage the deploy to production view options from the release settings.  
 
 > [!div class="mx-imgBorder"]  
-> ![Release Settings Stages](/azure/devops/boards/work-items/media/deployments-control/deployments-control-1.png)
+> ![Screenshot of Release pipeline Options>Integrations settings.](media/traceability/release-pipeline-options.png) 
 
+ 
+The work item deployment control displays the status of releases within those work items that are associated with commits in the build and those release pipelines you've configured to report deployment information to Azure Boards. 
 
+ 
  
 ## Requirements Traceability Matrix
 
@@ -205,7 +207,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 ### Testing
 
 - [Add, run, and update inline tests](/azure/devops/boards/boards/add-run-update-tests)
-- [Associate automated tests with test cases](azure/devops/test/associate-automated-test-with-test-case)
+- [Associate automated tests with test cases](azure/devops/test/associate-automated-test-with-test-case)  
 
 
 ## Reports and Analytics

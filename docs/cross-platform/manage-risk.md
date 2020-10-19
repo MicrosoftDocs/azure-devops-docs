@@ -1,7 +1,7 @@
 ---
-title: Manageand monitor risks, Agile methods
+title: Manage and monitor risks, Agile methods
 titleSuffix: Azure DevOps
-description: Learn about the tools and features available to manage risk when using Agile methods  
+description: Learn about the tools and features available to manage risk when using Agile methods and Azure DevOps  
 ms.technology: devops-agile 
 ms.topic: overview
 ms.author: kaelli
