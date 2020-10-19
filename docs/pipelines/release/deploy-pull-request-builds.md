@@ -25,7 +25,7 @@ This article shows how you can set up a pull request based release for code host
 
 ## Create a pull request trigger
 
-Pull request trigger creates a release every time a new version of your selected Artifact is available. You can set up PR triggers with both Azure repos or GitHub repositories.
+Pull request trigger creates a release every time a new version of your selected Artifact is available. You can set up PR triggers for both Azure repos or GitHub repositories.
 
 1. Under **Artifacts** select the **Continuous deployment trigger** icon.
 
@@ -84,12 +84,6 @@ You can use branch policies to implement a list of criteria that must be met for
    
    > [!div class="mx-imgBorder"]
    > ![Pull request policies status](media/deploy-pull-request-builds/pull-request-policy-status.png)
-
-## PR release with code hosted on GitHub
-
-1. You can also deploy pull release builds if your code is hosted in GitHub.com and a build is generated using Azure Pipelines. After linking the intended build artifact in the release definition, perform steps 1 through 4 in the previous [Create the pull request trigger](#create-the-pull-request-trigger) section, and then configure the status checks in GitHub as described in the following section.
-
-   ![Pull Request trigger enabled button](media/deploy-pull-request-builds/artifact-pr-trigger-github.png)
 
 ### Configure status checks in GitHub
 
