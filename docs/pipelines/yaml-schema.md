@@ -1113,7 +1113,7 @@ resources:
 
 > [!IMPORTANT]
 > When you define a resource trigger, if its pipeline resource is from the same repo as the current pipeline, triggering follows the same branch and commit on which the event is raised.
-> But if the pipeline resource is from a different repo, the current pipeline is triggered on the branch specified by the **Default branch for manual and scheduled builds** setting. For more information, see [Branch considerations for pipeline completion triggers](process/pipeline-triggers.md?view=azure-devops&tabs=yaml#branch-considerations-for-pipeline-completion-triggers).
+> But if the pipeline resource is from a different repo, the current pipeline is triggered on the branch specified by the **Default branch for manual and scheduled builds** setting. For more information, see [Branch considerations for pipeline completion triggers](process/pipeline-triggers.md?tabs=yaml#branch-considerations-for-pipeline-completion-triggers).
 
 #### The pipeline resource metadata as predefined variables
 
