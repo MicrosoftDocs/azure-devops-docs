@@ -82,6 +82,8 @@
     - name: Template types & usage
       href: process/templates.md
       displayName: parameters, passing, job reuse, stage reuse, variable reuse, expressions, context, conditional insertion, iterative insertion, escape a value
+    - name: Add a custom task extension
+      href: ../extend/develop/add-build-task.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
   - name: Jobs & stages
     items:
     - name: Specify jobs in your pipeline
@@ -94,6 +96,11 @@
       displayName: stage, dependencies, conditions, queuing policies, approvals
     - name: Deployment jobs
       href: process/deployment-jobs.md
+      displayName: pipeline decorator, deployment strategy, lifecycle hooks, rolling, canary 
+    - name: Author a custom pipeline decorator
+      href: ../extend/develop/add-pipeline-decorator.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+    - name: Pipeline decorator context
+      href: ../extend/develop/pipeline-decorator-context.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Specify conditions
       href: process/conditions.md
     - name: Specify demands
@@ -457,6 +464,8 @@
   - name: Set retention policies
     href: policies/retention.md
     displayName: service endpoints
+  - name: Create custom branch policies using Azure Functions 
+    href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
   - name: Configure and pay for parallel jobs
     href: licensing/concurrent-jobs.md
   - name: Pipeline permissions and security roles
