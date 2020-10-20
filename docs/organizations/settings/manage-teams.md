@@ -74,7 +74,7 @@ When you add a team to a project, a Project Administrator should [add one or mor
 
 Many Agile tools depend on the area and iteration paths that are configured for the team. To learn more about configuring team areas and iterations, see [About teams and Agile tools](about-teams-and-settings.md). 
 
-Once project administrators [add Area Paths](set-area-paths.md) and [Iteration Paths](set-iteration-paths-sprints.md) for a project, team administrators can select the area and iteration paths associated with their team. These settings affect many Agile tools available to the team. 
+Once project administrators [add Area Paths](set-area-paths.md) and [iteration paths](set-iteration-paths-sprints.md) for a project, team administrators can select the area and iteration paths associated with their team. These settings affect many Agile tools available to the team. 
 
 :::image type="content" source="media/manage-iterations-areas.png" alt-text="Screenshot of Iterations and areas highlighted.":::
 
