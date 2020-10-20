@@ -16,7 +16,7 @@ ms.date: 10/24/2019
 
 Extensions are add-ons you can use to customize and extend your DevOps experience with Azure DevOps and Team Foundation Server (TFS). 
 They're written with standard technologies - HTML, JavaScript, CSS - and are developed using your preferred development tools. 
-Extensions use our [RESTful API Library](/rest/api/vsts/) to easily interact with Azure DevOps and applications/services.
+Extensions use our [RESTful API Library](/rest/api/azure/devops/) to easily interact with Azure DevOps and applications/services.
 The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) is where extensions are published. 
 They can be kept privately for you and your team or shared with the millions of developers currently using Azure DevOps and TFS. 
 
