@@ -476,7 +476,7 @@ In YAML pipelines, we recommend that you put your deployment steps in a deployme
 
 ```YAML
 jobs:
-- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. Avoid using "deploy" keyword as that is not supported.
+- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
   displayName: string  # friendly name to display in the UI
   pool:                # see pool schema
     name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.

@@ -117,8 +117,10 @@ When you navigate to the **Deployment Groups** page in the target project(s), yo
 will see the deployment group you added and you can assign project-specific machine tags as required.
 
 ### Automatically deploy to new targets in a deployment group
+
 When new targets are added to a deployment group, you can configure the environment to automatically deploy the last successful release to the new targets. 
-![Add dg_targets](media/dg_add_targets.png)
+
+:::image type="content" source="../media/deployment-group-add-targets.png" alt-text="Add deployment group targets.":::
 
 ## Related topics
 
