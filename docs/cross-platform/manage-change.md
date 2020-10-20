@@ -230,6 +230,8 @@ How to monitor change? Goals and methods.
 
 ### Monitor scope creep 
 
+Two charts that can help with monitoring scope creep are the sprint burndown and release burndown charts. Sprint burndown provides a visual of how much work 
+
 Monitor scope creep - sprint burndown 
 
 Monitor scope creep - release period  
