@@ -1,5 +1,6 @@
 ---
-title: Add a dashboard widget | Extensions for Azure DevOps
+title: Add a dashboard widget
+titleSuffix: Azure DevOps
 description: Tutorial for creating a widget that you can then add to a dashboard in Azure DevOps or Team Foundation Server (TFS)
 ms.technology: devops-ecosystem
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
@@ -353,7 +354,7 @@ tfx extension publish --manifest-globs your-manifest.json --share-with yourOrgan
 
 ## Part 2: Hello World with Azure DevOps REST API
 
-Widgets can call any of the [REST APIs](/rest/api/vsts/?view=azure-devops) in Azure DevOps to interact with Azure DevOps resources.
+Widgets can call any of the [REST APIs](/rest/api/azure/devops/) in Azure DevOps to interact with Azure DevOps resources.
 In this example, we use the REST API for WorkItemTracking to fetch information about an existing query and display some query info in the widget right 
 below the "Hello World" text. 
 
