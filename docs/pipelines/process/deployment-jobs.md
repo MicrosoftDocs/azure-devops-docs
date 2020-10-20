@@ -32,10 +32,10 @@ Here's the full syntax to specify a deployment job:
 
 ```YAML
 jobs:
-- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore
+- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
   displayName: string  # friendly name to display in the UI
   pool:                # see pool schema
-    name: string
+    name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.
     demands: string | [ string ]
   dependsOn: string 
   condition: string 
