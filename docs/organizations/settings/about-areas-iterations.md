@@ -75,23 +75,23 @@ Avoid creating an area structure that is too complex. You can create areas to pa
 
 <a id="iteration-path-guidance" />
 
-## Define and assign Iteration Paths
+## Define and assign iteration paths
 
-Use the following guidance to configure Iteration Paths for your project and teams:  
+Use the following guidance to configure iteration paths for your project and teams:  
 
 1. First, define the Area Paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#guidance).  
 1. Determine the length of the iteration you want to support. Recommended practice is to have all teams use the same sprint cadence.  
 2. Determine if you want a flat structure or hierarchy of sprints and releases.
-3. Open **Project settings > Project configuration** and define the Iteration Paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](set-iteration-paths-sprints.md#open-project-settings) and [Add iterations and set iteration dates](set-iteration-paths-sprints.md#iterations). 
+3. Open **Project settings > Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](set-iteration-paths-sprints.md#open-project-settings) and [Add iterations and set iteration dates](set-iteration-paths-sprints.md#iterations). 
 4. Open the team configuration and assign the default and additional Area Path(s) to each team. Follow the steps provided later in this article: [Open team settings](set-iteration-paths-sprints.md#open-team-settings) and [Set team default iteration path(s)](set-iteration-paths-sprints.md#activate).
-5. Each team should assign the default Iteration Path they selected to their work items. Those work items show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
+5. Each team should assign the default iteration path they selected to their work items. Those work items show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
 
 As needed, you can do the following actions at any time: 
 - Add additional child iteration nodes
-- Rename an Iteration Path (except the root path)
-- Move a child Iteration Path under another node 
-- Delete a child Iteration Path 
-- Change the default and selected Iteration Paths assigned to a team
+- Rename an iteration path (except the root path)
+- Move a child iteration path under another node 
+- Delete a child iteration path 
+- Change the default and selected iteration paths assigned to a team
 
 ## How many iterations should a team define?
 
@@ -121,7 +121,7 @@ Iterations don't enforce any rules. For example, you can assign a task to an ite
 
 ## Naming restrictions 
 
-The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boards/work-items/work-item-fields.md), consist of multiple node items separated by the backslash (&#92;) character. Minimize the names of nodes and make sure you conform to the following restrictions when you're adding child nodes.
+The **Area Path** and **iteration path** fields, [data type=TreePath](../../boards/work-items/work-item-fields.md), consist of multiple node items separated by the backslash (&#92;) character. Minimize the names of nodes and make sure you conform to the following restrictions when you're adding child nodes.
 
 > [!div class="mx-tdCol2BreakAll"]  
 > | Restriction type                 | Restriction       |  

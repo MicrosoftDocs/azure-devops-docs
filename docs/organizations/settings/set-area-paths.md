@@ -19,7 +19,7 @@ ms.date: 09/17/2020
 Add area paths to support teams and group work items based on product, feature, or business areas. Once you define area paths at the project level, you assign them to a team under the team configuration. You can also create a hierarchy of area paths to support sub-areas, up to 14 levels deep.
 
 > [!NOTE] 
-> Area Paths and Iteration Paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes), or the Azure DevOps CLI commands and [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
+> Area Paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes), or the Azure DevOps CLI commands and [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
 
 Each team has access to a number of Agile tools as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards.
 
