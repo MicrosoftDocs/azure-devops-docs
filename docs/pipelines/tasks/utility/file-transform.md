@@ -69,7 +69,8 @@ as `Data.DefaultConnection.ConnectionString` in the build or release pipeline (o
 
 > [!NOTE]
 > Only custom variables defined in build and release pipelines are used in substitution. Default and system pipeline variables are excluded.
-> Here is a list of currently excluded prefixes: 
+>
+> Here's a list of currently excluded prefixes: 
 > * 'agent.'
 > * 'azure_http_user_agent'
 > * 'build.'
@@ -77,7 +78,8 @@ as `Data.DefaultConnection.ConnectionString` in the build or release pipeline (o
 > * 'release.'
 > * 'system.'
 > * 'tf_'
-> If the same variables are defined in the release pipeline and in a stage, the stage-defined variables supersede the pipeline-defined variables.
+> 
+> If the same variables are defined in both the release pipeline and in a stage, the stage-defined variables supersede the pipeline-defined variables.
 
 See also: [File transforms and variable substitution reference](../transforms-variable-substitution.md).
 
