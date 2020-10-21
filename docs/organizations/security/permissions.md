@@ -8,19 +8,19 @@ toc: show
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops'
+monikerRange: '>= tfs-2013'
 ms.date: 06/05/2020
 --- 
 
 
 
-# Permissions, service accounts, and groups in Azure DevOps
+# Security groups, service accounts, and permissions in Azure DevOps
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
 This article provides a comprehensive reference for each built-in user, group, and permission. It's a lot of information describing each built-in security user and group as well as each permission. 
 
-For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [About permissions and groups](about-permissions.md). In addition to security groups, there are also [security roles](about-security-roles.md), which provide permissions for select areas. 
+For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [About permissions and inheritance](about-permissions.md). In addition to security groups, there are also [security roles](about-security-roles.md), which provide permissions for select areas. 
 
 To learn how to add users to a group or set a specific permission that you can manage through the web portal, see the following resources:  
 
@@ -644,6 +644,7 @@ Security Service Group
 <!---
 Build Administrators
 Contributors
+Endpoint Administrators - cloud
 Project Administrators
 Project Valid Users
 Readers
@@ -2858,7 +2859,7 @@ Members of the Project Administrators group are automatically granted these perm
 
 <a id="query">  </a>
 
-## Work item query and folder (object-level)
+## Work item query and query folder (object-level)
 
 You manage query and query folder permissions through the [web portal](../../boards/queries/set-query-permissions.md). Project Administrators are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project.
 
@@ -3448,9 +3449,10 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 ## Related articles
 
 - [About permissions](about-permissions.md)  
-- [Service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)
-- [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md) 
+- [Security and permission management tools](security-tools-reference.md)  
+- [Service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)  
+- [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
 - [Make a user a team admin](../settings/manage-teams.md)  
-- [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
+ 
