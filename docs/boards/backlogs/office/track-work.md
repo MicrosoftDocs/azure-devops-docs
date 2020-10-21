@@ -418,6 +418,7 @@ If your Azure DevOps project is moved to a different project collection in the s
 
 
 <a id="work-offline" /> 
+<a id="WorkingOffline" /> 
 
 ## Work offline and reconnect to Azure Boards 
 
@@ -470,52 +471,7 @@ To reconnect an Excel or Project document file:
   
 4.  Resolve any data validation errors or conflicts that occur.  
 
-<a id="WorkingOffline" /> 
-
-### Work offline
-
-An advantage to using Excel or Project is that you can work offline to add or modify work items. Complete the following procedures to disconnect an Excel worksheet or Project plan and later reconnect to synchronize your updates with the work item database.
-
-### Disconnect the document from a project
-
-1.  Open the document that you want to change while you are offline.
-
-2.  Follow one of the following steps:
-
-    -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
-
-    -   If you are using Project, on the **Team** menu, choose **Refresh**.
-
-    This step refreshes the work item list to retrieve the latest information from the work item database.
-
-3.  If you are using Excel, add to the work item list the columns for all fields that you want to modify.
-
-    You cannot add columns when the work item list is not connected to Azure Boards.
-
-4.  Save your Excel or Project file. You can now modify the information even if you are offline, disconnected from the project or network. 
-
-5.  Change the work item list as needed.
-
-
-### Reconnect the document to the project
-
-1. Make sure your computer is online.  
-
-2. If you changed the document while you were offline, follow one of these steps:
-
-   -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Publish**.
-
-   -   If you are using Project, on the **Team** menu, choose **Publish Changes**.
-
-3. If you did not change the document while you were offline, follow one of these steps:
-
-   -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.
-
-   -   If you are using Project, on the **Team** menu, choose **Refresh**.
-
-4.  Resolve any data validation errors or conflicts that occur.
-
-
+ 
 
 <a id="marketplace" />
 

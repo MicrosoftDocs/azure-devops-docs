@@ -1,7 +1,7 @@
 ---
 title: About teams & Agile tools
 titleSuffix: Azure DevOps
-description: Overview for adding and configuring teams in Azure DevOps
+description: Overview for adding and configuring teams in Azure DevOps.
 ms.technology: devops-settings
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.author: kaelli

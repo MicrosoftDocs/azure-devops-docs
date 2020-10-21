@@ -1,14 +1,14 @@
 ---
 title: Set up billing for your organization
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, contentperfq4, contentperfq1
+ms.custom: seodec18, contentperfq4, contperfq1
 description: Use an Azure subscription to configure billing and pay for users, CI/CD concurrency, and extensions for Azure DevOps.
 ms.technology: devops-billing
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 08/11/2020 
+ms.date: 10/16/2020 
 monikerRange: 'azure-devops'
 ---
 
@@ -33,9 +33,8 @@ Set up billing in Azure DevOps before you make purchases. That way, you have it 
 ## Set up billing for your organization
 
 > [!NOTE]
-> A user interface limitation prevents the subscription picker from displaying more than 50 subscriptions. If your user account has access to more than 50 subscriptions and the target subscription you want to change the billing for isn't visible, you can follow either of the following two workarounds:
-> - Create a new user account. Grant the account Owner/Contributor rights to the target subscription and administrative privileges to the Azure DevOps organization. Use the new account to link the organization to the target subscription.
-> - Open a [support ticket](https://developercommunity.visualstudio.com/spaces/21/index.html).
+> A user interface limitation prevents the subscription picker from displaying more than 50 subscriptions. If your user account has access to more than 50 subscriptions and the target subscription you want to change the billing for isn't visible, you can create a new user account. Grant the account Owner/Contributor rights to the target subscription and administrative privileges to the Azure DevOps organization. Use the new account to link the organization to the target subscription.
+
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
