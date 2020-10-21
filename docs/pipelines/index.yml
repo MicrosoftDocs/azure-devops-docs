@@ -164,16 +164,6 @@ landingContent:
             url: ./artifacts/symbols.md
           - text: Publish and download Universal Packages
             url: ./artifacts/universal-packages.md
-  - title: Integrate with other apps
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Integrate with Slack
-            url: ./integrations/slack.md
-          - text: Integrate with Microsoft Teams
-            url: ./integrations/microsoft-teams.md
-          - text: Integrate with service hooks
-            url: ../service-hooks/overview.md
   - title: Configure resources
     linkLists:
       - linkListType: how-to-guide
@@ -198,3 +188,13 @@ landingContent:
             url: ./release/variables.md#run-a-release-in-debug-mode
           - text: Troubleshoot Azure Resource Manager service connections
             url: ./release/azure-rm-endpoint.md
+  - title: Integrate with other apps
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Integrate with Slack
+            url: ./integrations/slack.md
+          - text: Integrate with Microsoft Teams
+            url: ./integrations/microsoft-teams.md
+          - text: Integrate with service hooks
+            url: ../service-hooks/overview.md

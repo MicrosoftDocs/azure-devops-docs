@@ -464,8 +464,6 @@
   - name: Set retention policies
     href: policies/retention.md
     displayName: service endpoints
-  - name: Create custom branch policies using Azure Functions 
-    href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
   - name: Configure and pay for parallel jobs
     href: licensing/concurrent-jobs.md
   - name: Pipeline permissions and security roles
