@@ -204,23 +204,23 @@ You can add iterations in the same way that you add areas. For more information 
 
 ::: moniker range=">= azure-devops-2020" 
 
-Add and modify area paths from **Project settings** > **Project configuration** > **Iterations**.   
+1. Add and modify area paths from **Project settings** > **Project configuration** > **Iterations**.   
 
 For Scrum-based projects, you see the following set of sprints. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Project Settings Context, Project configuration, Iterations page.](media/areas/modify-areas-its-iterations-preview.png) 
 
-1. To schedule the start and end dates for each sprint that your teams use, highlight the sprint and choose **Set dates**. Or, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.  
+2. To schedule the start and end dates for each sprint that your teams use, highlight the sprint and choose **Set dates**. Or, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.  
 
    > ![Set dates](media/iterations/set-dates-preview.png)
 
-2. Choose the calendar icon to select new dates. 
+3. Choose the calendar icon to select new dates. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Work, Iterations page, and calendar icon for selecting new dates for Azure DevOps 2020 and on.](media/iterations/schedule-sprints-calendar-preview.png) 	
 
-3. When you're finished, you have a set of sprints scheduled - similar to the following image: 
+4. When you're finished, you have a set of sprints scheduled - similar to the following image: 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Work, Iterations page, scheduled set of sprints for Azure DevOps 2020 and on.](media/areas/modify-areas-its-iterations-scheduled-preview.png)
