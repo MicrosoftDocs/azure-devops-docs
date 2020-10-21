@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: sid-ah
 ms.author: simerzou
-ms.date: 06/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -80,6 +80,13 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
     <tbody>
+    <tr>
+    <td rowspan="4"><a href="2020/sprint-177-update.md" data-raw-source="[22 October 2020](2020/sprint-177-update.md)">22 October 2020</a></td>
+    <td>Removing "Assigned To" rule on Bug work item type</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>A batch of improvements to the Pull Request experience</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Node 14 in the Azure Pipelines agent</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Save an unhealthy agent for investigation in scale set agents</td><td>Pipelines</td><td>Future</td></tr>
     <tr>
     <td rowspan="5"><a href="2020/sprint-176-update.md" data-raw-source="[01 October 2020](2020/sprint-176-update.md)">01 October 2020</a></td>
     <td>Customize work item state when pull request is merged</td><td>Boards</td><td>Future</td>
