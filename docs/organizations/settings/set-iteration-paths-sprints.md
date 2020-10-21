@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 10/20/2020
+ms.date: 10/21/2020
 ---
 
 # Define iteration paths and configure team iterations 
@@ -35,7 +35,7 @@ Newly created projects contain a single, root area path that corresponds to the 
 - To add, edit, and manage iteration paths under a node, you must have one or more of the following permissions set to **Allow** for the node that you want to manage: **Create child nodes**, **Delete this node**, **Edit this node**, and **View permissions for this node**.  By default, the user who created the project has these permissions set. For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).  
 - To set team iteration paths, you must be [added as the team administrator](add-team-administrator.md) or be a member of the **Project Administrators** group.  
 
-For naming restrictions on iteration paths, see [About areas and iterations, naming restrictions](about-areas-iterations.md#name-restrictions).
+For more information about naming restrictions on iteration paths, see [About areas and iterations, naming restrictions](about-areas-iterations.md#name-restrictions).
 
 ## Get started
 
@@ -206,26 +206,23 @@ You can add iterations in the same way that you add areas. For more information 
 
 1. Add and modify area paths from **Project settings** > **Project configuration** > **Iterations**.   
 
-For Scrum-based projects, you see the following set of sprints. 
+   For Scrum-based projects, you see the following set of sprints. 
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Project Settings Context, Project configuration, Iterations page.](media/areas/modify-areas-its-iterations-preview.png) 
+   :::image type="content" source="media/areas/modify-areas-its-iterations-preview.png" alt-text="Screenshot of Project Settings context, project configuration, Iterations page.":::
 
 2. To schedule the start and end dates for each sprint that your teams use, highlight the sprint and choose **Set dates**. Or, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.  
 
-   > ![Set dates](media/iterations/set-dates-preview.png)
+   :::image type="content" source="media/iterations/set-dates-preview.png" alt-text="Set dates, preview page.":::
 
 3. Choose the calendar icon to select new dates. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Work, Iterations page, and calendar icon for selecting new dates for Azure DevOps 2020 and on.](media/iterations/schedule-sprints-calendar-preview.png) 	
+   :::image type="content" source="media/iterations/schedule-sprints-calendar-preview.png" alt-text="Screenshot of Work, Iterations page, and calendar icon for selecting new dates for Azure DevOps 2020 and on.":::	
 
 4. When you're finished, you have a set of sprints scheduled - similar to the following image: 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Work, Iterations page, scheduled set of sprints for Azure DevOps 2020 and on.](media/areas/modify-areas-its-iterations-scheduled-preview.png)
+   :::image type="content" source="media/areas/modify-areas-its-iterations-preview.png" alt-text="Screenshot of Work, Iterations page, scheduled set of sprints for Azure DevOps 2020 and on.":::
 
-	Your next step is to [choose the sprints each team uses](#activate-team-services). 
+   Your next step is to [choose the sprints each team uses](#activate-team-services). 
 
 ::: moniker-end
 
@@ -235,26 +232,23 @@ From **Iterations**, you can add iterations that teams can then select for their
 
 <a id="define-sprints-team-services" />
 
-Add and modify area paths from the **Work** > **Iterations** page from the project admin or settings context.   
+1. Add and modify area paths from the **Work** > **Iterations** page from the project admin or settings context.   
 
-For Scrum-based projects, you see the following set of sprints. 
+   For Scrum-based projects, you see the following set of sprints. 
 
-> [!div class="mx-imgBorder"]  
-> ![Project Settings Context, Work, Iterations page](media/areas/modify-areas-its-iterations-ts.png) 
+   :::image type="content" source="media/areas/modify-areas-its-iterations-ts.png" alt-text="Project Settings Context, Work, Iterations page":::
 
-1. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.
+2. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.
 	
-	Choose the calendar icon to choose new dates. 
+   Choose the calendar icon to choose new dates. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Work, Iterations page, and calendar icon to choose for new dates for Azure DevOps Server 2019.](media/iterations/schedule-sprints-calendar.png) 	
+   :::image type="content" source="media/iterations/schedule-sprints-calendar.png" alt-text="Screenshot of Work, Iterations page, and calendar icon to choose for new dates for Azure DevOps Server 2019.":::
 
-2. When you're finished, you have a set of sprints scheduled - like this: 
+3. When you're finished, you have a set of sprints scheduled - like this: 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Work, Iterations page, scheduled set of sprints for Azure DevOps Server 2019.](media/areas/modify-areas-its-iterations-scheduled-ts.png)
+   :::image type="content" source="media/areas/modify-areas-its-iterations-ts.png" alt-text="Screenshot of Work, Iterations page, scheduled set of sprints for Azure DevOps Server 2019.":::
 
-	Your next step is to [choose the sprints each team uses](#activate-team-services).
+   Your next step is to [choose the sprints each team uses](#activate-team-services).
 
 ::: moniker-end
 
@@ -271,17 +265,16 @@ For Scrum-based projects, you see the following set of sprints.
 
 1. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.
 	
-	Choose the calendar icon to choose new dates. 
+   Choose the calendar icon to choose new dates. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Work, Iterations page, and calendar icon for setting new dates in TFS 2017 through 2018.](media/iterations/schedule-sprints-calendar.png) 	
 
 2. When you're finished, you have a set of sprints scheduled - like this: 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Screenshot of Work, Iterations page, scheduled set of sprints for TFS 2017 through 2018.](media/areas/modify-areas-its-iterations-scheduled-ts.png)
+   :::image type="content" source="media/areas/modify-areas-its-iterations-scheduled-ts.png" alt-text="Screenshot of Work, Iterations page, scheduled set of sprints for TFS 2017 through 2018.":::
 
-	Your next step is to [choose the sprints each team uses](#activate-team-services). 
+   Your next step is to [choose the sprints each team uses](#activate-team-services). 
 
 ::: moniker-end
 
