@@ -292,7 +292,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       [**Artifacts**](../../artifacts/overview.md)  
-      Includes full access to all Azure Artifacts features, up to 2GB free storage.
+      Includes full access to all Azure Artifacts features, up to 2GiB free storage.
    :::column-end:::
    :::column span="1":::
        
@@ -310,7 +310,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       [**Artifacts**](../../artifacts/overview.md)  
-      Includes full access to all Azure Artifacts features, up to 2GB free storage.
+      Includes full access to all Azure Artifacts features, up to 2GiB free storage.
    :::column-end:::
    :::column span="1":::
        
