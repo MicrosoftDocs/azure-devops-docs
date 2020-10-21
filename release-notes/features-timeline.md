@@ -35,8 +35,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
         <tr>
-<td rowspan="11"><strong>2020 Q4</strong></td>
+<td rowspan="12"><strong>2020 Q4</strong></td>
 <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1781906" data-raw-source="[Re-evaluate permissions inherited from Azure AD group memberships](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1781906)">Re-evaluate permissions inherited from Azure AD group memberships</a></td><td>Admin</td><td>Future</td>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166 data-raw-source="[Billing, sign-in attempts and manage events for PAT, SSH will be available in the Audit Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166)">Billing, sign-in attempts and manage events for PAT, SSH will be available in the Audit Log</a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1781905 data-raw-source="[Hide Organization Settings ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1781905)">Hide Organization Settings </a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710676 data-raw-source="[Ease of Firewall rule creation with Azure DevOps Service Tag and Static IP](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710676)">Ease of Firewall rule creation with Azure DevOps Service Tag and Static IP</a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668 data-raw-source="[Token lifecycle management ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668)">Token lifecycle management </a></td><td>Admin</td><td>Future</td></tr>
