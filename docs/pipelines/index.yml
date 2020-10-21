@@ -28,6 +28,10 @@ landingContent:
             url: ./get-started/what-is-azure-pipelines.md
           - text: Use Azure Pipelines
             url: ./get-started/pipelines-get-started.md
+          - text: Key concepts for user new to Azure Pipelines
+            url: ./get-started/key-pipelines-concepts.md
+          - text: Classic release pipelines
+            url: release.md
       - linkListType: quickstart
         links:
           - text: Sign up for free
@@ -38,7 +42,7 @@ landingContent:
             url: ./get-started/clone-import-pipeline.md
           - text: Customize your pipeline
             url: customize-pipeline.md
-  - title: Build and deploy any language, any ecosystem
+  - title: Build, deploy, test&mdash;any language, any ecosystem
     linkLists:
       - linkListType: tutorial
         links:
@@ -76,6 +80,8 @@ landingContent:
             url: ./process/environments.md
           - text: Jobs
             url: ./process/phases.md
+          - text: Runtime parameters
+            url: ./process/runtime-parameters.md
           - text: Stages
             url: ./process/stages.md
           - text: Tasks
@@ -122,6 +128,18 @@ landingContent:
             url: ./ecosystems/kubernetes/aks-template.md
           - text: Use secrets from Azure Key Vault
             url: ./release/azure-key-vault.md
+  - title: Manage agents & self-hosted agents
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Deploy on Windows
+            url: ./agents/v2-windows.md
+          - text: Microsoft-hosted agents
+            url: ./agents/hosted.md
+          - text: Self-hosted Linux agents
+            url: ./agents/v2-linux.md
+          - text: Self-hosted macOS agents
+            url: ./agents/v2-osx.md
   - title: Reference guidance
     linkLists:
       - linkListType: reference
@@ -140,18 +158,16 @@ landingContent:
     linkLists:
       - linkListType: tutorial
         links:
-          - text: .NET Core apps
-            url: ./ecosystems/dotnet-core.md
-          - text: Go
-            url: ./ecosystems/go.md#test
-          - text: Python
-            url: ./ecosystems/python.md#run-tests
+          - text: Configure for UI testing
+            url: ./test/ui-testing-considerations.md
           - text: UI testing using Selenium
             url: ./test/continuous-test-selenium.md
           - text: Review code coverage results
             url: ./test/review-code-coverage-results.md
           - text: Review test results
             url: ./test/review-continuous-test-results-after-build.md
+          - text: Manage flaky tests 
+            url: ./test/flaky-test-management.md
           - text: Analyze test results
             url: ./test/test-analytics.md
   - title: Publish packages
