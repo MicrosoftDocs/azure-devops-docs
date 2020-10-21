@@ -72,12 +72,18 @@ landingContent:
             url: ./process/conditions.md
           - text: Expressions
             url: ./process/expressions.md
+          - text: Environments
+            url: ./process/environments.md
           - text: Jobs
             url: ./process/phases.md
           - text: Stages
             url: ./process/stages.md
           - text: Tasks
             url: ./process/tasks.md
+          - text: Templates
+            url: ./process/templates.md
+          - text: Triggers
+            url: ./build/triggers.md
   - title: Build any repository
     linkLists:
       - linkListType: how-to-guide
@@ -116,6 +122,20 @@ landingContent:
             url: ./ecosystems/kubernetes/aks-template.md
           - text: Use secrets from Azure Key Vault
             url: ./release/azure-key-vault.md
+  - title: Reference guidance
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: YAML schema
+            url: yaml-schema.md
+          - text: Predefined variables
+            url: ./build/variables.md
+          - text: Release & artifacts variables
+            url: ./release/variables.md
+          - text: Variable groups
+            url: ./library/variable-groups.md
+          - text: Task index
+            url: ./tasks/index.md
   - title: Set up continuous testing
     linkLists:
       - linkListType: tutorial
@@ -168,18 +188,6 @@ landingContent:
             url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Automate infrastructure deployments with Terraform
             url: ./release/automate-terraform.md
-  - title: Reference guidance
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: YAML schema
-            url: yaml-schema.md
-          - text: Variable groups
-            url: ./library/variable-groups.md
-          - text: Classic release and artifacts variables
-            url: ./release/variables.md
-          - text: Tasks
-            url: ./tasks/index.md
   - title: Troubleshoot
     linkLists:
       - linkListType: how-to-guide
