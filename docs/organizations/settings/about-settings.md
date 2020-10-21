@@ -975,7 +975,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       - [View Artifact storage](../../artifacts/start-using-azure-artifacts.md#view-artifact-storage)
    :::column-end:::
    :::column span="1":::
-     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Pay for Artifacts](../../artifacts/start-using-azure-artifacts.md#pay-for-artifacts).
+     Each organization gets Azure Artifacts for free, up until 2 GiB of storage is reached. For more information, see [Pay for Artifacts](../../artifacts/start-using-azure-artifacts.md#pay-for-artifacts).
    :::column-end:::
 :::row-end:::
 ---
