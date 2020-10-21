@@ -73,6 +73,9 @@ Clone a work item when you want to create another instance of it. This action op
 	- **Include existing attachments**: To include attachments in the copied work item
 	- **Include child work items**: To include existing links to child work items in the copied work item. This feature isn't recursive. Only those work items directly linked as children to the work item being copied are included.  
 
+	> [!NOTE]   
+	> The list is disabled when you copy the work item to a different project. 
+
 1. In the work item form that opens, update other fields as needed. All work items start in the New state.   
 
 ::: moniker-end
