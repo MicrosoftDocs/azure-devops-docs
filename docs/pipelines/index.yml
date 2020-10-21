@@ -42,7 +42,7 @@ landingContent:
             url: ./get-started/clone-import-pipeline.md
           - text: Customize your pipeline
             url: customize-pipeline.md
-  - title: Build, deploy, test&mdash;any language, any ecosystem
+  - title: Build, deploy, test-any language, any ecosystem
     linkLists:
       - linkListType: tutorial
         links:
@@ -90,6 +90,20 @@ landingContent:
             url: ./process/templates.md
           - text: Triggers
             url: ./build/triggers.md
+  - title: Reference guidance
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: YAML schema
+            url: yaml-schema.md
+          - text: Predefined variables
+            url: ./build/variables.md
+          - text: Release & artifacts variables
+            url: ./release/variables.md
+          - text: Variable groups
+            url: ./library/variable-groups.md
+          - text: Task index
+            url: ./tasks/index.md
   - title: Build any repository
     linkLists:
       - linkListType: how-to-guide
@@ -140,20 +154,6 @@ landingContent:
             url: ./agents/v2-linux.md
           - text: Self-hosted macOS agents
             url: ./agents/v2-osx.md
-  - title: Reference guidance
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: YAML schema
-            url: yaml-schema.md
-          - text: Predefined variables
-            url: ./build/variables.md
-          - text: Release & artifacts variables
-            url: ./release/variables.md
-          - text: Variable groups
-            url: ./library/variable-groups.md
-          - text: Task index
-            url: ./tasks/index.md
   - title: Set up continuous testing
     linkLists:
       - linkListType: tutorial
@@ -170,16 +170,6 @@ landingContent:
             url: ./test/flaky-test-management.md
           - text: Analyze test results
             url: ./test/test-analytics.md
-  - title: Publish packages
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Publish NuGet feeds
-            url: ./artifacts/nuget.md
-          - text: Publish symbols for debugging
-            url: ./artifacts/symbols.md
-          - text: Publish and download Universal Packages
-            url: ./artifacts/universal-packages.md
   - title: Configure resources
     linkLists:
       - linkListType: how-to-guide
@@ -204,6 +194,16 @@ landingContent:
             url: ./release/variables.md#run-a-release-in-debug-mode
           - text: Troubleshoot Azure Resource Manager service connections
             url: ./release/azure-rm-endpoint.md
+  - title: Publish packages
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Publish NuGet feeds
+            url: ./artifacts/nuget.md
+          - text: Publish symbols for debugging
+            url: ./artifacts/symbols.md
+          - text: Publish and download Universal Packages
+            url: ./artifacts/universal-packages.md
   - title: Integrate with other apps
     linkLists:
       - linkListType: how-to-guide
