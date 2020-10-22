@@ -17,9 +17,7 @@ monikerRange: '>=azure-devops-2020'
 
 A new Test Plans Page (Test Plans*) for your planned testing needs is available for all Azure DevOps Services organizations. The new page provides you with streamlined views to help you focus on the task at hand - be it test planning, authoring, execution, or tracking. It is also clutter-free and consistent with the rest of Azure DevOps offering. We hope that you find it easy and intuitive to use.
 
-This new page has been in public preview for past few quarters and has been made default for all Test Plans users. During this time, we have continued to add the missing features/capabilities and address the feedback you have been providing us.
-
-We had originally planned to pull out the old page by mid June 2020 with the assumption that most of the gaps have been addressed. However, recently, we have received consistent feedback about one capability, which is not efficient/missing in the new page, which was to do with reviewing the test outcomes, test suites and test case details side-by-side when looking at the test case list - more details [here](https://developercommunity.visualstudio.com/idea/1060525/keep-the-old-test-plans-view.html). We are in the process of evaluating the possible options given the constraints of the design system. As such, we are pausing on the deadline for switching to the new Test Plans page. Once we have more clarity on the solution, we will revisit the deadline timelines.
+This new page has been in public preview for past few quarters and has been made default for all Test Plans users. During this time, we have continued to add the missing features/capabilities and address the feedback you have been providing us. We are almost towards the end of this journey and now are ready to pull out the old page by **the end of November 2020**. We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the following steps (only available till the **end of November 2020**):
 
 We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the following steps:
 
@@ -213,14 +211,15 @@ The context menu on the Test point node within the Execute tab provides the foll
 - *Open/edit test case work item form*: This option allows you to edit a Test case using the work item form wherein you edit the work item fields including test steps.
 - *Assign tester*: This option allows you to assign the test points to testers for test execution.
 - *View test result*: This option allows you to view the latest test outcome details including the outcome of each test step, comments added or bugs filed. 
-- *View execution history*: This option allows you to view the entire execution history for the selected test point. It opens up a new page wherein you can adjust the filters to view the execution history of not just the selected test point but also for the entire test case. 
+- *View execution history*: This option allows you to view the execution history for the test case in a side panel. You can move across the test points or open the detailed execution history from the panel - refer below image
+![execute tab context menu page](media/new-test-plans-page/execute-tab-execution-history.png)
 
 
 <a name="feedback"></a>
 ## Provide feedback
 Thank you for all the feedback you have provided on this page. We have tried to address most of the feedback submitted and have filled all the functionality gaps. As such, we are reaching towards the end of this journey and plan to pull out the old page soon. 
 
-Reach us at `devops_tools@microsoft.com` to share your thoughts on the new page. In the process, share screenshots as appropriate.
+Reach us at [community forum](https://developercommunity.visualstudio.com/content/problem/post.html?space=21) for any queries. In the process, share screenshots as appropriate.
 
 >[!IMPORTANT]
 > When sending feedback email, you may receive the following notification:
