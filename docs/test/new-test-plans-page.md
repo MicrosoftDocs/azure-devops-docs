@@ -220,11 +220,3 @@ The context menu on the Test point node within the Execute tab provides the foll
 Thank you for all the feedback you have provided on this page. We have tried to address most of the feedback submitted and have filled all the functionality gaps. As such, we are reaching towards the end of this journey and plan to pull out the old page soon. 
 
 Reach us at [community forum](https://developercommunity.visualstudio.com/content/problem/post.html?space=21) for any queries. In the process, share screenshots as appropriate.
-
->[!IMPORTANT]
-> When sending feedback email, you may receive the following notification:
->
-> `The group <group> only accepts messages from people in its organization or on its allowed senders list, and your email address isn't on the list.`
->
-> Even if you receive this message, your feedback to `devops_tools@microsoft.com` is getting through.
-> Thank you for your feedback and patience while we resolve the issue that is causing the message.
