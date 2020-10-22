@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 09/17/2020
+ms.date: 10/22/2020
 ---
 
 # Define area paths and assign to a team
@@ -19,7 +19,7 @@ ms.date: 09/17/2020
 Add area paths to support teams and group work items based on product, feature, or business areas. Once you define area paths at the project level, you assign them to a team under the team configuration. You can also create a hierarchy of area paths to support sub-areas, up to 14 levels deep.
 
 > [!NOTE] 
-> Area Paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes), or the Azure DevOps CLI commands and [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
+> Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes), or the Azure DevOps CLI commands and [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
 
 Each team has access to a number of Agile tools as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards.
 
@@ -35,7 +35,7 @@ To understand how the system uses area paths, see [About area and iteration path
 
 - If you don't have a project yet, [create one now](../projects/create-project.md).
 - Ensure you're a member of the **Project Administrators** group to add an area path under the root node or edit or delete any child node. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
-- Have one or more of the following permissions set to **Allow**, to add, edit, and manage Area Paths under a node:
+- Have one or more of the following permissions set to **Allow**, to add, edit, and manage area paths under a node:
 
     - **Create child nodes**
     - **Delete this node**
@@ -45,7 +45,7 @@ To understand how the system uses area paths, see [About area and iteration path
   By default, the user who created the project has these permissions already set. For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 - Ensure you're [added as a team administrator](add-team-administrator.md) or are a member of the **Project Administrators** group to set team area paths.  
 
-For naming restrictions on Area Paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
+For naming restrictions on area paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 
 <a id="guidance" />
 
@@ -55,7 +55,7 @@ If you're new to managing projects and teams, the most straight forward sequence
 
 1. Determine the number and names of area paths that you want to support to categorize your work. At a minimum, add one area path for each team you define. For more information, review [About areas and iterations](about-areas-iterations.md).
 2. Determine the number and names of teams you want to support. For more information, review [About teams and Agile tools](about-teams-and-settings.md).
-3. Open **Project settings>Project configuration** and define the Area Paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add area paths](#add-areas).
+3. Open **Project settings>Project configuration** and define the area paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add area paths](#add-areas).
 4. Define the teams you need to support step 2. For more information, see [Add a team, move from one default team to several teams](add-teams.md).  
 5. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default area path(s)](#team-area-paths).
 6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
@@ -687,7 +687,7 @@ You can quickly generate [queries](../../boards/queries/using-queries.md) to vie
 
 ## Related articles
 
-As you can see, Area Paths play a major role in supporting Agile tools, teams, and managing work items. Learn more about working with these fields from the following articles:
+As you can see, area paths play a major role in supporting Agile tools, teams, and managing work items. Learn more about working with these fields from the following articles:
 
 - [About areas and iterations](about-areas-iterations.md)  
 - [Add another team](../../organizations/settings/add-teams.md)  
