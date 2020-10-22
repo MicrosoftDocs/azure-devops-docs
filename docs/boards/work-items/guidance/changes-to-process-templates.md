@@ -7,8 +7,8 @@ ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688
 ms.topic: reference 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 08/06/2020
+monikerRange: '<= azure-devops'
+ms.date: 10/22/2020
 ---
 
 # Changes made to process templates  
@@ -27,6 +27,20 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <tr>
 <th width="22%">Version</th>
 <th width="78%">Changes introduced</th>
+</tr>
+<tr>
+<td>	<td>
+<p>Azure DevOps Services (October 2020) </p>
+</td>
+<td>
+<p>
+    Removed system rule <strong>Assign work item to the person who created it when the bug is moved to the Resolved state</strong> from the Bug work item type in the Agile process. 
+    <br/><br/>
+    For those customers who want to continue using this rule, you can add the following <a href="../../../organizations/settings/work/apply-rules-to-workflow-states.md" data-raw-source="[custom workflow rules](../../../organizations/settings/work/apply-rules-to-workflow-states.md)">custom workflow</a> rule to the Bug in your process:
+    <br/><br/>
+    <strong>When</strong> A work item state changes to <i>Resolved</i> <strong>Then</strong> Copy the value from <i>Created By<i> <strong>to</strong> <i>Assigned To<i>
+</p>
+</td>
 </tr>
 <tr>
 <td>
