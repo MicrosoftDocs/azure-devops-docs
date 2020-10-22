@@ -24,11 +24,16 @@ To have a better view of your storage consumption, Azure Artifacts is introducin
 
 ## Organization-level storage
 
-The organization-level view will show your total storage summary, your storage by type and by projects.
+The organization-level view will show you your total storage summary and your storage consumption by type and by project.
 
 1. From within your organization select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
 
 1. Under Artifacts, select **Storage** in the left navigation pane.
 
     > [!div class="mx-imgBorder"]
-    > ![Upstream health](media/artifact-storage-navigation.png)
+    > ![Artifact storage navigation](media/artifact-storage-navigation.png)
+
+1. View your storage consumption for each section.
+
+    > [!div class="mx-imgBorder"]
+    > ![Org level storage](media/org-level-storage.png)
