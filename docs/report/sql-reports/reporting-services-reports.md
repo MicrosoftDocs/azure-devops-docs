@@ -7,7 +7,7 @@ ms.topic: overview
 ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/04/2019
+ms.date: 10/22/2020
 ---
 
 # Reporting Services reports
