@@ -37,3 +37,8 @@ The organization-level view will show you your total storage summary and your st
 
     > [!div class="mx-imgBorder"]
     > ![Org level storage](media/org-level-storage.png)
+
+For the current release, users will be able to view the storage breakdown for **packages** as well as projects listed under the **Storage by projects** section. We will be adding more levels of granularity in future releases.
+
+> [!NOTE]
+> The **Storage by projects** section will only show projects with the largest storage consumption and not the full list of projects in your organization.
