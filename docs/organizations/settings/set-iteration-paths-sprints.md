@@ -475,7 +475,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
 
-3. **Default iteration**. The default iteration defines the iteration that's used when you create a work item from the team dashboard and queries page. You can use an explicit value or use **@CurrentIteration** to assign new work items to the team's current iteration. The same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration) is used.  
+3. **Default iteration**. The default iteration defines the iteration that's used when you create a work item from the team dashboard and queries page. You can use an explicit value or use <strong>@CurrentIteration</strong> to assign new work items to the team's current iteration. The same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration) is used.  
 
 	For example, you might want all new work items added to a future iteration path, which you use to triage and assign to specific sprints at periodic intervals.  
 
