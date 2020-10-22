@@ -113,6 +113,10 @@ A: Yes. For data import organizations, Azure DevOps Services supports team proje
 * [Inheritance Process Model](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 * [Hosted XML](../organizations/settings/work/import-process/import-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 
+### Q: Will my Personal Access Tokens also migrate when I migrate from Server to Services?
+
+A: No, your tokens will not migrate and you will need to [regenerate your Personal Access Tokens](../organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page) on Azure Dev Ops Services.
+
 ### Q: If I have feedback or additional questions is there somewhere I can reach out?
 
 A: Yes, you can contact [AzureDevOpsImport@microsoft.com](mailto:AzureDevOpsImport@microsoft.com). Please note that this alias is for general questions. If you need assistance with a failed import please contact Azure DevOps [customer support](https://aka.ms/AzureDevOpsImportSupport). 
