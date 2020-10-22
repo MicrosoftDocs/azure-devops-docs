@@ -29,7 +29,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <th width="78%">Changes introduced</th>
 </tr>
 <tr>
-<td>	<td>
+<td>
 <p>Azure DevOps Services (October 2020) </p>
 </td>
 <td>

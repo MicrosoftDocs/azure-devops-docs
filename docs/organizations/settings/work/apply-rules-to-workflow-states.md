@@ -541,7 +541,7 @@ To automate State transitions of parent work items based on the State assignment
 
 The Agile process bug work item type previously had a rule which reassigned the bug  to the person who created it. This rule has been [removed from the default system process](../../../boards/work-items/guidance/changes-to-process-templates.md). You can reinstate the rule or add a similar rule to other work item types using the following condition and action: 
 
-<strong>When</strong> A work item state changes to <i>Resolved</i> <strong>Then</strong> Copy the value from <i>Created By<i> <strong>to</strong> <i>Assigned To<i>.
+**When** A work item state changes to *Resolved* **Then** Copy the value from *Created By* **to** *Assigned To*.
 
 
 ## Related articles
