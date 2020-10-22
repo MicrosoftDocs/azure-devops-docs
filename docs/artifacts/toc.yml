@@ -11,7 +11,7 @@
   - name: Where is Package Management?
     href: where-is-package-management.md
   - name: Artifact Storage (New UI)
-    href: Atifact-storage.md
+    href: artifact-storage.md
   - name: Best practices
     href: concepts/best-practices.md
   - name: Complete graphs
