@@ -108,13 +108,13 @@ User accounts that you add must conform to the following restrictions.
 
 <a id="GroupAccountNames">   </a>
 
-### Group name 
+### Security group name 
 
-Azure DevOps groups enable you to apply certain rights or permissions to a group of users.
+Azure DevOps security groups enable you to apply certain rights or permissions to a group of users.
 
 On-premises groups may consist of Active Directory group accounts, Azure DevOps security groups , Windows user accounts, Windows group accounts, or any mixture of these types. For more information, see [Add AD/Azure AD users or groups to a built-in security group](../../organizations/security/add-ad-aad-built-in-security-groups.md).  
 
-Groups that you add must conform to the following restrictions.  
+Security groups that you add must conform to the following restrictions.  
 
 :::row:::
    :::column span="1":::
@@ -127,7 +127,7 @@ Groups that you add must conform to the following restrictions.
 ---
 :::row:::
    :::column span="1":::
-      Group account name length
+      Security group account name length
    :::column-end:::
    :::column span="1":::
       - Must not contain more than 256 Unicode characters
