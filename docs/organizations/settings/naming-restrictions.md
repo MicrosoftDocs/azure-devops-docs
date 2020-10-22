@@ -573,9 +573,9 @@ Default maximum size: 4,096 kilobytes
 </table>
 
 
-### Area Path and iteration path 
+### Area Path and Iteration Path 
 
-Two work item fields, **Area Path** and **iteration path**, provide a tree structure hierarchy for grouping work. Area paths group work items by product, functional, or feature area. Iteration paths group work items into sprints, milestones, or time periods for addressing those work items.
+Two work item fields, **Area Path** and **Iteration Path**, provide a tree structure hierarchy for grouping work. Area paths group work items by product, functional, or feature area. Iteration paths group work items into sprints, milestones, or time periods for addressing those work items.
 
 These multi-node fields use the backslash (&#92;) characters to denote the hierarchy of nodes within the tree structure.  
 
