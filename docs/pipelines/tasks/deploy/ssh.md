@@ -103,6 +103,14 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
+### How do I configure the service to only allow certain encryption algorithms?
+Azure DevOps Server has a server-side config that can be used to toggle the encryption algorithms used. By default, Azure DevOps Server supports aes256-cbc,aes192-cbc,aes128-cbc,aes128-ctr,aes256-ctr. 
+
+You can add the following config and restart the server to change encryption algorithms, like the following example:
+```ssh
+exec prc_SetRegistryValue 1, '#\Configuration\SshServer\KexInitOptions\encryption_algorithms\', 'aes128-ctr,aes256-ctr'
+```
+
 ::: moniker-end
 
 <!-- ENDSECTION -->
