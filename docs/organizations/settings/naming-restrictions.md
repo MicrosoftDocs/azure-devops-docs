@@ -544,7 +544,7 @@ The names you assign to child nodes to these fields must conform to the followin
       Path length
    :::column-end:::
    :::column span="1":::
-      - Must not contain more than 4000 Unicode characters
+      - Must not contain more than 4,000 Unicode characters
    :::column-end:::
 :::row-end:::
 ---
@@ -553,7 +553,7 @@ The names you assign to child nodes to these fields must conform to the followin
       Path hierarchy depth
    :::column-end:::
    :::column span="1":::
-      - Must not be more than 14 levels deep
+      - Must be fewer than 14 levels deep
    :::column-end:::
 :::row-end:::
 ---
@@ -965,6 +965,7 @@ Your on-premises build computer must conform to the following restrictions.
       If the build computer is firewall enabled, make sure that the program <strong>tfsbuildservice</strong> is in the exceptions list
    :::column-end:::
 :::row-end:::
+---
 
 ### Build types
 
@@ -1169,6 +1170,7 @@ Files and folders you add to Team Foundation version control must conform to the
       - Must not contain the following printable characters: &#92; &#47; : &#42; ? &quot; &lt; &gt; | ; 
    :::column-end:::
 :::row-end:::
+---
 
 ## TFVC Labels
 
@@ -1198,9 +1200,10 @@ In Team Foundation version control (TFVC), a label is a name applied to a specif
    :::column-end:::
    :::column span="1":::
       - Can&#39;t end with a space ( ) or period (.)
-      - Must not contain the following printable characters: &#92; &#47; &quot;  : &lt; &gt;  | &#42; ? @ ;
+      - Must not contain the following printable characters: &#92; &#47; &quot; : &lt; &gt; &#42; ? @ | ;
    :::column-end:::
 :::row-end:::
+---
 
 ## TFVC Shelvesets 
 
@@ -1208,11 +1211,33 @@ Shelvesets enable you to set aside temporarily a batch of pending changes and th
 
 Shelveset names must conform to the following restrictions.  
 
-
-| **Restriction type** | **Restriction**                                                                       |
-|----------------------|---------------------------------------------------------------------------------------|
-| Length               | Must not contain more than 64 Unicode characters                                      |
-| Special characters   | Must not contain the following printable characters: &#92; &#47;  &quot;  : &lt; &gt; | &#42; ? ; |
+:::row:::
+   :::column span="1":::
+      **Restriction type**
+   :::column-end:::
+   :::column span="1":::
+      **Restriction**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Length
+   :::column-end:::
+   :::column span="1":::
+      - Must not contain more than 64 Unicode characters
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Special characters
+   :::column-end:::
+   :::column span="1":::
+      - Must not contain the following printable characters: &#92; &#47;  &quot;  : &lt; &gt; | &#42; ? ;
+   :::column-end:::
+:::row-end:::
+---
 
 ## TFVC workspaces
 
@@ -1220,10 +1245,34 @@ A workspace is a client-side copy of the files and folders in Team Foundation ve
 
 Workspace names must conform to the following restrictions.  
 
-| **Restriction type** | **Restriction**                                                                       |
-|----------------------|---------------------------------------------------------------------------------------|
-| Length               | Must not contain more than 64 Unicode characters                                      |
-| Special characters   | - Must not end with a space ( ), - Must not contain the following printable characters: &#92; &#47;  &quot;  : &lt; &gt;  | &#42; ? ;  |
+:::row:::
+   :::column span="1":::
+      **Restriction type**
+   :::column-end:::
+   :::column span="1":::
+      **Restriction**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Length
+   :::column-end:::
+   :::column span="1":::
+      - Must not contain more than 64 Unicode characters
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Special characters
+   :::column-end:::
+   :::column span="1":::
+      - Must not end with a space ( )
+      - Must not contain the following printable characters: &#92; &#47;  &quot;  : &lt; &gt;  | &#42; ? ;
+   :::column-end:::
+:::row-end:::
+---
 
 <a id="page-title-names"></a>
 
@@ -1231,7 +1280,8 @@ Workspace names must conform to the following restrictions.
 
 [!INCLUDE [temp](../../project/wiki/includes/wiki-naming-conventions.md)]
 
-## Related articles 
+## Related articles
+- [Azure Artifacts count and size limits](../../artifacts/reference/limits.md)
 - [Work tracking, process, and project limits](./work/object-limits.md)
 - [Customize work tracking objects to support your team's processes](../../reference/customize-work.md)
 - [Customize a process template](../../reference/process-templates/customize-process.md)
