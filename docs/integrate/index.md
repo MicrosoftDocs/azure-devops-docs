@@ -57,4 +57,4 @@ Check out the quick starts to get you started:
 
 ## Resources
 
-- [REST API reference](/rest/api/vsts/)
+- [REST API reference](/rest/api/azure/devops/)
