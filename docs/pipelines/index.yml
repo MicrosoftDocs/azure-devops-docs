@@ -28,6 +28,10 @@ landingContent:
             url: ./get-started/what-is-azure-pipelines.md
           - text: Use Azure Pipelines
             url: ./get-started/pipelines-get-started.md
+          - text: Key concepts for user new to Azure Pipelines
+            url: ./get-started/key-pipelines-concepts.md
+          - text: Classic release pipelines
+            url: ./release/index.md
       - linkListType: quickstart
         links:
           - text: Sign up for free
@@ -38,7 +42,7 @@ landingContent:
             url: ./get-started/clone-import-pipeline.md
           - text: Customize your pipeline
             url: customize-pipeline.md
-  - title: Build and deploy any language, any ecosystem
+  - title: Build, deploy, test-any language, any ecosystem
     linkLists:
       - linkListType: tutorial
         links:
@@ -72,12 +76,34 @@ landingContent:
             url: ./process/conditions.md
           - text: Expressions
             url: ./process/expressions.md
+          - text: Environments
+            url: ./process/environments.md
           - text: Jobs
             url: ./process/phases.md
+          - text: Runtime parameters
+            url: ./process/runtime-parameters.md
           - text: Stages
             url: ./process/stages.md
           - text: Tasks
             url: ./process/tasks.md
+          - text: Templates
+            url: ./process/templates.md
+          - text: Triggers
+            url: ./build/triggers.md
+  - title: Reference guidance
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: YAML schema
+            url: yaml-schema.md
+          - text: Predefined variables
+            url: ./build/variables.md
+          - text: Release & artifacts variables
+            url: ./release/variables.md
+          - text: Variable groups
+            url: ./library/variable-groups.md
+          - text: Task index
+            url: ./tasks/index.md
   - title: Build any repository
     linkLists:
       - linkListType: how-to-guide
@@ -116,24 +142,58 @@ landingContent:
             url: ./ecosystems/kubernetes/aks-template.md
           - text: Use secrets from Azure Key Vault
             url: ./release/azure-key-vault.md
+  - title: Manage agents & self-hosted agents
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Deploy on Windows
+            url: ./agents/v2-windows.md
+          - text: Microsoft-hosted agents
+            url: ./agents/hosted.md
+          - text: Self-hosted Linux agents
+            url: ./agents/v2-linux.md
+          - text: Self-hosted macOS agents
+            url: ./agents/v2-osx.md
   - title: Set up continuous testing
     linkLists:
       - linkListType: tutorial
         links:
-          - text: .NET Core apps
-            url: ./ecosystems/dotnet-core.md
-          - text: Go
-            url: ./ecosystems/go.md#test
-          - text: Python
-            url: ./ecosystems/python.md#run-tests
+          - text: Configure for UI testing
+            url: ./test/ui-testing-considerations.md
           - text: UI testing using Selenium
             url: ./test/continuous-test-selenium.md
           - text: Review code coverage results
             url: ./test/review-code-coverage-results.md
           - text: Review test results
             url: ./test/review-continuous-test-results-after-build.md
+          - text: Manage flaky tests 
+            url: ./test/flaky-test-management.md
           - text: Analyze test results
             url: ./test/test-analytics.md
+  - title: Configure resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create and manage agent pools
+            url: ./agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Create and manage deployment groups
+            url: ./release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Create and manage service connections
+            url: ./library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Set build and release retention policies
+            url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Automate infrastructure deployments with Terraform
+            url: ./release/automate-terraform.md
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot builds and releases
+            url: troubleshooting/troubleshooting.md
+          - text: Run a release in debug mode
+            url: ./release/variables.md#run-a-release-in-debug-mode
+          - text: Troubleshoot Azure Resource Manager service connections
+            url: ./release/azure-rm-endpoint.md
   - title: Publish packages
     linkLists:
       - linkListType: tutorial
@@ -154,39 +214,3 @@ landingContent:
             url: ./integrations/microsoft-teams.md
           - text: Integrate with service hooks
             url: ../service-hooks/overview.md
-  - title: Configure resources
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Create and manage agent pools
-            url: ./agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Create and manage deployment groups
-            url: ./release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Create and manage service connections
-            url: ./library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Set build and release retention policies
-            url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Automate infrastructure deployments with Terraform
-            url: ./release/automate-terraform.md
-  - title: Reference guidance
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: YAML schema
-            url: yaml-schema.md
-          - text: Variable groups
-            url: ./library/variable-groups.md
-          - text: Classic release and artifacts variables
-            url: ./release/variables.md
-          - text: Tasks
-            url: ./tasks/index.md
-  - title: Troubleshoot
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Troubleshoot builds and releases
-            url: troubleshooting/troubleshooting.md
-          - text: Run a release in debug mode
-            url: ./release/variables.md#run-a-release-in-debug-mode
-          - text: Troubleshoot Azure Resource Manager service connections
-            url: ./release/azure-rm-endpoint.md

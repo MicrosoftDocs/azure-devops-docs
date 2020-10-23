@@ -396,3 +396,116 @@ You can extend the Dockerfile to include additional tools and their dependencies
 In order to use Docker from within a Docker container, you need to bind-mount the Docker socket.
 This has very serious security implications - namely, code inside the container can now run as root on your Docker host.
 If you're sure you want to do this, see the [bind mount](https://docs.docker.com/storage/bind-mounts/) documentation on Docker.com.
+
+## Using AKS Cluster
+
+### Deploy and configure Azure Kubernetes Service 
+
+Follow the steps in [Quickstart: Deploy an Azure Kubernetes Service (AKS) cluster using the Azure portal](/azure/aks/kubernetes-walkthrough-portal). After this your PowerShell or Shell console can use the kubectl command line.
+
+### Deploy and configure Azure Container Registry
+
+Follow the steps in [Quickstart: Create an Azure container registry using the Azure portal](/azure/container-registry/container-registry-get-started-portal). After this you can push and pull containers from the ACR.
+
+### Configure Secrets and Deploy a ReplicaSet
+
+1. Create the secrets on the AKS cluster
+
+   ```shell
+    kubectl create secret generic azdevops \
+    --from-literal=AZP_URL=https://dev.azure.com/yourOrg \
+    --from-literal=AZP_TOKEN=YourPAT \
+    --from-literal=AZP_POOL=NameOfYourPool
+    ```
+
+2. Run this command to push your container to ACR
+
+   ```shell
+   docker push <acr-server>/dockeragent:latest
+   ```
+
+3. Configure ACR integration for existing AKS clusters
+
+   ```shell
+   az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-name>
+   ```
+
+4. Save the following content to `~/AKS/ReplicationController.yaml`
+
+   ```shell
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: azdevops-deployment
+      labels:
+        app: azdevops-agent
+    spec:
+      replicas: 1 #here is the config for the actual agent allways running
+      selector:
+        matchLabels:
+          app: azdevops-agent
+      template:
+        metadata:
+          labels:
+            app: azdevops-agent
+        spec:
+          containers:
+          - name: kubepodcreation
+            image: AKRTestcase.azurecr.io/kubepodcreation:5306
+            env:
+              - name: AZP_URL
+                valueFrom:
+                  secretKeyRef:
+                    name: azdevops
+                    key: AZP_URL
+              - name: AZP_TOKEN
+                valueFrom:
+                  secretKeyRef:
+                    name: azdevops
+                    key: AZP_TOKEN
+              - name: AZP_POOL
+                valueFrom:
+                  secretKeyRef:
+                    name: azdevops
+                    key: AZP_POOL
+            volumeMounts:
+            - mountPath: /var/run/docker.sock
+              name: docker-volume
+          volumes:
+          - name: docker-volume
+            hostPath:
+              path: /var/run/docker.sock
+   ```
+
+This Kuberntes YAML will create a Replica Set and a Deployment, where `replicas: 1` will indicate the number or the agents running on the cluster.
+
+5. Run this command
+
+   ```shell
+   kubectl apply -f ReplicationController.yaml
+   ```
+
+6. Now your agents will run AKS cluster
+
+## Common Errors
+
+If you are using Windows OS and you get this error 
+
+   ```shell
+   ‘standard_init_linux.go:178: exec user process caused "no such file or directory"
+   ```
+
+### Install Git Bash
+
+Download and install [git-scm](https://git-scm.com/download/win)
+
+Fix the `LFCR` added from the Windows, you need to run this commands
+
+   ```shell
+   dos2unix ~/dockeragent/Dockerfile
+   dos2unix ~/dockeragent/start.sh
+   git add .
+   git commit -m 'Fixed CR'
+   git push
+   ```
+Try again and the issue will be solved
