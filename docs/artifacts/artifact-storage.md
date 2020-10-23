@@ -40,5 +40,10 @@ The organization-level view will show you your total storage summary and your st
 
 For the current release, users will be able to view the storage breakdown for **packages** as well as projects listed under the **Storage by projects** section. We will be adding more levels of granularity in future releases.
 
+The **Packages** storage breakdown view will list packages in organization-scoped feeds.
+
+> [!div class="mx-imgBorder"]
+> ![Packages in organization scoped feeds](media/packages-org-scoped-feeds.png)
+
 > [!NOTE]
 > The **Storage by projects** section will only show projects with the largest storage consumption and not the full list of projects in your organization.
