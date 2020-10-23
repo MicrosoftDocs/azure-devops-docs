@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 07/09/2020
+ms.date: 11/11/2020
 ---
 
 
@@ -36,6 +36,13 @@ In this article you'll learn:
 > - How to work with the interactive elements of plans and change the plan view
 > - What permissions are required to create and view plans  
 
+::: moniker range="azure-devops"  
+
+
+> [!NOTE]   
+> New Delivery Plans now part of the product, not an extension. 
+
+::: moniker-end
 
 ## Prerequisites
 
@@ -147,6 +154,7 @@ When defining a plan, note the following:
 -  To limit the number or types of work items, specify the field criteria.
 
 <a id="card-settings">  </a>
+
 ## Edit a plan, add field criteria, customize cards, and add markers 
 
 Once you've defined a plan, you can further customize it. 
@@ -197,9 +205,7 @@ You can interact with the plan in the following ways:
 - Click the ![Settings gear icon](../media/icons/team-settings-gear-icon.png) settings gear to edit the plan and [change the fields displayed on the cards](#card-settings).   
 
 For a list of all keyboard shortcuts, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).  
-
-<!--- QUESTION: What determines the order of team rows? --> 
-
+ 
 In the following example, Team 1 features expanded, two items are scheduled for delivery in Sprint 50. 
 
 <img src="media/review-tp-show-team-1.png" alt="Team rows in plans" style="border: 2px solid #C3C3C3;" />
