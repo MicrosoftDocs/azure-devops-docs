@@ -37,7 +37,6 @@ You can use [templates](templates.md) to define variables that are used in multi
 
 In addition to user-defined variables, Azure Pipelines has system variables with predefined values. If you are using YAML or classic build pipelines, see [predefined variables](../build/variables.md) for a comprehensive list of system variables. 
 If you are using classic release pipelines, see [release variables](../release/variables.md).
-Variables are only expanded for stages, jobs, and steps. You cannot, for example, use macro syntax inside a resource or trigger. 
 
 System variables are set with their current value when you run the pipeline. Some variables are set automatically. As a pipeline author or end user, you change the value of a system variable before the pipeline is run. 
 
