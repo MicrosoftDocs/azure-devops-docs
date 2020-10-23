@@ -4,13 +4,13 @@ title: Team Foundation Version Control (TFVC) Documentation
 summary: Collaborate on code development using TFVC centralized version control
 
 metadata:
-  title: Tea Foundation Version Control (TFVC) Documentation
+  title: Team Foundation Version Control (TFVC) Documentation
   description: Collaborate on code development using TFVC centralized version control.
   ms.prod: devops 
   ms.technology: azure-repos
   ms.topic: landing-page 
-  author: steved0x 
-  ms.author: sdanie 
+  ms.author: sdanie
+  author: steved0x
   ms.date: 06/02/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -24,7 +24,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is TFVC?
-            url: ./overview.md
+            url: ./what-is-tfvc.md
           - text: Compare Git and TFVC
             url: ./comparison-git-tfvc.md
   - title: Get started with TFVC
@@ -55,4 +55,3 @@ landingContent:
             url: /cli/azure/ext/azure-devops/repos
           - text: TFVC REST API
             url: /rest/api/azure/devops/tfvc/
-

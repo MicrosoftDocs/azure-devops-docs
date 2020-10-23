@@ -2,7 +2,7 @@
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: XAML Builds | REST API Reference for Team Foundation Server
-description: Get builds programmatically using the REST APIs for Team Foundation Server.
+description: Work with XAML builds programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 0B7A8B2D-8901-46FB-8F15-CF6101B24218
 ms.topic: article
 ms.author: chcomley
@@ -10,7 +10,7 @@ author: chcomley
 ms.date: 08/04/2016
 ---
 
-# Builds
+# XAML Builds
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 
@@ -32,7 +32,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds?api-versio
 | Query
 | definition    | string   | Builds that have this definition.
 | requestedFor  | string   | Builds requested by this user<br/>Alias of the user. `fabrikamfiber4@hotmail.com`, for example.
-| minFinishTime | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | Builds that finished after this time.
+| minFinishTime | [DateTime](/dotnet/standard/base-types/standard-date-and-time-format-strings) | Builds that finished after this time.
 | quality       | string   | Builds that have this [quality](./qualities.md).
 | status        | enum {<br/>&nbsp;&nbsp;All<br/>&nbsp;&nbsp;Failed<br/>&nbsp;&nbsp;InProgress<br/>&nbsp;&nbsp;None<br/>&nbsp;&nbsp;NotStarted<br/>&nbsp;&nbsp;PartiallySucceeded<br/>&nbsp;&nbsp;Stopped<br/>&nbsp;&nbsp;Succeeded<br/>} | Builds that have this status. Combine flags with a comma, e.g. `InProgress,NotStarted` to list builds that haven't finished yet.
 | $skip         | int      | Number of builds to skip.
@@ -1821,4 +1821,3 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildI
 ```
 DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/build/builds/345?api-version=1.0
 ```
-

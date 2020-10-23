@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/17/2019
+ms.date: 07/14/2020
 ---
 
 # Velocity metrics and usage guidance  
@@ -27,7 +27,7 @@ Velocity metrics provide useful information to support the following team and pr
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With both these charts, you can quickly determine the following information:  
 - **Planned** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started.

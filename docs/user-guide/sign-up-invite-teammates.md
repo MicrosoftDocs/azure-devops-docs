@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../includes/version-vsts-only.md)]
 
-In this quickstart, you learn how to sign up for Azure DevOps for free, sign in with a Microsoft or GitHub account, create an organization, create a project, and invite your teammates.
+In this quickstart, learn how to sign up for Azure DevOps for free, sign in with a Microsoft or GitHub account, create an organization, create a project, and invite your teammates.
 
 [!INCLUDE [acquisition-intro-devops](../includes/acquisition-intro-devops.md)]
 
@@ -43,6 +43,4 @@ For more information about managing users and organization access, see [Add orga
 > [!div class="nextstepaction"]
 > [Add code to your Git repository](code-with-git.md)
 >
-> [Plan and track work](plan-track-work.md)
-
-
+> [Plan and track work](../boards/get-started/plan-track-work.md)

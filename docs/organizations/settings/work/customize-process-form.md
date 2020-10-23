@@ -2,7 +2,7 @@
 title: Customize the web form to an inherited process
 titleSuffix: Azure DevOps Services  
 description: Customize the web form for a work item type and Inheritance process model for a project  
-ms-custom: inherited-process   
+ms.custom: inherited-process   
 ms.technology: devops-agile
 ms.assetid: E0AACC40-9A9E-4A48-A1D7-1CE70D53EEA8  
 ms.author: kaelli
@@ -145,7 +145,7 @@ Choose the ![Delete icon](../../../media/icons/delete_icon.png) Delete option fr
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-- [Add or modify a custom work item type](customize-process-wit.md)
+- [Add or modify a custom work item type](customize-process-work-item-type.md)
 - [Add and manage fields](customize-process-field.md) 
 - [Add extensions and custom controls to a work item type](custom-controls-process.md) 
 - [Customize a project using an inherited process](customize-process.md)  

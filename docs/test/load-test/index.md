@@ -22,18 +22,29 @@ Load test your app with hundreds of thousands of users using Azure DevOps Test P
 
 Load test from your preferred UI, and compare the results.
 
-| | |
-| --- | --- |
-| ![icon](media/visualstudio-icon.png)<br />[Load test with Visual Studio](getting-started-with-performance-testing.md) | ![icon](media/vsts-icon.png)<br />[Load test with Azure DevOps](get-started-simple-cloud-load-test.md) |
-| | |
+:::row:::
+    :::column:::
+        :::image type="icon" source="media/visualstudio-icon.png" border="false":::  
+        [Load test with Visual Studio](getting-started-with-performance-testing.md)  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="media/vsts-icon.png" border="false":::  
+        [Load test with Azure DevOps](get-started-simple-cloud-load-test.md)  
+    :::column-end:::
+:::row-end:::
 
 ## Videos
 
-| | |
-| --- | --- |
-| <iframe src="https://channel9.msdn.com/Events/Ignite/New-Zealand-2016/M379/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Blogs/Developer-Support-Series-PGI-Sessions/Developer-Support-Series-Cloud-Load-Testing/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
-| <iframe src="https://channel9.msdn.com/Events/TechDays/Techdays-2016-The-Netherlands/Cloud-Based-Load-Testing-of-web-applications-with-Visual-Studio-2015/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Shows/Cloud+Cover/Episode-213-Azure-App-Service-Best-Practices-for-Large-Scale-Applications/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> |
-| | |
+:::row:::
+    :::column:::
+        <iframe src="https://channel9.msdn.com/Events/Ignite/New-Zealand-2016/M379/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe>  
+        <iframe src="https://channel9.msdn.com/Events/TechDays/Techdays-2016-The-Netherlands/Cloud-Based-Load-Testing-of-web-applications-with-Visual-Studio-2015/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe>  
+    :::column-end:::
+    :::column:::
+        <iframe src="https://channel9.msdn.com/Blogs/Developer-Support-Series-PGI-Sessions/Developer-Support-Series-Cloud-Load-Testing/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe>  
+        <iframe src="https://channel9.msdn.com/Shows/Cloud+Cover/Episode-213-Azure-App-Service-Best-Practices-for-Large-Scale-Applications/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe>  
+    :::column-end:::
+:::row-end:::
 
 ## Step-by-Step Tutorials
 

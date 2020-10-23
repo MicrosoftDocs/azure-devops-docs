@@ -41,7 +41,7 @@ Welcome to what's new in Azure DevOps docs for March 2020. This article lists so
 
 - [Azure virtual machine scale set agents](/azure/devops/pipelines/agents/vmss) - Preview documentation
 - [Runtime parameters](/azure/devops/pipelines/process/runtime-parameters) - Adding new runtime parameters
-- [Deploy from multiple branches using Azure Pipelines](/azure/devops/pipelines/release/deploy-mulitple-branches) - Added tutorial for deploy from multiple branches in a release pipeline
+- [Deploy from multiple branches using Azure Pipelines](/azure/devops/pipelines/release/deploy-multiple-branches) - Added tutorial for deploy from multiple branches in a release pipeline
 - [Deploy to Azure App Service using Visual Studio Code](/azure/devops/pipelines/targets/deploy-to-azure-vscode) - Deploy to Azure App Service using Visual Studio Code
 - [Azure File Copy task](/azure/devops/pipelines/tasks/deploy/azure-file-copy-version3)
 

@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 04/22/2020
+ms.date: 06/17/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -44,7 +44,9 @@ Add secrets to a key vault:
 
 * By using the Azure CLI. To add a secret to a key vault, for example a secret named **SQLPassword** with the value **Pa$$w0rd**, type:
 
-  `az keyvault secret set --vault-name 'ContosoKeyVault' --name 'SQLPassword' --value 'Pa$$w0rd'`
+  ```azurecli
+  az keyvault secret set --vault-name 'ContosoKeyVault' --name 'SQLPassword' --value 'Pa$$w0rd'
+  ```
 
 When you want to access secrets:
 
@@ -69,11 +71,27 @@ When you want to access secrets:
 
 ## Arguments
 
+:::moniker range="azure-devops"
+
 | Parameter | Description |
 | --------- | ----------- |
 |`ConnectedServiceName`<r/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
 |`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
 |`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded. <br/>Default value: `*`|
+|`RunAsPreJob`<br/>Make secrets available to whole job| (Required) Run the task before job execution begins. Exposes secrets to all tasks in the job, not just tasks that follow this one. <br/>Default value: `false`|
+
+:::moniker-end
+
+:::moniker range="< azure-devops"
+
+| Parameter | Description |
+| --------- | ----------- |
+|`ConnectedServiceName`<r/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
+|`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
+|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded. <br/>Default value: `*`|
+
+:::moniker-end
+
 
 > [!NOTE]
 > Values are retrieved as strings. For example, if there is a secret named **connectionString**,
@@ -101,7 +119,7 @@ $pfxPath = [Environment]::GetFolderPath("Desktop") + "\MyCert.pfx"
 [System.IO.File]::WriteAllBytes($pfxPath, $protectedCertificateBytes)
 ```
 
-For more details, see [Get started with Azure Key Vault certificates](https://blogs.technet.microsoft.com/kv/2016/09/26/get-started-with-azure-key-vault-certificates).
+For more details, see [Get started with Azure Key Vault certificates](/archive/blogs/kv/get-started-with-azure-key-vault-certificates).
 
 ## Contact Information
 
@@ -118,4 +136,3 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->
-

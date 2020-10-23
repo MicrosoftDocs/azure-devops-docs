@@ -3,10 +3,12 @@ title: Add portfolio backlogs
 titleSuffix: Azure DevOps & TFS 
 description: Add up to two additional work item types and portfolio backlogs in Azure DevOps Services & Team Foundation Server   
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '< azure-devops' 
 ms.date: 12/15/2017  
 ---
 
@@ -24,7 +26,7 @@ Portfolio backlogs are useful for organizing your backlog under business initiat
 Your project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.  
 
 > [!NOTE]    
->If you haven't yet enabled the Portfolio Backlogs feature for your on-premises TFS, [do that first](configure-features-after-upgrade.md).  
+>If you haven't yet enabled the Portfolio Backlogs feature for your on-premises TFS, [do that first](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade).  
 
 Here, we add a third portfolio backlog, Initiative. With it, the management team can set priorities and view progress of work belonging to initiatives.  
 
@@ -66,7 +68,7 @@ For an overview of the three system processes, see [Choose a process](../boards/
 Save the files to a folder that you&#39;ll use to update these files and folders: Categories, ProcessConfiguration, and WorkItemTypes</li> 
 <li> For <strong>On-premises XML</strong>: <br/>
 <ul>
-<li> If you haven&#39;t done so yet, update your project to <a href="configure-features-after-upgrade.md" data-raw-source="[enable the latest features](configure-features-after-upgrade.md)">enable the latest features</a>  </li> 
+<li> If you haven&#39;t done so yet, update your project to <a href="/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade" data-raw-source="[enable the latest features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)">enable the latest features</a>  </li> 
 <li> <a href="#import-export" data-raw-source="[Export the definition files you&#39;ll need](#import-export)">Export the definition files you&#39;ll need</a>: Epic, Categories, and ProcessConfiguration </li> 
 </ul> 
 </li>
@@ -291,4 +293,3 @@ Yes. For example, you can add Goal and Initiative WITs to a portfolio backlog ca
 While you can nest backlog items, we don't recommend you do. We don't support drag-and-drop linking of nested backlog items. Instead, we support [mapping of backlog items to portfolio items](../boards/backlogs/organize-backlog.md).  
 
 For examples of how hierarchically linked items that belong to the Requirements Category appear on the backlogs and boards, see [How backlogs and boards display hierarchical (nested) items](../boards/backlogs/resolve-backlog-reorder-issues.md).
-

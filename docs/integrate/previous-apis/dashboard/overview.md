@@ -10,7 +10,7 @@ author: chcomley
 ms.date: 08/04/2016
 ---
 
-# Dashboards
+# Dashboards and widgets overview
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 

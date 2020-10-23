@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this article, learn how to create or add a public project to your organization. A public project is similar to any other project that you add to your organization. Every project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions.
+Learn how to create or add a public project to your organization. A public project is similar to any other project that you add to your organization. Every project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions.
 
 A public project allows non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. For details, see [Default roles & access for public projects](default-roles-access-public.md).
 
@@ -31,7 +31,7 @@ You can add a public project to your existing organization, or create an organiz
 Before you can create a public project, you must enable anonymous access for your organization.
 
 1. From your web browser, sign in to Azure DevOps. You must be signed in to create a public project.
-2. Choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**.
+2. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
@@ -43,7 +43,7 @@ Before you can create a public project, you must enable anonymous access for you
 
 ## Add a public project to your organization
 
-1. Choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open organizational settings](../../media/settings/open-projects-hub-vert-brn.png)  

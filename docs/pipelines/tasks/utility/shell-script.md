@@ -110,7 +110,7 @@ On the [Build tab](../../index.yml) of a build pipeline, add this task:
 <tr>
 <td>
 
-![](media/shell-script.png)
+:::image type="icon" source="media/shell-script.png" border="false":::
 
 <br/>**Utility: Shell Script**</td>
 <td>

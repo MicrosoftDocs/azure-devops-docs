@@ -123,6 +123,8 @@
       href: delete-existing-repo.md
     - name: Rename a repo
       href: repo-rename.md
+    - name: Change the default branch
+      href: change-default-branch.md
     - name: Find a file
       href: find-a-file.md
     - name: Create a readme
@@ -132,8 +134,8 @@
     - name: Move Git repositories between Team Projects
       href: move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
-      href: git/remove-binaries.md
-    - name: Manage branches
+      href: remove-binaries.md
+  - name: Manage branches
     items:
     - name: Manage your branches
       href: manage-your-branches.md

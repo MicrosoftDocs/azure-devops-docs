@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Lock or unlock files or folder under TFVC version control using the Lock Command
 ms.assetid: 5b62627b-fdb3-4832-a387-811dcc2808e3
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Lock Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Locks or unlocks a file or folder to deny or restore the right of users to check out an item for edit into a different workspace or to check in pending changes to an item from a different workspace.
 
@@ -67,7 +65,7 @@ You can use the lock command to temporarily freeze the Team Foundation version c
 > [!NOTE]
 > As a courtesy to your teammates, notify them when you apply a lock to an item, explain why you are doing this, and estimate when you plan to remove the lock, if you can.
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ### How to Lock an Item
 
@@ -139,7 +137,7 @@ c:\projects>tf lock /lock:none src/
 
 #### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
 
 [Checkout and Edit Commands](checkout-or-edit-command.md)
 
@@ -153,6 +151,6 @@ c:\projects>tf lock /lock:none src/
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
 
 [Working with Version Control Locks](work-version-control-locks.md)

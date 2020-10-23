@@ -186,6 +186,8 @@
       href: permission-command.md
     - name: Proxy
       href: proxy-command.md
+    - name: Reconcile
+      href: reconcile-command.md
     - name: Resolve
       href: resolve-command.md
     - name: Rollback
@@ -207,4 +209,4 @@
 - name: Resources
   items:
   - name: Administering TFVC
-    href: /azure/devops/repos/tfvc/administering-team-foundation-version-control
+    href: ./administering-team-foundation-version-control.md

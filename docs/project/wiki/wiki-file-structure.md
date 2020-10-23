@@ -41,7 +41,7 @@ The Wiki repository has the following files and folders:
 
 ## File naming conventions
 
-Each file follows the convention of inserting dashes for a space in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name. The page name is added to the URL, ensuring that links you share remain intact as the Wiki changes over time. 
+Each file requires using dashes instead of spaces in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name. The page name is added to the URL, ensuring that links you share remain intact as the Wiki changes over time. 
 
 [!INCLUDE [temp](./includes/wiki-naming-conventions.md)]
 
@@ -77,6 +77,7 @@ When there's no *.order* file the pages are sorted alphabetically. To revert to 
 1. Copy the clone URL for the Wiki and open it in a browser.
    Doing so opens the Git Repo (Files Hub), which backs the Wiki.
 2. Navigate to the *.order* file and delete it.
+   The .order file is automatically (re)created after deletion, for example, in a drag and drop action on an article.
 
 ## Related articles
 

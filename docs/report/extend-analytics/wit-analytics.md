@@ -8,7 +8,7 @@ ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/14/2020
 ---
 
 # Query your work tracking data using OData Analytics
@@ -31,7 +31,7 @@ In this article, the base root URL is scoped to a project as shown:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -49,16 +49,16 @@ All additional URL parts are specified as an additional part of the query string
 
 ::: moniker range="azure-devops"
 - You will need to have a project in Azure DevOps. If you don't have one, see [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). 
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md). 
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](../powerbi/analytics-security.md).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).  
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.  
-- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+::: moniker range=">= azure-devops-2019 < azure-devops"
+- [Verify that Analytics](../dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service.  
+- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](../powerbi/analytics-security.md).
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md). 
 ::: moniker-end
 
@@ -417,5 +417,4 @@ Analytics forces paging when query results exceed 10000 records. In that case, y
 - [Query guidelines](odata-query-guidelines.md) 
 - [Supported OData features](odata-supported-features.md)
 - [OData v4.0 specification](https://www.odata.org/documentation/)  
-- [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)  
-
+- [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)

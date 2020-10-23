@@ -10,7 +10,7 @@ author: chcomley
 ms.date: 08/04/2016
 ---
 
-# Work item revisions
+# Reporting work item revisions
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 
