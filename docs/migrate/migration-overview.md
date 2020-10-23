@@ -115,7 +115,7 @@ A: Yes. For data import organizations, Azure DevOps Services supports team proje
 
 ### Q: Will my Personal Access Tokens also migrate when I migrate from Server to Services?
 
-A: No, your tokens will not migrate and you will need to [regenerate your Personal Access Tokens](../organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page) on Azure Dev Ops Services.
+A: No, your tokens will not migrate and you will need to [regenerate your Personal Access Tokens](../organizations/accounts/use-personal-access-tokens-to-authenticate.md?tabs=preview-page) on Azure Dev Ops Services.
 
 ### Q: If I have feedback or additional questions is there somewhere I can reach out?
 
