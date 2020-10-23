@@ -4,7 +4,7 @@ ms.custom: seodec18, contperfq4
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 09/08/2020
+ms.date: 10/23/2020
 
 monikerRange: '>= tfs-2015'
 ---
@@ -37,6 +37,7 @@ You can use [templates](templates.md) to define variables that are used in multi
 
 In addition to user-defined variables, Azure Pipelines has system variables with predefined values. If you are using YAML or classic build pipelines, see [predefined variables](../build/variables.md) for a comprehensive list of system variables. 
 If you are using classic release pipelines, see [release variables](../release/variables.md).
+Variables are only expanded for stages, jobs, and steps. You cannot, for example, use macro syntax inside a resource or trigger. 
 
 System variables are set with their current value when you run the pipeline. Some variables are set automatically. As a pipeline author or end user, you change the value of a system variable before the pipeline is run. 
 
@@ -87,7 +88,7 @@ Variables with macro syntax get processed before a task executes during runtime.
 
 Macro syntax variables remain unchanged with no value because an empty value like `$()` might mean something to the task you are running and the agent should not assume you want that value replaced.  For example, if you use `$(foo)` to reference variable `foo` in a Bash task, replacing all `$()` expressions in the input to the task could break your Bash scripts.
 
-Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`.
+Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`. Macro variables are not expanded when used to display a job name inline. Instead, you must use the `displayName` property.
 
 > [!NOTE]
 > Variables are only expanded for `stages`, `jobs`, and `steps`.
