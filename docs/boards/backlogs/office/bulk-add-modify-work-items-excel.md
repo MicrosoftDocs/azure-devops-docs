@@ -9,13 +9,13 @@ author: KathrynEE
 ms.custom: contentperfq4
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 05/22/2020
+ms.date: 07/09/2020
 ---
 
 
 # Bulk add or modify work items with Excel 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 When you have many work items to add or modify, using Microsoft Excel can save you time. Excel supports adding work items, updating existing work items, adding links and attachments to multiple work items, and more. In addition, you can use native Excel features to support other actions, such as summing a column, copy-and-paste rows, perform fill down, and more. 
 
@@ -37,7 +37,7 @@ In this article you'll learn how to perform the following tasks:
 
 For information about connecting to Excel, see [Connect Azure Boards to an Office client](track-work.md). For answers to specific questions about the integration of Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards ](faqs.md).  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!NOTE]  
 > If you don't have access to Excel, you can still perform bulk import and update using CSV formatted files. To learn more, see [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md).
@@ -61,9 +61,9 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
 	> [!NOTE]   
 	> The only way to get the Azure DevOps Office Integration plug-in is by installing one of the latest editions of Visual Studio or the Azure DevOps Office Integration installer. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel.  
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).  
-- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
-- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels). 
+- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../get-started/sign-up-invite-teammates.md).  
+- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).  
+- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../../organizations/security/access-levels.md). 
 - To use the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by misspelling user names and when you must assign user names from a large group of user accounts.  
 
 ::: moniker-end  
@@ -74,9 +74,9 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
 	> [!NOTE]   
 	> The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration 2017 plug-in supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](/azure/devops/organizations/projects/create-project). 
-- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
-- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels). 
+- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md). 
+- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).  
+- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../../organizations/security/access-levels.md). 
 - To use the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by misspelling user names and when you must assign user names from a large group of user accounts.  
 
 ::: moniker-end  
@@ -86,9 +86,9 @@ For information about connecting to Excel, see [Connect Azure Boards to an Offic
 
 - Installed Microsoft 2007, Microsoft Excel 2010, or Microsoft Excel 2013 
 - Installed Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
-- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](/azure/devops/organizations/projects/create-project). 
-- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
-- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).   
+- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](../../../organizations/projects/create-project.md). 
+- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../../organizations/security/set-permissions-access-work-tracking.md).  
+- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../../organizations/security/access-levels.md).   
 
 ::: moniker-end  
 
@@ -214,16 +214,29 @@ You can't perform the following tasks from an Excel worksheet:
 ::: moniker range="azure-devops" 
 
 - You can't delete work items 
-- You can't change the work item type of an existing work item 
+- You can't change the work item type of an existing work item
+- You can't move work items to another project  
 - You can't import or update test case steps or other test artifacts 
 - You can't add work items in any other State than the new State 
 - You can't add to a work item discussion thread 
-- You can't link to a remote work item 
-- You can't move work items to another project 
+- You can't link to a remote work item. 
+
 
 ::: moniker-end  
 
-::: moniker range="< azure-devops" 
+::: moniker range="azure-devops-2020" 
+
+- You can't delete work items 
+- You can't change the work item type of an existing work item
+- You can't move work items to another project  
+- You can't import or update test case steps or other test artifacts 
+- You can't add work items in any other State than the new State 
+- You can't add to a work item discussion thread. 
+
+
+::: moniker-end  
+
+::: moniker range="<= azure-devops-2019" 
 
 - You can't delete work items 
 - You can't import or update test case steps or other test artifacts 
@@ -238,8 +251,10 @@ You can't perform the following tasks from an Excel worksheet:
 
 1. Open Excel and connect to your Azure Boards project. Use one of the four methods provided in [Connect Azure DevOps project to Excel](track-work.md#excel).
 
-1.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see [Azure DevOps Office integration issues](tfs-office-integration-issues.md). 
+	> [!NOTE]   
+	> When you connect to Azure Boards in the cloud, the **Team Project Collection** is automatically selected as their is only one collection associated with your Azure DevOps Services organization. When you connect to Azure Boards in an on-premises server, you choose the **Team Project Collection** prior to choosing the project.  
 
+1.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see [Azure DevOps Office integration issues](tfs-office-integration-issues.md). 
 1. Choose **New List** from the Team ribbon. 
 
 	> [!div class="mx-imgBorder"]  
@@ -264,7 +279,7 @@ You can't perform the following tasks from an Excel worksheet:
 1.  Publish your worksheet. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add work items to Excel](media/excel/2019-publish.png)
+	> ![Publish your worksheet.](media/excel/2019-publish.png)
 
     Make sure your cursor is in a cell that contains data. Otherwise, the **Publish** button might appear disabled.
 
@@ -312,7 +327,7 @@ You can add a hierarchy of work items linked using parent-child links or other t
 	Note the List type has changed to **Tree**, and a second **Title** column appears.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Convert to Tree List dialog](media/excel/converted-tree-list-type.png)
+	> ![List type has changed to Tree, and a second Title column appears.](media/excel/converted-tree-list-type.png)
 
 1. To add more levels to the hierarchy, choose **Add Tree Level** again. For example, if you want to add a hierarchy of Epics, Features, and User Stories, you'll want to have **Title 1**, **Title 2**, and **Title 3** columns.
 
@@ -551,7 +566,7 @@ You can use the Select User feature to find user accounts and assign values to p
 
 You can perform a number of actions from the **Links** tab of the **Links and Attachments** dialog. Specifically, you can: 
 - Review the existing links defined for the selected work item 
-- Add links to one or more work items or select objects 
+- Add links to a selected work items to one or more work items or select objects 
 - Delete links 
 - Open a linked work item (opens in the web portal)  
 - Edit the link type of an existing link 
@@ -561,6 +576,8 @@ For more information on linking work items, see [Link user stories, issues, bugs
 
 
 ### View and add links 
+
+You can't use the Links and Attachments dialog to bulk update work item links. You can only bulk update tree-topology link types using a tree list. 
 
 1. To link a work item to other work items, choose the work item and then choose **Links and Attachments**. From the Links tab, choose **Link to** and then choose the **Link Type** and work item(s) you want to link to. Choose **OK** and then **Publish**. 
 
@@ -586,7 +603,7 @@ The **Choose Linked Work Items** dialog works in the same way as the **Get Work 
 
 ### Add columns to the links list
 
-1. From the **Links** tab, choose the ![ ](media/icons/choose-columns.png) **Columns** icon, and add the fields you want displayed. Here we add the Assigned to and State fields. 
+1. From the **Links** tab, choose the :::image type="icon" source="media/icons/choose-columns.png" border="false"::: **Columns** icon, and add the fields you want displayed. Here we add the Assigned to and State fields. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Links and Attachments dialog, Links tab, Added columns](media/excel/link-tabs-choose-columns-dialog.png) 
@@ -594,7 +611,7 @@ The **Choose Linked Work Items** dialog works in the same way as the **Get Work 
 1. To reorder the links, choose the field to sort the list on that field. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Links and Attachments dialog, Links tab, Added columns](media/excel/links-tab-added-columns.png) 
+	> ![To reorder the links, choose the field to sort the list on that field.](media/excel/links-tab-added-columns.png) 
 
 This dialog works in the same way as the **Get Work Items** dialog. See [Add existing work items to your worksheet](#get-work-items) described earlier in this article.
 ### Open a linked work item
@@ -610,7 +627,7 @@ The work item opens in your web portal.
 
 You can edit any link listed. You can change the link type and the work items linked to.
   
-1. Choose the link and choose the ![ ](media/icons/edit.png) **Edit** icon. 
+1. Choose the link and choose the :::image type="icon" source="media/icons/edit.png" border="false"::: **Edit** icon. 
 
 1. Change the link type as needed. 
 
@@ -645,7 +662,7 @@ You can create a report or chart from the web portal for flat-list queries. See 
 You can create a report using the **New Report** feature based on a flat list of work items. 
 
 > [!div class="mx-imgBorder"]  
-> ![Get work items dialog](media/excel/team-ribbon-new-report.png)
+> ![Create a report using the New Report feature.](media/excel/team-ribbon-new-report.png)
 
 To learn more, see [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md). 
 
@@ -668,7 +685,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 
 ## Related articles
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
@@ -689,4 +706,3 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 
 ::: moniker-end  
 
- 

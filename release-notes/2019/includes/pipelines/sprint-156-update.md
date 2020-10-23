@@ -29,21 +29,21 @@ To get started, see the [pipeline caching documentation](https://aka.ms/pipeline
 Previously, when creating a new pipeline for a Dockerfile in new pipeline creation, the template recommended pushing the image to an Azure Container Registry and deploying to an Azure Kubernetes Service. We added a new template to let you build an image using the agent without the need to push to a container registry.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/156_10.png)
+> ![New build image template for Dockerfile.](../../media/156_10.png)
 
 ### Arguments input in Docker Compose task
 
 A new field has been introduced in the Docker Compose task to let you add arguments such as `--no-cache`. The argument will be passed down by the task when running commands such as build.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/156_11.png)
+> ![Arguments input in Docker Compose task.](../../media/156_11.png)
 
 ### Fix warning in large test attachments
 
 Last month, we added support for test attachments bigger than 100MB. Currently, you might see VSTest task or Publish test results task returning a 403 or 407 error in the logs. If you are using self-hosted builds or release agents behind a firewall which filters outbound requests, you will need to make some configuration changes to be able to use this functionality.
 ​
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/156_01.png)
+> ![Fix warning in large test attachments.](../../media/156_01.png)
 
 In order to fix this issue, we recommend that you update the firewall for **outbound requests** to `https://*.vstmrblob.vsassets.io`. You can find troubleshooting information in the documentation [here](https://docs.microsoft.com/azure/devops/organizations/security/faq-network-connections?view=azure-devops). 
 ​
@@ -65,17 +65,17 @@ For a full list of tools available for a particular image, go to **Settings > Ag
 
 ### Support for Bitbucket repositories in Deployment Center for AKS and Web App for containers
 
-With this update, we added native support for BitBucket repositories to our Deployment Center workflows for AKS and Web App for containers. Now you can get OAuth experience and a populated list of repositories and branches of your Bitbucket account. This will help you deploy to your respective resources. In addition, we added an assisted experience by analyzing the Bitbucket repository selected and detecting the DockerFile.
+With this update, we added native support for Bitbucket repositories to our Deployment Center workflows for AKS and Web App for containers. Now you can get OAuth experience and a populated list of repositories and branches of your Bitbucket account. This will help you deploy to your respective resources. In addition, we added an assisted experience by analyzing the Bitbucket repository selected and detecting the DockerFile.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/156_15.png)
+> ![Support for Bitbucket repositories in Deployment Center for AKS and Web App for containers.](../../media/156_15.png)
 
 ### Linux Web App support for Java workflows in Azure DevOps Projects
 
 Now you can create a Linux Web App and deploy a sample Java application with a few clicks in Azure DevOps Projects. We will host the sample Java application in Azure Repos and will setup a CI/CD pipeline for it.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/156_16.png)
+> ![Linux Web App support for Java workflows in Azure DevOps Projects.](../../media/156_16.png)
 
 ### Pipeline variable group and variable management commands
 

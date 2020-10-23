@@ -7,7 +7,7 @@ ms.assetid: 4aaa98c7-f363-4fe6-b9dd-158108955e38
 ms.author: sdanie
 author: steved0x
 ms.date: 05/11/2020
-monikerRange: azure-devops
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Create a multi-platform pipeline

@@ -13,7 +13,7 @@ ms.date: 01/20/2017
 
 # Arrange requirements into a product plan
 
-[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 After you analyze your customer requirements sufficiently to understand what the product should do, you must work out a plan to implement the product. Or, for an existing product, you must work out what functionality is missing and work out a plan for making the changes. But the requirements do not automatically tell you the plan.  
   

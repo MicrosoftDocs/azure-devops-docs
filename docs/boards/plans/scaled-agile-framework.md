@@ -16,9 +16,9 @@ ms.date: 05/28/2020
 
 # Implement Scaled Agile Framework&reg; 
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
-With many enterprises benefiting from individual Agile teams, the need to scale Agile practices as the organization grows is of greater interest. The need for enterprises to view progress of many Agile teams and across a portfolio continues to grow. To address these needs, many businesses have adopted the Scaled Agile Framework&reg; (SAFe&reg;). 
+With many enterprises benefiting from individual Agile teams, greater interest grows to scale Agile practices as the organization grows. The need for enterprises to view progress of many Agile teams and across a portfolio  continues to increase. To address these needs, many businesses have adopted the Scaled Agile Framework&reg; (SAFe&reg;). 
 
 If you're familiar with Scrum but not familiar with SAFe®, [these videos at Scaled Agile](https://www.scaledagileframework.com/videos-and-presentations/) are a good way to orient yourself.  
 
@@ -35,7 +35,7 @@ Azure Boards supports SAFe® practices through its autonomous teams, backlogs, b
 
 ## The Scaled Agile Framework®
 
-The SAFe® big picture addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down Epics into Features and Stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Additionally, the portfolio backlog can track deliverables that map to value streams and associated budgets.  
+The SAFe® addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down Epics into Features and Stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Additionally, the portfolio backlog can track deliverables that map to value streams and associated budgets.  
 
 ### SAFe® architectural overview version 5.0 
 
@@ -68,8 +68,8 @@ Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www
 All of these artifacts and practices are supported by Azure Boards. 
 
 - **Stories, Features**, and **Enablers**: Implemented as work items that capture information and status of work. These work items automatically appear on team backlogs and Kanban boards. 
-- **Team Backlogs** and **Program Backlogs**: Implemented as team backlogs which filter work items assigned to a team and support prioritizing and grouping of work.  
-- **Scrum** and **Kanban**: These practices are fully supporting using Kanban boards, Sprint backlogs and Taskboards, teams, and sprint cadences. 
+- **Team Backlogs** and **Program Backlogs**: Implemented as team backlogs that filter work items assigned to a team and support prioritizing and grouping of work.  
+- **Scrum** and **Kanban**: Practices that are fully supported using Kanban boards, Sprint backlogs and Taskboards, teams, and sprint cadences. 
 - **Iterations**, **Innovation and Planning (IP) Iteration**, **Program Increments (PI)**, **Milestones**, and **Release Trains**: Implemented via a flat-list or a hierarchical configuration of Iteration Paths. 
 - **Agile Release Train**: Implemented by a set of Agile teams and Program teams configured to support specific team and program views. 
 - **PI Objectives**, **Team Goals**, and  **Solution context**: Teams can use the built-in project wiki to share objectives, goals, customer information, and solution requirements.   
@@ -85,7 +85,7 @@ Portfolio SAFe® adds support for managing portfolios through epics, enablers, a
 
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
-Azure Boards provides supports for portfolio components includes the following:
+Azure Boards provides supports for the following portfolio components:
 
 - **Epics**: Map to the Epic work item type and allow tracking, grouping, and rollup of child items. 
 - **Portfolio backlogs**: Implemented as a portfolio backlog that supports filtering of work based on review of business needs.  
@@ -331,14 +331,6 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       [**Tags, Value Area**](safe-concepts.md#tags). You can use tags or the Value Area field to track work associated with a specific budget or value stream. 
    :::column-end:::
 :::row-end:::
-:::row:::
-   :::column span="":::
-      Weighted Shortest Job First (WSJF)
-   :::column-end:::
-   :::column span="3":::
-      [**WSJF extension field**](safe-customize.md#wsjf). You can add the WSJF calculated field to work items to compute and store WSJF. 
-   :::column-end:::
-:::row-end:::
 
 
 
@@ -386,7 +378,7 @@ Many thanks to the following contributors for their review and feedback to the c
 
 The articles in this series were updated from a previous white paper developed in collaboration with the following authors:  
  
-- Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. His blog is at [31og.com](https://lazy-developer.xyz/) and you can follow him on Twitter at [twitter.com/gordonbeeming](http://twitter.com/gordonbeeming).  
+- Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. His blog is at [gordonbeeming.xyz](https://gordonbeeming.xyz/) and you can follow him on Twitter at [twitter.com/gordonbeeming](https://twitter.com/gordonbeeming).  
 - Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is a Visual Studio ALM Ranger. When he is not Ruck Mastering and contributing to Visual Studio ALM Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.  
 - Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Azure DevOps and on-premises TFS.
 - Kathryn Elliott is a senior technical writer at Microsoft.  

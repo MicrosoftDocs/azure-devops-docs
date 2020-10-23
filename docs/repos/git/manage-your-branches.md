@@ -4,16 +4,14 @@ titleSuffix: Azure Repos
 description: Find your work and search for branches using the branches page in Azure DevOps Services/TFS
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
-ms.date: 09/13/2018
+ms.date: 07/10/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Manage branches
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 Manage the work in your team's Git repo from the **Branches** view on the web. 
 Customize the view to track the branches you care most about so you can stay on top of changes made by your team.
@@ -90,38 +88,7 @@ browse the files based on the most recent commit on the branch. **View history**
 
 ## Change your default branch
 
->[!NOTE]
->This step requires [Edit Policies permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo. 
+[!INCLUDE [](includes/change-default-branch-instructions.md)]
 
-Configure your Git repo to use a different default branch to merge code into when your team creates new pull requests.
-This is useful when you want to use a branch other than `master` for new changes or need to change your main line of development in your repo.
-
-::: moniker range=">= azure-devops-2019"
-
-1. [Navigate](../../project/navigation/go-to-project-repo.md) to your project and select **Project settings**.
-
-2. Scroll down and select **Repositories** from the **Code** section.
-
-3. Select the desired repository and expand the branches.
-
-4. Select the **...** beside the desired branch and choose **Set as default branch**.
-
-   ![Set default branch](media/pull-requests/set-default-branch-new-nav.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-1. Select the settings icon while you have your project open to bring up the project administration page.
-
-   ![open up the administrative area of the Azure DevOps Services web portal for your project](media/pull-requests/gear_icon_settings.png)
-   
-1. Select **Version Control**.
-
-1. Select your Git repository. Your branches are displayed under your repo.
-
-1. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.
-
-   ![Set a default branch for a Git repo in Azure DevOps Services or TFS](media/pull-requests/set_default_branch.png)
-
-::: moniker-end
+There are other aspects you should consider before making this change.
+Learn about them in the topic on [changing your default branch](change-default-branch.md).

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Merge folders and files
 ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Merge folders and files
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 For the various reasons described in [Branch folders and files](branch-folders-files.md), many software development teams work in a codebase that is forked into various branches. If you use branches, eventually your team must integrate the work that has been completed on different branches during certain phases of your project. For example, when you are ready to test a full version of your software, you will need the changes made on different feature team branches to be merged together.
 
@@ -106,7 +104,7 @@ Tracking Changeset Window: Merge to Parent Branch
 
 ![Tracking Changeset window: merge to parent branch](media/merge-folders-files/IC269735.png)
 
-From the **Tracking Changeset** window, Julie can see that Chris checked in the method with changeset 50, and merged it to the **Dev** branch with changeset 51. But Julie cannot get the new code until changeset 50 is merged into the **FeatureTeamB** branch. So she drags the **Dev** branch onto the **FeatureTeamB** branch to launch the **Source Control Merge Wizard**, which she then uses to complete the merge.
+From the **Tracking Changeset** window, Julie can see that Chris checked in the method with changeset 50, and merged it to the **Dev** branch with changeset 51. But Julie cannot get the new code until changeset 51 is merged into the **FeatureTeamB** branch. So she drags the **Dev** branch onto the **FeatureTeamB** branch to launch the **Source Control Merge Wizard**, which she then uses to complete the merge.
 
 <a name="sourcecontrolwizard"></a>
 

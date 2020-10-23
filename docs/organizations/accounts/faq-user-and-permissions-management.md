@@ -8,15 +8,15 @@ ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/11/2020
+ms.date: 07/24/2020
 monikerRange: '>= tfs-2013'
 ---
 
 # User and permissions management FAQs
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
-In this article, learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. FAQs are grouped by the following subjects:
+Learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. FAQs are grouped by the following subjects:
 - [General permissions](#general-permissions)
 - [Visual Studio subscriptions](#visual-studio-subscriptions)
 - [User access](#user-access)
@@ -35,7 +35,7 @@ A: You can [recover your Microsoft account password](https://account.live.com/Re
 
 ### Q: Why can't I manage users?
 
-A: You must be a Project Collection Administrator or [organization Owner](../security/lookup-organization-owner-admin.md) to manage users at the organization level. To get added, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions)
+A: You must be a Project Collection Administrator or [organization Owner](../security/lookup-organization-owner-admin.md) to manage users at the organization level. To get added, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md)
 
 <a name="find-owner"></a>
 
@@ -43,27 +43,27 @@ A: You must be a Project Collection Administrator or [organization Owner](../sec
 
 If you have at least Basic access, you can find the current owner in your organization settings.
 
-1.    Go to your **Organization settings**.
+1. Go to your **Organization settings**.
 
-    ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)    
+   ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)
 
-2.    Find the current owner.
+2. Find the current owner.
 
-    ![Find the current owner in organization information](/azure/devops/media/find-organization-owner.png)
+   ![Find the current owner in organization information](/azure/devops/media/find-organization-owner.png)
 
 ### Q: How do I find a Project Collection Administrator?
 
-A: If you have at least Basic access, you can find your [Project Collection Administrator](/azure/devops/organizations/security/set-project-collection-level-permissions) in your organization's security settings.
+A: If you have at least Basic access, you can find your [Project Collection Administrator](../security/set-project-collection-level-permissions.md) in your organization's security settings.
 
 ::: moniker range=">= azure-devops-2019"
 
-See [Show members of the Project Collection Administrators group](/azure/devops/organizations/security/lookup-organization-owner-admin#show-members-of-the-project-collection-administrators-group).
+For more information, see [Show members of the Project Collection Administrators group](../security/lookup-organization-owner-admin.md#show-members-of-the-project-collection-administrators-group).
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"  
 
-See [Show members of the Project Administrators group](/azure/devops/organizations/security/lookup-organization-owner-admin#show-members-of-the-project-administrators-group).
+For more information, see [Show members of the Project Administrators group](../security/lookup-organization-owner-admin.md#show-members-of-the-project-administrators-group).
 
 ::: moniker-end
 
@@ -105,31 +105,6 @@ A: Azure DevOps recognizes Visual Studio subscribers. Users automatically have a
 
 A: If no other access levels are available, users can [work as Stakeholders](../../organizations/security/get-started-stakeholder.md). To restore access, a user must renew their subscription.
 
-<a name="extension-transition"></a>
-
-### Q: What happened to Visual Studio Online Professional?
-
-A: In 2016, we replaced Visual Studio Online Professional with the [Visual Studio Professional monthly subscription](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly). Customers who had been purchasing Visual Studio Online Professional continued purchasing it after that point, but it wasn't available to new customers. On September 30, 2019, we'll officially retire Visual Studio Online Professional. As a courtesy, billing for it stopped after August 1, 2019.
-
-When Visual Studio Online Professional retires, any users still assigned to it get assigned to the best [Azure DevOps access level](https://azure.microsoft.com/email/?destination=%2Fen-us%2Fpricing%2Fdetails%2Fdevops%2Fazure-devops-services%2F&m=00000000-0000-0000-0000-000000000000&u=aeo-preview&l=azure-devops-services) available to your organization. As a result, your Professional users' access may be downgraded to Basic or Stakeholder. To avoid being downgraded, buy a Visual Studio Professional monthly subscription and assign your Professional users to it. The monthly subscription has the same monthly cost as Visual Studio Online Professional.
-
-Follow these instructions to identify if you have Professional users, buy a monthly subscription, and assign them to it by September 30, 2019:
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
-
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
-
-3. Select **Users** and filter by access level to show only Professional users.
-
-   ![Sort by Access Level - Professional](media/shared/sort-by-professional-access-level.png)
-
-4. Buy a [Visual Studio Professional monthly subscription](https://azure.microsoft.com/email/?destination=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Dms.vs-professional-monthly&m=00000000-0000-0000-0000-000000000000&u=aeo-preview&l=items_2).
-5. Assign your Professional users to the subscription in the [Visual Studio subscriptions administration portal](https://azure.microsoft.com/email/?destination=https%3A%2F%2Fmanage.visualstudio.com%2FSubscribers&m=00000000-0000-0000-0000-000000000000&u=aeo-preview&l=Subscribers).
-
-If you don't complete these steps by September 30, 2019, and your users get downgraded to Basic or Stakeholder access, you may restore their Professional access at any time by following the previous instructions.
-
 <a name="user-access"></a>
 
 ## User access
@@ -150,9 +125,9 @@ A: No, a user can join only the organization for which the user has paid for Bas
 
 A: Make sure that users have the correct [access level](https://visualstudio.microsoft.com/team-services/compare-features/) assigned to them.  
 
-* Learn [how to manage users and access levels for Azure DevOps](/azure/devops/organizations/accounts/add-organization-users).
+* Learn [how to manage users and access levels for Azure DevOps](./add-organization-users.md).
 
-* Learn [how to change access levels for Team Foundation Server](/azure/devops/organizations/security/change-access-levels).
+* Learn [how to change access levels for Team Foundation Server](../security/change-access-levels.md).
 
 Some features are available only as [extensions](https://visualstudio.microsoft.com/team-services/compare-features/). You need to install these extensions. Most extensions require you to have at least Basic access, not Stakeholder access. Check the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
@@ -162,9 +137,9 @@ To help your team improve app quality, you can install the free [Test & Feedback
 
 Some [Visual Studio subscribers](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) can use this feature for free, but Basic users need to upgrade to Basic + Test Plans access before they can create test plans.
 
-* Learn [how to get extensions for Azure DevOps](/azure/devops/marketplace/install-extension).
-* Learn [how to get extensions for TFS](/azure/devops/marketplace/get-tfs-extensions).
-* Learn [how to buy access to TFS Test](/azure/devops/organizations/billing/buy-access-tfs-test-hub).
+* Learn [how to get extensions for Azure DevOps](../../marketplace/install-extension.md).
+* Learn [how to get extensions for TFS](../../marketplace/get-tfs-extensions.md).
+* Learn [how to buy access to TFS Test](../billing/buy-access-tfs-test-hub.md).
 
 <a name="stopped-features"></a>
 
@@ -172,15 +147,15 @@ Some [Visual Studio subscribers](https://marketplace.visualstudio.com/items?item
 
 A: A user can lose access for the following reasons (although the user can continue to [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md)):
 
-*    The user's Visual Studio subscription has expired. Meanwhile, the user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
+*   The user's Visual Studio subscription has expired. Meanwhile, the user can [work as a Stakeholder](../../organizations/security/get-started-stakeholder.md), or you can give the user Basic access until the user renews their subscription. After the user signs in, Azure DevOps restores access automatically.
 
-*    The Azure subscription used for billing is no longer active. All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
+*   The Azure subscription used for billing is no longer active. All purchases made with this subscription are affected, including Visual Studio subscriptions. To fix this issue, visit the [Azure account portal](https://portal.azure.com).
 
-*    The Azure subscription used for billing was removed from your organization. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md).
+*   The Azure subscription used for billing was removed from your organization. Learn more about [linking your organization](../billing/set-up-billing-for-your-organization-vs.md).
 
-*    Your organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../../billing/buy-basic-access-add-users.md). 
+*   Your organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../billing/buy-basic-access-add-users.md). 
 
-    Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](delete-organization-users.md).
+   Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](delete-organization-users.md).
 
 <a name="change-app-access-policies"></a>
 
@@ -215,7 +190,7 @@ A: To remove yourself from an organization, do the following steps:
 
 3. Confirm that you want to **Leave** the organization.
 
-    ![confirm-removal-from-organization.png](media/faq/confirm-removal-from-organization.png)
+    ![Screenshot showing confirmation for leaving the organization.](media/faq/confirm-removal-from-organization.png)
 
 <a name="group-based-licensing"></a>
 
@@ -301,7 +276,7 @@ First, check to see if you're an Azure AD guest:
 If you're an Azure AD guest, do one of the following steps:
 
 * Have another Azure DevOps admin, who isn't an Azure AD guest, manage the users in Azure DevOps for you. Members of the Project Collection Administrators group inside Azure DevOps can administer users.
-* Have the Azure AD admin remove you from the connected Azure AD and readd you. The admin needs to make you an Azure AD member rather than a guest. See [Can Azure AD B2B users be added as members instead of guests?](https://docs.microsoft.com/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
+* Have the Azure AD admin remove you from the connected Azure AD and readd you. The admin needs to make you an Azure AD member rather than a guest. See [Can Azure AD B2B users be added as members instead of guests?](/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
 * Change the **User Type** of the Azure AD guest by using Azure AD PowerShell. We don't advise using the following process, but it works and allows the user to query Azure AD from Azure DevOps  thereafter.
 
 1. [Download and install Azure AD PowerShell module](/powershell/module/azuread/?view=azureadps-2.0).
@@ -357,5 +332,3 @@ A: If you experience delays finding new users or having deleted users promptly r
 - [Access with Azure AD FAQs](faq-azure-access.md)
 - [Configure and customize organization FAQs](faq-configure-customize-organization.md)
 - [Set up Visual Studio FAQs](faq-set-up-vs.md)
-
-

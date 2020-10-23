@@ -8,7 +8,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 ms.topic: article
 ms.author: chcomley
 author: chcomley
-ms.date: 08/17/2016
+
 ---
 
 # Feed Polling

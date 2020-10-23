@@ -3,11 +3,12 @@ title: Change reporting attributes
 titleSuffix: TFS
 description: Customize which fields appear in the relational warehouse or cube to support reporting for Team Foundation Server 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 8b963584-88fd-423a-8f88-61cadf9e1373
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 02/10/2017
 ---
 
@@ -237,4 +238,4 @@ witadmin listfields /collection:CollectionURL /n:RefName
 -  [Modify a field or add a custom field](../add-modify-field.md)   
 -  [Index of work item fields](../../boards/work-items/guidance/work-item-field.md) 
 -  [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md)    
--  [Dashboards and reports](../../report/overview.md)
+-  [Dashboards and reports](../../report/dashboards/overview.md)

@@ -12,11 +12,11 @@ ms.date: 06/08/2020
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Private-to-public migration checklist
+# Private-to-public migration checklist
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this quickstart, you learn about the private-to-public migration checklist, which helps you to consider what data may be exposed to non-members, before you change the visibility of your private project to public. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build pipelines might have content you don't want to share publicly.
+In this article, you learn about the private-to-public migration checklist, which helps you to consider what data may be exposed to non-members, before you change the visibility of your private project to public. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build pipelines might have content you don't want to share publicly.
 
 The checklist provided in this article indicates those items you may want to review before making a project public. It also provides tips for migrating work items or files to a new project so that you can expose only current and future content.
 
@@ -83,7 +83,7 @@ Because work-items maintain their history when migrated from a private to public
 * Confirm that none of your pipelines expose sensitive data: credentials/secrets, obscure URLs, and private environment names.
 * Confirm that non-members don't require access to your private feeds. Builds can still access feeds, but non-members cannot.
 
-If you need to migrate build pipelines to a new project (perhaps because you're moving code or work items), you can import and export them using [YAML](../../pipelines/get-started-yaml.md).
+If you need to migrate build pipelines to a new project (perhaps because you're moving code or work items), you can import and export them using [YAML](../../pipelines/create-first-pipeline.md).
 
 ## Test
 
@@ -148,4 +148,3 @@ The new repository should be created in a project you don't mind making public.
 
 > [!div class="nextstepaction"]
 > - [Manage Azure Secrets on GitHub Repositories](https://azure.microsoft.com/blog/managing-azure-secrets-on-github-repositories/)
- 

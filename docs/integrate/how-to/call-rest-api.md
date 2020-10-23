@@ -13,6 +13,8 @@ ms.date: 08/04/2016
 
 # Get started with the REST APIs
 
+[!INCLUDE [version-all](../../includes/version-all.md)]
+
 Integrate your app with Azure DevOps Services and Team Foundation Server (TFS) using these REST APIs.
 
 These APIs follow a common pattern: 
@@ -44,7 +46,7 @@ If you wish to provide the personal access token through an HTTP header, you mus
 Authorization: Basic BASE64PATSTRING
 ``` 
 <br />
-Here it is in C# using the <a href="https://msdn.microsoft.com/library/system.net.http.httpclient.aspx" data-raw-source="[HttpClient class](https://msdn.microsoft.com/library/system.net.http.httpclient.aspx)">HttpClient class</a>.
+Here it is in C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
 
 ```cs
 public static async void GetProjects()
@@ -86,16 +88,23 @@ Most samples on this site use Personal Access Tokens as they're a compact exampl
 
 ## TFS
 
-For TFS, `instance` is `{server:port}` and by default the port is 8080.
-The default collection is `DefaultCollection`, but can be any collection.
+For TFS, `instance` is `{server:port}`. The default port for a non-SSL connection is 8080.
 
-Here's how to get a list of projects from TFS using the default port and collection.
+The default collection is `DefaultCollection`, but you can use any collection.
+
+Here's how to get a list of projects from TFS using the default port and collection across SSL:
 
 ```dos
-curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
+curl -u {username}[:{personalaccesstoken}] https://{server}/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
-The examples above use personal access tokens, which requires that you [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+To get the same list across a non-SSL connection:
+
+```dos
+curl -u {username}[:{personalaccesstoken}] http://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
+```
+
+These examples use personal access tokens, which requires that you [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 
 ## Responses

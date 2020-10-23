@@ -4,22 +4,22 @@ titleSuffix: Azure DevOps
 description: Use a Personal Access Token (PAT) with Azure DevOps CLI 
 ms.topic: reference 
 ms.prod: devops 
-ms.technology: devops-ref
+ms.technology: devops-reference
 ms.manager: mijacobs 
-ms.author: geverghe
+ms.author: kaelli  
 author: KathrynEE
-monikerRange: 'azure-devops'
-ms.date: 06/18/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 08/17/2020
 ---
 
 # Sign in with a Personal Access Token (PAT)
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-cloud-plus-2020.md)] 
 
 
-You can sign in using an Azure DevOps Personal Access Token. See the [create personal access token guide](https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=vsts#create-personal-access-tokens-to-authenticate-access) to create one.
+You can sign in using an Azure DevOps Personal Access Token. See the [create personal access token guide](../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-a-pat) to create one.
 
-You will be prompted to enter PAT after you run the `az devops login` command.
+You are prompted to enter a PAT after you run the `az devops login` command.
 
 
 ```bash

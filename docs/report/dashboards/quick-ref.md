@@ -1,4 +1,4 @@
-﻿---
+---
 title: Quick reference to dashboards, charts, & widgets 
 titleSuffix: Azure DevOps  
 description: Index to dashboard, charts&, and widgets tasks for Azure Boards, Azure DevOps, & Team Foundation Server 
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2015'
-ms.date: 10/23/2019
+ms.date: 07/14/2020
 ---
 
 # Dashboards, reports, & widgets quick reference 
@@ -22,7 +22,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 
 ## Tasks
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 <table valign="top">
 <tbody valign="top">
@@ -217,7 +217,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 
 ## In-context reports
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 In context reports appear on the **Analytics** tab of these specific service pages: **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**, and **Pipelines>Builds**. 
 
@@ -229,8 +229,6 @@ In context reports appear on the **Analytics** tab of these specific service pag
 In-context reports appear on specific service pages, such as **Boards>Boards**, **Boards>Backlogs**, **Boards>Sprints**,and **Pipelines>Builds>Analytics**. These reports derive data from the Analytics service. 
 
 ::: moniker-end
-
-<br/>
 
 ::: moniker range=">= azure-devops-2019"
 

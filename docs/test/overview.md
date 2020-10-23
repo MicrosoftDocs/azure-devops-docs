@@ -52,19 +52,41 @@ hub for all their test management needs.
 
 Learn how to create tests plans and test cases, and run them using the Azure DevOps web portal. Use the Test &amp; Feedback extension to explore and find bugs in your apps. 
 
-| | | |
-| --- | --- | --- |
-| ![icon](media/testplan-icon.png)<br />[Create a test plan](create-a-test-plan.md) | ![icon](media/testcases-icon.png)<br />[Create test cases](create-test-cases.md) | ![icon](media/runtests2-icon.png)<br />[Run manual tests](run-manual-tests.md) |
-| ![icon](media/marketplace-icon.png)<br />[Install the extension](perform-exploratory-tests.md) | ![icon](media/connectedmode-icon.png)<br />[Test in Connected mode](connected-mode-exploratory-testing.md) | ![icon](media/standalonemode-icon.png)<br />[Test in Standalone mode](standalone-mode-exploratory-testing.md) |
-| | | |
+:::row:::
+    :::column:::
+        :::image type="icon" source="media/testplan-icon.png" border="false":::  
+        [Create a test plan](create-a-test-plan.md)  
+
+        :::image type="icon" source="media/marketplace-icon.png" border="false":::  
+        [Install the extension](perform-exploratory-tests.md)  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="media/testcases-icon.png" border="false":::  
+        [Create test cases](create-test-cases.md)  
+
+        :::image type="icon" source="media/connectedmode-icon.png" border="false":::  
+        [Test in Connected mode](connected-mode-exploratory-testing.md)  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="media/runtests2-icon.png" border="false":::  
+        [Run manual tests](run-manual-tests.md)  
+
+        :::image type="icon" source="media/standalonemode-icon.png" border="false":::  
+        [Test in Standalone mode](standalone-mode-exploratory-testing.md)  
+    :::column-end:::
+:::row-end:::
 
 ## Videos
 
-| | |
-| --- | --- |
-| <iframe width="560" height="315" src="https://www.youtube.com/embed/u-fdqhxonPc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="560" height="315" allowFullScreen="true" frameBorder="0"></iframe> |
-| <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe> | |
-| | |
+:::row:::
+    :::column:::
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u-fdqhxonPc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
+        <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe>  
+    :::column-end:::
+    :::column:::
+        <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="560" height="315" allowFullScreen="true" frameBorder="0"></iframe>  
+    :::column-end:::
+:::row-end:::
 
 ## Manual testing from the Kanban board
 
@@ -222,6 +244,6 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 * [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)
 * [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
 
-> See also [Continuous testing](../pipelines/index.yml), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+> See also [Continuous testing](../pipelines/index.yml), [Unit testing](/visualstudio/test/developer-testing-scenarios).
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

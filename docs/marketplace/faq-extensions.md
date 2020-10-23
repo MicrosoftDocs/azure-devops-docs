@@ -5,14 +5,14 @@ ms.technology: devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7
 ms.author: chcomley
 author: chcomley
-ms.date: 11/25/2019
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2015'
 ms.topic: conceptual
 ---
 
 # FAQs - getting extensions for Azure DevOps
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
 
 In this article, find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-marketplace).
 
@@ -46,16 +46,18 @@ If you have at least Basic access, you can find the current owner in your organi
 A: You can't install extensions for one of the following reasons.
 
 <a name="no-permissions"></a>
-*    You must have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md).
+
+* You must have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md).
 If you don't have permissions, but you're an organization member, you can [request extensions](request-extensions.md) instead.
 
 <a name="no-assignment"></a>
-*    If you get an "already installed or requested" error check with your Project Collection Administrator
+
+* If you get an "already installed or requested" error check with your Project Collection Administrator
 or organization Owner, and ask them to assign the extension to you.
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 <!-- BEGINSECTION class="m-qanda" -->
 
@@ -63,7 +65,7 @@ or organization Owner, and ask them to assign the extension to you.
 
 ### Q: How do I get other help or support for Azure subscriptions and billing?
 
-A: Check these [articles about Azure billing and subscriptions](https://azure.microsoft.com/documentation/articles/?tag=billing),
+A: Check these [articles about Azure billing and subscriptions](/azure/?tag=billing),
 the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/documentation/articles/billing-subscription-faq/),
 or try [Azure Support](https://azure.microsoft.com/support/options/).
 
@@ -80,7 +82,7 @@ or try [Azure Support](https://azure.microsoft.com/support/options/).
 A: You can't install extensions for TFS for one of the following reasons:
 
 * You must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md)
-with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./how-to/request-tfs-extensions.md) instead.
+with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
 
 * If you get an error that your extension is already installed or requested, check with your Project Collection Administrator and ask them to assign the extension to you.
 
@@ -103,15 +105,7 @@ to sign in to the Marketplace.
    with the identity that's a user in the project collection
    where you want to install the extension.
 
-   > If you're asked to choose "work or school organization" or
-   > "personal account", this means you used an email address
-   > that's the same for a Microsoft account and a "work or school account"
-   > that's managed by your organization in Azure Active Directory.
-   > Although these identities have the same email address,
-   > they're still separate identities with different profiles,
-   > security settings, and permissions.
-   >
-   > Choose the identity that's the user in your project collection.
+   If you're asked to choose "work or school organization" or "personal account", this means you used an email address that's the same for a Microsoft account and a "work or school account" that's managed by your organization in Azure Active Directory. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions. Choose the identity that's the user in your project collection.
 
 6. From your project collection, go to the Marketplace.
 

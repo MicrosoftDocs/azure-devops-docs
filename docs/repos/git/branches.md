@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Create, use, and delete Git Branches in Visual Studio and from the command line
 ms.assetid: 4b18a164-d1cb-4f87-89cb-8dc227e64af1
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
@@ -13,7 +11,7 @@ monikerRange: '>= tfs-2013'
 
 # Create work in branches  
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Git branches aren't much more than a small reference that keeps an exact history of commits, so they are cheap to create.
 [Committing](commits.md) changes to a branch will not affect other branches, and you can share branches with others without having to merge the changes into the main project.

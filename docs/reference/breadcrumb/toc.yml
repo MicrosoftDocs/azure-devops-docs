@@ -2,13 +2,13 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Configure & customize
-    tocHref: /azure/devops/organizations/
-    topicHref: /azure/devops/organizations/index
+  - name: Boards settings
+    tocHref: /azure/devops/reference/
+    topicHref: /azure/devops/reference/index
     items: 
     - name: On-premises XML
       tocHref: /azure/devops/reference/
-      topicHref: /azure/devops/reference/on-premises-xml-process-model
+      topicHref: /azure/devops/reference/index
     - name: On-premises XML
       tocHref: /azure/devops/reference/xml
       topicHref: /azure/devops/reference/index

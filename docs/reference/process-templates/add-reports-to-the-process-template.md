@@ -7,7 +7,7 @@ ms.assetid: f7efa9a7-5de0-4bf2-9a9d-c53234b0513b
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= azure-devops-2019' 
+monikerRange: '< azure-devops' 
 ms.date: 04/10/2018
 ---
 

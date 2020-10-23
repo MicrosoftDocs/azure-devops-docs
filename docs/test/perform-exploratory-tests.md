@@ -42,7 +42,7 @@ quality of your product.
 
      ![Install extension on Chrome](media/perform-exploratory-tests/getstarted-02.png)
 
-     ![Install extension on Chrome](media/perform-exploratory-tests/getstarted-03.png)
+     ![Follow instructions to install the extension on Chrome.](media/perform-exploratory-tests/getstarted-03.png)
 
    - If you are using Mozilla Firefox 50.0 and higher, choose the **Download** link
      and save the file to a local folder on your computer. 
@@ -51,13 +51,13 @@ quality of your product.
 
      Select and drag the downloaded file and drop it on any tab in Firefox.
 
-     ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-08.png)
+     ![Drag and drop the file on any tab in Firefox.](media/perform-exploratory-tests/getstarted-08.png)
 
      Choose **Install**.
 
-     ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-09.png)
+     ![Choose Install.](media/perform-exploratory-tests/getstarted-09.png)
 
-     ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-10.png)
+     ![Choose Install to install the extension on Firefox.](media/perform-exploratory-tests/getstarted-10.png)
 
 >You need to install the extension or add-on only once. Afterwards your browser will
 update it automatically.

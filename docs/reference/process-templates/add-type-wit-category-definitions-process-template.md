@@ -6,6 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 93f146df-8424-4183-89f7-298943eb8c0f
 ms.author: kaelli
 ms.topic: reference
+monikerRange: '< azure-devops' 
 ms.date: 09/08/2017
 ---
 
