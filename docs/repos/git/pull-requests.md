@@ -344,7 +344,7 @@ Starting with Visual Studio 2017 Update 6, you can check out the source branch f
 Select **Files** to view the changes made to the source branch next to the target branch of the pull request.
 
 >[!NOTE]
->The size limit for files in the files view and the diff view is 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool.
+>When viewing the difference for a _single selected file_, there is a size limit of 5 MB for the file. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool. When viewing the difference for a _collection of files_ in the Files view, the size limit is much smaller than 5 MB for performance reasons.
 
 ![Pull request files](media/pull-requests/pull-request-files.png)
 
