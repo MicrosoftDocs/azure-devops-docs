@@ -4,7 +4,7 @@ description:  Build and test JavaScript and Node.js apps with Azure Pipelines
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: conceptual
-ms.custom: seodec18, seo-javascript-september2019, contperfq4
+ms.custom: seodec18, seo-javascript-september2019, contperfq4, devx-track-js
 ms.date: 08/19/2020
 monikerRange: '>= tfs-2017'
 ---
