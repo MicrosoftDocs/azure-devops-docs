@@ -48,7 +48,7 @@ New to pull requests? Learn more about how to [get feedback with Git pull reques
 
 Manage pull requests you own or are assigned to with the **Pull Requests** tab in the **Code** page on the web.
 
-![Viewing completed and abandoned pull requests in Azure Repos](media/repos-navigation/repos-code-pull-requests.png)
+![Viewing completed and abandoned pull requests in Azure Repos 1](media/repos-navigation/repos-code-pull-requests.png)
 
 ::: moniker-end 
 
@@ -58,7 +58,7 @@ Select **Active** to show all active pull requests for the current repo.
 
 Select **Completed** or **Abandoned** to bring up a history of closed pull requests.
 
-![Viewing completed and abandoned pull requests in Azure Repos](media/pull-requests/pr_status_widget.png)
+![Viewing completed and abandoned pull requests in Azure Repos 2](media/pull-requests/pr_status_widget.png)
 
 You can view all of your pull requests in your organization, across all projects, by choosing **My pull requests** from the **Projects** page.
 
