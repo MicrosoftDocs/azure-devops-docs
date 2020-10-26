@@ -63,3 +63,5 @@ The project-level view will show you your total storage summary as well as your 
 
     > [!div class="mx-imgBorder"]
     > ![Project level storage](media/project-level-storage.png)
+
+Your total storage summary will show you your total billable stored Artifacts. The storage by type section will list your storage consumption by Artifact type. For the current release, you can view your storage breakdown for **Packages** section only. The other sections will be added in future releases.
