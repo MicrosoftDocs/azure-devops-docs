@@ -65,3 +65,10 @@ The project-level view will show you your total storage summary as well as your 
     > ![Project level storage](media/project-level-storage.png)
 
 Your total storage summary will show you your total billable stored Artifacts. The storage by type section will list your storage consumption by Artifact type. For the current release, you can view your storage breakdown for **Packages** section only. The other sections will be added in future releases.
+
+## What's next?
+
+- [What are feeds](concepts/feeds.md)
+- [What are feed views](concepts/views.md)
+- [Get started with NuGet packages](/get-started-nuget.md)
+- [Publish to NuGet feeds (YAML/Classic)](../pipelines/artifacts/nuget.md)
