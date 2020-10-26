@@ -1,7 +1,7 @@
 ---
 title: Publishing npm packages using the Pipeline tasks or the Classic user interface 
 titleSuffix: Azure Pipelines and TFS
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-js
 description: Publishing npm packages to Azure Artifacts or other npm registries
 services: vsts
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
