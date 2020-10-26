@@ -58,3 +58,8 @@ The project-level view will show you your total storage summary as well as your 
 
     > [!div class="mx-imgBorder"]
     > ![Artifact storage navigation project-level](media/artifacts-storage-navigation-project-level.png)
+
+1. View your total storage summary and your storage by Artifact type.
+
+    > [!div class="mx-imgBorder"]
+    > ![Project level storage](media/project-level-storage.png)
