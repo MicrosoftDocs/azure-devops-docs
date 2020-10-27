@@ -28,11 +28,15 @@ Configure the days that your team works. Your team's working days aid in capacit
 
 ::: moniker range="azure-devops"
 
-1. In Azure Boards, select **Capacity** > :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon > **Working days**.
+1. In **Azure Boards**, select the **Sprints** tab.
+
+   :::image type="content" source="media/configure-team/azure-boards-sprints-tab-selection.png" alt-text="Screenshot of selection of Azure Boards, and then the Sprints tab, with red boxes.":::
+
+2. Select **Capacity** > :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon > **Working days**.
 
    ![Capacity page, Settings, Working days](media/capacity-planning-open-team-settings-new-nav.png)
 
-2. Select the checkbox next to the appropriate working days, and then select **Save and close**.
+3. Select the checkbox next to the appropriate working days, and then select **Save and close**.
 
 Working days are updated.
 
