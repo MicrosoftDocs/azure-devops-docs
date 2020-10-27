@@ -6,7 +6,7 @@ ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/18/2018
+ms.date: 10/15/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -57,6 +57,8 @@ We recommend this simple approach if:
 
    * If you're using the classic editor, select data you need. For example, the App service name.
    * If you're using YAML, then go to the resource in the Azure portal, and then copy the data into your code. For example, to deploy a web app, you would copy the name of the App Service into the `WebAppName` value.
+
+> To refresh a service connection, edit the connection and select **Verify**. Once you save, the service connection will be valid for two years.  
 
 See also: [Troubleshoot Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
 
