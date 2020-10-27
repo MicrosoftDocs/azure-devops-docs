@@ -79,7 +79,7 @@ For more guidelines on Test Plans usage, refer [here](/archive/blogs/visualstudi
 <a name="testsuitestree"></a>
 ## Test suites tree
 
-:::image type="content" source="test suites tree page" alt-text="media/new-test-plans-page/test-suites-tree.png":::
+:::image type="content" source="media/new-test-plans-page/test-suites-tree.png" alt-text="test suites tree page":::
 
 **Tasks** 
 
