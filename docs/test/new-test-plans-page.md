@@ -72,7 +72,7 @@ The context menu on the Test Plan header provides the following options:
 
 ![copy test plan page](media/new-test-plans-page/copy-test-plan-dialog.png)
 
-We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging 'Copy test plan' capability, you can copy or clone test plans within the project. Its backing REST API is covered [here](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). The API lets you copy/clone a test plan across projects too.<br>
+We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging 'Copy test plan' capability, you can copy or clone test plans within the project. Its backing REST API is covered [here](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1&preserve-view=true). The API lets you copy/clone a test plan across projects too.<br>
 For more guidelines on Test Plans usage, refer [here](/archive/blogs/visualstudioalmrangers/test-planning-and-management-guide-updated).
 
 
@@ -210,7 +210,7 @@ The context menu on the Test point node within the Execute tab provides the foll
 - *Assign tester*: This option allows you to assign the test points to testers for test execution.
 - *View test result*: This option allows you to view the latest test outcome details including the outcome of each test step, comments added or bugs filed. 
 - *View execution history*: This option allows you to view the execution history for the test case in a side panel. You can move across the test points or open the detailed execution history from the panel - refer below image
-![execute tab context menu page](media/new-test-plans-page/execute-tab-execution-history.png)
+![execute tab execution history](media/new-test-plans-page/execute-tab-execution-history.png)
 
 
 <a name="feedback"></a>
