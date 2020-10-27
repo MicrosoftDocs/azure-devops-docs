@@ -70,5 +70,5 @@ Your total storage summary will show you your total billable stored Artifacts. T
 
 - [What are feeds](concepts/feeds.md)
 - [What are feed views](concepts/views.md)
-- [Get started with NuGet packages](/get-started-nuget.md)
+- [Get started with NuGet packages](get-started-nuget.md)
 - [Publish to NuGet feeds (YAML/Classic)](../pipelines/artifacts/nuget.md)
