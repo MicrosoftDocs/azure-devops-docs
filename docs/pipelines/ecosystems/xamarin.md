@@ -120,7 +120,7 @@ steps:
 
 To generate a signed and provisioned Xamarin.iOS app .ipa package, set `packageApp` to `true` and make sure prior to this task you installed the right Apple Provisioning Profile and Apple Certificates that match your App Bundle ID into the agent running the job.
 
-To fulfill these mandatory requisites use the Microsoft Provided tasks for [installing an Apple Provisioning Profile](../tasks/utility/install-apple-provisioning-profile.md) and [installing Apple Certificates](../tasks/utility/install-apple-certificate.md).
+To fulfill these mandatory requisites, use the Microsoft Provided tasks for [installing an Apple Provisioning Profile](../tasks/utility/install-apple-provisioning-profile.md) and [installing Apple Certificates](../tasks/utility/install-apple-certificate.md).
 
 ```yaml
 - task: XamariniOS@2
@@ -135,7 +135,7 @@ To fulfill these mandatory requisites use the Microsoft Provided tasks for [inst
 For Microsoft Hosted agents the .ipa package is by default located under path:  
 `{iOS.csproj root}/bin/{Configuration}/{iPhone/iPhoneSimulator}/`
 
-You can configure the output path by adding an argument to the Xamarin.iOS task as following:
+You can configure the output path by adding an argument to the Xamarin.iOS task:
 
 # [YAML](#tab/yaml)
 ```yaml
@@ -149,7 +149,8 @@ You can configure the output path by adding an argument to the Xamarin.iOS task 
 
 This example locates the .ipa in the Build Artifact Staging Directory ready to be pushed into Azure DevOps as an artifact to each build run.To push it into Azure DevOps simply add a [Publish Artifact task](../tasks/utility/publish-build-artifacts.md) to the end of your pipeline.
 
-See [Sign your mobile iOS app during CI](../apps/mobile/app-signing.md?tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app) for more information about signing and provisioning your iOS app.
+For more information about signing and provisioning your iOS app, 
+see [Sign your mobile iOS app during CI](../apps/mobile/app-signing.md?tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app).
 
 ### Set the Xamarin SDK version on macOS
 
