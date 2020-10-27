@@ -5,27 +5,58 @@ ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 03/27/2018
+ms.date: 10/27/2020
 monikerRange: 'azure-devops'
 ---
 
-# Build Xamarin apps
+# Quickstart: Build Xamarin apps
 
 **Azure Pipelines**
 
 This guidance explains how to automatically build Xamarin apps for Android and iOS.
 
-## Example
+## Prerequisites
 
-For a working example of how to build a Xamarin app, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+Before you begin, you need:
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
+- An example Xamarin app or to import the [Azure Pipelines Xamarin example repository](https://github.com/MicrosoftDocs/pipelines-xamarin). 
+
+
+### Get code
+
+[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-xamarin
 ```
 
-The sample code includes an `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
+## Sign in to Azure Pipelines
 
-Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a build pipeline for the sample app.
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
+
+[!INCLUDE [include](includes/create-project.md)]
+
+### Create the pipeline
+
+[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
+
+> When the **Configure** tab appears, select **Xamarin.Android** to build an Android project or **Xamarin.iOS** to build an iOS project.
+
+1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+
+2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+
+   If you want to watch your pipeline in action, select the build job.
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+4. See the sections below to learn some of the more common ways to customize your pipeline.
+
 
 ## Build environment
 
