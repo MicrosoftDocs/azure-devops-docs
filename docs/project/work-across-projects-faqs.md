@@ -110,7 +110,7 @@ How do I switch to another project?
 
 ### Q: Can I link work items across organizations? 
 
-**A:** Yes. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](/azure/devops/boards/backlogs/add-link?view=azure-devops&preserve-view=true#link-to-a-remote-work-item).
+**A:** Yes. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../boards/backlogs/add-link.md#link-to-a-remote-work-item).
 
 ::: moniker-end
 
@@ -187,7 +187,7 @@ How do I switch to another project?
 
 1. Get all projects using [Projects-List](/rest/api/azure/devops/core/projects/list).
 1. Get all repositories of each project using [Repositories - List](/rest/api/azure/devops/git/repositories/list).
-1. Get all pull requests of each repository using [Pull Requests - Get Pull Requests](/azure/devops/git/pull%20requests/get%20pull%20requests#pullrequeststatus). 
+1. Get all pull requests of each repository using [Pull Requests - Get Pull Requests](/rest/api/azure/devops/git/pull%20requests/get%20pull%20requests#pullrequeststatus). 
  
 
 
@@ -212,4 +212,3 @@ Is there any way to achieve this with Azure DevOps or better approach would be t
 
 
 -->
-

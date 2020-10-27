@@ -526,10 +526,7 @@ A: See the [https://github.com/Microsoft/vsts-restapi-samplecode](https://github
 
 #### Q: Where can I find more information on the .NET libraries?
 
-A: Yes, see the [overview of client libraries](../../get-started/client-libraries/dotnet.md)
+A: Yes, see the [overview of client libraries](../../concepts/dotnet-client-libraries.md)
 
 
-<!-- ENDSECTION --> 
-
-
-
+<!-- ENDSECTION -->

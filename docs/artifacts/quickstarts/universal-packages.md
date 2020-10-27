@@ -10,13 +10,13 @@ monikerRange: 'azure-devops'
 
 # Publish and then download a Universal Package
 
-Universal Packages store one or more files together in a single unit that has a name and version. You can publish Universal Packages from the command line by using the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest). 
+Universal Packages store one or more files together in a single unit that has a name and version. You can publish Universal Packages from the command line by using the [Azure CLI](/cli/azure/?preserve-view=true&view=azure-cli-latest). 
 
 This quickstart shows you how to publish your first Universal Package by using the CLI, and how to download it by using the CLI. To see your package, you can go to your feed in Azure Artifacts.
 
 ## Prerequisites
 
-1. Download and install the latest [build](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) of the Azure CLI.
+1. Download and install the latest [build](/cli/azure/?preserve-view=true&view=azure-cli-latest) of the Azure CLI.
 2. If you're using Linux, ensure you've installed the [.NET Core Linux prerequisites](/dotnet/core/linux-prerequisites).
 3. Version 0.14.0 or greater of the Azure DevOps extension for the Azure CLI is required. 
 
@@ -80,7 +80,7 @@ With your feed selected, select the gear icon ![gear icon](../../media/icons/gea
 
 ## Log in to Azure DevOps
 
-The following sections vary based on whether you've opted in to the new [Azure DevOps Services URLs](/azure/devops/extend/develop/work-with-urls).
+The following sections vary based on whether you've opted in to the new [Azure DevOps Services URLs](../../extend/develop/work-with-urls.md).
 
 # [New URLs](#tab/azuredevops)
 

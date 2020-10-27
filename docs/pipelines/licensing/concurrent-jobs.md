@@ -58,7 +58,7 @@ We provide a *free tier* of service by default in every organization for both ho
 Parallel jobs are purchased at the organization level, and they are shared by all projects in an organization. 
 
 
-# [Microsoft-hosted costs](#tab/ms-hosted-costs)
+# [Microsoft-hosted](#tab/ms-hosted)
 
 For Microsoft-hosted parallel jobs, you get 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for public projects. For private projects, you get one free job that can run for up to 60 minutes each time. There is no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects. 
 
@@ -80,7 +80,7 @@ When you purchase your first Microsoft-hosted parallel job, the number of parall
 > [Specify jobs in your pipeline](../process/phases.md).
 
 
-# [Self-hosted costs](#tab/self-hosted-costs)
+# [Self-hosted](#tab/self-hosted)
 
 
 For self-hosted parallel jobs, you can register any number of [self-hosted agents](../agents/agents.md) in your organization. We charge based on the number of jobs you want to run at a time, not the number of agents registered. There are no time limits on self-hosted jobs.
@@ -178,9 +178,9 @@ Buy more parallel jobs within your organization settings:
 4. Enter a lesser or greater quantity of Microsoft-hosted or self-hosted jobs, and then select **Save**.
 
   > [!IMPORTANT]
-  > Hosted XAML build controller isn't supported. If you have an organization where you need to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx),
-  > set up an [on-premises build server](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx)
-  > and switch to an [on-premises build controller](https://msdn.microsoft.com/library/ee330987%28v=vs.120%29.aspx). For more information about the hosted XAML model, see [Get started with XAML](../../pipelines/get-started-yaml.md).
+  > Hosted XAML build controller isn't supported. If you have an organization where you need to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)),
+  > set up an [on-premises build server](/previous-versions/visualstudio/visual-studio-2013/ms252495(v=vs.120))
+  > and switch to an [on-premises build controller](/previous-versions/visualstudio/visual-studio-2013/ee330987(v=vs.120)). For more information about the hosted XAML model, see [Get started with XAML](../create-first-pipeline.md).
 
 ::: moniker-end
 
@@ -302,7 +302,7 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 We'll automatically apply the free tier limits for public projects if you meet both of these conditions:
 
-* Your pipeline is part of an Azure Pipelines [public project](../../organizations/public/index.md). 
+* Your pipeline is part of an Azure Pipelines [public project](../../organizations/public/about-public-projects.md). 
 * Your pipeline builds a public repository from GitHub or from the same public project in your Azure DevOps organization.
 
 ### Can I assign a parallel job to a specific project or agent pool?

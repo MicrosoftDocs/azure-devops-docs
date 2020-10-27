@@ -47,24 +47,24 @@ For example, the following image illustrates four different charts created from 
 
 ## Prerequisites
 
-By default, users with **Basic** access or higher can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+By default, users with **Basic** access or higher can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
-* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* You must connect to a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
+* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
 * You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard. 
 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+> Users with **Stakeholder** access for a public project have full access to query chart features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2020"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
 * You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard. 
 
@@ -73,8 +73,8 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 ::: moniker range="tfs-2015"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 * To add a chart to a team dashboard, you must be a member of the team, be a team administrator, or be a member of the **Project Administrators** security group.
 * You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)  
 
@@ -82,12 +82,12 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 ::: moniker range="tfs-2013"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
+* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
 
 ::: moniker-end
 
-To learn more about default groups, see [About permissions and groups](../../organizations/security/about-permissions.md).
+To learn more about default groups, see [About permissions and inheritance(../../organizations/security/about-permissions.md).
 
 
 ## Create a flat-list query  
@@ -166,11 +166,11 @@ When a chart contains more than seven items within the data series, values in th
 
    ::: moniker range=">= azure-devops-2019"  
    > [!div class="mx-imgBorder"]  
-   > ![Charts, New chart button](media/charts/new-chart-new-qe.png)   
+   > ![Screenshot of New chart button.](media/charts/new-chart-new-qe.png)   
    ::: moniker-end  
 
    ::: moniker range="<= tfs-2018"  
-   <img src="media/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link" style="border: 2px solid #C3C3C3;" />  
+   <img src="media/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link." style="border: 2px solid #C3C3C3;" />  
    ::: moniker-end  
 
 	If you have Stakeholder access, the **Charts** and **New Chart** links won't appear. 
@@ -178,7 +178,7 @@ When a chart contains more than seven items within the data series, values in th
 2. Select the chart type and field for grouping values. When you use pie, bar, and column charts, select a single field to view a count of work items.  
    ::: moniker range=">= azure-devops-2019"  
    > [!div class="mx-imgBorder"]  
-   > ![Charts, New chart button](media/charts/config-pie-chart-priority-qe.png)  
+   > ![Screenshot of pie chart configure dialog.](media/charts/config-pie-chart-priority-qe.png)  
    ::: moniker-end  
 
    ::: moniker range="<= tfs-2018"  
@@ -216,12 +216,12 @@ Use a pie chart to show group percentages with six or fewer categories. Good exa
 For example, the following query filters User Stories based on the State for Cut, In Progress, and Completed since the start of the year. 
 
 > [!div class="mx-imgBorder"]  
-> ![Query Editor, filter User Stories by State](media/charts/pie-chart-query.png) 
+> ![Query Editor, filter User Stories by State.](media/charts/pie-chart-query.png) 
 
 The pie chart configuration is as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Configure chart dialog, Pie chart](media/charts/pie-chart-configured.png)  
+> ![Configure chart dialog, Pie chart.](media/charts/pie-chart-configured.png)  
 The combined query and chart configuration yield the following pie chart. 
 
 ![Charts, pie chart example ](media/charts/pie-chart-user-stories-progress.png)  
@@ -428,5 +428,4 @@ Query-based charts generate data from the work item tracking data store and ther
 - [View/configure sprint burndown](configure-sprint-burndown.md)  
 - [Test progress and test results](../../test/track-test-status.md)  
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
-- [Widget catalog charts](widget-catalog.md)    
-
+- [Widget catalog charts](widget-catalog.md)

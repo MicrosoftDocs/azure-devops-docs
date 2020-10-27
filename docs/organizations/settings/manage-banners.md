@@ -54,7 +54,7 @@ The following parameters are optional for all commands, and not listed in the ex
 To add a banner, enter the `az devops admin banner add` command. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops admin banner add --message
                            [--expiration]
                            [--id]
@@ -73,8 +73,8 @@ az devops admin banner add --message
 For example, the following command adds an information banner, which expires on September 4, 2019. When an ID isn't specified, a unique ID is automatically assigned. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az devops admin banner add --message "INFORMATION: Network domain updates will occur on September 3" --expiration  2019-09-04 --type  info
+```azurecli
+az devops admin banner add --message "INFORMATION: Network domain updates will occur on September 3" --expiration  2019-09-04 --type  info
 {
   "3d584103-6a94-4f46-8696-f424278da072": {
     "expirationDate": "2019-09-04T00:00:00-07:00",
@@ -90,7 +90,7 @@ C:\WINDOWS\system32>az devops admin banner add --message "INFORMATION: Network d
 To determine which banners are defined, enter the `az devops admin banner list` command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops admin banner list 
 ```
 
@@ -101,8 +101,8 @@ If you don't specify the output, the list displays in json format. For other out
 For example, the following command indicates that two banners have been defined. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az devops admin banner list
+```azurecli
+az devops admin banner list
 {
   "04c4d27f-1fee-4f23-9c44-57ed6a9efef8": {
     "level": "info",
@@ -120,8 +120,8 @@ C:\WINDOWS\system32>az devops admin banner list
 To list the banners in table format, use the `--output table` command option.  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az devops admin banner list 
+```azurecli
+az devops admin banner list 
 ID                                    Message                            Type     Expiration Date
 ------------------------------------  ---------------------------------  -------  -----------------
 04c4d27f-1fee-4f23-9c44-57ed6a9efef8  BANNER-MESSAGE-BANNER-MESSAGE      Info
@@ -133,7 +133,7 @@ ID                                    Message                            Type   
 To delete a banner, use the `az devops admin banner remove` command. Specify the banner ID, which you can find by [listing the banners](#list-banners).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops admin banner remove --id
 ```
 
@@ -146,8 +146,8 @@ az devops admin banner remove --id
 For example, the following command removes the banner with `id=e090e7b0-4499-4b8f-a09b-1eddf7fdeb44`. No response is returned. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az devops admin banner remove --id e090e7b0-4499-4b8f-a09b-1eddf7fdeb44
+```azurecli
+az devops admin banner remove --id e090e7b0-4499-4b8f-a09b-1eddf7fdeb44
 ```
 
 ## List banner details
@@ -155,7 +155,7 @@ C:\WINDOWS\system32>az devops admin banner remove --id e090e7b0-4499-4b8f-a09b-1
 To list information about a single banner, use the `az devops admin banner show` command. Specify the banner ID, which you can find by [listing the banners](#list-banners).    
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops admin banner show --id
 ```
 
@@ -168,8 +168,8 @@ az devops admin banner show --id
 Here we list the details for banner with `id=7653f414-3c01-424f-8f84-e51aa99b797c`.  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az devops admin banner show --id 7653f414-3c01-424f-8f84-e51aa99b797c
+```azurecli
+az devops admin banner show --id 7653f414-3c01-424f-8f84-e51aa99b797c
 {
   "7653f414-3c01-424f-8f84-e51aa99b797c": {
     "expirationDate": "2019-09-04T07:00:00+00:00",
@@ -184,7 +184,7 @@ C:\WINDOWS\system32>az devops admin banner show --id 7653f414-3c01-424f-8f84-e51
 You can change the message, type, and expiration of a banner using the `az devops admin banner update` command. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops admin banner update --id
                               [--expiration]
                               [--message]
@@ -203,8 +203,8 @@ az devops admin banner update --id
 For example, the following command updates the message string for the banner and updates the expiration date to the end of the year.  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az devops admin banner update --id 7653f414-3c01-424f-8f84-e51aa99b797c --message "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac lectus eget erat porttitor dapibus vulputate in ipsum. Etiam id faucibus nisi, at ornare tellus. Curabitur faucibus pharetra orci, id finibus leo iaculis et. Morbi nec felis facilisis, ultricies magna nec, convallis sem. Sed pharetra porta mi eu venenatis. Cras consectetur et dui a accumsan. Maecenas non dolor eu lacus mollis pulvinar. Fusce gravida id lacus sed consequat. Cras tempus ante tincidunt purus rhoncus, at consectetur tellus sollicitudin. Proin sed tellus vel libero maximus ornare. Nullam facilisis, nibh sit amet faucibus rutrum, diam massa ullamcorper purus, sed tempor est erat in sapien. Sed sit amet lectus vel massa facilisis interdum id sit amet nisi. Vestibulum eu purus et mi ultricies consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum mattis rutrum. Nulla hendrerit nibh ut sapien viverra faucibus.   " --expiration  2019-12-31
+```azurecli
+az devops admin banner update --id 7653f414-3c01-424f-8f84-e51aa99b797c --message "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac lectus eget erat porttitor dapibus vulputate in ipsum. Etiam id faucibus nisi, at ornare tellus. Curabitur faucibus pharetra orci, id finibus leo iaculis et. Morbi nec felis facilisis, ultricies magna nec, convallis sem. Sed pharetra porta mi eu venenatis. Cras consectetur et dui a accumsan. Maecenas non dolor eu lacus mollis pulvinar. Fusce gravida id lacus sed consequat. Cras tempus ante tincidunt purus rhoncus, at consectetur tellus sollicitudin. Proin sed tellus vel libero maximus ornare. Nullam facilisis, nibh sit amet faucibus rutrum, diam massa ullamcorper purus, sed tempor est erat in sapien. Sed sit amet lectus vel massa facilisis interdum id sit amet nisi. Vestibulum eu purus et mi ultricies consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum mattis rutrum. Nulla hendrerit nibh ut sapien viverra faucibus.   " --expiration  2019-12-31
 {
   "7653f414-3c01-424f-8f84-e51aa99b797c": {
     "expirationDate": "2019-12-31T00:00:00-08:00",

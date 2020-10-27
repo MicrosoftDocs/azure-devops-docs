@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 09/17/2020
+ms.date: 09/30/2020
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -178,7 +178,7 @@ steps:
 You can copy content from one YAML and reuse it in a different YAML. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 
 ```yaml
-# File: include-npm-steps.yml
+# File: templates/include-npm-steps.yml
 
 steps:
 - script: npm install
@@ -520,6 +520,47 @@ This means that you can't use scripts from the template repo in your pipeline.
 If you want to use a particular, fixed version of the template, be sure to pin to a `ref`.
 The `refs` are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
+
+You may also use `@self` to refer to the repository where the main pipeline was found.
+This is convenient for use in `extends` templates if you want to refer back to contents in the extending pipeline's repository.
+For example:
+
+```yaml
+# Repo: Contoso/Central
+# File: template.yml
+jobs:
+- job: PreBuild
+  steps: []
+
+  # Template reference to the repo where this template was
+  # included from - consumers of the template are expected
+  # to provide a "BuildJobs.yml"
+- template: BuildJobs.yml@self
+
+- job: PostBuild
+  steps: []
+```
+
+```yaml
+# Repo: Contoso/MyProduct
+# File: azure-pipelines.yml
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: Contoso/Central
+
+extends:
+  template: template.yml@templates
+```
+
+```yaml
+# Repo: Contoso/MyProduct
+# File: BuildJobs.yml
+jobs:
+- job: Build
+  steps: []
+```
 
 ## Template expressions
 

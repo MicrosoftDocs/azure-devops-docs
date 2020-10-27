@@ -62,7 +62,7 @@ To accommodate all of this, Azure DevOps resource consumption is expressed in ab
 
 TSTUs will eventually incorporate a blend of:
 
-- [Azure SQL Database DTUs](https://azure.microsoft.com/documentation/articles/sql-database-service-tiers) as a measure of database consumption   
+- [Azure SQL Database DTUs](/azure/azure-sql/database/purchasing-models) as a measure of database consumption   
 - Application tier and job agent CPU, memory, and I/O as a measure of compute consumption   
 - Azure Storage bandwidth as a measure of storage consumption.  
 

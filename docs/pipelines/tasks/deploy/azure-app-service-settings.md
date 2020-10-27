@@ -26,7 +26,7 @@ The task works for ASP.NET, ASP.NET Core, PHP, Java, Python, Go and Node.js base
 |`resourceGroupName`<br/>Resource group|(Required) Name of the resource group|
 |`slotName`<br/>Slot|(Optional) Name of the slot<br/>Default value: `production`|
 |`appSettings`<br/>App settings|(Optional) Application settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.|
-|`generalSettings`<br/>General settings|(Optional) General settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.|
+|`generalSettings`<br/>General settings|(Optional) General settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes. See the [App Service SiteConfig object documentation](https://docs.microsoft.com/azure/templates/microsoft.web/sites#siteconfig-object) for the available properties.|
 |`connectionStrings`<br/>Connection settings|(Optional) Connection strings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.|
 
 Following is an example YAML snippet to deploy web application to the Azure Web App service running on windows.
@@ -50,7 +50,7 @@ steps:
     appName: $(WebApp_Name)
     package: $(System.DefaultWorkingDirectory)/**/*.zip
 
-- task: AzureAppServiceSettings@0
+- task: AzureAppServiceSettings@1
   displayName: Azure App Service Settings
   inputs:
     azureSubscription: $(azureSubscription)

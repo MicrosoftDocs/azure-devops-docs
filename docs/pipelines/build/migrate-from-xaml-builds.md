@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker-end
 
-We introduced XAML build automation capabilities based on the Windows Workflow Foundation in Team Foundation Server (TFS) 2010. We released another version of [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx) in TFS 2013.
+We introduced XAML build automation capabilities based on the Windows Workflow Foundation in Team Foundation Server (TFS) 2010. We released another version of [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)) in TFS 2013.
 
 After that we sought to expand beyond .NET and Windows and add support for other kinds of apps that are based on operating systems such as macOS and Linux. It became clear that we needed to switch to a more open, flexible, web-based foundation for our build automation engine. In early 2015 in Azure Pipelines, and then in TFS 2015, we introduced a simpler task- and script-driven cross-platform build system.
 
@@ -269,7 +269,7 @@ Here are a few examples of the kinds of apps you can build:
 
 * [Build your Universal Windows Platform app](../apps/windows/universal.md)
 
-* [Build your Xamarin app](../apps/mobile/xamarin.md)
+* [Build your Xamarin app](../ecosystems/xamarin.md)
 
 * [C++ apps for Windows](../apps/windows/cpp.md)
 
@@ -291,7 +291,7 @@ A few examples include:
 
 ### Other apps and tasks
 
-For more examples of apps you can build and deploy, see [Build and deploy your app](../apps/index.md).
+For more examples of apps you can build and deploy, see [Build and deploy your app](/previous-versions/azure/devops/pipelines/apps/).
 
 For a complete list of our build, test, and deployment tasks, see [Build and release tasks](../tasks/index.md).
 
@@ -354,7 +354,7 @@ XAML builds are deprecated. We strongly recommend that you migrate to the new bu
 
 ::: moniker range=">=azure-devops-2020"
 
-If you're not yet ready to migrate, then to enable XAML builds you must connect a XAML build controller to your organization. See [Configure and manage your build system](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx).
+If you're not yet ready to migrate, then to enable XAML builds you must connect a XAML build controller to your organization. See [Configure and manage your build system](/previous-versions/visualstudio/visual-studio-2013/ms252495(v=vs.120)).
 
 ::: moniker-end
 
@@ -364,7 +364,7 @@ If you're not yet ready to migrate, then to enable XAML builds:
 
 1. Install [TFS 2018.2](https://visualstudio.microsoft.com/downloads/?q=tfs).
 
-1. Connect your XAML build servers to your TFS instance. See [Configure and manage your build system](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx).
+1. Connect your XAML build servers to your TFS instance. See [Configure and manage your build system](/previous-versions/visualstudio/visual-studio-2013/ms252495(v=vs.120)).
 
 ::: moniker-end
 

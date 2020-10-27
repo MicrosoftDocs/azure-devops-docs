@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2020'
 [!INCLUDE [version-2020-rtm](../includes/version-server-2020-rtm.md)]
 
 > [!IMPORTANT]
-> - Job and stage names cannot contain keywords.
+> - Job and stage names cannot contain keywords (example: `deployment`).
 > - Each job in a stage must have a unique name. 
 
 In YAML pipelines, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that's a collection of steps, which are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. 
@@ -32,10 +32,10 @@ Here's the full syntax to specify a deployment job:
 
 ```YAML
 jobs:
-- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore
+- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
   displayName: string  # friendly name to display in the UI
   pool:                # see pool schema
-    name: string
+    name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.
     demands: string | [ string ]
   dependsOn: string 
   condition: string 
