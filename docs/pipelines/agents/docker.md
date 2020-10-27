@@ -44,7 +44,7 @@ For Windows Server 2016, install the [Docker Enterprise Edition](https://docs.do
 
 ### Switch Docker to use Windows containers
 
-By default, Docker for Windows is configured to use Linux Containers. To allow running the Windows container, confirm that Docker for Windows [is running the Windows daemon](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers).
+By default, Docker for Windows is configured to use Linux containers. To allow running the Windows container, confirm that Docker for Windows [is running the Windows daemon](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers).
 
 ### Create and build the Dockerfile
 
@@ -233,7 +233,7 @@ Next, create the Dockerfile.
     ```
 
 > [!NOTE]
-> Tasks may depend on executables that your container is expected to provide.
+> Tasks might depend on executables that your container is expected to provide.
 > For instance, you must add the `zip` and `unzip` packages
 > to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
 
