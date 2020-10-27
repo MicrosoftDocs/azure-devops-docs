@@ -174,7 +174,7 @@ Active Directory. This identity is automatically added with a
 `Contributor` role to all resources in the Resource Group you 
 chose to authorize. In order to upload blobs to a storage account, 
 being a `Contributor` is *not enough*. You must manually assign the 
-[`Storage Blob Data Contributor` role to the app registration identity](https://docs.microsoft.com/en-us/azure/storage/common/storage-auth-aad-rbac-portal).
+[`Storage Blob Data Contributor` role to the app registration identity](/azure/storage/common/storage-auth-aad-rbac-portal).
 
 You can copy the app identity from the existing inherited entry as 
 `Contributor` that you will see in the IAM pane and search explicitly 
