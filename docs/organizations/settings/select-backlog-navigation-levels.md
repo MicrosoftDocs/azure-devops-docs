@@ -8,33 +8,31 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 07/20/2020
+ms.date: 10/27/2020
 ---
 
 # Select backlog navigation levels for your team
 
 [!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]  
 
-Each team can determine the backlog levels that they use. For example, feature teams may want to only focus on their product backlog, while a management team may choose to only show feature and epics (the two default portfolio backlogs). You configure which backlog levels appear from your team settings dialog. 
+Each team can determine the backlog levels that they use. For example, feature teams may wish to only focus on their product backlog, while a management team may choose to only show feature and epics (the two default portfolio backlogs). You configure which backlog levels appear from your team settings dialog. 
 
 ::: moniker range=">= azure-devops-2019" 
-If you want additional portfolio backlogs, see the following articles based on the process model you use: 
+If you need additional portfolio backlogs, see the following articles based on the process model you use: 
 - **Inheritance**: [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md)  
 - **On-premises XML**: [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
 
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).
-
 ::: moniker-end
 
 ::: moniker range="tfs-2015 < azure-devops-2019" 
-If you want additional portfolio backlogs, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
+If you need additional portfolio backlogs, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
 ::: moniker-end
 
 ::: moniker range="tfs-2015" 
 > [!NOTE]    
 > The team setting for choosing which backlog levels is available for TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
 ::: moniker-end
-
 [!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
 <a id="activate-backlogs"></a>
@@ -49,12 +47,12 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 1.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-2. Choose the :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board and set general team settings.  
+2. Select :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](media/configure-team/open-board-settings.png)  
 
-4. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
+4. Choose **Backlogs** and check the boxes of those backlog levels you wish your team to manage. 
 
 	![Team settings dialog, Backlogs tab](media/select-nav-backlog-levels-config-ts.png)  
 
@@ -68,12 +66,12 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open the  settings dialog.  
+2. Select :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: to open the  settings dialog.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team](media/configure-team/open-settings-tfs.png)  
 
-2. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
+2. Choose **Backlogs** and check the boxes of those backlog levels you wish your team to manage. 
 
 	![Team settings dialog, Backlogs tab](media/select-nav-backlog-levels-config-ts.png)  
 
@@ -87,13 +85,13 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 Requires TFS 2015.1 or later version. 
 
-1. From your web portal, choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open the administration page. 
+1. From your web portal, choose :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: to open the administration page. 
 
 	![Gear icon provides access to admin pages](../../boards/media/icons/ALM_OpenAdminContext.png)  
 
-1. From **Overview**, choose the team whose settings you want to configure, and then choose **Settings**. 
+1. From **Overview**, choose the team whose settings you wish to configure, and then choose **Settings**. 
 
-2. Check the boxes of those backlog levels you want your team to manage. 
+2. Check the boxes of those backlog levels you wish your team to manage. 
 
 	![TFS 2015.1 or later, web portal, team settings dialog, Backlogs tab](../../boards/backlogs/media/ALM_OB_BacklogSettings.png)  
 

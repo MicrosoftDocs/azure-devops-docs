@@ -43,7 +43,7 @@ A typical authorization flow might be similar to the following example:
 
 To ensure an authorization request is legitimate, do the following actions:
 
-- Look for the Azure DevOps branding across the top of the authorization approval page.
+- Look for the Azure DevOps branding across the upper portion of the authorization approval page.
 - Ensure the authorization approval page URL begins with ```https://app.vssps.visualstudio.com/```.
 - Pay attention to any HTTPS-related security warnings in your browser.
 - Remember that other services don't ask for your credentials directly. They let you provide them to Azure DevOps through the authorization approval page.
@@ -58,7 +58,7 @@ For more information, see [Preview features](../../project/navigation/preview-fe
 #### [New Account Manager enabled](#tab/new-account-enabled)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Choose the :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: profile icon, and then choose **Profile**.
+2. Choose :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::, and then choose **Profile**.
 3. Choose **Authorizations**.  
 
    :::image type="content" source="media/profile-settings-authorizations.png" alt-text="Screenshot of profile settings with Authorizations selected, New Account Manager preview.":::
