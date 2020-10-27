@@ -12,7 +12,7 @@ monikerRange: '>= azure-devops-2020'
 [!INCLUDE [version-2020-rtm](../includes/version-server-2020-rtm.md)]
 
 > [!IMPORTANT]
-> - Job and stage names cannot contain keywords.
+> - Job and stage names cannot contain keywords (example: `deployment`).
 > - Each job in a stage must have a unique name. 
 
 In YAML pipelines, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that's a collection of steps, which are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. 
