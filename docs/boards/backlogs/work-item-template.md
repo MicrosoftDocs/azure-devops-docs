@@ -265,7 +265,7 @@ For example, the following widget contains links to three templates.
 
 ![Markdown widget with links to templates](media/wi-templates-markdown-widget-with-template-links.png) 
 
-To learn more about the markdown widget see [Add Markdown to a dashboard, Markdown widgets](../../report/add-markdown-to-dashboard.md).  
+To learn more about the markdown widget see [Add Markdown to a dashboard, Markdown widgets](../../report/dashboards/add-markdown-to-dashboard.md).  
 
 ::: moniker-end
 

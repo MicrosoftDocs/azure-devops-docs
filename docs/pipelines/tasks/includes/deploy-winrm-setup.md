@@ -9,7 +9,7 @@ ms.technology: devops-cicd-tasks
 
 <!-- Windows Remote Management details and setup -->
 
-This task uses [Windows Remote Management](https://msdn.microsoft.com/library/aa384426.aspx)
+This task uses [Windows Remote Management](/windows/win32/winrm/portal)
 (WinRM) to access 
 on-premises physical computers or virtual computers that are
 domain-joined or workgroup-joined.
@@ -26,7 +26,7 @@ automation agent will not validate the authenticity of the
 certificate as being issued by a trusted certification authority.
 
 * **Azure Classic Virtual Machines**. When you create a 
-[classic virtual machine](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial-classic-portal/)
+[classic virtual machine](/azure/)
 from the Azure portal, the virtual machine is already set up for 
 WinRM over HTTPS, with the default port 5986 already opened in the firewall
 and a self-signed certificate installed on the machine. These virtual 

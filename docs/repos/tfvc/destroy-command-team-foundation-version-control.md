@@ -41,7 +41,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
 	<td><p>Specifies the server path of the file or folder to be destroyed. Use multiple <em>itemspec</em> values to delete multiple items. For example, <code>tf destroy $/TeamProject1 $/teamProject2 $/TeamProject3</code>.</p><p>Local paths are not supported.</p></td></tr>
 <tr>
 	<td><p><em>versionspec</em></p></td>
-	<td><p>Provides a version such as C58 for the <strong>/keephistory</strong> or <strong>/stopat</strong> options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="https://msdn.microsoft.com/library/56f7w6be">Command-Line Syntax (Version Control)</a>.</p></td></tr>
+	<td><p>Provides a version such as C58 for the <strong>/keephistory</strong> or <strong>/stopat</strong> options. The allowed values are date, tip, or a specific changeset. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100)">Command-Line Syntax (Version Control)</a>.</p></td></tr>
 <tr>
 	<td><p><em>username</em></p></td>
     <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName.</em></p></td></tr>
@@ -99,7 +99,7 @@ Destroyed: $/Test1/MyProject/MyProject/Program.cs
 
 However, the file is actually not destroyed because you used the **/preview** option.
 
-For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information about how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 
 ### Effects of /keephistory on Other Version Control Operations
@@ -160,8 +160,8 @@ Where x123 is the deletion ID.
 
 #### Concepts
 
-[Operations Available Only From the Command-Line (Team Foundation Version Control)](https://msdn.microsoft.com/library/ms194957)
+[Operations Available Only From the Command-Line (Team Foundation Version Control)](/previous-versions/visualstudio/visual-studio-2010/ms194957(v=vs.100))
 
 #### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

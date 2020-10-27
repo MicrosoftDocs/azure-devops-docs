@@ -78,11 +78,11 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 3. Use the URL that you copied to clone the repo in the IDE that you use. To learn more, see one of the following articles:
 	- [Clone an existing Git repo](../../repos/git/clone.md)
 	- [Using Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol)
-	- [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?view=azure-devops&tabs=visual-studio)
+	- [Get Started with Git and Azure DevOps](../../repos/git/gitquickstart.md?tabs=visual-studio)
 
 ## Add pages to your local Git repository
 
-We author pages using [Markdown format](../../reference/markdown-guidance.md). Add a Markdown file to your local branch for each page and subpage that you want to add to your wiki.
+We author pages using [Markdown format](./markdown-guidance.md). Add a Markdown file to your local branch for each page and subpage that you want to add to your wiki.
 
 ### Add pages
 
@@ -151,7 +151,7 @@ If there are any errors in the process, the pages appear in your wiki with a war
 - [Clone an existing Git repo](../../repos/git/clone.md)
 - [Share code with push](../../repos/git/pushing.md)
 - [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
-- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
+- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](./markdown-guidance.md).
 
 <!---
 
@@ -181,4 +181,4 @@ In the web portal, you can view the repo files based on the following URL:
 
 While that's a lot of steps, the main steps that are specific to updating a wiki is step 3. The rest follow the standard steps for updating a Git repo.
 
--->  
+-->

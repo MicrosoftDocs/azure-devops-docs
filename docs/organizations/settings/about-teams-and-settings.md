@@ -1,7 +1,7 @@
 ---
 title: About teams & Agile tools
 titleSuffix: Azure DevOps
-description: Overview for adding and configuring teams in Azure DevOps
+description: Overview for adding and configuring teams in Azure DevOps.
 ms.technology: devops-settings
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.author: kaelli
@@ -182,7 +182,7 @@ Yes. You can add user accounts as members of the project or to one or more teams
 
 ## Team member permissions 
 
-By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. Team members can [collaborate on a Git project](../../git/gitquickstart.md) or  [check in work to the team's code base](../../tfvc/check-your-work-team-codebase.md). 
+By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. Team members can [collaborate on a Git project](../../repos/git/gitquickstart.md) or  [check in work to the team's code base](../../repos/tfvc/check-your-work-team-codebase.md). 
 
 ![Default permissions assigned to team contributors](media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
@@ -211,4 +211,3 @@ Limit access to select features by making a user a [Stakeholder](../security/get
 <!---
 You can view these queries by choosing the **Create query** link that appears on these tools' pages. (Note that you can't change the underlying query.)  Lastly, you can set  security permissions to control who has access to create, modify, or manage test plans and test suites under an area.
 -->
-

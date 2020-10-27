@@ -30,8 +30,8 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 - If you are not familiar with Analytics, read "[what is Analytics](what-is-analytics.md)" before continuing. 
 - Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except stakeholders, can view Analytics views. 
-- **Boards** must be enabled. If it is disabled, **Analytics views** won't be displayed. To re-enable **Boards**, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views. 
+- **Boards** must be enabled. If it is disabled, **Analytics views** won't be displayed. To re-enable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Make sure you have [permissions required to access Analytics](analytics-security.md). If you are a member of the project Contributors group, you have permission.
 - [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. 
 - Review the [knowledge base of Power BI articles](/power-bi). 
@@ -43,10 +43,10 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 - If you are not familiar with Analytics, read "[what is Analytics](what-is-analytics.md)" before continuing. 
 - Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
-- You must be a member of a project with Basic access or higher. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except stakeholders, can view Analytics views.
-- [Verify that Analytics](/azure/devops/report/dashboards/analytics-extension?view=azure-devops-2019)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service. 
-- **Boards** must be enabled. If it is disabled, **Analytics views** won't be displayed. To re-enable **Boards**, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
+- You must be a member of a project with Basic access or higher. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views.
+- [Verify that Analytics](../dashboards/analytics-extension.md?view=azure-devops-2019)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service. 
+- **Boards** must be enabled. If it is disabled, **Analytics views** won't be displayed. To re-enable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Make sure you have [permissions required to access Analytics](analytics-security.md). If you are a member of the project Contributors group, you have permission.
 - [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. 
 - Review the [knowledge base of Power BI articles](/power-bi). 
@@ -144,4 +144,3 @@ If the URL you use on a daily basis is "`https://dev.azure.com/fabrikam-fiber-in
 - [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) 
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md)  
 - [Data Connector - Example reports](data-connector-examples.md)
-

@@ -23,7 +23,7 @@ To use npmjs.com as an upstream source, either create a new feed or edit an exis
 
 ### On a new feed
 
-1. [Create a new feed](../feeds/create-feed.md). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
+1. [Create a new feed](../index.yml). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
 
 ### On an existing feed
 
@@ -38,7 +38,7 @@ To use npmjs.com as an upstream source, either create a new feed or edit an exis
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
 > [!NOTE]
-> Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](https://docs.microsoft.com/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=azure-devops) and consider upgrading it, if needed.
+> Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](../reference/feed-upgrade-learn-more.md?view=azure-devops) and consider upgrading it, if needed.
 
 ::: moniker range=">= azure-devops-2019"  
 
