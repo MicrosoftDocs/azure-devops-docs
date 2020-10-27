@@ -5,29 +5,59 @@ ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 03/27/2018
+ms.date: 10/27/2020
 monikerRange: 'azure-devops'
+# Customer intent: As an Azure DevOps user, I want to build a pipeline that deploys a Xamarin app so that I can take advantage of automated builds.
 ---
 
-# Build Xamarin apps
+# Quickstart: Build and deploy Xamarin apps with a pipeline
 
 **Azure Pipelines**
 
-This guidance explains how to automatically build Xamarin apps for Android and iOS.
+Get started with Xamarin and Azure Pipelines by using building a pipeline to deploy a Xamarin app. You can deploy Android and iOS apps in the same or separate pipelines.  
 
-## Example
+## Prerequisites
 
-For a working example of how to build a Xamarin app, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+Before you begin, you need:
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- An active Azure DevOps organization. [Sign up for Azure Pipelines](../get-started/pipelines-sign-up.md).
+
+### Get code
+
+[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-xamarin
 ```
 
-The sample code includes an `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
+## Sign in to Azure Pipelines
 
-Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a build pipeline for the sample app.
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-## Build environment
+[!INCLUDE [include](includes/create-project.md)]
+
+### Create the pipeline
+
+[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
+
+  > When the **Configure** tab appears, select **Xamarin.Android** to build an Android project or **Xamarin.iOS** to build an iOS project.
+
+7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
+
+8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+
+   If you want to watch your pipeline in action, select the build job.
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+9. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+10. See the sections below to learn some of the more common ways to customize your pipeline.
+
+
+## Set up Xamarin tools
 
 You can use Azure Pipelines to build your Xamarin apps without needing to set up any infrastructure of your own. Xamarin tools are preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use macOS or Windows agents to run Xamarin.Android builds, and macOS agents to run Xamarin.iOS builds. If you are using a self-hosted agent, you must install [Visual Studio Tools for Xamarin](https://visualstudio.microsoft.com/xamarin/) for Windows agents or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/) for macOS agents.
 
@@ -68,16 +98,6 @@ steps:
 
 See [Sign your mobile Android app during CI](../apps/mobile/app-signing.md#sign-your-android-app) for information about signing your app.
 
-### Next steps
-
-See [Android](android.md) guidance for information about:
-
-* Signing and aligning an Android APK
-* Testing on the Android Emulator
-* Testing on Azure-hosted devices
-* Retaining build artifacts with the build record
-* Distributing through App Center
-* Distributing through Google Play
 
 ## Build a Xamarin.iOS app
 
@@ -100,7 +120,7 @@ steps:
 
 To generate a signed and provisioned Xamarin.iOS app .ipa package, set `packageApp` to `true` and make sure prior to this task you installed the right Apple Provisioning Profile and Apple Certificates that match your App Bundle ID into the agent running the job.
 
-To fulfill these mandatory requisites use the Microsoft Provided tasks for [installing an Apple Provisioning Profile](../tasks/utility/install-apple-provisioning-profile.md) and [installing Apple Certificates](../tasks/utility/install-apple-certificate.md).
+To fulfill these mandatory requisites, use the Microsoft Provided tasks for [installing an Apple Provisioning Profile](../tasks/utility/install-apple-provisioning-profile.md) and [installing Apple Certificates](../tasks/utility/install-apple-certificate.md).
 
 ```yaml
 - task: XamariniOS@2
@@ -115,7 +135,7 @@ To fulfill these mandatory requisites use the Microsoft Provided tasks for [inst
 For Microsoft Hosted agents the .ipa package is by default located under path:  
 `{iOS.csproj root}/bin/{Configuration}/{iPhone/iPhoneSimulator}/`
 
-You can configure the output path by adding an argument to the Xamarin.iOS task as following:
+You can configure the output path by adding an argument to the Xamarin.iOS task:
 
 # [YAML](#tab/yaml)
 ```yaml
@@ -129,10 +149,8 @@ You can configure the output path by adding an argument to the Xamarin.iOS task 
 
 This example locates the .ipa in the Build Artifact Staging Directory ready to be pushed into Azure DevOps as an artifact to each build run.To push it into Azure DevOps simply add a [Publish Artifact task](../tasks/utility/publish-build-artifacts.md) to the end of your pipeline.
 
-See [Sign your mobile iOS app during CI](../apps/mobile/app-signing.md?tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app) for more information about signing and provisioning your iOS app.
-
-# [Classic](#tab/classic)
-Expand menu Advanced for the Xamarin.iOS build task and add **/p:IpaPackageDir="/Users/vsts/agent/2.153.2/work/1/a"** in the input field Arguments to place the generated .ipa package in the Build Artifact Staging Directory. To push it into Azure DevOps simply add a [Publish Artifact task](../tasks/utility/publish-build-artifacts.md) to the end of your pipeline. 
+For more information about signing and provisioning your iOS app, 
+see [Sign your mobile iOS app during CI](../apps/mobile/app-signing.md?tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app).
 
 ### Set the Xamarin SDK version on macOS
 
@@ -185,11 +203,19 @@ jobs:
       packageApp: false
 ```
 
-### Next steps
+# [Classic](#tab/classic)
+Expand menu Advanced for the Xamarin.iOS build task and add **/p:IpaPackageDir="/Users/vsts/agent/2.153.2/work/1/a"** in the input field Arguments to place the generated .ipa package in the Build Artifact Staging Directory. To push it into Azure DevOps simply add a [Publish Artifact task](../tasks/utility/publish-build-artifacts.md) to the end of your pipeline. 
 
-See [Xcode](xcode.md) guidance for information about:
+---
 
-* Testing on Azure-hosted devices
-* Retaining build artifacts with the build record
-* Distributing through App Center
-* Distributing through the Apple App Store
+## Clean up resources
+
+If you don't need the example code, delete your GitHub repository and Azure Pipelines project. 
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Learn more about using Xcode in pipelines](xcode.md)
+
+> [!div class="nextstepaction"]
+> [Learn more about using Android in pipelines](android.md)
