@@ -24,7 +24,7 @@ Configure the days that your team works. Your team's working days aid in capacit
 
 <a id="team-services-work-days" />  
 
-## Configure working days  
+## Set working days  
 
 ::: moniker range="azure-devops"
 
@@ -32,25 +32,25 @@ Configure the days that your team works. Your team's working days aid in capacit
 
    :::image type="content" source="media/configure-team/azure-boards-sprints-tab-selection.png" alt-text="Screenshot of selection of Azure Boards, and then the Sprints tab, with red boxes.":::
 
-2. Select **Capacity** > :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon > **Working days**.
+2. Select **Capacity** > :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: > **Working days**.
 
    ![Capacity page, Settings, Working days](media/capacity-planning-open-team-settings-new-nav.png)
 
 3. Select the checkbox next to the appropriate working days, and then select **Save and close**.
 
-Working days are updated.
+   Your team's working days are updated.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops" 
 
-1. From Azure Boards, select **Capacity** > :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon > **Working days**.
+1. From Azure Boards, select **Capacity** > :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: > **Working days**.
 
    ![Capacity page, Settings, Working days](../../boards/plans/media/capacity-planning-open-team-settings-tfs-15.png)  
 
 2. Select the checkbox next to the appropriate working days, and then select **Save and close**.
 
-Working days are updated.
+   Your team's working days are updated.
 
 ::: moniker-end
 
@@ -58,9 +58,11 @@ Working days are updated.
 
 <a  id="tfs-2015-work-days" />  
 
-Open your team settings from the **Overview** tab of your team's admin context. Check or uncheck one or more days. Your changes are automatically saved. 
+Open your team settings from the **Overview** tab of your team's admin context. Check or uncheck one or more days.
 
    ![Team settings page for default working days](../../boards/plans/media/ALM_DS_WorkingDaysOff.png)  
+
+   Your changes are automatically saved.
 
 ::: moniker-end
 
