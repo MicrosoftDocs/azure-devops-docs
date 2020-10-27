@@ -98,16 +98,6 @@ steps:
 
 See [Sign your mobile Android app during CI](../apps/mobile/app-signing.md#sign-your-android-app) for information about signing your app.
 
-### Next steps
-
-See [Android](android.md) guidance for information about:
-
-* Signing and aligning an Android APK
-* Testing on the Android Emulator
-* Testing on Azure-hosted devices
-* Retaining build artifacts with the build record
-* Distributing through App Center
-* Distributing through Google Play
 
 ## Build a Xamarin.iOS app
 
@@ -226,3 +216,5 @@ If you don't need the example code, delete your GitHub repository and Azure Pipe
 > [!div class="nextstepaction"]
 > [Learn more about using Xcode in pipelines](xcode.md)
 
+> [!div class="nextstepaction"]
+> [Learn more about using Android in pipelines](android.md)
