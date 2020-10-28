@@ -160,6 +160,6 @@ You can [specify only a small subset of rules](../../reference/xml/apply-rule-wo
 
 ### Team field versus team area path  
 
-If your organization has several teams that work from a common backlog and across many product areas, you might want to change how teams are configured. [Add a custom field to represent teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths) in your organization. You can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths. 
+If your organization has several teams that work from a common backlog and across many product areas, you might want to change how teams are configured. [Add a custom field to represent teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths) in your organization. You can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
 
 ::: moniker-end
