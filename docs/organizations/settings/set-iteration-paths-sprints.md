@@ -86,7 +86,7 @@ You define both areas and iterations for a project from the **Project Settings >
 
 ::: moniker range="<= tfs-2018"
 
-You define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, you open the admin context by choosing :::image type="icon" source="../../media/icons/gear-icon.png" border="false":::.
+You define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, you open the admin context by choosing **Settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false":::.
 
 ::: moniker-end
 
@@ -263,7 +263,7 @@ For Scrum-based projects, you see the following set of sprints.
 > [!div class="mx-imgBorder"]  
 > ![Project Settings Context, Work, Iterations page](media/areas/modify-areas-its-iterations-ts.png) 
 
-1. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.
+1. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the iteration path and choose **Edit**.
 	
    Choose the calendar icon to choose new dates. 
 
