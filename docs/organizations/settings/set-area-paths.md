@@ -90,7 +90,7 @@ Define both areas and iterations for a project from the **Project Settings** > *
 
 ::: moniker range="<= tfs-2018"
 
-Define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, open the admin context by choosing :::image type="icon" source="../../media/icons/gear-icon.png" border="false":::.
+Define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, open the admin context by choosing **Settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false":::.
 
 ::: moniker-end
 
@@ -115,7 +115,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
     > [!div class="mx-imgBorder"]  
     > ![Open Admin context, project level](media/areas/modify-areas-its-open-admin-context-ts.png)
 
-    If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
+    If you're currently working from a team context, then hover over **Settings** ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
 
     > [!div class="mx-imgBorder"]
     > ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)

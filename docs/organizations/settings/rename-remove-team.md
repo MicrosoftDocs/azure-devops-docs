@@ -270,7 +270,7 @@ az devops team update --team "Account Management" --name "Organization Managemen
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To delete a team, open **Project Settings > Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
+1. To delete a team, choose **Project Settings > Teams** > **&hellip;** for the team you want to delete, and select the **Delete** option.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings > Teams > Delete team](media/add-team/delete-team-vert.png)  
@@ -286,7 +286,7 @@ az devops team update --team "Account Management" --name "Organization Managemen
 
 ::: moniker range="<= tfs-2018"
 
-1. To delete a team, open **Project Settings>Work>Overview**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
+1. To delete a team, choose **Project Settings** > **Work** > **Overview** > **&hellip;** for the team you want to delete, and select the **Delete** option.   
 
 	![Web portal, admin context-project level, Delete team](media/add-team/multiple-teams-delete-team.png)
 
