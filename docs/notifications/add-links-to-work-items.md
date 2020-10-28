@@ -2,9 +2,9 @@
 title: Use `#ID` to link work items & pull requests
 titleSuffix: Azure DevOps
 description: Learn how to link to work items in discussions and pull requests. 
-ms.technology: devops-collab
-ms.assetid: 
+ms.technology: devops-collab 
 toc: show
+ms.custom: contperfq2
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
