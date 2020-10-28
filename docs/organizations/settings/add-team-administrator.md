@@ -104,12 +104,12 @@ To get added as a team administrator, ask another team administrator or a member
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. From the web portal and team context, choose :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open **Team Settings**.
+1. From the web portal and team context, choose **Team Settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of open Team Settings.](media/add-team-admin/open-team-settings-horz.png)
 
-	If you choose :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: from the project context, then choose **Overview**, and select the team you want to configure.   
+	If you choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::, then choose **Overview**, and select the team you want to configure.   
 
 2. Choose the **Add** link to open the dialog for adding user identities.  
 
@@ -122,14 +122,14 @@ To get added as a team administrator, ask another team administrator or a member
    
 ::: moniker-end     
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
-1. From the web portal, select your project, and then select :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open the administration page.
+1. From the web portal, select your project, and then select **Administration settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open the administration page.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal screenshot, TFS, Open Administration context, project level.](../../media/settings/open-admin-page-tfs2015.png)
 
-	If you choose :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: from the project context, then choose **Overview**, and select the team you want to add an administrator to.   
+	If you choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::, then choose **Overview**, and select the team you want to add an administrator to.   
 
 2. Choose the **Add** link to open the dialog for adding user identities.    
   
@@ -141,9 +141,7 @@ To get added as a team administrator, ask another team administrator or a member
 	
 ::: moniker-end  
 
-
 * * *
-
 
 <a id="remove-admin">  </a>
 

@@ -110,7 +110,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
-1. From the web portal for the project, choose :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
+1. From the web portal for the project, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
 
     > [!div class="mx-imgBorder"]  
     > ![Open Admin context, project level](media/areas/modify-areas-its-open-admin-context-ts.png)
@@ -128,7 +128,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 
 ::: moniker range="<= tfs-2015"  
 
-- From the web portal, choose :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open project administration pages. Then choose **Areas**.
+- From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open project administration pages. Then choose **Areas**.
 
     ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
 
@@ -219,7 +219,7 @@ Only one area is defined, by default. Add area paths under the root area path fo
 
 ::: moniker range="tfs-2017"  
 
-- To add a child node, highlight the area path and then choose **New child**. Optionally, you can select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the area path and choose **New child**.   
+- To add a child node, highlight the area path and then choose **New child**. Optionally, you can select **Settings** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the area path and choose **New child**.   
 
     Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
@@ -320,7 +320,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Open your project, and then select **Project settings > Team configuration > Areas**.
+1. Open your project, and then select **Project settings** > **Team configuration** > **Areas**.
 
    ![Project settings, Team configuration page](media/areas/project-settings-team-configuration-preview.png)
 
@@ -333,7 +333,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 
 ::: moniker range="<= tfs-2018"  
 
-You open team settings from the upper navigation bar. Select the team you want and then choose :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: . For more information about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
+You open team settings from the upper navigation bar. Select the team you want and then choose **Team settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: . For more information about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
 > [!div class="mx-imgBorder"]  
 > ![Open team settings](media/team-defaults/open-team-settings-horz.png) 
@@ -384,7 +384,7 @@ Fabrikam Fiber\Service Delivery  True                 True
 
 You define both areas and iterations from **Project Settings > Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-1. Open a backlog or board for a team and choose :::image type="icon" source="../../media/icons/team.png" border="false"::: > **Team Settings**. 
+1. Open a backlog or board for a team and choose **Team profile** :::image type="icon" source="../../media/icons/team.png" border="false"::: > **Team Settings**. 
 
    Here we open the Board for the Fabrikam Fiber team and from there the team profile. 
 
@@ -553,7 +553,7 @@ The system automatically updates work items and queries that reference your upda
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To rename an area or iteration path, choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the node, and then select **Edit**.  
+1. To rename an area or iteration path, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the node, and then select **Edit**.  
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of sequence, Open Work > Project Configuration](media/areas/edit-area-rename-preview.png)  
@@ -575,7 +575,7 @@ The system automatically updates work items and queries that reference your upda
 
 ::: moniker range="<= tfs-2018"
 
-1. To rename an area or iteration path, choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the node, and then select **Edit**.  
+1. To rename an area or iteration path, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the node, and then select **Edit**.  
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of sequence, Open Work>Project Configuration, TFS 2018 and earlier on-premises versions](media/areas/edit-area-rename.png)  

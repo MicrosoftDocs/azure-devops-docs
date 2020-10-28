@@ -83,7 +83,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="add-team-team-services" /> 
 
-1. From the web portal, choose :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open the **Project settings** page for the project.  
+1. From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.  
 
 	![Open project administration page.](media/add-team/open-admin-context-tfs-2017.png) 
 
@@ -100,7 +100,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="add-team-tfs-2015" />
 
-1. From the web portal, choose :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open **Project Settings.**  
+1. From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
 
 	![Open project administrator page, TFS.](../../media/settings/open-admin-page-tfs2015.png)  
 

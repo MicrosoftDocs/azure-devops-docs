@@ -112,7 +112,7 @@ You can configure most of your team settings from the common configuration dialo
 1. Check that you selected the correct project, and then choose **Boards** > **Boards**, and select the correct team from the team selector dropdown menu. For more information, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md).
    :::image type="content" source="media/open-kanban-board-cloud.png" alt-text="Screenshot of steps to open the kanban board.":::
 
-2. Choose :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
+2. Choose **Team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
 
    :::image type="content" source="media/general-board-settings-cloud.png" alt-text="Screenshot of gear icon selection for general board settings.":::
 
@@ -135,7 +135,7 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	> ![Choose board level, vert nav](media/configure-team/choose-board-level-vert.png)
 
-4. Choose :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
+4. Choose **Team settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](media/configure-team/open-board-settings.png)  
@@ -149,16 +149,16 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
+1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose **Azure DevOps** :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
 	![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 
-2. Open **Work** >**Backlogs** > **Board**. 
+2. Open **Work** > **Backlogs** > **Board**. 
 
 	> [!div class="mx-imgBorder"]
 	>![Open Kanban board, versions TFS 2017-2018.](../../boards/boards/media/kanban-basics-intro.png)  
 
-3. Choose the board you want to configure and then choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to configure the board and set general team settings.  
+3. Choose the board you want to configure and then choose **Team settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to configure the board and set general team settings.  
  
 	For example, from the Kanban board ...  
 
@@ -174,7 +174,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker range="tfs-2015"
 
-1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
+1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose **Settings** :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
 	![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 
@@ -183,7 +183,7 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	>![Open Kanban board, version TFS 2015.](../../boards/boards/media/kanban-basics-intro.png)  
 
-3. Choose the board you want to configure and then choose :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to configure the board and set general team settings.  
+3. Choose the board you want to configure and then choose **Team settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to configure the board and set general team settings.  
 
 	For example, from the Kanban board ...  
 
