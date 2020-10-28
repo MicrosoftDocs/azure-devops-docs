@@ -232,10 +232,10 @@ Next, create the Dockerfile.
     CMD ["./start.sh"]
     ```
 
-> [!NOTE]
-> Tasks might depend on executables that your container is expected to provide.
-> For instance, you must add the `zip` and `unzip` packages
-> to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
+   > [!NOTE]
+   > Tasks might depend on executables that your container is expected to provide.
+   > For instance, you must add the `zip` and `unzip` packages
+   > to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
 
 5. Save the following content to `~/dockeragent/start.sh`, making sure to use Unix-style (LF) line endings:
 
@@ -474,7 +474,7 @@ Follow the steps in [Quickstart: Create an Azure container registry by using the
               path: /var/run/docker.sock
    ```
 
-This Kubernetes YAML creates a replica set and a deployment, where `replicas: 1` indicates the number or the agents that are running on the cluster.
+   This Kubernetes YAML creates a replica set and a deployment, where `replicas: 1` indicates the number or the agents that are running on the cluster.
 
 5. Run this command:
 
