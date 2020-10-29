@@ -454,7 +454,7 @@ pool:
 steps:
   - task: Cache@2
     inputs:
-      key: 'docker | $(Agent.OS)'
+      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
       path: $(Pipeline.Workspace)/docker
       cacheHitVar: DOCKER_CACHE_RESTORED
     displayName: Caching Docker image
