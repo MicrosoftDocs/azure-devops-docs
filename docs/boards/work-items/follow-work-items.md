@@ -160,9 +160,9 @@ You can also view and manage work that you're following from your Project pages.
 
 ## Query work items that you're following
 
-You can use the **@Follows** macro in a query to filter a list based on work items you're following in addition to other query filters. 
+You can use the **\@Follows** macro in a query to filter a list based on work items you're following in addition to other query filters. 
 
-For example, the following query shows how to query across all projects for active work items that you're following. You use the ID field and the In operator with the **@Follows** macro.  
+For example, the following query shows how to query across all projects for active work items that you're following. You use the ID field and the In operator with the **\@Follows** macro.  
 
 
 :::image type="content" source="media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
