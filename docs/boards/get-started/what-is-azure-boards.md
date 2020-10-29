@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 02/05/2020
+ms.date: 07/09/2020
 ---
 
 # What is Azure Boards?
@@ -155,7 +155,7 @@ To learn more, see one of the following articles:
 - [Discussion section](plan-track-work.md#discussion)  
 - [Follow a work item](../work-items/follow-work-items.md)  
 - [Add and manage dashboards](../../report/dashboards/dashboards.md)  
-- [Set personal notifications](../../notifications/howto-manage-personal-notifications.md).  
+- [Set personal notifications](../../notifications/manage-your-personal-notifications.md).  
 
 ## Work in sprints, implement Scrum
 
@@ -167,11 +167,11 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 
 **Assign backlog items to a sprint**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint-s155.png)  
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint.png)  
 ::: moniker-end
@@ -182,11 +182,11 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 
 **Assign backlog items to a sprint**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues-s155.png)  
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
 ::: moniker-end
@@ -196,11 +196,11 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 
 **Assign backlog items to a sprint**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/scrum-assign-sprint.png)  
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
 ::: moniker-end
@@ -210,11 +210,11 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 
 **Assign backlog items to a sprint**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/cmmi-assign-sprint.png)  
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/cmmi-assign-sprint-on-prem.png)  
 ::: moniker-end
@@ -243,11 +243,11 @@ You'll find you can work more effectively through these actions:
 
 **Group items to create a hierarchy**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/agile-hierarchy-cloud.png)
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Backlogs, show parents](media/about-boards/agile-hierarchy-with-header.png)  
 ::: moniker-end
@@ -256,11 +256,11 @@ You'll find you can work more effectively through these actions:
 
 **Group items to create a hierarchy**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/hierarchy-cloud.png) 
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/hierarchy.png) 
 ::: moniker-end
@@ -269,11 +269,11 @@ You'll find you can work more effectively through these actions:
 
 **Group items to create a hierarchy**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/scrum-hierarchy.png) 
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Backlogs, show parents](media/about-boards/scrum-hierarchy-on-prem.png)  
 ::: moniker-end
@@ -282,11 +282,11 @@ You'll find you can work more effectively through these actions:
 
 **Group items to create a hierarchy**
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/cmmi-hierarchy.png) 
 ::: moniker-end
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
 > ![Backlogs, show parents](media/about-boards/cmmi-hierarchy-on-prem.png)  
 ::: moniker-end
@@ -374,4 +374,4 @@ Extensions provide support for additional tools. An extension is an installable 
 
 - [Agile culture](../plans/agile-culture.md)  
 - [Practices that scale](../plans/practices-that-scale.md)  
-- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)  
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)

@@ -134,7 +134,7 @@ Replace `[Implementation="2.0"]` with the following string:
 
 `[Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]` 
 
-![Power BI - OData Feed - Advanced Editor - Scroll Right](media/odataquery-powerbi-advancededitor2.png)
+![Replace the string.](media/odataquery-powerbi-advancededitor2.png)
 
 > [!NOTE]
 > The following actions help accomplish this preventative measure: 

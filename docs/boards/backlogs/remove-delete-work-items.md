@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/21/2020
+ms.date: 07/09/2020
 ---
 
 # Remove or delete work items 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You can remove work items added to your backlog or taskboard that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform operations on individual work items or bulk modify several work items. 
 
@@ -155,23 +155,23 @@ You can access the following actions for which you have permissions. If you are 
 
 ::: moniker range="azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
-* To delete or remove work items, you must be granted **Stakeholder** access or higher  For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* You must connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
+* To delete or remove work items, you must be granted **Stakeholder** access or higher  For details, see [About access levels](../../organizations/security/access-levels.md).
 * To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to Allow. By default, the Contributors group has **Delete and restore work items** set to **Allow**.
 
 > [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
-* To remove or delete work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
+* To remove or delete work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
 * To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to Allow. The **Contributors** group has **Delete and restore work items** at the project-level set to **Allow** by default.
 
 ::: moniker-end
@@ -179,10 +179,10 @@ You can access the following actions for which you have permissions. If you are 
 
 ::: moniker range="<= tfs-2015" 
 
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
-* To delete or remove work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
+* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
+* To delete or remove work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
 * To delete work items, you must be a member of the <strong>Project Administrators <strong>group or have the **Delete work items in this project</strong> permission set to **Allow</strong>. By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
 
 ::: moniker-end
@@ -204,7 +204,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 ::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
-> The <em>Removed</em> state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available when you add a project to Azure DevOps Services or [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609).  
+> The *Removed* state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available when you add a project to Azure DevOps Services or [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609).  
 
 ::: moniker-end
 
@@ -224,16 +224,16 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 1. You can delete a work item from within the work item form, by multi-selecting work items from a backlog or query results page, or from a Kanban board or taskboard. 
 
-	To delete a single work item, open the work item, choose the ![ ](../media/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
+	To delete a single work item, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
 
 	> [!div class="mx-imgBorder"]
 	> ![work item form, actions menu, Delete](media/move-change-delete/delete-work-item.png)  
-	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the ![ ](../media/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
+	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
 
 	> [!div class="mx-imgBorder"]
 	> ![List of work items, actions menu, Delete](media/move-change-delete/multi-delete.png) 
 
-	To delete a work item from your Kanban or taskboard, choose the ![ ](../media/icons/actions-icon.png) actions icon of the card and select <strong>Delete</strong>. 
+	To delete a work item from your Kanban or taskboard, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon of the card and select <strong>Delete</strong>. 
  
 	> [!div class="mx-imgBorder"]  
 	> ![Delete work item from Kanban board](media/move-change-delete/delete-work-items-from-kanban-board.png)
@@ -257,12 +257,12 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
 
-	To delete a single work item, open the work item, choose the ![ ](../media/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
+	To delete a single work item, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
 
 	> [!div class="mx-imgBorder"]
 	> ![work item form, actions menu, Delete](media/move-change-delete/delete-work-item.png)  
 
-	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the ![ ](../media/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
+	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
 
 	> [!div class="mx-imgBorder"]
 	> ![List of work items, actions menu, Delete](media/move-change-delete/multi-delete.png)  
@@ -288,16 +288,17 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 > The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. The Delete option isn't available for TFS 2013. You can only delete work items from the **witadmin destroywi** command. 
 
 ::: moniker-end
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range="= azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can delete a work item with the [az boards work-item delete](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 > [!NOTE] 
 > You can restore work items you **delete**, but cannot restore work items you choose to **destroy**.
 
-```CLI 
+```azurecli 
 az boards work-item delete --id
                            [--destroy]
                            [--org]
@@ -317,7 +318,7 @@ az boards work-item delete --id
 
 The following command permanently deletes the bug with the ID 864 and doesn't prompt you for confirmation.
 
-```CLI
+```azurecli
 az boards work-item delete --id 864 --destroy --yes
 ```
 
@@ -330,9 +331,13 @@ az boards work-item delete --id 864 --destroy --yes
 
 <a id="restore" />
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= tfs-2015"  
 
 ## Restore or permanently delete work items   
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 You restore deleted work items from the web portal Recycle bin. 
 
@@ -361,8 +366,6 @@ You restore deleted work items from the web portal Recycle bin.
 <a id="restore-work-items" />
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
-
-## Restore or permanently delete work items   
 
 You restore deleted work items from the web portal Recycle bin. 
 
@@ -506,7 +509,18 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 
 ## Related articles   
 
-::: moniker range=">= tfs-2018"  
+::: moniker range="azure-devops"  
+
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
+- [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
+- [Delete test artifacts](delete-test-artifacts.md) 
+- [Create a test plan](../../test/create-a-test-plan.md)
+- [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) 
+
+::: moniker-end
+
+
+::: moniker range=">= tfs-2018 < azure-devops"  
 
 - [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
@@ -569,7 +583,3 @@ When you restore a work item, the following actions occur:
 - Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted.   
 
 ::: moniker-end
-
-
-
-

@@ -38,7 +38,7 @@ By default all members of an organization or project collection can view Deliver
 
 1. Open **Boards>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
-1. To grant permissions to a group or user to manage or edit a specific plan, choose the ![ ](../../media/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
+1. To grant permissions to a group or user to manage or edit a specific plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon to open the **Security** dialog for the plan.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Permissions dialog for a plan](media/permissions/open-plans-security.png)     
@@ -61,7 +61,7 @@ By default all members of an organization or project collection can view Deliver
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 1. Open **Work>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
-1. To grant permissions to a group or user to manage or edit a specific plan, choose the ![ ](../../media/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
+1. To grant permissions to a group or user to manage or edit a specific plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon to open the **Security** dialog for the plan.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Permissions dialog for a plan](media/permissions/open-plans-security.png)     
@@ -83,6 +83,6 @@ By default all members of an organization or project collection can view Deliver
 ## Related articles
 
 - [Review team delivery plans](review-team-plans.md)  
-- [About permissions and groups](../../organizations/security/about-permissions.md)
+- [About permissions and inheritance](../../organizations/security/about-permissions.md)
 - [About access levels](../../organizations/security/access-levels.md)
 

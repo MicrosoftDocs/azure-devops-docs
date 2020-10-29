@@ -3,7 +3,7 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 02/19/2020
+ms.date: 07/22/2020
 ---
 
 Publish Maven artifacts to a feed in **Azure Artifacts** to share them with your team and organization.
@@ -32,3 +32,13 @@ mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -Dgro
         ``` 
 
 Your Maven artifact should appear in your feed now. See the [Apache Maven Deploy Plugin](https://maven.apache.org/plugins/maven-deploy-plugin/) to learn more about Maven deployment.
+
+> [!TIP]
+> If you want to publish a 3rd party assembly to a Maven feed, you can use the [deploy:deploy-file Mojo](https://maven.apache.org/plugins/maven-deploy-plugin/usage.html). This mojo is used primarily to publish artifacts that were not built by Maven and you can use it with or without a POM file.
+
+```Command
+mvn deploy:deploy-file -Dpackaging="jar" -DrepositoryId="MyFeedName" -Durl="MyFeedURL" -DgroupId="MyGroup" -DartifactId="myFirstApp" -Dversion="jarFileVersion" -Dfile="jarFileLocalPath"
+```
+
+> [!IMPORTANT]
+> Maven snapshot artifacts are not currently supported in upstream sources.

@@ -4,7 +4,7 @@ description: Options that are available when using a Git repository with Azure P
 ms.topic: reference
 ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
 ms.custom: seodec18
-ms.date: 06/22/2020
+ms.date: 07/20/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -339,7 +339,25 @@ If the repo is not public, you will need to pass authentication to the Git comma
 
 ### Azure Repos
 
-Your pipeline will already have access to other repos in its project.
+::: moniker-end
+
+:::moniker range="<= azure-devops-2019"
+
+Your pipeline will already have access to other repos in its project, and you can clone them in your pipeline using a script command, as shown in the following example.
+
+```
+- script: | 
+    git clone -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" https://organization@dev.azure.com/project/FabrikamFiber/_git/reponame
+```
+
+:::moniker-end
+
+:::moniker range="> azure-devops-2019"
+
+You can clone multiple repositories in the same project as your pipeline by using [multi-repo checkout](multi-repo-checkout.md).
+
+::: moniker-end
+
 If you need to clone a repo from another project that is not public, you will need to authenticate as a user who has access to that project.
 
 > [!NOTE]
@@ -356,8 +374,6 @@ Send this as the password field in a "Basic" authorization header without a user
 AUTH=$(echo -n ":$REPO_PAT" | openssl base64 | tr -d '\n')
 git -c http.<repo URL>.extraheader="AUTHORIZATION: basic $AUTH" clone <repo URL> --no-checkout --branch master
 ```
-
-::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 

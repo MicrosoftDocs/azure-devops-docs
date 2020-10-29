@@ -4,8 +4,8 @@ description: Runs the load test in cloud with a build or release pipeline with A
 ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
 ms.topic: reference
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -82,7 +82,7 @@ Use the **Number of permissible threshold violations**
 setting if your load test is not already configured 
 with information about how many violations will cause
 a failure to be reported. For more details, see: 
-[How to: Analyze Threshold Violations Using the Counters Panel in Load Test Analyzer](https://msdn.microsoft.com/library/ff426917.aspx).
+[How to: Analyze Threshold Violations Using the Counters Panel in Load Test Analyzer](/previous-versions/ff426917(v=vs.140)).
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 

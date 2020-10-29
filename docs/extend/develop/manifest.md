@@ -7,10 +7,12 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/09/2019
+ms.date: 08/11/2020
 ---
 
 # Extension manifest reference
+
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 Every extension has a JSON manifest file which defines basic info about the extension and how it can extend and enhance the experience. This article shows you how to create a manifest for your extensions to Azure DevOps.
 
@@ -145,7 +147,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 ```
 
 > [!NOTE]
-> If you do want to target Team Foundation Server but do not wish to surface a Download option for your extension then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
+> If you do want to target TFS, but don't wish to surface a Download option for your extension, then add the `__DoNotDownload` tag (starts with two underscores) to the extension manifest.
 > If you are moving an extension from the previosuly-offerred billing & licensing from Microsoft to the BYOL model, then contact us and we'll provide you with suitable steps.
 
 ### Example of additional properties
@@ -249,28 +251,27 @@ An administrator can then review and authorize the new set of scopes:
 
 ## Installation targets
 
-As the name implies, installation targets define the products and services your extension can be installed into. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into Azure DevOps Services and Team Foundation Server 2015 Update 2 and later (the version when extension were introduced in Team Foundation Server).
+As the name implies, installation targets define the products and services your extension can be installed into. `Microsoft.VisualStudio.Services` is the most common installation target and indicates that the extension can be installed into Azure DevOps and TFS 2015 Update 2 and later (the version when extension were introduced in TFS).
 
 The installation targets for an extension or integration are specified via the `targets` field in the manifest. 
 
 Supported identifiers for **extensions**:
 
 * `Microsoft.VisualStudio.Services.Cloud`: installs into Azure DevOps Services
-* `Microsoft.TeamFoundation.Server`: installs into Team Foundation Server
+* `Microsoft.TeamFoundation.Server`: installs into TFS
 * `Microsoft.VisualStudio.Services`: installs into both. Shortcut for `Microsoft.VisualStudio.Services.Cloud` and `Microsoft.TeamFoundation.Server` version `[14.2,)`
 
-Supported identifiers for **integrations** (tools or services that integrate with Azure DevOps Services or Team Foundation Server):
+Supported identifiers for **integrations** (tools or services that integrate with Azure DevOps or TFS):
 
 * `Microsoft.VisualStudio.Services.Cloud.Integration`: integrates with Azure DevOps Services
-* `Microsoft.TeamFoundation.Server.Integration`: integrates with Team Foundation Server
+* `Microsoft.TeamFoundation.Server.Integration`: integrates with TFS
 * `Microsoft.VisualStudio.Services.Integration`: integrates with both. Shortcut for `Microsoft.VisualStudio.Services.Cloud.Integration` and `Microsoft.TeamFoundation.Server.Integration`
 
-For more information, see [Azure DevOps Services extensibility points](../reference/targets/overview.md).
+For more information, see [Azure DevOps extensibility points](/previous-versions/azure/devops/docs/extend/reference/targets/overview).
 
 ### Examples
 
-#### Example 1: Extension that works with Azure DevOps Services and Team Foundation Server
-
+#### Example 1: Extension that works with Azure DevOps and TFS
 ```json
 {
     "targets": [
@@ -293,9 +294,9 @@ For more information, see [Azure DevOps Services extensibility points](../refere
 }
 ```
 
-Installation targets can also be used in the manifest of integrations (i.e. products, apps, or tools that work with, but do not install into, Azure DevOps Services or Team Foundation Server. For example:
+Installation targets can also be used in the manifest of integrations (i.e. products, apps, or tools that work with, but do not install into, Azure DevOps or TFS. For example:
 
-#### Example 3: Integration that works with Azure DevOps Services and Team Foundation Server
+#### Example 3: Integration that works with Azure DevOps and TFS
 
 ```json
 {
@@ -307,7 +308,7 @@ Installation targets can also be used in the manifest of integrations (i.e. prod
 }
 ```
 
-#### Example 4: Integration that only works with Team Foundation Server
+#### Example 4: Integration that only works with TFS
 
 ```json
 {
@@ -344,7 +345,7 @@ Version numbers for Team Foundation Server:
 
 ### Examples showing versions
 
-#### Example 5: Extension that works with Azure DevOps Services and Team Foundation Server 2017 and later
+#### Example 5: Extension that works with Azure DevOps and TFS 2017 and later
 
 ```json
 {
@@ -360,7 +361,7 @@ Version numbers for Team Foundation Server:
 }
 ```
 
-#### Example 6: Integration that works with Team Foundation Server 2015 and later
+#### Example 6: Integration that works with TFS 2015 and later
 
 ```json
 {
@@ -373,7 +374,7 @@ Version numbers for Team Foundation Server:
 }
 ```
 
-#### Example 7: Integration that works with Team Foundation Server 2013 and 2015
+#### Example 7: Integration that works with TFS 2013 and 2015
 
 ```json
 {
@@ -388,7 +389,7 @@ Version numbers for Team Foundation Server:
 
 ### Shortcuts
 
-`Microsoft.VisualStudio.Services` is a shortcut for Azure DevOps Services and Team Foundation Server 2015 Update 2 and later. So this:
+`Microsoft.VisualStudio.Services` is a shortcut for Azure DevOps and TFS 2015 Update 2 and later. So this:
 
 ```json
 {
@@ -418,7 +419,7 @@ is equivalent to:
 
 ### Using installation targets and demands
 
-Installation targets and demands are used together to present users with an accurate view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps Services and Team Foundation Server 2017 RTM and later:
+Installation targets and demands are used together to present users with an accurate view of the products/services your extension or integration is compatible with. For example, specifying an installation target of `Microsoft.VisualStudio.Services` with a demand of `api-version/3.0` means the extension works with Azure DevOps and TFS 2017 RTM and later:
 
 #### Example 8: Extension that uses version 3.0 APIs
 
@@ -464,7 +465,7 @@ Resolves to the following installation targets:
 
 Demands let you specify capabilities and other features required by your extension. These demands can then be used to limit where your extension can be published or installed.
 
-In the future, demands will be used by the Visual Studio Marketplace to list the products and environments your extension is generally compatible with. This will help customers understand whether your extension will work with their version of Team Foundation Server (for example).
+In the future, demands will be used by the Visual Studio Marketplace to list the products and environments your extension is generally compatible with. This will help customers understand whether your extension will work with their version of TFS (for example).
 
 Demands are specified in the extension manifest. For example:
 
@@ -477,7 +478,7 @@ Demands are specified in the extension manifest. For example:
 }
 ```
 
-In this example, the extension demands version 3.0 of the APIs, which means it can only be installed to Azure DevOps Services or Team Foundation Server 2017 RTM and later. It also requires the `ms.vss-dashboards-web` extension (and its `widget-catalog` contribution) to be installed (and enabled) in the collection before your extension can be installed.    
+In this example, the extension demands version 3.0 of the APIs, which means it can only be installed to Azure DevOps or TFS 2017 RTM and later. It also requires the `ms.vss-dashboards-web` extension (and its `widget-catalog` contribution) to be installed (and enabled) in the collection before your extension can be installed.    
 
 ### Supported demands
 
@@ -621,6 +622,7 @@ The Marketplace only supports badges from the following trusted services:
 If you want to show a badge from another service, please contact vsmarketplace@microsoft.com.
 
 <a name="example"></a>
+
 ## Example manifest
 
 This extension contributions an action to the completed builds context menu and a hub to the Build hub group:

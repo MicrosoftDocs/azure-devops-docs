@@ -10,7 +10,7 @@ author: chcomley
 ms.date: 08/04/2016
 ---
 
-# Service hook consumers
+# Service hook consumers for Team Foundation Server
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 

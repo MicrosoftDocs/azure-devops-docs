@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ---
 
 
 # Customize Azure Boards to support SAFe&reg;  
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
 The main reason to customize your process is to support tracking and monitoring progress, reporting on key metrics, and meeting specific business requirements. In this article you'll learn about select process customizations you can make and why you might want to make them to support your SAFe® practices. Most of these customizations are optional. 
 
@@ -51,7 +51,7 @@ Each work item type defines the fields that capture and store information. You c
 - [Add a custom control or extension](#custom-control) to support custom functions such as a calculated field. 
 
 
-For details on customizing a work item type, see [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md).
+For details on customizing a work item type, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
 
 <a id="add-custom-field" /> 
 
@@ -115,18 +115,7 @@ You add a custom field to support tracking data requirements that aren't met wit
       Use to specify a picklist to support a taxonomy of value streams you want to associate with work. 
    :::column-end:::
 :::row-end:::
-:::row:::
-   :::column span="":::
-      WSFJ 
-   :::column-end:::
-   :::column span="":::
-      Feature, Epic 
-   :::column-end:::
-   :::column span="2":::
-      Use to add the [Weighted Shortest Job First](#wsjf) field calculated from the Effort, Business Value, Time Criticality. 
-   :::column-end:::
-:::row-end:::
- 
+
 
 For details on adding a custom field, see [Add a custom field to a work item type](../../organizations/settings/work/add-custom-field.md). 
 
@@ -138,30 +127,6 @@ You can capture a value stream using a field or tags. Tags represent a more info
 - You can create query charts based on custom fields, however, you can't specify a tag for use in query charts. 
 - You can filter backlogs, boards, and queries based on fields or tags. 
 - The number of tags created can quickly grow as anyone can add new tags as long as they have the correct permissions. 
-
-
-<a id="wsjf" />
-
-### WSJF (Weighted Shortest Job First)
-
-We recommend using the [WSJF extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension) to compute and store WSJF for your SAFe® deliverables. 
- 
-SAFe® defines WSJF (Weighted Shortest Job First) as a calculation of cost of delay versus job size. This value can help teams prioritize their portfolio backlogs with the items contributing the highest ROI.
-
-![WSJF = (Business Value + Time Criticality - Risk Reduction | Opportunity Enablement Value)/Job Size](media/safe/wsjf.png) 
-
-Four values are used to calculate WSJF:
-
-- Business Value
-- Time Criticality
-- Risk Reduction | Opportunity Enablement Value
-- Job Size
-
-
-![Work item form automatically updates with changes to field values](media/safe/auto-calc-wsjf.gif)  
-
-For details on adding and managing the extension, see the [WSJF extension overview](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension). 
-
 
 
 <!--- pros/cons of using picklists versus tags  --> 
@@ -187,32 +152,39 @@ For an index of existing fields, see [Work item field index](../work-items/guida
 
 Field rules provide support for a number of business use cases. Rules specify an action to take based on a selected condition. For example you can make a field required based on the value assigned to another field. You can add several rules to a field. 
 
-The following image shows the supported conditions and actions you can select from. 
+The following images show the supported conditions and actions you can select from. 
 
-
-
+ 
 ::: moniker range="azure-devops"
 
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-2.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions.png)
+> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-2.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions-cloud.png)
 
-> [!NOTE]  
-> "When current user is member of group..." and "When current user is not member of group ..." rules are currently only available for Azure DevOps Services.
 
 ::: moniker-end
 
+ 
+
+::: moniker range="azure-devops-2020"
+
+> [!div class="mx-tdBreakAll"]  
+> |Supported conditions |Supported actions |
+> |-------------|----------|  
+> |![list of conditions, 2020](../../organizations/settings/work/media/rules/when-condition-2020.png) | ![list of actions, 2020](../../organizations/settings/work/media/rules/rule-actions-2020.png)
+
+::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-1.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions.png)
+> |![list of conditions, 2019](../../organizations/settings/work/media/rules/when-condition-1.png) | ![list of actions, 2019](../../organizations/settings/work/media/rules/rule-actions-2019.png)
 
 ::: moniker-end
- 
+
 
 For details on setting field rules, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
 
@@ -244,7 +216,7 @@ Review with your team's what workflow states will most support their Agile pract
 
 With custom controls, you can add rich functionality to a work item form. A custom control is an extension that's been added to the [Marketplace Extensions for Azure DevOps](https://marketplace.visualstudio.com/).  
 
-One example of a custom control is the [WSJF control](#wsjf) described earlier in this article. You can add controls from the Marketplace or create your own. 
+You can add controls from the Marketplace or create your own. 
 
 
 - [WorkBoard OKRs](https://marketplace.visualstudio.com/items?itemName=wobo-okrs.workboard-ado-extension) Integrates WorkBoard helps organizations align, localize and measure Objectives and Key Results (OKRs) across the business. With this integration, teams can view and update their OKRs from within Azure DevOps. 

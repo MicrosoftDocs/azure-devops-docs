@@ -42,7 +42,7 @@ Welcome to what's new in Azure DevOps docs for April 2020. This article lists so
 - [Access repositories, artifacts, and other resources](/azure/devops/pipelines/process/access-tokens) - Shared content for accessing repositories
 - [Trigger one pipeline after another](/azure/devops/pipelines/process/pipeline-triggers) - Triggering pipelines
 - [Configure schedules for pipelines](/azure/devops/pipelines/process/scheduled-triggers) - Scheduled triggers
-- [Build BitBucket Cloud repositories](/azure/devops/pipelines/repos/bitbucket) - How to build BitBucket Cloud repositories
+- [Build Bitbucket Cloud repositories](/azure/devops/pipelines/repos/bitbucket) - How to build Bitbucket Cloud repositories
 
 ### Updated articles
 

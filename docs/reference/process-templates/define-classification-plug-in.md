@@ -7,6 +7,7 @@ ms.assetid: 7c1284c6-9c03-41e9-94c1-923db90957be
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
+monikerRange: '< azure-devops' 
 ms.date: 09/08/2017
 ---
 
@@ -143,7 +144,7 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
 > </properties>  
 > ```  
 
- To customize the FileMapping.xml file, see [Map Microsoft Project fields](../xml/map-microsoft-project-fields-to-tf-fields.md).  
+ To customize the FileMapping.xml file, see [Map Microsoft Project fields](/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields).  
 
 ##  <a name="elements"></a> Classification plug-in element reference  
  You specify the following  elements within a `taskXml` container element in the Classification plug-in file. , See [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md) for information about `taskXml`.  

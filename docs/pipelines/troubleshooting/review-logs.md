@@ -12,7 +12,7 @@ author: steved0x
 
 # Review logs to diagnose pipeline issues
 
-Pipeline logs provide a powerful tool for determining the cause pipeline failures.
+Pipeline logs provide a powerful tool for determining the cause of pipeline failures.
 
 A typical starting point is to review the logs in your completed build or release. You can view logs by navigating to the pipeline run summary and selecting the job and task. If a certain task is failing, check the logs for that task.
 
@@ -24,7 +24,7 @@ In addition to viewing logs in the pipeline build summary, you can download comp
 
 ::: moniker range="> azure-devops-2019"
 
-* To configure verbose logs for a single run, you can start a new build by choosing **Run pipeline** (or **Queue** if you don't have [Multi-stage pipelines experience turned on](../../project/navigation/preview-features.md)) and selecting **Enable system diagnostics**, **Run**.
+* To configure verbose logs for a single run, you can start a new build by choosing **Run pipeline** and selecting **Enable system diagnostics**, **Run**.
 
   ![Enable system diagnostics](../media/troubleshooting/enable-system-diagnostics.png)
 
@@ -54,7 +54,7 @@ To view individual logs for each step, navigate to the build results for the run
 
 ![Task log](../media/troubleshooting/job-task-logs.png)
 
-To download all logs, navigate to the build results for the run, select **...**, and choose **Download logs** (or **Download all logs** if you don't have [Multi-stage pipelines experience turned on](../../project/navigation/preview-features.md)).
+To download all logs, navigate to the build results for the run, select **...**, and choose **Download logs**.
 
 ![Download logs](../media/troubleshooting/download-logs.png)
 

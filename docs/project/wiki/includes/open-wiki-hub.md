@@ -9,18 +9,18 @@ ms.topic: include
 Connect to your project using a [supported web browser](/azure/devops/server/compatibility#supported-browsers) and choose **Wiki**.
 
 > [!div class="mx-imgBorder"] 
->![Create wiki, provision a Git repo for your wiki or publish existing repo Markdown files](../../../organizations/public/media/wiki/open-wiki-vert-brn.png)
+>![Create wiki, provision a Git repo for your wiki or publish existing repo Markdown files](/azure/devops/organizations/public/media/wiki/open-wiki-vert-brn.png)
 
-If you need to switch your team project, choose the ![project-icon.png](../../../media/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](../../navigation/work-across-projects.md).
+If you need to switch your team project, choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all team projects and teams](../../navigation/work-across-projects.md).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="= azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can view and open a wiki page defined for a project using the `az devops wiki show` command. To get started, see [Get started with Azure DevOps CLI](../../../cli/index.md).
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki show --wiki
                       [--open]
                       [--project]
@@ -34,12 +34,24 @@ az devops wiki show --wiki
 - **--project -p**: Optional. Name or ID of the project.
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+> [!NOTE]   
+> For Azure DevOps Server 2020, you can use the following command to set the default server instance, collection, and project.  
+> `az devops configure --defaults organization=https://ServerName/CollectionName project=ContosoWebApp`
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+
 ### Example
 
 Open a wiki named 'myprojectwiki'.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki show --wiki myprojectwiki --open
 ```
 
@@ -48,7 +60,7 @@ az devops wiki show --wiki myprojectwiki --open
 To get the content of a page via the Azure DevOps CLI, enter the `az devops wiki show` command. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page show --path
                          --wiki
                          [--include-content]
@@ -72,16 +84,14 @@ az devops wiki page show --path
 Get wiki page content with path 'my wiki' in a wiki named 'myprojectwiki'.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops wiki page show --path 'my wiki' --wiki 'myprojectwiki' --content "Hello World"
 ```
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"
-
-[!INCLUDE [note-cli-not-supported](../../../includes/note-cli-not-supported.md)]
-
+::: moniker range="< azure-devops-2020"
+Azure DevOps CLI commands aren't supported for Azure DevOps Server 2019 and earlier versions.  
 ::: moniker-end
 
 * * *

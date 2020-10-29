@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: 50ed6bb4-5f35-4e1e-aafc-295eb10198df
 ms.author: vijayma
 ms.reviewer: dastahel
-ms.custom: seodec18, tracking-python
+ms.custom: seodec18, devx-track-python
 ms.date: 10/10/2019
 monikerRange: azure-devops
 author: vijayma
@@ -220,7 +220,7 @@ For a fix, see the "Hosted macOS" tab under [Add conda to your system path](#add
 If you forget to pass `--yes`, conda will stop and wait for user interaction.
 
 ### Why is my script on Windows stopping after it activates the environment?
-On Windows, `activate` is a Batch script. You must use the [`call`](https://docs.microsoft.com/windows-server/administration/windows-commands/call) command to resume running your script after activating.
+On Windows, `activate` is a Batch script. You must use the [`call`](/windows-server/administration/windows-commands/call) command to resume running your script after activating.
 See examples of using `call` [above](#run-pipeline-steps-in-an-anaconda-environment).
 
 ### How can I run my tests with multiple versions of Python?

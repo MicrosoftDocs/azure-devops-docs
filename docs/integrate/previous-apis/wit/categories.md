@@ -16,7 +16,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [API_version](../_data/version.md)]
 
-[Categories](https://msdn.microsoft.com/library/dd695775.aspx) define the set of work item types that are used in a specific role in your project.
+[Categories](../../../reference/xml/use-categories-to-group-work-item-types.md?viewFallbackFrom=vsts) define the set of work item types that are used in a specific role in your project.
 For example, work item types in the "requirements" category show up in your backlog.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -291,7 +291,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workItemT
 
 #### Sample code
 
-* [C# (GetListOfWorkItemTypeCategories method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemTypeCategoriesSample.cs#L23)
+* [C# (GetListOfWorkItemTypeCategories method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemTypeCategoriesSample.cs#L23)
 
 ## Get a work item type category
 <a name="getaworkitemtypecategory" />
@@ -337,4 +337,4 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workItemT
 
 #### Sample code
 
-* [C# (GetWorkItemCategory method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemTypeCategoriesSample.cs#L43)
+* [C# (GetWorkItemCategory method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/WorkItemTypeCategoriesSample.cs#L43)

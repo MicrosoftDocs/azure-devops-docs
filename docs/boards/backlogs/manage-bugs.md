@@ -8,12 +8,12 @@ ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 07/22/2019
+ms.date: 07/09/2020
 ---
 
 # Define, triage, and manage bugs
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
@@ -199,7 +199,7 @@ For information about fields specific to the CMMI process, see [Bugs, issues, an
 
 You can create bugs during test sessions using one of the following tools: 
 - **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md)   
-- **Test Runner**: see [Update an existing bug while using Test Runner](https://msdn.microsoft.com/library/dd286731.aspx).  
+- **Test Runner**: see [Update an existing bug while using Test Runner](/previous-versions/dd286731(v=vs.140)).  
 
 
 <a id="triage"> </a>
@@ -251,6 +251,9 @@ Once you fix a bug, you should update its workflow State. State choices vary dep
 |------------|------------|-----------| 
 | ![Bug workflow states, Agile process template](../work-items/guidance/media/ALM_PT_Agile_WF_Bug.png) | ![Bug workflow states, Scrum process template](../work-items/guidance/media/ALM_PT_Scrum_WF_Bug.png) |  ![Bug workflow states, CMMI process template](../work-items/guidance/media/ALM_PT_CMMI_WF_Bug.png) |  
 
+> [!NOTE]  
+> The Agile process bug work item type previously had a rule which reassigned the bug to the person who created it. This rule has been [removed from the default system process](../work-items/guidance/changes-to-process-templates.md). You can reinstate this automation by adding a rule. For an Inheritance process, see [Apply rules to workflow states, Automate reassignment based on state change](../../organizations/settings/work/apply-rules-to-workflow-states.md#reassign).
+
 For Scrum bugs, you simply change the State from Committed (similar to Active) to Done. For Agile and CMMI, you first resolve the bug, indicating that the bug has been fixed. Typically, the person who created the bug then verifies the fix and updates the State from Resolved to Closed. If more work has been found after a bug has been resolved or closed, it can be reactivated by setting the State to Committed or Active. 
 
 
@@ -277,7 +280,7 @@ Choose the **Verify** option to re-run tests which identified the bug. (Requires
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017"  
-<img src="../media/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
+![Bug work item form, Actions menu, Verify option](../media/verify-bug-menu-option.png)  
 
 To learn more about running test from the web portal, see [Run tests for web apps](../../test/run-manual-tests.md).
 ::: moniker-end  
@@ -294,6 +297,9 @@ You close a bug once it's verified as fixed. However, you may also close a bug f
 - Cannot Reproduce - tests prove that the bug can't be reproduced
 - Obsolete - the bug's feature is no longer in the product
 - Copied to Backlog - a PBI or user story has been opened to track the bug
+
+> [!TIP]   
+> Once a bug has been closed and the fix is actively released in deployments, recommended practice is to never reopen it due to regression. Instead, you should consider opening a new bug and link to the older, closed bug.   
 
 It's always a good idea to describe any additional details for closing a bug in the Discussion field (new web form) or the History field (old web form) to avoid future confusion as to why the bug was closed. 
 
@@ -333,8 +339,8 @@ To track your bugs and integrate with other resources available to you, see thes
 
 ### Integrate & Test resources
 
-- [UserVoice](../../service-hooks/services/uservoice.md)  
-- [Zendesk](../../service-hooks/services/zendesk.md)  
+- [UserVoice](../../service-hooks/overview.md)  
+- [Zendesk](../../service-hooks/overview.md)  
 - [Developer testing tools scenarios and capabilities](/visualstudio/test/developer-testing-scenarios)  
 - [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)  
 
@@ -347,12 +353,12 @@ You can use Power BI to create more complex reports than what you can get from a
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 
 
 ### Pre-defined SQL Server bug reports
 
-If you work from an on-premises Azure DevOps Server or TFS and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project, you have access to the following reports (Agile and CMMI processes only).  
+If you work from an on-premises Azure DevOps Server and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project, you have access to the following reports (Agile and CMMI processes only).  
 
 - [Bug Status](../../report/sql-reports/bug-status-report.md)  
 - [Bug Trends](../../report/sql-reports/bug-trends-report.md)  

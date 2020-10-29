@@ -1,9 +1,13 @@
 ---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/09/2020
 ---
 
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 ## Display rollup progress, counts, or totals 
 

@@ -23,7 +23,7 @@ The project portal is a site associated with a team project for the purposes of 
 
 ::: moniker range="<= tfs-2017"
 
-The project portal is a site associated with a team project for the purposes of sharing information. Project portals that are created when the team project is created are associated with a SharePoint site. These [portals](../report/sharepoint-dashboards/share-information-using-the-project-portal.md) provide access to shared documents, dashboards, and support files that contain redirect links to MSDN process guidance topics.  
+The project portal is a site associated with a team project for the purposes of sharing information. Project portals that are created when the team project is created are associated with a SharePoint site. These [portals](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) provide access to shared documents, dashboards, and support files that contain redirect links to MSDN process guidance topics.  
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ Choose one of the following options based on your deployment configuration and t
 
 Configure this option when you aren't using SharePoint Products.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](/azure/devops/organizations/security/set-project-collection-level-permissions).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](../organizations/security/set-project-collection-level-permissions.md).  
   
 2.  Open Portal Settings.  
   
@@ -94,7 +94,7 @@ Configure this option when you aren't using SharePoint Products.
 
  Choose this option when you have a SharePoint Web application that has been integrated to work with TFS. To learn how to do this, see [SharePoint Products requirements for Team Foundation Server](/azure/devops/server/requirements#sharepoint).  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](/azure/devops/organizations/security/set-project-collection-level-permissions).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](../organizations/security/set-project-collection-level-permissions.md).  
   
 2.  Open Portal Settings from the Settings page in Team Explorer.  
   
@@ -177,7 +177,7 @@ The artifacts you'll have access to depend on the process template created with 
 ## Related articles
 
 - [Choose a process](../boards/work-items/guidance/choose-process.md)
-- [About SharePoint integration](../report/sharepoint-dashboards/about-sharepoint-integration.md)
-- [Discontinue SharePoint integration: TFS 2017 and earlier versions](../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)
+- [About SharePoint integration](/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration)
+- [Discontinue SharePoint integration: TFS 2017 and earlier versions](/previous-versions/azure/devops/report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration)
 
 ::: moniker-end

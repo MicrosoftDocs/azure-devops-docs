@@ -1,6 +1,6 @@
 ---
-title: Azure DevOps Release Notes - General Sprint 168 Update
-description: See the Sprint 168 feature updates for General, including next steps.
+title: Azure DevOps Release Notes - General Sprint 171 Update
+description: See the Sprint 171 feature updates for General, including next steps.
 author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Share code in a Git repo and a new team project 
 ms.assetid: 
 ms.technology: devops-new-user
-ms.author: apawast
-author: apawast
 ms.date: 09/10/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
@@ -271,6 +269,6 @@ Now you're ready to create a new branch, write some code, and do it again.
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Set up continuous integration and delivery](../../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
+> [Set up continuous integration and delivery](../../pipelines/create-first-pipeline.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json)
 > or
 > [learn more about working with a Git repo](../git/index.yml).

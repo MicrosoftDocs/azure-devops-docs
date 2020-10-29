@@ -123,6 +123,8 @@
       href: delete-existing-repo.md
     - name: Rename a repo
       href: repo-rename.md
+    - name: Change the default branch
+      href: change-default-branch.md
     - name: Find a file
       href: find-a-file.md
     - name: Create a readme

@@ -12,6 +12,8 @@ ms.date: 10/02/2019
 
 # Guidance for extension developers impacted by vertical navigation
 
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+
 Vertical navigation brings with it changes that impact some extensions. This includes support for extension icons along with changes to team context.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]

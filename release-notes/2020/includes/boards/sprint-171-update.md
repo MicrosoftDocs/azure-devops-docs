@@ -10,7 +10,7 @@ ms.topic: include
 
 We continue to close the feature parity gap between hosted XML and the inherited process model. Starting this sprint, a private preview of restricted state transitions for inherited processes is available. This new work item type rule allows you to restrict work items from being moved from one state to another. For example, you can restrict Bugs from going from New to Resolved. Instead, they must go from New –&gt; Active -&gt; Resolved
 
-![img](../../media/171-boards-0-0.png)
+![State transition restriction rules.](../../media/171-boards-0-0.png)
 
 You can also create a rule to restrict state transitions by group membership. For example, only users in the “Approvers” group can move user stories from New -&gt; Approved.
 

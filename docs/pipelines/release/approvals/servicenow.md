@@ -146,7 +146,7 @@ of [ServiceNow](https://www.servicenow.com/) to which applications can be instal
 
 ### Q: What versions of ServiceNow are supported?
 
-**A**: The integration is compatible with Kingston and London versions of ServiceNow.
+**A**: The integration is compatible with Kingston and above ServiceNow versions.
 
 ### Q: What types of change request can be managed with the integration?
 
