@@ -422,7 +422,7 @@ Maintenance job settings are configured at the organization settings level for s
 
 :::image type="content" source="media/maintenance-job-settings.png" alt-text="Maintenance job settings":::
 
-Select **Maintenance History** to see you maintenance job history for the current agent pool. You can download and review logs to see the cleaning steps and actions.
+Select **Maintenance History** to see the maintenance job history for the current agent pool. You can download and review logs to see the cleaning steps and actions.
 
 :::image type="content" source="media/maintenance-job-history.png" alt-text="Maintenance job history":::
 
