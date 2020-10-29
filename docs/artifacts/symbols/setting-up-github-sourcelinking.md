@@ -49,7 +49,8 @@ To point Visual Studio to Azure DevOps Services for downloading symbols click on
 
 Next select the _General_ item under the _Debugging_ group and scroll down and check the **Enable Source Link support**.
 
-![Source Linking option enabled on general debugging panel](media/symbolgeneralpanelsourcelinking.png)
+> [!div class="mx-imgBorder"]
+> ![Enable source link support](media/enable-source-link-support.png)
 
 Now that Visual Studio is setup it is time to attach the debugger to the process that is running the code that you want to download symbols for. Once the debugger is attached Visual Studio will attempt to locate symbols for each binary by probing Azure DevOps Services, if the symbols are found then it will download the PDB files.
 
