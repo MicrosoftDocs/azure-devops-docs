@@ -8,8 +8,8 @@ ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 12/10/2019
-monikerRange: '>= tfs-2015 <= azure-devops-2019'
+ms.date: 07/24/2020
+monikerRange: '>= tfs-2015 < azure-devops'
 ---
 # Buy access to Azure DevOps Server or Azure Test Plans
 
@@ -29,10 +29,10 @@ To learn more about the requirements to access Azure DevOps Server or Azure Test
 
 1. [Sign up for an organization](../accounts/create-organization.md), if you don't have one already.
 
-   You can use Azure DevOps Server features, like Basic or Azure Test Plans up to your total entitlements across Visual Studio subscription purchases, Azure DevOps Server CALs, and paid users in Azure DevOps. 
+   You can use Azure DevOps Server features, like Basic or Azure Test Plans up to your total entitlements across Visual Studio subscription purchases, Azure DevOps Server CALs, and paid users in Azure DevOps.
 
 2. Based on these numbers, pay for Basic users in your organization.  
-   
+
    Free users aren’t licensed to use Azure DevOps Server, so add 5 additional Basic users who aren’t going to use your server, to ensure everyone else has paid monthly access.
 
    Users are invited to your organization, but you're not required to use Azure DevOps. 
@@ -46,7 +46,7 @@ To learn more about the requirements to access Azure DevOps Server or Azure Test
 
 ## Buy monthly access to Azure Test Plans
 
-::: moniker range="= azure-devops-2019"
+::: moniker range="= azure-devops-2019 || azure-devops-2020"
 
 1. [Sign up for an organization](../accounts/create-organization.md), if you don't have one already.
 
@@ -55,7 +55,7 @@ To learn more about the requirements to access Azure DevOps Server or Azure Test
   These users are invited to your organization, but aren't required to use Azure DevOps Services. By assigning Basic + Test Plans or Microsoft Test Manager within your organization, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). 
 
 > [!NOTE]
->  These users must sign in to Visual Studio Test Professional with the same credentials that they used to join your organization. 
+> These users must sign in to Visual Studio Test Professional with the same credentials that they used to join your organization. 
 
 3. As the Azure DevOps Server administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-users-team-project). Give them [Basic + Test Plans access](../security/change-access-levels.md) so they can use Azure Test Plans. 
 
@@ -104,5 +104,3 @@ A: See [Change access levels](../security/change-access-levels.md).
 
 - [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 - [Azure DevOps billing support](https://azure.microsoft.com/support/devops/)
-
-

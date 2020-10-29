@@ -1,6 +1,6 @@
-Before an extension can be installed into an organization in Azure DevOps Services, it must be shared with that organization. Sharing is a requirement during development and testing of an extension, as it is the only way to run an extension.
+Before an extension can be installed into an organization, you must share it with that organization. Sharing is a requirement during development and testing of an extension, as it is the only way to run an extension.
 
-To share an extension so it can be installed:
+To share an extension so it can be installed, complete the following tasks:
 
 1. Select an extension from the list of displayed items. 
 2. Select the **Share** button.

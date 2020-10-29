@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Get started with NuGet packages in Azure DevOps Services and TFS
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services | TFS 2018 | TFS 2017**
 
 ## Before you start
 
@@ -49,7 +49,7 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 ## Automate the process with continuous integration
 
 You can use continuous integration systems like Team Build to automate the packing and publishing of your packages. 
-To get started with continuous integration, see the [NuGet in Team Build guidance](/azure/devops/pipelines/artifacts/nuget).
+To get started with continuous integration, see the [NuGet in Team Build guidance](../pipelines/artifacts/nuget.md).
 
 ## What's next?
 

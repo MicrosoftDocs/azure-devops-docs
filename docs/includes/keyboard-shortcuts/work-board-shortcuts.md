@@ -19,7 +19,7 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 <table>
 <tbody valign="top">
@@ -34,14 +34,14 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 <br/>
 <strong>Ctrl+Shift+f</strong>&nbsp;&nbsp;&nbsp;&nbsp;Filter results<br/>
 <br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up arrow"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Next.png" alt="Left arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Previous.png" alt="right arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item right<br/><br/><br/>
+<strong>Ctrl+↑</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
+<strong>Ctrl+↓</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
+<strong>Ctrl+←</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
+<strong>Ctrl+→</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item right<br/><br/><br/>
 <strong>Ctrl+Home</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to top of column<br/>
 <strong>Ctrl+End</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to bottom of column<br/>
-<strong>Ctrl+Shift+</strong><img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up arrow"/>&nbsp;&nbsp;Move item to swimlane above<br/>
-<strong>Ctrl+Shift+</strong><img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;Move item to swimlane below <br/>
+<strong>Ctrl+Shift+↑</strong>&nbsp;&nbsp;Move item to swimlane above<br/>
+<strong>Ctrl+Shift+↓</strong>&nbsp;&nbsp;Move item to swimlane below <br/>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>F2</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename item<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>e</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show/hide empty fields<br/>
@@ -58,7 +58,7 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019"
+::: moniker range=">= tfs-2015 < azure-devops-2020"
 
 
 <table>
@@ -74,14 +74,14 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 <br/>
 <strong>Ctrl+Shift+f</strong>&nbsp;&nbsp;&nbsp;&nbsp;Filter results<br/>
 <br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up arrow"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Next.png" alt="Left arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Previous.png" alt="right arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item right<br/><br/><br/>
+<strong>Ctrl+↑</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
+<strong>Ctrl+↓</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
+<strong>Ctrl+←</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
+<strong>Ctrl+→</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item right<br/><br/><br/>
 <strong>Ctrl+Home</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to top of column<br/>
 <strong>Ctrl+End</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to bottom of column<br/>
-<strong>Ctrl+Shift+</strong><img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up arrow"/>&nbsp;&nbsp;Move item to swimlane above<br/>
-<strong>Ctrl+Shift+</strong><img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;Move item to swimlane below <br/>
+<strong>Ctrl+Shift+↑</strong>&nbsp;&nbsp;Move item to swimlane above<br/>
+<strong>Ctrl+Shift+↓</strong>&nbsp;&nbsp;Move item to swimlane below <br/>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>F2</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename item<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>e</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show/hide empty fields<br/>

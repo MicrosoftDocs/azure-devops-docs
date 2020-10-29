@@ -12,6 +12,8 @@ ms.date: 08/04/2016
 
 # C# client library samples 
 
+[!INCLUDE [version-all](../../../includes/version-all.md)]
+
 Samples showing how to extend and integrate with Team Foundation Server and Azure DevOps Services using the [.NET client libraries](../../concepts/dotnet-client-libraries.md).
 
 

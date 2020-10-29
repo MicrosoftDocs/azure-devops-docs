@@ -40,8 +40,8 @@
     href: query-by-date-or-current-iteration.md  
   - name: Query based on tags
     href: add-tags-to-work-items.md#query
-  - name: Query history
-    displayname: revision, rev, Contains Words, Watermark
+  - name: Query history and discussion
+    displayname: revision, rev, Contains Words, Watermark, comments, change date, closed date, created date, resolved date, search comments
     href: history-and-auditing.md  
   - name: Query by field comparison
     href: query-field-value.md   
@@ -65,7 +65,7 @@
     href: ../../report/dashboards/charts.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Query fields, operators & macros
     href: query-operators-variables.md
-  - name: WIQL syntax
+  - name: Work Item Query Language (WIQL) syntax
     href: wiql-syntax.md
 
 

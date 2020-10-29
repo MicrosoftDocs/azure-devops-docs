@@ -7,7 +7,7 @@ description: Displays the status of the last build for each build category run f
 ms.assetid: 1791d80f-91f6-4e4a-a544-a3289a8a39ac
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 10/17/2017
 ---
 
@@ -43,14 +43,14 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
  The daily results of runs of build definitions appear in the colors that the following table describes:  
   
-|Build status||Color|Indicates|  
+|Build status|Color|Indicates|  
 |------------------|-|-----------|---------------|  
-|Passed|![Color green used in Build Success report](media/procguid_buildsuccess_green.png "ProcGuid_BuildSuccess_Green")|Green|-   Build succeeded.<br />-   All tests completed successfully.<br />-   Code coverage was good.|  
-|Tests Passed, Low Coverage|![Color light green used in Build Success report](media/procguid_buildsuccess_lightgreen.png "ProcGuid_BuildSuccess_LightGreen")|Light green|-   Build succeeded.<br />-   All tests completed successfully.<br />-   Code coverage was minimal.|  
-|Build Succeeded, No Tests|![Color yellow used in Build Success report](media/procguid_buildsuccess_yellow.png "ProcGuid_BuildSuccess_Yellow")|Yellow|-   Build succeeded.<br />-   No tests were run.|  
-|Build Failed|![Color red used in Build Success report](media/procguid_buildsuccess_red.png "ProcGuid_BuildSuccess_Red")|Red|-   Build ran but did not pass.<br />-   At least one test failed that did not previously fail. Either the test is new or the test passed in previous test runs.|  
-|Tests Failed|![Color orange used in Build Success report](media/procguid_buildsuccess_orange.png "ProcGuid_BuildSuccess_Orange")|Orange|-   Build failed due to a compile error or other error.|  
-|No build|![Color white used in Build Success report](media/procguid_buildsuccess_white.png "ProcGuid_BuildSuccess_White")|White|-   Build was not run on this day.|  
+|Passed|:::image type="icon" source="media/procguid_buildsuccess_green.png" border="false"::: Green|-   Build succeeded.<br />-   All tests completed successfully.<br />-   Code coverage was good.|  
+|Tests Passed, Low Coverage|:::image type="icon" source="media/procguid_buildsuccess_lightgreen.png" border="false"::: Light&nbsp;green|-   Build succeeded.<br />-   All tests completed successfully.<br />-   Code coverage was minimal.|  
+|Build Succeeded, No Tests|:::image type="icon" source="media/procguid_buildsuccess_yellow.png" border="false"::: Yellow|-   Build succeeded.<br />-   No tests were run.|  
+|Build Failed|:::image type="icon" source="media/procguid_buildsuccess_red.png" border="false"::: Red|-   Build ran but did not pass.<br />-   At least one test failed that did not previously fail. Either the test is new or the test passed in previous test runs.|  
+|Tests Failed|:::image type="icon" source="media/procguid_buildsuccess_orange.png" border="false"::: Orange|-   Build failed due to a compile error or other error.|  
+|No build|:::image type="icon" source="media/procguid_buildsuccess_white.png" border="false"::: White|-   Build was not run on this day.|  
   
  You can filter the report in the following ways:  
   
@@ -69,12 +69,12 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
 -   **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
+     For more information, see [Get started with CI/CD](../../pipelines/create-first-pipeline.md).
   
 -   **Run builds regularly**. You can run builds can be run at set intervals or after every check-in. You can schedule regular builds when you use the schedule trigger. For more information, see [Build triggers](../../pipelines/build/triggers.md).
   
     > [!NOTE]
-    >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Success Over Time report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](build-summary-report.md).  
+    >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Success Over Time report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](/previous-versions/ms181734(v=vs.140)) and [Build Summary](build-summary-report.md).  
   
 ##  <a name="Duration"></a> Setting the Duration of the Report  
  To understand the progress that your team is making in your current iteration, the start and end dates for the report must match those of your current iteration cycle.  

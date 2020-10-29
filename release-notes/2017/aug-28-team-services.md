@@ -53,7 +53,7 @@ Work items can be filtered by typing a keyword, or using different fields such a
 While developing the new **Work Items** hub, we wanted to ensure that you could re-create each one of the pivots via the **Query Editor**. Previously, we supported querying on items that you’re following and that were assigned to you but this sprint we created two new macros: @RecentMentions and @MyRecentActivity. With these, you can now create a query and obtain the work items where you’ve been mentioned in the last 30 days or create a query that returns your latest activity. Here’s a sneak peek of how these macros can be used:
 
 > [!div class="mx-imgBorder"]
-> ![filters](media/08_28_29.png)
+> ![Macros to create queries.](media/08_28_29.png)
 
 See the [documentation for the Work Items hub](https://visualstudio.microsoft.com/docs/work/work-items/view-add-work-items) for more information.
 
@@ -90,7 +90,7 @@ We’ve added a new **Mentioned** pivot under the **My work items** page. Inside
 This same pivot is also available via our mobile experience, bringing consistency between both mobile and desktop.
 
 > [!div class="mx-imgBorder"]
-> ![mentioned work](media/08_28_30.png)
+> ![Mobile experience for mentioned work.](media/08_28_30.png)
 
 ### Custom Fields and Tags in Notifications
 
@@ -335,7 +335,7 @@ Azure Active Directory (Azure AD) users will be able to see a users **Reports to
 
 In the past, our REST documentation has been focused solely on using PATs for access to our REST APIs. We’ve updated our documentation for extensions and integrations to give guidance on how best to authenticate given your application scenario. Whether you’re developing a native client application, interactive web app, or simply calling an API via Powershell, we have clear sample on how best to authenticate with VSTS. For more information see the [documentation](https://visualstudio.microsoft.com/docs/integrate/get-started/authentication/authentication_guidance).
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize through the new feedback menu.
 

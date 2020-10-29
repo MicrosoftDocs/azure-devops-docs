@@ -20,17 +20,13 @@ To support security of your pipeline operations, you can add users to a built-in
 
 This topic provides a description of the permissions and roles used to secure operations. To learn how to add a user or group to Azure Pipelines, see [Users](set-permissions.md).
 
-For permissions, you grant or restrict permissions by setting the permission state to Allow or Deny, either for a security group or an individual user. For a role, you add a user or group to the role. To learn more about how permissions are set, including inheritance, see [About permissions and groups](../../organizations/security/about-permissions.md). To learn how inheritance is supported for role-based membership, see [About security roles](../../organizations/security/about-security-roles.md).
+For permissions, you grant or restrict permissions by setting the permission state to Allow or Deny, either for a security group or an individual user. For a role, you add a user or group to the role. To learn more about how permissions are set, including inheritance, see [About permissions and inheritance(../../organizations/security/about-permissions.md). To learn how inheritance is supported for role-based membership, see [About security roles](../../organizations/security/about-security-roles.md).
 
 ## Default permissions assigned to built-in security groups
 
 Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below.
 
-::: moniker range="azure-devops"
-
-> [!NOTE]   
->  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the ![ ](/azure/devops/media/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../../organizations/security/provide-stakeholder-pipeline-access.md).
-
+::: moniker range=">=azure-devops-2020"
 
 [!INCLUDE [temp](../../organizations/security/includes/pipelines-cloud.md)]
 

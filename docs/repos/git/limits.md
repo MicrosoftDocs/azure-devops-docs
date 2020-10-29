@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Resource limits applied to Git operations
 ms.assetid: 
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 04/23/2018
 monikerRange: 'azure-devops'
@@ -14,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Git limits
 
-#### Azure Repos
+**Azure Repos**
 
 We impose a few resource limits on Git repositories in Azure Repos.
 Our goal is to ensure reliability and availability for all customers.

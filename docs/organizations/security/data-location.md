@@ -28,7 +28,7 @@ Azure DevOps data is available in the following eight geographies across the wor
 - United Kingdom
 - United States
 
-We default your organization to your closest geography. However, you can choose a different geography. Later on, if you change your mind, our CSS team can help you migrate your organization to a different geography. 
+We default your organization to your closest geography. However, you can choose a different geography. Later on, if you change your mind, you can [migrate your organization to a different geography](../accounts/change-organization-location.md). 
 
 ## Customer data
 

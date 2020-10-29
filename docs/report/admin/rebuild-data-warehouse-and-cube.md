@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= azure-devops-2019" 
+monikerRange: '< azure-devops' 
 ms.date: 11/19/2018
 ---
 
@@ -91,7 +91,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 2. Log on to the server that hosts Reporting Services, and stop the SQL Server Reporting Services (*TFSINSTANCE*) service.  Use the [report reader account](/azure/devops/server/requirements). 
 
-3. Make sure that TCP/IP has been enabled for SQL Server on the data-tier server. For more information, see [Enable the TCP/IP Protocol for a Database Instance](https://msdn.microsoft.com/library/bb909712.aspx).  
+3. Make sure that TCP/IP has been enabled for SQL Server on the data-tier server. For more information, see [Enable the TCP/IP Protocol for a Database Instance](/previous-versions/bb909712(v=vs.120)).  
 
 
 <a id="create-datawarehouse">  </a> 
@@ -175,9 +175,9 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 Also, data in the warehouse or cube that originates from third-party sources might also be lost. Even though most third-party tools are capable of republishing data, that capability depends on the individual vendor. Contact your vendor to determine what (if any) data might be lost.
 
-For details of what data doesn't get deleted from the database when you delete builds, see [this blog post](https://docs.microsoft.com/archive/blogs/adamroot/working-with-deleted-build-data-in-team-foundation-server-2010-2).
+For details of what data doesn't get deleted from the database when you delete builds, see [this blog post](/archive/blogs/adamroot/working-with-deleted-build-data-in-team-foundation-server-2010-2).
 
-Deleting builds doesn't remove all associated data from the database. To do that, you must destroy the builds. You use the **TFSBuild destroy** [command to destroy builds](https://msdn.microsoft.com/library/ee794689.aspx) and to save space in the data warehouse. 
+Deleting builds doesn't remove all associated data from the database. To do that, you must destroy the builds. You use the **TFSBuild destroy** [command to destroy builds](/previous-versions/visualstudio/visual-studio-2010/ee794689(v=vs.100)) and to save space in the data warehouse. 
 
 <!-- ENDSECTION -->
 
@@ -187,4 +187,4 @@ Deleting builds doesn't remove all associated data from the database. To do that
 - [RebuildWarehouse Command](/previous-versions/visualstudio/visual-studio-2013/ee349264(v=vs.120))  
 - [Components of the TFS data warehouse](../dashboards/choose-source-data-authoring-tool.md)  
 - [Manage TFS reports, data warehouse, and analysis services cube](manage-reports-data-warehouse-cube.md)
-- [Add reports to a team project](add-reports-to-a-team-project.md).    
+- [Add reports to a team project](add-reports-to-a-team-project.md).

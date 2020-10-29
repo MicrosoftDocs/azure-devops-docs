@@ -3,6 +3,7 @@ title: FIELD (Workflow) element reference
 titleSuffix: TFS
 description: Syntax and usage of the FIELD element used to specify rules and conditions on fields within the workflow of a work item type 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 62ee6ea1-bb55-4462-93ff-224ad799812a
 ms.author: kaelli
 author: KathrynEE

@@ -15,7 +15,7 @@ ms.date: 03/06/2020
 **Azure DevOps Services (Hosted XML)**
 
 > [!IMPORTANT]  
-> Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
+> Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Database Import Service](../../../../migrate/migration-overview.md).  
 >
 > If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
 >
@@ -76,7 +76,7 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
 2.  From the **Processes** tab, choose import and then drag-and-drop or browse to the zip file of the process you've customized.  
   
     > [!NOTE]    
-    > If you don't see the **Import process** link, then your organization isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](https://aka.ms/TFSDataImport).
+    > If you don't see the **Import process** link, then your organization isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](../../../../migrate/migration-overview.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Import Process link ](media/import-process-import-link.png)
@@ -163,5 +163,3 @@ The system exports a zip file containing an XML representation of the process.  
 - [Change a project from Hosted XML to an inherited process](../change-process-from-hosted-to-inherited.md)
 - [Clone a Hosted XML process to an Inheritance process](../upgrade-hosted-to-inherited.md)
 - [Supported operations when moving from Hosted XML to an inherited process](../upgrade-support-hosted-to-inherited.md)
-
-

@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this article, learn the answers to frequently asked questions (FAQs) about setting up Visual Studio with Azure DevOps.
+Learn the answers to frequently asked questions (FAQs) about setting up Visual Studio with Azure DevOps.
 
 ## Visual Studio
 
@@ -28,26 +28,26 @@ A: Your Visual Studio settings,
 like automatic brace completion, 
 are saved with your profile. 
 These settings roam with your [personal Microsoft account](https://www.microsoft.com/account), 
-or your [work or school account](https://azure.microsoft.com/documentation/articles/sign-up-organization/), 
+or your [work or school account](/azure/active-directory/fundamentals/sign-up-organization), 
 when you sign in to Visual Studio on any computer. 
 
 Sign in to Visual Studio during the 30-day 
 trial period for these benefits:
 
 *    Visual Studio Enterprise: Extend your trial for 90 days. When your trial expires, 
-learn [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.aspx).
+learn [how to unlock Visual Studio](/visualstudio/ide/how-to-unlock-visual-studio).
 *    Visual Studio Express or Community: Continue to use this edition for free.
 
 When you create your profile, you can also create an organization.
 
-Learn more about [the benefits of signing in and creating a profile](https://msdn.microsoft.com/library/dn457348.aspx). 
+Learn more about [the benefits of signing in and creating a profile](/visualstudio/ide/signing-in-to-visual-studio). 
 
 <a name="cannot-sign-in"></a>
 
 ### Q: Why can't I sign in?
 
 A: Sign in with a [personal Microsoft account](https://www.microsoft.com/account) 
-or a [work or school account](https://azure.microsoft.com/documentation/articles/sign-up-organization/) 
+or a [work or school account](/azure/active-directory/fundamentals/sign-up-organization) 
 that's managed by Azure Active Directory.
 
 <a name="vs-versions"></a>
@@ -77,7 +77,7 @@ go to **Connect to Team Foundation Server** > **Select Team Projects** > **Serve
 If you get connection errors, try choosing HTTPS as your protocol.
 
 To connect to Azure DevOps with Visual Studio 2015 and later, 
-learn [how to connect to team projects](/azure/devops/organizations/projects/connect-to-projects). 
+learn [how to connect to team projects](../projects/connect-to-projects.md). 
 
 ### Q: Can I use Visual Studio 2015 with Visual Studio 2013 and 2012 on the same computer?
 
@@ -94,7 +94,7 @@ and select your project.
 
 ### Q: My subscription expired. What do I do?
 
-A: Here's [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.aspx). 
+A: Here's [how to unlock Visual Studio](/visualstudio/ide/how-to-unlock-visual-studio). 
 If you're having subscription problems, 
 try [Subscription Support](https://visualstudio.microsoft.com/support/subscription-support-vs).
 
@@ -102,9 +102,9 @@ try [Subscription Support](https://visualstudio.microsoft.com/support/subscripti
 
 A: Learn more about:
 
-*    [Installing Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx).
-*    [Signing in to Visual Studio](https://msdn.microsoft.com/library/dn457348.aspx).
-*    [Managing multiple user organizations](https://msdn.microsoft.com/library/dn872465.aspx).
+*    [Installing Visual Studio](/visualstudio/install/install-visual-studio-2015).
+*    [Signing in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio).
+*    [Managing multiple user organizations](/visualstudio/ide/work-with-multiple-user-accounts).
 
 Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/support-overview-vs). 
 
@@ -113,4 +113,3 @@ Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/su
 - [Access with Azure AD FAQs](faq-azure-access.md)
 - [Configure and customize organization FAQs](faq-configure-customize-organization.md)
 - [User and permissions management FAQs](faq-user-and-permissions-management.md)
-

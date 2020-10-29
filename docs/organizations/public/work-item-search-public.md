@@ -11,11 +11,11 @@ ms.date: 11/22/2019
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Search for work items defined in a public project
+# Search for work items defined in a public project
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this quickstart, you learn how to perform a work item search to quickly find work items defined within a public project.
+Learn how to perform a work item search to quickly find work items defined within a public project.
 
 <a name="start-search"></a>
 

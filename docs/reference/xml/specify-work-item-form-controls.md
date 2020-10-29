@@ -3,6 +3,7 @@ title: Specify work item form controls
 titleSuffix: TFS
 description: Provides a quick reference to the Control element, its child elements, and attributes.
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: eb87afdf-66f4-4607-94c9-3909fd208079
 ms.author: kaelli
 author: KathrynEE
@@ -120,7 +121,7 @@ Label="Preferred Start Time:" LabelPosition="Left" Format="Time" />
 |Attribute|Description|  
 |---------------|-----------------|  
 |`Format`|Specifies the format for the date-time field that corresponds to one value of the DateTimePickerFormat enum. Valid values are as follows: `Custom`, `Long`, `Short`, `Time`.<br /><br /> When you specify `Custom`, you must also set the `CustomFormat` attribute.|  
-|`CustomFormat`|Specifies the custom format that is used for the date-time field that corresponds to the syntax that is defined for the DateTimePicker.CustomFormat property. For example:<br /><br /> Format="Custom"<br /><br /> CustomFormat = "MMM dd, 'of the year' yyyy"<br /><br /> For more information, see the Microsoft Web site: [DateTimePicker.CustomFormat Property](https://go.microsoft.com/fwlink/?LinkId=148757).|  
+|`CustomFormat`|Specifies the custom format that is used for the date-time field that corresponds to the syntax that is defined for the DateTimePicker.CustomFormat property. For example:<br /><br /> Format="Custom"<br /><br /> CustomFormat = "MMM dd, 'of the year' yyyy"<br /><br /> For more information, see the Microsoft Web site: [DateTimePicker.CustomFormat Property](/dotnet/api/system.windows.forms.datetimepicker.customformat).|  
 
 
 ## Add a rich-text (HTML) field  
@@ -287,6 +288,4 @@ In the second method, you specify the `ReadOnly` attribute for the `CONTROL` ele
 |`NumberFormat`|`FieldControl`|Specifies the characters that you can enter in the field control. The following values are valid: `WholeNumbers`, `SignedWholeNumbers`, `DecimalNumbers`, and `SignedDecimalNumbers`.|  
 |`MaxLength`|`FieldControl`|Specifies the maximum length of characters that you can use for a field control.|  
 |`Format`|`DateTimeControl`|Specifies the format for the date-time field that corresponds to one value of the DateTimePickerFormat enum. The following values are valid: `Custom`, `Long`, `Short`, `Time`.|  
-|`CustomFormat`|`DateTimeControl`|Specifies the custom format that is used for the date-time field that corresponds to the syntax that is defined for the DateTimePicker.CustomFormat property.|  
-
-
+|`CustomFormat`|`DateTimeControl`|Specifies the custom format that is used for the date-time field that corresponds to the syntax that is defined for the DateTimePicker.CustomFormat property.|

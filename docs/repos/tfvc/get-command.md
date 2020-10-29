@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Get files or folders under TFVC version control using the Get command
 ms.assetid: f374dfcb-9c1b-4cab-9a20-3c81d29593a3
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Get command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Gets (downloads) either the latest version or a specified version of one or more files or folders from Team Foundation Server to the workspace. Although the **Get** command provides a different user interface than Visual Studio (see [Download (get) files from the Server](download-get-files-from-server.md)), the process is fundamentally the same.
 
@@ -78,7 +76,7 @@ tf get [itemspec] [/version:versionspec] [/all] [/overwrite] [/force] [/remap]
 </tr>
 <tr>
 <td><p><strong>/remap</strong></p></td>
-<td><p>See <a href="https://go.microsoft.com/fwlink/?LinkId=253390">phkelley&#39;s blog: tf get /remap</a>.</p></td>
+<td><p>See <a href="/archive/blogs/phkelley/tf-get-remap">phkelley&#39;s blog: tf get /remap</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/version</strong>:<i>versionspec</i></p></td>

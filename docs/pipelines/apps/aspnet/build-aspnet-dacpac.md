@@ -68,9 +68,9 @@ Save the build pipeline and queue a new build by selecting the **Queue new build
 
 After you've run the build, you're ready to create a release pipeline to deploy your database to:
 
-* <a href="../../targets/azure-sqldb.md"><img src="../../tasks/deploy/media/azure-sql-database-deployment-icon.png"/> Azure SQL Server</a>
+* <a href="../../targets/azure-sqldb.md">:::image type="icon" source="../../tasks/deploy/media/azure-sql-database-deployment-icon.png" border="false"::: Azure SQL Server</a>
 
-* <a href="../cd/howto-webdeploy-iis-deploygroups.md#database"><img src="../../tasks/deploy/media/sql-server-database-deployment-icon.png"/> SQL Server</a>
+* <a href="../cd/howto-webdeploy-iis-deploygroups.md#database">:::image type="icon" source="../../tasks/deploy/media/sql-server-database-deployment-icon.png" border="false"::: SQL Server</a>
 
 ## FAQ
 

@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
-ms.date: 06/19/2020
+ms.date: 07/20/2020  
 ---
 
 
@@ -48,9 +48,9 @@ Review this article to understand how to define rules that apply when you change
 > - Workflow state and rule limits and best practices 
 > - Set a field value or make a field read-only or required based on State selection 
 > - Restrict state transitions 
+> - Restrict or allow State transitions to specific users or groups
 > - Automate state transitions of parent work items  
 
-<!--- Restrict or allow State transitions to specific users or groups --> 
 ::: moniker-end
 
 
@@ -76,9 +76,6 @@ Review this article to understand how to define rules that apply when you change
 The following table indicates the three groups of workflow rules you can define. The first group applies standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions set the value of a field or makes a field read-only or required. In this group, you can specify one or two conditions and several actions. 
 
 The second and third groups support restricting state transitions. These two groups allow you to specify one and only one condition indicating the state a work item has moved to. You can then specify one or more actions to restrict the transition from that state to other states.  
-
-> [!NOTE]   
-> State restriction rules are in Private Preview for Azure DevOps Services only. If you are interested in participating in the Private Preview, see [State transition restriction rules (private preview)](/azure/devops/release-notes/2020/sprint-171-update#azure-boards-1).
 
 ---
 :::row:::
@@ -108,7 +105,7 @@ The second and third groups support restricting state transitions. These two gro
 ---  
 :::row:::  
    :::column span="4":::
-      **Retrict a transition based on State**
+      **Restrict a transition based on State**
    :::column-end:::
 :::row-end:::
 :::row:::  
@@ -118,13 +115,12 @@ The second and third groups support restricting state transitions. These two gro
    :::column-end:::
    :::column span="2":::
       > [!div class="mx-imgBorder"]  
-      > ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
-   :::column-end:::
+      > ![Actions, restrict a transaction based on State.](media/customize-workflow/actions-restrict-transition-to-state.png)
 :::row-end:::
 ---  
 :::row:::  
    :::column span="4":::
-      **Retrict a transition based on State and user or group membership**
+      **Restrict a transition based on State and user or group membership**
    :::column-end:::
 :::row-end:::
 :::row:::  
@@ -134,7 +130,7 @@ The second and third groups support restricting state transitions. These two gro
    :::column-end:::
    :::column span="2":::
       > [!div class="mx-imgBorder"]  
-      > ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
+      > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-restrict-transition-to-state.png)
    :::column-end:::
 :::row-end:::
 --- 
@@ -217,7 +213,7 @@ For the basics of defining rules, see [Add a custom rule](custom-rules.md). You 
 
 With the first grouping of rules, you can specify one or two conditions and up to 10 actions per rule.  
 
-### Example of ensuring team lead approval prior to active work 
+#### Example of ensuring team lead approval prior to active work 
 
 In this example, development teams want to ensure that no User Story is worked on until approved by a team lead. The default workflow states are in use and only a single custom field, *Approved By*, and security group, *Team Leads Group*, are added. 
 
@@ -307,11 +303,7 @@ The rule requirements translate to the following four rule definitions.
 
 When specifying the condition, `A work item state moved from ...`, you can specify only that condition. You can specify up to 10 actions.   
 
-> [!NOTE]   
-> State restriction rules are in Private Preview for Azure DevOps Services only. If you are interested in participating in the Private Preview, see [State transition restriction rules (private preview)](/azure/devops/release-notes/2020/sprint-171-update#azure-boards-1).
-
-
-### Example of restricting state transitions and Approved state
+#### Example of restricting state transitions and Approved state
 
 In keeping with the terminology used by a business group, the following workflow states are defined for the User Story. The *New*, *Resolved*, and *Removed* inherited states are hidden. Instead, *Proposed*, *In Review*, and *Cut* States are used. In addition, three additional States are defined: *Investigate*, *Design*, and *Approved*. These States should follow the sequence as shown in the following image. 
 
@@ -515,7 +507,7 @@ To implement the above restrictions, the process administrator adds a custom *Ap
 :::row-end:::  
 ---
 
-### Verify state transition restrictions 
+#### Verify state transition restrictions 
 
 Once the rules are defined for the process and the project updated with the process, refresh your browser and check the operations through the work item form and from the Kanban browser.  
 
@@ -527,13 +519,13 @@ For the rules defined in the previous table, you should see the following State 
 |**Active**|**In Review**|**Closed**|**Cut**|   
 |![Active menu](media/customize-workflow/active-state-transition-menu.png) |![In Review menu](media/customize-workflow/in-review-state-transition-menu.png) |![Closed menu](media/customize-workflow/closed-state-transition-menu.png)|![Cut menu](media/customize-workflow/cut-state-transition-menu.png) |
 
-<!--- 
+
 
 ## Restrict state transition based on user or group membership 
 
 When specifying one of the two conditions based on user or group membership, `Current user is member of group ...` or `Current user is not member of group ...`, you can specify only one condition. Also, if specifying the action `Restrict the transition to state...`, you can only specify one action. 
 
---> 
+
 
 ::: moniker-end
 
@@ -543,6 +535,13 @@ To automate State transitions of parent work items based on the State assignment
 
 > [!NOTE]   
 > The [Automate State Transitions](https://github.com/microsoft/azure-boards-automate-state-transitions) GitHub project is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, raise them in the GitHub project page.   
+<a id="reassign" />
+
+## Automate reassignment based on state change
+
+The Agile process bug work item type previously had a rule which reassigned the bug  to the person who created it. This rule has been [removed from the default system process](../../../boards/work-items/guidance/changes-to-process-templates.md). You can reinstate the rule or add a similar rule to other work item types using the following condition and action: 
+
+**When** A work item state changes to *Resolved* **Then** Copy the value from *Created By* **to** *Assigned To*.
 
 
 ## Related articles

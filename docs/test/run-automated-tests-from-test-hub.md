@@ -33,7 +33,7 @@ You will need:
 * A [test plan](create-a-test-plan.md)
   containing your automated tests, which you have associated with automated test methods using 
   [Visual Studio 2017](associate-automated-test-with-test-case.md), 
-  or [Visual Studio 2015 or earlier](https://msdn.microsoft.com/library/dd380741%28v=vs.120%29.aspx).
+  or [Visual Studio 2015 or earlier](/previous-versions/visualstudio/visual-studio-2013/dd380741(v=vs.120)).
 
 * A [Team Build pipeline](../pipelines/apps/windows/dot-net.md)
   that generates builds containing the test binaries.
@@ -247,7 +247,7 @@ Enter the following values in the Run with options dialog and then choose **OK**
  
 * **Release Stage**: Select the name of the stage configured in your release pipeline.<p />
 
-![Configuring the Run with options dialog](media/run-auto-tests-from-hub-09a.png)
+![Configured Run with options dialog.](media/run-auto-tests-from-hub-09a.png)
 
 ### Q: Why use release stages to run tests? 
 
@@ -329,7 +329,7 @@ See [How does selecting "Test run (for on-demand runs)" in the Visual Studio Tes
 builds. It only works in the web-based interface for Azure Pipelines and TFS.
 All new manual and automated testing product development investments will be
 in the web-based interface. No further development is planned for Microsoft Test Manager. See
-[Guidance on Microsoft Test Manager usage](mtm/guidance-mtm-usage.md).
+[Guidance on Microsoft Test Manager usage](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage).
 
 ### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release pipeline?
 
@@ -363,7 +363,7 @@ from different sources, set this option to
 <a name="pass-params"></a>
 ### Q: How do I pass parameters to my test code from a build or release pipeline?
 
-A: Use a [runsettings](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+A: Use a [runsettings](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 file to pass values as parameters to your test code. For example, in a release that contains several stages,
 you can pass the appropriate app URL to each the test tasks in each one. The runsettings file and matching parameters
 must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstest.md). 
@@ -405,7 +405,7 @@ must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstes
 ## See Also
 
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
-* [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
+* [Associate automated test results with requirements](../pipelines/test/requirements-traceability.md)
 * [Continuous testing scenarios and capabilities](index.yml)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

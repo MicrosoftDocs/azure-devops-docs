@@ -5,12 +5,12 @@ description: Get started with Package Search in Azure DevOps across your Organiz
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.technology: devops-collab
 ms.topic: quickstart
-ms.author: kaelli
-author: KathrynEE
-ms.date: 6/03/2019
+ms.author: chcomley
+author: chcomley
+ms.date: 07/23/2020
 ---
 
-# Search your packages
+# Search your packages or artifacts
 
 [!INCLUDE [version-header](../../includes/version-vsts-only.md)]
 

@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ---
 # Troubleshoot creating a project
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 ## Resolve errors
 

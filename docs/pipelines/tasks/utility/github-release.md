@@ -32,7 +32,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>GitHub Connection</td><td>(Required) Enter the service connection name for your GitHub connection. Learn more about service connections <a href="https://aka.ms/AA3am5s" data-raw-source="[here.](https://aka.ms/AA3am5s)">here.</a></td></tr>
+<tr><td>GitHub Connection</td><td>(Required) Enter the service connection name for your GitHub connection. Learn more about service connections <a href="/azure/devops/pipelines/library/service-endpoints" data-raw-source="[here.](../../library/service-endpoints.md)">here.</a></td></tr>
 <tr><td>Repository</td><td>(Required) Select the name of GitHub repository in which GitHub releases will be created.</td></tr>
 <tr><td>Action</td><td>(Required) Select the type of release operation you want perform. This task can create, edit, or discard a GitHub release.</td></tr>
 <tr><td>Target</td><td>(Required) This is the commit SHA for which the GitHub release will be created. E.g. <code>48b11d8d6e92a22e3e9563a3f643699c16fd6e27</code>. You can also use variables here.</td></tr>

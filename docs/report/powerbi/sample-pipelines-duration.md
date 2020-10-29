@@ -8,8 +8,8 @@ ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'  
-ms.date: 12/10/2019
+monikerRange: '>= azure-devops-2020'     
+ms.date: 07/14/2020
 ---
 
 # Pipeline duration sample report 

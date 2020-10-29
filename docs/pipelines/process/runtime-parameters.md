@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: You can use runtime parameters in pipelines or as part of a template 
 ms.topic: conceptual
 ms.date: 02/27/2020
-monikerRange: '>= azure-devops-2019'
+monikerRange: 'azure-devops || >= azure-devops-2020'
 ---
 
 # Runtime parameters
@@ -276,6 +276,23 @@ Write-Host $env:myStringName
 ```
 
 ---
+
+### Check for an empty parameter object
+
+You can use the `length()` [expression](expressions.md) to check whether an object parameter has no value. 
+
+```yaml
+parameters:
+- name: foo
+  type: object
+  default: []
+
+steps:
+- checkout: none
+- ${{ if eq(length(parameters.foo), 0) }}:
+  - script: echo Foo is empty
+    displayName: Foo is empty
+```
 
 
 ## Parameter data types

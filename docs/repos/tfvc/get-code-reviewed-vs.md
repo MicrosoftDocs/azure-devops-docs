@@ -5,8 +5,6 @@ description: Get a code review from your team using Visual Studio
 ms.assetid: 115cc8ee-e3b3-4bb4-a50f-604a75d52a8e
 toc: show
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -15,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Get your code reviewed with Visual Studio
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Before you check in your code, you can use Visual Studio to ask someone else from your team to review it. Your request will show up in his team explorer, in the my work page.
 

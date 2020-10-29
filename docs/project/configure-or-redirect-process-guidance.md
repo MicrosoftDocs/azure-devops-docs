@@ -200,5 +200,5 @@ Some process guidance links will work only if process guidance has been enabled 
 ## Related articles
 
 - [Choose a process](../boards/work-items/guidance/choose-process.md)
-- [About SharePoint integration](../report/sharepoint-dashboards/about-sharepoint-integration.md)
-- [Discontinue SharePoint integration: TFS 2017 and earlier versions](../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)
+- [About SharePoint integration](/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration)
+- [Discontinue SharePoint integration: TFS 2017 and earlier versions](/previous-versions/azure/devops/report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration)

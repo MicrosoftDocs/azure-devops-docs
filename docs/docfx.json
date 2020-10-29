@@ -86,15 +86,12 @@
         "user-guide/**/**.md": "Azure DevOps"
       },
       "monikerRange": {
-        "report/admin/**": "<= azure-devops-2019",
-        "report/analytics/**": ">= azure-devops-2019",
-        "report/excel/**": "<= tfs-2017",
+        "report/admin/**": "< azure-devops",
         "report/extend-analytics/**": ">= azure-devops-2019",
         "report/powerbi/**": ">= azure-devops-2019",
-        "report/sql-reports/**": "<= azure-devops-2019",
-        "reference/tfs-ps-sync/**": "<= tfs-2015",
-        "reference/witadmin/**": "<= azure-devops-2019",
-        "reference/mapping/**": "<= azure-devops-2019"
+        "report/sql-reports/**": "< azure-devops",
+        "reference/witadmin/**": "< azure-devops",
+        "reference/mapping/**": "<= tfs-2018"
       },
       "ms.author": {
         "artifacts/**": "rabououn",
@@ -122,7 +119,10 @@
         "pipelines/targets/**": "rabououn",
         "pipelines/tasks/**": "sdanie",
         "pipelines/test/**": "sdanie",
-        "service-hooks/**": "aaronha"
+        "service-hooks/**": "aaronha",
+        "repos/tfvc/**": "v-maksim",
+        "repos/get-started/**": "macoope",
+        "repos/git/**": "macoope"
 
       },
       "author": {
@@ -151,7 +151,10 @@
         "pipelines/targets/**": "ramiMSFT",
         "pipelines/tasks/**": "steved0x",
         "pipelines/test/**": "steved0x",
-        "service-hooks/**": "aaronhallberg"
+        "service-hooks/**": "aaronhallberg",
+        "repos/tfvc/**": "MaximMalygin",
+        "repos/get-started/**": "vtbassmatt",
+        "repos/git/**": "vtbassmatt"
 
       },
       "ms.technology": {
@@ -175,7 +178,6 @@
         "pipelines/reports/**": "devops-cicd-reports",
         "pipelines/repos/**": "devops-cicd-repos",
         "pipelines/scripts/**": "devops-cicd-scripts",
-        "pipelines/security/**": "devops-cicd-security",
         "pipelines/targets/**": "devops-cicd-targets",
         "pipelines/tasks/**": "devops-cicd-tasks",
         "pipelines/test/**": "devops-cicd-test"
