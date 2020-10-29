@@ -3,7 +3,7 @@ title: GitHub Source Linking with Build & Symbol Server
 description: Using build to index and publish symbols from an Azure DevOps Services-hosted Git repository works out of the gate, but with a little bit of extra work you can make it work on GitHub-hosted repositories as well.
 ms.technology: devops-artifacts
 ms.assetid: 3cb56371-3ef2-4bd9-871b-ec6cfa93bedf
-ms.date: 03/02/2018
+ms.date: 10/29/2020
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ---
@@ -14,7 +14,8 @@ Azure DevOps Services now includes an integrated symbol server. When you run a b
 
 When building .NET code in Azure DevOps Services the _Index and Publish Symbols_ build task is responsible finding PDB files and inserting source file location information into them so that when they are later downloaded the debugger knows where to locate source files. The symbols task is included by default in build pipeline templates. All you need to do is check the **Publish Symbols** parameter to get started.
 
-![Publish Symbols checkbox on Index & Publish Symbols task](media/publishsymbolscheckbox.png)
+> [!div class="mx-imgBorder"] 
+> ![Symbol server type in the publish symbols path task](media/publish-symbols-task-classic.png)
 
 For source code that is hosted in Azure DevOps Services, that is all you need to do. However, for source code that is hosted on GitHub and being built in Azure DevOps Services you need to do a few extra steps.
 
