@@ -422,6 +422,10 @@ Maintenance job settings are configured at the organization settings level for s
 
 :::image type="content" source="media/maintenance-job-settings.png" alt-text="Maintenance job settings":::
 
+Select **Maintenance History** to see you maintenance job history for the current agent pool. You can download and review logs to see the cleaning steps and actions.
+
+:::image type="content" source="media/maintenance-job-history.png" alt-text="Maintenance job history":::
+
 The maintenance is done per agent, not per machine; so if you have multiple agents on a single machine, you may still run into disk space issues.
 
 ### I'm trying to create a project agent pool that uses an existing organization agent pool, but the controls are grayed out. Why?
