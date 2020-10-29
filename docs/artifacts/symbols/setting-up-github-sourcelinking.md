@@ -39,11 +39,13 @@ Once this is done you can save and queue the build pipeline and the GitHub sourc
 > You may notice that during the build process a warning is still produced by the _Index and Publish Symbols_ task that it cannot index the source code because it is not hosted in Azure DevOps Services. You can ignore this warning because the source location information was embedded earlier in the build process via the Source Link tooling.
 
 ## Verifying the Setup
+
 Once the build has been completed and the symbols have been published it is time to make sure that everything is working as expected. Before attaching the debugger to your target process you should ensure that you have configured Visual Studio to download symbols from Azure DevOps Services and use the Source Link information embedded in those symbols to download source from GitHub.
 
 To point Visual Studio to Azure DevOps Services for downloading symbols click on _Tools_, then _Options_ and then scroll down to the _Debugging_ group of items and select _Symbols_ item. Use the **New Azure DevOps Services Symbol Server location** icon to select your Azure DevOps Services server and add it to the list of symbols locations.
 
-![Adding organization to the list of symbol locations](media/symbollocationoptionspanel.png)
+> [!div class="mx-imgBorder"]
+> ![Adding organization to the list of symbol locations](media/symbols-location.png)
 
 Next select the _General_ item under the _Debugging_ group and scroll down and check the **Enable Source Link support**.
 
