@@ -1,5 +1,5 @@
 ---
-title: Use `#ID` to link work items & pull requests
+title: Link work items & pull requests
 titleSuffix: Azure DevOps
 description: Learn how to link to work items in discussions and pull requests. 
 ms.technology: devops-collab 
@@ -8,15 +8,18 @@ ms.custom: contperfq2
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 10/28/2020
+ms.date: 10/29/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Use `#ID` to link to work items  
+# Link work items to external objects in Azure DevOps
 
 [!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
 
-The `#ID`control quickly links objects to work items. With this control, you can specify or select a work item ID and it's automatically linked to the object. 
+By linking work items to external objects, such as builds, commits, pull requests, and more; you support your teams ability to maintain an audit trail of related work. From the work item form, **Links** tab, you can view all the objects linked to the work item.
+::: moniker range="azure-devops"
+In addition, you can automatically close work items when a pull request gets completed and merged.
+::: moniker-end
 
 Use the `#ID` control within the following areas:
 
@@ -43,6 +46,8 @@ Use the `#ID` control within the following areas:
 - Changeset or shelveset comments
 ::: moniker-end
 
+:::image type="content" source="media/types-of-work-item-links.png" alt-text="Graph showing the types of work item links.":::
+
 <a id="mention-wit-id">  </a>
 
 ::: moniker range="tfs-2015"
@@ -50,7 +55,6 @@ Use the `#ID` control within the following areas:
 > The `#ID` special control feature is available from TFS 2015 Update 1 and later versions.
 
 ::: moniker-end
-
 
 ## Link a pull request to a work item
 
@@ -61,6 +65,9 @@ Narrow the list of suggested work items by entering keywords that match the work
 ![Pull request comment area, enter `#` to invoke work item control](media/ALM_PRD_ID_PR.png)  
 
 To further filter the list, continue to enter keywords until you find a match. You can enter up to five keywords.
+
+> [!NOTE]
+> While you can view the links to a work item from the **Links** tab within the work item form, you can't create a work item query to list those links. Work item queries only return work items that are linked to other work items.
 
 ## Link to work items in pull requests, comments, and commits
 
@@ -108,7 +115,7 @@ Keyword logic is to help with intent matching. For example, you might enter “R
 
 ::: moniker range=">= tfs-2018"
 
-## Link to work items from a Wiki page
+## Add links to work items from a Wiki page
 
 Use the `#ID` control to link to a work item from within a Wiki page.
 
@@ -124,7 +131,7 @@ For more information, see [Link GitHub commits, pull requests, and issues to wor
 
 ## Related articles
 
-- [Query by link or attachment count](../boards/queries/linking-attachments.md)
+- [Link work items to deployments](../boards/queries/linking-attachments.md)
 - [Link work items](../boards/backlogs/add-link.md)
 - [Save work with commits](../repos/git/commits.md)
 - [Pull requests](../repos/git/pullrequest.md)
