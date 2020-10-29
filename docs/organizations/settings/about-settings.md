@@ -193,7 +193,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       - [Add team administrators](about-settings.md)
    :::column-end:::
    :::column span="1":::
-      Members of a team are included within the team group, which can be used in queries and **@mentions** in pull requests and work item discussions.
+      Members of a team are included within the team group, which can be used in queries and **\@mentions** in pull requests and work item discussions.
    :::column-end:::
 :::row-end:::
 ---
