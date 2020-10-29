@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
 
-By linking work items to external objects, such as builds, commits, pull requests, and more; you support your teams ability to maintain an audit trail of related work. From the work item form, **Links** tab, you can view all the objects linked to the work item.
+By linking work items to external objects, such as builds, commits, pull requests, and more, you support your team's ability to maintain an audit trail of related work. From the work item form, **Links** tab, you can view all the objects linked to the work item.
 ::: moniker range="azure-devops"
 In addition, you can automatically close work items when a pull request gets completed and merged.
 ::: moniker-end
@@ -56,7 +56,7 @@ Use the `#ID` control within the following areas:
 
 ::: moniker-end
 
-## Link a pull request to a work item
+## Add a link to work items from pull requests, commits, and comments
 
 Enter `#` to trigger the `#ID` work item picker in your pull request comment. See a list of 50 work items you've recently modified or that are assigned to you.
 
@@ -69,8 +69,6 @@ To further filter the list, continue to enter keywords until you find a match. Y
 > [!NOTE]
 > While you can view the links to a work item from the **Links** tab within the work item form, you can't create a work item query to list those links. Work item queries only return work items that are linked to other work items.
 
-## Link to work items in pull requests, comments, and commits
-
 You can also use the `#ID` control in pull request discussions, commit comments, changeset comments, and shelveset comments.
 
 ::: moniker range="tfs-2015"
@@ -82,9 +80,7 @@ You can also use the `#ID` control in pull request discussions, commit comments,
 
 ## Set work item state in pull request
 
-When you create a PR, you can set the state value of the linked work items in the description. Follow the specific syntax.
-
-``` {state value}: #ID ```
+When you create a PR, you can set the state value of the linked work items in the description. Follow the specific syntax: ``` {state value}: #ID ```.
 When you merge the PR, the system reads through the description and updates the work item state. In the following example, we set work items #300 and #301 to Resolved, #323 and #324 to Closed.
 
 :::image type="content" source="media/pr-set-state-of-work-items.png" alt-text="Screenshot of setting work item state within a PR.":::
@@ -123,7 +119,7 @@ For more information about the built-in wiki, see [Add & edit wiki pages](../pro
 
 ::: moniker-end
 
-## Link to work items from GitHub commits, pull requests, and issues
+## Link work items and GitHub commits, pull requests, and issues
 
 Use the `AB#ID` control to link to a work item from within a GitHub commit, pull request, or issue.
 
