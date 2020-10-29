@@ -170,7 +170,7 @@ When you add a team, a security group is automatically created with the team nam
 
 ::: moniker range=">= tfs-2017"
 
-You can also use the **@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
+You can also use the **\@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
 
 ::: moniker-end
 
