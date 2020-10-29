@@ -20,15 +20,18 @@ When building .NET code in Azure DevOps Services the _Index and Publish Symbols_
 For source code that is hosted in Azure DevOps Services, that is all you need to do. However, for source code that is hosted on GitHub and being built in Azure DevOps Services you need to do a few extra steps.
 
 > [!NOTE]
-> In order to publish symbols to and download symbols from the Azure DevOps Services Symbol Server you must have the [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)  extension installed.
+> In order to publish symbols to and download symbols from the Azure DevOps Services Symbol Server you must have the [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) extension installed.
 
 ## Installing the Source Link Package
-Azure DevOps Services doesn't natively know how to map source code that originated from a GitHub repository so we need to give it a bit of a hand. To do that you need to install the ```SourceLink.Create.CommandLine``` package into your solution. This injects the logic necessary to map source code hosted in GitHub to symbols stored in PDB files so that the Visual Studio debugger can seamlessly download source files as another developer steps through your code.
+
+Azure DevOps Services doesn't natively know how to map source code that originated from a GitHub repository so we need to give it a bit of a hand. To do that you need to install the `SourceLink.Create.CommandLine` package into your solution. This injects the logic necessary to map source code hosted in GitHub to symbols stored in PDB files so that the Visual Studio debugger can seamlessly download source files as another developer steps through your code.
 
 ## Modifying the Build Pipeline
-The next step is to modify the build pipeline to invoke Source Link. This is done by adding a ```/p:SourceLinkCreate=true``` parameter to the _MSBuild_ task.
 
-![SourceLinkCreate property added to MSBuild arguments](media/msbuildsourcelinkcreateproperty.png)
+The next step is to modify the build pipeline to invoke Source Link. This is done by adding a `/p:SourceLinkCreate=true` parameter to the _MSBuild_ task.
+
+> [!div class="mx-imgBorder"] 
+> ![MSBuild arguments in the build solution task](media/build-solution-task-classic.png)
 
 Once this is done you can save and queue the build pipeline and the GitHub source linking information will be embedded into the PDBs prior to be publishing to the symbol server in Azure DevOps Services.
 
