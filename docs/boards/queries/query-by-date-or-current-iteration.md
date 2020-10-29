@@ -16,7 +16,7 @@ ms.date: 07/09/2020
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-The **@Today** and **@CurrentIteration** macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use **@Today** or specify dates. For queries that list work items based on their assignment to a team's current sprint, use **@CurrentIteration**. 
+The **\@Today** and **\@CurrentIteration** macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use **\@Today** or specify dates. For queries that list work items based on their assignment to a team's current sprint, use **\@CurrentIteration**. 
 
 For example, you can find work items that were modified in the last 3 days with the following query.
 
@@ -88,7 +88,7 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 
 1. The <strong>@StartOfDay, @StartOfWeek, @StartOfMonth, @StartOfYear</strong> macros are supported for Azure DevOps Server 2019.1 and later versions, and only when run from the web portal.
 2. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
-2. The **@CurrentIteration +/- n** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
+2. The **\@CurrentIteration +/- n** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 
 ## Date based queries  
