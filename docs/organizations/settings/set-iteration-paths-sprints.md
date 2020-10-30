@@ -86,7 +86,7 @@ You define both areas and iterations for a project from the **Project Settings >
 
 ::: moniker range="<= tfs-2018"
 
-You define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, you open the admin context by choosing the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon.
+You define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, you open the admin context by choosing **Settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false":::.
 
 ::: moniker-end
 
@@ -122,7 +122,7 @@ Define both areas and iterations for a project from the **Project configuration 
 
 ::: moniker range="<= tfs-2018"
 
-From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then, choose **Iterations**.  
+From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open project administration pages. Then, choose **Iterations**.  
 
 ![Screenshot of Open the project administration page for TFS 2018 and earlier.](../../media/settings/open-project-settings-tfs-2015.png)
 
@@ -210,7 +210,7 @@ You can add iterations in the same way that you add areas. For more information 
 
    :::image type="content" source="media/areas/modify-areas-its-iterations-preview.png" alt-text="Screenshot of Project Settings context, project configuration, Iterations page.":::
 
-2. To schedule the start and end dates for each sprint that your teams use, highlight the sprint and choose **Set dates**. Or, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.  
+2. To schedule the start and end dates for each sprint that your teams use, highlight the sprint and choose **Set dates**. Or, you can select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the iteration path and choose **Edit**.  
 
    :::image type="content" source="media/iterations/set-dates-preview.png" alt-text="Set dates, preview page.":::
 
@@ -238,7 +238,7 @@ From **Iterations**, you can add iterations that teams can then select for their
 
    :::image type="content" source="media/areas/modify-areas-its-iterations-ts.png" alt-text="Project Settings Context, Work, Iterations page":::
 
-2. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.
+2. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.
 	
    Choose the calendar icon to choose new dates. 
 
@@ -263,7 +263,7 @@ For Scrum-based projects, you see the following set of sprints.
 > [!div class="mx-imgBorder"]  
 > ![Project Settings Context, Work, Iterations page](media/areas/modify-areas-its-iterations-ts.png) 
 
-1. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the iteration path and choose **Edit**.
+1. To schedule the start and end dates for each sprint your teams use,  Highlight the sprint and choose **Set dates**. Or, you can select **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the iteration path and choose **Edit**.
 	
    Choose the calendar icon to choose new dates. 
 
@@ -375,7 +375,7 @@ You can set team defaults from team settings. If you're not a team administrator
 
 You define both areas and iterations from **Project settings > Boards > Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-1.  Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
+1.  Open a backlog or board for a team and choose **Team profile** :::image type="icon" source="../../media/icons/team.png" border="false"::: > **Team Settings**. 
 
 	Here we open the Board for the Web team and from there the team profile. 
 
@@ -396,7 +396,7 @@ You define both areas and iterations from **Project settings > Boards > Team con
 
 ::: moniker range="<= tfs-2018"  
 
-You open team settings from the top navigation bar. Select the team you want and then choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. For more information about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
+You open team settings from the upper navigation bar. Select the team you want and then choose **Team settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::. For more information about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
 > [!div class="mx-imgBorder"]  
 > ![Open team settings](media/team-defaults/open-team-settings-horz.png) 
@@ -633,7 +633,7 @@ When you rename an iteration, or move the node within the tree hierarchy, the sy
 
 #### [Browser](#tab/browser/)
 
-1. To rename an iteration path, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the node, and select **Edit**.  
+1. To rename an iteration path, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the node, and then select **Edit**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Open Work>Project Configuration in browser.](media/iterations/edit-iteration-path.png)  
