@@ -85,15 +85,15 @@ In this article you'll learn:
 
 ## Prerequisites 
  
-You can access the following actions for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md). 
+You can access the following actions for which you have permissions.  
 
 
 :::row:::
    :::column span="2":::
-      **Contributors**
+      **Task**
    :::column-end:::
-   :::column span="2":::
-      **Project Administrators**
+   :::column span="3":::
+      **Group membership, specific permissions**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -107,14 +107,39 @@ You can access the following actions for which you have permissions. If you are 
       - [Remove work items (change State)](#remove)  
       ::: moniker-end
    :::column-end:::
+:::row:::
+   :::column span="3":::
+      **Contributors**
+      ::: moniker range=">= tfs-2015" 
+      - To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set: 
+        - To remove and modify work items, have the Area Path **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. 
+        - To delete work items, have the project-level **Delete and restore work items** permission set to **Allow**.  
+      - To restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin. 
+      ::: moniker-end
+      ::: moniker range="<= tfs-2015" 
+      > [!NOTE]  
+      > By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
+      ::: moniker-end
+::: moniker range="tfs-2013" 
+      - To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set: 
+      	- To remove and modify work items, have the Area Path **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. 
+      	- To delete work items, have the project-level **Delete and restore work items** permission set to **Allow**.   
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
    :::column span="2":::
       ::: moniker range=">= azure-devops-2020"
       - [Permanently delete work items (from Recycle Bin)](#restore) 
       - [Delete or destroy work items (az boards CLI)](#restore) 
-      - [Destroy (premanently delete) work items (witadmin CLI)](#perm-delete)
       - [Delete test artifacts](delete-test-artifacts.md) 
       ::: moniker-end
-      ::: moniker range=">= tfs-2017 < azure-devops-2020"
+      ::: moniker range="azure-devops-2019"
+      - [Permanently delete work items (from Recycle Bin)](#restore) 
+      - [Delete test artifacts](delete-test-artifacts.md) 
+      ::: moniker-end
+      ::: moniker range=">= tfs-2017 < azure-devops-2019"
       - [Permanently delete work items (from Recycle Bin)](#restore)  
       - [Destroy (premanently delete) work items (witadmin CLI)](#perm-delete)
       - [Delete test artifacts](delete-test-artifacts.md) 
@@ -123,35 +148,30 @@ You can access the following actions for which you have permissions. If you are 
       - [Destroy (premanently delete) work items (witadmin CLI)](#perm-delete)
       ::: moniker-end
    :::column-end:::
+   :::column-end:::
+:::row:::
+   :::column span="2":::
+      **Project Administrators**
+      ::: moniker range=">= tfs-2015" 
+      - To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
+      ::: moniker-end
+      ::: moniker range="<= tfs-2015" 
+      > [!NOTE]  
+      > By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
+      ::: moniker-end
+      moniker range="tfs-2013" 
+      - To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
+      ::: moniker-end
+   :::column-end:::
 :::row-end:::
+
+ 
  
 <!---
 Deleted test artifacts, however, won't appear in the Recycle Bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
 -->
 
-
-::: moniker range=">= tfs-2015" 
-
-- To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set: 
-	- To remove and modify work items, have the Area Path **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. 
-	- To delete work items, have the project-level **Delete and restore work items** permission set to **Allow**.  
-- To restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin. 
-- To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
-::: moniker-end
-::: moniker range="<= tfs-2015" 
-> [!NOTE]  
-> By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
-::: moniker-end
-
-::: moniker range="tfs-2013" 
-
-- To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set: 
-	- To remove and modify work items, have the Area Path **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. 
-	- To delete work items, have the project-level **Delete and restore work items** permission set to **Allow**.  
-- To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
-::: moniker-end
- 
-To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md), [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md), and [About access levels](../../organizations/security/access-levels.md). 
+For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md).  
 
 ::: moniker range="azure-devops" 
 > [!NOTE]  
@@ -193,9 +213,7 @@ You can perform operations on individual work items or bulk modify several work 
 ## Delete or destroy work items  
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
-
-
-#### [Browser](#tab/browser/)
+ 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -266,45 +284,8 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker-end
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli) 
-
-::: moniker range=">= azure-devops-2020"
-
-You can delete or destroy a work item with the [az boards work-item delete](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
-
-> [!NOTE] 
-> You can restore work items you **delete**, but you can't restore work items you choose to **destroy**.
-
-```azurecli 
-az boards work-item delete --id
-                           [--destroy]
-                           [--org]
-                           [--project]
-                           [--yes] 
-``` 
-
-#### Parameters 
-
-- **id**: Required. The ID of the work item.
-- **destroy**: Optional. Permanently delete this work item.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-- **yes**: Optional. Do not prompt for confirmation.
-
-#### Example 
-
-The following command permanently deletes the bug with the ID 864 and doesn't prompt you for confirmation.
-
-```azurecli
-az boards work-item delete --id 864 --destroy --yes
-```
-
-::: moniker-end
-
-
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
-
-* * *
+ 
+ 
 
 <a id="restore" />
 
@@ -379,97 +360,83 @@ You restore deleted work items from the web portal Recycle bin.
 
 
 <a id="perm-delete" />
+
+::: moniker range=">= azure-devops-2020"
  
-## Permanently delete work items (command line)  
-  
+## Destroy (permanently delete) work items (command line)  
 
-::: moniker range=">= tfs-2018" 
+You can delete or destroy a work item with the [az boards work-item delete](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
-Deleting work items from the command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards cloud service.  
+> [!NOTE] 
+> You can restore work items you **delete**, but you can't restore work items you choose to **destroy**.
 
-::: moniker-end 
+```azurecli 
+az boards work-item delete --id
+                           [--destroy]
+                           [--org]
+                           [--project]
+                           [--yes] 
+``` 
 
-<a id="perm-delete"> </a>    
+#### Parameters 
+
+- **id**: Required. The ID of the work item.
+- **destroy**: Optional. Permanently delete this work item.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **yes**: Optional. Do not prompt for confirmation.
+
+#### Example 
+
+The following command permanently deletes the bug with the ID 864 and doesn't prompt you for confirmation.
+
+```azurecli
+az boards work-item delete --id 864 --destroy --yes
+```
+
+::: moniker-end
+
 
 ::: moniker range="<= tfs-2018"
+ 
+## Destroy (permanently delete) work items (command line)  
 
-Use the ```witadmin destroywi``` command to permanently remove work items from the data store. A permanent delete means all information in the work tracking data store is deleted and cannot be restored nor reactivated. You must be a member of the Project Administrators group of have your **Edit project-level information** permission set to Allow. 
+
+Use the ```witadmin destroywi``` command to permanently remove work items from the data store. A permanent delete means all information in the work tracking data store is deleted and cannot be restored nor reactivated. You must be a member of the Project Administrators group or have the **Delete work items in this project** project-level permission set to **Allow**. 
+
+> [!NOTE]   
+> Deleting work items from the **witadmin** command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards cloud service.  
+
+1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed.  
 ::: moniker-end  
-
-::: moniker range="tfs-2018"  
-
-1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+	::: moniker range="tfs-2018"  
+	For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`%programfiles(x86)%\Microsoft Visual Studio\2018\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
-
-	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
-
-	The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
-
-1. To delete several work items, enter the server name and directory path to the collection. For example:   
-
-   ```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:12,15,23```
- 
-   To delete a single work item, simply enter the ID as shown:  
-
-   ```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```    
-
-::: moniker-end
-
-::: moniker range="tfs-2017"  
-
-1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2017. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+	::: moniker-end
+	::: moniker range="tfs-2017"  
+	For example, you would change to the following directory for TFS 2017. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
-
-	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
-
-	The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
-
-1. To delete several work items, enter the server name and directory path to the collection. For example:   
-
-   ```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:12,15,23```
- 
-   To delete a single work item, simply enter the ID as shown:  
-
-   ```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```    
-
-::: moniker-end
-
-::: moniker range="tfs-2015"  
-
-1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2015. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+	::: moniker-end
+	::: moniker range="tfs-2015"  
+	For example, you would change to the following directory for TFS 2015. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE` 
 
 	> [!NOTE] 
 	>**Required permissions:** For TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow. 	
-
-	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
-
-	The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
-
-1. To delete several work items, enter the server name and directory path to the collection. For example:   
-
-   ```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:12,15,23```
- 
-   To delete a single work item, simply enter the ID as shown:  
-
-   ```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```    
-
-::: moniker-end
-
-
-::: moniker range="tfs-2013"  
-
-1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2013. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+	::: moniker-end
+	::: moniker range="tfs-2013"  
+	For example, you would change to the following directory for TFS 2013. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE` 
-
+	::: moniker-end
 	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
 
 	The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
-
+ 
+::: moniker range="tfs-2018"  
 1. To delete several work items, enter the server name and directory path to the collection. For example:   
 
    ```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:12,15,23```
@@ -479,7 +446,6 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
    ```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```    
 
 ::: moniker-end
-
 
 
 ::: moniker range=">= tfs-2015"  
@@ -516,43 +482,32 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 
 ## Related articles   
 
-::: moniker range="azure-devops"  
+::: moniker range="> tfs-2018"  
 
 - [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
 - [Delete test artifacts](delete-test-artifacts.md) 
-- [Create a test plan](../../test/create-a-test-plan.md)
-- [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) 
-
+- [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  
+- [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)  
+- [About access levels](../../organizations/security/access-levels.md) 
 ::: moniker-end
 
-
-::: moniker range=">= tfs-2018 < azure-devops"  
+::: moniker range="<= tfs-2018"  
 
 - [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
 - [Delete test artifacts](delete-test-artifacts.md) 
-- [Create a test plan](../../test/create-a-test-plan.md)
-- [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) 
-
-::: moniker-end
-
-::: moniker range="tfs-2017"  
-
-- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
-- [Delete test artifacts](delete-test-artifacts.md) 
-- [Add, update, and follow a work item](../backlogs/add-work-items.md)  
-- [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
-
-::: moniker-end
-
-
-::: moniker range="<= tfs-2015"  
-
-- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
-- [Add and update a work item](../backlogs/add-work-items.md)  
-- [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
+- [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md)  
+- [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)  
+- [About access levels](../../organizations/security/access-levels.md) 
 
 ::: moniker-end
  
+
+<!--- 
+rest api 
+ARCHIVE WORK ITEMS
+
+--> 
+	
