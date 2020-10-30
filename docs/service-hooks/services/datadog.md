@@ -48,7 +48,7 @@ Create events and metrics in Datadog in response to events from Azure DevOps. Us
     :::image type="content" source="../media/datadog-api-key-account-type-selection.png" alt-text="Screenshot of screen where you select and configure the action to perform.":::
 
 8.	Repeat steps 2-7 for each event type you want to send to Datadog. Datadog accepts and encourages users to send all event types.
-9.	Go to Datadog to see events and metrics start to flow into your environment.
+9.	Go to [Datadog](https://app.datadoghq.com/account/login) to see events and metrics start to flow into your environment.
 
 ## FAQs
 
