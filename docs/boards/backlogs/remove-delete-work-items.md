@@ -358,11 +358,11 @@ The **witadmin** command-line tool installs with any version of Visual Studio or
 **When you delete a work item, the following actions occur:**
 
 - Generates a new revision of the work item  
-- Updates the Changed By/Changed Date fields to support traceability  
+- Updates the **Changed By/Changed Date** fields to support traceability  
 - Preserves the work item completely, including all field assignments, attachments, tags, and links  
-- Causes work item to become non-queryable and therefore can't appear in any work tracking experience, query result, or report  
+- Causes work item to become non-queryable and therefore won't appear in any work tracking experience, query result, or report  
 - Updates charts accordingly, CFD, velocity, burndown and lightweight charts are updated to remove deleted work items  
-- Removes WIT extensions  
+- Removes work tracking extensions  
 - Preserves trend data except for the latest value 
 - Removes the work item from the data warehouse/cube similar to as if it was permanently removed.  
 
@@ -370,14 +370,14 @@ The **witadmin** command-line tool installs with any version of Visual Studio or
 **When you restore a work item, the following actions occur:**   
 
 - Causes a new revision of the work item to be made  
-- Updates the Changed By/Changed Date fields to support traceability   
+- Updates the **Changed By/Changed Date** fields to support traceability   
 - Becomes queryable  
 - All fields remain unchanged  
-- History contains 2 new revisions, one for deletion, and one for restore  
-- Reattaches WIT extensions   
+- History contains two new revisions, one for deletion, and one for restore  
+- Reattaches work tracking extensions  
 - Updates charts accordingly, CFD, velocity, burndown and lightweight charts are updated to include the restored work items  
 - Restores trend data  
-- Adds the work item back to the data warehouse/cube similar  
+- Adds the work item back to the data warehouse/cube  
 - Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted.   
 
 ::: moniker-end
