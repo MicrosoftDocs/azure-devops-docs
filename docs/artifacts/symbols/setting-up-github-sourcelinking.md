@@ -56,7 +56,7 @@ Once the build has been completed and the symbols published, it is time to make 
 
 1. Under **Debugging**, select **Symbols**.
 
-1. Select the `+` sign to add a new symbol file location and type your URL.
+1. Select the `+` sign to add a new symbol file location then type your URL.
 
     > [!div class="mx-imgBorder"]
     > ![Adding organization to the list of symbol locations](media/symbols-location.png)
@@ -66,20 +66,22 @@ Once the build has been completed and the symbols published, it is time to make 
     > [!div class="mx-imgBorder"]
     > ![Enable source link support](media/enable-source-link-support.png)
 
-Now that Visual Studio is setup it is time to attach the debugger to the process that is running the code that you want to download symbols for. Once the debugger is attached Visual Studio will attempt to locate symbols for each binary by probing Azure DevOps Services, if the symbols are found then it will download the PDB files.
+## Verifying the Setup
 
-In order to trigger the download of source code you need to break into the running process. The first time Visual Studio attempts to download the source code it will prompt for consent.
+Now that Visual Studio is configured, it is time to attach the debugger to the process you want to debug. Once the debugger is attached Visual Studio will establish connection to the symbols server and attempt to locate the symbols.
+
+The first time Visual Studio attempts to download the source code it will prompt the user for input.
 
 > [!div class="mx-imgBorder"]
 > ![download symbols from GitHub confirmation window](media/download-symbols-confirmation.png)
 
-Once consent is granted Visual Studio will download the source files directly from GitHub and launch it then in the editor at the break point.
+Visual Studio will then download the file(s) needed and launch the code editor at a break point.
 
 > [!div class="mx-imgBorder"]
 > ![Debugging in Visual Studio](media/debugging-in-visual-studio.png)
 
 > [!TIP]
-> When attaching to a process, you may need to uncheck the **Enable Just My Code** option under the _Debugging | General_ options.
+> When attaching to a process, you may need to uncheck the **Enable Just My Code** option. See [Enable or disable Just My Code](/visualstudio/debugger/just-my-code) for details.
 
 ## Related articles
 
