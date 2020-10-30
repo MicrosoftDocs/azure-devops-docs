@@ -1,193 +1,184 @@
 ---
-title: Remove or delete work items
+title: Remove, delete, restore work items
 titleSuffix: Azure Boards
-description: How to remove or delete work items to another project in Azure Boards 
-ms.custom: "boards-backlogs, seodec18" 
+description: How to remove, delete, or restore (from Recycle Bin) work items in Azure Boards 
+ms.custom: "boards-backlogs, seodec18, contperfq2" 
 ms.technology: devops-agile
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 10/29/2020
 ---
 
-# Remove or delete work items 
+# Remove, delete, or restore work items 
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-You can remove work items added to your backlog or taskboard that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform operations on individual work items or bulk modify several work items. 
+Work items can live forever in your work tracking data store. You never have to delete them. However, depending on your business needs, you may want to perform one or more of these actions: 
 
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+::: moniker range=">= tfs-2017"
+- **Change state**: Remove work items from appearing on backlogs and boards by simply changing the work item **State** to *Remove* or *Cut*.  
+- **Delete**: Remove work items from backlogs, boards, and queries. Deleted work items are moved to a Recycle Bin. From the Recycle Bin you can restore or permanently delete them. 
+	Deleted test artifacts, however, won't appear in the Recycle Bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
+- **Destroy**: Permanently delete work items, deleting all data from the work tracking data store. 
+- **Restore**: Recover deleted work items, restoring them from the Recycle Bin.  
+::: moniker-end
+
+::: moniker range="tfs-2013"
+- **Change state**: Remove work items from appearing on backlogs and boards by simply changing the work item **State** to *Remove* or *Cut*.  
+- **Destroy**: Permanently delete work items, deleting all data from the work tracking data store. 
+::: moniker-end
+
+
+::: moniker range=">= tfs-2017"
+ 
+> [!NOTE]  
+> For information about the Azure Artifacts Recycle Bin, see [Delete and recover packages](../../artifacts/how-to/delete-and-recover-packages.md).
+::: moniker-end
+
+
+You can perform operations on individual work items or bulk modify several work items. 
 
 In this article you'll learn:  
 
-::: moniker range=">= tfs-2017"
 
-> [!div class="checklist"]         
-> * How to remove work items from the backlog by changing the State to Removed 
+::: moniker range=">= azure-devops-2020"
+
+> [!div class="checklist"]
+> * Which permissions you need to delete, destroy, or restore work items   
+> * How to remove work items from the backlog by changing the State  
 > * How to delete work items  
-> * How to restore or permanently delete work items (web portal)    
-> * How to permanently delete work items (command-line tool)  
-> * What permissions are required to delete work items    
-
+> * How to restore or permanently delete work items (from the Recycle Bin, web portal)  
+> * How to permanently delete work items (**az boards** command-line tool)  
+> * How to permanently delete work items (**witadmin destroy** command-line tool)  
+ 
 ::: moniker-end
 
-::: moniker range="<= tfs-2015"
+::: moniker range=">= tfs-2015 < azure-devops-2020"
+
+> [!div class="checklist"]
+> * Which permissions you need to delete, destroy, or restore work items   
+> * How to remove work items from the backlog by changing the State  
+> * How to delete work items  
+> * How to restore or permanently delete work items (from the Recycle Bin, web portal)  
+> * How to permanently delete work items (**az boards** command-line tool)  
+> * How to permanently delete work items (**witadmin destroy** command-line tool)  
+ 
+::: moniker-end
+
+::: moniker range="tfs-2015"
+ 
+> [!NOTE]  
+> The **Delete** and **Recycle Bin** features are available from TFS 2015.2 and later versions.
+::: moniker-end
+
+
+::: moniker range="tfs-2013"
 
 >[!div class="checklist"]         
+> * Which permissions you need to remove or destroy work items   
 > * How to remove work items from the backlog by changing the State to Removed     
-> * How to permanently delete work items (command-line tool)  
-> * What permissions are required to delete work items   
+> * How to permanently delete work items (**witadmin destroy** command-line tool)   
 
 ::: moniker-end
 
-You only have access to those actions that are supported on your platform and for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md). 
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
+
+## Prerequisites 
+ 
 You can access the following actions for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md). 
 
 ::: moniker range=">= azure-devops-2019"
 
-<table>
-<tbody valign="top">
-<tr>
-<th width="50%">Contributors &amp; Stakeholders</th>
-<th width="50%">Project Administrators</th>
-</tr>
-<tr>
-<td>
-<ul>
-<li><a href="#remove" data-raw-source="[Remove work items (change State)](#remove)">Remove work items (change State)</a></li>
-<li><a href="#delete" data-raw-source="[Delete work items](#delete)">Delete work items</a></li>
-<li><a href="#restore" data-raw-source="[Restore work items](#restore)">Restore work items</a></li>
-</ul>
-</td>
-<td><ul>
-<li><a href="#restore" data-raw-source="[Permanently delete work items](#restore)">Permanently delete work items</a> </li>
-<li><a href="delete-test-artifacts.md" data-raw-source="[Permanently delete test artifacts](delete-test-artifacts.md)">Permanently delete test artifacts</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-::: moniker-end
-
-
-
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-<table>
-<tbody valign="top">
-<tr>
-<th width="50%">Contributors &amp; Stakeholders</th>
-<th width="50%">Project Administrators</th>
-</tr>
-<tr>
-<td>
-<ul>
-<li><a href="#remove" data-raw-source="[Remove work items (change State)](#remove)">Remove work items (change State)</a></li>
-<li><a href="#delete" data-raw-source="[Delete work items](#delete)">Delete work items</a></li>
-<li><a href="#restore" data-raw-source="[Restore work items](#restore)">Restore work items</a></li>
-</ul>
-</td>
-<td>
-<ul>
-<li><a href="#restore" data-raw-source="[Permanently delete work items (web portal](#restore)">Permanently delete work items (web portal</a></li>
-<li><a href="#perm-delete" data-raw-source="[Permanently delete work items (command-line)](#perm-delete)">Permanently delete work items (command-line)</a></li>
-<li><a href="delete-test-artifacts.md" data-raw-source="[Permanently delete test artifacts](delete-test-artifacts.md)">Permanently delete test artifacts</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
+:::row:::
+   :::column span="2":::
+      **Contributors & Stakeholders**
+   :::column-end:::
+   :::column span="2":::
+      **Project Administrators**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      ::: moniker range=">= tfs-2015"
+      - [Remove work items (change State)](#remove)  
+      - [Delete work items](#delete)  
+      - [Restore work items](#restore) 
+      ::: moniker-end
+      ::: moniker range="tfs-2013"
+      - [Remove work items (change State)](#remove)  
+      ::: moniker-end
+   :::column-end:::
+   :::column span="2":::
+      ::: moniker range=">= azure-devops-2019"
+      - [Permanently delete work items (from Recycle Bin)](#restore) 
+      - [Delete or destroy work items (az boards CLI)](#restore) 
+      - [Permanently delete work items (witadmin CLI)](#restore) 
+      - [Permanently delete test artifacts](delete-test-artifacts.md) 
+      ::: moniker-end
+      ::: moniker range=">= tfs-2017 <= tfs-2018"
+      - [Permanently delete work items (from Recycle Bin)](#restore)  
+      - [Permanently delete work items (command-line)](#perm-delete)
+      - [Permanently delete test artifacts](delete-test-artifacts.md) 
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
+ 
 
 ::: moniker-end
-
-::: moniker range="tfs-2015"
-
-
-<table>
-<tbody valign="top">
-<tr>
-<th width="50%">Contributors &amp; Stakeholders</th>
-<th width="50%">Project Administrators</th>
-</tr>
-<tr>
-<td>
-<ul>
-<li><a href="#remove" data-raw-source="[Remove work items (change State)](#remove)">Remove work items (change State)</a></li>
-<li><a href="#delete" data-raw-source="[Delete work items](#delete)">Delete work items</a></li>
-<li><a href="#restore" data-raw-source="[Restore work items](#restore)">Restore work items</a></li>
-</ul>
-</td>
-<td><ul>
-<li><a href="#restore" data-raw-source="[Permanently delete work items (web portal](#restore)">Permanently delete work items (web portal</a></li>
-<li><a href="#perm-delete" data-raw-source="[Permanently delete work items (command-line)](#perm-delete)">Permanently delete work items (command-line)</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-::: moniker-end
+  
 
 ::: moniker range="tfs-2013"
 
 - **Contributors & Stakeholders**: [Remove work items (change State)](#remove)  
 - **Project Administrators**: [Permanently delete work items (command-line)](#perm-delete)  
-
-
+ 
 ::: moniker-end
 
+
+By default, the **Contributors** group has this permission set. 
+
+
+## Prerequisites  
+
+::: moniker range=">= tfs-2015" 
+
+- To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set: 
+	- To remove and modify work items, have the Area Path **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. 
+	- To delete work items, have the project-level **Delete and restore work items** permission set to **Allow**.  
+- To restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin. 
+- To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
+::: moniker-end
+	::: moniker range="<= tfs-2015" 
+	> [!NOTE]  
+	> By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
+	::: moniker-end
+
+::: moniker range="tfs-2013" 
+
+- To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set: 
+	- To remove and modify work items, have the Area Path **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. 
+	- To delete work items, have the project-level **Delete and restore work items** permission set to **Allow**.  
+- To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
+::: moniker-end
+ 
+To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md), [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md), and [About access levels](../../organizations/security/access-levels.md). 
+
+::: moniker range="azure-devops" 
+> [!NOTE]  
+> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
+
+::: moniker-end
+ 
 ::: moniker range=">= tfs-2015"
 
 > [!TIP]  
 > From the web portal, you can [multi-select several work items](bulk-modify-work-items.md) from a backlog or query results page and perform a bulk update using the associated feature. To delete, or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md). 
 
 ::: moniker-end
-
-## Prerequisites  
-
-::: moniker range="azure-devops"
-
-* You must connect to a project. If you don't have a project yet, [create one](../get-started/sign-up-invite-teammates.md). 
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
-* To delete or remove work items, you must be granted **Stakeholder** access or higher  For details, see [About access levels](../../organizations/security/access-levels.md).
-* To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to Allow. By default, the Contributors group has **Delete and restore work items** set to **Allow**.
-
-> [!NOTE]  
-> Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < azure-devops"
-
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
-* To remove or delete work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
-* To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to Allow. The **Contributors** group has **Delete and restore work items** at the project-level set to **Allow** by default.
-
-::: moniker-end
-
-
-::: moniker range="<= tfs-2015" 
-
-* You must connect to a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md). 
-* To delete or remove work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](../../organizations/security/access-levels.md).
-* To delete work items, you must be a member of the <strong>Project Administrators <strong>group or have the **Delete work items in this project</strong> permission set to **Allow</strong>. By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
-
-::: moniker-end
-
-To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) or [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
 
 
 <a id="remove"> </a>  
@@ -210,7 +201,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 <a id="delete"> </a> 
 
-## Delete work items  
+## Delete or destroy work items  
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
