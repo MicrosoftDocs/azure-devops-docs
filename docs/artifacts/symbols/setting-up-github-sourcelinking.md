@@ -19,14 +19,25 @@ To publish your symbols check the **Publish symbols** checkbox and select the **
 > [!div class="mx-imgBorder"] 
 > ![Symbol server type in the publish symbols path task](media/publish-symbols-task-classic.png)
 
-For source code that is hosted in Azure DevOps Services, that is all you need to do. However, for source code that is hosted on GitHub and being built in Azure DevOps Services you need to do a few extra steps.
+## Using Source Link in .NET projects
 
-> [!NOTE]
-> In order to publish symbols to and download symbols from the Azure DevOps Services Symbol Server you must have the [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) extension installed.
+Source link is a set of tools that allow developers to debug their source code by mapping from the .NET assemblies back to the source code.
 
-## Installing the Source Link Package
+For projects hosted on GitHub, add the `Microsoft.SourceLink.GitHub` package reference to your project file.
 
-Azure DevOps Services doesn't natively know how to map source code that originated from a GitHub repository so we need to give it a bit of a hand. To do that you need to install the `SourceLink.Create.CommandLine` package into your solution. This injects the logic necessary to map source code hosted in GitHub to symbols stored in PDB files so that the Visual Studio debugger can seamlessly download source files as another developer steps through your code.
+```xml
+<ItemGroup>
+  <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+</ItemGroup>
+```
+
+For projects hosted on Azure Repos, add the `Microsoft.SourceLink.AzureRepos.Git` package reference to your project file.
+
+```xml
+<ItemGroup>
+  <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.0.0" PrivateAssets="All"/>
+</ItemGroup>
+```
 
 ## Modifying the Build Pipeline
 
