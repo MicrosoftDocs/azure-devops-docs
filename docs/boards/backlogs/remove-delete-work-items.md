@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '<= azure-devops'
-ms.date: 10/29/2020
+ms.date: 10/30/2020
 ---
 
 # Remove, delete, or restore work items 
@@ -30,6 +30,7 @@ Work items can live forever in your work tracking data store. You never have to 
 - **Destroy**: Permanently delete work items, deleting all data from the work tracking data store. 
 ::: moniker-end
 
+The ability to archive work items or projects isn't a supported feature at this time. 
 
 ::: moniker range=">= tfs-2017"
  
@@ -38,55 +39,36 @@ Work items can live forever in your work tracking data store. You never have to 
 ::: moniker-end
 
 
-::: moniker range="tfs-2015"
- 
-> [!NOTE]  
-> The **Delete** and **Recycle Bin** features are available from TFS 2015.2 and later versions.
-::: moniker-end
-
-
-::: moniker range="tfs-2013"
-
->[!div class="checklist"]         
-> * Which permissions you need to remove or destroy work items   
-> * How to remove work items from the backlog by changing the State to Removed     
-> * How to permanently delete work items (**witadmin destroy** command-line tool)   
-
-::: moniker-end
+## Prerequisites 
 
 [!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
-
-## Prerequisites 
- 
-You can access the following actions for which you have permissions. 
-
-To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set to Allow. 
-
 ::: moniker range=">= tfs-2015"
-- [Remove work items](#remove): Have the **View work items in this node** and **Edit work items in this node** Area Path permissions set to **Allow**.   
-- [Delete work items](#delete) and [Restore work items](#restore): Have the **Delete and restore work items** project-level permission set to **Allow**. Also, to restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin.  
+- To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set to **Allow**. 
+	- [Remove work items](#remove): Have the **View work items in this node** and **Edit work items in this node** Area Path permissions set to **Allow**.   
+	- [Delete work items](#delete) and [Restore work items](#restore): Have the **Delete and restore work items** project-level permission set to **Allow**. Also, to restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin.  
 ::: moniker-end
 ::: moniker range="tfs-2013"
-- [Remove work items](#remove): Have the **View work items in this node** and **Edit work items in this node** Area Path permissions set to **Allow**.  
+- To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set to **Allow**. 
+	- [Remove work items](#remove): Have the **View work items in this node** and **Edit work items in this node** Area Path permissions set to **Allow**.  
 ::: moniker-end
 
-To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
 ::: moniker range=">= azure-devops-2020"
-- [Restore or destroy work items](#restore) 
-- [Delete or destroy work items (az boards CLI)](#az-boards-cli) 
-::: moniker-end
-::: moniker range="azure-devops-2019"
-- [Restore or destroy work items](#restore) 
-::: moniker-end
-::: moniker range=">= tfs-2017 < azure-devops-2019"
-- [Restore or destroy work items](#restore) 
-- [Destroy work items (witadmin CLI)](#witadmin-cli)
-::: moniker-end
-::: moniker range="<= tfs-2015"
-- [Destroy work items (witadmin CLI)](#witadmin-cli)
+- To [Restore or destroy work items](#restore) or [Delete or destroy work items (az boards CLI)](#az-boards-cli), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
 ::: moniker-end
 
+::: moniker range="azure-devops-2019"
+- To [Restore or destroy work items](#restore), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops-2019"
+- To [Restore or destroy work items](#restore) or [Destroy work items (witadmin CLI)](#witadmin-cli), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
+::: moniker-end
+
+::: moniker range="<= tfs-2015"
+- To [Destroy work items (witadmin CLI)](#witadmin-cli), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
+::: moniker-end
+ 
 > [!NOTE]  
 > By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
 ::: moniker-end
@@ -485,5 +467,20 @@ In this article you'll learn:
  
 ::: moniker-end
 
+::: moniker range="tfs-2015"
+ 
+> [!NOTE]  
+> The **Delete** and **Recycle Bin** features are available from TFS 2015.2 and later versions.
+::: moniker-end
+
+
+::: moniker range="tfs-2013"
+
+>[!div class="checklist"]         
+> * Which permissions you need to remove or destroy work items   
+> * How to remove work items from the backlog by changing the State to Removed     
+> * How to permanently delete work items (**witadmin destroy** command-line tool)   
+
+::: moniker-end
 --> 
 	
