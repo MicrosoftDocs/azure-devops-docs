@@ -422,7 +422,7 @@ To configure maintenance job settings:
 
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
-Choose the desired pool and choose **Settings** to configure maintenance job settings for that agent pool. You must have the [Manage build queues](../policies/permissions.md?#default-permissions-assigned-to-built-in-security-groups) permission to configure maintenance job settings. If you don't see the settings tab or the maintenance job history tab, you don't have those permissions. This permission is granted by default to the **Administrator** role. For more information, see [Security of agent pools](#security).
+Choose the desired pool and choose **Settings** to configure maintenance job settings for that agent pool. You must have the [Manage build queues](../policies/permissions.md?#default-permissions-assigned-to-built-in-security-groups) permission to configure maintenance job settings. If you don't see the **Settings** tab or the **Maintenance History** tab, you don't have that permission. This permission is granted by default to the **Administrator** role. For more information, see [Security of agent pools](#security).
 
 :::moniker range="> tfs-2018"
 
