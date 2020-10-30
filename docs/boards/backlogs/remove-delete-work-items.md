@@ -37,9 +37,6 @@ Work items can live forever in your work tracking data store. You never have to 
 > For information about the Azure Artifacts Recycle Bin, see [Delete and recover packages](../../artifacts/how-to/delete-and-recover-packages.md).
 ::: moniker-end
 
-
-You can perform operations on individual work items or bulk modify several work items. 
-
 In this article you'll learn:  
 
 
@@ -162,23 +159,17 @@ To learn more, see [Set permissions and access for work tracking](../../organiza
 
 ::: moniker-end
  
-::: moniker range=">= tfs-2015"
-
-> [!TIP]  
-> From the web portal, you can [multi-select several work items](bulk-modify-work-items.md) from a backlog or query results page and perform a bulk update using the associated feature. To delete, or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md). 
-
-::: moniker-end
 
 <a id="remove"> </a>  
 
 ## Remove work items
 
-By changing the **State** of a work item to <em>Removed</em>, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and taskboards).
+By changing the **State** of a work item to *Removed*, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and taskboards). The *Removed* state corresponds to the **Removed** workflow category state. If you define custom workflow states, any state you map to the **Removed** workflow category state will act in a similar way. 
 
 > [!div class="mx-imgBorder"]  
 > ![Change State to Removed](media/move-change-delete/remove-state.png)  
 
-To cause removed items to not show up in queries, you must add a clause that filters on the **State** field. 
+To cause removed items to not show up in queries, you must add a clause that filters on the **State** field.  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -187,14 +178,21 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 ::: moniker-end
 
+::: moniker range=">= tfs-2015"
+
+You can perform operations on individual work items or bulk modify several work items. 
+
+> [!TIP]  
+> From the web portal, you can [multi-select several work items](bulk-modify-work-items.md) from a backlog or query results page and perform a bulk update using the associated feature. To delete or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md).  
+
+::: moniker-end
+
+
 <a id="delete"> </a> 
 
 ## Delete or destroy work items  
 
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
-
-> [!NOTE]   
-> To permanently delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to **Allow**. By default, the Contributors group has **Delete and restore work items** set to **Allow**. 
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
 
 
 #### [Browser](#tab/browser/)
@@ -272,10 +270,10 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker range=">= azure-devops-2020"
 
-You can delete a work item with the [az boards work-item delete](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+You can delete or destroy a work item with the [az boards work-item delete](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!NOTE] 
-> You can restore work items you **delete**, but cannot restore work items you choose to **destroy**.
+> You can restore work items you **delete**, but you can't restore work items you choose to **destroy**.
 
 ```azurecli 
 az boards work-item delete --id
@@ -312,7 +310,7 @@ az boards work-item delete --id 864 --destroy --yes
 
 ::: moniker range=">= tfs-2015"  
 
-## Restore or permanently delete work items   
+## Restore or destroy work items (Recycle Bin)  
 
 ::: moniker-end
 
@@ -320,14 +318,15 @@ az boards work-item delete --id 864 --destroy --yes
 
 You restore deleted work items from the web portal Recycle bin. 
 
-1. Choose **Boards>Work Items** and then choose the **Recycle bin**.  
+1. Choose **Boards>Work Items** and then choose the **Recycle Bin**.  
  
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Work Items page, Open Recycle bin](media/move-change-delete/open-recycle-bin-new-nav.png)
 
-	A new browser tab opens with the query which lists work items added to the Recycle bin. 
-
-2.	Select the items you want to restore and then choose **Restore**.  
+	If you don't see the **Recycle Bin** option, choose **More commands &hellip;** and choose it from the menu of options.
+ 
+1.  A new browser tab opens with the query which lists work items added to the Recycle Bin. 
+1.	Select the items you want to restore and then choose **Restore**.  
  
 	![Restore selected items](media/move-change-delete/restore-from-recycle-bin.png) 
 	> [!NOTE] 
@@ -338,7 +337,7 @@ You restore deleted work items from the web portal Recycle bin.
 	> [!NOTE] 
 	> You'll only see the Permanently delete option if your [Permanently delete work items permission](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) is set to Allow.  
 
-3.	Confirm your selection. 
+1.	Confirm your selection. 
 
 ::: moniker-end
 
@@ -380,19 +379,15 @@ You restore deleted work items from the web portal Recycle bin.
 
 
 <a id="perm-delete" />
-
-::: moniker range="<= tfs-2018"
-
+ 
 ## Permanently delete work items (command line)  
+  
 
-To permanently delete work items from the web portal, you must be a member of the Project Administrators group or be [granted explicit permissions to delete or restore work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
-::: moniker-end
+::: moniker range=">= tfs-2018" 
 
-::: moniker range=">= tfs-2018"
+Deleting work items from the command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards cloud service.  
 
-Deleting work items from the command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards cloud service.
-
-::: moniker-end
+::: moniker-end 
 
 <a id="perm-delete"> </a>    
 
@@ -486,6 +481,39 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 ::: moniker-end
 
 
+
+::: moniker range=">= tfs-2015"  
+
+## How delete and restore actions work  
+
+**When you delete a work item, the following actions occur:**
+
+- Generates a new revision of the work item  
+- Updates the Changed By/Changed Date fields to support traceability  
+- Preserves the work item completely, including all field assignments, attachments, tags, and links  
+- Causes work item to become non-queryable and therefore can't appear in any work tracking experience, query result, or report  
+- Updates charts accordingly, CFD, velocity, burndown and lightweight charts are updated to remove deleted work items  
+- Removes WIT extensions  
+- Preserves trend data except for the latest value 
+- Removes the work item from the data warehouse/cube similar to as if it was permanently removed.  
+
+
+**When you restore a work item, the following actions occur:**   
+
+- Causes a new revision of the work item to be made  
+- Updates the Changed By/Changed Date fields to support traceability   
+- Becomes queryable  
+- All fields remain unchanged  
+- History contains 2 new revisions, one for deletion, and one for restore  
+- Reattaches WIT extensions   
+- Updates charts accordingly, CFD, velocity, burndown and lightweight charts are updated to include the restored work items  
+- Restores trend data  
+- Adds the work item back to the data warehouse/cube similar  
+- Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted.   
+
+::: moniker-end
+
+
 ## Related articles   
 
 ::: moniker range="azure-devops"  
@@ -527,38 +555,4 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 - [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)
 
 ::: moniker-end
-
-
-::: moniker range=">= tfs-2015"  
-
-### Delete and restore actions performed under the hood  
-
-#### Delete work items 
-
-When you delete a work item, the following actions occur:  
-
-- Generates a new revision of the work item  
-- Updates the Changed By/Changed Date fields to support traceability  
-- Preserves the work item completely, including all field assignments, attachments, tags, and links  
-- Causes work item to become non-queryable and therefore can't appear in any work tracking experience, query result, or report  
-- Updates charts accordingly, CFD, velocity, burndown and lightweight charts are updated to remove deleted work items  
-- Removes WIT extensions  
-- Preserves trend data except for the latest value 
-- Removes the work item from the data warehouse/cube similar to as if it was permanently removed.  
-
-#### Restore work items
-
-When you restore a work item, the following actions occur:   
-
-- Causes a new revision of the work item to be made  
-- Updates the Changed By/Changed Date fields to support traceability   
-- Becomes queryable  
-- All fields remain unchanged  
-- History contains 2 new revisions, one for deletion, and one for restore  
-- Reattaches WIT extensions   
-- Updates charts accordingly, CFD, velocity, burndown and lightweight charts are updated to include the restored work items  
-- Restores trend data  
-- Adds the work item back to the data warehouse/cube similar  
-- Sets the area or iteration path fields to the root node if the previous area path or iteration paths were deleted.   
-
-::: moniker-end
+ 
