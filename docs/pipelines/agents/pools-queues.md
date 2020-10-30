@@ -420,7 +420,7 @@ You can configure agent pools to periodically clean up stale working directories
 
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
-Choose the desired pool and choose **Settings** to configure maintenance job settings for that agent pool. You must have **Manage** permissions to configure maintenance job settings. If you don't see the settings tab or the maintenance job history tab, you don't have those permissions.
+Choose the desired pool and choose **Settings** to configure maintenance job settings for that agent pool. You must have **Manage** permissions to configure maintenance job settings. If you don't see the settings tab or the maintenance job history tab, you don't have those permissions. For more information, see [Security of agent pools](#security).
 
 :::moniker range="> tfs-2018"
 
