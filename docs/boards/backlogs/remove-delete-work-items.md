@@ -37,32 +37,6 @@ Work items can live forever in your work tracking data store. You never have to 
 > For information about the Azure Artifacts Recycle Bin, see [Delete and recover packages](../../artifacts/how-to/delete-and-recover-packages.md).
 ::: moniker-end
 
-In this article you'll learn:  
-
-
-::: moniker range=">= azure-devops-2020"
-
-> [!div class="checklist"]
-> * Which permissions you need to delete, destroy, or restore work items   
-> * How to remove work items from the backlog by changing the State  
-> * How to delete work items  
-> * How to restore or permanently delete work items (from the Recycle Bin, web portal)  
-> * How to permanently delete work items (**az boards** command-line tool)  
-> * How to permanently delete work items (**witadmin destroy** command-line tool)  
- 
-::: moniker-end
-
-::: moniker range=">= tfs-2015 < azure-devops-2020"
-
-> [!div class="checklist"]
-> * Which permissions you need to delete, destroy, or restore work items   
-> * How to remove work items from the backlog by changing the State  
-> * How to delete work items  
-> * How to restore or permanently delete work items (from the Recycle Bin, web portal)  
-> * How to permanently delete work items (**az boards** command-line tool)  
-> * How to permanently delete work items (**witadmin destroy** command-line tool)  
- 
-::: moniker-end
 
 ::: moniker range="tfs-2015"
  
@@ -85,76 +59,37 @@ In this article you'll learn:
 
 ## Prerequisites 
  
-You can access the following actions for which you have permissions.  
+You can access the following actions for which you have permissions. 
 
----
-:::row:::
-   :::column span="2":::
-      **Task**
-   :::column-end:::
-   :::column span="3":::
-      **Group membership, specific permissions**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-      ::: moniker range=">= tfs-2015"
-      - [Remove work items (change State)](#remove)  
-      - [Delete work items](#delete)  
-      - [Restore work items](#restore) 
-      ::: moniker-end
-      ::: moniker range="tfs-2013"
-      - [Remove work items (change State)](#remove)  
-      ::: moniker-end
-   :::column-end:::
-   :::column span="3":::
-      ::: moniker range=">= tfs-2015" 
-      - To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set:  
-           - To remove and modify work items, have the Area Path **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. 
-           - To delete or restore work items, have the project-level **Delete and restore work items** permission set to **Allow**.  
-      - To restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin. 
-      ::: moniker-end
-      ::: moniker range="tfs-2013" 
-      - To remove and modify work items, have the Area Path **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. 
-      ::: moniker-end
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-      ::: moniker range=">= azure-devops-2020"
-      - [Permanently delete or restore work items (from Recycle Bin)](#restore) 
-      - [Delete or destroy work items (az boards CLI)](#az-boards-cli) 
-      - [Delete test artifacts](delete-test-artifacts.md) 
-      ::: moniker-end
-      ::: moniker range="azure-devops-2019"
-      - [Permanently delete or restore work items (from Recycle Bin)](#restore) 
-      - [Delete test artifacts](delete-test-artifacts.md) 
-      ::: moniker-end
-      ::: moniker range=">= tfs-2017 < azure-devops-2019"
-      - [Permanently delete or restore work items (from Recycle Bin)](#restore) 
-      - [Destroy work items (witadmin CLI)](#witadmin-cli)
-      - [Delete test artifacts](delete-test-artifacts.md) 
-      ::: moniker-end
-      ::: moniker range="<= tfs-2015"
-      - [Destroy work items (witadmin CLI)](#witadmin-cli)
-      ::: moniker-end
-   :::column-end:::
-   :::column span="3":::
-      ::: moniker range=">= tfs-2015" 
-      - To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
-      ::: moniker-end
-      moniker range="tfs-2013" 
-      - To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
-      ::: moniker-end
-      ::: moniker range="<= tfs-2015" 
-      > [!NOTE]  
-      > By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
-      ::: moniker-end
-   :::column-end:::
-:::row-end:::
----
+To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set to Allow. 
+
+::: moniker range=">= tfs-2015"
+- [Remove work items](#remove): Have the **View work items in this node** and **Edit work items in this node** Area Path permissions set to **Allow**.   
+- [Delete work items](#delete) and [Restore work items](#restore): Have the **Delete and restore work items** project-level permission set to **Allow**. Also, to restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin.  
+::: moniker-end
+::: moniker range="tfs-2013"
+- [Remove work items](#remove): Have the **View work items in this node** and **Edit work items in this node** Area Path permissions set to **Allow**.  
+::: moniker-end
+
+To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
+::: moniker range=">= azure-devops-2020"
+- [Restore or destroy work items](#restore) 
+- [Delete or destroy work items (az boards CLI)](#az-boards-cli) 
+::: moniker-end
+::: moniker range="azure-devops-2019"
+- [Restore or destroy work items](#restore) 
+::: moniker-end
+::: moniker range=">= tfs-2017 < azure-devops-2019"
+- [Restore or destroy work items](#restore) 
+- [Destroy work items (witadmin CLI)](#witadmin-cli)
+::: moniker-end
+::: moniker range="<= tfs-2015"
+- [Destroy work items (witadmin CLI)](#witadmin-cli)
+::: moniker-end
+
+> [!NOTE]  
+> By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
+::: moniker-end
 
 
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md).  
@@ -199,7 +134,7 @@ You can perform operations on individual work items or bulk modify several work 
 
 ::: moniker range=">= tfs-2015"
 
-## Delete work items (move to Recycle Bin)  
+## Delete work items   
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a **Recycle Bin** from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
 > [!NOTE]   
@@ -275,7 +210,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker range=">= tfs-2015"  
 
-## Restore or destroy work items (Recycle Bin)  
+## Restore or destroy work items  
 
 ::: moniker-end
 
@@ -392,42 +327,42 @@ Use the **witadmin destroywi** command to permanently remove work items from the
 > [!NOTE]   
 > Deleting work items from the **witadmin** command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards cloud service.  
 
-1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed.  
+Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed.  
 ::: moniker-end  
 ::: moniker range="tfs-2018"  
-	For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
-	`%programfiles(x86)%\Microsoft Visual Studio\2018\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
+`%programfiles(x86)%\Microsoft Visual Studio\2018\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
 ::: moniker-end
 ::: moniker range="tfs-2017"  
-	For example, you would change to the following directory for TFS 2017. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+For example, you would change to the following directory for TFS 2017. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
-	`%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
+`%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
 ::: moniker-end
 ::: moniker range="tfs-2015"  
-	For example, you would change to the following directory for TFS 2015. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+For example, you would change to the following directory for TFS 2015. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
-	`cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE` 
+`cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE` 
 ::: moniker-end
 ::: moniker range="tfs-2013"  
-	For example, you would change to the following directory for TFS 2013. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
+For example, you would change to the following directory for TFS 2013. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
-	`cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE` 
+`cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE` 
 ::: moniker-end
 ::: moniker range="tfs-2018"  
-	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
+On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
 
-	The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
+The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
 
-1. To delete several work items, enter the server name and directory path to the collection. For example:   
+- To delete several work items, enter the server name and directory path to the collection. For example:   
 
 	``` CLI
 	witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:12,15,23
 	```
- 
-   To delete a single work item, simply enter the ID as shown:  
+- To delete a single work item, simply enter the ID as shown:  
 
-	``` CLIwitadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003
+	``` CLI
+	witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003
 	```    
 ::: moniker-end
 
@@ -462,6 +397,17 @@ Use the **witadmin destroywi** command to permanently remove work items from the
 
 ::: moniker-end
 
+
+::: moniker range=">= tfs-2018"
+
+##  REST API 
+
+To programmatically delete, restore, and destroy work items, see one of the following REST API resources:  
+
+- [Recyclebin REST API Reference](/rest/api/azure/devops/wit/recyclebin)
+- [Work Items - Delete REST API Reference](/rest/api/azure/devops/wit/work%20items/delete)
+  
+::: moniker-end
 
 ## Related articles   
 
@@ -499,6 +445,44 @@ ARCHIVE WORK ITEMS
 > [!NOTE]  
 > The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. The Delete option isn't available for TFS 2013. You can only delete work items from the **witadmin destroywi** command. 
 
+::: moniker-end
+
+
+In this article you'll learn:  
+
+
+::: moniker range=">= azure-devops-2020"
+
+> [!div class="checklist"]
+> * Which permissions you need to delete, destroy, or restore work items   
+> * How to remove work items from the backlog by changing the State  
+> * How to delete work items  
+> * How to restore or destroy work items (from the Recycle Bin, web portal)  
+> * How to permanently delete work items (**az boards** command-line tool)  
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+> [!div class="checklist"]
+> * Which permissions you need to delete, destroy, or restore work items   
+> * How to remove work items from the backlog by changing the State  
+> * How to delete work items  
+> * How to restore or permanently delete work items (from the Recycle Bin, web portal)  
+
+::: moniker-end
+
+
+::: moniker range=">= tfs-2015 < azure-devops-2019"
+
+> [!div class="checklist"]
+> * Which permissions you need to delete, destroy, or restore work items   
+> * How to remove work items from the backlog by changing the State  
+> * How to delete work items  
+> * How to restore or permanently delete work items (from the Recycle Bin, web portal)  
+> * How to permanently delete work items (**witadmin destroy** command-line tool)  
+ 
 ::: moniker-end
 
 --> 
