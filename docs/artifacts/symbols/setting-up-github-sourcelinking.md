@@ -1,6 +1,6 @@
 ﻿---
-title: GitHub Source Linking with Build & Symbol Server
-description: Using build to index and publish symbols from an Azure DevOps Services-hosted Git repository works out of the gate, but with a little bit of extra work you can make it work on GitHub-hosted repositories as well.
+title: Publish symbols to Azure Artifacts symbol server
+description: Using Index Sources & Publish Symbols task to publish  symbols to Azure Artifacts symbols server
 ms.technology: devops-artifacts
 ms.assetid: 3cb56371-3ef2-4bd9-871b-ec6cfa93bedf
 ms.date: 10/29/2020
@@ -8,11 +8,13 @@ ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ---
 
-# Setting up GitHub Source Linking with Azure DevOps Services Build & Azure DevOps Services Symbol Server
+# Use Index Sources & Publish Symbols task to publish your symbols
 
-Azure DevOps Services now includes an integrated symbol server. When you run a build, PDB files are produced which you can upload to the symbol server. These symbols can then be later downloaded to debug production issues, or by other developers in your organization that might be reusing the code that you have published into a package. By default Azure DevOps Services makes it very easy to index and publish symbols for source code that is hosted and built within Azure DevOps Services, but did you know that you can also publish symbols for source code that is hosted on GitHub?
+Symbols are PDB files that are generated after a successful build run. these files are used by developers to debug their application. Azure Artifacts now offers a dedicated symbols server to publish your symbols. 
 
-When building .NET code in Azure DevOps Services the _Index and Publish Symbols_ build task is responsible finding PDB files and inserting source file location information into them so that when they are later downloaded the debugger knows where to locate source files. The symbols task is included by default in build pipeline templates. All you need to do is check the **Publish Symbols** parameter to get started.
+The _Publish symbols_ feature is part of the **Index Sources & Publish Symbols** task. This feature is also available for GitHub repositories.
+
+To publish your symbols check the **Publish symbols** checkbox and select the **Symbol Server in this account/collection** option from the dropdown.
 
 > [!div class="mx-imgBorder"] 
 > ![Symbol server type in the publish symbols path task](media/publish-symbols-task-classic.png)
