@@ -41,7 +41,6 @@ The ability to archive work items or projects isn't a supported feature at this 
 
 ## Prerequisites 
 
-[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ::: moniker range=">= tfs-2015"
 - To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set to **Allow**. 
@@ -83,7 +82,8 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 > Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](../../organizations/security/access-levels.md).
 
 ::: moniker-end
- 
+
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ::: moniker range=">= tfs-2015"
 
@@ -91,8 +91,7 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 
 You can perform operations on individual work items or bulk modify several work items. 
 
-> [!TIP]  
-> From the web portal, you can multi-select several work items from a backlog or query results page and perform a bulk update using the associated feature. To delete or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md).  
+From the web portal, you can multi-select several work items from a backlog or query results page and perform a bulk update using the associated feature. To delete or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md).  
 
 ::: moniker-end
 
@@ -124,16 +123,15 @@ To cause removed items to not show up in queries, you must add a clause that fil
 ## Delete work items   
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a **Recycle Bin** from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
-> [!NOTE]   
-> Deleted test artifacts won't appear in the Recycle Bin and can't be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
- 
+
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
 1. You can delete a work item from within the work item form, by multi-selecting work items from a backlog or query results page, or from a Kanban board or taskboard. 
 
-	To delete a single work item, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
+	To delete a single work item, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select **Delete**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![work item form, actions menu, Delete](media/move-change-delete/delete-work-item.png)  
@@ -211,18 +209,18 @@ You restore deleted work items or permanently delete them from the web portal Re
 	> ![Boards>Work Items page, Open Recycle bin](media/move-change-delete/open-recycle-bin-new-nav.png)
 
 	If you don't see the **Recycle Bin** option, choose **More commands &hellip;** and choose it from the menu of options.
- 
+
+	> [!NOTE]   
+	> Deleted test artifacts won't appear in the **Recycle Bin** and can't be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
+
 1.  A new browser tab opens with the query which lists work items added to the Recycle Bin. 
 1.	Select the items you want to restore and then choose **Restore**.  
- 
 	![Restore selected items](media/move-change-delete/restore-from-recycle-bin.png) 
-	> [!NOTE] 
-	> You can't open work items that have been moved to the Recycle bin.  
 
 	Optionally, you can choose to permanently delete the items.
 
 	> [!NOTE] 
-	> You'll only see the Permanently delete option if your [Permanently delete work items permission](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) is set to Allow.  
+	> You can't open work items that have been moved to the **Recycle Bin**. Also, you'll only see the **Permanently delete option** if your [Permanently delete work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) project-level permission is set to **Allow**.  
 
 1.	Confirm your selection. 
 
@@ -232,33 +230,33 @@ You restore deleted work items or permanently delete them from the web portal Re
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 
-You restore deleted work items from the web portal Recycle bin. 
+You restore deleted work items from the web portal **Recycle Bin**. 
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2015"  
 
 > [!NOTE]  
-> The <strong>Delete</strong> and <strong>Recycle bin</strong> features require TFS 2015.2 or later version. 
+> The **Delete** and **Recycle Bin** features require TFS 2015.2 or later version. 
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 
-1. Choose <strong>Work>Backlogs</strong> or <strong>Work>Queries</strong> and then choose the <strong>Recycle bin</strong>.  
+1. Choose **Work>Backlog**s or **Work>Queries** and then choose the **Recycle Bin**.  
  
 	![Open Recycle bin](media/move-change-delete/open-recycle-bin.png)
 
-	A new browser tab opens with the query which lists work items added to the Recycle bin. 
+	A new browser tab opens with the query which lists work items added to the **Recycle Bin**. 
 
 1. Select the items you want to restore  and then choose **Restore**.  
- 
+
    ![Restore selected items](media/move-change-delete/restore-from-recycle-bin.png) 
 
    Optionally, you can choose to permanently delete the items.
 
-   > [!NOTE] 
-   > You'll only see the Permanently delete option if your [Permanently delete work items permission](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) is set to Allow.  
+	> [!NOTE] 
+	> You can't open work items that have been moved to the **Recycle Bin**. Also, you'll only see the **Permanently delete option** if your [Permanently delete work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions) project-level permission is set to **Allow**.  
 
 2. Confirm your selection. 
 
