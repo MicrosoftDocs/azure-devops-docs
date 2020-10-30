@@ -4,7 +4,7 @@ description: Build Xamarin projects with Azure Pipelines, Azure DevOps, & Team F
 ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
 ms.reviewer: dastahel
-ms.custom: seodec18
+ms.custom: seodec18,contperfq2
 ms.date: 10/27/2020
 monikerRange: 'azure-devops'
 # Customer intent: As an Azure DevOps user, I want to build a pipeline that deploys a Xamarin app so that I can take advantage of automated builds.
