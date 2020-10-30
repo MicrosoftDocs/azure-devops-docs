@@ -110,18 +110,13 @@ You can access the following actions for which you have permissions.
    :::column-end:::
    :::column span="3":::
       ::: moniker range=">= tfs-2015" 
-      - To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set: 
-        - To remove and modify work items, have the Area Path **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. 
-        - To delete work items, have the project-level **Delete and restore work items** permission set to **Allow**.  
+      - To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set:  
+           - To remove and modify work items, have the Area Path **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. 
+           - To delete or restore work items, have the project-level **Delete and restore work items** permission set to **Allow**.  
       - To restore work items, you must have **Basic** access or higher. Users with **Stakeholder** access can view the contents of the **Recycle Bin**, but can't restore or permanently delete items in the bin. 
       ::: moniker-end
-      ::: moniker range="<= tfs-2015" 
-      > [!NOTE]  
-      > By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
-      ::: moniker-end
       ::: moniker range="tfs-2013" 
-      - To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set: 
-      	- To remove and modify work items, have the Area Path **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. 
+      - To remove and modify work items, have the Area Path **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. 
       ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -150,12 +145,12 @@ You can access the following actions for which you have permissions.
       ::: moniker range=">= tfs-2015" 
       - To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
       ::: moniker-end
+      moniker range="tfs-2013" 
+      - To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
+      ::: moniker-end
       ::: moniker range="<= tfs-2015" 
       > [!NOTE]  
       > By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
-      ::: moniker-end
-      moniker range="tfs-2013" 
-      - To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
       ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -392,52 +387,49 @@ az boards work-item delete --id 864 --destroy --yes
  
 ## Destroy work items (witadmin command line)  
 
-Use the ```witadmin destroywi``` command to permanently remove work items from the data store. A permanent delete means all information in the work tracking data store is deleted and cannot be restored nor reactivated. You must be a member of the Project Administrators group or have the **Delete work items in this project** project-level permission set to **Allow**. 
+Use the **witadmin destroywi** command to permanently remove work items from the data store. A permanent delete means all information in the work tracking data store is deleted and cannot be restored nor reactivated.  
 
 > [!NOTE]   
 > Deleting work items from the **witadmin** command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards cloud service.  
 
 1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed.  
 ::: moniker-end  
-
-	::: moniker range="tfs-2018"  
+::: moniker range="tfs-2018"  
 	For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`%programfiles(x86)%\Microsoft Visual Studio\2018\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
-	::: moniker-end
-	::: moniker range="tfs-2017"  
+::: moniker-end
+::: moniker range="tfs-2017"  
 	For example, you would change to the following directory for TFS 2017. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
-	::: moniker-end
-	::: moniker range="tfs-2015"  
+::: moniker-end
+::: moniker range="tfs-2015"  
 	For example, you would change to the following directory for TFS 2015. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`cd %programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE` 
-
-	> [!NOTE] 
-	>**Required permissions:** For TFS 2015.2 or later versions, you must have [Permanently delete work items permission set to Allow](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions). For TFS 2015.1 or earlier versions, you must be a member of the Project Administrators group of have Edit project-level information permissions set to Allow. 	
-	::: moniker-end
-	::: moniker range="tfs-2013"  
+::: moniker-end
+::: moniker range="tfs-2013"  
 	For example, you would change to the following directory for TFS 2013. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE` 
-	::: moniker-end
+::: moniker-end
+::: moniker range="tfs-2018"  
 	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
 
 	The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
- 
-::: moniker range="tfs-2018"  
+
 1. To delete several work items, enter the server name and directory path to the collection. For example:   
 
-   ```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:12,15,23```
+	``` CLI
+	witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:12,15,23
+	```
  
    To delete a single work item, simply enter the ID as shown:  
 
-   ```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```    
-
+	``` CLIwitadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003
+	```    
 ::: moniker-end
-
 
 ::: moniker range=">= tfs-2015"  
 
