@@ -43,14 +43,14 @@
   items:
   - name: Bulk modify (web)
     href: ../backlogs/bulk-modify-work-items.md
-  - name: Bulk add or modify work items (Excel)
+  - name: Bulk add or modify  (Excel)
     href: ../backlogs/office/bulk-add-modify-work-items-excel.md
-  - name: Bulk import or update work items (CSV)
+  - name: Bulk import or update  (CSV)
     href: ../queries/import-work-items-from-csv.md 
     displayname: import, export, csv
   - name: Move or change work item type
     href: ../backlogs/move-change-type.md
-  - name: Remove or delete work items
+  - name: Remove, delete, or restore
     href: ../backlogs/remove-delete-work-items.md
   - name: Delete test artifacts
     href: ../backlogs/delete-test-artifacts.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
