@@ -69,6 +69,8 @@ The ability to archive work items or projects isn't a supported feature at this 
 - To [Destroy work items (witadmin CLI)](#witadmin-cli), you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
 ::: moniker-end
  
+::: moniker range="<= tfs-2015"
+
 > [!NOTE]  
 > By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
 ::: moniker-end
@@ -82,6 +84,17 @@ For a simplified view of permissions assigned to built-in groups, see [Permissio
 
 ::: moniker-end
  
+
+::: moniker range=">= tfs-2015"
+
+## Remove or delete multiple work items 
+
+You can perform operations on individual work items or bulk modify several work items. 
+
+> [!TIP]  
+> From the web portal, you can multi-select several work items from a backlog or query results page and perform a bulk update using the associated feature. To delete or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md).  
+
+::: moniker-end
 
 <a id="remove"> </a>  
 
@@ -101,14 +114,6 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
-
-You can perform operations on individual work items or bulk modify several work items. 
-
-> [!TIP]  
-> From the web portal, you can [multi-select several work items](bulk-modify-work-items.md) from a backlog or query results page and perform a bulk update using the associated feature. To delete or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md).  
-
-::: moniker-end
 
 
 <a id="delete"> </a> 
@@ -264,7 +269,7 @@ You restore deleted work items from the web portal Recycle bin.
 
 ::: moniker range=">= azure-devops-2020" 
  
-## Delete or destroy work items (az boards command line)  
+## Delete or destroy work items (command line)
 
 You can delete or destroy a work item with the [az boards work-item delete](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -302,7 +307,7 @@ az boards work-item delete --id 864 --destroy --yes
 
 <a id="witadmin-cli" />
  
-## Destroy work items (witadmin command line)  
+## Destroy work items (command line)  
 
 Use the **witadmin destroywi** command to permanently remove work items from the data store. A permanent delete means all information in the work tracking data store is deleted and cannot be restored nor reactivated.  
 
