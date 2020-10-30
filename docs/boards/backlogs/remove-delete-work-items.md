@@ -87,6 +87,7 @@ In this article you'll learn:
  
 You can access the following actions for which you have permissions.  
 
+---
 :::row:::
    :::column span="2":::
       **Task**
@@ -95,6 +96,7 @@ You can access the following actions for which you have permissions.
       **Group membership, specific permissions**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="2":::
       ::: moniker range=">= tfs-2015"
@@ -106,8 +108,6 @@ You can access the following actions for which you have permissions.
       - [Remove work items (change State)](#remove)  
       ::: moniker-end
    :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="3":::
       ::: moniker range=">= tfs-2015" 
       - To remove, modify, or delete work items, you must be a member of the the **Contributors** group or have the following permissions set: 
@@ -125,8 +125,8 @@ You can access the following actions for which you have permissions.
       ::: moniker-end
    :::column-end:::
 :::row-end:::
+---
 :::row:::
-   :::column span="2":::
    :::column span="2":::
       ::: moniker range=">= azure-devops-2020"
       - [Permanently delete or restore work items (from Recycle Bin)](#restore) 
@@ -146,9 +146,7 @@ You can access the following actions for which you have permissions.
       - [Destroy work items (witadmin CLI)](#witadmin-cli)
       ::: moniker-end
    :::column-end:::
-   :::column-end:::
-:::row:::
-   :::column span="2":::
+   :::column span="3":::
       ::: moniker range=">= tfs-2015" 
       - To destroy work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** project-level permission set to **Allow**.  
       ::: moniker-end
@@ -161,8 +159,8 @@ You can access the following actions for which you have permissions.
       ::: moniker-end
    :::column-end:::
 :::row-end:::
+---
 
- 
 
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md).  
 
@@ -202,6 +200,7 @@ You can perform operations on individual work items or bulk modify several work 
 
 
 <a id="delete"> </a> 
+<a id="delete-work-items" />
 
 ::: moniker range=">= tfs-2015"
 
@@ -209,7 +208,7 @@ You can perform operations on individual work items or bulk modify several work 
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a **Recycle Bin** from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md).  
 > [!NOTE]   
-> Deleted test artifacts, however, won't appear in the Recycle Bin and can't be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
+> Deleted test artifacts won't appear in the Recycle Bin and can't be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
  
 ::: moniker-end
 
@@ -277,6 +276,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 
 <a id="restore" />
+<a id="restore-or-permanently-delete-work-items" />
 
 ::: moniker range=">= tfs-2015"  
 
@@ -286,7 +286,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker range=">= azure-devops-2019"
 
-You restore deleted work items from the web portal Recycle bin. 
+You restore deleted work items or permanently delete them from the web portal Recycle Bin. 
 
 1. Choose **Boards>Work Items** and then choose the **Recycle Bin**.  
  
@@ -392,7 +392,6 @@ az boards work-item delete --id 864 --destroy --yes
  
 ## Destroy work items (witadmin command line)  
 
-
 Use the ```witadmin destroywi``` command to permanently remove work items from the data store. A permanent delete means all information in the work tracking data store is deleted and cannot be restored nor reactivated. You must be a member of the Project Administrators group or have the **Delete work items in this project** project-level permission set to **Allow**. 
 
 > [!NOTE]   
@@ -400,6 +399,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 
 1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed.  
 ::: moniker-end  
+
 	::: moniker range="tfs-2018"  
 	For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
