@@ -56,13 +56,15 @@ Now that Visual Studio is setup it is time to attach the debugger to the process
 
 In order to trigger the download of source code you need to break into the running process. The first time Visual Studio attempts to download the source code it will prompt for consent.
 
-![Dialog prompting for consent to download symbols from GitHub](media/downloadsymbolsconsentdialog.png)
+> [!div class="mx-imgBorder"]
+> ![download symbols from GitHub confirmation window](media/download-symbols-confirmation.png)
 
-Once consent is granted Visual Studio will download the source files directly from GitHub and display then in the editor with the break point highlighted.
+Once consent is granted Visual Studio will download the source files directly from GitHub and launch it then in the editor at the break point.
 
-![Source code loaded from GitHub using symbols information](media/codeloadedfromgithubusingsymbolsinfo.png)
+> [!div class="mx-imgBorder"]
+> ![Debugging in Visual Studio](media/debugging-in-visual-studio.png)
 
-> [!NOTE]
+> [!TIP]
 > When attaching to a process, you may need to uncheck the **Enable Just My Code** option under the _Debugging | General_ options.
 
 ## Conclusion
