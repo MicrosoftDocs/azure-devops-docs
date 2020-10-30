@@ -41,29 +41,30 @@ For projects hosted on Azure Repos, add the `Microsoft.SourceLink.AzureRepos.Git
 
 ## Modifying the Build Pipeline
 
-The next step is to modify the build pipeline to invoke Source Link. This is done by adding a `/p:SourceLinkCreate=true` parameter to the _MSBuild_ task.
+The next step is to modify the build pipeline to invoke Source Link during the build process. To do so, add `/p:SourceLinkCreate=true` to the **MSBuild arguments** field within the **Visual Studio Build** task.
 
 > [!div class="mx-imgBorder"] 
 > ![MSBuild arguments in the build solution task](media/build-solution-task-classic.png)
 
-Once this is done you can save and queue the build pipeline and the GitHub source linking information will be embedded into the PDBs prior to be publishing to the symbol server in Azure DevOps Services.
+Select **Save & queue** to save and run your build pipeline when an agent is available.
 
-> [!NOTE]
-> You may notice that during the build process a warning is still produced by the _Index and Publish Symbols_ task that it cannot index the source code because it is not hosted in Azure DevOps Services. You can ignore this warning because the source location information was embedded earlier in the build process via the Source Link tooling.
+## Set up Visual Studio
 
-## Verifying the Setup
+Once the build has been completed and the symbols published, it is time to make sure that everything is working properly. But first, we must ensure that Visual Studio is set up properly.
 
-Once the build has been completed and the symbols have been published it is time to make sure that everything is working as expected. Before attaching the debugger to your target process you should ensure that you have configured Visual Studio to download symbols from Azure DevOps Services and use the Source Link information embedded in those symbols to download source from GitHub.
+1. Select **Tools** then **Options**.
 
-To point Visual Studio to Azure DevOps Services for downloading symbols click on _Tools_, then _Options_ and then scroll down to the _Debugging_ group of items and select _Symbols_ item. Use the **New Azure DevOps Services Symbol Server location** icon to select your Azure DevOps Services server and add it to the list of symbols locations.
+1. Under **Debugging**, select **Symbols**.
 
-> [!div class="mx-imgBorder"]
-> ![Adding organization to the list of symbol locations](media/symbols-location.png)
+1. Select the `+` sign to add a new symbol file location and type your URL.
 
-Next select the _General_ item under the _Debugging_ group and scroll down and check the **Enable Source Link support**.
+    > [!div class="mx-imgBorder"]
+    > ![Adding organization to the list of symbol locations](media/symbols-location.png)
 
-> [!div class="mx-imgBorder"]
-> ![Enable source link support](media/enable-source-link-support.png)
+1. Select **General** under the same section. Scroll down and check **Enable Source Link support**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Enable source link support](media/enable-source-link-support.png)
 
 Now that Visual Studio is setup it is time to attach the debugger to the process that is running the code that you want to download symbols for. Once the debugger is attached Visual Studio will attempt to locate symbols for each binary by probing Azure DevOps Services, if the symbols are found then it will download the PDB files.
 
