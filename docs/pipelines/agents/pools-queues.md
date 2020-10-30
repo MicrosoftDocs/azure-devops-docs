@@ -418,6 +418,8 @@ If no window is scheduled, then the agents in that pool will not run the mainten
 
 You can configure agent pools to periodically clean up stale working directories and repositories. This should reduce the potential for the agents to run out of disk space. Maintenance jobs are configured at the project collection or organization level in agent pool settings.
 
+To configure maintenance job settings:
+
 [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
 Choose the desired pool and choose **Settings** to configure maintenance job settings for that agent pool. You must have **Manage** permissions to configure maintenance job settings. If you don't see the settings tab or the maintenance job history tab, you don't have those permissions. For more information, see [Security of agent pools](#security).
@@ -434,15 +436,15 @@ Choose the desired pool and choose **Settings** to configure maintenance job set
 
 :::moniker-end
 
-Maintenance job settings are configured at the organization settings level for self-hosted agent pools. To configure maintenance job settings, navigate to **Organization Settings**, choose **Pipelines > Agent Pools**, choose the desired pool, and choose **Settings**.
-
-
-
 Configure your desired settings and choose **Save**.
 
 Select **Maintenance History** to see the maintenance job history for the current agent pool. You can download and review logs to see the cleaning steps and actions taken.
 
+:::moniker range="> tfs-2018"
+
 :::image type="content" source="media/maintenance-job-history.png" alt-text="Maintenance job history":::
+
+:::moniker-end
 
 The maintenance is done per agent, not per machine; so if you have multiple agents on a single machine, you may still run into disk space issues.
 
