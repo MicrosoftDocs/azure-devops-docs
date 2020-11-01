@@ -89,6 +89,13 @@ vstsMavenAccessToken=<PASTE_YOUR_TOKEN_HERE>
 
 1. Replace _<PASTE_YOUR_TOKEN_HERE>_ with the token you created earlier. Save the file when you're done.
 
+## Create a feed (optional)
+1. Navigate to `https://dev.azure.com/{yourOrganization}/{yourProjectName}/_packaging`, where {yourOrganization} is the name of your organization and {yourProjectName} is the name of the project. 
+1. Click **Create Feed**.
+![Create feed](media/create-feed.png)
+1. Give a name to the feed and select the scope ![Naming the feed](media/create-new-feed.png)
+1. Click connect the feed and select Gradle
+![Gradle feed](media/gradle-feed-settings.png)
 ## Configure build.gradle 
 
 1. Create a text file and name it **build.gradle** in the root of your cloned repo. 
@@ -112,9 +119,9 @@ publishing {
     // Repositories *to* which Gradle can publish artifacts 
     repositories { 
         maven { 
-            url 'https://pkgs.dev.azure.com/{yourOrganizationName}/_packaging/{yourProjectName}' 
+            url 'https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_packaging/{FeedName}/maven/v1' 
             credentials { 
-                username "Azure DevOps Services" 
+                username "{FeedName}" //Default {OrganizationName} 
                 //The Azure DevOps Services build system will use the "SYSTEM_ACCESSTOKEN" to authenticate to Azure DevOps Services feeds 
                 password System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") != null ? System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
             } 
@@ -125,9 +132,9 @@ publishing {
 // Repositories *from* which Gradle can download dependencies; it's the same as above in this example
 repositories { 
     maven { 
-        url 'https://pkgs.dev.azure.com/{yourOrganizationName}/_packaging/{yourProjectName}' 
+        url 'https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_packaging/{FeedName}/maven/v1' 
         credentials { 
-            username "Azure DevOps Services" 
+            username "{FeedName}" 
             //The Azure DevOps Services build system will use the "SYSTEM_ACCESSTOKEN" to authenticate to Azure DevOps Services feeds 
             password System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") != null ? System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
         } 
@@ -138,6 +145,13 @@ repositories {
 In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure
 publishing and downloading to use separate organizations, if you prefer.
 
+>[!NOTE]
+>The url and the username can be found at the feed
+
+> [!NOTE]
+> The url and the username can be stored also in a property as `vstsMavenAccessToken`
+
+
 > [!NOTE]
 > You can use the Azure Artifacts connect to feed dialog box to copy the `maven` repository section to use in your build.gradle file.
 
@@ -147,6 +161,7 @@ publishing and downloading to use separate organizations, if you prefer.
 - `artifactId`: your artifact ID number that will be used when publishing your package. Again, give it a meaningful name that specifies the package type and version for example.
 - `version`: Your package version. This number should be incremented for future iterations.
 - `artifact`: Your `.jar` file path. Example: *./target/myJavaClasses.jar*.
+- `feedName`: The name of the feed. If not feed used, the default feed is the `{OrganizationName}`.
 
 
 ## Publish your Maven package with Gradle
