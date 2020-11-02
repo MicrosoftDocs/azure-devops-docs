@@ -1,5 +1,9 @@
 - name: Git Repositories
   href: ./index.yml
+- name: Get started with Git
+  items:
+  - name: Commit, share, and sync your code
+    href: gitquickstart.md
 - name: Key concepts and settings
   items:
   - name: Git workflow
@@ -10,7 +14,7 @@
     href: git-dates.md
   - name: Understand names in Git
     href: git-names.md
-  - name: Cross-Platform Compatibility
+  - name: Cross-platform compatibility
     href: os-compatibility.md
   - name: Git preferences and settings
     href: git-config.md
@@ -38,14 +42,20 @@
     href: share-your-code-in-git-xcode.md
   - name: Create repo - Eclipse
     href: share-your-code-in-git-eclipse.md
+- name: Connect & authenticate
+  items:
+  - name: Authentication
+    href: auth-overview.md
+  - name: Authenticate with SSH
+    href: use-ssh-keys-to-authenticate.md
+  - name: Authenticate with the Git Credential Manager
+    href: set-up-credential-managers.md
 - name: Manage repos
   items:
   - name: Delete a repo
     href: delete-existing-repo.md
   - name: Rename a repo
     href: repo-rename.md
-  - name: Change the default branch
-    href: change-default-branch.md
   - name: Find a file
     href: find-a-file.md
   - name: Create a readme
@@ -56,36 +66,20 @@
     href: move-git-repos-between-team-projects.md
   - name: Remove large binaries from Git
     href: remove-binaries.md
-- name: Branches and forks
+- name: Branches  
   items:
+  - name: About branches & branch policies
+    href: branch-policies-overview.md
   - name: Branch organization
     href: git-branching-guidance.md
-  - name: Learn about branch policies
-    href: branch-policies-overview.md
-  - name: Learn about forks
-    href: forks-overview.md 
-  - name: Forks
-    href: forks.md
-  - name: Create work in branches
-    href: branches.md
-  - name: Work with tags
-    href: git-tags.md
-- name: Commits, push, fetch, pull 
-  items:
-  - name: Commit, share, and sync your code
-    href: gitquickstart.md
-  - name: Save work with commits
-    href: commits.md
-  - name: Share code with push
-    href: pushing.md
-  - name: Update code with fetch and pull
-    href: pulling.md
-- name: Manage branches
-  items:
   - name: Manage your branches
     href: manage-your-branches.md
   - name: Create a new branch
     href: create-branch.md
+  - name: Create work in branches
+    href: branches.md
+  - name: Change the default branch
+    href: change-default-branch.md
   - name: Delete a branch
     href: delete-branch.md
   - name: Restore a deleted branch
@@ -98,6 +92,22 @@
     href: branch-policies.md
   - name: "Branch permissions (Security)"
     href: branch-permissions.md
+- name: Forks  
+  items:
+  - name: About forks
+    href: forks-overview.md  
+  - name: Forks
+    href: forks.md
+- name: Commits, push, fetch, pull 
+  items:
+  - name: Save work with commits
+    href: commits.md
+  - name: Share code with push
+    href: pushing.md
+  - name: Update code with fetch and pull
+    href: pulling.md
+  - name: Work with tags
+    href: git-tags.md
 - name: Pull requests
   items:
   - name: Learn about pull requests
@@ -134,14 +144,6 @@
     href: commit-history.md
   - name: Commit details
     href: commit-details.md
-- name: Authentication
-  items:
-  - name: Authentication
-    href: auth-overview.md
-  - name: Authenticate with SSH
-    href: use-ssh-keys-to-authenticate.md
-  - name: Authenticate with the Git Credential Manager
-    href: set-up-credential-managers.md
 - name: Cross-service operations
   items:
   - name: Drive Git development from a work item
