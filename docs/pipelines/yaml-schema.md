@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 10/20/2020
+ms.date: 11/02/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -1440,6 +1440,8 @@ pr: none # will disable PR builds entirely; will not disable CI triggers
 
 Full syntax:
 
+:::moniker range="<=azure-devops-2020"
+
 ```yaml
 pr:
   autoCancel: boolean # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
@@ -1450,6 +1452,24 @@ pr:
     include: [ string ] # file paths which must match to trigger a build
     exclude: [ string ] # file paths which will not trigger a build
 ```
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2020"
+
+```yaml
+pr:
+  autoCancel: boolean # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
+  branches:
+    include: [ string ] # branch names which will trigger a build
+    exclude: [ string ] # branch names which will not
+  paths:
+    include: [ string ] # file paths which must match to trigger a build
+    exclude: [ string ] # file paths which will not trigger a build
+  drafts: boolean # For GitHub only, whether to build draft PRs, defaults to true
+```
+
+:::moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
