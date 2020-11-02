@@ -59,7 +59,7 @@ Once the build has been completed and the symbols published, it is time to make 
 1. Select the `+` sign to add a new symbol file location then type your URL.
 
     > [!div class="mx-imgBorder"]
-    > ![Adding organization to the list of symbol locations](media/symbols-location.png)
+    > ![Adding organization to the list of symbol locations](media/vs-symbols-location.png)
 
 1. Select **General** under the same section. Scroll down and check **Enable Source Link support**.
 
