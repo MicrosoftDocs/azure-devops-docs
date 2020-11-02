@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: vijayma
 author: vijayma
-ms.date: 07/03/2020
+ms.date: 11/02/2020
 monikerRange: azure-devops
 ---
 
@@ -354,6 +354,22 @@ pr:
   branches:
     include:
     - master
+```
+
+### Draft PR validation
+
+By default, pull request triggers fire on draft pull requests as well as pull requests that are ready for review. To disable pull request triggers for draft pull requests, set the `drafts` property to `false`.
+
+```yaml
+pr:
+  autoCancel: boolean # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
+  branches:
+    include: [ string ] # branch names which will trigger a build
+    exclude: [ string ] # branch names which will not
+  paths:
+    include: [ string ] # file paths which must match to trigger a build
+    exclude: [ string ] # file paths which will not trigger a build
+  drafts: boolean # whether to build draft PRs, defaults to true
 ```
 
 ### Opting out of PR validation
