@@ -812,7 +812,7 @@ To configure the **Clean** setting, edit your pipeline, choose **...**, and sele
 
 :::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
 
-Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**.
+Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**. When the **Clean** setting is **true** it is equivalent to specifying `clean: true` for every [checkout](../yaml-schema.md#checkout) step in your pipeline.
 
 :::image type="content" source="media/clean-setting.png" alt-text="Clean setting."::: 
 
