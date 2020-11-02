@@ -806,10 +806,10 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-When you run a pipeline on a self-hosted agent, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+When you run a pipeline on a **self-hosted agent**, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
 
 > [!IMPORTANT]
-> The workspace clean options are useful only for self-hosted agents. When using Microsoft-hosted agents, each job is run on a new agent. However, even when using self-hosted agents, each job may be routed to a different agent. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can configure agent capabilities and pipeline demands to specify which agents are used to run a pipeline job, but unless there is only a single agent in the pool that meets the demands, there is no guarantee that subsequent jobs will use the same agent as previous jobs. For more information, see [Specify demands](demands.md).
+> The workspace clean options are applicable only for self-hosted agents. When using Microsoft-hosted agents, job are always run on a new agent. 
 
 ```yaml
 - job: myJob
@@ -823,8 +823,10 @@ When you specify one of the `clean` options, they are interpreted as follows:
 - `resources`: Delete `Build.SourcesDirectory` before running a new job.
 - `all`: Delete the entire `Pipeline.Workspace` directory before running a new job.
 
+`$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+
 > [!NOTE]
->  `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+> Depending on your agent capabilities and pipeline demands, each job may be routed to a different agent in your self-hosted pool. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can configure agent capabilities and pipeline demands to specify which agents are used to run a pipeline job, but unless there is only a single agent in the pool that meets the demands, there is no guarantee that subsequent jobs will use the same agent as previous jobs. For more information, see [Specify demands](demands.md).
 
 In addition to workspace clean, you can also configure cleaning by configuring the **Clean** setting in the pipeline settings UI. When the **Clean** setting is **true** it is equivalent to specifying `clean: true` for every [checkout](../yaml-schema.md#checkout) step in your pipeline. To configure the **Clean** setting:
 
