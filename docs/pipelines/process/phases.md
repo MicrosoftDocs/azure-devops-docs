@@ -4,7 +4,7 @@ ms.custom: seodec18, contperfq4
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 08/03/2020
+ms.date: 11/02/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -812,9 +812,11 @@ To configure the **Clean** setting, edit your pipeline, choose **...**, and sele
 
 :::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
 
-Select **YAML**, **Get sources**, and view the **Default branch for manual and scheduled builds** setting. If you change it, choose **Save** or **Save & queue** to save the change.
+Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**.
 
-:::image type="content" source="media/pipeline-triggers/default-branch-setting.png" alt-text="Default branch for manual and scheduled builds setting."::: 
+:::image type="content" source="media/clean-setting.png" alt-text="Clean setting."::: 
+
+To configure workspace cleaning in YAML, specify the desired `clean` property in your `job`.
 
 ```yaml
 - job: myJob
