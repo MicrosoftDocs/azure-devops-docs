@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: sid-ah
 ms.author: simerzou
-ms.date: 06/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -35,8 +35,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
         <tr>
-<td rowspan="11"><strong>2020 Q4</strong></td>
+<td rowspan="12"><strong>2020 Q4</strong></td>
 <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1781906" data-raw-source="[Re-evaluate permissions inherited from Azure AD group memberships](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1781906)">Re-evaluate permissions inherited from Azure AD group memberships</a></td><td>Admin</td><td>Future</td>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166 data-raw-source="[Billing, sign-in attempts and manage events for PAT, SSH will be available in the Audit Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166)">Billing, sign-in attempts and manage events for PAT, SSH will be available in the Audit Log</a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1781905 data-raw-source="[Hide Organization Settings ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1781905)">Hide Organization Settings </a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710676 data-raw-source="[Ease of Firewall rule creation with Azure DevOps Service Tag and Static IP](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710676)">Ease of Firewall rule creation with Azure DevOps Service Tag and Static IP</a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668 data-raw-source="[Token lifecycle management ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668)">Token lifecycle management </a></td><td>Admin</td><td>Future</td></tr>
@@ -80,6 +81,13 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
     <tbody>
+    <tr>
+    <td rowspan="4"><a href="2020/sprint-177-update.md" data-raw-source="[22 October 2020](2020/sprint-177-update.md)">22 October 2020</a></td>
+    <td>Removing "Assigned To" rule on Bug work item type</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>A batch of improvements to the Pull Request experience</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Node 14 in the Azure Pipelines agent</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Save an unhealthy agent for investigation in scale set agents</td><td>Pipelines</td><td>Future</td></tr>
     <tr>
     <td rowspan="5"><a href="2020/sprint-176-update.md" data-raw-source="[01 October 2020](2020/sprint-176-update.md)">01 October 2020</a></td>
     <td>Customize work item state when pull request is merged</td><td>Boards</td><td>Future</td>

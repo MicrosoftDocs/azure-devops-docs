@@ -104,12 +104,12 @@ To get added as a team administrator, ask another team administrator or a member
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. From the web portal and team context, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open **Team Settings**.
+1. From the web portal and team context, choose **Team Settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of open Team Settings.](media/add-team-admin/open-team-settings-horz.png)
 
-	If you choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon from the project context, then choose **Overview**, and select the team you want to configure.   
+	If you choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::, then choose **Overview**, and select the team you want to configure.   
 
 2. Choose the **Add** link to open the dialog for adding user identities.  
 
@@ -122,14 +122,14 @@ To get added as a team administrator, ask another team administrator or a member
    
 ::: moniker-end     
 
-::: moniker range=">= tfs-2013 <= tfs-2015"  
+::: moniker range=">= tfs-2013 <= tfs-2015"
 
-1. From the web portal, select your project, and then select the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open the administration page.
+1. From the web portal, select your project, and then select **Administration settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open the administration page.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal screenshot, TFS, Open Administration context, project level.](../../media/settings/open-admin-page-tfs2015.png)
 
-	If you choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon from the project context, then choose **Overview**, and select the team you want to add an administrator to.   
+	If you choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::, then choose **Overview**, and select the team you want to add an administrator to.   
 
 2. Choose the **Add** link to open the dialog for adding user identities.    
   
@@ -141,9 +141,7 @@ To get added as a team administrator, ask another team administrator or a member
 	
 ::: moniker-end  
 
-
 * * *
-
 
 <a id="remove-admin">  </a>
 
@@ -159,7 +157,7 @@ Open the **Teams** settings page as described in the previous section.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select a project.
 2. Choose **Project settings**.
-3. On the **Overview** page, choose the ![remove icon](../../media/icons/remove-icon.png) remove icon for the user you want to remove as a team administrator. 
+3. On the **Overview** page, choose ![remove icon](../../media/icons/remove-icon.png) for the user that you want to remove as a team administrator. 
 
 ![Screenshot of X selected to remove team administrator.](media/add-team-admin/remove-admin-new-ui-page.png)
 
@@ -171,7 +169,7 @@ Open the **Teams** settings page as described in the previous section.
 
 ::: moniker range=">= azure-devops-2019"
 
-From the Administrators section, choose the ![delete icon](../../media/icons/delete-icon.png) for the user you want to remove as a team administrator. 
+From the Administrators section, choose ![delete icon](../../media/icons/delete-icon.png) for the user that you want to remove as a team administrator. 
 
 > [!div class="mx-imgBorder"]
 > ![Remove a team admin](media/add-team-admin/remove-admin-prev-ui.png)  
@@ -179,7 +177,7 @@ From the Administrators section, choose the ![delete icon](../../media/icons/del
 ::: moniker-end
 ::: moniker range=">= tfs-2013 < azure-devops-2019"
 
-From the Administrators section, choose the ![delete icon](../../media/icons/delete-icon.png) for the user you want to remove as a team administrator. 
+From the Administrators section, choose ![delete icon](../../media/icons/delete-icon.png) for the user that you want to remove as a team administrator. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of current UI for Remove a team administrator.](media/add-team-admin/remove-admin-prev-ui.png)
