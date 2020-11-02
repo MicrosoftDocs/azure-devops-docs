@@ -2088,6 +2088,9 @@ steps:
 
 ::: moniker-end
 
+> [!NOTE]
+> In addition to the cleaning option available using `checkout`, you can also configuring cleaning in a workspace. For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
+
 To avoid syncing sources at all:
 
 ```yaml
