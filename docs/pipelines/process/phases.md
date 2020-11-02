@@ -808,13 +808,15 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 
 When you run a pipeline on a self-hosted agent, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
 
-In addition to workspace clean, you can also configure cleaning by configuring the **Clean** setting in the pipeline settings UI. To configure the **Clean** setting, edit your pipeline, choose **...**, and select **Triggers**.
+In addition to workspace clean, you can also configure cleaning by configuring the **Clean** setting in the pipeline settings UI. When the **Clean** setting is **true** it is equivalent to specifying `clean: true` for every [checkout](../yaml-schema.md#checkout) step in your pipeline. To configure the **Clean** setting:
 
-:::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
+1. Edit your pipeline, choose **...**, and select **Triggers**.
 
-Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**. When the **Clean** setting is **true** it is equivalent to specifying `clean: true` for every [checkout](../yaml-schema.md#checkout) step in your pipeline.
+    :::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
 
-:::image type="content" source="media/clean-setting.png" alt-text="Clean setting."::: 
+2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**. 
+
+    :::image type="content" source="media/clean-setting.png" alt-text="Clean setting."::: 
 
 To configure workspace cleaning in YAML, specify the desired `clean` property in your `job`.
 
