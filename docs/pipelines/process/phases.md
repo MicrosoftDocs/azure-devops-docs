@@ -806,7 +806,15 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-When you run a pipeline on a self-hosted agent, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+When you run a pipeline on a self-hosted agent, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job, or by configuring the **Clean** setting in the pipeline settings UI.
+
+To configure the **Clean** setting, edit your pipeline, choose **...**, and select **Triggers**.
+
+:::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
+
+Select **YAML**, **Get sources**, and view the **Default branch for manual and scheduled builds** setting. If you change it, choose **Save** or **Save & queue** to save the change.
+
+:::image type="content" source="media/pipeline-triggers/default-branch-setting.png" alt-text="Default branch for manual and scheduled builds setting."::: 
 
 ```yaml
 - job: myJob
