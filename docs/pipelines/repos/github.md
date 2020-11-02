@@ -634,3 +634,8 @@ This could be caused by an outage of GitHub. Try to access the repository in Git
 #### My PR in GitHub is blocked since Azure Pipelines did not update the status.
 
 This could be a transient error that resulted in Azure DevOps not being able to communicate with GitHub. Retry the check in GitHub if you use the GitHub app. Or, make a trivial update to the PR to see if the problem can be resolved.
+
+## Related articles
+
+- [Scheduled triggers](../process/scheduled-triggers.md)
+- [Pipeline completion triggers](../process/pipeline-triggers.md)
