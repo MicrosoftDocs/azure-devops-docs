@@ -22,7 +22,7 @@
     href: repository-settings.md
   - name: Manage large files
     href: manage-large-files.md
-- name: Create, clone, and import repos
+- name: Create, clone, & manage repos
   items:
   - name: Create a new repo
     href: creatingrepo.md
@@ -30,18 +30,36 @@
     href: clone.md
   - name: Import repo - Web
     href: import-git-repository.md
-  - name: Create repo - Web
-    href: create-new-repo.md
-  - name: Create repo - CLI
-    href: share-your-code-in-git-cmdline.md
-  - name: Create repo - Visual Studio
-    href: share-your-code-in-git-vs-2017.md
-  - name: Create repo - IntelliJ
-    href: create-repo-intellij.md
-  - name: Create repo - Xcode
-    href: share-your-code-in-git-xcode.md
-  - name: Create repo - Eclipse
-    href: share-your-code-in-git-eclipse.md
+  - name: Create repos from different clients
+    items:
+    - name: Create repo - Web
+      href: create-new-repo.md
+    - name: Create repo - CLI
+      href: share-your-code-in-git-cmdline.md
+    - name: Create repo - Visual Studio
+      href: share-your-code-in-git-vs-2017.md
+    - name: Create repo - IntelliJ
+      href: create-repo-intellij.md
+    - name: Create repo - Xcode
+      href: share-your-code-in-git-xcode.md
+    - name: Create repo - Eclipse
+     href: share-your-code-in-git-eclipse.md
+  - name: Manage repos
+    items:
+    - name: Delete a repo
+      href: delete-existing-repo.md
+    - name: Rename a repo
+      href: repo-rename.md
+    - name: Find a file
+      href: find-a-file.md
+    - name: Create a readme
+      href: create-a-readme.md
+    - name: Git and TFVC repos
+      href: team-projects.md
+    - name: Move Git repositories between Team Projects
+      href: move-git-repos-between-team-projects.md
+    - name: Remove large binaries from Git
+      href: remove-binaries.md
 - name: Connect & authenticate
   items:
   - name: Authentication
@@ -50,22 +68,6 @@
     href: use-ssh-keys-to-authenticate.md
   - name: Authenticate with the Git Credential Manager
     href: set-up-credential-managers.md
-- name: Manage repos
-  items:
-  - name: Delete a repo
-    href: delete-existing-repo.md
-  - name: Rename a repo
-    href: repo-rename.md
-  - name: Find a file
-    href: find-a-file.md
-  - name: Create a readme
-    href: create-a-readme.md
-  - name: Git and TFVC repos
-    href: team-projects.md
-  - name: Move Git repositories between Team Projects
-    href: move-git-repos-between-team-projects.md
-  - name: Remove large binaries from Git
-    href: remove-binaries.md
 - name: Branches  
   items:
   - name: About branches & branch policies
