@@ -1,7 +1,7 @@
 ---
 title: Publish and consume artifacts in pipelines
 titleSuffix: Azure Pipelines and TFS
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Understand pipeline artifacts in Azure Pipelines and Azure DevOps Server
 ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference

@@ -1,7 +1,7 @@
 ---
 title: Set working days off
 titleSuffix: Azure DevOps
-description: Choose the days your team works for capacity planning purposes and when using sprint/scrum methods in  Azure Boards & Team Foundation Server   
+description: Choose the days your team works for capacity planning purposes and when using sprint/scrum methods in  Azure Boards.  
 ms.technology: devops-agile
 ms.assetid: 02771DE7-1AF7-46B1-AE4A-219351C570DC
 ms.author: kaelli
@@ -33,7 +33,7 @@ You can configure the Working days off from any team Settings dialog or from the
 
 Here we show setting it through the Settings dialog. 
 
-[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the settings dialog. 
+[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose **Team settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to open the settings dialog. 
 
 ![Capacity page, Settings, Working days](media/capacity-planning-open-team-settings-new-nav.png)  
 
@@ -45,7 +45,7 @@ You can configure the Working days off from any team Settings dialog or from the
 
 Here we show setting it through the Settings dialog. 
 
-[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the settings dialog. 
+[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose **Team settings** :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: to open the settings dialog. 
 
 ![Capacity page, Settings, Working days](../../boards/plans/media/capacity-planning-open-team-settings-tfs-15.png)  
 
