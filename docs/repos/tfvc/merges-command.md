@@ -91,17 +91,12 @@ c:\projects>tf merges /recursive Beta1_branch RTM_branch
 
     The asterisk '\*' next to changeset 147 indicates that only some of the changes in that changeset \#147 were merged into changeset \#167.
 
-## See Also
 
-#### Reference
+## Related articles
 
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
-[Merge Command](merge-command.md)  
-[Branch Command](branch-command.md)  
-#### Concepts
-
-[Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))  
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))  
-[Branching and Merging](use-branches-isolate-risk-team-foundation-version-control.md)
+- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
+- [Merge Command](merge-command.md)  
+- [Branch Command](branch-command.md)  
+- [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))  
+- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))  
+- [Branching and Merging](use-branches-isolate-risk-team-foundation-version-control.md)
