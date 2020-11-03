@@ -2,6 +2,8 @@
   href: index.yml
 - name: Get started
   items:
+  - name: What is TFVC?
+    href: what-is-tfvc.md
   - name: Visual Studio
     href: share-your-code-in-tfvc-vs.md
   - name: Eclipse
@@ -14,10 +16,6 @@
     href: get-code-reviewed-vs.md
 - name: Key concepts and settings
   items:
-  - name: What is TFVC?
-    href: what-is-tfvc.md
-  - name: Map TFVC actions to Git
-    href: ../../repos/git/mapping-my-tfvc-actions-to-git.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json
   - name: Manage feature isolation in TFVC
     href: effective-feature-isolation-on-tfvc.md
   - name: Test impact for partially mapped TFVC repositories
@@ -117,15 +115,15 @@
   - name: Set and enforce quality gates
     href: set-enforce-quality-gates.md
   - name: Control access to TFVC 
-    href: control-access-team-foundation-version-control 
+    href: control-access-team-foundation-version-control.md
   - name: Remove access to TFVC
-    href: remove-access-version-control-files
+    href: remove-access-version-control-files.md
   - name: Undo changes in another user's workspace
-    href: undo-changes-another-user-workspace
+    href: undo-changes-another-user-workspace.md
   - name: Clean up files when users leave
-    href: clean-up-files-when-users-leave
+    href: clean-up-files-when-users-leave.md
   - name: Destroy version controlled files
-    href: configure-check-out-settings 
+    href: configure-check-out-settings.md 
   - name: Migrate from Visual SourceSafe
     href: /previous-versions/visualstudio/visual-studio-2013/ms253060(v=vs.120)
 - name: TFVC command reference
