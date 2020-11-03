@@ -67,7 +67,7 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 
 | User interface |  Limit | 
 |--------|-------|
-| Backlogs | 1000 work items | 
+| Backlogs | 10,000 work items | 
 | Boards | 1000 cards (excluding those cards in the [*Proposed* and *Completed* workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) | 
 | Taskboard | 1000 tasks  | 
 | Teams | 5,000 per project | 
@@ -79,6 +79,7 @@ Each backlog can display up to 10,000 work items. This is simply a limit on what
 
 - Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md). 
 - Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md#limitations-of-multi-team-kanban-board-views).
+- By default, limits may be configured to lower values.
 
 
 ::: moniker-end
