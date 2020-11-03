@@ -83,7 +83,7 @@ Individual contributors can set their user preferences, enable features that are
    :::column-end:::
    :::column span="1":::
       - [View permissions](../security/view-permissions.md)
-      - [Add an alternate account to your Visual Studio subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity)
+      - [Add an alternate account to your Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity)
    :::column-end:::
    :::column span="1":::
       For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md). 
@@ -785,7 +785,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       - [Disable Request Access policy](../accounts/disable-request-access-policy.md)
       - [Restrict users from creating new organizations with Azure Active Directory policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
       - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
-      - [Enable Conditional Access or Multi-factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa)
+      - [Enable Conditional Access or Multi-factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa)
    :::column-end:::
    :::column span="1":::
       Set policies to allow or disallow access by other applications or services to the organization.
