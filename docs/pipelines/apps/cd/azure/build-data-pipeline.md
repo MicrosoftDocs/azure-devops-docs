@@ -241,7 +241,7 @@ You will use Azure Key Vault to store all connection information for your Azure 
 1. Add the Azure DevOps extension if it isn't already installed. 
 
    ```azurecli
-   az extension add -name azure-devops 
+   az extension add --name azure-devops 
    ```  
 1. Sign in to your [Azure DevOps account](../../../../cli/log-in-via-pat.md).
 
