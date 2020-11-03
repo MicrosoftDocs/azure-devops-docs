@@ -16,21 +16,19 @@
     href: get-code-reviewed-vs.md
 - name: Key concepts and settings
   items:
-  - name: Manage feature isolation in TFVC
+  - name: Manage feature isolation  
     href: effective-feature-isolation-on-tfvc.md
-  - name: Test impact for partially mapped TFVC repositories
+  - name: Test impact for partially mapped repositories
     href: test-impact-for-partially-mapped-tfvc-repositories.md
 - name: Develop in branches
   items:
-  - name: Manage branching strategies in TFVC for DevOps
+  - name: About branching strategies
+    href: branching-strategies-with-tfvc.md
+  - name: Choose an effective branching strategy
     href: effective-tfvc-branching-strategies-for-devops.md
-  - name: Use branches to isolate risk
-    href: use-branches-isolate-risk-team-foundation-version-control.md
   - name: Branch folders and files
     href: branch-folders-files.md
-  - name: Branching strategies
-    href: branching-strategies-with-tfvc.md
-  - name: More branch strategies
+  - name: Additional branch strategies
     href: branch-strategically.md
   - name: Merge folders and files
     href: merge-folders-files.md
@@ -71,8 +69,7 @@
     href: delete-restore-files-folders.md
   - name: Gated check-ins
     href: check-folder-controlled-by-gated-check-build-process.md
-  - name: Compare code
-    href: compare-folders-files.md
+  - name: Compare files and folders
     items:
     - name: Compare files
       href: compare-files.md

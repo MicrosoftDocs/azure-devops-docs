@@ -1,4 +1,4 @@
-﻿---
+---
 title: Use Lock Command to lock/unlock a TFVC file/folder
 titleSuffix: Azure Repos
 description: Lock or unlock files or folder under TFVC version control using the Lock Command
@@ -133,24 +133,13 @@ The following example unlocks and makes all files in the src/ Team Foundation ve
 c:\projects>tf lock /lock:none src/
 ```
 
-## See Also
 
-#### Reference
+## Related articles
 
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Checkout and Edit Commands](checkout-or-edit-command.md)
-
-[Status Command](status-command.md)
-
-#### Concepts
-
-[Understanding Lock Types](understand-lock-types.md)
-
-[Create a Workspace to Work with your Project](create-work-workspaces.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-
-[Working with Version Control Locks](work-version-control-locks.md)
+- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Checkout and Edit Commands](checkout-or-edit-command.md)
+- [Status Command](status-command.md)
+- [Understanding Lock Types](understand-lock-types.md)
+- [Create a Workspace to Work with your Project](create-work-workspaces.md)
+- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Working with Version Control Locks](work-version-control-locks.md)
