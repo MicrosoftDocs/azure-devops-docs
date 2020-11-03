@@ -10,7 +10,8 @@
       "additionalMicrosoftOrgs": [
         "GitHub"
       ],
-      "minAdditionsToFile": 62
+      "minAdditionsToFile": 62,
+      "excludePullRequestTitles": true
     },
     "areas": [
       {
