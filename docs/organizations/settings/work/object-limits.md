@@ -79,7 +79,7 @@ Each backlog can display up to 10,000 work items. This is simply a limit on what
 
 - Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md). 
 - Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md#limitations-of-multi-team-kanban-board-views).
-- By default, limits may be configured to lower values.
+- By default, work item limits might be initially configured to lower values.
 
 
 ::: moniker-end
