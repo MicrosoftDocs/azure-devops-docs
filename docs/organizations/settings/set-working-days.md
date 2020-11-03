@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 10/27/2020
+ms.date: 11/03/2020
 ---
 
 # Configure working days  
@@ -32,7 +32,7 @@ Configure the days that your team works. Your team's working days aid in capacit
 
    :::image type="content" source="media/configure-team/azure-boards-sprints-tab-selection.png" alt-text="Screenshot of selection of Azure Boards, and then the Sprints tab, with red boxes.":::
 
-2. Select **Capacity** > :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: > **Working days**.
+2. Select **Capacity** > Settings :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: > **Working days**.
 
    ![Capacity page, Settings, Working days](media/capacity-planning-open-team-settings-new-nav.png)
 

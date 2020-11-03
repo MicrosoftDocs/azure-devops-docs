@@ -81,7 +81,7 @@ Upon completion of your selection and text entry, your <strong>@mention</strong>
 Use the **\@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments.
 
 > [!NOTE]
-> Don't copy/paste **@mention** users from a previous comment. While the resulting formatting will look identical to a properly entered mention, it will not register as a true mention nor send an email notification.
+> Don't copy/paste **\@mention** users from a previous comment. While the resulting formatting will look identical to a properly entered mention, it will not register as a true mention nor send an email notification.
 
 
 

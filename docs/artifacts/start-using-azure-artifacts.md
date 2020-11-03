@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-vsts-only](../includes/version-vsts-only.md)]
 
-This article guides you through the sign-up process for Azure Artifacts. Azure Artifacts is a service where you can create package feeds to publish and consume Maven, npm, NuGet, Python, and universal packages. Azure Artifacts is billed on a consumption basis, and is free up until 2 GB of storage. In the case that your organization needs more storage, you need to set up billing.
+This article guides you through the sign-up process for Azure Artifacts. Azure Artifacts is a service where you can create package feeds to publish and consume Maven, npm, NuGet, Python, and universal packages. Azure Artifacts is billed on a consumption basis, and is free up until 2 GiB of storage. In the case that your organization needs more storage, you need to set up billing.
 
 ## Prerequisites
 
@@ -69,7 +69,7 @@ Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade
 
 ## Billing and free monthly usage
 
-Azure Artifacts includes a free usage tier of 2 GB. Any usage below this level isn't billed to your subscription. Above this limit, we charge you for your actual usage. The usage limit allows you to control the maximum volume of storage that you're billed for. Once the maximum usage limit is reached, you can no longer upload artifacts and will need to either reduce your artifact storage, or increase your usage limit. For more information on usage tiers, see the [Azure Artifacts pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
+Azure Artifacts includes a free usage tier of 2 GiB. Any usage below this level isn't billed to your subscription. Above this limit, we charge you for your actual usage. The usage limit allows you to control the maximum volume of storage that you're billed for. Once the maximum usage limit is reached, you can no longer upload artifacts and will need to either reduce your artifact storage, or increase your usage limit. For more information on usage tiers, see the [Azure Artifacts pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 > [!NOTE]
 > Organizations created before May 6, 2019 will remain on the per-user billing model, and will be switched over to storage-based charging as soon as October 5, 2020. More details on billing changes come October can be found on [the Azure DevOps blog](https://devblogs.microsoft.com/devops/azure-artifacts-billing-changes-coming-october-2020/). 
@@ -105,7 +105,7 @@ To navigate and understand your Azure Artifacts storage:
 
 ## Pay for Artifacts
 
-Each organization gets Azure Artifacts for free, up until they hit 2 GB of storage. If you need more than 2 GB, complete the following steps to set up billing:
+Each organization gets Azure Artifacts for free, up until they hit 2 GiB of storage. If you need more than 2 GiB, complete the following steps to set up billing:
 
 1. Sign in to your organization `https://dev.azure.com/{yourorganization}`. 
  
@@ -128,9 +128,9 @@ A: Currently, the following get counted in your Azure Artifacts billed cost:
 
 You are not billed by Azure Artifacts for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching. 
 
-### Q: Why do I see 0 GB of storage, even though I'm storing artifacts?
+### Q: Why do I see 0 GiB of storage, even though I'm storing artifacts?
 
-A: 1 GB is currently our lowest granularity, so you most likely have not reached 1 GB yet. 
+A: 1 GiB is currently our lowest granularity, so you most likely have not reached 1 GiB yet. 
 
 ### Q: How can I control how long artifacts are stored?
 
@@ -152,7 +152,7 @@ The 'used' value on the Billing tab of your Organization Settings page is update
 
 ### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
-A: If you remove your Azure Subscription from your Azure DevOps organization, you'll only have access to the free tier of storage (< 2 GB). If you have above 2 GB of used storage, you can read packages, but you can't push until you either get your usage below 2 GB, or reconnect an Azure subscription to your organization and increase your storage tier appropriately.
+A: If you remove your Azure Subscription from your Azure DevOps organization, you'll only have access to the free tier of storage (< 2 GiB). If you have above 2 GiB of used storage, you can read packages, but you can't push until you either get your usage below 2 GiB, or reconnect an Azure subscription to your organization and increase your storage tier appropriately.
 
 ### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
 

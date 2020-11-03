@@ -166,6 +166,22 @@ and browse for **Storage accounts (Classic)** or
   the storage, Resource Group or cloud service, and 
   virtual machine fields.
 
+#### How do I fix failure '403: This request is not authorized to perform this operation using this permission'?
+
+When Azure DevOps creates and authorizes the service connection 
+to Azure, it creates an App Registration in your subscription's 
+Active Directory. This identity is automatically added with a 
+`Contributor` role to all resources in the Resource Group you 
+chose to authorize. In order to upload blobs to a storage account, 
+being a `Contributor` is *not enough*. You must manually assign the 
+[`Storage Blob Data Contributor` role to the app registration identity](/azure/storage/common/storage-auth-aad-rbac-portal).
+
+You can copy the app identity from the existing inherited entry as 
+`Contributor` that you will see in the IAM pane and search explicitly 
+for it in the `Add role assignment` UI. Note that the identity will 
+*not* be listed in the dropdown and you will need to search for its 
+identifier.
+
 #### What happens if my Resource Group contains both Classic and Resource Manager VMs?
 
 If the specified Resource Group contains both 

@@ -465,11 +465,8 @@ steps:
 
   - script: |
       mkdir -p $(Pipeline.Workspace)/docker
-      for fn in ${{ parameters.cacheImages }}
-      do
-        docker pull -q $fn
-      done
-      docker save ${{ parameters.cacheImages }} | $(Pipeline.Workspace)/docker/cachedDocker.tar
+      docker pull ubuntu
+      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
     condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
 ```
 
