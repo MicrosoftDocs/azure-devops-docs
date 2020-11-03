@@ -77,10 +77,11 @@ To make commands easier to run, start by selecting a default region. After you s
     keyVault="keyvault${resourceSuffix}"
     ```
 
-1. Create one more Bash variable to store the names of your resource group.
+1. Create one more Bash variable to store the names and the region of your resource group. Replace `<REGION>` with the region that you did choose in the default region section above.
 
     ```bash
     rgName='data-pipeline-cicd-rg'
+    region='<REGION>'
     ```
 
 1. Create variable names for your Azure Data Factory and Azure Databricks instances.
