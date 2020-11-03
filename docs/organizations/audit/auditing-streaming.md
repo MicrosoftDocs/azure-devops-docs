@@ -23,7 +23,7 @@ Learn how to create an [audit](azure-devops-auditing.md) stream, which sends dat
 Audit streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every half hour or less, new audit events are bundled and streamed to your targets. Currently, the following stream targets are available for configuration:
 
 - [Splunk](#set-up-a-splunk-stream) – Connect to on-premises or cloud-based Splunk.
-- [Azure Monitor Log](#set-up-an-azure-monitor-log-stream) - Send auditing logs to [Azure Monitor Logs](/azure/azure-monitor/platform/data-platform-logs). Logs stored in Azure Monitor Logs can be queried and have alerts configured. You can also connect [Azure Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
+- [Azure Monitor Log](#set-up-an-azure-monitor-log-stream) - Send auditing logs to [Azure Monitor Logs](/azure/azure-monitor/platform/data-platform-logs). Logs stored in Azure Monitor Logs can be queried and have alerts configured. Look for the table named AzureDevOpsAuditing. You can also connect [Azure Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
 - [Azure Event Grid](#set-up-an-event-grid-stream) – For scenarios where you want your auditing logs to be sent somewhere else, whether inside or outside of Azure, you can set up an [Azure Event Grid]() connection. 
 
 ## Prerequisites
@@ -115,10 +115,10 @@ Once you have your Event Grid stream configured, you can set up subscriptions on
 
    :::image type="content" source="media/auditing-streaming/create-stream-azure-monitor-logs.png" alt-text="Enter workspace ID and primary key and then select Set up.":::
 
-The stream is enabled and new events begin to flow within half an hour or less. 
+The stream is enabled and new events begin to flow within half an hour or less. You can reference the AzureDevOpsAuditing table.
 
 > [!NOTE]
-> The default retention time for Azure Monitor Logs is 30 days only. You can configure and chose longer retention by selecting **Data Retention** under **Usage and estimated costs** in your workspace settings. This will incur additional charges. Check the [documentation](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period) to manage usage and costs with Azure Monitor Logs for more details.
+> The default retention time for Azure Monitor Logs is 30 days only. You can configure and chose longer retention by selecting **Data Retention** under **Usage and estimated costs** in your workspace settings. This incurs additional charges. Check the [documentation](/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period) to manage usage and costs with Azure Monitor Logs for more details.
 
 ## Edit a stream
 
