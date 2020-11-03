@@ -7,23 +7,28 @@ ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/30/2020
+ms.date: 11/03/2020
 ---
 # Create a service hook for Azure DevOps with Datadog 
 
 [!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
-Create events and metrics in Datadog in response to events from Azure DevOps. Use these metrics and events in Datadog to create dashboards, troubleshoot issues, and create monitors to alert you of critical issues. Datadog accepts all Azure DevOps event types.
+Learn how to create events and metrics in Datadog in response to events from Azure DevOps. Use these metrics and events in Datadog to create dashboards, troubleshoot issues, and create monitors to alert you of critical issues. Datadog accepts all Azure DevOps event types.
 
-## Get your Datadog API key
+> [!IMPORTANT]
+> The Datadog feature may not be turned on by default for Azure DevOps Server 2019 and 2020. This is a known issue. Until it's resolved, you can use the following SQL command in your config database to turn on the feature:
+`exec prc_SetRegistryValue 1, '#\FeatureAvailability\Entries\ServiceHooks.Consumers.datadog\AvailabilityState\', 1`
 
-1. If you don't have a Datadog account, [get started with Datadog](https://aka.ms/AzureDevOpsDataDog).
-2. In the Datadog application, go to [Integrations > API](https://aka.ms/AzureDevOpsDataDogAPI)
-3. Create a new key or select an existing one, and then copy the key to your clipboard. 
+## Prerequisites
 
-## Start sending DevOps events to Datadog
+1. You must have *Edit subscriptions* and *View subscriptions* permissions. By default, only project administrators have these permissions. To grant the permissions to other users, you can use the command-line tool or the [Security](https://docs.microsoft.com/rest/api/azure/devops/security/?view=azure-devops-rest-6.0) REST API.
+2. If you don't have a Datadog account, [get started with Datadog](https://aka.ms/AzureDevOpsDataDog).
+   a. In the Datadog application, go to [Integrations > API](https://aka.ms/AzureDevOpsDataDogAPI).
+   b. Create a new key or select an existing one, and then copy the key to your clipboard. 
 
-1. Go to **Project settings > Service hooks**: `https://{orgName}/{project_name}/_settings/serviceHooks`.
+## Start sending Azure DevOps events to Datadog
+
+1. Go to **Project settings** > **Service hooks**: `https://{orgName}/{project_name}/_settings/serviceHooks`.
 
 2. Select **Create subscription**.
 
@@ -45,7 +50,7 @@ Create events and metrics in Datadog in response to events from Azure DevOps. Us
 
 7. Once verified, choose **Finish** to complete the creation of subscription.
 
-    :::image type="content" source="../media/datadog-api-key-account-type-selection.png" alt-text="Screenshot of screen where you select and configure the action to perform.":::
+   :::image type="content" source="../media/datadog-api-key-account-type-selection.png" alt-text="Screenshot of where you select and configure the action to perform.":::
 
 8.	Repeat steps 2-7 for each event type you want to send to Datadog. Datadog accepts and encourages users to send all event types.
 9.	Go to [Datadog](https://app.datadoghq.com/account/login) to see events and metrics start to flow into your environment.
