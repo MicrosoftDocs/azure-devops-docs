@@ -89,9 +89,9 @@ ms.date: 02/13/2020
 <td>
 The operating system of the agent host. Valid values are:
 <ul>
-<li>Windows_NT
-<li>Darwin
-<li>Linux
+<li><code>Windows_NT</code>
+<li><code>Darwin</code>
+<li><code>Linux</code>
 </ul>
 If you&#39;re running in a container, the agent host and container may be running different operating systems.
 </td>
@@ -102,9 +102,9 @@ If you&#39;re running in a container, the agent host and container may be runnin
 <td>
 The operating system processor architecture of the agent host. Valid values are:
 <ul>
-<li>X86
-<li>X64
-<li>ARM
+<li><code>X86</code>
+<li><code>X64</code>
+<li><code>ARM</code>
 </ul>
 </td>
 </tr>
@@ -428,7 +428,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>Build.SourceVersionMessage</td>
-<td>The comment of the commit or changeset for the triggering repo.
+<td>The comment of the commit or changeset for the triggering repo. We truncate the message to the first line or 200 characters, whichever is shorter.
 
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 Also, this variable is only available on the step level and is neither available in the job nor stage levels (i.e. the message is not extracted until the job had started and checked out the code).
@@ -591,13 +591,13 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>System.CollectionId</td>
-<td>The GUID of the TFS collection or Azure DevOps organization</td>
+<td>The GUID of the TFS collection or Azure DevOps organization.</td>
 <td>Yes</td>
 </tr>
 
 <tr>
 <td>System.CollectionUri</td>
-<td>A string Team Foundation Server collection URI.</td>
+<td>The URI of the TFS collection or Azure DevOps organization. For example: <code>https://dev.azure.com/fabrikamfiber/</code>.</td>
 <td>Yes</td>
 </tr>
 
@@ -725,7 +725,7 @@ Otherwise, it is set to <code>False</code>.</td>
 
 <tr>
 <td>System.TeamFoundationCollectionUri</td>
-<td>The URI of the team foundation collection. For example: <code>https://dev.azure.com/fabrikamfiber/</code>
+<td>The URI of the TFS collection or Azure DevOps organization. For example: <code>https://dev.azure.com/fabrikamfiber/</code>.
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 <td>Yes</td>

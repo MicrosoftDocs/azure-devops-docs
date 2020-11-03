@@ -33,7 +33,7 @@ When the package is deemed of sufficient quality to be released, promote that pa
 
 Promoting package versions to a view ensures they won't be deleted by retention policies. For more information on views, check out the [views concept page](views.md).
 
-### If external teams are consuming your package, ensure that your `@release` view and `@prerelease` view are visible across the organization and/or organization
+### If external teams are consuming your package, ensure that your `@release` view and `@prerelease` view are visible across the organizations
 
 If these views aren't visible, teams won't have access to your packages.
 

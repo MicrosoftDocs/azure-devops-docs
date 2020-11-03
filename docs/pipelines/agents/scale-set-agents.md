@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 10/19/2020
+ms.date: 11/03/2020
 monikerRange: azure-devops
 ---
 
@@ -89,11 +89,11 @@ In the following example, a new resource group and virtual machine scale set are
     --load-balancer ""
     ```
 
-    Because Azure Pipelines manages the scale set, the following settings are required:
+    Because Azure Pipelines manages the scale set, the following settings are required or recommended:
 
-    * `--disable-overprovision`
-    * `--upgrade-policy-mode manual`
-    * `--load-balancer ""`
+    * `--disable-overprovision` - required
+    * `--upgrade-policy-mode manual` - required
+    * `--load-balancer ""` - Azure pipelines doesn't require a load balancer to route jobs to the agents in the scale set agent pool, but configuring a load balancer is one way to get an IP address for your scale set agents that you could use for firewall rules. Another option for getting an IP address for your scale set agents is to create your scale set using the `--public-ip-address` options. For more information about configuring your scale set with a load balancer or public IP address, see the [Virtual Machine Scale Sets documentation](/azure/virtual-machine-scale-sets/) and [az vmss create](/cli/azure/vmss?view=azure-cli-latest&preserve-view=true#az_vmss_create).
     * `--instance-count 2` - this setting is not required, but it will give you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines will delete these two VMs and create new ones.
 
     > [!IMPORTANT]
