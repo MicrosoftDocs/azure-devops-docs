@@ -250,17 +250,17 @@ You will use Azure Key Vault to store all connection information for your Azure 
    ```
 
    ```
-   az pipelines variable-group create --name datapipeline-vg -p <yourazuredevopsprojectname> --variables `
-                                       "LOCATION=$region" `
-                                       "RESOURCE_GROUP=$rgName" `
-                                       "DATA_FACTORY_NAME=$datafactorydev" `
-                                       "DATA_FACTORY_DEV_NAME=$datafactorydev" `
-                                       "DATA_FACTORY_TEST_NAME=$datafactorytest" `
-                                       "ADF_PIPELINE_NAME=DataPipeline" `
-                                       "DATABRICKS_NAME=$databricksname" `
-                                       "AZURE_RM_CONNECTION=azure_rm_connection" `
-                                       "DATABRICKS_URL=<URL copied from Databricks in Azure portal>" `
-                                       "STORAGE_ACCOUNT_NAME=$storageName" `
+   az pipelines variable-group create --name datapipeline-vg -p <yourazuredevopsprojectname> --variables \
+                                       "LOCATION=$region" \
+                                       "RESOURCE_GROUP=$rgName" \
+                                       "DATA_FACTORY_NAME=$datafactorydev" \
+                                       "DATA_FACTORY_DEV_NAME=$datafactorydev" \
+                                       "DATA_FACTORY_TEST_NAME=$datafactorytest" \
+                                       "ADF_PIPELINE_NAME=DataPipeline" \
+                                       "DATABRICKS_NAME=$databricksname" \
+                                       "AZURE_RM_CONNECTION=azure_rm_connection" \
+                                       "DATABRICKS_URL=<URL copied from Databricks in Azure portal>" \
+                                       "STORAGE_ACCOUNT_NAME=$storageName" \
                                        "STORAGE_CONTAINER_NAME=rawdata"
    ```
 
