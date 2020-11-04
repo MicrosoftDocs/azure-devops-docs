@@ -14,12 +14,6 @@
     href: day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md
   - name: Request a code review 
     href: get-code-reviewed-vs.md
-- name: Key concepts and settings
-  items:
-  - name: Manage feature isolation  
-    href: effective-feature-isolation-on-tfvc.md
-  - name: Test impact for partially mapped repositories
-    href: test-impact-for-partially-mapped-tfvc-repositories.md
 - name: Develop in branches
   items:
   - name: About branching strategies
@@ -30,6 +24,8 @@
     href: branch-folders-files.md
   - name: Additional branch strategies
     href: branch-strategically.md
+  - name: Manage feature isolation  
+    href: effective-feature-isolation-on-tfvc.md
   - name: Merge folders and files
     href: merge-folders-files.md
   - name: View changeset merges
@@ -51,6 +47,8 @@
     href: decide-between-using-local-server-workspace.md
   - name: Add check-in policies
     href: add-check-policies.md
+  - name: Test impact for partially mapped repositories
+    href: test-impact-for-partially-mapped-tfvc-repositories.md
 - name: Work with files
   items:
   - name: Create and manage pending changes
@@ -69,7 +67,7 @@
     href: delete-restore-files-folders.md
   - name: Gated check-ins
     href: check-folder-controlled-by-gated-check-build-process.md
-  - name: Compare files and folders
+  - name: Compare files & folders
     items:
     - name: Compare files
       href: compare-files.md
@@ -81,11 +79,11 @@
       href: reconcile-differences-between-two-folders.md
   - name: Resolve conflicts
     href: resolve-team-foundation-version-control-conflicts.md
-  - name: Lock files and folders
+  - name: Lock files & folders
     items:
     - name: Understand lock types
       href: understand-lock-types.md
-    - name: Lock and unlock folders or files
+    - name: Lock & unlock folders or files
       href: lock-unlock-folders-files.md
 - name: Manage versions
   items:
