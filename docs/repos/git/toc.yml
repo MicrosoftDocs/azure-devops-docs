@@ -53,7 +53,7 @@
   - name: Create repo - Xcode
     href: share-your-code-in-git-xcode.md
   - name: Create repo - Eclipse
-   href: share-your-code-in-git-eclipse.md
+    href: share-your-code-in-git-eclipse.md
   - name: Manage repos
     items:
     - name: Delete a repo
