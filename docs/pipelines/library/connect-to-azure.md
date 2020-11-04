@@ -84,7 +84,7 @@ or a [VM with a managed service identity](#use-msi).
 
    ![Choosing a service connection type](media/new-service-endpoint-2.png)
 
-1. Switch from the simplified version of the dialog to the full version using the link in the dialog.
+1. Choose Service Principal (manual) option and enter the Service Principal details.
 
    ![Opening the full version of the service  dialog](media/rm-endpoint-link.png)
 
