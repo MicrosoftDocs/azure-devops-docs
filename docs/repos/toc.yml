@@ -1,5 +1,9 @@
 - name: Azure Repos Documentation
   href: index.yml
+- name: "What is Azure Repos?"
+  href: get-started/what-is-repos.md
+- name: Key concepts
+  href: get-started/key-concepts-repos.md
 - name: Start Using Azure Repos
   href: get-started/toc.yml
 - name: Git
