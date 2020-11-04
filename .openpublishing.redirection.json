@@ -16692,6 +16692,10 @@
     {
       "source_path": "release-notes/docswhatsnew/azure-devops-docs-2020-09.md",
       "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path": "docs/repos/git/forks-overview.md",
+      "redirect_url": "/azure/devops/repos/git/forks"
     }
   ]
 }

@@ -2,6 +2,8 @@
   href: ./index.yml
 - name: Get started with Git
   items:
+  - name: Code with Git
+    href: ../get-started/code-with-git.md
   - name: Create a new repo
     href: creatingrepo.md
   - name: Clone an existing repo
@@ -68,7 +70,7 @@
       href: move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
       href: remove-binaries.md
-- name: Branches  
+- name: Branches & forks 
   items:
   - name: About branches & branch policies
     href: branch-policies-overview.md
@@ -80,6 +82,8 @@
     href: branches.md
   - name: Change the default branch
     href: change-default-branch.md
+  - name: Forks
+    href: forks.md
   - name: Manage branches
     items:
     - name: Manage your branches
@@ -97,12 +101,6 @@
     - name: Set branch permissions 
       href: branch-permissions.md
       displayname: security  
-- name: Forks  
-  items:
-  - name: About forks
-    href: forks-overview.md  
-  - name: Forks
-    href: forks.md
 - name: Commits, push, fetch, pull 
   items:
   - name: Save work with commits
@@ -115,15 +113,15 @@
     href: git-tags.md
 - name: Pull requests
   items:
-  - name: Learn about pull requests
+  - name: Review code with pull requests
     href: pull-requests-overview.md
-  - name: Review code with pull requests
+  - name: Create & complete a pull request
     href: pullrequest.md
-  - name: Review code with pull requests
+  - name: View and manage pull requests
     href: pull-requests.md
   - name: Pull request templates
     href: pull-request-templates.md
-  - name: Squash merge pull requests
+  - name: Squash merge pull requests 
     href: merging-with-squash.md
   - name: Extend pull request workflows with pull request status
     href: pull-request-status.md
@@ -139,10 +137,10 @@
     href: undo.md
 - name: History
   items:
-  - name: Review history
-    href: review-history.md
   - name: History in Git
     href: history.md
+  - name: Review history
+    href: review-history.md
   - name: Git log history simplification
     href: git-log-history-simplification.md
   - name: Commit history
