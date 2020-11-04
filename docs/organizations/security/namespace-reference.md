@@ -177,7 +177,7 @@ The following table describes the namespaces that manage object-level permission
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Git Repositories    
+      Git Repositories <a id="git-repositories" />    
    :::column-end:::
    :::column span="1":::
       `Administer`                
