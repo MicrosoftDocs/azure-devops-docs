@@ -161,7 +161,7 @@ You can always check the names by opening the context menu for any report, choos
 **A:** Not at this time. Uploading reports is only supported for an on-premises TFS. You can, however, [chart the results of a flat-list query](../dashboards/charts.md) or use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json).
 
 #### Q: How do I customize a report?
-**A:** You can customize the reports you uploaded using [SQL Server Report Builder 2012](https://docs.microsoft.com/en-us/sql/ssms/object/custom-reports-in-management-studio?view=sql-server-ver15). To learn more, see [Creating Reports for Team Foundation Server 2010](/previous-versions/visualstudio/visual-studio-2010/ff730837(v=vs.100)) and [Customizing Reports for Team Foundation Server 2010](/previous-versions/visualstudio/visual-studio-2010/ff730838(v=vs.100)). Even though these articles are based on TFS 2010, they are valid for TFS 2013 and later versions. 
+**A:** You can customize the reports you uploaded using [SQL Server Report Builder 2012](https://www.microsoft.com/en-us/download/details.aspx?id=53613). To learn more, see [Creating Reports for Team Foundation Server 2010](/previous-versions/visualstudio/visual-studio-2010/ff730837(v=vs.100)) and [Customizing Reports for Team Foundation Server 2010](/previous-versions/visualstudio/visual-studio-2010/ff730838(v=vs.100)). Even though these articles are based on TFS 2010, they are valid for TFS 2013 and later versions. 
 
 #### Q: How can I learn more about the TFS cube?
 **A:** See [Perspectives and measure groups provided in the Analysis Services cube for Visual Studio](../sql-reports/perspective-measure-groups-cube.md).
