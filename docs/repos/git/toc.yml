@@ -2,6 +2,12 @@
   href: ./index.yml
 - name: Get started with Git
   items:
+  - name: Create a new repo
+    href: creatingrepo.md
+  - name: Clone an existing repo
+    href: clone.md
+  - name: Import repo - Web
+    href: import-git-repository.md
   - name: Commit, share, and sync your code
     href: gitquickstart.md
 - name: Key concepts and settings
@@ -22,28 +28,32 @@
     href: repository-settings.md
   - name: Manage large files
     href: manage-large-files.md
-- name: Create, clone, & manage repos
+- name: Connect & authenticate
   items:
-  - name: Create a new repo
-    href: creatingrepo.md
-  - name: Clone an existing repo
-    href: clone.md
-  - name: Import repo - Web
-    href: import-git-repository.md
-  - name: Create repos from different clients
-    items:
-    - name: Create repo - Web
-      href: create-new-repo.md
-    - name: Create repo - CLI
-      href: share-your-code-in-git-cmdline.md
-    - name: Create repo - Visual Studio
-      href: share-your-code-in-git-vs-2017.md
-    - name: Create repo - IntelliJ
-      href: create-repo-intellij.md
-    - name: Create repo - Xcode
-      href: share-your-code-in-git-xcode.md
-    - name: Create repo - Eclipse
-     href: share-your-code-in-git-eclipse.md
+  - name: Connect to a project or repo
+    href: ../../organizations/projects/connect-to-project.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  - name: Authentication
+    href: auth-overview.md
+  - name: Authentication
+    href: auth-overview.md
+  - name: Authenticate with SSH
+    href: use-ssh-keys-to-authenticate.md
+  - name: Authenticate with the Git Credential Manager
+    href: set-up-credential-managers.md
+- name: Create & manage repos
+  items:
+  - name: Create repo - Web
+    href: create-new-repo.md
+  - name: Create repo - CLI
+    href: share-your-code-in-git-cmdline.md
+  - name: Create repo - Visual Studio
+    href: share-your-code-in-git-vs-2017.md
+  - name: Create repo - IntelliJ
+    href: create-repo-intellij.md
+  - name: Create repo - Xcode
+    href: share-your-code-in-git-xcode.md
+  - name: Create repo - Eclipse
+   href: share-your-code-in-git-eclipse.md
   - name: Manage repos
     items:
     - name: Delete a repo
@@ -60,14 +70,6 @@
       href: move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
       href: remove-binaries.md
-- name: Connect & authenticate
-  items:
-  - name: Authentication
-    href: auth-overview.md
-  - name: Authenticate with SSH
-    href: use-ssh-keys-to-authenticate.md
-  - name: Authenticate with the Git Credential Manager
-    href: set-up-credential-managers.md
 - name: Branches  
   items:
   - name: About branches & branch policies
@@ -124,7 +126,7 @@
     href: merging-with-squash.md
   - name: Extend pull request workflows with pull request status
     href: pull-request-status.md
-- name: Merge conflicts, rebase, cherry-pick
+- name: Merge conflicts, rebase, & cherry-pick
   items:
   - name: Resolve merge conflicts
     href: merging.md
@@ -149,13 +151,13 @@
 - name: Cross-service operations
   items:
   - name: Drive Git development from a work item
-    href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
+    href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
   - name: Work item completion on commit
     href: resolution-mentions.md
   - name: Set up continuous integration
-    href: ../../pipelines/build/triggers.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
+    href: ../../pipelines/build/triggers.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
   - name: Define a CI build for your repo
-    href: ../../pipelines/build/ci-build-git.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
+    href: ../../pipelines/build/ci-build-git.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
   - name: Create a pull request status server
     href: create-pr-status-server.md
   - name: Use Azure Functions to create custom branch policies
@@ -172,14 +174,20 @@
   items:
   - name: Azure DevOps Samples for .NET
     href: https://github.com/Microsoft/azure-devops-dotnet-samples
+- name: Command reference
+  items:
+  - name: Git commands
+    href: command-prompt.md
+  - name: tf git permission
+    href: git-permission-command.md
+  - name: tf git view
+    href: git-view-command.md
 - name: Reference
   items:
   - name: "Default Git permissions (Security)"
     href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json
   - name: RPC failures & http.postBuffer
     href: rpc-failures-http-postbuffer.md
-  - name: Command reference
-    href: command-prompt.md
   - name: Go get using Azure Repos
     href: go-get.md
   - name: Format comments with markdown
