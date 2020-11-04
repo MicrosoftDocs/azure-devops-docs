@@ -31,9 +31,7 @@
 - name: Connect & authenticate
   items:
   - name: Connect to a project or repo
-    href: ../../organizations/projects/connect-to-project.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
-  - name: Authentication
-    href: auth-overview.md
+    href: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
   - name: Authentication
     href: auth-overview.md
   - name: Authenticate with SSH
@@ -76,26 +74,29 @@
     href: branch-policies-overview.md
   - name: Branch organization
     href: git-branching-guidance.md
-  - name: Manage your branches
-    href: manage-your-branches.md
-  - name: Create a new branch
+  - name: Create a branch
     href: create-branch.md
   - name: Create work in branches
     href: branches.md
   - name: Change the default branch
     href: change-default-branch.md
-  - name: Delete a branch
-    href: delete-branch.md
-  - name: Restore a deleted branch
-    href: restore-deleted-branch.md
-  - name: Require branch folders
-    href: require-branch-folders.md
-  - name: Lock a branch
-    href: lock-branches.md
-  - name: Branch policies
-    href: branch-policies.md
-  - name: "Branch permissions (Security)"
-    href: branch-permissions.md
+  - name: Manage branches
+    items:
+    - name: Manage your branches
+      href: manage-your-branches.md
+    - name: Delete a branch
+      href: delete-branch.md
+    - name: Restore a deleted branch
+      href: restore-deleted-branch.md
+    - name: Require branch folders
+      href: require-branch-folders.md 
+    - name: Lock a branch
+      href: lock-branches.md 
+    - name: Set branch policies
+      href: branch-policies.md
+    - name: Set branch permissions 
+      href: branch-permissions.md
+      displayname: security  
 - name: Forks  
   items:
   - name: About forks
@@ -179,9 +180,9 @@
   - name: Git commands
     href: command-prompt.md
   - name: tf git permission
-    href: git-permission-command.md
+    href: ../tfvc/git-permission-command.md
   - name: tf git view
-    href: git-view-command.md
+    href: ../tfvc/git-view-command.md
 - name: Reference
   items:
   - name: "Default Git permissions (Security)"
