@@ -972,10 +972,10 @@ For an overview of managing collections, see [Configure and manage TFS resources
    :::column-end:::
    :::column span="1":::
       - [Delete and recover packages in Azure Artifacts](../../artifacts/how-to/delete-and-recover-packages.md)
-      - [View Artifact storage](../../artifacts/start-using-azure-artifacts.md#view-artifact-storage)
+      - [View Artifact storage](../../artifacts/start-using-azure-artifacts.md#view-artifact-and-billed-storage)
    :::column-end:::
    :::column span="1":::
-     Each organization gets Azure Artifacts for free, up until 2 GiB of storage is reached. For more information, see [Pay for Artifacts](../../artifacts/start-using-azure-artifacts.md#pay-for-artifacts).
+     Each organization gets Azure Artifacts for free, up until 2 GiB of storage is reached. For more information, see [Pay for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#pay-for-azure-artifacts).
    :::column-end:::
 :::row-end:::
 ---
