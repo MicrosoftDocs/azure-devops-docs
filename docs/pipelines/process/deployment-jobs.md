@@ -117,7 +117,7 @@ We currently only support the rolling strategy to VM resources.
 
 For example, a rolling deployment typically waits for deployments on each set of virtual machines to complete before proceeding to the next set of deployments. You could do a health check after each iteration and if a significant issue occurs, the rolling deployment can be stopped.
 
-Rolling deployments can be configured by specifying the keyword `rolling:` under `strategy:` node. 
+Rolling deployments can be configured by specifying the keyword `rolling:` under the `strategy:` node. 
 The `strategy.name` variable is available in this strategy block, which takes the name of the strategy. In this case, rolling.
 
 ```YAML
