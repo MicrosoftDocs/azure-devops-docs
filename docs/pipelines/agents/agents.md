@@ -44,6 +44,9 @@ You can use self-hosted agents in Azure Pipelines or Team Foundation Server (TFS
 Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
 Also, machine-level caches and configuration persist from run to run, which can boost speed.
 
+> [!NOTE]
+> We strongly suggest only install one Agent per machine, the Agent.service.exe is a really resource consumption process and installing 2 or more agents is going to affect performance and the result of the Build or Releases.
+
 ::: moniker range="azure-devops"
 
 > [!TIP]
