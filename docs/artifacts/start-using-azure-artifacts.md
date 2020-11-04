@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: chcomley
 author: chcomley
-ms.date: 11/03/2020
+ms.date: 11/04/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 > [!NOTE]
 > If you're using a version of TFS, you need to license Azure Artifacts rather than set up billing. 
-F
+
 ::: moniker range="azure-devops"
 
 [!INCLUDE [version-vsts-only](../includes/version-vsts-only.md)]
@@ -33,9 +33,9 @@ Azure Artifacts gets billed on a consumption basis, and is free up until 2 GiB o
 
 ## Prerequisites
 
-- To start using Azure Artifacts, [billing must be set up for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md).
-- You need to have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md).
+- To start using Azure Artifacts, you need to have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md).
 - Your network connection must be set up to [allow certain IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md).
+- If you plan to use more than the free usage tier of 2 GiB, you must [set up billing for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md).
 
 ::: moniker-end
 
