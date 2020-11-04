@@ -412,4 +412,4 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 - [Default and supported notifications](../notifications/oob-built-in-notifications.md) 
 - [Manage personal notifications](../notifications/manage-your-personal-notifications.md)
-- [Manage notifications for a team or group](../notifications/manage-team-group-notifications.md)
+- [Manage notifications for a team or group](../notifications/manage-team-group-global-organization-notifications.md)

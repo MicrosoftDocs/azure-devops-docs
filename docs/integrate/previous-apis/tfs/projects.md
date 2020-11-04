@@ -78,7 +78,7 @@ GET https://mytfsserver/DefaultCollection/_apis/projects?api-version=1.0
 
 #### Sample code
 
-* [C# (ListAllProjectsAndTeams method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L22)
+* [C# (ListAllProjectsAndTeams method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L22)
 
 ### By state
 <a id="projectStates"></a> 
@@ -130,7 +130,7 @@ GET https://mytfsserver/DefaultCollection/_apis/projects?stateFilter=All&api-ver
 
 #### Sample code
 
-* [C# (ListProjectsByState method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L359)
+* [C# (ListProjectsByState method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L359)
 
 ### A page at a time
 <a name="projectpageatatime"></a>
@@ -226,7 +226,7 @@ GET https://mytfsserver/DefaultCollection/_apis/projects/Fabrikam-Fiber-TFVC?inc
 
 #### Sample code
 
-* [C# (GetProjectDetails method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L98)
+* [C# (GetProjectDetails method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L98)
 
 ## Create a project
 <a name="createateamproject" />
@@ -281,7 +281,7 @@ POST https://mytfsserver/DefaultCollection/_apis/projects?api-version=2.0-previe
 
 #### Sample code
 
-* [C# (CreateProject method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L121)
+* [C# (CreateProject method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L121)
 
 ## Update a project
 <a name="updateateamproject" />
@@ -341,7 +341,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-91
 
 #### Sample code
 
-* [C# (RenameProject method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L280)
+* [C# (RenameProject method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L280)
 
 ### Change a project description
 <a id="UpdateDescription"></a>
@@ -370,7 +370,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/projects/eb6e4656-77fc-42a1-91
 
 #### Sample code
 
-* [C# (ChangeProjectDescription method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L235)  
+* [C# (ChangeProjectDescription method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L235)  
 
 ## Get an operation
 <a id="GetOperation"></a>
@@ -413,7 +413,7 @@ GET https://mytfsserver/DefaultCollection/_apis/operations/109787e4-3f2e-4fbb-af
 
 #### Sample code
 
-* [C# (WaitForLongRunningOperation method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L204)
+* [C# (WaitForLongRunningOperation method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L204)
 
 ## Delete a project
 <a id="DeleteProject"></a>
@@ -442,7 +442,7 @@ DELETE https://fabrikam.visualstudio.com/DefaultCollection/_apis/projects/98dd5d
 
 #### Sample code
 
-* [C# (DeleteProject method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L323)
+* [C# (DeleteProject method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/ProjectsSample.cs#L323)
 
 <a name="Get project properties"></a>
 

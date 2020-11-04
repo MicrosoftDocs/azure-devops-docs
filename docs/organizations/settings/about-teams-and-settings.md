@@ -1,7 +1,7 @@
 ---
 title: About teams & Agile tools
 titleSuffix: Azure DevOps
-description: Overview for adding and configuring teams in Azure DevOps
+description: Overview for adding and configuring teams in Azure DevOps.
 ms.technology: devops-settings
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.author: kaelli
@@ -170,7 +170,7 @@ When you add a team, a security group is automatically created with the team nam
 
 ::: moniker range=">= tfs-2017"
 
-You can also use the **@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
+You can also use the **\@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
 
 ::: moniker-end
 

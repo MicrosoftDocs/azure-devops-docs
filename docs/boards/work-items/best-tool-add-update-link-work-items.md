@@ -357,8 +357,8 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 <td> 
 <ul>
 <li><a href="/azure/devops/notifications/manage-your-personal-notifications" data-raw-source="[Manage personal notifications](../../notifications/manage-your-personal-notifications.md)">Manage personal notifications</a></li>
-<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Manage team and project notifications](../../notifications/manage-team-group-notifications.md)">Manage team and project notifications</a></li>
-<li><a href="/azure/devops/notifications/manage-organization-notifications" data-raw-source="[Manage organization notifications](../../notifications/manage-organization-notifications.md)">Manage organization notifications</a></li>
+<li><a href="/azure/devops/notifications/manage-team-group-notifications" data-raw-source="[Manage team and project notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage team and project notifications</a></li>
+<li><a href="/azure/devops/notifications/manage-organization-notifications" data-raw-source="[Manage organization notifications](../../notifications/manage-team-group-global-organization-notifications.md)">Manage organization notifications</a></li>
 </ul>
 </td>
 </tr>

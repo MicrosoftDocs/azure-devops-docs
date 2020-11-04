@@ -191,7 +191,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 3. From a command prompt, run the TFX tool's packaging command from your extension directory.
 
    ```
-   tfx extension create
+   npx tfx extension create
    ```
    
 

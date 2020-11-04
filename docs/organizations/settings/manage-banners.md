@@ -17,7 +17,7 @@ ms.date: 09/24/2020
 
 A quick and effective way to communicate with your organization is through information banners. You can specify one of three types of banners: error, information, and warning. Only one banner, the last one added or updated, is displayed at a time. Banners remain in effect until their expiration date. 
 
-The following image shows how an information message is displayed. Users can cancel the message by selecting the :::image type="icon" source="../../media/icons/close-filter.png" border="false"::: close icon. 
+The following image shows how an information message is displayed. Users can cancel the message by selecting **Close** :::image type="icon" source="../../media/icons/close-filter.png" border="false":::. 
 
 > [!div class="mx-imgBorder"]  
 > ![Information banner](media/banners/show-banner-info.png)   
