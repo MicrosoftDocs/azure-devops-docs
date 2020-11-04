@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: ChComley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 09/18/2020
+ms.date: 11/04/2020
 ---
 
 # Allowed address lists and network connections   
@@ -49,6 +49,7 @@ To ensure your organization works with any existing firewall or IP restrictions,
 * `live.com`
 * `dev.azure.com`
 * `azure.microsoft.com`
+* `management.azure.com`
 * `azurecomcdn.azureedge.net`
 * `amp.azure.net`
 * `aexprodea1.vsaex.visualstudio.com`

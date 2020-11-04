@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 09/24/2020
+ms.date: 11/02/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -291,3 +291,8 @@ Follow each of these steps to troubleshoot your failing triggers:
 ### Wrong version
 
 [!INCLUDE [qa](includes/qa1.md)]
+
+## Related articles
+
+- [Scheduled triggers](../process/scheduled-triggers.md)
+- [Pipeline completion triggers](../process/pipeline-triggers.md)

@@ -135,7 +135,7 @@ On Linux or macOS, in Bash, you can enter:
  
 ```bash
 MY_PAT=yourPAT		# replace "yourPAT" with your actual PAT
-B64_PAT=$(echo ":$MY_PAT" | base64)
+B64_PAT=$(printf ":$MY_PAT" | base64)
 git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 
@@ -147,11 +147,9 @@ $B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(":$MyP
 git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 
-To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential managers:
+To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential manager:
 
-* [Git Credential Manager for macOS and Linux](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux)
-* [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows)
-	(requires [Git for Windows](https://www.git-scm.com/download/win))
+* [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core) (Windows also requires [Git for Windows](https://www.git-scm.com/download/win))
 
 ### Use a PAT in your code
 

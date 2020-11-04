@@ -71,7 +71,7 @@ The following delivery settings are available for a group or team:
 * **Deliver to individual members:** notifications are delivered to each member of the group or team. This is usually the default option. See the section on "team expansion" below for more details on how this option works.
 * **Do not deliver:** notifications are not delivered by default.
 
-If a delivery setting is not explicitly set for a team or group, the value is determined from the [organization-level delivery setting](manage-organization-notifications-settings.md) and is either _Deliver to individual members_ or _Do not deliver_. 
+If a delivery setting is not explicitly set for a team or group, the value is determined from the [organization-level delivery setting](manage-team-group-global-organization-notifications.md) and is either _Deliver to individual members_ or _Do not deliver_. 
 > [!NOTE]
 > The delivery settings dialog does not indicate whether the current selection was explicitly set or if it was inherited.
 

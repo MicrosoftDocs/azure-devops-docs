@@ -47,7 +47,7 @@ To simplify quickly generating reports, we designed Analytics views to work with
 
 1. Load the Power BI pbix file associated with your view in Power BI Desktop. For details, see [Connect with Power BI Data Connector](data-connector-connect.md).
 
-2. From the Modeling tab **Calculations** section of the ribbon, choose **New Measure**.
+2. From the **Modeling** tab **Calculations** section of the ribbon, choose **New Measure**.
 
     > [!div class="mx-imgBorder"]  
     > ![Power BI, Modeling tab, New Measure](media/new-measure.png)  
@@ -108,12 +108,12 @@ The following steps will help you resolve this issue.
 	> [!NOTE]   
 	> You may need to revise the definition if you need more granularity than *State Category* provides.  *State Category* provides correct sorting across all work item types regardless of any *State* customizations.
 
-4. Open the **Data** view and select the *State* field.
+3. Open the **Data** view and select the *State* field.
 
     > [!div class="mx-imgBorder"]  
     > ![Data view, Select state field](media/time-in-state-state-field-sort.png)
 
-5. From the **Modeling** tab, choose **Sort by Column** and then select the *State Sort Order* field.
+4. From the **Modeling** tab, choose **Sort by Column** and then select the *State Sort Order* field.
 
     > [!div class="mx-imgBorder"]  
     > ![Modeling tab, Sort by Column, Choose State Sort Order](media/time-in-state-state-order-sort.png)

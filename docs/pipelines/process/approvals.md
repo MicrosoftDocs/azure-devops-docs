@@ -36,7 +36,7 @@ You can manually control when a stage should run using approval checks. This is 
 
 :::image type="content" source="media/checks/approvals-and-checks.png" alt-text="Approvals and Checks on environment.":::
    
-3. Select **Create**, provide the approvers and an optional message, and select **Create** again to to complete addition of the manual approval check.
+3. Select **Create**, provide the approvers and an optional message, and select **Create** again to complete the addition of the manual approval check.
 
 You can add multiple approvers to an environment. These approvers can be individual users or groups of users. When a group is specified as an approver, only one of the users in that group needs to approve for the run to move forward.
 
@@ -63,7 +63,7 @@ To define the branch control check:
 At run time, the check would validate branches for all linked resources in the run against the allowed list. If any one of the branches do not match the criteria, the check fails and the stage is marked failed. 
 
 > [!NOTE]
-> The check requires the branch names to be fully qualified. Make sure the format for branch name is `ref/heads/<branch name>`
+> The check requires the branch names to be fully qualified. Make sure the format for branch name is `refs/heads/<branch name>`
 
 ## Business hours
 

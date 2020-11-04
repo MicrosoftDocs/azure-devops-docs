@@ -160,9 +160,9 @@ You can also view and manage work that you're following from your Project pages.
 
 ## Query work items that you're following
 
-You can use the **@Follows** macro in a query to filter a list based on work items you're following in addition to other query filters. 
+You can use the **\@Follows** macro in a query to filter a list based on work items you're following in addition to other query filters. 
 
-For example, the following query shows how to query across all projects for active work items that you're following. You use the ID field and the In operator with the **@Follows** macro.  
+For example, the following query shows how to query across all projects for active work items that you're following. You use the ID field and the In operator with the **\@Follows** macro.  
 
 
 :::image type="content" source="media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
@@ -181,4 +181,4 @@ For example, the following query shows how to query across all projects for acti
 
 ### Q: Can I add someone else to follow a work item or PR?
 
-**A:** You can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For details, see [Manage team notifications](../../notifications/manage-team-group-notifications.md).	
+**A:** You can't add another team member to follow a work item or pull request at this time. You can subscribe them to get notified based on select criteria, such as when a work item is create or modified, or a pull request is created. For details, see [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md).	
