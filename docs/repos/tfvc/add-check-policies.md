@@ -55,16 +55,8 @@ Administrators of Team Foundation version control can add check-in policy requir
 
 4.  When you are satisfied with the settings for the check-in policies, click **OK**; the new check-in policy now displays with future check-ins.
 
-## See Also
+## Related articles 
 
-#### Reference
-
-[Configure Command](configure-command.md)
-
-#### Concepts
-
-[Set and Enforce Quality Gates](set-enforce-quality-gates.md)
-
-#### Other Resources
-
-[Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100))
+- [Configure Command](configure-command.md)
+- [Set and Enforce Quality Gates](set-enforce-quality-gates.md)
+- [Walkthrough: Customizing Checkin Policies and Notes](/previous-versions/ms181281(v=vs.100))

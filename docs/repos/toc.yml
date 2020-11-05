@@ -1,6 +1,10 @@
 - name: Azure Repos Documentation
   href: index.yml
-- name: Start Using Azure Repos
+- name: Compare TFVC and Git 
+  href: tfvc/comparison-git-tfvc.md
+- name: Use Git and TFVC
+  href: git/team-projects.md 
+- name: Get started  
   href: get-started/toc.yml
 - name: Git
   href: git/toc.yml 
