@@ -9,9 +9,11 @@ author: wpschaub
 monikerRange: '>= tfs-2015'
 ---
 
-# Explore the feature isolation strategy using Team Foundation Version Control (TFVC)
+# Explore the feature isolation strategy  
 
-Are you planning to implement [Team Foundation Version Control](./what-is-tfvc.md)'s feature isolation strategy in Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
+
+Are you planning to implement [Team Foundation Version Control](./what-is-tfvc.md)'s feature isolation strategy in Azure DevOps? You probably have a few questions, such as:
 
 - Is it practical with large development teams?
 - Does it align well with your agile process(es)?

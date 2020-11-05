@@ -51,13 +51,13 @@ tf git permission [/allow:(* |perm1[,perm2,...]]
 |          **/branch:**<em>BranchName</em>          |                                                                                      Specifies the name of the branch that contains the permissions to view or modify. If you specify **/branch**, you must also specify **/repository**.                                                                                      |
 |      **/login:**<em>username,[password]</em>      |                                                                                      Specifies the user account to run the command. See [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md).                                                                                       |
 
-See [Git repository permission namespaces and actions](/azure/devops/server/command-line/tfssecurity-cmd#git-repository) for a list of the permissions that can be administered by the `tf git permission` command.
+See [Git repository permission namespaces](../../organizations/security/namespace-reference.md#git-repositories) for a list of the permissions that can be administered by the `tf git permission` command.
 
 
 ## Examples
 
->[!NOTE]
->The following examples are broken into multiple lines for readability. To copy and paste them into the command-line and run them, first copy them and paste them into notepad or another tool and edit them so the commands are contained on a single line.
+> [!NOTE]
+> The following examples are broken into multiple lines for readability. To copy and paste them into the command-line and run them, first copy them and paste them into notepad or another tool and edit them so the commands are contained on a single line.
 
 ### View collection level permissions
 

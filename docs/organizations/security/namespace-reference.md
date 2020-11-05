@@ -177,7 +177,7 @@ The following table describes the namespaces that manage object-level permission
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Git Repositories    
+      Git Repositories <a id="git-repositories" />    
    :::column-end:::
    :::column span="1":::
       `Administer`                
@@ -857,7 +857,7 @@ The following table describes the security namespaces and permissions that aren'
       `SecurityAdmin`   
    :::column-end:::
    :::column span="2":::
-      Sets permissions to read, create, and manage the security of the data store. These permissions are assigned to several AzureDevOps service principals.  
+      Sets permissions to read, create, and manage the security of the data store. These permissions are assigned to several Azure DevOps service principals.  
       <br/>
       **ID:** `11238e09-49f2-40c7-94d0-8f0307204ce4`
    :::column-end:::
