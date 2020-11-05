@@ -16704,6 +16704,10 @@
     {
       "source_path": "docs/repos/tfvc/compare-folders-files.md",
       "redirect_url": "/azure/devops/repos/tfvc/compare-files"
+    },
+    {
+      "source_path": "docs/repos/git/forks-overview.md",
+      "redirect_url": "/azure/devops/repos/git/forks"
     }
   ]
 }
