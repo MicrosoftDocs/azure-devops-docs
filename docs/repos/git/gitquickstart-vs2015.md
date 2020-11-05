@@ -9,7 +9,7 @@ ms.date: 03/14/2018
 monikerRange: '>= tfs-2015'
 ---
 
-#  Get Started with Git and Visual Studio 2015
+#  Get started with Git and Visual Studio 2015
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
 
