@@ -49,8 +49,6 @@ https://github.com/MicrosoftDocs/pipelines-php
 
    If you want to watch your pipeline in action, select the build job.
 
-   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) template.
-
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
 3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
@@ -65,7 +63,9 @@ For the exact versions of PHP that are preinstalled, refer to [Microsoft-hosted 
 
 ### Use a specific PHP version
 
-On the Microsoft-hosted Ubuntu agent, multiple versions of PHP are installed. A symlink at `/usr/bin/php` points to the currently set PHP version, so that when you run `php`, the set version executes. To use a PHP version other than the default, the symlink can be pointed to that version using the `update-alternatives` tool. Set the PHP version that you prefer by adding the following snippet to your `azure-pipelines.yml` file and changing the value of the **phpVersion** variable accordingly.
+On the Microsoft-hosted Ubuntu agent, multiple versions of PHP are installed. A symlink at `/usr/bin/php` points to the currently set PHP version, so that when you run `php`, the set version executes. 
+
+To use a PHP version other than the default, the symlink can be pointed to that version using the `update-alternatives` tool. Set the PHP version that you prefer by adding the following snippet to your `azure-pipelines.yml` file and changing the value of the **phpVersion** variable accordingly.
 
 ```yaml
 pool:
@@ -118,7 +118,7 @@ Optionally, customize the value of **rootFolderOrFile** to alter what is include
 
 ### Using a custom composer location
 
-If your composer.json is in a subfolder instead of the root directory, you can leverage the ```--working-dir``` argument to tell composer what directory to use. For example, if your composer.json is inside the subfolder ```pkgs```
+If your composer.json is in a subfolder instead of the root directory, you can use the ```--working-dir``` argument to tell composer what directory to use. For example, if your composer.json is inside the subfolder ```pkgs```
 
 ```composer install --no-interaction --working-dir=pkgs```
 
