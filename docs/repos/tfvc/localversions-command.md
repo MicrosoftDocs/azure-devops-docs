@@ -120,11 +120,8 @@ The following example displays the versions of all files (including those in sub
 c:\workspaces\FeatureA\catalog\>tf localversions . /recursive /format:detailed
 ```
 
-## See Also
 
-#### Concepts
+## Related articles
 
-[Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))  
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))  
+- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
