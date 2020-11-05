@@ -86,4 +86,4 @@ Visual Studio will then download the file(s) needed and launch the code editor a
 ## Related articles
 
 - [Publish Symbols for Debugging](/azure/devops/pipelines/symbols/)
-- [Build: Index & Publish Symbols](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols)
+- [Build: Index & Publish Symbols](../../pipelines/tasks/build/index-sources-publish-symbols.md)

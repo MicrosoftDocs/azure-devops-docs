@@ -107,7 +107,7 @@ For more information, see [Manage team, group, and global notifications](manage-
 
 ## Permissions for notifications
 
-There are no UI permissions associated with managing email notifications or alerts. Instead, they can be managed using the [TFSSecurity command line tool](https://docs.microsoft.com/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
+There are no UI permissions associated with managing email notifications or alerts. Instead, they can be managed using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
 
 - By default, members of the project level **Contributors** group can subscribe to alerts for themselves.
 - Members of the **Project Collection Administrators** group, or users who have **Edit collection-level information** permission can set alerts in that collection for others or for a team.
