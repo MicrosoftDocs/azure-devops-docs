@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 #  Get started using Git and Visual Studio 2013
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
 
 *Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).*
 
