@@ -175,27 +175,12 @@ The following example uses the scope option to apply a label to 314.cs.
 c:\projects>tf label goodbuild@$/TeamProject1 314.cs
 ```
 
-## See Also
+## Related articles
 
-#### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Labels Command](labels-command.md)
-
-[Unlabel Command](unlabel-command.md)
-
-#### Concepts
-
-[Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
-
-[Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-## Change History
-
-| Date | History | Reason |
-|---|---|---|
-| October 2011 | Removed incorrect guidance on `/child` option. | Content bug fix. |
+- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Labels Command](labels-command.md)
+- [Unlabel Command](unlabel-command.md)
+- [Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
+- [Use Labels to Take a Snapshot of Your Files](use-labels-take-snapshot-your-files.md)
+- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+ 
