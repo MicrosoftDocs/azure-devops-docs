@@ -31,16 +31,40 @@ landingContent:
         links:
           - text: What is Azure Repos?
             url: ../get-started/what-is-repos.md
-  - title: Get started with Git or GitHub
+          - text: Connect to a project or repository
+            url: ../../organizations/projects/connect-to-projects.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+          - text: Authentication
+            url: ./auth-overview.md
+  - title: Get started with Git or GitHub and Visual Studio
     linkLists:
       - linkListType: tutorial
         links:
+          - text: Create a new repo
+            url: ./clone.md
+          - text: Clone an existing repo
+            url: ./clone.md
           - text: Commit, share, and sync your code
             url: ./gitquickstart.md
-          - text: Clone a repository
-            url: ./clone.md
+          - text: Share your code with Visual Studio
+            url: ./share-your-code-in-git-vs-2017.md
           - text: Update code with fetch and pull
             url: ./pulling.md
+  - title: Create a Git repository in Azure Repos
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create a repo from the web portal
+            url: ./create-new-repo.md
+          - text: Create a repo from the command line
+            url: ./share-your-code-in-git-cmdline.md
+          - text: Clone your repo in IntelliJ
+            url: ./create-repo-intellij.md
+          - text: Share your code using Xcode
+            url: ./share-your-code-in-git-xcode.md
+          - text: Share your code using Eclipse
+            url: ./share-your-code-in-git-eclipse.md
+  - title: Set up your Azure Repos Git repositories
+    linkLists:
       - linkListType: how-to-guide
         links:
           - text: Improve code quality with branch policies
@@ -53,36 +77,33 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Authentication
-            url: ./auth-overview.md
-          - text: History in Git
-            url: ./history.md
+          - text: Branches & branch policies
+            url: ./branch-policies-overview.md
           - text: Branch organization
             url: ./git-branching-guidance.md
+          - text: Forks
+            url: ./forks.md
+          - text: History in Git
+            url: ./history.md
           - text: Pull requests
             url: ./pull-requests-overview.md
-          - text: Forks
-            url: ./forks-overview.md
-          - text: Branch policies
-            url: ./branch-policies-overview.md
   - title: Configure resources
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Create & manage Git repositories
-            url: ./create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Manage Git branch policies
-            url: ./branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./branch-policies.md 
           - text: Manage repository permissions
-            url: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json 
   - title: Reference
     linkLists:
       - linkListType: reference
         links:
-          - text: Azure DevOps CLI
-            url: /cli/azure/ext/azure-devops/repos
-          - text: Git REST API
-            url: /rest/api/azure/devops/git/
           - text: Git command reference
             url: ./command-prompt.md
+          - text: Azure DevOps CLI
+            url: ../../cli/index.md
+          - text: Git REST API
+            url: /rest/api/azure/devops/git/
+
 
