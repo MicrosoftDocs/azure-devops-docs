@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 11/03/2020
+ms.date: 11/05/2020
 monikerRange: azure-devops
 ---
 
@@ -141,7 +141,7 @@ In the following example, a new resource group and virtual machine scale set are
     :::image type="content" source="media/scale-set-agents/create-agent-pool.png" alt-text="Create agent pool." :::
 
     > [!IMPORTANT]
-    > You must create your scale set pool in **Project settings** and not **Organization settings**. Conversely, when you want to delete a scale set pool, you must delete it from **Organization settings**, and not **Project settings**.
+    > You may create your scale set pool in **Project settings** or **Organization settings**, but when you want to delete a scale set pool, you must delete it from **Organization settings**, and not **Project settings**.
 
 2. Select **Azure virtual machine scale set** for the pool type. Select the **Azure subscription** that contains the scale set, choose **Authorize**, and choose the desired virtual machine scale set from that subscription. If you have an existing [service connection](../library/service-endpoints.md) you can choose that from the list instead of the subscription.
 
