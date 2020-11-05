@@ -45,6 +45,8 @@ The most common error page is the *401 Not Authorized* error, which occurs when 
 
 * Your identity isn't a member of the organization.
 * Your identity has an invalid or missing license assignment.
+* Your identity does not have enough memberships (Reader/Contributors group, for example) to access the resource.
+* Your identity is a B2B guest in the tenant, and the invitation has not been accepted.
 
 If you think you're a member of the organization but are blocked by this error page, [contact customer support](https://support.microsoft.com/).
 
@@ -64,6 +66,8 @@ Your work or school Azure AD account doesn't have access, but your personal Micr
 In some cases, you might not know you have two identities with the same sign-in address. The work or school Azure AD account might have been created by an administrator when you were added to Office365 or Azure AD.
 
 To sign out of your current work or school Azure AD account, select **Sign in with your personal MSA account**, and then sign in by using your personal Microsoft account. After authentication, you should have access to the organization.
+
+* If you can´t access to the organization, make sure that your Azure Active Directory still existsand that your Work or School account is in the tenant (Azure AD)?
 
 > [!TIP]
 > To avoid seeing this prompt, you can rename your Microsoft account. Then, only one identity (your work or school account, or Azure AD account) uses your sign-in address.
