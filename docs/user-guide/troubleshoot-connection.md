@@ -2,13 +2,13 @@
 title: Troubleshoot connecting project
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Follow these steps to resolve connection issues with Azure DevOps Services & Team Foundation Server  
+description: Follow these steps to resolve connection issues with Azure DevOps.
 ms.technology: devops-new-user
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 04/22/2019
+ms.date: 11/05/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -24,7 +24,7 @@ As a first step in resolving connectivity issues with Azure DevOps, complete the
 
 1. Sign out of your browser. To do so, select the [Visual Studio sign out](https://aka.ms/VsSignout) link.
 
-2. Delete the cookies in your browser. To delete cookies in most browsers, press Ctrl+Shift+Del.
+2. Delete the cookies in your browser. To delete cookies in most browsers, select Ctrl+Shift+Del.
 
 3. Open Internet Explorer and delete the browser cookies. The Visual Studio IDE uses Internet Explorer cookies.
 
@@ -41,14 +41,14 @@ Two types of identities can sign in: Microsoft accounts and Azure Active Directo
 > [!div class="mx-imgBorder"]
 > ![Troubleshoot Azure DevOps connection 401 error 1](media/troubleshoot-connection/401_notauthorized.png)
 
-The most common error page is the *401 Not Authorized* error, which occurs when your identity doesn't have permissions to enter an organization. Common reasons for the error include:
+The most common error page is the *401 Not Authorized* error, which occurs when your identity doesn't have permissions to enter an organization. See the following common reasons for the error:
 
 * Your identity isn't a member of the organization.
 * Your identity has an invalid or missing license assignment.
-* Your identity does not have enough memberships (Reader/Contributors group, for example) to access the resource.
-* Your identity is a B2B guest in the tenant, and the invitation has not been accepted.
+* Your identity doesn't have enough memberships to access the resource. For example, membership to the Reader/Contributors group.
+* Your identity is a B2B guest in the tenant, and the invitation hasn't been accepted.
 
-If you think you're a member of the organization but are blocked by this error page, [contact customer support](https://support.microsoft.com/).
+If you think you're a member of the organization, but are blocked by this error page, [contact customer support](https://support.microsoft.com/).
 
 ### Scenario 1
 
@@ -67,10 +67,10 @@ In some cases, you might not know you have two identities with the same sign-in 
 
 To sign out of your current work or school Azure AD account, select **Sign in with your personal MSA account**, and then sign in by using your personal Microsoft account. After authentication, you should have access to the organization.
 
-* If you can´t access to the organization, make sure that your Azure Active Directory still existsand that your Work or School account is in the tenant (Azure AD)?
+* If you can´t access to the organization, make sure that your Azure Active Directory still exists and that your work or school account is in the Azure AD tenant.
 
 > [!TIP]
-> To avoid seeing this prompt, you can rename your Microsoft account. Then, only one identity (your work or school account, or Azure AD account) uses your sign-in address.
+> To avoid seeing this prompt, you can rename your Microsoft account. Then, only one identity, your work or school account, or Azure AD account, uses your sign-in address.
 
 ### Scenario 2
 
