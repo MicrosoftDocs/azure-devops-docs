@@ -11,7 +11,7 @@ ms.date: 08/28/2020
 monikerRange: '>= tfs-2013'
 ---
 
-# Review code with pull requests
+# View and manage pull requests
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
@@ -22,7 +22,7 @@ Reviewers can step through the proposed changes, leave comments, and vote to app
 
 New to pull requests? Learn more about how to [get feedback with Git pull requests](/azure/devops/learn/git/git-pull-requests).
 
-## View and manage your pull requests
+## View your pull requests
 
 ::: moniker range=">= azure-devops-2019"
 
