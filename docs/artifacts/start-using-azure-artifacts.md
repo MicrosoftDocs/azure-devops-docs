@@ -142,6 +142,8 @@ A: When you remove your Azure Subscription from your Azure DevOps organization, 
 
 A: Customers from before May 6, 2019 aren't charged for Artifacts storage until November 1, 2020. You can opt in to the new storage model by setting a paid limit above the amount of storage you're currently using. If you opt in, your Azure bill will include the storage cost calculated from November 1 onward. 
 
-
-
 ::: moniker-end
+
+## What's next?
+
+* [Artifacts Storage breakdown](artifact-storage.md)
