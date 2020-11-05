@@ -9,7 +9,7 @@ author: ramiMSFT
 monikerRange: '>= tfs-2017'
 ---
 
-# Artifact storage
+# Artifact storage breakdown
 
 [!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]
 
