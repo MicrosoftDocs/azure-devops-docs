@@ -30,7 +30,7 @@ Enforce policies for accessing your team's critical resources and key assets.
 
 Your organization authenticates users through your organization's directory. Only users who are members or guests in that directory get access to your organization.
 Disabled or removed users from your directory have no access to your organization by any mechanism. For example, mechanisms such as personal access tokens (PATs) or  SSH.
-Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) manage users in your directory, so they control who gets access to your organization.
+Only specific [Azure AD administrators](/azure/active-directory/roles/permissions-reference) manage users in your directory, so they control who gets access to your organization.
 
 Without Azure AD, you're solely responsible for controlling organization access. All users must sign in with Microsoft accounts.
 
