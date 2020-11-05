@@ -67,8 +67,8 @@ Learn more about [setting up SSH with Azure DevOps](use-ssh-keys-to-authenticate
 
 ## OAuth
 
-Use [OAuth](/azure/devops/integrate/get-started/Authentication/oauth) 
-to generate tokens for accessing [REST APIs](/azure/devops/integrate/get-started/rest/basics). The [Accounts](/rest/api/azure/devops/account) 
+Use [OAuth](../../integrate/get-started/authentication/oauth.md) 
+to generate tokens for accessing [REST APIs](/rest/api/azure/devops/). The [Accounts](/rest/api/azure/devops/account) 
 and [Profiles](/rest/api/azure/devops/profile) 
 APIs support only OAuth. 
 
@@ -78,4 +78,3 @@ or Windows running [Git for Windows](https://www.git-scm.com/download/win)
 and can't use 
 [Git credential managers](../../repos/git/set-up-credential-managers.md) 
 or [personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
- 
