@@ -1,9 +1,9 @@
-- name: TFVC
+- name: TFVC repositories
   href: index.yml
+- name: What is TFVC?
+  href: what-is-tfvc.md
 - name: Get started
   items:
-  - name: What is TFVC?
-    href: what-is-tfvc.md
   - name: Visual Studio
     href: share-your-code-in-tfvc-vs.md
   - name: Eclipse
