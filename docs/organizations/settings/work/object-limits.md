@@ -71,7 +71,7 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Boards | 1000 cards (excluding those cards in the [*Proposed* and *Completed* workflow state categories](../../../boards/work-items/workflow-and-state-categories.md)) | 
 | Taskboard | 1000 tasks  | 
 | Teams | 5,000 per project | 
-| Work item tags | 150,000 tag definitions per project | 
+| Work item tags | 150,000 tag definitions per organization or collection | 
 
 Each backlog can display up to 10,000 work items. This is simply a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
