@@ -12,7 +12,7 @@ Welcome to what's new in the Azure DevOps docs from October 1, 2020 through Octo
 
 ### Updated articles
 
-- [Delete and recover packages](/azure/devops/artifacts/how-to/delete-and-recover-packages) - Azure artifacts packages
+- [Delete and recover packages](/azure/devops/artifacts/how-to/delete-and-recover-packages)
 
 ## Boards
 
@@ -20,55 +20,57 @@ Welcome to what's new in the Azure DevOps docs from October 1, 2020 through Octo
 
 - [Remove, delete, or restore work items](/azure/devops/boards/backlogs/remove-delete-work-items)
 
+## Integrate
+
+### Updated articles
+
+- [Use the Cross-platform CLI for Azure DevOps using personal access tokens (PATs)](/azure/devops/integrate/get-started/auth/tfs-basic-auth)
+- [Release API Contracts](/azure/devops/integrate/previous-apis/rm/contracts)
+
 ## Notifications
 
 ### New articles
 
-- [Manage notifications for a team, group, or organization](/azure/devops/notifications/manage-team-group-global-organization-notifications) - Manage notifications, About notifications
+- [Manage notifications for a team, group, or organization](/azure/devops/notifications/manage-team-group-global-organization-notifications)
 
 ### Updated articles
 
-- [About notifications](/azure/devops/notifications/about-notifications) - Manage notifications, About notifications
+- [About notifications](/azure/devops/notifications/about-notifications)
+- [Link work items to external objects in Azure DevOps](/azure/devops/notifications/add-links-to-work-items)
+- [Manage your personal notifications](/azure/devops/notifications/manage-your-personal-notifications)
 
 ## Organizations
 
 ### New articles
 
 - [Security namespace and permission reference for Azure DevOps](/azure/devops/organizations/security/namespace-reference)
-  - About security, membership, and permissions
-  - Security and permission management tools reference
-  - Security namespace and permissions reference
 - [Security and permission management tools for Azure DevOps](/azure/devops/organizations/security/security-tools-reference)
-  - About security, membership, and permissions
-  - Security and permission management tools reference
 
 ### Updated articles
 
-- [About security, membership, and permissions](/azure/devops/organizations/security/about-security-identity) - About security, membership, and permissions
+- [About security, membership, and permissions](/azure/devops/organizations/security/about-security-identity)
 - [Manage permissions with command line tool](/azure/devops/organizations/security/manage-tokens-namespaces)
-  - About security, membership, and permissions
-  - Security and permission management tools reference
-  - Security namespace and permissions reference
 - [Default permissions and access for Azure DevOps](/azure/devops/organizations/security/permissions-access)
-  - About security, membership, and permissions
-  - Security and permission management tools reference
-- [About settings for users, teams, projects, or organizations](/azure/devops/organizations/settings/about-settings) - Refresh for About settings
-- [Manage and configure team tools](/azure/devops/organizations/settings/manage-teams) - Manage teams refresh
-- [Naming restrictions and conventions](/azure/devops/organizations/settings/naming-restrictions) - Refresh naming-restrictions
+- [About settings for users, teams, projects, or organizations](/azure/devops/organizations/settings/about-settings)
+- [Manage and configure team tools](/azure/devops/organizations/settings/manage-teams)
+- [Naming restrictions and conventions](/azure/devops/organizations/settings/naming-restrictions)
 - [Define iteration paths and configure team iterations](/azure/devops/organizations/settings/set-iteration-paths-sprints)
 
 ## Pipelines
 
 ### New articles
 
-- [Clone or import a pipeline](/azure/devops/pipelines/get-started/clone-import-pipeline) - Clone or import a pipeline
+- [Clone or import a pipeline](/azure/devops/pipelines/get-started/clone-import-pipeline)
 
 ### Updated articles
 
 - [Run a self-hosted agent in Docker](/azure/devops/pipelines/agents/docker)
-  - Copy edit pass: docker
-  - Added AKS and ACR integration, and common error and how to fix it
-- [Azure Pipelines documentation](/azure/devops/pipelines/index) - Update several TOCs.
+- [Agent pools](/azure/devops/pipelines/agents/pools-queues)
+- [Quickstart: Build and deploy Xamarin apps with a pipeline](/azure/devops/pipelines/ecosystems/xamarin)
+- [Azure Pipelines documentation](/azure/devops/pipelines/index)
+- [Trigger one pipeline after another](/azure/devops/pipelines/process/pipeline-triggers)
+- [Pipeline caching](/azure/devops/pipelines/release/caching)
+- [Deploy pull request Artifacts with Azure Pipelines](/azure/devops/pipelines/release/deploy-pull-request-builds)
 
 ## Project
 
