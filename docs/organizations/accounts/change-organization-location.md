@@ -31,7 +31,7 @@ When you [create an organization](create-organization.md), you can choose the re
 
 ## Prerequisites
 
-You must be a [the organization Owner](../security/lookup-organization-owner-admin.md) to change your organization region.
+You must be [the organization Owner](../security/lookup-organization-owner-admin.md) to change your organization region.
 
 ## Change organization region
 
