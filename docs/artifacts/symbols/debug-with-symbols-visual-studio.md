@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [](../includes/availability-symbols.md)]
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md).
+Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. These files contain useful information for the debugger and generally have the `PDB` extension.
 
 ## Add the symbol server to Visual Studio
 
@@ -20,24 +20,24 @@ To debug with symbols, select and add the Azure DevOps Services symbol server to
 
 1. Select **Tools**, then **Options**, then **Debugging**.
 
-1. Select **Symbols** and select the `+` sign to add `New Azure DevOps Symbol Server Location...`.
+1. Select **Symbols** and select the `+` sign to add a new Azure DevOps symbol server location.
 
-> [!div class="mx-imgBorder"]
-> ![Add Azure DevOps Services Symbol Server in Visual Studio settings](media/add-server-location.png)
+    > [!div class="mx-imgBorder"]
+    > ![Add Azure DevOps Services Symbol Server in Visual Studio settings](media/add-server-location.png)
 
 1. In the **Connect to Azure DevOps Symbol Server** dialog, select your account from the dropdown menu, then select the organization that you wish to connect to. Select **Connect** to connect to the symbol server.
 
-> [!div class="mx-imgBorder"]
-> ![Connect to Azure DevOps Symbol Server](media/connect-to-symbol-server.png)
+    > [!div class="mx-imgBorder"]
+    > ![Connect to Azure DevOps Symbol Server](media/connect-to-symbol-server.png)
 
 1. Your symbol server is added to the list of symbol file locations.
 
-> [!div class="mx-imgBorder"]
-> ![New symbol server added to the list of symbol file locations](media/symbol-locations.png)
+    > [!div class="mx-imgBorder"]
+    > ![New symbol server added to the list of symbol file locations](media/symbol-locations.png)
 
 ## Debugging optimized modules
 
-If you're debugging an optimized module (e.g. something that was built with the `Release` configuration) and you haven't changed the default `Enable Just My Code` setting in Options, Visual Studio will not automatically fetch symbols for the optimized module.
+If you're debugging an optimized module (e.g. something that was built with the `Release` configuration) and you haven't modified the default `Enable Just My Code` setting, Visual Studio will not automatically fetch symbols for the optimized module.
 
 To debug the module, you can either:
 - Open the Modules window, right-click and select **Load Symbols** (recommended).
@@ -52,3 +52,9 @@ If you choose to enable source server support, please consider the [security imp
 ### Portable PDBs and Source Link
 
 If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), Source Link does not support authenticating to private source repositories like Azure DevOps Services. See [Source Link diagnostics](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/source-link.md) for more details.
+
+## What's next?
+
+* [Symbol files](../concepts/symbols.md).
+* [Publish symbols for debugging](../../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json). 
+* [Debug with symbols in WinDbg](debug-with-symbols-windbg.md).
