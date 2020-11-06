@@ -45,7 +45,7 @@ Self-hosted agents give you more control to install dependent software needed fo
 Also, machine-level caches and configuration persist from run to run, which can boost speed.
 
 > [!NOTE]
-> We strongly suggest only install one Agent per machine, the Agent.service.exe is a really resource consumption process and installing 2 or more agents is going to affect performance and the result of the Build or Releases.
+> Although multiple agents can be installed per machine, we strongly suggest to only install one agent per machine. Installing two or more agents may adversely affect performance and the result of your pipelines.
 
 ::: moniker range="azure-devops"
 
