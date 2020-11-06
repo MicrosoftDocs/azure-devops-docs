@@ -1,69 +1,80 @@
 ---
-title: "Azure DevOps docs: What's new for September 1, 2020 - September 30, 2020"
-description: "What's new in the Azure DevOps docs for September 1, 2020 - September 30, 2020."
+title: "Azure DevOps docs: What's new for October 1, 2020 - October 31, 2020"
+description: "What's new in the Azure DevOps docs for October 1, 2020 - October 31, 2020."
 ms.date: 11/06/2020
 ---
 
-# Azure DevOps docs: What's new for September 1, 2020 - September 30, 2020
+# Azure DevOps docs: What's new for October 1, 2020 - October 31, 2020
 
-Welcome to what's new in the Azure DevOps docs from September 1, 2020 through September 30, 2020. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the Azure DevOps docs from October 1, 2020 through October 31, 2020. This article lists some of the major changes to docs during this period.
 
 ## Artifacts
 
 ### Updated articles
 
-- [Set up your client's npmrc](/azure/devops/artifacts/npm/npmrc) - npmrc setup
+- [Delete and recover packages](/azure/devops/artifacts/how-to/delete-and-recover-packages) - Azure artifacts packages
 
 ## Boards
 
 ### Updated articles
 
-- [Link user stories, issues, bugs, and other work items](/azure/devops/boards/backlogs/add-link) - Add link, build cross-project
+- [Remove, delete, or restore work items](/azure/devops/boards/backlogs/remove-delete-work-items)
 
-## Organizations
+## Notifications
+
+### New articles
+
+- [Manage notifications for a team, group, or organization](/azure/devops/notifications/manage-team-group-global-organization-notifications) - Manage notifications, About notifications
 
 ### Updated articles
 
-- [About access levels](/azure/devops/organizations/security/access-levels)
-- [Manage permissions with command line tool](/azure/devops/organizations/security/manage-tokens-namespaces) - Namespace updates
-- [Add team, go from one default team to others](/azure/devops/organizations/settings/add-teams) - Settings - Add teams
+- [About notifications](/azure/devops/notifications/about-notifications) - Manage notifications, About notifications
+
+## Organizations
+
+### New articles
+
+- [Security namespace and permission reference for Azure DevOps](/azure/devops/organizations/security/namespace-reference)
+  - About security, membership, and permissions
+  - Security and permission management tools reference
+  - Security namespace and permissions reference
+- [Security and permission management tools for Azure DevOps](/azure/devops/organizations/security/security-tools-reference)
+  - About security, membership, and permissions
+  - Security and permission management tools reference
+
+### Updated articles
+
+- [About security, membership, and permissions](/azure/devops/organizations/security/about-security-identity) - About security, membership, and permissions
+- [Manage permissions with command line tool](/azure/devops/organizations/security/manage-tokens-namespaces)
+  - About security, membership, and permissions
+  - Security and permission management tools reference
+  - Security namespace and permissions reference
+- [Default permissions and access for Azure DevOps](/azure/devops/organizations/security/permissions-access)
+  - About security, membership, and permissions
+  - Security and permission management tools reference
+- [About settings for users, teams, projects, or organizations](/azure/devops/organizations/settings/about-settings) - Refresh for About settings
+- [Manage and configure team tools](/azure/devops/organizations/settings/manage-teams) - Manage teams refresh
+- [Naming restrictions and conventions](/azure/devops/organizations/settings/naming-restrictions) - Refresh naming-restrictions
+- [Define iteration paths and configure team iterations](/azure/devops/organizations/settings/set-iteration-paths-sprints)
 
 ## Pipelines
 
 ### New articles
 
-- [Quickstart: trigger a pipeline run from GitHub Actions](/azure/devops/pipelines/ecosystems/github-actions) - GitHub actions with pipelines
+- [Clone or import a pipeline](/azure/devops/pipelines/get-started/clone-import-pipeline) - Clone or import a pipeline
 
 ### Updated articles
 
-- [Build a data pipeline with DevOps, Azure Data Factory, and machine learning](/azure/devops/pipelines/apps/cd/azure/build-data-pipeline)
-- [Azure Pipelines ecosystem support](/azure/devops/pipelines/ecosystems/ecosystems) - Build errors
-- [Configure and pay for parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs) - Updates for parallel jobs
-- [Set retention policies for builds, tests, and releases](/azure/devops/pipelines/policies/retention) - More content in pipeline retention
-- [Access repositories, artifacts, and other resources](/azure/devops/pipelines/process/access-tokens) - New limit job scope setting
-- [Use secrets from Azure Key Vault in Azure Pipelines](/azure/devops/pipelines/release/azure-key-vault) - Azure key-vault
-- [Troubleshoot Azure Resource Manager service connections](/azure/devops/pipelines/release/azure-rm-endpoint) - ARM service connections
-- [Define your multi-stage continuous deployment (CD) pipeline](/azure/devops/pipelines/release/define-multistage-release-process) - Multi-stage deployments
-- [NuGet task](/azure/devops/pipelines/tasks/package/nuget) - NuGet push, pack and restore
-- [Publish Test Results task](/azure/devops/pipelines/tasks/test/publish-test-results) - Update test results formatting
+- [Run a self-hosted agent in Docker](/azure/devops/pipelines/agents/docker)
+  - Copy edit pass: docker
+  - Added AKS and ACR integration, and common error and how to fix it
+- [Azure Pipelines documentation](/azure/devops/pipelines/index) - Update several TOCs.
 
 ## Project
 
-### New articles
-
-- [Work across projects FAQs](/azure/devops/project/work-across-projects-faqs)
-
-## Repos
-
-### New articles
-
-- [Reconcile Command](/azure/devops/repos/tfvc/reconcile-command)
-
-## User guide
-
 ### Updated articles
 
-- [What are the features in Azure DevOps?](/azure/devops/user-guide/alm-devops-features) - Links: Azure DevOps - user-guide
+- [Install and manage Search](/azure/devops/project/search/administration)
 
 ## GitHub issue content updates
 
@@ -105,21 +116,26 @@ Thank you for your feedback on our documentation. This month we made updates to 
 
 The following people contributed to the Azure DevOps docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [Styxxy](https://github.com/Styxxy) - Hans De Mulder (3)
-- [radujipa](https://github.com/radujipa) - Radu Jipa (2)
-- [wesleycamargo](https://github.com/wesleycamargo) - Wesley Camargo (2)
-- [AkshayaKulasekaran](https://github.com/AkshayaKulasekaran) - Akshaya (1)
-- [aleccaputo](https://github.com/aleccaputo) - Alec Caputo (1)
-- [AlexandraRamirezMS](https://github.com/AlexandraRamirezMS) (1)
+- [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka (12)
+- [ChristopherMank](https://github.com/ChristopherMank) - Christopher Mank (2)
+- [macfarmw](https://github.com/macfarmw) - Matthew MacFarland (2)
+- [AliyeSimsek](https://github.com/AliyeSimsek) - Aliye Simsek (1)
+- [andreujuanc](https://github.com/andreujuanc) - Juan C. Andreu (1)
+- [angelwong](https://github.com/angelwong) - Angel Wong (1)
+- [arammaliachi](https://github.com/arammaliachi) (1)
 - [ashokm](https://github.com/ashokm) - Ashok Manji (1)
-- [davidsmatlak](https://github.com/davidsmatlak) - David Smatlak (1)
-- [electrominium](https://github.com/electrominium) - Mohammed Mehdi (1)
-- [esecules](https://github.com/esecules) - Eric Secules (1)
-- [focusonmx](https://github.com/focusonmx) - Yujin Lee (1)
-- [Gupta-Amrit](https://github.com/Gupta-Amrit) (1)
-- [LucyParry](https://github.com/LucyParry) - Lucy (1)
-- [Mac-Chiato](https://github.com/Mac-Chiato) (1)
-- [MarkIannucci](https://github.com/MarkIannucci) - Mark Iannucci (1)
-- [mikemonteith](https://github.com/mikemonteith) - Mike Monteith (1)
-- [raboley](https://github.com/raboley) - Russell Boley (1)
-- [zleight1](https://github.com/zleight1) - Zachary Leighton (1)
+- [derrix060](https://github.com/derrix060) - Mario Apra (1)
+- [evansmith1377](https://github.com/evansmith1377) - Evan Smith (1)
+- [greg-bennett](https://github.com/greg-bennett) (1)
+- [jessehouwing](https://github.com/jessehouwing) - Jesse Houwing (1)
+- [jhitze](https://github.com/jhitze) - Jacob Hitze (1)
+- [kissge](https://github.com/kissge) (1)
+- [ksmis-gh](https://github.com/ksmis-gh) - Kshiteesh (1)
+- [kzu](https://github.com/kzu) - Daniel Cazzulino (1)
+- [markrendle](https://github.com/markrendle) - Mark Rendle (1)
+- [novasdream](https://github.com/novasdream) - Bruno Novais (1)
+- [pauharri](https://github.com/pauharri) (1)
+- [Potapy4](https://github.com/Potapy4) - Mykyta Potapenko (1)
+- [smholvoet](https://github.com/smholvoet) - Sander Holvoet (1)
+- [Styxxy](https://github.com/Styxxy) - Hans De Mulder (1)
+- [ulfakerstedt](https://github.com/ulfakerstedt) - Ulf Åkerstedt (1)
