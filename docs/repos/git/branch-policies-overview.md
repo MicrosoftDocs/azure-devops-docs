@@ -9,7 +9,7 @@ ms.date: 06/01/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Branch policies
+# About branches and branch policies
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 

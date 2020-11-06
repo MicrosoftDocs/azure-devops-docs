@@ -16666,6 +16666,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/artifacts/reference/feed-upgrade-learn-more.md",
+      "redirect_url": "/previous-versions/azure/devops/docs/artifacts/reference/feed-upgrade-learn-more",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/pipelines/get-started/dsc-cicd.md",
       "redirect_url": "/azure/devops/pipelines/release/dsc-cicd"
     },
@@ -16687,6 +16692,25 @@
     {
       "source_path": "release-notes/docswhatsnew/azure-devops-docs-2020-09.md",
       "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
+    },
+    {
+      "source_path": "docs/repos/tfvc/administering-team-foundation-version-control.md",
+      "redirect_url": "/azure/devops/repos/tfvc/configure-check-out-settings"
+    },
+    {
+      "source_path": "docs/repos/tfvc/use-branches-isolate-risk-team-foundation-version-control.md",
+      "redirect_url": "/azure/devops/repos/tfvc/branching-strategies-with-tfvc"
+    },
+    {
+      "source_path": "docs/repos/tfvc/compare-folders-files.md",
+      "redirect_url": "/azure/devops/repos/tfvc/compare-files"
+    },
+    {
+      "source_path": "docs/repos/git/forks-overview.md",
+      "redirect_url": "/azure/devops/repos/git/forks"
     }
   ]
 }
+
+
+
