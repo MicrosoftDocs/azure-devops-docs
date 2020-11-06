@@ -37,11 +37,11 @@ To debug with symbols, select and add the Azure DevOps Services symbol server to
 
 ## Debugging optimized modules
 
-If you're debugging an optimized module (e.g. something that was built with the `Release` configuration) and you haven't changed the default "Enable Just My Code" setting in Options, Visual Studio will not automatically fetch symbols for the optimized module. If this is the case, the Modules window will have a warning message.
+If you're debugging an optimized module (e.g. something that was built with the `Release` configuration) and you haven't changed the default `Enable Just My Code` setting in Options, Visual Studio will not automatically fetch symbols for the optimized module.
 
 To debug the module, you can either:
-- Open the Modules window, right-click the module, and choose "Load Symbols" (recommended)
-- In Options > Debugging > General, uncheck "Enable Just My Code"
+- Open the Modules window, right-click and select **Load Symbols** (recommended).
+- Select **Tools** then **Options**. Select **Debugging** in the right panel then chose **General**. uncheck **Enable Just My Code**. 
 
 ## Source Link support
 
