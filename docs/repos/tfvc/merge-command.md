@@ -143,22 +143,11 @@ The following example discards all the changesets up to changeset 137 as a candi
 c:\projects>tf merge /discard /version:C137 branch1 branch2 /recursive
 ```
 
-## See Also
+## Related articles
 
-#### Tasks
-
-[Resolve Conflicts between Two Files](/previous-versions/visualstudio/visual-studio-2010/ms181433(v=vs.100))
-
-#### Reference
-
-[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
-
-[Branch Command](branch-command.md)
-
-[Merges Command](merges-command.md)
-
-#### Other Resources
-
-[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
-
-[Branching and Merging](use-branches-isolate-risk-team-foundation-version-control.md)
+- [Resolve Conflicts between Two Files](/previous-versions/visualstudio/visual-studio-2010/ms181433(v=vs.100))
+- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))
+- [Branch Command](branch-command.md)
+- [Merges Command](merges-command.md)
+- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))
+- [Branching and Merging](use-branches-isolate-risk-team-foundation-version-control.md)

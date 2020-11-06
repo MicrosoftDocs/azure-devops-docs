@@ -69,6 +69,10 @@ The Configuration dialog for the Cycle Time and Lead Time widgets is the same. Y
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Configure dialog, Lead Time widget, filter criteria.](media/lead-cycle/field-criteria-release.png)
+	
+	
+	> [!NOTE]   
+	> Supplying no values to the filter may lead to selection of all workitems, or may be an invalid filter argument depending on type of filter criteria.
 
 1. For a continuous flow, choose **Rolling period** and specify the number of days you want to view on the chart.  
 

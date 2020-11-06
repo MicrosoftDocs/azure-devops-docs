@@ -7,7 +7,7 @@ ms.topic: overview
 ms.assetid: c784953f-5faf-43eb-a4a9-080afd9270de
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/04/2019
+ms.date: 10/22/2020
 ---
 
 # Reporting Services reports
@@ -18,7 +18,7 @@ ms.date: 10/04/2019
 The SQL Server reporting solution is based on a [data warehouse and OLAP cube](components-data-warehouse.md) coupled with a SQL Server Reporting server to host reports.
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-Azure DevOps Server 2019 and later versions supports both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
+Azure DevOps Server 2019 and 2020 versions supports both the SQL Server Reporting solution and the [Analytics Service](../powerbi/what-is-analytics.md). Azure DevOps Server 2020 is the that last version to support both. To learn more about the future of reporting for the Azure DevOps Server, read [Reporting roadmap](../powerbi/reporting-roadmap.md). 
 
 ::: moniker-end
 

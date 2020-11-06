@@ -6,11 +6,11 @@
   items:
   - name: Create a custom pipelines task
     href: develop/add-build-task.md
-  - name: Use a pipeline decorator
+  - name: Author a pipeline decorator
     href: develop/add-pipeline-decorator.md
 - name: Samples
   items:
-  - name: Azure DevOps Services extension samples
+  - name: Extension samples
     href: develop/samples-overview.md
 - name: Concepts
   items:
