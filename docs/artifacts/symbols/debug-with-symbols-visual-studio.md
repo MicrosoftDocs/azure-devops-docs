@@ -4,7 +4,7 @@ description: Debug with symbols in Visual Studio using the Symbol Server in Azur
 ms.assetid: 318323C4-5B2F-45DE-A834-CCE03C670F8C
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 10/18/2017
+ms.date: 11/06/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -12,13 +12,18 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [](../includes/availability-symbols.md)]
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md); to publish symbols, see [this page](../../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json). To use symbols in WinDbg, see [this page](debug-with-symbols-windbg.md).
+Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md).
 
 ## Add the symbol server to Visual Studio
 
-To debug with symbols, select and add the Azure DevOps Services symbol server to your Visual Studio environment using the Tools->Options->Debugger->Symbols page.
+To debug with symbols, select and add the Azure DevOps Services symbol server to your Visual Studio environment.
 
-![Add Azure DevOps Services Symbol Server in VS Debugger](media/vsdebugger1.jpg)
+1. Select **Tools**, then **Options**, then **Debugging**.
+
+1. Select **Symbols** and select the `+` sign to add `New Azure DevOps Symbol Server Location...`.
+
+> [!div class="mx-imgBorder"]
+> ![Add Azure DevOps Services Symbol Server in Visual Studio settings](media/add-server-location.png)
 
 In the **Connect to Azure DevOps Services Symbol Server** dialog, select the organization to which the symbols have been published and the corresponding user identity that has access to this organization. 
 
