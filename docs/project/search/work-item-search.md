@@ -26,12 +26,12 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
 1. Open the **Azure Boards** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
 
-2. Choose the ![start search icon](media/shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
+2. Choose the :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: icon at the top right of the window to show the search textbox.
 
    ![The Work Item Search textbox in the title bar](media/work-item-search-get-started/show-search-box.png)    
 
 3. Enter a search string in the textbox, and select _Enter_ (or choose the 
-   ![start search icon](media/shared/start-search-icon-new.png) icon) to start your search. 
+   :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: icon) to start your search. 
 
    Access your recently visited boards, backlogs, queries, and sprints. 
 
@@ -54,7 +54,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
    say _Search code_. In this case, use the drop down selector to change it. 
 
 3. Enter a search string in the textbox, and press _Enter_ (or choose the 
-   ![start search icon](media/shared/start-search-icon.png) icon) to start your search. 
+   :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: icon) to start your search. 
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
    say _Search code_. In this case, use the drop-down selector to change it. 
 
 3. Enter a search string in the textbox, and press _Enter_ (or choose the 
-   ![start search icon](media/shared/start-search-icon.png) icon) to start your search. 
+   :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: icon) to start your search. 
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
    > Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](media/shared/start-search-icon-new.png) icon.
+   :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: icon.
    In Google Chrome or Firefox, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 

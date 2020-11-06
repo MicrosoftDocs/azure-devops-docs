@@ -1,7 +1,7 @@
 ---
 title: Azure Pipelines Agents
 ms.topic: conceptual
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.date: 09/09/2020
@@ -90,9 +90,6 @@ After you've installed the agent on a machine, you can install any other softwar
 ::: moniker range="azure-devops"
 
 ## Azure virtual machine scale set agents
-
-> [!NOTE]
-> This feature is currently in preview.
 
 Azure virtual machine scale set agents are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
 
@@ -201,7 +198,7 @@ az pipelines agent list --pool-id
 
 #### Example
 
-The following example lists all agents in pool `ID: 4` in table format. To retrieve the ID of pools, use [az pipelines pool list](pools-queues.md?view=azure-devops&tabs=yaml%2Cazure-devops-cli&preserve-view=true#list-agent-pools). This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example lists all agents in pool `ID: 4` in table format. To retrieve the ID of pools, use [az pipelines pool list](pools-queues.md?tabs=yaml#list-agent-pools). This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
 az pipelines agent list --pool-id 4 --output table
@@ -544,6 +541,9 @@ Your pipelines won't run until they can target a compatible agent.
 ::: moniker-end
 
 You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [View agent details](#view-agent-details).
+
+> ![NOTE]
+> For servers with no internet access, manually copy the agent zip file to `C:\ProgramData\Microsoft\Azure DevOps\Agents\` to use as a local file.
 
 ## FAQ
 

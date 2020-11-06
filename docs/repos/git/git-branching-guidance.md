@@ -132,7 +132,7 @@ Update the main branch with a change made in the release branch with these steps
 1. Cherry-pick the changes from the release branch to your new feature branch.
 1. Merge the feature branch back into the main branch in a second pull request.
 
-![image of release branch workflows](media/branching-guidance/releasebranching_main.png)
+![Updated release branch workflows.](media/branching-guidance/releasebranching_main.png)
 
 This release branch workflow keeps the pillars of the basic workflow intact: feature branches, pull requests, and a strong main branch that always has the latest version of the code.
 

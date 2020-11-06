@@ -375,7 +375,7 @@ You can use a SharePoint site to share and access documents from your project. Y
 - Share documents, files, images  
 - Share team knowledge and processes using the SharePoint wiki.    
 
-To learn more, see [Share information using the project portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md).  
+To learn more, see [Share information using the project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal).  
 
 ::: moniker-end
 
@@ -394,5 +394,3 @@ As you can see, there are many ways to share information using work items alone.
 
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Add and edit a wiki](../../project/wiki/add-edit-wiki.md)
-
-

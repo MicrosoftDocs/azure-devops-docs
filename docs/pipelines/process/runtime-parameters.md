@@ -277,6 +277,23 @@ Write-Host $env:myStringName
 
 ---
 
+### Check for an empty parameter object
+
+You can use the `length()` [expression](expressions.md) to check whether an object parameter has no value. 
+
+```yaml
+parameters:
+- name: foo
+  type: object
+  default: []
+
+steps:
+- checkout: none
+- ${{ if eq(length(parameters.foo), 0) }}:
+  - script: echo Foo is empty
+    displayName: Foo is empty
+```
+
 
 ## Parameter data types
 

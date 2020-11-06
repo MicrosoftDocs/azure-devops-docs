@@ -94,7 +94,7 @@ Share your Xcode projects using a TFVC repository by using the Git-tf command li
 ### Should I use Git or TFVC for my project?
 
 That depends on a number of factors, like the size of your codebase and the size and distribution of your team. 
-Learn which version control ([Git](../../repos/git/index.yml) or [Team Foundation Version Control](overview.md)) 
+Learn which version control ([Git](../../repos/git/index.yml) or [Team Foundation Version Control](./what-is-tfvc.md)) 
 works best for you.
 
 ### If my project uses Git Version control, can I still share my Xcode projects in Azure DevOps Services?
@@ -105,4 +105,3 @@ Yes, see [Share your code in Git using Xcode](../../repos/git/share-your-code-in
 
 > [!div class="nextstepaction"]
 > [Choosing the right version control for your project](comparison-git-tfvc.md)
-

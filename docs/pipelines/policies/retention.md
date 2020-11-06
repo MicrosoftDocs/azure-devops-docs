@@ -190,7 +190,7 @@ You can delete runs using the [context menu](../get-started/multi-stage-pipeline
 
 The release retention policies for a classic release pipeline determine how long a release and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline.
 
-The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most recent three will be retained indefinitely - irrespective of the number of days specified. However, you can manually delete these releases when you no longer require them.
+The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most recent three will be retained indefinitely - irrespective of the number of days specified. However, you can manually delete these releases when you no longer require them. See FAQ below for more details about how release retention works.
 
 As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
 
@@ -452,6 +452,15 @@ This could be for one of the following reasons:
 - The runs are consumed by a release, and the release holds a retention lock on these runs. Customize the release retention policy as explained above.
 
 If you believe that the runs are no longer needed or if the releases have already been deleted, then you can manually delete the runs.
+
+### How does 'minimum releases to keep' setting work?
+Minimum releases to keep are defined at stage level. It denotes that Azure DevOps will always retain the given number of last deployed releases for a stage even if the releases are out of retention period. A release will be considered under minimum releases to keep for a stage only when the deployment started on that stage. Both succesfull and failed deployments are considered. Releases which are waiting for approval are not considered.
+
+### How is retention period decided when release is deployed to multiple stages having different retention period?
+Final retention period is decided by considering days to retain settings of all the stages on which release is deployed and taking max days to keep among them. Minimum releases to keep is governed at stage level and do not change based on release deployed to multiple stages or not. Retain associated artifacts will be applicable when release is deployed to a stage for which it is set true.
+
+### I deleted a stage for which I have some old releases. What retention will be considered for this case?
+As the stage is deleted, so the stage level retention settings are not applicable now. Azure DevOps will fall back to project level default retention for such case.
 
 ### My organization requires us to retain builds and releases longer than what is allowed in the settings. How can I request a longer retention?
 

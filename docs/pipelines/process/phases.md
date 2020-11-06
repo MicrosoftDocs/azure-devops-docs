@@ -1,10 +1,10 @@
 ---
 title: Jobs in Azure Pipelines and TFS
-ms.custom: seodec18
+ms.custom: seodec18, contperfq4 
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
-ms.topic: conceptual, contperfq4
-ms.date: 08/03/2020
+ms.topic: conceptual
+ms.date: 11/02/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -566,7 +566,7 @@ To avoid taking up resources when your job is unresponsive or waiting too long, 
 
 * Forever on self-hosted agents
 * For 360 minutes (6 hours) on Microsoft-hosted agents with a public project and public repository
-* For 60 minutes on Microsoft-hosted agents with a private project or private repository (unless [additional capacity](/azure/devops/pipelines/agents/hosted#capabilities-and-limitations) is paid for)
+* For 60 minutes on Microsoft-hosted agents with a private project or private repository (unless [additional capacity](../agents/hosted.md#capabilities-and-limitations) is paid for)
 
 The timeout period begins when the job starts running. It does not include the
 time the job is queued or is waiting for an agent.
@@ -806,7 +806,10 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-When you run a pipeline on a self-hosted agent, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+When you run a pipeline on a **self-hosted agent**, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+
+> [!IMPORTANT]
+> The workspace clean options are applicable only for self-hosted agents. When using Microsoft-hosted agents, job are always run on a new agent. 
 
 ```yaml
 - job: myJob
@@ -820,10 +823,20 @@ When you specify one of the `clean` options, they are interpreted as follows:
 - `resources`: Delete `Build.SourcesDirectory` before running a new job.
 - `all`: Delete the entire `Pipeline.Workspace` directory before running a new job.
 
+`$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+
 > [!NOTE]
->  `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
->
-> For Microsoft-hosted agents, each job is run on a different agent. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages.
+> Depending on your agent capabilities and pipeline demands, each job may be routed to a different agent in your self-hosted pool. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can configure agent capabilities and pipeline demands to specify which agents are used to run a pipeline job, but unless there is only a single agent in the pool that meets the demands, there is no guarantee that subsequent jobs will use the same agent as previous jobs. For more information, see [Specify demands](demands.md).
+
+In addition to workspace clean, you can also configure cleaning by configuring the **Clean** setting in the pipeline settings UI. When the **Clean** setting is **true** it is equivalent to specifying `clean: true` for every [checkout](../yaml-schema.md#checkout) step in your pipeline. To configure the **Clean** setting:
+
+1. Edit your pipeline, choose **...**, and select **Triggers**.
+
+    :::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
+
+2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**. 
+
+    :::image type="content" source="media/clean-setting.png" alt-text="Clean setting."::: 
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"

@@ -60,7 +60,7 @@ steps:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
-You can configure the default scope for `System.AccessToken` using [build job authorization scope](options.md#build-job-authorization-scope). 
+You can configure the default scope for `System.AccessToken` using [build job authorization scope](../process/access-tokens.md#job-authorization-scope). 
 
 # [Classic](#tab/classic)
 

@@ -246,4 +246,6 @@ ID    Name                        Status    Default Queue
 
 [!INCLUDE [include](includes/get-status-badge.md)]
 
+## Next steps
+
 [!INCLUDE [include](includes/create-first-pipeline-next-steps.md)]

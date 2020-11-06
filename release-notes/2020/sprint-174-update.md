@@ -27,15 +27,15 @@ Check out the [Features](#features) list below for details.
 
 [!INCLUDE [sprint-174-update-links](includes/artifacts/sprint-174-update-links.md)]
 
-### Azure Boards
+## Azure Boards
 
 [!INCLUDE [sprint-174-update](includes/boards/sprint-174-update.md)]
 
-### Azure Pipelines
+## Azure Pipelines
 
 [!INCLUDE [sprint-174-update](includes/pipelines/sprint-174-update.md)]
 
-### Azure Artifacts
+## Azure Artifacts
 
 [!INCLUDE [sprint-174-update](includes/artifacts/sprint-174-update.md)]
 

@@ -213,7 +213,7 @@ There is no way to use Visual Studio 2019 to update a work item at this time.
 
 You can make updates to your work items with the [az boards work-item update](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az boards work-item update --id
                            [--area]
                            [--assigned-to]
@@ -250,7 +250,7 @@ az boards work-item update --id
 
 The following command updates the title of the bug with the ID 864 and displays the results in the Azure DevOps CLI in table format.
 
-```CLI 
+```azurecli 
 az boards work-item update --id 864  --title "Fix security issues" --output table
 
 ID    Type    Title                Assigned To          State
@@ -264,7 +264,7 @@ ID    Type    Title                Assigned To          State
 
 You can use the **discussion** parameter to add comments to the **Discussion** section of a work item. The following command adds the specified comment to the bug with the ID 864 and opens the bug in your default web browser, where you can view the comment.
 
-```CLI 
+```azurecli 
 az boards work-item update --id 864  --discussion  "This work item is about 50% complete" --open
 ```
 
@@ -272,7 +272,7 @@ az boards work-item update --id 864  --discussion  "This work item is about 50% 
 
 You can show the details for a work item with the [az boards work-item show](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az boards work-item show --id
                          [--open]
                          [--org] 
@@ -288,7 +288,7 @@ az boards work-item show --id
 
 The following command shows details for the bug with the ID 864. It opens in your default web browser and also displays the results in the Azure DevOps CLI in table format.
 
-```CLI 
+```azurecli 
 az boards work-item show --id 864  --open --output table
 
 ID    Type    Title       Assigned To          State
@@ -338,7 +338,6 @@ To quickly add backlog items, such as user stories, requirements or bugs, see th
 For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json ).  
 
 
-Once you've added several work items, you can use additional features to get [notified of changes](../../notifications/howto-manage-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
+Once you've added several work items, you can use additional features to get [notified of changes](../../notifications/manage-your-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
 
 For additional clients that you can use to add work items, see [Clients that support tracking work items](../../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
-

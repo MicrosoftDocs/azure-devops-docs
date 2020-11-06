@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 08/20/2020
+ms.date: 09/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -339,6 +339,16 @@ Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Instal
 ### Tool installer tasks
 
 For a list of our tool installer tasks, see [Tool installer tasks](../tasks/index.md#tool).
+
+::: moniker range=">= azure-devops-2020"
+
+### Disabling in-box and Marketplace tasks
+
+On the organization settings page, you can disable Marketplace tasks, in-box tasks, or both.
+Disabling Marketplace tasks can help [increase security](../security/misc.md) of your pipelines.
+If you disable both in-box and Marketplace tasks, only tasks you install using [`tfx`](https://www.npmjs.com/package/tfx-cli) will be available.
+
+::: moniker-end
 
 ## Related articles
 

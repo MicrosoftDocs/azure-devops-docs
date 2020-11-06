@@ -18,7 +18,7 @@ Check-in policies are a mechanism for enforcing development practices across you
 
 ## Check-in Policies
 
-Check-in policies are used to enforce mandatory software development practices. Policy is enforced during the check-in process in the Check In and Pending Changes windows. If a user attempts to perform a check-in, in violation of a policy, their check-in is blocked. If necessary, these policies may be overridden. For more information, see [Override a Check-In Policy](https://msdn.microsoft.com/library/ms245460).
+Check-in policies are used to enforce mandatory software development practices. Policy is enforced during the check-in process in the Check In and Pending Changes windows. If a user attempts to perform a check-in, in violation of a policy, their check-in is blocked. If necessary, these policies may be overridden. For more information, see [Override a Check-In Policy](/previous-versions/visualstudio/visual-studio-2010/ms245460(v=vs.100)).
 
 Policies are configured and established in the Source Control Settings window. A sample policy constraint is "You must associate your changes with one or more work items." This policy prevents users from submitting changes without having a specific bug or feature they are working on.
 
@@ -51,7 +51,7 @@ Describes the steps used to configure custom check-in notes associated with Team
 
 #### Tasks
 
-[Check In Pending Changes](https://msdn.microsoft.com/library/ms181411)
+[Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100))
 
 #### Other Resources
 
