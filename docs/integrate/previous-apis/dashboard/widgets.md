@@ -79,7 +79,7 @@ POST https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_ap
 | Parameter    | Type       | Default   | Notes
 | :----------- | :--------- | :-------- | :-----------------------------------------------------
 | URL
-| account      | string     |           | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string     |           | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string     |           | Your Visual Studio Project.
 | teamId       | string     |           | Your Team ID.
 | dashboardId  | string     |           | ID of the dashboard to add this widget.
@@ -166,7 +166,7 @@ GET https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_api
 | Parameter    | Type       | Default    | Notes
 | :----------- | :--------- | :--------- | :--------------------------------------
 | URL
-| account      | string     |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string     |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string     |            | Your Visual Studio Project.
 | teamId       | string     |            | Your Team ID.
 | dashboardId  | string     |            | ID of the dashboard.
@@ -240,7 +240,7 @@ PATCH https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_a
 | Parameter    | Type         | Default    | Notes
 | :----------- | :----------- | :--------- | :---------------------------------------------
 | URL
-| account      | string       |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string       |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string       |            | Your Visual Studio Project.
 | teamId       | string       |            | Your Team ID.
 | dashboardId  | string       |            | ID of the dashboard.
@@ -337,7 +337,7 @@ PUT https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_api
 | Parameter    | Type         | Default    | Notes
 | :----------- | :----------- | :--------- | :---------------------------------------------
 | URL
-| account      | string       |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string       |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string       |            | Your Visual Studio Project.
 | teamId       | string       |            | Your Team ID.
 | dashboardId  | string       |            | ID of the dashboard.
@@ -430,7 +430,7 @@ DELETE https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_
 | Parameter    | Type         | Default    | Notes
 | :----------- | :----------- | :--------- | :-----------------------------------------------------
 | URL
-| account      | string       |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string       |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string       |            | Your Visual Studio Project.
 | teamId       | string       |            | Your Team ID.
 | dashboardId  | string       |            | ID of the dashboard.
@@ -463,7 +463,7 @@ GET https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_api
 | Parameter    | Type       | Default    | Notes
 | :----------- | :--------- | :--------- | :--------------------------------------
 | URL
-| account      | string     |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string     |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string     |            | Your Visual Studio Project.
 | teamId       | string     |            | Your Team ID.
 | dashboardId  | string     |            | ID of the dashboard.
@@ -761,7 +761,7 @@ PATCH https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_a
 | Parameter    | Type       | Default    | Notes
 | :----------- | :--------- | :--------- | :--------------------------------------
 | URL
-| account      | string     |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string     |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string     |            | Your Visual Studio Project.
 | teamId       | string     |            | Your Team ID.
 | dashboardId  | string     |            | ID of the dashboard.
@@ -858,7 +858,7 @@ PUT https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_api
 | Parameter    | Type       | Default    | Notes
 | :----------- | :--------- | :--------- | :--------------------------------------
 | URL
-| account      | string     |            | Your [VS Team Services account](../../get-started/rest/basics.md).
+| account      | string     |            | Your [VS Team Services account](/rest/api/azure/devops/).
 | project      | string     |            | Your Visual Studio Project.
 | teamId       | string     |            | Your Team ID.
 | dashboardId  | string     |            | ID of the dashboard.
@@ -938,4 +938,3 @@ PUT http://localhost:8080/tfs/DefaultCollection/6c9633e5-5633-4b1d-8081-02b35e39
   ]
 }
 ```
-

@@ -17,8 +17,26 @@ ms.date: 09/16/2020
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-You can add a link to a work item from within the work item form or from a backlog or query results list. From a backlog or query results list, you can [select multiple work items](bulk-modify-work-items.md#multi-select) and then link them to a new or existing work item. In general, use the bulk edit to update several work items to link to the same work item, either new or existing. 
+::: moniker range="azure-devops"
 
+You link work items to other work items to manage dependencies and see relationships within work. You can link work items within your project or to work items within another project in your organization. You use different link types to support different business objectives. You can also link work items to other objects such as builds, commits, versioned items, or network resources. 
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+You link work items to other work items to manage dependencies and see relationships within work. You can link work items within your project or to work items within another project in your collection. You use different link types to support different business objectives. You can also link work items to other objects such as builds, commits, versioned items, or network resources. 
+
+::: moniker-end
+
+In general, you use the following link types when linking work items to one another: 
+
+- Use **Parent/Child** links to link work items that you want to group within a hierarchy 
+- Use **Predecessor/Successor** or **Affects/Affected by** links to link work items that have dependencies 
+- Use **Duplicate/Duplicate of** links to link work items that track the same code defect or work 
+- Use **Related** to link work items with some level of relationship, but not that strong 
+
+You can add a link to a work item from within the work item form or from a backlog or query results list. From a backlog or query results list, you can select multiple work items and then link them to a new or existing work item. In general, use the bulk edit to update several work items to link to the same work item, either new or existing. 
 
 Use this article to learn how to:  
 
@@ -45,6 +63,12 @@ Use this article to learn how to:
 ::: moniker-end    
 
 For a list of all link types and supported link relationships, see [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md). 
+
+> [!NOTE]
+> The following link relationships are restricted: 
+> - You can't assign a work item more than one parent using a parent/child or other tree topology link type. 
+> - You can't add links in such a way as to create a circular relationship. 
+> - You can't link more than 1,000 work item to a single work item. 
 
 [!INCLUDE [temp](../includes/prerequisites.md)] 
 

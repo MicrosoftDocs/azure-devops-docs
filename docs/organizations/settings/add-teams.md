@@ -1,7 +1,7 @@
 ---
 title: Create new team, move from one team to several teams
 titleSuffix: Azure DevOps 
-description: Learn how to add a new team to a project to scale your Agile tools in Azure DevOps & Team Foundation Server (TFS).  
+description: Learn how to add a new team to a project to scale your Agile tools in Azure DevOps.  
 ms.technology: devops-settings
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.author: kaelli
@@ -68,7 +68,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	From the team profile, you can do these additional tasks:  
    - [Add team administrators](add-team-administrator.md)
    - [Add team members](#add-team-members)
-   - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
+   - [Navigate to team notifications](../../notifications/manage-team-group-global-organization-notifications.md)
    - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
@@ -106,7 +106,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 	From the team profile, you can do these additional tasks:  
    - [Add team administrators](add-team-administrator.md)
    - [Add team members](#add-team-members)
-   - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
+   - [Navigate to team notifications](../../notifications/manage-team-group-global-organization-notifications.md)
    - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
@@ -117,7 +117,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="add-team-team-services" /> 
 
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open the **Project settings** page for the project.  
+1. From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.  
 
 	 ![Open project admin page](media/add-team/open-admin-context-tfs-2017.png) 
 
@@ -143,7 +143,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 	To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
-5. To assign a team as the default team, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for that team and select **Set team as project default**. 
+5. To assign a team as the default team, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for that team and select **Set team as project default**. 
 
 ::: moniker-end
 
@@ -151,7 +151,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="add-team-tfs-2015" />
 
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open **Project Settings.**  
+1. From the web portal, choose Project Settings:::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open **Project Settings.**  
 
 	 <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Screenshot of Open project admin page" style="border: 2px solid #C3C3C3;" />
 
@@ -188,7 +188,7 @@ From the Azure DevOps CLI command, you can list teams, add teams, and run other 
 You can list teams using [Azure DevOps team list](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops team list [--project]
                     [--skip]
                     [--top]
@@ -216,8 +216,8 @@ For example, the following command returns the 11 teams defined in the Fabrikam 
 Each team is assigned a unique ID. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az devops team list --project "Fabrikam Fiber" --output table
+```azurecli
+az devops team list --project "Fabrikam Fiber" --output table
 ID                                    Name                Description
 ------------------------------------  ------------------  ----------------------------------------------------------------------------
 7f099146-29a2-4798-9949-77c9f5f79653  Account Management  Management team focused on creating and maintaining customer services
@@ -240,7 +240,7 @@ cda2b9b0-0335-4a0d-8bd0-67611d64ce9d  Voice               Feature team focused o
 You can add a team using [Azure DevOps team create](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az devops team create --name
                       [--description]
                       [--project] 
@@ -257,8 +257,8 @@ az devops team create --name
 The following command adds a team named **Web** to the Fabrikam Fiber project, and returns a number of properties of the team. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az devops team create --name Web --project "Fabrikam Fiber"
+```azurecli
+az devops team create --name Web --project "Fabrikam Fiber"
 {
   "description": "",
   "id": "5385556a-254d-4ad4-bd11-71955e3a7070",
@@ -409,7 +409,7 @@ Now that your two feature teams are configured, you need to move existing work i
 You can move work items to a new area paths using [az boards work-item update](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-update).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards work-item update --id
                            [--area]
                            [--assigned-to]
@@ -442,8 +442,8 @@ az boards work-item update --id
 You can only move one work item at a time using Azure DevOps CLI. In this example, we move work item ID=487 under the Fabrikam Fiber/Service Delivery/Email area path.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards work-item update --id 487 --area "Fabrikam Fiber\Service Delivery\Email"
+```azurecli
+az boards work-item update --id 487 --area "Fabrikam Fiber\Service Delivery\Email"
 {
   "fields": {
     "Microsoft.VSTS.Common.BacklogPriority": 1944453550.0,
@@ -618,7 +618,7 @@ One last step in moving from one team to two teams requires configuring the defa
 You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area team add --path  --team
                         [--include-sub-areas {false, true}]
                         [--project]
@@ -642,8 +642,8 @@ az boards area team add --path  --team
 For example, the following command adds the Voice area path to the Voice team for the Fabrikam Fiber project, sets it as the default and to include sub-areas. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area team add --path "\Fabrikam Fiber\Voice" --team Voice --project "Fabrikam Fiber" --include-sub-areas --set-as-default --include-sub-areas true --output table
+```azurecli
+az boards area team add --path "\Fabrikam Fiber\Voice" --team Voice --project "Fabrikam Fiber" --include-sub-areas --set-as-default --include-sub-areas true --output table
 Area                                   Include sub areas    Is Default
 -------------------------------------  -------------------  ------------
 Fabrikam Fiber\Service Delivery\Voice  False                False

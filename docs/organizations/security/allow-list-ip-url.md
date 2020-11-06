@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: ChComley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 09/18/2020
+ms.date: 11/04/2020
 ---
 
 # Allowed address lists and network connections   
@@ -49,6 +49,7 @@ To ensure your organization works with any existing firewall or IP restrictions,
 * `live.com`
 * `dev.azure.com`
 * `azure.microsoft.com`
+* `management.azure.com`
 * `azurecomcdn.azureedge.net`
 * `amp.azure.net`
 * `aexprodea1.vsaex.visualstudio.com`
@@ -113,7 +114,7 @@ If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addre
 * `52.244.223.198/32` 
 * `52.247.150.191/32`
 
-For more information, see [Worldwide endpoints](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online) and [Adding IP address rules](https://docs.microsoft.com/azure/app-service/app-service-ip-restrictions#adding-ip-address-rules). 
+For more information, see [Worldwide endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online) and [Adding IP address rules](/azure/app-service/app-service-ip-restrictions#adding-ip-address-rules). 
 
 ## SSH connections
 
@@ -170,9 +171,3 @@ During the import process, we highly recommend that you restrict access to your 
 - [Microsoft-hosted agents Agent IP ranges](../../pipelines/agents/hosted.md#agent-ip-ranges)
 - [Self-hosted Windows agents FAQs](../../pipelines/agents/v2-windows.md)
 - [Install and use Visual Studio behind a firewall or proxy server](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#use-visual-studio-and-azure-services)
-
-
-
-
-
-

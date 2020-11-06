@@ -96,7 +96,7 @@ Before you package your integration as an extension, you'll need to create a `ho
 ### Package your manifest and assets
 
 #### Get the package tool (tfx-cli)
-You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](https://nodejs.org), from your command line.
+You can install or update the Cross-platform CLI for Azure DevOps (tfx-cli) using `npm`, a component of [Node.js](https://nodejs.org), from your command line.
 
 ```no-highlight
 npm i -g tfx-cli

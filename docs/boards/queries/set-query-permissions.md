@@ -218,4 +218,4 @@ With queries, you can not only list work items, you can create status and trend 
 - [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md)  
 - [Create and save managed queries](using-queries.md)  
 - [Dashboards](../../report/dashboards/dashboards.md)  
-- [Add a chart to a dashboard](../../report/add-charts-to-dashboard.md)   
+- [Add a chart to a dashboard](../../report/dashboards/add-charts-to-dashboard.md)

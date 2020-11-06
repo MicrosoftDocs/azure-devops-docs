@@ -101,7 +101,7 @@ If you aren't using Azure Repos, you can still clone your repo in Team Explorer 
 
 In the **Home** view in Team Explorer, double-click your project solution file in the **Solutions** area. The solution opens in **Solution Explorer**.
 
-   ![Open a solution from a cloned repo in Team Explorer](media/open-solution-cloned-repo-vs-sln.png)
+   ![Double-click your project solution file in the Solutions area to open it in Team Explorer.](media/open-solution-cloned-repo-vs-sln.png)
 
 #### [Command Line](#tab/command-line/)
 ### Prerequisites

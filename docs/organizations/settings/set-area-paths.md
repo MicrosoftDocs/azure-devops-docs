@@ -1,14 +1,14 @@
 ---
 title: Define area paths for a project
 titleSuffix: Azure Boards
-description: Group work items based on team, product, or feature area by defining area paths for Azure Boards and Azure DevOps
+description: Group work items based on team, product, or feature area by defining area paths for Azure Boards and Azure DevOps.
 ms.technology: devops-agile
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 09/17/2020
+ms.date: 10/22/2020
 ---
 
 # Define area paths and assign to a team
@@ -19,7 +19,7 @@ ms.date: 09/17/2020
 Add area paths to support teams and group work items based on product, feature, or business areas. Once you define area paths at the project level, you assign them to a team under the team configuration. You can also create a hierarchy of area paths to support sub-areas, up to 14 levels deep.
 
 > [!NOTE] 
-> Area Paths and Iteration Paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes), or the Azure DevOps CLI commands and [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
+> Area paths and iteration paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes), or the Azure DevOps CLI commands and [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
 
 Each team has access to a number of Agile tools as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards.
 
@@ -35,7 +35,7 @@ To understand how the system uses area paths, see [About area and iteration path
 
 - If you don't have a project yet, [create one now](../projects/create-project.md).
 - Ensure you're a member of the **Project Administrators** group to add an area path under the root node or edit or delete any child node. To acquire these permissions, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
-- Have one or more of the following permissions set to **Allow**, to add, edit, and manage Area Paths under a node:
+- Have one or more of the following permissions set to **Allow**, to add, edit, and manage area paths under a node:
 
     - **Create child nodes**
     - **Delete this node**
@@ -45,7 +45,7 @@ To understand how the system uses area paths, see [About area and iteration path
   By default, the user who created the project has these permissions already set. For more information, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md#set-permissions-area-path).
 - Ensure you're [added as a team administrator](add-team-administrator.md) or are a member of the **Project Administrators** group to set team area paths.  
 
-For naming restrictions on Area Paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
+For naming restrictions on area paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 
 <a id="guidance" />
 
@@ -55,7 +55,7 @@ If you're new to managing projects and teams, the most straight forward sequence
 
 1. Determine the number and names of area paths that you want to support to categorize your work. At a minimum, add one area path for each team you define. For more information, review [About areas and iterations](about-areas-iterations.md).
 2. Determine the number and names of teams you want to support. For more information, review [About teams and Agile tools](about-teams-and-settings.md).
-3. Open **Project settings>Project configuration** and define the Area Paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add area paths](#add-areas).
+3. Open **Project settings>Project configuration** and define the area paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](#open-project-settings) and [Add area paths](#add-areas).
 4. Define the teams you need to support step 2. For more information, see [Add a team, move from one default team to several teams](add-teams.md).  
 5. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](#open-team-settings) and [Set team default area path(s)](#team-area-paths).
 6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
@@ -90,7 +90,7 @@ Define both areas and iterations for a project from the **Project Settings** > *
 
 ::: moniker range="<= tfs-2018"
 
-Define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, open the admin context by choosing the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon.
+Define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, open the admin context by choosing **Settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false":::.
 
 ::: moniker-end
 
@@ -110,12 +110,12 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
-1. From the web portal for the project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon.
+1. From the web portal for the project, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
 
     > [!div class="mx-imgBorder"]  
     > ![Open Admin context, project level](media/areas/modify-areas-its-open-admin-context-ts.png)
 
-    If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
+    If you're currently working from a team context, then hover over **Settings** ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
 
     > [!div class="mx-imgBorder"]
     > ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)
@@ -128,7 +128,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 
 ::: moniker range="<= tfs-2015"  
 
-- From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then choose **Areas**.
+- From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open project administration pages. Then choose **Areas**.
 
     ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
 
@@ -146,7 +146,7 @@ Define both areas and iterations from the **Work** pages of the **Project Settin
 You can list the area paths defined for a project using [az boards area project list](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area project list [--depth]
                             [--path]
                             [--project]
@@ -170,8 +170,8 @@ az boards area project list [--depth]
 For example, the following command lists the area paths to a depth of 3 for the Fabrikam Fiber project. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area project list --depth 3 --project 'Fabrikam Fiber' --output table
+```azurecli
+az boards area project list --depth 3 --project 'Fabrikam Fiber' --output table
 ID     Identifier                            Name                Path                                                Has Children
 -----  ------------------------------------  ------------------  --------------------------------------------------  --------------
 55302  91d8644a-e430-4fd0-aa95-742ea98770a3  Fabrikam Fiber      \Fabrikam Fiber\Area                                True
@@ -208,7 +208,7 @@ Only one area is defined, by default. Add area paths under the root area path fo
 
 ::: moniker range=">= tfs-2018"  
 
-- To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the area path and choose **New child**.   
+- To add a child node, highlight the area path and then choose **New child**. Optionally, you can select:::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the area path and choose **New child**.   
 
     Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
@@ -219,7 +219,7 @@ Only one area is defined, by default. Add area paths under the root area path fo
 
 ::: moniker range="tfs-2017"  
 
-- To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the area path and choose **New child**.   
+- To add a child node, highlight the area path and then choose **New child**. Optionally, you can select **Settings** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the area path and choose **New child**.   
 
     Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
@@ -251,7 +251,7 @@ Only one area is defined, by default. Add area paths under the root area path fo
 You can add area paths to a project using [az boards area project create](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area project create --name
                               [--path]
                               [--project]
@@ -274,8 +274,8 @@ az boards area project create --name
 For example, the following command adds the Voice area path to the Fabrikam Fiber project at the root node.  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area project create --name Voice --project "Fabrikam Fiber"
+```azurecli
+az boards area project create --name Voice --project "Fabrikam Fiber"
 {
   "attributes": null,
   "children": null,
@@ -294,8 +294,8 @@ C:\WINDOWS\system32>az boards area project create --name Voice --project "Fabrik
 And, here is the same command with the table output format. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area project create --name Voice --project "Fabrikam Fiber" --output table
+```azurecli
+az boards area project create --name Voice --project "Fabrikam Fiber" --output table
 ID     Identifier                            Name    Path                         Has Children
 -----  ------------------------------------  ------  ---------------------------  --------------
 55413  3c16691b-160c-4498-ab42-aa77b7f354fc  Voice  \Fabrikam Fiber\Area\Voice  False
@@ -320,7 +320,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Open your project, and then select **Project settings > Team configuration > Areas**.
+1. Open your project, and then select **Project settings** > **Team configuration** > **Areas**.
 
    ![Project settings, Team configuration page](media/areas/project-settings-team-configuration-preview.png)
 
@@ -333,7 +333,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 
 ::: moniker range="<= tfs-2018"  
 
-You open team settings from the top navigation bar. Select the team you want and then choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
+You open team settings from the upper navigation bar. Select the team you want and then choose **Team settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: . For more information about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
 > [!div class="mx-imgBorder"]  
 > ![Open team settings](media/team-defaults/open-team-settings-horz.png) 
@@ -351,7 +351,7 @@ You open team settings from the top navigation bar. Select the team you want and
 You can list the area paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area team list --team
                          [--project] 
 ```
@@ -364,8 +364,8 @@ az boards area team list --team
 For example, the following command lists the area paths for the Service Delivery team. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli)
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area team list --team "Service Delivery" --project "Fabrikam Fiber" --output table
+```azurecli
+az boards area team list --team "Service Delivery" --project "Fabrikam Fiber" --output table
 Area                             Include sub areas    Is Default
 -------------------------------  -------------------  ------------
 Fabrikam Fiber\Service Delivery  True                 True
@@ -384,7 +384,7 @@ Fabrikam Fiber\Service Delivery  True                 True
 
 You define both areas and iterations from **Project Settings > Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-1. Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
+1. Open a backlog or board for a team and choose **Team profile** :::image type="icon" source="../../media/icons/team.png" border="false"::: > **Team Settings**. 
 
    Here we open the Board for the Fabrikam Fiber team and from there the team profile. 
 
@@ -503,7 +503,7 @@ The default area path determines the default area path assigned to work items th
 You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area team add --path  --team
                         [--include-sub-areas {false, true}]
                         [--project]
@@ -527,8 +527,8 @@ az boards area team add --path  --team
 For example, the following command adds the Voice area path to the Voice team for the Fabrikam Fiber project, sets it as the default and to include sub-areas. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area team add --path "\Fabrikam Fiber\Voice" --team Voice --project "Fabrikam Fiber" --include-sub-areas --set-as-default --include-sub-areas true --output table
+```azurecli
+az boards area team add --path "\Fabrikam Fiber\Voice" --team Voice --project "Fabrikam Fiber" --include-sub-areas --set-as-default --include-sub-areas true --output table
 Area                                   Include sub areas    Is Default
 -------------------------------------  -------------------  ------------
 Fabrikam Fiber\Service Delivery\Voice  False                False
@@ -553,7 +553,7 @@ The system automatically updates work items and queries that reference your upda
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To rename an area or iteration path, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the node, and then select **Edit**.  
+1. To rename an area or iteration path, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the node, and then select **Edit**.  
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of sequence, Open Work > Project Configuration](media/areas/edit-area-rename-preview.png)  
@@ -575,7 +575,7 @@ The system automatically updates work items and queries that reference your upda
 
 ::: moniker range="<= tfs-2018"
 
-1. To rename an area or iteration path, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the node, and then select **Edit**.  
+1. To rename an area or iteration path, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for the node, and then select **Edit**.  
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of sequence, Open Work>Project Configuration, TFS 2018 and earlier on-premises versions](media/areas/edit-area-rename.png)  
@@ -605,7 +605,7 @@ You can rename, move, or delete an area path for a project, using [az boards are
 To rename or move an area path, use the `az boards area project update` command.
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area project update --path
                               [--child-id]
                               [--name]
@@ -626,8 +626,8 @@ az boards area project update --path
 For example, the following command renames the Voice area path to Voice and Web for the Fabrikam Fiber project. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az boards area project update --path "\Fabrikam Fiber\Area\Voice" --name "Voice and Web" --project "Fabrikam Fiber" --output table
+```azurecli
+az boards area project update --path "\Fabrikam Fiber\Area\Voice" --name "Voice and Web" --project "Fabrikam Fiber" --output table
 ID     Identifier                            Name           Path                                Has Children
 -----  ------------------------------------  -------------  ----------------------------------  --------------
 55412  b00f86a2-3d49-4ad2-af01-da2537947baa  Voice and Web  \Fabrikam Fiber\Area\Voice and Web  False
@@ -640,7 +640,7 @@ ID     Identifier                            Name           Path                
 To remove an area path from a team, use [az boards area team remove](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-remove).
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area team remove --path
                            --team
                            [--project]
@@ -657,7 +657,7 @@ az boards area team remove --path
 For example, the following command removes the \Service Delivery\Voice area path from the Voice team of the Fabrikam Fiber project. 
 
 > [!div class="tabbedCodeSnippets"]
-```CLI
+```azurecli
 az boards area team remove --path "\Fabrikam Fiber\Service Delivery\Voice" --team Voice --project "Fabrikam Fiber" --output table
 ```
 
@@ -687,7 +687,7 @@ You can quickly generate [queries](../../boards/queries/using-queries.md) to vie
 
 ## Related articles
 
-As you can see, Area Paths play a major role in supporting Agile tools, teams, and managing work items. Learn more about working with these fields from the following articles:
+As you can see, area paths play a major role in supporting Agile tools, teams, and managing work items. Learn more about working with these fields from the following articles:
 
 - [About areas and iterations](about-areas-iterations.md)  
 - [Add another team](../../organizations/settings/add-teams.md)  

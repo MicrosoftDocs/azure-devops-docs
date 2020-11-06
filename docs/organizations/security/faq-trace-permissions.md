@@ -34,7 +34,7 @@ If a user's having permissions issues and you use default security groups or cus
 
 ::: moniker range="< azure-devops"
 
-[Change access levels](/azure/devops/organizations/security/change-access-levels?view=azure-devops)
+[Change access levels](./change-access-levels.md?view=azure-devops)
 
 ::: moniker-end
 
@@ -91,6 +91,5 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 ## Related articles
 
-* [Grant or restrict access to select features and functions](/azure/devops/organizations/security/restrict-access?view=azure-devops)
-* [Change individual permissions](/azure/devops/organizations/security/change-individual-permissions?view=azure-devops)
-
+* [Grant or restrict access to select features and functions](./restrict-access.md?view=azure-devops)
+* [Change individual permissions](./change-individual-permissions.md?view=azure-devops)

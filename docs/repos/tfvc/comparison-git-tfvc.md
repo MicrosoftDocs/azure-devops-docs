@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. Azure Repos supports two types of version control: [Git](../../repos/git/gitquickstart.md)
-and [Team Foundation Version Control](./overview.md) (TFVC).
+and [Team Foundation Version Control](./what-is-tfvc.md) (TFVC).
  
 <a name="tfvc_or_git_summary"></a>
 ## Which version control system should I use?
@@ -44,7 +44,7 @@ TFVC has two [workflow models](decide-between-using-local-server-workspace.md):
 
   - **Local workspaces** - Each team member takes a copy of the latest version of the codebase with them and works offline as needed. Developers check in their changes and resolve conflicts as necessary. Another system that works this way is Subversion.
 
-To learn more, see [TFVC overview](./overview.md)
+To learn more, see [TFVC overview](./what-is-tfvc.md)
  
 <a name="tfvc_or_git_details"></a>
 
@@ -95,7 +95,7 @@ Need more help to make a choice? These charts might help.
 
 <p>You can compare branches to see which commits exist on which branches.</p>
 
-<p>See <a href="/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio#use-branches-to-manage-development" data-raw-source="[Use Git branches to switch contexts, suspend work, and isolate risk](/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio#use-branches-to-manage-development)">Use Git branches to switch contexts, suspend work, and isolate risk</a>.</p>
+<p>See <a href="/azure/devops/repos/git/branches?view=azure-devops&amp;tabs=visual-studio#use-branches-to-manage-development" data-raw-source="[Use Git branches to switch contexts, suspend work, and isolate risk](../git/branches.md?amp;tabs=visual-studio&view=azure-devops#use-branches-to-manage-development)">Use Git branches to switch contexts, suspend work, and isolate risk</a>.</p>
 </td>
 </tr>
 <tr>
@@ -211,7 +211,7 @@ Need more help to make a choice? These charts might help.
 </thead>
 <tr>
 <td>Client software</td>
-<td> Visual Studio, Eclipse (with <a href="https://msdn.microsoft.com/library/gg413285%28v=vs.140%29.aspx" data-raw-source="[Team Explorer Everywhere](https://msdn.microsoft.com/library/gg413285%28v=vs.140%29.aspx)">Team Explorer Everywhere</a>)</td>
+<td> Visual Studio, Eclipse (with <a href="/previous-versions/visualstudio/visual-studio-2013/gg413285(v=vs.120)" data-raw-source="[Team Explorer Everywhere](/previous-versions/visualstudio/visual-studio-2013/gg413285(v=vs.120))">Team Explorer Everywhere</a>)</td>
 <td>Visual Studio, Eclipse, and other third-party tools</td>
 </tr>
 <tr>
@@ -249,7 +249,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>Visual Studio compatibility</td>
-<td>You can use all supported <a href="https://docs.microsoft.com/azure/devops/server/requirements" data-raw-source="[previous versions of Visual Studio](https://docs.microsoft.com/azure/devops/server/requirements)">previous versions of Visual Studio</a>.</td>
+<td>You can use all supported <a href="/azure/devops/server/requirements" data-raw-source="[previous versions of Visual Studio](/azure/devops/server/requirements)">previous versions of Visual Studio</a>.</td>
 <td><p>Git is built in with Visual Studio 2017, 2015, and 2013.</p>
 <p>You can also use Visual Studio 2012 Update 4 (you must also install <a href="https://go.microsoft.com/fwlink/?LinkID=275845" data-raw-source="[Visual Studio Tools for Git](https://go.microsoft.com/fwlink/?LinkID=275845)">Visual Studio Tools for Git</a>).</p></td>
 </tr>

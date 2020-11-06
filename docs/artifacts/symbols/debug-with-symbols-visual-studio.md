@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [](../includes/availability-symbols.md)]
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md); to publish symbols, see [this page](/azure/devops/pipelines/artifacts/symbols?toc=/azure/devops/artifacts/toc.json). To use symbols in WinDbg, see [this page](debug-with-symbols-windbg.md).
+Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md); to publish symbols, see [this page](../../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json). To use symbols in WinDbg, see [this page](debug-with-symbols-windbg.md).
 
 ## Add the symbol server to Visual Studio
 

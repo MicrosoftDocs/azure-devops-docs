@@ -13,7 +13,7 @@ A few months ago, we announced the [preview of Scale-set agents](https://docs.mi
 
 ### Run this job next
 
-Have you ever had a bugfix which you needed to deploy _right this minute_ but had to wait behind CI and PR jobs? With this release, we now allow you to bump the priority of a queued job. Users with sufficient permission will see a new "Run next" button on the job details page. Clicking the button will set the job to be run as soon as possible. (You'll still need available parallelism and a suitable agent, of course.)
+Have you ever had a bugfix which you needed to deploy _right this minute_ but had to wait behind CI and PR jobs? With this release, we now allow you to bump the priority of a queued job. Users with the "Manage" permission on the pool - typically pool administrators - will see a new "Run next" button on the job details page. Clicking the button will set the job to be run as soon as possible. (You'll still need available parallelism and a suitable agent, of course.)
 
 
 ### Template expressions allowed in YAML `resources` block

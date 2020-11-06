@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 08/26/2020
+ms.date: 11/02/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -476,10 +476,10 @@ In YAML pipelines, we recommend that you put your deployment steps in a deployme
 
 ```YAML
 jobs:
-- deployment: string   # name of the deployment job (A-Z, a-z, 0-9, and underscore)
+- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
   displayName: string  # friendly name to display in the UI
-  pool:                # see the following "Pool" schema
-    name: string
+  pool:                # see pool schema
+    name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.
     demands: string | [ string ]
   workspace:
     clean: outputs | resources | all # what to clean up before the job runs
@@ -1113,7 +1113,7 @@ resources:
 
 > [!IMPORTANT]
 > When you define a resource trigger, if its pipeline resource is from the same repo as the current pipeline, triggering follows the same branch and commit on which the event is raised.
-> But if the pipeline resource is from a different repo, the current pipeline is triggered on the master branch.
+> But if the pipeline resource is from a different repo, the current pipeline is triggered on the branch specified by the **Default branch for manual and scheduled builds** setting. For more information, see [Branch considerations for pipeline completion triggers](process/pipeline-triggers.md?tabs=yaml#branch-considerations-for-pipeline-completion-triggers).
 
 #### The pipeline resource metadata as predefined variables
 
@@ -1134,7 +1134,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from a pipeline resource by using a `download` task. See the [download](/azure/devops/pipelines/yaml-schema?view=azure-devops#download) keyword.
+You can consume artifacts from a pipeline resource by using a `download` task. See the [download](#download) keyword.
 
 ### Container resource
 
@@ -1440,6 +1440,8 @@ pr: none # will disable PR builds entirely; will not disable CI triggers
 
 Full syntax:
 
+:::moniker range="<=azure-devops-2020"
+
 ```yaml
 pr:
   autoCancel: boolean # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
@@ -1450,6 +1452,24 @@ pr:
     include: [ string ] # file paths which must match to trigger a build
     exclude: [ string ] # file paths which will not trigger a build
 ```
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2020"
+
+```yaml
+pr:
+  autoCancel: boolean # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
+  branches:
+    include: [ string ] # branch names which will trigger a build
+    exclude: [ string ] # branch names which will not
+  paths:
+    include: [ string ] # file paths which must match to trigger a build
+    exclude: [ string ] # file paths which will not trigger a build
+  drafts: boolean # For GitHub only, whether to build draft PRs, defaults to true
+```
+
+:::moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
@@ -1973,6 +1993,7 @@ The task publishes (uploads) a file or folder as a pipeline artifact that other 
 steps:
 - publish: string # path to a file or folder
   artifact: string # artifact name
+  displayName: string  # friendly name to display in the UI
 ```
 
 # [Example](#tab/example)
@@ -1981,6 +2002,7 @@ steps:
 steps:
 - publish: $(Build.SourcesDirectory)/build
   artifact: WebApp
+  displayName: Publish artifact WebApp
 ```
 
 ---
@@ -1999,6 +2021,7 @@ steps:
 - download: [ current | pipeline resource identifier | none ] # disable automatic download if "none"
   artifact: string ## artifact name, optional; downloads all the available artifacts if not specified
   patterns: string # patterns representing files to include; optional
+  displayName: string  # friendly name to display in the UI
 ```
 ### Artifact download location
 
@@ -2018,6 +2041,7 @@ steps:
 - download: current  # refers to artifacts published by current pipeline
   artifact: WebApp
   patterns: '**/.js'
+  displayName: Download artifact WebApp
 - download: MyAppA   # downloads artifacts available as part of the pipeline resource
 ```
 
@@ -2063,6 +2087,9 @@ steps:
 ```
 
 ::: moniker-end
+
+> [!NOTE]
+> In addition to the cleaning option available using `checkout`, you can also configuring cleaning in a workspace. For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
 
 To avoid syncing sources at all:
 
@@ -2189,9 +2216,9 @@ Learn more about [conditions](process/conditions.md?tabs=yaml),
 
 Syntax highlighting is available for the pipeline schema via a Visual Studio Code extension.
 You can [download Visual Studio Code](https://code.visualstudio.com), [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and [check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).
-The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.
+The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/main/service-schema.json) for validation.
 
-You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](https://docs.microsoft.com/rest/api/azure/devops/distributedtask/yamlschema/get?view=azure-devops-rest-5.1).
+You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](/rest/api/azure/devops/distributedtask/yamlschema/get?preserve-view=true&view=azure-devops-rest-5.1).
 
 <!-- For people who get here by searching for, say, "azure pipelines template YAML schema", 
      look around a bit, and then type "Ctrl-F JSON" when they don't see anything promising
