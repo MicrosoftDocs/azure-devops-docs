@@ -45,10 +45,10 @@ To debug the module, you can either:
 
 ## Source Link support
 
-We recommend checking "Enable Source Link support" in Options > Debugging > General (it's checked by default).
+We recommend enabling source link support to step into source code. To do so, check **Enable Source Link support** under Options > Debugging > General. By default Source Link support is enabled in Visual Studio.
 
 If you choose to enable source server support, please consider the [security implications](/visualstudio/debugger/source-server-security-alert) before doing so.
 
 ### Portable PDBs and Source Link
 
-If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), [Source Link](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md) cannot currently authenticate to private source repositories (like Azure DevOps Services), and thus will not work.
+If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), Source Link does not support authenticating to private source repositories like Azure DevOps Services. See [Source Link diagnostics](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/source-link.md) for more details.
