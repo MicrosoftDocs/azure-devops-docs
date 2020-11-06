@@ -119,7 +119,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    * If your tests need **input parameters** such as app URLs or database
      connection strings, select the relevant settings file from the
      build artifacts. You can use the **Publish build artifacts** tasks
-     in you build pipeline to publish the settings file in a drop
+     in your build pipeline to publish the settings file in a drop
      location if this file is not included in the artifacts.
      In the example shown below, the application URL is exposed in the
      run settings file, and is overridden to set it to a staging URL
