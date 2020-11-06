@@ -127,7 +127,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
      ![Specifying the properties for the Visual Studio Test task](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-06.png)
 
-     For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md).
+     For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](../pipelines/tasks/test/vstest.md).
 
 7. Choose the **Agent job** item and verify that the deployment queue
    is set to the one containing the machines where you want to run the
