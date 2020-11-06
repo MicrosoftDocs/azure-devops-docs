@@ -43,7 +43,7 @@ arise during the support lifecycle of the product. See [Product Lifecycle and Se
 ### Cloud-based load testing service (CLT) availability timeframe for:
 
 > [!IMPORTANT]
-> The scheduled removal of CLT on March 31, 2020 has been delayed due to COVID-19. While CLT is currently still available, we recommend that new customers do not onboard at this time, and we recommend that existing customers migrate to an alternative offering. Some options are listed in the following [alternatives](#alternatives) section.
+> The scheduled removal of CLT on March 31, 2020 has been delayed. While CLT is currently still available, we recommend that new customers do not onboard at this time, and we recommend that existing customers migrate to an alternative offering. Some options are listed in the following [alternatives](#alternatives) section.
 
 1. Existing customers of CLT:
 
