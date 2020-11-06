@@ -258,7 +258,7 @@ running tests in scheduled workflow will find it easy to adapt; for
 example, by cloning an existing scheduled testing release pipeline.
 
 Another major benefit is the availability of a rich set of tasks in
-the task catalog that enable a range of activates to be performed before
+the task catalog that enable a range of activities to be performed before
 and after running tests. Examples include preparing and cleaning test data,
 creating and cleaning configuration files, and more.
 
