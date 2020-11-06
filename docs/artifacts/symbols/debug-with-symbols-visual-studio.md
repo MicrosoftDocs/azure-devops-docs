@@ -25,9 +25,10 @@ To debug with symbols, select and add the Azure DevOps Services symbol server to
 > [!div class="mx-imgBorder"]
 > ![Add Azure DevOps Services Symbol Server in Visual Studio settings](media/add-server-location.png)
 
-In the **Connect to Azure DevOps Services Symbol Server** dialog, select the organization to which the symbols have been published and the corresponding user identity that has access to this organization. 
+In the **Connect to Azure DevOps Symbol Server** dialog, select your account from the dropdown menu, then select the organization that you wish to connect to. 
 
-![Connect to Azure DevOps Services Symbol Server](media/connectsymbolserver.png)
+> [!div class="mx-imgBorder"]
+> ![Connect to Azure DevOps Symbol Server](media/connect-to-symbol-server.png)
 
 Click **Connect** in the above dialog. The Azure DevOps Services Symbol Server is now remembered by Visual Studio. When a debugging session begins, Visual Studio will be able to get symbols from Azure DevOps Services.
 
