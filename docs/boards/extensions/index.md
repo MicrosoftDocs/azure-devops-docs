@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 12/02/2019
+ms.date: 11/06/2020
 ---
 
 # Azure Boards extensions developed by Microsoft
@@ -47,6 +47,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Estimate](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.estimate&ssr=false#overview)
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
+- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
 
 ::: moniker-end
 
@@ -58,6 +59,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
+- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
