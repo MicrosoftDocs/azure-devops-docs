@@ -62,7 +62,8 @@ Azure Artifacts is installed by default for TFS 2017 customers. Upgrade to TFS 2
 
 1. From any collection in TFS, hover over the settings menu and select the **Users** page. Then, select **Azure Artifacts**.
 
-   ![Users page in TFS](media/users-hub-tfs.png)
+   > [!div class="mx-imgBorder"]
+   > ![Users page in TFS](media/users-hub-tfs.png)
 
 2. Select **Assign**, enter the user to assign licenses, and then select **Ok.**
 
@@ -87,16 +88,18 @@ To see your storage bill for Azure Artifacts:
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
  
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**. 
- 
-   ![Open Organization settings](../media/settings/open-admin-settings-vert.png) 
+   > [!div class="mx-imgBorder"]
+   > ![Open Organization settings](../media/settings/open-admin-settings-vert.png) 
  
 3. Select **Billing**. 
  
-   ![Select Billing from Organization settings](../organizations/billing/media/shared/select-billing-organization-settings.png)
+   > [!div class="mx-imgBorder"]
+   > ![Select Billing from Organization settings](../organizations/billing/media/shared/select-billing-organization-settings.png)
  
 4. Find Artifacts and see your current billed usage from Azure Artifacts, or review a breakdown of the different types of storage your organization is currently using. See the [FAQs](#faqs) further in this article for information on which artifacts count towards your storage total. 
 
-   ![View storage for Azure Artifacts](media/azure-artifacts-view-storage-used.png)
+   > [!div class="mx-imgBorder"]
+   > ![View storage for Azure Artifacts](media/azure-artifacts-view-storage-used.png)
 
 > [!NOTE]
 > Based on community feedback, we're working on more granular drilldowns and views into your artifact storage. More information to come. 
@@ -130,9 +133,9 @@ A: To delete packages within your feeds, see [delete and recover packages in Azu
 
 ### Q: How long does it take for deleted artifacts to affect the amount of billed storage?
 
-A: Deletion of artifacts doesn't register immediately. It can take up to 24 hours for the usage level to be updated. If you're blocked from uploading artifacts, you can temporarily increase your usage level to continue publishing artifacts. Then, reduce the level once the storage metrics are updated.
+A: Deletion of artifacts doesn't register immediately. Storage usage should be updated within 24 hours, but in some cases it may take up to 48 hours maximum. If you're blocked from uploading artifacts, you can temporarily increase your usage level to continue publishing artifacts. Then, reduce the level once the storage metrics are updated.
 
-The 'used' value on the Billing tab of your Organization Settings page gets updated once per day. When you delete artifacts, it may not reflect immediately on your billing page. The Artifact Storage tab gets updated more frequently, so you may see a small discrepancy between the two.  
+The `used` value on the Billing tab of your Organization Settings page gets updated once per day. When you delete artifacts, it may not reflect immediately on your billing page. The Artifact Storage tab gets updated more frequently, so you may see a small discrepancy between the two.  
 
 ### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
