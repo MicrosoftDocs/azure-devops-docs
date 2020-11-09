@@ -131,7 +131,7 @@ For a simple report, do the following steps:
 The example report displays burndown on both Story Points and Count of Stories.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](media/odatapowerbi-releaseburndown-report.png)
+> ![The example report displays burndown on Story Points and Count of Stories.](media/odatapowerbi-releaseburndown-report.png)
 
 To pivot burndown by Area Path, do the following steps:
 
@@ -144,12 +144,12 @@ To pivot burndown by Area Path, do the following steps:
 The example report displays burndown pivoted by Area Path.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](media/odatapowerbi-releaseburndown-report2.png)
+> ![The example report displays burndown pivoted by Area Path.](media/odatapowerbi-releaseburndown-report2.png)
 
 To pivot the burndown by State, add the field "State" to **Values**, replacing "Area.AreaPath".
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](media/odatapowerbi-releaseburndown-report3.png)
+> ![To pivot the burndown by State, add the field "State".](media/odatapowerbi-releaseburndown-report3.png)
 
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 

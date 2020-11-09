@@ -38,8 +38,8 @@ Sprint Taskboards are similar to Kanban boards in that they show work items as c
 
 ## Prerequisites
 
-* You must have a sprint Taskboard you want to configure. When you add a team, you add a Taskboard for every sprint that you select for your team. To learn more, see [About teams and Agile tools](/azure/devops/organizations/settings/about-teams-and-settings).
-* To add or rename columns, or customize cards, you must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](/azure/devops/organizations/settings/add-team-administrator) or [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
+* You must have a sprint Taskboard you want to configure. When you add a team, you add a Taskboard for every sprint that you select for your team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+* To add or rename columns, or customize cards, you must be added to the team administrator role for the team's settings you want to modify, or be a member of the **Project Administrators** security group. To get added, see [Add a team administrator](../../organizations/settings/add-team-administrator.md) or [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md).
 
 
 <a id="add-columns" > </a>
@@ -349,7 +349,7 @@ Requires TFS 2015.1 or later version.
 
 ## Taskboard automatically updates 
 
-Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the backgroun.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
+Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the background.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
 
 ::: moniker-end
 
@@ -360,4 +360,4 @@ Your Taskboard automatically refreshes when changes occur. There isn't any live 
 - [Manage and configure team tools](../../organizations/settings/manage-teams.md)
 - [Setup your backlogs and boards](../backlogs/set-up-your-backlog.md)
 - [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)   
-- [Set working days](../../organizations/settings/set-working-days.md)  
+- [Set working days](../../organizations/settings/set-working-days.md)

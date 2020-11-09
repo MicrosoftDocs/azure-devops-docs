@@ -63,7 +63,7 @@ Configuring integration between Azure DevOps Server and Teams is a two-step proc
 
 2. Configure the connector. 
 
-1. Copy the generated web hook URL. Provide this URL when you're setting up service hook subscriptions in your Azure DevOps project.
+1. Copy the generated webhook URL. Provide this URL when you're setting up service hook subscriptions in your Azure DevOps project.
 
 ### From Azure DevOps Server
 
@@ -78,7 +78,7 @@ Configuring integration between Azure DevOps Server and Teams is a two-step proc
 	For example, the *pull request created* trigger can be filtered on the repository in which the pull request occurs, 
     the target branch it applies to, and the team members that are required or invited to review the request.
 
-1. Paste the web hook URL from the Teams connector configuration step and click Finish.
+1. Paste the webhook URL from the Teams connector configuration step and click Finish.
 
 Activity from your project begins appearing in your Teams channel.
 

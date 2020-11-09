@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 08/12/2020
+ms.date: 11/05/2020
 monikerRange: azure-devops
 ---
 
@@ -44,6 +44,11 @@ In preparation for creating scale set agents, you must first create a virtual ma
 
 In the following example, a new resource group and virtual machine scale set are created with Azure Cloud Shell using the UbuntuLTS VM image.
 
+> [!NOTE]
+> In this example, the UbuntuLTS VM image is used for the scale set. If you require
+> a customized VM image as the basis for your agent, create the customized image
+> before creating the scale set, by following the steps in [Create a scale set with custom image, software, or disk size](#create-a-scale-set-with-custom-image-software-or-disk-size).
+
 1. Browse to [Azure Cloud Shell](https://shell.azure.com/) at `https://shell.azure.com/`.
 
 2. Run the following command to verify your default Azure subscription.
@@ -81,33 +86,33 @@ In the following example, a new resource group and virtual machine scale set are
     --upgrade-policy-mode manual \
     --single-placement-group false \
     --platform-fault-domain-count 1 \
-    --load-balancer "" \
-    --ephemeral-os-disk true \
-    --os-disk-caching readonly
+    --load-balancer ""
     ```
 
-    Because Azure Pipelines manages the scale set, the following settings are required:
+    Because Azure Pipelines manages the scale set, the following settings are required or recommended:
 
-    * `--disable-overprovision`
-    * `--upgrade-policy-mode manual`
-    * `--load-balancer ""`
+    * `--disable-overprovision` - required
+    * `--upgrade-policy-mode manual` - required
+    * `--load-balancer ""` - Azure pipelines doesn't require a load balancer to route jobs to the agents in the scale set agent pool, but configuring a load balancer is one way to get an IP address for your scale set agents that you could use for firewall rules. Another option for getting an IP address for your scale set agents is to create your scale set using the `--public-ip-address` options. For more information about configuring your scale set with a load balancer or public IP address, see the [Virtual Machine Scale Sets documentation](/azure/virtual-machine-scale-sets/) and [az vmss create](/cli/azure/vmss?view=azure-cli-latest&preserve-view=true#az_vmss_create).
     * `--instance-count 2` - this setting is not required, but it will give you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines will delete these two VMs and create new ones.
-
 
     > [!IMPORTANT]
     >  If you run this script using Azure CLI on Windows, you must enclose the `""` in `--load-balancer ""` with single quotes like this: `--load-balancer '""'`
 
-    The following parameters to enable [Ephemeral OS disks](/azure/virtual-machines/ephemeral-os-disks) are optional but recommended to improve virtual machine reimage times.
+    If your VM size supports [Ephemeral OS disks](/azure/virtual-machines/ephemeral-os-disks), the following parameters to enable Ephemeral OS disks are optional but recommended to improve virtual machine reimage times.
 
     * `--ephemeral-os-disk true`
     * `--os-disk-caching readonly`
+
+    > [!IMPORTANT]
+    > Ephemeral OS disks are not supported on all VM sizes. For list of supported VM sizes, see [Ephemeral OS disks for Azure VMs](/azure/virtual-machines/ephemeral-os-disks).
 
     Select any Linux or Windows image - either from Azure Marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines automatically installs the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image. For instructions on creating and using a custom image, see [FAQ](#faq).
     
     Select any VM SKU and storage SKU.
 
     > [!NOTE]
-    > Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/virtual-environments/tree/master/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
+    > Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/virtual-environments/tree/main/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
 
 5. After creating your scale set, navigate to your scale set in the Azure portal and verify the following settings:
 
@@ -127,7 +132,7 @@ In the following example, a new resource group and virtual machine scale set are
 
     * **Scaling - Manual scale**
 
-        :::image type="content" source="media/scale-set-agents/manual-scale.png" alt-text="Verify upgrade policy." :::
+        :::image type="content" source="media/scale-set-agents/manual-scale.png" alt-text="Verify manual scale policy." :::
 
 ## Create the scale set agent pool
 
@@ -136,7 +141,7 @@ In the following example, a new resource group and virtual machine scale set are
     :::image type="content" source="media/scale-set-agents/create-agent-pool.png" alt-text="Create agent pool." :::
 
     > [!IMPORTANT]
-    > You must create your scale set pool in **Project settings** and not **Organization settings**. Conversely, when you want to delete a scale set pool, you must delete it from **Organization settings**, and not **Project settings**.
+    > You may create your scale set pool in **Project settings** or **Organization settings**, but when you delete a scale set pool, you must delete it from **Organization settings**, and not **Project settings**.
 
 2. Select **Azure virtual machine scale set** for the pool type. Select the **Azure subscription** that contains the scale set, choose **Authorize**, and choose the desired virtual machine scale set from that subscription. If you have an existing [service connection](../library/service-endpoints.md) you can choose that from the list instead of the subscription.
 
@@ -149,9 +154,10 @@ In the following example, a new resource group and virtual machine scale set are
 
 5. Configure the following options:
 
+    - **Automatically tear down virtual machines after every use** - A new VM instance is used for every job. After running a job, the VM will go offline and be reimaged before it picks up another job.
+    - **Save an unhealthy agent for investigation** - Whether to save [unhealthy agent VMs](#unhealthy-agents) for troubleshooting instead of deleting them.
     - **Maximum number of virtual machines in the scale set** - Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
     - **Number of agents to keep on standby** - Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs. If you set this to **0**, for example to conserve cost for a low volume of jobs, Azure Pipelines will start a VM only when it has a job.
-    - **Automatically tear down virtual machines after every use** - A new VM instance is used for every job. After running a job, the VM will go offline and be reimaged before it picks up another job.
     - **Delay in minutes before deleting excess idle agents** - To account for the variability in build load throughout the day, Azure Pipelines will wait this long before deleting an excess idle agent.
     - **Configure VMs to run interactive tests** (Windows Server OS Only) - Windows agents can either be configured to run unelevated with autologon and with interactive UI, or they can be configured to run with elevated permissions. Check this box to run unelevated with interactive UI. In either case, the agent user is a member of the Administrators group.
 
@@ -196,13 +202,13 @@ Throughout this operation, the goal for Azure Pipelines is to reach the desired 
 > [!NOTE]
 >  It can take an hour or more for Azure Pipelines to scale up or scale down the virtual machines. Azure Pipelines will scale up in steps, monitor the operations for errors, and react by deleting unusable machines and by creating new ones in the course of time. This corrective operation can take over an hour.
 
-To achieve maximum stability, scale set operations are done sequentially. For example if the pool needs to scale up and there are also unhealthy machines to delete, Azure Pipelines will first scale up the pool. Once the pool has scaled up to reach the desired number of idle agents on standby, the unhealthy machines will be deleted.
+To achieve maximum stability, scale set operations are done sequentially. For example if the pool needs to scale up and there are also unhealthy machines to delete, Azure Pipelines will first scale up the pool. Once the pool has scaled up to reach the desired number of idle agents on standby, the unhealthy machines will be deleted, depending on the **Save an unhealthy agent for investigation** setting. For more information, see [Unhealthy agents](#unhealthy-agents).
 
 Due to the sampling size of 5 minutes, it is possible that all agents can be running pipelines for a short period of time and no scaling up will occur.
 
 ## Customizing Pipeline Agent Configuration
 
-You can customize the configuration of the Azure Pipeline Agent by defining environment variables in your operating system custom image for your scale set. For example, the scale set agent working directory defaults to C:\a for Windows and /agent/_work for Linux. If you want to change the working directory, set an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory. More information can be found in the [Pipelines Agent Unattended Configuration](/azure/devops/pipelines/agents/v2-windows?view=azure-devops#unattended-config) documentation. Some examples include:
+You can customize the configuration of the Azure Pipeline Agent by defining environment variables in your operating system custom image for your scale set. For example, the scale set agent working directory defaults to C:\a for Windows and /agent/_work for Linux. If you want to change the working directory, set an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory. More information can be found in the [Pipelines Agent Unattended Configuration](./v2-windows.md#unattended-config) documentation. Some examples include:
 
 - `VSTS_AGENT_INPUT_WORK`
 - `VSTS_AGENT_INPUT_PROXYURL`
@@ -391,7 +397,7 @@ Scale set agents currently supports Ubuntu Linux, Windows Server/DataCenter 2016
 
 ### Known issues
 
-* Debian Linux is not supported.
+* Debian or RedHat Linux are not supported. Only Ubuntu is.
 * Windows 10 client does not support running the pipeline agent as a local user and therefore the agent cannot interact with the UI. The agent will run as Local Service instead.
 
 ## Troubleshooting issues
@@ -399,6 +405,30 @@ Scale set agents currently supports Ubuntu Linux, Windows Server/DataCenter 2016
 Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Diagnostics**.
 
 The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete, or Reimage VMs in your Azure Scale Set. Diagnostics also logs any errors encountered while trying to perform these actions. Review the errors to make sure your scaleset has sufficient resources to scale up. If your Azure subscription has reached the resource limit in VMs, CPU cores, disks, or IP Addresses, those errors will show up here.
+
+### Unhealthy Agents
+
+When agents or virtual machines are failing to start, not connecting to Azure DevOps, or going offline unexpectedly, Azure DevOps logs the failures to the Agent Pool's **Diagnostics** tab and tries to delete the associated virtual machine. Networking configuration, image customization, and pending reboots can cause these issues. Connecting to the VM to debug and gather logs can help with the investigation.
+
+If you would like Azure DevOps to save an unhealthy agent VM for investigation and not automatically delete it when it detects the unhealthy state, navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Choose **Settings**, select the option **Save an unhealthy agent for investigation**, and choose **Save**.
+
+:::image type="content" source="media/scale-set-agents/save-setting.png" alt-text="Save unhealthy agent setting.":::
+
+Now, when an unhealthy agent is detected in the scale set, Azure DevOps saves that agent and associated virtual machine. The saved agent will be visible on the **Diagnostics** tab of the Agent pool UI. Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, select your agent pool, choose **Diagnostics**, and make note of the agent name.
+
+:::image type="content" source="media/scale-set-agents/saved-agents-card.png" alt-text="Saved agents card.":::
+
+Find the associated virtual machine in your Azure virtual machine scale set via the Azure portal, in the **Instances** list.
+
+:::image type="content" source="media/scale-set-agents/instances.png" alt-text="Azure portal virtual machine scale set instances.":::
+
+Select the instance, choose **Connect**, and perform your investigation.
+
+:::image type="content" source="media/scale-set-agents/connect.png" alt-text="Connect to virtual machine instance.":::
+
+To delete the saved agent when you are done with your investigation, navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Choose the tab labeled **Diagnostics**. Find the agent on the **Agents saved for investigation** card, and choose **Delete**. This removes the agent from the pool and deletes the associated virtual machine.
+
+:::image type="content" source="media/scale-set-agents/saved-agents-card-delete.png" alt-text="Saved agents card delete button.":::
      
 <a name="q-a"></a>
 ## FAQ
@@ -406,10 +436,11 @@ The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete,
 * [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
 * [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
 * [How can I delete agents?](#how-can-i-delete-agents)
+* [Can I configure the scale set agent pool to have zero agents on standby?](#can-i-configure-the-scale-set-agent-pool-to-have-zero-agents-on-standby)
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
-Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/virtual-environments/tree/master/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
+Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/virtual-environments/tree/main/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
 
 ### How do I configure scale set agents to run UI tests?
 
@@ -419,3 +450,7 @@ Create a Scale Set with a Windows Server OS and when creating the Agent Pool sel
 
 Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Agents**.
 Click the 'Enabled' toggle button to disable the agent. The disabled agent will complete the pipeline it is currently running and will not pick up additional work. Within a few minutes after completing its current pipeline job, the agent will be deleted.
+
+### Can I configure the scale set agent pool to have zero agents on standby?
+
+Yes, if you set **Number of agents to keep on standby** to zero, for example to conserve cost for a low volume of jobs, Azure Pipelines starts a VM only when it has a job.

@@ -18,25 +18,23 @@ ms.date: 08/14/2020
 ---
 :::row:::
    :::column span="2":::
-      - [Outcome summary](/azure/devops/report/powerbi/sample-pipelines-outcome-summary)
-      - [Outcome summary for all pipelines](/azure/devops/report/powerbi/sample-pipelines-allpipelines)
-      - [Pass rate trend](/azure/devops/report/powerbi/sample-pipelines-pass-rate-trend)  
-      - [Stage wise failures](/azure/devops/report/powerbi/sample-pipelines-stagewise-failures)  
-      - [Duration](/azure/devops/report/powerbi/sample-pipelines-duration)  
-      - [Duration trend](/azure/devops/report/powerbi/sample-pipelines-duration-trend)  
-      - [Task duration](/azure/devops/report/powerbi/sample-pipelines-task-duration)  
-      - [Task duration trend](/azure/devops/report/powerbi/sample-pipelines-task-duration-trend)  
+      - [Outcome summary](../sample-pipelines-outcome-summary.md)
+      - [Outcome summary for all pipelines](../sample-pipelines-allpipelines.md)
+      - [Pass rate trend](../sample-pipelines-pass-rate-trend.md)  
+      - [Stage wise failures](../sample-pipelines-stagewise-failures.md)  
+      - [Duration](../sample-pipelines-duration.md)  
+      - [Duration trend](../sample-pipelines-duration-trend.md)  
+      - [Task duration](../sample-pipelines-task-duration.md)  
+      - [Task duration trend](../sample-pipelines-task-duration-trend.md)  
    :::column-end:::
    :::column span="2":::
-      - [Test summary](/azure/devops/report/powerbi/sample-test-analytics-test-summary) 
-      - [Test summary trend](/azure/devops/report/powerbi/sample-test-summary-trend) 
-      - [Failed tests](/azure/devops/report/powerbi/sample-test-analytics-failed-tests) 
-      - [Flaky tests](/azure/devops/report/powerbi/sample-test-analytics-flaky-tests) 
-      - [Test duration](/azure/devops/report/powerbi/sample-test-analytics-test-duration) 
-      - [Test duration trend](/azure/devops/report/powerbi/sample-test-analyics-test-duration-trend) 
-      - [Pass rate trend of a test](/azure/devops/report/powerbi/sample-test-analytics-pass-rate-trend-test) 
+      - [Test summary](../sample-test-analytics-test-summary.md) 
+      - [Test summary trend](../sample-test-summary-trend.md) 
+      - [Failed tests](../sample-test-analytics-failed-tests.md) 
+      - [Flaky tests](../sample-test-analytics-flaky-tests.md) 
+      - [Test duration](../sample-test-analytics-test-duration.md) 
+      - [Test duration trend](../sample-test-analyics-test-duration-trend.md) 
+      - [Pass rate trend of a test](../sample-test-analytics-pass-rate-trend-test.md) 
    :::column-end:::
 :::row-end:::
 ---
-
-

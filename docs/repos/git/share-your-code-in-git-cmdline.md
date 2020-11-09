@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Get started with Git from the command line
 
-#### Azure Repos
+**Azure Repos**
 
 This guide shows you how to share your code in a Git repo in Azure Repos using the command line.
 
@@ -23,7 +23,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 * An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 ## Download and install Azure CLI and add Azure DevOps extension
-1. [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli). You must have at least `v2.0.49`, which you can verify with `az --version` command.
+1. [Install the Azure CLI](/cli/azure/install-azure-cli). You must have at least `v2.0.49`, which you can verify with `az --version` command.
 
 2. Add the Azure DevOps Extension `az extension add --name azure-devops`
 
@@ -32,7 +32,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
     If the CLI can open your default browser, it will do so and load a sign-in page. Otherwise, you need to open a
     browser page and follow the instructions on the command line to enter an authorization code after navigating to
     [https://aka.ms/devicelogin](https://aka.ms/devicelogin) in your browser. For more information, see the
-    [Azure CLI login page](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest).
+    [Azure CLI login page](/cli/azure/authenticate-azure-cli?preserve-view=true&view=azure-cli-latest).
   
 4. For seamless commanding, set the organization and project as defaults in configuration.
  

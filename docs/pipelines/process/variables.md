@@ -1,10 +1,10 @@
 ---
 title: Define variables
-ms.custom: seodec18, contperfq4
+ms.custom: seodec18, contperfq4, devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 08/19/2020
+ms.date: 10/23/2020
 
 monikerRange: '>= tfs-2015'
 ---
@@ -58,7 +58,7 @@ User-defined variables can consist of letters, numbers, `.`, and `_` characters.
 
 Azure Pipelines supports three different ways to reference variables: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
 
-In a pipeline, template expression variables (`${{ variables.var }}`) get processed at compile time, before runtime starts. Macro syntax variables (`$(var)`) get processed during runtime before a task runs. Runtime expressions (`$[variables.var]`) also get processed during runtime but were designed for use with conditions and expressions. When you use a runtime expression, it must take up the entire right side of a definition. 
+In a pipeline, template expression variables (`${{ variables.var }}`) get processed at compile time, before runtime starts. Macro syntax variables (`$(var)`) get processed during runtime before a task runs. Runtime expressions (`$[variables.var]`) also get processed during runtime but were designed for use with [conditions](conditions.md) and [expressions](expressions.md). When you use a runtime expression, it must take up the entire right side of a definition. 
 
 In this example, you can see that the template expression still has the initial value of the variable after the variable is updated. The value of the macro syntax variable updates. The template expression value does not change because all template expression variables get processed at compile time before tasks run. In contrast, macro syntax variables are evaluated before each task runs. 
 
@@ -72,7 +72,7 @@ steps:
       echo ${{ variables.one }} # outputs initialValue
       echo $(one)
     displayName: First variable pass
-  - script: echo '##vso[task.setvariable variable=one]secondValue'
+  - bash: echo '##vso[task.setvariable variable=one]secondValue'
     displayName: Set new variable value
   - script: |
       echo ${{ variables.one }} # outputs initialValue
@@ -87,7 +87,7 @@ Variables with macro syntax get processed before a task executes during runtime.
 
 Macro syntax variables remain unchanged with no value because an empty value like `$()` might mean something to the task you are running and the agent should not assume you want that value replaced.  For example, if you use `$(foo)` to reference variable `foo` in a Bash task, replacing all `$()` expressions in the input to the task could break your Bash scripts.
 
-Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`.
+Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`. Macro variables are not expanded when used to display a job name inline. Instead, you must use the `displayName` property.
 
 > [!NOTE]
 > Variables are only expanded for `stages`, `jobs`, and `steps`.
@@ -113,7 +113,7 @@ Runtime expression variables are only expanded when they are used for a value, n
 
 Use macro syntax if you are providing input for a task. 
 
-Choose a runtime expression if you are working with conditions and expressions. The exception to this is if you have a pipeline where it will cause a problem for your empty variable to print out. For example, if you have conditional logic that relies on a variable having a specific value or no value. In that case, you should use a runtime expression. 
+Choose a runtime expression if you are working with [conditions](conditions.md) and [expressions](expressions.md). The exception to this is if you have a pipeline where it will cause a problem for your empty variable to print out. For example, if you have conditional logic that relies on a variable having a specific value or no value. In that case, you should use a runtime expression. 
 
 If you are defining a variable in a template, use a template expression.
 
@@ -245,7 +245,7 @@ Using the Azure DevOps CLI, you can create and update variables for the pipeline
 
 ### Prerequisites
 
-- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](/azure/devops/cli/index).
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).
 - Sign into Azure DevOps using `az login`.
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 
@@ -514,11 +514,25 @@ To share variables across multiple pipelines in your project, use the web interf
 
 ## Use output variables from tasks
 
-Some tasks define output variables, which you can consume in downstream steps and jobs within the same stage. You can access variables across jobs by using [dependencies](expressions.md#dependencies). 
+::: moniker range=">=azure-devops-2020"
+Some tasks define output variables, which you can consume in downstream steps, jobs, and stages.
+In YAML, you can access variables across jobs and stages by using [dependencies](expressions.md#dependencies). 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+Some tasks define output variables, which you can consume in downstream steps and jobs within the same stage.
+In YAML, you can access variables across jobs by using [dependencies](expressions.md#dependencies). 
+::: moniker-end
+
+::: moniker range="<azure-devops-2019"
+Some tasks define output variables, which you can consume in downstream steps within the same job.
+::: moniker-end
+
 
 #### [YAML](#tab/yaml/)
 
 For these examples, assume we have a task called `MyTask`, which sets an output variable called `MyVar`.
+Learn more about the syntax in [Expressions - Dependencies](expressions.md#dependencies).
 
 ### Use outputs in the same job
 
@@ -545,6 +559,30 @@ jobs:
   steps:
   - script: echo $(varFromA) # this step uses the mapped-in variable
 ```
+::: moniker range=">=azure-devops-2020"
+
+### Use outputs in a different stage
+
+To use the output from a different stage at the job level, you use the `stageDependencies` syntax.
+
+```yaml
+stages:
+- stage: One
+  jobs:
+  - job: A
+    steps:
+    - task: MyTask@1  # this step generates the output variable
+      name: ProduceVar  # because we're going to depend on it, we need to name the step
+- stage: Two
+  - job: B
+    variables:
+      # map the output variable from A into this job
+      varFromA: $[ stageDependencies.One.A.outputs['ProduceVar.MyVar'] ]
+    steps:
+    - script: echo $(varFromA) # this step uses the mapped-in variable
+```
+
+::: moniker-end
 
 #### [Classic](#tab/classic/)
 
@@ -651,11 +689,13 @@ steps:
 
 If you want to make a variable available to future jobs, you must mark it as
 an output variable by using `isOutput=true`. Then you can map it into future jobs by using the `$[]` syntax and including the step name that set the variable. Multi-job output variables only work for jobs in the same stage. 
+
+To pass variables to jobs in different stages, use the [stage dependencies](expressions.md#dependencies) syntax. 
+
 When you create a multi-job output variable, you should assign the expression to a variable. In this YAML, `$[ dependencies.A.outputs['setvarStep.myOutputVar'] ]` is assigned to the variable `$(myVarFromJobA)`. 
 
 ```yaml
 jobs:
-
 # Set an output variable from job A
 - job: A
   pool:
@@ -677,6 +717,27 @@ jobs:
   steps:
   - script: echo $(myVarFromJobA)
     name: echovar
+```
+
+If you're setting a variable from one stage to another, use `stageDependencies`. 
+
+```yaml
+stages:
+- stage: A
+  jobs:
+  - job: A1
+    steps:
+     - bash: echo "##vso[task.setvariable variable=myStageOutputVar;isOutput=true]this is a stage output var"
+       name: printvar
+
+- stage: B
+  dependsOn: A
+  variables:
+    myVarfromStageA: $[ stageDependencies.A.A1.outputs['printvar.myStageOutputVar'] ]
+  jobs:
+  - job: B1
+    steps:
+    - script: echo $(myVarfromStageA)
 ```
 
 If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)

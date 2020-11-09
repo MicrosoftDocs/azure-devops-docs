@@ -5,7 +5,7 @@ description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 11/15/2019
+ms.date: 09/18/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -117,8 +117,12 @@ Create branches to fix bugs from the release branch and merge them back into the
 
 ### Port changes back to the main branch
 
-Bring over changes made in your release branch into your main branch to prevent regression in your code.
-Port your changes from your release branch into a new feature branch to bring them back into the main branch.
+Make sure that fixes land in both your release branch and your main branch.
+One approach is to make fixes in the release branch, then bring changes into your main branch to prevent regression in your code.
+Another approach (and the one employed by the Azure DevOps team) is to always make changes in the mainline, then port those to the release branch.
+You can read more about our [Release Flow](/azure/devops/learn/devops-at-microsoft/release-flow) strategy.
+
+In this topic, we'll cover making changes in the release branch and porting them into mainline.
 Use cherry-picking instead of merging so that you have exact control over which commits are ported back to the main branch.
 Merging the feature branch into the main branch can bring over release-specific changes you don't want in the main branch.
 
@@ -128,7 +132,7 @@ Update the main branch with a change made in the release branch with these steps
 1. Cherry-pick the changes from the release branch to your new feature branch.
 1. Merge the feature branch back into the main branch in a second pull request.
 
-![image of release branch workflows](media/branching-guidance/releasebranching_main.png)
+![Updated release branch workflows.](media/branching-guidance/releasebranching_main.png)
 
 This release branch workflow keeps the pillars of the basic workflow intact: feature branches, pull requests, and a strong main branch that always has the latest version of the code.
 

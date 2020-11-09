@@ -35,7 +35,7 @@ Provides integration with Microsoft Azure Service Bus, including Notification Hu
 
 ### Send a message to a Notification Hub
 
-This action sends a generic, template notification to the specified Azure Notification Hub. [Learn more](https://go.microsoft.com/fwlink/?LinkID=392636).
+This action sends a generic, template notification to the specified Azure Notification Hub. [Learn more](./overview.md).
 
 * Consumer ID: **azureServiceBus**
 * Action ID: **serviceBusNotificationHubSend**
@@ -53,7 +53,7 @@ This action sends a generic, template notification to the specified Azure Notifi
     * Required: **Yes**
   * **tagsExpression**
     * Tags
-    * The tags expression (for targeting specific sets of devices). [Learn more](https://msdn.microsoft.com/library/windowsazure/dn530749.aspx).
+    * The tags expression (for targeting specific sets of devices). [Learn more](/previous-versions/azure/azure-services/dn530749(v=azure.100)).
     * Data type: **string**
     * Required: **No**
 
@@ -591,5 +591,3 @@ Create a private comment in a ticket
     * The Zendesk API token (can be found in Zendesk app in Admin > Channels > API)
     * Data type: **string**
     * Required: **Yes**
-
-

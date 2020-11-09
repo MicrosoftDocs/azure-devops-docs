@@ -96,7 +96,7 @@ Requirements describe what the stakeholders expect from the product. You should 
   
 -   Requirement documents. Requirement documents give you the freedom to provide the appropriate level of detail for each requirement. If you decide to use documents, create a Word document for each requirement, and attach the document to the requirement work item, or upload the file to the team portal and add a hyperlink to the work item.  
   
--   Unified Markup Language (UML) sequence diagram. A sequence diagram is especially useful where several parties interact. For example, ordering the meal requires the customer, the DinnerNow Web site, the payment system, and the restaurant to interact in a specific sequence. Draw the sequence diagram in a UML model, check it into Team Foundation Server, and enter a link in the requirement work item. For more information, see [UML Sequence Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409389).  
+-   Unified Markup Language (UML) sequence diagram. A sequence diagram is especially useful where several parties interact. For example, ordering the meal requires the customer, the DinnerNow Web site, the payment system, and the restaurant to interact in a specific sequence. Draw the sequence diagram in a UML model, check it into Team Foundation Server, and enter a link in the requirement work item. For more information, see [UML Sequence Diagrams: Guidelines](/visualstudio/modeling/uml-sequence-diagrams-guidelines).  
   
 ### Specific scenarios  
  Start by writing specific scenarios, which follow a particular set of actors through a specific sequence. For example, "Carlos orders a pizza and garlic bread at the DinnerNow Web site. The Web site redirects Carlos to Woodgrove Bank's payment service. Fourth Coffee prepares the pizza and delivers it."  
@@ -117,9 +117,9 @@ Requirements describe what the stakeholders expect from the product. You should 
 ### Organizing the scenarios  
  You can organize scenarios by using the following methods:  
   
--   Draw use case diagrams that show each scenario as a use case. This method is recommended because it makes the scenarios very easy to present and discuss. For more information, see [UML Use Case Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409432).  
+-   Draw use case diagrams that show each scenario as a use case. This method is recommended because it makes the scenarios very easy to present and discuss. For more information, see [UML Use Case Diagrams: Guidelines](/visualstudio/modeling/uml-use-case-diagrams-guidelines).  
   
-    -   Link each use case to the work item that defines the scenario. For more information, see [Link model elements and work items](https://msdn.microsoft.com/library/dd465152).  
+    -   Link each use case to the work item that defines the scenario. For more information, see [Link model elements and work items](/visualstudio/modeling/link-model-elements-and-work-items).  
   
     -   Draw Extends relationships to show that one scenario is a variation of another. For example, "Customer specifies separate payment and delivery addresses" is an extension of the basic "Customer makes an order" use case. Extensions are particularly useful to separate out scenarios that will be implemented in a later iteration.  
   
@@ -136,10 +136,10 @@ Requirements describe what the stakeholders expect from the product. You should 
   
  Save the model in version control.  
   
- For more information, see [Model user requirements](https://msdn.microsoft.com/library/dd409376).  
+ For more information, see [Model user requirements](/visualstudio/modeling/model-user-requirements).  
   
 ### Modeling behaviors  
- Draw activity diagrams to summarize scenarios. Use swimlanes to group the actions that are performed by different actors. For more information, see [UML Activity Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409389).  
+ Draw activity diagrams to summarize scenarios. Use swimlanes to group the actions that are performed by different actors. For more information, see [UML Activity Diagrams: Guidelines](/visualstudio/modeling/uml-sequence-diagrams-guidelines).  
   
  Although a scenario usually describes a specific sequence of events, an activity diagram shows all the possibilities. Drawing an activity diagram can prompt you to think about alternative sequences and to ask your business clients what should happen in those cases.  
   
@@ -149,14 +149,14 @@ Requirements describe what the stakeholders expect from the product. You should 
   
  Where the interchange of messages is important, it might be more effective to use a sequence diagram that includes a lifeline for each actor and major product component.  
   
- Use case diagrams let you summarize the different flows of activity that your product supports. Each node on the diagram represents a series of interactions between the users and the application in pursuit of a particular user goal. You can also factor common sequences and optional extensions into separate use case nodes. For more information, see [UML Use Case Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409389.aspx).  
+ Use case diagrams let you summarize the different flows of activity that your product supports. Each node on the diagram represents a series of interactions between the users and the application in pursuit of a particular user goal. You can also factor common sequences and optional extensions into separate use case nodes. For more information, see [UML Use Case Diagrams: Guidelines](/visualstudio/modeling/uml-sequence-diagrams-guidelines).  
   
  The following illustration shows a simple example of a use case diagram.  
   
  ![Use cases for previous actions](media/uml_reqmwfuc.png "UML_ReqmWFUC")  
   
 ### Modeling concepts  
- Draw domain class diagrams to describe the important entities and their relationships that are mentioned in the scenarios. For example, the DinnerNow model shows Restaurant, Menu, Order, Menu Item, and so on. For more information, see [UML Class Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409389).  
+ Draw domain class diagrams to describe the important entities and their relationships that are mentioned in the scenarios. For example, the DinnerNow model shows Restaurant, Menu, Order, Menu Item, and so on. For more information, see [UML Class Diagrams: Guidelines](/visualstudio/modeling/uml-sequence-diagrams-guidelines).  
   
  Label the roles (ends) of the relationships with names and cardinalities.  
   

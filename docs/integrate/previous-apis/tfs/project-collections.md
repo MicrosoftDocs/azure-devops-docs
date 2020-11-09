@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [disclaimer](../_data/disclaimer.md)]
 
-[Project collections](https://msdn.microsoft.com/library/dd236915.aspx) contain [projects](./projects.md) that have source code, work items, and other resources.
+[Project collections](/azure/devops/server/admin/manage-project-collections?viewFallbackFrom=azure-devops) contain [projects](./projects.md) that have source code, work items, and other resources.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
@@ -65,4 +65,4 @@ GET https://mytfsserver/DefaultCollection/_apis/projectCollections/d81542e4-cdfa
 
 #### Sample code
 
-* [C# (ListProjectCollections method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/ProjectsAndTeams/ProjectCollectionsSample.cs#L14)
+* [C# (ListProjectCollections method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/ProjectsAndTeams/ProjectCollectionsSample.cs#L14)

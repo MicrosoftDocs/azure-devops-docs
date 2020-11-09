@@ -109,7 +109,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 1. To add a plan, choose **New Plan** . 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add a plan](media/plans/add-plan.png) 
+	> ![Choose New Plan.](media/plans/add-plan.png) 
 
 	All users, except users [assigned Stakeholder access](../../organizations/security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions).  
 
@@ -129,7 +129,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 
 1. To add a plan, choose **New Plan** . 
 
-	![Add a plan](media/review-team-plans-no-plans-defined.png)  
+	![Choose new plan.](media/review-team-plans-no-plans-defined.png)  
 
 	All users, except users [assigned Stakeholder access](../../organizations/security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions).  
 
@@ -165,7 +165,7 @@ Once you've defined a plan, you can further customize it.
 
 3. To set a marker, open the Markers page, specify a date and select a color. 	
 
-	<img src="media/review-team-plans-set-markers.png" alt="Settings dialog, Fields page" style="border: 2px solid #C3C3C3;" />
+	<img src="media/review-team-plans-set-markers.png" alt="Open the Markers page, specify a date and select a color." style="border: 2px solid #C3C3C3;" />
 
 	Markers appear on the plan as shown: 
 

@@ -33,9 +33,9 @@ integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](http
 Pipelines                  |  Collaborate 	                    | Customer support	                    | Plan and track 	             | Integrate
 -------------------		           |  -------------	                    | ----------------		                | ---------		                 | -------
 [AppVeyor](https://www.appveyor.com/docs/) | [Flowdock](https://www.flowdock.com/api/integration-getting-started) | [UserVoice](https://feedback.uservoice.com/knowledgebase/articles/363410-vsts-azure-devops-integration)  | [Trello](./services/trello.md) | [Azure Service Bus](../pipelines/tasks/utility/publish-to-azure-service-bus.md)
-[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)	   |	HipChat (No longer supported)	|	[Zendesk](https://support.zendesk.com/hc/articles/204890268-Creating-webhooks-with-the-HTTP-target) 		|  |	[Azure Storage](https://docs.microsoft.com/azure/azure-functions/functions-integrate-storage-queue-output-binding)
+[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)	   |	HipChat (No longer supported)	|	[Zendesk](https://support.zendesk.com/hc/articles/204890268-Creating-webhooks-with-the-HTTP-target) 		|  |	[Azure Storage](/azure/azure-functions/functions-integrate-storage-queue-output-binding)
 [Jenkins](./services/jenkins.md)   |	[Hubot](https://hubot.github.com/docs/)	|											|			|	[Grafana](./services/grafana.md) |
-[MyGet](https://docs.myget.org/docs/reference/webhooks)	   |	[Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription)	|											|			|	[Web Hooks](./services/webhooks.md) |
+[MyGet](https://docs.myget.org/docs/reference/webhooks)	   |	[Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription)	|											|			|	[Web Hooks](./services/webhooks.md) |
 [Slack](./services/slack.md)	   |[Slack](./services/slack.md)	|	|	[Slack](./services/slack.md)	| [Zapier](https://zapier.com/apps/webhook/integrations) 
 | [Microsoft Teams](./services/teams.md) | [Microsoft Teams](./services/teams.md) |   |[Microsoft Teams](./services/teams.md) | [Datadog](./services/datadog.md)  
 
@@ -50,11 +50,11 @@ look at the information on the service that you're interested in.
 
 1.	Open the admin page for a project in web access.
     
-    <img alt="Open the admin page" src="./media/devops-service-hooks.png" />
+    <img alt="Screenshot of highlighted Project settings button." src="./media/devops-service-hooks.png" />
 
 2. 	Create a subscription by running the wizard.
 
-    ![Click the link to run the subscription wizard](./media/devops-create-subscription.png)
+    ![Screenshot of highlighted button, Create subscription.](./media/devops-create-subscription.png)
  
 3.	Select the service you want to integrate with.
 
@@ -69,13 +69,13 @@ look at the information on the service that you're interested in.
 	> [!NOTE]
     > The list of available actions may be limited based on the event type you selected. 
 
-    :::image type="content" source="./media/Trello_wizard_Action.png" alt-text="Select an action to perform on the target service":::  
+    :::image type="content" source="./media/Trello_wizard_Action.png" alt-text="Select an action for the target service":::  
 
 6.	To confirm the settings are correct, test the subscription and then finish the wizard.
 
-    :::image type="content" source="./media/test1.png" alt-text="Test notification 1":::  
+    :::image type="content" source="./media/test1.png" alt-text="Test notification 1 for Azure DevOps Server 2019, 2020, and Azure DevOps Services":::  
 	
-    :::image type="content" source="./media/test2.png" alt-text="Test notification 2":::  
+    :::image type="content" source="./media/test2.png" alt-text="Test notification 2 for Azure DevOps Server 2019, 2020, and Azure DevOps Services":::  
  
 ::: moniker-end
 
@@ -83,11 +83,11 @@ look at the information on the service that you're interested in.
 
 1.	Open the admin page for a project in web access.
 
-    :::image type="content" source="./media/openadmin.png" alt-text="Open the admin page"::: 
+    :::image type="content" source="./media/openadmin.png" alt-text="Screenshot of the admin page."::: 
 
 2. 	Create a subscription by running the wizard.
 
-    :::image type="content" source="./media/createfirst.png" alt-text="Click the link to run the subscription wizard"::: 
+    :::image type="content" source="./media/createfirst.png" alt-text="Screenshot of highlighted box, Create subscription, to select to run the subscription wizard."::: 
  
 3.	Select the service you want to integrate with.
 
@@ -95,7 +95,7 @@ look at the information on the service that you're interested in.
  
 4.	Select the event to trigger on and any filters (if applicable).
 
-    :::image type="content" source="./media/Trello_wizard_Event.png" alt-text="Select the event to trigger on and any filters":::  
+    :::image type="content" source="./media/Trello_wizard_Event.png" alt-text="Select the event to trigger on and select any desired filters":::  
  
 5.	Select an action to run on the target service. 
 
@@ -121,20 +121,7 @@ look at the information on the service that you're interested in.
 #### Q: What permissions do I need to set up a subscription?
 
 A: *Edit subscriptions* and *View subscriptions*. By default, only project administrators 
-have these permissions. To grant them to other users directly, use **tfssecurity.exe** 
-from the command line. For example:
-
-```
-tfssecurity /a+ /collection:https://dev.azure.com/fabrikam/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 ViewSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
-```
-
-and
-
-```
-tfssecurity /a+ /collection:https://dev.azure.com/fabrikam/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 EditSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
-```
-
-The GUID is the ID of the project. You can get it using the [Projects](/rest/api/vsts/) REST API.
+have these permissions. To grant them to other users directly, you can use the [command line tool](../organizations/security/manage-tokens-namespaces.md) or the [Security](/rest/api/azure/devops/security/) REST API. 
 
 #### Q: What are the security implications of granting *Edit subscriptions* and *View subscriptions* permissions?
 
@@ -187,6 +174,4 @@ A: Atlassian officially dropped support for HipChat. See more on that announceme
 
 * [Troubleshoot service hooks and FAQs](troubleshoot.md)
 * [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
-* [Billing information](../organizations/billing/index.md)
-
-
+* [Billing information](../organizations/billing/overview.md)

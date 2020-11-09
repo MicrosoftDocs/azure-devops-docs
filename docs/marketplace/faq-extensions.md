@@ -65,7 +65,7 @@ or organization Owner, and ask them to assign the extension to you.
 
 ### Q: How do I get other help or support for Azure subscriptions and billing?
 
-A: Check these [articles about Azure billing and subscriptions](https://azure.microsoft.com/documentation/articles/?tag=billing),
+A: Check these [articles about Azure billing and subscriptions](/azure/?tag=billing),
 the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/documentation/articles/billing-subscription-faq/),
 or try [Azure Support](https://azure.microsoft.com/support/options/).
 
@@ -82,7 +82,7 @@ or try [Azure Support](https://azure.microsoft.com/support/options/).
 A: You can't install extensions for TFS for one of the following reasons:
 
 * You must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md)
-with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./how-to/request-tfs-extensions.md) instead.
+with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
 
 * If you get an error that your extension is already installed or requested, check with your Project Collection Administrator and ask them to assign the extension to you.
 

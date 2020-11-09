@@ -5,7 +5,7 @@ title: Create a service hook with Jenkins
 description: Use Jenkins with your Azure DevOps Services organization
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
 monikerRange: '>= tfs-2017'
-ms.date: 07/27/2020
+ms.date: 10/01/2020
 ---
 
 # Create a service hook for Azure DevOps Services and TFS with Jenkins
@@ -44,29 +44,23 @@ The URL is in the form ```https://dev.azure.com/{orgName}/DefaultCollection/_git
 
 ::: moniker range=">= azure-devops-2019"
 
-1. If you haven't already, enable alternate credentials in your Azure DevOps Services profile.
-Be sure to set a secondary user name because you can't use your email account
-to connect Azure DevOps Services to Jenkins.
-
-   <img alt="Profile, credentials tab, alternative credentials enabled with a secondary user name" src="./media/jenkins/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
-
 1. Go to your project Service Hooks page: 
 
     `https://{orgName}/{project_name}/_settings/serviceHooks`
 
-    ![Project administration page](./media/add-devops-service-hook.png)
+    ![Screenshot of project administration page, Azure DevOps Server 2019 and on.](./media/add-devops-service-hook.png)
 
     Select **Create Subscription**.
 
-1. Add Jenkins.
+2. Add Jenkins.
 
    <img alt="Select target service dialog box, Jenkins selected" src="./media/jenkins/target-service.png" style="border: 1px solid #CCCCCC" />
 
-1. Pick the event from Azure DevOps Services that you want to trigger a Jenkins build.
+3. Pick the event from Azure DevOps Services that you want to trigger a Jenkins build.
 
    <img alt="Configure event dialog box" src="./media/jenkins/configure-event.png" style="border: 1px solid #CCCCCC" />
 
-1. Configure the action to take in Jenkins.
+4. Configure the action to take in Jenkins.
 
    <img alt="New service hook subscription dialog box" src="./media/jenkins/subscription.png" style="border: 1px solid #CCCCCC" />
 
@@ -74,29 +68,23 @@ to connect Azure DevOps Services to Jenkins.
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-1. If you haven't already, enable alternate credentials in your Azure DevOps Services profile.
-Be sure to set a secondary user name because you can't use your email account
-to connect Azure DevOps Services to Jenkins.
-
-   <img alt="Profile, credentials tab, alternative credentials enabled with a secondary user name" src="./media/jenkins/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
-
 1. Go to your project Service Hooks page: 
 
     `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-    ![Project administration page](./media/add-service-hook.png)
+    ![Screenshot of project administration page, TFS.](./media/add-service-hook.png)
 
     Select **Create Subscription**.
 
-1. Add Jenkins.
+2. Add Jenkins.
 
    <img alt="Select target service dialog box, Jenkins selected" src="./media/jenkins/target-service.png" style="border: 1px solid #CCCCCC" />
 
-1. Pick the event from Azure DevOps Services that you want to trigger a Jenkins build.
+3. Pick the event from Azure DevOps Services that you want to trigger a Jenkins build.
 
    <img alt="Configure event dialog box" src="./media/jenkins/configure-event.png" style="border: 1px solid #CCCCCC" />
 
-1. Configure the action to take in Jenkins.
+4. Configure the action to take in Jenkins.
 
    <img alt="New service hook subscription dialog box" src="./media/jenkins/subscription.png" style="border: 1px solid #CCCCCC" />
 

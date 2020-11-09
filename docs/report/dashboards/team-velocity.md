@@ -204,7 +204,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 	![Open Boards, Backlogs, for a team](../../boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another team](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -269,7 +269,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 ::: moniker range=">= azure-devops-2020" 
 
-- If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+- If you haven't yet [added the Velocity widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
 
 ::: moniker-end
 
@@ -277,7 +277,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now.    
 
-1. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+1. If you haven't yet [added the Velocity widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
 
 ::: moniker-end
 

@@ -48,7 +48,7 @@ You add query folders from the **Boards>Queries>All** page.
 
 2. Enter the name for the folder in the New folder dialog. If you want to change the location of the folder, select it from the Folder drop down menu.  
 
-	<img src="media/organize-queries/new-folder-dialog.png" alt="Open Actions menu, choose New folder" style="border: 2px solid #C3C3C3;" />
+	<img src="media/organize-queries/new-folder-dialog.png" alt="Enter the name and location of the folder." style="border: 2px solid #C3C3C3;" />
 
 3. To move items into a folder, drag-and-drop a query onto the folder. 
 

@@ -101,7 +101,7 @@ While the workflow states differ for different work item types, they usually fol
 </ul>
 </td>
 <td>
-<img src="./guidance/media/ALM_PT_Agile_WF_UserStory.png" alt="Product backlog item workflow, Scrum process"/><br/></td>
+<img src="./guidance/media/ALM_PT_Agile_WF_UserStory.png" alt="Work flow states for the Agile process user story."/><br/></td>
 </tr>
 </tbody>
 </table>

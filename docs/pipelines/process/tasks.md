@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.date: 08/20/2020
+ms.date: 09/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -80,6 +80,9 @@ will automatically use the new version. However, if a new major version is relea
 (for example 2.0), your build or release will continue to use the major version you specified
 until you edit the pipeline and manually change to the new major version.
 The build or release log will include an alert that a new major version is available.
+
+You can set which minor version gets used by specifying the full version number of a task after the `@` sign (example: `GoTool@0.3.1`). You can only use task versions that exist for your [organization](../../organizations/accounts/organization-management.md). 
+
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -299,7 +302,7 @@ NodeVersionSpec
 
 Add these tasks:
 
-![icon](../tasks/tool/media/node.png) Tool: Node.js Installer
+![node js installer](../tasks/tool/media/node.png) Tool: Node.js Installer
 
 * Version Spec: 
 
@@ -307,7 +310,7 @@ Add these tasks:
   $(NodeVersionSpec)
   ```
 
-![icon](../tasks/utility/media/command-line.png) Utility: Command Line
+![CLI](../tasks/utility/media/command-line.png) Utility: Command Line
 
 * Script (if you're running on a Windows agent)
   ```
@@ -336,6 +339,16 @@ Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Instal
 ### Tool installer tasks
 
 For a list of our tool installer tasks, see [Tool installer tasks](../tasks/index.md#tool).
+
+::: moniker range=">= azure-devops-2020"
+
+### Disabling in-box and Marketplace tasks
+
+On the organization settings page, you can disable Marketplace tasks, in-box tasks, or both.
+Disabling Marketplace tasks can help [increase security](../security/misc.md) of your pipelines.
+If you disable both in-box and Marketplace tasks, only tasks you install using [`tfx`](https://www.npmjs.com/package/tfx-cli) will be available.
+
+::: moniker-end
 
 ## Related articles
 

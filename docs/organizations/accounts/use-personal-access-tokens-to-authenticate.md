@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-A personal access token (PAT) is used as an alternate password to authenticate into Azure DevOps. In this article, learn how to create, use, modify, and revoke PATs for Azure DevOps.
+A personal access token (PAT) is used as an alternate password to authenticate into Azure DevOps. Learn how to create, use, modify, and revoke PATs for Azure DevOps.
 
 If you're working within Microsoft tools, then your Microsoft account (MSA) or Azure Active Directory (Azure AD) is an acceptable and well-supported approach. But, if you're working with 3rd party tools that don't support Microsoft or Azure AD accounts – or you don't want to provide your primary credentials to the tool – you can make use of PATs to limit your risk. 
 

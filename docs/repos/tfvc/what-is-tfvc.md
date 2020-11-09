@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # What is Team Foundation Version Control
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. 
 Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
@@ -106,7 +106,7 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
   Install a bit of software to create a build server, and then fill in a few fields to create a Continuous integration (CI) or nightly build process that enables you to leverage the power, convenience, scalability, and reliability of an automated build system to build your app.
 
-- [Naming restrictions in Team Foundation](https://msdn.microsoft.com/library/aa980550)     
+- [Naming restrictions in Team Foundation](../../organizations/settings/naming-restrictions.md)     
 
   Provides information about naming syntax, conventions, and limitations.
 
@@ -121,6 +121,4 @@ We are not currently republishing the following sections. However, you can read 
 ## Related articles 
 
 - [What is version control?](/azure/devops/learn/git/what-is-version-control)  
-- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)  
-
-
+- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)

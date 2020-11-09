@@ -18,7 +18,7 @@ To add new features and capabilities to your Azure DevOps Server or Team Foundat
 install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
 > [!TIP]
-> To learn more about building your own extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
+> To learn more about building your own extensions, see [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) extensions.
 
 ## Prerequisites
 
@@ -123,7 +123,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
    <img alt="View" src="media/get-tfs-extensions/standalone/marketplace-find-extension.png" style="border: 1px solid #CCCCCC" />    
 
-   <img alt="View" src="media/get-tfs-extensions/standalone/marketplace-find-extension2.png" style="border: 1px solid #CCCCCC" />   
+   <img alt="Find the extension you want to install." src="media/get-tfs-extensions/standalone/marketplace-find-extension2.png" style="border: 1px solid #CCCCCC" />   
 
 3. Download and save your extension.
 
@@ -167,7 +167,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 3. Manage your extensions.
 
-   <img alt="Manage extensions" src="./media/get-tfs-extensions/standalone/manage-extensions.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Manage your extensions" src="./media/get-tfs-extensions/standalone/manage-extensions.png" style="border: 1px solid #CCCCCC" />
 
 4. Upload the extension that you downloaded.
 
@@ -203,11 +203,11 @@ In this case, you can manage extensions in disconnected TFS by following the ste
 
 1. Hover over the shopping bag icon and select **Manage extensions**
 
-   ![Manage extensions](./media/get-tfs-extensions/standalone/manage-extensions.png)
+   ![Select Manage extensions.](./media/get-tfs-extensions/standalone/manage-extensions.png)
 
 2. Once on the Extensions page, select **Browse local extensions**
 
-   ![Browse local extensions](./media/get-tfs-extensions/standalone/browse-local-extensions.png)
+   ![On the Extensions page, Browse local extensions](./media/get-tfs-extensions/standalone/browse-local-extensions.png)
 
 3. Scroll down until you see the Plan and track category, which includes **Delivery Plans**. Select **Delivery Plans**.
 
@@ -247,7 +247,7 @@ In this case, you can manage extensions in disconnected TFS by following the ste
 
 5. Select the project collection where you want to install this extension and choose **Install**.
 
-   ![Select project collection](media/get-devops-extensions/install-devops-extension-06.png)
+   ![Select project collection and choose Install.](media/get-devops-extensions/install-devops-extension-06.png)
 
 6. After installation is complete, go to the project collection or return to the Marketplace to find other extensions. 
 
@@ -266,7 +266,7 @@ Users can install these extensions without requiring an external connection to M
 
 1. Open the extensions menu and choose **Manage Extensions**.
 
-   ![Manage extensions](media/get-devops-extensions/install-devops-extension-13.png)
+   ![On the extensions menu, choose Manage extensions.](media/get-devops-extensions/install-devops-extension-13.png)
 
 2. In the Extensions page, choose **Browse local extensions**
 
@@ -278,7 +278,7 @@ Users can install these extensions without requiring an external connection to M
 
 4. Select the project collection where you want to install this extension and choose **Install**.
 
-   ![Select project collection](media/get-devops-extensions/install-devops-extension-06.png)
+   ![Select the project collection where you want to install this extension and choose Install.](media/get-devops-extensions/install-devops-extension-06.png)
 
 5. After installation is complete, go to the project collection or return to the Marketplace to find other extensions. 
 
@@ -306,7 +306,7 @@ Use the **Extensions** page to manage installed extensions.
 
 1. Open the extensions menu and choose **Manage Extensions**.
 
-   ![Manage extensions](media/get-devops-extensions/install-devops-extension-13.png)
+   ![Open the extensions menu and choose Manage extensions.](media/get-devops-extensions/install-devops-extension-13.png)
 
 2. Open the **Requested** tab, review requests, and approve or reject them, as appropriate.
 
