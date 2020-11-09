@@ -54,6 +54,7 @@ Errors that may occur when the system attempts to create the service connection 
 * [Failed to assign contributor role](#contributorrole)
 * [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
 * [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
+* [Failed to obtain the Json Web Token (JWT)](#failedToObtainJWT)
 
 <a name="privileges"></a>
 
@@ -189,6 +190,22 @@ An issue that often arises with automatically created service principals is that
 1. Click "Verify" on the service connection page. 
 
 1. Click "Save". The client secret for that service principal has now been renewed for 2 years.
+
+<a name="failedToObtainJWT"></a>
+
+### Failed to obtain the Json Web Token (JWT) using service principal client ID
+
+This issue occurs when trying to verify a service connection that has had a secret expired. To resolve this issue please do the below:
+
+1. Navigate to the ARM service connection in question
+
+1. Make a change to the service connection, the easiest and recommended way would be to add a description.
+
+1. Save the service connection (Note: save, do not try to verify).
+
+1. Exit out of the service connection, refresh the service connections page.
+
+1. Edit the service connection again, click "Verify". Save the service connection.
 
 ## What authentication mechanisms are supported? How do Managed Identities work?
 
