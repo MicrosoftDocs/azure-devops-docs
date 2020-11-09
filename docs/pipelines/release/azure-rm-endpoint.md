@@ -54,7 +54,7 @@ Errors that may occur when the system attempts to create the service connection 
 * [Failed to assign contributor role](#contributorrole)
 * [Some subscriptions are missing from the subscription drop down menu](#missingSubscriptions)
 * [Automatically created service principal secret has expired](#autoCreatedSecretExpiration)
-* [Failed to obtain the Json Web Token (JWT)](#failedToObtainJWT)
+* [Failed to obtain the JSON Web Token (JWT)](#failedToObtainJWT)
 
 <a name="privileges"></a>
 
@@ -181,31 +181,41 @@ To fix this issue you will need to modify the supported account types and who ca
 
 ### Automatically created service principal client secret is expired
 
-An issue that often arises with automatically created service principals is that the service principal's token expires and needs to be renewed. If you run into issues refreshing the token, check out [our other troubleshooting resolutions](#troubleshoot). Users can renew the token for automatically created service principals by following these steps:
+An issue that often arises with service principals that are automatically created is that the service principal's token expires and needs to be renewed. If you run into issues with refreshing the token, check out [our other troubleshooting resolutions](#troubleshoot). 
 
-1. Navigate to the ARM service connection that was created through the "Automatic" method.
+To renew the token for an automatically created service principal:
 
-1. Click "Edit" in the top right of the page.
+1. Go to the Azure Resource Manager service connection that was created by using the Automatic method.
 
-1. Click "Verify" on the service connection page. 
+1. In the upper-right corner, click **Edit**.
 
-1. Click "Save". The client secret for that service principal has now been renewed for 2 years.
+1. Click **Verify** on the service connection page. 
+
+1. Click **Save**. The client secret for that service principal has now been renewed for two years.
 
 <a name="failedToObtainJWT"></a>
 
-### Failed to obtain the Json Web Token (JWT) using service principal client ID
+### Failed to obtain the JSON Web Token (JWT) using service principal client ID
 
-This issue occurs when trying to verify a service connection that has had a secret expired. To resolve this issue please do the below:
+This issue occurs when you try to verify a service connection that has an expired secret.
 
-1. Navigate to the ARM service connection in question
+To resolve this issue:
 
-1. Make a change to the service connection, the easiest and recommended way would be to add a description.
+1. Go to the Azure Resource Manager service connection you want to update.
 
-1. Save the service connection (Note: save, do not try to verify).
+1. Make a change to the service connection. The easiest and recommended change would be to add a description.
 
-1. Exit out of the service connection, refresh the service connections page.
+1. Save the service connection.
+   > [!NOTE]
+   > Select **Save**. Don't try to verify at this step.
 
-1. Edit the service connection again, click "Verify". Save the service connection.
+1. Exit the service connection, and then refresh the service connections page.
+
+1. Edit the service connection again.
+
+1. Click **Verify**.
+
+1. Save the service connection.
 
 ## What authentication mechanisms are supported? How do Managed Identities work?
 
