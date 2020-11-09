@@ -62,7 +62,8 @@ Azure Artifacts is installed by default for TFS 2017 customers. Upgrade to TFS 2
 
 1. From any collection in TFS, hover over the settings menu and select the **Users** page. Then, select **Azure Artifacts**.
 
-   ![Users page in TFS](media/users-hub-tfs.png)
+   > [!div class="mx-imgBorder"]
+   > ![Users page in TFS](media/users-hub-tfs.png)
 
 2. Select **Assign**, enter the user to assign licenses, and then select **Ok.**
 
@@ -87,16 +88,18 @@ To see your storage bill for Azure Artifacts:
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
  
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**. 
- 
-   ![Open Organization settings](../media/settings/open-admin-settings-vert.png) 
+   > [!div class="mx-imgBorder"]
+   > ![Open Organization settings](../media/settings/open-admin-settings-vert.png) 
  
 3. Select **Billing**. 
  
-   ![Select Billing from Organization settings](../organizations/billing/media/shared/select-billing-organization-settings.png)
+   > [!div class="mx-imgBorder"]
+   > ![Select Billing from Organization settings](../organizations/billing/media/shared/select-billing-organization-settings.png)
  
 4. Find Artifacts and see your current billed usage from Azure Artifacts, or review a breakdown of the different types of storage your organization is currently using. See the [FAQs](#faqs) further in this article for information on which artifacts count towards your storage total. 
 
-   ![View storage for Azure Artifacts](media/azure-artifacts-view-storage-used.png)
+   > [!div class="mx-imgBorder"]
+   > ![View storage for Azure Artifacts](media/azure-artifacts-view-storage-used.png)
 
 > [!NOTE]
 > Based on community feedback, we're working on more granular drilldowns and views into your artifact storage. More information to come. 
