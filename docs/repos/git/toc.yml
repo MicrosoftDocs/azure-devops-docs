@@ -2,10 +2,12 @@
   href: ./index.yml
 - name: Get started with Git
   items:
-  - name: Code with Git
-    href: ../get-started/code-with-git.md
   - name: Commit, share, and sync your code
     href: gitquickstart.md
+  - name: Code with Git
+    href: ../../user-guide/code-with-git.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  - name: Git preferences and settings
+    href: git-config.md
   - name: Create a new repo
     href: creatingrepo.md
   - name: Clone an existing repo
@@ -24,12 +26,10 @@
     href: use-ssh-keys-to-authenticate.md
   - name: Authenticate with the Git Credential Manager
     href: set-up-credential-managers.md
-- name: Key concepts and settings
+- name: Key concepts  
   items:
   - name: Git workflow
     href: gitworkflow.md
-  - name: Git preferences and settings
-    href: git-config.md
   - name: Ignore files
     href: ignore-files.md
   - name: Manage large files
