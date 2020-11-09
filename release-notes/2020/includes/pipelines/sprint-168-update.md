@@ -25,7 +25,7 @@ This feature will be on by default for new projects and organizations. For exist
     
 ### Getting details at runtime about multiple repositories
 
-When a pipeline is running, Azure Pipelines adds information about the repo, branch, and commit that triggered the run. Now that YAML pipelines support [checking out multiple repositories](https://docs.microsoft.com/azure/devops/release-notes/2019/sprint-161-update#checkout-multiple-repositories-in-azure-pipelines), you may also want to know the repo, branch, and commit that were checked out for other repositories. This data is available via a runtime expression, which now you can map into a variable. For example:<pre><code><div>resources:</div><div>  repositories:</div><div>  - repository: other</div><div>    type: git</div><div>    name: MyProject/OtherTools variables:</div><div>  tools.ref: $[ resources.repositories['other'].ref ]<br></div><div><br></div><div>steps:</div><div>- checkout: self</div><div>- checkout: other<br>- bash: echo &quot;Tools version: $TOOLS_REF&quot;<br></div></code></pre>
+When a pipeline is running, Azure Pipelines adds information about the repo, branch, and commit that triggered the run. Now that YAML pipelines support [checking out multiple repositories](https://docs.microsoft.com/azure/devops/release-notes/2019/sprint-161-update#checkout-multiple-repositories-in-azure-pipelines), you may also want to know the repo, branch, and commit that were checked out for other repositories. This data is available via a runtime expression, which now you can map into a variable. For example:<pre><code><div>resources:</div><div>  repositories:</div><div>  - repository: other</div><div>    type: git</div><div>    name: MyProject/OtherTools</div><div>variables:</div><div>  tools.ref: $[ resources.repositories['other'].ref ]<br></div><div><br></div><div>steps:</div><div>- checkout: self</div><div>- checkout: other<br>- bash: echo &quot;Tools version: $TOOLS_REF&quot;<br></div></code></pre>
 
     
 ### Multi stage pipelines GA
@@ -36,7 +36,7 @@ You can navigate to the new experience by selecting **Pipelines** -&gt; **Pipeli
 
 To learn more about the multi-stage pipelines user experience, see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops).
 
-![img](../../media/168-pipelines-2-0.png)
+![Multi stage pipelines.](../../media/168-pipelines-2-0.png)
 
     
 ### Configure Deployment Strategies from Azure portal
@@ -45,4 +45,4 @@ With this capability, we have made it easier for you to configure pipelines that
 
 For more details, check out our documentation on [configuring Deployment Strategies](https://aka.ms/AA7jlh8). 
 
-![img](../../media/168-pipelines-4-0.png)  
+![Configure Deployment Strategies from Azure portal.](../../media/168-pipelines-4-0.png)  

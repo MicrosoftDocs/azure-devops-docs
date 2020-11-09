@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 08/04/2020
+ms.date: 10/29/2020
 ---
 
 # Logging commands
@@ -513,7 +513,9 @@ Add a tag for current build.
 #### Usage
 
 Update the release name for the running release.
-Note: this is not supported in Azure DevOps Server or TFS.
+
+> [!NOTE]
+> Supported in Azure DevOps and Azure DevOps Server beginning in version 2020.
 
 #### Example
 

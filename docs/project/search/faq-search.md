@@ -22,7 +22,7 @@ A:
    Navigate to a project and check if the search box is displayed at the top right. 
 
 2. If the search box is not shown, verify that the extension is installed for the collection. 
-   If not, [install](administration.md#install-tfs) or [configure](administration.md#config-ts-azuredevops) the extension.
+   If not, [install](administration.md#config-tfs) or [configure](administration.md#config-ts-azuredevops) the extension.
 
 <a name="no-results-install"></a>
 

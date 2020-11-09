@@ -14,7 +14,7 @@ ms.date: 11/12/2019
 
 [!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
 
-Once your extension is available in the [Visual Studio Marketplace](/azure/devops/extend/extension-report) you can use the **Reports** feature. With this feature, you can track and analyze how the extension is performing and take required actions. 
+Once your extension is available in the [Visual Studio Marketplace]() you can use the **Reports** feature. With this feature, you can track and analyze how the extension is performing and take required actions. 
 To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or select the **Reports** link on the extension details page.
 
 ## Acquisition 
@@ -85,5 +85,4 @@ For more information and guidance on communication with customers, see  the [Mar
 
 * **Page views**: total number of extension detail page views. Repeated views are counted.
 * **Azure DevOps installs**: total number of organizations the extension is installed in. Repeated installs on the same organization are counted. 
-* **TFS installs**: total number of TFS connected accounts the extension is installed in. Repeated installs on the same organization are counted. TFS disconnected server data isn't available.  
-
+* **TFS installs**: total number of TFS connected accounts the extension is installed in. Repeated installs on the same organization are counted. TFS disconnected server data isn't available.

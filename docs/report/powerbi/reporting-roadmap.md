@@ -57,15 +57,15 @@ Since [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/) wa
 
 <!--- ![TFS Data warehouse architecture conceptual diagram](../sql-reports/media/tfs_datawarearch_r.png)  -->
 
-While the configuration is somewhat complex, it provides a powerful solution. You can create custom reports by writing [customized SSRS reports](../sql-reports/create-and-manage-reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/to]c.json). You can also create reports [using Excel](../create-status-and-trend-excel-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), and share them on SharePoint once you've [configured SharePoint to host Excel Charts](../sharepoint-dashboards/configure-sharepoint-tfs-2017-earlier.md).
+While the configuration is somewhat complex, it provides a powerful solution. You can create custom reports by writing [customized SSRS reports](../sql-reports/create-and-manage-reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/to]c.json). You can also create reports [using Excel](../create-status-and-trend-excel-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), and share them on SharePoint once you've [configured SharePoint to host Excel Charts](/previous-versions/azure/devops/report/sharepoint-dashboards/configure-sharepoint-tfs-2017-earlier).
 
 We have no plans to bring a cloud version of our SQL Server Reporting story to Azure DevOps Services.
 
 ## Future of SQL Server Reporting
 
-We currently support SQL Server Reporting through TFS 2018, and will continue to support it in Azure DevOps Server 2019.  
+We currently support SQL Server Reporting through TFS 2018, and will continue to support it in Azure DevOps Server 2019 and 2020.  
 
-We will continue to support SQL Server Reporting until Analytics can replace its functionality. After that, we will likely support both SQL Server Reporting and Analytics for one additional major Azure DevOps Server release. This plan allows customers time to convert their reports to Analytics.
+Azure DevOps Server 2020 is the last version to support SQL Server Reporting. Future versions will support only Analytics. This plan allows customers time to convert their reports to Analytics.
  
 ## Roadmap timeline
 

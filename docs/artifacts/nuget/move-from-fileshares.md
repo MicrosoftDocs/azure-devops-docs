@@ -90,7 +90,7 @@ For this walkthrough, we'll assume a 1:1 mapping of feeds to SMB shares.
 <a name="create-your-feeds"></a>
 #### Create your feeds
 
-For each SMB share, create a feed using the [instructions here](../feeds/create-feed.md). In the create dialog:
+For each SMB share, create a feed using the [instructions here](../index.yml). In the create dialog:
 - Use the name of the SMB share folder as the **Feed name**
 - Leave the defaults for **Who can read** and **Who can contribute**
 
@@ -140,4 +140,4 @@ This is especially helpful for users of Visual Studio 2013 (or earlier) or NuGet
 <a name="integrate-with-your-builds"></a>
 #### Integrate with your builds
 
-Update your builds to ensure they have the right credentials to consume and publish packages in feeds. See the how-tos for [restoring](/azure/devops/pipelines/packages/nuget-restore) and [publishing](/azure/devops/pipelines/artifacts/nuget) packages in Team Build.
+Update your builds to ensure they have the right credentials to consume and publish packages in feeds. See the how-tos for [restoring](../../pipelines/packages/nuget-restore.md) and [publishing](../../pipelines/artifacts/nuget.md) packages in Team Build.

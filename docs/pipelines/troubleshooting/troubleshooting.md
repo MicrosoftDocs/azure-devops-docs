@@ -122,7 +122,7 @@ If your pipeline queues but never gets an agent, check the following items.
 > 
 > Learn more:
 > [How a parallel job is consumed by a pipeline](../licensing/concurrent-jobs.md),
-> [Approvals within a pipeline](../release/define-multistage-release-process.md#add-approvals-within-a-release-pipeline),
+> [Add Pre-deployment approvals](../release/define-multistage-release-process.md#add-approvals),
 > [Server jobs](../process/phases.md#server-jobs),
 > [Deployment groups](../release/deployment-groups/index.md)
 
@@ -428,7 +428,7 @@ Troubleshooting steps:
 
 #### Detect files and folders in use
 
-On Windows, tools like [Process Monitor](https://technet.microsoft.com/sysinternals/processmonitor.aspx) can be to capture a trace of file events under a specific directory. Or, for a snapshot in time, tools like [Process Explorer](https://technet.microsoft.com/sysinternals/processexplorer.aspx) or [Handle](https://technet.microsoft.com/sysinternals/handle.aspx) can be used.
+On Windows, tools like [Process Monitor](/sysinternals/downloads/procmon) can be to capture a trace of file events under a specific directory. Or, for a snapshot in time, tools like [Process Explorer](/sysinternals/downloads/process-explorer) or [Handle](/sysinternals/downloads/handle) can be used.
 
 #### Anti-virus exclusion
 

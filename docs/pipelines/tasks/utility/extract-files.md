@@ -71,6 +71,32 @@ None
 
 </table>
 
+## Examples
+
+### Extract all .zip files recursively
+
+This example will extract all .zip files recursively, including both root files and files from sub-folders
+
+```yaml
+steps:
+- task: ExtractFiles@1
+  inputs:
+    archiveFilePatterns: '**/*.zip'
+    cleanDestinationFolder: true
+```
+
+### Extract all .zip files from subfolder
+
+This example will extract `test/one.zip`, `test/two.zip` but will leave `test/nested/three.zip`.
+
+```yaml
+steps:
+- task: ExtractFiles@1
+  inputs:
+    archiveFilePatterns: 'test/*.zip'
+    cleanDestinationFolder: true
+```
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

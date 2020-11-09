@@ -140,7 +140,7 @@ Users with **Stakeholder** access can only add work items to the end of the back
 1. To add a work item, select :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false":::**New Work Item** and enter a title. Then press Enter or select **Add to top**. 
 
     > [!div class="mx-imgBorder"]
-    > ![Add a product backlog item](media/create-backlog/add-new-items-agile.png) 
+    > ![Add the work item.](media/create-backlog/add-new-items-agile.png) 
 
 	> [!NOTE]  
 	> If you have Stakeholder access, you can only add work items to the bottom of the backlog. 

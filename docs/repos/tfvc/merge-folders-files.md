@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Merge folders and files
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 For the various reasons described in [Branch folders and files](branch-folders-files.md), many software development teams work in a codebase that is forked into various branches. If you use branches, eventually your team must integrate the work that has been completed on different branches during certain phases of your project. For example, when you are ready to test a full version of your software, you will need the changes made on different feature team branches to be merged together.
 
@@ -165,16 +165,10 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
 
     2.  Use the Pending Changes window to check in the changes. For more information, see [Check in your work to the team's codebase](check-your-work-team-codebase.md).
 
-## See Also
 
-#### Other Resources
-
- [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md) 
-
- [Merge Command](merge-command.md) 
-
- [Merges Command](merges-command.md) 
-
- [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 
-
- [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md) 
+## Related articles
+-  [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md) 
+-  [Merge Command](merge-command.md) 
+-  [Merges Command](merges-command.md) 
+-  [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 
+-  [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md) 

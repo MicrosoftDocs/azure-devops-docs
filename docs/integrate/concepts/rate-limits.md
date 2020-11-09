@@ -1,7 +1,7 @@
 ---
 title: Resource limits & constraints  
-titleSuffix: Azure DevOps Services  
-description: Limits on the resources individual users can consume in Azure DevOps Services, and the number of work item tracking requests they can make 
+titleSuffix: Azure DevOps 
+description: Limits on the resources individual users can consume in Azure DevOps, and the number of work item tracking requests they can make 
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
@@ -17,9 +17,9 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [version-vsts-tfs-2018](../../includes/version-vsts-tfs-2018.md)]
 
-Azure DevOps Services, like many software-as-a-service solutions, uses multi-tenancy to reduce costs and improve performance.
+Azure DevOps, like many software-as-a-service solutions, uses multi-tenancy to reduce costs and improve performance.
 This design leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption.
-To combat these problems, Azure DevOps Services limits the resources individuals can consume and the number of 
+To combat these problems, Azure DevOps limits the resources individuals can consume and the number of 
 requests they can make to certain commands.
 When these limits are exceeded, future requests may be either delayed or blocked.
 
@@ -33,7 +33,7 @@ When an individual user's requests are blocked, responses with HTTP code 429 (to
 
 ## Current rate limits
 
-Azure DevOps Services currently has a global consumption limit.
+Azure DevOps currently has a global consumption limit.
 This limit delays requests from individual users beyond a threshold when shared resources are in danger of being overwhelmed.
 
 ### Global consumption limit
@@ -49,26 +49,26 @@ Delays range from a few milliseconds per request up to 30 seconds.
 Once consumption goes to zero or the resource is no longer overwhelmed, the delays will stop within five minutes.
 If consumption remains high, delays may continue indefinitely to protect the resource.
 
-#### Azure DevOps Services Throughput Units (TSTUs)  
+#### Azure DevOps throughput units (TSTUs)  
 
-Azure DevOps Services users consume many shared resources, and consumption depends on many factors. For example:
+Azure DevOps users consume many shared resources, and consumption depends on many factors. For example:
 
 - Uploading a large number of files to version control creates a large amount of load on databases and storage accounts.
 - Complex work item tracking queries create database load based on the number of work items they search through. 
 - Builds drive load by downloading files from version control, producing log output, and so on.
 - All operations consume CPU and memory on various parts of the service.
 
-To accommodate all of this, Azure DevOps Services resource consumption is expressed in abstract units called Azure DevOps Services Throughput Units, or TSTUs.  
+To accommodate all of this, Azure DevOps resource consumption is expressed in abstract units called Azure DevOps throughput units, or TSTUs.  
 
 TSTUs will eventually incorporate a blend of:
 
-- [Azure SQL Database DTUs](https://azure.microsoft.com/documentation/articles/sql-database-service-tiers) as a measure of database consumption   
+- [Azure SQL Database DTUs](/azure/azure-sql/database/purchasing-models) as a measure of database consumption   
 - Application tier and job agent CPU, memory, and I/O as a measure of compute consumption   
 - Azure Storage bandwidth as a measure of storage consumption.  
 
 For now, TSTUs are primarily focused on Azure SQL Database DTUs, since Azure SQL Databases are the shared resources most commonly overwhelmed by excessive consumption. 
 
-A single TSTU is the average load we expect a single normal user of Azure DevOps Services to generate per five minutes.
+A single TSTU is the average load we expect a single normal user of Azure DevOps to generate per five minutes.
 Normal users also generate spikes in load.
 These spikes will typically be 10 or fewer TSTUs per five minutes.
 Less frequently, spikes go as high as 100 TSTUs.
@@ -108,17 +108,17 @@ When a user's requests are delayed by a significant amount, that user gets an em
 
 ![Web UI warning banner](./media/rate-limits/web-ui-warning-banner.png)
 
-If the user doesn't have an email address, the notification email will be sent to the members of the project collection 
-administrators group.
+If the user doesn't have an email address, the notification email will be sent to the members of the Project Collection 
+Administrators group.
 The warning banner and the notification email both include links to the Usage page.
-The usage page helps you investigate requests that exceeded thresholds and/or were delayed.
+The Usage page helps you investigate requests that exceeded thresholds and/or were delayed.
 
 Request history on the Usage page is ordered by usage (TSTUs) descending by default.
 Usage is grouped by command into five minute time windows.
 The Count column gives the number of commands in the window.
 Other columns highlight total TSTU usage and delay time.
 
-For members of the project collection administrators group, this same page can be used to investigate the usage of other users.
+For members of the Project Collection Administrators group, this same page can be used to investigate the usage of other users.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -128,7 +128,7 @@ For members of the project collection administrators group, this same page can b
 
 ::: moniker range="<= tfs-2018"
 
-   <img alt="Usage page for collection administrators" src="./media/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Usage page for collection admins" src="./media/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 
