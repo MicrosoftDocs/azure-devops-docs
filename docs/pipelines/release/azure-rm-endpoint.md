@@ -179,7 +179,7 @@ To fix this issue you will need to modify the supported account types and who ca
 
 <a name="autoCreatedSecretExpiration"></a>
 
-### Automatically created service principal client secret is expired
+### Automatically created service principal client secret has expired
 
 An issue that often arises with service principals that are automatically created is that the service principal's token expires and needs to be renewed. If you run into issues with refreshing the token, check out [our other troubleshooting resolutions](#troubleshoot). 
 
@@ -195,7 +195,7 @@ To renew the token for an automatically created service principal:
 
 <a name="failedToObtainJWT"></a>
 
-### Failed to obtain the JSON Web Token (JWT) using service principal client ID
+### Failed to obtain the JWT by using the service principal client ID
 
 This issue occurs when you try to verify a service connection that has an expired secret.
 
@@ -203,9 +203,10 @@ To resolve this issue:
 
 1. Go to the Azure Resource Manager service connection you want to update.
 
-1. Make a change to the service connection. The easiest and recommended change would be to add a description.
+1. Make a change to the service connection. The easiest and recommended change is to add a description.
 
 1. Save the service connection.
+
    > [!NOTE]
    > Select **Save**. Don't try to verify at this step.
 
