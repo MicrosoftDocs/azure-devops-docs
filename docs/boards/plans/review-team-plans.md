@@ -19,10 +19,35 @@ ms.date: 11/11/2020
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
-Delivery plans is also interactive. You can change the assigned sprint of a work item by dragging it to a new sprint as shown in the following image. 
- 
+Interact with Delivery plans by moving cards, opening cards, expanding and collapsing teams, and more.  
+
+::: moniker range="azure-devops"
+
+
+#### [Plans (Preview)](#tab/plans-preview) 
+
 > [!div class="mx-imgBorder"]  
-> ![Moving a card to a different iteration](media/plans_move1.png)
+> ![Screenshot of delivery plans, preview](media/plans/intro-image-preview.png)
+
+#### [Plans](#tab/plans) 
+
+You can change the assigned sprint of a work item by dragging it to a new sprint as shown in the following image. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of moving a card to a different iteration](media/plans_move1.png)
+
+***
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+You can change the assigned sprint of a work item by dragging it to a new sprint as shown in the following image. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of moving a card to a different iteration](media/plans_move1.png)
+
+::: moniker-end
 
 Use Delivery Plans to ensure your teams are aligned  with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule.  
 
