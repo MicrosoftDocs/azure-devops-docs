@@ -2,10 +2,6 @@
   href: index.yml
 - name: "What is Azure Repos?"
   href: get-started/what-is-repos.md
-- name: What is version control?
-  href: /azure/devops/learn/git/what-is-version-control?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
-- name: What is Git?
-  href: /azure/devops/learn/git/what-is-git?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
 - name: Compare Git and TFVC
   href: tfvc/comparison-git-tfvc.md
 - name: Use Git and TFVC
