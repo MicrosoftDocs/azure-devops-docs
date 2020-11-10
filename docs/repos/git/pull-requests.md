@@ -126,6 +126,8 @@ Pick the branch you want to have reviewed and the branch you want to merge the c
 
 ### From Visual Studio
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
 Initiate pull requests directly from Visual Studio.
 
 1. [Connect to your Project from Visual Studio](../../organizations/projects/connect-to-projects.md).

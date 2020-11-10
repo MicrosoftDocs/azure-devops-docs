@@ -49,34 +49,12 @@ landingContent:
             url: ./share-your-code-in-git-vs-2017.md
           - text: Update code with fetch and pull
             url: ./pulling.md
-  - title: Create a Git repository in Azure Repos
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Create a repo from the web portal
-            url: ./create-new-repo.md
-          - text: Create a repo from the command line
-            url: ./share-your-code-in-git-cmdline.md
-          - text: Clone your repo in IntelliJ
-            url: ./create-repo-intellij.md
-          - text: Share your code using Xcode
-            url: ./share-your-code-in-git-xcode.md
-          - text: Share your code using Eclipse
-            url: ./share-your-code-in-git-eclipse.md
-  - title: Set up your Azure Repos Git repositories
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Improve code quality with branch policies
-            url: ./branch-policies.md
-          - text: Set up credential manager
-            url: ./set-up-credential-managers.md
-          - text: Use SSH key authentication
-            url: ./use-ssh-keys-to-authenticate.md
   - title: Work from different IDEs
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: New Git experience in Visual Studio (Preview)
+            url: /visualstudio/ide/git-with-visual-studio?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
           - text: Create repo - Visual Studio
             url: ./share-your-code-in-git-vs-2017.md
           - text: Create repo - IntelliJ
@@ -99,6 +77,16 @@ landingContent:
             url: ./history.md
           - text: Pull requests
             url: ./pull-requests-overview.md
+  - title: Set up your Azure Repos Git repositories
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Improve code quality with branch policies
+            url: ./branch-policies.md
+          - text: Set up credential manager
+            url: ./set-up-credential-managers.md
+          - text: Use SSH key authentication
+            url: ./use-ssh-keys-to-authenticate.md
   - title: Configure resources
     linkLists:
       - linkListType: how-to-guide
