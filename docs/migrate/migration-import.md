@@ -405,7 +405,7 @@ It's highly recommended that you restrict access to your VM to only IPs from Azu
 First, no matter what Azure DevOps Services region you import into, you must grant the following IP access to your collection database. 
 
 > [!NOTE]   
-> IP addresses listed below with x.x.x.0/23 indicates a range. Please allow the entire /23 range. For example, if you are importing into Central Unites States, allow the /23 range for 20.37.158.0. For IP addresses with x.x.x.0/24, all the /24 range.
+> IP addresses listed below with x.x.x.0/23 indicates a range. Please allow the entire /23 range. For example, if you are importing into Central Unites States, allow the /23 range for 20.37.158.0. For IP addresses with x.x.x.0/24, allow the /24 range.
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
@@ -584,7 +584,7 @@ CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
 > [!NOTE]   
-> Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#change-authentication-mode-with-ssms) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
+> Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#change-authentication-mode-with-ssms&preserve-view=true) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
 
 #### Configure the import specification file to target the VM
 
