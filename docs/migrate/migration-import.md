@@ -405,7 +405,7 @@ It's highly recommended that you restrict access to your VM to only IPs from Azu
 First, no matter what Azure DevOps Services region you import into, you must grant the following IP access to your collection database. 
 
 > [!NOTE]   
-> IP addresses listed below with x.x.x.0/23 indicates a range. Please allow the entire /23 range. For example, if you are importing into Central Unites States, allow the /23 range for 20.37.158.0. 
+> IP addresses listed below with x.x.x.0/23 indicates a range. Please allow the entire /23 range. For example, if you are importing into Central Unites States, allow the /23 range for 20.37.158.0. For IP addresses with x.x.x.0/24, allow the /24 range.
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
@@ -417,12 +417,12 @@ Next you will need to grant access to the Regional Identity Service. You only ne
 |------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 |    Regional Identity Service - Central United States       |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181, 52.158.209.56, 20.37.138.122, 20.37.158.0/23, 20.37.139.247, 20.37.158.5                                   |
 |    Regional Identity Service - West Europe                 |    20.67.123.240, 52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103, 23.97.221.25, 52.233.181.148, 52.149.110.153, 51.144.61.32, 52.236.147.236, 40.74.28.0/23       |
-|    Regional Identity Service - Australia East              |    13.75.145.145, 40.82.217.103, 20.188.213.113, 104.210.88.194, 40.81.62.114, 20.37.194.0/23                                    |
-|    Regional Identity Service - Brazil South                |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175, 191.235.226.0/23                    |
-|    Regional Identity Service - India South                 |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252, 20.41.194.0/23                                                                         |
-|    Regional Identity Service - Canada Central              |    52.237.19.6, 40.82.190.38, 52.228.82.0/23                                                                                               |
-|    Regional Identity Service - East Asia (Hong Kong)       |    52.175.28.40, 40.81.25.218, 13.94.26.58, 20.189.107.0/23
-|    Regional Identity Service - UK South                    |    40.81.159.67, 51.104.26.0/23                                                             |
+|    Regional Identity Service - Australia East              |    13.75.145.145, 40.82.217.103, 20.188.213.113, 104.210.88.194, 40.81.62.114, 20.37.194.0/24                                    |
+|    Regional Identity Service - Brazil South                |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175, 191.235.226.0/24                    |
+|    Regional Identity Service - India South                 |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252, 20.41.194.0/24                                                                         |
+|    Regional Identity Service - Canada Central              |    52.237.19.6, 40.82.190.38, 52.228.82.0/243                                                                                               |
+|    Regional Identity Service - East Asia (Hong Kong)       |    52.175.28.40, 40.81.25.218, 13.94.26.58, 20.189.107.0/24
+|    Regional Identity Service - UK South                    |    40.81.159.67, 51.104.26.0/24                                                             |
 
 Next you will need to grant access to the data migration tool for Azure DevOps itself. You only need to grant an exception for the data migration tool instance in the region that you're importing into.  
 
@@ -584,7 +584,7 @@ CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
 > [!NOTE]   
-> Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#change-authentication-mode-with-ssms) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
+> Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#change-authentication-mode-with-ssms&preserve-view=true) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
 
 #### Configure the import specification file to target the VM
 
