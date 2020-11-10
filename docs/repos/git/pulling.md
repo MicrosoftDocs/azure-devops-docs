@@ -6,7 +6,7 @@ ms.assetid: b06b9f18-b76f-418c-93d0-f12d1f48f3c0
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 11/15/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Update code with fetch and pull
