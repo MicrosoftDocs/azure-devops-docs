@@ -6,7 +6,7 @@ ms.assetid: 2a51a33a-134b-4357-bcfc-540b3195682f
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Resolve merge conflicts

@@ -6,7 +6,7 @@ ms.assetid: 02cdccb4-373d-4bd0-8053-6432f859e495
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Undo changes

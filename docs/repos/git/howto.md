@@ -6,7 +6,7 @@ ms.assetid: b1262306-214c-4422-8eda-d03d05825241
 ms.technology: devops-code-git 
 ms.topic: reference
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 

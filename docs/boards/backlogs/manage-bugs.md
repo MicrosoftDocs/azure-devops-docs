@@ -8,7 +8,7 @@ ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 07/09/2020
+ms.date: 11/06/2020
 ---
 
 # Define, triage, and manage bugs
@@ -334,6 +334,11 @@ To track your bugs and integrate with other resources available to you, see thes
 - [Move, change type, or delete work items](remove-delete-work-items.md)
 - [Pre-populate fields using a template](work-item-template.md)
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
+
+### Marketplace extensions
+
+- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
+- [Bug Bash Pro](https://marketplace.visualstudio.com/items?itemName=mohitbagra.bugbashpro&ssr=false#overview)
 
 <a id="integrate"> </a>
 

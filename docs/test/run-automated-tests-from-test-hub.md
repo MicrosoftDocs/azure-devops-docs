@@ -119,7 +119,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    * If your tests need **input parameters** such as app URLs or database
      connection strings, select the relevant settings file from the
      build artifacts. You can use the **Publish build artifacts** tasks
-     in you build pipeline to publish the settings file in a drop
+     in your build pipeline to publish the settings file in a drop
      location if this file is not included in the artifacts.
      In the example shown below, the application URL is exposed in the
      run settings file, and is overridden to set it to a staging URL
@@ -127,7 +127,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
      ![Specifying the properties for the Visual Studio Test task](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-06.png)
 
-     For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md).
+     For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](../pipelines/tasks/test/vstest.md).
 
 7. Choose the **Agent job** item and verify that the deployment queue
    is set to the one containing the machines where you want to run the
@@ -258,7 +258,7 @@ running tests in scheduled workflow will find it easy to adapt; for
 example, by cloning an existing scheduled testing release pipeline.
 
 Another major benefit is the availability of a rich set of tasks in
-the task catalog that enable a range of activates to be performed before
+the task catalog that enable a range of activities to be performed before
 and after running tests. Examples include preparing and cleaning test data,
 creating and cleaning configuration files, and more.
 

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
 ms.date: 08/28/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # View and manage pull requests
