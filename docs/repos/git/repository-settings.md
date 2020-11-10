@@ -387,3 +387,10 @@ For branch-specific settings, you should look at [branch policies](branch-polici
 These include options like requiring a pull request, a successful build, or a code review.
 For user-specific settings, you probably want [permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository).
 Permissions allow you to control who can read, write, contribute to pull requests, and other specific actions.
+
+
+## Related articles
+
+- [Set branch policies](branch-policies.md)
+- [Default Git permissions (Security)](../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)
+- [Set permissions (Security)](../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json)  

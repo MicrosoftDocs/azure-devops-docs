@@ -6,7 +6,7 @@ ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 08/24/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Ignore file changes with Git

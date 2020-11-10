@@ -6,7 +6,7 @@ ms.assetid: 6c388abd-1b63-4957-9814-9ec5f104fa5b
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 11/15/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Share code with push
