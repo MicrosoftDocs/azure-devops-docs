@@ -4,7 +4,7 @@ description: Learn how to use the Azure CLI to create and deploy a Java applicat
 ms.topic: tutorial
 ms.author: jukullam
 author: JuliaKM
-ms.date: 08/11/2020
+ms.date: 11/09/2020
 monikerRange: 'azure-devops'
 ---
 
