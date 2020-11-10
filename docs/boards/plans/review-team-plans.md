@@ -19,13 +19,15 @@ ms.date: 11/11/2020
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
-Interact with Delivery plans by moving cards, opening cards, expanding and collapsing teams, and more.  
+Use Delivery Plans to ensure your teams are aligned with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule, opening cards, expanding and collapsing teams, and more. 
+
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
 > A new version of Delivery Plans is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans**.  This new plans feature provides support for: 
-> - Work items can span iteration boundaries
+> - Epics can be added to a delivery plan
+> - Work item cards can span iteration boundaries
 > - Drag and drop borders show when a work item starts and ends
 > - Stakeholders can view plans
  
@@ -55,7 +57,6 @@ You can change the assigned sprint of a work item by dragging it to a new sprint
 
 ::: moniker-end
 
-Use Delivery Plans to ensure your teams are aligned  with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule.  
 
 In this article you'll learn:
 
@@ -79,20 +80,20 @@ In this article you'll learn:
 	- [Enable the New Delivery Plans feature](../../project/navigation/preview-features.md).  
 	- Be a member of a project.  Users granted **Stakeholder** access for a private project cannot add plans but can view plans. Users granted **Stakeholder** access for a public project can add and view plans.
 	- [Configured teams](../../organizations/settings/add-teams.md)
-	- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-	- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+	- [Defined area paths and assigned to a team](../../organizations/settings/set-area-paths.md)
+	- [Defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users.  
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
-- 
+ 
 #### [Plans](#tab/plans) 
 
 - In order to add and configure a Delivery Plan, you must have the following in place:  
-	- [Installed the Delivery Plans extension](#install-plans).  
+	- Installed the Delivery Plans extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).  
 	- Be a member of a project and granted [Basic access or greater access level](../../organizations/security/access-levels.md).  Users granted **Stakeholder** access for private projects cannot add nor view plans. Users granted **Stakeholder** access for a public project can add and view plans.
 	- [Configured teams](../../organizations/settings/add-teams.md)
-	- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-	- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+	- [Defined area paths and assigned to a team](../../organizations/settings/set-area-paths.md)
+	- [Defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
@@ -103,7 +104,7 @@ In this article you'll learn:
 ::: moniker range=">= tfs-2017 < azure-devops"  
 
 - In order to add and configure a Delivery Plan, you must have the following in place:  
-	- [Installed the Delivery Plans extension](#install-plans).  
+	- Installed the Delivery Plans extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).    
 	- Be a member of a project and granted [Basic access or greater access level](../../organizations/security/access-levels.md). Users granted **Stakeholder** access cannot add nor view plans.
 	- [Configured teams](../../organizations/settings/add-teams.md)
 	- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
@@ -146,14 +147,14 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 1. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot to Open Boards>Plans (Preview)](media/plans/open-plans-vert.png) 
+	> ![Screenshot to Open Boards>Plans (Preview)](media/plans/open-plans-preview.png) 
 
 1. To add a plan, choose **New Plan** . 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose New Plan button.](media/plans/add-plan-new-plan-button.png) 
 
-	All users have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions).  
+	All users have permissions to create a plan and manage the plans they create.   
 
 2. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 
@@ -234,9 +235,36 @@ When defining a plan, note the following:
 
 <a id="card-settings">  </a>
 
-## Edit a plan, add field criteria, customize cards, and add markers 
+## Edit a plan 
 
 Once you've defined a plan, you can further customize it. 
+
+::: moniker range="azure-devops"  
+
+#### [Plans (Preview)](#tab/plans-preview) 
+
+1. Choose the **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: to open **Plans settings** dialog. 
+
+2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
+   - Edit the teams you've selected and their backlog level  
+   - Set field criteria to further limit the work items that will appear on the plan 
+   - Add markers to show important upcoming events on your timeline 
+   - Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
+
+     Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
+
+     :::image type="content" source="media/plans/plan-settings-field-criteria.png" border="true" alt-text="Plan settings dialog, Field criteria page":::   
+
+3. To set a marker, open **Markers**, specify a date and select a color. 	
+
+     :::image type="content" source="media/review-team-plans-set-markers.png" border="true" alt-text="Screenshot to Open the Markers page, specify a date and select a color.":::   
+
+	Markers appear on the plan as shown: 
+
+     :::image type="content" source="media/review-team-plans-show-markers.png" border="true" alt-text="Screenshot to Plans, Markers appear on calendar slide.":::   
+
+#### [Plans](#tab/plans) 
+
 
 1. Choose the :::image type="icon" source="media/plans/gear-icon.png" border="false"::: gear icon to open the Settings dialog. 
 
@@ -258,15 +286,43 @@ Once you've defined a plan, you can further customize it.
 
 	<img src="media/review-team-plans-show-markers.png" alt="Plans, Markers appear on calendar slide" style="border: 2px solid #C3C3C3;" />
 
-## View the list of plans, open a plan  
+***
 
-Once you've defined a few plans, you'll see them listed from the Plans page under All, or the ones you've clicked a Favorite star under Favorites. You can see their title, description and their most recent creator/editor. 
+::: moniker-end
 
-Use the favorite's star to favorite a plan so that you can quickly return to that plan. You can also search for other plans in the project.
+::: moniker range="< azure-devops" 
+
+1. Choose the :::image type="icon" source="media/plans/gear-icon.png" border="false"::: gear icon to open the Settings dialog. 
+
+2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
+   - Edit the teams you've selected and their backlog level  
+   - Set field criteria to further limit the work items that will appear on the plan 
+   - Add markers to show important upcoming events on your timeline 
+   - Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
+
+     Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
+
+     <img src="media/review-team-plans-set-field-criteria.png" alt="Settings dialog, Fields page" style="border: 2px solid #C3C3C3;" />
+
+3. To set a marker, open the Markers page, specify a date and select a color. 	
+
+	<img src="media/review-team-plans-set-markers.png" alt="Open the Markers page, specify a date and select a color." style="border: 2px solid #C3C3C3;" />
+
+	Markers appear on the plan as shown: 
+
+	<img src="media/review-team-plans-show-markers.png" alt="Plans, Markers appear on calendar slide" style="border: 2px solid #C3C3C3;" />
+
+::: moniker-end
+
+## Open a plan  
+
+Once you've defined a few plans, you'll see them listed from the **Plans** page under **All**, or the ones you've favorited (**Add to favorites** :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false":::) under **Favorites**. You can see their title, description and their most recent creator/editor. 
+
+Use the favorite's star to favorite a plan so that you can quickly return to that plan. You can also search for other plans in the project. 
 
 To open a plan, simply choose the plan name.  
 
-## Interactive elements of plans, change the plan view  
+## Interact with a plan
  
 Each team's backlog specified in a Delivery Plan appears as a row within the plan view. When collapsed, a roll-up of the backlog items shows. When expanded, a card for each backlog item appears, organized by their assigned iteration. 
 
@@ -308,7 +364,7 @@ For example, here you can see the count of Features for Team 1 for the next 3 sp
 
 ### Minimize the fields displayed on cards  
 
-To quickly change the cards to only show their Title, enter the keyboard shortcut 't'. This will hide all other fields, as shown in the following image, the Assigned to field no longer appears. To persist this view, edit the [plan's settings for card fields](#card-settings).
+To quickly change the cards to only show their Title, enter the keyboard shortcut '**t**'. This will hide all other fields, as shown in the following image, the Assigned to field no longer appears. To persist this view, edit the [plan's settings for card fields](#card-settings).
 
 > [!div class="mx-imgBorder"]  
 > ![Cards showing the Title only](media/plans_view5.png)   
@@ -319,6 +375,10 @@ As changes occur to the schedule, you can update the iteration for a backlog ite
 
 > [!div class="mx-imgBorder"]  
 > ![Move a card to a different iteration](media/plans_move1.png)
+
+## Keyboard shortcuts
+
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]
 
 
 ## Related articles  
