@@ -258,7 +258,7 @@ A: Make sure that you handle the following conditions:
 
 ### Q: I want to debug my web app locally. Can I use localhost for the callback URL when I register my app?
 
-A: Yes. Azure DevOps Services now allows localhost in your callback URL. Ensure you use https://localhost as the beginning of your callback URL when you register your app.
+A: Yes. Azure DevOps Services now allows localhost in your callback URL. Ensure you use `https://localhost` as the beginning of your callback URL when you register your app.
 
 ### Q: I get an HTTP 400 error when I try to get an access token. What might be wrong?
 
