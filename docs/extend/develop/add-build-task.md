@@ -32,7 +32,7 @@ To create extensions for Azure DevOps, you need the following software and tools
 - A text editor. For many of the tutorials, we use **Visual Studio Code**, which provides intellisense and debugging support. Go to [code.visualstudio.com](https://code.visualstudio.com/) to download the latest version.
 - The [latest version](https://nodejs.org/en/download/) of Node.js.
   The production environment uses only [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
-- TypeScript Compiler 2.2.0 or greater. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
+- TypeScript Compiler 2.2.0 or greater, although we recommend version 4.0.2 or newer for tasks that use Node10. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
     <a name="cli"></a>
 - [Cross-platform CLI for Azure DevOps (tfx-cli)] to package your extensions.
      You can install **tfx-cli** by using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.
@@ -100,6 +100,16 @@ so that node_modules are built each time and don't need to be checked in.
 ```
 echo node_modules > .gitignore
 ```
+
+#### Choose typescript version
+
+Tasks can use typescript versions 2.3.4 or 4.0.2. You can install the chosen typescript version using this command:
+
+```
+npm install typescript@4.0.2 --save-dev
+```
+
+If you skip this step, typescript version 2.3.4 will be used by default.
 
 #### Create tsconfig.json compiler options
 

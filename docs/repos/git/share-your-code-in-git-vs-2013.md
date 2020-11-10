@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 toc: show
 ms.topic: quickstart
 ms.date: 08/29/2017
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 

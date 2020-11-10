@@ -6,7 +6,7 @@ ms.assetid: 7f6312b8-6c98-4f44-9b6e-eecbeafbbaea
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 

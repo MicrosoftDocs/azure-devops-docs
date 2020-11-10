@@ -6,7 +6,7 @@ ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 09/18/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Adopt a Git branching strategy
