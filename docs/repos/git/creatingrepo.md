@@ -41,6 +41,9 @@ Manage any folder with source code or Visual Studio solution in Git by creating 
 Later you can connect this Git repo to a remote Git repo to share your work with others. 
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
 ### Create a repo 
 
 * [Create a repo from a new solution](#from-a-new-solution)
