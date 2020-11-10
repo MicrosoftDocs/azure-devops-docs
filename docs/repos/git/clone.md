@@ -6,7 +6,7 @@ ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 11/15/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Clone an existing Git repo

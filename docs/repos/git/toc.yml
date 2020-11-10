@@ -4,12 +4,12 @@
   items:
   - name: Commit, share, and sync your code
     href: gitquickstart.md
-  - name: Code with Git
-    href: ../../user-guide/code-with-git.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  - name: Create repo - Web
+    href: create-new-repo.md
+  - name: Create repo - Visual Studio
+    href: share-your-code-in-git-vs-2017.md
   - name: Git preferences and settings
     href: git-config.md
-  - name: Create a new repo
-    href: creatingrepo.md
   - name: Clone an existing repo
     href: clone.md
   - name: Import repo - Web
@@ -42,12 +42,10 @@
     href: os-compatibility.md
 - name: Create & manage repos
   items:
-  - name: Create repo - Web
-    href: create-new-repo.md
+  - name: Create a new repo
+    href: creatingrepo.md
   - name: Create repo - CLI
     href: share-your-code-in-git-cmdline.md
-  - name: Create repo - Visual Studio
-    href: share-your-code-in-git-vs-2017.md
   - name: Create repo - IntelliJ
     href: create-repo-intellij.md
   - name: Create repo - Eclipse
@@ -66,7 +64,7 @@
       href: repo-rename.md
     - name: Find a file
       href: find-a-file.md
-    - name: Git and TFVC repos
+    - name: Add a Git or TFVC repo 
       href: team-projects.md
     - name: Move a repo to another project
       href: move-git-repos-between-team-projects.md
@@ -141,10 +139,10 @@
     href: pull-request-status.md
 - name: History
   items:
-  - name: History in Git
-    href: history.md
   - name: Review history
     href: review-history.md
+  - name: History in Git
+    href: history.md
   - name: Git log history simplification
     href: git-log-history-simplification.md
 - name: Cross-service operations
@@ -180,7 +178,7 @@
 - name: Reference
   items:
   - name: "Default Git permissions (Security)"
-    href: ../../organizations/security/default-git-permissions.md
+    href: ../../organizations/security/default-git-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
   - name: "Set permissions (Security)"
     href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
   - name: Frequently asked questions

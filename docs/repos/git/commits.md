@@ -6,7 +6,7 @@ ms.assetid: 223c0064-06ec-433e-8ec2-d73a5435cf23
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 11/12/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Save work with commits

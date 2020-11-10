@@ -2,4 +2,5 @@
   href: index.md 
 - name: Sign up and invite some teammates 
   href: sign-up-invite-teammates.md
-
+- name: Code with Git
+  href: ../../user-guide/code-with-git.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json

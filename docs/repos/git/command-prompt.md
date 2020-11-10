@@ -7,14 +7,12 @@ toc: show
 ms.technology: devops-code-git 
 ms.topic: reference
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
 #  Git command reference 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2**
-
-## Overview
 
 <a name="set_up"></a>
 <a name="pat"></a>
