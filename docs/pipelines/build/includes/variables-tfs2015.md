@@ -313,7 +313,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>Build.SourceVersionMessage</td>
-<td>The comment of the commit or changeset.
+<td>The comment of the commit or changeset. We truncate the message to the first line or 200 characters, whichever is shorter. 
 
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 

@@ -69,12 +69,13 @@ Clone a work item when you want to create another instance of it. This action op
     :::image type="content" source="media/copy/copy-work-item-s171.png" alt-text="Copy work item dialog":::
 
 	Optionally, check one or more of the boxes: 
-	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
-	- **Include existing attachments**: To include attachments in the copied work item
-	- **Include child work items**: To include existing links to child work items in the copied work item. This feature isn't recursive. Only those work items directly linked as children to the work item being copied are included.  
 
 	> [!NOTE]   
 	> The list is disabled when you copy the work item to a different project. 
+
+	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
+	- **Include existing attachments**: To include attachments in the copied work item
+	- **Include child work items**: To include existing links to child work items in the copied work item. This feature isn't recursive. Only those work items directly linked as children to the work item being copied are included.  
 
 1. In the work item form that opens, update other fields as needed. All work items start in the New state.   
 
@@ -91,6 +92,10 @@ Clone a work item when you want to create another instance of it. This action op
     :::image type="content" source="media/copy/copy-work-item-2020.png" alt-text="Copy work item dialog":::
 
 	Optionally, check one or more of the boxes: 
+
+	> [!NOTE]   
+	> The list is disabled when you copy the work item to a different project. 
+
 	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
 	- **Include existing attachments**: To include attachments in the copied work item.
 
@@ -103,10 +108,12 @@ Clone a work item when you want to create another instance of it. This action op
 ::: moniker range="tfs-2018"
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
     ![web portal, user story work item form, open context menu, click Create copy of work item](media/copy-work-item-copy-clone-ts.png) 
-
 1. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
     ![Copy work item dialog](media/copy-work-item-copy-clone-ts-dialogue.png)  
+
+	> [!NOTE]   
+	> The list is disabled when you copy the work item to a different project. 
 
 1. Choose **OK**.
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.author: vijayma
 author: vijayma
 ms.date: 08/28/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
-# Review code with pull requests
+# View and manage pull requests
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
@@ -22,7 +22,7 @@ Reviewers can step through the proposed changes, leave comments, and vote to app
 
 New to pull requests? Learn more about how to [get feedback with Git pull requests](/azure/devops/learn/git/git-pull-requests).
 
-## View and manage your pull requests
+## View your pull requests
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -48,7 +48,7 @@ New to pull requests? Learn more about how to [get feedback with Git pull reques
 
 Manage pull requests you own or are assigned to with the **Pull Requests** tab in the **Code** page on the web.
 
-![Viewing completed and abandoned pull requests in Azure Repos](media/repos-navigation/repos-code-pull-requests.png)
+![Viewing completed and abandoned pull requests in Azure Repos 1](media/repos-navigation/repos-code-pull-requests.png)
 
 ::: moniker-end 
 
@@ -58,7 +58,7 @@ Select **Active** to show all active pull requests for the current repo.
 
 Select **Completed** or **Abandoned** to bring up a history of closed pull requests.
 
-![Viewing completed and abandoned pull requests in Azure Repos](media/pull-requests/pr_status_widget.png)
+![Viewing completed and abandoned pull requests in Azure Repos 2](media/pull-requests/pr_status_widget.png)
 
 You can view all of your pull requests in your organization, across all projects, by choosing **My pull requests** from the **Projects** page.
 
@@ -344,7 +344,7 @@ Starting with Visual Studio 2017 Update 6, you can check out the source branch f
 Select **Files** to view the changes made to the source branch next to the target branch of the pull request.
 
 >[!NOTE]
->The size limit for files in the files view and the diff view is 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool.
+>When viewing the difference for a _single selected file_, there is a size limit of 5 MB for the file. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool. When viewing the difference for a _collection of files_ in the Files view, the size limit for each file is 0.5 MB for performance reasons.
 
 ![Pull request files](media/pull-requests/pull-request-files.png)
 

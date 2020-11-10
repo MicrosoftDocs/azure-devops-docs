@@ -117,7 +117,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="add-team-team-services" /> 
 
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open the **Project settings** page for the project.  
+1. From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.  
 
 	 ![Open project admin page](media/add-team/open-admin-context-tfs-2017.png) 
 
@@ -143,7 +143,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 	To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
-5. To assign a team as the default team, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for that team and select **Set team as project default**. 
+5. To assign a team as the default team, choose **Actions** :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: for that team and select **Set team as project default**. 
 
 ::: moniker-end
 
@@ -151,7 +151,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="add-team-tfs-2015" />
 
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open **Project Settings.**  
+1. From the web portal, choose Project Settings:::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: to open **Project Settings.**  
 
 	 <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Screenshot of Open project admin page" style="border: 2px solid #C3C3C3;" />
 

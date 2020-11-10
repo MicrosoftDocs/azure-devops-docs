@@ -8,11 +8,11 @@ ms.topic: tutorial
 ms.author: vijayma
 author: vijayma
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
-#  Create a pull request
+#  Create and complete a pull request
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 

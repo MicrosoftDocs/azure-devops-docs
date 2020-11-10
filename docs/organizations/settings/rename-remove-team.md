@@ -83,7 +83,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="add-team-team-services" /> 
 
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open the **Project settings** page for the project.  
+1. From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.  
 
 	![Open project administration page.](media/add-team/open-admin-context-tfs-2017.png) 
 
@@ -100,7 +100,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="add-team-tfs-2015" />
 
-1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open **Project Settings.**  
+1. From the web portal, choose **Project settings** :::image type="icon" source="../../media/icons/gear_icon.png" border="false":::.
 
 	![Open project administrator page, TFS.](../../media/settings/open-admin-page-tfs2015.png)  
 
@@ -270,7 +270,7 @@ az devops team update --team "Account Management" --name "Organization Managemen
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To delete a team, open **Project Settings > Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
+1. To delete a team, choose **Project Settings > Teams** > **&hellip;** for the team you want to delete, and select the **Delete** option.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings > Teams > Delete team](media/add-team/delete-team-vert.png)  
@@ -286,7 +286,7 @@ az devops team update --team "Account Management" --name "Organization Managemen
 
 ::: moniker range="<= tfs-2018"
 
-1. To delete a team, open **Project Settings>Work>Overview**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
+1. To delete a team, choose **Project Settings** > **Work** > **Overview** > **&hellip;** for the team you want to delete, and select the **Delete** option.   
 
 	![Web portal, admin context-project level, Delete team](media/add-team/multiple-teams-delete-team.png)
 
