@@ -28,7 +28,6 @@ Before you begin, you need:
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
 - The [Azure VM Image Builder DevOps task](https://marketplace.visualstudio.com/items?itemName=AzureImageBuilder.devOps-task-for-azure-image-builder) installed for your DevOps organization. 
 - A forked GitHub repo with the example java project. Fork the [pipelines-java repository](https://github.com/MicrosoftDocs/pipelines-java).
-- Packer deployment file 
 
 ## Set up your Java pipeline
 
@@ -58,43 +57,41 @@ Before you begin, you need:
 1. Update your pipeline to include the `CopyFiles@2` and `PublishBuildArtifacts@1` tasks. This will create an artifact that you can deploy to your virtual machine scale set.
 
 ```yaml
-trigger:
-- master
+  trigger: none
 
-pool:
-  vmImage: 'windows-latest'
+  pool:
+    vmImage: 'ubuntu-latest'
 
-steps:
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+  steps:
+  - task: Maven@1
+    displayName: 'Maven $(mavenPOMFile)'
+    inputs:
+      mavenPomFile: 'pom.xml'
+      testResultsFiles: '**/TEST*.xml'
 
-- task: CopyFiles@2
-  displayName: Copy Files
-  inputs:
-    SourceFolder: $(System.DefaultWorkingDirectory)
-    Contents: '**'
-    TargetFolder: $(Build.ArtifactStagingDirectory)   
+  - task: CopyFiles@2
+    displayName: 'Copy File to: $(TargetFolder)'
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)'
+      Contents: |
+      **/*.sh 
+      **/*.war
+      **/*jar-with-dependencies.jar
+      TargetFolder: '$(System.DefaultWorkingDirectory)/pipeline-artifacts/'
+      flattenFolders: true 
 ```
 
 ## Create a custom image and upload it to Azure
 
-You need a resource group, storage account, and shared image gallery for your custom image. 
+You'll need a resource group, storage account, and shared image gallery for your custom image. 
 
-1. Create a resource group with [az group create](/cli/azure/group#az-group-create). The following example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
+1. Create a resource group with [az group create](/cli/azure/group#az-group-create). This example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
 
 ```azurecli-interactive
 az group create --name myVMSSResourceGroup --location eastus2
 ```
 
-2. Next, create a new storage account. The following example creates a storage account named `vmssstorageaccount`.
+2. Create a new storage account. This example creates a storage account, `vmssstorageaccount`.
 
   ```azurecli-interactive
   az storage account create \
@@ -110,13 +107,13 @@ az group create --name myVMSSResourceGroup --location eastus2
   az sig create --resource-group myVMSSResourceGroup --gallery-name myVMSSGallery
   ```
 
-4. Create a new image gallery in the `myVMSSGallery` resource. Learn more about [working with images](https://docs.microsoft.com/azure/virtual-machines/windows/shared-images-portal). 
+4. Create a new image gallery in the `myVMSSGallery` resource. See [Create an Azure Shared Image Gallery using the portal](https://docs.microsoft.com/azure/virtual-machines/windows/shared-images-portal) to learn more about working with image galleries. 
 
   ```azurecli-interactive
   az sig create --resource-group myVMSSResourceGroup --gallery-name myVMSSGallery
   ```
 
-5. If you haven't already, create an image definition. Copy the `id` of the new image that looks like `/subscriptions/<SUBSCRIPTION ID>/resourceGroups/<RESOURCE GROUP>/providers/Microsoft.Compute/galleries/myVMSSGallery/images/MyImage`. 
+5. Create an image definition. Copy the `id` of the new image that looks like `/subscriptions/<SUBSCRIPTION ID>/resourceGroups/<RESOURCE GROUP>/providers/Microsoft.Compute/galleries/myVMSSGallery/images/MyImage`. 
 
   ```azurecli-interactive
   az sig image-definition create -g myVMSSResourceGroup --gallery-name myVMSSGallery --gallery-image-definition MyImage --publisher GreatPublisher --offer GreatOffer --sku GreatSku --os-type linux
@@ -137,7 +134,7 @@ az group create --name myVMSSResourceGroup --location eastus2
 
 To create a custom image, you can use the [Azure VM Image Builder DevOps Task](https://marketplace.visualstudio.com/items?itemName=AzureImageBuilder.devOps-task-for-azure-image-builder). 
 
-1. Add the `AzureImageBuilderTask@1` task at the bottom of your YAML file.  
+1. Add the `AzureImageBuilderTask@1` task to your YAML file.  
 
 ```yaml
 - task: AzureImageBuilderTask@1
@@ -163,37 +160,6 @@ To create a custom image, you can use the [Azure VM Image Builder DevOps Task](h
 
 2. Run the pipeline to generate your first image.
  
-## Create a virtual machine scale set
-
-1. Open the Azure VM Image Builder DevOps task and copy your `ManagedImageId`.   
-
-    :::image type="content" source="media/managed-image-vmss.png" alt-text="Managed image Id":::
-
-2. Create a virtual machine scale set with [az virtual machine scale set create](/cli/azure/vmss#az-vmss-create). The following example creates a scale set named `vmssScaleSet` and generates SSH keys if they do not exist:
-
-  ```azurecli-interactive
-  az vmss create -n vmssScaleSet -g myVMSSResourceGroup --image "MyImage"
-  ```
-
-It takes a few minutes to create and configure all the scale set resources and VMs. There are background tasks that continue to run after the Azure CLI returns you to the prompt. It may be another couple of minutes before you can access the app.
-
-### Allow web traffic
-A load balancer was created automatically as part of the virtual machine scale set. The load balancer distributes traffic across a set of defined VMs using load balancer rules. 
-
-To allow traffic to reach the web app, create a rule with [az network lb rule create](/cli/azure/network/lb/rule#az-network-lb-rule-create). The following example creates a rule named *myLoadBalancerRuleWeb*:
-
-```azurecli-interactive
-az network lb rule create \
-  --resource-group myVMSSResourceGroup \
-  --name myLoadBalancerRuleWeb \
-  --lb-name vmssScaleSetLB \
-  --backend-pool-name myScaleSetLBBEPool \
-  --backend-port 80 \
-  --frontend-ip-name loadBalancerFrontEnd \
-  --frontend-port 80 \
-  --protocol tcp
-```
-
 ## Deploy updates to the virtual machine scale set 
 
 Add an Azure CLI task to your pipeline to deploy updates to the scale set. Add the task at the end of the pipeline. 
@@ -202,10 +168,9 @@ Add an Azure CLI task to your pipeline to deploy updates to the scale set. Add t
 - task: AzureCLI@2
   inputs:
     azureSubscription: '`YOUR_SUBSCRIPTION_ID`' #Authorize and in the task editor
-    ScriptType: 'ps'
+    ScriptType: 'pscore'
     scriptLocation: 'inlineScript'
     Inline: 'az vmss update --resource-group myVMSSResourceGroup --name vmssScaleSet --set virtualMachineProfile.storageProfile.imageReference.id=/subscriptions/YOUR_SUBSCRIPTION_ID/myVMSSResourceGroup/providers/Microsoft.Compute/images/vmss-image-$(Build.BuildId)'
-    azurePowerShellVersion: 'LatestVersion'
 ```
 ## Clean up resources
 
