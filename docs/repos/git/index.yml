@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page
   ms.author: sdanie
   author: steved0x
-  ms.date: 09/30/2019 
+  ms.date: 11/10/2020 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -73,6 +73,18 @@ landingContent:
             url: ./set-up-credential-managers.md
           - text: Use SSH key authentication
             url: ./use-ssh-keys-to-authenticate.md
+  - title: Work from different IDEs
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create repo - Visual Studio
+            url: ./share-your-code-in-git-vs-2017.md
+          - text: Create repo - IntelliJ
+            url: ./create-repo-intellij.md
+          - text: Create repo - Eclipse
+            url: ./share-your-code-in-git-eclipse.md
+          - text: Create repo - Xcode
+            url: ./share-your-code-in-git-xcode.md
   - title: Key concepts
     linkLists:
       - linkListType: concept
@@ -83,7 +95,7 @@ landingContent:
             url: ./git-branching-guidance.md
           - text: Forks
             url: ./forks.md
-          - text: History in Git
+          - text: History 
             url: ./history.md
           - text: Pull requests
             url: ./pull-requests-overview.md
@@ -91,10 +103,14 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Configure repository settings
+            url: ./repository-settings.md
           - text: Manage Git branch policies
             url: ./branch-policies.md 
           - text: Manage repository permissions
             url: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json 
+          - text: Set branch permissions 
+            url: ./branch-permissions.md
   - title: Reference
     linkLists:
       - linkListType: reference
