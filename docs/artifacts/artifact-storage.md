@@ -20,7 +20,7 @@ On November 1, 2020, Azure Artifacts switched to consumption-based billing for a
 > [!NOTE]
 > Organizations created before to May 6, 2019, remained on per-subscription billing until November 1, 2020. At that time, they switched over to per-storage usage billing.
 
-To give you a better view of your storage consumption, Azure Artifacts has introduced a new user interface for artifact storage. You can now view your consumption at both the organization level and the project level. Storage is also grouped by type and/or by projects. We'll develop more levels of granularity in the near future.
+To give you a better view of your storage consumption, Azure Artifacts has introduced a new user interface for artifact storage. You can now view your consumption at both the organization level and the project level. Storage is also grouped by type and/or by projects.
 
 ## Organization-level storage
 
@@ -38,7 +38,7 @@ The organization-level view shows your total storage summary and your storage co
     > [!div class="mx-imgBorder"]
     > ![Screenshot of organization-level artifact storage, with sections for summary, type, and projects.](media/org-level-storage.png)
 
-For the current release, you can view the storage breakdown for **Packages** and for projects listed in the **Storage by projects** section. We'll add more levels of granularity in future releases.
+For the current release, you can view the storage breakdown for **Packages** and for projects listed in the **Storage by projects** section.
 
 The **Packages** storage breakdown lists packages in organization-scoped feeds.
 
@@ -64,7 +64,7 @@ The project-level view shows your total storage summary and your storage consump
     > [!div class="mx-imgBorder"]
     > ![Screenshot of project-level artifact storage, with sections for summary and type.](media/project-level-storage.png)
 
-The total storage summary shows your total billable stored artifacts. The **Storage by type** section lists your storage consumption by artifact type. For the current release, you can view your storage breakdown for the **Packages** section only. We'll add the other sections in future releases.
+The total storage summary shows your total billable stored artifacts. The **Storage by type** section lists your storage consumption by artifact type. For the current release, you can view your storage breakdown for the **Packages** section only.
 
 ## What's next?
 
