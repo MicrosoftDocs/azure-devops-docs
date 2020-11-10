@@ -108,7 +108,7 @@ A: Export a list of users from **Organization settings > Users** for each organi
 
 ### Q: Why are additional free user grants removed when multi-organization billing is enabled?
 
-A: The most common reason customers have received extra free user license grants in the past is because Azure DevOps didn't support multi-organization billing. For that reason, when you enable multi-organization billing, additional free grants are removed. If you have a free grant that applied to one or more of your organizations for a different reason, for example the [Microsoft Enterprise DevOps Accelerator Offer](https://info.microsoft.com/microsoft-enterprise-devops-accelerator-offer.html), [contact us](mailto:azdevgrant@microsoft.com?subject=Multi-org%20billing%20-%20free%20user%20grant%20request) to request the grant be applied to your Azure subscription instead.
+A: The most common reason customers have received extra free user license grants in the past is because Azure DevOps didn't support multi-organization billing. For that reason, when you enable multi-organization billing, additional free grants are removed. If you have a free grant that applied to one or more of your organizations for a different reason, for example the [Microsoft Enterprise DevOps Accelerator Offer](https://info.microsoft.com/microsoft-enterprise-devops-accelerator-offer.html), [contact our support team](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) to request the grant be applied to your Azure subscription instead.
 
 ## General billing
 
