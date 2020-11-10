@@ -6,7 +6,7 @@ ms.assetid: 4b18a164-d1cb-4f87-89cb-8dc227e64af1
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Create work in branches  

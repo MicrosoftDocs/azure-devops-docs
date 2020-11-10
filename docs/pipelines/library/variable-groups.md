@@ -1,6 +1,6 @@
 ---
 title: Variable groups for Azure Pipelines and TFS
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Share common variables across pipelines using variable groups
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.topic: conceptual

@@ -83,7 +83,7 @@ Individual contributors can set their user preferences, enable features that are
    :::column-end:::
    :::column span="1":::
       - [View permissions](../security/view-permissions.md)
-      - [Add an alternate account to your Visual Studio subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity)
+      - [Add an alternate account to your Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity)
    :::column-end:::
    :::column span="1":::
       For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md). 
@@ -193,7 +193,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       - [Add team administrators](about-settings.md)
    :::column-end:::
    :::column span="1":::
-      Members of a team are included within the team group, which can be used in queries and **@mentions** in pull requests and work item discussions.
+      Members of a team are included within the team group, which can be used in queries and **\@mentions** in pull requests and work item discussions.
    :::column-end:::
 :::row-end:::
 ---
@@ -785,7 +785,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
       - [Disable Request Access policy](../accounts/disable-request-access-policy.md)
       - [Restrict users from creating new organizations with Azure Active Directory policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
       - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
-      - [Enable Conditional Access or Multi-factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa)
+      - [Enable Conditional Access or Multi-factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa)
    :::column-end:::
    :::column span="1":::
       Set policies to allow or disallow access by other applications or services to the organization.
@@ -972,10 +972,10 @@ For an overview of managing collections, see [Configure and manage TFS resources
    :::column-end:::
    :::column span="1":::
       - [Delete and recover packages in Azure Artifacts](../../artifacts/how-to/delete-and-recover-packages.md)
-      - [View Artifact storage](../../artifacts/start-using-azure-artifacts.md#view-artifact-storage)
+      - [View Artifact storage](../../artifacts/start-using-azure-artifacts.md#view-artifact-and-billed-storage)
    :::column-end:::
    :::column span="1":::
-     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Pay for Artifacts](../../artifacts/start-using-azure-artifacts.md#pay-for-artifacts).
+     Each organization gets Azure Artifacts for free, up until 2 GiB of storage is reached. For more information, see [Pay for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#pay-for-azure-artifacts).
    :::column-end:::
 :::row-end:::
 ---

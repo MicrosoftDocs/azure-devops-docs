@@ -13,12 +13,10 @@ monikerRange: '>= tfs-2018'
 # Forks
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
+ 
+Forks are a great way to isolate experimental, risky, or confidential changes from the original codebase. A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
+After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. Once you're ready to share those changes, it's easy to use [pull requests](pull-requests-overview.md) to push the changes back to the original repository.
 
-A fork is a complete copy of a repository, including all files, commits, and (optionally) branches.
-Forks are a great way to support an Inner Source workflow: you can create a
-fork to suggest changes to a project when you don't have permissions to 
-write to the original project directly.
-Once you're ready to share those changes, it's easy to contribute them back using [pull requests](pull-requests-overview.md).
 
 ## What's in a fork
 
@@ -28,13 +26,13 @@ None of the permissions, policies, or build pipelines are applied.
 The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
 After a fork has been created, new files, folders, and branches are not shared between the repositories unless a PR carries them along.
 
-### Sharing code between forks
+### Share code between forks
 
 You can create PRs in either direction: from fork to upstream, or upstream to fork.
 The most common direction will be from fork to upstream.
 The destination repository's permissions, policies, builds, and work items will apply to the PR.
 
-## Choosing between branches and forks
+## Choose between branches and forks
 
 For a very small team (2-5 developers), we recommend working in a single repo.
 Everyone should work in topic branches, and master should be protected with [branch policies](branch-policies-overview.md).
@@ -60,7 +58,7 @@ This will isolate their changes from yours until you've had a chance to vet the 
 
 <a name="create-fork" />
 
-### Create the fork
+## Create the fork
 
 1. Navigate to the repository to fork, and choose **Fork**.
 
@@ -70,13 +68,13 @@ This will isolate their changes from yours until you've had a chance to vet the 
 
 ![Create new fork](media/forks/create-new-fork.png)
 
->[!NOTE]
+> [!NOTE]
 > You must have the [Create Repository](../../organizations/security/permissions.md#git-repository-object-level) permission in your chosen project to create a fork.
 > We recommend you create a dedicated project for forks where all contributors have the Create Repository permission. For an example of granting this permission, see [Set Git repository permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#set-git-repository-permissions).
 
 <a name="clone-locally" />
 
-### Clone your fork locally
+## Clone your fork locally
 
 Once your fork is ready, clone it using the [command line](clone.md?tabs=command-line) or an IDE like [Visual Studio](clone.md).
 The fork will be your `origin` remote.
@@ -122,7 +120,7 @@ On the command line, navigate to your repository, and type:
 
 <a name="push-changes" />
 
-### Make and push changes
+## Make and push changes
 
 It's possible to work directly in `master` - after all, this fork is your personal copy of the repo.
 We recommend you still work in a topic branch, though.
@@ -134,7 +132,7 @@ When you're done with the changes, push them to `origin` (your fork).
 
 <a name="create-pr" />
 
-### Create and complete a PR
+## Create and complete a PR
 
 Open a pull request from your fork to the upstream.
 All the policies, required reviewers, and builds will be applied in the upstream repo.
@@ -148,7 +146,7 @@ Once all policies are satisfied, the PR can be completed and the changes become 
 
 <a name="sync-fork" />
 
-### Sync your fork to latest
+## Sync your fork to latest
 
 When you've gotten your PR accepted into upstream, you'll want to make sure your fork reflects the latest state of the repo.
 We recommend rebasing on `upstream`'s `master` branch (assuming `master` is the main development branch).
@@ -184,10 +182,6 @@ git push origin
 ```
 
 ---
-
-
-
-
 
 
 

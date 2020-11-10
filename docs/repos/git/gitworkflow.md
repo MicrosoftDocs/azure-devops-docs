@@ -6,7 +6,7 @@ ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Azure Repos Git tutorial

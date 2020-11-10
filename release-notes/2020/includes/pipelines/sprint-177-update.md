@@ -5,11 +5,15 @@ ms.technology: devops-release-notes
 ms.date: 10/21/2020
 ms.topic: include
 ---
-### Node 14 in the Azure Pipelines agent
+### Updating Node in the Azure Pipelines agent
+<!-- original link, in case anyone bookmarked it -->
+<a name="node-14-in-the-azure-pipelines-agent"></a>
 
-This release, we've begun our move away from Node 6 and towards Node 14 as the preferred runtime for Azure Pipelines tasks. We've also updated the first batch of in-the-box tasks to run on Node 14. This change marks the start of a process to remove Node 6 from the agent by default. Node 6 has exited long-term support and is often flagged as a security risk by automated scanners. While we believe our use of Node 6 is unlikely to be subject to most of the potential flaws, it's nevertheless important for us to get tasks onto a supported runtime. In calendar year 2021, we plan to begin shipping a version of the agent without Node 6.
+ _Update from what was originally published: Due to an incompatibility with Red Hat Enterprise Linux 6 and Node 14, we've suspended work on Node 14 and will first focus on getting to Node 10._
 
-If you use any of the Node 14-enabled tasks, your self-hosted agents will update themselves to run the new versions of tasks. Other than that, there should be no impact for most customers. On the other hand, if you're the author of any tasks, you should begin updating them to run on Node 14. In your `task.json`, under `execution`, you can update from `Node` to `Node14`. If you need to support older server versions, you can leave your `Node` entrypoint. Instances of Azure DevOps which understand the Node 14 handler will choose it by default, and those which don't will fall back to your Node 6 implementation.
+This release, we've begun our move away from Node 6 and towards a supported Node version as the preferred runtime for Azure Pipelines tasks. We've updated the first batch of in-the-box tasks to run on Node 10. This change marks the start of a process to remove Node 6 from the agent by default. Node 6 has exited long-term support and is often flagged as a security risk by automated scanners. While we believe our use of Node 6 is unlikely to be subject to most of the potential flaws, it's nevertheless important for us to get tasks onto a supported runtime. In calendar year 2021, we plan to begin shipping a version of the agent without Node 6.
+
+If you use any of the Node 10-enabled tasks, your self-hosted agents will update themselves to run the new versions of tasks. Other than that, there should be no impact for most customers. On the other hand, if you're the author of any tasks, you should begin updating them to run on Node 10. In your `task.json`, under `execution`, you can update from `Node` to `Node10`. If you need to support older server versions, you can leave your `Node` entrypoint. Instances of Azure DevOps which understand the Node 10 handler will choose it by default, and those which don't will fall back to your Node 6 implementation.
 
 ### Save an unhealthy agent for investigation in scale set agents
 

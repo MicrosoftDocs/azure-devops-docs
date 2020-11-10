@@ -16,7 +16,7 @@ The Azure Cloud Shell is a free Bash shell that you can run directly within the 
 It has the Azure CLI preinstalled and configured to use with your Azure subscription.
 Click the **Cloud Shell** button on the menu in the upper-right of the [Azure portal](https://portal.azure.com).
 
-[![Cloud Shell](https://docs.microsoft.com/azure/includes/media/cloud-shell-try-it/cloud-shell-menu.png)](https://portal.azure.com)
+[![Cloud Shell](/azure/includes/media/cloud-shell-try-it/cloud-shell-menu.png)](https://portal.azure.com)
 
 The button launches an interactive shell that you can use to run all of the following steps:
 
