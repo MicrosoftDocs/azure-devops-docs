@@ -277,18 +277,18 @@ Learn more about [agent capabilities](../agents/agents.md#capabilities).
 
 Tasks in a server job are orchestrated by and executed on the server (Azure Pipelines or TFS). A server job does not require an agent or any target computers. Only a few tasks are supported in a server job at present.
 
-<h3 id="agentless-tasks">Tasks supported in agentless jobs</h3>
+<h3 id="agentless-tasks">Agentless jobs supported tasks</h3>
 
-Currently only the following tasks are supported out of the box for agentless jobs:
+Currently, only the following tasks are supported out of the box for agentless jobs:
 
 * [Delay task](../tasks/utility/delay.md)
-* [Invoke Azure function task](../tasks/utility/azure-function.md)
+* [Invoke Azure Function task](../tasks/utility/azure-function.md)
 * [Invoke REST API task](../tasks/utility/http-rest-api.md)
 * [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
 * [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
 * [Query Work Items task](../tasks/utility/work-item-query.md)
 
-As tasks are extensible additional agentless tasks can be added through extensions.
+Because tasks are extensible, you can add more agentless tasks by using extensions.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
