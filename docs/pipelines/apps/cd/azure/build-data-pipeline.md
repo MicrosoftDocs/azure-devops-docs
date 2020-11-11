@@ -77,7 +77,7 @@ To make commands easier to run, start by selecting a default region. After you s
     keyVault="keyvault${resourceSuffix}"
     ```
 
-1. Create one more Bash variable to store the names and the region of your resource group. Replace `<REGION>` with the region that you did choose in the default region section above.
+1. Create one more Bash variable to store the names and the region of your resource group. Replace `<REGION>` with the region that you chose earlier for the default region.
 
     ```bash
     rgName='data-pipeline-cicd-rg'
