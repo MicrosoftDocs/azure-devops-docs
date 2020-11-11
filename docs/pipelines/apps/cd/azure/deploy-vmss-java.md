@@ -18,7 +18,7 @@ In this tutorial, you build a Java app and deploy it to a virtual machine scale 
 
 > [!div class="checklist"]
 > * Create a virtual machine scale set
-> * Build a machine image with [Packer](https://www.packer.io/) 
+> * Build a machine image
 > * Deploy a custom image to a virtual machine scale set
 
 ## Prerequisites
