@@ -82,7 +82,12 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker range=">= tfs-2017"
 
+<a id="plan-shortcuts"></a>
+
 ## Plans
+
+You can use the following keyboard shortcuts when [interacting with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, enter **?** when viewing a plan from the **Boards>Plans** or **Work>Plans** page.
+ 
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
