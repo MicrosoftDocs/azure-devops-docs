@@ -52,6 +52,10 @@ Rebased branches will merge into your main branch without conflicts.
 ## Resolve merge conflicts 
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
+
 1. You'll be informed of the merge conflict(s) when you pull changes or attempt to merge two branches.   
 2. The conflict notification appears. Click the **Conflicts** link to start resolve file conflicts.   
 

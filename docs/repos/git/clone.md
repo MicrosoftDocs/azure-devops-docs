@@ -36,6 +36,7 @@ In this tutorial you learn how to:
 > Working from the command line? You can view our video tutorial using command line steps on [Channel9](https://channel9.msdn.com/series/Team-Services-Git-Tutorial/Git-Tutorial-Create-a-repo-from-the-command-line).
 
 <a name="clone_url"></a>
+
 ## Get the clone URL to your repo
 
 Before you can clone an existing repo, you'll need a URL that points to the existing repo.
@@ -60,6 +61,9 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 ## Clone a repo 
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
 * [Clone from Azure Repos / Azure DevOps Server](#clone-from-azure-repos--azure-devops-server)
 * [Clone from another Git provider](#clone-from-another-git-provider)
 * [Open a solution in Visual Studio from a cloned repo](#open-a-solution-in-visual-studio-from-a-cloned-repo)
@@ -104,6 +108,7 @@ In the **Home** view in Team Explorer, double-click your project solution file i
    ![Double-click your project solution file in the Solutions area to open it in Team Explorer.](media/open-solution-cloned-repo-vs-sln.png)
 
 #### [Command Line](#tab/command-line/)
+
 ### Prerequisites
 
 * Ensure you've installed the [Git command line package](http://git-scm.com/download) for your platform. Be sure you have the right [Git Credential Manager](set-up-credential-managers.md) or have [configured SSH authentication](use-ssh-keys-to-authenticate.md) before you continue.
@@ -123,6 +128,8 @@ git clone https://dev.azure.com/fabrikam/DefaultCollection/_git/Fabrikam C:\Repo
 ```
 
 * * *
+
+
 ## Next steps
 
 > [!div class="nextstepaction"]

@@ -38,6 +38,9 @@ Restore file contents back to a known good version, removing unwanted changes.
 > These commands will overwrite your existing file changes. If you think you might want these changes later, consider [stashing](howto.md#stash) them instead.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
 Visual Studio 2015 &amp; 2017
 
 1. Open up the **Changes** view in Team Explorer.
