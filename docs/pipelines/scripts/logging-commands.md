@@ -253,6 +253,8 @@ Sets a variable in the variable service of taskcontext. The first task can set a
 
 When `issecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables are not passed into tasks as environment variables and must instead be passed as inputs.
 
+See [set variables in scripts](https://docs.microsoft.com/azure/devops/pipelines/process/variables#set-variables-in-scripts) for more details.
+
 #### Properties
 
 * `variable` = variable name (Required)
@@ -278,7 +280,7 @@ Read the variables:
 echo "Non-secrets automatically mapped in, sauce is $SAUCE"
 echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
 echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-echo "Future jobs can also see $OUTPUTSAUCE"
+echo "Future jobs can also see $(jobName.stepName.outputSauce)"
 ```
 
 # [PowerShell](#tab/powershell)
