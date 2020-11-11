@@ -84,6 +84,8 @@ For convenience, after cloning you'll want to add the upstream repository (where
 
 # [Visual Studio](#tab/visual-studio)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
 To add your upstream repository in Visual Studio, follow these steps:
 
 1. Open the **Settings** page.
