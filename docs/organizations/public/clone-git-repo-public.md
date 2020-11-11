@@ -49,6 +49,8 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 
 ### Clone using Visual Studio and Team Explorer
 
+[!INCLUDE [temp](../../repos/git/includes/note-new-git-tool.md)] 
+
 1. In Team Explorer, (1) open up the **Connect** page by selecting the **Connect** icon. (2) Choose **Clone** under **Local Git Repositories**, (3) enter the clone URL, verify your local folder in which to clone, and (4) select the **Clone** button.
 
    ![Connecting to Azure DevOps](media/clone-git-repo-public/clone-vs.png)
