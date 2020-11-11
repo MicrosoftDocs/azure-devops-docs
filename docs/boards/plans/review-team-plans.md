@@ -60,6 +60,7 @@ You can change the assigned sprint of a work item by dragging it to a new sprint
 
 In this article you'll learn:
 
+
 >[!div class="checklist"]   
 > - How to review a plan with your teams
 > - How to add and edit a plan
@@ -67,8 +68,7 @@ In this article you'll learn:
 > - How to open a plan from the list of defined plans 
 > - How to work with the interactive elements of plans and change the plan view
 > - What permissions are required to create and view plans  
-
-
+ 
 
 ## Prerequisites
 
@@ -250,14 +250,14 @@ Once you've defined a plan, you can further customize it.
    - Set field criteria to further limit the work items that will appear on the plan 
    - Add markers to show important upcoming events on your timeline 
    - Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
+ 
+  Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
 
-     Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
+  :::image type="content" source="media/plans/plan-settings-field-criteria.png" border="true" alt-text="Plan settings dialog, Field criteria page":::   
 
-     :::image type="content" source="media/plans/plan-settings-field-criteria.png" border="true" alt-text="Plan settings dialog, Field criteria page":::   
+3. To set a marker, open **Markers**, specify a date and specify a hexidecimal color, or simply choose the color palette icon to change to a new color selected by the system.  	
 
-3. To set a marker, open **Markers**, specify a date and select a color. 	
-
-     :::image type="content" source="media/review-team-plans-set-markers.png" border="true" alt-text="Screenshot to Open the Markers page, specify a date and select a color.":::   
+     :::image type="content" source="media/plans/plan-settings-markers.png" border="true" alt-text="Screenshot to Open the Markers page, specify a date and select a color.":::   
 
 	Markers appear on the plan as shown: 
 
@@ -353,6 +353,25 @@ You can also quickly see that:
 
 A benefit of Delivery Plans is to view multiple teams across your projects that you care about. Two main ways to view more teams within the plan view is to collapse all teams to focus on summary data and to minimize the number of fields displayed on cards. 
 
+::: moniker range="azure-devops"  
+
+### Show work that spans one or more iterations - Plans (Preview) 
+
+For work items that span one or more iterations, you can define the **Start Date** and **Target Date**. The plan displays cards that start and end according to the dates you set as shown in the following image. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing features that span iterations](media/plans/features-span-iterations-preview.png)  
+
+::: moniker-end
+
+### Update the iteration for a backlog item 
+
+As changes occur to the schedule, you can update the iteration for a backlog item by moving a card to a different iteration. This will help to drive alignment across your organization.
+
+> [!div class="mx-imgBorder"]  
+> ![Move a card to a different iteration](media/plans_move1.png)
+
+
 ### Collapse teams for summary information
 
 To gain a summary view of work that is schedule, collapse all teams. You can then more easily look for gaps in the forward forecast.
@@ -369,14 +388,9 @@ To quickly change the cards to only show their Title, enter the keyboard shortcu
 > [!div class="mx-imgBorder"]  
 > ![Cards showing the Title only](media/plans_view5.png)   
 
-### Update the iteration for a backlog item 
-
-As changes occur to the schedule, you can update the iteration for a backlog item by moving a card to a different iteration. This will help to drive alignment across your organization.
-
-> [!div class="mx-imgBorder"]  
-> ![Move a card to a different iteration](media/plans_move1.png)
-
 ## Keyboard shortcuts
+
+You can use the following keyboard shortcuts when [interacting with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, enter **?** when viewing a plan from the **Boards>Plans** or **Work>Plans** page.
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]
 
