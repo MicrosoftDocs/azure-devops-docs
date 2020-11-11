@@ -303,8 +303,6 @@ stages:
   condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))
 ```
 
-You cannot currently specify that a stage run based on the value of an output variable set in a previous stage.
-
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
