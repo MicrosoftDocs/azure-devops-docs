@@ -152,7 +152,7 @@ for i in {0..100..10}
 do
    sleep 1
    echo "##vso[task.setprogress value=$i;]Sample Progress Indicator"
-do
+done
 echo "Lengthy process is complete."
 ```
 
