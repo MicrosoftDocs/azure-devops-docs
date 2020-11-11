@@ -44,6 +44,8 @@ You download changes to your local branch from the remote through `fetch`. `Fetc
 
 #### [Visual Studio](#tab/visual-studio/)
 
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
 Visual Studio uses the **Sync** view in Team Explorer to `fetch` changes.
 Changes downloaded by `fetch` aren't applied until you **Pull** or **Sync** the changes.
 
