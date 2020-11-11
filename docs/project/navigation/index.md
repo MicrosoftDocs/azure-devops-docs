@@ -18,7 +18,7 @@ ms.date: 11/11/2020
 
 ::: moniker range="azure-devops"
 
-The web portal for Azure DevOps is organized around a set of services, as well as administrative pages and several task-specific features such as the search box.  The service labels differ depending on whether you work from Azure DevOps Services or Azure DevOps on-premises and it's version. 
+The web portal for Azure DevOps is organized around a set of services, as well as administrative pages and several task-specific features such as the search box. The service labels differ depending on whether you work from Azure DevOps Services or Azure DevOps on-premises and it's version. 
 
 [!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
 
@@ -142,15 +142,14 @@ Although you can access source code, work items, and builds from both clients, s
    :::column span="2":::
       - [Product backlog](../../boards/backlogs/create-your-backlog.md),[Portfolio backlogs](../../boards/boards/kanban-epics-features-stories.md), [Sprint backlogs](../../boards/sprints/assign-work-sprint.md), [Taskboards](../../boards/sprints/task-board.md), [Capacity planning](../../boards/sprints/set-capacity.md) 
       - [Kanban boards](../../boards/boards/kanban-basics.md) 
-      - [Dashboards](../../report/dashboards/dashboards.md), [Widgets](../../report/dashboards/widget-catalog.md)", [Charts](../../report/dashboards/charts.md) 
+      - [Dashboards](../../report/dashboards/dashboards.md), [Widgets](../../report/dashboards/widget-catalog.md), [Charts](../../report/dashboards/charts.md) 
       - [Request feedback](../feedback/get-feedback.md)  
       - [Web-based Test Management](../../test/overview.md)  
       - [Administration pages to administer accounts, team projects, and teams](../../organizations/settings/about-settings.md)   
    :::column-end:::
    :::column span="2":::
-      - Task specific interfaces that integrate with Git and TFVC, such as:
-         - Git: [Changes](../../repos/git/commits.md#stage-your-changes-and-commit), [Branches](../../repos/git/branches.md), [Pull Requests](../../repos/git/pullrequest.md), [Sync](../../repos/git/pulling.md), [Work Items](../../boards/backlogs/add-work-items.md), [Builds](/previous-versions/ms181721(v=vs.140)) 
-         - TFVC: [My Work](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work), [Pending Changes](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work) | [Source Control Explorer](../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed), [Work Items](../../boards/backlogs/add-work-items.md) | [Builds](/previous-versions/ms181721(v=vs.140)) 
+      - Git: [Changes](../../repos/git/commits.md#stage-your-changes-and-commit), [Branches](../../repos/git/branches.md), [Pull Requests](../../repos/git/pullrequest.md), [Sync](../../repos/git/pulling.md), [Work Items](../../boards/backlogs/add-work-items.md), [Builds](/previous-versions/ms181721(v=vs.140)) 
+       - TFVC: [My Work](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work), [Pending Changes](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work) | [Source Control Explorer](../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed), [Work Items](../../boards/backlogs/add-work-items.md) | [Builds](/previous-versions/ms181721(v=vs.140)) 
        - Greater integration with work items and Office-integration clients. You can open a work item or query result in an office supported client. 
    :::column-end:::
 :::row-end:::
