@@ -45,10 +45,10 @@
   - name: Source control 
     href: source-control.md
   - name: Clients and tools
-    href: tools.md
+    href: tools.md?bc=%252fazure%252fdevops%252fget-started%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fget-started%252ftoc.json
   - name: Software development roles
     href: roles.md
-- name: Troubleshooting 
++- name: Troubleshooting 
   items:
   - name: Troubleshoot connection
     href: ./troubleshoot-connection.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252fprojects%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252fprojects%252ftoc.json
@@ -66,8 +66,6 @@
     href: work-team-explorer.md  
   - name: FAQs
     href: faqs.md
-  - name: Service status  
-    href: service-status-info.md
   - name: Service limits  
     href: service-limits.md
   - name: Features index
