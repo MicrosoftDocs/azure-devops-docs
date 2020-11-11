@@ -64,8 +64,6 @@
       href: repo-rename.md
     - name: Find a file
       href: find-a-file.md
-    - name: Add a Git or TFVC repo 
-      href: team-projects.md
     - name: Move a repo to another project
       href: move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
