@@ -25,6 +25,7 @@ Deployment jobs provide the following benefits:
    > [!NOTE] 
    > We currently support only the *runOnce*, *rolling*, and the *canary* strategies. 
 
+A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`. 
 
 ## Schema
 
