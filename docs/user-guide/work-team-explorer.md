@@ -1,19 +1,20 @@
 ---
 title: Navigate in Visual Studio Team Explorer 
 titleSuffix: Azure DevOps 
-description: Download TFS clients, navigate in Team Explorer for Azure DevOps Services & Team Foundation Server 
-keywords: Download TFS clients 
+description: Learn how to download Azure DevOps clients and navigate in Team Explorer 
+keywords: Download Azure DevOps clients 
 ms.technology: devops-new-user
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+monikerRange: '<= azure-devops'
+ms.date: 11/11/2020
 ---
 
 # Navigate in Visual Studio Team Explorer
 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 **Visual Studio 2019 | Visual Studio 2017 | Visual Studio 2015**
 
 You use Team Explorer to coordinate your code efforts with other team members to develop a software project. In addition, you can manage work and that is assigned to you, your team, or your projects. Team Explorer is a plug-in that installs with Visual Studio and Team Explorer Everywhere is a plug-in that installs with Eclipse. Developers can effectively collaborate using Team Explorer connected to projects hosted on Azure DevOps Services or an on-premises Azure DevOps Server (previously named Team Foundation Server (TFS)).
@@ -53,6 +54,8 @@ The Git and TFVC repos support different pages and functions. For a comparison o
 ## Git version control and repository 
 
 The following images show the pages available when you connect to a Git repository from Team Explorer. 
+
+[!INCLUDE [temp](../repos/git/includes/note-new-git-tool.md)] 
 
 > |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
 > |------|---------|---------|  
