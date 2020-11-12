@@ -212,11 +212,9 @@ The following variables are available in this strategy:
 
 ### RunOnce deployment strategy
 
-The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. 
+The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. The example includes a checkout step. 
 
 ```YAML
-steps:
-- checkout: self 
 
 jobs:
   # Track deployments on the environment.
@@ -231,6 +229,7 @@ jobs:
     runOnce:
       deploy:
         steps:
+        - checkout: self 
         - script: echo my first deployment
 ```
 
