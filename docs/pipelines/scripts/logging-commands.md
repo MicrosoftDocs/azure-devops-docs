@@ -268,38 +268,46 @@ See [set variables in scripts](https://docs.microsoft.com/azure/devops/pipelines
 
 Set the variables:
 
-```bash
-echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+```yaml
+- bash: |
+    echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
+    echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+    echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+  name: SetVars
 ```
 
 Read the variables:
 
-```bash
-echo "Non-secrets automatically mapped in, sauce is $SAUCE"
-echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
-echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-echo "Future jobs can also see $(jobName.stepName.outputSauce)"
+```yaml
+- bash: |
+    echo "Non-secrets automatically mapped in, sauce is $SAUCE"
+    echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
+    echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+    echo "Future jobs can also see $SETVARS_OUTPUTSAUCE"
+    echo "Future jobs can also see $(SetVars.outputSauce)"
 ```
 
 # [PowerShell](#tab/powershell)
 
 Set the variables:
 
-```ps
-Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+```yaml
+- pwsh: |
+    Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
+    Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+    Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+  name: SetVars
 ```
 
 Read the variables:
 
-```ps
-Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
-Write-Host "Secrets are not automatically mapped in, secretSauce is $env:SECRETSAUCE"
-Write-Host "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-Write-Host "Future jobs can also see $env:OUTPUTSAUCE"
+```yaml
+- pwsh: |
+    Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
+    Write-Host "Secrets are not automatically mapped in, secretSauce is $env:SECRETSAUCE"
+    Write-Host "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+    Write-Host "Future jobs can also see $env:SETVARS_OUTPUTSAUCE"
+    write-Host "Future jobs can also see $(SetVars.outputSauce)"
 ```
 
 ---
@@ -308,8 +316,9 @@ Console output:
 
 ```
 Non-secrets automatically mapped in, sauce is crushed tomatoes
-Secrets are not automatically mapped in, secretSauce is
+Secrets are not automatically mapped in, secretSauce is 
 You can use macro replacement to get secrets, and they'll be masked in the log: ***
+Future jobs can also see canned goods
 Future jobs can also see canned goods
 ```
 
