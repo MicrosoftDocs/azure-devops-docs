@@ -448,7 +448,7 @@ stages:
     pool:
       vmImage: 'ubuntu-16.04'
     environment: 
-      name: env1
+      name: env2
       resourceType: virtualmachine
     strategy:                  
       runOnce:
