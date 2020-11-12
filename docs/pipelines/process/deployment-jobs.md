@@ -55,7 +55,6 @@ jobs:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
-
 ## Deployment strategies
 
 When you're deploying application updates, it's important that the technique you use to deliver the update will: 
@@ -216,6 +215,9 @@ The following variables are available in this strategy:
 The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. 
 
 ```YAML
+steps:
+- checkout: self 
+
 jobs:
   # Track deployments on the environment.
 - deployment: DeployWeb
