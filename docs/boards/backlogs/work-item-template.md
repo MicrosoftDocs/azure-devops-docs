@@ -1,14 +1,14 @@
 ---
 title: Use work item templates to update stories, & more
 titleSuffix: Azure Boards   
-description: Add and manage work item templates to pre-populate fields in work item forms in Azure DevOps, Team Foundation Server, and Visual Studio
+description: Add and manage work item templates to pre-populate fields in work item forms in Azure DevOps and Visual Studio
 ms.technology: devops-agile
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/11/2020
 ---
 
 # Use templates to add and update work items 
