@@ -16,12 +16,27 @@
     href: artifacts-key-concepts.md
   - name: Collaborate with packages
     href: collaborate-with-packages.md
-  - name: Limits on package sizes and counts
-    href: reference/limits.md
+
   - name: Use the .artifactignore file
     href: reference/artifactignore.md
   - name: Package graphs
     href: concepts/package-graph.md
+
+
+- name: Working with packages
+  items:
+  - name: About packages
+    items:
+    - name: Use badges to share your packages
+      href: package-badges.md
+    - name: Limits on package sizes and counts
+      href: reference/limits.md
+    - name: Follow a package for publish alerts
+      href: how-to/follow-package-notifications.md
+
+
+
+
 - name: Artifact feeds
   items:
   - name: What are feeds?
@@ -48,12 +63,10 @@
     href: concepts/upstream-sources.md
   - name: Set up upstream sources
     href: how-to/set-up-upstream-sources.md
-  - name: Use badges to share your packages
-    href: package-badges.md
+
   - name: Delete and recover packages
     href: how-to/delete-and-recover-packages.md
-  - name: Follow a package for publish alerts
-    href: how-to/follow-package-notifications.md
+
 - name: NuGet
   items:
   - name: NuGet quickstart
