@@ -56,30 +56,30 @@ Before you begin, you need:
 
 1. Update your pipeline to include the `CopyFiles@2` and `PublishBuildArtifacts@1` tasks. This will create an artifact that you can deploy to your virtual machine scale set.
 
-```yaml
-  trigger: none
+  ```yaml
+    trigger: none
 
-  pool:
-    vmImage: 'ubuntu-latest'
+    pool:
+      vmImage: 'ubuntu-latest'
 
-  steps:
-  - task: Maven@1
-    displayName: 'Maven $(mavenPOMFile)'
-    inputs:
-      mavenPomFile: 'pom.xml'
-      testResultsFiles: '**/TEST*.xml'
+    steps:
+    - task: Maven@1
+      displayName: 'Maven $(mavenPOMFile)'
+      inputs:
+        mavenPomFile: 'pom.xml'
+        testResultsFiles: '**/TEST*.xml'
 
-  - task: CopyFiles@2
-    displayName: 'Copy File to: $(TargetFolder)'
-    inputs:
-      SourceFolder: '$(Build.SourcesDirectory)'
-      Contents: |
-      **/*.sh 
-      **/*.war
-      **/*jar-with-dependencies.jar
-      TargetFolder: '$(System.DefaultWorkingDirectory)/pipeline-artifacts/'
-      flattenFolders: true 
-```
+    - task: CopyFiles@2
+      displayName: 'Copy File to: $(TargetFolder)'
+      inputs:
+        SourceFolder: '$(Build.SourcesDirectory)'
+        Contents: |
+        **/*.sh 
+        **/*.war
+        **/*jar-with-dependencies.jar
+        TargetFolder: '$(System.DefaultWorkingDirectory)/pipeline-artifacts/'
+        flattenFolders: true 
+  ```
 
 ## Create a custom image and upload it to Azure
 
@@ -136,27 +136,27 @@ To create a custom image, you can use the [Azure VM Image Builder DevOps Task](h
 
 1. Add the `AzureImageBuilderTask@1` task to your YAML file.  
 
-```yaml
-- task: AzureImageBuilderTask@1
-  displayName: 'Azure VM Image Builder Task'
-  inputs:
-    managedIdentity: '/subscriptions/<SUBSCRIPTION ID>/resourcegroups/<RESOURCE GROUP>/providers/Microsoft.ManagedIdentity/userAssignedIdentities/<USER ASSIGNED IDENTITY NAME>'
-    imageSource: 'marketplace'
-    packagePath: '$(System.DefaultWorkingDirectory)/pipeline-artifacts'
-    inlineScript: |
-      sudo mkdir /lib/buildArtifacts
-      sudo cp  "/tmp/pipeline-artifacts.tar.gz" /lib/buildArtifacts/.
-      cd /lib/buildArtifacts/.
-      sudo tar -zxvf pipeline-artifacts.tar.gz
-      sudo sh install.sh
-    storageAccountName: 'vmssstorageaccount2'
-    distributeType: 'sig'
-    galleryImageId: '/subscriptions/<SUBSCRIPTION ID>/resourceGroups/<RESOURCE GROUP>/providers/Microsoft.Compute/galleries/myVMSSGallery/images/MyImage/versions/0.0.$(Build.BuildId)'
-    replicationRegions: 'eastus2'
-    ibSubscription: '<SUBSCRIPTION ID>'
-    ibAzureResourceGroup: 'myVMSSResourceGroup'
-    ibLocation: 'eastus2'
-```
+  ```yaml
+  - task: AzureImageBuilderTask@1
+    displayName: 'Azure VM Image Builder Task'
+    inputs:
+      managedIdentity: '/subscriptions/<SUBSCRIPTION ID>/resourcegroups/<RESOURCE GROUP>/providers/Microsoft.ManagedIdentity/userAssignedIdentities/<USER ASSIGNED IDENTITY NAME>'
+      imageSource: 'marketplace'
+      packagePath: '$(System.DefaultWorkingDirectory)/pipeline-artifacts'
+      inlineScript: |
+        sudo mkdir /lib/buildArtifacts
+        sudo cp  "/tmp/pipeline-artifacts.tar.gz" /lib/buildArtifacts/.
+        cd /lib/buildArtifacts/.
+        sudo tar -zxvf pipeline-artifacts.tar.gz
+        sudo sh install.sh
+      storageAccountName: 'vmssstorageaccount2'
+      distributeType: 'sig'
+      galleryImageId: '/subscriptions/<SUBSCRIPTION ID>/resourceGroups/<RESOURCE GROUP>/providers/Microsoft.Compute/galleries/myVMSSGallery/images/MyImage/versions/0.0.$(Build.BuildId)'
+      replicationRegions: 'eastus2'
+      ibSubscription: '<SUBSCRIPTION ID>'
+      ibAzureResourceGroup: 'myVMSSResourceGroup'
+      ibLocation: 'eastus2'
+  ```
 
 2. Run the pipeline to generate your first image.
  
