@@ -122,7 +122,7 @@ If you need to connect to Git repositories on Azure DevOps with SSH, you need to
 
 - `ssh.dev.azure.com`
 - `vs-ssh.visualstudio.com`
-- all IP addresses in the "name": "AzureCloud" section of [this downloadable file](https://www.microsoft.com/download/details.aspx?id=56519) (updated weekly): Azure IP ranges and Service Tags - Public Cloud 
+- all IP addresses in the "name": "AzureDevOps" section of [this downloadable file](https://www.microsoft.com/download/details.aspx?id=56519) (updated weekly) named: **Azure IP ranges and Service Tags - Public Cloud** 
 
 ## Azure DevOps ExpressRoute connections
 
