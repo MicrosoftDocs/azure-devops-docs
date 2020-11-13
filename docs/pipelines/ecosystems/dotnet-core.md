@@ -391,7 +391,7 @@ To install a .NET Core global tool like [dotnetsay](https://www.nuget.org/packag
    * **Custom command**: tool.
    * **Arguments**: `install -g dotnetsay`.
 
-2. Add a **Command-Line** task and set the following properties:
+2. Add a **Command Line** task and set the following properties:
    * **Script:** `dotnetsay`.
 
 ::: moniker-end
