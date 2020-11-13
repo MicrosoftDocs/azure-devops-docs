@@ -7,9 +7,9 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
-ms.date: 07/28/2020
----
+monikerRange: '<= azure-devops'
+ms.date: 11/16/2020
+--- 
 
 # Set permissions at the project- or collection-level
 
