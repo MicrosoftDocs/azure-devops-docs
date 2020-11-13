@@ -5,7 +5,7 @@ description: Create a new Git repo in an Azure DevOps Services or Team Foundatio
 ms.assetid: 9c6fabfa-ae17-4e65-93a2-9e476f9f88ba
 ms.technology: devops-code-git 
 ms.topic: quickstart
-ms.date: 11/02/2018
+ms.date: 11/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -19,7 +19,7 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 
 * An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 * Git command-line tools:
-  * [Install Git for Windows](https://git-scm.com/download/win), which includes [Git Credential Manager - Windows](set-up-credential-managers.md#windows)
+  * [Install Git for Windows](https://git-scm.com/download/win), which includes [Git Credential Manager Core](set-up-credential-managers.md#windows)
   * [Install Git for macOS and Linux](https://git-scm.com/downloads).
     * For macOS and Linux, we recommend [configuring SSH authentication](../git/use-ssh-keys-to-authenticate.md)
 
