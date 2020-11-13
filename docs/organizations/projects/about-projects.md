@@ -25,19 +25,19 @@ When you create your project, a team of the same name is automatically created. 
 ---
 :::row:::
    :::column span="2":::
-      **Single project and team defined within an organization or collection**
+      **Single project and team defined within an<br/>organization or collection**
    :::column-end:::
    :::column span="2":::
-      **Multiple projects and teams defined within organization or collection**
+      **Multiple projects and teams defined within an<br/>organization or collection**
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="2":::
-      <img src="media/about-projects/project-concept.png" alt="Single collection-project-team conceptual image"/>
+      :::image type="content" source="media/about-projects/project-concept.png" alt-text="Conceptual image, Single collection-project-team.":::
    :::column-end:::
    :::column span="2":::
-      <img src="media/about-projects/multiple-projects-concept.png" alt="Scaled collection-project-team conceptual image"/>
+      :::image type="content" source="media/about-projects/multiple-projects-concept.png" alt-text="Conceptual image, Scaled collection-project-team.":::
    :::column-end:::
 :::row-end:::
 ---

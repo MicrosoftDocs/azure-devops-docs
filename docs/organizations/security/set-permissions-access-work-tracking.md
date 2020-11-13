@@ -34,7 +34,7 @@ You grant or restrict access to various work tracking features by granting users
 ---
 :::row:::
    :::column span="1":::
-      **Team administrator role**
+      **Team administrator role**<br/> 
       To add a user to the team administrator role, see [Add a team administrator](../../organizations/settings/add-team-administrator.md).
    :::column-end:::
    :::column span="2":::
@@ -42,15 +42,6 @@ You grant or restrict access to various work tracking features by granting users
       - [Define and edit team dashboards](../../report/dashboards/dashboards.md)  
       - [Add and manage team-level work item templates](../../boards/backlogs/work-item-template.md) 
       - [Add team administrators](../settings/add-team-administrator.md) 
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **Object-level permissions**
-   :::column-end:::
-   :::column span="2":::
-      **Functional areas set**
    :::column-end:::
 :::row-end:::
 ---
@@ -109,6 +100,7 @@ You grant or restrict access to various work tracking features by granting users
       ::: moniker-end
       ::: moniker range="< azure-devops-2019"
       - [Edit collection level permissions](set-project-collection-level-permissions.md#collection-level) <br/>Project collection-level permissions include all permissions you can set at the collection-level.
+      ::: moniker-end
    :::column-end:::
 :::row-end:::
 ---

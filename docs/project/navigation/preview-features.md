@@ -131,21 +131,19 @@ The follow table indicates which preview features can be enabled per user or tea
    :::column span="2":::
       [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
       [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
-      [Project-Scoped Users well known group to hide settings](../projects/about-projects.md#project-scoped-user-group). 
+      [Project-Scoped Users well known group to hide settings](../../organizations/projects/about-projects.md#project-scoped-user-group). 
       Task Insights for Failed Pipeline Runs 
    :::column-end:::
    :::column span="1":::
       &nbsp;  
        ✔️   
-      &nbsp;  
-      &nbsp;  
+      &nbsp;   
        ✔️   
    :::column-end:::
    :::column span="1"::: 
        ✔️   
        ✔️   
        ✔️ 
-      &nbsp;  
        ✔️   
    :::column-end:::
 :::row-end:::
