@@ -9,10 +9,10 @@ ms.date: 11/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Use Git Credential Managers to authenticate to Azure Repos
+# Use Git Credential Manager Core to authenticate to Azure Repos
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
-Git Credential Managers simplify authentication with your Azure Repos Git repositories. Credential managers let you use the same credentials that you use for the Azure DevOps Services web portal. Credential managers support multi-factor authentication through Microsoft account or Azure Active Directory (Azure AD).  Besides supporting multi-factor authentication with Azure Repos, credential managers also support [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
+Git Credential Manager Core simplifies authentication with your Azure Repos Git repositories. Credential managers let you use the same credentials that you use for the Azure DevOps Services web portal. Credential managers support multi-factor authentication through Microsoft account or Azure Active Directory (Azure AD).  Besides supporting multi-factor authentication with Azure Repos, credential managers also support [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
 
 Azure Repos provides IDE support for Microsoft account and Azure AD authentication through the following clients:
 
@@ -22,11 +22,11 @@ Azure Repos provides IDE support for Microsoft account and Azure AD authenticati
 
 If your environment doesn't have an integration available, configure your IDE with a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect to your repositories.
 
-## Install the Git Credential Manager
+## Install Git Credential Manager Core
 
 ### Windows
 
-Download and run the latest [Git for Windows installer](https://git-scm.com/download/win), which includes the Git Credential Manager Core. Make sure to enable the Git Credential Manager installation option.
+Download and run the latest [Git for Windows installer](https://git-scm.com/download/win), which includes Git Credential Manager Core. Make sure to enable the Git Credential Manager installation option.
 
    ![Select Enable Git Credential Manager during Git for Windows install](media/install-git-with-git-credential-manager.png) 
 
