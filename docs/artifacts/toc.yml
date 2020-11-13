@@ -2,26 +2,26 @@
   href: index.yml
 - name: What is Azure Artifacts?
   href: overview.md
-- name: Start using Azure Artifacts
-  href: start-using-azure-artifacts.md
-- name: Azure Artifacts basics
+- name: Get started
   items:
-  - name: Key concepts
-    href: artifacts-key-concepts.md
+  - name: Start using Azure Artifacts
+    href: start-using-azure-artifacts.md
   - name: Where is Package Management?
     href: where-is-package-management.md
-  - name: Artifact Storage (New UI)
+  - name: Artifacts Storage (New UI)
     href: artifact-storage.md
   - name: Best practices
     href: concepts/best-practices.md
-  - name: Complete graphs
-    href: concepts/package-graph.md
+  - name: Key concepts
+    href: artifacts-key-concepts.md
   - name: Collaborate with packages
     href: collaborate-with-packages.md
   - name: Limits on package sizes and counts
     href: reference/limits.md
   - name: Use the .artifactignore file
     href: reference/artifactignore.md
+  - name: Package graphs
+    href: concepts/package-graph.md
 - name: Artifact feeds
   items:
   - name: What are feeds?
