@@ -545,101 +545,146 @@ Security Service Group
 
 ::: moniker-end
 
-<table valign="top" width="100%">
-<tbody valign="top">
-    <tr valign="top">
-        <th width="20%">Group name</th>
-        <th width="30%">Permissions</th>
-        <th width="50%">Membership</th>
-    </tr>
-    <tr>
-        <td>Project Collection Administrators</td>
-        <td><p>Has permissions to perform all operations for the collection.</p></td>
-        <td>
-            <p>
-                Contains the <strong>Local Administrators</strong> group (BUILTIN\Administrators)
-                for the server where the application-tier services have been installed.
-                Also, contains the members of the
-                <em>CollectionName</em><strong>\Service Accounts</strong> group.
-            </p>
-            <p>
-                This group should be restricted to the smallest possible number of users
-                who need total administrative control over the collection. For Azure DevOps, assign to administrators who customize work tracking. 
-            </p>
-            <blockquote>
-                If your deployment uses SharePoint or Reporting,
-                consider <a href="set-project-collection-level-permissions.md">adding the members of this group</a>
-                to the Site Collection Administrators group in SharePoint
-                and the Team Foundation Content Managers groups in Reporting Services.
-            </blockquote>
-        </td>
-    </tr>
-    <tr>
-        <td>Project Collection Build Administrators</td>
-        <td><p>Has permissions to administer build resources and permissions for the collection.</p></td>
-        <td>
-            <p>
-                Limit this group to the smallest possible number of users
-                who need total administrative control over build servers and services for this collection.
-            </p>
-        </td>
-    </tr>
-    <tr>
-        <td>Project Collection Build Service Accounts</td>
-        <td>
-            <p>Has permissions to run build services for the collection.</p>
-        </td>
-        <td>Limit this group to service accounts and groups that contain only service accounts. This is a legacy group used for XAML builds.  Use the Project Collection Build Service ({your organization}) user for managing permissions for current builds</td>
-    </tr>
-    <tr>
-        <td>Project Collection Proxy Service Accounts</td>
-        <td><p>Has permissions to run the proxy service for the collection.</p></td>
-        <td><p>Limit this group to service accounts and groups that contain only service accounts.</p></td></tr>
-    <tr>
-        <td>Project Collection Service Accounts</td>
-        <td><p>Has service level permissions for the collection and for Azure DevOps Server.</p></td>
-        <td>
-            <p>
-                Contains the service account that was supplied during installation.
-                This group should contain only service accounts and groups that contain only service accounts.
-                By default, this group is a member of the Administrators group.
-            </p>
-        </td>
-    </tr>
-    <tr>
-        <td>Project Collection Test Service Accounts</td>
-        <td><p>Has test service permissions for the collection.</p></td>
-        <td><p>Limit this group to service accounts and groups that contain only service accounts.</p></td>
-    </tr>
-    <tr>
-        <td>Project Collection Valid Users</td>
-        <td><p>Has permissions to access team projects and view information in the collection.</p>
-        </td>
-        <td>
-            <p>
-                Contains all users and groups that have been added anywhere within the collection.
-                You cannot modify the membership of this group.
-            </p>
-        </td>
-    </tr>
-    <tr>
-        <td>Security Service Group</td>
-        <td><p>Used to store users who have been granted permissions, but not added to any other security group.  </p>
-        </td>
-        <td>
-            <p>
-                Don't assign users to this group. If you are removing users from all security groups, check if you need to remove them from this group.   
-            </p>
-        </td>
-    </tr>
-</tbody>
-</table>
-
-> The full name of each of these groups is **[{collection name}]\\{group name}**.
-> So the full name of the administrator group for the default collection is
-> **[Default Collection]\\Project Collection Administrators**.
 
 
+The full name of each of these groups is **[{collection name}]\\{group name}**. 
+So the full name of the administrator group for the default collection is 
+**[Default Collection]\\Project Collection Administrators**.
+
+
+
+---
+:::row:::
+   :::column span="1":::
+      **Group name**
+   :::column-end:::
+   :::column span="1":::
+      **Permissions**
+   :::column-end:::
+   :::column span="2":::
+      **Membership**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Project Collection Administrators
+   :::column-end:::
+   :::column span="1":::
+      Has permissions to perform all operations for the collection.
+   :::column-end:::
+   :::column span="2":::
+       Contains the <strong>Local Administrators</strong> group (BUILTIN\Administrators)
+       for the server where the application-tier services have been installed.
+       Also, contains the members of the *CollectionName***Service Accounts** group.
+       This group should be restricted to the smallest possible number of users who need total administrative control over the collection. For Azure DevOps, assign to administrators who customize work tracking. 
+       ::: moniker range="< azure-devops"
+       > [!NOTE]
+       If your deployment uses Reporting Services, consider adding the members of this group to the [Team Foundation Content Managers groups in Reporting Services](../../report/admin/grant-permissions-to-reports.md).
+       ::: moniker-end
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Project Collection Build Administrators
+   :::column-end:::
+   :::column span="1":::
+       Has permissions to administer build resources and permissions for the collection.
+   :::column-end:::
+   :::column span="2":::
+       Limit this group to the smallest possible number of users who need total administrative control over build servers and services for this collection.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Project Collection Build Service Accounts
+   :::column-end:::
+   :::column span="1":::
+       Has permissions to run build services for the collection.
+   :::column-end:::
+   :::column span="2":::
+       Limit this group to service accounts and groups that contain only service accounts. This is a legacy group used for XAML builds. Use the Project Collection Build Service ({your organization}) user for managing permissions for current builds. 
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Project Collection Proxy Service Accounts
+   :::column-end:::
+   :::column span="1":::
+       Has permissions to run the proxy service for the collection.
+   :::column-end:::
+   :::column span="2":::
+       Limit this group to service accounts and groups that contain only service accounts.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Project Collection Service Accounts
+   :::column-end:::
+   :::column span="1":::
+       Has service level permissions for the collection and for Azure DevOps Server.
+   :::column-end:::
+   :::column span="2":::
+       Contains the service account that was supplied during installation. This group should contain only service accounts and groups that contain only service accounts. By default, this group is a member of the Administrators group.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Project Collection Test Service Accounts
+   :::column-end:::
+   :::column span="1":::
+       Has test service permissions for the collection.
+   :::column-end:::
+   :::column span="2":::
+       Limit this group to service accounts and groups that contain only service accounts.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Project Collection Valid Users
+   :::column-end:::
+   :::column span="1":::
+       Has permissions to access team projects and view information in the collection.
+   :::column-end:::
+   :::column span="2":::
+       Contains all users and groups that have been added anywhere within the collection. You cannot modify the membership of this group.
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+       Project-scoped Users
+   :::column-end:::
+   :::column span="1":::
+       Has limited access to view organization settings and projects other than those projects they are specifically added to. Limits are only in effect when the organization-level preview feature, **Project-Scoped Users well known group to hide settings** is enabled. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level)
+   :::column-end:::
+   :::column span="2":::
+       Add users to this group when you want to limit their access to those projects that you explicitly add them to. Do not add users to this group if they are also added to the Project Collection Administrators group.  
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+:::row:::
+   :::column span="1":::
+       Security Service Group
+   :::column-end:::
+   :::column span="1":::
+       Used to store users who have been granted permissions, but not added to any other security group. 
+   :::column-end:::
+   :::column span="2":::
+       Don't assign users to this group. If you are removing users from all security groups, check if you need to remove them from this group.   
+   :::column-end:::
+:::row-end:::
+---
+
+ 
 
 <!---
 Build Administrators

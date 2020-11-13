@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
-ms.date: 07/24/2020
+ms.date: 11/16/2020
 ---
 
 
@@ -131,16 +131,21 @@ The follow table indicates which preview features can be enabled per user or tea
    :::column span="2":::
       [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
       [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
+      [Project-Scoped Users well known group to hide settings](../../organizations/security/permissions.md#collection-level)
       Task Insights for Failed Pipeline Runs 
    :::column-end:::
    :::column span="1":::
       &nbsp;  
        ✔️   
+      &nbsp;  
+      &nbsp;  
        ✔️   
    :::column-end:::
    :::column span="1"::: 
        ✔️   
        ✔️   
+       ✔️ 
+      &nbsp;  
        ✔️   
    :::column-end:::
 :::row-end:::
