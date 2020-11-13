@@ -7,9 +7,9 @@ ms.topic: Conceptual
 ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
----
+monikerRange: '<= azure-devops'
+ms.date: 11/16/2020
+--- 
 
 # Grant or restrict access
 
@@ -127,6 +127,18 @@ For an account or collection, Edit instance-level (or collection-level) informat
 </tr>
 </table>
 
+::: moniker range="azure-devops"
+
+<a id="restrict-access-project-scoped-user-group" /> 
+
+## Restrict access to projects and Organization information
+
+By default, users added to an organization can view all organization and project information and settings. To restrict access to only those projects that you add users to, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+
+With this feature enabled, users added to the **Project-scoped User group** can't view most Organization Settings and can only connect to those projects to which they've been added. 
+
+::: moniker-end
+ 
 ## Restrict access to view or modify objects  
 
 Azure DevOps is designed to enable all valid users to view all objects defined in the system. You can restrict access to resources by setting the permission state to **Deny**. You can set permissions for members that belong to a custom security group or for an individual user. To learn more about how to set these types of permissions, see [Change individual permissions, grant select access to specific functions](change-individual-permissions.md). 
