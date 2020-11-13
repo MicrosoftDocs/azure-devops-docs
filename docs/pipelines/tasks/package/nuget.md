@@ -55,8 +55,9 @@ If you are working with .NET Core or .NET Standard, use the [.NET Core](../build
 | `disableParallelProcessing`<br/>Disable parallel processing | Prevents NuGet from installing multiple packages in parallel. |
 | `restoreDirectory`<br/>Destination directory | Specifies the folder in which packages are installed. If no folder is specified, packages are restored into a packages/ folder alongside the selected solution, packages.config, or project.json. |
 | `verbosityRestore`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `Quiet`, `Normal`, `Detailed` |
-| `packagesToPush`<br/>Target feed location | Specifies whether the target feed is and internal feed/collection or an external NuGet server.<br/>Options: `internal`, `external` |
+| `nuGetFeedType`<br/>Target feed location | Specifies whether the target feed is an internal feed/collection or an external NuGet server.<br/>Options: `internal`, `external`. Required when `command` == `Push` |
 | `publishVstsFeed`<br/>Target feed | Select a feed hosted in this account. You must have Azure Artifacts installed and licensed to select a feed here. |
+| `packagesToPush`<br/>Packages location | The pattern to match or path to the nupkg files, e.g.: `'$(Build.ArtifactStagingDirectory)/*.nupkg'`. Required when `command` == `Push`|
 | `publishPackageMetadata`<br/>Publish pipeline metadata | If you continually publish a set of packages and only change the version number of the subset of packages that changed, use this option. |
 | `allowPackageConflicts` | It allows the task to report success even if some of your packages are rejected with 409 Conflict errors.<br/>If NuGet.exe encounters a conflict, the task will fail. This option will not work and publish will fail if you are within a proxy environment. |
 | `publishFeedCredentials`<br/>NuGet server | The NuGet service connection that contains the external NuGet server’s credentials. |
@@ -192,7 +193,7 @@ Create a NuGet package in the destination folder.
     ```
 ### Custom
 
-Run any other NuGet command besides the default ones: pack, push and restore.
+Run any other NuGet command besides the default ones: pack, push, and restore.
 
 ```YAML
 # list local NuGet resources.
@@ -202,7 +203,7 @@ Run any other NuGet command besides the default ones: pack, push and restore.
     command: custom
     arguments: 'nuget locals all -list'
 ```
-## Open source
+## Open-source
 
 Check out the Azure Pipelines and Team Foundation Server out-of-the-box tasks [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome. 
 
