@@ -8,8 +8,8 @@ toc: show
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 06/05/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/16/2020
 --- 
 
 
@@ -576,7 +576,7 @@ So the full name of the administrator group for the default collection is
    :::column span="2":::
        Contains the <strong>Local Administrators</strong> group (BUILTIN\Administrators)
        for the server where the application-tier services have been installed.
-       Also, contains the members of the *CollectionName***Service Accounts** group.
+       Also, contains the members of the *CollectionName*/**Service Accounts** group.
        This group should be restricted to the smallest possible number of users who need total administrative control over the collection. For Azure DevOps, assign to administrators who customize work tracking. 
        ::: moniker range="< azure-devops"
        > [!NOTE]
@@ -663,10 +663,12 @@ So the full name of the administrator group for the default collection is
        Project-scoped Users
    :::column-end:::
    :::column span="1":::
-       Has limited access to view organization settings and projects other than those projects they are specifically added to. Limits are only in effect when the organization-level preview feature, **Project-Scoped Users well known group to hide settings** is enabled. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level)
+       Has limited access to view organization settings and projects other than those projects they are specifically added to. 
    :::column-end:::
    :::column span="2":::
        Add users to this group when you want to limit their access to those projects that you explicitly add them to. Do not add users to this group if they are also added to the Project Collection Administrators group.  
+       > [!NOTE]   
+       > Limits are only in effect when the organization-level preview feature, **Project-Scoped Users well known group to hide settings** is enabled. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level).
    :::column-end:::
 :::row-end:::
 ---
@@ -708,8 +710,6 @@ For each project that you create, the system creates the followings project-leve
 > **[My Project]\\Contributors**.
 
 
-> [!NOTE]   
-> The project-level Release Administrator's group is created at the same time the first release pipeline is defined. It isn't created by default when the project is created.  
 
 
 ::: moniker range="azure-devops"
@@ -741,88 +741,147 @@ For each project that you create, the system creates the followings project-leve
 ::: moniker-end
 
 
-<table valign="top" width="100%">
-<tbody valign="top">
-    <tr valign="top">
-        <th width="20%">Group name</th>
-        <th width="40%">Permissions</th>
-        <th width="40%">Membership</th>
-    </tr>
-    <tr>
-        <td>Build Administrators</td>
-        <td>Has permissions to administer build resources and build permissions for the project. Members can manage test environments, create test runs, and manage builds.</td>
-        <td>Assign to users who define and manage build pipelines.</td>
-    </tr>
-    <tr>
-        <td>Contributors</td>
-        <td>Has permissions to contribute fully to the project code base and work item tracking. The main permissions they don&#39;t have or those that manage or administer resources.</td>
-        <td>By default, the team group created when you create a project is added to this group, and any user you add to the team will be a member of this group. In addition, any team you create for a project will be added to this group by default, unless you choose a different group from the list.</td>
-    </tr>
-    <tr>
-        <td>Readers</td>
-        <td>Has permissions to view project information, the code base, work items, and other artifacts but not modify them.</td>
-        <td>
-            Assign to members of your organization who you want to provide view-only permissions to a project. These users will be able to view backlogs, boards, dashboards, and more, but not add or edit anything. Typically, these are members who aren&#39;t granted an access level (<a href="../../organizations/security/access-levels.md" data-raw-source="[Basic, Stakeholder, or other level](../../organizations/security/access-levels.md)">Basic, Stakeholder, or other level</a>) within the organization or on-premises deployment.
-            who want to be able to view work in progress.
-        </td>
-    </tr>
-    <tr>
-        <td id="project-administrator-group">Project Administrators</td>
-        <td>Has permissions to administer all aspects of teams and project, although they can't create team projects.</td>
-        <td>Assign to users who manage user permissions, create or edit teams, modify team settings, define area an iteration path, or customize work item tracking.
-        <blockquote>
-<p>Members of the Project Administrators group are granted permissions to perform the following tasks: 
-<ul>
-                    <li>Add and remove users from project membership</li>
-                    <li>Add and remove custom security groups from a project</li>
-                    <li>Add and administer all project teams and team-related features</li>
-                    <li>Edit project level permission ACLs</li>
-                    <li>Edit <a href="#alerts">event subscriptions</a> (email or SOAP) for teams or project-level events.</li>
-</ul> 
-        </blockquote>
+
+---
+:::row:::
+   :::column span="1":::
+      **Group name**
+   :::column-end:::
+   :::column span="1":::
+      **Permissions**
+   :::column-end:::
+   :::column span="2":::
+      **Membership**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Build Administrators
+   :::column-end:::
+   :::column span="1":::
+      Has permissions to administer build resources and build permissions for the project. Members can manage test environments, create test runs, and manage builds.
+   :::column-end:::
+   :::column span="2":::
+       Assign to users who define and manage build pipelines.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Contributors
+   :::column-end:::
+   :::column span="1":::
+       Has permissions to contribute fully to the project code base and work item tracking. The main permissions they don't have are those that manage or administer resources.
+   :::column-end:::
+   :::column span="2":::
+       By default, the team group created when you create a project is added to this group, and any user you add to the team or project is a member of this group. In addition, any team you create for a project is added to this group.
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Readers
+   :::column-end:::
+   :::column span="1":::
+       Has permissions to view project information, the code base, work items, and other artifacts but not modify them.
+   :::column-end:::
+   :::column span="2":::
+       Assign to members of your organization or collection who you want to provide view-only permissions to a project. These users can view backlogs, boards, dashboards, and more, but not add or edit anything.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Project Administrators<a id="project-administrator-group" />
+   :::column-end:::
+   :::column span="1":::
+       Has permissions to administer all aspects of teams and project, although they can't create team projects.
+   :::column-end:::
+   :::column span="2":::
+      Assign to users who manage user permissions, create or edit teams, modify team settings, define area an iteration path, or customize work item tracking. Members of the Project Administrators group are granted permissions to perform the following tasks: 
+      - Add and remove users from project membership 
+      - Add and remove custom security groups from a project 
+      - Add and administer all project teams and team-related features  
+      - Edit project level permission ACLs  
+      - Edit [event subscriptions (email or SOAP)](#alerts) for teams or project-level events.  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+       Project Valid Users
+   :::column-end:::
+   :::column span="1":::
+       Has permissions to access the project and view information in the collection.
+   :::column-end:::
+   :::column span="2":::
+       Contains all users and groups that have been added anywhere to the project. You cannot modify the membership of this group.
+       > [!NOTE]  
+       > If you set the **View project-level information** permission
+       > to **Deny** or **Not set** for this group, 
+       > no users, except for members of Project Collection Administrators group, will be able to access the project. 
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range=">= tfs-2017"
+:::row:::
+   :::column span="1":::
+       Release Administrators
+   :::column-end:::
+   :::column span="1":::
+       Has permissions to manage all release operations.
+   :::column-end:::
+   :::column span="2":::
+       Assign to users who define and manage release pipelines.
+       > [!NOTE]   
+       > The Release Administrator group is created at the same time the first release pipeline is defined. It isn't created by default when the project is created. Valid for TFS-2017 and later versions.
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+:::row:::
+   :::column span="1":::
+       *TeamName* <a id="team-group" /> 
+   :::column-end:::
+   :::column span="1":::
+       Has permissions to contribute fully to the project code base and work item tracking.  The default Team group is created when you create a project, and by default is added to the Contributors group for the project. Any new teams you create will also have a group created for them and added to the Contributors group.
+   :::column-end:::
+   :::column span="2":::
+       Add members of the team to this group. To grant access to configure team settings, add a team member to the team administrator role](../settings/add-team-administrator.md).
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+       Project-scoped Users
+   :::column-end:::
+   :::column span="1":::
+       Has limited access to view organization settings and projects other than those projects they are specifically added to. 
+   :::column-end:::
+   :::column span="2":::
+       Add users to this group when you want to limit their access to those projects that you explicitly add them to. Do not add users to this group if they are also added to the Project Collection Administrators group.  
+       > [!NOTE]   
+       > Limits are only in effect when the organization-level preview feature, **Project-Scoped Users well known group to hide settings** is enabled. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level).
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
+:::row:::
+   :::column span="1":::
+       Security Service Group
+   :::column-end:::
+   :::column span="1":::
+       Used to store users who have been granted permissions, but not added to any other security group. 
+   :::column-end:::
+   :::column span="2":::
+       Don't assign users to this group. If you are removing users from all security groups, check if you need to remove them from this group.   
+   :::column-end:::
+:::row-end:::
+---
 
 
-</td>
-    </tr>
-    <tr>
-        <td>Project Valid Users</td>
-        <td><p>Has permissions to access the project.</p>
-            <blockquote>
-                If you set the <strong>View project-level information</strong> permission
-                to <strong>Deny</strong> or <strong>Not set</strong> for this group,
-                no users, except for members of Project Collection Administrators group, will be able to access the project. 
-            </blockquote>
-        </td>
-        <td>
-            <p>
-                Contains all users and groups that have been added anywhere within the project.
-                You cannot modify the membership of this group.
-            </p>
-        </td>
-    </tr>
-    <tr>
-        <td>Release Administrators</td>
-        <td>Has permissions to manage all release operations.
-            <blockquote>
-                This group is defined after the first release pipeline is created. Valid for TFS-2017 and later versions.<br/>            </blockquote></td>
-        <td>Assign to users who define and manage release pipelines.</td>
-    </tr>
-    <tr>
-        <td id="team-group">{team name}</td>
-        <td>
-            Has permissions to contribute fully to the project code base and work item tracking.
-            The default Team group is created when you create a project,
-            and by default is added to the Contributors group for the project.
-            Any new teams you create will also have a group created for them and added to the Contributors group.
-            <blockquote>
-                You can grant permissions to administer team assets by
-                <a href="../../organizations/settings/add-team-administrator.md" data-raw-source="[adding members to the team administrator role](../../organizations/settings/add-team-administrator.md)">adding members to the team administrator role</a>.
-            </blockquote>
-        </td>
-        <td>Add members of the team to this group.</td>
-    </tr>
-</tbody>
-</table>
 
 
 <!---
