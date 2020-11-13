@@ -7,7 +7,7 @@ ms.assetid:
 ms.author: sdanie
 author: steved0x 
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 11/13/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -61,8 +61,7 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 
 ### Prerequisites
 
-* Ensure you have installed the [Git command line package](https://git-scm.com/download) for your platform as well as the 
-right [Git Credential Manager](../../repos/git/set-up-credential-managers.md) before continuing.
+* Ensure you have installed the [Git command line package](https://git-scm.com/download) for your platform as well as the [Git Credential Manager](../../repos/git/set-up-credential-managers.md) before continuing.
 
 You'll need a clone URL to tell Git what repository you want to clone to your computer. Use the URL you copied earlier during the [previous step](#clone_url) in this article.
 
