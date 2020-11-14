@@ -109,51 +109,36 @@
       href: feeds/project-scoped-feeds.md
     - name: Setting up permissions
       href: feeds/feed-permissions.md
-    - name: Migrate packages to Azure Artifacts
+    - name: Delete and recover packages
+      href: how-to/delete-and-recover-packages.md
+    - name: Migrate packages to Azure Artifacts feed
       href: tutorials/migrate-packages.md
     - name: Move your packages to the cloud
       href: nuget/move-from-fileshares.md
+    - name: Share PowerShell modules with Azure Artifacts feed
+      href: tutorials/private-powershell-library.md
+    - name: Use public feeds to share your packages publicly
+      href: tutorials/share-packages-publicly.md
   
   
   - name: Feed views
     items:
-
-
+    - name: What are feed views?
+      href: concepts/views.md
+    - name: Promote a package to a view
+      href: feeds/views.md
 
 
 
   - name: Upstrean sources
     items:
+    - name: Understanding upstream sources
+      href: concepts/upstream-sources.md
+    - name: Set up upstream sources
+      href: how-to/set-up-upstream-sources.md
+    - name: Manage dependencies with upstream sources
+      href: tutorials/protect-oss-packages-with-upstream-sources.md
 
-
-
-
-
-
-- name: Artifact feeds
-  items:
-
-
-  - name: What are feed views?
-    href: concepts/views.md
-  - name: Create a private PowerShell repository
-    href: tutorials/private-powershell-library.md
-  - name: Share packages publicly
-    href: tutorials/share-packages-publicly.md
-  - name: Protect OSS packages with upstream sources
-    href: tutorials/protect-oss-packages-with-upstream-sources.md
-  - name: Promote a package to a view
-    href: feeds/views.md
-
-
-
-  - name: Understanding upstream sources
-    href: concepts/upstream-sources.md
-  - name: Set up upstream sources
-    href: how-to/set-up-upstream-sources.md
-
-  - name: Delete and recover packages
-    href: how-to/delete-and-recover-packages.md
 
 
 
