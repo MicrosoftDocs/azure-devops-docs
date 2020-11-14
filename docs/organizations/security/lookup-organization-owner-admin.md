@@ -27,7 +27,7 @@ For an overview of built-in security groups and default permission assignments, 
 
 ::: moniker range="azure-devops"  
 > [!NOTE]  
-> Users added to the **Project-scoped Users** group won't be able to access Organization Settings if the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-scoped Users** group won't be able to access **Organization Settings** other than the **Overview** section if the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
 
 ::: moniker-end  
 
@@ -35,6 +35,7 @@ For an overview of built-in security groups and default permission assignments, 
 ::: moniker range="azure-devops"
 
 <a name="find-owner"></a>
+
 
 ## Look up the organization owner 
 
@@ -51,6 +52,7 @@ For an overview of built-in security groups and default permission assignments, 
 
 ::: moniker-end
 
+<a name="show-members-of-the-project-administrators-group"></a>
 
 ## View members of the Project Administrators group
 
@@ -139,15 +141,22 @@ Choose the Project Administrators group from the **Project Settings > Permission
 
 ::: moniker-end
 
+<a name="show-members-of-the-project-collection-administrators-group"></a>
 
 ## View members of the Project Collection Administrators group
 
-If you need elevated permissions, request them from a member of the [Project Collection Administrators group](set-project-collection-level-permissions.md). Project collection administrators manage features and functions that impact all projects. 
+If you need elevated permissions, request them from a member of the [Project Collection Administrators group](set-project-collection-level-permissions.md). Project collection administrators manage features and functions that impact all projects.
+
+::: moniker range="azure-devops"  
+> [!NOTE]  
+> Users added to the **Project-scoped Users** group won't be able to access **Organization Settings>Permissions** if the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
+
+::: moniker-end   
 
 
 ::: moniker range="azure-devops"
 
-To find out who is a member of the Project Collection Administrators group, check the **Permissions** settings at the collection level. 
+To find out who is a member of the Project Collection Administrators group, check the **Organization Settings>Permissions**. 
 
 > [!NOTE]   
 > To enable the new user interface for the **Organization Permissions Settings Page v2**, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not. 
