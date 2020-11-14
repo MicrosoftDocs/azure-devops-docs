@@ -7,8 +7,8 @@ ms.topic: conceptual
 ms.author: kaelli   
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 09/15/2020
----
+ms.date: 11/16/2020
+--- 
 
 
 # Work across projects FAQs

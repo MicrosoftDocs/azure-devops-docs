@@ -9,8 +9,8 @@ ms.topic: conceptual
 ms.author: kaelli   
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 09/23/2020
----
+ms.date: 11/16/2020
+--- 
 
 
 # Work across projects
@@ -53,6 +53,11 @@ For example, you can quickly access and navigate to the following artifacts defi
 To switch to another project, see [Switch project, repository, or team](go-to-project-repo.md). 
 
 For additional notes on working across projects, see [Work across projects FAQs](../work-across-projects-faqs.md). 
+
+## Prerequisites 
+ 
+* You must be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+ 
 
 
 ## View and open work items
