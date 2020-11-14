@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/15/2020
+ms.date: 11/16/2020
 ---
 
 # About settings for users, teams, projects, or organizations
@@ -626,10 +626,14 @@ Members of the [Project Collection Administrators group](../security/set-project
 ::: moniker range="azure-devops"
   
 **Organization settings**  
-From the administrative **Organization settings** page, you can configure settings available from the tabs shown in the following image.
+From the administrative **Organization settings** page, you can configure settings available from the tabs shown in the following image and table. 
+
+> [!NOTE]  
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access Organization Settings aother than the **Overview** and **Projects** pages.   To learn more, see [About projects and scaling your organization, Project-scoped User group ](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of Organization settings options, cloud](media/about/organization-settings-options-cloud.png) 
+> ![Screenshot of Organization settings options, cloud.](media/about/organization-settings-options-cloud.png) 
 
 ::: moniker-end
 
@@ -644,7 +648,7 @@ From the administrative page for a collection, you can configure the settings sh
 ::: moniker range="<= tfs-2018"
 
 **Collection-level settings**  
-From the administrative page for a collection, you can configure the settings shown in the following image. 
+From the administrative page for a collection, you can configure the settings shown in the following image and listed in the following table. 
 
 > [!NOTE]  
 > Project collection settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
@@ -659,16 +663,8 @@ For an overview of managing your organization, see [About organization managemen
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops-2020" 
-
+::: moniker range="< azure-devops" 
 For an overview of managing collections, see [Configure and manage Azure DevOps Server resources](/azure/devops/server/admin/admin-quick-ref).
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-For an overview of managing collections, see [Configure and manage TFS resources](/azure/devops/server/admin/admin-quick-ref).
-
 ::: moniker-end 
 
 :::row:::
@@ -692,38 +688,52 @@ For an overview of managing collections, see [Configure and manage TFS resources
       - [Enable preview features](../../project/navigation/preview-features.md)
    :::column-end:::
    :::column span="1":::
-      Organization administrators can enable or disable account-level features that are in preview.
+      Organization administrators can enable or disable organization-level or collection-level features that are in preview.
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=" >= azure-devops-2019"
+::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      **Settings**
+      **Overview**
    :::column-end:::
    :::column span="1":::
       - Add and manage organization information: [change organization owner](../accounts/change-organization-ownership.md), [Rename](../accounts/rename-organization.md), [Delete](../accounts/delete-your-organization.md)- [Recover](../accounts/recover-your-organization.md), [Find or change your organization location](../accounts/change-organization-location.md)
       - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
    :::column-end:::
    :::column span="1":::
-      From the **Settings** page, you can manage the time zone, owner, region, and other settings that apply to all projects.
+      From the **Overview** page, you can manage the time zone, owner, region, and other settings that apply to all projects.
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range="<= tfs-2018"
 :::row:::
    :::column span="1":::
-      **Settings**
+      **Projects**
    :::column-end:::
    :::column span="1":::
-      - Add and manage organization information: [change organization owner](../accounts/change-organization-ownership.md), [Rename](../accounts/rename-organization.md), [Delete](../accounts/delete-your-organization.md)- [Recover](../accounts/recover-your-organization.md)
-      - [Find or change your organization location](../accounts/change-organization-location.md)
-      - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
+      - Add and manage projects: [Create](../projects/create-project.md), [Rename](../projects/rename-project.md), [Delete](../projects/delete-project.md)
+      - [Add users to projects](../security/add-users-team-project.md)
+      - [Save project data](../projects/save-project-data.md)
    :::column-end:::
    :::column span="1":::
-      From the **Settings** page, you can manage the time zone, owner, region, and other settings that apply to all projects.
+      A project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, minimize the number of projects you create, to keep things simple. For more information, see [About projects and scaling your organization](../projects/about-projects.md).
+   :::column-end:::
+:::row-end:::
+---
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+      **Users**
+   :::column-end:::
+   :::column span="1":::
+      - [Add and manage users](../accounts/add-organization-users.md)
+      - [Add external users](../accounts/add-external-user.md)
+      - [Remove users](../accounts/delete-organization-users.md)
+   :::column-end:::
+   :::column span="1":::
+      For large organizations with a sizable number of users, we recommend that you [manage user access through Azure Active Directory](../accounts/access-with-azure-ad.md). For a small number of users, you can manage user access by adding their Microsoft Service Account (MSA) email. From the account-level Users page, you can also [export the set of users and their access levels](../security/export-users-audit-log.md).
    :::column-end:::
 :::row-end:::
 ---
@@ -746,122 +756,24 @@ For an overview of managing collections, see [Configure and manage TFS resources
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range="<= azure-devops-2020"
-:::row:::
-   :::column span="1":::
-      **Billing**
-   :::column-end:::
-   :::column span="1":::
-      - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
-      - [Add a user to make purchases](../billing/add-backup-billing-managers.md)
-   :::column-end:::
-   :::column span="1":::
-      All billing gets managed through Azure. For more information, see [Billing overview](../billing/overview.md).
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-:::row:::
-   :::column span="1":::
-      **Projects**
-   :::column-end:::
-   :::column span="1":::
-      - Add and manage projects: [Create](../projects/create-project.md), [Rename](../projects/rename-project.md), [Delete](../projects/delete-project.md)
-      - [Add users to projects](../security/add-users-team-project.md)
-      - [Save project data](../projects/save-project-data.md)
-   :::column-end:::
-   :::column span="1":::
-      A project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, minimize the number of projects you create, to keep things simple. For more information, see [About projects and scaling your organization](../projects/about-projects.md).
-   :::column-end:::
-:::row-end:::
----
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      **Policy**
+      **Auditing**
    :::column-end:::
    :::column span="1":::
-      - [Change application access policies](../accounts/change-application-access-policies.md)
-      - [Disable Request Access policy](../accounts/disable-request-access-policy.md)
-      - [Restrict users from creating new organizations with Azure Active Directory policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
-      - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
-      - [Enable Conditional Access or Multi-factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa)
+      - [Access, export, and filter audit logs](../audit/azure-devops-auditing.md)
+      - [Create audit streaming](../audit/auditing-streaming.md)
    :::column-end:::
    :::column span="1":::
-      Set policies to allow or disallow access by other applications or services to the organization.
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range="azure-devops"
-:::row:::
-   :::column span="1":::
-      **Users**
-   :::column-end:::
-   :::column span="1":::
-      - [Add and manage users](../accounts/add-organization-users.md)
-      - [Add external users](../accounts/add-external-user.md)
-      - [Remove users](../accounts/delete-organization-users.md)
-   :::column-end:::
-   :::column span="1":::
-      For large organizations with a sizable number of users, we recommend that you [manage user access through Azure Active Directory](../accounts/access-with-azure-ad.md). For a small number of users, you can manage user access by adding their Microsoft Service Account (MSA) email. From the account-level Users page, you can also [export the set of users and their access levels](../security/export-users-audit-log.md).
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range="<= azure-devops-2020"
-:::row:::
-   :::column span="1":::
-      **Users**
-   :::column-end:::
-   :::column span="1":::
-      - [Add and manage users](../accounts/add-organization-users.md)
-      - [Remove users](../accounts/delete-organization-users.md)
-   :::column-end:::
-   :::column span="1":::
-      For a small number of users, you can manage user access by adding their Microsoft Service Account (MSA) email. From the account-level Users page, you can also [export the set of users and their access levels](../security/export-users-audit-log.md).
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range="azure-devops"
-:::row:::
-   :::column span="1":::
-      **Security**
-   :::column-end:::
-   :::column span="1":::
-      - [Change individual permissions](../security/change-individual-permissions.md)
-      - [Grant or restrict access to select features](../security/restrict-access.md)
-      - [Add administrators](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
-      - [Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)
-      - [Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
-      - [Manage conditional access](../accounts/change-application-access-policies.md)
-   :::column-end:::
-   :::column span="1":::
-      For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-::: moniker range=" < azure-devops"
-:::row:::
-   :::column span="1":::
-      **Security**
-   :::column-end:::
-   :::column span="1":::
-      - [Change individual permissions](../security/change-individual-permissions.md)
-      - [Grant or restrict access to select features](../security/restrict-access.md)
-      - [Add administrators](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
-   :::column-end:::
-   :::column span="1":::
-      For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
+      The auditing page provides a simple view into the audit events recorded for your organization. For more information, see [Review audit log](../audit/azure-devops-auditing.md#review-audit-log), [Export audit events](../audit/azure-devops-auditing.md#export-auditing-events), or learn more about Audit [categories](../audit/azure-devops-auditing.md#categories) and [areas](../audit/azure-devops-auditing.md#areas).
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      **Notifications**
+      **Global notifications**
    :::column-end:::
    :::column span="1":::
       - [Manage collection-level notifications](../../notifications/manage-team-group-global-organization-notifications.md)
@@ -871,6 +783,20 @@ For an overview of managing collections, see [Configure and manage TFS resources
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+      **Usage**
+   :::column-end:::
+   :::column span="1":::
+      - [Monitor usage](../../integrate/concepts/rate-limits.md)
+   :::column-end:::
+   :::column span="1":::
+      Certain rate limits are in place to ensure performance across the cloud service platform.
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end
 ::: moniker range=">= tfs-2015"
 :::row:::
    :::column span="1":::
@@ -888,31 +814,53 @@ For an overview of managing collections, see [Configure and manage TFS resources
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range=">= tfs-2018"
+::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-      **Usage**
+      **Security: Policies**
    :::column-end:::
    :::column span="1":::
-      - [Monitor usage](../../integrate/concepts/rate-limits.md)
+      - [Change application access policies](../accounts/change-application-access-policies.md)
+      - [Disable Request Access policy](../accounts/disable-request-access-policy.md)
+      - [Restrict users from creating new organizations with Azure Active Directory policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
+      - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
+      - [Enable Conditional Access or Multi-factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa)
    :::column-end:::
    :::column span="1":::
-      Certain rate limits are in place to ensure performance across the cloud service platform.
+      Set policies to allow or disallow access by other applications or services to the organization.
+   :::column-end:::
+:::row-end:::
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+      **Security: Permissions**
+   :::column-end:::
+   :::column span="1":::
+      - [Change individual permissions](../security/change-individual-permissions.md)
+      - [Grant or restrict access to select features](../security/restrict-access.md)
+      - [Add administrators](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
+      - [Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)
+      - [Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
+      - [Manage conditional access](../accounts/change-application-access-policies.md)
+   :::column-end:::
+   :::column span="1":::
+      For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker-end
-::: moniker range="azure-devops"
+::: moniker range="< azure-devops"
 :::row:::
    :::column span="1":::
-      **Audit**
+      **Security**
    :::column-end:::
    :::column span="1":::
-      - [Access, export, and filter audit logs](../audit/azure-devops-auditing.md)
-      - [Create audit streaming](../audit/auditing-streaming.md)
+      - [Change individual permissions](../security/change-individual-permissions.md)
+      - [Grant or restrict access to select features](../security/restrict-access.md)
+      - [Add administrators](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
    :::column-end:::
    :::column span="1":::
-      The auditing page provides a simple view into the audit events recorded for your organization. For more information, see [Review audit log](../audit/azure-devops-auditing.md#review-audit-log), [Export audit events](../audit/azure-devops-auditing.md#export-auditing-events), or learn more about Audit [categories](../audit/azure-devops-auditing.md#categories) and [areas](../audit/azure-devops-auditing.md#areas).
+      For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -920,7 +868,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="1":::
-      **Boards, Process**
+      **Boards: Process**
    :::column-end:::
    :::column span="1":::
       - [Customize a project](work/customize-process.md)
@@ -935,7 +883,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker range=">= tfs-2018"
 :::row:::
    :::column span="1":::
-      **Build and release**
+      **Pipelines**<br/>**Build and release**
    :::column-end:::
    :::column span="1":::
       - [Set retention policies](../../pipelines/policies/retention.md)
