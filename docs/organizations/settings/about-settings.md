@@ -829,6 +829,8 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       Set policies to allow or disallow access by other applications or services to the organization.
    :::column-end:::
 :::row-end:::
+---
+::: moniker-end
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
