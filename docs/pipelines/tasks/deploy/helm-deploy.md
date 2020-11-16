@@ -228,9 +228,9 @@ This YAML example demonstrates the **upgrade** command:
 <tr><td><code>command</code><br/>(Command)</td><td>(Required) Select a helm command.<br/>Default value: ls</td></tr>
 <tr><td><code>chartNameForACR</code><br/>(Chart Name For Azure Container Registry)</td><td>(Required) Chart name with which the chart will be stored in Azure Container Registry.<br/></td></tr>
 <tr><td><code>chartPathForACR</code><br/>(Chart Path for Azure Container Registry)</td><td>(Required) Path to the chart directory.</td></tr>
-<tr><td><code>azureSubscriptionEndpointForACR</code><br/>(Azure subscription for Container Registry)</td><td>(Optional) Select an Azure subscription, which has your Azure Container Registry.</td></tr>
-<tr><td><code>azureResourceGroupForACR</code><br/>(Resource group)</td><td>(Optional) Select an Azure Resource Group, which has your Container Registry.</td></tr>
-<tr><td><code>azureContainerRegistry</code><br/>(Azure Container Registry)</td><td>(Optional) Select an Azure Container Registry which will be used for pushing helm charts.</td></tr>
+<tr><td><code>azureSubscriptionEndpointForACR</code><br/>(Azure subscription for Container Registry)</td><td>(Required) Select an Azure subscription, which has your Azure Container Registry.</td></tr>
+<tr><td><code>azureResourceGroupForACR</code><br/>(Resource group)</td><td>(Required) Select an Azure Resource Group, which has your Container Registry.</td></tr>
+<tr><td><code>azureContainerRegistry</code><br/>(Azure Container Registry)</td><td>(Required) Select an Azure Container Registry which will be used for pushing helm charts.</td></tr>
 <tr><td><code>arguments</code><br/>(Arguments)</td><td>Helm command options</td></tr>
 </table>
 
