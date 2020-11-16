@@ -35,13 +35,6 @@ The following types of users can join your organization for free:
 
 ## Add users to your organization
 
-::: moniker range="azure-devops"  
-
-> [!NOTE]  
-> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
-
-::: moniker-end  
-
 Administrators can add users to an organization, grant access to appropriate tooling extensions and service access levels,
 and add users to groups - all in one view.
 
@@ -366,6 +359,28 @@ ID                                    Display Name         Email                
 [!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 
 * * * 
+
+::: moniker range="azure-devops"  
+
+## Restrict users' view to organization projects
+ 
+If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+
+Complete the following steps to add users to the new Project-scoped user group:
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+
+3. Select **Permissions** > **Users**.
+4. Select the user name for whom you want to restrict views into projects.
+5. See the **Project-Scoped Users well known group to hide settings** dropdown menu, and then set to **Allow**.
+
+6. **Save** your changes.
+
+::: moniker-end  
 
 ## FAQ
 
