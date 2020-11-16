@@ -8,7 +8,7 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 09/02/2020
+ms.date: 11/16/2020
 ---
 
 # Access, export, and filter audit logs
@@ -78,6 +78,13 @@ The user or group members have access to view your organization audit events.
 The user or group members have access to view your organization audit events.
 
 * * *
+
+::: moniker range="azure-devops"  
+
+> [!NOTE]  
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+
+::: moniker-end  
 
 ## Review audit log
 

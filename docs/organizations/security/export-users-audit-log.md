@@ -8,8 +8,8 @@ ms.topic: conceptual
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 08/25/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/16/2020
 ---
 
 # Export a list of users and their access levels
@@ -40,6 +40,13 @@ You can get a list of users and groups that have access to your Team Foundation 
   ::: moniker range="< azure-devops"
 * You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/azure/devops/server/admin/add-administrator).
   ::: moniker-end
+
+::: moniker range="azure-devops"  
+
+> [!NOTE]  
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+
+::: moniker-end  
 
 ## Export a list of users
 
