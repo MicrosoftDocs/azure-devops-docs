@@ -276,6 +276,9 @@ In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron synta
 > [!IMPORTANT]
 > The UTC time zones in YAML scheduled triggers don't account for daylight savings time.
 
+> [!TIP]
+> When using 3 letter days of the week and wanting a span of multiple days through Sun, Sun should be considered the first day of the week e.g. For a schedule of midnight EST, Thursday to Sunday, the cron syntax is `0 5 * * Sun,Thu-Sat`
+
 ### Example: Nightly build with different frequencies
 
 In this example, the classic editor scheduled trigger has two entries, producing the following builds.

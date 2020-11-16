@@ -1060,9 +1060,11 @@ Resources in YAML represent sources of pipelines, containers, repositories, and 
 
 ```yaml
 resources:
-  pipelines: [ pipeline ]
+  pipelines: [ pipeline ]  
+  builds: [ build ]
   repositories: [ repository ]
   containers: [ container ]
+  packages: [ package ]
 ```
 
 ### Pipeline resource
@@ -1075,15 +1077,18 @@ You can also enable [pipeline-completion triggers](process/pipeline-triggers.md)
 ```yaml
 resources:
   pipelines:
-  - pipeline: string  # identifier for the pipeline resource
-    project:  string # project for the build pipeline; optional input for current project
-    source: string  # source pipeline definition name
-    branch: string  # branch to pick the artifact, optional; defaults to all branches
-    version: string # pipeline run number to pick artifact, optional; defaults to last successfully completed run
-    trigger:     # optional; triggers are not enabled by default.
-      branches:
-        include: [string] # branches to consider the trigger events, optional; defaults to all branches.
-        exclude: [string] # branches to discard the trigger events, optional; defaults to none.
+  - pipeline: string  # identifier for the resource used in pipeline resource variables
+    project: string # project for the source; optional for current project
+    source: string  # name of the pipeline that produces an artifact
+    version: string  # the pipeline run number to pick the artifact, defaults to latest pipeline successful across all stages; Used only for manual or scheduled triggers
+    branch: string  # branch to pick the artifact, optional; defaults to all branches; Used only for manual or scheduled triggers
+    tags: [ string ] # list of tags required on the pipeline to pickup default artifacts, optional; Used only for manual or scheduled triggers
+    trigger:     # triggers are not enabled by default unless you add trigger section to the resource
+      branches:  # branch conditions to filter the events, optional; Defaults to all branches.
+        include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
+        exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
+      tags: [ string ]  # list of tags to evaluate for trigger event, optional; 
+      stages: [ string ] # list of stages to evaluate for trigger event, optional; 
 ```
 # [Example](#tab/example)
 
@@ -1290,6 +1295,50 @@ The `git` type refers to Azure Repos Git repos.
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitbucket/vscode`.
   Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
+
+### Packages resource
+
+::: moniker range="> azure-devops-2020"
+
+You can consume NuGet and npm GitHub packages as a resource in YAML pipelines. When specifying package resources, set the package as `NuGet` or `npm`. 
+
+## [Schema](#tab/schema)
+
+```yaml
+resources:
+  packages:
+    - package: myPackageAlias # alias for the package resource
+      type: Npm # type of the package NuGet/npm
+      connection: GitHubConnectionName # Github service connection with the PAT type
+      name: nugetTest/nodeapp # <Repository>/<Name of the package>
+      version: 1.0.1 # Version of the packge to consume; Optional; Defaults to latest
+      trigger: true # To enable automated triggers (true/false); Optional; Defaults to no triggers
+```
+
+## [Example](#tab/example)
+
+In this example, there is an [GitHub service connection](library/service-endpoints.md#common-service-connection-types) named `pat-contoso` to a GitHub npm package named `contoso`. Learn more about [GitHub packages](https://github.com/features/packages). 
+
+```yaml
+resources:
+  packages:
+    - package: contoso
+      type: npm
+      connection: pat-contoso
+      name: yourname/contoso 
+      version: 7.130.88 
+      trigger: true
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- getPackage: contoso 
+```
+---
+
+::: moniker-end
+
 
 ## Triggers
 
