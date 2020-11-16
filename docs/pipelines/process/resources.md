@@ -250,7 +250,7 @@ Or to avoid downloading any of the artifacts at all:
 Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder.
 
 ### Pipeline resource variables
-In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables. The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime. 
+In each run, the metadata for a pipeline resource is available to all jobs in the form of below [predefined variables](../build/variables.md). The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime. 
 
 
 ## [Schema](#tab/schema)
