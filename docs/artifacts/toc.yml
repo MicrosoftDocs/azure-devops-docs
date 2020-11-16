@@ -122,6 +122,16 @@
       href: how-to/set-up-upstream-sources.md
     - name: Manage dependencies with upstream sources
       href: tutorials/protect-oss-packages-with-upstream-sources.md
+- name: Artifacts in Azure Pipelines
+  items:
+  - name: Artifacts in Azure Pipelines overview
+    href: ../pipelines/artifacts/artifacts-overview.md
+  - name: Publish and download artifacts in Azure Pipeline
+    href: ../pipelines/artifacts/pipeline-artifacts.md
+  - name: Pipeline caching
+    href: ../pipelines/release/caching.md
+  - name: Set up retention policies
+    href: ../pipelines/policies/retention.md
 - name: Working with symbols
   items:
   - name: Symbol files
@@ -134,16 +144,6 @@
     href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
   - name: Setting up GitHub SourceLinking
     href: symbols/setting-up-github-sourcelinking.md
-- name: Artifacts in Azure Pipelines
-  items:
-  - name: Artifacts in Azure Pipelines overview
-    href: ../pipelines/artifacts/artifacts-overview.md
-  - name: Publish and download artifacts in Azure Pipeline
-    href: ../pipelines/artifacts/pipeline-artifacts.md
-  - name: Pipeline caching
-    href: ../pipelines/release/caching.md
-  - name: Set up retention policies
-    href: ../pipelines/policies/retention.md
 - name: Concepts and references
   items:
   - name: Key concepts
@@ -154,3 +154,9 @@
     href: reference/artifactignore.md
   - name: Collaborate more with package componentization
     href: collaborate-with-packages.md
+- name: Developer resources
+  items:
+  - name: REST API reference
+    href: rest/api/azure/devops/index
+  - name: Azure DevOps CLI
+    href: /azure/devops/cli/index
