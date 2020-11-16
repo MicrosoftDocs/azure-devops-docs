@@ -118,12 +118,12 @@ In this example, we grant members assigned to the Test Admin group permissions t
 #### [Preview page](#tab/preview-page) 
 
 > [!div class="mx-imgBorder"]  
-> ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-project-level-test-permissions-new-ui.png)  
+> ![Screenshot of Set project-level test permissions for a custom group, Team Admin.](media/test-permissions/set-project-level-test-permissions-new-ui.png)  
 
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]  
-> ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-project-level-test-permissions-old-ui.png)  
+> ![Screenshot of Set project-level test permissions for a custom group, Team Admin.](media/test-permissions/set-project-level-test-permissions-old-ui.png)  
 
 ::: moniker-end    
 
@@ -161,7 +161,7 @@ In this example, we grant members assigned to the Team Collection Admin group pe
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]  
-> ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-collection-level-test-permissions-old-ui.png)  
+> ![Screenshot of set project-level test permissions for a custom group, Team Admin.](media/test-permissions/set-collection-level-test-permissions-old-ui.png)  
 
 * * *
 
