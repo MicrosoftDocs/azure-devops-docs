@@ -47,33 +47,33 @@ The follow table indicates which preview features can be enabled per user or tea
 
 ---
 :::row:::
-   :::column span="2":::
+   :::column span="3":::
       **Preview features**
    :::column-end:::
-   :::column span="1":::
+   :::column span=".5"::: 
       **Per user**
    :::column-end:::
-   :::column span="1":::
+   :::column span=".5"::: 
       **Per organization**
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="2":::
+   :::column span="3":::
       [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
       [Experimental themes](#experimental-themes)  
       [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  
       [Git Forks](../../repos/git/forks.md)  
       [New account manager](#account-manager)  
    :::column-end:::
-   :::column span="1":::
+   :::column span=".5"::: 
        ✔️   
        ✔️   
       &nbsp;  
       &nbsp;  
        ✔️   
    :::column-end:::
-   :::column span="1":::
+   :::column span=".5"::: 
        ✔️   
        ✔️   
        ✔️   
@@ -82,21 +82,21 @@ The follow table indicates which preview features can be enabled per user or tea
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="3":::
       [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
       [New Delivery Plans Experience](https://devblogs.microsoft.com/devops/delivery-plans-2-0-public-preview/)  
       New release progress views  
       [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)  
       [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
    :::column-end:::
-   :::column span="1":::
+   :::column span=".5"::: 
        ✔️   
       &nbsp;  
        ✔️   
        ✔️   
        ✔️  
    :::column-end:::
-   :::column span="1":::
+   :::column span=".5"::: 
        ✔️   
        ✔️   
        ✔️   
@@ -105,21 +105,21 @@ The follow table indicates which preview features can be enabled per user or tea
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="3":::
       [New service connections experience](../../pipelines/library/service-endpoints.md)  
       [New Settings Search in the organization settings panel](#search-org-settings)  
       [New Teams page](../../organizations/settings/add-teams.md)  
       [New Test Plans Page](../../test/new-test-plans-page.md)  
       New TFVC pages
    :::column-end:::
-   :::column span="1":::
+   :::column span=".5"::: 
        ✔️   
        ✔️   
        ✔️   
        ✔️   
        ✔️  
    :::column-end:::
-   :::column span="1":::
+   :::column span=".5"::: 
        ✔️   
        ✔️   
        ✔️   
@@ -128,21 +128,21 @@ The follow table indicates which preview features can be enabled per user or tea
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="3":::
       New Wiki experience  
       [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
       [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
       [Project-Scoped Users well known group to hide settings](../../organizations/projects/about-projects.md#project-scoped-user-group) 
       Task Insights for Failed Pipeline Runs 
    :::column-end:::
-   :::column span="1":::
+   :::column span=".5":::
       &nbsp;  
        ✔️   
        ✔️   
       &nbsp;   
        ✔️   
    :::column-end:::
-   :::column span="1"::: 
+   :::column span=".5"::: 
        ✔️   
        ✔️   
        ✔️  
