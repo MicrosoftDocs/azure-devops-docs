@@ -32,8 +32,17 @@ Auditing is turned on by default for all Azure DevOps Services organizations. Yo
 
 ## Prerequisites
 
-•	Members of the Project Collection Valid Users group can view the Auditing page and export audit logs.
-•	Members of the Project Collection Administrators group have full access to all auditing features.
+By default, Project Collection Administrators are the only group that have full access to the auditing feature.
+
+### Audit permissions
+
+**Project Collection Administrators group**
+
+Members of the Project Collection Administrators group have full access to all auditing features.
+
+**Project Collection Valid Users group**
+
+Members of the Project Collection Valid Users group can view the Auditing page and export audit logs.
 
 > [!NOTE]  
 > If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
