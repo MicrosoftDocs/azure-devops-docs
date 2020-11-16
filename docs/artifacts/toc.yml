@@ -12,12 +12,6 @@
     href: artifact-storage.md
   - name: Best practices
     href: concepts/best-practices.md
-  - name: Key concepts
-    href: artifacts-key-concepts.md
-  - name: Use the .artifactignore file
-    href: reference/artifactignore.md
-  - name: Collaborate more with package componentization
-    href: collaborate-with-packages.md
 - name: Working with packages
   items:
   - name: About packages
@@ -28,8 +22,6 @@
       href: reference/limits.md
     - name: Follow a package for publish alerts
       href: how-to/follow-package-notifications.md
-    - name: Package graphs
-      href: concepts/package-graph.md
   - name: Working with NuGet
     items:
     - name: NuGet quickstart
@@ -152,3 +144,13 @@
     href: ../pipelines/release/caching.md
   - name: Set up retention policies
     href: ../pipelines/policies/retention.md
+- name: Concepts and references
+  items:
+  - name: Key concepts
+    href: artifacts-key-concepts.md
+  - name: Package graphs
+    href: concepts/package-graph.md
+  - name: Use the .artifactignore file
+    href: reference/artifactignore.md
+  - name: Collaborate more with package componentization
+    href: collaborate-with-packages.md
