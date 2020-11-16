@@ -96,9 +96,6 @@
       href: quickstarts/universal-packages.md
     - name: Publish to a Universal feed (YAML/Classic)
       href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
-
-
-
 - name: Feeds, views, and upstream sources
   items:
   - name: Feeds
@@ -119,17 +116,12 @@
       href: tutorials/private-powershell-library.md
     - name: Use public feeds to share your packages publicly
       href: tutorials/share-packages-publicly.md
-  
-  
   - name: Feed views
     items:
     - name: What are feed views?
       href: concepts/views.md
     - name: Promote a package to a view
       href: feeds/views.md
-
-
-
   - name: Upstrean sources
     items:
     - name: Understanding upstream sources
@@ -138,12 +130,7 @@
       href: how-to/set-up-upstream-sources.md
     - name: Manage dependencies with upstream sources
       href: tutorials/protect-oss-packages-with-upstream-sources.md
-
-
-
-
-
-- name: Symbols
+- name: Working with symbols
   items:
   - name: Symbol files
     href: concepts/symbols.md
@@ -155,3 +142,13 @@
     href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
   - name: Setting up GitHub SourceLinking
     href: symbols/setting-up-github-sourcelinking.md
+- name: Artifacts in Azure Pipelines
+  items:
+  - name: Artifacts in Azure Pipelines overview
+    href: ../pipelines/artifacts/artifacts-overview.md
+  - name: Publish and download artifacts in Azure Pipeline
+    href: ../pipelines/artifacts/pipeline-artifacts.md
+  - name: Pipeline caching
+    href: ../pipelines/release/caching.md
+  - name: Set up retention policies
+    href: ../pipelines/policies/retention.md
