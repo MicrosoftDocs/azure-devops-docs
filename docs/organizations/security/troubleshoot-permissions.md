@@ -37,7 +37,7 @@ If a user's having permissions issues and you use default security groups or cus
 
 ::: moniker range="< azure-devops"
 
-[Change access levels](./change-access-levels.md?view=azure-devops)
+[Change access levels](change-access-levels.md)
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 ::: moniker-end
 
-For more information, see [Grant or restrict access to select features and functions](./restrict-access.md?view=azure-devops) or [Change individual permissions](./change-individual-permissions.md?view=azure-devops).
+For more information, see [Grant or restrict access to select features and functions](restrict-access.md) or [Change individual permissions](change-individual-permissions.md).
 
 ## Membership in a group which has lesser permissions
 
@@ -132,7 +132,7 @@ A user can lose access for the following reasons:
 
 *   Your organization has more users with Basic access than the number of users that you're paying for in Azure. Your organization includes five free users with Basic access. If you need to add more users with Basic access, you can [pay for these users](../billing/buy-basic-access-add-users.md). 
 
-Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](delete-organization-users.md).
+Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](../accounts/delete-organization-users.md).
 
 
 
