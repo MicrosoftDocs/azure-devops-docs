@@ -671,7 +671,6 @@ variables:
 
 You can export reusable sections of your pipeline to a separate file. 
 These separate files are known as templates. 
-Azure Pipelines supports four kinds of templates:
 
 Azure Pipelines supports four kinds of templates:
 - [Stage](#stage-templates)
