@@ -77,7 +77,9 @@
   - name: Change individual permissions 
     href: change-individual-permissions.md
   - name: Grant or restrict permissions to select tasks
-    href: restrict-access.md   
+    href: restrict-access.md
+  - name: Troubleshoot permissions
+    href: troubleshoot-permissions.md
 - name: Set permissions for an object or role
   items: 
   - name: Set work tracking & plan permissions 

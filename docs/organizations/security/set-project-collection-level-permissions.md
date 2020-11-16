@@ -7,7 +7,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 07/28/2020
 ---
 
@@ -547,3 +547,4 @@ A: You can find detailed information about individual permissions and their rela
 - [Permissions lookup reference](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)
