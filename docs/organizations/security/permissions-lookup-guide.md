@@ -700,3 +700,4 @@ for all team projects defined in the account or collection:
 - [About security roles](about-security-roles.md). 
 - [Permissions and groups reference](permissions.md) 
 - [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
+- [Troubleshoot permissions](troubleshoot-permissions.md)
