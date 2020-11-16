@@ -56,30 +56,30 @@ Before you begin, you need:
 
 1. Update your pipeline to include the `CopyFiles@2` and `PublishBuildArtifacts@1` tasks. This will create an artifact that you can deploy to your virtual machine scale set.
 
-  ```yaml
-    trigger: none
+    ```yaml
+      trigger: none
 
-    pool:
-      vmImage: 'ubuntu-latest'
+      pool:
+        vmImage: 'ubuntu-latest'
 
-    steps:
-    - task: Maven@1
-      displayName: 'Maven $(mavenPOMFile)'
-      inputs:
-        mavenPomFile: 'pom.xml'
-        testResultsFiles: '**/TEST*.xml'
+      steps:
+      - task: Maven@1
+        displayName: 'Maven $(mavenPOMFile)'
+        inputs:
+          mavenPomFile: 'pom.xml'
+          testResultsFiles: '**/TEST*.xml'
 
-    - task: CopyFiles@2
-      displayName: 'Copy File to: $(TargetFolder)'
-      inputs:
-        SourceFolder: '$(Build.SourcesDirectory)'
-        Contents: |
-        **/*.sh 
-        **/*.war
-        **/*jar-with-dependencies.jar
-        TargetFolder: '$(System.DefaultWorkingDirectory)/pipeline-artifacts/'
-        flattenFolders: true 
-  ```
+      - task: CopyFiles@2
+        displayName: 'Copy File to: $(TargetFolder)'
+        inputs:
+          SourceFolder: '$(Build.SourcesDirectory)'
+          Contents: |
+          **/*.sh 
+          **/*.war
+          **/*jar-with-dependencies.jar
+          TargetFolder: '$(System.DefaultWorkingDirectory)/pipeline-artifacts/'
+          flattenFolders: true 
+     ```
 
 ## Create a custom image and upload it to Azure
 
@@ -87,9 +87,9 @@ You'll need a resource group, storage account, and shared image gallery for your
 
 1. Create a resource group with [az group create](/cli/azure/group#az-group-create). This example creates a resource group named *myVMSSResourceGroup* in the *eastus2* location:
 
-```azurecli-interactive
-az group create --name myVMSSResourceGroup --location eastus2
-```
+    ```azurecli-interactive
+    az group create --name myVMSSResourceGroup --location eastus2
+    ```
 
 2. Create a new storage account. This example creates a storage account, `vmssstorageaccount`.
 
