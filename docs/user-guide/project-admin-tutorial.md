@@ -27,9 +27,6 @@ Ensure that all members of your organization or group are added to your organiza
 
 Larger enterprises may want to consider using Azure Active Directory to manage permissions and user access. To learn more, see [About organization management](../organizations/accounts/organization-management.md).
 
-> [!NOTE]  
-> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group).
-
 ::: moniker-end  
 
 ::: moniker range="< azure-devops"
@@ -46,6 +43,13 @@ To delegate the task of managing user access, add a user with Stakeholder or hig
 ## Grant or restrict permissions
 
 Access to features and functions is controlled by access-level assignments, permissions, and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md). 
+
+::: moniker range="azure-devops"  
+
+> [!NOTE]  
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group).
+
+::: moniker-end  
 
 To delegate specific tasks to others, add them to a built-in or custom security group or add them to a specific role. To learn more, see the following articles.
 
