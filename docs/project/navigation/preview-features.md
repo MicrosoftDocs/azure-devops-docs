@@ -84,33 +84,33 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="2":::
       [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
+      [New Delivery Plans Experience](https://devblogs.microsoft.com/devops/delivery-plans-2-0-public-preview/)  
+      New release progress views  
       [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)  
       [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
+   :::column-end:::
+   :::column span="1":::
+       ✔️   
+      &nbsp;  
+       ✔️   
+       ✔️   
+       ✔️  
+   :::column-end:::
+   :::column span="1":::
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
       [New service connections experience](../../pipelines/library/service-endpoints.md)  
       [New Settings Search in the organization settings panel](#search-org-settings)  
-   :::column-end:::
-   :::column span="1":::
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️  
-   :::column-end:::
-   :::column span="1":::
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-       ✔️   
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="2":::
       [New Teams page](../../organizations/settings/add-teams.md)  
       [New Test Plans Page](../../test/new-test-plans-page.md)  
-      New TFVC Page  
-      New Wiki experience  
-      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
+      New TFVC pages
    :::column-end:::
    :::column span="1":::
        ✔️   
@@ -129,9 +129,11 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
+      New Wiki experience  
+      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
       [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
       [Project-Scoped Users well known group to hide settings](../../organizations/projects/about-projects.md#project-scoped-user-group).  
+      ---
       Task Insights for Failed Pipeline Runs 
    :::column-end:::
    :::column span="1":::
@@ -144,6 +146,7 @@ The follow table indicates which preview features can be enabled per user or tea
        ✔️   
        ✔️   
        ✔️  
+      ---
        ✔️   
    :::column-end:::
 :::row-end:::
@@ -317,6 +320,7 @@ When enabled, you can enter keywords to search all settings within the Organizat
 
 ### Azure Pipelines
 
+- [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
 - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
 - [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
 - [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)
@@ -337,6 +341,7 @@ When enabled, you can enter keywords to search all settings within the Organizat
 
 - [New Repos landing pages](/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview)  
 - [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
+
 
 ### Azure Artifacts 
 
