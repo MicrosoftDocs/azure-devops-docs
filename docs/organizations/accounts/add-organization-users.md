@@ -8,7 +8,7 @@ ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-ms.date: 08/25/2020
+ms.date: 11/16/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -34,6 +34,13 @@ The following types of users can join your organization for free:
 [!INCLUDE [prerequisites-add-users-org](../../includes/prerequisites-add-users-org.md)]
 
 ## Add users to your organization
+
+::: moniker range="azure-devops"  
+
+> [!NOTE]  
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+
+::: moniker-end  
 
 Administrators can add users to an organization, grant access to appropriate tooling extensions and service access levels,
 and add users to groups - all in one view.
@@ -84,9 +91,7 @@ To give other users access to your organization, add their email addresses.
 
 ::: moniker-end
 
-
 Choose the **Current page** for instructions. 
-
 
 #### [Current page](#tab/current-page)
 
@@ -199,7 +204,7 @@ When you add members to projects without setting up billing, they automatically 
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
 
-2. Open your project, and then select **Project settings > Teams**. Then, select your project.
+2. Open your project, and then select **Project settings** > **Teams**. Then, select your project.
 
    ![The Projects page](media/shared/open-project-settings.png)
 
@@ -244,7 +249,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
    ![.](../../media/open-organization-settings-users-preview.png)
 
-4. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu.
+4. Select a user or group of users. Then, select **... Actions** at the end of the **Name** column to open the context menu.
 
     In the context menu, select one of the following options:
 
@@ -260,9 +265,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 ::: moniker-end
 
-
 Choose the **Current page** for instructions. 
-
 
 #### [Current page](#tab/current-page)
 

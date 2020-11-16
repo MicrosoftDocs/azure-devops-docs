@@ -1,15 +1,15 @@
 ---
-title: Get started as a project admin or organization Owner
+title: Get started as a project administrator or organization Owner
 titleSuffix:  Azure DevOps
 ms.custom: seodec18
-description: Learn how to structure a project, manage users, and more to support your software development teams in Azure DevOps
+description: Learn how to structure a project, manage users, and more to support your software development teams in Azure DevOps.
 ms.technology: devops-new-user 
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 06/14/2019
+monikerRange: '<= azure-devops'
+ms.date: 11/16/2020
 ---
 
 # Manage your project
@@ -18,8 +18,7 @@ ms.date: 06/14/2019
 
 With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults.  
 
-As an organization Owner or a Project Administrator, there are a few tasks you might want to do to ensure a smooth operational experience. If you need to manage an organization with a large user base, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.  
-
+As an organization Owner or a Project Administrator, there are a few tasks you might want to do to ensure a smooth operational experience. If you need to manage an organization with a large user base, consider additional tasks to structure your projects to support multiple teams or software development applications.  
 
 ## Add users to your project
 
@@ -27,6 +26,9 @@ As an organization Owner or a Project Administrator, there are a few tasks you m
 Ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine.
 
 Larger enterprises may want to consider using Azure Active Directory to manage permissions and user access. To learn more, see [About organization management](../organizations/accounts/organization-management.md).
+
+> [!NOTE]  
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group).
 
 ::: moniker-end  
 
@@ -140,7 +142,7 @@ To learn more, see the following articles:
 
 ::: moniker range="<= tfs-2018"
 
-All work-tracking tools are available immediately after you create a project.  Often, one or more users may want to customize the experience to meet one or more business needs. However, you may want to establish a methodology for who manages the updates and evaluates requests.
+All work-tracking tools are available immediately after you create a project. Often, one or more users may want to customize the experience to meet one or more business needs. But, you may want to establish a methodology for who manages the updates and evaluates requests.
 
 To learn more, see [On-premises XML process model](../reference/on-premises-xml-process-model.md).
 
