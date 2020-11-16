@@ -1317,7 +1317,7 @@ resources:
 
 ## [Example](#tab/example)
 
-In this example, there is an [GitHub service connection](../library/service-endpoints.md#common-service-connection-types) named `pat-contoso` to a GitHub npm package named `contoso`. Learn more about [GitHub packages](https://github.com/features/packages). 
+In this example, there is an [GitHub service connection](library/service-endpoints.md#common-service-connection-types) named `pat-contoso` to a GitHub npm package named `contoso`. Learn more about [GitHub packages](https://github.com/features/packages). 
 
 ```yaml
 resources:
