@@ -277,7 +277,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 ::: moniker range="azure-devops"  
 
 > [!NOTE]  
-> Users added to the **Project-scoped Users** group won't be able to access Process settings if the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group won't be able to access Process settings if the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
 
 ::: moniker-end  
 
