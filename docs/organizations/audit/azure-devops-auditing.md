@@ -30,17 +30,18 @@ Audit events can be the following occurrences:
 
 Auditing is turned on by default for all Azure DevOps Services organizations. You can't turn auditing off, which ensures that you never miss an actionable event. Events get stored for 90 days and then they’re deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
 
-> [!NOTE]
-> Azure DevOps Server doesn't support Auditing yet, as it's still in Public Preview.
-
 ## Prerequisites
 
-By default, Project Collection Administrators are the only group that have access to the auditing feature. 
+•	Members of the Project Collection Valid Users group can view the Auditing page and export audit logs.
+•	Members of the Project Collection Administrators group have full access to all auditing features.
+
+> [!NOTE]  
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
 
 ## Access auditing
 
 > [!NOTE]
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the new user interface for the Organization Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page)
 
@@ -78,13 +79,6 @@ The user or group members have access to view your organization audit events.
 The user or group members have access to view your organization audit events.
 
 * * *
-
-::: moniker range="azure-devops"  
-
-> [!NOTE]  
-> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
-
-::: moniker-end  
 
 ## Review audit log
 
