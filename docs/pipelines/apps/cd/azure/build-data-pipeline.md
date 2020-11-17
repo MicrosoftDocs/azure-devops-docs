@@ -77,10 +77,11 @@ To make commands easier to run, start by selecting a default region. After you s
     keyVault="keyvault${resourceSuffix}"
     ```
 
-1. Create one more Bash variable to store the names of your resource group.
+1. Create one more Bash variable to store the names and the region of your resource group. Replace `<REGION>` with the region that you chose earlier for the default region.
 
     ```bash
     rgName='data-pipeline-cicd-rg'
+    region='<REGION>'
     ```
 
 1. Create variable names for your Azure Data Factory and Azure Databricks instances.
@@ -241,7 +242,7 @@ You will use Azure Key Vault to store all connection information for your Azure 
 1. Add the Azure DevOps extension if it isn't already installed. 
 
    ```azurecli
-   az extension add -name azure-devops 
+   az extension add --name azure-devops 
    ```  
 1. Sign in to your [Azure DevOps account](../../../../cli/log-in-via-pat.md).
 
@@ -250,17 +251,17 @@ You will use Azure Key Vault to store all connection information for your Azure 
    ```
 
    ```
-   az pipelines variable-group create --name datapipeline-vg -p <yourazuredevopsprojectname> --variables `
-                                       "LOCATION=$region" `
-                                       "RESOURCE_GROUP=$rgName" `
-                                       "DATA_FACTORY_NAME=$datafactorydev" `
-                                       "DATA_FACTORY_DEV_NAME=$datafactorydev" `
-                                       "DATA_FACTORY_TEST_NAME=$datafactorytest" `
-                                       "ADF_PIPELINE_NAME=DataPipeline" `
-                                       "DATABRICKS_NAME=$databricksname" `
-                                       "AZURE_RM_CONNECTION=azure_rm_connection" `
-                                       "DATABRICKS_URL=<URL copied from Databricks in Azure portal>" `
-                                       "STORAGE_ACCOUNT_NAME=$storageName" `
+   az pipelines variable-group create --name datapipeline-vg -p <yourazuredevopsprojectname> --variables \
+                                       "LOCATION=$region" \
+                                       "RESOURCE_GROUP=$rgName" \
+                                       "DATA_FACTORY_NAME=$datafactorydev" \
+                                       "DATA_FACTORY_DEV_NAME=$datafactorydev" \
+                                       "DATA_FACTORY_TEST_NAME=$datafactorytest" \
+                                       "ADF_PIPELINE_NAME=DataPipeline" \
+                                       "DATABRICKS_NAME=$databricksname" \
+                                       "AZURE_RM_CONNECTION=azure_rm_connection" \
+                                       "DATABRICKS_URL=<URL copied from Databricks in Azure portal>" \
+                                       "STORAGE_ACCOUNT_NAME=$storageName" \
                                        "STORAGE_CONTAINER_NAME=rawdata"
    ```
 

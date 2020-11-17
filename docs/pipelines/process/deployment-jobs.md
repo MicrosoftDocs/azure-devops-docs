@@ -32,22 +32,29 @@ Here is the full syntax to specify a deployment job:
 
 ```YAML
 jobs:
-- deployment: string   # Name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
-  displayName: string  # Friendly name to display in the UI.
-  pool:                # See pool schema.
+- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
+  displayName: string  # friendly name to display in the UI
+  pool:                # see pool schema
     name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.
     demands: string | [ string ]
-  dependsOn: string 
-  condition: string 
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
+  dependsOn: string
+  condition: string
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
-  container: containerReference # Container to run the job inside.
-  services: { string: string | container } # Container resources to run as a service container.
-  timeoutInMinutes: nonEmptyString        # How long to run the job before automatically cancelling.
-  cancelTimeoutInMinutes: nonEmptyString  # How much time to give 'run always even if cancelled tasks' before killing them.
-  variables: { string: string } | [ variable | variableReference ]  
-  environment: string  # Target environment name and optionally a resource-name to record the deployment history; format: <environment-name>.<resource-name>
-  strategy: [ deployment strategy ] # See deployment strategy schema.
+  container: containerReference # container to run this job inside
+  services: { string: string | container } # container resources to run as a service container
+  timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
+  variables: # several syntaxes, see specific section
+  environment: string  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
+  strategy:
+    runOnce:    #rolling, canary are the other strategies that are supported
+      deploy:
+        steps:
+        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
+
 
 ## Deployment strategies
 
@@ -117,7 +124,7 @@ We currently only support the rolling strategy to VM resources.
 
 For example, a rolling deployment typically waits for deployments on each set of virtual machines to complete before proceeding to the next set of deployments. You could do a health check after each iteration and if a significant issue occurs, the rolling deployment can be stopped.
 
-Rolling deployments can be configured by specifying the keyword `rolling:` under `strategy:` node. 
+Rolling deployments can be configured by specifying the keyword `rolling:` under the `strategy:` node. 
 The `strategy.name` variable is available in this strategy block, which takes the name of the strategy. In this case, rolling.
 
 ```YAML

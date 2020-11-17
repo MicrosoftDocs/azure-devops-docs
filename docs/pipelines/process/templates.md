@@ -521,6 +521,9 @@ If you want to use a particular, fixed version of the template, be sure to pin t
 The `refs` are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
 
+> [!NOTE]
+> If no `ref` is specified, the pipeline will default to using `refs/heads/master`.
+
 You may also use `@self` to refer to the repository where the main pipeline was found.
 This is convenient for use in `extends` templates if you want to refer back to contents in the extending pipeline's repository.
 For example:
