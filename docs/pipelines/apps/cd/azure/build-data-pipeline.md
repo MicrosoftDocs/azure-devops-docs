@@ -111,12 +111,12 @@ To make commands easier to run, start by selecting a default region. After you s
         --kind StorageV2
     ```
 
-    1. Run the following `az storage container create` command to create two containers, `rawdata` and `prepareddata`.
-    
-        ```azurecli
-        az storage container create -n rawdata --account-name $storageName 
-        az storage container create -n prepareddata --account-name $storageName 
-        ```
+1. Run the following `az storage container create` command to create two containers, `rawdata` and `prepareddata`.
+
+    ```azurecli
+    az storage container create -n rawdata --account-name $storageName 
+    az storage container create -n prepareddata --account-name $storageName 
+    ```
     
 1. Run the following `az keyvault create` command to create a new key vault. 
 
