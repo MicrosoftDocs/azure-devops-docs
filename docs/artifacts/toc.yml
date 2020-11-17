@@ -157,6 +157,6 @@
 - name: Developer resources
   items:
   - name: REST API reference
-    href: rest/api/azure/devops/index
+    href: /rest/api/azure/devops/index
   - name: Azure DevOps CLI
     href: /azure/devops/cli/index
