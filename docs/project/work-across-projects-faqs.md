@@ -23,7 +23,7 @@ To learn about specific cross-project features, see [Work across projects](navig
 
 ::: moniker range="azure-devops"  
 > [!NOTE]  
-> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
+> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../organizations/projects/about-projects.md#project-scoped-user-group). 
   ::: moniker-end  
 
 ### Q: How many projects should I create? 
