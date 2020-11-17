@@ -8,7 +8,7 @@ ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-ms.date: 08/25/2020
+ms.date: 11/16/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -84,9 +84,7 @@ To give other users access to your organization, add their email addresses.
 
 ::: moniker-end
 
-
 Choose the **Current page** for instructions. 
-
 
 #### [Current page](#tab/current-page)
 
@@ -165,7 +163,7 @@ ID                                    Display Name          Email               
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com   contoso@contoso.com   stakeholder     Stakeholder     pending 
 ```
 
-You can also add the user to an Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md?view=azure-devops).
+You can also add the user to an Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
 
 ```azurecli
 az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com
@@ -199,7 +197,7 @@ When you add members to projects without setting up billing, they automatically 
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
 
-2. Open your project, and then select **Project settings > Teams**. Then, select your project.
+2. Open your project, and then select **Project settings** > **Teams**. Then, select your project.
 
    ![The Projects page](media/shared/open-project-settings.png)
 
@@ -244,7 +242,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
    ![.](../../media/open-organization-settings-users-preview.png)
 
-4. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu.
+4. Select a user or group of users. Then, select **... Actions** at the end of the **Name** column to open the context menu.
 
     In the context menu, select one of the following options:
 
@@ -260,9 +258,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 ::: moniker-end
 
-
 Choose the **Current page** for instructions. 
-
 
 #### [Current page](#tab/current-page)
 
@@ -363,6 +359,28 @@ ID                                    Display Name         Email                
 [!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 
 * * * 
+
+::: moniker range="azure-devops"  
+
+## Restrict users' view to organization projects
+ 
+If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+
+Complete the following steps to add users to the new Project-scoped user group:
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+
+3. Select **Permissions** > **Users**.
+4. Select the user name for whom you want to restrict views into projects.
+5. See the **Project-Scoped Users well known group to hide settings** dropdown menu, and then set to **Allow**.
+
+6. **Save** your changes.
+
+::: moniker-end  
 
 ## FAQ
 
