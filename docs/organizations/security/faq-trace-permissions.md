@@ -36,7 +36,7 @@ For information on adding users to an organization and setting their access leve
 
 ::: moniker range="< azure-devops"
 
-For information on setting access levels, see [Change access levels](./change-access-levels.md?view=azure-devops)
+For information on setting access levels, see [Change access levels](./change-access-levels.md)
 
 ::: moniker-end
 
@@ -93,5 +93,5 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 ## Related articles
 
-* [Grant or restrict access to select features and functions](./restrict-access.md?view=azure-devops)
-* [Change individual permissions](./change-individual-permissions.md?view=azure-devops)
+* [Grant or restrict access to select features and functions](./restrict-access.md)
+* [Change individual permissions](./change-individual-permissions.md)
