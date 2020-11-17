@@ -1,7 +1,7 @@
 ---
 title: Delete, remove project
 titleSuffix: Azure DevOps
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Delete or remove a project from Azure DevOps or Team Foundation Server
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.technology: devops-accounts
