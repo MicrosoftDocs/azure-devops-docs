@@ -309,15 +309,12 @@ All
     ```
 
 ## Related articles
-To learn more about creating and saving queries, see also: 
+
 
 - [Query editor](using-queries.md)
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Query by date or current iteration](query-by-date-or-current-iteration.md)
-
-
-### Get history programmatically
-See [Work item tracking](/rest/api/azure/devops/wit/)  for ways to extract history information programmatically.  
+ 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
