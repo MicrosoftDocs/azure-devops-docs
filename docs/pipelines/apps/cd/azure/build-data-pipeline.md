@@ -20,7 +20,7 @@ Learn how to grab data from a CSV (comma-separated values) file and save the dat
 Before you begin, you need:
 - An Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
-- Data from ([sample.csv](https://github.com/MicrosoftDocs/azure-devops-docs-samples/raw/main/azure-data-pipeline/data/sample.csv)).
+- Data from [sample.csv](https://github.com/MicrosoftDocs/azure-devops-docs-samples/raw/main/azure-data-pipeline/data/sample.csv).
 - Access to the [data pipeline solution](https://github.com/MicrosoftDocs/azure-devops-docs-samples/tree/main/azure-data-pipeline) in GitHub. 
 - [DevOps for Azure Databricks](https://marketplace.visualstudio.com/items?itemName=riserrad.azdo-databricks).
 
@@ -113,10 +113,10 @@ To make commands easier to run, start by selecting a default region. After you s
 
     1. Run the following `az storage container create` command to create two containers, `rawdata` and `prepareddata`.
     
-    ```azurecli
-    az storage container create -n rawdata --account-name $storageName 
-    az storage container create -n prepareddata --account-name $storageName 
-    ```
+        ```azurecli
+        az storage container create -n rawdata --account-name $storageName 
+        az storage container create -n prepareddata --account-name $storageName 
+        ```
     
 1. Run the following `az keyvault create` command to create a new key vault. 
 
@@ -216,7 +216,7 @@ You'll use Azure Key Vault to store all connection information for your Azure se
     * StorageKey: `your-storage-key`    
     * StorageConnectString: `your-storage-connection`
 
-    Then, run the following `az keyvault secret set` command to add secrets to your key vault.  
+1. Run the following `az keyvault secret set` command to add secrets to your key vault.  
    
     ```azurecli
     az keyvault secret set --vault-name "$keyVault" --name "databricks-token" --value "your-databricks-pat"
