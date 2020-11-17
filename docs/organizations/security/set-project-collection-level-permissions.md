@@ -23,7 +23,7 @@ An organization is the container for several projects that share resources. For 
 
 
 > [!div class="mx-tdBreakAll"]  
-> | Project level | Organization/Collection level| 
+> | Project level | Organization level| 
 > |-------------|----------| 
 > |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- *TeamName* Team |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Project-Scoped Users<br/>- Security Service Group | 
 
@@ -32,12 +32,14 @@ An organization is the container for several projects that share resources. For 
 ::: moniker range="< azure-devops"
 A project collection is the container for several projects that share resources. For more information about projects and project collections, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).
 
-
-
+ 
 > [!Note]  
 > The following list indicates the latest groups defined for Azure DevOps and TFS 2017 and later versions. For earlier versions of Azure DevOps, the list may differ. Only add service accounts to [Azure DevOps service account groups](/azure/devops/server/admin/service-accounts-dependencies). To understand valid user groups, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-security-identity.md#validusers). 
 
-
+> [!div class="mx-tdBreakAll"]  
+> | Project level | Collection level| 
+> |-------------|----------| 
+> |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- *TeamName* Team |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Security Service Group | 
 
 ::: moniker-end
 
