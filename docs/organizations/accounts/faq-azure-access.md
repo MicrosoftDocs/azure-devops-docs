@@ -242,7 +242,7 @@ access level. The user also appears in the security settings.
 
 ### Q: Can I use Azure AD groups to query work items by using the "In Group" clause?
 
-A: No, querying on Azure AD groups aren't supported.
+A: No, querying on Azure AD groups isn't supported.
 
 ### Q: Can I use Azure AD groups to set up field rules in my work item templates?
 
@@ -356,7 +356,7 @@ A: Yes. For more information, see [Switch to another Azure AD](change-azure-ad-c
 
 ### Q: My alternate credentials don't work anymore. What do I do?
 
-A: Azure DevOps no longer supports Alternate Credentials authentication since the beginning of March 2, 2020. If you're still using Alternate Credentials, we strongly encourage you to switch to a more secure authentication method (for example, personal access tokens). [Learn more](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
+A: Azure DevOps no longer supports Alternate Credentials authentication since the beginning of March 2, 2020. If you're still using Alternate Credentials, we strongly encourage you to switch to a more secure authentication method (for example, personal access tokens or SSH). [Learn more](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
 
 ### Q: Some users are disconnected, but they have matching identities in Azure AD. What should I do?
 A: 
