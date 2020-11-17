@@ -132,8 +132,8 @@ The follow table indicates which preview features can be enabled per user or tea
       New Wiki experience  
       [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
       [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
-      [Project-Scoped Users well known group to hide settings](../../organizations/projects/about-projects.md#project-scoped-user-group) 
-      Task Insights for Failed Pipeline Runs 
+      [Project-Scoped Users well known group to hide settings](../../organizations/projects/about-projects.md#project-scoped-user-group)  
+      Task Insights for Failed Pipeline Runs   
    :::column-end:::
    :::column span=".5":::
       &nbsp;  

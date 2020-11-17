@@ -8,9 +8,9 @@ ms.topic: conceptual
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 08/25/2020
----
+monikerRange: '<= azure-devops'
+ms.date: 11/16/2020
+--- 
 
 # Export a list of users and their access levels
 

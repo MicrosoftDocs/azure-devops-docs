@@ -19,7 +19,12 @@ Many enterprise organizations add multiple projects to support their business ne
 
 To learn about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
 
-## Azure DevOps
+## Projects
+
+::: moniker range="azure-devops"  
+> [!NOTE]  
+> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
+  ::: moniker-end  
 
 ### Q: How many projects should I create? 
 
