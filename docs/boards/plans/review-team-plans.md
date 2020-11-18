@@ -337,12 +337,13 @@ Each team's backlog specified in a Delivery Plan appears as a row within the pla
 You can interact with the plan in the following ways:  
 
 ::: moniker range="azure-devops"  
-- Scale the size of the cards and calendar by choosing the **Zoom out** :::image type="icon" source="media/plans/collapse-calendar-icon.png" border="false"::: and **Zoom in** :::image type="icon" source="media/plans/expand-calendar-icon.pngg" border="false":::.
-- To view previous or future months, choose **Scroll calendar left** or **Scroll calendar right**. You can also scroll the plan by clicking the plan and dragging your mouse horizontally.
-- Scroll the view vertically to view teams that appear lower within the plan view. 
-- Click a card to open the backlog item and view details. Close the work item to return to the plan.   
+- Scale the size of the cards and calendar by choosing **Zoom out** :::image type="icon" source="media/plans/collapse-calendar-icon.png" border="false"::: or **Zoom in** :::image type="icon" source="media/plans/expand-calendar-icon.png" border="false":::.
+- To view previous or future months, choose **Scroll calendar left** ::image type="icon" source="media/plans/scroll-calendar-left-icon.png" border="false"::: or **Scroll calendar right** ::image type="icon" source="media/plans/scroll-calendar-right-icon.png" border="false"::: . You can also scroll the plan by clicking the plan and dragging your mouse horizontally.
 - To view details for a team, expand the team row by choosing **Expand team row** or clicking once on a sprint within a team row.  
 - To expand and collapse all team rows, choose **Expand all team rows** or **Collapse all team rows** next to **Teams**.  
+- Scroll the view vertically to view teams that appear lower within the plan view. 
+- Click a card title to open the backlog item and view details. Close the work item to return to the plan.   
+- To add a work item to a sprint, choose **Add item** :::image type="icon" source="media/plans/add-item-icon.png" border="false":::  within the sprint and team you want to add it to. 
 - To [change the fields displayed on the cards](#card-settings), choose **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false":::. 
 
 ::: moniker-end 
@@ -351,13 +352,13 @@ You can interact with the plan in the following ways:
 - Scroll the view horizontally via the calendar to view previous months or future months (Enter **Shift-left** or **Shift-right** to scroll) 
 - You can also scroll the plan via click and dragging your mouse.
 - Scroll the view vertically to view teams that appear lower within the plan view. You can also scroll the plan by clicking the plan and dragging your mouse vertically.
-- Click a card to open the backlog item and view details. Close the work item to return to the plan.  
+- Click a card title to open the backlog item and view details. Close the work item to return to the plan.  
 - To view details for a team, expand the team row by choosing **Expand team row**.  
 - To expand and collapse all team rows, choose **Expand all team rows** or **Collapse all team rows** next to **Teams**. (Enter **u** to collapse, **o** to expand all rows). 
 - Enter **t** to quickly toggle fields shown on cards to just the Title or all other card field settings 
 - To edit the plan and [change the fields displayed on the cards](#card-settings), , choose **Configure plan settings**:::image type="icon" source="media/plans/gear-icon.png" border="false":::. 
 
-::: moniker-end 
+
 
 In the following example, Team 1 features expanded, two items are scheduled for delivery in Sprint 50. 
 
@@ -368,8 +369,28 @@ You can also quickly see that:
 * Sprint 50 began on December 14th and is scheduled to end December 25th. 
 * The team expects to deliver the two features shown by the cards.
 
+::: moniker-end 
 
 A benefit of Delivery Plans is to view multiple teams across your projects that you care about. Two main ways to view more teams within the plan view is to collapse all teams to focus on summary data and to minimize the number of fields displayed on cards. 
+
+
+
+### Collapse teams for summary information
+
+To gain a summary view of work that is schedule, collapse all teams. You can then more easily look for gaps in the forward forecast.
+
+For example, here you can see the count of Features for Team 1 for the next 3 sprints. You can collapse/expand team rows by clicking the team name or the sprint name.
+
+::: moniker range="azure-devops" 
+> [!div class="mx-imgBorder"]  
+> ![Collapse click targets](media/plans/overview-preview.png)  
+::: moniker-end
+
+::: moniker range="< azure-devops" 
+> [!div class="mx-imgBorder"]  
+> ![Collapse click targets](media/plans_view4.png)  
+::: moniker-end
+
 
 ::: moniker range="azure-devops"  
 
@@ -390,14 +411,6 @@ As changes occur to the schedule, you can update the iteration for a backlog ite
 > ![Move a card to a different iteration](media/plans_move1.png)
 
 
-### Collapse teams for summary information
-
-To gain a summary view of work that is schedule, collapse all teams. You can then more easily look for gaps in the forward forecast.
-
-For example, here you can see the count of Features for Team 1 for the next 3 sprints. You can collapse/expand team rows by clicking the team name or the sprint name.
-
-> [!div class="mx-imgBorder"]  
-> ![Collapse click targets](media/plans_view4.png)  
 
 ::: moniker range="< azure-devops"  
 
