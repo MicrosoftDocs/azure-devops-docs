@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 11/11/2020
+ms.date: 11/18/2020
 ---
 
 
@@ -43,7 +43,7 @@ Use Delivery Plans to ensure your teams are aligned with your organizational goa
 You can change the assigned sprint of a work item by dragging it to a new sprint as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of moving a card to a different iteration](media/plans_move1.png)
+> ![Screenshot of moving a card to a different iteration](media/plans-move-1.png)
 
 ***
 
@@ -54,7 +54,7 @@ You can change the assigned sprint of a work item by dragging it to a new sprint
 You can change the assigned sprint of a work item by dragging it to a new sprint as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot of moving a card to a different iteration](media/plans_move1.png)
+> ![Screenshot of moving a card to a different iteration](media/plans-move-1.png)
 
 ::: moniker-end
 
@@ -332,7 +332,7 @@ Each team's backlog specified in a Delivery Plan appears as a row within the pla
 ::: moniker-end 
 
 ::: moniker range="< azure-devops"  
-<img src="media/plans_view2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+<img src="media/plans-view-2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
 ::: moniker-end 
 
 You can interact with the plan in the following ways:  
@@ -393,7 +393,7 @@ Collapse and expand each team row by choosing **Expand team row** or **Collapse 
 For example, here you can see the count of Features for Team 1 for the next 3 sprints. You can collapse/expand team rows by by choosing **Expand team row** or **Collapse team row** next to the team name.
 
 > [!div class="mx-imgBorder"]  
-> ![Collapse click targets](media/plans_view4.png)  
+> ![Collapse click targets](media/plans-view-4.png)  
 ::: moniker-end
 
 
@@ -413,7 +413,7 @@ For work items that span one or more iterations, you can define the **Start Date
 As changes occur to the schedule, you can update the iteration for a backlog item by moving a card to a different iteration. This will help to drive alignment across your organization.
 
 > [!div class="mx-imgBorder"]  
-> ![Move a card to a different iteration](media/plans_move1.png)
+> ![Move a card to a different iteration](media/plans-move-1.png)
 
 
 
@@ -424,7 +424,7 @@ As changes occur to the schedule, you can update the iteration for a backlog ite
 To quickly change the cards to only show their Title, enter the keyboard shortcut '**t**'. This will hide all other fields, as shown in the following image, the Assigned to field no longer appears. To persist this view, edit the [plan's settings for card fields](#card-settings).
 
 > [!div class="mx-imgBorder"]  
-> ![Cards showing the Title only](media/plans_view5.png)   
+> ![Cards showing the Title only](media/plans-view-5.png)   
 
 ::: moniker-end
 
