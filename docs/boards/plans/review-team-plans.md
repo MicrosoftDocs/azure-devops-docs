@@ -30,7 +30,6 @@ Use Delivery Plans to ensure your teams are aligned with your organizational goa
 > - Work item cards can span iteration boundaries
 > - Drag and drop borders show when a work item starts and ends
 > - You can add backlog items to a team from a plan
-> - You can add more than ten teams to a plan
 > - Stakeholders can view plans
  
 
