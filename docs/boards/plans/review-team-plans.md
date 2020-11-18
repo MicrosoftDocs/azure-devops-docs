@@ -235,6 +235,7 @@ When defining a plan, note the following:
 
 <a id="card-settings">  </a>
 
+
 ## Edit a plan 
 
 Once you've defined a plan, you can further customize it. 
@@ -251,7 +252,7 @@ Once you've defined a plan, you can further customize it.
    - Add markers to show important upcoming events on your timeline 
    - Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
  
-  Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
+  Here, we add the **Tags** field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
 
   :::image type="content" source="media/plans/plan-settings-field-criteria.png" border="true" alt-text="Plan settings dialog, Field criteria page":::   
 
@@ -261,12 +262,11 @@ Once you've defined a plan, you can further customize it.
 
 	Markers appear on the plan as shown: 
 
-     :::image type="content" source="media/review-team-plans-show-markers.png" border="true" alt-text="Screenshot to Plans, Markers appear on calendar slide.":::   
+     :::image type="content" source="media/plans/markers-preview.png" border="true" alt-text="Screenshot pf Plans, Markers appear on calendar.":::   
 
 #### [Plans](#tab/plans) 
 
-
-1. Choose the :::image type="icon" source="media/plans/gear-icon.png" border="false"::: gear icon to open the Settings dialog. 
+1. To open the Settings dialog, choose **Configure plan settings**:::image type="icon" source="media/plans/gear-icon.png" border="false":::. 
 
 2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
    - Edit the teams you've selected and their backlog level  
@@ -292,7 +292,7 @@ Once you've defined a plan, you can further customize it.
 
 ::: moniker range="< azure-devops" 
 
-1. Choose the :::image type="icon" source="media/plans/gear-icon.png" border="false"::: gear icon to open the Settings dialog. 
+1. To open the Settings dialog, choose **Configure plan settings**:::image type="icon" source="media/plans/gear-icon.png" border="false":::.  
 
 2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
    - Edit the teams you've selected and their backlog level  
@@ -312,7 +312,7 @@ Once you've defined a plan, you can further customize it.
 
 	<img src="media/review-team-plans-show-markers.png" alt="Plans, Markers appear on calendar slide" style="border: 2px solid #C3C3C3;" />
 
-::: moniker-end
+::: moniker-end 
 
 ## Open a plan  
 
@@ -326,21 +326,39 @@ To open a plan, simply choose the plan name.
  
 Each team's backlog specified in a Delivery Plan appears as a row within the plan view. When collapsed, a roll-up of the backlog items shows. When expanded, a card for each backlog item appears, organized by their assigned iteration. 
 
-<img src="media/plans_view2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+::: moniker range="azure-devops"  
+:::image type="content" source="media/plans/overview-preview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
+::: moniker-end 
 
-You can interact with the plan in the following ways: 
+::: moniker range="< azure-devops"  
+<img src="media/plans_view2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+::: moniker-end 
+
+You can interact with the plan in the following ways:  
+
+::: moniker range="azure-devops"  
+- Scale the size of the cards and calendar by choosing the **Zoom out** :::image type="icon" source="media/plans/collapse-calendar-icon.png" border="false"::: and **Zoom in** :::image type="icon" source="media/plans/expand-calendar-icon.pngg" border="false":::.
+- To view previous or future months, choose **Scroll calendar left** or **Scroll calendar right**. You can also scroll the plan by clicking the plan and dragging your mouse horizontally.
+- Scroll the view vertically to view teams that appear lower within the plan view. 
+- Click a card to open the backlog item and view details. Close the work item to return to the plan.   
+- To view details for a team, expand the team row by choosing **Expand team row** or clicking once on a sprint within a team row.  
+- To expand and collapse all team rows, choose **Expand all team rows** or **Collapse all team rows** next to **Teams**.  
+- To [change the fields displayed on the cards](#card-settings), choose **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false":::. 
+
+::: moniker-end 
+::: moniker range="< azure-devops"  
 - Scale the size of the cards (enter **+** or **-** to also scale) 
 - Scroll the view horizontally via the calendar to view previous months or future months (Enter **Shift-left** or **Shift-right** to scroll) 
 - You can also scroll the plan via click and dragging your mouse.
-- Scroll the view vertically to view teams that appear lower within the plan view   
-- Click a card to view the details of a backlog item  
-- Expand or collapse a single team row to view details for that team by clicking the team name or team sprint 
-- Expand and collapse all team rows (Enter **u** to collapse, **o** to expand all rows) 
+- Scroll the view vertically to view teams that appear lower within the plan view. You can also scroll the plan by clicking the plan and dragging your mouse vertically.
+- Click a card to open the backlog item and view details. Close the work item to return to the plan.  
+- To view details for a team, expand the team row by choosing **Expand team row**.  
+- To expand and collapse all team rows, choose **Expand all team rows** or **Collapse all team rows** next to **Teams**. (Enter **u** to collapse, **o** to expand all rows). 
 - Enter **t** to quickly toggle fields shown on cards to just the Title or all other card field settings 
-- Click the ![Settings gear icon](../media/icons/team-settings-gear-icon.png) settings gear to edit the plan and [change the fields displayed on the cards](#card-settings).   
+- To edit the plan and [change the fields displayed on the cards](#card-settings), , choose **Configure plan settings**:::image type="icon" source="media/plans/gear-icon.png" border="false":::. 
 
-For a list of all keyboard shortcuts, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).  
- 
+::: moniker-end 
+
 In the following example, Team 1 features expanded, two items are scheduled for delivery in Sprint 50. 
 
 <img src="media/review-tp-show-team-1.png" alt="Team rows in plans" style="border: 2px solid #C3C3C3;" />
@@ -381,6 +399,8 @@ For example, here you can see the count of Features for Team 1 for the next 3 sp
 > [!div class="mx-imgBorder"]  
 > ![Collapse click targets](media/plans_view4.png)  
 
+::: moniker range="< azure-devops"  
+
 ### Minimize the fields displayed on cards  
 
 To quickly change the cards to only show their Title, enter the keyboard shortcut '**t**'. This will hide all other fields, as shown in the following image, the Assigned to field no longer appears. To persist this view, edit the [plan's settings for card fields](#card-settings).
@@ -388,12 +408,17 @@ To quickly change the cards to only show their Title, enter the keyboard shortcu
 > [!div class="mx-imgBorder"]  
 > ![Cards showing the Title only](media/plans_view5.png)   
 
+::: moniker-end
+
+::: moniker range="< azure-devops"  
+
 ## Keyboard shortcuts
 
 You can use the following keyboard shortcuts when [interacting with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, enter **?** when viewing a plan from the **Boards>Plans** or **Work>Plans** page.
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]
 
+::: moniker-end 
 
 ## Related articles  
 
