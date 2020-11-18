@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< azure-devops' 
-ms.date: 11/19/2018
+ms.date: 11/19/2020
 ---
 
 # Change a process control setting for the data warehouse or Analysis Services cube
@@ -22,13 +22,13 @@ You might want to decrease or increase the length of time between refreshes to r
 
 You can determine the current settings and change a setting by using the Warehouse Control Web service. 
 
-**Requirements** 
+## Prerequisites 
 
-  * SQL Server Reporting Services must be configured for the Azure DevOps deployment. If it isn't, see [Add a report server](add-a-report-server.md).  
+- SQL Server Reporting Services must be configured for the Azure DevOps deployment. If it isn't, see [Add a report server](add-a-report-server.md).  
 
-  * You must be a member of the **Team Foundation Administrators** security group, or you must have the server-level **Administer warehouse** permission set to **Allow**. See [Set administrator permissions for Team Foundation Server](/azure/devops/server/admin/add-administrator).  
+- You must be a member of the **Team Foundation Administrators** security group, or you must have the server-level **Administer warehouse** permission set to **Allow**. See [Set administrator permissions for Team Foundation Server](/azure/devops/server/admin/add-administrator).  
 
-  * The TFS Application Pool must be running for the Warehouse Control Web service to be available.
+- The TFS Application Pool must be running for the Warehouse Control Web service to be available.
 
 ## Access the Warehouse Control Web Service
 
@@ -100,158 +100,111 @@ The following table describes each process control setting and provides the Sett
 
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="1":::
       **SettingID**
    :::column-end:::
-   :::column span=".5":::
-      **Default value**
-   :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
       **Description**
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="1":::
       AnalysisSchemaUpdateWaitSeconds
    :::column-end:::
-   :::column span=".5":::
-      3600 (seconds)
-   :::column-end:::
-   :::column span="2":::
-      Specifies the time-out that determines how long a job will wait in a running state to perform an update to the cube. If the time-out expires before the schema change finishes, the job quits and restarts later. This time-out interval supports jobs that require exclusive access to the data warehouse resources during the schema change stage.
+   :::column span="3":::
+      Specifies the time-out that determines how long a job will wait in a running state to perform an update to the cube. If the time-out expires before the schema change finishes, the job quits and restarts later. This time-out interval supports jobs that require exclusive access to the data warehouse resources during the schema change stage.<br/><br/>
+      **Default value**=3600 (seconds)
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="1":::
       AnalysisServicesProcessingTimeout
    :::column-end:::
-   :::column span=".5":::
-      86400 (seconds)
-   :::column-end:::
-   :::column span="2":::
-      Specifies the time-out, measured in seconds, that determines how long a job will wait for a processing call to Analysis Services to finish.
+   :::column span="3":::
+      Specifies the time-out, measured in seconds, that determines how long a job will wait for a processing call to Analysis Services to finish.<br/><br/>
+      **Default value**=86400 (seconds)
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="1":::
       DailyFullProcessingTime
    :::column-end:::
-   :::column span=".5":::
-      02:00:00.0000000-08:00
-   :::column-end:::
-   :::column span="2":::
-      Specifies the time of day when the full processing of the Analysis Services cube is started. By default, it is set to 2 AM.
+   :::column span="3":::
+      Specifies the time of day when the full processing of the Analysis Services cube is started. By default, it is set to 2 AM.<br/><br/>
+      **Default value**=02:00:00.0000000-08:00
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="1":::
       DataUpdateWaitSeconds
    :::column-end:::
-   :::column span=".5":::
-     30 (seconds)
-   :::column-end:::
-   :::column span="2":::
-      Specifies the time-out that determines how long a job will wait in a running state for another adapter that is making schema changes to finish, or for the analysis processing job that changes the cube schema to finish. This time-out is used by jobs to acquire shared access to the warehouse resources during the data change stage. If the time-out expires before the schema change process finishes, the job quits and restarts later.
+   :::column span="3":::
+      Specifies the time-out that determines how long a job will wait in a running state for another adapter that is making schema changes to finish, or for the analysis processing job that changes the cube schema to finish. This time-out is used by jobs to acquire shared access to the warehouse resources during the data change stage. If the time-out expires before the schema change process finishes, the job quits and restarts later.<br/><br/>
+      **Default value**=30 (seconds)
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1.5":::
-      SettingID
-   :::column-end:::
-   :::column span=".5":::
-      Default value
-   :::column-end:::
-   :::column span="2":::
-      Description
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1.5":::
+   :::column span="1":::
       FullProcessIntervalSeconds
    :::column-end:::
-   :::column span=".5":::
-     86400 (seconds)
-   :::column-end:::
-   :::column span="2":::
-      Specifies the frequency at which the cube is fully processed. The default value corresponds to 24 hours.
+   :::column span="3":::
+      Specifies the frequency at which the cube is fully processed. The default value corresponds to 24 hours.<br/><br/>
+      **Default value**=86400 (seconds)
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1.5":::
-      SettingID
-   :::column-end:::
-   :::column span=".5":::
-      Default value
-   :::column-end:::
-   :::column span="2":::
-      Description
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1.5":::
+   :::column span="1":::
       IncrementalProcessIntervalSeconds
    :::column-end:::
-   :::column span=".5":::
-      7200 (seconds)
-   :::column-end:::
-   :::column span="2":::
-      Specifies the frequency at which the cube is incrementally updated. The default value corresponds to two hours.
+   :::column span="3":::
+      Specifies the frequency at which the cube is incrementally updated. The default value corresponds to two hours.<br/><br/>
+      **Default value**=7200 (seconds)
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="1":::
       MaxParallelASProcessingCommands
    :::column-end:::
-   :::column span=".5":::
-      0
-   :::column-end:::
-   :::column span="2":::
-      Indicates the maximum number of commands that can run in parallel when Team Foundation processes calls to SQL Server Analysis Services. If set to 0, the instance of SQL Server determines the optimal number based on the number of processors that are available on the computer.
+   :::column span="3":::
+      Indicates the maximum number of commands that can run in parallel when Team Foundation processes calls to SQL Server Analysis Services. If set to 0, the instance of SQL Server determines the optimal number based on the number of processors that are available on the computer.<br/><br/>
+      **Default value**=0
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="1":::
       RunIntervalSeconds
    :::column-end:::
-   :::column span=".5":::
-      120 (seconds)
-   :::column-end:::
-   :::column span="2":::
-      Specifies the frequency at which the relational database is updated.
+   :::column span="3":::
+      Specifies the frequency at which the relational database is updated.<br/><br/>
+      **Default value**=120 (seconds)
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="1":::
       SchemaUpdateWaitSeconds
    :::column-end:::
-   :::column span=".5":::
-      120 (seconds)
-   :::column-end:::
-   :::column span="2":::
-      Specifies the time-out that determines how long a job will wait in a running state to acquire exclusive access to the schema change method. If the time-out expires before the schema change finishes, the job quits and restarts later.
+   :::column span="3":::
+      Specifies the time-out that determines how long a job will wait in a running state to acquire exclusive access to the schema change method. If the time-out expires before the schema change finishes, the job quits and restarts later.<br/><br/>
+      **Default value**=120 (seconds)
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="1.5":::
+   :::column span="1":::
       WarehouseCommandSqlTimeout
    :::column-end:::
-   :::column span=".5":::
-      3600 (seconds)
-   :::column-end:::
-   :::column span="2":::
-      Specifies the time-out that determines how long a job will wait to acquire an exclusive access to a data warehouse resource.
+   :::column span="3":::
+      Specifies the time-out that determines how long a job will wait to acquire an exclusive access to a data warehouse resource.<br/><br/>
+      **Default value**=3600 (seconds)
    :::column-end:::
 :::row-end:::
 ---

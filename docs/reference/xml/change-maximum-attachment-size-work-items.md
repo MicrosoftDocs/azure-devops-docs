@@ -29,7 +29,7 @@ By default, Team Foundation Server limits the size of work item attachments to 4
 
 ::: moniker-end
   
-1.  If you're not a member of the **Team Foundation Administrators** group, [get added as one](/azure/devops/server/admin/add-administrator?view=azure-devops-2020&preview=true).    
+1.  If you're not a member of the **Team Foundation Administrators** group, [get added as one](/azure/devops/server/admin/add-administrator?view=azure-devops-2020&preserve-view=true).    
   
 2.  Log on to the application-tier server for Azure DevOps Server.  
   
