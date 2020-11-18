@@ -149,7 +149,7 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 1. Open **Boards>Plans (Preview)**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Screenshot to Open Boards>Plans (Preview)](media/plans/open-plans-preview.png) 
+	> ![Screenshot to Open Boards>Plans (Preview).](media/plans/open-plans-preview.png) 
 
 1. To add a plan, choose **New Plan** . 
 
@@ -161,7 +161,7 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 2. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add a plan](media/plans/new-delivery-plan-dialog.png)  
+	> ![New delivery plan dialog.](media/plans/new-delivery-plan-dialog-preview.png)  
 
 #### [Plans](#tab/plans) 
 
@@ -340,7 +340,7 @@ You can interact with the plan in the following ways:
 
 ::: moniker range="azure-devops"  
 - Scale the size of the cards and calendar by choosing **Zoom out** :::image type="icon" source="media/plans/collapse-calendar-icon.png" border="false"::: or **Zoom in** :::image type="icon" source="media/plans/expand-calendar-icon.png" border="false":::.
-- To view previous or future months, choose **Scroll calendar left** ::image type="icon" source="media/plans/scroll-calendar-left-icon.png" border="false"::: or **Scroll calendar right** ::image type="icon" source="media/plans/scroll-calendar-right-icon.png" border="false"::: . You can also scroll the plan by clicking the plan and dragging your mouse horizontally.
+- To view previous or future months, choose **Scroll calendar left** :::image type="icon" source="media/plans/scroll-calendar-left-icon.png" border="false"::: or **Scroll calendar right** :::image type="icon" source="media/plans/scroll-calendar-right-icon.png" border="false"::: .You can also scroll the plan by clicking the plan and dragging your mouse horizontally.
 - To view details for a team, expand the team row by choosing **Expand team row** or clicking once on a sprint within a team row.  
 - To expand and collapse all team rows, choose **Expand all team rows** or **Collapse all team rows** next to **Teams**.  
 - Scroll the view vertically to view teams that appear lower within the plan view. 
@@ -373,22 +373,26 @@ You can also quickly see that:
 
 ::: moniker-end 
 
-A benefit of Delivery Plans is to view multiple teams across your projects that you care about. Two main ways to view more teams within the plan view is to collapse all teams to focus on summary data and to minimize the number of fields displayed on cards. 
-
-
+ 
 
 ### Collapse teams for summary information
 
+A benefit of Delivery Plans is to view multiple teams across your projects that you care about. Two main ways to view more teams within the plan view is to collapse all teams to focus on summary data and to minimize the number of fields displayed on cards. 
+
 To gain a summary view of work that is schedule, collapse all teams. You can then more easily look for gaps in the forward forecast.
 
-For example, here you can see the count of Features for Team 1 for the next 3 sprints. You can collapse/expand team rows by clicking the team name or the sprint name.
 
 ::: moniker range="azure-devops" 
+
+Collapse and expand each team row by choosing **Expand team row** or **Collapse team row** next to the team name.
 > [!div class="mx-imgBorder"]  
 > ![Collapse click targets](media/plans/overview-preview.png)  
 ::: moniker-end
 
 ::: moniker range="< azure-devops" 
+
+For example, here you can see the count of Features for Team 1 for the next 3 sprints. You can collapse/expand team rows by by choosing **Expand team row** or **Collapse team row** next to the team name.
+
 > [!div class="mx-imgBorder"]  
 > ![Collapse click targets](media/plans_view4.png)  
 ::: moniker-end
