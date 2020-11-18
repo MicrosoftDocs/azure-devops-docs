@@ -13,7 +13,7 @@ monikerRange: '=azure-devops'
 
 Get started building a data pipeline by using data ingestion, data transformation, and model training. 
 
-Learn how to grab data from a CSV (comma-separated values) file and save the data to blob storage. Transform the data and save it to a staging area. Then train a machine learning model by using the transformed data. Write the model to blob storage as a Python pickle file. 
+Learn how to grab data from a CSV (comma-separated values) file and save the data to Azure Blob Storage. Transform the data and save it to a staging area. Then train a machine learning model by using the transformed data. Write the model to blob storage as a Python [pickle file](https://docs.python.org/3/library/pickle.html). 
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Before you begin, you need:
     :::image type="content" source="media/azure-portal-menu-cloud-shell.png" alt-text="Screenshot showing where to select Cloud Shell from the menu.":::
 
     > [!NOTE]
-    > You'll need an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
+    > You'll need an Azure Storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
 
 ## Select an Azure region
 
@@ -338,8 +338,7 @@ Follow these steps to run the continuous integration and continuous delivery (CI
 1. Select **Azure Repos Git** as the location of your source code.
 1. When the list of repositories appears, select your repository. 
 1. As you set up your pipeline, select **Existing Azure Pipelines YAML file**. Choose the YAML file: **/azure-data-pipeline/data_pipeline_ci_cd.yml**.
-1. Run the pipeline.  If your pipeline hasn't been run before, you need to give permission to access a resource during the run. 
-1. You might need to give permission during the run. 
+1. Run the pipeline.  If your pipeline hasn't been run before, you might need to give permission to access a resource during the run. 
 
 
 ## Clean up resources
