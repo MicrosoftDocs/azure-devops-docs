@@ -82,6 +82,13 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
+    <td rowspan="4"><a href="2020/sprint-178-update.md" data-raw-source="[12 November 2020](2020/sprint-178-update.md)">12 November 2020</a></td>
+    <td>Removed items on the Work Items page</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Delivery Plans (Preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Improve YAML conversion in the classic build designer</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>New Test Plans page general availability</td><td>Test Plans</td><td>Future</td></tr>
+    <tr>
     <td rowspan="4"><a href="2020/sprint-177-update.md" data-raw-source="[22 October 2020](2020/sprint-177-update.md)">22 October 2020</a></td>
     <td>Removing "Assigned To" rule on Bug work item type</td><td>Boards</td><td>Future</td>
     </tr>
