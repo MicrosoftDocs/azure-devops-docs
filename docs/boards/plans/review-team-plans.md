@@ -25,10 +25,12 @@ Use Delivery Plans to ensure your teams are aligned with your organizational goa
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> A new version of Delivery Plans is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans**.  This new plans feature provides support for: 
+> A new version of Delivery Plans is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans**. This new version of Delivery Plans provides support for the following tasks: 
 > - Epics can be added to a delivery plan
 > - Work item cards can span iteration boundaries
 > - Drag and drop borders show when a work item starts and ends
+> - You can add backlog items to a team from a plan
+> - You can add more than ten teams to a plan
 > - Stakeholders can view plans
  
 
@@ -144,7 +146,7 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 
 #### [Plans (Preview)](#tab/plans-preview) 
 
-1. Open **Boards>Plans**. 
+1. Open **Boards>Plans (Preview)**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot to Open Boards>Plans (Preview)](media/plans/open-plans-preview.png) 
