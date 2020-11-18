@@ -84,14 +84,14 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="3":::
       [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
-      [New Delivery Plans Experience](https://devblogs.microsoft.com/devops/delivery-plans-2-0-public-preview/)  
+      [New Delivery Plans Experience](../../boards/plans/review-team-plans.md)  
       New release progress views  
       [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)  
       [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
    :::column-end:::
    :::column span=".5"::: 
        ✔️   
-      &nbsp;  
+       ✔️   
        ✔️   
        ✔️   
        ✔️  
