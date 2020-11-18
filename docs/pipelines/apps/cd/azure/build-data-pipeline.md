@@ -29,7 +29,7 @@ Before you begin, you need:
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. From the menu, select the **Cloud Shell** button. When you're prompted, select the **Bash** experience.
 
-    :::image type="content" source="media/azure-portal-menu-cloud-shell.png" alt-text="Screenshot showing where to select Cloud Shell from the menu.":::
+    :::image type="content" source="media/azure-portal-menu-cloud-shell.png" alt-text="Screenshot showing where to select Azure Cloud Shell from the menu.":::
 
     > [!NOTE]
     > You'll need an Azure Storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
@@ -126,7 +126,7 @@ To make commands easier to run, start by selecting a default region. After you s
         --resource-group $rgName
     ```
 
-1. [Create a new data factory](https://ms.portal.azure.com/#create/hub) by using the portal UI the Azure CLI:
+1. [Create a new data factory](https://ms.portal.azure.com/#create/hub) by using the portal UI or the Azure CLI:
 
     * Name: `data-factory-cicd-dev`
     * Version: `V2`
