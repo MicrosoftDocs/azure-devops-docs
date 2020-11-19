@@ -73,7 +73,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 	Branches you create are automatically linked to the work item.  
 
 	> [!NOTE]  
-	>You can only create a branch once you've added files to the main branch, which is always named ```master```. The system automatically adds a README file to the initial repo created with each new project.   
+	> You can only create a branch once you've added files to the main branch, which we recommend you label ```main``` or other distinctive label. The system automatically adds a README file to the initial repo created with each new project.   
 
 2. The system will open to the repository and branch that you just created. 
 
@@ -91,7 +91,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 4. <a id="create-pull-request">  </a> Create a [pull request](../../repos/git/pull-requests.md) from the work item form.  
 
-	You create a pull request to merge the changes you made to a master branch and get your changes reviewed by other members of your team.  
+	You create a pull request to merge the changes you made to a main branch and get your changes reviewed by other members of your team.  
 
 	<img src="media/git-dev-pr-create-pull-request-b.png" alt="Work item form, create pull request" style="border: 1px solid #C3C3C3;" /> 
 
@@ -137,11 +137,11 @@ And, we specify the name of the branch.
 
 ## Link to existing development and build objects
 
-All items listed under the Development section also appear under the :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: Links tab. All development actions initiated from the Development section are also logged under the ![History tab icon](media/icon-history-tab-wi.png) History tab. 
+All items listed under the Development section also appear under the **Links** :::image type="icon" source="media/icon-links-tab-wi.png" border="false"::: tab. All development actions initiated from the Development section are also recorded under the **History** ![History tab icon]() :::image type="icon" source="media/icon-history-tab-wi.png" border="false"::: tab. 
 
 ![Links tab, development links](media/add-work-item-dev-links.png)  
 
-To link a work item to an existing object, click the ![Add link](../media/icons/add-link-icon.png) Add links icon and then choose the link type.  
+To link a work item to an existing object, choose the ![Add link](../media/icons/add-link-icon.png) Add links icon and then choose the link type.  
 
 ![Select Add links icon and then choose the link type.](media/add-work-items-link-to-existing-branch.png)
 
