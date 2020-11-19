@@ -26,13 +26,10 @@ Audit events can be the following occurrences:
 - and much more
 
 > [!NOTE]
-> Auditing is currently in a Public Preview. For auditing to connect to an on-prem or cloud-based Splunk service requires allowing IP ranges for inbound connection. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../organizations/security/allow-list-ip-url.md#range-restrictions).
+> Auditing is currently in a Public Preview for Azure DevOps Services. It isn't available for on-prem deployments. For auditing to connect to an on-prem or cloud-based Splunk requires allowing IP ranges for inbound connection. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
 
 Auditing is turned on by default for all Azure DevOps Services organizations. You can't turn auditing off, which ensures that you never miss an actionable event. Events get stored for 90 days and then they’re deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
-
-> [!NOTE]
-> Azure DevOps Server doesn't support Auditing yet, as it's still in Public Preview.
-
+ 
 ## Prerequisites
 
 By default, Project Collection Administrators are the only group that have access to the auditing feature. 
