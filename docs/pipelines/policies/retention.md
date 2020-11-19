@@ -1,16 +1,16 @@
 ---
-title: Retention policies for builds, tests, and releases
+title: Retention policies for builds, releases, and test
 ms.topic: conceptual
-description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
+description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
-ms.date: 09/07/2020
-ms.custom: contperfq1
+ms.date: 11/19/2020
+ms.custom: contperfq1, contperfq2
 monikerRange: '>= tfs-2015'
 ---
 
-# Set retention policies for builds, tests, and releases
+# Set retention policies for builds, releases, and tests
 
 ::: moniker range="<= tfs-2018"
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-Retention policies let you set how long to keep runs, tests, and releases stored in the system. To save storage space, you want to delete older runs, tests, and releases.   
+Retention policies let you set how long to keep runs, releases, and tests stored in the system. To save storage space, you want to delete older runs, tests, and releases.   
 
 From within your project, select ![gear icon](../../media/icons/gear-icon.png) **Project settings** to access the available retention policies for your project. 
 
@@ -29,7 +29,8 @@ From within your project, select ![gear icon](../../media/icons/gear-icon.png) *
 > [!div class="mx-imgBorder"]
 > ![Project settings retention policies](media/retention-policies.png)
 
-If you are using an on-premises server, you can also specify retention policy defaults for a project and when releases are permanently destroyed. Learn more about [release retention](#release).
+> [!NOTE]
+> If you are using an on-premises server, you can also specify retention policy defaults for a project and when releases are permanently destroyed. Learn more about [release retention](#release) later in this article.
 
 ## Prerequisites 
 
@@ -202,7 +203,7 @@ The retention policy for YAML and build pipelines is the same. You can see your 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-You can also customize these policies on a [stage-by-stage basis](#stage-specific-retention-policies).
+You can also learn how to customize these policies on a [stage-by-stage basis](#stage-specific-retention-policies) later in this article.
 ::: moniker-end
 
 ### Global release retention policy
