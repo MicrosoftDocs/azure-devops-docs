@@ -150,7 +150,7 @@ The Service Tag does not apply to Microsoft Hosted Agents. Customers are still r
 * `52.244.223.198/32` 
 * `52.247.150.191/32`
 
-For more information, see [Worldwide endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online) and [Adding IP address rules](/azure/app-service/app-service-ip-restrictions#adding-ip-address-rules). 
+For more information, see [Worldwide endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true#microsoft-365-common-and-office-online) and [Adding IP address rules](/azure/app-service/app-service-ip-restrictions#adding-ip-address-rules). 
 
 ## SSH connections
 
