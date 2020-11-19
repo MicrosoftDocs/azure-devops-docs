@@ -107,9 +107,9 @@ If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addre
 
 Ensure the following IP addresses are allowed for *inbound* connection, so your organization works with any existing firewall or IP restrictions. The endpoint data, in the following chart lists requirements for connectivity from Azure DevOps Services to customers' on-prem or other cloud services. The *inbound* connection applies to the following scenarios.
 
-- Azure DevOps Services connecting to endpoints for [Service Hooks](../../service-hooks/overview.md)
-- Azure DevOps Services connecting to customer-controlled SQL Azure VMs for [Data Import](../../migrate/migration-overview.md)
-- Azure Pipelines connecting to on-prem source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [BitBucket Server](../../pipelines/repos/on-premises-bitbucket.md)
+- Azure DevOps Services connecting to endpoints for [Service Hooks](../../service-hooks/overview.md)  
+- Azure DevOps Services connecting to customer-controlled SQL Azure VMs for [Data Import](../../migrate/migration-overview.md)  
+- Azure Pipelines connecting to on-prem source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [BitBucket Server](../../pipelines/repos/on-premises-bitbucket.md)  
 - Azure DevOps Services [Audit Streaming](../audit/auditing-streaming.md) connecting to on-prem or cloud-based Splunk.
 
 > [!div class="mx-tdCol2BreakAll"]  
@@ -133,7 +133,7 @@ Ensure the following IP addresses are allowed for *inbound* connection, so your 
 > | United Kingdom South | 51.104.26.0/24 |  
 
 
-Azure Service Tags are supported for *inbound* connection. Instead of allowing the IP ranges listed above, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-prem firewall via a JSON file download.[TT3] 
+Azure Service Tags are supported for *inbound* connection. Instead of allowing the IP ranges listed above, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-prem firewall via a JSON file download.  
 
 The Service Tag does not apply to Microsoft Hosted Agents. Customers are still required to allow the entire geography for the Microsoft Hosted Agents.  If allowing the entire geography is a concern, we recommend using the Azure Virtual Machine Scale Set Agents. The Scale Set Agents are a form of self-hosted agents that can be auto-scaled to meet your demands. 
 
