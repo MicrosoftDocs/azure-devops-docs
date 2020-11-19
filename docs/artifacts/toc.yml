@@ -114,7 +114,7 @@
       href: concepts/views.md
     - name: Promote a package to a view
       href: feeds/views.md
-  - name: Upstrean sources
+  - name: Upstream sources
     items:
     - name: Understand upstream sources
       href: concepts/upstream-sources.md
@@ -122,28 +122,30 @@
       href: how-to/set-up-upstream-sources.md
     - name: Manage dependencies with upstream sources
       href: tutorials/protect-oss-packages-with-upstream-sources.md
-- name: Artifacts in Azure Pipelines
+- name: Work with Azure Pipelines
   items:
-  - name: Artifacts in Azure Pipelines overview
-    href: ../pipelines/artifacts/artifacts-overview.md
-  - name: Publish and download artifacts in Azure Pipeline
-    href: ../pipelines/artifacts/pipeline-artifacts.md
-  - name: Pipeline caching
-    href: ../pipelines/release/caching.md
-  - name: Set up retention policies
-    href: ../pipelines/policies/retention.md
-- name: Work with symbols
-  items:
-  - name: Symbol files
-    href: concepts/symbols.md
-  - name: Use symbols in Visual Studio
-    href: symbols/debug-with-symbols-visual-studio.md
-  - name: Use symbols in WinDbg
-    href: symbols/debug-with-symbols-windbg.md
-  - name: Publish symbols
-    href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-  - name: Set up GitHub SourceLinking
-    href: symbols/setting-up-github-sourcelinking.md
+  - name: Artifacts in Azure Pipelines
+    items:
+    - name: Artifacts in Azure Pipelines overview
+      href: ../pipelines/artifacts/artifacts-overview.md
+    - name: Publish and download artifacts in Azure Pipeline
+      href: ../pipelines/artifacts/pipeline-artifacts.md
+    - name: Pipeline caching
+      href: ../pipelines/release/caching.md
+    - name: Set up retention policies
+      href: ../pipelines/policies/retention.md
+  - name: Work with symbols
+    items:
+    - name: Symbol files
+      href: concepts/symbols.md
+    - name: Use symbols in Visual Studio
+      href: symbols/debug-with-symbols-visual-studio.md
+    - name: Use symbols in WinDbg
+      href: symbols/debug-with-symbols-windbg.md
+    - name: Publish symbols
+      href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
+    - name: Set up GitHub SourceLinking
+      href: symbols/setting-up-github-sourcelinking.md
 - name: Concepts and references
   items:
   - name: Key concepts
