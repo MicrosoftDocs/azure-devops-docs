@@ -126,7 +126,7 @@ As you plan how you want to grow your Agile tool set, consider the following are
       Also, the organization provides the infrastructure to reduce risks. The organization owes the teams anything they can do to reduce risks that are common across teams. 
    :::column-end:::
    :::column span="2":::
-      Beyond meeting the needs set by the organization, teams determine any additional details they need to manage and track to reduce their risks. Whether they use a white board with stickie notes or a full Gantt chart, they manage the details.<br/>
+      Beyond meeting the needs set by the organization, teams determine any additional details they need to manage and track to reduce their risks. Whether they use a white board with sticky notes or a full Gantt chart, they manage the details.<br/>
       For example, teams may add a backlog item to track a dependency they have on another team. Or, they may track their risks via a list of issues or impediments. Also, teams regularly contribute to improving the process and infrastructure to support the organizations ability to manage risk and gain insights.
    :::column-end:::
 :::row-end:::
@@ -195,7 +195,7 @@ For additional guidance, see these topics:
 - [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](https://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)   
 
 ### Scale with teams and not projects  
-Often times, organizations look at adding a project for each software development project. 
+Often, organizations look at adding a project for each software development project. 
 
 Adding teams to scale your tools rather than adding projects is recommended for the following reasons:  
 - **Visibility:**  It's much easier to view progress across all teams  
