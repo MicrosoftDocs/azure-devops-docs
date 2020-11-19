@@ -91,21 +91,21 @@ Linking your work items to other objects also produces the following benefits:
 
 ::: moniker range="azure-devops"
 
-### Set work item state in pull request
+## Set work item state in pull request
 
 When you create a pull request, you can set the *state* value of the linked work items in the description. Follow the syntax: ``` {state value}: #ID ```.
 When you merge the pull request, the system reads the description and updates the work item state. In the following example, we set work items #300 and #301 to Resolved, and #323 and #324 to Closed.
 
 :::image type="content" source="media/pr-set-state-of-work-items.png" alt-text="Screenshot of setting work item state within a PR.":::
  
-#### How it works
+### How it works
 
 The system considers the following three different criteria (in this order) when attempting to set the state of #mentioned work items: 
 - State
 - State Category
 - keyword
 
-##### Criteria logic
+#### Criteria logic
 
 The following table describes the logic.
 
@@ -116,7 +116,7 @@ The following table describes the logic.
 | **Else If** the value matches a keyword,        | **Then** set the work item to matching keyword state. See the following [table](#keyword-action-table).        |
 | **Else**                                       | Ignore it and do nothing.                                                                                       |
 
-##### Keyword logic
+#### Keyword logic
 
 Keyword logic helps with intent matching. For example, you might enter “Resolves”, but you really meant “Resolved”. 
 
