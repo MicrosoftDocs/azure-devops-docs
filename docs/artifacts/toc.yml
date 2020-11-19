@@ -4,7 +4,7 @@
   href: overview.md
 - name: Get started
   items:
-  - name: Start using Azure Artifacts
+  - name: Get started with Azure Artifacts
     href: start-using-azure-artifacts.md
   - name: Where is Package Management?
     href: where-is-package-management.md
@@ -12,7 +12,7 @@
     href: artifact-storage.md
   - name: Best practices
     href: concepts/best-practices.md
-- name: Working with packages
+- name: Work with packages
   items:
   - name: About packages
     items:
@@ -22,7 +22,7 @@
       href: reference/limits.md
     - name: Follow a package for publish alerts
       href: how-to/follow-package-notifications.md
-  - name: Working with NuGet
+  - name: Work with NuGet
     items:
     - name: NuGet quickstart
       href: get-started-nuget.md
@@ -42,7 +42,7 @@
       href: nuget/upstream-sources.md
     - name: Set up a multi-developer environment
       href: nuget/bootstrap-nuget.md
-  - name: Working with npm 
+  - name: Work with npm 
     items:
     - name: npm quickstart
       href: get-started-npm.md
@@ -58,7 +58,7 @@
       href: npm/scopes.md
     - name: Use npm audit
       href: npm/npm-audit.md
-  - name: Working with Maven
+  - name: Work with Maven
     items:
     - name: Maven quickstart
       href: get-started-maven.md
@@ -76,13 +76,13 @@
       href: gradle/pull-package-gradle.md
     - name: Publish a Maven artifact using Gradle
       href: gradle/publish-package-gradle.md
-  - name: Working with Python
+  - name: Work with Python
     items:
     - name: Python quickstart 
       href: quickstarts/python-packages.md
     - name: Publish to a Python feed
       href: ../pipelines/artifacts/pypi.md?bc=%252fazure%252fdevops%252fartifacts%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-  - name: Working with Universal Packages
+  - name: Work with Universal Packages
     items:
     - name: Universal packages quickstart
       href: quickstarts/universal-packages.md
@@ -96,7 +96,7 @@
       href: concepts/feeds.md
     - name: Project-scoped vs organization-scoped feeds 
       href: feeds/project-scoped-feeds.md
-    - name: Setting up permissions
+    - name: Configure permissions
       href: feeds/feed-permissions.md
     - name: Delete and recover packages
       href: how-to/delete-and-recover-packages.md
@@ -116,7 +116,7 @@
       href: feeds/views.md
   - name: Upstrean sources
     items:
-    - name: Understanding upstream sources
+    - name: Understand upstream sources
       href: concepts/upstream-sources.md
     - name: Set up upstream sources
       href: how-to/set-up-upstream-sources.md
@@ -132,7 +132,7 @@
     href: ../pipelines/release/caching.md
   - name: Set up retention policies
     href: ../pipelines/policies/retention.md
-- name: Working with symbols
+- name: Work with symbols
   items:
   - name: Symbol files
     href: concepts/symbols.md
@@ -142,7 +142,7 @@
     href: symbols/debug-with-symbols-windbg.md
   - name: Publish symbols
     href: ../pipelines/artifacts/symbols.md?toc=%252fazure%252fdevops%252fartifacts%252ftoc.json
-  - name: Setting up GitHub SourceLinking
+  - name: Set up GitHub SourceLinking
     href: symbols/setting-up-github-sourcelinking.md
 - name: Concepts and references
   items:
