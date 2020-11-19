@@ -195,7 +195,7 @@ To build a project using different versions of that language, you can use a `mat
         goals: "package"
     ```
 
-* Select **Save** and then confirm the changes to see your build run two jobs on three different platforms and SDKs.
+* Select **Save** and then confirm the changes to see your build run two jobs on two different platforms and SDKs.
 
 ## Customize CI triggers
 
