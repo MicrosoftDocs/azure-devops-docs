@@ -100,23 +100,31 @@ When you merge the pull request, the system reads the description and updates th
  
 #### How it works
 
-The system considers the following three different criteria when attempting to set the state of #mentioned work items: State, State Category, and keyword, in that order.
-The following table describes the criteria logic.
+The system considers the following three different criteria (in this order) when attempting to set the state of #mentioned work items: 
+- State
+- State Category
+- keyword
 
-| **If**                                         | **Then**                                                                                                       |
+##### Criteria logic
+
+The following table describes the logic.
+
+| **Criteria**                                      | **Action**                                                                                                     |
 |------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | **If** the value matches a state,               | **Then** set it to that state.                                                                                  |
 | **Else If** the value matches a state category, | **Then** set the work item to first state in that category. See the following [note](#note-category-matching). |
 | **Else If** the value matches a keyword,        | **Then** set the work item to matching keyword state. See the following [table](#keyword-action-table).        |
 | **Else**                                       | Ignore it and do nothing.                                                                                       |
 
+##### Keyword logic
+
 Keyword logic helps with intent matching. For example, you might enter “Resolves”, but you really meant “Resolved”. 
 
 <a id="keyword-action-table">  </a>
 
-| **Keyword**                    | **Action**                                               |  |
+| **Keyword**                    | **Action**                                               |  
 |:-------------------------------|:---------------------------------------------------------|
-| Proposed, Proposes, Propose    | Set to the first state in the Proposed category.          |  |
+| Proposed, Proposes, Propose    | Set to the first state in the Proposed category.          |  
 | InProgress                     | Set to the first state in the In Progress category.       |
 | Completed, Completes, Complete | Set to the first state in the Completed category.         |
 | Resolved, Resolves, Resolve    | Set to the first state in the Resolved category.          |
@@ -135,7 +143,7 @@ Keyword logic helps with intent matching. For example, you might enter “Resolv
 
 1. Enter `#` to trigger the `#ID` work item picker from within a Wiki page.
 
-For more information about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md).
+   For more information about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md) and [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md).
 
 ::: moniker-end
 
