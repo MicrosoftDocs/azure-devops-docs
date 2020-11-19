@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 Retention policies let you set how long to keep runs, releases, and tests stored in the system. To save storage space, you want to delete older runs, tests, and releases.   
 
-From within your project, select ![gear icon](../../media/icons/gear-icon.png) **Project settings** to access the available retention policies for your project. 
+The following retention policies are available in Azure DevOps in your **Project settings**:
 
 1. **Pipeline** - Set how long to keep artifacts, symbols, attachments, runs, and pull request runs. 
 2. **Release (classic)** - Set whether to save builds and view the default and maximum retention settings.
@@ -51,10 +51,10 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 
 2. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
-3. Select **Settings** or **Release retention** in **Pipelines** or **Retention** in **Test**.
-    * In **Pipelines**, use **Settings** to configure retention for artifacts, symbols, attachments, runs, and pull request runs. 
-    * In **Pipelines**, use **Release retention** to set when to keep builds consumed by releases.
-    * In **Test**, use **Retention** to set how long to keep test runs.     
+3. Select **Settings** or **Release retention** under **Pipelines** or **Retention** under **Test**.
+    * Select **Settings** to configure retention policies for runs, artifacts, symbols, attachments, and pull request runs. 
+    * Select **Release retention** to set up your release retention policies and configure when to delete or permanently destroy releases.
+    * Select **Retention** to set up how long to keep manual and automated test runs.     
 
     :::image type="content" source="media/retention-menu.png" alt-text="Retention settings in Project settings":::
 ::: moniker-end
