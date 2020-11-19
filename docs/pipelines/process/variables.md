@@ -653,6 +653,7 @@ A script in your pipeline can define a variable so that it can be consumed by on
 To set a variable from a script, you use the `task.setvariable` [logging command](../scripts/logging-commands.md).
 This doesn't update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
+
 When `issecret` is set to true, the value of the variable will be saved as secret and masked from the log.  
 
 ```yaml
