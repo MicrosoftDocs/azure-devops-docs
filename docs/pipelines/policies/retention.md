@@ -3,7 +3,7 @@ title: Retention policies for builds, tests, and releases
 ms.topic: conceptual
 description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
-ms.author: jukullam
+ms.author: rabououn
 author: juliakm
 ms.date: 09/07/2020
 ms.custom: contperfq1
@@ -18,15 +18,16 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-In this article, learn how to manage the retention policies for your project. 
-
 Retention policies let you set how long to keep runs, tests, and releases stored in the system. To save storage space, you want to delete older runs, tests, and releases.   
 
-The following retention policies are available in Azure DevOps in your **Project settings**: 
+From within your project, select ![gear icon](../../media/icons/gear-icon.png) **Project settings** to access the available retention policies for your project. 
 
-* **Pipeline** - Set how long to keep artifacts, symbols, attachments, runs, and pull request runs. 
-* **Release (classic)** - Set whether to save builds and view the default and maximum retention settings.
-* **Test** - Set how long to keep automated and manual test runs, results, and attachments. 
+1. **Pipeline** - Set how long to keep artifacts, symbols, attachments, runs, and pull request runs. 
+2. **Release (classic)** - Set whether to save builds and view the default and maximum retention settings.
+3. **Test** - Set how long to keep automated and manual test runs, results, and attachments. 
+ 
+> [!div class="mx-imgBorder"]
+> ![Project settings retention policies](media/retention-policies.png)
 
 If you are using an on-premises server, you can also specify retention policy defaults for a project and when releases are permanently destroyed. Learn more about [release retention](#release).
 
