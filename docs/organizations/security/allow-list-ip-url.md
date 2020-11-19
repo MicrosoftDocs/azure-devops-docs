@@ -109,7 +109,7 @@ Ensure the following IP addresses are allowed for *inbound* connection, so your 
 
 - Azure DevOps Services connecting to endpoints for [Service Hooks](../../service-hooks/overview.md)
 - Azure DevOps Services connecting to customer-controlled SQL Azure VMs for [Data Import](../../migrate/migration-overview.md)
-- Azure Pipelines[TT1] [TT2]  connecting to on-prem source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [BitBucket Server](../../pipelines/repos/on-premises-bitbucket.md)
+- Azure Pipelines connecting to on-prem source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [BitBucket Server](../../pipelines/repos/on-premises-bitbucket.md)
 - Azure DevOps Services [Audit Streaming](../audit/auditing-streaming.md) connecting to on-prem or cloud-based Splunk.
 
 > [!div class="mx-tdCol2BreakAll"]  
