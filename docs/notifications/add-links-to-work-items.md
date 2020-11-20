@@ -141,9 +141,9 @@ Keyword logic helps with intent matching. For example, you might enter “Resolv
 
 ## Link to work items from a Wiki page
 
-1. Enter `#` to trigger the `#ID` work item picker from within a Wiki page.
+Enter `#` to trigger the `#ID` work item picker from within a Wiki page.
 
-   For more information about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md) and [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md).
+For more information about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md) and [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md).
 
 ::: moniker-end
 
