@@ -25,6 +25,7 @@ Deployment jobs provide the following benefits:
    > [!NOTE] 
    > We currently support only the *runOnce*, *rolling*, and the *canary* strategies. 
 
+A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`. 
 
 ## Schema
 
@@ -54,7 +55,6 @@ jobs:
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
-
 
 ## Deployment strategies
 
@@ -213,9 +213,10 @@ The following variables are available in this strategy:
 
 ### RunOnce deployment strategy
 
-The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. 
+The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. The example includes a checkout step. 
 
 ```YAML
+
 jobs:
   # Track deployments on the environment.
 - deployment: DeployWeb
@@ -229,6 +230,7 @@ jobs:
     runOnce:
       deploy:
         steps:
+        - checkout: self 
         - script: echo my first deployment
 ```
 
@@ -448,7 +450,7 @@ stages:
     pool:
       vmImage: 'ubuntu-16.04'
     environment: 
-      name: env1
+      name: env2
       resourceType: virtualmachine
     strategy:                  
       runOnce:
