@@ -151,7 +151,7 @@ Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` 
     ```
     
     > [!TIP]
-    > your module manifest should export the `Get-Hello` function you created in Step 1 
+    > Your module manifest should export the `Get-Hello` function you created in Step 1.
     
 5. It is also possible to define a list of files as part of your module. Just add this list under `FileList=@()`.
 
