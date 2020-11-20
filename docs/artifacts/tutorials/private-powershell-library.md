@@ -120,8 +120,6 @@ Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` 
 
 4. The `FunctionsToExport = @()` section is meant to define the module's exported functions. This is simply a list of all exported functions. The following is an example from `PowerShellGet.psd1`:
 
-
-
     ```powershell
     FunctionsToExport = @('Install-Module',
                           'Find-Module',
