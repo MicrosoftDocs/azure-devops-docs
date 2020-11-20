@@ -8,7 +8,7 @@ ms.reviewer: jominana
 ms.author: ChComley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 11/04/2020
+ms.date: 11/19/2020
 ---
 
 # Allowed address lists and network connections   
@@ -89,18 +89,54 @@ We recommend you open port 443 to all traffic on these IP addresses and domains.
 > [!NOTE]
 > Privately owned NuGet server URLs may not be included in the list above. You can check the NuGet servers you're using by opening up `%APPData%\Nuget\NuGet.Config`.
 
+<a id="range-restrictions" />
+
 ## IP addresses and range restrictions
 
-Ensure the following IP addresses are allowed, so your organization works with any existing firewall or IP restrictions. The endpoint data, in the following chart lists requirements for connectivity from a user's machine to Azure DevOps. The list doesn't include network connections from Microsoft into a customer network, sometimes called hybrid or inbound network connections. 
+Ensure the following IP addresses are allowed for *outbound* connection, so your organization works with any existing firewall or IP restrictions. The endpoint data, in the following chart lists requirements for connectivity from a user's machine to Azure DevOps Services. The list doesn't include network connections from Microsoft into a customer network, sometimes called hybrid or *inbound* network connections. [Azure Service Tags](/azure/virtual-network/service-tags-overview) are not supported for *outbound* connection.
 
-|**IP V4 ranges** |**IP V6 ranges**  |
-|---------|---------|
-|`13.107.6.0/24`     |  `2620:1ec:4::/48`      |
-|`13.107.9.0/24`     |  `2620:1ec:a92::/48`    |     
-|`13.107.42.0/24`    |  `2620:1ec:21::/48`     |
-|`13.107.43.0/24`    |  `2620:1ec:22::/48`     |
+> [!div class="mx-tdCol2BreakAll"]  
+> |**IP V4 ranges** |**IP V6 ranges**  |
+> |---------|---------|
+> |`13.107.6.0/24`     |  `2620:1ec:4::/48`      |
+> |`13.107.9.0/24`     |  `2620:1ec:a92::/48`    |     
+> |`13.107.42.0/24`    |  `2620:1ec:21::/48`     |
+> |`13.107.43.0/24`    |  `2620:1ec:22::/48`     |
 
 If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addresses, leave them in place, as you don't need to remove them.
+
+Ensure the following IP addresses are allowed for *inbound* connection, so your organization works with any existing firewall or IP restrictions. The endpoint data, in the following chart lists requirements for connectivity from Azure DevOps Services to customers' on-prem or other cloud services. The *inbound* connection applies to the following scenarios.
+
+- Azure DevOps Services connecting to endpoints for [Service Hooks](../../service-hooks/overview.md)  
+- Azure DevOps Services connecting to customer-controlled SQL Azure VMs for [Data Import](../../migrate/migration-overview.md)  
+- Azure Pipelines connecting to on-prem source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [BitBucket Server](../../pipelines/repos/on-premises-bitbucket.md)  
+- Azure DevOps Services [Audit Streaming](../audit/auditing-streaming.md) connecting to on-prem or cloud-based Splunk.
+
+> [!div class="mx-tdCol2BreakAll"]  
+> |  Region  | IP V4 ranges |  
+> |------|---------|  
+> | Australia East | 20.37.194.0/24 |  
+> | Australia South East | 20.42.226.0/24 |  
+> | Brazil South | 191.235.226.0/24 |  
+> | Central Canada | 52.228.82.0/24 | 
+> | East Asia (Hong Kong) | 20.189.107.0/24 |  
+> | South India | 20.41.194.0/24 |  
+> | Central United States | 20.37.158.0/23 |  
+> | West Central United States | 52.150.138.0/24 |  
+> | East United States   | 20.42.5.0/24 |  
+> | East 2 United States  | 20.41.6.0/23 | 
+> | North United States  | 40.80.187.0/24 |  
+> | South United States   | 40.119.10.0/24 |   
+> | West United States  | 40.82.252.0/24 |  
+> | West 2 United States | 20.42.134.0/23 |  
+> | Western Europe | 40.74.28.0/23 |  
+> | United Kingdom South | 51.104.26.0/24 |  
+
+
+Azure Service Tags are supported for *inbound* connection. Instead of allowing the IP ranges listed above, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-prem firewall via a JSON file download.  
+
+The Service Tag does not apply to Microsoft Hosted Agents. Customers are still required to allow the entire geography for the Microsoft Hosted Agents.  If allowing the entire geography is a concern, we recommend using the Azure Virtual Machine Scale Set Agents. The Scale Set Agents are a form of self-hosted agents that can be auto-scaled to meet your demands. 
+
 
 ### Other IP addresses
 
@@ -114,7 +150,7 @@ If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addre
 * `52.244.223.198/32` 
 * `52.247.150.191/32`
 
-For more information, see [Worldwide endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online) and [Adding IP address rules](/azure/app-service/app-service-ip-restrictions#adding-ip-address-rules). 
+For more information, see [Worldwide endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true#microsoft-365-common-and-office-online) and [Adding IP address rules](/azure/app-service/app-service-ip-restrictions#adding-ip-address-rules). 
 
 ## SSH connections
 

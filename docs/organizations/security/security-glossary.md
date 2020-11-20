@@ -74,16 +74,11 @@ Permissions that aren't directly allowed or denied for a user, may be inherited.
 
 -->
 
-
 ## Namespace 
 
 Each family of Azure DevOps resources (work items, Git repositories, an so on) is secured using a different namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag and a set of zero or more ACEs. Each ACE contains an identity descriptor, an allowed permissions bitmask and a denied permissions bitmask. 
 
-For a list of Azure DevOps namespaces, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](/azure/devops/server/command-line/tfssecurity-cmd#permission-namespaces-and-actions). 
-
-For Azure DevOps Services, you can list the namespaces using **az devops security permission namespace list** command. For details, see [Manage tokens and namespaces](manage-tokens-namespaces.md).
-
-
+For a list of Azure DevOps namespaces, see [Security namespace and permission reference](namespace-reference.md).  
 
 ## OAuth 
 
