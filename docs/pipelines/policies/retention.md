@@ -484,3 +484,7 @@ Test results published within a stage of a release are associated with both the 
 
 No. Manual test results are not deleted. 
 
+## Related articles
+
+- [Control how long to keep test results](../../test/how-long-to-keep-test-results.md)
+- [Delete test artofacts](../../boards/backlogs/delete-test-artifacts.md)
