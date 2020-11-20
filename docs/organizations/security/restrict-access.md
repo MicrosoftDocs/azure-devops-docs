@@ -173,9 +173,6 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
 
 ::: moniker-end
 
-
-[!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
-
 ::: moniker range="< azure-devops"
 
 For the [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
@@ -189,9 +186,6 @@ You  restrict access to work tracking objects in one of two ways:
 - By [adding WITs to the Hidden Categories group](../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
    
 ::: moniker-end
-
-
-
 
 ## Restrict modification of closed work items
 
