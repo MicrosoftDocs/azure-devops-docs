@@ -3,7 +3,7 @@ title: Add, edit, reorder, manage wiki pages
 titleSuffix: Azure DevOps  
 description: Learn how to add, edit, reorder, and manage pages for your built-in project wiki in Azure DevOps.  
 ms.technology: devops-collab
-ms.custom: wiki
+ms.custom: wiki, devx-track-azurecli
 ms.assetid: BD03B9EE-D4DC-4EDC-B0BF-5C11B34E14C9 
 ms.author: chcomley
 author: chcomley

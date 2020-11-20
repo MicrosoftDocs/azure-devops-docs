@@ -8,7 +8,7 @@ ms.author: kraigb
 author: kraigb
 ms.date: 04/06/2020
 monikerRange: 'azure-devops'
-ms.custom: devx-track-python
+ms.custom: devx-track-python, devx-track-azurecli
 ---
 
 # Use CI/CD to deploy a Python web app to Azure App Service on Linux
