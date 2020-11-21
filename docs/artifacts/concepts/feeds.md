@@ -1,6 +1,6 @@
 ---
-title: What are feeds? | Azure Artifacts
-description: Feeds manage and set permissions for packages in Azure DevOps Services or Team Foundation Server
+title: What are feeds?
+description: Learn about Artifacts feeds and the difference between project-scoped and organization-scoped feeds. Learn how to create, delete, and restore feeds. 
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -12,17 +12,15 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-Artifacts Feeds are organizational constructs that allow you to store, manage, and group your packages and control who to share it with using [feeds permissions](../feeds/feed-permissions.md).
-
-Feeds are not package-type dependent. You can store all the following package types in a single feed: npm, NuGet, Maven, Python, and Universal packages. 
+Artifacts Feeds are organizational constructs that allow you to store, manage, and group your packages and control who to share it with. Feeds are not package-type dependent. You can store all the following package types in a single feed: npm, NuGet, Maven, Python, and Universal packages. 
 
 ::: moniker range=">= azure-devops-2019"
 
-## Project-scoped feeds vs. Organization-scoped feeds
+## Project-scoped vs. Organization-scoped feeds
 
-Previously, all feeds were scoped to an organization, they could be viewed and accessed in the Azure Artifacts hub from any project within an organization. With the introduction of public feeds, we also introduced **project-scoped feeds**, which live inside the project that they were created in, and can only be seen when accessing the Azure Artifacts hub within that project. 
+Previously, all feeds were scoped to an organization, they could be viewed and accessed in the Azure Artifacts hub from any project within an organization. With the introduction of public feeds, we also introduced **project-scoped feeds**. This type of feed can only be accessed from within the hosting project. 
 
-Only project-scoped feeds can be made public, see the following section on [public feeds](#public-feeds). [Learn more](../feeds/project-scoped-feeds.md) about the differences between project-scoped and organization-scoped feeds.T
+Only project-scoped feeds can be made public. You can learn more about [public feeds](#public-feeds) later in this article. See [Feeds visibilty](../feeds/project-scoped-feeds.md) to understand the differences between project-scoped and organization-scoped feeds.
 
 > [!NOTE]
 > To access a feed in a different organization, a user must be given access to the project hosting that feed.
