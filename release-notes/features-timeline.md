@@ -4322,7 +4322,7 @@ Versions in the "Server" column are linked to the appropriate download location.
     </tbody>
 </table>
 
-## Server Build Numbers
+## Azure DevOps Server Build Numbers
 
 <table>
 <thead>
