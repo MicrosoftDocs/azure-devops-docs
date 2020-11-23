@@ -27,14 +27,14 @@ Only project-scoped feeds can be made public. You can learn more about [public f
 
 ## Public feeds
 
-Public feeds can be used to share your packages publicly with anyone on the Internet. Users won't have to be a member of your organization or your enterprise. They can access the packages even if they don't have an Azure DevOps account. 
+Public feeds are used to share your packages publicly with anyone on the Internet. Users won't have to be a member of your organization or your enterprise. They can access the packages even if they don't have an Azure DevOps account. 
 
 Public feeds are **project-scoped feeds** and it will inherit the visibility settings of the hosting project.
 
 There some important things to note regarding public feeds:
 
 * Public feeds can only be created inside of public projects.
-* Public feeds aren't intended as a replacement for existing registries of record (NuGet.org, npmjs.com, etc.).
+* Public feeds aren't intended as a replacement for existing package management platforms (NuGet.org, npmjs.com, etc.).
 * Public feeds cannot have upstream sources.
 * Public users cannot currently download universal packages. All other package types are supported for public access.
 
