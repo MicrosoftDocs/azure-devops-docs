@@ -18,7 +18,7 @@ Artifacts Feeds are organizational constructs that allow you to store, manage, a
 
 Previously, all feeds were scoped to an organization, they could be viewed and accessed in the Azure Artifacts hub from any project within an organization. With the introduction of public feeds, we also introduced **project-scoped feeds**. This type of feed can only be accessed from within the hosting project. 
 
-Only project-scoped feeds can be made public. You can learn more about [public feeds](#public-feeds) later in this article. See [Feeds visibilty](../feeds/project-scoped-feeds.md) to understand the differences between project-scoped and organization-scoped feeds.
+Only project-scoped feeds can be made public. You can learn more about [public feeds](#public-feeds) later in this article. See [Feeds visibility](../feeds/project-scoped-feeds.md) to understand the differences between project-scoped and organization-scoped feeds.
 
 > [!NOTE]
 > To access a feed in a different organization, a user must be given access to the project hosting that feed.
@@ -39,6 +39,8 @@ There some important things to note regarding public feeds:
 ## Create a feed
 
 [!INCLUDE [](../includes/create-feed.md)]
+
+::: moniker range=">= azure-devops-2019"
 
 ## Restoring a deleted feed
 
@@ -76,3 +78,5 @@ A feed pending deletion will still use storage space. If you want to permanently
     > ![Permanently delete feed](media/permanently-delete-feed.png)
 
 Once the feed is permanently deleted, users won't be able to view or restore its packages. The feed name will be available for reuse 15 minutes after the deletion.
+
+::: moniker-end
