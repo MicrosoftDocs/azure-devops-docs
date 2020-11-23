@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2017'
 
 Artifacts Feeds are organizational constructs that allow you to store, manage, and group your packages and control who to share it with. Feeds are not package-type dependent. You can store all the following package types in a single feed: npm, NuGet, Maven, Python, and Universal packages. 
 
-::: moniker range=">= azure-devops-2019"
-
 ## Project-scoped vs. Organization-scoped feeds
 
 Previously, all feeds were scoped to an organization, they could be viewed and accessed in the Azure Artifacts hub from any project within an organization. With the introduction of public feeds, we also introduced **project-scoped feeds**. This type of feed can only be accessed from within the hosting project. 
@@ -78,5 +76,3 @@ A feed pending deletion will still use storage space. If you want to permanently
     > ![Permanently delete feed](media/permanently-delete-feed.png)
 
 Once the feed is permanently deleted, users won't be able to view or restore its packages. The feed name will be available for reuse 15 minutes after the deletion.
-
-::: moniker-end
