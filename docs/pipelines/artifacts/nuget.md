@@ -164,7 +164,7 @@ steps:
     allowPackageConflicts: true
 ```
 > [!NOTE]
-> Artifact feeds that were created through the classic user interface are project scoped feeds. You must include the project name in the `publishVstsFeed` parameter: `publishVstsFeed: '<projectName>/<feed>'`. See [Project-scoped feeds vs. Organization-scoped feeds](../../artifacts/concepts/feeds.md#project-scoped-feeds-vs-organization-scoped-feeds) to learn about the difference between the two types.
+> Artifact feeds that were created through the classic user interface are project scoped feeds. You must include the project name in the `publishVstsFeed` parameter: `publishVstsFeed: '<projectName>/<feed>'`. See [Project-scoped feeds vs. Organization-scoped feeds](../../artifacts/concepts/feeds.md#project-scoped-vs-organization-scoped-feeds) to learn about the difference between the two types.
 
 To publish to an external NuGet feed, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New service connection**. Select the **NuGet** option for the service connection. To connect to the feed, fill in the feed URL and the API key or token.
 
