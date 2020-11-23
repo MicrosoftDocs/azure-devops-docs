@@ -20,6 +20,9 @@ As roles and responsibilities change, you can change the owner for your organiza
 
 For organizations connected to Azure Active Directory (Azure AD),  if your organization Owner and any other Project Collection Administrators are no longer active, you can [transfer ownership to another user](resolve-orphaned-organization.md).  
 
+> [!NOTE]  
+> Changing the organization owner does not remove the old owner from the Project Collection Administrators group.
+
 <a name="ChangeOwner"></a>
 
 ## Prerequisites
