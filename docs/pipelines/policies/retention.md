@@ -186,10 +186,6 @@ You can delete runs using the [context menu](../get-started/multi-stage-pipeline
 
 ## Set release retention policies
 
-> [!NOTE]
-> If you are using Azure Pipelines, you can view but not change the global release retention policies for your project.
->
-
 The release retention policies for a classic release pipeline determine how long a release and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline.
 
 The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most recent three will be retained indefinitely - irrespective of the number of days specified. However, you can manually delete these releases when you no longer require them. See FAQ below for more details about how release retention works.
