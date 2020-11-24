@@ -117,7 +117,10 @@ If you've reached your storage limit, you'll be blocked from making additional u
 A: Currently, the following get counted in your Azure Artifacts billed cost: 
 * All packages (npm, NuGet, Python, Maven, and Universal Packages), including those packages stored from upstream sources.
 
-You're not billed by Azure Artifacts for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching. 
+You're not billed by Azure Artifacts for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching.
+
+> [!NOTE]
+> Packages that are placed in the recycle bin will be deleted permanently after 30 days. However, these packages still count as part of your storage bill. If you want to delete them sooner, you can navigate to the recycle bin and delete them manually.
 
 ### Q: Why do I see 0 GiB of storage, even though I'm storing artifacts?
 
