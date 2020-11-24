@@ -91,7 +91,7 @@ and [Micro Focus Load Runner](https://www.microfocus.com/products/loadrunner-loa
 Other open-source alternatives that support code-based tests are [Artillery](https://artillery.io/), [Gatling](https://gatling.io/), [k6](https://k6.io/), and [Locust](https://locust.io/).
 
 In addition, extensions from several load test vendors such as [SOASTA](https://marketplace.visualstudio.com/items?itemName=SOASTA.SOASTA-Extension)
-(now Akamai CloudTest), [Apica Loadtest](https://marketplace.visualstudio.com/items?itemName=apicasystem.apica-loadtest), and
+(now Akamai CloudTest), [Apica Loadtest](https://marketplace.visualstudio.com/items?itemName=ApicaSystems.apica-loadtest), and
 [k6](https://marketplace.visualstudio.com/items?itemName=k6.k6-load-test) are available in the Azure DevOps and Azure Marketplace.
 
 
