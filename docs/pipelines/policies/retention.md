@@ -204,13 +204,15 @@ You can also learn how to customize these policies on a [stage-by-stage basis](#
 
 ### Global release retention policy
 
-If you are using an on-premises Team Foundation Server, you can specify release retention policy defaults and maximums for a project. You can also specify when releases are permanently destroyed (removed from the **Deleted** tab in the build explorer).
+If you are using an on-premises Team Foundation Server or Azure DevOps Server, you can specify release retention policy defaults and maximums for a project. You can also specify when releases are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
-If you are using Azure Pipelines, you can view but not change these settings for your project.
+:::image type="content" source="media/on-premises-release-retention.png" alt-text="On premises release retention settings":::
 
-Global release retention policy settings can be managed from the **Release** settings of your project:
+If you are using Azure DevOps Services, you can view but not change these settings for your project.
 
-* Azure Pipelines: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
+Global release retention policy settings can be managed from the **Release retention** settings of your project:
+
+* Azure DevOps Services: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained for all release pipelines. Authors of release pipelines cannot
