@@ -178,7 +178,7 @@ steps:
 You can copy content from one YAML and reuse it in a different YAML. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 
 ```yaml
-# File: include-npm-steps.yml
+# File: templates/include-npm-steps.yml
 
 steps:
 - script: npm install
@@ -520,6 +520,9 @@ This means that you can't use scripts from the template repo in your pipeline.
 If you want to use a particular, fixed version of the template, be sure to pin to a `ref`.
 The `refs` are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
+
+> [!NOTE]
+> If no `ref` is specified, the pipeline will default to using `refs/heads/master`.
 
 You may also use `@self` to refer to the repository where the main pipeline was found.
 This is convenient for use in `extends` templates if you want to refer back to contents in the extending pipeline's repository.

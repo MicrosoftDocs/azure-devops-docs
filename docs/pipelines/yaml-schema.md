@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 08/26/2020
+ms.date: 11/02/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -476,10 +476,10 @@ In YAML pipelines, we recommend that you put your deployment steps in a deployme
 
 ```YAML
 jobs:
-- deployment: string   # name of the deployment job (A-Z, a-z, 0-9, and underscore)
+- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
   displayName: string  # friendly name to display in the UI
-  pool:                # see the following "Pool" schema
-    name: string
+  pool:                # see pool schema
+    name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.
     demands: string | [ string ]
   workspace:
     clean: outputs | resources | all # what to clean up before the job runs
@@ -671,7 +671,6 @@ variables:
 
 You can export reusable sections of your pipeline to a separate file. 
 These separate files are known as templates. 
-Azure Pipelines supports four kinds of templates:
 
 Azure Pipelines supports four kinds of templates:
 - [Stage](#stage-templates)
@@ -1060,9 +1059,11 @@ Resources in YAML represent sources of pipelines, containers, repositories, and 
 
 ```yaml
 resources:
-  pipelines: [ pipeline ]
+  pipelines: [ pipeline ]  
+  builds: [ build ]
   repositories: [ repository ]
   containers: [ container ]
+  packages: [ package ]
 ```
 
 ### Pipeline resource
@@ -1075,15 +1076,18 @@ You can also enable [pipeline-completion triggers](process/pipeline-triggers.md)
 ```yaml
 resources:
   pipelines:
-  - pipeline: string  # identifier for the pipeline resource
-    project:  string # project for the build pipeline; optional input for current project
-    source: string  # source pipeline definition name
-    branch: string  # branch to pick the artifact, optional; defaults to all branches
-    version: string # pipeline run number to pick artifact, optional; defaults to last successfully completed run
-    trigger:     # optional; triggers are not enabled by default.
-      branches:
-        include: [string] # branches to consider the trigger events, optional; defaults to all branches.
-        exclude: [string] # branches to discard the trigger events, optional; defaults to none.
+  - pipeline: string  # identifier for the resource used in pipeline resource variables
+    project: string # project for the source; optional for current project
+    source: string  # name of the pipeline that produces an artifact
+    version: string  # the pipeline run number to pick the artifact, defaults to latest pipeline successful across all stages; Used only for manual or scheduled triggers
+    branch: string  # branch to pick the artifact, optional; defaults to all branches; Used only for manual or scheduled triggers
+    tags: [ string ] # list of tags required on the pipeline to pickup default artifacts, optional; Used only for manual or scheduled triggers
+    trigger:     # triggers are not enabled by default unless you add trigger section to the resource
+      branches:  # branch conditions to filter the events, optional; Defaults to all branches.
+        include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
+        exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
+      tags: [ string ]  # list of tags to evaluate for trigger event, optional; 
+      stages: [ string ] # list of stages to evaluate for trigger event, optional; 
 ```
 # [Example](#tab/example)
 
@@ -1113,7 +1117,7 @@ resources:
 
 > [!IMPORTANT]
 > When you define a resource trigger, if its pipeline resource is from the same repo as the current pipeline, triggering follows the same branch and commit on which the event is raised.
-> But if the pipeline resource is from a different repo, the current pipeline is triggered on the master branch.
+> But if the pipeline resource is from a different repo, the current pipeline is triggered on the branch specified by the **Default branch for manual and scheduled builds** setting. For more information, see [Branch considerations for pipeline completion triggers](process/pipeline-triggers.md?tabs=yaml#branch-considerations-for-pipeline-completion-triggers).
 
 #### The pipeline resource metadata as predefined variables
 
@@ -1134,7 +1138,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from a pipeline resource by using a `download` task. See the [download](/azure/devops/pipelines/yaml-schema#download) keyword.
+You can consume artifacts from a pipeline resource by using a `download` task. See the [download](#download) keyword.
 
 ### Container resource
 
@@ -1291,6 +1295,50 @@ The `git` type refers to Azure Repos Git repos.
   An example is `name: MyBitbucket/vscode`.
   Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
 
+### Packages resource
+
+::: moniker range="> azure-devops-2020"
+
+You can consume NuGet and npm GitHub packages as a resource in YAML pipelines. When specifying package resources, set the package as `NuGet` or `npm`. 
+
+## [Schema](#tab/schema)
+
+```yaml
+resources:
+  packages:
+    - package: myPackageAlias # alias for the package resource
+      type: Npm # type of the package NuGet/npm
+      connection: GitHubConnectionName # Github service connection with the PAT type
+      name: nugetTest/nodeapp # <Repository>/<Name of the package>
+      version: 1.0.1 # Version of the packge to consume; Optional; Defaults to latest
+      trigger: true # To enable automated triggers (true/false); Optional; Defaults to no triggers
+```
+
+## [Example](#tab/example)
+
+In this example, there is an [GitHub service connection](library/service-endpoints.md#common-service-connection-types) named `pat-contoso` to a GitHub npm package named `contoso`. Learn more about [GitHub packages](https://github.com/features/packages). 
+
+```yaml
+resources:
+  packages:
+    - package: contoso
+      type: npm
+      connection: pat-contoso
+      name: yourname/contoso 
+      version: 7.130.88 
+      trigger: true
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- getPackage: contoso 
+```
+---
+
+::: moniker-end
+
+
 ## Triggers
 
 * [Push trigger](#push-trigger)
@@ -1440,6 +1488,8 @@ pr: none # will disable PR builds entirely; will not disable CI triggers
 
 Full syntax:
 
+:::moniker range="<=azure-devops-2020"
+
 ```yaml
 pr:
   autoCancel: boolean # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
@@ -1450,6 +1500,24 @@ pr:
     include: [ string ] # file paths which must match to trigger a build
     exclude: [ string ] # file paths which will not trigger a build
 ```
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2020"
+
+```yaml
+pr:
+  autoCancel: boolean # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
+  branches:
+    include: [ string ] # branch names which will trigger a build
+    exclude: [ string ] # branch names which will not
+  paths:
+    include: [ string ] # file paths which must match to trigger a build
+    exclude: [ string ] # file paths which will not trigger a build
+  drafts: boolean # For GitHub only, whether to build draft PRs, defaults to true
+```
+
+:::moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
@@ -1973,6 +2041,7 @@ The task publishes (uploads) a file or folder as a pipeline artifact that other 
 steps:
 - publish: string # path to a file or folder
   artifact: string # artifact name
+  displayName: string  # friendly name to display in the UI
 ```
 
 # [Example](#tab/example)
@@ -1981,6 +2050,7 @@ steps:
 steps:
 - publish: $(Build.SourcesDirectory)/build
   artifact: WebApp
+  displayName: Publish artifact WebApp
 ```
 
 ---
@@ -1999,6 +2069,7 @@ steps:
 - download: [ current | pipeline resource identifier | none ] # disable automatic download if "none"
   artifact: string ## artifact name, optional; downloads all the available artifacts if not specified
   patterns: string # patterns representing files to include; optional
+  displayName: string  # friendly name to display in the UI
 ```
 ### Artifact download location
 
@@ -2018,6 +2089,7 @@ steps:
 - download: current  # refers to artifacts published by current pipeline
   artifact: WebApp
   patterns: '**/.js'
+  displayName: Download artifact WebApp
 - download: MyAppA   # downloads artifacts available as part of the pipeline resource
 ```
 
@@ -2063,6 +2135,9 @@ steps:
 ```
 
 ::: moniker-end
+
+> [!NOTE]
+> In addition to the cleaning option available using `checkout`, you can also configuring cleaning in a workspace. For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
 
 To avoid syncing sources at all:
 
@@ -2189,9 +2264,9 @@ Learn more about [conditions](process/conditions.md?tabs=yaml),
 
 Syntax highlighting is available for the pipeline schema via a Visual Studio Code extension.
 You can [download Visual Studio Code](https://code.visualstudio.com), [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and [check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).
-The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.
+The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/main/service-schema.json) for validation.
 
-You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](https://docs.microsoft.com/rest/api/azure/devops/distributedtask/yamlschema/get?view=azure-devops-rest-5.1&preserve-view=true).
+You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](/rest/api/azure/devops/distributedtask/yamlschema/get?preserve-view=true&view=azure-devops-rest-5.1).
 
 <!-- For people who get here by searching for, say, "azure pipelines template YAML schema", 
      look around a bit, and then type "Ctrl-F JSON" when they don't see anything promising

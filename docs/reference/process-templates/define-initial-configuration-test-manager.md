@@ -197,7 +197,7 @@ You use the following syntax for the resolution states that are defined in the d
 
 ## Define the default test settings for a local test run  
 
-You use the **TestSetting** element to specify the name of the file to use when a test is run. The following file is defined in the testsettings.xml: localrun.testsettings. For more information, see [Setting Up Test Machines to Run Tests or Collect Data](https://msdn.microsoft.com/library/dd293551.aspx).  
+You use the **TestSetting** element to specify the name of the file to use when a test is run. The following file is defined in the testsettings.xml: localrun.testsettings. For more information, see [Setting Up Test Machines to Run Tests or Collect Data](/previous-versions/dd293551(v=vs.140)).  
   
 You must encapsulate the **TestSetting** element within its corresponding container element: **TestSettings**. You use the following syntax structure for these elements:  
   

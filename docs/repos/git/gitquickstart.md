@@ -10,21 +10,23 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Get Started with Azure Repos and Visual Studio
+# Get started with Azure Repos and Visual Studio
+
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015 | VS 2017**
+
+*Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).*
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](gitquickstart.md)
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md)   
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017  **
-
-This guide covers the basics so you can get up and running using Git with code already in Azure Repos or Azure DevOps Server.
-Explore our [full tutorial](gitworkflow.md) for more information on how to use Git from Visual Studio or the command line.
-
-Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).
+Get up and running using Git with code already in Azure Repos. 
+For more information on how to use Git from Visual Studio or the command line, see [Azure Repos Git tutorial](gitworkflow.md).
 
 If you don't have your code in an Azure Repos or Azure DevOps Server Git repo, visit our [Visual Studio](share-your-code-in-git-vs.md) or [command line](share-your-code-in-git-cmdline.md) getting started articles to learn how to create a local repo for your code and push it to Azure Repos.
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
 
 <a name="clone"></a>
 

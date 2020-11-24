@@ -6,14 +6,14 @@ ms.assetid: 2a51a33a-134b-4357-bcfc-540b3195682f
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Resolve merge conflicts
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
-When you [merge](pulling.md) one branch into another, file changes from commits in one branch can conflict with the changes the other.
+When you [merge](pulling.md) one branch into another, file changes from commits in one branch can conflict with the changes in the other.
 Git attempts to resolve these changes by using the [history](review-history.md) in your repo to determine what the merged files should look like.
 When it isn't clear how to merge changes, Git halts the merge and tells you which files conflict. 
 
@@ -52,6 +52,10 @@ Rebased branches will merge into your main branch without conflicts.
 ## Resolve merge conflicts 
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
+
 1. You'll be informed of the merge conflict(s) when you pull changes or attempt to merge two branches.   
 2. The conflict notification appears. Click the **Conflicts** link to start resolve file conflicts.   
 

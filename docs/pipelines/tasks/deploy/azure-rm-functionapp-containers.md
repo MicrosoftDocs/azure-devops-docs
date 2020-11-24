@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task to deploy an Azure Function on Linux using a [custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image).
+Use this task to deploy an Azure Function on Linux using a [custom image](/azure/azure-functions/functions-create-function-linux-custom-image).
 
 ## Task Inputs
 

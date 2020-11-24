@@ -60,7 +60,7 @@ As shown, the email feature (option A) is more popular with your users and wins.
 
 ## Evaluating Feature Flag solutions
 
-As outlined in [how to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/), the ALM | DevOps Rangers evaluated a number of FF frameworks and solutions. 
+As outlined in [how to implement feature flags and A|B testing](/archive/blogs/visualstudioalmrangers/how-to-implement-feature-flags-and-ab-testing), the ALM | DevOps Rangers evaluated a number of FF frameworks and solutions. 
 
 They chose the [LaunchDarkly](https://launchdarkly.com/index.html) solution for several reasons:
 
@@ -99,7 +99,7 @@ Lastly, you'd like to give the users a list of preview features and allow each u
 
 ## Manage features with feature flags in your engineering process
 
-To protect the flags from malicious users, you need to generate and pass the hash of the user key to the LaunchDarkly API calls. As Azure DevOps extensions can only use client-side code, the ALM | DevOps Rangers chose Azure Functions to help generate the hash, as shown. Read [how we checked and fixed the 503 error and Performance issue in our Azure Function](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2018/04/03/how-we-checked-and-fixed-the-503-error-and-performance-issue-in-our-azure-function/) for details.
+To protect the flags from malicious users, you need to generate and pass the hash of the user key to the LaunchDarkly API calls. As Azure DevOps extensions can only use client-side code, the ALM | DevOps Rangers chose Azure Functions to help generate the hash, as shown. Read [how we checked and fixed the 503 error and Performance issue in our Azure Function](/archive/blogs/visualstudioalmrangers/how-we-checked-and-fixed-the-503-error-and-performance-issue-in-our-azure-function) for details.
 
 ![Extension calls an Azure Function, which calls the LaunchDarkly SDK](./media/phase-features-with-ff/phase-features-with-ff-ld-azure-fx.png)
 
@@ -159,8 +159,8 @@ No, rings and feature flags are symbiotic. Read [Feature Flags or Rings](https:/
 ## Reference information
 
 * [CI/CD pipeline examples](https://devblogs.microsoft.com/visualstudio/tag/cicd/)
-* [DevOps @ Microsoft](https://aka.ms/devops)
-* [How to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/)
+* [DevOps @ Microsoft](/azure/devops/learn/)
+* [How to implement feature flags and A|B testing](/archive/blogs/visualstudioalmrangers/how-to-implement-feature-flags-and-ab-testing)
 
 > Authors: Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  

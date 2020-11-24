@@ -18,7 +18,7 @@ As your team identifies code defects or bugs, they can add them to the backlog a
 
 ::: moniker range=">= azure-devops-2019"
 
-You can define this team setting for the [Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), and [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) processes. The Bug work item type isn't defined for the [Basic](../../boards/get-started/track-issues-tasks.md) process, so there isn't a team setting for Basic. Instead, you should track bugs and code defects using the Issue work item type. 
+You can define this team setting for the [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes. The Bug work item type isn't defined for the [Basic](../../boards/get-started/plan-track-work.md) process, so there isn't a team setting for Basic. Instead, you should track bugs and code defects using the Issue work item type. 
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 1.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-2. Choose the :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board and set general team settings.  
+2. Choose **Board settings** :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](media/configure-team/open-board-settings.png)  
@@ -66,7 +66,7 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-2. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open the  settings dialog.  
+2. Choose **Board settings** :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: to open the settings dialog.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team](media/configure-team/open-settings-tfs.png)  
@@ -88,7 +88,7 @@ Requires TFS 2013.4 or later version.
 
 1. Open your team settings from the **Overview** tab of your team's admin context. Your changes are automatically saved. 
 
-2. Choose the ![gear icon](../../media/icons/gear-icon.png) (gear icon) to open the administration page.  
+2. Choose ![gear icon](../../media/icons/gear-icon.png) to open the administration page.  
 
 	![Gear icon provides access to admin pages](../../boards/media/icons/ALM_OpenAdminContext.png)
 
@@ -159,6 +159,4 @@ You can review bugs defined for your project by creating a query and specifying 
 ## Related articles
 
 - [Enable backlog levels of interest to your team](select-backlog-navigation-levels.md) 
-- [Manage teams and configure team tools](manage-teams.md)  
-
-
+- [Manage teams and configure team tools](manage-teams.md)

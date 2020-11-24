@@ -8,11 +8,11 @@ toc: show
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 08/25/2020
+monikerRange: '<= azure-devops'
+ms.date: 10/12/2020
 ---
 
-# About permissions and groups
+# About permissions and inheritance  
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
@@ -144,147 +144,6 @@ you'll want to [change access levels](change-access-levels.md), not permissions.
 Setting the access level for  users or groups doesn't provide them access to a project or the web portal. Only users or groups added to a team or security group can connect to a project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the project or a team](add-users-team-project.md).
 
 
-## Manage large numbers of users 
-
-If you need to set permissions for large numbers of users,
-create a group in Windows, Active Directory, or Azure Active Directory,
-add these groups to a default or custom security group,
-and add the same groups to grant access to additional resources.
-
-![Conceptual image showing defining AD groups](media/permissions/grant-permissions.png)
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-
-Of course, you don't need to grant permissions for reports or the project portal if your project doesn't use SQL Server Reporting Services or a SharePoint site.
-::: moniker-end
-
-<a name="validusers"></a>
-
-## Valid user groups
-
-When you add accounts of users directly to a built-in group or through a Windows group, they are automatically added to one of the valid user groups.
-
--   *Server*\\Team Foundation Valid Users: All members added to server-level groups.
--   *ProjectCollectionName*\\Project Collection Valid Users: All members added to collection-level groups.
--   *TeamProjectName*\\Project Valid Users: All members added to project-level groups.
-
-The default permissions assigned to these groups are primarily limited to
-read access, such as **View build resources**, **View project-level
-information**, and **View collection-level information**.
-
-This means that all users that you add to one project can view the objects in other projects within a collection.
-If you need to restrict view access, then you can [set restrictions through the area path node](../../organizations/security/set-permissions-access-work-tracking.md).
-
-If you remove or deny the **View instance-level information** permission for one of the Valid Users groups,
-no users in the group are able to access the project, collection, or deployment, depending on the group you set.
-
-## Tools used to set permissions
-
-You set most permissions through the web portal. You can use the tools listed in the following table to set permissions.
-Different tools are used depending on whether you are setting permissions at a server, collection, or project level.
-You use the [web portal administration context](../../organizations/security/add-users-team-project.md) to set most permissions.
-
-::: moniker range="= azure-devops"
-
-| Permission level  | Web portal security pages  | az devops CLI  | [Tf permission command-line tool](../../repos/tfvc/permission-command.md) |  
-|------------------|:---------------------------:|:--------------:|:---------------------:|  
-| [Add users to an organization](../accounts/add-organization-users.md)       |   ✔️  |   ✔️  |   |
-| [Add and manage security groups](add-manage-security-groups.md)             |   ✔️  |   ✔️  |   |
-| [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md)               |                                      |   ✔️  |                                                                           |
-| [Organization-level](permissions.md#collection)                                     |   ✔️  |                                      |                                                                           |
-| [Project and test level](permissions.md#project_test)                               |   ✔️  |                                      |                                                                           |
-| [Build pipelines](permissions.md#build)     |   ✔️  |            |                     |
-| [Git repository](permissions.md#git-repo)                                           |   ✔️  |                                      |   ✔️                                       |
-| [Team Foundation Version Control](permissions.md#tfvc)                              |   ✔️  |                                      |   ✔️                                       |
-| [Area level for work item tracking](permissions.md#area-permissions)                |   ✔️  |                                      |                                                                           |
-| [Iteration level for work item tracking](permissions.md#iteration-path-permissions) |   ✔️  |                                      |                                                                           |
-| [Work item query](permissions.md#query)                                             |   ✔️  |                                      |                                                                           |
-| [Work item tags](permissions.md#tags)                                               |   ✔️  |   |                                                                           |
-| [Release pipelines](permissions.md#release_management)                              |   ✔️  |                                      |                                                                           |
-                                                                  |  |
-
-::: moniker-end
-
-::: moniker range="= azure-devops-2020"
-
-| Permission level   | Web portal security pages   | az devops CLI   | [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator) | [TFSSecurity CLI](/azure/devops/server/command-line/tfssecurity-cmd) | [Tf command-line tool](../../repos/tfvc/permission-command.md) |
-|-------------------|:-------------------------:|:------------------:|:------------------------------------------------------------------------------:|:--------------------------------------------------------------------:|-------------------------------------------------|
-| [Add users to a server instance](../accounts/add-organization-users.md)       |     |   ✔️  |   |  ✔️ |  | 
-| [Add and manage security groups](add-manage-security-groups.md)             |   ✔️  |   ✔️  |   |  ✔️ |  | 
-| [Server-level](permissions.md#server)         |                   |     |   ✔️           | ✔️ |                         |
-| [Collection-level](permissions.md#collection) |  ✔️  |           |     |   ✔️   |     |
-| [Project and test level](permissions.md#project_test)                               |   ✔️  |              |   | ✔️   |       |
-| [Build level](permissions.md#build)    |   ✔️  |              |   | ✔️   |       |
-| [Git repository](permissions.md#git-repo)                                           |   ✔️  |                                      |                                                                                        |   ✔️                                  |       ✔️ |
-| [Team Foundation Version Control](permissions.md#tfvc)                              |   ✔️  |                                      |                                                                                        |   ✔️                                  |    ✔️ |
-| [Area level for work item tracking](permissions.md#area-permissions)  |   ✔️  |              |   | ✔️   |       |
-| [Iteration level for work item tracking](permissions.md#iteration-path-permissions)  |   ✔️  |              |   | ✔️   |       |
-| [Work item query](permissions.md#query)          |  ✔️  |                     |  | ✔️          |            |
-| [Work item tags](permissions.md#tags)          |              |                     |  | ✔️          |            |
-| [Alerts](permissions.md#alerts)          |              |                     |  | ✔️          |            |
-| [Releases](permissions.md#release_management)     |   ✔️  |               |                       |         |    |
-
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < azure-devops-2020"
-
-|  Permission level |  Web portal security pages | [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator) |    [TFSSecurity CLI](/azure/devops/server/command-line/tfssecurity-cmd) |  [Tf command-line tool](../../repos/tfvc/permission-command.md)  |   
-|-------------------------------------------------------------------------------------|:-----------------------------------:|:--------------------------------------:|:-----------------------------------:|:-----------------------------------:|  
-|                        [Server-level](permissions.md#server)                        |                                     |    ✔️    |   ✔️  |                                     |  
-|                    [Collection-level](permissions.md#collection)                    |   ✔️  |    ✔️    |   ✔️  |                                     |  
-|                [Project and test level](permissions.md#project_test)                |   ✔️  |                                        |   ✔️  |                                     |  
-|                         [Build level](permissions.md#build)                         |   ✔️  |                                        |   ✔️  |                                     |  
-|                      [Git repository](permissions.md#git-repo)                      |   ✔️  |                                        |                                     |   ✔️  |  
-|               [Team Foundation Version Control](permissions.md#tfvc)                |   ✔️  |                                        |                                     |   ✔️  |  
-|        [Area level for work item tracking](permissions.md#area-permissions)         |   ✔️  |                                        |   ✔️  |                                     |  
-| [Iteration level for work item tracking](permissions.md#iteration-path-permissions) |   ✔️  |                                        |   ✔️  |                                     |  
-|                       [Work item query](permissions.md#query)                       |   ✔️  |                                        |   ✔️  |                                     |  
-|                        [Work item tags](permissions.md#tags)                        |                                     |                                        |   ✔️  |                                     |  
-|                           [Alerts](permissions.md#alerts)                           |                                     |                                        |   ✔️  |                                     |  
-|                    [Releases](permissions.md#release_management)                    |   ✔️  |                                        |                                     |                                     |  
-
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-|   Permission level  |   Web portal security pages  | [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator) |    [TFSSecurity CLI](/azure/devops/server/command-line/tfssecurity-cmd) |  [Tf command-line tool](../../repos/tfvc/permission-command.md) |   [TFSLabConfig command-line tool](/azure/devops/server/command-line/tfslabconfig-cmd)    |
-|-------------------------------------------------------------------------------------|:-----------------------------------:|:--------------------------------------:|:-----------------------------------:|:-----------------------------------:|:-----------------------------------:|
-|                        [Server-level](permissions.md#server)                        |                                     |    ✔️    |   ✔️  |                                     |                                     |
-|                    [Collection-level](permissions.md#collection)                    |   ✔️  |    ✔️    |   ✔️  |                                     |                                     |
-|                [Project and test level](permissions.md#project_test)                |   ✔️  |                                        |   ✔️  |                                     |                                     |
-|                         [Build level](permissions.md#build)                         |   ✔️  |                                        |   ✔️  |                                     |                                     |
-|                      [Git repository](permissions.md#git-repo)                      |   ✔️  |                                        |                                     |   ✔️  |                                     |
-|               [Team Foundation Version Control](permissions.md#tfvc)                |   ✔️  |                                        |                                     |   ✔️  |                                     |
-|        [Area level for work item tracking](permissions.md#area-permissions)         |   ✔️  |                                        |   ✔️  |                                     |                                     |
-| [Iteration level for work item tracking](permissions.md#iteration-path-permissions) |   ✔️  |                                        |   ✔️  |                                     |                                     |
-|                       [Work item query](permissions.md#query)                       |   ✔️  |                                        |   ✔️  |                                     |                                     |
-|                        [Work item tags](permissions.md#tags)                        |                                     |                                        |   ✔️  |                                     |                                     |
-|                           [Alerts](permissions.md#alerts)                           |                                     |                                        |   ✔️  |                                     |                                     |
-|                    [Releases](permissions.md#release_management)                    |   ✔️  |                                        |                                     |                                     |                                     |
-|                        [Lab Management](permissions.md)                         |                                     |                                        |                                     |                                     |   ✔️  |
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-
-## Setting permissions for SQL Server reports 
-
-For information about how to set permissions in Reporting Services,
-see [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
-::: moniker-end  
-
-::: moniker range=">= tfs-2013 <= tfs-2017"  
-
-## Setting permissions for SharePoint integration     
-
-For information about how to set permissions for SharePoint Products integrated with TFS,
-see [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md).
-
-For more information, see [Determine permission levels and groups in SharePoint 2013](https://technet.microsoft.com/library/cc262690.aspx).
-
-::: moniker-end  
 
 ## Related articles
 
@@ -292,6 +151,7 @@ For more information, see [Determine permission levels and groups in SharePoint 
 ::: moniker range="= azure-devops"
 
 - [Permissions and groups reference](permissions.md)  
+- [Security and permission management tools](security-tools-reference.md)  
 - [Add users to an organization](../accounts/add-organization-users.md) 
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add and manage security groups](add-manage-security-groups.md)   
@@ -302,8 +162,9 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ::: moniker range="< azure-devops"  
 - [Permissions and groups reference](permissions.md)  
+- [Security and permission management tools](security-tools-reference.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
 - [Make a user a team admin](../settings/manage-teams.md)  
 - [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
-::: moniker-end  
+::: moniker-end

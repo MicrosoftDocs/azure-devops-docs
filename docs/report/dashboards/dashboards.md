@@ -41,12 +41,12 @@ When a project is first created, a default team and default team dashboard is cr
 
 ::: moniker range="tfs-2015"
 > [!NOTE]   
-> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).
+> Multiple team dashboards and the [widget catalog](widget-catalog.md) are available from TFS 2015.1 or later versions. For TFS 2015 and earlier versions, you don't have access to multiple team dashboards. Instead, your home page serves as a [single team dashboard](team-dashboard.md). For information on SharePoint dashboards, see [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards).
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 > [!NOTE]   
-> For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).
+> For information on SharePoint dashboards, see [Project portal dashboards](/previous-versions/azure/devops/report/sharepoint-dashboards/project-portal-dashboards).
 ::: moniker-end
 
 [!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
@@ -311,5 +311,4 @@ As you can see, you can use team dashboards to provide guidance and keep your te
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).  
-
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).

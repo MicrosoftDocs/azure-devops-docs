@@ -5,7 +5,7 @@ description: Authenticate to Azure Repos Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 08/25/2020
+ms.date: 11/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
 
-Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the  use of [Git Credential Managers](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the  use of [Git Credential Manager Core](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 >[!IMPORTANT]
 > SSH URLs have changed, but old SSH URLs will continue to work. If you have already set up SSH, you should update your remote URLs to the new format:
@@ -174,7 +174,7 @@ If not, see the section on [Questions and troubleshooting](#questions-and-troubl
 SSH may display the server's SSH fingerprint and ask you to verify it.
 You should verify that the displayed fingerprint matches one of the fingerprints in the **SSH public keys** page.
 
-SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](https://technet.microsoft.com/library/cc959354.aspx).
+SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](/previous-versions/windows/it-pro/windows-2000-server/cc959354(v=technet.10)).
 Once you accept the host's fingerprint, SSH will not prompt you again unless the fingerprint changes. 
 
 ```
@@ -417,4 +417,4 @@ Replace `<your-azure-devops-host>` with the hostname of your Azure DevOps or TFS
 
 **A:** If you receive a notification of an SSH key being registered and you did not manually upload it to the service, your credentials may have been compromised. 
 
-The next step would be to investigate whether or not your password has been compromised. Changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.  
+The next step would be to investigate whether or not your password has been compromised. Changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.

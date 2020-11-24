@@ -6,15 +6,13 @@ ms.assetid: FAED51BE-2CB0-46DE-8C72-E4EEF6CB8827
 toc: show
 ms.technology: devops-code-git 
 ms.topic: reference
-ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+ms.date: 11/13/2020
+monikerRange: '<= azure-devops'
 ---
 
 
 #  Git command reference 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2**
-
-## Overview
 
 <a name="set_up"></a>
 <a name="pat"></a>
@@ -27,7 +25,7 @@ Team Explorer and the Git command line work great together. When you make update
 [Git Installation instructions](/azure/devops/learn/git/install-and-set-up-git) are available if you don't have Git installed on your computer.
 
 > [!TIP]
-> Windows users: If you aren't using Visual Studio, installing [Git for Windows](https://git-scm.com/download/win) will set up the [Git credential manager for Windows](set-up-credential-managers.md). The credential manager makes it easy to authenticate with Azure Repos.
+> Windows users: If you aren't using Visual Studio, installing [Git for Windows](https://git-scm.com/download/win) will set up the [Git Credential Manager Core](set-up-credential-managers.md). The credential manager makes it easy to authenticate with Azure Repos.
 
 While in Visual Studio, open a command prompt in your repo from Team Explorer's **Connect** view. Right-click on your local repo and select **Open Command Prompt**
    
@@ -38,14 +36,14 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
 
 ## Repos
 
-| How do I ? | Git command line | Visual Studio
+| How do I? | Git command line | Visual Studio
 |------------|-------------|---------------|
 | Create a repo in a new folder | git init *foldername* | Select the **Connect** button ( ![Team Explorer plug icon to open the Connect page](media/command-prompt/te_connect_icon.png) ) in Team Explorer to open the **Connect** view, then select **New** under **Local Git repositories**  
 | Create a repo with code in an existing folder | git init *foldername*<br>git add --all<br>git commit -m "Initial commit" | Create the repo from the command line, then open Team Explorer's **Connect** view and select **Add** under **Local Git repositories**
 | Create a repo from an existing Visual Studio solution | git init *foldername*<br>cd *foldername*<br>git add --all<br>git commit -m "Initial commit" | Open the solution and select **Publish** ( ![Publish button on the status bar in Visual Studio 2015 Update 2](media/share-your-code-in-git-vs/publish_status_bar.png)  ) from the status bar in the lower right. 
 | Create a new repo in your Project | Not applicable | From the web, select **Repos** (or **Code** if you haven't enabled the new navigation preview), then select the drop-down next to the current repo name and choose **New Repository...**    
 | Clone a repo into a local folder | git clone *URL* *foldername* | Select **Clone** under **Local Git repositories** in Team Explorer's **Connect** view 
-| Clone a repo in your Project | git clone *URL* *foldername* | Open the **Connect** view in Team Explorer and right click the Git repo in your Project under the account name. Select **Clone...**    
+| Clone a repo in your Project | git clone *URL* *foldername* | Open the **Connect** view in Team Explorer and right-click the Git repo in your Project under the account name. Select **Clone...**    
 | Add an existing repo to Visual Studio | Not applicable | Open the solution file in Visual Studio (this will automatically add the repo to Team Explorer) or select **Add** under **Local Git repositories** in the **Connect** view 
 | Delete the Git repo and history, but keep the current version of the files | Delete the hidden .git folder created at the root of the repo | Delete the hidden .git folder created at the root of the repo from Windows Explorer or the command line
 | Delete a local repo and all files | Delete the folder containing your repo from your computer's filesystem |  Close any open solutions using files in the repo, then delete the folder containing your repo from your computer's filesystem. 
@@ -65,7 +63,7 @@ Learn more:
 
 ## Branches
 
-| How do I ? | Git command line | Visual Studio |
+| How do I? | Git command line | Visual Studio |
 |------------|-------------|---------------|
 | Create a new branch | git branch *branchname* | Open the **Branches** view in Team Explorer, then right-click a branch and choose **New Local Branch From...**   
 | Swap to a different branch | git checkout *branchname* | Open the **Branches** view in Team Explorer, then double click a local branch. Alternatively, click the current branch name from the status bar and select a different branch.
@@ -85,7 +83,7 @@ Learn more:
 
 ## Commits
 
-| How do I ? | Git command | Visual Studio |
+| How do I? | Git command | Visual Studio |
 |------------|-------------|--------------|
 | Create a new commit | git commit -m "*message*" |  Open the **Changes** view in Team Explorer. Stage changes by right-clicking on the modified files and selecting **Stage**. Enter a commit message and select **Commit Staged**.
 | Amend the last commit with staged changes | git commit --amend -m "Updated message" |  Open the **Changes** view in Team Explorer, stage your changes, then select **Amend Previous Commit** from the **Actions** drop-down.
@@ -102,7 +100,7 @@ Learn more:
 
 ## Compare files and versions
 
-| How do I ? | Git command | Visual Studio |
+| How do I? | Git command | Visual Studio |
 |------------|-------------|--------------|
 | Compare the current contents of a single file and the contents in the last commit | git diff HEAD *filename* | Right-click on the change in the **Changes** view in Team Explorer and select **Compare with unmodified**. 
 | Compare your current version with a branch | git diff *branchname* |  Right-click on a file in Solution Explorer and select **View History...**, then select both on the latest commit on your current branch and the latest commit on the remote branch. Right-click and select **Compare**
@@ -114,7 +112,7 @@ Learn more:
 
 ## Sync changes
 
-| How do I ? | Git command | Visual Studio |
+| How do I? | Git command | Visual Studio |
 |------------|-------------|--------------|
 | Download new branches and commits from a remote repo, but do not merge them into your local branches | git fetch | Open the **Sync** view from Team Explorer and select **Fetch**.
 | Merge updates from a remote repo into your local repo | git pull *remote* *branchname* | While working on the branch in your local repo, open the **Sync** view in Team Explorer, then select **Pull**. 
@@ -130,7 +128,7 @@ Learn more:
 
 ## Merge and rebase
 
-| How do I ? | Git command | Visual Studio  |
+| How do I? | Git command | Visual Studio  |
 |------------|-------------|--------------|
 | Merge a branch into the current branch | git merge *branchname* | In the Team Explorer **Branches** view, right-click the branch you want to merge and select **Merge From..**. Verify the options set and select **Merge**.
 | Merge a remote branch into the current branch | git pull origin *branchname* | In the Team Explorer **Branches** view, right-click the remote branch you want to merge and select **Merge From..**. Verify the options set and select **Merge**.
@@ -149,7 +147,7 @@ Learn more:
 > [!WARNING]
 > If you are not an experienced Git user, exercise caution when using the `reset` command. [Learn more](undo.md)
 
-|                              How do I ?                              |                                       Git command                                       |                                                                                                      Visual Studio                                                                                                      |
+|                              How do I?                              |                                       Git command                                       |                                                                                                      Visual Studio                                                                                                      |
 |----------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      Revert all changes and roll back to the most recent commit      |                                  git reset --hard HEAD                                  | Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Delete changes....** |
 |            Revert staging of files, but keep file changes            |                                 git reset --mixed HEAD                                  |  Open the **Changes** view in Team Explorer. Select **Actions and choose \*\*View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Keep changes....**  |

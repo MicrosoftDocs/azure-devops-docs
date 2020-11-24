@@ -234,9 +234,10 @@ To learn about inheritance, see [About permissions and groups, Inheritance and s
 - [Default TFVC permissions](default-tfvc-permissions.md)  
 - [Default permissions and access](permissions-access.md) 
 - [Permissions and groups reference](permissions.md)  
-
+- [Tf Team Foundation Version Control (TFVC) permission command-line tool](../../repos/tfvc/permission-command.md)  
+- [Tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)  
+- [Security REST API commands](/rest/api/azure/devops/security/)
 
 <!---
-	[![Project Settings>Code>Repositories>TFVC repositories>Security](media/git-tfvc-perm/open-tfvc-repo.png)](media/git-tfvc-perm/open-tfvc-repo-wide.png#lightbox) 
-
+[![Project Settings>Code>Repositories>TFVC repositories>Security](media/git-tfvc-perm/open-tfvc-repo.png)](media/git-tfvc-perm/open-tfvc-repo-wide.png#lightbox) 
 -->

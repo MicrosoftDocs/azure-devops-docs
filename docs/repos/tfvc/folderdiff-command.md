@@ -149,7 +149,7 @@ The following table lists filter examples.
 |\*.cs;!objd\\;!obj\\;!bin\\ | Matches all C# files except those in objd, obj, or bin folders.|
 |!\*.resx;!\*.ini;!resources\\;!\*junk\*\\ | Excludes all .resx and .ini files, all files in the resources folder, and all files in any folder that has a name that includes the word junk.|
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ## Examples
 The following example compares the files in the server folder and a local folder. It organizes the files in the localFolder recursively and displays the output in the Command Prompt window.
@@ -176,4 +176,4 @@ C:>tf folderdiff $/serverFolder F:\localFolder /recursive /noprompt
 
 [Comparing Folders and Files](compare-folders-files.md)
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

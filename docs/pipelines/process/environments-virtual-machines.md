@@ -30,7 +30,7 @@ You can define environments in **Environments** under **Pipelines**.
 
    > [!NOTE]
    > - The Personal Access Token (PAT) of the logged in user is included in the script.  The PAT expires on the day you generate the script.
-   > - If your VM already has any agent other running on it, provide a unique name for **agent** to register with the environment.
+   > - If your VM already has any other agent running on it, provide a unique name for **agent** to register with the environment.
 
 7.    Once your VM is registered, it will start appearing as an environment resource under the **Resources** tab of the environment.
 
@@ -67,12 +67,12 @@ jobs:
 ```
 
 You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined.
-[Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema#deployment-job&preserve-view=true) is the complete YAML schema for a deployment job.
+[Here](../yaml-schema.md?tabs=schema#deployment-job) is the complete YAML schema for a deployment job.
 
 ## Apply deployment strategy 
 
 You can apply a deployment strategy to define how your application is rolled out. The `runOnce` strategy and the `rolling` strategy for VMs are both supported.
-[Here](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs#deployment-strategies&preserve-view=true) is the reference documentation for deployment strategies and the details about various life-cycle hooks.
+[Here](./deployment-jobs.md#deployment-strategies) is the reference documentation for deployment strategies and the details about various life-cycle hooks.
 
 ## Deployment history views
 

@@ -51,7 +51,7 @@ tf hist[ory] itemspec [/version:versionspec]
 </tr>
 <tr>
 <td><p><strong>/itemmode</strong></p></td>
-<td><p>You cannot combine this option with the <strong>/slotmode</strong> option. See <a href="https://docs.microsoft.com/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
+<td><p>You cannot combine this option with the <strong>/slotmode</strong> option. See <a href="/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
 </tr>
 <tr>
 <td><p><i>itemspec</i></p></td>
@@ -75,7 +75,7 @@ tf hist[ory] itemspec [/version:versionspec]
 </tr>
 <tr>
 <td><p><strong>/slotmode</strong></p></td>
-<td><p>You cannot combine this option with the <strong>/itemmode</strong> option. See <a href="https://docs.microsoft.com/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
+<td><p>You cannot combine this option with the <strong>/itemmode</strong> option. See <a href="/archive/blogs/mitrik/changing-to-slot-mode-in-tfs-2010-version-control">Matt Mitrik: Changing to Slot Mode in TFS 2010 Version Control</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/sort</strong></p></td>

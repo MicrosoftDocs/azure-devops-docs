@@ -25,7 +25,7 @@ To use Maven Central as an upstream source, either create a new feed or edit an 
 
 ### On a new feed
 
-1. [Create a new feed](../feeds/create-feed.md). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
+1. [Create a new feed](../index.yml). Ensure you leave the "Use packages from public sources through this feed" radio button selected.
 
 ### On an existing feed
 
@@ -40,4 +40,3 @@ To use Maven Central as an upstream source, either create a new feed or edit an 
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
 ![Viewing your cached packages](media/view-cached-packages.png)
-

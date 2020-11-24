@@ -44,7 +44,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 	> [!div class="mx-imgBorder"]  
 	> ![Projects page, filter on Fabrikam](media/projects-page/filter-projects-vert.png) 
 
-1. Choose **Create Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../accounts/create-team-project.md).
+1. Choose **Create Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../organizations/projects/create-project.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Account home, Projects page, New project](../../organizations/projects/media/create-project/projects-hub-vert-create-project.png) 
@@ -75,7 +75,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 	> [!div class="mx-imgBorder"]  
 	> ![Projects page, filter on Fabrikam](media/projects-page/account-home-search-projects-fabrikam.png) 
 
-3. Choose **New Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../accounts/create-team-project.md).
+3. Choose **New Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../organizations/projects/create-project.md).
 
 	> [!div class="mx-imgBorder"]  
 	> ![Account home, Projects page, New project](media/projects-page/account-home-projects-new-project.png) 

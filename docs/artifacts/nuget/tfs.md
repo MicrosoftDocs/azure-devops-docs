@@ -22,7 +22,7 @@ You can use [consume packages with Visual Studio](consume.md), [publish with nug
 
 > This workflow is **not recommended**, because it requires that you store **your encrypted domain password** on disk. Please consider the security implications before continuing.
 
-1. Navigate to your feed ([or create a feed if you haven't](../feeds/create-feed.md)). 
+1. Navigate to your feed ([or create a feed if you haven't](../index.yml)). 
 
 1. Select **Connect to feed**:
 

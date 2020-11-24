@@ -53,7 +53,7 @@ Set up credentials by following these four steps:
     ```
 
 2. **Step 2**:  
-    Generate a [personal access token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) with Packaging read & write scopes.
+    Generate a [personal access token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with Packaging read & write scopes.
 
 3. **Step 3**:  
     Base64 encode the personal access token from Step 2. Follow the steps below to safely encode your PAT:

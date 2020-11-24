@@ -10,7 +10,7 @@ author: chcomley
 ms.date: 09/10/2020
 ---
 
-# Add a build or release task
+# Add a custom pipelines task extension
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
@@ -19,7 +19,7 @@ These tasks appear next to Microsoft-provided tasks in the **Add Step** wizard.
 
 ![Screenshot of Build task catalog for extensions in Azure DevOps.](media/build-task-ext-choose-task.png)
 
-To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../../pipelines/overview.md). 
+To learn more about the new cross-platform build/release system, see [What is Azure Pipelines?](../../pipelines/get-started/what-is-azure-pipelines.md). 
 
 > [!NOTE]
 > This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, check out the [Server Task GitHub Documentation](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md).
@@ -32,9 +32,9 @@ To create extensions for Azure DevOps, you need the following software and tools
 - A text editor. For many of the tutorials, we use **Visual Studio Code**, which provides intellisense and debugging support. Go to [code.visualstudio.com](https://code.visualstudio.com/) to download the latest version.
 - The [latest version](https://nodejs.org/en/download/) of Node.js.
   The production environment uses only [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
-- TypeScript Compiler 2.2.0 or greater. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
+- TypeScript Compiler 2.2.0 or greater, although we recommend version 4.0.2 or newer for tasks that use Node10. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
     <a name="cli"></a>
-- TFS Cross Platform Command Line Interface (tfx-cli) to package your extensions.
+- [Cross-platform CLI for Azure DevOps (tfx-cli)] to package your extensions.
      You can install **tfx-cli** by using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.
 - A `home` directory for your project.
   The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
@@ -58,7 +58,7 @@ If you're using a Mac or Linux, replace any instances of `$env:<var>=<val>` with
 
 ## Step 1: Create a custom task
 
-Set up your task. Do every part of Step 1 within the buildAndReleaseTask folder.
+Set up your task. Do every part of Step 1 within the `buildAndReleaseTask` folder.
 
 ### Create task scaffolding
 
@@ -66,7 +66,7 @@ Create the folder structure for the task and install the required libraries and 
 
 #### Create a directory and package.json file
 
-From within your buildAndReleaseTask folder, run the following command:
+From within your `buildAndReleaseTask` folder, run the following command:
 
 ```
 npm init
@@ -100,6 +100,16 @@ so that node_modules are built each time and don't need to be checked in.
 ```
 echo node_modules > .gitignore
 ```
+
+#### Choose typescript version
+
+Tasks can use typescript versions 2.3.4 or 4.0.2. You can install the chosen typescript version using this command:
+
+```
+npm install typescript@4.0.2 --save-dev
+```
+
+If you skip this step, typescript version 2.3.4 will be used by default.
 
 #### Create tsconfig.json compiler options
 
@@ -364,7 +374,7 @@ it('it should fail if tool returns 1', function(done: Mocha.Done) {
     tr.run();
     console.log(tr.succeeded);
     assert.equal(tr.succeeded, false, 'should have failed');
-    assert.equal(tr.warningIssues, 0, "should have no warnings");
+    assert.equal(tr.warningIssues.length, 0, "should have no warnings");
     assert.equal(tr.errorIssues.length, 1, "should have 1 error issue");
     assert.equal(tr.errorIssues[0], 'Bad input was given', 'error issue output');
     assert.equal(tr.stdout.indexOf('Hello bad'), -1, "Should not display Hello bad");

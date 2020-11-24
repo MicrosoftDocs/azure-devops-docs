@@ -211,6 +211,6 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 ## Related articles
 
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-- [Azure Pipelines with Slack](https://aka.ms/AzurePipelinesSlackIntegration)
-- [Azure Repos with Slack](https://aka.ms/AzureReposSlackIntegration)
+- [Azure Pipelines with Slack](../../pipelines/integrations/slack.md)
+- [Azure Repos with Slack](../../repos/integrations/repos-slack.md)
 - [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)

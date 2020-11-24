@@ -1,10 +1,10 @@
 ---
 title: Define variables
-ms.custom: seodec18, contperfq4
+ms.custom: seodec18, contperfq4, devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 09/08/2020
+ms.date: 10/23/2020
 
 monikerRange: '>= tfs-2015'
 ---
@@ -87,7 +87,7 @@ Variables with macro syntax get processed before a task executes during runtime.
 
 Macro syntax variables remain unchanged with no value because an empty value like `$()` might mean something to the task you are running and the agent should not assume you want that value replaced.  For example, if you use `$(foo)` to reference variable `foo` in a Bash task, replacing all `$()` expressions in the input to the task could break your Bash scripts.
 
-Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`.
+Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`. Macro variables are not expanded when used to display a job name inline. Instead, you must use the `displayName` property.
 
 > [!NOTE]
 > Variables are only expanded for `stages`, `jobs`, and `steps`.
@@ -245,7 +245,7 @@ Using the Azure DevOps CLI, you can create and update variables for the pipeline
 
 ### Prerequisites
 
-- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](/azure/devops/cli/index).
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).
 - Sign into Azure DevOps using `az login`.
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
 
@@ -650,9 +650,11 @@ A script in your pipeline can define a variable so that it can be consumed by on
 
 ### Set a job-scoped variable from a script
 
-To set a variable from a script, you use the `task.setvariable` logging command.
+To set a variable from a script, you use the `task.setvariable` [logging command](../scripts/logging-commands.md).
 This doesn't update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
+
+When `issecret` is set to true, the value of the variable will be saved as secret and masked from the log.  
 
 ```yaml
 steps:

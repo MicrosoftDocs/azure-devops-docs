@@ -91,7 +91,7 @@ Publisher Id    Extension Id    Name
 
 | Product | Articles |
 |-----------------------------|--------------------------------------------------------------------------------------------------|
-| Azure DevOps | [Get extensions for Azure DevOps](install-extension.md) <br/> [Develop extensions for Azure DevOps](https://aka.ms/vsoextensions) |
+| Azure DevOps | [Get extensions for Azure DevOps](install-extension.md) <br/> [Develop extensions for Azure DevOps](../extend/overview.md) |
 | Visual Studio | [Get extensions for Visual Studio](https://marketplace.visualstudio.com/vs) <br/> [Develop extensions for Visual Studio](https://aka.ms/extendvs) |
 | Visual Studio Code | [Get extensions for Visual Studio Code](https://marketplace.visualstudio.com/vscode) <br/> [Develop extensions for Visual Studio Code](https://go.microsoft.com/fwlink/?LinkID=703825) |
 

@@ -117,7 +117,7 @@ To learn more about adding other pipeline related artifacts, see the following a
 
 ## Add a team 
 
-Agile tools and dashboards are typically associated with teams. You add teams to a project. To learn more about teams, see [About teams and Agile tools](../../settings/about-teams-and-settings.md). To add a team, see [Add a team and team members](../../organizations/settings/add-teams.md). 
+Agile tools and dashboards are typically associated with teams. You add teams to a project. To learn more about teams, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). To add a team, see [Add a team and team members](../../organizations/settings/add-teams.md). 
 
 <a id="view-teams" />
 
@@ -177,4 +177,4 @@ If you don't have a wiki yet, you can add one. Once added, you can add and updat
 ## Related articles
 
 - [Azure Artifacts](../../artifacts/index.yml)  
-- [Exploratory & Manual Testing](../../test/index.yml)  
+- [Exploratory & Manual Testing](../../test/index.yml)

@@ -54,7 +54,7 @@ Depending on whether you use Git or TFVC as a repo, you can develop your code in
 
 Git is a distributed version control system. Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection. Branches are lightweight. 
 
-[![Android Studio](media/overview/code-git-android-studio-1.png)](../java/download-android-studio-plug-in.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](media/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](media/overview/code-git-intellij-3.png)](../java/download-intellij-plug-in.md)  
+[![Android Studio](media/overview/code-git-android-studio-1.png)](/previous-versions/azure/devops/java/download-android-studio-plug-in)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](media/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](media/overview/code-git-intellij-3.png)](/previous-versions/azure/devops/java/download-intellij-plug-in)  
 
 <br/>
 <a href="../repos/git/share-your-code-in-git-vs.md" data-raw-source="[![Visual Studio](media/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)"><img src="media/overview/code-git-visual-studio.png" alt="Visual Studio"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="https://code.visualstudio.com/docs/editor/versioncontrol" data-raw-source="[![Visual Studio Code](media/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)"><img src="media/overview/code-git-visual-studio-code.png" alt="Visual Studio Code"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="../repos/git/share-your-code-in-git-xcode.md" data-raw-source="[![Xcode](media/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)"><img src="media/overview/code-git-xcode.png" alt="Xcode"/></a>  
@@ -91,7 +91,7 @@ You also gain access to a [rich set of customization capabilities](../reference/
 
 Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily provision test environments. Track when the quality is sufficient to release to the customer.  
 
-[![Build your software](media/overview/ov-devops-build.png)](../pipelines/tasks/index.md)[![Set up continuous testing](media/overview/ov-devops-test.png)](../pipelines/test/set-up-continuous-testing-builds.md)[![Create a release](media/overview/ov-devops-release.png)](../pipelines/apps/cd/deploy-webdeploy-webapps.md)   
+[![Build your software](media/overview/ov-devops-build.png)](../pipelines/tasks/index.md)[![Set up continuous testing](media/overview/ov-devops-test.png)](../pipelines/index.yml)[![Create a release](media/overview/ov-devops-release.png)](../pipelines/apps/cd/deploy-webdeploy-webapps.md)   
 
 <!---
 
@@ -140,10 +140,10 @@ Our extensibility framework enables you to build integrations directly within Az
 
 With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the Azure DevOps Services web portal.  
 
-- [Find marketplace extensions](../marketplace/index.md)
+- [Find marketplace extensions](../marketplace/overview.md)
 - [Get extensions](../marketplace/install-extension.md)</li>
-- [Using service hooks](../service-hooks/index.md)
-- [Get started with REST APIs](../integrate/get-started/rest/basics.md)
+- [Using service hooks](../service-hooks/overview.md)
+- [Get started with REST APIs](/rest/api/azure/devops/)
 
  
 Service hooks enable integration scenarios between other applications and Azure DevOps by subscribing to events instead of constantly polling for them. Service hooks provide a more efficient way to drive activities when events happen in your projects. For example, you can send a push notification to your team's mobile devices when a build fails, or create a card in Trello when a work item is created. Some of the services you can easily integrate with are UserVoice, Zendesk, Trello, Slack, and HipChat.
@@ -158,5 +158,4 @@ Monitor your web and device apps to gain actionable insight to improve performan
 [Use Application Insights](https://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own IIS or Java EE servers.  
 
 [Use HockeyApp](https://hockeyapp.net/features/) to distribute beta versions of your apps on Android, iOS, macOS, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.
- 
  

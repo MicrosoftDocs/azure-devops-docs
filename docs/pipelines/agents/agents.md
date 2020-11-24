@@ -1,7 +1,7 @@
 ---
 title: Azure Pipelines Agents
 ms.topic: conceptual
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.date: 09/09/2020
@@ -43,6 +43,9 @@ An agent that you set up and manage on your own to run jobs is a **self-hosted a
 You can use self-hosted agents in Azure Pipelines or Team Foundation Server (TFS).
 Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
 Also, machine-level caches and configuration persist from run to run, which can boost speed.
+
+> [!NOTE]
+> Although multiple agents can be installed per machine, we strongly suggest to only install one agent per machine. Installing two or more agents may adversely affect performance and the result of your pipelines.
 
 ::: moniker range="azure-devops"
 
@@ -90,9 +93,6 @@ After you've installed the agent on a machine, you can install any other softwar
 ::: moniker range="azure-devops"
 
 ## Azure virtual machine scale set agents
-
-> [!NOTE]
-> This feature is currently in preview.
 
 Azure virtual machine scale set agents are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
 
@@ -544,6 +544,9 @@ Your pipelines won't run until they can target a compatible agent.
 ::: moniker-end
 
 You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [View agent details](#view-agent-details).
+
+> ![NOTE]
+> For servers with no internet access, manually copy the agent zip file to `C:\ProgramData\Microsoft\Azure DevOps\Agents\` to use as a local file.
 
 ## FAQ
 

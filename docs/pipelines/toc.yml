@@ -10,9 +10,12 @@
     href: get-started/pipelines-sign-up.md
   - name: Create your first pipeline
     href: create-first-pipeline.md
-    displayName: status badge, get started, first pipeline, import from github, clone pipeline
+    displayName: status badge, get started, first pipeline, import from github
   - name: Create your first pipeline from the CLI
     href: create-first-pipeline-cli.md
+  - name: Clone or import a pipeline
+    href: ./get-started/clone-import-pipeline.md
+    displayName: export, copy
 # - name: Publish build results
 #   href: get-started/pipelines-get-started.md
   - name: Customize your pipeline
@@ -20,8 +23,6 @@
     displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers
   - name: Multi-stage pipelines user experience
     href: get-started/multi-stage-pipelines-experience.md
-  - name: Pipelines with PowerShell DSC
-    href: get-started/dsc-cicd.md
 # - name: Clean up pipeline steps
 #   href: get-started/pipelines-get-started.md
 - name: Pipeline basics
@@ -81,6 +82,8 @@
     - name: Template types & usage
       href: process/templates.md
       displayName: parameters, passing, job reuse, stage reuse, variable reuse, expressions, context, conditional insertion, iterative insertion, escape a value
+    - name: Add a custom task extension
+      href: ../extend/develop/add-build-task.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
   - name: Jobs & stages
     items:
     - name: Specify jobs in your pipeline
@@ -93,6 +96,11 @@
       displayName: stage, dependencies, conditions, queuing policies, approvals
     - name: Deployment jobs
       href: process/deployment-jobs.md
+      displayName: pipeline decorator, deployment strategy, lifecycle hooks, rolling, canary 
+    - name: Author a custom pipeline decorator
+      href: ../extend/develop/add-pipeline-decorator.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+    - name: Pipeline decorator context
+      href: ../extend/develop/pipeline-decorator-context.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Specify conditions
       href: process/conditions.md
     - name: Specify demands
@@ -271,6 +279,8 @@
         displayName: Data pipeline overview
       - name: Build a data pipeline
         href: apps/cd/azure/build-data-pipeline.md
+    - name: Deploy a virtual machine scale set
+      href: apps/cd/azure/deploy-virtual-scale-set-java.md
     - name: Azure Government Cloud
       href: library/government-cloud.md
     - name: Azure Resource Manager
@@ -303,6 +313,8 @@
     href: release/deploy-pull-request-builds.md
   - name: Classic CD pipelines
     href: release/define-multistage-release-process.md
+  - name: Pipelines with PowerShell DSC
+    href: release/dsc-cicd.md
   - name: Stage templates in Azure Pipelines
     href: release/env-templates.md
   - name: Deploy apps to Azure (Classic)
@@ -827,12 +839,15 @@
     href: ../migrate/build-deployment-best-practices.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
   - name: Progressively expose releases using deployment rings
     href: ../migrate/phase-rollout-with-rings.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+  - name: Progressively expose features in production
+    href: ../migrate/phase-features-with-feature-flags.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
+    displayName: feature-flags
 - name: Developer resources
   items:
   - name: REST API reference
     href: /rest/api/azure/devops/
   - name: Azure DevOps CLI
-    href: /azure/devops/cli
+    href: ../cli/index.md
   - name: Microsoft Learn
     items:
     - name: Create a build pipeline
