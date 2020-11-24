@@ -13,8 +13,6 @@ ms.custom: subject-armqs
 
 Get started with [Azure Resource Manager templates (ARM templates)](/azure/azure-resource-manager/templates/overview) by deploying a Linux web app with MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
 
-[!INCLUDE [About Azure Resource Manager](~/../azure-docs/includes/resource-manager-quickstart-introduction.md)]
-
 ## Prerequisites
 
 Before you begin, you need:
