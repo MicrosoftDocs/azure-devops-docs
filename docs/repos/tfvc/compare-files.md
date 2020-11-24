@@ -12,12 +12,14 @@ monikerRange: '>= tfs-2015'
 
 # Compare files
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015 | VS 2019 - VS 2013**
 
 This article provides a guide for comparing files when using Team Foundation Version Control (TFVC). If you're using Git for version control, see [comparing files with Git and Visual Studio](../../repos/git/review-history.md).  
 
+ You can compare server folders and local folders to each other, and view the differences between the contents of each folder. You can compare two server files, two local files, or a server file against a local file and view the differences between the files.
+
 > [!NOTE]
-> Even if you're not using version control, you can use the Diff window in Visual Studio to compare two files. To open the Diff window directly in Visual Studio, you can use the [devenv.exe tool with the /diff option](https://msdn.microsoft.com/library/jj874068.aspx) from the Developer Command Prompt to compare any two files on your computer.
+> Even if you're not using version control, you can use the Diff window in Visual Studio to compare two files. To open the Diff window directly in Visual Studio, you can use the [devenv.exe tool with the /diff option](/visualstudio/ide/reference/diff) from the Developer Command Prompt to compare any two files on your computer.
 
 
 ## Compare any two files using the Compare dialog 
@@ -79,7 +81,7 @@ Compare two versions of a file already checked into Team Foundation Version Cont
 When you compare files using the instructions in the previous sections, Visual Studio displays the files in the Diff window. The Diff window shows the difference between two files. If one of the files is checked out in your workspace, you can modify the file as you run the comparison. 
 
 > [!NOTE]
-> Even if you're not using version control, you can use the Diff window in Visual Studio to compare two files. To open the Diff window directly in Visual Studio, you can use the [devenv.exe tool with the /diff option](https://msdn.microsoft.com/library/jj874068.aspx) from the Developer Command Prompt to compare any two files on your computer.
+> Even if you're not using version control, you can use the Diff window in Visual Studio to compare two files. To open the Diff window directly in Visual Studio, you can use the [devenv.exe tool with the /diff option](/visualstudio/ide/reference/diff) from the Developer Command Prompt to compare any two files on your computer.
 
 ![Comparing two versions of a file](media/compare-files/IC558594.png)
 
@@ -131,6 +133,6 @@ The `Base file` is the full path to the file both files are based off of, and `R
 
 -   [Difference command](difference-command.md) Compare two files from the command prompt.
 
-## See Also
+## Related articles
    
-[Compare folders](compare-folders.md) 
+- [Compare folders](compare-folders.md)

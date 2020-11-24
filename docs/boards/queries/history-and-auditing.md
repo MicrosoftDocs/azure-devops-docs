@@ -1,7 +1,7 @@
 ---
 title: Query by history  
 titleSuffix: Azure Boards
-description: Track changes and use tools to support audit requirements when working in Azure Boards and Team Foundation Server (TFS) 
+description: Learn how to query comments and history to work items to support audit requirements when working in Azure Boards
 ms.technology: devops-agile
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.author: kaelli
@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 08/27/2020
 ---
 
-# Query by history   
+# Query history and discussion fields   
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -309,15 +309,12 @@ All
     ```
 
 ## Related articles
-To learn more about creating and saving queries, see also: 
+
 
 - [Query editor](using-queries.md)
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Query by date or current iteration](query-by-date-or-current-iteration.md)
-
-
-### Get history programmatically
-See [Work item tracking](/rest/api/azure/devops/wit/)  for ways to extract history information programmatically.  
+ 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 

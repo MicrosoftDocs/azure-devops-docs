@@ -11,13 +11,13 @@ Connect to your project using a [supported web browser](/azure/devops/server/com
 > [!div class="mx-imgBorder"] 
 >![Create wiki, provision a Git repo for your wiki or publish existing repo Markdown files](/azure/devops/organizations/public/media/wiki/open-wiki-vert-brn.png)
 
-If you need to switch your team project, choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).
+If you need to switch your team project, choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all team projects and teams](../../navigation/work-across-projects.md).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 ::: moniker range=">= azure-devops-2020"
 
-You can view and open a wiki page defined for a project using the `az devops wiki show` command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index).
+You can view and open a wiki page defined for a project using the `az devops wiki show` command. To get started, see [Get started with Azure DevOps CLI](../../../cli/index.md).
 
 > [!div class="tabbedCodeSnippets"]
 ```azurecli

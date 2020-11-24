@@ -453,7 +453,7 @@ Requires TFS 2015.1 or later version.
 ![Other links widget](media/widget-other-links.png)  
 
 Provides links to the following features: 
-- Opens a form to initiate a [request to provide feedback](/azure/devops/project/feedback/get-feedback?toc=/azure/devops/project/feedback/toc.json).
+- Opens a form to initiate a [request to provide feedback](../../project/feedback/get-feedback.md?toc=%252fazure%252fdevops%252fproject%252ffeedback%252ftoc.json).
 - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md).
 - Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-area-paths.md).
 
@@ -462,7 +462,7 @@ The following links are displayed when the corresponding resource is configured 
 
 ![Other links widget, TFS-2018 and earlier versions.](media/widget-other-links-tfs.png)  
 
-- [View project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md) (opens either a SharePoint site or URL that's been configured as the project's portal.  
+- [View project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal) (opens either a SharePoint site or URL that's been configured as the project's portal.  
 - [View process guidance](../../project/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance.  
 - [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md). 
 
@@ -899,4 +899,4 @@ Using the REST API service, you can [create a dashboard widget](../../extend/dev
 
 - [Add, rename, and delete dashboards](dashboards.md)  
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
-- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)   
+- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)

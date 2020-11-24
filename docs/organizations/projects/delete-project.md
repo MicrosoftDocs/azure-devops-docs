@@ -1,7 +1,7 @@
 ---
 title: Delete, remove project
 titleSuffix: Azure DevOps
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Delete or remove a project from Azure DevOps or Team Foundation Server
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.technology: devops-accounts
@@ -37,7 +37,7 @@ Learn how to delete a project from Azure DevOps. Deleting a project helps simpli
 
 ::: moniker range="<= tfs-2017"  
 
-- You must be a member of the Project Collection Administrators group or have the **Delete team project** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
+- You must be a member of the Project Collection Administrators group or have the **Delete team project** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 
 ::: moniker-end
 
@@ -186,5 +186,5 @@ Review the status and log files for the delete action. Open the **Status** tab a
 
 ## Related articles
 
-- [Create project](/azure/devops/organizations/projects/create-project)
+- [Create project](./create-project.md)
 - [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd)

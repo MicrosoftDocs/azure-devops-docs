@@ -108,7 +108,7 @@ From the context menu you can download logs, add tags, edit the pipeline, delete
 
 ### Jobs and stages
 
-The jobs pane displays on overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
+The jobs pane displays an overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
 
 ![Pipeline jobs](media/pipeline-jobs-pane.png)
 

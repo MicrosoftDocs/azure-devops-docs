@@ -6,7 +6,7 @@ ms.assetid: b06b9f18-b76f-418c-93d0-f12d1f48f3c0
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 11/15/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Update code with fetch and pull
@@ -43,6 +43,8 @@ You download changes to your local branch from the remote through `fetch`. `Fetc
 >To help keep your branches list clean and up to date, configure Git to prune remote branches during fetch. You can configure this setting from the [command line](git-config.md?tabs=command-line#prune-remote-branches-during-fetch) or from within [Visual Studio](git-config.md?tabs=visual-studio#prune-remote-branches-during-fetch).
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
 
 Visual Studio uses the **Sync** view in Team Explorer to `fetch` changes.
 Changes downloaded by `fetch` aren't applied until you **Pull** or **Sync** the changes.

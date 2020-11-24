@@ -125,7 +125,7 @@ In most cases, your data science team will provide the files and resources neede
 * __Deployment environment__ (`inferenceConfig.yml`): Defines the packages needed to run and score the model in the deployment environment.
 
 
-Some of these files are directly used when developing a model. For example, the `train.py` and `score.py` files. However the data scientist may be programmatically creating the run configuration and environment settings. If so, they can create the `.runconfig` and training environment files, by using [RunConfiguration.save()](https://docs.microsoft.com/python/api/azureml-core/azureml.core.runconfiguration?view=azure-ml-py&preserve-view=true#save-path-none--name-none--separate-environment-yaml-false-). Alternatively, default run configuration files will be created for all compute targets already in the workspace when running the following command.
+Some of these files are directly used when developing a model. For example, the `train.py` and `score.py` files. However the data scientist may be programmatically creating the run configuration and environment settings. If so, they can create the `.runconfig` and training environment files, by using [RunConfiguration.save()](/python/api/azureml-core/azureml.core.runconfiguration?preserve-view=true&view=azure-ml-py#save-path-none--name-none--separate-environment-yaml-false-). Alternatively, default run configuration files will be created for all compute targets already in the workspace when running the following command.
 
 ```azurecli
 az ml folder attach --experiment-name myexp -w myws -g mygroup
@@ -174,7 +174,7 @@ The following Azure Machine Learning service CLI commands are used in the exampl
 | az ml pipeline list | Lists Azure Machine Learning pipelines. |
 | az ml computetarget delete | Deletes a compute target. |
 
-For more information on these commands, see the [CLI extension reference](https://docs.microsoft.com/cli/azure/ext/azure-cli-ml/ml?view=azure-cli-latest&preserve-view=true).
+For more information on these commands, see the [CLI extension reference](/cli/azure/ext/azure-cli-ml/ml?preserve-view=true&view=azure-cli-latest).
 
 ## Next steps
 

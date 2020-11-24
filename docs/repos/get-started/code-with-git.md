@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Share code in a Git repo and a new team project 
 ms.assetid: 
 ms.technology: devops-new-user
-ms.date: 09/10/2018
+ms.date: 11/13/2020
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
 ---
@@ -26,7 +26,7 @@ In this article, we'll show you how to start working with your code in Azure Rep
 
 Install one of the following Git command-line tools:
 
-  - To install Git for Windows, including Git Credential Manager, see [Install Git Credential Manager for Windows](../git/set-up-credential-managers.md#windows).
+  - To install Git for Windows, including Git Credential Manager, see [Install Git Credential Manager](../git/set-up-credential-managers.md).
   - To install on macOS or Linux, check out the [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) chapter in the open-source _Pro Git_ book. For macOS and Linux, we recommend [configuring SSH authentication](../git/use-ssh-keys-to-authenticate.md)
 
 ## Get your code
@@ -269,6 +269,6 @@ Now you're ready to create a new branch, write some code, and do it again.
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Set up continuous integration and delivery](../../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
+> [Set up continuous integration and delivery](../../pipelines/create-first-pipeline.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json)
 > or
 > [learn more about working with a Git repo](../git/index.yml).

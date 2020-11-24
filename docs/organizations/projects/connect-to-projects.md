@@ -20,9 +20,9 @@ Learn how to connect to a project to share code, build apps, track work, and col
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
 - [Eclipse/Team Explorer Everywhere](../../repos/git/share-your-code-in-git-eclipse.md)
-- [Android Studio with the Azure DevOps Services Plugin for Android Studio](../../java/download-android-studio-plug-in.md)  
-- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../../java/download-intellij-plug-in.md) 
-- [Visual Studio Code](../../java/vscode-extension.md)
+- [Android Studio with the Azure DevOps Services Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)  
+- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in) 
+- [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)
 
 A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. One or more projects may be defined within a collection. There must be at least one project. For more information, see [About projects and scaling your organization](about-projects.md).
 
@@ -271,7 +271,7 @@ Select Shift and right-click *devenv.exe*, then select **Run as different user**
 To connect to a project, you need your user account added to the project. The [organization owner (Azure DevOps Services)](../accounts/add-organization-users.md) or a [Project Administrator](../security/set-project-collection-level-permissions.md) usually does adds user accounts.
 
 ::: moniker range="azure-devops"
-Azure DevOps Services provides access to the first five account users free. After that, you need to [pay for more users](../../billing/buy-basic-access-add-users.md). 
+Azure DevOps Services provides access to the first five account users free. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -308,7 +308,7 @@ Besides connecting through a web browser, Visual Studio, Eclipse, Excel, and Pro
 
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in) 
+- [Eclipse: Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in) 
 - [Azure Test Plans](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md) 
 
@@ -331,4 +331,4 @@ Learn more about how to:
 
 If all you need is a code repository and bug tracking solution, then start with the [Get Started with Azure Repos](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).  
 
-To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md). 
+To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md).

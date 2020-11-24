@@ -1,31 +1,36 @@
 ---
-title: Use ID to link work items & pull requests
+title: Link work items to other objects
 titleSuffix: Azure DevOps
-description: Link to work items in discussions and pull requests 
-ms.technology: devops-collab
-ms.assetid: 
+description: Learn how to link work items to builds, commits, pull requests, and more. 
+ms.technology: devops-collab 
 toc: show
+ms.custom: contperfq2
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019
+ms.date: 11/19/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Use #ID to link to work items  
+# Link to work items from other objects
 
 [!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
 
-The **#ID** control quickly links objects to work items. With this control, you can specify or select a work item ID and it's automatically linked to the object. 
+By linking to work items from other objects, such as builds, commits, pull requests, and more, you support your team's ability to maintain an audit trail of related work. All users can add links to their work items.
 
-Use the **#ID** control within the following areas:
+> [!TIP]
+> If you're looking for guidance on how to: 
+> - link to work items from GitHub, see [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md).
+> - link your work items to other work items, see [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md).
+
+You can enter `#ID` from within the following areas to link to your work items:
 
 ::: moniker range=">= azure-devops-2020"
 - A work item discussion or any rich-text field
 - A pull request discussion
 - Commit comments
 - Changeset or shelveset comments
-- Wiki page. 
+- Wiki pages
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -33,38 +38,51 @@ Use the **#ID** control within the following areas:
 - A pull request discussion
 - Commit comments
 - Changeset or shelveset comments
-- Wiki page. 
+- Wiki page 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < tfs-2018"
 - A work item discussion 
 - A pull request discussion
 - Commit comments
-- Changeset or shelveset comments. 
+- Changeset or shelveset comments
+::: moniker-end
+
+The following image shows several types of links that are possible from a work item.
+
+:::image type="content" source="media/types-of-work-item-links.png" alt-text="Graph showing the types of work item links.":::
+
+::: moniker range="azure-devops"
+
+Linking your work items to other objects also produces the following benefits:
+
+- Automatically close work items when a pull request gets completed and merged.
+- When you link a query results table to a wiki, it provides links to the number of work items. For more information, see [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md#link-to-work-items-from-a-wiki-page).
+
 ::: moniker-end
 
 <a id="mention-wit-id">  </a>
 
 ::: moniker range="tfs-2015"
 > [!NOTE]  
-> The **#ID** special control feature is available from TFS 2015 Update 1 and later versions.
+> The `#ID` feature is available from TFS 2015 Update 1 and later versions.
 
 ::: moniker-end
 
+## Link to work items from pull requests, commits, and comments
 
-## Link a pull request to a work item
+1. Enter `#` to trigger the `#ID` work item picker in your pull request commits, commit comments, changeset comments, shelveset comments, description, and more. You see a list of 50 work items that you've recently modified or that are assigned to you.
 
-Enter **#** to trigger the **#ID** work item picker in your pull request comment. See a list of 50 work items you've recently modified or are assigned to you.
+   :::image type="content" source="media/link-pr-to-work-item.png" alt-text="Screenshot of work item list produced when entering # in PR description.":::
 
-Narrow the list of suggested work items by entering keywords that match the work item type, ID, or title.
+2. Narrow the list of suggested work items by entering keywords that match the work item type, ID, or title.
 
-![Pull request comment area, enter # to invoke work item control](media/ALM_PRD_ID_PR.png)  
+   :::image type="content" source="media/keyword-pr-link.png" alt-text="Screenshot of entering keyword after # and resulting work item in search":::
 
-To further filter the list, continue to enter keywords until you've found a match. You can enter up to five keywords.
+   To further filter the list, continue to enter keywords until you find a match. You can enter up to five keywords.
 
-## Link to work items in pull requests, comments, and commits
-
-You can also use the **#ID** control in pull request discussions, commit comments, changeset comments, and shelveset comments.
+> [!NOTE]
+> From the work item form, **Links** tab, you can view all the objects linked to the work item. However, you can't create a work item query to list those links. Work item queries only return work items that are linked to other work items.
 
 ::: moniker range="tfs-2015"
 > [!NOTE]  
@@ -75,52 +93,65 @@ You can also use the **#ID** control in pull request discussions, commit comment
 
 ## Set work item state in pull request
 
-When you create a PR, in the description, you can set the state value of the linked work items. You must follow the specific syntax.
+When you create a pull request, you can set the *state* value of the linked work items in the description. Follow the syntax: ``` {state value}: #ID ```.
+When you merge the pull request, the system reads the description and updates the work item state. In the following example, we set work items #300 and #301 to Resolved, and #323 and #324 to Closed.
 
-``` {state value}: #ID ```
-When you merge the PR, the system reads through the description and updates the work item state accordingly. In the follow example we set work items #300 and #301 to Resolved, #323 and #324 to Closed.
-
-![set state in pr image](media/pr-set-state-of-work-items.png)
+:::image type="content" source="media/pr-set-state-of-work-items.png" alt-text="Screenshot of setting work item state within a PR.":::
  
 ### How it works
-The system looks at three different criteria when attempting to set the state of #mentioned work items. State, State Category, and keyword. In that order.
 
-  - **If** the value matches a state, **then** set it to that state. 
-  - **Else If** the value matches a state category, **then** set the work item to first state in that category (see note below)
-  - **Else If** the value matches a keyword, **then** set the work item to matching keyword state (see grid below)
-  - **Else**, ignore it and do nothing
+The system considers the following three different criteria (in this order) when attempting to set the state of #mentioned work items: 
+- State
+- State Category
+- keyword
 
-Keyword logic is to help with intent matching. For example, you might put in “Resolves” but you really meant “Resolved”. 
+#### Criteria logic
 
-| Keyword   |      Action      | 
-|:----------|:-------------|
-| Proposed, Proposes, Propose | Set to the first state in the Proposed category  | 
-| InProgress | Set to the first state in the In Progress category |
-| Completed, Completes, Complete | Set to the first state in the Completed category |
-| Resolved, Resolves, Resolve| Set to the first state in the Resolved category |
-| Fixes, Fixed, Fix | Close work item (except Bug, that gets set to Resolved) |
+The following table describes the logic.
+
+| **Criteria**                                      | **Action**                                                                                                     |
+|------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| **If** the value matches a state,               | **Then** set it to that state.                                                                                  |
+| **Else If** the value matches a state category, | **Then** set the work item to first state in that category. See the following [note](#note-category-matching). |
+| **Else If** the value matches a keyword,        | **Then** set the work item to matching keyword state. See the following [table](#keyword-action-table).        |
+| **Else**                                       | Ignore it and do nothing.                                                                                       |
+
+#### Keyword logic
+
+Keyword logic helps with intent matching. For example, you might enter “Resolves”, but you really meant “Resolved”. 
+
+<a id="keyword-action-table">  </a>
+
+| **Keyword**                    | **Action**                                               |  
+|:-------------------------------|:---------------------------------------------------------|
+| Proposed, Proposes, Propose    | Set to the first state in the Proposed category.          |  
+| InProgress                     | Set to the first state in the In Progress category.       |
+| Completed, Completes, Complete | Set to the first state in the Completed category.         |
+| Resolved, Resolves, Resolve    | Set to the first state in the Resolved category.          |
+| Fixes, Fixed, Fix              | Close work item. Except Bug, which gets set to Resolved. |
+
+<a id="note-category-matching">  </a>
 
 > [!NOTE]  
-> Category matching is not supported on projects using a Hosted XML process. It is only available for projects using an inherited process.
+> Category matching isn't supported on projects using a Hosted XML process. Category matching is only available for projects using an inherited process.
 
 ::: moniker-end
-
 
 ::: moniker range=">= tfs-2018"
 
 ## Link to work items from a Wiki page
 
-Use the **#ID** control to link to a work item from within a Wiki page.
+Enter `#` to trigger the `#ID` work item picker from within a Wiki page.
 
-For more information about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md).
+For more information about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md) and [Wiki markdown guidance](../project/wiki/wiki-markdown-guidance.md).
 
 ::: moniker-end
 
-
 ## Related articles
 
-- [Link work items](../boards/backlogs/add-link.md)
+- [Link to work items from GitHub commits, pull requests, and issues](../boards/github/link-to-from-github.md)
+- [Link work items to user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md)
+- [Link work items to deployments](../boards/queries/linking-attachments.md)
 - [Save work with commits](../repos/git/commits.md)
-- [Pull requests](../repos/git/pullrequest.md)
-- [Check in your work to the team code base](../repos/tfvc/check-your-work-team-codebase.md)
+- [Create and complete a pull request](../repos/git/pullrequest.md)
 

@@ -19,7 +19,7 @@ ms.date: 08/13/2020
 Client libraries are available for .NET developers who build Windows apps and services that integrate with Azure DevOps. Client libraries integrate with work item tracking, version control, build, and other services. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service.
 
 > [!TIP]
-> For more information, see [Azure DevOps REST API Reference](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1).
+> For more information, see [Azure DevOps REST API Reference](/rest/api/azure/devops/?view=azure-devops-rest-5.1).
 
 ### Dependency diagram
 ![Dependency diagram shows the relationship between Services.Client, Services.InteractiveClient, and TeamFoundationServer.Client.](../concepts/media/dotnet-client-libraries-dependancy-diagram.jpg)
@@ -34,7 +34,7 @@ Client libraries are available for .NET developers who build Windows apps and se
 > [!NOTE]
 > REST-based clients only work with Azure DevOps and TFS 2015 (not previous versions of TFS)
 > To learn more about extending and integrating with  Azure DevOps and Team Foundation Server using the client libraries,
-> see [Extending Team Foundation](https://msdn.microsoft.com/library/bb130146.aspx)
+> see [Extending Team Foundation](/previous-versions/visualstudio/visual-studio-2013/bb130146(v=vs.120))
 
 ### Package and TFS version-mapping table
 
@@ -157,7 +157,7 @@ Further authentication samples can be found on our [.NET Samples Page](../get-st
 
 ## Reference
 
-You can find detailed, up-to-date reference documentation in the [Azure DevOps .NET SDK API Reference browser](https://docs.microsoft.com/dotnet/api/index?view=azure-devops-dotnet).
+You can find detailed, up-to-date reference documentation in the [Azure DevOps .NET SDK API Reference browser](/dotnet/api/index?view=azure-devops-dotnet).
 
 ## Samples
 
@@ -167,7 +167,7 @@ You can check out samples on our [.NET Samples Page](../get-started/client-libra
 
 ### Interactive authentication dialog doesn't appear when using the Azure DevOps OM in a Single Threaded Apartment (STA)
 
-The interactive authentication dialog doesn't appear in cases where your code is running from a [Single Threaded Apartment](https://docs.microsoft.com/windows/desktop/com/single-threaded-apartments) (STA).  This issue can commonly occur from [WPF](https://docs.microsoft.com/dotnet/desktop-wpf/) applications.  To work around this issue, you can change your initialization method to be async and request authentication as in the following example.
+The interactive authentication dialog doesn't appear in cases where your code is running from a [Single Threaded Apartment](/windows/desktop/com/single-threaded-apartments) (STA).  This issue can commonly occur from [WPF](/dotnet/desktop-wpf/) applications.  To work around this issue, you can change your initialization method to be async and request authentication as in the following example.
 
 ```csharp
 async void InitAzureDevOps()
@@ -193,4 +193,3 @@ For version 16.143.1 of our NuGet packages, we support NetStandard 2.0. These pa
 ### Microsoft.TeamFoundationServer.ExtendedClient package doesn't have NetStandard support
 
 The [Microsoft.TeamFoundationServer.ExtendedClient](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient) currently doesn't support a NetStandard compliant version. This package includes our older SOAP object model, which has been replaced by our newer REST object model.  At this point, we're no longer investing in the older SOAP object model, and have no plans to create a NetStandard version of it.
-

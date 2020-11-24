@@ -19,7 +19,7 @@ This task was used in a build or release pipeline to activate or deactivate Xama
 ## Deprecated
 
 > [!NOTE]
-> This task is deprecated because you no longer need a Xamarin license to [build your Xamarin app](../../apps/mobile/xamarin.md).
+> This task is deprecated because you no longer need a Xamarin license to [build your Xamarin app](../../ecosystems/xamarin.md).
 > Use the free version of Xamarin from [https://store.xamarin.com](https://store.xamarin.com).
 
 ## Demands
@@ -40,7 +40,7 @@ None
 
 ## Example
 
-[Build your Xamarin app](../../apps/mobile/xamarin.md)
+[Build your Xamarin app](../../ecosystems/xamarin.md)
 
 ## Open source
 

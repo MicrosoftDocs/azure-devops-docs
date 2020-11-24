@@ -12,10 +12,10 @@ monikerRange: '>= azure-devops-2020'
 [!INCLUDE [version-2020-rtm](../includes/version-server-2020-rtm.md)]
 
 > [!IMPORTANT]
-> - Job and stage names cannot contain keywords.
+> - Job and stage names cannot contain keywords (example: `deployment`).
 > - Each job in a stage must have a unique name. 
 
-In YAML pipelines, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that's a collection of steps, which are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. 
+In YAML pipelines, we recommend that you put your deployment steps in a special type of [job](phases.md) called a deployment job. A deployment job is a collection of steps that are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. 
 
 Deployment jobs provide the following benefits:
 
@@ -23,30 +23,37 @@ Deployment jobs provide the following benefits:
  - **Apply deployment strategy**: You define how your application is rolled out.
 
    > [!NOTE] 
-   > We currently only support the *runOnce*, *rolling*, and the *canary* strategies. 
+   > We currently support only the *runOnce*, *rolling*, and the *canary* strategies. 
 
+A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`. 
 
 ## Schema
 
-Here's the full syntax to specify a deployment job: 
+Here is the full syntax to specify a deployment job: 
 
 ```YAML
 jobs:
-- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore
+- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
   displayName: string  # friendly name to display in the UI
   pool:                # see pool schema
-    name: string
+    name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.
     demands: string | [ string ]
-  dependsOn: string 
-  condition: string 
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
+  dependsOn: string
+  condition: string
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
-  container: containerReference # container to run the job inside
+  container: containerReference # container to run this job inside
   services: { string: string | container } # container resources to run as a service container
   timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
-  variables: { string: string } | [ variable | variableReference ]  
-  environment: string  # target environment name and optionally a resource-name to record the deployment history; format: <environment-name>.<resource-name>
-  strategy: [ deployment strategy ] # see deployment strategy schema
+  variables: # several syntaxes, see specific section
+  environment: string  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
+  strategy:
+    runOnce:    #rolling, canary are the other strategies that are supported
+      deploy:
+        steps:
+        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
 ## Deployment strategies
@@ -83,11 +90,11 @@ Deployment jobs use the `$(Pipeline.Workspace)` system variable.
 strategy: 
     runOnce:
       preDeploy:        
-        pool: [ server | pool ] # see pool schema        
+        pool: [ server | pool ] # See pool schema.        
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
       deploy:          
-        pool: [ server | pool ] # see pool schema        
+        pool: [ server | pool ] # See pool schema.        
         steps:
         ...
       routeTraffic:         
@@ -117,7 +124,7 @@ We currently only support the rolling strategy to VM resources.
 
 For example, a rolling deployment typically waits for deployments on each set of virtual machines to complete before proceeding to the next set of deployments. You could do a health check after each iteration and if a significant issue occurs, the rolling deployment can be stopped.
 
-Rolling deployments can be configured by specifying the keyword `rolling:` under `strategy:` node. 
+Rolling deployments can be configured by specifying the keyword `rolling:` under the `strategy:` node. 
 The `strategy.name` variable is available in this strategy block, which takes the name of the strategy. In this case, rolling.
 
 ```YAML
@@ -166,11 +173,11 @@ strategy:
     canary:
       increments: [ number ]
       preDeploy:        
-        pool: [ server | pool ] # see pool schema        
+        pool: [ server | pool ] # See pool schema.        
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
       deploy:          
-        pool: [ server | pool ] # see pool schema        
+        pool: [ server | pool ] # See pool schema.        
         steps:
         ...
       routeTraffic:         
@@ -206,22 +213,24 @@ The following variables are available in this strategy:
 
 ### RunOnce deployment strategy
 
-The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. 
+The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. The example includes a checkout step. 
 
 ```YAML
+
 jobs:
-  # track deployments on the environment
+  # Track deployments on the environment.
 - deployment: DeployWeb
   displayName: deploy Web App
   pool:
     vmImage: 'Ubuntu-16.04'
-  # creates an environment if it doesn't exist
+  # Creates an environment if it doesn't exist.
   environment: 'smarthotel-dev'
   strategy:
-    # default deployment strategy, more coming...
+    # Default deployment strategy, more coming...
     runOnce:
       deploy:
         steps:
+        - checkout: self 
         - script: echo my first deployment
 ```
 
@@ -238,13 +247,13 @@ jobs:
   displayName: deploy Web App
   pool:
     vmImage: 'Ubuntu-16.04'
-  # records deployment against bookings resource - Kubernetes namespace
+  # Records deployment against bookings resource - Kubernetes namespace.
   environment: 'smarthotel-dev.bookings'
   strategy: 
     runOnce:
       deploy:
         steps:
-          # No need to explicitly pass the connection details
+          # No need to explicitly pass the connection details.
         - task: KubernetesManifest@0
           displayName: Deploy to Kubernetes cluster
           inputs:
@@ -364,14 +373,14 @@ While executing deployment strategies, you can access output variables across jo
 - For **rolling** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 
 ```yaml
-# Set an output variable in a lifecycle hook of a deployment job executing canary strategy
+# Set an output variable in a lifecycle hook of a deployment job executing canary strategy.
 - deployment: A
   pool:
     vmImage: 'ubuntu-16.04'
   environment: staging
   strategy:                  
     canary:      
-      increments: [10,20]  # creates multiple jobs, one for each increment. Output variable can be referenced with this.
+      increments: [10,20]  # Creates multiple jobs, one for each increment. Output variable can be referenced with this.
       deploy:
         steps:
         - bash: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
@@ -379,7 +388,7 @@ While executing deployment strategies, you can access output variables across jo
         - bash: echo $(setvarStep.myOutputVar)
           name: echovar
 
-# Map the variable from the job
+# Map the variable from the job.
 - job: B
   dependsOn: A
   pool:
@@ -394,7 +403,7 @@ While executing deployment strategies, you can access output variables across jo
 For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
 
 ```yaml
-# Set an output variable in a lifecycle hook of a deployment job executing runOnce strategy
+# Set an output variable in a lifecycle hook of a deployment job executing runOnce strategy.
 - deployment: A
   pool:
     vmImage: 'ubuntu-16.04'
@@ -408,7 +417,7 @@ For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
         - bash: echo $(setvarStep.myOutputVar)
           name: echovar
 
-# Map the variable from the job
+# Map the variable from the job.
 - job: B
   dependsOn: A
   pool:
@@ -441,7 +450,7 @@ stages:
     pool:
       vmImage: 'ubuntu-16.04'
     environment: 
-      name: env1
+      name: env2
       resourceType: virtualmachine
     strategy:                  
       runOnce:

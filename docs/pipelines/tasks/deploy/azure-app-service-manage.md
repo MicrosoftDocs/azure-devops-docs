@@ -50,7 +50,7 @@ Use this task to start, stop, restart, slot swap, Swap with Preview, install sit
 When you swap two slots (usually from a staging slot into the production slot), make sure that the production slot is always the target slot. This way, the swap operation doesn't affect your production app.
 
 Also at any point of the swap (or swap with preview) operation, all work of initializing the swapped apps happens on the source slot. The target slot remains online while the source slot is being prepared and warmed up, regardless of where the swap succeeds or fails. 
-Please refer to [Set up staging environments in Azure App Service](https://docs.microsoft.com/azure/app-service/deploy-staging-slots#AboutConfiguration) for more details.
+Please refer to [Set up staging environments in Azure App Service](/azure/app-service/deploy-staging-slots#AboutConfiguration) for more details.
 
 ## Open source
 

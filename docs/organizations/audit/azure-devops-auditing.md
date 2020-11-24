@@ -8,15 +8,12 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 09/02/2020
+ms.date: 11/19/2020
 ---
 
 # Access, export, and filter audit logs
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
-
-> [!Note]
-> Auditing is currently in a Public Preview.
 
 You can access, export, and filter audit logs. Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. 
 
@@ -28,16 +25,16 @@ Audit events can be the following occurrences:
 - accessing the auditing feature
 - and much more
 
-Auditing is turned on by default for all Azure DevOps Services organizations. You can't turn auditing off, which ensures that you never miss an actionable event. Events get stored for 90 days and then they’re deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
-
 > [!NOTE]
-> Azure DevOps Server doesn't support Auditing yet, as it's still in Public Preview.
+> Auditing is currently in a Public Preview for Azure DevOps Services. It isn't available for on-prem deployments. For auditing to connect to an on-prem or cloud-based Splunk requires allowing IP ranges for inbound connection. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
 
+Auditing is turned on by default for all Azure DevOps Services organizations. You can't turn auditing off, which ensures that you never miss an actionable event. Events get stored for 90 days and then they’re deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
+ 
 ## Prerequisites
 
 By default, Project Collection Administrators are the only group that have access to the auditing feature. 
 
-## Access auditing
+## Access auditing  
 
 > [!NOTE]
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).

@@ -35,7 +35,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | Ubuntu 20.04 [(preview)](/azure/devops/release-notes/2020/sprint-170-update#ubuntu-2004-in-preview-for-azure-pipelines-hosted-pools)| *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md)
 | Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-latest` OR `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md)
 | Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1604-README.md)
-| macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-10.14` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md)
+| macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-10.14` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md)
 | macOS X Catalina 10.15 | *macOS-10.15* |  `macOS-latest` OR `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md)
 
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
@@ -239,7 +239,7 @@ Microsoft-hosted agents do not offer:
 * The ability to get bigger or more powerful build machines.
 * The ability to pre-install custom software (other than through [tool installer tasks](../process/tasks.md#tool-installers) in your pipeline).
 * Potential performance advantages that you might get by using self-hosted agents that might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
-* The ability to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
+* The ability to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 
 If Microsoft-hosted agents don't meet your needs, then you can deploy your own [self-hosted agents](agents.md#install) or use [scale set agents](scale-set-agents.md).
 
@@ -357,7 +357,7 @@ If you refer to the server by its DNS name, then make sure that your server is p
 
 #### .NET Core
   .NET Core 2.2.105 is default on VM images but Mono version 6.0 or greater requires .NET Core 2.2.300+. 
-  If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer).
+  If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](../tasks/tool/dotnet-core-tool-installer.md).
 
 #### Boost
   The VM images contain prebuilt Boost libraries with their headers in the directory designated by `BOOST_ROOT` environment variable. In order to include the Boost headers, the path `$BOOST_ROOT/include` should be added to the search paths.

@@ -126,6 +126,10 @@ Each backlog and board represents a filtered list of work items based on area pa
 
 **A:** See [Azure Boards migration and integration](extensions/migrate-integrate.md).
 
+### Q: How do I search for comments made to backlog items? 
+
+**A:** See the answer provided in [How do I search for entries made in the Discussion field?](#faq-search-comments) later in this article. 
+
 ### Q: How do the three types of backlogs&mdash;product, portfolio, and sprint backlogs&mdash;differ?
 
 **A:** Each backlog lists a filtered set of work items based on the team's selected area path, iteration paths, and work item types.  
@@ -146,10 +150,12 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 [!INCLUDE [temp](includes/faq-critical-path.md)]
 
 
+<
 ## Queries 
 
 [!INCLUDE [temp](includes/faq-view-all-work-items.md)] 
 
+[!INCLUDE [temp](includes/faq-search-comments.md)]
 
 ## Configuration and customizations  
 

@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
 
 This tutorial shows how to configure a continuous delivery (CD) workflow for
-[Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-changes-existing-services/)
+[Azure App Service](/azure/app-service/overview)
 by using Azure Pipelines. CD is a great option for projects that require multiple and frequent
 contributions to be integrated.
 
@@ -98,7 +98,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    pricing tier possible. For example, if your current App Service
    is in the S2 Standard pricing tier, the new App Service
    Plan for the load test will use the S1 Standard pricing tier.
-   [Pricing details](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/).
+   [Pricing details](/azure/app-service/overview-hosting-plans).
 
 1. Select **Configure deployment** and decide if you want to deploy your latest changes
    first to staging, and then promote to production. The default is **NO**.
@@ -107,7 +107,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
 
    ![Specifying whether and how to configure production deployment](media/continuous-app-service/06.png)
 
-   See [this topic](https://azure.microsoft.com/documentation/articles/web-sites-staged-publishing/)
+   See [this topic](/azure/app-service/deploy-staging-slots)
    for information about Azure App Service staging environments.
 
 ## Build and deploy

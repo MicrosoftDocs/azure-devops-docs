@@ -4,7 +4,7 @@ description: Use .NET Core to build apps with Azure Pipelines, Azure DevOps, & T
 ms.topic: conceptual
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
-ms.date: 05/06/2020
+ms.date: 11/13/2020
 ms.custom: contperfq4
 monikerRange: '>= tfs-2017'
 ---
@@ -170,7 +170,7 @@ pool:
   vmImage: 'ubuntu-18.04' # examples of other options: 'macOS-10.15', 'windows-2019'
 ```
 
-See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](/azure/devops/pipelines/yaml-schema#pool) for further examples.
+See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](../yaml-schema.md#pool) for further examples.
 
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
 They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the [UseDotNet@2](../tasks/tool/dotnet-core-tool-installer.md) task to your YAML file.
@@ -630,7 +630,7 @@ If you're able to build your project on your development machine, but you're hav
 
 ::: moniker range=">=azure-devops-2020"
 * We don't install prerelease versions of the .NET Core SDK on Microsoft-hosted agents. After a new version of the .NET Core SDK is released, 
-it can take a few weeks for us to roll it out to all the datacenters that Azure Pipelines runs on. You don't have to wait for us to finish 
+it can take a few weeks for us to roll it out to all the data centers that Azure Pipelines run on. You don't have to wait for us to finish 
 this rollout. You can use the **.NET Core Tool Installer**, as explained in this guidance, to install the desired version of the .NET Core SDK 
 on Microsoft-hosted agents.  
 

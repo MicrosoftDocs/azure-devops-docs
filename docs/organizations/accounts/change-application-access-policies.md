@@ -2,13 +2,13 @@
 title: Change application access, security policies for organizations
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Manage policies for security, like conditional access, and alternate authentication, like OAuth, SSH, and personal access tokens (PATs) so you don't have to enter user credentials many times.
+description: Manage policies for security, like conditional access, OAuth, SSH, and personal access tokens (PATs), so you don't have to enter user credentials many times.
 ms.technology: devops-accounts
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 05/06/2020
+ms.date: 11/16/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -18,15 +18,15 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-Learn how to manage your security policies and the policies that determine which applications can integrate with services and resources in your organization. By default, your organization allows access for all authentication methods.
+Learn how to manage your security policies and the policies that determine which applications can integrate with services and resources in your organization. By default, your organization allows access for most authentication methods.
 You can limit access, but you must specifically restrict access for each method.
-When you deny access to an authentication method, no application can access your organization. Any app that previously had access gets an authentication error and has no access to your organization.
+When you deny access to an authentication method, no application can access your organization. Any application that previously had access gets an authentication error and has no access to your organization.
 
 ## Application connection policies
 
 To access your organization without asking for user credentials multiple times, applications use the following authentication methods.
 
-* [**OAuth**](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md). The [Organizations](/rest/api/azure/devops/account) and [Profiles](/rest/api/azure/devops/profile/) APIs support only OAuth.
+* [**OAuth**](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs for Azure DevOps](/rest/api/azure/devops/). The [Organizations](/rest/api/azure/devops/account) and [Profiles](/rest/api/azure/devops/profile/) APIs support only OAuth.
 
 * [**SSH authentication**](../../repos/git/use-ssh-keys-to-authenticate.md) to generate encryption keys for using Linux, macOS, and Windows running [Git for Windows](https://www.git-scm.com/download/win), but you can't use [Git credential managers](../../repos/git/set-up-credential-managers.md) or [personal access tokens](use-personal-access-tokens-to-authenticate.md) (PATs) for HTTPS authentication.
  
@@ -34,7 +34,7 @@ To access your organization without asking for user credentials multiple times, 
 
    * Accessing specific resources or activities, like builds or work items
    * Clients like Xcode and NuGet that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication
-   * Accessing [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md)
+   * Accessing [REST APIs for Azure DevOps](/rest/api/azure/devops/)
 
 To remove access for PATs, you must [revoke them](use-personal-access-tokens-to-authenticate.md).
 
@@ -62,22 +62,21 @@ When you deny access to an authentication method, no application can access your
 
 ## Security policies
 
-You can enable or disable the following security policies.
+You can enable or disable the following security policy.
 
 - **Allow public projects** - Allows non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. Anonymous access is used to access both private and public repositories. Learn more at [Make your project public](../public/make-project-public.md) and [Enable anonymous access to projects for your organization](../public/create-public-project.md#enable-anonymous-access-to-projects-for-your-organization).
-- **Enterprise access to projects** - All projects that are shared with your Enterprise become private projects when this is disabled. Those projects will no longer be viewable by all users in your Enterprise.
-- **Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation** - this policy is set to *off* by default and only applies to alternate credentials. This policy doesn't apply for CAPs set in Azure AD, no matter the settings in Azure DevOps.
+- **Enterprise access to projects** - All projects that are shared with your Enterprise become private projects when this is disabled. Those projects will no longer be viewable by all users in your Enterprise.	
+- **Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation** - this policy is set to *off* by default and only applies to alternative credentials. This policy doesn't apply for CAPs set in Azure AD, no matter the settings in Azure DevOps.	
 
-   You can require the following conditions, for example:
-    - Security group membership
-    - Location and network identity
-    - Specific operating system
-    - Enabled device in a management system
+   You can require the following conditions, for example:	
+    - Security group membership	
+    - Location and network identity	
+    - Specific operating system	
+    - Enabled device in a management system	
 
-   Depending on which conditions the user satisfies, you can require multi-factor authentication, further checks, or block access.
+   Depending on which conditions the user satisfies, you can require multi-factor authentication, further checks, or block access.	
 
-   For more information, see the REST API reference article, section [API version mapping](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-server-rest-5.0).
-
+   For more information, see the REST API reference article, section [API version mapping](/rest/api/azure/devops/?view=azure-devops-server-rest-5.0).
 ## Prerequisites
 
 To change a policy, you need at least Basic access and organization Owner or Project Collection Administrator permissions.
@@ -93,5 +92,3 @@ To change a policy, you need at least Basic access and organization Owner or Pro
 - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
 - [What is Conditional Access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access)
 - [Detailed instructions and requirements for Conditional Access](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps)
-
-

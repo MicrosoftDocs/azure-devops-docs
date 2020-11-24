@@ -2,7 +2,7 @@
 title: Add, update, & follow stories, issues, bugs, & other work items
 titleSuffix: Azure Boards 
 description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or TFS  
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 ms.technology: devops-agile
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
 ms.author: kaelli
@@ -338,7 +338,6 @@ To quickly add backlog items, such as user stories, requirements or bugs, see th
 For descriptions of each field and work item form control, see [Work item field index](../work-items/guidance/work-item-field.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json ) and [Work item form controls](../work-items/work-item-form-controls.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json ).  
 
 
-Once you've added several work items, you can use additional features to get [notified of changes](../../notifications/howto-manage-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
+Once you've added several work items, you can use additional features to get [notified of changes](../../notifications/manage-your-personal-notifications.md), [create queries](../queries/using-queries.md), [define status and trend charts](../../report/dashboards/charts.md), plus more.  
 
 For additional clients that you can use to add work items, see [Clients that support tracking work items](../../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json).
-
