@@ -44,9 +44,9 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 > [!NOTE]
 > In March 2020, we removed the following Azure Pipelines hosted images:
 >
-> - [Windows Server 2012R2 with Visual Studio 2015](https://github.com/microsoft/azure-pipelines-image-generation/blob/d80f81d6c98f8ce2c74b034309bb774ea8d31cfb/images/win/Vs2015-Server2012R2-Readme.md) (`vs2015-win2012r2`)
-> - [macOS X High Sierra 10.13](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md) (`macOS-10.13`)
-> - [Windows Server Core 1803](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md) - (`win1803`)
+> - [Windows Server 2012R2 with Visual Studio 2015](https://github.com/actions/virtual-environments/tree/main/images/win) (`vs2015-win2012r2`)
+> - [macOS X High Sierra 10.13](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.13-Readme.md) (`macOS-10.13`)
+> - [Windows Server Core 1803](https://github.com/actions/virtual-environments/tree/main/images/win) - (`win1803`)
 >
 > Customers are encouraged to migrate to `vs2017-win2016`, `macOS-10.14`, or a [self-hosted agent](v2-windows.md) respectively.
 >
@@ -321,7 +321,7 @@ If you refer to the server by its DNS name, then make sure that your server is p
 
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
 
-  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xamarin).
+  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md).
 
   This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
