@@ -454,7 +454,7 @@ This could be for one of the following reasons:
 If you believe that the runs are no longer needed or if the releases have already been deleted, then you can manually delete the runs.
 
 ### How does 'minimum releases to keep' setting work?
-Minimum releases to keep are defined at stage level. It denotes that Azure DevOps will always retain the given number of last deployed releases for a stage even if the releases are out of retention period. A release will be considered under minimum releases to keep for a stage only when the deployment started on that stage. Both succesfull and failed deployments are considered. Releases which are waiting for approval are not considered.
+Minimum releases to keep are defined at stage level. It denotes that Azure DevOps will always retain the given number of last deployed releases for a stage even if the releases are out of retention period. A release will be considered under minimum releases to keep for a stage only when the deployment started on that stage. Both successful and failed deployments are considered. Releases pending approval are not considered.
 
 ### How is retention period decided when release is deployed to multiple stages having different retention period?
 Final retention period is decided by considering days to retain settings of all the stages on which release is deployed and taking max days to keep among them. Minimum releases to keep is governed at stage level and do not change based on release deployed to multiple stages or not. Retain associated artifacts will be applicable when release is deployed to a stage for which it is set true.
@@ -485,4 +485,4 @@ No. Manual test results are not deleted.
 ## Related articles
 
 - [Control how long to keep test results](../../test/how-long-to-keep-test-results.md)
-- [Delete test artofacts](../../boards/backlogs/delete-test-artifacts.md)
+- [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md)
