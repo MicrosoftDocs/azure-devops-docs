@@ -45,7 +45,7 @@ An extension is composed of a set of files that includes a required manifest fil
 
 1. Create a directory to hold the files needed for your extension:
    ```
-   md my-first-extension
+   mkdir my-first-extension
    ```
 
 2. From this directory, initialize a new NPM package manifest:
