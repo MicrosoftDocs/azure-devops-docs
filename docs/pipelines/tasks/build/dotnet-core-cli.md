@@ -63,9 +63,9 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>nobuild</code><br/>Do not build</td><td>Don&#39;t build the project before packing. Corresponds to the <code>--no-build</code> parameter of the `build` command.</td></tr>
 <tr><td><code>includesymbols</code><br/>Include Symbols</td><td>Additionally creates symbol NuGet packages. Corresponds to the <code>--include-symbols</code> command line parameter.</td></tr>
 <tr><td><code>includesource</code><br/>Include Source</td><td>Includes source code in the package. Corresponds to the <code>--include-source</code> command line parameter.</td></tr>
-<tr><td><code>publishWebProjects</code><br/>Publish Web Projects</td><td>If true, the task will try to find the web projects in the repository and run the publish command on them. Web projects are identified by presence of either a web.config file or wwwroot folder in the directory. Note that this argument defaults to true if not specified.</td></tr>
-<tr><td><code>zipAfterPublish</code><br/>Zip Published Projects</td><td>If true, folder created by the publish command will be zipped.</td></tr>
-<tr><td><code>modifyOutputPath</code><br/>Add project name to publish path</td><td>If true, folders created by the publish command will have project file name prefixed to their folder names when output path is specified explicitly in arguments. This is useful if you want to publish multiple projects to the same folder.</td></tr>
+<tr><td><code>publishWebProjects</code><br/>Publish Web Projects</td><td>If `true`, the `projects` property value will be skipped and the task will try to find the web projects in the repository and run the publish command on them. Web projects are identified by presence of either a web.config file or wwwroot folder in the directory. Note that this argument defaults to `true` if not specified.</td></tr>
+<tr><td><code>zipAfterPublish</code><br/>Zip Published Projects</td><td>If `true`, folder created by the publish command will be zipped.</td></tr>
+<tr><td><code>modifyOutputPath</code><br/>Add project name to publish path</td><td>If `true`, folders created by the publish command will have project file name prefixed to their folder names when output path is specified explicitly in arguments. This is useful if you want to publish multiple projects to the same folder.</td></tr>
 <tr><td><code>publishTestResults</code><br/>Publish test results</td><td>Enabling this option will generate a test results TRX file in <code>$(Agent.TempDirectory)</code> and results will be published to the server. <br>This option appends <code>--logger trx --results-directory $(Agent.TempDirectory)</code> to the command line arguments.<br>Code coverage can be collected by adding <code>--collect "Code coverage"</code> to the command line arguments. This is currently only available on the Windows platform.</td></tr>
 <tr><td><code>testRunTitle</code><br/>Test run title</td><td>Provides a name for the test run</td></tr>
 <tr><td><code>custom</code><br/>Custom command</td><td>The command to pass to dotnet.exe for execution.<br/>For a full list of available commands, see the <a href="/dotnet/core/tools/?tabs=netcore2x#cli-commands" data-raw-source="[dotnet CLI documentation](/dotnet/core/tools/?tabs=netcore2x#cli-commands)">dotnet CLI documentation</a></td></tr>
@@ -206,9 +206,9 @@ However, for situations where a team of developers works on a large range of pro
 ### File structure for output files is different from previous builds
 
 Azure DevOps hosted agents are configured with .NET Core 3.0, 2.1 and 2.2.
-CLI for .NET Core 3.0 has a different behavior while publishing projects using output folder argument. When publishing projects with the output folder argument (-o), the output folder is created in the root directory and not in the project file’s directory. Hence while publishing more than one projects, all the files are published to the same directory, which causes an issue.
+CLI for .NET Core 3.0 has a different behavior while publishing projects using output folder argument. When publishing projects with the output folder argument (-o), the output folder is created in the root directory and not in the project file’s directory. Hence while publishing more than one project, all the files are published to the same directory, which causes an issue.
 
-To resolve this issue, use the *Add project name to publish path* parameter (modifyOutputPath in YAML) in the .NET Core CLI task. This creates a sub folder with project file’s name, inside the output folder. Hence all your projects will be published under different sub-folder’s inside the main output folder.
+To resolve this issue, use the *Add project name to publish path* parameter (modifyOutputPath in YAML) in the .NET Core CLI task. This creates a sub folder with project file’s name, inside the output folder. Hence all your projects will be published under different subfolder’s inside the main output folder.
 
 ```YAML
 steps:
@@ -225,7 +225,7 @@ steps:
 
 ### Project using Entity Framework has stopped working on Hosted Agents
 
-The latest .NET Core: 3.0 does not have Entity Framework(EF) built-in. You will have to either install EF before beginning execution or add global.json to the project with required .NET Core SDK version. This will ensure that correct SDK is used to build EF project. If the required version is not present on the machine, add UseDotNetV2 task to your pipeline to install the required version.
+The latest .NET Core: 3.0 does not have Entity Framework(EF) built in. You will have to either install EF before beginning execution or add global.json to the project with required .NET Core SDK version. This will ensure that correct SDK is used to build EF project. If the required version is not present on the machine, add UseDotNetV2 task to your pipeline to install the required version.
 [Learn more about EF with .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-3-0-preview-4/)
 
 ## Open Source
