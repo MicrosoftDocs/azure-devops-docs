@@ -1,16 +1,16 @@
 ---
-title: Retention policies for builds, tests, and releases
+title: Retention policies for builds, releases, and test
 ms.topic: conceptual
-description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
+description: Builds, releases, and tests retention policies in Azure Pipelines
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
-ms.author: jukullam
+ms.author: rabououn
 author: juliakm
-ms.date: 09/07/2020
-ms.custom: contperfq1
+ms.date: 11/19/2020
+ms.custom: contperfq1, contperfq2
 monikerRange: '>= tfs-2015'
 ---
 
-# Set retention policies for builds, tests, and releases
+# Set retention policies for builds, releases, and tests
 
 ::: moniker range="<= tfs-2018"
 
@@ -18,17 +18,19 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-In this article, learn how to manage the retention policies for your project. 
+Retention policies let you set how long to keep runs, releases, and tests stored in the system. To save storage space, you want to delete older runs, tests, and releases.   
 
-Retention policies let you set how long to keep runs, tests, and releases stored in the system. To save storage space, you want to delete older runs, tests, and releases.   
+The following retention policies are available in Azure DevOps in your **Project settings**:
 
-The following retention policies are available in Azure DevOps in your **Project settings**: 
+1. **Pipeline** - Set how long to keep artifacts, symbols, attachments, runs, and pull request runs. 
+2. **Release (classic)** - Set whether to save builds and view the default and maximum retention settings.
+3. **Test** - Set how long to keep automated and manual test runs, results, and attachments. 
+ 
+> [!div class="mx-imgBorder"]
+> ![Project settings retention policies](media/retention-policies.png)
 
-* **Pipeline** - Set how long to keep artifacts, symbols, attachments, runs, and pull request runs. 
-* **Release (classic)** - Set whether to save builds and view the default and maximum retention settings.
-* **Test** - Set how long to keep automated and manual test runs, results, and attachments. 
-
-If you are using an on-premises server, you can also specify retention policy defaults for a project and when releases are permanently destroyed. Learn more about [release retention](#release).
+> [!NOTE]
+> If you are using an on-premises server, you can also specify retention policy defaults for a project and when releases are permanently destroyed. Learn more about [release retention](#release) later in this article.
 
 ## Prerequisites 
 
@@ -49,10 +51,10 @@ You can also buy monthly access to Azure Test Plans and assign the [Basic + Test
 
 2. Go to the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
-3. Select **Settings** or **Release retention** in **Pipelines** or **Retention** in **Test**.
-    * In **Pipelines**, use **Settings** to configure retention for artifacts, symbols, attachments, runs, and pull request runs. 
-    * In **Pipelines**, use **Release retention** to set when to keep builds consumed by releases.
-    * In **Test**, use **Retention** to set how long to keep test runs.     
+3. Select **Settings** or **Release retention** under **Pipelines** or **Retention** under **Test**.
+    * Select **Settings** to configure retention policies for runs, artifacts, symbols, attachments, and pull request runs. 
+    * Select **Release retention** to set up your release retention policies and configure when to delete or permanently destroy releases.
+    * Select **Retention** to set up how long to keep manual and automated test runs.     
 
     :::image type="content" source="media/retention-menu.png" alt-text="Retention settings in Project settings":::
 ::: moniker-end
@@ -184,10 +186,6 @@ You can delete runs using the [context menu](../get-started/multi-stage-pipeline
 
 ## Set release retention policies
 
-> [!NOTE]
-> If you are using Azure Pipelines, you can view but not change the global release retention policies for your project.
->
-
 The release retention policies for a classic release pipeline determine how long a release and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline.
 
 The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most recent three will be retained indefinitely - irrespective of the number of days specified. However, you can manually delete these releases when you no longer require them. See FAQ below for more details about how release retention works.
@@ -201,18 +199,20 @@ The retention policy for YAML and build pipelines is the same. You can see your 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-You can also customize these policies on a [stage-by-stage basis](#stage-specific-retention-policies).
+You can also learn how to customize these policies on a [stage-by-stage basis](#stage-specific-retention-policies) later in this article.
 ::: moniker-end
 
 ### Global release retention policy
 
-If you are using an on-premises Team Foundation Server, you can specify release retention policy defaults and maximums for a project. You can also specify when releases are permanently destroyed (removed from the **Deleted** tab in the build explorer).
+If you are using an on-premises Team Foundation Server or Azure DevOps Server, you can specify release retention policy defaults and maximums for a project. You can also specify when releases are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
-If you are using Azure Pipelines, you can view but not change these settings for your project.
+:::image type="content" source="media/on-premises-release-retention.png" alt-text="On premises release retention settings":::
 
-Global release retention policy settings can be managed from the **Release** settings of your project:
+If you are using Azure DevOps Services, you can view but not change these settings for your project.
 
-* Azure Pipelines: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
+Global release retention policy settings can be managed from the **Release retention** settings of your project:
+
+* Azure DevOps Services: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained for all release pipelines. Authors of release pipelines cannot
@@ -454,7 +454,7 @@ This could be for one of the following reasons:
 If you believe that the runs are no longer needed or if the releases have already been deleted, then you can manually delete the runs.
 
 ### How does 'minimum releases to keep' setting work?
-Minimum releases to keep are defined at stage level. It denotes that Azure DevOps will always retain the given number of last deployed releases for a stage even if the releases are out of retention period. A release will be considered under minimum releases to keep for a stage only when the deployment started on that stage. Both succesfull and failed deployments are considered. Releases which are waiting for approval are not considered.
+Minimum releases to keep are defined at stage level. It denotes that Azure DevOps will always retain the given number of last deployed releases for a stage even if the releases are out of retention period. A release will be considered under minimum releases to keep for a stage only when the deployment started on that stage. Both successful and failed deployments are considered. Releases pending approval are not considered.
 
 ### How is retention period decided when release is deployed to multiple stages having different retention period?
 Final retention period is decided by considering days to retain settings of all the stages on which release is deployed and taking max days to keep among them. Minimum releases to keep is governed at stage level and do not change based on release deployed to multiple stages or not. Retain associated artifacts will be applicable when release is deployed to a stage for which it is set true.
@@ -482,3 +482,7 @@ Test results published within a stage of a release are associated with both the 
 
 No. Manual test results are not deleted. 
 
+## Related articles
+
+- [Control how long to keep test results](../../test/how-long-to-keep-test-results.md)
+- [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md)
