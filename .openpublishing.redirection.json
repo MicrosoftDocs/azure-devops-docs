@@ -16708,6 +16708,76 @@
     {
       "source_path": "docs/repos/git/forks-overview.md",
       "redirect_url": "/azure/devops/repos/git/forks"
+    },
+    {
+      "source_path": "docs/learn/compare/azure-boards-vs-jira.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/learn/compare/azure-devops-comparisons.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/learn/compare/azure-devops-vs-circleci.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/learn/compare/azure-devops-vs-gitlab.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/learn/compare/azure-pipelines-vs-circleci.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/learn/compare/tfs-vs-circleci.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/learn/compare/vsts-vs-circleci.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/compare/azure-boards-vs-jira.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/compare/azure-devops-comparisons.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/compare/azure-devops-vs-circleci.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/compare/azure-devops-vs-gitlab.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/compare/azure-pipelines-vs-circleci.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/compare/tfs-vs-circleci.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/compare/vsts-vs-circleci.md",
+      "redirect_url": "/azure/devops/learn/",
+      "redirect_document_id": false
     }
   ]
 }

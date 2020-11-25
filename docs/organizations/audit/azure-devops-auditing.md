@@ -8,15 +8,12 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 11/16/2020
+ms.date: 11/19/2020
 ---
 
 # Access, export, and filter audit logs
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
-
-> [!Note]
-> Auditing is currently in a Public Preview.
 
 You can access, export, and filter audit logs. Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. 
 
@@ -47,7 +44,7 @@ Members of the Project Collection Valid Users group can view the Auditing page a
 > [!NOTE]  
 > If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
 
-## Access auditing
+## Access auditing  
 
 > [!NOTE]
 > To enable the new user interface for the Organization Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
