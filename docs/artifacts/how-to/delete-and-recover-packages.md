@@ -162,6 +162,10 @@ From within your feed, select the appropriate package and select **Delete latest
 > ![Unlist or delete a Universal package](../media/delete/delete-universal-package.png)
 
 * * *
+
+> [!NOTE]
+> Packages that are placed in the recycle bin will be deleted permanently after 30 days. However, these packages still count as part of your storage bill. If you want to delete them sooner, you can navigate to the recycle bin and delete them manually.
+
 ## Automatically delete old package versions with retention policies
 
 Over time, the number of versions for each package being hosted in your feed can grow quickly. You can set up retention policies to automatically delete old packages and save storage space.
