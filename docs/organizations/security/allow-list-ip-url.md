@@ -25,7 +25,7 @@ Network connection issues could occur because of your security appliances, which
 
 ### Azure DevOps domains to allow
 
-To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` and `*dev.azure.com` are open. 
+To ensure your organization works with any existing firewall or IP restrictions, ensure that `dev.azure.com` and `*.dev.azure.com` are open. 
 
 ### URLs to support sign in and licensing connections
 
