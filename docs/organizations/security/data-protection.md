@@ -157,7 +157,7 @@ you and Azure DevOps, we encrypt via HTTPS / SSL.
 
 Also, data we store on your behalf in Azure DevOps is encrypted as follows:
 
-* For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) to protect against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
+* For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017&preserve-view=true) to protect against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
 
 * Azure Blob Storage connections are encrypted to protect your data in transit. To protect data at rest stored in our Azure Blob Storage, we have adopted [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption).
 
