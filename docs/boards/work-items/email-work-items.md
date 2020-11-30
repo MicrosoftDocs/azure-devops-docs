@@ -8,8 +8,8 @@ ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/30/2020
 ---
 
 
@@ -20,11 +20,8 @@ ms.date: 07/09/2020
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
-Here's a list of the most common ways in which teams share information and plans using work item tracking. 
-
-> [!NOTE]    
-> Some features are only available from the web portal or a Team Foundation client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE). 
-
+Some of the most common ways information is shared within a team or across teams is by emailing lists or links to work items. Some features are only available from the web portal, an Azure DevOps client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE).  Here's a list of the most common ways in which teams share information and plans using work item tracking. 
+ 
 ---
 :::row:::
    :::column span="2":::
@@ -34,7 +31,7 @@ Here's a list of the most common ways in which teams share information and plans
       **Web portal**
    :::column-end:::
    :::column span="":::
-      **Visual Studio**
+      **Visual Studio 2015-2017**
    :::column-end:::
    :::column span="":::
       **TEE (Eclipse)**
@@ -116,18 +113,27 @@ Here's a list of the most common ways in which teams share information and plans
 ---
 
 
+**Visual Studio 2019/Team Explorer** 
+
+The tasks/features listed in the table aren't available when you are connected to a GitHub or third-party Git repository. Also, they aren't available from Visual Studio 2019 under the following conditions:   
+
+* If you are set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
+* If you are set to use the new Git Tool as described in [New Git experience in Visual Studio (Preview)](/visualstudio/ide/git-with-visual-studio).  
+ 
+ 
+
 ::: moniker range="< azure-devops"
 > [!NOTE]   
-> For the email feature to work, your administrator for Azure DevOps Server or TFS must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
+> For the email feature to work, your administrator for Azure DevOps Server must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
 
 ::: moniker-end 
 
-In addition, if you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/get-started-stakeholder.md) so that they can view work items and dashboards.  
+If you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/access-levels.md) so that they can view work items and dashboards.  
 
 
 <a id="email-print-send-links"></a>
 
-Some of the most common ways information is shared within a team or across teams is by emailing lists or links to work items.  
+
 
 <a id="email-item"></a>
 
