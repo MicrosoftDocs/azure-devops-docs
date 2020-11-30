@@ -6,7 +6,7 @@ description: Configure parallel jobs in Azure Pipelines and pay for them
 ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
-ms.date: 09/22/2020
+ms.date: 11/30/2020
 monikerRange: '>= tfs-2015'
 ---
 
