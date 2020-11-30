@@ -144,5 +144,5 @@ See [Troubleshoot connection](troubleshoot-connection.md).
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Azure DevOps Support](https://azure.microsoft.com/support/devops/)
+- [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html)
 - [Live chat](https://visualstudio.microsoft.com/vs/support/#talktous) (English only)
