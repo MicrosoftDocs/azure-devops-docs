@@ -131,12 +131,22 @@ Open a work item and click one of the Links tab. From the links control tab you 
 <a id="team-explorer-link" />
 If you primarily work in Visual Studio or Team Explorer, and want to link work items, you can do so in a number of ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.  
 
-Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.
+Open a work item and choose the **Links** tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.
 
 ![Work item form link toolbar controls](media/IC673344.png)  
 
+
+**Visual Studio 2017-2019/Team Explorer** 
+
+The work item form opens in the web portal for Visual Studio 2017 and later versions. Work items aren't available from Visual Studio 2019 under the following conditions:   
+* If you are connected to a GitHub or third-party Git repository. 
+* If you are set to use the new Git Tool for Visual Studio 2019 as described in [New Git experience in Visual Studio (Preview)](/visualstudio/ide/git-with-visual-studio).  
+ 
+ 
+
 #### [Team Explorer Everywhere](#tab/tee/)
-Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, delete a link, or open the linked object.
+
+Open a work item and choose the **Links** tab. From the links control tab you can link to new or existing work items, delete a link, or open the linked object.
 
 ![Link control options (Team Explorer, Eclipse)](media/IC775501.png)  
 
@@ -147,6 +157,7 @@ From the Query Results view, you can link a work item to a new or existing work 
 ![Link to an existing work item](media/IC588289.png)
 
 * * *
+
 ## Parent-child work item links
 
 These features let you quickly link or change links that use the parent-child link type:
@@ -169,7 +180,7 @@ The following image shows the full set of link types used in linking test manage
 
 ![Link types used to link test objects](media/link-tracking-work-item-test-case-link-types.png)  
 
-For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases?view=azure-devops). 
+For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases). 
 
 **Test case work item form (TFS 2015)**
 
