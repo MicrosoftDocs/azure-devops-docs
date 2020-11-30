@@ -128,7 +128,7 @@ In this example, we grant members assigned to the Test Admin group permissions t
 ::: moniker-end    
 
 * * *
-* 
+
 ::: moniker range=">= tfs-2017 < azure-devops"
 
 In this example, we grant members assigned to the Test Admin group permissions to delete test runs.   

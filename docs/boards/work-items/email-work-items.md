@@ -34,7 +34,7 @@ Here's a list of the most common ways in which teams share information and plans
       **Web portal**
    :::column-end:::
    :::column span="":::
-      **Visual Studio**
+      **Visual Studio 2015-2017**
    :::column-end:::
    :::column span="":::
       **TEE (Eclipse)**
@@ -114,6 +114,16 @@ Here's a list of the most common ways in which teams share information and plans
 :::row-end:::
 ::: moniker-end 
 ---
+
+
+**Visual Studio 2019/Team Explorer** 
+
+The tasks/features listed in the table aren't available when you are connected to a GitHub or third-party Git repository. Also, they aren't available from Visual Studio 2019 under the following conditions:   
+
+* If you are set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
+* If you are set to use the new Git Tool as described in [New Git experience in Visual Studio (Preview)](/visualstudio/ide/git-with-visual-studio).  
+ 
+
 
 
 ::: moniker range="< azure-devops"
