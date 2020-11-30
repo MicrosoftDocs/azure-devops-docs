@@ -460,7 +460,7 @@ steps:
     displayName: Caching Docker image
 
   - script: |
-      docker load $(Pipeline.Workspace)/docker/cache.tar
+      docker load < $(Pipeline.Workspace)/docker/cache.tar
     condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
 
   - script: |
