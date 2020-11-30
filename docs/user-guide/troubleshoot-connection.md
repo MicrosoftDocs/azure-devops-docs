@@ -48,7 +48,7 @@ The most common error page is the *401 Not Authorized* error, which occurs when 
 * Your identity doesn't have enough memberships to access the resource. For example, membership to the Reader/Contributors group.
 * Your identity is a B2B guest in the tenant, and the invitation hasn't been accepted.
 
-If you think you're a member of the organization, but are blocked by this error page, [contact customer support](https://support.microsoft.com/).
+If you think you're a member of the organization, but are blocked by this error page, [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ### Scenario 1
 
@@ -83,7 +83,7 @@ Your personal Microsoft account doesn't have access, but your Azure AD account d
 
 ### Mitigation
 
-When you get redirected back to the original sign-in page, we recommend that you clear all cookies, and then reattempt to sign in. If that doesn't fix the issue, contact [customer support](https://support.microsoft.com/).
+When you get redirected back to the original sign-in page, we recommend that you clear all cookies, and then reattempt to sign in. If that doesn't fix the issue, [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ::: moniker-end
 

@@ -289,7 +289,7 @@ your review and education.
 - [Azure DevOps credential storage](credential-storage.md)
 - [Azure DevOps data location](data-location.md)
 - [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
-- [Azure DevOps support](https://azure.microsoft.com/support/devops/)
+- [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html)
 - [Developer Services Agreement](../../user-guide/services.md)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
