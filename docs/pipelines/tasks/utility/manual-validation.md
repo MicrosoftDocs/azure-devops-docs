@@ -47,7 +47,7 @@ Note that for the task to run completely, the timeout of the job should be highe
 When the Manual validation task is activated during a pipeline, it displays
 a message bar containing  a link that opens the Manual validation dialog containing the instructions.
 After carrying out the manual steps, the administrator or user can choose to resume the deployment, or reject it.
-Users with **Queue Build** permission on the stage can resume or reject the manual intervention.
+Users with **Queue builds** permission on the pipeline can resume or reject the task.
 
 ## Example
 
