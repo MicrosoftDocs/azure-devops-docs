@@ -1,6 +1,6 @@
 ---
 title: Manual Validation task 
-description: Pause an YAML pipeline run in a stage
+description: Pause a YAML pipeline run in a stage
 ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
 ms.topic: reference
 ms.custom: seodec18
@@ -40,7 +40,7 @@ send email notifications to users and user groups when it is awaiting a review,
 and specify the automatic response (reject or resume) after a configurable
 timeout occurs.
 
-Note that for the task to run completely, the timeout of the job should be higher than that of the  task . See [default job timeout values](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#timeouts). 
+Note that for the task to run completely, the timeout value of the job should be higher than the timeout value of the  task. See [default job timeout values](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#timeouts). 
 
 
 > You can use variables to specify email addresses in the notifyUsers parameter.
@@ -48,7 +48,7 @@ Note that for the task to run completely, the timeout of the job should be highe
 When the Manual validation task is activated during a pipeline, it displays
 a message bar containing  a link that opens the Manual validation dialog containing the instructions.
 After carrying out the manual steps, the administrator or user can choose to resume the deployment, or reject it.
-Users with **Queue builds** permission on the pipeline can resume or reject the task.
+Users with 'Queue builds' permission on the pipeline can resume or reject the task.
 
 ## Example
 
