@@ -39,13 +39,36 @@ send email notifications to users and user groups when it is awaiting a review,
 and specify the automatic response (reject or resume) after a configurable
 timeout occurs.
 
-Note that for the task to run completely, the timeout of the job should be higher than that of the timeout of the task . See [default job timeout values](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#timeouts). 
+Note that for the task to run completely, the timeout of the job should be higher than that of the  task . See [default job timeout values](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#timeouts). 
 
 
-> You can use built-in and custom variables to generate portions of your instructions.
+> You can use variables to specify email addresses in the notifyUsers parameter.
 
 When the Manual validation task is activated during a pipeline, it displays
 a message bar containing  a link that opens the Manual validation dialog containing the instructions.
 After carrying out the manual steps, the administrator or user can choose to resume the deployment, or reject it.
 Users with **Queue Build** permission on the stage can resume or reject the manual intervention.
 
+## Example
+
+#### [YAML](#tab/yaml/)
+```yaml
+  jobs:  
+  - job: waitForValidation
+    displayName: Wait for external validation  
+    pool: server    
+    timeoutInMinutes: 0
+    steps:   
+    - task: ManualValidation@0
+      timeoutInMinutes: 0
+      inputs:
+        notifyUsers: |
+          test@test.com
+          example@example.com
+        instructions: 'Please validate the build configuration and resume'
+        onTimeout: 'resume'
+```
+   
+#### [Classic](#tab/classic/)
+
+This task is not supported in classic pipelines.
