@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
-ms.date: 11/11/2020
+ms.date: 11/30/2020
 ---
 
 # Use templates to add and update work items 

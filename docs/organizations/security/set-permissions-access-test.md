@@ -118,12 +118,12 @@ In this example, we grant members assigned to the Test Admin group permissions t
 #### [Preview page](#tab/preview-page) 
 
 > [!div class="mx-imgBorder"]  
-> ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-project-level-test-permissions-new-ui.png)  
+> ![Set project-level test permissions for a custom group, Team Admin preview page.](media/test-permissions/set-project-level-test-permissions-new-ui.png)  
 
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]  
-> ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-project-level-test-permissions-old-ui.png)  
+> ![Set project-level test permissions for a custom group, Team Admin current page.](media/test-permissions/set-project-level-test-permissions-old-ui.png)  
 
 ::: moniker-end    
 
