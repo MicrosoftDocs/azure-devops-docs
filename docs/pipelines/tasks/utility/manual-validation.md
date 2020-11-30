@@ -19,6 +19,7 @@ Use this task in a YAML pipeline to pause a  run within a stage, typically to pe
 
 This task is supported only in YAML pipelines. Can be used only in an [agentless job](../../process/phases.md#server-jobs) of a YAML pipeline. 
 
+
 ## Arguments
 
 | Parameter | Comments |
