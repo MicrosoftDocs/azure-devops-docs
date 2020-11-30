@@ -13,7 +13,7 @@ ms.date: 11/30/2020
 
 **Azure Pipelines**
 
-Use this task in a YAML pipeline to pause a  run within a stage, typically to perform some manual actions or validations, and the resume/reject the task.
+Use this task in a YAML pipeline to pause a  run within a stage, typically to perform some manual actions or validations, and then resume/reject the run.
 
 ## Demands
 
@@ -47,8 +47,8 @@ You can specify the timeout value for the task using the `timeoutInMinutes` para
 
 When the Manual validation task is activated during a pipeline, it displays
 a message bar containing  a link that opens the Manual validation dialog containing the instructions.
-After carrying out the manual steps, the administrator or user can choose to resume the deployment, or reject it.
-Users with 'Queue builds' permission on the pipeline can resume or reject the task.
+After carrying out the manual steps, the administrator or user can choose to resume the run, or reject it.
+Users with 'Queue builds' permission on the pipeline can resume or reject the run.
 
 ## Example
 
