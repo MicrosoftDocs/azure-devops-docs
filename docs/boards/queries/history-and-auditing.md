@@ -48,7 +48,13 @@ You can use either the web portal or Team Explorer to view the history of a work
 <a id="tee-query-history" />
 <a id="team-explorer" />
 
-<strong>Visual Studio 2015/Team Explorer and Team Explorer Everywhere</strong>
+
+The **Query Editor** isn't available when you are connected to a GitHub or third-party Git repository. Also, it isn't available from Visual Studio 2019 under the following conditions:   
+* If you are set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](../work-items/set-work-item-experience-vs.md).  
+* If you are set to use the new Git Tool as described in [New Git experience in Visual Studio (Preview)](/visualstudio/ide/git-with-visual-studio).  
+ 
+
+**Visual Studio/Team Explorer and Team Explorer Everywhere**
 
 ![Screenshot of Query Editor to Search for items based on words contained in the History field in Team Explorer.](media/hist-audit-query-team-explorer.png) 
 
