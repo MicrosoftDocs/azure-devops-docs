@@ -97,8 +97,8 @@ This option should be used when tests within an assembly have dependencies
 or utilize `AssemblyInitialize` and `AssemblyCleanup`, or `ClassInitialize` and `ClassCleanup` methods,
 to manage state in your test code. 
 
-## Run tests in parallel in build pipelines
-If you have a large test suite or long-running integration tests to run in your build pipeline,
+## Run tests in parallel in classic build pipelines
+If you have a large test suite or long-running integration tests to run in your classic build pipeline,
 use the following steps.
 
 > [!NOTE]
@@ -150,7 +150,7 @@ For more information, see [YAML schema - Job](../yaml-schema.md#job).
 
 ::: moniker-end
 
-## Run tests in parallel in release pipelines
+## Run tests in parallel in classic release pipelines
 
 Use the following steps if you have a large test suite or long-running functional tests
 to run after deploying your application.
