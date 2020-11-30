@@ -156,7 +156,7 @@ The user making the UserType change must have the following items:
    ![Check UserType in Azure portal](media/faq/check-user-type-in-azure-portal.png)
 
 4. Open an Administrative Windows PowerShell prompt.
-5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, pictured as follows. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) page.
+5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0&preserve-view=true) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, pictured as follows. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) page.
 
    ![Administrator action in Windows PowerShell](media/faq/Administrator-action-Windows-PowerShell.png)
 
