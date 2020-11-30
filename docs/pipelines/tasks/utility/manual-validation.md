@@ -58,10 +58,10 @@ Users with 'Queue builds' permission on the pipeline can resume or reject the ta
   - job: waitForValidation
     displayName: Wait for external validation  
     pool: server    
-    timeoutInMinutes: 0
+    timeoutInMinutes: 4320 # job times out in 3 days
     steps:   
     - task: ManualValidation@0
-      timeoutInMinutes: 0
+      timeoutInMinutes: 1440 # task times out in 1 day
       inputs:
         notifyUsers: |
           test@test.com
