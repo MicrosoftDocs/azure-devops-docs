@@ -8,7 +8,7 @@ ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
 ms.date: 02/07/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 # Default TFVC permissions
 

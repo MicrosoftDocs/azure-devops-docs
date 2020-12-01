@@ -4,7 +4,7 @@ description: Easily integrate with Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/13/2020

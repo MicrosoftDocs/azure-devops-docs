@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.custom: has-adal-ref
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 09/29/2020
 ---
 

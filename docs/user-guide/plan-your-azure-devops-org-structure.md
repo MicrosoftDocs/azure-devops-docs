@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 robots: NOINDEX, NOFOLLOW
 ms.topic: Conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 04/22/2019
 ---
 

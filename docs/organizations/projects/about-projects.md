@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 10/02/2020
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # About projects and scaling your organization
