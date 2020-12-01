@@ -26,8 +26,6 @@ Some preview features provide access to entire new functionality. Others, such a
 > [!NOTE]   
 > You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to Azure DevOps Server. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
 
-Some preview features provide access to entire new functionality. Others, such as the New Wiki experience, reflect a change to the user interface, but little or no change in functionality. 
-
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/version-selector-minimize.md)] 

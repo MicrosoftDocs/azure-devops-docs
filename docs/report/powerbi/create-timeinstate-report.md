@@ -113,7 +113,7 @@ The following steps will help you resolve this issue.
     > [!div class="mx-imgBorder"]  
     > ![Data view, Select state field](media/time-in-state-state-field-sort.png)
 
-4. From the **Modeling** tab, choose **Sort by Column** and then select the *State Sort Order* field.
+4. From the **Column Tools** tab (Data view), choose **Sort by Column** and then select the *State Sort Order* field.
 
     > [!div class="mx-imgBorder"]  
     > ![Modeling tab, Sort by Column, Choose State Sort Order](media/time-in-state-state-order-sort.png)
