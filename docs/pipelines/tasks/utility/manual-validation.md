@@ -31,7 +31,7 @@ This task is supported only in YAML pipelines. Can be used only in an [agentless
 
 The **Manual Validation** task allows you to pause a pipeline run within a stage, typically to perform some
 manual steps or actions, and then continue with the pipeline. For example, the user may
-need to manually validate  certain deployment configurations before the pipeline starts a long running compuational intensive job.
+need to manually validate  certain deployment configurations before the pipeline starts a long running computational intensive job.
 
 The **Manual Validation** task configuration includes an **instructions** parameter that
 can be used to provide related information, or to specify the manual steps
