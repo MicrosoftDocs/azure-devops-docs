@@ -12,7 +12,7 @@ Historical graphs for agent pools enables you to view jobs running in your agent
 
 ## Pool consumption report
 
-Historical graphs for agents pools is displayed in the **Pool consumption report** which is on the **Analytics** tab for the agent pool. To access agent pool settings, choose **Organization settings**, **Pipelines**, **Agent pools**, or **Project settings**, **Pipeline**, **Agent pools**. Choose the desired pool, and view the **Analytics** tab.
+Historical pool usage data is displayed in the **Pool consumption report** which is on the **Analytics** tab for the agent pool. To access agent pool settings, choose **Organization settings**, **Pipelines**, **Agent pools**, or **Project settings**, **Pipeline**, **Agent pools**. Choose the desired pool, and view the **Analytics** tab.
 
 :::image type="content" source="media/historical-graph-pools/historical-graph-self-hosted.png" alt-text="Self-hosted agent pool historical graph":::
 
