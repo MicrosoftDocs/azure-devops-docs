@@ -32,10 +32,10 @@ There are several types of charts that are displayed in the **Pool consumption r
 
 | Chart type | Description | Agent pool type|
 |------------|-------------|----------------|
-| Public hosted concurrency | Displays concurrency, queued jobs, and running jobs | Microsoft-hosted |
-| Private hosted concurrency | Displays concurrency, queued jobs, and running jobs | Microsoft-hosted |
-| Agent usage | Displays online agents, queued jobs, and running jobs | Scale set agent and self-hosted |
-| Private self-hosted concurrency | Displays concurrency, queued jobs, and running jobs | Scale set agent and self-hosted |
+| Public hosted concurrency | Displays concurrency, queued jobs, and running jobs for public projects | Microsoft-hosted |
+| Private hosted concurrency | Displays concurrency, queued jobs, and running jobs for private projects | Microsoft-hosted |
+| Agent usage | Displays online agents, queued jobs, and running jobs for self-hosted agents | Scale set agent and self-hosted |
+| Private self-hosted concurrency | Displays concurrency, queued jobs, and running jobs for private self-hosted projects | Scale set agent and self-hosted |
 
 **Concurrency** refers to the number of parallel jobs in the organization that apply to the project and agent pool type. For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
 
