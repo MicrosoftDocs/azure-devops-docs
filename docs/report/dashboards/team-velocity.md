@@ -218,7 +218,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements in Azure DevOps Server 2019](../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
 2. Open the velocity chart.  
 
