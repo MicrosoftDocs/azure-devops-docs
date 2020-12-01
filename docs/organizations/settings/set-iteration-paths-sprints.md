@@ -7,7 +7,7 @@ ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 10/21/2020
 ---
 

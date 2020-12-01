@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
 ms.date: 11/05/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Troubleshoot connecting to a project

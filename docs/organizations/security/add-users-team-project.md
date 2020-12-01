@@ -6,7 +6,7 @@ ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 08/25/2020
 ---
 

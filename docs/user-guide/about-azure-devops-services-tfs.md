@@ -10,7 +10,7 @@ ms.assetid: 458FAFD1-98B0-4B74-B8E7-F2C73D4EED6B
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
-monikerRange: '>= tfs-2013' 
+monikerRange: '<= azure-devops' 
 ms.date: 11/13/2019 
 ---
 

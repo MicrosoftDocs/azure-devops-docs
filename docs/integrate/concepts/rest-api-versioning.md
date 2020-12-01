@@ -4,7 +4,7 @@ description: Learn how versioning works for REST APIs for Azure DevOps and TFS
 ms.assetid: 5fc6efd4-9947-40f2-b4f6-9695a24de87c
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 09/29/2020

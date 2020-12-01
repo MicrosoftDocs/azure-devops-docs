@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 08/17/2020 
 ---
 

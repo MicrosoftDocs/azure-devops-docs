@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 11/13/2020
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Quickstart: Code with Git
