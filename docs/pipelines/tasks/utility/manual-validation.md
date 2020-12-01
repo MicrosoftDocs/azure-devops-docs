@@ -40,10 +40,13 @@ send email notifications to users and user groups when it is awaiting a review,
 and specify the automatic response (reject or resume) after a configurable
 timeout occurs.
 
-You can specify the timeout value for the task using the `timeoutInMinutes` parameter available in control options. Note that for the task to run completely, the timeout value of the job should be higher than the timeout value of the task. See [default job timeout values](../../process/phases.md#timeouts). 
+You can specify the timeout value for the task using the `timeoutInMinutes` parameter available in control options. 
 
+> [!NOTE]
+> For the task to run completely, the timeout value of the job should be higher than the timeout value of the task. See [default job timeout values](../../process/phases.md#timeouts). 
 
-> You can use variables to specify email addresses in the notifyUsers parameter.
+> [!TIP]
+> You can use variables to specify email addresses in the `notifyUsers` parameter.
 
 When the Manual validation task is activated during a pipeline, it displays
 a message bar containing  a link that opens the Manual validation dialog containing the instructions.
