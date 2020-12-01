@@ -272,24 +272,6 @@ When you check out multiple repositories, some details about the `self` reposito
 When you use multi-repo triggers, some of those variables have information about the triggering repository instead.
 Details about all of the repositories consumed by the job are available as a [template context object](../process/templates.md#context) called `resources.repositories`.
 
-For example, to get the ref of a non-`self` repository, you could write a pipeline like this:
-
-```yaml
-resources:
-  repositories:
-  - repository: other
-    type: git
-    name: MyProject/OtherTools
-
-variables:
-  tools.ref: $[ resources.repositories['other'].ref ]
-
-steps:
-- checkout: self
-- checkout: other
-- bash: echo "Tools version: $TOOLS_REF"
-```
-
 ## FAQ
 
 * [Why can't I check out a repository from another project? It used to work.](#why-cant-i-check-out-a-repository-from-another-project-it-used-to-work)
