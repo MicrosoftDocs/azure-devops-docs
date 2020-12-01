@@ -602,6 +602,8 @@
       href: tasks/utility/jenkins-download-artifacts.md
     - name: Manual Intervention
       href: tasks/utility/manual-intervention.md
+    - name: Manual Validation
+      href: tasks/utility/manual-validation.md
     - name: PowerShell
       href: tasks/utility/powershell.md
     - name: Publish Build Artifacts
