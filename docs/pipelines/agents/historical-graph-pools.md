@@ -37,3 +37,12 @@ There are several types of charts that are displayed in the **Pool consumption r
 | Agent usage | Displays online agents, queued jobs, and running jobs | Scale set agent and self-hosted |
 | Private self-hosted concurrency | Displays concurrency, queued jobs, and running jobs | Scale set agent and self-hosted |
 
+## FAQ
+
+### Why are there more running jobs than there are agents or concurrency?
+
+Pool data is aggregated at a granularity of 10 minutes, and the number of running jobs is plotted based on the maximum number of running jobs for the specified interval of time. Each running job is counted separately, and if multiple jobs complete during the 10 minute interval they contribute to the total count of running jibs for that interval.
+
+### What is the difference between viewing the graphs in Project settings vs Organization settings?
+
+The graphs are the same, but when you access agent pools through Project settings you only see the pools that have run jobs from pipelines in your project.
