@@ -7,7 +7,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 10/09/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # About notifications

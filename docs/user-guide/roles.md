@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 02/24/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Software development roles supported by Azure DevOps

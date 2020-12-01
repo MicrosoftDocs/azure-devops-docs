@@ -4,7 +4,7 @@ ms.topic: conceptual
 title: Use the Cross-platform CLI for Azure DevOps 
 description: Use the Cross-platform CLI for Azure DevOps, previously TFS Cross Platform (tfx) CLI, using PAT.
 ms.assetid: 6dc7f977-4b62-4bd6-b77a-1c6cade1ffa8
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/20/2020
