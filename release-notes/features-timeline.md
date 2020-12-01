@@ -4322,7 +4322,7 @@ Versions in the "Server" column are linked to the appropriate download location.
     </tbody>
 </table>
 
-## Server Build Numbers
+## Azure DevOps Server Build Numbers
 
 <table>
 <thead>
@@ -4333,6 +4333,11 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
 </thead>
 <tbody>
+        <tr>
+          <td><a href="https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020" data-raw-source="[2020 RTW](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020)">2020 RTW</a></td>
+          <td>Oct. 6, 2020</td>
+          <td>18.170.30525.1</td>
+        </tr>
         <tr>
           <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1)">2019.1.1</a></td>
           <td>Dec. 10, 2019</td>
