@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: reference
 ms.date: 05/28/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # What are the features in Azure DevOps?

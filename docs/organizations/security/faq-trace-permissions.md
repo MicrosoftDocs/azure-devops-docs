@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 ms.date: 06/04/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Trace permissions

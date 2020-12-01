@@ -5,7 +5,7 @@ ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.custom: has-adal-ref
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 04/06/2020

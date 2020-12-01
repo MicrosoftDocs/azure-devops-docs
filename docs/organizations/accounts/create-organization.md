@@ -9,7 +9,7 @@ ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
 ms.date: 05/31/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Create an organization or project collection

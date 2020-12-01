@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
 ms.author: kaelli
 ms.date: 04/16/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # FAQs about signing up and getting started

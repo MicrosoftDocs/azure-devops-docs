@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 11/08/2019
 ms.topic: overview
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # What is Azure DevOps?

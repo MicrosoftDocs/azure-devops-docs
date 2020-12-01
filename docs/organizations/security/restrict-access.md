@@ -7,7 +7,7 @@ ms.topic: Conceptual
 ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 07/09/2020
 ---
 

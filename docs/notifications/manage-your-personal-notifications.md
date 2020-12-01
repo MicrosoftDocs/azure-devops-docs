@@ -8,7 +8,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: How-to
 ms.date: 10/09/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Manage your personal notifications

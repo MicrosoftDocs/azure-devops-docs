@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ms.date: 12/19/2017
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 # Troubleshoot creating a project
 
