@@ -48,4 +48,4 @@ Pool data is aggregated at a granularity of 10 minutes, and the number of runnin
 
 ### What is the difference between viewing the graphs in Project settings vs Organization settings?
 
-The graphs are the same, but when you access agent pools through Project settings you only see the pools that have run jobs from pipelines in your project.
+The graphs are the same, but when you access agent pools through **Project settings** you only see the pools that have run jobs from pipelines in your project.
