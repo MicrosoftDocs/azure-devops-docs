@@ -37,6 +37,9 @@ There are several types of charts that are displayed in the **Pool consumption r
 | Agent usage | Displays online agents, queued jobs, and running jobs | Scale set agent and self-hosted |
 | Private self-hosted concurrency | Displays concurrency, queued jobs, and running jobs | Scale set agent and self-hosted |
 
+**Concurrency** refers to the number of parallel jobs in the organization that apply to the project and agent pool type. For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
+
+**Online agents** refers to the number of agents online in a [self-hosted agent pool](agents.md#self-hosted-agents.md) or a [scale set agent pool](scale-set-agents.md).
 ## FAQ
 
 ### Why are there more running jobs than there are agents or concurrency?
