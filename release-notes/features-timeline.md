@@ -69,7 +69,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 ## Current features
 
 The features timeline lists significant features delivered to Azure DevOps Services and the corresponding version of Azure DevOps Server.
-Versions in the "Server" column are linked to the appropriate download location. You can also [view the build numbers for each version](#server-build-numbers). Versions in italics are planned for the future and subject to change.
+Versions in the "Server" column are linked to the appropriate download location. You can also [view the build numbers for each version](#azure-devops-server-build-numbers). Versions in italics are planned for the future and subject to change.
 
 <table>
     <thead>
@@ -4334,7 +4334,7 @@ Versions in the "Server" column are linked to the appropriate download location.
 </thead>
 <tbody>
         <tr>
-          <td><a href="https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020" data-raw-source="[2020 RTW](https://docs.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020)">2020 RTW</a></td>
+          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020" data-raw-source="[2020 RTW](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020)">2020 RTW</a></td>
           <td>Oct. 6, 2020</td>
           <td>18.170.30525.1</td>
         </tr>
