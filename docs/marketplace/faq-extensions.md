@@ -146,8 +146,7 @@ A: Depending on the support you need, choose from the following links:
 
 * Billing questions - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
 * Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
-* Help with Azure DevOps - [Azure DevOps support](https://azure.microsoft.com/support/devops/)
-* Help with Team Foundation Server - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support)
+* Help with Azure DevOps - [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html)
 * General Marketplace help - [Contact the Marketplace team](mailto:vsmarketplace@microsoft.com)
 
 ## Related articles
