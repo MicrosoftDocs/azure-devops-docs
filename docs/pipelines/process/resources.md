@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to use resources with YAML definitions.
 ms.topic: conceptual
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 monikerRange: azure-devops
 ---
 
@@ -705,7 +705,9 @@ To provide end to end traceability, user should be able to track which CD pipeli
 ![CD pipelines info in CI pipeline](media/cdinfo-in-ci-pipelines.png)
 
 ### YAML resource trigger issues support and traceability
-It can be confusing when pipeline triggers fail to execute. To help better understand this, we've added a new menu item in the pipeline definition page called **Trigger Issues** where you can learn why triggers are not executing.
+It can be confusing when pipeline triggers fail to execute. To help better understand this, we've added a new menu item in the pipeline definition page called **Trigger Issues** where you can learn why triggers are not executing. To access this page, open your pipeline history. Select **Trigger Issues** in the menu. 
+
+:::image type="content" source="media/triggermenu.png" alt-text="Select Trigger Issues":::
 
 Resource triggers can fail to execute for two reasons.
 * If the source of the service connection provided is invalid, or if there are any syntax errors in the trigger, the trigger will not be configured at all. These are surfaced as errors.
