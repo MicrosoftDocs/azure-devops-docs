@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
 title: Basic styles for widgets | Extensions for Azure DevOp
-description: Styles from Widget SDK to be used in widgets on dashboards in Azure DevOps and Team Foundation Server (TFS).
+description: Styles from Widget SDK to be used in widgets on dashboards in Azure DevOps.
 ms.assetid: E5CB346F-E3EA-4A47-B10C-FFC300766585
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'

@@ -1,7 +1,7 @@
 ---
 title: How notification email recipients are determined
 titleSuffix: Azure DevOps 
-description: Describes how email recipients are determined for notifications and events in Azure DevOps and Team Foundation Server (TFS)
+description: Describes how email recipients are determined for notifications and events in Azure DevOps.
 ms.technology: devops-collab
 ms.reviewer: wismythe
 ms.author: chcomley

@@ -10,7 +10,7 @@ author: chcomley
 ms.date: 06/01/2017
 ---
 
-# Release Management
+# Release management
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 

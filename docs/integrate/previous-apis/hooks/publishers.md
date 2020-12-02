@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Service Hook Publishers | REST API Reference for Team Foundation Server
-description: Work with service hook publishers programmatically using the REST APIs for Team Foundation Server.
+title: Service Hook Publishers | REST API Reference for Azure DevOps Server
+description: Work with service hook publishers programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: F61EDE31-0F8D-4C4E-AE03-B4480C51C5FD
 ms.topic: article
 ms.author: chcomley
@@ -16,7 +16,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [API_version](../_data/version.md)]
 
-A publisher is a service that publishes events to service hooks. For example, Team Foundation Server is a publisher which sends code, build, work item, and other events.
+A publisher is a service that publishes events to service hooks. For example, Azure DevOps Server is a publisher which sends code, build, work item, and other events.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 

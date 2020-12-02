@@ -271,7 +271,7 @@ For more information, see [Azure DevOps extensibility points](/previous-versions
 
 ### Examples
 
-#### Example 1: Extension that works with Azure DevOps and TFS
+#### Example 1: Extension that works with Azure DevOps
 ```json
 {
     "targets": [
@@ -294,9 +294,9 @@ For more information, see [Azure DevOps extensibility points](/previous-versions
 }
 ```
 
-Installation targets can also be used in the manifest of integrations (i.e. products, apps, or tools that work with, but do not install into, Azure DevOps or TFS. For example:
+Installation targets can also be used in the manifest of integrations (i.e. products, apps, or tools that work with, but do not install into, Azure DevOps. For example:
 
-#### Example 3: Integration that works with Azure DevOps and TFS
+#### Example 3: Integration that works with Azure DevOps
 
 ```json
 {

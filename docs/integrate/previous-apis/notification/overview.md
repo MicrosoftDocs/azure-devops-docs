@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Notification overview | REST API Reference for Team Foundation Server
-description: Learn about notifications and the Notification APIs in the REST APIs for Team Foundation Server.
+title: Notification overview | REST API Reference for Azure DevOps Server
+description: Learn about notifications and the Notification APIs in the REST APIs for Azure DevOps Server.
 ms.assetid: 70F8A8F8-474C-4664-A26C-A5DC714E6242
 ms.topic: article
 ms.author: chcomley

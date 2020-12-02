@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Git | REST API Reference for Team Foundation Server
-description: Work with Git programmatically using the REST APIs for Team Foundation Server.
+title: Git | REST API Reference for Azure DevOps Server
+description: Work with Git programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: 19DFAB3F-274F-41DF-ACD5-93DCEE626121
 ms.topic: article
 ms.author: chcomley
@@ -16,7 +16,7 @@ ms.date: 06/22/2017
 
 [!INCLUDE [API_version](../_data/version.md)]
 
-Use these APIs to work with Git repositories in VSTS/TFS.
+Use these APIs to work with Git repositories in Azure DevOps Server.
 Repositories contain objects representing core Git concepts:
 
 - blobs (files)
@@ -131,5 +131,5 @@ In case you're looking for something not found in the **Common tasks** section a
 * [Trees](./trees.md)
 
 >[!NOTE]
->For more information on Git, see [Use Git with Visual Studio and Team Foundation Server](../../../repos/git/overview-2013.md).
+>For more information on Git, see [Use Git with Visual Studio and zure DevOps Server](../../../repos/git/overview-2013.md).
 

@@ -70,7 +70,7 @@ To connect to Azure DevOps with Visual Studio 2008 through Visual Studio 2012:
 
 1.    Start Visual Studio.
 2.    From the **Team** menu or Team Explorer, 
-go to **Connect to Team Foundation Server** > **Select Team Projects** > **Servers**.
+go to **Connect to Azure DevOps Server** > **Select Team Projects** > **Servers**.
 3.    Add your organization ({yourorganization}.visualstudio.com).
 4.    Select your project and prepare connection.
 
