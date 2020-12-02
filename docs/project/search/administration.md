@@ -68,14 +68,6 @@ Non-administrative users can also request the extension is added to Azure DevOps
 For more information, see [Install an extension](../../marketplace/get-tfs-extensions.md) 
 in the Local gallery documentation.
 
-<a name="config-tfs"></a>
-
-## Configure Search
-
-Configure the Search service using the dedicated pages in the Server Configuration Wizard
-as you install Azure DevOps Server. You can also [configure and unconfigure Search](#uninstall-tfs)
-afterwards by running the Server Configuration Wizard again or by launching the Search Configuration Wizard.
-
 <a name="hardware-recommendations"></a>
 
 ### Hardware recommendations
