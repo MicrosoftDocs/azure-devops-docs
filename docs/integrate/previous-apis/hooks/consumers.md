@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Service Hook Consumers | REST API Reference for Team Foundation Server
-description: Work with service hook consumers programmatically using the REST APIs for Team Foundation Server.
+title: Service Hook Consumers | REST API Reference for Azure DevOps Server
+description: Work with service hook consumers programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: B05297FC-F542-42FD-ACDA-E9734974ACBC
 ms.topic: article
 ms.author: chcomley
@@ -10,7 +10,7 @@ author: chcomley
 ms.date: 08/04/2016
 ---
 
-# Service hook consumers for Team Foundation Server
+# Service hook consumers for Azure DevOps Server
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 

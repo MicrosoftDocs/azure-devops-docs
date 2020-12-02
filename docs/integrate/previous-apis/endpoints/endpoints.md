@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Service Endpoints | REST API Reference for Team Foundation Server
-description: Get, create, update and delete endpoints
+title: Service Endpoints | REST API Reference for Azure DevOps Server
+description: Get, create, update and delete endpoints.
 ms.ContentId: 01af664f-d3e9-4331-b1c4-8b323045940b
 ---
 

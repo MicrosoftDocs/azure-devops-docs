@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Service Hook Overview | REST API Reference for Team Foundation Server
-description: Work with service hooks programmatically using the REST APIs for Team Foundation Server.
+title: Service Hook Overview | REST API Reference for TAzure DevOps Server
+description: Work with service hooks programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: 9AFC70D7-D27B-45EF-A374-4A7283BF1E4C
 ms.topic: article
 ms.author: chcomley

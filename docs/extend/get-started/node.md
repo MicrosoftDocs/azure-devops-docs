@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
 title: Develop a web extension for Azure DevOps
-description: Tutorial for creating your first web extension for Azure DevOps and Team Foundation Server (TFS).
+description: Tutorial for creating your first web extension for Azure DevOps.
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -14,7 +14,7 @@ ms.date: 08/12/2020
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../report/includes/version-tfs-2017-through-vsts.md)]
 
-Use extensions to enhance Azure DevOps and Team Foundation Server (TFS) with new web experiences, dashboard widgets, build tasks, and more. You can develop extensions using standard technologies like HTML, JavaScript, and CSS. They're packaged and published to the Visual Studio Marketplace, and can then be installed into an organization.
+Use extensions to enhance Azure DevOps with new web experiences, dashboard widgets, build tasks, and more. You can develop extensions using standard technologies like HTML, JavaScript, and CSS. They're packaged and published to the Visual Studio Marketplace, and can then be installed into an organization.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
@@ -216,7 +216,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 3. Drag and drop your file or select **click** to find your VSIX file, which you created in the previous packaging step, and then choose **Upload**. 
 
-   ![Upload new extension for Azure DevOps or TFS](media/upload-new-extension2.png)
+   ![Upload new extension for Azure DevOps](media/upload-new-extension2.png)
 
    After a few seconds, your extension appears in the list of published extensions. Don't worry, the extension is only visible to you.
 
@@ -224,7 +224,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 ## Install your extension
 
-To test an extension, it must be installed to an organization in Azure DevOps or TFS. Installing requires being the owner of the organization (or having the necessary permissions). Because your extension is private, it must first be shared with the organization you want to install it to.
+To test an extension, it must be installed to an organization in Azure DevOps. Installing requires being the owner of the organization (or having the necessary permissions). Because your extension is private, it must first be shared with the organization you want to install it to.
 
 1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare**.
 
@@ -306,7 +306,7 @@ Changing the manifest loads the extension from your local web server instance. F
 After you change the manifest, deploy and install this debugging extension only once.
 
 > [!NOTE]
-> Run your local web server in SSL mode, because Azure DevOps and TFS demand that the web page is served from a secure source otherwise you obtain an error in browser console during the extension IFRAME loading.
+> Run your local web server in SSL mode, because Azure DevOps demands that the web page is served from a secure source otherwise you obtain an error in browser console during the extension IFRAME loading.
 
 
 ## Next steps

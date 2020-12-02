@@ -1,6 +1,6 @@
 ---
-title: Dashboards and Widgets Overview | REST API Reference for Team Foundation Server 
-description: Work with dashboards and widgets programmatically using the REST APIs for Visual Studio Online.
+title: Dashboards and Widgets Overview | REST API Reference for Azure DevOps Server 
+description: Work with dashboards and widgets programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: 4F24B9FE-28BC-42E4-A07D-B0B34B895812
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'

@@ -35,7 +35,7 @@ If you need to lock down specific areas to a select set of contributors, see [pe
 
 ### Software developers
 
-Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or Team Foundation Version Control (TFVC) repository hosted in Azure DevOps Services or Team Foundation Server (TFS). From the web portal or a supported IDE, they can view repositories, check history, and more. 
+Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or Team Foundation Version Control (TFVC) repository hosted in Azure DevOps . From the web portal or a supported IDE, they can view repositories, check history, and more. 
 
 - To get started with using Git, see one of the following resources: 
 	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md)
@@ -149,18 +149,18 @@ Responsible for configuring collection-level resources. These tasks include:
 
 To get started, see [Settings](../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects).
 
-### TFS administrators
+### Azure DevOps Server administrators
 
-Responsible for installing, upgrading, and maintaining an on-premises TFS deployment, including the:
+Responsible for installing, upgrading, and maintaining an on-premises Azure DevOps Server deployment, including the:
 
-- Install TFS 
-- Update servers running TFS 
+- Install Azure DevOps Server 
+- Update servers running Azure DevOps Server 
 - Manage database backups 
 - Manage server administrative settings and permissions 
 - Build retention policies
 - Add and manage project collections
   
-To get started, see [Server Administration (TFS)](/azure/devops/server/index). 
+To get started, see [Server Administration (Azure DevOps Server)](/azure/devops/server/index). 
 
 ::: moniker-end
 

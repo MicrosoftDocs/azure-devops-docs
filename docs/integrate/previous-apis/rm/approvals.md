@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Release approvals | REST API Reference for Team Foundation Server
-description: Learn how to work with release approvals by using the REST APIs for Team Foundation Server.
+title: Release approvals | REST API Reference for Azure DevOps Server
+description: Learn how to work with release approvals by using the REST APIs for Azure DevOps Server.
 ms.assetid: 70F8A8F8-474C-4664-A26C-A5DC714E6242
 ms.topic: article
 ms.author: chcomley
