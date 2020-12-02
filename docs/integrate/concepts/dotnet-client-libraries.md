@@ -32,7 +32,7 @@ Client libraries are available for .NET developers who build Windows apps and se
 
 
 > [!NOTE]
-> REST-based clients only work with Azure DevOps (not versions previous of TFS 2015)
+> REST-based clients only work with Azure DevOps and TFS 2015 or later.
 > To learn more about extending and integrating with  Azure DevOps using the client libraries,
 > see [Extending Team Foundation](/previous-versions/visualstudio/visual-studio-2013/bb130146(v=vs.120))
 

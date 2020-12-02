@@ -988,7 +988,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Remove a NuGet package from a feed </b></p>
-<p>[Unlist or remove a package]<a href="../artifacts/how-to/delete-and-recover-packages.md" data-raw-source="[Delete packages and recover deleted packages from the recycle bin in Azure Artifacts](../artifacts/how-to/delete-and-recover-packages.md)">Delete packages and recover deleted packages from the recycle bin in Azure Artifacts</a> you no longer want users to discover.</p>
+<p>Unlist or remove a package <a href="../artifacts/how-to/delete-and-recover-packages.md" data-raw-source="[Delete packages and recover deleted packages from the recycle bin in Azure Artifacts](../artifacts/how-to/delete-and-recover-packages.md)">Delete packages and recover deleted packages from the recycle bin in Azure Artifacts</a> you no longer want users to discover.</p>
 
 <p><b>Secure feeds </b></p>
 <p>Control who can <a href="../artifacts/feeds/feed-permissions.md" data-raw-source="[contribute to or consume from a feed](../artifacts/feeds/feed-permissions.md)">contribute to or consume from a feed</a>.</p>
@@ -2213,7 +2213,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Manage administrative permissions </b></p>
-<p>[Add users to one of the following built-in groups] to provide them permissions assigned to that group: </p>
+<p>Add users to one of the following built-in groups to provide them permissions assigned to that group: </p>
 <ul>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Project Administrators](../organizations/security/set-project-collection-level-permissions.md)">Project Administrators</a>, who manage shared features for a project </li>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md)">Project Collection Administrators</a>, who manage collection-level features </li>

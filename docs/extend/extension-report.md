@@ -21,8 +21,8 @@ To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmar
 
 You can view acquisition-related data in this tab for the selected period. 
 * Aggregated acquisition in the selected period for overall acquisition
-* Aggregated acquisition split by extension downloads, Azure DevOps connected install for free extension
-* Aggregated acquisition split by trials, Azure DevOps connected buy for paid extension
+* Aggregated acquisition split by extension downloads Azure DevOps connected install for free extension
+* Aggregated acquisition split by trials Azure DevOps connected buy for paid extension
 * Daily trend of extension page views with acquisition for Azure DevOps and connected server
 * Conversion percentage from page views to acquisition
 

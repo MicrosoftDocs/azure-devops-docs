@@ -138,7 +138,7 @@ Most samples on this site use Personal Access Tokens (PATs), as they're a compac
 For Azure DevOps Server, `instance` is `{server:port}` and by default the port is 8080.
 The default collection is `DefaultCollection`, but can be any collection.
 
-Here's how to get a list of projects from using the default port and collection.
+Here's how to get a list of projects:
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0

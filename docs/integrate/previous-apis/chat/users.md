@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Team Room Users | REST API Reference for TAzure DevOps Server
+title: Team Room Users | REST API Reference for Azure DevOps Server
 description: Work with users in team rooms programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: 6452FEDA-E518-4983-B37B-C50BB17E0047
 ms.topic: article
