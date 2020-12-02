@@ -62,7 +62,7 @@ To accommodate all of this, Azure DevOps resource consumption is expressed in ab
 
 TSTUs will eventually incorporate a blend of:
 
-- [Azure SQL Database DTUs](https://azure.microsoft.com/documentation/articles/sql-database-service-tiers) as a measure of database consumption   
+- [Azure SQL Database DTUs](/azure/azure-sql/database/purchasing-models) as a measure of database consumption   
 - Application tier and job agent CPU, memory, and I/O as a measure of compute consumption   
 - Azure Storage bandwidth as a measure of storage consumption.  
 
@@ -108,17 +108,17 @@ When a user's requests are delayed by a significant amount, that user gets an em
 
 ![Web UI warning banner](./media/rate-limits/web-ui-warning-banner.png)
 
-If the user doesn't have an email address, the notification email will be sent to the members of the project collection 
-administrators group.
+If the user doesn't have an email address, the notification email will be sent to the members of the Project Collection 
+Administrators group.
 The warning banner and the notification email both include links to the Usage page.
-The usage page helps you investigate requests that exceeded thresholds and/or were delayed.
+The Usage page helps you investigate requests that exceeded thresholds and/or were delayed.
 
 Request history on the Usage page is ordered by usage (TSTUs) descending by default.
 Usage is grouped by command into five minute time windows.
 The Count column gives the number of commands in the window.
 Other columns highlight total TSTU usage and delay time.
 
-For members of the project collection administrators group, this same page can be used to investigate the usage of other users.
+For members of the Project Collection Administrators group, this same page can be used to investigate the usage of other users.
 
 ::: moniker range=">= azure-devops-2019"
 

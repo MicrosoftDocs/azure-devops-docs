@@ -164,8 +164,8 @@ All extensions, including extensions from Microsoft, are under a publisher. Anyo
 
     <img src="media/create-publisher.png" alt="Creat publisher" style="border: 1px solid #C3C3C3;" /> 
 
-    >[!NOTE]
-    >Make note of the ID. You need to set it in the manifest file of your extension.
+    > [!NOTE]
+    > Make note of the ID. You need to set it in the manifest file of your extension.
 
 You're now ready to package your extension and publish (upload) it to the Marketplace. Keep this browser window open as you'll return here after you package your extension.
 
@@ -181,17 +181,17 @@ You're now ready to package your extension and publish (upload) it to the Market
     }
     ```     
 
-2. TFX requires the VSS Web Extensions SDK. If you haven't already installed it, open a command prompt and run the following command. 
+2. VSS Web Extensions SDK requires TFX. If you haven't already installed it, open a command prompt and run the following command. 
    
    ```
-   npm install vss-web-extension-sdk --save
+   npm install -g tfx-cli
    ```
 
 
 3. From a command prompt, run the TFX tool's packaging command from your extension directory.
 
    ```
-   tfx extension create
+   npx tfx extension create
    ```
    
 
@@ -220,7 +220,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
    After a few seconds, your extension appears in the list of published extensions. Don't worry, the extension is only visible to you.
 
-   <img src="media/published-extension.png" alt="Upload new extension for Azure DevOps or TFS" style="border: 1px solid #C3C3C3;" /> 
+   <img src="media/published-extension.png" alt="Extension appears in the list of published extensions." style="border: 1px solid #C3C3C3;" /> 
 
 ## Install your extension
 
@@ -228,7 +228,7 @@ To test an extension, it must be installed to an organization in Azure DevOps or
 
 1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare**.
 
-   <img src="media/share-menu.png" alt="Upload new extension for Azure DevOps or TFS" style="border: 1px solid #C3C3C3;" /> 
+   <img src="media/share-menu.png" alt="Select extension and choose Share." style="border: 1px solid #C3C3C3;" /> 
 
 2. Select **Organization**, and then enter the name of your organization. Select **Enter**.
 

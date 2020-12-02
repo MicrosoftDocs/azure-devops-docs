@@ -178,7 +178,6 @@
         "pipelines/reports/**": "devops-cicd-reports",
         "pipelines/repos/**": "devops-cicd-repos",
         "pipelines/scripts/**": "devops-cicd-scripts",
-        "pipelines/security/**": "devops-cicd-security",
         "pipelines/targets/**": "devops-cicd-targets",
         "pipelines/tasks/**": "devops-cicd-tasks",
         "pipelines/test/**": "devops-cicd-test"

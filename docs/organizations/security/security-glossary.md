@@ -8,8 +8,8 @@ ms.topic: conceptual
 ms.custom: has-adal-ref
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 12/04/2018
+monikerRange: '<= azure-devops'
+ms.date: 09/29/2020
 ---
 
 # Security key concepts
@@ -67,23 +67,18 @@ Conditional access provides support for securing Azure DevOps resources backed b
 
 ## Inheritance
 
-Permissions that aren't directly allowed or denied for a user, may be inherited. To learn more, see [About permissions and groups](about-permissions.md).   
+Permissions that aren't directly allowed or denied for a user, may be inherited. To learn more, see [About permissions and inheritance](about-permissions.md).   
 
 <!---
 ## Membership 
 
 -->
 
-
 ## Namespace 
 
 Each family of Azure DevOps resources (work items, Git repositories, an so on) is secured using a different namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag and a set of zero or more ACEs. Each ACE contains an identity descriptor, an allowed permissions bitmask and a denied permissions bitmask. 
 
-For a list of Azure DevOps namespaces, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](/azure/devops/server/command-line/tfssecurity-cmd#permission-namespaces-and-actions). 
-
-For Azure DevOps Services, you can list the namespaces using **az devops security permission namespace list** command. For details, see [Manage tokens and namespaces](manage-tokens-namespaces.md).
-
-
+For a list of Azure DevOps namespaces, see [Security namespace and permission reference](namespace-reference.md).  
 
 ## OAuth 
 
@@ -114,7 +109,7 @@ Personal access tokens (PATs) are alternate passwords that you can use to authen
 
 ## Permission
 
-The assignment made to a user or group to use a feature or function. Permissions are assigned to default security groups. To learn more, see [About permissions and groups](about-permissions.md).
+The assignment made to a user or group to use a feature or function. Permissions are assigned to default security groups. To learn more, see [About permissions and inheritance](about-permissions.md).
 
 ## Permission state
 
@@ -122,7 +117,7 @@ The state assigned to a feature or function to a user's or group's permission. U
 
 ## Security group
 
-A method by which you can organize users and other domain objects to simplify administration of permissions and access. Azure DevOps  support a number of default security groups as well as the ability to create custom groups. To learn more, see [About permissions and groups](about-permissions.md).
+A method by which you can organize users and other domain objects to simplify administration of permissions and access. Azure DevOps  support a number of default security groups as well as the ability to create custom groups. To learn more, see [About permissions and inheritance](about-permissions.md).
 
 ## Security role
 
@@ -132,11 +127,16 @@ A security model that limits actions based on membership within a role. To learn
 
 An account used to monitor or manage select services, such as build or test services.
 
+## Service principal
+
+A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. When an application is given permission to access resources in a tenant (upon registration or consent), a service principal object is created. To learn more, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
+
+
 ## Secure Sockets Layer (SSL)
 
 SSL is a protocol used to strengthen the security of cloud-hosted and on-premises applications by configuring it to use Hypertext Transfer Protocol Secure (HTTPS) with Secure Sockets Layer (SSL).
 
-SSL is always used to protect Azure DevOps data. To learn more, see [Data Protection Overview](/azure/devops/organizations/security/data-protection).
+SSL is always used to protect Azure DevOps data. To learn more, see [Data Protection Overview](./data-protection.md).
 
 For on-premises deployments, SSL is optional. To learn more, see [Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server](/azure/devops/server/admin/setup-secure-sockets-layer).
 
@@ -173,7 +173,7 @@ For Azure DevOps Server, see [Use TFSSecurity to manage groups and permissions f
 
 ## Valid users
 
-Valid users are users that are recognized by Azure DevOps as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they are automatically added to one of the valid user groups. To learn more, see [About permissions and groups](about-permissions.md).
+Valid users are users that are recognized by Azure DevOps as being able to connect to the account or a project. When you add accounts of users directly to a built-in group or through a Windows, Active Directory, or Azure Active Directory group, they are automatically added to one of the valid user groups. To learn more, see [About permissions and inheritance](about-permissions.md).
 
 
 
@@ -181,6 +181,3 @@ Valid users are users that are recognized by Azure DevOps as being able to conne
 
 - [Permissions lookup guide](permissions-lookup-guide.md)
 - [REST API Security](/rest/api/azure/devops/security)
-
-
-

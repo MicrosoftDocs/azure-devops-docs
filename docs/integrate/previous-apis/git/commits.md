@@ -37,8 +37,8 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | itemPath   | string   | /       | Path of an item in the repository.
 | committer  | string   |         | Name of the person who committed the change.
 | author     | string   |         | Name of the author.
-| fromDate   | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Start date to search from.
-| toDate     | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | End date to search to.
+| fromDate   | [DateTime](/dotnet/standard/base-types/standard-date-and-time-format-strings) |         | Start date to search from.
+| toDate     | [DateTime](/dotnet/standard/base-types/standard-date-and-time-format-strings) |         | End date to search to.
 | $skip      | integer  | 0       | Number of commits to skip.
 | $top       | integer  | 100     | Number of commits to return.
 
@@ -2315,5 +2315,3 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
   ]
 }
 ```
-
-

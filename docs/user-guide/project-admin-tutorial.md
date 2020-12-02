@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 06/14/2019
 ---
 
@@ -35,7 +35,7 @@ Larger enterprises may want to consider using Azure Active Directory to manage p
 Ensure that all members of your organization or group are added to your organization and project. Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory before installing TFS. To learn more, see the following articles.
 
 - [Install Azure Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
-- [Step-By-Step: Setting up Azure Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
+- [Step-By-Step: Setting up Azure Active Directory in Windows Server 2016](/archive/blogs/canitpro/step-by-step-setting-up-active-directory-in-windows-server-2016)
 
 ::: moniker-end
 
@@ -151,15 +151,13 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 A number of notifications are predefined for each project you add. Notifications are based on subscription rules. Subscriptions arise from the following areas:
 
 - [Out-of-the-box or default subscriptions](../notifications/oob-built-in-notifications.md).
-- [Team notifications](../notifications/howto-manage-team-notifications.md), managed by a team administrator.
+- [Team, organization, and collection-level notifications](../notifications/manage-team-group-global-organization-notifications.md), managed by a team administrator or member of the Project Collection Administrators group.
 - Project notifications, managed by a member of the Project Administrators group.
-- [Organization and collection level notifications](../notifications/howto-manage-organization-notifications.md), managed by a member of the Project Collection Administrators group.
 
-If users believe they're getting too many notifications, direct them to [opt out of a subscription](../notifications/howto-manage-personal-notifications.md).
+If users believe they're getting too many notifications, direct them to [opt out of a subscription](../notifications/manage-your-personal-notifications.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Personal notifications](media/services/personal-notifications.png)   
-
 
 ::: moniker range="< azure-devops"  
 
@@ -217,14 +215,14 @@ All organizations can add up to five users with Basic access and unlimited users
 ## Next steps  
 
 > [!div class="nextstepaction"]
-> [Manage projects](../organizations/projects/index.md)
+> [Manage projects](../organizations/projects/about-projects.md)
 
 ## Related articles
 
 ::: moniker range="azure-devops"  
 
 - [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
-- [Security & identity](../organizations/security/index.md)
+- [Security & identity](../organizations/security/about-security-identity.md)
 - [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 
@@ -233,7 +231,7 @@ All organizations can add up to five users with Basic access and unlimited users
 ::: moniker range="< azure-devops"  
 
 - [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
-- [Security & identity](../organizations/security/index.md)
+- [Security & identity](../organizations/security/about-security-identity.md)
 - [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 - [TFS administration](/azure/devops/server/index)

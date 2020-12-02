@@ -19,7 +19,7 @@ health of Azure DevOps 24 hours a day. Their primary goal is to ensure
 that our users are productive and successful with our service at all times. 
 From time to time, like any online service, our service experiences performance 
 slowdowns and stability issues. In these cases, we aim to respond quickly to 
-restore the service. It's out top priority to communicate the incident 
+restore the service. It's our top priority to communicate the incident 
 status and our next steps to mitigate the issue on the
 [Azure DevOps Services status portal](https://status.dev.azure.com).
 
@@ -28,7 +28,7 @@ service health to determine if we're already working on the issue before you con
 support team or spend time troubleshooting. Many of the events we post here are based on our 
 Customer Impact Assessment (CIA), which is modeled after our 
 [availability model](https://devblogs.microsoft.com/bharry/how-do-you-measure-quality-of-a-service/) 
-that measures real customer representing both reliability and performance.
+that measures real customer experiences representing both reliability and performance.
 
 ## Concepts 
 
@@ -37,7 +37,7 @@ that measures real customer representing both reliability and performance.
 The severity of a service health event is based on the number of customers affected by the issue. 
 Typically, the highest severity events impact a large percentage of our customers and render some parts 
 of the product unusable. These events are represented as "Unhealthy" in the service status portal. 
-Lower severity events affect the performance of a specific feature in a service but doesn't make the 
+Lower severity events affect the performance of a specific feature in a service but do not make the 
 service broadly unavailable. These events are reflected as "Degraded" in the service status portal.
 
 ### Services in a Product Suite
@@ -77,8 +77,8 @@ You can use [the RSS feed](https://status.dev.azure.com/_rss) to subscribe and r
 
 ## Using REST APIs
 
-For users who are looking to build an automated solution to [monitor the infrastructure incidents](https://docs.microsoft.com/azure/service-health/service-health-overview), 
-we [provide REST APIs](https://docs.microsoft.com/rest/api/resourcehealth/) to retrieve the current health status of each of the Azure DevOps Services. 
+For users who are looking to build an automated solution to [monitor the infrastructure incidents](/azure/service-health/service-health-overview), 
+we [provide REST APIs](/rest/api/resourcehealth/) to retrieve the current health status of each of the Azure DevOps Services. 
 
 [!INCLUDE [rest-api-docs-rollout](../includes/rest-api-docs-rollout.md)] 
 
@@ -86,6 +86,5 @@ we [provide REST APIs](https://docs.microsoft.com/rest/api/resourcehealth/) to r
 
 If you're experiencing an issue with Azure DevOps and see a corresponding event that's communicated on the service health portal, we're already working to restore normal operations of the service. You don't need to take any further 
 action to notify us. However, if you don't see your issue reported on the Azure DevOps Services health page, refer 
-to the resources available on [Azure DevOps support page](https://azure.microsoft.com/support/devops/). That page has 
-resources to report bugs, interact with a friendly support bot, and contact our support team for additional assistance.
-   
+to the resources available on the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
+

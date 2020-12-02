@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 08/25/2020
 ---
 
@@ -34,7 +34,7 @@ You can get a list of users and groups that have access to your Team Foundation 
 
 ::: moniker range="azure-devops"
 
-* You must be the organization Owner or a member of the Project Collection Administrators group. If you aren't a member, get added now. See [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
+* You must be the organization Owner or a member of the Project Collection Administrators group. If you aren't a member, get added now. See [Set permissions at the project- or collection-level](./set-project-collection-level-permissions.md).
   ::: moniker-end
 
   ::: moniker range="< azure-devops"
@@ -83,7 +83,7 @@ From the Azure DevOps CLI command, you can get a list of the users in your organ
 
 You can list the users in an organization with the [az devops user list](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-list) command. This does not apply to users that are added via Azure Active Directory groups. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
-```CLI
+```azurecli
 az devops user list [--org] [--skip] [--top]
 ```
 
@@ -98,7 +98,7 @@ az devops user list [--org] [--skip] [--top]
 
 The following command returns five users in your organization without skipping any and shows the result in table format.
 
-```CLI
+```azurecli
 az devops user list --skip 0 --top 5  --output table
 
 ID                                    Display Name            Email                          License Type    Access Level    Status

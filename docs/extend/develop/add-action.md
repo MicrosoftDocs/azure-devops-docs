@@ -109,7 +109,9 @@ The script below registers the handler object to handle the action, place it in 
 </script>
 ```
 
-## Next Steps
+[!INCLUDE [tip-for-more-information](../includes/tip-for-more-information.md)]
+
+## Next steps
 
 Now that you've written your extension, the next steps are to Package, Publish, and Install your extension. You can also check out the 
 documentation for Testing and Debugging your extension. 

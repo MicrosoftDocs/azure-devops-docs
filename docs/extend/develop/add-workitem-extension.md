@@ -14,7 +14,7 @@ ms.date: 08/22/2016
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-In this article, learn how to customize how the work item form gets presented to users via contributions that are made through an extension.
+Learn how to customize how the work item form gets presented to users via contributions that are made through an extension.
 
 * [Add a group to the main page](#addagroup)
 * [Add a page (tab)](#addapage) 
@@ -29,7 +29,7 @@ See the **UI** example in the [Azure DevOps Extension Samples](https://github.co
 
 ## Add a group
 
-![toolbar item in work item form](./media/add-workitem-extension-group.png)
+![Toolbar item in work item form.](./media/add-workitem-extension-group.png)
 
 To add a group to the main page, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-group` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -124,7 +124,7 @@ This sample shows how to register an object that's called when events occur on t
 
 A new page is rendered as a tab on the work item form. New pages appear next to the Details tab.
 
-![toolbar item in work item form](./media/add-workitem-extension-page.png)
+![New page as a tab on the work item form.](./media/add-workitem-extension-page.png)
 
 To add a page to the work item form, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-page` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -168,7 +168,7 @@ In Azure DevOps, by default the group extensions appear in the end of the second
 
 ## Add menu action
 
-![toolbar item in work item form](./media/add-workitem-extension-toolbar.png)
+![Add an item to the work item toolbar.](./media/add-workitem-extension-toolbar.png)
 
 To add an item to the work item toolbar, add this contribution to your extension manifest. The item appears in the ... dropdown in the top right of the work item form.
 

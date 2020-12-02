@@ -47,7 +47,7 @@ For information on managing features and epics as a list and examples for featur
 
 ## Open your Kanban board from the web portal
 
-Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/azure/devops/boards/backlogs/backlogs-boards-plans). To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-backlog), choose **Stories backlog**. And, to switch to the [taskboard](/azure/devops/boards/sprints/task-board), choose **Sprints** and then choose **Taskboard**.  
+Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To switch to the [product backlog](../backlogs/create-your-backlog.md), choose **Stories backlog**. And, to switch to the [taskboard](../sprints/task-board.md), choose **Sprints** and then choose **Taskboard**.  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -55,7 +55,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	![Open your Kanban board](/azure/devops/boards/boards/media/quickstart/open-kanban-board-agile.png)  
 
-	To choose another team's board, open the selector and select a different team or choose the ![home-icon](/azure/devops/media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team's board, open the selector and select a different team or choose the :::image type="icon" source="/azure/devops/media/icons/home-icon.png" border="false"::: **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
@@ -138,4 +138,3 @@ To customize the columns, swimlanes, or cards for each Kanban board, make sure y
 
 ### REST API resources
 To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/azure/devops/work/boards).
-

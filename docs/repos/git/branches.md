@@ -6,7 +6,7 @@ ms.assetid: 4b18a164-d1cb-4f87-89cb-8dc227e64af1
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Create work in branches  
@@ -57,7 +57,10 @@ You'll need to either [cherry-pick](cherry-pick.md) the commits from the branch 
 ## Create a branch
 
 #### [Visual Studio](#tab/visual-studio/)
-Visual Studio 2015 & 2017
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
+**Visual Studio 2015 & 2017**
 
 1. Open up Team Explorer and go to the **Branches** view.
 2. Right-click the parent branch (usually `master`) to base your changes and choose **New Local Branch From...**. 
@@ -80,7 +83,8 @@ git checkout feature1
 > Deleting a branch in your local repo doesn't remove the branch on the remote.
 
 #### [Visual Studio](#tab/visual-studio/)
-Visual Studio 2015 & 2017
+
+**Visual Studio 2015 & 2017**
 
 1. Open up Team Explorer and go to the **Branches** view.
 2. Locate the branch you want to delete. Make sure that you aren't checked out to that branch, as you can't delete the branch you are currently working in.

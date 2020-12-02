@@ -6,7 +6,7 @@ ms.assetid: 7f6312b8-6c98-4f44-9b6e-eecbeafbbaea
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
@@ -54,6 +54,8 @@ A suggested approach is to allow rebasing local changes that you have made but h
 with others. This avoids trouble with rewriting history while still letting you easily catch up with changes as you develop your code locally.
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
 
 In Team Explorer, go to the **Branches** view. Click  **Rebase**. You'll see a prompt to rebase the changes from your current branch, and then a drop-down to specify which branch
 the changes in the current branch should be replayed on top of. If there is a conflict, resolve it just like you resolve [merge conflicts](merging.md) in Visual Studio.

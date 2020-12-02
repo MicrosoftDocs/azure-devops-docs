@@ -128,7 +128,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 App Service needs information about your registry and image to pull the private image. In the [Azure portal](https://portal.azure.com), go to your **Function App --> Platform features --> All settings**. Select **Container settings** from the app service and update the **Image source, Registry** and save.
 
-![container-settings](media/functionapp-container/container-settings.png)
+![Screenshot showing Update image source and Registry in container settings.](media/functionapp-container/container-settings.png)
 
 ## Deploy with Azure Function App for Container
 
@@ -142,7 +142,7 @@ To deploy to an Azure Function App container, add the following snippet at the e
 
 ```yaml
 trigger:
-- master
+- main
 
 variables:
   # Container registry service connection established during pipeline creation

@@ -118,9 +118,17 @@ Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](
 
 Each backlog and board represents a filtered list of work items based on area path and iteration path assignments. To understand how the filtering is applied, see [About teams and Agile tools, Team defaults referenced by backlogs and boards](../organizations/settings/about-teams-and-settings.md#team-defaults).
 
+### Q: How do I add a backlog or board?  
+
+**A:** To add a backlog or board, you add a team. Each team is configured with it's own set of it's own set of backlogs and boards as described in [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). 
+
 ### Q: How do I migrate my existing backlog to Azure Boards?  
 
 **A:** See [Azure Boards migration and integration](extensions/migrate-integrate.md).
+
+### Q: How do I search for comments made to backlog items? 
+
+**A:** See the answer provided in [How do I search for entries made in the Discussion field?](#faq-search-comments) later in this article. 
 
 ### Q: How do the three types of backlogs&mdash;product, portfolio, and sprint backlogs&mdash;differ?
 
@@ -142,10 +150,12 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 [!INCLUDE [temp](includes/faq-critical-path.md)]
 
 
+<
 ## Queries 
 
 [!INCLUDE [temp](includes/faq-view-all-work-items.md)] 
 
+[!INCLUDE [temp](includes/faq-search-comments.md)]
 
 ## Configuration and customizations  
 

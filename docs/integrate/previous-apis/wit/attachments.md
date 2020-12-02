@@ -72,8 +72,8 @@ POST https://mytfsserver/DefaultCollection/_apis/wit/attachments?fileName=textAs
 ### Sample code
 [View sample](./work-items.md#addanattachment) for a full example on uploading an attachment to a work item.
 
-* [C# (UploadTextFile method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/AttachmentsSample.cs#L23)
-* [C# (UploadBinaryFile method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/AttachmentsSample.cs#L49)
+* [C# (UploadTextFile method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/AttachmentsSample.cs#L23)
+* [C# (UploadBinaryFile method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/AttachmentsSample.cs#L49)
 
 
 >[!div class="tabbedCodeSnippets" cs='C#' javascript='JavaScript']
@@ -205,4 +205,4 @@ Status code: 200
 
 #### Sample code
 
-* [C# (DownloadAttachment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/AttachmentsSample.cs#L69)
+* [C# (DownloadAttachment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/main/ClientLibrary/Samples/WorkItemTracking/AttachmentsSample.cs#L69)

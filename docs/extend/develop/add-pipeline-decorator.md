@@ -6,7 +6,7 @@ ms.technology: devops-cicd
 ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
 ms.author: macoope
 author: vtbassmatt
-ms.date: 06/10/2020
+ms.date: 09/16/2020
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -107,10 +107,6 @@ To add a pipeline decorator to your organization, you must [install an extension
 The extension must be authored and shared with your organization before it can be used.
 
 Once the extension has been shared with your organization, [search for the extension](https://marketplace.visualstudio.com/search?term=tag%3APipeline%20decorator&target=AzureDevOps&category=All%20categories&visibilityQuery=all&sortBy=Relevance) and install it.
-
-> [!IMPORTANT]
-> Pipeline decorators have been released, but there is still an organization-level toggle.
-> If your decorators aren't running, check that the [organization level preview feature](../../project/navigation/preview-features.md#enable-features-at-the-organization-level-for-all-users) is turned on.
 
 Save the file, then [build and install the extension](../get-started/node.md).
 Create and run a basic pipeline.

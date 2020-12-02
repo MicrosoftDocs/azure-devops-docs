@@ -22,7 +22,7 @@ A:
    Navigate to a project and check if the search box is displayed at the top right. 
 
 2. If the search box is not shown, verify that the extension is installed for the collection. 
-   If not, [install](administration.md#install-tfs) or [configure](administration.md#config-ts-azuredevops) the extension.
+   If not, [install](administration.md#config-tfs) or [configure](administration.md#config-ts-azuredevops) the extension.
 
 <a name="no-results-install"></a>
 
@@ -52,18 +52,18 @@ name of the server where Search is installed:
 1. Access the URL `http://SearchServer:9200` from a web browser
    on a computer in the same domain as the server running Search.
    - If the status returned is `200 - OK`, go to step 2.
-   - If any other status is returned, [contact Support](https://azure.microsoft.com/support/devops/).
+   - If any other status is returned, [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).
    - If you don't get a response, verify that the 
      **elasticsearch-service-x64** service is running on 
      the server where Search is configured. If the service
      is stopped, start it and access the Search server again.  
      If you still get no response, or a response other than
-     `200 - OK`, [contact Support](https://azure.microsoft.com/support/devops/).<p />
+     `200 - OK`, [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).<p />
 
 2. If the status is 200, access the URL `http://SearchServer:9200/_cat/health?v`
    from a web browser on a computer in the same domain as the server running Search.
    - If the status column shows green/OK, and 
-     Search is still not working, [contact Support](https://azure.microsoft.com/support/devops/). 
+     Search is still not working, [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html). 
    - If the status column shows red/fault, look at the value
      in the **init** or **unassigned** columns. If these values are 
      greater than zero, wait for 30 minutes and then
@@ -72,7 +72,7 @@ name of the server where Search is installed:
 3. Access the URL `http://SearchServer:9200/_cat/shards?v`
    from a web browser on a computer in the same domain as the server running Search.
    - Make a note of the values in the **Shard** column for the 
-     rows with a **state** value of **unassigned** and [contact Support](https://azure.microsoft.com/support/devops/).<p />
+     rows with a **state** value of **unassigned** and [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).<p />
 
 <a name="unexpected-results"></a>
 

@@ -20,7 +20,7 @@ You can track your team's progress more easily by creating reports that aggregat
 
  After you create your first report, you might change it by experimenting with different measures, dimensions, and layouts. For example, you can change the chart from a simple column chart to a stacked-bar chart.  
 
- If you have not created reports for TFS before, see [Dashboards and reports](../admin/review-team-activities-for-useful-reports.md). If you have not used Report Designer before, see the following page on the Microsoft Web site: [Designing and Implementing Reports Using Report Designer](https://go.microsoft.com/fwlink/?LinkId=181954). For information about how to create reports that include line-item details (such as titles of work items), see [Create a Detailed Report using Report Designer](create-a-detailed-report-using-report-designer.md).  
+ If you have not created reports for TFS before, see [Dashboards and reports](../admin/review-team-activities-for-useful-reports.md). If you have not used Report Designer before, see the following page on the Microsoft Web site: [Designing and Implementing Reports Using Report Designer](/previous-versions/sql/sql-server-2008-r2/ms159253(v=sql.105)). For information about how to create reports that include line-item details (such as titles of work items), see [Create a Detailed Report using Report Designer](create-a-detailed-report-using-report-designer.md).  
 
  **Requirements**  
 
@@ -51,7 +51,7 @@ You can track your team's progress more easily by creating reports that aggregat
      The wizard advances to the **Design the Query** page.  
 
     > [!NOTE]
-    >  The data source that you specified connects to the analysis services database for TFS. For more information, see [Choose the source of data and authoring tool](https://msdn.microsoft.com/library/bb649557.aspx). If your project does not have this data source, create it. For more information, see [Create a Report Server Project](create-a-report-server-project.md).  
+    >  The data source that you specified connects to the analysis services database for TFS. For more information, see [Choose the source of data and authoring tool](./components-data-warehouse.md). If your project does not have this data source, create it. For more information, see [Create a Report Server Project](create-a-report-server-project.md).  
 
 5.  Choose **Query Builder**.  
 
@@ -64,14 +64,14 @@ You can track your team's progress more easily by creating reports that aggregat
      ![Query Builder &#45; click the Team System cube](media/reportdesignercube.png "ReportDesignerCube")  
 
     > [!NOTE]
-    >  If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through the dimensions and measures in the whole Team System cube. For this procedure, you can use the Work Item History perspective if it is available. For more information, see [Perspectives and measure groups provided in the Analysis Services cube](https://msdn.microsoft.com/library/ms244710.aspx).  
+    >  If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through the dimensions and measures in the whole Team System cube. For this procedure, you can use the Work Item History perspective if it is available. For more information, see [Perspectives and measure groups provided in the Analysis Services cube](./perspective-measure-groups-cube.md).  
 
 2.  Expand **Measures**, expand the **Work Item History** measure group, and then drag the **Cumulative Count** measure into the data area, as the following illustration shows.  
 
      ![Query Builder &#45; add Cumulative Count measure](media/reportdesignmeasure.png "ReportDesignMeasure")  
 
     > [!NOTE]
-    >  Cumulative Count shows how many work items are selected. Because you have not yet applied any filters, the number that appears is the total number of work items. For more information about work item measures, see [Perspectives and measure groups provided in the Analysis Services cube](https://msdn.microsoft.com/library/ms244710.aspx).  
+    >  Cumulative Count shows how many work items are selected. Because you have not yet applied any filters, the number that appears is the total number of work items. For more information about work item measures, see [Perspectives and measure groups provided in the Analysis Services cube](./perspective-measure-groups-cube.md).  
 
 3.  Expand the **Assigned To** dimension, and then drag the **Person** property into the data area, as the following illustration shows.  
 
@@ -175,4 +175,4 @@ You can track your team's progress more easily by creating reports that aggregat
     >  To successfully deploy the report, your project settings must be set to appropriate values. For more information, see [Create a Report Server Project](create-a-report-server-project.md).  
 
 ## Related notes 
- [Perspectives and measure groups provided in the Analysis Services cube](https://msdn.microsoft.com/library/ms244710.aspx)
+ [Perspectives and measure groups provided in the Analysis Services cube](./perspective-measure-groups-cube.md)

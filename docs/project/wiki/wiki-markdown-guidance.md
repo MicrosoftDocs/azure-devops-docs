@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2018'
-ms.date: 07/23/2020 
+ms.date: 09/10/2020 
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -53,9 +53,8 @@ Consistency is maintained in the formatting in TOC.
 
 Wiki supports the following Mermaid diagram types:
 
-1.	[Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
-2.	[Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
-3.	[Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
+1.	[Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
+2.	[Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
 
 To add Mermaid diagrams to a wiki page, use the following syntax:
 
@@ -71,6 +70,8 @@ There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
 > [!NOTE]
 > Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
+> 
+> This feature is supported only in Azure DevOps Services (not in Azure DevOps Server).
 
 ::: moniker-end
 

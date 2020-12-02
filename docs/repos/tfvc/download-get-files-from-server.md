@@ -18,7 +18,7 @@ In general, you should get the latest files from the server on a regular basis s
 
 **Required permissions**
 
-You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](https://msdn.microsoft.com/library/ms253077).
+You must be one of the **Contributors** for your project. See [Team Foundation Server default groups, permissions, and roles](../../organizations/security/permissions.md?viewFallbackFrom=vsts).
 
 ## Get the latest version of some files
 

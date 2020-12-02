@@ -16,7 +16,7 @@ You can now configure upstream sources for Universal Packages in the same way as
 
 <img src="../../media/174-artifacts-1-0.png" width="600" alt="upack">
 
-Note that Universal Packages in upstream sources are only supported between feeds in the same DevOps Organization. We have work planned for this upcoming sprint cycle to add this functionality for use with feeds on other organizations associated with your AAD.
+Note that Universal Packages in upstream sources are only supported between feeds in the same DevOps Organization.
 
 
 ### Update Package Version REST API now available for Maven packages

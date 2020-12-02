@@ -8,8 +8,8 @@ ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/30/2020
 ---
 
 
@@ -139,7 +139,16 @@ The rich text formatting toolbar appears above each text box that can be formatt
 
 <a id="team-explorer-rich-text" />
 
-From Team Explorer you can choose the font, font size, and text and background colors.
+
+
+**Visual Studio 2017-2019/Team Explorer** 
+
+The work item form opens in the web portal for Visual Studio 2017 and later versions. Work items aren't available from Visual Studio 2019 under the following conditions:   
+* If you are connected to a GitHub or third-party Git repository. 
+* If you are set to use the new Git Tool for Visual Studio 2019 as described in [New Git experience in Visual Studio (Preview)](/visualstudio/ide/git-with-visual-studio).  
+ 
+
+From the work item form you can choose the font, font size, and text and background colors.
 
 ![Rich text tool bar - Team Explorer](media/rich-text-ui-te.png)  
 
@@ -375,7 +384,7 @@ You can use a SharePoint site to share and access documents from your project. Y
 - Share documents, files, images  
 - Share team knowledge and processes using the SharePoint wiki.    
 
-To learn more, see [Share information using the project portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md).  
+To learn more, see [Share information using the project portal](/previous-versions/azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal).  
 
 ::: moniker-end
 
@@ -394,5 +403,3 @@ As you can see, there are many ways to share information using work items alone.
 
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Add and edit a wiki](../../project/wiki/add-edit-wiki.md)
-
-

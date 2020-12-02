@@ -276,17 +276,20 @@ In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron synta
 > [!IMPORTANT]
 > The UTC time zones in YAML scheduled triggers don't account for daylight savings time.
 
+> [!TIP]
+> When using 3 letter days of the week and wanting a span of multiple days through Sun, Sun should be considered the first day of the week e.g. For a schedule of midnight EST, Thursday to Sunday, the cron syntax is `0 5 * * Sun,Thu-Sat`
+
 ### Example: Nightly build with different frequencies
 
 In this example, the classic editor scheduled trigger has two entries, producing the following builds.
 
 * Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
 
-    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-week-day-night.png)
+    ![Scheduled trigger frequency 1.](media/triggers/scheduled-trigger-git-week-day-night.png)
 
 * Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
 
-    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-weekly-night.png)
+    ![Scheduled trigger frequency 2.](media/triggers/scheduled-trigger-git-weekly-night.png)
 
 The equivalent YAML scheduled trigger is:
 
@@ -379,11 +382,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
 
-    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-week-day-night.png)
+    ![Scheduled trigger frequency 1, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-week-day-night.png)
 
 * Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
 
-    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-weekly-night.png)
+    ![Scheduled trigger frequency 2, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-weekly-night.png)
 
 ::: moniker-end
 
@@ -391,7 +394,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.3 through TFS 2018**
 
-![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
+![Scheduled trigger different frequencies, TFS 2017.3 through TFS 2018.](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
 ::: moniker-end
 
@@ -399,7 +402,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.1 and older versions**
 
-![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-different-frequencies.png)
+![Scheduled trigger different frequencies, TFS 2017.1 and older versions.](media/triggers/scheduled-trigger-git-different-frequencies.png)
 
 ::: moniker-end
 

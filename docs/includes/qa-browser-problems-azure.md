@@ -2,4 +2,4 @@
 
 A: This might happen if you're using an unsupported browser. 
 For the best experience, please make sure that you're using a 
-[supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
+[supported browser](/azure/azure-portal/azure-portal-supported-browsers-devices).
