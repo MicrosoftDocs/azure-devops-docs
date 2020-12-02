@@ -669,7 +669,7 @@ For resources where you can't fetch available versions (like GitHub packages), w
 ## Troubleshooting authorization for a YAML pipeline
 Resources must be authorized before they can be used. A resource owner controls the users and pipelines that can access that resource. The pipeline must be authorized to use the resource. There are multiple ways to accomplish this.
 
-* Navigate to the administration experience of the resource. For example, variable groups and secure files are managed in the **Library** page under **Pipelines**. Agent pools and service connections are managed in **Project settings**. Here you can authorize **all pipelines** to be able to access that resource. This is convenient if you do not have a need to restrict access to a resource - for for example, test resources.
+* Navigate to the administration experience of the resource. For example, variable groups and secure files are managed in the **Library** page under **Pipelines**. Agent pools and service connections are managed in **Project settings**. Here you can authorize **all pipelines** to be able to access that resource. This is convenient if you do not have a need to restrict access to a resource - for example, test resources.
 
 * When you create a pipeline for the first time, all the resources that are referenced in the YAML file are automatically authorized for use by the pipeline, provided that you are a member of the **User** role for that resource. So, resources that are referenced in the YAML file at pipeline creation time are automatically authorized.
 
@@ -707,7 +707,7 @@ To provide end to end traceability, user should be able to track which CD pipeli
 ### YAML resource trigger issues support and traceability
 It can be confusing when pipeline triggers fail to execute. To help better understand this, we've added a new menu item in the pipeline definition page called **Trigger Issues** where you can learn why triggers are not executing. To access this page, open your pipeline history. Select **Trigger Issues** in the menu. 
 
-:::image type="content" source="media/triggermenu.png" alt-text="Select Trigger Issues":::
+:::image type="content" source="media/trigger-menu.png" alt-text="Select Trigger Issues from the navigation.":::
 
 Resource triggers can fail to execute for two reasons.
 * If the source of the service connection provided is invalid, or if there are any syntax errors in the trigger, the trigger will not be configured at all. These are surfaced as errors.
