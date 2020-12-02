@@ -4,15 +4,19 @@ ms.custom: "seodec18, contentperfQ4"
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 07/21/2020
+ms.date: 09/29/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Microsoft-hosted agents
 
+[!INCLUDE [include](../includes/version-team-services.md)]
+
 ::: moniker range="< azure-devops"
 
-Microsoft-hosted agents are only available with Azure DevOps. You cannot use Microsoft-hosted agents or the Azure Pipelines agent pool with TFS or Azure DevOps Server. With these server versions, you must use [self-hosted agents](agents.md).
+Microsoft-hosted agents are only available with Azure DevOps Services, which is hosted in the cloud. You cannot use Microsoft-hosted agents or the Azure Pipelines agent pool with on-premises TFS or Azure DevOps Server. With these on-premises versions, you must use [self-hosted agents](agents.md).
+
+[!INCLUDE [include](../../includes/version-selector.md)]
 
 ::: moniker-end
 
@@ -26,13 +30,13 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
-| Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2019-Readme.md)
-| Windows Server 2016 with Visual Studio 2017 | *vs2017-win2016* | `vs2017-win2016` | [Link](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2016-Readme.md)
-| Ubuntu 20.04 [(preview)](/azure/devops/release-notes/2020/sprint-170-update#ubuntu-2004-in-preview-for-azure-pipelines-hosted-pools)| *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu2004-README.md)
-| Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-latest` OR `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1804-README.md)
-| Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1604-README.md)
-| macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-10.14` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md)
-| macOS X Catalina 10.15 | *macOS-10.15* |  `macOS-latest` OR `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md)
+| Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md)
+| Windows Server 2016 with Visual Studio 2017 | *vs2017-win2016* | `vs2017-win2016` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2016-Readme.md)
+| Ubuntu 20.04 [(preview)](/azure/devops/release-notes/2020/sprint-170-update#ubuntu-2004-in-preview-for-azure-pipelines-hosted-pools)| *ubuntu-20.04* | `ubuntu-20.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md)
+| Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-latest` OR `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md)
+| Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1604-README.md)
+| macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-10.14` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md)
+| macOS X Catalina 10.15 | *macOS-10.15* |  `macOS-latest` OR `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md)
 
 You can see the installed software for each hosted agent by choosing the **Included Software** link in the table. When using macOS images, you can manually select from tool versions. [See below](#mac-pick-tools).
 
@@ -40,9 +44,9 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 > [!NOTE]
 > In March 2020, we removed the following Azure Pipelines hosted images:
 >
-> - [Windows Server 2012R2 with Visual Studio 2015](https://github.com/microsoft/azure-pipelines-image-generation/blob/d80f81d6c98f8ce2c74b034309bb774ea8d31cfb/images/win/Vs2015-Server2012R2-Readme.md) (`vs2015-win2012r2`)
-> - [macOS X High Sierra 10.13](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md) (`macOS-10.13`)
-> - [Windows Server Core 1803](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md) - (`win1803`)
+> - [Windows Server 2012R2 with Visual Studio 2015](https://github.com/actions/virtual-environments/tree/main/images/win) (`vs2015-win2012r2`)
+> - [macOS X High Sierra 10.13](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.13-Readme.md) (`macOS-10.13`)
+> - [Windows Server Core 1803](https://github.com/actions/virtual-environments/tree/main/images/win) - (`win1803`)
 >
 > Customers are encouraged to migrate to `vs2017-win2016`, `macOS-10.14`, or a [self-hosted agent](v2-windows.md) respectively.
 >
@@ -235,7 +239,7 @@ Microsoft-hosted agents do not offer:
 * The ability to get bigger or more powerful build machines.
 * The ability to pre-install custom software (other than through [tool installer tasks](../process/tasks.md#tool-installers) in your pipeline).
 * Potential performance advantages that you might get by using self-hosted agents that might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
-* The ability to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
+* The ability to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)).
 
 If Microsoft-hosted agents don't meet your needs, then you can deploy your own [self-hosted agents](agents.md#install) or use [scale set agents](scale-set-agents.md).
 
@@ -317,7 +321,7 @@ If you refer to the server by its DNS name, then make sure that your server is p
 
   `/bin/bash -c "sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1"`
 
-  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xamarin).
+  Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md).
 
   This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
@@ -353,7 +357,7 @@ If you refer to the server by its DNS name, then make sure that your server is p
 
 #### .NET Core
   .NET Core 2.2.105 is default on VM images but Mono version 6.0 or greater requires .NET Core 2.2.300+. 
-  If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops).
+  If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](../tasks/tool/dotnet-core-tool-installer.md).
 
 #### Boost
   The VM images contain prebuilt Boost libraries with their headers in the directory designated by `BOOST_ROOT` environment variable. In order to include the Boost headers, the path `$BOOST_ROOT/include` should be added to the search paths.

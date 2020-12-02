@@ -131,19 +131,19 @@ Replace the `{alias}` placeholder with the value you specified for the [artifact
 | Variable name | Description |
 |---------------|-------------|
 | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionId | The identifier of the build pipeline or repository.<br /><br />Azure Pipelines example: `1`<br />GitHub example: `fabrikam/asp` |
-| Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionName | The name of the build pipeline or repository.<br /><br />Azure Pipelines example: `fabrikam-ci`<br />TFVC example: `$/fabrikam`<br />Git example: `fabrikam`<br />GitHub example: `fabrikam/asp (master)` |
+| Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionName | The name of the build pipeline or repository.<br /><br />Azure Pipelines example: `fabrikam-ci`<br />TFVC example: `$/fabrikam`<br />Git example: `fabrikam`<br />GitHub example: `fabrikam/asp (main)` |
 | Release.Artifacts.{[alias](artifacts.md#source-alias)}.BuildNumber | The build number or the commit identifier.<br /><br />Azure Pipelines example: `20170112.1`<br />Jenkins/TeamCity example: `20170112.1`<br />TFVC example: `Changeset 3`<br />Git example: `38629c964`<br />GitHub example: `38629c964` |
 | Release.Artifacts.{[alias](artifacts.md#source-alias)}.BuildId | The build identifier.<br /><br />Azure Pipelines example: `130`<br />Jenkins/TeamCity example: `130`<br />GitHub example: `38629c964d21fe405ef830b7d0220966b82c9e11` |
 | Release.Artifacts.{[alias](artifacts.md#source-alias)}.BuildURI | The URL for the build.<br /><br />Azure Pipelines example: `vstfs://build-release/Build/130`<br />GitHub example: `https://github.com/fabrikam/asp` |
-| Release.Artifacts.{[alias](artifacts.md#source-alias)}.SourceBranch | The full path and name of the branch from which the source was built.<br /><br />Azure Pipelines example: `refs/heads/master` |
-| Release.Artifacts.{[alias](artifacts.md#source-alias)}.SourceBranchName | The name only of the branch from which the source was built.<br /><br />Azure Pipelines example: `master` |
+| Release.Artifacts.{[alias](artifacts.md#source-alias)}.SourceBranch | The full path and name of the branch from which the source was built.<br /><br />Azure Pipelines example: `refs/heads/main` |
+| Release.Artifacts.{[alias](artifacts.md#source-alias)}.SourceBranchName | The name only of the branch from which the source was built.<br /><br />Azure Pipelines example: `main` |
 | Release.Artifacts.{[alias](artifacts.md#source-alias)}.SourceVersion | The commit that was built.<br /><br />Azure Pipelines example: `bc0044458ba1d9298cdc649cb5dcf013180706f7` |
 | Release.Artifacts.{[alias](artifacts.md#source-alias)}.Repository.Provider | The type of repository from which the source was built.<br /><br />Azure Pipelines example: `Git` |
 | Release.Artifacts.{[alias](artifacts.md#source-alias)}.RequestedForID | The identifier of the account that triggered the build.<br /><br />Azure Pipelines example: `2f435d07-769f-4e46-849d-10d1ab9ba6ab` |
 | Release.Artifacts.{[alias](artifacts.md#source-alias)}.RequestedFor | The name of the account that requested the build.<br /><br />Azure Pipelines example: `Mateo Escobedo` |
 | Release.Artifacts.{[alias](artifacts.md#source-alias)}.Type | The type of artifact source, such as Build.<br /><br />Azure Pipelines example: `Build`<br />Jenkins example: `Jenkins`<br />TeamCity example: `TeamCity`<br />TFVC example: `TFVC`<br />Git example: `Git`<br />GitHub example: `GitHub` |
-| Release.Artifacts.{[alias](artifacts.md#source-alias)}.PullRequest.TargetBranch | The full path and name of the branch that is the target of a pull request. This variable is initialized only if the release is triggered by a pull request flow.<br /><br />Azure Pipelines example: `refs/heads/master` |
-| Release.Artifacts.{[alias](artifacts.md#source-alias)}.PullRequest.TargetBranchName | The name only of the branch that is the target of a pull request. This variable is initialized only if the release is triggered by a pull request flow.<br /><br />Azure Pipelines example: `master` |
+| Release.Artifacts.{[alias](artifacts.md#source-alias)}.PullRequest.TargetBranch | The full path and name of the branch that is the target of a pull request. This variable is initialized only if the release is triggered by a pull request flow.<br /><br />Azure Pipelines example: `refs/heads/main` |
+| Release.Artifacts.{[alias](artifacts.md#source-alias)}.PullRequest.TargetBranchName | The name only of the branch that is the target of a pull request. This variable is initialized only if the release is triggered by a pull request flow.<br /><br />Azure Pipelines example: `main` |
 
 See also [Artifact source alias](artifacts.md#source-alias)
 

@@ -3,9 +3,9 @@ title: New test plans page
 description: New Test Plans page
 ms.assetid: FFBBD2F9-C1C5-4273-916A-28834B794CC3
 ms.technology: devops-test
-ms.topic: reference
-ms.author: ravishan-msft
-author: ravishan-msft
+ms.topic: conceptual
+ms.author: sdanie
+author: steved0x
 ms.date: 06/12/2020
 monikerRange: '>=azure-devops-2020'
 ---
@@ -15,25 +15,18 @@ monikerRange: '>=azure-devops-2020'
 
 [!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
-A new Test Plans Page (Test Plans*) for your planned testing needs is available for all Azure DevOps Services organizations. The new page provides you with streamlined views to help you focus on the task at hand - be it test planning, authoring, execution, or tracking. It is also clutter-free and consistent with the rest of Azure DevOps offering. We hope that you find it easy and intuitive to use.
+A new Test Plans Page (Test Plans*) for your planned testing needs is available for Azure DevOps Services and Azure DevOps Server 2020. The new page provides you with streamlined views to help you focus on the task at hand - be it test planning, authoring, execution, or tracking. It is also clutter-free and consistent with the rest of Azure DevOps offering. We hope that you find it easy and intuitive to use.
 
-This new page has been in public preview for past few quarters and has been made default for all Test Plans users. During this time, we have continued to add the missing features/capabilities and address the feedback you have been providing us.
+This new page has been in public preview for past few quarters and is the default for all Test Plans users. During this time, we have continued to add the missing features/capabilities and address the feedback you have been providing us. We are almost towards the end of this journey and now are ready to pull out the old page by **the end of November 2020**. We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the information provided in [Manage or enable features](../project/navigation/preview-features.md).
 
-We had originally planned to pull out the old page by mid June 2020 with the assumption that most of the gaps have been addressed. However, recently, we have received consistent feedback about one capability, which is not efficient/missing in the new page, which was to do with reviewing the test outcomes, test suites and test case details side-by-side when looking at the test case list - more details [here](https://developercommunity.visualstudio.com/idea/1060525/keep-the-old-test-plans-view.html). We are in the process of evaluating the possible options given the constraints of the design system. As such, we are pausing on the deadline for switching to the new Test Plans page. Once we have more clarity on the solution, we will revisit the deadline timelines.
+## Overview
 
-We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the following steps:
 
-1. Sign-in into your Azure DevOps Services organization
-2. Click on your Avatar on the top right and navigate to "Preview Features"
-3. Disable the 'New Test Plans Page' feature and navigate to Test Plans > Test Plans in your project of choice.
-![test plans preview](media/new-test-plans-page/enable-preview-feature.png)
+> [!NOTE]   
+> Any action performed in either page will reflect on the other too since the backend data store is the same.
 
-> Any action performed in either page will reflect on the other too since their backend store is the same.
 
-***Help me understand the new page***
-
-![test plan overview page](media/new-test-plans-page/test-plan-overview.png)
-
+:::image type="content" source="media/new-test-plans-page/test-plan-overview.png" alt-text="test plan overview page":::
 
 The new Test Plans page has total of six sections of which the first four are new, while the Charts & Extensibility sections are the existing functionality. 
 1. **Test plan header**: Use this to locate, favorite, edit, copy or clone a test plan.
@@ -41,15 +34,16 @@ The new Test Plans page has total of six sections of which the first four are ne
 3. **Define tab**: Collate, add, and manage test cases in a test suite of choice via this tab.
 4. **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
 5. **Chart tab**: Track test execution and status via charts, which can also be pinned to dashboards.
-6. **Extensibility**: Supports the [current extensibility points](/azure/devops/extend/overview) within the product.
+6. **Extensibility**: Supports the [current extensibility points](../extend/overview.md) within the product.
 
 Lets take a broad stroke view of these new sections below.
 
 
 <a name="testplanheader"></a>
+
 ## Test plan header
 
-![test plan header page](media/new-test-plans-page/test-plan-header.png)
+:::image type="content" source="media/new-test-plans-page/test-plan-header.png" alt-text="test plan header page":::
 
 **Tasks** 
 
@@ -74,16 +68,17 @@ The context menu on the Test Plan header provides the following options:
 
 ***Copy test plan (new capability)***
 
-![copy test plan page](media/new-test-plans-page/copy-test-plan-dialog.png)
+:::image type="content" source="media/new-test-plans-page/copy-test-plan-dialog.png" alt-text="copy test plan page":::
 
-We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging 'Copy test plan' capability, you can copy or clone test plans within the project. Its backing REST API is covered [here](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). The API lets you copy/clone a test plan across projects too.<br>
-For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/07/22/test-planning-and-management-guide-updated/).
+We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging 'Copy test plan' capability, you can copy or clone test plans within the project. Its backing REST API is covered [here](/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1&preserve-view=true). The API lets you copy/clone a test plan across projects too.<br>
+For more guidelines on Test Plans usage, refer [here](/archive/blogs/visualstudioalmrangers/test-planning-and-management-guide-updated).
 
 
 <a name="testsuitestree"></a>
+
 ## Test suites tree
 
-![test suites tree page](media/new-test-plans-page/test-suites-tree.png)
+:::image type="content" source="media/new-test-plans-page/test-suites-tree.png" alt-text="test suites tree page":::
 
 **Tasks** 
 
@@ -112,16 +107,16 @@ The context menu on the Test suites tree provides the following options:
 
 ***Import test suites (new capability)***
 
-![test suites tree import page](media/new-test-plans-page/import-test-suites.png)
+:::image type="content" source="media/new-test-plans-page/import-test-suites.png" alt-text="test suites tree import page":::
 
 It is now easier to reuse the suites you have created already and import them into the current suite/plan. You can select the project, test plan, and test suite from which you want to import the tests. Depending upon the suite selected, the entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone/copy. 
 
 
 <a name="definetab"></a>
+
 ## Define tab
 
-![define tab page](media/new-test-plans-page/define-tab-toolbar.png)
-
+:::image type="content" source="media/new-test-plans-page/define-tab-toolbar.png" alt-text="define tab page":::
 
 Define tab lets you collate, add, and manage test cases for a test suite. Whereas the execute tab is for assigning test points and executing them. 
 
@@ -146,7 +141,7 @@ The Define tab allows you to perform the following tasks:
 
 **Context menu options**
 
-![define tab context menu page](media/new-test-plans-page/define-tab-context-menu.png)
+:::image type="content" source="media/new-test-plans-page/define-tab-context-menu.png" alt-text="define tab context menu page":::
 
 The context menu on the Test case node within the Define tab provides the following options:
 
@@ -161,24 +156,23 @@ The context menu on the Test case node within the Define tab provides the follow
 
 ***Copy/clone test cases (new capability)***
 
-![define tab copy test cases page](media/new-test-plans-page/copy-test-cases.png)
+:::image type="content" source="media/new-test-plans-page/copy-test-cases.png" alt-text="define tab copy test cases page":::
 
 For scenarios where you want to copy/clone a test case, you can use the "Copy test case" option. You can specify the destination project, destination test plan and destination test suite in which to create the copy/cloned test case. In addition, you can also specify whether you want to include existing links/attachments to flow into the cloned copy. 
 
 
 ***View linked items (new capability)***
 
-![define tab view linked items page](media/new-test-plans-page/view-linked-items.png)
+:::image type="content" source="media/new-test-plans-page/view-linked-items.png" alt-text="define tab view linked items page":::
 
 Traceability among test artifacts, requirements and bugs is a critical value proposition of the Test Plans product. Using the "View linked items" option, you can easily look at all the linked Requirements that this test case is linked with, all the Test suites/Test plans where this test case has been used and all the bugs that have been filed as part of test execution. 
 
 
 <a name="executetab"></a>
+
 ## Execute tab
 
-
-![execute tab page](media/new-test-plans-page/execute-tab-toolbar.png)
-
+:::image type="content" source="media/new-test-plans-page/execute-tab-toolbar.png" alt-text="execute tab page":::
 
 Define tab lets you collate, add and manage test cases for a test suite. Whereas the execute tab is for assigning test points and executing them. 
 
@@ -203,7 +197,7 @@ The Execute tab allows you to perform the following tasks:
 
 **Context menu options**
 
-![execute tab context menu page](media/new-test-plans-page/execute-tab-context-menu.png)
+:::image type="content" source="media/new-test-plans-page/execute-tab-context-menu.png" alt-text="execute tab context menu page":::
 
 The context menu on the Test point node within the Execute tab provides the following options:
 
@@ -213,19 +207,13 @@ The context menu on the Test point node within the Execute tab provides the foll
 - *Open/edit test case work item form*: This option allows you to edit a Test case using the work item form wherein you edit the work item fields including test steps.
 - *Assign tester*: This option allows you to assign the test points to testers for test execution.
 - *View test result*: This option allows you to view the latest test outcome details including the outcome of each test step, comments added or bugs filed. 
-- *View execution history*: This option allows you to view the entire execution history for the selected test point. It opens up a new page wherein you can adjust the filters to view the execution history of not just the selected test point but also for the entire test case. 
+- *View execution history*: This option allows you to view the execution history for the test case in a side panel. You can move across the test points or open the detailed execution history from the panel - refer below image
 
+:::image type="content" source="media/new-test-plans-page/execute-tab-execution-history.png" alt-text="execute tab execution history":::
 
 <a name="feedback"></a>
+
 ## Provide feedback
 Thank you for all the feedback you have provided on this page. We have tried to address most of the feedback submitted and have filled all the functionality gaps. As such, we are reaching towards the end of this journey and plan to pull out the old page soon. 
 
-Reach us at `devops_tools@microsoft.com` to share your thoughts on the new page. In the process, share screenshots as appropriate.
-
->[!IMPORTANT]
-> When sending feedback email, you may receive the following notification:
->
-> `The group <group> only accepts messages from people in its organization or on its allowed senders list, and your email address isn't on the list.`
->
-> Even if you receive this message, your feedback to `devops_tools@microsoft.com` is getting through.
-> Thank you for your feedback and patience while we resolve the issue that is causing the message. 
+Reach us at [community forum](https://developercommunity.visualstudio.com/content/problem/post.html?space=21) for any queries. In the process, share screenshots as appropriate.

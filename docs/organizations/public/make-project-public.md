@@ -16,7 +16,7 @@ ms.date: 02/03/2020
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this article, learn how to change the visibility of your project to and from public or private. Users who aren't signed in to your organization have read-only access to public projects on Azure DevOps. Private projects, on the other hand, require users to be granted access to the project and signed in to access the services.
+Learn how to change the visibility of your project to and from public or private. Users who aren't signed in to your organization have read-only access to public projects on Azure DevOps. Private projects, on the other hand, require users to be granted access to the project and signed in to access the services.
 You can easily switch a private project to a public project, and vice-versa.  Before you do so, review the notes provided in [Private-to-public migration checklist](migration-checklist.md). 
 
 > [!TIP]  

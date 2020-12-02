@@ -81,7 +81,7 @@ In addition to permission assignments, you manage security for several resources
 
 1. From the web portal **Build-Release** hub, **Releases** page, open the Security dialog for all release pipelines.
 
-   <img src="media/set-build-release-permissions/set-release-permission-open-dialog.png" alt="Open the security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
+   <img src="media/set-build-release-permissions/set-release-permission-open-dialog.png" alt="Open the security dialog for a release pipeline." style="border: 1px solid #C3C3C3;" />
 
    If you want to manage the permissions for a specific release, then open the Security dialog for that release.
 
@@ -218,7 +218,7 @@ You will need to be a member of the Project Collection Administrator group to ma
 
 1. Click **Deployment Pools**, and then open the **Security** dialog for all deployment pools.    
 
-   ![Open the Roles tab for a service connection](media/manage-roles/open-security-deployment-pools.png) 
+   ![Open the Security dialog for all deployment pools.](media/manage-roles/open-security-deployment-pools.png) 
 
    If you want to manage the permissions for a specific deployment group, then open the Security dialog for that group.
 

@@ -101,10 +101,10 @@ To learn more, see these articles:
 A number of notifications are predefined for each project. Notifications are based on subscription rules. Subscriptions arise from the following areas:
 
 - [Out-of-the-box or default subscriptions](../../notifications/oob-built-in-notifications.md).
-- [Team notifications](../../notifications/howto-manage-team-notifications.md), managed by a team administrator.
+- [Team notifications](../../notifications/manage-team-group-global-organization-notifications.md), managed by a team administrator.
 - Project notifications, managed by a member of the Project Administrators group.
 
-If users believe they're getting too many notifications, they can [opt out of a subscription](../../notifications/howto-manage-personal-notifications.md). 
+If users believe they're getting too many notifications, they can [opt out of a subscription](../../notifications/manage-your-personal-notifications.md). 
 
 > [!div class="mx-imgBorder"]  
 > ![Personal notifications](../../user-guide/media/services/personal-notifications.png) 
@@ -116,7 +116,7 @@ If users believe they're getting too many notifications, they can [opt out of a 
 
 To add new features and capabilities to Azure Boards, install extensions from the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). You can install [free, preview, or paid](../../marketplace/faq-extensions.md#difference) 
 
-To learn more, see [Install free extensions for Azure DevOps](../../marketplace/install-extension.md). To learn about building your own Azure DevOps extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
+To learn more, see [Install free extensions for Azure DevOps](../../marketplace/install-extension.md). To learn about building your own Azure DevOps extensions, see [developing](../../extend/overview.md) and [publishing](../../extend/publish/overview.md) extensions.
 
 ::: moniker-end
 
@@ -140,6 +140,3 @@ This example shows that **Test Plans** has been disabled:
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)  
 - [Enable a preview feature](../../project/navigation/preview-features.md)   
 - [Get started as an administrator for Azure DevOps](../../user-guide/project-admin-tutorial.md)
-
-
-

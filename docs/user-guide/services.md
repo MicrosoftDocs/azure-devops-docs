@@ -9,8 +9,8 @@ ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
-ms.date: 05/19/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
+ms.date: 11/11/2020
 ---
 
 # What features and services do I get with Azure DevOps?
@@ -48,7 +48,7 @@ From **Dashboards**, you gain access to user-configurable dashboards.
 
 ::: moniker range=">= azure-devops-2019"
 
-![Azure DevOps Services, main](media/dashboard-overview.png)
+![Azure DevOps Services, Dashboards.](media/dashboard-overview.png)
 
 ::: moniker-end
 
@@ -284,7 +284,7 @@ Service hooks enable you to complete tasks on other services when events happen 
 
 The following services are available as the target of service hooks. To learn about other apps and services that integrate with Azure DevOps, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
-For the latest set of supported services, see [Integrate with service hooks](../service-hooks/index.md).
+For the latest set of supported services, see [Integrate with service hooks](../service-hooks/overview.md).
 
 ## Cloud-hosted services based on usage
 
@@ -301,7 +301,7 @@ Azure provides cloud-hosted services to support application development and depl
 
 To browse the directory of integrated services, features, and bundled suites, see [Azure products](https://azure.microsoft.com/services/).  
 
-For continuous delivery to Azure from Azure DevOps Services, see [Automatically build and deploy to Azure web apps or cloud services](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/).
+For continuous delivery to Azure from Azure DevOps Services, see [Automatically build and deploy to Azure web apps or cloud services](/azure/cloud-services/cloud-services-choose-me).
 
 ## Administrative services
 

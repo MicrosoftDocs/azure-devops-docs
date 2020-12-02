@@ -178,7 +178,7 @@ When finished, you may choose to rename columns.
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
+	> ![Rename the query to something more meaningful.](media/odatapowerbi-pipelines/renamequery.png)
   
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 

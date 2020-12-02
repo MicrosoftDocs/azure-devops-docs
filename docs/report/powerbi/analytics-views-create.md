@@ -77,7 +77,7 @@ Enter a name for the view and provide a description. To allow others to view and
 
 Specify filters to reduce the number of results returned by your view. In the work items section, you can add different filters on work item fields to scope your data.
 > [!div class="mx-imgBorder"]
-> ![Analytics views General](media/editable-views/work-items-default.png)
+> ![Specify Work items filters.](media/editable-views/work-items-default.png)
 
 > [!TIP]
 > Scope your data to generate reports that quickly refresh. For large datasets, refreshing non-filtered views can fail. To narrow your results, add the right set of filters. The more filters you add, the faster the view loads and refreshes in Power BI.

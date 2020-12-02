@@ -41,7 +41,7 @@ A development task is a small piece of development work that stems from a requir
   
  Consider using design patterns, object-oriented design, structural models, modeling languages, entity relationship models, and other techniques in the guidelines for the design that is determined for your team. It is also a good idea to document the rationale for key decisions that were made. For example, if there is a significant effect on cost, schedule, or technical performance, document the reason for the decisions behind these effects, and include that information in your design.  
   
- After you create the necessary design documents, store them where your team members can share them. For more information, see [Manage documents and document libraries](../../../../report/sharepoint-dashboards/manage-documents-and-document-libraries.md).  
+ After you create the necessary design documents, store them where your team members can share them. For more information, see [Manage documents and document libraries](/previous-versions/azure/devops/report/sharepoint-dashboards/manage-documents-and-document-libraries).  
  
 
 <a name="DesignReview"></a>
@@ -123,7 +123,7 @@ The lead developer should organize the code review by identifying the reviewers,
 
 ## Integrate changes  
 
- The final step is to integrate the changes by checking them in to version control. Before code is checked in, any tests that are required by your process should be performed. For more information about how to check code for problems before it is checked in, see [Enhancing Code Quality with Team Project Check-in Policies](https://msdn.microsoft.com/library/dd264876).  
+ The final step is to integrate the changes by checking them in to version control. Before code is checked in, any tests that are required by your process should be performed. For more information about how to check code for problems before it is checked in, see [Enhancing Code Quality with Team Project Check-in Policies](/visualstudio/code-quality/enhancing-code-quality-with-team-project-check-in-policies).  
   
  If the work item that is associated with the changes is a scenario or a quality of service requirement of which you are not the owner, notify the owner that the changes are complete. Set the task work item to Resolved, and assign it to one of the testers who created the test cases for the work item.  
   

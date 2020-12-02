@@ -13,8 +13,6 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-## Overview
-
 Set up permissions to control who can read and update the code in a branch on your Git repo.
 You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository).
 

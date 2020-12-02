@@ -7,7 +7,7 @@ ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 04/23/2020
 ---
 
@@ -105,7 +105,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
     ![Permissions for an area node](media/set-permissions-area-node-dialog.png)  
 
-    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and groups](about-permissions.md). 
+    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and inheritance](about-permissions.md). 
 
 ::: moniker-end
 
@@ -125,7 +125,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 1. Choose the ... context menu for the node you want to manage and select **Security**.  
 
-    ![Open the security dialog](media/set-permissions-area-node-open.png)
+    ![In the context menu, select Security.](media/set-permissions-area-node-open.png)
 
 ::: moniker-end   
 
@@ -137,7 +137,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 1. Choose the context menu for the node you want to manage.  
 
-    ![Open the security dialog](../../reference/media/ALM_CW_OpenSecurityDialog.png)  
+    ![Choose the context menu for the node you want to manage.](../../reference/media/ALM_CW_OpenSecurityDialog.png)  
 
 2. Select the group or team member, and then change the permission settings. If you don't see the group you want, try adding it first. 
 
@@ -145,14 +145,14 @@ You define both areas and iterations for a project from the **Project Settings>W
 
     ![Permissions for an area node](media/set-permissions-area-node-dialog.png)  
 
-    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and groups](about-permissions.md). 
+    You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and inheritance](about-permissions.md). 
 
 ::: moniker-end
 
 
 <a id="work-item-queries"></a>
 
-## Define and edit queries or query folders
+## Set permissions on queries or query folders
 
 You can specify who can add or edit query folders or queries at the object-level. 
 To manage permissions for a query or query folder, you must be the creator of the query or folder, a member of the Project Administrators or Project Collection Administrators group, or granted explicit access through the object's Security dialog. 
@@ -247,6 +247,16 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 > Each process is a securable unit and has individual access control lists (ACLs) that govern creating, editing, and deleting inherited processes.  At the collection level, project collection administrators can choose which processes can be inherited from and by whom. When you create a new inherited process, the process creator as well as project collection administrators have full control of the process and can also set individual ACLs for other users and groups to edit and delete the process.
 
 ::: moniker-end
+
+
+<! --- 
+<a id="tags" /> 
+
+## Set permissions on work item tags
+
+By default, all users of the Contributors group can create and add tags to work items.  
+
+-->  
 
 ::: moniker range="<= azure-devops-2019"  
 

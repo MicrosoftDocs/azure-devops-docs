@@ -208,7 +208,7 @@ To learn more, see [Link user stories, issues, bugs, and other work items](../ba
 You can remove a dependency by choosing the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon from the linked work item and choose **Remove Dependency Link** option from the menu. 
 
 > [!div class="mx-imgBorder"]  
-> ![Create links manually](media/tracker/remove-dependency-link.png)
+> ![Remove dependency links.](media/tracker/remove-dependency-link.png)
 
 Optionally, you can remove the link from the work item's **Links** tab. 
 
@@ -217,7 +217,7 @@ Optionally, you can remove the link from the work item's **Links** tab.
 To open a set of dependent work items, select them in the same way you would via a [bulk edit](../backlogs/bulk-modify-work-items.md), choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon from one of the selected linked work items and choose **Open in Query** option from the menu. 
 
 > [!div class="mx-imgBorder"]  
-> ![Create links manually](media/tracker/open-as-query.png)
+> ![Create a query of dependencies.](media/tracker/open-as-query.png)
 
 A new tab opens to the Query Results page. 
 
@@ -302,7 +302,7 @@ The Incorrect Flow  view shows those dependencies that are out of order. At leas
 The Risk Graph provides a visualization of how dependencies flow from Consumer team to Producer team, or from Producer to Consumers. The graph allows a team to, at a glance, understand the magnitude of dependencies and level of risks associated. In addition, the risk graph view demonstrates the value of linking dependencies and laddering them up to Stories. 
 
 > [!div class="mx-imgBorder"]  
-> ![Dependency Tracker Risk Graph, Consuming From](media/tracker/risk-graph-1.png)
+> ![Dependency Tracker Risk Graph](media/tracker/risk-graph-1.png)
 
 There are two views: **Consuming From** and **Producing For**. The workflow state color coding is configurable. The width of the lines indicate how many dependencies exist in that area, the thicker the link the more dependencies as indicated in the legend.
 

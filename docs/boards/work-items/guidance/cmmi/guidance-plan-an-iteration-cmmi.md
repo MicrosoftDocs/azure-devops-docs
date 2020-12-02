@@ -24,7 +24,7 @@ Developing software in iterations means that you divide your work into increment
 ## Create tasks to implement and test each requirement  
  The iteration plan is represented by the list of tasks that are scheduled for the iteration. Each task is linked to the product requirement that it implements.  
   
- The task list is visible in the [taskboard](https://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3), Work Breakdown query, and on the [Progress Dashboard](https://msdn.microsoft.com/4aa21c4a-651b-4cec-a204-59524abdae82).  
+ The task list is visible in the [taskboard](../../../sprints/assign-work-sprint.md), Work Breakdown query, and on the [Progress Dashboard](/previous-versions/azure/devops/report/sharepoint-dashboards/progress-dashboard-agile-cmmi).  
   
  At the start of the iteration, the team reviews the requirements that are scheduled for this iteration and creates task work items. The task work items describe the work (such as design, development, and testing) that is required to complete the requirement.  
   
@@ -52,7 +52,7 @@ Developing software in iterations means that you divide your work into increment
  Kick off the iteration with a mini-version of the project launch. Bring the team together. Outline the goals and the scope of the iteration. Discuss and present the plan and any targets. Ensure that all team members have enough context to continue with the work in a self-organizing manner. Make time and space for questions from team members, and record any issues or risks that are brought up during the meeting. Store these as minutes in the project portal. As a project manager, follow up by creating risk and issue work items, as appropriate.  
   
 ##  <a name="Tracking"></a> Track an iteration  
- Throughout the iteration, you can monitor its progress daily by using the burndown chart shown on the taskboard, or the reports that are provided with the template. You will want to pay extra attention to the [Remaining Work](https://msdn.microsoft.com/library/dd380673.aspx), [Unplanned Work](https://msdn.microsoft.com/library/ee707132.aspx), and [Requirements Overview](https://msdn.microsoft.com/library/ee461517.aspx) to make sure that the iteration is tracking against expectations.  
+ Throughout the iteration, you can monitor its progress daily by using the burndown chart shown on the taskboard, or the reports that are provided with the template. You will want to pay extra attention to the [Remaining Work](../../../../report/sql-reports/remaining-work-report.md), [Unplanned Work](../../../../report/sql-reports/unplanned-work.md), and [Requirements Overview](../../../../report/sql-reports/requirements-overview-report-cmmi.md) to make sure that the iteration is tracking against expectations.  
   
 ##  <a name="AdditionalResources"></a> Additional resources  
  For more information, see the following Web resources:  

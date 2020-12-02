@@ -53,7 +53,7 @@ You can use the Bug Trends report to help track the rate at which your team is d
   
 - Specify the **Priority** and **Severity** of each bug during triage.  
   
-  You can use the Triage workbook to quickly update the iteration, area, state, priority, and severity of bugs. For more information, see [Workbooks](../sharepoint-dashboards/workbooks.md).  
+  You can use the Triage workbook to quickly update the iteration, area, state, priority, and severity of bugs. For more information, see [Workbooks](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks).  
   
 ##  <a name="Duration"></a> Setting the Duration of the Sprint or Iteration  
  To understand the bug trends for your current iteration, the start and end dates for the report must match those of your current iteration cycle.  
@@ -113,8 +113,8 @@ You can use the Bug Trends report to help track the rate at which your team is d
 2.  Click **View Report**.  
   
 ## Related notes  
- [Bugs](../sharepoint-dashboards/bugs-dashboard-agile-cmmi.md)   
- [Workbooks](../sharepoint-dashboards/workbooks.md)   
+ [Bugs](/previous-versions/azure/devops/report/sharepoint-dashboards/bugs-dashboard-agile-cmmi)   
+ [Workbooks](/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks)   
  [Bug Status](bug-status-report.md)   
  [Reactivations](reactivations-report.md)   
  [Reporting Services Reports](reporting-services-reports.md)

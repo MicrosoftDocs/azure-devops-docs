@@ -16,8 +16,9 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [version-vsts-tfs-2018](../includes/version-vsts-tfs-2018.md)]
 
-> [!NOTE]  
-> This article applies to Azure DevOps, TFS 2018 Update 2, and later versions. For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+[!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
+
+ For certain activities, when you select **Team members by role**, you can choose to have the user that initiated the activity receive a notification. This notification is controlled by the **Skip initiator** checkbox. By default, this box is checked, meaning the user that starts the change isn't notified about it.
 
 Subscription logging is a valuable tool for troubleshooting.  It provides diagnostic information from the notifications pipeline and is disabled by default.  Once enabled, up to 25 logs, or one hour's worth of logs, are collected for the subscription.
 
@@ -41,7 +42,7 @@ Complete the following steps to enable subscription logging:
 
 Get all subscription event processing logs by entering the following URL in your browser:
 
-`https://{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
+`https://dev.azure.com/{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
 
 * _organization_ is your organization (for example, dev.azure.com/fabrikam-fiber)
 * _date_ is a date time specification (for example, **2018-06-29** or **2018-06-29 02:00**)
@@ -55,7 +56,7 @@ The result is JSON-formatted logging information.
 
 Retrieve all notification delivery logs in a given time frame by entering the URL in your browser.
 
-`https://{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
+`https://dev.azure.com/{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
 
 * _organization_ is your organization (for example, dev.azure.com/fabrikam-fiber)
 * _date_ is a date time specification (for example, **2018-06-29** or **2018-06-29 02:00**)

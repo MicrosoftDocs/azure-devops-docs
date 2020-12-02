@@ -13,8 +13,6 @@ ms.custom: subject-armqs
 
 Get started with [Azure Resource Manager templates (ARM templates)](/azure/azure-resource-manager/templates/overview) by deploying a Linux web app with MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
 
-[!INCLUDE [About Azure Resource Manager](~/../azure-docs/includes/resource-manager-quickstart-introduction.md)]
-
 ## Prerequisites
 
 Before you begin, you need:
@@ -94,7 +92,7 @@ The template defines several resources:
     The task references both the artifact you built with the Copy Files task and your pipeline variables. Set these values when   configuring your task.
 
     - **Deployment scope (deploymentScope)**: Set the deployment scope to `Resource Group`. You can target your deployment to a management group, an Azure subscription, or a resource group. 
-    - **Azure Resource Manager connection (azureResourceManagerConnection)**: Select your Azure Resource Manager service connection. To configure new service connection, select the Azure subscription from the list and click **Authorize**. See [Connect to Microsoft Azure](/azure/devops/pipelines/library/connect-to-azure?view=azure-devops) for more details
+    - **Azure Resource Manager connection (azureResourceManagerConnection)**: Select your Azure Resource Manager service connection. To configure new service connection, select the Azure subscription from the list and click **Authorize**. See [Connect to Microsoft Azure](../../../library/connect-to-azure.md) for more details
     - **Subscription (subscriptionId)**: Select the subscription where the deployment should go.
     - **Action (action)**: Set to `Create or update resource group` to create a new resource group or to update an existing one. 
     - **Resource group**: Set to`ARMPipelinesLAMP-rg` to name your new resource group. If this is an existing resource group, it will be updated.
@@ -134,4 +132,3 @@ You can also use an ARM template to delete resources. Change the `action` value 
 
 > [!div class="nextstepaction"]
 > [Create your first ARM template](/azure/azure-resource-manager/templates/template-tutorial-create-first-template)
-

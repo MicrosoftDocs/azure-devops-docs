@@ -74,7 +74,7 @@ If your team has a large and complex codebase or if you want your workspace to c
 
 #### Q: Can I reuse and share folder mappings?
 
-**A:** Yes. If you want to reuse or share folder mappings with other team members, you can copy the folder mappings. Simply open the shortcut menu in the **Working folders** list and choose **Copy**. To reuse the folder mappings, paste them into another version control workspace or a [build definition workspace](../../pipelines/build/repository.md). To share the folder mappings with your teammates, paste them into a text file and then share the file.
+**A:** Yes. If you want to reuse or share folder mappings with other team members, you can copy the folder mappings. Simply open the shortcut menu in the **Working folders** list and choose **Copy**. To reuse the folder mappings, paste them into another version control workspace or a [build definition workspace](../../pipelines/repos/index.md). To share the folder mappings with your teammates, paste them into a text file and then share the file.
 
 #### Q: What does "Cloaked" mean?
 

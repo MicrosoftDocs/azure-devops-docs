@@ -104,7 +104,7 @@ and [Use UI Automation To Test Your Code](/visualstudio/test/use-ui-automation-t
 * Tests that use the .NET core framework **can** be associated with a test case
   workitem when using Visual Studio 15.9 Preview 2 or later.
   To run the .NET core tests the appropriate target framework must be specified
-  in a [runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
+  in a [runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
   However, these tests cannot be run using Microsoft Test Manager and XAML builds.
 * Tests that use other test frameworks such as Chutzpah (for JavaScript tests
   such as Mocha or QUnit), or Jest **cannot** be associated with a test case.
@@ -115,9 +115,9 @@ and [Use UI Automation To Test Your Code](/visualstudio/test/use-ui-automation-t
 
 **A**: If you are using a XAML build in Azure Pipelines or TFS, you can run tests
 that you have associated in a Build-Deploy-Test workflow using a
-[Lab environment](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
+[Lab environment](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 You can also run tests using Microsoft Test Manager and a
-[Lab environment](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
+[Lab environment](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 
 <a name="open-in-vs"></a>
 ### Q: Can I configure work items to open in Visual Studio?
@@ -130,8 +130,8 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 
 ## See Also
 
-* [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
+* [Associate automated test results with requirements](../pipelines/test/requirements-traceability.md)
 * [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
-* [Run automated tests with Microsoft Test Manager](https://docs.microsoft.com/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager?view=azure-devops)
+* [Run automated tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

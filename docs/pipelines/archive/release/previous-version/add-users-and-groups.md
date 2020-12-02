@@ -32,7 +32,7 @@ If you want to restrict access, then you'll want to follow these steps:
 
 1. [Determine the groups you need](#control_access).
 
-1. [Define these groups in TFS](https://msdn.microsoft.com/library/bb558971%28v%3Dvs.140%29.aspx) 
+1. [Define these groups in TFS](../../../../organizations/security/add-users-team-project.md?viewFallbackFrom=vsts) 
    or in [Active Directory](/azure/devops/server/admin/setup-ad-groups).
 
 1. [Add the groups to Release Management, set their permissions, and change the Everyone group permissions](#add_group).

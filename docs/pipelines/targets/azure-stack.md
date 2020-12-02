@@ -18,7 +18,7 @@ monikerRange: '> tfs-2018'
 is an extension of Azure that enables the agility and fast-paced innovation of cloud computing
 through a hybrid cloud and on-premises environment.
 
-> In addition to supporting Azure AD, Azure DevOps Server 2019 can be used to deploy to Azure stack with [Active Directory Federation Services](/azure/azure-stack/azure-stack-create-service-principals#create-a-service-principal-that-uses-a-client-secret-credential) (AD FS) using a [service principal with certificate](https://docs.microsoft.com/azure/devops/release-notes/2018/sprint-141-update#create-azure-service-connection-with-service-principal-that-authenticates-with-a-certificate).
+> In addition to supporting Azure AD, Azure DevOps Server 2019 can be used to deploy to Azure stack with [Active Directory Federation Services](/azure/azure-stack/azure-stack-create-service-principals#create-a-service-principal-that-uses-a-client-secret-credential) (AD FS) using a [service principal with certificate](/azure/devops/release-notes/2018/sprint-141-update#create-azure-service-connection-with-service-principal-that-authenticates-with-a-certificate).
 
 **Prerequisites**
 
@@ -26,9 +26,9 @@ To deploy to Azure stack using Azure Pipelines, ensure the following:
 
 Azure stack requirements:
 
-* Use an Azure Stack integrated system or deploy the [Azure Stack Development Kit (ASDK)](https://docs.microsoft.com/azure-stack/asdk/asdk-install)
+* Use an Azure Stack integrated system or deploy the [Azure Stack Development Kit (ASDK)](/azure-stack/asdk/asdk-install)
 * Use the [ConfigASDK.ps1](https://github.com/esache/Azure-Stack/blob/master/Scripts/ConfigASDK.ps1) PowerShell script to automate ASDK post-deployment steps.
-* Create a [tenant subscription](https://docs.microsoft.com/azure-stack/operator/azure-stack-subscribe-plan-provision-vm) in Azure Stack.
+* Create a [tenant subscription](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm) in Azure Stack.
 * Deploy a Windows Server 2012 Virtual Machine in the tenant subscription. You'll use this server as your build server and to run Azure DevOps Services.
 * Provide a Windows Server 2016 image with .NET 3.5 for a virtual machine (VM). This VM will be built on your Azure Stack as a private build agent.
 
@@ -42,7 +42,7 @@ You must use the full version of the service connection dialog to manually defin
 
 You can then use the service connection in your [build and release pipeline tasks](../tasks/index.md).
 
-For more details, refer to [Tutorial: Deploy apps to Azure and Azure Stack](https://docs.microsoft.com/azure-stack/user/azure-stack-solution-pipeline)
+For more details, refer to [Tutorial: Deploy apps to Azure and Azure Stack](/azure-stack/user/azure-stack-solution-pipeline)
 
 ### Next
 
@@ -68,4 +68,3 @@ The following Azure tasks are validated with Azure Stack:
 To ignore SSL errors, set a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` to the value `true` in the build or release pipeline.
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
-

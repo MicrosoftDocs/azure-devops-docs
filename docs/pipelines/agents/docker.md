@@ -1,28 +1,23 @@
 ---
-title: Running a self-hosted agent in Docker
+title: Run a self-hosted agent in Docker
 ms.topic: conceptual
-description: Instructions for running your pipelines agent in Docker
+description: Instructions for running your Azure Pipelines agent in Docker
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
 ms.date: 05/29/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
-# Running a self-hosted agent in Docker
+# Run a self-hosted agent in Docker
 
-You can set up an Azure Pipelines self-hosted agent to run inside a Windows Server Core (for Windows hosts), or Ubuntu container (for Linux hosts) with Docker.
-This is useful when you want to run agents with some kind of outer orchestration, such as [Azure Container Instances](/azure/container-instances/).
-We'll walk through a complete container example, including handling agent self-update.
+This article provides instructions for running your Azure Pipelines agent in Docker. You can set up a self-hosted agent in Azure Pipelines to run inside a Windows Server Core (for Windows hosts), or Ubuntu container (for Linux hosts) with Docker. This is useful when you want to run agents with outer orchestration, such as [Azure Container Instances](/azure/container-instances/). In this article, you'll walk through a complete container example, including handling agent self-update.
 
-Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. 
-You'll pass a few [environment variables](#environment-variables) to `docker run` which configure the agent to connect to Azure Pipelines or Azure DevOps Server.
-Finally, you'll want to [customize the container](#adding-tools-and-customizing-the-container) to suit your needs.
-Tasks and scripts may depend on specific tools being available on the container's `PATH`, and it is your responsibility to ensure these tools are available.
+Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. You pass a few [environment variables](#environment-variables) to `docker run`, which configures the agent to connect to Azure Pipelines or Azure DevOps Server. Finally, you [customize the container](#add-tools-and-customize-the-container) to suit your needs. Tasks and scripts might depend on specific tools being available on the container's `PATH`, and it's your responsibility to ensure that these tools are available.
 
 ::: moniker range="azure-devops-2019"
 
-This feature requires agent version 2.149 or higher.
-Azure DevOps 2019 did not ship with a compatible agent version.
-However, you can [upload the correct agent package to your application tier](agents.md#can-i-update-my-v2-agents-that-are-part-of-an-azure-devops-server-pool) if you want to run Dockerized agents.
+This feature requires agent version 2.149 or later.
+Azure DevOps 2019 didn't ship with a compatible agent version.
+However, you can [upload the correct agent package to your application tier](agents.md#can-i-update-my-v2-agents-that-are-part-of-an-azure-devops-server-pool) if you want to run Docker agents.
 
 ::: moniker-end
 
@@ -30,32 +25,32 @@ However, you can [upload the correct agent package to your application tier](age
 
 ### Enable Hyper-V
 
-Hyper-V is not enabled by default on Windows.
-In order to provide isolation between containers, it must be enabled.
+Hyper-V isn't enabled by default on Windows.
+If you want to provide isolation between containers, you must enable Hyper-V.
 Otherwise, Docker for Windows won't start.
 
 * [Enable Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 * [Enable Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
 
 > [!NOTE]
-> Virtualization must be enabled on your machine.
-> It is typically enabled by default.
-> However, if Hyper-V install fails, refer to your system documentation for how to enable virtualization.
+> You must enable virtualization on your machine.
+> It's typically enabled by default.
+> However, if Hyper-V installation fails, refer to your system documentation for how to enable virtualization.
 
 ### Install Docker for Windows
 
-If using Windows 10, you can [install Docker Community Edition](https://docs.docker.com/docker-for-windows/install).
-On Windows Server 2016, [install Docker Enterprise Edition](https://docs.docker.com/install/windows/docker-ee).
+If you're using Windows 10, you can install the [Docker Community Edition](https://docs.docker.com/docker-for-windows/install).
+For Windows Server 2016, install the [Docker Enterprise Edition](https://docs.docker.com/install/windows/docker-ee).
 
 ### Switch Docker to use Windows containers
 
-By default, Docker for Windows is configured to use Linux Containers. To allow running the Windows container, please verify that Docker for Windows [is running the Windows daemon](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers).
+By default, Docker for Windows is configured to use Linux containers. To allow running the Windows container, confirm that Docker for Windows [is running the Windows daemon](https://docs.docker.com/docker-for-windows/#switch-between-windows-and-linux-containers).
 
 ### Create and build the Dockerfile
 
-Next, we'll create the Dockerfile.
+Next, create the Dockerfile.
 
-1. Open a command prompt
+1. Open a command prompt.
 2. Create a new directory:
 
     ```shell
@@ -165,23 +160,23 @@ Next, we'll create the Dockerfile.
     This command builds the Dockerfile in the current directory.
 
     The final image is tagged `dockeragent:latest`.
-    You can easily run it in a container as `dockeragent`, since the `latest` tag is the default if no tag is specified.
+    You can easily run it in a container as `dockeragent`, because the `latest` tag is the default if no tag is specified.
 
 ### Start the image
 
-Now that you have created an image, you can spin up a container.
+Now that you have created an image, you can run a container.
 
-1. Open a command prompt
-2. Run the container. This will install the latest version of the agent, configure it, and run the agent targeting the `Default` pool of a specified Azure DevOps or Azure DevOps Server instance of your choice:
+1. Open a command prompt.
+2. Run the container. This installs the latest version of the agent, configures it, and runs the agent. It targets the `Default` pool of a specified Azure DevOps or Azure DevOps Server instance of your choice:
 
     ```shell
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
     ```
 
-You can optionally control the pool and agent work directory using additional [environment variables](#environment-variables).
+Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
-If you want a fresh agent container for every pipeline run, you should pass the [`--once` flag](v2-windows.md#run-once) to the `run` command.
-You must also use some kind of container orchestration system like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/) to start new copies of the container when the work completes.
+If you want a fresh agent container for every pipeline run, pass the [`--once` flag](v2-windows.md#run-once) to the `run` command.
+You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
 
 ## Linux
 
@@ -191,9 +186,9 @@ Depending on your Linux Distribution, you can either install [Docker Community E
 
 ### Create and build the Dockerfile
 
-Next, we'll create the Dockerfile.
+Next, create the Dockerfile.
 
-1. Open a terminal
+1. Open a terminal.
 2. Create a new directory (recommended):
 
     ```shell
@@ -226,7 +221,8 @@ Next, we'll create the Dockerfile.
             libcurl4 \
             libicu60 \
             libunwind8 \
-            netcat
+            netcat \
+            libssl1.0
 
     WORKDIR /azp
 
@@ -236,10 +232,10 @@ Next, we'll create the Dockerfile.
     CMD ["./start.sh"]
     ```
 
-> [!NOTE]
-> Tasks may depend on executables that your container is expected to provide.
-> For instance, you must add the `zip` and `unzip` packages
-> to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
+   > [!NOTE]
+   > Tasks might depend on executables that your container is expected to provide.
+   > For instance, you must add the `zip` and `unzip` packages
+   > to the `RUN apt-get` command in order to run the `ArchiveFiles` and `ExtractFiles` tasks.
 
 5. Save the following content to `~/dockeragent/start.sh`, making sure to use Unix-style (LF) line endings:
 
@@ -338,6 +334,7 @@ Next, we'll create the Dockerfile.
 
     # `exec` the node runtime so it's aware of TERM and INT signals
     # AgentService.js understands how to handle agent self-update and restart
+    # Running it with the --once flag at the end will shut down the agent after the build is executed
     exec ./externals/node/bin/node ./bin/AgentService.js interactive
     ```
 
@@ -350,47 +347,160 @@ Next, we'll create the Dockerfile.
     This command builds the Dockerfile in the current directory.
 
     The final image is tagged `dockeragent:latest`.
-    You can easily run it in a container as `dockeragent`, since the `latest` tag is the default if no tag is specified.
+    You can easily run it in a container as `dockeragent`, because the `latest` tag is the default if no tag is specified.
 
 ### Start the image
 
-Now that you have created an image, you can spin up a container.
+Now that you have created an image, you can run a container.
 
-1. Open a terminal
-2. Run the container. This will install the latest version of the agent, configure it, and run the agent targeting the `Default` pool of a specified Azure DevOps or Azure DevOps Server instance of your choice:
+1. Open a terminal.
+2. Run the container. This installs the latest version of the agent, configures it, and runs the agent. It targets the `Default` pool of a specified Azure DevOps or Azure DevOps Server instance of your choice:
 
     ```shell
     docker run -e AZP_URL=<Azure DevOps instance> -e AZP_TOKEN=<PAT token> -e AZP_AGENT_NAME=mydockeragent dockeragent:latest
     ```
 
-You can optionally control the pool and agent work directory using additional [environment variables](#environment-variables).
+Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
-If you want a fresh agent container for every pipeline run, you should pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
-You must also use some kind of container orchestration system like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/) to start new copies of the container when the work completes.
+If you want a fresh agent container for every pipeline run, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
+You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
 
 ## Environment variables
 
 | Environment variable | Description                                                 |
 |----------------------|-------------------------------------------------------------|
-| AZP_URL              | The URL of the Azure DevOps or Azure DevOps Server instance |
-| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user that has permission to [configure agents](pools-queues.md#creating-agent-pools), at `AZP_URL`    |
-| AZP_AGENT_NAME       | Agent name (default value: the container hostname)          |
-| AZP_POOL             | Agent pool name (default value: `Default`)                  |
-| AZP_WORK             | Work directory (default value: `_work`)                     |
+| AZP_URL              | The URL of the Azure DevOps or Azure DevOps Server instance. |
+| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user who has permission to [configure agents](pools-queues.md#creating-agent-pools), at `AZP_URL`.    |
+| AZP_AGENT_NAME       | Agent name (default value: the container hostname).          |
+| AZP_POOL             | Agent pool name (default value: `Default`).                  |
+| AZP_WORK             | Work directory (default value: `_work`).                     |
 
 
-## Adding tools and customizing the container
+## Add tools and customize the container
 
-In this walkthrough, you created a basic build agent.
-The suggested base Dockerfiles are just that: suggestions.
-You can extend the Dockerfile to include additional tools and their dependencies, or build your own container using this one as a base layer. Just make sure that the following things are left untouched:
+You have created a basic build agent.
+You can extend the Dockerfile to include additional tools and their dependencies, or build your own container by using this one as a base layer. Just make sure that the following are left untouched:
 
-- The `start.sh` script is called by the Dockerfile
-- The `start.sh` script is the last command in the Dockerfile
-- Ensure that derivative containers do not remove any of the dependencies stated by the Dockerfile
+- The `start.sh` script is called by the Dockerfile.
+- The `start.sh` script is the last command in the Dockerfile.
+- Ensure that derivative containers don't remove any of the dependencies stated by the Dockerfile.
 
-## Using Docker within a Docker container
+## Use Docker within a Docker container
 
-In order to use Docker from within a Docker container, you need to bind-mount the Docker socket.
-This has very serious security implications - namely, code inside the container can now run as root on your Docker host.
+In order to use Docker from within a Docker container, you bind-mount the Docker socket.
+
+> [!CAUTION]
+> Doing this has serious security implications. The code inside the container can now run as root on your Docker host.
+
 If you're sure you want to do this, see the [bind mount](https://docs.docker.com/storage/bind-mounts/) documentation on Docker.com.
+
+## Use Azure Kubernetes Service cluster
+
+### Deploy and configure Azure Kubernetes Service 
+
+Follow the steps in [Quickstart: Deploy an Azure Kubernetes Service (AKS) cluster by using the Azure portal](/azure/aks/kubernetes-walkthrough-portal). After this, your PowerShell or Shell console can use the `kubectl` command line.
+
+### Deploy and configure Azure Container Registry
+
+Follow the steps in [Quickstart: Create an Azure container registry by using the Azure portal](/azure/container-registry/container-registry-get-started-portal). After this, you can push and pull containers from Azure Container Registry.
+
+### Configure secrets and deploy a replica set
+
+1. Create the secrets on the AKS cluster.
+
+   ```shell
+    kubectl create secret generic azdevops \
+    --from-literal=AZP_URL=https://dev.azure.com/yourOrg \
+    --from-literal=AZP_TOKEN=YourPAT \
+    --from-literal=AZP_POOL=NameOfYourPool
+    ```
+
+2. Run this command to push your container to Container Registry:
+
+   ```shell
+   docker push <acr-server>/dockeragent:latest
+   ```
+
+3. Configure Container Registry integration for existing AKS clusters.
+
+   ```shell
+   az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-name>
+   ```
+
+4. Save the following content to `~/AKS/ReplicationController.yaml`:
+
+   ```shell
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: azdevops-deployment
+      labels:
+        app: azdevops-agent
+    spec:
+      replicas: 1 #here is the configuration for the actual agent always running
+      selector:
+        matchLabels:
+          app: azdevops-agent
+      template:
+        metadata:
+          labels:
+            app: azdevops-agent
+        spec:
+          containers:
+          - name: kubepodcreation
+            image: AKRTestcase.azurecr.io/kubepodcreation:5306
+            env:
+              - name: AZP_URL
+                valueFrom:
+                  secretKeyRef:
+                    name: azdevops
+                    key: AZP_URL
+              - name: AZP_TOKEN
+                valueFrom:
+                  secretKeyRef:
+                    name: azdevops
+                    key: AZP_TOKEN
+              - name: AZP_POOL
+                valueFrom:
+                  secretKeyRef:
+                    name: azdevops
+                    key: AZP_POOL
+            volumeMounts:
+            - mountPath: /var/run/docker.sock
+              name: docker-volume
+          volumes:
+          - name: docker-volume
+            hostPath:
+              path: /var/run/docker.sock
+   ```
+
+   This Kubernetes YAML creates a replica set and a deployment, where `replicas: 1` indicates the number or the agents that are running on the cluster.
+
+5. Run this command:
+
+   ```shell
+   kubectl apply -f ReplicationController.yaml
+   ```
+
+Now your agents will run the AKS cluster.
+
+## Common errors
+
+If you're using Windows, and you get the following error: 
+
+   ```shell
+   ‘standard_init_linux.go:178: exec user process caused "no such file or directory"
+   ```
+
+Install Git Bash by downloading and installing [git-scm](https://git-scm.com/download/win).
+
+Run this command:
+
+   ```shell
+   dos2unix ~/dockeragent/Dockerfile
+   dos2unix ~/dockeragent/start.sh
+   git add .
+   git commit -m 'Fixed CR'
+   git push
+   ```
+Try again. You no longer get the error.

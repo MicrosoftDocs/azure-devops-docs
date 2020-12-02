@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 04/25/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # What is source control?

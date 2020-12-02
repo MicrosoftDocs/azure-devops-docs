@@ -261,7 +261,7 @@ You can specify the conditions under which each stage runs. By default, a stage 
 
 > [!NOTE]
 >
-> Conditions for failed ('JOBNAME/STAGENAME') and succeeded ('JOBNAME/STAGENAME') as shown in the following example work only for [YAML pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml).
+> Conditions for failed ('JOBNAME/STAGENAME') and succeeded ('JOBNAME/STAGENAME') as shown in the following example work only for [YAML pipelines](?tabs=yaml).
 
 
 #### [YAML](#tab/yaml/)
@@ -302,8 +302,6 @@ stages:
 - stage: B
   condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))
 ```
-
-You cannot currently specify that a stage run based on the value of an output variable set in a previous stage.
 
 ::: moniker-end
 
