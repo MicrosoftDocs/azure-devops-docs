@@ -16712,7 +16712,7 @@
     {
       "source_path": "docs/organizations/billing/buy-load-testing-vs.md",
       "redirect_url": "/azure/devops/organizations/billing/overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
