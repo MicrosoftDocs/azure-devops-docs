@@ -2,13 +2,13 @@
 title: Buy change CI/CD Azure Pipelines
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18, contentperfq4
-description: Learn how to pay for more parallel jobs or decrease jobs in Azure Pipelines.
+description: Learn how to pay for more parallel jobs or reduce jobs in Azure Pipelines.
 ms.technology: devops-billing
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-ms.date: 05/22/2020
+ms.date: 12/02/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -70,7 +70,7 @@ The *free tier* is one parallel job. You also get one free parallel job for each
 
    :::image type="content" source="media/shared/manage-parallel-jobs.png" alt-text="manage parallel jobs image":::
 
-4. Enter your desired amount, and then **Save**.
+4. Enter your wanted amount, and then select **Save**.
 
 
 ## Change quantity of CI/CD
@@ -80,7 +80,7 @@ The *free tier* is one parallel job. You also get one free parallel job for each
   
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Parallel jobs** under Pipelines, and then select either **Purchase parallel jobs** or **Change** for Microsoft-hosted jobs or **Change** for self-hosted jobs.
+3. Select **Parallel jobs** under Pipelines, and then select **Purchase parallel jobs**. Or for Microsoft- or self-hosted jobs, select **Change**.
 
    :::image type="content" source="media/shared/manage-parallel-jobs.png" alt-text="image of manage parallel jobs":::
 
@@ -99,6 +99,6 @@ The *free tier* is one parallel job. You also get one free parallel job for each
 ## Related articles
 - [Set up billing](set-up-billing-for-your-organization-vs.md)
 - [Manage paid access](buy-basic-access-add-users.md)
-- [Buy cloud-based load testing](buy-load-testing-vs.md)
-- [Buy access to TFS test hub](buy-access-tfs-test-hub.md)
+- [Buy access to test hub](buy-access-tfs-test-hub.md)
 - [Add user for billing management](add-backup-billing-managers.md)
+- [Azure DevOps billing overview](overview.md)
