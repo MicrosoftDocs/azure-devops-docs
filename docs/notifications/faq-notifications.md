@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
-## Q" Can I receive emails in plain text?
+## Q: Can I receive emails in plain text?
 
 A: No. Plain text was supported in earlier versions of Azure DevOps, but all emails are now HTML formatted.
 

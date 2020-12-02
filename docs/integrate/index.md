@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-title: Integrating custom apps and third party services with Azure DevOps.
+title: Integrating custom apps and third party services with Azure DevOps
 description: Overview of integrating with Azure DevOps.
 ms.assetid: c9b97ad7-ffd8-4657-8322-74f764eec5c9
 monikerRange: "<= azure-devops"

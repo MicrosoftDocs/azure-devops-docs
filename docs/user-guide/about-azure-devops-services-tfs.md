@@ -18,11 +18,9 @@ ms.date: 11/13/2019
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-Both offerings provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
-
 Azure DevOps Services is the **cloud offering** that provides a scalable, reliable, and globally available hosted service. It's backed by a 99.9% SLA, monitored by our 24/7 operations team, and available in local data centers around the world.
 
-Azure DevOps Server is the **on-premises offering** that's built on a SQL Server back end. Customers usually choose on-premises when they need their data to stay within their network or when they want access to SQL Server reporting services that integrate with Azure DevOps data and tools.  
+Azure DevOps Server is the **on-premises offering** that's built on a SQL Server back end. Customers usually choose on-premises when they need their data to stay within their network or when they want access to SQL Server reporting services that integrate with Azure DevOps Server data and tools.  
 
 Although both offerings provide the same [essential services](services.md), compared with Azure DevOps Server, Azure DevOps Services offers the following added benefits:
 

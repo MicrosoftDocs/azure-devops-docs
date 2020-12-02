@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Build Definitions | REST API Reference for TAzure DevOps Server
+title: Build Definitions | REST API Reference for Azure DevOps Server
 description: Get build definitions programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: 20BE109C-0350-4338-B6BC-522A2200F5CC
 ms.topic: article

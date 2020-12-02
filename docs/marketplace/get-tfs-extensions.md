@@ -173,7 +173,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
    <img alt="Find and upload your downloaded extension" src="./media/get-tfs-extensions/standalone/upload-extension.png" style="border: 1px solid #CCCCCC" />
 
-   [[Why can't I upload extensions?]](faq-extensions.md#q-why-cant-i-upload-extensions-to-azure-devops-server)]
+   [Why can't I upload extensions?](faq-extensions.md#q-why-cant-i-upload-extensions-to-azure-devops-server)
 
 ### Install extension in your project collection
 

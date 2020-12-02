@@ -35,7 +35,7 @@ If you need to lock down specific areas to a select set of contributors, see [pe
 
 ### Software developers
 
-Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or Team Foundation Version Control (TFVC) repository hosted in Azure DevOps . From the web portal or a supported IDE, they can view repositories, check history, and more. 
+Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or Team Foundation Version Control (TFVC) repository hosted in Azure DevOps. From the web portal or a supported IDE, they can view repositories, check history, and more. 
 
 - To get started with using Git, see one of the following resources: 
 	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md)
