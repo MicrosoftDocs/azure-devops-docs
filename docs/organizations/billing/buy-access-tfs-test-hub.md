@@ -50,12 +50,12 @@ To learn more about the requirements to access Azure Test Plans, see [Change acc
 
 2. Based on the number of users who need Azure Test Plans access in Azure DevOps Server, [pay for Basic + Test Plan users](buy-basic-access-add-users.md#assign-users-basic-or-basic--test-plans) in your organization.  
 
-  These users get invited to your organization, but aren't required to use Azure DevOps Services. By assigning Basic + Test Plans, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). 
+    These users get invited to your organization, but aren't required to use Azure DevOps Services. By assigning Basic + Test Plans, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). 
 
-> [!NOTE]
-> These users must sign in to Visual Studio Test Professional with the same credentials that they used to join your organization. 
+    > [!NOTE]
+    > These users must sign in to Visual Studio Test Professional with the same credentials that they used to join your organization. 
 
-1. As the Azure DevOps Server administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-users-team-project). Give them [Basic + Test Plans access](../security/change-access-levels.md) so they can use Azure Test Plans. 
+3. As the Azure DevOps Server administrator, [add these same users](../../organizations/security/add-users-team-project.md#add-users-team-project). Give them [Basic + Test Plans access](../security/change-access-levels.md) so they can use Azure Test Plans. 
 
    Test Plans installs automatically in Azure DevOps Server. 
 
