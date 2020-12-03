@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 ---
 
 
-# Manage your pipelines
+# Manage your pipelines with Azure CLI
 
 You can manage the pipelines in your organization using these `az pipelines` commands:
 
