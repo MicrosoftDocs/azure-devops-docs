@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](includes/version-tfs-2017-rtm.md)]
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 This is a step-by-step guide to using Azure Pipelines to build a GitHub repository.
 
@@ -251,7 +251,7 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Manage your pipeline with Azure CLI
 
