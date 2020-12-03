@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2017'
 
 # Secure and share packages using feed permissions
 
-**Azure DevOps Services | TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 The packages you host in Azure Artifacts are stored in a **feed**. Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
 
@@ -108,7 +108,6 @@ In the edit feed dialog:
 
 ::: moniker-end
 
-
 ## Understanding feeds and views permissions
 
 Feeds are containers that allow users to group packages and control who can access them by modifying the feed permissions.
@@ -169,3 +168,11 @@ If you want to make the packages in a feed available to all users in your organi
 You can also make your packages available to anonymous users with limited access by [creating a public feed](../tutorials/share-packages-publicly.md).
 
 ::: moniker-end
+
+## What's next?
+
+* [Use public feeds to share your package publicly](../../tutorials/share-packages-publicly.md).
+
+* [Delete and recover packages](../../how-to/delete-and-recover-packages.md).
+
+* [Promote a package to a view](../../feeds/views.md).
