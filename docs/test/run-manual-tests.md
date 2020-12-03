@@ -95,11 +95,13 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
    ![Launching the test runner client](media/shared/collect-diagnostic-data-16.png)
 
-1. **Download** and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) if you haven't already set it up.
+1. **Download** and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) if you haven't already set it up:
 
    ![Download and launch Test runner](media/run-manual-tests/tr-atp-launch.png)
 
-1. Choose **Launch** and start testing in the same way as [described above](#run-web) for web apps. See [collect diagnostic data for the test](collect-diagnostic-data.md) for more information about data collection. 
+> [!NOTE]
+> Please check that the Test Runner client is available for your platform. Currently it is only available for x64.
+3. Choose **Launch** and start testing in the same way as [described above](#run-web) for web apps. See [collect diagnostic data for the test](collect-diagnostic-data.md) for more information about data collection. 
 
 [Can I run tests offline and then import the results?](reference-qa.md#runoffline)
 
