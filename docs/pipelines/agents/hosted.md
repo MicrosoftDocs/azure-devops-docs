@@ -331,7 +331,7 @@ If you refer to the server by its DNS name, then make sure that your server is p
   
   where `$(xcodeRoot)` = `/Applications/Xcode_10.1.app`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md#xcode).
 
 #### Xcode
 
@@ -339,7 +339,7 @@ If you refer to the server by its DNS name, then make sure that your server is p
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
 
-  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
+  Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md#xcode).
 
   This command does not work for Xamarin apps. To manually select an Xcode version for building Xamarin apps, see instructions above.
 
