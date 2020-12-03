@@ -95,5 +95,6 @@
     href: https://devblogs.microsoft.com/devops/visual-studio-11-beta-unit-testing-plugins-list/
   - name: Create custom code & plug-ins
     href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
-
+  - name: Load testing (Deprecated)
+    href: load-test/overview.md
 
