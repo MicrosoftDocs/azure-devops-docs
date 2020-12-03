@@ -1,5 +1,4 @@
-- name: Load testing 
-- name: About load testing
+- name: Load testing
   href: overview.md
   - name: Load test with Visual Studio
     href: getting-started-with-performance-testing.md
