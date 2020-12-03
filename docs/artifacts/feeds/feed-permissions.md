@@ -171,8 +171,8 @@ You can also make your packages available to anonymous users with limited access
 
 ## What's next?
 
-* [Use public feeds to share your package publicly](../../tutorials/share-packages-publicly.md).
+* [Use public feeds to share your package publicly](../tutorials/share-packages-publicly.md).
 
-* [Delete and recover packages](../../how-to/delete-and-recover-packages.md).
+* [Delete and recover packages](../how-to/delete-and-recover-packages.md).
 
-* [Promote a package to a view](../../feeds/views.md).
+* [Promote a package to a view](./views.md).
