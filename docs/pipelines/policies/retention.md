@@ -139,11 +139,13 @@ The following information is deleted when a build is deleted:
 The following information is deleted when a run is deleted:
 
 * Logs
-* All artifacts
+* All pipeline and build artifacts 
 * All symbols
 * Binaries
 * Test results
 * Run metadata
+
+Universal packages, Nuget, npm, and other packages are not tied to pipelines retention. 
 
 ::: moniker-end
 
