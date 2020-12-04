@@ -89,7 +89,7 @@ When you get redirected back to the original sign-in page, we recommend that you
 
 ::: moniker range=">= tfs-2013 < azure-devops"
 
-## Troubleshoot TFS connectivity
+## Troubleshoot Azure DevOps Server connectivity
 
 Here's a list of the most frequently reported connection problems and what to do about them. Complete the list in the order indicated.
 
@@ -99,11 +99,11 @@ Here's a list of the most frequently reported connection problems and what to do
 
 2. Verify that your computer is connected to the network and that it can access network resources.
 
-3. Verify that TFS hasn't been taken offline. Talk with your TFS administrator.
+3. Verify that Azure DevOps Server hasn't been taken offline. Talk with your Azure DevOps Server administrator.
 
-4. Check whether your project has been moved to another project collection in TFS. If it has been moved, you must create a connection to the new server name.
+4. Check whether your project has been moved to another project collection in Azure DevOps Server. If it has been moved, you must create a connection to the new server name.
 
-For additional troubleshooting tips, see [TF31002: Unable to connect to this Team Foundation Server](../reference/error/tf31002-unable-connect-tfs.md).
+For additional troubleshooting tips, see [TF31002: Unable to connect to this Azure DevOps Server](../reference/error/tf31002-unable-connect-tfs.md).
 
 ::: moniker-end
 
@@ -113,29 +113,29 @@ For additional troubleshooting tips, see [TF31002: Unable to connect to this Tea
 
 When you use two or more organizations that are linked to Azure AD, the sign-out function might not work as expected. For example, you can't switch between different organizations to connect to multiple organizations that are linked to directory tenants.
 
-When this problem occurs, a blank screen flashes several times. Then, one of the following error messages appears after you connect to or add a new connection in the **Connect to Team Foundation Server** dialog box:
+When this problem occurs, a blank screen flashes several times. Then, one of the following error messages appears after you connect to or add a new connection in the **Connect to Azure DevOps Server** dialog box:
 
-> TF31003: Either you have not entered the necessary credentials, or your user account does not have permission to connect to the Team Foundation Server
+> TF31003: Either you have not entered the necessary credentials, or your user account does not have permission to connect to the Azure DevOps Server
 > 
-> TF31002: Unable to connect to this Team Foundation Server
+> TF31002: Unable to connect to this Azure DevOps Server
 
 To resolve this issue, apply Visual Studio 2013.2 or install a later version from the [Visual Studio download website](https://visualstudio.microsoft.com/downloads).
 
-Another solution is to delete your browser cookies. For more information, see the support article [You can't switch between different organizations in Visual Studio Online](https://support.microsoft.com/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
+Another solution is to delete your browser cookies. For more information, see the support article [You can't switch between different organizations in Visual Studio Codespaces](https://support.microsoft.com/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 < azure-devops"
 
-## Connect to TFS with Secure Sockets Layer
+## Connect to Azure DevOps Server with Secure Sockets Layer
 
-If you connect to a TFS instance that has Secure Sockets Layer (SSL) configured, install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS - Configuring client computers](/azure/devops/server/admin/setup-secure-sockets-layer#config-client-computers). 
+If you connect to an Azure DevOps Server instance that has Secure Sockets Layer (SSL) configured, install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for Azure DevOps Server - Configuring client computers](/azure/devops/server/admin/setup-secure-sockets-layer#config-client-computers). 
 
 ## Clear the cache on client computers
 
-When the on-premises TFS configuration changes, such as when you move or split a project collection, clear the cache.
+When the on-premises Azure DevOps Server configuration changes, such as when you move or split a project collection, clear the cache.
 
-1. Sign in to your client computer for TFS by using the credentials of the user whose cache you want to clear.
+1. Sign in to your client computer for Azure DevOps Server by using the credentials of the user whose cache you want to clear.
 
 2. Close any open instances of Visual Studio.
 

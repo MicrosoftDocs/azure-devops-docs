@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Git Items | REST API Reference for Team Foundation Server
-description: Work with Git items (files and folders) programmatically using the REST APIs for Team Foundation Server.
+title: Git Items | REST API Reference for Azure DevOps Server
+description: Work with Git items (files and folders) programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: B9F8F05A-1852-49CE-8B3E-75A30D41487A
 ms.topic: article
 ms.author: chcomley
@@ -46,7 +46,7 @@ https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repositor
 | Parameter              | Type    | Default | Notes
 |:-----------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance               | string  |         | [Azure DevOps organization](/rest/api/azure/devops/) ({account}.visualstudio.com) or [TFS server](/rest/api/azure/devops/) ({server:port}).
+| instance               | string  |         | [Azure DevOps organization](/rest/api/azure/devops/) ({account}.visualstudio.com) or [Azure DevOps server](/rest/api/azure/devops/) ({server:port}).
 | project                | string  |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository             | string  |         | ID or name of the [repository](./repositories.md).
 | Query

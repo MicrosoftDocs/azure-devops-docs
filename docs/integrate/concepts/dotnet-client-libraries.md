@@ -1,6 +1,6 @@
 ---
 title: .NET Client Libraries
-description: Easily integrate with Azure DevOps and Team Foundation Server (TFS) from apps and services on Windows.
+description: Easily integrate with Azure DevOps from apps and services on Windows.
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
 ms.technology: devops-ecosystem
 ms.topic: conceptual
@@ -32,13 +32,13 @@ Client libraries are available for .NET developers who build Windows apps and se
 
 
 > [!NOTE]
-> REST-based clients only work with Azure DevOps and TFS 2015 (not previous versions of TFS)
-> To learn more about extending and integrating with  Azure DevOps and Team Foundation Server using the client libraries,
+> REST-based clients only work with Azure DevOps and TFS 2015 or later.
+> To learn more about extending and integrating with  Azure DevOps using the client libraries,
 > see [Extending Team Foundation](/previous-versions/visualstudio/visual-studio-2013/bb130146(v=vs.120))
 
-### Package and TFS version-mapping table
+### Package and Azure DevOps Server version-mapping table
 
-|Package version|TFS Version|
+|Package version|Azure DevOps Server Version|
 |---------------|-----------|
 |17.x.x| `Azure DevOps Server vNext`|
 |16.153.x| `versions >= Azure DevOps Server 2019 Update 1`|
@@ -90,7 +90,7 @@ PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
 
 ## Pattern for use
 
-Create an authenticated connection to Azure DevOps or TFS, and then get an HttpClient for the service you want to work with, and finally call methods against that service.
+Create an authenticated connection to Azure DevOps, and then get an HttpClient for the service you want to work with, and finally call methods against that service.
 See the following examples:
 
 ```csharp

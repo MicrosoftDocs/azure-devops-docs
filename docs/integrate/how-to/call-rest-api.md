@@ -1,6 +1,6 @@
 ---
-title: Get started with the REST APIs for Azure DevOps and TFS
-description: Learn the basic patterns for using the REST APIs for Azure DevOps and Team Foundation Server.
+title: Get started with the REST APIs for Azure DevOps
+description: Learn the basic patterns for using the REST APIs for Azure DevOps.
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.technology: devops-ecosystem
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Integrate your app with Azure DevOps Services and Team Foundation Server (TFS) using these REST APIs.
+Integrate your app with Azure DevOps using these REST APIs.
 
 These APIs follow a common pattern: 
 
@@ -86,13 +86,13 @@ you can <a href="https://visualstudio.microsoft.com/docs/setup-admin/team-servic
 
 Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for Azure DevOps Services including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
-## TFS
+## Azure DevOps Server
 
-For TFS, `instance` is `{server:port}`. The default port for a non-SSL connection is 8080.
+For Azure DevOps Server, `instance` is `{server:port}`. The default port for a non-SSL connection is 8080.
 
 The default collection is `DefaultCollection`, but you can use any collection.
 
-Here's how to get a list of projects from TFS using the default port and collection across SSL:
+Here's how to get a list of projects from Azure DevOps Server using the default port and collection across SSL:
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{server}/DefaultCollection/_apis/projects?api-version=2.0
@@ -248,7 +248,7 @@ Azure DevOps Services supports CORS. This enables JavaScript code served from a 
 <a name="versions"></a>
 ## Versioning
 
-Azure DevOps Services and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
+Azure DevOps REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
 
 ### Guidelines
 
