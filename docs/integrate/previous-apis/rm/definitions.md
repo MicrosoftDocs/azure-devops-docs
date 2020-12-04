@@ -1,6 +1,6 @@
 ---
-title: Release Definitions | VSTS REST API Reference
-description: Get release definitions programmatically using the REST APIs for VSTS.
+title: Release Definitions | REST API Reference
+description: Get release definitions programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: e61ec615-19fb-4ce9-a704-5b5e27221d5e
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
@@ -27,7 +27,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Parameter     | Type   | Notes
 |:--------------|:-------|:------------
 | URL
-| account       | string | Your VSTS organization.
+| account       | string | Your Azure DevOps organization.
 | project       | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -343,7 +343,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Parameter    | Type   | Notes
 |:-------------|:-------|:------------
 | URL
-| account      | string | Your VSTS organization.
+| account      | string | Your Azure DevOps organization.
 | project      | string | [Project](../tfs/projects.md) ID or name.
 | definitionId | int    | ID of the release definition.
 | Query
@@ -685,7 +685,7 @@ POST https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/r
 | Parameter    | Type   | Notes
 |:-------------|:-------|:------------
 | URL
-| account      | string | Your VSTS organization.
+| account      | string | Your Azure DevOps organization.
 | project      | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -1034,7 +1034,7 @@ DELETE https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis
 | Parameter     | Type   | Notes
 |:--------------|:-------|:------------
 | URL
-| account       | string | Your VSTS organization.
+| account       | string | Your Azure DevOps organization.
 | project       | string | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int    | ID of the release definition.
 | Query
@@ -1059,7 +1059,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Parameter     | Type   | Notes
 |:--------------|:-------|:------------
 | URL
-| account       | string | Your VSTS organization.
+| account       | string | Your Azure DevOps organization.
 | project       | string | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int    | ID of the release definition.
 | Query
@@ -1119,7 +1119,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Parameter     | Type   | Notes
 |:--------------|:-------|:------------
 | URL
-| account       | string | Your VSTS organization.
+| account       | string | Your Azure DevOps organization.
 | project       | string | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int    | ID of the release definition.
 | revisionId  | int    | ID of the revision

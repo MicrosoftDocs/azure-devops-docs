@@ -1,7 +1,7 @@
 ---
 title: Navigating the notifications UI
 titleSuffix: Azure DevOps 
-description: Navigate and explore the notifications pages in Azure DevOps and Team Foundation Server (TFS)  
+description: Navigate and explore the notifications pages in Azure DevOps.  
 ms.technology: devops-collab
 ms.reviewer: wismythe
 ms.author: chcomley

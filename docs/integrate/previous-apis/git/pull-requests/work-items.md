@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Git Pull Request Work Item Linking | REST API Reference for Team Foundation Server
-description: Work with Git pull request work item linking programmatically using the REST APIs for Team Foundation Server.
+title: Git Pull Request Work Item Linking | REST API Reference for Azure DevOps Server
+description: Work with Git pull request work item linking programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: BFED54AE-D618-48D7-9F0E-11D4C107232E
 ms.topic: article
 ms.author: chcomley
