@@ -51,7 +51,7 @@ To adjust the timeline of the graph, choose **Filter** :::image type="icon" sour
 
 :::image type="content" source="media/historical-graph-pools/historical-graph-filter.png" alt-text="Graph duration.":::
 
-For self-hosted agent pools you can view the number of online agents, the number of queued jobs, and the number of running jobs for each graphed interval. For the 1 day interval, you can view data per hour, and for the other intervals you can view it per day. Pool data is aggregated at a granularity of 10 minutes, and the number of running jobs is plotted based on the maximum number of running jobs for the specified interval of time. In this example there are two online agents, but in some areas there are four running jobs due to the way the pool data is aggregated.
+For the 1 day interval, you can view data per hour, and for the other intervals you can view it per day. Pool data is aggregated at a granularity of 10 minutes, and the number of running jobs is plotted based on the maximum number of running jobs for the specified interval of time. In this example there are two online agents, but in some areas there are four running jobs due to the way the pool data is aggregated.
 
 :::image type="content" source="media/historical-graph-pools/self-hosted-drill-down.png" alt-text="Self-hosted graph drill-down.":::
 
@@ -63,7 +63,7 @@ For self-hosted agent pools you can view the number of online agents, the number
 The pool consumption report uses the [Azure DevOps Analytics service](../../report/powerbi/what-is-analytics.md) and the `TaskAgentRequestSnapshots` endpoint. You can query this endpoint using the following URL prefix: `https://analytics.dev.azure.com/{org}/{project_id}/_odata/v4.0-preview/TaskAgentRequestSnapshots`. For more information on query options, see [Query guidelines for Analytics with OData](../../report/extend-analytics/odata-query-guidelines.md).
 
 > [!NOTE]
-> The `TaskAgentRequestSnapshots` endpoint is new and not yet documented but you can view information about the data returned by navigating to the endpoint URL: `https://analytics.dev.azure.com/{org}/{project_id}/_odata/v4.0-preview/TaskAgentRequestSnapshots`.
+> The `TaskAgentRequestSnapshots` endpoint is in preview and not yet documented but you can view information about the data returned by navigating to the endpoint URL: `https://analytics.dev.azure.com/{org}/{project_id}/_odata/v4.0-preview/TaskAgentRequestSnapshots`.
 
 ### Why are there more running jobs than there are agents or concurrency?
 
