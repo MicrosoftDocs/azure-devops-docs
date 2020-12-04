@@ -37,34 +37,34 @@ Use this index to quickly access concepts and tasks related to configuring and c
       **Team**
    :::column-end:::
    :::column span="1":::
-      **General**  
+      **General**
    :::column-end:::
    :::column span="1":::
-      **Kanban boards**  
+      **Kanban boards**
    :::column-end:::
 :::row-end:::
 ---
-:::row:::  
-   :::column span="1":::  
+:::row:::
+   :::column span="1":::
       - [Define Area Paths for a team](../organizations/settings/set-area-paths.md)  
       - [Define Iteration Paths for a team](../organizations/settings/set-iteration-paths-sprints.md)  
       - [Define work item templates](../boards/backlogs/work-item-template.md)  
-   :::column-end:::  
-   :::column span="1":::  
+   :::column-end:::
+   :::column span="1":::
       - [Backlogs](../organizations/settings/select-backlog-navigation-levels.md)  
       - [Working days](../organizations/settings/set-working-days.md)  
       - [Working with bugs](../organizations/settings/show-bugs-on-backlog.md)  
-   :::column-end:::  
-   :::column span="1":::   
+   :::column-end:::
+   :::column span="1":::
       - [Columns](../boards/boards/add-columns.md)  
       - [WIP limits](../boards/boards/wip-limits.md)    
       - [Definition of Done](../boards/boards/definition-of-done.md)  
       - [Split columns](../boards/boards/split-columns.md)   
       - [Swimlanes](../boards/boards/expedite-work.md)  
       - [Card fields, styles, tag colors, annotations, and card reordering](../boards/boards/customize-cards.md#kanban-board)    
-   :::column-end:::  
-:::row-end:::  
----  
+   :::column-end:::
+:::row-end:::
+---
  
  
 ## Process customization 
