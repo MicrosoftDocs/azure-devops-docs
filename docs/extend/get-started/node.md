@@ -164,8 +164,8 @@ All extensions, including extensions from Microsoft, are under a publisher. Anyo
 
     <img src="media/create-publisher.png" alt="Creat publisher" style="border: 1px solid #C3C3C3;" /> 
 
-    >[!NOTE]
-    >Make note of the ID. You need to set it in the manifest file of your extension.
+    > [!NOTE]
+    > Make note of the ID. You need to set it in the manifest file of your extension.
 
 You're now ready to package your extension and publish (upload) it to the Marketplace. Keep this browser window open as you'll return here after you package your extension.
 
@@ -181,10 +181,10 @@ You're now ready to package your extension and publish (upload) it to the Market
     }
     ```     
 
-2. TFX requires the VSS Web Extensions SDK. If you haven't already installed it, open a command prompt and run the following command. 
+2. VSS Web Extensions SDK requires TFX. If you haven't already installed it, open a command prompt and run the following command. 
    
    ```
-   npm install vss-web-extension-sdk --save
+   npm install -g tfx-cli
    ```
 
 
