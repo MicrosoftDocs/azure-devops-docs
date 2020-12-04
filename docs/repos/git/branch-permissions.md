@@ -5,7 +5,7 @@ description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 05/14/2020
+ms.date: 12/04/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -68,7 +68,7 @@ The user or group will still exist in your Project and this change will not affe
 ## Set permissions 
 
 Control branch permission settings from the branch permission view. Users and groups with permissions set at the repo level will
-[inherit those permissions](../../organizations/security/about-permissions.md#inheritance) by default. 
+[inherit those permissions](../../organizations/security/about-permissions.md#inheritance) by default. To learn more about how permissions work, see [Permission settings](../../organizations/security/about-permissions.md#permission-settings).
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
