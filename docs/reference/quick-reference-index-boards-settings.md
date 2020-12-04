@@ -51,15 +51,13 @@ Use this index to quickly access concepts and tasks related to configuring and c
       - [Columns](../boards/boards/add-columns.md)  
       - [WIP limits](../boards/boards/wip-limits.md)    
       - [Definition of Done](../boards/boards/definition-of-done.md)  
-      ::: moniker range=">= tfs-2015"  
       - [Split columns](../boards/boards/split-columns.md)   
       - [Swimlanes](../boards/boards/expedite-work.md)  
       - [Card fields, styles, tag colors, annotations, and card reordering](../boards/boards/customize-cards.md#kanban-board)    
-      ::: moniker-end  
    :::column-end:::  
 :::row-end:::  
 ---  
-
+76666666666666666666666666666666666666666666666666666666666666666
  
 ## Process customization 
 
@@ -177,7 +175,7 @@ You customize work item types using either the Inheritance process model or On-p
 
 ::: moniker range="<= tfs-2018"
 
-You customize work item types using the On-premises XML process model. For additional customization options, see [On-premises XML process customization](../../reference/on-premises-xml-process-model.md).
+You customize work item types using the On-premises XML process model. For additional customization options, see [On-premises XML process customization](on-premises-xml-process-model.md).
 
 <table valign="top">
 <tbody valign="top">
