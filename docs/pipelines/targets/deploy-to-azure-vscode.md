@@ -244,3 +244,9 @@ Try the workflow with a Docker file in a repo.
 
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
 
+## FAQs
+
+1. Failed to deploy web package to App Service. Conflict (CODE: 409)
+
+    In such cases, restart the **App Service** and deploy the package once again to the App Service.
+
