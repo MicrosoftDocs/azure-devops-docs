@@ -160,6 +160,14 @@ The log and plan files are not deleted by the task. To explicitly clean up the f
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
+#### Forbidden error: 'AzCopy.exe exited with non-zero exit code while uploading files to blob storage' while using Azure File Copy task
+
+The hosted agents are assigned randomly every time a build is triggered and hence the [agent IP addresses](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#agent-ip-ranges) will be different on every run. Since they are not whitelisted in your allowed list of IPs the communication between Azure DevOps and the storage account fails. In such scenarios, follow the below steps outlined:
+
+1. Add a build step using Azure CLI, which will identify the IP of the Microsoft Hosted Build agent on runtime and it will whitelist it in the Network rule on the Azure Storage Account.
+1. Execute the build step for your Azure Storage Account.
+1. Add another build step using Azure CLI, which will remove the IP address of the build agent from the Azure Storage Account network rule which was added earlier.
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
