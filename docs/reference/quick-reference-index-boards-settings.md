@@ -32,22 +32,30 @@ Use this index to quickly access concepts and tasks related to configuring and c
 
 
 ---
-
+:::row:::
+   :::column span="1":::
+      **Team**
+   :::column-end:::
+   :::column span="1":::
+      **General**  
+   :::column-end:::
+   :::column span="1":::
+      **Kanban boards**  
+   :::column-end:::
+:::row-end:::
+---
 :::row:::  
    :::column span="1":::  
-      **Team**  
       - [Define Area Paths for a team](../organizations/settings/set-area-paths.md)  
       - [Define Iteration Paths for a team](../organizations/settings/set-iteration-paths-sprints.md)  
       - [Define work item templates](../boards/backlogs/work-item-template.md)  
    :::column-end:::  
    :::column span="1":::  
-      **General**  
       - [Backlogs](../organizations/settings/select-backlog-navigation-levels.md)  
       - [Working days](../organizations/settings/set-working-days.md)  
       - [Working with bugs](../organizations/settings/show-bugs-on-backlog.md)  
    :::column-end:::  
-   :::column span="1":::  
-      **Kanban boards**  
+   :::column span="1":::   
       - [Columns](../boards/boards/add-columns.md)  
       - [WIP limits](../boards/boards/wip-limits.md)    
       - [Definition of Done](../boards/boards/definition-of-done.md)  
@@ -57,7 +65,7 @@ Use this index to quickly access concepts and tasks related to configuring and c
    :::column-end:::  
 :::row-end:::  
 ---  
-76666666666666666666666666666666666666666666666666666666666666666
+ 
  
 ## Process customization 
 
