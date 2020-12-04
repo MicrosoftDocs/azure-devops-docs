@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Git Stats | REST API Reference for Team Foundation Server
-description: Work with Git branch statistics programmatically using the REST APIs for Team Foundation Server.
+title: Git Stats | REST API Reference for Azure DevOps Server
+description: Work with Git branch statistics programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: E735BC54-D5AE-448F-8447-14CEB3261628
 ms.topic: article
 ms.author: chcomley

@@ -1,6 +1,6 @@
 ---
-title: Policy Configurations | REST API Reference for Team Foundation Server
-description: Work with policy configurations programmatically using the REST APIs for Team Foundation Server.
+title: Policy Configurations | REST API Reference for Azure DevOps Server
+description: Work with policy configurations programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: ddcf1e33-29c3-42b0-ae44-673643e07e38
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'

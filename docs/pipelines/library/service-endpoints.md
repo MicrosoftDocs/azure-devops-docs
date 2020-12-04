@@ -729,7 +729,7 @@ Defines and secures a connection to the Subversion repository.
 
 <h3 id="sep-tfsts">Team Foundation Server / Azure Pipelines service connection</h3>
 
-Defines and secures a connection to another TFS or Azure DevOps organization.
+Defines and secures a connection to another Azure DevOps organization.
 
 
 |       Parameter       |                                                                                                                                  Description                                                                                                                                   |
@@ -745,7 +745,7 @@ Defines and secures a connection to another TFS or Azure DevOps organization.
 
 Use the **Verify connection** link to validate your connection information.
 
-See also [Authenticate access with personal access tokens for Azure DevOps and TFS](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+See also [Authenticate access with personal access tokens for Azure DevOps](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 *****
 

@@ -1,6 +1,6 @@
 ---
 title: Install extensions for on-premises servers
-description: Find and install extensions for Team Foundation Server (TFS) and Azure DevOps Server from the Visual Studio Marketplace
+description: Find and install extensions for Azure DevOps Server from the Visual Studio Marketplace.
 ms.topic: conceptual
 ms.technology: devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 
 [!INCLUDE [version-tfs-all-versions](../includes/version-tfs-all-versions.md)]
 
-To add new features and capabilities to your Azure DevOps Server or Team Foundation Server (TFS),
+To add new features and capabilities to your Azure DevOps Server,
 install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
 > [!TIP]
@@ -43,13 +43,13 @@ for future Marketplace purchases.
 
 <a name="connected-tfs"></a>
 
-## Install TFS extensions from the Marketplace
+## Install extensions from the Marketplace
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-- [Connect to TFS](#connected-tfs), so you can install extensions.
+- [Connect to Azure DevOps Server](#connected-tfs), so you can install extensions.
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ for future Marketplace purchases.
 
 ::: moniker range="<= tfs-2018"
 
-1. From your TFS home page (```https://{server}:8080/tfs/```), 
+1. From your Azure DevOps Server home page (```https://{server}:8080/tfs/```), 
    go to the project collection where you want to install the extension.
 
 2. From your project collection, 
@@ -73,9 +73,9 @@ for future Marketplace purchases.
 
 3. Find and select the extension that you want to install.
 
-   <img alt="Select a TFS extension" src="media/get-tfs-extensions/connected/marketplace-select-extension.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Select an Azure DevOps Server extension" src="media/get-tfs-extensions/connected/marketplace-select-extension.png" style="border: 1px solid #CCCCCC" />
 
-   TFS is connected to the Marketplace, so the Marketplace automatically filters and shows on-premises extensions only.
+   Azure DevOps Server is connected to the Marketplace, so the Marketplace automatically filters and shows on-premises extensions only.
 
 4. Select **Install**.
 
@@ -96,10 +96,10 @@ for future Marketplace purchases.
 
 <a name="disconnected-tfs"></a>
 
-## Install TFS extensions when disconnected
+## Install extensions when disconnected
 
-When you're disconnected from TFS, you can install free and preview extensions by downloading them, uploading them to your TFS, 
-and then installing them in a project collection. You can't install extensions when you're disconnected from TFS.
+When you're disconnected from Azure DevOps Server, you can install free and preview extensions by downloading them, uploading them to your Azure DevOps Server, 
+and then installing them in a project collection. You can't install extensions when you're disconnected from Azure DevOps Server.
 
 ### Who can upload extensions?
 
@@ -173,7 +173,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
    <img alt="Find and upload your downloaded extension" src="./media/get-tfs-extensions/standalone/upload-extension.png" style="border: 1px solid #CCCCCC" />
 
-   [[Why can't I upload extensions?](faq-extensions.md#q-why-cant-i-upload-extensions-to-tfs)]
+   [Why can't I upload extensions?](faq-extensions.md#q-why-cant-i-upload-extensions-to-azure-devops-server)
 
 ### Install extension in your project collection
 

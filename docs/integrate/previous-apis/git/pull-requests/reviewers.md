@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Git Pull Request Reviewers | REST API Reference for Team Foundation Server
-description: Work with Git pull request reviewers programmatically using the REST APIs for Team Foundation Server.
+title: Git Pull Request Reviewers | REST API Reference for Azure DevOps Server
+description: Work with Git pull request reviewers programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: 65A2ED69-31E1-47D8-BEF9-7BE5CC2AACFB
 ms.topic: article
 ms.author: chcomley

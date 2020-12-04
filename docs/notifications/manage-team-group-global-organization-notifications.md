@@ -1,7 +1,7 @@
 ---
 title: Manage notifications for a team, group, global organization
 titleSuffix: Azure DevOps
-description: Learn how to get global organization, team, and group notifications when changes occur to source code, git, work items, and builds in Azure DevOps & Team Foundation Server (TFS).  
+description: Learn how to get global organization, team, and group notifications when changes occur to source code, git, work items, and builds in Azure DevOps.  
 ms.technology: devops-collab
 ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
 ms.custom: contperfq2

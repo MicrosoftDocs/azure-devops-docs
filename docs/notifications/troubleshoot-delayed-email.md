@@ -1,7 +1,7 @@
 ---
 title: Why are my notification emails delayed
 titleSuffix: Azure DevOps 
-description: Troubleshooting steps for delayed emails from notifications in Azure DevOps and Team Foundation Server (TFS)
+description: Troubleshooting steps for delayed emails from notifications in Azure DevOps.
 ms.technology: devops-collab
 ms.reviewer: wismythe
 ms.author: chcomley
