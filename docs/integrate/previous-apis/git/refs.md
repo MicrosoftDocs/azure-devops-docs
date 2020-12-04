@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Git Refs | REST API Reference for Team Foundation Server
-description: Work with Git references programmatically using the REST APIs for Team Foundation Server.
+title: Git Refs | REST API Reference for Azure DevOps Server
+description: Work with Git references programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: 7E4F1631-12C0-4B17-A460-6A6BE002C838
 ms.topic: article
 ms.author: chcomley

@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Git Pull Request Comments | REST API Reference for Team Foundation Server
-description: Work with Git pull request comments programmatically using the REST APIs for Team Foundation Server.
+title: Git Pull Request Comments | REST API Reference for Azure DevOps Server
+description: Work with Git pull request comments programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: A2B50741-6909-4C7A-BAEB-13F2D7239246
 ms.topic: article
 ms.author: chcomley

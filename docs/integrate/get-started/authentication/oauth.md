@@ -15,7 +15,7 @@ ms.date: 08/11/2020
 [!INCLUDE [version-azure-devops](../../../includes/version-vsts-only.md)]
 
 > [!NOTE]
-> The following guidance is intended for Azure DevOps Services users, since OAuth 2.0 is not supported on Team Foundation Server or Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending TFS functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate on behalf of a user.
+> The following guidance is intended for Azure DevOps Services users, since OAuth 2.0 is not supported on Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending Azure DevOps Server functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate on behalf of a user.
 
 Authenticate your web app users for REST API access, so your app doesn't continue to ask for usernames and passwords.
 Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize your app for a user and generate an access token.
@@ -42,7 +42,7 @@ If you registered your app using the preview APIs, re-register because the scope
 When Azure DevOps Services presents the authorization approval page to your user,
 it uses your company name, app name, and descriptions. It also uses the URLs for your company web site, app website, and terms of service and privacy statements.
 
-<img alt="Visual Studio Online authorization page with your company and app information" src="./media/grant-access.png" style="border: 1px solid #CCCCCC" />
+<img alt="Visual Studio Codespaces authorization page with your company and app information" src="./media/grant-access.png" style="border: 1px solid #CCCCCC" />
 
 When Azure DevOps Services asks for a user's authorization, and the user grants it,
 the user's browser gets redirected to your authorization callback URL with the authorization code.
