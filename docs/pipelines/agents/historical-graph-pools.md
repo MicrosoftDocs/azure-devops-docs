@@ -23,14 +23,19 @@ Historical graphs are displayed in the pool consumption report which is part of 
 
 The charts in the pool consumption report graph the following data points:
 
-- **Concurrency** - The number of parallel jobs in the organization that apply to the project and agent pool type. For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
+- **Concurrency** - The number of parallel jobs in the organization that apply to the project visibility (public or private) and agent pool type. For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
 - **Online agents** - The number of agents online in a [self-hosted agent pool](agents.md#self-hosted-agents.md) or a [scale set agent pool](scale-set-agents.md).
 - **Queued jobs** - The number of jobs queued and waiting for an agent.
 - **Running jobs** - The number of running jobs.
 
 Pool data is aggregated at a granularity of 10 minutes, and the number of running jobs is plotted based on the maximum number of running jobs for the specified interval of time.
 
-Historical pool usage data is displayed in the **Pool consumption report** which is on the **Analytics** tab for the agent pool. To access agent pool settings, choose **Organization settings**, **Pipelines**, **Agent pools**, or **Project settings**, **Pipeline**, **Agent pools**. Choose the desired pool, and view the **Analytics** tab.
+The pool consumption report can be displayed at organization scope, or project scope. At the organization level, the chart is plotted using data from pipelines across any project within the organization that have run jobs in that pool. At the project level, the chart is plotted using data from pipelines in that particular project that have run jobs in that pool.
+
+- To view the pool consumption report at the organization level, choose **Organization settings**, **Pipelines**, **Agent pools**.
+- To view the pool consumption report at the project level, navigate to the desired project and choose **Project settings**, **Pipeline**, **Agent pools**.
+
+From the **Agent pools** view, choose the desired pool, and view the **Analytics** tab.
 
 :::image type="content" source="media/historical-graph-pools/historical-graph-self-hosted.png" alt-text="Self-hosted agent pool historical graph":::
 
