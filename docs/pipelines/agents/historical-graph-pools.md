@@ -35,7 +35,7 @@ Pool data is aggregated at a granularity of 10 minutes, and the number of runnin
 The pool consumption report can be displayed at organization scope, or project scope. At the organization level, the chart is plotted using data from pipelines across any project within the organization that have run jobs in that pool. At the project level, the chart is plotted using data from pipelines in that particular project that have run jobs in that pool.
 
 - To view the pool consumption report at the organization level, choose **Organization settings**, **Pipelines**, **Agent pools**.
-- To view the pool consumption report at the project level, navigate to the desired project and choose **Project settings**, **Pipeline**, **Agent pools**.
+- To view the pool consumption report at the project level, navigate to the desired project and choose **Project settings**, **Pipelines**, **Agent pools**.
 
 From the **Agent pools** view, choose the desired pool, and view the **Analytics** tab. The following example shows the pool consumption report for a self-hosted agent pool.
 
