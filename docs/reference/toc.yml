@@ -1,6 +1,6 @@
-- name: Azure Board Settings 
+- name: Azure Boards Settings 
   href: index.yml
-- name: About Board settings
+- name: About Boards settings
   href: customize-work.md
 - name: Quick reference index
   href: quick-reference-index-boards-settings.md
