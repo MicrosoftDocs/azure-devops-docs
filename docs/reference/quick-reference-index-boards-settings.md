@@ -45,24 +45,24 @@ Use this index to quickly access concepts and tasks related to configuring and c
 :::row-end:::
 ---
 :::row:::
-   :::column span="1":::
+   :::column span="1":::
       - [Define Area Paths for a team](../organizations/settings/set-area-paths.md)  
       - [Define Iteration Paths for a team](../organizations/settings/set-iteration-paths-sprints.md)  
       - [Define work item templates](../boards/backlogs/work-item-template.md)  
-   :::column-end:::
-   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
       - [Backlogs](../organizations/settings/select-backlog-navigation-levels.md)  
       - [Working days](../organizations/settings/set-working-days.md)  
       - [Working with bugs](../organizations/settings/show-bugs-on-backlog.md)  
-   :::column-end:::
-   :::column span="1":::
+   :::column-end:::
+   :::column span="1":::
       - [Columns](../boards/boards/add-columns.md)  
       - [WIP limits](../boards/boards/wip-limits.md)    
       - [Definition of Done](../boards/boards/definition-of-done.md)  
       - [Split columns](../boards/boards/split-columns.md)   
       - [Swimlanes](../boards/boards/expedite-work.md)  
       - [Card fields, styles, tag colors, annotations, and card reordering](../boards/boards/customize-cards.md#kanban-board)    
-   :::column-end:::
+   :::column-end:::
 :::row-end:::
 ---
  
@@ -85,8 +85,19 @@ You customize work item types using the Inheritance process model.
 
 ---
 :::row:::
-   :::column span="1":::  
-      **Field customizations**  
+   :::column span="1":::
+      **Field customizations** 
+   :::column-end:::
+   :::column span="1":::
+      **Work item type customizations**
+   :::column-end:::
+   :::column span="1":::
+      **Backlog and board customizations**  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
       - [Add a checkbox (Boolean) field](../organizations/settings/work/customize-process-field.md#boolean-field)  
       - [Add/remove custom fields](../organizations/settings/work/customize-process-field.md)
       - [Add/remove custom rules to a field](../organizations/settings/work/custom-rules.md)
@@ -95,9 +106,8 @@ You customize work item types using the Inheritance process model.
       - [Add a rich-text (HTML) field](../organizations/settings/work/customize-process-field.md#html)
       - [Change a field label](../organizations/settings/work/customize-process-field.md#rename-field)  
       - [Delete field](../organizations/settings/work/customize-process-field.md#delete-field)  
-   :::column-end:::  
-   :::column span="1":::  
-      **Work item type customizations**  
+   :::column-end:::
+   :::column span="1":::
       - [Add a custom work item type](../organizations/settings/work/customize-process-work-item-type.md#add-wit)  
       - [Add/remove custom fields](../organizations/settings/work/customize-process-field.md)  
       - [Add/remove custom groups](../organizations/settings/work/customize-process-form.md#groups)  
@@ -111,9 +121,8 @@ You customize work item types using the Inheritance process model.
       - [Hide or unhide a state](../organizations/settings/work/customize-process-workflow.md#hide-state)
       - [Add, edit, or remove a workflow state](../organizations/settings/work/customize-process-workflow.md#states)  
       - [Apply rules to workflow states](../organizations/settings/work/apply-rules-to-workflow-states.md)  
-   :::column-end:::  
-   :::column span="1":::  
-      **Backlog and board customizations**  
+   :::column-end:::
+   :::column span="1":::
       - [Add a custom work item type](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog)   
       ::: moniker range="azure-devops"  
       - [Add an inherited work item type](../organizations/settings/work/customize-process-backlogs-boards.md#add-oob-to-backlog)   
@@ -123,7 +132,7 @@ You customize work item types using the Inheritance process model.
       - [Add a portfolio backlog which displays custom work item types](../organizations/settings/work/customize-process-backlogs-boards.md#add-portfolio-backlog)   
       - [Edit or rename a portfolio backlog](../organizations/settings/work/customize-process-backlogs-boards.md#edit-portfolio-backlog)   
       - [Delete the top-level custom portfolio backlog](../organizations/settings/work/customize-process-backlogs-boards.md#edit-portfolio-backlog)  
-   :::column-end:::
+   :::column-end:::
 :::row-end:::
 ---
  
