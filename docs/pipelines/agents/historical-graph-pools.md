@@ -23,23 +23,29 @@ Historical graphs are displayed in the pool consumption report which is part of 
 
 The charts in the pool consumption report graph the following data points:
 
-- **Concurrency** - The number of parallel jobs in the organization that apply to the project visibility (public or private) and agent pool type. For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
+- **Concurrency** - The number of parallel jobs in the organization that apply to the project type (public or private) and agent pool type (Microsoft-hosted or self-hosted). For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
 - **Online agents** - The number of agents online in a [self-hosted agent pool](agents.md#self-hosted-agents.md) or a [scale set agent pool](scale-set-agents.md).
 - **Queued jobs** - The number of jobs queued and waiting for an agent.
 - **Running jobs** - The number of running jobs.
 
-Pool data is aggregated at a granularity of 10 minutes, and the number of running jobs is plotted based on the maximum number of running jobs for the specified interval of time.
+Pool data is aggregated at a granularity of 10 minutes, and the number of running jobs is plotted based on the maximum number of running jobs for the specified interval of time. Because multiple short-running jobs may complete within the 10 minute timeline, the count of running jobs may sometimes be higher than the concurrency or online agents during that same period.
+
+## Report scope
 
 The pool consumption report can be displayed at organization scope, or project scope. At the organization level, the chart is plotted using data from pipelines across any project within the organization that have run jobs in that pool. At the project level, the chart is plotted using data from pipelines in that particular project that have run jobs in that pool.
 
 - To view the pool consumption report at the organization level, choose **Organization settings**, **Pipelines**, **Agent pools**.
 - To view the pool consumption report at the project level, navigate to the desired project and choose **Project settings**, **Pipeline**, **Agent pools**.
 
-From the **Agent pools** view, choose the desired pool, and view the **Analytics** tab.
+From the **Agent pools** view, choose the desired pool, and view the **Analytics** tab. The following example shows the pool consumption report for a self-hosted agent pool.
 
 :::image type="content" source="media/historical-graph-pools/historical-graph-self-hosted.png" alt-text="Self-hosted agent pool historical graph":::
 
-This example shows the usage graphs for a self-hosted agent pool.
+This example shows the usage graphs for the **Azure Pipelines** Microsoft-hosted agent pool.
+
+:::image type="content" source="media/historical-graph-pools/historical-graph-azure-pipelines.png" alt-text="Microsoft-hosted agent pool historical graph":::
+
+## Filtering
 
 To adjust the timeline of the graph, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png":::, select the interval drop-down, and choose the desired interval.
 
