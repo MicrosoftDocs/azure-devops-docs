@@ -88,7 +88,10 @@ With the Inheritance process, you apply a process to a project.
 ### Inheritance process 
 
 The Inheritance process model supports a user interface for customizing fields, work item types, and backlogs and boards.  
- 
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 ---
 :::row:::
    :::column span="1":::
@@ -121,9 +124,7 @@ The Inheritance process model supports a user interface for customizing fields, 
    :::column span="1":::
       **Backlogs and boards**  
       - [Add a custom work item type to a board](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog)   
-      ::: moniker range="azure-devops"  
       - [Add an inherited work item type](../organizations/settings/work/customize-process-backlogs-boards.md#add-oob-to-backlog)   
-      ::: moniker-end  
       - [Change the default work item type](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog) 
       - [Rename a backlog](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog)  
       - [Add a portfolio backlog which displays custom work item types](../organizations/settings/work/customize-process-backlogs-boards.md#add-portfolio-backlog)   
@@ -136,6 +137,49 @@ The Inheritance process model supports a user interface for customizing fields, 
 ::: moniker-end
 
 
+::: moniker range=">= azure-devops-2019 < azure-devops"
+---
+:::row:::
+   :::column span="1":::
+      **Fields** 
+      - [Add a checkbox (Boolean) field](../organizations/settings/work/customize-process-field.md#boolean-field)  
+      - [Add/remove custom fields](../organizations/settings/work/customize-process-field.md)
+      - [Add/remove custom rules to a field](../organizations/settings/work/custom-rules.md)
+      - [Add a person-name/Identity](../organizations/settings/work/customize-process-field.md#identity)
+      - [Add a picklist (drop-down menu)](../organizations/settings/work/customize-process-field.md#pick-list)
+      - [Add a rich-text (HTML) field](../organizations/settings/work/customize-process-field.md#html)
+      - [Change a field label](../organizations/settings/work/customize-process-field.md#rename-field)  
+      - [Delete field](../organizations/settings/work/customize-process-field.md#delete-field)  
+   :::column-end:::
+   :::column span="1":::
+      **Work item types**
+      - [Add a custom work item type](../organizations/settings/work/customize-process-work-item-type.md#add-wit)  
+      - [Add/remove custom fields](../organizations/settings/work/customize-process-field.md)  
+      - [Add/remove custom groups](../organizations/settings/work/customize-process-form.md#groups)  
+      - [Add/remove custom pages](../organizations/settings/work/customize-process-form.md#pages)  
+      - [Add/remove a custom control](../organizations/settings/work/custom-controls-process.md)  
+      - [Add custom rules](../organizations/settings/work/custom-rules.md)  
+      - [Change the color or description](../organizations/settings/work/customize-process-work-item-type.md#overview)  
+      - [Delete a work item type](../organizations/settings/work/customize-process-work-item-type.md#destroy)  
+      - [Enable/disable a work item type](../organizations/settings/work/customize-process-work-item-type.md#enable-disable)  
+      **Workflow customizations**  
+      - [Hide or unhide a state](../organizations/settings/work/customize-process-workflow.md#hide-state)
+      - [Add, edit, or remove a workflow state](../organizations/settings/work/customize-process-workflow.md#states)  
+      - [Apply rules to workflow states](../organizations/settings/work/apply-rules-to-workflow-states.md)  
+   :::column-end:::
+   :::column span="1":::
+      **Backlogs and boards**  
+      - [Add a custom work item type to a board](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog)   
+      - [Change the default work item type](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog) 
+      - [Rename a backlog](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog)  
+      - [Add a portfolio backlog which displays custom work item types](../organizations/settings/work/customize-process-backlogs-boards.md#add-portfolio-backlog)   
+      - [Edit or rename a portfolio backlog](../organizations/settings/work/customize-process-backlogs-boards.md#edit-portfolio-backlog)   
+      - [Delete the top-level custom portfolio backlog](../organizations/settings/work/customize-process-backlogs-boards.md#edit-portfolio-backlog)  
+   :::column-end:::
+:::row-end:::
+---
+ 
+::: moniker-end
 ::: moniker range="azure-devops"
 
 ### Hosted XML process model
@@ -179,6 +223,7 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Change process configuration](xml/process-configuration-xml-element.md)  
       - [Add custom categories](xml/categories-xml-element-reference.md)  
    :::column-end:::
+:::row-end:::
 ---
 :::row:::
    :::column span="3":::
