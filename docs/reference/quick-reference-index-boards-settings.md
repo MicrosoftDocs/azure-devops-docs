@@ -23,10 +23,19 @@ Use this index to quickly access concepts and tasks related to configuring and c
 
 ## Get started  
 
+::: moniker range=">= azure-devops-2019"
+
 - [Define Area Paths](../organizations/settings/set-area-paths.md)  
 - [Define Iteration Paths](../organizations/settings/set-iteration-paths-sprints.md)  
 - [Connect Azure Boards to GitHub](../boards/github/connect-to-github.md) 
+::: moniker-end
 
+::: moniker range="< azure-devops-2019"
+
+- [Define Area Paths](../organizations/settings/set-area-paths.md)  
+- [Define Iteration Paths](../organizations/settings/set-iteration-paths-sprints.md)  
+
+::: moniker-end
 
 ## Configure team tools 
 
@@ -149,9 +158,7 @@ The Inheritance process model supports a user interface for customizing fields, 
       - [Add a picklist (drop-down menu)](../organizations/settings/work/customize-process-field.md#pick-list)
       - [Add a rich-text (HTML) field](../organizations/settings/work/customize-process-field.md#html)
       - [Change a field label](../organizations/settings/work/customize-process-field.md#rename-field)  
-      - [Delete field](../organizations/settings/work/customize-process-field.md#delete-field)  
-   :::column-end:::
-   :::column span="1":::
+      - [Delete field](../organizations/settings/work/customize-process-field.md#delete-field)<br/><br/>
       **Work item types**
       - [Add a custom work item type](../organizations/settings/work/customize-process-work-item-type.md#add-wit)  
       - [Add/remove custom fields](../organizations/settings/work/customize-process-field.md)  
@@ -162,12 +169,12 @@ The Inheritance process model supports a user interface for customizing fields, 
       - [Change the color or description](../organizations/settings/work/customize-process-work-item-type.md#overview)  
       - [Delete a work item type](../organizations/settings/work/customize-process-work-item-type.md#destroy)  
       - [Enable/disable a work item type](../organizations/settings/work/customize-process-work-item-type.md#enable-disable)  
+   :::column-end:::
+   :::column span="1":::
       **Workflow customizations**  
       - [Hide or unhide a state](../organizations/settings/work/customize-process-workflow.md#hide-state)
       - [Add, edit, or remove a workflow state](../organizations/settings/work/customize-process-workflow.md#states)  
-      - [Apply rules to workflow states](../organizations/settings/work/apply-rules-to-workflow-states.md)  
-   :::column-end:::
-   :::column span="1":::
+      - [Apply rules to workflow states](../organizations/settings/work/apply-rules-to-workflow-states.md)<br/><br/>  
       **Backlogs and boards**  
       - [Add a custom work item type to a board](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog)   
       - [Change the default work item type](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog) 
@@ -200,9 +207,7 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Change a field label](add-modify-field.md#change-label)  
       - [Add a custom control field](add-modify-field.md#custom-control)  
       - [Remove a field](add-modify-field.md#change-label)  
-      - [Define global lists](xml/define-global-lists.md)
-   :::column-end:::
-   :::column span="1":::
+      - [Define global lists](xml/define-global-lists.md)<br/><br/>
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
       - [Customize the form](xml/change-work-item-form-layout.md)
@@ -227,14 +232,14 @@ With the Hosted XML process model, you customize work tracking objects and Agile
 :::row-end:::
 ---
 :::row:::
-   :::column span="3":::
+   :::column span="2":::
       **Process templates** 
       - [Import a process template](../organizations/settings/work/import-process/import-process.md#import-from-TFS) 
       - [Export a process template](../organizations/settings/work/import-process/import-process.md#export-process) 
       - [Customize a process template](../organizations/settings/work/import-process/customize-process.md)  
    :::column-end:::
 :::row-end:::
- 
+---
   
 ::: moniker-end 
 
