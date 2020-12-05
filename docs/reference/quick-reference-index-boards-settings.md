@@ -112,9 +112,7 @@ The Inheritance process model supports a user interface for customizing fields, 
       - [Add a picklist (drop-down menu)](../organizations/settings/work/customize-process-field.md#pick-list)
       - [Add a rich-text (HTML) field](../organizations/settings/work/customize-process-field.md#html)
       - [Change a field label](../organizations/settings/work/customize-process-field.md#rename-field)  
-      - [Delete field](../organizations/settings/work/customize-process-field.md#delete-field)  
-   :::column-end:::
-   :::column span="1":::
+      - [Delete field](../organizations/settings/work/customize-process-field.md#delete-field)<br/><br/>
       **Work item types**
       - [Add a custom work item type](../organizations/settings/work/customize-process-work-item-type.md#add-wit)  
       - [Add/remove custom fields](../organizations/settings/work/customize-process-field.md)  
@@ -125,12 +123,12 @@ The Inheritance process model supports a user interface for customizing fields, 
       - [Change the color or description](../organizations/settings/work/customize-process-work-item-type.md#overview)  
       - [Delete a work item type](../organizations/settings/work/customize-process-work-item-type.md#destroy)  
       - [Enable/disable a work item type](../organizations/settings/work/customize-process-work-item-type.md#enable-disable)  
+   :::column-end:::
+   :::column span="1":::
       **Workflow customizations**  
       - [Hide or unhide a state](../organizations/settings/work/customize-process-workflow.md#hide-state)
       - [Add, edit, or remove a workflow state](../organizations/settings/work/customize-process-workflow.md#states)  
-      - [Apply rules to workflow states](../organizations/settings/work/apply-rules-to-workflow-states.md)  
-   :::column-end:::
-   :::column span="1":::
+      - [Apply rules to workflow states](../organizations/settings/work/apply-rules-to-workflow-states.md)<br/><br/>
       **Backlogs and boards**  
       - [Add a custom work item type to a board](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog)   
       - [Add an inherited work item type](../organizations/settings/work/customize-process-backlogs-boards.md#add-oob-to-backlog)   
@@ -227,12 +225,7 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)  
       - [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)  
       - [Change process configuration](xml/process-configuration-xml-element.md)  
-      - [Add custom categories](xml/categories-xml-element-reference.md)  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
+      - [Add custom categories](xml/categories-xml-element-reference.md)<br/><br/>
       **Process templates** 
       - [Import a process template](../organizations/settings/work/import-process/import-process.md#import-from-TFS) 
       - [Export a process template](../organizations/settings/work/import-process/import-process.md#export-process) 
@@ -252,7 +245,7 @@ With the On-premises XML process model, you modify the XML definition of work it
 
 
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       **Fields**
       - [Add a checkbox (Boolean) field (TFS 2017.2)](add-modify-field.md#boolean-field)  
       - [Add a custom field](add-modify-field.md)  
@@ -260,9 +253,7 @@ With the On-premises XML process model, you modify the XML definition of work it
       - [Modify a field](add-modify-field.md)  
       - [Add rules to a field](add-modify-field.md#add-rules)   
       - [Add a custom control field](add-modify-field.md#custom-control)  
-      - [Add fields that integrate with test, build, and version control](add-modify-field.md#integration-fields)   
-   :::column-end:::
-   :::column span="":::
+      - [Add fields that integrate with test, build, and version control](add-modify-field.md#integration-fields)<br/><br/>
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
       - [Customize the form](xml/change-work-item-form-layout.md)
