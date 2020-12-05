@@ -21,41 +21,30 @@ Use this index to quickly access concepts and tasks related to configuring and c
 
 <a id="concepts" />
 
-## Get started 
+## Get started  
 
 - [Define Area Paths](../organizations/settings/set-area-paths.md)  
 - [Define Iteration Paths](../organizations/settings/set-iteration-paths-sprints.md)  
-- GitHub connection
+- [Connect Azure Boards to GitHub](../boards/github/connect-to-github.md) 
 
 
 ## Configure team tools 
 
+Each team administrator can configure the following elements for their team, backlogs, or boards.  
 
 ---
 :::row:::
    :::column span="1":::
-      **Team**
-   :::column-end:::
-   :::column span="1":::
       **General**
-   :::column-end:::
-   :::column span="1":::
-      **Kanban boards**
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
       - [Define Area Paths for a team](../organizations/settings/set-area-paths.md)  
       - [Define Iteration Paths for a team](../organizations/settings/set-iteration-paths-sprints.md)  
       - [Define work item templates](../boards/backlogs/work-item-template.md)  
-   :::column-end:::
-   :::column span="1":::
       - [Backlogs](../organizations/settings/select-backlog-navigation-levels.md)  
       - [Working days](../organizations/settings/set-working-days.md)  
       - [Working with bugs](../organizations/settings/show-bugs-on-backlog.md)  
    :::column-end:::
    :::column span="1":::
+      **Kanban boards**
       - [Columns](../boards/boards/add-columns.md)  
       - [WIP limits](../boards/boards/wip-limits.md)    
       - [Definition of Done](../boards/boards/definition-of-done.md)  
@@ -69,35 +58,41 @@ Use this index to quickly access concepts and tasks related to configuring and c
  
 ## Process customization 
 
-Tasks listed in the following table must be performed by an administrator who has the necessary organization-level permissions, as they affect all users and teams within a project.  
+You customize your work tracking experience to support your business and reporting needs. The most common customizations include adding a custom field, modifying a work item form, or adding a custom work item type. Process customization tasks must be performed by an administrator who has the necessary organization-level permissions, as they affect all users and teams within a project.  
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+You customize Azure Boards work tracking using either the Inheritance process model or On-premises XML process model, depending on the selection made when [creating the project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020&preserve-view=true) on which the project is defined.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 ### Customize a project process 
 
+With the Inheritance process, you apply a process to a project. 
+
 - [Create and manage inherited processes](../organizations/settings/work/manage-process.md)
 - [Customize a project using an inherited process](../organizations/settings/work/customize-process.md)
+::: moniker-end
+::: moniker range=">= azure-devops-2020"
 - [Change the reference process from Agile to Scrum](../organizations/settings/work/change-process-agile-to-scrum.md)  
 - [Change the reference process from Basic to Agile](../organizations/settings/work/change-process-basic-to-agile.md)  
 - [Change the reference process from Scrum to Agile](../organizations/settings/work/change-process-scrum-to-agile.md)  
 
+::: moniker-end
+
+
+::: moniker range=">= azure-devops-2019"
+
 ### Inheritance process 
 
-You customize work item types using the Inheritance process model. 
-
+The Inheritance process model supports a user interface for customizing fields, work item types, and backlogs and boards.  
+ 
 ---
 :::row:::
    :::column span="1":::
-      **Field customizations** 
-   :::column-end:::
-   :::column span="1":::
-      **Work item type customizations**
-   :::column-end:::
-   :::column span="1":::
-      **Backlog and board customizations**  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
+      **Fields** 
       - [Add a checkbox (Boolean) field](../organizations/settings/work/customize-process-field.md#boolean-field)  
       - [Add/remove custom fields](../organizations/settings/work/customize-process-field.md)
       - [Add/remove custom rules to a field](../organizations/settings/work/custom-rules.md)
@@ -108,6 +103,7 @@ You customize work item types using the Inheritance process model.
       - [Delete field](../organizations/settings/work/customize-process-field.md#delete-field)  
    :::column-end:::
    :::column span="1":::
+      **Work item types**
       - [Add a custom work item type](../organizations/settings/work/customize-process-work-item-type.md#add-wit)  
       - [Add/remove custom fields](../organizations/settings/work/customize-process-field.md)  
       - [Add/remove custom groups](../organizations/settings/work/customize-process-form.md#groups)  
@@ -123,7 +119,8 @@ You customize work item types using the Inheritance process model.
       - [Apply rules to workflow states](../organizations/settings/work/apply-rules-to-workflow-states.md)  
    :::column-end:::
    :::column span="1":::
-      - [Add a custom work item type](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog)   
+      **Backlogs and boards**  
+      - [Add a custom work item type to a board](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog)   
       ::: moniker range="azure-devops"  
       - [Add an inherited work item type](../organizations/settings/work/customize-process-backlogs-boards.md#add-oob-to-backlog)   
       ::: moniker-end  
@@ -136,101 +133,111 @@ You customize work item types using the Inheritance process model.
 :::row-end:::
 ---
  
-
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="azure-devops"
 
-You customize work item types using either the Inheritance process model or On-premises XML process model, depending on the selection made when [creating the project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2020&preserve-view=true) on which the project is defined.
+### Hosted XML process model
 
+With the Hosted XML process model, you customize work tracking objects and Agile tools by modifying and importing a process template. Updates made to the process template are applied to projects that were created using that process.
 
+> [!NOTE]   
+> The Hosted XML process model is only supported for organizations that have migrated to Azure DevOps using the data migration tool for Azure DevOps.
+
+---
+:::row:::
+   :::column span="1":::
+      **Fields** 
+      - [Add or modify a field](add-modify-field.md)  
+      - [Add a checkbox (Boolean) field](add-modify-field.md#boolean-field)  
+      - [Add rules to a field](add-modify-field.md#add-rules)  
+      - [Change a field label](add-modify-field.md#change-label)  
+      - [Add a custom control field](add-modify-field.md#custom-control)  
+      - [Remove a field](add-modify-field.md#change-label)  
+      - [Define global lists](../../../reference/xml/define-global-lists.md)
+   :::column-end:::
+   :::column span="1":::
+      **Work item types**
+      - [Add or modify a work item type](add-modify-wit.md)
+      - [Customize the form](xml/change-work-item-form-layout.md)
+      - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
+      - [Specify the work item type icon](xml/process-configuration-xml-element.md)
+      - [Customize the workflow (States, Reasons, Transitions)]("xml/change-workflow-wit.md)  
+      - [Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors)
+   :::column-end:::
+   :::column span="1":::
+      **Backlogs and boards**
+      - [Add WITs to backlogs or boards](add-wits-to-backlogs-and-boards.md)  
+      - [Add portfolio backlogs](add-portfolio-backlogs.md)  
+      - [Configure the quick add panel](xml/process-configuration-xml-element.md#add)  
+      - [Configure the default backlog columns](xml/process-configuration-xml-element.md#columns)  
+      - [Set maximum number of task board items](xml/process-configuration-xml-element.md#number_items)  
+      - [Set default weekend days (Scrum)](xml/process-configuration-xml-element.md#weekend_days)  
+      - [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)  
+      - [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)  
+      - [Change process configuration](xml/process-configuration-xml-element.md)  
+      - [Add custom categories](xml/categories-xml-element-reference.md)  
+   :::column-end:::
+---
+:::row:::
+   :::column span="3":::
+      **Process templates** 
+      - [Import a process template](import-process/import-process.md#import-from-TFS) 
+      - [Export a process template](import-process/import-process.md#export-process) 
+      - [Customize a process template](import-process/customize-process.md)  
+   :::column-end:::
+:::row-end:::
+ 
+  
+::: moniker-end 
+
+::: moniker range="< azure-devops"
 
 ### On-premises XML process model
 
+With the On-premises XML process model, you modify the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%">
-<ul>
-<li><a href="add-modify-field.md#boolean-field">Add a checkbox (Boolean) field</a> (TFS 2017.2)</li>
-<li><a href="add-modify-field.md">Add a custom field </a></li>
-<li><a href="add-modify-field.md#picklist">Add a custom pick list</a></li>
-<li><a href="add-modify-field.md">Add or modify a field</a></li>
-<li><a href="add-modify-field.md#add-rules">Add rules to a field</a></li>
-<li><a href="add-modify-field.md#custom-control">Add a custom control field</a></li>
-<li><a href="add-modify-field.md#integration-fields">Add fields that integrate with test, build, and version control</a></li>
-<li><a href="xml/change-workflow-wit.md">Add/remove State or Reason fields (customize workflow)</a></li>
-</ul>
-</td>
-<td width="33%">
-<ul>
-<li><a href="add-modify-field.md#change-attribute">Change a field attribute</a></li>
-<li><a href="add-modify-field.md#change-label">Change a field label</a></li>
-<li><a href="../organizations/settings/set-area-paths.md">Define Area Paths</a></li>
-<li><a href="../organizations/settings/set-iteration-paths-sprints.md">Define Iteration Paths</a></li>
-<li><a href="../reference/xml/define-global-lists.md">Define global lists</a> </li>
-<li><a href="../reference/add-modify-field.md#delete-field">Delete a field</a></li> 
-</ul>
-</td>
-<td width="34%">
-<ul>
-<li><a href="add-modify-field.md#picklist">Modify a pre-defined pick list</a></li>
-<li><a href="add-modify-field.md#change-label">Remove a field from a form</a></li>
-<br/>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
 
+
+:::row:::
+   :::column span="":::
+      **Fields**
+      - [Add a checkbox (Boolean) field (TFS 2017.2)](add-modify-field.md#boolean-field)  
+      - [Add a custom field](add-modify-field.md)  
+      - [Add or modify a pick list](add-modify-field.md#picklist)   
+      - [Modify a field](add-modify-field.md)  
+      - [Add rules to a field](add-modify-field.md#add-rules)   
+      - [Add a custom control field](add-modify-field.md#custom-control)  
+      - [Add fields that integrate with test, build, and version control](add-modify-field.md#integration-fields)   
+   :::column-end:::
+   :::column span="":::
+      **Work item types**
+      - [Add or modify a work item type](add-modify-wit.md)
+      - [Customize the form](xml/change-work-item-form-layout.md)
+      - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
+      - [Specify the work item type icon](xml/process-configuration-xml-element.md)
+      - [Customize the workflow (States, Reasons, Transitions)]("xml/change-workflow-wit.md)  
+      - [Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors)
+   :::column-end:::
+   :::column span="1":::
+      **Backlogs and boards**
+      - [Add WITs to backlogs or boards](add-wits-to-backlogs-and-boards.md)  
+      - [Add portfolio backlogs](add-portfolio-backlogs.md)  
+      - [Configure the quick add panel](xml/process-configuration-xml-element.md#add)  
+      - [Configure the default backlog columns](xml/process-configuration-xml-element.md#columns)  
+      - [Set maximum number of task board items](xml/process-configuration-xml-element.md#number_items)  
+      - [Set default weekend days (Scrum)](xml/process-configuration-xml-element.md#weekend_days)  
+      - [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)  
+      - [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)  
+      - [Change process configuration](xml/process-configuration-xml-element.md)  
+      - [Add custom categories](xml/categories-xml-element-reference.md)  
+   :::column-end:::
+:::row-end:::
+---
+ 
 ::: moniker-end
-
-
-
-
-::: moniker range="<= tfs-2018"
-
-You customize work item types using the On-premises XML process model. For additional customization options, see [On-premises XML process customization](on-premises-xml-process-model.md).
-
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%">
-<ul>
-<li><a href="add-modify-field.md">Add a checkbox (Boolean) field</a> (TFS 2017.2)</li>
-<li><a href="add-modify-field.md">Add a custom field </a></li>
-<li><a href="add-modify-field.md#picklist">Add a custom pick list</a></li>
-<li><a href="add-modify-field.md">Add or modify a field</a></li>
-<li><a href="add-modify-field.md#add-rules">Add rules to a field</a></li>
-<li><a href="add-modify-field.md#custom-control">Add a custom control field</a></li>
-<li><a href="add-modify-field.md#integration-fields">Add fields that integrate with test, build, and version control</a></li>
-<li><a href="xml/change-workflow-wit.md">Add/remove State or Reason fields (customize workflow)</a></li>
-</ul>
-</td>
-<td width="33%">
-<ul>
-<li><a href="add-modify-field.md#change-attribute">Change a field attribute</a></li>
-<li><a href="add-modify-field.md#change-label">Change a field label</a></li>
-<li><a href="../organizations/settings/set-area-paths.md">Define Area Paths</a></li>
-<li><a href="../organizations/settings/set-iteration-paths-sprints.md">Define Iteration Paths</a></li>
-<li><a href="xml/define-global-lists.md">Define global lists</a> </li>
-<li><a href="add-modify-field.md#delete-field">Delete a field</a></li> 
-</ul>
-</td>
-<td width="34%">
-<ul>
-<li><a href="add-modify-field.md#picklist">Modify a pre-defined pick list</a></li>
-<li><a href="add-modify-field.md#change-label">Remove a field from a form</a></li>
-<br/>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-::: moniker-end
+ 
 
 
 ## Related articles

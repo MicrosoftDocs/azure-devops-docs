@@ -1,19 +1,19 @@
 - name: Azure Boards Settings 
   href: index.yml
-- name: About Boards settings
+- name: Customize work tracking  
   href: customize-work.md
 - name: Quick reference index
   href: quick-reference-index-boards-settings.md
 - name: Get started
   items:
-  - name: Compare system processes  
-    href: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: "Area & iteration paths"
     href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Set area paths  
     href: ../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Set iteration paths (sprints) 
     href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Compare system processes  
+    href: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Configure & customize Azure Boards
     href: ../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: Configure teams
