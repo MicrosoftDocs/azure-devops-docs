@@ -180,6 +180,7 @@ The Inheritance process model supports a user interface for customizing fields, 
 ---
  
 ::: moniker-end
+
 ::: moniker range="azure-devops"
 
 ### Hosted XML process model
@@ -199,7 +200,7 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Change a field label](add-modify-field.md#change-label)  
       - [Add a custom control field](add-modify-field.md#custom-control)  
       - [Remove a field](add-modify-field.md#change-label)  
-      - [Define global lists](../../../reference/xml/define-global-lists.md)
+      - [Define global lists](xml/define-global-lists.md)
    :::column-end:::
    :::column span="1":::
       **Work item types**
@@ -207,7 +208,7 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Customize the form](xml/change-work-item-form-layout.md)
       - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
       - [Specify the work item type icon](xml/process-configuration-xml-element.md)
-      - [Customize the workflow (States, Reasons, Transitions)]("xml/change-workflow-wit.md)  
+      - [Customize the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
       - [Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors)
    :::column-end:::
    :::column span="1":::
@@ -228,9 +229,9 @@ With the Hosted XML process model, you customize work tracking objects and Agile
 :::row:::
    :::column span="3":::
       **Process templates** 
-      - [Import a process template](import-process/import-process.md#import-from-TFS) 
-      - [Export a process template](import-process/import-process.md#export-process) 
-      - [Customize a process template](import-process/customize-process.md)  
+      - [Import a process template](../organizations/settings/work/import-process/import-process.md#import-from-TFS) 
+      - [Export a process template](../organizations/settings/work/import-process/import-process.md#export-process) 
+      - [Customize a process template](../organizations/settings/work/import-process/customize-process.md)  
    :::column-end:::
 :::row-end:::
  
@@ -262,7 +263,7 @@ With the On-premises XML process model, you modify the XML definition of work it
       - [Customize the form](xml/change-work-item-form-layout.md)
       - [Specify the work item type color](xml/process-configuration-xml-element.md#wit-colors)
       - [Specify the work item type icon](xml/process-configuration-xml-element.md)
-      - [Customize the workflow (States, Reasons, Transitions)]("xml/change-workflow-wit.md)  
+      - [Customize the workflow (States, Reasons, Transitions)](xml/change-workflow-wit.md)  
       - [Specify the workflow state color](xml/process-configuration-xml-element.md#state-colors)
    :::column-end:::
    :::column span="1":::
