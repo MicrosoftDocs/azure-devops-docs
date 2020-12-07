@@ -103,7 +103,8 @@ You customize Azure Boards work tracking using the On-premises XML process model
 
 ## Inheritance process model 
 
-With the Inheritance process, you apply a process to a project.  
+With the Inheritance process, you apply a process to a project. 
+ 
 ::: moniker-end
 ::: moniker range=">= azure-devops-2020"
 - [Create and manage inherited processes](../organizations/settings/work/manage-process.md)
@@ -122,6 +123,8 @@ With the Inheritance process, you apply a process to a project.
 ::: moniker range="azure-devops"
 
 The Inheritance process model supports the following customization tasks. 
+
+
 ---
 :::row:::
    :::column span="1":::
