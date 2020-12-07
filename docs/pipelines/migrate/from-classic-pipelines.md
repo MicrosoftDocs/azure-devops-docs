@@ -20,13 +20,13 @@ Get started with YAML pipelines by using converting your existing Classic pipeli
 
 ## Create a new YAML pipeline
 
-Add a sample YAML pipeline for your code. You will update this YAML pipeline file later with your exported code from the Classic  interface editor. 
+Before you get started, it is helpful to have a sample YAML pipeline file in your code. You'll update this YAML pipeline file later with your exported code from the Classic interface editor. 
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
 1. In your project, navigate to the Pipelines page. Then choose the action to create a new pipeline.
 
-1. Walk through the steps of the wizard by first selecting GitHub or Azure Repos as the location of your source code.
+1. Select GitHub or Azure Repos as the location of your source code.
 
 1. When the list of repositories appears, select your desired repository.
 
@@ -49,7 +49,7 @@ Export your Classic pipeline to a YAML file that you can use in the editor.
 1. Open the downloaded YAML file in your code editor. 
 
 
-1. If your YAML pipeline included variables defined in the UI, you will need to define the variables in your YAML file. In this example, the variable `one` gets added to the pipeline. 
+1. If your YAML pipeline included variables defined in the UI, you'll need to define the variables in your YAML file. In this example, the variable `one` gets added to the pipeline. 
 
     ```yaml
     variables:
@@ -59,7 +59,7 @@ Export your Classic pipeline to a YAML file that you can use in the editor.
 
 1. Review any `cron` schedules in your YAML file. By default, `cron` schedules in YAML are in UTC. In classic pipelines, they are in the organization's timezone. See [Configure schedules for pipelines](../process/scheduled-triggers.md) to learn more about configuring your pipeline to run on with a `cron` job. 
  
-1. Use the Task Assistant to make any additional changes to the YAML file. The Task Assistant is a pane on the right side of the screen which helps you correctly create and modify YAML steps. 
+1. Use the Task Assistant to make any additional changes to the YAML file. The Task Assistant is a pane on the right side of the screen, which helps you correctly create and modify YAML steps. 
 
     :::image type="content" source="media/task-assistant-yaml.png" alt-text="Configure your pipeline task with Task Assistant.":::    
  
