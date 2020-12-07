@@ -24,7 +24,7 @@ Historical graphs are displayed in the pool consumption report which is part of 
 The charts in the pool consumption report graph the following data points:
 
 - **Concurrency** - The number of parallel jobs in the organization that apply to the project type (public or private) and agent pool type (Microsoft-hosted or self-hosted). For more information, see [Configure and pay for parallel jobs](../licensing/concurrent-jobs.md).
-- **Online agents** - The number of agents online in a [self-hosted agent pool](agents.md#self-hosted-agents.md) or a [scale set agent pool](scale-set-agents.md).
+- **Online agents** - The number of agents online in a [self-hosted agent pool](agents.md#self-hosted-agents) or a [scale set agent pool](scale-set-agents.md).
 - **Queued jobs** - The number of jobs queued and waiting for an agent.
 - **Running jobs** - The number of running jobs.
 
