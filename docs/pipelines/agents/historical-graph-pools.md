@@ -64,6 +64,8 @@ The pool consumption report uses the [Azure DevOps Analytics service](../../repo
 
 You can retrieve the `project_id` for your project by navigating to the following URL: `https://dev.azure.com/{organization}/_apis/projects?api-version=5.0-preview.3`.
 
+The following example shows a sample query and response.
+
 ```
 {
 "@odata.context": "https://analytics.dev.azure.com/{org}/{project_id}/_odata/v4.0-preview/$metadata#TaskAgentRequestSnapshots",
@@ -91,7 +93,8 @@ You can retrieve the `project_id` for your project by navigating to the followin
 "IsHosted": true,
 "IsRunning": false,
 "IsQueued": true
-}
+},
+...
 ```
 
 For more information on query options, see [Query guidelines for Analytics with OData](../../report/extend-analytics/odata-query-guidelines.md).
