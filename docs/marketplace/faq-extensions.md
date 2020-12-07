@@ -1,6 +1,6 @@
 ---
 title: FAQs about getting extensions for Azure DevOps
-description: Frequently asked questions about getting and paying for extensions for Azure DevOps
+description: Frequently asked questions about getting and paying for extensions for Azure DevOps.
 ms.technology: devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7
 ms.author: chcomley
@@ -77,9 +77,9 @@ or try [Azure Support](https://azure.microsoft.com/support/options/).
 
 <a name="no-install"></a>
 
-### Q: Why can't I install extensions for TFS?
+### Q: Why can't I install extensions for Azure DevOps Server?
 
-A: You can't install extensions for TFS for one of the following reasons:
+A: You can't install extensions for Azure DevOps Server for one of the following reasons:
 
 * You must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md)
 with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./request-extensions.md) instead.
@@ -96,12 +96,12 @@ A: You must be a member of your project collection.
 Follow these steps to check your identity that you use
 to sign in to the Marketplace.
 
-1. On your TFS web portal home page (```https://{server}:8080/tfs/```),
+1. On your Azure DevOps Server web portal home page (```https://{server}:8080/tfs/```),
    go to the top-right corner of the page, and select your user name to view your profile.
 2. On the left side of your profile, make sure that your email address and directory are correct.
 3. Close all browser windows.
 4. Open a private or incognito browsing session.
-5. Sign in to your TFS home page (```https://{server}:8080/tfs/```)
+5. Sign in to your Azure DevOps Server home page (```https://{server}:8080/tfs/```)
    with the identity that's a user in the project collection
    where you want to install the extension.
 
@@ -113,20 +113,20 @@ to sign in to the Marketplace.
 
 ### Q: Why doesn't the extension that I want show a download button?
 
-A: Some extensions work only with Azure DevOps, not TFS, for one of the following reasons:
+A: Some extensions work only with Azure DevOps Services for one of the following reasons:
 
-- The extension uses Azure DevOps features that aren't released yet for TFS.
+- The extension uses Azure DevOps features that aren't released yet for Azure DevOps Server.
 - The [extension manifest](../extend/develop/manifest.md) indicates that the extension
 is available only for Azure DevOps Services (targets = Microsoft.Visualstudio.Services.Cloud).
 - The extension manifest indicates that the extension is an integration (targets = Microsoft.Visualstudio.Services.Integration).
 
 <a name="no-upload"></a>
 
-### Q: Why can't I upload extensions to TFS?
+### Q: Why can't I upload extensions to Azure DevOps Server?
 
 A: You must be a member of the
 [Team Foundation Administrators group](/azure/devops/server/admin/add-administrator#add-a-user-to-the-server-administrators-group). You must also have [**Edit instance-level information** permissions](../organizations/security/permissions.md#server)
-for the Team Foundation Server where you want to upload extensions.
+for the Azure DevOps Server where you want to upload extensions.
 
 <a name="extension-access"></a>
 
@@ -153,6 +153,6 @@ A: Depending on the support you need, choose from the following links:
 
 - [Azure DevOps billing overview](../organizations/billing/overview.md)
 - [Azure DevOps billing FAQ](../organizations/billing/billing-faq.md)
-- [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
+- [How to pay for Azure DevOps Server users](../organizations/billing/buy-access-tfs-test-hub.md)
 - [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 - [Visual Studio cloud subscription billing FAQ](/visualstudio/subscriptions/vscloud-billing-faq)
