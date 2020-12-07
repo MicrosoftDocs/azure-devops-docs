@@ -183,7 +183,9 @@ The Inheritance process model supports the following customization tasks.
       - [Add a picklist (drop-down menu)](../organizations/settings/work/customize-process-field.md#pick-list)
       - [Add a rich-text (HTML) field](../organizations/settings/work/customize-process-field.md#html)
       - [Change a field label](../organizations/settings/work/customize-process-field.md#rename-field)  
-      - [Delete field](../organizations/settings/work/customize-process-field.md#delete-field)<br/><br/>
+      - [Delete field](../organizations/settings/work/customize-process-field.md#delete-field)  
+            
+            
       **Work item types**
       - [Add a custom work item type](../organizations/settings/work/customize-process-work-item-type.md#add-wit)  
       - [Add/remove custom fields](../organizations/settings/work/customize-process-field.md)  
@@ -199,7 +201,9 @@ The Inheritance process model supports the following customization tasks.
       **Workflow customizations**  
       - [Hide or unhide a state](../organizations/settings/work/customize-process-workflow.md#hide-state)
       - [Add, edit, or remove a workflow state](../organizations/settings/work/customize-process-workflow.md#states)  
-      - [Apply rules to workflow states](../organizations/settings/work/apply-rules-to-workflow-states.md)<br/><br/>  
+      - [Apply rules to workflow states](../organizations/settings/work/apply-rules-to-workflow-states.md)    
+            
+            
       **Backlogs and boards**  
       - [Add a custom work item type to a board](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog)   
       - [Change the default work item type](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog) 
@@ -232,7 +236,9 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Change a field label](add-modify-field.md#change-label)  
       - [Add a custom control field](add-modify-field.md#custom-control)  
       - [Remove a field](add-modify-field.md#change-label)  
-      - [Define global lists](xml/define-global-lists.md)<br/><br/>
+      - [Define global lists](xml/define-global-lists.md)  
+            
+            
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
       - [Customize the form](xml/change-work-item-form-layout.md)
@@ -252,7 +258,9 @@ With the Hosted XML process model, you customize work tracking objects and Agile
       - [Set default bug management behavior](xml/process-configuration-xml-element.md#behaviors)  
       - [Set default hidden backlogs](xml/process-configuration-xml-element.md#behaviors)  
       - [Change process configuration](xml/process-configuration-xml-element.md)  
-      - [Add custom categories](xml/categories-xml-element-reference.md)<br/><br/>
+      - [Add custom categories](xml/categories-xml-element-reference.md)  
+            
+            
       **Process templates** 
       - [Import a process template](../organizations/settings/work/import-process/import-process.md#import-from-TFS) 
       - [Export a process template](../organizations/settings/work/import-process/import-process.md#export-process) 
@@ -278,7 +286,9 @@ With the On-premises XML process model, you modify the XML definition of work it
       - [Modify a field](add-modify-field.md)  
       - [Add rules to a field](add-modify-field.md#add-rules)   
       - [Add a custom control field](add-modify-field.md#custom-control)  
-      - [Add fields that integrate with test, build, and version control](add-modify-field.md#integration-fields)<br/><br/>
+      - [Add fields that integrate with test, build, and version control](add-modify-field.md#integration-fields)  
+            
+            
       **Work item types**
       - [Add or modify a work item type](add-modify-wit.md)
       - [Customize the form](xml/change-work-item-form-layout.md)
