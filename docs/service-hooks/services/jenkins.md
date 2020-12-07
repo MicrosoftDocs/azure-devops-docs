@@ -2,18 +2,17 @@
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Create a service hook with Jenkins
-description: Use Jenkins with your Azure DevOps Services organization
+description: Use Jenkins with your Azure DevOps organization
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
 monikerRange: '>= tfs-2017'
 ms.date: 10/01/2020
 ---
 
-# Create a service hook for Azure DevOps Services and TFS with Jenkins
+# Create a service hook for Azure DevOps with Jenkins
 
 [!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
 
-If you use Jenkins to build your apps, you can store your code in Azure DevOps Services
-and continue to use Jenkins for your continuous integration builds.
+If you use Jenkins to build your apps, you can store your code in Azure DevOps and continue to use Jenkins for your continuous integration builds.
 You can trigger a Jenkins build when you push code to your project's
 Git repository or when you check in code to Team Foundation version control.
 

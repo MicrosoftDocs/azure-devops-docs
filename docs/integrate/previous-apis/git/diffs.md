@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Git Diffs | REST API Reference for Team Foundation Server
-description: Work with Git differences programmatically using the REST APIs for Team Foundation Server.
+title: Git Diffs | REST API Reference for Azure DevOps Server
+description: Work with Git differences programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: 920FAC3A-471D-412C-BC6B-CA767CFC3645
 ms.topic: article
 ms.author: chcomley

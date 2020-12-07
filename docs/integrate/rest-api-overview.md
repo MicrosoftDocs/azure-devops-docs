@@ -1,6 +1,6 @@
 ---
-title: REST APIs for Azure DevOps and Team Foundation Server
-description: Find reference material and overviews of the basic patterns for using the REST APIs for Azure DevOps and Team Foundation Server (TFS).
+title: REST APIs for Azure DevOps
+description: Find reference material and overviews of the basic patterns for using the REST APIs for Azure DevOps.
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.technology: devops-ecosystem
 ms.topic: conceptual
@@ -28,10 +28,10 @@ Representational State Transfer (REST) APIs are service endpoints that support s
 You can separate a REST API request and response pair into the following five components:
 
 1. The **request URI**, in the following form: `VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
-   * *instance*: The Azure DevOps organization or TFS server you're sending the request to. They're structured as follows:
+   * *instance*: The Azure DevOps organization or Azure DevOps Server you're sending the request to. They're structured as follows:
        * Azure DevOps: `dev.azure.com/{organization}`
-       * TFS: `server:port` (the default port is 8080)
-   * *collection*: The value for collection should be `DefaultCollection` for both TFS and Azure DevOps.
+       * Azure DevOps Server: `server:port` (the default port is 8080)
+   * *collection*: The value for collection should be `DefaultCollection` for Azure DevOps.
    * *resource path*: The collection should be followed by `_apis/{area}/{resource}`. For example, `_apis/wit/workitems`.
    * *api-version*: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]], for example:
      * `api-version=1.0`
@@ -56,7 +56,7 @@ You can separate a REST API request and response pair into the following five co
 
 ### Authenticate 
 
-There are many ways to authenticate your application or service with Azure DevOps or TFS. The following table is an excellent way to decide which method is the best for you:
+There are many ways to authenticate your application or service with Azure DevOps. The following table is an excellent way to decide which method is the best for you:
 
 | Type of application | Description | Example |Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
@@ -64,7 +64,7 @@ There are many ways to authenticate your application or service with Azure DevOp
 | Interactive JavaScript | GUI-based JavaScript application | AngularJS single page app displaying work items for a user | [Microsoft Authentication Library](/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
 | Non-interactive client-side | Headless text only client-side application | Console app displaying all bugs assigned to a user | [Device Profile](/samples/azure-samples/active-directory-dotnetcore-devicecodeflow-v2/invoke-protected-api-text/) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Interactive web | GUI-based web application | Custom Web dashboard displaying build summaries |[OAuth](./get-started/authentication/oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
-| TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
+| Azure DevOps Server application | Azure DevOps Server app using the Client OM library | Azure DevOps Server extension displaying team bug dashboards | [Client Libraries](./concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | [Azure DevOps Services extension](../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walk through](../extend/develop/add-dashboard-widget.md) |
 
 > [!NOTE]
@@ -135,10 +135,10 @@ Most samples on this site use Personal Access Tokens (PATs), as they're a compac
 
 ::: moniker range="< azure-devops"
 
-For Azure DevOps Server and TFS, `instance` is `{server:port}` and by default the port is 8080.
+For Azure DevOps Server, `instance` is `{server:port}` and by default the port is 8080.
 The default collection is `DefaultCollection`, but can be any collection.
 
-Here's how to get a list of projects from TFS using the default port and collection.
+Here's how to get a list of projects:
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
