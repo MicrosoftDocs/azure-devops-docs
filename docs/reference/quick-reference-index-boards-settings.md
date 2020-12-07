@@ -28,10 +28,10 @@ You can start using Azure Boards without configuring or customizing anything. Ho
 
 - [Customize work tracking overview](customize-work.md)
 - [Add a team](../organizations/settings/add-teams.md)
-- [Define Area Paths](../organizations/settings/set-area-paths.md)  
-- [Define Iteration Paths](../organizations/settings/set-iteration-paths-sprints.md)  
-- [Configure and customize Azure Boards](../boards/configure-customize.md)  
-- [Connect Azure Boards to GitHub](../boards/github/connect-to-github.md) 
+- [Define Area Paths](../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
+- [Define Iteration Paths](../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
+- [Configure and customize Azure Boards](../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
+- [Connect Azure Boards to GitHub](.../boards/github/connect-to-github.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
@@ -41,9 +41,9 @@ You can start using Azure Boards without configuring or customizing anything. Ho
 
 - [Customize work tracking overview](customize-work.md)
 - [Add a team](../organizations/settings/add-teams.md)
-- [Define Area Paths](../organizations/settings/set-area-paths.md)  
-- [Define Iteration Paths](../organizations/settings/set-iteration-paths-sprints.md)  
-- [Configure and customize Azure Boards](../boards/configure-customize.md)  
+- [Define Area Paths](../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
+- [Define Iteration Paths](../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
+- [Configure and customize Azure Boards](../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 
 ::: moniker-end 
 
@@ -267,7 +267,7 @@ With the Hosted XML process model, you customize work tracking objects and Agile
 
 ## On-premises XML process model
 
-With the On-premises XML process model, you modify the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields or exercise one of the [witadmin commands](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md). 
+With the On-premises XML process model, you modify the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields or exercise one of the [witadmin commands](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md). 
 
 :::row:::
    :::column span="1":::
@@ -310,6 +310,6 @@ With the On-premises XML process model, you modify the XML definition of work it
 ## Related articles
  
 - [Work item field index](../boards/work-items/guidance/work-item-field.md)
-- [witadmin command-line tool](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
-- [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md)
-- [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md)
+- [witadmin command-line tool](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+- [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
