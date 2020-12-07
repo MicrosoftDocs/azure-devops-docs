@@ -49,7 +49,7 @@ You can start using Azure Boards without configuring or customizing anything. Ho
 
 ## Configure team tools 
 
-Each team administrator can configure the following elements for their team, backlogs, or boards.  
+Each team administrator can configure the following elements for their team, backlogs, or boards. For an introduction to configuring team tools, see [Manage and configure team tools](..//organizations/settings/manage-teams.md).
 
 ---
 :::row:::

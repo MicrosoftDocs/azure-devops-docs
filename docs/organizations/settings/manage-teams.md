@@ -87,20 +87,14 @@ For more information, see [Define area paths and assign to a team](set-area-path
 
 ## Configure team backlogs, boards, and general settings 
 
-::: moniker range=">= tfs-2015"  
 Team administrators can choose which backlog levels are active for a team. For example, a feature team may choose to show only the product backlog and a management team may choose to show only the feature and epic backlogs. Also, administrators can choose whether bugs are treated similar to user stories and requirements or as tasks. 
 
-Team Administrators can also choose which days are non-working days for the team. Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown.  
-::: moniker-end  
+Team administrators can also choose which days are non-working days for the team. Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown.   
 
-::: moniker range=">= tfs-2015"  
 You can configure most of your team settings from the common configuration dialog. 
-::: moniker-end  
 
-::: moniker range="tfs-2015"  
 > [!NOTE]
 > The common configuration Settings dialog is available for TFS 2015.1 and later versions.  
-::: moniker-end  
 
 [!INCLUDE [temp](../../boards/includes/setup-backlogs-boards.md)]
 
@@ -169,7 +163,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker-end  
 
-::: moniker range="tfs-2015"
+::: moniker range="<= tfs-2015"
 
 1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose **Settings** :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
@@ -200,8 +194,6 @@ For more information on each configuration option, see the following articles:
 :::row:::
    :::column span="1":::
       **General**
-   :::column-end:::
-   :::column span="1":::
       - [Backlogs](select-backlog-navigation-levels.md)
       - [Working days](set-working-days.md)
       - [Working with bugs](show-bugs-on-backlog.md)
