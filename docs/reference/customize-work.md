@@ -80,9 +80,9 @@ Your project determines the objects available to track work and the configuratio
 
 > [!NOTE]    
 >The method you use to customize work tracking depends on the process model you subscribe to: 
->- **Inheritance**: Supports WYSIWYG customization, available for Azure DevOps Services and Azure DevOps Server 2019  
->- **Hosted XML**: Supports customization through import/export of process templates, available for a select number of customers of Azure DevOps Services who have opted into this model    
->- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects and is available for all on-premises deployments       
+>- **Inheritance**: Supports WYSIWYG customization, available for Azure DevOps Services, Azure DevOps Server 2019, and Azure DevOps Server 2020.  
+>- **Hosted XML**: Supports customization through import/export of process templates, available for a select number of customers of Azure DevOps Services who have opted into this model.     
+>- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects and is available for all on-premises deployments.        
  
 The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../boards/work-items/agile-glossary.md).  
 
@@ -190,7 +190,7 @@ The following table summarizes the differences between the three supported proce
 	- Work item queries  
 	- Security groups and permissions   
 	- Permissions and access to functional areas such as version control and build  
-4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. Starting with Visual Studio 2019, the Team Foundation plug-in for Office no longer supports Office Project.
+4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. Starting with Visual Studio 2019, the Azure DevOps plug-in for Office no longer supports Office Project.
 
 <a id="choose-process-model" />
 
@@ -323,7 +323,16 @@ Here are a few options available to you:
 - Create your own tool using [REST APIs](../integrate/index.md)  
 - Add a feature request to our [Developer Community page](https://developercommunity.visualstudio.com/content/idea/post.html?space=21).   
 
+## Try this next
+> [!div class="nextstepaction"]
+> [Configure and customize Azure Boards](../boards/configure-customize.md)  
+
+## Related articles
  
+- [Work item field index](../boards/work-items/guidance/work-item-field.md)
+- [witadmin command-line tool](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md)
+- [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md)
 
 [add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
 [add-team-admin]: ../../organizations/settings/add-team-administrator.md
