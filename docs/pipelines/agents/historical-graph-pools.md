@@ -2,7 +2,7 @@
 title: Historical graphs for agent pools
 description: View agent pool usage statistics
 ms.topic: conceptual
-ms.date: 12/04/2020
+ms.date: 12/07/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -61,6 +61,36 @@ For the 1 day interval, you can view data per hour, and for the other intervals 
 ### Where does the pool consumption report get the data it displays?
 
 The pool consumption report uses the [Azure DevOps Analytics service](../../report/powerbi/what-is-analytics.md) and the `TaskAgentRequestSnapshots` endpoint. You can query this endpoint using the following URL prefix: `https://analytics.dev.azure.com/{org}/{project_id}/_odata/v4.0-preview/TaskAgentRequestSnapshots`. For more information on query options, see [Query guidelines for Analytics with OData](../../report/extend-analytics/odata-query-guidelines.md).
+
+```
+{
+"@odata.context": "https://analytics.dev.azure.com/{org}/{project_id}/_odata/v4.0-preview/$metadata#TaskAgentRequestSnapshots",
+"vsts.warnings@odata.type": "#Collection(String)",
+"@vsts.warnings": [
+"VS403507: The specified query does not include a $select or $apply clause which is recommended for all queries. Details on recommended query patterns are available here: https://go.microsoft.com/fwlink/?linkid=861060."
+],
+"value": [
+{
+"SamplingDateSK": 20201117,
+"SamplingHour": 13,
+"SamplingTime": "2020-11-17T13:10:00-08:00",
+"QueuedDate": "2020-11-17T13:07:26.22-08:00",
+"QueuedDateSK": 20201117,
+"StartedDate": "2020-11-17T15:02:23.7398429-08:00",
+"StartedDateSK": 20201117,
+"FinishedDate": "2020-11-17T15:13:49.89-08:00",
+"FinishedDateSK": 20201117,
+"QueueDurationSeconds": 6897.519,
+"ProjectSK": "...",
+"PipelineSK": 5141,
+"RequestId": 6313,
+"PoolId": 28,
+"PipelineType": "Build",
+"IsHosted": true,
+"IsRunning": false,
+"IsQueued": true
+}
+```
 
 > [!NOTE]
 > The `TaskAgentRequestSnapshots` endpoint is in preview and not yet documented but you can view information about the data returned by navigating to the endpoint URL: `https://analytics.dev.azure.com/{org}/{project_id}/_odata/v4.0-preview/TaskAgentRequestSnapshots`.
