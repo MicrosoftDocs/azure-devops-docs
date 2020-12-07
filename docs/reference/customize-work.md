@@ -325,14 +325,14 @@ Here are a few options available to you:
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Configure and customize Azure Boards](../boards/configure-customize.md)  
+> [Configure and customize Azure Boards](../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 
 ## Related articles
  
 - [Work item field index](../boards/work-items/guidance/work-item-field.md)
-- [witadmin command-line tool](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
-- [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md)
-- [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md)
+- [witadmin command-line tool](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+- [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 
 [add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
 [add-team-admin]: ../../organizations/settings/add-team-administrator.md
