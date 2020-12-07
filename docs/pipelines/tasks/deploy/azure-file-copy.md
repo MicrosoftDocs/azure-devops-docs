@@ -160,6 +160,10 @@ The log and plan files are not deleted by the task. To explicitly clean up the f
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
+#### I'm unable to copy a file from one system to an Azure Virtual Machine without public IP address by using *Azure file copy* task in my pipleine
+
+Ensure that you are using version 4 of the **Azure File Copy task**. If it still fails, you can add a build step to execute the command ***azcopy cp "source-file-path" "destination-file-path"*** by substituting the respective source and destination values.
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
