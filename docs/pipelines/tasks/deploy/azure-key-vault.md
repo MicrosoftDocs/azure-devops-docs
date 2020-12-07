@@ -60,6 +60,10 @@ When you want to access secrets:
   - In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
 
   - Choose **OK** to save the changes.<p />
+  
+  > [!NOTE]
+    > If you are using MS hosted agent, you will need to add the IP range of MS hosted agent into your firewall. You may find the list of IP ranges from the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) that is published every Wednesday. The new IP ranges become effective the following Monday. For your more details, please refer to [this document](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#networking).
+    > You may follow [these](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#to-identify-the-possible-ip-ranges-for-microsoft-hosted-agents) steps to find which IP ranges is required for your Azure DevOps organization.
 
 ::: moniker range="> tfs-2018"
 
