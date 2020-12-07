@@ -15,7 +15,7 @@ Get started with YAML pipelines by using converting your existing Classic pipeli
 ## Prerequisites
 
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
+- An active Azure DevOps organization. [Sign up for Azure Pipelines](../get-started/pipelines-sign-up.md).
 - A working pipeline that uses the Classic user interface editor. 
 
 ## Create a new YAML pipeline
@@ -30,7 +30,7 @@ Add a sample YAML pipeline for your code. You will update this YAML pipeline fil
 
 1. When the list of repositories appears, select your desired repository.
 
-1. Azure Pipelines will analyze your repository and recommend a template. Use with **Starter template**. Select Save and run, then select Commit directly to the master branch, and then choose **Save** and run again.
+1. Azure Pipelines will analyze your repository and recommend a template. Use with **Starter template**. Select Save and run, then select Commit directly to the main branch, and then choose **Save** and run again.
 
 1. A new run is started. Wait for the run to finish.
 
