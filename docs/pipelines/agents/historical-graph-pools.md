@@ -60,7 +60,9 @@ For the 1 day interval, you can view data per hour, and for the other intervals 
 
 ### Where does the pool consumption report get the data it displays?
 
-The pool consumption report uses the [Azure DevOps Analytics service](../../report/powerbi/what-is-analytics.md) and the `TaskAgentRequestSnapshots` endpoint. You can query this endpoint using the following URL prefix: `https://analytics.dev.azure.com/{org}/{project_id}/_odata/v4.0-preview/TaskAgentRequestSnapshots`. For more information on query options, see [Query guidelines for Analytics with OData](../../report/extend-analytics/odata-query-guidelines.md).
+The pool consumption report uses the [Azure DevOps Analytics service](../../report/powerbi/what-is-analytics.md) and the `TaskAgentRequestSnapshots` endpoint. You can query this endpoint using the following URL prefix: `https://analytics.dev.azure.com/{organization}/{project_id}/_odata/v4.0-preview/TaskAgentRequestSnapshots`. 
+
+You can retrieve the `project_id` for your project by navigating to the following URL: `https://dev.azure.com/{organization}/_apis/projects?api-version=5.0-preview.3`.
 
 ```
 {
@@ -91,6 +93,8 @@ The pool consumption report uses the [Azure DevOps Analytics service](../../repo
 "IsQueued": true
 }
 ```
+
+For more information on query options, see [Query guidelines for Analytics with OData](../../report/extend-analytics/odata-query-guidelines.md).
 
 > [!NOTE]
 > The `TaskAgentRequestSnapshots` endpoint is in preview and not yet documented but you can view information about the data returned by navigating to the endpoint URL: `https://analytics.dev.azure.com/{org}/{project_id}/_odata/v4.0-preview/TaskAgentRequestSnapshots`.
