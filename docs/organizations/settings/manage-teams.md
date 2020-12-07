@@ -21,7 +21,7 @@ Team administrators should do the following tasks:
 - [Add team members](#add-users-to-a-team)
 - [Add another team administrator](#add-an-administrator) 
 - [Configure areas and iteration paths](#configure-team-areas-and-iterations)
-- [Configure backlogs, boards, and general settings](#configure-team-backlogs-and-other-common-settings)
+- [Configure backlogs, boards, and general settings](#configure-team-backlogs)
 
 Also, consider the following optional tasks: 
 - [Configure and manage team dashboards](#add-and-manage-team-dashboards)
@@ -84,6 +84,8 @@ Settings include making the following associations for each team:
  
 For more information, see [Define area paths and assign to a team](set-area-paths.md) and 
 [Define iteration paths and configure team iterations](set-iteration-paths-sprints.md). 
+
+<a id="configure-team-backlogs" />
 
 ## Configure team backlogs, boards, and general settings 
 

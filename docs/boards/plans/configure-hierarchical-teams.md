@@ -276,16 +276,7 @@ If your feature teams use Scrum or use sprints to assign their work, you'll want
 
 ## Configure additional team settings 
 
-For all teams to be well defined, you'll want to add team administrator(s) and have them verify or configure additional team settings. These include: 
-
-- [Add team members](../../organizations/settings/add-teams.md#add-team-members)
-- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
-- [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md) 
-- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md) 
-- [Configure Kanban boards](../../organizations/settings/manage-teams.md#configure-kanban-boards)  
-
-For additional details, see [Manage and configure team tools](../../organizations/settings/manage-teams.md) 
-
+For teams to be well defined, you'll want to add team administrator(s) and have them verify or configure additional team settings. To learn more, see [Manage and configure team tools](../../organizations/settings/manage-teams.md). 
 
 ## Review area paths assigned to teams 
 
