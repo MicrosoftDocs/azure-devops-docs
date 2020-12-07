@@ -16,8 +16,7 @@ ms.date: 12/07/2020
 
 [!INCLUDE [temp](../boards/includes/version-all.md)]
 
-Use this index to quickly access concepts and tasks related to configuring and customizing Azure Boards. 
-
+Use this index to quickly access concepts and tasks related to configuring and customizing Azure Boards. If you're new to the Azure Boards, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md). 
 
 <a id="concepts" />
 
@@ -25,17 +24,28 @@ Use this index to quickly access concepts and tasks related to configuring and c
 
 ::: moniker range=">= azure-devops-2019"
 
+You can start using Azure Boards without configuring or customizing anything. However, as your organization grows, you'll find it beneficial to add teams, define area paths and iteration paths. If you use GitHub for your source code repository, you may want to connect Azure Boards to GitHub. If you are tasked with administrating a project for several teams, we recommend you review the following articles. 
+
+- [Customize work tracking overview](customize-work.md)
+- [Add a team](../organizations/settings/add-teams.md)
 - [Define Area Paths](../organizations/settings/set-area-paths.md)  
 - [Define Iteration Paths](../organizations/settings/set-iteration-paths-sprints.md)  
+- [Configure and customize Azure Boards](../boards/configure-customize.md)  
 - [Connect Azure Boards to GitHub](../boards/github/connect-to-github.md) 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
+You can start using Azure Boards without configuring or customizing anything. However, as your organization grows, you'll find it beneficial to add teams, define area paths and iteration paths. If you are tasked with administrating a project for several teams, we recommend you review the following articles. 
+
+
+- [Customize work tracking overview](customize-work.md)
+- [Add a team](../organizations/settings/add-teams.md)
 - [Define Area Paths](../organizations/settings/set-area-paths.md)  
 - [Define Iteration Paths](../organizations/settings/set-iteration-paths-sprints.md)  
+- [Configure and customize Azure Boards](../boards/configure-customize.md)  
 
-::: moniker-end
+::: moniker-end 
 
 ## Configure team tools 
 
@@ -65,9 +75,16 @@ Each team administrator can configure the following elements for their team, bac
 ---
  
  
-## Process customization 
+## Process and project customization 
 
 You customize your work tracking experience to support your business and reporting needs. The most common customizations include adding a custom field, modifying a work item form, or adding a custom work item type. Process customization tasks must be performed by an administrator who has the necessary organization-level permissions, as they affect all users and teams within a project.  
+
+
+::: moniker range="azure-devops"
+
+You customize Azure Boards work tracking using the Inheritance process model which uses a WYSIWYG user interface to customize work tracking objects and tools. For select organizations who migrated to Azure DevOps Services using the data migration tool for Azure DevOps, the Hosted XML process model is used. This model relies on modifying and importing process templates to customize work tracking objects and tools. 
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
@@ -75,32 +92,36 @@ You customize Azure Boards work tracking using either the Inheritance process mo
 
 ::: moniker-end
 
+
+::: moniker range="< azure-devops-2019"
+
+You customize Azure Boards work tracking using the On-premises XML process model. This model requires editing XML definition files and uploading the modified files to the server.  
+
+::: moniker-end
+
 ::: moniker range=">= azure-devops-2019"
 
-### Customize a project process 
+## Inheritance process model 
 
-With the Inheritance process, you apply a process to a project. 
-
-- [Create and manage inherited processes](../organizations/settings/work/manage-process.md)
-- [Customize a project using an inherited process](../organizations/settings/work/customize-process.md)
+With the Inheritance process, you apply a process to a project.  
 ::: moniker-end
 ::: moniker range=">= azure-devops-2020"
+- [Create and manage inherited processes](../organizations/settings/work/manage-process.md)
+- [Customize a project using an inherited process](../organizations/settings/work/customize-process.md)
 - [Change the reference process from Agile to Scrum](../organizations/settings/work/change-process-agile-to-scrum.md)  
 - [Change the reference process from Basic to Agile](../organizations/settings/work/change-process-basic-to-agile.md)  
 - [Change the reference process from Scrum to Agile](../organizations/settings/work/change-process-scrum-to-agile.md)  
-
 ::: moniker-end
 
-
-::: moniker range=">= azure-devops-2019"
-
-### Inheritance process 
-
-The Inheritance process model supports a user interface for customizing fields, work item types, and backlogs and boards.  
-
+::: moniker range="azure-devops-2019"
+- [Create and manage inherited processes](../organizations/settings/work/manage-process.md)
+- [Customize a project using an inherited process](../organizations/settings/work/customize-process.md) 
 ::: moniker-end
 
+ 
 ::: moniker range="azure-devops"
+
+The Inheritance process model supports the following customization tasks. 
 ---
 :::row:::
    :::column span="1":::
@@ -112,7 +133,9 @@ The Inheritance process model supports a user interface for customizing fields, 
       - [Add a picklist (drop-down menu)](../organizations/settings/work/customize-process-field.md#pick-list)
       - [Add a rich-text (HTML) field](../organizations/settings/work/customize-process-field.md#html)
       - [Change a field label](../organizations/settings/work/customize-process-field.md#rename-field)  
-      - [Delete field](../organizations/settings/work/customize-process-field.md#delete-field)<br/><br/>
+      - [Delete field](../organizations/settings/work/customize-process-field.md#delete-field)  
+            
+            
       **Work item types**
       - [Add a custom work item type](../organizations/settings/work/customize-process-work-item-type.md#add-wit)  
       - [Add/remove custom fields](../organizations/settings/work/customize-process-field.md)  
@@ -128,7 +151,9 @@ The Inheritance process model supports a user interface for customizing fields, 
       **Workflow customizations**  
       - [Hide or unhide a state](../organizations/settings/work/customize-process-workflow.md#hide-state)
       - [Add, edit, or remove a workflow state](../organizations/settings/work/customize-process-workflow.md#states)  
-      - [Apply rules to workflow states](../organizations/settings/work/apply-rules-to-workflow-states.md)<br/><br/>
+      - [Apply rules to workflow states](../organizations/settings/work/apply-rules-to-workflow-states.md) 
+            
+            
       **Backlogs and boards**  
       - [Add a custom work item type to a board](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog)   
       - [Add an inherited work item type](../organizations/settings/work/customize-process-backlogs-boards.md#add-oob-to-backlog)   
@@ -145,6 +170,8 @@ The Inheritance process model supports a user interface for customizing fields, 
 
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
+
+The Inheritance process model supports the following customization tasks. 
 ---
 :::row:::
    :::column span="1":::
@@ -188,7 +215,7 @@ The Inheritance process model supports a user interface for customizing fields, 
 
 ::: moniker range="azure-devops"
 
-### Hosted XML process model
+## Hosted XML process model
 
 With the Hosted XML process model, you customize work tracking objects and Agile tools by modifying and importing a process template. Updates made to the process template are applied to projects that were created using that process.
 
@@ -238,11 +265,9 @@ With the Hosted XML process model, you customize work tracking objects and Agile
 
 ::: moniker range="< azure-devops"
 
-### On-premises XML process model
+## On-premises XML process model
 
-With the On-premises XML process model, you modify the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
-
-
+With the On-premises XML process model, you modify the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields or exercise one of the [witadmin commands](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md). 
 
 :::row:::
    :::column span="1":::
@@ -285,4 +310,6 @@ With the On-premises XML process model, you modify the XML definition of work it
 ## Related articles
  
 - [Work item field index](../boards/work-items/guidance/work-item-field.md)
- 
+- [witadmin command-line tool](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
+- [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md)
+- [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md)
