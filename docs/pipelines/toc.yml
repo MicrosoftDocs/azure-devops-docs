@@ -489,7 +489,7 @@
 - name: Migrate
   items:
   - name: Migrate from Classic pipelines
-    href: migrate/from-classic-pipelines
+    href: migrate/from-classic-pipelines.md
   - name: Migrate from Jenkins
     href: migrate/from-jenkins.md
   - name: Migrate from Travis
