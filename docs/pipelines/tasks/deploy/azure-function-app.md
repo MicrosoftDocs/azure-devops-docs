@@ -120,6 +120,12 @@ This may be because web.config is not present in your app. You can either add a 
 
 [!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
 
+## I'm unable to deploy to an internal App Service Environment using ARM service connection using a Microsoft hosted agent.
+
+By design, Microsoft hosted agent won't work with App Service Environments. A private agent must be configured in a Virtual Machine which is present within in the same VNet as that of the App Service Environment. Also, configure a private DNS zone to enable the communication between the resources.
+
+
+
 ## Open Source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
