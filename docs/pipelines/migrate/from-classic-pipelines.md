@@ -1,15 +1,15 @@
 ---
-title: Migrate from classic pipelines to YAML
+title: Migrate from Classic to YAML pipelines
 titleSuffix: Azure Pipelines
 description: How to migrate from classic pipelines to YAML
 ms.topic: quickstart
-ms.date: 12/04/2020
+ms.date: 12/07/2020
 monikerRange: azure-devops
 ---
 
 # Quickstart: Migrate your classic pipeline to YAML
 
-Get started with YAML pipelines by using converting your existing classic pipeline to use YAML. YAML-based pipelines enable you to implement your CI/CD strategy as code. 
+Get started with YAML pipelines by using converting your existing Classic pipeline to use YAML. YAML-based pipelines enable you to implement your CI/CD strategy as code. You can use the **Export as YAML** option to export your YAML from an existing Classic pipeline. 
 
 
 ## Prerequisites
@@ -20,7 +20,7 @@ Get started with YAML pipelines by using converting your existing classic pipeli
 
 ## Create a new YAML pipeline
 
-Add a sample YAML pipeline for your code. You will update this YAML pipeline file later with your exported code from the classic user interface editor. 
+Add a sample YAML pipeline for your code. You will update this YAML pipeline file later with your exported code from the Classic  interface editor. 
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
@@ -34,9 +34,9 @@ Add a sample YAML pipeline for your code. You will update this YAML pipeline fil
 
 1. A new run is started. Wait for the run to finish.
 
-## Export your classic pipeline 
+## Export your Classic pipeline 
 
-Export your classic pipeline to a YAML file that you can use in the editor. 
+Export your Classic pipeline to a YAML file that you can use in the editor. 
 
 1. Select **Pipelines** in the menu and open your pipeline. 
 
@@ -49,19 +49,34 @@ Export your classic pipeline to a YAML file that you can use in the editor.
 1. Open the downloaded YAML file in your code editor. 
 
 
+1. If your YAML pipeline included variables defined in the UI, you will need to define the variables in your YAML file. In this example, the variable `one` gets added to the pipeline. 
 
+    ```yaml
+    variables:
+    - name: one
+      value: initialValue 
+   ``` 
+
+1. Review any `cron` schedules in your YAML file. By default, `cron` schedules in YAML are in UTC. In classic pipelines, they are in the organization's timezone. See [Configure schedules for pipelines](../process/scheduled-triggers.md) to learn more about configuring your pipeline to run on with a `cron` job. 
+ 
+1. Use the Task Assistant to make any additional changes to the YAML file. The Task Assistant is a pane on the right side of the screen which helps you correctly create and modify YAML steps. 
+
+    :::image type="content" source="media/task-assistant-yaml.png" alt-text="Configure your pipeline task with Task Assistant.":::    
+ 
+1. Save and run your pipeline. 
 
 ## Clean up resources
 
-If you're not going to continue to use this pipeline, delete <resources> with the following steps:
+If you're not going to continue to use this pipeline, delete it from your project.
 
-1. From the left-hand menu...
-2. ...click Delete, type...and then click Delete
+1. Click the ellipses (...) and select **Delete**. 
 
+1. Enter the name of your pipeline to permanently delete it.
 
 ## Next steps
 
-Advance to the next article to learn how to create...
+Learn about the difference in features between YAML and Classic pipelines. 
+
 > [!div class="nextstepaction"]
-> [Next steps button](contribute-get-started-mvc.md)
+> [Use Azure Pipelines](../get-started/pipelines-get-started.md)
 
