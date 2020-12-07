@@ -61,10 +61,10 @@ When you want to access secrets:
 
   - Choose **OK** to save the changes.<p />
   
-  > [!NOTE]
-    > If you are using MS hosted agent, you will need to add the IP range of MS hosted agent into your firewall. You may find the list of IP ranges from the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) that is published every Wednesday. The new IP ranges become effective the following Monday. For your more details, please refer to [this document](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#networking).
-    > You may follow [these](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#to-identify-the-possible-ip-ranges-for-microsoft-hosted-agents) steps to find which IP ranges is required for your Azure DevOps organization.
-
+> [!NOTE]
+> If you're using a Microsoft-hosted agent, you must add the IP range of the Microsoft-hosted agent to your firewall. Get the weekly list of IP ranges from the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519), which is published every Wednesday. The new IP ranges become effective the following Monday. For more information, see [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#networking).
+> To find the IP ranges that are required for your Azure DevOps organization, learn how to [identify the possible IP ranges for Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#to-identify-the-possible-ip-ranges-for-microsoft-hosted-agents).
+    
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
