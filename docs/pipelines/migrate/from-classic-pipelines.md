@@ -49,7 +49,7 @@ Export your Classic pipeline to a YAML file that you can use in the editor.
 1. Open the downloaded YAML file in your code editor. 
 
 
-1. If your YAML pipeline included variables defined in the UI, you'll need to define the variables in your YAML file. In this example, the variable `one` gets added to the pipeline. 
+1. If your YAML pipeline included variables defined in the Classic user interface, you'll need to define the variables in your YAML file. In this example, the variable `one` gets added to the pipeline. 
 
     ```yaml
     variables:
@@ -59,7 +59,7 @@ Export your Classic pipeline to a YAML file that you can use in the editor.
 
 1. Review any `cron` schedules in your YAML file. By default, `cron` schedules in YAML are in UTC. In classic pipelines, they are in the organization's timezone. See [Configure schedules for pipelines](../process/scheduled-triggers.md) to learn more about configuring your pipeline to run on with a `cron` job. 
  
-1. Use the Task Assistant to make any additional changes to the YAML file. The Task Assistant is a pane on the right side of the screen, which helps you correctly create and modify YAML steps. 
+1. Use the Task Assistant to make any other needed changes to the YAML file. The Task Assistant is a pane on the right side of the screen, which helps you correctly create and modify YAML steps. 
 
     :::image type="content" source="media/task-assistant-yaml.png" alt-text="Configure your pipeline task with Task Assistant.":::    
  
@@ -69,14 +69,14 @@ Export your Classic pipeline to a YAML file that you can use in the editor.
 
 If you're not going to continue to use this pipeline, delete it from your project.
 
-1. Click the ellipses (...) and select **Delete**. 
+1. Select the ellipses (...) in the navigation and choose **Delete**. 
 
-1. Enter the name of your pipeline to permanently delete it.
+1. Enter the name of your pipeline to permanently delete it and save.
 
 ## Next steps
 
 Learn about the difference in features between YAML and Classic pipelines. 
 
 > [!div class="nextstepaction"]
-> [Use Azure Pipelines](../get-started/pipelines-get-started.md)
+> [Use Azure Pipelines](../get-started/pipelines-get-started.md#feature-availability)
 
