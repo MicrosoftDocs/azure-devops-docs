@@ -64,7 +64,7 @@ that you want in the report. Then email or print this report for review.
 
 Change the test case fields in the report by adding or removing columns from 
 the list view of the test suite.
-_Note - You can export up to 1MB data and not more that 75 Test Suites using this feature_ 
+_Note - You cannot export more that 75 Test Suites in a single operation. The email supports up to 1MB data_ 
 
 ### Q: When I export a test plan, can I just view the data or copy it to a Word document?
 
