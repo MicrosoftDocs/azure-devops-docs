@@ -2,7 +2,7 @@
 title: Get support and provide feedback
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Guide to providing product and content feedback, and accessing support resources in Azure DevOps
+description: Guide to providing product and content feedback, and accessing support resources in Azure DevOps.
 ms.technology: devops-new-user
 ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E  
 ms.manager: chcomley
@@ -78,7 +78,7 @@ The more details, the better!
 
 ## What platform/version am I using? 
 
-You can tell what platform you use from the URL you use to connect to Azure DevOps Services, Azure DevOps Server, or Team Foundation Server.
+You can tell what platform you use from the URL you use to connect to Azure DevOps Services or Azure DevOps Server.
 
 ### Azure DevOps Services
 

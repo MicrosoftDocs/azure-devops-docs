@@ -304,7 +304,7 @@ Content-Type: application/json
 | Parameter    | Type   | Notes
 |:-------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| account      | string | Your Visual Studio Online account.
+| account      | string | Your Visual Studio Codespaces account.
 | project      | string   | Name or ID of the project.
 | team         | string   | Name or ID of the team.
 | Query

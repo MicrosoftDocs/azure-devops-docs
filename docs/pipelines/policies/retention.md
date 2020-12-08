@@ -6,7 +6,7 @@ ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.author: rabououn
 author: juliakm
 ms.date: 11/19/2020
-ms.custom: contperfq1, contperfq2
+ms.custom: contperf-fy21q1, contperf-fy21q2
 monikerRange: '>= tfs-2015'
 ---
 
@@ -139,11 +139,13 @@ The following information is deleted when a build is deleted:
 The following information is deleted when a run is deleted:
 
 * Logs
-* All artifacts
+* All pipeline and build artifacts 
 * All symbols
 * Binaries
 * Test results
 * Run metadata
+
+Universal packages, Nuget, npm, and other packages are not tied to pipelines retention. 
 
 ::: moniker-end
 

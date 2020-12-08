@@ -16708,6 +16708,11 @@
     {
       "source_path": "docs/repos/git/forks-overview.md",
       "redirect_url": "/azure/devops/repos/git/forks"
+    },
+    {
+      "source_path": "docs/organizations/billing/buy-load-testing-vs.md",
+      "redirect_url": "/azure/devops/organizations/billing/overview",
+      "redirect_document_id": false
     }
   ]
 }

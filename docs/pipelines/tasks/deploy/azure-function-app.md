@@ -107,11 +107,11 @@ This may be because web.config is not present in your app. You can either add a 
 
 * Click on the task and go to Generate web.config parameters for Python, Node.js, Go and Java apps.
 
-![Generate web.config parameters Dialog](media/azure-rm-function-app-01.png)
+  ![Generate web.config parameters Dialog](media/azure-rm-function-app-01.png)
 
 * Click on the more button Generate web.config parameters for Python, Node.js, Go and Java apps to edit the parameters.
 
-![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
+  ![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
 
 * Select your application type from the drop down.
 * Click on OK. This will populate web.config parameters required to generate web.config.
@@ -119,6 +119,10 @@ This may be because web.config is not present in your app. You can either add a 
 ## FAQs
 
 [!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
+
+### I can't deploy to an internal App Service environment using an Azure Resource Manager service connection and a Microsoft-hosted agent
+
+By design, a Microsoft-hosted agent won't work with an App Service environment. Instead, you must configure a private agent in a virtual machine that's in the same virtual network as the App Service environment. Also, set a private DNS zone to enable communication between the resources.
 
 ## Open Source
 
