@@ -16,7 +16,7 @@ ms.date: 12/07/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-When it comes to accessing an Azure DevOps feature, there are a few items you need to understand: 
+When it comes to accessing an Azure DevOps feature, you need to understand the following key concepts. 
 
 - All users added to Azure DevOps are typically added to one or more *security groups*. 
 - Security groups are assigned *permissions* which either allow or deny access to a feature. 
@@ -148,12 +148,12 @@ you'll want to [change access levels](change-access-levels.md), not permissions.
 Setting the access level for users or groups doesn't provide them access to a project or the web portal. Only users or groups added to a team or security group can connect to a project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the project or a team](add-users-team-project.md).
 
 
-## Permission levels 
+## Permissions   
 
 ::: moniker range="azure-devops"
 
-As shown in the following image, security groups defined at the project and collection-level can be assigned to permissions assigned at the object, project, and collection level. 
-
+As shown in the following image, security groups defined at the project and collection-level can be assigned to permissions assigned at the object, project, and organization-level.
+ 
 :::image type="content" source="media/about-security/security-groups-permission-management-cloud.png" alt-text="Conceptual image mapping default security groups to permission levels, cloud":::
 
 ::: moniker-end
@@ -175,9 +175,16 @@ As shown in the following image, security groups defined at the project and coll
 For a description of each default security group, see [Security groups, service accounts, and permissions](permissions.md#groups).
 
 
-<a id="security-roles" />
+### Permission states 
 
-## Permission settings
+There are five possible assignments made to a permission. They grant or restrict access as indicated. 
+- User or group has permissions to perform a task: 
+	- **Allow** 
+	- **Inherited allow** 
+- User or group doesn't have permission to perform a task: 
+	- **Deny** 
+	- **Inherited deny** 
+	- **Not set** 
 
 Here's what you need to know about permission settings:
 
@@ -287,6 +294,7 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 
 
 
+<a id="security-roles" />
 ## Role-based access control  
 
 With Role-based access control, user accounts are assigned to a role, with each role assigned one or more permissions. The following table lists the artifacts whose permissions are managed by role.  
@@ -305,7 +313,7 @@ Access to select, new features are controlled by feature flags. Periodically, Az
  
 ## Try this next
 > [!div class="nextstepaction"]
-> []()
+> [Default permissions and access](permissions-access.md)
 
 
 ## Related articles

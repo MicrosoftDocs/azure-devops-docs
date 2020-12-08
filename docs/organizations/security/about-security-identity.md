@@ -130,35 +130,6 @@ Security namespaces store data that determines the level of access that Azure De
 
 To learn more, see [Security namespaces and permission reference](namespace-reference.md).  
 
-#### Permission levels 
-
-Permissions are assigned at various levels based on the structure of the Azure DevOps instance. To learn more, see [About permissions and inheritance](about-permissions.md).  
-
-::: moniker range="azure-devops"
-- **Object-level** 
-- **Project-level** 
-- **Organization-level**  
-::: moniker-end
-
-::: moniker range="< azure-devops"
-- **Object-level** 
-- **Project-level**
-- **Collection-level**
-- **Server-level**  
-::: moniker-end
-
-#### Permission states 
-
-There are five possible assignments made to a permission. They grant or restrict access as indicated. 
-- User or group has permissions to perform a task: 
-	- **Allow** 
-	- **Inherited allow** 
-- User or group doesn't have permission to perform a task: 
-	- **Deny** 
-	- **Inherited deny** 
-	- **Not set** 
- 
-
 
 ## Azure Repos and Azure Pipelines security 
 
