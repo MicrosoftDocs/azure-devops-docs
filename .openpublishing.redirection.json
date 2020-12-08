@@ -16711,7 +16711,7 @@
     },
     {
       "source_path": "docs/pipelines/create-first-pipeline-cli.md",
-      "redirect_url": "docs/pipelines/create-first-pipeline.md"
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline"
     },
     {
       "source_path": "docs/organizations/billing/buy-load-testing-vs.md",

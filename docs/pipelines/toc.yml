@@ -11,8 +11,6 @@
   - name: Create your first pipeline
     href: create-first-pipeline.md
     displayName: status badge, get started, first pipeline, import from github
-  - name: Create your first pipeline from the CLI
-    href: create-first-pipeline-cli.md
   - name: Clone or import a pipeline
     href: ./get-started/clone-import-pipeline.md
     displayName: export, copy
