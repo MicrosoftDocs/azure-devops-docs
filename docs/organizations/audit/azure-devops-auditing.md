@@ -160,6 +160,7 @@ When you filter through audit events, it’s best to use the *area* and *categor
 |Agile     |Process, create, delete, and modify.         |
 |Notification    |Create, remove, and modify a subscription.         |
 |Git        | Branch policies, and create, delete, and rename repository. |
+|Billing        | Adding, changing and removing Azure Subscription for billing, Changes to billing quantities (pipelines, artifacts and cloud load test)  |
 
 ### Filtering tips
 
