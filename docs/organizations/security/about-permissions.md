@@ -147,6 +147,7 @@ you'll want to [change access levels](change-access-levels.md), not permissions.
  
 Setting the access level for users or groups doesn't provide them access to a project or the web portal. Only users or groups added to a team or security group can connect to a project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the project or a team](add-users-team-project.md).
 
+<a name="permission-settings"></a>
 
 ## Permissions   
 

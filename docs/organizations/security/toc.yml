@@ -84,18 +84,19 @@
     href: ../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Secure projects
   items:
-  - name: Set project-level permissions
-    href: set-project-collection-level-permissions.md
   - name: Change individual permissions 
     href: change-individual-permissions.md
+  - name: Set project-level permissions
+    href: set-project-collection-level-permissions.md
   - name: Grant or restrict permissions to select tasks
     href: restrict-access.md   
+  - name: Set dashboard permissions
+    href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set Wiki permissions
     href: ../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set feedback permissions
     href: ../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Set dashboard permissions
-    href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+
 - name: Secure organizations/collections 
   items:
   - name: Set organization/collection-level permissions 
@@ -127,7 +128,7 @@
 - name: Secure Azure Boards
   items:
   - name: Set work tracking & plan permissions 
-    href: set-permissions-access-work-tracking.md
+    href: set-permissions-access-work-tracking.md 
 - name: Secure Azure Repos
   items:
   - name: Set Git or TFVC repository permissions
