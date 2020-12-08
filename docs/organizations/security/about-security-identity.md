@@ -43,32 +43,39 @@ Both our cloud service, Azure DevOps Services, and on-premises server, Azure Dev
 To learn more about the steps Microsoft takes to keep your projects in Azure DevOps Services safe, available, secure, and private, see this white paper, [Azure DevOps Services Data Protection Overview](../../organizations/security/data-protection.md).
 ::: moniker-end
 
+<a id="accounts" /> 
 
 ## Accounts 
 
-While the main types of accounts of interest are the user accounts that you add to your organization or project, Azure DevOps supports other types of accounts to perform various operations. These include the following account types:  
+While the main types of accounts of interest are the user accounts that you add to your organization or project, Azure DevOps supports other types of accounts to perform various operations. These include the following account types.   
 
-- **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner.  
-- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK.  
-- **Service principals**: Internal Azure DevOps accounts to to support internal operations. 
+
+::: moniker range="azure-devops"
+- **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner. To learn who is the organization owner for your organization, see [Increase your permissions](lookup-organization-owner-admin.md#find-owner). 
+- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level groups). 
+- **Service principals**: Internal Azure DevOps accounts to support internal operations. 
 - **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
 - **Third party accounts**: Accounts that require access to support Web hooks, service connections, or other third-party applications.
+
+::: moniker-end
+
+
+::: moniker range="< azure-devops"
+- **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level groups). 
+- **Service principals**: Internal Azure DevOps accounts to support internal operations. 
+- **Job agents**: Internal accounts used to run specific jobs on a regular schedule.
+- **Third party accounts**: Accounts that require access to support Web hooks, service connections, or other third-party applications.
+
+::: moniker-end
 
 The most effective means for managing accounts is by adding them to security groups. 
 
 > [!NOTE]  
 > The organization owner and members of the Project Collection Administrators group are granted full access to most all features and functions. 
-
-#### To learn more
-
-See one of the following articles:
-
-- [Create your organization](../accounts/create-organization.md)
-- [Change the organization owner](../accounts/change-organization-ownership.md)
-- [Add users and manage access](../accounts/add-organization-users.md) 
-- [Service accounts](permissions.md) 
+ 
  
 
+<a id="authentication" /> 
 
 ## Authentication
 
@@ -115,6 +122,8 @@ To learn more about how we store your credentials, see [Credential storage for A
 
 To learn more about how to choose the right authentication mechanism, see [Guidance for authentication](../../integrate/get-started/authentication/authentication-guidance.md).
 
+<a id="authorization" /> 
+
 ## Authorization
 
 Authorization verifies that the identity which is attempting to connect has the necessary permissions to access a service, feature, function, object, or method. Authorization always occurs after successful authentication. If a connection is not authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group did not have authorization to perform that action.
@@ -122,7 +131,7 @@ Authorization verifies that the identity which is attempting to connect has the 
 Authorization depends on the permissions assigned to the account. Permissions are granted either directly to an account, or through membership in a security group or security role. Access levels and feature flags can also grant or restrict access to a feature. 
 
 
-
+<a id="namespaces" /> 
 
 ## Security namespaces and permissions 
 

@@ -102,16 +102,6 @@
     href: set-project-collection-level-permissions.md
   - name: Set permissions to manage extensions
     href: ../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Permissions & groups 
-    href: permissions.md
-  - name: Security management tools 
-    href: security-tools-reference.md
-  - name: Security namespaces & permissions
-    href: namespace-reference.md  
-  - name: Manage security groups with CLI
-    href: add-manage-security-groups.md 
-  - name: Manage permissions with CLI
-    href: manage-tokens-namespaces.md 
   - name: Manage access policies (cloud)
     items:
     - name: Manage security & app access policies
@@ -173,5 +163,15 @@
     href: /microsoft-365/compliance/gdpr-dsr-vsts?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
   - name: Credential storage (Cloud)
     href: credential-storage.md
-
-
+- name: Reference
+  items:
+  - name: Permissions & groups 
+    href: permissions.md
+  - name: Security management tools 
+    href: security-tools-reference.md
+  - name: Security namespaces & permissions
+    href: namespace-reference.md  
+  - name: Manage security groups with CLI
+    href: add-manage-security-groups.md 
+  - name: Manage permissions with CLI
+    href: manage-tokens-namespaces.md 

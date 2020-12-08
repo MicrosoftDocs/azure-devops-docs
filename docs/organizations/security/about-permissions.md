@@ -311,10 +311,9 @@ To learn more, see [About security roles](about-security-roles.md).
  
 Access to select, new features are controlled by feature flags. Periodically, Azure DevOps Services introduces new features by placing them behind a feature flag. Features under a private preview require the organization owner to request that the feature be turned on. Other features may be introduced as a preview feature which general users can enable or disable. To learn more, see [Manage or enable features](../../project/navigation/preview-features.md).
  
-## Try this next
+## Next steps
 > [!div class="nextstepaction"]
 > [Default permissions and access](permissions-access.md)
-
 
 ## Related articles
 
