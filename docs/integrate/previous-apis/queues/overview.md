@@ -1,8 +1,8 @@
 ---
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-title: Agent Queues | REST API Reference for Team Foundation Server
-description: Get Agent queues using the REST APIs for Team Foundation Server.
+title: Agent Queues | REST API Reference for Azure DevOps Server
+description: Get Agent queues using the REST APIs for Azure DevOps Server.
 ms.assetid: 61C7F854-3CF5-405E-A74C-1DF9101E38E9
 ms.topic: article
 ms.author: chcomley

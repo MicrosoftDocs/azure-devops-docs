@@ -1,6 +1,6 @@
 ---
-title: Dashboards | REST API Reference for Team Foundation Server
-description: Work with dashboard programmatically using the REST APIs for VSTS.
+title: Dashboards | REST API Reference for Azure DevOps Server
+description: Work with dashboard programmatically using the REST APIs for Azure DevOps Server.
 ms.assetid: EE46001A-8B9C-4E09-B99B-4F104013DFAD
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'

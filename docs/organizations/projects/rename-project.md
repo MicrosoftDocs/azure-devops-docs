@@ -94,7 +94,7 @@ For the following clients, save your work in each and restart:
 
 - Visual Studio/Team Explorer
 
-- Eclipse, if your team uses the Team Foundation Server plugin (Team Explorer Everywhere)
+- Eclipse, if your team uses the Team Explorer Everywhere plugin
 
 - Microsoft Excel, PowerPoint, or Project, if your team uses the Team Foundation Server Extension for these Office products
  

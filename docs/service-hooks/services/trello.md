@@ -2,13 +2,13 @@
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Create a service hook with Trello
-description: Use Trello with your Azure DevOps Services organization
+description: Use Trello with your Azure DevOps organization.
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 monikerRange: '>= tfs-2017'
 ms.date: 07/27/2020
 ---
 
-# Create a service hook for Azure DevOps Services and TFS with Trello
+# Create a service hook for Azure DevOps with Trello
 
 [!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
 

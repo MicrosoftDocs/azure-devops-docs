@@ -1,6 +1,6 @@
 ---
-title: Release Management Overview | Visual Studio Online REST API Reference
-description: Work with Visual Studio Online builds programmatically using the REST APIs.
+title: Release Management Overview | Visual Studio Codespaces REST API Reference
+description: Work with Visual Studio Codespaces builds programmatically using the REST APIs.
 ms.assetid: a5af63ab-36dd-4370-b962-ffbd6c1c4f58
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
@@ -10,7 +10,7 @@ author: chcomley
 ms.date: 06/01/2017
 ---
 
-# Release Management
+# Release management
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 
