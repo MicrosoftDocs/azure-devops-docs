@@ -12,7 +12,8 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
-Check the ([availability note](../overview.md#versions-compatibility)) to ensure compatibility. 
+> [!NOTE]
+> Check the [Versions and compatibility](../overview.md#versions-compatibility) to ensure compatibility. 
 
 Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (for example, npmjs.com, NuGet.org, Maven Central, and PyPI) and authenticated feeds (that is, other Azure DevOps Services feeds in your organization or in organizations in your Azure Active Directory (Azure AD) tenant). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
@@ -34,10 +35,10 @@ Already familiar with the concepts and want to jump right in? Start with these h
 
 Upstream sources enable you to manage all of your product's dependencies in a single feed. We recommend publishing all of the packages for a given product to that product's feed, and managing that product's dependencies from remote feeds in the same feed, via upstream sources. This setup has a few benefits:
 
-- **Simplicity:** your NuGet.config, .npmrc, or settings.xml contains exactly [one feed](#single-feed) (your feed).
-- **Determinism:** your feed resolves package requests in [order](#search-order), so rebuilding the same codebase at the same commit or changeset uses the same set of packages
-- **Provenance:** your feed knows the provenance of packages it saved via upstream sources, so you can verify that you're using the original package, not a custom, or malicious copy published to your feed
-- **Peace of mind:** packages used via upstream sources are guaranteed to be saved in the feed on first use; if the upstream source is disabled/removed, or the remote feed [goes down](#offline-upstreams) or deletes a package you depend on, you can continue to develop and build
+- **Simplicity:** your NuGet.config, .npmrc, or settings.xml contains exactly one feed (your feed).
+- **Determinism:** your feed resolves package requests in order, so rebuilding the same codebase at the same commit or changeset uses the same set of packages.
+- **Provenance:** your feed knows the provenance of packages it saved via upstream sources, so you can verify that you're using the original package, not a custom, or malicious copy published to your feed.
+- **Peace of mind:** packages used via upstream sources are guaranteed to be saved in the feed on first use. If the upstream source is disabled/removed or the remote feed goes down or deletes a package you depend on, you can continue to develop and build.
 
 ## Best practices: feed consumers
 
