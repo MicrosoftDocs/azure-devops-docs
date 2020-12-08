@@ -79,22 +79,6 @@
   items:
   - name: View storage
     href: ../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Troubleshooting
-  items:
-  - name: User & permissions management
-    href: ./accounts/faq-user-and-permissions-management.md
-  - name: Trace permissions
-    href: ./security/faq-trace-permissions.md
-  - name: Authenticate & invite with GitHub
-    href: ./security/faq-github-authentication.md
-  - name: Access with Azure AD
-    href: ./accounts/faq-azure-access.md
-  - name: Set up Visual Studio
-    href: ./accounts/faq-set-up-vs.md
-  - name: Resolve connection issues
-    href: ../user-guide/troubleshoot-connection.md
-  - name: "TF31002: Unable to connect"
-    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Projects & organizations
     items:
     - name: Create a project
