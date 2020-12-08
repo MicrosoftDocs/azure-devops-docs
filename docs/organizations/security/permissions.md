@@ -710,7 +710,7 @@ For each project that you create, the system creates the followings project-leve
     </tr>
     <tr>
         <td>Contributors</td>
-        <td>Has permissions to contribute fully to the project code base and work item tracking. The main permissions they don&#39;t have or those that manage or administer resources.</td>
+        <td>Has permissions to contribute fully to the project code base and work item tracking. The main permissions they don&#39;t have are those that manage or administer resources.</td>
         <td>By default, the team group created when you create a project is added to this group, and any user you add to the team will be a member of this group. In addition, any team you create for a project will be added to this group by default, unless you choose a different group from the list.</td>
     </tr>
     <tr>
