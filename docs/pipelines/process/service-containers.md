@@ -40,35 +40,30 @@ A simple example of using [container jobs](container-phases.md):
 resources:
   containers:
   - container: my_container
-    image: ubuntu:18.04
+    image: buildpack-deps:focal
   - container: nginx
     image: nginx
-  - container: redis
-    image: redis
+
 
 pool:
-  vmImage: 'ubuntu-18.04'
+  vmImage: 'ubuntu-20.04'
 
 container: my_container
-
 services:
   nginx: nginx
-  redis: redis
 
 steps:
 - script: |
-    echo $AGENT_CONTAINERMAPPING
+    curl nginx
+  displayName: Show that nginx is running
 ```
 
-This pipeline fetches the latest `nginx` and `redis` containers from [Docker Hub](https://hub.docker.com)
+This pipeline fetches the `nginx` and `buildpack-deps` containers from [Docker Hub](https://hub.docker.com)
 and then starts the containers. The containers are networked together so that they can reach each other
-by their `services` name. The pipeline then prints the variables `$AGENT_CONTAINERMAPPING` from within the Ubuntu container. 
+by their `services` name. 
 
 From inside this job container, the `nginx` and `redis` host names resolve to the correct services using Docker networking.
 All containers on the network automatically expose all ports to each other.
-
-You cannot run `sudo` commands within a container. 
-
 ## Single job
 
 You can also use service containers without a job container. A simple example:
@@ -88,7 +83,7 @@ resources:
     - 6379
 
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-18.04'
 
 services:
   nginx: nginx
@@ -97,11 +92,10 @@ services:
 steps:
 - script: |
     curl localhost:8080
-    redis-cli -p "${AGENT_SERVICES_REDIS_PORTS_6379}" ping
+    echo $AGENT_SERVICES_REDIS_PORTS_6379
 ```
 
-This pipeline starts the latest `nginx` and `redis` containers,
-and then publishes the specified ports to the host. Since the job is not running in a container, there's no automatic name resolution.
+This pipeline starts the latest `nginx` containers. Since the job is not running in a container, there's no automatic name resolution.
 This example shows how you can instead reach services by using `localhost`. 
 In the above example we provide the port explicitly (for example, `8080:80`).
 
@@ -120,7 +114,7 @@ In the following example, the same steps run against multiple versions of Postgr
 resources:
   containers:
   - container: my_container
-    image: ubuntu:16.04
+    image: ubuntu:18.04
   - container: pg11
     image: postgres:11
   - container: pg10
