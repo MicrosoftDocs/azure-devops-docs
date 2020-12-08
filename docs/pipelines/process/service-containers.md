@@ -4,7 +4,7 @@ titleSuffix: Azure Pipelines & TFS
 description: Run containerized services alongside pipeline jobs
 ms.assetid: a6af47c5-2358-487a-ba3c-d213930fceb8
 ms.topic: conceptual
-ms.date: 01/14/2019
+ms.date: 12/07/2020
 monikerRange: azure-devops
 ---
 
@@ -40,14 +40,14 @@ A simple example of using [container jobs](container-phases.md):
 resources:
   containers:
   - container: my_container
-    image: ubuntu:16.04
+    image: ubuntu:18.04
   - container: nginx
     image: nginx
   - container: redis
     image: redis
 
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-18.04'
 
 container: my_container
 
@@ -57,17 +57,17 @@ services:
 
 steps:
 - script: |
-    apt install -y curl
-    curl nginx
-    apt install redis-tools
-    redis-cli -h redis ping
+    echo $AGENT_CONTAINERMAPPING
 ```
 
 This pipeline fetches the latest `nginx` and `redis` containers from [Docker Hub](https://hub.docker.com)
 and then starts the containers. The containers are networked together so that they can reach each other
-by their `services` name. The pipeline then runs the `apt`, `curl` and `redis-cli` commands inside the `ubuntu:16.04` container.
+by their `services` name. The pipeline then prints the variables `$AGENT_CONTAINERMAPPING` from within the Ubuntu container. 
+
 From inside this job container, the `nginx` and `redis` host names resolve to the correct services using Docker networking.
 All containers on the network automatically expose all ports to each other.
+
+You cannot run `sudo` commands within a container. 
 
 ## Single job
 
