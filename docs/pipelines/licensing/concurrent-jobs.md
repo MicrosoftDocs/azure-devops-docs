@@ -1,7 +1,7 @@
 ---
 title: Configure and pay for parallel jobs
 titleSuffix: Azure DevOps
-ms.custom: seodec18,contperfq1
+ms.custom: seodec18,contperf-fy21q1
 description: Configure parallel jobs in Azure Pipelines and pay for them
 ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
