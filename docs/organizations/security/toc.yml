@@ -60,6 +60,8 @@
     items:
     - name: User & permissions management
       href: ../accounts/faq-user-and-permissions-management.md
+    - name: Add administrators
+      href: ./accounts/faq-user-and-permissions-management.md
     - name: Authenticate & invite with GitHub
       href: faq-github-authentication.md
     - name: Access with Azure AD

@@ -79,16 +79,6 @@
   items:
   - name: View storage
     href: ../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Projects & organizations
-    items:
-    - name: Create a project
-      href: ./projects/faq-create-project.md
-    - name: Rename a project
-      href: ./projects/faq-rename-project.md
-    - name: Add administrators
-      href: ./accounts/faq-user-and-permissions-management.md
-    - name: Organization settings
-      href: ./accounts/faq-configure-customize-organization.md
 - name: REST API reference
   items:
   - name: Notifications
