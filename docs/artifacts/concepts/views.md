@@ -46,9 +46,7 @@ Views are read-only, which means that users connected to a view can only use pac
 
 When creating packages in continuous integration and delivery scenarios, it's important to convey three pieces of information: the *nature* of the change, the *risk* of the change, and the *quality* of the package.
 
-<p style="text-align: center;">
-<img alt="A semantic version number: 1.2.3-beta2. The 1.2.3 represents the nature of the change; the -beta2, the risk of the change." src="media/release-views-quality-nature.png" height="150px">
-</p>
+:::image type="content" source="media/release-views-quality-nature.png" alt-text="The semantic version breakdown: 1.2.3 represents the nature of change and beta2 represents the quality of change.":::
 
 ### Assess the nature and risk of changes
 
