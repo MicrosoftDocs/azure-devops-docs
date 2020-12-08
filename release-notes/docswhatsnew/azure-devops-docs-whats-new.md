@@ -133,7 +133,7 @@ Welcome to what's new in the Azure DevOps docs from November 1, 2020 through Nov
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [38 GitHub documentation issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2020-11-01..2020-11-30+).
+Thank you for your feedback on our documentation. This month we made updates to our content to address 38 GitHub documentation issues. To browse the issues, see [Azure DevOps documentation issues addressed in November 2020](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2020-11-01..2020-11-30+).
 
 ## Community contributors
 
