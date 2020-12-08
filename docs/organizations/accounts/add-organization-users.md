@@ -8,7 +8,7 @@ ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-ms.date: 08/25/2020
+ms.date: 12/08/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -113,7 +113,7 @@ Choose the **Current page** for instructions.
 
 ::: moniker-end
 
-The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users.
+The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users for Azure DevOps Server 2020.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -292,7 +292,7 @@ Choose the **Current page** for instructions.
 
 ::: moniker-end
 
-The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users.
+The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users for Azure DevOps Server 2020.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
