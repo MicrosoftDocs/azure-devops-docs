@@ -1,6 +1,6 @@
 ---
 title: Microsoft-hosted agents for Azure Pipelines
-ms.custom: "seodec18, contentperfQ4"
+ms.custom: seodec18, contperf-fy20q4
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
