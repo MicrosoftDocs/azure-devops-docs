@@ -1,7 +1,7 @@
 ﻿---
 title: Buy change CI/CD Azure Pipelines
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, contentperfq4
+ms.custom: seodec18, contperf-fy20q4
 description: Learn how to pay for more parallel jobs or reduce jobs in Azure Pipelines.
 ms.technology: devops-billing
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
