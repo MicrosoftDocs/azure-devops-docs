@@ -9,7 +9,7 @@ ms.custom: has-adal-ref
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 09/29/2020
+ms.date: 12/07/2020
 ---
 
 # Security key concepts
@@ -20,11 +20,12 @@ This article provides definitions for select terms used to manage authentication
  
 ## Access control entries (ACE)
 
-An access control entry is an entry in an access control list (ACL) that grants or denies a user or group access to an Azure DevOps resource. You can manage ACLs and ACEs with the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#permission-namespaces-and-actions).
+An access control entry is an entry in an access control list (ACL) that grants or denies a user or group access to an Azure DevOps resource. For a list of namespaces, ACEs, and management tools, see [Security namespace and permission reference](namespace-reference.md). 
+
 
 ## Access control list (ACL)
 
-An access-control list is a list of permissions attached to an Azure DevOps object, such as . An ACL specifies which users or system processes can view, create, modify, delete, or otherwise manage objects. You can manage ACLs and ACEs with the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#permission-namespaces-and-actions).
+An access-control list is a list of permissions attached to an Azure DevOps object, such as . An ACL specifies which users or system processes can view, create, modify, delete, or otherwise manage objects. For a list of namespaces, ACLs, and management tools, see [Security namespace and permission reference](namespace-reference.md). 
 
 ## Access level
 
