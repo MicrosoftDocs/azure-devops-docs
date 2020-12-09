@@ -15,7 +15,7 @@ monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 Templates let you define reusable content, logic, and parameters. Templates function in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
 
 If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow.  
-
+u
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -71,10 +71,10 @@ parameters:
   default: false
 
 steps:
-  - ${{ if eq(parameters.experimentalTemplate, true) }}:
-    - template: experimental.yml
-  - ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
-    - template: stable.yml
+- ${{ if eq(parameters.experimentalTemplate, true) }}:
+  - template: experimental.yml
+- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
+  - template: stable.yml
 ```
 
 ### Parameter data types
