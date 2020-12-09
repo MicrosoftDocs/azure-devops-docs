@@ -175,6 +175,8 @@ To learn more, see [Security namespaces and permission reference](namespace-refe
       - Repository and branch policies
       - Pipeline policies
 
+
+
 ## Azure Repos and Azure Pipelines security 
 
 Since repositories and build and release pipelines pose unique security challenges, additional features beyond those discussed in this article are employed. To learn more, see the following: 
