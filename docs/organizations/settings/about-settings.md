@@ -37,10 +37,10 @@ You configure resources either for yourself or for your team, project, or projec
 Individual contributors can set their user preferences, enable features that are in preview, and manage their favorites and notifications.
 
 :::row:::
-   :::column span="1":::
+   :::column span=".5":::
       **Area**
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
       **Supported tasks**
    :::column-end:::
    :::column span="1":::
@@ -50,10 +50,10 @@ Individual contributors can set their user preferences, enable features that are
 ---
 ::: moniker range=">= azure-devops-2020"
 :::row:::
-   :::column span="1":::
+   :::column span=".5":::
       **General**
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
       - [Set your preferences](set-your-preferences.md)
       - [Enable preview features](../../project/navigation/preview-features.md)
    :::column-end:::
@@ -65,10 +65,10 @@ Individual contributors can set their user preferences, enable features that are
 ::: moniker-end
 ::: moniker range="< azure-devops-2020"
 :::row:::
-   :::column span="1":::
+   :::column span=".5":::
       **General**
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
       - [Set your preferences](set-your-preferences.md)
    :::column-end:::
    :::column span="1":::
@@ -78,10 +78,10 @@ Individual contributors can set their user preferences, enable features that are
 ---
 ::: moniker-end
 :::row:::
-   :::column span="1":::
+   :::column span=".5":::
       **Security**
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
       - [View permissions](../security/view-permissions.md)
       - [Add an alternate account to your Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity)
    :::column-end:::
@@ -92,10 +92,10 @@ Individual contributors can set their user preferences, enable features that are
 ---
 ::: moniker range="azure-devops"
 :::row:::
-   :::column span="1":::
+   :::column span=".5":::
       **Authentication**
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
       - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
       - [Authorize access to REST APIs with OAuth 2.0](../../integrate/get-started/authentication/oauth.md)
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
@@ -108,10 +108,10 @@ Individual contributors can set their user preferences, enable features that are
 ::: moniker-end
 ::: moniker range=">= tfs-2017 < azure-devops"
 :::row:::
-   :::column span="1":::
+   :::column span=".5":::
       **Authentication**
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
       - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
    :::column-end:::
@@ -123,10 +123,10 @@ Individual contributors can set their user preferences, enable features that are
 ::: moniker-end
 ::: moniker range="tfs-2015"
 :::row:::
-   :::column span="1":::
+   :::column span=".5":::
       **Authentication**
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
    :::column-end:::
    :::column span="1":::
@@ -136,10 +136,10 @@ Individual contributors can set their user preferences, enable features that are
 ---
 ::: moniker-end
 :::row:::
-   :::column span="1":::
+   :::column span=".5":::
       **Favorites**
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
       - [Set personal or team favorites](../../project/navigation/set-favorites.md)
    :::column-end:::
    :::column span="1":::
@@ -149,10 +149,10 @@ Individual contributors can set their user preferences, enable features that are
 ---
 ::: moniker range=">= tfs-2015"
 :::row:::
-   :::column span="1":::
+   :::column span=".5":::
       **Notifications**
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
       - [View your subscriptions, opt-out as needed](about-settings.md)
       - [Change your preferred email address](../../notifications/change-email-address.md)
       - [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)
