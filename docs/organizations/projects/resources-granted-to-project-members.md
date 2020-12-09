@@ -17,7 +17,7 @@ ms.date: 11/16/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-AN Azure DevOps project is a container and security boundary for your software development assets: work items, code, builds, etc.
+An Azure DevOps project is a container and security boundary for your software development assets: work items, code, builds, etc.
 When you add someone as a member of a project, you are also trusting that person with some additional privileges.
 A project member has access to organization-level resources and additional groups (or scopes) beyond the project.
 If someone is not already a member of your organization, when you add them to a project, you implicitly grant them this additional access.  
