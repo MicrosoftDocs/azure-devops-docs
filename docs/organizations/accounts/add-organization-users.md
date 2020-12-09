@@ -8,7 +8,7 @@ ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-ms.date: 11/16/2020
+ms.date: 12/08/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -111,7 +111,7 @@ Choose the **Current page** for instructions.
 
 ::: moniker-end
 
-The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users.
+The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users for Azure DevOps Server 2020.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -163,7 +163,8 @@ ID                                    Display Name          Email               
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com   contoso@contoso.com   stakeholder     Stakeholder     pending 
 ```
 
-You can also add the user to an Azure DevOps Group- Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
+
+You can also add the user to an Azure DevOps Group - Project Contributors, the default security group for people who contribute to your project. To learn more, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 
 ```azurecli
 az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM1NzQ1NzUzLTExNDI0NTQwOTQtMjQ4MjkwODAwNS0xNDU4NjAwODE1LTEtMTY5NTI2NTAyNi00MjM0Mzc1NS0yMTY5ODM4OTczLTI0NDk3NzU5NDE --member-id contoso@contoso.com
@@ -242,7 +243,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
    ![.](../../media/open-organization-settings-users-preview.png)
 
-4. Select a user or group of users. Then, select **... Actions** at the end of the **Name** column to open the context menu.
+4. Select a user or group of users. Then, select **Actions ... ** at the end of the **Name** column to open the context menu.
 
     In the context menu, select one of the following options:
 
@@ -288,7 +289,7 @@ Choose the **Current page** for instructions.
 
 ::: moniker-end
 
-The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users.
+The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users for Azure DevOps Server 2020.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
