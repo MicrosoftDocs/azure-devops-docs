@@ -177,14 +177,11 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
        TBD
    :::column-end:::
    :::column span="1":::
-       ::: moniker range=">= tfs-2018 < azure-devops"
       #### Secure on-premises deployments  
        - [Set up secure sockets layer](/azure/devops/server/admin/setup-secure-sockets-layer?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Web site settings & security](/azure/devops/server/admin/websitesettings?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Set SQL Server report permissions](../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
-       ::: moniker-end
-       ::: moniker range="< tfs-2018"
       #### Secure on-premises deployments  
        - [Allowed address lists & network connections](allow-list-ip-url.md)  
        - [Set up secure sockets layer](/azure/devops/server/admin/setup-secure-sockets-layer?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
@@ -192,7 +189,6 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
        - [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Set SQL Server report permissions](../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Set SharePoint project portal permissions](set-sharepoint-permissions.md)   
-       ::: moniker-end
 :::row-end:::
 ---
 ::: moniker-end
