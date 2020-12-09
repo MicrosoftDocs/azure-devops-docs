@@ -267,7 +267,7 @@
       href: ecosystems/deploy-linux-vm.md
   - name: Deploy apps to Azure
     items:
-    - name: Deploy a Linux web app - ARM template
+    - name: Use a Resource Manager template to deploy
       href: apps/cd/azure/deploy-arm-template.md
       displayName: Resource Manager
     - name: Deploy a data pipeline with Azure
