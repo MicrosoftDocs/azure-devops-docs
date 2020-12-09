@@ -106,7 +106,7 @@ For project collection and project administrators, learn more about security and
 ---
 :::row:::
    :::column span="1":::
-       **Access levels**
+       #### Access levels  
        ::: moniker range="azure-devops"
        - [Change a user's access level](setup-ad-aad.md)  
        - [Provide Stakeholders access to edit pipelines](provide-stakeholder-pipeline-access.md) 
@@ -115,7 +115,7 @@ For project collection and project administrators, learn more about security and
        - [Change access levels](change-access-levels.md)  
        ::: moniker-end
        ::: moniker range="azure-devops"
-       **Azure Active Directory**
+       #### Azure Active Directory  
        - [Set up Active Directory or Azure Active Directory](setup-ad-aad.md)  
        - [Add or remove users from Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json)  
        - [Add AD/Azure AD security groups to Azure DevOps security groups](add-ad-aad-built-in-security-groups.md)  
@@ -126,23 +126,35 @@ For project collection and project administrators, learn more about security and
        - [Disconnect from Azure AD](../accounts/disconnect-organization-from-azure-ad.md)  
        - [List organizations connected to Azure AD](../accounts/get-list-of-organizations-connected-to-azure-active-directory.md)
        ::: moniker-end
-       
-       
-       **Authentication**
+   :::column-end:::
+   :::column span="1":::
+       #### Authentication 
        - [Authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Authorize access to REST APIs with OAuth 2.0](../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Revoke users' PATs (for admins)](../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
-   :::column-end:::
-   :::column span="1":::
-      **Permissions**
+      #### Permissions  
        - [Change individual permissions](change-individual-permissions.md)   
        - [Set project-level permissions](set-project-collection-level-permissions.md)   
        - [Grant or restrict permissions to select tasks](restrict-access.md)   
        - [Set Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Set feedback permissions](../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
-      ### Secure Azure Boards, set permissions 
+      #### Secure projects, set permissions 
+       - [Delete team project](set-project-collection-level-permissions.md#project-level)
+       - [Edit project-level information](set-project-collection-level-permissions.md#project-level)
+       - [Manage project properties](set-project-collection-level-permissions.md#project-level)
+       - [Rename team project](set-project-collection-level-permissions.md#project-level)
+       - [Suppress notifications for work item updates](set-project-collection-level-permissions.md#project-level)
+       - [Update project visibility](set-project-collection-level-permissions.md#project-level)
+       - [View project-level information](set-project-collection-level-permissions.md#project-level)
+
+
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      #### Secure Azure Boards, set permissions 
        - [Bypass rules on work item updates](set-project-collection-level-permissions.md#project-level)
        - [Create child nodes (area and iteration paths)](set-permissions-access-work-tracking.md#set-permissions-area-path)
        - [Create tag definition](set-project-collection-level-permissions.md#project-level)
@@ -156,9 +168,9 @@ For project collection and project administrators, learn more about security and
        - [Administer process permissions](set-project-collection-level-permissions.md#collection-level) 
        - [Change process of team project](set-project-collection-level-permissions.md#project-level) 
        - [Create, delete, and edit process](set-project-collection-level-permissions.md#collection-level)
-       - [Customized inherited process](process-permissions.md#work-item-queries)
+       - [Customized inherited process](set-permissions-access-work-tracking.md#process-permissions)
        - [Delete field from organization](set-project-collection-level-permissions.md#collection-level)
-      ### Secure Test Plans, Set test permissions 
+      #### Secure Test Plans, Set test permissions 
        - [Create, delete, and view test runs](set-permissions-access-test.md#delete-test-artifacts)  
        - [Manage test configurations](set-project-collection-level-permissions.md#project-level)  
        - [Manage test environments](set-project-collection-level-permissions.md#project-level)  
@@ -166,20 +178,38 @@ For project collection and project administrators, learn more about security and
        - [Manage test plans and test suites under an area path](set-permissions-access-test.md#manage-test-artifacts)
        - [Set access, license requirements](../../test/manual-test-permissions.md)
    :::column-end:::
+   :::column span="1":::
+      #### Secure code, repositories, and branches 
+       - [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)  
+       - [Set Git branch permissions](../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Administer shelved changes (TFVC)](set-project-collection-level-permissions.md#project-level)
+       - [Administer workspaces (TFVC)](set-project-collection-level-permissions.md#project-level)
+       - [Create a workspace (TFVC)](set-project-collection-level-permissions.md#project-level)
+      #### Secure pipelines 
+       - [Assign pipeline security roles](../../pipelines/policies/permissions.md)
+       - [Grant version control permissions to the build service](../../pipelines/scripts/git-commands.md)  
+       - [Administer build resource permissions](set-project-collection-level-permissions.md#project-level)
+       - [Manage build resources](set-project-collection-level-permissions.md#project-level)
+       - [Manage pipeline policies](set-project-collection-level-permissions.md#project-level)
+       - [Use build resources](set-project-collection-level-permissions.md#project-level)
+       - [View build resources](set-project-collection-level-permissions.md#project-level)  
+       - [Set pipeline permissions](../../pipelines/policies/set-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)    
+       - [Set pipeline permissions](../../pipelines/policies/set-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Pipelines security walkthrough](../../pipelines/security/overview.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Approach to securing YAML pipelines](../../pipelines/security/approach.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Repository protection](../../pipelines/security/repos.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Pipeline resources](../../pipelines/security/resources.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Project structure](../../pipelines/security/projects.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Security through templates](../../pipelines/security/templates.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Variables and parameters](../../pipelines/security/inputs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Shared infrastructure](../../pipelines/security/infrastructure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Other security considerations](../../pipelines/security/misc.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Add continuous security validation](../../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
+   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      **Secure pipelines**
-       
-       
-       
-       
-      **Secure code, repositories, and branches**
-
-      **Secure pipelines**   
-   :::column-end:::
-   :::column span="1":::
-      **Secure organizations**
+      #### Secure organizations  
        - [Set organization/collection-level permissions](set-project-collection-level-permissions.md)  
        - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        ::: moniker range="azure-devops"
@@ -189,13 +219,32 @@ For project collection and project administrators, learn more about security and
        - [Restrict admins from inviting new users](../security/restrict-invitations.md)   
        ::: moniker-end
        
-       
-      **Secure on-premises deployments**
-    
-       
-       
-      **Secure data and networks**
-
+   :::column-end:::
+   :::column span="1":::
+       ::: moniker range=">= tfs-2018 < azure-devops"
+      #### Secure on-premises deployments  
+       - [Set up secure sockets layer](/azure/devops/server/admin/setup-secure-sockets-layer?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
+       - [Web site settings & security](/azure/devops/server/admin/websitesettings?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
+       - [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
+       - [Set SQL Server report permissions](../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
+       ::: moniker-end
+       ::: moniker range="< tfs-2018"
+      #### Secure on-premises deployments  
+       - [Allowed address lists & network connections](allow-list-ip-url.md)  
+       - [Set up secure sockets layer](/azure/devops/server/admin/setup-secure-sockets-layer?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
+       - [Web site settings & security](/azure/devops/server/admin/websitesettings?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
+       - [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
+       - [Set SQL Server report permissions](../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
+       - [Set SharePoint project portal permissions](set-sharepoint-permissions.md)   
+       ::: moniker-end
+       ::: moniker range="azure-devops"
+      #### Secure data and networks  
+       - [Allowed address lists & network connections](allow-list-ip-url.md)  
+       - [Data protection overview ](data-protection.md)  
+       - [Data location](data-location.md)   
+       - [Data Subject Requests for the GDPR & CCPA](/microsoft-365/compliance/gdpr-dsr-vsts?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
+       - [Credential storage ](credential-storage.md)
+       ::: moniker-end
    :::column-end:::
 :::row-end:::
 ---
@@ -203,7 +252,6 @@ For project collection and project administrators, learn more about security and
  
  
 
-- [Manage Active Directory groups](/azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
 
 ## Reference 
 
@@ -217,6 +265,7 @@ For project collection and project administrators, learn more about security and
 
 ## Related articles 
 
+- [Manage Active Directory groups](/azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
 
  
 

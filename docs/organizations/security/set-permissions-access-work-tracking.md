@@ -249,15 +249,11 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 ::: moniker-end
 
 
-<!--- 
-
 <a id="tags" /> 
 
 ## Set permissions on work item tags
 
-By default, all users of the Contributors group can create and add tags to work items.  
-
--->  
+By default, all users of the Contributors group can create and add tags to work items.  To restrict access to a user or group, you can set the [**Create tag definition** permission](set-project-collection-level-permissions.md#project-level) at the project-level.
 
 ::: moniker range="<= azure-devops-2019"  
 
