@@ -150,6 +150,10 @@ In the following example, a new resource group and virtual machine scale set are
 
 3. Choose the desired virtual machine scale set from that subscription.
 
+    > [!NOTE]
+    > Currently the only supported service connection is an Azure Resource Manager (ARM) service connection based on a service principal key. ARM service connections based on a certificate credential or a Managed Identity will fail. When you attempt to list the existing scale sets in your subscription, you'll see an error like this:
+    > `Invalid Service Endpoint with Id <guid> and Scope <guid>`
+
 4. Specify a name for your agent pool.
 
 5. Configure the following options:
