@@ -197,7 +197,6 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
        - [Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path) 
        - [Query and query folders](set-permissions-access-work-tracking.md#work-item-queries)
               
-      **Process**
        - [Administer process permissions](set-project-collection-level-permissions.md#collection-level) 
        - [Change process of team project](set-project-collection-level-permissions.md#project-level) 
        - [Create, delete, and edit process](set-project-collection-level-permissions.md#collection-level)
