@@ -122,21 +122,13 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
        - [Revoke users' PATs (for admins)](../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
    :::column-end:::
    :::column span="1"::: 
-      #### Permissions  
+      #### Secure projects 
        - [Change individual permissions](change-individual-permissions.md)   
        - [Set project-level permissions](set-project-collection-level-permissions.md)   
        - [Grant or restrict permissions to select tasks](restrict-access.md)   
        - [Set Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Set feedback permissions](../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
-      #### Secure projects, set permissions 
-       - [Delete team project](set-project-collection-level-permissions.md#project-level)
-       - [Edit project-level information](set-project-collection-level-permissions.md#project-level)
-       - [Manage project properties](set-project-collection-level-permissions.md#project-level)
-       - [Rename team project](set-project-collection-level-permissions.md#project-level)
-       - [Suppress notifications for work item updates](set-project-collection-level-permissions.md#project-level)
-       - [Update project visibility](set-project-collection-level-permissions.md#project-level)
-       - [View project-level information](set-project-collection-level-permissions.md#project-level)
    :::column-end:::
 :::row-end:::
 ---
