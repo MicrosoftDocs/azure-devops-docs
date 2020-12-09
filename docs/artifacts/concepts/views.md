@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 *If you're familiar with the principles behind views, you can jump to the [docs page](../feeds/views.md) to quickly start using them.*
 
-Views enable you to share subsets of the NuGet, npm, Maven, Python and Universal Packages package-versions in your feed with consumers. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and packages that didn't meet a quality bar.
+Views enable you to share subsets of the NuGet, npm, Maven, Python, and Universal Packages package-versions in your feed with consumers. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and packages that didn't meet a quality bar.
 
 ## Views and upstream sources
 
@@ -56,12 +56,8 @@ The nature and the risk of the change both pertain to the _change itself_, that 
 
 However, the *quality* of the *package* generally isn't known until validation, which comes after your change is built and packaged. Because of this, it's not feasible to communicate the quality in the version number, which is specified during packaging and before validation. There are workarounds to pre-validate (for example, by consuming the build's DLLs directly before they're packaged; or, publishing packages to a "debug" or "CI" feed, validating, and republishing to a "release" feed), but none that we've seen can truly guarantee that the built package meets the correct quality standard.
 
-<p style="text-align: center;">
-<img alt="Release views workflow: make changes, build, package, validation, release, and repeat." src="media/release-views-flow.png" height="400px">
-</p>
+:::image type="content" source="media/release-views-flow.png" alt-text="publishing packages workflow":::
 
 Release views enable you to communicate the quality of a package after it's been validated. You create SemVer-compliant packages in CI/CD that communicate the nature and risk of your changes using the package version, then promote the package into a release view to show your consumers that it's of a certain quality (for example, `@prerelease`, `@release`, etc.). So, a release view enables your consumers to see only the subset of versions of each package that are tested, validated, and ready to go.
 
-<p style="text-align: center;">
-<img alt="With release views, the quality of the change is communicated by the release view, rather than as part of the version number." src="media/release-views-quality-tags.png" height="150px">
-</p>
+:::image type="content" source="media/release-views-quality-tags.png" alt-text="deployment semantic version":::
