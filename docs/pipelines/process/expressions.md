@@ -651,6 +651,34 @@ stages:
 
 ::: moniker-end
 
+::: moniker range=">=azure-devops-2020"
+
+### Stage depending on job output
+
+Often a build can cause no changes to be needed, and you would like to skip a whole stage in a pipeline under certain conditions. This can be when using Terraform Plan, where you only want to trigger approval and apply when the plan contains changes.
+
+When using such condition on a stage, the dependencies variable must be used, not stageDependencies.
+
+The below example is a simple script that sets a variable (this should of course be actual information from Terraform Plan, not this example) in a step in a stage, and invokes the second stage only if the variable has a certain value.
+
+```yaml
+stages:
+- stage: plan_dev
+jobs:
+- job: terraform_plan_dev
+  steps:
+  - bash: echo '##vso[task.setvariable variable=terraform_plan_exitcode;isOutput=true]2'
+    name: terraform_plan
+
+- stage: apply_dev
+dependsOn: plan_dev
+condition: eq(dependencies.plan_dev.outputs['terraform_plan_dev.terraform_plan.terraform_plan_exitcode'], '2')
+jobs:
+- deployment: "apply_dev"
+```
+
+::: moniker-end
+
 ## Filtered arrays
 
 When operating on a collection of items, you can use the `*` syntax to apply a filtered array. A filtered array returns all objects/elements regardless their names.
