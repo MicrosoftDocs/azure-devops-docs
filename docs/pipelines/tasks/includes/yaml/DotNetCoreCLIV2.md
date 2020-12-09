@@ -23,6 +23,7 @@ ms.technology: devops-cicd-tasks
     #modifyOutputPath: true # Optional
     #feedsToUse: 'select' # Options: select, config
     #vstsFeed: # Required when feedsToUse == Select
+    #feedRestore: # Required when command == restore. projectName/feedName for project-scoped feed. FeedName only for organization-scoped feed.
     #includeNuGetOrg: true # Required when feedsToUse == Select
     #nugetConfigPath: # Required when feedsToUse == Config
     #externalFeedCredentials: # Optional
