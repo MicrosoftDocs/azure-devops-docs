@@ -8,7 +8,7 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 11/16/2020
+ms.date: 11/19/2020
 ---
 
 # Access, export, and filter audit logs
@@ -27,6 +27,12 @@ Audit events can be the following occurrences:
 - branch policy changes
 - accessing the auditing feature
 - and much more
+
+
+
+> [!NOTE]
+> Auditing is currently in a Public Preview for Azure DevOps Services. It isn't available for on-prem deployments. For auditing to connect to an on-prem or cloud-based Splunk requires allowing IP ranges for inbound connection. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
+
 
 Auditing is turned on by default for all Azure DevOps Services organizations. You can't turn auditing off, which ensures that you never miss an actionable event. Events get stored for 90 days and then they’re deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
 
@@ -173,6 +179,9 @@ When you filter through audit events, it’s best to use the *area* and *categor
 |Agile     |Process, create, delete, and modify.         |
 |Notification    |Create, remove, and modify a subscription.         |
 |Git        | Branch policies, and create, delete, and rename repository. |
+|Billing        | Adding, changing and removing Azure Subscription for billing, Changes to billing quantities (pipelines, artifacts and cloud load test)  |
+
+
 
 ### Filtering tips
 
