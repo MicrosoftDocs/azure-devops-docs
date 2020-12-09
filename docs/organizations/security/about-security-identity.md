@@ -170,12 +170,44 @@ To learn more, see [Security namespaces and permission reference](namespace-refe
 
 ## Security policies
 
-      - Application connection policies
-      - Security and user policies
-      - Repository and branch policies
-      - Pipeline policies
+::: moniker range="azure-devops"
 
+To secure your organization and code, you can set a number of policies. Specifically, you can enable or disable the following policies: 
 
+- **Privacy policy URL**: Specifies a URL that links to your custom document that describes how you handle both internal and external guest data privacy. To learn more, see [Add a privacy policy URL for your organization](../accounts/add-privacy-policy-url.md).  
+
+- **Application connection and security policies**
+	- **Third-party application access via OAuth**: When enabled, allows third-part applications to connect using OAuth. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md).
+	- **SSH authentication access**: When enabled, allows applications to connect using SSH authentication. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md) 
+	- Allow public projects: When enabled, users can create public projects which allows non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. Learn more at [Make your project public](../public/make-project-public.md) and [Enable anonymous access to projects for your organization](../public/create-public-project.md#enable-anonymous-access-to-projects-for-your-organization). 
+	- **Enterprise access to projects**: When disabled, all projects that are shared with your enterprise become private projects which means that they are no longer viewable by all users in your enterprise. 
+	- **Restrict organization creation via Azure AD tenant policy** (*Only valid when the organization is backed by Azure Active Directory.*): When enabled, restricts users from creating additional Azure DevOps organizations that would automatically be backed by the Azure AD. To learn how to enable, see [Restrict organization creation via Azure AD tenant policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
+	- **Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation** (*Only valid when the organization is backed by Azure Active Directory.*): When enabled, allows you to set additional conditions on accessing the organization. Depending on which conditions the user satisfies, you can require multi-factor authentication, further checks, or block access. This policy is set to *off* by default and only applies to alternative credentials. This policy doesn't apply for CAPs set in Azure AD, no matter the settings in Azure DevOps. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md). 
+
+- **User policies**
+	- **External guest access** (*Only valid when the organization is backed by Azure Active Directory.*):  When enabled, invitations can be sent to email accounts of users who aren't members of the tenant Azure Active Directory through the **Users** page. To learn more, see [Add external users to your organization](../accounts/add-external-users.md).  
+	- **Allow team and project administrators to invite new users**: Only valid when the organization is backed by Azure Active Directory. When enabled, team and project administrators can add users through the **Users** page. To learn more, see [Restrict new user invitations from Project and Team Administrators](restrict-invitations.md).   
+	- **Request access**: Only valid when the organization is backed by Azure Active Directory. When enabled, users can request access to a resource. A request results in an email notification to the administrators asking for review and access, as needed. To learn more, see [Add external users to your organization](../accounts/add-external-users.md).  
+	- **Invite GitHub users**: Only valid when the organization isn't backed by Azure Active Directory. When enabled, administrators can add users based on their GitHub user accounts from the **Users** page.  To learn more, see [Authenticating & inviting GitHub users FAQs](faq-github-authentication.md#q-im-an-organization-administrator-and-i-turned-on-the-policy-that-enables-inviting-github-users-why-cant-i-invite-new-github-users) 
+
+- **Git repository and branch policies**
+	- [Configure repository settings and policies](../../repos/git/repository-settings.md)
+	- [Configure branch policies](../../repos/git/branch-policies.md)
+	- [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)
+	- [Use Azure Functions to create custom branch policies](../../repos/git/create-pr-status-server-with-azure-functions.md) 
+
+::: moniker-end 
+
+::: moniker range="< azure-devops"
+
+To secure your code, you can set a number of Git repository and branch policies. To learn more, see the following articles. 
+
+	- [Configure repository settings and policies](../../repos/git/repository-settings.md)
+	- [Configure branch policies](../../repos/git/branch-policies.md)
+	- [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)
+	- [Use Azure Functions to create custom branch policies](../../repos/git/create-pr-status-server-with-azure-functions.md) 
+
+::: moniker-end 
 
 ## Azure Repos and Azure Pipelines security 
 
