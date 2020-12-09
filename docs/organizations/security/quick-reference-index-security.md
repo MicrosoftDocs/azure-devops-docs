@@ -16,13 +16,13 @@ ms.date: 12/07/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Use this index to quickly access concepts and tasks related to securing Azure DevOps. If you're new to Azure DevOps, see [What is Azure DevOps?](../../user-guide/what-is-azure-devops.md).  
+Use this index to quickly access concepts and tasks related to securing Azure DevOps. If you're new to Azure DevOps, see [What is Azure DevOps?](../../user-guide/what-is-azure-devops.md)   
 
 <a id="concepts" />
 
 ## Get started  
 
-As individual contributors to Azure DevOps, learn about how permissions and access to features are managed, default permission assignments, and how to view your permissions, and how to increase or trace your permissions through the following articles:  
+As individual contributors to Azure DevOps, learn about how permissions and access to features are managed, default permission assignments, how to view your permissions, and how to increase or trace your permissions.   
  
 - [About permissions, access, & security groups](about-permissions.md)   
 - [Default permissions & access](permissions-access.md)   
@@ -32,7 +32,7 @@ As individual contributors to Azure DevOps, learn about how permissions and acce
 
 
 ::: moniker range="azure-devops"
-For organization owners or project administrators, learn more about security and how to add and manage user access, and secure projects and organizations.  
+For organization owners or project administrators, learn about authentication and authroization, how to add and manage users and their access, and secure projects and organizations.  
 
 - [About security, authentication, & authorization](about-security-identity.md)  
 - [About access levels](access-levels.md )  

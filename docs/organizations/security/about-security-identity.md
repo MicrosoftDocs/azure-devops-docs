@@ -1,7 +1,7 @@
 ---
-title: How are security, accounts, membership, and permissions managed?
+title: Learn about security, authentication, authorization, and security policies  
 titleSuffix: Azure DevOps
-description: Understand how Azure DevOps manages authentication, authorization, security groups and permissions, security roles, access levels, and default perms 
+description: Understand how Azure DevOps manages security through authentication, authorization, and policies 
 ms.technology: devops-security
 ms.assetid: 
 toc: show
@@ -16,23 +16,52 @@ ms.date: 12/07/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access. Accounts get access to Azure DevOps through authentication of their security credentials and authorization of their account entitlements to access a feature or function. The following table summarizes the  various account types supported and the methods used to manage authentication and authorization. 
 
 
-<!--- 
-- Accounts 
-- Authentication
-- Authorization
-- Populate security groups  
-- Security namespaces and permissions
-- Azure Repos and Azure Pipelines security 
--->
+Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access. Accounts get access to Azure DevOps through authentication of their security credentials and authorization of their account entitlements to access a feature or function. The following table summarizes the  various account types and methods used to secure your organization and projects. 
 
 
+---
+:::row:::
+   :::column span="1":::
+      **Account types**
+      - Users
+      - Organization owner
+      - Service accounts
+      - Service principals
+      - Job agents
+      
+      
+      **Authentication**
+   :::column-end:::
+   :::column span="1":::
+      - User credentials
+      - Windows authentication
+      - Two-factor authentication (2FA)
+      - SSH key authentication
+      - Personal access tokens
+      - Oauth configuration 
+      - Active Directory authentication library  
+   :::column-end:::
+   :::column span="1":::
+      **Authorization**
+      - Security group membership
+      - Role-based access control
+      - Access levels
+      - Feature flags
+      - Security namespaces & permissions    
+      
+      
+      **Policies**
+      - Application connection policies
+      - Security and user policies
+      - Repository and branch policies
+      - Pipeline policies
+   :::column-end:::
+:::row-end:::
+---
+ 
 
-| Accounts | Authentication |Authorization |
-|----------------|----------------|----------------|
-|&#8226;&nbsp;Users<br/>&#8226;&nbsp;Organization owner<br/>&#8226;&nbsp;Service accounts<br/>&#8226;&nbsp;Service principals<br/>&#8226;&nbsp;Job agents|&#8226;&nbsp;User credentials<br/>&#8226;&nbsp;Windows authentication<br/>&#8226;&nbsp;Two-factor authentication (2FA)<br/>&#8226;&nbsp;SSH key authentication<br/>&#8226;&nbsp;Personal access tokens<br/>&#8226;&nbsp;Oauth<br/>&#8226;&nbsp;Active Directory authentication library  |&#8226;&nbsp;Security group membership<br/>&#8226;&nbsp;Role-based access control<br/>&#8226;&nbsp;Access levels<br/> &#8226;&nbsp;Feature flags<br/>&#8226;&nbsp;Security namespaces & permissions|
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
@@ -139,6 +168,12 @@ Security namespaces store data that determines the level of access that Azure De
 
 To learn more, see [Security namespaces and permission reference](namespace-reference.md).  
 
+## Security policies
+
+      - Application connection policies
+      - Security and user policies
+      - Repository and branch policies
+      - Pipeline policies
 
 ## Azure Repos and Azure Pipelines security 
 
@@ -157,15 +192,13 @@ Since repositories and build and release pipelines pose unique security challeng
 
 
  
-## Try this next
+## Next steps 
 > [!div class="nextstepaction"]
-> [About permissions and inheritance](about-permissions.md)
+> [Permissions and groups reference](permissions.md)
 
 ## Related articles
  
 - [Default permissions and access assignments](permissions-access.md)
-- [Permissions and groups reference](permissions.md)
-- [Default permissions and access for Azure DevOps](permissions-access.md)
 - [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups)
 - [Setting up HTTPS with Secure Sockets Layer (SSL)](/azure/devops/server/admin/setup-secure-sockets-layer)
