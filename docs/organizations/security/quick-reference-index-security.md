@@ -135,7 +135,6 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
        - [Suppress notifications for work item updates](set-project-collection-level-permissions.md#project-level)
        - [Update project visibility](set-project-collection-level-permissions.md#project-level)
        - [View project-level information](set-project-collection-level-permissions.md#project-level)
-       ::: moniker-end
    :::column-end:::
 :::row-end:::
 ---
