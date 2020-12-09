@@ -1,14 +1,14 @@
 ---
 title: Manage personal notification settings
 titleSuffix: Azure DevOps
-description: Get personally notified, alerts, when changes occur to source code, git, work items, and builds in Azure DevOps and Team Foundation Server (TFS).
+description: Get personally notified, alerts, when changes occur to source code, git, work items, and builds in Azure DevOps.
 ms.technology: devops-collab
 ms.assetid: 644687b3-e30e-46b0-8d3e-3d4a4e34d13a
 ms.author: chcomley
 author: chcomley
 ms.topic: How-to
 ms.date: 10/09/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Manage your personal notifications

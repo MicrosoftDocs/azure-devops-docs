@@ -2,9 +2,9 @@
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 title: Use the Cross-platform CLI for Azure DevOps 
-description: Use the Cross-platform CLI for Azure DevOps, previously TFS Cross Platform (tfx) CLI, using PAT.
+description: Use the Cross-platform CLI for Azure DevOps, using personal access tokens (PATs).
 ms.assetid: 6dc7f977-4b62-4bd6-b77a-1c6cade1ffa8
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/20/2020
@@ -61,7 +61,7 @@ Follow these steps to enable basic auth for your Azure DevOps instance:
    <div style="vertical-align:middle;display:block;width:60;margin-left:auto;margin-right:auto">
    <img alt="Configure basic authentication feature" src="./media/configureBasicAuthFeature.png" style="display:block;padding-bottom:10px;padding-top:10px;margin-left:auto;margin-right:auto">
    </div>
-2. Open IIS Manager and expand to the <code>Team Foundation Server</code> website, double-click the <code>Authentication</code> tile in the Features view.
+2. Open IIS Manager and expand to the <code>Azure DevOps Server</code> website, double-click the <code>Authentication</code> tile in the Features view.
 
 3. Choose `Basic Authentication` in the list of authentication methods. Choose `Enable` in the right hand column. You should now see `Basic Authentication` enabled.
 
@@ -70,7 +70,7 @@ Follow these steps to enable basic auth for your Azure DevOps instance:
 
 ## tfx login with Basic authentication
 
-Now you can start to use `tfx` against your TFS server. You'll want to login before issuing commands.
+Now you can start to use `tfx` against your server. You'll want to login before issuing commands.
 
 1. Type the following login command:
    ```no-highlight

@@ -3,7 +3,7 @@ title: Delete and recover packages | Azure Artifacts
 description: Recover deleted packages and set up policies to automatically delete packages hosted in Azure DevOps Services and Team Foundation Server (TFS)
 ms.technology: devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ms.topic: conceptual
 ms.date: 10/13/2020
 monikerRange: '>= tfs-2017'
@@ -162,6 +162,10 @@ From within your feed, select the appropriate package and select **Delete latest
 > ![Unlist or delete a Universal package](../media/delete/delete-universal-package.png)
 
 * * *
+
+> [!NOTE]
+> Packages that are placed in the recycle bin will be deleted permanently after 30 days. However, these packages still count as part of your storage bill. If you want to delete them sooner, you can navigate to the recycle bin and delete them manually.
+
 ## Automatically delete old package versions with retention policies
 
 Over time, the number of versions for each package being hosted in your feed can grow quickly. You can set up retention policies to automatically delete old packages and save storage space.

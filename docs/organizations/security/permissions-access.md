@@ -8,7 +8,7 @@ toc: show
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 03/24/2020
 ---
 

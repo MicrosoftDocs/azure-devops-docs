@@ -1,6 +1,6 @@
 ---
 title: Search your code across your projects
-description: Get started with Code Search in Azure DevOps and TFS across all your projects to debug and manage your codebases
+description: Get started with Code Search in Azure DevOps across all your projects to debug and manage your codebases.
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.technology: devops-collab
 ms.topic: quickstart

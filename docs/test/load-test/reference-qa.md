@@ -635,7 +635,7 @@ See [Load Test Run Settings Properties](/visualstudio/test/load-test-run-setting
 * VS1550082
 * VS1550083
 
-[Contact Azure DevOps support](https://azure.microsoft.com/support/devops). 
+[Contact Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html). 
 You will have to give them your test run ID.
 
 ### Q: My run was aborted because the .loadtest xml file could not be parsed. What do I do?
@@ -665,7 +665,7 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ### Q: My load test got an error when it started or was aborted during the run. What do I do?
 
-**A**: Generally, these problems happen due to issues with the cloud-based load testing service. Just try and run your load test again. If these problems still happen, contact Azure DevOps support. You will have to give them your test run ID.
+**A**: Generally, these problems happen due to issues with the cloud-based load testing service. Just try and run your load test again. If these problems still happen, contact [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html). You will have to give them your test run ID.
 
 ### Q: Where can I find information about other errors?
 

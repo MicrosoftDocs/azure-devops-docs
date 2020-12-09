@@ -2,7 +2,7 @@
 title: Features and services included with Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Understand the services provided in Azure DevOps Services and Team Foundation Server 
+description: Understand the services provided in Azure DevOps. 
 ms.technology: devops-new-user 
 ms.topic: overview
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D

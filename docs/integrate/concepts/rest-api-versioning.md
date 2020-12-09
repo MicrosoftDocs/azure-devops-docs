@@ -1,10 +1,10 @@
 ---
-title: REST API versioning for Azure DevOps and TFS
-description: Learn how versioning works for REST APIs for Azure DevOps and TFS
+title: REST API versioning for Azure DevOps
+description: Learn how versioning works for REST APIs for Azure DevOps.
 ms.assetid: 5fc6efd4-9947-40f2-b4f6-9695a24de87c
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 09/29/2020
@@ -14,7 +14,7 @@ ms.date: 09/29/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Azure DevOps and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
+Azure DevOps REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
 
 ### Guidelines
 
