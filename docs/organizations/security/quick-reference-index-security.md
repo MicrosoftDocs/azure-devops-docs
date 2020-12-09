@@ -99,9 +99,11 @@ For project collection and project administrators, learn more about security and
 ---
 
  
-## Tasks
+## Tasks  
 
 The primary tasks to secure Azure DevOps are to set permissions, assign access levels, assign security roles, and set policies. 
+
+
 ---
 :::row:::
    :::column span="1":::
@@ -174,14 +176,12 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
 :::row:::
    :::column span="1":::
        #### Active Directory  
+       - [Manage Active Directory groups](/azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       
+       #### Collections 
        TBD
    :::column-end:::
    :::column span="1":::
-      #### Secure on-premises deployments  
-       - [Set up secure sockets layer](/azure/devops/server/admin/setup-secure-sockets-layer?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
-       - [Web site settings & security](/azure/devops/server/admin/websitesettings?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
-       - [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
-       - [Set SQL Server report permissions](../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
       #### Secure on-premises deployments  
        - [Allowed address lists & network connections](allow-list-ip-url.md)  
        - [Set up secure sockets layer](/azure/devops/server/admin/setup-secure-sockets-layer?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
@@ -194,7 +194,7 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      #### Secure Azure Boards 
+      #### Secure Boards 
        - [Bypass rules on work item updates](set-project-collection-level-permissions.md#project-level)
        - [Create child nodes (area and iteration paths)](set-permissions-access-work-tracking.md#set-permissions-area-path)
        - [Create tag definition](set-project-collection-level-permissions.md#project-level)
@@ -231,7 +231,7 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
 ---
 :::row:::
    :::column span="1":::
-      #### Secure pipelines 
+      #### Secure Pipelines 
        - [Assign pipeline security roles](../../pipelines/policies/permissions.md)
        - [Grant version control permissions to the build service](../../pipelines/scripts/git-commands.md)  
        - [Administer build resource permissions](set-project-collection-level-permissions.md#project-level)
@@ -242,7 +242,7 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
        - [Set pipeline permissions](../../pipelines/policies/set-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)    
    :::column-end:::
    :::column span="1":::
-      ####    
+      ####  &nbsp;&nbsp;&nbsp;  
        - [Pipelines security walkthrough](../../pipelines/security/overview.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Approach to securing YAML pipelines](../../pipelines/security/approach.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Repository protection](../../pipelines/security/repos.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
@@ -269,8 +269,9 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
 
 
 ## Related articles 
+- [About settings for users, teams, projects, or organizations](../settings/about-settings.md)
+- [Azure Boards settings quick reference index](../../reference/quick-reference-index-boards-settings.md)
 
-- [Manage Active Directory groups](/azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
 
  
 
