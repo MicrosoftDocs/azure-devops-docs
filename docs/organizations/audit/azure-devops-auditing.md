@@ -15,9 +15,6 @@ ms.date: 11/19/2020
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-> [!Note]
-> Auditing is currently in a Public Preview.
-
 You can access, export, and filter audit logs. Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. 
 
 Audit events can be the following occurrences:
@@ -27,8 +24,6 @@ Audit events can be the following occurrences:
 - branch policy changes
 - accessing the auditing feature
 - and much more
-
-
 
 > [!NOTE]
 > Auditing is currently in a Public Preview for Azure DevOps Services. It isn't available for on-prem deployments. For auditing to connect to an on-prem or cloud-based Splunk requires allowing IP ranges for inbound connection. For details, see [Allowed address lists and network connections, IP addresses and range restrictions](../security/allow-list-ip-url.md#range-restrictions).
