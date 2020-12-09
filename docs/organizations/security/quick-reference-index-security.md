@@ -101,6 +101,7 @@ For project collection and project administrators, learn more about security and
  
 ## Tasks
 
+The primary tasks to secure Azure DevOps are to set permissions, assign access levels, assign security roles, and set policies. 
 ---
 :::row:::
    :::column span="1":::
@@ -112,7 +113,6 @@ For project collection and project administrators, learn more about security and
        ::: moniker range="< azure-devops"
        - [Change access levels](change-access-levels.md)  
        ::: moniker-end
-       ::: moniker range="azure-devops"
        #### Authentication 
        - [Authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
@@ -199,7 +199,7 @@ For project collection and project administrators, learn more about security and
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      #### Secure Azure Boards, set permissions 
+      #### Secure Azure Boards 
        - [Bypass rules on work item updates](set-project-collection-level-permissions.md#project-level)
        - [Create child nodes (area and iteration paths)](set-permissions-access-work-tracking.md#set-permissions-area-path)
        - [Create tag definition](set-project-collection-level-permissions.md#project-level)
@@ -209,6 +209,7 @@ For project collection and project administrators, learn more about security and
        - [Permanently delete work items](set-project-collection-level-permissions.md#project-level)
        - [Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path) 
        - [Query and query folders](set-permissions-access-work-tracking.md#work-item-queries)
+              
       **Process**
        - [Administer process permissions](set-project-collection-level-permissions.md#collection-level) 
        - [Change process of team project](set-project-collection-level-permissions.md#project-level) 
@@ -217,13 +218,13 @@ For project collection and project administrators, learn more about security and
        - [Delete field from organization](set-project-collection-level-permissions.md#collection-level)
    :::column-end:::
    :::column span="1":::
-      #### Secure code, repositories, and branches 
+      #### Secure Repos  
        - [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)  
        - [Set Git branch permissions](../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Administer shelved changes (TFVC)](set-project-collection-level-permissions.md#project-level)
        - [Administer workspaces (TFVC)](set-project-collection-level-permissions.md#project-level)
        - [Create a workspace (TFVC)](set-project-collection-level-permissions.md#project-level)
-      #### Secure Test Plans, Set test permissions 
+      #### Secure Test Plans 
        - [Create, delete, and view test runs](set-permissions-access-test.md#delete-test-artifacts)  
        - [Manage test configurations](set-project-collection-level-permissions.md#project-level)  
        - [Manage test environments](set-project-collection-level-permissions.md#project-level)  
