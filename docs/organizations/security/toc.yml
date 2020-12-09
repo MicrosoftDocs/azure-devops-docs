@@ -72,7 +72,7 @@
       href: ../../user-guide/troubleshoot-connection.md
     - name: "TF31002: Unable to connect"
       href: ../../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Authentication & secure applications
+- name: Authenticate, secure applications
   items:
   - name: Authentication guidance 
     href: ../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
@@ -95,8 +95,7 @@
   - name: Set Wiki permissions
     href: ../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set feedback permissions
-    href: ../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-
+    href: ../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
 - name: Secure organizations/collections 
   items:
   - name: Set organization/collection-level permissions 

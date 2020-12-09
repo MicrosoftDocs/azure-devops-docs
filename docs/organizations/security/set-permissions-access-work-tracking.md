@@ -249,7 +249,8 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 ::: moniker-end
 
 
-<! --- 
+<!--- 
+
 <a id="tags" /> 
 
 ## Set permissions on work item tags

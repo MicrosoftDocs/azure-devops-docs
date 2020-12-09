@@ -124,7 +124,7 @@ For project collection and project administrators, learn more about security and
        - [Connect organization to Azure AD](../accounts/connect-organization-to-azure-ad.md)  
        - [Change Azure AD connection](../accounts/change-azure-ad-connection.md)  
        - [Disconnect from Azure AD](../accounts/disconnect-organization-from-azure-ad.md)  
-       - [List organizations connected to Azure AD](../accounts/get-list-of-organizations-connected-to-azure-active-directory.md)  
+       - [List organizations connected to Azure AD](../accounts/get-list-of-organizations-connected-to-azure-active-directory.md)
        ::: moniker-end
        
        
@@ -142,8 +142,43 @@ For project collection and project administrators, learn more about security and
        - [Set Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Set feedback permissions](../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
+      ### Secure Azure Boards, set permissions 
+       - [Bypass rules on work item updates](set-project-collection-level-permissions.md#project-level)
+       - [Create child nodes (area and iteration paths)](set-permissions-access-work-tracking.md#set-permissions-area-path)
+       - [Create tag definition](set-project-collection-level-permissions.md#project-level)
+       - [Delete and restore work items](set-permissions-access-work-tracking.md#move-delete-permissions)  
+       - [Delivery plans](set-permissions-access-work-tracking.md#plan-permissions)
+       - [Move work items out of a project](set-permissions-access-work-tracking.md#move-delete-permissions)  
+       - [Permanently delete work items](set-project-collection-level-permissions.md#project-level)
+       - [Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path) 
+       - [Query and query folders](set-permissions-access-work-tracking.md#work-item-queries)
+      **Process**
+       - [Administer process permissions](set-project-collection-level-permissions.md#collection-level) 
+       - [Change process of team project](set-project-collection-level-permissions.md#project-level) 
+       - [Create, delete, and edit process](set-project-collection-level-permissions.md#collection-level)
+       - [Customized inherited process](process-permissions.md#work-item-queries)
+       - [Delete field from organization](set-project-collection-level-permissions.md#collection-level)
+      ### Secure Test Plans, Set test permissions 
+       - [Create, delete, and view test runs](set-permissions-access-test.md#delete-test-artifacts)  
+       - [Manage test configurations](set-project-collection-level-permissions.md#project-level)  
+       - [Manage test environments](set-project-collection-level-permissions.md#project-level)  
+       - [Manage test controllers](set-permissions-access-test.md#test-controllers)
+       - [Manage test plans and test suites under an area path](set-permissions-access-test.md#manage-test-artifacts)
+       - [Set access, license requirements](../../test/manual-test-permissions.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Secure pipelines**
        
        
+       
+       
+      **Secure code, repositories, and branches**
+
+      **Secure pipelines**   
+   :::column-end:::
+   :::column span="1":::
       **Secure organizations**
        - [Set organization/collection-level permissions](set-project-collection-level-permissions.md)  
        - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
@@ -153,6 +188,14 @@ For project collection and project administrators, learn more about security and
        - [Disable Request Access policy](../accounts/disable-request-access-policy.md)  
        - [Restrict admins from inviting new users](../security/restrict-invitations.md)   
        ::: moniker-end
+       
+       
+      **Secure on-premises deployments**
+    
+       
+       
+      **Secure data and networks**
+
    :::column-end:::
 :::row-end:::
 ---
