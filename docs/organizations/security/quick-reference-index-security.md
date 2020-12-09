@@ -69,7 +69,7 @@ For project collection and project administrators, learn more about security and
       - [Conditional access](../accounts/change-application-access-policies.md#conditional-access-policies)  
    :::column-end:::
    :::column span="1":::
-      - [Git credential manager](../../repos/git/set-up-credential-managers.md) 
+      - [Git credential manager](../../repos/git/set-up-credential-managers.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json) 
       - [Inheritance](about-permissions.md#inheritance)   
       - [Namespaces](about-security-identity.md#namespaces)   
       - [OAuth](../../integrate/get-started/authentication/oauth.md)
@@ -77,8 +77,8 @@ For project collection and project administrators, learn more about security and
       - [Organization owner](lookup-organization-owner-admin.md#find-owner)  
       - [Permissions](about-permissions.md#permissions)  
       - [Permission states](about-permissions.md#permission-states) 
-      - [Personal Access Token (PAT)](about-security-identity.md#authentication)   
-      - [Preview features](../../project/navigation/preview-features.md)   
+      - [Personal Access Tokens (PATs)](about-security-identity.md#authentication)   
+      - [Preview features](../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
       - [Projects](../projects/about-projects.md)    
    :::column-end:::
    :::column span="1":::
@@ -87,8 +87,8 @@ For project collection and project administrators, learn more about security and
       - [Security roles](about-security-roles.md)  
       - [Service accounts](about-security-identity.md#accounts)    
       - [Service principal](about-security-identity.md#accounts)  
-      - [Secure Sockets Layer (SSL)](./data-protection.md)
-      - [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md)  
+      - [Secure Sockets Layer (SSL)](data-protection.md)
+      - [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
       - [Stakeholder access](access-levels.md)   
       - [Team group](../settings/about-teams-and-settings.md#team-groups)  
       - [Tenant](../accounts/change-organization-location.md) 
@@ -101,13 +101,13 @@ For project collection and project administrators, learn more about security and
  
 ## Tasks  
 
-The primary tasks to secure Azure DevOps are to set permissions, assign access levels, assign security roles, and set policies. 
+The primary tasks to secure Azure DevOps are to assign access levels, set permissions, assign security roles, and set policies. 
 
 
 ---
 :::row:::
    :::column span="1":::
-       #### Access levels  
+       **Access levels**  
        ::: moniker range="azure-devops"
        - [Change a user's access level](setup-ad-aad.md)  
        - [Provide Stakeholders access to edit pipelines](provide-stakeholder-pipeline-access.md) 
@@ -115,30 +115,36 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
        ::: moniker range="< azure-devops"
        - [Change access levels](change-access-levels.md)  
        ::: moniker-end
-       #### Authentication 
-       - [Authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
-       - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       
+       
+       **Authentication** 
+       - [Choose authentication method](../../integrate/get-started/authentication/authentication-guidance.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Authenticate access with PATs](../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)
        - [Authorize access to REST APIs with OAuth 2.0](../../integrate/get-started/authentication/oauth.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Authorize a service, manage authorizations](../settings/manage-authorizations.md)  
        - [Revoke users' PATs (for admins)](../accounts/admin-revoke-user-pats.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       - [Set up Git credential manager](../../repos/git/set-up-credential-managers.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json) 
+       - [Git authentication](../../repos/git/auth-overview.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json) 
    :::column-end:::
    :::column span="1"::: 
-      #### Secure projects 
+      **Set project-level permissions** 
        - [Change individual permissions](change-individual-permissions.md)   
        - [Set project-level permissions](set-project-collection-level-permissions.md)   
        - [Grant or restrict permissions to select tasks](restrict-access.md)   
+       - [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Set Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Set feedback permissions](../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
-       - [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
    :::column-end:::
 :::row-end:::
 ---
 ::: moniker range="azure-devops"
 :::row:::
    :::column span="1":::
-       #### Azure Active Directory  
-       - [Set up Active Directory or Azure Active Directory](setup-ad-aad.md)  
+       **Azure Active Directory**  
+       - [Set up Azure Active Directory](setup-ad-aad.md)  
        - [Add or remove users from Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json)  
-       - [Add AD/Azure AD security groups to Azure DevOps security groups](add-ad-aad-built-in-security-groups.md)  
+       - [Add Azure AD security groups to Azure DevOps security groups](add-ad-aad-built-in-security-groups.md)  
        - [Manage Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)  
        - [Manage group rules](../accounts/assign-access-levels-by-group-membership.md)  
        - [Connect organization to Azure AD](../accounts/connect-organization-to-azure-ad.md)  
@@ -147,14 +153,19 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
        - [List organizations connected to Azure AD](../accounts/get-list-of-organizations-connected-to-azure-active-directory.md)
    :::column-end:::
    :::column span="1":::
-      #### Secure organizations  
-       - [Set organization/collection-level permissions](set-project-collection-level-permissions.md)  
+      **Set organization or collection-level permissions**  
+       - [Set organization-level permissions](set-project-collection-level-permissions.md)  
        - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       
+       
+      **Set organization policies**  
        - [Manage security & app access policies](../accounts/change-application-access-policies.md)  
        - [Add external users](../accounts/add-external-user.md)   
        - [Disable Request Access policy](../accounts/disable-request-access-policy.md)  
        - [Restrict admins from inviting new users](../security/restrict-invitations.md)   
-       #### Secure data and networks  
+       
+       
+       **Secure data and networks**  
        - [Allowed address lists & network connections](allow-list-ip-url.md)  
        - [Data protection overview ](data-protection.md)  
        - [Data location](data-location.md)   
@@ -167,14 +178,17 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
 ::: moniker range="< azure-devops"
 :::row:::
    :::column span="1":::
-       #### Active Directory  
-       - [Manage Active Directory groups](/azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
+       **Active Directory**  
+       - [Manage Active Directory groups](/azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)
+       - [Add Active Directory security groups to Azure DevOps security groups](add-ad-aad-built-in-security-groups.md)    
+       
        
        #### Collections 
-       TBD
+       - [Set collection-level permissions](set-project-collection-level-permissions.md)  
+       - [Set permissions to manage extensions](../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
    :::column-end:::
    :::column span="1":::
-      #### Secure on-premises deployments  
+      **Secure on-premises deployments**  
        - [Allowed address lists & network connections](allow-list-ip-url.md)  
        - [Set up secure sockets layer](/azure/devops/server/admin/setup-secure-sockets-layer?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
        - [Web site settings & security](/azure/devops/server/admin/websitesettings?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
@@ -186,9 +200,8 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      #### Secure Boards 
-       - [Bypass rules on work item updates](set-project-collection-level-permissions.md#project-level)
-       - [Create child nodes (area and iteration paths)](set-permissions-access-work-tracking.md#set-permissions-area-path)
+      **Set Boards/work tracking permissions** 
+       - [Manage area and iteration paths](set-permissions-access-work-tracking.md#set-permissions-area-path)
        - [Create tag definition](set-project-collection-level-permissions.md#project-level)
        - [Delete and restore work items](set-permissions-access-work-tracking.md#move-delete-permissions)  
        - [Delivery plans](set-permissions-access-work-tracking.md#plan-permissions)
@@ -196,21 +209,19 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
        - [Permanently delete work items](set-project-collection-level-permissions.md#project-level)
        - [Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path) 
        - [Query and query folders](set-permissions-access-work-tracking.md#work-item-queries)
-              
-       - [Administer process permissions](set-project-collection-level-permissions.md#collection-level) 
-       - [Change process of team project](set-project-collection-level-permissions.md#project-level) 
-       - [Create, delete, and edit process](set-project-collection-level-permissions.md#collection-level)
-       - [Customized inherited process](set-permissions-access-work-tracking.md#process-permissions)
+       - [Process permissions](set-permissions-access-work-tracking.md#process-permissions)
        - [Delete field from organization](set-project-collection-level-permissions.md#collection-level)
    :::column-end:::
    :::column span="1":::
-      #### Secure Repos  
+      **Set repository and branch permissions and policies**  
        - [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)  
        - [Set Git branch permissions](../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Administer shelved changes (TFVC)](set-project-collection-level-permissions.md#project-level)
        - [Administer workspaces (TFVC)](set-project-collection-level-permissions.md#project-level)
        - [Create a workspace (TFVC)](set-project-collection-level-permissions.md#project-level)
-      #### Secure Test Plans 
+       
+       
+      **Set test permissions**
        - [Create, delete, and view test runs](set-permissions-access-test.md#delete-test-artifacts)  
        - [Manage test configurations](set-project-collection-level-permissions.md#project-level)  
        - [Manage test environments](set-project-collection-level-permissions.md#project-level)  
@@ -222,7 +233,7 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
 ---
 :::row:::
    :::column span="1":::
-      #### Secure Pipelines 
+      **Set pipeline permissions and policies** 
        - [Assign pipeline security roles](../../pipelines/policies/permissions.md)
        - [Grant version control permissions to the build service](../../pipelines/scripts/git-commands.md)  
        - [Administer build resource permissions](set-project-collection-level-permissions.md#project-level)
@@ -233,7 +244,7 @@ The primary tasks to secure Azure DevOps are to set permissions, assign access l
        - [Set pipeline permissions](../../pipelines/policies/set-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)    
    :::column-end:::
    :::column span="1":::
-      ####  &nbsp;&nbsp;&nbsp;  
+      &nbsp;&nbsp;&nbsp;  
        - [Pipelines security walkthrough](../../pipelines/security/overview.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Approach to securing YAML pipelines](../../pipelines/security/approach.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
        - [Repository protection](../../pipelines/security/repos.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)  
