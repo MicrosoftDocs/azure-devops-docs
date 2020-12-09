@@ -147,6 +147,7 @@ In the following example, a new resource group and virtual machine scale set are
 
     > [!KNOWN ISSUE]
     > The only service connection currently supported is an Azure Resource Manager (ARM) service connection based on a service principal key. ARM service connections based on a certificate credential or a Managed Identity will fail. When you attempt to list the existing scale sets in your subscription, you'll see an error like this:
+    >
     > `Invalid Service Endpoint with Id <guid> and Scope <guid>`
 
     > [!IMPORTANT]
