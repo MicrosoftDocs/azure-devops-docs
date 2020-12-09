@@ -17520,67 +17520,67 @@
     },
     {
       "source_path": "docs/test/load-test/clt-behind-firewall.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/clt-behind-firewall",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/clt-behind-firewall",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test/clt-with-private-machines.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/clt-with-private-machines",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/clt-with-private-machines",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test/get-performance-data-for-load-tests.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/get-performance-data-for-load-tests",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/get-performance-data-for-load-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test/get-started-jmeter-test.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/get-started-jmeter-test",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/get-started-jmeter-test",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test/get-started-simple-cloud-load-test.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/get-started-simple-cloud-load-test",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/get-started-simple-cloud-load-test",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test/getting-started-with-performance-testing.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/getting-started-with-performance-testing",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/getting-started-with-performance-testing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test/index.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/index",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test/install-certs-and-software.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/install-certs-and-software",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/install-certs-and-software",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test/overview.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/overview",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test/performance-reports.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/performance-reports",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/performance-reports",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test/record-and-replay-cloud-load-tests.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/record-and-replay-cloud-load-tests",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/record-and-replay-cloud-load-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test/reference-qa.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/reference-qa",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/reference-qa",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test/run-performance-tests-app-before-release.md",
-      "redirect_url": "https://docs.microsoft com/previous-versions/azure/devops/test/load-test/run-performance-tests-app-before-release",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/test/load-test/run-performance-tests-app-before-release",
       "redirect_document_id": false
     }
   ]
