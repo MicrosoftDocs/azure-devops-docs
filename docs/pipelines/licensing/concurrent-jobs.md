@@ -6,7 +6,7 @@ description: Configure parallel jobs in Azure Pipelines and pay for them
 ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
-ms.date: 11/30/2020
+ms.date: 12/09/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -113,7 +113,15 @@ When the free tier is no longer sufficient for your self-hosted private project,
 
 ## How many parallel jobs do I need?
 
-As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues will grow longer. When you find the queue delays are too long, you can purchase additional parallel jobs as needed.
+As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues will grow longer. When you find the queue delays are too long, you can purchase additional parallel jobs as needed. There are several methods you can use to check your parallel job limits and job history.
+
+### View job history using the pool consumption report
+
+You can use the **Pool consumption report**, available on the **Analytics** tab of your agent pool, to see a chart of running and queued jobs graphed with your parallel jobs for the previous 30 days. If you have a backlog of queued jobs and your running jobs are at the concurrency limit, you may wish to purchase more parallel jobs. For more information, see [Historical graphs for agent pools](../agents/historical-graph-pools.md).
+
+:::image type="content" source="../agents/media/historical-graph-pools/historical-graph-azure-pipelines.png" alt-text="Microsoft-hosted agent pool historical graph":::
+
+### Check the parellel jobs setting directly
 
 Figure out how many parallel jobs you need by first seeing how many parallel jobs your organization currently uses:
 
