@@ -42,7 +42,7 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker range=">= azure-devops-2019"  
 
-![Viewing your cached packages](media/view-cached-packages-newnav.png)
+![On Fabrikam, the Source drop-down list is highlighted, and npmjs is selected. The packages for npmjs are listed.](media/view-cached-packages-newnav.png)
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker range=">=tfs-2017 < azure-devops"
 
-![Viewing your cached packages](media/view-cached-packages.png)
+![Filtering is on the npmjs source.](media/view-cached-packages.png)
 
 ::: moniker-end
 
