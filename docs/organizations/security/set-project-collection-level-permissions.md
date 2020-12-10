@@ -481,7 +481,7 @@ You can change a group name, description, add a group image, or delete a group.
 
 For on-premises deployments, see these additional topics: 
 
-- [Add a user as an Azure DevOps server administrator](/azure/devops/server/admin/add-administrator) 
+- [Add a user as an Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator) 
 - [Azure DevOps Server service account groups](/azure/devops/server/admin/service-accounts-dependencies)  
 
 ::: moniker-end  

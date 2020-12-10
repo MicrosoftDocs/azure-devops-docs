@@ -7,8 +7,8 @@ ms.topic: conceptual
 ms.assetid: 30272A34-2CE1-41B3-BA7A-815D69309CBE
 ms.author: kaelli
 author: KathrynEE
-ms.date: 03/28/2019
 monikerRange: 'azure-devops'
+ms.date: 03/28/2019
 ---
 
 <!--- Supports FWLINK: https://go.microsoft.com/fwlink/?LinkId=692096 -->
@@ -17,9 +17,9 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version](../../includes/version-vsts-only.md)]
 
-This guide is to help you migrate your .NET code from using [WIT Client OM](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient) to our REST based [.Net Client Libraries](dotnet-client-libraries.md). Below is table of the common work item tracking scenarios with links back to its respected API documentation.
+This guide provides information to help migrate your .NET code from using [WIT Client OM](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient) to our REST-based [.NET Client Libraries](dotnet-client-libraries.md). The following table lists common work tracking scenarios with links to their respected API documentation.
 
-View the [Azure DevOps WIT Client OM Migration Guide](https://github.com/Microsoft/azure-devops-wit-client-om-migration-guide) repo for all the sample code covered in these scenarios.
+For sample code covered in these scenarios, see the [GitHub Azure DevOps WIT Client OM Migration Guide](https://github.com/Microsoft/azure-devops-wit-client-om-migration-guide).
 
 ## Common scenarios
 
@@ -35,7 +35,7 @@ View the [Azure DevOps WIT Client OM Migration Guide](https://github.com/Microso
 | Create a hyperlink                                | [WorkItem.Links.Add()](/previous-versions/visualstudio/visual-studio-2013/bb140133%28v%3dvs.120%29)                                                                                                   | [Work Item - Update - Add a hyperlink](/rest/api/azure/devops/wit/work%20items/update?view=azure-devops-rest-5.0&preserve-view=true#add-a-hyperlink)     |
 | Add an attachment                                 | [WorkItem.Attachments.Add()](/previous-versions/visualstudio/visual-studio-2013/bb164795%28v%3dvs.120%29)                                                                                             | [Work Item - Update - Add an attachment](/rest/api/azure/devops/wit/work%20items/update?view=azure-devops-rest-5.0&preserve-view=true#add-an-attachment) |
 | Query work items using WIQL                       | [WorkItemStore.Query()](/previous-versions/visualstudio/visual-studio-2013/bb140399%28v%3dvs.120%29)                                                                                                  | [Wiql - Query by Wiql](/rest/api/azure/devops/wit/wiql/query%20by%20wiql?view=azure-devops-rest-5.0&preserve-view=true)                                  |
-| Run an existing query to get a list of work items | [WorkItemStore.Query()](/previous-versions/visualstudio/visual-studio-2013/bb140399%28v%3dvs.120%29)                                                                                                  | [Wiql - Query by Id](/rest/api/azure/devops/wit/wiql/query%20by%20id?view=azure-devops-rest-5.0)                                      |
+| Run an existing query to get a list of work items | [WorkItemStore.Query()](/previous-versions/visualstudio/visual-studio-2013/bb140399%28v%3dvs.120%29)                                                                                                  | [Wiql - Query by ID](/rest/api/azure/devops/wit/wiql/query%20by%20id?view=azure-devops-rest-5.0)                                      |
 | Get list of work item types for your project      | [Category.WorkItemTypes](/previous-versions/visualstudio/visual-studio-2013/ff733906%28v%3dvs.120%29)                                                                                                 | [Work Item Types - List](/rest/api/azure/devops/wit/work%20item%20types/list?view=azure-devops-rest-5.1&preserve-view=true)                              |
 | Get work item type details                        | [Category.WorkItemTypes](/previous-versions/visualstudio/visual-studio-2013/ff733906%28v%3dvs.120%29)                                                                                                 | [Work Item Types - Get](/rest/api/azure/devops/wit/work%20item%20types/get?view=azure-devops-rest-5.0&preserve-view=true)                                |
 | Get list of fields for a work item type           | [WorkItemType.FieldDefinitions](/previous-versions/visualstudio/visual-studio-2013/bb164788%28v%3dvs.120%29)                                                                                          | [Work Item Types Field - List](/rest/api/azure/devops/wit/work%20item%20types%20field/list?view=azure-devops-rest-5.0&preserve-view=true)                |
@@ -49,4 +49,4 @@ View the [Azure DevOps WIT Client OM Migration Guide](https://github.com/Microso
 
 ## Support
 
-Looking for a help on a scenario that we missed? If so, please create a new issue on the [migration guide](https://github.com/Microsoft/azure-devops-wit-client-om-migration-guide) project and we will add the scenario directly into the repo.
+Looking for a help on a scenario that we missed? If so, create a new issue on the [migration guide](https://github.com/Microsoft/azure-devops-wit-client-om-migration-guide) project and we'll add the scenario to the repo.
