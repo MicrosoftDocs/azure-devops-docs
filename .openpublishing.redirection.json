@@ -6256,11 +6256,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/build-release/actions/agents/prepare-permissions.md",
-      "redirect_url": "/azure/devops/pipelines/agents/prepare-permissions",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/build-release/actions/agents/proxy.md",
       "redirect_url": "/azure/devops/pipelines/agents/proxy",
       "redirect_document_id": false
