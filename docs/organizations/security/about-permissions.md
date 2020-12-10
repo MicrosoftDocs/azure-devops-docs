@@ -126,9 +126,7 @@ If you need to restrict view access, then you can [set restrictions through the 
 
 If you remove or deny the **View instance-level information** permission for one of the valid users groups,
 no members of the group are able to access the project, collection, or deployment, depending on the group you set.
-
-
-<a id="grant-permissions"  >  </a>  
+<a id="grant-permissions" />  
 <a id="access-levels" />
 
 ## Access levels 
@@ -141,7 +139,7 @@ you'll want to [change access levels](change-access-levels.md), not permissions.
  
 Setting the access level for users or groups doesn't provide them access to a project or the web portal. Only users or groups added to a team or security group can connect to a project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the project or a team](add-users-team-project.md).
 
-<a name="permission-settings"></a>
+<a name="permission-settings" />
 
 ## Permissions   
 
