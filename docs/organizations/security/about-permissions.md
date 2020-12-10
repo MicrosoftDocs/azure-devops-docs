@@ -58,32 +58,42 @@ Security group members can be a combination of users, other groups, and Active D
 
 Most users are assigned to the Contributors group for a project to provide them access to the features they need to access. Administrators should be added to the Project Collection Administrators or Project Administrators group. 
 
- 
-### Populate security groups
 
-You can populate security groups by adding individual users. However, for ease of management, it's easier if you populate these groups by using Azure Active Directory (Azure AD), Active Directory (AD), or Windows security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
+<a id="aad" /> 
+
+### Active Directory and Azure Active Directory security groups
+
+You can populate security groups by adding individual users. However, for ease of management, it's easier if you populate these groups by using Azure Active Directory (Azure AD) for Azure DevOps Services and Active Directory (AD) or Windows user groups for Azure DevOps Server.  This method enables you to manage group membership and permissions more efficiently across multiple computers. 
+ 
+If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or Azure AD. Also, if you plan on paying for extra services, you'll need to set up Azure AD for use with Azure DevOps to support billing.
+ 
+> [!NOTE]
+> Without Azure AD, all Azure DevOps users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, you need to set up an [Azure subscription in order to manage billing](../billing/set-up-billing-for-your-organization-vs.md).
 
 ::: moniker range="azure-devops"
 
-To manage users you add to Azure Active Directory, see [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md). 
+To set up Azure Active Directory for use with Azure DevOps Services, see [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md).
 
 
 > [!NOTE]  
 > When your organization is connected to Azure Active Directory, there are a number of organization policies which you can enable or disabled to secure your organization. To learn more, see [About security, authentication, and authorization, Security-policies](about-security-identity.md#security-policies). 
 
+To manage organizational access with Azure AD, refer to the following articles: 
+
+* [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
+* [Troubleshoot access with Azure Active Directory](../accounts/faq-azure-access.md) 
+
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
+::: moniker range="< azure-devops"
 
-:::image type="content" source="media/about-security/add-active-directory-groups.png" alt-text="Conceptual image showing adding Active Directory groups to Azure DevOps security groups , on-premises":::
+To set up Active Directory for use with Azure DevOps Server, see the following articles:
 
-::: moniker-end
+* [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
+* [Active Directory Domain Services Getting Started](/windows-server/identity/ad-ds/ad-ds-getting-started).
 
-::: moniker range="<= tfs-2018"
+Typically, you should install Active Directory prior to installing Azure DevOps Server.
 
-![Conceptual image showing defining AD groups](media/permissions/grant-permissions.png)
-
-Of course, you don't need to grant permissions for reports or the project portal if your project doesn't use SQL Server Reporting Services or a SharePoint site.
 ::: moniker-end
 
  
@@ -277,10 +287,7 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 - Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group are able to access the project, collection, or deployment, depending on the group you set.  
 - Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
 
-
-
 <a id="security-roles" />
-
 
 ## Role-based permissions   
 
@@ -308,21 +315,32 @@ To learn more, see [Manage or enable features](../../project/navigation/preview-
 
 ::: moniker range="= azure-devops"
 
+- [About security, authentication, and authorization](about-security-identity.md)
+- [How billing works](../billing/overview.md)
+- [Set up billing to pay for users, pipelines, and cloud-based load testing in Azure DevOps](../billing/set-up-billing-for-your-organization-vs.md) 
+- [What is Azure Active Directory?](/azure/active-directory/active-directory-whatis)
+- [Get started with Azure AD](/azure/active-directory/get-started-azure-ad)
 - [Permissions and groups reference](permissions.md)  
 - [Security and permission management tools](security-tools-reference.md)  
 - [Add users to an organization](../accounts/add-organization-users.md) 
-- [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add and manage security groups](add-manage-security-groups.md)   
 - [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md)   
-- [Make a user a team admin](../settings/manage-teams.md)  
 ::: moniker-end  
 
 
-::: moniker range="< azure-devops"  
+::: moniker range="< azure-devops" 
+
+- [About security, authentication, and authorization](about-security-identity.md)
+- [Active Directory Domain Services Overview](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)  
+- [AD DS Getting Started](/windows-server/identity/ad-ds/ad-ds-getting-started)
 - [Permissions and groups reference](permissions.md)  
 - [Security and permission management tools](security-tools-reference.md)  
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
-- [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
-- [Make a user a team admin](../settings/manage-teams.md)  
-- [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
+- [Add and manage security groups](add-manage-security-groups.md)   
+- [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md)   
+- [Permissions and groups reference](permissions.md)  
+- [Security and permission management tools](security-tools-reference.md)  
 ::: moniker-end
+
+## Related articles
+

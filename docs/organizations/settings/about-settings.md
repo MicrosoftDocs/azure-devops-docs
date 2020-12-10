@@ -393,7 +393,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Set build and release permissions](../../pipelines/policies/set-permissions.md)
    :::column-end:::
    :::column span="2":::
-      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
+      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -411,7 +411,7 @@ From the administrative **Project settings** page, you can configure settings av
       - [Manage project-level permissions](../security/permissions.md#project-level-permissions)
    :::column-end:::
    :::column span="2":::
-      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
+      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -620,7 +620,7 @@ From the administrative **Project settings** page, you can configure settings av
 
 ## Project Collection Administrator (PCA) role and managing collections of projects 
 
-Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) configure resources for all projects that are defined for an organization or collection. They also can do all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
+Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) configure resources for all projects that are defined for an organization or collection. They also can do all tasks to add projects, manage projects, and manage permissions for the collection, a project, a team, or an object.   
 
 ::: moniker range="azure-devops"
   
@@ -684,7 +684,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       **Preview features**
    :::column-end:::
    :::column span="2":::
-      - [Enable preview features](../../project/navigation/preview-features.md)
+      - [Manage and enable preview features](../../project/navigation/preview-features.md)
    :::column-end:::
    :::column span="2":::
       Organization administrators can enable or disable organization-level or collection-level features that are in preview.
@@ -819,7 +819,8 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       **Security: Policies**
    :::column-end:::
    :::column span="2":::
-      - [Change application access policies](../accounts/change-application-access-policies.md)
+      - [Manage application access policies](../accounts/change-application-access-policies.md)
+      - [Add external users](../accounts/add-external-user.md)   
       - [Disable Request Access policy](../accounts/disable-request-access-policy.md)
       - [Restrict users from creating new organizations with Azure Active Directory policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
       - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
@@ -839,13 +840,13 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column span="2":::
       - [Change individual permissions](../security/change-individual-permissions.md)
       - [Grant or restrict access to select features](../security/restrict-access.md)
-      - [Add administrators](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
+      - [Add administrators, set organization-level permissions](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
       - [Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)
       - [Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
       - [Manage conditional access](../accounts/change-application-access-policies.md)
    :::column-end:::
    :::column span="2":::
-      For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
+      For an overview of security concepts, see [About permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -858,10 +859,10 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column span="2":::
       - [Change individual permissions](../security/change-individual-permissions.md)
       - [Grant or restrict access to select features](../security/restrict-access.md)
-      - [Add administrators](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
+      - [Add administrators, set collection-level permissions](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
    :::column-end:::
    :::column span="2":::
-      For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
+      For an overview of security concepts, see [About permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -924,7 +925,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [View Artifact storage](../../artifacts/start-using-azure-artifacts.md#view-artifact-and-billed-storage)
    :::column-end:::
    :::column span="2":::
-     Each organization gets Azure Artifacts for free, up until 2 GiB of storage is reached. For more information, see [Pay for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#pay-for-azure-artifacts).
+     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Pay for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#pay-for-azure-artifacts). 
    :::column-end:::
 :::row-end:::
 ---
