@@ -574,7 +574,7 @@ So the full name of the administrator group for the default collection is
       Has permissions to perform all operations for the collection.
    :::column-end:::
    :::column span="2":::
-       Contains the <strong>Local Administrators</strong> group (BUILTIN\Administrators)
+       Contains the **Local Administrators** group (BUILTIN\Administrators)
        for the server where the application-tier services have been installed.
        Also, contains the members of the *CollectionName*/**Service Accounts** group.
        This group should be restricted to the smallest possible number of users who need total administrative control over the collection. For Azure DevOps, assign to administrators who customize work tracking. 
