@@ -580,7 +580,7 @@ So the full name of the administrator group for the default collection is
        This group should be restricted to the smallest possible number of users who need total administrative control over the collection. For Azure DevOps, assign to administrators who customize work tracking. 
        ::: moniker range="< azure-devops"
        > [!NOTE]
-       If your deployment uses Reporting Services, consider adding the members of this group to the [Team Foundation Content Managers groups in Reporting Services](../../report/admin/grant-permissions-to-reports.md).
+       > If your deployment uses Reporting Services, consider adding the members of this group to the [Team Foundation Content Managers groups in Reporting Services](../../report/admin/grant-permissions-to-reports.md).
        ::: moniker-end
    :::column-end:::
 :::row-end:::
