@@ -1,30 +1,60 @@
 ---
-title: Find an admin or organization owner 
+title: Find an administrator or organization owner 
 titleSuffix: Azure DevOps
-description: Steps for how to look up users who can help you gain access or change your permissions, project collection admin, or project owner 
+description: Learn how to look up users who can help you gain access or change your permissions, project collection admin, or project owner 
 ms.technology: devops-security
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 07/27/2020
----
+ms.date: 11/16/2020
+--- 
 
-# Look up administrators or an organization owner 
+# Look up members of an administrator group
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-An administrator or organization Owner can give you access to select features or functions, or change your permissions. Learn how to look up administrators or organization Owners.
+An administrator can give you access to select features or functions, or change your permissions. You can look up members of administrator groups or the organization owner using the procedures provided in this article. 
+
 
 For an overview of built-in security groups and default permission assignments, see [Default permissions and access](permissions-access.md).
 
 ## Prerequisites
 
-* You must have a project. If you don't have a project yet, [create one](../projects/create-project.md).  
-* You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions. Users added to a project are automatically added to these security groups. 
+* You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions. Users added to a project are automatically added to these security groups.  
 
-## Show members of the Project Administrators group
+
+::: moniker range="azure-devops"  
+> [!NOTE]  
+> Users added to the **Project-scoped Users** group won't be able to access **Organization Settings** other than the **Overview** section if the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
+
+::: moniker-end  
+
+
+::: moniker range="azure-devops"
+
+<a name="find-owner"></a>
+
+
+## Look up the organization owner 
+
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**, and then choose :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**. 
+
+	![Open organization settings](../../media/open-organization-settings-preview.png)  
+
+2. Choose **Overview** and scroll down to show the **Organization owner**.
+
+   > [!div class="mx-imgBorder"]  
+   > ![Organization settings, Organization owner](../../media/settings/organization-settings-info.png)
+
+   To change the owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
+
+::: moniker-end
+
+<a name="show-members-of-the-project-administrators-group"></a>
+
+## View members of the Project Administrators group
 
 Choose the Project Administrators group from the **Project Settings > Permissions** page to see members. If you want to be a Project Administrator, have your current administrator add you. 
 
@@ -111,15 +141,22 @@ Choose the Project Administrators group from the **Project Settings > Permission
 
 ::: moniker-end
 
+<a name="show-members-of-the-project-collection-administrators-group"></a>
 
-## Show members of the Project Collection Administrators group
+## View members of the Project Collection Administrators group
 
-If you need elevated permissions, request them from a member of the [Project Collection Administrators group](set-project-collection-level-permissions.md). Project collection administrators manage features and functions that impact all projects. 
+If you need elevated permissions, request them from a member of the [Project Collection Administrators group](set-project-collection-level-permissions.md). Project collection administrators manage features and functions that impact all projects.
+
+::: moniker range="azure-devops"  
+> [!NOTE]  
+> Users added to the **Project-scoped Users** group won't be able to access **Organization Settings>Permissions** if the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
+
+::: moniker-end   
 
 
 ::: moniker range="azure-devops"
 
-To find out who is a member of the Project Collection Administrators group, check the **Permissions** settings at the collection level. 
+To find out who is a member of the Project Collection Administrators group, check the **Organization Settings>Permissions**. 
 
 > [!NOTE]   
 > To enable the new user interface for the **Organization Permissions Settings Page v2**, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not. 
@@ -163,25 +200,6 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ::: moniker-end
 
-
-::: moniker range="azure-devops"
-
-<a name="find-owner"></a>
-
-## Show the organization owner 
-
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**, and then choose :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**. 
-
-	![Open organization settings](../../media/open-organization-settings-preview.png)  
-
-2. Choose **Overview** and scroll down to show the **Organization owner**.
-
-   > [!div class="mx-imgBorder"]  
-   > ![Organization settings, Organization owner](../../media/settings/organization-settings-info.png)
-
-   To change the owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
-
-::: moniker-end
 
 ## Next steps
 
