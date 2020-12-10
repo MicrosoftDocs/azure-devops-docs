@@ -6,11 +6,11 @@ description: Understand how to structure your project to support collaboration o
 ms.technology: devops-new-user 
 ms.assetid:  
 ms.author: chcomley
-author: chcomley
-ms.date: 10/02/2020
+author: chcomley 
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
----
+ms.date: 11/16/2020
+--- 
 
 # About projects and scaling your organization
 
@@ -20,21 +20,27 @@ A project provides a repository for source code and a place for users to plan, t
 
 When you create your project, a team of the same name is automatically created. This is sufficient for small teams. However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and projects. These additions can be created within the single account or collection.
 
-<table width="100%">
-<tbody valign="top">
-<tr>
-<td width="40%">
 
-<strong>Single project and team defined within an organization or collection</strong><br/><img src="media/about-projects/project-concept.png" alt="Single collection-project-team conceptual image"/><br/></td>
 
-<td width="60%">
-
-<strong>Multiple projects and teams defined within organization or collection</strong>
-<img src="media/about-projects/multiple-projects-concept.png" alt="Scaled collection-project-team conceptual image"/><br/>
-</td>
-</tr>
-</tbody>
-</table>
+---
+:::row:::
+   :::column span="2":::
+      **Single project and team defined within an<br/>organization or collection**
+   :::column-end:::
+   :::column span="2":::
+      **Multiple projects and teams defined within an<br/>organization or collection**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      :::image type="content" source="media/about-projects/project-concept.png" alt-text="Conceptual image, Single collection-project-team.":::
+   :::column-end:::
+   :::column span="2":::
+      :::image type="content" source="media/about-projects/multiple-projects-concept.png" alt-text="Conceptual image, Scaled collection-project-team.":::
+   :::column-end:::
+:::row-end:::
+---
 
 The collection-project-team structure provides teams a high level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level. As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../../boards/plans/agile-culture.md).
 
@@ -109,6 +115,21 @@ You can view the projects defined for your organization by opening the **Project
     > ![Screenshot of open Projects, TFS 2013 - 2015](media/about-projects/open-projects-tfs-15.png)
 
 2. From there, you can choose a project from the set of projects listed.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+<a id="project-scoped-user-group" /> 
+
+## Project-scoped User group 
+
+By default, users added to an organization can view all organization and project information and settings. This includes viewing list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**. 
+
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from access the Organization Settings pages, except for Overview and Projects; and are restricted to accessing only  those projects to which they've been added to. 
+
+To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+ 
 
 ::: moniker-end
 
