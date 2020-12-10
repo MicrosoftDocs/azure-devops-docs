@@ -261,10 +261,9 @@ To have full access to the Test feature set, your [access level must be set to B
 ::: moniker-end  
 
 
+<a id="process-permissions" />
 
 ::: moniker range=">= azure-devops-2019"  
-
-<a id="process-permissions"></a>
 
 ## Customize an inherited process 
 
