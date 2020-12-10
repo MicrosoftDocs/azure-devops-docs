@@ -68,9 +68,9 @@ For project collection and project administrators, learn more about security and
       - [Basic access](access-levels.md) 
       - [Collections](../projects/about-projects.md)  
       - [Conditional access](../accounts/change-application-access-policies.md#conditional-access-policies)  
+      - [Git credential manager](../../repos/git/set-up-credential-managers.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json) 
    :::column-end:::
    :::column span="1":::
-      - [Git credential manager](../../repos/git/set-up-credential-managers.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json) 
       - [Inheritance](about-permissions.md#inheritance)   
       - [Namespaces](about-security-identity.md#namespaces)   
       - [OAuth](../../integrate/get-started/authentication/oauth.md)
@@ -79,7 +79,8 @@ For project collection and project administrators, learn more about security and
       - [Permissions](about-permissions.md#permissions)  
       - [Permission states](about-permissions.md#permission-states) 
       - [Personal Access Tokens (PATs)](about-security-identity.md#authentication)   
-      - [Preview features](../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)   
+      - [Preview features](../../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json) 
+      - [Project-scoped User Groups](../projects/about-projects.md#project-scoped-user-group)  
       - [Projects](../projects/about-projects.md)  
       - [Resources granted to project members](../projects/resources-granted-to-project-members.md) 
    :::column-end:::

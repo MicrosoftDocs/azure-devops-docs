@@ -20,6 +20,7 @@ ms.date: 12/07/2020
 
 Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access. Accounts get access to Azure DevOps through authentication of their security credentials and authorization of their account entitlements to access a feature or function. The following table summarizes the  various account types and methods used to secure your organization and projects. 
 
+::: moniker range="azure-devops"
 
 ---
 :::row:::
@@ -51,14 +52,54 @@ Azure DevOps employs a number of security concepts to ensure only those who shou
       
       
       **Policies**
-      - Application connection policies
-      - Security and user policies
-      - Repository and branch policies
-      - Pipeline policies
+      - Privacy policy URL
+      - Application connection and security policies
+      - User policies
+      - Git repository and branch policies
    :::column-end:::
 :::row-end:::
 ---
  
+::: moniker-end
+
+
+::: moniker range="< azure-devops"
+
+---
+:::row:::
+   :::column span="1":::
+      **Account types**
+      - Users
+      - Service accounts
+      - Service principals
+      - Job agents
+      
+      
+      **Authentication**
+      - User credentials
+      - Windows authentication
+      - Two-factor authentication (2FA)
+      - SSH key authentication
+      - Personal access tokens
+      - Oauth configuration 
+      - Active Directory authentication library  
+   :::column-end:::
+   :::column span="1":::
+      **Authorization**
+      - Security group membership
+      - Role-based permissions
+      - Access levels
+      - Feature flags
+      - Security namespaces & permissions    
+      
+      
+      **Policies**
+      - Git repository and branch policies
+   :::column-end:::
+:::row-end:::
+---
+ 
+::: moniker-end
 
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
