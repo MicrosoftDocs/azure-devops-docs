@@ -16,17 +16,17 @@ ms.date: 12/07/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-When it comes to accessing an Azure DevOps feature, you need to understand the following key concepts. 
+When it comes to accessing an Azure DevOps feature, it's helpful to understand the following key concepts. 
 
 - All users added to Azure DevOps are typically added to one or more *security groups*. 
 - Security groups are assigned *permissions* which either allow or deny access to a feature. 
 - Members of the security group *inherit the permissions* assigned to the group.
 - Each user is also assigned an *access level* which grants or restricts access to select web portal features. 
 - Permissions are set at various levels for most objects, such as repositories, pipelines, area paths, and so on. 
-- Other permissions are managed through *role-based assignments*, such as team administrator role or 
+- Other permissions are managed through *role-based assignments*, such as team administrator role, extension management role, and various pipeline resource roles.  
 - And finally, as new features are introduced you may need to enable their *feature flag* to access them. 
 
-For example, individual contributors are added to the Contributors group which provides read and write access to repositories, work tracking, pipelines, and more. Using built-in or custom security groups helps simplify management of permissions across projects. 
+For example, individual contributors are added to the Contributors security group which provides read and write access to repositories, work tracking, pipelines, and more. Also, Contributors are primarily granted Basic access. If they need access to test services, then they may be granted Advanced or Basic + Test Plans access. Permissions may apply to a specific project or objects within the project, such as Git repositories, branches, pipelines, area paths, and more. Or, they can apply to an entire organization or collection. Each functional area uses security groups to simplify management across the deployment.
 
 Administrators manage security groups and permissions from the web portal administration context. Contributors manage permissions for objects they create or own from the web portal as well. Permissions are automatically set based on the group that you add users to, or based on the object, project, collection, or server-level to which you add users or groups.  
 
@@ -37,25 +37,6 @@ To learn more, review the information provided in this article and the following
 
 - [Default permissions and access](permissions-access.md)  
 - [Trace permissions](faq-trace-permissions.md)
-
-<!--- 
-
-For a look at the default permissions assigned to the default security groups. 
-To access the resources you manage in Azure DevOps&mdash;such as your code, builds, and work tracking&mdash;you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with Azure DevOps, or Active Directory if integrated with TFS. 
-
-Permissions may apply to a specific project or objects within the project, such as Git or TFVC repositories, branches, build pipelines, area paths, and more. Or, they can apply to an entire Azure DevOps organization or TFS collection, or to a TFS instance. Each functional area uses groups to simplify management across the deployment.
-
-- Security groups
-- Permissions versus access levels 
-- Access levels 
-- Permission levels 
-- Permission settings
-- Permission inheritance and security groups
-- Role-based access control 
-- Feature flags 
-
--->
-
 
 <a id="security-group-membership" /> 
 
@@ -84,7 +65,11 @@ You can populate security groups by adding individual users. However, for ease o
 
 ::: moniker range="azure-devops"
 
-:::image type="content" source="media/about-security/add-active-directory-groups.png" alt-text="Conceptual image showing adding Azure Active Directory groups to Azure DevOps security groups, cloud":::
+To manage users you add to Azure Active Directory, see [Connect your organization to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md). 
+
+
+> [!NOTE]  
+> When your organization is connected to Azure Active Directory, there are a number of organization policies which you can enable or disabled to secure your organization. To learn more, see [About security, authentication, and authorization, Security-policies](about-permissions.md#security-policies). 
 
 ::: moniker-end
 
@@ -100,7 +85,6 @@ You can populate security groups by adding individual users. However, for ease o
 
 Of course, you don't need to grant permissions for reports or the project portal if your project doesn't use SQL Server Reporting Services or a SharePoint site.
 ::: moniker-end
-
 
  
 <a name="validusers"></a>
@@ -296,23 +280,27 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 
 
 <a id="security-roles" />
-## Role-based access control  
-
-With Role-based access control, user accounts are assigned to a role, with each role assigned one or more permissions. The following table lists the artifacts whose permissions are managed by role.  
-
-| Object-level  | Project-level |Collection-level |
-|----------------|----------------|----------------|
-|&#8226;&nbsp; Secure files<br/>&#8226;&nbsp; Variable groups|&#8226;&nbsp; Agent pools<br/>&#8226;&nbsp; Agent queues<br/>&#8226;&nbsp; Service connections<br/>&#8226;&nbsp; Team administrator|&#8226;&nbsp;Agent pools<br/>&#8226;&nbsp; Deployment pools<br/>&#8226;&nbsp; Marketplace extensions|
- 
-To learn more, see [About security roles](about-security-roles.md).  
 
 
+## Role-based permissions   
+
+With Role-based permissions, user accounts are assigned to a role, with each role assigned one or more permissions. Here are the primary roles and links to learn more.   
+
+- [Marketplace extension Manager role](../../marketplace/how-to/grant-permissions.md). Members of the Manager role can install extensions and respond to requests for extensions to be installed.  
+- [Pipeline security roles](about-security-roles.md) 
+- [Team administrator role](../settings/manage-teams.md). Team administrators are able to manage all teal tools.   
+
+	> [!NOTE]
+	> Members of the Project Administrators or Project Collection Administrators groups can manage all team tools for all teams.
 
 ## Feature flags 
  
-Access to select, new features are controlled by feature flags. Periodically, Azure DevOps Services introduces new features by placing them behind a feature flag. Features under a private preview require the organization owner to request that the feature be turned on. Other features may be introduced as a preview feature which general users can enable or disable. To learn more, see [Manage or enable features](../../project/navigation/preview-features.md).
+Access to select, new features are controlled by feature flags. Periodically, Azure DevOps Services introduces new features by placing them behind a feature flag. Features under a private preview require the organization owner to request that the feature be turned on. Other features may be introduced as a preview feature which general users can enable or disable. 
+
+To learn more, see [Manage or enable features](../../project/navigation/preview-features.md).
  
 ## Next steps
+
 > [!div class="nextstepaction"]
 > [Default permissions and access](permissions-access.md)
 

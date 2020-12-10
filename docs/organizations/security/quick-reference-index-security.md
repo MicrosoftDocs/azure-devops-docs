@@ -32,6 +32,7 @@ As individual contributors to Azure DevOps, learn about how permissions and acce
 - [Add an alternate account to your Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)
 
 ::: moniker range="azure-devops"
+
 For organization owners or project administrators, learn about authentication and authorization, how to add and manage users and their access, and secure projects and organizations.  
 
 - [About security, authentication, & authorization](about-security-identity.md)  
