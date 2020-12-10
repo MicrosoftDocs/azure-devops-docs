@@ -25,6 +25,36 @@ To determine what level a permission is defined, see the [Permissions lookup gui
 
 * You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions. Users added to a project are automatically added to these security groups. 
 
+
+::: moniker range="azure-devops"  
+> [!NOTE]  
+> Users added to the **Project-scoped Users** group won't be able to access **Organization Settings** other than the **Overview** section if the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). 
+
+::: moniker-end  
+
+
+::: moniker range="azure-devops"
+
+<a name="find-owner"></a>
+
+## Look up the organization owner 
+
+The organization owner can provide permissions at any level within the organization or project. 
+
+1. Choose the Azure DevOps logo :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: to open **Projects**, and then choose :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**. 
+
+	![Open organization settings](../../media/open-organization-settings-preview.png)  
+
+2. Choose **Overview** and scroll down to show the **Organization owner**.
+
+   > [!div class="mx-imgBorder"]  
+   > ![Organization settings, Organization owner](../../media/settings/organization-settings-info.png)
+
+   To change the owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
+
+::: moniker-end
+
+
 ## Show members of the Project Administrators group
 
 For permissions managed at the project-level, request them from a member of the [Project Administrators group](set-project-collection-level-permissions.md). Project collection administrators manage features and functions that impact all projects. 
@@ -167,26 +197,6 @@ To find out who is a member, check the **Security** settings at the collection l
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
-
-<a name="find-owner"></a>
-
-## Show the organization owner 
-
-The organization owner can provide permissions at any level within the organization or project. 
-
-1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**, and then choose :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**. 
-
-	![Open organization settings](../../media/open-organization-settings-preview.png)  
-
-2. Choose **Overview** and scroll down to show the **Organization owner**.
-
-   > [!div class="mx-imgBorder"]  
-   > ![Organization settings, Organization owner](../../media/settings/organization-settings-info.png)
-
-   To change the owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
-
-::: moniker-end
 
 ## Next steps
 
