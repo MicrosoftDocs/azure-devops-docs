@@ -32,7 +32,7 @@ The **Azure Pipelines** agent pool offers several virtual machine images to choo
 | --- | --- | --- | --- |
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md)
 | Windows Server 2016 with Visual Studio 2017 | *vs2017-win2016* | `vs2017-win2016` | [Link](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2016-Readme.md)
-| Ubuntu 20.04 [(preview)](/azure/devops/release-notes/2020/sprint-170-update#ubuntu-2004-in-preview-for-azure-pipelines-hosted-pools)| *ubuntu-20.04* | [ubuntu-latest](https://github.com/actions/virtual-environments/issues/1816) OR `ubuntu-20.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md)
+| Ubuntu 20.04 | *ubuntu-20.04* | `ubuntu-latest` OR `ubuntu-20.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md)
 | Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md)
 | Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1604-README.md)
 | macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-10.14` | [Link](https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.14-Readme.md)
