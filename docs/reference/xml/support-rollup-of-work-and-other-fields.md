@@ -67,7 +67,7 @@ From the sprint backlog, the sum of all **Remaining Work** defined for all tasks
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Sprint backlog displays rollup of Remaining Work](media/rollup/remaining-work-rollup-2019.png )
+> ![Sprint backlog displays rollup of Remaining Work.](media/rollup/remaining-work-rollup-2019.png )
 
 ::: moniker-end
 
