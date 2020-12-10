@@ -32,7 +32,7 @@ You can start using Azure Boards without configuring or customizing anything. Ho
 - [Define Iteration Paths](../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 - [Configure and customize Azure Boards](../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 - [Connect Azure Boards to GitHub](../boards/github/connect-to-github.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) 
-- [Set process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
+- [Set process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)  
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
@@ -45,7 +45,7 @@ You can start using Azure Boards without configuring or customizing anything. Ho
 - [Define Area Paths](../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 - [Define Iteration Paths](../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 - [Configure and customize Azure Boards](../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
-- [Set process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
+- [Set process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)  
 ::: moniker-end 
 
 ## Configure team tools 
