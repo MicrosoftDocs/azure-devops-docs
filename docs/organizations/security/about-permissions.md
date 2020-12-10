@@ -293,9 +293,10 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 
 With Role-based permissions, user accounts are assigned to a role, with each role assigned one or more permissions. Here are the primary roles and links to learn more.   
 
-- [Marketplace extension Manager role](../../marketplace/how-to/grant-permissions.md). Members of the Manager role can install extensions and respond to requests for extensions to be installed.  
-- [Pipeline security roles](about-security-roles.md) 
-- [Team administrator role](../settings/manage-teams.md). Team administrators are able to manage all teal tools.   
+- [Artifact or package feed security roles](../../artifacts/feeds/feed-permissions.md): Roles support various permission levels to edit and manage package feeds.   
+- [Marketplace extension Manager role](../../marketplace/how-to/grant-permissions.md): Members of the Manager role can install extensions and respond to requests for extensions to be installed.  
+- [Pipeline security roles](about-security-roles.md): Several role are used to manage library resources, project-level and collection-level pipeline resources. 
+- [Team administrator role](../settings/manage-teams.md)  Team administrators are able to manage all team tools.   
 
 	> [!NOTE]
 	> Members of the Project Administrators or Project Collection Administrators groups can manage all team tools for all teams.
