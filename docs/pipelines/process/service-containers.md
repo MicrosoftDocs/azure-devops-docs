@@ -62,7 +62,7 @@ This pipeline fetches the `nginx` and `buildpack-deps` containers from [Docker H
 and then starts the containers. The containers are networked together so that they can reach each other
 by their `services` name. 
 
-From inside this job container, the `nginx` and `redis` host names resolve to the correct services using Docker networking.
+From inside this job container, the `nginx` host names resolves to the correct services using Docker networking.
 All containers on the network automatically expose all ports to each other.
 ## Single job
 
@@ -115,29 +115,27 @@ resources:
   containers:
   - container: my_container
     image: ubuntu:18.04
+  - container: pg12
+    image: postgres:12
   - container: pg11
     image: postgres:11
-  - container: pg10
-    image: postgres:10
 
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-18.04'
 
 strategy:
   matrix:
+    postgres12:
+      postgresService: pg12
     postgres11:
       postgresService: pg11
-    postgres10:
-      postgresService: pg10
 
 container: my_container
 
 services:
   postgres: $[ variables['postgresService'] ]
 steps:
-- script: |
-    apt install -y postgresql-client
-    psql --host=postgres --username=postgres --command="SELECT 1;"
+- script: printenv
 ```
 
 ## Ports
