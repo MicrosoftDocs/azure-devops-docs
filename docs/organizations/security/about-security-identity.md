@@ -33,8 +33,6 @@ Azure DevOps employs a number of security concepts to ensure only those who shou
       
       
       **Authentication**
-   :::column-end:::
-   :::column span="1":::
       - User credentials
       - Windows authentication
       - Two-factor authentication (2FA)

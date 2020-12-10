@@ -69,7 +69,7 @@ To manage users you add to Azure Active Directory, see [Connect your organizatio
 
 
 > [!NOTE]  
-> When your organization is connected to Azure Active Directory, there are a number of organization policies which you can enable or disabled to secure your organization. To learn more, see [About security, authentication, and authorization, Security-policies](about-permissions.md#security-policies). 
+> When your organization is connected to Azure Active Directory, there are a number of organization policies which you can enable or disabled to secure your organization. To learn more, see [About security, authentication, and authorization, Security-policies](about-security-identity.md#security-policies). 
 
 ::: moniker-end
 
