@@ -30,14 +30,10 @@
     href: add-users-team-project.md 
   - name: Remove user accounts
     href: remove-users-prohibit-access.md
-  - name: Manage access with Active Directory
+  - name: Manage access with Azure Active Directory
     items:
-    - name: Active Directory groups 
-      href: /azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: About access with Azure AD
-      href: ../accounts/access-with-azure-ad.md
-    - name: Set up Active Directory or Azure AD
-      href: setup-ad-aad.md
+    - name: Connect organization to Azure AD
+      href: ../accounts/connect-organization-to-azure-ad.md
     - name: Add or delete users in Azure AD
       href: /azure/active-directory/fundamentals/add-users-azure-active-directory?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
     - name: Add AD/Azure AD security groups to built-in security groups
@@ -46,8 +42,6 @@
       href: ../accounts/manage-azure-active-directory-groups.md
     - name: Manage group rules
       href: ../accounts/assign-access-levels-by-group-membership.md
-    - name: Connect organization to Azure AD
-      href: ../accounts/connect-organization-to-azure-ad.md
     - name: Change Azure AD connection
       href: ../accounts/change-azure-ad-connection.md
     - name: Disconnect from Azure AD
@@ -62,6 +56,8 @@
       href: ../accounts/faq-user-and-permissions-management.md
     - name: Add administrators
       href: ../accounts/faq-user-and-permissions-management.md
+    - name: About access with Azure AD
+      href: ../accounts/access-with-azure-ad.md
     - name: Authenticate & invite with GitHub
       href: faq-github-authentication.md
     - name: Access with Azure AD

@@ -17517,6 +17517,11 @@
       "source_path": "docs/integrate/previous-apis/overview.md",
       "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/integrate/previous-apis/overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/security/setup-ad-aad.md",
+      "redirect_url": "/azure/devops/organizations/security/about-permissions#aad",
+      "redirect_document_id": false
     }
   ]
 }
