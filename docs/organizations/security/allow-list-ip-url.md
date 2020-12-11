@@ -69,8 +69,11 @@ To ensure your organization works with any existing firewall or IP restrictions,
 Azure DevOps uses CDNs to serve static content. Ensure the following CDNs are allowed.
 
 - `*.vsassets.io` 
-- `*.vsassetscdn.azure.cn` 
 - `*.gallerycdn.vsassets.io` (Marketplace)
+
+Users in China should additionally whitelist the following domains. 
+
+- `*.vsassetscdn.azure.cn` 
 - `*.gallerycdn.azure.cn` (Marketplace)
 
 We recommend you open port 443 to all traffic on these IP addresses and domains. We also recommend you open port 22 to a smaller subset of targeted IP addresses.  
