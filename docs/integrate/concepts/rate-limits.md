@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.author: kaelli
 author: roferg
-ms.date: 05/08/2020
-monikerRange: '>= tfs-2018'
+ms.date: 11/16/2020
+monikerRange: 'azure-devops'
 ---
 
 <!--- Supports FWLINK: https://go.microsoft.com/fwlink/?LinkId=692096 -->
 
 # Rate limits  
 
-[!INCLUDE [version-vsts-tfs-2018](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Azure DevOps, like many software-as-a-service solutions, uses multi-tenancy to reduce costs and improve performance.
 This design leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption.
@@ -120,17 +120,7 @@ Other columns highlight total TSTU usage and delay time.
 
 For members of the Project Collection Administrators group, this same page can be used to investigate the usage of other users.
 
-::: moniker range=">= azure-devops-2019"
-
-   <img alt="Usage page for collection administrators" src="./media/rate-limits/usage-pca-newnav.png" style="border: 1px solid #CCCCCC" />
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-   <img alt="Usage page for collection admins" src="./media/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
-
-::: moniker-end
+:::image type="content" source="media/rate-limits/usage-pca-newnav.png" alt-text="Usage page for collection administrators":::
 
 When you first visit the Usage page, it displays requests for the last hour.
 Email links open the Usage page scoped to the 30 minutes before and after the first delayed request.

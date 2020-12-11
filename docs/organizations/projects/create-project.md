@@ -1,7 +1,7 @@
 ---
 title: Create a project
 titleSuffix: Azure DevOps
-ms.custom: seodec18, contentperfq4, devx-track-azurecli
+ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Learn how to create a new project where your team can plan, track progress, and collaborate on building software solutions.
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.technology: devops-accounts
@@ -630,4 +630,4 @@ From the admin context of the web portal, you can add additional repositories to
 - [Team Foundation version control](../../repos/tfvc/index.yml)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 - [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md)
-- [New Git experience in Visual Studio (Preview)](/visualstudio/ide/git-with-visual-studio)
+- [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio)

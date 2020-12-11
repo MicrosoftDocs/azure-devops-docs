@@ -6,9 +6,9 @@ ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-ms.date: 06/04/2020
 monikerRange: '<= azure-devops'
----
+ms.date: 11/16/2020
+--- 
 
 # Trace permissions
 
@@ -20,7 +20,7 @@ For more information, see [About permissions](about-permissions.md).
 
 ## Trace a user's specific permission
 
-If a user's having permissions issues and you use default security groups or custom groups for permissions, you can investigate where those permissions are coming from by using our permissions tracing. Permissions issues could be due to one of the following scenarios:
+If a user is having permissions issues and you use default security groups or custom groups for permissions, you can investigate where those permissions are coming from by using our permissions tracing. Permissions issues could be due to one of the following scenarios:
 
 - Their permissions haven't propagated yet. It can take up to 1 hour for Azure AD group memberships or permissions changes to propagate throughout Azure DevOps. If a user's having issues that don't resolve immediately, wait a day to see if they resolve.
 
@@ -28,13 +28,15 @@ If a user's having permissions issues and you use default security groups or cus
 
 ::: moniker range="azure-devops"
 
-[Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
+- The user has been added to the **Project-Scoped Users** group which limits access to organization information and projects when the **Project-Scoped Users well known group to hide settings** preview feature is enabled. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group).  
+
+For information on adding users to an organization and setting their access level, see [Manage users and access in Azure DevOps](../accounts/add-organization-users.md).  
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-[Change access levels](./change-access-levels.md?view=azure-devops)
+For information on setting access levels, see [Change access levels](./change-access-levels.md)
 
 ::: moniker-end
 
@@ -91,5 +93,5 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
 ## Related articles
 
-* [Grant or restrict access to select features and functions](./restrict-access.md?view=azure-devops)
-* [Change individual permissions](./change-individual-permissions.md?view=azure-devops)
+* [Grant or restrict access to select features and functions](./restrict-access.md)
+* [Change individual permissions](./change-individual-permissions.md)
