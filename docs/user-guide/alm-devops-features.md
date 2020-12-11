@@ -785,7 +785,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-git-dev-commit-push.png" alt="Commit and push changes"/><br/><br/>
 
 <p><b>Pull requests</b></p>
-<p>Use <a href="../repos/git/pull-requests.md" data-raw-source="[pull requests to review and merge branch code to a master branch](../repos/git/pull-requests.md)">pull requests to review and merge branch code to a master branch</a>.   </p>
+<p>Use <a href="../repos/git/pull-requests.md" data-raw-source="[pull requests to review and merge branch code to a main branch](../repos/git/pull-requests.md)">pull requests to review and merge branch code to a main branch</a>.   </p>
 <p><b>Sync</b></p>
 
 <p>Quickly <a href="../repos/git/pulling.md" data-raw-source="[sync your local branch with a shared repo](../repos/git/pulling.md)">sync your local branch with a shared repo</a>.</p>

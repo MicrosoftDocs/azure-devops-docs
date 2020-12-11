@@ -340,6 +340,4 @@ To learn more, see [Manage or enable features](../../project/navigation/preview-
 - [Permissions and groups reference](permissions.md)  
 - [Security and permission management tools](security-tools-reference.md)  
 ::: moniker-end
-
-## Related articles
-
+ 
