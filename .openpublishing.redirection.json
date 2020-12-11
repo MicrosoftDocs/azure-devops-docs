@@ -17577,6 +17577,11 @@
       "source_path": "docs/test/load-test/run-performance-tests-app-before-release.md",
       "redirect_url": "/previous-versions/azure/devops/test/load-test/run-performance-tests-app-before-release",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/overview.md",
+      "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
+      "redirect_document_id": false
     }
   ]
 }

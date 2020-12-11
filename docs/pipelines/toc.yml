@@ -2,6 +2,8 @@
   href: index.yml
 - name: What is Azure Pipelines?
   href: get-started/what-is-azure-pipelines.md
+- name: Deploy to Azure
+  href: overview-azure.md
 - name: CI, CD, YAML & Classic
   href: get-started/pipelines-get-started.md
 - name: Get started
@@ -23,6 +25,8 @@
     href: get-started/multi-stage-pipelines-experience.md
 # - name: Clean up pipeline steps
 #   href: get-started/pipelines-get-started.md
+  - name: DevOps Starter
+    href: /azure/devops-project/overview
 - name: Pipeline basics
   items:
   - name: Key concepts
@@ -41,6 +45,8 @@
     - name: GitHub Enterprise Server
       href: repos/github-enterprise.md
       displayName: github enterprise, ci, pr, pull request, triggers, oauth, pat, checkout, firewall, whitelist, exception, rule, other git, external git, service connection, classic, yaml, ip address range
+    - name: Pipeline options for Git repositories
+      href: repos/pipeline-options-for-git.md
     - name: Bitbucket Cloud
       href: repos/bitbucket.md
       displayName: ci, pr, pull request, triggers, self, batching, batched CI, oauth, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, badge, prefergitfrompath, checkout, clone, fetch, get sources, clean, label sources, tag sources, checkout path, submodules, shallow fetch
@@ -56,6 +62,8 @@
     - name: Multiple repositories
       href: repos/multi-repo-checkout.md
       displayName: ci, pr, pull request, triggers, checkout, branch policy, path filter, branch filter, tag trigger, multiple repos, multi-repo, multi-checkout, multi-trigger, repo resource, repository resource, self
+  - name: Build history
+    href: build/history.md
   - name: Triggers
     items:
     - name: Types of triggers
@@ -301,6 +309,12 @@
       href: targets/webapp-on-container-linux.md
     - name: Web App on Windows
       href: targets/webapp.md
+  - name: Deploy mobile apps
+    items:
+    - name: Manage signing certificates
+      href: apps/mobile/app-signing.md
+    - name: Manage signing certificates (TFS-2017) 
+      href: apps/mobile/secure-certs.md
 - name: Deploy apps (Classic)
   items:
   - name: Release pipelines
@@ -373,6 +387,8 @@
     href: ecosystems/containers/acr-template.md
   - name: Azure Kubernetes Service
     href: ecosystems/kubernetes/aks-template.md
+  - name: Azure Container Service (AKS)
+    href: release/integrate-jenkins-pipelines-aks.md  
   - name: Kubernetes canary deployments
     href: ecosystems/kubernetes/canary-demo.md
   - name: Azure Machine Learning
@@ -436,6 +452,8 @@
     href: agents/v2-windows.md
   - name: Windows agents (TFS 2015)
     href: agents/v1-windows.md
+  - name: Purchase CI/CD & parallel jobs
+    href: ../organizations/billing/buy-more-build-vs.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
   - name: Scale set agents
     href: agents/scale-set-agents.md
     displayName: byos, elastic agents, VMSS, autoscale
@@ -850,6 +868,10 @@
     href: /rest/api/azure/devops/
   - name: Azure DevOps CLI
     href: ../cli/index.md
+  - name: DevOps Starter to deploy to Azure
+    href: /azure/devops-project/
+  - name: Azure Lab Services
+    href: /azure/lab-services/
   - name: Microsoft Learn
     items:
     - name: Create a build pipeline
