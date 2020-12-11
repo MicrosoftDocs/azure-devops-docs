@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for November 1, 2020 - November 30, 2020"
 description: "What's new in the Azure DevOps docs for November 1, 2020 - November 30, 2020."
-ms.date: 12/07/2020
+ms.date: 12/11/2020
 ---
 
 # Azure DevOps docs: What's new for November 1, 2020 - November 30, 2020
@@ -133,7 +133,46 @@ Welcome to what's new in the Azure DevOps docs from November 1, 2020 through Nov
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address 38 GitHub documentation issues. To browse the issues, see [Azure DevOps documentation issues addressed in November 2020](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2020-11-01..2020-11-30+).
+Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2020-11-01..2020-11-30+).
+
+- [Mocha test example for test failure has a bug #9700](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9700)
+- [Minor Typo? #9675](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9675)
+- [Duplicate text in doc #9669](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9669)
+- [Incorrect spelling on page #9664](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9664)
+- [Git Credential Manager Deprecated #9652](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9652)
+- ["range of activates" should be "range of activities" #9636](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9636)
+- [Incorrect link target for Visual Studio Test task #9634](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9634)
+- ["you" incorrectly used instead of "your" #9632](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9632)
+- [Incorrect Prerequisite for changing organization region #9627](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9627)
+- [Documentation is not up-to-date #9538](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9538)
+- [Create Failure Test section inside "Add a build or release task" has incorrect typescript for warnings line #9533](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9533)
+- [Missing information on schedule syntax #9424](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9424)
+- [Missing URL: management.azure.com #9419](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9419)
+- [Backlog item limit I believe it is incorrect #9412](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9412)
+- [Display what is the equivalent task for Linux. #9399](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9399)
+- [Sample code using the wrong environment  #9397](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9397)
+- [Possibly missing "the" #9395](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9395)
+- [Masking variables as secret #9355](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9355)
+- [setVariable isOutput gives different result than it is in documentation #9311](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9311)
+- [Stage can be set to run based on a variable output in a previous stage. #9306](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9306)
+- [Deployment Job -- do these support workspace.clean? #9201](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9201)
+- [Scale Set Agents Example is Incorrect #9180](https://github.com/MicrosoftDocs/azure-devops-docs/issues/9180)
+- [What is the default ref for using templates from other repos? #8994](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8994)
+- [Please provide reference about BuildId is ReleaseId #8855](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8855)
+- [Workspaces are always cleaned. #8818](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8818)
+- [Updated terminology #8189](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8189)
+- [Update Service Fabric Manifests task requires Windows Desktop PowerShell #8166](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8166)
+- [Kubernetes annotation in deployment not valid #7926](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7926)
+- [Update Work Items Step 4 wording incorrect #7887](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7887)
+- [Yaml pipeline: Deployment Jobs do not do checkout implicitly like Jobs #7697](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7697)
+- [Is there a way to access the Response Body #7581](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7581)
+- [variable as environment name not working #7558](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7558)
+- [task.setvariable - IsOutput docs #6724](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6724)
+- [`nuGetFeedType` and `packagesToPush` descriptions incorrect #6248](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6248)
+- [Deployment Job doesn't automatically check out sources #5647](https://github.com/MicrosoftDocs/azure-devops-docs/issues/5647)
+- [Explain 'publishWebProjects' #4308](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4308)
+- [Update screenshots from VSTS age #3751](https://github.com/MicrosoftDocs/azure-devops-docs/issues/3751)
+- [Update screenshot (cur header from vsts) #3750](https://github.com/MicrosoftDocs/azure-devops-docs/issues/3750)
 
 ## Community contributors
 
