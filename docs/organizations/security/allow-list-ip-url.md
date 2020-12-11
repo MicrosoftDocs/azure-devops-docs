@@ -71,7 +71,7 @@ Azure DevOps uses CDNs to serve static content. Ensure the following CDNs are al
 - `*.vsassets.io` 
 - `*.gallerycdn.vsassets.io` (Marketplace)
 
-Users in China should additionally whitelist the following domains. 
+Users in China should also add the following domains to an allow list: 
 
 - `*.vsassetscdn.azure.cn` 
 - `*.gallerycdn.azure.cn` (Marketplace)
