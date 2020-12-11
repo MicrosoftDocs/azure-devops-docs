@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to use Go get command  with Azure Repos Git
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 12/11/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -73,6 +73,8 @@ After you create the PAT, add this entry to your .gitconfig file:
 [url "https://<user>:<token>@dev.azure.com/<organization>/<project>/_git/<repo>"]
     insteadOf = https://dev.azure.com/<organization>/<project>/_git/<repo>
 ```
+
+The `<user>` part can be any non-empty string; we suggest the word `pat`.
 
 With this entry and a specific URL format, you can now use `go get`.
 
