@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for November 1, 2020 - November 30, 2020"
 description: "What's new in the Azure DevOps docs for November 1, 2020 - November 30, 2020."
-ms.date: 12/11/2020
+ms.date: 12/14/2020
 ---
 
 # Azure DevOps docs: What's new for November 1, 2020 - November 30, 2020
@@ -16,7 +16,6 @@ Welcome to what's new in the Azure DevOps docs from November 1, 2020 through Nov
 
 ### Updated articles
 
-- [Artifacts storage breakdown](/azure/devops/artifacts/artifact-storage)
 - [What are feeds?](/azure/devops/artifacts/concepts/feeds)
 - [Limits](/azure/devops/artifacts/reference/limits)
 - [Start using Azure Artifacts](/azure/devops/artifacts/start-using-azure-artifacts)
@@ -73,7 +72,6 @@ Welcome to what's new in the Azure DevOps docs from November 1, 2020 through Nov
 ### Updated articles
 
 - [Build a data pipeline by using Azure Data Factory, DevOps, and machine learning](/azure/devops/pipelines/apps/cd/azure/build-data-pipeline)
-- [Tutorial: Deploy a Java app to a virtual machine scale set](/azure/devops/pipelines/apps/cd/azure/deploy-virtual-scale-set-java)
 - [Build and test PHP apps](/azure/devops/pipelines/ecosystems/php)
 - [Set retention policies for builds, releases, and tests](/azure/devops/pipelines/policies/retention)
 - [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs)
