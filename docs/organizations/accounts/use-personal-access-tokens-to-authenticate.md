@@ -26,7 +26,7 @@ PATs are easy to create when you need them and easy to revoke when you don’t. 
 
 ## Related articles
 
-- [About security and identity](../security/about-security-identity.md)
+- [About security, authentication, and authorization](../security/about-security-identity.md)
 - [Default permissions and access for Azure DevOps](../security/permissions-access.md)
 - [Revoke other users' PATs](admin-revoke-user-pats.md)
 

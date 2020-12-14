@@ -18,6 +18,8 @@
     href: ../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Connect Azure Boards to GitHub
     href: ../boards/github/connect-to-github.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Set process permissions
+    href: ../organizations/security/set-permissions-access-work-tracking.md#process-permissions 
 - name: Configure teams
   items:
   - name: Configure team tools
