@@ -46,10 +46,13 @@ None
 |`cleanDestinationDirectory`<br/> Clean destination directory | (Required) Select this option to clean the destination directory before the JDK is extracted into it. <br/>Default value: `true`|
 
 > [!NOTE]
-> 
-> If you are using **Java Tool Installer** task on macOS or Linux self-hosted agent which is running in Interactive mode you could see the password request in console while
-> task execution. To prevent it you need to update sudoers file to allow execution of **sudo** command without requesting password.
-> 
+>
+> If you are using **Java Tool Installer** task on macOS or Linux self-hosted agents agents which are running in Interactive mode you could see the password request in console while task execution. To prevent it you need to update the sudoers file to allow execution of **sudo** command without requesting a password.
+> Follow the next steps to do it:
+> 1) Run *sudo visudo* command, it will open sudoers file for editing.
+> 2) Go to the bottom of the file and add the following line: *user ALL=(ALL) NOPASSWD: ALL* (Replace *user* by the actual user alias)
+> 3) Save and close the file.
+>
 
 ## Examples
 
