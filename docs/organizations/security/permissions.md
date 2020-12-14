@@ -852,37 +852,6 @@ For each project that you create, the system creates the followings project-leve
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range="azure-devops"
-:::row:::
-   :::column span="1":::
-       Project-scoped Users
-   :::column-end:::
-   :::column span="1":::
-       Has limited access to view organization settings and projects other than those projects they are specifically added to. 
-   :::column-end:::
-   :::column span="2":::
-       Add users to this group when you want to limit their access to those projects that you explicitly add them to. Do not add users to this group if they are also added to the Project Collection Administrators group.  
-       > [!NOTE]   
-       > Limits are only in effect when the organization-level preview feature, **Project-Scoped Users well known group to hide settings** is enabled. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level).
-   :::column-end:::
-:::row-end:::
----
-::: moniker-end
-:::row:::
-   :::column span="1":::
-       Security Service Group
-   :::column-end:::
-   :::column span="1":::
-       Used to store users who have been granted permissions, but not added to any other security group. 
-   :::column-end:::
-   :::column span="2":::
-       Don't assign users to this group. If you are removing users from all security groups, check if you need to remove them from this group.   
-   :::column-end:::
-:::row-end:::
----
-
-
-
 
 <!---
 Create and manage team alerts
