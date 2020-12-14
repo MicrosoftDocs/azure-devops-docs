@@ -1,15 +1,49 @@
-- name: Collaborate 
+- name: Cross-platform & Collaboration 
   href: index.yml
 - name: Work across projects 
   href: ./navigation/work-across-projects.md
 - name: Work across projects FAQs
   href: work-across-projects-faqs.md
-- name: Wikis
+- name: Search  
+  href: ./search/toc.yml
+- name: Dashboards
+  href: ../report/dashboards/toc.yml
+- name: Analytics
+  href: ../report/powerbi/toc.yml
+- name: Wiki
   href: wiki/toc.yml
+- name: Notifications
+  href: ../notifications/toc.yml
+- name: Azure Boards and GitHub
+  href: ../boards/github/toc.yml
 - name: Public Projects
   href: ../organizations/public/toc.yml
-- name: Search  
-  href: ./search/toc.yml  
+- name: Integrations
+  items:
+  - name: Microsoft Teams
+    items:
+    - name: Azure Boards with Teams
+      href: ../boards/integrations/boards-teams.md
+    - name: Azure Repos with Teams
+      href: ../repos/integrations/repos-teams.md
+    - name: Azure Pipelines with Teams
+      href: ../pipelines/integrations/microsoft-teams.md
+  - name: Slack
+    items:
+    - name: Azure Boards with Slack
+      href: ../boards/integrations/boards-slack.md
+    - name: Azure Repos with Slack
+      href: ../repos/integrations/repos-slack.md
+    - name: Azure Pipelines with Slack
+      href: ../pipelines/integrations/slack.md
+  - name: Azure Pipelines with ServiceNow
+    href: ../pipelines/release/approvals/servicenow.md
+  - name: Azure Pipelines with Jenkins
+    href: ../pipelines/release/integrate-jenkins-pipelines-cicd.md
+  - name: Azure Pipelines with Terraform
+    href: ../pipelines/release/automate-terraform.md
+- name: Marketplace extensions 
+  href: ../marketplace/toc.yml
 - name: Feedback
   href: feedback/toc.yml 
 - name: Project portal & process guidance
@@ -30,12 +64,6 @@
     href: /rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results
   - name: Get project metrics
     href: /rest/api/azure/devops/build/metrics/get%20project%20metrics
-- name: Marketplace resources
-  items:
-  - name: UserVoice Integration (Marketplace extension)
-    href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice
-  - name: UserVoice UI (Marketplace extension)
-    href: https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui
 - name: Resources
   items:
   - name: Get Started
