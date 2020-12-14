@@ -42,13 +42,13 @@ None
 |`azureStorageAccountName`<br/> Storage Account Name | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the Storage account name in which the JDK is located. Azure Classic and Resource Manager storage accounts are listed. |
 |`azureContainerName`<br/>Container Name | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the name of the container in the storage account in which the JDK is located.|
 |`azureCommonVirtualFile`<br/> Common Virtual Path | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the path to the JDK inside the Azure storage container. |
-|`jdkDestinationDirectory`<br/> Destination directory | (Required) Specify the destination directory into which the JDK should be installed (only for Windows and Linux). On macOS, this directory is using as a temp folder for extracting .dmg's. In macOS, there is no way to set the directory for installing the JDK. |
+|`jdkDestinationDirectory`<br/> Destination directory | (Required) Specify the destination directory into which the JDK should be installed (only for Windows and Linux). On macOS, this directory is using as a temp folder for extracting .dmg's. |
 |`cleanDestinationDirectory`<br/> Clean destination directory | (Required) Select this option to clean the destination directory before the JDK is extracted into it. <br/>Default value: `true`|
 
 > [!NOTE]
 >
-> If you are using **Java Tool Installer** task on macOS or Linux self-hosted agents agents which are running in Interactive mode you could see the password request in console while task execution. To prevent it you need to update the sudoers file to allow execution of **sudo** command without requesting a password.
-> Follow the next steps to do it:
+> To run **Java Tool Installer** task on macOS it is required the user who is used on the agent to have permission to execute **sudo** command without a password. 
+> Follow the next steps to enable this permission:
 > 1) Run *sudo visudo* command, it will open sudoers file for editing.
 > 2) Go to the bottom of the file and add the following line: *user ALL=(ALL) NOPASSWD: ALL* (Replace *user* by the actual user alias)
 > 3) Save and close the file.
