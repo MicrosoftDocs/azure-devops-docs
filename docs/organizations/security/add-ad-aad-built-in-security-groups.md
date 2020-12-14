@@ -15,7 +15,7 @@ ms.date: 11/16/2020
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-As described in [About security and identity](about-security-identity.md), there are two main types of built-in security groups: project-level and collection-level. In general, you add users and groups to a project-level group such as Contributors and Readers. For users that need to administrate select features and functions, add them or associated groups to the Build Administrators or Project Administrators groups.
+As described in [About security, authentication, and authorization](about-security-identity.md), there are two main types of built-in security groups: project-level and collection-level. In general, you add users and groups to a project-level group such as Contributors and Readers. For users that need to administrate select features and functions, add them or associated groups to the Build Administrators or Project Administrators groups.
 
 Review [Default permissions and access](permissions-access.md) to gain insight into the default permissions provided to the built-in, project-level security groups.  
 
@@ -215,4 +215,4 @@ The method for adding a user or group to a built-in security group is the same, 
 
 - [About permissions and inheritance](about-permissions.md)
 - [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)
-- [About security and identity](about-security-identity.md)
+- [About security, authentication, and authorization](about-security-identity.md)
