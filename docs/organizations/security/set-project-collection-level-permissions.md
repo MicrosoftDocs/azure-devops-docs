@@ -34,7 +34,7 @@ A project collection is the container for several projects that share resources.
 
  
 > [!Note]  
-> The following list indicates the latest groups defined for Azure DevOps and TFS 2017 and later versions. For earlier versions of Azure DevOps, the list may differ. Only add service accounts to [Azure DevOps service account groups](/azure/devops/server/admin/service-accounts-dependencies). To understand valid user groups, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-security-identity.md#validusers). 
+> The following list indicates the latest groups defined for Azure DevOps and TFS 2017 and later versions. For earlier versions of Azure DevOps, the list may differ. Only add service accounts to [Azure DevOps service account groups](/azure/devops/server/admin/service-accounts-dependencies). To understand valid user groups, see [About security, membership, and permissions; Valid user groups](about-permissions.md#validusers). 
 
 > [!div class="mx-tdBreakAll"]  
 > | Project level | Collection level| 

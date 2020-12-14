@@ -1233,7 +1233,7 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 
 ## Related articles
 
-- [About security, permissions, and membership](about-security-identity.md)
+- [About security, authentication, and authorization](about-security-identity.md)
 - [Security Namespaces REST API](/rest/api/azure/devops/security/)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)

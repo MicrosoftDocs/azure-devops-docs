@@ -785,7 +785,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-git-dev-commit-push.png" alt="Commit and push changes"/><br/><br/>
 
 <p><b>Pull requests</b></p>
-<p>Use <a href="../repos/git/pull-requests.md" data-raw-source="[pull requests to review and merge branch code to a master branch](../repos/git/pull-requests.md)">pull requests to review and merge branch code to a master branch</a>.   </p>
+<p>Use <a href="../repos/git/pull-requests.md" data-raw-source="[pull requests to review and merge branch code to a main branch](../repos/git/pull-requests.md)">pull requests to review and merge branch code to a main branch</a>.   </p>
 <p><b>Sync</b></p>
 
 <p>Quickly <a href="../repos/git/pulling.md" data-raw-source="[sync your local branch with a shared repo](../repos/git/pulling.md)">sync your local branch with a shared repo</a>.</p>
@@ -2240,7 +2240,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md)">granted explicit permissions to edit a specific process</a>.  </p>
 
 <p><b>Valid users</b></p>
-<p>Understand how <a href="../organizations/security/about-security-identity.md#validusers" data-raw-source="[valid user groups are populated and the permissions they&#39;re granted](../organizations/security/about-permissions.md#validusers)">valid user groups are populated and the permissions they&#39;re granted</a>.</p>
+<p>Understand how <a href="../organizations/security/about-permissions.md#validusers" data-raw-source="[valid user groups are populated and the permissions they&#39;re granted](../organizations/security/about-permissions.md#validusers)">valid user groups are populated and the permissions they&#39;re granted</a>.</p>
 
 
 <p><b>Permission reference</b></p>
