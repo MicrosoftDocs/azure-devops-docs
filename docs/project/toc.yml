@@ -5,7 +5,7 @@
 - name: Work across projects FAQs
   href: work-across-projects-faqs.md
 - name: Search  
-  href: ./search/toc.yml
+  href: search/toc.yml
 - name: Dashboards
   href: ../report/dashboards/toc.yml
 - name: Analytics
@@ -18,6 +18,22 @@
   href: ../boards/github/toc.yml
 - name: Public Projects
   href: ../organizations/public/toc.yml
+- name: Cross-service Git operations
+  items:
+  - name: Drive Git development from a work item
+    href: ../boards/backlogs/connect-work-items-to-git-dev-ops.md
+  - name: Work item completion on commit
+    href: ../repos/git/resolution-mentions.md
+  - name: Set up continuous integration
+    href: ../pipelines/build/triggers.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  - name: Define a CI build for your repo
+    href: ../pipelines/build/ci-build-git.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  - name: Create a pull request status server
+    href: ../repos/git/create-pr-status-server.md
+  - name: Use Azure Functions to create custom branch policies
+    href: ../repos/git/create-pr-status-server-with-azure-functions.md
+  - name: Configure branch policy for an external service
+    href: ../repos/git/pr-status-policy.md
 - name: Integrations
   items:
   - name: Microsoft Teams
