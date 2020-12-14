@@ -119,7 +119,7 @@ While the main types of accounts of interest are the user accounts that you add 
 
 
 ::: moniker range="azure-devops"
-- **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner. To learn who is the organization owner for your organization, see [Increase your permissions](lookup-organization-owner-admin.md#find-owner). 
+- **Organization owner**: The creator of an Azure DevOps Services organization or assigned owner. To learn who is the organization owner for your organization, see [Increase your permissions; find an admin](lookup-organization-owner-admin.md#find-owner). 
 - **Service accounts**: Internal Azure DevOps accounts used to support a specific service, such as Agent Pool Service, PipelinesSDK. For descriptions of service accounts, see [Security groups, service accounts, and permissions](permissions.md#collection-level groups). 
 - **Service principals**: Internal Azure DevOps accounts to support internal operations. 
 - **Job agents**: Internal accounts used to run specific jobs on a regular schedule.

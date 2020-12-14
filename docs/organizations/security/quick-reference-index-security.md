@@ -28,7 +28,7 @@ As individual contributors to Azure DevOps, learn about how permissions and acce
 - [Default permissions & access](permissions-access.md)   
 - [View permissions](view-permissions.md)   
 - [Trace permissions](faq-trace-permissions.md)   
-- [Increase permission levels](lookup-organization-owner-admin.md)   
+- [Increase permission levels, find an admin](lookup-organization-owner-admin.md)   
 - [Add an alternate account to your Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json)
 
 ::: moniker range="azure-devops"
