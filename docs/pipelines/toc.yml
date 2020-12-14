@@ -273,6 +273,8 @@
     items:
     - name: Linux virtual machines
       href: ecosystems/deploy-linux-vm.md
+    - name: Manage a VM in Azure DevTest Labs
+      href: apps/cd/azure/deploy-provision-devtest-lab.md
   - name: Deploy apps to Azure
     items:
     - name: Use a Resource Manager template to deploy
@@ -343,6 +345,8 @@
       href: targets/cosmos-db.md
     - name: Azure Policy Compliance (Classic)
       href: policies/azure-policy.md
+    - name: Azure VM using Azure Resource Manager (Classic)
+      href: apps/cd/azure/deploy-provision-azure-vm.md
   - name: Deploy apps to VMs (Classic)
     items:
     - name: Linux VMs (Classic)
@@ -383,8 +387,15 @@
     - name: Deployment strategies
       href: ecosystems/kubernetes/deployment-strategies.md
       displayName: canary, strategy, kubernetes, aks, gke, eks
+    - name: Deploy to Kubernetes on Azure Container Service
+      href: release/integrate-jenkins-pipelines-aks.md
+      displayName: cluster, Jenkins, Maven, Docker
   - name: Azure Container Registry
-    href: ecosystems/containers/acr-template.md
+    items:
+    - name: Build and push to Azure Container Registry
+      href: ecosystems/containers/acr-template.md
+    - name: Deploy ASP.NET Core app
+      href: apps/cd/azure/aspnet-core-to-acr.md
   - name: Azure Kubernetes Service
     href: ecosystems/kubernetes/aks-template.md
   - name: Azure Container Service (AKS)
