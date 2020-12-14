@@ -39,10 +39,10 @@ Individual contributors can set their user preferences, enable features that are
    :::column span="1":::
       **Area**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Supported tasks**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Notes**
    :::column-end:::
 :::row-end:::
@@ -52,11 +52,11 @@ Individual contributors can set their user preferences, enable features that are
    :::column span="1":::
       **General**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Set your preferences](set-your-preferences.md)
       - [Enable preview features](../../project/navigation/preview-features.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md)
    :::column-end:::
 :::row-end:::
@@ -67,10 +67,10 @@ Individual contributors can set their user preferences, enable features that are
    :::column span="1":::
       **General**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Set your preferences](set-your-preferences.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md)
    :::column-end:::
 :::row-end:::
@@ -80,11 +80,11 @@ Individual contributors can set their user preferences, enable features that are
    :::column span="1":::
       **Security**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [View permissions](../security/view-permissions.md)
       - [Add an alternate account to your Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md). 
    :::column-end:::
 :::row-end:::
@@ -94,12 +94,12 @@ Individual contributors can set their user preferences, enable features that are
    :::column span="1":::
       **Authentication**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
       - [Authorize access to REST APIs with OAuth 2.0](../../integrate/get-started/authentication/oauth.md)
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
    :::column-end:::
 :::row-end:::
@@ -110,11 +110,11 @@ Individual contributors can set their user preferences, enable features that are
    :::column span="1":::
       **Authentication**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
    :::column-end:::
 :::row-end:::
@@ -125,10 +125,10 @@ Individual contributors can set their user preferences, enable features that are
    :::column span="1":::
       **Authentication**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
    :::column-end:::
 :::row-end:::
@@ -138,10 +138,10 @@ Individual contributors can set their user preferences, enable features that are
    :::column span="1":::
       **Favorites**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Set personal or team favorites](../../project/navigation/set-favorites.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md). 
    :::column-end:::
 :::row-end:::
@@ -151,12 +151,12 @@ Individual contributors can set their user preferences, enable features that are
    :::column span="1":::
       **Notifications**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [View your subscriptions, opt-out as needed](about-settings.md)
       - [Change your preferred email address](../../notifications/change-email-address.md)
       - [Manage personal notifications](../../notifications/manage-your-personal-notifications.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When a project is created, a number of notifications are defined. If you want to opt out of these, you can.
    :::column-end:::
 :::row-end:::
@@ -175,10 +175,10 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column span="1":::
       **Area**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Supported tasks**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Notes**
    :::column-end:::
 :::row-end:::
@@ -187,11 +187,11 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column span="1":::
       **Team profile**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Add users to a project or specific team](../security/add-users-team-project.md)
       - [Add team administrators](about-settings.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Members of a team are included within the team group, which can be used in queries and **\@mentions** in pull requests and work item discussions.
    :::column-end:::
 :::row-end:::
@@ -201,7 +201,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column span="1":::
      **Boards, Team configuration**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Backlog levels](select-backlog-navigation-levels.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Show bugs on backlogs & boards](show-bugs-on-backlog.md)
       - [Set working days](set-working-days.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
@@ -209,7 +209,7 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
       - [Select active iteration paths (sprints)](set-iteration-paths-sprints.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Define work item templates](../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view - [Columns](../../boards/boards/add-columns.md), [Swimlanes](../../boards/boards/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../boards/boards/wip-limits.md). 
    :::column-end:::
 :::row-end:::
@@ -220,14 +220,14 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column span="1":::
       **Boards, Team configuration**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Show bugs on backlogs & boards](show-bugs-on-backlog.md)
       - [Set working days](set-working-days.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Configure area paths](set-area-paths.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Select active iteration paths (sprints)](set-iteration-paths-sprints.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
       - [Define work item templates](../../boards/backlogs/work-item-template.md?toc=/azure/devops/organizations/settings/toc.json&amp;bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view - [Columns](../../boards/boards/add-columns.md) and [WIP limits](../../boards/boards/wip-limits.md). 
    :::column-end:::
 :::row-end:::
@@ -238,11 +238,11 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column span="1":::
       **Dashboards**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Create team dashboards](../../report/dashboards/dashboards.md)
       - [Set default team dashboard permissions, manage dashboard permissions](../../report/dashboards/dashboard-permissions.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team.
    :::column-end:::
 :::row-end:::
@@ -253,10 +253,10 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column span="1":::
       **Dashboards**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Create team dashboards](../../report/dashboards/dashboards.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team.
    :::column-end:::
 :::row-end:::
@@ -266,10 +266,10 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
    :::column span="1":::
       **Notifications**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Many team notifications are automatically defined when a team is added. For more information about how notifications are managed, see [About notifications](../../notifications/about-notifications.md).
    :::column-end:::
 :::row-end:::
@@ -315,10 +315,10 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
      **Area**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Supported tasks**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       **Notes**
    :::column-end:::
 :::row-end:::
@@ -328,11 +328,11 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **General**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Set project description
       - [Change the project visibility, public or private](../public/make-project-public.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Update the project description or change its visibility.
    :::column-end:::
 :::row-end:::
@@ -343,10 +343,10 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **General**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - Set project description
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Update the project description or change its visibility.
    :::column-end:::
 :::row-end:::
@@ -357,10 +357,10 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Services**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Turn a service on or off](set-services.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Services that aren't use by project members can be disabled so that they don't appear in the web portal. Turning off a service removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn on the service.
    :::column-end:::
 :::row-end:::
@@ -370,11 +370,11 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Teams**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Add another team and team members](add-teams.md)
       - [Add a team administrator](add-team-administrator.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       A default team is created when you create a project. You add a team when you want to provide a group of users in your organization a set of Agile tools, which they have full ownership to configure and manage. Teams have access to a product backlog, portfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more. For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md). 
    :::column-end:::
 :::row-end:::
@@ -384,7 +384,7 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Security**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Add user to a project](../security/add-users-team-project.md)
       - [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
       - [Grant or restrict access to select features](../security/restrict-access.md)
@@ -392,8 +392,8 @@ From the administrative **Project settings** page, you can configure settings av
       - [Manage project-level permissions](../security/permissions.md#project-level-permissions)
       - [Set build and release permissions](../../pipelines/policies/set-permissions.md)
    :::column-end:::
-   :::column span="1":::
-      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
+   :::column span="2":::
+      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -403,15 +403,15 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Security**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Add user to a project](../security/add-users-team-project.md)
       - [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
       - [Grant or restrict access to select features](../security/restrict-access.md)
       - [Add administrators](add-team-administrator.md)
       - [Manage project-level permissions](../security/permissions.md#project-level-permissions)
    :::column-end:::
-   :::column span="1":::
-      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
+   :::column span="2":::
+      Project Administrators can add users to a project or a team. When you add a user to a team, you automatically add them to the project. Users added to a project can only view and contribute to that specific project. For an overview of security concepts, see [About permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of project-level permissions, see [Permissions and groups reference, Project-level permissions](../security/permissions.md#project-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -420,10 +420,10 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Notifications**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Manage project-level notifications](../../notifications/manage-team-group-global-organization-notifications.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Many project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-group-global-organization-notifications.md).
    :::column-end:::
 :::row-end:::
@@ -433,10 +433,10 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Service hooks**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Configure service hooks](../../service-hooks/overview.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       With service hooks, you can automate a task on other services, such as [Campfire, Flowdock, HipChat, and more](../../service-hooks/overview.md). You can use service hooks in custom apps and services to drive activities as events happen.
    :::column-end:::
 :::row-end:::
@@ -445,10 +445,10 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Dashboards**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Set default dashboard permissions](../../report/dashboards/dashboard-permissions.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       New dashboards added to a project inherit the default dashboard permissions. The default permissions allow team members to create and edit dashboards for their team.
    :::column-end:::
 :::row-end:::
@@ -458,11 +458,11 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Boards, Project configuration**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Define area paths](set-area-paths.md)
       - [Define iteration paths or sprints](set-iteration-paths-sprints.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Area and iteration paths set at the project level are then used to set team defaults. To configure additional product backlogs, Kanban boards, and dashboards, you first [add a team](add-teams.md).
    :::column-end:::
 :::row-end:::
@@ -472,13 +472,13 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Build and release (Agent Pools, Release)**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Manage Agent queues and agent pools](../../pipelines/agents/pools-queues.md)
       - [Manage service connections](../../pipelines/library/service-endpoints.md)
       - [Manage deployment pools and groups](../../pipelines/release/deployment-groups/index.md)
       - [Set retention policies](../../pipelines/policies/retention.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Area and iteration paths set at the project level are then used to set team defaults. To configure additional product backlogs, Kanban boards, and dashboards, you first [add a team](add-teams.md).
    :::column-end:::
 :::row-end:::
@@ -488,13 +488,13 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Repos, Code version control**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Create additional Git repositories](../../repos/git/creatingrepo.md)
       - [Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)
       - [Manage branch policies](../../repos/git/branch-policies.md)
       - [Add Team Foundation Version Control (TFVC) Check-In Policies](../../repos/tfvc/add-check-policies.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       You can manage code using [Git repositories](../../repos/git/index.yml) or one [TFVC repository.](../../repos/tfvc/index.yml).
    :::column-end:::
 :::row-end:::
@@ -504,12 +504,12 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Test**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Set test retention policies](../../test/how-long-to-keep-test-results.md)
       - [Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)
       - [Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. You can customize the test plans, test suites, and test cases using an inherited process. For more information, see [Customize a process](work/customize-process.md).
    :::column-end:::
 :::row-end:::
@@ -520,11 +520,11 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Test**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)
       - [Set area path-level test permissions](../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Manual testing relies on work item types to create and manage test plans, test suites, test cases, shared steps, and shared parameters. You can customize the test plans, test suites, and test cases using an inherited process. For more information, see [Customize a process](work/customize-process.md).
    :::column-end:::
 :::row-end:::
@@ -535,12 +535,12 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Wiki**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Create a wiki for your project](../../project/wiki/wiki-create-repo.md)
       - [Publish a Git repository to a wiki](../../project/wiki/publish-repo-to-wiki.md)
       - [Manage README and Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       To share information with your team, you can use Markdown format within a project Wiki, within your project README file, or other repository README file. For more information, see [About READMes and Wikis](../../project/wiki/about-readme-wiki.md).
    :::column-end:::
 :::row-end:::
@@ -551,10 +551,10 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Wiki**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Manage README and Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       To share information with your team, you can use Markdown format within a project Wiki, within your project README file, or other repository README file. For more information, see [About READMes and Wikis](../../project/wiki/about-readme-wiki.md).
    :::column-end:::
 :::row-end:::
@@ -565,10 +565,10 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Extensions**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Request a Marketplace extension](../../marketplace/request-extensions.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       Individual contributors and project administrators can request a Marketplace extension is installed. Only members of the Project Collection Administrators group can respond to these requests and actually install extensions.
    :::column-end:::
 :::row-end:::
@@ -578,11 +578,11 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Team configuration**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Manage and configure team tools](manage-teams.md)
       - [Manage notifications](../../notifications/manage-team-group-global-organization-notifications.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       For more information, see [About teams and Agile tools](about-teams-and-settings.md).
    :::column-end:::
 :::row-end:::
@@ -592,12 +592,12 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **GitHub connections**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Connect Azure Boards to GitHub](../../boards/github/connect-to-github.md)
       - [Install and configure Azure Boards app for GitHub](../../boards/github/install-github-app.md)
       - [Link GitHub commits, pull requests, and issues to work items](../../boards/github/link-to-from-github.md)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       By connecting your Azure Boards project with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.
    :::column-end:::
 :::row-end:::
@@ -607,10 +607,10 @@ From the administrative **Project settings** page, you can configure settings av
    :::column span="1":::
       **Service connections**
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       - [Manage service connections in Azure Pipelines](../../pipelines/library/service-endpoints.md#project-level-permissions)
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       For more information, see a [list of common service connection types](../../pipelines/library/service-endpoints.md#common-service-connection-types).
    :::column-end:::
 :::row-end:::
@@ -620,7 +620,7 @@ From the administrative **Project settings** page, you can configure settings av
 
 ## Project Collection Administrator (PCA) role and managing collections of projects 
 
-Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) configure resources for all projects that are defined for an organization or collection. They also can do all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
+Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) configure resources for all projects that are defined for an organization or collection. They also can do all tasks to add projects, manage projects, and manage permissions for the collection, a project, a team, or an object.   
 
 ::: moniker range="azure-devops"
   
@@ -684,7 +684,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       **Preview features**
    :::column-end:::
    :::column span="2":::
-      - [Enable preview features](../../project/navigation/preview-features.md)
+      - [Manage and enable preview features](../../project/navigation/preview-features.md)
    :::column-end:::
    :::column span="2":::
       Organization administrators can enable or disable organization-level or collection-level features that are in preview.
@@ -819,7 +819,8 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       **Security: Policies**
    :::column-end:::
    :::column span="2":::
-      - [Change application access policies](../accounts/change-application-access-policies.md)
+      - [Manage application access policies](../accounts/change-application-access-policies.md)
+      - [Add external users](../accounts/add-external-user.md)   
       - [Disable Request Access policy](../accounts/disable-request-access-policy.md)
       - [Restrict users from creating new organizations with Azure Active Directory policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
       - [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
@@ -839,13 +840,13 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column span="2":::
       - [Change individual permissions](../security/change-individual-permissions.md)
       - [Grant or restrict access to select features](../security/restrict-access.md)
-      - [Add administrators](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
+      - [Add administrators, set organization-level permissions](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
       - [Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)
       - [Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)
       - [Manage conditional access](../accounts/change-application-access-policies.md)
    :::column-end:::
    :::column span="2":::
-      For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
+      For an overview of security concepts, see [About permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -858,10 +859,10 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
    :::column span="2":::
       - [Change individual permissions](../security/change-individual-permissions.md)
       - [Grant or restrict access to select features](../security/restrict-access.md)
-      - [Add administrators](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
+      - [Add administrators, set collection-level permissions](../security/set-project-collection-level-permissions.md#add-a-user-or-group-to-a-security-group)
    :::column-end:::
    :::column span="2":::
-      For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
+      For an overview of security concepts, see [About permissions, access, and security groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#organization-level-permissions).
    :::column-end:::
 :::row-end:::
 ---
@@ -924,7 +925,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [View Artifact storage](../../artifacts/start-using-azure-artifacts.md#view-artifact-and-billed-storage)
    :::column-end:::
    :::column span="2":::
-     Each organization gets Azure Artifacts for free, up until 2 GiB of storage is reached. For more information, see [Pay for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#pay-for-azure-artifacts).
+     Each organization gets Azure Artifacts for free, up until 2 GB of storage is reached. For more information, see [Pay for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md#pay-for-azure-artifacts). 
    :::column-end:::
 :::row-end:::
 ---
