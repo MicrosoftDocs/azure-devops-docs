@@ -226,7 +226,7 @@ additionalContent:
             - url: ./report/index.yml
               text: "See more >"
         # Card
-        - title: Collaborate
+        - title: Cross-platform & Collaboration
           links:
             - url: ./project/wiki/wiki-create-repo.md
               text: Create a wiki for your project
