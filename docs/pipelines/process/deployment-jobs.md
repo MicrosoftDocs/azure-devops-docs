@@ -3,7 +3,7 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 08/19/2020
+ms.date: 12/15/2020
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -52,8 +52,7 @@ jobs:
   strategy:
     runOnce:    #rolling, canary are the other strategies that are supported
       deploy:
-        steps:
-        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+        steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
 ## Deployment strategies

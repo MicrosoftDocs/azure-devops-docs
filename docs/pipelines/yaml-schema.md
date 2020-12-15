@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 11/02/2020
+ms.date: 12/15/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -495,8 +495,7 @@ jobs:
   strategy:
     runOnce:    #rolling, canary are the other strategies that are supported
       deploy:
-        steps:
-        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+        steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
 # [Example](#tab/example)
