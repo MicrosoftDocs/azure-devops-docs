@@ -4,9 +4,10 @@ titleSuffix: Azure DevOps
 description: Get personally notified, alerts, when changes occur to source code, git, work items, and builds in Azure DevOps.
 ms.technology: devops-collab
 ms.assetid: 644687b3-e30e-46b0-8d3e-3d4a4e34d13a
+ms.custom: contperf-fy21q2
+ms.topic: How-to
 ms.author: chcomley
 author: chcomley
-ms.topic: How-to
 ms.date: 12/15/2020
 monikerRange: '<= azure-devops'
 ---
