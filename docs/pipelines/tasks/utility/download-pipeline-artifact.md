@@ -7,7 +7,7 @@ ms.manager: hdixon
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 01/23/2020
+ms.date: 12/15/2020
 monikerRange: azure-devops
 ---
 
@@ -23,6 +23,9 @@ Use this task to download pipeline artifacts from earlier stages in this pipelin
 ## YAML snippet
 
 [!INCLUDE [temp](../includes/yaml/DownloadPipelineArtifactV2.md)]
+
+> [!NOTE]
+> In addition to the full syntax, you can use `publish` and `download` shortcuts in your pipeline to publish and download artifacts. For more information, see [Publish](../../yaml-schema.md#publish) and [Download](../../yaml-schema.md#download) in the [YAML schema reference](../../yaml-schema.md).
 
 ::: moniker-end
 

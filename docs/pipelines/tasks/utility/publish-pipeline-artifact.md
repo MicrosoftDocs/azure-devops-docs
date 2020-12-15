@@ -6,7 +6,7 @@ ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 10/07/2019
+ms.date: 12/15/2020
 monikerRange: azure-devops
 ---
 
@@ -26,6 +26,9 @@ None
 ## YAML snippet
 
 [!INCLUDE [temp](../includes/yaml/PublishPipelineArtifactV1.md)]
+
+> [!NOTE]
+> In addition to the full syntax, you can use `publish` and `download` shortcuts in your pipeline to publish and download artifacts. For more information, see [Publish](../../yaml-schema.md#publish) and [Download](../../yaml-schema.md#download) in the [YAML schema reference](../../yaml-schema.md).
 
 ## Arguments
 
