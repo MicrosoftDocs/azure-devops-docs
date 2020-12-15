@@ -30,7 +30,7 @@ You create a new pipeline by first selecting **Bitbucket Cloud** for repository 
 
 ---
 
-Azure Pipelines must be granted access to your repositories to trigger their builds, and fetch their code during builds.
+Azure Pipelines must be granted access to your repositories to fetch the code during builds. In addition, the user setting up the pipeline must have admin access to Bitbucket, since that identity is used to register a webhook in Bitbucket.
 
 There are 2 authentication types for granting Azure Pipelines access to your Bitbucket Cloud repositories while creating a pipeline.
 
