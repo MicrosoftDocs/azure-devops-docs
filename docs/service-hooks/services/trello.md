@@ -33,9 +33,7 @@ Create a Trello card or list from an Azure DevOps Services event.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Go to your project Service Hooks page: 
-
-	`https://{orgName}/{project_name}/_settings/serviceHooks`
+1. Go to your project Service Hooks page by choosing **Project settings**, **Service hooks**.
 
 	![Project administration page](./media/add-devops-service-hook.png)
 
