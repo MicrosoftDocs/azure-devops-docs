@@ -78,6 +78,51 @@ This is the branch that you want to be the default when you manually queue this 
 
 ::: moniker range=">= tfs-2017"
 
+#### [YAML](#tab/yaml/)
+
+### Azure Pipelines, Azure DevOps Server 2019 and newer
+
+There are several different clean options available for YAML pipelines.
+
+* The `checkout` step has a `clean` option. When set to `true`, the pipeline runs `execute git clean -ffdx && git reset --hard HEAD` before fetching the repo. For more information, see [Checkout](../yaml-schema.md#checkout).
+* The `workspace` setting for `job` has multiple clean options (outputs, resources, all). For more information, see [Workspace](../process/phases.md#workspace).
+* The pipeline settings UI has a **Clean** setting, that when set to true is equivalent of specifying `clean: true` for every `checkout` step in your pipeline. To configure the **Clean** setting:
+  1. Edit your pipeline, choose **...**, and select **Triggers**.
+
+    :::image type="content" source="../process/media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
+
+2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**. 
+
+    :::image type="content" source="../process/media/clean-setting.png" alt-text="Clean setting."::: 
+
+To override clean settings when manually running a pipeline, you can use [runtime parameters](../process/runtime-parameters.md). In the following example, a runtime parameter is used to configure the checkout clean setting.
+
+```yml
+parameters:
+- name: clean
+  displayName: Checkout clean
+  type: boolean
+  default: false
+  values:
+  - false
+  - true
+
+trigger:
+- main
+
+pool: FabrikamPool
+#  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: self
+  clean: ${{ parameters.clean }}
+```
+
+By default, `clean` is set to `false` but can be overridden when manually running the pipeline by checking the **Checkout clean** checkbox that is added for the runtime parameter.
+
+
+#### [Classic](#tab/classic/)
+
 ### Azure Pipelines, TFS 2018, TFS 2017.2, TFS 2017.3
 
 [//]: # (TODO: build.clean variable still works and overrides if clean is set to false)
@@ -95,6 +140,10 @@ Select one of the following options:
 * **Sources directory**: Deletes and recreates `$(Build.SourcesDirectory)`. This results in initializing a new, local Git repository for every build.
 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
+
+* * *
+
+
 
 ::: moniker-end
 
