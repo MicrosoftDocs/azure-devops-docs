@@ -140,7 +140,7 @@ Open a work item and choose the **Links** tab. From the links control tab you ca
 
 The work item form opens in the web portal for Visual Studio 2017 and later versions. Work items aren't available from Visual Studio 2019 under the following conditions:   
 * If you are connected to a GitHub or third-party Git repository. 
-* If you are set to use the new Git Tool for Visual Studio 2019 as described in [New Git experience in Visual Studio (Preview)](/visualstudio/ide/git-with-visual-studio).  
+* If you are set to use the new Git Tool for Visual Studio 2019 as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
  
  
 

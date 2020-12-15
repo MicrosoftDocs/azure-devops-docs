@@ -1,7 +1,7 @@
 ---
 title: Create a project
 titleSuffix: Azure DevOps
-ms.custom: seodec18, contentperfq4, devx-track-azurecli
+ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Learn how to create a new project where your team can plan, track progress, and collaborate on building software solutions.
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.technology: devops-accounts
@@ -28,7 +28,7 @@ This article describes how to use Azure DevOps to create a project and establish
 
 [!INCLUDE [version-selector](../../includes/version-selector-minimize.md)]
 
-If you don't want to create a project in Azure DevOps or TFS, you can create [Azure DevOps Projects](/azure/devops-project/).
+If you don't want to create a project in Azure DevOps, you can create [Azure DevOps Projects](/azure/devops-project/).
 
 <!---Projects differ from [software application projects or solutions](/visualstudio/ide/creating-solutions-and-projects). -->  
 
@@ -58,11 +58,11 @@ If you don't want to create a project in Azure DevOps or TFS, you can create [Az
 
 - You create a project within a project collection. If you haven't created a project collection yet, do that now. For more information, see [Create a project collection](/azure/devops/server/admin/manage-project-collections?view=tfs-2017#create-a-project-collection&preserve-view=true ).
 - You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
-- Ask your TFS administrator about the following resources and get additional permissions as needed:
+- Ask your administrator about the following resources and get additional permissions as needed:
 
     - Which project collection should you connect to when you create your project? If you installed TFS using the Basic Server Configuration Wizard, you have only one project collection named **DefaultCollection**. Unless you support hundreds of projects, you should create all your projects within a single project collection. If you need to create additional collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
 
-    - Have you configured SQL Server Analysis Services and SQL Server Reporting Services for the deployment? If so, ask your administrator to add you as a member of the Team Foundation Content Managers group. You must be a member of this group on the server that hosts SQL Server Reporting Services. Without these permissions, you can't create a project. For more information, see [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
+    - Have you configured SQL Server Analysis Services and SQL Server Reporting Services for the deployment? If so, ask your administrator to add you as a member of the Team Foundation Content Managers group. You must be a member of this group on the server that hosts SQL Server Reporting Services. Without these permissions, you can't create a project. For more information, see [Grant permissions to view or create SQL Server reports](../../report/admin/grant-permissions-to-reports.md).
 
     - Have you configured a SharePoint Web application for your deployment? You can configure a SharePoint portal when you create your project. To do so, contact your SharePoint administrator to give you Full Control permissions on the server that hosts SharePoint Products. Otherwise, you can skip this step and configure a portal at a later time.
 
@@ -209,7 +209,7 @@ Choose the **Preview page** tab for instructions.
    On completion, the project summary displays. For more information, see [Share your project, view project activity](project-vision-status.md).
 
    > [!div class="mx-imgBorder"]  
-   > ![New Project TFS 2017](media/create-project/new-team-project-tfs-2017.png)
+   > ![New Project 2017](media/create-project/new-team-project-tfs-2017.png)
 
 ::: moniker-end
 
@@ -464,7 +464,7 @@ Choose the **Preview page** tab for information.
 
 ::: moniker range="<= tfs-2017"  
 
-Open the administration overview page by choosing the gear button and choose **Collection settings**. ![Settings button (TFS Web Portal)](../../media/icons/gear-icon.png)
+Open the administration overview page by choosing the gear button and choose **Collection settings**. ![Settings button (Web Portal)](../../media/icons/gear-icon.png)
 
 > [!div class="mx-imgBorder"]  
 > ![Overview tab, Project list, Collection settings](media/create-project/list-projects-2017.png)
@@ -630,4 +630,4 @@ From the admin context of the web portal, you can add additional repositories to
 - [Team Foundation version control](../../repos/tfvc/index.yml)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 - [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md)
-- [New Git experience in Visual Studio (Preview)](/visualstudio/ide/git-with-visual-studio)
+- [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio)

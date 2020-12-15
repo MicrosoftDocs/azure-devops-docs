@@ -665,9 +665,9 @@ The work item type definition language includes the concept of a *field referenc
 
 Field reference names cannot be renamed. If for example, you changed the field name "Title" to "Header", the field reference name of that field remains the same. Integrations and internal representations of fields should use the field reference name instead of depending on the field name itself.  
  
-The System namespace is used only to define all core system fields that are mandatory for Team Foundation system functions. Team Foundation Server prevents you from creating your own System.X field because it might impede Team Foundation Server functionality.  
+The System namespace is used only to define all core system fields that are mandatory for Team Foundation system functions. You're prevented from creating your own System.X field because it might impede functionality.  
 
-The Microsoft namespace is used to define work item tracking fields. These fields are defined in a work item type definition of the TFS process templates. TFS doesn't prevent you from creating your own Microsoft.X field. However, we discourage creating your own field because it might impede TFS functionality or the ability for the Configure Features wizard to successfully update a project after an upgrade.   
+The Microsoft namespace is used to define work item tracking fields. These fields are defined in a work item type definition of the process templates. You're not prevented from creating your own Microsoft.X field. However, we discourage creating your own field because it might impede functionality or the ability for the Configure Features wizard to successfully update a project after an upgrade.   
 
 Customers and partners can create their own field namespaces for custom work item types.  
 

@@ -1,6 +1,6 @@
 ---
 title: Service hooks event reference | Azure DevOps Services
-description: Events supported by Azure DevOps Services and Team Foundation Server
+description: Events supported by Azure DevOps.
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.technology: devops-collab
 ms.topic: conceptual

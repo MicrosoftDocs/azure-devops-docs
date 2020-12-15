@@ -2,7 +2,7 @@
 title: Delete, remove project
 titleSuffix: Azure DevOps
 ms.custom: seodec18, devx-track-azurecli
-description: Delete or remove a project from Azure DevOps or Team Foundation Server
+description: Delete or remove a project from Azure DevOps.
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.technology: devops-accounts
 ms.topic: conceptual
@@ -130,7 +130,7 @@ Using the administration console, you can delete a project from a project collec
 
     - Farm Administrators group for SharePoint Products (required when your deployment uses SharePoint Products).
 
-2. Open the administration console for TFS and delete the project from its project collection.
+2. Open the administration console and delete the project from its project collection.
 
     ![project collection delete button](media/delete-project/ic686856.png)
 

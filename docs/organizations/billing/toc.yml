@@ -10,8 +10,6 @@
   href: buy-more-build-vs.md
 - name: Buy Azure Artifacts
   href: ../../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Buy cloud-based load testing
-  href: buy-load-testing-vs.md 
 - name: Manage billing
   items:
   - name: Add user who can set up billing

@@ -28,5 +28,8 @@
     href: azure-ad-tenant-policy-restrict-org-creation.md
   - name: Resolve orphaned organization
     href: resolve-orphaned-organization.md
-
+- name: FAQs
+  items:
+  - name: Create and configure an organization
+    href: faq-configure-customize-organization.md
 

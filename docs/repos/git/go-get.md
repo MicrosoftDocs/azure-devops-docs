@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to use Go get command  with Azure Repos Git
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 12/15/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -43,6 +43,9 @@ go get dev.azure.com/<organization>/<project>/_git/<repo>/subfolder1/subfolder2
 
 If your Azure DevOps Git repo is private, you can either use SSH or authenticate with a Personal Access Token (PAT) for HTTPS.
 
+> [!IMPORTANT]
+> To access private Azure Repos Git repositories using go get, you must first set the environment variable `GOPRIVATE=dev.azure.com`. You can set this environment variable locally before building or running.
+
 ### SSH
 
 To use SSH with `go get`, you must have SSH keys set up for Azure DevOps as described in [Use SSH Key authentication](use-ssh-keys-to-authenticate.md).
@@ -73,6 +76,8 @@ After you create the PAT, add this entry to your .gitconfig file:
 [url "https://<user>:<token>@dev.azure.com/<organization>/<project>/_git/<repo>"]
     insteadOf = https://dev.azure.com/<organization>/<project>/_git/<repo>
 ```
+
+The `<user>` part can be any non-empty string; we suggest the word `pat`.
 
 With this entry and a specific URL format, you can now use `go get`.
 

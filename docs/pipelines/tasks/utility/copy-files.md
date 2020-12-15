@@ -122,6 +122,15 @@ steps:
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 
+**Example with variables in content section**
+
+```yaml
+- task: CopyFiles@2
+  inputs:
+    Contents: '$(Build.Repository.LocalPath)/**' 
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+```
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"

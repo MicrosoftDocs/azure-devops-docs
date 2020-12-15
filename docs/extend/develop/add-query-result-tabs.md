@@ -1,6 +1,6 @@
 ---
 title: Add tabs on query results | Extensions for Azure DevOps
-description: Extend Azure DevOps and Team Foundation Server (TFS) with your own query results tab.
+description: Extend Azure DevOps with your own query results tab.
 ms.assetid: b3a55a38-f4c0-464f-b689-86582c430b84
 ms.technology: devops-ecosystem
 ms.topic: conceptual
@@ -16,7 +16,7 @@ ms.date: 05/15/2018
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
-If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps and TFS as a tab on the query result pages.
+If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps as a tab on the query result pages.
 In this example, we'll add a simple Hello World tab on query results.
 
 ![Tab location on the Azure DevOps Query Results](/previous-versions/azure/devops/docs/extend/reference/targets/vss/work/web/media/queryResultsPivotTab.png)

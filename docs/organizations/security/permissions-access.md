@@ -102,7 +102,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 ### Delivery plans feature access
 
-[Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access. 
+[Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team.  
 
 [!INCLUDE [temp](includes/boards-plans.md)]
 
@@ -249,39 +249,29 @@ You can define and manage manual tests from the web portal, **Test Plans** or **
 ::: moniker range=">= azure-devops-2019" 
 
 ## Azure Artifacts
-
-You can manage feeds from the web portal, **Artifacts** or **Build and release > Packages**. Feeds have three permission levels: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any permission level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
-
 ::: moniker-end
 
 ::: moniker range="azure-devops" 
 
-Users granted Stakeholder or Basic access, or higher can access Azure Artifacts features. 
-::: moniker-end
+You can manage feeds from the web portal, **Artifacts**. Users granted Stakeholder or Basic access, or higher can access Azure Artifacts features. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
+::: moniker-end
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020" 
 
-Users granted Basic access or higher can access Azure Artifacts features. Users granted Stakeholder access have no access to Azure Artifacts.  
+You can manage feeds from the web portal, **Artifacts**. Users granted Basic access or higher can access Azure Artifacts features. Users granted Stakeholder access have no access to Azure Artifacts.  To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md). 
 
 ::: moniker-end
-
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 ## Package management
 
-You can manage feeds from the web portal, **Build and release > Packages**.  Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
-
-Users granted Basic access or higher can access Package management features. Users granted Stakeholder access have no access.  
+You can manage feeds from the web portal, **Build and release > Packages**. Users granted Basic access or higher can access Package management features. Users granted Stakeholder access have no access. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
 ::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 [!INCLUDE [temp](includes/package-feeds.md)]
-
-::: moniker-end
 
 
 ## Notifications, alerts, and team collaboration tools 

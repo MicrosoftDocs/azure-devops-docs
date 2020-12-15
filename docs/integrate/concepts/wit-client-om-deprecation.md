@@ -52,7 +52,7 @@ We have also put together this handy [migration guide](./migration-guide.md) wit
 
 - [Migration Guide](./migration-guide.md)
 - [Azure DevOps Services REST API Reference](../index.md)
-- [.NET client libraries for Azure DevOps Services (and TFS)](./dotnet-client-libraries.md)
+- [.NET client libraries for Azure DevOps](./dotnet-client-libraries.md)
 - [Understanding Rate limits](./rate-limits.md?tabs=new-nav)
 - [Integration Best Practices](./integration-bestpractices.md)
 - [Sample Code on GitHub](https://github.com/Microsoft/vsts-dotnet-samples)
