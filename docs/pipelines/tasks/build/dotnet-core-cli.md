@@ -165,12 +165,25 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet publish'
   inputs:
-    command: publish
+    command: 'publish'
     publishWebProjects: false
     projects: '**/*.csproj'
     arguments: '-o $(Build.ArtifactStagingDirectory)/Output'
     zipAfterPublish: true
     modifyOutputPath: true
+```
+## Restore
+
+```YAML
+#Restore packages with the .NET Core CLI task
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet restore'
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    feedRestore: 'projectName/feedName'
+    projects: '**/*.csproj'
+    includeNuGetOrg: true
 ```
 
 ## Test
