@@ -18,7 +18,7 @@ If you have both Azure Pipelines and GitHub Actions workflows, you may want to t
 ## Prerequisites
 
 - A working Azure pipeline. [Create your first pipeline](../create-first-pipeline.md). 
-- A GitHub account with a repository. [Join GitHub](https://github.com/join) and [create a repository](https://docs.github.com/en/github/getting-started-with-github/create-a-repo). 
+- A GitHub account with a repository. [Join GitHub](https://github.com/join) and [create a repository](https://docs.github.com/github/getting-started-with-github/create-a-repo). 
 - An Azure DevOps personal access token (PAT) to use with your GitHub action. [Create a PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ## Create a GitHub secret
@@ -28,7 +28,7 @@ If you have both Azure Pipelines and GitHub Actions workflows, you may want to t
     :::image type="content" source="media/github-repo-settings.png" alt-text="Select Settings in GitHub":::
 
 
-1. Select **Secrets** and then **New Secret**.
+1. Select **Secrets** and then **New repository secret**.
 
     :::image type="content" source="media/select-secrets.png" alt-text="Choose to add a secret":::
 
@@ -39,38 +39,19 @@ If you have both Azure Pipelines and GitHub Actions workflows, you may want to t
 
 ## Add a GitHub workflow
 
-1. Open your GitHub repository and select **Actions**.
+1. In your repository on GitHub, create a new YAML file in the .github/workflows directory.
 
-    :::image type="content" source="media/github-actions-header.png" alt-text="Select Actions in the GitHub navigation"::: 
-
-1. Select _Set up your workflow yourself_. 
-
-1. Delete everything after `branches: [ master ]`. Your remaining workflow should look like this. 
+1. Copy the following contents into your YAML file. Customize the `azure-devops-project-url` and  `azure-pipeline-name` values. 
 
     ```yaml
     name: CI
 
+    # Run this workflow every time a commit is pushed to main or a pull request is opened against main
     on:
     push:
-        branches: [ master ]
+        branches: [ main ]
     pull_request:
-        branches: [ master ]
-    ```
-
-1. Select the **Azure Pipelines Action** in the Marketplace.  
-
-    :::image type="content" source="media/marketplace-pipelines.png" alt-text="GitHub Actions Marketplace":::
-
-1. Copy this workflow and replace the contents of your GitHub Actions workflow file. Customize the `azure-devops-project-url` and  `azure-pipeline-name` values. Your complete workflow should look like this. 
-
-    ```yaml
-    name: CI
-
-    on:
-    push:
-        branches: [ master ]
-    pull_request:
-        branches: [ master ]
+        branches: [ main ]
 
     jobs:
         build:
@@ -85,18 +66,20 @@ If you have both Azure Pipelines and GitHub Actions workflows, you may want to t
                 azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
     ```
 
-1. On the **Actions** page, verify that your workflow ran. Select the workflow title to see more information about the run. You should see a green check mark for the Azure Pipelines Action. Open the Action to see a direct link to the pipeline run. 
+1. Commit and push your workflow file.
+
+1. The workflow will run every time a commit is pushed to main or a pull request is opened against main. To verify that your action ran, open your GitHub repository and select **Actions**.
+
+    :::image type="content" source="media/github-actions-header.png" alt-text="Select Actions in the GitHub navigation"::: 
+
+1. Select the workflow title to see more information about the run. You should see a green check mark for the Azure Pipelines Action. Open the Action to see a direct link to the pipeline run. 
 
     :::image type="content" source="media/pipeline-run-from-github.png" alt-text="GitHub Actions detailed run":::
 
 ## Clean up resources
 
-If you're not going to continue to use the GitHub Action, delete the workflow with the following steps:
+If you're not going to continue to use the GitHub Action, [disable the workflow](https://docs.github.com/actions/managing-workflow-runs/disabling-and-enabling-a-workflow).
 
-1. Open _.github/workflows_ in your GitHub repository.
-1. Open the workflow you created and **Delete**.
-
-    :::image type="content" source="media/github-delete.png" alt-text="Delete the GitHub workflow":::
 
 ## Next steps
 
