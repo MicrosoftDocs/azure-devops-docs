@@ -170,12 +170,13 @@ When you filter through audit events, it’s best to use the *area* and *categor
 | Release        |  Create, delete, modify, approval complete, and deployment complete for a release.          |
 | OrganizationPolicy | Changes to organization policies (for example, no basic authentication).           |
 | Organization   | Rename, change owner, link to Azure Active Directory (Azure AD), and unlink from Azure AD.            |
-|Security     | Modify security permissions, create group, delete group, update group, add member to group, and remove member from group.       |
-|Agile     |Process, create, delete, and modify.         |
-|Notification    |Create, remove, and modify a subscription.         |
-|Git        | Branch policies, and create, delete, and rename repository. |
-|Billing        | Adding, changing and removing Azure Subscription for billing, Changes to billing quantities (pipelines, artifacts and cloud load test)  |
-
+| Security     | Modify security permissions, create group, delete group, update group, add member to group, and remove member from group.       |
+| Agile     |Process, create, delete, and modify.         |
+| Notification    |Create, remove, and modify a subscription.         |
+| Git        | Branch policies, and create, delete, and rename repository. |
+| Billing        | Adding, changing and removing Azure Subscription for billing, Changes to billing quantities (pipelines, artifacts and cloud load test)  |
+| User | Sign-in events or access events of PAT and SSH |
+| Token / Authentication | Create, update, and removal/revocation Personal Access Tokens (PATs) or SSH Key. |
 
 
 ### Filtering tips
