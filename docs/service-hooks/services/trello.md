@@ -68,9 +68,7 @@ either create a card or a list.
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-1. Go to your project Service Hooks page: 
-
-    `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+1. Go to your project Service Hooks page by choosing **Settings**, **Service Hooks**.
 
 	![Project administration page](./media/add-service-hook.png)
 
