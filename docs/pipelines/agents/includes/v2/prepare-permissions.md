@@ -63,7 +63,7 @@ Learn more about [how agents communicate](../../agents.md#communication).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range=">= tfs-2017 <= azure-devops"
 
 4. For the scope select **Agent Pools (read, manage)** and make sure all the other boxes are cleared.
    If it's a [deployment group](../../../release/deployment-groups/index.md) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.
