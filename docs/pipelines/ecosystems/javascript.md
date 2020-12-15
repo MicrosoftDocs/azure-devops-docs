@@ -125,7 +125,7 @@ steps:
 
 1. Azure Pipelines will analyze the code in your repository and recommend `Node.js` template for your pipeline. Select that template.
 
-1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
 
 1. A new run is started. Wait for the run to finish.
 
@@ -147,7 +147,7 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 
 ```yaml
 trigger:
-- master
+- main
 
 pool: Default
 
@@ -611,7 +611,7 @@ The build files are in a new folder, `dist` (for Vue) or `build` (for React). Th
 
 ```yaml
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -979,5 +979,5 @@ steps: # Checking out connected repo
       git config --global user.name "Azure Pipeline"
       git add package.json
       git commit -a -m "Test Commit from Azure DevOps"
-      git push -u origin HEAD:master
+      git push -u origin HEAD:main
 ```
