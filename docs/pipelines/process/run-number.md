@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Customize pipeline run number in Azure Pipelines, Azure DevOps Server, or Team Foundation Server.
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 08/28/2020
+ms.date: 12/15/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -80,7 +80,7 @@ The following table shows how each token is resolved based on the previous examp
 | `$(Hours)` | 21 |
 | `$(Minutes)` | 7 |
 | `$(Month)` | 8 |
-| `$(Rev:r)` | 2 (The third run on this day will be 3, and so on.)<br /><br />Use **$(Rev:r)** to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **$(Rev:rr)** if you want the Rev number to begin with 01, 02, and so on. If you use a zero-padded Rev as part of a version numbering scheme, note that some pipeline tasks or popular tools, like NuGet packages, remove the leading zeros, which causes a version number mismatch in the artifacts that are produced. |
+| `$(Rev:r)` | 2 (The third run will be 3, and so on.)<br /><br />Use **$(Rev:r)** to ensure that every completed build has a unique name. When a build starts, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **$(Rev:rr)** if you want the Rev number to begin with 01, 02, and so on. If you use a zero-padded Rev as part of a version numbering scheme, note that some pipeline tasks or popular tools, like NuGet packages, remove the leading zeros, which causes a version number mismatch in the artifacts that are produced. |
 | `$(Date:yyyyMMdd)` | 20090824<br /><br />You can specify other date formats such as **$(Date:MMddyy)** |
 | `$(Seconds)` | 3 |
 | `$(SourceBranchName)` | master |
@@ -131,7 +131,7 @@ The run number variable can be called with `$(Build.BuildNumber)`. You can defin
 ```yaml
 # Set MyRunNumber
 variables: 
-  MyRunNumber: '1.0.0-CI-$(Build.BuildNumber)'
+  MyRunNumber: '1.0.0-CI+$(Build.BuildNumber)'
 
 
 steps:
