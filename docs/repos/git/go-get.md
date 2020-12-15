@@ -44,7 +44,7 @@ go get dev.azure.com/<organization>/<project>/_git/<repo>/subfolder1/subfolder2
 If your Azure DevOps Git repo is private, you can either use SSH or authenticate with a Personal Access Token (PAT) for HTTPS.
 
 > [!IMPORTANT]
-> To access private Azure Repos Git repositories, you must set the environment variable `GOPRIVATE=dev.azure.com`. You can set this environment variable locally before building or running.
+> To access private Azure Repos Git repositories using go get, you must first set the environment variable `GOPRIVATE=dev.azure.com`. You can set this environment variable locally before building or running.
 
 ### SSH
 
