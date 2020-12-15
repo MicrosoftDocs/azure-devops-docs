@@ -100,7 +100,7 @@ Next, [base64-encode](https://www.base64encode.org/) this prefixed string to cre
 Finally, add this script to your pipeline:
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: Bearer <BASE64_ENCODED_STRING>" submodule update --init --recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: Basic <BASE64_ENCODED_STRING>" submodule update --init --recursive
 ```
 
 Be sure to replace "<BASE64_ENCODED_STRING>" with your Base64-encoded "pat:token" string.
