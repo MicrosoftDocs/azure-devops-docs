@@ -395,7 +395,7 @@ Defines a connection to a container registry.
 | Connection Name | Required. The name you will use to refer to this service connection in task inputs. |
 | Docker Registry | Required. The URL of the Docker registry. |
 | Docker ID | Required. The identifier of the Docker account user. |
-| Password | Required. The password for the account user identified above. |
+| Password | Required. The password for the account user identified above. (Docker Hub requires a PAT instead of a password.) |
 | Email | Optional. An email address to receive notifications. |
 
 *****
