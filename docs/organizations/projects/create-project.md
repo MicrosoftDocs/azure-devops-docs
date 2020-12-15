@@ -630,4 +630,4 @@ From the admin context of the web portal, you can add additional repositories to
 - [Team Foundation version control](../../repos/tfvc/index.yml)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
 - [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md)
-- [New Git experience in Visual Studio (Preview)](/visualstudio/ide/git-with-visual-studio)
+- [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio)

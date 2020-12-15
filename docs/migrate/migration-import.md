@@ -393,7 +393,7 @@ Below are some additional recommended configurations for your SQL Azure VM.
 - Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
 - [Configure](/sql/relational-databases/databases/move-system-databases#Examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#generating-a-dacpac).
 - If your source database is still over 1TB after [reducing the size](/azure/devops/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
-- Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
+- Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. Also, consider using larger VMs with 16 vCPUs and 128 GBs of RAM.
 - You need to have a public facing IP address for the service to reach this machine.
 
 <a id="ips" />

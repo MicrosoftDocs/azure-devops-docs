@@ -37,7 +37,7 @@ From the project home page, share your project with your team, add project membe
   - Change the repository that you use to share your project mission
   - Manage project membership
 - To edit a page, you must be a contributor to the repository or branch or have the **Contribute** permissions set to **Allow**.  
-- To view the project page, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-security-identity.md#validusers).
+- To view the project page, you must be a valid member of the project. For more information, see [About security, membership, and permissions; Valid user groups](../../organizations/security/about-permissions.md#validusers).
 
 ## Open project summary
 

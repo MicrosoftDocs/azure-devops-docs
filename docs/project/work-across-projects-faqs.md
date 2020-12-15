@@ -7,8 +7,8 @@ ms.topic: conceptual
 ms.author: kaelli   
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 09/15/2020
----
+ms.date: 11/16/2020
+--- 
 
 
 # Work across projects FAQs
@@ -19,7 +19,12 @@ Many enterprise organizations add multiple projects to support their business ne
 
 To learn about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
 
-## Azure DevOps
+## Projects
+
+::: moniker range="azure-devops"  
+> [!NOTE]  
+> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../organizations/projects/about-projects.md#project-scoped-user-group). 
+  ::: moniker-end  
 
 ### Q: How many projects should I create? 
 
