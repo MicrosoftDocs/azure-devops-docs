@@ -12,7 +12,7 @@ ms.date: 07/27/2020
 
 [!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
 
-See activity about your Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
+See activity about your Azure DevOps Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
 * Work item updates
 * Pull requests
 * Code commits
@@ -96,7 +96,7 @@ Activity from your project begins appearing in your Teams channel.
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-### Q: How can I get multiple events from my TFS project to show up in my Teams channel?
+### Q: How can I get multiple events from my Azure DevOps Server project to show up in my Teams channel?
 
 A: Create a new subscription for each type of event you want.
 For example, if you want to see build failures and new work items in your Teams channel,

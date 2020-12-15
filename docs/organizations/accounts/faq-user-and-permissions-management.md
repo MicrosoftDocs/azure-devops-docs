@@ -127,19 +127,19 @@ A: Make sure that users have the correct [access level](https://visualstudio.mic
 
 * Learn [how to manage users and access levels for Azure DevOps](./add-organization-users.md).
 
-* Learn [how to change access levels for Team Foundation Server](../security/change-access-levels.md).
+* Learn [how to change access levels for Azure DevOps Server](../security/change-access-levels.md).
 
 Some features are available only as [extensions](https://visualstudio.microsoft.com/team-services/compare-features/). You need to install these extensions. Most extensions require you to have at least Basic access, not Stakeholder access. Check the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
 
 For example, to search your code, you can install the free [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), but you need at least Basic access to use the extension.
 
-To help your team improve app quality, you can install the free [Test & Feedback extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web), but you get different capabilities based on your access level and whether you work offline or connected to Azure DevOps Services or Team Foundation Server (TFS).
+To help your team improve app quality, you can install the free [Test & Feedback extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web), but you get different capabilities based on your access level and whether you work offline or connected to Azure DevOps Services.
 
 Some [Visual Studio subscribers](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) can use this feature for free, but Basic users need to upgrade to Basic + Test Plans access before they can create test plans.
 
 * Learn [how to get extensions for Azure DevOps](../../marketplace/install-extension.md).
-* Learn [how to get extensions for TFS](../../marketplace/get-tfs-extensions.md).
-* Learn [how to buy access to TFS Test](../billing/buy-access-tfs-test-hub.md).
+* Learn [how to get extensions for Azure DevOps Server](../../marketplace/get-tfs-extensions.md).
+* Learn [how to buy access to Azure DevOps Server Test](../billing/buy-access-tfs-test-hub.md).
 
 <a name="stopped-features"></a>
 

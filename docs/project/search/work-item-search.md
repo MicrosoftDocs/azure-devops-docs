@@ -1,6 +1,6 @@
 ---
 title: Search for work items across your projects
-description: Learn how to use Work Item Search across all work item fields and all projects in Azure DevOps and TFS
+description: Learn how to use Work Item Search across all work item fields and all projects in Azure DevOps
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.technology: devops-collab
 ms.topic: quickstart

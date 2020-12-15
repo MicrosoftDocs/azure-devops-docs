@@ -1,7 +1,7 @@
 ---
 title: Work across projects 
 titleSuffix: Azure DevOps
-description: Quickly link to work items, pull requests, team projects, and more using your account home page in Azure DevOps
+description: How to access work items, pull requests, team projects, and more using your account home page in Azure DevOps
 ms.custom: Navigation
 ms.technology: devops-collab
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
@@ -9,8 +9,8 @@ ms.topic: conceptual
 ms.author: kaelli   
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 09/23/2020
----
+ms.date: 11/16/2020
+--- 
 
 
 # Work across projects
@@ -54,6 +54,14 @@ To switch to another project, see [Switch project, repository, or team](go-to-pr
 
 For additional notes on working across projects, see [Work across projects FAQs](../work-across-projects-faqs.md). 
 
+## Prerequisites 
+ 
+* You must be added to a project as a member of the **Contributors** or administrator security group. To get added, [Add users to a project or team](../../organizations/security/add-users-team-project.md). 
+ 
+::: moniker range="azure-devops"  
+> [!NOTE]  
+> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+  ::: moniker-end  
 
 ## View and open work items
 

@@ -6,6 +6,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: December 03
+          href: 2020/sprint-179-update.md
         - name: November 12
           href: 2020/sprint-178-update.md
         - name: October 21
@@ -348,8 +350,10 @@
     - name: 2020
       expanded: true
       items:
-      - name: October
+      - name: November
         href: docswhatsnew/azure-devops-docs-whats-new.md
+      - name: October
+        href: docswhatsnew/azure-devops-docs-2020-10.md
       - name: September
         href: docswhatsnew/azure-devops-docs-2020-09.md
       - name: August
@@ -429,6 +433,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: December 03
+          href: 2020/repos/sprint-179-update.md
         - name: October 21
           href: 2020/repos/sprint-177-update.md      
         - name: August 03
@@ -476,6 +482,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: December 03
+          href: 2020/pipelines/sprint-179-update.md
         - name: November 12
           href: 2020/pipelines/sprint-178-update.md
         - name: October 21

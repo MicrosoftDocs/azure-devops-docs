@@ -1,7 +1,7 @@
 ---
 title: Authenticate with personal access tokens
 titleSuffix: Azure DevOps
-ms.custom: seodec18, contentperfq4
+ms.custom: seodec18, contperf-fy20q4
 description: Use personal access tokens (PATs) as alternate passwords to authenticate access to Azure DevOps.
 ms.technology: devops-security
 ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
@@ -26,7 +26,7 @@ PATs are easy to create when you need them and easy to revoke when you don’t. 
 
 ## Related articles
 
-- [About security and identity](../security/about-security-identity.md)
+- [About security, authentication, and authorization](../security/about-security-identity.md)
 - [Default permissions and access for Azure DevOps](../security/permissions-access.md)
 - [Revoke other users' PATs](admin-revoke-user-pats.md)
 

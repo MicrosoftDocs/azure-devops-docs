@@ -4,7 +4,7 @@ description: Learn how to troubleshoot pipeline runs in Azure Pipelines and Team
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
-ms.custom: "seodec18, contentperfQ4"
+ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
 ms.date: 07/20/2020
 monikerRange: '>= tfs-2015'
