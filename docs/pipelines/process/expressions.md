@@ -51,7 +51,7 @@ In this example, a runtime expression sets the  value of `$(isMain)`. A static v
 variables:
   staticVar: 'my value' # static variable
   compileVar: ${{ variables.staticVar }} # compile time expression
-  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')] # runtime expression
+  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')] # runtime expression
 
 steps:
   - script: |
@@ -423,7 +423,7 @@ For templates, you can use conditional insertion when adding a sequence or mappi
 ### Conditionally assign a variable
 ```yml
 variables:
-  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}: # only works if you have a master branch
+  ${{ if eq(variables['Build.SourceBranchName'], 'main') }}: # only works if you have a main branch
     stageName: prod
 
 pool:
@@ -442,9 +442,9 @@ steps:
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
-    ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+    ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
       artifact: 'prod'
-    ${{ if ne(variables['Build.SourceBranchName'], 'master') }}:
+    ${{ if ne(variables['Build.SourceBranchName'], 'main') }}:
       artifact: 'dev'
     publishLocation: 'pipeline'
 ```

@@ -137,12 +137,12 @@ The new repository should be created in a project you don't mind making public.
 
 - Clone the existing repository: `git clone <clone_URL>`
 - Make sure you're in the root of the repository: `cd <reponame>`
-- Ensure you're on the tip of the branch you want to start from, usually master: `git checkout master`
+- Ensure you're on the tip of the branch you want to start from, usually main: `git checkout main`
 - Delete the Git data: `rmdir /s .git` on Windows, `rm -rf .git` on macOS or Linux
 - Initialize a new Git repository: `git init`
 - Create a new, empty repository in your public project.
 - Add the new repository as your origin remote: `git remote add origin <new_clone_URL>`
-- Push up your new repository: `git push --set-upstream origin master`
+- Push up your new repository: `git push --set-upstream origin main`
 
 ## Next steps
 
