@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to use Go get command  with Azure Repos Git
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 12/11/2020
+ms.date: 12/15/2020
 monikerRange: 'azure-devops'
 ---
 
