@@ -89,11 +89,11 @@ There are several different clean options available for YAML pipelines.
 * The pipeline settings UI has a **Clean** setting, that when set to true is equivalent of specifying `clean: true` for every `checkout` step in your pipeline. To configure the **Clean** setting:
   1. Edit your pipeline, choose **...**, and select **Triggers**.
 
-    :::image type="content" source="../process/media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
+      :::image type="content" source="../process/media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
 
   2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**. 
 
-    :::image type="content" source="../process/media/clean-setting.png" alt-text="Clean setting."::: 
+      :::image type="content" source="../process/media/clean-setting.png" alt-text="Clean setting."::: 
 
 To override clean settings when manually running a pipeline, you can use [runtime parameters](../process/runtime-parameters.md). In the following example, a runtime parameter is used to configure the checkout clean setting.
 
