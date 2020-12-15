@@ -39,7 +39,7 @@ Learn more about [how agents communicate](../../agents.md#communication).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 2. From your home page, open your profile. Go to your security details.
 
@@ -48,6 +48,20 @@ Learn more about [how agents communicate](../../agents.md#communication).
 3. [Create a personal access token](../../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
    ![Create a personal access token.](/azure/devops/repos/git/media/add-personal-access-token.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+2. From your home page, open your user settings, and then select **Personal access tokens**.
+
+   ![Go to your security details.](/azure/devops/repos/git/media/select-personal-access-tokens.jpg)
+
+3. [Create a personal access token](../../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+
+   ![Create a personal access token.](/azure/devops/repos/git/media/select-new-token.png)
+
+::: moniker-end
 
 4. For the scope select **Agent Pools (read, manage)** and make sure all the other boxes are cleared.
    If it's a [deployment group](../../../release/deployment-groups/index.md) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.
