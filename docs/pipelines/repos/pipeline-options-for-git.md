@@ -4,7 +4,7 @@ description: Options that are available when using a Git repository with Azure P
 ms.topic: reference
 ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
 ms.custom: seodec18
-ms.date: 07/20/2020
+ms.date: 12/15/2020
 monikerRange: '>= tfs-2015'
 ---
 
