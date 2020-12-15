@@ -91,7 +91,7 @@ There are several different clean options available for YAML pipelines.
 
     :::image type="content" source="../process/media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
 
-2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**. 
+  2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**. 
 
     :::image type="content" source="../process/media/clean-setting.png" alt-text="Clean setting."::: 
 
