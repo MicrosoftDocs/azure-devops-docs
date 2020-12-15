@@ -473,7 +473,19 @@ A GitHub user can fork your repository, change it, and create a pull request to 
 
 ## Comment triggers
 
-Repository collaborators can comment on a pull request to manually run a pipeline. You might use this to run an optional test suite or validation build. The following commands can be issued to Azure Pipelines in comments:
+Repository collaborators can comment on a pull request to manually run a pipeline. Here are a few common reasons for why you might want to do this:
+
+- You may not want to automatically build pull requests from unknown users until their changes can be reviewed. You want one of your team members to first review their code and then run the pipeline. This is commonly used as a security measure when building contributed code from forked repositories.
+- You may want to run an optional test suite or an additional validation build. 
+
+To enable comment triggers you must follow the following two steps:
+
+1. Enable pull request triggers for your pipeline, and make sure that you did not exclude the target branch.
+2. In Azure Pipelines web interface, select the **Triggers** tab in your pipeline's settings. Then, under **Pull request validation**, enable **Only trigger builds for collaborators' pull request comments** and save the pipeline. 
+
+With these two changes, the pull request validation build will not be triggered automatically. Only repository owners and collaborators with 'Write' permission can trigger the build by commenting on the pull request with `/AzurePipelines run` or `/AzurePipelines run <pipeline-name>`.
+
+The following commands can be issued to Azure Pipelines in comments:
 
 | Command | Result |
 | - | - |
@@ -487,12 +499,6 @@ Repository collaborators can comment on a pull request to manually run a pipelin
 
 >[!IMPORTANT]
 >Responses to these commands will appear in the pull request discussion only if your pipeline uses the [Azure Pipelines GitHub App](#github-app-authentication).
-
-### Run pull request validation only when authorized by your team
-
-You may not want to automatically build pull requests from unknown users until their changes can be reviewed. You can configure Azure Pipelines to build GitHub pull requests only when authorized by your team.
-
-To enable this, in Azure Pipelines, select the **Triggers** tab in your pipeline's settings. Then, under **Pull request validation**, enable **Only trigger builds for collaborators' pull request comments** and save the pipeline. Now, the pull request validation build will not be triggered automatically. Only repository owners and collaborators with 'Write' permission can trigger the build by commenting on the pull request with `/AzurePipelines run` or `/AzurePipelines run <pipeline-name>` as described above.
 
 ### Troubleshoot pull request comment triggers
 
