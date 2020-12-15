@@ -42,15 +42,6 @@ pool:
 ```
 
 Or if you need to add multiple demands, add one per line.
-```yaml
-pool:
-  name: Default
-  demands:
-  - SpecialSoftware # Check if SpecialSoftware capability exists
-  - Agent.OS -equals Linux # Check if Agent.OS == Linux
-```
-
-For multiple demands:
 
 ```yaml
 pool:
@@ -59,6 +50,9 @@ pool:
   - myCustomCapability   # check for existence of capability
   - agent.os -equals Darwin  # check for specific string in capability
 ```
+
+> [!NOTE]
+> Checking for the existence of a capability (exists) and checking for a specific string in a capability (equals) are the two supported operations for demands.
 
 For more information and examples, see [YAML schema - Demands](../yaml-schema.md#demands).
 
@@ -91,3 +85,5 @@ Register each agent that has the capability.
 
 > [!TIP]
 > When you manually queue a build you can change the demands for that run.
+
+* * *
