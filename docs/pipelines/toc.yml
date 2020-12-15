@@ -56,6 +56,9 @@
     - name: Multiple repositories
       href: repos/multi-repo-checkout.md
       displayName: ci, pr, pull request, triggers, checkout, branch policy, path filter, branch filter, tag trigger, multiple repos, multi-repo, multi-checkout, multi-trigger, repo resource, repository resource, self
+    - name: Pipeline options for Git
+      href: repos/pipeline-options-for-git.md
+      displayName: clean
   - name: Triggers
     items:
     - name: Types of triggers
