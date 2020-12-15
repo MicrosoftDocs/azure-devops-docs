@@ -154,7 +154,7 @@
     items:
     - name: View pipeline reports
       href: reports/pipelinereport.md
-    - name: Add pipeline widgets to a dashboard
+    - name: Add widgets to a dashboard
       href: ../report/dashboards/add-widget-to-dashboard.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Test Results Trend (Advanced)
       href: ../report/dashboards/analytics-widgets.md?toc=%2Fazure%2Fdevops%2Fpipelines%2Ftoc.json&bc=%2Fazure%2Fdevops%2Fpipelines%2Fbreadcrumb%2Ftoc.json&view=azure-devops#test-results-trend-advanced
