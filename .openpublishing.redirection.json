@@ -17582,6 +17582,11 @@
       "source_path": "docs/organizations/security/setup-ad-aad.md",
       "redirect_url": "/azure/devops/organizations/security/about-permissions#aad",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/overview.md",
+      "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
+      "redirect_document_id": false
     }
   ]
 }
