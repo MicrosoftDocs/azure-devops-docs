@@ -83,7 +83,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
 		"name": "My first sample extension",
 		"description": "A sample Visual Studio Services extension.",
 		"publisher": "fabrikamdev",
-		"categories": ["Azure Boards"]
+		"categories": ["Azure Boards"],
 		"targets": [
 			{
 				"id": "Microsoft.VisualStudio.Services"

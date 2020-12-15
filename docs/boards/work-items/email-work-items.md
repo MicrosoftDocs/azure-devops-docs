@@ -118,7 +118,7 @@ Some of the most common ways information is shared within a team or across teams
 The tasks/features listed in the table aren't available when you are connected to a GitHub or third-party Git repository. Also, they aren't available from Visual Studio 2019 under the following conditions:   
 
 * If you are set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
-* If you are set to use the new Git Tool as described in [New Git experience in Visual Studio (Preview)](/visualstudio/ide/git-with-visual-studio).  
+* If you are set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
  
  
 

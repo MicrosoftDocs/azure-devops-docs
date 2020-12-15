@@ -49,13 +49,7 @@ Export your Classic pipeline to a YAML file that you can use in the editor.
 1. Open the downloaded YAML file in your code editor. 
 
 
-1. If your YAML pipeline included variables defined in the Classic user interface, you'll need to define the variables in your YAML file. In this example, the variable `one` gets added to the pipeline. 
-
-    ```yaml
-    variables:
-    - name: one
-      value: initialValue 
-   ``` 
+1. If your YAML pipeline included variables defined in the Classic user interface, you'll need to define the variables again in your pipeline settings UI or in your YAML file. See [Define variables](../process/variables.md) to learn how to set variables in pipelines.
 
 1. Review any `cron` schedules in your YAML file. By default, `cron` schedules in YAML are in UTC. In classic pipelines, they are in the organization's timezone. See [Configure schedules for pipelines](../process/scheduled-triggers.md) to learn more about configuring your pipeline to run on with a `cron` job. 
  
