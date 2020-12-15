@@ -7,7 +7,7 @@ ms.assetid: 644687b3-e30e-46b0-8d3e-3d4a4e34d13a
 ms.author: chcomley
 author: chcomley
 ms.topic: How-to
-ms.date: 12/09/2020
+ms.date: 12/15/2020
 monikerRange: '<= azure-devops'
 ---
 
@@ -17,8 +17,7 @@ monikerRange: '<= azure-devops'
 
 You can get email notifications sent to only yourself, as the following alert types occur to the following items:
 
-
-| Item                | Alert type                                                |
+| Item                | Alert type examples (not a [full representation](about-notifications.md#team-and-project-level-notifications))  |
 |---------------------|---------------------------------------------------------|
 | Work item           | assigned, unassigned, comments                          |
 | Code reviews        | updated, completed                                      |
@@ -28,7 +27,7 @@ You can get email notifications sent to only yourself, as the following alert ty
 
 For more information about alert types and team and project-level notifications, see [Team and project-level notifications](about-notifications.md#team-and-project-level-notifications).
 
-You can set your personal notifications, as described in this article, or [set team or group notifications](manage-team-group-global-organization-notifications.md).
+You can set your personal notifications, as described in this article. Or, you can [set team or group notifications](manage-team-group-global-organization-notifications.md).
 
 [!INCLUDE [note-earlier-tfs-version](includes/note-earlier-tfs-version.md)]
 
@@ -161,7 +160,7 @@ To access the Preview features options, open your profile menu. The profile menu
 
 ::: moniker range=">= tfs-2017"
 
-A subscription can be just for you, or if you're a team administrator you can ensure that it's shared by everyone on the team. 
+A subscription can be just for you. Or, if you're a team administrator you can ensure that it's shared by everyone on the team. 
 
 ::: moniker-end  
 
