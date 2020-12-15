@@ -247,10 +247,10 @@ To restrict select users, such as Stakeholders, Azure Active Directory guest use
 To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
 ### Git repository and branch policies 
-	- [Configure repository settings and policies](../../repos/git/repository-settings.md)
-	- [Configure branch policies](../../repos/git/branch-policies.md)
-	- [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)
-	- [Use Azure Functions to create custom branch policies](../../repos/git/create-pr-status-server-with-azure-functions.md) 
+- [Configure repository settings and policies](../../repos/git/repository-settings.md)
+- [Configure branch policies](../../repos/git/branch-policies.md)
+- [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)
+- [Use Azure Functions to create custom branch policies](../../repos/git/create-pr-status-server-with-azure-functions.md) 
 
 ::: moniker-end 
 
