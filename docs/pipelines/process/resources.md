@@ -44,7 +44,7 @@ resources.triggeringAlias
 resources.triggeringCategory
 ```
 
-These values will be blank if a resource does not trigger a pipeline run. The variable `Build.Reason` must be `ResourceTrigger` for these values to get set. 
+These values will be blank if a resource does not trigger a pipeline run. The variable `Build.Reason` must be `ResourceTrigger` for these values to get set.
 
 ## Resources: `pipelines`
 
