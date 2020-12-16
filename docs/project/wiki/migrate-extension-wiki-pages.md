@@ -31,7 +31,7 @@ You must be a member of the Contributors group of your team project to migrate w
 2. Create, and then clone your Azure DevOps wiki
 3. Move and commit all Markdown pages to your Azure DevOps wiki
 4. Run the wiki migration tool, **MigrateToVSTSWiki.exe**
-5. When the wiki migration tool is complete, push the changes to the default main branch, *wikiMaster*, of the Azure DevOps wiki repository.
+5. When the wiki migration tool is complete, push the changes to the default main branch, *wikiMain*, of the Azure DevOps wiki repository.
 
 ## Detailed steps
 
@@ -80,7 +80,7 @@ You must be a member of the Contributors group of your team project to migrate w
   
 12. Run **git commit -m <commit message>** to commit the files that you have staged locally.
 
-13. Run **git push origin wikiMaster -f** . to push the changes to the default branch of the Azure DevOps Wiki.
+13. Run **git push origin wikiMain -f** . to push the changes to the default branch of the Azure DevOps Wiki.
 
 >[!NOTE]  
 >Once you've migrated your Wiki extension files to the Azure DevOps Wiki, you're ready to uninstall the Wiki extension.

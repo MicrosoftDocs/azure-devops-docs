@@ -66,7 +66,7 @@ narrow your search to fewer projects and repositories. If there are more than a 
 projects or repositories, use the **Show more** link to see them all.
 
 Code Search can index multiple branches in a Git repository - by default it indexes 
-files in only the default branch of your Git repositories (usually this is the **master** branch).
+files in only the default branch of your Git repositories (usually this is the **main** branch).
 Specify the branches for each repository that you want Code
 Search to index in the **Options** tab of the **Repositories** section in the
 [project settings page](../navigation/go-to-service-page.md#open-project-settings).

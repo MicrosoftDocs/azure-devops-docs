@@ -148,10 +148,10 @@ az devops wiki create [--mapped-path]
 
 #### Example 
 
-The following command creates a **codewiki** named "My New Wiki" published from the **MyRepo** repository. The wiki is published in the **wikis** folder in the **master** branch and the result is shown in table format.
+The following command creates a **codewiki** named "My New Wiki" published from the **MyRepo** repository. The wiki is published in the **wikis** folder in the **main** branch and the result is shown in table format.
 
 ```azurecli 
-az devops wiki create --name "My New Wiki" --type codewiki --repository MyRepo --mapped-path /wikis --version master --output table
+az devops wiki create --name "My New Wiki" --type codewiki --repository MyRepo --mapped-path /wikis --version main --output table
 
 ID                                    Name         Type
 ------------------------------------  -----------  --------

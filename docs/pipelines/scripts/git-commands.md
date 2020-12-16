@@ -199,7 +199,7 @@ IF %BUILD_SOURCEBRANCH% == refs/heads/main (
    EXIT
 )
 SET sourceBranch=origin/%BUILD_SOURCEBRANCH:refs/heads/=%
-ECHO GIT CHECKOUT main
+ECHO GIT CHECKOUT MAIN
 git checkout main
 ECHO GIT STATUS
 git status
