@@ -296,9 +296,9 @@ Follow the steps in the next sections to set up Azure Databricks and Azure Data 
     * Azure DevOps organization: Your active account
     * Project name: Your Azure DevOps data pipeline project
     * Git repository name: **Use existing**. 
-        * Select the **master** branch for collaboration.     
+        * Select the **main** branch for collaboration.     
         * Set **/azure-data-pipeline/factorydata** as the root folder.
-    * Branch to import resource into: Select **Use existing** and **master**.
+    * Branch to import resource into: Select **Use existing** and **main**.
 
 ### Link Azure Data Factory to your key vault
 1. In the Azure portal UI, open the key vault. 
