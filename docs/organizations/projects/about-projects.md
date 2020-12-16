@@ -126,7 +126,7 @@ You can view the projects defined for your organization by opening the **Project
 
 By default, users added to an organization can view all organization and project information and settings. This includes viewing list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**. 
 
-To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from access the Organization Settings pages, except for Overview and Projects; and are restricted to accessing only  those projects to which they've been added to. 
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
 
 To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
  
@@ -267,7 +267,7 @@ See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server
 
 ### Q: Can I move or transfer a project to another organization or collection? 
 
-**A:** Not without losing data. You can't move a project from one collection/organization to another collection/organization without losing data. You can manually copy resources and leave some behind, or use a third-party tool, such as [Opshub Visual Studio Migration Utility](https://www.opshub.com/products/opshub-visual-studio-migration-utility/), that copies data using the REST APIs. 
+**A:** Not without losing data. You can't move a project from one collection/organization to another collection/organization without losing data. You can manually copy resources and leave some behind, or use a third-party tool, such as [OpsHub Visual Studio Migration Utility](https://www.opshub.com/products/opshub-visual-studio-migration-utility/), that copies data using the REST APIs. 
 ### Q: What programmatic tools support projects?
 
 **A.** See [Projects REST API](/rest/api/azure/devops/core/projects). 
