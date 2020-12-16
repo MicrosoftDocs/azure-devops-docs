@@ -449,6 +449,24 @@ steps:
     publishLocation: 'pipeline'
 ```
 
+<a href="#each"></a>
+## Each keyword
+
+You can use the `each` keyword to loop through parameters with the object type. 
+
+```yaml
+parameters:
+- name: listOfStrings
+  type: object
+  default:
+  - one
+  - two
+
+steps:
+- ${{ each value in parameters.listOfStrings }}:
+  - script: echo ${{ value }}
+```
+
 ## Dependencies
 
 Expressions can use the dependencies context to reference previous jobs or stages. You can use dependencies to:
