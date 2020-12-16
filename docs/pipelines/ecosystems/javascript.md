@@ -20,7 +20,7 @@ Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or
 * Implement [JavaScript frameworks](#javascript-frameworks): Angular, React, or Vue. 
 * Run unit tests and publish them with the [publish test results task](../tasks/test/publish-test-results.md). 
 * Use the [publish code coverage task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results.
-* Publish [npm packages](../artifacts/npm.md) with Azure artifacts. 
+* Publish [npm packages](../artifacts/npm.md) with Azure Artifacts. 
 * Create a .zip file archive that is ready for publishing to a web app with the [Archive Files task](../tasks/utility/archive-files.md) and [deploy to Azure](../targets/webapp.md).
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -490,7 +490,7 @@ To publish the results, use the [Publish Test Results](../tasks/test/publish-tes
 
 ### Publish code coverage results
 
-If your test scripts run a code coverage tool such as [Istanbul](https://istanbul.js.org/), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, you can find coverage metrics in the build summary and download HTML reports for further analysis. The task expects Cobertura or JaCoCo reporting output, so ensure that your code coverage tool runs with the necessary options to generate the right output. (For example, `--report cobertura`.)
+If your test scripts run a code coverage tool such as [Istanbul](https://github.com/istanbuljs), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, you can find coverage metrics in the build summary and download HTML reports for further analysis. The task expects Cobertura or JaCoCo reporting output, so ensure that your code coverage tool runs with the necessary options to generate the right output. (For example, `--report cobertura`.)
 
 ```yaml
 - task: PublishCodeCoverageResults@1
