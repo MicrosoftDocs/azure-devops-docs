@@ -20,7 +20,7 @@ Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or
 * Implement [JavaScript frameworks](#javascript-frameworks): Angular, React, or Vue. 
 * Run unit tests and publish them with the [publish test results task](../tasks/test/publish-test-results.md). 
 * Use the [publish code coverage task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results.
-* Publish [npm packages](../artifacts/npm.md) with Azure artifacts. 
+* Publish [npm packages](../artifacts/npm.md) with Azure Artifacts. 
 * Create a .zip file archive that is ready for publishing to a web app with the [Archive Files task](../tasks/utility/archive-files.md) and [deploy to Azure](../targets/webapp.md).
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
