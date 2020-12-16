@@ -438,7 +438,7 @@ Only two jobs run simultaneously.
 
 > [!NOTE]
 > The `matrix` syntax doesn't support automatic job scaling but you can implement similar
-> functionality using the `each` keyword. For an example, see [expressions](process/expressions.md#each).
+> functionality using the `each` keyword. For an example, see [expressions](process/expressions.md).
 
 #### Parallel
 
