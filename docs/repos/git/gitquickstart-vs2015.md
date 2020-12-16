@@ -74,9 +74,9 @@ Git [branches](branches.md) isolate your changes from other work being done in t
 uses a new branch for every feature or fix you work on. You make [commits](commits.md) in your local Git repository to save your changes on that branch.
 
 #### [Visual Studio](#tab/visual-studio/)
-1. In Team Explorer, click the drop down and choose **Branches**. Right click the master branch and choose **New Local Branch From...**    
+1. In Team Explorer, click the drop down and choose **Branches**. Right click the main branch and choose **New Local Branch From...**    
 
-   ![Creating a Local Branch off the Master branch in Visual Studio](media/newVSBranch.png)  
+   ![Creating a Local Branch off the main branch in Visual Studio](media/newVSBranch.png)  
 
    Choose a descriptive branch name for your work to remind you and others what kind of work is in the branch. 
 
@@ -112,7 +112,7 @@ uses a new branch for every feature or fix you work on. You make [commits](commi
 When you are ready to share your changes with the team, you [push](pushing.md) those changes so that others can reach them. You can only
 push changes after you add commits to a branch. 
 
-Once you push the changes, you can create a [pull request](pullrequest.md) to let others know you'd like to have the changes reviewed and added to the master 
+Once you push the changes, you can create a [pull request](pullrequest.md) to let others know you'd like to have the changes reviewed and added to the main 
 branch of the code.   
 
 #### [Visual Studio](#tab/visual-studio/)
@@ -140,7 +140,7 @@ branch of the code.
 3. Create the pull request, adding in team members to review and approve the code changes.
 
 4. Once the changes are approved, complete the pull request. 
-   This will pull your changes from the branch into the master branch of the code.
+   This will pull your changes from the branch into the main branch of the code.
 
 * * *
 <a name="pull"></a>
