@@ -30,6 +30,9 @@ Before you begin, you need:
 https://github.com/MicrosoftDocs/pipelines-xamarin
 ```
 
+> [!NOTE]
+> This sample is the  `FirstApp` sample from the `https://github.com/xamarin/xamarin-forms-samples` repository. For more information on this sample, see [Build your first Xamarin.Forms App](/xamarin/get-started/first-app/?pivots=windows).
+
 ## Sign in to Azure Pipelines
 
 [!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
