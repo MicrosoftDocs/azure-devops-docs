@@ -43,7 +43,7 @@ https://github.com/MicrosoftDocs/pipelines-xamarin
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-  > When the **Configure** tab appears, select **Xamarin.Android** to build an Android project or **Xamarin.iOS** to build an iOS project. If you want to use the included sample `.yml` files, choose **Existing Azure Pipelines YAML file** and choose from one of the include sample pipelines (Android, macOS, or a combined pipeline that builds both).
+  > When the **Configure** tab appears, select **Xamarin.Android** to build an Android project or **Xamarin.iOS** to build an iOS project. If you want to use the included sample `.yml` files, choose **Existing Azure Pipelines YAML file** and choose from one of the include sample pipelines (Android, iOS, or a combined pipeline that builds both).
 
 7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
