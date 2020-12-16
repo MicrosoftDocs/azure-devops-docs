@@ -43,7 +43,8 @@ When a resource triggers a pipeline, the following variables are set:
 resources.triggeringAlias
 resources.triggeringCategory
 ```
----
+
+These values will be blank if a resource does not trigger a pipeline run. The variable `Build.Reason` must be `ResourceTrigger` for these values to get set.
 
 ## Resources: `pipelines`
 
@@ -116,7 +117,7 @@ resources:
     trigger:
       branches:
       - releases/*
-      - master
+      - resources.triggeringAlias
 ```
 
 Stages filters for triggers
