@@ -130,7 +130,7 @@ If you need to revert to an earlier revision for a page that you have published 
 
 7. Select **Create** in the New Pull Request form.
 
-8. Select **Complete** to merge the changes into the master wiki branch. Optionally, check the **Delete** checkbox to delete the intermediate branch.
+8. Select **Complete** to merge the changes into the main wiki branch. Optionally, check the **Delete** checkbox to delete the intermediate branch.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Revert publish code as wiki, complete pull request](media/wiki/revert-complete-pull-request-dialog.png)
@@ -139,15 +139,15 @@ Return to the wiki, refresh the browser, and you should see the reverted content
 
 ### Revert from earlier revisions using a different branch
 
-To revert to an earlier committed version, one that is not the immediate last revision, of a publish as code wiki page, you must update a branch other than the master branch for the wiki, and then create a pull request to the master branch.
+To revert to an earlier committed version, one that is not the immediate last revision, of a publish as code wiki page, you must update a branch other than the main branch for the wiki, and then create a pull request to the main branch.
 
-1. Create a local branch of the master wiki branch.
+1. Create a local branch of the main wiki branch.
 1. View the commit history and locate the commit that contains the changes you want to undo.
 2. Use the revert command to revert the desired commit.
 3. When a conflict arises, use the conflict resolution tools to resolve the issues.
 4. Commit the changes locally to your local branch.
 5. Push the local branch to the remote server.
-6. Create a pull request for your local branch into master.
+6. Create a pull request for your local branch into main.
 7. Complete the pull request.
 
 You can use the following steps to identify the commit that contains the content you want to revert to. Then, use standard Git operations to revert the content.

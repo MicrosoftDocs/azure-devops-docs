@@ -847,7 +847,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Grant an <a href="../repos/git/branch-policies.md" data-raw-source="[Exempt from policy enforcement permission](../repos/git/branch-policies.md)">Exempt from policy enforcement permission</a> to a user or group.</p>
 
 <p><b>Rebase a branch</b></p>
-<p>Before merging a branch into master, you may choose to first <a href="../repos/git/rebase.md" data-raw-source="[rebase your branch onto the latest commit in master](../repos/git/rebase.md)">rebase your branch onto the latest commit in master</a>.</p>
+<p>Before merging a branch into main, you may choose to first <a href="../repos/git/rebase.md" data-raw-source="[rebase your branch onto the latest commit in main](../repos/git/rebase.md)">rebase your branch onto the latest commit in main</a>.</p>
 
 
 

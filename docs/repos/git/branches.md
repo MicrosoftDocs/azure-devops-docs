@@ -64,7 +64,7 @@ You'll need to either [cherry-pick](cherry-pick.md) the commits from the branch 
 
 1. Open up Team Explorer and go to the **Branches** view.
 2. Right-click the parent branch (usually `main`) to base your changes and choose **New Local Branch From...**. 
-3. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch.
+3. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch. <!-- c123: Image needs updated, master to main -->
 
     ![Creating Git Branches in Visual Studio](media/vsbranch.gif)   
 
