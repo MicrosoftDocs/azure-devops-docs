@@ -50,7 +50,7 @@ https://github.com/MicrosoftDocs/pipelines-xamarin
    > [!div class="mx-imgBorder"] 
    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
-8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+8. If you created a new YAML file you're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
    If you want to watch your pipeline in action, select the build job.
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
