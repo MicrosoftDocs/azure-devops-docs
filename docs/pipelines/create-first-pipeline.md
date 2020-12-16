@@ -281,7 +281,7 @@ az pipelines run [--branch]
 
 #### Parameters
 
-- **branch**: Name of the branch on which the pipeline run is to be queued, for example, *refs/heads/master*.
+- **branch**: Name of the branch on which the pipeline run is to be queued, for example, *refs/heads/main*.
 - **commit-id**: Commit-id on which the pipeline run is to be queued.
 - **folder-path**: Folder path of pipeline. Default is root level folder.
 - **id**: Required if **name** is not supplied. ID of the pipeline to queue.
@@ -322,7 +322,7 @@ az pipelines update [--branch]
 
 #### Parameters
 
-- **branch**: Name of the branch on which the pipeline run is to be configured, for example, *refs/heads/master*.
+- **branch**: Name of the branch on which the pipeline run is to be configured, for example, *refs/heads/main*.
 - **description**: New description for the pipeline.
 - **id**: Required if **name** is not supplied. ID of the pipeline to update.
 - **name**: Required if **ID** is not supplied. Name of the pipeline to update.

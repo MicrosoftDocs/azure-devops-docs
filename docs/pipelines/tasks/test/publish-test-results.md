@@ -387,7 +387,7 @@ The final image will be published to Docker or Azure Container Registry
        pswd: $(dockerPassword)
    ```
 
-1. Push the change to the master branch in your repository. 
+1. Push the change to the main branch in your repository. 
 
 1. If you use Azure Container Registry, ensure you have
    [pre-created the registry](/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
