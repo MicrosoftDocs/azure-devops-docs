@@ -46,10 +46,6 @@ resources.triggeringCategory
 
 These values will be blank if a resource does not trigger a pipeline run. The variable `Build.Reason` must be `ResourceTrigger` for these values to get set. 
 
-
-
----
-
 ## Resources: `pipelines`
 
 If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipelines` resource. `pipelines` is a dedicated resource only for Azure Pipelines. You can also set triggers on pipeline resource for your CD workflows.
