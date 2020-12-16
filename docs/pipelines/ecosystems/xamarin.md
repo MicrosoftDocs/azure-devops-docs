@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
 ms.reviewer: dastahel
 ms.custom: seodec18,contperf-fy21q2
-ms.date: 10/27/2020
+ms.date: 12/16/2020
 monikerRange: 'azure-devops'
 # Customer intent: As an Azure DevOps user, I want to build a pipeline that deploys a Xamarin app so that I can take advantage of automated builds.
 ---
@@ -81,7 +81,7 @@ variables:
   outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
 
 steps:
-- task: NuGetToolInstaller@0
+- task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
   inputs:
@@ -170,12 +170,12 @@ You can build and test your Xamarin.Android app, Xamarin.iOS app, and related ap
 jobs:
 - job: Android
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-2019'
   variables:
     buildConfiguration: 'Release'
     outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
   steps:
-  - task: NuGetToolInstaller@0
+  - task: NuGetToolInstaller@1
   - task: NuGetCommand@2
     inputs:
       restoreSolution: '**/*.sln'
@@ -191,7 +191,7 @@ jobs:
   variables:
     buildConfiguration: 'Release'
   steps:
-  - task: NuGetToolInstaller@0
+  - task: NuGetToolInstaller@1
   - task: NuGetCommand@2
     inputs:
       restoreSolution: '**/*.sln'
