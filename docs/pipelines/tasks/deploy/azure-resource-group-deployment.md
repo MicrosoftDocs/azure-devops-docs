@@ -71,6 +71,14 @@ Timeout issues could be coming from two places:
 
 You can identify if the timeout is from portal, by checking for the portal deployment link that'll be in the task logs. If there's no link, this is likely due to Azure Pipelines agent. If there's a link, follow the link to see if there's a timeout that has happened in the portal deployment.
 
+### Error: CORS rules to be enabled while overriding parameters
+
+If the template file if being referred from a BLOB, while overriding parameters in the pipeline, you can get the following :
+
+Warning: Failed to download the file from template path. This feature requires that CORS rules are enabled at the source. If templates are in Azure storage blob, refer to [this](https://docs.microsoft.com/en-us/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services?redirectedfrom=MSDN#understanding-cors-requests) to enable CORS. 
+
+Besides enabling CORS, ensure that the SAS token specified in the link of the template is "srt-sco", only then it allowes you to download the file and proceed.
+
 #### Azure Pipelines Agent
 
 If the issue is coming from Azure Pipelines agent, you can increase the timeout by setting timeoutInMinutes as key in the YAML to 0. Check out this article for more details: https://docs.microsoft.com/azure/devops/pipelines/process/phases?tabs=yaml.
