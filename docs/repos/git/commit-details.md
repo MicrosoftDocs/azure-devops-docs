@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 ## Commit details view
 
-The commit details view provides information regarding all the changes made as part of a commit. You can view additional metadata associated with the commit and also perform certain actions to revert or cherry pick the commit.
+The commit details view provides information regarding all the changes made as part of a commit. You can view additional metadata associated with the commit and also perform certain actions to revert or cherry pick the commit. <!-- c123: Images need updated. -->
 
 ![Commit details page](media/commit-details/1Commitdetails.png)
 

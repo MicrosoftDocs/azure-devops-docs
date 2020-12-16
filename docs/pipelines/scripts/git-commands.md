@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-For some workflows you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.
+For some workflows you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to main.
 
 Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-premises agents](../agents/agents.md).
 
@@ -179,9 +179,9 @@ On the [build tab](../tasks/index.md) add this task:
 | ---- | --------- |
 |  :::image type="icon" source="../tasks/utility/media/command-line.png"::: <br/>[Utility: Command Line](../tasks/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
 
-### Merge a feature branch to master
+### Merge a feature branch to main
 
-You want a CI build to merge to master if the build succeeds.
+You want a CI build to merge to main if the build succeeds.
 
 ::: moniker range="< tfs-2018"
 Make sure to follow the above steps to [enable Git](#enable).
@@ -194,17 +194,17 @@ Create ```merge.bat``` at the root of your repo:
 ```bat
 @echo off
 ECHO SOURCE BRANCH IS %BUILD_SOURCEBRANCH%
-IF %BUILD_SOURCEBRANCH% == refs/heads/master (
-   ECHO Building master branch so no merge is needed.
+IF %BUILD_SOURCEBRANCH% == refs/heads/main (
+   ECHO Building main branch so no merge is needed.
    EXIT
 )
 SET sourceBranch=origin/%BUILD_SOURCEBRANCH:refs/heads/=%
-ECHO GIT CHECKOUT MASTER
-git checkout master
+ECHO GIT CHECKOUT MAIN
+git checkout main
 ECHO GIT STATUS
 git status
 ECHO GIT MERGE
-git merge %sourceBranch% -m "Merge to master"
+git merge %sourceBranch% -m "Merge to main"
 ECHO GIT STATUS
 git status
 ECHO GIT PUSH
@@ -244,7 +244,7 @@ Yes
 
 Add ```***NO_CI***``` to your commit message. Here are examples:
 * ```git commit -m "This is a commit message ***NO_CI***"```
-* ```git merge origin/features/hello-world -m "Merge to master ***NO_CI***"```
+* ```git merge origin/features/hello-world -m "Merge to main ***NO_CI***"```
 
 ::: moniker-end
 
@@ -252,7 +252,7 @@ Add ```***NO_CI***``` to your commit message. Here are examples:
 
 Add `[skip ci]` to your commit message or description. Here are examples:
 * ```git commit -m "This is a commit message [skip ci]"```
-* ```git merge origin/features/hello-world -m "Merge to master [skip ci]"```
+* ```git merge origin/features/hello-world -m "Merge to main [skip ci]"```
 
 You can also use any of the variations below. This is supported for commits to Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server.
 
