@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Filter by target branch in pull requests (PRs)
 
-Pull requests let your team review code and give feedback on changes before merging them into the master branch. They have become an important part of many teams’ workflows since you can step through proposed changes, leave comments, and vote to approve or reject code changes.
+Pull requests let your team review code and give feedback on changes before merging them into the main branch. They have become an important part of many teams’ workflows since you can step through proposed changes, leave comments, and vote to approve or reject code changes.
 
 To make it easier for you to find your pull requests, we added a filtering option to let you search for PRs using the target branch. 
 

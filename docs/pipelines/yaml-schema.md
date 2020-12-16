@@ -1029,7 +1029,7 @@ steps:
 ```yaml
 # File: azure-pipelines.yml
 trigger:
-- master
+- main
 
 extends:
     template: simple-param.yml
@@ -1106,7 +1106,7 @@ resources:
     trigger:
       branches:
         include:
-        - master
+        - main
         - releases/*
         exclude:
         - users/*
@@ -1249,7 +1249,7 @@ resources:
   - repository: string  # identifier (A-Z, a-z, 0-9, and underscore)
     type: enum  # see the following "Type" topic
     name: string  # repository name (format depends on `type`)
-    ref: string  # ref name to use; defaults to 'refs/heads/master'
+    ref: string  # ref name to use; defaults to 'refs/heads/main'
     endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
     trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
       branches:
@@ -1420,7 +1420,7 @@ List syntax:
 
 ```yaml
 trigger:
-- master
+- main
 - develop
 ```
 
@@ -1539,7 +1539,7 @@ List syntax:
 
 ```yaml
 pr:
-- master
+- main
 - develop
 ```
 
@@ -1604,7 +1604,7 @@ schedules:
   displayName: Daily midnight build
   branches:
     include:
-    - master
+    - main
     - releases/*
     exclude:
     - releases/ancient/*
@@ -1619,7 +1619,7 @@ schedules:
 In the preceding example, two schedules are defined.
 
 The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last successful scheduled run.
-It runs the pipeline for `master` and all `releases/*` branches, except for those branches under `releases/ancient/*`.
+It runs the pipeline for `main` and all `releases/*` branches, except for those branches under `releases/ancient/*`.
 
 The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays for all `releases/*` branches.
 It does so regardless of whether the code has changed since the last run.
@@ -2198,7 +2198,7 @@ resources:
     name: MyGitHubToolsOrg/tools
 
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
