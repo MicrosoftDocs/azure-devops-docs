@@ -100,5 +100,4 @@ In addition, refer to this article regarding structure and syntax of ARM Templat
 
 ## Open source
 
-
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
