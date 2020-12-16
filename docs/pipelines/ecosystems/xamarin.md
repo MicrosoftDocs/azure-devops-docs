@@ -40,7 +40,7 @@ https://github.com/MicrosoftDocs/pipelines-xamarin
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-  > When the **Configure** tab appears, select **Xamarin.Android** to build an Android project or **Xamarin.iOS** to build an iOS project.
+  > When the **Configure** tab appears, select **Xamarin.Android** to build an Android project or **Xamarin.iOS** to build an iOS project. If you want to use the included sample `.yml` files, choose **Existing Azure Pipelines YAML file** and choose from one of the include sample pipelines (Android, macOS, or a combined pipeline that builds both).
 
 7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
@@ -92,6 +92,7 @@ steps:
     projectFile: '**/*Droid*.csproj'
     outputDirectory: '$(outputDirectory)'
     configuration: '$(buildConfiguration)'
+    msbuildVersionOption: '16.0'
 ```
 
 ### Sign a Xamarin.Android app
@@ -166,39 +167,66 @@ To set a specific Xamarin SDK version to use on the Microsoft-hosted macOS agent
 You can build and test your Xamarin.Android app, Xamarin.iOS app, and related apps in the same pipeline by defining multiple [jobs](../process/phases.md) in `azure-pipelines.yml`. These jobs can run in parallel to save time. The following complete example builds a Xamarin.Android app on Windows, and a Xamarin.iOS app on macOS, using two jobs.
 
 ```yaml
-# https://docs.microsoft.com/vsts/pipelines/ecosystems/xamarin
+# Xamarin.Android and Xamarin.iOS
+# Build a Xamarin.Android and Xamarin.iOS app.
+# Add steps that test, sign, and distribute the app, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xamarin
+
 jobs:
+
 - job: Android
   pool:
     vmImage: 'windows-2019'
+
   variables:
     buildConfiguration: 'Release'
     outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
+
   steps:
   - task: NuGetToolInstaller@1
+
   - task: NuGetCommand@2
     inputs:
       restoreSolution: '**/*.sln'
+
   - task: XamarinAndroid@1
     inputs:
       projectFile: '**/*droid*.csproj'
       outputDirectory: '$(outputDirectory)'
       configuration: '$(buildConfiguration)'
+      msbuildVersionOption: '16.0'
+
+  - task: AndroidSigning@3
+    inputs:
+      apksign: false
+      zipalign: false
+      apkFiles: '$(outputDirectory)/*.apk'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: '$(outputDirectory)'
 
 - job: iOS
   pool:
-    vmImage: 'macOS-10.14'
-  variables:
-    buildConfiguration: 'Release'
+    vmImage: 'macOS-10.15'
+
   steps:
+  # To manually select a Xamarin SDK version on the Hosted macOS agent, enable this script with the SDK version you want to target
+  # https://go.microsoft.com/fwlink/?linkid=871629
+  - script: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1 
+    displayName: 'Select Xamarin SDK version'
+    enabled: false
+
   - task: NuGetToolInstaller@1
+
   - task: NuGetCommand@2
     inputs:
       restoreSolution: '**/*.sln'
+
   - task: XamariniOS@2
     inputs:
-      solutionFile: '**/*iOS.csproj'
-      configuration: '$(buildConfiguration)'
+      solutionFile: '**/*.sln'
+      configuration: 'Release'
       buildForSimulator: true
       packageApp: false
 ```
