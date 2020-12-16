@@ -267,7 +267,7 @@ Supported identifiers for **integrations** (tools or services that integrate wit
 * `Microsoft.TeamFoundation.Server.Integration`: integrates with TFS
 * `Microsoft.VisualStudio.Services.Integration`: integrates with both. Shortcut for `Microsoft.VisualStudio.Services.Cloud.Integration` and `Microsoft.TeamFoundation.Server.Integration`
 
-For more information, see [Azure DevOps extensibility points](/previous-versions/azure/devops/docs/extend/reference/targets/overview).
+For more information, see [Azure DevOps extensibility points](/previous-versions/azure/devops/extend/reference/targets/overview).
 
 ### Examples
 
