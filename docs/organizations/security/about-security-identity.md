@@ -18,7 +18,9 @@ ms.date: 12/07/2020
 
 
 
-Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access. Accounts get access to Azure DevOps through authentication of their security credentials and authorization of their account entitlements to access a feature or function. The following table summarizes the  various account types and methods used to secure your organization and projects. 
+Azure DevOps employs a number of security concepts to ensure only those who should have access to features, functions, and data have access. Accounts get access to Azure DevOps through authentication of their security credentials and authorization of their account entitlements to access a feature or function. 
+
+This article builds on the information provided in [About permissions, access, and security groups](about-permissions.md). Administrators benefit from understanding the account types, authentication methods, authorization methods, and policies used to secure Azure DevOps.  
 
 ::: moniker range="azure-devops"
 
@@ -136,7 +138,7 @@ While the main types of accounts of interest are the user accounts that you add 
 
 ::: moniker-end
 
-The most effective means for managing accounts is by adding them to security groups. 
+The most effective means for managing accounts is by [adding them to security groups](about-permissions.md#security-group-membership). 
 
 > [!NOTE]  
 > The organization owner and members of the Project Collection Administrators group are granted full access to most all features and functions. 
@@ -162,7 +164,7 @@ Other applications and services can integrate with services and resources in Azu
 
 - [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to generate tokens for:  
 	- Accessing specific resources or activities, like builds or work items
-	- Clients like Xcode and Nuget that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication 
+	- Clients like Xcode and NuGet that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication 
 	- Accessing [Azure DevOps REST APIs](/rest/api/azure/devops/)
 
 - [OAuth](../../integrate/get-started/authentication/oauth.md) 
@@ -196,7 +198,7 @@ To learn more about how to choose the right authentication mechanism, see [Guida
 
 Authorization verifies that the identity which is attempting to connect has the necessary permissions to access a service, feature, function, object, or method. Authorization always occurs after successful authentication. If a connection is not authenticated, it fails before any authorization checking is performed. If authentication of a connection succeeds, a specific action might still be disallowed because the user or group did not have authorization to perform that action.
 
-Authorization depends on the permissions assigned to the account. Permissions are granted either directly to an account, or through membership in a security group or security role. Access levels and feature flags can also grant or restrict access to a feature. 
+Authorization depends on the permissions assigned to the account. Permissions are granted either directly to an account, or through membership in a security group or security role. Access levels and feature flags can also grant or restrict access to a feature. To learn more about these authorization methods, see [About permissions, access, and security groups](about-permissions.md). 
 
 
 <a id="namespaces" /> 
@@ -215,27 +217,40 @@ To learn more, see [Security namespaces and permission reference](namespace-refe
 
 To secure your organization and code, you can set a number of policies. Specifically, you can enable or disable the following policies: 
 
+### General 
+
 - **Privacy policy URL**: Specifies a URL that links to your custom document that describes how you handle both internal and external guest data privacy. To learn more, see [Add a privacy policy URL for your organization](../accounts/add-privacy-policy-url.md).  
 
-- **Application connection and security policies**
-	- **Third-party application access via OAuth**: When enabled, allows third-part applications to connect using OAuth. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md).
-	- **SSH authentication access**: When enabled, allows applications to connect using SSH authentication. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md) 
-	- Allow public projects: When enabled, users can create public projects which allows non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. Learn more at [Make your project public](../public/make-project-public.md) and [Enable anonymous access to projects for your organization](../public/create-public-project.md#enable-anonymous-access-to-projects-for-your-organization). 
-	- **Enterprise access to projects**: When disabled, all projects that are shared with your enterprise become private projects which means that they are no longer viewable by all users in your enterprise. 
-	- **Restrict organization creation via Azure AD tenant policy** (*Only valid when the organization is backed by Azure Active Directory.*): When enabled, restricts users from creating additional Azure DevOps organizations that would automatically be backed by the Azure AD. To learn how to enable, see [Restrict organization creation via Azure AD tenant policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md)
-	- **Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation** (*Only valid when the organization is backed by Azure Active Directory.*): When enabled, allows you to set additional conditions on accessing the organization. Depending on which conditions the user satisfies, you can require multi-factor authentication, further checks, or block access. This policy is set to *off* by default and only applies to alternative credentials. This policy doesn't apply for CAPs set in Azure AD, no matter the settings in Azure DevOps. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md). 
+### Application connection and security policies
 
-- **User policies**
-	- **External guest access** (*Only valid when the organization is backed by Azure Active Directory.*):  When enabled, invitations can be sent to email accounts of users who aren't members of the tenant Azure Active Directory through the **Users** page. To learn more, see [Add external users to your organization](../accounts/add-external-user.md).  
-	- **Allow team and project administrators to invite new users**: Only valid when the organization is backed by Azure Active Directory. When enabled, team and project administrators can add users through the **Users** page. To learn more, see [Restrict new user invitations from Project and Team Administrators](restrict-invitations.md).   
-	- **Request access**: Only valid when the organization is backed by Azure Active Directory. When enabled, users can request access to a resource. A request results in an email notification to the administrators asking for review and access, as needed. To learn more, see [Add external users to your organization](../accounts/add-external-user.md).  
-	- **Invite GitHub users**: Only valid when the organization isn't backed by Azure Active Directory. When enabled, administrators can add users based on their GitHub user accounts from the **Users** page.  To learn more, see [Authenticating & inviting GitHub users FAQs](faq-github-authentication.md#github-users) 
+- **Third-party application access via OAuth**: When enabled, allows third-part applications to connect using OAuth. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md).
+- **SSH authentication access**: When enabled, allows applications to connect using SSH authentication. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md). 
+- Allow public projects: When enabled, users can create public projects which allows non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. Learn more at [Make your project public](../public/make-project-public.md) and [Enable anonymous access to projects for your organization](../public/create-public-project.md#enable-anonymous-access-to-projects-for-your-organization). 
+- **Enterprise access to projects**: When disabled, all projects that are shared with your enterprise become private projects which means that they are no longer viewable by all users in your enterprise. 
+- **Restrict organization creation via Azure AD tenant policy** (*Only valid when the organization is backed by Azure Active Directory.*): When enabled, restricts users from creating additional Azure DevOps organizations that would automatically be backed by the Azure AD. To learn how to enable, see [Restrict organization creation via Azure AD tenant policy](../accounts/azure-ad-tenant-policy-restrict-org-creation.md).
+- **Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation** (*Only valid when the organization is backed by Azure Active Directory.*): When enabled, allows you to set additional conditions on accessing the organization. Depending on which conditions the user satisfies, you can require multi-factor authentication, further checks, or block access. This policy is set to *off* by default and only applies to alternative credentials. This policy doesn't apply for CAPs set in Azure AD, no matter the settings in Azure DevOps. To learn more, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md). 
 
-- **Git repository and branch policies**
-	- [Configure repository settings and policies](../../repos/git/repository-settings.md)
-	- [Configure branch policies](../../repos/git/branch-policies.md)
-	- [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)
-	- [Use Azure Functions to create custom branch policies](../../repos/git/create-pr-status-server-with-azure-functions.md) 
+### User policies 
+- **External guest access** (*Only valid when the organization is backed by Azure Active Directory.*):  When enabled, invitations can be sent to email accounts of users who aren't members of the tenant Azure Active Directory through the **Users** page. To learn more, see [Add external users to your organization](../accounts/add-external-user.md).  
+- **Allow team and project administrators to invite new users**: Only valid when the organization is backed by Azure Active Directory. When enabled, team and project administrators can add users through the **Users** page. To learn more, see [Restrict new user invitations from Project and Team Administrators](restrict-invitations.md).   
+- **Request access**: Only valid when the organization is backed by Azure Active Directory. When enabled, users can request access to a resource. A request results in an email notification to the administrators asking for review and access, as needed. To learn more, see [Add external users to your organization](../accounts/add-external-user.md).  
+- **Invite GitHub users**: Only valid when the organization isn't backed by Azure Active Directory. When enabled, administrators can add users based on their GitHub user accounts from the **Users** page.  To learn more, see [Authenticating & inviting GitHub users FAQs](faq-github-authentication.md#github-users). 
+
+<a id="project-scoped-user-group" /> 
+
+### Project-scoped User group 
+
+By default, users added to an organization can view all organization and project information and settings. This includes viewing list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**. 
+
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
+
+To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+
+### Git repository and branch policies 
+- [Configure repository settings and policies](../../repos/git/repository-settings.md)
+- [Configure branch policies](../../repos/git/branch-policies.md)
+- [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)
+- [Use Azure Functions to create custom branch policies](../../repos/git/create-pr-status-server-with-azure-functions.md) 
 
 ::: moniker-end 
 
@@ -278,50 +293,4 @@ Since repositories and build and release pipelines pose unique security challeng
 - [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups)
 - [Setting up HTTPS with Secure Sockets Layer (SSL)](/azure/devops/server/admin/setup-secure-sockets-layer)
 - [Default permissions and access assignments](permissions-access.md)
-
-<!-- TODO: Cover how to set permissions for Reporting Services and SharePoint as mainline sections.
-
-Azure DevOps security concepts fall into three general categories: topology, authentication, and authorization. Topology includes where and how on-premises servers are deployed, the network traffic that passes between Azure DevOps servers and clients, and the services that must run on Azure DevOps. Authentication includes the determination of the validity of Azure DevOps users, groups, and services. Authorization includes the determination of whether valid Azure DevOps users, groups, and services have the appropriate permissions to perform actions. Also, you must consider Azure DevOps Server dependencies on other components and services in order to optimize the security of your on-premises network.
-When you consider Azure DevOps Server security, you must understand the difference between authentication and authorization.
-
-## Permissions 
-
-Besides configuring permissions for authorization, you might need authorization within source code control and within work items. These permissions are managed separately at the command line, but are integrated as part of the Team Explorer interface. For more information about source control permissions, see Team Foundation Version Control. For more information about work item customization, see Working with Team Foundation Work Items.
-
-Azure DevOps controls access through these three inter-connected functional areas:
-
--   **Membership management** supports adding individual Windows user accounts and groups to default security groups. Also, you can create Azure DevOps security groups. Each default group is associated with a set of default permissions. All users added to any security group are added to the Valid Users group. A valid user is someone who can connect to the project.
-
--   **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build pipeline, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**. To learn more about inheritance, see [About permissions, access, and security groups](about-permissions.md#inheritance).
-
--   **Access level management** controls access to features provided via the web portal, the web application for Azure DevOps. Based on  what has been purchased for a user, administrators set the user's access  level to Basic, VS Enterprise (previously Advanced), or Stakeholder. 
-
-Each functional area uses groups to simplify management across the deployment. You add users and groups through the web administration context. Permissions are automatically set based on the security group that you add users to, or based on the object, project, collection, or server level to which you add groups. On the other hand, access level management controls access for all users at the server level.
-
-<img src="media/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
-
-You can create local groups or Active Directory (AD) [groups to manage your users](/azure/devops/server/admin/setup-ad-groups). If you decide to use groups, make sure that membership in those groups is limited to valid users. Because group membership can be altered by their owners at any time, if those owners did not consider Azure DevOps Server access when they created those groups, their changes to membership can cause unwanted side effects within the server.
-
-### Default permissions set for the Contributors group 
-
-The following image shows the default permission assignments made to the Contributors group.
-
-![Contributor role default permissions](media/contributor-permissions.png)
-
-To learn more about other groups and their permission assignments,
-see [Permissions and groups reference](permissions.md).
-
-Permissions can be inherited based on assignments made to a project  
-Authorization is based on users and groups, and the permissions assigned directly to both those users and groups and permissions those users and groups might inherit by belonging to one or more Azure DevOps security groups. These users and groups can be Azure AD or AD users and groups. For on-premises deployments, they can also be local Windows users and groups.
-
-Also, for select features, users and groups may need to belong to an access level that grants them access to a feature. 
-
-- Default security groups
-- Custom security groups
-- Security groups 
-- Team groups 
-- Azure Active Directory 
-- Active Directory (on-premises) 
-- Workgroups (on-premises) 
-- Windows group 
---> 
+ 
