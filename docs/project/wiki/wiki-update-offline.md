@@ -73,7 +73,7 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 	Enter it in your browser to view the files defined under the wikiMaster branch.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Wiki Master files](media/wiki/work-offline-wikiMaster-files.png)
+	> ![Wiki Main files](media/wiki/work-offline-wikiMaster-files.png)
 
 3. Use the URL that you copied to clone the repo in the IDE that you use. To learn more, see one of the following articles:
 	- [Clone an existing Git repo](../../repos/git/clone.md)
