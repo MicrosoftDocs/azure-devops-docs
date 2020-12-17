@@ -62,7 +62,7 @@ When using this progress report, it is good to know the following points:
 5. Data for test plans migrated from TFS/Server will not show up in this report. You can leverage this report for test plans created in Azure DevOps Services on or after September 1, 2019. 
 
 ### Provide feedback
-Reach us at devops_tools@microsoft.com to share your thoughts on the Progress Report. In the process, share screenshots as appropriate.
+Go to: https://developercommunity.visualstudio.com/content/problem/post.html?space=21 to report any problem you might be facing with the Progress Report. In the process, share screenshots as appropriate.
 
 :::moniker-end
 
