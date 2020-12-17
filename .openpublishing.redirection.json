@@ -17587,6 +17587,11 @@
       "source_path": "docs/pipelines/overview.md",
       "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/extension-statistics-powerbi-contentpack.md",
+      "redirect_url": "/azure/devops/report/powerbi/overview",
+      "redirect_document_id": true
     }
   ]
 }
