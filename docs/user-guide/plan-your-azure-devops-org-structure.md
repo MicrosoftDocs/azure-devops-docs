@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 robots: NOINDEX, NOFOLLOW
-ms.topic: Conceptual
+ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 11/16/2020
 ---

@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 12/07/2020
 ---
 
-# About permissions, access, and security groups  
+# Get started with permissions, access, and security groups  
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
