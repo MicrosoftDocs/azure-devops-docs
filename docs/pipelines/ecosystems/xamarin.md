@@ -42,21 +42,21 @@ This sample is the  `FirstApp` sample from the `https://github.com/xamarin/xamar
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
-  > When the **Configure** tab appears, select **Xamarin.Android** to build an Android project or **Xamarin.iOS** to build an iOS project. If you want to use the included sample `.yml` files, choose **Existing Azure Pipelines YAML file** and choose from one of the include sample pipelines (Android, iOS, or a combined pipeline that builds both).
+7. When the **Configure** tab appears, select **Xamarin.Android** to build an Android project or **Xamarin.iOS** to build an iOS project. If you want to use the included sample `.yml` files, choose **Existing Azure Pipelines YAML file** and choose from one of the included sample pipelines (Android, iOS, or a combined pipeline that builds both).
 
-7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+8. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
    > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
-8. If you created a new YAML file you're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+9. If you created a new YAML file you're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
    If you want to watch your pipeline in action, select the build job.
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
-9. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+10. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
-10. See the sections below to learn some of the more common ways to customize your pipeline.
+11. See the sections below to learn some of the more common ways to customize your pipeline.
 
 
 ## Set up Xamarin tools
