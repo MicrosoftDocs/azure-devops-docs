@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
-title: Collaborate documentation
-summary: Share information, create public projects, integrate with other services, and collaborate with team members and stakeholders in Azure DevOps.
+title: Wikis, Public Projects, work across projects
+summary: Share information, create public projects, and work across projects.  
 
 metadata:
   title: Collaborate documentation
@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 10/08/2019 
+  ms.date: 12/17/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
