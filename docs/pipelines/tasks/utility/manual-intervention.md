@@ -19,7 +19,7 @@ typically to perform some manual steps or actions, and then continue the automat
 
 ## Demands
 
-Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline. This guide refers to classic pipelines only. For YAML usage, please refer to the [Manual Validation Task page](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/manual-validation?view=azure-devops&tabs=yaml).
+Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline. This article refers only to classic pipelines. For YAML usage, see [Manual Validation task](manual-validation.md?view=azure-devops&tabs=yaml).
 
 ![Configuring a Manual Intervention task](media/maninter-use-variables.png)
 
