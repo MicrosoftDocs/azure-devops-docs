@@ -27,7 +27,7 @@ Before you begin, you need:
 [!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ```
-https://github.com/MicrosoftDocs/pipelines-xamarin
+https://github.com/steved0x/pipelines-xamarin
 ```
 
 This sample is the  `FirstApp` sample from the `https://github.com/xamarin/xamarin-forms-samples` repository. For more information on this sample, see [Build your first Xamarin.Forms App](/xamarin/get-started/first-app/?pivots=windows).
