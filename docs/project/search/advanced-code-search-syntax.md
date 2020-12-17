@@ -299,10 +299,8 @@ Some more examples of search strings are:
 
 * You can use the code type search functions with files written in C#, C, C++, Java, and Visual Basic.NET.
 
-Open the search results in a new browser tab from either search box by
-pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-![start search icon](media/shared/start-search-icon.png) icon.
-In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+Open the search results in a new browser tab from either search box and
+press _Ctrl_ + _Enter_. In Google Chrome, select _Ctrl_ + _Shift_ + _Enter_ to switch the focus
 to the new browser tab. 
 
 

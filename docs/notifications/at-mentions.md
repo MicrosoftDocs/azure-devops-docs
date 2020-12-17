@@ -3,13 +3,14 @@ title: Use @mentions in work items and pull requests
 titleSuffix: Azure DevOps 
 description: Alert team members using the @mention control in work items and pull requests 
 ms.technology: devops-collab
+ms.custom: quarterly-update
 ms.assetid: 
 toc: show
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 12/30/2019
+ms.date: 12/07/2020
 ---
 
 # Use &#64;mentions in work items and pull requests
@@ -61,7 +62,7 @@ To filter the list, enter the user name or alias until you've found a match.
 
 ::: moniker range=">= azure-devops-2020"
 
-You can also use group mentions. Enter the name of a team or a security group, choose the search icon, and then select from the options listed.
+You can also use group mentions. Enter the name of a team or a security group, choose :::image type="icon" source="../media/icons/search-icon.png" border="false"::: **Search**, and then select from the options listed.
 
 > [!NOTE]
 > For feature availability, check the [Feature Timeline](/azure/devops/release-notes/features-timeline).

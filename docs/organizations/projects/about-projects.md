@@ -84,7 +84,7 @@ You can view the projects defined for your organization by opening the **Project
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.
+1. Select :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
     > ![Open Projects](media/about-projects/projects-hub-vert.png)  
@@ -95,7 +95,7 @@ You can view the projects defined for your organization by opening the **Project
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.
+1. Select :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
     > ![Screenshot of open Projects button, horizontal nav](../../media/settings/open-project-hub-horz.png)
