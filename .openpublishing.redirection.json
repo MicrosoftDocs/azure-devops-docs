@@ -16685,7 +16685,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "release-notes/docswhatsnew/azure-devops-docs-2020-10.md",
+      "source_path": "release-notes/docswhatsnew/azure-devops-docs-2020-11.md",
       "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
     },
     {
@@ -17581,6 +17581,11 @@
     {
       "source_path": "docs/organizations/security/setup-ad-aad.md",
       "redirect_url": "/azure/devops/organizations/security/about-permissions#aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/overview.md",
+      "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
       "redirect_document_id": false
     }
   ]

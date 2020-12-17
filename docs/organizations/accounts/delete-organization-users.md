@@ -45,7 +45,7 @@ If users no longer require access to a team, project, or your organization, you 
 
     ![Organization settings > Users](../../media/open-organization-settings-users-preview.png)
 
-4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
+4. Select **...**  for the user to be removed. Select **Remove from organization**.
 
    ![Remove a user from your organization](media/delete-user/remove-user-from-organization-preview.png)
 

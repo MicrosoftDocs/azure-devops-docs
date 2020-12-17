@@ -201,7 +201,7 @@ With first-party extensions that come pre-installed with TFS, there's an alterna
 
 In this case, you can manage extensions in disconnected TFS by following the steps below:
 
-1. Hover over the shopping bag icon and select **Manage extensions**
+1. Hover over the shopping bag and select **Manage extensions**
 
    ![Select Manage extensions.](./media/get-tfs-extensions/standalone/manage-extensions.png)
 

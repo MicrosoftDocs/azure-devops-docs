@@ -85,7 +85,7 @@ Activity from your project begins appearing in your Teams channel.
 
 ## Configure Azure DevOps tabs in Microsoft Teams
 
-1. To bring your Kanban board or dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
+1. To bring your Kanban board or dashboard into Microsoft Teams, select **+ Add new tab** on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
 
    ![Add a new tab to Teams channel](./media/teams/teams-as-website.png)
 
