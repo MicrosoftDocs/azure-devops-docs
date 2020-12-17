@@ -21,9 +21,15 @@
   - name: Search your repo, work items, or wiki 
     href: ../project/navigation/search-basics.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
   - name: Manage or enable features  
-    href: ../project/navigation/preview-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+    href: navigation/preview-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
 - name: Search
-  href: ../project/search/toc.yml 
+  items
+  - name: Search across your projects
+    href: ../project/search/overview.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Search code
+    href: ../project/search/code-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+  - name: Search work items
+    href: ../project/search/work-item-search.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
 - name: Migrate & import
   href: ../migrate/toc.yml 
 - name: Permissions & access

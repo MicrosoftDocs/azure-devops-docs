@@ -4,6 +4,8 @@
   href: ./navigation/work-across-projects.md
 - name: Work across projects FAQs
   href: work-across-projects-faqs.md
+- name: Navigation
+  href: navigation/toc.yml
 - name: Search  
   href: search/toc.yml
 - name: Public Projects
