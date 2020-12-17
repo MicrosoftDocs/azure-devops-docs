@@ -1,4 +1,4 @@
-- name: Cross-platform & Collaboration 
+- name: Wikis, Public Projects, work across projects
   href: index.yml
 - name: Work across projects 
   href: ./navigation/work-across-projects.md
@@ -6,45 +6,10 @@
   href: work-across-projects-faqs.md
 - name: Search  
   href: search/toc.yml
-- name: Dashboards
-  href: ../report/dashboards/toc.yml
-- name: Analytics
-  href: ../report/powerbi/toc.yml
-- name: Wiki
-  href: wiki/toc.yml
-- name: Notifications
-  href: ../notifications/toc.yml
-- name: Azure Boards and GitHub
-  href: ../boards/github/toc.yml
 - name: Public Projects
   href: ../organizations/public/toc.yml
-
-- name: Integrations
-  items:
-  - name: Microsoft Teams
-    items:
-    - name: Azure Boards with Teams
-      href: ../boards/integrations/boards-teams.md
-    - name: Azure Repos with Teams
-      href: ../repos/integrations/repos-teams.md
-    - name: Azure Pipelines with Teams
-      href: ../pipelines/integrations/microsoft-teams.md
-  - name: Slack
-    items:
-    - name: Azure Boards with Slack
-      href: ../boards/integrations/boards-slack.md
-    - name: Azure Repos with Slack
-      href: ../repos/integrations/repos-slack.md
-    - name: Azure Pipelines with Slack
-      href: ../pipelines/integrations/slack.md
-  - name: Azure Pipelines with ServiceNow
-    href: ../pipelines/release/approvals/servicenow.md
-  - name: Azure Pipelines with Jenkins
-    href: ../pipelines/release/integrate-jenkins-pipelines-cicd.md
-  - name: Azure Pipelines with Terraform
-    href: ../pipelines/release/automate-terraform.md
-- name: Marketplace extensions 
-  href: ../marketplace/toc.yml
+- name: Wiki
+  href: wiki/toc.yml
 - name: REST API Reference
   items:
   - name: Projects
