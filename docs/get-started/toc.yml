@@ -23,7 +23,7 @@
   - name: Manage or enable features  
     href: navigation/preview-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
 - name: Search
-  items
+  items:
   - name: Search across your projects
     href: ../project/search/overview.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
   - name: Search code
