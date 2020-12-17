@@ -252,6 +252,7 @@ additionalContent:
             - url: /azure/devops-project/azure-devops-project-github
               text: Azure DevOps Projects & GitHub
     - title: Configure & customize resources
+      items:    
         # Card
         - title: Settings, Security, & Usage
           links:
