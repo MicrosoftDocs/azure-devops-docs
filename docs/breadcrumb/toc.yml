@@ -49,12 +49,6 @@
     - name: Start using Azure DevOps
       tocHref: /azure/devops/user-guide/
       topicHref: /azure/devops/user-guide/what-is-azure-devops
-    - name: Web portal navigation
-      tocHref: /azure/devops/project/navigation/
-      topicHref: /azure/devops/project/navigation/index
-    - name: Search
-      tocHref: /azure/devops/project/navigation/
-      topicHref: /azure/devops/project/search/index
     - name: Migrate & import
       tocHref: /azure/devops/migrate/
       topicHref: /azure/devops/migrate/migration-overview
@@ -92,7 +86,7 @@
     - name: Notifications
       tocHref: /azure/devops/notifications
       topicHref: /azure/devops/notifications/about-notifications
-  - name: Azure Boards settings 
+  - name: Azure Boards customization 
     tocHref: /azure/devops/reference/
     topicHref: /azure/devops/reference/index
     items:
@@ -101,6 +95,9 @@
       topicHref: /azure/devops/organizations/settings/work/inheritance-process-model
     - name: On-premises XML process
       tocHref: /azure/devops/reference/xml/ 
+      topicHref: /azure/devops/reference/on-premises-xml-process-model
+    - name: Hosted XML process
+      tocHref: /azure/devops/organizations/settings/work/hosted 
       topicHref: /azure/devops/reference/on-premises-xml-process-model
     - name: Process templates
       tocHref: /azure/devops/reference/process-templates/ 
@@ -121,6 +118,9 @@
     - name: Navigation
       tocHref: /azure/devops/project/navigation/
       topicHref: /azure/devops/project/navigation/index
+    - name: Search
+      tocHref: /azure/devops/project/search/
+      topicHref: /azure/devops/project/search/index
   - name: Marketplace & extensibility
     tocHref: /azure/devops/marketplace-extensibility/
     topicHref: /azure/devops/marketplace-extensibility/index
