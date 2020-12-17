@@ -34,13 +34,15 @@ To manage licenses and group rules, you must be a Project Collection Administrat
 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Go to the **Permissions** tab, and then check the membership of the **Project Collection Administrators** group.
+3. Go to the **Permissions** tab, and then verify that you are a member of the **Project Collection Administrators** group.
 
    ![Project collection administrators group members](media/assign-access-levels/project-collection-administrators-group-members-new.png)
 
 4. Go to the **Users** tab, and then select **Group rules**. This view shows you all of your created group rules. Select **Add a group rule**.
 
    ![Select Add a group rule](media/manage-group-licensing/add-group-rule.png)
+
+	**Group rules** only appears if you are a member of the **Project Collection Administrators** group.  
 
 5. Complete the dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access for the group. Select **Add**.
 
