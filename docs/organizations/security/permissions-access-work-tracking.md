@@ -5,7 +5,8 @@ description: Default permissions and access levels for tracking work tracking in
 ms.technology: devops-agile
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
 ms.author: kaelli
-author: KathrynEEoverviewreference
+author: KathrynEE
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 11/20/2019
 ---
