@@ -193,21 +193,25 @@ tools:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Get started
+    - title: Support services
       items:
         # Card
-        - title: Key concepts
+        - title: Navigation & search 
           links:
+            - url: ./user-guide/services.md
+              text: Features & services
             - url: ./project/navigation/index.md
               text: Web portal navigation
+            - url: ./project/search/index.md
+              text: Search
+            - url: ./notifications/manage-your-personal-notifications.md
+              text: Manage personal notifications 
             - url: ./user-guide/work-team-explorer.md
               text: Team Explorer navigation
             - url: ./user-guide/tools.md
-              text: Supported tools & clients
-            - url: ./user-guide/services.md
-              text: Supported features & services
+              text: Tools & clients
             - url: ./organizations/security/get-started-stakeholder.md
-              text: Stakeholder access 
+              text: Get started as a Stakeholder 
             - url: ./get-started/index.yml
               text: "See more >"
         # Card
@@ -226,18 +230,16 @@ additionalContent:
             - url: ./report/index.yml
               text: "See more >"
         # Card
-        - title: Cross-platform & Collaboration
+        - title: Wikis, Public Projects, work across projects
           links:
+            - url: ./project/navigation/work-across-projects.md  
+              text: Create a wiki for your project
             - url: ./project/wiki/wiki-create-repo.md
               text: Create a wiki for your project
             - url: ./project/wiki/markdown-guidance.md
               text: Markdown syntax guidance
             - url: ./organizations/public/create-public-project.md
               text: Create a public project
-            - url: ./service-hooks/overview.md
-              text: Integrate with service hooks
-            - url: ./notifications/manage-your-personal-notifications.md
-              text: Manage personal notifications 
             - url: ./project/index.yml
               text: "See more >"
         # Card
@@ -249,8 +251,7 @@ additionalContent:
               text: Azure Pipelines & GitHub
             - url: /azure/devops-project/azure-devops-project-github
               text: Azure DevOps Projects & GitHub
-    - title: Tools & utilities
-      items:
+    - title: Configure & customize resources
         # Card
         - title: Settings, Security, & Usage
           links:
@@ -277,7 +278,7 @@ additionalContent:
             - text: Auditing
               url: ./organizations/audit/azure-devops-auditing.md
           # Card
-        - title: Azure Boards settings
+        - title: Azure Boards customization
           links:
             - text: Configure & customize Azure Boards
               url: ./boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json

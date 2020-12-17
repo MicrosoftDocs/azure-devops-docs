@@ -18,22 +18,7 @@
   href: ../boards/github/toc.yml
 - name: Public Projects
   href: ../organizations/public/toc.yml
-- name: Cross-service Git operations
-  items:
-  - name: Drive Git development from a work item
-    href: ../boards/backlogs/connect-work-items-to-git-dev-ops.md
-  - name: Work item completion on commit
-    href: ../repos/git/resolution-mentions.md
-  - name: Set up continuous integration
-    href: ../pipelines/build/triggers.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
-  - name: Define a CI build for your repo
-    href: ../pipelines/build/ci-build-git.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
-  - name: Create a pull request status server
-    href: ../repos/git/create-pr-status-server.md
-  - name: Use Azure Functions to create custom branch policies
-    href: ../repos/git/create-pr-status-server-with-azure-functions.md
-  - name: Configure branch policy for an external service
-    href: ../repos/git/pr-status-policy.md
+
 - name: Integrations
   items:
   - name: Microsoft Teams
@@ -60,14 +45,6 @@
     href: ../pipelines/release/automate-terraform.md
 - name: Marketplace extensions 
   href: ../marketplace/toc.yml
-- name: Feedback
-  href: feedback/toc.yml 
-- name: Project portal & process guidance
-  items:
-  - name: Configure or add a project portal
-    href: configure-or-add-a-project-portal.md 
-  - name: Configure or redirect process guidance
-    href: configure-or-redirect-process-guidance.md 
 - name: REST API Reference
   items:
   - name: Projects
