@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Understand the set of namespaces used to manage security  
 ms.technology: devops-security
 ms.custom: quarterly-review, devx-track-azurecli
-ms.topic: conceptual
+ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
