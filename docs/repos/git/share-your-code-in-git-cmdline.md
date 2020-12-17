@@ -142,7 +142,7 @@ Create a local Git repo for your code. If your code is already in a local Git re
 Before pushing your code, set up authentication with [credential managers](set-up-credential-managers.md) or [SSH](use-ssh-keys-to-authenticate.md) before continuing.
 
 ```
-git push origin master
+git push origin main
 ```
 
 ## Next steps

@@ -78,6 +78,7 @@ uses a new branch for every feature or fix you work on. You make [commits](commi
 
    ![Creating a Local Branch off the main branch in Visual Studio](media/newVSBranch.png)  
 
+
    Choose a descriptive branch name for your work to remind you and others what kind of work is in the branch. 
 
 2. Make changes to your files in the cloned repo. From the Team Explorer **Home** view, you can open up Visual Studio solutions in the repo or browse the repo contents using the  **Show Folder View** link. Git keeps track of changes made to your code both inside and outside of Visual Studio.
