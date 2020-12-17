@@ -15,9 +15,9 @@ monikerRange: '<= azure-devops'
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 One of the tradeoffs from the [Git feature branch workflow](gitworkflow.md) is that you do not actively manage your version control history. 
-Git creates this history as you save your code in your [commits](commits.md) and merges changes back into the master branch with [pull requests](pullrequest.md).  
+Git creates this history as you save your code in your [commits](commits.md) and merges changes back into the main branch with [pull requests](pullrequest.md).  
 This generated history can get complicated when you need to update a feature branch with changes from the main branch to catch up on work committed by others. 
-Your commit history will diverge from the master branch at multiple points, making it hard to follow.
+Your commit history will diverge from the main branch at multiple points, making it hard to follow.
 
 Use `rebase` to address the problem of updating your branch with the latest changes from the main branch. 
 `Rebase` takes the changes made in the commits in your current branch and replays them on the history of another branch. 
@@ -40,7 +40,7 @@ In this tutorial you learn how to:
 Rebasing is a powerful tool for catching up changes a main branch but you must be careful about its use. Some things to keep in mind before you rebase:
 
 1. Never rebase commits that have been [pushed](pushing.md) and shared with others. The only exception to this rule is when you are certain no one on your team is using the commits or the branch you pushed.
-2. Use rebase to catch up with the commits on another branch as you work with a local feature branch. This is especially useful when working in long-running feature branches to check how your changes work with the latest updates on the master branch.
+2. Use rebase to catch up with the commits on another branch as you work with a local feature branch. This is especially useful when working in long-running feature branches to check how your changes work with the latest updates on the main branch.
 3. You can't update a published branch with a `push` after you've rebased the local branch. You'll need to force push the branch to rewrite the history of the remote branch to match the local history. Never force push branches in use by others.
 
 During a rebase, Git attempts to reconcile the changes recorded in the commits on your branch and the changes in the commits in the target branch.
@@ -71,7 +71,7 @@ The `rebase` command takes a target branch to replay the current branch's commit
 
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
 &gt; git checkout <font color="#b5bd68">feature1</font>
-&gt; git rebase <font color="#b5bd68">master</font><br/>
+&gt; git rebase <font color="#b5bd68">main</font><br/>
 <font color="#b5bd68">First, rewinding head to replay your work on top of it...
 Applying: Updated feature 
 Applying: updated feature again
@@ -123,7 +123,7 @@ Git will now attempt to condense the commits into a single commit. After the reb
 window open up where Git asks you to give a commit message for the commit with the combined changes. You'll want to condense
 this down to one line of text (just like you would have for a normal commit) and save and quit the editor. 
 
-> Azure DevOps Services and TFS users can [squash merge](merging-with-squash.md) their pull requests to consolidate commits added to the master branch.
+> Azure DevOps Services and TFS users can [squash merge](merging-with-squash.md) their pull requests to consolidate commits added to the main branch.
 
 ## Next steps
 

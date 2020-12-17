@@ -40,7 +40,7 @@ extensions can be installed directly by users.
 
 ## What can you do with extensions?
 
-There are dozens of places where you can add to the user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](/previous-versions/azure/devops/docs/extend/reference/targets/overview).
+There are dozens of places where you can add to the user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
 
 - [Provide new Azure Pipelines tasks](./develop/add-build-task.md) that teams can use in their builds.
 - Use [dashboard widgets](./develop/add-dashboard-widget.md) to get custom views within Azure DevOps. 

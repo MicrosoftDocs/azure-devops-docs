@@ -66,8 +66,7 @@ The selected projects are always at the top of the list.
 Notice that hit counts are also shown for projects that are not selected. 
 
 Open the search results in a new browser tab from either search box by
-pressing _Ctrl+Shift+Enter_ or by holding _Ctrl_ and clicking  the
-![start search icon](media/shared/start-search-icon.png) icon.
+pressing _Ctrl+Shift+Enter_.
 
 <a name="quickfilters"></a>
 ## Quick Filters for matching in specific fields
@@ -201,12 +200,11 @@ You can use more than one `?` wildcard to match more than one character.
 <a name="seemoreworkitem"></a>
 ## See more of the work item
 
-You can quickly get a full screen view of the selected work item using the expand
-![Expand the file to fullscreen](media/shared/fullscreen-icon-expand.png)
-and shrink ![Shrink the file to a window](media/shared/fullscreen-icon-shrink.png)
-icons in the toolbar. However, another way to see more of the work item, while still being able to 
+You can quickly get a full screen view of the selected work item using 
+![Expand the file to fullscreen](media/shared/fullscreen-icon-expand.png) **expand**
+and ![Shrink the file to a window](media/shared/fullscreen-icon-shrink.png) **shrink** in the toolbar. However, another way to see more of the work item, while still being able to 
 select work items from the list of matching results, is to hide the left column filter pane
-by choosing the **&lt;** icon at the top left of the column. Use the **&gt;** icon to restore the filter pane. 
+by choosing **&lt;** at the top left of the column. Use **&gt;** to restore the filter pane. 
 
 If you are using a portrait orientation screen, use the **Preview pane: Right**
 link at the top right of the window to display the code below the 

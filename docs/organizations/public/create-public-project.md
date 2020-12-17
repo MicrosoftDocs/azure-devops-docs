@@ -31,7 +31,7 @@ You can add a public project to your existing organization, or create an organiz
 Before you can create a public project, you must enable anonymous access for your organization.
 
 1. From your web browser, sign in to Azure DevOps. You must be signed in to create a public project.
-2. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**.
+2. Choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**. Then, choose **Admin settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
@@ -43,7 +43,7 @@ Before you can create a public project, you must enable anonymous access for you
 
 ## Add a public project to your organization
 
-1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. 
+1. Choose :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: **Azure DevOps** to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open organizational settings](../../media/settings/open-projects-hub-vert-brn.png)  

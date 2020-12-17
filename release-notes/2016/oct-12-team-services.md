@@ -24,7 +24,7 @@ The most constructive feedback we have received is that users want to manage thi
 
 We’ve added two new features that make it easier to port or back out changes from the web portal: Cherry-pick and Revert.  
 
-Use the cherry-pick command to port changes in a pull request to multiple branches.  A typical use case is when a bug needs to be hotfixed, but should also be fixed in the mainline.  Once you’ve created your pull request that contains the fix to the hotfix branch, you can easily cherry-pick the same fix into the master branch.  If the PR is active, you can find the __Cherry-pick__ command on the context menu.
+Use the cherry-pick command to port changes in a pull request to multiple branches.  A typical use case is when a bug needs to be hotfixed, but should also be fixed in the mainline.  Once you’ve created your pull request that contains the fix to the hotfix branch, you can easily cherry-pick the same fix into the main branch.  If the PR is active, you can find the __Cherry-pick__ command on the context menu.
 
 ![cherry pick](media/10_12_03.png)
 

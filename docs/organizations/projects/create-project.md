@@ -95,7 +95,7 @@ If you don't want to create a project in Azure DevOps, you can create [Azure Dev
 
 ::: moniker range=">= azure-devops-2020"
 
-1. Select **Azure DevOps** to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png)
+1. Select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
 2. Choose the organization, and then select **New project**.
 
@@ -134,9 +134,8 @@ Choose the **Current page** tab for information on creating a project.
 
 ::: moniker range="azure-devops-2019 || azure-devops"
 
-1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png)
-
-2. Choose the organization, and then select **Create Project**.
+1. Select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
+2. Choose the organization, and then select **Create project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Open Projects, current page.](media/create-project/projects-hub-vert-create-project.png)  
@@ -170,7 +169,7 @@ Choose the **Preview page** tab for instructions.
 
 ::: moniker range="azure-devops-2019"
 
-1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png) Then, select **Create Project**.
+1. Select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page.  Then, select **Create project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Screenshot of Open Projects, then select Create Project.](media/create-project/projects-hub-vert-create-project.png)  
@@ -199,7 +198,7 @@ Choose the **Preview page** tab for instructions.
 
 ::: moniker range="tfs-2018"
 
-1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png) Then select **New Project**.
+1. Select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. Then, select **New project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose new project, horizontal navigation](media/create-project/projects-hub-horz-new-project.png)  
@@ -222,12 +221,12 @@ Creating a project from the web portal is supported for TFS 2015.2 and later ver
 >
 > If you want these features to be to be available, then create your project from Visual Studio/Team Explorer. For more information, see [Process template and plug-in files, Client support for project creation](../../reference/process-templates/overview-process-template-files.md#client-support).
 
-1. If you have TFS 2015.2 or a later version, select the gear button to open the **Projects** page. :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: Then choose **New Project**.
+1. If you have TFS 2015.2 or a later version, select the gear button to open the **Projects** page. :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: Then choose **New project**.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose new project, horizontal navigation](media/create-project/projects-hub-horz-new-project.png)  
 
-	Otherwise, for TFS 2015 or TFS 2015.1, open the administration overview page by choosing the gear button. :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: Then select **Server settings** and choose **New project**.
+	Otherwise, for TFS 2015 or TFS 2015.1, open the administration overview page by choosing :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: settings. Then, select **Server settings** and choose **New project**.
 
    > [!div class="mx-imgBorder"]  
    > ![New Project TFS 2017](media/create-project/new-team-project-tfs-2017.png)
@@ -398,7 +397,7 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 
 Connect to a project, collection, or server from your web browser.
 
-1. To view the projects defined for an organization, select **Azure DevOps** to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png)
+1. To view the projects defined for an organization, select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
 2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the top. Select any project to connect to that project.
 
@@ -424,7 +423,7 @@ Choose the **Current page** tab for information on connecting to projects.
 
 Connect to a project, collection, or server from your web browser.
 
-1. To view the projects defined for an organization, select **Azure DevOps** to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png)
+1. To view the projects defined for an organization, select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
 2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the top. Select any project to connect to that project.
 
@@ -446,7 +445,7 @@ Choose the **Preview page** tab for information.
 
 ::: moniker range=">= tfs-2018 <= azure-devops-2019"  
 
-1. To view the projects defined for a collection, select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png)
+1. To view the projects defined for a collection, select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
 2. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the top. Choose any project to connect to that project.
 
@@ -464,7 +463,7 @@ Choose the **Preview page** tab for information.
 
 ::: moniker range="<= tfs-2017"  
 
-Open the administration overview page by choosing the gear button and choose **Collection settings**. ![Settings button (Web Portal)](../../media/icons/gear-icon.png)
+Open the administration overview page by choosing ![Settings button (Web Portal)](../../media/icons/gear-icon.png) > **Collection settings**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Overview tab, Project list, Collection settings](media/create-project/list-projects-2017.png)

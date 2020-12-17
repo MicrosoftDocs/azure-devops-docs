@@ -21,7 +21,7 @@ In this quickstart, you learn how to search the code base of a public projects. 
 
 ## Start a search
 
-To start your search, choose **Repos > Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/media/shared/start-search-icon.png) start search icon.
+To start your search, choose **Repos** > **Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose ![start search icon](../../project/search/media/shared/start-search-icon.png) **start search**.
 
 > [!div class="mx-imgBorder"]
 > ![Code Search box, new navigation](media/search/code-search-vert.png)
@@ -66,8 +66,8 @@ To start your search, choose **Repos > Files** or other page under **Repos**, en
    > ![Use tabs to view history and compare files](media/search/code-search-contents-history-views.png)
    > 
    > Open the search results in a new browser tab from either search box by
-   > pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   > ![start search icon](../../project/search/media/shared/start-search-icon.png) icon.
+   > pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting
+   > ![start search icon](../../project/search/media/shared/start-search-icon.png) **start search**.
    > In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    > to the new browser tab.
 

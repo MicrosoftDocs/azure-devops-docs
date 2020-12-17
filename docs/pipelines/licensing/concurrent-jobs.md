@@ -196,7 +196,7 @@ When you run a [server job](../process/phases.md#server-jobs) or deploy to a [de
 
 ![Simple example of parallel jobs](media/concurrent-pipelines-vsts/concurrent-pipelines-simple-example.png)
 
-1. FabrikamFiber CI Build 102 (master branch) starts first.
+1. FabrikamFiber CI Build 102 (main branch) starts first.
 2. Deployment of FabrikamFiber Release 11 is triggered by completion of FabrikamFiber CI Build 102.
 3. FabrikamFiber CI Build 101 (feature branch) is triggered. The build can't start yet because Release 11's deployment is active. So the build stays queued.
 4. Release 11 waits for approvals. Fabrikam CI Build 101 starts because a release that's waiting for approvals does not consume a parallel job.
