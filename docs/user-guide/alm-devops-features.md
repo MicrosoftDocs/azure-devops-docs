@@ -114,7 +114,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="320">
 <p><b>Move work item to a different project (Azure DevOps Services)</b></p>
-<p>Choose the <img src="../boards/media/icons/change-team-project-icon.png" alt="Change project icon"/> Change project menu option, <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md)">move the work item to a different project</a>. </p>
+<p>Choose <img src="../boards/media/icons/change-team-project-icon.png" alt="Change project icon"/> **Change project**, <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md)">move the work item to a different project</a>. </p>
 
 <p><b>Full screen mode</b></p>
 <p>Choose <img src="../boards/media/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/media/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to enter or exit full screen mode.  </p>
@@ -138,7 +138,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <td width="30%">
 <p><b>Change work item type (Azure DevOps Services)</b></p>
-<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose the <img src="../boards/media/icons/change-type-icon.png" alt="Change type icon"/> Change type option from the <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md)">change the work item type</a>. </p>
+<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose <img src="../boards/media/icons/change-type-icon.png" alt="Change type icon"/> **Change type** <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md)">change the work item type</a>. </p>
 
 <p><b>Filter your backlog</b></p>
 <p>Use <strong>Show/Hide in progress</strong> to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
@@ -181,15 +181,15 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-index-copy-clone-work-item.png" alt="Copy or clone a work item"/><br/> <br/>
 
 <p><b>Follow a work item </b></p>
-<p>Choose the <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> Follow/Following icons to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
+<p>Choose <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> **Follow**/**Following** to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
 <img src="media/features/alm-feature-follows.png" alt="Follow a work item control"/><br/><br/>
 
 <p><b>Rich text comments</b></p>
-<p>Describe and comment on work using <a href="../boards/backlogs/add-work-items.md" data-raw-source="[formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md)">formatted text, hyperlinks, and inline images</a>. Choose <img src="../boards/media/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/media/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to expand or contract the viewing area. </p>
+<p>Describe and comment on work using <a href="../boards/backlogs/add-work-items.md" data-raw-source="[formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md)">formatted text, hyperlinks, and inline images</a>. Choose <img src="../boards/media/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/media/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to expand or contract the viewing area.</p>
 
 
 <p><b>Clear HTML formatting </b></p>
-<p>Use the <img src="../boards/media/icons/remove-formatting-icon.png" alt="Remove format"/> icon or CTRL+Spacebar to remove formatting from highlighted text.</p>
+<p>Use <img src="../boards/media/icons/remove-formatting-icon.png" alt="Remove format"/> or **CTRL+Spacebar** to remove formatting from highlighted text.</p>
 
 
 
@@ -242,7 +242,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 <p><b>Discussion </b></p>
-<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing the <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/> discussion icon.  </p>
+<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/> **discussion**.  </p>
 
 
 <p><b>Integrate Git development with work tracking </b></p>
@@ -251,7 +251,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Verify a bug, rerun test case</b></p>
-<p>Choose the <strong>Verify</strong> option from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see <a href="../test/run-manual-tests.md" data-raw-source="[Run tests for web apps](../test/run-manual-tests.md)">Run tests for web apps</a>. </p>
+<p>Choose <strong>Verify</strong> from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see <a href="../test/run-manual-tests.md" data-raw-source="[Run tests for web apps](../test/run-manual-tests.md)">Run tests for web apps</a>. </p>
 
 
 <p><b>Link work items  </b></p>
@@ -359,7 +359,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Delete a process</b></p>
-<p>Delete those inherited processes that you no longer want used. Simply choose the Delete option from its context menu.  </p>
+<p>Delete those inherited processes that you no longer want used. Choose **Delete**.  </p>
 
 <p><b>Set process permissions</b></p>
 <p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be <a href="../organizations/security/set-permissions-access-work-tracking.md#process-permissions" data-raw-source="[granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)">granted explicit permissions to edit a specific process</a>.  </p>
@@ -482,7 +482,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Definition of done</b></p>
 <p>Support your team to be in sync by <a href="../boards/boards/definition-of-done.md" data-raw-source="[specifying requirements to fulfill prior to handoff of items to a downstream work stage](../boards/boards/definition-of-done.md)">specifying requirements to fulfill prior to handoff of items to a downstream work stage</a>.</p><br/>
 <p><b>Filter by field values or parent work items</b></p>
-<p>Choose the <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> field filter icon to <a href="../boards/boards/filter-kanban-board.md" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
+<p>Choose <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> **field filter** to <a href="../boards/boards/filter-kanban-board.md" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
 <img src="media/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter fields."/><br/><br/>
 
 <p><b>Cumulative Flow Diagram </b></p>
@@ -734,12 +734,12 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Follow a work item </b></p>
-<p>Choose the <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> icons to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
+<p>Choose <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
 <img src="media/features/alm-feature-follows.png" alt="Follow a work item control"/><br/><br/>
 
 
 <p><b>Follow a pull request</b></p>
-<p>To <a href="../boards/work-items/follow-work-items.md" data-raw-source="[track the progress of a single pull request](../boards/work-items/follow-work-items.md)">track the progress of a single pull request</a>, choose the <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/> option from the context menu. </p>
+<p>To <a href="../boards/work-items/follow-work-items.md" data-raw-source="[track the progress of a single pull request](../boards/work-items/follow-work-items.md)">track the progress of a single pull request</a>, choose <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/> from the menu. </p>
 <img src="media/features/features-follow-pull-request.png" alt="Follow a pull request"/><br/><br/>
 
 <p><b>Manage work items you follow  </b></p>
@@ -1329,7 +1329,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 <p><b>Edit dashboard mode</b></p>
-<p>Add, remove, move, and configure widgets by <a href="../report/dashboards/dashboards.md" data-raw-source="[choosing the Edit dashboard icon](../report/dashboards/dashboards.md)">choosing the Edit dashboard icon</a>. Choose the checkmark icon to exit.  </p>
+<p>Add, remove, move, and configure widgets by <a href="../report/dashboards/dashboards.md" data-raw-source="[choosing Edit dashboard](../report/dashboards/dashboards.md)">choosing <b>Edit dashboard</b></a>. Select the checkmark to exit.  </p>
 <img src="../report/dashboards/media/edit-dashboard-icon.png" alt="Edit dashboard icon"/> | <img src="../report/dashboards/media/exit-edit-dashboard-mode-icon.png" alt="Exit dashboard edit mode icon"/><br/><br/>
 
 <p><b>Auto-refresh dashboards </b></p>
@@ -2051,12 +2051,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Project admin context</b></p>
-<p>Open the admin context to <a href="../organizations/settings/add-teams.md" data-raw-source="[add teams](../organizations/settings/add-teams.md)">add teams</a> and <a href="../organizations/security/change-individual-permissions.md" data-raw-source="[manage permissions](../organizations/security/change-individual-permissions.md)">manage permissions</a>. From any project hub, choose the <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> gear icon to open the admin context.</p>
+<p>Open the admin context to <a href="../organizations/settings/add-teams.md" data-raw-source="[add teams](../organizations/settings/add-teams.md)">add teams</a> and <a href="../organizations/security/change-individual-permissions.md" data-raw-source="[manage permissions](../organizations/security/change-individual-permissions.md)"> manage permissions</a>. From any project hub, choose <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> to open the admin context.</p>
 <img src="media/features/alm-feature-admin-context.png" alt="Admin context"/><br/><br/>
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md)">manage collection-level permissions</a>, and set build policies, and <a href="../extend/overview.md" data-raw-source="[manage extensions](../extend/overview.md)">manage extensions</a>. Choose the <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> gear icon to open the admin context, and then choose DefaultCollection. </p>
+<p>From the collection admin context, you can <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md)">manage collection-level permissions</a>, and set build policies, and <a href="../extend/overview.md" data-raw-source="[manage extensions](../extend/overview.md)">manage extensions</a>. Choose <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> to open the admin context, and then choose DefaultCollection. </p>
 
 
 </td>
@@ -2613,7 +2613,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Describe and comment on work to perform using <a href="../boards/backlogs/add-work-items.md" data-raw-source="[formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md)">formatted text, hyperlinks, and inline images</a>.  </p>
 
 <p><b>Discussion (Azure DevOps Services) </b></p>
-<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing the <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/> discussion icon.  </p>
+<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/>.  </p>
 <img src="media/features/alm-feature-add-work-items-discussion.png" alt="Discussion section"/><br/><br/>
 
 

@@ -34,7 +34,7 @@ While you author pages using [Markdown format](./markdown-guidance.md), you can 
 > [!div class="mx-imgBorder"]  
 > ![Wiki home page](media/wiki/wiki-edit.png)
 
-As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select the context menu icon next to **Save**. For additional shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
+As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select :::image type="icon" source="../../media/icons/context-menu.png" border="false":::next to **Save**. For additional shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Save page with a custom message](media/wiki/wiki-save-with-message.png)

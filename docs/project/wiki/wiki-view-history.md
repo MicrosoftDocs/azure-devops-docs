@@ -25,7 +25,7 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
 1. To view the revision history of a page, select the **Revisions** link provided on each page. You can also select **View revisions** in the context menu of a page.
 
-	<img src="media/wiki/click-revision.png" alt="Open revision history" style="border: 1px solid #C3C3C3;" />
+   :::image type="content" source="media/wiki/click-revision.png" alt-text="Open revision history for the page":::
 
 2. Revision pages show who made the change along with the revision message, date, and version or commit ID. To view details of a revision, select the message or version link.
 
@@ -38,13 +38,13 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
    ::: moniker range="tfs-2018"
 
-   ![Open revision history](media/wiki/revision-history.png) 
+   ![Revision history](media/wiki/revision-history.png) 
 
    ::: moniker-end
 
 3. Similar to any git file revision, the revision details page provides a **side-by-side diff view** or the **inline diff view**. Choose **Preview** to see the content of the page of the specific revision.
 
-   ![Wiki revision details for a page](media/wiki/wiki-revision-details-2.png)  
+   ![Wiki page revision details](media/wiki/wiki-revision-details-2.png)  
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -77,7 +77,7 @@ Select the **Revert** button on the revision details page to revert a change on 
 
 ::: moniker range=">= tfs-2018"
 
-![Wiki revision details for a page](media/wiki/wiki-revert.png) 
+![Wiki revision details for page](media/wiki/wiki-revert.png) 
 
 ::: moniker-end
 
@@ -96,17 +96,17 @@ If you need to revert to an earlier revision for a page that you have published 
 
 1. Preview any version by choosing the commit id from the **Revisions** page for the selected file.
 
-2. Copy the full ID of the commit by selecting the :::image type="icon" source="../../media/icons/copy-clone-icon.png" border="false"::: copy-clone icon.  Here we copy the commit id, `ca6d475a22eb1db930cf238f3b80862a78a689e4`, with the abbreviated ID of `ca6d475a`.
+2. Copy the full ID of the commit by selecting :::image type="icon" source="../../media/icons/copy-clone-icon.png" border="false"::: **Copy-clone**.  Here we copy the commit id, `ca6d475a22eb1db930cf238f3b80862a78a689e4`, with the abbreviated ID of `ca6d475a`.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Copy the full commit id for an earlier commit](media/wiki/revert-publish-as-code-copy-commit-id.png)
 
-3. Open the **Code > Commits** page and paste the ID that you copied into the Commit ID box and choose the :::image type="icon" source="../../media/icons/search-icon.png" border="false"::: search icon.
+3. Open the **Code > Commits** page and paste the ID that you copied into the Commit ID box and choose :::image type="icon" source="../../media/icons/search-icon.png" border="false"::: Search.
  
 	> [!div class="mx-imgBorder"]  
 	> ![Paste the commit id for an earlier commit.](media/wiki/revert-publish-as-code-paste-commit-id.png)
 	
-4. From the commit page, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and choose the **Revert** option.  
+4. From the commit page, select :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **Actions**, and then choose **Revert**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose revert menu option of an earlier commit](media/wiki/revert-publish-as-code-option.png)

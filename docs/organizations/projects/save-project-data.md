@@ -20,7 +20,7 @@ When you delete a project, you can't recover its data later. So, you should save
 
 You can use the following procedures to save data that users most care about, such as source code, build data, and work items.
 
-* **Source code and custom build templates:** You can download your files as a zip file. Open the ![Repository actions](../../media/icons/actions-icon.png) actions icon for the repository, file, or folder and choose **Download as Zip**. You can also choose the **Download** icon at the right side of the screen to download either all of the files in the currently selected folder, or the currently selected file.
+* **Source code and custom build templates:** You can download your files as a zip file. Open ![Repository actions](../../media/icons/actions-icon.png) **actions** for the repository, file, or folder and choose **Download as Zip**. You can also **Download** from the right side of the screen to download either all of the files in the currently selected folder, or the currently selected file.
 
   ::: moniker range=">= tfs-2017"
 

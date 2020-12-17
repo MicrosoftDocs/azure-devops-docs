@@ -293,7 +293,7 @@ Complete the [prerequisites for adding external users](add-external-user.md#prer
 
 ### Q: How do I remove an Azure AD group from Azure DevOps?
 
-A: Go to your project collection or project. In the bar at the top, select the gear icon, and then select **Security**.
+A: Go to your project collection or project. In the upper bar, select :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: **Settings**, and then select **Security**.
 
 Find the Azure AD group, and delete it from your organization.
 

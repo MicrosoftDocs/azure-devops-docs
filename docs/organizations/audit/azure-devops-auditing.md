@@ -115,7 +115,7 @@ To scope down the viewable audit events, select the time filter on the top-right
 
 You can select any time range over the last 90 days and scope it down to the minute. Once you’ve selected a time range, select anywhere off the time range selector to start the search. By default, the top 200 results are returned for that time selection. If there are more results, then you can scroll down to load them onto the page. If you wish to further scope down the set of results returned, then you need to download the auditing data.
 
-Some audit events can contain multiple actions that took place at once, known as bulk audit events. You can distinguish these events from others with the information icon on the far right of the event. 
+Some audit events can contain multiple actions that took place at once, known as bulk audit events. You can distinguish these events from others with :::image type="icon" source="../security/media/select-information-icon.png" border="false"::: **Information** on the far right of the event. 
 
 ![Auditing more information icon](media/azure-devops-auditing/AuditLogMoreInformationHighRes.png)
 
