@@ -12,6 +12,8 @@
     href: artifact-storage.md
   - name: Best practices
     href: concepts/best-practices.md
+  - name: Search packages
+    href: ../project/search/package-search.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
 - name: Work with packages
   items:
   - name: About packages

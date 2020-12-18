@@ -1,9 +1,9 @@
 - name: Wikis, Public Projects, work across projects
   href: index.yml
 - name: Work across projects 
-  href: ./navigation/work-across-projects.md
+  href: ./navigation/work-across-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
 - name: Work across projects FAQs
-  href: work-across-projects-faqs.md
+  href: work-across-projects-faqs.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
 - name: Wiki
   href: wiki/toc.yml
 - name: Public Projects
