@@ -150,7 +150,7 @@ steps:
   displayName: Get IP on Linux
 # macOS
 - bash: |
-    export IPADDR=$(ifconfig | grep 'en0' -A3 | tail -n1 | awk '{print $2}')
+    export IPADDR=$(ifconfig | grep 'en0' -A3 | grep inet | tail -n1 | awk '{print $2}')
     echo "##vso[task.setvariable variable=IP_ADDR]$IPADDR"
   condition: eq( variables['Agent.OS'], 'Darwin' )
   displayName: Get IP on macOS

@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 09/24/2020
+ms.date: 11/02/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -49,6 +49,8 @@ To clone additional repositories as part of your pipeline:
 * If the repo is in the same project as your pipeline, or if the access token (explained below) has access to the repository in a different project, use the following command:
 
   `git clone -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" <clone URL>`
+
+  In order to use `System.AccessToken` in a script, you must first make it available to the script. To do this, select the job under the **Tasks** tab in the editor, select **Additional Options** in the right panel, and check the option to **Allow scripts to access the OAuth token**.
 
 * If the access token (explained below) does not have access to the repository:
 
@@ -291,3 +293,8 @@ Follow each of these steps to troubleshoot your failing triggers:
 ### Wrong version
 
 [!INCLUDE [qa](includes/qa1.md)]
+
+## Related articles
+
+- [Scheduled triggers](../process/scheduled-triggers.md)
+- [Pipeline completion triggers](../process/pipeline-triggers.md)

@@ -744,13 +744,13 @@ To escape emojis, enclose them using the \` character.
 
 ::: moniker range=">= tfs-2018"
 
-In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the paper-clip icon in the upper right of the comment box or the format pane in wiki page.
+In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or the format pane in wiki page.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-In pull request comments, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field. You can also select the paper-clip icon in the upper right of the comment box.
+In pull request comments, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field. You can also select the **paperclip** in the upper right of the comment box.
 
 ::: moniker-end
 

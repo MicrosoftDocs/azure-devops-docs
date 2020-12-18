@@ -7,18 +7,22 @@ ms.assetid: BFDE8FAF-63B8-4BC9-9A24-32EE2CA73C13
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
-#  Get started using Git in Visual Studio
+#  Get started using Git and Visual Studio 2013
+
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+
+*Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).*
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](gitquickstart.md)
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md) 
 
-**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**
+
 
 Whether your software project is large, small, or brand new, in most cases you'll be better off if you use version control as early as possible. 
 Here, we'll show you how to get started with Git, a distributed version control system. 
@@ -93,7 +97,7 @@ Let's make a change in a topic branch to explore some additional features.
 	
 	![Click the Branches tile](media/get-started/VSBranches1.png)
 	
-2. On the Branches page, right-click on the **master** branch and choose **New Local Branch From...** to create a new topic branch.
+2. On the Branches page, right-click on the **main** branch and choose **New Local Branch From...** to create a new topic branch.
 
 	![Right-click and choose New Local Branch From](media/get-started/VSBranchesNewLocal.png)
 	
@@ -139,7 +143,7 @@ Pull Requests are a common workflow for reviewing code created in a topic branch
 
 	![Click New Pull Request](media/get-started/WebPullRequestNew.png)
 	
-3. Select your topic branch from the first drop-down.  The default branch (master) is the default target branch.
+3. Select your topic branch from the first drop-down.  The default branch (main) is the default target branch.
 
 	![Select your topic branch](media/get-started/WebPullRequestSelectBranch.png)
 	
@@ -147,7 +151,7 @@ Pull Requests are a common workflow for reviewing code created in a topic branch
 
 	![Click Create Pull Request](media/get-started/WebPullRequestCreate.png)
 	
-Now you can add reviewers to get their feedback on your changes before you merge your changes into master.  
+Now you can add reviewers to get their feedback on your changes before you merge your changes into main.  
 
 [//]: # (TODO: link to the pull request topic)
 

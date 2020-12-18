@@ -2,23 +2,17 @@
 ms.topic: include
 ---
 
-
-<a id="plan-shortcuts"></a>
-
-::: moniker range=">= tfs-2017"
-
-You can use the following keyboard shortcuts when [interacting with a delivery plan](../../boards/plans/review-team-plans.md). To view the valid shortcuts, enter **?** when viewing a plan from the **Boards>Plans** or **Work>Plans** page.
+ 
 
 To toggle between card titles only and card details, enter **t**. 
-
-::: moniker-end
+ 
 
 ::: moniker range="tfs-2017"
 > [!NOTE]
 > The following shortcuts are available from the web portal for TFS 2017.2 and later versions. Type **?** to access  Global and service-specific shortcuts.
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+ 
 
 :::row:::
    :::column span="2":::
@@ -45,4 +39,3 @@ To toggle between card titles only and card details, enter **t**.
    :::column-end:::
 :::row-end:::
  
-::: moniker-end

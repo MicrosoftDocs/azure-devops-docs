@@ -36,7 +36,14 @@ With a Delivery Plan, you gain a tailor-made view across several teams and their
 
 When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Review team plans](review-team-plans.md).
 
-<img src="media/plans_move1.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+
+::: moniker range="azure-devops"  
+:::image type="content" source="media/plans/overview-preview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
+::: moniker-end 
+
+::: moniker range="< azure-devops"  
+<img src="media/plans-view-2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+::: moniker-end 
 
 <a id="portfolio-backlogs">  </a>
 ## Use portfolio backlogs to track features and epics

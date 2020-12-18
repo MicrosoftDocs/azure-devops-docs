@@ -1,6 +1,14 @@
 - name: Azure Repos Documentation
   href: index.yml
-- name: Start Using Azure Repos
+- name: "What is Azure Repos?"
+  href: get-started/what-is-repos.md
+- name: Compare Git and TFVC
+  href: tfvc/comparison-git-tfvc.md
+- name: Use Git and TFVC
+  href: git/team-projects.md 
+- name: Key concepts
+  href: get-started/key-concepts-repos.md
+- name: Get started  
   href: get-started/toc.yml
 - name: Git
   href: git/toc.yml 
@@ -32,10 +40,6 @@
     href: /previous-versions/azure/devops/java/download-intellij-plug-in
 - name: Azure DevOps Learn
   items:
-  - name: What is Git?
-    href: /azure/devops/learn/git/what-is-git
-  - name: What is version control?
-    href: /azure/devops/learn/git/what-is-version-control
   - name: Learn Git
     href: /azure/devops/learn/git/learn-git-with-team-services/
   - name: Git at Scale
@@ -54,11 +58,5 @@
     href: ../boards/github/index.md
   - name: Manage projects
     href: ../organizations/projects/about-projects.md
-  - name: "Default Git permissions (Security)"
-    href: ../organizations/security/default-git-permissions.md
-  - name: "Default TFVC permissions (Security)"
-    href: ../organizations/security/default-tfvc-permissions.md
-  - name: "Set permissions (Security)"
-    href: ../organizations/security/set-git-tfvc-repository-permissions.md
   - name: Marketplace extensions
     href: https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads

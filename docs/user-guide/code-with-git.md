@@ -7,9 +7,9 @@ ms.assetid:
 ms.technology: devops-new-user
 ms.author: chcomley
 author: chcomley
-ms.date: 12/23/2019
+ms.date: 11/13/2020
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Quickstart: Code with Git
@@ -24,7 +24,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 1. Install one of the following Git command-line tools:
 
-   - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](../repos/git/set-up-credential-managers.md#windows).
+   - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager](../repos/git/set-up-credential-managers.md).
    - To install on macOS or Linux, check out the [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) chapter in the open-source _Pro Git_ book. For macOS and Linux, we recommend [configuring SSH authentication](../repos/git/use-ssh-keys-to-authenticate.md)
 
 ## Clone the repo to your computer

@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: sid-ah
 ms.author: simerzou
-ms.date: 06/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -35,8 +35,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
         <tr>
-<td rowspan="11"><strong>2020 Q4</strong></td>
+<td rowspan="12"><strong>2020 Q4</strong></td>
 <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1781906" data-raw-source="[Re-evaluate permissions inherited from Azure AD group memberships](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1781906)">Re-evaluate permissions inherited from Azure AD group memberships</a></td><td>Admin</td><td>Future</td>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166 data-raw-source="[Billing, sign-in attempts and manage events for PAT, SSH will be available in the Audit Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166)">Billing, sign-in attempts and manage events for PAT, SSH will be available in the Audit Log</a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1781905 data-raw-source="[Hide Organization Settings ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1781905)">Hide Organization Settings </a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710676 data-raw-source="[Ease of Firewall rule creation with Azure DevOps Service Tag and Static IP](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710676)">Ease of Firewall rule creation with Azure DevOps Service Tag and Static IP</a></td><td>Admin</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668 data-raw-source="[Token lifecycle management ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1710668)">Token lifecycle management </a></td><td>Admin</td><td>Future</td></tr>
@@ -68,7 +69,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 ## Current features
 
 The features timeline lists significant features delivered to Azure DevOps Services and the corresponding version of Azure DevOps Server.
-Versions in the "Server" column are linked to the appropriate download location. You can also [view the build numbers for each version](#server-build-numbers). Versions in italics are planned for the future and subject to change.
+Versions in the "Server" column are linked to the appropriate download location. You can also [view the build numbers for each version](#azure-devops-server-build-numbers). Versions in italics are planned for the future and subject to change.
 
 <table>
     <thead>
@@ -80,6 +81,39 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
     <tbody>
+    <td rowspan="10"><a href="2020/sprint-179-update.md" data-raw-source="[03 December 2020](2020/sprint-179-update.md)">03 December 2020</a></td>
+    <td>Single-click to toggle between inline and diff views</td><td>Repos</td><td>Future</td>
+    </tr>
+    <tr><td>Navigation to parent commits</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Preserve scroll position when resizing diff pane in PR files tab</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>New Test Plans page general availability</td><td>Test Plans</td><td>Future</td></tr>
+    <tr><td>Search for a commit on a mobile device</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Improved usage of space for new PR file diff mobile view</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Enhanced images in PR summary view</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Enhanced branch experience when creating a new PR</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Historical graph for agent pools (Preview)</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>ServiceNow change management integration with YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="4"><a href="2020/sprint-178-update.md" data-raw-source="[12 November 2020](2020/sprint-178-update.md)">12 November 2020</a></td>
+    <td>Removed items on the Work Items page</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Delivery Plans (Preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Improve YAML conversion in the classic build designer</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>New Test Plans page general availability</td><td>Test Plans</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="4"><a href="2020/sprint-178-update.md" data-raw-source="[12 November 2020](2020/sprint-178-update.md)">12 November 2020</a></td>
+    <td>Removed items on the Work Items page</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Delivery Plans (Preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Improve YAML conversion in the classic build designer</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>New Test Plans page general availability</td><td>Test Plans</td><td>Future</td></tr>
+    <tr>
+    <td rowspan="4"><a href="2020/sprint-177-update.md" data-raw-source="[22 October 2020](2020/sprint-177-update.md)">22 October 2020</a></td>
+    <td>Removing "Assigned To" rule on Bug work item type</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>A batch of improvements to the Pull Request experience</td><td>Repos</td><td>Future</td></tr>
+    <tr><td>Node 14 in the Azure Pipelines agent</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Save an unhealthy agent for investigation in scale set agents</td><td>Pipelines</td><td>Future</td></tr>
     <tr>
     <td rowspan="5"><a href="2020/sprint-176-update.md" data-raw-source="[01 October 2020](2020/sprint-176-update.md)">01 October 2020</a></td>
     <td>Customize work item state when pull request is merged</td><td>Boards</td><td>Future</td>
@@ -4307,7 +4341,7 @@ Versions in the "Server" column are linked to the appropriate download location.
     </tbody>
 </table>
 
-## Server Build Numbers
+## Azure DevOps Server Build Numbers
 
 <table>
 <thead>
@@ -4318,6 +4352,11 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
 </thead>
 <tbody>
+        <tr>
+          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020" data-raw-source="[2020 RTW](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020)">2020 RTW</a></td>
+          <td>Oct. 6, 2020</td>
+          <td>18.170.30525.1</td>
+        </tr>
         <tr>
           <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1)">2019.1.1</a></td>
           <td>Dec. 10, 2019</td>

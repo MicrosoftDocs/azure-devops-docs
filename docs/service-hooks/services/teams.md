@@ -12,7 +12,7 @@ ms.date: 07/27/2020
 
 [!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
 
-See activity about your Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
+See activity about your Azure DevOps Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
 * Work item updates
 * Pull requests
 * Code commits
@@ -85,7 +85,7 @@ Activity from your project begins appearing in your Teams channel.
 
 ## Configure Azure DevOps tabs in Microsoft Teams
 
-1. To bring your Kanban board or dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
+1. To bring your Kanban board or dashboard into Microsoft Teams, select **+ Add new tab** on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
 
    ![Add a new tab to Teams channel](./media/teams/teams-as-website.png)
 
@@ -96,7 +96,7 @@ Activity from your project begins appearing in your Teams channel.
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-### Q: How can I get multiple events from my TFS project to show up in my Teams channel?
+### Q: How can I get multiple events from my Azure DevOps Server project to show up in my Teams channel?
 
 A: Create a new subscription for each type of event you want.
 For example, if you want to see build failures and new work items in your Teams channel,

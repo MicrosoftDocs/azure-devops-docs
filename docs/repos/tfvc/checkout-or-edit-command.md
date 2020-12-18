@@ -45,10 +45,10 @@ Checks out program.cs.
 ### Check out two items
 
 ```
-c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.cs
 ```
 
-Checks out the files program1.cs and program2.c.
+Checks out the files program1.cs and program2.cs.
 
 ## Work in Visual Studio
 

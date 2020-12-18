@@ -113,7 +113,7 @@ Sometimes our partner teams or dependencies have incidents that affect Azure Dev
 
 ## Service security
 
-Ensuring a secure service requires constant vigilance, from proper design and coding techniques, all the way through to the way we operate the service. Along those lines, we actively invest in the prevention of security holes and in breach detection. If there's a breach, we use security response plans to minimize data leakage, loss, or corruption. To learn more about how security and identity are managed, see [About security and identity](about-security-identity.md).
+Ensuring a secure service requires constant vigilance, from proper design and coding techniques, all the way through to the way we operate the service. Along those lines, we actively invest in the prevention of security holes and in breach detection. If there's a breach, we use security response plans to minimize data leakage, loss, or corruption. To learn more about how security and identity are managed, see [About security, authentication, and authorization](about-security-identity.md).
 
 ### Secure by design
 
@@ -157,7 +157,7 @@ you and Azure DevOps, we encrypt via HTTPS / SSL.
 
 Also, data we store on your behalf in Azure DevOps is encrypted as follows:
 
-* For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) to protect against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
+* For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017&preserve-view=true) to protect against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
 
 * Azure Blob Storage connections are encrypted to protect your data in transit. To protect data at rest stored in our Azure Blob Storage, we have adopted [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption).
 
@@ -277,7 +277,7 @@ security requirements.
 
 Azure Active Directory (Azure AD) provides the capability for administrators to control access to Azure resources and applications such as Azure DevOps. With conditional access control in place, Azure AD checks for the specific conditions you set for a user to access an application. After access requirements are met, the user is authenticated and can access the application.
 Visit the [Azure documentation site](/azure/active-directory/active-directory-conditional-access)
-to learn more about conditional access policy (CAP).  Azure DevOps now enforces conditional access policies for custom Azure DevOps authentication mechanisms including personal access tokens (PATs), alternate authentication, OAuth, and SSH keys. If accessing Azure DevOps through a third-party client, like git.exe, only IP-based policies will be honored; any other policy will automatically fail as the client doesn't pass the necessary information to validate the policy. For example, if a policy requires MFA and the client can't support MFA, the policy fails and the user is automatically blocked.
+to learn more about conditional access policy (CAP).  Azure DevOps now supports enforcing certain type of conditional access policies (e.g. IP Fencing) for custom Azure DevOps authentication mechanisms including personal access tokens (PATs), alternate authentication, OAuth, and SSH keys. If accessing Azure DevOps through a third-party client, like git.exe, only IP-based policies (IPv4 based only) will be honored; other policies are not be recognized today. 
 
 ## Additional resources
 
@@ -289,7 +289,7 @@ your review and education.
 - [Azure DevOps credential storage](credential-storage.md)
 - [Azure DevOps data location](data-location.md)
 - [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
-- [Azure DevOps support](https://azure.microsoft.com/support/devops/)
+- [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html)
 - [Developer Services Agreement](../../user-guide/services.md)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)

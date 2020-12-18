@@ -460,16 +460,13 @@ steps:
     displayName: Caching Docker image
 
   - script: |
-      docker load $(Pipeline.Workspace)/docker/cache.tar
+      docker load < $(Pipeline.Workspace)/docker/cache.tar
     condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
 
   - script: |
       mkdir -p $(Pipeline.Workspace)/docker
-      for fn in ${{ parameters.cacheImages }}
-      do
-        docker pull -q $fn
-      done
-      docker save ${{ parameters.cacheImages }} | $(Pipeline.Workspace)/docker/cachedDocker.tar
+      docker pull ubuntu
+      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
     condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
 ```
 

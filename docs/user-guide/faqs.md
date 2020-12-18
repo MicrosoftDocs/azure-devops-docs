@@ -7,7 +7,7 @@ ms.technology: devops-new-user
 ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
 ms.author: kaelli
 ms.date: 04/16/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # FAQs about signing up and getting started
@@ -144,5 +144,5 @@ See [Troubleshoot connection](troubleshoot-connection.md).
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Azure DevOps Support](https://azure.microsoft.com/support/devops/)
+- [Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html)
 - [Live chat](https://visualstudio.microsoft.com/vs/support/#talktous) (English only)

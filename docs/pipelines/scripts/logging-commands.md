@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 08/04/2020
+ms.date: 10/29/2020
 ---
 
 # Logging commands
@@ -152,7 +152,7 @@ for i in {0..100..10}
 do
    sleep 1
    echo "##vso[task.setprogress value=$i;]Sample Progress Indicator"
-do
+done
 echo "Lengthy process is complete."
 ```
 
@@ -253,6 +253,8 @@ Sets a variable in the variable service of taskcontext. The first task can set a
 
 When `issecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables are not passed into tasks as environment variables and must instead be passed as inputs.
 
+See [set variables in scripts](https://docs.microsoft.com/azure/devops/pipelines/process/variables#set-variables-in-scripts) for more details.
+
 #### Properties
 
 * `variable` = variable name (Required)
@@ -266,38 +268,46 @@ When `issecret` is set to `true`, the value of the variable will be saved as sec
 
 Set the variables:
 
-```bash
-echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+```yaml
+- bash: |
+    echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
+    echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+    echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+  name: SetVars
 ```
 
 Read the variables:
 
-```bash
-echo "Non-secrets automatically mapped in, sauce is $SAUCE"
-echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
-echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-echo "Future jobs can also see $OUTPUTSAUCE"
+```yaml
+- bash: |
+    echo "Non-secrets automatically mapped in, sauce is $SAUCE"
+    echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
+    echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+    echo "Future jobs can also see $SETVARS_OUTPUTSAUCE"
+    echo "Future jobs can also see $(SetVars.outputSauce)"
 ```
 
 # [PowerShell](#tab/powershell)
 
 Set the variables:
 
-```ps
-Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+```yaml
+- pwsh: |
+    Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
+    Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+    Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+  name: SetVars
 ```
 
 Read the variables:
 
-```ps
-Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
-Write-Host "Secrets are not automatically mapped in, secretSauce is $env:SECRETSAUCE"
-Write-Host "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-Write-Host "Future jobs can also see $env:OUTPUTSAUCE"
+```yaml
+- pwsh: |
+    Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
+    Write-Host "Secrets are not automatically mapped in, secretSauce is $env:SECRETSAUCE"
+    Write-Host "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+    Write-Host "Future jobs can also see $env:SETVARS_OUTPUTSAUCE"
+    write-Host "Future jobs can also see $(SetVars.outputSauce)"
 ```
 
 ---
@@ -306,8 +316,9 @@ Console output:
 
 ```
 Non-secrets automatically mapped in, sauce is crushed tomatoes
-Secrets are not automatically mapped in, secretSauce is
+Secrets are not automatically mapped in, secretSauce is 
 You can use macro replacement to get secrets, and they'll be masked in the log: ***
+Future jobs can also see canned goods
 Future jobs can also see canned goods
 ```
 

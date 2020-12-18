@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 # Cloud Solution Providers: Buy Visual Studio App Center resources
 

@@ -185,7 +185,7 @@ Note: This value can contain whitespace or other invalid label characters. In th
 <td>Build.Reason</td>
 <td>The event that caused the build to run.
 <ul>
-<li><code>Manual</code>: A user manually queued the build.</li>
+<li><code>Manual</code>: A user manually queued the build from the UI or an API call.</li>
 <li><code>IndividualCI</code>: <strong>Continuous integration (CI)</strong> triggered by a Git push or a TFVC check-in.</li>
 <li><code>BatchedCI</code>: <strong>Continuous integration (CI)</strong> triggered by a Git push or a TFVC check-in, and the <strong>Batch changes</strong> was selected.</li>
 <li><code>Schedule</code>: <strong>Scheduled</strong> trigger.</li>
@@ -330,7 +330,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>Build.SourceVersionMessage</td>
-<td>The comment of the commit or changeset.
+<td>The comment of the commit or changeset. We truncate the message to the first line or 200 characters, whichever is shorter.
 
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 

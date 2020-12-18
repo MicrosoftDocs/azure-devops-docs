@@ -1,7 +1,7 @@
 ---
 title: Create a new organization, project collection
 titleSuffix: Azure DevOps
-ms.custom: seodec18, contentperfq4
+ms.custom: seodec18, contperf-fy20q4
 description: Create an organization in Azure DevOps Services or create a project collection on-premises with a personal Microsoft account, GitHub account, or work or school account.
 ms.technology: devops-accounts
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
@@ -9,7 +9,7 @@ ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
 ms.date: 05/31/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Create an organization or project collection

@@ -8,7 +8,7 @@ ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.author: sdanie
 author: steved0x
 ms.date: 11/15/2019 
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Connect to a project in Azure DevOps
