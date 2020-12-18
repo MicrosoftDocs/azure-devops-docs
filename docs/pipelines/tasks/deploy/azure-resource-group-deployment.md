@@ -73,11 +73,13 @@ You can identify if the timeout is from portal, by checking for the portal deplo
 
 ### Error: CORS rules to be enabled while overriding parameters
 
-If the template file if being referred from a BLOB, while overriding parameters in the pipeline, you can get the following :
+If the template file is being referred from a BLOB, while overriding parameters in the pipeline, you might see the following warning message:
 
-Warning: Failed to download the file from template path. This feature requires that CORS rules are enabled at the source. If templates are in Azure storage blob, refer to [this](https://docs.microsoft.com/en-us/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services?redirectedfrom=MSDN#understanding-cors-requests) to enable CORS. 
+`Warning: Failed to download the file from template path.`
 
-Besides enabling CORS, ensure that the SAS token specified in the link of the template is "srt-sco", only then it allowes you to download the file and proceed.
+This feature requires the CORS rules to be enabled at the source. If templates are in Azure storage blob, see [Cross-origin resource sharing support](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services?redirectedfrom=MSDN#understanding-cors-requests) to enable CORS. 
+
+Besides enabling CORS, ensure that the SAS token specified in the link of the template is "srt-sco". This token is required for you to download the file and proceed.
 
 #### Azure Pipelines Agent
 
