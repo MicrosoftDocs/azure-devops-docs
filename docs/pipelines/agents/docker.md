@@ -133,9 +133,6 @@ Next, create the Dockerfile.
         --pool "$(if (Test-Path Env:AZP_POOL) { ${Env:AZP_POOL} } else { 'Default' })" `
         --work "$(if (Test-Path Env:AZP_WORK) { ${Env:AZP_WORK} } else { '_work' })" `
         --replace
-      
-      # remove the administrative token before accepting work
-      Remove-Item $Env:AZP_TOKEN_FILE
 
       Write-Host "4. Running Azure Pipelines agent..." -ForegroundColor Cyan
       
@@ -312,9 +309,6 @@ Next, create the Dockerfile.
 
     source ./env.sh
 
-    trap 'cleanup; exit 130' INT
-    trap 'cleanup; exit 143' TERM
-
     print_header "3. Configuring Azure Pipelines agent..."
 
     ./config.sh --unattended \
@@ -326,18 +320,19 @@ Next, create the Dockerfile.
       --work "${AZP_WORK:-_work}" \
       --replace \
       --acceptTeeEula & wait $!
-    
-    # remove the administrative token before accepting work
-    rm $AZP_TOKEN_FILE
 
     print_header "4. Running Azure Pipelines agent..."
 
-    # `exec` the node runtime so it's aware of TERM and INT signals
-    # AgentService.js understands how to handle agent self-update and restart
-    # Running it with the --once flag at the end will shut down the agent after the build is executed
-    exec ./externals/node/bin/node ./bin/AgentService.js interactive
-    ```
+    trap 'cleanup; exit 130' INT
+    trap 'cleanup; exit 143' TERM
 
+    # To be aware of TERM and INT signals call run.sh
+    # Running it with the --once flag at the end will shut down the agent after the build is executed
+    ./run.sh & wait $!
+    ```
+    > [!NOTE]
+    >If you want a fresh agent container for every pipeline job, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
+    >You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
 6. Run the following command within that directory:
 
     ```shell
@@ -362,8 +357,6 @@ Now that you have created an image, you can run a container.
 
 Optionally, you can control the pool and agent work directory by using additional [environment variables](#environment-variables).
 
-If you want a fresh agent container for every pipeline run, pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
-You must also use a container orchestration system, like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/), to start new copies of the container when the work completes.
 
 ## Environment variables
 
