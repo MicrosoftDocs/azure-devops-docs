@@ -21,7 +21,7 @@
   - name: Search your repo, work items, or wiki 
     href: ../project/navigation/search-basics.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json     
   - name: Manage or enable features  
-    href: navigation/preview-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
+    href: ../project/navigation/preview-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
 - name: Search
   items:
   - name: Search across your projects

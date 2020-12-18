@@ -4,14 +4,14 @@
   href: ./navigation/work-across-projects.md
 - name: Work across projects FAQs
   href: work-across-projects-faqs.md
+- name: Wiki
+  href: wiki/toc.yml
+- name: Public Projects
+  href: ../organizations/public/toc.yml
 - name: Navigation
   href: navigation/toc.yml
 - name: Search  
   href: search/toc.yml
-- name: Public Projects
-  href: ../organizations/public/toc.yml
-- name: Wiki
-  href: wiki/toc.yml
 - name: REST API Reference
   items:
   - name: Projects
