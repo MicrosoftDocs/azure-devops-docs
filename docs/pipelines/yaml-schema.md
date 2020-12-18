@@ -199,7 +199,7 @@ Learn more about:
 
 A stage is a collection of related jobs.
 By default, stages run sequentially.
-Each stage starts only after the preceding stage is complete.
+Each stage starts only after the preceding stage is complete unless otherwise specified via the `dependsOn ` property.
 
 Use [approval checks](process/approvals.md) to manually control when a stage should run.
 These checks are commonly used to control deployments to production environments.
@@ -569,7 +569,8 @@ All steps, regardless of whether they're documented in this article, support the
 
 ## Variables
 
-You can add hard-coded values directly or reference [variable groups](library/variable-groups.md).
+You can add hard-coded values directly, reference [variable groups](library/variable-groups.md), or insert via variable templates.
+
 Specify variables at the pipeline, stage, or job level.
 
 #### [Schema](#tab/schema/)
