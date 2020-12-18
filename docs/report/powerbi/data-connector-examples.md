@@ -15,7 +15,7 @@ ms.date: 12/18/2020
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-This document provides guidance on how to generate the following example reports in Power BI: 
+Learn how to generate the following example reports in Power BI: 
 
 - [Number of Work Items](#number-of-work-items)  
 - [Number of Bugs by Area Path and Priority](#number-of-bugs-by-area-path-and-priority)  
