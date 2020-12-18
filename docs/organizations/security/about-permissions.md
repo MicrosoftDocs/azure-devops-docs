@@ -146,7 +146,9 @@ no members of the group are able to access the project, collection, or deploymen
 
 <a id="project-scoped-user-group" /> 
 
-## Project-scoped User group 
+::: moniker range="azure-devops"
+
+### Project-scoped User group 
 
 By default, users added to an organization can view all organization and project information and settings. This includes viewing list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**. 
 
@@ -155,8 +157,6 @@ To restrict select users, such as Stakeholders, Azure Active Directory guest use
 To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
 [!INCLUDE [version-all](./includes/hidden-security-groups.md)]
-
- 
 
 ::: moniker-end
 
