@@ -21,12 +21,12 @@ The preview feature, **New Settings Search in the organization settings panel**,
 Enter a keyword to search all settings within your organization. For example, here we search on **Notifications**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Organizational Settings, Search feature](media/search/org-search-settings.png)
+> ![Screenshot of Organizational Settings, Search box.](media/search/org-search-settings.png)
 
 Search results return findings with links to the settings. Settings include Organization, project, and user. 
 
 > [!div class="mx-imgBorder"]  
-> ![Organizational Settings, Search feature](media/search/organization-settings-search-results.png)
+> ![Screenshot of Organizational Settings Search Results.](media/search/organization-settings-search-results.png)
 
 To navigate to one of the settings listed, choose the card in which it appears. 
 
