@@ -137,7 +137,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 I'm unable to connect with Key Vault from Azure DevOps.
 
-It is beacuse the Key Vault's firewall was not properly configured. We need to make sure that agent pool and also the Datacenter (TFS) can access the Key Vault. Ensure that the [Agent IP ranges for Microsoft-hosted agents](../../pipelines/agents/hosted.md#agent-ip-ranges) are whitelisted.
+It is beacuse the Key Vault's firewall was not properly configured. We need to make sure that agent pool and also the Datacenter (TFS) can access the Key Vault. Ensure that the [Agent IP ranges for Microsoft-hosted agents](../../pipelines/agents/hosted.md#agent-ip-ranges) are allow listed.
 
 
 
