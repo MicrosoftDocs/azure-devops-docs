@@ -9,7 +9,7 @@
 - name: Key concepts
   href: get-started/key-concepts-repos.md
 - name: Search code repositories
-  href: ../project/search/search-code.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+  href: ../project/search/code-search.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
 - name: Get started  
   href: get-started/toc.yml
 - name: Git
