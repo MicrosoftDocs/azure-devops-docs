@@ -27,7 +27,7 @@ The following image shows an example of such a trend.
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 ## Sample queries
 

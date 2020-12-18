@@ -32,7 +32,7 @@ For a sample test suite hierarchy in a test plan like below, you can configure t
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 ## Prerequisites
 
