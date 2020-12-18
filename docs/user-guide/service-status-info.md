@@ -86,5 +86,5 @@ we [provide REST APIs](/rest/api/resourcehealth/) to retrieve the current health
 
 If you're experiencing an issue with Azure DevOps and see a corresponding event that's communicated on the service health portal, we're already working to restore normal operations of the service. You don't need to take any further 
 action to notify us. However, if you don't see your issue reported on the Azure DevOps Services health page, refer 
-to the resources available on [Azure DevOps support page](https://azure.microsoft.com/support/devops/). That page has 
-resources to report bugs, interact with a friendly support bot, and contact our support team for additional assistance.
+to the resources available on the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
+

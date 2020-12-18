@@ -37,7 +37,7 @@ To upload your extension, you need to package it as a VSIX 2.0-compatible .vsix 
 Microsoft provides a cross-platform command-line interface (CLI) to package (and publish) your extension. 
 
 ### Get the package tool (tfx-cli)
-You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](https://nodejs.org), from your command line.
+You can install or update the Cross-platform CLI for Azure DevOps (tfx-cli) using `npm`, a component of [Node.js](https://nodejs.org), from your command line.
 
 ```no-highlight
 npm i -g tfx-cli

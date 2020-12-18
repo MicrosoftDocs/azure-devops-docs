@@ -77,7 +77,7 @@ When running tests in Web runner, launched either from a card on the board or fr
 
 ## Test – History across branches
 
-It’s a common scenario for an individual test to run on multiple branches, environments and configurations. When such a test fails, it’s important to identify whether the failure is contained to development branches such as the master branch, or release branches that deploy to production environments. You can now visualize the history of a test across various branches by looking at the History tab in result summary page. Navigate to the first build in which the failure was introduced for additional context: commits and build logs. We plan to add support for visualizing history across additional pivots (environments and configurations) in upcoming sprints.
+It’s a common scenario for an individual test to run on multiple branches, environments and configurations. When such a test fails, it’s important to identify whether the failure is contained to development branches such as the main branch, or release branches that deploy to production environments. You can now visualize the history of a test across various branches by looking at the History tab in result summary page. Navigate to the first build in which the failure was introduced for additional context: commits and build logs. We plan to add support for visualizing history across additional pivots (environments and configurations) in upcoming sprints.
 
 ![History tab in the result summary page](media/6_17_08.png)
 

@@ -27,7 +27,7 @@ For organizations connected to Azure Active Directory (Azure AD),  if your organ
 You must be a [Project Collection Administrator or an organization Owner](../security/lookup-organization-owner-admin.md).
 
 If no one in the organization has these permissions, contact
-[Azure DevOps Support](https://azure.microsoft.com/support/devops).
+[Azure DevOps Support](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Make sure the new owner has completed the following tasks:
 

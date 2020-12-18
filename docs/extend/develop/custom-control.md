@@ -1,6 +1,6 @@
 ---
 title: Add a custom control to the work item form | Extensions for Azure DevOps
-description: Describes how to extend the work item form by adding a custom control in Azure DevOps and Team Foundation Server (TFS).
+description: Describes how to extend the work item form by adding a custom control in Azure DevOps.
 ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
 ms.technology: devops-ecosystem
 ms.topic: conceptual

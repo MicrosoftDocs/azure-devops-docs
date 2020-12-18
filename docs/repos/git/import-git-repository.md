@@ -6,7 +6,7 @@ ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.technology: devops-code-git 
 ms.topic: quickstart
 ms.date: 10/14/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Import a Git repo

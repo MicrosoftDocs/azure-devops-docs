@@ -3,13 +3,13 @@ title: Namespace reference
 titleSuffix: Azure DevOps
 description: Understand the set of namespaces used to manage security  
 ms.technology: devops-security
-ms.custom: quarterly-review
-ms.topic: conceptual
+ms.custom: quarterly-review, devx-track-azurecli
+ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/12/2020
----
+ms.date: 11/16/2020
+--- 
 
 # Security namespace and permission reference for Azure DevOps 
 
@@ -90,7 +90,7 @@ The following table describes the namespaces that manage object-level permission
       `ManagePermissions`   
    :::column-end:::
    :::column span="2":::
-      [Manages Analytics views permissions at the project-level and object-level](permissions.md#analytics-views-permissions) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](/azure/devops/report/powerbi/analytics-security).  
+      [Manages Analytics views permissions at the project-level and object-level](permissions.md#analytics-views-permissions) to read, edit, delete, and generate reports. You can manage these permissions for each [Analytics view from the user interface](../../report/powerbi/analytics-security.md).  
       <br/>
       **Token format for project level permissions**: `$/Shared/PROJECT_ID`  
       **Example**: `$/Shared/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba`   
@@ -177,7 +177,7 @@ The following table describes the namespaces that manage object-level permission
 ::: moniker-end
 :::row:::
    :::column span="1":::
-      Git Repositories    
+      Git Repositories <a id="git-repositories" />    
    :::column-end:::
    :::column span="1":::
       `Administer`                
@@ -857,7 +857,7 @@ The following table describes the security namespaces and permissions that aren'
       `SecurityAdmin`   
    :::column-end:::
    :::column span="2":::
-      Sets permissions to read, create, and manage the security of the data store. These permissions are assigned to several AzureDevOps service principals.  
+      Sets permissions to read, create, and manage the security of the data store. These permissions are assigned to several Azure DevOps service principals.  
       <br/>
       **ID:** `11238e09-49f2-40c7-94d0-8f0307204ce4`
    :::column-end:::
@@ -919,7 +919,7 @@ The following table describes the security namespaces and permissions that aren'
       `ManageChatPermissions`     
    :::column-end:::
    :::column span="2":::
-      Manages permissions for chat services integrated with Azure DevOps, such as Slack and Microsoft Teams. For more information, see [Azure Boards with Slack](/azure/devops/boards/integrations/boards-slack), [Azure Boards with Microsoft Teams](/azure/devops/boards/integrations/boards-teams), [Azure Pipelines with Slack](/azure/devops/pipelines/integrations/slack), [Azure Pipelines with Microsoft Teams](/azure/devops/pipelines/integrations/microsoft-teams), [Azure Repos with Slack](/azure/devops/repos/integrations/repos-slack), and [Azure Repos with Microsoft Teams](/azure/devops/repos/integrations/repos-teams).  
+      Manages permissions for chat services integrated with Azure DevOps, such as Slack and Microsoft Teams. For more information, see [Azure Boards with Slack](../../boards/integrations/boards-slack.md), [Azure Boards with Microsoft Teams](../../boards/integrations/boards-teams.md), [Azure Pipelines with Slack](../../pipelines/integrations/slack.md), [Azure Pipelines with Microsoft Teams](../../pipelines/integrations/microsoft-teams.md), [Azure Repos with Slack](../../repos/integrations/repos-slack.md), and [Azure Repos with Microsoft Teams](../../repos/integrations/repos-teams.md).  
       <br/>
       **ID:** `bc295513-b1a2-4663-8d1a-7017fd760d18`
    :::column-end:::
@@ -1036,6 +1036,21 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+      OrganizationLevelData
+   :::column-end:::
+   :::column span="1":::
+      `Project-Scoped Users`                       
+   :::column-end:::
+   :::column span="2":::
+      Applies a system-level deny permission on the namespace which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). <br/> 
+      **ID:** `F0003BCE-5F45-4F93-A25D-90FC33FE3AA9`
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
 :::row:::
    :::column span="":::
       PipelineCachePrivileges
@@ -1218,7 +1233,7 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 
 ## Related articles
 
-- [About security, permissions, and membership](about-security-identity.md)
+- [About security, authentication, and authorization](about-security-identity.md)
 - [Security Namespaces REST API](/rest/api/azure/devops/security/)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)
@@ -1272,7 +1287,7 @@ Note non UI permissions
    :::column span="2":::
       TBD
       ::: moniker range="<= tfs-2015"
-      [Manages Lab Management permissions](/azure/devops/organizations/security/permissions#lab).
+      [Manages Lab Management permissions](./permissions.md#lab).
       > [!NOTE]  
       > Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).  
       ::: moniker-end   
@@ -1282,4 +1297,4 @@ Note non UI permissions
 :::row-end:::
 ---
 
---> 
+-->

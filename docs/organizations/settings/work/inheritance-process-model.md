@@ -191,7 +191,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 ::: moniker range="azure-devops"
 
 - You can't change the field name or data type once you've defined it
-- You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
+- You can't modify the gray area on the form where the State, Reason, Area Path, and iteration path fields are located  
 - You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
 ::: moniker-end
@@ -199,7 +199,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 ::: moniker range="azure-devops-2020"
 
 - You can't change the field name or data type once you've defined it
-- You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located
+- You can't modify the gray area on the form where the State, Reason, Area Path, and iteration path fields are located
 - You can't modify the Description help text of inherited fields  
 - You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
@@ -208,7 +208,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 ::: moniker range="azure-devops-2019"
 
 - You can't change the field name or data type once you've defined it
-- You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
+- You can't modify the gray area on the form where the State, Reason, Area Path, and iteration path fields are located  
 - With regards to picklists, you currently can't perform these operations:
     - Change the picklist of an inherited field, such as the Activity or Discipline field  
     - Change the picklist order, picklists display in alphabetic order

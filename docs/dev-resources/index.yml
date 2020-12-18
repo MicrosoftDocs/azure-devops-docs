@@ -29,6 +29,12 @@ landingContent:
             url: ../cli/log-in-via-pat.md
           - text: Configure policies
             url: ../cli/policy-configuration-file.md
+  - title: Node CLI for Azure DevOps
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Get started
+            url: ../extend/publish/command-line.md
   - title: Azure DevOps REST API Reference
     linkLists:
       - linkListType: get-started

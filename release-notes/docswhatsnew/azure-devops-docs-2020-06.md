@@ -137,7 +137,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Include visuals and improve the writing #4669](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4669)
 - [Advice on how to update already published extensions to test them before mass releasing #4158](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4158)
 - [The sdk referenced is the old sdk vss-web-extension-sdk #3848](https://github.com/MicrosoftDocs/azure-devops-docs/issues/3848)
-- [CI keeps the master branch clean #3652](https://github.com/MicrosoftDocs/azure-devops-docs/issues/3652)
+- [CI keeps the main branch clean #3652](https://github.com/MicrosoftDocs/azure-devops-docs/issues/3652)
 - [Instructions for feed authentication are inaccurate - mavenFeedAuthenticate must be enabled #3336](https://github.com/MicrosoftDocs/azure-devops-docs/issues/3336)
 - [Misssing documentation for Microsoft.VSTS.Actions.StartWork and Microsoft.VSTS.Actions.StopWork #3285](https://github.com/MicrosoftDocs/azure-devops-docs/issues/3285)
 - [Azure DevOps Services public endpoint has changed #2874](https://github.com/MicrosoftDocs/azure-devops-docs/issues/2874)

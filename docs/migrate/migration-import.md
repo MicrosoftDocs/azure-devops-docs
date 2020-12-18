@@ -7,8 +7,8 @@ ms.technology: devops-migrate
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 02/26/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/06/2020
 ---
 
 # Validate and import processes
@@ -393,7 +393,7 @@ Below are some additional recommended configurations for your SQL Azure VM.
 - Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
 - [Configure](/sql/relational-databases/databases/move-system-databases#Examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#generating-a-dacpac).
 - If your source database is still over 1TB after [reducing the size](/azure/devops/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
-- Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
+- Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. Also, consider using larger VMs with 16 vCPUs and 128 GBs of RAM.
 - You need to have a public facing IP address for the service to reach this machine.
 
 <a id="ips" />
@@ -404,6 +404,9 @@ It's highly recommended that you restrict access to your VM to only IPs from Azu
 
 First, no matter what Azure DevOps Services region you import into, you must grant the following IP access to your collection database. 
 
+> [!NOTE]   
+> IP addresses listed below with x.x.x.0/23 indicates a range. Please allow the entire /23 range. For example, if you are importing into Central Unites States, allow the /23 range for 20.37.158.0. For IP addresses with x.x.x.0/24, allow the /24 range.
+
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
 |    Azure DevOps Services Identity Service       |    168.62.105.45, 40.81.42.115    |
@@ -412,14 +415,14 @@ Next you will need to grant access to the Regional Identity Service. You only ne
 
 |    Service                                                 |    IP                                                                                                                         |
 |------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-|    Regional Identity Service - Central United States       |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181, 52.158.209.56, 20.37.158.0, 20.37.139.247, 20.37.158.5                                   |
-|    Regional Identity Service - West Europe                 |    52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103, 23.97.221.25, 52.233.181.148, 52.149.110.153, 51.144.61.32, 52.236.147.236, 40.74.28.0       |
-|    Regional Identity Service - Australia East              |    13.75.145.145, 40.82.217.103, 20.188.213.113, 104.210.88.194, 40.81.62.114, 20.37.194.0                                    |
-|    Regional Identity Service - Brazil South                |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175, 191.235.226.0                    |
-|    Regional Identity Service - India South                 |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252, 20.41.194.0                                                                         |
-|    Regional Identity Service - Canada Central              |    52.237.19.6, 40.82.190.38, 52.228.82.0                                                                                               |
-|    Regional Identity Service - East Asia (Hong Kong)       |    52.175.28.40, 40.81.25.218, 13.94.26.58, 20.189.107.0
-|    Regional Identity Service - UK South                    |    40.81.159.67, 51.104.26.0                                                             |
+|    Regional Identity Service - Central United States       |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181, 52.158.209.56, 20.37.138.122, 20.37.158.0/23, 20.37.139.247, 20.37.158.5                                   |
+|    Regional Identity Service - West Europe                 |    20.67.123.240, 52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103, 23.97.221.25, 52.233.181.148, 52.149.110.153, 51.144.61.32, 52.236.147.236, 40.74.28.0/23       |
+|    Regional Identity Service - Australia East              |    13.75.145.145, 40.82.217.103, 20.188.213.113, 104.210.88.194, 40.81.62.114, 20.37.194.0/24                                    |
+|    Regional Identity Service - Brazil South                |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175, 191.235.226.0/24                    |
+|    Regional Identity Service - India South                 |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252, 20.41.194.0/24                                                                         |
+|    Regional Identity Service - Canada Central              |    52.237.19.6, 40.82.190.38, 52.228.82.0/243                                                                                               |
+|    Regional Identity Service - East Asia (Hong Kong)       |    52.175.28.40, 40.81.25.218, 13.94.26.58, 20.189.107.0/24
+|    Regional Identity Service - UK South                    |    40.81.159.67, 51.104.26.0/24                                                             |
 
 Next you will need to grant access to the data migration tool for Azure DevOps itself. You only need to grant an exception for the data migration tool instance in the region that you're importing into.  
 
@@ -522,7 +525,7 @@ If you included preview features with your import, add an exception for the anal
 
 |    Service                                     |    IP                                                                             |
 |------------------------------------------------|-----------------------------------------------------------------------------------|
-|    Analytics service - United States           | 20.41.43.22, 20.36.236.83, 20.41.40.50, 52.242.212.199, 13.86.33.148, 13.86.39.80 |
+|    Analytics service - United States           | 20.41.43.22, 20.36.236.83, 20.41.40.50, 52.143.251.221, 52.242.212.199, 13.86.33.148, 13.86.39.80 |
 |    Analytics service - West Europe             | 52.236.146.143, 52.236.146.9, 52.149.108.23                                       |
 |    Analytics service - Australia East          | 20.40.179.159                                                                     |
 |    Analytics service - Brazil South            | 20.40.113.248                                                                     |
@@ -581,7 +584,7 @@ CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
 > [!NOTE]   
-> Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#change-authentication-mode-with-ssms) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
+> Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#change-authentication-mode-with-ssms&preserve-view=true) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
 
 #### Configure the import specification file to target the VM
 

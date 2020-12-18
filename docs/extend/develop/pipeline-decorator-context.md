@@ -52,7 +52,7 @@ resources['repositories']['self'] =
 	"version": "<commit hash>",
 	"name": "<repo name>",
 	"project": "<project guid>",
-	"defaultBranch": "<default ref of repo, like 'refs/heads/master'>",
+	"defaultBranch": "<default ref of repo, like 'refs/heads/main'>",
 	"ref": "<current pipeline ref, like 'refs/heads/topic'>",
 	"versionInfo": {
 		"author": "<author of tip commit>",

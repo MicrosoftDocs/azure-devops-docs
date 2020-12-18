@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ms.date: 02/27/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Manage paid access for users
@@ -91,7 +91,7 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
 ## Pay for a user once across multiple organizations
 
-If you have more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plan** user once, for all organizations under the same billing Azure subscription. For more details, see [multi-organization billing FAQs](billing-faq.md#multi-organization-billing). Complete the following steps.
+If you have more than one Azure DevOps organization, you can turn on multi-organization billing and pay for each **Basic** or **Basic + Test Plans** user once, for all organizations under the same billing Azure subscription. For more details, see [multi-organization billing FAQs](billing-faq.md#multi-organization-billing). Complete the following steps.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 

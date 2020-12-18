@@ -54,7 +54,7 @@ Next, you need to rebase the repository.
 > `git log`
 
 Alternatively, you can get the SHA hash from viewing the branch history in the Visual Studio Team Explorer.
-> ![Master branch View History](./media/remove-binaries/RemoveBinaries-view-history-for-sha.png)
+> ![Main branch View History](./media/remove-binaries/RemoveBinaries-view-history-for-sha.png)
 
 2) Now, open a Git command prompt.
 

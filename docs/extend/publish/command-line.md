@@ -14,7 +14,7 @@ ms.date: 08/24/2016
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-You can use the TFS Cross Platform Command Line Interface (tfx-cli) to publish your extension to the Visual Studio Marketplace.
+You can use the Cross-platform CLI for Azure DevOps (tfx-cli) to publish your extension to the Visual Studio Marketplace.
 
 For more information, see the overview of [publish, install, and share](./overview.md).
 
@@ -23,7 +23,7 @@ For more information, see the overview of [publish, install, and share](./overvi
 Get the TFX CLI from Node Package Manager and generate a personal access token (PAT). 
 Also, if you haven't already, set up a Publisher in the Gallery.
 
-### Acquire the TFS Cross Platform Command Line Interface
+### Acquire the Cross-platform CLI for Azure DevOps
 
 [!INCLUDE [Control](../includes/procedures/acquire-tfx-cli.md)]
 

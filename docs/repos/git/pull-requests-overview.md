@@ -8,7 +8,7 @@ ms.topic: overview
 ms.author: vijayma
 author: vijayma
 ms.date: 06/01/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Get feedback with pull requests

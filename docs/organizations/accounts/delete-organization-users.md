@@ -1,14 +1,14 @@
 ---
 title: Delete, remove users from team, project, organization
 titleSuffix: Azure DevOps
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Steps for how to delete or remove organization users from Azure DevOps and remove users from a team or project.
 ms.technology: devops-accounts
 ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.author: chcomley
 author: chcomley
-ms.date: 08/25/2020
+ms.date: 12/08/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -45,7 +45,7 @@ If users no longer require access to a team, project, or your organization, you 
 
     ![Organization settings > Users](../../media/open-organization-settings-users-preview.png)
 
-4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
+4. Select **...**  for the user to be removed. Select **Remove from organization**.
 
    ![Remove a user from your organization](media/delete-user/remove-user-from-organization-preview.png)
 
@@ -53,7 +53,7 @@ If users no longer require access to a team, project, or your organization, you 
 
    ![Confirm removing an existing user](media/delete-user/confirm-remove-existing-user-preview.png)
 
-6. Note that removing a user from the organization will not remove their memberships to any security groups. If the user is a member of an access-granting security group, then the user will still have access to Azure DevOps, even after you remove them from the organization. If you'd like to completely remove the user from the organization, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
+6. Removing a user from the organization doesn't remove their memberships to any security groups. If the user is a member of an access-granting security group, then the user will still have access to Azure DevOps, even after you remove them from the organization. If you'd like to completely remove the user from the organization, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
 
@@ -107,7 +107,7 @@ Choose the **Current page** tab for instructions.
 
 ::: moniker-end
 
-The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users.
+The **Users page** isn't available for on-premises server instances. However, you can use Azure DevOps CLI to manage users for Azure DevOps Server 2020.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 

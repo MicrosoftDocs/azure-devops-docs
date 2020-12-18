@@ -71,10 +71,10 @@ parameters:
   default: false
 
 steps:
-  - ${{ if eq(parameters.experimentalTemplate, true) }}:
-    - template: experimental.yml
-  - ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
-    - template: stable.yml
+- ${{ if eq(parameters.experimentalTemplate, true) }}:
+  - template: experimental.yml
+- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
+  - template: stable.yml
 ```
 
 ### Parameter data types
@@ -520,6 +520,9 @@ This means that you can't use scripts from the template repo in your pipeline.
 If you want to use a particular, fixed version of the template, be sure to pin to a `ref`.
 The `refs` are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
+
+> [!NOTE]
+> If no `ref` is specified, the pipeline will default to using `refs/heads/master`.
 
 You may also use `@self` to refer to the repository where the main pipeline was found.
 This is convenient for use in `extends` templates if you want to refer back to contents in the extending pipeline's repository.
