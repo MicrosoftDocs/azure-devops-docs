@@ -47,7 +47,7 @@ and "deploy to production" are good examples of release stages.
 
 <a name="approvals"></a><a name="conditions"></a>
 A stage in a release pipeline consists of [jobs](../process/phases.md) and [tasks](../process/tasks.md).
-s 
+ 
 [Approvals and gates](../release/approvals/index.md), [deployment conditions and triggers](../release/triggers.md#env-triggers),
 and [queuing policies](#queuing-policies) control when a release gets deployed to a stage. 
 

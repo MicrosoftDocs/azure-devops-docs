@@ -37,11 +37,11 @@ You can save a stage template from within a classic release pipeline.
 
 1. Select the three dots and choose **Save as template**.
 
-:::image type="content" source="media/stage-templates/save-stage-template.png" alt-text="Select the three dots and save as template.":::
+    :::image type="content" source="media/stage-templates/save-stage-template.png" alt-text="Select the three dots and save as template.":::
 
 1. Name and save your template.
   
-:::image type="content" source="media/stage-templates/name-stage-template.png" alt-text="Add a name for your stage template.":::
+    :::image type="content" source="media/stage-templates/name-stage-template.png" alt-text="Add a name for your stage template.":::
 
 ## Use a template
 
@@ -53,7 +53,7 @@ You can save a stage template from within a classic release pipeline.
 
 1. Select **Apply** to use your custom template.  
 
-:::image type="content" source="media/stage-templates/use-custom-stage-template.png" alt-text="Select a custom stage template to use. ":::
+    :::image type="content" source="media/stage-templates/use-custom-stage-template.png" alt-text="Select a custom stage template to use. ":::
 
 ## FAQ
 
