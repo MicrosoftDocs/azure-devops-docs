@@ -570,7 +570,7 @@ All steps, regardless of whether they're documented in this article, support the
 
 ## Variables
 
-You can add hard-coded values directly, referenced [variable groups](library/variable-groups.md), or insertion via variable templates.
+You can add hard-coded values directly, reference [variable groups](library/variable-groups.md), or insertion via variable templates.
 Specify variables at the pipeline, stage, or job level.
 
 #### [Schema](#tab/schema/)
