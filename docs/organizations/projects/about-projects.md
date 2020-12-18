@@ -129,6 +129,9 @@ By default, users added to an organization can view all organization and project
 To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
 
 To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+
+[!INCLUDE [version-all](./includes/hidden-security-groups.md)]
+
  
 
 ::: moniker-end
