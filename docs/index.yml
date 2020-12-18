@@ -193,7 +193,7 @@ tools:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Support services
+    - title: Additional services
       items:
         # Card
         - title: Navigation & search 
@@ -230,17 +230,19 @@ additionalContent:
             - url: ./report/index.yml
               text: "See more >"
         # Card
-        - title: Wikis, Public Projects, work across projects
+        - title: Wikis, Public Projects, & work across projects
           links:
-            - url: ./project/navigation/work-across-projects.md  
-              text: Create a wiki for your project
             - url: ./project/wiki/wiki-create-repo.md
               text: Create a wiki for your project
-            - url: ./project/wiki/markdown-guidance.md
-              text: Markdown syntax guidance
+            - url: ./wiki/wiki-markdown-guidance.md
+              text: Syntax guidance for Markdown usage in Wiki
             - url: ./organizations/public/create-public-project.md
               text: Create a public project
-            - url: ./project/index.yml
+            - url: ./project/navigation/work-across-projects.md  
+              text: Work across projects
+            - url: ./project/navigation/work-across-projects.md  
+              text: Work across projects FAQs
+            - url: ./project/work-across-projects-faqs.md  
               text: "See more >"
         # Card
         - title: GitHub integration
@@ -256,10 +258,10 @@ additionalContent:
         # Card
         - title: Settings, Security, & Usage
           links:
-            - text: Security, access, & identity
-              url: ./organizations/security/about-security-identity.md
-            - text: Permissions & groups
+            - text: Get started with permissions, access, and security groups
               url: ./organizations/security/about-permissions.md
+            - text: Security quick reference index
+              url: ./organizations/security/quick-reference-index-security.md
             - text: Access levels
               url: ./organizations/security/access-levels.md
             - text: Billing  
@@ -269,13 +271,13 @@ additionalContent:
             - text: Organizations
               url: ./organizations/accounts/organization-management.md
             - text: Projects
-              url: ./organizations/projects/about-projects.md
+              url: ./organizations/projects/about-projects.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Teams 
-              url: ./organizations/settings/about-teams-and-settings.md
+              url: ./organizations/settings/about-teams-and-settings.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Repos, pipelines, & test
               url: ./pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Notifications
-              url: ./notifications/about-notifications.md?bc=%252fazure%252fdevops%252freference%252forganizations%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+              url: ./notifications/about-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
             - text: Auditing
               url: ./organizations/audit/azure-devops-auditing.md
           # Card
