@@ -34,8 +34,6 @@ For a sample test suite hierarchy in a test plan like below, you can configure t
 
 [!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
-## Prerequisites
-
 For the report to generate useful data, the team must perform the following activities to manage test plans:
 
 - Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create test plans and test suites](../../test/create-a-test-plan.md) and [Create manual test cases](../../test/create-test-cases.md). 
