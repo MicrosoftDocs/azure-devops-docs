@@ -234,7 +234,7 @@ additionalContent:
           links:
             - url: ./project/wiki/wiki-create-repo.md
               text: Create a wiki for your project
-            - url: ./wiki/wiki-markdown-guidance.md
+            - url: ./project/wiki/wiki-markdown-guidance.md
               text: Syntax guidance for Markdown usage in Wiki
             - url: ./organizations/public/create-public-project.md
               text: Create a public project
