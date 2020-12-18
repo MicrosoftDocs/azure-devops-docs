@@ -24,7 +24,7 @@ This article shows you how to display the percentage complete by rollup of Story
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
-
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 
 ## Sample queries
