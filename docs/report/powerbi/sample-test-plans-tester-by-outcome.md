@@ -28,7 +28,7 @@ The report generated is similar to following image.
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
-[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 For the report to generate useful data, the team must perform the following activities to manage test plans:
 
