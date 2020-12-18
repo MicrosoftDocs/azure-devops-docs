@@ -27,6 +27,34 @@ A set of pre-defined stage templates is available in Azure Pipelines and in each
 
 When a stage is created from a template, the tasks in the template are copied over to the stage. Any further updates to the template have no impact on existing stages. If you want a way to easily insert a number of stages into release pipelines (perhaps to keep the definitions consistent) and to enable these stages to all be updated in one operation, use [task groups](../library/task-groups.md) instead of stage templates.
 
+## Save a template
+
+You can save a stage template from within a classic release pipeline. 
+
+1. Open and edit your release pipeline. 
+
+1. Open the stage you want to export. 
+
+1. Select the three dots and choose **Save as template**.
+
+:::image type="content" source="media/stage-templates/save-stage-template.png" alt-text="Select the three dots and save as template.":::
+
+1. Name and save your template.
+  
+:::image type="content" source="media/stage-templates/name-stage-template.png" alt-text="Add a name for your stage template.":::
+
+## Use a template
+
+1. From the release pipeline, select **Add** to add a stage. 
+
+1. Choose **New stage**.
+
+1. Scroll to the end of the **Select a template** window to see your custom templates. 
+
+1. Select **Apply** to use your custom template.  
+
+:::image type="content" source="media/stage-templates/use-custom-stage-template.png" alt-text="Select a custom stage template to use. ":::
+
 ## FAQ
 
 - **Can I export templates or share them with other subscriptions, enterprises, or projects?**

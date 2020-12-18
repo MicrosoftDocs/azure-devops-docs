@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand stages in Azure Pipelines
 ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
 ms.topic: conceptual
-ms.date: 05/03/2019
+ms.date: 12/18/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -159,7 +159,7 @@ for a stage in a release pipeline. You can:
   any additional permissions.
 * Delete the stage from the pipeline.
 * Change the order of stages.
-* Save a copy of the stage as a template.
+* Save a copy of the stage as a [stage template](../release/env-templates.md).
 * Manage the security settings for the stage.
 
 ![Defining options and policies](../release/media/environments-03.png)
