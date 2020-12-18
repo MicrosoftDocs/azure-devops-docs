@@ -130,7 +130,7 @@ To restrict select users, such as Stakeholders, Azure Active Directory guest use
 
 To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
 
-[!INCLUDE [version-all](./includes/hidden-security-groups.md)]
+[!INCLUDE [version-all](../security/includes/hidden-security-groups.md)]
 
  
 
