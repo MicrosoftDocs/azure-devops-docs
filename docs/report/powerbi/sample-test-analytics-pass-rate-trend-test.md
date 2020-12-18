@@ -28,7 +28,7 @@ An example is shown in the following image.
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
-
+[!INCLUDE [temp](./includes/prerequisites-power-bi-cloud-only.md)]
 
 ## Sample queries
 
