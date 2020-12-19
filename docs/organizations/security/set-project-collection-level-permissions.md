@@ -27,6 +27,8 @@ An organization is the container for several projects that share resources. For 
 > |-------------|----------| 
 > |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- *TeamName* Team |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Project-Scoped Users<br/>- Security Service Group | 
 
+[!INCLUDE [version-all](./includes/hidden-security-groups.md)]
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
