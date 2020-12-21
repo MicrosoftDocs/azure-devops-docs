@@ -42,7 +42,7 @@ None
 |`azureStorageAccountName`<br/> Storage Account Name | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the Storage account name in which the JDK is located. Azure Classic and Resource Manager storage accounts are listed. |
 |`azureContainerName`<br/>Container Name | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the name of the container in the storage account in which the JDK is located.|
 |`azureCommonVirtualFile`<br/> Common Virtual Path | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the path to the JDK inside the Azure storage container. |
-|`jdkDestinationDirectory`<br/> Destination directory | (Required) Specify the destination directory into which the JDK should be installed (only for Windows and Linux). On macOS, this directory is using as a temp folder for extracting .dmg's. |
+|`jdkDestinationDirectory`<br/> Destination directory | (Required) Specify the destination directory into which the JDK should be installed (only for Windows and Linux). On macOS, this directory is used as a temporary folder for extracting .dmg's since macOS isn't supporting JDK installation directory changing. |
 |`cleanDestinationDirectory`<br/> Clean destination directory | (Required) Select this option to clean the destination directory before the JDK is extracted into it. <br/>Default value: `true`|
 
 > [!NOTE]
