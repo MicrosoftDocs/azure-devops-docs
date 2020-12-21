@@ -4,7 +4,7 @@ description: Upstream sources manage packages from public sources in an Azure De
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 12/21/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 > [!NOTE]
 > Check the [Versions and compatibility](../overview.md#versions-compatibility) to ensure compatibility. 
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (for example, npmjs.com, NuGet.org, Maven Central, and PyPI) and authenticated feeds (that is, other Azure DevOps Services feeds in your organization or in organizations in your Azure Active Directory (Azure AD) tenant). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public package repositories (npmjs.com, NuGet.org, Maven Central, and PyPI) and Artifacts feeds. Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
 Already familiar with the concepts and want to jump right in? Start with these how-tos:
 
