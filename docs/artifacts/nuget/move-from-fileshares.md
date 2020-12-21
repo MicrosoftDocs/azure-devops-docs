@@ -25,18 +25,16 @@ Azure Artifacts provides a number of benefits compared to file shares. However, 
 ### Authentication and authorization
 
 If you're using Active Directory-backed file shares, you and your on-prem build agents are likely authenticating automatically using Windows NTLM.
-Moving your packages to Azure DevOps Services will require a few changes:
+Moving your packages to Azure Artifacts will require a few changes:
 
-- **Authentication:** You need to provide the NuGet client with credentials in order to restore and push packages.
-  - **Visual Studio 2015 users**: Credential acquisition happens automatically, as long as you've updated the 
-  [NuGet Package Manager](../nuget/consume.md) extension to version 3.3 or higher by going to the Tools menu and using the Extensions and Updates window.
-  - **nuget.exe 3.x users**: Credential acquisition happens automatically after you install the 
-[Azure DevOps Services Credential Provider](../nuget/nuget-exe.md).
-- **Authorization:** Ensure that any principal (user, service organization, group, etc.) that needs access to your packages has the appropriate permissions. See the [permissions](#make-a-plan-for-permissions) section for details.
+- **Authentication:** You need to provide access to the NuGet client in order to push and restore packages.
+  - **Visual Studio 2015 users**: Credential acquisition happens automatically, as long as you've updated the [NuGet Package Manager](../nuget/consume.md) extension to version 3.3 or higher by going to the Tools menu and using the Extensions and Updates window.
+  - **nuget.exe 3.x users**: Credential acquisition happens automatically after you install the [Credential Provider](../nuget/nuget-exe.md).
+- **Authorization:** Ensure that any principal (user, service organization, group, etc.) that needs access to your packages has the appropriate permissions. See the [permissions](#make-a-plan-for-permissions) section for more details.
 
-## Move your packages
+## Migrate your packages
 
-Moving your packages to the cloud is a 4-step process:
+Migrating your packages to the Azure Artifacts feeds is a 4-step process:
 
 1. [Inventory your existing package sources](#inventory-your-existing-package-sources)
 1. [Make a plan for permissions](#make-a-plan-for-permissions)
@@ -44,6 +42,7 @@ Moving your packages to the cloud is a 4-step process:
 1. [Use your feeds](#use-your-feeds)
 
 <a name="inventory-your-existing-package-sources"></a>
+
 ### Inventory your existing package sources
 
 Before making any configuration changes, find your existing NuGet file shares by checking:
@@ -52,7 +51,7 @@ Before making any configuration changes, find your existing NuGet file shares by
   - Command Prompt: `%APPDATA%\NuGet\NuGet.Config`
   - PowerShell: `$env:APPDATA\NuGet\NuGet.Config`
 
-Look for any lines with a UNC path (like `<add key="SMBNuGetServer" value="\\server\share\NuGet" />`) and note the path. You'll use the list of paths in the [migrate](#migrate-your-packages) section later.
+Look for any lines with a UNC path (like `<add key="SMBNuGetServer" value="\\server\share\NuGet" />`) and note the path. You'll use the list of paths in the [migrate your packages](#migrate-your-packages) section later.
 
 <a name="make-a-plan-for-permissions"></a>
 ### Make a plan for permissions
