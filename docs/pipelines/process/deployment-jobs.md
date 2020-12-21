@@ -339,7 +339,7 @@ jobs:
             strategy: $(strategy.name) 
             percentage: $(strategy.increment) 
             manifests: 'manifest.yml' 
-      postRouteTaffic: 
+      postRouteTraffic: 
         pool: server 
         steps:           
         - script: echo monitor application health...   
