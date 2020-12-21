@@ -153,5 +153,5 @@ Outages lasting more than 12 hours are uncommon but you might experience some is
 
 ## What's next?
 
-- [Set up upstream sources](../how-to-set-up-upstream-sources.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
 - [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md).
