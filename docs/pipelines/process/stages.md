@@ -257,7 +257,9 @@ You control the dependencies by setting the triggers on each stage of the releas
 * * *
 <h2 id="conditions">Conditions</h2>
 
-You can specify the conditions under which each stage runs. By default, a stage runs if it does not depend on any other stage, or if all of the stages that it depends on have completed and succeeded. You can customize this behavior by forcing a stage to run even if a previous stage fails or by specifying a custom condition; however, if customizing the default condition of previous steps completing and succeeding is removed.  Thus if using a custom condition it is common to use `and(succeeded(),custom_condition` as this will also check if the preceeding stage ran successfully.  Otherwise the stage will run regardless of the outcome of the previous stage.
+You can specify the conditions under which each stage runs. By default, a stage runs if it does not depend on any other stage, or if all of the stages that it depends on have completed and succeeded. You can customize this behavior by forcing a stage to run even if a previous stage fails or by specifying a custom condition. 
+
+Note that if you customize the default condition of the preceding steps, conditions for completing and succeeding are removed. So, if you use a custom condition, it's common to use `and(succeeded(),custom_condition` to check whether the preceding stage ran successfully. Otherwise, the stage runs regardless of the outcome of the preceding stage.
 
 > [!NOTE]
 >
