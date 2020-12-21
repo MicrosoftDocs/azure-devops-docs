@@ -33,7 +33,7 @@ Already familiar with the concepts and want to jump right in? Start with these h
 
 ## Benefits of upstream sources
 
-Upstream sources enable you to manage all of your product's dependencies in a single feed. We recommend publishing all of the packages for a given product to that product's feed, and managing that product's dependencies from remote feeds in the same feed, via upstream sources. This setup has a few benefits:
+Upstream sources enable you to manage all of your product's dependencies in a single feed. We recommend publishing all of the packages for a given product to that product's feed, and managing its dependencies from remote feeds in the same feed, via upstream sources. This setup has a few benefits:
 
 - **Simplicity:** your NuGet.config, .npmrc, or settings.xml contains exactly one feed (your feed).
 - **Determinism:** your feed resolves package requests in order, so rebuilding the same codebase at the same commit or changeset uses the same set of packages.
@@ -48,7 +48,7 @@ To take full advantage of the benefits of upstream sources as a consumer of anot
 
 ### Use a single feed on the client
 
-In order for your feed to provide [deterministic restore](#search-order), it's important to ensure that your package feed configuration file&mdash;your _.npmrc_ or _nuget.config_&mdash;references only your Azure Artifacts feed with upstream sources enabled. For NuGet, the `<packageSources>` section should look like:
+In order for your feed to provide [deterministic restore](#search-order), it's important to ensure that your package feed configuration file (.npmrc_ or _nuget.config) references only your Azure Artifacts feed with upstream sources enabled. For NuGet, the `<packageSources>` section should look like this:
 
 ```xml
 <packageSources>
@@ -58,10 +58,9 @@ In order for your feed to provide [deterministic restore](#search-order), it's i
 ```
 
 > [!NOTE]
->
 > The `<clear />` tag is required because NuGet composes [several configuration files](/nuget/consume-packages/configuring-nuget-behavior) to determine the full set of options to use. `<clear />` tells NuGet to ignore all other `<packageSources>` defined in higher-level configuration files.
 
-For npm, you should have only one `registry` line, like:
+For npm, you should have only one `registry` line:
 
 ```ini
 registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/registry/
@@ -70,15 +69,15 @@ always-auth=true
 
 ### Order your upstream sources intentionally
 
-If you only use public upstream sources (for example, nuget.org or npmjs.com), the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
+If you only use public package repositories (e.g. nuget.org or npmjs.com), the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
 
-If you use multiple Azure DevOps Services upstream sources, or a mixture of public and Azure DevOps Services upstream sources, their order is taken into account in step 3 of the [search order](#search-order). In that case, we recommend putting the public upstream sources first. This ensures that you look for OSS packages from the public repos before checking any Azure DevOps Services upstream sources, which could contain modified versions of public packages.
+If you use multiple upstream sources, or a mixture of public package repositories and upstream sources, their order is taken into account in step 3 of the [search order](#search-order). In that case, we recommend putting the public package repositories first. This ensures that you look for OSS packages from the public repos before checking any upstream sources, which could contain modified versions of public packages.
 
-In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository. If your organization does this, put the Azure DevOps Services upstream source that contains these modified OSS packages before the public upstream sources to ensure you use your organization's modified versions.
+In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository. If your organization does this, put the upstream source that contains these modified OSS packages before the public package repositories to ensure you use your organization's modified versions.
 
 ### Use the suggested default view
 
-Upstream sources to Azure DevOps Services feeds require you to select a *view* of the remote feed when you add it as an upstream source. This prevents your upstream sources from creating a cycle, and it requires and encourages your upstream feed to provide you with a [complete package graph](package-graph.md). In general, the feed owner should [select the correct default view](#local), as the view communicates which packages and versions the producer wants consumers to use.
+Upstream sources require you to select a **view** of the remote feed when you add it as an upstream source. This prevents your upstream sources from creating a cycle and it requires and encourages your upstream feed to provide you with a [complete package graph](package-graph.md). In general, the feed owner should [select the correct default view](#local), as the view communicates which packages and versions the producer wants consumers to use.
 
 ## Best practices: feed owners/package producers
 
@@ -88,9 +87,9 @@ To make your feed easily usable as an upstream source to other feeds, consider a
 
 ### When in doubt, `@local` is your default view
 
-If you don't use [views](views.md), the `@local` view should be your default view (and is the default view on all newly created feeds). @local contains all packages uploaded/pushed/published to the feed from a package client (for example, nuget.exe) *and* all packages saved from any upstream source. @local, like [all views](views.md), does **not** include packages that are available in the feed's upstream sources but have never been saved into the feed.
+If you don't use [views](views.md), the `@local` view should be your default view (and is the default view on all newly created feeds). @local contains all packages uploaded/pushed/published to the feed from a public package repository (e.g. nuget.exe) **and** all packages saved from any upstream source. @local, like [all views](views.md), does **not** include packages that are available in the feed's upstream sources but have never been saved into the feed.
 
-If you do use views to communicate a release quality, you can set the default view to whichever view contains the packages you want to make available to your consumers.
+If you do use views to release package versions, you can set the default view to whichever view contains the packages you want to make available to your consumers.
 
 ### Provide a complete graph
 
