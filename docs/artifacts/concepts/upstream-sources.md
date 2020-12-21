@@ -147,12 +147,11 @@ If there are any failures, a warning message will be displayed. The settings pag
 
 ## Offline upstream sources
 
-Upstream sources protect you and your CI/CD infrastructure from outages in public sources. That protection works for both short and long outages.
+Upstream sources are a great way to protect your CI/CD infrastructure from public package managers outages. For outages lasting less than 12 hours, you can continue to normally use your feeds thanks to the [Cached metadata](#upstream-metadata-cache).
 
-For outages lasting less than 12 hours, you can continue to use the feed as normal thanks to the [metadata cache](#upstream-metadata-cache).
+Outages lasting more than 12 hours are uncommon but you might experience some issues listing and restoring packages even if those packages have been published to your feed. For long outages, you can chose to delete the offline upstream source or all of them. When the upstream source is back online, you can simply re-add it.
 
-For outages lasting more than 12 hours, which are infrequent, you will experience issues listing and restoring packages, even if those packages have been installed into the feed. In these scenarios, you can delete either the offline upstream or all upstream sources of the affected package type and continue developing and building as normal. If/when the upstream source returns, just re-add it.
+## What's next?
 
-## Legacy upstream source information
-
-Older Azure Artifacts feeds ("legacy feeds") use an older version of the npmjs.com upstream source and are also unable to use the nuget.org upstream source.
+- [Set up upstream sources](../how-to-set-up-upstream-sources.md)
+- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md).
