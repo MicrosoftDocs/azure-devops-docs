@@ -156,7 +156,7 @@ automation tasks, you can also configure several properties and options
 for a stage in a release pipeline. You can:
 
 * Edit the name of the stage here if necessary.
-* Designate a one user or a 
+* Designate one user or a 
   group to be the stage owner. Stage owners get
   notified whenever a deployment to that
   stage fails. Being a stage owner does not automatically come with any permissions. 
