@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 > [!NOTE]
 > Check the [Versions and compatibility](../overview.md#versions-compatibility) to ensure compatibility. 
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public package repositories (npmjs.com, NuGet.org, Maven Central, and PyPI) and Artifacts feeds. Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public package managers (npmjs.com, NuGet.org, Maven Central, and PyPI) and Artifacts feeds. Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
 Already familiar with the concepts and want to jump right in? Start with these how-tos:
 
@@ -69,11 +69,11 @@ always-auth=true
 
 ### Order your upstream sources intentionally
 
-If you only use public package repositories (e.g. nuget.org or npmjs.com), the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
+If you only use public package managers (e.g. nuget.org or npmjs.com), the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
 
-If you use multiple upstream sources, or a mixture of public package repositories and upstream sources, their order is taken into account in step 3 of the [search order](#search-order). In that case, we recommend putting the public package repositories first. This ensures that you look for OSS packages from the public repos before checking any upstream sources, which could contain modified versions of public packages.
+If you use multiple upstream sources, or a mixture of public package managers and upstream sources, their order is taken into account in step 3 of the [search order](#search-order). In that case, we recommend putting the public package managers first. This ensures that you look for OSS packages from the public repos before checking any upstream sources, which could contain modified versions of public packages.
 
-In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository. If your organization does this, put the upstream source that contains these modified OSS packages before the public package repositories to ensure you use your organization's modified versions.
+In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository. If your organization does this, put the upstream source that contains these modified OSS packages before the public package managers to ensure you use your organization's modified versions.
 
 ### Use the suggested default view
 
@@ -99,13 +99,13 @@ Because your consumers require a [complete graph](package-graph.md) to successfu
 
 ## Determining the package to use: search order
 
-For package managers that support multiple feeds (like NuGet and Maven), the order in which feeds are consulted is sometimes unclear or non-deterministic (for example in NuGet, parallel requests are made to all feeds in the config file and the first response wins). Upstream sources prevent this non-determinism by searching the feed and its upstream sources using the following order:
+For public package managers that support multiple feeds (NuGet and Maven), the order in which feeds are consulted is sometimes unclear or non-deterministic (for example in NuGet, parallel requests are made to all feeds in the config file and the first response wins). Upstream sources prevent this non-determinism by searching the feed and its upstream sources using the following order:
 
 1. Packages pushed to the feed
 2. Packages saved via an upstream source
 3. Packages available via upstream sources: each upstream is searched in the order it's listed in the feed's configuration
 
-To take advantage of the determinism provided by upstream sources, you should ensure that your client's configuration file [only references your product feed](#single-feed), and not any other feeds like the public sources.
+To take advantage of the determinism provided by upstream sources, you should ensure that your client's configuration file [only references your product feed](#single-feed), and not any other feeds like the public package managers.
 
 <a name="saved-packages"></a>
 
@@ -113,7 +113,7 @@ To take advantage of the determinism provided by upstream sources, you should en
 
 When you enable an upstream source, packages installed from the upstream source via the feed will automatically be saved in the feed. These packages could be installed directly from the upstream (for example, `npm install express`) or they could be installed as part of dependency resolution (for example, the install of `express` would also save dependencies like `accepts`).
 
-Saving can improve download performance and save network bandwidth, esp. for TFS servers located on internal networks.
+Saving can improve download performance and save network bandwidth especially for TFS servers located on internal networks.
 
 <a name="overriding-packages"></a>
 
@@ -121,11 +121,11 @@ Saving can improve download performance and save network bandwidth, esp. for TFS
 
 You can't publish any package-version that already exists in any upstream source enabled on your feed. For instance, if the nuget.org upstream source is enabled you cannot publish `Newtonsoft.Json 10.0.3` because that same package-version is already present on nuget.org.
 
-If you must push a package-version that already exists on one of your upstream sources, you must disable the upstream source, push your package, then re-enable the upstream source. Note that you can only push a package-version that wasn't previously saved from the upstream, because saved packages remain in the feed even if the upstream source is disabled or removed. See the [immutability doc](../artifacts-key-concepts.md#immutability) for more info.
+If you must push a package-version that already exists on one of your upstream sources, you must disable the upstream source, push your package, then re-enable the upstream source. Note that you can only push a package-version that wasn't previously saved from the upstream, because saved packages remain in the feed even if the upstream source is disabled or removed. See the [immutability concept](../artifacts-key-concepts.md#immutability) for more info.
 
 <a name="upstream-metadata-cache"></a>
 
-### Metadata cached from upstream sources
+## Cached metadata
 
 When you configure an upstream source and begin to query it through your feed, the feed will keep a cache of the metadata that you queried (most often, the package you asked for and its available versions) for 24 hours. There is a 3-6 hour delay between when a package is pushed to an upstream source and when it is available for download by your feed. This delay depends on job timing and package data propagation.
 
@@ -134,13 +134,11 @@ When you configure an upstream source and begin to query it through your feed, t
 
 <a name="upstream-health-status"></a>
 
-### Upstream health
+## Upstream source health status
 
-If a feed has failing upstream sources, the metadata no longer can be refreshed for packages of the same protocol. Follow the steps below to view the health status of the upstream source:
+If a feed has a failing upstream source, the metadata can no longer be refreshed for packages of the same protocol. To view your upstream sources health status, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**, then select **Upstream sources**. 
 
-With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**, then select **Upstream sources** in your feed settings UI. 
-
-If there are any failing upstream sources, the Artifacts UI shows a warning message to notify that issues have been detected and manual action may be needed. Upstream setting page will show which one of the upstream sources is failing and by clicking the failing source, users can find the reason for the failure and instructions on how to solve it.
+If there are any failures, a warning message will be displayed. The settings page will also indicate which one of the upstream sources is failing. Selecting the failing source will provide more details on the reason of failure and instructions on how to solve it.
 
 > [!div class="mx-imgBorder"]
 > ![Upstream health](media/upstream-health.png)
