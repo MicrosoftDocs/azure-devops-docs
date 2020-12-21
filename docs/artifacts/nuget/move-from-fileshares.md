@@ -1,5 +1,5 @@
 ---
-title: Migrate your packages to Azure Artifacts feeds
+title: Use Azure Artifacts feeds with NuGet
 description: Leave your file shares behind and bring your packages to Azure Artifacts feeds
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.technology: devops-artifacts
@@ -8,7 +8,7 @@ ms.date: 12/21/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Migrate your packages to Azure Artifacts feeds
+# Use Azure Artifacts feeds with NuGet
 
 Azure Artifacts provides hosted NuGet feeds as a service. If you're using NuGet packages as a part of your continuous delivery flow, Azure Artifacts can help you manage your dependencies through public and private feeds. Azure Artifacts works with any CI system that supports authenticated NuGet feeds. 
 
@@ -22,7 +22,7 @@ Azure Artifacts provides a number of benefits compared to file shares. However, 
 
 [!INCLUDE [nuget-recommended-version](../includes/nuget/nuget-recommended-version.md)]
 
-### Authentication and authorization
+## Authentication and authorization
 
 If you're using Active Directory-backed file shares, you and your on-prem build agents are likely authenticating automatically using Windows NTLM.
 Moving your packages to Azure Artifacts will require a few changes:
@@ -34,7 +34,7 @@ Moving your packages to Azure Artifacts will require a few changes:
 
 ## Migrate your packages
 
-Migrating your packages to the Azure Artifacts feeds is a 4-step process:
+Migrating your packages is a 4-step process:
 
 1. [Inventory your existing package sources](#inventory-your-existing-package-sources)
 1. [Make a plan for permissions](#make-a-plan-for-permissions)
@@ -78,7 +78,7 @@ Now that you took inventory of your existing package sources, it's time to set u
 
 For each SMB share, follow the instructions to [Create a feed](../concepts/feeds.md#create-a-feed). In the create dialog:
 - Use the name of the SMB share folder as the **Feed name**
-- choose your feed **visibility**, **upstream sources** and **scope**.
+- choose your feed **visibility**, **upstream sources**, and **scope**.
 
 For each feed you've created, there are a set of [feed permissions](../feeds/feed-permissions.md) that you should consider when setting up feed permissions.
 
