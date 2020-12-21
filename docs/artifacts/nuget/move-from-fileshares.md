@@ -98,30 +98,36 @@ your principals the appropriate group membership:
 For each feed, select **Connect to feed** and copy the **Source URL** under the NuGet section. You will need the source URL to [migrate your packages](#migrate-your-packages) and [update your NuGet configuration](#update-your-nuget-configuration).
 
 <a name="migrate-your-packages"></a>
+
 #### Migrate your packages
 
 Once you've set up your feeds, you can do a bulk push from each SMB share to its corresponding feed. To do so: 
 
-1. If you haven't already, open a PowerShell window in the repo where you installed the Azure DevOps Services NuGet tools and run `init.ps1`. 
-This sets up your environment to allow you to work with nuget.exe and Team Service's NuGet feeds.
-1. For each share, push all packages in the share to the new feed: 
-`nuget push {your package path}\*.nupkg -Source {your NuGet package source URL} -ApiKey Azure DevOps Services`
+1. If you haven't already, open a PowerShell window in the repo where you installed the NuGet tools and run `init.ps1`. This sets up your environment to allow you to work with nuget.exe and Azure Artifacts feeds.
+1. For each share, use the following command to push all packages in the share to your new feed:
+
+```Command
+  nuget push {your package path}\*.nupkg -Source {your NuGet package source URL} -ApiKey Azure DevOps Services
+``` 
 
 For larger teams, you should consider marking each share as read-only before doing the `nuget push` operation to ensure no one adds or updates packages during your migration.  
 
 <a name="update-your-nuget-configuration"></a>
+
 #### Update your NuGet configuration
 
-Now, return to each of the nuget.config files you found in the [inventory](#inventory-your-existing-package-sources) section. For 
+Now, return to each of the nuget.config files you found in the [Inventory your existing package sources](#inventory-your-existing-package-sources) section. For 
 each share, find the corresponding `<add key="SMBNuGetServer" value="\\server\share\NuGet" />` and replace the `value` with the new feed's source URL. 
 
 <a name="add-the-vsts-nuget-tools-to-your-repo"></a>
-#### Add the Azure DevOps Services NuGet tools to your repo
 
-The Azure DevOps Services NuGet [bootstrap package](bootstrap-nuget.md) can automate the process of acquiring the right NuGet tools and credentials to use feeds.
+#### Add the bootstrapper package
+
+The [bootstrap package](bootstrap-nuget.md) can automate the process of acquiring the right NuGet tools and credentials to use feeds.
 This is especially helpful for users of Visual Studio 2013 (or earlier) or NuGet 2.x, which don't have built-in support for Azure DevOps Services auth.
 
 <a name="integrate-with-your-builds"></a>
+
 #### Integrate with your builds
 
-Update your builds to ensure they have the right credentials to consume and publish packages in feeds. See the how-tos for [restoring](../../pipelines/packages/nuget-restore.md) and [publishing](../../pipelines/artifacts/nuget.md) packages in Team Build.
+Update your builds to ensure they have the right credentials to consume and publish packages to and from your feeds. See how to [Restore NuGet packages in Azure Pipelines](../../pipelines/packages/nuget-restore.md) and how to [Publish to NuGet feeds](../../pipelines/artifacts/nuget.md) for more details.
