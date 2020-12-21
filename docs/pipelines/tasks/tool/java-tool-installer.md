@@ -47,10 +47,10 @@ None
 
 > [!NOTE]
 >
-> To run **Java Tool Installer** task on macOS it is required the user who is used on the agent to have permission to execute **sudo** command without a password. 
-> Follow the next steps to enable this permission:
+> To run **Java Tool Installer** task on macOS it is required for user under which agent is running to have permission to execute **sudo** command without a password. 
+> You can follow the next steps to enable this permission:
 > 1) Run *sudo visudo* command, it will open sudoers file for editing.
-> 2) Go to the bottom of the file and add the following line: *user ALL=(ALL) NOPASSWD: ALL* (Replace *user* by the actual user alias)
+> 2) Go to the bottom of the file and add the following line: *user ALL=NOPASSWD: /usr/sbin/installer* (Replace user by the actual user alias)
 > 3) Save and close the file.
 >
 
