@@ -9,14 +9,14 @@ ms.author: chcomley
 author: chcomley
 ms.date: 11/08/2019
 ms.topic: overview
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # What is Azure DevOps?
 
 [!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
-Azure DevOps provides developer services to support teams to plan work, collaborate on code development, and build and deploy applications. Developers can work in the cloud using Azure DevOps Services or on-premises using Azure DevOps Server. Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).
+Azure DevOps provides developer services to support teams to plan work, collaborate on code development, and build and deploy applications. Developers can work in the cloud using Azure DevOps Services or on-premises using Azure DevOps Server.
 
 Azure DevOps provides integrated features that you can access through your web browser or IDE client. You can use one or more of the following services based on your business needs:
 
@@ -37,8 +37,6 @@ Azure DevOps supports adding extensions and integrating with other popular servi
 For information on the differences between the cloud versus on-premises platforms, see [Azure DevOps Services and Azure DevOps Server](about-azure-devops-services-tfs.md).
 
 <a name="name-changes"></a>Microsoft renamed Visual Studio Team Services (VSTS) to Azure DevOps Services. For more information about this change, see [Introducing Azure DevOps](https://aka.ms/azurevsts).
-
-Team Foundation Server became Azure DevOps Server 2019.
 
 ## Choose Azure DevOps Services
 
@@ -121,7 +119,7 @@ This content supports a platform/version selector. Toggle the Content version se
 
 <!---
 [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
-[DevOps overview for Azure DevOps Services and TFS](../get-started/index.yml)
+[DevOps overview for Azure DevOps](../get-started/index.yml)
 
 
 [![Sign up for Azure DevOps Services](media/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](media/what-is-vsts-add-code-ide-step-2.png)](code-with-git.md)

@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 09/30/2020
+ms.date: 12/22/2020
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -71,10 +71,10 @@ parameters:
   default: false
 
 steps:
-  - ${{ if eq(parameters.experimentalTemplate, true) }}:
-    - template: experimental.yml
-  - ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
-    - template: stable.yml
+- ${{ if eq(parameters.experimentalTemplate, true) }}:
+  - template: experimental.yml
+- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
+  - template: stable.yml
 ```
 
 ### Parameter data types
@@ -439,8 +439,45 @@ steps:
 - script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
 ```
 
+## Reference template paths
 
+Template paths should be relative to the file that does the including. Here is an example nested hierarchy. 
 
+```
+|
++-- fileA.yml
+|
++-- dir1/
+     |
+     +-- fileB.yml
+     |
+     +-- dir2/
+          |
+          +-- fileC.yml
+```
+
+Then, in `fileA.yml` you can reference `fileB.yml` and `fileC.yml`  like this. 
+
+```yaml
+steps:
+- template: dir1/fileB.yml
+- template: dir1/dir2/fileC.yml
+```
+
+If `fileC.yml` is your starting point, you can include `fileA.yml` and `fileB.yml` like this. 
+
+```yaml
+steps:
+- template: ../../fileA.yml
+- template: ../fileB.yml
+```
+When `fileB.yml` is your starting point, you can include `fileA.yml` and `fileC.yml` like this. 
+
+```yaml
+steps:
+- template: ../fileA.yml
+- template: dir2/fileC.yml
+```
 ## Use other repositories
 
 You can keep your templates in other repositories.

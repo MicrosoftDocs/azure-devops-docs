@@ -12,6 +12,8 @@
     href: artifact-storage.md
   - name: Best practices
     href: concepts/best-practices.md
+  - name: Search packages
+    href: ../project/search/package-search.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
 - name: Work with packages
   items:
   - name: About packages
@@ -102,7 +104,7 @@
       href: how-to/delete-and-recover-packages.md
     - name: Migrate packages to Azure Artifacts feed
       href: tutorials/migrate-packages.md
-    - name: Move your packages to the cloud
+    - name: Use Azure Artifacts feeds with NuGet
       href: nuget/move-from-fileshares.md
     - name: Share PowerShell modules with Azure Artifacts feed
       href: tutorials/private-powershell-library.md

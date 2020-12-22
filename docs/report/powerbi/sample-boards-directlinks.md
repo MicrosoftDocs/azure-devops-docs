@@ -1,4 +1,4 @@
-﻿---
+---
 title: Work Items with Direct Links sample report
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate reports based on Work Items with Direct Links
@@ -25,6 +25,7 @@ Other sample queries include listing bugs with a Duplicate link to another bug, 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Sample queries
 

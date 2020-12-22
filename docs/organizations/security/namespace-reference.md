@@ -4,12 +4,12 @@ titleSuffix: Azure DevOps
 description: Understand the set of namespaces used to manage security  
 ms.technology: devops-security
 ms.custom: quarterly-review, devx-track-azurecli
-ms.topic: conceptual
+ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 10/12/2020
----
+ms.date: 11/16/2020
+--- 
 
 # Security namespace and permission reference for Azure DevOps 
 
@@ -1036,6 +1036,21 @@ The following table describes the security namespaces and permissions that aren'
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range="azure-devops"
+:::row:::
+   :::column span="1":::
+      OrganizationLevelData
+   :::column-end:::
+   :::column span="1":::
+      `Project-Scoped Users`                       
+   :::column-end:::
+   :::column span="2":::
+      Applies a system-level deny permission on the namespace which supports the Project-Scoped User Group. Members of the group have limited visibility to organization-level data. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../projects/about-projects.md#project-scoped-user-group). <br/> 
+      **ID:** `F0003BCE-5F45-4F93-A25D-90FC33FE3AA9`
+   :::column-end:::
+:::row-end:::
+---
+::: moniker-end  
 :::row:::
    :::column span="":::
       PipelineCachePrivileges
@@ -1218,7 +1233,7 @@ The following namespaces are either deprecated or read-only. You shouldn't use t
 
 ## Related articles
 
-- [About security, permissions, and membership](about-security-identity.md)
+- [About security, authentication, and authorization](about-security-identity.md)
 - [Security Namespaces REST API](/rest/api/azure/devops/security/)
 - [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)

@@ -25,6 +25,7 @@ Approvals and other checks are not defined in the yaml file. Users modifying the
 
 > [!IMPORTANT]
 > Checks can be configured on environments, service connections and agent pools.
+> Service connections cannot be specified by variable.
 
 ## Approvals
 

@@ -1,7 +1,7 @@
 ---
 title: Configure and pay for parallel jobs
 titleSuffix: Azure DevOps
-ms.custom: seodec18,contperfq1
+ms.custom: seodec18,contperf-fy21q1
 description: Configure parallel jobs in Azure Pipelines and pay for them
 ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
@@ -70,7 +70,7 @@ For Microsoft-hosted parallel jobs, you get 10 free Microsoft-hosted parallel jo
 | **Private project** | One free job that can run for up to 60 minutes each time   |   1,800 minutes (30 hours) per month |
 
 
-When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
+When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](#how-do-i-buy-more-parallel-jobs).
 
 When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization is still 1. To be able to run two jobs concurrently, you will need to purchase two parallel jobs if you are currently on the free tier. The first purchase only removes the time limits on the first job.
  
@@ -196,7 +196,7 @@ When you run a [server job](../process/phases.md#server-jobs) or deploy to a [de
 
 ![Simple example of parallel jobs](media/concurrent-pipelines-vsts/concurrent-pipelines-simple-example.png)
 
-1. FabrikamFiber CI Build 102 (master branch) starts first.
+1. FabrikamFiber CI Build 102 (main branch) starts first.
 2. Deployment of FabrikamFiber Release 11 is triggered by completion of FabrikamFiber CI Build 102.
 3. FabrikamFiber CI Build 101 (feature branch) is triggered. The build can't start yet because Release 11's deployment is active. So the build stays queued.
 4. Release 11 waits for approvals. Fabrikam CI Build 101 starts because a release that's waiting for approvals does not consume a parallel job.

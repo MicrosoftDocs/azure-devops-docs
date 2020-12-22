@@ -4,7 +4,7 @@ description: Use npm to store your JavaScript packages in Azure DevOps Services 
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
-ms.custom: contentperfq4
+ms.custom: contperf-fy20q4
 ms.date: 06/19/2020
 monikerRange: '>= tfs-2017'
 ---
