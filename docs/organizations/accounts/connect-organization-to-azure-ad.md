@@ -80,7 +80,7 @@ When you inform your users of the completed change, include the following tasks 
 - Clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory) if you use Visual Studio or the Git command-line tool. Delete the *%LocalAppData%\GitCredentialManager\tenant.cache* file on each client machine. 
 - [Regenerate new personal access tokens](use-personal-access-tokens-to-authenticate.md). Complete the following steps:
 
-    a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
+    a. In Azure DevOps, open your **User profile**, and then select **Security** from the resulting dropdown menu.
 
      ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
 
@@ -96,7 +96,7 @@ When you inform your users of the completed change, include the following tasks 
 
 - Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/), and then recreate SSH keys. Complete the following steps.
 
-    a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
+    a. In Azure DevOps, open your **User profile**, and then select **Security** from the resulting dropdown menu.
 
      ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
 

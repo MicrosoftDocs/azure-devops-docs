@@ -2,13 +2,13 @@
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Create a service hook with Trello
-description: Use Trello with your Azure DevOps Services organization
+description: Use Trello with your Azure DevOps organization.
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 monikerRange: '>= tfs-2017'
 ms.date: 07/27/2020
 ---
 
-# Create a service hook for Azure DevOps Services and TFS with Trello
+# Create a service hook for Azure DevOps with Trello
 
 [!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
 
@@ -33,9 +33,7 @@ Create a Trello card or list from an Azure DevOps Services event.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Go to your project Service Hooks page: 
-
-	`https://{orgName}/{project_name}/_settings/serviceHooks`
+1. Go to your project Service Hooks page by choosing **Project settings**, **Service hooks**.
 
 	![Project administration page](./media/add-devops-service-hook.png)
 
@@ -70,9 +68,7 @@ either create a card or a list.
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-1. Go to your project Service Hooks page: 
-
-    `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+1. Go to your project Service Hooks page by choosing **Settings**, **Service Hooks**.
 
 	![Project administration page](./media/add-service-hook.png)
 

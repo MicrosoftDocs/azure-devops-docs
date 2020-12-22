@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 09/10/2020
 ---
 
@@ -258,7 +258,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Agile Portfolio Management**  
-      Includes limited access to portfolio[backlogs](../../boards/backlogs/define-features-epics.md) and [Kanban boards](../../boards/boards/kanban-epics-features-stories.md). Stakeholders can't change the backlog priority order, can't assign items to an iteration, use the mapping pane, or exercise forecasting.  
+      Includes limited access to [portfolio backlogs](../../boards/backlogs/define-features-epics.md) and [Kanban boards](../../boards/boards/kanban-epics-features-stories.md). Stakeholders can't change the backlog priority order, can't assign items to an iteration, use the mapping pane, or exercise forecasting.  
    :::column-end:::
    :::column span="1":::
       ✔️
@@ -275,7 +275,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Agile Portfolio Management**  
-      Includes limited access to portfolio[backlogs](../../boards/backlogs/define-features-epics.md) and [Kanban boards](../../boards/boards/kanban-epics-features-stories.md). Stakeholders can't change the backlog priority order, can't assign items to an iteration, use the mapping pane, or exercise forecasting.  
+      Includes limited access to [portfolio backlogs](../../boards/backlogs/define-features-epics.md) and [Kanban boards](../../boards/boards/kanban-epics-features-stories.md). Stakeholders can't change the backlog priority order, can't assign items to an iteration, use the mapping pane, or exercise forecasting.  
    :::column-end:::
    :::column span="1":::
        

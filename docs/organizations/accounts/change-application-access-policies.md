@@ -76,7 +76,8 @@ You can enable or disable the following security policy.
 
    Depending on which conditions the user satisfies, you can require multi-factor authentication, further checks, or block access.	
 
-   For more information, see the REST API reference article, section [API version mapping](/rest/api/azure/devops/?view=azure-devops-server-rest-5.0).
+   For more information, see the REST API reference article, section [API version mapping](/rest/api/azure/devops/?view=azure-devops-server-rest-5.0&preserve-view=true).
+
 ## Prerequisites
 
 To change a policy, you need at least Basic access and organization Owner or Project Collection Administrator permissions.

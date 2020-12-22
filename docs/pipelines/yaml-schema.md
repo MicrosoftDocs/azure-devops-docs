@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 11/02/2020
+ms.date: 12/15/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -199,9 +199,9 @@ Learn more about:
 
 A stage is a collection of related jobs.
 By default, stages run sequentially.
-Each stage starts only after the preceding stage is complete.
+Each stage starts only after the preceding stage is complete unless otherwise specified via the `dependsOn ` property.
 
-Use approval checks to manually control when a stage should run.
+Use [approval checks](process/approvals.md) to manually control when a stage should run.
 These checks are commonly used to control deployments to production environments.
 
 Checks are a mechanism available to the *resource owner*.
@@ -438,7 +438,7 @@ Only two jobs run simultaneously.
 
 > [!NOTE]
 > The `matrix` syntax doesn't support automatic job scaling but you can implement similar
-> functionality using the `each` keyword. For an example, see [nedrebo/parameterized-azure-jobs](https://github.com/nedrebo/parameterized-azure-jobs).
+> functionality using the `each` keyword. For an example, see [expressions](process/expressions.md).
 
 #### Parallel
 
@@ -495,8 +495,7 @@ jobs:
   strategy:
     runOnce:    #rolling, canary are the other strategies that are supported
       deploy:
-        steps:
-        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+        steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
 # [Example](#tab/example)
@@ -570,7 +569,8 @@ All steps, regardless of whether they're documented in this article, support the
 
 ## Variables
 
-You can add hard-coded values directly or reference [variable groups](library/variable-groups.md).
+You can add hard-coded values directly, reference [variable groups](library/variable-groups.md), or insert via variable templates.
+
 Specify variables at the pipeline, stage, or job level.
 
 #### [Schema](#tab/schema/)
@@ -1030,7 +1030,7 @@ steps:
 ```yaml
 # File: azure-pipelines.yml
 trigger:
-- master
+- main
 
 extends:
     template: simple-param.yml
@@ -1107,7 +1107,7 @@ resources:
     trigger:
       branches:
         include:
-        - master
+        - main
         - releases/*
         exclude:
         - users/*
@@ -1250,7 +1250,7 @@ resources:
   - repository: string  # identifier (A-Z, a-z, 0-9, and underscore)
     type: enum  # see the following "Type" topic
     name: string  # repository name (format depends on `type`)
-    ref: string  # ref name to use; defaults to 'refs/heads/master'
+    ref: string  # ref name to use; defaults to 'refs/heads/main'
     endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
     trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
       branches:
@@ -1421,7 +1421,7 @@ List syntax:
 
 ```yaml
 trigger:
-- master
+- main
 - develop
 ```
 
@@ -1540,7 +1540,7 @@ List syntax:
 
 ```yaml
 pr:
-- master
+- main
 - develop
 ```
 
@@ -1605,7 +1605,7 @@ schedules:
   displayName: Daily midnight build
   branches:
     include:
-    - master
+    - main
     - releases/*
     exclude:
     - releases/ancient/*
@@ -1620,7 +1620,7 @@ schedules:
 In the preceding example, two schedules are defined.
 
 The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last successful scheduled run.
-It runs the pipeline for `master` and all `releases/*` branches, except for those branches under `releases/ancient/*`.
+It runs the pipeline for `main` and all `releases/*` branches, except for those branches under `releases/ancient/*`.
 
 The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays for all `releases/*` branches.
 It does so regardless of whether the code has changed since the last run.
@@ -2199,7 +2199,7 @@ resources:
     name: MyGitHubToolsOrg/tools
 
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'

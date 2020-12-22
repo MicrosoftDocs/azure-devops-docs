@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: reference
 ms.date: 05/28/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # What are the features in Azure DevOps?
@@ -53,7 +53,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add members to your project adds them to the Contributor group. When managing a large group of users, use <a href="../organizations/security/permissions.md" data-raw-source="[built-in groups to manage users and their permissions](../organizations/security/permissions.md)">built-in groups to manage users and their permissions</a>.</p>
 <br/>
 <p><b>Add team members </b></p>
-<p>To share and contribute to your project, add users to <a href="../organizations/security/add-users-team-project.md" data-raw-source="[Azure DevOps Services](../organizations/security/add-users-team-project.md)">Azure DevOps Services</a> or your <a href="../organizations/settings/add-teams.md#add-team-members" data-raw-source="[TFS](../organizations/settings/add-teams.md#add-team-members)">TFS</a>.</p>
+<p>To share and contribute to your project, add users to <a href="../organizations/security/add-users-team-project.md" data-raw-source="[Azure DevOps Services](../organizations/security/add-users-team-project.md)">Azure DevOps Services</a> or your <a href="../organizations/settings/add-teams.md#add-team-members" data-raw-source="[Azure DevOps Server](../organizations/settings/add-teams.md#add-team-members)">Azure DevOps Server</a>.</p>
 <img src="media/features/alm-feature-manage-members.png" alt="Manage users, add team members"/><br/><br/>
 
 <p><b>Azure Active Directory (Azure AD) (Azure DevOps Services)</b></p>
@@ -64,9 +64,9 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your Azure DevOps organization or to your TFS project have access to Basic features by default, except <a href="../organizations/security/get-started-stakeholder.md" data-raw-source="[Stakeholders](../organizations/security/get-started-stakeholder.md)">Stakeholders</a> who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+<p>All users that you add to your Azure DevOps organization or to your Azure DevOps Server project have access to Basic features by default, except <a href="../organizations/security/get-started-stakeholder.md" data-raw-source="[Stakeholders](../organizations/security/get-started-stakeholder.md)">Stakeholders</a> who have access to a limited set of features, or those added to the Advanced access level in Azure DevOps Server.</p>
 - <a href="../organizations/accounts/add-organization-users.md" data-raw-source="[Manage users (Azure DevOps Services)](../organizations/accounts/add-organization-users.md)">Manage users (Azure DevOps Services)</a>
-- <a href="../organizations/security/change-access-levels.md" data-raw-source="[Change access levels (TFS)](../organizations/security/change-access-levels.md)">Change access levels (TFS)</a><br/><br/>
+- <a href="../organizations/security/change-access-levels.md" data-raw-source="[Change access levels (Azure DevOps Server)](../organizations/security/change-access-levels.md)">Change access levels (Azure DevOps Server)</a><br/><br/>
 <p><b>Permissions</b></p>
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
@@ -114,7 +114,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="320">
 <p><b>Move work item to a different project (Azure DevOps Services)</b></p>
-<p>Choose the <img src="../boards/media/icons/change-team-project-icon.png" alt="Change project icon"/> Change project menu option, <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md)">move the work item to a different project</a>. </p>
+<p>Choose <img src="../boards/media/icons/change-team-project-icon.png" alt="Change project icon"/> **Change project**, <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md)">move the work item to a different project</a>. </p>
 
 <p><b>Full screen mode</b></p>
 <p>Choose <img src="../boards/media/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/media/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to enter or exit full screen mode.  </p>
@@ -138,7 +138,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <td width="30%">
 <p><b>Change work item type (Azure DevOps Services)</b></p>
-<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose the <img src="../boards/media/icons/change-type-icon.png" alt="Change type icon"/> Change type option from the <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md)">change the work item type</a>. </p>
+<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose <img src="../boards/media/icons/change-type-icon.png" alt="Change type icon"/> **Change type** <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md)">change the work item type</a>. </p>
 
 <p><b>Filter your backlog</b></p>
 <p>Use <strong>Show/Hide in progress</strong> to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
@@ -181,15 +181,15 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-index-copy-clone-work-item.png" alt="Copy or clone a work item"/><br/> <br/>
 
 <p><b>Follow a work item </b></p>
-<p>Choose the <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> Follow/Following icons to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
+<p>Choose <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> **Follow**/**Following** to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
 <img src="media/features/alm-feature-follows.png" alt="Follow a work item control"/><br/><br/>
 
 <p><b>Rich text comments</b></p>
-<p>Describe and comment on work using <a href="../boards/backlogs/add-work-items.md" data-raw-source="[formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md)">formatted text, hyperlinks, and inline images</a>. Choose <img src="../boards/media/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/media/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to expand or contract the viewing area. </p>
+<p>Describe and comment on work using <a href="../boards/backlogs/add-work-items.md" data-raw-source="[formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md)">formatted text, hyperlinks, and inline images</a>. Choose <img src="../boards/media/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/media/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to expand or contract the viewing area.</p>
 
 
 <p><b>Clear HTML formatting </b></p>
-<p>Use the <img src="../boards/media/icons/remove-formatting-icon.png" alt="Remove format"/> icon or CTRL+Spacebar to remove formatting from highlighted text.</p>
+<p>Use <img src="../boards/media/icons/remove-formatting-icon.png" alt="Remove format"/> or **CTRL+Spacebar** to remove formatting from highlighted text.</p>
 
 
 
@@ -242,7 +242,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 <p><b>Discussion </b></p>
-<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing the <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/> discussion icon.  </p>
+<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/> **discussion**.  </p>
 
 
 <p><b>Integrate Git development with work tracking </b></p>
@@ -251,7 +251,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Verify a bug, rerun test case</b></p>
-<p>Choose the <strong>Verify</strong> option from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see <a href="../test/run-manual-tests.md" data-raw-source="[Run tests for web apps](../test/run-manual-tests.md)">Run tests for web apps</a>. </p>
+<p>Choose <strong>Verify</strong> from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see <a href="../test/run-manual-tests.md" data-raw-source="[Run tests for web apps](../test/run-manual-tests.md)">Run tests for web apps</a>. </p>
 
 
 <p><b>Link work items  </b></p>
@@ -259,7 +259,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-links-control.png" alt="Link control, web portal"/><br/><br/>
 
 <p><b>Add or modify a field </b></p>
-<p>Add a custom field (<a href="../organizations/settings/work/customize-process.md" data-raw-source="[Azure DevOps Services](../organizations/settings/work/customize-process.md)">Azure DevOps Services</a> | <a href="../reference/add-modify-field.md" data-raw-source="[TFS](../reference/add-modify-field.md)">TFS</a> to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>Add a custom field (<a href="../organizations/settings/work/customize-process.md" data-raw-source="[Azure DevOps Services](../organizations/settings/work/customize-process.md)">Azure DevOps Services</a> | <a href="../reference/add-modify-field.md" data-raw-source="[Azure DevOps Server](../reference/add-modify-field.md)">Azure DevOps Server</a> to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 
 
 <p><b>Restrict access</b></p>
@@ -359,7 +359,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Delete a process</b></p>
-<p>Delete those inherited processes that you no longer want used. Simply choose the Delete option from its context menu.  </p>
+<p>Delete those inherited processes that you no longer want used. Choose **Delete**.  </p>
 
 <p><b>Set process permissions</b></p>
 <p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be <a href="../organizations/security/set-permissions-access-work-tracking.md#process-permissions" data-raw-source="[granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)">granted explicit permissions to edit a specific process</a>.  </p>
@@ -377,7 +377,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <a id="customize-tfs"></a>
 
-### Customize (TFS)
+### Customize (Azure DevOps Server)
 
 <table>
 <tbody>
@@ -482,7 +482,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Definition of done</b></p>
 <p>Support your team to be in sync by <a href="../boards/boards/definition-of-done.md" data-raw-source="[specifying requirements to fulfill prior to handoff of items to a downstream work stage](../boards/boards/definition-of-done.md)">specifying requirements to fulfill prior to handoff of items to a downstream work stage</a>.</p><br/>
 <p><b>Filter by field values or parent work items</b></p>
-<p>Choose the <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> field filter icon to <a href="../boards/boards/filter-kanban-board.md" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
+<p>Choose <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> **field filter** to <a href="../boards/boards/filter-kanban-board.md" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
 <img src="media/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter fields."/><br/><br/>
 
 <p><b>Cumulative Flow Diagram </b></p>
@@ -664,7 +664,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-kanban-flow.png" alt="Add columns to map your workflow"/><br/><br/>
 
 <p><b>Customize the workflow</b></p>
-<p>For Azure DevOps Services: <a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md)">add custom workflow states to support your business tracking needs</a>.  For TFS: <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
+<p>For Azure DevOps Services: <a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md)">add custom workflow states to support your business tracking needs</a>.  For Azure DevOps Server: <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[Design your custom workflow](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
 
  <p><b>States  </b></p>
 <p>States allow you to <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[track the status of work](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">track the status of work</a>. For  example, a bug moves from <strong>Active</strong>, <strong>Resolved</strong>, and <strong>Closed</strong> to correspond to when it&#39;s defined, fixed, and verified as fixed.</p>
@@ -680,21 +680,21 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 
-<p><b>Update fields during workflow changes (TFS)  </b></p>
+<p><b>Update fields during workflow changes (Azure DevOps Server)  </b></p>
 <p>You can <a href="/azure/devops/reference/xml/change-workflow-wit?viewFallbackFrom=vsts" data-raw-source="[define rules that change a field value](../reference/xml/change-workflow-wit.md?viewFallbackFrom=vsts)">define rules that change a field value</a> whenever you change the state, perform a transition, or select a reason.   </p>
 
-<p><b>Apply workflow conditional field rules (TFS)  </b></p>
+<p><b>Apply workflow conditional field rules (Azure DevOps Server)  </b></p>
 <p>You can define rules that <a href="../reference/xml/apply-rule-work-item-field.md" data-raw-source="[change a field value based on the contents of other fields](../reference/xml/apply-rule-work-item-field.md)">change a field value based on the contents of other fields</a> during workflow changes. </p>
 
 
-<p><b>Restrict who can make changes during workflow transitions (TFS)  </b></p>
+<p><b>Restrict who can make changes during workflow transitions (Azure DevOps Server)  </b></p>
 <p>Set a condition field rule that applies to a group to <a href="../reference/xml/apply-rule-work-item-field.md" data-raw-source="[restrict who can make changes to a workflow or a field](../reference/xml/apply-rule-work-item-field.md)">restrict who can make changes to a workflow or a field</a>.  </p>
 
 
-<p><b>Event-generated workflow changes or field assignments (TFS)</b></p>
-<p><a href="/azure/devops/reference/xml/automate-field-assignments-state-transition-reason?viewFallbackFrom=vsts" data-raw-source="[Add an action](../reference/xml/automate-field-assignments-state-transition-reason.md?viewFallbackFrom=vsts)">Add an action</a> to a custom workflow definition to automatically transition work items or specify a field value based on an internal TFS event or external event. </p>
+<p><b>Event-generated workflow changes or field assignments (Azure DevOps Server)</b></p>
+<p><a href="/azure/devops/reference/xml/automate-field-assignments-state-transition-reason?viewFallbackFrom=vsts" data-raw-source="[Add an action](../reference/xml/automate-field-assignments-state-transition-reason.md?viewFallbackFrom=vsts)">Add an action</a> to a custom workflow definition to automatically transition work items or specify a field value based on an internal Azure DevOps Server event or external event. </p>
 
-<p><b>Visual workflow design tool (TFS)</b></p>
+<p><b>Visual workflow design tool (Azure DevOps Server)</b></p>
 <p>You can change the workflow or view the workflow state diagram  by using the <a href="https://visualstudiogallery.msdn.microsoft.com/898a828a-af00-42c6-bbb2-530dc7b8f2e1" data-raw-source="[Process Editor](https://visualstudiogallery.msdn.microsoft.com/898a828a-af00-42c6-bbb2-530dc7b8f2e1)">Process Editor</a>, a power tool for Visual Studio. </p>
 
 </td>
@@ -734,12 +734,12 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Follow a work item </b></p>
-<p>Choose the <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> icons to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
+<p>Choose <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
 <img src="media/features/alm-feature-follows.png" alt="Follow a work item control"/><br/><br/>
 
 
 <p><b>Follow a pull request</b></p>
-<p>To <a href="../boards/work-items/follow-work-items.md" data-raw-source="[track the progress of a single pull request](../boards/work-items/follow-work-items.md)">track the progress of a single pull request</a>, choose the <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/> option from the context menu. </p>
+<p>To <a href="../boards/work-items/follow-work-items.md" data-raw-source="[track the progress of a single pull request](../boards/work-items/follow-work-items.md)">track the progress of a single pull request</a>, choose <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/> from the menu. </p>
 <img src="media/features/features-follow-pull-request.png" alt="Follow a pull request"/><br/><br/>
 
 <p><b>Manage work items you follow  </b></p>
@@ -785,7 +785,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-git-dev-commit-push.png" alt="Commit and push changes"/><br/><br/>
 
 <p><b>Pull requests</b></p>
-<p>Use <a href="../repos/git/pull-requests.md" data-raw-source="[pull requests to review and merge branch code to a master branch](../repos/git/pull-requests.md)">pull requests to review and merge branch code to a master branch</a>.   </p>
+<p>Use <a href="../repos/git/pull-requests.md" data-raw-source="[pull requests to review and merge branch code to a main branch](../repos/git/pull-requests.md)">pull requests to review and merge branch code to a main branch</a>.   </p>
 <p><b>Sync</b></p>
 
 <p>Quickly <a href="../repos/git/pulling.md" data-raw-source="[sync your local branch with a shared repo](../repos/git/pulling.md)">sync your local branch with a shared repo</a>.</p>
@@ -847,7 +847,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Grant an <a href="../repos/git/branch-policies.md" data-raw-source="[Exempt from policy enforcement permission](../repos/git/branch-policies.md)">Exempt from policy enforcement permission</a> to a user or group.</p>
 
 <p><b>Rebase a branch</b></p>
-<p>Before merging a branch into master, you may choose to first <a href="../repos/git/rebase.md" data-raw-source="[rebase your branch onto the latest commit in master](../repos/git/rebase.md)">rebase your branch onto the latest commit in master</a>.</p>
+<p>Before merging a branch into main, you may choose to first <a href="../repos/git/rebase.md" data-raw-source="[rebase your branch onto the latest commit in main](../repos/git/rebase.md)">rebase your branch onto the latest commit in main</a>.</p>
 
 
 
@@ -988,7 +988,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Remove a NuGet package from a feed </b></p>
-<p>[Unlist or remove a package]<a href="../artifacts/how-to/delete-and-recover-packages.md" data-raw-source="[Delete packages and recover deleted packages from the recycle bin in Azure Artifacts](../artifacts/how-to/delete-and-recover-packages.md)">Delete packages and recover deleted packages from the recycle bin in Azure Artifacts</a> you no longer want users to discover.</p>
+<p>Unlist or remove a package <a href="../artifacts/how-to/delete-and-recover-packages.md" data-raw-source="[Delete packages and recover deleted packages from the recycle bin in Azure Artifacts](../artifacts/how-to/delete-and-recover-packages.md)">Delete packages and recover deleted packages from the recycle bin in Azure Artifacts</a> you no longer want users to discover.</p>
 
 <p><b>Secure feeds </b></p>
 <p>Control who can <a href="../artifacts/feeds/feed-permissions.md" data-raw-source="[contribute to or consume from a feed](../artifacts/feeds/feed-permissions.md)">contribute to or consume from a feed</a>.</p>
@@ -1120,8 +1120,8 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-feature-release-1.png" alt="Release Manager"/><br/><br />
 
 
-<p><b>When to use Azure Pipelines or Build &amp; Release in TFS?</b></p>
-<p>Evaluate how Azure Pipelines and Build &amp; Release in TFS can help you in <a href="../pipelines/overview.md" data-raw-source="[your development and deployment efforts](../pipelines/overview.md)">your development and deployment efforts</a>.</p>
+<p><b>When to use Azure Pipelines or Build &amp; Release in Azure DevOps Server?</b></p>
+<p>Evaluate how Azure Pipelines and Build &amp; Release in Azure DevOps Server can help you in <a href="../pipelines/overview.md" data-raw-source="[your development and deployment efforts](../pipelines/overview.md)">your development and deployment efforts</a>.</p>
 
 
 <p><b>Release definitions</b></p>
@@ -1312,7 +1312,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Share dashboards with Stakeholders</b></p>
-<p>Grant non-licensed users access as Stakeholders (<a href="../organizations/accounts/add-organization-users.md" data-raw-source="[Azure DevOps Services](../organizations/accounts/add-organization-users.md)">Azure DevOps Services</a> | <a href="../organizations/security/change-access-levels.md" data-raw-source="[TFS](../organizations/security/change-access-levels.md)">TFS</a>) so they can view progress, run queries, and contribute ideas.  </p>
+<p>Grant non-licensed users access as Stakeholders (<a href="../organizations/accounts/add-organization-users.md" data-raw-source="[Azure DevOps Services](../organizations/accounts/add-organization-users.md)">Azure DevOps Services</a> | <a href="../organizations/security/change-access-levels.md" data-raw-source="[Azure DevOps Server](../organizations/security/change-access-levels.md)">Azure DevOps Server</a>) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
 <p><a href="../report/dashboards/team-velocity.md" data-raw-source="[Team velocity](../report/dashboards/team-velocity.md)">Team velocity</a> tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
@@ -1329,7 +1329,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 <p><b>Edit dashboard mode</b></p>
-<p>Add, remove, move, and configure widgets by <a href="../report/dashboards/dashboards.md" data-raw-source="[choosing the Edit dashboard icon](../report/dashboards/dashboards.md)">choosing the Edit dashboard icon</a>. Choose the checkmark icon to exit.  </p>
+<p>Add, remove, move, and configure widgets by <a href="../report/dashboards/dashboards.md" data-raw-source="[choosing Edit dashboard](../report/dashboards/dashboards.md)">choosing <b>Edit dashboard</b></a>. Select the checkmark to exit.  </p>
 <img src="../report/dashboards/media/edit-dashboard-icon.png" alt="Edit dashboard icon"/> | <img src="../report/dashboards/media/exit-edit-dashboard-mode-icon.png" alt="Exit dashboard edit mode icon"/><br/><br/>
 
 <p><b>Auto-refresh dashboards </b></p>
@@ -1404,7 +1404,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <a id="sql-server-reports">  </a>
 
-### SQL Server Reports (TFS)
+### SQL Server Reports (Azure DevOps Server)
 
 <table>
 <tbody>
@@ -1415,7 +1415,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>You can <a href="/azure/devops/report/sql-reports/reporting-services-reports" data-raw-source="[analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services](../report/sql-reports/reporting-services-reports.md)">analyze the progress and quality of your project by using the out-of-the-box reports in SQL Server Reporting Services</a>. These reports aggregate metrics from work items, version control, test results, and builds. They are uploaded when you create a project based on the process - <a href="../boards/work-items/guidance/choose-process.md" data-raw-source="[Agile, Scrum, or CMMI](../boards/work-items/guidance/choose-process.md)">Agile, Scrum, or CMMI</a> - that you choose.   </p>
 
 <p><b>Add Reporting Services reports</b></p>
-<p>If you need to add reporting services to a project or on-premises TFS after you&#39;ve created your team projects, you can by <a href="../report/admin/add-reports-to-a-team-project.md" data-raw-source="[adding a report server and uploading reports](../report/admin/add-reports-to-a-team-project.md)">adding a report server and uploading reports</a>.</p>
+<p>If you need to add reporting services to a project or on-premises Azure DevOps Server after you&#39;ve created your team projects, you can by <a href="../report/admin/add-reports-to-a-team-project.md" data-raw-source="[adding a report server and uploading reports](../report/admin/add-reports-to-a-team-project.md)">adding a report server and uploading reports</a>.</p>
 
 <p><b>Manage the data warehouse</b></p>
 <p>The reporting warehouse is a traditional data warehouse that consists of a <a href="../report/admin/manage-reports-data-warehouse-cube.md" data-raw-source="[relational database and an Analysis Services database](../report/admin/manage-reports-data-warehouse-cube.md)">relational database and an Analysis Services database</a>. You manage it through the following activities:</p>
@@ -1618,7 +1618,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 ### Marketplace
 
-<blockquote style="font-size: 13px"><b>Feature availability: </b>You can add Marketplace extensions from the web portal for Azure DevOps Services or TFS 2015.2 or later version or for Visual Studio or Visual Studio Code.
+<blockquote style="font-size: 13px"><b>Feature availability: </b>You can add Marketplace extensions from the web portal for Azure DevOps or for Visual Studio or Visual Studio Code.
 </blockquote> 
 
 <table>
@@ -1628,7 +1628,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>What is the Marketplace?</b></p>
-<p>From the <a href="https://marketplace.visualstudio.com/" data-raw-source="[Marketplace](https://marketplace.visualstudio.com/)">Marketplace</a>, you can extend the functionality available to you by installing free extensions or purchasing a subscription or paid extension. Extensions support adding new capabilities to Visual Studio, Visual Studio Code, Azure DevOps Services, or TFS.  </p>
+<p>From the <a href="https://marketplace.visualstudio.com/" data-raw-source="[Marketplace](https://marketplace.visualstudio.com/)">Marketplace</a>, you can extend the functionality available to you by installing free extensions or purchasing a subscription or paid extension. Extensions support adding new capabilities to Visual Studio, Visual Studio Code, and Azure DevOps.  </p>
 
 ![Featured extensions for Azure DevOps Services](media/features/featured-extensions.png)
 
@@ -1637,7 +1637,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Subscriptions</b></p>
-<p><a href="https://visualstudio.microsoft.com/products/how-to-buy-vs" data-raw-source="[Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs)">Visual Studio subscriptions</a> are a way for you to get the Visual Studio IDE, team collaboration benefits like Azure DevOps Services and TFS, and subscriber benefits like dev/test use of Windows, Windows Server, and SQL Server. </p>
+<p><a href="https://visualstudio.microsoft.com/products/how-to-buy-vs" data-raw-source="[Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs)">Visual Studio subscriptions</a> are a way for you to get the Visual Studio IDE, team collaboration benefits like Azure DevOps, and subscriber benefits like dev/test use of Windows, Windows Server, and SQL Server. </p>
 
 <p><b>Extensions</b></p>
 <p>You can <a href="/azure/devops/marketplace/install-extension" data-raw-source="[get and quickly install extensions](../marketplace/install-extension.md)">get and quickly install extensions</a> to add functionality to Visual Studio, Visual Studio Code, or Azure DevOps Services.</p>
@@ -1676,13 +1676,13 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started with REST APIs</b></p>
-<p>Learn the basic patterns for <a href="/rest/api/azure/devops/" data-raw-source="[using the REST APIs](/rest/api/azure/devops/)">using the REST APIs</a> for Azure DevOps Services and TFS.</p>
+<p>Learn the basic patterns for <a href="/rest/api/azure/devops/" data-raw-source="[using the REST APIs](/rest/api/azure/devops/)">using the REST APIs</a> for Azure DevOps.</p>
 
 <p><b>Authorization</b></p>
 <p>Get authorization from your customers to access Azure DevOps Services resources using <a href="../integrate/get-started/Authentication/oauth.md" data-raw-source="[OAuth 2.0](../integrate/get-started/Authentication/oauth.md)">OAuth 2.0</a>.</p>
 
 <p><b>REST API reference</b></p>
-<p>Use the <a href="../integrate/index.md" data-raw-source="[REST APIs](../integrate/index.md)">REST APIs</a> to work with Azure DevOps Services and TFS resources.</p>
+<p>Use the <a href="../integrate/index.md" data-raw-source="[REST APIs](../integrate/index.md)">REST APIs</a> to work with Azure DevOps resources.</p>
 
 </td>
 <td width="33%">
@@ -1770,7 +1770,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Localized content</b></p>
-<p>Most content that supports Azure DevOps Services and TFS is localized into the following 14 languages.</p>
+<p>Most content that supports Azure DevOps is localized into the following 14 languages.</p>
 
 
 <ul>
@@ -1912,8 +1912,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><a href="/appcenter/distribution/" data-raw-source="[Manage distribution of development and production versions of your apps](/appcenter/distribution/)">Manage distribution of development and production versions of your apps</a> and use independent bundle identifiers that can run in parallel on the same device.</p>
 
 
-<p><b>Integrate with Azure DevOps Services and TFS</b></p>
-<p><a href="https://visualstudio.microsoft.com/app-center/" data-raw-source="[Integrate HockeyApp directly in Azure DevOps Services or TFS](https://visualstudio.microsoft.com/app-center/)">Integrate HockeyApp directly in Azure DevOps Services or TFS</a> to upload your Android, iOS, or Windows builds. </p>
+<p><b>Integrate with Azure DevOps</b></p>
+<p><a href="https://visualstudio.microsoft.com/app-center/" data-raw-source="[Integrate HockeyApp directly in Azure DevOps](https://visualstudio.microsoft.com/app-center/)">Integrate HockeyApp directly in Azure DevOps</a> to upload your Android, iOS, or Windows builds. </p>
 
 
 
@@ -2051,12 +2051,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Project admin context</b></p>
-<p>Open the admin context to <a href="../organizations/settings/add-teams.md" data-raw-source="[add teams](../organizations/settings/add-teams.md)">add teams</a> and <a href="../organizations/security/change-individual-permissions.md" data-raw-source="[manage permissions](../organizations/security/change-individual-permissions.md)">manage permissions</a>. From any project hub, choose the <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> gear icon to open the admin context.</p>
+<p>Open the admin context to <a href="../organizations/settings/add-teams.md" data-raw-source="[add teams](../organizations/settings/add-teams.md)">add teams</a> and <a href="../organizations/security/change-individual-permissions.md" data-raw-source="[manage permissions](../organizations/security/change-individual-permissions.md)"> manage permissions</a>. From any project hub, choose <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> to open the admin context.</p>
 <img src="media/features/alm-feature-admin-context.png" alt="Admin context"/><br/><br/>
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md)">manage collection-level permissions</a>, and set build policies, and <a href="../extend/overview.md" data-raw-source="[manage extensions](../extend/overview.md)">manage extensions</a>. Choose the <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> gear icon to open the admin context, and then choose DefaultCollection. </p>
+<p>From the collection admin context, you can <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md)">manage collection-level permissions</a>, and set build policies, and <a href="../extend/overview.md" data-raw-source="[manage extensions](../extend/overview.md)">manage extensions</a>. Choose <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> to open the admin context, and then choose DefaultCollection. </p>
 
 
 </td>
@@ -2108,7 +2108,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Tags</b></p>
-<p><a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[Add tags to work items](../boards/queries/add-tags-to-work-items.md)">Add tags to work items</a> to filter backlogs and queries. Bulk update work items to add or remove tags: <a href="../boards/backlogs/bulk-modify-work-items.md#tags" data-raw-source="[Azure DevOps Services](../boards/backlogs/bulk-modify-work-items.md#tags)">Azure DevOps Services</a> | <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[TFS](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">TFS</a>. </p>
+<p><a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[Add tags to work items](../boards/queries/add-tags-to-work-items.md)">Add tags to work items</a> to filter backlogs and queries. Bulk update work items to add or remove tags: <a href="../boards/backlogs/bulk-modify-work-items.md#tags" data-raw-source="[Azure DevOps Services](../boards/backlogs/bulk-modify-work-items.md#tags)">Azure DevOps Services</a> | <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Azure DevOps Server](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Azure DevOps Server</a>. </p>
 <img src="media/features/alm-feature-tags.png" alt="Add tags to filter backlogs, boards, and queries"/><br/><br/>
 
 &lt;p
@@ -2171,7 +2171,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Azure Active Directory (Azure DevOps Services) </b></p>
 <p>Easily control access to your team&#39;s critical resources and key business assets with <a href="../organizations/accounts/manage-azure-active-directory-groups.md" data-raw-source="[Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups.md)">Azure Active Directory groups</a>.</p>
 
-<p><b>Set up groups (TFS)</b></p>
+<p><b>Set up groups (Azure DevOps Server)</b></p>
 <p><a href="/azure/devops/server/admin/setup-ad-groups" data-raw-source="[Create Windows or Active Directory groups](/azure/devops/server/admin/setup-ad-groups)">Create Windows or Active Directory groups</a> to manage access to your team projects and collections.  </p>
 
 <p><b>Built-in groups</b></p>
@@ -2213,11 +2213,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Manage administrative permissions </b></p>
-<p>[Add users to one of the following built-in groups] to provide them permissions assigned to that group: </p>
+<p>Add users to one of the following built-in groups to provide them permissions assigned to that group: </p>
 <ul>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Project Administrators](../organizations/security/set-project-collection-level-permissions.md)">Project Administrators</a>, who manage shared features for a project </li>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md)">Project Collection Administrators</a>, who manage collection-level features </li>
-<li><a href="/azure/devops/server/admin/add-administrator" data-raw-source="[Team Foundation Server Administrators](/azure/devops/server/admin/add-administrator)">Team Foundation Server Administrators</a>, who manage on-premises application servers </li>
+<li><a href="/azure/devops/server/admin/add-administrator" data-raw-source="[Azure DevOps Server Administrators](/azure/devops/server/admin/add-administrator)">Azure DevOps Server Administrators</a>, who manage on-premises application servers </li>
 </ul>
 <br/>
 
@@ -2240,16 +2240,16 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md)">granted explicit permissions to edit a specific process</a>.  </p>
 
 <p><b>Valid users</b></p>
-<p>Understand how <a href="../organizations/security/about-security-identity.md#validusers" data-raw-source="[valid user groups are populated and the permissions they&#39;re granted](../organizations/security/about-permissions.md#validusers)">valid user groups are populated and the permissions they&#39;re granted</a>.</p>
+<p>Understand how <a href="../organizations/security/about-permissions.md#validusers" data-raw-source="[valid user groups are populated and the permissions they&#39;re granted](../organizations/security/about-permissions.md#validusers)">valid user groups are populated and the permissions they&#39;re granted</a>.</p>
 
 
 <p><b>Permission reference</b></p>
 <p><a href="../organizations/security/permissions.md" data-raw-source="[Provide or restrict access](../organizations/security/permissions.md)">Provide or restrict access</a> for practically any feature, function, or object at the collection or project level. </p>
 
-<p><b>SharePoint permissions (TFS)</b></p>
+<p><b>SharePoint permissions (Azure DevOps Server)</b></p>
 <p>Grant permissions to <a href="/azure/devops/organizations/security/add-users-team-project?viewFallbackFrom=vsts" data-raw-source="[view and contribute to SharePoint project portals](../organizations/security/add-users-team-project.md?viewFallbackFrom=vsts)">view and contribute to SharePoint project portals</a>.</p>
 
-<p><b>SQL Server reporting permissions (TFS)</b></p>
+<p><b>SQL Server reporting permissions (Azure DevOps Server)</b></p>
 <p>Grant permissions to <a href="../report/admin/grant-permissions-to-reports.md" data-raw-source="[view and author Excel and SQL Server reports](../report/admin/grant-permissions-to-reports.md)">view and author Excel and SQL Server reports</a>.</p>
 
 
@@ -2276,11 +2276,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Free developer offers</b></p>
-<p>To get started, <a href="https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx" data-raw-source="[download and install Visual Studio](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx)">download and install Visual Studio</a> an integrated development environment (IDE) that works with Azure DevOps Services and TFS. </p>
+<p>To get started, <a href="https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx" data-raw-source="[download and install Visual Studio](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx)">download and install Visual Studio</a> an integrated development environment (IDE) that works with Azure DevOps. </p>
 
 
 <p><b>Migrate from on-premises to hosted</b></p>
-<p>You can <a href="/azure/devops/migrate/migrate-from-tfs" data-raw-source="[migrate source code and work items](../migrate/migrate-from-tfs.md)">migrate source code and work items</a> from an on-premises TFS to the cloud. </p>
+<p>You can <a href="/azure/devops/migrate/migrate-from-tfs" data-raw-source="[migrate source code and work items](../migrate/migrate-from-tfs.md)">migrate source code and work items</a> from an on-premises Azure DevOps Server to the cloud. </p>
 
 </td>
 <td width="33%">
@@ -2290,22 +2290,22 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 
-<p><b>Install TFS </b></p>
-<p><a href="https://visualstudio.microsoft.com/downloads" data-raw-source="[Download and install the latest version of Team Foundation Server](https://visualstudio.microsoft.com/downloads)">Download and install the latest version of Team Foundation Server</a>. TFS provides the collaboration hub to support your teams DevOps tasks. at the center of the Microsoft devops solution. </p>
+<p><b>Install Azure DevOps Server</b></p>
+<p><a href="https://visualstudio.microsoft.com/downloads" data-raw-source="[Download and install the latest version of Azure DevOps Server](https://visualstudio.microsoft.com/downloads)">Download and install the latest version of Azure DevOps Server</a>. Azure DevOps Server provides the collaboration hub to support your teams DevOps tasks. at the center of the Microsoft devops solution. </p>
 
 
 
 
 </td>
 <td width="33%">
-<p><b>Email configuration (TFS)</b></p>
-<p>For feedback requests, alerts, and other special controls to work, you must <a href="/azure/devops/server/admin/setup-customize-alerts" data-raw-source="[configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)">configure an SMTP server</a> for your on-premises TFS. </p>
+<p><b>Email configuration (Azure DevOps Server)</b></p>
+<p>For feedback requests, alerts, and other special controls to work, you must <a href="/azure/devops/server/admin/setup-customize-alerts" data-raw-source="[configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts)">configure an SMTP server</a> for your on-premises Azure DevOps. </p>
 
-<p><b>Automated, scheduled backups (TFS)</b></p>
+<p><b>Automated, scheduled backups (Azure DevOps Server)</b></p>
 <p>Reduce the risk of lost data by <a href="/azure/devops/server/admin/backup/config-backup-sched-plan" data-raw-source="[scheduling automated backups of the data store](/azure/devops/server/admin/backup/config-backup-sched-plan)">scheduling automated backups of the data store</a>.</p>
 
-<p><b>Built-in SQL Server database (TFS)</b></p>
-<p>For small teams, you can install <a href="/azure/devops/server/install/single-server" data-raw-source="[TFS using SQL Server Express which installs with TFS](/azure/devops/server/install/single-server)">TFS using SQL Server Express which installs with TFS</a>.  </p>
+<p><b>Built-in SQL Server database (Azure DevOps Server)</b></p>
+<p>For small teams, you can install <a href="/azure/devops/server/install/single-server" data-raw-source="[Azure DevOps Server using SQL Server Express which installs with Azure DevOps Server](/azure/devops/server/install/single-server)">Azure DevOps Server using SQL Server Express which installs with Azure DevOps Server</a>.  </p>
 
 
 </td>
@@ -2406,7 +2406,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-### Process templates (TFS)
+### Process templates (Azure DevOps Server)
 
 <table>
 <tbody>
@@ -2431,7 +2431,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Configure Features Wizard</b></p>
-<p>Use the Configure Features Wizard to <a href="/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade" data-raw-source="[configure team projects after a TFS upgrade to access new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)">configure team projects after a TFS upgrade to access new features</a>.  </p>
+<p>Use the Configure Features Wizard to <a href="/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade" data-raw-source="[configure team projects after an Azure DevOps Server upgrade to access new features](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)">configure team projects after an Azure DevOps Server upgrade to access new features</a>.  </p>
 
 </td>
 <td width="33%">
@@ -2467,7 +2467,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>A <a href="../organizations/projects/create-project.md" data-raw-source="[project](../organizations/projects/create-project.md)">project</a> provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A project lives within a project collection. You can grant permissions to and customize a project to support your business needs. </p>
 
 <p><b>Create a project </b></p>
-<p>You can <a href="sign-up-invite-teammates.md" data-raw-source="[create a project hosted in the cloud (Azure DevOps Services)](sign-up-invite-teammates.md)">create a project hosted in the cloud (Azure DevOps Services)</a>, avoiding maintenance and administrative overhead, or <a href="../organizations/projects/create-project.md" data-raw-source="[create a project on an on-premises TFS](../organizations/projects/create-project.md)">create a project on an on-premises TFS</a>.</p>
+<p>You can <a href="sign-up-invite-teammates.md" data-raw-source="[create a project hosted in the cloud (Azure DevOps Services)](sign-up-invite-teammates.md)">create a project hosted in the cloud (Azure DevOps Services)</a>, avoiding maintenance and administrative overhead, or <a href="../organizations/projects/create-project.md" data-raw-source="[create a project on an on-premises Azure DevOps Server](../organizations/projects/create-project.md)">create a project on an on-premises Azure DevOps Server</a>.</p>
 
 
 <p><b>Rename a project</b></p>
@@ -2494,14 +2494,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>View your work across teams and team projects</b></p>
 <p>From your <a href="../project/navigation/work-across-projects.md" data-raw-source="[Project page](../project/navigation/work-across-projects.md)">Project page</a>, you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the organization or collection. </p>
 
-<p><b>Customize a project (TFS) </b></p>
-<p>You customize a project defined on an on-premises TFS by <a href="../reference/customize-work.md" data-raw-source="[modifying definition files for work item types or process configuration, or changing field attributes](../reference/customize-work.md)">modifying definition files for work item types or process configuration, or changing field attributes</a>.  </p>
+<p><b>Customize a project (Azure DevOps Server) </b></p>
+<p>You customize a project defined on an on-premises Azure DevOps Server by <a href="../reference/customize-work.md" data-raw-source="[modifying definition files for work item types or process configuration, or changing field attributes](../reference/customize-work.md)">modifying definition files for work item types or process configuration, or changing field attributes</a>.  </p>
 
-<p><b>Update a project after an upgrade (TFS)</b></p>
+<p><b>Update a project after an upgrade (Azure DevOps Server)</b></p>
 <p>Some features added when you upgrade your on-premises application server may require you to <a href="/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade" data-raw-source="[configure features to access them](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade)">configure features to access them</a>. </p>
 
 
-<p><b>Upload reports (TFS) </b></p>
+<p><b>Upload reports (Azure DevOps Server) </b></p>
 <p><a href="../report/admin/upload-reports.md" data-raw-source="[Upload the latest reports provided for your process](../report/admin/upload-reports.md)">Upload the latest reports provided for your process</a> or add reports after you&#39;ve already created a project by adding SQL Server Reporting Services.  </p>
 </td>
 </tr>
@@ -2525,7 +2525,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>A team is an organizing unit used to support a number of <a href="../organizations/settings/manage-teams.md" data-raw-source="[team-configurable tools](../organizations/settings/manage-teams.md)">team-configurable tools</a> to plan and manage work and facilitate collaboration.  </p>
 
 <p><b>Add team members</b></p>
-<p>Add organizations-<a href="/azure/devops/organizations/security/add-users-team-project" data-raw-source="[Azure DevOps Services](../organizations/security/add-users-team-project.md)">Azure DevOps Services</a> | <a href="../organizations/security/add-users-team-project.md" data-raw-source="[TFS](../organizations/security/add-users-team-project.md)">TFS</a>--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
+<p>Add organizations-<a href="/azure/devops/organizations/security/add-users-team-project" data-raw-source="[Azure DevOps Services](../organizations/security/add-users-team-project.md)">Azure DevOps Services</a> | <a href="../organizations/security/add-users-team-project.md" data-raw-source="[Azure DevOps Server](../organizations/security/add-users-team-project.md)">Azure DevOps Server</a>--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
 <img src="media/features/alm-feature-manage-members.png" alt="Manage users, add team members"/><br/><br/>
 
 
@@ -2613,7 +2613,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Describe and comment on work to perform using <a href="../boards/backlogs/add-work-items.md" data-raw-source="[formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md)">formatted text, hyperlinks, and inline images</a>.  </p>
 
 <p><b>Discussion (Azure DevOps Services) </b></p>
-<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing the <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/> discussion icon.  </p>
+<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/>.  </p>
 <img src="media/features/alm-feature-add-work-items-discussion.png" alt="Discussion section"/><br/><br/>
 
 
@@ -2656,7 +2656,7 @@ We add new features frequently. We'll work to keep this list up-to-date. Other r
 - [Azure DevOps Blog](https://devblogs.microsoft.com/devops/)  
 
 <br/>
-Get started today using our cloud offering, <a href="https://visualstudio.microsoft.com/team-services/" data-raw-source="[Azure DevOps Services](https://visualstudio.microsoft.com/team-services/)">Azure DevOps Services</a>, or our <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[on-premises TFS server](https://visualstudio.microsoft.com/downloads/)">on-premises TFS server</a>.  
+Get started today using our cloud offering, <a href="https://visualstudio.microsoft.com/team-services/" data-raw-source="[Azure DevOps Services](https://visualstudio.microsoft.com/team-services/)">Azure DevOps Services</a>, or our <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[on-premises Azure DevOps Server](https://visualstudio.microsoft.com/downloads/)">on-premises Azure DevOps Server</a>.  
 
 <!---   
 ### We welcome your feedback
