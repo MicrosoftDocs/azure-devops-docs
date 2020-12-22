@@ -54,10 +54,10 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
 1. Search for **Project Collection Build Service**. By default, this identity can read from the repo but cannot push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
 
-  * **Create branch:**  Allow
-  * **Contribute:**  Allow
-  * **Read:**  Allow
-  * **Create tag:**  Allow
+      * **Create branch:**  Allow
+      * **Contribute:**  Allow
+      * **Read:**  Allow
+      * **Create tag:**  Allow
 
 
 ::: moniker-end
@@ -145,7 +145,7 @@ Learn more about [`checkout`](../yaml-schema.md#checkout).
 
 # [Classic](#tab/classic)
 
-On the options tab](../build/options.md), select **Allow scripts to access OAuth token**.
+On the [options tab](../build/options.md), select **Allow scripts to access OAuth token**.
 
 ---
 
