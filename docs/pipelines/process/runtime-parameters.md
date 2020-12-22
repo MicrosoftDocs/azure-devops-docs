@@ -303,7 +303,7 @@ steps:
 
 ### Can parameters be set based on variables?
 
-There are times when it may be useful to set parameters to values based on variables. Parameters are expanded early in processing a pipeline run so not all variables will be available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
+There are times when it may be useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables will be available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
 
 In this example, the predefined variables `Build.SourceBranch` and `Build.Reason` are used in conditions in template.yml.
 
