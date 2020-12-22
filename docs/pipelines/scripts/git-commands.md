@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can run a Git command in a build script for your workflow by using Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
-ms.date: 03/22/2019
+ms.date: 12/22/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -35,6 +35,34 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 <a name="version-control"></a>
 
 ### Grant version control permissions to the build service
+
+::: moniker range=">= azure-devops-2020"
+
+1. Go to the project settings page for your organization at **Organization Settings** > **General** > **Projects**.
+
+    :::image type="content" source="media/organization-project-settings.png" alt-text="Select your organization settings. ":::
+
+1. Select the project you want to edit. 
+
+    :::image type="content" source="media/select-project.png" alt-text="Select your project. ":::
+
+1. Within **Project Settings**, select **Repositories** in the navigation. Select the repository in which you want to run Git commands 
+
+1. Select **Permissions** to edit your repository permissions. 
+
+    :::image type="content" source="media/modify-repo-permissions.png" alt-text="Choose Permissions to edit your repository permissions. ":::
+
+1. Search for **Project Collection Build Service**. By default, this identity can read from the repo but cannot push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
+
+* **Create branch:**  Allow
+* **Contribute:**  Allow
+* **Read:**  Allow
+* **Create tag:**  Allow
+
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">Version Control control panel tab &#x25BC;</a>
 
@@ -80,6 +108,8 @@ Grant permissions needed for the Git commands you want to run. Typically you'll 
 * **Create tag:**  Allow
 
 When you're done granting the permissions, make sure to click **Save changes**.
+
+::: moniker-end
 
 ::: moniker range="< tfs-2018"
 
