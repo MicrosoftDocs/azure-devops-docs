@@ -1,25 +1,23 @@
 ﻿---
-title: Set up upstream sources for packages
-description: Find out how to configure upstream packages from multiple sources in Azure DevOps Services and TFS
+title: Set up upstream sources for your feed
+description: Find out how to configure upstream sources for you Azure Artifacts feeds
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 12/22/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Configure upstream sources
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and NuGet.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or Azure Active Directory (Azure AD) tenant). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
-
-For more in-depth information on the concepts and best practices regarding upstream sources, check out the [upstream sources concepts documentation](../concepts/upstream-sources.md).
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from both public packages managers (npmjs.com, NuGet.org, Maven Central, and PyPI) and Artifacts feeds. Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed and your feed will save a copy.
 
 ## Create a new feed that uses upstream sources
 
-Navigate to the **Packages** page and select "New Feed".
+Follow the steps in [this guide](../concepts/feeds.md#create-a-feed) to create a new feed.
 
-Underneath _Upstream Sources_, select _Use packages from public sources through this feed_.
+Under **Upstream sources** make sure you check the box to **Include packages from common public sources**.
 
-Selecting this option now means your feed will be configured to find and use packages from all of the public upstream sources (**nuget.org** (NuGet), **npmjs.org** (npm), **PyPI** (Python), and **Maven Central** (Maven)) without having to include those package repositories in any of your settings or configuration files. 
+Selecting this option will allow your feed to use packages from public packages hosts (**nuget.org** (NuGet), **npmjs.org** (npm), **PyPI** (Python), and **Maven Central** (Maven)) without having to include those package repositories in any of your settings or configuration files. 
 
 > [!IMPORTANT]
 > Maven snapshot artifacts are not currently supported in upstream sources.
