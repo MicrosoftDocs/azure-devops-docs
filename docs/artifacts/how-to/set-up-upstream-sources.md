@@ -1,6 +1,6 @@
 ﻿---
 title: Set up upstream sources for your feed
-description: Find out how to configure upstream sources for you Azure Artifacts feeds
+description: Find out how to configure upstream sources for your Azure Artifacts feeds
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 12/22/2020
@@ -25,8 +25,8 @@ Selecting this option will allow your feed to use packages from public packages 
 ## Add public upstream sources to an existing feed
 
 1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**.
-2. Select **Upstream sources**. If you don't have any upstream sources you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
-3. In the **Add a new upstream source** dialog, Select **Public source**. Please note that public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
+2. Select **Upstream sources**. If you don't have any upstream sources, you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
+3. In the **Add a new upstream source** dialog, Select **Public source**. Note that public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
 
 4. For public sources, choose **npmjs**, **NuGet Gallery**, **PyPI**, or **Maven Central**
 
@@ -36,7 +36,7 @@ Selecting this option will allow your feed to use packages from public packages 
 ## Add an Azure Artifacts feed in your organization as an upstream source
 
 1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**.
-2. Select **Upstream sources**. If you don't have any upstream sources you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
+2. Select **Upstream sources**. If you don't have any upstream sources, you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
 3. In the **Add a new upstream source** dialog, select **Azure Artifacts feed in this organization**.
 4. Select the feed you would like to configure as an upstream source, and the other fields will populate automatically. 
 5. Select the package types you want to use and select **Add**.
@@ -47,7 +47,7 @@ Selecting this option will allow your feed to use packages from public packages 
 > Universal Packages only supports upstream sources in the same organization.
 
 1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**.
-2. Select **Upstream sources**. If you don't have any upstream sources you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
+2. Select **Upstream sources**. If you don't have any upstream sources, you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
 3. In the **Add a new upstream source** dialog, select **Azure Artifacts feed in another organization**.
 4. Enter the **Azure DevOps Services feed locator**, this is the `azure-feed://` prefix, followed by the organization name, project name, feed name, and your shared view. For example: `azure-feed://myOrg/myProject/myFeed@local`
 5. Select the package types you want to use and your upstream source's name and select **Add**.
@@ -85,3 +85,7 @@ Views enable you to share with your consumers only a subset of package versions 
 ### Why can't I see the feed I want to configure as an upstream?
 
 It could be that the feed owner has not shared a view to be available as an upstream source.
+
+## What's next?
+
+- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
