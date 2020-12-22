@@ -24,25 +24,22 @@ Selecting this option will allow your feed to use packages from public packages 
 
 ## Add public upstream sources to an existing feed
 
-1. From your feed page, go to **Feed settings** by clicking the gear icon
-2. On the **Upstream sources** tab, if you don't have any upstream sources you'll see a dialog where you can choose _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
-3. In the **Add a new upstream source** dialog, choose _Public source_
-
-    > [!NOTE]
-    > Public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
+1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**.
+2. Select **Upstream sources**. If you don't have any upstream sources you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
+3. In the **Add a new upstream source** dialog, Select **Public source**. Please note that public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
 
 4. For public sources, choose **npmjs**, **NuGet Gallery**, **PyPI**, or **Maven Central**
 
-    > [!NOTE]
-    > You can also configure a custom upstream source for public repositories other than those listed above. Custom upstream sources are **only available for npm**. 
+> [!NOTE]
+> You can also configure a custom upstream source for public repositories other than those listed above. Custom upstream sources are **only available for npm**. 
 
 ## Add an Azure Artifacts feed in your organization as an upstream source
 
-1. From your feed page, go to **Feed settings** by clicking the gear icon
-2. On the **Upstream sources** tab, if you don't have any upstream sources you will see the below dialog where you can choose _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
-3. In the **Add a new upstream source** dialog, choose _Azure Artifacts feed in this organization_
+1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**.
+2. Select **Upstream sources**. If you don't have any upstream sources you'll see a dialog where you can _Add upstream source_. If you already have it, you can select _Add upstream source_ in the top menu.
+3. In the **Add a new upstream source** dialog, select **Azure Artifacts feed in this organization**.
 4. Select the feed you would like to configure as an upstream source, and the other fields will populate automatically. 
-5. Select the package types you want to use and click _Add_.
+5. Select the package types you want to use and select **Add**.
 
 ## Add an Azure Artifacts feed in a different organization within your Azure AD tenant as an upstream source
 
