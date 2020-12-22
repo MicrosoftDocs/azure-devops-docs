@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-For some workflows you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to main.
+For some workflows, you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to main.
 
 Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-premises agents](../agents/agents.md).
 
@@ -46,7 +46,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
     :::image type="content" source="media/select-project.png" alt-text="Select your project. ":::
 
-1. Within **Project Settings**, select **Repositories** in the navigation. Select the repository in which you want to run Git commands 
+1. Within **Project Settings**, select **Repositories**. Select the repository you want to run Git commands on.
 
 1. Select **Permissions** to edit your repository permissions. 
 
@@ -54,10 +54,10 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
 1. Search for **Project Collection Build Service**. By default, this identity can read from the repo but cannot push any changes back to it. Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
 
-* **Create branch:**  Allow
-* **Contribute:**  Allow
-* **Read:**  Allow
-* **Create tag:**  Allow
+  * **Create branch:**  Allow
+  * **Contribute:**  Allow
+  * **Read:**  Allow
+  * **Create tag:**  Allow
 
 
 ::: moniker-end
@@ -145,7 +145,7 @@ Learn more about [`checkout`](../yaml-schema.md#checkout).
 
 # [Classic](#tab/classic)
 
-On the [options tab](../build/options.md) select **Allow scripts to access OAuth token**.
+On the options tab](../build/options.md), select **Allow scripts to access OAuth token**.
 
 ---
 
@@ -153,7 +153,7 @@ On the [options tab](../build/options.md) select **Allow scripts to access OAuth
 
 ::: moniker range="< azure-devops"
 
-On the [options tab](../build/options.md) select **Allow scripts to access OAuth token**.
+On the [options tab](../build/options.md), select **Allow scripts to access OAuth token**.
 
 ::: moniker-end
 
@@ -188,9 +188,9 @@ steps:
 
 ::: moniker range="< azure-devops"
 
-* On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent) set **Clean** to true.
+* On the [repository tab](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent), set **Clean** to true.
 
-* On the [variables tab](../build/variables.md) create or modify the ```Build.Clean``` variable and set it to ```source```
+* On the [variables tab](../build/variables.md), create or modify the ```Build.Clean``` variable and set it to ```source```
 
 ::: moniker-end
 
@@ -217,7 +217,7 @@ You want a CI build to merge to main if the build succeeds.
 Make sure to follow the above steps to [enable Git](#enable).
 ::: moniker-end
 
-On the [Triggers tab](../build/triggers.md) select **Continuous integration (CI)** and include the branches you want to build.
+On the [Triggers tab](../build/triggers.md), select **Continuous integration (CI)** and include the branches you want to build.
 
 Create ```merge.bat``` at the root of your repo:
 
