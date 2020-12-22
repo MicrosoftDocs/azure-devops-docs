@@ -562,7 +562,9 @@ steps:
 jobs:
 - job: A
   steps:
-  - task: MyTask@1  # this step generates the output variable
+  # assume that MyTask generates an output variable called "MyVar"
+  # (you would learn that from the task's documentation)
+  - task: MyTask@1
     name: ProduceVar  # because we're going to depend on it, we need to name the step
 - job: B
   dependsOn: A
