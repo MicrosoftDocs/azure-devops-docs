@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 **Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 > [!NOTE]
-> Check the [Versions and compatibility](../overview.md#versions-compatibility) to ensure compatibility. 
+> Check [Versions and compatibility](../overview.md#versions-compatibility) to ensure compatibility. 
 
 Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public package managers (npmjs.com, NuGet.org, Maven Central, and PyPI) and Artifacts feeds. Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
@@ -134,7 +134,7 @@ When you configure an upstream source and begin to query it through your feed, t
 
 <a name="upstream-health-status"></a>
 
-## Upstream source health status
+## Upstream sources health status
 
 If a feed has a failing upstream source, the metadata can no longer be refreshed for packages of the same protocol. To view your upstream sources health status, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**, then select **Upstream sources**. 
 
