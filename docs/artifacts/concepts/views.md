@@ -1,26 +1,24 @@
 ---
-title: What are Azure DevOps Services feed views?
-description: Release views enable continuous integration and delivery of NuGet, npm, and Maven packages in Azure Artifacts for Azure DevOps Services and Team Foundation Server
+title: What are feed views?
+description: Learn about feed views and why it's useful for package release
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 12/23/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# What are Azure DevOps Services feed views?
+# What are feed views?
 
-**Azure DevOps Services | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-*If you're familiar with the principles behind views, you can jump to the [docs page](../feeds/views.md) to quickly start using them.*
+Feed views enable you to share subsets of package-versions with your consumers. A common use of feed views is to share package versions that have been tested and validated but hold back on packages that are still under development and/or didn't meet your quality bar.
 
-Views enable you to share subsets of the NuGet, npm, Maven, Python, and Universal Packages package-versions in your feed with consumers. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and packages that didn't meet a quality bar.
+## Feed views and upstream sources
 
-## Views and upstream sources
+Feed views and upstream sources are designed to work together to provide an enterprise-level solution to share and consume packages. 
 
-Views and upstream sources are designed to work together to make it easy to produce and consume packages at enterprise scale. 
-
-In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's view visibility to people in your organization, or people in your Azure Active Directory (Azure AD) tenant, depending on your scenario.
+In order for other Azure Artifacts feeds to use your feed as an upstream source, you must set your feed's view visibility to **members of your organization**, or **members of your Azure Active Directory**, depending on your scenario.
 
 <a name="local"></a>
 
