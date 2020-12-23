@@ -24,21 +24,20 @@ In order for other Azure Artifacts feeds to use your feed as an upstream source,
 
 ### The `@local` view
 
-All Azure DevOps Services feeds come with three views: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired. The `@local` view is a special view that's commonly used in [upstream sources](upstream-sources.md).
+All Artifacts feeds come with three views: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired. `@local` is the default view that's commonly used in [upstream sources](upstream-sources.md).
 
-`@local` contains all packages published directly to the feed (for example, by `nuget push` or `npm publish`) and all packages [saved from upstream sources](upstream-sources.md#saved-packages). If you don't use any other views, `@local` should be your [default view](#default-view). To learn more about why `@local` exists, read the [package graph](package-graph.md) doc.
+The `@local` view contains all packages published directly to the feed (e.g. by `nuget push` or `npm publish`) and all packages [saved from upstream sources](upstream-sources.md#saved-packages). See [package graphs](package-graph.md) to learn how available packages are constructed.
 
 <a name="default-view"></a>
 
 ### Default view
 
-Your Azure DevOps Services feed must have a default view. When the feed is created, the default view is `@local`. The default view is used when other feeds add your feed as an [upstream source](upstream-sources.md). To learn more about why upstream sources require the use of views, read the [package graph](package-graph.md) doc.
+Your Artifacts feed must have a default view. When the feed is created, your default view is `@local`. This view is used when other feeds add your feed as an [upstream source](upstream-sources.md). To learn more about why upstream sources require the use of views, check out the [package graphs](package-graph.md) article.
 
 <a name="read-only"></a>
 
-### Views cannot save packages from upstream sources
-
-Views are read-only, which means that users connected to a view can only use packages that are published to the feed and packages previously saved from upstream sources by users connected to the feed.
+> [!NOTE]
+> Feed views are read-only, which means that users connected to a view can only use packages that are published to that view and/or packages previously saved from upstream sources.
 
 ## Using views to release packages
 
