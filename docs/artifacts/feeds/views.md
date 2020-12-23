@@ -20,19 +20,24 @@ There are 3 types of views: `@local`, `@Prerelease` and `@Release`. @local is th
 
 ## Get started with feed views
 
-By default, every feed has three types of views: `local`, `Prerelease`, and `Release` view.
+By default, every feed has three types of views: `@local`, `@Prerelease`, and `@Release`. When you first create a feed, your default view is `@local`.
 
-### Promoting to a prerelease or release view 
+### Promote a package to prerelease or release view 
+
 To promote a package-version:
 
-1. Select the package
-1. Select the **Promote** button
-1. Select the view to promote to and select **Promote**
+1. Select a package from your feed
 
-> [!div class="mx-imgBorder"]
-> ![Promote button next to the package ID](media/release-views-promote.png)
-> [!div class="mx-imgBorder"]
-> ![Promote scrollbar](media/release-views-promote-choice.png)
+1. Select **Promote**
+    > [!div class="mx-imgBorder"]
+    > ![Promote button](media/release-views-promote.png)
+
+1. Choose a view from the dropdown menu then select **Promote**.
+    > [!div class="mx-imgBorder"]
+    > ![views dropdown menu](media/release-views-promote-choice.png)
+
+> [!NOTE]
+> Package demotion is not currently supported. If you want this feature to be added to future releases, please feel free to **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ### Promoting a package using the REST API
 
@@ -80,9 +85,6 @@ PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/u
 See [Universal - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1) for more details.
 
 Keep in mind that you cannot publish a package directly to a view (for example, `nuget.exe publish -Source ...feed@view/nuget/...`). Instead, you should publish the package to your feed then promote it to a view. 
-
-> [!NOTE]
-> Package demotion is not supported currently. If you want this feature to be added to future releases, please feel free to **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Managing views
 
