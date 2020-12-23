@@ -39,52 +39,52 @@ To promote a package-version:
 > [!NOTE]
 > Package demotion is not currently supported. If you want this feature to be added to future releases, please feel free to **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-### Promoting a package using the REST API
+### Promote a package using the REST API
 
 In addition to using the user interface in Azure Artifacts, you can also promote a package to a view using the REST API. Azure Artifacts currently supports the following package types: NuGet, Python, npm, Maven (limited operations), and Universal packages.
 
 * **Promote a NuGet package**:
 
-Example:
-
-```HTTP
-PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
-```
-
-See [NuGet - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1) for more details.
+    Example:
+    
+    ```HTTP
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
+    ```
+    
+    See [NuGet - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1) for more details.
 
 * **Promote an npm package**:
 
-Example:
-
-```HTTP
-PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
-```
-
-See [Npm - Update Package](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1) for more details.
+    Example:
+    
+    ```HTTP
+    PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
+    ```
+    
+    See [Npm - Update Package](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1) for more details.
 
 * **Promote a Python package**:
 
-Example:
-
-```HTTP
-PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
-```
-
-See [Python - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1) for more details.
+    Example:
+    
+    ```HTTP
+    PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
+    ```
+    
+    See [Python - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1) for more details.
 
 
 * **Promote a Universal package**:
 
-Example:
-
-```HTTP
-PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
-```
-
-See [Universal - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1) for more details.
-
-Keep in mind that you cannot publish a package directly to a view (for example, `nuget.exe publish -Source ...feed@view/nuget/...`). Instead, you should publish the package to your feed then promote it to a view. 
+    Example:
+    
+    ```HTTP
+    PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
+    ```
+    
+    See [Universal packages - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1) for more details.
+    
+    Keep in mind that you cannot publish a package directly to a view (e.g. `nuget.exe publish -Source ...feed@view/nuget/...`). Instead, you should publish the package to your feed then promote it to a view. 
 
 ## Managing views
 
@@ -99,5 +99,3 @@ In the feed settings view:
 
 > [!div class="mx-imgBorder"]
 > ![Managing views](media/feed-settings-views.png)
-
-[!INCLUDE [feedback](../../includes/help-support-shared.md)]
