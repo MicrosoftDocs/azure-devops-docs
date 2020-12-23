@@ -1,25 +1,22 @@
 ---
-title: Use the prerelease and release views to publish your packages
-description: Use the prerelease and release views to publish a package in Azure DevOps Services, Azure DevOps Server, or Team Foundation Server
+title: Use feed views to share your packages
+description: Use the prerelease and release views to share your packages with consumers
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 12/23/2020
 monikerRange: '>= tfs-2017'
 ---
  
+# Use feed views to share your packages
 
-# Use the prerelease and release views to publish your packages
+**Azure DevOps Services | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2017**
 
-**Azure DevOps Services | Azure DevOps Server 2019**
-
-Feeds are containers that allow users to group packages and control who can access them by modifying the feed permissions.
+Feeds are containers that allow users to group packages and control who can access them by modifying the feed's permissions.
 
 A feed view on the other hand is a way to enable users to share some packages while keeping others private. Views filter the feed to a subset of packages that meet criteria defined by that view.
 
-There are 3 types of views: `@local`, `@Prerelease` and `@Release`. The latter two are suggested views that you can rename or delete as desired. Those views contain a subset of the feed's packages that have been *promoted* into that specific view. All views currently support NuGet, npm, Maven, Python, and Universal packages.
-
-*If you've never used feed views, read more about [why and how they're useful for package continuous integration and delivery](../concepts/views.md) before getting started.*
+There are 3 types of views: `@local`, `@Prerelease` and `@Release`. @local is the default view that's commonly used in upstream sources. The latter two are suggested views that you can rename or delete as desired. Those views contain a subset of the feed's packages that have been promoted into that specific view. All views currently support NuGet, npm, Maven, Python, and Universal packages.
 
 ## Get started with feed views
 
