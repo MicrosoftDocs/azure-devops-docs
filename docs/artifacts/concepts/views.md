@@ -58,3 +58,9 @@ The **quality** of the change isn't generally known until the validation process
 `@Release` views enable you to communicate the quality of a package after it's been validated. You create SemVer-compliant packages in CI/CD that communicate the nature and risk of your changes using the package version, then promote the package into a release view to show your consumers that it's of a certain quality (for example, `@prerelease`, `@release`, etc.). So a release view enables your consumers to see only the subset of versions of each package that are tested, validated, and ready to go.
 
 :::image type="content" source="media/release-views-quality-tags.png" alt-text="deployment semantic version":::
+
+## What's next?
+
+- [Promote a package to a view](../feeds/views.md)
+- [Understand upstream sources](./upstream-source.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
