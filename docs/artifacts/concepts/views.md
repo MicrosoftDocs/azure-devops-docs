@@ -62,5 +62,5 @@ The **quality** of the change isn't generally known until the validation process
 ## What's next?
 
 - [Promote a package to a view](../feeds/views.md)
-- [Understand upstream sources](./upstream-source.md)
+- [Understand upstream sources](upstream-sources.md)
 - [Set up upstream sources](../how-to/set-up-upstream-sources.md)
