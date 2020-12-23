@@ -39,22 +39,22 @@ Your Artifacts feed must have a default view. When the feed is created, your def
 > [!NOTE]
 > Feed views are read-only, which means that users connected to a view can only use packages that are published to that view and/or packages previously saved from upstream sources.
 
-## Using views to release packages
+## Using feed views to release packages
 
-When creating packages in continuous integration and delivery scenarios, it's important to convey three pieces of information: the *nature* of the change, the *risk* of the change, and the *quality* of the package.
+When creating packages in continuous integration and delivery scenarios, it's important to convey three pieces of information: the **nature** of the change, the **risk** of the change, and the **quality** of the change.
 
 :::image type="content" source="media/release-views-quality-nature.png" alt-text="The semantic version breakdown: 1.2.3 represents the nature of change and beta2 represents the quality of change.":::
 
-### Assess the nature and risk of changes
+### Assess the nature and risk of the change
 
-The nature and the risk of the change both pertain to the _change itself_, that is, what you set out to do, they're both known at the outset of the work. You know if you're introducing new features, making updates to existing features, or patching bugs; this is the *nature* of your change. And, you know if you're still making changes to the API surface of your application; this is one facet of the *risk* of your change. Many NuGet users use [Semantic Versioning](https://semver.org) (SemVer) notation to convey these two pieces of information; SemVer is a widely used standard and does a good job of communicating this information.
+The nature and the risk of the change both pertain to the _change itself_, that is, what you set out to do, they're both known at the outset of the work. If you're introducing new features, making updates to existing features, or patching bugs; this is the **nature** of your change. If you're still making changes to the API portion of your application; this is one facet of the **risk** of your change. Many NuGet users use [Semantic Versioning](https://semver.org) (SemVer) notation to convey these two pieces of information. SemVer is a widely used standard and does a good job of communicating this type of information.
 
-### Determine and communicate quality
+### Determine and communicate quality of the change
 
-However, the *quality* of the *package* generally isn't known until validation, which comes after your change is built and packaged. Because of this, it's not feasible to communicate the quality in the version number, which is specified during packaging and before validation. There are workarounds to pre-validate (for example, by consuming the build's DLLs directly before they're packaged; or, publishing packages to a "debug" or "CI" feed, validating, and republishing to a "release" feed), but none that we've seen can truly guarantee that the built package meets the correct quality standard.
+The **quality** of the change isn't generally known until the validation process is complete. This comes after your change is built and packaged. Because of this detail, it's not feasible to communicate the quality in the version number, which is specified during packaging and before validation. There are workarounds to pre-validate (e.g. consume the build's DLLs directly before they're packaged and publish the packages to a "debug" or "CI" environment then validate and republish those packages to a "release" environment) but none that we've seen can truly guarantee that the built package meets the correct quality standard.
 
 :::image type="content" source="media/release-views-flow.png" alt-text="publishing packages workflow":::
 
-Release views enable you to communicate the quality of a package after it's been validated. You create SemVer-compliant packages in CI/CD that communicate the nature and risk of your changes using the package version, then promote the package into a release view to show your consumers that it's of a certain quality (for example, `@prerelease`, `@release`, etc.). So, a release view enables your consumers to see only the subset of versions of each package that are tested, validated, and ready to go.
+`@Release` views enable you to communicate the quality of a package after it's been validated. You create SemVer-compliant packages in CI/CD that communicate the nature and risk of your changes using the package version, then promote the package into a release view to show your consumers that it's of a certain quality (for example, `@prerelease`, `@release`, etc.). So a release view enables your consumers to see only the subset of versions of each package that are tested, validated, and ready to go.
 
 :::image type="content" source="media/release-views-quality-tags.png" alt-text="deployment semantic version":::
