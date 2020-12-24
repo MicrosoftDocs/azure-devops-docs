@@ -120,7 +120,7 @@ The **workspaces** command of the **tf** command-line utility displays informati
 
 For more information about how to edit workspace properties, see [Workspace Command](workspace-command.md).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 ## Examples
 The following example displays a list of all workspaces for the current user on the current computer.
 
@@ -156,7 +156,7 @@ c:\projects>tf workspaces /remove:* /collection:http://myserver:8080/tfs/Default
 
 ### Reference
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)  
+[Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
 [Workspace Command](workspace-command.md)  
 [Workfold Command](workfold-command.md)  
 ### Concepts
@@ -164,5 +164,5 @@ c:\projects>tf workspaces /remove:* /collection:http://myserver:8080/tfs/Default
 [Create a Workspace to Work with your Project](create-work-workspaces.md)  
 ### Other Resources
 
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)  
-[Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)  
+[Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))  
+[Create a Workspace and Get Files for the First Time](set-up-team-foundation-version-control-your-dev-machine.md)

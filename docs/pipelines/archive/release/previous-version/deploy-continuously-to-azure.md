@@ -21,9 +21,9 @@ To automate your deployments, deploy the same way to multiple environments,
 and run deployment and validation scripts, follow these steps.
 For less complex scenarios, such as deploying to Azure websites or cloud services, 
 follow steps to set up continuous deployment from 
-**[TFVC](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/)** 
+**[TFVC](/azure/cloud-services/cloud-services-choose-me)** 
 or 
-**[Git](https://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso-git/)** 
+**[Git](/azure/cloud-services/cloud-services-choose-me)** 
 instead.
 
 Before you start, you'll need:
@@ -33,7 +33,7 @@ Before you start, you'll need:
 * **Azure VMs**. If you need to create them, 
   **[here's how](/azure/virtual-machines/windows/tutorial-manage-vm)**.
 * **An Azure storage account.** Create one 
-  **[here](https://azure.microsoft.com/documentation/articles/storage-create-storage-account/)**.
+  **[here](/azure/storage/common/storage-account-create)**.
 * **Release Management for Visual Studio extension.** To install in Visual Studio, 
   go to **Tools**, **Extensions and Updates**, and search for **Release Management for Visual Studio**.
 * **A deployment script.**  Find out how to set up and check-in this script 

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.author: kaelli
 author: roferg
-ms.date: 05/08/2020
-monikerRange: '>= tfs-2018'
+ms.date: 11/16/2020
+monikerRange: 'azure-devops'
 ---
 
 <!--- Supports FWLINK: https://go.microsoft.com/fwlink/?LinkId=692096 -->
 
 # Rate limits  
 
-[!INCLUDE [version-vsts-tfs-2018](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Azure DevOps, like many software-as-a-service solutions, uses multi-tenancy to reduce costs and improve performance.
 This design leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption.
@@ -62,7 +62,7 @@ To accommodate all of this, Azure DevOps resource consumption is expressed in ab
 
 TSTUs will eventually incorporate a blend of:
 
-- [Azure SQL Database DTUs](https://azure.microsoft.com/documentation/articles/sql-database-service-tiers) as a measure of database consumption   
+- [Azure SQL Database DTUs](/azure/azure-sql/database/purchasing-models) as a measure of database consumption   
 - Application tier and job agent CPU, memory, and I/O as a measure of compute consumption   
 - Azure Storage bandwidth as a measure of storage consumption.  
 
@@ -108,29 +108,19 @@ When a user's requests are delayed by a significant amount, that user gets an em
 
 ![Web UI warning banner](./media/rate-limits/web-ui-warning-banner.png)
 
-If the user doesn't have an email address, the notification email will be sent to the members of the project collection 
-administrators group.
+If the user doesn't have an email address, the notification email will be sent to the members of the Project Collection 
+Administrators group.
 The warning banner and the notification email both include links to the Usage page.
-The usage page helps you investigate requests that exceeded thresholds and/or were delayed.
+The Usage page helps you investigate requests that exceeded thresholds and/or were delayed.
 
 Request history on the Usage page is ordered by usage (TSTUs) descending by default.
 Usage is grouped by command into five minute time windows.
 The Count column gives the number of commands in the window.
 Other columns highlight total TSTU usage and delay time.
 
-For members of the project collection administrators group, this same page can be used to investigate the usage of other users.
+For members of the Project Collection Administrators group, this same page can be used to investigate the usage of other users.
 
-::: moniker range=">= azure-devops-2019"
-
-   <img alt="Usage page for collection administrators" src="./media/rate-limits/usage-pca-newnav.png" style="border: 1px solid #CCCCCC" />
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-   <img alt="Usage page for collection admins" src="./media/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
-
-::: moniker-end
+:::image type="content" source="media/rate-limits/usage-pca-newnav.png" alt-text="Usage page for collection administrators":::
 
 When you first visit the Usage page, it displays requests for the last hour.
 Email links open the Usage page scoped to the 30 minutes before and after the first delayed request.

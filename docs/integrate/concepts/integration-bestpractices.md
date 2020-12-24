@@ -27,7 +27,7 @@ For example, don't attempt to store telemetry data in Azure DevOps.
 Don't add work items into Azure DevOps Services for the sake of having them all in one place. Azure DevOps Services isn't designed as a data storage service. Maintain your own data store.
 
 ## Batch your changes
-Doing single operations is slow and expensive, which is the leading cause for performance issues and rate limiting. Batch your changes into a single call. See our [batch documentation](/azure/devops/integrate/previous-apis/wit/batch) and [sample code](/azure/devops/integrate/previous-apis/wit/samples) for guidance.
+Doing single operations is slow and expensive, which is the leading cause for performance issues and rate limiting. Batch your changes into a single call. See our [batch documentation](../previous-apis/wit/batch.md) and [sample code](../previous-apis/wit/samples.md) for guidance.
 
 ## Limit your revisions
 Many revisions on a single work item create bloat and cause performance problems. We recommend doing the following tasks:
@@ -73,7 +73,7 @@ Limit the number of links per work item as much as possible. We recommend that y
 > We'll enforce work item revision and link limits in the near future. These limits will be determined by performance monitoring and customer feedback.
 
 ## Queries for reporting
-Using queries and individual get work item calls is the number one way to get rate limits enforced on your organization. Don't execute queries to return large lists of work items. Use the reporting [work item links](/rest/api/vsts/wit/reporting%20work%20item%20links) and [work item revisions](/rest/api/vsts/wit/reporting%20work%20item%20revisions) REST APIs instead.
+Using queries and individual get work item calls is the number one way to get rate limits enforced on your organization. Don't execute queries to return large lists of work items. Use the reporting [work item links](/rest/api/azure/devops/wit/reporting%20work%20item%20links) and [work item revisions](/rest/api/azure/devops/wit/reporting%20work%20item%20revisions) REST APIs instead.
 
 For more information, see our [C# Sample on GitHub](https://github.com/sferg-msft/vsts-wit-reporting-example).
 
@@ -83,4 +83,3 @@ For more information, see our [C# Sample on GitHub](https://github.com/sferg-msf
 - [Migration guide](migration-guide.md)
 - [Service hooks](service-hooks.md)
 - [REST API versioning](rest-api-versioning.md)
-

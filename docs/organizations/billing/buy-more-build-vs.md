@@ -1,14 +1,14 @@
 ﻿---
 title: Buy change CI/CD Azure Pipelines
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, contentperfq4
-description: Learn how to pay for more parallel jobs or decrease jobs in Azure Pipelines.
+ms.custom: seodec18, contperf-fy20q4
+description: Learn how to pay for more parallel jobs or reduce jobs in Azure Pipelines.
 ms.technology: devops-billing
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-ms.date: 05/22/2020
+ms.date: 12/02/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this article, learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
+Learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
 
 With Azure Pipelines, you can run builds and deploy releases by using the Microsoft-hosted agents, your own machines, or both.
 We offer a *free tier* for each. The *free tier* includes:
@@ -70,7 +70,7 @@ The *free tier* is one parallel job. You also get one free parallel job for each
 
    :::image type="content" source="media/shared/manage-parallel-jobs.png" alt-text="manage parallel jobs image":::
 
-4. Enter your desired amount, and then **Save**.
+4. Enter your wanted amount, and then select **Save**.
 
 
 ## Change quantity of CI/CD
@@ -80,16 +80,16 @@ The *free tier* is one parallel job. You also get one free parallel job for each
   
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Parallel jobs** under Pipelines, and then select either **Purchase parallel jobs** or **Change** for Microsoft-hosted jobs or **Change** for self-hosted jobs.
+3. Select **Parallel jobs** under Pipelines, and then select **Purchase parallel jobs**. Or for Microsoft- or self-hosted jobs, select **Change**.
 
-   :::image type="content" source="media/shared/manage-parallel-jobs.png" alt-text="manage parllel jobs image":::
+   :::image type="content" source="media/shared/manage-parallel-jobs.png" alt-text="image of manage parallel jobs":::
 
 4. Enter a lesser or greater quantity of Microsoft-hosted or self-hosted jobs, and then select **Save**.
 
   > [!IMPORTANT]
-  > Hosted XAML build controller isn't supported. If you have an organization where you need to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx),
-  > set up an [on-premises build server](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx)
-  > and switch to an [on-premises build controller](https://msdn.microsoft.com/library/ee330987%28v=vs.120%29.aspx). For more information about the hosted XAML model, see [Get started with XAML](../../pipelines/get-started-yaml.md).
+  > Hosted XAML build controller isn't supported. If you have an organization where you need to run [XAML builds](/previous-versions/visualstudio/visual-studio-2013/ms181709(v=vs.120)),
+  > set up an [on-premises build server](/previous-versions/visualstudio/visual-studio-2013/ms252495(v=vs.120))
+  > and switch to an [on-premises build controller](/previous-versions/visualstudio/visual-studio-2013/ee330987(v=vs.120)). For more information about the hosted XAML model, see [Get started with XAML](../../pipelines/create-first-pipeline.md).
 
 ## Next steps
 
@@ -99,7 +99,6 @@ The *free tier* is one parallel job. You also get one free parallel job for each
 ## Related articles
 - [Set up billing](set-up-billing-for-your-organization-vs.md)
 - [Manage paid access](buy-basic-access-add-users.md)
-- [Buy cloud-based load testing](buy-load-testing-vs.md)
-- [Buy access to TFS test hub](buy-access-tfs-test-hub.md)
+- [Buy access to test hub](buy-access-tfs-test-hub.md)
 - [Add user for billing management](add-backup-billing-managers.md)
-
+- [Azure DevOps billing overview](overview.md)

@@ -64,9 +64,9 @@ To use the app, you must first link your Azure Boards project to your Teams chan
 
 1. Once the app has been installed in your team, connect and authenticate yourself to Azure Boards. Use **Sign in with different email** if your Microsoft Teams and Azure Boards are in different tenants. 
 
-	![Pic: signin](./media/integrations-teams/signin1.png)
+	![Connect and authenticate yourself to Azure Boards.](./media/integrations-teams/signin1.png)
 	
-	![Pic: signin](./media/integrations-teams/signin2.png)
+	![Connect and authenticate yourself to Azure Boards, step 2.](./media/integrations-teams/signin2.png)
 
 2. After signing in, use the following command inside a Teams channel to link to the Azure Boards project which you specify with the URL:
 
@@ -89,7 +89,7 @@ You can create subscriptions to monitor work items at any time using the `@azure
 1. Select the desired area path, event that you are interested in, and leverage the associated 
 filters to customize what you get notified on in your Teams channel. To help easily set up subscriptions, your recently accessed area paths are shown in the area path dropdown.
 
-	![Pic: signin](./media/integrations-teams/add-subscriptions.png)
+	![Set up subscriptions.](./media/integrations-teams/add-subscriptions.png)
 
 In case the desired area path doesn't appear in the Area path dropdown menu, follow the instructions mentioned in the next section, [Add area paths](#add-area-paths). Area paths added using the `@azure boards addAreapath` command and area paths for which subscriptions are  created in the channel always appear in the Area path dropdown along with recently accessed area paths.
 
@@ -132,7 +132,7 @@ Often, discussions in a channel necessitates creation of work items. You can use
 	> [!div class="mx-imgBorder"]  
 	> ![Create work item using message action](./media/integrations-teams/message-action-1.png)
 	
-	> ![Create work item using message action](./media/integrations-teams/message-action-2.png)
+	> ![Create work item using message action, step 2.](./media/integrations-teams/message-action-2.png)
 
 
 ## Manage subscriptions
@@ -155,13 +155,13 @@ This command lists all the current subscriptions for the channel and allows you 
 
 To help users search and share work items, the Azure Boards app for Microsoft Teams supports compose extension. You can search for work items by work item ID or by title. For compose extension to work, users must sign in to Azure Boards app either by running `@azure boards signin` command or by signing into the compose extension directly.
 
-![Pic: URL unfurling](./media/integrations-teams/teams-boards-compose-extension.png)
+![Signing into the compose extension.](./media/integrations-teams/teams-boards-compose-extension.png)
 
 ## Preview work item URLs
 
 To support collaboration around work items discussed within a channel, the channel displays a preview of work items referenced. When a user pastes the work item URL, a preview is shown similar to that in the following image. This helps to keep work item related conversations relevant and accurate. 
 
-![Pic: URL unfurling](./media/integrations-teams/url-unfurling.png)
+![Work item URL unfurling.](./media/integrations-teams/url-unfurling.png)
 
 For this feature to work, users must be signed in. Once signed in, this feature works for all channels in a team in Microsoft Teams.
 
@@ -308,5 +308,5 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 ## Related articles
 
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-- [Azure Pipelines with Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
-- [Azure Repos with Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
+- [Azure Pipelines with Microsoft Teams](../../pipelines/integrations/microsoft-teams.md)
+- [Azure Repos with Microsoft Teams](../../repos/integrations/repos-teams.md)

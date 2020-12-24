@@ -72,7 +72,7 @@ Our example development team came up with these stages as essential to their pro
 
 You can always revisit these initial stages later and adjust. 
 
-Another idea, capture the list of items your team identifies as critical-to-complete for each stage. You can use that later to fill out the [Definition of Done](https://msdn.microsoft.com/library/dn914589.aspx) for each column. 
+Another idea, capture the list of items your team identifies as critical-to-complete for each stage. You can use that later to fill out the [Definition of Done](./definition-of-done.md) for each column. 
 
 ## Update status and handoff items
 
@@ -231,7 +231,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 2. Choose **Columns** and then a column tab to see all the settings you can modify. Your initial column settings will look something like this. 
 
-	![Kanban board, Customize columns, default columns, Agile process](media/add-columns-active-agile-update-1.png)
+	![Kanban board, Customize columns, default columns, Agile process for TFS 2015.1](media/add-columns-active-agile-update-1.png)
 
 3. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
@@ -269,7 +269,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible. 
 
-9. To change the column order, use the left ![left arrow](media/ALM_AC_LeftIcon.png) or right ![right arrow](media/ALM_AC_RightIcon.png) arrow icons. 
+9. To change the column order, use the left ← or right → arrow icons. 
 
 1. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, click X at the top of the column.</p>
 
@@ -299,7 +299,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible.</p>
 
-3. To change the column order, use the left ![left arrow](media/ALM_AC_LeftIcon.png) or right ![right arrow](media/ALM_AC_RightIcon.png) arrow icons. 
+3. To change the column order, use the left ← or right → arrow icons. 
 
 4. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose **X** at the top of the column.</p>
 

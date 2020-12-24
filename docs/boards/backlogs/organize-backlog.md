@@ -102,7 +102,7 @@ From your web browser, open your product backlog.
 
 	![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -194,7 +194,7 @@ If you've already created your backlog, and now you want to organize it, you can
 1. Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Boards>Backlogs>Open view options and choose Parents ON](media/organize-backlog/turn-mapping-on-agile.png)
+	> ![Choose the view options icon and select Mapping.](media/organize-backlog/turn-mapping-on-agile.png)
 
 	The Mapping pane displays immediately. 
 

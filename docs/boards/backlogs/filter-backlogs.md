@@ -48,7 +48,7 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 Here we show a filtered backlog based on the keyword "issues". Filtered pages show the :::image type="icon" source="../../media/icons/filtered.png" border="false"::: filtered icon. The filtered set is always a flat list, even if you've selected to show a hierarchical backlog view. 
 
 > [!div class="mx-imgBorder"]  
-> ![Filter by keyword](media/filter/filter-issues-keyword.png)   
+> ![Filtered backlog based on the keyword issues.](media/filter/filter-issues-keyword.png)   
 
 To clear and dismiss filtering, choose the :::image type="icon" source="../../media/icons/close-filter.png" border="false"::: close filter icon.
 

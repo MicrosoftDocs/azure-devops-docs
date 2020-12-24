@@ -1,6 +1,6 @@
 ---
 title: Install extensions for on-premises servers
-description: Find and install extensions for Team Foundation Server (TFS) and Azure DevOps Server from the Visual Studio Marketplace
+description: Find and install extensions for Azure DevOps Server from the Visual Studio Marketplace.
 ms.topic: conceptual
 ms.technology: devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
@@ -14,11 +14,11 @@ monikerRange: '>= tfs-2015 < azure-devops'
 
 [!INCLUDE [version-tfs-all-versions](../includes/version-tfs-all-versions.md)]
 
-To add new features and capabilities to your Azure DevOps Server or Team Foundation Server (TFS),
+To add new features and capabilities to your Azure DevOps Server,
 install extensions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops).
 
 > [!TIP]
-> To learn more about building your own extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
+> To learn more about building your own extensions, see [developing](../extend/overview.md) and [publishing](../extend/publish/overview.md) extensions.
 
 ## Prerequisites
 
@@ -43,13 +43,13 @@ for future Marketplace purchases.
 
 <a name="connected-tfs"></a>
 
-## Install TFS extensions from the Marketplace
+## Install extensions from the Marketplace
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-- [Connect to TFS](#connected-tfs), so you can install extensions.
+- [Connect to Azure DevOps Server](#connected-tfs), so you can install extensions.
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ for future Marketplace purchases.
 
 ::: moniker range="<= tfs-2018"
 
-1. From your TFS home page (```https://{server}:8080/tfs/```), 
+1. From your Azure DevOps Server home page (```https://{server}:8080/tfs/```), 
    go to the project collection where you want to install the extension.
 
 2. From your project collection, 
@@ -73,9 +73,9 @@ for future Marketplace purchases.
 
 3. Find and select the extension that you want to install.
 
-   <img alt="Select a TFS extension" src="media/get-tfs-extensions/connected/marketplace-select-extension.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Select an Azure DevOps Server extension" src="media/get-tfs-extensions/connected/marketplace-select-extension.png" style="border: 1px solid #CCCCCC" />
 
-   TFS is connected to the Marketplace, so the Marketplace automatically filters and shows on-premises extensions only.
+   Azure DevOps Server is connected to the Marketplace, so the Marketplace automatically filters and shows on-premises extensions only.
 
 4. Select **Install**.
 
@@ -96,10 +96,10 @@ for future Marketplace purchases.
 
 <a name="disconnected-tfs"></a>
 
-## Install TFS extensions when disconnected
+## Install extensions when disconnected
 
-When you're disconnected from TFS, you can install free and preview extensions by downloading them, uploading them to your TFS, 
-and then installing them in a project collection. You can't install extensions when you're disconnected from TFS.
+When you're disconnected from Azure DevOps Server, you can install free and preview extensions by downloading them, uploading them to your Azure DevOps Server, 
+and then installing them in a project collection. You can't install extensions when you're disconnected from Azure DevOps Server.
 
 ### Who can upload extensions?
 
@@ -123,7 +123,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
    <img alt="View" src="media/get-tfs-extensions/standalone/marketplace-find-extension.png" style="border: 1px solid #CCCCCC" />    
 
-   <img alt="View" src="media/get-tfs-extensions/standalone/marketplace-find-extension2.png" style="border: 1px solid #CCCCCC" />   
+   <img alt="Find the extension you want to install." src="media/get-tfs-extensions/standalone/marketplace-find-extension2.png" style="border: 1px solid #CCCCCC" />   
 
 3. Download and save your extension.
 
@@ -167,13 +167,13 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 3. Manage your extensions.
 
-   <img alt="Manage extensions" src="./media/get-tfs-extensions/standalone/manage-extensions.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Manage your extensions" src="./media/get-tfs-extensions/standalone/manage-extensions.png" style="border: 1px solid #CCCCCC" />
 
 4. Upload the extension that you downloaded.
 
    <img alt="Find and upload your downloaded extension" src="./media/get-tfs-extensions/standalone/upload-extension.png" style="border: 1px solid #CCCCCC" />
 
-   [[Why can't I upload extensions?](faq-extensions.md#q-why-cant-i-upload-extensions-to-tfs)]
+   [Why can't I upload extensions?](faq-extensions.md#q-why-cant-i-upload-extensions-to-azure-devops-server)
 
 ### Install extension in your project collection
 
@@ -201,13 +201,13 @@ With first-party extensions that come pre-installed with TFS, there's an alterna
 
 In this case, you can manage extensions in disconnected TFS by following the steps below:
 
-1. Hover over the shopping bag icon and select **Manage extensions**
+1. Hover over the shopping bag and select **Manage extensions**
 
-   ![Manage extensions](./media/get-tfs-extensions/standalone/manage-extensions.png)
+   ![Select Manage extensions.](./media/get-tfs-extensions/standalone/manage-extensions.png)
 
 2. Once on the Extensions page, select **Browse local extensions**
 
-   ![Browse local extensions](./media/get-tfs-extensions/standalone/browse-local-extensions.png)
+   ![On the Extensions page, Browse local extensions](./media/get-tfs-extensions/standalone/browse-local-extensions.png)
 
 3. Scroll down until you see the Plan and track category, which includes **Delivery Plans**. Select **Delivery Plans**.
 
@@ -247,7 +247,7 @@ In this case, you can manage extensions in disconnected TFS by following the ste
 
 5. Select the project collection where you want to install this extension and choose **Install**.
 
-   ![Select project collection](media/get-devops-extensions/install-devops-extension-06.png)
+   ![Select project collection and choose Install.](media/get-devops-extensions/install-devops-extension-06.png)
 
 6. After installation is complete, go to the project collection or return to the Marketplace to find other extensions. 
 
@@ -266,7 +266,7 @@ Users can install these extensions without requiring an external connection to M
 
 1. Open the extensions menu and choose **Manage Extensions**.
 
-   ![Manage extensions](media/get-devops-extensions/install-devops-extension-13.png)
+   ![On the extensions menu, choose Manage extensions.](media/get-devops-extensions/install-devops-extension-13.png)
 
 2. In the Extensions page, choose **Browse local extensions**
 
@@ -278,7 +278,7 @@ Users can install these extensions without requiring an external connection to M
 
 4. Select the project collection where you want to install this extension and choose **Install**.
 
-   ![Select project collection](media/get-devops-extensions/install-devops-extension-06.png)
+   ![Select the project collection where you want to install this extension and choose Install.](media/get-devops-extensions/install-devops-extension-06.png)
 
 5. After installation is complete, go to the project collection or return to the Marketplace to find other extensions. 
 
@@ -306,7 +306,7 @@ Use the **Extensions** page to manage installed extensions.
 
 1. Open the extensions menu and choose **Manage Extensions**.
 
-   ![Manage extensions](media/get-devops-extensions/install-devops-extension-13.png)
+   ![Open the extensions menu and choose Manage extensions.](media/get-devops-extensions/install-devops-extension-13.png)
 
 2. Open the **Requested** tab, review requests, and approve or reject them, as appropriate.
 

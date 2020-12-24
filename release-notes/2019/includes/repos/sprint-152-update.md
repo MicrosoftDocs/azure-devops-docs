@@ -4,17 +4,17 @@ ms.topic: include
 
 ### Filter by target branch in pull requests (PRs)
 
-Pull requests let your team review code and give feedback on changes before merging them into the master branch. They have become an important part of many teams’ workflows since you can step through proposed changes, leave comments, and vote to approve or reject code changes.
+Pull requests let your team review code and give feedback on changes before merging them into the main branch. They have become an important part of many teams’ workflows since you can step through proposed changes, leave comments, and vote to approve or reject code changes.
 
 To make it easier for you to find your pull requests, we added a filtering option to let you search for PRs using the target branch. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/152_01.png "Azure Pipelines pull request filtering")
+> ![Azure Pipelines pull request filtering.](../../media/152_01.png "Azure Pipelines pull request filtering")
 
 You can also use the target branch filtering to customize the pull requests view in the **Mine** tab.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/152_02.png "Customize pull request in Mine tab")
+> ![Customize pull request in Mine tab.](../../media/152_02.png "Customize pull request in Mine tab")
 
 ### Allow extensions to add syntax highlighting and autocomplete
 

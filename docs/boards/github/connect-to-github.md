@@ -140,7 +140,7 @@ Azure DevOps Server 2019</td>
 1. The **Add GitHub Repositories** dialog automatically displays and selects all GitHub.com repositories for which you are an administrator. Unselect any repositories that you don't want to participate in the integration. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Confirm your GitHub repositories](media/github/add-github-repos.png)  
+	> ![Choose your GitHub repositories.](media/github/add-github-repos.png)  
 
 	> [!TIP]   
 	> We recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. Connecting the same GitHub repo to projects defined in two or more Azure DevOps organizations can lead to unexpected AB# mention linking. For details, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md#integrate-repo-to-several-organizations). 
@@ -225,14 +225,14 @@ We recommend that you use OAuth to connect to your GitHub repository. However, i
 1. To choose a PAT when connecting a GitHub repository, choose ![plus icon ](../../media/icons/blue-add.png) <strong>New Connection</strong> and then choose the <strong>Click here</strong> link. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Ad GitHub repository, choose personal access token](media/github/add-github-connection-dialog-choose-pat.png)   
+	> ![Add GitHub repository, choose personal access token](media/github/add-github-connection-dialog-choose-pat.png)   
 
 	To create a GitHub PAT, go to [GitHub Developer Settings>Personal access tokens](https://github.com/settings/tokens). 
 
 1. Enter the PAT and choose <strong>Connect</strong>. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Ad GitHub repository, choose personal access token](media/github/add-github-connection-dialog-pat.png)  
+	> ![Enter the PAT and choose Connect.](media/github/add-github-connection-dialog-pat.png)  
 
 ::: moniker-end
 
@@ -260,7 +260,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 1. Open <strong>Settings>Developer settings>Oauth Apps</strong> and choose <strong>New OAuth App</strong>. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Sign into GitHub Enterprise server](media/github-ent/ghe-settings-dev-oauth.png)  
+	> ![Open Settings>Developer settings>Oauth Apps and choose New OAuth App.](media/github-ent/ghe-settings-dev-oauth.png)  
 
 2. Fill out the form to register your Azure DevOps Server application.  
 
@@ -281,7 +281,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 4. Upon success, you'll see a page that provides the <strong>Client ID</strong> and <strong>Client Secret</strong> for your registered OAuth application. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Sign into GitHub Enterprise server](media/github-ent/ghe-register-app-success.png)  
+	> ![Client ID and Client Secret for your registered OAuth application.](media/github-ent/ghe-register-app-success.png)  
 
 ::: moniker-end
 
@@ -299,7 +299,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 1. Open <strong>Settings>Developer settings>Oauth Apps</strong> and choose <strong>New OAuth App</strong>. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Sign into GitHub Enterprise server](media/github-ent/ghe-settings-dev-oauth.png)  
+	> ![Open Settings>Developer settings>Oauth Apps and choose New OAuth App.](media/github-ent/ghe-settings-dev-oauth.png)  
 
 2. Fill out the form to register your Azure DevOps Server application.  
 
@@ -328,7 +328,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 4. Upon success, you'll see a page that provides the <strong>Client ID</strong> and <strong>Client Secret</strong> for your registered OAuth application. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Sign into GitHub Enterprise server](media/github-ent/ghe-register-app-success.png)  
+	> ![Client ID and Client Secret for your registered OAuth application.](media/github-ent/ghe-register-app-success.png)  
 
 ::: moniker-end
 
@@ -421,7 +421,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 	Enter the URL for your GitHub Enterprise server and the <strong>Personal access token</strong> credentials recognized by that server. And then choose <strong>Connect</strong>.
 
 	> [!div class="mx-imgBorder"]  
-	> ![GitHub sign in dialog](media/github-ent/ads-add-ghe-pat.png)  
+	> ![Sign in with personal access token.](media/github-ent/ads-add-ghe-pat.png)  
 
 	<a id="server-github-ent-username" />
 
@@ -430,12 +430,12 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 	Enter the URL for your GitHub Enterprise server and the administrator account credentials recognized by that server. And then choose <strong>Connect</strong>.
 
 	> [!div class="mx-imgBorder"]  
-	> ![GitHub sign in dialog](media/github-ent/ads-add-ghe-user-name.png)  
+	> ![Sign in with username and password.](media/github-ent/ads-add-ghe-user-name.png)  
 
 2. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between <strong>Mine</strong> and  <strong>All</strong> to determine if others appear, and then check the ones that you want to add. Choose <strong>Save</strong> when done.
 
 	> [!div class="mx-imgBorder"]  
-	> ![New GitHub Enterprise connection, OAuth dialog](media/github-ent/ads-add-ghe-repositories.png)  
+	> ![Choose repositories to add.](media/github-ent/ads-add-ghe-repositories.png)  
 
 ::: moniker-end
 
@@ -475,7 +475,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 	Enter the URL for your GitHub Enterprise server and the <strong>Personal access token</strong> credentials recognized by that server. And then choose <strong>Connect</strong>.
 
 	> [!div class="mx-imgBorder"]  
-	> ![GitHub sign in dialog](media/github-ent/ads-add-ghe-pat.png)  
+	> ![Sign in with personal access token.](media/github-ent/ads-add-ghe-pat.png)  
 
 	<a id="server-github-ent-username" />
 	#### Connect using a Username and Password   
@@ -483,12 +483,12 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 	Enter the URL for your GitHub Enterprise server and the administrator account credentials recognized by that server. And then choose <strong>Connect</strong>.
 
 	> [!div class="mx-imgBorder"]  
-	> ![GitHub sign in dialog](media/github-ent/ads-add-ghe-user-name.png)  
+	> ![Sign in with username and password.](media/github-ent/ads-add-ghe-user-name.png)  
 
 3. The dialog lists all repositories for which you have GitHub administration rights. You can toggle between <strong>Mine</strong> and <strong>All</strong> to determine if others appear, and then check the ones that you want to add. Choose <strong>Save</strong> when done.
 
 	> [!div class="mx-imgBorder"]  
-	> ![New GitHub Enterprise connection, OAuth dialog](media/github-ent/ads-add-ghe-repositories.png)  
+	> ![Choose repositories to add.](media/github-ent/ads-add-ghe-repositories.png)  
 
 ::: moniker-end
 

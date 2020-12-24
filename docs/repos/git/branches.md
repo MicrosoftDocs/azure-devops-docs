@@ -6,7 +6,7 @@ ms.assetid: 4b18a164-d1cb-4f87-89cb-8dc227e64af1
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 09/10/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Create work in branches  
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 Git branches aren't much more than a small reference that keeps an exact history of commits, so they are cheap to create.
 [Committing](commits.md) changes to a branch will not affect other branches, and you can share branches with others without having to merge the changes into the main project.
-Create new branches to isolate changes for a feature or a bug fix from your master branch and other work. 
+Create new branches to isolate changes for a feature or a bug fix from your main branch and other work. 
 
 Since the branches are lightweight, switching between branches is quick and easy. 
 Git does not create multiple copies of your source when working with branches&mdash;it uses the history information stored in commits to recreate the files on a branch when you start working on it.
@@ -41,7 +41,7 @@ Create branches using the `branch` command. `Branch` creates a reference in Git 
 When you are working with a branch that someone else shared, Git keeps an upstream tracking relationship to associate the branch on the local repo with the corresponding branch on the remote repo.
 This makes it simple to sync changes with others using [push](pushing.md) and [pull](pulling.md).
 
-![Visual of a branch off master in Git](media/branch.png)
+![Visual of a branch off main in Git](media/branch.png)
 
 In this image, a new branch is created from the main branch. Work continues on both branches and commits are added to both branches. 
 
@@ -57,11 +57,14 @@ You'll need to either [cherry-pick](cherry-pick.md) the commits from the branch 
 ## Create a branch
 
 #### [Visual Studio](#tab/visual-studio/)
-Visual Studio 2015 & 2017
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
+**Visual Studio 2015 & 2017**
 
 1. Open up Team Explorer and go to the **Branches** view.
-2. Right-click the parent branch (usually `master`) to base your changes and choose **New Local Branch From...**. 
-3. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch.
+2. Right-click the parent branch (usually `main`) to base your changes and choose **New Local Branch From...**. 
+3. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch. <!-- c123: Image needs updated, master to main -->
 
     ![Creating Git Branches in Visual Studio](media/vsbranch.gif)   
 
@@ -80,7 +83,8 @@ git checkout feature1
 > Deleting a branch in your local repo doesn't remove the branch on the remote.
 
 #### [Visual Studio](#tab/visual-studio/)
-Visual Studio 2015 & 2017
+
+**Visual Studio 2015 & 2017**
 
 1. Open up Team Explorer and go to the **Branches** view.
 2. Locate the branch you want to delete. Make sure that you aren't checked out to that branch, as you can't delete the branch you are currently working in.

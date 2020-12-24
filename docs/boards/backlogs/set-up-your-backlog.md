@@ -148,7 +148,7 @@ Checklists are a great way to create work items that are automatically linked wi
 For example, here we've chosen to track bugs along with tasks, and  enable Task, Bug, GitHub objects, and Tests to appear within checklists. 
 
 > [!div class="mx-imgBorder"]
-> ![Kanban board, Settings, Annotations](../boards/media/customize-cards/annotate-settings-154.png)
+> ![On the settings page, the Annotations tab is selected and four Annotation types, all enabled, are listed. They are: Task, Bug, GitHub, and Tests.](../boards/media/customize-cards/annotate-settings-154.png)
 
 ::: moniker-end
 
@@ -195,7 +195,7 @@ If you added work item types to the Task Category as described in [Add custom wo
 For example, here  we've chosen to track bugs along with tasks, and we enable Issue and Ticket as well as Task and Bug. To learn more about checklists, see [Add task checklists](../boards/add-task-checklists.md) and [Add, run, and update inline tests](../boards/add-run-update-tests.md). 
 
 > [!div class="mx-imgBorder"]
-> ![Kanban board, Settings, Annotations](media/setup-backlog/annotations-on-prem.png)
+> ![On the settings page, the Annotations tab is selected and five Annotation types (Task, Bug, Tests, Issue, Ticket) are listed. All but Tests are enabled.](media/setup-backlog/annotations-on-prem.png)
 
 ::: moniker-end
 
@@ -220,7 +220,7 @@ You can also add custom work item types and add them to portfolio backlogs. You 
 For example, here we've added Initiatives, 4th level, and 5th level work item types to support five levels of portfolio backlogs. We've also added a custom work item type named Ticket and added that to the product backlog. 
 
 > [!div class="mx-imgBorder"]
-> ![Backlog navigation levels](media/setup-backlog/backlog-levels-customized.png)
+> ![Add custom work item types to your backlogs.](media/setup-backlog/backlog-levels-customized.png)
 
 For details, see the following resources: 
 

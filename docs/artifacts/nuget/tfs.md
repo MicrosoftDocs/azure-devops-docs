@@ -1,6 +1,6 @@
 ---
 title: Use NuGet or dotnet with Team Foundation Server feeds
-description: Authenticating to feeds with NuGet in Azure DevOps Services
+description: Learn how to authenticate to feeds from command-line clients like nuget and dotnet in Team Foundation Server.
 ms.assetid: 1BB88A4E-C40E-48CD-B44A-25C90B935E5B
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -22,7 +22,7 @@ You can use [consume packages with Visual Studio](consume.md), [publish with nug
 
 > This workflow is **not recommended**, because it requires that you store **your encrypted domain password** on disk. Please consider the security implications before continuing.
 
-1. Navigate to your feed ([or create a feed if you haven't](../feeds/create-feed.md)). 
+1. Navigate to your feed ([or create a feed if you haven't](../index.yml)). 
 
 1. Select **Connect to feed**:
 

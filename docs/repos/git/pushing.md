@@ -6,7 +6,7 @@ ms.assetid: 6c388abd-1b63-4957-9814-9ec5f104fa5b
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 11/15/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Share code with push
@@ -33,13 +33,17 @@ In this tutorial you learn how to:
 ## Share your code with push
 
 #### [Visual Studio](#tab/visual-studio/)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
+
 1. In Team Explorer, select **Home** and then choose **Sync** to open **Synchronization**.
 
    ![Synchronization](media/gitquickstart-vs2017/sync.png)
 
    You can also go to **Synchronization** from the **Changes** view by choosing **Sync** immediately after making a commit.
 
-   ![Synchronization](media/gitquickstart-vs2017/commit-created-locally.png)
+   ![Go to Synchronization from the Changes view immediately after making a commit.](media/gitquickstart-vs2017/commit-created-locally.png)
 
 1. Select **Push** to share your commit with the remote repository.
 

@@ -261,7 +261,7 @@ Favorites are at the top.
 Scroll down to see your team’s dashboards.
 
 > [!div class="mx-imgBorder"]
-> ![All pivot](media/136_17.png)
+> ![See team's dashboards.](media/136_17.png)
 
 See all dashboards in the project.
 

@@ -388,8 +388,8 @@ Ordered lists start with a number followed by a period for each list item. Unord
 **Example:**  
 ```markdown
 1. First item.
-2. Second item.
-3. Third item.
+1. Second item.
+1. Third item.
 ```
 
 **Result:**  
@@ -484,12 +484,12 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 **Example:**  
 
 ```
-[C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
+[C# language reference](/dotnet/csharp/language-reference/)
 ```
 
 **Result:**
 
-[C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
+[C# language reference](/dotnet/csharp/language-reference/)
 
 ::: moniker range=">= tfs-2018"
 
@@ -605,7 +605,7 @@ You can Use `[ ]` or `[x]` to support checklists. Precede the checklist with eit
 After you've added a task list, you can check the boxes to mark items as completed. These actions are expressed and stored within the comment as [ ] and [x] in Markdown.
 
 > [!div class="mx-imgBorder"]  
-> ![Apply Markdown task list format to a highlighted list in a PR](media/markdown-guidance/checklist-pr-applied-check.png)
+> ![Check the boxes to mark items as completed.](media/markdown-guidance/checklist-pr-applied-check.png)
 
 **Example - Format a list as a task list**
 
@@ -744,13 +744,13 @@ To escape emojis, enclose them using the \` character.
 
 ::: moniker range=">= tfs-2018"
 
-In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the paper-clip icon in the upper right of the comment box or the format pane in wiki page.
+In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or the format pane in wiki page.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-In pull request comments, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field. You can also select the paper-clip icon in the upper right of the comment box.
+In pull request comments, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field. You can also select the **paperclip** in the upper right of the comment box.
 
 ::: moniker-end
 
@@ -868,7 +868,7 @@ $$
 
 **Result:**
 > [!div class="mx-imgBorder"]
-> ![Greek letters](media/markdown-guidance/mathematical-notation-sums-integrals.png)
+> ![Sums and Integrals.](media/markdown-guidance/mathematical-notation-sums-integrals.png)
 
 ::: moniker-end
 
@@ -880,4 +880,3 @@ $$
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Widget catalog](../../report/dashboards/widget-catalog.md)
 - [Add and edit Wiki pages](add-edit-wiki.md)
-

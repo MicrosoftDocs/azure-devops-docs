@@ -193,7 +193,7 @@ In the Column options dialog, choose **Add a column** to add a field that isn't 
 
 ::: moniker range="<= tfs-2017"
 
-Find the field you want to add from the **Available columns** set and choose **>** (greater-than character) to move it into the **Selected columns** list. You can then change the order of the columns with the ![up arrow](../media/icons/Arrow_Up.png)/![down arrow](../media/icons/Arrow_Down.png) up and down arrows. To remove a field, select it and then choose the **<** (less-than character).  
+Find the field you want to add from the **Available columns** set and choose **>** (greater-than character) to move it into the **Selected columns** list. You can then change the order of the columns with the ↑/↓ up and down arrows. To remove a field, select it and then choose the **<** (less-than character).  
  
 ![Column options dialog, TFS](media/b-vs-b-column-options.png)
 
