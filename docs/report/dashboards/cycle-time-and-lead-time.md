@@ -44,7 +44,7 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 ## Add the widget to your dashboard   
 
 1. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
-2. If you haven't yet [added the widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+2. If you haven't yet [added the widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
 
 
 <a id="configure-widget"></a>
@@ -69,6 +69,10 @@ The Configuration dialog for the Cycle Time and Lead Time widgets is the same. Y
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Configure dialog, Lead Time widget, filter criteria.](media/lead-cycle/field-criteria-release.png)
+	
+	
+	> [!NOTE]   
+	> Supplying no values to the filter may lead to selection of all workitems, or may be an invalid filter argument depending on type of filter criteria.
 
 1. For a continuous flow, choose **Rolling period** and specify the number of days you want to view on the chart.  
 
@@ -156,4 +160,3 @@ We recommend your team review the lead/cycle time charts before or during each r
 - [Cumulative flow diagram](cumulative-flow.md)
 - [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
 - [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes
-

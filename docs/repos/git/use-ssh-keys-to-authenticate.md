@@ -5,7 +5,7 @@ description: Authenticate to Azure Repos Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 08/25/2020
+ms.date: 12/03/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
 
-Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the  use of [Git Credential Managers](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+Connect to your Git repos through SSH on macOS, Linux, or Windows to securely connect using HTTPS authentication.  On Windows, we recommended the  use of [Git Credential Manager Core](set-up-credential-managers.md) or [Personal Access Tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 >[!IMPORTANT]
 > SSH URLs have changed, but old SSH URLs will continue to work. If you have already set up SSH, you should update your remote URLs to the new format:
@@ -90,6 +90,41 @@ compromised, attackers can use it to trick servers into thinking the connection 
 
 <a name="configuration"></a>
 
+::: moniker range=">= azure-devops-2019"
+
+### Step 2:  Add the public key to Azure DevOps Services/TFS
+
+Associate the public key generated in the previous step with your user ID.
+
+1. Open your security settings by browsing to the web portal and selecting your avatar in the upper right of the
+   user interface. Select  **SSH public keys** in the menu that appears.
+   
+   ![Screenshot that shows the SSH public keys menu item and the user avatar selected in Azure DevOps Services.](media/use-ssh-authentication/select-ssh-public-keys.png)
+
+2. Select **+ New Key**.
+
+    ![Accessing Security Configuration in Azure DevOps Services](media/use-ssh-authentication/ssh_accessing_security_key.png)
+
+3. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Public Key Data** field. 
+
+   > [!IMPORTANT]
+   > Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps Services to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
+
+    ![Configuring Public Key in Azure DevOps Services](media/use-ssh-authentication/ssh_key_input.png)
+
+4. Give the key a useful description (this description will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key.
+  Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile. Also note that SSH keys stored in Azure DevOps expire after five years. If your key expires, you may upload a new key or the same one to continue accessing Azure DevOps via SSH.
+
+5. Test the connection by running the following command: `ssh -T git@ssh.dev.azure.com`.
+If everything is working correctly, you'll receive a response which says: `remote: Shell access is not supported.`
+If not, see the section on [Questions and troubleshooting](#questions-and-troubleshooting).
+
+<a name="copy-url"></a>
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
 ### Step 2:  Add the public key to Azure DevOps Services/TFS
 
 Associate the public key generated in the previous step with your user ID.
@@ -98,11 +133,11 @@ Associate the public key generated in the previous step with your user ID.
    user interface. Select **Security** in the menu that appears.
 
    ![Accessing User Profile in Azure DevOps Services](media/use-ssh-authentication/ssh_profile_access.png)
+   
+2. Select **+ New Key**.
 
-2. Select **SSH public keys**, and then select **+ New Key**.
-
-    ![Accessing Security Configuration in Azure DevOps Services](media/use-ssh-authentication/ssh_accessing_security_key.png)
-
+   ![Accessing Security Configuration in Azure DevOps Services](media/use-ssh-authentication/ssh_accessing_security_key.png)
+   
 3. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Public Key Data** field. 
 
    >[!IMPORTANT]
@@ -117,6 +152,8 @@ If everything is working correctly, you'll receive a response which says: `remot
 If not, see the section on [Questions and troubleshooting](#questions-and-troubleshooting).
 
 <a name="copy-url"></a>
+
+::: moniker-end
 
 ### Step 3: Clone the Git repository with SSH
 
@@ -138,7 +175,7 @@ If not, see the section on [Questions and troubleshooting](#questions-and-troubl
 SSH may display the server's SSH fingerprint and ask you to verify it.
 You should verify that the displayed fingerprint matches one of the fingerprints in the **SSH public keys** page.
 
-SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](https://technet.microsoft.com/library/cc959354.aspx).
+SSH displays this fingerprint when it connects to an unknown host to protect you from [man-in-the-middle attacks](/previous-versions/windows/it-pro/windows-2000-server/cc959354(v=technet.10)).
 Once you accept the host's fingerprint, SSH will not prompt you again unless the fingerprint changes. 
 
 ```
@@ -381,4 +418,4 @@ Replace `<your-azure-devops-host>` with the hostname of your Azure DevOps or TFS
 
 **A:** If you receive a notification of an SSH key being registered and you did not manually upload it to the service, your credentials may have been compromised. 
 
-The next step would be to investigate whether or not your password has been compromised. Changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.  
+The next step would be to investigate whether or not your password has been compromised. Changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.

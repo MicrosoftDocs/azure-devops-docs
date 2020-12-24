@@ -17,7 +17,7 @@ ms.date: 07/17/2020
 
 [!INCLUDE [temp](../../../includes/version-cloud-plus-2020.md)]
 
-You can change a project based on the Scrum process to use to use an inherited Agile process. This article provides the steps needed to make this change. 
+You can change a project based on the Scrum process to use an inherited Agile process. This article provides the steps needed to make this change. 
 
 
 Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task, Bug, Feature, and Epic work item types are the same for both Scrum and Agile processes. Some State and Reason field values, however, are different.
@@ -112,7 +112,7 @@ You can customize Kanban boards to display intermediate columns. For each column
    Rename each column and choose the correct state for each column so that the column-to-state mapping is correct. As needed, add one or more columns. When done, choose **Save and close**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Open team Kanban board](media/scrum-to-agile/column-settings-fixed.png)
+   > ![Kanban board fixed.](media/scrum-to-agile/column-settings-fixed.png)
 
 
 ## Update work items
@@ -155,7 +155,7 @@ Your next step is to bulk update work items. The recommended sequence is:
    This should result in an updated list without errors.
 
    > [!div class="mx-imgBorder"]  
-   > ![Error state of changed work item type](media/scrum-to-agile/mismatch-items-fixed.png)
+   > ![Updated list without errors.](media/scrum-to-agile/mismatch-items-fixed.png)
 
 6. To save your changes, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Save items**.
 

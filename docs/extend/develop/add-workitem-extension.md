@@ -1,6 +1,6 @@
 ---
 title: Extend the work item form | Extensions for Azure DevOps
-description: Describes how to extend work item tracking, including adding an action, an observer, a group, or a page to the work item form in Azure DevOps and Team Foundation Server (TFS).
+description: Describes how to extend work item tracking, including adding an action, an observer, a group, or a page to the work item form in Azure DevOps.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ms.technology: devops-ecosystem
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 08/22/2016
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-In this article, learn how to customize how the work item form gets presented to users via contributions that are made through an extension.
+Learn how to customize how the work item form gets presented to users via contributions that are made through an extension.
 
 * [Add a group to the main page](#addagroup)
 * [Add a page (tab)](#addapage) 
@@ -29,7 +29,7 @@ See the **UI** example in the [Azure DevOps Extension Samples](https://github.co
 
 ## Add a group
 
-![toolbar item in work item form](./media/add-workitem-extension-group.png)
+![Toolbar item in work item form.](./media/add-workitem-extension-group.png)
 
 To add a group to the main page, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-group` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -124,7 +124,7 @@ This sample shows how to register an object that's called when events occur on t
 
 A new page is rendered as a tab on the work item form. New pages appear next to the Details tab.
 
-![toolbar item in work item form](./media/add-workitem-extension-page.png)
+![New page as a tab on the work item form.](./media/add-workitem-extension-page.png)
 
 To add a page to the work item form, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-page` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -162,13 +162,13 @@ See the JavaScript sample in the form group section. The name of the registered 
 
 ## Configure contributions in work item form
 
-In Azure DevOps, by default the group extensions appear in the end of the second column of the form and page contributions appear after all the work item form pages as a tab. Control contributions are not shown in the form by default so users have to manually add them to the form. In TFS, to show/hide or move the control, group and page contributions in work item form, see  [Configure work item form extensions in TFS](./configure-workitemform-extensions.md).
+In Azure DevOps Services, by default the group extensions appear in the end of the second column of the form and page contributions appear after all the work item form pages as a tab. Control contributions are not shown in the form by default so users have to manually add them to the form. In Azure DevOps Server, to show/hide or move the control, group and page contributions in work item form, see  [Configure work item form extensions](./configure-workitemform-extensions.md).
 
 <a name="addmenuaction"></a>
 
 ## Add menu action
 
-![toolbar item in work item form](./media/add-workitem-extension-toolbar.png)
+![Add an item to the work item toolbar.](./media/add-workitem-extension-toolbar.png)
 
 To add an item to the work item toolbar, add this contribution to your extension manifest. The item appears in the ... dropdown in the top right of the work item form.
 

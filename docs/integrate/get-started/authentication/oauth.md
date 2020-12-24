@@ -15,7 +15,7 @@ ms.date: 08/11/2020
 [!INCLUDE [version-azure-devops](../../../includes/version-vsts-only.md)]
 
 > [!NOTE]
-> The following guidance is intended for Azure DevOps Services users, since OAuth 2.0 is not supported on Team Foundation Server or Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending TFS functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](PATs.md) to authenticate on behalf of a user.
+> The following guidance is intended for Azure DevOps Services users, since OAuth 2.0 is not supported on Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending Azure DevOps Server functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to authenticate on behalf of a user.
 
 Authenticate your web app users for REST API access, so your app doesn't continue to ask for usernames and passwords.
 Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize your app for a user and generate an access token.
@@ -42,7 +42,7 @@ If you registered your app using the preview APIs, re-register because the scope
 When Azure DevOps Services presents the authorization approval page to your user,
 it uses your company name, app name, and descriptions. It also uses the URLs for your company web site, app website, and terms of service and privacy statements.
 
-<img alt="Visual Studio Online authorization page with your company and app information" src="./media/grant-access.png" style="border: 1px solid #CCCCCC" />
+<img alt="Visual Studio Codespaces authorization page with your company and app information" src="./media/grant-access.png" style="border: 1px solid #CCCCCC" />
 
 When Azure DevOps Services asks for a user's authorization, and the user grants it,
 the user's browser gets redirected to your authorization callback URL with the authorization code.
@@ -258,7 +258,7 @@ A: Make sure that you handle the following conditions:
 
 ### Q: I want to debug my web app locally. Can I use localhost for the callback URL when I register my app?
 
-A: Azure DevOps Services doesn't allow localhost to be the hostname in your callback URL. You can edit the host file on your local computer to map a hostname to 127.0.0.1. Then, use this hostname when you register your app. Or, you can deploy your app when testing to a Microsoft Azure website,  to debug and use HTTPS for the callback URL.
+A: Yes. Azure DevOps Services now allows localhost in your callback URL. Ensure you use `https://localhost` as the beginning of your callback URL when you register your app.
 
 ### Q: I get an HTTP 400 error when I try to get an access token. What might be wrong?
 
@@ -274,5 +274,3 @@ A: No. OAuth is only supported in the REST APIs at this point.
 
 - [Choosing the right authentication method](authentication-guidance.md)
 - [Default permissions and access for Azure DevOps](../../../organizations/security/permissions-access.md)
-
-

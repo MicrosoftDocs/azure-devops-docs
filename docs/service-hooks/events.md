@@ -1,6 +1,6 @@
 ---
 title: Service hooks event reference | Azure DevOps Services
-description: Events supported by Azure DevOps Services and Team Foundation Server
+description: Events supported by Azure DevOps.
 ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -1192,7 +1192,7 @@ A deployment was started
 ## Pipelines
 
 > [!NOTE]
-> [Multi-stage pipelines](https://go.microsoft.com/fwlink/?linkid=2097082) preview feature needs to be enabled for these events.
+> [Multi-stage pipelines](../pipelines/get-started/multi-stage-pipelines-experience.md) preview feature needs to be enabled for these events.
 
 <a name="run.statechanged"></a>
 
@@ -2543,4 +2543,3 @@ The event payload contains a `resourceContainers` dictionary that includes the I
 * **Team Foundation Server 2015**: includes project, collection, and server. Does not include `baseUrl`.
 * **Team Foundation Server 2017**: includes project, collection, and server. Includes `baseUrl` for each.
 * **Azure DevOps Services**: includes project and collection (account). Includes `baseUrl` for each.
-

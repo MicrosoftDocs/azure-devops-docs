@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this article, learn which service limits and rate that your public projects are subject to. 
+Learn which service limits and rate that your public projects are subject to. 
 
 <!---
 ## Pipelines

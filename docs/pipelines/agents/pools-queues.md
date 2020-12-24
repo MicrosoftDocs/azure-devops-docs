@@ -1,10 +1,10 @@
 ---
 title: Agents pools
 ms.topic: conceptual
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
-ms.date: 02/25/2020
+ms.date: 10/29/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -24,7 +24,7 @@ Instead of managing each [agent](agents.md) individually, you organize agents in
 
 An **agent queue** provides access to an **agent pool** within a project. When you create a build or release pipeline, you specify which queue it uses. Queues are scoped to your project in TFS 2017 and newer, so you can only use them across build and release pipelines within a project.
 
-To share an agent pool with multiple projects, in each of those projects, you create an agent queue pointing to the same agent pool. While multiple queues across projects can use the same agent pool, multiple queues within a project cannot use the agent pool. Also, each agent queue can use only one agent pool.
+To share an agent pool with multiple projects, in each of those projects, you create an agent queue pointing to the same agent pool. While multiple queues across projects can use the same agent pool, multiple queues within a project cannot use the same agent pool. Also, each agent queue can use only one agent pool.
 
 ::: moniker-end
 
@@ -413,6 +413,43 @@ Users in the **Agent Pool Service Accounts** group have permission to listen to 
 ### If I don't schedule a maintenance window, when will the agents run maintenance?
 
 If no window is scheduled, then the agents in that pool will not run the maintenance job.
+
+### What is a maintenance job?
+
+You can configure agent pools to periodically clean up stale working directories and repositories. This should reduce the potential for the agents to run out of disk space. Maintenance jobs are configured at the project collection or organization level in agent pool settings.
+
+To configure maintenance job settings:
+
+[!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
+
+Choose the desired pool and choose **Settings** to configure maintenance job settings for that agent pool. 
+
+> [!IMPORTANT]
+> You must have the [Manage build queues](../policies/permissions.md?#default-permissions-assigned-to-built-in-security-groups) permission to configure maintenance job settings. If you don't see the **Settings** tab or the **Maintenance History** tab, you don't have that permission, which is granted by default to the **Administrator** role. For more information, see [Security of agent pools](#security).
+
+:::moniker range="> tfs-2018"
+
+:::image type="content" source="media/maintenance-job-settings.png" alt-text="Maintenance job settings":::
+
+:::moniker-end
+
+:::moniker range="<= tfs-2018"
+
+:::image type="content" source="media/maintenance-job-settings-tfs.png" alt-text="Maintenance job settings for TFS":::
+
+:::moniker-end
+
+Configure your desired settings and choose **Save**.
+
+Select **Maintenance History** to see the maintenance job history for the current agent pool. You can download and review logs to see the cleaning steps and actions taken.
+
+:::moniker range="> tfs-2018"
+
+:::image type="content" source="media/maintenance-job-history.png" alt-text="Maintenance job history":::
+
+:::moniker-end
+
+The maintenance is done per agent, not per machine; so if you have multiple agents on a single machine, you may still run into disk space issues.
 
 ### I'm trying to create a project agent pool that uses an existing organization agent pool, but the controls are grayed out. Why?
 

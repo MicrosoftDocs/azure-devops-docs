@@ -135,13 +135,13 @@ The steps to creating charts that track manual testing progress and results are 
 
 ### Sample light-weight test charts 
   
-![Active bugs](media/gs-monitor-test-charts.png)
+![Web Team test plan is a chart that shows counts of test in various stages. Tests by Suite breaks down the same tests by test suite.](media/gs-monitor-test-charts.png)
 
 And, just like work item query-based charts, you can add these charts to a dashboard.  
 
 **Sequence for adding test progress and result charts to a dashboard**  
 
-[![Edit query](media/gs-chart-test-type.png)](../../test/track-test-status.md)[![Create chart](media/gs-chart-create.png)](charts.md)[![Add chart to dashboard](media/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
+[![Choose test chart type](media/gs-chart-test-type.png)](../../test/track-test-status.md)[![Create chart](media/gs-chart-create.png)](charts.md)[![Add chart to dashboard](media/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)
 
 ::: moniker range=">= tfs-2015"
 
@@ -481,7 +481,7 @@ Use the interactive controls to choose the start and end of the sprint and count
 
 ::: moniker range="<= azure-devops-2019"
 
-Azure Boards provides several in-context reports that derive from the work tracking data store. From your backlog or board, you can view the Cumulative Flow Diagram and team Velocity reports by choosing the minature charts that appear on each page. From a Sprint backlog, you can view the sprint burndown.  
+Azure Boards provides several in-context reports that derive from the work tracking data store. From your backlog or board, you can view the Cumulative Flow Diagram and team Velocity reports by choosing the miniature charts that appear on each page. From a Sprint backlog, you can view the sprint burndown.  
 
 ### Cumulative Flow Diagram 
 

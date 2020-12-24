@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.date: 08/19/2020
+ms.date: 10/08/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -12,7 +12,10 @@ monikerRange: '>= tfs-2017'
 
 **Azure Pipelines | TFS 2018 | TFS 2017.3** 
 
-You can specify the conditions under which each job runs. By default, a job runs if it does not depend on any other job, or if all of the jobs that it depends on have completed and succeeded. You can customize this behavior by forcing a job to run even if a previous job fails or by specifying a custom condition.
+You can specify the conditions under which each stage, job, or step runs.
+By default, a job or stage runs if it does not depend on any other job or stage, or if all of the jobs or stages that it depends on have completed and succeeded.
+By default, a step runs if nothing in its job has failed yet and the step immediately preceding it has finished.
+You can customize this behavior by forcing a stage, job, or step to run even if a previous dependency fails or by specifying a custom condition.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -45,7 +48,7 @@ You can also use variables in conditions.
 
 ```yaml
 variables:
-  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
+  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')]
 
 stages:
 - stage: A
@@ -62,6 +65,11 @@ stages:
       - script: echo Hello Stage B!
       - script: echo $(isMain)
 ```
+
+Conditions are evaluated to decide whether to start a stage, job, or step.
+This means that nothing computed at runtime inside that unit of work will be available.
+For example, if you have a job which sets a variable using a runtime expression using `$[ ]` syntax, you can't use that variable in your custom condition. 
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -96,16 +104,16 @@ Do any of your conditions make it possible for the task to run even after the bu
 
 ## Examples
 
-### Run for the master branch, if succeeding
+### Run for the main branch, if succeeding
 
 ```
-and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
 ```
 
-### Run if the branch is not master, if succeeding
+### Run if the branch is not main, if succeeding
 
 ```
-and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/master'))
+and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/main'))
 ```
 
 ### Run for user topic branches, if succeeding
@@ -146,7 +154,6 @@ jobs:
     steps:
     - script: echo testNull is blank
     condition: eq('${{ variables.testNull }}', '')
-
 ```
 
 ### Use a template parameter as part of a condition
@@ -194,10 +201,9 @@ extends:
   template: parameters.yml
 ```
 
-
 ### Use the output variable from a job in a condition in a subsequent job
 
-You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](/azure/devops/pipelines/process/variables#set-a-multi-job-output-variable) using `isOutput=true`. 
+You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](./variables.md#set-a-multi-job-output-variable) using `isOutput=true`. 
 
 ```yaml
 jobs:
@@ -231,7 +237,6 @@ If you defined the pipelines using a YAML file, then this is supported. This sce
 You can use the result of the previous job. For example, in this YAML file, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows the job to run because Job A succeeded with issues. 
 
 ```yaml
-
 jobs:
 - job: A
   displayName: Job A
@@ -247,17 +252,17 @@ jobs:
   steps:
   - script: echo Job B ran
 ```
+
 ### I've got a conditional step that runs even when a job is canceled. How do I manage to cancel all jobs at once?
 
 You'll experience this issue if the condition that's configured in the stage doesn't include a job status check function. To resolve the issue, add a job status check function to the condition. If you cancel a job while it's in the queue, the entire job is canceled, including all the other stages, with this function configured. For more information, see [Job status functions](expressions.md#job-status-functions).
 
 ```yaml
-
 stages:
 - stage: Stage1
   displayName: Stage 1
   dependsOn: []
-  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/master'), succeeded())
+  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
   jobs:
   - job: ShowVariables
     displayName: Show variables
@@ -265,13 +270,12 @@ stages:
     - task: CmdLine@2
       displayName: Show variables
       inputs:
-        script: >
-          printenv
+        script: 'printenv'
 
 - stage: Stage2
   displayName: stage 2
   dependsOn: Stage1
-  condition: contains(variables['build.sourceBranch'], 'refs/heads/master')
+  condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
   jobs:
   - job: ShowVariables
     displayName: Show variables 2
@@ -279,13 +283,12 @@ stages:
     - task: CmdLine@2
       displayName: Show variables 2
       inputs:
-        script: >
-          printenv
+        script: 'printenv'
           
 - stage: Stage3
   displayName: stage 3
   dependsOn: Stage2
-  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/master'), succeeded())
+  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
   jobs:
   - job: ShowVariables
     displayName: Show variables 3
@@ -293,9 +296,7 @@ stages:
     - task: CmdLine@2
       displayName: Show variables 3
       inputs:
-        script: >
-          printenv
-
+        script: 'printenv'
 ```
 
 <!-- ENDSECTION -->
@@ -304,4 +305,4 @@ stages:
 ## Related articles
 
 - [Specify jobs in your pipeline](../process/phases.md)  
-- [Add stages, dependencies, & conditions](../process/stages.md)   
+- [Add stages, dependencies, & conditions](../process/stages.md)

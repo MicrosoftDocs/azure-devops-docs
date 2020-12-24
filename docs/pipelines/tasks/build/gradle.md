@@ -154,7 +154,7 @@ Use this task to build using a Gradle wrapper script.
 
 ## Example
 
-[Build your Java app with Gradle](../../apps/java/build-gradle.md)
+[Build your Java app with Gradle](../../ecosystems/java.md)
 
 ## Open source
 

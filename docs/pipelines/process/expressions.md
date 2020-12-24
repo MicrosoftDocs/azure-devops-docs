@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 08/28/2020
+ms.date: 12/22/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -29,7 +29,7 @@ steps:
 
 Another common use of expressions is in defining variables.
 Expressions can be evaluated at [compile time](runs.md#process-the-pipeline) or at [run time](runs.md#run-each-step).
-Compile time expressions can be used anywhere; runtime expressions can be used in variables and conditions.
+Compile time expressions can be used anywhere; runtime expressions can be used in variables and conditions. Runtime expressions are intended as a way to compute the contents of variables and state (example: `condition`). 
 
 ```yaml
 # Two examples of expressions used to define variables
@@ -51,7 +51,7 @@ In this example, a runtime expression sets the  value of `$(isMain)`. A static v
 variables:
   staticVar: 'my value' # static variable
   compileVar: ${{ variables.staticVar }} # compile time expression
-  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')] # runtime expression
+  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')] # runtime expression
 
 steps:
   - script: |
@@ -238,7 +238,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Evaluates the trailing parameters and inserts them into the leading parameter string
 * Min parameters: 1. Max parameters: N
 * Example: `format('Hello {0} {1}', 'John', 'Doe')`
-* Uses [.NET custom date and time format specifiers](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) for date formatting (`yyyy`, `yy`, `MM`, `M`, `dd`, `d`, `HH`, `H`, `m`, `mm`, `ss`, `s`, `f`, `ff`, `ffff`, `K`)
+* Uses [.NET custom date and time format specifiers](/dotnet/standard/base-types/custom-date-and-time-format-strings) for date formatting (`yyyy`, `yy`, `MM`, `M`, `dd`, `d`, `HH`, `H`, `m`, `mm`, `ss`, `s`, `f`, `ff`, `ffff`, `K`)
 * Example: `format('{0:yyyyMMdd}', pipeline.startTime)`. In this case `pipeline.startTime` is a special date time object variable.
 * Escape by doubling braces. For example: `format('literal left brace {{ and literal right brace }}')`
 
@@ -423,7 +423,7 @@ For templates, you can use conditional insertion when adding a sequence or mappi
 ### Conditionally assign a variable
 ```yml
 variables:
-  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}: # only works if you have a master branch
+  ${{ if eq(variables['Build.SourceBranchName'], 'main') }}: # only works if you have a main branch
     stageName: prod
 
 pool:
@@ -442,11 +442,29 @@ steps:
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
-    ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+    ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
       artifact: 'prod'
-    ${{ if ne(variables['Build.SourceBranchName'], 'master') }}:
+    ${{ if ne(variables['Build.SourceBranchName'], 'main') }}:
       artifact: 'dev'
     publishLocation: 'pipeline'
+```
+
+
+## Each keyword
+
+You can use the `each` keyword to loop through parameters with the object type. 
+
+```yaml
+parameters:
+- name: listOfStrings
+  type: object
+  default:
+  - one
+  - two
+
+steps:
+- ${{ each value in parameters.listOfStrings }}:
+  - script: echo ${{ value }}
 ```
 
 ## Dependencies
@@ -692,7 +710,7 @@ variables:
 
 steps:
 - script: echo $(firstEval)
-- script: echo $
+- script: echo $(secondEval)
 ```
 
 
@@ -737,7 +755,7 @@ To string:
 ### Number
 
 * To Boolean: `0` &rarr; `False`, any other number &rarr; `True`
-* To version: Must be greater than zero and must contain a non-zero decimal. Must be less than [Int32.MaxValue](https://msdn.microsoft.com/library/system.int32.maxvalue%28v=vs.110%29.aspx) (decimal component also).
+* To version: Must be greater than zero and must contain a non-zero decimal. Must be less than [Int32.MaxValue](/dotnet/api/system.int32.maxvalue) (decimal component also).
 * To string:
 Converts the number to a string with no thousands separator and no decimal separator.
 
@@ -745,7 +763,7 @@ Converts the number to a string with no thousands separator and no decimal separ
 
 * To Boolean: `''` (the empty string) &rarr; `False`, any other string &rarr; `True`
 * To null: `''` (the empty string) &rarr; `Null`, any other string not convertible
-* To number: `''` (the empty string) &rarr; 0, otherwise, runs C#'s `Int32.TryParse` using [InvariantCulture](https://msdn.microsoft.com/library/system.globalization.cultureinfo.invariantculture%28v=vs.110%29.aspx) and the following rules: AllowDecimalPoint | AllowLeadingSign | AllowLeadingWhite | AllowThousands | AllowTrailingWhite. If `TryParse` fails, then it's not convertible.
+* To number: `''` (the empty string) &rarr; 0, otherwise, runs C#'s `Int32.TryParse` using [InvariantCulture](/dotnet/api/system.globalization.cultureinfo.invariantculture) and the following rules: AllowDecimalPoint | AllowLeadingSign | AllowLeadingWhite | AllowThousands | AllowTrailingWhite. If `TryParse` fails, then it's not convertible.
 * To version:
 runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum. If `TryParse` fails, then it's not convertible.
 
@@ -779,4 +797,3 @@ steps:
 ```
 
 <!-- ENDSECTION -->
-

@@ -31,7 +31,7 @@ After you install the [Analytics Marketplace extension](/azure/devops/report/das
 From your web portal, expand **Overview** and choose **Analytics views**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Open Analytics view, new navigation](/azure/devops/report/powerbi/media/open_analytics.png)   
+> ![Expand Overview and choose Analytics views.](/azure/devops/report/powerbi/media/open_analytics.png)   
 
 ::: moniker-end
 
@@ -40,10 +40,8 @@ From your web portal, expand **Overview** and choose **Analytics views**.
 From your web portal, expand **Boards** and choose **Analytics views**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Open Analytics view, new navigation](/azure/devops/report/powerbi/media/analytics-views/open-analytics-2020.png)  
+> ![Expand Boards and choose Analytics views.](/azure/devops/report/powerbi/media/analytics-views/open-analytics-2020.png)  
 
 ::: moniker-end 
 
-If you don't see **Analytics**, check that it is enabled for the project collection and that you have permissions to view analytics. See the [Prerequisites](#prerequisites) for this article.     
-
-
+If you don't see **Analytics**, check that it is enabled for the project collection and that you have permissions to view analytics. See the [Prerequisites](#prerequisites) for this article.

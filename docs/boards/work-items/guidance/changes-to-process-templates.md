@@ -7,8 +7,8 @@ ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688
 ms.topic: reference 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 08/06/2020
+monikerRange: '<= azure-devops'
+ms.date: 10/22/2020
 ---
 
 # Changes made to process templates  
@@ -18,7 +18,7 @@ ms.date: 08/06/2020
 To support the addition of new features, changes are introduced periodically to the core system processes or process template&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md). A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
 > [!NOTE]    
-> This article describes changes made to the core system processes with updates made to the on-premises Azure DevOps Server, formerly named Team Foundation Server (TFS). These processes are available for both cloud and on-premises versions of Azure Boards. Projects hosted on Azure Boards [update automatically with each service upgrade](/azure/devops/release-notes/index). Whereas, updates to projects defined on-premises may require running the Configure Feature Wizard after upgrading to a later version.  The Configure Features Wizard has been deprecated for Azure DevOps Server 2019. You can only run the wizard on TFS 2018 and earlier versions.        
+> This article describes changes made to the core system processes with updates made to Azure DevOps Services and on-premises Azure DevOps Server, formerly named Team Foundation Server (TFS). These processes are available for both cloud and on-premises versions of Azure Boards. Projects hosted on Azure Boards [update automatically with each service upgrade](/azure/devops/release-notes/index). Whereas, updates to projects defined on-premises may require running the Configure Feature Wizard after upgrading to a later version.  The Configure Features Wizard has been deprecated for Azure DevOps Server 2019. You can only run the wizard on TFS 2018 and earlier versions.        
 If you've customized your project and haven't upgraded your on-premises deployment for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you upgrade](/previous-versions/azure/devops/reference/upgrade/new-features-added) for a description of each feature added with the updates. 
 
 
@@ -27,6 +27,20 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <tr>
 <th width="22%">Version</th>
 <th width="78%">Changes introduced</th>
+</tr>
+<tr>
+<td>
+<p>Azure DevOps Services (October 2020) </p>
+</td>
+<td>
+<p>
+    Removed system rule <strong>Assign work item to the person who created it when the bug is moved to the Resolved state</strong> from the Bug work item type in the Agile process. 
+    <br/><br/>
+    For those customers who want to continue using this rule, you can add the following <a href="../../../organizations/settings/work/apply-rules-to-workflow-states.md#reassign" data-raw-source="[custom workflow rules](../../../organizations/settings/work/apply-rules-to-workflow-states.md)">custom workflow</a> rule to the Bug in your process:
+    <br/><br/>
+    <strong>When</strong> A work item state changes to <i>Resolved</i> <strong>Then</strong> Copy the value from <i>Created By<i> <strong>to</strong> <i>Assigned To<i>
+</p>
+</td>
 </tr>
 <tr>
 <td>
@@ -186,7 +200,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <li>WITs added: Feature</li>
 <li>Categories added: Feature Category </li>
 <li>Process configuration changes: Replaced AgileConfiguration and CommonConfiguration with a single file, <a href="../../../reference/xml/process-configuration-xml-element.md" data-raw-source="[ProcessConfiguration](../../../reference/xml/process-configuration-xml-element.md)">ProcessConfiguration</a>, supports these additional features: portfolio backlogs, color assignment to WITs, tags added to the default columns on all backlog pages. </li>
-<li>Build changes: Removed the build templates from the build plug-in. You now access build templates through the user interface <a href="https://msdn.microsoft.com/library/dd647547(v=vs.120).aspx">Use the Default Template for your build process</a>. </li>
+<li>Build changes: Removed the build templates from the build plug-in. You now access build templates through the user interface <a href="/previous-versions/visualstudio/visual-studio-2013/dd647547(v=vs.120)">Use the Default Template for your build process</a>. </li>
 <li>Reporting Services updates: To update your project with the latest reports, see <a href="../../../Report/admin/upload-reports.md" data-raw-source="[Upload reports to a project](../../../Report/admin/upload-reports.md)">Upload reports to a project</a>.</p>
 </li>
 </ul>
@@ -233,7 +247,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 
 <li>Categories added: Code Review Request Category, Code Review Response Category, Feedback Request Category, Feedback Response Category, and Hidden Types Category</li>
 <li>Process configuration: Added CommonConfiguration and AgileConfiguration definition files to support Agile planning tools, code review, feedback, and My Work.</li>
-<li>Build plug-in: Added a new build process template. When you upgrade from earlier versions of Team Foundation Server, you can continue to use <a href="https://msdn.microsoft.com/library/dd647548.aspx" data-raw-source="[legacy build processes](https://msdn.microsoft.com/library/dd647548.aspx)">legacy build processes</a>. 
+<li>Build plug-in: Added a new build process template. When you upgrade from earlier versions of Team Foundation Server, you can continue to use <a href="/previous-versions/dd647548(v=vs.140)" data-raw-source="[legacy build processes](/previous-versions/dd647548(v=vs.140))">legacy build processes</a>. 
 </li>
 <li>
 Process template plug-in: Added <code>version</code> element to support updating projects when configuring new features.
@@ -258,14 +272,14 @@ Removed the Sprint type definition and All Sprints query, whose functionality ha
 <p>Added the <code>Storyboards</code> tab to the Product Backlog Item type definition.</p>
 </li>
 <li>
-<p>Added the <a href="https://msdn.microsoft.com/library/dn641200.aspx" data-raw-source="[Backlog Overview report](https://msdn.microsoft.com/library/dn641200.aspx)">Backlog Overview report</a> to the set of SQL Server Reporting Services reports, similar to the Agile <a href="https://msdn.microsoft.com/library/dd380648.aspx" data-raw-source="[Stories Overview report](https://msdn.microsoft.com/library/dd380648.aspx)">Stories Overview report</a>.</p>
+<p>Added the <a href="/azure/devops/report/sql-reports/backlog-overview-scrum" data-raw-source="[Backlog Overview report](../../../report/sql-reports/backlog-overview-scrum.md)">Backlog Overview report</a> to the set of SQL Server Reporting Services reports, similar to the Agile <a href="/azure/devops/?viewFallbackFrom=vsts" data-raw-source="[Stories Overview report](../../../index.yml?viewFallbackFrom=vsts)">Stories Overview report</a>.</p>
 </li>
 </ul>
 
 <h4>The following changes were made to the Agile process:</h4>
 <ul>
 <li>
-<p>The <code>New</code> state was added as the initial state for User Stories and Tasks. This change was introduced to support transitioning User Stories and Tasks from a <code>New</code> state to an <code>Active</code> state. Without the <code>New</code> state, User Stories assigned to an iteration remain on the product backlog until they are resolved, which is not a desired or expected behavior. See <a href="https://msdn.microsoft.com/library/hh500412(v=vs.110).aspx">Update the Workflow for Agile Team Projects</a>. </p>
+<p>The <code>New</code> state was added as the initial state for User Stories and Tasks. This change was introduced to support transitioning User Stories and Tasks from a <code>New</code> state to an <code>Active</code> state. Without the <code>New</code> state, User Stories assigned to an iteration remain on the product backlog until they are resolved, which is not a desired or expected behavior. See <a href="/previous-versions/visualstudio/visual-studio-2012/hh500412(v=vs.110)">Update the Workflow for Agile Team Projects</a>. </p>
 </li>
 <li>
 <p>To support removing cut work items from the backlog, the <code>Removed</code> state was added to the workflow state for the following work item types: User Story and Task.  </p>

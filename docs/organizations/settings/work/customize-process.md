@@ -19,13 +19,13 @@ ms.date: 04/22/2019
 
 ::: moniker range="azure-devops"
 
-Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/azure/devops/boards/work-items/guidance/agile-process), [Basic](/azure/devops/boards/get-started/track-issues-tasks), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process). 
+Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Basic](../../../boards/get-started/plan-track-work.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md). 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process). 
+Each project is based on a process that defines the building blocks for tracking work. The first project you create uses one of the default processes&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md). 
 
 ::: moniker-end
 
@@ -154,7 +154,7 @@ Custom controls provide additional functionality to a work item form.
 - To add a custom control, choose your inherited process, the WIT, and then **Add custom control**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Process, WIT, Bug, Layout, New custom control](media/process/cpcontrols-add-custom-control.png) 
+	> ![Choose your inherited process, the WIT, and then Add custom control.](media/process/cpcontrols-add-custom-control.png) 
 
 To learn more, see [Add extensions and custom controls to a work item type](custom-controls-process.md).
 
@@ -286,7 +286,3 @@ For example, the following image shows the work item form layout for the Bug WIT
 
 <img src="media/process/cprocess-intro.png" alt="Admin context, Process, Work item types, bug type, layout tab" style="border: 1px solid #C3C3C3;" /> 
 -->
-
-
-
-

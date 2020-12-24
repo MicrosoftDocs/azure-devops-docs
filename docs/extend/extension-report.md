@@ -14,16 +14,16 @@ ms.date: 11/12/2019
 
 [!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
 
-Once your extension is available in the [Visual Studio Marketplace](/azure/devops/extend/extension-report) you can use the **Reports** feature. With this feature, you can track and analyze how the extension is performing and take required actions. 
+Once your extension is available in the [Visual Studio Marketplace]() you can use the **Reports** feature. With this feature, you can track and analyze how the extension is performing and take required actions. 
 To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or select the **Reports** link on the extension details page.
 
 ## Acquisition 
 
 You can view acquisition-related data in this tab for the selected period. 
 * Aggregated acquisition in the selected period for overall acquisition
-* Aggregated acquisition split by extension downloads, Azure DevOps and Team Foundation Server (TFS) connected install for free extension
-* Aggregated acquisition split by trials, Azure DevOps and TFS connected buy for paid extension
-* Daily trend of extension page views with acquisition for Azure DevOps and TFS connected server
+* Aggregated acquisition split by extension downloads Azure DevOps connected install for free extension
+* Aggregated acquisition split by trials Azure DevOps connected buy for paid extension
+* Daily trend of extension page views with acquisition for Azure DevOps and connected server
 * Conversion percentage from page views to acquisition
 
 For paid extensions, all transactional details for buy and trials are available with date, organization name, trial end date, and quantity. You can use the **Contact** action to communicate with your users. For more information, see the [Contact](#contact) section provided later in this article. 
@@ -85,5 +85,4 @@ For more information and guidance on communication with customers, see  the [Mar
 
 * **Page views**: total number of extension detail page views. Repeated views are counted.
 * **Azure DevOps installs**: total number of organizations the extension is installed in. Repeated installs on the same organization are counted. 
-* **TFS installs**: total number of TFS connected accounts the extension is installed in. Repeated installs on the same organization are counted. TFS disconnected server data isn't available.  
-
+* **TFS installs**: total number of TFS connected accounts the extension is installed in. Repeated installs on the same organization are counted. TFS disconnected server data isn't available.
