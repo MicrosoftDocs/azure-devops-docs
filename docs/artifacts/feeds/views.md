@@ -16,7 +16,7 @@ Feeds are containers that allow users to group packages and control who can acce
 
 A feed view on the other hand is a way to enable users to share some packages while keeping others private. Views filter the feed to a subset of packages that meet criteria defined by that view.
 
-There are 3 types of views: `@local`, `@Prerelease` and `@Release`. @local is the default view that's commonly used in upstream sources. The latter two are suggested views that you can rename or delete as desired. Those views contain a subset of the feed's packages that have been promoted into that specific view. All views currently support NuGet, npm, Maven, Python, and Universal packages.
+There are three types of views: `@local`, `@Prerelease`, and `@Release`. @local is the default view that's commonly used in upstream sources. The latter two are suggested views that you can rename or delete as desired. Those views contain a subset of the feed's packages that have been promoted into that specific view. All views currently support NuGet, npm, Maven, Python, and Universal packages.
 
 ## Get started with feed views
 
@@ -51,7 +51,7 @@ In addition to using the user interface in Azure Artifacts, you can also promote
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
-    See [NuGet - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1) for more details.
+    See [NuGet - update package version](/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1) for more details.
 
 * **Promote an npm package**:
 
@@ -61,7 +61,7 @@ In addition to using the user interface in Azure Artifacts, you can also promote
     PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
-    See [Npm - Update Package](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1) for more details.
+    See [Npm - update package version](/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1) for more details.
 
 * **Promote a Python package**:
 
@@ -71,7 +71,7 @@ In addition to using the user interface in Azure Artifacts, you can also promote
     PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
-    See [Python - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1) for more details.
+    See [Python - update package version](/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1) for more details.
 
 
 * **Promote a Universal package**:
@@ -82,7 +82,7 @@ In addition to using the user interface in Azure Artifacts, you can also promote
     PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
     ```
     
-    See [Universal packages - Update Package Version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1) for more details.
+    See [Universal packages - update package version](/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1) for more details.
     
     Keep in mind that you cannot publish a package directly to a view (e.g. `nuget.exe publish -Source ...feed@view/nuget/...`). Instead, you should publish the package to your feed then promote it to a view. 
 
@@ -99,3 +99,9 @@ In the feed settings view:
 
 > [!div class="mx-imgBorder"]
 > ![Managing views](media/feed-settings-views.png)
+
+## What's next?
+
+- [Understand upstream sources](../concepts/upstream-sources.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
+- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md).
