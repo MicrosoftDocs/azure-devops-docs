@@ -35,7 +35,7 @@ ms.technology: devops-cicd-tasks
     #destinationPlatformOption: 'default' # Optional. Options: default, iOS, tvOS, macOS, custom
     #destinationPlatform: # Optional
     #destinationTypeOption: 'simulators' # Optional. Options: simulators, devices
-    #destinationSimulators: 'iPhone 7' # Optional
+    #destinationSimulators: 'iPhone 8' # Optional. Default value: iPhone8 for Xcode 11 and iPhone 7 for other iOS projects; Apple TV for tvOS projects.
     #destinationDevices: # Optional
     #args: # Optional
     #workingDirectory: # Optional
