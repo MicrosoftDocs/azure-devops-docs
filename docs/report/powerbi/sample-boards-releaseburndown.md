@@ -3,13 +3,12 @@ title: Release Burndown sample Power BI report
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate a Release Burndown report
 ms.technology: devops-analytics
-ms.reviewer: greggboe
-ms.author: kaelli
 ms.custom: powerbisample
+ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/07/2019
+ms.date: 12/18/2020
 ---
 
 # Sample - Release Burndown
@@ -23,6 +22,7 @@ This article shows you how to display the burndown of User Stories for a release
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Sample queries
 

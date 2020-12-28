@@ -24,7 +24,7 @@ Instead of managing each [agent](agents.md) individually, you organize agents in
 
 An **agent queue** provides access to an **agent pool** within a project. When you create a build or release pipeline, you specify which queue it uses. Queues are scoped to your project in TFS 2017 and newer, so you can only use them across build and release pipelines within a project.
 
-To share an agent pool with multiple projects, in each of those projects, you create an agent queue pointing to the same agent pool. While multiple queues across projects can use the same agent pool, multiple queues within a project cannot use the agent pool. Also, each agent queue can use only one agent pool.
+To share an agent pool with multiple projects, in each of those projects, you create an agent queue pointing to the same agent pool. While multiple queues across projects can use the same agent pool, multiple queues within a project cannot use the same agent pool. Also, each agent queue can use only one agent pool.
 
 ::: moniker-end
 
