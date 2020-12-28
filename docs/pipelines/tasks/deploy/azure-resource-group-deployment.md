@@ -58,7 +58,7 @@ Use this task to deploy, start, stop, and delete Azure Resource Groups.
 ### Error: Internal Server Error
 
 These issues are mostly transient in nature. There are multiple reasons why it could be happening:
-- One of the Azure service you're trying to deploy is undergoing maintainance in the region you're trying to deploy to. Keep an eye out on https://status.azure.com/ to check downtimes of Azure Services.
+- One of the Azure services you're trying to deploy is undergoing maintenance in the region you're trying to deploy to. Keep an eye out on https://status.azure.com/ to check downtimes of Azure Services.
 - Azure Pipelines service itself is going through maintenance. Keep an eye out on https://status.dev.azure.com/ for downtimes.
 
 However, we've seen some instances where this is due to an error in the ARM template, such as the Azure service you're trying to deploy doesn't support the region you've chosen for the resource.
