@@ -38,11 +38,11 @@ The progress report consists of three sections:
 2. **Outcome trend**: This graph renders a daily snapshot to give you an execution and status trendline. It can show data for 14 days (default), 30 days, or a custom range of your choice. Data for today may or may not appear in this chart based on the time of the day you are looking at the report.
 3. **Details**: This section lets you drill down by each test plan and gives you summary of each test suite in it. The section also lets you navigate to a test plan or suite of choice by double-clicking on it.
 
-![Progress report](media/progress-report/snippet.png)
+![Progress report](media/progress-report/snippet.PNG)
 
 An example of a healthy outcome trend is as follows because as time is progressing, the number of not run tests are decreasing (because tests are being executed) and the number of passed tests are on the rise.
 
-![good trend](media/progress-report/goodtrend.png)
+![good trend](media/progress-report/goodtrend.PNG)
 
 An example of an unhealthy outcome trend is as follows because as time is progressing, there is no significant execution occurring and the # of passed and failed tests are continuing to remain flat. In such situations, use the details card to drill down and take suitable actions.
 
@@ -62,7 +62,8 @@ When using this progress report, it is good to know the following points:
 5. Data for test plans migrated from TFS/Server will not show up in this report. You can leverage this report for test plans created in Azure DevOps Services on or after September 1, 2019. 
 
 ### Provide feedback
-Reach us at devops_tools@microsoft.com to share your thoughts on the Progress Report. In the process, share screenshots as appropriate.
+
+To report any issues you might be having with the Progress Report, go to https://developercommunity.visualstudio.com/content/problem/post.html?space=21. If relevant to the issue you report, include screenshots.
 
 :::moniker-end
 

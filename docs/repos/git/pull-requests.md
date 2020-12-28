@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Create pull requests to review and merge code in a [Git project](../../organizations/projects/create-project.md).
-Pull requests let your team review code and give feedback on changes before merging it into the master branch.
+Pull requests let your team review code and give feedback on changes before merging it into the main branch.
 Pull requests can come from either topic branches within the same repository or from a branch in a [fork](forks.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
@@ -120,7 +120,7 @@ Create pull requests from any branch from the **Pull Request** page on the web.
 ![New pull request](media/pull-requests/new-pr-button.png)
 
 Select **New pull request** in the upper right. You can [enter your pull request details](pull-requests.md#finish) and create the pull request.
-Pick the branch you want to have reviewed and the branch you want to merge the changes into, such as the master branch.  
+Pick the branch you want to have reviewed and the branch you want to merge the changes into, such as the main branch.  
 
 ![Choosing source and target branches for a pull request in Azure Repos](media/pull-requests/pr-branch-targets.png)
 

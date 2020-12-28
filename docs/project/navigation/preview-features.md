@@ -105,7 +105,7 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="3":::
       [New service connections experience](../../pipelines/library/service-endpoints.md)  
-      [New Settings Search in the organization settings panel](#search-org-settings)  
+      [New Settings Search in the organization settings panel](../../organizations/settings/search-settings.md)  
       [New Teams page](../../organizations/settings/add-teams.md)  
       [New Test Plans Page](../../test/new-test-plans-page.md)  
       New TFVC pages
@@ -295,17 +295,6 @@ With **Experimental themes** enabled, you can select among a number of additiona
 
 > [!div class="mx-imgBorder"]  
 > ![Choose your theme dialog](media/preview-features/choose-your-theme.png)
-
-
-<a id="search-org-settings">  </a>
-
-## New Settings Search in the organization settings panel 
-
-When enabled, you can enter keywords to search all settings within the Organization Settings hub. 
-
-> [!div class="mx-imgBorder"]  
-> ![Organizational Settings, Search feature](media/preview-features/org-search-settings.png)
-
 
 
 ## Features now enabled for all Azure DevOps Services 

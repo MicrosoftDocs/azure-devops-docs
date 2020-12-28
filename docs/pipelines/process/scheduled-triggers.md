@@ -362,7 +362,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-![scheduled trigger multiple time zones](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
+![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
 ::: moniker-end
 
