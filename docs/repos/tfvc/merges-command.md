@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Merges Command
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Displays detailed information about past merges between the specified source and destination branches.
 
@@ -67,9 +67,9 @@ tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed
 
 ## Remarks
 
-For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](https://msdn.microsoft.com/library/ms181450).
+For links to other Team Foundation commands that provide additional information about the items in your Team Foundation version control server and all the workspaces that map to it, see [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100)).
 
-For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0).
+For more information on how to find the **tf** command-line utility, see [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100)).
 
 ## Examples
 
@@ -91,17 +91,12 @@ c:\projects>tf merges /recursive Beta1_branch RTM_branch
 
     The asterisk '\*' next to changeset 147 indicates that only some of the changes in that changeset \#147 were merged into changeset \#167.
 
-## See Also
 
-#### Reference
+## Related articles
 
-[Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be)  
-[Merge Command](merge-command.md)  
-[Branch Command](branch-command.md)  
-#### Concepts
-
-[Informational Commands](https://msdn.microsoft.com/library/ms181450)  
-#### Other Resources
-
-[Tf Command-Line Utility Commands](https://msdn.microsoft.com/library/z51z7zy0)  
-[Branching and Merging](use-branches-isolate-risk-team-foundation-version-control.md)
+- [Command-Line Syntax (Version Control)](/previous-versions/visualstudio/visual-studio-2010/56f7w6be(v=vs.100))  
+- [Merge Command](merge-command.md)  
+- [Branch Command](branch-command.md)  
+- [Informational Commands](/previous-versions/visualstudio/visual-studio-2010/ms181450(v=vs.100))  
+- [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))  
+- [Branching and Merging](use-branches-isolate-risk-team-foundation-version-control.md)

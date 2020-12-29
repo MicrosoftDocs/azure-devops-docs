@@ -115,8 +115,7 @@ The second and third groups support restricting state transitions. These two gro
    :::column-end:::
    :::column span="2":::
       > [!div class="mx-imgBorder"]  
-      > ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
-   :::column-end:::
+      > ![Actions, restrict a transaction based on State.](media/customize-workflow/actions-restrict-transition-to-state.png)
 :::row-end:::
 ---  
 :::row:::  
@@ -131,7 +130,7 @@ The second and third groups support restricting state transitions. These two gro
    :::column-end:::
    :::column span="2":::
       > [!div class="mx-imgBorder"]  
-      > ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
+      > ![Actions, restrict a transaction based on State and membership.](media/customize-workflow/actions-restrict-transition-to-state.png)
    :::column-end:::
 :::row-end:::
 --- 
@@ -214,7 +213,7 @@ For the basics of defining rules, see [Add a custom rule](custom-rules.md). You 
 
 With the first grouping of rules, you can specify one or two conditions and up to 10 actions per rule.  
 
-### Example of ensuring team lead approval prior to active work 
+#### Example of ensuring team lead approval prior to active work 
 
 In this example, development teams want to ensure that no User Story is worked on until approved by a team lead. The default workflow states are in use and only a single custom field, *Approved By*, and security group, *Team Leads Group*, are added. 
 
@@ -304,7 +303,7 @@ The rule requirements translate to the following four rule definitions.
 
 When specifying the condition, `A work item state moved from ...`, you can specify only that condition. You can specify up to 10 actions.   
 
-### Example of restricting state transitions and Approved state
+#### Example of restricting state transitions and Approved state
 
 In keeping with the terminology used by a business group, the following workflow states are defined for the User Story. The *New*, *Resolved*, and *Removed* inherited states are hidden. Instead, *Proposed*, *In Review*, and *Cut* States are used. In addition, three additional States are defined: *Investigate*, *Design*, and *Approved*. These States should follow the sequence as shown in the following image. 
 
@@ -508,7 +507,7 @@ To implement the above restrictions, the process administrator adds a custom *Ap
 :::row-end:::  
 ---
 
-### Verify state transition restrictions 
+#### Verify state transition restrictions 
 
 Once the rules are defined for the process and the project updated with the process, refresh your browser and check the operations through the work item form and from the Kanban browser.  
 
@@ -536,6 +535,13 @@ To automate State transitions of parent work items based on the State assignment
 
 > [!NOTE]   
 > The [Automate State Transitions](https://github.com/microsoft/azure-boards-automate-state-transitions) GitHub project is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, raise them in the GitHub project page.   
+<a id="reassign" />
+
+## Automate reassignment based on state change
+
+The Agile process bug work item type previously had a rule which reassigned the bug  to the person who created it. This rule has been [removed from the default system process](../../../boards/work-items/guidance/changes-to-process-templates.md). You can reinstate the rule or add a similar rule to other work item types using the following condition and action: 
+
+**When** A work item state changes to *Resolved* **Then** Copy the value from *Created By* **to** *Assigned To*.
 
 
 ## Related articles

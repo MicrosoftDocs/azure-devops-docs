@@ -6,8 +6,9 @@ ms.author: jukullam
 author: juliakm
 ms.date: 02/13/2020
 ---
+<a id="agent-variables"></a>
 
-## Agent variables
+##  Agent variables (DevOps Services)
 
 > [!NOTE]
 > You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
@@ -21,6 +22,24 @@ ms.date: 02/13/2020
 <td>
 <p>The local path on the agent where all folders for a given build pipeline are created. This variable has the same value as <code>Pipeline.Workspace</code>.</p>
 <p>For example: <code>/home/vsts/work/1</code></p>
+</td>
+</tr>
+
+<tr>
+<td>Agent.ContainerMapping</td>
+<td>
+<p>A mapping from container resource names in YAML to their Docker IDs at runtime.</p>
+<p>For example: <code><pre>
+{
+  "one_container": {
+    "id": "bdbb357d73a0bd3550a1a5b778b62a4c88ed2051c7802a0659f1ff6e76910190"
+  },
+  "another_container": {
+    "id": "82652975109ec494876a8ccbb875459c945982952e0a72ad74c91216707162bb"
+  }
+}
+</pre></code>
+</p>
 </td>
 </tr>
 
@@ -70,9 +89,9 @@ ms.date: 02/13/2020
 <td>
 The operating system of the agent host. Valid values are:
 <ul>
-<li>Windows_NT
-<li>Darwin
-<li>Linux
+<li><code>Windows_NT</code>
+<li><code>Darwin</code>
+<li><code>Linux</code>
 </ul>
 If you&#39;re running in a container, the agent host and container may be running different operating systems.
 </td>
@@ -83,9 +102,9 @@ If you&#39;re running in a container, the agent host and container may be runnin
 <td>
 The operating system processor architecture of the agent host. Valid values are:
 <ul>
-<li>X86
-<li>X64
-<li>ARM
+<li><code>X86</code>
+<li><code>X64</code>
+<li><code>ARM</code>
 </ul>
 </td>
 </tr>
@@ -120,7 +139,9 @@ Note: This directory is not guaranteed to be writable by pipeline tasks (eg. whe
 
 </table>
 
-## Build variables
+## Build variables (DevOps Services)
+
+<a id="build-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th><th>Available in templates?</th></tr>
@@ -136,7 +157,7 @@ A typical way to use this folder is to publish your build artifacts with the <a 
 <br><br>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br><br> 
-See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../artifacts.md)">Artifacts in Azure Pipelines</a>.
+See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md)">Artifacts in Azure Pipelines</a>.
 <br><br>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -190,11 +211,11 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>Build.ContainerId</td>
 <td>The ID of the container for your artifact. When you upload an artifact in your pipeline, it is added to a container that is specific for that particular artifact.</td>
 <td>No</td>
-<br><br>
+</tr>
 
 <tr>
 <td>Build.DefinitionName</td>
-<td>The name of the build pipeline.</td>
+<td>The name of the build pipeline.
 <br><br>
 
 
@@ -290,7 +311,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>The type of the triggering <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository](../repos/index.md)">repository</a>.
 <ul>
 <li><code>TfsGit</code>: <a href="/azure/devops/repos/git/overview" data-raw-source="[TFS Git repository](../../../repos/git/index.yml)">TFS Git repository</a>
-<li><code>TfsVersionControl</code>: <a href="/azure/devops/repos/tfvc/overview" data-raw-source="[Team Foundation Version Control](/azure/devops/repos/tfvc/overview)">Team Foundation Version Control</a>
+<li><code>TfsVersionControl</code>: <a href="/azure/devops/repos/tfvc/overview" data-raw-source="[Team Foundation Version Control](../../../repos/tfvc/what-is-tfvc.md)">Team Foundation Version Control</a>
 <li><code>Git</code>: Git repository hosted on an external server
 <li><code>GitHub</code>
 <li><code>Svn</code>: Subversion
@@ -407,7 +428,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>Build.SourceVersionMessage</td>
-<td>The comment of the commit or changeset for the triggering repo.
+<td>The comment of the commit or changeset for the triggering repo. We truncate the message to the first line or 200 characters, whichever is shorter.
 
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 Also, this variable is only available on the step level and is neither available in the job nor stage levels (i.e. the message is not extracted until the job had started and checked out the code).
@@ -428,7 +449,7 @@ A typical way to use this folder is to publish your build artifacts with the <a 
 <br><br>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br><br> 
-See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../artifacts.md)">Artifacts in Azure Pipelines</a>.
+See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md)">Artifacts in Azure Pipelines</a>.
 <br><br>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -504,7 +525,9 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 </table>
 
-## Pipeline variables
+## Pipeline variables (DevOps Services)
+
+<a id="pipeline-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
@@ -517,7 +540,9 @@ For example, <code>/home/vsts/work/1</code>.</td>
 
 </table>
 
-## Deployment job variables
+##  Deployment job variables (DevOps Services)
+
+<a id="deployment-job-variables"></a>
 
 These variables are scoped to a specific [Deployment job](../../process/deployment-jobs.md) and will be resolved only at job execution time. 
 
@@ -547,7 +572,9 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 </table>
 
 
-## System variables
+## System variables (DevOps Services)
+
+<a id="system-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th><th>Available in templates?</th></tr>
@@ -564,13 +591,13 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>System.CollectionId</td>
-<td>The GUID of the TFS collection or Azure DevOps organization</td>
+<td>The GUID of the TFS collection or Azure DevOps organization.</td>
 <td>Yes</td>
 </tr>
 
 <tr>
 <td>System.CollectionUri</td>
-<td>A string Team Foundation Server collection URI.</td>
+<td>The URI of the TFS collection or Azure DevOps organization. For example: <code>https://dev.azure.com/fabrikamfiber/</code>.</td>
 <td>Yes</td>
 </tr>
 
@@ -698,7 +725,7 @@ Otherwise, it is set to <code>False</code>.</td>
 
 <tr>
 <td>System.TeamFoundationCollectionUri</td>
-<td>The URI of the team foundation collection. For example: <code>https://dev.azure.com/fabrikamfiber/</code>
+<td>The URI of the TFS collection or Azure DevOps organization. For example: <code>https://dev.azure.com/fabrikamfiber/</code>.
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 <td>Yes</td>

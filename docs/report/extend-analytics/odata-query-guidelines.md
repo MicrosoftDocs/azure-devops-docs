@@ -474,7 +474,7 @@ An alternative approach is to use date surrogate key properties as they do not k
 
 As with any performance recommendations, you shouldn't blindly implement them. Instead, always capture the baseline and **measure** the impact of changes you make. All of the guidelines were created based on the interactions with clients of Analytics who had very specific requirements and challenges. These recommendations were consider general and potentially useful for anyone who designs similar queries. However, in rare cases, following the guidelines could have no effect or even a negative effect on the performance. You do need to measure the difference to notice it. Should this happen,  please provide a feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) portal.
 
-There are many options to measure performance. The simplest one is running two versions of the same query directly in the browser and observing time taken in the developer tools. For example, you can use [Network panel](https://docs.microsoft.com/microsoft-edge/devtools-guide/network#network-request-list) in [Microsoft Edge F12 Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide)). Another option is to capture this information using [Fiddler Web Debugger Tool](https://msdn.microsoft.com/library/windows/desktop/ff966510(v=vs.85).aspx). 
+There are many options to measure performance. The simplest one is running two versions of the same query directly in the browser and observing time taken in the developer tools. For example, you can use [Network panel](/microsoft-edge/devtools-guide/network#network-request-list) in [Microsoft Edge F12 Developer Tools](/microsoft-edge/devtools-guide)). Another option is to capture this information using [Fiddler Web Debugger Tool](/windows/win32/win7appqual/fiddler-web-debugger-tool). 
 
 Regardless of your approach, you should run both queries multiple times (e.g. 30 runs each) to have a sufficiently large sample to reason about performance characteristics. Note that Analytics follows multi-tenant architecture, thus, duration of your queries might be impacted by other operations that occur at the same time. 
 
@@ -919,4 +919,4 @@ Another useful annotation is `Org.OData.Capabilities.V1.ExpandRestrictions`, whi
 - [Query trend data](querying-for-trend-data.md)
 - [Query work item links](work-item-links.md)
 - [Explore the Analytics OData metadata](analytics-metadata.md)
-- [Supported functions & clauses](odata-supported-features.md) 
+- [Supported functions & clauses](odata-supported-features.md)

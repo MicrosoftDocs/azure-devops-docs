@@ -6,6 +6,16 @@
     - name: 2020
       expanded: true
       items:
+        - name: December 03
+          href: 2020/sprint-179-update.md
+        - name: November 12
+          href: 2020/sprint-178-update.md
+        - name: October 21
+          href: 2020/sprint-177-update.md
+        - name: October 01
+          href: 2020/sprint-176-update.md
+        - name: September 10
+          href: 2020/sprint-175-update.md
         - name: August 24
           href: 2020/sprint-174-update.md
         - name: August 03
@@ -77,7 +87,7 @@
               href: 2018/sprint-144-update.md
             - name: November 12
               href: 2018/sprint-143-update.md
-            - name: October 22
+            - name: October 21
               href: 2018/sprint-142-update.md
             - name: October 1
               href: 2018/sprint-141-update.md
@@ -340,6 +350,14 @@
     - name: 2020
       expanded: true
       items:
+      - name: November
+        href: docswhatsnew/azure-devops-docs-whats-new.md
+      - name: October
+        href: docswhatsnew/azure-devops-docs-2020-10.md
+      - name: September
+        href: docswhatsnew/azure-devops-docs-2020-09.md
+      - name: August
+        href: docswhatsnew/azure-devops-docs-2020-08.md
       - name: July
         href: docswhatsnew/azure-devops-docs-2020-07.md
       - name: June
@@ -360,6 +378,14 @@
     - name: 2020
       expanded: true
       items:
+        - name: November 12
+          href: 2020/boards/sprint-178-update.md
+        - name: October 21
+          href: 2020/boards/sprint-177-update.md
+        - name: October 01
+          href: 2020/boards/sprint-176-update.md
+        - name: September 10
+          href: 2020/boards/sprint-175-update.md
         - name: August 24
           href: 2020/boards/sprint-174-update.md
         - name: August 03
@@ -407,8 +433,12 @@
     - name: 2020
       expanded: true
       items:
+        - name: December 03
+          href: 2020/repos/sprint-179-update.md
+        - name: October 21
+          href: 2020/repos/sprint-177-update.md      
         - name: August 03
-          href: 2020/Repos/sprint-173-update.md
+          href: 2020/repos/sprint-173-update.md
         - name: May 4
           href: 2020/repos/sprint-168-update.md
         - name: April 13
@@ -442,7 +472,7 @@
           href: 2019/repos/sprint-152-update.md
         - name: April 30
           href: 2019/repos/sprint-151-update.md
-        - name: April 8
+        - name: April 8 
           href: 2019/repos/sprint-150-update.md
         - name: February 4
           href: 2019/repos/sprint-147-update.md
@@ -452,6 +482,16 @@
     - name: 2020
       expanded: true
       items:
+        - name: December 03
+          href: 2020/pipelines/sprint-179-update.md
+        - name: November 12
+          href: 2020/pipelines/sprint-178-update.md
+        - name: October 21
+          href: 2020/pipelines/sprint-177-update.md
+        - name: October 01
+          href: 2020/pipelines/sprint-176-update.md
+        - name: September 10
+          href: 2020/pipelines/sprint-175-update.md
         - name: August 24
           href: 2020/pipelines/sprint-174-update.md
         - name: August 03
@@ -518,6 +558,13 @@
 - name: Azure Test Plans
   expanded: true
   items:
+    - name: 2020
+      expanded: true
+      items:
+        - name: November 12
+          href: 2020/testplans/sprint-178-update.md
+        - name: September 10
+          href: 2020/testplans/sprint-175-update.md
     - name: 2019
       expanded: true
       items:

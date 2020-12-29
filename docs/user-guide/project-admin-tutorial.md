@@ -1,15 +1,15 @@
 ---
-title: Get started as a project admin or organization Owner
+title: Get started as a project administrator or organization Owner
 titleSuffix:  Azure DevOps
 ms.custom: seodec18
-description: Learn how to structure a project, manage users, and more to support your software development teams in Azure DevOps
+description: Learn how to structure a project, manage users, and more to support your software development teams in Azure DevOps.
 ms.technology: devops-new-user 
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 06/14/2019
+monikerRange: '<= azure-devops'
+ms.date: 11/16/2020
 ---
 
 # Manage your project
@@ -18,8 +18,7 @@ ms.date: 06/14/2019
 
 With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults.  
 
-As an organization Owner or a Project Administrator, there are a few tasks you might want to do to ensure a smooth operational experience. If you need to manage an organization with a large user base, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.  
-
+As an organization Owner or a Project Administrator, there are a few tasks you might want to do to ensure a smooth operational experience. If you need to manage an organization with a large user base, consider additional tasks to structure your projects to support multiple teams or software development applications.  
 
 ## Add users to your project
 
@@ -35,7 +34,7 @@ Larger enterprises may want to consider using Azure Active Directory to manage p
 Ensure that all members of your organization or group are added to your organization and project. Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory before installing TFS. To learn more, see the following articles.
 
 - [Install Azure Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
-- [Step-By-Step: Setting up Azure Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
+- [Step-By-Step: Setting up Azure Active Directory in Windows Server 2016](/archive/blogs/canitpro/step-by-step-setting-up-active-directory-in-windows-server-2016)
 
 ::: moniker-end
 
@@ -44,6 +43,13 @@ To delegate the task of managing user access, add a user with Stakeholder or hig
 ## Grant or restrict permissions
 
 Access to features and functions is controlled by access-level assignments, permissions, and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md). 
+
+::: moniker range="azure-devops"  
+
+> [!NOTE]  
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../organizations/projects/about-projects.md#project-scoped-user-group).
+
+::: moniker-end  
 
 To delegate specific tasks to others, add them to a built-in or custom security group or add them to a specific role. To learn more, see the following articles.
 
@@ -140,7 +146,7 @@ To learn more, see the following articles:
 
 ::: moniker range="<= tfs-2018"
 
-All work-tracking tools are available immediately after you create a project.  Often, one or more users may want to customize the experience to meet one or more business needs. However, you may want to establish a methodology for who manages the updates and evaluates requests.
+All work-tracking tools are available immediately after you create a project. Often, one or more users may want to customize the experience to meet one or more business needs. But, you may want to establish a methodology for who manages the updates and evaluates requests.
 
 To learn more, see [On-premises XML process model](../reference/on-premises-xml-process-model.md).
 
@@ -151,15 +157,13 @@ To learn more, see [On-premises XML process model](../reference/on-premises-xml-
 A number of notifications are predefined for each project you add. Notifications are based on subscription rules. Subscriptions arise from the following areas:
 
 - [Out-of-the-box or default subscriptions](../notifications/oob-built-in-notifications.md).
-- [Team notifications](../notifications/howto-manage-team-notifications.md), managed by a team administrator.
+- [Team, organization, and collection-level notifications](../notifications/manage-team-group-global-organization-notifications.md), managed by a team administrator or member of the Project Collection Administrators group.
 - Project notifications, managed by a member of the Project Administrators group.
-- [Organization and collection level notifications](../notifications/howto-manage-organization-notifications.md), managed by a member of the Project Collection Administrators group.
 
-If users believe they're getting too many notifications, direct them to [opt out of a subscription](../notifications/howto-manage-personal-notifications.md).
+If users believe they're getting too many notifications, direct them to [opt out of a subscription](../notifications/manage-your-personal-notifications.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Personal notifications](media/services/personal-notifications.png)   
-
 
 ::: moniker range="< azure-devops"  
 
@@ -217,14 +221,14 @@ All organizations can add up to five users with Basic access and unlimited users
 ## Next steps  
 
 > [!div class="nextstepaction"]
-> [Manage projects](../organizations/projects/index.md)
+> [Manage projects](../organizations/projects/about-projects.md)
 
 ## Related articles
 
 ::: moniker range="azure-devops"  
 
 - [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
-- [Security & identity](../organizations/security/index.md)
+- [Security & identity](../organizations/security/about-security-identity.md)
 - [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 
@@ -233,7 +237,7 @@ All organizations can add up to five users with Basic access and unlimited users
 ::: moniker range="< azure-devops"  
 
 - [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
-- [Security & identity](../organizations/security/index.md)
+- [Security & identity](../organizations/security/about-security-identity.md)
 - [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 - [TFS administration](/azure/devops/server/index)

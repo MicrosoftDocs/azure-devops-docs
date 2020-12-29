@@ -6,12 +6,12 @@ ms.assetid: 13783230-7762-4fd0-b392-5187c7f9fe1e
 ms.technology: devops-code-git 
 ms.topic: conceptual
 ms.date: 10/11/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Create a new Git branch
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 >[!TIP]
 > Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial](branches.md).

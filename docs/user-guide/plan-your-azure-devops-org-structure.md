@@ -1,5 +1,5 @@
 ---
-title: Plan your organizational structure - Azure DevOps
+title: Plan your organizational structure
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Begin planning your organizational structure, including projects, teams, repos, version control, and more.
@@ -8,9 +8,9 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 robots: NOINDEX, NOFOLLOW
-ms.topic: Conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 04/22/2019
+ms.topic: conceptual
+monikerRange: '<= azure-devops'
+ms.date: 11/16/2020
 ---
 
 # Plan your organizational structure
@@ -88,6 +88,13 @@ Within an organization, you can do either of the following approaches:
 
 Even if you have many teams working on hundreds of different applications and software projects, you can manage them within a single project in Azure DevOps. However, if you want to manage more granular security between your software projects and their teams, consider using many projects. At the highest level of isolation is an organization, where each organization is connected to a single Azure AD tenant. A single Azure AD tenant, however, can be connected to many Azure DevOps organizations.
 
+::: moniker range="azure-devops"  
+
+> [!NOTE]  
+> If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../organizations/projects/about-projects.md#project-scoped-user-group). 
+
+::: moniker-end  
+
 ### Single project
 
 A single project puts all of the work at the same "portfolio" level for the entire organization. Your work has the same set of repos and iteration paths. A single project allows teams to share source repos, build definitions, release definitions, reports, and package feeds. You might have a large product or service that's managed by many teams. Those teams have tight inter-dependencies on each other across the product life cycle. You create a project and divide the work using teams and area paths. This setup gives your teams visibility into each other's work, so the organization stays aligned. Your teams use the same taxonomy for work item tracking, making it easier to communicate and stay consistent.
@@ -138,9 +145,9 @@ Consider the specific strategic work scoped to one of the organizations you crea
 
 Configure your project by visiting its URL and select the **Project settings** button at the lower left of the page.
 
-![open-project-settings-vert-brn.png](../media/settings/open-project-settings-vert-brn.png)
+![Screenshot showing the Project settings button.](../media/settings/open-project-settings-vert-brn.png)
 
-To learn more about managing projects, see [Manage projects in Azure DevOps](../organizations/projects/index.md). You can move a project to a different organization by migrating the data. To learn more about migrating your project, see [Migration options](../migrate/migrate-from-tfs.md).
+To learn more about managing projects, see [Manage projects in Azure DevOps](../organizations/projects/about-projects.md). You can move a project to a different organization by migrating the data. To learn more about migrating your project, see [Migration options](../migrate/migrate-from-tfs.md).
 
 ## Managing version control
 
@@ -162,7 +169,7 @@ One project containing multiple repos works well if the products/services are wo
 
 If the products stored in multiple repos work on independent schedules or processes, you can split them into multiple projects. Git repo portability makes it easy to move a repo between projects and still keep full-fidelity commit history. Other history, such as pull requests or build history, aren't easily migrated.
 
-Your decision for one vs. many repos should be largely based on code dependencies and architecture. A good first rule to apply is to put each independently deploy-able product or service in its own repo. Don't separate a codebase into many repos if you expect to make coordinated code changes across those repos, as there are no tools to assist in coordinating those changes. If your codebase is already a monolith, keep it in one repo. For more information about monolithic repos, see [Git at Scale](https://docs.microsoft.com/azure/devops/learn/git/git-at-scale) articles. If you have many disconnected services, one repo per service is a good strategy.  
+Your decision for one versus many repos should be largely based on code dependencies and architecture. A good first rule to apply is to put each independently deploy-able product or service in its own repo. Don't separate a codebase into many repos if you expect to make coordinated code changes across those repos, as there are no tools to assist in coordinating those changes. If your codebase is already a monolith, keep it in one repo. For more information about monolithic repos, see [Git at Scale](/azure/devops/learn/git/git-at-scale) articles. If you have many disconnected services, one repo per service is a good strategy.  
 
 > [!Note]
 > Consider [managing your permissions](../organizations/security/permissions.md) so not everyone in your organization can [create a repo](../repos/git/create-new-repo.md). A challenge growing teams or companies face is the rapid proliferation of repos. If you have too many repos, it's hard to keep track of who owns which code or other content stored in those repos.
@@ -175,13 +182,13 @@ Forks can be useful when you're working with vendor teams that shouldn't have di
 
 The following image displays a sample of how "your company" could structure its organizations, projects, work items, teams, and repos.
 
-![azure-devops-org_project_team_visual.png](media/azure-devops-org_project_team_visual.png)
+![Diagram showing organizational structure for a company.](media/azure-devops-org_project_team_visual.png)
 
 ## More about organizational structure
 
 ### Choosing your organization administrator account type
 
-When you create an organization, the credentials that you sign in with define which identity provider your organization uses. Create your organization with a Microsoft account or Azure AD instance. Use those credentials to sign in as an administrator to your new organization at https:\//dev.azure.com/{yourorganization}.
+When you create an organization, the credentials that you sign in with define which identity provider your organization uses. Create your organization with a Microsoft account or Azure AD instance. Use those credentials to sign in as an administrator to your new organization at `https:\//dev.azure.com/{YourOrganization}`.
 
 #### Using your Microsoft account
 
@@ -195,9 +202,9 @@ If you don't have an Azure AD instance, create one for free from the [Azure port
 
 You might have an Azure AD account already if you use Azure or Microsoft 365. If you work for a company that uses Azure AD to manage user permissions, you probably have an Azure AD account.
 
-If you don't have an Azure AD account, learn how to [sign up for Azure AD](https://ms.portal.azure.com/) to automatically connect your organization to your Azure AD. All users must be members in that directory to access your organization. To add users from other organizations, use [Azure AD B2B collaboration](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+If you don't have an Azure AD account, learn how to [sign up for Azure AD](https://ms.portal.azure.com/) to automatically connect your organization to your Azure AD. All users must be members in that directory to access your organization. To add users from other organizations, use [Azure AD B2B collaboration](/azure/active-directory/b2b/add-users-administrator).
 
-Azure DevOps authenticates users through your Azure AD, so that only users who are members in that directory have access to your organization. When you remove users from that directory, they can no longer access your organization. Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) manage users in your directory, so administrators control who accesses your organization.
+Azure DevOps authenticates users through your Azure AD, so that only users who are members in that directory have access to your organization. When you remove users from that directory, they can no longer access your organization. Only specific [Azure AD administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) manage users in your directory, so administrators control who accesses your organization.
 
 For more information on managing users, see [Manage users](../organizations/accounts/add-organization-users.md).
 

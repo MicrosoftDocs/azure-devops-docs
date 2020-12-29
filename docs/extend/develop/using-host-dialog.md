@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
 title: Modal Dialog | Extensions for Azure DevOps
-description: Use the modal dialog provided by the host for Azure DevOps and Team Foundation Server (TFS)
+description: Use the modal dialog provided by the host for Azure DevOps.
 ms.assetid: 59748E0E-2D5E-FF79-ED0E-4B76037A8010
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -254,7 +254,6 @@ To not show any buttons on the dialog, you can set the `buttons` attribute to `n
 If you have a question or are looking for more information, consider going to one of the following areas:
 
 - [Azure DevOps on Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops)
-- [Azure DevOps Support Bot](https://azuredevopsvirtualagent.azurewebsites.net/)
 - [Developer Community](https://developercommunity.visualstudio.com/content/problem/post.html?space=21)
 
 

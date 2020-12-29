@@ -1,7 +1,7 @@
 ---
 title: Publish and consume artifacts in pipelines
 titleSuffix: Azure Pipelines and TFS
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-azurecli
 description: Understand pipeline artifacts in Azure Pipelines and Azure DevOps Server
 ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
@@ -53,7 +53,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/media/publish-pipeline-artifact.png) **Publish Pipeline Artifact**
+:::image type="icon" source="../tasks/utility/media/publish-pipeline-artifact.png" border="false"::: **Publish Pipeline Artifact**
 
 * Artifact name:
 
@@ -85,6 +85,9 @@ Keep in mind:
 
 > [!NOTE]
 > You will not be billed by Azure Artifacts for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching. For more information, see [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts.md#q-which-artifacts-count-toward-my-total-billed-storage).
+
+> [!CAUTION]
+> Deleting a build that published Artifacts to a file share will result in the deletion of all Artifacts in that UNC path.
 
 ### Limiting which files are included
 
@@ -139,7 +142,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
+:::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact**
 
 * Artifact name:
 
@@ -211,7 +214,7 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
+:::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact**
 
 * Artifact name:
 
@@ -270,7 +273,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
+:::image type="icon" source="../tasks/utility/media/download-pipeline-artifact.png" border="false"::: **Download Pipeline Artifact**
 
 * Matching patterns:
 

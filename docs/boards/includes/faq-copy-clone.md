@@ -14,7 +14,7 @@ ms.date: 02/17/2020
 
 ::: moniker range="azure-devops"
 
-**A:** With Azure Boards (cloud service), you can choose to copy child work items when copying a work item. For details, see [Copy or clone work items](/azure/devops/boards/backlogs/copy-clone-work-items#copy-clone).  
+**A:** With Azure Boards (cloud service), you can choose to copy child work items when copying a work item. For details, see [Copy or clone work items](../backlogs/copy-clone-work-items.md#copy-clone).  
 
 ::: moniker-end
 
@@ -22,7 +22,7 @@ ms.date: 02/17/2020
 
 **A:** This feature isn't supported at this time for on-premises deployments. Copying a work item doesn't copy any parent-child linked work items. However, is is now available on Azure Boards (cloud service).  
 
-The easiest way to accomplish the task of copying many work items with child items, is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel#add-a-hierarchy-of-linked-work-items).
+The easiest way to accomplish the task of copying many work items with child items, is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](../backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-tree-list).
 
 Other solutions include employing one of the following Marketplace extensions:  
 - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
@@ -31,4 +31,3 @@ Other solutions include employing one of the following Marketplace extensions:
 
 ::: moniker-end
 
- 

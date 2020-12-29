@@ -4,7 +4,7 @@ description:  Build and test JavaScript and Node.js apps with Azure Pipelines
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: conceptual
-ms.custom: seodec18, seo-javascript-september2019, contperfq4
+ms.custom: seodec18, seo-javascript-september2019, contperf-fy20q4, devx-track-js
 ms.date: 08/19/2020
 monikerRange: '>= tfs-2017'
 ---
@@ -20,7 +20,7 @@ Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or
 * Implement [JavaScript frameworks](#javascript-frameworks): Angular, React, or Vue. 
 * Run unit tests and publish them with the [publish test results task](../tasks/test/publish-test-results.md). 
 * Use the [publish code coverage task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results.
-* Publish [npm packages](../artifacts/npm.md) with Azure artifacts. 
+* Publish [npm packages](../artifacts/npm.md) with Azure Artifacts. 
 * Create a .zip file archive that is ready for publishing to a web app with the [Archive Files task](../tasks/utility/archive-files.md) and [deploy to Azure](../targets/webapp.md).
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -125,7 +125,7 @@ steps:
 
 1. Azure Pipelines will analyze the code in your repository and recommend `Node.js` template for your pipeline. Select that template.
 
-1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+1. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the main branch**, and then choose **Save and run** again.
 
 1. A new run is started. Wait for the run to finish.
 
@@ -147,7 +147,7 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 
 ```yaml
 trigger:
-- master
+- main
 
 pool: Default
 
@@ -490,7 +490,7 @@ To publish the results, use the [Publish Test Results](../tasks/test/publish-tes
 
 ### Publish code coverage results
 
-If your test scripts run a code coverage tool such as [Istanbul](https://istanbul.js.org/), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, you can find coverage metrics in the build summary and download HTML reports for further analysis. The task expects Cobertura or JaCoCo reporting output, so ensure that your code coverage tool runs with the necessary options to generate the right output. (For example, `--report cobertura`.)
+If your test scripts run a code coverage tool such as [Istanbul](https://github.com/istanbuljs), add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results along with your test results. When you do this, you can find coverage metrics in the build summary and download HTML reports for further analysis. The task expects Cobertura or JaCoCo reporting output, so ensure that your code coverage tool runs with the necessary options to generate the right output. (For example, `--report cobertura`.)
 
 ```yaml
 - task: PublishCodeCoverageResults@1
@@ -611,7 +611,7 @@ The build files are in a new folder, `dist` (for Vue) or `build` (for React). Th
 
 ```yaml
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -793,7 +793,7 @@ The first example assumes that you manage version information (such as through a
 - script: npm publish
 ```
 
-The next example publishes to a custom registry defined in your repo's `.npmrc` file. You'll need to set up an [npm service connection](/vsts/pipelines/library/service-endpoints?view=azure-devops#sep-npm) to inject authentication credentials into the connection as the build runs.
+The next example publishes to a custom registry defined in your repo's `.npmrc` file. You'll need to set up an [npm service connection](/azure/devops/pipelines/library/service-endpoints#sep-npm) to inject authentication credentials into the connection as the build runs.
 
 ```yaml
 - task: Npm@1
@@ -948,7 +948,7 @@ steps: # Checking out connected repo
 - task: CopyFiles@2
   inputs:
       contents: '*.tgz'
-      targetFolder: $(Build.ArtifactStagingDirectory)
+      targetFolder: $(Build.ArtifactStagingDirectory)/npm
   displayName: 'Copy archives to artifacts staging directory'
 
 - task: CopyFiles@2
@@ -979,5 +979,5 @@ steps: # Checking out connected repo
       git config --global user.name "Azure Pipeline"
       git add package.json
       git commit -a -m "Test Commit from Azure DevOps"
-      git push -u origin HEAD:master
+      git push -u origin HEAD:main
 ```

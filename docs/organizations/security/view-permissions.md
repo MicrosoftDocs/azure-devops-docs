@@ -7,7 +7,7 @@ ms.technology: devops-security
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 07/22/2019
 ---
 
@@ -16,24 +16,26 @@ ms.date: 07/22/2019
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-In this article, learn how to view your permissions or the permissions that are set for others in Azure DevOps. If you don't have a permission to access a feature or function, you can request it from the right resource.
+Learn how to view your permissions or the permissions that are set for others in Azure DevOps. If you don't have a permission to access a feature or function, you can request it from the right resource.
 
-Permissions are set at the collection, project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
+Permissions are set at the collection, project, and object level as described in [About permissions and inheritance](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
+
+
+> [!NOTE]
+> This article shows how to view permissions assigned to a user at the project-level or collection-level. However, the steps are similar when you work from the Security dialog of an object.
 
 ## Prerequisites
 
 * You must have a project to connect to. If you don't have a project yet, [create one](../projects/create-project.md).
 * You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.
 
-> [!NOTE]
-> This article shows how to view permissions assigned to a user at the project-level or collection-level. However, the steps are similar when you work from the Security dialog of an object.
 
 ## View project-level permissions
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the preview feature, for the new user interface for the **Project Permissions Settings Page**, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -44,7 +46,7 @@ Permissions are set at the collection, project, and object level as described in
 2. Choose **Users**. To filter the list, enter a name into the *Search groups or users* box.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Find a user or group name](media/view-permissions/search-user-name-s154.png) 
+	> ![Screenshot of find a user or group name, preview page.](media/view-permissions/search-user-name-s154.png) 
 
 3. Choose the name you want. The project-level permissions for that user displays. These permissions are based on the groups the user belongs to or the permissions set specifically for the user's account.    
 	> [!div class="mx-imgBorder"]  
@@ -70,7 +72,7 @@ Permissions are set at the collection, project, and object level as described in
 2. Begin entering the name into the *Filter users and groups* box. The system automatically shows the names that begin with the characters you enter.  
 
     > [!div class="mx-imgBorder"]
-    > ![Find a user or group name](media/view-permissions/search-user-name-vert-nav.png)  
+    > ![Screenshot of find a user or group name, current page.](media/view-permissions/search-user-name-vert-nav.png)  
 
 3. Choose the name you want. The project-level permissions you have set are based on the groups you belong to or the permissions set for your account.      
 

@@ -31,7 +31,7 @@ You may be able to resolve errors and warnings that the [Configure Features](/pr
   For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 > [!NOTE]  
->  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](https://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](https://go.microsoft.com/fwlink/?LinkId=248071).  
+>  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](../../index.yml) and [Process Templates](../../index.yml).  
  
   
 ##  <a name="errors"></a> Resolve errors reported by the Configure Features wizard  

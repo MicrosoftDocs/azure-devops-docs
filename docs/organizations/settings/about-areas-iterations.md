@@ -1,13 +1,13 @@
 ---
 title: How are area and iteration paths used?
 titleSuffix: Azure DevOps
-description: Understand how areas and iterations are used in Azure DevOps and TFS.
+description: Understand how areas and iterations are used in Azure DevOps.
 ms.technology: devops-agile
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 08/17/2020
 ---
 
@@ -30,16 +30,16 @@ The areas and iterations you see depend on the process you used to create your p
 
 <a id="area-path-guidance" />
 
-## Define and assign Area Paths
+## Define and assign area paths
 
 If you're new to managing projects and teams, the most straight forward sequence for configuring your project and teams is as follows.
 
-1. Determine the number and names of Area Paths that you want to support to categorize your work. At a minimum, add one Area Path for each team that you define. 
+1. Determine the number and names of area paths that you want to support to categorize your work. At a minimum, add one area path for each team that you define. 
 2. Determine the number and names of teams you want to support. For guidance, review [About teams and Agile tools](about-teams-and-settings.md).
-3. Open **Project settings > Project configuration** and define the Area Paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](set-area-paths.md#open-project-settings) and [Add area paths](set-area-paths.md#add-areas).
+3. Open **Project settings > Project configuration** and define the area paths to support steps 1 and 2 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](set-area-paths.md#open-project-settings) and [Add area paths](set-area-paths.md#add-areas).
 4. Define the teams you need to support step 2. For guidance, see [Add a team, move from one default team to several teams](add-teams.md).  
-5. Open the team configuration and assign the default and additional Area Path(s) to each team. Follow the steps provided later in this article: [Open team settings](set-area-paths.md#open-team-settings) and [Set team default area path(s)](set-area-paths.md#team-area-paths).
-6. Assign the Area Path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
+5. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](set-area-paths.md#open-team-settings) and [Set team default area path(s)](set-area-paths.md#team-area-paths).
+6. Assign the area path of work items to an area path you defined. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once.
  
 ::: moniker range=">= tfs-2017"
 
@@ -51,11 +51,11 @@ If you're new to managing projects and teams, the most straight forward sequence
 As needed, you can do the following actions at any time: 
 
 - Add additional child nodes
-- Rename an Area Path (except the root area path)
+- Rename an area path (except the root area path)
 - Move a child node under another node 
 - Delete a child node 
 - Rename a team 
-- Change the Area Path assignments made to a team
+- Change the area path assignments made to a team
 
 
 ## How many areas should a team define?
@@ -73,25 +73,25 @@ Avoid creating an area structure that is too complex. You can create areas to pa
 
 
 
-<a id="area-path-guidance" />
+<a id="iteration-path-guidance" />
 
-## Define and assign Iteration Paths
+## Define and assign iteration paths
 
-Use the following guidance to configure Iteration Paths for your project and teams:  
+Use the following guidance to configure iteration paths for your project and teams:  
 
-1. First, define the Area Paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#guidance).  
+1. First, define the area paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#guidance).  
 1. Determine the length of the iteration you want to support. Recommended practice is to have all teams use the same sprint cadence.  
 2. Determine if you want a flat structure or hierarchy of sprints and releases.
-3. Open **Project settings > Project configuration** and define the Iteration Paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](set-iteration-paths-sprints.md#open-project-settings) and [Add iterations and set iteration dates](set-iteration-paths-sprints.md#iterations). 
-4. Open the team configuration and assign the default and additional Area Path(s) to each team. Follow the steps provided later in this article: [Open team settings](set-iteration-paths-sprints.md#open-team-settings) and [Set team default iteration path(s)](set-iteration-paths-sprints.md#activate).
-5. Each team should assign the default Iteration Path they selected to their work items. Those work items show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
+3. Open **Project settings > Project configuration** and define the iteration paths to support steps 2 and 3 at the project level. Follow the steps provided later in this article: [Open Project Settings, Project configuration](set-iteration-paths-sprints.md#open-project-settings) and [Add iterations and set iteration dates](set-iteration-paths-sprints.md#iterations). 
+4. Open the team configuration and assign the default and additional area path(s) to each team. Follow the steps provided later in this article: [Open team settings](set-iteration-paths-sprints.md#open-team-settings) and [Set team default iteration path(s)](set-iteration-paths-sprints.md#activate).
+5. Each team should assign the default iteration path they selected to their work items. Those work items show up on their product backlogs and boards. Use [bulk modify](../../boards/backlogs/bulk-modify-work-items.md) to modify several work items at once. See also [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md). 
 
 As needed, you can do the following actions at any time: 
 - Add additional child iteration nodes
-- Rename an Iteration Path (except the root path)
-- Move a child Iteration Path under another node 
-- Delete a child Iteration Path 
-- Change the default and selected Iteration Paths assigned to a team
+- Rename an iteration path (except the root path)
+- Move a child iteration path under another node 
+- Delete a child iteration path 
+- Change the default and selected iteration paths assigned to a team
 
 ## How many iterations should a team define?
 
@@ -127,8 +127,8 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 > | Restriction type                 | Restriction       |  
 > | ------------------------- | ---------------------- |  
 > | Node length | Must not contain more than 255 characters | 
-> | Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? * : " & < # % + <br/>Must not contain characters that the [local file system prohibits](https://msdn.microsoft.com/library/aa365247.aspx). |
-> | Reserved names | Must contain more than a period (.) or two periods (..)<br/>Must not be a [system-reserved name](https://msdn.microsoft.com/library/aa365247.aspx) such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX<br/>| 
+> | Special characters for nodes | Must not contain Unicode control characters<br/>Must not contain any of the following characters: \ / $ ? * : " & < # % + <br/>Must not contain characters that the [local file system prohibits](/windows/win32/fileio/naming-a-file). |
+> | Reserved names | Must contain more than a period (.) or two periods (..)<br/>Must not be a [system-reserved name](/windows/win32/fileio/naming-a-file) such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX<br/>| 
 > | Path length | Must contain fewer than 4,000 Unicode characters | 
 > | Path hierarchy depth | Must be fewer than 14 levels deep | 
 
@@ -160,6 +160,6 @@ You can [specify only a small subset of rules](../../reference/xml/apply-rule-wo
 
 ### Team field versus team area path  
 
-If your organization has several teams that work from a common backlog and across many product areas, you might want to change how teams are configured. [Add a custom field to represent teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths) in your organization. You can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths. 
+If your organization has several teams that work from a common backlog and across many product areas, you might want to change how teams are configured. [Add a custom field to represent teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths) in your organization. You can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
 
 ::: moniker-end

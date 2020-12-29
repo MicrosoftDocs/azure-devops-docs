@@ -9,9 +9,9 @@ Administrators can now turn off the **Request Access** feature in Azure DevOps. 
 This new policy can be found under Organization Settings -> User policies.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/165_03.png)
+> ![Disable Request Access policy.](../../media/165_03.png)
 
 When they turn off the Request Access feature, administrators will be prompted to provide a URL to their internal documentation with details to the process required for users to gain access to the associated Organization. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/165_04.png)
+> ![Prompt to provide a URL to internal documentation.](../../media/165_04.png)

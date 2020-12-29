@@ -161,7 +161,7 @@ To deploy to Azure Function, add the following snippet at the end of your **azur
 
 ```yaml
 trigger:
-- master
+- main
 
 variables:
   # Azure service connection established during pipeline creation

@@ -1,14 +1,14 @@
 ---
-title: Use work item templates to update stories, & more
+title: Use work item templates to update stories & more
 titleSuffix: Azure Boards   
-description: Add and manage work item templates to pre-populate fields in work item forms in Azure DevOps, Team Foundation Server, and Visual Studio
+description: Add and manage work item templates to pre-populate fields in work item forms in Azure DevOps and Visual Studio
 ms.technology: devops-agile
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/30/2020
 ---
 
 # Use templates to add and update work items 
@@ -23,6 +23,8 @@ With work item templates you can quickly create work items which have pre-popula
 > Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
 For example usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md)
+
+[!INCLUDE [temp](../../repos/git/includes/note-new-git-tool.md)] 
 
 
 ## Prerequisites  
@@ -265,7 +267,7 @@ For example, the following widget contains links to three templates.
 
 ![Markdown widget with links to templates](media/wi-templates-markdown-widget-with-template-links.png) 
 
-To learn more about the markdown widget see [Add Markdown to a dashboard, Markdown widgets](../../report/add-markdown-to-dashboard.md).  
+To learn more about the markdown widget see [Add Markdown to a dashboard, Markdown widgets](../../report/dashboards/add-markdown-to-dashboard.md).  
 
 ::: moniker-end
 
@@ -417,7 +419,7 @@ You manage templates from  team settings. All templates are defined for a team. 
 
     Here we open the admin page for the Web team. 
 
-    <img src="media/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wit-templates-open-team-admin-context.png" alt="Open the admin page for the Web team." style="border: 1px solid #CCCCCC;" />  
 
 1. Choose **Work>Templates**.  
 
@@ -493,7 +495,7 @@ You can cut, copy, paste, rename, and delete templates and folders using the con
 
 2. Save the template, provide a Name in the dialog provided.  
 
-    <img src="media/wi-templates-new-template-save-as-te.png" alt="Add a new template, Visual Studio " style="border: 1px solid #CCCCCC;" />  
+    <img src="media/wi-templates-new-template-save-as-te.png" alt="Provide a Name in the dialog provided." style="border: 1px solid #CCCCCC;" />  
 
     Once you've saved the template, click Copy link to capture the URL for the template that you can use to add work items using the template.  
 
@@ -501,7 +503,7 @@ You can cut, copy, paste, rename, and delete templates and folders using the con
 
 To edit, delete, or perform another action on a template, open its context menu (right-click) and choose the option you want.  
 
-<img src="media/wi-templates-context-menu-te.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />  
+<img src="media/wi-templates-context-menu-te.png" alt="Open context menu and choose the option you want." style="border: 1px solid #CCCCCC;" />  
 
 To make frequently-used templates more accessible, you can set a default template for each work item type. To do so, right-click on a template in Team Explorer and click **Set As Default**. A checkmark will appear on the icon to indicate that it is now the default. 
 

@@ -208,7 +208,6 @@ If these steps don't resolve your authentication issue, reach out to us at [Deve
 
 ## Related articles
 
-- [Azure Boards with Slack](https://aka.ms/AzureBoardsSlackIntegration)
-- [Azure Pipelines with Slack](https://aka.ms/AzurePipelinesSlackIntegration)
+- [Azure Boards with Slack](../../boards/integrations/boards-slack.md)
+- [Azure Pipelines with Slack](../../pipelines/integrations/slack.md)
 - [Create a service hook for Azure DevOps with Slack](../../service-hooks/services/slack.md)
-

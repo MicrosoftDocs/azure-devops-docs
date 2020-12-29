@@ -4,7 +4,7 @@ description: Use .NET client libraries to create a bug in Azure DevOps Services.
 ms.assetid: ea2e5303-46b5-41d0-b6f5-b3d8ce515a64
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 06/27/2017
@@ -17,7 +17,7 @@ ms.custom: quickstart
 Creating a new bug (or any work item) is pretty straight forward. You just need to set the field values and send a JSON-Patch object to the REST endpoint.
 
 ## Prerequisites
-To work on this Quickstart, you'll need the following prerequisites:
+You must have the following before you can create a work item.
 
 * An organization in Azure DevOps Services. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
 * A Personal Access Token, [find out how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)

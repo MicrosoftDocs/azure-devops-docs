@@ -166,7 +166,7 @@ You can add a portfolio backlog and custom work item type following these steps.
 
 	::: moniker range="azure-devops"
 	> [!div class="mx-imgBorder"]  
-	![Web portal, Add a portfolio backlog dialog, Save changes](media/backlogs/add-portfolio-backlog-initiative-save.png)
+	![Web portal, Add a portfolio backlog dialog, Save changes.](media/backlogs/add-portfolio-backlog-initiative-save.png)
 	::: moniker-end 
 	::: moniker range="< azure-devops"
 	> [!div class="mx-imgBorder"]  
@@ -179,11 +179,11 @@ You can add a portfolio backlog and custom work item type following these steps.
 
 From the **Backlog levels** page, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false":::  context menu of a portfolio backlog to edit, rename, or delete it.  
 
-![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-portfolio-backlog-context-menu.png)
+![Choose the context menu of a portfolio backlog to edit, rename, or delete it.](media/process/process-portfolio-backlog-context-menu.png)
 
 Deleting a backlog level removes the backlog and board associated with the level for all teams, including customizations made to them. The work items defined with the associated work item types are not deleted or affected in any way. 
 
-![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-edit-portfolio-backlog-dialog.png)  
+![Deleting a backlog level removes the backlog and board associated with the level.](media/process/process-edit-portfolio-backlog-dialog.png)  
 
 > [!NOTE]    
 > You can't remove the default, inherited work item type from the Epics or Features portfolio backlogs.  
@@ -201,7 +201,7 @@ You can rename the backlog, change the color, add work item types, and change th
 
 Here, we've renamed the backlog, added **Customer Ticket** and **Issue**, and changed the default type to *Customer Ticket*. Simply check those boxes of the work item types to include on the backlog. 
 
-:::image type="content" source="media/backlogs/add-oob-issue-to-backlog.png" alt-text="Web portal, Add a portfolio backlog dialog, Save changes":::
+:::image type="content" source="media/backlogs/add-oob-issue-to-backlog.png" alt-text="On Edit backlog, Stories and Tickets is entered in Name, and there is a list of work item types for this backlog level.":::
  
 
 ::: moniker-end  
@@ -210,7 +210,7 @@ Here, we've renamed the backlog, added **Customer Ticket** and **Issue**, and ch
 
 Here, we've renamed the backlog, added *Customer Ticket*, and changed the default type to *Customer Ticket*. 
 
-![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-edit-backlog-dialog-modified.png)  
+![Example of renaming the backlog, adding Customer Ticket, and changing the default type to Customer Ticket.](media/process/process-edit-backlog-dialog-modified.png)  
 ::: moniker-end  
  
 
@@ -227,7 +227,7 @@ For the iteration backlog, you can add work item types and change the default wo
 
 Here, we've added the *Ticket* work item type which is tracked along with tasks. 
 
-![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-edit-iteration-backlog-dialog-modified.png)  
+![Example of adding the Ticket work item.](media/process/process-edit-iteration-backlog-dialog-modified.png)  
 
 > [!NOTE]    
 > You can't remove the default, inherited work item type from the Iteration backlog. 

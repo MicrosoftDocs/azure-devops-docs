@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 10/16/2019
+ms.date: 08/27/2020
 ---
 
 # Query by titles, IDs, and rich-text fields
@@ -79,6 +79,18 @@ For example, specify **Contains Words** and <strong>inform&#42;</strong> to filt
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
 <a id="undefined-value"/>
+
+
+
+## Query for specific words and not others
+
+Use **Contains Words** and **Does Not Contain Words** operators to list items that exactly match the words or phrase that you enter, and exclude other words or phrases. You can use these operators in combination and with the wildcard character (*).
+
+In the following example, these operators filter work items for those that contain the work *Phase* but not the word *Phasor*. 
+
+> [!div class="mx-imgBorder"] 
+> ![Screenshot of Query Editor to include and exclude exact words.](media/text-queries/contains-words-exact-query.png)
+
 
 ## Undefined field value queries
 

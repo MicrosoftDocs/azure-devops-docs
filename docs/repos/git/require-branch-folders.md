@@ -5,14 +5,14 @@ description: Keep your repository's branch layout clean and understandable by re
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
 ms.technology: devops-code-git
 ms.topic: conceptual
-ms.date: 10/11/2018
+ms.date: 10/02/2020
 monikerRange: '>= tfs-2018'
 ---
 
 
 # Require branches to be created in folders
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
 When you have many people collaborating in a repository, the number and names of branches can quickly get out of control.
 Hierarchical branch folders is an effective way to tame the chaos.
@@ -39,7 +39,9 @@ As an example, we'll set our repository to enforce the following rules:
 * You will need the URL of your account or collection, the name of the project, and the name of the repository. For this example, we'll use `https://fabrikam-fiber.visualstudio.com`, `FabrikamProject`, and `FabrikamRepo`.
 
 > [!NOTE]
-> The command `tf.exe` is installed by default with Visual Studio. For additional options, download [Team Explorer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TeamExplorer).
+> The command `tf.exe` is installed by default with Visual Studio.
+> You can access it via the [Developer Command Prompt](/dotnet/framework/tools/developer-command-prompt-for-vs).
+> For additional options, download [Team Explorer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TeamExplorer).
 
 ## Enforce permissions
 
