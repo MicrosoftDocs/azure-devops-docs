@@ -1,4 +1,5 @@
 # Manage Personal Access Tokens with REST API
+![INCLUDE version-vsts-only]
 
 ## Introduction: PAT Lifecycle Management API
 TODO: Angel to write intro to API
