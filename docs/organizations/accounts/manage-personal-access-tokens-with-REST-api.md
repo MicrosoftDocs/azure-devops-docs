@@ -25,37 +25,37 @@ To use application Quickstart, follow the documentation under "Quickstarts" for 
 #### Example: Getting Started with a Python Flask Quickstart Application
 1. Once you've registered your application in an AAD tenant with an active Azure subscription, in the Azure Portal, navigate to your registered application under “Azure Active Directory” -> “App Registrations”
    
-   ![Open "Azure Active Directory" -> "App Registrations"](/personal-access-token-rest-api/step1-aad-app-registrations.png)
+   ![Open "Azure Active Directory" -> "App Registrations"](./media/personal-access-token-rest-api/step1-aad-app-registrations.png)
 
 2. Select your application and navigate to “API Permissions” 
    
-   ![Select your application and navigate to "API Permissions"](/personal-access-token-rest-api/step2-api-permissions.png)
+   ![Select your application and navigate to "API Permissions"](./media/personal-access-token-rest-api/step2-api-permissions.png)
 
 3. Select “Add a permission” and select “Azure DevOps” -> check “user_impersonation” -> select “Add permissions” 
    
-   ![Add the "Azure DevOps" -> "user_impersonation" permission](/personal-access-token-rest-api/step3-add-ado-permissions.png)
+   ![Add the "Azure DevOps" -> "user_impersonation" permission](./media/personal-access-token-rest-api/step3-add-ado-permissions.png)
 
 4. Select “Quickstart” from the left navigation panel
    
 5. Select your application type: for Python Flask, select “Web application” 
 
-    ![Select the "Web application" type](/personal-access-token-rest-api/step5-select-app-type.png)
+    ![Select the "Web application" type](./media/personal-access-token-rest-api/step5-select-app-type.png)
 
 6. Select your application platform 
    
-    ![Select the "Python" application platform](/personal-access-token-rest-api/step6-select-app-platform.png)
+    ![Select the "Python" application platform](./media/personal-access-token-rest-api/step6-select-app-platform.png)
 
 7. Make sure you've met the necessary prerequisites, then allow Azure Portal to make the necessary changes to configure your application.  The “reply URL” will be the redirect URL that was set at application creation + “/getAToken” 
    
-    ![Allow the Azure Portal to make the necessary changes to configure your application](/personal-access-token-rest-api/step7-allow-portal-configuration.png)
+    ![Allow the Azure Portal to make the necessary changes to configure your application](./media/personal-access-token-rest-api/step7-allow-portal-configuration.png)
 
 8. Download the Quickstart application and extract the files
 
-    ![Download the Quickstart application and extract the files](/personal-access-token-rest-api/step8-download-and-extract.png)
+    ![Download the Quickstart application and extract the files](./media/personal-access-token-rest-api/step8-download-and-extract.png)
 
 9.  Install the application requirements and run the application to ensure you have all necessary dependencies.  Note that the application is initially configured to hit an endpoint in the Microsoft Graph API; users can change this to the PAT Lifecycle API by following the additional configuration instructions below. 
     
-    ![Install the application requriements and run the application to ensure you have all necessary dependencies](/personal-access-token-rest-api/step9-install-and-run.png)
+    ![Install the application requriements and run the application to ensure you have all necessary dependencies](./media/personal-access-token-rest-api/step9-install-and-run.png)
 
 
 ### Configuring a Quickstart Application
