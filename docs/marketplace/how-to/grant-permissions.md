@@ -40,7 +40,7 @@ Learn how to grant permissions for publishing or updating extensions for users o
 
 4. Select **Security** in the upper right of the Extension Security page:
 
-    ![Extension security button](../media/manage-permissions/extensions-security-button.png)
+    ![Extension security](../media/manage-permissions/extensions-security-button.png)
 
 5. Add users or update permission settings:
 

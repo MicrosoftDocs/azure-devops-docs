@@ -36,7 +36,7 @@ Before you switch your organization directory, make sure the following statement
 
 3. Select **Azure Active Directory**, and then **Switch directory**.
 
-   ![Select Switch directory button](media/change-azure-ad-connection.md/select-switch-directory.png)
+   ![Select Switch directory](media/change-azure-ad-connection.md/select-switch-directory.png)
 
 4. Select a directory from the dropdown menu, and then select **Connect**.
 
@@ -70,7 +70,7 @@ When you inform your users of the completed change, include the following tasks 
 
     b. Select **Personal access tokens**, and then select **New Token**.
     
-     ![Select New Token button to create](media/shared/select-personal-access-tokens-new-token.png)
+     ![Select New Token to create](media/shared/select-personal-access-tokens-new-token.png)
 
     c. Complete the form, and then select **Create**.
 

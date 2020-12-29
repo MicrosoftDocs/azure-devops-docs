@@ -5,7 +5,7 @@ description: Add IP addresses and URLs to the Allow list for Azure DevOps and tr
 ms.topic: reference
 ms.technology: devops-security
 ms.reviewer: jominana
-ms.author: ChComley
+ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
 ms.date: 11/19/2020
@@ -90,7 +90,7 @@ We recommend you open port 443 to all traffic on these IP addresses and domains.
 * `nuget.org`
 
 > [!NOTE]
-> Privately owned NuGet server URLs may not be included in the list above. You can check the NuGet servers you're using by opening up `%APPData%\Nuget\NuGet.Config`.
+> Privately owned NuGet server URLs may not be included in the previous list. You can check the NuGet servers you're using by opening up `%APPData%\Nuget\NuGet.Config`.
 
 <a id="range-restrictions" />
 
@@ -100,7 +100,7 @@ We recommend you open port 443 to all traffic on these IP addresses and domains.
 
 _Outbound connections_ are those that originate from inside your organization and that target Azure DevOps or other dependent sites. Examples of such connections include:
 
-- Browsers connecting to Azure DevOps website as users navigate to and use features of Azure DevOps
+- Browsers connecting to Azure DevOps website as users go to and use features of Azure DevOps
 - Azure Pipelines agents installed on your organization's network connecting to Azure DevOps to poll for pending jobs
 - CI events being sent from a source code repository hosted within your organization's network to Azure DevOps
 
@@ -125,8 +125,8 @@ _Inbound connections_ are those that orginate from Azure DevOps and that target 
 
 - Azure DevOps Services connecting to endpoints for [Service Hooks](../../service-hooks/overview.md)  
 - Azure DevOps Services connecting to customer-controlled SQL Azure VMs for [Data Import](../../migrate/migration-overview.md)  
-- Azure Pipelines connecting to on-prem source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [BitBucket Server](../../pipelines/repos/on-premises-bitbucket.md)  
-- Azure DevOps Services [Audit Streaming](../audit/auditing-streaming.md) connecting to on-prem or cloud-based Splunk
+- Azure Pipelines connecting to on-premises source code repositories such as [GitHub Enterprise](../../pipelines/repos/github-enterprise.md) or [BitBucket Server](../../pipelines/repos/on-premises-bitbucket.md)  
+- Azure DevOps Services [Audit Streaming](../audit/auditing-streaming.md) connecting to on-premises or cloud-based Splunk
 
 Ensure the following IP addresses are allowed for inbound connection, so your organization works with any existing firewall or IP restrictions. The endpoint data in the following chart lists requirements for connectivity from Azure DevOps Services to your on-premises or other cloud services.
 
@@ -150,10 +150,10 @@ Ensure the following IP addresses are allowed for inbound connection, so your or
 > | Western Europe | 40.74.28.0/23 |  
 > | United Kingdom South | 51.104.26.0/24 |  
 
-Azure Service Tags are supported for *inbound* connection. Instead of allowing the IP ranges listed above, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-prem firewall via a JSON file download.  
+Azure Service Tags are supported for *inbound* connection. Instead of allowing the previously listed IP ranges, you may use the **AzureDevOps** service tag for Azure Firewall and Network Security Group (NSG) or on-premises firewall via a JSON file download.  
 
 > [!NOTE]
-> The Service Tag or the above inbound IP addresses do not apply to Microsoft Hosted Agents. Customers are still required to allow the [entire geography for the Microsoft Hosted Agents](../../pipelines/agents/hosted.md#agent-ip-ranges).  If allowing the entire geography is a concern, we recommend using the [Azure Virtual Machine Scale Set Agents](../../pipelines/agents/scale-set-agents.md). The Scale Set Agents are a form of self-hosted agents that can be auto-scaled to meet your demands. 
+> The Service Tag or previously mentioned inbound IP addresses do not apply to Microsoft Hosted Agents. Customers are still required to allow the [entire geography for the Microsoft Hosted Agents](../../pipelines/agents/hosted.md#agent-ip-ranges).  If allowing the entire geography is a concern, we recommend using the [Azure Virtual Machine Scale Set Agents](../../pipelines/agents/scale-set-agents.md). The Scale Set Agents are a form of self-hosted agents that can be auto-scaled to meet your demands. 
 
 ### Azure DevOps ExpressRoute connections
 

@@ -1,6 +1,6 @@
 - name: "About Wikis, READMes, & Markdown"
   href: about-readme-wiki.md  
-- name: Provisioned vs published wikis 
+- name: Provisioned versus published wikis 
   href: provisioned-vs-published-wiki.md
 - name: Get started
   items:

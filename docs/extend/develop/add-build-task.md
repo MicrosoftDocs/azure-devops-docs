@@ -110,7 +110,7 @@ Tasks can use typescript versions 2.3.4 or 4.0.2. You can install the chosen typ
 npm install typescript@4.0.2 --save-dev
 ```
 
-If you skip this step, typescript version 2.3.4 will be used by default.
+If you skip this step, typescript version 2.3.4 gets used by default.
 
 #### Create tsconfig.json compiler options
 
@@ -647,7 +647,7 @@ For more help with triggers, such as CI and PR triggers, see [Specify events tha
 
 ### Pipeline stages
 
-This section will help you understand how the pipeline stages work.
+This section helps you understand how the pipeline stages work.
 
 #### Stage: Run and publish unit tests
 
@@ -703,7 +703,7 @@ After the test results have been published, the output under the tests tab shoul
     - Extension Visibility: If the extension is still in development, set the value to private. To release the extension to the public, set the value to public.
 1. Add the "Copy files" task to copy published files. Use the following inputs:
     - Contents: All of the files that need to be copied for publishing them as an artifact
-    - Target folder: The folder that the files will all be copied to
+    - Target folder: The folder that the files get copied to
        - For example: $(Build.ArtifactStagingDirectory)
 1. Add "Publish build artifacts" to publish the artifacts for use in other jobs or pipelines. Use the following inputs:
     - Path to publish: The path to the folder that contains the files that are being published.

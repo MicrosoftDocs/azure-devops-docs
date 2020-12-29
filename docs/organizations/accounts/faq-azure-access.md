@@ -305,7 +305,7 @@ A: Users can belong to your organization, both as individuals and as members of 
 
 To block all access for users, remove them from Azure AD groups in your organization, or remove these groups from your organization. We currently can't block access completely or make exceptions for such users.
 
-### Q: If an Azure AD user is removed, will all their related PATs be revoked as well?
+### Q: If an Azure AD user is removed, are all their related PATs revoked as well?
 
 A: Users who are disabled or removed from your directory, can no longer access your organization by any mechanism, including via PATs or SSH.
 

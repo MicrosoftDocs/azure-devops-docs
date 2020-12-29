@@ -153,7 +153,7 @@ az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.t
 
 #### [Browser](#tab/browser) 
 
-To edit an existing Wiki page, open the page and select **Edit**, or open the context menu and select **Edit**. You can also use keyboard shortcut **e** to quickly navigate to the edit of the current page. 
+To edit an existing Wiki page, open the page and select **Edit**, or open the context menu and select **Edit**. You can also use keyboard shortcut **e** to quickly go to the edit of the current page. 
 
 ::: moniker range=">= azure-devops-2020"
 

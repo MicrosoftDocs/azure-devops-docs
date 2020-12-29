@@ -1976,14 +1976,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <img src="media/features/alm-feature-op-hubs-2.png" alt="Operational hubs"/><br/><br/>
 
 <p><b>Project page </b></p>
-<p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your <a href="../project/navigation/work-across-projects.md" data-raw-source="[Project page](../project/navigation/work-across-projects.md)">Project page</a>. </p>
+<p>To view and quickly go to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your <a href="../project/navigation/work-across-projects.md" data-raw-source="[Project page](../project/navigation/work-across-projects.md)">Project page</a>. </p>
 
 <p><b>Your profile and preferences</b></p>
 <p>Choose your name to access <a href="../organizations/settings/set-your-preferences.md" data-raw-source="[your profile settings](../organizations/settings/set-your-preferences.md)">your profile settings</a>, set preferences, <a href="../repos/git/command-prompt.md#pat" data-raw-source="[create personal access tokens (Azure DevOps Services)](../repos/git/command-prompt.md#pat)">create personal access tokens (Azure DevOps Services)</a>, <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[set alerts](../notifications/manage-your-personal-notifications.md)">set alerts</a>, and log-in or out.</p>
 <img src="media/features/alm-index-my-profile-menu.png" alt="My Profile menu."/><br/><br/>
 
 <p><b>Switch team context</b></p>
-<p>Navigate to a different team or project from the top row.</p>
+<p>Go to a different team or project from the top row.</p>
 <img src="media/features/alm-feature-switch-team-context.png" alt="Switch team context"/><br/><br/>
 
 
@@ -2492,7 +2492,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>View your work across teams and team projects</b></p>
-<p>From your <a href="../project/navigation/work-across-projects.md" data-raw-source="[Project page](../project/navigation/work-across-projects.md)">Project page</a>, you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the organization or collection. </p>
+<p>From your <a href="../project/navigation/work-across-projects.md" data-raw-source="[Project page](../project/navigation/work-across-projects.md)">Project page</a>, you can view and quickly go to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the organization or collection. </p>
 
 <p><b>Customize a project (Azure DevOps Server) </b></p>
 <p>You customize a project defined on an on-premises Azure DevOps Server by <a href="../reference/customize-work.md" data-raw-source="[modifying definition files for work item types or process configuration, or changing field attributes](../reference/customize-work.md)">modifying definition files for work item types or process configuration, or changing field attributes</a>.  </p>

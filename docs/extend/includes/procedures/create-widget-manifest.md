@@ -31,7 +31,7 @@ Open the `vss-extension.json` file that you created in Step 1 and add the [requi
 ```
 
 If you haven't created a publisher yet, follow the steps [here](../../publish/overview.md#create-a-publisher) to create one.
-Update the `publisher` property above to include your publisher ID instead of `fabrikam`.
+Update the `publisher` property to include your publisher ID instead of `fabrikam`.
 Update the ID, name, and description for the extension as you see fit. 
 If you have an icon for the extension from the previous step, then specify the relative path to the icon in the manifest as below.
 The name, description, and icon you provide show up in the Marketplace for users with whom you share the extension.
