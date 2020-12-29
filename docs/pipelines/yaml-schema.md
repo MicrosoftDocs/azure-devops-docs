@@ -1,12 +1,12 @@
 ---
 title: YAML schema
-ms.custom: seodec18, devx-track-python
+ms.custom: seodec18
 description: An overview of all YAML syntax.
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 08/04/2020
+ms.date: 12/15/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -199,9 +199,9 @@ Learn more about:
 
 A stage is a collection of related jobs.
 By default, stages run sequentially.
-Each stage starts only after the preceding stage is complete.
+Each stage starts only after the preceding stage is complete unless otherwise specified via the `dependsOn ` property.
 
-Use approval checks to manually control when a stage should run.
+Use [approval checks](process/approvals.md) to manually control when a stage should run.
 These checks are commonly used to control deployments to production environments.
 
 Checks are a mechanism available to the *resource owner*.
@@ -336,6 +336,7 @@ container:
   options: string  # arguments to pass to container at startup
   endpoint: string  # endpoint for a private container registry
   env: { string: string }  # list of environment variables to add
+  # you can also use any of the other supported container attributes
 ```
 
 # [Example](#tab/example)
@@ -437,7 +438,7 @@ Only two jobs run simultaneously.
 
 > [!NOTE]
 > The `matrix` syntax doesn't support automatic job scaling but you can implement similar
-> functionality using the `each` keyword. For an example, see [nedrebo/parameterized-azure-jobs](https://github.com/nedrebo/parameterized-azure-jobs).
+> functionality using the `each` keyword. For an example, see [expressions](process/expressions.md).
 
 #### Parallel
 
@@ -463,7 +464,7 @@ jobs:
 
 ---
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Deployment job
 
@@ -475,10 +476,10 @@ In YAML pipelines, we recommend that you put your deployment steps in a deployme
 
 ```YAML
 jobs:
-- deployment: string   # name of the deployment job (A-Z, a-z, 0-9, and underscore)
+- deployment: string   # name of the deployment job, A-Z, a-z, 0-9, and underscore. The word "deploy" is a keyword and is unsupported as the deployment name.
   displayName: string  # friendly name to display in the UI
-  pool:                # see the following "Pool" schema
-    name: string
+  pool:                # see pool schema
+    name: string       # Use only global level variables for defining a pool name. Stage/job level variables are not supported to define pool name.
     demands: string | [ string ]
   workspace:
     clean: outputs | resources | all # what to clean up before the job runs
@@ -494,8 +495,7 @@ jobs:
   strategy:
     runOnce:    #rolling, canary are the other strategies that are supported
       deploy:
-        steps:
-        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+        steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
 
 # [Example](#tab/example)
@@ -569,7 +569,8 @@ All steps, regardless of whether they're documented in this article, support the
 
 ## Variables
 
-You can add hard-coded values directly or reference [variable groups](library/variable-groups.md).
+You can add hard-coded values directly, reference [variable groups](library/variable-groups.md), or insert via variable templates.
+
 Specify variables at the pipeline, stage, or job level.
 
 #### [Schema](#tab/schema/)
@@ -600,7 +601,7 @@ variables:
   readonly: true
 ```
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 You can also include [variables from templates](process/templates.md#variable-reuse).
 
@@ -670,7 +671,6 @@ variables:
 
 You can export reusable sections of your pipeline to a separate file. 
 These separate files are known as templates. 
-Azure Pipelines supports four kinds of templates:
 
 Azure Pipelines supports four kinds of templates:
 - [Stage](#stage-templates)
@@ -1030,7 +1030,7 @@ steps:
 ```yaml
 # File: azure-pipelines.yml
 trigger:
-- master
+- main
 
 extends:
     template: simple-param.yml
@@ -1059,9 +1059,11 @@ Resources in YAML represent sources of pipelines, containers, repositories, and 
 
 ```yaml
 resources:
-  pipelines: [ pipeline ]
+  pipelines: [ pipeline ]  
+  builds: [ build ]
   repositories: [ repository ]
   containers: [ container ]
+  packages: [ package ]
 ```
 
 ### Pipeline resource
@@ -1074,15 +1076,18 @@ You can also enable [pipeline-completion triggers](process/pipeline-triggers.md)
 ```yaml
 resources:
   pipelines:
-  - pipeline: string  # identifier for the pipeline resource
-    project:  string # project for the build pipeline; optional input for current project
-    source: string  # source pipeline definition name
-    branch: string  # branch to pick the artifact, optional; defaults to all branches
-    version: string # pipeline run number to pick artifact, optional; defaults to last successfully completed run
-    trigger:     # optional; triggers are not enabled by default.
-      branches:
-        include: [string] # branches to consider the trigger events, optional; defaults to all branches.
-        exclude: [string] # branches to discard the trigger events, optional; defaults to none.
+  - pipeline: string  # identifier for the resource used in pipeline resource variables
+    project: string # project for the source; optional for current project
+    source: string  # name of the pipeline that produces an artifact
+    version: string  # the pipeline run number to pick the artifact, defaults to latest pipeline successful across all stages; Used only for manual or scheduled triggers
+    branch: string  # branch to pick the artifact, optional; defaults to all branches; Used only for manual or scheduled triggers
+    tags: [ string ] # list of tags required on the pipeline to pickup default artifacts, optional; Used only for manual or scheduled triggers
+    trigger:     # triggers are not enabled by default unless you add trigger section to the resource
+      branches:  # branch conditions to filter the events, optional; Defaults to all branches.
+        include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
+        exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
+      tags: [ string ]  # list of tags to evaluate for trigger event, optional; 
+      stages: [ string ] # list of stages to evaluate for trigger event, optional; 
 ```
 # [Example](#tab/example)
 
@@ -1102,7 +1107,7 @@ resources:
     trigger:
       branches:
         include:
-        - master
+        - main
         - releases/*
         exclude:
         - users/*
@@ -1112,7 +1117,7 @@ resources:
 
 > [!IMPORTANT]
 > When you define a resource trigger, if its pipeline resource is from the same repo as the current pipeline, triggering follows the same branch and commit on which the event is raised.
-> But if the pipeline resource is from a different repo, the current pipeline is triggered on the master branch.
+> But if the pipeline resource is from a different repo, the current pipeline is triggered on the branch specified by the **Default branch for manual and scheduled builds** setting. For more information, see [Branch considerations for pipeline completion triggers](process/pipeline-triggers.md?tabs=yaml#branch-considerations-for-pipeline-completion-triggers).
 
 #### The pipeline resource metadata as predefined variables
 
@@ -1133,7 +1138,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from a pipeline resource by using a `download` task. See the [download](/azure/devops/pipelines/yaml-schema?view=azure-devops#download) keyword.
+You can consume artifacts from a pipeline resource by using a `download` task. See the [download](#download) keyword.
 
 ### Container resource
 
@@ -1144,6 +1149,30 @@ The `container` keyword lets you specify your container images.
 [Service containers](process/service-containers.md) run alongside a job to provide various dependencies like databases.
 
 # [Schema](#tab/schema)
+
+::: moniker range="azure-devops"
+
+```yaml
+resources:
+  containers:
+  - container: string  # identifier (A-Z, a-z, 0-9, and underscore)
+    image: string  # container image name
+    options: string  # arguments to pass to container at startup
+    endpoint: string  # reference to a service connection for the private registry
+    env: { string: string }  # list of environment variables to add
+    ports: [ string ] # ports to expose on the container
+    volumes: [ string ] # volumes to mount on the container
+    mapDockerSocket: bool # whether to map in the Docker daemon socket; defaults to true
+    mountReadOnly:  # volumes to mount read-only - all default to false
+      externals: boolean  # components required to talk to the agent
+      tasks: boolean  # tasks required by the job
+      tools: boolean  # installable tools like Python and Ruby
+      work: boolean # the work directory
+```
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
 
 ```yaml
 resources:
@@ -1157,6 +1186,24 @@ resources:
     volumes: [ string ] # volumes to mount on the container
     mapDockerSocket: bool # whether to map in the Docker daemon socket; defaults to true
 ```
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+```yaml
+resources:
+  containers:
+  - container: string  # identifier (A-Z, a-z, 0-9, and underscore)
+    image: string  # container image name
+    options: string  # arguments to pass to container at startup
+    endpoint: string  # reference to a service connection for the private registry
+    env: { string: string }  # list of environment variables to add
+    ports: [ string ] # ports to expose on the container
+    volumes: [ string ] # volumes to mount on the container
+```
+
+::: moniker-end
 
 # [Example](#tab/example)
 
@@ -1203,7 +1250,7 @@ resources:
   - repository: string  # identifier (A-Z, a-z, 0-9, and underscore)
     type: enum  # see the following "Type" topic
     name: string  # repository name (format depends on `type`)
-    ref: string  # ref name to use; defaults to 'refs/heads/master'
+    ref: string  # ref name to use; defaults to 'refs/heads/main'
     endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
     trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
       branches:
@@ -1247,6 +1294,50 @@ The `git` type refers to Azure Repos Git repos.
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitbucket/vscode`.
   Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
+
+### Packages resource
+
+::: moniker range="> azure-devops-2020"
+
+You can consume NuGet and npm GitHub packages as a resource in YAML pipelines. When specifying package resources, set the package as `NuGet` or `npm`. 
+
+## [Schema](#tab/schema)
+
+```yaml
+resources:
+  packages:
+    - package: myPackageAlias # alias for the package resource
+      type: Npm # type of the package NuGet/npm
+      connection: GitHubConnectionName # Github service connection with the PAT type
+      name: nugetTest/nodeapp # <Repository>/<Name of the package>
+      version: 1.0.1 # Version of the packge to consume; Optional; Defaults to latest
+      trigger: true # To enable automated triggers (true/false); Optional; Defaults to no triggers
+```
+
+## [Example](#tab/example)
+
+In this example, there is an [GitHub service connection](library/service-endpoints.md#common-service-connection-types) named `pat-contoso` to a GitHub npm package named `contoso`. Learn more about [GitHub packages](https://github.com/features/packages). 
+
+```yaml
+resources:
+  packages:
+    - package: contoso
+      type: npm
+      connection: pat-contoso
+      name: yourname/contoso 
+      version: 7.130.88 
+      trigger: true
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- getPackage: contoso 
+```
+---
+
+::: moniker-end
+
 
 ## Triggers
 
@@ -1330,7 +1421,7 @@ List syntax:
 
 ```yaml
 trigger:
-- master
+- main
 - develop
 ```
 
@@ -1397,6 +1488,8 @@ pr: none # will disable PR builds entirely; will not disable CI triggers
 
 Full syntax:
 
+:::moniker range="<=azure-devops-2020"
+
 ```yaml
 pr:
   autoCancel: boolean # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
@@ -1407,6 +1500,24 @@ pr:
     include: [ string ] # file paths which must match to trigger a build
     exclude: [ string ] # file paths which will not trigger a build
 ```
+
+:::moniker-end
+
+:::moniker range=">azure-devops-2020"
+
+```yaml
+pr:
+  autoCancel: boolean # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
+  branches:
+    include: [ string ] # branch names which will trigger a build
+    exclude: [ string ] # branch names which will not
+  paths:
+    include: [ string ] # file paths which must match to trigger a build
+    exclude: [ string ] # file paths which will not trigger a build
+  drafts: boolean # For GitHub only, whether to build draft PRs, defaults to true
+```
+
+:::moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
@@ -1429,7 +1540,7 @@ List syntax:
 
 ```yaml
 pr:
-- master
+- main
 - develop
 ```
 
@@ -1494,7 +1605,7 @@ schedules:
   displayName: Daily midnight build
   branches:
     include:
-    - master
+    - main
     - releases/*
     exclude:
     - releases/ancient/*
@@ -1509,7 +1620,7 @@ schedules:
 In the preceding example, two schedules are defined.
 
 The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last successful scheduled run.
-It runs the pipeline for `master` and all `releases/*` branches, except for those branches under `releases/ancient/*`.
+It runs the pipeline for `main` and all `releases/*` branches, except for those branches under `releases/ancient/*`.
 
 The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays for all `releases/*` branches.
 It does so regardless of whether the code has changed since the last run.
@@ -1599,7 +1710,8 @@ pool:
 ```
 
 ---
-::: moniker range="azure-devops"
+
+::: moniker range=">=azure-devops-2020"
 
 ## Environment
 
@@ -1814,6 +1926,9 @@ steps:
 
 ---
 
+> [!NOTE]
+> Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
+
 Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](process/phases.md?tabs=yaml#timeouts).
 
 ## PowerShell
@@ -1853,6 +1968,9 @@ steps:
 ```
 
 ---
+
+> [!NOTE]
+> Each PowerShell session lasts only for the duration of the job in which it runs. Tasks that depend on what has been bootstrapped must be in the same job as the bootstrap.
 
 Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](process/phases.md?tabs=yaml#timeouts).
 
@@ -1923,6 +2041,7 @@ The task publishes (uploads) a file or folder as a pipeline artifact that other 
 steps:
 - publish: string # path to a file or folder
   artifact: string # artifact name
+  displayName: string  # friendly name to display in the UI
 ```
 
 # [Example](#tab/example)
@@ -1931,6 +2050,7 @@ steps:
 steps:
 - publish: $(Build.SourcesDirectory)/build
   artifact: WebApp
+  displayName: Publish artifact WebApp
 ```
 
 ---
@@ -1949,6 +2069,7 @@ steps:
 - download: [ current | pipeline resource identifier | none ] # disable automatic download if "none"
   artifact: string ## artifact name, optional; downloads all the available artifacts if not specified
   patterns: string # patterns representing files to include; optional
+  displayName: string  # friendly name to display in the UI
 ```
 ### Artifact download location
 
@@ -1968,6 +2089,7 @@ steps:
 - download: current  # refers to artifacts published by current pipeline
   artifact: WebApp
   patterns: '**/.js'
+  displayName: Download artifact WebApp
 - download: MyAppA   # downloads artifacts available as part of the pipeline resource
 ```
 
@@ -2013,6 +2135,9 @@ steps:
 ```
 
 ::: moniker-end
+
+> [!NOTE]
+> In addition to the cleaning option available using `checkout`, you can also configuring cleaning in a workspace. For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) topic in [Jobs](process/phases.md).
 
 To avoid syncing sources at all:
 
@@ -2074,7 +2199,7 @@ resources:
     name: MyGitHubToolsOrg/tools
 
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -2139,9 +2264,9 @@ Learn more about [conditions](process/conditions.md?tabs=yaml),
 
 Syntax highlighting is available for the pipeline schema via a Visual Studio Code extension.
 You can [download Visual Studio Code](https://code.visualstudio.com), [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and [check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).
-The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.
+The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/main/service-schema.json) for validation.
 
-You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](https://docs.microsoft.com/rest/api/azure/devops/distributedtask/yamlschema/get?view=azure-devops-rest-5.1).
+You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](/rest/api/azure/devops/distributedtask/yamlschema/get?preserve-view=true&view=azure-devops-rest-5.1).
 
 <!-- For people who get here by searching for, say, "azure pipelines template YAML schema", 
      look around a bit, and then type "Ctrl-F JSON" when they don't see anything promising

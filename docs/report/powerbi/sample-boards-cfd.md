@@ -23,6 +23,8 @@ This article shows you how to display the Stories CFD for a specified team. An e
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)

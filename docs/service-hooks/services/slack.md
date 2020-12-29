@@ -83,7 +83,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 4. Now, when the event you configured occurs in your project, a notification will appear in your team's Slack channel.
 
-	![notifications](./media/slack/notifications.png)
+	![Screenshot showing a notification in a Slack channel.](./media/slack/notifications.png)
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 4. Now, when the event you configured occurs in your project, a notification will appear in your team's Slack channel.
 
-	![notifications](./media/slack/notifications.png)
+	![Screenshot that shows a notification in a Slack channel.](./media/slack/notifications.png)
 
 ::: moniker-end
 

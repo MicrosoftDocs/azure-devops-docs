@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
 
-If you don't have permissions to install extensions, you can request extensions instead. As a Project Collection Administrator, you get an email when another project member requests an extension. After you approve the request, the extension is automatically installed to Azure DevOps. In this article, learn how to do the following tasks:
+If you don't have permissions to install extensions, you can request extensions instead. As a Project Collection Administrator, you get an email when another project member requests an extension. After you approve the request, the extension is automatically installed to Azure DevOps. Learn how to do the following tasks:
 
 - [Request and approve extensions](#request-and-approve-extensions)
   - [Prerequisites](#prerequisites)
@@ -85,7 +85,7 @@ You can review your requests after the Marketplace sends the request to your Pro
 
 Your requests appear on your **Manage extensions** page.
 
-![Manage extensions](media/manage-extensions-vsts.png)
+![On the Extension page, a drop-down list to the right of the search window has two options, Browse Marketplace and Manage extensions (highlighted).](media/manage-extensions-vsts.png)
 
 ::: moniker-end
 
@@ -99,18 +99,18 @@ To approve extensions, you must have [**edit collection-level information** perm
 
 - Azure DevOps:```https://dev.azure.com/{organization}/{project}```
 
-2. Select the shopping bag icon, and then **Manage extensions**.
+1. Select the shopping bag, and then **Manage extensions**.
 
    ![Manage extensions](../organizations/billing/media/shared/marketplace-shopping-bag-manage-extensions.png)
 
-3. Review and approve your requested extensions.
+2. Review and approve your requested extensions.
 
    > [!div class="mx-imgBorder"] 
    > ![Extensions tab, requested extensions](media/get-tfs-extensions/connected/approve-request-tfs.png)
 
    After you approve extension requests, the extensions are automatically installed.
 
-4. [Assign those extensions](./assign-paid-extensions.md) to users who need access.
+3. [Assign those extensions](./install-extension.md) to users who need access.
 
 ::: moniker-end
 
@@ -120,18 +120,18 @@ To approve extensions, you must have [**edit collection-level information** perm
 
 - TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
 
-2. Select the shopping bag icon and **Manage extensions**.
+1. Select the shopping bag, and then **Manage extensions**.
 
-   ![Manage extensions](../organizations/billing/media/shared/marketplace-shopping-bag-manage-extensions-prev-nav.png)
+   ![On the Extension page, a drop-down list to the right of the search window has two options, Browse Marketplace and Manage extensions (highlighted)](../organizations/billing/media/shared/marketplace-shopping-bag-manage-extensions-prev-nav.png)
 
-3. Review and approve your requested extensions.
+2. Review and approve your requested extensions.
 
    > [!div class="mx-imgBorder"] 
    > ![Extensions tab, requested extensions](media/get-tfs-extensions/connected/approve-request-tfs.png)
 
    After you approve extension requests, the extensions are automatically installed.
 
-4. [Assign those extensions](./assign-paid-extensions.md) to users who need access.
+3. [Assign those extensions](./install-extension.md) to users who need access.
 
 ::: moniker-end
 

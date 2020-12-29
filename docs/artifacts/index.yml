@@ -29,7 +29,7 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Sign up for Azure Artifacts
-            url: sign-up-azure-artifacts.md
+            url: ./start-using-azure-artifacts.md
           - text: Best practices for using Azure Artifacts
             url: ./concepts/best-practices.md
           - text: Artifacts in Azure Pipelines

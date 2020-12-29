@@ -12,7 +12,7 @@ ms.date: 07/27/2020
 
 [!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
 
-See activity about your Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
+See activity about your Azure DevOps Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
 * Work item updates
 * Pull requests
 * Code commits
@@ -63,7 +63,7 @@ Configuring integration between Azure DevOps Server and Teams is a two-step proc
 
 2. Configure the connector. 
 
-1. Copy the generated web hook URL. Provide this URL when you're setting up service hook subscriptions in your Azure DevOps project.
+1. Copy the generated webhook URL. Provide this URL when you're setting up service hook subscriptions in your Azure DevOps project.
 
 ### From Azure DevOps Server
 
@@ -78,14 +78,14 @@ Configuring integration between Azure DevOps Server and Teams is a two-step proc
 	For example, the *pull request created* trigger can be filtered on the repository in which the pull request occurs, 
     the target branch it applies to, and the team members that are required or invited to review the request.
 
-1. Paste the web hook URL from the Teams connector configuration step and click Finish.
+1. Paste the webhook URL from the Teams connector configuration step and click Finish.
 
 Activity from your project begins appearing in your Teams channel.
 
 
 ## Configure Azure DevOps tabs in Microsoft Teams
 
-1. To bring your Kanban board or dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
+1. To bring your Kanban board or dashboard into Microsoft Teams, select **+ Add new tab** on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
 
    ![Add a new tab to Teams channel](./media/teams/teams-as-website.png)
 
@@ -96,7 +96,7 @@ Activity from your project begins appearing in your Teams channel.
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-### Q: How can I get multiple events from my TFS project to show up in my Teams channel?
+### Q: How can I get multiple events from my Azure DevOps Server project to show up in my Teams channel?
 
 A: Create a new subscription for each type of event you want.
 For example, if you want to see build failures and new work items in your Teams channel,

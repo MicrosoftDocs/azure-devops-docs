@@ -1,7 +1,7 @@
 ---
 title: Calendar view with drill down of epics and features 
 titleSuffix: Azure DevOps
-description: Learn how to track dependencies your team has on other teams with the dependency tracker  
+description: Learn how to view progress by using the Epic Roadmap to provide a calendar view of a single epic and its child features.
 ms.custom: extensions
 ms.technology: devops-agile
 ms.prod: devops

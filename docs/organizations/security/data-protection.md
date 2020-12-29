@@ -56,7 +56,7 @@ Azure DevOps Services is hosted entirely in Azure data centers and uses many of 
 Azure DevOps Services uses Azure Storage as the primary repository for service metadata and customer data. Depending on the type of data and the storage and retrieval needs, we use Azure Blob (binary large objects) storage and Azure SQL data storage. To provide a seamless experience, we work hard to abstract these details from the end user. However, to discuss the details surrounding Azure DevOps approach to data protection, some background in these elements is important.
 
 **Azure Blob storage** is used to store large chunks of unstructured data. All projects use the Azure Blob storage service. This data includes potentially sensitive or private information such as the contents of source files and the attachments on work items. For most projects, the majority of storage in use is this type of unstructured blob storage.  For more information, see documentation on
-[Azure Blob Storage](https://azure.microsoft.com/documentation/articles/storage-dotnet-how-to-use-blobs/).
+[Azure Blob Storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
 **Azure SQL database storage** is used to store the structured and transactional aspects of your organization, including project metadata, the versioned source control history, and work item details. Database storage gives you fast access to the important elements of your project and provides indexes into the blob storage to look up files and attachments. For more information, see documentation on
 [Azure SQL Database](/azure/sql-database/).
@@ -113,7 +113,7 @@ Sometimes our partner teams or dependencies have incidents that affect Azure Dev
 
 ## Service security
 
-Ensuring a secure service requires constant vigilance, from proper design and coding techniques, all the way through to the way we operate the service. Along those lines, we actively invest in the prevention of security holes and in breach detection. If there's a breach, we use security response plans to minimize data leakage, loss, or corruption. To learn more about how security and identity are managed, see [About security and identity](about-security-identity.md).
+Ensuring a secure service requires constant vigilance, from proper design and coding techniques, all the way through to the way we operate the service. Along those lines, we actively invest in the prevention of security holes and in breach detection. If there's a breach, we use security response plans to minimize data leakage, loss, or corruption. To learn more about how security and identity are managed, see [About security, authentication, and authorization](about-security-identity.md).
 
 ### Secure by design
 
@@ -157,9 +157,9 @@ you and Azure DevOps, we encrypt via HTTPS / SSL.
 
 Also, data we store on your behalf in Azure DevOps is encrypted as follows:
 
-* For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) to protect against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
+* For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017&preserve-view=true) to protect against the threat of malicious activity by doing real-time encryption of the database, associated backups, and transaction log files at rest.
 
-* Azure Blob Storage connections are encrypted to protect your data in transit. To protect data at rest stored in our Azure Blob Storage, we have adopted [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
+* Azure Blob Storage connections are encrypted to protect your data in transit. To protect data at rest stored in our Azure Blob Storage, we have adopted [Azure Storage Service Encryption (SSE)](/azure/storage/common/storage-service-encryption).
 
 To learn more about how we encrypt your data, visit the following [blog post](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/).
 
@@ -217,7 +217,7 @@ service is critical to establishing trust with our customers. This white
 paper is part of our effort to shed light on how we manage and protect
 your data. In addition, we maintain a
 [blog](https://blogs.msdn.microsoft.com/vsoservice/?p=15015) that provides real-time updates whenever a service disruption, planned, or unplanned, takes place so you can adjust your activities as needed. Furthermore, Brian Harry, the corporate vice-president in charge of Azure DevOps, maintains an active
-[blog](https://docs.microsoft.com/archive/blogs/korbyp/brian-harry-blogs) addressing, among other things,
+[blog](/archive/blogs/korbyp/brian-harry-blogs) addressing, among other things,
 lessons learned by operating the service.
 
 ## Compliance certifications
@@ -277,7 +277,7 @@ security requirements.
 
 Azure Active Directory (Azure AD) provides the capability for administrators to control access to Azure resources and applications such as Azure DevOps. With conditional access control in place, Azure AD checks for the specific conditions you set for a user to access an application. After access requirements are met, the user is authenticated and can access the application.
 Visit the [Azure documentation site](/azure/active-directory/active-directory-conditional-access)
-to learn more about conditional access policy (CAP).  Azure DevOps now enforces conditional access policies for custom Azure DevOps authentication mechanisms including personal access tokens (PATs), alternate authentication, OAuth, and SSH keys. If accessing Azure DevOps through a third-party client, like git.exe, only IP-based policies will be honored; any other policy will automatically fail as the client doesn't pass the necessary information to validate the policy. For example, if a policy requires MFA and the client can't support MFA, the policy fails and the user is automatically blocked.
+to learn more about conditional access policy (CAP).  Azure DevOps now supports enforcing certain type of conditional access policies (e.g. IP Fencing) for custom Azure DevOps authentication mechanisms including personal access tokens (PATs), alternate authentication, OAuth, and SSH keys. If accessing Azure DevOps through a third-party client, like git.exe, only IP-based policies (IPv4 based only) will be honored; other policies are not be recognized today. 
 
 ## Additional resources
 
@@ -289,8 +289,8 @@ your review and education.
 - [Azure DevOps credential storage](credential-storage.md)
 - [Azure DevOps data location](data-location.md)
 - [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
-- [Azure DevOps support](https://azure.microsoft.com/support/devops/)
-- [Developer Services Agreement](/azure/devops/user-guide/services)
+- [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html)
+- [Developer Services Agreement](../../user-guide/services.md)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
 - [Create and revoke your PATs](../accounts/use-personal-access-tokens-to-authenticate.md)

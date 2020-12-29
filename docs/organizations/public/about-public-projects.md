@@ -50,7 +50,7 @@ To add or modify code, work items, pipelines, or more, [add the user as a member
 * [Share your code](../../repos/git/gitquickstart.md)
 
 **To define pipelines:** 
-* [Build OSS repositories](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
+* [Build OSS repositories](../../pipelines/repos/index.md?bc=%252fazure%252fdevops%252forganizations%252fpublic%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252fpublic%252ftoc.json)
 
 ## Migrate a private project to public
 
@@ -62,5 +62,3 @@ Before you change the visibility of your private project, we recommend you revie
 
 - [Differences and limitations for non-members of a public project](feature-differences.md)
 - [Public projects glossary](glossary-public.md)
-
-

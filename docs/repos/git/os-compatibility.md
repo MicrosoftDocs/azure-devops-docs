@@ -11,17 +11,7 @@ monikerRange: '>= tfs-2018'
 
 # Git Cross-Platform Compatibility
 
-::: moniker range="azure-devops"
-
-#### Azure Repos
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
-
-::: moniker-end
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018**
 
 The Windows, macOS, and Linux file systems each have limitations and behaviors that are not always supported by one or more of the other platforms. Since Git is a cross-platform technology, it is possible for a developer on one platform to make a commit containing files or folders that have incompatible names with another platform's file system. Protecting your repo from this is important because developers on other platforms may unknowingly checkout a commit that corrupts their working directory due to unsupported file or paths names.
 
@@ -102,6 +92,5 @@ Azure Repos offers file name and max path [repository settings](repository-setti
 
 | Restrictions / Platforms |                                                                                                                                                         Windows                                                                                                                                                         |                                                                                              macOS                                                                                              |                               Linux                               |
 |--------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------:|
-|  File Name Restrictions  |                      [Reserved File Names](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file): CON, PRN, AUX, NUL, COM1 - COM9, LPT1 - LPT9<br><br>Reserved File Names followed by `.`<br><br>Reserved Characters: `\ / : * ? " < >` <br><br> Filenames ending in `.` or whitespace                       |                                                                                     Filenames ending in `/`                                                                                     |                      Filenames ending in `/`                      |
-| Path Length Restrictions | [Paths in Windows](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#paths) have a maximum length of 260 characters (incl. a null terminator). <br><br>For directories with .NET the fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters. | File names are limited to 255 characters<br><br> Path max in HFS+ are documented as unlimited, though some macOS versions cap it at 1016 characters. Some file systems support 1016 as max path | File names are limited to 255 characters<br><br> Path max is 4096 |
-
+|  File Name Restrictions  |                      [Reserved File Names](/windows/desktop/FileIO/naming-a-file): CON, PRN, AUX, NUL, COM1 - COM9, LPT1 - LPT9<br><br>Reserved File Names followed by `.`<br><br>Reserved Characters: `\ / : * ? " < >` <br><br> Filenames ending in `.` or whitespace                       |                                                                                     Filenames ending in `/`                                                                                     |                      Filenames ending in `/`                      |
+| Path Length Restrictions | [Paths in Windows](/windows/desktop/FileIO/naming-a-file#paths) have a maximum length of 260 characters (incl. a null terminator). <br><br>For directories with .NET the fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters. | File names are limited to 255 characters<br><br> Path max in HFS+ are documented as unlimited, though some macOS versions cap it at 1016 characters. Some file systems support 1016 as max path | File names are limited to 255 characters<br><br> Path max is 4096 |

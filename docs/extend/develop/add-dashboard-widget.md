@@ -1,18 +1,19 @@
 ---
-title: Add a dashboard widget | Extensions for Azure DevOps
+title: Add a dashboard widget
+titleSuffix: Azure DevOps
 description: Tutorial for creating a widget that you can then add to a dashboard in Azure DevOps or Team Foundation Server (TFS)
 ms.technology: devops-ecosystem
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ms.topic: conceptual
-monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 10/31/2019
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Add a dashboard widget
 
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+[!INCLUDE [ ](../../includes/version-vsts-plus-azdevserver-2019.md)]
 
 Widgets on a dashboard are implemented as [contributions](./contributions-overview.md) in the [extension framework](../overview.md). 
 A single extension can have multiple contributions. Learn how to create an extension with multiple widgets as contributions.
@@ -31,7 +32,7 @@ Some knowledge of JavaScript, HTML, CSS is required for widget development.
 - An **organization** in Azure DevOps for installing and testing your widget, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials, we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/download/)
-- **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
+- **Cross-platform CLI for Azure DevOps (tfx-cli)** to package your extensions.
     - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
 - A home directory for your project. This directory is referred to as `home` throughout the tutorial.
 
@@ -67,7 +68,7 @@ Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) th
 
 This part presents a widget that prints "Hello World" using JavaScript.
 
-![Overview dashboard in with a sample widget](../media-procedures/add-dashboard-widget/sample.png)
+![Overview dashboard with a sample widget](../media-procedures/add-dashboard-widget/sample.png)
 
 ### Step 1: Get the client SDK - `VSS.SDK.min.js`
 
@@ -180,7 +181,7 @@ You can name these images however you want as long as the extension manifest in 
 
 * ***Every*** extension must have an extension manifest file
 * Read the [extension manifest reference](./manifest.md)
-* Find out more about the contribution points in the [extension points reference](/previous-versions/azure/devops/docs/extend/reference/targets/overview)
+* Find out more about the contribution points in the [extension points reference](/previous-versions/azure/devops/extend/reference/targets/overview)
 
 Create a json file (`vss-extension.json`, for example) in the `home` directory with the following contents:
 
@@ -284,7 +285,7 @@ as VSIX 2.0 compatible .vsix files - Microsoft provides a cross-platform command
 
 #### Get the packaging tool
 
-You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](https://nodejs.org), from your command line.
+You can install or update the Cross-platform CLI for Azure DevOps (tfx-cli) using `npm`, a component of [Node.js](https://nodejs.org), from your command line.
 
 ```no-highlight
 npm i -g tfx-cli
@@ -353,11 +354,11 @@ tfx extension publish --manifest-globs your-manifest.json --share-with yourOrgan
 
 ## Part 2: Hello World with Azure DevOps REST API
 
-Widgets can call any of the [REST APIs](/rest/api/vsts/?view=azure-devops) in Azure DevOps to interact with Azure DevOps resources.
+Widgets can call any of the [REST APIs](/rest/api/azure/devops/) in Azure DevOps to interact with Azure DevOps resources.
 In this example, we use the REST API for WorkItemTracking to fetch information about an existing query and display some query info in the widget right 
 below the "Hello World" text. 
 
-![Overview dashboard in with a sample widget](../media-procedures/add-dashboard-widget/sample2.png)
+![Overview dashboard with a sample widget using the REST API for WorkItemTracking.](../media-procedures/add-dashboard-widget/sample2.png)
 
 <a id="step-1-files" />
 
@@ -652,7 +653,7 @@ In [Part 2](#part-2) of this guide, you saw how to create a widget that shows qu
 In this part, we add the ability to configure the query to be used instead of the hard-coded one.
 When in configuration mode, the user gets to see a live preview of the widget based on their changes. These changes get saved to the widget on the dashboard when the user selects **Save**.
 
-![Overview dashboard in with a sample widget](../media-procedures/add-dashboard-widget/sampleConfiguration.png)
+![Overview dashboard live preview of the widget based on changes.](../media-procedures/add-dashboard-widget/sampleConfiguration.png)
 
 ### Step 1: HTML
 
@@ -990,7 +991,7 @@ Choose your widget and select the 'Add' button to add it to your dashboard.
 
 You would see a message asking you to configure the widget.
 
-![Overview dashboard in with a sample widget](../media-procedures/add-dashboard-widget/sampleWidgetWithNoSettings.png)
+![Overview dashboard with a sample widget from the catalog.](../media-procedures/add-dashboard-widget/sampleWidgetWithNoSettings.png)
 
 There are two ways to configure widgets. One is to hover on the widget, select the ellipsis that appears on the top-right corner and then select Configure.
 The other is to select the Edit button in the bottom right of the dashboard, and then select the configure button that appears on the top-right corner of the widget.

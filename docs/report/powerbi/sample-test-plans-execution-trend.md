@@ -48,7 +48,7 @@ A healthy test execution trend report shows a steady progress in test plans runn
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
-## Prerequisites
+[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 For the report to generate useful data, the team must perform the following activities to manage test plans:
 
@@ -171,6 +171,6 @@ Your report should look similar to the following image.
 
 ## Related articles
 
-- [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
-- [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
-- [Analytics OData query quick reference](/azure/devops/report/extend-analytics/quick-ref)
+- [Overview of sample reports using OData queries](./sample-odata-overview.md)
+- [Connect using Power BI and OData queries](./odataquery-connect.md)
+- [Analytics OData query quick reference](../extend-analytics/quick-ref.md)

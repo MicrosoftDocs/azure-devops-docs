@@ -175,7 +175,7 @@ You can view the State workflow model by installing the [State Model Visualizati
 For example, the following image shows the Bug workflow that has been customized to have a **Triaged** state. This view illustrates the default transitions of the workflow model. All states can transition from one state to another. 
 
 > [!div class="mx-imgBorder"]  
-> ![Hide an inherited state](media/customize-workflow/state-model-visualization.png)  
+> ![Bug workflow that has been customized to have a Triaged state.](media/customize-workflow/state-model-visualization.png)  
 
 You can zoom in and zoom out of the view. Also, you can move the state nodes around to gain a better view of the state model. 
 

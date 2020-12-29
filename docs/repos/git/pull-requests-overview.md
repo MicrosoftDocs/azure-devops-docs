@@ -8,12 +8,12 @@ ms.topic: overview
 ms.author: vijayma
 author: vijayma
 ms.date: 06/01/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Get feedback with pull requests
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
 Pull requests combine the review and merge of your code into a single collaborative process.
 Once you're done fixing a bug or new feature in a branch, create a new pull request.

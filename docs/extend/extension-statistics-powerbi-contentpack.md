@@ -34,12 +34,12 @@ Reports and dashboards are fully customizable but the data model isn't.
 
 4. Select **Get** under **Services** on the Get Data page.
 
-    ![get-data-final.png](media/get-data-final.png)
+    ![Screenshot showing Get under Services.](media/get-data-final.png)
 
 5. Search for Marketplace and select the Visual Studio Marketplace Extension Statistics and select **Get it now**.
 
-    ![connector](media/search.png)
-    ![connector](media/content-pack-details.png)
+    ![Search for Marketplace and select the Visual Studio Marketplace Extension Statistics.](media/search.png)
+    ![Content pack details.](media/content-pack-details.png)
 
 6. Enter the Marketplace publisher ID for the publisher you want data for and select **Next**.
 

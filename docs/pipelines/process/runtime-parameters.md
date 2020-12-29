@@ -277,7 +277,54 @@ Write-Host $env:myStringName
 
 ---
 
+### Check for an empty parameter object
+
+You can use the `length()` [expression](expressions.md) to check whether an object parameter has no value. 
+
+```yaml
+parameters:
+- name: foo
+  type: object
+  default: []
+
+steps:
+- checkout: none
+- ${{ if eq(length(parameters.foo), 0) }}:
+  - script: echo Foo is empty
+    displayName: Foo is empty
+```
+
 
 ## Parameter data types
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
+
+## FAQ
+
+### Can parameters be set based on variables?
+
+There are times when it may be useful to set parameters to values based on variables. Parameters are expanded early in processing a [pipeline run](runs.md) so not all variables will be available. To see what predefined variables are available in templates, see [Use predefined variables](../build/variables.md). 
+
+In this example, the predefined variables `Build.SourceBranch` and `Build.Reason` are used in conditions in template.yml.
+
+
+```yaml
+# File: azure-pipelines.yml
+trigger:
+- main
+
+extends:
+  template: template.yml
+```
+
+```yaml
+# File: template.yml
+steps:
+- script: echo Build.SourceBranch = $(Build.SourceBranch) # outputs refs/heads/main
+- script: echo Build.Reason = $(Build.Reason) # outputs IndividualCI
+- ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main') }}: 
+  - script: echo I run only if Build.SourceBranch = refs/heads/main 
+- ${{ if eq(variables['Build.Reason'], 'IndividualCI') }}: 
+  - script: echo I run only if Build.Reason = IndividualCI 
+- script: echo I run after the conditions
+```

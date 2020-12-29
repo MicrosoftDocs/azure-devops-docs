@@ -32,7 +32,7 @@ Configure your release definition to post deployment information to Azure Boards
 2. Check the **Report deployment status to Boards** checkbox and choose the stages and deployment types to report. 
 
    > [!div class="mx-imgBorder"]  
-   > ![Release Settings Stages](media/deployments-control/release-settings-stages-1.png)
+   > ![Check the Report deployment status to Boards checkbox and choose the stages and deployment types to report.](media/deployments-control/release-settings-stages-1.png)
 
 ## Deployment control
 
@@ -41,7 +41,7 @@ The work item deployment control displays the status of releases within those wo
 The following example shows multiple environments that the release is targeting which the selected work item is associated with. 
 
 > [!div class="mx-imgBorder"]  
-> ![Release Settings Stages](media/deployments-control/releases-stages-1.png)
+> ![Example showing multiple environments that the release is targeting.](media/deployments-control/releases-stages-1.png)
 
 When you open the work item, you can see the stages the release is being deployed, in real time.
 

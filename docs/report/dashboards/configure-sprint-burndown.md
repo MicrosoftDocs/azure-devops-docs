@@ -186,15 +186,15 @@ The **Sprint Burndown** widget adds a chart based on Remaining Work defined for 
 ::: moniker range=">= tfs-2015 < azure-devops-2019"
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  
-- To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions), or be a [team admin](/azure/devops/organizations/settings/add-team-administrator) or project admin.
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
+- To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](./dashboard-permissions.md), or be a [team admin](../../organizations/settings/add-team-administrator.md) or project admin.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md).  
 
 ::: moniker-end
 
@@ -604,4 +604,3 @@ And, from these industry resources:
 For on-premises deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
 
 ::: moniker-end
-

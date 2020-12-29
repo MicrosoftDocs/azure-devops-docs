@@ -65,7 +65,7 @@ For more information, see [Multiple repositories in your pipeline](https://docs.
 
 In the next few weeks, we'll update the Node.js version on the macOS 10.14 (Mojave) image from 6 to 8. If you still need to use node.js version 6, consider using the node.js tool installer task - [here](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/node-js?view=azure-devops).
 
-In addition to these changes, the macOS 10.14 image will be added to [the virtual environment](https://github.com/actions/virtual-environments/tree/master/images) repo and begin receiving tooling updates monthly instead of weekly.
+In addition to these changes, the macOS 10.14 image will be added to [the virtual environment](https://github.com/actions/virtual-environments/tree/main/images) repo and begin receiving tooling updates monthly instead of weekly.
 
 ### GitHub draft pull requests do not trigger pipelines
 

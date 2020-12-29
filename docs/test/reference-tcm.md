@@ -35,7 +35,7 @@ You can view basic reporting information within Microsoft Test Manager:
 
 ## I would like to create reports in Excel using Work Item Queries, but I cannot do so for all the Test artifacts such as Test Suites, Test Runs etc? Why?
 
-[Creating Reports in Microsoft Excel by Using Work Item Queries](https://msdn.microsoft.com/library/dd433251.aspx)
+[Creating Reports in Microsoft Excel by Using Work Item Queries](../report/create-status-and-trend-excel-reports.md?viewFallbackFrom=azure-devops)
 
 You can use the above method to query for any TFS "Work Items". So, you should be able to create a report for "Test Case", "Bug", "Task" work items.
 
@@ -59,29 +59,29 @@ There are two types of reports that can be viewed from Team Explorer - Excel Rep
 
    Details of each of the Test related reports can be found below:
 
-   * [Test Management Reports](https://msdn.microsoft.com/library/ee795293.aspx)
+   * [Test Management Reports](/previous-versions/azure/devops/report/excel/test-management-reports)
 
-     - [Build Quality Excel Report](https://msdn.microsoft.com/library/ee730418.aspx)
+     - [Build Quality Excel Report](/previous-versions/azure/devops/report/excel/build-quality-excel-report)
 
-     - [Test Team Productivity Excel Report](https://msdn.microsoft.com/library/ee730422.aspx)
+     - [Test Team Productivity Excel Report](/previous-versions/azure/devops/report/excel/test-team-productivity-excel-report)
 
-     - [Test Team Progress Excel Report](https://msdn.microsoft.com/library/ee730420.aspx)
+     - [Test Team Progress Excel Report](/previous-versions/azure/devops/report/excel/test-team-progress-excel-report)
 
-     - [Testing Gaps Excel Report (Agile)](https://msdn.microsoft.com/library/ee730419.aspx)
+     - [Testing Gaps Excel Report (Agile)](../index.yml?viewFallbackFrom=vsts)
 
-     - [Testing Gaps Excel Report (CMMI)](https://msdn.microsoft.com/library/ee730423.aspx)
+     - [Testing Gaps Excel Report (CMMI)](/previous-versions/azure/devops/report/excel/testing-gaps-excel-report-cmmi)
 
-   * [Failure Analysis Excel Report](https://msdn.microsoft.com/library/ee461520.aspx)
+   * [Failure Analysis Excel Report](/previous-versions/azure/devops/report/excel/failure-analysis-excel-report)
 
-   * [Test Activity Excel Report](https://msdn.microsoft.com/library/ee461586.aspx)
+   * [Test Activity Excel Report](/previous-versions/azure/devops/report/excel/test-activity-excel-report)
 
-   * [Test Case Readiness Report](https://msdn.microsoft.com/library/dd380713.aspx)
+   * [Test Case Readiness Report](../report/sql-reports/test-case-readiness-report.md)
 
-   * [Test Plan Progress Report](https://msdn.microsoft.com/library/dd380702.aspx)
+   * [Test Plan Progress Report](../report/sql-reports/test-plan-progress-report.md)
 
-   * [User Story Test Status Excel Report (Agile)](https://msdn.microsoft.com/library/dd695788.aspx)
+   * [User Story Test Status Excel Report (Agile)](../index.yml?viewFallbackFrom=vsts)
 
-   * [Requirement Test Status Excel Report (CMMI)](https://msdn.microsoft.com/library/ee461538.aspx)
+   * [Requirement Test Status Excel Report (CMMI)](/previous-versions/azure/devops/report/excel/requirement-test-status-excel-report-cmmi)
 
 2. Reporting Services based Reports: The figure below shows the list of all Reporting Services based reports that ship out of the box. Depending upon the process template (Agile, CMMI) you used at the time of creation of the project, the respective reports are created at project creation time.
 
@@ -91,15 +91,15 @@ There are two types of reports that can be viewed from Team Explorer - Excel Rep
 
    Details of each of the Test related reports can be found below:
 
-   * [Build Quality Indicators Report](https://msdn.microsoft.com/library/dd380683.aspx)
+   * [Build Quality Indicators Report](../report/sql-reports/build-quality-indicators-report.md)
 
-   * [Stories Overview Report (Agile)](https://msdn.microsoft.com/library/dd380648.aspx)
+   * [Stories Overview Report (Agile)](../index.yml?viewFallbackFrom=vsts)
 
-   * [Requirements Overview Report (CMMI)](https://msdn.microsoft.com/library/ee461517.aspx)
+   * [Requirements Overview Report (CMMI)](../report/sql-reports/requirements-overview-report-cmmi.md)
 
-   * [Test Case Readiness Report](https://msdn.microsoft.com/library/dd380713.aspx)
+   * [Test Case Readiness Report](../report/sql-reports/test-case-readiness-report.md)
 
-   * [Test Plan Progress Report](https://msdn.microsoft.com/library/dd380702.aspx)
+   * [Test Plan Progress Report](../report/sql-reports/test-plan-progress-report.md)
 
 ## I am connected to my Team Project within Team Explorer, but I don't see any of the Reporting Services based Reports listed above. Why?
 
@@ -111,13 +111,13 @@ Links:
 
 * [Installing Team Foundation Components](/azure/devops/server/install/get-started)
 
-* [Configuring Resources to Support Team Projects](https://msdn.microsoft.com/library/dd386330.aspx)
+* [Configuring Resources to Support Team Projects](/previous-versions/dd386330(v=vs.120))
 
-* [Add a Report Server to Your Deployment](https://msdn.microsoft.com/library/ee712737.aspx)
+* [Add a Report Server to Your Deployment](/previous-versions/ee712737(v=vs.120))
 
-* [Add a Report Server to a Team Project Collection](https://msdn.microsoft.com/library/dd386355.aspx)
+* [Add a Report Server to a Team Project Collection](/previous-versions/visualstudio/visual-studio-2012/dd386355(v=vs.110))
 
-* [Add Reports to a Team Project](https://msdn.microsoft.com/library/ee712730.aspx)
+* [Add Reports to a Team Project](/previous-versions/visualstudio/visual-studio-2010/ee712730(v=vs.100))
 
 ## I am connected to my Team Project within Team Explorer, but I don't see any of the Excel Reports listed above. Why?
 
@@ -131,13 +131,13 @@ Links:
 
 * [Installing Team Foundation Components](/azure/devops/server/install/get-started)
 
-* [Configuring Resources to Support Team Projects](https://msdn.microsoft.com/library/dd386330.aspx)
+* [Configuring Resources to Support Team Projects](/previous-versions/dd386330(v=vs.120))
 
-* [Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server](https://msdn.microsoft.com/library/dd386329.aspx)
+* [Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server](/previous-versions/visualstudio/visual-studio-2012/dd386329(v=vs.110))
 
-* [Add a SharePoint Web Application to Your Deployment](https://msdn.microsoft.com/library/dd236907.aspx)
+* [Add a SharePoint Web Application to Your Deployment](/previous-versions/dd236907(v=vs.140))
 
-* [Configure a Default Location for Team Project Portals](https://msdn.microsoft.com/library/dd386357.aspx)
+* [Configure a Default Location for Team Project Portals](/previous-versions/visualstudio/visual-studio-2012/dd386357(v=vs.110))
 
 ## We don't plan on installing SharePoint - is there no way of getting the "out-of-the-box" Excel reports, primarily for Test related reports?
 
@@ -223,11 +223,11 @@ All the test related measures present in the Analysis Services cube are shown be
 
 Description for each of above measures can be found here:
 
-[https://msdn.microsoft.com/library/ms244708.aspx#measures](https://msdn.microsoft.com/library/ms244708.aspx#measures)
+[https://msdn.microsoft.com/library/ms244708.aspx#measures](../report/sql-reports/perspective-test-analyze-report-test-results.md#measures)
 
 A list of all the perspectives and measure groups present in Team Foundation Server can be found here:
 
-[https://msdn.microsoft.com/library/ms244710.aspx](https://msdn.microsoft.com/library/ms244710.aspx)
+[https://msdn.microsoft.com/library/ms244710.aspx](../report/sql-reports/perspective-measure-groups-cube.md)
 
 ## What are the different Test related dimensions in the Analysis Services cube that I can use to create my custom test reports?
 
@@ -237,17 +237,17 @@ All the dimensions present in the Analysis Services cube are shown below:
 
 Description for all the Test specific dimensions can be found here:
 
-[https://msdn.microsoft.com/library/ms244708.aspx#dimensions](https://msdn.microsoft.com/library/ms244708.aspx#dimensions)
+[https://msdn.microsoft.com/library/ms244708.aspx#dimensions](../report/sql-reports/perspective-test-analyze-report-test-results.md#dimensions)
 
 ## Can I control what information makes it into the warehouse or cube? If so, how?
 
 Here is a quick primer on the different components of data warehouse and how data moves from the Operation store to Warehouse to Cube using the warehouse adapters.
 
-[Components of the Data Warehouse for Team Foundation](https://msdn.microsoft.com/library/ms244687.aspx)
+[Components of the Data Warehouse for Team Foundation](../report/dashboards/choose-source-data-authoring-tool.md?viewFallbackFrom=vsts)
 
 Yes, you can control what goes into the warehouse - refer to below topic for details around work item specific fields:
 
-[Adding and Modifying Work Item Fields to Support Reporting](https://msdn.microsoft.com/library/ee921481.aspx)
+[Adding and Modifying Work Item Fields to Support Reporting](../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md?viewFallbackFrom=vsts)
 
 Note that you can use the above to control Test Case Work item field customizations. However, since the other test artifacts (Test Suites, Test Runs, Test Results etc.) are not work items, it is not possible to use the above approach.
 
@@ -257,7 +257,7 @@ That is correct - Test Steps along with expected results and the passed or faile
 
 However, there are couple of ways of getting this Step related data:
 
-1. **TFS APIs**: You could get this information using the [TFS APIs](https://msdn.microsoft.com/library/microsoft.teamfoundation.testmanagement.client.aspx)
+1. **TFS APIs**: You could get this information using the [TFS APIs](/previous-versions/dd998375(v=vs.140))
    Refer to a sample Test Steps Report, which was created using the TFS APIs.
 
    [http://geekswithblogs.net/TarunArora/archive/2011/10/02/mtm-testing-scorecard-using-tfs-api.aspx](http://geekswithblogs.net/TarunArora/archive/2011/10/02/mtm-testing-scorecard-using-tfs-api.aspx)
@@ -277,4 +277,4 @@ You can find a Sample custom warehouse adapter below, that you can use as a star
 
 [https://code.msdn.microsoft.com/Tfs2010SampleAdapter](https://code.msdn.microsoft.com/Tfs2010SampleAdapter)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

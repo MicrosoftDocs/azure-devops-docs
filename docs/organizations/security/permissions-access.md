@@ -7,8 +7,8 @@ ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
-monikerRange: '>= tfs-2013'
+ms.topic: overview
+monikerRange: '<= azure-devops'
 ms.date: 03/24/2020
 ---
 
@@ -28,59 +28,13 @@ In general, use the following guidance when assigning users to an access level a
 
 To learn more about administrative tasks see [About user, team, project, and organization-level settings](../settings/about-settings.md).  For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about access levels, see [About access levels](access-levels.md). 
 
-In the tables provided in this article, a :::image type="icon" source="/azure/devops/media/icons/checkmark.png" border="false"::: checkmark indicates that the corresponding access level or security group has access to a feature by default. 
+In the tables provided in this article, a ✔️ indicates that the corresponding access level or security group has access to a feature by default. 
 
 
 For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
 
 
 
-::: moniker range=">= tfs-2015"
-
-## Dashboards, charts, reports, and widgets
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-
-You can define and manage team and project dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You can set [individual dashboard permissions](../../report/dashboards/dashboard-permissions.md) to grant or restrict the ability to edit or delete dashboards. 
-
-Users granted Stakeholder access to private projects can't view or create query charts. Stakeholder access to public projects can view and create query charts.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 < azure-devops"
-
-You can define and manage team dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-[!INCLUDE [temp](includes/report.md)]
-
-::: moniker-end
-
-::: moniker range="tfs-2013" 
-
-## Dashboards and charts
-
-You can pin charts to a team dashboard **Home** page. 
-
-[!INCLUDE [temp](includes/report.md)]
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019" 
-
-## Power BI Integration and Analytics views
-
-From the web portal **Analytics views**, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for Azure DevOps. To learn more, see [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md). 
-
-You set [permissions](../../report/powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level. Users with **Stakeholder** access have no access to view or edit Analytics views.
-
-[!INCLUDE [temp](includes/analytics.md)]
-
-::: moniker-end
 
 
 <a id="agile-tools-and-work-tracking" />
@@ -148,7 +102,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 ### Delivery plans feature access
 
-[Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access. 
+[Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team.  
 
 [!INCLUDE [temp](includes/boards-plans.md)]
 
@@ -295,44 +249,34 @@ You can define and manage manual tests from the web portal, **Test Plans** or **
 ::: moniker range=">= azure-devops-2019" 
 
 ## Azure Artifacts
-
-You can manage feeds from the web portal, **Artifacts** or **Build and release > Packages**. Feeds have three permission levels: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any permission level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
-
 ::: moniker-end
 
 ::: moniker range="azure-devops" 
 
-Users granted Stakeholder or Basic access, or higher can access Azure Artifacts features. 
-::: moniker-end
+You can manage feeds from the web portal, **Artifacts**. Users granted Stakeholder or Basic access, or higher can access Azure Artifacts features. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
+::: moniker-end
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020" 
 
-Users granted Basic access or higher can access Azure Artifacts features. Users granted Stakeholder access have no access to Azure Artifacts.  
+You can manage feeds from the web portal, **Artifacts**. Users granted Basic access or higher can access Azure Artifacts features. Users granted Stakeholder access have no access to Azure Artifacts.  To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md). 
 
 ::: moniker-end
-
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 ## Package management
 
-You can manage feeds from the web portal, **Build and release > Packages**.  Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
-
-Users granted Basic access or higher can access Package management features. Users granted Stakeholder access have no access.  
+You can manage feeds from the web portal, **Build and release > Packages**. Users granted Basic access or higher can access Package management features. Users granted Stakeholder access have no access. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
 ::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 [!INCLUDE [temp](includes/package-feeds.md)]
-
-::: moniker-end
 
 
 ## Notifications, alerts, and team collaboration tools 
 
-To manage notifications, see [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md) and [Manage team notifications](../../notifications/howto-manage-team-notifications.md).
+To manage notifications, see [Manage personal notifications](../../notifications/manage-your-personal-notifications.md) and [Manage team notifications](../../notifications/manage-team-group-global-organization-notifications.md).
 
 > [!NOTE]  
 > There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
@@ -340,11 +284,71 @@ To manage notifications, see [Manage personal notifications](../../notifications
 [!INCLUDE [temp](includes/collaborate.md)]
 
 
-## Related notes
+::: moniker range=">= tfs-2015"
+
+## Dashboards, charts, reports, and widgets
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+You can define and manage team and project dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You can set [individual dashboard permissions](../../report/dashboards/dashboard-permissions.md) to grant or restrict the ability to edit or delete dashboards. 
+
+Users granted Stakeholder access to private projects can't view or create query charts. Stakeholder access to public projects can view and create query charts.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < azure-devops"
+
+You can define and manage team dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
+[!INCLUDE [temp](includes/report.md)]
+
+::: moniker-end
+
+::: moniker range="tfs-2013" 
+
+## Dashboards and charts
+
+You can pin charts to a team dashboard **Home** page. 
+
+[!INCLUDE [temp](includes/report.md)]
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019" 
+
+## Power BI Integration and Analytics views
+
+From the web portal **Analytics views**, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for Azure DevOps. To learn more, see [What is the Analytics Service?](../../report/powerbi/what-is-analytics.md). 
+
+You set [permissions](../../report/powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level. Users with **Stakeholder** access have no access to view or edit Analytics views.
+
+[!INCLUDE [temp](includes/analytics.md)]
+
+::: moniker-end
+
+<!---
+
+::: moniker range=">= tfs-2017"
+
+## Role-based defaults
+
+[!INCLUDE [temp](includes/default-role-assignments.md)]
+
+::: moniker-end
+
+-->
+
+
+## Related articles
 
 - [Add users to a project or team](../../organizations/security/add-users-team-project.md)  
+- [Security and permission management tools](security-tools-reference.md)  
 - [Permissions and groups reference](permissions.md)  
 - [About access levels](access-levels.md)
 - [Web portal navigation](../../project/navigation/index.md) 
 
- 
