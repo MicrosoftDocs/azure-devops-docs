@@ -72,9 +72,9 @@ You must be a member of the Contributors group of your team project to migrate w
 	- "E:\wiki\sampleWiki\_extensionWiki" is the folder in which the existing wiki files are present
 	- "E:\Temp\Wiki\New" is the empty folder into which the migrated files are to be copied.
 
-9. Remove all files from "LocationA" (if any) apart from the git related files such as .gitignore etc.
+9. Remove all files from "LocationA" (if any) apart from the git related files, such as .gitignore, and so on.
 
-11. Copy all files from "LocationC" and paste them into "LocationA".
+10. Copy all files from "LocationC" and paste them into "LocationA".
 
 11. Run **git add .** to stage all the newly added files in  "LocationA" for the commit.
   

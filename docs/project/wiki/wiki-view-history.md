@@ -48,7 +48,7 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
    ::: moniker range=">= azure-devops-2019"
 
-   For a *publish as code wiki* page, you see similar information, but the **Revert** button isn't active.
+   For a *publish as code wiki* page, you see similar information, but **Revert** isn't active.
 
    > [!div class="mx-imgBorder"]  
    > ![Revision page for a publish as code wiki page](media/wiki/view-history-publish-as-code.png)
@@ -64,7 +64,7 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
 ## Revert a commit to a *provisioned wiki* page
 
-Select the **Revert** button on the revision details page to revert a change on a wiki page.
+Select **Revert** on the revision details page to revert a change on a wiki page.
 
 ::: moniker-end
 
@@ -77,7 +77,7 @@ Select the **Revert** button on the revision details page to revert a change on 
 
 ::: moniker range=">= tfs-2018"
 
-![Dialog box Revert revision 701b5a9f has two buttons: Revert and Cancel. Revert is selected.](media/wiki/wiki-revert.png) 
+![Dialog box Revert revision 701b5a9f has the Revert and Cancel options. Revert is selected.](media/wiki/wiki-revert.png) 
 
 ::: moniker-end
 

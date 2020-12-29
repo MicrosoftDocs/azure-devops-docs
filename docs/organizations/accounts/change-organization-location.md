@@ -25,7 +25,7 @@ When you [create an organization](create-organization.md), you can choose the re
 2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
    ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
-3. Select **Overview**. The region is listed below.
+3. Select **Overview**. The region is listed lower on the page.
 
    ![Find the region under the organization settings](media/change-organization-location/organization-settings-region.png)
 

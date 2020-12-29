@@ -72,7 +72,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 1. Choose **Project settings** > **Security**.
 
-    *To see the full image, click to expand*.
+    *To see the full image, select to expand*.
 
     [![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 
@@ -97,7 +97,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 1. Choose **Project settings** > **Security**.
 
-    *To see the full image, click to expand*.
+    *To see the full image, select to expand*.
 
     [![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
 

@@ -68,8 +68,8 @@ The Top Publisher program <img src="media/top-publisher.png" alt="Top Publisher 
 
 * Sign in to https://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in Marketplace
 * Select the publisher and navigate to its **Top Publisher** tab. Note: you need to have one or more public Azure DevOps (Server/Service) extension or integration for the tab to appear.  
-* If you meet part of the requirements stated above and are the publisher's owner, you see an option to apply for the program. On application, an email is sent to the Marketplace team to review your case. They respond in under 10 business days with next steps, clarifying questions or with the grant of the badge.
+* If you meet part of the previously listed requirements and are the publisher's owner, you see an option to apply for the program. On application, an email is sent to the Marketplace team to review your case. They respond in under 10 business days with next steps, clarifying questions or with the grant of the badge.
 
 > The team likely looks at additional parameters, such as active uptake of your offerings, install/get started counts and ratings & reviews across your offerings before granting the badge. <br> Microsoft reserves the right to grant, reject or revoke the Top Publisher badge at any time.
 
-Once a publisher is a Top Publisher, then all its future updates and offerings must meet the above requirements.
+Once a publisher is a Top Publisher, then all its future updates and offerings must meet the previously listed requirements.

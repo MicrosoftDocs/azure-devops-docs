@@ -117,7 +117,7 @@ The `uri` property references a page that is rendered within the content area of
 
 ### Showing the dialog
 
-To show the dialog (for example when a user clicks an action on a toolbar or menu), call the `openDialog` function on an instance of the HostDialogService, passing the fully-qualified identifer of the dialog content, for example `my-publisher.my-extension.registration-form` and any dialog options:
+To show the dialog (for example, when a user selects an action on a toolbar or menu), call the `openDialog` function on an instance of the HostDialogService, passing the fully-qualified identifer of the dialog content, for example `my-publisher.my-extension.registration-form` and any dialog options:
 
 ```javascript
     VSS.getService(VSS.ServiceIds.Dialog).then(function(dialogService) {
@@ -138,7 +138,7 @@ To show the dialog (for example when a user clicks an action on a toolbar or men
 
 ### Showing the dialog (advanced) 
 
-A function can be called when the OK button is clicked. This function is specified by `getDialogResult` in the options you provide when showing the dialog.
+A function can be called when the OK button is selected. This function is specified by `getDialogResult` in the options you provide when showing the dialog.
 
 If a call to `getDialogResult` returns a non-null value, this value is then passed to the function specified by `okCallback` (also in the options) and the dialog is closed.
 
@@ -168,7 +168,7 @@ In this example, the `attachFormChanged` callback gets called when inputs on the
             // Get registrationForm instance which is registered in registrationFormContent.html
             dialog.getContributionInstance("registration-form").then(function (registrationFormInstance) {
             
-                // Keep a reference of registration form instance (to be used above in dialog options)
+                // Keep a reference of registration form instance (to be used previously in dialog options)
                 registrationForm = registrationFormInstance;
                 
                 // Subscribe to form input changes and update the Ok enabled state

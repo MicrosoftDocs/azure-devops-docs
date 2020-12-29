@@ -83,7 +83,7 @@ For each contribution in your extension, the manifest defines
 |--------------------|----------------------------------------------------------------------------------------|                                
 | name               | Name of the hub					                                                      |                   
 | uri                | Path (relative to the extension's base URI) of the page to surface as the tab       |                   
-| registeredObjectId | ID of the object registered for the tab. Include code like the example below in the html file indicated in the "uri" property of the contribution shown above. | 
+| registeredObjectId | ID of the object registered for the tab. Include code like the example below in the html file indicated in the "uri" property of the contribution shown previously. | 
 
 ### Scopes
 It includes the [scopes](./manifest.md#scopes) that your extension requires.
