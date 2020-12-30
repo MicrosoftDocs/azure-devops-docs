@@ -176,6 +176,8 @@ This tutorial assumes you have a yaml pipeline with a single stage that deploys 
 
 1. Once the check is complete, the stage shall start execution. The change would be closed when update task at the end of the stage executes. 
 
+   ![Executed run](media/servicenow-13.png)
+
 ## FAQs
 
 ### Q: What versions of ServiceNow are supported?
@@ -206,7 +208,7 @@ and [Update change request states](https://docs.servicenow.com/bundle/istanbul-i
 ## Related topics
 
 * [Approvals and gates overview](index.md)
-* [Approvals and checks]()
+* [Approvals and checks](../../process/approvals.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
 * [Stages](../../process/stages.md)
