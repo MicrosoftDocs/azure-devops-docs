@@ -97,10 +97,10 @@ of [ServiceNow](https://www.servicenow.com/) to which applications can be instal
 
    **Gate Success Criteria** :
    - **Desired state of change request**: The gate would succeed and the pipeline continues when the change request status is same as the provided value.
-   - **Advanced**: Specifies an expression that controls when this gate should succeed. The change request is captured as `root['result']` in the response from ServiceNow. Example - `and(eq(root['result'].state, 'New'),eq(root['result'].risk, 'Low'))`. [Learn more](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops).
+   - **Advanced**: Specifies an expression that controls when this gate should succeed. The change request is captured as `root['result']` in the response from ServiceNow. Example - `and(eq(root['result'].state, 'New'),eq(root['result'].risk, 'Low'))`. [Learn more](../../process/expressions.md).
 
    **Gate Output Variables** :                                                                                                             
-   ServiceNow gate produces output variables.                                                                                               You must specify reference name to be able to use these output variables in the deployment workflow. Gate variables can be accessed by using `"PREDEPLOYGATE"` as a `prefix` in **an agentless job** in the workflow. For eg. when reference name is set to 'gate1', then the change number can be obtained as `$(PREDEPLOYGATE.gate1.CHANGE_REQUEST_NUMBER)`.
+   ServiceNow gate produces output variables. You must specify reference name to be able to use these output variables in the deployment workflow. Gate variables can be accessed by using `"PREDEPLOYGATE"` as a `prefix` in **an agentless job** in the workflow. For eg. when reference name is set to 'gate1', then the change number can be obtained as `$(PREDEPLOYGATE.gate1.CHANGE_REQUEST_NUMBER)`.
 
    - **CHANGE_REQUEST_NUMBER** : Number of the change request.
    - **CHANGE_SYSTEM_ID** : Sys Id of the change request.
@@ -121,7 +121,7 @@ of [ServiceNow](https://www.servicenow.com/) to which applications can be instal
    - **Additional change request parameters**:  Additional properties of the change request to set.
 
 
-   > The update task would fail if none of the fields in the change request are updated during the execution of the task. ServiceNow ignores invalid fields and values passed to the task. 
+> The update task would fail if none of the fields in the change request are updated during the execution of the task. ServiceNow ignores invalid fields and values passed to the task. 
 
 ### Execute a release
 
