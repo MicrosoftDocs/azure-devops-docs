@@ -188,7 +188,7 @@ Any other stages which tried to take the lock will be cancelled.
 
 The **servicenow change management** check allows for an integration of ServiceNow change management process in the pipelines. 
 By adding the check, a new change request in ServiceNow can be automatically created at the start of the stage. The pipeline waits for the change process to complete before starting the stage.
-More details are avialable [here](../release/approvals/servicenow.md).
+More details are available [here](../release/approvals/servicenow.md).
 
 ## FAQ
 
