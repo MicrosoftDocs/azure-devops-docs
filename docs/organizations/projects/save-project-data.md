@@ -51,6 +51,6 @@ To learn more about how we manage and protect your data, read our [Data Protecti
 
 You can easily save data stored for a project collection
 by [making a backup of the database](/azure/devops/server/admin/backup/config-backup-sched-plan). You can also
-use the same steps as above.
+use the previously mentioned steps.
 
 ::: moniker-end

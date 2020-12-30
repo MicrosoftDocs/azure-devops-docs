@@ -25,7 +25,7 @@ When you're contacting support for notification issues, it's good to have answer
 4. Are you getting other types of emails?
 5. Is it just you or are others also not getting emails they expect?
 6. Can you supply IDs such as work item, build, or pull request IDs of recent events and an approximate time of the event?
-7. Can you forward a sample email of a delayed or unexpected email? If not, copy and provide the URL from the View Result button on an email.
+7. Can you forward a sample email of a delayed or unexpected email? If not, copy and provide the URL from the View Result on an email.
 
 It's best to have a recent event reference for the notification in question. Full details about the event and notification delivery are retained for a few days and are beneficial for resolution. You might be asked to reproduce the issue with a new event and provide the following information:
 - time/date of the event 

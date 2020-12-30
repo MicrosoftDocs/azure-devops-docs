@@ -199,7 +199,7 @@ You can rename the backlog, change the color, add work item types, and change th
 
 ::: moniker range="azure-devops"
 
-Here, we've renamed the backlog, added **Customer Ticket** and **Issue**, and changed the default type to *Customer Ticket*. Simply check those boxes of the work item types to include on the backlog. 
+Here, we've renamed the backlog, added **Customer Ticket** and **Issue**, and changed the default type to *Customer Ticket*. Check those boxes of the work item types to include on the backlog. 
 
 :::image type="content" source="media/backlogs/add-oob-issue-to-backlog.png" alt-text="On Edit backlog, Stories and Tickets is entered in Name, and there is a list of work item types for this backlog level.":::
  

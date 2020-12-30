@@ -20,7 +20,7 @@ Every extension has a JSON manifest file which defines basic info about the exte
 
 Start by creating a file named `vss-extension.json` at the root of your extension folder. This file contains required attributes, like the extension's ID and its installation targets (where it can run). It also defines the contributions being made by your extension.
 
-Here is an example of what a typical manifest will look like:
+See the following example of a typical manifest:
 
 [!code-json[](../_data/extension-typical.json)]
 
@@ -61,7 +61,7 @@ By default, all extensions in the [Azure DevOps Marketplace](https://marketplace
 }            
 ```
 
-Or simply:
+Or:
 
 ```json
 {
@@ -465,7 +465,7 @@ Resolves to the following installation targets:
 
 Demands let you specify capabilities and other features required by your extension. These demands can then be used to limit where your extension can be published or installed.
 
-In the future, demands will be used by the Visual Studio Marketplace to list the products and environments your extension is generally compatible with. This will help customers understand whether your extension will work with their version of TFS (for example).
+In the future, demands get used by the Visual Studio Marketplace to list the products and environments your extension is generally compatible with. This helps customers understand whether your extension works with their version of TFS (for example).
 
 Demands are specified in the extension manifest. For example:
 
@@ -524,7 +524,7 @@ Properties for the Files section:
 - **addressable** – (optional) Set to **true** if you want your file to be URL-addressable. Defaults to **false**.
 - **packagePath** – (optional) Path to the resource within the package. Defaults to the relative path on disk from your root directory.
 - **contentType** – (optional) MIME type of the file. Defaults to a best guess based on the file extension and OS settings.
-- **assetType** – (optional) Specify the value of the Type attribute of the <Asset> entry in the VSIX manifest. Can also be an array of strings, in which case multiple <Asset> entries will be added for this file. Defaults to the packagePath.
+- **assetType** – (optional) Specify the value of the Type attribute of the <Asset> entry in the VSIX manifest. Can also be an array of strings, in which case multiple <Asset> entries get added for this file. Defaults to the packagePath.
 - **lang** – (optional) Language of this asset. Localized files are served based on the Accept-Language header. Leave blank to signify this file is in the default (or fallback) language. Localized versions of the same file should have the same assetType.
 
 ## Contributions
@@ -570,8 +570,8 @@ a dot (.). For example: `ms.vss-web.hub` is the full identifier for the contribu
 by the "ms" (Microsoft) publisher.
 
 *Relative* contribution references may be used within an extension manifest for a contribution's reference to another contribution or contribution
-type within that same extension. In this case, the publisher and extension identifiers are NOT included, and the identifier is simply a dot (.) followed
-by the contribution identifier. For example, ".hub" may be used within the "vss-web" extension mentioned above as a shortcut for "ms.vss-web.hub".
+type within that same extension. In this case, the publisher and extension identifiers are NOT included, and the identifier is a dot (.) followed
+by the contribution identifier. For example, ".hub" may be used within the "vss-web" extension mentioned previously as a shortcut for "ms.vss-web.hub".
 
 <a name="contributionTargets"></a>
 

@@ -214,7 +214,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
     <img src="media/upload-new-extension.png" alt="Visual Studio Marketplace new extension development" style="border: 1px solid #C3C3C3;" /> 
 
-3. Drag and drop your file or select **click** to find your VSIX file, which you created in the previous packaging step, and then choose **Upload**. 
+3. Drag and drop your file or select it to find your VSIX file, which you created in the previous packaging step, and then choose **Upload**. 
 
    ![Upload new extension for Azure DevOps](media/upload-new-extension2.png)
 
