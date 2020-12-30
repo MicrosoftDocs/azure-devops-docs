@@ -14,11 +14,11 @@ To use this API, users must provide an [Azure Active Directory (AAD) access toke
 
 Users can acquire an access token using any authentication method outside of “on-behalf-of application” flows, such as client credential flow.  Valid authentication methods include [device code](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#device-code), [on-behalf-of user](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#on-behalf-of), [username/password](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#usernamepassword), and the [authorization code flow](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#authorization-code).  If multi-factor authentication is enabled in the user's AAD tenant, they must use the authorization code flow, which can be accomplished with the Microsoft Authentication Library (MSAL).  A complete list of MSAL authentication flows can be found under [Microsoft Authentication Library "Authentication flows" documentation](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#client-credentials).
 
-[!IMPORTANT]
-To use the MSAL library to automatically acquire and refresh access tokens, users must:
-1. [Have an AAD tenant with an active Azure subscription](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant) 
-2. [Register an application in their AAD tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) 
-3. [Add Azure DevOps permissions to the application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis) 
+    [!IMPORTANT]
+    To use the MSAL library to automatically acquire and refresh access tokens, users must:
+    1. [Have an AAD tenant with an active Azure subscription](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant) 
+    2. [Register an application in their AAD tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) 
+    3. [Add Azure DevOps permissions to the application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis) 
 
 
 ### Getting Started with a Quickstart Application
@@ -31,37 +31,37 @@ To use application Quickstart, follow the documentation under "Quickstarts" for 
 #### Example: Getting Started with a Python Flask Quickstart Application
 1. Once you've registered your application in an AAD tenant with an active Azure subscription, in the Azure Portal, navigate to your registered application under “Azure Active Directory” -> “App Registrations”
    
-   ![Open "Azure Active Directory" -> "App Registrations"](./media/personal-access-token-rest-api/step1-aad-app-registrations.png)
+   ![Open "Azure Active Directory" -> "App Registrations"](./media/manage-personal-access-tokens-via-api/step1-aad-app-registrations.png)
 
 2. Select your application and navigate to “API Permissions” 
    
-   ![Select your application and navigate to "API Permissions"](./media/personal-access-token-rest-api/step2-api-permissions.png)
+   ![Select your application and navigate to "API Permissions"](./media/manage-personal-access-tokens-via-api/step2-api-permissions.png)
 
 3. Select “Add a permission” and select “Azure DevOps” -> check “user_impersonation” -> select “Add permissions” 
    
-   ![Add the "Azure DevOps" -> "user_impersonation" permission](./media/personal-access-token-rest-api/step3-add-ado-permissions.png)
+   ![Add the "Azure DevOps" -> "user_impersonation" permission](./media/manage-personal-access-tokens-via-api/step3-add-ado-permissions.png)
 
 4. Select “Quickstart” from the left navigation panel
    
 5. Select your application type: for Python Flask, select “Web application” 
 
-    ![Select the "Web application" type](./media/personal-access-token-rest-api/step5-select-app-type.png)
+    ![Select the "Web application" type](./media/manage-personal-access-tokens-via-api/step5-select-app-type.png)
 
 6. Select your application platform 
    
-    ![Select the "Python" application platform](./media/personal-access-token-rest-api/step6-select-app-platform.png)
+    ![Select the "Python" application platform](./media/manage-personal-access-tokens-via-api/step6-select-app-platform.png)
 
 7. Make sure you've met the necessary prerequisites, then allow Azure Portal to make the necessary changes to configure your application.  The “reply URL” will be the redirect URL that was set at application creation + “/getAToken” 
    
-    ![Allow the Azure Portal to make the necessary changes to configure your application](./media/personal-access-token-rest-api/step7-allow-portal-configuration.png)
+    ![Allow the Azure Portal to make the necessary changes to configure your application](./media/manage-personal-access-tokens-via-api/step7-allow-portal-configuration.png)
 
 8. Download the Quickstart application and extract the files
 
-    ![Download the Quickstart application and extract the files](./media/personal-access-token-rest-api/step8-download-and-extract.png)
+    ![Download the Quickstart application and extract the files](./media/manage-personal-access-tokens-via-api/step8-download-and-extract.png)
 
 9.  Install the application requirements and run the application to ensure you have all necessary dependencies.  Note that the application is initially configured to hit an endpoint in the Microsoft Graph API; users can change this to the PAT Lifecycle API by following the additional configuration instructions below. 
     
-    ![Install the application requriements and run the application to ensure you have all necessary dependencies](./media/personal-access-token-rest-api/step9-install-and-run.png)
+    ![Install the application requriements and run the application to ensure you have all necessary dependencies](./media/manage-personal-access-tokens-via-api/step9-install-and-run.png)
 
 
 ### Configuring a Quickstart Application
@@ -71,7 +71,7 @@ This example from a Quickstart Python Flask web application (in the file 'app_co
 
 Finally, users should follow instructions to secure their client secret, which is initially inserted in plain-text into the application configuration file.  Users should remove the plain-text variable from the configuration file and use an environment variable or Azure KeyVault to secure their application's secret.  Alternatively, users can choose to use a certificate instead of a client secret; this is the recommended option if the application will eventually be used in production.  The instructions for using a certificate can be found in the final step of the Quickstart application set up.
 
-[!CAUTION] Never leave a plain-text client secret in production application code.
+    [!CAUTION] Never leave a plain-text client secret in production application code.
 
 
 #### Example: Configuring a Python Flask Quickstart Application for the PAT Lifecycle Management API
@@ -153,8 +153,8 @@ Finally, users should follow instructions to secure their client secret, which i
     # Specifies the token cache should be stored in server-side session
     ```
 
-    ![TIP]
-    If your application is configured for a specific tenant (rather than the multi-tenant configuration), use the alternate value for the AUTHORITY variable, adding the specific tenant name in "Enter_the_Tenant_Name_Here".
+        ![TIP]
+        If your application is configured for a specific tenant (rather than the multi-tenant configuration), use the alternate value for the AUTHORITY variable, adding the specific tenant name in "Enter_the_Tenant_Name_Here".
 
 6. Rerun the application to test that you can GET all PAT tokens for the requesting user.  Once you've verified this, feel free to modify the contents of 'app.py' and the 'ms-identity-python-webapp-master\templates' directory to support sending requests to the rest of the PAT Lifecycle API endpoints.  For an example of a Python Flask Quickstart application that has been modified to support requests to all PAT Lifecycle API endpoints, see this sample repo on GitHub: TODO
 
