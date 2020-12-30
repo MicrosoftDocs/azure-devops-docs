@@ -1,4 +1,4 @@
-# Manage Personal Access Tokens via API
+# Manage personal access tokens via API
 ![INCLUDE version-vsts-only]
 
 ## Introduction: PAT Lifecycle Management API
