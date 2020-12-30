@@ -1,3 +1,16 @@
+---
+title: Manage personal access tokens via API
+titleSuffix: Azure DevOps
+description: Users can utilize the PAT Lifecycle Management API to get, create, update, and revoke their personal access tokens (PATs).
+ms.technology: devops-security
+ms.topic: conceptual
+ms.author: caosadci
+author: catherineosadciw
+ms.reviewer: wonga
+ms.date: 12/30/2020
+monikerRange: 'azure-devops'
+---
+
 # Manage personal access tokens via API
 ![INCLUDE version-vsts-only]
 
