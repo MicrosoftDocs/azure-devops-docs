@@ -153,7 +153,7 @@ of [ServiceNow](https://www.servicenow.com/) to which applications can be instal
 
 1. After the deployment, the change request is closed automatically. 
 
-## YAML Pipelines
+## Yaml pipelines
 
 This tutorial assumes you have a yaml pipeline with a single stage that deploys to an environment called 'latest'. 
 
