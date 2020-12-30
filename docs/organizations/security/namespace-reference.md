@@ -3,7 +3,7 @@ title: Namespace reference
 titleSuffix: Azure DevOps
 description: Understand the set of namespaces used to manage security  
 ms.technology: devops-security
-ms.custom: quarterly-review, devx-track-azurecli
+ms.custom: quarterly-review
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
