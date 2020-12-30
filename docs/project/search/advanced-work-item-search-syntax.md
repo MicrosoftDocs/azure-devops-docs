@@ -1,5 +1,5 @@
 ---
-title: Use advanced workitem search options
+title: Use advanced work item search options
 description: How to use Work Item Search - Advanced options for Work Item Search in Microsoft Azure DevOps for all projects. 
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.technology: devops-collab
@@ -118,10 +118,10 @@ Narrow the search to a specific location using the `proj`, `area`, or `iteration
   
 <a name="quicknavigation"></a>
 
-## Quickly navigate to a work item using its ID
+## Quickly go to a work item using its ID
 
 Type or paste the work item ID in the search box in the Azure DevOps title bar 
-to quickly navigate to it. Searching for a work item ID opens the work item in a 
+to quickly go to it. Searching for a work item ID opens the work item in a 
 modal dialog, providing quick access to read and edit work items.
 
 ::: moniker range=">= azure-devops-2019"  

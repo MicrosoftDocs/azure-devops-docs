@@ -58,7 +58,7 @@ Learn how to perform a work item search to quickly find work items defined withi
 3. Select a snippet of a work item to display it in the right window.
   
    >Open the search results in a new browser tab from a search box by
-   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking 
+   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and selecting 
    ![start search icon](../../project/search/media/shared/start-search-icon.png) **start search**.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab.
@@ -92,7 +92,7 @@ Learn how to perform a work item search to quickly find work items defined withi
    to a user named Chris.
 
 4. Narrow your search to specific types
-   and states, by using the drop-down selector lists at the top of the results page.
+   and states, by using the drop-down selector lists at the upper portion of the results page.
 
 ## Next steps
 

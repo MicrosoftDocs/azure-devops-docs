@@ -95,8 +95,8 @@ If you need to migrate build pipelines to a new project (perhaps because you're 
 
 ## Artifacts
 
-* Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project will become public.
-* Be aware that public feeds cannot have upstream sources. All existing upstream settings of the feeds that are scoped to the project will be disabled once the project becomes public.
+* Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project become public.
+* Be aware that public feeds cannot have upstream sources. All existing upstream settings of the feeds that are scoped to the project are disabled once the project becomes public.
 
 ## Extensions
 

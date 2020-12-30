@@ -86,7 +86,7 @@ When you inform your users of the completed change, include the following tasks 
 
     b. Select **Personal access tokens**, and then select **New Token**.
     
-     ![Select New Token button to create](media/shared/select-personal-access-tokens-new-token.png)
+     ![Select New Token](media/shared/select-personal-access-tokens-new-token.png)
 
     c. Complete the form, and then select **Create**.
 
