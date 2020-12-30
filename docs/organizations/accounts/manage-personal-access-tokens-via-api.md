@@ -90,84 +90,83 @@ Finally, users should follow instructions to secure their client secret, which i
 #### Example: Configuring a Python Flask Quickstart Application for the PAT Lifecycle Management API
 1. Once you've downloaded your Quickstart application, installed its dependencies, and tested that it runs in your environment, open the 'app_config.py' file in your editor of choice.  The file should resemble the following code snippet; for clarity, comments referencing the default Microsoft Graph API configuration have been removed: 
 
-    ```
-    import os
+```
+import os
 
-    CLIENT_ID = "YOUR_CLIENT_ID_HERE" 
-    # Application (client) ID of app registration
+CLIENT_ID = "YOUR_CLIENT_ID_HERE" 
+# Application (client) ID of app registration
 
-    CLIENT_SECRET = "YOUR_CLIENT_SECRET_HERE" 
-    # Placeholder - for use ONLY during testing.
-    # In a production app, we recommend you use a more secure method of storing your secret,
-    # like Azure Key Vault. Or, use an environment variable as described in Flask's documentation:
-    # https://flask.palletsprojects.com/en/1.1.x/config/#configuring-from-environment-variables
-    # CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-    # if not CLIENT_SECRET:
-    #     raise ValueError("Need to define CLIENT_SECRET environment variable")
+CLIENT_SECRET = "YOUR_CLIENT_SECRET_HERE" 
+# Placeholder - for use ONLY during testing.
+# In a production app, we recommend you use a more secure method of storing your secret,
+# like Azure Key Vault. Or, use an environment variable as described in Flask's documentation:
+# https://flask.palletsprojects.com/en/1.1.x/config/#configuring-from-environment-variables
+# CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+# if not CLIENT_SECRET:
+#     raise ValueError("Need to define CLIENT_SECRET environment variable")
 
-    AUTHORITY = "https://login.microsoftonline.com/YOUR_AAD_TENANT_ID_HERE"  # For multi-tenant app
-    # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
+AUTHORITY = "https://login.microsoftonline.com/YOUR_AAD_TENANT_ID_HERE"  # For multi-tenant app
+# AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
 
-    REDIRECT_PATH = "/getAToken"  
-    # Used for forming an absolute URL to your redirect URI.
-    # The absolute URL must match the redirect URI you set
-    # in the app's registration in the Azure portal.
+REDIRECT_PATH = "/getAToken"  
+# Used for forming an absolute URL to your redirect URI.
+# The absolute URL must match the redirect URI you set
+# in the app's registration in the Azure portal.
 
-    ENDPOINT = 'https://graph.microsoft.com/v1.0/users'  
+ENDPOINT = 'https://graph.microsoft.com/v1.0/users'  
 
-    SCOPE = ["User.ReadBasic.All"]
+SCOPE = ["User.ReadBasic.All"]
 
-    SESSION_TYPE = "filesystem"  
-    # Specifies the token cache should be stored in server-side session
-    ```
+SESSION_TYPE = "filesystem"  
+# Specifies the token cache should be stored in server-side session
+```
 
 2. Configure the client secret as desired (either by using an environment variable, Azure KeyVault, or by switching to a certificate)
    
 3. Change the ENDPOINT variable to the desired Azure DevOps collection URL and API endpoint, e.g. for a collection named "testCollection":  
 
-    ```
-    # Fill in the url to the user's ADO collection + the PAT
-    # Lifecycle API endpoint here
+```
+# Fill in the url to the user's ADO collection + the PAT
+# Lifecycle API endpoint here
 
-    ENDPOINT = 'https://dev.azure.com/testCollection/_apis/Tokens/Pats?api-version=6.1-preview'
-    ```
+ENDPOINT = 'https://dev.azure.com/testCollection/_apis/Tokens/Pats?api-version=6.1-preview'
+```
 
 4. Change the SCOPE variable to reference the Azure DevOps API resource; the character string is the resource ID for the Azure DevOps API, and the “.default” scope refers to all scopes for that resource ID. 
 
-    ```
-    SCOPE = ["499b84ac-1321-427f-aa17-267ca6975798/.default"]
-    ```
+```
+SCOPE = ["499b84ac-1321-427f-aa17-267ca6975798/.default"]
+```
 
 5. Verify that the final 'app_config.py' file matches the following, with your CLIENT_ID, tenant ID, and desired collection URL.  You should also ensure that the CLIENT_SECRET has been moved to an environment variable, Azure KeyVault, or swapped with a certificate for your registered application:
 
-    ```
-    import os
+```
+import os
 
-    CLIENT_ID = "YOUR_CLIENT_ID_HERE" 
-    # Application (client) ID of app registration
+CLIENT_ID = "YOUR_CLIENT_ID_HERE" 
+# Application (client) ID of app registration
 
-    # Note that the CLIENT_SECRET has been removed and moved to an environment variable or Azure KeyVault
+# Note that the CLIENT_SECRET has been removed and moved to an environment variable or Azure KeyVault
 
-    AUTHORITY = "https://login.microsoftonline.com/YOUR_AAD_TENANT_ID_HERE"  # For multi-tenant app
-    # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
+AUTHORITY = "https://login.microsoftonline.com/YOUR_AAD_TENANT_ID_HERE"  # For multi-tenant app
+# AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
 
-    REDIRECT_PATH = "/getAToken"  
-    # Used for forming an absolute URL to your redirect URI.
-    # The absolute URL must match the redirect URI you set
-    # in the app's registration in the Azure portal.
+REDIRECT_PATH = "/getAToken"  
+# Used for forming an absolute URL to your redirect URI.
+# The absolute URL must match the redirect URI you set in the app's registration in the Azure portal.
 
-    ENDPOINT = 'https://dev.azure.com/testCollection/_apis/Tokens/Pats?api-version=6.1-preview' 
-    # Used to onfigure user's collection URL and the desired API endpoint
+ENDPOINT = 'https://dev.azure.com/testCollection/_apis/Tokens/Pats?api-version=6.1-preview' 
+# Used to onfigure user's collection URL and the desired API endpoint
 
-    SCOPE = ["499b84ac-1321-427f-aa17-267ca6975798/.default"]
-    # Means "All scopes for the Azure DevOps API resource"
+SCOPE = ["499b84ac-1321-427f-aa17-267ca6975798/.default"]
+# Means "All scopes for the Azure DevOps API resource"
 
-    SESSION_TYPE = "filesystem"  
-    # Specifies the token cache should be stored in server-side session
-    ```
+SESSION_TYPE = "filesystem"  
+# Specifies the token cache should be stored in server-side session
+```
 
-        ![TIP]
-        If your application is configured for a specific tenant (rather than the multi-tenant configuration), use the alternate value for the AUTHORITY variable, adding the specific tenant name in "Enter_the_Tenant_Name_Here".
+    ![TIP]
+    If your application is configured for a specific tenant (rather than the multi-tenant configuration), use the alternate value for the AUTHORITY variable, adding the specific tenant name in "Enter_the_Tenant_Name_Here".
 
 6. Rerun the application to test that you can GET all PAT tokens for the requesting user.  Once you've verified this, feel free to modify the contents of 'app.py' and the 'ms-identity-python-webapp-master\templates' directory to support sending requests to the rest of the PAT Lifecycle API endpoints.  For an example of a Python Flask Quickstart application that has been modified to support requests to all PAT Lifecycle API endpoints, see this sample repo on GitHub: TODO
 
