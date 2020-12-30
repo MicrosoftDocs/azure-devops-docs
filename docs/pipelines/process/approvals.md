@@ -182,6 +182,14 @@ When the stage using the lock completes, then another stage can proceed to use t
 Also, only one stage will be allowed to continue.
 Any other stages which tried to take the lock will be cancelled.
 
+## ServiceNow Change Management
+
+**This checks needs the [ServiceNow Change Management extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-servicenowchangerequestmanagement) to be installed from the marketplace**
+
+The **servicenow change management** check allows for an integration of ServiceNow change management process in the pipelines. 
+By adding the check, a new change request in ServiceNow can be automatically created at the start of the stage. The pipeline waits for the change process to complete before starting the stage.
+More details are avialable [here](../release/approvals/servicenow.md).
+
 ## FAQ
 
 ### The checks defined did not start. What happened?
