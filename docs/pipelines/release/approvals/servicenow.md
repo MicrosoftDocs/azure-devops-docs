@@ -120,6 +120,7 @@ of [ServiceNow](https://www.servicenow.com/) to which applications can be instal
    - **Work notes**: Work notes for the change request.
    - **Additional change request parameters**:  Additional properties of the change request to set.
 
+
    > The update task would fail if none of the fields in the change request are updated during the execution of the task. ServiceNow ignores invalid fields and values passed to the task. 
 
 ### Execute a release
@@ -176,7 +177,7 @@ This tutorial assumes you have a yaml pipeline with a single stage that deploys 
 
 1. Once the check is complete, the stage shall start execution. The change would be closed when update task at the end of the stage executes. 
 
-   ![Executed run](media/servicenow-13.png)
+   ![Executed run](media/servicenow-14.png)
 
 ## FAQs
 
