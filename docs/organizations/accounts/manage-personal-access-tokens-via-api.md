@@ -1,8 +1,13 @@
-# Manage Personal Access Tokens with REST API
+# Manage Personal Access Tokens via API
 ![INCLUDE version-vsts-only]
 
 ## Introduction: PAT Lifecycle Management API
-TODO: Angel to write intro to API
+When dealing with a large collection of [personal access tokens](use-personal-access-tokens-to-authenticate.md) (PATs), it may become cumbersome to manage the maintenance of these tokens via the UI alone. 
+
+With the personal access token management API, it is far easier for users to manage the PATs associated with their organizations via automated processes. This rich set of APIs enable our users with the ability to better manage the PATs they own, offering them functionality, such as creating new personal access tokens with a desired scope and duration, renew existing personal access tokens, or expire existing personal access tokens.
+
+To see the full list of available endpoints, [view the API reference here](link TODO).
+
 
 ## API Authentication
 To use this API, users must provide an [Azure Active Directory (AAD) access token](https://docs.microsoft.com/azure/active-directory/develop/access-tokens) instead of a PAT token.
