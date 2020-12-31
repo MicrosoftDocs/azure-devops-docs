@@ -199,7 +199,7 @@ Learn more about:
 
 A stage is a collection of related jobs.
 By default, stages run sequentially.
-Each stage starts only after the preceding stage is complete unless otherwise specified via the `dependsOn ` property.
+Each stage starts only after the preceding stage is complete unless otherwise specified via the `dependsOn` property.
 
 Use [approval checks](process/approvals.md) to manually control when a stage should run.
 These checks are commonly used to control deployments to production environments.
