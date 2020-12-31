@@ -50,6 +50,23 @@ Once the repo is created, you are presented with step-by-step instructions to qu
 
 ![New Repo Options and Links Warning](./media/move-git-repos-between-team-projects/MoveRepo-Warning.png)
 
+#### Prepare the source repository
+
+> [!IMPORTANT]
+> This process will migrate a local repository to the target.  It is important that the local repository contains all the data you want to migrate.
+
+To achieve this, you may need to clone the source repository to a local source repository.
+
+> Command Line: `git clone <source remote repository>`
+
+And then ensure you have all the branches in the local repository just created by running `git checkout -t  <branch>` ib each branch you want to be migrated.
+
+ This PowerShell script will checkout all the branches from the source.
+
+```powershell
+$remote = git branch -r
+foreach ($branch in $remote) { git checkout -t  $branch.Trim() }
+```
 #### Mirror the repository
 
 Switch to a Developer Command Prompt and path to your local (source) repository for the MigrationDemo repo in FabrikamOld. Run the `git clone --mirror` command, using the Clone URL from above.
