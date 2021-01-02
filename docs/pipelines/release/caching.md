@@ -420,6 +420,29 @@ steps:
 - script: pipenv install
 ```
 
+
+## Golang
+
+For Golang projects, The packages to be downloaded can be specified in the go.mod file. Please set your GOCACHE variable to where you want the cache to be downloaded if it's not already set.
+
+### Example
+
+```yaml
+variables:
+  GO_CACHE_DIR: $(Pipeline.Workspace)/.cache/go-build/
+
+steps:
+- task: Cache@2
+  inputs:
+    key: 'go | "$(Agent.OS)" | go.mod'
+    restoreKeys: | 
+      go | "$(Agent.OS)"
+    path: $(GO_CACHE_DIR)
+  displayName: Cache GO packages
+
+```
+
+
 ## PHP/Composer
 
 For PHP projects using Composer, override the `COMPOSER_CACHE_DIR` [environment variable](https://getcomposer.org/doc/06-config.md#cache-dir) used by Composer.
