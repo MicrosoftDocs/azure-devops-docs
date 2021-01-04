@@ -81,7 +81,7 @@ Welcome to what's new in the Azure DevOps docs from December 1, 2020 through Dec
 - [Build multiple branches](/azure/devops/pipelines/build/ci-build-git)
 - [Create your first pipeline](/azure/devops/pipelines/create-first-pipeline)
 - [Quickstart: trigger a pipeline run from GitHub Actions](/azure/devops/pipelines/ecosystems/github-actions)
-- [Customer intent: As an Azure DevOps user, I want to build a pipeline that deploys a Xamarin app so that I can take advantage of automated builds.](/azure/devops/pipelines/ecosystems/xamarin)
+- [Quickstart: Build and deploy Xamarin apps with a pipeline](/azure/devops/pipelines/ecosystems/xamarin)
 - [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines)
 - [Expressions](/azure/devops/pipelines/process/expressions)
 - [Runtime parameters](/azure/devops/pipelines/process/runtime-parameters)
