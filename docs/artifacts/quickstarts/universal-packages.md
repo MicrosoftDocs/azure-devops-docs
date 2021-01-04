@@ -65,7 +65,7 @@ If you don't already have an Azure Artifacts feed, create one now and note its n
 
    Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team.
    
-   Enabling [upstream sources](../concepts/upstream-sources.md) to public sources makes it easy to use your favorite OSS packages as well as gives you more protection against outages and corrupted or compromised packages.
+   Enabling [upstream sources](../concepts/upstream-sources.md) makes it easy to use your favorite OSS packages and gives you more protection against outages and corrupted or compromised packages.
 
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box](../media/new-feed-dialog.png)
@@ -90,6 +90,9 @@ After you've installed the CLI, open your shell of choice (for example, PowerShe
 az login
 ```
 
+> [!NOTE]
+> To access tenant without subscriptions, run `az login` with "--allow-no-subscription" option.
+
 Next, set the organization that you just logged in to as the CLI's default. Again, replace the item in square brackets.
 
 ```azurecli
@@ -103,6 +106,9 @@ After you've installed the CLI, open your shell of choice (for example, PowerShe
 ```azurecli
 az login
 ```
+
+> [!NOTE]
+> To access tenant without subscriptions, run `az login` with "--allow-no-subscription" option.
 
 Next, set the organization that you just logged in to as the CLI's default. Again, replace the item in square brackets.
 
@@ -197,8 +203,7 @@ Wildcard expressions do not currently support pre-release versions. It is not po
   
 Note that while Semantic Versioning specifies that versions must increase over time, Azure Artifacts does not enforce this rule. As such, the highest matching version that will be downloaded is not necessarily the most recently published version.
 
-## Next steps
+## What's next?
 
-In this quickstart, you published your first Universal Package and then downloaded back to your machine. To learn more about the Universal Package CLI, append `-h` to any CLI command.
-
-To use Universal Packages in Azure Pipelines, see the [Azure Pipelines doc for Universal Packages](../../pipelines/artifacts/universal-packages.md) or see the full [Universal Packages task documentation](../../pipelines/tasks/package/universal-packages.md).
+- [Publish and download Universal Packages in Azure Pipelines](../../pipelines/artifacts/universal-packages.md).
+- [Universal Package task](../../pipelines/tasks/package/universal-packages.md).
