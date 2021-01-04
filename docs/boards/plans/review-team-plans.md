@@ -151,7 +151,7 @@ Note the following:
 - Plan views are limited to 12 to 13 months. 
 - Plan views are limited to a maximum of ten teams/backlogs
 - Zooming out can cause fields and tags to disappear from the cards. The further you zoom out, the harder it is to fit items on a card. By design, we hide select items depending on the zoom level.  
--  Rollup isn't supported for child work items that belong to a different project then that of the originating parent work item.  
+-  Rollup isn't supported for child work items that belong to a different project than that of the originating parent work item.  
 
 ::: moniker-end  
 
@@ -168,7 +168,7 @@ Note the following:
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot to Open Boards>Plans (Preview).](media/plans/open-plans-preview.png) 
 
-1. To add a plan, choose **New Plan** . 
+1. To add a plan, choose **New Plan**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose New Plan button.](media/plans/add-plan-new-plan-button.png) 
@@ -187,7 +187,7 @@ Note the following:
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot to Open Boards>Plans, extension](media/plans/open-plans-vert.png) 
 
-1. To add a plan, choose **New Plan** . 
+1. To add a plan, choose **New Plan**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose New Plan.](media/plans/add-plan.png) 
@@ -210,7 +210,7 @@ Note the following:
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot to Open Boards>Plans](media/plans/open-plans-vert.png) 
 
-1. To add a plan, choose **New Plan** . 
+1. To add a plan, choose **New Plan**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose New Plan.](media/plans/add-plan.png) 
@@ -233,7 +233,7 @@ Note the following:
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, previous nav](media/plans/open-plans-horz.png) 
 
-1. To add a plan, choose **New Plan** . 
+1. To add a plan, choose **New Plan**. 
 
 	![Choose new plan.](media/review-team-plans-no-plans-defined.png)  
 
@@ -275,7 +275,7 @@ Once you've defined a plan, you can further customize it.
 
   :::image type="content" source="media/plans/plan-settings-field-criteria.png" border="true" alt-text="Plan settings dialog, Field criteria page":::   
 
-3. To set a marker, open **Markers**, specify a date and specify a hexidecimal color, or simply choose the color palette icon to change to a new color selected by the system.  	
+3. To set a marker, open **Markers**, specify a date and specify a hexadecimal color, or simply choose the color palette icon to change to a new color selected by the system.  	
 
      :::image type="content" source="media/plans/plan-settings-markers.png" border="true" alt-text="Screenshot to Open the Markers page, specify a date and select a color.":::   
 
@@ -361,6 +361,7 @@ You can interact with the plan in the following ways:
 - To view details for a team, expand the team row by choosing **Expand team row** or clicking once on a sprint within a team row.  
 - To expand and collapse all team rows, choose **Expand all team rows** or **Collapse all team rows** next to **Teams**.  
 - Scroll the view vertically to view teams that appear lower within the plan view. 
+- To view titles only, choose **Collapsed card fields** :::image type="icon" source="media/plans/collapsed-card-fields-icon.png" border="false":::. To view all fields, choose **Expand card fields** :::image type="icon" source="media/plans/expand-card-fields-icon.png" border="false":::.  
 - Click a card title to open the backlog item and view details. Close the work item to return to the plan.   
 - To add a work item to a sprint, choose **Add item** :::image type="icon" source="media/plans/add-item-icon.png" border="false":::  within the sprint and team you want to add it to. 
 - To [change the fields displayed on the cards](#card-settings), choose **More actions** :::image type="icon" source="../../media/icons/more-actions.png" border="false":::. 
@@ -442,7 +443,7 @@ The collapsed card view allows you to quickly switch back and forth between card
 
 ::: moniker range="< azure-devops"  
 
-The collapsed card view allows you to quickly switch back and forth between cards showing titles only and cards showing all fields configured for the plan. To toggle betwee titles only and show all fields, enter "**t**" from your keyboard.     
+The collapsed card view allows you to quickly switch back and forth between cards showing titles only and cards showing all fields configured for the plan. To toggle between titles only and show all fields, enter "**t**" from your keyboard.     
 
 ::: moniker-end 
 
