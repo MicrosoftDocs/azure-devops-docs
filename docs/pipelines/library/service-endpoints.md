@@ -94,7 +94,7 @@ To manage the security for a connection:
 1. To manage security for a service connection, open the service connection and go to more options at top-right corner and choose **Security**.
 ![Azure Resource Manager security](../release/media/azure-rm-endpoint/security.png)
 
-Service connection is a critical resource for various workflows in Azure DevOps like Classic Build and Release pipelines, YAML pipelines, KevVault Variable groups etc. Based on the usage patterns, service connection security is divided into three categories in the service connections new UI.
+Service connection is a critical resource for various workflows in Azure DevOps like Classic Build and Release pipelines, YAML pipelines, KeyVault Variable groups etc. Based on the usage patterns, service connection security is divided into three categories in the service connections new UI.
 * User permissions
 * Pipeline permissions
 * Project permissions
