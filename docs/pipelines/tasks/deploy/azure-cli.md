@@ -113,6 +113,23 @@ Following is an example of a YAML snippet which lists the version of Azure CLI a
       az account show
 ```
 
+The following example illustrates how to pass arguments to your script.
+
+```yaml
+- task: AzureCLI@2
+  displayName: Azure CLI
+  inputs:
+    azureSubscription: <Name of the Azure Resource Manager service connection>
+    scriptType: ps
+    scriptLocation: inlineScript
+    arguments:
+      -Arg1 val1 `
+      -Arg2 val2 `
+      -Arg3 val3
+    inlineScript: |
+      az login --allow-no-subscription
+```
+
 ::: moniker-end
 
 ## Related tasks
