@@ -31,7 +31,7 @@ and use this service connection name in an Azure Web Site Deployment task in a r
 
 You define and manage service connections from the Admin settings of your project:
 
-* Azure DevOps: `https://dev.azure.com/{organization}/{project}/adminservices`
+* Azure DevOps: `https://dev.azure.com/{organization}/{project}/_settings/adminservices`
 * TFS: `https://{tfsserver}/{collection}/{project}/_admin/_services`
 
 <a name="create-new"></a>
