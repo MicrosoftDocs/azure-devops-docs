@@ -1,14 +1,14 @@
 ---
 title: Review team delivery plans 
 titleSuffix: Azure Boards
-description: Add & use plans to review scheduled multi-team deliverables in Azure Boards, Azure DevOps, & Team Foundation Server   
+description: Add & use plans to review scheduled multi-team deliverables in Azure Boards and Azure DevOps   
 ms.technology: devops-agile
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 11/18/2020
+ms.date: 01/04/2021
 ---
 
 
@@ -137,7 +137,21 @@ For example, we use Delivery Plans internally to share the schedule of Features.
 
 In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
-    
+
+## Best practices 
+
+- Use a consistent sprint schedule across your project teams and organization. Use the same sprints for backlogs, features, and epics. Don't create specific sprints for epics or other portfolio backlogs. 
+- Use **Start Date** and **Iteration** to specify the time frame for a work item. Or, use **Start Date** and **Target Date**. However, don't specify both **Iteration** and **Target Date** for a work item. The **Target Date** will always override the **Iteration** end date on the plan.
+- Minimize the number of fields you choose to display on your cards.  
+- Eliminate cross-team ownership of area paths. Cross-team area path ownership isn't recommended and can lead to undesirable edge cases.  
+
+
+Note the following: 
+- Plan views are limited to 12 to 13 months. 
+- Plan views are limited to a maximum of ten teams/backlogs
+- Zooming out can cause fields and tags to disappear from the cards. The further you zoom out, the harder it is to fit items on a card. By design, we hide select items depending on the zoom level.  
+ 
+
 ## Add a plan  
 
  
@@ -229,10 +243,10 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 
 When defining a plan, note the following:  
 - Use the name and description field to clearly identify your plan within the project 
-- You can choose one or more teams from any project defined in the organization or collection  
+- You can choose one or more teams from any project defined in the organization or collection, up to a maximum of ten teams   
 - You can choose one or more [active backlogs for a team](../../organizations/settings/select-backlog-navigation-levels.md)
 - You can reorder the team backlogs by dragging and dropping them into the sequence you want 
--  To limit the number or types of work items, specify the field criteria. 
+-  To filter for specific work items, specify the field criteria. 
 
 <a id="card-settings">  </a>
 
@@ -406,7 +420,44 @@ For work items that span one or more iterations, you can define the **Start Date
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing features that span iterations](media/plans/features-span-iterations-preview.png)  
 
-::: moniker-end
+::: moniker-end 
+
+
+
+### View titles only, collapsed card view 
+
+::: moniker range="azure-devops"  
+
+The collapsed card view allows you to quickly switch back and forth between cards showing titles only and cards showing all fields configured for the plan. To view titles only, choose **Collapsed card fields** :::image type="icon" source="media/plans/collapsed-card-fields-icon.png" border="false":::. To view all fields, choose **Expand card fields** :::image type="icon" source="media/plans/expand-card-fields-icon.png" border="false":::.  
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing location of collapse/expand card fields feature icons. ](media/plans/collapse-card-fields.png)  
+
+::: moniker-end 
+
+::: moniker range="< azure-devops"  
+
+The collapsed card view allows you to quickly switch back and forth between cards showing titles only and cards showing all fields configured for the plan. To toggle betwee titles only and show all fields, enter "**t**" from your keyboard.     
+
+::: moniker-end 
+
+
+::: moniker range="azure-devops"  
+
+### View rollup of features and epics 
+
+Rollup displays a fuller picture of the underlying work directly on the cards in your delivery plan. Rollup views are available for features, epics, or any portfolio backlog you've added to your project. To enable this feature, open your plan settings, choose **Fields**, and select **Show child rollup data**.
+
+For example, here we show a plan view of four scenarios with rollup of the child features, user stories, and bugs for a single team.   
+
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing rollup view of four scenarios. ](media/plans/rollup-view.png)  
+
+
+::: moniker-end 
+
+
 
 ### Update the iteration for a backlog item 
 
