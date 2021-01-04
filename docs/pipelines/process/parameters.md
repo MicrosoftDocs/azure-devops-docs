@@ -23,10 +23,6 @@ Templates come with a set of predefined process parameters.
 
 Process parameters differ from variables in the kind of input supported by them. Variables only take in string inputs while process parameters in addition to string inputs support more data types like check boxes and drop-down list boxes.
 
-::: moniker range="<= tfs-2018"
-
-![Predefined process parameters.](media/2017-user-experience/process-parameters-view-1.png)
-::: moniker-end
 
 > [!NOTE]
 > 
