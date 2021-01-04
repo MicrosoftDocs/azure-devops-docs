@@ -137,6 +137,7 @@ For example, we use Delivery Plans internally to share the schedule of Features.
 
 In this way, a Delivery Plan is a driver of alignment while allowing each team to retain a strong sense of autonomy. Individual teams can work to different sprint cadences, if needed, and manage different work item types&mdash;stories, features, or epics. Their work is all visible with the same plan view. Teams can even be part of different projects if they use different processes. You can also customize the card fields so that you only see the data fields of interest and applicable per work item type.  
 
+::: moniker range="azure-devops"  
 
 ## Best practices 
 
@@ -150,7 +151,10 @@ Note the following:
 - Plan views are limited to 12 to 13 months. 
 - Plan views are limited to a maximum of ten teams/backlogs
 - Zooming out can cause fields and tags to disappear from the cards. The further you zoom out, the harder it is to fit items on a card. By design, we hide select items depending on the zoom level.  
- 
+-  Rollup isn't supported for child work items that belong to a different project then that of the originating parent work item.  
+
+::: moniker-end  
+
 
 ## Add a plan  
 
@@ -398,6 +402,7 @@ To gain a summary view of work that is schedule, collapse all teams. You can the
 ::: moniker range="azure-devops" 
 
 Collapse and expand each team row by choosing **Expand team row** or **Collapse team row** next to the team name.
+
 > [!div class="mx-imgBorder"]  
 > ![Collapse click targets](media/plans/overview-preview.png)  
 ::: moniker-end
@@ -446,7 +451,7 @@ The collapsed card view allows you to quickly switch back and forth between card
 
 ### View rollup of features and epics 
 
-Rollup displays a fuller picture of the underlying work directly on the cards in your delivery plan. Rollup views are available for features, epics, or any portfolio backlog you've added to your project. To enable this feature, open your plan settings, choose **Fields**, and select **Show child rollup data**.
+Rollup displays a fuller picture of the underlying work directly on the cards in your delivery plan. Rollup views are available for features, epics, or any portfolio backlog you've added to your project. To enable rollup, open your plan settings, choose **Fields**, and select **Show child rollup data**.
 
 For example, here we show a plan view of four scenarios with rollup of the child features, user stories, and bugs for a single team.   
 
