@@ -47,7 +47,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
   </thead>
 <tr>
     <td><code>azureSubscription</code><br/>Azure subscription</td>
-    <td>(Required) Select an Azure resource manager subscription for the deployment. This parameter is shown only when the selected task version is 0.* as Azure CLI task v1.0 supports only Azure Resource Manager (ARM) subscriptions</td>
+    <td>(Required) Select an Azure Resource Manager subscription for the deployment. This parameter is shown only when the selected task version is 0.* as Azure CLI task v1.0 supports only Azure Resource Manager (ARM) subscriptions</td>
 </tr>
 <tr>
     <td><code>scriptType</code><br/>Script Type</td>
@@ -63,7 +63,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>inlineScript</code><br/>Inline Script</td>
-    <td>(Required) You can write your scripts inline here. When using Windows agent, use PowerShell or PowerShell Core or batch scripting whereas use PowerShell Core or shell scripting when using Linux based agents. For batch files use the prefix \"call\" before every azure command. You can also pass predefined and custom variables to this script using arguments. <br/><b>Example for PowerShell/PowerShellCore/shell:</b> az --version az account show <br/><b>Example for batch:</b> call az --version call az account show</td>
+    <td>(Required) You can write your scripts inline here. When using Windows agent, use PowerShell or PowerShell Core or batch scripting whereas use PowerShell Core or shell scripting when using Linux-based agents. For batch files use the prefix \"call\" before every Azure command. You can also pass predefined and custom variables to this script using arguments. <br/><b>Example for PowerShell/PowerShellCore/shell:</b> az --version az account show <br/><b>Example for batch:</b> call az --version call az account show</td>
 </tr>
 <tr>
     <td><code>arguments</code><br/>Script Arguments</td>
@@ -99,7 +99,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 
 ## Example
 
-Following is an example of a YAML snippet which lists the version of Azure CLI and gets the details of the subscription.
+Following is an example of a YAML snippet that lists the version of Azure CLI and gets the details of the subscription.
 
 ```yaml
 - task: AzureCLI@2
@@ -138,7 +138,7 @@ The following example illustrates how to pass arguments to your script.
 - [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
 - [Azure Web App Deployment](azure-rm-web-app-deployment.md)
 
-## Open source
+## Open-source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
