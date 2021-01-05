@@ -30,9 +30,9 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 
 | Argument | Description |
 | -------- | ----------- |
-| targetPath | Path to the folder or file you want to publish. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. (Required) See [Publishing artifacts](../../artifacts/pipeline-artifacts.md#publishing-artifacts). |
+| targetPath | Path to the folder or file you want to publish. The path must be a fully qualified path or a valid path relative to the root directory of your repository. (Required) See [Publishing artifacts](../../artifacts/pipeline-artifacts.md#publishing-artifacts). |
 | artifactName | Your artifact name. You can specify any name you prefer. E.g.: `drop` (Optional) |
-| artifactType | Artifact publish location. Choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. (Required). Options: pipeline, filepath. Default value: pipeline |
+| artifactType | Artifacts publish location. Choose whether to store the artifact in Azure Pipelines, or to copy it to a file share that must be accessible from the pipeline agent. (Required). Options: pipeline, filepath. Default value: pipeline |
 | fileSharePath | The file share to which the artifact files will be copied. This can include variables. Required when `artifactType` = `filepath`. E.g: `\server\folderName` |
 | parallel | Select whether to copy files in parallel using multiple threads for greater potential throughput. If this setting is not enabled, one thread will be used. (Optional). Default value: false| 
 | parallelCount | Enter the degree of parallelism, or number of threads used, to perform the copy. (Optional) The value must be at least 1 and not greater than 128. | 
