@@ -83,7 +83,8 @@ This example from a Quickstart Python Flask web application (in the file 'app_co
 
 Finally, users should follow instructions to secure their client secret, which is initially inserted in plain-text into the application configuration file.  Users should remove the plain-text variable from the configuration file and use an environment variable or Azure KeyVault to secure their application's secret.  Alternatively, users can choose to use a certificate instead of a client secret; this is the recommended option if the application will eventually be used in production.  The instructions for using a certificate can be found in the final step of the Quickstart application set up.
 
-> [!CAUTION] Never leave a plain-text client secret in production application code.
+> [!CAUTION] 
+> Never leave a plain-text client secret in production application code.
 
 
 #### Example: Configure a Python Flask Quickstart application for the PAT lifecycle management API
@@ -155,7 +156,7 @@ Finally, users should follow instructions to secure their client secret, which i
     # The absolute URL must match the redirect URI you set in the app's registration in the Azure portal.
 
     ENDPOINT = 'https://dev.azure.com/testCollection/_apis/Tokens/Pats?api-version=6.1-preview' 
-    # Used to onfigure user's collection URL and the desired API endpoint
+    # Used to configure user's collection URL and the desired API endpoint
 
     SCOPE = ["499b84ac-1321-427f-aa17-267ca6975798/.default"]
     # Means "All scopes for the Azure DevOps API resource"
@@ -164,7 +165,7 @@ Finally, users should follow instructions to secure their client secret, which i
     # Specifies the token cache should be stored in server-side session
     ```
 
-> ![TIP]
+> [!TIP]
 > If your application is configured for a specific tenant (rather than the multi-tenant configuration), use the alternate value for the AUTHORITY variable, adding the specific tenant name in "Enter_the_Tenant_Name_Here".
 
 6. Rerun the application to test that you can GET all PAT tokens for the requesting user.  Once you've verified this, feel free to modify the contents of 'app.py' and the 'ms-identity-python-webapp-master\templates' directory to support sending requests to the rest of the PAT lifecycle management API endpoints.  For an example of a Python Flask Quickstart application that has been modified to support requests to all PAT lifecycle management API endpoints, see this sample repo on GitHub: TODO
@@ -177,5 +178,6 @@ Once the application is configured and pointing to the correct API endpoint, and
 ### Sample application
 Users can view a sample Python Flask web application configured from a Quickstart application for the PAT lifecycle management API on GitHub here: TODO link to public sample repo
 
-[!div class="nextstepaction"]
-[Learn about the PAT lifecycle management API endpoints](TODO: link to REST API docs)
+## Next steps
+> [!div class="nextstepaction"]
+> [Learn about the PAT lifecycle management API endpoints](TODO: link to REST API docs)
