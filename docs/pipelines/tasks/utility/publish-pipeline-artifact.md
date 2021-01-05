@@ -28,16 +28,11 @@ Use this task in a pipeline to publish your artifacts(note that publishing is NO
 
 ## Arguments
 
-
 | Argument | Description |
 | -------- | ----------- |
-| targetPath | Path to the folder or file you want to publish. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). |
-| artifactName | Specify the name of the artifact that you want to create. It can be whatever you want. For example: `drop` |
+| targetPath | Path to the folder or file you want to publish. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. See [Publishing artifacts](../../artifacts/pipeline-artifacts.md#publishing-artifacts). |
+| artifactName | Your artifact name. You can specify any name you want. For example: `drop` |
 | [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
-
-## Open source
-
-This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## FAQ
 
@@ -46,3 +41,8 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 [!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
 <!-- ENDSECTION -->
+
+## Open-source
+
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
+
