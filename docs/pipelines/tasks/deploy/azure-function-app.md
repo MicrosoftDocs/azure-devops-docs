@@ -88,11 +88,11 @@ The [Kudu REST API](https://github.com/projectkudu/kudu/wiki/REST-API) works on 
 
 ### Zip Deploy
 
-Zip Deploy creates a .zip deployment package from the chosen package or folder and deploys the file contents to the wwwroot folder of the App Service name function app in Azure. This option overwrites all existing contents in the wwwroot folder. For more information, see [Zip deployment for Azure Functions](/azure/azure-functions/deployment-zip-push).
+Zip Deploy creates a .zip deployment package from the chosen package or folder and deploys the file contents to the wwwroot folder of the App Service name function app in Azure. This option overwrites all existing content in the wwwroot folder. For more information, see [Zip deployment for Azure Functions](/azure/azure-functions/deployment-zip-push).
 
-### RunFromPackage
+### Run From Package
 
-Creates the same deployment package as Zip Deploy. However, instead of deploying files to the wwwroot folder, the entire package is mounted by the Functions runtime. With this option, files in the wwwroot folder become read-only. For more information, see [Run your Azure Functions from a package file](/azure/azure-functions/run-functions-from-deployment-package).
+Run From Package creates the same deployment package as Zip Deploy. Instead of deploying files to the wwwroot folder, the Functions runtime mounts the entire package. When you use this option, files in the wwwroot folder become read-only. For more information, see [Run your Azure Functions from a package file](/azure/azure-functions/run-functions-from-deployment-package).
 
 ## Troubleshooting
 
@@ -100,29 +100,30 @@ Creates the same deployment package as Zip Deploy. However, instead of deploying
 
 [!INCLUDE [rm-webapp-functionapp-troubleshoot-shared.md](./includes/rm-webapp-functionapp-troubleshoot-shared.md)]
 
-### Function app deployment on Windows is successful but the app is not working
+### Function app deployment on Windows succeeds but the app doesn't work
 
-This may be because web.config is not present in your app. You can either add a web.config file to your source or auto-generate one using the Application and Configuration Settings of the task.
+This problem could occur if a web.config file isn't present in your app. You can either add a web.config file to your source or automatically generate one by using the **Application and Configuration Settings** of the task.
 
-* Click on the task and go to Generate web.config parameters for Python, Node.js, Go and Java apps.
+1. Select the task and go to **Generate web.config parameters for Python, Node.js, Go and Java apps**:
 
-  ![Generate web.config parameters Dialog](media/azure-rm-function-app-01.png)
+   :::image type="content" source="media/azure-rm-function-app-01.png" alt-text="Screenshot that shows the Generate web.config parameters section.":::
 
-* Click on the more button Generate web.config parameters for Python, Node.js, Go and Java apps to edit the parameters.
 
-  ![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
+1. Select the More button (...) under **Generate web.config parameters for Python, Node.js, Go and Java apps** to edit the parameters:
 
-* Select your application type from the drop down.
-* Click on OK. This will populate web.config parameters required to generate web.config.
+   :::image type="content" source="media/azure-rm-web-app-deployment-02.png" alt-text="Screenshot that shows the Generate web.config parameters.":::
+
+1. Select your application type in the **Application framework** list.
+1. Select **OK**. Doing so will populate the web.config parameters required to generate the web.config file.
 
 ## FAQs
 
 [!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
 
-### I can't deploy to an internal App Service environment using an Azure Resource Manager service connection and a Microsoft-hosted agent
+### I can't deploy to an internal App Service environment by using an Azure Resource Manager service connection and a Microsoft-hosted agent
 
-By design, a Microsoft-hosted agent won't work with an App Service environment. Instead, you must configure a private agent in a virtual machine that's in the same virtual network as the App Service environment. Also, set a private DNS zone to enable communication between the resources.
+By design, a Microsoft-hosted agent won't work with an App Service environment. Instead, you need to configure a private agent in a virtual machine that's in the same virtual network as the App Service environment. Also, set a private DNS zone to enable communication between the resources.
 
-## Open Source
+## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
