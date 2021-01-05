@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 ---
 
 # Manage personal access tokens via API
-[!INCLUDE temp]
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
 When dealing with a large collection of [personal access tokens](use-personal-access-tokens-to-authenticate.md) (PATs), it may become cumbersome to manage the maintenance of these tokens via the UI alone. 
 
