@@ -126,19 +126,18 @@ Finally, users should follow instructions to secure their client secret, which i
 3. Change the ENDPOINT variable to the desired Azure DevOps collection URL and API endpoint, e.g. for a collection named "testCollection":  
 
     ```
-    # Fill in the url to the user's ADO collection + the PAT
-    # lifecycle management API endpoint here
+    # Fill in the url to the user's ADO collection + the PAT lifecycle management API endpoint here
 
     ENDPOINT = 'https://dev.azure.com/testCollection/_apis/Tokens/Pats?api-version=6.1-preview'
     ```
 
-4. Change the SCOPE variable to reference the Azure DevOps API resource; the character string is the resource ID for the Azure DevOps API, and the “.default” scope refers to all scopes for that resource ID. 
+1. Change the SCOPE variable to reference the Azure DevOps API resource; the character string is the resource ID for the Azure DevOps API, and the “.default” scope refers to all scopes for that resource ID. 
 
     ```
     SCOPE = ["499b84ac-1321-427f-aa17-267ca6975798/.default"]
     ```
 
-5. Verify that the final 'app_config.py' file matches the following, with your CLIENT_ID, tenant ID, and desired collection URL.  You should also ensure that the CLIENT_SECRET has been moved to an environment variable, Azure KeyVault, or swapped with a certificate for your registered application:
+2. Verify that the final 'app_config.py' file matches the following, with your CLIENT_ID, tenant ID, and desired collection URL.  You should also ensure that the CLIENT_SECRET has been moved to an environment variable, Azure KeyVault, or swapped with a certificate for your registered application:
 
     ```
     import os
