@@ -36,7 +36,7 @@ PATs are easy to create when you need them and easy to revoke when you don’t. 
 
 ### Q: Is there a way to renew a PAT via REST API?
 
-A: Yes, you can use the "update" endpoint as part of the [PAT Lifecycle Management API](TODO: link to REST API docs).  To get started using this API, see [Manage personal access tokens via API](manage-personal-access-tokens-via-api.md).
+A: Yes, you can use the "update" endpoint as part of the [PAT lifecycle management API](TODO: link to REST API docs) to extend the expiration date of a PAT if it hasn't already expired or been revoked.  To get started using this API, see [Manage personal access tokens via API](manage-personal-access-tokens-via-api.md).
 
 ### Q: Can I use basic auth with all of Azure DevOps REST APIs?
 
