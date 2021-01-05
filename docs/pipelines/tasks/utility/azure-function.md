@@ -1,5 +1,5 @@
 ---
-title: Invoke an Azure Functions task 
+title: Invoke a function task 
 description: Invoke a HTTP triggered function in a function app from Azure Functions and parse the response in Azure Pipelines and TFS
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.topic: reference
@@ -10,7 +10,7 @@ ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Invoke an Azure Functions task
+# Invoke a function task
 
 [!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
