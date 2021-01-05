@@ -41,7 +41,7 @@ You must be [the organization Owner](../security/lookup-organization-owner-admin
 > - Australia
 > - Brazil
 > - Canada
-> - East Asia
+> - Asia Pacific
 > - Europe
 > - India
 > - United Kingdom
