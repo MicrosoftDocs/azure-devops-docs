@@ -137,7 +137,7 @@ Ensure the following IP addresses are allowed for inbound connection, so your or
 > | Australia South East | 20.42.226.0/24 |  
 > | Brazil South | 191.235.226.0/24 |  
 > | Central Canada | 52.228.82.0/24 | 
-> | East Asia (Hong Kong) | 20.189.107.0/24 |  
+> | Asia Pacific (Hong Kong) | 20.189.107.0/24 |  
 > | South India | 20.41.194.0/24 |  
 > | Central United States | 20.37.158.0/23 |  
 > | West Central United States | 52.150.138.0/24 |  
