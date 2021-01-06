@@ -10,7 +10,7 @@ ms.author: ninallam
 
 ### Error: Could not fetch access token for Azure. Verify if the Service Principal used is valid and not expired.
 
-The task uses the service principal in the service connection to authenticate with Azure. If the service principal has expired or doesn't have permissions to the App Service, the task fails with the specified error. Verify the validity of the service principal used and that it's present in the app registration. For more information, see 
+The task uses the service principal in the service connection to authenticate with Azure. If the service principal has expired or doesn't have permissions to the App Service, the task fails with this error. Verify the validity of the service principal used and that it's present in the app registration. For more information, see 
    [Use role-based access control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
    [This blog post](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/)
    also contains more information about using service principal authentication.

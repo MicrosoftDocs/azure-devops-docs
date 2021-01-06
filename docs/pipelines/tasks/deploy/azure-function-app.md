@@ -28,8 +28,8 @@ Use the Azure Function App task to deploy [functions](/azure/azure-functions/) t
 <tr><td><code>runtimeStack</code><br/>(Runtime stack)</td><td>(Optional) Web App on Linux provides two ways to publish an application: custom image deployment (Web App for Containers) and app deployment with a built-in platform image (Web App on Linux). You'll see this parameter only when you select <b>Linux Web App</b> as the app type in the task.</td>
 <tr><td><code>startUpCommand</code><br/>(Startup command)</td><td>(Optional. Relevant if <code>appType</code> is <code>webAppLinux</code>.) Startup command to be run after deployment.</td>
 <tr><td><code>customWebConfig</code><br/>(Generate web.config file parameters for Python, Node.js, Go, and Java apps)</td><td>(Optional) A standard web.config file will be generated and deployed to App Service if the application doesn't have one. You can edit the values in the web.config file. They'll vary depending on the application framework. For example, for a Node.js application, the web.config file will have startup file and iis_node module values. This edit feature is only for the generated web.config file. <a href="https://go.microsoft.com/fwlink/?linkid=843469" data-raw-source="[Learn more](https://go.microsoft.com/fwlink/?linkid=843469)">Learn more.</a>
-<tr><td><code>appSettings</code><br/>(App settings)</td><td>(Optional) Application settings. Use the syntax <code>-key value</code>. Enclose values that contain spaces in double quotation marks. <br/>For example, <code>-Port 5000 -RequestTimeout 5000 -WEBSITE_TIME_ZONE &quot;Eastern Standard Time&quot;</code>.</td>
-<tr><td><code>configurationStrings</code><br/>(Configuration settings)</td><td>(Optional) Configuration strings. Use the syntax <code>-key value</code>. Enclose values that contain spaces in double quotation marks.<br/>For example, <code>-phpVersion 5.6 -linuxFxVersion: node|6.11</code>.</td>
+<tr><td><code>appSettings</code><br/>(App settings)</td><td>(Optional) Application settings. Use the syntax <code>-key value</code>. Enclose values that contain spaces in double quotation marks. <br/><br/>For example, <code>-Port 5000 -RequestTimeout 5000 -WEBSITE_TIME_ZONE &quot;Eastern Standard Time&quot;</code>.</td>
+<tr><td><code>configurationStrings</code><br/>(Configuration settings)</td><td>(Optional) Configuration strings. Use the syntax <code>-key value</code>. Enclose values that contain spaces in double quotation marks.<br/><br/>For example, <code>-phpVersion 5.6 -linuxFxVersion: node|6.11</code>.</td>
 <tr><td><code>deploymentMethod</code><br/>(Deployment method)</td><td>(Required) <a href="#deployment-methods" data-raw-source="[Deployment method](#deployment-methods)">Deployment method</a> for the app.<br/><br/>Default value: <code>auto</code></td>
 </table>
 
@@ -76,8 +76,8 @@ By default, the task attempts to select the appropriate deployment technology ba
 
 * If a post-deployment script is provided, use Zip Deploy. 
 * If the App Service type is Web App on Linux, use Zip Deploy. 
-* If .war file is provided, use War Deploy. 
-* If .jar file is provided, use Run-From-Zip. 
+* If a .war file is provided, use War Deploy. 
+* If a .jar file is provided, use Run-From-Zip. 
 * For all other tasks, use Run From Package (via Zip Deploy). 
 
 On a non-Windows agent (for any App Service type), the task relies on the [Kudu REST API](https://github.com/projectkudu/kudu/wiki/REST-API) to deploy the web app.
@@ -122,7 +122,7 @@ This problem could occur if a web.config file isn't present in your app. You can
 
 ### I can't deploy to an internal App Service environment by using an Azure Resource Manager service connection and a Microsoft-hosted agent
 
-By design, a Microsoft-hosted agent won't work with an App Service environment. Instead, you need to configure a private agent in a virtual machine that's in the same virtual network as the App Service environment. Also, set a private DNS zone to enable communication between the resources.
+By design, a Microsoft-hosted agent won't work with an App Service environment. Instead, you need to configure a private agent on a virtual machine that's in the same virtual network as the App Service environment. Also, set a private DNS zone to enable communication between the resources.
 
 ## Open source
 
