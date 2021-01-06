@@ -13,5 +13,5 @@ ms.technology: devops-cicd-tasks
 - task: PublishPipelineArtifact@1
   inputs:
     #targetPath: '$(Pipeline.Workspace)' 
-    #artifactName: # 'drop'
+    #artifactName: # Optional. E.g.: 'drop'
 ```
