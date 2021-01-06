@@ -62,7 +62,7 @@ For a walkthrough that shows how to create a CI/CD pipeline, see [Build and depl
 
 Several deployment methods are available in this task. The default value is `auto`. 
 
-To change the deployment option in a designer task, expand **Additional Deployment Options** and enable **Select deployment method** to choose from additional package-based deployment options.
+To change the deployment option in a designer task, expand **Additional Deployment Options** and enable **Select deployment method** to choose from other package-based deployment options.
 
 Based on the type of Azure App Service and Azure Pipelines agent, the task uses a suitable deployment technology. The deployment technologies used by tasks are as follows:
 
@@ -88,7 +88,7 @@ The [Kudu REST API](https://github.com/projectkudu/kudu/wiki/REST-API) works on 
 
 ### Zip Deploy
 
-Zip Deploy creates a .zip deployment package from the chosen package or folder and deploys the file contents to the wwwroot folder of the App Service name function app in Azure. This option overwrites all existing content in the wwwroot folder. For more information, see [Zip deployment for Azure Functions](/azure/azure-functions/deployment-zip-push).
+Zip Deploy creates a .zip deployment package from the chosen package or folder. It then deploys the file contents to the wwwroot folder of the App Service name function app in Azure. This option overwrites all existing content in the wwwroot folder. For more information, see [Zip deployment for Azure Functions](/azure/azure-functions/deployment-zip-push).
 
 ### Run From Package
 
