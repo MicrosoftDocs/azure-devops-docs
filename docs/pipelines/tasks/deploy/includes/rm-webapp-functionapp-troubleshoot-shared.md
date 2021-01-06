@@ -26,5 +26,6 @@ Web packages created via the MSBuild task (with default arguments) have a nested
     `$(System.DefaultWorkingDirectory)\\WebAppContent`.
     
    1. Clear the **Prepend root folder name to archive paths** check box:
-     :::image type="content" source="../media/azure-rm-web-app-deployment-04.png" alt-text="Screenshot that shows the Archive values.":::
+   
+      :::image type="content" source="../media/azure-rm-web-app-deployment-04.png" alt-text="Screenshot that shows the Archive values.":::
        
