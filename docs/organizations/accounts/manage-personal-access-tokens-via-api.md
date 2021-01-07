@@ -27,7 +27,13 @@ To use this API, users must provide an [Azure Active Directory (AAD) access toke
 > [!IMPORTANT]
 > "On-behalf-of application" solutions (such as the client credential flow) and any authentication flow that does not issue an AAD access token is not valid for use with this API.
 
-The Microsoft Authentication Library (MSAL) includes multiple compliant authentication flows, such as [device code](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#device-code), [on-behalf-of user](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#on-behalf-of), [username/password](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#usernamepassword), and the [authorization code flow](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#authorization-code).  If multi-factor authentication is enabled in the user's AAD tenant, they must use the MSAL authorization code flow.  A complete list of MSAL authentication flows can be found under [Microsoft Authentication Library "Authentication flows" documentation](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows), and a guide to choosing the right authentication method for your application can be found under [Choosing the right authentication mechanism](../../integrate/get-started/authentication/authentication-guidance.md) for Azure DevOps.
+The Microsoft Authentication Library (MSAL) includes multiple compliant authentication flows, including
+- [Device code](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#device-code)
+- [On-behalf-of user](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#on-behalf-of)
+- [Username/password](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#usernamepassword)
+- [Authorization code](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#authorization-code)
+
+If multi-factor authentication is enabled in the user's AAD tenant, they must use the MSAL authorization code flow.  A complete list of MSAL flows can be found under [Microsoft Authentication Library "Authentication flows" documentation](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows).  A guide to choosing the right authentication method for your application can be found under [Choosing the right authentication mechanism](../../integrate/get-started/authentication/authentication-guidance.md) for Azure DevOps.
 
 > [!IMPORTANT]
 > To use the MSAL library to automatically acquire and refresh access tokens, users must:
