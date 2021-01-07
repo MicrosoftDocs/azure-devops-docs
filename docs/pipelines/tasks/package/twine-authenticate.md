@@ -25,15 +25,14 @@ Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the sco
 
 ## Arguments
 
-
 | Argument| Description|
 | --------| -----------|
 | `artifactFeed`<br/>My feed| (Optional) An Azure Artifacts feed name to authenticate with `twine`. For project-scoped feeds, use this syntax: `projectName/feedName'. |
-| `pythonUploadServiceConnection`<br/>Feed from external organizations | (Optional) A <a href="~/pipelines/library/service-endpoints.md#sep-python-upload" data-raw-source="[twine service connection](~/pipelines/library/service-endpoints.md#sep-python-upload)">twine service connection</a> name from external organization to authenticate with `twine`. The credentials stored in the endpoint must have package upload permissions. |
+|`pythonUploadServiceConnection`<br/>Feed from external organizations | (Optional) A <a href="~/pipelines/library/service-endpoints.md#sep-python-upload" data-raw-source="[twine service connection](~/pipelines/library/service-endpoints.md#sep-python-upload)">twine service connection</a> name from external organization to authenticate with`twine`. The credentials stored in the endpoint must have package upload permissions. |
 | [!INCLUDE [temp](../includes/control-options-arguments.md)] |
 
 > [!TIP]
-> See [organization-scoped feeds vs project-scoped feeds](../../../artifacts/feeds/project-scoped-feeds#understanding-the-difference-between-an-organization-scoped-feed-and-a-project-scoped-feed) to understand the difference between the two types and learn how to check if your feed is project-scoped or organization-scoped.
+> See [organization-scoped feeds vs project-scoped feeds](../../../artifacts/feeds/project-scoped-feeds?view=azure-devops#understanding-the-difference-between-an-organization-scoped-feed-and-a-project-scoped-feed) to understand the difference between the two types and learn how to check if your feed is project-scoped or organization-scoped.
 
 ## Examples
 
