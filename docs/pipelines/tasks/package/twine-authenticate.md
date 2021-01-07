@@ -37,6 +37,8 @@ Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the sco
 
 ## Examples
 
+The following examples demonstrate how to publish python distribution to Azure Artifacts feed and the official python registry.
+
 ### Publish python distribution to Azure Artifacts feed
 
 In this example, we are setting authentication for publishing to a private Azure Artifacts Feed. The authenticate task creates a `.pypirc` file which contains the auth credentials required to publish a distribution to the feed.
@@ -91,18 +93,12 @@ In this example, we are setting authentication for publishing to official python
 
 <a name="versions" />
 
-## Task versions
-
-### Task: Twine Authenticate
+## Task versions: Twine Authenticate
 
 | Task version                                  | Azure Pipelines          | TFS                                           |
 |-----------------------------------------------|--------------------------|-----------------------------------------------|
 | 1.*                                           | Available                | Not supported                                 |
 | [0.*](./prev-versions/twine-authenticate-0.md)| Available                | Not supported                                 |
-
-## Open source
-
-This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## FAQ
 
@@ -115,3 +111,7 @@ This task must run before you use twine to upload python distributions to an aut
 ### My agent is behind a web proxy. Will TwineAuthenticate set up twine to use my proxy?
 
 No. While this task itself will work behind a web proxy <a href="~/pipelines/agents/proxy.md" data-raw-source="[secret variable](~/pipelines/agents/proxy.md)">your agent has been configured to use</a>, it does not configure twine to use the proxy.
+
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
