@@ -197,53 +197,50 @@ Because not all data within our system is treated the same, data is classified t
 
 ### Microsoft promotional use
 
-From time to time, we want to contact customers to let them know about additional features and services that might be useful. Since not all customers want to be contacted about these offers, we allow you to opt in and opt out of marketing email communications. We never use customer data to target specific offers for specific users or organizations. Instead, we leverage organization data and aggregate usage statistics at the organization level to determine groups of organizations that should receive specific offers.
+Microsoft occasionally wants to contact customers to let them know about additional features and services that might be useful. Because not all customers want to be contacted about these offers, you can opt in and opt out of marketing email communications. We never use customer data to target specific offers for specific users or organizations. Instead, we use organization data and aggregate usage statistics at the organization level to determine groups of organizations that should receive specific offers.
 
 ## Building confidence
 
-In addition to these protections, we have also taken steps outside of the service itself to help you decide to move forward with Azure DevOps. These include Microsoft's own internal adoption policies, the level of transparency that we provide into the state of our service, and our progress towards receiving certification of our information security management systems. All these efforts are designed to build your confidence in Azure DevOps.
+In addition to these protections, you can be confident in other efforts Microsoft makes on behalf of Azure DevOps. These include internal adoption policies at Microsoft, the level of transparency provided into the state of our service, and progress towards receiving certification of our information security management systems.
 
-## Internal adoption
+### Internal adoption
 
-Teams across Microsoft have begun adopting Azure DevOps internally. The Azure DevOps team moved into an organization in 2014 and uses it extensively. More broadly, we have established guidelines to enable the adoption plans for other teams. Obviously, large teams move more gradually than smaller ones, given their investments in existing DevOps systems. For teams able to move quickly, we have established a project classification approach. It assesses our risk tolerance, based on project characteristics, to determine if the project is appropriate for Azure DevOps. For larger teams, the adoption typically occurs in phases with more planning. Additional requirements for internal projects include associating the organization with the Microsoft.com Azure Active Directory to ensure proper user identity life cycle and password complexity, along with requiring the use of two-factor authentication for more sensitive projects.
+Teams across Microsoft are adopting Azure DevOps internally. The Azure DevOps team moved into an organization in 2014 and uses it extensively. More broadly, we have established guidelines to enable the adoption plans for other teams. Obviously, large teams move more gradually than smaller ones, given their investments in existing DevOps systems. For teams able to move quickly, we have established a project classification approach. It assesses our risk tolerance, based on project characteristics, to determine if the project is appropriate for Azure DevOps. For larger teams, the adoption typically occurs in phases, with more planning. 
 
-### Transparency
+Additional requirements for internal projects include associating the organization with the Microsoft.com Azure Active Directory to ensure proper user identity life cycle and password complexity. For more sensitive projects, two-factor authentication is also required.
 
-We are convinced that transparency around how we design and operate our
-service is critical to establishing trust with our customers. This white
-paper is part of our effort to shed light on how we manage and protect
-your data. In addition, we maintain a
-[blog](https://blogs.msdn.microsoft.com/vsoservice/?p=15015) that provides real-time updates whenever a service disruption, planned, or unplanned, takes place so you can adjust your activities as needed. Furthermore, Brian Harry, the corporate vice-president in charge of Azure DevOps, maintains an active
-[blog](/archive/blogs/korbyp/brian-harry-blogs) addressing, among other things,
-lessons learned by operating the service.
+### Compliance certifications
 
-## Compliance certifications
+Some of you want to understand third-party
+evaluation of our data security procedures. Azure DevOps has achieved the following certifications:
 
-For some customers, it is important to understand third-party
-evaluation of our data security procedures. Towards that end, we have
-achieved ISO 27001:2013, HIPAA (Health Insurance Portability and Accountability Act)
- BAA (Business Associate Agreement), EU Model Clauses, SOC 1 Type 2, and SOC 2 Type 2 certifications.
+- ISO 27001:2013
+- HIPAA (Health Insurance Portability and Accountability Act)
+- BAA (Business Associate Agreement)
+- EU Model Clauses
+- SOC 1 Type 2
+- SOC 2 Type 2 
+
 The SOC audit for Azure DevOps covers controls for data security, availability, 
-processing integrity, and confidentiality. Azure DevOps' SOC reports are available via the [Microsoft's Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports).
-If you don't have access to Microsoft's Service Trust Portal, you can contact [Azure DevOps ServicesSOC Reports](mailto:AzureDevOpsSOCReport@microsoft.com) to request a copy of Azure DevOps' SOC Reports.
+processing integrity, and confidentiality. The SOC reports for Azure DevOps are available through the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports).
+You can also request a copy of these SOC reports.
 
 ## Steps you can take
 
-Proper data protection requires active engagement of customer administrators and users. Your project data stored within Azure DevOps is only as secure as the end-user access points. It's important to match the level of permission strictness and granularity for those organizations with the level of sensitivity of your project.
+Proper data protection requires your active engagement, as well as that of your administrators and users. Your project data stored within Azure DevOps is only as secure as the end-user access points. It's important to match the level of permission strictness and granularity for those organizations with the level of sensitivity of your project.
 
 ### Classify your data
 
-The first step is to classify your data based on its sensitivity / risk
-horizon, and the damage that could occur if it is compromised. Many
+The first step is to classify your data based on its sensitivity and risk
+horizon, and the damage that could occur if it's compromised. Many
 enterprises have existing classification methods that can be reused when
-projects move to Azure DevOps. For more information on how to classify your data, see the following [materials](https://download.microsoft.com/download/0/A/3/0A3BE969-85C5-4DD2-83B6-366AA71D1FE3/Data-Classification-for-Cloud-Readiness.pdf).
-
+projects move to Azure DevOps. For more information, you can download the "Data classification for cloud readiness" document from Microsoft Trustworthy Computing.
 
 ### Adopt Azure Active Directory
 
-Another way to improve the security of your end users' credentials is to use Azure Active Directory (Azure AD) instead of Microsoft Accounts (MSA) to manage your organization's access to Azure DevOps. Azure AD allows your IT department to manage its end-user access policy including password complexity, password refreshes, and expiration if the user leaves your organization. Through Active Directory federation, you can directly link Azure Active Directory to your organization's central directory, so you have only one location to manage these details for your enterprise. See the following brief comparison between MSA and Azure AD characteristics relative to Azure DevOps access:
+Another way to improve the security of your end users' credentials is to use Azure Active Directory (Azure AD) to manage your organization's access to Azure DevOps. Azure AD allows your IT department to manage its end-user access policy, including password complexity, password refreshes, and expiration if the user leaves your organization. Through Active Directory federation, you can directly link Azure AD to your organization's central directory, so you have only one location to manage these details for your enterprise. The following table compares Microsoft account and Azure AD characteristics relative to Azure DevOps access:
 
-| Properties                            | MSA                        | Azure AD  |
+| Properties                            | Microsoft account                        | Azure AD  |
 | :-------------------------------------|:---------------------------|:-----|
 | Identity creator      | User | Organization |
 | Single user name / password for all work assets      | No      |   Yes |
@@ -258,47 +255,31 @@ Learn more about [configuring this support for your organization](../accounts/ac
 
 ### Require two-factor authentication
 
-In some cases, you might want to restrict access to your organization by requiring more than one factor to sign in. Azure AD lets you require multiple factors, 
-such as phone authentication in addition to a username and password, for all authentication requests. You can [learn more](/azure/multi-factor-authentication/) about turning on multifactor authentication for Azure AD.
+In some cases, you might want to restrict access to your organization by requiring more than one factor to sign in. You can require multiple factors with Azure AD. For example, you can require phone authentication, in addition to a username and password, for all authentication requests.
 
 ### Use BitLocker
 
-For sensitive projects, we also recommend use of BitLocker on your Windows laptop or desktop computer. BitLocker encrypts the entire drive on which Windows and your data reside, keeping everything safe. Once BitLocker is enabled, it automatically encrypts any file you save on that drive. If your laptop or desktop machine was to fall into the wrong hands, BitLocker prevents unauthorized access of local copies of data from your projects.
+For sensitive projects, you can use BitLocker on your Windows laptop or desktop computer. BitLocker encrypts the entire drive on which Windows and your data reside. When BitLocker is enabled, it automatically encrypts any file you save on that drive. If your laptop or desktop machine falls into the wrong hands, BitLocker prevents unauthorized access of local copies of data from your projects.
 
-### Limit use of Alternate Authentication Credentials
+### Limit use of alternate authentication credentials
 
-The default authentication mechanism for Git-related tooling is alternate authentication (sometimes referred to as Basic Authentication). This mechanism allows the end user to set up an alternate username and password for use during Git command-line operations. This username and password combination can also be used to access any other data for which that user has permissions. By its nature, alternate authentication credentials are less secure than the default federated authentication. However, we have taken steps to help you make secure choices. For example, all communication is sent over HTTPS and there are password complexity requirements. Nevertheless, your organization should evaluate if additional policies are required to meet your project security requirements. You can [learn more](../accounts/change-application-access-policies.md) about disabling alternate authentication credentials altogether for your organization if it doesn't meet your
-security requirements.
+The default authentication mechanism for Git-related tooling is alternate authentication (sometimes referred to as basic authentication). This mechanism allows the end user to set up an alternate username and password for use during Git command-line operations. This username and password combination can also be used to access any other data for which that user has permissions. By its nature, alternate authentication credentials are less secure than the default federated authentication.
+
+You can still make choices for increased security. For example, all communication is sent over HTTPS, and there are password complexity requirements. Nevertheless, your organization should evaluate if additional policies are required to meet your project security requirements. You can disable alternate authentication credentials altogether if you decide that it doesn't meet your organization's security requirements. For more information, see [Change application connection & security policies for your organization](../accounts/change-application-access-policies.md).
 
 ### Secure access to your organization
 
-Azure Active Directory (Azure AD) provides the capability for administrators to control access to Azure resources and applications such as Azure DevOps. With conditional access control in place, Azure AD checks for the specific conditions you set for a user to access an application. After access requirements are met, the user is authenticated and can access the application.
-Visit the [Azure documentation site](/azure/active-directory/active-directory-conditional-access)
-to learn more about conditional access policy (CAP).  Azure DevOps now supports enforcing certain type of conditional access policies (e.g. IP Fencing) for custom Azure DevOps authentication mechanisms including personal access tokens (PATs), alternate authentication, OAuth, and SSH keys. If accessing Azure DevOps through a third-party client, like git.exe, only IP-based policies (IPv4 based only) will be honored; other policies are not be recognized today. 
+Azure AD provides the ability for administrators to control access to Azure resources and applications such as Azure DevOps. With conditional access control in place, Azure AD checks for the specific conditions you set for a user to access an application. After access requirements are met, the user is authenticated and can access the application.
+
+Azure DevOps supports enforcing certain types of conditional access policies (for example, IP fencing) for custom Azure DevOps authentication mechanisms. These mechanisms include personal access tokens, alternate authentication, OAuth, and SSH keys. If your users are accessing Azure DevOps through a third-party client, only IP-based policies (IPv4 based only) are honored. 
 
 ## Additional resources
 
-In addition to this white paper, see the following resources available for
-your review and education.
-
 - [Azure DevOps home page](https://azure.microsoft.com/services/devops/)
-- [Azure DevOps status](https://devblogs.microsoft.com/devopsservice/)
-- [Azure DevOps credential storage](credential-storage.md)
 - [Azure DevOps data location](data-location.md)
-- [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
+- [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement)
 - [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html)
-- [Developer Services Agreement](../../user-guide/services.md)
+- [What features and services do I get with Azure DevOps?](../../user-guide/services.md)
 - [Azure trust center](https://azure.microsoft.com/support/trust-center/)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl/)
-- [Create and revoke your PATs](../accounts/use-personal-access-tokens-to-authenticate.md)
-- [Revoke user PATs - for admins](../accounts/admin-revoke-user-pats.md)
-- [Token expiration](../accounts/admin-revoke-user-pats.md#token-expiration)
-
-*(c) 2018 Microsoft Corporation. All rights reserved. This document is
-provided "as-is." Information and views that are expressed in this document,
-including URL and other Internet Web site references, may change without
-notice. You bear the risk of using it.*
-
-*This document doesn't provide you with any legal rights to any
-intellectual property in any Microsoft product. You may copy and use
-this document for your internal, reference purposes.*
+- [Revoke personal access tokens for organization users](../accounts/admin-revoke-user-pats.md)
