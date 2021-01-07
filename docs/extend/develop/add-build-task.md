@@ -34,7 +34,7 @@ To create extensions for Azure DevOps, you need the following software and tools
   The production environment uses only [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
 - TypeScript Compiler 2.2.0 or greater, although we recommend version 4.0.2 or newer for tasks that use Node10. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
     <a name="cli"></a>
-- [Cross-platform CLI for Azure DevOps (tfx-cli)] to package your extensions.
+- [Cross-platform CLI for Azure DevOps](https://github.com/microsoft/tfs-cli) to package your extensions.
      You can install **tfx-cli** by using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.
 - A `home` directory for your project.
   The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
