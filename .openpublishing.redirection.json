@@ -1312,15 +1312,9 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/buy-more-build-vs.md",
-      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_url": "/azure/devops/organizations/billing/buy-more-build-vs",
       "redirect_document_id": false
     },
-    {
-      "source_path": "docs/devops/organizations/billing/buy-more-build-vs.md",
-      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
-      "redirect_document_id": false
-    },
-
     {
       "source_path": "docs/setup-admin/team-services/change-account-ownership-vs.md",
       "redirect_url": "/azure/devops/organizations/accounts/change-organization-ownership",
@@ -2363,7 +2357,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/buy-more-build-vs.md",
-      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_url": "/azure/devops/organizations/billing/buy-more-build-vs",
       "redirect_document_id": false
     },
     {
@@ -2403,7 +2397,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/get-more-build-or-load-testing-vs.md",
-      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_url": "/azure/devops/organizations/billing/buy-more-build-vs",
       "redirect_document_id": false
     },
     {
@@ -8678,7 +8672,7 @@
     },
     {
       "source_path": "docs/billing/buy-more-build-vs.md",
-      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_url": "/azure/devops/organizations/billing/buy-more-build-vs",
       "redirect_document_id": true
     },
     {
@@ -17599,6 +17593,11 @@
       "source_path": "docs/extend/extension-statistics-powerbi-contentpack.md",
       "redirect_url": "/azure/devops/marketplace-extensibility/index",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/devops/organizations/billing/buy-more-build-vs.md",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_document_id": false	
     }
   ]
 }
