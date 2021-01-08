@@ -46,7 +46,7 @@ Those resources include those defined at the organization-level (cloud) or proje
 * Information about other members, including their email address and other contact details, that is hidden from non-members.
 * The Settings area, including security groups and permissions.
 * All installed extensions.
-* [Process](../settings/work/manage-process.md) metadata from all processes in the organization, which includes the work item types, its fields and picklist items. Picklist items could show sensitive information such as release dates, as shown in the image below:
+* [Process](../settings/work/manage-process.md) metadata from all processes in the organization, which includes the work item types, its fields and picklist items. Picklist items could show sensitive information such as release dates, as shown in the following image:
 
   ![Edit field release in feature](media/edit-field-release-in-feature.png)
 
@@ -57,4 +57,4 @@ Those resources include those defined at the organization-level (cloud) or proje
 
 These resources and groups are required for the proper functioning of a member of a project.
 Your collaborators are typically colleagues and others with whom you have an existing relationship.
-Before you add someone from outside this trusted group, think carefully about whether they should have access to the items mentioned above.
+Before you add someone from outside this trusted group, think carefully about whether they should have access to the previously mentioned items.

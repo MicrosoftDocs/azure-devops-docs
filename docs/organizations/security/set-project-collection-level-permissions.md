@@ -27,6 +27,8 @@ An organization is the container for several projects that share resources. For 
 > |-------------|----------| 
 > |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- *TeamName* Team |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Project-Scoped Users<br/>- Security Service Group | 
 
+[!INCLUDE [version-all](./includes/hidden-security-groups.md)]
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -479,7 +481,7 @@ You can change a group name, description, add a group image, or delete a group.
 
 ## On-premises deployments
 
-For on-premises deployments, see these additional topics: 
+For on-premises deployments, see these additional articles: 
 
 - [Add a user as an Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator) 
 - [Azure DevOps Server service account groups](/azure/devops/server/admin/service-accounts-dependencies)  

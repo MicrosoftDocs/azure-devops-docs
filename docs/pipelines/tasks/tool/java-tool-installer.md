@@ -42,8 +42,17 @@ None
 |`azureStorageAccountName`<br/> Storage Account Name | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the Storage account name in which the JDK is located. Azure Classic and Resource Manager storage accounts are listed. |
 |`azureContainerName`<br/>Container Name | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the name of the container in the storage account in which the JDK is located.|
 |`azureCommonVirtualFile`<br/> Common Virtual Path | (Required) Applicable when `jdkSourceOption == AzureStorage`. Specify the path to the JDK inside the Azure storage container. |
-|`jdkDestinationDirectory`<br/> Destination directory | (Required) Specify the destination directory into which the JDK should be extracted. |
+|`jdkDestinationDirectory`<br/> Destination directory | (Required) Specify the destination directory into which the JDK should be installed (only for Windows and Linux). On macOS, this directory is used as a temporary folder for extracting of .dmg's since macOS doesn't support installing of JDK to specific directory. |
 |`cleanDestinationDirectory`<br/> Clean destination directory | (Required) Select this option to clean the destination directory before the JDK is extracted into it. <br/>Default value: `true`|
+
+> [!NOTE]
+>
+> To run **Java Tool Installer** task on macOS it is required for user under which agent is running to have permission to execute **sudo** command without a password. 
+> You can follow the next steps to enable this permission:
+> 1) Run *sudo visudo* command, it will open sudoers file for editing.
+> 2) Go to the bottom of the file and add the following line: *user ALL=NOPASSWD: /usr/sbin/installer* (Replace 'user' by the actual user alias)
+> 3) Save and close the file.
+>
 
 ## Examples
 

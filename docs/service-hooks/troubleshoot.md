@@ -29,7 +29,7 @@ go to the Service Hooks page.
    <img alt="View the activity" src="./media/troubleshoot/devops-service-hooks.png" />
    
 2. To view detailed activity for a subscription, including full request, response,
-and event payload data, select a subscription in the table and click **History**.
+and event payload data, select a subscription in the table and select **History**.
 
    <img alt="View detailed activity for a subscription" src="./media/troubleshoot/detailed-activity.png" style="border: 1px solid #CCCCCC" />
 
@@ -43,7 +43,7 @@ go to the Service Hooks page.
    <img alt="View the activity" src="./media/troubleshoot/service-hooks.png" style="border: 1px solid #CCCCCC" />
 
 2. To view detailed activity for a subscription, including full request, response,
-and event payload data, select a subscription in the table and click **History**.
+and event payload data, select a subscription in the table and select **History**.
 
    <img alt="View detailed activity for a subscription" src="./media/troubleshoot/detailed-activity.png" style="border: 1px solid #CCCCCC" />
 
@@ -62,7 +62,7 @@ Failures from a Service Hooks notification can be grouped into three categories:
 The only Terminal Failure is HTTP Status Code 410 (Gone). When a subscription sees a Terminal Failure, it's automatically disabled no matter its prior status.
 
 #### Transient Failures
-When a subscription sees a Transient Failure, it will attempt to resend the notification up to eight times, with an increasing delay between each attempt.
+When a subscription sees a Transient Failure, it attempts to resend the notification up to eight times, with an increasing delay between each attempt.
 
 #### Transient Failures include
 
@@ -81,7 +81,7 @@ Before retry 6: wait ~32 seconds (total delay of 63 seconds)<br>
 Before retry 7: wait ~60 seconds (max backoff time, total delay of 123 seconds)<br>
 Before retry 8: wait ~60 seconds (max backoff time, total delay of 183 seconds)
 
-If the notification exhausts all of its retries, and continues to see a Transient Failure for each attempt, the subscription will stop trying to send the notification, and will treat the notification as if it saw an Enduring Failure.
+If the notification exhausts all of its retries, and continues to see a Transient Failure for each attempt, the subscription stops trying to send the notification, and treats the notification as if it saw an Enduring Failure.
 
 #### Enduring Failures
 Enduring Failures include all other HTTP failure codes (for example: 404 (Not Found), 500 (Internal Server Error), and so on).
@@ -89,7 +89,7 @@ Enduring Failures include all other HTTP failure codes (for example: 404 (Not Fo
 When a subscription sees an Enduring Failure, it's placed on probation.*
 
 ### Probation
-While on probation, a subscription will be limited in the number of notifications it can send. If the subscription continues to hit Enduring Failures, then it will be increasingly limited, and eventually disabled. If the subscription receives a successful response while on probation, it will be restored to a fully enabled state.
+While on probation, a subscription is limited in the number of notifications it can send. If the subscription continues to hit Enduring Failures, then it gets increasingly limited, and eventually disabled. If the subscription receives a successful response while on probation, it gets restored to a fully enabled state.
 
 #### Sequence of 7 maximum retries while subscription is on probation
 Before retry 1: wait ~20 minutes <br>
@@ -100,7 +100,7 @@ Before retry 5: wait ~5 hours 20 minutes (total probation time of 10.33 hours)<b
 Before retry 6: wait ~10 hours 40 minutes (total probation time of 21 hours)<br>
 Before retry 7: wait ~15 hours (max backoff time, total probation time of 36 hours)<br>
 
-After 7 retries, the subscription status will be set to _DisabledBySystem_ if notifying the consumer fails.
+After 7 retries, the subscription status gets set to _DisabledBySystem_ if notifying the consumer fails.
 
 ## FAQs
 

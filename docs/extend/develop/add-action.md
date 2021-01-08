@@ -75,14 +75,14 @@ in your extension's manifest file.
 	<body>
 		<div>
 			The end user doesn't see the content on this page.
-			It is only in the background to handle the contributed menu item being clicked.
+			It is only in the background to handle the contributed menu item being selected.
 		</div>
 	</body>
 	</html>
 ```
 
 ## Your JavaScript
-The script below registers the handler object to handle the action, place it in the `head` section of the HTML page above.
+The script below registers the handler object to handle the action, place it in the `head` section of the previous HTML page.
 
 > We aliased `lib` to be `node_modules/vss-web-extension-sdk/lib` in our `vss-extension.json` manifest file.
 
@@ -95,7 +95,7 @@ The script below registers the handler object to handle the action, place it in 
     var menuContributionHandler = (function () {
         "use strict";
         return {
-            // This is a callback that gets invoked when a user clicks the newly contributed menu item
+            // This is a callback that gets invoked when a user selects the newly contributed menu item
             // The actionContext parameter contains context data surrounding the circumstances of this
             // action getting invoked.
             execute: function (actionContext) {

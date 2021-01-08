@@ -46,7 +46,7 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](../backlogs/media/multi-ownership/management-team-backlog-epics.png)   
+> ![Backlog that shows parents and multi-team ownership.](../backlogs/media/multi-ownership/management-team-backlog-epics.png)   
 
 ::: moniker-end
 
@@ -56,7 +56,7 @@ In this example, we show the **Epics** portfolio backlog for the **Management** 
 In this example, we show the **Epics** portfolio backlog for the **Management** team. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.   
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](../backlogs/media/multi-ownership/management-team-backlog-epics-pre-nav.png)
+> ![Backlog that shows parents and multi-team ownership.](../backlogs/media/multi-ownership/management-team-backlog-epics-pre-nav.png)
 
 ::: moniker-end
 

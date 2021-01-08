@@ -1,7 +1,7 @@
 ---
 title: Navigating the notifications UI
 titleSuffix: Azure DevOps 
-description: Navigate and explore the notifications pages in Azure DevOps.  
+description: Go to and explore the notifications pages in Azure DevOps.  
 ms.technology: devops-collab
 ms.custom: quarterly-update
 ms.reviewer: wismythe
@@ -51,7 +51,7 @@ For additional permission settings regarding notifications, see [Permissions and
 
 Open your :::image type="icon" source="../media/icons/user-settings-gear.png" border="false"::: profile menu, and then choose **Notifications** or **Notification settings**. 
 
-The profile menu appears as shown below based on whether the **New Account Manager** feature has been enabled or not. To enable the **New Account Manager** feature, see [Manage or enable features](../project/navigation/preview-features.md).  
+The profile menu appears based on whether the **New Account Manager** feature has been enabled or not. To enable the **New Account Manager** feature, see [Manage or enable features](../project/navigation/preview-features.md).  
 
 :::row:::
    :::column span="2":::
@@ -77,7 +77,7 @@ Open your profile menu and choose **Notification settings**.
 ::: moniker-end
 ::: moniker range="<= tfs-2018"
 > [!div class="mx-imgBorder"] 
-> ![Navigate to personal notifications page](media/nav-personal-notifications-hub.png)
+> ![Go to personal notifications page](media/nav-personal-notifications-hub.png)
 ::: moniker-end
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 :::image type="content" source="media/personal/user-notifications.png" alt-text="View personal notifications page":::
@@ -168,7 +168,7 @@ https://dev.azure.com/{organization}/_admin/_notifications
 ```
 
 > [!div class="mx-imgBorder"] 
->![Navigate to organization notifications page](media/nav-organization-notifications-hub.png)  
+>![Go to organization notifications page](media/nav-organization-notifications-hub.png)  
 
 > [!div class="mx-imgBorder"] 
 >![View organization level notifications page](media/view-organization-notification-hub.png)  

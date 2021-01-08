@@ -242,5 +242,5 @@ The reporting and SharePoint server administrator can manually run these jobs to
 
 - [Git and Azure Repos](../../repos/git/index.yml)
 - [Team Foundation version control](../../repos/tfvc/index.yml)
-- [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md)
+- [NGo to Visual Studio Team Explorer](../../user-guide/work-team-explorer.md)
 - [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio)

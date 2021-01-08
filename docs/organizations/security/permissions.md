@@ -270,6 +270,14 @@ server (on-premises deployment only), project collection, project, and specific 
 You can also create your own groups and grant them the specific set of permissions
 that are appropriate for certain roles in your organization.
 
+
+::: moniker range="azure-devops"
+
+[!INCLUDE [version-all](./includes/hidden-security-groups.md)]
+
+::: moniker-end
+
+
 <!---
 Team Foundation Administrators
 Team Foundation Proxy Service Accounts
