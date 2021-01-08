@@ -48,6 +48,8 @@ Note that the test application will demonstrate the authorization code flow with
 
 To use application Quickstart, follow the documentation under **Quickstarts** for your application type on the [Azure Active Directory Develop documentation homepage](https://docs.microsoft.com/azure/active-directory/develop/).
 
+You can also download a [sample Quickstart application for this API on GitHub](TODO: add link to GitHub sample) and configure it to use your AAD tenant and Azure DevOps collection.
+
 
 #### Example: Get started with a Python Flask Quickstart application
 1. Once you've registered your application in an AAD tenant with an active Azure subscription, in the Azure Portal, navigate to your registered application under **Azure Active Directory** -> **App Registrations**
