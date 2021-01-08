@@ -10,6 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.date: 12/02/2020
 monikerRange: 'azure-devops'
+ROBOTS: NOINDEX
 ---
 
 # Buy and manage CI/CD for Azure DevOps
