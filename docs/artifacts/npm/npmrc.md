@@ -73,7 +73,7 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
    ::: moniker-end
         
-2. On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
+2. On your development machine, you will also have a **_.npmrc_** in $HOME for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $HOME/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
 
 This enables you to share project's **_.npmrc_** with the whole team while keeping your credentials secure.
 
