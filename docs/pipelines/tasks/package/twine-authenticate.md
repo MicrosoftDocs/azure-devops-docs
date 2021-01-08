@@ -25,10 +25,12 @@ Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the sco
 
 ## Arguments
 
+
 | Argument | Description |
 |----------|-------------|
-|`artifactFeed`<br/>My feed | (Optional) An Azure Artifacts feed name to authenticate with `twine`. For project-scoped feeds, use this syntax: `projectName/feedName' |
+|`artifactFeed`<br/>Feed name | (Optional) The Azure Artifacts feed name to authenticate with `twine`. For project-scoped feeds, use this syntax: `projectName/feedName' |
 |`pythonUploadServiceConnection`<br/>Feed from external organizations | (Optional) A [twine service connection](../../library/service-endpoints.md#sep-python-upload) name from external organization to authenticate with`twine`. The credentials stored in the endpoint must have package upload permissions. |
+
 
 > [!TIP]
 > See [organization-scoped feeds vs project-scoped feeds](../../../artifacts/feeds/project-scoped-feeds.md#understanding-the-difference-between-an-organization-scoped-feed-and-a-project-scoped-feed) to understand the difference between the two types and learn how to check if your feed is project-scoped or organization-scoped.
@@ -62,7 +64,7 @@ In this example, we are setting authentication for publishing to a private Azure
      python -m twine upload -r myTestFeed --config-file $(PYPIRC_PATH) dist/*.whl
 ```
 
-The 'artifactFeed' input will contain the project and the feed name if the feed is project scoped. If the feed is organization scoped, only the feed name must be provided. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
+The `artifactFeed` input will contain the project and the feed name if the feed is project scoped. If the feed is organization scoped, only the feed name must be provided. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
 
 ### Publish python distribution to official python registry
 
