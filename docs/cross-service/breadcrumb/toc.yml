@@ -3,6 +3,6 @@
   topicHref: /azure/devops/index
   items: 
   - name: Cross-platform
-    tocHref: /azure/devops/cross-platform/
-    topicHref: /azure/devops/cross-platform/index
+    tocHref: /azure/devops/cross-service/
+    topicHref: /azure/devops/cross-service/index
  
