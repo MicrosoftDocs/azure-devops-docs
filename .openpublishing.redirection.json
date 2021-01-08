@@ -8673,7 +8673,7 @@
     {
       "source_path": "docs/billing/buy-more-build-vs.md",
       "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/change-azure-subscription.md",
@@ -11503,7 +11503,7 @@
     {
       "source_path": "docs/pipelines/licensing/concurrent-jobs-vsts.md",
       "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/demo-gen/use-vsts-demo-generator-v2.md",
