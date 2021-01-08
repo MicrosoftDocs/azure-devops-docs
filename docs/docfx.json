@@ -177,7 +177,7 @@
         "pipelines/release/**": "devops-cicd-release",
         "pipelines/reports/**": "devops-cicd-reports",
         "pipelines/repos/**": "devops-cicd-repos",
-        "pipelines/security/**": "devops-cicd-repos",
+        "pipelines/security/**": "devops-cicd-security",
         "pipelines/scripts/**": "devops-cicd-scripts",
         "pipelines/targets/**": "devops-cicd-targets",
         "pipelines/tasks/**": "devops-cicd-tasks",
