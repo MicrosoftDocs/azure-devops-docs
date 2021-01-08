@@ -1,6 +1,6 @@
 ---
 title: Invoke a function task 
-description: Invoke a HTTP triggered function in a function app from Azure Functions and parse the response in Azure Pipelines and TFS
+description: Invoke a HTTP triggered function in a function app hosted in Azure Functions and parse the response in Azure Pipelines and TFS
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.topic: reference
 ms.custom: seodec18
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in an [agentless job](../../process/phases.md#server-jobs) of a release pipeline to invoke an HTTP triggered function in a function app that's made by using Azure Functions and parse the response.
+Use this task in an [agentless job](../../process/phases.md#server-jobs) of a release pipeline to invoke an HTTP triggered function in a function app that is created and hosted in Azure Functions and parse the response.
 
 ::: moniker range="<= tfs-2018"
 
