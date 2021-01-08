@@ -60,7 +60,7 @@ A: Multi-organization billing/licensing is available. For more information, see 
 
 ### Q: What's the difference between daily pro-rated charges instead of monthly committed purchases?
 
-A: As part of the change to user assignment-based billing, we've also switched from monthly to daily billing. When you give a user paid access for a few weeks, or even a few days, you pay only for the time they got assigned to the paid access, rather than for a full month. As we switch your organization from monthly to daily billing, your next Azure bill will likely be lower than it has been previously. The next month will be back to normal once a full month of daily charges has accumulated.
+A: As part of the change to user assignment-based billing, we've also switched from monthly to daily billing. When you give a user paid access for a few weeks, or even a few days, you pay only for the time they got assigned to the paid access, rather than for a full month. As we switch your organization from monthly to daily billing, your next Azure bill is likely lower than it was previously. The next month is back to normal once a full month of daily charges has accumulated.
 
 ### Q: How did paid extensions change in the Azure DevOps Marketplace in July 2019?
 
@@ -88,7 +88,7 @@ A: To turn on multi-organization billing, see [how to pay for a user once across
  
 ### Q: Can I use different Azure subscriptions for billing, but still pay only once per user?
 
-A: No. Multi-organization billing groups the per user charges at an Azure subscription level, so only organizations that share a common Azure subscription will be billed together. 
+A: No. Multi-organization billing groups the per user charges at an Azure subscription level, so only organizations that share a common Azure subscription are billed together. 
  
 ### Q: Can I still see multiple line items for each of my organizations on my detailed Azure bill?
 

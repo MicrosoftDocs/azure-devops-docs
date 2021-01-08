@@ -16,7 +16,7 @@ monikerRange: '<= azure-devops'
 
 **Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
-[Git's workflow](gitworkflow.md) uses [branches](branches.md) to isolate work until you're ready to merge the changes into your default branch, such as `master`. 
+[Git's workflow](gitworkflow.md) uses [branches](branches.md) to isolate work until you're ready to merge the changes into your default branch, such as `main`. 
 The pull request is the collaborative process that lets the rest of the team discuss changes in a branch and agree to merge them once everyone approves.
 Use pull requests to get early feedback from others on work in progress, even if you're not ready to merge the changes into another branch.
 
@@ -88,7 +88,7 @@ Enter the message used for the [merge commit](merging.md) and update the pull re
 ![Complete pull request dialog](./media/complete-pull-request-dialog.png)
 
 - Check **Complete linked work items after merging** to complete any linked work items.
-- Check **Delete `<branch name>` after merging** to delete the source branch from the pull request. Git retains the commit history in the `master` branch after the pull request is complete, 
+- Check **Delete `<branch name>` after merging** to delete the source branch from the pull request. Git retains the commit history in the `main` branch after the pull request is complete, 
 so unless you plan on doing more work in the branch, it is safe to remove.
 - Check **Squash changes when merging** to [squash merge](merging-with-squash.md) your pull request.
 - Check **Override branch policies and enable merge** to force merge even if all branch policies haven't been satisfied. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
@@ -96,7 +96,7 @@ so unless you plan on doing more work in the branch, it is safe to remove.
 
 ### What happens when a pull request is merged?
 You must resolve any [merge conflicts](merging.md) between the pull request branch and the target branch. Git adds
-a new commit (the *merge commit*) to the end of the master branch. This merge commit links the earlier history of both the master branch and the commits for the branch
+a new commit (the *merge commit*) to the end of the main branch. This merge commit links the earlier history of both the main branch and the commits for the branch
 that was merged as part of the pull request.
 
 ## Next steps

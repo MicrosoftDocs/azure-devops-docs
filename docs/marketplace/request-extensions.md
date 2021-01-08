@@ -85,7 +85,7 @@ You can review your requests after the Marketplace sends the request to your Pro
 
 Your requests appear on your **Manage extensions** page.
 
-![Manage extensions TFS versions](media/manage-extensions-vsts.png)
+![On the Extension page, a drop-down list to the right of the search window has two options, Browse Marketplace and Manage extensions (highlighted).](media/manage-extensions-vsts.png)
 
 ::: moniker-end
 
@@ -122,7 +122,7 @@ To approve extensions, you must have [**edit collection-level information** perm
 
 1. Select the shopping bag, and then **Manage extensions**.
 
-   ![Manage extensions TFS](../organizations/billing/media/shared/marketplace-shopping-bag-manage-extensions-prev-nav.png)
+   ![On the Extension page, a drop-down list to the right of the search window has two options, Browse Marketplace and Manage extensions (highlighted)](../organizations/billing/media/shared/marketplace-shopping-bag-manage-extensions-prev-nav.png)
 
 2. Review and approve your requested extensions.
 

@@ -25,7 +25,7 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
 1. To view the revision history of a page, select the **Revisions** link provided on each page. You can also select **View revisions** in the context menu of a page.
 
-   :::image type="content" source="media/wiki/click-revision.png" alt-text="Open revision history for the page":::
+   :::image type="content" source="media/wiki/click-revision.png" alt-text="The context menu shows Print, Link work items, View revisions, and Delete options. View revisions is highlighted.":::
 
 2. Revision pages show who made the change along with the revision message, date, and version or commit ID. To view details of a revision, select the message or version link.
 
@@ -38,17 +38,17 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
    ::: moniker range="tfs-2018"
 
-   ![Revision history](media/wiki/revision-history.png) 
+   ![Home | Revisions lists revisions. The columns are Author, Message, Last Updated, and Version.](media/wiki/revision-history.png) 
 
    ::: moniker-end
 
 3. Similar to any git file revision, the revision details page provides a **side-by-side diff view** or the **inline diff view**. Choose **Preview** to see the content of the page of the specific revision.
 
-   ![Wiki page revision details](media/wiki/wiki-revision-details-2.png)  
+   ![Two revisions of an article are compared side-by-side. The article is in Markdown, and is titled Welcome to the Fabrikam Fiber wiki.](media/wiki/wiki-revision-details-2.png)  
 
    ::: moniker range=">= azure-devops-2019"
 
-   For a *publish as code wiki* page, you see similar information, but the **Revert** button isn't active.
+   For a *publish as code wiki* page, you see similar information, but **Revert** isn't active.
 
    > [!div class="mx-imgBorder"]  
    > ![Revision page for a publish as code wiki page](media/wiki/view-history-publish-as-code.png)
@@ -64,7 +64,7 @@ You can see details of the changes made to a wiki page and revert to an earlier 
 
 ## Revert a commit to a *provisioned wiki* page
 
-Select the **Revert** button on the revision details page to revert a change on a wiki page.
+Select **Revert** on the revision details page to revert a change on a wiki page.
 
 ::: moniker-end
 
@@ -77,7 +77,7 @@ Select the **Revert** button on the revision details page to revert a change on 
 
 ::: moniker range=">= tfs-2018"
 
-![Wiki revision details for page](media/wiki/wiki-revert.png) 
+![Dialog box Revert revision 701b5a9f has the Revert and Cancel options. Revert is selected.](media/wiki/wiki-revert.png) 
 
 ::: moniker-end
 

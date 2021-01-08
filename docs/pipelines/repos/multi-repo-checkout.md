@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 09/24/2020
+ms.date: 12/18/2020
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -287,7 +287,8 @@ variables:
 steps:
 - checkout: self
 - checkout: other
-- bash: echo "Tools version: $TOOLS_REF"
+- bash: |
+    echo "Tools version: $TOOLS_REF"
 ```
 
 ## FAQ

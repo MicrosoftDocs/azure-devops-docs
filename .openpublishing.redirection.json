@@ -16685,10 +16685,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "release-notes/docswhatsnew/azure-devops-docs-2020-11.md",
-      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
-    },
-    {
       "source_path": "docs/repos/tfvc/administering-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/configure-check-out-settings"
     },
@@ -17587,6 +17583,16 @@
       "source_path": "docs/pipelines/overview.md",
       "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/extension-statistics-powerbi-contentpack.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/extend/extension-statistics-powerbi-contentpack.md",
+      "redirect_url": "/azure/devops/marketplace-extensibility/index",
+      "redirect_document_id": true
     }
   ]
 }

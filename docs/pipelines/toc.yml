@@ -507,7 +507,7 @@
       href: integrations/microsoft-teams.md
     - name: Slack
       href: integrations/slack.md
-    - name: Integrate with ServiceNow (Classic)
+    - name: Integrate with ServiceNow
       href: release/approvals/servicenow.md
     - name: Integrate with Jenkins (Classic)
       href: release/integrate-jenkins-pipelines-cicd.md

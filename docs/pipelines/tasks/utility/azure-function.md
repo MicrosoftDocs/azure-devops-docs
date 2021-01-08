@@ -1,6 +1,6 @@
 ---
-title: Invoke Azure Function task 
-description: Invoke a HTTP triggered function in an Azure function app and parse the response in Azure Pipelines and TFS
+title: Invoke a function task 
+description: Invoke an HTTP triggered function in a function app hosted in Azure Functions and parse the response in Azure Pipelines and TFS
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.topic: reference
 ms.custom: seodec18
@@ -10,11 +10,11 @@ ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Invoke Azure Function task
+# Invoke a function task
 
 [!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in an [agentless job](../../process/phases.md#server-jobs) of a release pipeline to invoke an HTTP triggered function in an Azure function app and parse the response.
+Use this task in an [agentless job](../../process/phases.md#server-jobs) of a release pipeline to invoke an HTTP triggered function in a function app that is created and hosted in Azure Functions and parse the response.
 
 ::: moniker range="<= tfs-2018"
 
@@ -38,13 +38,13 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 
 | Parameter | Comments |
 | --- | --- |
-| **Azure function URL** | Required. The URL of the Azure function to be invoked. |
+| **Function URL** | Required. The URL of the function to be invoked. |
 | **Function key** | Required. The value of the available function or the host key for the function to be invoked. Should be secured by using a hidden variable. |
 | **Method** | Required. The HTTP method with which the function will be invoked. |
 | **Headers** | Optional. The header in JSON format to be attached to the request sent to the function. |
 | **Query parameters** | Optional. Query parameters to append to the function URL. Must not start with "**?**" or "**&**". |
-| **Body** | Optional. The request body for the Azure function call in JSON format. |
-| **Completion Event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the Azure function makes a callback to update the timeline record. |
+| **Body** | Optional. The request body for the function call in JSON format. |
+| **Completion Event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the function makes a callback to update the timeline record. |
 | **Success criteria** | Optional. How to parse the response body for success. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
@@ -61,7 +61,7 @@ This task is open source on [GitHub](https://github.com/microsoft/azure-pipeline
 
 ### Where should a task signal completion when **Callback** is chosen as the completion event?
 
-To signal completion, the Azure function should POST completion data to the following pipelines REST endpoint.
+To signal completion, the function should POST completion data to the following pipelines REST endpoint.
 
 ```
 {planUri}/{projectId}/_apis/distributedtask/hubs/{hubName}/plans/{planId}/events?api-version=2.0-preview.1
@@ -74,4 +74,4 @@ In addition, a C# helper library is available to enable live logging and managin
 
 ### Why does the task failed within 1 minute when the timeout is longer?
 
-In case the Azure Function executes for more than 1 minute, then you'll need to use the **Callback** completion event. API Response completion option is supported for requests that complete within 60 seconds.
+If the function executes for more than 1 minute, use the **Callback** completion event. The API Response completion option is supported for requests that complete within 60 seconds.

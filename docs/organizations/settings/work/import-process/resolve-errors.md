@@ -533,7 +533,7 @@ Add `PortfolioBacklog` to ProcessConfiguration to reference Microsoft.EpicCatego
       </AddPanel>
     </PortfolioBacklog>
 ```
-Reference topics: 
+Reference articles: 
 *   [ProcessConfiguration XML element reference](../../../../reference/xml/process-configuration-xml-element.md)
 *   [Categories XML element reference](../../../../reference/xml/categories-xml-element-reference.md)
 
@@ -1398,7 +1398,7 @@ Reference: [Define pick lists](../../../../reference/xml/define-pick-lists.md).
 The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved in VSTS. 
 Reference names of custom fields and types can't use these namespaces.   
 
-To fix this error, simply rename the `refname` attribute for the named field in the WIT definition files where it appears. 
+To fix this error, rename the `refname` attribute for the named field in the WIT definition files where it appears. 
 
 #### Error example
 

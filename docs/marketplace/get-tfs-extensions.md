@@ -199,7 +199,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 With first-party extensions that come pre-installed with TFS, there's an alternate method of installation that prevents compatibility issues.
 
-In this case, you can manage extensions in disconnected TFS by following the steps below:
+In this case, you can manage extensions in disconnected TFS by completing the following steps:
 
 1. Hover over the shopping bag and select **Manage extensions**
 

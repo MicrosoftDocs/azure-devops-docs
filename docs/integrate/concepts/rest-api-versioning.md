@@ -22,7 +22,7 @@ Azure DevOps REST APIs are versioned to ensure applications and services continu
 * API versions are in the format {major}.{minor}[-{stage}[.{resource-version}]] - For example, ```1.0```, ```1.1```, ```1.2-preview```, ```2.0```.
 * While an API is in preview, you can specify a precise version of a particular revision of the API when needed (for example, ```1.0-preview.1```, ```1.0-preview.2```)
 * Once an API is released (1.0, for example), its preview version (1.0-preview) is deprecated and can be deactivated after 12 weeks.
-* During this time you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify a ```-preview``` version will be rejected.
+* During this time you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify a ```-preview``` version get rejected.
 
 ### Usage
 

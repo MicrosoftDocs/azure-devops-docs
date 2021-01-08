@@ -36,4 +36,4 @@ All emails have a footer, which contains a link to view the subscription that tr
 
 ## Contact customer support
 
-If you're not able to resolve the issue with the steps above, consider contacting [customer support](troubleshoot-contact-support.md).
+If you can't resolve the issue with the previously mentioned steps, consider contacting [customer support](troubleshoot-contact-support.md).

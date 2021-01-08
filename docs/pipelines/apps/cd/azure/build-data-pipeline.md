@@ -4,14 +4,14 @@ description: Learn how to use an Azure CI/CD data pipeline to ingest, process, a
 ms.author: jukullam
 author: JuliaKM
 ms.technology: devops-cicd-apps
-ms.date: 08/06/2020
+ms.date: 01/05/2021
 ms.topic: conceptual
 monikerRange: '=azure-devops'
 ---
 
 # Build a data pipeline by using Azure Data Factory, DevOps, and machine learning
 
-Get started building a data pipeline by using data ingestion, data transformation, and model training. 
+Get started building a data pipeline with data ingestion, data transformation, and model training. 
 
 Learn how to grab data from a CSV (comma-separated values) file and save the data to Azure Blob Storage. Transform the data and save it to a staging area. Then train a machine learning model by using the transformed data. Write the model to blob storage as a Python [pickle file](https://docs.python.org/3/library/pickle.html). 
 
