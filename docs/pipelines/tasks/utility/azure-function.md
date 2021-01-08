@@ -1,6 +1,6 @@
 ---
 title: Invoke a function task 
-description: Invoke a HTTP triggered function in a function app hosted in Azure Functions and parse the response in Azure Pipelines and TFS
+description: Invoke an HTTP triggered function in a function app hosted in Azure Functions and parse the response in Azure Pipelines and TFS
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
 ms.topic: reference
 ms.custom: seodec18
