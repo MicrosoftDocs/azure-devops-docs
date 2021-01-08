@@ -26,7 +26,7 @@ Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the sco
 ## Arguments
 
 | Argument | Description |
-|----------|-------------|
+| -------- | ----------- |
 |`artifactFeed`<br/>Feed name | (Optional) The Azure Artifacts feed name to authenticate with `twine`. For project-scoped feeds, use this syntax: `projectName/feedName' |
 |`pythonUploadServiceConnection`<br/>Feed from external organizations | (Optional) A [twine service connection](../../library/service-endpoints.md#sep-python-upload) name from external organization to authenticate with`twine`. The credentials stored in the endpoint must have package upload permissions.|
 
