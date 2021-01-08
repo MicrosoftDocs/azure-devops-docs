@@ -1,6 +1,6 @@
 ---
 title: Azure DevOps - Data protection
-description: Learn how Microsoft protects your projects and data in Azure DevOps. 
+description: Learn how Microsoft helps protect your projects and data in Azure DevOps. 
 ms.topic: article
 ms.technology: devops-security
 ms.author: mlearned
@@ -38,7 +38,7 @@ the right people are accessing data within Azure DevOps.
 Whatever your approach, you should consider all data potentially
 "at risk", no matter where it is or how it is being used. This is true
 for both data in the cloud as well as data stored in a private
-datacenter. Thus, it's important to classify your data, its sensitivity and risk, and the damage it could do if it's compromised. Also, categorize your data relative to an overall information security management policy.
+datacenter. Thus, it's important to classify your data, its sensitivity and risk, and the damage it might do if it's compromised. Also, categorize your data relative to an overall information security management policy.
 
 ## Built on Azure
 
@@ -65,15 +65,15 @@ Azure DevOps Services uses many of the Azure storage features to ensure data ava
 To protect data in the case of hardware or service failures, Azure storage geo-replicates customer data between two regions in the same geography. For example, Azure can geo-replicate data between North and West Europe or between North and South United States. For Azure Blob Storage, customer data is replicated three times within a single region, and is replicated asynchronously to a second region in the same geography. As such, Azure always maintains the equivalent of six copies of your data. This enables you to fail over to a separate region if there's a major outage or disaster, while also having local redundancy for hardware failures within a region. For Azure SQL Database storage, daily backups are maintained offsite if there's a regional disaster.
 
 > [!NOTE]
-> Regarding data redundancy and fail over:
+> Regarding data redundancy and failover:
 > * There's an inherent delta, measured in minutes, when Microsoft replicates your data between the primary and secondary region.
-> * Failover to the secondary region is a decision that Microsoft must make centrally, as it impacts all customers on the affected scale unit. Except in extreme circumstances, Microsoft opts to not fail over so that customer data isn't lost.
+> * Failover to the secondary region is a decision that Microsoft must make centrally, as it affects all customers on the affected scale unit. Except in extreme circumstances, Microsoft opts to not fail over so that customer data isn't lost.
 > * Azure DevOps offers a 99.9 percent uptime SLA guarantee, and refunds a portion of the monthly charges if that SLA is missed in a specific month.
 > * Because there is only one region in Brazil, customer data in Brazil is replicated to the South Central US region for disaster recovery purposes.
 
 ### Mistakes happen
 
-To protect against accidental deletion of data, Microsoft also takes point-in-time backups of both the blobs in Azure Blob Storage, and the databases in Azure SQL Database. For blobs, we have a separate copy of all blobs and regularly append new changes to each storage account. Because this data is immutable, we don't need to rewrite any existing storage as part of our backup procedures. Backups are a standard part of Azure SQL Database, and Azure DevOps Services makes use of this. In both cases, these backups are also replicated in a paired region, helping to ensure that you recover from a regional outage.
+To protect against accidental deletion of data, Microsoft also takes point-in-time backups of both the blobs in Azure Blob Storage, and the databases in Azure SQL Database. There's a separate copy of all blobs, and changes are appended to each storage account. Because this data is immutable, there's no need to rewrite any existing storage as part of the backup procedures. Backups are a standard part of Azure SQL Database, and Azure DevOps Services makes use of this. In both cases, these backups are also replicated in a paired region, helping to ensure that you recover from a regional outage.
 
 A further protection is that Microsoft can recover entire organizations for up to 28 days after deletion. This is because Microsoft performs a "soft delete" for organization deletion operations.
 
@@ -81,7 +81,7 @@ A further protection is that Microsoft can recover entire organizations for up t
 
 Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, it's the restores that do." While technically incorrect, the sentiment is right.
 
-Microsoft regularly practices restoring various datasets from backup. Geo-redundant storage from Azure is tested regularly. Also, from time to time, we restore from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. There are many permutations of disaster and data corruption scenarios, and Microsoft continues to plan and run new tests regularly.
+Microsoft regularly practices restoring various datasets from backup. Geo-redundant storage from Azure is tested regularly. Also, from time to time, Microsoft restores from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. There are many permutations of disaster and data corruption scenarios, and Microsoft continues to plan and run new tests regularly.
 
 ## Service availability
 
@@ -95,19 +95,19 @@ In some cases, a malicious DDoS attack can affect service availability. Azure ha
 
 In rare circumstances, you might require a live site response to a problem with service availability. Microsoft has an operations team available 24x7, to rapidly identify the issue and to engage the necessary development team resources. Those resources then address the problem. They also aim to update the service status page within minutes of detecting an issue that affects the service. After the team has addressed an issue, they identify the root cause of the issue and track the necessary changes to prevent similar issues in the future.
 
-Azure DevOps live-site management processes focus on your experience and the health of your service. These processes minimize the time to detect, respond to, and mitigate problems. All engineering disciplines are involved and responsible, so there are continual improvements evolving out of direct experience. This means that monitoring, diagnostics, resiliency, and quality assurance processes are improved over time. Live-site management in Azure DevOps has  three distinct tracks: telemetry, incident management, and live-site review. Here's what these tracks entail:
+Azure DevOps live site management processes focus on your experience and the health of your service. These processes minimize the time to detect, respond to, and mitigate problems. All engineering disciplines are involved and responsible, so there are continual improvements evolving out of direct experience. This means that monitoring, diagnostics, resiliency, and quality assurance processes are improved over time. Live site management in Azure DevOps has  three distinct tracks: telemetry, incident management, and live site review. Here's what these tracks entail:
 
-![Image of the Azure DevOps Services live-site management process.](media/data-protection/figure-2-site-management-process.png)
+![Image of the Azure DevOps Services live site management process.](media/data-protection/figure-2-site-management-process.png)
 
 The operations team also monitors the availability metrics for individual organizations. These metrics provide insights into specific conditions that might affect only some of our customers. Investigations into this data can often result in targeted improvements to address customer-specific issues. In some cases, Microsoft might even contact you directly to understand your experience and work with you to improve the service.
 
 Microsoft publishes a service-level agreement (SLA) and provides a financial guarantee to ensure that we meet this agreement each month. For more information, see [SLA for Azure DevOps](https://azure.microsoft.com/support/legal/sla/azure-devops/v2_0/).
 
-Sometimes our partner teams or dependencies have incidents that affect Azure DevOps. All our partner teams follow similar approaches to identifying, resolving, and learning from these service outages.
+Sometimes partner teams or dependencies have incidents that affect Azure DevOps. All partner teams follow similar approaches to identifying, resolving, and learning from these service outages.
 
 ## Service security
 
-Service security requires constant vigilance, from proper design and coding techniques to operational factors. Microsoft actively invests in the prevention of security holes and in breach detection. If there's a breach, we use security response plans to minimize data leakage, loss, or corruption. For more information, see [About security, authentication, and authorization](about-security-identity.md).
+Service security requires constant vigilance, from proper design and coding techniques to operational factors. Microsoft actively invests in the prevention of security holes and in breach detection. If there's a breach, Microsoft uses security response plans to minimize data leakage, loss, or corruption. For more information, see [About security, authentication, and authorization](about-security-identity.md).
 
 ### Secure by design
 
@@ -136,7 +136,7 @@ If during your penetration testing you believe you've discovered a potential sec
 >[!IMPORTANT]
 >Although notifying Microsoft of penetration testing activities is no longer required, you must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/mt784683).
 
-### Bug bounty program
+### Bounty program
 
 Azure DevOps participates in the [Microsoft Online Services Bounty Program](https://www.microsoft.com/msrc/bounty-microsoft-cloud). This program rewards security researchers who report issues to us, and encourages more people to help keep Azure DevOps secure. For more details, see the [Azure DevOps Bounty Program](https://www.microsoft.com/msrc/bounty-azure-devops). 
 
@@ -165,19 +165,19 @@ The Azure infrastructure helps the Azure DevOps Services team to log and monitor
 
 Where a possible intrusion has been detected or high priority security vulnerability has been identified, the team has a clear security incident response plan. This plan outlines responsible parties, steps required to secure customer data, and how to engage with security experts at Microsoft. The team also notifies any organization owners if data is potentially disclosed or corrupted, so that they can take appropriate steps to remedy the situation.
 
-Finally, to help combat emerging threats, Azure DevOps Services employs an "Assume Breach" strategy. A highly specialized group of security experts within Microsoft, known as the Red Team, assumes the role of sophisticated adversaries. This team tests our breach detection and response, enabling us to accurately measure our readiness and the impacts of real-world attacks. This strategy strengthens threat detection, response, and defense of the service. It also allows the team to validate and improve the effectiveness of the entire security program.
+Finally, to help combat emerging threats, Azure DevOps Services employs an "Assume Breach" strategy. A highly specialized group of security experts within Microsoft, known as the Red Team, assumes the role of sophisticated adversaries. This team tests breach detection and response, to accurately measure readiness and the impacts of real-world attacks. This strategy strengthens threat detection, response, and defense of the service. It also allows the team to validate and improve the effectiveness of the entire security program.
 
 ## Data privacy
 
 You should have confidence that your data is being handled appropriately and for legitimate uses. Part of that assurance involves appropriately restricting usage so that your data is used only for legitimate reasons.
 
-### The General Data Protection Regulation (GDPR)
+### General Data Protection Regulation (GDPR)
 
 The General Data Protection Regulation (GDPR) is the biggest change in data protection laws in Europe since the 1995 introduction of the European Union (EU) Data Protection Directive 95/46/EC. To learn more about the GDPR regulation, see the [overview page in the Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx).
 
 ### Data residency and sovereignty
 
-Azure DevOps is available in the following eight geographies across the world: United States, Canada, Europe, UK, India, Australia, Asia Pacific, and Brazil. By default, your organization is assigned to your closest geography, but you do have the option to choose a different geography. If you change your mind later, it's possible to migrate your organization to a different geography, with the assistance of Microsoft support.
+Azure DevOps is available in the following eight geographies across the world: United States, Canada, Europe, United Kingdom, India, Australia, Asia Pacific, and Brazil. By default, your organization is assigned to your closest geography, but you do have the option to choose a different geography. If you change your mind later, it's possible to migrate your organization to a different geography, with the assistance of Microsoft support.
 
 Azure DevOps doesn't move or replicate customer data outside of the chosen geography. Instead, your data is geo-replicated to a second region within the same geography. The only exception is Brazil, which replicates data to the South Central US geography for disaster recovery purposes.
 
@@ -197,7 +197,7 @@ Because not all data within our system is treated the same, data is classified t
 
 ### Microsoft promotional use
 
-Microsoft occasionally wants to contact customers to let them know about additional features and services that might be useful. Because not all customers want to be contacted about these offers, you can opt in and opt out of marketing email communications. We never use customer data to target specific offers for specific users or organizations. Instead, we use organization data and aggregate usage statistics at the organization level to determine groups of organizations that should receive specific offers.
+Microsoft occasionally wants to contact customers to let them know about additional features and services that might be useful. Because not all customers want to be contacted about these offers, you can opt in and opt out of marketing email communications. Microsoft never uses customer data to target specific offers for specific users or organizations. Instead, we use organization data and aggregate usage statistics at the organization level to determine groups of organizations that should receive specific offers.
 
 ## Building confidence
 
@@ -205,7 +205,7 @@ In addition to these protections, you can be confident in other efforts Microsof
 
 ### Internal adoption
 
-Teams across Microsoft are adopting Azure DevOps internally. The Azure DevOps team moved into an organization in 2014 and uses it extensively. More broadly, we have established guidelines to enable the adoption plans for other teams. Obviously, large teams move more gradually than smaller ones, given their investments in existing DevOps systems. For teams able to move quickly, we have established a project classification approach. It assesses our risk tolerance, based on project characteristics, to determine if the project is appropriate for Azure DevOps. For larger teams, the adoption typically occurs in phases, with more planning. 
+Teams across Microsoft are adopting Azure DevOps internally. The Azure DevOps team moved into an organization in 2014 and uses it extensively. More broadly, we have established guidelines to enable the adoption plans for other teams. Obviously, large teams move more gradually than smaller ones, given their investments in existing DevOps systems. For teams able to move quickly, we have established a project classification approach. It assesses risk tolerance, based on project characteristics, to determine if the project is appropriate for Azure DevOps. For larger teams, the adoption typically occurs in phases, with more planning. 
 
 Additional requirements for internal projects include associating the organization with the Microsoft.com Azure Active Directory to ensure proper user identity life cycle and password complexity. For more sensitive projects, two-factor authentication is also required.
 
@@ -232,7 +232,7 @@ Proper data protection requires your active engagement, as well as that of your 
 ### Classify your data
 
 The first step is to classify your data based on its sensitivity and risk
-horizon, and the damage that could occur if it's compromised. Many
+horizon, and the damage that might occur if it's compromised. Many
 enterprises have existing classification methods that can be reused when
 projects move to Azure DevOps. For more information, you can download the "Data classification for cloud readiness" document from Microsoft Trustworthy Computing.
 
@@ -243,7 +243,7 @@ Another way to improve the security of your end users' credentials is to use Azu
 | Properties                            | Microsoft account                        | Azure AD  |
 | :-------------------------------------|:---------------------------|:-----|
 | Identity creator      | User | Organization |
-| Single user name / password for all work assets      | No      |   Yes |
+| Single username / password for all work assets      | No      |   Yes |
 | Password lifetime & complexity control | User      |    Organization|
 | Azure DevOps membership limits | Any MSA | Organization's directory
 | Traceable identity | No | Yes
