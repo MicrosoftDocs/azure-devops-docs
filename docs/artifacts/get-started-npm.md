@@ -24,37 +24,11 @@ Azure Artifacts is installed by default for TFS 2017 customers. To use Azure Art
 > [!NOTE]
 > If the Azure Artifacts extension has been removed, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019" 
-
-## Assign Azure Artifacts in Azure DevOps Services
-
-Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.  
-
-Assign your licenses by following these instructions:
-
-1. Go to your organization and select **Admin settings** on the lower left of the UX.
-2. Select **Users**.
-3. Select the user or users you want to assign the Azure Artifacts extension to, and select **Manage extensions**.
-4. If you're selecting multiple users, select **Assign extensions** and choose the Azure Artifacts extension. If you're selecting only one user, select the Azure Artifacts box under **Extensions** and select **Save changes**.
-
-If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
-
-1. Go to your account, go to the **Users** page, and select **Package Management**.
-2. Select **Assign**, enter the users you want to assign licenses to, and then select **Ok**.
-
-If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
-
-::: moniker-end
-
-::: moniker range=">=tfs-2017 <= tfs-2018"
-
 ### Assign licenses in TFS
 
 Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.  
 
-If you aren't sure, you can select **Start 30-day free trial**. Every user in your organization is then granted access to Azure Artifacts for 30 days. After the 30-day trial period, your organization reverts back to five entitled users, and you must assign licenses to individual users.  If you need additional licenses at this point, you can purchase them from this same dialog box in the Marketplace.
+If you aren't sure, you can select **Start 30-day free trial**. Every user in your organization is then granted access to Azure Artifacts for 30 days. After the 30-day trial period, your organization reverts back to five entitled users, and you must assign licenses to individual users.  If you need additional licenses at this point, you can purchase them from this same dialog box in the Marketplace. If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
 > [!NOTE]
 > If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access. Licenses don't need to be assigned until the trial period ends. 
