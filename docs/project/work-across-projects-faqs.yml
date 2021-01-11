@@ -11,7 +11,6 @@ summary: |
   This article addresses these questions. To learn about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
 
   ::: moniker range="azure-devops"  
-  |
   > [!NOTE]  
   > Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../organizations/projects/about-projects.md#project-scoped-user-group). 
   ::: moniker-end  
@@ -106,7 +105,7 @@ sections:
           **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
 
 
-  - name: Azure Boards configuration and customization
+  - name: Azure Boards customization
     questions:
       - question: Can I apply an Inherited process defined in one organization to another organization?  
         answer: |
