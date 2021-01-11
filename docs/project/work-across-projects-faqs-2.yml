@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: Work across projects FAQ 
-  description: Get answers to common questions about working across projects in Azure DevOps. 
+  description: Get answers to common questions about working across projects in Azure DevOps. 
 
 title: Work across projects FAQs 
 
@@ -31,7 +31,7 @@ sections:
         answer: | 
           If you want to limit users to view or modify select work items, you can by [setting permissions on Area Paths](../organizations/security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).  However, there's no method for limiting users to linking work items that reside in different projects.  
 
-  - name: Dashboards and reports
+  - name: Dashboards and reports
     questions:
       - question: Can I create a dashboard with information that spans two or more projects? 
         answer: | 
@@ -49,7 +49,7 @@ sections:
           **Yes**. The Analytics service and Power BI reports support creation of reports that span two or more projects. To learn more, see [Create a Power BI report with an OData Query](../report/powerbi/create-quick-report-odataq.md). 
       ::: moniker-end
 
-  - name: Azure Boards and work tracking
+  - name: Azure Boards and work tracking
     questions: 
       - question: Can I query across projects? 
         answer: |
@@ -95,7 +95,7 @@ sections:
 
 
   ::: moniker range="azure-devops"
-  - name: Azure Boards configuration and customization
+  - name: Azure Boards configuration and customization
     questions:
       - question: Can I apply an Inherited process defined in one organization to another organization?  
         answer: |
@@ -103,14 +103,14 @@ sections:
   ::: moniker-end
 
   ::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
-  - name: Azure Boards configuration and customization
-    questions: 
+  - name: Azure Boards configuration and customization
+    questions: 
       - question: Can I apply an Inherited process defined in one collection to another collection?  
         answer: |
           **Yes**. To perform this operation, you need to export the process and import it to the other collection. While there is no import/export user interface, you can use the [Process Migrator for Node.js](https://github.com/Microsoft/process-migrator) application.  
   ::: moniker-end
 
-  - name: Azure Repos 
+  - name: Azure Repos 
     questions:
       - question: Can I set branch policies across repositories within a project? 
         answer: |
@@ -129,5 +129,5 @@ sections:
           1. Get all pull requests of each repository using [Pull Requests - Get Pull Requests](/rest/api/azure/devops/git/pull%20requests/get%20pull%20requests#pullrequeststatus). 
  
 additionalContent: |
-  ## Related articles
+  ## Related articles
   - [Connect to team projects](../organizations/projects/connect-to-projects.md)  
