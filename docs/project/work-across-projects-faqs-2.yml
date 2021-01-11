@@ -43,11 +43,14 @@ sections:
           **Yes**. Most dashboard widgets support configuration for the currently connected project. However, you can add query-based dashboard widgets&mdash;such as [Query results](../report/dashboards/widget-catalog.md#query-results) and [Chart for work items](../report/dashboards/charts.md#add-chart-widget)&mdash;to support cross-project queries. To learn how, see [Create and save managed queries, Query across projects](../boards/queries/using-queries.md#query-across-projects).  
           ::: moniker-end
 
-      ::: moniker range=">= azure-devops-2019"
       - question: Can I create a report that spans two or more projects? 
-        answer: |
+        answer: | 
+          ::: moniker range=">= azure-devops-2019"
           **Yes**. The Analytics service and Power BI reports support creation of reports that span two or more projects. To learn more, see [Create a Power BI report with an OData Query](../report/powerbi/create-quick-report-odataq.md). 
-      ::: moniker-end
+          ::: moniker-end
+          ::: moniker range="< azure-devops-2019"
+          **Yes**. The Analytics service and Power BI reports support creation of reports that span two or more projects. To learn more, see [Create a Power BI report with an OData Query](../report/powerbi/create-quick-report-odataq.md). 
+          ::: moniker-end
 
   - name: Azure Boards and work tracking
     questions: 
