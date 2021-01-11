@@ -167,8 +167,8 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
 
 
 ## Related articles
--  [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md) 
+-  [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md) 
 -  [Merge Command](merge-command.md) 
 -  [Merges Command](merges-command.md) 
 -  [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 
--  [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md) 
+-  [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)

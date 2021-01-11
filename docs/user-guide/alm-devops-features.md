@@ -903,7 +903,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets?viewFallbackFrom=vsts" data-raw-source="[Use shelvesets](../repos/tfvc/suspend-your-work-manage-your-shelvesets.md?viewFallbackFrom=vsts)">Use shelvesets</a> when you need to set aside some or all of your work in progress. </p>
 
 <p><b>Manage branches, isolate risk</b></p>
-<p>Use branches and locks to <a href="/azure/devops/repos/tfvc/use-branches-isolate-risk-team-foundation-version-control?viewFallbackFrom=vsts" data-raw-source="[isolate risk introduced by work done by different teams](../repos/tfvc/use-branches-isolate-risk-team-foundation-version-control.md?viewFallbackFrom=vsts)">isolate risk introduced by work done by different teams</a>.</p>
+<p>Use branches and locks to <a href="/azure/devops/repos/tfvc/use-branches-isolate-risk-team-foundation-version-control?viewFallbackFrom=vsts" data-raw-source="[isolate risk introduced by work done by different teams](../repos/tfvc/branching-strategies-with-tfvc.md?viewFallbackFrom=vsts)">isolate risk introduced by work done by different teams</a>.</p>
 
 <p><b>Merge branches</b></p>
 <p><a href="/azure/devops/repos/tfvc/merge-folders-files?viewFallbackFrom=vsts" data-raw-source="[Integrate work completed in different branches](../repos/tfvc/merge-folders-files.md?viewFallbackFrom=vsts)">Integrate work completed in different branches</a> during certain phases of your project.</p>
@@ -1116,12 +1116,12 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Automate deployments</b></p>
-<p>Reduce time-to-market and respond to customer feedback with greater agility by <a href="../pipelines/overview.md" data-raw-source="[automating your release process](../pipelines/overview.md)">automating your release process</a>. Deploy applications across platforms to all environments of the pipeline with just one selection.</p>
+<p>Reduce time-to-market and respond to customer feedback with greater agility by <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[automating your release process](../pipelines/get-started/what-is-azure-pipelines.md)">automating your release process</a>. Deploy applications across platforms to all environments of the pipeline with just one selection.</p>
 <img src="media/features/alm-feature-release-1.png" alt="Release Manager"/><br/><br />
 
 
 <p><b>When to use Azure Pipelines or Build &amp; Release in Azure DevOps Server?</b></p>
-<p>Evaluate how Azure Pipelines and Build &amp; Release in Azure DevOps Server can help you in <a href="../pipelines/overview.md" data-raw-source="[your development and deployment efforts](../pipelines/overview.md)">your development and deployment efforts</a>.</p>
+<p>Evaluate how Azure Pipelines and Build &amp; Release in Azure DevOps Server can help you in <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[your development and deployment efforts](../pipelines/get-started/what-is-azure-pipelines.md)">your development and deployment efforts</a>.</p>
 
 
 <p><b>Release definitions</b></p>
@@ -1145,7 +1145,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 <p><b>Works for any app</b></p>
-<p>Deploy <a href="../pipelines/overview.md" data-raw-source="[any type of application across multiple platforms](../pipelines/overview.md)">any type of application across multiple platforms</a> including Windows and Linux, whether on-premises or in the cloud.</p>
+<p>Deploy <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[any type of application across multiple platforms](../pipelines/get-started/what-is-azure-pipelines.md)">any type of application across multiple platforms</a> including Windows and Linux, whether on-premises or in the cloud.</p>
 
 <p><b>Approval workflows</b></p>
 <p>Streamline your application release workflow by <a href="../pipelines/release/approvals/index.md" data-raw-source="[routing pre- and post-deployment approvals](../pipelines/release/approvals/index.md)">routing pre- and post-deployment approvals</a> to multiple approvers or teams.</p>
@@ -2009,7 +2009,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Plan and track work by <a href="../boards/backlogs/create-your-backlog.md" data-raw-source="[creating a product backlog](../boards/backlogs/create-your-backlog.md)">creating a product backlog</a>, and managing work using <a href="../boards/boards/kanban-basics.md" data-raw-source="[Kanban](../boards/boards/kanban-basics.md)">Kanban</a> or <a href="../boards/sprints/assign-work-sprint.md" data-raw-source="[Scrum](../boards/sprints/assign-work-sprint.md)">Scrum</a> processes. Find work items you want to review or update by <a href="../boards/queries/using-queries.md" data-raw-source="[creating queries](../boards/queries/using-queries.md)">creating queries</a>, or visualize progress by <a href="../report/dashboards/charts.md" data-raw-source="[creating query-based charts](../report/dashboards/charts.md)">creating query-based charts</a>  </p>
 
 <p><b>Build</b></p>
-<p><a href="../pipelines/overview.md" data-raw-source="[Define and monitor builds](../pipelines/overview.md)">Define and monitor builds</a> and set up continuous builds to improve the quality of your app. </p>
+<p><a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[Define and monitor builds](../pipelines/get-started/what-is-azure-pipelines.md)">Define and monitor builds</a> and set up continuous builds to improve the quality of your app. </p>
 
 
 <p><b>Test</b></p>
@@ -2019,7 +2019,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Share code as binary assets and control dependencies by <a href="../artifacts/overview.md" data-raw-source="[subscribing to and working with Azure Artifacts feeds](../artifacts/overview.md)">subscribing to and working with Azure Artifacts feeds</a>.</p>
 
 <p><b>Release (Azure DevOps Services, Preview)</b></p>
-<p>Manage the release of your app by <a href="../pipelines/overview.md" data-raw-source="[deploying it to a specific environment for each separate release step](../pipelines/overview.md)">deploying it to a specific environment for each separate release step</a>, and by controlling the process through approvals for each step.</p>
+<p>Manage the release of your app by <a href="/azure/devops/pipelines/get-started/what-is-azure-pipelines" data-raw-source="[deploying it to a specific environment for each separate release step](../pipelines/get-started/what-is-azure-pipelines.md)">deploying it to a specific environment for each separate release step</a>, and by controlling the process through approvals for each step.</p>
 
 
 <p><b>Code search</b></p>
