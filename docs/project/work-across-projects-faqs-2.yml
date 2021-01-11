@@ -10,9 +10,9 @@ summary: |
 
   This article addresses these questions. To learn about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
 
-sections: 
-  - name: Projects
-    questions:
+sections:
+  - name: Projects
+    questions: 
       - question: How many projects should I create?
         answer: |
           In general, we recommend that you create a single project. However, certain business needs, such as supporting a public project or applying security policies, may require creating more than one project. To learn more, see one of the following articles.  
