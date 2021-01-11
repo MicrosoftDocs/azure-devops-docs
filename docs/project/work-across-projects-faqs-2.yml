@@ -65,7 +65,8 @@ sections:
           **Yes**. You can use any link type you want to link work items that are defined in different projects. The projects must be defined within the same organization or project collection. To learn more, see [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md).
 
       - question: Can I query for work items linked across projects? 
-        answer: **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
+        answer:  |
+          **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
 
       - question: Can I export a cross-project query to Excel? 
         answer: |
