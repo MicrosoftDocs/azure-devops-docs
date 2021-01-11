@@ -2,10 +2,6 @@
 metadata: 
   title: Work across projects FAQ 
   description: Get answers to common questions about working across projects in Azure DevOps. 
-  ms.technology: devops-collab
-  author: KathrynEE
-  monikerRange: '>= tfs-2017'
-  ms.date: 01/11/2021
 
 title: Work across projects FAQs 
 summary: Many enterprise organizations add multiple projects to support their business needs. While we recommend that you maintain a single project to keep things simple, there are instances where multiple projects are needed. In that event, several questions arise as to what tasks are supported when working with two or more projects. This article addresses these questions. To learn about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
