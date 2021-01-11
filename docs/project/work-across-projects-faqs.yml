@@ -3,15 +3,15 @@ metadata:
   title: Work across projects FAQ 
   description: Get answers to common questions about working across projects in Azure DevOps. 
 
----
-titleSuffix: Azure DevOps
-ms.technology: devops-collab
-ms.topic: conceptual
-ms.author: kaelli   
-author: KathrynEE
-monikerRange: '>= tfs-2017'
-ms.date: 11/16/2020
---- 
+  ---
+  titleSuffix: Azure DevOps
+  ms.technology: devops-collab
+  ms.topic: conceptual
+  ms.author: kaelli   
+  author: KathrynEE
+  monikerRange: '>= tfs-2017'
+  ms.date: 11/16/2020
+  --- 
 
 title: Work across projects FAQs 
 
@@ -20,11 +20,11 @@ summary: |
 
   This article addresses these questions. To learn about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
 
-::: moniker range="azure-devops"  
-|
-> [!NOTE]  
-> Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../organizations/projects/about-projects.md#project-scoped-user-group). 
-::: moniker-end  
+  ::: moniker range="azure-devops"  
+  |
+  > [!NOTE]  
+  > Users added to the **Project-Scoped Users** group can only access those projects they've been explicitly added to. To learn more, see [About projects and scaling your organization, Project-scoped User group ](../organizations/projects/about-projects.md#project-scoped-user-group). 
+  ::: moniker-end  
 
 sections:
   - name: Projects
