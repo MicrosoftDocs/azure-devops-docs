@@ -48,22 +48,14 @@ If you aren't sure, you can select **Start 30-day free trial**. Every user in yo
 
 ## Create a feed
 
-A feed is a container that allows users to group packages and control who can access them by modifying the feed permissions.
+A feed is a container that allows users to store packages and control who can access them by modifying the feed permissions.
 
-Feeds are not package type dependent. Azure Artifacts currently supports the storage of all the following package types in a single feed:
+Feeds are not package-type dependent. Azure Artifacts currently supports storing NuGet, npm, Maven, Python, and Universal packages in a single feed.
 
-* NuGet                      
-* npm                        
-* Maven
-* Python
-* Universal
+From within your feed, Select **Create feed** and fill out the form.
 
-
-On your first visit to **Azure Artifacts**, you're welcomed with an image that prompts you to create a new feed. Select the **Create feed** button.
-
-In the dialog box:
-* **Name**: Give the feed a name.
-* **Visibility**: Choose who can read and contribute (or update) packages in your feed. An organization-visible feed is created with permissions that allow all users in the organization to see and use your feed (recommended). A private feed is created with permissions such that only you have access.
+* **Name**: feed name.
+* **Visibility**: Choose who can download or upload packages to/from your feed.
 * **Upstream sources**: Selecting **Use packages from public sources through this feed** will add both the public npm `registry.npmjs.org` and NuGet `packages.nuget.org` packages as upstreams to your feed. When upstreams are enabled, your client (that is, npm and NuGet) can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Use packages published to this feed**, your feed is created without connectivity to public registries. You can connect them later if you want.
 
 When you're done, select **Create**.
@@ -78,7 +70,7 @@ When you're done, select **Create**.
 ::: moniker range="<= tfs-2018"
 
 > [!div class="mx-imgBorder"]
-> ![New feed dialog box TFS](media/new-feed-dialog.png)
+> ![New feed dialog box TFS](media/new-feed-dialog-azure-tfs.png)
 
 ::: moniker-end
 
