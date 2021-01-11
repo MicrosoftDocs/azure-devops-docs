@@ -2,8 +2,12 @@
 metadata:
   title: Work across projects FAQ 
   description: Get answers to common questions about working across projects in Azure DevOps. 
+
 title: Work across projects FAQs 
-summary: Many enterprise organizations add multiple projects to support their business needs. While we recommend that you maintain a single project to keep things simple, there are instances where multiple projects are needed. In that event, several questions arise as to what tasks are supported when working with two or more projects. This article addresses these questions. To learn about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
+summary: |
+  Many enterprise organizations add multiple projects to support their business needs. While we recommend that you maintain a single project to keep things simple, there are instances where multiple projects are needed. In that event, several questions arise as to what tasks are supported when working with two or more projects. 
+
+  This article addresses these questions. To learn about specific cross-project features, see [Work across projects](navigation/work-across-projects.md).
 
 sections: 
   - name: Projects
@@ -20,8 +24,7 @@ sections:
           When you connect from a web browser, you can connect to different projects from different browser tabs. When you connect from a client or IDE, you can only connect to a single project at a time. For more information, see [Connect to team projects](../organizations/projects/connect-to-projects.md). 
 
       - question: How do I view all projects available to me?   
-        answer: |
-          See [Switch project, repository, team](navigation/go-to-project-repo.md).
+        answer: See [Switch project, repository, team](navigation/go-to-project-repo.md).
 
       - question: How do I turn off cross-project collaboration? 
         answer: | 
@@ -58,8 +61,7 @@ sections:
           **Yes**. You can use any link type you want to link work items that are defined in different projects. The projects must be defined within the same organization or project collection. To learn more, see [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md).
 
       - question: Can I query for work items linked across projects? 
-        answer: |
-          **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
+        answer: **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
 
       - question: Can I export a cross-project query to Excel? 
         answer: |
