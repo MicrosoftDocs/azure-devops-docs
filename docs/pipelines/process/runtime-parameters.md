@@ -204,8 +204,8 @@ parameters:
 
 steps: 
 - ${{ each parameter in parameters }}:
-  - script: echo ${{ parameter.Key }} 
-  - script: echo ${{ parameter.Value }}
+  - script: echo ${{ parameters.Key }} 
+  - script: echo ${{ parameters.Value }}
 ```
 
 ```yaml
