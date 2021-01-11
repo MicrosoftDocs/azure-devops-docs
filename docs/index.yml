@@ -242,7 +242,7 @@ additionalContent:
               text: Work across projects
             - url: ./project/navigation/work-across-projects.md  
               text: Work across projects FAQs
-            - url: ./project/work-across-projects-faqs.md  
+            - url: ./project/work-across-projects-faqs.yml  
               text: "See more >"
         # Card
         - title: GitHub integration
