@@ -78,7 +78,7 @@ For information on rate limits, see [Current rate limits](../../integrate/concep
    
    e. The usage page is scoped to the 30 minutes before and after the first delayed request. Review the request history leading up to delayed requests.
 
-   :::image type="content" source="media/usage-monitoring/usage-screenshot-example.png" alt-text="Usage screenshot example":::
+   :::image type="content" source="media/usage-screenshot-example.png" alt-text="Usage page screenshot example":::
 
 ## Related articles
 
