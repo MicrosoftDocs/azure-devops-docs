@@ -151,7 +151,7 @@ Note the following:
 - Plan views are limited to 12 to 13 months. 
 - Plan views are limited to a maximum of ten teams/backlogs
 - Zooming out can cause fields and tags to disappear from the cards. The further you zoom out, the harder it is to fit items on a card. By design, we hide select items depending on the zoom level.  
--  Rollup isn't supported for child work items that belong to a different project than that of the originating parent work item.  
+-  Child items added from a different project than the parent work item aren't included in the rollup for that parent work item.   
 
 ::: moniker-end  
 
