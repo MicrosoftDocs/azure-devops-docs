@@ -71,7 +71,7 @@ To use Azure Pipelines, you need:
 
 If you use public projects, Azure Pipelines is free. To learn more, see [What is a public project?](../../organizations/public/about-public-projects.md)
 If you use private projects, you can run up to 1,800 minutes (30 hours) of pipeline jobs for free every month.
-Learn more about how the pricing works based on [parallel jobs](../../organizations/billing/buy-more-build-vs.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json).
+Learn more about how the pricing works based on [parallel jobs](../licensing/concurrent-jobs.md).
 
 ## Why should I use Azure Pipelines?
 
