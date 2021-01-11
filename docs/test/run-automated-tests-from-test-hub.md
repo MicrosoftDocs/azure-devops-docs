@@ -39,7 +39,7 @@ You will need:
   that generates builds containing the test binaries.
 
 * The app to test. You can deploy the app as part of the 
-  [build and release workflow](../pipelines/overview.md) and also use it for on-demand testing.
+  [build and release workflow](../pipelines/get-started/what-is-azure-pipelines.md) and also use it for on-demand testing.
 
 You must also be a Project Contributor, or have the following permissions:
 
