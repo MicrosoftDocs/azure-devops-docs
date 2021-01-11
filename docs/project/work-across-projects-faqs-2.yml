@@ -76,16 +76,19 @@ sections:
           **No**. Cross-project queries won't open in Excel.   
           ::: moniker-end
 
-      ::: moniker range="azure-devops"
-      - question: Can I link work items across organizations?
+
+      - question: Can I link work items across organizations or collections?
         answer: |
-          **Yes**. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../boards/backlogs/add-link.md#link-to-a-remote-work-item). 
-      ::: moniker-end
-      ::: moniker range="< azure-devops"
+          ::: moniker range="azure-devops"
+          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../boards/backlogs/add-link.md#link-to-a-remote-work-item). 
+          ::: moniker-end
+          ::: moniker range="< azure-devops"
+          **No** across collections. This isn't a supported feature. 
+          ::: moniker-end
+
       - question: Can I perform capacity planning across projects?
         answer: |
           **No**. Capacity planning data isn't stored in the work tracking data store or Analytics service. This isn't a supported feature.  
-      ::: moniker-end
 
       - question: How do I manage dependencies across projects?  
         answer: |
@@ -96,20 +99,15 @@ sections:
           **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
 
 
-  ::: moniker range="azure-devops"
   - name: Azure Boards configuration and customization
     questions:
       - question: Can I apply an Inherited process defined in one organization to another organization?  
         answer: |
           **Yes**. To perform this operation, you need to export the process and import it to the other organization. While there is no import/export user interface, you can use the [Process Migrator for Node.js](https://github.com/Microsoft/process-migrator) application.  
-  ::: moniker-end
-  ::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
-  - name: Azure Boards configuration and customization
-    questions: 
+ 
       - question: Can I apply an Inherited process defined in one collection to another collection?  
         answer: |
           **Yes**. To perform this operation, you need to export the process and import it to the other collection. While there is no import/export user interface, you can use the [Process Migrator for Node.js](https://github.com/Microsoft/process-migrator) application.  
-  ::: moniker-end
 
   - name: Azure Repos 
     questions:
