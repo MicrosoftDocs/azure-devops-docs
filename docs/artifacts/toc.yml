@@ -163,4 +163,4 @@
   - name: REST API reference
     href: /rest/api/azure/devops/index
   - name: Azure DevOps CLI
-    href: /azure/devops/cli/index
+    href: ../cli/index.md
