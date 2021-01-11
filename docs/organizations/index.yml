@@ -86,7 +86,7 @@ landingContent:
           - text: Set up billing for your organization
             url: ./billing/set-up-billing-for-your-organization-vs.md
           - text: Buy CI/CD for Azure DevOps
-            url: ./billing/buy-more-build-vs.md
+            url: ../../pipelines/licensing/concurrent-jobs.md
           - text: Try Azure Test Plans for free
             url: ./billing/try-additional-features-vs.md
   - title: Add & manage projects
