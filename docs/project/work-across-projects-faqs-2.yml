@@ -43,11 +43,11 @@ sections:
           **Yes**. Most dashboard widgets support configuration for the currently connected project. However, you can add query-based dashboard widgets&mdash;such as [Query results](../report/dashboards/widget-catalog.md#query-results) and [Chart for work items](../report/dashboards/charts.md#add-chart-widget)&mdash;to support cross-project queries. To learn how, see [Create and save managed queries, Query across projects](../boards/queries/using-queries.md#query-across-projects).  
           ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+      ::: moniker range=">= azure-devops-2019"
       - question: Can I create a report that spans two or more projects? 
         answer: |
           **Yes**. The Analytics service and Power BI reports support creation of reports that span two or more projects. To learn more, see [Create a Power BI report with an OData Query](../report/powerbi/create-quick-report-odataq.md). 
-::: moniker-end
+      ::: moniker-end
 
   - name: Azure Boards and work tracking
     questions: 
@@ -73,16 +73,16 @@ sections:
           **No**. Cross-project queries won't open in Excel.   
           ::: moniker-end
 
-::: moniker range="azure-devops"
+      ::: moniker range="azure-devops"
       - question: Can I link work items across organizations?
         answer: |
           **Yes**. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../boards/backlogs/add-link.md#link-to-a-remote-work-item). 
-::: moniker-end
-::: moniker range="< azure-devops"
+      ::: moniker-end
+      ::: moniker range="< azure-devops"
       - question: Can I perform capacity planning across projects?
         answer: |
           **No**. Capacity planning data isn't stored in the work tracking data store or Analytics service. This isn't a supported feature.  
-::: moniker-end
+      ::: moniker-end
 
       - question: How do I manage dependencies across projects?  
         answer: |
@@ -93,20 +93,20 @@ sections:
           **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
 
 
-::: moniker range="azure-devops"
+  ::: moniker range="azure-devops"
   - name: Azure Boards configuration and customization
     questions:
       - question: Can I apply an Inherited process defined in one organization to another organization?  
         answer: |
           **Yes**. To perform this operation, you need to export the process and import it to the other organization. While there is no import/export user interface, you can use the [Process Migrator for Node.js](https://github.com/Microsoft/process-migrator) application.  
-::: moniker-end
-::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
+  ::: moniker-end
+  ::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
   - name: Azure Boards configuration and customization
     questions: 
       - question: Can I apply an Inherited process defined in one collection to another collection?  
         answer: |
           **Yes**. To perform this operation, you need to export the process and import it to the other collection. While there is no import/export user interface, you can use the [Process Migrator for Node.js](https://github.com/Microsoft/process-migrator) application.  
-::: moniker-end
+  ::: moniker-end
 
   - name: Azure Repos 
     questions:
