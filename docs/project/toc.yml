@@ -3,9 +3,7 @@
 - name: Work across projects 
   href: ./navigation/work-across-projects.md 
 - name: Work across projects FAQs
-  href: work-across-projects-faqs.md 
-- name: Work across projects FAQs
-  href: work-across-projects-faqs-2.yml 
+  href: work-across-projects-faqs.yml 
 - name: Wiki
   href: wiki/toc.yml
 - name: Public Projects
