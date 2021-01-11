@@ -13,19 +13,19 @@ summary: |
 sections: 
   - name: Projects
     questions:
-    - question: How many projects should I create?
-      answer: |
-        In general, we recommend that you create a single project. However, certain business needs, such as supporting a public project or applying security policies, may require creating more than one project. To learn more, see one of the following articles.  
-        - [About projects and scaling your organization](../organizations/projects/about-projects.md)
-        - [Plan your organizational structure](../user-guide/plan-your-azure-devops-org-structure.md)
-        - [What is a public project?](../organizations/public/about-public-projects.md) 
+      - question: How many projects should I create?
+        answer: |
+          In general, we recommend that you create a single project. However, certain business needs, such as supporting a public project or applying security policies, may require creating more than one project. To learn more, see one of the following articles.  
+          - [About projects and scaling your organization](../organizations/projects/about-projects.md)
+          - [Plan your organizational structure](../user-guide/plan-your-azure-devops-org-structure.md)
+          - [What is a public project?](../organizations/public/about-public-projects.md) 
 
-    - question: Can I connect to more than one project at a time?  
-      answer: |
-        When you connect from a web browser, you can connect to different projects from different browser tabs. When you connect from a client or IDE, you can only connect to a single project at a time. For more information, see [Connect to team projects](../organizations/projects/connect-to-projects.md). 
+      - question: Can I connect to more than one project at a time?  
+        answer: |
+          When you connect from a web browser, you can connect to different projects from different browser tabs. When you connect from a client or IDE, you can only connect to a single project at a time. For more information, see [Connect to team projects](../organizations/projects/connect-to-projects.md). 
 
-    - question: How do I view all projects available to me?   
-      answer: See [Switch project, repository, team](navigation/go-to-project-repo.md).
+      - question: How do I view all projects available to me?   
+        answer: See [Switch project, repository, team](navigation/go-to-project-repo.md).
 
       - question: How do I turn off cross-project collaboration? 
         answer: | 
