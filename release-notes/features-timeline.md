@@ -13,10 +13,10 @@ hide_comments: true
 
 ---
 
-\| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a>
+\| <a href="/azure/devops/release-notes/2020/sprint-176-update" target="blank">What's New</a>
 \| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a>
 \| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a>
-\| <a href="https://docs.microsoft.com/azure/devops/?view=azure-devops" target="blank">Documentation</a> \|
+\| <a href="/azure/devops/?view=azure-devops" target="blank">Documentation</a> \|
 
 ---
 
@@ -1002,7 +1002,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Jenkins multi-branch pipeline support and link jobs organized in folders</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Jenkins work items in release for JIRA and VSTS Work Items</td><td></td><td>N/A</td></tr>
         <tr><td>Save packages from NuGet.org in your feed</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Maven supports now generally available</td><td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td></tr>
+        <tr><td>Maven supports now generally available</td><td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td></tr>
         <tr><td>Easier feed creation and editing</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Previous package versions are now a full-page list</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Promote, unlist, and deprecate multiple packages</td><td></td><td><em>2018.2</em></td></tr>
@@ -1138,7 +1138,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Create a folder in a repository using web</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Get a permanent link to code</td>
@@ -1150,7 +1150,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Wiki page deep linking</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Move page in Wiki using keyboard</td>
@@ -1170,7 +1170,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Personalized notifications for releases</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Manage variables using the List and Grid views in the new release definition editor</td>
@@ -1178,19 +1178,19 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Branch filters in environment triggers</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Improved Deployment Groups UI</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Run webtests using the VSTest task</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Chart widget for test plans and test suites</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Preview improvements and support for different log types generated by Visual Studio Test task</td>
@@ -1235,27 +1235,27 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Inline add on Delivery Plans</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Forks</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>File minimap</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Bracket matching</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Toggle white space</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Updated email templates for push notification</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Complete Work Items settings</td>
@@ -1267,7 +1267,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Update default repo permissions for admins</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>CI builds for Bitbucket repositories</td>
@@ -1275,19 +1275,19 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Pauses build definitions</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Task input validations support</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>New Release Definition Editor general availability</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Enhancements in new Release Definition editor</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Release Template Extensibility</td>
@@ -1307,11 +1307,11 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Upload attachments to test runs and test results</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Test batching</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>JMeter 3.2 for load testing</td>
@@ -1340,7 +1340,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Updated order of the last column in the Kanban board</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>See the projects using a process</td>
@@ -1348,43 +1348,43 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Filtering on Kanban board</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Wiki in Public Preview</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Improvements in Wiki edit experience</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Revert a Wiki revision</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Create a Wiki page from a broken link</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Setting to turn off web editing for TFVC repos</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Identify stale branches</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Search for a deleted branch and re-create it</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Branch updates page is now Pushes</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Retain filename when moving from Files to Commits</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Pull Request Status Extensibility in Public Preview</td>
@@ -1392,15 +1392,15 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Let contributed build sections control section visibility</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Variable group support</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>dotnet task supports authenticated feeds, web projects</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Ansible Extension on Marketplace</td>
@@ -1408,42 +1408,42 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Variable groups, Retention, and Options tab now available in the new Release Definition Editor</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Release status badge-in Code hub</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Enhancements to Build definition menu when adding artifacts</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Revert your release definition to older version</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr><br/>        <tr>
             <td>Exploratory testing traceability improvements for work item links, iterations, and area paths</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Screenshot and annotation support for desktop apps with Chrome browser for manual tests</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Filters for Test Case work items in Test Plans and Suites in Test Hub</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Test trend charts for Release Environments and Test Runs</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Markdown formatting support for Test Run and Test Result comments</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Add link to existing bug for a failing test</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Reorder favorite groups</td>
@@ -1460,67 +1460,67 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Filtering on Backlogs, Sprints, and Queries</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Expand to show empty fields on a Kanban card</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Automatically complete work items when completing pull requests</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Policies: Reset votes on push/new iteration</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Notifications: Great email templates for pull request workflows</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Pull request details: View original diff for code comments</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Task lists in pull request descriptions and comments</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Ability to &quot;Like&quot; comments in pull requests</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Pull request build variables</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Faster publishing of artifacts from Windows agents to file shares</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Code information in Release with Jenkins CI</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Task group References</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Task group versioning</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Multi Configuration support in Server Side (Agentless) tasks</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Task group import and export</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>New Release Definition Editor (Preview)</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Velocity Widget for the Analytics Extension</td>
@@ -1528,7 +1528,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Notifications: Give team admins control over the delivery of notifications targeting the team</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Constraints on SVG images, screenshots, and badges</td>
@@ -1549,35 +1549,35 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Allow extensions to block work item save</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Collapsible pull request comments</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Improved workflow when approving with suggestions</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Filters pull request tree by file name</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Pull request callout on commit details page becomes richer</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Filter tree view in Code</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Git tags web view</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Export and import build definitions</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Visual Studio latest and hosted agent pools</td>
@@ -1585,15 +1585,15 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Build definition menu on build summary page</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Release Triggers: Continuous deployment for changes pushed to a Git repository</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Enhancements to Server tasks</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Consume Secrets from an Azure Key Vault as variables</td>
@@ -1601,11 +1601,11 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Package Management experience updates</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Packages build task updates</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Project Collection Administrators can link/make initial purchase</td>
@@ -1634,7 +1634,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr>
             <td rowspan="19"><a href="2017/jun-01-team-services.md" data-raw-source="[1 Jun 2017](2017/jun-01-team-services.md)">1 Jun 2017</a></td>
             <td>Mobile work item form general availability</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>New widgets for Analytics extension</td>
@@ -1642,15 +1642,15 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Path filtering support for Git notifications</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>More pull request comments filtering options</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Search for a commit in branches starting with a prefix</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Visual Studio Enterprise benefit for pipelines in Team Services</td>
@@ -1658,31 +1658,31 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Work with secure files such as Apple certificates</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Extensions with build templates</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Deprecate a task in an extension</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Task group references</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Variables Support in Manual Intervention task</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Control releases to an environment based on the source branch</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Release Triggers for Git repositories as an artifact source</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>On-demand triggering of automated tests</td>
@@ -1711,7 +1711,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr>
             <td rowspan="25"><a href="2017/may-11-team-services.md" data-raw-source="[11 May 2017](2017/may-11-team-services.md)">11 May 2017</a></td>
             <td>VM deployment (Public Preview)</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Azure virtual machine scale set</td>
@@ -1787,7 +1787,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Maven for Package Management (Public Preview)</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>NuGet Restore, Command, and Tool Installer build tasks</td>
@@ -1828,7 +1828,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>Build tool installers</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>SSH deployment improvements</td>
@@ -1962,11 +1962,11 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td>New mobile discussion experience</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Optimized mobile identity picker</td>
-            <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018](/visualstudio/releasenotes/tfs2018-relnotes)">2018</a></td>
         </tr>
         <tr>
             <td>Customized backlog levels</td>
@@ -2615,7 +2615,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr>
             <td rowspan="9"><a href="2016/jul-29-team-services.md" data-raw-source="[29 Jul 2016](2016/jul-29-team-services.md)">29 Jul 2016</a> </td>
             <td>Git and TFVC – History view and diff view updates</td>
-            <td></td><td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-update1-vs" data-raw-source="[2017](https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-update1-vs)">2017</a></td>
+            <td></td><td><a href="/visualstudio/releasenotes/tfs2015-update1-vs" data-raw-source="[2017](/visualstudio/releasenotes/tfs2015-update1-vs)">2017</a></td>
         </tr>
         <tr>
             <td>Restrict Package Management feed creation</td>
@@ -3653,7 +3653,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="https://azure.microsoft.com/documentation/articles/app-insights-java-get-started/" data-raw-source="[9 Mar 2015](https://azure.microsoft.com/documentation/articles/app-insights-java-get-started/)">9 Mar 2015</a></td>
+            <td><a href="/azure/azure-monitor/app/java-get-started" data-raw-source="[9 Mar 2015](/azure/azure-monitor/app/java-get-started)">9 Mar 2015</a></td>
             <td>Application Insights support for Java</td>
             <td></td><td>N/A</td>
         </tr>
@@ -4353,87 +4353,87 @@ Versions in the "Server" column are linked to the appropriate download location.
 </thead>
 <tbody>
         <tr>
-          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020" data-raw-source="[2020 RTW](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020)">2020 RTW</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020" data-raw-source="[2020 RTW](/azure/devops/server/release-notes/azuredevops2020?view=azure-devops-2020)">2020 RTW</a></td>
           <td>Oct. 6, 2020</td>
           <td>18.170.30525.1</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1)">2019.1.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](/azure/devops/server/release-notes/azuredevops2019u1)">2019.1.1</a></td>
           <td>Dec. 10, 2019</td>
           <td>17.153.29522.3</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1)">2019.1</a></td>
+          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](/azure/devops/server/release-notes/azuredevops2019u1)">2019.1</a></td>
           <td>Aug. 20, 2019</td>
           <td>17.153.29207.5</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019.0.1](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019)">2019.0.1</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019.0.1](/azure/devops/server/release-notes/azuredevops2019)">2019.0.1</a></td>
           <td>May 21, 2019</td>
           <td>17.143.28912.1</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019 RTW](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019)">2019 RTW</a></td>
+          <td><a href="/azure/devops/server/release-notes/azuredevops2019" data-raw-source="[2019 RTW](/azure/devops/server/release-notes/azuredevops2019)">2019 RTW</a></td>
           <td>Mar. 5, 2019</td>
           <td>17.143.28621.4</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.2](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)">2018.3.2 Rerelease</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.2](/visualstudio/releasenotes/tfs2018-update3)">2018.3.2 Rerelease</a></td>
           <td>Feb. 6, 2019</td>
           <td>16.131.28601.4</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.2](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)">2018.3.2</a></td>
+          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.2](/visualstudio/releasenotes/tfs2018-update3)">2018.3.2</a></td>
           <td>Jan. 15, 2019</td>
           <td>16.131.28507.4</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.1](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)">2018.3.1</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3.1](/visualstudio/releasenotes/tfs2018-update3)">2018.3.1</a></td>
           <td>Nov 11, 2018</td>
           <td>16.131.28226.3</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update3)">2018.3</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update3" data-raw-source="[2018.3](/visualstudio/releasenotes/tfs2018-update3)">2018.3</a></td>
           <td>Sep. 12, 2018</td>
           <td>16.131.28106.2</td>
         </tr>
         <tr>
-          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update2" data-raw-source="[2018.2](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update2)">2018.2</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update2" data-raw-source="[2018.2](/visualstudio/releasenotes/tfs2018-update2)">2018.2</a></td>
           <td>May 7, 2018</td>
           <td>16.131.27701.1</td>
         </tr>
          <tr>
-          <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1.2](https://aka.ms/tfs2018-update1)">2018.1.2</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update1" data-raw-source="[2018.1.2](/visualstudio/releasenotes/tfs2018-update1)">2018.1.2</a></td>
           <td>Nov. 27, 2018</td>
           <td>16.122.28313.3</td>
         </tr>
          <tr>
-          <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1.1](https://aka.ms/tfs2018-update1)">2018.1.1</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update1" data-raw-source="[2018.1.1](/visualstudio/releasenotes/tfs2018-update1)">2018.1.1</a></td>
           <td>Sep. 12, 2018</td>
           <td>16.122.28028.4</td>
         </tr>
          <tr>
-          <td><a href="https://aka.ms/tfs2018-update1" data-raw-source="[2018.1](https://aka.ms/tfs2018-update1)">2018.1</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-update1" data-raw-source="[2018.1](/visualstudio/releasenotes/tfs2018-update1)">2018.1</a></td>
           <td>Feb. 20, 2018</td>
           <td>16.122.27409.2</td>
         </tr>
         <tr>
-          <td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018 RTW](https://aka.ms/relnotes-tfs2018)">2018 RTW</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2018-relnotes" data-raw-source="[2018 RTW](/visualstudio/releasenotes/tfs2018-relnotes)">2018 RTW</a></td>
           <td>Nov. 15, 2017</td>
           <td>16.122.27102.1</td>
         </tr>
         <tr>
-          <td><a href="https://aka.ms/relnotes-tfs2017-update3" data-raw-source="[2017.3.1](https://aka.ms/relnotes-tfs2017-update3)">2017.3.1</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2017-update3" data-raw-source="[2017.3.1](/visualstudio/releasenotes/tfs2017-update3)">2017.3.1</a></td>
           <td>Feb. 28, 2018</td>
           <td>15.117.27414.0</td>
         </tr>
         <tr>
-          <td><a href="https://aka.ms/relnotes-tfs2017-update3" data-raw-source="[2017.3](https://aka.ms/relnotes-tfs2017-update3)">2017.3</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2017-update3" data-raw-source="[2017.3](/visualstudio/releasenotes/tfs2017-update3)">2017.3</a></td>
           <td>Nov. 6, 2017</td>
           <td>15.117.27024.0</td>
         </tr>
         <tr>
-          <td><a href="https://aka.ms/relnotes-tfs2017-update2" data-raw-source="[2017.2](https://aka.ms/relnotes-tfs2017-update2)">2017.2</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2017-update2" data-raw-source="[2017.2](/visualstudio/releasenotes/tfs2017-update2)">2017.2</a></td>
           <td>Jul. 24, 2017</td>
           <td>15.117.26714.00</td>
         </tr>
@@ -4441,11 +4441,11 @@ Versions in the "Server" column are linked to the appropriate download location.
           <td>2017.1</td>
           <td>Mar. 9, 2017 (Mar. 7, 2017)</td>
           <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier" data-raw-source="[15.112.26307.00
-          (15.112.26301.0)](https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)">15.112.26307.00
+          (15.112.26301.0)](/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)">15.112.26307.00
           (15.112.26301.0)<em></a></td>
         </tr>
         <tr>
-          <td><a href="https://aka.ms/tfs2017-relnotes" data-raw-source="[2017.0.1](https://aka.ms/tfs2017-relnotes)">2017.0.1</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2017-relnotes" data-raw-source="[2017.0.1](/visualstudio/releasenotes/tfs2017-relnotes)">2017.0.1</a></td>
           <td>Feb. 28, 2018</td>
           <td>15.105.27412.0</td>
         </tr><br/>        <tr>
@@ -4454,13 +4454,13 @@ Versions in the "Server" column are linked to the appropriate download location.
           <td>15.105.25910.00</td>
         </tr>
         <tr>
-          <td><a href="https://aka.ms/tfs2015-update4-vs" data-raw-source="[2015.4.2](https://aka.ms/tfs2015-update4-vs)">2015.4.2</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2015-update4-vs" data-raw-source="[2015.4.2](/visualstudio/releasenotes/tfs2015-update4-vs)">2015.4.2</a></td>
           <td>Apr. 9, 2019</td>
           <td>14.114.28805.0</td>
         </tr>
         <tr>
         <tr>
-          <td><a href="https://aka.ms/tfs2015-update4-vs" data-raw-source="[2015.4.1](https://aka.ms/tfs2015-update4-vs)">2015.4.1</a></td>
+          <td><a href="/visualstudio/releasenotes/tfs2015-update4-vs" data-raw-source="[2015.4.1](/visualstudio/releasenotes/tfs2015-update4-vs)">2015.4.1</a></td>
           <td>Feb. 28, 2018</td>
           <td>14.114.26412.0</td>
         </tr>
