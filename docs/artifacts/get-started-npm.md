@@ -1,6 +1,6 @@
 ---
-title: Use npm to store JavaScript packages in Azure DevOps Services
-description: Use npm to store your JavaScript packages in Azure DevOps Services or Team Foundation Server. This guide will walk you through creating a feed, setting up you .npmrc files, building your project and publish your npm package to your feed.
+title: Use npm to store JavaScript packages
+description: Use npm to store your JavaScript packages. This guide will walk you through creating a feed, setting up you .npmrc files, building your project, and publishing your npm package to your feed.
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
@@ -13,13 +13,11 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-This quickstart will show you how to create your Azure Artifact feed, set up your `.npmrc` files to store your feed URLs and credentials, build your project and publish your npm package to your feed.
+This quickstart will show you how to create your Azure Artifact feed, set up your ***.npmrc*** files to store your feed URLs and credentials, build your project and publish your npm package to your feed.
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
 ## License the Azure Artifacts extension
-
-### Install Azure Artifacts in TFS
 
 Azure Artifacts is installed by default for TFS 2017 customers. To use Azure Artifacts, you must upgrade to TFS 2017.
 
