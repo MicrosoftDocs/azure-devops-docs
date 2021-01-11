@@ -17595,7 +17595,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/devops/organizations/billing/buy-more-build-vs.md",
+      "source_path": "docs/organizations/billing/buy-more-build-vs.md",
       "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false	
     }
