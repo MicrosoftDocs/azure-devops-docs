@@ -29,8 +29,8 @@ A project member has access to features based on the access level assigned. Non-
 * **Pipelines**: **Builds** and **Releases** are available, but **Library**, **Task Groups**, **Deployment Groups**, **Packages**, and XAML build system are hidden.
 	* Pipeline and task editors for build and release pipelines are unavailable  
 	* Only the new **Releases*** page, which is in Public preview, is available.
-* **Test Plans**: **Test Plans** and its associated manual and cloud load testing features are hidden. PowerBI integeration in general isn't supported for AX .
-* **Analytics**: **Analytics views** is hidden, and the Analytics OData feed is not supported for non-members.
+* **Test Plans**: **Test Plans** and its associated manual and cloud load testing features are hidden.
+* **Analytics**: **Analytics views** is hidden, and the Analytics OData feed is not supported for non-members. PowerBI integeration in general isn't supported for AX.
 * Settings and administrative pages are hidden.
 
 > [!NOTE]
