@@ -6,7 +6,7 @@ ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
 ms.topic: conceptual
 ms.author: shashban
 author: azooinmyluggage
-ms.date: 04/22/2020
+ms.date: 01/12/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -25,7 +25,7 @@ Deployments to each stage are fully automated by using
 **Approvals** and **gates** give you additional control over the start and completion of the deployment pipeline.
 Each stage in a release pipeline can be configured with pre-deployment and post-deployment conditions
 that can include waiting for users to manually approve or reject deployments, and checking with other automated
-systems until specific conditions are verified. In addition, you can configure a manual intervention to pause the
+systems until specific conditions are verified. In addition, you can configure a manual intervention or validation to pause the
 deployment pipeline and prompt users to carry out manual tasks, then resume or reject the deployment.
 
 > At present, gates are available only in Azure Pipelines.
@@ -47,8 +47,8 @@ are useful include the following.
 | You want to ensure there are no active issues in the work item or problem management system before deploying a build to a stage.  | [Pre-deployment gates](gates.md) |
 | You want to ensure there are no incidents from the monitoring or incident management system for the app after it's been deployed, before promoting the release. | [Post-deployment gates](gates.md) |
 | After deployment, you want to wait for a specified time before prompting some users for a manual sign out.  | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
-| During the deployment pipeline, a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) | 
-| During the deployment pipeline, you want to prompt the user to enter a value for a parameter used by the deployment tasks, or allow the user to edit the details of this release. | [Manual Intervention](../deploy-using-approvals.md#configure-a-manual-intervention) | 
+| During the deployment pipeline, a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) or [Manual Validation](../../tasks/utility/manual-validation.md)| 
+| During the deployment pipeline, you want to prompt the user to enter a value for a parameter used by the deployment tasks, or allow the user to edit the details of this release. | [Manual Intervention](../deploy-using-approvals.md#configure-a-manual-intervention) or [Manual Validation](../../tasks/utility/manual-validation.md) | 
 | During the deployment pipeline, you want to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment jobs.  | Planned | 
 
 You can combine all three techniques within a release pipeline to fully achieve your own deployment requirements.
