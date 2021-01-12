@@ -252,3 +252,15 @@ Deleted packages will remain in the recycle bin for 30 days after which it will 
     > ![Restore package TFS](../media/recycle-bin/recycle-bin-restore.png)
 
 ::: moniker-end
+
+## Q&A
+
+### Q: What happens with old/existing packages when we enable retention policies?
+
+A: Those packages will get soft-deleted and moved to the recycle bin. The deletion job runs once a day but there could be an initial delay after the policy is turned on for the first time due to an influx of packages. Packages remain in the recycle bin for 30 days before they are permanently deleted. To remove the packages from your billable storage, you can chose to delete them manually using the UI or the REST API before the 30 days is up. 
+
+## What's next?
+
+- [Set up upstream sources](./set-up-upstream-sources.md)
+- [Configure permissions](../feeds/feed-permissions.md)
+- [Promote a package to a view](../feeds/views.md)
