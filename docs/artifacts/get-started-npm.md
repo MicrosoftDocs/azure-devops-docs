@@ -78,6 +78,8 @@ You can change these settings later by editing the feed.
 
 [!INCLUDE [edit-feed](includes/edit-feed.md)]
 
+::: moniker range=">= azure-devops-2019"
+
 ## Set up your .npmrc files
 
 All Azure Artifacts feeds require authentication. You'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
@@ -90,26 +92,8 @@ We recommend that you use two .npmrc files:
 
    1. From your **Artifacts** page, click _Connect to Feed_
 
-      ::: moniker range=">= azure-devops-2019"
-    
       > [!div class="mx-imgBorder"] 
       > ![Connect to feed button in Azure Artifacts devops 2019](media/connect-to-feed-azure-devops-newnav.png)
-
-      ::: moniker-end
-
-      ::: moniker range=">= tfs-2018 < azure-devops-2019"
-        
-      > [!div class="mx-imgBorder"] 
-      > ![Connect to feed button in Azure Artifacts TFS 2018](media/connect-to-feed.png)
-
-      ::: moniker-end
-
-      ::: moniker range="= tfs-2017"
-
-      > [!div class="mx-imgBorder"] 
-      > ![Connect to feed button in Azure Artifacts TFS 2017](media/connect-to-feed.png)
-
-      ::: moniker-end
 
    3. Select **npm**.
 
@@ -121,26 +105,8 @@ We recommend that you use two .npmrc files:
    
    7. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections to publish.npm-azure
 
-      ::: moniker range=">= azure-devops-2019"
-
       > [!div class="mx-imgBorder"] 
       > ![Connect to feed from Azure Artifacts devops 2019](media/npm-azure-devops-newnav.png)
-
-      ::: moniker-end
-
-      ::: moniker range=">= tfs-2018 < azure-devops-2019"
-
-      > [!div class="mx-imgBorder"]
-      > ![Connect to feed from Azure Artifacts TFS 2018](media/connect-to-feed-npm-registry.png)
-
-      ::: moniker-end
-
-      ::: moniker range="= tfs-2017"
-
-      > [!div class="mx-imgBorder"]
-      > ![Connect to feed from Azure Artifacts TFS 2017](media/connect-to-feed-npm-registry.png)
-
-      ::: moniker-end
         
 2. On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
 
@@ -171,6 +137,8 @@ If you're developing on Linux or Mac, `vsts-npm-auth` is not supported. We recom
 
 > [!NOTE]
 > If you have npmjs.com configured as an upstream and the package name/version exists in the public registry, you'll be blocked from publication. We don't support overriding packages that exist in the public registry. See [packages from npmjs.com](npm/upstream-sources.md) for more details.
+
+::: moniker-end
 
 ## Build your project
 
