@@ -424,8 +424,8 @@ Defines and secures a connection to any other type of service or application.
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the service. |
-| User name | Required. The username to connect to the service. |
-| Password/Token Key | Required. The password or access token for the specified username. |
+| User name | Optional. The username to connect to the service. |
+| Password/Token Key | Optional. The password or access token for the specified username. |
 
 *****
 
