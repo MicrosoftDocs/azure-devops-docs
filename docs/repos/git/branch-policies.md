@@ -290,6 +290,7 @@ If you select **Required**, then the pull request can't be completed until:
 
 - Every user added as a reviewer for the path approves the changes.
 - At least one person in every group added to the path approves the changes.
+- The number of reviewers specified for every group added to the path approves the changes.
 
 ::: moniker range="< azure-devops-2020"
 ![Required reviewers are automatically added](media/branch-policies/required-reviewer-added.png)
