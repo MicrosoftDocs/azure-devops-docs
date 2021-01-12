@@ -13,7 +13,7 @@ ms.date: 11/30/2020
 
 **Azure Pipelines**
 
-Use this task in a YAML pipeline to pause a  run within a stage, typically to perform some manual actions or validations, and then resume/reject the run.
+Use this task in a YAML pipeline to pause a run within a stage, typically to perform some manual actions or validations, and then resume/reject the run.
 
 ## Demands
 
