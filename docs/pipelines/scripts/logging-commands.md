@@ -460,8 +460,8 @@ Upload a local file into a file container folder, and optionally publish an arti
 
 #### Properties
 
-* `containerfolder` = folder that the file will upload to, folder will be created if needed. (Required)
-* `artifactname` = artifact name
+* `containerfolder` = folder that the file will upload to, folder will be created if needed.
+* `artifactname` = artifact name. (Required)
 
 #### Example
 
