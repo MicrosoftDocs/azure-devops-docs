@@ -84,6 +84,9 @@ You can change these settings later by editing the feed.
 
 All Azure Artifacts feeds require authentication. You'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
+> [!NOTE]
+> `vsts-npm-auth` is not supported on on-premises TFS and Azure DevOps Server.
+
 ### Find your .npmrc files
 
 We recommend that you use two .npmrc files:
@@ -159,6 +162,7 @@ If you have followed all of the steps up to this point, your npm package should 
 > [!IMPORTANT]
 > Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed. The build does not support using the `publishConfig` property to specify the registry to which you're publishing. If you include the `publishConfig` property in your package.json file, the build will fail with potentially an unrelated authentication error.
 
-## Next steps
+## What's next?
 
-Check out the [Azure Artifacts landing page](./index.yml) to learn about other topics.
+- [Publish npm packages (YAML/Classic)](../pipelines/artifacts/npm.md)
+- [Use packages from npmjs.com](./npm/upstream-sources.md)
