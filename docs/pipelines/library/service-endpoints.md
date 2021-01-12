@@ -160,12 +160,6 @@ Or you can choose to lock down the service connection and only allow selected YA
 
 ![Azure Resource Manager project permissions](../release/media/azure-rm-endpoint/project-permissions.png)
 
-> [!NOTE]
-> The sharing feature is still under preview and is not yet rolled out. If you want this feature enabled, you can reach out to us.
-> Project permissions feature is dependent on the new service connections UI and once we enable this feature, the old service
-> connections UI is no longer usable.
-
-
 <a name="use-connection"></a>
 
 ## Use a service connection
