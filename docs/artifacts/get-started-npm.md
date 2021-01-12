@@ -1,6 +1,6 @@
 ---
 title: Use npm to store JavaScript packages
-description: Use npm to store your JavaScript packages. This guide will walk you through creating a feed, setting up you .npmrc files, building your project, and publishing your npm package to your feed.
+description: Use npm to store your JavaScript packages. create a feed, set up .npmrc files, build your project, and publish your npm package to your feed.
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
@@ -19,16 +19,13 @@ This quickstart will show you how to create your Azure Artifact feed, set up you
 
 ## License the Azure Artifacts extension
 
-Azure Artifacts is installed by default for TFS 2017 customers. To use Azure Artifacts, you must upgrade to TFS 2017.
-
-> [!NOTE]
-> If the Azure Artifacts extension has been removed, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+To use Azure Artifacts, you must upgrade to TFS 2017. If the Azure Artifacts extension has been removed, you can install it from the [Visual studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ### Assign licenses in TFS
 
-Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.  
+Each organization gets five free licenses. If you need more than five licenses, go to [Visual studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get it free**.
 
-If you aren't sure, you can select **Start 30-day free trial**. Every user in your organization is then granted access to Azure Artifacts for 30 days. After the 30-day trial period, your organization reverts back to five entitled users, and you must assign licenses to individual users.  If you need additional licenses at this point, you can purchase them from this same dialog box in the Marketplace. If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
+If you aren't sure, you can select **Start 30-day free trial**. Every user in your organization is then granted access to Azure Artifacts for 30 days. After the 30-day trial period, your organization reverts back to five entitled users, and you must assign licenses to individual users. If you need additional licenses at this point, you can purchase them from this same dialog box in the Marketplace. If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license. Just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
 > [!NOTE]
 > If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access. Licenses don't need to be assigned until the trial period ends. 
@@ -52,11 +49,11 @@ A feed is a container that allows users to store packages and control who can ac
 
 Feeds are not package-type dependent. Azure Artifacts currently supports storing NuGet, npm, Maven, Python, and Universal packages in a single feed.
 
-From within your feed, Select **Create feed** and fill out the form.
+To create a new feed, select **Create feed** button from within your feed and fill out the form.
 
 * **Name**: feed name.
 * **Visibility**: Choose who can download or upload packages to/from your feed.
-* **Upstream sources**: Selecting **Use packages from public sources through this feed** will add both the public npm `registry.npmjs.org` and NuGet `packages.nuget.org` packages as upstreams to your feed. When upstreams are enabled, your client (that is, npm and NuGet) can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Use packages published to this feed**, your feed is created without connectivity to public registries. You can connect them later if you want.
+* **Upstream sources**: Selecting **Use packages from public sources through this feed** will add both the public npm `registry.npmjs.org` and NuGet `packages.nuget.org` packages as upstream sources to your feed. When upstream sources are enabled, your client can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Use packages published to this feed**, your feed is created without connectivity to public registries. You can connect them later if you want.
 
 When you're done, select **Create**.
 
@@ -91,7 +88,7 @@ All Azure Artifacts feeds require authentication. You'll need to store credentia
 
 We recommend that you use two .npmrc files:
 
-1. One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.
+1. One **_.npmrc_** should live at the root of your git repo where your project's **_package.json_** is located.
 
    1. From your **Artifacts** page, click _Connect to Feed_
 
@@ -117,7 +114,7 @@ This enables you to share the project's .npmrc file with the whole team while ke
 
 ### Set up authentication on your development machine
 
-At this point, you should have a project-specific .npmrc file that contains only your feed's registry information that you discovered from the **Connect to feed** dialog box. There should be no credentials in this file. The file is usually adjacent to your project's package.json file.
+At this point, you should have a project-specific .npmrc file that contains only your feed's registry information that you discovered from the **Connect to feed** dialog box. There should be no credentials in this file. The file is usually stored in the same location as your project's package.json file.
 
 > [!IMPORTANT]
 > There can be only a single "registry=" line in your .npmrc file.  Multiple registries are possible with [scopes](npm/scopes.md) and [upstream sources](npm/upstream-sources.md).
@@ -145,7 +142,7 @@ If you're developing on Linux or Mac, `vsts-npm-auth` is not supported. We recom
 
 ## Build your project
 
-At this point, your project should have a package.json file and an .npmrc file adjacent to each other. Run `npm install` from the directory that contains both of these files. npm will discover your feed in the .npmrc file in the current working directory. It will then fetch credentials from your home directory's .npmrc file that you configured in [Create a feed](#create-a-feed).
+At this point, your project should have a package.json file and an .npmrc file in the same folder. Run `npm install` from the directory that contains both of these files. npm will discover your feed in the .npmrc file in the current working directory. It will then fetch credentials from your home directory's .npmrc file that you configured in [Create a feed](#create-a-feed).
 
 ## Publish an npm package
 
