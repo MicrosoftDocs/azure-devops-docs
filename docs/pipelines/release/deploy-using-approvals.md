@@ -6,7 +6,7 @@ ms.assetid: 3D22D4B3-DE1F-482C-BBD4-475C829452C1
 ms.topic: tutorial
 ms.author: shashban
 author: azooinmyluggage
-ms.date: 08/24/2018
+ms.date: 01/12/2021
 monikerRange: '>= tfs-2018'
 ---
 
@@ -26,8 +26,9 @@ for your DevOps CI/CD processes.
 In this tutorial, you learn about:
 
 > [!div class="checklist"]
-> * Extending the approval process with gates
-> * Extending the approval process with manual intervention
+> * Extending the approval process with gates for classic pipelines
+> * Extending the approval process with manual intervention classic pipelines
+> * Extending the approval process with manual validation for YAML pipelines
 > * Viewing and monitoring approvals and gates
 
 ## Prerequisites
@@ -112,7 +113,7 @@ For more information about using other types of approval gates, see [Approvals a
 
 <a name="configure-maninter"></a>
    
-## Configure a manual intervention
+## Configure a manual intervention 
 
 Sometimes, you may need to introduce manual intervention into a release pipeline.
 For example, there may be tasks that cannot be accomplished automatically such as
@@ -151,6 +152,41 @@ Intervention** task in your pipeline.
 
 <a name="view-approvals"></a>
 
+
+## Configure manual validation 
+
+You can use a manual validation to pause a YAML pipeline run within a stage and perform manual activities. You can then then resume or reject the run. Manual validation is especially useful in scenarios where you want to pause a pipeline and validate configuration settings or build package before moving on to a long running computation intensive job.
+
+In this pipeline, `myPostValidationJob` does not run until you give manual approval. There's a prompt within the Pipeline UI to review and provide validation. The email addresses listed in `notifyUsers` will receive emails asking them to approve the pipeline. 
+
+:::image type="content" source="media/needs-validation-prompt.png" alt-text="Add validation for the pipeline to continue.":::
+    
+
+```yaml
+pool: 
+   vmImage: ubuntu-latest
+
+jobs:
+- job: waitForValidation
+  displayName: Wait for external validation  
+  pool: server    
+  timeoutInMinutes: 4320 # job times out in 3 days
+  steps:   
+   - task: ManualValidation@0
+     timeoutInMinutes: 1440 # task times out in 1 day
+     inputs:
+         notifyUsers: |
+            someone@example.com
+         instructions: 'Please validate the build configuration and resume'
+         onTimeout: 'resume'
+
+- job: myPostValidationJob
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - bash: echo "Hello world"
+
+```
 ## View the logs for approvals 
 
 You typically need to validate and audit a release and the associated deployments
