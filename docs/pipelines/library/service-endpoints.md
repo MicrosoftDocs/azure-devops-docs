@@ -335,7 +335,14 @@ You can use the following PowerShell script to obtain a Base64-encoded represent
 
 <h3 id="sep-bbucket">Bitbucket Cloud service connection</h3>
 
-Defines a connection to Bitbucket Cloud.
+Defines a connection to Bitbucket Cloud. You can use OAuth with **Grant authorization** or a username and password with **Basic Authentication**. For pipelines to keep working, your repository access must remain active.
+
+### Grand authorization
+| Parameter | Description |
+| --------- | ----------- |
+| OAuth Configuration | Required.  OAuth connection to Bitbucket. |
+
+### Basic authentication
 
 | Parameter | Description |
 | --------- | ----------- |
