@@ -71,7 +71,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>powerShellErrorActionPreference</code><br/>ErrorActionPreference</td>
-    <td>(Optional) Prepends the line <b>$ErrorActionPreference = 'VALUE'</b> at the top of your powershell/powershell core script<br/>Default value: stop<br/>Options are stop, continue and silentlyContinue</td>
+    <td>(Optional) Prepends the line <b>$ErrorActionPreference = 'VALUE'</b> at the top of your PowerShell/PowerShell Core script<br/>Default value: stop<br/>Options are stop, continue, and silentlyContinue</td>
 </tr>
 <tr>
     <td><code>addSpnToEnvironment</code><br/>Access service principal details in script</td>
