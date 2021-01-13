@@ -60,7 +60,11 @@ When you want to access secrets:
   - In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
 
   - Choose **OK** to save the changes.<p />
-
+  
+> [!NOTE]
+> If you're using a Microsoft-hosted agent, you must add the IP range of the Microsoft-hosted agent to your firewall. Get the weekly list of IP ranges from the [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519), which is published every Wednesday. The new IP ranges become effective the following Monday. For more information, see [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#networking).
+> To find the IP ranges that are required for your Azure DevOps organization, learn how to [identify the possible IP ranges for Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#to-identify-the-possible-ip-ranges-for-microsoft-hosted-agents).
+    
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
@@ -142,7 +146,5 @@ This occurs if the required permissions are missing in the Azure key vault. To r
 ### I can't connect with Key Vault from Azure DevOps.
 
 This happens when the Key Vault firewall isn't properly configured. Make sure that the agent pool and the Datacenter (TFS) can access the key vault. Ensure that the [agent IP ranges for Microsoft-hosted agents](../../agents/hosted.md#agent-ip-ranges) are allow listed.
-
-
 
 <!-- ENDSECTION -->
