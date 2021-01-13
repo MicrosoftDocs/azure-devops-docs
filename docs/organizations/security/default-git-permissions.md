@@ -8,11 +8,11 @@ ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
 ms.date: 06/28/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 # Default Git repository and branch permissions
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 After you've been added as a team member, you are a member of the Contributors group. This membership allows you to contribute to a Git repository. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for contributing to a branch or repository.
 

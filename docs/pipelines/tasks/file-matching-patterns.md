@@ -1,4 +1,4 @@
-﻿---
+---
 title: File matching patterns reference
 ms.custom: seodec18
 description: A reference guide that can help you to understand the file matching patterns for Azure Pipelines and Team Foundation Server (TFS).

@@ -1,26 +1,25 @@
 ---
 title: Add tags to work items 
 titleSuffix: Azure Boards
-description: Add work item tags to categorize and filter lists & boards when working in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Add work item tags to categorize and filter lists & boards when working in Azure Boards and Azure DevOps 
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 09/26/2019
+monikerRange: '<= azure-devops'
+ms.date: 07/09/2020
 ---
 
 # Add work item tags to categorize and filter lists and boards  
  
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 
 Tagging work items helps you quickly filter the product backlog or a work 
 item query by categories that you define. 
-A tag corresponds to a one or two keyword phrase that you define and that  
-supports your needs to filter a backlog or query, or define a query. 
+A tag corresponds to a one or two keyword phrase that you define and that supports your needs to filter a backlog or query, or define a query. 
 
 Tags are a better choice to filter work items than using text strings as described in [Guidance to create high-performing queries](high-performing-queries.md).
 
@@ -80,7 +79,7 @@ You can bulk update work items to add or remove tags from the web portal.
 You bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags). Or, you can use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to bulk add or remove tags.   
 
 > [!div class="mx-imgBorder"]
-> ![Bulk add to several work items](media/add-tags/bulk-add-tags.png) 
+> ![Edit work items dialog, Bulk add to several work items.](media/add-tags/bulk-add-tags.png) 
 
 ::: moniker-end
 
@@ -111,7 +110,7 @@ To query work items based on tags, add a clause for each tag you want to use to 
 For example, here we query for all work items that are tagged either ```Web``` or ```Service```. 
 
 > [!div class="mx-imgBorder"]
-> ![Bulk add to several work items](media/add-tags/query-tags-add-or.png) 
+> ![Screenshot of Query Editor to query on tags.](media/add-tags/query-tags-add-or.png) 
 
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
@@ -122,28 +121,28 @@ For example, here we query for all work items that are tagged either ```Web``` o
 ## Show tags in your backlog or query results
 
 ::: moniker range=">= tfs-2017"
-Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the ![actions icon](../media/icons/actions-icon.png) to select it from the menu of options.    
+Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  to select it from the menu of options.    
 
 > [!div class="mx-imgBorder"]
-> ![Add Tags to the selected columns to display](media/add-tags/column-options-add-tags-field.png)
+> ![Column options dialog, Add Tags to the selected columns to display.](media/add-tags/column-options-add-tags-field.png)
 
 All tags that have been added to the listed work items appear.
 
 > [!div class="mx-imgBorder"]
-> ![View with Tags column added](media/add-tags/backlog-with-tags.png) 
+> ![Screenshot of product backlog, View with Tags column added.](media/add-tags/backlog-with-tags.png) 
  
 ::: moniker-end
   
 
 ::: moniker range="<= tfs-2015"
 
-1. Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the ![actions icon](../media/icons/actions-icon.png) actions icon to select it from the menu of options.    
+1. Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions icon to select it from the menu of options.    
 
-	![Add Tags to the selected columns to display](media/add-tags-to-query-results.png)
+	![Column options dialog, Add Tags to the selected columns to display, TFS-2015 and earlier versions.](media/add-tags-to-query-results.png)
 
 2. All tags that are assigned to the listed work items appear.
 
-	![View with Tags column added](media/query-results-with-tags-listed.png) 
+	![Product backlog view with Tags column added, TFS-2015 and earlier versions.](media/query-results-with-tags-listed.png) 
  
 ::: moniker-end
 
@@ -235,7 +234,7 @@ Simply save the work item with the tags (100 or less) that you've added, and the
 Limit queries to fewer than 25 tags. More than that and the query will likely time out.  
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ### Add tags to the default column view on the product backlog 
 

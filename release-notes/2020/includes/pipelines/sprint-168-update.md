@@ -20,12 +20,12 @@ Output variables are still produced by steps inside of jobs. Instead of referrin
 
 Building upon [improving pipeline security by restricting the scope of access tokens](https://docs.microsoft.com/azure/devops/release-notes/2019/sprint-160-update#improve-pipeline-security-by-restricting-the-scope-of-access-tokens) Azure Pipelines can now scope down its repository access to just the repos required for a **YAML-based pipeline**. This means that if the pipelines's access token were to leak, it would only be able to see the repo(s) used in the pipeline. Previously, the access token was good for any Azure Repos repository in the project, or potentially the entire collection.
 
-This feature will be on by default for new projects and organizations. For existing organizations, you must enable it in <b>Organization Settings</b> &gt; <b>Pipelines</b> &gt; <b>Settings</b>. When using this feature, all repositories needed by the build (even those you clone using a script) must be included in the [repository resources](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema%2cparameter-schema#repository-resource) of the pipeline.
+This feature will be on by default for new projects and organizations. For existing organizations, you must enable it in <b>Organization Settings</b> &gt; <b>Pipelines</b> &gt; <b>Settings</b>. When using this feature, all Azure Repos Git repositories accessed by the pipeline using the [build service identity](https://docs.microsoft.com/azure/devops/pipelines/build/options?view=azure-devops#scoped-build-identities) must be explicitly checked out using a `checkout` step in the job that uses the repository. For more information, see [Limit job authorization scope to referenced Azure DevOps repositories](https://docs.microsoft.com/azure/devops/pipelines/repos/azure-repos-git?view=azure-devops&tabs=yaml#limit-job-authorization-scope-to-referenced-azure-devops-repositories).
 
     
 ### Getting details at runtime about multiple repositories
 
-When a pipeline is running, Azure Pipelines adds information about the repo, branch, and commit that triggered the run. Now that YAML pipelines support [checking out multiple repositories](https://docs.microsoft.com/azure/devops/release-notes/2019/sprint-161-update#checkout-multiple-repositories-in-azure-pipelines), you may also want to know the repo, branch, and commit that were checked out for other repositories. This data is available via a runtime expression, which now you can map into a variable. For example:<pre><code><div>resources:</div><div>  repositories:</div><div>  - repository: other</div><div>    type: git</div><div>    name: MyProject/OtherTools variables:</div><div>  tools.ref: $[ resources.repositories['other'].ref ]<br></div><div><br></div><div>steps:</div><div>- checkout: self</div><div>- checkout: other<br>- bash: echo &quot;Tools version: $TOOLS_REF&quot;<br></div></code></pre>
+When a pipeline is running, Azure Pipelines adds information about the repo, branch, and commit that triggered the run. Now that YAML pipelines support [checking out multiple repositories](https://docs.microsoft.com/azure/devops/release-notes/2019/sprint-161-update#checkout-multiple-repositories-in-azure-pipelines), you may also want to know the repo, branch, and commit that were checked out for other repositories. This data is available via a runtime expression, which now you can map into a variable. For example:<pre><code><div>resources:</div><div>  repositories:</div><div>  - repository: other</div><div>    type: git</div><div>    name: MyProject/OtherTools</div><div>variables:</div><div>  tools.ref: $[ resources.repositories['other'].ref ]<br></div><div><br></div><div>steps:</div><div>- checkout: self</div><div>- checkout: other<br>- bash: echo &quot;Tools version: $TOOLS_REF&quot;<br></div></code></pre>
 
     
 ### Multi stage pipelines GA
@@ -36,7 +36,7 @@ You can navigate to the new experience by selecting **Pipelines** -&gt; **Pipeli
 
 To learn more about the multi-stage pipelines user experience, see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops).
 
-![img](../../media/168-pipelines-2-0.png)
+![Multi stage pipelines.](../../media/168-pipelines-2-0.png)
 
     
 ### Configure Deployment Strategies from Azure portal
@@ -45,4 +45,4 @@ With this capability, we have made it easier for you to configure pipelines that
 
 For more details, check out our documentation on [configuring Deployment Strategies](https://aka.ms/AA7jlh8). 
 
-![img](../../media/168-pipelines-4-0.png)  
+![Configure Deployment Strategies from Azure portal.](../../media/168-pipelines-4-0.png)  

@@ -18,9 +18,3 @@
     - name: Service hooks
       tocHref: /azure/devops/service-hooks/
       topicHref: /azure/devops/service-hooks/overview
-    - name: Additional integrations
-      tocHref: /azure/devops/boards/integrations/
-      topicHref: /azure/devops/boards/integrations/boards-slack
-    - name: Additional integrations
-      tocHref: /azure/devops/pipelines/integrations/
-      topicHref: /azure/devops/pipelines/integrations/slack

@@ -35,7 +35,7 @@ None
 
 | Argument | Description |
 | -------- | ----------- |
-| `pathToPublish`<br/>Path to publish | The folder or file path to publish. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. See [Artifacts in Azure Pipelines](../../build/artifacts.md). |
+| `pathToPublish`<br/>Path to publish | The folder or file path to publish. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported. See [Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md). |
 | `ArtifactName`<br/>Artifact name | Specify the name of the artifact that you want to create. It can be whatever you want. For example: `drop` |
 | `publishLocation`<br/>Artifact publish location | Choose whether to store the artifact in Azure Pipelines (`Container`), or to copy it to a file share (`FilePath`) that must be accessible from the build agent. To learn more, see [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md). |
 | `TargetPath`<br/>File share path | Specify the path to the file share where you want to copy the files. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. Publishing artifacts from a Linux or macOS agent to a file share is not supported. |
@@ -44,13 +44,16 @@ None
 | `FileCopyOptions`<br/>File copy options | Pass additional options to the Robocopy command. |
 | [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
 
+> [!NOTE]
+> You cannot use **Bin**, **App_Data** and other folder names reserved by IIS as an artifact name because this content is not served in response to Web requests. Please see [ASP.NET Web Project Folder Structure](/previous-versions/ex526337(v=vs.140)) for more details.
+
 [!INCLUDE [example](../includes/copyfiles-publishbuildartifacts-usage.md)]
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

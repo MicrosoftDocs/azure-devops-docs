@@ -3,10 +3,13 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 03/02/2020
+ms.date: 10/29/2020
 ---
 
 # Logging commands
+
+> [!NOTE]
+> Use UTF-8 formatting for logging commands. 
 
 ## Overview
 
@@ -17,6 +20,12 @@ The general format for a logging command is:
 
 ```
 ##vso[area.action property1=value;property2=value;...]message
+```
+
+There are also a few formatting commands with a slightly different syntax:
+
+```
+##[command]message
 ```
 
 To invoke a logging command, echo the command via standard output.
@@ -37,6 +46,31 @@ Write-Host "##vso[task.setvariable variable=testvar;]testvalue"
 ---
 
 File paths should be given as absolute paths: rooted to a drive on Windows, or beginning with `/` on Linux and macOS.
+
+## Formatting commands
+
+These commands are messages to the log formatter in Azure Pipelines.
+They mark specific log lines as errors, warnings, collapsible sections, and so on.
+
+The formatting commands are:
+
+```
+##[group]Beginning of a group
+##[warning]Warning message
+##[error]Error message
+##[debug]Debug text
+##[command]Command-line being run
+##[endgroup]
+
+```
+
+Those commands will render in the logs like this:
+
+![Screenshot of logs with custom formatting](media/log-formatting.png)
+
+That block of commands can also be collapsed, and looks like this:
+
+![Screenshot of collapsed section of logs](media/log-formatting-collapsed.png)
 
 ## Task commands
 
@@ -118,7 +152,7 @@ for i in {0..100..10}
 do
    sleep 1
    echo "##vso[task.setprogress value=$i;]Sample Progress Indicator"
-do
+done
 echo "Lengthy process is complete."
 ```
 
@@ -161,18 +195,20 @@ Finish the timeline record for the current task, set task result and current ope
 ##vso[task.complete result=Succeeded;]DONE
 ```
 
-### LogDetail: Create and update a timeline record for a task
+### LogDetail: Create or update a timeline record for a task
 
 `##vso[task.logdetail]current operation`
 
 #### Usage
 
-Create and update detail timeline records.
+Creates and updates timeline records.
+This is primarily used internally by Azure Pipelines to report about steps, jobs, and stages.
+While customers can add entries to the timeline, they won't typically be shown in the UI.
 
-The first time we saw `##vso[task.detail]` for each task, we will create a detail timeline for the task. We will create and update nested timeline record base on id and `parentid`.
+The first time we see `##vso[task.detail]` during a step, we create a "detail timeline" record for the step. We can create and update nested timeline records base on `id` and `parentid`.
 
-Task author need to remember which GUID they used for each timeline record.
-The logging system will keep tracking the GUID for each timeline records that been created, so any new GUID will result a new timeline record.
+Task authors must remember which GUID they used for each timeline record.
+The logging system will keep track of the GUID for each timeline record, so any new GUID will result a new timeline record.
 
 #### Properties
 
@@ -204,7 +240,7 @@ Create new nested timeline record:
 Update exist timeline record: 
 
 ```
-##vso[task.logdetail id=exist timeline record guid;progress=15;state=InProgress;]update timeline record
+##vso[task.logdetail id=existing timeline record guid;progress=15;state=InProgress;]update timeline record
 ```
 
 ### SetVariable: Initialize or modify the value of a variable
@@ -216,6 +252,8 @@ Update exist timeline record:
 Sets a variable in the variable service of taskcontext. The first task can set a variable, and following tasks are able to use the variable. The variable is exposed to the following tasks as an environment variable.
 
 When `issecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables are not passed into tasks as environment variables and must instead be passed as inputs.
+
+See [set variables in scripts](../process/variables.md#set-variables-in-scripts) for more details.
 
 #### Properties
 
@@ -230,38 +268,46 @@ When `issecret` is set to `true`, the value of the variable will be saved as sec
 
 Set the variables:
 
-```bash
-echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+```yaml
+- bash: |
+    echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
+    echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+    echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+  name: SetVars
 ```
 
 Read the variables:
 
-```bash
-echo "Non-secrets automatically mapped in, sauce is $SAUCE"
-echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
-echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-echo "Future jobs can also see $OUTPUTSAUCE"
+```yaml
+- bash: |
+    echo "Non-secrets automatically mapped in, sauce is $SAUCE"
+    echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
+    echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+    echo "Future jobs can also see $SETVARS_OUTPUTSAUCE"
+    echo "Future jobs can also see $(SetVars.outputSauce)"
 ```
 
 # [PowerShell](#tab/powershell)
 
 Set the variables:
 
-```ps
-Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
-Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
-Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+```yaml
+- pwsh: |
+    Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
+    Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+    Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
+  name: SetVars
 ```
 
 Read the variables:
 
-```ps
-Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
-Write-Host "Secrets are not automatically mapped in, secretSauce is $env:SECRETSAUCE"
-Write-Host "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
-Write-Host "Future jobs can also see $env:OUTPUTSAUCE"
+```yaml
+- pwsh: |
+    Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
+    Write-Host "Secrets are not automatically mapped in, secretSauce is $env:SECRETSAUCE"
+    Write-Host "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+    Write-Host "Future jobs can also see $env:SETVARS_OUTPUTSAUCE"
+    write-Host "Future jobs can also see $(SetVars.outputSauce)"
 ```
 
 ---
@@ -270,8 +316,9 @@ Console output:
 
 ```
 Non-secrets automatically mapped in, sauce is crushed tomatoes
-Secrets are not automatically mapped in, secretSauce is
+Secrets are not automatically mapped in, secretSauce is 
 You can use macro replacement to get secrets, and they'll be masked in the log: ***
+Future jobs can also see canned goods
 Future jobs can also see canned goods
 ```
 
@@ -323,7 +370,7 @@ Upload and attach attachment to current timeline record. These files are not ava
 
 #### Usage
 
-Upload and attach summary markdown to current timeline record. This summary shall be added to the build/release summary and not available for download with logs.
+Upload and attach summary markdown to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. 
 
 #### Examples
 
@@ -413,8 +460,8 @@ Upload a local file into a file container folder, and optionally publish an arti
 
 #### Properties
 
-* `containerfolder` = folder that the file will upload to, folder will be created if needed. (Required)
-* `artifactname` = artifact name
+* `containerfolder` = folder that the file will upload to, folder will be created if needed.
+* `artifactname` = artifact name. (Required)
 
 #### Example
 
@@ -477,7 +524,9 @@ Add a tag for current build.
 #### Usage
 
 Update the release name for the running release.
-Note: this is not supported in Azure DevOps Server or TFS.
+
+> [!NOTE]
+> Supported in Azure DevOps and Azure DevOps Server beginning in version 2020.
 
 #### Example
 

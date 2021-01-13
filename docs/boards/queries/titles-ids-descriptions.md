@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 10/16/2019
+ms.date: 08/27/2020
 ---
 
 # Query by titles, IDs, and rich-text fields
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -56,7 +56,7 @@ Query clauses that specify a text or rich-text field can use the operators and m
 
 ## Use `Contains words` for string matches
  
-When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator performs a full-text search on the specified field, which is faster in most cases. 
+When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator performs a full-text search on the specified field, which is faster in most cases. Text string is limited to 100 characters. 
 
 While the `Contains` operator performs a table scan, which is not only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
 
@@ -79,6 +79,18 @@ For example, specify **Contains Words** and <strong>inform&#42;</strong> to filt
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
 <a id="undefined-value"/>
+
+
+
+## Query for specific words and not others
+
+Use **Contains Words** and **Does Not Contain Words** operators to list items that exactly match the words or phrase that you enter, and exclude other words or phrases. You can use these operators in combination and with the wildcard character (*).
+
+In the following example, these operators filter work items for those that contain the work *Phase* but not the word *Phasor*. 
+
+> [!div class="mx-imgBorder"] 
+> ![Screenshot of Query Editor to include and exclude exact words.](media/text-queries/contains-words-exact-query.png)
+
 
 ## Undefined field value queries
 
@@ -152,7 +164,7 @@ The following table describes common fields used to filter queries. The **ID** f
 Description <sup>1, 2</sup>
   </td>
   <td>
-    <p>Use this field to provide indepth information about a work item.</p>
+    <p>Use this field to provide in-depth information about a work item.</p>
     <p>Reference name=System.Description, Data type=HTML</p>
   </td>
 <td>All</td>

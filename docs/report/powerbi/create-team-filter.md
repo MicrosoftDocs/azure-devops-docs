@@ -3,12 +3,11 @@ title: Apply a team filter to a Power BI report
 titleSuffix: Azure DevOps 
 description: Sample report that show how to create a trend report with a team filter using an Analytics view
 ms.technology: devops-analytics
-ms.assetid: 
-ms.reviewer: angurusw
 ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/18/2018 
+ms.date: 12/18/2020
 ---
 
 # Create a Power BI report filtered by team using a custom Analytics view
@@ -21,6 +20,8 @@ However, you can still filter on a team using the steps provided in this article
 
 > [!NOTE]  
 > In a similar manner, limitations exist in determining the board-specific column of a work item within an Analytics view. However, the guidance provided in this article won't work for board locations due to the dependency on the selected historical data in the view. 
+
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Add the AreaSK field to your Analytics view 
 
@@ -153,5 +154,5 @@ Now you can filter all visualization on a report using a slicer or any other sup
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](analytics-views-create.md)
-- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
 - [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](/power-bi/desktop-bidirectional-filtering)

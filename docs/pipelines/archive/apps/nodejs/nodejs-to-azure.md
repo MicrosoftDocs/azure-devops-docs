@@ -147,7 +147,7 @@ After you've run the CI build, you're ready to create a continuous deployment (C
 
 * [![Build Machine Image](../../../tasks/deploy/media/build-machine-image.png) An Azure Scale Set](../../../apps/cd/azure/deploy-azure-scaleset.md)
 
-## Q&A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 <h3 id="code">What code is in the sample app?</h3>

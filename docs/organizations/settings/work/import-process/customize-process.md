@@ -7,7 +7,7 @@ ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/16/2019
+ms.date: 09/25/2020
 ---
 
 # Customize a Hosted XML process
@@ -17,7 +17,7 @@ ms.date: 10/16/2019
 Azure DevOps Services supports adding and updating processes through an administrative experience that is a web-based [import process](import-process.md). After you add a process, you can create one or more projects from it. You can update the process at any time by importing it again. The changes made to the process template are then applied to all projects that use the process.
 
 > [!IMPORTANT]
-> With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is available only when data is migrated to Azure DevOps Services by use of [Team Foundation Server Database Import Service](https://aka.ms/TFSDataImport).
+> With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is available only when data is migrated to Azure DevOps Services by use of [Team Foundation Server Database Import Service](../../../../migrate/migration-overview.md).
 >
 >To learn more about customization and process models, see [Customize work tracking](../../../../reference/customize-work.md).
 
@@ -251,19 +251,13 @@ Identity fields correspond to fields used to contain account, user, or group nam
 * Authorized As (System.AuthorizedAs)
 * Changed By (System.ChangedBy)
 * Created By (System.CreatedBy)
-
-The following fields are considered identity fields only if an identity rule is applied to their **FIELD** definitions:
-
 * Activated By (Microsoft.VSTS.Common.ActivatedBy)
 * Closed By (Microsoft.VSTS.Common.ClosedBy)
 * Resolved By (Microsoft.VSTS.Common.ResolvedBy)
 
-##### Rules that cause a string field to be considered an identity field
+##### Add a custom identity field
 
-A string field is recognized as an identity field when you specify **VALIDUSER** with one of the following rule elements within its **FIELD** definition:
-
-* **ALLOWEDVALUES**
-* **PROHIBITEDVALUES**
+A string field is recognized as an identity field when you specify the attribute **syncnamechanges** as True.   
 
 ##### Rule restrictions on identity fields
 

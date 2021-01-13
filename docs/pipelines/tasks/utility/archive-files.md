@@ -40,12 +40,14 @@ None
 |`tarCompression`<br/>Tar compression|Optionally choose a compression scheme, or choose **`None`** to create an uncompressed tar file. <br/><ul><li><b><code>gz</code></b> - default, gzip compression (.tar.gz, .tar.tgz, .taz)</li><li><b><code>bz2</code></b> - bzip2 compression (.tar.bz2, .tz2, .tbz2)</li><li><b><code>xz</code></b> - xz compression (.tar.xz, .txz)</li><li><b><code>None</code></b> - no compression, choose this to create a uncompressed tar file (.tar)</li></ul> <br/>Default value: `gz`|
 |`archiveFile`<br/>Archive file to create|(Required) Specify the name of the archive file to create. <br/>**For example**, to create **`foo.tgz`**, select the **`tar`** archive type and <b>`gz`</b> for tar compression. <br/>Default value: `$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip`|
 |`replaceExistingArchive`<br/>Replace existing archive|(Required) If an existing archive exists, specify whether to overwrite it.  Otherwise, files will be added to it as long as it is not a compressed tar. <br/>If adding to an existing archive, these types are supported: <ul><li><b><code>zip</code></b></li><li><b><code>7z</code></b></li><li><b><code>tar</code></b> - uncompressed only</li><li><b><code>wim</code></b></li></ul>|
+|`verbose`<br/>Forces verbose output| (Optional) If set to true, forces tools to use verbose output. Overrides 'quiet'.<br/>Default value: false|
+|`quiet`<br/>Forces quiet output| (Optional) If set to true, forces tools to use quiet output. Can be overridden by 'verbose'.<br/>Default value: false|
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

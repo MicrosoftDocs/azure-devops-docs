@@ -47,10 +47,10 @@ extension from Visual Studio Marketplace, Azure DevOps tab:
 Carry out these tasks to create the Azure Resource Manager (ARM) template that you can
 use to create an Azure Virtual Machine on demand.
 
-1. Follow the steps in [these documents](/azure/devtest-lab/devtest-lab-overview)
+1. Follow the steps in [these documents](/azure/devtest-labs/devtest-lab-overview)
    on the Azure website to create an ARM template in your subscription.
 
-1. Follow the steps in [these documents](/azure/devtest-lab/devtest-lab-overview)
+1. Follow the steps in [these documents](/azure/devtest-labs/devtest-lab-overview)
    on the Azure website to save the ARM template as a file
    on your computer. Name the file **CreateVMTemplate.json**.
 
@@ -241,7 +241,7 @@ release pipeline in Azure Pipelines.
    improvements to the extension, visit the 
    [DevTest Labs feedback forum](https://feedback.azure.com/forums/320373-azure-devtest-labs).  
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

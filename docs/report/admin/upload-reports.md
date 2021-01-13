@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= azure-devops-2019" 
+monikerRange: '< azure-devops' 
 ms.date: 11/19/2018
 ---
 
@@ -71,7 +71,7 @@ You use the **tfpt** command line tool that TFS Power Tools provides.
 
 1. Verify that you have the following tools, configurations, and permissions. 
 
-	* If you haven't installed TFS power tools, [install them now](https://go.microsoft.com/fwlink/?LinkId=320602).  
+	* If you haven't installed TFS power tools, [install them now](../../boards/work-items/guidance/agile-process.md).  
 	* If you haven't installed Visual Studio, [install a version of them now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can download Visual Studio Community for free. Each version of Visual Studio installs Team Explorer, which must be present on the same machine where you run the **tfpt** command line tool.  
 	* If you aren't an administrator for the team project, [get added now](/azure/devops/server/admin/add-administrator).  
 	* If you haven't been added to the Content Manager or Team Foundation Content Manager role for SQL Server Reporting Services, [get added now](grant-permissions-to-reports.md).  
@@ -155,16 +155,16 @@ You can always check the names by opening the context menu for any report, choos
 **A:** Most reports are customized based on the work item types and workflow states used in each process template. You might need to customize the reports you copy from another process template to fit the type definitions for your team project. 
 
 #### Q: What about uploading Excel reports?
-**A:** For TFS 2015 and earlier versions, you can use **tfpt addprojectportal** command to add a project portal and Excel reports once you have [added a SharePoint web application](https://msdn.microsoft.com/library/ee805928.aspx) to your team project collection. 
+**A:** For TFS 2015 and earlier versions, you can use **tfpt addprojectportal** command to add a project portal and Excel reports once you have [added a SharePoint web application](/previous-versions/visualstudio/visual-studio-2012/ee805928(v=vs.110)) to your team project collection. 
 
 #### Q: Can I get these same reports using Azure DevOps Services?
-**A:** Not at this time. Uploading reports is only supported for an on-premises TFS. You can, however, [chart the results of a flat-list query](../charts.md) or use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json).
+**A:** Not at this time. Uploading reports is only supported for an on-premises TFS. You can, however, [chart the results of a flat-list query](../dashboards/charts.md) or use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json).
 
 #### Q: How do I customize a report?
-**A:** You can customize the reports you uploaded using [SQL Server Report Builder 2012](https://www.microsoft.com/download/details.aspx?id=29072). To learn more, see [Creating Reports for Team Foundation Server 2010](https://msdn.microsoft.com/library/ff730837.aspx) and [Customizing Reports for Team Foundation Server 2010](https://msdn.microsoft.com/library/ff730838.aspx). Even though these articles are based on TFS 2010, they are valid for TFS 2013 and later versions. 
+**A:** You can customize the reports you uploaded using [SQL Server Report Builder 2012](https://www.microsoft.com/en-us/download/details.aspx?id=53613). To learn more, see [Creating Reports for Team Foundation Server 2010](/previous-versions/visualstudio/visual-studio-2010/ff730837(v=vs.100)) and [Customizing Reports for Team Foundation Server 2010](/previous-versions/visualstudio/visual-studio-2010/ff730838(v=vs.100)). Even though these articles are based on TFS 2010, they are valid for TFS 2013 and later versions. 
 
 #### Q: How can I learn more about the TFS cube?
-**A:** See [Perspectives and measure groups provided in the Analysis Services cube for Visual Studio](https://msdn.microsoft.com/library/ms244710.aspx).
+**A:** See [Perspectives and measure groups provided in the Analysis Services cube for Visual Studio](../sql-reports/perspective-measure-groups-cube.md).
 
 #### Q: Where can I go if I have more questions?
 **A:** Search for an answer or post a question in the [Team Foundation Server - Reporting & Warehouse forum](https://go.microsoft.com/fwlink/?LinkId=95680).

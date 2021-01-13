@@ -1,11 +1,11 @@
 ---
-title: Get started with the REST APIs for Azure DevOps and TFS
-description: Learn the basic patterns for using the REST APIs for Azure DevOps and Team Foundation Server.
+title: Get started with the REST APIs for Azure DevOps
+description: Learn the basic patterns for using the REST APIs for Azure DevOps.
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.custom: has-adal-ref
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/04/2016
@@ -13,7 +13,9 @@ ms.date: 08/04/2016
 
 # Get started with the REST APIs
 
-Integrate your app with Azure DevOps Services and Team Foundation Server (TFS) using these REST APIs.
+[!INCLUDE [version-all](../../includes/version-all.md)]
+
+Integrate your app with Azure DevOps using these REST APIs.
 
 These APIs follow a common pattern: 
 
@@ -44,7 +46,7 @@ If you wish to provide the personal access token through an HTTP header, you mus
 Authorization: Basic BASE64PATSTRING
 ``` 
 <br />
-Here it is in C# using the <a href="https://msdn.microsoft.com/library/system.net.http.httpclient.aspx" data-raw-source="[HttpClient class](https://msdn.microsoft.com/library/system.net.http.httpclient.aspx)">HttpClient class</a>.
+Here it is in C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
 
 ```cs
 public static async void GetProjects()
@@ -84,18 +86,25 @@ you can <a href="https://visualstudio.microsoft.com/docs/setup-admin/team-servic
 
 Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for Azure DevOps Services including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
-## TFS
+## Azure DevOps Server
 
-For TFS, `instance` is `{server:port}` and by default the port is 8080.
-The default collection is `DefaultCollection`, but can be any collection.
+For Azure DevOps Server, `instance` is `{server:port}`. The default port for a non-SSL connection is 8080.
 
-Here's how to get a list of projects from TFS using the default port and collection.
+The default collection is `DefaultCollection`, but you can use any collection.
+
+Here's how to get a list of projects from Azure DevOps Server using the default port and collection across SSL:
 
 ```dos
-curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
+curl -u {username}[:{personalaccesstoken}] https://{server}/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
-The examples above use personal access tokens, which requires that you [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+To get the same list across a non-SSL connection:
+
+```dos
+curl -u {username}[:{personalaccesstoken}] http://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
+```
+
+These examples use personal access tokens, which requires that you [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 
 ## Responses
@@ -239,7 +248,7 @@ Azure DevOps Services supports CORS. This enables JavaScript code served from a 
 <a name="versions"></a>
 ## Versioning
 
-Azure DevOps Services and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
+Azure DevOps REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
 
 ### Guidelines
 
@@ -247,7 +256,7 @@ Azure DevOps Services and Team Foundation Server REST APIs are versioned to ensu
 * API versions are in the format {major}.{minor}[-{stage}[.{resource-version}]] - For example, ```1.0```, ```1.1```, ```1.2-preview```, ```2.0```.
 * While an API is in preview, you can specify a precise version of a particular revision of the API when needed (for example, ```1.0-preview.1```, ```1.0-preview.2```)
 * Once an API is released (1.0, for example), its preview version (1.0-preview) is deprecated and can be deactivated after 12 weeks.
-* During this time you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify a ```-preview``` version will be rejected.
+* During this time you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify a ```-preview``` version gets rejected.
 
 ### Usage
 
@@ -273,4 +282,4 @@ GET https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version=1.0
 
 Major API version releases align with Team Foundation Server RTM releases. For example, the `3.0` API set was introduced with Team Foundation Server 2017.
 
-A small number of undocumented version 1.0 APIs existed in Team Foundation Server 2013, but are not supported.
+A small number of undocumented version 1.0 APIs existed in Team Foundation Server 2013, but aren't supported.

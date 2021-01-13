@@ -9,14 +9,14 @@ ms.date: 02/19/2020
 
 **Visual Studio 2015 | Azure Pipelines | TFS 2015 | [Previous version](../overview-rm2013.md)**  
 
-![horizontal-line](../media/horizontal-line.png)
+:::image type="icon" source="../media/horizontal-line.png" border="false":::
 
 ![information](../media/info1.png)
 **A newer version of is available**
 
 Release Management features have been integrated into **Azure Pipelines** and
 Team Foundation Server (TFS).
-For more information, see [Build and Release in Azure Pipelines and TFS](../../../overview.md).
+For more information, see [Build and Release in Azure Pipelines and TFS](../../../get-started/what-is-azure-pipelines.md).
 
 The newer web-based version is the recommended alternative 
 to the server and client version described in this topic.
@@ -28,5 +28,4 @@ If you are already using an earlier server and client
 version, you should be aware that no new features will
 be added to these versions.
  
-![horizontal-line](../media/horizontal-line.png)
-
+:::image type="icon" source="../media/horizontal-line.png" border="false":::

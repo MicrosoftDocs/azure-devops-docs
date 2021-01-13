@@ -59,7 +59,7 @@ In this article, you'll learn:
 
     <img src="media/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />  
 
-3. If you have details you want to add about a task, open the parent work item and then choose the ![ ](../media/icons/icon-links-tab-wi.png) links icon/tab. 
+3. If you have details you want to add about a task, open the parent work item and then choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: links icon/tab. 
 
    <img src="media/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
 

@@ -30,10 +30,10 @@ The audit events will have information such as IP, who caused the event to be lo
 > [!NOTE]
 > Audit events will be stored for 90 days. However, you can back up audit events to an external location via the auditing REST API to keep them for more than 90 days.
 
-By default, only the project collection administrators can access the audit log. An administrator can grant separate permission to team members to access the audit logs. The auditing feature can be found under the Organizations settings. For more information, see our [documentation](https://docs.microsoft.com/azure/devops/organizations/settings/azure-devops-auditing?view=azure-devops).
+By default, only the project collection administrators can access the audit log. An administrator can grant separate permission to team members to access the audit logs. The auditing feature can be found under the Organizations settings. For more information, see our [documentation](https://docs.microsoft.com/azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops).
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/153_01.png "Azure auditing feature can be found under organizations settings")
+> ![Azure auditing feature can be found under organizations settings.](../../media/153_01.png "Azure auditing feature can be found under organizations settings")
 
 ### Manage security groups and permissions from the command line
 

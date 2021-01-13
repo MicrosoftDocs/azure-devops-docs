@@ -4,9 +4,7 @@ description: Learn how to migrate from Subversion (SVN) to Git, including histor
 ms.topic: article
 ms.technology: devops-code-git
 ms.date: 06/04/2019
-ms.author: hkamel
-author: hkamel
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Learn how to migrate from Subversion (SVN) to Git, including history
@@ -48,7 +46,7 @@ Configure a migration environment on a local workstation and install the followi
 * [git-svn utility](https://www.kernel.org/pub/software/scm/git/docs/git-svn.html) (already part of Git)
 
 You will also need to create a Git repository for your organization to host the converted SVN repository, you may follow [Create a new Git repo in your project
-](/azure/devops/repos/git/create-new-repo)
+](./create-new-repo.md)
 
 ## Convert the source SVN repository to a local Git repository
 
@@ -117,7 +115,7 @@ git commit -m 'Convert svn:ignore properties to .gitignore.'
 ```
 > [!TIP]
 > 
-> Read more about **.gitignore**: [Ignore file changes with Git](/azure/devops/repos/git/ignore-files?tabs=visual-studio)
+> Read more about **.gitignore**: [Ignore file changes with Git](./ignore-files.md?tabs=visual-studio)
 
 ### Push repository to a bare git repository
 
@@ -128,7 +126,7 @@ In this step, you will create a bare repository and make its default branch matc
     ```
     git init --bare c:\new-bare.git
     cd c:\new-bare.git
-    git symbolic-ref HEAD refs/heads/trunk
+    git symbolic-ref HEAD refs/heads/svn/trunk
     ```
 
 2. Push the local Git repository to the new bare Git repository
@@ -145,7 +143,7 @@ Your main development branch will be named "trunk", which matches the name it wa
    
     ```
     cd c:\new-bare.git
-    git branch -m trunk master
+    git branch -m svn/trunk master
     ```
 4. Clean up branches and tags
 git-svn makes all of Subversions tags into very-short branches in Git of the form "tags/name". You'll want to convert all those branches into actual Git tags or delete them.
@@ -154,7 +152,7 @@ git-svn makes all of Subversions tags into very-short branches in Git of the for
 
 ```
 cd c:\new-bare.git
-git for-each-ref --format='%(refname)' refs/heads/tags | % { $_.Replace('refs/heads/tags/','') } | % { git tag $_ "refs/heads/tags/$_"; git branch -D "tags/$_" }
+git for-each-ref --format='%(refname)' refs/heads/svn/tags | % { $_.Replace('refs/heads/svn/tags/','') } | % { git tag $_ "refs/heads/svn/tags/$_"; git branch -D "svn/tags/$_" }
 ```
 
 ## Advanced migrations
@@ -182,9 +180,9 @@ Moving from a centralized version control system to Git is more than just migrat
 
 ## Reference information
 
-- [Choosing the right version control for your project](/azure/devops/repos/tfvc/comparison-git-tfvc)
+- [Choosing the right version control for your project](../tfvc/comparison-git-tfvc.md)
 - [Learn Git](/azure/devops/learn/git/learn-git-with-team-services/)
-- [Ignore file changes with Git](/azure/devops/repos/git/ignore-files?tabs=visual-studio)
+- [Ignore file changes with Git](./ignore-files.md?tabs=visual-studio)
 - [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)
 
 > Authors: Hosam Kamel, William H. Salazar | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)

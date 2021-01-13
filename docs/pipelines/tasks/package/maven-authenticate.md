@@ -143,7 +143,7 @@ You should set the repositories in your project's `pom.xml` to have the same `<i
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q&A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -163,6 +163,6 @@ The Maven Authenticate task doesn't have access to the custom settings.xml file 
 </server>
 ```
 
-The access token variable can be set in your pipelines using these [instructions](https://go.microsoft.com/fwlink/?linkid=2100801).
+The access token variable can be set in your pipelines using these [instructions](../../build/variables.md#systemaccesstoken).
 
 <!-- ENDSECTION -->

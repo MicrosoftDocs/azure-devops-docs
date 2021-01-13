@@ -40,8 +40,8 @@ In order to create a Power BI report that references an Analytics view, you must
 ::: moniker range="azure-devops"
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-- If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to a project, except stakeholders, can view **Analytics views**.
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- If you haven't been added as a team member, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to a project, except stakeholders, can view **Analytics views**.
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked bugs for some period of time in order to generate a trend report. 
 
@@ -50,9 +50,9 @@ In order to create a Power BI report that references an Analytics view, you must
 ::: moniker range="azure-devops-2019"
 
 - You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-- If you haven't been added as a team member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to a project, except stakeholders, can view **Analytics views**.
+- If you haven't been added as a team member, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to a project, except stakeholders, can view **Analytics views**.
 - Have [enabled or installed Analytics](../dashboards/analytics-extension.md).
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked bugs for some period of time in order to generate a trend report.  
 
@@ -143,7 +143,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
     ![Azure DevOps dialog, Organization and project name](media/create-report/specify-account.png)  
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019 < azure-devops"  
 2. Choose (1) **Get Data**, (2) **Online Services**, (3) **Azure DevOps Server (Beta)**, and then (4) **Connect**.  
 
     > [!div class="mx-imgBorder"]
@@ -178,7 +178,7 @@ Need help connecting? See [Connect with Power BI Data Connector](data-connector-
 2. Click the context menu icon next to the **Work Item Id** field and change it from **Count** to **Count (Distinct)**.
 
    > [!div class="mx-imgBorder"]
-   > ![Select work item field](media/active-bugs-report/choose-count-distinct.png)
+   > ![Change Work Item Id field from Count to Count (Distinct).](media/active-bugs-report/choose-count-distinct.png)
 
 3. Next, (1) select the **Date** field in the fields list as your axis. To see a daily trend, (2) click the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
 
@@ -236,7 +236,7 @@ Need help connecting? See [Connect with Power BI Data Connector](data-connector-
 2. To publish your report to Power BI, choose the **Publish** tab. For additional information, see [Collaborate in your Power BI app workspace](/power-bi/service-collaborate-power-bi-workspace).
 
     > [!div class="mx-imgBorder"]
-    > ![Latest active bug count](media/active-bugs-report/publish-powerbi.png)
+    > ![Choose the Publish tab.](media/active-bugs-report/publish-powerbi.png)
 
 ## Continue to explore your data
 
@@ -251,7 +251,7 @@ Analytics views provide you with a great deal of power and flexibility to filter
 
 ## Related articles 
 
-- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](analytics-views-create.md)
 - [Connect with Power BI Data Connector](./data-connector-connect.md)

@@ -74,7 +74,7 @@ Use this task to install and publish npm packages.
 |--- |--- |
 |`command`<br/>Command| (Required) npm command to run. Select custom here.|
 |`workingDir`<br/>Working folder that contains `package.json`| Path to the folder containing the target package.json and .npmrc files. Select the folder, not the file e.g. "/packages/mypackage".|
-|`customCommand`<br/>Command and arguments| (Required) Custom command to run, e.g. \"dist-tag ls mypackage\". <br/> If your arguments contain double quotes ("), escape them with a slash (), and surround the escaped string with double quotes ("). <br/>**Example:** to run `npm run myTask -- --users='{"foo":"bar"}'`, provide this input: `run myTask -- --users="{&quot;foo&quot;:&quot;bar&quot;}"`.| 
+|`customCommand`<br/>Command and arguments| (Required) Custom command to run, e.g. \"dist-tag ls mypackage\". <br/> If your arguments contain double quotes ("), escape them with a slash (\\), and surround the escaped string with double quotes ("). <br/>**Example:** to run `npm run myTask -- --users='{"foo":"bar"}'`, provide this input: `run myTask -- --users="{&quot;foo&quot;:&quot;bar&quot;}"`.| 
 |`customRegistries`<br/>Registries to use|You can either commit a `.npmrc` file to your source code repository and set its path or select a registry from Azure Artifacts.<br/>**useNpmrc**<br/><li>Select this option to use feeds specified in a .npmrc file you've checked into source control. If no `.npmrc` file is present, the task will default to using packages directly from npmjs. <br/><li>Credentials for registries outside this organization/collection can be used to inject credentials you've provided as an npm service connection into your .npmrc as the build runs.<br/>**useFeed**<br/><li>Select this option to use one Azure Artifacts feed in the same organization/collection as the build.|
 
 ## Examples
@@ -87,7 +87,7 @@ Use this task to install and publish npm packages.
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 ### Where can I learn npm commands and arguments?
 

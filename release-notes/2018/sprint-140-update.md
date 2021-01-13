@@ -137,7 +137,7 @@ As you've noticed with the new navigation in Azure DevOps, we're focused on brin
 > [!div class="mx-imgBorder"]
 > ![PAT page](media/140_01.png)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

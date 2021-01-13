@@ -11,11 +11,9 @@ monikerRange: '>= tfs-2015 < azure-devops'
 
 # Parallel release jobs in Team Foundation Server
 
+[!INCLUDE [version-tfs-only-2017](../includes/version-tfs-only-2017.md)]
 
-
-**[Azure Pipelines](concurrent-jobs.md) | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
-
-This article describes the licensing model for Azure Pipelines in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
+This article describes the licensing model for Azure Pipelines in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL). For information on licensing in Azure Pipelines, see [Run parallel jobs](concurrent-jobs.md).
 
 A TFS _parallel job_ gives you the ability to run a single release at a time in a project collection. You can keep hundreds or even thousands of release jobs in your collection. But, to run more than one release at a time, you need additional parallel jobs.
 
@@ -95,7 +93,7 @@ Users who have Visual Studio Enterprise subscriptions are assigned to **VS Enter
 
 1. Browse to **Server settings**, **Access levels**.
 
-   ![control-panel-server-vs-enterprise-access-levels](media/concurrent-pipelines-tfs/control-panel-server-vs-enterprise-access-levels.png)
+   ![Screenshot showing server settings, Access levels.](media/concurrent-pipelines-tfs/control-panel-server-vs-enterprise-access-levels.png)
 
    URL example: `http://{your_server}:8080/tfs/_admin/_licenses`
 
@@ -115,7 +113,7 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 1. Browse to **Collection settings**, **Pipelines**, **Resource limits**.
 
-   ![control-panel-account-build-and-release-resource-limits](media/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
+   ![Screenshot showing Collection settings, Pipelines, Resource limits.](media/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
 
    URL example: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue?_a=resourceLimits`
 
@@ -123,7 +121,7 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 
 
-## Q&A
+## FAQ
 
 ### Who can use the system?
 

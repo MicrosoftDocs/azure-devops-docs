@@ -8,8 +8,20 @@
   href: review-team-plans.md
 - name: Edit plan permissions 
   href: edit-delivery-plan-permissions.md
-- name: Scaled Agile Framework
-  href: scaled-agile-framework.md
+- name: Scaled Agile Framework®
+  items:
+  - name: Implement Scaled Agile Framework®
+    href: scaled-agile-framework.md
+  - name: SAFe® concepts & Azure Boards
+    href: safe-concepts.md
+  - name: Configure Azure Boards
+    href: safe-configure-boards.md 
+  - name: Customize Azure Boards
+    href: safe-customize.md 
+  - name: Manage SAFe® programs and portfolios  
+    href: safe-plan-track-boards.md 
+  - name: View roadmaps and monitor progress 
+    href: safe-review-roadmaps-progress.md 
 - name: Best practices, monitoring, & reports
   items:
   - name: Agile culture

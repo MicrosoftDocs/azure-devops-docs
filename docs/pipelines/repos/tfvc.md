@@ -150,9 +150,22 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 * Make sure the folders you include in your trigger are also included in your workspace mappings.
 * You can run gated builds on either a [Microsoft-hosted agent](../agents/hosted.md) or a [self-hosted agent](../agents/agents.md).
 
-## Q & A  
+## FAQ  
 
 <!-- BEGINSECTION class="md-qanda" -->
+
+### I get the following error when running a pipeline: 
+
+`The shelveset <xyz> could not be found for check-in`
+
+- Is your [job authorization scope](../process/access-tokens.md#job-authorization-scope) set to **collection**? TFVC repositories are usually spread across the projects in your collection. You may be reading or writing to a folder that can only be accessed when the scope is the entire collection. You can set this in organization settings or in project setting under the **Pipelines** tab.
+
+### I get the following error when running a pipeline:
+
+`The underlying connection was closed: An unexpected error occurred on a receive.
+##[error]Exit code 100 returned from process: file name 'tf', arguments 'vc workspace /new /location:local /permission:Public`
+
+- This is usually an intermittent error caused when the service is experiencing technical issues. Please re-run the pipeline.
 
 ### What is scorch?
 

@@ -3,11 +3,10 @@ title: Add last refresh date to a Power BI report
 titleSuffix: Azure DevOps
 description: Sample report that shows how to add a field showing the last refresh date to an existing Power BI report based on Analytics  
 ms.technology: devops-analytics
-ms.assetid: 
-ms.reviewer: angurusw
 ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
-ms.date: 05/18/2018
+ms.date: 12/18/2020
 ---
 
 # Create a column in Power BI for last refresh date
@@ -16,7 +15,12 @@ ms.date: 05/18/2018
 
 After [creating a report](create-quick-report.md) and [publishing it to Power BI.com](publish-power-bi-desktop-to-power-bi.md) one of the most common requests is a way to determine the last time the data was refreshed.  
 
-The steps below show how to add a column to your model which will contain the last refresh date of the dataset.  
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+
+
+## Add the last refresh date column
+
+To add a column with the the last refresh date of the dataset, follow these steps.  
 
 1. Load the Power BI pbix file associated with your view in Power BI Desktop.  
 
@@ -53,7 +57,7 @@ The steps below show how to add a column to your model which will contain the la
     ```
 
     > [!IMPORTANT]  
-    > These examples use UTC. You can adjust the query code based on your specific timezone as described in [DateTimeZone functions](https://msdn.microsoft.com/query-bi/m/datetimezone-functions).
+    > These examples use UTC. You can adjust the query code based on your specific timezone as described in [DateTimeZone functions](/powerquery-m/datetimezone-functions).
 
 4. When finish, choose **Done**.
 
@@ -73,10 +77,9 @@ The steps below show how to add a column to your model which will contain the la
 	> ![Power BI Desktop, Card, Refresh Date Applied](media/RefreshDateApplied.png)  
 
 
- 
 
 ## Related articles
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](analytics-views-create.md)
-- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)

@@ -2,34 +2,33 @@
 title: Turn a service on or off
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Control which services are available for a project from the web portal  
+description: Control which services are available for a project from the web portal for Azure DevOps.  
 ms.technology: devops-settings
-ms.topic: overview
 ms.assetid: 
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'  
-ms.date: 11/21/2019
+ms.date: 08/17/2020
 ---
 
 # Turn a service on or off
 
-[!INCLUDE [temp](../../includes/version-azure-devops.md)]
+[!INCLUDE [version-vsts-plus-azdevserver-2019](../../includes/version-vsts-plus-azdevserver-2019.md)]
 
-You can control which services are available through the web portal by turning a service on or off. Turning a service off removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn the service on.  
+You can control which services are available through the web portal, by turning a service on or off. Turning off a service removes the service from the user interface for all project users. However, service data's preserved and available if you decide to turn on the service.  
 
 ## Prerequisites
 
 ::: moniker range="azure-devops"
 
 - You must have an organization in Azure DevOps. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).
-- As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
+- As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not a member, [get added as one](../security/set-project-collection-level-permissions.md#project-level).
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 - You must have a project defined. If you don't have one, [add one now](../projects/create-project.md).
-- As a member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
+- As a member of the Project Administrators group, you can change policies and change project information. If you're not a member, [get added as one](../security/set-project-collection-level-permissions.md#project-level).
 - 
   ::: moniker-end
 
@@ -59,7 +58,7 @@ You can control which services are available through the web portal by turning a
 
 ## Disabled objects and features
 
-If you disable a service, dashboard widgets specific to that service are disabled. For example, if **Boards** is disabled, all work item tracking widgets and all Analytics widgets are disabled and won't appear in the [widget catalog](../../report/dashboards/widget-catalog.md).
+If you disable a service, dashboard widgets specific to that service are disabled. For example, if **Boards** is disabled, all work item tracking widgets and all Analytics widgets are disabled. They don't appear in the [widget catalog](../../report/dashboards/widget-catalog.md).
 
 If you disable **Boards**, you also disable [**Analytics views**](../../report/powerbi/what-are-analytics-views.md).
 
@@ -71,7 +70,7 @@ If you disable **Boards**, you also disable [**Analytics views**](../../report/p
 - [About user, team, project, and organization-level settings](about-settings.md)
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 - [About projects and scaling the organization](../projects/about-projects.md)  
 - [About user, team, project, and collection-level settings](about-settings.md)
 ::: moniker-end

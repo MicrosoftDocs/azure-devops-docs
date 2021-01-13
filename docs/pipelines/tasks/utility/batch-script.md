@@ -18,8 +18,9 @@ Use this task to run a Windows .bat or .cmd script.
 Optionally, allow it to permanently modify environment variables.
 
 > [!NOTE]
-> This task is not compatible with Windows containers.
-> If you need to run a batch script on a Windows container, use the [command line task](command-line.md) instead.
+> This task is not compatible with Windows containers. If you need to run a batch script on a Windows container, use the [command line task](command-line.md) instead.
+> 
+> For information on supporting multiple platforms, see [cross platform scripting](../../scripts/cross-platform-scripting.md).
 
 ::: moniker range="<= tfs-2018"
 
@@ -68,7 +69,7 @@ On the Build tab of a build pipeline, add this task:
    <tr>
       <td>
 
-![](media/batch-script.png)
+:::image type="icon" source="media/batch-script.png" border="false":::
 
 <br/>**Utility: Batch Script**</td>
 
@@ -85,7 +86,7 @@ On the Build tab of a build pipeline, add this task:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
