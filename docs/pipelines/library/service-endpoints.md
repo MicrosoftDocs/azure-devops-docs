@@ -637,7 +637,7 @@ Defines and secures a connection to an npm server.
 
 <h3 id="sep-nuget">NuGet service connection</h3>
 
-Defines and secures a connection to a NuGet server.
+Defines and secures a connection to a NuGet server. 
 
 
 |       Parameter       |                                                                                                                                  Description                                                                                                                                   |
@@ -651,7 +651,9 @@ Defines and secures a connection to a NuGet server.
 
 <p />
 
-*****
+To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, See [NuGet Authenticate](../tasks/package/nuget-authenticate.md). 
+
+---
 
 <h3 id="sep-python-download">Python package download service connection</h3>
 
