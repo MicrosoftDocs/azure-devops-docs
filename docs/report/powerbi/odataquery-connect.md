@@ -3,12 +3,11 @@ title: Connect with data by using OData queries
 titleSuffix: Azure DevOps
 description: Write and test OData queries for use in Power BI integration
 ms.technology: devops-analytics
-ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 01/13/2020
+ms.date: 12/18/2020
 ---
 
 # Connect with data by using Power BI and OData queries
@@ -27,7 +26,7 @@ In this article, you learn how to:
 > * Write and test OData queries.
 > * Run an OData query from Power BI.
 
-[!INCLUDE [temp](../includes/analytics-prerequisites.md)] 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Use Visual Studio Code to write and test OData queries
 
@@ -134,7 +133,7 @@ Replace `[Implementation="2.0"]` with the following string:
 
 `[Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]` 
 
-![Power BI - OData Feed - Advanced Editor - Scroll Right](media/odataquery-powerbi-advancededitor2.png)
+![Replace the string.](media/odataquery-powerbi-advancededitor2.png)
 
 > [!NOTE]
 > The following actions help accomplish this preventative measure: 

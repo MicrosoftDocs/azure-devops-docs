@@ -12,6 +12,8 @@ ms.date: 10/02/2019
 
 # Guidance for extension developers impacted by vertical navigation
 
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+
 Vertical navigation brings with it changes that impact some extensions. This includes support for extension icons along with changes to team context.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
@@ -78,13 +80,13 @@ function getCurrentTeam() {
 
 ### Actions extensions that are in team aware hubs like Backlogs and Dashboard
 
-Your extension can check the *actionContext* object passed to the callback invoked when a user clicks the contributed menu item. Example shows reading team from the *actionContext*.
+Your extension can check the *actionContext* object passed to the callback invoked when a user selects the contributed menu item. Example shows reading team from the *actionContext*.
 
 ```javascript
 var menuContributionHandler = (function () {
         "use strict";
         return {
-            // This is a callback that gets invoked when a user clicks the newly contributed menu item
+            // This is a callback that gets invoked when a user selects the newly contributed menu item
             // The actionContext parameter contains team information.
             execute: function (actionContext) {
                 if("team" in actionContext) {

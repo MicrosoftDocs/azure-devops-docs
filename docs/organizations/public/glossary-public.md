@@ -41,7 +41,7 @@ User-configurable interactive signboards that provide real-time information. Das
 
 ## Git repository
 
-A Git repository supports a distributed version control system for tracking changes, reviewing contributions to the code, and more. Each developer has a copy of the source repository on their dev machine. You can add multiple Git repositories to a project. Learn more: [Git Repositories](../../repos/git/index.md).  
+A Git repository supports a distributed version control system for tracking changes, reviewing contributions to the code, and more. Each developer has a copy of the source repository on their dev machine. You can add multiple Git repositories to a project. Learn more: [Git Repositories](../../repos/git/index.yml).  
 
 > [!NOTE]   
 > Git in Visual Studio and Azure DevOps is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with Azure DevOps.

@@ -94,7 +94,7 @@ Environments are modeled in a way to help understand their status, along with de
 
 #### Pre-deployment and post-deployment
 
-If pre-deployment or post-deployment conditions have been set for an environment, it is indicated on the environment with the presence of the approvals and gates. The progress of approvals and gates show up in the status of the environment as well. You can take action or view further details by clicking on the environment’s condition icon hanging off the right or left side of the environment.
+If pre-deployment or post-deployment conditions have been set for an environment, it is indicated on the environment with the presence of the approvals and gates. The progress of approvals and gates show up in the status of the environment as well. You can take action or view further details by clicking on the environment’s condition icon displayed on the right or left side of the environment.
 
 > [!div class="mx-imgBorder"]
 > ![Release environment actions](media/135_05.png)
@@ -102,7 +102,7 @@ If pre-deployment or post-deployment conditions have been set for an environment
 Graphical views of the gates and a quick action to view logs helps to keep releases moving.
 
 > [!div class="mx-imgBorder"]
-> ![Release environment actions](media/135_05b.png)
+> ![Graphical view and quick actions.](media/135_05b.png)
 
 #### Commits and work items
 
@@ -183,7 +183,7 @@ See the [authentication](/azure/devops/organizations/security/about-security-ide
 > [!div class="mx-imgBorder"]
 > ![VSTS PAT added email](media/135_02.png)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 

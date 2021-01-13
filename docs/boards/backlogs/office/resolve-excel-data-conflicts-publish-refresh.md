@@ -12,7 +12,7 @@ ms.date: 02/22/2017
 
 # Resolve data conflicts (publish and refresh)
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 A data conflict occurs when you try to publish a work item from [Excel](bulk-add-modify-work-items-excel.md) or [Project](create-your-backlog-tasks-using-project.md) and the version of that work item differs from the version in the work item database. The following example shows how two team members can create such a conflict.  
   
@@ -46,7 +46,7 @@ A data conflict occurs when you try to publish a work item from [Excel](bulk-add
 ## Related articles
 -  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
 -  [Resolve data validation errors](resolve-excel-data-validation-errors.md)   
--  [Work in Excel and Project](track-work.md)  
+-  Connect Azure Boards to an Office client](track-work.md)  
 
 
 ### Required permissions  

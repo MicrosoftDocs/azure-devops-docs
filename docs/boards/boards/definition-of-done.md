@@ -47,7 +47,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
    If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -100,7 +100,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ::: moniker-end   
 
-Team members can quickly check that they have met the criteria by choosing the Information tooltip ![](media/ALM_DD_InfoIcon.png) info icon.  
+Team members can quickly check that they have met the criteria by choosing the Information tooltip :::image type="icon" source="media/ALM_DD_InfoIcon.png" border="false"::: info icon.  
 
 
 ## Related articles

@@ -4,22 +4,23 @@ titleSuffix: Azure Repos
 description: Quick Start with Git and Azure DevOps Services
 ms.assetid: aa9c2f22-6912-4834-8ed3-ed16771760c2
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2015'
 ---
 
+#  Get started with Git and Visual Studio 2015
 
-#  Get Started with Git and Azure DevOps Services
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2015**
+
+*Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).*
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](gitquickstart.md)
 > - [Visual Studio 2015 Update 2](gitquickstart-vs2015.md)
 > - [Visual Studio 2013 and Visual Studio 2015 RTM/Update 1](get-started-vs2013.md) 
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
+
 
 This guide covers the basics so you can get up and running using Git with code already in Azure DevOps Services or Team Foundation Server (TFS). 
 Explore our [full tutorial](gitworkflow.md) for more information on how to use Git from Visual Studio or the command line. 
@@ -73,9 +74,10 @@ Git [branches](branches.md) isolate your changes from other work being done in t
 uses a new branch for every feature or fix you work on. You make [commits](commits.md) in your local Git repository to save your changes on that branch.
 
 #### [Visual Studio](#tab/visual-studio/)
-1. In Team Explorer, click the drop down and choose **Branches**. Right click the master branch and choose **New Local Branch From...**    
+1. In Team Explorer, click the drop down and choose **Branches**. Right click the main branch and choose **New Local Branch From...**    
 
-   ![Creating a Local Branch off the Master branch in Visual Studio](media/newVSBranch.png)  
+   ![Creating a Local Branch off the main branch in Visual Studio](media/newVSBranch.png)  
+
 
    Choose a descriptive branch name for your work to remind you and others what kind of work is in the branch. 
 
@@ -111,7 +113,7 @@ uses a new branch for every feature or fix you work on. You make [commits](commi
 When you are ready to share your changes with the team, you [push](pushing.md) those changes so that others can reach them. You can only
 push changes after you add commits to a branch. 
 
-Once you push the changes, you can create a [pull request](pullrequest.md) to let others know you'd like to have the changes reviewed and added to the master 
+Once you push the changes, you can create a [pull request](pullrequest.md) to let others know you'd like to have the changes reviewed and added to the main 
 branch of the code.   
 
 #### [Visual Studio](#tab/visual-studio/)
@@ -139,7 +141,7 @@ branch of the code.
 3. Create the pull request, adding in team members to review and approve the code changes.
 
 4. Once the changes are approved, complete the pull request. 
-   This will pull your changes from the branch into the master branch of the code.
+   This will pull your changes from the branch into the main branch of the code.
 
 * * *
 <a name="pull"></a>

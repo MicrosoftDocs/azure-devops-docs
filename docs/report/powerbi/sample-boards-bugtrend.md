@@ -23,6 +23,8 @@ This article shows you how to display, for a given set of open Bugs, the number 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
+
 
 ## Sample queries
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Differences between provisioned and published wiki
 titleSuffix: Azure DevOps
 description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository in Azure DevOps 
@@ -9,8 +9,8 @@ ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: 'azure-devops'
-ms.date: 06/17/2019  
+monikerRange: '>= tfs-2018'
+ms.date: 12/15/2020  
 ---
 
 # Provisioned wikis vs. published code as a wiki
@@ -37,10 +37,13 @@ With a publish code as wiki, you add, edit, and update content from **Repos** or
 
 The unavailable menu options for the wiki pages are shown in the following illustration. As you can see, several options aren't supported for the **publish as code wiki** pages.
 
-> [!div class="mx-tdCol2BreakAll"]
-> |    Provisioned wiki    | Publish code as wiki |
-> |------|---------|
-> | ![Provisioned wiki page menu options](media/wiki/diff-menu-options-provisioned.png) | ![Publish code page menu options](media/wiki/diff-menu-options.png) |
+**Provisioned wiki**
+
+:::image type="content" source="media/wiki/diff-menu-options-provisioned.png" alt-text="Provisioned wiki page menu options"::: 
+
+**Publish code as wiki**
+
+:::image type="content" source="media/wiki/diff-menu-options.png" alt-text="Publish code page menu options":::
 
 For example, the **Edit in Repos** option for the publish code as wiki takes you to the **Repo** page to edit that specific page. Updates you make to a page in the branch you selected for the wiki are automatically published to the wiki.  
 
@@ -57,29 +60,27 @@ For example, the **Edit in Repos** option for the publish code as wiki takes you
 - [Filter Wiki contents](filter-print-wiki.md)
 - [Wiki search](search-wiki.md)  
 - [Print a Wiki page](filter-print-wiki.md)
+- [Update content offline](wiki-update-offline.md)
+- [Add or edit pages from the Wiki](add-edit-wiki.md)
 
 The following table summarizes those operations or features that may differ, depending on the wiki type.  
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Operation |    Provisioned wiki    | Publish code as wiki |
 > |--------|--------------|--------------|  
-> |[Support multiple wikis, name the wiki](publish-repo-to-wiki.md)  |  | ![checkmark](media/checkmark.png) |
-> |[Add or edit pages from the **Wiki**](add-edit-wiki.md) |![checkmark](media/checkmark.png) |  |
-> |[Add or edit pages from **Repos>Files** or **Code>Files**](publish-repo-to-wiki.md) |  |![checkmark](media/checkmark.png)  |
-> |[Revert to an earlier revision from the **Wiki**](wiki-view-history.md#revert-provision) |![checkmark](media/checkmark.png) |  |
-> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |  |![checkmark](media/checkmark.png)  |
-> |[Update content offline](wiki-update-offline.md) | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
-> |[Maintain versioned wikis](#versioning) |  | ![checkmark](media/checkmark.png) |
-> |[Select a wiki version](wiki-select-unpublish-versions.md) |  | ![checkmark](media/checkmark.png) |
-> |[Unpublish a wiki](wiki-select-unpublish-versions.md) |  | ![checkmark](media/checkmark.png) |
+> |[Support multiple wikis, name the wiki](publish-repo-to-wiki.md)  |  | ✔️|
+> |[Add or edit pages from **Repos>Files** or **Code>Files**](publish-repo-to-wiki.md) |  |✔️ |
+> |[Revert to an earlier revision from the **Wiki**](wiki-view-history.md#revert-provision) |✔️ |  |
+> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |  |✔️ |
+> |[Maintain versioned wikis](#versioning) |  | ✔️ |
+> |[Select a wiki version](wiki-select-unpublish-versions.md) |  | ✔️ |
+> |[Unpublish a wiki](wiki-select-unpublish-versions.md) |  | ✔️ |
 
 <a id="add-pages"></a>
 
 ## Add pages
 
-For a *provisioned wiki*, select **New page** or **Add subpage**. To learn more, see [Add and edit wiki pages](add-edit-wiki.md#add-a-wiki-page).
-
-For a *publish code as wiki*, add a Markdown file under the folder of the branch that you published. The file must end in **.md** for the wiki to recognize it as a page to publish. To learn more, see [Publish a Git repository to a wiki](publish-repo-to-wiki.md).
+For a *provisioned wiki* or *publish code as wiki*, select **New page** or **Add subpage**. To learn more, see [Add and edit wiki pages](add-edit-wiki.md#add-a-wiki-page).
 
 <a id="toc"></a>
 
@@ -108,7 +109,7 @@ However, the revert process differs depending on the wiki page type.
 
 ## Versioning and unpublishing a wiki
 
-With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning, and the ability to unpublish content that you've previously published to a wiki, are supported only for wikis that you've created by publishing code to a wiki.
+With versioning, you can publish different content versions to distinct wikis, based on a versioned branch of a Git repo. Versioning and unpublishing content, that you've previously published to a wiki, is supported only for wikis that you've created by publishing code to a wiki.
 
 To learn more, see [Version, select, or unpublish a published wiki](wiki-select-unpublish-versions.md).
 
@@ -118,14 +119,14 @@ Deleting a project wiki isn't supported with wiki APIs, but you can delete the w
 
 1. Clone the wiki repository to make a backup of all of its content. Select the context menu, and then select **Clone wiki**, copying the clone URL.
 
-   ![Clone the wiki repository](media/wiki/clone-wiki.png)
+   :::image type="content" source="media/wiki/clone-wiki.png" alt-text="Clone the wiki repository":::
 
-2. Get the git repository ID that is backing this wiki. Use [this REST API](https://docs.microsoft.com/rest/api/vsts/wiki/wikis/get) to get all the wikis in the project.
+2. Get the git repository ID that is backing this wiki. Use [this REST API](/rest/api/vsts/wiki/wikis/get) to get all the wikis in the project.
    
    For example: GET https://dev.azure.com/fabrikam/_apis/wiki/wikis?api-version=4.1
-   This returns all the wikis in the project, "sampleProject." Here you can get the repository ID of the wiki that you want to delete.
+   This returns all the wikis in the project, "sampleProject". Here you can get the repository ID of the wiki that you want to delete.
 
-   ![Clone the wiki repository, copy the URL](media/wiki/clone-repository.png)
+   :::image type="content" source="media/wiki/clone-repository.png" alt-text="Clone the wiki repository, copy the URL":::
 
 3. Use the following REST API to delete the git repository.
 	

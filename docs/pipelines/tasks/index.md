@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2015'
 
 # Build and release tasks
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms400688%28v=vs.120%29.aspx)**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](/previous-versions/visualstudio/visual-studio-2013/ms400688(v=vs.120))**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -26,13 +26,13 @@ To learn more about tool installer tasks, see [Tool installers](../process/tasks
 
 These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A  
+## FAQ  
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn step-by-step how to build my app?
 
-[Build your app](../apps/index.md)
+[Build your app](/previous-versions/azure/devops/pipelines/apps/)
 
 ### Can I add my own build tasks?
 

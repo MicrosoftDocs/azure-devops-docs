@@ -1,14 +1,15 @@
 ---
 title: Navigating the notifications UI
 titleSuffix: Azure DevOps 
-description: Navigate and explore the notifications pages in Azure DevOps and Team Foundation Server (TFS)  
+description: Go to and explore the notifications pages in Azure DevOps.  
 ms.technology: devops-collab
+ms.custom: quarterly-update
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019 
 monikerRange: '>= tfs-2017'
+ms.date: 12/07/2020 
 ---
 
 # Access notification settings
@@ -45,47 +46,46 @@ For additional permission settings regarding notifications, see [Permissions and
 <a id="open-person-level" />
 
 ## Open your personal notifications 
+ 
+::: moniker range="azure-devops"
 
-Enter the following URL to reach your personal notifications page, replacing {organization} with your organization's name. 
+Open your :::image type="icon" source="../media/icons/user-settings-gear.png" border="false"::: profile menu, and then choose **Notifications** or **Notification settings**. 
 
-::: moniker range=" azure-devops"
+The profile menu appears based on whether the **New Account Manager** feature has been enabled or not. To enable the **New Account Manager** feature, see [Manage or enable features](../project/navigation/preview-features.md).  
 
-```URL
-https://dev.azure.com/{organization}/usersSettings/notifications
-```
+:::row:::
+   :::column span="2":::
+      **New Account Manager enabled**  
+      :::image type="content" source="media/personal/open-profile-menu-s170-new-account-manager.png" alt-text="Select your profile menu, and then select Notifications":::
+   :::column-end:::
+   :::column span="2":::
+      **New Account Manager not enabled**  
+      :::image type="content" source="media/personal/open-profile-menu-not-new-account-s170.png" alt-text="Select your profile menu, and then Notification settings":::
+   :::column-end:::
+:::row-end:::
 
-![Navigate to personal notifications page](media/personal-notifications-preview.png)  
-
-![View personal notifications page](media/personal-notifications-page.png)
-
-::: moniker-end
-
-::: moniker range=" azure-devops-2019"
-
-```URL
-https://dev.azure.com/{organization}/_notifications
-```
-
-> [!div class="mx-imgBorder"] 
->![Navigate to personal notifications page](media/nav-personal-notifications-hub-newnav.png)  
-
-> [!div class="mx-imgBorder"] 
->![View personal notifications page](media/view-personal-notification-hub-newnav.png)
+:::image type="content" source="media/personal/user-notifications.png" alt-text="View your personal notifications page":::
 
 ::: moniker-end
 
+
+::: moniker range="< azure-devops"
+Open your profile menu and choose **Notification settings**. 
+::: moniker-end
+::: moniker range=">= azure-devops-2019 < azure-devops"
+:::image type="content" source="media/personal/open-profile-menu-notifications-2020.png" alt-text="Select your profile menu, and Notification settings":::
+::: moniker-end
 ::: moniker range="<= tfs-2018"
-
-```URL
-https://dev.azure.com/{organization}/_notifications
-```
-
 > [!div class="mx-imgBorder"] 
->![Navigate to personal notifications page](media/nav-personal-notifications-hub.png)
-
+> ![Go to personal notifications page](media/nav-personal-notifications-hub.png)
+::: moniker-end
+::: moniker range=">= azure-devops-2019 < azure-devops"
+:::image type="content" source="media/personal/user-notifications.png" alt-text="View personal notifications page":::
 ::: moniker-end
 
+To learn more, see [Manage your notifications](manage-your-personal-notifications.md)
 
+<a id="project" />
 
 ## Open team or project level notifications
 
@@ -98,7 +98,7 @@ https://dev.azure.com/{organization}/{project}/_settings/notifications
 ```
 
 > [!div class="mx-imgBorder"]  
->![Navigate to team notifications page](media/nav-team-notifications-hub-newnav.png)  
+> ![Screenshot of team notifications page](media/nav-team-notifications-hub-newnav.png)  
 
 ::: moniker-end
 
@@ -109,29 +109,57 @@ https://dev.azure.com/{organization}/{project}/_admin/_notifications
 ```
 
 > [!div class="mx-imgBorder"] 
->![Navigate to team notifications page](media/nav-team-notifications-hub.png)
+> ![Screenshot of the team notifications page](media/nav-team-notifications-hub.png)
 
 > [!div class="mx-imgBorder"] 
->![View team level notifications page](media/view-team-notification-hub.png)
+> ![View team level notifications page](media/view-team-notification-hub.png)
 
-   ::: moniker-end
+::: moniker-end
+
+To learn more, see [Manage notifications for a team or group](manage-team-group-global-organization-notifications.md)
 
 <a id="open-org-level" />
 
+## Open Global notifications
 
-## Open organization-level notifications
+::: moniker range="azure-devops" 
 
-Enter the following URL to reach the organization-level notifications page, replacing {organization} with your organization's name. 
+1. Enter the following URL to reach the organization-level notifications page, replacing *OrganizationName* with your organization's name. 
 
-::: moniker range=">= azure-devops-2019" 
+	```URL
+	https://dev.azure.com/OrganizationName/_settings/notifications
+	```
 
-```URL
-https://dev.azure.com/{organization}/_settings/notifications
-```
+	Or, choose :::image type="icon" source="../media/icons/project-icon.png" border="false"::: **Azure DevOps**,  and then choose **Organization settings**. 
 
-![Navigate to organization notifications page](media/nav-organization-notifications-hub-newnav.png) 
+	:::image type="content" source="../media/settings/open-org-settings-s172.png" alt-text="Open Organization settings":::
+
+2. Choose **Global Notifications**.  
+
+	:::image type="content" source="media/nav-ui/organization-notifications-s172.png" alt-text="Open Global Notifications":::
 
 ::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops" 
+
+Enter the following URL to reach the organization-level notifications page, replacing *ServerName* and *CollectionName* with your instance name. 
+
+1. Enter the following URL to reach the organization-level notifications page, replacing *OrganizationName* with your organization's name. 
+
+	```URL
+	http://ServerName/CollectionName/_settings/notifications?view=defaultSubscriptions
+	```
+
+	Or, choose :::image type="icon" source="../media/icons/project-icon.png" border="false"::: **Azure DevOps**, and then choose **Collection settings**. 
+
+	:::image type="content" source="../media/settings/open-collection-settings-2020.png" alt-text="Open Collection settings":::
+
+2. Choose **Global Notifications**.  
+
+	:::image type="content" source="media/nav-ui/collection-notifications-2020.png" alt-text="Select to open Global Notifications":::
+
+::: moniker-end
+
 
 ::: moniker range="<= tfs-2018" 
 
@@ -140,16 +168,18 @@ https://dev.azure.com/{organization}/_admin/_notifications
 ```
 
 > [!div class="mx-imgBorder"] 
->![Navigate to organization notifications page](media/nav-organization-notifications-hub.png)  
+>![Go to organization notifications page](media/nav-organization-notifications-hub.png)  
 
 > [!div class="mx-imgBorder"] 
 >![View organization level notifications page](media/view-organization-notification-hub.png)  
 
 ::: moniker-end
 
+To learn more, see [Manage team and Global notifications](manage-team-group-global-organization-notifications.md)
+
 ## Related articles
 
 - [Manage personal notification settings](manage-your-personal-notifications.md)
 - [Follow a specific work item](../boards/work-items/follow-work-items.md)  
-- [Manage notifications for a team](manage-team-notifications.md)  
+- [Manage notifications for a team](./manage-team-group-global-organization-notifications.md)  
 - [Change your preferred email address](change-email-address.md)

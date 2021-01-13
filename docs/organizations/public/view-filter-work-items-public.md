@@ -12,11 +12,11 @@ ms.date: 02/19/2019
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: View and filter work items  
+# View and filter work items  
 
 [!INCLUDE [temp](includes/version-public-projects.md)]
 
-In this quickstart, you learn how to view work items that are defined for a public project. If you're a contributor or Stakeholder, you can also [add and edit work items](../../boards/work-items/view-add-work-items.md).  
+Learn how to view work items that are defined for a public project. If you're a contributor or Stakeholder, you can also [add and edit work items](../../boards/work-items/view-add-work-items.md).  
 
 [!INCLUDE [temp](includes/anon-user.md)]
 
@@ -27,7 +27,7 @@ To view **Work Items**, choose **Boards**. You can view recently created, update
 > [!div class="mx-imgBorder"]
 > ![Boards>Work Items page ](media/view-work-items/open-work-items-vert-brn.png)
 
-By default, completed work items are hidden. To show them, choose the ![](../../media/icons/view-options-icon.png) view options icon, and switch the slider to show **Completed Work Items**.
+By default, completed work items are hidden. To show them, choose :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **view options**, and switch the slider to show **Completed Work Items**.
   
 To view a work item, choose its title. As an anonymous user (one not signed into the project), you can only view the details shown. You can't modify or add information to the work item.
 
@@ -58,7 +58,7 @@ Using the drop-down menu, you can focus on relevant items using one of the three
 
 ## Filter the list of work items
 
-Choose the ![](../../media/icons/filter-icon.png) filter icon to view the filters available to you. You can filter each view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.
+Choose :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **filter** to view the filters available to you. You can filter each view by entering a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.
 
 > [!div class="mx-imgBorder"]
 > ![Work Items page, filter by work item type ](media/view-work-items/filter-bug.png)
@@ -72,11 +72,11 @@ Choose the ![](../../media/icons/filter-icon.png) filter icon to view the filter
 
 ## Sort your view and other View options
 
-You can sort your view by one of the column fields. If the column fields aren't displaying, choose the ![](../../media/icons/filter-icon.png) filter icon.
+You can sort your view by one of the column fields. If the column fields aren't displaying, choose :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: **filter**.
 
-To sort on a column, click the column title. To reverse the sort order, click the column title again.
+To sort on a column, select the column title. To reverse the sort order, select the column title again.
 
-To view or hide completed work items, choose the ![](../../media/icons/view-options-icon.png) view options icon, and switch the slider to show/hide **Completed Work Items**.
+To view or hide completed work items, choose :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: **view options**, and switch the slider to show/hide **Completed Work Items**.
 
 ## Next steps
 

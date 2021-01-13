@@ -7,7 +7,7 @@ metadata:
   title: Azure Repos Documentation
   description: Collaborate on code development using free Git public and private repositories, pull requests, and code review. 
   ms.prod: devops 
-  ms.technology: azure-repos
+  ms.technology: devops-code-git
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 

@@ -44,7 +44,7 @@ the **parameters.xml** file to substitute values in the **web.config** file.
 ## XML Transformation
 
 XML transformation supports transforming the configuration files (`*.config` files)
-by following [Web.config Transformation Syntax](https://msdn.microsoft.com/library/dd465326.aspx)
+by following [Web.config Transformation Syntax](/previous-versions/aspnet/dd465326(v=vs.110))
 and is based on the environment to which the web package will be deployed.
 This option is useful when you want to add, remove or modify configurations for different environments.
 Transformation will be applied for other configuration files including Console or Windows service application
@@ -121,7 +121,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
    * It modifies value of `Webpages:Enabled`  inside the `appSettings` element.
    * It removes the `debug` attribute from the `compilation` element inside the `System.Web` element.
 
-   >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](https://msdn.microsoft.com/library/dd465326.aspx)
+   >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](/previous-versions/aspnet/dd465326(v=vs.110))
 
 2. Create a release pipeline with a stage named **Release**.
 
@@ -454,4 +454,3 @@ variables:
   ```
 
   as well as `"first.second.third" : "value"`.
-

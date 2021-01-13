@@ -7,7 +7,9 @@ author: juliakm
 ms.date: 02/13/2020
 ---
 
-## Agent variables
+<a id="agent-variables"></a>
+
+## Agent variables (DevOps Server 2019)
 
 > [!NOTE]
 > You can use agent variables as environment variables in your scripts and as parameters in your build tasks.
@@ -119,7 +121,9 @@ This directory is not guaranteed to be writable by pipeline tasks (eg. when mapp
 
 </table>
 
-## Build variables
+## Build variables (DevOps Server 2019)
+
+<a id="build-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
@@ -135,7 +139,7 @@ A typical way to use this folder is to publish your build artifacts with the <a 
 <br><br>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br><br> 
-See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../artifacts.md)">Artifacts in Azure Pipelines</a>.
+See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md)">Artifacts in Azure Pipelines</a>.
 <br><br>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -261,8 +265,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.Provider</td>
 <td>The type of <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository you selected](../repos/index.md)">repository you selected</a>.
 <ul>
-<li><code>TfsGit</code>: <a href="/azure/devops/repos/git/overview" data-raw-source="[TFS Git repository](../../../repos/git/overview.md)">TFS Git repository</a>
-<li><code>TfsVersionControl</code>: <a href="/azure/devops/repos/tfvc/overview" data-raw-source="[Team Foundation Version Control](/azure/devops/repos/tfvc/overview)">Team Foundation Version Control</a>
+<li><code>TfsGit</code>: <a href="/azure/devops/repos/git/overview" data-raw-source="[TFS Git repository](../../../repos/git/index.yml)">TFS Git repository</a>
+<li><code>TfsVersionControl</code>: <a href="/azure/devops/repos/tfvc/overview" data-raw-source="[Team Foundation Version Control](../../../repos/tfvc/what-is-tfvc.md)">Team Foundation Version Control</a>
 <li><code>Git</code>: Git repository hosted on an external server
 <li><code>GitHub</code>
 <li><code>Svn</code>: Subversion
@@ -366,7 +370,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>Build.SourceVersionMessage</td>
-<td>The comment of the commit or changeset.
+<td>The comment of the commit or changeset. We truncate the message to the first line or 200 characters, whichever is shorter. 
 
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -385,7 +389,7 @@ A typical way to use this folder is to publish your build artifacts with the <a 
 <br><br>
 Note: Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable. This directory is purged before each new build, so you don&#39;t have to clean it up yourself.
 <br><br> 
-See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../artifacts.md)">Artifacts in Azure Pipelines</a>.
+See <a href="/azure/devops/pipelines/build/artifacts" data-raw-source="[Artifacts in Azure Pipelines](../../artifacts/artifacts-overview.md)">Artifacts in Azure Pipelines</a>.
 <br><br>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -452,14 +456,16 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 </table>
 
-## System variables
+## System variables (DevOps Server 2019)
+
+<a id="system-variables"></a>
 
 <table>
 <tr><th>Variable</th><th>Description</th></tr>
 
 <tr>
 <td>System.AccessToken</td>
-<td><a href="/azure/devops/pipelines/scripts/powershell#use-the-oauth-token-to-access-the-rest-api" data-raw-source="[Use the OAuth token to access the REST API](/azure/devops/pipelines/scripts/powershell.md#use-the-oauth-token-to-access-the-rest-api)">Use the OAuth token to access the REST API</a>.
+<td><a href="/azure/devops/pipelines/scripts/powershell#use-the-oauth-token-to-access-the-rest-api" data-raw-source="[Use the OAuth token to access the REST API](../../scripts/powershell.md#use-the-oauth-token-to-access-the-rest-api)">Use the OAuth token to access the REST API</a>.
 <br/><br/>
 <a href="/azure/devops/pipelines/build/variables#systemaccesstoken" data-raw-source="[Use System.AccessToken from YAML scripts](../variables.md#systemaccesstoken)">Use System.AccessToken from YAML scripts</a>.
 <br/><br/>

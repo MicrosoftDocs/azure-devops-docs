@@ -10,7 +10,14 @@ monikerRange: '>= tfs-2017'
 
 # Build your .NET desktop app for Windows
 
-**Azure Pipelines | Azure DevOps Server 2019 | TFS 2018 | TFS 2017.2**
+[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
+
+:::moniker range="tfs-2017"
+
+> [!NOTE]
+> This article applies to TFS 2017.2 and higher.
+
+:::moniker-end
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
@@ -99,7 +106,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
    * * *
 
-2. In the right panel, select **.NET Desktop**, and then click **Apply**.
+2. In the right panel, select **.NET Desktop**.
 
    You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 

@@ -18,7 +18,7 @@ In this walkthrough we'll show how to use Visual Studio to automatically define 
 [!INCLUDE [include](../../../apps/aspnet/includes/ci-cd-description.md)]
 
 > [!TIP]
-> If you don't yet have an app but want to try this out, then see the [Q&A below](#new_solution).
+> If you don't yet have an app but want to try this out, then see the [FAQ below](#new_solution).
 
 [!INCLUDE [include](../../../apps/aspnet/includes/setup.md)]
 
@@ -36,7 +36,7 @@ To create both the build (CI) and release (CD) pipelines for a project, in Visua
 
 [!INCLUDE [include](../../../apps/aspnet/includes/commit-build-release.md)]
 
-## Q&A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

@@ -4,8 +4,8 @@ description: Publish Cobertura or JaCoCo code coverage results from an Azure Pip
 ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
 ms.topic: reference
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 04/20/2020
 monikerRange: '>= tfs-2015'
 ---
@@ -65,7 +65,7 @@ In order to view the code coverage results in the pipeline, see [Review code cov
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 ### Is code coverage data merged when multiple files are provided as input to the task or multiple tasks are used in the pipeline? 
 At present, the code coverage reporting functionality provided by this task is limited and it does not merge coverage data. If you provide multiple files as input to the task, only the first match is considered. 

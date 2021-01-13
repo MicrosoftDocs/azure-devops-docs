@@ -1,6 +1,16 @@
 - name: Azure Repos Documentation
   href: index.yml
-- name: Start Using Azure Repos
+- name: "What is Azure Repos?"
+  href: get-started/what-is-repos.md
+- name: Compare Git and TFVC
+  href: tfvc/comparison-git-tfvc.md
+- name: Use Git and TFVC
+  href: git/team-projects.md 
+- name: Key concepts
+  href: get-started/key-concepts-repos.md
+- name: Search code repositories
+  href: ../project/search/code-search.md?toc=/azure/devops/repos/toc.json&bc=/azure/devops/repos/breadcrumb/toc.json
+- name: Get started  
   href: get-started/toc.yml
 - name: Git
   href: git/toc.yml 
@@ -27,15 +37,11 @@
   - name: Visual Studio for Mac
     href: /visualstudio/mac
   - name: Eclipse
-    href: /azure/devops/java/download-eclipse-plug-in
+    href: /previous-versions/azure/devops/java/download-eclipse-plug-in
   - name: IntelliJ IDEA
-    href: /azure/devops/java/download-intellij-plug-in
+    href: /previous-versions/azure/devops/java/download-intellij-plug-in
 - name: Azure DevOps Learn
   items:
-  - name: What is Git?
-    href: /azure/devops/learn/git/what-is-git
-  - name: What is version control?
-    href: /azure/devops/learn/git/what-is-version-control
   - name: Learn Git
     href: /azure/devops/learn/git/learn-git-with-team-services/
   - name: Git at Scale
@@ -51,18 +57,8 @@
 - name: Resources
   items:
   - name: GitHub & Azure Boards 
-    href: /azure/devops/boards/github/index
+    href: ../boards/github/index.md
   - name: Manage projects
-    href: /azure/devops/organizations/projects/index
-  - name: "Default Git permissions (Security)"
-    href: /azure/devops/organizations/security/default-git-permissions
-  - name: "Default TFVC permissions (Security)"
-    href: /azure/devops/organizations/security/default-tfvc-permissions
-  - name: "Set permissions (Security)"
-    href: /azure/devops/organizations/security/set-git-tfvc-repository-permissions
+    href: ../organizations/projects/about-projects.md
   - name: Marketplace extensions
     href: https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads
-
-
-
-

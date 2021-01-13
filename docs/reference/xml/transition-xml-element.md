@@ -3,9 +3,11 @@ title: TRANSITION XML element
 titleSuffix: TFS
 description: Syntax and usage of the TRANSITION element used to specify a valid progression or regression from one state to another for a work item type
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: bb4ced9a-bebb-4011-8646-4beb94655afa
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops'
 ms.date: 10/27/2017
 ---
 
@@ -70,7 +72,7 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
   
  Multiple groups are supported only by creating a parent group and specifying that parent group in the `TRANSITION` element. To learn more about the for and not attributes, see [Apply a field rule](apply-rule-work-item-field.md).  
   
-## Example  
+## Example, define reasons  
  In the following example, the reasons are defined for the transition from the **Active** to the **Resolved** workflow state.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -89,7 +91,8 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 > </TRANSITION>  
 > ```  
   
-## Example  
+## Example, restrict transition
+  
  In the following rule, the ability to transition a work item from the **Resolved** to the **Completed** state is restricted to all project testers, except for new testers who have just joined the team.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -99,6 +102,7 @@ To modify the workflow, you modify the definition for a work item type. See [Mod
 > ```  
   
 ::: moniker range=">= tfs-2018" 
+
 ## Auto completion of work items with pull requests  
 
 When you link a work item to a pull request (PR), you have the option to automatically complete those work items when you successfully complete the PR. 

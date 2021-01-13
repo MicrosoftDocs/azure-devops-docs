@@ -2,13 +2,13 @@
 title: Inherited process model versus the Hosted XML process model
 titleSuffix: Azure DevOps Services
 description: Differences between Inheritance and Hosted XML
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
 ms.assetid:
 ms.author: dahellem
 author: danhellem
 ms.topic: conceptual
-monikerRange: ">= azure-devops-2019"
+monikerRange: "azure-devops"
 ms.date: 4/01/2020
 ---
 
