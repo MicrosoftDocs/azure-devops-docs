@@ -210,7 +210,7 @@ getOrgUrl('fabrikam', (err, url) => {
 
 ### With the organization's ID
 
-To get the URL for an organization using its GUID identifier, use the `hostId` query parameter in the examples above (instead of `accountName`). For example:
+To get the URL for an organization using its GUID identifier, use the `hostId` query parameter in the previous examples (instead of `accountName`). For example:
 
 ```
 GET https://dev.azure.com/_apis/resourceAreas/79134C72-4A58-4B42-976C-04E7115F32BF?hostId={organizationId}&api-version=5.0-preview.1

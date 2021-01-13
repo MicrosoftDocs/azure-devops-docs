@@ -113,7 +113,7 @@ Sometimes our partner teams or dependencies have incidents that affect Azure Dev
 
 ## Service security
 
-Ensuring a secure service requires constant vigilance, from proper design and coding techniques, all the way through to the way we operate the service. Along those lines, we actively invest in the prevention of security holes and in breach detection. If there's a breach, we use security response plans to minimize data leakage, loss, or corruption. To learn more about how security and identity are managed, see [About security and identity](about-security-identity.md).
+Ensuring a secure service requires constant vigilance, from proper design and coding techniques, all the way through to the way we operate the service. Along those lines, we actively invest in the prevention of security holes and in breach detection. If there's a breach, we use security response plans to minimize data leakage, loss, or corruption. To learn more about how security and identity are managed, see [About security, authentication, and authorization](about-security-identity.md).
 
 ### Secure by design
 
@@ -277,7 +277,7 @@ security requirements.
 
 Azure Active Directory (Azure AD) provides the capability for administrators to control access to Azure resources and applications such as Azure DevOps. With conditional access control in place, Azure AD checks for the specific conditions you set for a user to access an application. After access requirements are met, the user is authenticated and can access the application.
 Visit the [Azure documentation site](/azure/active-directory/active-directory-conditional-access)
-to learn more about conditional access policy (CAP).  Azure DevOps now enforces conditional access policies for custom Azure DevOps authentication mechanisms including personal access tokens (PATs), alternate authentication, OAuth, and SSH keys. If accessing Azure DevOps through a third-party client, like git.exe, only IP-based policies will be honored; any other policy will automatically fail as the client doesn't pass the necessary information to validate the policy. For example, if a policy requires MFA and the client can't support MFA, the policy fails and the user is automatically blocked.
+to learn more about conditional access policy (CAP).  Azure DevOps now supports enforcing certain type of conditional access policies (e.g. IP Fencing) for custom Azure DevOps authentication mechanisms including personal access tokens (PATs), alternate authentication, OAuth, and SSH keys. If accessing Azure DevOps through a third-party client, like git.exe, only IP-based policies (IPv4 based only) will be honored; other policies are not be recognized today. 
 
 ## Additional resources
 

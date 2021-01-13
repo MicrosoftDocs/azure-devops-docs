@@ -32,7 +32,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 2. Select **Options** to view and configure your repository settings.
 
-   ![The options UI](media/repository-settings/repository-settings-server-2019.png)
+   ![On Options for FabrikamFiber, the Options tabs is highlighted and selected.](media/repository-settings/repository-settings-server-2019.png)
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 2. Select **Options** and **Policies** to view and configure your repository settings.
 
-   ![The options UI](media/repository-settings/repository-settings.png)
+   ![On Options for FabrikamFiber, the Options and Policies tabs are highlighted, and Options is selected.](media/repository-settings/repository-settings.png)
 
 ::: moniker-end
 

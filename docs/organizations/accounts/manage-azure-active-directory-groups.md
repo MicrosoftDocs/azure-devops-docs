@@ -36,7 +36,7 @@ and differences in how you [control organization access with Microsoft accounts 
 ## Add an Azure AD group to an Azure DevOps group
 
 > [!NOTE]   
-> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the preview feature, **Organization Permissions Settings Page v2**, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 

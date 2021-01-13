@@ -62,4 +62,4 @@ A: This guidance is mainly for Azure DevOps Services users. [Client Libraries](.
 
 ### Q: What if I want my application to authenticate with both Azure DevOps Server and Azure DevOps Services?
 
-A: The best practice is to have different authentication paths for Azure DevOps Server and Azure DevOps Services. You can use the requestContext to find out which you're hitting and then use the best mechanism for each. Instead, if you want a unified solution, [PATs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) will work for both.
+A: The best practice is to have different authentication paths for Azure DevOps Server and Azure DevOps Services. You can use the requestContext to find out which you're hitting and then use the best mechanism for each. Instead, if you want a unified solution, [PATs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) works for both.

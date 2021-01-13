@@ -4,14 +4,14 @@ description: Learn how to use an Azure CI/CD data pipeline to ingest, process, a
 ms.author: jukullam
 author: JuliaKM
 ms.technology: devops-cicd-apps
-ms.date: 08/06/2020
+ms.date: 01/05/2021
 ms.topic: conceptual
 monikerRange: '=azure-devops'
 ---
 
 # Build a data pipeline by using Azure Data Factory, DevOps, and machine learning
 
-Get started building a data pipeline by using data ingestion, data transformation, and model training. 
+Get started building a data pipeline with data ingestion, data transformation, and model training. 
 
 Learn how to grab data from a CSV (comma-separated values) file and save the data to Azure Blob Storage. Transform the data and save it to a staging area. Then train a machine learning model by using the transformed data. Write the model to blob storage as a Python [pickle file](https://docs.python.org/3/library/pickle.html). 
 
@@ -296,9 +296,9 @@ Follow the steps in the next sections to set up Azure Databricks and Azure Data 
     * Azure DevOps organization: Your active account
     * Project name: Your Azure DevOps data pipeline project
     * Git repository name: **Use existing**. 
-        * Select the **master** branch for collaboration.     
+        * Select the **main** branch for collaboration.     
         * Set **/azure-data-pipeline/factorydata** as the root folder.
-    * Branch to import resource into: Select **Use existing** and **master**.
+    * Branch to import resource into: Select **Use existing** and **main**.
 
 ### Link Azure Data Factory to your key vault
 1. In the Azure portal UI, open the key vault. 

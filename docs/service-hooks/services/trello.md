@@ -33,9 +33,7 @@ Create a Trello card or list from an Azure DevOps Services event.
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Go to your project Service Hooks page: 
-
-	`https://{orgName}/{project_name}/_settings/serviceHooks`
+1. Go to your project Service Hooks page by choosing **Project settings**, **Service hooks**.
 
 	![Project administration page](./media/add-devops-service-hook.png)
 
@@ -51,7 +49,7 @@ we're going to have the subscription respond when a work item is created.
    ![Trigger configuration page](./media/trello/trigger.png)
 
 
-1. Set up the action that Trello will take in response to the trigger -
+1. Set up the action that Trello takes in response to the trigger -
 either create a card or a list.
 
    ![Action configuration page](./media/trello/action.png)
@@ -70,9 +68,7 @@ either create a card or a list.
 
 ::: moniker range=">= tfs-2017 < azure-devops-2019"
 
-1. Go to your project Service Hooks page: 
-
-    `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
+1. Go to your project Service Hooks page by choosing **Settings**, **Service Hooks**.
 
 	![Project administration page](./media/add-service-hook.png)
 
@@ -88,7 +84,7 @@ we're going to have the subscription respond when a work item is created.
    ![Trigger configuration page](./media/trello/trigger.png)
 
 
-1. Set up the action that Trello will take in response to the trigger -
+1. Set up the action that Trello takes in response to the trigger -
 either create a card or a list.
 
    ![Action configuration page](./media/trello/action.png) 
@@ -112,7 +108,7 @@ Now it's set up. Go to Trello and see the cards appear.
 ## Placeholders
 
 You can insert placeholders in the name of a list or the name or description of a card to be created by your subscription.
-When a list or card is created, the placeholders will be replaced by values from the event that was raised.
+When a list or card is created, the placeholders get replaced by values from the event that was raised.
 The example we used for the card name in this page uses:
 
 ```

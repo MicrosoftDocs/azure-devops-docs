@@ -29,7 +29,7 @@ After you delete your organization, it's disabled but available for 28 days. If 
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
 
-2. On your profile page, go to the *Organizations Pending Deletion* section at the bottom, and then select **Restore**.
+2. On your profile page, go to the lower *Organizations Pending Deletion* section, and then select **Restore**.
 
    ![Restore your deleted organization](media/shared/visual-studio-profile-page.png)
 

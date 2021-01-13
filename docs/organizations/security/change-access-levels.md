@@ -142,7 +142,7 @@ Changes you make to the access level settings take affect immediately. You can a
 
 To change the access level for a user or group, first remove them from their existing access level, and then add them to the access level you want them to have. 
 
-1. Choose the user or group and then click **Remove**.
+1. Choose the user or group and then select **Remove**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Collection level permissions and groups](media/change-access-levels/remove-user-from-access-level.png)  

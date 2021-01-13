@@ -154,7 +154,7 @@ A: Yes. You can revoke authorizations from your profile.
 
 	Make sure you start from the Visual Studio site (https://visualstudio.com) 
 	instead of your organization (```https://dev.azure.com/{orgName}```) because, right now, 
-	your profile accessed from your organization will take you to the wrong implementation 
+	your profile accessed from your organization takes you to the wrong implementation 
 	of the authorizations management feature.
 
 2.	Manage your authorizations.
