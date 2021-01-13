@@ -4,6 +4,7 @@ description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
 ms.date: 01/13/2021
+ms.custom: contperfq3
 ---
 
 # Logging commands
