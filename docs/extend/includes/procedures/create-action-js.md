@@ -25,7 +25,7 @@
    |        text        |                                                        Text that appears on the menu item.                                                         |
    |       title        |                                                    Tooltip text that appears on the menu item.                                                     |
    |        icon        |                              URL to an icon that appears on the menu item. Relative URLs are resolved using baseUri.                               |
-   |      groupId       | Determines where this menu item appears in relation to the others. [How to discover menu group identifiers](../../test/discover-menu-group-ids.md) |
+   |      groupId       | Determines where this menu item appears in relation to the others. [How to discover menu group identifiers](../../overview.md) |
    |        uri         |                                           URI to a page that registers the menu action handler (see below).                                            |
    | registeredObjectId |                                (Optional) Name of the registered menu action handler. Defaults to the contribution id.                                 |
 
@@ -42,7 +42,7 @@
     <body>
         <div>
             The end user doesn't see the content on this page.
-            It is only in the background to handle the contributed menu item being clicked.
+            It is only in the background to handle the contributed menu item being selected.
         </div>
     </body>
     </html>
@@ -59,7 +59,7 @@
          var menuContributionHandler = (function () {
             "use strict";
             return {
-                // This is a callback that gets invoked when a user clicks the newly contributed menu item
+                // This is a callback that gets invoked when a user selects the newly contributed menu item
                 // The actionContext parameter contains context data surrounding the circumstances of this
                 // action getting invoked.
                 execute: function (actionContext) {

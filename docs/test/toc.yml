@@ -2,8 +2,6 @@
   href: index.yml
 - name: About exploratory and manual testing
   href: overview.md
-- name: About load testing
-  href: load-test/overview.md
 - name: Quickstarts
   expanded: true
   items:
@@ -25,20 +23,12 @@
       href: connected-mode-exploratory-testing.md
     - name: Test in Standalone mode
       href: standalone-mode-exploratory-testing.md
-  - name: Load testing
-    items:
-    - name: Load test with Visual Studio
-      href: load-test/getting-started-with-performance-testing.md
-    - name: Load test with Azure DevOps
-      href: load-test/get-started-simple-cloud-load-test.md
-    - name: View and compare results
-      href: load-test/performance-reports.md
 - name: Tutorials
   items:
   - name: Test from the Kanban board
     href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: Load test before release
-    href: load-test/run-performance-tests-app-before-release.md
+    href: /previous-versions/azure/devops/test/load-test/run-performance-tests-app-before-release
 - name: How-to Guides
   items:
   - name: Manual testing
@@ -57,7 +47,7 @@
       href: how-long-to-keep-test-results.md
     - name: Associate tests with test cases
       href: associate-automated-test-with-test-case.md
-    - name: Run tests from test plans (automate)
+    - name: Run automated tests from test plans
       href: run-automated-tests-from-test-hub.md
     - name: Delete test artifacts
       href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md 
@@ -79,28 +69,12 @@
       href: voluntary-stakeholder-feedback.md
     - name: Track stakeholder feedback requests
       href: track-stakeholder-feedback.md
-  - name: Load testing
-    items:
-    - name: Add app performance data
-      href: load-test/get-performance-data-for-load-tests.md
-    - name: Run Apache JMeter load tests
-      href: load-test/get-started-jmeter-test.md
-    - name: Record and replay tests
-      href: load-test/record-and-replay-cloud-load-tests.md
-    - name: Test private and intranet apps
-      href: load-test/clt-behind-firewall.md
-    - name: Test using your own servers
-      href: load-test/clt-with-private-machines.md
-    - name: Install certificates and software
-      href: load-test/install-certs-and-software.md
 - name: Reference
   items:
   - name: Default permissions (Security)
     href: manual-test-permissions.md
   - name: Manual testing FAQs
     href: reference-qa.md
-  - name: Load testing FAQs
-    href: load-test/reference-qa.md
   - name: TCM Reporting FAQs
     href: reference-tcm.md
   - name: Unable to connect
@@ -113,11 +87,13 @@
     href: /rest/api/azure/devops/testplan/test%20%20plans
 - name: Resources
   items:
+  - name: Azure Pipelines Test
+    href: ../pipelines/test/test-glossary.md
   - name: Azure DevOps Blog, Test
-    href: /archive/blogs/anutthara/books-on-software-testing-with-visual-studio-alm-2010
+    href: https://devblogs.microsoft.com/devops/
   - name: Plug-ins for Visual Studio
     href: https://devblogs.microsoft.com/devops/visual-studio-11-beta-unit-testing-plugins-list/
   - name: Create custom code & plug-ins
     href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
-
-
+  - name: Load testing (Deprecated)
+    href: /previous-versions/azure/devops/test/load-test/overview

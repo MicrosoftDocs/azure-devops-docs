@@ -2,7 +2,7 @@
 title: Clone a Hosted XML process to an inherited process
 titleSuffix: Azure DevOps Services     
 description: Clone a Hosted XML process model to an inherited process in Azure DevOps Services
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
@@ -57,7 +57,7 @@ The general sequence of steps to support clone are:
 	Here, we accept the defaults provided by the system.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Clone from XML to inheritance dialog information](media/migration/upgrade-from-xml-to-inheritance-dialog.png)  
+	> ![Accept the defaults provided by the system.](media/migration/upgrade-from-xml-to-inheritance-dialog.png)  
 
 	> [!IMPORTANT]  
 	> The system performs a best effort to detect the correct parent process. Verify that the process selected meets your expectations, or change it as needed. Once you've completed the clone, you can't clone it a second time based on a different system process. 

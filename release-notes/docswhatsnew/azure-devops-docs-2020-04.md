@@ -42,7 +42,7 @@ Welcome to what's new in Azure DevOps docs for April 2020. This article lists so
 - [Access repositories, artifacts, and other resources](/azure/devops/pipelines/process/access-tokens) - Shared content for accessing repositories
 - [Trigger one pipeline after another](/azure/devops/pipelines/process/pipeline-triggers) - Triggering pipelines
 - [Configure schedules for pipelines](/azure/devops/pipelines/process/scheduled-triggers) - Scheduled triggers
-- [Build BitBucket Cloud repositories](/azure/devops/pipelines/repos/bitbucket) - How to build BitBucket Cloud repositories
+- [Build Bitbucket Cloud repositories](/azure/devops/pipelines/repos/bitbucket) - How to build Bitbucket Cloud repositories
 
 ### Updated articles
 
@@ -53,27 +53,16 @@ Welcome to what's new in Azure DevOps docs for April 2020. This article lists so
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2020-04-01..2020-04-30).
+Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2020-04-01..2020-04-26).
 
-- [Need details on how to handle execution bit on .sh scripts #8139](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8139)
-- [One needs to be Project collection Administrator to achieve this. #8120](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8120)
-- [My team mates are not able to view +Add New Test Plan & Define tab #8093](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8093)
-- [Small typo in https://docs.microsoft.com/en-us/azure/devops/pipelines/process/expressions #8074](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8074)
-- [Enum not listed as a parameter type #8070](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8070)
-- [Clarifying example for oauth token yaml #8056](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8056)
 - ["User and permission management" link in the sidebar results in 404 #8051](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8051)
-- [Command example for removing a VM is incorrect. #8031](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8031)
 - [Path and Branch pipeline trigger combination unclear #8013](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8013)
-- [Add a Note Warning of AAD Policy Which can Cause Import Failures #8011](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8011)
 - [Please update this page to add pre-req @ Azure DevOps Organization level #8006](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8006)
-- ["Preview: Report deployment status to Boards" not shown1st image #7993](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7993)
 - [Error in extends example #7974](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7974)
-- [Environment Resource Type "appService" #7971](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7971)
-- [System.PullRequest.SourceBranch example should have refs/heads/ prefix #7970](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7970)
 - [Broken image #7928](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7928)
 - [documentation: `**/ deletes all files and folders in the root folder.` should be `**/*` #7921](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7921)
 - [Cannot access mseng ADO org link #7902](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7902)
-- [Azure Pipeline Task Inovke Azure Function Misleading #7896](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7896)
+- [Azure Pipeline Task Invoke Azure Function Misleading #7896](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7896)
 - [Options for TFVC CI triggers are not mentioned #7890](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7890)
 - [Remove a VM from an Environment - Not up to date for Windows machine? #7875](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7875)
 - [Missing image #7863](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7863)
@@ -82,7 +71,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Add example in for looping through parameters and passing them as environment variables #7851](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7851)
 - [Not obvious deployment goes to $(Pipeline.Workspace) instead of $(System.DefaultWorkingDirectory) #7837](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7837)
 - [TOC for this page contains unrelated entries like Data protection overview #7835](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7835)
-- [Numbering wrong - two links are labelled as "1." #7834](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7834)
+- [Numbering wrong - two links are labeled as "1." #7834](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7834)
 - [Images are broken #7824](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7824)
 - [Additional Related Article #7805](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7805)
 - [only two jobs defined but comment says 3 jobs #7795](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7795)
@@ -94,10 +83,9 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Docs could be clearer that these *products* / *offerings* are deprecated #7760](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7760)
 - [copy paste error? #7708](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7708)
 - [Task PublishPipelineArtifact@1 has no input named path #7701](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7701)
-- [Missing supported scenario: Materialising user accounts #7644](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7644)
+- [Missing supported scenario: Materializing user accounts #7644](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7644)
 - [Hockeyapp link incorrect #7631](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7631)
 - [Docs are out of date #7564](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7564)
-- [Versioning NPM packages #7469](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7469)
 - [Precedence of multiple variables with the same name from linked variable groups. #7384](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7384)
 - [The React Documentation Does Not Publish Anything #7280](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7280)
 - [Page out of date? #7078](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7078)
@@ -108,22 +96,18 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Invalid link to "How to discover menu group identifiers" #6929](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6929)
 - [Document Working with Project-Scoped Artifact Feeds #6793](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6793)
 - [Missing documentation on variable redefinition within the same scope #6632](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6632)
-- [Stage/Job breakup with npm tasks is misleading #6463](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6463)
 - [Not clear how to consume build artifacts without an extra step #6437](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6437)
 - [Set a Gate time delay above 48 hours #6392](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6392)
 - [Remove preview tag from this article #6300](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6300)
 - [What do we put for '<feedName>' ? #5773](https://github.com/MicrosoftDocs/azure-devops-docs/issues/5773)
 - [Deployment Groups #5722](https://github.com/MicrosoftDocs/azure-devops-docs/issues/5722)
-- [Present full working azure-pipelines.yml examples #5683](https://github.com/MicrosoftDocs/azure-devops-docs/issues/5683)
 - [Better quality graphics #5158](https://github.com/MicrosoftDocs/azure-devops-docs/issues/5158)
-- ['@fabrikam:registry=<your feed URL>' doesn't work #4965](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4965)
 - [Artifact name cannot be a variable #4851](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4851)
 - [System.ArtifactsDirectory should probably be Build.ArtifactStagingDirectory  #4808](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4808)
 - [Custom Hub Group #4166](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4166)
 - [Missing information on setting this up in a YAML Pipeline, and using dotnet restore #3884](https://github.com/MicrosoftDocs/azure-devops-docs/issues/3884)
 - [Do tasks have to be in jobs? #3665](https://github.com/MicrosoftDocs/azure-devops-docs/issues/3665)
 - [Update sample NuGet.config #3468](https://github.com/MicrosoftDocs/azure-devops-docs/issues/3468)
-- [Firewall Rule PowerShell Scripts Will Not Work For ARM Subscriptions #2894](https://github.com/MicrosoftDocs/azure-devops-docs/issues/2894)
 - [Add .gitattributes files to repos to normalize line endings #1231](https://github.com/MicrosoftDocs/azure-devops-docs/issues/1231)
 - [What is notifyLoadFailed parameter? #979](https://github.com/MicrosoftDocs/azure-devops-docs/issues/979)
 - [incorrect API used #967](https://github.com/MicrosoftDocs/azure-devops-docs/issues/967)

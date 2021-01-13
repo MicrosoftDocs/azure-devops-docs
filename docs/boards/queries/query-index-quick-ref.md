@@ -14,7 +14,7 @@ ms.date: 05/15/2020
 
 # Query quick reference 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Use this index to quickly access information on query editor tasks, operators available based on data type, and access sample queries. 
 
@@ -172,7 +172,7 @@ The following table indicates the operators and macros available for the differe
 
 [!INCLUDE [temp](../includes/note-macro-web-portal.md)]
 
-
+[!INCLUDE [date-time-pattern](../includes/date-time-pattern.md)]
 
 <a id="samples" />
 

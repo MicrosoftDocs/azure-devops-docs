@@ -4,19 +4,19 @@ titleSuffix: Azure Repos
 description: Reviewing and Publishing Code using Git Pull Requests
 ms.assetid: 731eeda5-133f-46d5-ab60-b27a5280210d
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
+ms.author: vijayma
+author: vijayma
 ms.date: 03/14/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 
-#  Create a pull request
+#  Create and complete a pull request
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015**
 
-[Git's workflow](gitworkflow.md) uses [branches](branches.md) to isolate work until you're ready to merge the changes into your default branch, such as `master`. 
+[Git's workflow](gitworkflow.md) uses [branches](branches.md) to isolate work until you're ready to merge the changes into your default branch, such as `main`. 
 The pull request is the collaborative process that lets the rest of the team discuss changes in a branch and agree to merge them once everyone approves.
 Use pull requests to get early feedback from others on work in progress, even if you're not ready to merge the changes into another branch.
 
@@ -40,7 +40,7 @@ To create a pull request in Azure Repos:
 
    ![Creating Pull Request through pushed branch in Azure DevOps Services](media/pull-requests/create-pr-from-push.png)
 
-   ![Creating Pull Request through pushed branch in Azure DevOps Services](media/pull-requests/create-pr-from-push-files-tab.png)
+   ![Creating Pull Request through pushed branch in Azure DevOps Services, Files tab.](media/pull-requests/create-pr-from-push-files-tab.png)
  
    You can also initiate a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Project](../../organizations/projects/connect-to-projects.md).
 
@@ -48,7 +48,7 @@ To create a pull request in Azure Repos:
 
    From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal for your current branch.   
 
-   ![Pull Requests](media/pull-requests/new-pull-request.png)
+   ![Select New Pull Request.](media/pull-requests/new-pull-request.png)
 
 3. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include VSTS work items and hyperlinks to allow others to have as much context as possible when reviewing your changes. Add any team member who you would like to review the changes. 
 
@@ -88,7 +88,7 @@ Enter the message used for the [merge commit](merging.md) and update the pull re
 ![Complete pull request dialog](./media/complete-pull-request-dialog.png)
 
 - Check **Complete linked work items after merging** to complete any linked work items.
-- Check **Delete `<branch name>` after merging** to delete the source branch from the pull request. Git retains the commit history in the `master` branch after the pull request is complete, 
+- Check **Delete `<branch name>` after merging** to delete the source branch from the pull request. Git retains the commit history in the `main` branch after the pull request is complete, 
 so unless you plan on doing more work in the branch, it is safe to remove.
 - Check **Squash changes when merging** to [squash merge](merging-with-squash.md) your pull request.
 - Check **Override branch policies and enable merge** to force merge even if all branch policies haven't been satisfied. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
@@ -96,7 +96,7 @@ so unless you plan on doing more work in the branch, it is safe to remove.
 
 ### What happens when a pull request is merged?
 You must resolve any [merge conflicts](merging.md) between the pull request branch and the target branch. Git adds
-a new commit (the *merge commit*) to the end of the master branch. This merge commit links the earlier history of both the master branch and the commits for the branch
+a new commit (the *merge commit*) to the end of the main branch. This merge commit links the earlier history of both the main branch and the commits for the branch
 that was merged as part of the pull request.
 
 ## Next steps

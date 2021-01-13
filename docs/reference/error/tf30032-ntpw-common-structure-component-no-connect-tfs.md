@@ -5,7 +5,7 @@ ms.technology: devops-agile
 ms.assetid: 889f7f5e-9610-47f4-b6a0-592325b75151
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
 
@@ -24,7 +24,7 @@ This error occurs when the New Team Project Wizard is unable to connect to the a
   
 ### To correct this error  
   
-1.  Contact your Team Foundation Server administrator to verify that the server configuration is correct. Your administrator can verify by using the **/view** option of the **TfsAdmin ConfigureConnections** command to. For more information, see [Settings Command](https://msdn.microsoft.com/2b96fbbf-34c8-4500-82d8-724cc65dc9a4).  
+1.  Contact your Team Foundation Server administrator to verify that the server configuration is correct. Your administrator can verify by using the **/view** option of the **TfsAdmin ConfigureConnections** command to. For more information, see [Settings Command](/previous-versions/visualstudio/visual-studio-2013/bb778396(v=vs.120)).  
   
 2.  If the server configuration is correct, review the project creation log and follow any instructions provided.  
   

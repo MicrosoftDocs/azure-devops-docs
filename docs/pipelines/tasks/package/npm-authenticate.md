@@ -89,7 +89,7 @@ The registry URL pointing to an Azure Artifacts feed may or may not contain the 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 ### How does this task work?

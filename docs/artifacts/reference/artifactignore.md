@@ -4,9 +4,6 @@ description: Decide what files are uploaded when you publish Universal Packages 
 ms.assetid: bbaf8799-d08b-4f1a-9546-4b3b8da40a0b
 ms.technology: devops-artifacts
 ms.topic: reference
-ms.manager: hdixon
-ms.author: wismyth
-author: willsmythe
 ms.date: 05/04/2020
 monikerRange: 'azure-devops'
 ---

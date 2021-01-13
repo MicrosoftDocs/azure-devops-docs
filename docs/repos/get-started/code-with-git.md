@@ -4,9 +4,7 @@ titleSuffix: Azure Repos
 description: Share code in a Git repo and a new team project 
 ms.assetid: 
 ms.technology: devops-new-user
-ms.author: apawast
-author: apawast
-ms.date: 09/10/2018
+ms.date: 11/13/2020
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
 ---
@@ -28,7 +26,7 @@ In this article, we'll show you how to start working with your code in Azure Rep
 
 Install one of the following Git command-line tools:
 
-  - To install Git for Windows, including Git Credential Manager, see [Install Git Credential Manager for Windows](../git/set-up-credential-managers.md#windows).
+  - To install Git for Windows, including Git Credential Manager, see [Install Git Credential Manager](../git/set-up-credential-managers.md).
   - To install on macOS or Linux, check out the [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) chapter in the open-source _Pro Git_ book. For macOS and Linux, we recommend [configuring SSH authentication](../git/use-ssh-keys-to-authenticate.md)
 
 ## Get your code
@@ -142,27 +140,27 @@ git branch users/jamal/feature1
 git checkout users/jamal/feature1
 ```
 
-When you create a branch from the command line, the branch is based on the currently checked-out branch. If you just cloned the repository, the default branch (typically `master`) is checked out. Because you just cloned, your local copy of `master` has the latest changes.
+When you create a branch from the command line, the branch is based on the currently checked-out branch. If you just cloned the repository, the default branch (typically `main`) is checked out. Because you just cloned, your local copy of `main` has the latest changes.
 
-If you're working with a previously cloned repository, ensure that you have checked out the right branch (`git checkout master`) and that it's up to date (`git pull origin master`) before you create your new branch.
+If you're working with a previously cloned repository, ensure that you have checked out the right branch (`git checkout main`) and that it's up to date (`git pull origin main`) before you create your new branch.
 
 ```
-git checkout master
-git pull origin master
+git checkout main
+git pull origin main
 git branch users/jamal/feature1
 git checkout users/jamal/feature1
 ```
 
-You can replace the first three commands in the previous example with the following command, which creates a new branch named `users/jamal/feature1` based on the latest `master` branch.
+You can replace the first three commands in the previous example with the following command, which creates a new branch named `users/jamal/feature1` based on the latest `main` branch.
 
 ```
-git pull origin master:users/jamal/feature1
+git pull origin main:users/jamal/feature1
 ```
 
-Switch back to the Git Bash window that you used in the previous section. Run the following commands to create and check out a new branch based on the master branch.
+Switch back to the Git Bash window that you used in the previous section. Run the following commands to create and check out a new branch based on the main branch.
  
 ```
-git pull origin master:users/jamal/feature1
+git pull origin main:users/jamal/feature1
 git checkout feature1
 ```
 
@@ -187,7 +185,7 @@ When you're happy with the changes on your local computer, you can share them ba
    git push origin users/jamal/feature1
    ```
 
-Your code is now shared to the remote repository, in a branch named `users/jamal/feature1`. To merge the code from your working branch into the `master` branch, use a pull request.
+Your code is now shared to the remote repository, in a branch named `users/jamal/feature1`. To merge the code from your working branch into the `main` branch, use a pull request.
 
 ## Review and merge your changes with a pull request
 
@@ -205,7 +203,7 @@ This example shows the basic steps of creating and completing a pull request.
 
    ![Create a pull request](media/updated-file-create-pull-request.png)
 
-3. New pull requests are configured to merge your branch into the default branch, which in this example is `master`. The title and description are pre-populated with your commit message.
+3. New pull requests are configured to merge your branch into the default branch, which in this example is `main`. The title and description are pre-populated with your commit message.
 
    ![New pull request](media/create-pull-request.png)
 
@@ -221,7 +219,7 @@ This example shows the basic steps of creating and completing a pull request.
 
    ![Pull request](media/pull-request.png)
 
-5. Select **Complete merge** to complete the pull request and merge your code into the `master` branch.
+5. Select **Complete merge** to complete the pull request and merge your code into the `main` branch.
 
    ![Complete pull request](media/complete-pull-request.png)
 
@@ -256,21 +254,21 @@ This example shows the basic steps of creating and completing a pull request.
 
 ::: moniker-end
 
-Your changes are now merged into the `master` branch, and your `users/jamal/feature1` branch is deleted on the remote repository. To delete your local copy of the branch, switch back to your Git Bash command prompt and run the following commands.
+Your changes are now merged into the `main` branch, and your `users/jamal/feature1` branch is deleted on the remote repository. To delete your local copy of the branch, switch back to your Git Bash command prompt and run the following commands.
 
 ```
-git checkout master
-git pull origin master
+git checkout main
+git pull origin main
 git branch -d users/jamal/feature1
 ```
 
-The `git checkout master` command switches you to the `master` branch. The `git pull origin master` command pulls down the latest version of the code in the master branch, including your changes and the fact that `users/jamal/feature1` was merged. The `git branch -d users/jamal/feature1` command deletes your local copy of that branch.
+The `git checkout main` command switches you to the `main` branch. The `git pull origin main` command pulls down the latest version of the code in the main branch, including your changes and the fact that `users/jamal/feature1` was merged. The `git branch -d users/jamal/feature1` command deletes your local copy of that branch.
 
 Now you're ready to create a new branch, write some code, and do it again.
 
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Set up continuous integration and delivery](../../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
+> [Set up continuous integration and delivery](../../pipelines/create-first-pipeline.md?bc=%252fazure%252fdevops%252fuser-guide%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fuser-guide%252ftoc.json)
 > or
 > [learn more about working with a Git repo](../git/index.yml).

@@ -22,7 +22,7 @@ Files are copied to the `$(Build.ArtifactStagingDirectory)` staging folder and t
 > [!IMPORTANT]
 > 
 > If you're using Azure Pipelines, or Team Foundation Server (TFS) 2017 or newer, we recommend that you do NOT use this deprecated task.
-> Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).
+> Instead, use the **[Copy Files](copy-files.md)** and **[Publish Build Artifacts](publish-build-artifacts.md)** tasks. See [Artifacts in Azure Pipelines](../../artifacts/build-artifacts.md).
 
 ::: moniker-end
 
@@ -85,7 +85,7 @@ None
 
 </table>
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

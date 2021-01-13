@@ -4,8 +4,8 @@ description: Run unit and functional tests (Selenium, Appium, Coded UI test, etc
 ms.topic: reference
 ms.assetid: EF087383-EE5E-42C7-9A53-AB56C98420F9
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 04/21/2020
 monikerRange: 'azure-devops'
 ---
@@ -18,7 +18,7 @@ Use this task to run unit and functional tests (Selenium, Appium, Coded UI test,
 using the Visual Studio Test Runner. Other than MSTest-based tests, test frameworks that have a
 Visual Studio test adapter, such as xUnit, NUnit, Chutzpah, can also be executed.  
 
-Tests that target the .NET core framework can be executed by specifying the appropriate target framework value.  
+Tests that target the .NET core framework can be executed by specifying the appropriate target framework value in the [.runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
 
 Tests can be distributed on multiple agents using version 2 of this task. For more information, see [Run tests in parallel using the Visual Studio Test task](../../test/parallel-testing-vstest.md).
 
@@ -26,7 +26,7 @@ Tests can be distributed on multiple agents using version 2 of this task. For mo
 
 If you're using a Windows self-hosted agent, be sure that your machine has this prerequisite installed:
 
-- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or a later version
+- [.NET Framework](/dotnet/framework/install/) 4.6.2 or a later version
 
 ## Demands 
 
@@ -53,14 +53,14 @@ The vstest demand can be satisfied in two ways:
 |Argument|Description|
 |--- |--- |
 |`testSelector` <br/>Select tests using|(Required) **Test assembly:** Use this option to specify one or more test assemblies that contain your tests. You can optionally specify a filter criteria to select only specific tests.<br/>**Test plan:** Use this option to run tests from your test plan that have an automated test method associated with it. To learn more about how to associate tests with a test case work item, see [Associate automated tests with test cases](../../../test/associate-automated-test-with-test-case.md).<br/>**Test run:** Use this option when you are setting up an environment to [run tests from test plans](../../../test/run-automated-tests-from-test-hub.md). This option should not be used when running tests in a continuous integration/continuous deployment (CI/CD) pipeline. <br/>Default value: `testAssemblies`|
-|`testAssemblyVer2`<br/>Test files|(Required) Run tests from the specified files. Ordered tests and webtests can be run by specifying the `.orderedtest` and `.webtest` files respectively. To run `.webtest`, Visual Studio 2017 Update 4 or higher is needed. The file paths are relative to the search folder. Supports multiple lines of minimatch patterns. [More Information](https://aka.ms/minimatchexamples) <br/>Default value: `**\\*test*.dll\n!**\\*TestAdapter.dll\n!**\\obj\\**`|
+|`testAssemblyVer2`<br/>Test files|(Required) Run tests from the specified files. Ordered tests and webtests can be run by specifying the `.orderedtest` and `.webtest` files respectively. To run `.webtest`, Visual Studio 2017 Update 4 or higher is needed. The file paths are relative to the search folder. Supports multiple lines of minimatch patterns. [More Information](../file-matching-patterns.md) <br/>Default value: `**\\*test*.dll\n!**\\*TestAdapter.dll\n!**\\obj\\**`|
 |`testPlan`<br/>Test plan|(Required) Select a test plan containing test suites with automated test cases.|
-|`testSuite`<br/>Test suite|(Required) Select one or more test suites containing automated test cases. Test case work items must be associated with an automated test method. [Learn more](https://go.microsoft.com/fwlink/?linkid=847773).|
+|`testSuite`<br/>Test suite|(Required) Select one or more test suites containing automated test cases. Test case work items must be associated with an automated test method. [Learn more](../../../test/associate-automated-test-with-test-case.md).|
 |`testConfiguration`<br/>Test configuration|(Required) Select Test Configuration.|
 |`tcmTestRun`<br/>Test Run|(Optional) Test run based selection is used when triggering [automated test runs from test plans](../../../test/run-automated-tests-from-test-hub.md). This option cannot be used for running tests in the CI/CD pipeline.|
 |`searchFolder`<br/>Search folder|(Required) Folder to search for the test assemblies.|
-|`testFiltercriteria`<br/>Test filter criteria|(Optional) Additional criteria to filter tests from Test assemblies. <br/>For example: `Priority=1|Name=MyTestMethod`. [More information](https://msdn.microsoft.com/library/jj155796.aspx)|
-|`runOnlyImpactedTests`<br/>Run only impacted tests|(Optional) Automatically select, and run only the tests needed to validate the code change. [More information](https://aka.ms/tialearnmore)|
+|`testFiltercriteria`<br/>Test filter criteria|(Optional) Additional criteria to filter tests from Test assemblies. <br/>For example: `Priority=1|Name=MyTestMethod`. [More information](/previous-versions/jj155796(v=vs.140))|
+|`runOnlyImpactedTests`<br/>Run only impacted tests|(Optional) Automatically select, and run only the tests needed to validate the code change. [More information](../../test/test-impact-analysis.md)|
 |`runAllTestsAfterXBuilds`<br/>Number of builds after which all tests should be run|(Optional) Number of builds after which to automatically run all tests. Test Impact Analysis stores the mapping between test cases and source code. It is recommended to regenerate the mapping by running all tests, on a regular basis.|
 |`uiTests`<br/>Test mix contains UI tests|(Optional) To run UI tests, ensure that the agent is set to [run in interactive mode](../../agents/agents.md) with autologon enabled. Setting up an agent to run interactively must be done before queueing the build/release. Checking this box does not configure the agent in interactive mode automatically. This option in the task is to only serve as a reminder to configure agent appropriately to avoid failures. Hosted Windows agents from the VS 2015 and 2017 pools can be used to run UI tests.|
 |`vstestLocationMethod`<br/>Select test platform using|(Optional) Specify which test platform should be used.|
@@ -72,7 +72,7 @@ The vstest demand can be satisfied in two ways:
 |`runInParallel`<br/>Run tests in parallel on multi-core machines|(Optional) If set, tests will run in parallel leveraging available cores of the machine. This will override the MaxCpuCount if specified in your runsettings file. Click [here](https://devblogs.microsoft.com/devops/parallel-test-execution) to learn more about how tests are run in parallel.|
 |`runTestsInIsolation`<br/>Run tests in isolation|(Optional) Runs the tests in an isolated process. This makes `vstest.console.exe` process less likely to be stopped on an error in the tests, but tests might run slower. This option currently cannot be used when running with the multi-agent job setting.|
 |`codeCoverageEnabled`<br/>Code coverage enabled|(Optional) Collect code coverage information from the test run.|
-|`otherConsoleOptions`<br/>Other console options|(Optional) Other console options that can be passed to `vstest.console.exe`, as documented [here](https://aka.ms/vstestotherconsoleoptions). These options are not supported and will be ignored when running tests using the **Multi agent** parallel setting of an agent job or when running tests using **Test plan** option. The options can be specified using a settings file instead.|
+|`otherConsoleOptions`<br/>Other console options|(Optional) Other console options that can be passed to `vstest.console.exe`, as documented [here](/visualstudio/test/vstest-console-options). These options are not supported and will be ignored when running tests using the **Multi agent** parallel setting of an agent job or when running tests using **Test plan** option. The options can be specified using a settings file instead.|
 |`distributionBatchType` <br/>Batch tests| (Optional) A batch is a group of tests. A batch of tests runs its tests at the same time and results are published for the batch. If the job in which the task runs is set to use multiple agents, each agent picks up any available batches of tests to run in parallel.<br/>**Based on the number of tests and agents:** Simple batching based on the number of tests and agents participating in the test run.<br/>**Based on past running time of tests:** This batching considers past running time to create batches of tests such that each batch has approximately equal running time.<br/>**Based on test assemblies:** Tests from an assembly are batched together." <br/>Default value: `basedOnTestCases`|
 |`batchingBasedOnAgentsOption` <br/>Batch options| (Optional) Simple batching based on the number of tests and agents participating in the test run. When the batch size is automatically determined, each batch contains `(total number of tests / number of agents)` tests. If a batch size is specified, each batch will contain the specified number of tests. <br/>Default value: `autoBatchSize`|
 |`customBatchSizeValue` <br/>Number of tests per batch| (Required) Specify batch size <br/>Default value: `10`|
@@ -97,7 +97,7 @@ The vstest demand can be satisfied in two ways:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 ### How can I run tests that use TestCase as a data source?
 

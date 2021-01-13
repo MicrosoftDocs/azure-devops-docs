@@ -22,7 +22,7 @@ Consider using Visual Studio to associate automated tests with a test case when:
   in the settings of the [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
   Automated tests can also be run from [!INCLUDE [test-hub-include](includes/test-hub-include.md)].
   If you are using XAML builds you can also
-  [run these automated tests by using Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md).
+  [run these automated tests by using Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager).
 
 * You want to enable end-to-end traceability of requirements.
   If your test cases are linked to requirements or user stories,
@@ -56,10 +56,10 @@ parameters are for manual tests only.
 
 > For more information about checking in your test project and team build, see
 [Add files to the server](../repos/tfvc/add-files-server.md)
-and [Continuous integration on any platform](../pipelines/overview.md).
+and [Continuous integration on any platform](../pipelines/get-started/what-is-azure-pipelines.md).
 For more information about action recordings and coded UI tests, see 
-[Recording and Playing Back Manual Tests](mtm/record-play-back-manual-tests.md)
-and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code).
+[Recording and Playing Back Manual Tests](/previous-versions/azure/devops/test/mtm/record-play-back-manual-tests)
+and [Use UI Automation To Test Your Code](/visualstudio/test/use-ui-automation-to-test-your-code).
 
 <a name="add-test"></a>
 ## Associate your test  
@@ -104,7 +104,7 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
 * Tests that use the .NET core framework **can** be associated with a test case
   workitem when using Visual Studio 15.9 Preview 2 or later.
   To run the .NET core tests the appropriate target framework must be specified
-  in a [runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
+  in a [runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file).
   However, these tests cannot be run using Microsoft Test Manager and XAML builds.
 * Tests that use other test frameworks such as Chutzpah (for JavaScript tests
   such as Mocha or QUnit), or Jest **cannot** be associated with a test case.
@@ -115,9 +115,9 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
 
 **A**: If you are using a XAML build in Azure Pipelines or TFS, you can run tests
 that you have associated in a Build-Deploy-Test workflow using a
-[Lab environment](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
+[Lab environment](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 You can also run tests using Microsoft Test Manager and a
-[Lab environment](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
+[Lab environment](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 
 <a name="open-in-vs"></a>
 ### Q: Can I configure work items to open in Visual Studio?
@@ -130,8 +130,8 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 
 ## See Also
 
-* [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
+* [Associate automated test results with requirements](../pipelines/test/requirements-traceability.md)
 * [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
-* [Run automated tests with Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md)
+* [Run automated tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager)
 
-[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

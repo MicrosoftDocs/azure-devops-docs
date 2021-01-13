@@ -7,4 +7,4 @@ ms.prod: devops
 ms.technology: devops-cicd-tasks
 ---
 
-[Control options](/azure/devops/pipelines/process/tasks#controloptions)
+[Control options](../../process/tasks.md#controloptions)

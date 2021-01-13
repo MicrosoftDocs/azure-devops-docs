@@ -17,7 +17,7 @@ Let’s start by walking through some of the improvements we’ve made in the Co
 
 Build status (success or failure) is now clearly visible in the Code Explorer and Commit Details views. More details are just a click away, so you’ll always know if the changes in the commit passed the build or not. You can also customize which builds post status in the repository options for the build definition.
 
-Additionally, the latest changes to the Commit Details view provide deeper insights about your changes. If you’re using pull requests to merge your changes, you’ll see the link to the pull request that introduced the changes into the master branch (or in the case of a merge commit, the PR that created it). When your changes have reached master, the branch link will appear to confirm that the changes have been included.
+Additionally, the latest changes to the Commit Details view provide deeper insights about your changes. If you’re using pull requests to merge your changes, you’ll see the link to the pull request that introduced the changes into the main branch (or in the case of a merge commit, the PR that created it). When your changes have reached main, the branch link will appear to confirm that the changes have been included.
 
 ![Commit tracing in pull request](media/3_24_01.png)
 

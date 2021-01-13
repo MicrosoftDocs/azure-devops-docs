@@ -1,6 +1,6 @@
 ---
 title: Conda Environment task
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-python
 description: How to create and activate a Conda environment when building code in Azure Pipelines and TFS
 ms.assetid: D97AA092-1F19-4729-B98F-E27615003C1E
 ms.manager: madhurig
@@ -70,7 +70,7 @@ None
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]

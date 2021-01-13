@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Set and Enforce Quality Gates
 ms.assetid: bdc5666e-6cf0-45b2-a0a1-133c3f61e852
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,13 +12,13 @@ monikerRange: '>= tfs-2015'
 
 # Set and Enforce Quality Gates
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Check-in policies are a mechanism for enforcing development practices across your development team. Check-in notes are a communication mechanism for collecting data from team members during the check-in process. Both of these are customizable to meet the needs of a team. This section explains the purpose of these items and also describes how to configure them.
 
 ## Check-in Policies
 
-Check-in policies are used to enforce mandatory software development practices. Policy is enforced during the check-in process in the Check In and Pending Changes windows. If a user attempts to perform a check-in, in violation of a policy, their check-in is blocked. If necessary, these policies may be overridden. For more information, see [Override a Check-In Policy](https://msdn.microsoft.com/library/ms245460).
+Check-in policies are used to enforce mandatory software development practices. Policy is enforced during the check-in process in the Check In and Pending Changes windows. If a user attempts to perform a check-in, in violation of a policy, their check-in is blocked. If necessary, these policies may be overridden. For more information, see [Override a Check-In Policy](/previous-versions/visualstudio/visual-studio-2010/ms245460(v=vs.100)).
 
 Policies are configured and established in the Source Control Settings window. A sample policy constraint is "You must associate your changes with one or more work items." This policy prevents users from submitting changes without having a specific bug or feature they are working on.
 
@@ -53,7 +51,7 @@ Describes the steps used to configure custom check-in notes associated with Team
 
 #### Tasks
 
-[Check In Pending Changes](https://msdn.microsoft.com/library/ms181411)
+[Check In Pending Changes](/previous-versions/visualstudio/visual-studio-2010/ms181411(v=vs.100))
 
 #### Other Resources
 

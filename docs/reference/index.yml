@@ -1,0 +1,116 @@
+### YamlMime:Landing
+
+title: Azure Boards settings documentation
+summary: Configure and customize Azure Boards including area paths, iteration paths, projects, and processes. 
+
+metadata:
+  title: Azure Boards Settings & process documentation
+  description: Configure and customize Azure Boards including area paths, iteration paths, projects, and processes.
+  ms.prod: devops 
+  ms.technology: devops-agile
+  ms.topic: landing-page 
+  author: KathrynEE 
+  ms.author: kaelli 
+  ms.date: 07/08/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+ 
+  - title: Configure teams
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: About teams & Agile tools
+            url: ../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+      - linkListType: quickstart
+        links:
+          - text: Configure team tools
+            url: ../organizations/settings/manage-teams.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+          - text: Set team area paths
+            url: ../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+          - text: Set team iterations
+            url: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - title: Configure projects
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Configure & customize Boards 
+            url: ../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+          - text: About projects & scaling up
+            url: ../organizations/projects/about-projects.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+      - linkListType: quickstart
+        links:
+          - text: Define area paths
+            url: ../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+          - text: Define iteration paths (sprints)
+            url: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - title: Customize an Inheritance process  
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Inheritance process model
+            url: ../organizations/settings/work/inheritance-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+      - linkListType: quickstart
+        links:
+          - text: Add a custom field
+            url: ../organizations/settings/work/add-custom-field.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+          - text: Add a custom work item type
+            url: ../organizations/settings/work/add-custom-wit.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+      - linkListType: tutorial
+        links:
+          - text: Customize a workflow
+            url: ../organizations/settings/work/customize-process-workflow.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+          - text: Apply rules to workflow
+            url: ../organizations/settings/work/apply-rules-to-workflow-states.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+          - text: Customize a project
+            url: ../organizations/settings/work/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+          - text: Create & manage a process
+            url: ../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - title: Customize an On-premises XML process  
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: On-premises XML process model
+            url: on-premises-xml-process-model.md 
+      - linkListType: how-to-guide
+        links:
+          - text: Add or modify a field
+            url: add-modify-field.md 
+          - text: Add or modify a work item type
+            url: add-modify-wit.md 
+      - linkListType: reference
+        links:
+          - text: XML element reference
+            url: xml/xml-element-reference.md 
+  - title: Customize a process template (on-premises)  
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About processes & process templates
+            url: ../boards/work-items/guidance/choose-process.md 
+          - text: Process template files
+            url: process-templates/overview-process-template-files.md 
+      - linkListType: how-to-guide
+        links:
+          - text: Customize a process template
+            url: process-templates/customize-process.md 
+          - text: Upload/download process templates
+            url: ../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+      - linkListType: reference
+        links:
+          - text: XML element reference
+            url: process-templates/process-template-plug-ins-xml-elements-index.md 
+  - title: Reference  
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Naming restrictions
+            url: ../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
+          - text: Workflow states & categories
+            url: ../boards/work-items/workflow-and-state-categories.md?bc=%252fazure%252fdevops%252freference%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252freference%252ftoc.json
+          - text: Work tracking object limits
+            url: ../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json

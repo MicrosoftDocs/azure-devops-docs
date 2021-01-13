@@ -71,7 +71,7 @@ is the name of the Docker registry service connection for the container registry
 |`azureContainerRegistry` <br/>(Azure Container Registry)|(Required) Name of the Azure Container Registry.|
 |`dockerComposeFile` <br/>(Docker Compose File)|(Required) Path to the primary Docker Compose file to use. <br/>Default value: **/docker-compose.yml|
 |`additionalDockerComposeFiles` <br/>(Additional Docker Compose Files)|(Optional) Additional Docker Compose files to be combined with the primary Docker Compose file. Relative paths are resolved relative to the directory containing the primary Docker Compose file. If a specified file is not found, it is ignored. Specify each file path on a new line.|
-|`dockerComposeFileArgs` <br/>(Environment Variables) | (Optional) Environment variables to be set up during the command. Specify each name = value pair on a new line. You need to use the \| operator in YAML to indicate that newlines should be preserved. <br/>Example:  dockerComposeFileArgs: |
+|`dockerComposeFileArgs` <br/>(Environment Variables) | (Optional) Environment variables to be set up during the command. Specify each name = value pair on a new line. You need to use the \| operator in YAML to indicate that newlines should be preserved. <br/>Example:  dockerComposeFileArgs: dockerComposeFileArgs: -f <path-to-file> --verbose |
 | `projectName` <br/>(Project Name) |(Optional) Project name used for default naming of images and containers. <br/>Default value: $(Build.Repository.Name)|
 |`qualifyImageNames` <br/>(Qualify Image Names) | (Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified. <br/>Default value: true|
 |`action` <br/>(Action)|(Required) Select a Docker Compose action. <br/>Default value: Run a Docker Compose command|
@@ -309,7 +309,7 @@ This YAML example runs a docker Compose command:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

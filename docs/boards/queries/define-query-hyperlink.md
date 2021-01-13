@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Define a query as a hyperlink  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 <a id="define-query-hyperlink" />  
 
@@ -57,7 +57,7 @@ SELECT [System.ID], [System.Title]
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 ```  
 https://{ServerName}/{CollectionName}/{ProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage}

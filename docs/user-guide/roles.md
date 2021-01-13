@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 02/24/2020
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Software development roles supported by Azure DevOps
@@ -35,13 +35,13 @@ If you need to lock down specific areas to a select set of contributors, see [pe
 
 ### Software developers
 
-Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or Team Foundation Version Control (TFVC) repository hosted in Azure DevOps Services or Team Foundation Server (TFS). From the web portal or a supported IDE, they can view repositories, check history, and more. 
+Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or Team Foundation Version Control (TFVC) repository hosted in Azure DevOps. From the web portal or a supported IDE, they can view repositories, check history, and more. 
 
 - To get started with using Git, see one of the following resources: 
 	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md)
 	- [Share your code in Git by using Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
 	- [Share your code in Git by using Xcode](../repos/git/share-your-code-in-git-xcode.md)
-	- [Share your code in Git by using IntelliJ](../java/download-intellij-plug-in.md)
+	- [Share your code in Git by using IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
 	- [Get started with using Git and Azure DevOps Services](../repos/git/gitquickstart.md)
 - To get started with using TFVC, see one of the following resources: 
 	- [Develop and share your code in TFVC by using Visual Studio](../repos/tfvc/share-your-code-in-tfvc-vs.md)
@@ -60,12 +60,12 @@ Project managers (PMs) typically plan the feature set to deliver, set priorities
   
 For more information about getting started, see [About Azure Boards and Agile tools](../boards/get-started/what-is-azure-boards.md).  
 
-If you use Excel or Project to plan and track your work, you can integrate these tools with Azure DevOps. For more information, see [Bulk modify by using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks by using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
+You can integrate Microsoft Excel and Microsoft Project with Azure DevOps to plan and track your work. For more information, see [Bulk modify by using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks by using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
 
 
 ### DevOps: builders, testers, and release managers
 
-An advantage of working with Azure DevOps is the suite of tools and integrated functionality that support build, testing, and deploying software applications. See the following general DevOps-associated tasks that Azure DevOps supports:
+An advantage of working with Azure DevOps is the suite of tools and integrated functionality that support build, testing, and deploying software applications. See the following general DevOps-associated tasks that Azure DevOps supports.
 
 - Define builds
 - Unit test your code 
@@ -74,7 +74,7 @@ An advantage of working with Azure DevOps is the suite of tools and integrated f
 - Define, manage, track, and approve releases 
 - Deploy applications to Azure, a virtual machine, Docker containers, and more  
 
-To get started, see the overviews in [Azure Pipelines](../pipelines/overview.md) and [Azure Test Plans](../test/overview.md).
+To get started, see the overviews in [Azure Pipelines](../pipelines/get-started/what-is-azure-pipelines.md) and [Azure Test Plans](../test/overview.md).
 
 ### Stakeholders
 
@@ -110,7 +110,7 @@ Responsible for configuring project-level resources, including:
 ::: moniker range="azure-devops" 
 - [Area paths](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
 - [Project permissions and repository security](../organizations/security/permissions.md)  
-- [Build agents, pools, and service connections](../pipelines/overview.md)  
+- [Build agents, pools, and service connections](../pipelines/get-started/what-is-azure-pipelines.md)  
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies  
 ::: moniker-end  
 
@@ -119,7 +119,7 @@ Responsible for configuring project-level resources, including:
 - [Area paths](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
 - [Project permissions and repository security](../organizations/security/permissions.md)  
 - [Customizing work tracking objects](../reference/customize-work.md)  
-- [Build agents, pools, and service connections](../pipelines/overview.md)  
+- [Build agents, pools, and service connections](../pipelines/get-started/what-is-azure-pipelines.md)  
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
 ::: moniker-end  
 
@@ -135,7 +135,7 @@ Responsible for configuring organization-level resources, including the followin
 - Customize work tracking processes  
 - Install and manage extensions
 
-To get started, see [Manage organizations](../organizations/accounts/organization-management.md) and [Settings](../organizations/settings/index.md).
+To get started, see [Manage organizations](../organizations/accounts/organization-management.md) and [Settings](../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -147,20 +147,20 @@ Responsible for configuring collection-level resources. These tasks include:
 - Manage collection-level permissions 
 - Install and manage extensions
 
-To get started, see [Settings](../organizations/settings/index.md).
+To get started, see [Settings](../organizations/settings/about-settings.md#project-administrator-role-and-managing-projects).
 
-### TFS administrators
+### Azure DevOps Server administrators
 
-Responsible for installing, upgrading, and maintaining an on-premises TFS deployment, including the:
+Responsible for installing, upgrading, and maintaining an on-premises Azure DevOps Server deployment, including the:
 
-- Install TFS 
-- Update servers running TFS 
+- Install Azure DevOps Server 
+- Update servers running Azure DevOps Server 
 - Manage database backups 
 - Manage server administrative settings and permissions 
 - Build retention policies
 - Add and manage project collections
   
-To get started, see [Server Administration (TFS)](/azure/devops/server/index). 
+To get started, see [Server Administration (Azure DevOps Server)](/azure/devops/server/index). 
 
 ::: moniker-end
 

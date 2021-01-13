@@ -1,7 +1,7 @@
 ---
 title: Universal Package, download and publish task
 ms.custom: seodec18
-description: Learn all about how you can make use of NuGet packages when you are building code in Azure Pipelines and Team Foundation Server (TFS)
+description: Learn all about how you can make use of Universal packages when you are building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 author: arob98
 manager: angrobe
