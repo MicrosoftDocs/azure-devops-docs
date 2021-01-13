@@ -154,13 +154,13 @@ Use this task to build using a Gradle wrapper script.
 
 ## Example
 
-[Build your Java app with Gradle](../../apps/java/build-gradle.md)
+[Build your Java app with Gradle](../../ecosystems/java.md)
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### How do I generate a wrapper from my Gradle project?

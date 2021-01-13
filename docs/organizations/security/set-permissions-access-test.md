@@ -7,13 +7,13 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 01/27/2020
 ---
 
 # Set permissions and access for testing
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 You grant or restrict access to various manual test features by granting users or groups specific permissions for an object or project.  
 
@@ -118,18 +118,18 @@ In this example, we grant members assigned to the Test Admin group permissions t
 #### [Preview page](#tab/preview-page) 
 
 > [!div class="mx-imgBorder"]  
-> ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-project-level-test-permissions-new-ui.png)  
-
+> ![Set project-level test permissions for a custom group, Team Admin preview page.](media/test-permissions/set-project-level-test-permissions-new-ui.png)  
 
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]  
-> ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-project-level-test-permissions-old-ui.png)  
+> ![Set project-level test permissions for a custom group, Team Admin current page.](media/test-permissions/set-project-level-test-permissions-old-ui.png)  
 
 ::: moniker-end    
 
+* * *
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 In this example, we grant members assigned to the Test Admin group permissions to delete test runs.   
 
@@ -137,6 +137,8 @@ In this example, we grant members assigned to the Test Admin group permissions t
 > ![Set project-level permissions for a custom group, Team Admin](media/set-permissions-project-level-dialog.png)  
 
 ::: moniker-end    
+
+<a id="test-controllers" /> 
 
 ## Set permissions to manage test controllers
 
@@ -163,10 +165,11 @@ In this example, we grant members assigned to the Team Collection Admin group pe
 > [!div class="mx-imgBorder"]  
 > ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-collection-level-test-permissions-old-ui.png)  
 
+* * *
 
 ::: moniker-end    
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-collection-level-test-permissions-old-ui.png)  

@@ -29,7 +29,7 @@ Learn about the key concepts and components that are used in Azure Pipelines. Un
 
 ## Agent
 
-When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one job at a time.
+When your build or deployment runs, the system begins one or more jobs. An agent is computing infrastructure with installed agent software that runs one job at a time.
 
 For more in-depth information about the different types of agents and how to use them, see [Build and release agents](../agents/agents.md).
 

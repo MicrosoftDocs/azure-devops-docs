@@ -11,9 +11,15 @@ Select **Enable continuous integration** on the **Triggers** tab to enable this 
 
 ### Batch changes
 
-Select this check box if you have many team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
+Select this check box if you have many team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the run is completed and then queues another run of all changes that have not yet been built.
 
 > You can batch changes and build them together.
+
+> [!NOTE]
+> If you use batching with a multi-stage YAML pipeline, then a run must reach a terminal state before the next one can start. This is often not desirable as a multi-stage pipeline may go through approvals and long-running deployment stages. In these cases, it is recommended that you follow one of these solutions:
+> * do not use batching
+> * split the pipeline into two separate pipelines - one for CI and one CD
+> * set appropriate conditions on stages to skip them and make a run terminate quickly
 
 ### Branch filters
 

@@ -4,7 +4,7 @@ description: Publish NuGet packages to Azure DevOps Services or Team Foundation 
 ms.assetid: C7D75946-1F00-4BD7-87C8-225BBAE9982B
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 03/20/2020
+ms.date: 06/22/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -15,5 +15,11 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [](../includes/nuget/publish.md)]
 
 ## Work with upstream sources
-To learn about how to set up your upstream sources, see [Configure upstream sources for Azure DevOps](../how-to/set-up-upstream-sources.md). For more information on how to use the available upstream sources, see the [Upstream sources](../concepts/upstream-sources.md) conceptual article.
+
+Upstream sources enable you to use a single feed to store and consume packages from both public (NuGet.org, npmjs.com, Maven Central, and PyPI) and authenticated feeds (Azure Artifacts feeds).
+
+See [Understanding upstream sources](../concepts/upstream-sources.md) to get familiar with the concepts. You can also check out the following articles to learn how to:
+
+- [Set up upstream sources for Azure DevOps](../how-to/set-up-upstream-sources.md). 
+- [Protect your open-source software packages with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md).
 

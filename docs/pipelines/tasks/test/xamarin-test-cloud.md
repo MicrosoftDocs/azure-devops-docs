@@ -4,8 +4,8 @@ description: This task is deprecated. Use the App Center Test task instead.
 ms.topic: reference
 ms.assetid: 8e5b1533-631e-4095-9c58-9f62411b6e64
 ms.custom: seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -53,13 +53,13 @@ None
 
 ## Example
 
-[Build your Xamarin app](../../apps/mobile/xamarin.md)
+[Build your Xamarin app](../../ecosystems/xamarin.md)
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

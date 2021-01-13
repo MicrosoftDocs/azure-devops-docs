@@ -22,13 +22,13 @@ Azure DevOps data is available in the following eight geographies across the wor
 - Australia
 - Brazil
 - Canada
-- East Asia
+- Asia Pacific
 - Europe
 - India
 - United Kingdom
 - United States
 
-We default your organization to your closest geography. However, you can choose a different geography. Later on, if you change your mind, our CSS team can help you migrate your organization to a different geography. 
+We default your organization to your closest geography. However, you can choose a different geography. Later on, if you change your mind, you can [migrate your organization to a different geography](../accounts/change-organization-location.md). 
 
 ## Customer data
 
@@ -44,7 +44,7 @@ Azure DevOps works with and uses many Microsoft Azure services. For details on c
 Azure DevOps stores information that's global in nature, such as user identities and profile information as follows: 
 - EU-based users: profile data is in EU data center  
 - US-based users: profile data is in US data center 
-- Users from all other countries: profile data is in US data center 
+- Users from all other countries/regions: profile data is in US data center 
 
 ## Transferring your data
 
@@ -67,7 +67,7 @@ Microsoft will transfer your data if it needs to do any of the following actions
 > [!NOTE]
 > For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to third party data centers as follows:
 >- US-based users: your data is transferred to a third party US data center
->- Users from all other countries: your data is transferred to either a third party US data center or European data center
+>- Users from all other countries/regions: your data is transferred to either a third party US data center or European data center
 
 These two data center locations are owned and managed by a third party with information security certification assurances, such as ISO 27001 and SOC 2 Type II report.
 
@@ -75,4 +75,3 @@ These two data center locations are owned and managed by a third party with info
 
 - [Get started with Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137)
 - [Data protection overview](data-protection.md)
-

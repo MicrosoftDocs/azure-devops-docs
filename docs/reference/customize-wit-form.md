@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customize the layout of the work item web form
 titleSuffix: Azure DevOps & TFS
 description: Customize the web version of the work item form in Azure DevOps Services & Team Foundation Server    
@@ -7,7 +7,7 @@ ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '< azure-devops' 
 ms.date: 12/15/2017  
 ---
 
@@ -72,7 +72,7 @@ See the following topics to make the indicated customizations:
 
 1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).  
   
-1. Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work#run-witadmin-tool). 
+1. Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](./witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md#run-witadmin-tool). 
 
    For example:
   
@@ -159,5 +159,4 @@ If you're new to WIT customization, see [Add and modify a WIT](add-modify-wit.md
 
 You'll receive a warning when you import a modified WIT definition if you add a **Control** element for a required field in only the **WebLayout** or **Layout** node, but not the other. 
 
-You'll receive an error if you enable the new form, and then modify a WIT definition in which you delete the **WebLayout** node.  
-
+You'll receive an error if you enable the new form, and then modify a WIT definition in which you delete the **WebLayout** node.

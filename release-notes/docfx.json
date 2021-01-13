@@ -41,7 +41,7 @@
       "ms.technology": "devops-release-notes",
       "author": "gloridelmorales",
       "ms.author": "glmorale",
-      "ms.manager": "jillfra",
+      "ms.manager": "mijacobs",
       "ms.prod": "devops",
       "ms.version": "ALM",
       "MSHAttr.msprod": "ms.prod:devops",
@@ -54,7 +54,14 @@
         }
       }
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.author": {
+        "docswhatsnew/**": "sdanie"
+      },
+      "author": {
+        "docswhatsnew/**": "steved0x"
+      }
+    },
     "template": [],
     "dest": "release-notes"
   }

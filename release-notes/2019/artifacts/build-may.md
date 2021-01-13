@@ -5,7 +5,6 @@ author: gloridelmorales
 ms.author: glmorale
 ms.technology: devops-release-notes
 ms.date: 05/10/2019
-description: The Microsoft Build conference was held on May 6 - 8 in Seattle.
 ---
 
 # Azure Artifacts - Microsoft Build Announcements
@@ -23,7 +22,7 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"]
 > [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

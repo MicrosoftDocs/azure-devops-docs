@@ -62,6 +62,10 @@ None
 <td>Select this check box to delete all existing files in the destination folder before beginning to extract archives.</td>
 </tr>
 <tr>
+<td>Overwrite files in the destination directory</td>
+<td>Select this option to overwrite files in the output directory if they already exist.</td>
+</tr>
+<tr>
 </tr>
 
 
@@ -71,11 +75,39 @@ None
 
 </table>
 
+## Examples
+
+### Extract all .zip files recursively
+
+This example will extract all .zip files recursively, including both root files and files from sub-folders
+
+```yaml
+steps:
+- task: ExtractFiles@1
+  inputs:
+    archiveFilePatterns: '**/*.zip'
+    cleanDestinationFolder: true
+    overwriteExistingFiles: false
+```
+
+### Extract all .zip files from subfolder
+
+This example will extract `test/one.zip`, `test/two.zip` but will leave `test/nested/three.zip`.
+
+```yaml
+steps:
+- task: ExtractFiles@1
+  inputs:
+    archiveFilePatterns: 'test/*.zip'
+    cleanDestinationFolder: true
+    overwriteExistingFiles: false
+```
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

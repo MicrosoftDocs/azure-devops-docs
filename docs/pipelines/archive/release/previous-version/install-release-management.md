@@ -74,7 +74,7 @@ ready to manage releases.
   or 
   [Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
   If you are an MSDN subscriber, you can download a non-trial version from the 
-  [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
+  [MSDN Subscriber website](/powerapps/developer/common-data-service/org-service/subscribe-sdk-assembly-updates-using-nuget)._ 
 
 * On computers that will make up the environments where you will deploy 
   your release, 

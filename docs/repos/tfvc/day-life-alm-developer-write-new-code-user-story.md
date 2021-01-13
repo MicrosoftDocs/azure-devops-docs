@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: A day in the life of an devops developer. Write new code for a user story.
 ms.assetid: 1407effb-0d9b-451b-97b0-b40e0c48594c
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -14,14 +12,14 @@ monikerRange: '>= tfs-2015'
 
 # Day in the life of a devops developer: write new code for a user story
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Are you a new user of Visual Studio and Team Foundation Server (TFS)? Are you wondering how you and your team can get maximum benefit from the most recent version of these tools to build your app?
 
 Then take a few minutes to walk step-by step through this two-chapter tutorial and follow a day in the lives of Peter and Julia, two developers at Fabrikam Fiber-a fictitious company that provides cable television and related services. You'll see examples of how you can use Visual Studio and TFS to check out and update code, suspend work when you're interrupted, request a code review, check in your changes, and perform other tasks.
 
 **The story so far**  
-The team recently began [adopting Visual Studio and Team Foundation Server for devops](https://msdn.microsoft.com/library/dd286491). They set up their server and client machines, created a backlog, planned an iteration, and completed other planning necessary to begin developing their app.
+The team recently began [adopting Visual Studio and Team Foundation Server for devops](/previous-versions/visualstudio/visual-studio-2013/hh561426(v=vs.120)). They set up their server and client machines, created a backlog, planned an iteration, and completed other planning necessary to begin developing their app.
 
 **Overview of this chapter**  
 Peter briefly reviews his backlog and selects the task he will work on today. He writes unit tests for the code he plans to develop. Typically, he runs the tests several times in an hour, gradually writing more detailed tests and then writing the code that makes them pass. He often discusses the interface of his code with colleagues who will use the method he is writing.
@@ -153,7 +151,7 @@ This procedure uses the Visual Studio Unit Test Framework, but you can also use 
     End Class
     ```
 
-For more information about how to write unit tests in C++, see [Writing Unit tests for C/C++ with the Microsoft Unit Testing Framework for C++](https://msdn.microsoft.com/library/hh598953).
+For more information about how to write unit tests in C++, see [Writing Unit tests for C/C++ with the Microsoft Unit Testing Framework for C++](/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp).
 
 ## Create a stub for the new code
 
@@ -467,7 +465,7 @@ To verify that a specific test reaches into specific branches of the code, you c
 Peter continues to update the code in small steps until he is satisfied that:  
 -   All the available unit tests pass.
 
-    In a project with a very large set of unit tests, it can be impractical for a developer to wait for them all to run. Instead, the project operates a gated check-in service, in which all the automated tests are run for each checked-in shelveset before it is merged into the source tree. The check-in is rejected if the run fails. This allows the developer to run a minimal set of unit tests on his own machine, and then proceed with other work, without running the risk of breaking the build. For more information, see [Use a gated check-in build process to validate changes](../../pipelines/build/repository.md).  
+    In a project with a very large set of unit tests, it can be impractical for a developer to wait for them all to run. Instead, the project operates a gated check-in service, in which all the automated tests are run for each checked-in shelveset before it is merged into the source tree. The check-in is rejected if the run fails. This allows the developer to run a minimal set of unit tests on his own machine, and then proceed with other work, without running the risk of breaking the build. For more information, see [Use a gated check-in build process to validate changes](../../pipelines/repos/index.md).  
 -   Code coverage meets the team's standard. 75% is a typical project requirement.  
 -   His unit tests simulate every aspect of the behavior that is required, including both typical and exceptional inputs.  
 -   His code is easy to understand and extend.
@@ -519,6 +517,6 @@ For more information about how to define a continuous integration build process,
 
 ![CI Build results](media/day-life-alm-developer-write-new-code-user-story/IC591277.png)  
 
-For more information, see [Run, monitor, and manage builds](../../pipelines/overview.md).
+For more information, see [Run, monitor, and manage builds](../../pipelines/get-started/what-is-azure-pipelines.md).
  
 [Next (Suspend work, fix a bug, and conduct a code review)](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)

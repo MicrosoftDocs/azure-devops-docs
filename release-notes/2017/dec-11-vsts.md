@@ -71,7 +71,7 @@ A few weeks ago, we added phases to build definitions. You’ve been able to use
 
 * Permit or deny scripts to access the OAuth token each phase. This means, for example, you can now allow scripts running in your build phase to communicate with VSTS over REST APIs, and in the same build definition block the scripts running in your test phase.
 
-* Run a phase only under specific conditions. For example, you can configure a phase to run only when previous phases succeed, or only when you are building code in the master branch.
+* Run a phase only under specific conditions. For example, you can configure a phase to run only when previous phases succeed, or only when you are building code in the main branch.
 
 To learn more, see [Phases in Build and Release Management](/azure/devops/pipelines/process/phases).
 

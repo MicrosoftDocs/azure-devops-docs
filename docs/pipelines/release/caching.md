@@ -31,7 +31,7 @@ Caching is added to a pipeline using the `Cache` pipeline task. This task works 
 When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.
 
 > [!NOTE]
-> Caches are immutable, meaning that once a cache is created, its contents cannot be changed. See [Can I clear a cache?](#can-i-clear-a-cache) in the Q & A section for additional details.
+> Caches are immutable, meaning that once a cache is created, its contents cannot be changed. See [Can I clear a cache?](#can-i-clear-a-cache) in the FAQ section for additional details.
 
 ### Configuring the task
 
@@ -93,7 +93,7 @@ On the first run after the task is added, the cache step will report a "cache mi
 
 #### Required software on self-hosted agent
 
-|        | Windows | Linux | Mac |
+| Archive software / Platform | Windows | Linux | Mac |
 |--------|-------- |------ |-------|
 |GNU Tar | Required| Required | No |
 |BSD Tar | No | No | Required |
@@ -142,7 +142,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 | Scope | Read | Write |
 |--------|------|-------|
 | Source branch | Yes | Yes |
-| Master branch | Yes | No |
+| main branch | Yes | No |
 
 ### Pull request runs
 
@@ -151,7 +151,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 | Source branch | Yes | No |
 | Target branch | Yes | No |
 | Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
-| Master branch | Yes | No |
+| main branch | Yes | No |
 
 ### Pull request fork runs
 
@@ -159,7 +159,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 |--------|------|-------|
 | Target branch | Yes | No |
 | Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
-| Master branch | Yes | No |
+| main branch | Yes | No |
 
 > [!TIP]
 > Because caches are already scoped to a project, pipeline, and branch, there is no need to include any project, pipeline, or branch identifiers in the cache key.
@@ -318,7 +318,10 @@ steps:
   displayName: Cache NuGet packages
 ```
 
-See [Package reference in project files](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) for more details on how to enable lock file creation.
+> [!TIP]
+> Environment variables always override any settings in the NuGet.Config file. If your pipeline failed with the error: `Information, There is a cache miss.`, you must create a pipeline variable for `NUGET_PACKAGES` to point to the new local path on the agent (exp d:\a\1\). Your pipeline should pick up the changes then and continue the task successfully.
+
+See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to enable lock file creation.
 
 ## Node.js/npm
 
@@ -371,6 +374,52 @@ steps:
 - script: yarn --frozen-lockfile
 ```
 
+## Python/pip
+
+For Python projects that use pip or Poetry, override the `PIP_CACHE_DIR` environment variable. If you use Poetry, in the `key` field, replace `requirements.txt` with `poetry.lock`.
+
+### Example
+
+```yaml
+variables:
+  PIP_CACHE_DIR: $(Pipeline.Workspace)/.pip
+
+steps:
+- task: Cache@2
+  inputs:
+    key: 'python | "$(Agent.OS)" | requirements.txt'
+    restoreKeys: | 
+      python | "$(Agent.OS)"
+      python
+    path: $(PIP_CACHE_DIR)
+  displayName: Cache pip packages
+
+- script: pip install -r requirements.txt
+```
+
+## Python/Pipenv
+
+For Python projects that use Pipenv, override the `PIPENV_CACHE_DIR` environment variable.
+
+### Example
+
+```yaml
+variables:
+  PIPENV_CACHE_DIR: $(Pipeline.Workspace)/.pipenv
+
+steps:
+- task: Cache@2
+  inputs:
+    key: 'python | "$(Agent.OS)" | Pipfile.lock'
+    restoreKeys: | 
+      python | "$(Agent.OS)"
+      python
+    path: $(PIPENV_CACHE_DIR)
+  displayName: Cache pipenv packages
+
+- script: pipenv install
+```
+
 ## PHP/Composer
 
 For PHP projects using Composer, override the `COMPOSER_CACHE_DIR` [environment variable](https://getcomposer.org/doc/06-config.md#cache-dir) used by Composer.
@@ -394,11 +443,38 @@ steps:
 - script: composer install
 ```
 
+## Docker images
+
+Caching docker images will dramatically reduce the time it takes to run your pipeline.
+
+```YAML
+pool:
+  vmImage: ubuntu-16.04
+
+steps:
+  - task: Cache@2
+    inputs:
+      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
+      path: $(Pipeline.Workspace)/docker
+      cacheHitVar: DOCKER_CACHE_RESTORED
+    displayName: Caching Docker image
+
+  - script: |
+      docker load < $(Pipeline.Workspace)/docker/cache.tar
+    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
+
+  - script: |
+      mkdir -p $(Pipeline.Workspace)/docker
+      docker pull ubuntu
+      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
+    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
+```
+
 ## Known issues and feedback
 
 If you experience problems enabling caching for your project, first check the list of [pipeline caching issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the microsoft/azure-pipelines-tasks repo. If you don't see your issue listed, [create a new issue](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching).
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

@@ -81,8 +81,8 @@ steps:
 ## Consider Bash or pwsh
 
 If you have more complex scripting needs than the examples shown above, then consider writing them in Bash.
-Most macOS and Linux agents have Bash as an available shell, and Windows agents include Git Bash or [Windows Subsystem for Linux](https://docs.microsoft.com/windows/wsl/about) Bash.
-::: moniker range="azure-devops"
+Most macOS and Linux agents have Bash as an available shell, and Windows agents include Git Bash or [Windows Subsystem for Linux](/windows/wsl/about) Bash.
+::: moniker range=">=azure-devops-2020"
 For Azure Pipelines, the Microsoft-hosted agents always have Bash available.
 ::: moniker-end
 
@@ -150,7 +150,7 @@ steps:
   displayName: Get IP on Linux
 # macOS
 - bash: |
-    export IPADDR=$(ifconfig | grep 'en0' -A3 | tail -n1 | awk '{print $2}')
+    export IPADDR=$(ifconfig | grep 'en0' -A3 | grep inet | tail -n1 | awk '{print $2}')
     echo "##vso[task.setvariable variable=IP_ADDR]$IPADDR"
   condition: eq( variables['Agent.OS'], 'Darwin' )
   displayName: Get IP on macOS

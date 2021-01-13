@@ -3,10 +3,11 @@ title: ProcessConfiguration syntax
 titleSuffix: Azure DevOps & TFS  
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '< azure-devops'
 ms.date: 12/15/2017  
 ---
 
@@ -153,17 +154,11 @@ singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
 </table>
 
 #### Implementation notes
-
-::: moniker range="azure-devops"
-- Each backlog is restricted to a total of 1000 work items. You can't modify this limit for Azure DevOps Services.  
-  ::: moniker-end
-  ::: moniker range=">= tfs-2013 <= azure-devops-2019"
-- By default, each backlog is restricted to a total of 1000 work items. For TFS you can change this limit by specifying a value for the `workItemCountLimit` attribute.  
-  ::: moniker-end
+- By default, each backlog is restricted to a total of 1000 work items. You can change this limit by specifying a value for the `workItemCountLimit` attribute.  
 - The values assigned to *CategoryName* must correspond to a category group defined for the project. You [specify category groups in the definition file for Categories](categories-xml-element-reference.md).  
 - You use [portfolio backlogs](../../boards/backlogs/organize-backlog.md) to organize your backlog, view the rollup of backlog items at lower levels, and to view progress across several teams. New and upgraded projects contain two portfolio backlog levels: Features and Epics. You can add up to three additional levels. Only the top level portfolio backlog doesn't specify a parent category.  
 - Your [product backlog](../../boards/backlogs/create-your-backlog.md) corresponds to your project plan, the roadmap for what your team plans to deliver. It lists work items whose WITs belong to the Requirements Category. In order to manage different WITs than those provided by your default project, you can add WITs to the Requirements Category and map the workflow states to state categories.  
-- Your [sprint or iteration backlogs](https://msdn.microsoft.com/library/ee191595) display both the set of requirements that you and your team have committed to in a specific sprint cycle and the tasks that you have linked to those requirements. You link tasks to requirements using the parent-child link type. Because the WITs that appear on these backlogs correspond to the same types that appear on the product backlog, much of the customization work that you do for the product backlog will define the functionality of the sprint backlog.  
+- Your [sprint or iteration backlogs](../../boards/sprints/assign-work-sprint.md) display both the set of requirements that you and your team have committed to in a specific sprint cycle and the tasks that you have linked to those requirements. You link tasks to requirements using the parent-child link type. Because the WITs that appear on these backlogs correspond to the same types that appear on the product backlog, much of the customization work that you do for the product backlog will define the functionality of the sprint backlog.  
 
 <a id="map">  </a>
 
@@ -459,7 +454,7 @@ The following table describes the additional elements used to define the state c
 </table>
 
 > [!NOTE]    
-><b>Feature availability: </b>To map state categories for `TestPlanWorkItems` or `TestSuiteWorkItems`, you must upgrade your application-tier server to TFS 2013.3 or later version. Afterwards, you can customize the workflow state of test plans and test suites. To learn more, see [Test Plan and Test Suite features](../new-features-added.md#test-management).  
+><b>Feature availability: </b>To map state categories for `TestPlanWorkItems` or `TestSuiteWorkItems`, you must upgrade your application-tier server to TFS 2013.3 or later version. Afterwards, you can customize the workflow state of test plans and test suites. To learn more, see [Test Plan and Test Suite features](/previous-versions/azure/devops/reference/upgrade/new-features-added#test-management).  
 
 
 <a id="fields">  </a>
@@ -527,7 +522,7 @@ You can move items by dragging them up or down the list on a backlog or board. A
 <p><code>format=&quot;{0} hours&quot;</code></p>
 <p><code>format=&quot;hours {0}&quot;</code></p>
 <p><code>format=&quot;time {0}&quot;</code></p></li>
-<li><p><strong>Team</strong>: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in <a href="../use-team-fields-instead-area-paths.md" data-raw-source="[Use team fields instead of area paths to support teams](../use-team-fields-instead-area-paths.md)">Use team fields instead of area paths to support teams</a>.</p></li>
+<li><p><strong>Team</strong>: Used to associate the backlogs with a team. The default value is System.AreaPath. To decouple teams from area paths, you can specify a different field, as described in <a href="/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths" data-raw-source="[Use team fields instead of area paths to support teams](/previous-versions/azure/devops/reference/upgrade/use-team-fields-instead-area-paths)">Use team fields instead of area paths to support teams</a>.</p></li>
 </ul>
 <p><strong>For the feedback request form:</strong></p>
 <blockquote><strong>NOTE:</strong><br/>
@@ -569,7 +564,7 @@ You should not have to change the default assignments made for the following <st
 
 ## Set non-working days 
 
-Non-working days are removed from calculations made by the [capacity planning tool](../../boards/sprints//set-capacity.md) and [burndown charts](../../boards/sprints//sprint-burndown.md). Default processes&mdash;[Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a project, [each team can set their specific non-working days](../../organizations/settings/set-working-days.md).
+Non-working days are removed from calculations made by the [capacity planning tool](../../boards/sprints//set-capacity.md) and [burndown charts](../../report/dashboards/configure-sprint-burndown.md). Default processes&mdash;[Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a project, [each team can set their specific non-working days](../../organizations/settings/set-working-days.md).
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
@@ -788,7 +783,7 @@ Here we show how it appears in the work item form:
 
 The supported set of icons you can specify for a work item type are shown below. 
 
-![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](media/processconfig-wit-icons-one.png) ![icon_color_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](media/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](media/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](media/processconfig-wit-icons-four.png)
+![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](media/processconfig-wit-icons-one.png) ![icon_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](media/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](media/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](media/processconfig-wit-icons-four.png)
 
 > [!NOTE]    
 > Icons noted with an asterisk are supported on Azure DevOps Services and TFS 2017.3 and later versions.
