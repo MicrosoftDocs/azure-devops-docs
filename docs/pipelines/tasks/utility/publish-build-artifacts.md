@@ -41,7 +41,7 @@ None
 | `TargetPath`<br/>File share path | Specify the path to the file share where you want to copy the files. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. Publishing artifacts from a Linux or macOS agent to a file share is not supported. |
 | `Parallel`<br/>Parallel copy (**Azure Pipelines**, **TFS 2018**, or newer) | Select whether to copy files in parallel using multiple threads for greater potential throughput. If this setting is not enabled, a single thread will be used. |
 | `ParallelCount`<br/>Parallel count (**Azure Pipelines**, **TFS 2018**, or newer) | Enter the degree of parallelism (the number of threads) used to perform the copy. The value must be at least 1 and not greater than 128. Choose a value based on CPU capabilities of the build agent. Typically, 8 is a good starting value. |
-| `FileCopyOptions`<br/>File copy options | Pass additional options to the Robocopy command, for example the recursive minimatch pattern `**/*` |
+| `FileCopyOptions`<br/>File copy options | Pass additional options to the Robocopy command. For example, the recursive minimatch pattern `**/*`. |
 | [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
 
 [!INCLUDE [example](../includes/copyfiles-publishbuildartifacts-usage.md)]
