@@ -41,7 +41,7 @@ Map the workspace and get your code.
 
 ## Work in a "Main" parent folder
 
-Do you want to prepare for when your team grows large enough to need [branches](use-branches-isolate-risk-team-foundation-version-control.md) to manage your work? Put all your code in a parent called Main (for example: `$/MyTeamProject/Main/`).
+Do you want to prepare for when your team grows large enough to need [branches](./branching-strategies-with-tfvc.md) to manage your work? Put all your code in a parent called Main (for example: `$/MyTeamProject/Main/`).
 
 1.  Go to the Team Explorer Home page (Keyboard: Ctrl + 0, H), and then open **Source Control Explorer**.
 
@@ -111,4 +111,4 @@ You've already got an app in progress and you want to begin working on it under 
 
 ## Dig deeper
 
- [Develop your app in Team Foundation version control](develop-your-app-team-foundation-version-control.md) 
+ [Develop your app in Team Foundation version control](develop-your-app-team-foundation-version-control.md)
