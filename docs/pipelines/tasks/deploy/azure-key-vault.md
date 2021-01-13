@@ -133,9 +133,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-### I'm getting a forbidden error on pipelines, at the point while getting credentials from Azure keyvault.
+### I get a `forbidden` error on pipelines at the point of getting credentials from Azure Key Vault
 
-This occurs if the required permissions are missing in the Azure Key Vault. In such cases, [Add an access policy with the right permissions](/azure/key-vault/general/assign-access-policy-portal)
+This occurs if the required permissions are missing in the Azure key vault. To resolve the issue, [add an access policy with the correct permissions](/azure/key-vault/general/assign-access-policy-portal).
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
