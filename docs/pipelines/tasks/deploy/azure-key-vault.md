@@ -133,6 +133,10 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
+### I get a `forbidden` error on pipelines at the point of getting credentials from Azure Key Vault
+
+This occurs if the required permissions are missing in the Azure key vault. To resolve the issue, [add an access policy with the correct permissions](/azure/key-vault/general/assign-access-policy-portal).
+
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ### I can't connect with Key Vault from Azure DevOps.
