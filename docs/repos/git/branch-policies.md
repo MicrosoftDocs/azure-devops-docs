@@ -5,7 +5,7 @@ description: Branch policies provide teams with the means to protect their impor
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 08/11/2020
+ms.date: 01/04/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -179,7 +179,7 @@ Build policies reduce breaks and keep your test results passing. Build policies 
 If a build validation policy is enabled, a new build is queued when either a new pull request is created, or if changes are pushed to an existing pull request targeting the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
 
 >[!IMPORTANT]
->Before specifying a build validation policy, you must have a build pipeline. If you don't have one, see [Create a build pipeline](/previous-versions/azure/devops/pipelines/apps/) and choose the type of build that matches your project type.
+>Before specifying a build validation policy, you must have a build pipeline. If you don't have one, see [Create a build pipeline](../../pipelines/create-first-pipeline.md) and choose the type of build that matches your project type.
 
 ![Add build policy](media/branch-policies/add-build-policy.png)
 

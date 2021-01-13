@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2020'     
-ms.date: 01/30/2020
+ms.date: 12/18/2020
 ---
 
 # Pipeline outcome summary for all pipelines sample report 
@@ -32,6 +32,7 @@ As shown in the above image, you can select any pipeline from the "Pipeline Name
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi-2020.md)]
 
 ## Sample queries
 

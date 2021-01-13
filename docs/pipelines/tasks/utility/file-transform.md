@@ -15,6 +15,9 @@ monikerRange: '> tfs-2018'
 Use this task to apply file transformations and variable substitutions on configuration and parameters files. 
 For details of how translations are processed, see [File transforms and variable substitution reference](../transforms-variable-substitution.md).
 
+> [!IMPORTANT]
+> This task is intended for web packages and requires a web package file, and does not work on standalone json files.
+
 **File transformations**
 
 * At present file transformations are supported for only XML files.

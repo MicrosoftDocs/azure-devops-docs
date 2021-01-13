@@ -51,23 +51,23 @@ Configuring integration between Azure DevOps Server and Teams is a two-step proc
 
 ### From Teams 
 
-1. To bring events from Azure DevOps into Microsoft Teams, click the ellipsis or '...' at the top nav of your team channel, and select **Connectors**. 
+1. To bring events from Azure DevOps into Microsoft Teams, select '...', the ellipsis, or at the upper navigation of your team channel, select **Connectors**. 
 
    ![Open the Teams actions menu](./media/teams/open-teams-menu-s172.png) 
 
-1. Select **Azure DevOps** from the list.
+2. Select **Azure DevOps** from the list.
 
 	:::image type="content" source="./media/teams/connectors-list-s172.png" alt-text="Connectors list":::
 
-1. Choose the **Add** button.
+3. Choose **Add**.
 
-2. Configure the connector. 
+4. Configure the connector. 
 
-1. Copy the generated webhook URL. Provide this URL when you're setting up service hook subscriptions in your Azure DevOps project.
+5. Copy the generated webhook URL. Provide this URL when you're setting up service hook subscriptions in your Azure DevOps project.
 
 ### From Azure DevOps Server
 
-1. From your project page (`https://mycompany/tfs/[collection]/[project]`), navigate to **Service Hooks** in the settings:
+1. From your project page (`https://mycompany/tfs/[collection]/[project]`), go to **Service Hooks** in the settings:
 
    ![Azure DevOps Services, Service Hook Settings](media/slack/vsts-service-hooks.png)  
 
@@ -78,14 +78,14 @@ Configuring integration between Azure DevOps Server and Teams is a two-step proc
 	For example, the *pull request created* trigger can be filtered on the repository in which the pull request occurs, 
     the target branch it applies to, and the team members that are required or invited to review the request.
 
-1. Paste the webhook URL from the Teams connector configuration step and click Finish.
+1. Paste the webhook URL from the Teams connector configuration step and select **Finish**.
 
 Activity from your project begins appearing in your Teams channel.
 
 
 ## Configure Azure DevOps tabs in Microsoft Teams
 
-1. To bring your Kanban board or dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
+1. To bring your Kanban board or dashboard into Microsoft Teams, select **+ Add new tab** on the upper portion of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
 
    ![Add a new tab to Teams channel](./media/teams/teams-as-website.png)
 

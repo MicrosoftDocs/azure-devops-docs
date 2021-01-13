@@ -253,7 +253,7 @@ Sets a variable in the variable service of taskcontext. The first task can set a
 
 When `issecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables are not passed into tasks as environment variables and must instead be passed as inputs.
 
-See [set variables in scripts](https://docs.microsoft.com/azure/devops/pipelines/process/variables#set-variables-in-scripts) for more details.
+See [set variables in scripts](../process/variables.md#set-variables-in-scripts) for more details.
 
 #### Properties
 
@@ -460,8 +460,8 @@ Upload a local file into a file container folder, and optionally publish an arti
 
 #### Properties
 
-* `containerfolder` = folder that the file will upload to, folder will be created if needed. (Required)
-* `artifactname` = artifact name
+* `containerfolder` = folder that the file will upload to, folder will be created if needed.
+* `artifactname` = artifact name. (Required)
 
 #### Example
 

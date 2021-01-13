@@ -62,7 +62,7 @@ You can do the following tasks in **Dashboards**:
 
 - Add, configure, and manage dashboards
 - Configure widgets that you add to dashboards
-- Quickly navigate to different areas of your project
+- Quickly go to different areas of your project
 
 To learn more, see [Dashboards](../report/dashboards/dashboards.md).
 

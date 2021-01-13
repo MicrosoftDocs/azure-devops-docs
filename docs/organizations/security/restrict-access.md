@@ -3,13 +3,13 @@ title: Grant or restrict access to select features
 titleSuffix: Azure DevOps
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
-ms.topic: Conceptual
+ms.topic: conceptual
 ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 07/09/2020
----
+ms.date: 11/16/2020
+--- 
 
 # Grant or restrict access
 
@@ -127,6 +127,18 @@ For an account or collection, Edit instance-level (or collection-level) informat
 </tr>
 </table>
 
+::: moniker range="azure-devops"
+
+<a id="restrict-access-project-scoped-user-group" /> 
+
+## Restrict access to projects and Organization information
+
+By default, users added to an organization can view all organization and project information and settings. To restrict access to only those projects that you add users to, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+
+With this feature enabled, users added to the **Project-scoped User group** can't view most Organization Settings and can only connect to those projects to which they've been added. 
+
+::: moniker-end
+ 
 ## Restrict access to view or modify objects  
 
 Azure DevOps is designed to enable all valid users to view all objects defined in the system. You can restrict access to resources by setting the permission state to **Deny**. You can set permissions for members that belong to a custom security group or for an individual user. To learn more about how to set these types of permissions, see [Change individual permissions, grant select access to specific functions](change-individual-permissions.md). 
@@ -173,6 +185,9 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
 
 ::: moniker-end
 
+
+[!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
+
 ::: moniker range="< azure-devops"
 
 For the [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
@@ -186,6 +201,9 @@ You  restrict access to work tracking objects in one of two ways:
 - By [adding WITs to the Hidden Categories group](../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
    
 ::: moniker-end
+
+
+
 
 ## Restrict modification of closed work items
 
