@@ -297,6 +297,7 @@ The dialog offers two main modes:
 * **Manual subscription pipeline**. In this mode, you must specify the service principal you want to use to connect to Azure. The service principal specifies the resources and the access levels that will be available over the connection.
   Use this approach when you need to connect to an Azure account using different credentials from those you are currently logged on with in Azure Pipelines or TFS.
   This is also a useful way to maximize security and limit access.
+    Service principals are valid for two years. 
 
 For more information, see [Connect to Microsoft Azure](connect-to-azure.md)
 
