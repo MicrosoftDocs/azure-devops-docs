@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: sid-ah
 ms.author: simerzou
-ms.date: 10/21/2020
+ms.date: 01/14/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -81,6 +81,13 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
     <tbody>
+    <td rowspan="4"><a href="2021/sprint-181-update.md" data-raw-source="[14 January 2021](2021/sprint-181-update.md)">14 January 2021</a></td>
+    <td>Delivery Plans: Rollup Information</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Delivery Plans: Condensed views</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>"uses" statement for pre-declaring resources</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Manual Validation for YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <tr>
     <td rowspan="10"><a href="2020/sprint-179-update.md" data-raw-source="[03 December 2020](2020/sprint-179-update.md)">03 December 2020</a></td>
     <td>Single-click to toggle between inline and diff views</td><td>Repos</td><td>Future</td>
     </tr>
