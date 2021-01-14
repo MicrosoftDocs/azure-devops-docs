@@ -3247,7 +3247,7 @@ The following permissions are defined in Release Management. The scope column ex
     <tr>
         <td id="edit-release-environment-permission">Edit release environment</td>
         <td>
-            Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs **Edit release definition** permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs <strong>Manage releases</strong> permission to save the modified release.
+            Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs <strong>Edit release definition</strong> permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs <strong>Manage releases</strong> permission to save the modified release.
         </td>
         <td>
             Project, Release pipeline, Environment  
