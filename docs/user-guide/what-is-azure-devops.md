@@ -4,10 +4,9 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Get an integrated set of features to help you plan, code, collaborate, and ship your applications faster.
 ms.technology: devops-new-user
-ms.assetid:  
 ms.author: chcomley
 author: chcomley
-ms.date: 11/08/2019
+ms.date: 01/13/2021
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ---
@@ -24,7 +23,7 @@ Azure DevOps provides integrated features that you can access through your web b
 - **Azure Pipelines** provides build and release services to support continuous integration and delivery of your apps
 - **Azure Boards** delivers a suite of Agile tools to support planning and tracking work, code defects, and issues using Kanban and Scrum methods
 - **Azure Test Plans** provides several tools to test your apps, including manual/exploratory testing and continuous testing
-- **Azure Artifacts** allows teams to share packages such as Maven, npm, NuGet and more from public and private sources and integrate package sharing into your CI/CD pipelines
+- **Azure Artifacts** allows teams to share packages such as Maven, npm, NuGet, and more from public and private sources and integrate package sharing into your CI/CD pipelines
 
 You can also use collaboration tools such as:
 
@@ -36,11 +35,9 @@ Azure DevOps supports adding extensions and integrating with other popular servi
 
 For information on the differences between the cloud versus on-premises platforms, see [Azure DevOps Services and Azure DevOps Server](about-azure-devops-services-tfs.md).
 
-<a name="name-changes"></a>Microsoft renamed Visual Studio Team Services (VSTS) to Azure DevOps Services. For more information about this change, see [Introducing Azure DevOps](https://aka.ms/azurevsts).
-
 ## Choose Azure DevOps Services
 
-Choose Azure DevOps Services when you want:
+Choose Azure DevOps Services when you want the following outcomes:
 
 - Quick set-up
 - Maintenance-free operations
@@ -75,33 +72,6 @@ When you deploy Azure DevOps Server, you can also configure the following server
 Start for free by downloading [Azure DevOps Server Express](https://go.microsoft.com/fwlink/?LinkId=2041269&clcid=0x409). Then, either upload your code to share or source control. Or, begin tracking your work using Scrum, Kanban, or a combination of methods.
 
 To learn more about managing Azure DevOps Server, see the [Administrative tasks quick reference](/azure/devops/server/admin/admin-quick-ref).
-
-## Visual Studio Team Services is now Azure DevOps Services<a id="vsts" />
-
-Many of the featured services in VSTS are now offered as standalone services in both Azure DevOps Services and Azure DevOps Server 2019. You can get services separately or all together as Azure DevOps Services. If you're an Azure DevOps subscriber, you have access to all of the services already.
-
-> | VSTS feature name    | Azure DevOps service name | Description |
-> |----------------------|----------------------|-------------|
-> | Build & release      | Azure Pipelines      | Continuous integration and continuous delivery (CI/CD) that works with any language, platform, and cloud. |
-> | Code                 | Azure Repos          | Unlimited cloud-hosted private Git and Team Foundation Version Control (TFVC) repositories for your project. |
-> | Work                 | Azure Boards         | Work tracking with Kanban boards, backlogs, team dashboards, and custom reporting. |
-> | Test                 | Azure Test Plans     | All-in-one planned and exploratory testing solution. |
-> | Packages (extension) | Azure Artifacts      | Maven, npm, Python, Universal Package, and NuGet package feeds from public and private sources. |
-
-Both Azure DevOps Services and Azure DevOps Server 2019 use the new navigation user interface, with a vertical sidebar to go to the main service areas: **Boards**, **Repos**, **Pipelines**, and more. To learn more, see [Web portal navigation in Azure DevOps](../project/navigation/index.md).
-
-> [!NOTE]
-> You can disable select services from the user interface. For more information, see [Turn a service on or off](../organizations/settings/set-services.md).
-
-You can still use `visualstudio.com` to access Azure DevOps Services. We've moved to the new `dev.azure.com` domain name as the primary URL for new organizations. That URL is `https://dev.azure.com/{your organization}/{your project}`. If you want to change your URL to be based on `dev.azure.com` as the primary, an organization administrator can do so from the organization settings page.
-
-## Choose your content version
-
-This content supports a platform/version selector. Toggle the Content version selector dropdown, located above the table of contents, to access the content that is specific to your version. The table of contents and content page refresh to show only that content specific to the selected version.
-
-   > [!div class="mx-imgBorder"]  
-   > ![Documentation version selector](../media/version-selector.png)
-
 ## Next steps  
 
 > [!div class="nextstepaction"]
