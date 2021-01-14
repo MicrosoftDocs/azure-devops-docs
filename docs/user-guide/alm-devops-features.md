@@ -114,7 +114,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="320">
 <p><b>Move work item to a different project (Azure DevOps Services)</b></p>
-<p>Choose <img src="../boards/media/icons/change-team-project-icon.png" alt="Change project icon"/> **Change project**, <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md)">move the work item to a different project</a>. </p>
+<p>Choose <img src="../boards/media/icons/change-team-project-icon.png" alt="Change project icon"/> <b>Change project</b>, <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md)">move the work item to a different project</a>. </p>
 
 <p><b>Full screen mode</b></p>
 <p>Choose <img src="../boards/media/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/media/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to enter or exit full screen mode.  </p>
@@ -138,7 +138,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <td width="30%">
 <p><b>Change work item type (Azure DevOps Services)</b></p>
-<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose <img src="../boards/media/icons/change-type-icon.png" alt="Change type icon"/> **Change type** <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md)">change the work item type</a>. </p>
+<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose <img src="../boards/media/icons/change-type-icon.png" alt="Change type icon"/> <b>Change type</b> <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md)">change the work item type</a>. </p>
 
 <p><b>Filter your backlog</b></p>
 <p>Use <strong>Show/Hide in progress</strong> to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
@@ -181,7 +181,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/alm-index-copy-clone-work-item.png" alt="Copy or clone a work item"/><br/> <br/>
 
 <p><b>Follow a work item </b></p>
-<p>Choose <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> **Follow**/**Following** to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
+<p>Choose <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> <b>Follow</b>/<b>Following</b> to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
 <img src="media/features/alm-feature-follows.png" alt="Follow a work item control"/><br/><br/>
 
 <p><b>Rich text comments</b></p>
@@ -189,7 +189,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Clear HTML formatting </b></p>
-<p>Use <img src="../boards/media/icons/remove-formatting-icon.png" alt="Remove format"/> or **CTRL+Spacebar** to remove formatting from highlighted text.</p>
+<p>Use <img src="../boards/media/icons/remove-formatting-icon.png" alt="Remove format"/> or <b>CTRL+Spacebar</b> to remove formatting from highlighted text.</p>
 
 
 
@@ -242,7 +242,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 <p><b>Discussion </b></p>
-<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/> **discussion**.  </p>
+<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/> <b>discussion</b>.  </p>
 
 
 <p><b>Integrate Git development with work tracking </b></p>
@@ -359,7 +359,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Delete a process</b></p>
-<p>Delete those inherited processes that you no longer want used. Choose **Delete**.  </p>
+<p>Delete those inherited processes that you no longer want used. Choose <b>Delete</b>.  </p>
 
 <p><b>Set process permissions</b></p>
 <p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be <a href="../organizations/security/set-permissions-access-work-tracking.md#process-permissions" data-raw-source="[granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)">granted explicit permissions to edit a specific process</a>.  </p>
@@ -482,7 +482,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Definition of done</b></p>
 <p>Support your team to be in sync by <a href="../boards/boards/definition-of-done.md" data-raw-source="[specifying requirements to fulfill prior to handoff of items to a downstream work stage](../boards/boards/definition-of-done.md)">specifying requirements to fulfill prior to handoff of items to a downstream work stage</a>.</p><br/>
 <p><b>Filter by field values or parent work items</b></p>
-<p>Choose <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> **field filter** to <a href="../boards/boards/filter-kanban-board.md" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
+<p>Choose <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> <b>field filter</b> to <a href="../boards/boards/filter-kanban-board.md" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
 <img src="media/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter fields."/><br/><br/>
 
 <p><b>Cumulative Flow Diagram </b></p>

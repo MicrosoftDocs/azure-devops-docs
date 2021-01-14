@@ -183,7 +183,7 @@ Write-Host "Lengthy process is complete."
 
 ---
 
-To see how it looks, save and queue the build, and then watch the build run. Observer that a progress indicator changes when the task runs this script.
+To see how it looks, save and queue the build, and then watch the build run. Observe that a progress indicator changes when the task runs this script.
 
 ### Complete: Finish timeline
 
