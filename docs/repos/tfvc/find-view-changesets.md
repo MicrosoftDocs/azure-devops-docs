@@ -71,7 +71,7 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
    ![Find Changesets dialog box](media/find-view-changesets/IC612255.png)
 
-2. (Optional) Next to the <strong>Containing File **box, choose **Browse</strong>.
+2. (Optional) In **Containing file**, select **Browse**.
 
 3. (Optional) In the **By User** box, type the alias or the name of the project team member who is associated with the changeset.
 
