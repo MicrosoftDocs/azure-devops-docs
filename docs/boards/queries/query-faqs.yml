@@ -1,0 +1,145 @@
+---
+titleSuffix: Azure Boards
+ms.custom: boards-queries
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
+ms.topic: troubleshooting
+monikerRange: '>= azure-devops-2019'
+ms.date: 01/15/2021
+---
+
+### YamlMime:FAQ
+metadata:
+  title: Query FAQs 
+  description: Get answers to common questions about working with work item queries in Azure DevOps. 
+
+title: Query FAQs 
+
+summary: | 
+  The Query Editor supports finding work items by specifying query clauses based on fields, operators, and values. You can save and share these queries with others in your team. Here are some answers to frequently asked questions about work item queries. 
+ 
+sections:
+  - name: General
+    questions: 
+      - question: Can I use a wildcard in my query?
+        answer: |
+           Yes. The wildcard character is an asterisk (*). For samples, see 
+
+      - question: Does the search box support less than/greater than operators? 
+        answer: |
+          **No**. 
+
+      - question: What's the difference between a semantic search and query? 
+        answer: |
+          The semantic search, or search-box query, does TBD.  
+
+      - question: Can I run several queries at the same time?
+        answer: |
+          **Yes**. Simply open a query in a new browser tab to run several queries at the same time.  
+
+  - name: Find work items
+    questions:
+      - question: Where can I find work assigned to me or work that I'm following?
+        answer: | 
+          Open **Queries>All**. Under the **My Queries** section are two fully customizable queries: **Assigned to me** and **Followed work items**. 
+
+      - question: Where can I find recent work item activity?
+        answer: | 
+          - Open **Boards>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).  
+
+          - You can also use the macros &mdash; <strong>@Me</strong>, <strong>@Follows</strong>, **MyRecentActivity**, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros). 
+
+<a id="favorite" /> 
+
+  - name: Navigate 
+    questions: 
+      - question: How do I quickly navigate to queries I view frequently? 
+        answer: |
+          - Favorite those queries and other artifacts that you view frequently. Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a query. 
+          - Favorited queries (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
+
+          > [!div class="mx-imgBorder"]  
+          > ![Screenshot of favorited queries breadcrumb selector.](media/example-queries/queries-selector.png)  
+          Or, you can select from any of your favorited items by choosing the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon and choose **Favorites**.  
+
+          ![[Screenshot of your favorites listing queries.](media/example-queries/favorites-selector.png)  
+
+      - question: How do I quickly navigate to queries within the same query folder? 
+        answer: |
+          When viewing a query, you can use the queries breadcrumb selector (:::image type="icon" source="../../media/icons/breadcrumb-selector.png" border="false"::: the breadcrumb icon changes to :::image type="icon" source="../../media/icons/context-menu-selector.png" border="false"::: a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
+
+          > [!div class="mx-imgBorder"]  
+          > ![Screenshot of queries breadcrumb selector.](media/view-run-queries/folder-selector.png)  
+
+  - name: Linked work item queries 
+    questions: 
+
+      - question: Can I query for work items linked across projects? 
+        answer:  |
+          **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
+
+
+      - question: Can I link work items across organizations or collections?
+        answer: |
+          ::: moniker range="azure-devops"
+          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../boards/backlogs/add-link.md#link-to-a-remote-work-item). 
+          ::: moniker-end
+          ::: moniker range="< azure-devops"
+          **No** across collections. This isn't a supported feature. 
+          ::: moniker-end
+
+  - name: Bulk add and update using queries
+    questions: 
+
+      - question: Can I export a cross-project query to Excel? 
+        answer: |
+          ::: moniker range=">= azure-devops-2019"
+          **No**. Cross-project queries won't open in Excel. However, you can export a cross-project query to a .csv file, open it in Excel, and import it to Azure Boards. To learn more, see [Bulk import or update work items using CSV files](../boards/queries/import-work-items-from-csv.md). 
+          ::: moniker-end
+          ::: moniker range="<= tfs-2018"
+          **No**. Cross-project queries won't open in Excel.   
+          ::: moniker-end
+
+      - question: How do I manage dependencies across projects?  
+        answer: |
+          To manage dependencies in Azure Boards, you can link work items using the Predecessor/Successor link type. To learn how, see [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md).
+
+      - question: Can I query for work items linked across projects? 
+        answer: |
+          **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
+
+ 
+
+  - name: Query folders
+    questions:
+      - question: Can I change the owner of a query or folder? 
+        answer: |
+          **Yes**. To perform this operation, you need to export the process and import it to the other collection. While there is no import/export user interface, you can use the [Process Migrator for Node.js](https://github.com/Microsoft/process-migrator) application.  
+
+
+      - question: Can I move a query or a folder?
+        answer: |
+          **No**. 
+
+      - question: Can I add folders to My Favorites or Team Favorites?
+        answer: |
+          **No**. 
+
+      - question: Are the queries and folders I create from the web portal the same as in Team Explorer?
+        answer: |
+          **Yes**.  
+ 
+
+
+  - name: Monitor progress with queries 
+    questions:
+      - question: How can I best use queries to monitor progress on a project or team?
+        answer: |
+          - [Define a chart for a query](../../report/dashboards/charts.md) and add it to a dashboard, or add the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to a dashboard. Each time you open the dashboard, the query will automatically run and refresh. 
+          - Periodically, [triage query results](triage-work-items.md) to review and update status.   
+
+additionalContent: |
+  ## Related articles
+  -  [Work across projects](navigation/work-across-projects.md).
+  -  [Connect to team projects](../organizations/projects/connect-to-projects.md)  
