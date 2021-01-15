@@ -47,8 +47,6 @@ sections:
 
           - You can also use the macros &mdash; <strong>@Me</strong>, <strong>@Follows</strong>, **MyRecentActivity**, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#macros). 
 
-<a id="favorite" /> 
-
   - name: Navigate 
     questions: 
       - question: How do I quickly navigate to queries I view frequently? 
@@ -71,11 +69,9 @@ sections:
 
   - name: Linked work item queries 
     questions: 
-
       - question: Can I query for work items linked across projects? 
         answer:  |
-          **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
-
+          **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported. 
 
       - question: Can I link work items across organizations or collections?
         answer: |
@@ -88,7 +84,6 @@ sections:
 
   - name: Bulk add and update using queries
     questions: 
-
       - question: Can I export a cross-project query to Excel? 
         answer: |
           ::: moniker range=">= azure-devops-2019"
@@ -106,14 +101,11 @@ sections:
         answer: |
           **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
 
- 
-
   - name: Query folders
     questions:
       - question: Can I change the owner of a query or folder? 
         answer: |
           **Yes**. To perform this operation, you need to export the process and import it to the other collection. While there is no import/export user interface, you can use the [Process Migrator for Node.js](https://github.com/Microsoft/process-migrator) application.  
-
 
       - question: Can I move a query or a folder?
         answer: |
@@ -126,8 +118,6 @@ sections:
       - question: Are the queries and folders I create from the web portal the same as in Team Explorer?
         answer: |
           **Yes**.  
- 
-
 
   - name: Monitor progress with queries 
     questions:
