@@ -217,9 +217,9 @@ For an overview of all team settings, see [Manage teams and configure team tools
 You can use the search box to perform an ad hoc search to find specific work items based on select field criteria. Or, you can create a query to perform a managed search which will list work items based on your query criteria. With managed searches you can perform a number of other tasks, such as to triage work items, create a trend or status chart and add to the dashboard, and more. 
 
 To learn more, see these topics: 
-- [Create managed queries to list, update, or chart work items](../queries/example-queries.md)  
+- [About managed queries](../queries/about-managed-queries.md) 
 - [View, run, or email a query](../queries/view-run-query.md)  
-- [Ad hoc vs managed queries](../queries/adhoc-vs-managed-queries.md)  
+- [About managed queries, Ad hoc versus managed queries](../queries/about-managed-queries.md#ad-hoc-v-managed)  
 - [Work item query charts](../../report/dashboards/charts.md)  
 
 <a id="templates" />

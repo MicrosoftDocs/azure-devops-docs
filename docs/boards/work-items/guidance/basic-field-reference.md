@@ -127,5 +127,5 @@ Also, you can [view the list of fields defined for an organization](../../../org
 
 ## Related articles
 
-- [Create managed queries](../../queries/example-queries.md)
+- [About managed queries](../../queries/about-managed-queries.md)
 

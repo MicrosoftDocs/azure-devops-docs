@@ -17598,6 +17598,16 @@
       "source_path": "docs/organizations/billing/buy-more-build-vs.md",
       "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false	
+    },
+    {
+      "source_path": "docs/boards/queries/example-queries.md",
+      "redirect_url": "/azure/devops/boards/queries/about-managed-queries",
+      "redirect_document_id": false	
+    },
+    {
+      "source_path": "docs/boards/queries/adhoc-vs-managed-queries.md",
+      "redirect_url": "/azure/devops/boards/queries/about-managed-queries#ad-hoc-v-managed",
+      "redirect_document_id": false	
     }
   ]
 }
