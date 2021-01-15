@@ -48,11 +48,11 @@ You can choose any legal branch name to use when a repository is initialized, or
 
 - **Organization settings** - From the DevOps page, select your project > **Organization settings** > **Repositories**, turn on **Default branch name for new repositories**, and type your default branch name.
 
-    :::image type="content" source="media/repository-settings/organization-settings-change-default-branch-name.png" alt-text="Screenshot that shows the repo 'Policies' tab selected.":::
+    :::image type="content" source="media/repository-settings/organization-settings-change-default-branch-name.png" alt-text="Screenshot that shows the 'Organization Settings', 'Repositories', and 'Default branch name for new repositores' selected.":::
 
 -  **Project settings** - From the project page, select **Project settings** > **Repositories** > **Settings**, turn on **Default branch name for new repositories**, and type your default branch name.
 
-    :::image type="content" source="media/repository-settings/project-settings-custom-default-branch-name-2020.png" alt-text="Screenshot that shows the repo 'Policies' tab selected.":::
+    :::image type="content" source="media/repository-settings/project-settings-custom-default-branch-name-2020.png" alt-text="Screenshot that shows the 'Project Settings', 'Repositories', and 'Default branch name for new repositores' selected.":::
 
 If you don't enable this feature, your repositories will be initialized with the Azure Repos default name, *main*.
 
@@ -80,7 +80,7 @@ You can set a policy to prevent commits from being pushed to a repository based 
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
-   ![Project settings for your repository](media/repository-settings/project-repository-settings.png)
+   ![Screenshot of the 'Project Settings' for your repository.](media/repository-settings/project-repository-settings.png)
 
 2. Select **Options** and **Policies** to view and configure your repository settings.
 
@@ -92,11 +92,11 @@ You can set a policy to prevent commits from being pushed to a repository based 
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
-   ![Project settings for your repository](media/repository-settings/project-repository-settings-prev-nav.png)
+   ![Screenshot that shows the 'Version Control' options for your repository.](media/repository-settings/project-repository-settings-prev-nav.png)
 
 2. Select **options** to view and configure your repository settings.
 
-   ![The options UI](media/repository-settings/repository-settings.png)
+   ![Screenshot that shows the options UI.](media/repository-settings/repository-settings.png)
 
 ::: moniker-end
 
@@ -104,7 +104,7 @@ You can set a policy to prevent commits from being pushed to a repository based 
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
-   ![Project settings for your repository](media/repository-settings/project-repository-settings-prev-nav.png)
+   ![Screenshot that shows the 'Version Control' options for your repository.](media/repository-settings/project-repository-settings-prev-nav.png)
 
 2. Select **options** to view and configure your repository settings.
 
