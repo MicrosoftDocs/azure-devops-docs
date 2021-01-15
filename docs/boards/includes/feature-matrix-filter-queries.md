@@ -64,6 +64,18 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
+        Historical field query
+   :::column-end:::
+   :::column span="1":::
+       Supported operator: `Was Ever`
+   :::column-end:::
+   :::column span="1":::
+      TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
         Query using macros or variables
    :::column-end:::
    :::column span="1":::
@@ -91,7 +103,8 @@ Filter query
       Field comparison searches  
    :::column-end:::
    :::column span="1":::
-       
+       Find work items based on how two fields compare with one another.  
+       **Supported operators**: `=[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]`
    :::column-end:::
    :::column span="1":::
       TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -100,10 +113,11 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-        Query on tags
+      Query on tags
    :::column-end:::
    :::column span="1":::
-       . 
+       Find work items based on whether they contain or don't contain a tag. 
+       **Supported operators**: `Contains, Does Not Contain`
    :::column-end:::
    :::column span="1":::
       TFS 2013-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -115,7 +129,8 @@ Filter query
       Is Empty/Is Not Empty 
    :::column-end:::
    :::column span="1":::
-      Query for empty rich text fields
+      Find work items based on a keyword, wildcard string, of HTML/rich text fields.  
+       **Supported operators**: `Is Empty, Is Not Empty`
    :::column-end:::
    :::column span="1":::
       Azure DevOps 2019-2020, Azure DevOps Services  
@@ -127,7 +142,7 @@ Filter query
       In and Not In Group searches 
    :::column-end:::
    :::column span="1":::
-      Find work defined in +/- n of current iteration for a team
+      Find work whose field value matches any value in a delimited set, such as a set of work item types, workflow states, or picklist values.  Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
    :::column-end:::
    :::column span="1":::
       TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -139,7 +154,7 @@ Filter query
       Boolean searches
    :::column-end:::
    :::column span="1":::
-      Find work current logged in user is following
+      Find work items based on boolean field value. 
    :::column-end:::
    :::column span="1":::
       TFS 2017-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -148,25 +163,13 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-      Special character searches
+      Query Discussion (via History field) 
    :::column-end:::
    :::column span="1":::
-       2019 and later 
+       Find work items based on key words or phrases added through the Discussion. 
    :::column-end:::
    :::column span="1":::
-      Azure DevOps 2019-2020, Azure DevOps Services  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-        Query Discussion (via History field) 
-   :::column-end:::
-   :::column span="1":::
-       2017.2 
-   :::column-end:::
-   :::column span="1":::
-      Azure DevOps 2019-2020, Azure DevOps Services  
+      TFS 2017.2-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
    :::column-end:::
 :::row-end:::
 ---
@@ -175,22 +178,13 @@ Filter query
         Query on Kanban fields
    :::column-end:::
    :::column span="1":::
-       . 
+       Find work items based on their Kanban column, swimlane, or Doing/Done status.
    :::column-end:::
    :::column span="1":::
       Azure DevOps 2019-2020, Azure DevOps Services  
    :::column-end:::
 :::row-end:::
 ---
-:::row:::
-   :::column span="1":::
-        
-   :::column-end:::
-   :::column span="1":::
-       . 
-   :::column-end:::
-   :::column span="1":::
-      Azure DevOps 2019-2020, Azure DevOps Services  
-   :::column-end:::
-:::row-end:::
----
+
+> [!NOTE] 
+> Proximity and special character searches aren't supported in the query editor, but are in the Search box. See xxx.
