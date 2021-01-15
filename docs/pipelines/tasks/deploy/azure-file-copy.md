@@ -32,7 +32,7 @@ app; such as PowerShell scripts, PowerShell-DSC modules,
 and more.
 
 > [!NOTE]
-> If you are using Azure File copy task version 3 or below refer to [this](./azure-file-copy-version3.md). 
+> If you are using Azure File copy task version 3 or below, see [Azure file copy version 3 or earlier](./azure-file-copy-version3.md). 
  
 When the target is Azure VMs, the files are first copied
 to an automatically generated Azure blob container 
