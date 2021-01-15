@@ -8,7 +8,7 @@ metadata:
   ms.author: kaelli
   author: KathrynEE
   ms.topic: troubleshooting
-  monikerRange: '>= azure-devops-2019'
+  monikerRange: '<= azure-devops'
   ms.date: 01/15/2021
 
 title: Query FAQs 
@@ -76,7 +76,7 @@ sections:
       - question: Can I link work items across organizations or collections?
         answer: |
           ::: moniker range="azure-devops"
-          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../boards/backlogs/add-link.md#link-to-a-remote-work-item). 
+          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../backlogs/add-link.md#link-to-a-remote-work-item). 
           ::: moniker-end
           ::: moniker range="< azure-devops"
           **No** across collections. This isn't a supported feature. 
@@ -87,7 +87,7 @@ sections:
       - question: Can I export a cross-project query to Excel? 
         answer: |
           ::: moniker range=">= azure-devops-2019"
-          **No**. Cross-project queries won't open in Excel. However, you can export a cross-project query to a .csv file, open it in Excel, and import it to Azure Boards. To learn more, see [Bulk import or update work items using CSV files](../boards/queries/import-work-items-from-csv.md). 
+          **No**. Cross-project queries won't open in Excel. However, you can export a cross-project query to a .csv file, open it in Excel, and import it to Azure Boards. To learn more, see [Bulk import or update work items using CSV files](import-work-items-from-csv.md). 
           ::: moniker-end
           ::: moniker range="<= tfs-2018"
           **No**. Cross-project queries won't open in Excel.   
@@ -95,7 +95,7 @@ sections:
 
       - question: How do I manage dependencies across projects?  
         answer: |
-          To manage dependencies in Azure Boards, you can link work items using the Predecessor/Successor link type. To learn how, see [Link user stories, issues, bugs, and other work items](../boards/backlogs/add-link.md).
+          To manage dependencies in Azure Boards, you can link work items using the Predecessor/Successor link type. To learn how, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md).
 
       - question: Can I query for work items linked across projects? 
         answer: |
@@ -128,5 +128,4 @@ sections:
 
 additionalContent: |
   ## Related articles
-  -  [Work across projects](navigation/work-across-projects.md).
-  -  [Connect to team projects](../organizations/projects/connect-to-projects.md)  
+  -  [Work across projects FAQs](../../project/work-across-projects-faqs.yml). 
