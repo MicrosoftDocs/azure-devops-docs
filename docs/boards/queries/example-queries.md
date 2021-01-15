@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 09/26/2019
+ms.date: 01/14/2021
 ---
 
 
@@ -21,7 +21,7 @@ List bugs, user stories, or other work items based on field criteria you specify
 
 If you're just getting started, read [View, run, or email a work item query](view-run-query.md). For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md). 
 
-## Use queries
+## Use queries 
 
 A query lists a filtered set of work items. You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an ad hoc search using the [search box](search-box-queries.md). 
 
@@ -61,6 +61,17 @@ For a quick reference to query editor tasks and sample queries, see [Query quick
 ::: moniker range=">= azure-devops-2019"
 For additional tips when working with the new queries experience or the directory-focused queries views, see [Tips for working with the directory-focused **Queries** pages](view-run-query.md#tips-queries-hub). 
 ::: moniker-end
+
+
+## Supported features 
+
+
+[!INCLUDE [temp](../includes/feature-matrix-filter-queries.md)]
+
+[!INCLUDE [temp](../includes/feature-matrix-query-macros.md)]
+
+[!INCLUDE [temp](../includes/feature-matrix-manage-queries.md)]
+
 
 <a id="my-shared"/>
 
