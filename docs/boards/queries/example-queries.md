@@ -65,7 +65,6 @@ For additional tips when working with the new queries experience or the director
 
 ## Supported features 
 
-
 [!INCLUDE [temp](../includes/feature-matrix-filter-queries.md)]
 
 [!INCLUDE [temp](../includes/feature-matrix-query-macros.md)]
