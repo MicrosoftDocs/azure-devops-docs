@@ -150,6 +150,13 @@ The following list shows the key benefits of this task:
     <br/>
     In this case, the stable variant receives 80% of the traffic, while the baseline and canary variants each receive half of the specified 20%. But baseline and canary variants don't receive three replicas each. They instead receive the specified number of replicas, which means they each receive one replica.</td>
   </tr>
+  <tr>
+    <td><b>rolloutStatusTimeout</b><br/>Timeout for rollout status</td>
+    <td>(Optional)<br/>
+    <br>
+    The length of time (in seconds) to wait before ending watch on rollout status. Default is 0 (don't wait).
+    </td>
+  </tr>
 </table>
 
 The following YAML code is an example of deploying to a Kubernetes namespace by using manifest files:
@@ -451,6 +458,13 @@ steps:
     <br/>
     The namespace within the cluster to deploy to.</td>
   </tr>
+  <tr>
+    <td><b>rolloutStatusTimeout</b><br/>Timeout for rollout status</td>
+    <td>(Optional)<br/>
+    <br>
+    The length of time (in seconds) to wait before ending watch on rollout status. Default is 0 (don't wait).
+    </td>
+  </tr>
 </table>
 
 The following YAML code shows an example of scaling objects:
@@ -536,6 +550,13 @@ steps:
     <td>(Required)<br/>
     <br/>
     The namespace within the cluster to deploy to.</td>
+  </tr>
+  <tr>
+    <td><b>rolloutStatusTimeout</b><br/>Timeout for rollout status</td>
+    <td>(Optional)<br/>
+    <br>
+    The length of time (in seconds) to wait before ending watch on rollout status. Default is 0 (don't wait).
+    </td>
   </tr>
 </table>
 
