@@ -1,18 +1,15 @@
----
-titleSuffix: Azure Boards
-ms.custom: boards-queries
-ms.technology: devops-agile
-ms.author: kaelli
-author: KathrynEE
-ms.topic: troubleshooting
-monikerRange: '>= azure-devops-2019'
-ms.date: 01/15/2021
----
-
 ### YamlMime:FAQ
 metadata:
   title: Query FAQs 
   description: Get answers to common questions about working with work item queries in Azure DevOps. 
+  titleSuffix: Azure Boards
+  ms.custom: boards-queries
+  ms.technology: devops-agile
+  ms.author: kaelli
+  author: KathrynEE
+  ms.topic: troubleshooting
+  monikerRange: '>= azure-devops-2019'
+  ms.date: 01/15/2021
 
 title: Query FAQs 
 
