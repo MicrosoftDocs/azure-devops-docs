@@ -356,7 +356,7 @@ You can use the macros described in the following table to filter your queries b
 
 Specify **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Specify **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, **&#42;**. These operators use the full-text search index. You can only use the wildcard character at the end of a partial word or phrase.
 
-For examples, see [Example work item queries](example-queries.md) and [Query for work items using the History field](history-and-auditing.md).
+For examples, see [Example work item queries](query-index-quick-ref.md) and [Query for work items using the History field](history-and-auditing.md).
 
 <!---
 > [!NOTE]    
@@ -379,7 +379,7 @@ For more information, see [Full-Text Search Queries and Collation Settings](/azu
 ## Related articles 
 
 - [Query quick reference](query-index-quick-ref.md)
-- [About managed queries](example-queries.md)
+- [About managed queries](about-managed-queries.md)
 - [Work item field index](../work-items/guidance/work-item-field.md)
 - [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
 

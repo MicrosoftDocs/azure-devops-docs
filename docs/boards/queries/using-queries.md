@@ -375,9 +375,9 @@ See also:
 
 ## Related articles
 
-That's the basics about using queries. For an index of query examples, see [Create managed queries](example-queries.md#examples). To add a custom field to track additional data, see [Customize your work tracking experience](../../reference/customize-work.md). 
+That's the basics about using queries. For an index of query examples, see [Query quick reference](query-index-quick-ref.md). To add a custom field to track additional data, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
-- [Ad hoc versus managed queries](adhoc-vs-managed-queries.md)  
+- [About managed queries, Ad hoc versus managed queries]([About managed queries, Ad hoc versus managed queries](about-managed-queries.md#ad-hoc-v-managed).md#ad-hoc-v-managed)  
 - [Add work items](../backlogs/add-work-items.md)  
 - [Chart a flat-list query](../../report/dashboards/charts.md)  
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)

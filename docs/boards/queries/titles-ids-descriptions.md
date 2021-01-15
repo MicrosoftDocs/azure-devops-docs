@@ -249,7 +249,7 @@ Work Item Type
 - [Query editor](using-queries.md)   
 - [Add work items](../backlogs/add-work-items.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md)  
-- [Create managed queries](example-queries.md)   
+- [About managed queries](about-managed-queries.md)   
 
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]

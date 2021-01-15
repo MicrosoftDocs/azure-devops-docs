@@ -359,7 +359,7 @@ The following examples show how to use operators when you create a search string
 
 ## Related articles
 
-- [Ad hoc versus managed queries](adhoc-vs-managed-queries.md)  
+- [About managed queries, Ad hoc versus managed queries]([About managed queries, Ad hoc versus managed queries](about-managed-queries.md#ad-hoc-v-managed).md#ad-hoc-v-managed)  
 - [Create managed queries with the query editor](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)     - [Use work item templates, Define an ad hoc work item template using a hyperlink](../backlogs/work-item-template.md#adhoc-template)
