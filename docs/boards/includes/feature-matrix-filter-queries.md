@@ -8,22 +8,13 @@ ms.date: 01/14/2021
 
 
 ### Query filter supported features
- 
 
-Search across projects 
-Text string search (single text, multi-line text, rich text) 
-Is Empty/Is Not Empty 
-In and Not In Group searches 
-Boolean searches
-Wildcard searches
-Special character searches
-Field comparison searches 
-Query on tags 
-Query Discussion (via History field) 
-Query on Kanban fields
-Query using macros or variables
-Filter query 
+The following table summarizes the query filter features supported by each Azure DevOps version.  
 
+::: moniker range=">= azure-devops-2019"
+> [!NOTE] 
+> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Advanced work items search](/azure/devops/project/search/advanced-work-item-search-syntax).
+::: moniker-end
 
 ---
 :::row:::
@@ -40,10 +31,10 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-      Text string searches
+      [Text string searches](/azure/devops/boards/queries/titles-ids-descriptions) (single text, multi-line text, rich text) 
    :::column-end:::
    :::column span="4":::
-      Searches are not case sensitive (single text, multi-line text, rich text) 
+      Searches are not case sensitive.  
    :::column-end:::
    :::column span="1":::
       TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -52,10 +43,10 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-      Wildcard searches
+      [Wildcard searches](/azure/devops/boards/queries/titles-ids-descriptions)
    :::column-end:::
    :::column span="4":::
-      Wild card = *  (see also advanced search box options)
+      Wild card = `*`  (see also semantic search options)
    :::column-end:::
    :::column span="1":::
       TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -64,9 +55,10 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-        Historical field query
+        [Historical String and DateTime field queries](/azure/devops/boards/queries/query-by-workflow-changes) 
    :::column-end:::
    :::column span="1":::
+       Find work items based on a field match with a previous value. 
        Supported operator: `Was Ever`
    :::column-end:::
    :::column span="1":::
@@ -76,10 +68,10 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-        Query using macros or variables
+      [Query using macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
    :::column-end:::
    :::column span="1":::
-       . 
+      Use macros to create queries relative to a date, other tools, such as team area path, team iteration, and more.  
    :::column-end:::
    :::column span="1":::
       TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -91,7 +83,7 @@ Filter query
       Search across projects 
    :::column-end:::
    :::column span="1":::
-      Text string search (single text, multi-line text, rich text)
+      Find work items in one or more projects in an organization or collection. Default is the current project. Use the **Team Project** field to query on two or more projects.
    :::column-end:::
    :::column span="1":::
       TFS 2015-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -100,11 +92,11 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-      Field comparison searches  
+      [Field comparison searches](/azure/devops/boards/queries/query-field-value)  
    :::column-end:::
    :::column span="1":::
-       Find work items based on how two fields compare with one another.  
-       **Supported operators**: `=[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]`
+      Find work items based on how two fields compare with one another.  
+      **Supported operators**: `=[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]`
    :::column-end:::
    :::column span="1":::
       TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -113,11 +105,11 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-      Query on tags
+      [Query on tags](/azure/devops/boards/queries/add-tags-to-work-items#query)
    :::column-end:::
    :::column span="1":::
-       Find work items based on whether they contain or don't contain a tag. 
-       **Supported operators**: `Contains, Does Not Contain`
+      Find work items based on whether they contain or don't contain a tag. 
+      **Supported operators**: `Contains, Does Not Contain`
    :::column-end:::
    :::column span="1":::
       TFS 2013-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -126,11 +118,11 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-      Is Empty/Is Not Empty 
+      [Query on blank or empty fields](/azure/devops/boards/queries/titles-ids-descriptions#empty-or-not-empty-html-field-queries)
    :::column-end:::
    :::column span="1":::
-      Find work items based on a keyword, wildcard string, of HTML/rich text fields.  
-       **Supported operators**: `Is Empty, Is Not Empty`
+      Find work items based on empty or not empty HTML/rich text fields.  
+      **Supported operators**: `Is Empty, Is Not Empty`
    :::column-end:::
    :::column span="1":::
       Azure DevOps 2019-2020, Azure DevOps Services  
@@ -139,7 +131,7 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-      In and Not In Group searches 
+      [In and Not In Group searches](/azure/devops/boards/queries/planning-ranking-priorities) 
    :::column-end:::
    :::column span="1":::
       Find work whose field value matches any value in a delimited set, such as a set of work item types, workflow states, or picklist values.  Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
@@ -151,7 +143,7 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-      Boolean searches
+      Boolean searches 
    :::column-end:::
    :::column span="1":::
       Find work items based on boolean field value. 
@@ -163,10 +155,10 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-      Query Discussion (via History field) 
+      [Query History and Discussion](/azure/devops/boards/queries/history-and-auditing) 
    :::column-end:::
    :::column span="1":::
-       Find work items based on key words or phrases added through the Discussion. 
+      Find work items based on key words or phrases added through the Discussion. 
    :::column-end:::
    :::column span="1":::
       TFS 2017.2-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -175,16 +167,25 @@ Filter query
 ---
 :::row:::
    :::column span="1":::
-        Query on Kanban fields
+      [Query on Kanban board fields](/azure/devops/boards/queries/query-by-workflow-changes#kanban-board-change-queries)
    :::column-end:::
    :::column span="1":::
-       Find work items based on their Kanban column, swimlane, or Doing/Done status.
+      Find work items based on their Kanban column, swimlane, or Doing/Done status.
    :::column-end:::
    :::column span="1":::
       Azure DevOps 2019-2020, Azure DevOps Services  
    :::column-end:::
 :::row-end:::
 ---
-
-> [!NOTE] 
-> Proximity and special character searches aren't supported in the query editor, but are in the Search box. See xxx.
+:::row:::
+   :::column span="1":::
+      [Interactive query filters](/azure/devops/boards/backlogs/filter-backlogs)
+   :::column-end:::
+   :::column span="1":::
+      Filter query results based on a key word or select fields. 
+   :::column-end:::
+   :::column span="1":::
+      Azure DevOps 2019-2020, Azure DevOps Services  
+   :::column-end:::
+:::row-end:::
+---
