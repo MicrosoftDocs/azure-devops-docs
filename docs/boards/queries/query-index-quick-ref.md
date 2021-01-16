@@ -8,8 +8,8 @@ ms.assetid:
 ms.topic: reference  
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 05/15/2020
+monikerRange: '<= azure-devops'
+ms.date: 01/15/2021
 ---
 
 # Query quick reference 
@@ -23,7 +23,7 @@ For the mechanics of constructing and saving queries, see [Use the query editor 
 For specific examples, choose one of the following articles listed under [Query samples for select fields](#samples).  
 
 
-<a id="examples"/>
+<a id="examples" />
 
 ## Example queries 
 
@@ -33,16 +33,18 @@ You can list work items based on the following criteria...
 ---
 :::row:::
    :::column span="1":::
-      **Keywords, wildcard queries**
+      **Keywords, wildcard queries**  
       - [Keyword or phrase queries](titles-ids-descriptions.md#keyword)
       - [Undefined field value queries](titles-ids-descriptions.md#undefined-value)
       - [Empty or not empty HTML field queries](titles-ids-descriptions.md)
-      - [Category based queries](titles-ids-descriptions.md#category)
-      **Tag based queries
+      - [Category based queries](titles-ids-descriptions.md#category)  
+
+      **Tag based queries**  
       - [Items containing a specific tag](add-tags-to-work-items.md)
       - [Items that don't contain a specific tag](add-tags-to-work-items.md)
-      - [Items that contain two or more tags](add-tags-to-work-items.md)
-      **State, reason, or workflow change queries
+      - [Items that contain two or more tags](add-tags-to-work-items.md)  
+
+      **State, reason, or workflow change queries**    
       - [Resolved user stories](query-by-workflow-changes.md#workflow-change)
       - [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change)
       - [Items failing acceptance tests](query-by-workflow-changes.md#workflow-change)
@@ -51,36 +53,48 @@ You can list work items based on the following criteria...
       - [Items closed and then reactivated](query-by-workflow-changes.md#reactivated)
       - [Stories in the Code/Doing column](query-by-workflow-changes.md#kanban_query_fields)
       - [Items in the Expedite swimlane](query-by-workflow-changes.md#kanban_query_fields)
-      - [Items in a swimlane containing "Test"](query-by-workflow-changes.md#kanban_query_fields) 
-      **Date and iteration-based queries
+      - [Items in a swimlane containing "Test"](query-by-workflow-changes.md#kanban_query_fields)  
+
+      **Date and iteration-based queries**   
       - [Items created in the last 30 days](query-by-date-or-current-iteration.md)
       - [Items modified on a specific date](query-by-date-or-current-iteration.md)
       - [Items resolved today](query-by-date-or-current-iteration.md)
       - [Items closed within a specific time period](query-by-date-or-current-iteration.md)
       - [Items whose updated status](query-by-date-or-current-iteration.md)
       - [Items closed in the current sprint](query-by-date-or-current-iteration.md)
+
+      **Link and attachment count queries**   
+      - [All child items of a single epic](linking-attachments.md)
+      - [All related items](linking-attachments.md)
+      - [Items with one or more attachments](linking-attachments.md)
+      - [Items with 2 or more hyperlinks](linking-attachments.md)
+      - [Items containing external links](linking-attachments.md)  
 	   :::column-end:::
    :::column span="1":::
-      **Identity-based queries** 
+
+      **Identity-based queries**  
       - [Active items assigned to me](query-by-workflow-changes.md#me)
       - [Closed items that were assigned to me](query-by-workflow-changes.md#me)
       - [Active items assigned to my team](query-by-workflow-changes.md#me)
       - [Items I've modified in the last 30 days](query-by-workflow-changes.md#me)
       - [Items I closed](query-by-workflow-changes.md#workflow-change-who)
       - [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change-who)
-      - [Team or group membership queries](query-by-workflow-changes.md#group)
-     **Work item count and numeric field queries 
+      - [Team or group membership queries](query-by-workflow-changes.md#group)  
+
+     **Work item count and numeric field queries**   
       - [Count of active bugs per developer](query-numeric.md#counts)
       - [Count of bugs by area and states](query-numeric.md#counts)
       - [Sum of story points and their status](query-numeric.md#effort)
       - [Burnup chart of user stories for a sprint](query-numeric.md#effort)
-      - [Sum of remaining work per developer](query-numeric.md#work) 
-      **History, Discussion, and revision-change queries
+      - [Sum of remaining work per developer](query-numeric.md#work)  
+
+      **History, Discussion, and revision-change queries**  
       - [History contains a specific word](history-and-auditing.md)
       - [History doesn't contain a specific word](history-and-auditing.md)
       - [Reactivated items](history-and-auditing.md)
       - [Items closed within a time period](history-and-auditing.md)
-      - [Items you've been associated with](history-and-auditing.md)
+      - [Items you've been associated with](history-and-auditing.md)  
+
       **Team focus queries**
       ::: moniker range=">= azure-devops-2019"
       - [Assigned to a member of a team](query-by-workflow-changes.md#group)  
@@ -92,13 +106,8 @@ You can list work items based on the following criteria...
       - [Assigned to a member of a team](query-by-workflow-changes.md#group)
       - [Assigned to a team's current sprint](query-by-date-or-current-iteration.md#current-iteration)  |
       ::: moniker-end
-      **Link and attachment count queries 
-      - [All child items of a single epic](linking-attachments.md)
-      - [All related items](linking-attachments.md)
-      - [Items with one or more attachments](linking-attachments.md)
-      - [Items with 2 or more hyperlinks](linking-attachments.md)
-      - [Items containing external links](linking-attachments.md)
-      **Build and test field queries
+
+      **Build and test field queries**  
       - [List bugs and linked test cases](build-test-integration.md#linked-bugs)
       - [List automated test cases](build-test-integration.md)
       - [List requirement-based test suites](build-test-integration.md)
@@ -120,8 +129,9 @@ You can list work items based on the following criteria...
       - [Add a query folder](organize-queries.md) 
       - [Add columns to query results](../backlogs/set-column-options.md) 
       - [Bulk modify query items](../backlogs/bulk-modify-work-items.md) 
+      - [Copy query URL](view-run-query.md#email-query) 
       - [Define a clause](using-queries.md#define-clause) 
-      - [Delete a query](view-run-query.md#view-rename-delete) 
+      - [Delete a query](organize-queries.md#view-rename-delete) 
       - [Direct-links query](using-queries.md#directs-link-query) 
       - [Edit a query](using-queries.md) 
    :::column-end:::
@@ -134,7 +144,7 @@ You can list work items based on the following criteria...
       - [Group a clause](using-queries.md#group-clauses) 
       - [Open a query](using-queries.md) 
       - [Query across projects](using-queries.md#across-projects) 
-      - [Rename a query](view-run-query.md#view-rename-delete) 
+      - [Rename a query](organize-queries.md#view-rename-delete) 
       - [Run a query](using-queries.md) 
    :::column-end:::
    :::column span="1":::

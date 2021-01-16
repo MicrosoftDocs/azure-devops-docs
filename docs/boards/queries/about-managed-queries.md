@@ -65,6 +65,7 @@ For additional tips when working with the new queries experience or the director
 
 ## Supported features 
 
+The following sections provide an overview of the features supported to define queries and manage queries. 
 <!--- interactive, filter  --> 
 
 [!INCLUDE [temp](../includes/feature-matrix-filter-queries.md)]
@@ -81,7 +82,7 @@ For additional tips when working with the new queries experience or the director
 
 You have two ways to perform work item searches: semantic or ad hoc searches and managed queries. 
 
-### Ad hoc search
+### Ad hoc searches
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -118,7 +119,7 @@ For details about semantic or ad hoc searches, see [Perform a semantic or ad hoc
 > [!NOTE]    
 > With semantic search, you search against a more fully indexed set of fields. With ad hoc search, the number of fields that are indexed are limited.  
 
-### Managed query 
+### Managed queries 
 
 ::: moniker range=">= azure-devops-2019"  
 
