@@ -24,7 +24,7 @@
     href: import-work-items-from-csv.md 
     displayname: import, export, csv
   - name: Bulk add or modify work items (Excel)
-    href: backlogs/office/bulk-add-modify-work-items-excel.md
+    href: ../backlogs/office/bulk-add-modify-work-items-excel.md
   - name: Define a query as a hyperlink 
     href: define-query-hyperlink.md 
 - name: Samples

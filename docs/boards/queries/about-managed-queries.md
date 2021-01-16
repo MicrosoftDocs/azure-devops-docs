@@ -37,7 +37,7 @@ With queries, you can perform these functions:
 
 For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
-For specific examples, choose one of the following articles listed under [Example queries](#examples).  
+For specific examples, see [Query quick reference, Example queries](#query-index-quick-ref.md#examples).  
 
 ## Get started 
 
@@ -65,7 +65,11 @@ For additional tips when working with the new queries experience or the director
 
 ## Supported features 
 
+<!--- interactive, filter  --> 
+
 [!INCLUDE [temp](../includes/feature-matrix-filter-queries.md)]
+
+<a id="macros" /> 
 
 [!INCLUDE [temp](../includes/feature-matrix-query-macros.md)]
 
@@ -158,7 +162,7 @@ For details about managed queries, see [Define a query](using-queries.md).
 Azure Boards supports three query types. The icon next to each query indicates the query type. 
 
 > [!div class="mx-imgBorder"]  
-> ![Query type icon list](media/excel/query-types.png)
+> ![Query type icon list](../backlogs/office/media/excel/query-types.png)
 
 Wen exporting a query to Excel, the first two query types, **Flat list of work items** and **Work items and direct links** are imported as flat list queries. Only the **Tree of work items** queries import as a tree list. Direct links queries are imported as a flat list as modifying multiple types of links isn't a supported feature in Excel. 
 

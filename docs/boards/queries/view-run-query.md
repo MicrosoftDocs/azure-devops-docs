@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 01/15/2021
 ---
 
 
@@ -52,18 +52,6 @@ To run any query, expand a folder and choose the title of the query. The view op
 	> ![Screenshot of queries breadcrumb example.](media/example-queries/queries-breadcrumb-example.png)
 
 ::: moniker-end
-
-
-::: moniker range=">= azure-devops-2019"
-
-<a id="tips-queries-hub"> </a> 
-
-## Directory-focused Queries pages 
-
-The **Queries** page now contains a directory-focused view which you can filter to find specific queries of interest. Previously, the **Queries** page presented the queries folders, query editor, and query results all within the same view. 
-
-With this change, some functionality has been added and some has changed. For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml#navigate)  
-
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -122,9 +110,22 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 
 * * * 
 
+
+::: moniker range=">= azure-devops-2019"
+
+<a id="tips-queries-hub"> </a> 
+
+## Directory-focused Queries pages 
+
+The **Queries** page now contains a directory-focused view which you can filter to find specific queries of interest. Previously, the **Queries** page presented the queries folders, query editor, and query results all within the same view. 
+
+With this change, some functionality has been added and some has changed. For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml)  
+
+::: moniker-end
+
 <a id="view-rename-delete" />
 
-## View, rename, or delete a query
+## Rename or delete a query
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -149,6 +150,8 @@ Choose the :::image type="icon" source="../media/icons/context_menu.png" border=
 
 
 ::: moniker range=">= azure-devops-2019"
+
+<a id="favorites" />
 
 ## Tasks you can perform from the Favorites or All pages
 
