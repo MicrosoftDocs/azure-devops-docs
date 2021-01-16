@@ -5,6 +5,7 @@
 - name: Ad hoc search
   href: search-box-queries.md
 - name: Get started with queries
+  expanded: true
   items:
   - name: View, open, run a query 
     href: view-run-query.md
@@ -28,7 +29,6 @@
   - name: Define a query as a hyperlink 
     href: define-query-hyperlink.md 
 - name: Samples
-  expanded: true
   items:
   - name: Query by title, ID, or description
     href: titles-ids-descriptions.md 

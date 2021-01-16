@@ -37,7 +37,7 @@ With queries, you can perform these functions:
 
 For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
-For specific examples, see [Query quick reference, Example queries](#query-index-quick-ref.md#examples).  
+For specific examples, see [Query quick reference, Example queries](#query-index-quick-ref.md).  
 
 ## Get started 
 
@@ -158,15 +158,16 @@ You add and run managed queries using the built-in query-editor available from t
 
 For details about managed queries, see [Define a query](using-queries.md). 
 
-## Query types (flat, tree, direct links)
+## Query types (flat, direct links, tree)
 
-Azure Boards supports three query types. The icon next to each query indicates the query type. 
+Azure Boards supports three query types. The icon next to each query indicates the query type. The **Work items and direct links** and **Tree of work items** query types support finding work items that are linked to one another based on selected link types. Use the **Tree of work items** query type to list a hierarchically-linked set of work items, and use **Work items and direct links** for all other link types. 
 
 > [!div class="mx-imgBorder"]  
 > ![Query type icon list](../backlogs/office/media/excel/query-types.png)
 
 Wen exporting a query to Excel, the first two query types, **Flat list of work items** and **Work items and direct links** are imported as flat list queries. Only the **Tree of work items** queries import as a tree list. Direct links queries are imported as a flat list as modifying multiple types of links isn't a supported feature in Excel. 
 
+To learn more about link types, see [Link type reference](link-type-reference.md).
 
 ## Query within or across projects
 
