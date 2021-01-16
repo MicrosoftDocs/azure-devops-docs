@@ -80,7 +80,7 @@ You can use the **Tracking Changeset** window to view information such as, where
 
 2. Right-click the selected item and click **View History**.
 
-3. In the <strong>History **window, right-click the changeset that you want to view and select **Track Changeset</strong>.
+3. In the <strong>History **window, right-click the changeset that you want to view and select** Track Changeset</strong>.
 
    The **Select Branches** dialog box appears.
 
@@ -150,7 +150,7 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
         </tbody>
         </table>
 
-    -   If you selected **Selected changesets**, then the **Select changesets to merge into the target branch **page appears. Select the changeset you want to merge.
+    -   If you selected **Selected changesets**, then the **Select changesets to merge into the target branch** page appears. Select the changeset you want to merge.
 
         > [!TIP]
         > You can press and hold the CONTROL or SHIFT keys and then select multiple items in a continuous range.
