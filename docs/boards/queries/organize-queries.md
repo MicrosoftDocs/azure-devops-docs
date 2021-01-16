@@ -8,8 +8,8 @@ ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 10/16/2019
+monikerRange: '<= azure-devops'
+ms.date: 01/15/2021
 ---
 
 
@@ -28,6 +28,89 @@ Organize your personal or shared queries by adding a query folder. You can then 
 ## Open Queries 
 
 [!INCLUDE [temp](../includes/open-queries.md)] 
+
+
+
+<a id="flat-list-query"/>
+
+## Open, edit, and save a query  
+
+The easiest way to define a query is to start with an existing shared query. 
+The following example shows how to find all closed bugs by modifying the 
+*Active Bugs* shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
+
+::: moniker range=">= azure-devops-2019"  
+
+1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
+
+   > [!div class="mx-imgBorder"]  
+   > ![Run Active bugs query](media/view-run-queries/run-active-bugs.png)  
+
+   > [!TIP]  
+   > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
+
+1. Edit the query to find closed bugs and then run the query. 
+   Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects). 
+
+   > [!div class="mx-imgBorder"]
+   > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](media/using-queries-new-vsts-exp.png) 
+
+2. Save the query to your **My Queries** folder.  
+
+   > [!div class="mx-imgBorder"]  
+   > ![Save As query dialog, new experience](media/view-run-queries/save-as-new-exp.png)  
+
+   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"  
+
+1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
+
+   ![Web portal, Boards>Queries, Open Shared queries, Active Bugs](media/using-queries-active-bugs-ts.png)  
+
+   > [!TIP]  
+   > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
+
+1. Edit the query to find closed bugs and then run the query. 
+   Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).      
+	
+   ![Web portal, Queries page, Editor view of a Flat List Query](media/query-active-bugs-editor-vso.png)  
+
+2. Save the query to your **My Queries** folder.  
+	
+   ![Save Query As](media/6.png)  
+
+   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
+
+::: moniker-end  
+
+
+<a id="view-rename-delete" />
+
+## Rename or delete a query
+
+::: moniker range=">= azure-devops-2019"
+
+From either the **Favorites** or **All** page, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon of a query to run, edit, rename, or delete the query. 
+
+![New query experience, Favorites page, query context menu](media/view-run-queries/query-context-menu-favorites-page.png)  
+
+For shared queries, you can also choose to perform one of these tasks: 
+- **Add to team queries**: Select the team to add the query as a team favorite
+- **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).   
+- **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"  
+
+Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon of a query to edit, rename, or delete the query.
+
+![Web portal, Boards>Queries, Open Shared queries, Active Bugs](media/using-queries-active-bugs-ts.png)
+
+::: moniker-end
 
 
 ## Add a query folder, move items into a folder 

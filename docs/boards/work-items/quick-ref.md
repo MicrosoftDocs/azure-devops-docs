@@ -521,7 +521,7 @@ You customize work item types using the Inheritance process model.
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-You customize work item types using either the Inheritance process model or On-premises XML process model, depending on the selection made when [creating the project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2019) on which the project is defined.
+You customize work item types using either the Inheritance process model or On-premises XML process model, depending on the selection made when [you created the project collection](/azure/devops/server/admin/manage-project-collections) on which the project is defined.
 
 ### Inherited process model
 

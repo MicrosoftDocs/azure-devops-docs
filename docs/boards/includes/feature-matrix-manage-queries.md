@@ -3,33 +3,33 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 01/14/2021
+ms.date: 01/15/2021
 ---
 
 
 ### Query results and query management features
 
 The following features provide support for working with query results, saving and sharing queries, and more. 
-
+<br/>
 ---
 :::row:::
    :::column span="1":::
       - [Open and run a query](/azure/devops/boards/queries/view-run-query) 
       - [Define and edit a query](/azure/devops/boards/queries/using-queries)  
-      - Save personal and shared queries  
-      - Create a query from a backlog
+      - [Save personal and shared queries](/azure/devops/boards/queries/organize-queries#flat-list-query)  
+      - Create a query from a backlog 
       - [Create query charts](/azure/devops/report/dashboards/charts)  
       - [Choose query column options](/azure/devops/boards/backlogs/set-column-options) 
       - [Choose column sort](/azure/devops/boards/backlogs/set-column-options)  
       - [Filter a query](/azure/devops/boards/backlogs/filter-backlogs)
       - [Copy query results](/azure/devops/boards/backlogs/copy-list) 
       - [Triage query results](/azure/devops/boards/queries/triage-work-items)  
-      - [Email query results](/azure/devops/boards/queries/view-run-query#email-query-items-or-share-a-query-url) 
+      - [Email query results](/azure/devops/boards/queries/view-run-query#email-query) 
    :::column-end:::
    :::column span="1":::
       - [Create query folders](/azure/devops/boards/queries/organize-queries)   
       - [Favorite a query](/azure/devops/boards/queries/view-run-query#favorites)  
-      - [Copy Query URL](/azure/devops/boards/queries/view-run-query#email-query-items-or-share-a-query-url) 
+      - [Copy Query URL](/azure/devops/boards/queries/view-run-query#email-query) 
       - [Define a query hyperlink](/azure/devops/boards/queries/define-query-hyperlink) 
       - [Publish/refresh a query (Excel)](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)  
       - [Import/export a query (csv)](/azure/devops/boards/queries/import-work-items-from-csv)  
@@ -39,6 +39,3 @@ The following features provide support for working with query results, saving an
    :::column-end:::
 :::row-end:::
 ---
-
-
-

@@ -5,11 +5,11 @@ description: Create flat-list, tree, or direct-links queries to list, triage, up
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
-monikerRange: ">= tfs-2013"
+monikerRange: '<= azure-devops'
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 07/09/2020
+ms.date: 01/15/2021
 ---
 
 # Create and save managed queries
@@ -26,7 +26,6 @@ If you find that your queries take too long to return results, review the [Guida
 In this article you'll learn:  
 
 > [!div class="checklist"]    
-> * How to open and edit a query   
 > * How to add or create a query 
 > * How to group query clauses 
 > * Understand when to use a flat-list, tree, or direct-links query 
@@ -40,61 +39,6 @@ For quick access to all query tasks, supported operators&mdash;such as, `Contain
 
 [!INCLUDE [temp](../includes/open-queries.md)] 
 
-
-<a id="flat-list-query"/>
-
-## Open, edit, and save a query  
-
-The easiest way to define a query is to start with an existing shared query. 
-The following example shows how to find all closed bugs by modifying the 
-*Active Bugs* shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
-
-::: moniker range=">= azure-devops-2019"  
-
-1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
-
-   > [!div class="mx-imgBorder"]  
-   > ![Run Active bugs query](media/view-run-queries/run-active-bugs.png)  
-
-   > [!TIP]  
-   > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
-
-1. Edit the query to find closed bugs and then run the query. 
-   Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects). 
-
-   > [!div class="mx-imgBorder"]
-   > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](media/using-queries-new-vsts-exp.png) 
-
-2. Save the query to your **My Queries** folder.  
-
-   > [!div class="mx-imgBorder"]  
-   > ![Save As query dialog, new experience](media/view-run-queries/save-as-new-exp.png)  
-
-   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"  
-
-1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
-
-   ![Web portal, Boards>Queries, Open Shared queries, Active Bugs](media/using-queries-active-bugs-ts.png)  
-
-   > [!TIP]  
-   > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
-
-1. Edit the query to find closed bugs and then run the query. 
-   Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).      
-	
-   ![Web portal, Queries page, Editor view of a Flat List Query](media/query-active-bugs-editor-vso.png)  
-
-2. Save the query to your **My Queries** folder.  
-	
-   ![Save Query As](media/6.png)  
-
-   To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
-
-::: moniker-end  
 
 <a id="flat-list" />
 

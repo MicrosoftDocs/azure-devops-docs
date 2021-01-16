@@ -1,14 +1,14 @@
 ---
 title: View or run a query 
 titleSuffix: Azure Boards
-description: View, run, or favorite a query in Azure Boards, Azure DevOps, & Team Foundation Server
+description: View, run, or favorite a query in Azure Boards, Azure DevOps 
 ms.custom: boards-queries, devx-track-azurecli
 ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 01/15/2021
 ---
 
@@ -123,30 +123,6 @@ With this change, some functionality has been added and some has changed. For mo
 
 ::: moniker-end
 
-<a id="view-rename-delete" />
-
-## Rename or delete a query
-
-::: moniker range=">= azure-devops-2019"
-
-From either the **Favorites** or **All** page, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon of a query to run, edit, rename, or delete the query. 
-
-![New query experience, Favorites page, query context menu](media/view-run-queries/query-context-menu-favorites-page.png)  
-
-For shared queries, you can also choose to perform one of these tasks: 
-- **Add to team queries**: Select the team to add the query as a team favorite
-- **Security...**: to set permissions for the query. To learn more, see [Set query permissions](set-query-permissions.md).   
-- **Add to dashboard**: Adds a Query tile widget to the team dashboard you select. To learn more, see [Add widgets to a dashboard](../../report/dashboards/add-widget-to-dashboard.md). 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"  
-
-Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon of a query to edit, rename, or delete the query.
-
-![Web portal, Boards>Queries, Open Shared queries, Active Bugs](media/using-queries-active-bugs-ts.png)
-
-::: moniker-end
 
 
 ::: moniker range=">= azure-devops-2019"

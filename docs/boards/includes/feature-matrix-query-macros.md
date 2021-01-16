@@ -15,6 +15,8 @@ The following table summarizes the query macros or variables supported by the Az
 > You can use certain macros from the web portal only. Tfese include the **@CurrentIteration**, **@CurrentIteration +/- n**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, and **@TeamAreas** macros. These macros aren't supported when exporting a query to Excel, notification filters, or exercised from Team Explorer, or REST APIs. 
 
 For more detailed descriptions and links to examples, see [Query fields, operators, and macros](/azure/devops/boards/queries/query-operators-variables). 
+
+
 ---
 :::row:::
    :::column span="1":::
