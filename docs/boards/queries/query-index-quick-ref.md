@@ -22,8 +22,8 @@ For the mechanics of constructing and saving queries, see [Use the query editor 
 
 For specific examples, choose one of the following articles listed under [Query samples for select fields](#samples).  
 
-
-<a id="examples" />
+ 
+<a id="examples" />  
 
 ## Example queries 
 

@@ -11,6 +11,8 @@ ms.date: 01/15/2021
 
 The following features provide support for working with query results, saving and sharing queries, and more. 
 <br/>
+
+
 ---
 :::row:::
    :::column span="1":::

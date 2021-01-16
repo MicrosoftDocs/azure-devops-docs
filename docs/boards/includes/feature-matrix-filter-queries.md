@@ -55,6 +55,17 @@ The following table summarizes the query filter features supported by each Azure
 ---
 :::row:::
    :::column span="1":::
+      [Linked work item searches](/azure/devops/boards/queries/linking-attachments)   
+   :::column-end:::
+   :::column span="4":::
+      Find work items based on direct links or topological/hierarchical link types. 
+   :::column-end:::
+   :::column span="1":::
+      TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
+   :::column-end:::
+:::row-end:::---
+:::row:::
+   :::column span="1":::
         [Historical String and DateTime field queries](/azure/devops/boards/queries/query-by-workflow-changes) 
    :::column-end:::
    :::column span="1":::
