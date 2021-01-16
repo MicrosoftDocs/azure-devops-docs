@@ -32,6 +32,7 @@ Organize your personal or shared queries by adding a query folder. You can then 
 
 
 <a id="flat-list-query"/>
+<a id="save" />
 
 ## Open, edit, and save a query  
 

@@ -140,7 +140,7 @@ You can list work items based on the following criteria...
       - [Export a query](using-queries.md#export-query) 
       - [Favorite a query](view-run-query.md) 
       - [Filter a query](../backlogs/filter-backlogs.md) 
-      - [Flat-list query](using-queries.md#flat-list-query) 
+      - [Flat-list query](using-queries.md#flat-list) 
       - [Group a clause](using-queries.md#group-clauses) 
       - [Open a query](using-queries.md) 
       - [Query across projects](using-queries.md#across-projects) 
@@ -148,11 +148,11 @@ You can list work items based on the following criteria...
       - [Run a query](using-queries.md) 
    :::column-end:::
    :::column span="1":::
-      - [Save a query](using-queries.md#flat-list-query) 
+      - [Save a query](organize-queries.md#save) 
       - [Set query permissions](set-query-permissions.md) 
       - [Tree query](using-queries.md#tree-query) 
       - [Triage query items](triage-work-items.md) 
-      - [View a query](view-run-query.md#view-rename-delete) 
+      - [View a query](view-run-query.md) 
       - [Understand link types](link-type-reference.md) 
       - [Ungroup a clause](using-queries.md#ungroup-clause) 
       - [Work Item Query Language (WIQL)](wiql-syntax.md) 

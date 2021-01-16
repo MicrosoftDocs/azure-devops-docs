@@ -157,8 +157,8 @@ For details on adding new queries, see [Create managed queries with the query ed
 
 Enter a keyword into the filter box to filter the set of queries displayed on either the **Favorites** or **All** pages. 
 
-[!div class="mx-imgBorder"]  
-![Screenshot showing all queries in the project filtered by WIT IQ keyword criteria.](media/queries-all-filter.png)
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing all queries in the project filtered by WIT IQ keyword criteria.](media/queries-all-filter.png)
 
 ::: moniker-end
 
