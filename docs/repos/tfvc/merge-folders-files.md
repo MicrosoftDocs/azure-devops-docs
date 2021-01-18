@@ -80,7 +80,7 @@ You can use the **Tracking Changeset** window to view information such as, where
 
 2. Right-click the selected item and click **View History**.
 
-3. In the <strong>History **window, right-click the changeset that you want to view and select** Track Changeset</strong>.
+3. In the **History** window, right-click the changeset you want to view and select **Track Changeset**.
 
    The **Select Branches** dialog box appears.
 
