@@ -187,7 +187,7 @@ This YAML example runs a specific service:
     projectName: $(Build.Repository.Name)
     qualifyImageNames: true
     serviceName: myhealth.web
-    ports: 80
+    ports: 80:80
     detached: true
 ```
 
