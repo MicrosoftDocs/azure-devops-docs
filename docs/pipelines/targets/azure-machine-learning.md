@@ -94,7 +94,7 @@ To create a pipeline in the classic editor, use our template so that you automat
    |workspaceName     | Name of the workspace (will be created if it doesn't already exist) |
    |runConfig     | Name of the runconfig file (the text before *.runconfig if you're looking at your file system). Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/examples/runconfigs/sklearn.runconfig)|
    |modelAssetPath     | The cloud path where the experiment run stores the model file. This path is the directory from which the score.py file loads the model. This path may either be the root folder of all model files or the full path of the model file itself, depending on how score.py loads it|
-   |modelName     | Name of model to register. This must be the same as used by score.py to load models|
+   |modelName     | Name of model to register. This name must be the same one used in score.py to load models|
    |serviceName     | Name of the service to be deployed (will be overwritten if already present)|
    |inferenceConfigFile      | Path to a JSON or YAML file containing inference configuration. Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/models/diabetes/config/inference-config.yml)|
    |deploymentConfigFile     |  Path to a JSON or YAML file containing deployment metadata. Sample [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmsdata.visualstudio.com%2FVienna%2F_git%2FAzureMlCli%3Fpath%3D%252Fsrc%252Fazure-cli-ml%252Ftests%252Fo16n_unit_tests%252Fdata%252FAksDeployConfig.yml%26version%3DGBmaster&data=01%7C01%7Cv-srmar%40microsoft.com%7C73ff3ab12e664f0c9e8a08d6cf9d4ecc%7C72f988bf86f141af91ab2d7cd011db47%7C1&sdata=AQS2lpDU97igwSw7zRO%2FAqJLalVhvHvHxBogByRsgoE%3D&reserved=0)|
@@ -111,7 +111,7 @@ There are two primary ways to use automation with the Azure Machine Learning ser
 
 * The [Machine Learning CLI](/azure/machine-learning/service/reference-azure-machine-learning-cli) is an extension to the Azure CLI. It provides commands for working with the Azure Machine Learning service.
 * The [Azure Machine Learning SDK](/python/api/overview/azure/ml/intro?view=azure-ml-py&preserve-view=true) is Python package that provides programmatic access to the Azure Machine Learning service.
-   * The Python SDK includes [automated machine learning](/azure/machine-learning/service/concept-automated-ml) to assist in automating the time consuming, iterative tasks of machine learning model development. 
+   * The Python SDK includes [automated machine learning](/azure/machine-learning/service/concept-automated-ml) to help automating the time consuming, iterative tasks of machine learning model development. 
 
 The example with this document uses the Machine Learning CLI.
 
