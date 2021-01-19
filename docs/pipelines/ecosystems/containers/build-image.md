@@ -16,7 +16,6 @@ monikerRange: 'azure-devops'
 Get started with container images by using Azure Pipelines to build an image. All you need to build an image is a Dockerfile in your repository. 
 
 You can build both Linux and Windows containers depending on what agent you use in your pipeline.
-
 Once you build an image, you can then push it to Azure Container Registry, Docker Hub, and Google Container registry. See [push an image](push-image.md) to learn more about pushing images to container registries. 
 
 
@@ -27,7 +26,7 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
     ```
     https://github.com/MicrosoftDocs/pipelines-javascript-docker
     ```
-### Build a Linux or Windows image
+## Build a Linux or Windows image
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 2. Go to **Pipelines**, and then select **New Pipeline**.
@@ -39,30 +38,31 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
 
 4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you are building a Linux app, use `ubuntu-1604` for your vmImage.  You can use `windows-latest` for your vmImage for windows apps. 
 
-
-      ```YAML
-       trigger:
-       - main
-       
-       pool:
-         vmImage: 'ubuntu-1604' 
-       
-       variables:
-         imageName: 'pipelines-javascript-docker'
-       
-       steps:
-       - task: Docker@2
-         displayName: Build an image
-         inputs:
-           repository: $(imageName)
-           command: build
-           Dockerfile: app/Dockerfile
-       ```
-    
     Windows container images can be built using either Microsoft hosted Windows agents or Windows platform based self-hosted agents (all Microsoft hosted Windows platform-based agents are shipped with Moby engine and client needed for Docker builds). Linux container images can be built using Microsoft hosted Ubuntu-16.04 agents or Linux platform based self-hosted agents. Learn more about the Windows and Linux agent options available with [Microsoft hosted agents](../../agents/hosted.md).
     
     > [!NOTE]
     > Currently the Microsoft hosted MacOS agents can't be used to build container images as the Moby engine needed for building the images is not pre-installed on these agents.
+
+
+    ```yaml
+           trigger:
+           - main
+           
+           pool:
+             vmImage: 'ubuntu-1604' # set to windows-latest or another Windows vmImage for Windows builds
+           
+           variables:
+             imageName: 'pipelines-javascript-docker'
+           
+           steps:
+           - task: Docker@2
+             displayName: Build an image
+             inputs:
+               repository: $(imageName)
+               command: build
+               Dockerfile: app/Dockerfile
+    ```
+    
     
 5. Select **Save and run**. You'll see a prompt to add a commit message when adding `azure-pipelines.yml`  to your repository. Edit the message and then select **Save and run** again to see the pipeline in action.
 
