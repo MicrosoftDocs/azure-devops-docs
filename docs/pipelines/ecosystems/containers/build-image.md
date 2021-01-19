@@ -23,7 +23,7 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
 ## Prerequisites
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - A GitHub account. If you don't have one, sign up for [free](https://github.com/join). 
-- A GitHub repository with a Dockerfile. If you do not have a repository to use, fork the following repository containing a sample application and a Dockerfile:
+- A GitHub repository with a Dockerfile. If you do not have a repository to use, fork this repository that contains a sample application and a Dockerfile:
     ```
     https://github.com/MicrosoftDocs/pipelines-javascript-docker
     ```
@@ -37,7 +37,7 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
    > You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
    > You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
 
-4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you are building a Linux app, use `ubuntu-1604` for your vmImage. If you are building a Windows app, you can use `windows-latest` for your vmImage. 
+4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you are building a Linux app, use `ubuntu-1604` for your vmImage.  You can use `windows-latest` for your vmImage for windows apps. 
 
 
       ```YAML
@@ -64,7 +64,7 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
     > [!NOTE]
     > Currently the Microsoft hosted MacOS agents can't be used to build container images as the Moby engine needed for building the images is not pre-installed on these agents.
     
-5. Select **Save and run**. When you are prompted for a commit message as Azure Pipelines adds the azure-pipelines.yml file to your repository. After editing the message, select **Save and run** again to see the pipeline in action.
+5. Select **Save and run**. You'll see a prompt to add a commit message when adding `azure-pipelines.yml`  to your repository. Edit the message and then select **Save and run** again to see the pipeline in action.
 
    > [!TIP]
    > Learn more about how to push the image to [Azure Container Registry](acr-template.md) or [push it other container registries](./push-image.md) such as Google Container Registry or Docker Hub.
@@ -90,7 +90,7 @@ Some commonly used images are pre-cached on the Microsoft-hosted agents to avoid
 
 ### How do I set the BuildKit variable for my docker builds?
 
-[BuildKit](https://github.com/moby/buildkit) introduces build improvements in the areas of performance, storage management, feature functionality, and security. To enable BuildKit based docker builds, set the DOCKER_BUILDKIT variable as shown in the following snippet:
+[BuildKit](https://github.com/moby/buildkit) introduces build improvements in the areas of performance, storage management, feature functionality, and security. To enable BuildKit based docker builds, set the DOCKER_BUILDKIT variable.
 
 ```YAML
 trigger:
@@ -118,7 +118,7 @@ steps:
 
 ### How can I use a self-hosted agent?
 
-Docker needs to be installed on self-hosted agent machines prior to runs that try to build container images. To address this issue, a step corresponding to [Docker installer task](../../tasks/tool/docker-installer.md) can be placed in the pipeline definition prior to the step related to [Docker task](../../tasks/build/docker.md).
+You need to have Docker installed on your self-hosted machine before creating a container image. Add the [Docker installer task](../../tasks/tool/docker-installer.md) in your pipeline before to the [Docker task](../../tasks/build/docker.md) that builds your image. 
 
 
 ### How can I create a script-based Docker build instead of using the docker task?
@@ -129,17 +129,19 @@ You can use the command `build` (or any other Docker command).
 docker build -f Dockerfile -t foobar.azurecr.io/hello:world .
 ```
 
-The above command results in an equivalent image in terms of content as the one built by using the Docker task. The Docker task itself internally calls docker binary on script, but also stitches together a few more commands to provide a few additional benefits as described in the [Docker task's documentation](../../tasks/build/docker.md).
+This command creates an equivalent image to one built with the Docker task. 
+The Docker task itself internally calls the Docker binary on a script, and also stitches together a few more commands to provide a few more benefits. Learn more in the [Docker task documentation](../../tasks/build/docker.md).
 
 ### Is reutilizing layer caching during builds possible on Azure Pipelines?
 
 In the current design of Microsoft-hosted agents, every job is dispatched to a newly provisioned virtual machine (based on the image generated from [azure-pipelines-image-generation](https://github.com/microsoft/azure-pipelines-image-generation) repository templates). These virtual machines are cleaned up after the job reaches completion, not persisted and thus not reusable for subsequent jobs. The ephemeral nature of virtual machines prevents the reuse of cached Docker layers.
 
-However, Docker layer caching is possible using self-hosted agents as the ephemeral lifespan problem is not applicable for these agents.
+However, you can cache Docker layers with self-hosted agents because the ephemeral lifespan problem is not applicable for these agents.
 
 ### How to build Linux container images for architectures other than x64?
 
-When you use Microsoft-hosted Linux agents, you create Linux container images for the x64 architecture. To create images for other architectures (for example, x86, ARM, and so on), you can use a machine emulator such as [QEMU](https://www.qemu.org/). The following steps illustrate how to create an ARM container image:
+When you use Microsoft-hosted Linux agents, you create Linux container images for the x64 architecture. To create images for other architectures (for example, x86, ARM, and so on), you can use a machine emulator such as [QEMU](https://www.qemu.org/). These steps show how to create an ARM container image.
+
 1. Author your Dockerfile so that an Intel binary of QEMU exists in the base image. For example, the raspbian image already has this.
     ```
     FROM balenalib/rpi-raspbian
