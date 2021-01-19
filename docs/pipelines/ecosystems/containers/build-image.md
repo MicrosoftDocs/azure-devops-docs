@@ -36,15 +36,9 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
    > You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
    > You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
 
-4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you are building a Linux app, use `ubuntu-1604` for your vmImage.  You can use `windows-latest` for your vmImage for windows apps. 
-
-    Windows container images can be built using either Microsoft hosted Windows agents or Windows platform based self-hosted agents (all Microsoft hosted Windows platform-based agents are shipped with Moby engine and client needed for Docker builds). Linux container images can be built using Microsoft hosted Ubuntu-16.04 agents or Linux platform based self-hosted agents. Learn more about the Windows and Linux agent options available with [Microsoft hosted agents](../../agents/hosted.md).
-    
-    > [!NOTE]
-    > Currently the Microsoft hosted MacOS agents can't be used to build container images as the Moby engine needed for building the images is not pre-installed on these agents.
-
-
-    ```yaml
+4. Select **Starter pipeline**. Replace the contents of azure-pipelines.yml with this code. If you are building a Linux app, use `ubuntu-1604` for your `vmImage`.  You can use `windows-latest` for your `vmImage` for Windows. 
+ 
+   ```yaml
            trigger:
            - main
            
@@ -62,8 +56,12 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
                command: build
                Dockerfile: app/Dockerfile
     ```
+
+    Windows container images can be built using either Microsoft hosted Windows agents or Windows platform based self-hosted agents (all Microsoft hosted Windows platform-based agents are shipped with Moby engine and client needed for Docker builds). Linux container images can be built using Microsoft hosted Ubuntu-16.04 agents or Linux platform based self-hosted agents. Learn more about the Windows and Linux agent options available with [Microsoft hosted agents](../../agents/hosted.md).
     
-    
+    > [!NOTE]
+    > Currently the Microsoft hosted MacOS agents can't be used to build container images as the Moby engine needed for building the images is not pre-installed on these agents.
+        
 5. Select **Save and run**. You'll see a prompt to add a commit message when adding `azure-pipelines.yml`  to your repository. Edit the message and then select **Save and run** again to see the pipeline in action.
 
    > [!TIP]
