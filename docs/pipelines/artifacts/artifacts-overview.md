@@ -1,15 +1,14 @@
 ---
 title: Artifacts in Azure Pipelines
-titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
-description: Learn how to publish and consume many different types of packages and artifacts with Azure Pipelines and Team Foundation Server (TFS)
+description: Learn how to publish and consume many different types of packages with Azure Pipelines
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
 ms.date: 02/26/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Overview of artifacts in Azure Pipelines
+# Overview of Artifacts in Azure Pipelines
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -41,3 +40,9 @@ The following table describes supported artifact types in Azure Pipelines.
 ## How do I publish and consume artifacts?
 
 Each kind of artifact has a different way of being published and consumed. Some artifacts are specific to particular development tools, such as .NET, Node.js/JavaScript, Python, and Java. Other artifact types offer more generic file storage, such as pipeline artifacts and Universal Packages. Refer to the earlier table for specific guidance on each kind of artifact that we support.
+
+## What's next?
+
+- [Publish and download artifacts in Azure Pipelines](pipeline-artifacts.md)
+- [Build Artifacts](build-artifacts.md)
+- [Releases in Azure Pipelines](../release/releases.md)
