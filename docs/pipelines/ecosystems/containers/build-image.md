@@ -72,14 +72,6 @@ Once you build an image, you can then push it to Azure Container Registry, Docke
 ## Clean up resources
 
 If you're not going to continue to use this application, delete your pipeline and code repository.
-
-## Next steps
-
-Advance to the next article to learn how to push an image to a container registry. 
-> [!div class="nextstepaction"]
-> [Push an image](push-image.md)
-
-
 ## FAQ
 
 ### What pre-cached images are available on hosted agents?
@@ -153,5 +145,9 @@ When you use Microsoft-hosted Linux agents, you create Linux container images fo
 
 ### How to run tests and publish test results for containerized applications?
 
-For different options on testing containerized applications and publishing the resulting test results, check out [Publish Test Results task](../../tasks/test/publish-test-results.md#docker)
+For different options on testing containerized applications and publishing the resulting test results, check out [Publish Test Results task](../../tasks/test/publish-test-results.md#docker).
+## Next steps
 
+Advance to the next article to learn how to push an image to a container registry. 
+> [!div class="nextstepaction"]
+> [Push an image](push-image.md)
