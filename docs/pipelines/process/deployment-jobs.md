@@ -115,6 +115,18 @@ strategy:
           ...
 ```
 
+If you are using self-hosted agents, you can use the workspace clean options to clean your deployment workspace.
+
+```yaml
+  jobs:
+  - deployment: deploy
+    pool:
+      vmImage: 'Ubuntu-16.04'
+      workspace:
+        clean: all
+    environment: staging
+```
+
 ### Rolling deployment strategy
 
 A rolling deployment replaces instances of the previous version of an application with instances of the new version of the application on a fixed set of virtual machines (rolling set) in each iteration. 
