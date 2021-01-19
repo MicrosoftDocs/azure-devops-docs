@@ -33,7 +33,10 @@ The following table describes supported artifact types in Azure Pipelines.
 | [PyPI](pypi.md)                            | You can publish Python packages to Azure Artifacts feeds or PyPI repository.                                           |
 | [Symbols](symbols.md)                      | [Symbol files](../../artifacts/concepts/symbols.md) contain debugging information for compiled executables. You can publish symbols to symbol servers. Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing the specific product, package, or build information.                                                                                                                                                    |
 | [Universal packages](universal-packages.md)| Universal Packages store one or more files together in a single unit that has a name and version. Unlike pipeline artifacts that reside in the pipeline, Universal Packages reside within a feed in Azure Artifacts.                                                                    |
-                 
+
+> [!NOTE]
+> Artifacts can be produced by different types of sources. See [Release Artifacts and Artifact sources](../release/artifacts.md) to learn about the different types of sources and how to configure your Azure pipelines to deploy from them.
+
 ## How do I publish and consume artifacts?
 
 Each kind of artifact has a different way of being published and consumed. Some artifacts are specific to particular development tools, such as .NET, Node.js/JavaScript, Python, and Java. Other artifact types offer more generic file storage, such as pipeline artifacts and Universal Packages. Refer to the earlier table for specific guidance on each kind of artifact that we support.
