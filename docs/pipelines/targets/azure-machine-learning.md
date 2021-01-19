@@ -1,25 +1,31 @@
 ---
-title: Azure Machine Learning training and deployment
+title: Data pipelines, automated training, and deployment of machine learning models 
 titleSuffix: Azure Pipelines
-description: Train machine learning models and deploy to web services from Azure Pipelines. Learn how to create a pipeline that uses the Azure Machine Learning service to train and deploy models.
+description: Use Azure Pipelines for flexible MLOps automation
 services: machine-learning
 ms.topic: tutorial
 manager: jillfra
 ms.assetid: C426EDB7-675F-41D7-9AFF-44540D6402A6
 ms.author: atulmal
+ms.reviewer: laobri
 author: azooinmyluggage
-ms.date: 09/24/2019 
+ms.date: 01/13/2021
 ms.custom: devx-track-azurecli
 monikerRange: azure-devops
 ---
 
-# Train and deploy machine learning models
+# Prepare data, train, deploy, and monitor machine learning models with Azure Pipelines
 
 [!INCLUDE [include](../includes/version-team-services.md)]
 
-You can use a pipeline to automatically train and deploy machine learning models with the Azure Machine Learning service.
-Here you'll learn how to build a machine learning model, and then deploy the model as a web service. 
-You'll end up with a pipeline that you can use to train your model.
+You can use a pipeline to automate the machine learning lifecycle. Some of the operations you can automate are:
+
+* Data preparation (extract, transform, load operations)
+* Training machine learning models with on-demand scale-out and scale-up
+* Deployment of machine learning models as public or private web services
+* Monitoring deployed machine learning models (such as for performance or data-drift analysis)
+
+This article will teach you how to create an Azure Pipeline that builds and deploys a machine learning model as a web service.
 
 ## Prerequisites
 
@@ -35,7 +41,7 @@ Follow the steps in [Azure Machine Learning quickstart: portal](/azure/machine-l
 https://github.com/MicrosoftDocs/pipelines-azureml
 ```
 
-This sample includes an `azure-pipelines.yml` file at the root of the repository. 
+This sample includes a file _diabetes-train-and-deploy.yml_ in the directory _pipelines/_.
 
 ## Sign in to Azure Pipelines
 
@@ -59,7 +65,7 @@ When your new pipeline appears:
 
 3. When you're ready, select **Save and run**.
 
-4. You're prompted to commit your changes to the _azure-pipelines.yml_ file in your repository. After you're happy with the message, select **Save and run** again.
+4. You're prompted to commit your changes to the _diabetes-train-and-deploy.yml_ file in your repository. After you're happy with the message, select **Save and run** again.
 
    If you want to watch your pipeline in action, select the build job.
 
