@@ -91,10 +91,10 @@ To create a pipeline in the classic editor, use our template so that you automat
    |Variables  |Description  |
    |---------|---------|
    |resourceGroupName     | Name of an existing resource group|
-   |workspaceName     | Name of the workspace (will be created if it does not already exist) |
-   |runConfig     | Name of the runconfig file (the text before *.runconfig if you are looking at your file system). Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/examples/runconfigs/sklearn.runconfig)|
-   |modelAssetPath     | The cloud path where the experiment run stores the model file. This should be equivalent to the path which will be used as the working directory when loading individual models in the score.py file. This could either be the root folder of all model files or the full path of the model file itself depending on how score.py loads it|
-   |modelName     | Name of model to register. This should be the same as used by the score.py when loading models|
+   |workspaceName     | Name of the workspace (will be created if it doesn't already exist) |
+   |runConfig     | Name of the runconfig file (the text before *.runconfig if you're looking at your file system). Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/examples/runconfigs/sklearn.runconfig)|
+   |modelAssetPath     | The cloud path where the experiment run stores the model file. This path is the directory from which the score.py file loads the model. This path may either be the root folder of all model files or the full path of the model file itself, depending on how score.py loads it|
+   |modelName     | Name of model to register. This must be the same as used by score.py to load models|
    |serviceName     | Name of the service to be deployed (will be overwritten if already present)|
    |inferenceConfigFile      | Path to a JSON or YAML file containing inference configuration. Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/models/diabetes/config/inference-config.yml)|
    |deploymentConfigFile     |  Path to a JSON or YAML file containing deployment metadata. Sample [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmsdata.visualstudio.com%2FVienna%2F_git%2FAzureMlCli%3Fpath%3D%252Fsrc%252Fazure-cli-ml%252Ftests%252Fo16n_unit_tests%252Fdata%252FAksDeployConfig.yml%26version%3DGBmaster&data=01%7C01%7Cv-srmar%40microsoft.com%7C73ff3ab12e664f0c9e8a08d6cf9d4ecc%7C72f988bf86f141af91ab2d7cd011db47%7C1&sdata=AQS2lpDU97igwSw7zRO%2FAqJLalVhvHvHxBogByRsgoE%3D&reserved=0)|
@@ -117,15 +117,15 @@ The example with this document uses the Machine Learning CLI.
 
 ## Planning
 
-Before you using Azure Pipelines to automate model training and deployment, you must understand the files needed by the model and what indicates a "good" trained model.
+Before you use Azure Pipelines to automate model training and deployment, you must understand the files needed by the model and what indicates a "good" trained model.
 
 ### Machine learning files
-
+ƒ
 In most cases, your data science team will provide the files and resources needed to train the machine learning model. The following files in the example project would be provided by the data scientists:
 
-* __Training script__ (`train.py`): The training script contains logic specific to the model that you are training.
+* __Training script__ (`train.py`): The training script contains logic specific to the model that you're training.
 * __Scoring file__ (`score.py`): When the model is deployed as a web service, the scoring file receives data from clients and scores it against the model. The output is then returned to the client.
-* __RunConfig settings__ (`sklearn.runconfig`): Defines how the training script is ran on the compute target that is used for training.
+* __RunConfig settings__ (`sklearn.runconfig`): Defines how the training script is run on the compute target that is used for training.
 * __Training environment__ (`myenv.yml`): Defines the packages needed to run the training script.
 * __Deployment environment__ (`deploymentConfig.yml`): Defines the resources and compute needed for the deployment environment.
 * __Deployment environment__ (`inferenceConfig.yml`): Defines the packages needed to run and score the model in the deployment environment.
@@ -143,11 +143,9 @@ The files created by this command are stored in the `.azureml` directory.
 
 The example pipeline deploys the trained model without doing any performance checks. In a production scenario, you may want to log metrics so that you can determine the "best" model.
 
-For example, you have a model that is already deployed and has an accuracy of 90. You train a new model based on new checkins to the repo, and the accuracy is only 80, so you don't want to deploy it. This is an example of a metric that you can create automation logic around, as you can do a simple comparison to evaluate the model. In other cases, you may have several metrics that are used to indicate the "best" model, and must be evaluated by a human before deployment.
+For example, you have a model that is already deployed and has an accuracy of 90. You train a new model based on new checkins to the repo, and the accuracy is only 80, so you don't want to deploy it. You can use a metric such as this to build automation logic, as you can directly rank different models. In other cases, you may have several metrics that are used to indicate the "best" model. In this case, choosing the best model requires human judgement. 
 
 Depending on what "best" looks like for your scenario, you may need to create a [release pipeline](../release/index.md) where someone must inspect the metrics to determine if the model should be deployed.
-
-You should work with your data scientists to understand what metrics are important for your model.
 
 To log metrics during training, use the [Run](/python/api/azureml-core/azureml.core.run.run?view=azure-ml-py&preserve-view=true) class.
 
@@ -165,7 +163,7 @@ To create a service connection, see [Create an Azure service connection](../libr
 
 ## Machine Learning CLI
 
-The following Azure Machine Learning service CLI commands are used in the example for this documemt:
+The following Azure Machine Learning service CLI commands are used in the example for this document:
 
 | Command | Purpose |
 | ----- | -----| 
