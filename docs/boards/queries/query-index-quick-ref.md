@@ -137,13 +137,13 @@ You can list work items based on the following criteria...
    :::column-end:::
    :::column span="1":::
       - [Email a query](view-run-query.md#email-query) 
-      - [Export a query](using-queries.md#export-query) 
+      - [Export a query](about-managed-queries.md#export-query) 
       - [Favorite a query](view-run-query.md) 
       - [Filter a query](../backlogs/filter-backlogs.md) 
       - [Flat-list query](using-queries.md#flat-list) 
       - [Group a clause](using-queries.md#group-clauses) 
       - [Open a query](using-queries.md) 
-      - [Query across projects](using-queries.md#across-projects) 
+      - [Query across projects](about-managed-queries.md#across-projects) 
       - [Rename a query](organize-queries.md#view-rename-delete) 
       - [Run a query](using-queries.md) 
    :::column-end:::
@@ -252,7 +252,7 @@ The following table indicates the operators and macros available for the differe
 4. The <strong>@Follows</strong> macro is supported for TFS 2017 and later versions.
 5. The <strong>@MyRecentActivity</strong>, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> macros are supported for Azure Boards and TFS 2018.2 and later versions.
 6. The <strong>@RecentProjectActivity</strong> macro is supported for Azure Boards only at this time.
-7. The <strong>@Project</strong> macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+7. The <strong>@Project</strong> macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](about-managed-queries.md#across-projects). 
 8. The <strong>@TeamAreas</strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 9. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
 11. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
