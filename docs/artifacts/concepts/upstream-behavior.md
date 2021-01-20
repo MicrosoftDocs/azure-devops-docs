@@ -27,3 +27,13 @@ Users will still be able to override the new upstream behavior and consume packa
 
 > [!NOTE]
 > The new behavior won't affect any package versions that are already in use. Those are stored in the feed's `@local` view.
+
+## Scenarios
+
+Below are few common scenarios where the upstream behavior will be triggered to block external packages as well as cases where no blockage to the public packages is needed.
+
+### Public versions will be blocked
+
+- **Internal package version made public**: In this scenario, an existing package hosted in the feed is made public. The upstream behavior in this case will be triggered to block any previously unused public package versions (untrusted packages). 
+
+    :::image type="content" source="media\internal-package-made-public.png" alt-text="Internal package version made public":::
