@@ -19,7 +19,7 @@ The following features provide support for working with query results, saving an
       - [Open and run a query](/azure/devops/boards/queries/view-run-query) 
       - [Define and edit a query](/azure/devops/boards/queries/using-queries)  
       - [Save personal and shared queries](/azure/devops/boards/queries/organize-queries#flat-list-query)  
-      - Create a query from a backlog 
+      - [Create a query from a backlog](../backlogs/product-backlog-controls.md)
       - [Create query charts](/azure/devops/report/dashboards/charts)  
       - [Choose query column options](/azure/devops/boards/backlogs/set-column-options) 
       - [Choose column sort](/azure/devops/boards/backlogs/set-column-options)  
