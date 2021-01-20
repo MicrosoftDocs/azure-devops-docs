@@ -22,3 +22,8 @@ Previously, Artifact feeds combined a list of available package versions from bo
 The new upstream behavior will provide another layer of security by blocking the exposure to malicious packages that may infiltrate the public feeds.
 
 With the new behavior, when a package is published to your Azure Artifacts feed, same versions of that package will not be made available from the public registry.
+
+Users will still be able to override the new upstream behavior and consume packages from the public registries if they chose to do so.
+
+> [!NOTE]
+> The new behavior won't affect any package versions that are already in use. Those are stored in the feed's `@local` view.
