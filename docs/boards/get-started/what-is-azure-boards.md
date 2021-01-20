@@ -363,7 +363,7 @@ Most work is tracked within a project. However, many enterprises create several 
 
 
 To track work across several projects, you can: 
-- [Create work item queries that list work items across projects](../queries/using-queries.md#query-across-projects)
+- [Create work item queries that list work items across projects](../queries/about-managed-queries.md#across-projects)
 - [Gain visibility across teams](../plans/visibility-across-teams.md)
 
 ## Get access to more tools 

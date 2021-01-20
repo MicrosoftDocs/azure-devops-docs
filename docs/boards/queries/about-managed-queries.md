@@ -171,7 +171,7 @@ To learn more about link types, see [Link type reference](link-type-reference.md
 
 ## Query within or across projects
 
-By default, you query within a single project. However, using the query editor, you can [query across projects](using-queries.md#across-projects). 
+By default, you query within a single project. However, using the query editor, you can [query across projects](about-managed-queries.md#across-projects). 
 
 
 <a id="across-projects" />  

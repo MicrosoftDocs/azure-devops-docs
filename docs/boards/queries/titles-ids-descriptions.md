@@ -51,7 +51,7 @@ Query clauses that specify a text or rich-text field can use the operators and m
 #### Notes:  
 
 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
-2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](about-managed-queries.md#across-projects). 
 
 
 ## Use `Contains words` for string matches
@@ -210,7 +210,7 @@ Team Project
 </td>
 <td>
 <p>The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. </p>
-<blockquote><strong>Note:</strong>&#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see <a href="using-queries.md#across-projects" data-raw-source="[Example queries, query across projects](using-queries.md#across-projects)">Example queries, query across projects</a>. </blockquote>
+<blockquote><strong>Note:</strong>&#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see <a href="using-queries.md#across-projects" data-raw-source="[Example queries, query across projects](about-managed-queries.md#across-projects)">Example queries, query across projects</a>. </blockquote>
 <p>Reference name=System.TeamProject, Data type=String</p>
 </td>
 <td>All</td>
