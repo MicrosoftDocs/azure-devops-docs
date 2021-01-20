@@ -8,7 +8,7 @@ ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 01/14/2021
 ---
 
@@ -173,6 +173,54 @@ To learn more about link types, see [Link type reference](link-type-reference.md
 
 By default, you query within a single project. However, using the query editor, you can [query across projects](using-queries.md#across-projects). 
 
+
+<a id="across-projects" />  
+
+## Query across projects  
+
+By default, shared queries and new queries are scoped to the current project. However, you can create queries to find work items defined within the project collection. You save cross-project queries under a specific project. 
+
+::: moniker range=">= tfs-2015"  
+
+To list work items defined in two or more projects, checkmark **Query across projects**. For example, the following query finds all features created in all projects within the last 30 days.
+ 
+<img src="media/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across projects" style="border: 1px solid #C3C3C3;" /> 
+
+::: moniker-end
+
+::: moniker range="tfs-2015"  
+
+> [!NOTE]  
+> The **Query across projects** feature is supported from TFS 2015.1 and later versions.  
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2015"  
+
+With the **Query across projects** checked, you can add the Team Project field to filter to a select number of projects.   
+
+<img src="media/using-queries-query-across-select-projects.png" alt="Azure Boards and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
+
+> [!NOTE]
+> Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
+
+The *Team Project* field becomes available only after you check  **Query across projects**.  Moreover, when **Query across projects** is unchecked, only those fields from those WITs defined in the current project appear in the Field drop-down menu. When **Query across projects** is checked, all fields from all WITs defined in all projects in the collection appear in the Field drop-down menu.  
+
+::: moniker-end  
+
+::: moniker range="tfs-2013"   
+
+To find all features created in all projects within the last 30 days, remove the <strong>Team Project=@Project</strong> clause from the query.  
+
+<img src="media/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
+
+All fields from all WITs defined in all projects in the collection always appear in the Field drop-down menu.  
+
+Use <strong>Team Project=@Project</strong> to scope the query to find only those work items defined for the current project. 
+
+::: moniker-end  
+
+
 <a id="my-shared"/>
 
 ## My Queries, Shared Queries, and Favorites
@@ -207,6 +255,29 @@ For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).
 
 [!INCLUDE [temp](../includes/tip-wiql-extension.md)]
  
+
+
+## Taskboard versus query list items
+
+You may notice and wonder why the contents of the taskboard differ from those listed with its created query? To learn more, see [taskboard items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
+
+<a id="export-query" />  
+
+## Export a query  
+
+From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a project, the shared queries are created based on [.wiq files defined in a process](../../reference/process-templates/define-work-item-query-process-template.md). 
+
+See also:
+- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)  
+- [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
+ 
+
+::: moniker range="azure-devops"  
+
+> [!NOTE]  
+> The WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
+
+::: moniker-end  
 
 ## Related articles
 

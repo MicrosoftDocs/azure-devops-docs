@@ -56,7 +56,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      ** @Today** 
+      **@Today** 
    :::column-end:::
    :::column span="1":::
       Find work where `Date-Time field=today`

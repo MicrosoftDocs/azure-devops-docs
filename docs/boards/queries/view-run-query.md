@@ -115,21 +115,19 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 
 <a id="tips-queries-hub"> </a> 
 
-## Directory-focused Queries pages 
+## Query directory 
 
-The **Queries** page now contains a directory-focused view which you can filter to find specific queries of interest. Previously, the **Queries** page presented the queries folders, query editor, and query results all within the same view. 
+The **Queries** page contains a directory-focused view which you can filter to find specific queries of interest. Previously, the **Queries** page presented the queries folders, query editor, and query results all within the same view. 
 
-With this change, some functionality has been added and some has changed. For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml)  
+With this change, some functionality has been added and some has changed.  
 
 ::: moniker-end
 
-
-
-::: moniker range=">= azure-devops-2019"
+ 
 
 <a id="favorites" />
 
-## Tasks you can perform from the Favorites or All pages
+## All and Favorites supported tasks  
 
 You can perform most tasks for viewing and running queries from each of the queries list pages as indicated in the following table. Only queries you save under **My Queries** and have favorited show up under **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team. 
   
@@ -146,12 +144,7 @@ You can perform most tasks for viewing and running queries from each of the quer
 > |Unfavorite a query: Click :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
 > |Add a new query: Click :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
 
-
 For details on adding new queries, see [Create managed queries with the query editor](using-queries.md). 
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
 
 ## Filter the list of queries
 
@@ -159,6 +152,8 @@ Enter a keyword into the filter box to filter the set of queries displayed on ei
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing all queries in the project filtered by WIT IQ keyword criteria.](media/queries-all-filter.png)
+
+For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml). 
 
 ::: moniker-end
 
