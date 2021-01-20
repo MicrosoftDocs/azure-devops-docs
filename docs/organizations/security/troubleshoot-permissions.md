@@ -8,7 +8,7 @@ ms.topic: troubleshoot
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
+ms.date: 01/19/2021
 --- 
 
 # Troubleshoot permissions
@@ -96,7 +96,7 @@ For more information, see [Grant or restrict access to select features and funct
 
 ## Membership in a group which has lesser permissions
 
-Group rule types are ranked in the following order: Subscriber > Basic + Test Plans > Basic > Stakeholder. Users always get the best access level between all the group rules, including VS subscription.
+Group rule types are ranked in the following order: Subscriber > Basic + Test Plans > Basic > Stakeholder. Users always get the best access level between all the group rules, including Visual Studio (VS) subscription.
 
 See the following examples, showing how the subscriber detection factors into group rules.
 
@@ -114,7 +114,7 @@ Expected: I get detected as a Visual Studio Test Pro subscriber, because the acc
 
 ## Rules applied to a work item type that restrict permissions
 
-## Other areas where permissions might have been applied
+## Other areas where permissions might be applied
 
 ## Access level restriction
 
