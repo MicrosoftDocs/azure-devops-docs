@@ -7,7 +7,7 @@ ms.date: 01/14/2021
 ---
 
 
-### Query filter supported features
+### Query filter features
 
 The following table summarizes the query filter features supported by each Azure DevOps version.  
 
@@ -92,7 +92,7 @@ The following table summarizes the query filter features supported by each Azure
 ---
 :::row:::
    :::column span="1":::
-      Search across projects 
+      [Search across projects](/azure/devops/boards/queries/using-queries#across-projects)
    :::column-end:::
    :::column span="1":::
       Find work items in one or more projects in an organization or collection. Default is the current project. Use the **Team Project** field to query on two or more projects.

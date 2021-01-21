@@ -145,7 +145,7 @@ You can list work items based on the following criteria...
       - [Group a clause](using-queries.md#group-clauses) 
       - [Group a chart by tags](add-tags-to-work-items.md#group-by-tags) 
       - [Open a query](using-queries.md) 
-      - [Query across projects](about-managed-queries.md#across-projects) 
+      - [Query across projects](using-queries.md#across-projects) 
       - [Query based on tags](add-tags-to-work-items.md#query) 
       - [Rename a query](organize-queries.md#view-rename-delete) 
    :::column-end:::
@@ -254,7 +254,7 @@ The following table indicates the operators and macros available for the differe
 3. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions.
 4. The **@Follows** macro is supported for TFS 2017 and later versions.
 5. The **@MyRecentActivity**, **@RecentMentions,** and **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
-6. The **@Project** macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](about-managed-queries.md#across-projects). 
+6. The **@Project** macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 7. The **@TeamAreas** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 8. The **@CurrentIteration** macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
 9. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
