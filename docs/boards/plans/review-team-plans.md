@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 01/04/2021
+ms.date: 01/21/2021
 ---
 
 
@@ -25,11 +25,12 @@ Use Delivery Plans to ensure your teams are aligned with your organizational goa
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> A new version of Delivery Plans is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans**. This new version of Delivery Plans provides support for the following tasks: 
-> - Epics can be added to a delivery plan
-> - Work item cards can span iteration boundaries
-> - Drag and drop borders show when a work item starts and ends
+> A new version of Delivery Plans is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans Experience**. This new version of Delivery Plans provides support for the following tasks: 
+> - Epics can be added to a delivery plan 
+> - Work item cards can span iteration boundaries 
+> - Drag and drop borders show when a work item starts and ends 
 > - You can add backlog items to a team from a plan
+> - You can view work item dependencies 
 > - Stakeholders can view plans
  
 
@@ -62,14 +63,15 @@ You can change the assigned sprint of a work item by dragging it to a new sprint
 In this article you'll learn:
 
 
->[!div class="checklist"]   
+> [!div class="checklist"]   
 > - How to review a plan with your teams
 > - How to add and edit a plan
 > - How to add field criteria, customize cards, and add markers
 > - How to open a plan from the list of defined plans 
 > - How to work with the interactive elements of plans and change the plan view
 > - What permissions are required to create and view plans  
- 
+
+
 
 ## Prerequisites
 
@@ -152,7 +154,7 @@ Note the following:
 - Plan views are limited to a maximum of ten teams/backlogs
 - Zooming out can cause fields and tags to disappear from the cards. The further you zoom out, the harder it is to fit items on a card. By design, we hide select items depending on the zoom level.  
 -  Rollup isn't supported for child work items that belong to a different project than that of the originating parent work item.  
-
+- If the Start Date or Target Date are missing from a work item, you can add them to the custom process defined for the project as discussed in [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md#add-an-existing-field-to-another-wit).
 ::: moniker-end  
 
 
@@ -463,7 +465,27 @@ For example, here we show a plan view of four scenarios with rollup of the child
 
 ::: moniker-end 
 
+::: moniker range="azure-devops"  
 
+<a id="dependencies">  </a>
+
+### View dependencies
+
+To view dependencies for a work item, hover over the upper-right corner and choose the dependency-links :::image type="icon" source="../media/dependency-links.png" border="false"::: icon. 
+
+For example, here we show a work item with dependencies to several work items within the same project.   
+
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of dependencies within the same project. ](media/plans/dependencies.png)  
+
+When the dependency is to a work item in another project, the project information is shown as well as other link relationships.   
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of dependencies-cross-project. ](media/plans/dependencies-cross-project.png)  
+
+
+::: moniker-end 
 
 ### Update the iteration for a backlog item 
 

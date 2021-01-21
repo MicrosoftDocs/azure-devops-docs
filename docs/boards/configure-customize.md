@@ -406,9 +406,16 @@ Here we show **Progress by all Work Items** which displays progress bars for asc
 > [!div class="mx-imgBorder"]  
 > ![Progress bars showing rollup by work items](media/config-custom/progress-by-work-items.png)  
 
+::: moniker range="azure-devops"
+
+In addition, the new [Delivery Plans (Preview)](../plans/review-team-delivery-plans.md) supports rollup views of epics, features, and other custom portfolio backlogs. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing Delivery Plans Progress rollup view of four scenarios. ](../plans/media/plans/rollup-view.png)  
+
+::: moniker-end
+
 <!---
-
-
 Consider how your selection impacts rollup
 If your development team uses tasks 
 --> 
