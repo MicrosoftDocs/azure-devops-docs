@@ -51,3 +51,21 @@ Below are few common scenarios where the upstream behavior will be triggered to 
 - **All packages are public**: if all the packages consumed are public, whether it's from the public registry or any other open-source repositories, the new upstream behavior will have no effect on the team's workflow in this scenario.
 
     :::image type="content" source="media\only-public-packages.png" alt-text="public packages only":::
+
+- **Public package made private**: if a public package is switched to a private package, the new upstream behavior will have no effect on the team's workflow in this scenario.
+
+    :::image type="content" source="media\public-to-private.png" alt-text="switched from public to private":::
+
+## Enable upstream behavior
+
+> [!NOTE]
+> Only feed owners are allowed to enable/disable upstream behavior. See [Feed permissions](../feeds/feed-permissions.md) for more details.
+
+To enable the new upstream behavior, select a package from within your feed then select the toggle button to **Allow external sourced versions**.
+
+Users can view and filter packages by **Sourced versions**.
+
+- **External**: open-source package versions only.
+- **Internal**: private package versions only.
+- **Mixed**: both internal and external package versions.
+
