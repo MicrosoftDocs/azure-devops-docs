@@ -34,6 +34,10 @@ Below are few common scenarios where the upstream behavior will be triggered to 
 
 ### Public versions will be blocked
 
-- **Internal package version made public**: In this scenario, an existing package hosted in the feed is made public. The upstream behavior in this case will be triggered to block any previously unused public package versions (untrusted packages). 
+- **Internal package version made public**: In this scenario, a team has a private package that was made public. The upstream behavior in this case will be triggered to block any new public versions (untrusted packages). 
 
     :::image type="content" source="media\internal-package-made-public.png" alt-text="Internal package version made public":::
+
+- **Both private and public packages**: In this scenario, if a team already has both private and public packages, enabling the upstream behavior will result in blocking any new package versions from the public registry.
+
+    :::image type="content" source="media\both-private-and-public.png" alt-text="both private and public packages":::
