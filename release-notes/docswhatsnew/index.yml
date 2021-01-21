@@ -16,8 +16,10 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: November 2020
+          - text: December 2020
             url: azure-devops-docs-whats-new.md
+          - text: November 2020
+            url: azure-devops-docs-2020-11.md
           - text: October 2020
             url: azure-devops-docs-2020-10.md
           - text: September 2020
@@ -36,7 +38,7 @@ landingContent:
           - text: "Azure DevOps docs repository"
             url: https://github.com/MicrosoftDocs/azure-devops-docs/blob/master/README.md
           - text: Microsoft docs contributor guide
-            url: https://docs.microsoft.com/en-us/contribute/
+            url: /contribute/
 
   - title: "Related what's new pages"
     linkLists:

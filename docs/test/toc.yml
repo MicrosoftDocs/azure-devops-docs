@@ -28,7 +28,7 @@
   - name: Test from the Kanban board
     href: ../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: Load test before release
-    href: load-test/run-performance-tests-app-before-release.md
+    href: /previous-versions/azure/devops/test/load-test/run-performance-tests-app-before-release
 - name: How-to Guides
   items:
   - name: Manual testing
@@ -96,5 +96,4 @@
   - name: Create custom code & plug-ins
     href: /visualstudio/test/create-custom-code-and-plug-ins-for-load-tests
   - name: Load testing (Deprecated)
-    href: load-test/overview.md
-
+    href: /previous-versions/azure/devops/test/load-test/overview
