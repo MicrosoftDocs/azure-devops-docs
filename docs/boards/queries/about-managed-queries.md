@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/14/2021
+ms.date: 01/22/2021
 ---
 
 
@@ -19,51 +19,9 @@ ms.date: 01/14/2021
 
 List bugs, user stories, or other work items based on field criteria you specify using queries. You can then review these lists with your team, triage work, or perform bulk work item updates. 
 
-If you're just getting started, read [View, run, or email a work item query](view-run-query.md). For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md). 
 
-## Use queries 
-
-A query lists a filtered set of work items. You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an ad hoc search using the [search box](search-box-queries.md). 
-
-With queries, you can perform these functions: 
-
-- List items to perform bulk updates, assign or reassign    
-- Review work that's in progress or recently closed  
-- Triage work (set priority, review, update)   
-- Create a chart and add it to a dashboard  
-- Create a chart to get a count of items or sum a field  
-- Create a chart that shows a burndown or burnup over time 
-- View a tree of parent-child related work items 
-
-For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
-
-For specific examples, see [Query quick reference, Example queries](#query-index-quick-ref.md).  
-
-## Get started 
-
-If you are looking for a specific work item, use the ad hoc search box. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
  
-- [View and run a query](view-run-query.md)   
-- [Perform an ad hoc search](search-box-queries.md)  
-- [Query editor](using-queries.md)    
-- [Query operators & macros](query-operators-variables.md)  
-
-For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md). 
-
-### Additional tips for working with queries
-
-- To find work items that are assigned to you, add the **@Me** macros as the value for the **Assigned To** field in one of the query clauses.  
-- All valid users with standard access can create queries and folders under the **My Queries** area. To create queries and query folders under **Shared Queries**, you must have the Contribute permission set. For more information, see [Set permissions on queries](../queries/set-query-permissions.md).
-- You can modify any query by adding criteria to focus on a product area, an iteration, or another field. To modify a query, [open the query editor](../queries/using-queries.md).   
-- You can open any query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md), where you can update the fields of one or more work items and publish your changes to the database for tracking work items.  
-- You can [visualize status or progress](../../report/dashboards/charts.md) by creating a pie-chart, column chart, or trend chart for flat-list queries. 
-
-::: moniker range=">= azure-devops-2019"
-For additional tips when working with the new queries experience or the directory-focused queries views, see [Query FAQs](query-faqs.yml). 
-::: moniker-end
-
-
-## Supported features 
+## Supported query features 
 
 The following sections provide an overview of the features supported to define queries and manage queries. 
 <!--- interactive, filter  --> 
@@ -78,10 +36,56 @@ The following sections provide an overview of the features supported to define q
 
 <a id="ad-hoc-v-managed" /> 
 
-## Ad hoc vs managed work item queries
+## Managed work item queries versus ad hoc searches
 
-You have two ways to perform work item searches: semantic or ad hoc searches and managed queries. 
+You have two ways to find and list work items: managed queries and semantic or ad hoc searches. If you are looking for a single work item, use the ad hoc search box. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query.
 
+---
+:::row:::
+   :::column span="1":::
+      **Use managed queries **
+   :::column-end:::
+   :::column span="1":::
+      **Use ad hoc searches**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      - List items to perform bulk updates to fields
+      - Review work that's in progress or recently closed  
+      - Triage work (set priority, review, update)   
+      - Create a chart and add it to a dashboard  
+      - Create a chart to get a count of items or sum a field  
+      - Create a chart that shows a burndown or burnup over time 
+      - View a tree of parent-child related work items 
+      - List work items with link relationships 
+   :::column-end:::
+   :::column span="1":::
+      - Find a specific work item using its ID or a keyword 
+      - Find one or more work items across all projects in a fast, flexible manner
+      - Perform full text search across all work item fields
+      - Review work items assigned to a specific team member
+      - Search against specific work item fields to quickly narrow down a list of work items
+      - Determine what key words will support a managed search
+   :::column-end:::
+:::row-end:::
+---
+
+> [!NOTE]    
+> With semantic search, you search against a more fully indexed set of fields. With ad hoc search, the number of fields that are indexed are limited.  
+
+To get started, see the following articles:  
+- [View and run a query](view-run-query.md)   
+- [Perform an ad hoc search](search-box-queries.md)  
+- [Define a query](using-queries.md)   
+- [Query operators & macros](query-operators-variables.md) 
+   
+For specific examples, see [Query quick reference, Example queries](#query-index-quick-ref.md).  
+
+You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an ad hoc search using the [search box](search-box-queries.md). 
+
+<!--- 
 ### Ad hoc searches
 
 ::: moniker range=">= azure-devops-2019"  
@@ -105,19 +109,9 @@ In the search box, check that the text says _Search work items_. If it doesn't, 
 
 ::: moniker-end   
 
-**Use semantic or ad hoc searches to perform the following tasks:** 
- 
-- Find a specific work item using its ID or a keyword 
-- Find one or more work items across all projects in a fast, flexible manner
-- Perform full text search across all work item fields
-- Review work items assigned to a specific team member
-- Search against specific work item fields to quickly narrow down a list of work items
-- Determine what key words will support a managed search
-
 For details about semantic or ad hoc searches, see [Perform a semantic or ad hoc work item search](search-box-queries.md). 
 
-> [!NOTE]    
-> With semantic search, you search against a more fully indexed set of fields. With ad hoc search, the number of fields that are indexed are limited.  
+
 
 ### Managed queries 
 
@@ -158,6 +152,8 @@ You add and run managed queries using the built-in query-editor available from t
 
 For details about managed queries, see [Define a query](using-queries.md). 
 
+-->
+
 ## Query types (flat, direct links, tree)
 
 Azure Boards supports three query types. The icon next to each query indicates the query type. The **Work items and direct links** and **Tree of work items** query types support finding work items that are linked to one another based on selected link types. Use the **Tree of work items** query type to list a hierarchically-linked set of work items, and use **Work items and direct links** for all other link types. 
@@ -169,14 +165,10 @@ Wen exporting a query to Excel, the first two query types, **Flat list of work i
 
 To learn more about link types, see [Link type reference](link-type-reference.md).
 
-## Query within or across projects
-
-By default, you query within a single project. However, using the query editor, you can [query across projects](about-managed-queries.md#across-projects). 
-
-
+ 
 <a id="across-projects" />  
 
-## Query across projects  
+## Query within or across projects 
 
 By default, shared queries and new queries are scoped to the current project. However, you can create queries to find work items defined within the project collection. You save cross-project queries under a specific project. 
 
@@ -284,14 +276,9 @@ See also:
 - [Query quick reference](query-index-quick-ref.md)
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Set query permissions](set-query-permissions.md)  
-- [Wiql Editor (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
-- [Enhanced Export (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export)
 - [Perform work item search](../../project/search/work-item-search.md) 
 - [Query fields, operators, and macros](query-operators-variables.md)   
-- [Work item field index](../work-items/guidance/work-item-field.md)    
-- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
-
-
+ 
 ### Add a custom field to support your queries
 
 To add a custom field to support your query needs, see [Customize your work tracking experience](../../reference/customize-work.md). 
@@ -305,7 +292,22 @@ To learn about query charts and widgets, see these articles:
 - [Query tile widget](../../report/dashboards/widget-catalog.md#query-tile-widget) 
  
 
-### Visualize related work and other objects 
+<!--- 
+### Additional tips for working with queries
 
-You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
+- To find work items that are assigned to you, add the **@Me** macros as the value for the **Assigned To** field in one of the query clauses.  
+- All valid users with standard access can create queries and folders under the **My Queries** area. To create queries and query folders under **Shared Queries**, you must have the Contribute permission set. For more information, see [Set permissions on queries](../queries/set-query-permissions.md).
+- You can modify any query by adding criteria to focus on a product area, an iteration, or another field. To modify a query, [open the query editor](using-queries.md).   
+- You can open any query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md), where you can update the fields of one or more work items and publish your changes to the database for tracking work items.  
+- You can [visualize status or progress](../../report/dashboards/charts.md) by creating a pie-chart, column chart, or trend chart for flat-list queries. 
+
+::: moniker range=">= azure-devops-2019"
+For additional tips when working with the new queries experience or the directory-focused queries views, see [Query FAQs](query-faqs.yml). 
+::: moniker-end
+
+
+If you're just getting started, read [View, run, or email a work item query](view-run-query.md). For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md). 
+
+
+--->
 
