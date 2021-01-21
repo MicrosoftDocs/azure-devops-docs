@@ -3,18 +3,26 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 10/29/2020
+ms.date: 01/13/2021
+ms.custom: contperfq3
 ---
 
 # Logging commands
 
-> [!NOTE]
-> Use UTF-8 formatting for logging commands. 
-
-## Overview
-
 Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the agent.
-They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md).
+They cover actions like creating new [variables](../process/variables.md), marking a step as failed, and uploading [artifacts](../artifacts/pipeline-artifacts.md). Logging commands are useful when you are troubleshooting a pipeline. 
+
+
+
+|Type  |Commands  |
+|---------|---------|
+|Task commands     |    [LogIssue](#logissue-log-an-error-or-warning), [SetProgress](#setprogress-show-percentage-completed),  [LogDetail](#logdetail-create-or-update-a-timeline-record-for-a-task), [SetVariable](#setvariable-initialize-or-modify-the-value-of-a-variable), [SetEndpoint](#setendpoint-modify-a-service-connection-field), [AddAttachment](#addattachment-attach-a-file-to-the-build), [UploadSummary](#uploadsummary-add-some-markdown-content-to-the-build-summary), [UploadFile](#uploadfile-upload-a-file-that-can-be-downloaded-with-task-logs), [PrependPath](#prependpath-prepend-a-path-to-the--path-environment-variable) |
+|Artifact commands     |   [Associate](#associate-initialize-an-artifact), [Upload](#upload-upload-an-artifact)      |
+|Build commands     |  [UploadLog](#uploadlog-upload-a-log), [UpdateBuildNumber](#updatebuildnumber-override-the-automatically-generated-build-number), [AddBuildTag](#addbuildtag-add-a-tag-to-the-build) |
+|Release commands     |    [UpdateReleaseName](#updatereleasename-rename-current-release)     |
+
+
+## Logging command format 
 
 The general format for a logging command is:
 
@@ -48,6 +56,9 @@ Write-Host "##vso[task.setvariable variable=testvar;]testvalue"
 File paths should be given as absolute paths: rooted to a drive on Windows, or beginning with `/` on Linux and macOS.
 
 ## Formatting commands
+
+> [!NOTE]
+> Use UTF-8 formatting for logging commands. 
 
 These commands are messages to the log formatter in Azure Pipelines.
 They mark specific log lines as errors, warnings, collapsible sections, and so on.
@@ -172,7 +183,7 @@ Write-Host "Lengthy process is complete."
 
 ---
 
-To see how it looks, save and queue the build, and then watch the build run. Observer that a progress indicator changes when the task runs this script.
+To see how it looks, save and queue the build, and then watch the build run. Observe that a progress indicator changes when the task runs this script.
 
 ### Complete: Finish timeline
 
@@ -253,7 +264,7 @@ Sets a variable in the variable service of taskcontext. The first task can set a
 
 When `issecret` is set to `true`, the value of the variable will be saved as secret and masked out from log. Secret variables are not passed into tasks as environment variables and must instead be passed as inputs.
 
-See [set variables in scripts](https://docs.microsoft.com/azure/devops/pipelines/process/variables#set-variables-in-scripts) for more details.
+See [set variables in scripts](../process/variables.md#set-variables-in-scripts) for more details.
 
 #### Properties
 
@@ -460,8 +471,8 @@ Upload a local file into a file container folder, and optionally publish an arti
 
 #### Properties
 
-* `containerfolder` = folder that the file will upload to, folder will be created if needed. (Required)
-* `artifactname` = artifact name
+* `containerfolder` = folder that the file will upload to, folder will be created if needed.
+* `artifactname` = artifact name. (Required)
 
 #### Example
 

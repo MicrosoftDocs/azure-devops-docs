@@ -83,7 +83,7 @@ It’s a common scenario for an individual test to run on multiple branches, env
 
 ## Test – Automated testing for SCVMM and VMWare
 
-Users can dynamically set up test machines in the cloud with Azure, or on premises using SCVMM or VMWare, and use these machines to run their tests in a distributed manner. Users can use one of the machine provisioning tasks— [Azure, SCVMM or VMWare](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.vmwareapp)—followed by the [Run Functional Tests task](https://visualstudio.microsoft.com/docs/build/steps/test/run-functional-tests) to run tests. For more information, please see the [Visual Studio docs](https://go.microsoft.com/fwlink/?LinkId=799813).
+Users can dynamically set up test machines in the cloud with Azure, or on premises using SCVMM or VMWare, and use these machines to run their tests in a distributed manner. Users can use one of the machine provisioning tasks— [Azure, SCVMM or VMWare](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.vmwareapp)—followed by the [Run Functional Tests task](https://visualstudio.microsoft.com/docs/build/steps/test/run-functional-tests) to run tests. For more information, please see the [Visual Studio docs](/visualstudio/test/lab-management/install-configure-test-agents).
 
 ## Release – Test status visibility
 

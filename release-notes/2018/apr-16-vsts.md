@@ -156,7 +156,7 @@ We continue to invest in upstream sources, which enable you to centralize all yo
 
 ### Enable nuget.org upstream sources in more feeds
 
-Previously, only feeds created after the [Sprint 130 Update](/azure/devops/release-notes/2018/feb-14-vsts#package) could use the nuget.org upstream source. Now, most Package Management feeds created before that Update can use it too. If your feed is ready, you’ll see a banner above your packages letting you know that you can enable the nuget.org upstream source.
+Previously, only feeds created after the [Sprint 130 Update](./feb-14-vsts.md#package) could use the nuget.org upstream source. Now, most Package Management feeds created before that Update can use it too. If your feed is ready, you’ll see a banner above your packages letting you know that you can enable the nuget.org upstream source.
 
 Upstream sources to public package feeds like nuget.org and npmjs.com keep a saved copy of every package you use, so you’re protected against outages. See the [upstream sources](/azure/devops/artifacts/concepts/upstream-sources?view=azure-devops#saving-packages-from-upstream-sources-continuity) documentation for more information.
 

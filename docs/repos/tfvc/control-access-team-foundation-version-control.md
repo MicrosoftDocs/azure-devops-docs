@@ -54,4 +54,4 @@ To complete this task, you must have the **Manipulate security settings** permis
 
 #### Other Resources
 
-[Administering Team Foundation Version Control](administering-team-foundation-version-control.md)
+[Administering Team Foundation Version Control](./configure-check-out-settings.md)
