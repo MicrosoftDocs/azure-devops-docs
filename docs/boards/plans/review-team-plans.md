@@ -154,7 +154,7 @@ Note the following:
 - Plan views are limited to a maximum of ten teams/backlogs
 - Zooming out can cause fields and tags to disappear from the cards. The further you zoom out, the harder it is to fit items on a card. By design, we hide select items depending on the zoom level.  
 -  Rollup isn't supported for child work items that belong to a different project than that of the originating parent work item.  
-- If the Start Date or Target Date are missing from a work item, you can add them to the custom process defined for the project as discussed in [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md#add-an-existing-field-to-another-wit).
+- If the **Start Date** or **Target Date** are missing from a work item, you can add them to the custom process defined for the project as discussed in [Add and manage fields (Inheritance process)](../../organizations/settings/work/customize-process-field.md#add-an-existing-field-to-another-wit).
 ::: moniker-end  
 
 
