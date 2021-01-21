@@ -81,7 +81,7 @@ To get started, see the following articles:
 - [Define a query](using-queries.md)   
 - [Query operators & macros](query-operators-variables.md) 
    
-For specific examples, see [Query quick reference, Example queries](#query-index-quick-ref.md).  
+For specific examples, see [Query quick reference, Example queries](query-index-quick-ref.md).  
 
 You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an ad hoc search using the [search box](search-box-queries.md). 
 
@@ -165,7 +165,7 @@ Wen exporting a query to Excel, the first two query types, **Flat list of work i
 
 To learn more about link types, see [Link type reference](link-type-reference.md).
 
- 
+<a id="query-across-projects" /> 
 <a id="across-projects" />  
 
 ## Query within or across projects 

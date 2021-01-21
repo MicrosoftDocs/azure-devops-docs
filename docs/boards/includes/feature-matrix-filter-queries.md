@@ -63,7 +63,8 @@ The following table summarizes the query filter features supported by each Azure
    :::column span="1":::
       TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
    :::column-end:::
-:::row-end:::---
+:::row-end:::
+---
 :::row:::
    :::column span="1":::
         [Historical String and DateTime field queries](/azure/devops/boards/queries/query-by-workflow-changes) 
