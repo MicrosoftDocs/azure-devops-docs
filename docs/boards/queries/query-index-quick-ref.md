@@ -24,52 +24,49 @@ For specific examples, choose one of the following articles listed under [Query 
 
 ## Query tasks 
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-<td width="33%"> 
-<ul>
-<li><a href="using-queries.md" data-raw-source="[Add a query](using-queries.md)">Add a query</a></li>
-<li><a href="../../report/dashboards/charts.md" data-raw-source="[Add a query chart](../../report/dashboards/charts.md)">Add a query chart</a></li>
-<li><a href="../../report/dashboards/add-charts-to-dashboard.md" data-raw-source="[Add a query to a dashboard](../../report/dashboards/add-charts-to-dashboard.md)">Add a query to a dashboard</a></li>
-<li><a href="organize-queries.md" data-raw-source="[Add a query folder](organize-queries.md)">Add a query folder</a></li>
-<li><a href="../backlogs/set-column-options.md" data-raw-source="[Add columns to query results](../backlogs/set-column-options.md)">Add columns to query results</a></li>
-<li><a href="../backlogs/bulk-modify-work-items.md" data-raw-source="[Bulk modify query items](../backlogs/bulk-modify-work-items.md)">Bulk modify query items</a></li>
-<li><a href="using-queries.md#define-clause" data-raw-source="[Define a clause](using-queries.md#define-clause)">Define a clause</a> 
-<li><a href="view-run-query.md#view-rename-delete" data-raw-source="[Delete a query](view-run-query.md#view-rename-delete)">Delete a query</a></li>
-<li><a href="using-queries.md#directs-link-query" data-raw-source="[Direct-links query](using-queries.md#directs-link-query)">Direct-links query</a></li>
-<li><a href="using-queries.md" data-raw-source="[Edit a query](using-queries.md)">Edit a query</a></li>
-</ul>
-</td>
-<td width="33%">
-<ul>
-<li><a href="view-run-query.md#email-query" data-raw-source="[Email a query](view-run-query.md#email-query)">Email a query</a></li>
-<li><a href="using-queries.md#export-query" data-raw-source="[Export a query](using-queries.md#export-query)">Export a query</a></li>
-<li><a href="view-run-query.md" data-raw-source="[Favorite a query](view-run-query.md)">Favorite a query</a></li>	
-<li><a href="../backlogs/filter-backlogs.md" data-raw-source="[Filter a query](../backlogs/filter-backlogs.md)">Filter a query</a></li>
-<li><a href="using-queries.md#flat-list-query" data-raw-source="[Flat-list query](using-queries.md#flat-list-query)">Flat-list query</a></li>
-<li><a href="using-queries.md#group-clauses" data-raw-source="[Group a clause](using-queries.md#group-clauses)">Group a clause</a></li>
-<li><a href="using-queries.md" data-raw-source="[Open a query](using-queries.md)">Open a query</a></li>
-<li><a href="using-queries.md#across-projects" data-raw-source="[Query across projects](using-queries.md#across-projects)">Query across projects</a></li>
-<li><a href="view-run-query.md#view-rename-delete" data-raw-source="[Rename a query](view-run-query.md#view-rename-delete)">Rename a query</a></li>
-<li><a href="using-queries.md" data-raw-source="[Run a query](using-queries.md)">Run a query</a></li>
-</ul>
-</td>
-<td width="34%">
-<ul>
-<li><a href="using-queries.md#flat-list-query" data-raw-source="[Save a query](using-queries.md#flat-list-query)">Save a query</a></li>
-<li><a href="set-query-permissions.md" data-raw-source="[Set query permissions](set-query-permissions.md)">Set query permissions</a></li>
-<li><a href="using-queries.md#tree-query" data-raw-source="[Tree query](using-queries.md#tree-query)">Tree query</a></li>
-<li><a href="triage-work-items.md" data-raw-source="[Triage query items](triage-work-items.md)">Triage query items</a></li>
-<li><a href="view-run-query.md#view-rename-delete" data-raw-source="[View a query](view-run-query.md#view-rename-delete)">View a query</a></li>
-<li><a href="link-type-reference.md" data-raw-source="[Understand link types](link-type-reference.md)">Understand link types</a></li>
-<li><a href="using-queries.md#ungroup-clause" data-raw-source="[Ungroup a clause](using-queries.md#ungroup-clause)">Ungroup a clause</a> </li>
-<li><a href="wiql-syntax.md" data-raw-source="[Work Item Query Language (WIQL)](wiql-syntax.md)">Work Item Query Language (WIQL)</a> </li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+---
+:::row:::
+   :::column span="1":::
+      - [Add a query](using-queries.md) 
+      - [Add a query chart](../../report/dashboards/charts.md) 
+      - [Add a query to a dashboard](../../report/dashboards/add-charts-to-dashboard.md) 
+      - [Add a work item chart to a dashboard](../../report/dashboards/charts.md#add-chart-widget) 
+      - [Add a query folder](organize-queries.md) 
+      - [Add columns to query results](../backlogs/set-column-options.md)" 
+      - [Bulk modify query items](../backlogs/bulk-modify-work-items.md) 
+      - [Define a clause](using-queries.md#define-clause) 
+      - [Delete a query](view-run-query.md#view-rename-delete) 
+      - [Direct-links query](using-queries.md#directs-link-query) 
+      - [Edit a query](using-queries.md) 
+   :::column-end:::
+   :::column span="1":::
+      - [Email a query](view-run-query.md#email-query) 
+      - [Export a query](using-queries.md#export-query) 
+      - [Favorite a query](view-run-query.md) 	
+      - [Filter a query](../backlogs/filter-backlogs.md) 
+      - [Flat-list query](using-queries.md#flat-list-query) 
+      - [Group a clause](using-queries.md#group-clauses) 
+      - [Group a chart by tags](add-tags-to-work-items.md#group-by-tags) 
+      - [Open a query](using-queries.md)" 
+      - [Query across projects](using-queries.md#across-projects) 
+      - [Query based on tags](add-tags-to-work-items.md#query) 
+      - [Rename a query](view-run-query.md#view-rename-delete) 
+   :::column-end:::
+   :::column span="1":::
+      - [Run a query](using-queries.md) 
+      - [Save a query](using-queries.md#flat-list-query) 
+      - [Set query permissions](set-query-permissions.md) 
+      - [Tree query](using-queries.md#tree-query) 
+      - [Triage query items](triage-work-items.md) 
+      - [View a query](view-run-query.md#view-rename-delete) 
+      - [Understand link types](link-type-reference.md) 
+      - [Ungroup a clause](using-queries.md#ungroup-clause) 
+      - [Work Item Query Language (WIQL)](wiql-syntax.md) 
+   :::column-end:::
+:::row-end:::
+---
+ 
+
 
 <a id="fields-operators-macros" />
 
