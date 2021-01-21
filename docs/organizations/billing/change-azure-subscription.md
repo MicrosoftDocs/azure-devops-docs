@@ -70,5 +70,5 @@ To change or remove your billing subscription, you need the following:
 
 - [Buy Basic access for users](buy-basic-access-add-users.md)
 - [Buy Azure Test Plans](buy-basic-access-add-users.md)
-- [Buy CI/CD](buy-more-build-vs.md)
+- [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
 - [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)

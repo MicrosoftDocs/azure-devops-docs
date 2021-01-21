@@ -74,7 +74,7 @@ An advantage of working with Azure DevOps is the suite of tools and integrated f
 - Define, manage, track, and approve releases 
 - Deploy applications to Azure, a virtual machine, Docker containers, and more  
 
-To get started, see the overviews in [Azure Pipelines](../pipelines/overview.md) and [Azure Test Plans](../test/overview.md).
+To get started, see the overviews in [Azure Pipelines](../pipelines/get-started/what-is-azure-pipelines.md) and [Azure Test Plans](../test/overview.md).
 
 ### Stakeholders
 
@@ -110,7 +110,7 @@ Responsible for configuring project-level resources, including:
 ::: moniker range="azure-devops" 
 - [Area paths](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
 - [Project permissions and repository security](../organizations/security/permissions.md)  
-- [Build agents, pools, and service connections](../pipelines/overview.md)  
+- [Build agents, pools, and service connections](../pipelines/get-started/what-is-azure-pipelines.md)  
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies  
 ::: moniker-end  
 
@@ -119,7 +119,7 @@ Responsible for configuring project-level resources, including:
 - [Area paths](../organizations/settings/set-area-paths.md) and [iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
 - [Project permissions and repository security](../organizations/security/permissions.md)  
 - [Customizing work tracking objects](../reference/customize-work.md)  
-- [Build agents, pools, and service connections](../pipelines/overview.md)  
+- [Build agents, pools, and service connections](../pipelines/get-started/what-is-azure-pipelines.md)  
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
 ::: moniker-end  
 

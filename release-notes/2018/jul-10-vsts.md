@@ -64,7 +64,7 @@ Admin:
 
 When we first launched the pull request (PR) experience, we thought it would make sense to assign all PRs to the team context that you had selected when creating the PR. This behavior has been a frustration point, since many people did not notice the connection between the team context and the PR assignment. In fact, this has been one of our top UserVoice suggestions.
  
-As part of the [new navigation](/azure/devops/release-notes/2018/jun-19-vsts#preview-our-new-navigation) changes, we took the opportunity to change this default association with teams. You'll notice two changes:​
+As part of the [new navigation](./jun-19-vsts.md#preview-our-new-navigation) changes, we took the opportunity to change this default association with teams. You'll notice two changes:​
  
 1. When creating a PR, no reviewers are added by default. The reviewers list does have a feature to make it easier to add individuals and groups that were added to PRs recently. The [required reviewers policy](/azure/devops/git/branch-policies?view=azure-devops#automatically-include-code-reviewers) can also help teams that want to ensure that specific reviewers are added to review their code.​
 1. The **Pull Requests** hub has a new customizable section. By default, this section shows PRs "Assigned to my teams", providing equivalent functionality as the old section. However, if you belong to multiple teams, this section will show PRs assigned to any of your teams. The section is also customizable - just click on the "Customize this view" action near the section header.
@@ -140,7 +140,7 @@ Release gates enable automatic evaluation of health criteria before a release is
 
 ### Azure DevOps Projects now generally available
 
-Back in [November](/azure/devops/release-notes/2017/nov-28-vsts#azure-devops-project) we introduced DevOps Projects, which helps you get up and running with a full DevOps pipeline on Azure, from code through monitoring, in just a few minutes. We've added services along the way and incorporated a lot of your feedback. We'll now continue moving forward with it in generally availability to help you go even further on your journey with DevOps. See the [Azure DevOps Projects general availability post](https://blogs.msdn.microsoft.com/devops/2018/07/12/azure-devops-project-general-availability/) on the Microsoft DevOps Blog for more information.
+Back in [November](../2017/nov-28-vsts.md#azure-devops-project) we introduced DevOps Projects, which helps you get up and running with a full DevOps pipeline on Azure, from code through monitoring, in just a few minutes. We've added services along the way and incorporated a lot of your feedback. We'll now continue moving forward with it in generally availability to help you go even further on your journey with DevOps. See the [Azure DevOps Projects general availability post](https://blogs.msdn.microsoft.com/devops/2018/07/12/azure-devops-project-general-availability/) on the Microsoft DevOps Blog for more information.
 
 ## Package
 

@@ -3,6 +3,11 @@
 - name: Azure DevOps Services
   expanded: true
   items:
+    - name: 2021
+      expanded: true
+      items:
+        - name: January 14
+          href: 2021/sprint-181-update.md
     - name: 2020
       expanded: true
       items:
@@ -342,7 +347,7 @@
             - name: August 6
               href: 2012/aug-06-team-services.md
 - name: Azure DevOps Server
-  href: https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2020?view=azure-devops
+  href: /azure/devops/server/release-notes/azuredevops2020?view=azure-devops
 - name: Documentation updates
   items:
     - name: What's new
@@ -350,8 +355,10 @@
     - name: 2020
       expanded: true
       items:
-      - name: November
+      - name: December
         href: docswhatsnew/azure-devops-docs-whats-new.md
+      - name: November
+        href: docswhatsnew/azure-devops-docs-2020-11.md
       - name: October
         href: docswhatsnew/azure-devops-docs-2020-10.md
       - name: September
@@ -375,6 +382,11 @@
 - name: Azure Boards
   expanded: true
   items:
+    - name: 2021
+      expanded: true
+      items:
+        - name: January 14
+          href: 2021/boards/sprint-181-update.md
     - name: 2020
       expanded: true
       items:
@@ -479,6 +491,11 @@
 - name: Azure Pipelines
   expanded: true
   items:
+    - name: 2021
+      expanded: true
+      items:
+        - name: January 14
+          href: 2021/pipelines/sprint-181-update.md
     - name: 2020
       expanded: true
       items:

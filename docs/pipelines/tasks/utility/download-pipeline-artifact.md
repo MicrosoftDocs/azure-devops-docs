@@ -25,7 +25,7 @@ Use this task to download pipeline artifacts from earlier stages in this pipelin
 [!INCLUDE [temp](../includes/yaml/DownloadPipelineArtifactV2.md)]
 
 > [!NOTE]
-> In addition to the full syntax, you can use `publish` and `download` shortcuts in your pipeline to publish and download artifacts. For more information, see [Publish](../../yaml-schema.md#publish) and [Download](../../yaml-schema.md#download) in the [YAML schema reference](../../yaml-schema.md).
+> The `publish` and `download` keywords are shortcuts for the **Publish Pipeline Artifact** task. You can use them in your pipeline to publish and download artifacts. For more information, see [Publish](../../yaml-schema.md#publish) and [Download](../../yaml-schema.md#download) in the YAML schema.
 
 ::: moniker-end
 
