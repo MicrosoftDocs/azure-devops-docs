@@ -408,7 +408,7 @@ Here we show **Progress by all Work Items** which displays progress bars for asc
 
 ::: moniker range="azure-devops"
 
-In addition, the new [Delivery Plans (Preview)](../plans/review-team-delivery-plans.md) supports rollup views of epics, features, and other custom portfolio backlogs. 
+In addition, the new [Delivery Plans (Preview)](../plans/review-team-plans.md) supports rollup views of epics, features, and other custom portfolio backlogs. 
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing Delivery Plans Progress rollup view of four scenarios. ](../plans/media/plans/rollup-view.png)  

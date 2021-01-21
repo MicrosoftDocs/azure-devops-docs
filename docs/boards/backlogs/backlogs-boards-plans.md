@@ -480,7 +480,7 @@ With Delivery Plans, you gain  tailor-made views across several teams and their 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017" < azure-devops"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 You install Delivery Plans from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), in the Azure DevOps tab.
 
@@ -499,7 +499,7 @@ When you configure a plan, you select the team or teams and backlog levels of in
 ![Example plans preview](../plans/media/plans/features-span-iterations-preview.png)  
 ::: moniker-end
 
-::: moniker range=">= tfs-2017" < azure-devops"
+::: moniker range=">= tfs-2017 < azure-devops"
 ![Example plans view](../plans/media/plans-move-1.png)  
 ::: moniker-end
 
