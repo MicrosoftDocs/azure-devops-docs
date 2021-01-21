@@ -126,6 +126,7 @@ You can list work items based on the following criteria...
       - [Add a query](using-queries.md) 
       - [Add a query chart](../../report/dashboards/charts.md)" 
       - [Add a query to a dashboard](../../report/dashboards/add-charts-to-dashboard.md) 
+      - [Add a work item chart to a dashboard](../../report/dashboards/charts.md#add-chart-widget) 
       - [Add a query folder](organize-queries.md) 
       - [Add columns to query results](../backlogs/set-column-options.md) 
       - [Bulk modify query items](../backlogs/bulk-modify-work-items.md) 
@@ -142,12 +143,14 @@ You can list work items based on the following criteria...
       - [Filter a query](../backlogs/filter-backlogs.md) 
       - [Flat-list query](using-queries.md#flat-list) 
       - [Group a clause](using-queries.md#group-clauses) 
+      - [Group a chart by tags](add-tags-to-work-items.md#group-by-tags) 
       - [Open a query](using-queries.md) 
       - [Query across projects](about-managed-queries.md#across-projects) 
+      - [Query based on tags](add-tags-to-work-items.md#query) 
       - [Rename a query](organize-queries.md#view-rename-delete) 
-      - [Run a query](using-queries.md) 
    :::column-end:::
    :::column span="1":::
+      - [Run a query](using-queries.md) 
       - [Save a query](organize-queries.md#save) 
       - [Set query permissions](set-query-permissions.md) 
       - [Tree query](using-queries.md#tree-query) 
@@ -215,7 +218,7 @@ The following table indicates the operators and macros available for the differe
     <td><strong>Integer</strong></td>
     <td>Also includes <strong>picklistInteger</strong><sup>2</sup>. A 32-bit integer that is signed, such as 0, 1, 2, 34.<p>Query samples: <a href="query-numeric.md" data-raw-source="[Query by numeric fields](query-numeric.md)">Query by numeric fields</a></p></td>
     <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever
-    <p><strong>Macros</strong>: <strong><xref href="Follows" data-throw-if-not-resolved="False" data-raw-source="@Follows"></xref></strong><sup>4</sup>, <strong><xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref></strong><sup>5</sup>, <strong><xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref></strong><sup>5</sup>, <strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref></strong><sup>6</sup>, valid when used with the <strong>ID</strong> field </p>
+    <p><strong>Macros</strong>: <strong><xref href="Follows" data-throw-if-not-resolved="False" data-raw-source="@Follows"></xref></strong><sup>4</sup>, <strong><xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref></strong><sup>5</sup>, <strong><xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref></strong><sup>5</sup>, <strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref></strong>, valid when used with the <strong>ID</strong> field </p>
 	</td>
 </tr>
 <tr>
@@ -228,7 +231,7 @@ The following table indicates the operators and macros available for the differe
     <td>Also includes <strong>picklistString</strong><sup>2</sup>. Short single-line text that can contain up to 255 Unicode characters. String fields support the <strong>Title</strong> field, picklists (drop-down menus), user accounts, <strong>Tags</strong>, and other fields. <p>Query samples: <a href="titles-ids-descriptions.md" data-raw-source="[Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md)">Query by titles, IDs, and rich-text fields</a> and <a href="planning-ranking-priorities.md" data-raw-source="[Query by picklist value](planning-ranking-priorities.md)">Query by picklist value</a>.</p></td>
     <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever
     <p><strong>Macros</strong>: <strong>[Any]</strong>, valid with the <strong>Work Item Type</strong> field<br/>
-    <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong><sup>7</sup>, valid with the <strong>Team Project</strong> field </p>
+    <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong><sup>6</sup>, valid with the <strong>Team Project</strong> field </p>
 	</td>
 </tr>
 <tr>
@@ -236,27 +239,25 @@ The following table indicates the operators and macros available for the differe
     <td><p>Field type that supports the <strong>Area Path</strong> and <strong>Iteration Path</strong> fields. You define the tree structure for a project&mdash;<a href="../../organizations/settings/set-area-paths.md" data-raw-source="[area paths](../../organizations/settings/set-area-paths.md)">area paths</a> and <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)">iteration paths</a>.</p> 
     <p>Query samples: <a href="query-by-area-iteration-path.md" data-raw-source="[Query by area or iteration path](query-by-area-iteration-path.md)">Query by area or iteration path</a> and <a href="query-by-area-iteration-path.md" data-raw-source="[Query by date or current iteration](query-by-area-iteration-path.md)">Query by date or current iteration</a>.</p></td>
 	<td>Under, Not Under
-    <p><strong>Macros</strong>: <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong><sup>8</sup>, valid with <strong>Area Path</strong> field<br/>
-    <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong><sup>9</sup> and<strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n</strong><sup>10</sup> valid with the <strong>Iteration Path</strong> field</p></td>
+    <p><strong>Macros</strong>: <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong><sup>7</sup>, valid with <strong>Area Path</strong> field<br/>
+    <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong><sup>8</sup> and<strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n</strong><sup>9</sup> valid with the <strong>Iteration Path</strong> field</p></td>
 </tr>
 
 </tbody>
 </table>
 
- 
+
 #### Notes:  
 
 1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
 2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
 3. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions.
-4. The <strong>@Follows</strong> macro is supported for TFS 2017 and later versions.
-5. The <strong>@MyRecentActivity</strong>, <strong>@RecentMentions</strong>, <strong>@RecentProjectActivity</strong> macros are supported for Azure Boards and TFS 2018.2 and later versions.
-6. The <strong>@RecentProjectActivity</strong> macro is supported for Azure Boards only at this time.
-7. The <strong>@Project</strong> macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](about-managed-queries.md#across-projects). 
-8. The <strong>@TeamAreas</strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
-9. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
-11. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
-
+4. The **@Follows** macro is supported for TFS 2017 and later versions.
+5. The **@MyRecentActivity**, **@RecentMentions,** and **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
+6. The **@Project** macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](about-managed-queries.md#across-projects). 
+7. The **@TeamAreas** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
+8. The **@CurrentIteration** macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
+9. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal.   
 
 
 [!INCLUDE [temp](../includes/note-macro-web-portal.md)]
