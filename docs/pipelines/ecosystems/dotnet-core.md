@@ -501,7 +501,6 @@ To run tests and publish code coverage with Coverlet:
 # [.NET 5](#tab/dotnetfive)
 
   ```yaml
-  steps:
   - task: UseDotNet@2
     inputs:
       version: '5.0.x'
