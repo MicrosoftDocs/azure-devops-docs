@@ -471,7 +471,7 @@ For example, here we show a plan view of four scenarios with rollup of the child
 
 ### View dependencies
 
-To view dependencies for a work item, hover over the upper-right corner and choose the dependency-links :::image type="icon" source="../media/icon/dependency-links.png" border="false"::: icon. 
+To view dependencies for a work item, hover over the upper-right corner and choose the dependency-links :::image type="icon" source="../media/icons/dependency-links.png" border="false"::: icon. 
 
 For example, here we show a work item with dependencies to several work items within the same project.   
 
