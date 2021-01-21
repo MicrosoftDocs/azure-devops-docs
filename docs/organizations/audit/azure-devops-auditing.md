@@ -77,7 +77,9 @@ The user or group members have access to view your organization audit events.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+   
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   
 3. Select **Auditing**.
 
    ![Screenshot of Auditing view current page](media/azure-devops-auditing/access-audit-log-red-box.png)
