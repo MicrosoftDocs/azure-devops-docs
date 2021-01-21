@@ -72,6 +72,11 @@ For a discussion of these two usages and the tools they support, see [Configurat
 
 **A:** You can track dependencies between work items by linking them using a related or other link type. See [Link work items](backlogs/add-link.md) and [Linking, traceability, and managing dependencies](queries/link-work-items-support-traceability.md). 
 
+
+::: moniker range="azure-devops"
+You can view dependencies using [Delivery Plans (Preview)](plans/review-team-plans.md). Or, use the [Epic Roadmap](extensions/epic-roadmap.md). 
+::: moniker-end
+
 If you are tracking dependencies across one or more organizations, you may want to use the [Dependency Tracker](extensions/dependency-tracker.md).
 
 
