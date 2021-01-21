@@ -34,10 +34,20 @@ Below are few common scenarios where the upstream behavior will be triggered to 
 
 ### Public versions will be blocked
 
-- **Internal package version made public**: In this scenario, a team has a private package that was made public. The upstream behavior in this case will be triggered to block any new public versions (untrusted packages). 
+- **Private package version made public**: in this scenario, a team has a private package that was made public. The upstream behavior in this case will be triggered to block any new public versions (untrusted packages). 
 
     :::image type="content" source="media\internal-package-made-public.png" alt-text="Internal package version made public":::
 
-- **Both private and public packages**: In this scenario, if a team already has both private and public packages, enabling the upstream behavior will result in blocking any new package versions from the public registry.
+- **Having both private and public packages**: in this scenario, if a team already has both private and public packages, enabling the upstream behavior will result in blocking any new package versions from the public registry.
 
     :::image type="content" source="media\both-private-and-public.png" alt-text="both private and public packages":::
+
+### Public versions will not be blocked
+
+- **All packages are private**: if all existing packages are private and the team won't be consuming any public packages, the new upstream behavior will have no effect on the team's workflow in this scenario.
+    
+    :::image type="content" source="media\private-packages-only.png" alt-text="private packages only":::
+
+- **All packages are public**: if all the packages consumed are public, whether it's from the public registry or any other open-source repositories, the new upstream behavior will have no effect on the team's workflow in this scenario.
+
+    :::image type="content" source="media\only-public-packages.png" alt-text="public packages only":::
