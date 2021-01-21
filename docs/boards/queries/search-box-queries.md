@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 03/26/2019
+ms.date: 01/21/2021
 ---
 
 
@@ -188,6 +188,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 Semantic search isn't supported for TFS 2017.1 and earlier versions. You can still perform searches using [ad hoc search](#initiate-an-ad-hoc-search-use-shortcut-filters).
 ::: moniker-end
 
+::: moniker range="<= tfs-2017" 
 
 ## Initiate an ad hoc search, use shortcut filters
 
@@ -203,6 +204,8 @@ You can enter or select one or more of the following shortcut identifiers:
 Use the `@Me` and `@Today` macros to specify your user name or today's date.
 
 Use the `=`, `:`, and `-` operators to specify the operations **Equals**, **Contains**, and **Not**, respectively.
+
+::: moniker-end
 
 ### From the web portal 
 
@@ -359,11 +362,10 @@ The following examples show how to use operators when you create a search string
 
 ## Related articles
 
-- [About managed queries, Ad hoc versus managed queries]([About managed queries, Ad hoc versus managed queries](about-managed-queries.md#ad-hoc-v-managed).md#ad-hoc-v-managed)  
-- [Create managed queries with the query editor](using-queries.md)   
+- [About managed queries]([About managed queries](about-managed-queries.md)  
+- [Define a query](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
-- [Work item field index](../work-items/guidance/work-item-field.md)     - [Use work item templates, Define an ad hoc work item template using a hyperlink](../backlogs/work-item-template.md#adhoc-template)
-- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
+- [Work item field index](../work-items/guidance/work-item-field.md)
 
 ## Q & A
 
