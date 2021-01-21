@@ -478,7 +478,7 @@ For example, here we show a work item with dependencies to several work items wi
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of dependencies within the same project. ](media/plans/dependencies.png)  
 
-When the dependency is to a work item in another project, the project information is shown as well as other link relationships.   
+When the dependency is to a work item in another project, the project information is shown as well as other link relationships. A red exclamation mark and red colored arrows indicate there is an issue with the dependency.  
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of dependencies-cross-project. ](media/plans/dependencies-cross-project.png)  
