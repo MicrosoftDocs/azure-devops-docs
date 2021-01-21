@@ -4,7 +4,7 @@ description: Use .NET Core to build apps with Azure Pipelines, Azure DevOps, & T
 ms.topic: conceptual
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
-ms.date: 11/13/2020
+ms.date: 01/21/2021
 ms.custom: contperf-fy20q4
 monikerRange: '>= tfs-2017'
 ---
@@ -494,8 +494,41 @@ If you're building on Linux or macOS, you can use [Coverlet](https://github.com/
 Code coverage results can be published to the server by using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To leverage this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
 
 To run tests and publish code coverage with Coverlet:
-* Add a reference to the `coverlet.msbuild` NuGet package in your test project(s).
+* Add a reference to the `coverlet.msbuild` NuGet package in your test project(s) for .NET projects below .NET 5. For .NET 5, add a reference to the  `coverlet.collector` NuGet package.
 * Add this snippet to your `azure-pipelines.yml` file:
+
+
+# [.NET 5](#tab/dotnetfive)
+
+  ```yaml
+  steps:
+  - task: UseDotNet@2
+    inputs:
+      version: '5.0.x'
+      includePreviewVersions: true # Required for preview versions
+    
+  - task: DotNetCoreCLI@2
+    displayName: 'dotnet build'
+    inputs:
+      command: 'build'
+      configuration: $(buildConfiguration)
+    
+  - task: DotNetCoreCLI@2
+    displayName: 'dotnet test'
+    inputs:
+      command: 'test'
+      arguments: '--configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
+      publishTestResults: true
+      projects: 'MyTestLibrary' # update with your test project directory
+    
+  - task: PublishCodeCoverageResults@1
+    displayName: 'Publish code coverage report'
+    inputs:
+      codeCoverageTool: 'Cobertura'
+      summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
+  ```
+
+# [.NET < 5](#tab/netearlierversions)
 
   ```yaml
   - task: DotNetCoreCLI@2
@@ -512,6 +545,9 @@ To run tests and publish code coverage with Coverlet:
       codeCoverageTool: 'Cobertura'
       summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
   ```
+
+---
+
  
 ## Package and deliver your code
 
