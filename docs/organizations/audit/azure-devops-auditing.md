@@ -8,7 +8,7 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 11/19/2020
+ms.date: 01/21/2021
 ---
 
 # Access, export, and filter audit logs
@@ -62,14 +62,14 @@ Members of the Project Collection Valid Users group can view the Auditing page a
 
 3. Select **Auditing**.
 
-   ![Auditing preview page](media/azure-devops-auditing/AccessAuditLogRedBox-preview.png)
+   ![Auditing preview page](media/azure-devops-auditing/access-audit-log-red-box-preview.png)
    If you don't see Auditing in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
 4. Select **Permissions**, and then find the group or users to provide auditing access to.
 
    ![Screenshot of highlighted Permissions tab.](media/azure-devops-auditing/select-permissions-preview.png)  
 
 5. Set **View audit log** to **allow**, and then select **Save changes**.
-   ![Screenshot of Auditing access permission preview.](media/azure-devops-auditing/AuditLogPermissionRedBox-preview.png)
+   ![Screenshot of Auditing access permission preview.](media/azure-devops-auditing/audit-log-permission-red-box-preview.png)
 
 The user or group members have access to view your organization audit events.
 
@@ -80,11 +80,11 @@ The user or group members have access to view your organization audit events.
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 3. Select **Auditing**.
 
-   ![Screenshot of Auditing view current page](media/azure-devops-auditing/AccessAuditLogRedBox.png)
+   ![Screenshot of Auditing view current page](media/azure-devops-auditing/access-audit-log-red-box.png)
    If you don't see Auditing in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
 4. Select **Security**, and then find the group or users to provide auditing access to.
 5. Set **View audit log** to **allow**, and then select **Save changes**.
-   ![Screenshot of Auditing access permission current view.](media/azure-devops-auditing/AuditLogPermissionRedBox.png)
+   ![Screenshot of Auditing access permission current view.](media/azure-devops-auditing/audit-log-permission-red-box.png)
 
 The user or group members have access to view your organization audit events.
 
@@ -111,13 +111,13 @@ Each audit event records additional information to what's viewable on the auditi
 
 To scope down the viewable audit events, select the time filter on the top-right-hand side of the page. 
 
-![Auditing entry filter by date & time](media/azure-devops-auditing/AuditLogDateTimePicker.png)
+![Auditing entry filter by date & time](media/azure-devops-auditing/audit-log-date-time-picker.png)
 
 You can select any time range over the last 90 days and scope it down to the minute. Once you’ve selected a time range, select anywhere off the time range selector to start the search. By default, the top 200 results are returned for that time selection. If there are more results, then you can scroll down to load them onto the page. If you wish to further scope down the set of results returned, then you need to download the auditing data.
 
 Some audit events can contain multiple actions that took place at once, known as bulk audit events. You can distinguish these events from others with :::image type="icon" source="../security/media/select-information-icon.png" border="false"::: **Information** on the far right of the event. 
 
-![Auditing more information icon](media/azure-devops-auditing/AuditLogMoreInformationHighRes.png)
+![Auditing more information icon](media/azure-devops-auditing/audit-log-more-information-high-res.png)
 
 Selecting the information icon displays additional information about what happened in this audit event.
 
