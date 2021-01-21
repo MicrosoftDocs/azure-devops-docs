@@ -148,7 +148,6 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 - Minimize the number of fields you choose to display on your cards.  
 - Eliminate cross-team ownership of area paths. Cross-team area path ownership isn't recommended and can lead to undesirable edge cases.  
 
-
 Note the following: 
 - Plan views are limited to 12 to 13 months. 
 - Plan views are limited to a maximum of ten teams/backlogs
@@ -462,7 +461,7 @@ For example, here we show a plan view of four scenarios with rollup of the child
 > [!div class="mx-imgBorder"]  
 > ![Screenshot showing rollup view of four scenarios. ](media/plans/rollup-view.png)  
 
-
+You can also view rollup from a backlog view as described in [Display rollup progress or totals](../backlogs/display-rollup.md).
 ::: moniker-end 
 
 ::: moniker range="azure-devops"  
