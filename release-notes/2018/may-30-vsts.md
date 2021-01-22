@@ -9,7 +9,7 @@ description: In the Sprint 135 Update of Visual Studio Team Services (VSTS), we 
 
 # Visualize release progress – VSTS Sprint 135 Update
 
-In the **Sprint 135 Update** of Visual Studio Team Services (VSTS), we bring a new way to visualize all your release activity. The new [release progress view](#visualize-release-progress) takes the [graphical release definition editor](/azure/devops/release-notes/2017/jul-14-team-services#new-release-definition-editor-preview) developed last year and lights it up with progress and status so that you can track a release and take actions in full context.
+In the **Sprint 135 Update** of Visual Studio Team Services (VSTS), we bring a new way to visualize all your release activity. The new [release progress view](#visualize-release-progress) takes the [graphical release definition editor](../2017/jul-14-team-services.md#new-release-definition-editor-preview) developed last year and lights it up with progress and status so that you can track a release and take actions in full context.
 
 There are a number of other features across Work, Code, Build, Release, and even a few related to authentication. Read about the new features below and head over to VSTS to try them for yourself.
 
@@ -78,7 +78,7 @@ When a viewing a pull request, it’s now easy to mark the source branch as a fa
 > [!IMPORTANT]
 > To use this capability, you must have the **New release progress views** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your profile or account.
 
-A [new release progress view](https://go.microsoft.com/fwlink/?linkid=874485) is now available, which gives you with live updates of deployment progress and one-click access to further details. The new view visualizes the release pipeline, making it easier to understand what’s happening and surfaces appropriate details and actions at different stages of the release.
+A [new release progress view](/azure/devops/pipelines/) is now available, which gives you with live updates of deployment progress and one-click access to further details. The new view visualizes the release pipeline, making it easier to understand what’s happening and surfaces appropriate details and actions at different stages of the release.
 
 > [!div class="mx-imgBorder"]
 > ![Release Pipeline view](media/135_03.png)
@@ -130,7 +130,7 @@ Results from test execution are also surfaced for each environment. Clicking on 
 > [!div class="mx-imgBorder"]
 > ![Release test results](media/135_08.png)
 
-Existing extensions work in this new view, plus there are new extensibility points to allow extensions develops to surface even more information for an environment. See the [contributions and extensions](https://go.microsoft.com/fwlink/?linkid=874486) documentation for more information.
+Existing extensions work in this new view, plus there are new extensibility points to allow extensions develops to surface even more information for an environment. See the [contributions and extensions](/azure/devops/pipelines/) documentation for more information.
 
 ### Run inline or file-based Python scripts in your pipeline
 

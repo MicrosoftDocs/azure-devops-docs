@@ -58,7 +58,7 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 ## Examples
 
-The following example Displays detailed information about changeset 8675309 in an editable format in the **Changeset **dialog box and replaces the existing comment with "This is a new comment."
+The following example Displays detailed information about changeset 8675309 in an editable format in the **Changeset** dialog box and replaces the existing comment with "This is a new comment."
 
 After you press ENTER, the **Details for Changeset** *\<changeset number\>* **- Source Files** dialog box appears. Click **Save** to associate the comment with the changeset.
 

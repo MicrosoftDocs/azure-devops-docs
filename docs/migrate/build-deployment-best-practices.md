@@ -193,7 +193,7 @@ and Fortify Integration
 ## References
 
 [1] Visual Studio team, 
-[Automate deployments with Release Management](../pipelines/overview.md?viewFallbackFrom=azure-devops), 
+[Automate deployments with Release Management](../pipelines/get-started/what-is-azure-pipelines.md?viewFallbackFrom=azure-devops), 
 MSDN Article
 
 [2] Visual Studio team, 
