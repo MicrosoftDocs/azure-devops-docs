@@ -35,6 +35,9 @@ The following types of users can join your organization for free:
 
 ## Add users to your organization
 
+> [!WARNING]
+> If you have permission to invite users to the organization, regardless of whether the "Restrict invitations" policy is disabled, you can @mention a user who isn't part of your organization. This action invites that user to your organization.
+
 Administrators can add users to an organization, grant access to appropriate tooling extensions and service access levels,
 and add users to groups - all in one view.
 
@@ -44,9 +47,6 @@ and add users to groups - all in one view.
  
 You can add up to 50 users in a single transaction. When you add users, each user receives a notification email with a
 link to the organization page.
-
-> [!WARNING]
-> If you have permission to invite users to the organization, regardless of whether the "Restrict invitations" policy is disabled, you can @mention a user who isn't part of your organization. This action invites that user to your organization.
 
 ::: moniker range=" azure-devops"
 
