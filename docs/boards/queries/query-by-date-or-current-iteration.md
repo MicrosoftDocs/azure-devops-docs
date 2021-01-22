@@ -307,7 +307,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 ---
 :::row:::
    :::column span="1":::
-      Activated Date ^1, 2^
+      Activated Date (Notes 1, and 2)
    :::column-end:::
    :::column span="2":::
       The date and time when the work item was created or when its status was changed from closed, completed, or done to a new or active state.   
@@ -333,7 +333,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 ---
 :::row:::
    :::column span="1":::
-      Closed Date ^2^
+      Closed Date (Note 2)
     :::column-end:::
     :::column span="2":::
       The date and time when a work item was closed.  
@@ -372,7 +372,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 ---
 :::row:::
    :::column span="1":::
-      Finish Date ^3^
+      Finish Date (Note 3)
     :::column-end:::
     :::column span="2":::
       The date and time when the schedule indicates that the task will be completed.  
@@ -395,7 +395,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 ---
 :::row:::
    :::column span="1":::
-      Resolved Date ^1, 2^
+      Resolved Date (Notes 1 and 2)
     :::column-end:::
     :::column span="2":::
       The date and time when the work item was moved into a Resolved state.  
@@ -408,7 +408,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 ---
 :::row:::
    :::column span="1":::
-      Start Date ^3^
+      Start Date (Note 3)
     :::column-end:::
     :::column span="2":::
       The date and time when the schedule indicates that the task will start.  </p>
