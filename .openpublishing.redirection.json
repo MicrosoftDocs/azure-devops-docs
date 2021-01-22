@@ -17598,6 +17598,11 @@
       "source_path": "docs/organizations/billing/buy-more-build-vs.md",
       "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false	
+    },
+    {
+      "source_path": "docs/reference/error/tf31002-unable-connect-tfs.md",
+      "redirect_url": "/azure/devops/organizations/projects/tf31002-unable-connect-tfs",
+      "redirect_document_id": false	
     }
   ]
 }

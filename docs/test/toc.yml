@@ -78,7 +78,7 @@
   - name: TCM Reporting FAQs
     href: reference-tcm.md
   - name: Unable to connect
-    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
+    href: ../organizations/projects/tf31002-unable-connect-tfs.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
 - name: REST API Reference
   items:
   - name: Test Management
