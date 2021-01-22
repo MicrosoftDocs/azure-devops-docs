@@ -1,6 +1,6 @@
 ---
 title: Use NuGet or dotnet with Team Foundation Server feeds
-description: Learn how to authenticate to feeds from command-line clients like nuget and dotnet in Team Foundation Server.
+description: Work with NuGet and dotnet in TFS feeds
 ms.assetid: 1BB88A4E-C40E-48CD-B44A-25C90B935E5B
 ms.technology: devops-artifacts
 ms.topic: conceptual
