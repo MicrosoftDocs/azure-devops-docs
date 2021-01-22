@@ -6,7 +6,7 @@ description: Get an integrated set of features to help you plan, code, collabora
 ms.technology: devops-new-user
 ms.author: chcomley
 author: chcomley
-ms.date: 01/13/2021
+ms.date: 01/22/2021
 ms.topic: overview
 monikerRange: '<= azure-devops'
 ---
@@ -15,17 +15,17 @@ monikerRange: '<= azure-devops'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
-Azure DevOps provides developer services for support teams to plan work, collaborate on code development, and build and deploy applications. Developers can work in the cloud using Azure DevOps Services or on-premises using Azure DevOps Server.
+Azure DevOps provides developer services for support teams to plan work, collaborate on code development, and build and deploy applications. You can work in the cloud using Azure DevOps Services or on-premises using Azure DevOps Server. Azure DevOps supports a culture and set of processes that bring developers and project managers and contributors together to complete software development. It allows organizations to create and improve products at a faster pace than they can with traditional software development approaches.
 
-Azure DevOps provides integrated features that you can access through your web browser or IDE client. You can use one or more of the following services based on your business needs:
+Azure DevOps provides integrated features that you can access through your web browser or IDE client. You can use one or more of the following standalone services based on your business needs:
 
-- **Azure Repos** provides Git repositories or Team Foundation Version Control (TFVC) for source control of your code
-- **Azure Pipelines** provides build and release services to support continuous integration and delivery of your apps
-- **Azure Boards** delivers a suite of Agile tools to support planning and tracking work, code defects, and issues using Kanban and Scrum methods
-- **Azure Test Plans** provides several tools to test your apps, including manual/exploratory testing and continuous testing
-- **Azure Artifacts** allows teams to share packages such as Maven, npm, NuGet, and more from public and private sources and integrate package sharing into your CI/CD pipelines
+- **Azure Repos** provides Git repositories or Team Foundation Version Control (TFVC) for source control of your code. For more information about Azure Repos, see [What is Azure Repos?](../repos/get-started/what-is-repos.md).
+- **Azure Pipelines** provides build and release services to support continuous integration and delivery of your applications. For more information about Azure Pipelines, see [What is Azure Pipelines?](../pipelines/get-started/what-is-azure-pipelines.md).
+- **Azure Boards** delivers a suite of Agile tools to support planning and tracking work, code defects, and issues using Kanban and Scrum methods. For more information about Azure Boards, see [What is Azure Boards?](../boards/get-started/what-is-azure-boards.md).
+- **Azure Test Plans** provides several tools to test your apps, including manual/exploratory testing and continuous testing. For more information about Azure Test Plans, see [Overview of Azure Test Plans](../test/overview.md)
+- **Azure Artifacts** allows teams to share packages such as Maven, npm, NuGet, and more from public and private sources and integrate package sharing into your pipelines. For more information about Azure Artifacts, see [Overview of Azure Artifacts](../pipelines/artifacts/artifacts-overview.md).
 
-You can also use collaboration tools such as:
+You can also use the following collaboration tools:
 
 - Customizable team dashboards with configurable widgets to share information, progress, and trends
 - Built-in wikis for sharing information
@@ -57,6 +57,8 @@ You can use all the services included with Azure DevOps, or choose just what you
 - **[Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/)**. Continuously build, test, and deploy to any platform and cloud.
 - **[Azure Repos](https://azure.microsoft.com/services/devops/repos/)**. Get unlimited, cloud-hosted private Git repositories for your project.
 
+Azure DevOps Services supports integration with GitHub.com and GitHub Enterprise Server repositories. For more information, see the video, [Using GitHub with Azure DevOps](https://msit.microsoftstream.com/video/77d07845-8091-48df-8f56-adc1e5b4d8eb?referrer=https:%2F%2Fmicrosoft.sharepoint.com%2F).
+
 ## Choose Azure DevOps Server
 
 Choose on-premises Azure DevOps Server when:
@@ -70,6 +72,8 @@ When you deploy Azure DevOps Server, you can also configure the following server
 - **SQL Server and SQL Analysis Server** support SQL Server Reports and the ability to create Excel pivot charts based on the cube.
 
 Start for free by downloading [Azure DevOps Server Express](https://go.microsoft.com/fwlink/?LinkId=2041269&clcid=0x409). Then, either upload your code to share or source control. Or, begin tracking your work using Scrum, Kanban, or a combination of methods.
+
+On-premises Azure DevOps Server supports integration with GitHub Enterprise Server repositories. For more information, see the video, [Using GitHub with Azure DevOps](https://msit.microsoftstream.com/video/77d07845-8091-48df-8f56-adc1e5b4d8eb?referrer=https:%2F%2Fmicrosoft.sharepoint.com%2F)
 
 To learn more about managing Azure DevOps Server, see the [Administrative tasks quick reference](/azure/devops/server/admin/admin-quick-ref).
 ## Next steps  
