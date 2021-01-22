@@ -10,14 +10,14 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 12/07/2020
+ms.date: 01/21/2021
 ---
 
 # Use &#64;mentions in work items and pull requests
 
 [!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
 
-The <strong>@mention</strong> control allows you to quickly add someone into a work item or pull request discussion. You select a project member from the search list and they get notified of the comment you entered. 
+The <strong>@mention</strong> control allows you to quickly add a user to a work item or pull request discussion. You can select a project member from the search list, so they're notified of your comment. 
 
 Use the <strong>@mention</strong> control to start or continue a discussion within the following areas:
 
@@ -54,7 +54,10 @@ Use the <strong>@mention</strong> control to start or continue a discussion with
 
 ::: moniker-end
 
-When you're leaving a code comment in a pull request, you can enter **\@** to trigger the **\@mention** identity picker. From the identity selector, you see a list of the users that you've recently mentioned. Choose one of those names or enter the name of the user you're looking for to do a directory search.  
+When you leave a code comment in a pull request, enter **\@** to trigger the **\@mention** identity picker. From the identity selector, you see a list of users you've recently mentioned. Choose a name or enter the name of the user you're looking for to do a directory search. 
+
+> [!WARNING]
+> If you have permission to invite users to the organization, regardless of whether the "Restrict invitations" policy is disabled, you can @mention a user who isn't part of your organization. This action invites that user to your organization.
 
 To filter the list, enter the user name or alias until you've found a match.
 
@@ -71,7 +74,7 @@ You can also use group mentions. Enter the name of a team or a security group, c
 
 To **\@mention** a user you've never selected previously, just continue to enter the entire name to do your search against the full directory.  
 
-Names of mentioned users appear in blue text. Choose the **\@mention link name** to open the user's contact information. The contact information provides additional context for why they were added to the conversation.  
+Names of mentioned users appear in blue text. Choose the **\@mention link name** to open the user's contact information. The contact information provides more context for why they were added to the conversation.  
 
 ![Web portal, At mention user contact information accessible](media/at-mention-link-to-user-contact-card.png)  
 
