@@ -22,7 +22,7 @@ For details of how translations are processed, see [File transforms and variable
 
 * At present file transformations are supported for only XML files.
 
-* To apply XML transformation to configuration files (*.config) you must specify a newliFne-separated list of transformation file rules using the syntax:
+* To apply XML transformation to configuration files (*.config) you must specify a newline-separated list of transformation file rules using the syntax:
 
   `-transform <path to the transform file> -xml <path to the source file> -result <path to the result file>` 
 
