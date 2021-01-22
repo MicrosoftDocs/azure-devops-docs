@@ -46,10 +46,7 @@ You can add up to 50 users in a single transaction. When you add users, each use
 link to the organization page.
 
 > [!WARNING]
-> When the "Restrict invitations" policy is disabled, you can't @mention anyone who isn’t in the organization. You receive an email stating that you don't have permission to @mention the user.
-> However, if you have permission to invite users to the organization, regardless of whether the "Restrict invitations" policy is disabled, you can @mention a user who isn't part of your organization. 
-> This action invites that user to your organization.
-
+> If you have permission to invite users to the organization, regardless of whether the "Restrict invitations" policy is disabled, you can @mention a user who isn't part of your organization. This action invites that user to your organization.
 
 ::: moniker range=" azure-devops"
 
