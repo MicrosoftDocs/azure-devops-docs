@@ -6,7 +6,7 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 01/12/2021
+ms.date: 01/13/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -209,6 +209,7 @@ use one of the following techniques:
 Azure Pipelines and TFS support various service connection types by default, including:
 
 - [Azure Classic](#sep-azure-classic)
+- [Azure Repos/Team Foundation Server](#sep-tfsts)
 - [Azure Resource Manager](#sep-azure-resource-manager)
 - [Azure Service Bus](#sep-servbus)
 - [Bitbucket Cloud](#sep-bbucket)
@@ -229,7 +230,6 @@ Azure Pipelines and TFS support various service connection types by default, inc
 - [Service Fabric](#sep-fabric)
 - [SSH](#sep-ssh)
 - [Subversion](#sep-subversion)
-- [Team Foundation Server/Azure Pipelines](#sep-tfsts)
 - [Visual Studio App Center](#sep-vsmobile)
 
 After you enter the parameters when creating a service connection, validate the
@@ -257,6 +257,28 @@ using Azure credentials or an Azure management certificate.
 
 *****
 
+<h3 id="sep-tfsts">Azure Repos/Team Foundation Server</h3>
+
+Defines and secures a connection to another Azure DevOps organization.
+
+
+|       Parameter       |                                                                                                                                  Description                                                                                                                                   |
+|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   (authentication)    |                                                                                                              Select **Basic** or **Token Based** authentication.                                                                                                               |
+|    Connection Name    | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+|    Connection URL     |                                                                                                           Required. The URL of the TFS or Azure Pipelines instance.                                                                                                            |
+|       User name       |                                                                                                   Required for Basic authentication. The username to connect to the service.                                                                                                   |
+|       Password        |                                                                                                  Required for Basic authentication. The password for the specified username.                                                                                                   |
+| Personal Access Token |                      Required for Token Based authentication (TFS 2017 and newer and Azure Pipelines only). The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).                       |
+
+<p />
+
+Use the **Verify connection** link to validate your connection information.
+
+See also [Authenticate access with personal access tokens for Azure DevOps](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+
+*****
+
 <a name="sep-azure-resource-manager-conditions"></a>
 <a name="arm-auto-connect"></a>
 <a name="arm-manual-connect"></a>
@@ -275,6 +297,7 @@ The dialog offers two main modes:
 * **Manual subscription pipeline**. In this mode, you must specify the service principal you want to use to connect to Azure. The service principal specifies the resources and the access levels that will be available over the connection.
   Use this approach when you need to connect to an Azure account using different credentials from those you are currently logged on with in Azure Pipelines or TFS.
   This is also a useful way to maximize security and limit access.
+    Service principals are valid for two years. 
 
 For more information, see [Connect to Microsoft Azure](connect-to-azure.md)
 
@@ -615,7 +638,7 @@ Defines and secures a connection to an npm server.
 
 <h3 id="sep-nuget">NuGet service connection</h3>
 
-Defines and secures a connection to a NuGet server.
+Defines and secures a connection to a NuGet server. 
 
 
 |       Parameter       |                                                                                                                                  Description                                                                                                                                   |
@@ -629,7 +652,9 @@ Defines and secures a connection to a NuGet server.
 
 <p />
 
-*****
+To configure NuGet to authenticate with Azure Artifacts and other NuGet repositories, See [NuGet Authenticate](../tasks/package/nuget-authenticate.md). 
+
+---
 
 <h3 id="sep-python-download">Python package download service connection</h3>
 
@@ -726,27 +751,7 @@ Defines and secures a connection to the Subversion repository.
 
 *****
 
-<h3 id="sep-tfsts">Azure Pipelines service connection</h3>
 
-Defines and secures a connection to another Azure DevOps organization.
-
-
-|       Parameter       |                                                                                                                                  Description                                                                                                                                   |
-|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   (authentication)    |                                                                                                              Select **Basic** or **Token Based** authentication.                                                                                                               |
-|    Connection Name    | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
-|    Connection URL     |                                                                                                           Required. The URL of the TFS or Azure Pipelines instance.                                                                                                            |
-|       User name       |                                                                                                   Required for Basic authentication. The username to connect to the service.                                                                                                   |
-|       Password        |                                                                                                  Required for Basic authentication. The password for the specified username.                                                                                                   |
-| Personal Access Token |                      Required for Token Based authentication (TFS 2017 and newer and Azure Pipelines only). The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).                       |
-
-<p />
-
-Use the **Verify connection** link to validate your connection information.
-
-See also [Authenticate access with personal access tokens for Azure DevOps](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
-
-*****
 
 <h3 id="sep-vsmobile">Visual Studio App Center service connection</h3>
 

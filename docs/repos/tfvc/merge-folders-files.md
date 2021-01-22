@@ -80,7 +80,7 @@ You can use the **Tracking Changeset** window to view information such as, where
 
 2. Right-click the selected item and click **View History**.
 
-3. In the <strong>History **window, right-click the changeset that you want to view and select **Track Changeset</strong>.
+3. In the **History** window, right-click the changeset you want to view and select **Track Changeset**.
 
    The **Select Branches** dialog box appears.
 
@@ -150,7 +150,7 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
         </tbody>
         </table>
 
-    -   If you selected **Selected changesets**, then the **Select changesets to merge into the target branch **page appears. Select the changeset you want to merge.
+    -   If you selected **Selected changesets**, then the **Select changesets to merge into the target branch** page appears. Select the changeset you want to merge.
 
         > [!TIP]
         > You can press and hold the CONTROL or SHIFT keys and then select multiple items in a continuous range.
@@ -167,8 +167,8 @@ After you complete one of the above procedures, the **Source Control Merge Wizar
 
 
 ## Related articles
--  [Use branches to isolate risk in Team Foundation Version Control](use-branches-isolate-risk-team-foundation-version-control.md) 
+-  [Use branches to isolate risk in Team Foundation Version Control](./branching-strategies-with-tfvc.md) 
 -  [Merge Command](merge-command.md) 
 -  [Merges Command](merges-command.md) 
 -  [Resolve Team Foundation Version Control conflicts](resolve-team-foundation-version-control-conflicts.md) 
--  [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md) 
+-  [Use Source Control Explorer to manage files under version control](use-source-control-explorer-manage-files-under-version-control.md)
