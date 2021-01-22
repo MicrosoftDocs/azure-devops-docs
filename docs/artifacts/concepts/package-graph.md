@@ -1,6 +1,6 @@
 ---
 title: Constructing a complete package graph
-description: A complete package graph helps you share your packages with your consumers using an Azure DevOps Services or Team Foundation Server feed
+description: Package graphs in Azure Artifacts
 ms.assetid: 3f273ac7-3c2e-47d0-b333-3ca44c19bbf4
 ms.technology: devops-artifacts
 ms.topic: quickstart
