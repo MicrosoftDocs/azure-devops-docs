@@ -15,10 +15,7 @@ ms.date: 10/06/2020
 [!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
 
 > [!NOTE]
-> [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-is-azure-devops.md#vsts)
-
-
-
+> [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/about-azure-devops-services-tfs.md#visual-studio-team-services-is-now-azure-devops-servicesa-idvsts-)
 ## Data migration tool for Azure DevOps
 
 The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. It's recommended that you download the [migration guide and tool](https://aka.ms/AzureDevOpsImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps Services. 
