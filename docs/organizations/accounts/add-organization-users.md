@@ -8,7 +8,7 @@ ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-ms.date: 01/20/2021
+ms.date: 01/21/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -45,8 +45,10 @@ and add users to groups - all in one view.
 You can add up to 50 users in a single transaction. When you add users, each user receives a notification email with a
 link to the organization page.
 
-> [!NOTE]
-> When you @mention a user who isn't part of your organization, you're inviting that user to your organization.
+> [!WARNING]
+> When the "Restrict invitations" policy is disabled, you can't @mention anyone who isn’t in the organization. You receive an email stating that you don't have permission to @mention the user.
+> However, if you have permission to invite users to the organization, regardless of whether the "Restrict invitations" policy is disabled, you can @mention a user who isn't part of your organization. 
+> This action invites that user to your organization.
 
 
 ::: moniker range=" azure-devops"

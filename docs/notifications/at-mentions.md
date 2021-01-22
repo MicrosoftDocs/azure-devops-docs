@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 01/20/2021
+ms.date: 01/21/2021
 ---
 
 # Use &#64;mentions in work items and pull requests
@@ -56,8 +56,12 @@ Use the <strong>@mention</strong> control to start or continue a discussion with
 
 When you leave a code comment in a pull request, enter **\@** to trigger the **\@mention** identity picker. From the identity selector, you see a list of users you've recently mentioned. Choose a name or enter the name of the user you're looking for to do a directory search. 
 
-> [!NOTE]
-> When you @mention a user who isn't part of your organization, you're inviting that user to your organization.
+> [!WARNING]
+> When the "Restrict invitations" policy is disabled, you can't @mention anyone who isn’t in the organization. You receive an email stating that you don't have permission to @mention the user.
+> However, if you have permission to invite users to the organization, regardless of whether the "Restrict invitations" policy is disabled, you can @mention a user who isn't part of your organization. 
+> This action invites that user to your organization.
+
+ 
 
 To filter the list, enter the user name or alias until you've found a match.
 
