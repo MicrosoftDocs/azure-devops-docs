@@ -77,4 +77,19 @@ Users can view and filter packages by **Sourced versions**.
 
 Aside from using the feed's user interface, you can also enable the upstream behavior using the Azure DevOps services REST API.
 
-<!-- API reference link >
+<!-- API reference link -->
+
+### Enable upstream behavior using PowerShell
+
+To successfully execute the next steps in this section, you will need to create a personal access token with packaging **Read, write, & manage** permissions. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to create your personal access token. 
+
+
+:::image type="content" source="media\packaging-permissions.png" alt-text="select packaging permissions":::
+
+In an elevated PowerShell command prompt window, run the following command to create an environment variable for your personal access token.
+
+```PowerShell
+$env:PATVAR = "YOUR_PAT_GOES_HERE"
+```
+
+
