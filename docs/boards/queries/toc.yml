@@ -2,7 +2,7 @@
   href: about-managed-queries.md
 - name: Query quick reference
   href: query-index-quick-ref.md
-- name: Ad hoc search
+- name: Semantic search
   href: search-box-queries.md
 - name: Get started with queries
   expanded: true
@@ -19,8 +19,13 @@
     href: set-query-permissions.md
   - name: Triage work items  
     href: triage-work-items.md
+  - name: Best practices to define a query
+    href: high-performing-queries.md 
 - name: Import/export queries
   items:
+  - name: Query support for cross-service, integration, and extensions
+    href: query-support-integration-cross-service-extensions.md 
+    displayname: OData, Power BI, WIQL
   - name: Bulk import or update work items (CSV)
     href: import-work-items-from-csv.md 
     displayname: import, export, csv
@@ -61,10 +66,8 @@
   - name: Query by build & test integration fields
     displayname: Automation Status, Found In, Integration Build, Issue, Parameters, Steps, System Info, Repo Steps, Test Suite Type, Automated, Query Text, LocalDataSource
     href: build-test-integration.md  
-- name: Best practices, reference
+- name: Reference
   items:
-  - name: Best practices to define a query
-    href: high-performing-queries.md 
   - name: Query fields, operators & macros
     href: query-operators-variables.md
   - name: Work Item Query Language (WIQL) syntax

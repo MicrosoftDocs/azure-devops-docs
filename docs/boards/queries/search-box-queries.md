@@ -1,15 +1,15 @@
 ---
-title: Perform ad hoc searches for quick queries
+title: Perform semantic searches or ad hoc searches 
 titleSuffix: Azure Boards
-description: Use the search box and quickly filter for assigned to, created by, state, or work item type in Azure Boards, Azure DevOps, & Team Foundation Server  
+description: Use the search box and quickly filter for assigned to, created by, state, or work item type in Azure Boards, Azure DevOps  
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
-ms.date: 01/21/2021
+monikerRange: '<= azure-devops'
+ms.date: 01/22/2021
 ---
 
 

@@ -46,7 +46,7 @@ The following table summarizes the query filter features supported by each Azure
       [Wildcard searches](/azure/devops/boards/queries/titles-ids-descriptions)
    :::column-end:::
    :::column span="4":::
-      Wild card = `*`  (see also semantic search options)
+      Wild card = `*` 
    :::column-end:::
    :::column span="1":::
       TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
