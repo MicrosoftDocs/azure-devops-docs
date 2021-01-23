@@ -22,7 +22,9 @@ List bugs, user stories, or other work items based on field criteria you specify
  
 ## Supported query features 
 
-The following sections provide an overview of the features supported to define queries and manage queries. 
+The following sections provide an overview of the features supported to define queries and manage queries. In addition to these features, additional functionality is described in[Query support for cross-service, integration, and extensions](query-support-integration-cross-service-extensions.md).
+
+
 <!--- interactive, filter  --> 
 
 [!INCLUDE [temp](../includes/feature-matrix-filter-queries.md)]
@@ -46,10 +48,10 @@ You have two ways to find and list work items: managed queries and semantic or a
 ---
 :::row:::
    :::column span="1":::
-      **Use managed queries**
+      **Use a managed querys**
    :::column-end:::
    :::column span="1":::
-      **Use ad hoc searches**
+      **Use a semanitic search**
    :::column-end:::
 :::row-end:::
 ---
@@ -62,7 +64,8 @@ You have two ways to find and list work items: managed queries and semantic or a
       - Create a chart to get a count of items or sum a field  
       - Create a chart that shows a burndown or burnup over time 
       - View a tree of parent-child related work items 
-      - List work items with link relationships 
+      - List work items with link relationships  
+      - List work items for a single project, multiple projects, or across all projects  
    :::column-end:::
    :::column span="1":::
       - Find a specific work item using its ID or a keyword 
@@ -71,6 +74,7 @@ You have two ways to find and list work items: managed queries and semantic or a
       - Review work items assigned to a specific team member
       - Search against specific work item fields to quickly narrow down a list of work items
       - Determine what key words will support a managed search
+      - List work items for a single project, multiple projects, or across all projects  
    :::column-end:::
 :::row-end:::
 ---
@@ -175,31 +179,23 @@ Also, you can choose a query that you've favorited from the selector menu, Or, y
 
 For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).  
 
-[!INCLUDE [temp](../includes/tip-wiql-extension.md)]
- 
-
-
 ## Taskboard versus query list items
 
 You may notice and wonder why the contents of the taskboard differ from those listed with its created query? To learn more, see [taskboard items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 
-<a id="export-query" />  
 
-## Export a query  
+## About query charts and widgets
 
-From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a project, the shared queries are created based on [.wiq files defined in a process](../../reference/process-templates/define-work-item-query-process-template.md). 
+To learn about query charts and widgets, see these articles:  
+- [Chart a flat-list query](../../report/dashboards/charts.md)   
+- [Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget)  
+- [Query results widget](../../report/dashboards/widget-catalog.md#query-results-widget)   
+- [Query tile widget](../../report/dashboards/widget-catalog.md#query-tile-widget) 
 
-See also:
-- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)  
-- [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
  
+## Add a custom field to support your queries
 
-::: moniker range="azure-devops"  
-
-> [!NOTE]  
-> The WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  
-
-::: moniker-end  
+To add a custom field to support your query needs, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
 ## Related articles
 
@@ -207,20 +203,10 @@ See also:
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Set query permissions](set-query-permissions.md)  
 - [Perform work item search](../../project/search/work-item-search.md) 
-- [Query fields, operators, and macros](query-operators-variables.md)   
- 
-### Add a custom field to support your queries
+- [Query fields, operators, and macros](query-operators-variables.md) 
+- [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) 
+- [Query support for cross-service, integration, and extensions](query-support-integration-cross-service-extensions.md) 
 
-To add a custom field to support your query needs, see [Customize your work tracking experience](../../reference/customize-work.md). 
-
-### About query charts and widgets
-
-To learn about query charts and widgets, see these articles:  
-- [Chart a flat-list query](../../report/dashboards/charts.md)   
-- [Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget)  
-- [Query results widget](../../report/dashboards/widget-catalog.md#query-results-widget)   
-- [Query tile widget](../../report/dashboards/widget-catalog.md#query-tile-widget) 
- 
 
 <!--- 
 ### Additional tips for working with queries
@@ -298,14 +284,7 @@ You add and run managed queries using the built-in query-editor available from t
 ![Editor View of a Flat List Query - on-premises Azure DevOps](media/5.png)  
 
 ::: moniker-end
-
-**Use managed queries to perform the following tasks:** 
-
-- Review or triage a group of work items
-- Perform bulk updates on several work items such as change Assign To, Iteration Path, or more
-- Review parent-child or dependent links among work items
-- Create a status or trend chart from a flat list query
-- Create a list of work items that you'll export to [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) 
+  
  
 
 -->

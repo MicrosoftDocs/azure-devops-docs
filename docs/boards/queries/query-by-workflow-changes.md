@@ -304,41 +304,47 @@ For example, you can list items based on the team area path, and if they are in 
 > [!NOTE]    
 > Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  
 
+---
+:::row:::
+   :::column span="1":::
+      **Filter for**
+   :::column-end:::
+   :::column span="3":::
+      **Include these query clauses**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      User Stories in the Code/Doing column
+   :::column-end:::
+   :::column span="3":::
+      `Work Item Type = User Story`  
+      `And` `Board Column = Code` 
+      `And` `Board Column Done  = False`
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Items in the Expedite swimlane
+   :::column-end:::
+   :::column span="3":::
+      `Board Lane = Expedite`  
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-  <th>Filter for</th>
-  <th>Include these query clauses</th>
-</tr>
-<tr>
-  <td>
-    <p>User Stories in the Code/Doing column</p>
-</td>
-  <td>
-<code>Work Item Type = User Story</code>
-<code>And <em> Board Column </em> = <em> Code</code>
-<code>And </em> Board Column Done <em> = </em> False</code>
-  </td>
-</tr>
-<tr>
-  <td>
-    Items in the Expedite swimlane
-  </td>
-  <td>
-      <code>Board Lane <em> = </em> Expedite</code>
-  </td>
-</tr>
-<tr>
-  <td>
-Items in any swimlane that contains &quot;Test&quot;
-  </td>
-  <td>
-      <code>Board Lane <em> Contains </em> Test</code>
-  </td>
-</tr>
-</tbody>
-</table>
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Items in any swimlane whose label contains "Test" 
+   :::column-end:::
+   :::column span="3":::
+      `Board Lane Contains Test`  
+   :::column-end:::
+:::row-end:::
+---
+ 
 
 <a id="kanban-query-results">  </a>
 
