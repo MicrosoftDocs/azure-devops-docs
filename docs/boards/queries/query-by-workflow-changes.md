@@ -319,15 +319,15 @@ For example, you can list items based on the team area path, and if they are in 
       User Stories in the Code/Doing column
    :::column-end:::
    :::column span="3":::
-      `Work Item Type = User Story`  
-      `And` `Board Column = Code` 
-      `And` `Board Column Done  = False`
+      `      Work Item Type = User Story`  
+      `And` `Board Column = Code`   
+      `And` `Board Column Done  = False`  
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      Items in the Expedite swimlane
+      Items in the Expedite swimlane 
    :::column-end:::
    :::column span="3":::
       `Board Lane = Expedite`  
@@ -337,7 +337,7 @@ For example, you can list items based on the team area path, and if they are in 
 ---
 :::row:::
    :::column span="1":::
-      Items in any swimlane whose label contains "Test" 
+      Items in any swimlane whose label contains "Test"  
    :::column-end:::
    :::column span="3":::
       `Board Lane Contains Test`  

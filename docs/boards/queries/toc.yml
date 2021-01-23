@@ -21,6 +21,8 @@
     href: triage-work-items.md
   - name: Best practices to define a query
     href: high-performing-queries.md 
+  - name: Query FAQs
+    href: query-faqs.yml
 - name: Import/export queries
   items:
   - name: Query support for cross-service, integration, and extensions

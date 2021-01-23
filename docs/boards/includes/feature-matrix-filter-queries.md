@@ -155,7 +155,7 @@ The following table summarizes the query filter features supported by each Azure
 ---
 :::row:::
    :::column span="1":::
-      Boolean searches 
+      [Boolean searches](/azure/devops/boards/queries/query-by-workflow-changes#kanban-board-change-queries) 
    :::column-end:::
    :::column span="1":::
       Find work items based on boolean field value. 
