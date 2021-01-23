@@ -17,6 +17,8 @@ ms.date: 01/22/2021
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
+
+
 ## Cross service features
 
 - Query charts, widgets, dashboards
@@ -55,7 +57,9 @@ See also:
 - WIQL 
 - Power BI
 - Excel
+Open in Power BI create stunning reports in Power BI based on the Work Item Queries saved in Team Services. You can configure your reports to be refreshed daily to make sure your picture is always up to date. When you modify your Query by adding extra filters or columns these changes will be automatically reflected in Power BI upon next refresh.
 
+The WIQL to OData extension translates an Azure DevOps query into an OData query for use with Azure DevOps Analytics OData. 
 
 [!INCLUDE [temp](../includes/tip-wiql-extension.md)]
  
@@ -64,8 +68,7 @@ See also:
 
 Work item data store v Analytics v data warehouse v indexing
 
-## REST API 
-
+ 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
 ## Related articles

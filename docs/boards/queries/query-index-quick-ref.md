@@ -138,7 +138,7 @@ You can list work items based on the following criteria...
    :::column-end:::
    :::column span="1":::
       - [Email a query](view-run-query.md#email-query) 
-      - [Export a query](about-managed-queries.md#export-query) 
+      - [Export a query](query-support-integration-cross-service-extensions.md#export-query) 
       - [Favorite a query](view-run-query.md) 
       - [Filter a query](../backlogs/filter-backlogs.md) 
       - [Flat-list query](using-queries.md#flat-list) 

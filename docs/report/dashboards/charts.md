@@ -107,7 +107,7 @@ To learn more about default groups, see [Get started with permissions, Permissio
 
 When creating a query to support your chart, follow these guidelines. 
 
-- Always choose the **Flat list of work items** query type. Other query types aren't supported for charting. For more information, see [Create and save managed queries](../../boards/queries/using-queries.md#create-a-query). 
+- Always choose the **Flat list of work items** query type. Other query types aren't supported for charting. For more information, see [Define a query, Define a flat-list query](../../boards/queries/using-queries.md#flat-list). 
 - Add those fields to either a query clause or the column options that you want to use within your chart. You can group charts by any field except date-time, free-form text, and tag fields. For example: 
 	- To group by Status, include the **State** field 
 	- To group by work assignments, include the **Assigned To** field

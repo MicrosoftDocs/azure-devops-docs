@@ -62,6 +62,7 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 
 
 <a id="query-across-projects" /> 
+
 <a id="across-projects" />  
 
 ## Query across or within projects 

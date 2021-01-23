@@ -136,7 +136,7 @@ You add query folders from the **Boards>Queries>All** page.
 
 3. To move items into a folder, drag-and-drop a query onto the folder. 
 
-	Optionally, you can click the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, choose **Edit**, and then choose **Save As**. In the Save query as dialog, choose the folder you want to save the query in. 
+	Optionally, you can choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, choose **Edit**, and then choose **Save As**. In the Save query as dialog, choose the folder you want to save the query in. 
 
 	<img src="media/organize-queries/save-query-as-dialog.png" alt="Save query as dialog" style="border: 2px solid #C3C3C3;" />
   
@@ -176,38 +176,11 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 
 ::: moniker-end
 
-## Q & A   
-<!-- BEGINSECTION class="md-qanda" -->
-
-### Q: Can I change the owner of a query or folder?
-
-::: moniker range=">= tfs-2017"
-**A:** No. You can only enable permissions for users and groups from the permissions window for the query or folder.
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-**A:** Yes. This is a supported feature from the [query Security dialog](set-query-permissions.md). 
-::: moniker-end
-
-### Q: Can I add folders to My Favorites or Team Favorites?
-
-**A:** No. You can only add folders under **My Queries** and under **Shared Queries**.
-
-### Q: Are the queries and folders I create from the web portal the same as in Team Explorer?
-
-**A:** Yes. You might have to refresh your browser or client to see changes you make in another client.
-
-### Q: Can I move a query or a folder?  
-
-**A:** Yes. In the web portal, choose **Rename** from the context menu. In Visual Studio Team Explorer, simply drag the folder to the new location.  
-
-In Team Explorer Everywhere (a plugin for Eclipse), choose **Move** from the context menu and select the folder to which you want to move the item.
-
-<!-- ENDSECTION --> 
 
 ## Related articles
 
+- [Query FAQs](query-faqs.yml)  
+- [Set query permissions](set-query-permissions.md)  
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-- [Set query permissions](set-query-permissions.md)
 - [Set project-level permissions](../../organizations/security/set-project-collection-level-permissions.md)
 
