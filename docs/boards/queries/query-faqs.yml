@@ -27,9 +27,9 @@ sections:
         answer: |
           **No**. 
 
-      - question: What's the difference between a semantic search and query? 
+      - question: What's the difference between a query and a semantic search? 
         answer: |
-          The semantic search, or search-box query, does TBD.  
+          While the both will find and list work items, the filter features and result presentation are different. To learn more, see [About managed queries, Managed work item queries versus semantic searches](about-managed-queries.md#semantic-v-managed).  
 
       - question: Can I run several queries at the same time?
         answer: |
@@ -76,7 +76,7 @@ sections:
       - question: Can I link work items across organizations or collections?
         answer: |
           ::: moniker range="azure-devops"
-          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../backlogs/add-link.md#link-to-a-remote-work-item). 
+          **Yes** across organizations. See [Link user stories, issues, bugs, and other work items; Link to a remote work item](../backlogs/add-link.md#link-to-a-remote-work-item). However, you can't perform a search for work items linked from other projects than the current project you are connected to. 
           ::: moniker-end
           ::: moniker range="< azure-devops"
           **No** across collections. This isn't a supported feature. 
@@ -95,7 +95,7 @@ sections:
 
       - question: How do I manage dependencies across projects?  
         answer: |
-          To manage dependencies in Azure Boards, you can link work items using the Predecessor/Successor link type. To learn how, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md).
+          To manage dependencies in Azure Boards, you can link work items using the Predecessor/Successor link type. To learn how, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md).  
 
       - question: Can I query for work items linked across projects? 
         answer: |
@@ -105,19 +105,24 @@ sections:
     questions:
       - question: Can I change the owner of a query or folder? 
         answer: |
-          **Yes**. To perform this operation, you need to export the process and import it to the other collection. While there is no import/export user interface, you can use the [Process Migrator for Node.js](https://github.com/Microsoft/process-migrator) application.  
-
+          ::: moniker range=">= tfs-2017"
+          **No**. You can only enable permissions for users and groups from the permissions window for the query or folder.
+          ::: moniker-end
+          ::: moniker range="<= tfs-2015"
+          **Yes**. This is a supported feature from the [query Security dialog](set-query-permissions.md). 
+          ::: moniker-end
+ 
       - question: Can I move a query or a folder?
         answer: |
-          **No**. 
+          **Yes**. In the web portal, choose **Rename** from the context menu. In Team Explorer for Visual Studio, simply drag the folder to the new location. In Team Explorer Everywhere or Eclipse, choose **Move** from the context menu and select the folder to which you want to move the item.
 
-      - question: Can I add folders to My Favorites or Team Favorites?
+      - question: Can I add folders to **My Favorites** or **Team Favorites**?
         answer: |
-          **No**. 
+          **No**. This is not a supported feature. 
 
       - question: Are the queries and folders I create from the web portal the same as in Team Explorer?
         answer: |
-          **Yes**.  
+          **Yes**. You may have to refresh your browser or client to see changes you make in another client. 
 
   - name: Monitor progress with queries 
     questions:

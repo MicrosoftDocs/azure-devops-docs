@@ -36,6 +36,7 @@ The following sections provide an overview of the features supported to define q
 [!INCLUDE [temp](../includes/feature-matrix-manage-queries.md)]
 
 ### Unsupported features
+
 Work item queries only support querying of work items and work items linked to other work items. SOme of the limitations or restrictions of work item queries are:
 
 - You can't construct a managed query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test>Test Plans page](../../test/create-a-test-plan.md). 
@@ -43,6 +44,7 @@ Work item queries only support querying of work items and work items linked to o
 - You can't run a query to list work items linked from one project to another. 
 
 <a id="ad-hoc-v-managed" /> 
+<a id="semantic-v-managed" /> 
 
 ## Managed work item queries versus semantic searches
 
