@@ -17,7 +17,7 @@ ms.date: 01/22/2021
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-List bugs, user stories, or other work items based on field criteria you specify using queries. You can then review these lists with your team, triage work, or perform bulk work item updates. In addition to managed queries, the ad hoc or semantic search tool provides some overlapping and different functionality worth exploring. 
+List bugs, user stories, or other work items based on field criteria you specify using queries. You can then review these lists with your team, triage work, or perform bulk work item updates. In addition to managed queries, the semantic search tool provides some overlapping and different functionality worth exploring. 
 
  
 ## Supported query features 
@@ -35,14 +35,18 @@ The following sections provide an overview of the features supported to define q
 
 <a id="ad-hoc-v-managed" /> 
 
-## Managed work item queries versus ad hoc searches
+## Managed work item queries versus semantic searches
 
 You have two ways to find and list work items: managed queries and semantic or ad hoc searches. If you are looking for a single work item, use the ad hoc search box. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query.
+
+
+> [!NOTE]    
+> With semantic search, you search against a more fully indexed set of fields than that of managed queries.
 
 ---
 :::row:::
    :::column span="1":::
-      **Use managed queries **
+      **Use managed queries**
    :::column-end:::
    :::column span="1":::
       **Use ad hoc searches**
@@ -71,97 +75,70 @@ You have two ways to find and list work items: managed queries and semantic or a
 :::row-end:::
 ---
 
-> [!NOTE]    
-> With semantic search, you search against a more fully indexed set of fields. With ad hoc search, the number of fields that are indexed are limited.  
-
 To get started, see the following articles:  
 - [View and run a query](view-run-query.md)   
-- [Perform an ad hoc search](search-box-queries.md)  
+- [Perform a semantic search](search-box-queries.md)  
 - [Define a query](using-queries.md)   
 - [Query operators & macros](query-operators-variables.md) 
    
 For specific examples, see [Query quick reference, Example queries](query-index-quick-ref.md).  
-
-You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an ad hoc search using the [search box](search-box-queries.md). 
-
-<!--- 
-### Ad hoc searches
-
-::: moniker range=">= azure-devops-2019"  
-
-You perform semantic or ad hoc searches using the work item search box (shown below)   
-
-Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon.  
-
-> [!div class="mx-imgBorder"]
-> ![Work Item Search box](../../project/navigation/media/search/work-item-search-vert.png)    
-
-::: moniker-end   
-
-::: moniker range="<= tfs-2018"  
-
-You perform semantic or ad hoc searches using the work item search box (shown below). 
-
-In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it. Enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon. 
-
-![Search Work Items Text Box](media/using-queries-search-box-ts.png)
-
-::: moniker-end   
-
-For details about semantic or ad hoc searches, see [Perform a semantic or ad hoc work item search](search-box-queries.md). 
-
-
-
-### Managed queries 
-
-::: moniker range=">= azure-devops-2019"  
-
-You add and run managed queries using the built-in query-editor available from the **Boards>Queries** page.
-
-> [!div class="mx-imgBorder"]
-> ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](media/using-queries-new-vsts-exp.png)  
-
-::: moniker-end   
-
-::: moniker range="<= tfs-2018"  
  
-You add and run managed queries using the built-in query-editor available from the **Work>Queries** page.
-::: moniker-end  
-
-
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-
-![Web portal, Queries page, Editor view of a Flat List Query](media/query-active-bugs-editor-vso.png)   
-
-::: moniker-end  
-
-::: moniker range="tfs-2013"  
-
-![Editor View of a Flat List Query - on-premises Azure DevOps](media/5.png)  
-
-::: moniker-end
-
-**Use managed queries to perform the following tasks:** 
-
-- Review or triage a group of work items
-- Perform bulk updates on several work items such as change Assign To, Iteration Path, or more
-- Review parent-child or dependent links among work items
-- Create a status or trend chart from a flat list query
-- Create a list of work items that you'll export to [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) 
-
-For details about managed queries, see [Define a query](using-queries.md). 
-
--->
 
 ## Query types (flat, direct links, tree)
 
-Azure Boards supports three query types. The icon next to each query indicates the query type. The **Work items and direct links** and **Tree of work items** query types support finding work items that are linked to one another based on selected link types. Use the **Tree of work items** query type to list a hierarchically-linked set of work items, and use **Work items and direct links** for all other link types. 
+Azure Boards supports three query types. The icon next to each query indicates the query type. Use the following guidance to choose the query type based on what you want to accomplish with the query. 
+
+ 
 
 > [!div class="mx-imgBorder"]  
 > ![Query type icon list](../backlogs/office/media/excel/query-types.png)
 
-Wen exporting a query to Excel, the first two query types, **Flat list of work items** and **Work items and direct links** are imported as flat list queries. Only the **Tree of work items** queries import as a tree list. Direct links queries are imported as a flat list as modifying multiple types of links isn't a supported feature in Excel. 
+---
+:::row:::
+   :::column span="1":::
+      **Query type**
+   :::column-end:::
+   :::column span="1":::
+      **Usage guidance**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Flat list of work items**
+   :::column-end:::
+   :::column span="1":::
+      - List items to perform bulk updates to fields 
+      - Triage a list of work items 
+      - Create a query chart and add it to a dashboard  
+      - Create a chart to get a count of items or sum a field 
+      - Export a list of items to Excel to update fields
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      **Work items and direct links**
+   :::column-end:::
+   :::column span="1":::
+      - List linked work items to perform bulk updates to fields 
+      - Triage a list of linked work items  
 
+        Exporting to Excel exports as a flat list. Direct links queries are imported as a flat list as modifying multiple types of links isn't a supported feature in Excel.  
+   :::column-end:::
+:::row-end:::
+---:::row:::
+   :::column span="1":::
+      **Tree of work items**
+   :::column-end:::
+   :::column span="1":::
+      - List a tree of Parent-Child related work items, or other tree-topology link type 
+      - Triage a hierarchical list of work items 
+      - Export a hierarchical list of items to Excel to update fields or modify the hierarchy
+   :::column-end:::
+:::row-end:::
+---
+  
 To learn more about link types, see [Link type reference](link-type-reference.md).
 
 
@@ -264,3 +241,71 @@ If you're just getting started, read [View, run, or email a work item query](vie
 
 --->
 
+ 
+<!--- 
+### Ad hoc searches
+
+::: moniker range=">= azure-devops-2019"  
+
+You perform semantic or ad hoc searches using the work item search box (shown below)   
+
+Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon.  
+
+> [!div class="mx-imgBorder"]
+> ![Work Item Search box](../../project/navigation/media/search/work-item-search-vert.png)    
+
+::: moniker-end   
+
+::: moniker range="<= tfs-2018"  
+
+You perform semantic or ad hoc searches using the work item search box (shown below). 
+
+In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it. Enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon. 
+
+![Search Work Items Text Box](media/using-queries-search-box-ts.png)
+
+::: moniker-end   
+
+For details about semantic or ad hoc searches, see [Perform a semantic or ad hoc work item search](search-box-queries.md). 
+
+
+
+### Managed queries 
+
+::: moniker range=">= azure-devops-2019"  
+
+You add and run managed queries using the built-in query-editor available from the **Boards>Queries** page.
+
+> [!div class="mx-imgBorder"]
+> ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](media/using-queries-new-vsts-exp.png)  
+
+::: moniker-end   
+
+::: moniker range="<= tfs-2018"  
+ 
+You add and run managed queries using the built-in query-editor available from the **Work>Queries** page.
+::: moniker-end  
+
+
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+
+![Web portal, Queries page, Editor view of a Flat List Query](media/query-active-bugs-editor-vso.png)   
+
+::: moniker-end  
+
+::: moniker range="tfs-2013"  
+
+![Editor View of a Flat List Query - on-premises Azure DevOps](media/5.png)  
+
+::: moniker-end
+
+**Use managed queries to perform the following tasks:** 
+
+- Review or triage a group of work items
+- Perform bulk updates on several work items such as change Assign To, Iteration Path, or more
+- Review parent-child or dependent links among work items
+- Create a status or trend chart from a flat list query
+- Create a list of work items that you'll export to [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) 
+ 
+
+-->
