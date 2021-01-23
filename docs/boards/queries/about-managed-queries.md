@@ -35,6 +35,13 @@ The following sections provide an overview of the features supported to define q
 
 [!INCLUDE [temp](../includes/feature-matrix-manage-queries.md)]
 
+### Unsupported features
+Work item queries only support querying of work items and work items linked to other work items. SOme of the limitations or restrictions of work item queries are:
+
+- You can't construct a managed query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test>Test Plans page](../../test/create-a-test-plan.md). 
+- You can't construct a managed query that shows what builds, releases, code, or other non-work item objects are linked to work items. 
+- You can't run a query to list work items linked from one project to another. 
+
 <a id="ad-hoc-v-managed" /> 
 
 ## Managed work item queries versus semantic searches
@@ -48,10 +55,10 @@ You have two ways to find and list work items: managed queries and semantic or a
 ---
 :::row:::
    :::column span="1":::
-      **Use a managed querys**
+      **Use a managed query**
    :::column-end:::
    :::column span="1":::
-      **Use a semanitic search**
+      **Use a semantic search**
    :::column-end:::
 :::row-end:::
 ---
@@ -83,8 +90,7 @@ To get started, see the following articles:
 - [View and run a query](view-run-query.md)   
 - [Perform a semantic search](search-box-queries.md)  
 - [Define a query](using-queries.md)   
-- [Query operators & macros](query-operators-variables.md) 
-   
+
 For specific examples, see [Query quick reference, Example queries](query-index-quick-ref.md).  
  
 
@@ -102,7 +108,7 @@ Azure Boards supports three query types. The icon next to each query indicates t
    :::column span="1":::
       **Query type**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
       **Usage guidance**
    :::column-end:::
 :::row-end:::
@@ -111,7 +117,7 @@ Azure Boards supports three query types. The icon next to each query indicates t
    :::column span="1":::
       **Flat list of work items**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
       - List items to perform bulk updates to fields 
       - Triage a list of work items 
       - Create a query chart and add it to a dashboard  
@@ -124,18 +130,19 @@ Azure Boards supports three query types. The icon next to each query indicates t
    :::column span="1":::
       **Work items and direct links**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
       - List linked work items to perform bulk updates to fields 
       - Triage a list of linked work items  
 
         Exporting to Excel exports as a flat list. Direct links queries are imported as a flat list as modifying multiple types of links isn't a supported feature in Excel.  
    :::column-end:::
 :::row-end:::
----:::row:::
+---
+:::row:::
    :::column span="1":::
       **Tree of work items**
    :::column-end:::
-   :::column span="1":::
+   :::column span="3":::
       - List a tree of Parent-Child related work items, or other tree-topology link type 
       - Triage a hierarchical list of work items 
       - Export a hierarchical list of items to Excel to update fields or modify the hierarchy
@@ -143,6 +150,8 @@ Azure Boards supports three query types. The icon next to each query indicates t
 :::row-end:::
 ---
   
+
+
 To learn more about link types, see [Link type reference](link-type-reference.md).
 
 
@@ -164,8 +173,7 @@ For details, see:
 
 ## Query directory, query folders, and breadcrumbs 
 
-The **Queries** page  contains a directory-focused view which you can filter to find specific queries of interest. Previously, the **Queries** page presented the queries folders, query editor, and query results all within the same view. 
-
+The **Queries** page  contains a directory-focused view which you can filter to find specific queries of interest. 
 When working in the **Queries** pages, you can navigate to a subfolder, folder, or page.
 
 ![Queries breadcrumbs](../../project/navigation/media/breadcrumbs/queries-breadcrumbs.png)
@@ -175,9 +183,11 @@ Also, you can choose a query that you've favorited from the selector menu, Or, y
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Queries, Query selector.](../../project/navigation/media/breadcrumbs/query-bd-and-selector.png) 
 
-::: moniker-end
 
-For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).  
+For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).
+
+::: moniker-end
+ 
 
 ## Taskboard versus query list items
 
@@ -193,7 +203,7 @@ To learn about query charts and widgets, see these articles:
 - [Query tile widget](../../report/dashboards/widget-catalog.md#query-tile-widget) 
 
  
-## Add a custom field to support your queries
+## Add a custom field to support queries
 
 To add a custom field to support your query needs, see [Customize your work tracking experience](../../reference/customize-work.md). 
 

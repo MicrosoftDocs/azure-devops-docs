@@ -115,15 +115,25 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 
 <a id="tips-queries-hub"> </a> 
 
-## Query directory 
+## Query directory, query folders, and breadcrumbs 
 
-The **Queries** page contains a directory-focused view which you can filter to find specific queries of interest. Previously, the **Queries** page presented the queries folders, query editor, and query results all within the same view. 
+The **Queries** page  contains a directory-focused view which you can filter to find specific queries of interest. 
+When working in the **Queries** pages, you can navigate to a subfolder, folder, or page.
 
-With this change, some functionality has been added and some has changed.  
+![Queries breadcrumbs](../../project/navigation/media/breadcrumbs/queries-breadcrumbs.png)
+
+Also, you can choose a query that you've favorited from the selector menu, Or, you can choose to browse all queries which returns you to the **All Queries** page. 
+  
+> [!div class="mx-imgBorder"]  
+> ![Screenshot of Queries, Query selector.](../../project/navigation/media/breadcrumbs/query-bd-and-selector.png) 
+
+
+For more information, see [Query FAQs, Navigate and Folders](query-faqs.yml).
 
 ::: moniker-end
-
  
+
+::: moniker range=">= azure-devops-2019"
 
 <a id="favorites" />
 
@@ -144,7 +154,9 @@ You can perform most tasks for viewing and running queries from each of the quer
 > |Unfavorite a query: Click :::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: |✔️ |✔️ | 
 > |Add a new query: Click :::image type="icon" source="/azure/devops/boards/media/icons/add-new-query.png" border="false"::: |✔️ |✔️ | 
 
-For details on adding new queries, see [Create managed queries with the query editor](using-queries.md). 
+::: moniker-end	
+
+::: moniker range=">= azure-devops-2019"
 
 ## Filter the list of queries
 
@@ -190,12 +202,11 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 ## Try this next
 
 > [!div class="nextstepaction"]
-> [Perform an ad hoc search](search-box-queries.md) 
+> [Define a query](using-queries.md)
 
 ## Related articles
 
-- [Create and save managed queries with the query editor](using-queries.md)
-- [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
+- [Manage and organize queries](organize-queries)
+- [Change column options](../backlogs/set-column-options.md)
 - [Set personal or team favorites](../../project/navigation/set-favorites.md) 
-- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-- [About access levels](../../organizations/security/access-levels.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md) 

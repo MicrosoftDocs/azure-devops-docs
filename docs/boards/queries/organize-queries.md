@@ -13,7 +13,7 @@ ms.date: 01/15/2021
 ---
 
 
-# Organize queries, add a query folder    
+# Manage and organize queries   
 
 [!INCLUDE [temp](../includes/version-all.md)]
 

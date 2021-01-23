@@ -9,10 +9,10 @@ monikerRange: '<= azure-devops'
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 01/15/2021
+ms.date: 01/22/2021
 ---
 
-# Create and save managed queries
+# Define a query
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
@@ -27,9 +27,10 @@ In this article you'll learn:
 
 > [!div class="checklist"]    
 > * How to add or create a query 
-> * How to group query clauses 
-> * Understand when to use a flat-list, tree, or direct-links query 
-> * How to query across projects    
+> * How to query across projects   
+> * How to group and ungroup query clauses 
+> * How to create a tree of work items or a direct-links query 
+ 
 
 For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
 
@@ -42,7 +43,7 @@ For quick access to all query tasks, supported operators&mdash;such as, `Contain
 
 <a id="flat-list" />
 
-## Create a query
+## Define a flat-list query
 
 You can start a fresh, new query from the **Queries** tab in the web portal or the **Work Items** tab in Team Explorer.  
 
@@ -218,7 +219,7 @@ To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungr
 
 <a id="tree-query" />
 
-## Use a tree query to view hierarchies  
+## Use a tree of work items to view hierarchies  
 
 Use the tree query (![Tree Query](media/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](media/13.png)) or collapse (![Collapse node, web portal](media/14.png)) nodes to focus on different parts of the tree.  
 
@@ -298,19 +299,9 @@ To learn more about each link type, see [Linking, traceability, and managing dep
 
 ## Related articles
 
-That's the basics about using queries. For an index of query examples, see [Query quick reference](query-index-quick-ref.md). To add a custom field to track additional data, see [Customize your work tracking experience](../../reference/customize-work.md). 
+That's the basics about defining queries. For an index of query examples, see [Query quick reference](query-index-quick-ref.md).  
 
-- [About managed queries, Ad hoc versus managed queries]([About managed queries, Ad hoc versus managed queries](about-managed-queries.md#ad-hoc-v-managed).md#ad-hoc-v-managed)  
-- [Add work items](../backlogs/add-work-items.md)  
 - [Chart a flat-list query](../../report/dashboards/charts.md)  
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
-- [Define a query as a hyperlink](define-query-hyperlink.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
-
-If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page. 
-
-
-[!INCLUDE [temp](../includes/rest-apis-queries.md)]
- 
- 
