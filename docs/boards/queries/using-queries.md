@@ -33,6 +33,96 @@ In this article you'll learn:
  
 
 For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
+ 
+### Query filter features
+
+From the Query Editor, you can exercise the following filter functions. Choose the feature to jump to an article with sample queries. 
+In addition to the query filters, you can [interactively apply filters to query results](/azure/devops/boards/backlogs/filter-backlogs).
+
+::: moniker range=">= azure-devops-2019"
+> [!NOTE] 
+> Managed queries don't support proximity searches, however semantic searches do. In addition, semantic searches supports both `*` and `?` as wildcard characters and you can use more than one wildcard character to match more than one character. To learn more, see [Advanced work items search](/azure/devops/project/search/advanced-work-item-search-syntax).
+::: moniker-end
+
+---
+:::row:::
+   :::column span="1":::
+      ::: moniker range=">= azure-devops-2019"
+      - [Compare fields](/azure/devops/boards/queries/query-field-value) 
+      - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Query macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
+      - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)
+      - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)  
+      - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes) 
+      - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)
+      ::: moniker-end
+      ::: moniker range="tfs-2018"
+      - [Compare fields](/azure/devops/boards/queries/query-field-value) 
+      - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Query macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
+      - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)
+      - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)  
+      - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes) 
+      - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)
+      ::: moniker-end
+      ::: moniker range="tfs-2017"
+      - [Compare fields](/azure/devops/boards/queries/query-field-value) 
+      - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Query macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
+      - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)
+      - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)  
+      - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes) 
+      - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)
+      ::: moniker-end
+      ::: moniker range="tfs-2015"
+      - [Compare fields](/azure/devops/boards/queries/query-field-value)
+      - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)   
+      - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Query macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
+      ::: moniker-end
+      ::: moniker range="tfs-2013"
+      - [Compare fields](/azure/devops/boards/queries/query-field-value)
+      - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)   
+      - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Query macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
+      ::: moniker-end
+   :::column-end::: 
+   :::column span="1":::
+      ::: moniker range=">= azure-devops-2019"
+      - [Blank or empty fields](/azure/devops/boards/queries/titles-ids-descriptions#empty-or-not-empty-html-field-queries)
+      - [Boolean searches](/azure/devops/boards/queries/query-by-workflow-changes#kanban-board-change-queries) 
+      - [History and Discussion](/azure/devops/boards/queries/history-and-auditing) 
+      - [Kanban board fields](/azure/devops/boards/queries/query-by-workflow-changes#kanban-board-change-queries)
+      - [In and Not In Group searches](/azure/devops/boards/queries/planning-ranking-priorities) 
+      - [Search across projects](/azure/devops/boards/queries/using-queries#across-projects)
+      ::: moniker-end
+      ::: moniker range="tfs-2018"
+      - [Boolean searches](/azure/devops/boards/queries/query-by-workflow-changes#kanban-board-change-queries) 
+      - [History and Discussion](/azure/devops/boards/queries/history-and-auditing) 
+      - [In and Not In Group searches](/azure/devops/boards/queries/planning-ranking-priorities) 
+      - [Search across projects](/azure/devops/boards/queries/using-queries#across-projects)
+      - [In and Not In Group searches](/azure/devops/boards/queries/planning-ranking-priorities) 
+      ::: moniker-end
+      ::: moniker range="tfs-2017"
+      - [Boolean searches](/azure/devops/boards/queries/query-by-workflow-changes#kanban-board-change-queries) 
+      - [History and Discussion](/azure/devops/boards/queries/history-and-auditing) 
+      - [Search across projects](/azure/devops/boards/queries/using-queries#across-projects)
+      ::: moniker-end
+      ::: moniker range="tfs-2015"
+      - [Search across projects](/azure/devops/boards/queries/using-queries#across-projects)
+      - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)
+      - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes) 
+      - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)
+      ::: moniker-end
+      ::: moniker range="tfs-2013"
+      - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)
+      - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes) 
+      - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
+---
+ 
 
 [!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
