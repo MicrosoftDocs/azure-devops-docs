@@ -634,7 +634,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs: 
-    pathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
+    PathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
     ArtifactName: 'www' # output artifact named www
 ```
 
