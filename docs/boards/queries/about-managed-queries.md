@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/22/2021
+ms.date: 01/25/2021
 ---
 
 
@@ -219,7 +219,8 @@ To add a custom field to support your query needs, see [Customize your work trac
 - [Perform work item search](../../project/search/work-item-search.md) 
 - [Query fields, operators, and macros](query-operators-variables.md) 
 - [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) or [Project](../backlogs/office/create-your-backlog-tasks-using-project.md) 
-- [Query support for cross-service, integration, and extensions](query-support-integration-cross-service-extensions.md) 
+
+<!--- [Query support for cross-service, integration, and extensions](query-support-integration-cross-service-extensions.md) -->
 
 
 <!--- 
