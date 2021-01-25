@@ -92,4 +92,17 @@ In an elevated PowerShell command prompt window, run the following command to cr
 $env:PATVAR = "YOUR_PAT_GOES_HERE"
 ```
 
+We can now use the personal access token to construct our HTTP request header. Run the following command in your PowerShell window
+
+```PowerShell
+$pat = [System.Environment]::GetEnvironmentVariable($PatVar);
+if (-Not $pat) {
+    throw "Can't find environment variable: $PatVar. Ensure you've set `$env:$PatVar to your Personal Access Token value."
+}
+$token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$pat")));
+$headers = @{
+    Authorization = "Basic $token"
+}
+return $headers;
+```
 
