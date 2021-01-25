@@ -25,9 +25,9 @@
     href: query-faqs.yml
 - name: Import/export queries
   items:
-  - name: Query support & cross-service, integration, & extensions
-    href: query-support-integration-cross-service-extensions.md 
-    displayname: OData, Power BI, WIQL
+#   - name: Query support & cross-service, integration, & extensions
+#     href: query-support-integration-cross-service-extensions.md 
+#     displayname: OData, Power BI, WIQL
   - name: Bulk import or update work items (CSV)
     href: import-work-items-from-csv.md 
     displayname: import, export, csv
