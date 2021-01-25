@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 01/15/2021
+ms.date: 01/25/2021
 ---
 
 # Query quick reference 
@@ -138,7 +138,7 @@ You can list work items based on the following criteria...
    :::column-end:::
    :::column span="1":::
       - [Email a query](view-run-query.md#email-query) 
-      - [Export a query](query-support-integration-cross-service-extensions.md#export-query) 
+      - [Export a query to Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) 
       - [Favorite a query](view-run-query.md) 
       - [Filter a query](../backlogs/filter-backlogs.md) 
       - [Flat-list query](using-queries.md#flat-list) 
