@@ -960,7 +960,7 @@ steps: # Checking out connected repo
 
 - task: PublishBuildArtifacts@1 
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
     artifactName: npm
   displayName: 'Publish npm artifact'
 
