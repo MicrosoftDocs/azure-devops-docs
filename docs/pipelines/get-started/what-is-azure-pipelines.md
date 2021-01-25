@@ -11,12 +11,9 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-only-2015](../includes/version-tfs-only-2015.md)]
 
-The Azure Pipelines supports automatically 
-build and test of code projects to make them available to others. 
+Azure Pipelines automatically builds and tests code projects to make them available to others. 
 It works with just about any language or project type. Azure Pipelines combines continuous integration (CI) and continuous 
-delivery (CD) to constantly and consistently test and build your code 
-and ship it to any target. 
-
+delivery (CD) to constantly and consistently test and build your code and ship it to any target. 
 
 Continuous Integration (CI) is the practice used by development teams to automate the merging and testing of code.  Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix.  Automated tests execute as part of the CI process to ensure quality.  Artifacts are produced from CI systems and fed to release processes to drive frequent deployments. The Build service in TFS helps you set up and manage CI for your applications.
 
