@@ -9,7 +9,7 @@ ms.custom: has-adal-ref
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/07/2020
+ms.date: 01/25/2021
 ---
 
 # Security key concepts
@@ -54,7 +54,10 @@ Authorization refers to the operations performed to verify that the identity whi
 
 ## Azure Active Directory Authentication Libraries
 
-The Azure Active Directory Authentication Library (ADAL) v1.0 enables application developers to authenticate users to cloud or on-premises Active Directory (AD), and obtain tokens for securing API calls. To learn more about its usage with Azure DevOps, see [Choose the right authentication mechanism](../../integrate/get-started/authentication/authentication-guidance.md). 
+The Azure Active Directory Authentication Library (ADAL) v1.0 enables application developers to authenticate users to cloud or on-premises Active Directory (AD), and obtain tokens for securing API calls.
+> [!IMPORTANT]
+> **Starting, June 30th, 2020**, we'll no longer add any new features to ADAL and Azure AD Graph. We'll continue to provide technical support and security updates, but won't provide feature updates.
+> **Starting June 30th, 2022**, we'll end support for ADAL and Azure AD Graph and won't provide technical support or security updates. Apps using Azure AD Graph after this time will no longer receive responses from the Azure AD Graph endpoint. Apps using ADAL on existing OS versions will continue to work after this time but will not get any technical support or security updates.  
 
 ## Basic member
 
@@ -74,6 +77,10 @@ Permissions that aren't directly allowed or denied for a user, may be inherited.
 ## Membership 
 
 -->
+
+## Microsoft Authentication Library
+
+The Microsoft Authentication Library (MSAL) enables application developers to acquire tokens from the Microsoft identity platform to authenticate users and access secured web APIs. It can be used to provide secure access to Microsoft Graph, other Microsoft APIs, third-party web APIs, or your own web API. MSAL supports many different application architectures and platforms including .NET, JavaScript, Java, Python, Android, and iOS. For more information, see the [Overview of Microsoft Authentication Library](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview#languages-and-frameworks).
 
 ## Namespace 
 
