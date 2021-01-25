@@ -28,11 +28,11 @@ Users will still be able to override the new upstream behavior and consume packa
 > [!NOTE]
 > The new behavior won't affect any package versions that are already in use. Those are stored in the feed's `@local` view.
 
-## Scenarios
+## Applicable Scenarios
 
 Below are few common scenarios where the upstream behavior will be triggered to block external packages as well as cases where no blockage to the public packages is needed.
 
-### Public versions will be blocked
+## Public versions will be blocked
 
 - **Private package version made public**: in this scenario, a team has a private package that was made public. The upstream behavior in this case will be triggered to block any new public versions (untrusted packages). 
 
@@ -42,7 +42,7 @@ Below are few common scenarios where the upstream behavior will be triggered to 
 
     :::image type="content" source="media\both-private-and-public.png" alt-text="both private and public packages":::
 
-### Public versions will not be blocked
+## Public versions will not be blocked
 
 - **All packages are private**: if all existing packages are private and the team won't be consuming any public packages, the new upstream behavior will have no effect on the team's workflow in this scenario.
     
@@ -73,13 +73,13 @@ Users can view and filter packages by **Sourced versions**.
 - **Mixed**: both internal and external package versions.
 -->
 
-### Enable upstream behavior using the REST API
+## Enable upstream behavior using the REST API
 
 Aside from using the feed's user interface, you can also enable the upstream behavior using the Azure DevOps services REST API.
 
 <!-- API reference link -->
 
-### Enable upstream behavior using PowerShell
+## Enable upstream behavior using PowerShell
 
 To successfully execute the next steps in this section, you will need to create a personal access token with packaging **Read, write, & manage** permissions. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to create your personal access token. 
 
@@ -92,7 +92,7 @@ In an elevated PowerShell command prompt window, run the following command to cr
 $env:PATVAR = "YOUR_PAT_GOES_HERE"
 ```
 
-We can now use the personal access token to construct our HTTP request header. Run the following command in your PowerShell window
+We can now use the personal access token and construct our HTTP request header.
 
 ```PowerShell
 $token = [Convert]::ToBase64String(([Text.Encoding]::ASCII.GetBytes("username:$PatVar")));
@@ -101,10 +101,19 @@ $headers = @{
 }
 ```
 
-Invoking the REST method requires an endpoint url. Enter your `OrganizationName`, `ProjectName`, `FeedName`, `Protocol`, and your `PackageName` to store it in the `$Url` variable. (E.g. https://pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/Myapp1.0.nupkg/upstreaming?api-version=6.1-preview.1)
+Invoking the REST method requires an endpoint url. Enter your `OrganizationName`, `ProjectName`, `FeedName`, `Protocol`, and your `PackageName` to store it in the `$Url` variable. (E.g. `https://pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/Myapp1.0.nupkg/upstreaming?api-version=6.1-preview.1`)
 
 ```PowerShell
 $Url = "https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_apis/packaging/feeds/{FeedName}/{Protocol}/packages/{PackageName}/upstreaming?api-version=6.1-preview.1"
 ```
 
-Now that we have both the header and endpoint URL set up, we can now start invoking HTTP requests to get, set, and clear upstreaming for our feed.
+Now that we have both the header and endpoint URL set up, we can now start sending HTTP requests to get, set, and clear upstreaming for our feed.
+
+### Get upstreaming status
+
+Run the following command to retrieve the upstreaming status of your package. `$Url` and `$headers` are the same variables we used in the previous section.
+
+ ```PowerShell
+ Invoke-RestMethod -Uri $url -Headers $headers
+ ```
+
