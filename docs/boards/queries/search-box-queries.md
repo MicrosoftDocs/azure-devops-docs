@@ -362,7 +362,7 @@ The following examples show how to use operators when you create a search string
 
 ## Related articles
 
-- [About managed queries]([About managed queries](about-managed-queries.md)  
+- [About managed queries](about-managed-queries.md)  
 - [Define a query](using-queries.md)   
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)

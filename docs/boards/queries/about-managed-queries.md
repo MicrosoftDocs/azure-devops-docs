@@ -22,7 +22,8 @@ List bugs, user stories, or other work items based on field criteria you specify
  
 ## Supported query features 
 
-The following sections provide an overview of the features supported to define queries and manage queries. In addition to these features, additional functionality is described in[Query support for cross-service, integration, and extensions](query-support-integration-cross-service-extensions.md).
+The following sections provide an overview of the features supported to define queries and manage queries. 
+<!--- In addition to these features, additional functionality is described in [Query support for cross-service, integration, and extensions](query-support-integration-cross-service-extensions.md). --> 
 
 
 <!--- interactive, filter  --> 
@@ -37,11 +38,12 @@ The following sections provide an overview of the features supported to define q
 
 ### Unsupported features
 
-Work item queries only support querying of work items and work items linked to other work items. SOme of the limitations or restrictions of work item queries are:
+Work item queries only support querying of work items and work items linked to other work items. Some of the limitations or restrictions of work item queries are:
 
 - You can't construct a managed query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test>Test Plans page](../../test/create-a-test-plan.md). 
 - You can't construct a managed query that shows what builds, releases, code, or other non-work item objects are linked to work items. 
 - You can't run a query to list work items linked from one project to another. 
+- You can't export a cross-project query to Excel. Direct links queries exported to Excel export as a flat-list. 
 
 <a id="ad-hoc-v-managed" /> 
 <a id="semantic-v-managed" /> 

@@ -129,7 +129,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      **@StartOfDay**, **@StartOfMonth**, **@StartOfWeek**, **@StartOfYear**
+      **@StartOfDay**, **@StartOfMonth**, **@StartOfWeek*, **@StartOfYear**
    :::column-end:::
    :::column span="1":::
       Find work where the selected date-time field is within the current day, month, week, or year with a plus/minus offset, example: `Closed Date>=@StartOfDay-7`

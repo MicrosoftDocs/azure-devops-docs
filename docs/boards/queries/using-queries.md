@@ -46,6 +46,15 @@ In addition to the query filters, you can [interactively apply filters to query 
 
 ---
 :::row:::
+   :::column span="2":::
+      **Filter features**
+   :::column-end::: 
+   :::column span="1":::
+      **Macros**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
    :::column span="1":::
       ::: moniker range=">= azure-devops-2019"
       - [Compare fields](/azure/devops/boards/queries/query-field-value) 
@@ -118,6 +127,39 @@ In addition to the query filters, you can [interactively apply filters to query 
       - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)
       - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes) 
       - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)
+      ::: moniker-end
+   :::column-end:::
+   :::column span="1":::
+      ::: moniker range=">= azure-devops-2019"
+      - **[Any]** 
+      - **@Me** 
+      - **@Today** 
+      - **@CurrentIteration**, **@CurrentIteration +/-n**  
+      -  **@Follows** 
+      - **@MyRecentActivity**, **@RecentMentions**, **@MyRecentProjectActivity**
+      - **@StartOfDay**, **@StartOfMonth**, **@StartOfWeek**, **@StartOfYear**
+      - **@TeamAreas** 
+      ::: moniker-end
+      ::: moniker range="tfs-2018"
+      - **[Any]** 
+      - **@Me** 
+      - **@Today** 
+      - **@CurrentIteration**
+      -  **@Follows** 
+      - **@MyRecentActivity**, **@RecentMentions**, **@MyRecentProjectActivity**
+      ::: moniker-end
+      ::: moniker range="tfs-2017"
+      - **[Any]** 
+      - **@Me** 
+      - **@Today** 
+      - **@CurrentIteration** 
+      -  **@Follows** 
+      ::: moniker-end
+      ::: moniker range="tfs-2013 || tfs-2015"
+      - **[Any]** 
+      - **@Me** 
+      - **@Today** 
+      - **@CurrentIteration** 
       ::: moniker-end
    :::column-end:::
 :::row-end:::

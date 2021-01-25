@@ -23,10 +23,6 @@ sections:
         answer: |
            Yes. The wildcard character is an asterisk (*). For samples, see 
 
-      - question: Does the search box support less than/greater than operators? 
-        answer: |
-          **No**. 
-
       - question: What's the difference between a query and a semantic search? 
         answer: |
           While the both will find and list work items, the filter features and result presentation are different. To learn more, see [About managed queries, Managed work item queries versus semantic searches](about-managed-queries.md#semantic-v-managed).  
@@ -97,10 +93,6 @@ sections:
         answer: |
           To manage dependencies in Azure Boards, you can link work items using the Predecessor/Successor link type. To learn how, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md).  
 
-      - question: Can I query for work items linked across projects? 
-        answer: |
-          **No**. There is a prohibitive performance cost for trying to execute such a query, so it isn't supported.  
-
   - name: Query folders
     questions:
       - question: Can I change the owner of a query or folder? 
@@ -116,7 +108,7 @@ sections:
         answer: |
           **Yes**. In the web portal, choose **Rename** from the context menu. In Team Explorer for Visual Studio, simply drag the folder to the new location. In Team Explorer Everywhere or Eclipse, choose **Move** from the context menu and select the folder to which you want to move the item.
 
-      - question: Can I add folders to **My Favorites** or **Team Favorites**?
+      - question: Can I add folders to My Favorites or Team Favorites?
         answer: |
           **No**. This is not a supported feature. 
 
