@@ -80,7 +80,7 @@ Permissions that aren't directly allowed or denied for a user, may be inherited.
 
 ## Microsoft Authentication Library
 
-The Microsoft Authentication Library (MSAL) enables application developers to acquire tokens from the Microsoft identity platform to authenticate users and access secured web APIs. It can be used to provide secure access to Microsoft Graph, other Microsoft APIs, third-party web APIs, or your own web API. MSAL supports many different application architectures and platforms including .NET, JavaScript, Java, Python, Android, and iOS. For more information, see the [Overview of Microsoft Authentication Library](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview#languages-and-frameworks).
+The Microsoft Authentication Library (MSAL) enables application developers to acquire tokens from the Microsoft identity platform to authenticate users and access secured web APIs. It can be used to provide secure access to Microsoft Graph, other Microsoft APIs, third-party web APIs, or your own web API. MSAL supports many different application architectures and platforms including .NET, JavaScript, Java, Python, Android, and iOS. For more information, see the [Overview of Microsoft Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/msal-overview#languages-and-frameworks).
 
 ## Namespace 
 
