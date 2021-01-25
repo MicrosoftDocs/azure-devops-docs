@@ -120,7 +120,7 @@ The example with this document uses the Machine Learning CLI.
 Before you use Azure Pipelines to automate model training and deployment, you must understand the files needed by the model and what indicates a "good" trained model.
 
 ### Machine learning files
-ƒ
+
 In most cases, your data science team will provide the files and resources needed to train the machine learning model. The following files in the example project would be provided by the data scientists:
 
 * __Training script__ (`train.py`): The training script contains logic specific to the model that you're training.
