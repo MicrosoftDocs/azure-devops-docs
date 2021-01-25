@@ -49,7 +49,7 @@ In addition to the query filters, you can [interactively apply filters to query 
    :::column span="2":::
       **Filter features**
    :::column-end::: 
-   :::column span="1":::
+   :::column span="2":::
       **Macros**
    :::column-end:::
 :::row-end:::
@@ -58,30 +58,30 @@ In addition to the query filters, you can [interactively apply filters to query 
    :::column span="1":::
       ::: moniker range=">= azure-devops-2019"
       - [Compare fields](/azure/devops/boards/queries/query-field-value) 
-      - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
-      - [Query macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
-      - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)
       - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)  
-      - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes) 
-      - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)
+      - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
+      - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)  
+      - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes)  
+      - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)  
       ::: moniker-end
       ::: moniker range="tfs-2018"
       - [Compare fields](/azure/devops/boards/queries/query-field-value) 
-      - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
-      - [Query macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
-      - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)
       - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)  
-      - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes) 
-      - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)
+      - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
+      - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)  
+      - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes)  
+      - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)  
       ::: moniker-end
       ::: moniker range="tfs-2017"
       - [Compare fields](/azure/devops/boards/queries/query-field-value) 
-      - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
-      - [Query macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
-      - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)
       - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)  
-      - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes) 
-      - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)
+      - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
+      - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)  
+      - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes)  
+      - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)  
       ::: moniker-end
       ::: moniker range="tfs-2015"
       - [Compare fields](/azure/devops/boards/queries/query-field-value)
@@ -129,7 +129,7 @@ In addition to the query filters, you can [interactively apply filters to query 
       - [Wildcard](/azure/devops/boards/queries/titles-ids-descriptions)
       ::: moniker-end
    :::column-end:::
-   :::column span="1":::
+   :::column span="2":::
       ::: moniker range=">= azure-devops-2019"
       - **[Any]** 
       - **@Me** 
@@ -313,11 +313,11 @@ As the following examples show, the grouped clauses are translated to the corres
 > To view the WIQL syntax for a query, install the [WIQL query editor extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor) which will allow you to see the WIQL version of any Query UI entry. This extension allows you to see just how AND/OR grouped clauses are treated. 
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Grouped clauses|Logical expression|
-> |---|---|
-> |**1** ![Screenshot showing a group clause query. Filters are set up for the Work item type field and either the State field or the Assigned to field.](media/using-queries/and-or-clause-no-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type, State, and Assigned to fields. An OR operator groups the State and Assigned to fields.](media/using-queries/and-or-clause-no-grouping-wiql.png)|
-> |**2** ![Screenshot showing a group clause query, with filters for both the Work item type field and one of either the State field or the Assigned to field.](media/using-queries/and-or-clause-with-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type with the State or Assigned to fields, which are grouped by an OR operator.](media/using-queries/and-or-clause-with-grouping-wiql.png)|
-> |**3** ![Screenshot showing a group clause query. Filters are set up for either the Work item type field or both the State field and the Assigned to field.](media/using-queries/and-or-clause-reverse-grouping.png)|![Screenshot of a logical expression. An OR operator links the Work item type to both the State and the Assigned to fields, which are linked by an AND operator.](media/using-queries/and-or-clause-reverse-grouping-wiql.png)|
+> |Query| Grouped clauses|Logical expression|
+> |---|---|---|
+> |**1** |![Screenshot showing a group clause query. Filters are set up for the Work item type field and either the State field or the Assigned to field.](media/using-queries/and-or-clause-no-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type, State, and Assigned to fields. An OR operator groups the State and Assigned to fields.](media/using-queries/and-or-clause-no-grouping-wiql.png)|
+> |**2**| ![Screenshot showing a group clause query, with filters for both the Work item type field and one of either the State field or the Assigned to field.](media/using-queries/and-or-clause-with-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type with the State or Assigned to fields, which are grouped by an OR operator.](media/using-queries/and-or-clause-with-grouping-wiql.png)|
+> |**3**| ![Screenshot showing a group clause query. Filters are set up for either the Work item type field or both the State field and the Assigned to field.](media/using-queries/and-or-clause-reverse-grouping.png)|![Screenshot of a logical expression. An OR operator links the Work item type to both the State and the Assigned to fields, which are linked by an AND operator.](media/using-queries/and-or-clause-reverse-grouping-wiql.png)|
 
 These queries return work items that are type Bug and meet the following logical expressions:  
 - **Query 1**: AND State=Active OR Assigned to @Me  
