@@ -101,3 +101,10 @@ $headers = @{
 }
 ```
 
+Invoking the REST method requires an endpoint url. Enter your `OrganizationName`, `ProjectName`, `FeedName`, `Protocol`, and your `PackageName` to store it in the `$Url` variable. (E.g. https://pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/Myapp1.0.nupkg/upstreaming?api-version=6.1-preview.1)
+
+```PowerShell
+$Url = "https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_apis/packaging/feeds/{FeedName}/{Protocol}/packages/{PackageName}/upstreaming?api-version=6.1-preview.1"
+```
+
+Now that we have both the header and endpoint URL set up, we can now start invoking HTTP requests to get, set, and clear upstreaming for our feed.
