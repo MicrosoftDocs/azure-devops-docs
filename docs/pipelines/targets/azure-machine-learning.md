@@ -121,7 +121,7 @@ Before you use Azure Pipelines to automate model training and deployment, you mu
 
 ### Machine learning files
 
-In most cases, your data science team will provide the files and resources needed to train the machine learning model. The following files in the example project would be provided by the data scientists:
+In most cases, your data science team will provide the files and resources needed to train the machine learning model. In the example project, data scientists would provide these files:
 
 * __Training script__ (`train.py`): The training script contains logic specific to the model that you're training.
 * __Scoring file__ (`score.py`): When the model is deployed as a web service, the scoring file receives data from clients and scores it against the model. The output is then returned to the client.
@@ -131,7 +131,7 @@ In most cases, your data science team will provide the files and resources neede
 * __Deployment environment__ (`inferenceConfig.yml`): Defines the packages needed to run and score the model in the deployment environment.
 
 
-Some of these files are directly used when developing a model. For example, the `train.py` and `score.py` files. However the data scientist may be programmatically creating the run configuration and environment settings. If so, they can create the `.runconfig` and training environment files, by using [RunConfiguration.save()](/python/api/azureml-core/azureml.core.runconfiguration?preserve-view=true&view=azure-ml-py#save-path-none--name-none--separate-environment-yaml-false-). Alternatively, default run configuration files will be created for all compute targets already in the workspace when running the following command.
+Some of these files are directly used when developing a model. For example, the `train.py` and `score.py` files. However the data scientist may be programmatically creating the run configuration and environment settings. If so, they can create the `.runconfig` and training environment files, by using [RunConfiguration.save()](/python/api/azureml-core/azureml.core.runconfiguration?preserve-view=true&view=azure-ml-py#save-path-none--name-none--separate-environment-yaml-false-). Or, default run configuration files can be created for all compute targets already in the workspace by running the following command:
 
 ```azurecli
 az ml folder attach --experiment-name myexp -w myws -g mygroup
