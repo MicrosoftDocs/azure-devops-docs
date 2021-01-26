@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot permissions for Azure DevOps
+title: Troubleshoot permissions
 titleSuffix: Azure DevOps
 description: Learn how to resolve permissions issues in Azure DevOps.  
 ms.assetid: 
@@ -8,7 +8,7 @@ ms.topic: troubleshoot
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/19/2021
+ms.date: 01/25/2021
 --- 
 
 # Troubleshoot permissions
@@ -17,11 +17,23 @@ ms.date: 01/19/2021
 
 
 
+
+
+
+
 ## Look up permissions
 
+You can look up permissions based on the following levels:
+- object level    
+- project level
+- organization or project collection level  
+- security role   
+- team administrator role
+
+For more information, see the [Permissions lookup guide](permissions-lookup-guide.md).
 ## Trace a permission
 
-You use permission tracing to determine why a user's permissions aren't allowing them access. Learn how a user or an administrator can investigate the inheritance of permissions.
+Use permission tracing to determine why a user's permissions aren't allowing them access. Learn how a user or an administrator can investigate the inheritance of permissions.
 
 If a user's having permissions issues and you use default security groups or custom groups for permissions, you can investigate where those permissions are coming from by using our permissions tracing. Permissions issues could be due to one of the following scenarios:
 
@@ -96,7 +108,7 @@ For more information, see [Grant or restrict access to select features and funct
 
 ## Membership in a group which has lesser permissions
 
-Group rule types are ranked in the following order: Subscriber > Basic + Test Plans > Basic > Stakeholder. Users always get the best access level between all the group rules, including Visual Studio (VS) subscription.
+Group rule types are ranked in the following order: Subscriber > Basic + Test Plans > Basic > Stakeholder. Users always get the best access level between all the group rules, including Visual Studio (VS) subscription. 
 
 See the following examples, showing how the subscriber detection factors into group rules.
 
@@ -112,9 +124,15 @@ I have a Visual Studio Test Pro subscription and I'm in a group rule that gives 
 
 Expected: I get detected as a Visual Studio Test Pro subscriber, because the access is the same as the group rule, and I'm already paying for the Visual Studio Test Pro, so I wouldn't want to pay again.
 
+
+For more information, see the following articles:
+- [Permissions and groups reference](permissions.md)
+- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
+- [About permissions and inheritance](about-permissions.md)
 ## Rules applied to a work item type that restrict permissions
 
 ## Other areas where permissions might be applied
+
 
 ## Access level restriction
 
@@ -134,12 +152,12 @@ A user can lose access for the following reasons:
 
 Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](../accounts/delete-organization-users.md).
 
-
-
-
 ## Related articles
-- [About permissions and inheritance](about-permissions.md)
-- [Permissions lookup reference](permissions-lookup-guide.md)
-- [Permissions and groups reference](permissions.md)
-- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)
 
+- [About permissions](about-permissions.md)  
+- [Security and permission management tools](security-tools-reference.md)  
+- [Service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)  
+- [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md)  
+- [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
+- [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
+- [Make a user a team admin](../settings/manage-teams.md)  
