@@ -168,7 +168,7 @@ YAML is not supported in this version of TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-To add jobs to your build pipeline, edit the pipeline in Pipelines page. Select **...**  to add a job.
+To add jobs to your build pipeline, edit the pipeline on the Pipelines page. Select **...**  to add a job.
 
 :::image type="content" source="media/build-pipeline-jobs.png" alt-text="Add a job to the pipeline.":::
 
