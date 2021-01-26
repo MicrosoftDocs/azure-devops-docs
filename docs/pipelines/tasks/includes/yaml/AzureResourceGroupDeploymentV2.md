@@ -22,7 +22,7 @@ ms.technology: devops-cicd-tasks
     #csmFile: # Required when  TemplateLocation == Linked Artifact
     #csmParametersFile: # Optional
     #overrideParameters: # Optional
-    #deploymentMode: 'Incremental' # Options: Incremental, Complete, Validation
+    #deploymentMode: 'Incremental' # Options: Incremental, Complete, Validate
     #enableDeploymentPrerequisites: 'None' # Optional. Options: none, configureVMwithWinRM, configureVMWithDGAgent
     #teamServicesConnection: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent
     #teamProject: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent

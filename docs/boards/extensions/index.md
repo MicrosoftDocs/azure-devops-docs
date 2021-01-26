@@ -14,9 +14,7 @@ ms.date: 11/06/2020
 # Azure Boards extensions developed by Microsoft
 
 The Azure DevOps Marketplace offers a wide variety of extensions to customize or enhance the default experience. You can learn more about those extensions developed by Microsoft from the following articles and links.  
-
-
-
+ 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -35,6 +33,22 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 > [!NOTE]   
 > Several extensions, such as the Feature Timeline and Epic Roadmap extension and the Dependency Tracker extension, are not supported features of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
 
+::: moniker-end
+
+
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> A new version of Delivery Plans is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans**. This new version of Delivery Plans provides support for the following tasks: 
+> - Epics can be added to a delivery plan 
+> - Work item cards can span iteration boundaries 
+> - Drag and drop borders show when a work item starts and ends 
+> - You can add backlog items to a team from a plan
+> - You can view work item dependencies 
+> - Stakeholders can view plans
+
+To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2020"

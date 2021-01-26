@@ -35,7 +35,7 @@ The destination repository's permissions, policies, builds, and work items will 
 ## Choose between branches and forks
 
 For a very small team (2-5 developers), we recommend working in a single repo.
-Everyone should work in topic branches, and master should be protected with [branch policies](branch-policies-overview.md).
+Everyone should work in topic branches, and main should be protected with [branch policies](branch-policies-overview.md).
 As your team grows larger, you may find yourself outgrowing this arrangement and prefer to switch to a forking workflow.
 
 If your repository has a large number of casual or infrequent committers (similar to an open source project), we recommend the forking workflow.
@@ -124,7 +124,7 @@ On the command line, navigate to your repository, and type:
 
 ## Make and push changes
 
-It's possible to work directly in `master` - after all, this fork is your personal copy of the repo.
+It's possible to work directly in `main` - after all, this fork is your personal copy of the repo.
 We recommend you still work in a topic branch, though.
 This allows you to maintain multiple, independent workstreams simultaneously.
 Also, it reduces confusion later when you want to sync changes into your fork.
@@ -151,7 +151,7 @@ Once all policies are satisfied, the PR can be completed and the changes become 
 ## Sync your fork to latest
 
 When you've gotten your PR accepted into upstream, you'll want to make sure your fork reflects the latest state of the repo.
-We recommend rebasing on `upstream`'s `master` branch (assuming `master` is the main development branch).
+We recommend rebasing on `upstream`'s `main` branch (assuming `main` is the main development branch).
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -163,11 +163,11 @@ In Visual Studio, you can use the **Synchronization** page to fetch and rebase.
 
     ![Team Explorer sync](media/forks/vs-te-sync.png)
 
-3. Open the **Branches** page in Team Explorer. Make sure `master` is checked out.
+3. Open the **Branches** page in Team Explorer. Make sure `main` is checked out.
 
-    ![Check out master branch](media/forks/vs-te-master-checked-out.png)
+    ![Check out main branch](media/forks/vs-te-master-checked-out.png)
 
-4. Rebase `master` onto `upstream/master`.
+4. Rebase `main` onto `upstream/main`.
 
     ![Rebase](media/forks/vs-te-rebase.png)
 
@@ -178,8 +178,8 @@ Now you're all set to start your next feature on a new topic branch.
 On the command line, navigate to your repository and run:
 
 ```
-git fetch upstream master
-git rebase upstream/master
+git fetch upstream main
+git rebase upstream/main
 git push origin
 ```
 

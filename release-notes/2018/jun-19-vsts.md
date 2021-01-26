@@ -200,7 +200,7 @@ Previously, you had been able to use npmjs.com, and other VSTS feeds, as npm ups
 > Enable the **New build hub** and **New release progress views**
 [preview features](/azure/devops/project/navigation/preview-features?view=azure-devops) to use these new capabilities.
 
-Along with the new **Builds** hub and new [Release](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress) progress views, a modern experience for the **Test** tab is now available. This gives you rich in-context test information for **Builds** and **Release**. The new experience provides an in-progress test view, full page debugging experience, in context test history, reporting aborted test execution, and run level summary.
+Along with the new **Builds** hub and new [Release](./may-30-vsts.md#visualize-release-progress) progress views, a modern experience for the **Test** tab is now available. This gives you rich in-context test information for **Builds** and **Release**. The new experience provides an in-progress test view, full page debugging experience, in context test history, reporting aborted test execution, and run level summary.
 
 > [!div class="mx-imgBorder"]
 > ![New Test hub](media/136_01.png)

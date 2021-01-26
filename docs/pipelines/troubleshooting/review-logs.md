@@ -3,7 +3,7 @@ title: Review logs to diagnose pipeline issues
 description: Learn how to review pipeline diagnostic logs to troubleshoot
 ms.author: sdanie
 ms.reviewer: steved0x
-ms.custom: "seodec18, contentperfQ4"
+ms.custom: seodec18, contperf-fy20q4
 ms.topic: troubleshooting
 ms.date: 06/09/2020
 monikerRange: '>= tfs-2015'
@@ -107,9 +107,16 @@ that ran your build.
 
 ## HTTP trace logs
 
-* [Use built-in HTTP tracing](#use-built-in-http-tracing)
-* [Use full HTTP tracing - Windows](#use-full-http-tracing---windows)
-* [Use full HTTP tracing - macOS and Linux](#use-full-http-tracing---macos-and-linux)
+- [Review logs to diagnose pipeline issues](#review-logs-to-diagnose-pipeline-issues)
+  - [Configure verbose logs](#configure-verbose-logs)
+  - [View and download logs](#view-and-download-logs)
+  - [Worker diagnostic logs](#worker-diagnostic-logs)
+  - [Agent diagnostic logs](#agent-diagnostic-logs)
+  - [Other logs](#other-logs)
+  - [HTTP trace logs](#http-trace-logs)
+    - [Use built-in HTTP tracing](#use-built-in-http-tracing)
+    - [Use full HTTP tracing - Windows](#use-full-http-tracing---windows)
+    - [Use full HTTP tracing - macOS and Linux](#use-full-http-tracing---macos-and-linux)
 
 > [!IMPORTANT]
 > HTTP traces and trace files can contain passwords and other secrets. Do **not** post them on a public sites.

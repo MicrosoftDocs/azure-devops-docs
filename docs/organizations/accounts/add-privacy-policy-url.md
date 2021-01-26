@@ -40,5 +40,5 @@ A link is added to your organization's privacy document.
 - [Data Protection Overview](../security/data-protection.md)
 - [Azure DevOps data location](../security/data-location.md)
 - [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
-- [Azure DevOps support](https://azure.microsoft.com/support/devops/)
+- [Azure DevOps support](https://developercommunity.visualstudio.com/spaces/21/index.html)
 - [Developer Services Agreement](../../user-guide/services.md)

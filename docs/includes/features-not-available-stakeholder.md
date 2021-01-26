@@ -19,7 +19,6 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Change fields on cards on a Kanban board or Taskboard
 - Drag-and-drop work items to the Planning pane to assign to a sprint 
 - Add new work item tags  
-- Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
 - View Delivery Plans (a Marketplace extension)    
 - Access the full set of features under **Pipelines**, **Repos**, or **Test Plans**.   

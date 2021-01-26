@@ -3,7 +3,7 @@ title: NuGet Authenticate
 ms.custom: seodec18
 description: Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories
 ms.topic: reference
-ms.date: 08/27/2019
+ms.date: 01/13/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -51,6 +51,7 @@ If all of the Azure Artifacts feeds you use are in the same organization as your
 </configuration>
 ```
 
+To use a service connection, specify the service connection in the `nuGetServiceConnections` input for the NuGet Authenticate task. You can then reference the service connection with `-ApiKey AzureArtifacts` in a task. 
 #### nuget.exe
 ```YAML
 - task: NuGetAuthenticate@0

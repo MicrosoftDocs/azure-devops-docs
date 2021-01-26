@@ -14,4 +14,4 @@ The new export function replaces the "View as YAML" function previously found in
 
 ### New web platform conversion – Repository settings
 
-We're excited to announce the new repository settings pages are officially generally available. You can find additional information on this feature in our May 4 [release notes](https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings).
+We're excited to announce the new repository settings pages are officially generally available. You can find additional information on this feature in our May 4 [release notes](../../sprint-168-update.md#new-web-platform-conversion--repository-settings).

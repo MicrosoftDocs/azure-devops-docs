@@ -7,7 +7,7 @@ ms.assetid: 02771DE7-1AF7-46B1-AE4A-219351C570DC
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 11/03/2020
 ---
 

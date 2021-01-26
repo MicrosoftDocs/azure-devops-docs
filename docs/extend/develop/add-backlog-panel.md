@@ -84,7 +84,7 @@ For each contribution in your extension, the manifest defines
 | registeredObjectId | Id of the object registered for the panel                                             |    
 
 
-Learn about all of the places where you can add an extension in the [contributions reference](/previous-versions/azure/devops/docs/extend/reference/targets/overview).
+Learn about all of the places where you can add an extension in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
 
 ### Scopes
 Include the [scopes](manifest.md#scopes) that your extension requires.
@@ -114,7 +114,7 @@ To get selection events (information about what work items are selected) impleme
     </div>
     <div style="vertical-align:top;display:inline-block;float:left;width:50%">
         <div class="index-button" align="left" style="padding-left:10px">
-        <a href="/previous-versions/azure/devops/docs/extend/test/debug-in-browser"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Test and Debug</button></a>
+        <a href="/previous-versions/azure/devops/extend/test/debug-in-browser"><button style="background-color:#4CAF50;border:none;color:white;padding:15px;font-size:16px;margin:4px;cursor:pointer;border-radius:8px;">Test and Debug</button></a>
         </div>
     </div>
 </div>

@@ -73,7 +73,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
    release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
-   and add a filter to include the **master** branch.
+   and add a filter to include the **main** branch.
 
 1. Open the **Tasks** tab and select the **IIS Deployment** job. For the **Deployment Group**, select the deployment group you created earlier (such as *myIIS*).
 

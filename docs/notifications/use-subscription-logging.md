@@ -25,7 +25,7 @@ Subscription logging is a valuable tool for troubleshooting.  It provides diagno
 ## Enabling subscription logging
 
 > [!IMPORTANT] 
-> There is a known issue in TFS 2018 Update 2 and TFS 2018 Update 3, where enabling subscription logging for default (globe icon) subscriptions may cause issues with notification delivery. If you're on one of those two versions, it's recommended that you not enable subscription logging for default subscriptions.
+> There is a known issue in TFS 2018 Update 2 and TFS 2018 Update 3, where enabling subscription logging for default ![globe](media/oob-notification.png) subscriptions may cause issues with notification delivery. If you're on one of those two versions, it's recommended that you not enable subscription logging for default subscriptions.
 
 Complete the following steps to enable subscription logging:
 
@@ -42,7 +42,7 @@ Complete the following steps to enable subscription logging:
 
 Get all subscription event processing logs by entering the following URL in your browser:
 
-`https://{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
+`https://dev.azure.com/{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
 
 * _organization_ is your organization (for example, dev.azure.com/fabrikam-fiber)
 * _date_ is a date time specification (for example, **2018-06-29** or **2018-06-29 02:00**)
@@ -56,7 +56,7 @@ The result is JSON-formatted logging information.
 
 Retrieve all notification delivery logs in a given time frame by entering the URL in your browser.
 
-`https://{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
+`https://dev.azure.com/{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
 
 * _organization_ is your organization (for example, dev.azure.com/fabrikam-fiber)
 * _date_ is a date time specification (for example, **2018-06-29** or **2018-06-29 02:00**)

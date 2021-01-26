@@ -1,7 +1,7 @@
 ---
 title: Change Azure subscription used for billing
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, contperfq1
+ms.custom: seodec18, contperf-fy21q1
 description: Unlink the Azure subscription that your organization uses for billing
 ms.technology: devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
@@ -59,7 +59,7 @@ To change or remove your billing subscription, you need the following:
 > [!NOTE]
 > When you remove the billing subscription from your organization, any paid quantities of Basic, Azure Artifacts users, Azure Test Plans users, Microsoft-hosted CI/CD, and self-hosted CI/CD go back to the free organization limits immediately.
 
-1. Sign in to your organization, choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings** > **Billing**, and then select **Change billing**, following steps 1 through 4 provided in the [Change the subscription](#change-subscription) section.
+1. Sign in to your organization, choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings** > **Billing**, and then **Change billing**, following steps 1 through 4 provided in the [Change the subscription](#change-subscription) section.
 
 2. Choose **Remove billing**, and then choose **Save**.
 
@@ -70,5 +70,5 @@ To change or remove your billing subscription, you need the following:
 
 - [Buy Basic access for users](buy-basic-access-add-users.md)
 - [Buy Azure Test Plans](buy-basic-access-add-users.md)
-- [Buy CI/CD](buy-more-build-vs.md)
+- [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
 - [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)

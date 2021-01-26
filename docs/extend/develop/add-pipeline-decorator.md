@@ -72,7 +72,7 @@ Let's take a look at the properties and what they're used for:
 
 | Target | Description |
 | ------ |:----------- |
-| `ms.azure-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic build or YAML pipeline. Due to differences in how source code checkout happens, this target will run before checkout in a YAML pipeline but after checkout in a classic build pipeline. |
+| `ms.azure-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic build or YAML pipeline. Due to differences in how source code checkout happens, this target runs before checkout in a YAML pipeline but after checkout in a classic build pipeline. |
 | `ms.azure-pipelines-agent-job.post-checkout-tasks` | Run after the last `checkout` task in a classic build or YAML pipeline. |
 | `ms.azure-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic build or YAML pipeline. |
 | `ms.azure-release-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic RM pipeline. |
