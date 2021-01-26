@@ -78,7 +78,7 @@ Return to the tags page and delete the conflicting tag.
 
 ## Path and File Name Restrictions
 
-The Windows, Mac OS, and Linux operating systems each have various naming limitations and max path limits. These restrict what you can name files or folders. This can create problem situations for teams using Git across multiple platforms.
+The Windows, macOS, and Linux operating systems each have various naming limitations and max path limits. These restrict what you can name files or folders. This can create problem situations for teams using Git across multiple platforms.
 
 For example, let's say a developer on one platform commits a change to the shared repository that contains a file name or path length that is invalid on another platform. Later, another developer attempts to checkout that commit on a platform where the contents are invalid. This results in a corrupted working directory creating the potential to damage your repo with corrupted data.
 
