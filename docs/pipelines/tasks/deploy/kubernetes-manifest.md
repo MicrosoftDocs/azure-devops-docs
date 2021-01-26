@@ -6,7 +6,7 @@ ms.assetid: 31e3875c-c9ef-4c11-8b86-4b4defe84329
 ms.manager: atulmal
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 02/28/2020
+ms.date: 01/26/2021
 monikerRange: 'azure-devops'
 ---
 
@@ -79,7 +79,7 @@ The following list shows the key benefits of this task:
     <td><b>manifests</b><br/>Manifests</td>
     <td>(Required)<br/>
     <br/>
-    The path to the manifest files to be used for deployment. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for this input.</td>
+    The path to the manifest files to be used for deployment. Each line represents a single path. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for each line.</td>
   </tr>
   <tr>
     <td><b>containers</b><br/>Containers</td>
@@ -161,7 +161,9 @@ steps:
   inputs:
     kubernetesServiceConnection: someK8sSC1
     namespace: default
-    manifests: manifests/deployment.yml|manifests/service.yml
+    manifests: |
+      manifests/deployment.yml
+      manifests/service.yml
     containers: |
       foo/demo:$(tagVariable1)
       bar/demo:$(tagVariable2)
@@ -211,7 +213,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td><b>manifests</b><br/>Manifests</td>
     <td>(Required)<br/>
     <br/>
-    The path to the manifest files to be used for deployment. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for this input.</td>
+    The path to the manifest files to be used for deployment. Each line represents a single path. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for each line.</td>
   </tr>
   <tr>
     <td><b>containers</b><br/>Containers</td>
