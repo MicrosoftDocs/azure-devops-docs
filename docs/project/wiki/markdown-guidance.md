@@ -582,7 +582,13 @@ The path to the image file can be a relative path or the absolute path in Git or
 - Relative path: `![Image alt text](./image.png)`  
 - Absolute path in Git: `![Image alt text](/media/markdown-guidance/image.png)`  
 - Absolute path in TFVC: `![Image alt text]($/project/folder/media/markdown-guidance/image.png)`  
-- Resize image: `![Image alt text]($/project/folder/media/markdown-guidance/image.png =WIDTHxHEIGHT)`  
+- Resize image: `IMAGE_URL =WIDTHxHEIGHT`
+  > [!NOTE]
+  > Be sure to include a space before the equal sign.
+  >
+
+  - Example: `![Image alt text]($/project/folder/media/markdown-guidance/image.png =500x250)`
+  - It's also possible to specify only the WIDTH by leaving out the HEIGHT value: `IMAGE_URL =WIDTHx`
 
 
 ::: moniker-end
@@ -744,13 +750,13 @@ To escape emojis, enclose them using the \` character.
 
 ::: moniker range=">= tfs-2018"
 
-In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the paper-clip icon in the upper right of the comment box or the format pane in wiki page.
+In pull request comments and wiki pages, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field or wiki page edit experience. You can also select the **paperclip** in the upper right of the comment box or the format pane in wiki page.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-In pull request comments, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field. You can also select the paper-clip icon in the upper right of the comment box.
+In pull request comments, you can attach files to illustrate your point or to give more detailed reasoning behind your suggestions. To attach a file, drag and drop it into the comment field. You can also select the **paperclip** in the upper right of the comment box.
 
 ::: moniker-end
 

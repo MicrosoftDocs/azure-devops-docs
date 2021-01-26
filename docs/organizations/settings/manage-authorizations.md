@@ -58,7 +58,7 @@ For more information, see [Preview features](../../project/navigation/preview-fe
 #### [New Account Manager enabled](#tab/new-account-enabled)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Choose **User settings** :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false":::, and then choose **Profile**.
+2. Choose :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: **User settings**, and then choose **Profile**.
 3. Choose **Authorizations**.  
 
    :::image type="content" source="media/profile-settings-authorizations.png" alt-text="Screenshot of profile settings with Authorizations selected, New Account Manager preview.":::
@@ -67,7 +67,7 @@ For more information, see [Preview features](../../project/navigation/preview-fe
 #### [New Account Manager not enabled](#tab/new-account-not-enabled)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Go to your **profile icon**, select  **User settings**, and then select **Authorizations**. 
+2. Go to your profile, select  **User settings**, and then select **Authorizations**. 
 
 ![User settings, authorizations tab](media/user-settings-authorizations.png)
 

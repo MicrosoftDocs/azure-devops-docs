@@ -1,6 +1,6 @@
 ---
 title: Jobs in Azure Pipelines and TFS
-ms.custom: seodec18, contperfq4 
+ms.custom: seodec18, contperf-fy20q4 
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
@@ -232,7 +232,6 @@ These are the most common type of jobs and they run on an agent in an agent pool
 Use [demands](demands.md) with self-hosted agents to specify what capabilities an agent must have to run your job.
 
 > [!NOTE]
->
 > Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
 > meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
 > matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
@@ -825,6 +824,16 @@ When you specify one of the `clean` options, they are interpreted as follows:
 
 `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
+```yaml
+  jobs:
+  - deployment: deploy
+    pool:
+      vmImage: 'Ubuntu-16.04'
+      workspace:
+        clean: all
+    environment: staging
+```
+
 > [!NOTE]
 > Depending on your agent capabilities and pipeline demands, each job may be routed to a different agent in your self-hosted pool. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can configure agent capabilities and pipeline demands to specify which agents are used to run a pipeline job, but unless there is only a single agent in the pool that meets the demands, there is no guarantee that subsequent jobs will use the same agent as previous jobs. For more information, see [Specify demands](demands.md).
 
@@ -943,7 +952,7 @@ YAML is not yet supported in TFS.
 Select the **Allow scripts to access OAuth token** option in the control options for the job. The token will be available as the environment variable `SYSTEM_ACCESSTOKEN`.
 
 * * *
-## Related articles
+## What's next
 
 * [Deployment group jobs](deployment-group-phases.md)
 * [Conditions](conditions.md)

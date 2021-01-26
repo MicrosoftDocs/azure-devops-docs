@@ -32,8 +32,8 @@ For a complete set of supported consumer services and actions, see the [consumer
 
 ## Create a subscription for a project
 
-To create a subscription for an event, choose which consumer to use and the action you want to take. You will create an HTTP POST 
-request to the subscriptions URL for the Azure DevOps organization with the event, consumer and action to 
+To create a subscription for an event, choose which consumer to use and the action you want to take. Create an HTTP POST 
+request to the subscriptions URL for the Azure DevOps organization with the event, consumer, and action to 
 take for the subscription.
 
 ### Before you begin
@@ -48,7 +48,7 @@ To create a subscription, the following data is required:
 
 Construct the body of the HTTP POST request to create the subscription based on the project ID, event, consumer and action. 
 
-Here is an example request for creating a subscription that will cause a build event to be POSTed to `https://myservice/event` when the build `WebSite.CI` fails. 
+Here's an example request for creating a subscription that causes a build event to be POSTed to `https://myservice/event` when the build `WebSite.CI` fails. 
 
 ```js
 {
@@ -102,7 +102,7 @@ Here is the response to the request to create the subscription:
 
 ```
 
-If the subscription request fails, an HTTP response code of 400 will be returned with a message that has further details.
+If the subscription request fails, an HTTP response code of 400 gets returned with a message that has further details.
 
 ### What happens when the event occurs?
 

@@ -19,7 +19,7 @@ ms.date: 08/24/2020
 Azure Boards provides a choice of Agile planning tools, many of which work in combination with each other. This article provides a get-started guide for project managers new to Azure Boards. If you and your teams want to take a minimal tracking approach to plan and manage your projects, start with this guide. 
 
 > [!NOTE]
-> If your team is committed to practicing Kamban or Scrum methods, see instead [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](./sprints/scrum-overview.md). 
+> If your team is committed to practicing Kanban or Scrum methods, see instead [About Boards and Kanban](boards/kanban-overview.md) or the [tutorials for implementing Scrum](./sprints/scrum-overview.md). 
 
 In this article, we make the following suggestions and guidance: 
 
@@ -341,8 +341,13 @@ One quick and visual way to monitor progress is from the Features backlog. By ad
 
 To review features delivered across several teams, configure a delivery plan. Delivery plans provide an interactive board to review a calendar schedule of stories or features several teams plan to deliver.  
 
-> [!div class="mx-imgBorder"]  
-> ![Screenshot of Delivery plan, annotated.](plans/media/plans_view2.png) 
+::: moniker range="azure-devops"  
+:::image type="content" source="./plans/media/plans/overview-preview-with-callouts.png " border="false" alt-text="Screenshot with callouts of Delivery Plans, collapsed teams.":::   
+::: moniker-end 
+
+::: moniker range="< azure-devops"  
+<img src="./plans/media/plans-view-2.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+::: moniker-end 
   
 ### Best practice tips  
 

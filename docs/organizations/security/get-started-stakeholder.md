@@ -7,7 +7,7 @@ ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 09/10/2020
 ---
 
@@ -296,7 +296,7 @@ From the web portal, open a work item and choose **Add tag** and type a keyword 
 ![Screenshot of work item form, Add one or more tags to a work item, TFS 2015 version](../../boards/queries/media/add-tags-to-work-items-vso-tfs.png)  
 ::: moniker-end
 
-Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, simply choose the x on the tag,![Delete a tag assigned to a work item](../../boards/queries/media/add-tags/unassign-a-tag.png).   
+Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, choose the x on the tag,![Delete a tag assigned to a work item](../../boards/queries/media/add-tags/unassign-a-tag.png).   
 
 ::: moniker range="azure-devops"
 
@@ -409,7 +409,7 @@ Stakeholder access grants access to features differently depending on whether yo
 
 ## Related articles
 
-For a comparison chart of Stakeholder vs Basic access, see this [feature matrix](https://azure.microsoft.com/services/devops/compare-features/). See also these quickstart guides: 
+For a comparison chart of Stakeholder versus Basic access, see this [feature matrix](https://azure.microsoft.com/services/devops/compare-features/). See also these quickstart guides: 
 
 - [Add work items](../../boards/backlogs/add-work-items.md)  
 - [Create your backlog](../../boards/backlogs/create-your-backlog.md)

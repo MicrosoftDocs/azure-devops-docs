@@ -27,7 +27,7 @@ Each card corresponds to a work item which you use to share information, track s
 In this example, the bug work item type (WIT) shows all the core fields, three additional fields, and tags. Also, To make severity 1 bugs stand out, a styling rule has been added to cause the card to display as yellow.  
 
 > [!NOTE] 
-> This article addresses customization of a sprint Taskboard. For information on customizing a Taskboard, see [Customize sprint Taskboards](../sprints/customize-taskboard.md). 
+> This article addresses customization of a Kanban board. For information on customizing a Taskboard, see [Customize sprint Taskboards](../sprints/customize-taskboard.md). 
 > 
 In the card shown below, the following customizations have been set for the bug work item type (WIT):
 - Show all core fields: ID, Assigned To, Story Points, Tags

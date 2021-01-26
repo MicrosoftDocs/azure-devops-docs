@@ -40,7 +40,7 @@ Manage the steps in the process with approvals for each step.
 * **Are a set of these actions common to servers?** If so, you can set up these actions 
   once for each of these servers.
 * **Have you set up a build definition for your app using Team Build?** Go 
-  **[here](../../../overview.md)** to learn how.
+  **[here](../../../get-started/what-is-azure-pipelines.md)** to learn how.
 * **Do you want to use an on-premises server or the cloud to manage your releases?** 
   You can maintain your own Release Management server on-premises, 
   or you can skip buying and maintaining a server and use Release Management as a service 

@@ -23,11 +23,13 @@ ms.technology: devops-cicd-tasks
     #modifyOutputPath: true # Optional
     #feedsToUse: 'select' # Options: select, config
     #vstsFeed: # Required when feedsToUse == Select
+    #feedRestore: # Required when command == restore. projectName/feedName for project-scoped feed. FeedName only for organization-scoped feed.
     #includeNuGetOrg: true # Required when feedsToUse == Select
     #nugetConfigPath: # Required when feedsToUse == Config
     #externalFeedCredentials: # Optional
     #noCache: false
     restoreDirectory:
+    #restoreArguments: # Optional
     #verbosityRestore: 'Detailed' # Options: -, quiet, minimal, normal, detailed, diagnostic
     #packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg' # Required when command == Push
     #nuGetFeedType: 'internal' # Required when command == Push# Options: internal, external
