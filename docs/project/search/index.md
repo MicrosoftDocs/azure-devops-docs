@@ -1,6 +1,6 @@
 ---
 title: Code, workitem, and wiki search - index of topics
-description: Search with Azure DevOps and TFS
+description: Search with Azure DevOps
 ms.assetid: A8EB4B0C-5656-4070-9A0F-488AB8288BBE
 ms.technology: devops-collab
 ms.topic: overview

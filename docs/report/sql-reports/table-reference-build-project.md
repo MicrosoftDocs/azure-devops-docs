@@ -41,4 +41,4 @@ FactBuildProject is associated with the following dimension tables:
 -  [Build Summary](build-summary-report.md)   
 -  [Build Details tables](table-reference-build-details.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
-- [Continuous integration on any platform](../../pipelines/overview.md)   
+- [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md)

@@ -1,7 +1,7 @@
 ---
 title: How notification email recipients are determined
 titleSuffix: Azure DevOps 
-description: Describes how email recipients are determined for notifications and events in Azure DevOps and Team Foundation Server (TFS)
+description: Describes how email recipients are determined for notifications and events in Azure DevOps.
 ms.technology: devops-collab
 ms.reviewer: wismythe
 ms.author: chcomley
@@ -55,7 +55,7 @@ Within Organization settings, select **Global notifications** > **Subscribers** 
 
 ::: moniker range="<= tfs-2018"
 
-**Team delivery settings button under organization level settings**
+**Team delivery settings in organization-level settings**
 
 ![Screenshot showing organization level settings.](media/email-team-subscribers-view.png)
 
@@ -68,7 +68,7 @@ Within Organization settings, select **Global notifications** > **Subscribers** 
 The following delivery settings are available for a group or team:
 
 * **Deliver to email address:** notifications are delivered to a specific email address.
-* **Deliver to individual members:** notifications are delivered to each member of the group or team. This is usually the default option. See the section on "team expansion" below for more details on how this option works.
+* **Deliver to individual members:** notifications are delivered to each member of the group or team. This is usually the default option. See the following section on [team expansion](#team-and-group-expansion-for-email-recipients) for more details on how this option works.
 * **Do not deliver:** notifications are not delivered by default.
 
 If a delivery setting is not explicitly set for a team or group, the value is determined from the [organization-level delivery setting](manage-team-group-global-organization-notifications.md) and is either _Deliver to individual members_ or _Do not deliver_. 
@@ -123,12 +123,12 @@ The option _Skip initiator_, which appears for most event types, controls whethe
 The delivery option is taken from the team's delivery setting. It can be one of the following:
 
 * **Deliver to email address:** The email is delivered to the team's preferred email address.
-* **Deliver to individual members:** See section below for details of _Members of team_.
+* **Deliver to individual members:** See the following [_Members of team_](#option-members-of-team) section.
 * **Do not deliver:** No email is delivered.
 
 ![Screenshot showing email team delivery option preference.](media/email-team-delivery-option-preference.png)
 
-The team's delivery setting value is displayed under the _Address_ label and can't be changed.
+The team's delivery setting value is displayed following the _Address_ label and can't be changed.
 
 ### Option: Custom email addresses
 The email gets sent to multiple custom email addresses, which are separated by semicolons.

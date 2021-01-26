@@ -13,7 +13,7 @@ ms.technology: devops-cicd-tasks
 - task: AzureAppServiceManage@0
   inputs:
     azureSubscription: 
-    #action: 'Swap Slots' # Optional. Options: swap Slots, start Azure App Service, stop Azure App Service, restart Azure App Service, delete Slot, install Extensions, enable Continuous Monitoring, start All Continuous Webjobs, stop All Continuous Webjobs
+    #action: 'Swap Slots' # Optional. Options: Swap Slots, Start Swap With Preview, Complete Swap, Cancel Swap, Start Azure App Service, Stop Azure App Service, Restart Azure App Service, Delete Slot, Install Extensions, Enable Continuous Monitoring, Start all continuous webjobs, Stop all continuous webjobs
     webAppName: 
     #specifySlotOrASE: false # Optional
     #resourceGroupName: # Required when action == Swap Slots || Action == Delete Slot || SpecifySlot == True

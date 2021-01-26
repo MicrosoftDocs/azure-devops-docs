@@ -8,7 +8,7 @@ ms.author: kraigb
 author: kraigb
 ms.date: 04/06/2020
 monikerRange: 'azure-devops'
-ms.custom: devx-track-python
+ms.custom: devx-track-python, devx-track-azurecli
 ---
 
 # Use CI/CD to deploy a Python web app to Azure App Service on Linux
@@ -86,7 +86,7 @@ The quickest way to create an App Service instance is to use the Azure command-l
 
 1. In the Cloud Shell, use `az webapp up` to create an App Service and initially deploy your app. 
 
-   ```bash
+   ```azurecli
    az webapp up -n <your-appservice>
    ```
 
@@ -104,7 +104,7 @@ The quickest way to create an App Service instance is to use the Azure command-l
 
    1. Enter the following command, using your resource group name, your app service name, and your startup file or command: 
 
-      ```bash
+      ```azurecli
       az webapp config set -g <your-resource-group> -n <your-appservice> --startup-file <your-startup-file-or-command>
       ```
       
@@ -377,7 +377,7 @@ The following steps perform the equivalent of the `az webapp up` command:
    
    A resource group is a collection of related Azure resources. Creating a resource group makes it easy to delete all those resources at once when you no longer need them. In the Cloud Shell, run the following command to create a resource group in your Azure subscription. Set a location for the resource group by specifying the value of `<your-region>`. JSON output appears in the Cloud Shell when the command completes successfully.
 
-   ```bash
+   ```azurecli
    az group create -l <your-region> -n <your-resource-group>
    ```
 
@@ -385,7 +385,7 @@ The following steps perform the equivalent of the `az webapp up` command:
    
    An App Service runs inside a VM defined by an App Service Plan. Run the following command to create an App Service Plan, substituting your own values for `<your-resource-group>` and `<your-appservice-plan>`. The `--is-linux` is required for Python deployments. If you want a pricing plan other than the default F1 Free plan, use the `sku` argument. The `--sku B1` specifies the lower-price compute tier for the VM. You can easily delete the plan later by deleting the resource group.
 
-   ```bash
+   ```azurecli
    az appservice plan create -g <your-resource-group> -n <your-appservice-plan> --is-linux --sku B1
    ```
 
@@ -395,7 +395,7 @@ The following steps perform the equivalent of the `az webapp up` command:
    
    Run the following command to create the App Service instance in the plan, replacing `<your-appservice>` with a name that's unique across Azure. Typically, you use a personal or company name along with an app identifier, such as `<your-name>-flaskpipelines`. The command fails if the name is already in use. By assigning the App Service to the same resource group as the plan, it's easy to clean up all the resources at once.
 
-   ```bash
+   ```azurecli
    az webapp create -g <your-resource-group> -p <your-appservice-plan> -n <your-appservice> --runtime "Python|3.6"
    ```
 
@@ -407,7 +407,7 @@ The following steps perform the equivalent of the `az webapp up` command:
    
 1. If your app requires a custom startup command, use the `az webapp config set` command, as described earlier in [Provision the target Azure App Service](#provision-the-target-azure-app-service). For example, to customize the App Service with your resource group, app name, and startup command, run:
    
-    ```bash
+    ```azurecli
    az webapp config set -g <your-resource-group> -n <your-appservice> --startup-file <your-startup-command-or-file>
    ```
 

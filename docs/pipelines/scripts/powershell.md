@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can use a script to customize the build pipeline in your workflow by using Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.date: 07/03/2019
+ms.date: 12/02/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -174,14 +174,16 @@ You can use `$env:SYSTEM_ACCESSTOKEN` in your script in a YAML pipeline to acces
 ```yaml
 - task: PowerShell@2
   inputs:
-   targetType: inline
-   script: |
+    targetType: 'inline'
+    script: |
       $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=5.0"
-      Write-Host "URL: $url"
-      $pipeline = Invoke-RestMethod -Uri $url -Headers @{
-          Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
-      }
-      Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
+              Write-Host "URL: $url"
+              $pipeline = Invoke-RestMethod -Uri $url -Headers @{
+                  Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
+              }
+              Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
+  env:
+     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
 
 

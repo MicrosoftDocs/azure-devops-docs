@@ -18,6 +18,7 @@ Azure DevOps Services and TFS projects contain Git repositories, work items, bui
 ## Prerequisites
 
 * An organization in Azure DevOps. If you don't have one, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
+* You must have the **Create repository** permission, which is granted by default to project administrators. For more information, see [Set repository permissions for Git or TFVC](../..//organizations/security/set-git-tfvc-repository-permissions.md#default-repository-permissions).
 * Git command-line tools:
   * [Install Git for Windows](https://git-scm.com/download/win), which includes [Git Credential Manager Core](set-up-credential-managers.md#windows)
   * [Install Git for macOS and Linux](https://git-scm.com/downloads).

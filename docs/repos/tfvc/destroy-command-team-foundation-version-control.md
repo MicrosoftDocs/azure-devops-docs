@@ -106,9 +106,9 @@ For more information about how to find the **tf** command-line utility, see [Tf 
 
 If you specify the **/keephistory** option to retain the history of destroyed files, the files are treated as destroyed by the following Team Foundation version control operations:
 
--   **Change content   **If you try to change the content of a destroyed file, for example edit or branch, the system issues an error message that states the content has been destroyed.
+-   **Change content** If you try to change the content of a destroyed file, for example edit or branch, the system issues an error message that states the content has been destroyed.
 
--   **Branch, merge, or unshelve   **If you try to branch, merge, or unshelve destroyed items, the system issues an error message that states the content of the items has been destroyed.
+-   **Branch, merge, or unshelve** If you try to branch, merge, or unshelve destroyed items, the system issues an error message that states the content of the items has been destroyed.
 
 ### Destroying Previously Deleted Items
 

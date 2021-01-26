@@ -42,7 +42,7 @@ Any references to the latest versions of WIT Client OM result in an obsolete war
 
 ### How do I fix my tools?
 
-First thing you should investigate and determine if the tool is still needed. We have found that many organizations create a tool for a specific reason for a short period of time. Then for one reason or another, that tool continues to run when it's no longer needed. For this type of scenario, you can shut down the tool.
+First thing you should investigate and determine if the tool is still needed. We have found that many organizations create a tool for a specific reason for a short period of time. Then for one reason or another, that tool continues to run when it's no longer needed. For this scenario, you can shut down the tool.
 
 If the tool is still of use, you need to re-refactor that tool using the REST based [.NET client libraries](./dotnet-client-libraries.md). Refactoring requires some reaction work on your part to remove references to the old WIT Client OM and replace them with the appropriate .NET Client Libraries.
 
@@ -52,7 +52,7 @@ We have also put together this handy [migration guide](./migration-guide.md) wit
 
 - [Migration Guide](./migration-guide.md)
 - [Azure DevOps Services REST API Reference](../index.md)
-- [.NET client libraries for Azure DevOps Services (and TFS)](./dotnet-client-libraries.md)
+- [.NET client libraries for Azure DevOps](./dotnet-client-libraries.md)
 - [Understanding Rate limits](./rate-limits.md?tabs=new-nav)
 - [Integration Best Practices](./integration-bestpractices.md)
 - [Sample Code on GitHub](https://github.com/Microsoft/vsts-dotnet-samples)

@@ -41,11 +41,11 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- If you are not familiar with Analytics, read "[what is Analytics](what-is-analytics.md)" before continuing. 
+- If you are not familiar with Analytics, read [what is Analytics?](what-is-analytics.md) before continuing. 
 - Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop). 
 - You must be a member of a project with Basic access or higher. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 - If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except stakeholders, can view Analytics views.
-- [Verify that Analytics](../dashboards/analytics-extension.md?view=azure-devops-2019)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service. 
+- [Verify that Analytics](../dashboards/analytics-extension.md?view=azure-devops-2019&preserve-view=true)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service. 
 - **Boards** must be enabled. If it is disabled, **Analytics views** won't be displayed. To re-enable **Boards**, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 - Make sure you have [permissions required to access Analytics](analytics-security.md). If you are a member of the project Contributors group, you have permission.
 - [Create an Analytics view](analytics-views-create.md) that you want to create a Power BI report. 
@@ -102,10 +102,15 @@ This error typically occurs when your project has a large number of work items. 
 
 > The user was not authorized.
 
-**A:** You can encounter this error if you try to access a project to which you don't have permissions. To get access, see [Set permissions to access Analytics and Analytics views](analytics-security.md).
+**A:** You can encounter this error if you try to access a project to which you don't have permissions or your credentials aren't recognized by Power BI. To check your permissions, see [Set permissions to access Analytics and Analytics views](analytics-security.md). If its a credential problem, you should work with your administrator to see if they can help resolve the problem. To learn more, see [Power BI Security, User Authentication](/power-bi/admin/service-admin-power-bi-security#user-authentication) and [Troubleshooting sign-in issues for Power BI](/power-bi/admin/power-bi-cannot-sign-in).
 
 > [!div class="mx-imgBorder"] 
 > ![The user was not authorized.](media/AccessDeniedError.png)
+
+> [!NOTE]   
+> Power BI uses Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) to authenticate users who sign in to the Power BI service, and in turn, uses the Power BI login credentials whenever a user attempts to access resources that require authentication. Users sign in to the Power BI service using the email address used to establish their Power BI account; Power BI uses that login email as the *effective username*, which is passed to resources whenever a user attempts to connect to data. The *effective username* is then mapped to a [*User Principal Name* (UPN)](/windows/win32/secauthn/user-name-formats) and resolved to the associated Windows domain account, against which authentication is applied. 
+
+
 
 <a id="AnalyticsAccessCheckException"></a>
 

@@ -7,8 +7,8 @@ ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
-monikerRange: '>= tfs-2013'
+ms.topic: overview
+monikerRange: '<= azure-devops'
 ms.date: 03/24/2020
 ---
 
@@ -102,7 +102,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 ### Delivery plans feature access
 
-[Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access. 
+[Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team.  
 
 [!INCLUDE [temp](includes/boards-plans.md)]
 
@@ -179,7 +179,7 @@ From **Project Settings**, you can [set permissions on a repository](set-git-tfv
 
 ## Azure Pipelines
 
-You can define and manage your builds and releases from the web portal **Pipelines** hub. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/overview.md).
+You can define and manage your builds and releases from the web portal **Pipelines** hub. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md).
 
 ::: moniker-end
 
@@ -211,7 +211,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 ## Build and Release
 
-You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/overview.md). From the web portal, you can set permissions for all or individual builds and releases. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
+You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md). From the web portal, you can set permissions for all or individual builds and releases. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
 
 
 ### Build  
@@ -249,39 +249,29 @@ You can define and manage manual tests from the web portal, **Test Plans** or **
 ::: moniker range=">= azure-devops-2019" 
 
 ## Azure Artifacts
-
-You can manage feeds from the web portal, **Artifacts** or **Build and release > Packages**. Feeds have three permission levels: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any permission level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
-
 ::: moniker-end
 
 ::: moniker range="azure-devops" 
 
-Users granted Stakeholder or Basic access, or higher can access Azure Artifacts features. 
-::: moniker-end
+You can manage feeds from the web portal, **Artifacts**. Users granted Stakeholder or Basic access, or higher can access Azure Artifacts features. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
+::: moniker-end
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020" 
 
-Users granted Basic access or higher can access Azure Artifacts features. Users granted Stakeholder access have no access to Azure Artifacts.  
+You can manage feeds from the web portal, **Artifacts**. Users granted Basic access or higher can access Azure Artifacts features. Users granted Stakeholder access have no access to Azure Artifacts.  To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md). 
 
 ::: moniker-end
-
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 ## Package management
 
-You can manage feeds from the web portal, **Build and release > Packages**.  Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
-
-Users granted Basic access or higher can access Package management features. Users granted Stakeholder access have no access.  
+You can manage feeds from the web portal, **Build and release > Packages**. Users granted Basic access or higher can access Package management features. Users granted Stakeholder access have no access. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
 ::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 [!INCLUDE [temp](includes/package-feeds.md)]
-
-::: moniker-end
 
 
 ## Notifications, alerts, and team collaboration tools 
@@ -360,5 +350,9 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 - [Security and permission management tools](security-tools-reference.md)  
 - [Permissions and groups reference](permissions.md)  
 - [About access levels](access-levels.md)
+<<<<<<< HEAD
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Troubleshoot permissions](troubleshoot-permissions.md)
+=======
+- [Web portal navigation](../../project/navigation/index.md)
+>>>>>>> b2d21646aab0a72234185786da4f096cfb72d20c

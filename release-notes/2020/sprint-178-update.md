@@ -28,15 +28,15 @@ Check out the [Features](#features) list below for details.
 
 [!INCLUDE [sprint-178-update-links](includes/testplans/sprint-178-update-links.md)]
 
-### Azure Boards
+## Azure Boards
 
 [!INCLUDE [sprint-178-update](includes/boards/sprint-178-update.md)]
 
-### Azure Pipelines
+## Azure Pipelines
 
 [!INCLUDE [sprint-178-update](includes/pipelines/sprint-178-update.md)]
 
-### Azure Test Plans
+## Azure Test Plans
 
 [!INCLUDE [sprint-178-update](includes/testplans/sprint-178-update.md)]
 
