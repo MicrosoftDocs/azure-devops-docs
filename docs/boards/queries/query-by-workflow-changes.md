@@ -409,7 +409,7 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Activated By <sup> 1, 3</sup> 
+      Activated Date <sup> 1, 3</sup> 
    :::column-end:::
    :::column span="2":::
       ::: moniker range="azure-devops"
