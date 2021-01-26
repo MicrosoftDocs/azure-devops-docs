@@ -24,23 +24,63 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 #### [Browser](#tab/browser)
 
-::: moniker range=">=azure-devops-2019"
+::: moniker range=">azure-devops-2019"
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
-   ![Project settings for your repository](media/repository-settings/project-repository-settings.png)
+   :::image type="content" source="media/repository-settings/project-settings-repository-2020.png" alt-text="Screenshot that shows selecting 'Project settings', 'Repositories', and a repo.":::
 
-2. Select **Options** to view and configure your repository settings.
+2. Select **Settings** to view and configure your repository settings.
 
-   ![On Options for FabrikamFiber, the Options tabs is highlighted and selected.](media/repository-settings/repository-settings-server-2019.png)
+   :::image type="content" source="media/repository-settings/project-repo-settings-browser-2020.png" alt-text="Screenshot that shows the repo project 'Settings' tab selected.":::
+
+3. Select **Policies** to view and configure project level and cross-repo policies.
+
+   :::image type="content" source="media/repository-settings/project-repo-policies-browser-2020.png" alt-text="Screenshot that shows the repo 'Policies' tab selected.":::
+
+### All repositories settings and policies
+
+Admins have access to a number of settings and policies to customize your project.
+
+#### Default branch name preference
+
+You can choose any legal branch name to use when a repository is initialized, or change it later if necessary. You can access the setting in two ways:
+
+- **Organization settings** - From the DevOps page, select your project > **Organization settings** > **Repositories**, turn on **Default branch name for new repositories**, and type your default branch name.
+
+    :::image type="content" source="media/repository-settings/organization-settings-change-default-branch-name.png" alt-text="Screenshot that shows the 'Organization Settings', 'Repositories', and 'Default branch name for new repositories' selected.":::
+
+-  **Project settings** - From the project page, select **Project settings** > **Repositories** > **Settings**, turn on **Default branch name for new repositories**, and type your default branch name.
+
+    :::image type="content" source="media/repository-settings/project-settings-custom-default-branch-name-2020.png" alt-text="Screenshot that shows the 'Project Settings', 'Repositories', and 'Default branch name for new repositories' selected.":::
+
+If you don't enable this feature, your repositories will be initialized with the Azure Repos default name, *main*.
+
+#### Cross-repo branch policy administration
+
+You can set policies on a specific branch or the default branch across all repositories in their project. For example, an admin could require two minimum reviewers for all pull requests made into every main branch across every repository in their project. You can find the **Add branch protection** feature in the Repos Project Settings.
+
+:::image type="content" source="media/repository-settings/cross-repo-policies.png" alt-text="Screenshot that shows 'Cross-repo policies' selected, and the 'Add branch protection' window displayed.":::
+
+#### Add a policy to block commits based on the commit author email
+
+You can set a push policy to prevent commits from being pushed to a repository for which the commit author email does not match the provided pattern.
+
+:::image type="content" source="media/repository-settings/add-policy-to-block-commits-email.png" alt-text="Screenshot that shows the 'Policies' tab selected, and the 'Commit author email validation' toggle set to on.":::
+
+#### Policy to block files with specified patterns
+
+You can set a policy to prevent commits from being pushed to a repository based on file paths. The file path validation policy will block pushes that match the provided pattern.
+
+:::image type="content" source="media/repository-settings/add-policy-to-block-files-patterns.png" alt-text="Screenshot that shows the 'Policies' tab selected, and the 'File path validation' toggle set to on.":::
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="<=azure-devops-2019"
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
-   ![Project settings for your repository](media/repository-settings/project-repository-settings.png)
+   ![Screenshot of the 'Project Settings' for your repository.](media/repository-settings/project-repository-settings.png)
 
 2. Select **Options** and **Policies** to view and configure your repository settings.
 
@@ -52,11 +92,11 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
-   ![Project settings for your repository](media/repository-settings/project-repository-settings-prev-nav.png)
+   ![Screenshot that shows the 'Version Control' options for your repository.](media/repository-settings/project-repository-settings-prev-nav.png)
 
 2. Select **options** to view and configure your repository settings.
 
-   ![The options UI](media/repository-settings/repository-settings.png)
+   ![Screenshot that shows the options UI.](media/repository-settings/repository-settings.png)
 
 ::: moniker-end
 
@@ -64,7 +104,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
-   ![Project settings for your repository](media/repository-settings/project-repository-settings-prev-nav.png)
+   ![Screenshot that shows the 'Version Control' options for your repository.](media/repository-settings/project-repository-settings-prev-nav.png)
 
 2. Select **options** to view and configure your repository settings.
 
