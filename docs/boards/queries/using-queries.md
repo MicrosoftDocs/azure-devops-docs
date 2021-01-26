@@ -1,5 +1,5 @@
 ---
-title: Create managed queries with the Query Editor
+title: Define a work item query with the Query Editor
 titleSuffix: Azure Boards
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards, Azure DevOps Server 
 ms.custom: boards-queries
@@ -34,9 +34,9 @@ In this article you'll learn:
 
 For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
  
-### Query filter features
+### Query filters
 
-From the Query Editor, you can exercise the following filter functions. Choose the feature to jump to an article with sample queries. 
+From the Query Editor, you can exercise the following filter functions. Choose the filter to jump to an article with sample queries. 
 In addition to the query filters, you can [interactively apply filters to query results](/azure/devops/boards/backlogs/filter-backlogs).
 
 ::: moniker range=">= azure-devops-2019"
@@ -60,6 +60,7 @@ In addition to the query filters, you can [interactively apply filters to query 
       - [Compare fields](/azure/devops/boards/queries/query-field-value) 
       - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)  
       - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Logical groupings](#logical-groupings)  
       - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
       - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)  
       - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes)  
@@ -69,6 +70,7 @@ In addition to the query filters, you can [interactively apply filters to query 
       - [Compare fields](/azure/devops/boards/queries/query-field-value) 
       - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)  
       - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Logical groupings](#logical-groupings)  
       - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
       - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)  
       - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes)  
@@ -78,6 +80,7 @@ In addition to the query filters, you can [interactively apply filters to query 
       - [Compare fields](/azure/devops/boards/queries/query-field-value) 
       - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)  
       - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Logical groupings](#logical-groupings)  
       - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
       - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)  
       - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes)  
@@ -87,12 +90,14 @@ In addition to the query filters, you can [interactively apply filters to query 
       - [Compare fields](/azure/devops/boards/queries/query-field-value)
       - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)   
       - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Logical groupings](#logical-groupings)  
       - [Query macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
       ::: moniker-end
       ::: moniker range="tfs-2013"
       - [Compare fields](/azure/devops/boards/queries/query-field-value)
       - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)   
       - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
+      - [Logical groupings](#logical-groupings)  
       - [Query macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
       ::: moniker-end
    :::column-end::: 
@@ -131,35 +136,35 @@ In addition to the query filters, you can [interactively apply filters to query 
    :::column-end:::
    :::column span="2":::
       ::: moniker range=">= azure-devops-2019"
-      - **[Any]** 
-      - **@Me** 
-      - **@Today** 
-      - **@CurrentIteration**, **@CurrentIteration +/-n**  
-      -  **@Follows** 
-      - **@MyRecentActivity**, **@RecentMentions**, **@MyRecentProjectActivity**
-      - **@StartOfDay**, **@StartOfMonth**, **@StartOfWeek**, **@StartOfYear**
-      - **@TeamAreas** 
+      - [Any](titles-ids-descriptions.md)
+      - [@Me](query-by-workflow-changes.md)
+      - [@Today](query-by-date-or-current-iteration.md) 
+      - [@CurrentIteration, @CurrentIteration +/-n](query-by-date-or-current-iteration.md)   
+      - [@Follows](titles-ids-descriptions.md#following)
+      - [@MyRecentActivity, @RecentMentions, @RecentProjectActivity](titles-ids-descriptions.md#recent-macros)
+      - [@StartOfDay, @StartOfMonth, @StartOfWeek, @StartOfYear](query-by-date-or-current-iteration.md)   
+      - [@TeamAreas](query-by-area-iteration-path.md)
       ::: moniker-end
       ::: moniker range="tfs-2018"
-      - **[Any]** 
-      - **@Me** 
-      - **@Today** 
-      - **@CurrentIteration**
-      -  **@Follows** 
-      - **@MyRecentActivity**, **@RecentMentions**, **@MyRecentProjectActivity**
+      - [Any](titles-ids-descriptions.md)
+      - [@Me](query-by-workflow-changes.md)
+      - [@Today](query-by-date-or-current-iteration.md) 
+      - [@CurrentIteration](query-by-date-or-current-iteration.md)   
+      - [@Follows](titles-ids-descriptions.md#following)
+      - [@MyRecentActivity, @RecentMentions, @RecentProjectActivity](titles-ids-descriptions.md#recent-macros)
       ::: moniker-end
       ::: moniker range="tfs-2017"
-      - **[Any]** 
-      - **@Me** 
-      - **@Today** 
-      - **@CurrentIteration** 
-      -  **@Follows** 
+      - [Any](titles-ids-descriptions.md)
+      - [@Me](query-by-workflow-changes.md)
+      - [@Today](query-by-date-or-current-iteration.md) 
+      - [@CurrentIteration](query-by-date-or-current-iteration.md)   
+      - [@Follows](titles-ids-descriptions.md#following)
       ::: moniker-end
       ::: moniker range="tfs-2013 || tfs-2015"
-      - **[Any]** 
-      - **@Me** 
-      - **@Today** 
-      - **@CurrentIteration** 
+      - [Any](titles-ids-descriptions.md)
+      - [@Me](query-by-workflow-changes.md)
+      - [@Today](query-by-date-or-current-iteration.md) 
+      - [@CurrentIteration](query-by-date-or-current-iteration.md)   
       ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -291,64 +296,6 @@ All clauses you add are added as an **And** statement. Choose **Or** to change t
 
 	You can add a clause to the end of the query, insert a clause after an existing clause (![insert clause icon](media/query-fields-operators-values-variables/IC588311.png)), and remove (![remove clause icon](media/query-fields-operators-values-variables/IC588312.png)), group (![group clause icon](media/query-fields-operators-values-variables/IC588313.png)), and ungroup (![ungroup clause icon](media/query-fields-operators-values-variables/IC588314.png)) clauses as needed.
 
-<a id="and-or" /> 
-
-## And/Or logical expression
-
-You specify **And** or **Or** to create logical expressions of your query clauses. Specify **And** to find work items that meet the criteria in both the current clause and the previous clause. Specify **Or** to find work items that meet the criterion in either the current clause or the previous clause.
-
-You can add one new clause for each work item field in order to refine your search criteria, so that it returns only the set of work items that you want. If you do not receive the results that you expect from your query, you can add, remove, group, or ungroup query clauses to refine your query results.
-
-Query clauses can be grouped to operate as a single unit separate from the rest of the query, similar to putting parentheses around an expression in a mathematical equation or logic statement. When you group clauses, the **AND** or **OR** for the first clause in the group applies to the whole group.
-
-<a id="group-clauses" /> 
-
-## Group clauses
-
-Grouped clauses operate as a single unit separate from the rest of the query, similar to putting parentheses around a mathematical equation or logic expression. The And or Or operator for the first clause in the group applies to the whole group.
-
-As the following examples show, the grouped clauses are translated to the corresponding logical expression.
-
-> [!TIP]   
-> To view the WIQL syntax for a query, install the [WIQL query editor extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor) which will allow you to see the WIQL version of any Query UI entry. This extension allows you to see just how AND/OR grouped clauses are treated. 
-
-> [!div class="mx-tdCol2BreakAll"]
-> |Query| Grouped clauses|Logical expression|
-> |---|---|---|
-> |**1** |![Screenshot showing a group clause query. Filters are set up for the Work item type field and either the State field or the Assigned to field.](media/using-queries/and-or-clause-no-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type, State, and Assigned to fields. An OR operator groups the State and Assigned to fields.](media/using-queries/and-or-clause-no-grouping-wiql.png)|
-> |**2**| ![Screenshot showing a group clause query, with filters for both the Work item type field and one of either the State field or the Assigned to field.](media/using-queries/and-or-clause-with-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type with the State or Assigned to fields, which are grouped by an OR operator.](media/using-queries/and-or-clause-with-grouping-wiql.png)|
-> |**3**| ![Screenshot showing a group clause query. Filters are set up for either the Work item type field or both the State field and the Assigned to field.](media/using-queries/and-or-clause-reverse-grouping.png)|![Screenshot of a logical expression. An OR operator links the Work item type to both the State and the Assigned to fields, which are linked by an AND operator.](media/using-queries/and-or-clause-reverse-grouping-wiql.png)|
-
-These queries return work items that are type Bug and meet the following logical expressions:  
-- **Query 1**: AND State=Active OR Assigned to @Me  
-- **Query 2**: AND (State=Active OR Assigned to @Me)  
-- **Query 3**: OR (State=Active AND Assigned to @Me)  
-
-
-To group one or more clauses, select them and then choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
-
-> [!div class="mx-imgBorder"]  
-> ![Web portal, Group Selected Query Clauses](media/view-run-queries/group-clauses.png)  
-
-You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
-
-> [!div class="mx-imgBorder"]  
-> ![Group multiple query clauses](media/using-queries/multiple-clauses.png)
-
-
-If your query results don't return expected results, follow these steps: 
-
-- Make sure that each clause is defined as you intended.  
-- Verify And/Or assignments to each clause. If your results contain more work items than expected, often an Or clause is present instead of an And clause.  
-- Determine if you need to group or change the grouping of the query clauses and the And/Or assignments of each grouped clause.  
-- Add more query clauses to refine your query filter criteria.  
-- Review the options available to specify [fields, operators, and values](query-operators-variables.md).  
-
-<a id="ungroup-clause" />
-
-## Ungroup a clause
-
-To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
 
 <a id="tree-query" />
 
@@ -429,6 +376,65 @@ Filter your first-tier list of work items by choosing one of these options:
 To learn more about each link type, see [Linking, traceability, and managing dependencies](link-work-items-support-traceability.md).
 
 
+<a id="and-or" /> 
+<a id="logical-groupings" /> 
+
+## And/Or logical expression
+
+You specify **And** or **Or** to create logical expressions of your query clauses. Specify **And** to find work items that meet the criteria in both the current clause and the previous clause. Specify **Or** to find work items that meet the criterion in either the current clause or the previous clause.
+
+You can add one new clause for each work item field in order to refine your search criteria, so that it returns only the set of work items that you want. If you do not receive the results that you expect from your query, you can add, remove, group, or ungroup query clauses to refine your query results.
+
+Query clauses can be grouped to operate as a single unit separate from the rest of the query, similar to putting parentheses around an expression in a mathematical equation or logic statement. When you group clauses, the **AND** or **OR** for the first clause in the group applies to the whole group.
+
+<a id="group-clauses" /> 
+
+### Group clauses
+
+Grouped clauses operate as a single unit separate from the rest of the query, similar to putting parentheses around a mathematical equation or logic expression. The And or Or operator for the first clause in the group applies to the whole group.
+
+As the following examples show, the grouped clauses are translated to the corresponding logical expression.
+
+> [!TIP]   
+> To view the WIQL syntax for a query, install the [WIQL query editor extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor) which will allow you to see the WIQL version of any Query UI entry. This extension allows you to see just how AND/OR grouped clauses are treated. 
+
+> [!div class="mx-tdCol2BreakAll"]
+> |Query| Grouped clauses|Logical expression|
+> |---|---|---|
+> |**1** |![Screenshot showing a group clause query. Filters are set up for the Work item type field and either the State field or the Assigned to field.](media/using-queries/and-or-clause-no-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type, State, and Assigned to fields. An OR operator groups the State and Assigned to fields.](media/using-queries/and-or-clause-no-grouping-wiql.png)|
+> |**2**| ![Screenshot showing a group clause query, with filters for both the Work item type field and one of either the State field or the Assigned to field.](media/using-queries/and-or-clause-with-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type with the State or Assigned to fields, which are grouped by an OR operator.](media/using-queries/and-or-clause-with-grouping-wiql.png)|
+> |**3**| ![Screenshot showing a group clause query. Filters are set up for either the Work item type field or both the State field and the Assigned to field.](media/using-queries/and-or-clause-reverse-grouping.png)|![Screenshot of a logical expression. An OR operator links the Work item type to both the State and the Assigned to fields, which are linked by an AND operator.](media/using-queries/and-or-clause-reverse-grouping-wiql.png)|
+
+These queries return work items that are type Bug and meet the following logical expressions:  
+- **Query 1**: AND State=Active OR Assigned to @Me  
+- **Query 2**: AND (State=Active OR Assigned to @Me)  
+- **Query 3**: OR (State=Active AND Assigned to @Me)  
+
+
+To group one or more clauses, select them and then choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
+
+> [!div class="mx-imgBorder"]  
+> ![Web portal, Group Selected Query Clauses](media/view-run-queries/group-clauses.png)  
+
+You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
+
+> [!div class="mx-imgBorder"]  
+> ![Group multiple query clauses](media/using-queries/multiple-clauses.png)
+
+
+If your query results don't return expected results, follow these steps: 
+
+- Make sure that each clause is defined as you intended.  
+- Verify And/Or assignments to each clause. If your results contain more work items than expected, often an Or clause is present instead of an And clause.  
+- Determine if you need to group or change the grouping of the query clauses and the And/Or assignments of each grouped clause.  
+- Add more query clauses to refine your query filter criteria.  
+- Review the options available to specify [fields, operators, and values](query-operators-variables.md).  
+
+<a id="ungroup-clause" />
+
+### Ungroup a clause
+
+To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
 
 ## Related articles
 
