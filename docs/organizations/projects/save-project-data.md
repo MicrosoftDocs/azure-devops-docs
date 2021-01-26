@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Save project data
@@ -20,7 +20,7 @@ When you delete a project, you can't recover its data later. So, you should save
 
 You can use the following procedures to save data that users most care about, such as source code, build data, and work items.
 
-* **Source code and custom build templates:** You can download your files as a zip file. Open the ![Repository actions](../../media/icons/actions-icon.png) actions icon for the repository, file, or folder and choose **Download as Zip**. You can also choose the **Download** icon at the right side of the screen to download either all of the files in the currently selected folder, or the currently selected file.
+* **Source code and custom build templates:** You can download your files as a zip file. Open ![Repository actions](../../media/icons/actions-icon.png) **actions** for the repository, file, or folder and choose **Download as Zip**. You can also **Download** from the right side of the screen to download either all of the files in the currently selected folder, or the currently selected file.
 
   ::: moniker range=">= tfs-2017"
 
@@ -51,6 +51,6 @@ To learn more about how we manage and protect your data, read our [Data Protecti
 
 You can easily save data stored for a project collection
 by [making a backup of the database](/azure/devops/server/admin/backup/config-backup-sched-plan). You can also
-use the same steps as above.
+use the previously mentioned steps.
 
 ::: moniker-end

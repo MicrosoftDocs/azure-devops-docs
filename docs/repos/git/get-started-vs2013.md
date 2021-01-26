@@ -97,7 +97,7 @@ Let's make a change in a topic branch to explore some additional features.
 	
 	![Click the Branches tile](media/get-started/VSBranches1.png)
 	
-2. On the Branches page, right-click on the **master** branch and choose **New Local Branch From...** to create a new topic branch.
+2. On the Branches page, right-click on the **main** branch and choose **New Local Branch From...** to create a new topic branch.
 
 	![Right-click and choose New Local Branch From](media/get-started/VSBranchesNewLocal.png)
 	
@@ -143,7 +143,7 @@ Pull Requests are a common workflow for reviewing code created in a topic branch
 
 	![Click New Pull Request](media/get-started/WebPullRequestNew.png)
 	
-3. Select your topic branch from the first drop-down.  The default branch (master) is the default target branch.
+3. Select your topic branch from the first drop-down.  The default branch (main) is the default target branch.
 
 	![Select your topic branch](media/get-started/WebPullRequestSelectBranch.png)
 	
@@ -151,7 +151,7 @@ Pull Requests are a common workflow for reviewing code created in a topic branch
 
 	![Click Create Pull Request](media/get-started/WebPullRequestCreate.png)
 	
-Now you can add reviewers to get their feedback on your changes before you merge your changes into master.  
+Now you can add reviewers to get their feedback on your changes before you merge your changes into main.  
 
 [//]: # (TODO: link to the pull request topic)
 

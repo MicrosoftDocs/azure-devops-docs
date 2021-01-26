@@ -2,7 +2,7 @@
 title: Using work items to track user stories, & more
 titleSuffix: Azure Boards
 description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & Azure DevOps 
-ms.custom: work-items, seodec18, contentperfq4
+ms.custom: work-items, seodec18, contperf-fy20q4
 ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
@@ -138,7 +138,7 @@ You can add and update work items from the web portal. To track work using other
 
 ## Web portal and clients that support tracking work items  
 
-You can add and update work items from the web portal and various clients. For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps Services and TFS](../../user-guide/tools.md). 
+You can add and update work items from the web portal and various clients. For an overview of all clients that connect to your project, see [Tools and clients that connect to Azure DevOps](../../user-guide/tools.md). 
 
 ### Web portal 
 

@@ -1,7 +1,7 @@
 ---
 title: Set up billing for your organization
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18, contentperfq4, contperfq1
+ms.custom: seodec18, contperf-fy20q4, contperf-fy21q1
 description: Use an Azure subscription to configure billing and pay for users, CI/CD concurrency, and extensions for Azure DevOps.
 ms.technology: devops-billing
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
@@ -64,7 +64,7 @@ Billing is set up for your Azure DevOps organization.
 ## Related articles
 
 * [Buy Azure Test Plans](buy-basic-access-add-users.md)
-* [Buy CI/CD](buy-more-build-vs.md)
+* [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
 * [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
-* [Buy cloud-based load testing](buy-load-testing-vs.md)
 * [Azure cost management and billing](/azure/cost-management-billing/cost-management-billing-overview)
+* [Azure DevOps billing overview](overview.md)

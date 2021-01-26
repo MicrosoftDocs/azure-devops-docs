@@ -4,13 +4,13 @@ description: Learn how to use the Azure CLI to create and deploy a Java applicat
 ms.topic: tutorial
 ms.author: jukullam
 author: JuliaKM
-ms.date: 11/09/2020
+ms.date: 11/23/2020
 monikerRange: 'azure-devops'
 ---
 
 # Tutorial: Deploy a Java app to a virtual machine scale set
 
-A [virtual machine scale set](https://docs.microsoft.com/azure/virtual-machine-scale-sets/overview) lets you deploy and manage identical, autoscaling virtual machines. 
+A [virtual machine scale set](/azure/virtual-machine-scale-sets/overview) lets you deploy and manage identical, autoscaling virtual machines. 
 
 VMs are created as needed in a scale set. You define rules to control how and when VMs are added or removed from the scale set. These rules can be triggered based on metrics such as CPU load, memory usage, or network traffic.
 
@@ -27,7 +27,7 @@ Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
 - The [Azure VM Image Builder DevOps task](https://marketplace.visualstudio.com/items?itemName=AzureImageBuilder.devOps-task-for-azure-image-builder) installed for your DevOps organization. 
-- A forked GitHub repo with the example java project. Fork the [pipelines-java repository](https://github.com/MicrosoftDocs/pipelines-java).
+- A forked GitHub repo with the example project. Fork the [pipelines-vmss repository](https://github.com/microsoftdocs/pipelines-vmss).
 
 ## Set up your Java pipeline
 
@@ -54,7 +54,7 @@ Before you begin, you need:
 
 ### Add the Copy Files and Publish Build Artifact tasks
 
-1. Update your pipeline to include the `CopyFiles@2` and `PublishBuildArtifacts@1` tasks. This will create an artifact that you can deploy to your virtual machine scale set.
+1. Update your pipeline to include the `CopyFiles@2` task. This will create an artifact that you can deploy to your virtual machine scale set.
 
     ```yaml
       trigger: none
@@ -63,22 +63,27 @@ Before you begin, you need:
         vmImage: 'ubuntu-latest'
 
       steps:
-      - task: Maven@1
-        displayName: 'Maven $(mavenPOMFile)'
-        inputs:
-          mavenPomFile: 'pom.xml'
-          testResultsFiles: '**/TEST*.xml'
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'pom.xml'
+        mavenOptions: '-Xmx3072m'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.8'
+        jdkArchitectureOption: 'x64'
+        publishJUnitResults: true
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+        goals: 'package'
 
-      - task: CopyFiles@2
-        displayName: 'Copy File to: $(TargetFolder)'
-        inputs:
-          SourceFolder: '$(Build.SourcesDirectory)'
-          Contents: |
+    - task: CopyFiles@2
+      displayName: 'Copy File to: $(TargetFolder)'
+      inputs:
+        SourceFolder: '$(Build.SourcesDirectory)'
+        Contents: |
           **/*.sh 
           **/*.war
           **/*jar-with-dependencies.jar
-          TargetFolder: '$(System.DefaultWorkingDirectory)/pipeline-artifacts/'
-          flattenFolders: true 
+        TargetFolder: '$(System.DefaultWorkingDirectory)/pipeline-artifacts/'
+        flattenFolders: true  
      ```
 
 ## Create a custom image and upload it to Azure
@@ -101,13 +106,13 @@ You'll need a resource group, storage account, and shared image gallery for your
       --sku Standard_LRS 
     ```
 
-3. Create a [shared image gallery](https://docs.microsoft.com/azure/virtual-machines/shared-images-cli). 
+3. Create a [shared image gallery](/azure/virtual-machines/shared-images-cli). 
 
     ```azurecli-interactive
     az sig create --resource-group myVMSSResourceGroup --gallery-name myVMSSGallery
     ```
 
-4. Create a new image gallery in the `myVMSSGallery` resource. See [Create an Azure Shared Image Gallery using the portal](https://docs.microsoft.com/azure/virtual-machines/windows/shared-images-portal) to learn more about working with image galleries. 
+4. Create a new image gallery in the `myVMSSGallery` resource. See [Create an Azure Shared Image Gallery using the portal](/azure/virtual-machines/windows/shared-images-portal) to learn more about working with image galleries. 
 
     ```azurecli-interactive
     az sig create --resource-group myVMSSResourceGroup --gallery-name myVMSSGallery
@@ -119,22 +124,23 @@ You'll need a resource group, storage account, and shared image gallery for your
     az sig image-definition create -g myVMSSResourceGroup --gallery-name myVMSSGallery --gallery-image-definition MyImage --publisher GreatPublisher --offer GreatOffer --sku GreatSku --os-type linux
     ```
 
+
 ### Create a managed identity
 
-1. Create a [managed identity](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) in your resources group. 
+1. Create a [managed identity](/azure/active-directory/managed-identities-azure-resources/overview) in your resources group. 
 
     ```azurecli-interactive
     az identity create -g myVMSSResourceGroup -n myVMSSIdentity
     ```
 2. From the output, copy the `id`.  The `id` will look like `/subscriptions/<SUBSCRIPTION ID>/resourcegroups/<RESOURCE GROUP>/providers/Microsoft.ManagedIdentity/userAssignedIdentities/<USER ASSIGNED IDENTITY NAME>`. 
 
-3. Open your image portal in the gallery and assign `myVMSSIdentity` the Contributor role. Follow [these steps to add a role assignment](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).  
+3. Open your image gallery in the gallery and assign `myVMSSIdentity` the Contributor role. Follow [these steps to add a role assignment](/azure/role-based-access-control/role-assignments-portal).  
 
 ### Create the custom image
 
 To create a custom image, you can use the [Azure VM Image Builder DevOps Task](https://marketplace.visualstudio.com/items?itemName=AzureImageBuilder.devOps-task-for-azure-image-builder). 
 
-1. Add the `AzureImageBuilderTask@1` task to your YAML file.  
+1. Add the `AzureImageBuilderTask@1` task to your YAML file. Replace the values for `<SUBSCRIPTION ID>`, `<RESOURCE GROUP>`, `<USER ASSIGNED IDENTITY NAME>` with your own. Make sure to verify that the `galleryImageId`, `managedIdentity` and `storageAccountName` values are accurate. 
 
     ```yaml
     - task: AzureImageBuilderTask@1
@@ -158,11 +164,14 @@ To create a custom image, you can use the [Azure VM Image Builder DevOps Task](h
         ibLocation: 'eastus2'
     ```
 
-2. Run the pipeline to generate your first image.
+2. Run the pipeline to generate your first image. You may need to [authorize resources](../../../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline) during the pipeline run.
  
+3. Go to the your new image in the Azure portal and open **Overview**. Select **Create VMSS** to create a new virtual machine scale set from the new image. Set **Virtual machine scale set name** to `vmssScaleSet`. See [Create a virtual machine scale set in the Azure portal](/azure/virtual-machine-scale-sets/quick-create-portal) to learn more about creating virtual machine scale sets in the Azure portal. 
+
+
 ## Deploy updates to the virtual machine scale set 
 
-Add an Azure CLI task to your pipeline to deploy updates to the scale set. Add the task at the end of the pipeline. 
+Add an Azure CLI task to your pipeline to deploy updates to the scale set. Add the task at the end of the pipeline. Replace `<SUBSCRIPTION ID>` with your subscription ID.
 
   ```yml
   - task: AzureCLI@2
@@ -170,7 +179,7 @@ Add an Azure CLI task to your pipeline to deploy updates to the scale set. Add t
       azureSubscription: '`YOUR_SUBSCRIPTION_ID`' #Authorize and in the task editor
       ScriptType: 'pscore'
       scriptLocation: 'inlineScript'
-      Inline: 'az vmss update --resource-group myVMSSResourceGroup --name vmssScaleSet --set virtualMachineProfile.storageProfile.imageReference.id=/subscriptions/YOUR_SUBSCRIPTION_ID/myVMSSResourceGroup/providers/Microsoft.Compute/images/vmss-image-$(Build.BuildId)'
+      Inline: 'az vmss update --resource-group myVMSSResourceGroup --name vmssScaleSet --set virtualMachineProfile.storageProfile.imageReference.id=/subscriptions/<SUBSCRIPTION ID>/resourceGroups/myVMSSResourceGroup/providers/Microsoft.Compute/galleries/myVMSSGallery/images/MyImage/versions/0.0.$(Build.BuildId)'
   ```
 ## Clean up resources
 
@@ -178,5 +187,5 @@ Go to the Azure portal and delete your resource group, `myVMSSResourceGroup`.
 
 ## Next steps
 > [!div class="nextstepaction"]
-> [Learn more about virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/overview)
+> [Learn more about virtual machine scale sets](/azure/virtual-machine-scale-sets/overview)
 

@@ -23,6 +23,7 @@ This article shows you how to display average lead time or cycle time for a give
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Sample queries
 

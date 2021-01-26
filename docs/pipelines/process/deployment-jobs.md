@@ -3,7 +3,7 @@ title: Deployment jobs
 description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.date: 08/19/2020
+ms.date: 12/15/2020
 monikerRange: '>= azure-devops-2020'
 ---
 
@@ -25,6 +25,7 @@ Deployment jobs provide the following benefits:
    > [!NOTE] 
    > We currently support only the *runOnce*, *rolling*, and the *canary* strategies. 
 
+A deployment job doesn't automatically clone the source repo. You can checkout the source repo within your job with `checkout: self`. 
 
 ## Schema
 
@@ -51,10 +52,8 @@ jobs:
   strategy:
     runOnce:    #rolling, canary are the other strategies that are supported
       deploy:
-        steps:
-        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+        steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
 ```
-
 
 ## Deployment strategies
 
@@ -114,6 +113,18 @@ strategy:
           pool: [ server | pool ]           
           steps:
           ...
+```
+
+If you are using self-hosted agents, you can use the workspace clean options to clean your deployment workspace.
+
+```yaml
+  jobs:
+  - deployment: deploy
+    pool:
+      vmImage: 'Ubuntu-16.04'
+      workspace:
+        clean: all
+    environment: staging
 ```
 
 ### Rolling deployment strategy
@@ -213,9 +224,10 @@ The following variables are available in this strategy:
 
 ### RunOnce deployment strategy
 
-The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. 
+The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. The example includes a checkout step. 
 
 ```YAML
+
 jobs:
   # Track deployments on the environment.
 - deployment: DeployWeb
@@ -229,6 +241,7 @@ jobs:
     runOnce:
       deploy:
         steps:
+        - checkout: self 
         - script: echo my first deployment
 ```
 
@@ -338,7 +351,7 @@ jobs:
             strategy: $(strategy.name) 
             percentage: $(strategy.increment) 
             manifests: 'manifest.yml' 
-      postRouteTaffic: 
+      postRouteTraffic: 
         pool: server 
         steps:           
         - script: echo monitor application health...   
@@ -448,7 +461,7 @@ stages:
     pool:
       vmImage: 'ubuntu-16.04'
     environment: 
-      name: env1
+      name: env2
       resourceType: virtualmachine
     strategy:                  
       runOnce:

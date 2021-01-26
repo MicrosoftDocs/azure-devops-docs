@@ -15,8 +15,8 @@ Git history simplification can be a confusing beast. 99% of the time you won't e
 
 Let's start with a common scenario:
 
- 1. You push a change to a file and then merge the change into master.
- 2. Some of your colleagues also merge their branches to master.
+ 1. You push a change to a file and then merge the change into main.
+ 2. Some of your colleagues also merge their branches to main.
  3. You come back some time later and notice your changes are missing.
  4. Looking for the culprit, you go look at the file history and notice... your changes aren't even listed!?
 
@@ -45,8 +45,8 @@ As you can see, we are going to:
 1. Create a file.
 2. Add a line to that file in a branch (animals).
 3. Add a different line to that file in another branch (fruit).
-4. Merge branch *animals* back into master.
-5. Merge branch *fruit* back into master, and choose the entire copy of the file from the fruit branch.
+4. Merge branch *animals* back into main.
+5. Merge branch *fruit* back into main, and choose the entire copy of the file from the fruit branch.
 6. Check the history of the file.
 
 As you will see, Git is going to simplify the history for us. The key here is step 5 -- we ignored all changes from the *animal* branch. Git will notice that our file essentially *did not change* between step 1 and step 5, and so it will only show us *two history entries*.
@@ -69,14 +69,14 @@ Now we decide to append the text "donkeys" to the file in an animal branch:
     
 While we are experimenting, we decide maybe we want to go with fruit in our file instead, so we create a different branch and append the text "bananas" at the end of the file instead:
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-    &gt; git checkout master -b fruit
+    &gt; git checkout main -b fruit
     &gt; echo "bananas" &gt;&gt; test.txt
     &gt; git commit -am "We have added a fruit"
 </pre>
     
-Feeling satisfied with our changes, we decide to merge our animal branch back into master:
+Feeling satisfied with our changes, we decide to merge our animal branch back into main:
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
-    &gt; git checkout master
+    &gt; git checkout main
     &gt; git merge animals
 </pre>
     

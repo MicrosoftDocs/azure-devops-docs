@@ -20,6 +20,8 @@ If you're having issues either connecting to Azure DevOps using your GitHub iden
 
 A: No. Ask your users to sign out, and then from a fresh browser session, sign back in to the organization with their GitHub credentials. This action will help establish the users as having valid GitHub identities.
 
+<a id="github-users" />
+
 ## Q: I'm an organization administrator and I turned on the policy that enables inviting GitHub users. Why can't I invite new GitHub users?
 
 A: Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials. You're now recognized as a GitHub user and the GitHub invitation experience is available to you.

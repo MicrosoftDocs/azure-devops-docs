@@ -1,6 +1,6 @@
 ---
-title: Use advanced workitem search options
-description: How To Use Work Item Search - Advanced options for Work Item Search in Microsoft Azure DevOps and TFS for all projects of your projects 
+title: Use advanced work item search options
+description: How to use Work Item Search - Advanced options for Work Item Search in Microsoft Azure DevOps for all projects. 
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
-Work Item Search is available as a built-in extension in Azure DevOps and TFS.
+Work Item Search is available as a built-in extension in Azure DevOps.
 Users can use Work Item Search by default without any installation 
 when Boards service is installed and enabled in Azure DevOps Services.
 
@@ -66,8 +66,7 @@ The selected projects are always at the top of the list.
 Notice that hit counts are also shown for projects that are not selected. 
 
 Open the search results in a new browser tab from either search box by
-pressing _Ctrl+Shift+Enter_ or by holding _Ctrl_ and clicking  the
-![start search icon](media/shared/start-search-icon.png) icon.
+pressing _Ctrl+Shift+Enter_.
 
 <a name="quickfilters"></a>
 ## Quick Filters for matching in specific fields
@@ -119,10 +118,10 @@ Narrow the search to a specific location using the `proj`, `area`, or `iteration
   
 <a name="quicknavigation"></a>
 
-## Quickly navigate to a work item using its ID
+## Quickly go to a work item using its ID
 
-Type or paste the work item ID in the search box in the Azure DevOps or TFS title bar 
-to quickly navigate to it. Searching for a work item ID opens the work item in a 
+Type or paste the work item ID in the search box in the Azure DevOps title bar 
+to quickly go to it. Searching for a work item ID opens the work item in a 
 modal dialog, providing quick access to read and edit work items.
 
 ::: moniker range=">= azure-devops-2019"  
@@ -201,12 +200,11 @@ You can use more than one `?` wildcard to match more than one character.
 <a name="seemoreworkitem"></a>
 ## See more of the work item
 
-You can quickly get a full screen view of the selected work item using the expand
-![Expand the file to fullscreen](media/shared/fullscreen-icon-expand.png)
-and shrink ![Shrink the file to a window](media/shared/fullscreen-icon-shrink.png)
-icons in the toolbar. However, another way to see more of the work item, while still being able to 
+You can quickly get a full screen view of the selected work item using 
+![Expand the file to fullscreen](media/shared/fullscreen-icon-expand.png) **expand**
+and ![Shrink the file to a window](media/shared/fullscreen-icon-shrink.png) **shrink** in the toolbar. However, another way to see more of the work item, while still being able to 
 select work items from the list of matching results, is to hide the left column filter pane
-by choosing the **&lt;** icon at the top left of the column. Use the **&gt;** icon to restore the filter pane. 
+by choosing **&lt;** at the top left of the column. Use **&gt;** to restore the filter pane. 
 
 If you are using a portrait orientation screen, use the **Preview pane: Right**
 link at the top right of the window to display the code below the 

@@ -1,6 +1,6 @@
 ---
 title: Define variables
-ms.custom: seodec18, contperfq4, devx-track-azurecli
+ms.custom: seodec18, contperf-fy20q4, devx-track-azurecli
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
@@ -92,6 +92,19 @@ Macro variables are only expanded when they are used for a value, not as a keywo
 > [!NOTE]
 > Variables are only expanded for `stages`, `jobs`, and `steps`.
 > You cannot, for example, use macro syntax inside a `resource` or `trigger`.
+
+In this example, macro syntax is used with Bash, PowerShell, and a script task. The syntax for calling a variable with macro syntax is the same for all three. 
+
+ ```yaml
+variables:
+  - name: pullRequest
+    value: $[eq(variables['Build.Reason'], 'PullRequest')]
+
+steps: 
+- bash: echo $(pullRequest)
+- powershell: echo $(pullRequest)
+- script: echo $(pullRequest)
+ ```
 
 ### Template expression syntax 
 You can use template expression syntax to expand both [template parameters](../process/templates.md) and variables (`${{ variables.var }}`). Template variables are processed at compile time, and are replaced before runtime starts. Template expressions are designed for reusing parts of YAML as templates. 
@@ -549,7 +562,9 @@ steps:
 jobs:
 - job: A
   steps:
-  - task: MyTask@1  # this step generates the output variable
+  # assume that MyTask generates an output variable called "MyVar"
+  # (you would learn that from the task's documentation)
+  - task: MyTask@1
     name: ProduceVar  # because we're going to depend on it, we need to name the step
 - job: B
   dependsOn: A
@@ -650,9 +665,11 @@ A script in your pipeline can define a variable so that it can be consumed by on
 
 ### Set a job-scoped variable from a script
 
-To set a variable from a script, you use the `task.setvariable` logging command.
+To set a variable from a script, you use the `task.setvariable` [logging command](../scripts/logging-commands.md).
 This doesn't update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
+
+When `issecret` is set to true, the value of the variable will be saved as secret and masked from the log.  
 
 ```yaml
 steps:

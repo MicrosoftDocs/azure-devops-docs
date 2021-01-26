@@ -48,7 +48,7 @@ You can also use variables in conditions.
 
 ```yaml
 variables:
-  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
+  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')]
 
 stages:
 - stage: A
@@ -104,16 +104,16 @@ Do any of your conditions make it possible for the task to run even after the bu
 
 ## Examples
 
-### Run for the master branch, if succeeding
+### Run for the main branch, if succeeding
 
 ```
-and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
 ```
 
-### Run if the branch is not master, if succeeding
+### Run if the branch is not main, if succeeding
 
 ```
-and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/master'))
+and(succeeded(), ne(variables['Build.SourceBranch'], 'refs/heads/main'))
 ```
 
 ### Run for user topic branches, if succeeding
@@ -262,7 +262,7 @@ stages:
 - stage: Stage1
   displayName: Stage 1
   dependsOn: []
-  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/master'), succeeded())
+  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
   jobs:
   - job: ShowVariables
     displayName: Show variables
@@ -275,7 +275,7 @@ stages:
 - stage: Stage2
   displayName: stage 2
   dependsOn: Stage1
-  condition: contains(variables['build.sourceBranch'], 'refs/heads/master')
+  condition: contains(variables['build.sourceBranch'], 'refs/heads/main')
   jobs:
   - job: ShowVariables
     displayName: Show variables 2
@@ -288,7 +288,7 @@ stages:
 - stage: Stage3
   displayName: stage 3
   dependsOn: Stage2
-  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/master'), succeeded())
+  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/main'), succeeded())
   jobs:
   - job: ShowVariables
     displayName: Show variables 3

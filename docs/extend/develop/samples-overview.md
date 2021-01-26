@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
 title: Samples overview | Extensions for Azure DevOps
-description: Overview of the available extension samples for Azure DevOps and Team Foundation Server (TFS), including a description, the link to the repo and the contributions they touch
+description: Overview of the available extension samples for Azure DevOps, including a description, the link to the repo and the contributions they touch.
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -29,7 +29,7 @@ number of contributions for each sample to increase understanding of the extensi
 | [File Owner](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.FileOwner) | [GitHub](https://github.com/ALM-Rangers/File-Owner-Extension) | Context menu action (source explorer) | Allows users to see who owns a file from the Source Explorer |
 | [Folder Management](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.FolderManagement) | [GitHub](https://github.com/ALM-Rangers/VSO-Extension-FolderManagement) | Context menu action (code explorer tree) | Create a folder in your source repositories from the code explorer tree. No need to clone the repository or install extra tools |
 | Print Cards | [GitHub](https://github.com/ALM-Rangers/Print-Cards-Extension) | Toolbar action (Kanban board) | Print cards from your Kanban board for use on a physical board |
-| [Offline Test Execution](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution) | [GitHub](https://github.com/ALM-Rangers/Offline-Test-Execution-extension) | Test plan tab | Allows the tester to perform the test steps even if disconnected from Azure DevOps or TFS. It can be done using the exported Excel Spreadsheet. |
+| [Offline Test Execution](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.OfflineTestExecution) | [GitHub](https://github.com/ALM-Rangers/Offline-Test-Execution-extension) | Test plan tab | Allows the tester to perform the test steps even if disconnected from Azure DevOps. It can be done using the exported Excel Spreadsheet. |
 | [Release Management Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.utilitytasks) | [GitHub](https://github.com/openalm/Extension-UtilitiesPack) | Release Management tasks | Utility tasks for Release Management: Tokenizer, Powershell++, Shell++, Zip & Unzip, Powershell to rollback  |
 | [Roll-up Board](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard) | [GitHub](https://github.com/ALM-Rangers/Roll-Up-Board-Widget-Extension) | Dashboard Widget | This widget shows the number of cards in each column of the Kanban board |
 | [Sample Data](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.SampleDataWidget) | [GitHub](https://github.com/ALM-Rangers/Sample-Data-Widget-Extension) | Dashboard Widget | Lets you create and remove sample data in your project. |
