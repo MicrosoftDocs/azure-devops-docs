@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2018'
 
 The NuGet client natively supports multiple package sources, so you can use packages from both nuget.org and private feeds (like your Azure Artifacts feed). However, there are some limitations (outlined on the [upstream sources concepts page](../concepts/upstream-sources.md)) with that configuration, and we recommend instead managing package sources server-side using a single feed and upstream sources.
 
-The nuget.org upstream source allows you to merge the contents of nuget.org into your feed such that the nuget client can install packages from both locations without making multiple search queries. Enabling upstream sources also automatically enables saving of packages you use from the upstream source.
+The nuget.org upstream source allows you to merge the contents of nuget.org into your feed such that the NuGet client can install packages from both locations without making multiple search queries. Enabling upstream sources also automatically enables saving of packages you use from the upstream source.
 
 To learn more about the concept of upstream sources, please see the [concepts page](../concepts/upstream-sources.md).
 
