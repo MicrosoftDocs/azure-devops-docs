@@ -139,7 +139,7 @@ repositories {
 } 
 ```
 
-In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure publishing and downloading to use separate organizations, if you prefer. You can use the _project setup_ section, under **Connect to feed** -> Gradle, as a guide to set up connection to your feed. 
+In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure publishing and downloading to use separate organizations, if you prefer. You can use the _project setup_ section, under **Connect to feed** > **Gradle**, as a guide to set up connection to your feed. 
 
 > [!NOTE]
 > You can use the Azure Artifacts connect to feed dialog box to copy the `maven` repository section to use in your build.gradle file.
@@ -147,7 +147,7 @@ In the above example, you are publishing artifacts and downloading dependent art
 1. Replace the following fields with your own values:
 
 - `groupId`: A group ID you associate with your package. Give it a team or organization name so consumers can identify the origin easier.
-- `artifactId`: your artifact ID number that will be used when publishing your package. Again, give it a meaningful name that specifies the package type and version for example.
+- `artifactId`: Your artifact ID number that will be used when publishing your package. Again, give it a meaningful name that specifies the package type and version for example.
 - `version`: Your package version. This number should be incremented for future iterations.
 - `artifact`: Your `.jar` file path. Example: *./target/myJavaClasses.jar*.
 - `feedName`: The name of your feed. If not specified, the default value will be `{OrganizationName}`.
