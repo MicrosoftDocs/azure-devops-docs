@@ -48,11 +48,11 @@ You can choose any legal branch name to use when a repository is initialized, or
 
 - **Organization settings** - From the DevOps page, select your project > **Organization settings** > **Repositories**, turn on **Default branch name for new repositories**, and type your default branch name.
 
-    :::image type="content" source="media/repository-settings/organization-settings-change-default-branch-name.png" alt-text="Screenshot that shows the 'Organization Settings', 'Repositories', and 'Default branch name for new repositores' selected.":::
+    :::image type="content" source="media/repository-settings/organization-settings-change-default-branch-name.png" alt-text="Screenshot that shows the 'Organization Settings', 'Repositories', and 'Default branch name for new repositories' selected.":::
 
 -  **Project settings** - From the project page, select **Project settings** > **Repositories** > **Settings**, turn on **Default branch name for new repositories**, and type your default branch name.
 
-    :::image type="content" source="media/repository-settings/project-settings-custom-default-branch-name-2020.png" alt-text="Screenshot that shows the 'Project Settings', 'Repositories', and 'Default branch name for new repositores' selected.":::
+    :::image type="content" source="media/repository-settings/project-settings-custom-default-branch-name-2020.png" alt-text="Screenshot that shows the 'Project Settings', 'Repositories', and 'Default branch name for new repositories' selected.":::
 
 If you don't enable this feature, your repositories will be initialized with the Azure Repos default name, *main*.
 
