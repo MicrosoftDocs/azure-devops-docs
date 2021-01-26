@@ -7,9 +7,9 @@ ms.date: 01/14/2021
 ---
 
 
-### Query filter features
+### Query filters
 
-The following table summarizes the query filter features supported by each Azure DevOps version.  
+The following table summarizes the query filter functions supported by each Azure DevOps version.  
 
 ::: moniker range=">= azure-devops-2019"
 > [!NOTE] 
@@ -19,7 +19,7 @@ The following table summarizes the query filter features supported by each Azure
 ---
 :::row:::
    :::column span="1":::
-      **Feature** 
+      **Filter function** 
    :::column-end:::
    :::column span="1":::
       **Query support**
@@ -37,7 +37,7 @@ The following table summarizes the query filter features supported by each Azure
       Searches are not case sensitive.  
    :::column-end:::
    :::column span="1":::
-      TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions  
    :::column-end:::
 :::row-end:::
 ---
@@ -49,7 +49,7 @@ The following table summarizes the query filter features supported by each Azure
       Wild card = `*` 
    :::column-end:::
    :::column span="1":::
-      TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions  
    :::column-end:::
 :::row-end:::
 ---
@@ -61,7 +61,19 @@ The following table summarizes the query filter features supported by each Azure
       Find work items based on direct links or topological/hierarchical link types. 
    :::column-end:::
    :::column span="1":::
-      TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      [Logical clause groupings](/azure/devops/boards/queries/using-queries#logical-groupings)   
+   :::column-end:::
+   :::column span="4":::
+      Group and nest clauses using AND and OR Boolean operators.  
+   :::column-end:::
+   :::column span="1":::
+      All versions  
    :::column-end:::
 :::row-end:::
 ---
@@ -74,7 +86,7 @@ The following table summarizes the query filter features supported by each Azure
        Supported operator: `Was Ever`
    :::column-end:::
    :::column span="1":::
-      TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions  
    :::column-end:::
 :::row-end:::
 ---
@@ -86,7 +98,7 @@ The following table summarizes the query filter features supported by each Azure
       Use macros to create queries relative to a date, other tools, such as team area path, team iteration, and more.  
    :::column-end:::
    :::column span="1":::
-      TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions  
    :::column-end:::
 :::row-end:::
 ---
@@ -111,7 +123,7 @@ The following table summarizes the query filter features supported by each Azure
       **Supported operators**: `=[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field]`
    :::column-end:::
    :::column span="1":::
-      TFS 2013-2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions  
    :::column-end:::
 :::row-end:::
 ---
@@ -124,7 +136,7 @@ The following table summarizes the query filter features supported by each Azure
       **Supported operators**: `Contains, Does Not Contain`
    :::column-end:::
    :::column span="1":::
-      TFS 2013-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions 
    :::column-end:::
 :::row-end:::
 ---
