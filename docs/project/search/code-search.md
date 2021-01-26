@@ -93,7 +93,7 @@ For more information, see [Install an extension](../../marketplace/install-exten
    list. Then, enter the criteria value.
     
    > [!NOTE]
-   > As of the [July 2019 update](/release-notes/2019/repos/sprint-155-update#improved-code-search-filtering-options), the code search filters have been reduced from 39 to 19 through deprecation and merging.
+   > As of the [July 2019 update](/azure/devops/release-notes/2019/repos/sprint-155-update#improved-code-search-filtering-options), the code search filters have been reduced from 39 to 19 through deprecation and merging.
 
    ![Screenshot of search from title bar.](media/code-search-get-started/title-bar-search-functions-azure-devops.png)    
 
