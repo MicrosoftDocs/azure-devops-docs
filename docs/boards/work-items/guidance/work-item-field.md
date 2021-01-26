@@ -147,7 +147,7 @@ Values in parenthesis indicate the following:
 <li><a href="cmmi/guidance-change-request-field-reference-cmmi.md" data-raw-source="[Impact on User Experience](cmmi/guidance-change-request-field-reference-cmmi.md)">Impact on User Experience</a> (CMMI)</li>
 <li><a href="../../queries/build-test-integration.md" data-raw-source="[Integrated in Build](../../queries/build-test-integration.md)">Integrated in Build</a> (TCM)</li>
 <li><a href="../../queries/build-test-integration.md" data-raw-source="[Issue](../../queries/build-test-integration.md)">Issue</a> (TCM)</li>
-<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Id](../../queries/query-by-area-iteration-path.md)">Iteration Id</a>  (System)</li>
+<li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Id](../../queries/query-by-area-iteration-path.md)">Iteration ID</a>  (System)</li>
 <li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Iteration Path](../../queries/query-by-area-iteration-path.md)">Iteration Path</a> (System)</li>
 </ul>
 <h3>J-L-M-N</h3>

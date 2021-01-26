@@ -20,9 +20,9 @@ ms.date: 01/25/2021
 List bugs, user stories, or other work items based on field criteria you specify using queries. You can then review these lists with your team, triage work, or perform bulk work item updates. In addition to managed queries, the semantic search tool provides some overlapping and different functionality worth exploring. 
 
  
-## Supported query features 
+## Query capabilities 
 
-The following sections provide an overview of the features supported to define queries and manage queries. 
+The following sections provide an overview of the functions supported to define and manage work item queries. 
 <!--- In addition to these features, additional functionality is described in [Query support for cross-service, integration, and extensions](query-support-integration-cross-service-extensions.md). --> 
 
 

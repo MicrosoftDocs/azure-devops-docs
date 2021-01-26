@@ -287,7 +287,7 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
     <td><strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong> <sup>5</sup></td>
-    <td>Use in conjunction with the <strong>Team Project</strong> field to filter for work items in the current project. For example, you can find all the work items in the current project with the clause <code>Team Project=<xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></code>. 
+    <td>Use in conjunction with the <strong>Team Project</strong> field to filter for work items in other projects. For example, you can find all the work items in a different project with the clause <code>Team Project=<xref href="OtherProject" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></code>. To learn more, see <a href="../using-queries.md#across-projects">Define a query, Query across projects</a>.
 </td>
 </tr>
 

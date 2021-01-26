@@ -32,46 +32,46 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      **[Any]** 
+      [[Any]](titles-ids-descriptions.md)(/azure/devops/boards/queries/titles-ids-descriptions)
    :::column-end:::
    :::column span="1":::
-      Find any work item type, `Work Item Type=[Any]`
+      Find any work item type, `Work Item Type=[Any]`, or any State, `State=[Any]`.
    :::column-end:::
    :::column span="1":::
-      TFS 2013-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="1":::
-      **@Me** 
-   :::column-end:::
-   :::column span="1":::
-      Find work where `Identity field=logged in user`
-   :::column-end:::
-   :::column span="1":::
-      TFS 2013-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      **@Today** 
+      [@Me](/azure/devops/boards/queries/query-by-workflow-changes.md)
    :::column-end:::
    :::column span="1":::
-      Find work where `Date-Time field=today`
+      Find work where `Identity field=logged in user`.
    :::column-end:::
    :::column span="1":::
-      TFS 2013-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions 
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      **@Project** 
+      [@Today](/azure/devops/boards/queries/query-by-date-or-current-iteration.md) 
    :::column-end:::
    :::column span="1":::
-      Find work defined in current Project
+      Find work where `Date-Time field=today`.
+   :::column-end:::
+   :::column span="1":::
+      All versions  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      [@Project](/azure/devops/boards/queries/using-queries#across-projects)  
+   :::column-end:::
+   :::column span="1":::
+      Find work defined in current Project.
    :::column-end:::
    :::column span="1":::
       TFS 2015-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
@@ -80,19 +80,19 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      **@CurrentIteration** 
+      [@CurrentIteration](/azure/devops/boards/queries/query-by-date-or-current-iteration.md)   
    :::column-end:::
    :::column span="1":::
       Find work defined in current iteration for a team
    :::column-end:::
    :::column span="1":::
-      TFS 2013-TFS 2018, Azure DevOps 2019-2020, Azure DevOps Services  
+      All versions  
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="1":::
-      **@CurrentIteration +/-n** 
+      [@CurrentIteration +/-n](/azure/devops/boards/queries/query-by-date-or-current-iteration.md)   
    :::column-end:::
    :::column span="1":::
       Find work defined in +/- n of current iteration for a team
@@ -104,7 +104,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      **@Follows** 
+      [@Follows](/azure/devops/boards/queries/titles-ids-descriptions#following)
    :::column-end:::
    :::column span="1":::
       Find work current logged in user is following, `ID In @Follows`
@@ -116,7 +116,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      **@MyRecentActivity**, **@RecentMentions**, **@MyRecentProjectActivity**
+      [@MyRecentActivity, @RecentMentions, @RecentProjectActivity](/azure/devops/boards/queries/titles-ids-descriptions#recent-macros)
    :::column-end:::
    :::column span="4":::
       Find work items recently changed, `ID In @MyRecentActivity`
@@ -129,7 +129,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      **@StartOfDay**, **@StartOfMonth**, **@StartOfWeek*, **@StartOfYear**
+      [@StartOfDay, @StartOfMonth, @StartOfWeek, @StartOfYear](/azure/devops/boards/queries/query-by-date-or-current-iteration)   
    :::column-end:::
    :::column span="1":::
       Find work where the selected date-time field is within the current day, month, week, or year with a plus/minus offset, example: `Closed Date>=@StartOfDay-7`
@@ -141,7 +141,7 @@ For more detailed descriptions and links to examples, see [Query fields, operato
 ---
 :::row:::
    :::column span="1":::
-      **@TeamAreas** 
+      [@TeamAreas](/azure/devops/boards/queries/query-by-area-iteration-path)
    :::column-end:::
    :::column span="1":::
       Find work assigned to an Area Path or Iteration Path of specified team, for examples, see [Query by area or iteration path](/azure/devops/boards/queries/query-by-area-iteration-path) 

@@ -16,10 +16,10 @@ ms.date: 01/25/2021
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
+Work item queries are managed queries that you can define, save, and share with others. This is in contrast with semantic searches that list work items, but can't be saved or shared. Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
 
 > [!NOTE]  
-> To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
+> To define queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
 
 If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -136,7 +136,7 @@ In addition to the query filters, you can [interactively apply filters to query 
    :::column-end:::
    :::column span="2":::
       ::: moniker range=">= azure-devops-2019"
-      - [Any](titles-ids-descriptions.md)
+      - [[Any]](titles-ids-descriptions.md)
       - [@Me](query-by-workflow-changes.md)
       - [@Today](query-by-date-or-current-iteration.md) 
       - [@CurrentIteration, @CurrentIteration +/-n](query-by-date-or-current-iteration.md)   
@@ -146,7 +146,7 @@ In addition to the query filters, you can [interactively apply filters to query 
       - [@TeamAreas](query-by-area-iteration-path.md)
       ::: moniker-end
       ::: moniker range="tfs-2018"
-      - [Any](titles-ids-descriptions.md)
+      - [[Any]](titles-ids-descriptions.md)
       - [@Me](query-by-workflow-changes.md)
       - [@Today](query-by-date-or-current-iteration.md) 
       - [@CurrentIteration](query-by-date-or-current-iteration.md)   
@@ -154,14 +154,14 @@ In addition to the query filters, you can [interactively apply filters to query 
       - [@MyRecentActivity, @RecentMentions, @RecentProjectActivity](titles-ids-descriptions.md#recent-macros)
       ::: moniker-end
       ::: moniker range="tfs-2017"
-      - [Any](titles-ids-descriptions.md)
+      - [[Any]](titles-ids-descriptions.md)
       - [@Me](query-by-workflow-changes.md)
       - [@Today](query-by-date-or-current-iteration.md) 
       - [@CurrentIteration](query-by-date-or-current-iteration.md)   
       - [@Follows](titles-ids-descriptions.md#following)
       ::: moniker-end
       ::: moniker range="tfs-2013 || tfs-2015"
-      - [Any](titles-ids-descriptions.md)
+      - [[Any]](titles-ids-descriptions.md)
       - [@Me](query-by-workflow-changes.md)
       - [@Today](query-by-date-or-current-iteration.md) 
       - [@CurrentIteration](query-by-date-or-current-iteration.md)   
