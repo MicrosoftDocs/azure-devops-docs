@@ -4,7 +4,7 @@ ms.custom: seodec18, contperf-fy20q4
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 11/02/2020
+ms.date: 01/26/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -168,8 +168,11 @@ YAML is not supported in this version of TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-To add jobs to your build pipeline, edit the pipeline in Pipelines page, and select the **Process** tab for your pipeline.
-To add jobs to your release pipeline, edit the pipeline in Releases page, and select the **Process** tab for your pipeline.
+To add jobs to your build pipeline, edit the pipeline on the Pipelines page. Select **...**  to add a job.
+
+:::image type="content" source="media/build-pipeline-jobs.png" alt-text="Add a job to the pipeline.":::
+
+To add jobs to your release pipeline, edit the pipeline from **Pipelines** > **Releases**. View the stage tasks in the stage where you want to add your job. Select **...**  to add a job.
 
 * * *
 ## Types of jobs
