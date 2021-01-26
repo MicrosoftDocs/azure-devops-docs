@@ -24,7 +24,7 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 #### [Browser](#tab/browser)
 
-::: moniker range=">=azure-devops-2019"
+::: moniker range=">azure-devops-2019"
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
