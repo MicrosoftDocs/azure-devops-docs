@@ -34,7 +34,7 @@ In this article you'll learn:
 
 For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
  
-### Query filters
+## Query filters
 
 From the Query Editor, you can exercise the following filter functions. Choose the filter to jump to an article with sample queries. 
 In addition to the query filters, you can [interactively apply filters to query results](/azure/devops/boards/backlogs/filter-backlogs).
