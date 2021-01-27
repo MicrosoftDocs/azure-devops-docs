@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 09/10/2020
 ---
 
@@ -357,7 +357,7 @@ The following table indicates those features available for each supported access
 :::row:::
    :::column span="3":::
       **Build**  
-      Includes full access to all features to [manage continuous integration and continuous delivery of software](../../pipelines/overview.md).
+      Includes full access to all features to [manage continuous integration and continuous delivery of software](../../pipelines/get-started/what-is-azure-pipelines.md).
    :::column-end:::
    :::column span="1":::
        

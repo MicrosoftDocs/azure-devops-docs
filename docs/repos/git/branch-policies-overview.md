@@ -15,8 +15,8 @@ monikerRange: '>= tfs-2015'
 
 Branch policies are an important part of the Git workflow and enable you to:
 
-* Isolate work in progress from the completed work in your master branch
-* Guarantee changes build before they get to master
+* Isolate work in progress from the completed work in your main branch
+* Guarantee changes build before they get to main
 * Limit who can contribute to specific branches
 * Enforce who can create branches and the naming guidelines for the branches
 * Automatically include the right reviewers for every code change
@@ -24,15 +24,15 @@ Branch policies are an important part of the Git workflow and enable you to:
 
 ## Adopt a Git branching strategy
 
-There are a few critical branches in your repo that the team relies on always being in good shape, such as your `master` branch.
+There are a few critical branches in your repo that the team relies on always being in good shape, such as your `main` branch.
 [Require pull requests](branch-policies.md) to make any changes on these branches.
 Developers pushing changes directly to the protected branches will have their pushes rejected.
 
 Keep your branch strategy simple by building your strategy from these three concepts:
 
 1. Use feature branches for all new features and bug fixes.
-2. Merge feature branches into the master branch using pull requests. 
-3. Keep a high quality, up-to-date master branch.  
+2. Merge feature branches into the main branch using pull requests. 
+3. Keep a high quality, up-to-date main branch.  
 
 A strategy that extends these concepts and avoids contradictions will result in a version control workflow for your team that is consistent and easy to follow. 
 

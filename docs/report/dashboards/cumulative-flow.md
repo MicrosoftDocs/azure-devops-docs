@@ -122,7 +122,7 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
 1. To view the in-context reports for the product backlog, check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. Or
 
     > [!div class="mx-imgBorder"]  
-    > ![Select product backlog level, Backlog items, Stories, or Requirements](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile-s155.png) 
+    > ![Select product backlog level, Backlog items, Stories, or Requirements.](/azure/devops/boards/sprints/media/assign-items-sprint/select-product-backlog-agile-s155.png) 
 
 ::: moniker-end
 

@@ -12,11 +12,11 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# Quickstart: Add, run, and update inline tests
+# Add, run, update inline tests
 
 [!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
 
-In this quickstart, learn how to add, run, update, and expand and collapse inline tests in Azure DevOps.
+Learn how to add, run, update, and expand and collapse inline tests in Azure DevOps.
 
 To start manual testing, add the test to the user story or bug that you want to test. From the Kanban board, you can define inline tests or a set of manual tests for a backlog item. You also can run these tests and update their status. If you're new to working with the Kanban board, see the [Kanban quickstart](../boards/boards/kanban-quickstart.md).
 
@@ -30,7 +30,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_boards/board```  
 
-	If you don't see the team or project you want, select the ![Azure DevOps icon](../media/icons/project-icon.png) to [browse all projects and teams](../project/navigation/work-across-projects.md).  
+	If you don't see the team or project you want, select ![Azure DevOps icon](../media/icons/project-icon.png) **Azure DevOps** to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
 2. Select **Boards** to open the Kanban board.
 
@@ -44,7 +44,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_backlogs/board```  
 
-	If you don't see the team or project you want, select the ![Azure DevOps icon](../media/icons/project-icon.png) Azure DevOps icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
+	If you don't see the team or project you want, select ![Azure DevOps icon](../media/icons/project-icon.png) **Azure DevOps** to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
 2. Select **Board** to open the Kanban board.
 

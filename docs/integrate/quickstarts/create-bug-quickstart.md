@@ -4,7 +4,7 @@ description: Use .NET client libraries to create a bug in Azure DevOps Services.
 ms.assetid: ea2e5303-46b5-41d0-b6f5-b3d8ce515a64
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 06/27/2017
@@ -28,7 +28,7 @@ You must have the following before you can create a work item.
 To learn about C# programming within Visual Studio, find the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/)
 
 ## C# code content
-There are a few things happening in the code sample below:
+There are a few things happening in the following code sample:
 
 1. Authentication
     1. Creating credentials using your PAT

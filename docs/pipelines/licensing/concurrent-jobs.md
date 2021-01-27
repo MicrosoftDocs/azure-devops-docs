@@ -1,12 +1,12 @@
 ---
 title: Configure and pay for parallel jobs
 titleSuffix: Azure DevOps
-ms.custom: seodec18,contperfq1
+ms.custom: seodec18,contperf-fy21q1
 description: Configure parallel jobs in Azure Pipelines and pay for them
 ms.topic: how-to
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
-ms.date: 12/09/2020
+ms.date: 01/27/2021
 monikerRange: '>= tfs-2015'
 ---
 
@@ -58,6 +58,8 @@ We provide a *free tier* of service by default in every organization for both ho
 Parallel jobs are purchased at the organization level, and they are shared by all projects in an organization. 
 
 
+[!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
+
 # [Microsoft-hosted](#tab/ms-hosted)
 
 For Microsoft-hosted parallel jobs, you get 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time for public projects. For private projects, you get one free job that can run for up to 60 minutes each time. There is no time limit on parallel jobs for public projects and a 30 hour time limit per month for private projects. 
@@ -70,9 +72,9 @@ For Microsoft-hosted parallel jobs, you get 10 free Microsoft-hosted parallel jo
 | **Private project** | One free job that can run for up to 60 minutes each time   |   1,800 minutes (30 hours) per month |
 
 
-When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
+When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](#how-do-i-buy-more-parallel-jobs).
 
-When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization is still 1. To be able to run two jobs concurrently, you will need to purchase two parallel jobs if you are currently on the free tier. The first purchase only removes the time limits on the first job.
+When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization is still one. To be able to run two jobs concurrently, you will need to purchase two parallel jobs if you are currently on the free tier. The first purchase only removes the time limits on the first job.
  
 > [!TIP]
 > If your pipeline exceeds the maximum job timeout, try splitting your pipeline 
@@ -81,7 +83,6 @@ When you purchase your first Microsoft-hosted parallel job, the number of parall
 
 
 # [Self-hosted](#tab/self-hosted)
-
 
 For self-hosted parallel jobs, you can register any number of [self-hosted agents](../agents/agents.md) in your organization. We charge based on the number of jobs you want to run at a time, not the number of agents registered. There are no time limits on self-hosted jobs.
 
@@ -204,7 +205,7 @@ When you run a [server job](../process/phases.md#server-jobs) or deploy to a [de
 
 ![Simple example of parallel jobs](media/concurrent-pipelines-vsts/concurrent-pipelines-simple-example.png)
 
-1. FabrikamFiber CI Build 102 (master branch) starts first.
+1. FabrikamFiber CI Build 102 (main branch) starts first.
 2. Deployment of FabrikamFiber Release 11 is triggered by completion of FabrikamFiber CI Build 102.
 3. FabrikamFiber CI Build 101 (feature branch) is triggered. The build can't start yet because Release 11's deployment is active. So the build stays queued.
 4. Release 11 waits for approvals. Fabrikam CI Build 101 starts because a release that's waiting for approvals does not consume a parallel job.
@@ -371,3 +372,11 @@ No.
 In TFS 2015, so long as your users have a TFS CAL, they can manage releases for no additional charge in trial mode. We called it "trial mode" to indicate that we would eventually charge for managing releases. Despite this label, we fully support managing releases in TFS 2015.
 
 ::: moniker-end
+
+
+## Related articles
+- [Set up billing](../../organizations/billing/set-up-billing-for-your-organization-vs.md)
+- [Manage paid access](../../organizations/billing/buy-basic-access-add-users.md)
+- [Buy access to test hub](../../organizations/billing/buy-access-tfs-test-hub.md)
+- [Add user for billing management](../../organizations/billing/add-backup-billing-managers.md)
+- [Azure DevOps billing overview](../../organizations/billing/overview.md)

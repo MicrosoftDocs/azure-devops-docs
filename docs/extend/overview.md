@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
-title: Developing extensions for Azure DevOps and  Team Foundation Server (TFS)
-description: Overview of creating extensions for Azure DevOps and Team Foundation Server
+title: Developing extensions for Azure DevOps
+description: Overview of creating extensions for Azure DevOps.
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -14,11 +14,11 @@ ms.date: 10/24/2019
 
 [!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
 
-Extensions are add-ons you can use to customize and extend your DevOps experience with Azure DevOps and Team Foundation Server (TFS). 
+Extensions are add-ons you can use to customize and extend your DevOps experience with Azure DevOps. 
 They're written with standard technologies - HTML, JavaScript, CSS - and are developed using your preferred development tools. 
 Extensions use our [RESTful API Library](/rest/api/azure/devops/) to easily interact with Azure DevOps and applications/services.
 The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) is where extensions are published. 
-They can be kept privately for you and your team or shared with the millions of developers currently using Azure DevOps and TFS. 
+They can be kept privately for you and your team or shared with the millions of developers currently using Azure DevOps. 
 
 
 > [!NOTE]
@@ -40,7 +40,7 @@ extensions can be installed directly by users.
 
 ## What can you do with extensions?
 
-There are dozens of places where you can add to the user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](/previous-versions/azure/devops/docs/extend/reference/targets/overview).
+There are dozens of places where you can add to the user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](/previous-versions/azure/devops/extend/reference/targets/overview).
 
 - [Provide new Azure Pipelines tasks](./develop/add-build-task.md) that teams can use in their builds.
 - Use [dashboard widgets](./develop/add-dashboard-widget.md) to get custom views within Azure DevOps. 

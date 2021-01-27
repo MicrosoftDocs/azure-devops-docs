@@ -120,7 +120,7 @@ Build counters provide a way to uniquely number and label builds. Previously, yo
 * You can define multiple counters per definition.
 * You can query for the value of a counter outside of a build. For instance, you can count the number of builds that have run since last reset using a counter.
 
-See the documentation on [User-defined variables](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) for more information about build counters.
+See the documentation on [User-defined variables](/azure/devops/pipelines/process/variables?tabs=yaml%2cbatch&view=azure-devops) for more information about build counters.
 
 ### Use YAML to specify branches to build for pull requests
 
@@ -190,7 +190,7 @@ Continuing our commitment towards improved traceability, we are happy to announc
 
 ### Run from Package supported in Azure App Service deployments
 
-The Azure App Service Deploy task (4.*) version now supports [RunFromPackage](https://docs.microsoft.com/azure/azure-functions/run-functions-from-deployment-package) (previously called [RunFromZip](https://github.com/Azure/app-service-announcements/issues/110).
+The Azure App Service Deploy task (4.*) version now supports [RunFromPackage](/azure/azure-functions/run-functions-from-deployment-package) (previously called [RunFromZip](https://github.com/Azure/app-service-announcements/issues/110).
 
 App Service supports a number of different techniques to deploy your files such as msdeploy (aka WebDeploy), git, ARM and more. But all these techniques have a limitation. Your files are deployed under your wwwroot folder (specifically d:\home\site\wwwroot) and the runtime then runs the files from there. 
 
@@ -228,7 +228,7 @@ ATR requires a one-time download and install of the runner. Select **Run for des
 
 ### Public preview of Pipeline Artifacts
 
-We are releasing a public preview of Pipeline Artifacts, a new highly scalable artifact type designed for use with Azure Pipelines. Pipeline Artifacts is based on the same technology used by the recently announced [Universal Packages](https://docs.microsoft.com/azure/devops/release-notes/2018/sprint-140-update#store-artifacts-using-universal-packages) feature and can dramatically reduce the time it takes to store build outputs for large enterprise class builds.
+We are releasing a public preview of Pipeline Artifacts, a new highly scalable artifact type designed for use with Azure Pipelines. Pipeline Artifacts is based on the same technology used by the recently announced [Universal Packages](./sprint-140-update.md#store-artifacts-using-universal-packages) feature and can dramatically reduce the time it takes to store build outputs for large enterprise class builds.
 
 ## Wiki
 
@@ -240,7 +240,7 @@ Earlier, only users having **Create Repository** permission on a git repository 
 
 ### PATs enforce CAP
 
-In February 2017, we announced [support for Azure Active Directory Conditional Access Policy (CAP)](https://docs.microsoft.com/vsts/release-notes/2017/feb-15-team-services#support-for-aad-conditional-access), but there was a limitation that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys, alternate authentication credentials and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
+In February 2017, we announced [support for Azure Active Directory Conditional Access Policy (CAP)](/vsts/release-notes/2017/feb-15-team-services#support-for-aad-conditional-access), but there was a limitation that alternate authentication mechanisms, such as personal access tokens, would not enforce CAP. We are happy to announce that we have filled this gap and Azure DevOps will now honor CAP IP fencing policies when using PATs, SSH keys, alternate authentication credentials and OAuth. Administrators don't need to do anything to take advantage of this feature. It will automatically be applied for all existing policies.
 
 ## Next steps
 

@@ -156,7 +156,7 @@ The user making the UserType change must have the following items:
    ![Check UserType in Azure portal](media/faq/check-user-type-in-azure-portal.png)
 
 4. Open an Administrative Windows PowerShell prompt.
-5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, pictured as follows. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) page.
+5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?&preserve-view=true&view=azureadps-2.0) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, pictured as follows. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) page.
 
    ![Administrator action in Windows PowerShell](media/faq/Administrator-action-Windows-PowerShell.png)
 
@@ -270,7 +270,7 @@ A: You must be a member or have read access in those directories. Otherwise, you
 
 ### Q: What if I get an error trying to map a user to an existing member of my organization?
 
-A: You can map the user onto a different identity that isn't yet an active member of the organization or add the existing user to your Azure AD. If you still need to map to the existing Azure DevOps organization member, [contact support.](https://azure.microsoft.com/support/devops/)
+A: You can map the user onto a different identity that isn't yet an active member of the organization or add the existing user to your Azure AD. If you still need to map to the existing Azure DevOps organization member, [contact support.](https://developercommunity.visualstudio.com/spaces/21/index.html)
 
 ### Q: How do I use my work or school account with my Visual Studio with MSDN subscription?
 
@@ -293,7 +293,7 @@ Complete the [prerequisites for adding external users](add-external-user.md#prer
 
 ### Q: How do I remove an Azure AD group from Azure DevOps?
 
-A: Go to your project collection or project. In the bar at the top, select the gear icon, and then select **Security**.
+A: Go to your project collection or project. In the upper bar, select :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: **Settings**, and then select **Security**.
 
 Find the Azure AD group, and delete it from your organization.
 
@@ -305,7 +305,7 @@ A: Users can belong to your organization, both as individuals and as members of 
 
 To block all access for users, remove them from Azure AD groups in your organization, or remove these groups from your organization. We currently can't block access completely or make exceptions for such users.
 
-### Q: If an Azure AD user is removed, will all their related PATs be revoked as well?
+### Q: If an Azure AD user is removed, are all their related PATs revoked as well?
 
 A: Users who are disabled or removed from your directory, can no longer access your organization by any mechanism, including via PATs or SSH.
 
@@ -409,7 +409,7 @@ A: Yes, all pieces in the system are updated with the new ID when a user's ID ge
 
 ### Q: What if I get a warning about members who will lose access to the organization?
 
-A: You can still connect to Azure AD, but try to resolve the mapping issue after you've connected. If you still need help, [contact support](https://azure.microsoft.com/support/devops/).
+A: You can still connect to Azure AD, but try to resolve the mapping issue after you've connected. If you still need help, [contact support](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ![Screenshot showing Azure AD connection warning.](media/shared/connection-warning.png)
 
@@ -419,11 +419,11 @@ Select the bolded text to see which users are affected.
 
 ### Q: What if I have over 200 users and want to connect to Azure AD?
 
-A: With more than 200 users, you can still connect, however you may need to [contact Support](https://azure.microsoft.com/support/devops/) for help with disconnected users.
+A: With more than 200 users, you can still connect, however you may need to [contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html) for help with disconnected users.
 
 ### Q: With more than 200 members in my Azure DevOps organization, how can I connect to an Azure AD?
 
-A: Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection won't work beyond 200. [Contact Support](https://azure.microsoft.com/support/devops/).
+A: Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection won't work beyond 200. [Contact Support](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ### Q: Why is git.exe/Visual Studio failing to authenticate after linking/unlinking from Azure Active Directory?
 

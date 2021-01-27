@@ -25,12 +25,12 @@ In this tutorial you learn how to:
 
 ## Understand merge conflicts
 
-The following image shows a very basic example of how changes conflict in Git. Both the master and bugfix branch make updates to the same lines of source code.
+The following image shows a very basic example of how changes conflict in Git. Both the main and bugfix branch make updates to the same lines of source code.
 
-![Master and bugfix branch have changes that conflict](media/merge-conflict.png)    
+![Main and bugfix branch have changes that conflict](media/merge-conflict.png)    
 
-If you try to merge the bugfix branch into master, Git can't determine which changes to use in the merged version. You may want to keep the changes
-in the master branch, the bugfix branch, or some combination of the two. Resolve this conflict with a merge commit on the master branch
+If you try to merge the bugfix branch into main, Git can't determine which changes to use in the merged version. You may want to keep the changes
+in the main branch, the bugfix branch, or some combination of the two. Resolve this conflict with a merge commit on the main branch
 that reconciles the conflicting changes between the two branches.
 
 ![Create a merge commit to resolve the conflict between the two branches](media/merge-conflict-resolved.png)

@@ -1,9 +1,11 @@
 - name: Azure Pipelines
   href: index.yml
+- name: Use Azure Pipelines
+  href: get-started/pipelines-get-started.md
 - name: What is Azure Pipelines?
   href: get-started/what-is-azure-pipelines.md
-- name: CI, CD, YAML & Classic
-  href: get-started/pipelines-get-started.md
+- name: Deploy to Azure
+  href: overview-azure.md
 - name: Get started
   items:
   - name: Sign up for Azure Pipelines
@@ -11,8 +13,6 @@
   - name: Create your first pipeline
     href: create-first-pipeline.md
     displayName: status badge, get started, first pipeline, import from github
-  - name: Create your first pipeline from the CLI
-    href: create-first-pipeline-cli.md
   - name: Clone or import a pipeline
     href: ./get-started/clone-import-pipeline.md
     displayName: export, copy
@@ -25,6 +25,8 @@
     href: get-started/multi-stage-pipelines-experience.md
 # - name: Clean up pipeline steps
 #   href: get-started/pipelines-get-started.md
+  - name: DevOps Starter
+    href: /azure/devops-project/overview
 - name: Pipeline basics
   items:
   - name: Key concepts
@@ -43,6 +45,8 @@
     - name: GitHub Enterprise Server
       href: repos/github-enterprise.md
       displayName: github enterprise, ci, pr, pull request, triggers, oauth, pat, checkout, firewall, whitelist, exception, rule, other git, external git, service connection, classic, yaml, ip address range
+    - name: Pipeline options for Git repositories
+      href: repos/pipeline-options-for-git.md
     - name: Bitbucket Cloud
       href: repos/bitbucket.md
       displayName: ci, pr, pull request, triggers, self, batching, batched CI, oauth, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, badge, prefergitfrompath, checkout, clone, fetch, get sources, clean, label sources, tag sources, checkout path, submodules, shallow fetch
@@ -58,6 +62,8 @@
     - name: Multiple repositories
       href: repos/multi-repo-checkout.md
       displayName: ci, pr, pull request, triggers, checkout, branch policy, path filter, branch filter, tag trigger, multiple repos, multi-repo, multi-checkout, multi-trigger, repo resource, repository resource, self
+  - name: Build history
+    href: build/history.md
   - name: Triggers
     items:
     - name: Types of triggers
@@ -148,7 +154,7 @@
     items:
     - name: View pipeline reports
       href: reports/pipelinereport.md
-    - name: Add pipeline widgets to a dashboard
+    - name: Add widgets to a dashboard
       href: ../report/dashboards/add-widget-to-dashboard.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Test Results Trend (Advanced)
       href: ../report/dashboards/analytics-widgets.md?toc=%2Fazure%2Fdevops%2Fpipelines%2Ftoc.json&bc=%2Fazure%2Fdevops%2Fpipelines%2Fbreadcrumb%2Ftoc.json&view=azure-devops#test-results-trend-advanced
@@ -267,9 +273,11 @@
     items:
     - name: Linux virtual machines
       href: ecosystems/deploy-linux-vm.md
+    - name: Manage a VM in Azure DevTest Labs
+      href: apps/cd/azure/deploy-provision-devtest-lab.md
   - name: Deploy apps to Azure
     items:
-    - name: Deploy a Linux web app - ARM template
+    - name: Use a Resource Manager template to deploy
       href: apps/cd/azure/deploy-arm-template.md
       displayName: Resource Manager
     - name: Deploy a data pipeline with Azure
@@ -303,6 +311,12 @@
       href: targets/webapp-on-container-linux.md
     - name: Web App on Windows
       href: targets/webapp.md
+  - name: Deploy mobile apps
+    items:
+    - name: Manage signing certificates
+      href: apps/mobile/app-signing.md
+    - name: Manage signing certificates (TFS-2017) 
+      href: apps/mobile/secure-certs.md
 - name: Deploy apps (Classic)
   items:
   - name: Release pipelines
@@ -331,6 +345,8 @@
       href: targets/cosmos-db.md
     - name: Azure Policy Compliance (Classic)
       href: policies/azure-policy.md
+    - name: Azure VM using Azure Resource Manager (Classic)
+      href: apps/cd/azure/deploy-provision-azure-vm.md
   - name: Deploy apps to VMs (Classic)
     items:
     - name: Linux VMs (Classic)
@@ -371,10 +387,19 @@
     - name: Deployment strategies
       href: ecosystems/kubernetes/deployment-strategies.md
       displayName: canary, strategy, kubernetes, aks, gke, eks
+    - name: Deploy to Kubernetes on Azure Container Service
+      href: release/integrate-jenkins-pipelines-aks.md
+      displayName: cluster, Jenkins, Maven, Docker
   - name: Azure Container Registry
-    href: ecosystems/containers/acr-template.md
+    items:
+    - name: Build and push to Azure Container Registry
+      href: ecosystems/containers/acr-template.md
+    - name: Deploy ASP.NET Core app
+      href: apps/cd/azure/aspnet-core-to-acr.md
   - name: Azure Kubernetes Service
     href: ecosystems/kubernetes/aks-template.md
+  - name: Azure Container Service (AKS)
+    href: release/integrate-jenkins-pipelines-aks.md  
   - name: Kubernetes canary deployments
     href: ecosystems/kubernetes/canary-demo.md
   - name: Azure Machine Learning
@@ -482,7 +507,7 @@
       href: integrations/microsoft-teams.md
     - name: Slack
       href: integrations/slack.md
-    - name: Integrate with ServiceNow (Classic)
+    - name: Integrate with ServiceNow
       href: release/approvals/servicenow.md
     - name: Integrate with Jenkins (Classic)
       href: release/integrate-jenkins-pipelines-cicd.md
@@ -490,6 +515,8 @@
       href: release/automate-terraform.md
 - name: Migrate
   items:
+  - name: Migrate from Classic pipelines
+    href: migrate/from-classic-pipelines.md
   - name: Migrate from Jenkins
     href: migrate/from-jenkins.md
   - name: Migrate from Travis
@@ -604,6 +631,8 @@
       href: tasks/utility/jenkins-download-artifacts.md
     - name: Manual Intervention
       href: tasks/utility/manual-intervention.md
+    - name: Manual Validation
+      href: tasks/utility/manual-validation.md
     - name: PowerShell
       href: tasks/utility/powershell.md
     - name: Publish Build Artifacts
@@ -850,6 +879,10 @@
     href: /rest/api/azure/devops/
   - name: Azure DevOps CLI
     href: ../cli/index.md
+  - name: DevOps Starter to deploy to Azure
+    href: /azure/devops-project/
+  - name: Azure Lab Services
+    href: /azure/lab-services/
   - name: Microsoft Learn
     items:
     - name: Create a build pipeline

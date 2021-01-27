@@ -15,6 +15,11 @@ If you don't have one, you can generate one by running the following command:
 mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -DgroupId="MyGroup" -DartifactId="myFirstApp"
 ```
 
+If you get the following error ***You must specify a valid lifecycle phase or a goal (..)*** after executing the previous command, follow these steps to add a goal in your run configuration for maven build:
+
+Right click on your project, select 'Run as' then 'Maven Build'. Write ***package*** in the 'Goals' text box, then select 'Run'.
+
+
 1. [Set up the Maven client with your feed](../../maven/pom-and-settings.md).
 
 2. Navigate to the directory containing your Maven artifact's **pom.xml** file.  If you've just created an artifact, the **pom.xml** file will be in the _myFirstApp_ folder.

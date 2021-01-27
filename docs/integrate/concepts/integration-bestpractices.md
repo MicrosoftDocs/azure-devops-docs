@@ -27,7 +27,7 @@ For example, don't attempt to store telemetry data in Azure DevOps.
 Don't add work items into Azure DevOps Services for the sake of having them all in one place. Azure DevOps Services isn't designed as a data storage service. Maintain your own data store.
 
 ## Batch your changes
-Doing single operations is slow and expensive, which is the leading cause for performance issues and rate limiting. Batch your changes into a single call. See our [batch documentation](../previous-apis/wit/batch.md) and [sample code](../previous-apis/wit/samples.md) for guidance.
+Doing single operations is slow and expensive, which is the leading cause for performance issues and rate limiting. Batch your changes into a single call. See our [batch documentation](/previous-versions/azure/devops/integrate/previous-apis/wit/batch) and [sample code](/previous-versions/azure/devops/integrate/previous-apis/wit/samples) for guidance.
 
 ## Limit your revisions
 Many revisions on a single work item create bloat and cause performance problems. We recommend doing the following tasks:
