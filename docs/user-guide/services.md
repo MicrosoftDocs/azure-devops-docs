@@ -34,7 +34,7 @@ You access Azure DevOps services through the left pane, as shown in the followin
       - [Wiki](../project/wiki/about-readme-wiki.md)
       - [Boards](../boards/get-started/what-is-azure-boards.md)
       - [Repos](..//repos/get-started/what-is-repos.md)
-      - [Pipelines](../pipelines/get-started/pipelines-get-starteds.md)
+      - [Pipelines](../pipelines/get-started/pipelines-get-started.md)
       - [Test Plans](../test/overview.md)
       - [Artifacts](../artifacts/overview.md)
    :::column-end:::
@@ -54,12 +54,10 @@ You access TFS services through the top navigational bar, as shown in the follow
 - [Dashboards](../report/dashboards/overview.md) 
 - [Code](../repos/get-started/what-is-repos.md)
 - [Work](../boards/get-started/what-is-azure-boards.md)
-- [Build & Release](../pipelines/get-started/pipelines-get-starteds.md)
+- [Build & Release](../pipelines/get-started/pipelines-get-started.md)
 - [Test](../test/overview.md)
 - [Wiki](../project/wiki/about-readme-wiki.md)
-   :::column-end:::
-:::row-end:::
----
+
 
 ::: moniker-end
 
