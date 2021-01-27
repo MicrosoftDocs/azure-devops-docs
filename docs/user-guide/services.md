@@ -47,7 +47,7 @@ You access Azure DevOps services through the left pane, as shown in the followin
 
 ::: moniker range="<= tfs-2018"
 
-You access TFS services through the top navigational bar, as shown in the following image. To jump to information for each major service, see the associated articles. 
+You access Azure DevOps services through the top navigational bar, as shown in the following image. To jump to information for each major service, see the associated articles. 
 
 ![Azure DevOps Services, main](../media/services-hubs.png) 
 
@@ -354,7 +354,4 @@ There are features and tasks associated with administering a collaborative softw
 - [Software development roles](roles.md)  
 - [Azure DevOps pricing](https://visualstudio.microsoft.com/team-services/pricing/)
 - [Azure DevOps data protection overview](../organizations/security/data-protection.md)
-
-<!---
-**System Center integration**: Enables a release pipeline to connect to a System Center Virtual Machine Manager (SCVMM) server to easily provision virtual machines and perform actions on them such as managing checkpoints, starting and **VMware Resource Deployment**: Connect to a VMware vCenter Server from Azure DevOps Services or Azure DevOps Server to provision, start, stop, or snapshot VMware virtual machines. 
--->
+ 
