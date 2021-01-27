@@ -119,6 +119,7 @@ Keep the process lightweight and eliminate as much waste as possible.
 - Keep all stakeholders and teams involved
 
 #### Ensure Definition of DOne, acceptance criteria is well defined
+
 The Definition of Done is the criteria necessary in order to consider something done or complete. It is most often created for User Stories to ensure the team agrees what is required to finish a story, but also can be created for Sprints themselves for the team to agree on when a Sprint is done.
 
 Ensures that all team members (including the Product Owner) understand what is required for a User Story to be completed within a sprint. If this is not established early for a scrum team, it is possible to get to the sprint demo and have stories that team members think are done, but in reality, have not been fully implemented. "Wait, I was supposed to write automated unit tests too?"
@@ -126,7 +127,7 @@ Ensures that all team members (including the Product Owner) understand what is r
 **Example 1: A Product Backlog Item is considered “Done” when:**
 
 - Solution builds successfully.
-- Code written and merged into master branch
+- Code written and merged into main branch
 - Unit Tests implemented on all features to an appropriate code coverage
 - All regression tests run and pass
 - All acceptance criteria met
