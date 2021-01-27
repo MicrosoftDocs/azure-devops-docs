@@ -6,8 +6,8 @@ ms.technology: devops-agile
 ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops'
-ms.date: 10/05/2020
+monikerRange: 'azure-devops'
+ms.date: 01/26/2021
 ---
  
 
@@ -15,7 +15,7 @@ ms.date: 10/05/2020
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-One of the chief advantages of adopting a platform such as Azure DevOps is the support it provides to trace work from requirements to deployment. You gain insight at each step of decisions made and the features being deployed. Git repository. The features and scenarios illustrated in this article are supported when you use Azure Repos git repositories. 
+One of the chief advantages of adopting a platform such as Azure DevOps is the support it provides to trace work from requirements to deployment. You gain insight at each step of decisions made and the software deployed. The scenarios illustrated in this article are supported when you use Azure Repos git repositories. 
 
 The following are some of the supported tasks to facilitate end-to-end traceability:
 
@@ -61,6 +61,10 @@ You can name and label a branch off the default main branch from the dialog that
 > [!div class="mx-imgBorder"]  
 > ![Create a branch dialog.](media/traceability/create-branch-dialog.png)   
 
+You can also accomplish this task through the work item form by choosing the **create a branch** link.  
+
+> [!div class="mx-imgBorder"]  
+> ![Work item form, Create a branch link.](media/traceability/work-item-form-branch.png)  
 
 ## Create a pull request from a requirement
 
@@ -87,7 +91,7 @@ After adding and defining the tests, you can run them from the Kanban board and 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of Kanban board card, test menu, choose Run test.](media/traceability/board-card-menu-run-test.png)  
 
-Test integration with the Kanban board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities in Test Manager later. The Kanban board shows the test added to support the requirement when test cases are created from the Kanban board or when requirement-based test suites are created under Azure Test Plans. 
+Test integration with the Kanban board makes it easy for teams to get started with manual testing and then take advantage of the full testing capabilities provided by Azure Test Plans. The Kanban board shows the test added to support the requirement when test cases are created from the Kanban board or when requirement-based test suites are created under Test Plans. 
 
 ### Manual and automated testing
 
@@ -210,7 +214,7 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Associate automated tests with test cases](/azure/devops/test/associate-automated-test-with-test-case)  
 
 
-## Reports and Analytics
+### Reports and Analytics
 
 - [Requirements traceability](/azure/devops/pipelines/test/requirements-traceability)
 - [Requirements tracking sample report](/azure/devops/report/powerbi/sample-stories-overview) 
@@ -238,7 +242,7 @@ When we demo traceability to customers, the main demo we show is
 - Create a branch from the work item
 - Make a change in the branch, create a pull request
 - Validate the pull request using a build
-- Merge the pull request, build the master branch
+- Merge the pull request, build the main branch
 - Deploy it to production and in all of this show how every artifact is linked to the other. For instance, the production deployment shows the work items and commits, the work item shows which build it was part of, etc.   
 
 (In this article - source control is Git in Azure DevOps - this supports end-to-end traceability) 
