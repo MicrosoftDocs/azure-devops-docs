@@ -122,9 +122,11 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 1. In the properties of the **Bash** task, use the **Browse** button for the **Script Path** to select
    the path to the **deploy.sh** script in the build artifact. For example, when you use the **nodejs-sample**
    repository to build your app, the location of the script is  
-   `$(System.DefaultWorkingDirectory)/nodejs-sample/drop/deploy/deploy.sh`
-
+   `$(System.DefaultWorkingDirectory)/nodejs-sample/drop/deploy/deploy.sh`.
+   
    ![Configuring the Shell Script task](media/deploy-linuxvm-deploygroups/configure-shellscript-task.png)
+   
+   See a [sample deploy.sh file](https://github.com/azure-devops/fabrikam-node/blob/master/deployscript.sh) for a Node.js web app.   
 
 1. Save the release pipeline.
 

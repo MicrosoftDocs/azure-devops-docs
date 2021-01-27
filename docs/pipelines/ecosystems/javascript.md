@@ -634,7 +634,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs: 
-    pathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
+    PathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
     ArtifactName: 'www' # output artifact named www
 ```
 
@@ -960,7 +960,7 @@ steps: # Checking out connected repo
 
 - task: PublishBuildArtifacts@1 
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
     artifactName: npm
   displayName: 'Publish npm artifact'
 

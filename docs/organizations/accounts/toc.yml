@@ -5,7 +5,7 @@
 - name: Create your organization 
   href: create-organization.md 
 - name: Add and manage banners 
-  href:  ../settings/manage-banners.md 
+  href:  ../settings/manage-banners.md
 - name: Adjust organization settings
   items:
   - name: Add privacy policy URL
