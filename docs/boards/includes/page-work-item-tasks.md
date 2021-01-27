@@ -6,7 +6,7 @@ ms.topic: include
 ::: moniker range="azure-devops"
 
 - [**Work items**](/azure/devops/boards/work-items/view-add-work-items): Use to quickly find work items assigned to you or pivot or filter work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
-- [**Boards**](azure/devops/boards/boards/kanban-quickstart): Use to implement Kanban practices and visualize the flow of work for a team. 
+- [**Boards**](/azure/devops/boards/boards/kanban-quickstart): Use to implement Kanban practices and visualize the flow of work for a team. 
 - [**Backlogs**](/azure/devops/boards/backlogs/create-your-backlog): Use to plan, prioritize, and organize the work for a team to do within a product or [portfolio backlogs](/azure/devops/boards/backlogs/organize-backlog).  
 - [**Sprints**](/azure/devops/boards/sprints/assign-work-sprint): Use to plan work for a team to perform during a specific time frame referred to as a sprint. 
 - [**Queries**](/azure/devops/boards/queries/view-run-query): Use to define a set of filter criteria to list work items for the purposes of sharing with others or performing bulk updates. 
@@ -19,7 +19,7 @@ ms.topic: include
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 - [**Work items**](/azure/devops/boards/work-items/view-add-work-items): Use to quickly find work items assigned to you or pivot or filter work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.
-- [**Boards**](azure/devops/boards/boards/kanban-quickstart): Use to implement Kanban practices and visualize the flow of work for a team. 
+- [**Boards**](/azure/devops/boards/boards/kanban-quickstart): Use to implement Kanban practices and visualize the flow of work for a team. 
 - [**Backlogs**](/azure/devops/boards/backlogs/create-your-backlog): Use to plan, prioritize, and organize the work for a team to do within a product or [portfolio backlogs](/azure/devops/boards/backlogs/organize-backlog).  
 - [**Sprints**](/azure/devops/boards/sprints/assign-work-sprint): Use to plan work for a team to perform during a specific time frame referred to as a sprint. 
 - [**Queries**](/azure/devops/boards/queries/view-run-query): Use to define a set of filter criteria to list work items for the purposes of sharing with others or performing bulk updates. 
