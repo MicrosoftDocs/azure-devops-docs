@@ -3,12 +3,11 @@ title: Add a time-in-state measure to a Power BI report
 titleSuffix: Azure DevOps
 description: Sample report that shows how to add a time-in-state measure to an existing Power BI report based on Analytics for Azure DevOps 
 ms.technology: devops-analytics
-ms.assetid: 
-ms.reviewer: angurusw
 ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 12/18/2020
 ---
 
 # Calculate time-in-state for an existing Analytics view
@@ -40,6 +39,8 @@ This article provides a series of recipes using DAX calculations to evaluate tim
 > * Power BI default aggregations are used whenever possible instead of building measures.  
 > * Some calculations will include +0 to ensure that a numeric value is included for every row instead of BLANK.
 > You may need to revise some of the calculated column definitions based on the workflow states used by your project. For example, if your project uses 'New", 'Active' and 'Closed' in place of 'Proposed', 'In Progress', and 'Completed'. 
+
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Add the *Work Items Count* measure 
 
@@ -113,7 +114,7 @@ The following steps will help you resolve this issue.
     > [!div class="mx-imgBorder"]  
     > ![Data view, Select state field](media/time-in-state-state-field-sort.png)
 
-4. From the **Modeling** tab, choose **Sort by Column** and then select the *State Sort Order* field.
+4. From the **Column Tools** tab (Data view), choose **Sort by Column** and then select the *State Sort Order* field.
 
     > [!div class="mx-imgBorder"]  
     > ![Modeling tab, Sort by Column, Choose State Sort Order](media/time-in-state-state-order-sort.png)

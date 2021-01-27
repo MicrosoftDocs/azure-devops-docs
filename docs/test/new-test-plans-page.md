@@ -15,19 +15,16 @@ monikerRange: '>=azure-devops-2020'
 
 [!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
-A new Test Plans Page (Test Plans*) for your planned testing needs is available for all Azure DevOps Services organizations. The new page provides you with streamlined views to help you focus on the task at hand - be it test planning, authoring, execution, or tracking. It is also clutter-free and consistent with the rest of Azure DevOps offering. We hope that you find it easy and intuitive to use.
+A new Test Plans Page (Test Plans*) for your planned testing needs is available for Azure DevOps Services and Azure DevOps Server 2020. The new page provides you with streamlined views to help you focus on the task at hand - be it test planning, authoring, execution, or tracking. It is also clutter-free and consistent with the rest of Azure DevOps offering. We hope that you find it easy and intuitive to use.
 
-This new page has been in public preview for past few quarters and has been made default for all Test Plans users. During this time, we have continued to add the missing features/capabilities and address the feedback you have been providing us. We are almost towards the end of this journey and now are ready to pull out the old page by **the end of November 2020**. We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the following steps:
+This new page has been in public preview for past few quarters and is the default for all Test Plans users. During this time, we have continued to add the missing features/capabilities and address the feedback you have been providing us. We are almost towards the end of this journey and now are ready to pull out the old page by **the end of November 2020**. We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the information provided in [Manage or enable features](../project/navigation/preview-features.md).
 
-1. Sign-in into your Azure DevOps Services organization
-2. Click on your Avatar on the top right and navigate to "Preview Features"
-3. Disable the 'New Test Plans Page' feature and navigate to Test Plans > Test Plans in your project of choice.
+## Overview
 
-    :::image type="content" source="media/new-test-plans-page/enable-preview-feature.png" alt-text="test plans preview":::
 
-> Any action performed in either page will reflect on the other too since their backend store is the same.
+> [!NOTE]   
+> Any action performed in either page will reflect on the other too since the backend data store is the same.
 
-***Help me understand the new page***
 
 :::image type="content" source="media/new-test-plans-page/test-plan-overview.png" alt-text="test plan overview page":::
 
@@ -43,6 +40,7 @@ Lets take a broad stroke view of these new sections below.
 
 
 <a name="testplanheader"></a>
+
 ## Test plan header
 
 :::image type="content" source="media/new-test-plans-page/test-plan-header.png" alt-text="test plan header page":::
@@ -77,6 +75,7 @@ For more guidelines on Test Plans usage, refer [here](/archive/blogs/visualstudi
 
 
 <a name="testsuitestree"></a>
+
 ## Test suites tree
 
 :::image type="content" source="media/new-test-plans-page/test-suites-tree.png" alt-text="test suites tree page":::
@@ -114,6 +113,7 @@ It is now easier to reuse the suites you have created already and import them in
 
 
 <a name="definetab"></a>
+
 ## Define tab
 
 :::image type="content" source="media/new-test-plans-page/define-tab-toolbar.png" alt-text="define tab page":::
@@ -169,6 +169,7 @@ Traceability among test artifacts, requirements and bugs is a critical value pro
 
 
 <a name="executetab"></a>
+
 ## Execute tab
 
 :::image type="content" source="media/new-test-plans-page/execute-tab-toolbar.png" alt-text="execute tab page":::
@@ -211,6 +212,7 @@ The context menu on the Test point node within the Execute tab provides the foll
 :::image type="content" source="media/new-test-plans-page/execute-tab-execution-history.png" alt-text="execute tab execution history":::
 
 <a name="feedback"></a>
+
 ## Provide feedback
 Thank you for all the feedback you have provided on this page. We have tried to address most of the feedback submitted and have filled all the functionality gaps. As such, we are reaching towards the end of this journey and plan to pull out the old page soon. 
 

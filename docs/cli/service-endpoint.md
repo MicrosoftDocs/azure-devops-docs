@@ -23,7 +23,7 @@ You can use the `az devops service-endpoint` command to create different types o
 
 To create a GitHub service endpoint, use the following command:
 
-``` bash
+```azurecli
 az devops service-endpoint github create
 ```
 
@@ -33,7 +33,7 @@ In interactive mode, the `az devops service-endpoint github create` command asks
 
 To create a an Azure RM service endpoint, use the following command:
 
-```bash
+```azurecli
 az devops service-endpoint azurerm create
 ```
 
@@ -63,7 +63,7 @@ openssl pkcs12 -in file.pfx -out file.pem -nodes -password pass:<password_here>
 
 The Azure DevOps CLI extension supports creation of any type of service endpoint. 
 
-```bash
+```azurecli
 az devops service-endpoint create
 ```
 

@@ -2,7 +2,7 @@
 title: Tools and clients that connect - Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Understand the tools that support connecting to Azure DevOps 
+description: Understand the tools that support connecting to Azure DevOps. 
 ms.technology: devops-new-user 
 ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
 ms.author: chcomley
@@ -29,7 +29,7 @@ Developers have access to many tools through these versions of Visual Studio and
 - **Visual Studio Professional**: Development tools and services to support individual developers or small teams.
 - **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size, and with a need to scale. It supports designing, building, and managing complex enterprise applications.
 - **Visual Studio Test Professional**: Provides access to Microsoft Test and development tools to support quality and collaboration throughout the development process.
-- **Visual Studio Team Explorer**: Free solution for non-developers to interact with Team Foundation Server and Visual Studio Team Services.  
+- **Visual Studio Team Explorer**: Free solution for non-developers to interact with Azure DevOps.  
 - **[Eclipse/Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)**: Free plug in to support teams running Eclipse on Linux, macOS, or Windows that connects to Azure DevOps.  
 - **[Android Studio with the Azure DevOps Services Plug-in for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)**: Free plug in to support Android developers and connect to Git repositories on Azure DevOps.
 - **[IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)**: Free plug in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on Azure DevOps.
@@ -54,7 +54,6 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
 - [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to additional features, such as a project calendar, Gantt charts, and resource views.
-- [Project Professional](https://www.projectmanager.com/pm/microsoft-project-cs): With Project Professional, project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
 
 > [!IMPORTANT]
 > Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Microsoft Project. Project integration and the TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. However, you can continue to use Microsoft Excel.
@@ -65,7 +64,6 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 
 - [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md): Use Excel to add and bulk modify work items.  
 - [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to additional features, such as a project calendar, Gantt charts, and resource views.
-- [Project Professional](https://www.projectmanager.com/pm/microsoft-project-cs): With Project Professional, project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
 - [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md): Illustrate user stories and requirements by using PowerPoint.
 
 > [!TIP]

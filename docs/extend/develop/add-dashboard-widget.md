@@ -181,7 +181,7 @@ You can name these images however you want as long as the extension manifest in 
 
 * ***Every*** extension must have an extension manifest file
 * Read the [extension manifest reference](./manifest.md)
-* Find out more about the contribution points in the [extension points reference](/previous-versions/azure/devops/docs/extend/reference/targets/overview)
+* Find out more about the contribution points in the [extension points reference](/previous-versions/azure/devops/extend/reference/targets/overview)
 
 Create a json file (`vss-extension.json`, for example) in the `home` directory with the following contents:
 
@@ -265,7 +265,7 @@ Each contribution entry defines [properties](./manifest.md#contributions).
 | previewImageUrl    | Relative path of the preview image that you added in [Step 4](#image) to display in the widget catalog for TFS 2015 Update 3 only. The image should be 330 px x 160 px. If you've used a different folder structure or a different file name, then specify the appropriate relative path here. |  
 | uri                | Relative path of the HTML file that you added in [Step 1](#step-1-files). If you've used a different folder structure or a different file name, then specify the appropriate relative path here. |  
 | supportedSizes | Array of sizes supported by your widget. When a widget supports multiple sizes, the first size in the array is the default size of the widget. The `widget size` is specified for the rows and columns occupied by the widget in the dashboard grid. One row/column corresponds to 160 px. Any dimension above 1x1 gets an additional 10 px that represent the gutter between widgets. For example, a 3x2 widget is `160*3+10*2` wide and `160*2+10*1` tall. The maximum supported size is `4x4`.  |  
-| supportedScopes | At the moment, we support only team dashboards. The value has to be `project_team`. In the future, when we support other dashboard scopes, there will be more options to choose from here. |  
+| supportedScopes | At the moment, we support only team dashboards. The value has to be `project_team`. In the future, when we support other dashboard scopes, there'll be more options to choose from here. |  
 
 
 #### Files
@@ -975,7 +975,7 @@ To support configuration, the widget contribution needs to be changed as well. T
 <`publisher`>.<`id for the extension`>.<`id for the configuration contribution`> which in this case is `fabrikam.vsts-extensions-myExtensions.HelloWorldWidget.Configuration`. 
 
 > [!WARNING]  
-> If the contribution entry for your configurable widget doesn&#39;t target the configuration using the right publisher and extension name as described above, the configure button doesn&#39;t show up for the widget. 
+> If the contribution entry for your configurable widget doesn&#39;t target the configuration using the right publisher and extension name as described previously, the configure button doesn&#39;t show up for the widget. 
 
 At the end of this part, the manifest file should contain three widgets and one configuration. You can get the complete manifest from the sample [here](https://github.com/Microsoft/vso-extension-samples/blob/master/widgets/vss-extension.json).
 
@@ -1046,7 +1046,7 @@ The extension manifest for the third sample in this guide would look like the be
 }
 ```
 
-With the above change, [repackage](#package-the-extension) and [update](../publish/overview.md#update-an-extension) your extension. Refresh the dashboard that has this widget (Hello World Widget 3 (with config)). 
+With the previous change, [repackage](#package-the-extension) and [update](../publish/overview.md#update-an-extension) your extension. Refresh the dashboard that has this widget (Hello World Widget 3 (with config)). 
 Open the configuration mode for your widget, you should now be able to see the option to change the widget name and size.
 
 ![Widget where name and size can be configured](../media-procedures/add-dashboard-widget/sampleConfigureNameAndSize.png)

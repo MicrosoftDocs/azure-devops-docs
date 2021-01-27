@@ -187,7 +187,7 @@ The default retention policy for all release definitions is 60 days. By default,
 
 At this point, the retention policies for release management are independent from builds. In a future version, we will help you retain builds based on their usage in release management.
 
-For more information, see [documentation](https://aka.ms/rmpreview) for release management. You can track all of the new features as and when they get deployed in the [What's new section](/azure/devops/release/getting-started/release-notes). Have a question? Follow us on Twitter (@vsreleasemgmt).
+For more information, see [documentation](/azure/devops/pipelines/get-started/what-is-azure-pipelines) for release management. You can track all of the new features as and when they get deployed in the [What's new section](/azure/devops/release/getting-started/release-notes). Have a question? Follow us on Twitter (@vsreleasemgmt).
 
 ## UI extensibility for release management
 

@@ -3,6 +3,8 @@
   href: index.yml
 - name: About settings
   href: ./settings/about-settings.md
+- name: Search settings
+  href: ./settings/search-settings.md
 - name: Get started as an administrator
   href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Security, membership, & access
@@ -39,6 +41,8 @@
   items:
   - name: Usage & rate limits 
     href: ../integrate/concepts/rate-limits.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Monitor usage
+    href: ./accounts/usage-monitoring.md
   - name: Work tracking, process, & project limits 
     href: ./settings/work/object-limits.md
 - name: Extensions
@@ -79,32 +83,6 @@
   items:
   - name: View storage
     href: ../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Troubleshooting
-  items:
-  - name: User & permissions management
-    href: ./accounts/faq-user-and-permissions-management.md
-  - name: Trace permissions
-    href: ./security/faq-trace-permissions.md
-  - name: Authenticate & invite with GitHub
-    href: ./security/faq-github-authentication.md
-  - name: Access with Azure AD
-    href: ./accounts/faq-azure-access.md
-  - name: Set up Visual Studio
-    href: ./accounts/faq-set-up-vs.md
-  - name: Resolve connection issues
-    href: ../user-guide/troubleshoot-connection.md
-  - name: "TF31002: Unable to connect"
-    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Projects & organizations
-    items:
-    - name: Create a project
-      href: ./projects/faq-create-project.md
-    - name: Rename a project
-      href: ./projects/faq-rename-project.md
-    - name: Add administrators
-      href: ./accounts/faq-user-and-permissions-management.md
-    - name: Organization settings
-      href: ./accounts/faq-configure-customize-organization.md
 - name: REST API reference
   items:
   - name: Notifications

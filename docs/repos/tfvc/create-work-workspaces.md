@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 Your workspace is your local copy of the team's codebase. This is where you develop and test your code in isolation until you are ready to check in your work. In most cases the only workspace you need is created automatically for you and you don't have to edit it.
 
-In some cases, you might want to modify your workspace or create multiple workspaces to isolate and switch among the changes you are making in different [branches](use-branches-isolate-risk-team-foundation-version-control.md).
+In some cases, you might want to modify your workspace or create multiple workspaces to isolate and switch among the changes you are making in different [branches](./branching-strategies-with-tfvc.md).
 
 ## Add, edit, or remove a workspace
 

@@ -47,6 +47,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>arguments</code><br/>Arguments</td><td>Arguments to the selected command. For example, build configuration, output folder, runtime. The arguments depend on the command selected<br/>Note: This input only currently accepts arguments for <code>build</code>, <code>publish</code>, <code>run</code>, <code>test</code>, <code>custom</code>. If you would like to add arguments for a command not listed, use <code>custom</code>.</td></tr>
 <tr><td><code>projects</code><br/>Path to project(s)</td><td>The path to the csproj file(s) to use. You can use wildcards (e.g. <code>&ast;&ast;/&ast;.csproj</code> for all .csproj files in all subfolders).</td></tr>
 <tr><td><code>noCache</code><br/>Disable local cache</td><td>Prevents NuGet from using packages from local machine caches.</td></tr>
+<tr><td><code>restoreArguments</code><br/>Restore arguments</td><td>Write the additional arguments to be passed to the <code>restore</code> command.</td></tr>
 <tr><td><code>packagesDirectory</code><br/>Destination directory</td><td>Specifies the folder in which packages are installed. If no folder is specified, packages are restored into the default NuGet package cache<br/>Argument aliases: <code>restoreDirectory</code></td></tr>
 <tr><td><code>buildProperties</code><br/>Additional build properties</td><td>Specifies a list of <code>token = value</code> pairs, separated by semicolons, where each occurrence of $token$ in the .nuspec file will be replaced with the given value. Values can be strings in quotation marks</td></tr>
 <tr><td><code>verbosityPack</code><br/>Verbosity</td><td>Specifies the amount of detail displayed in the output for the <code>pack</code> command.</td></tr>
@@ -64,12 +65,12 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>includesymbols</code><br/>Include Symbols</td><td>Additionally creates symbol NuGet packages. Corresponds to the <code>--include-symbols</code> command line parameter.</td></tr>
 <tr><td><code>includesource</code><br/>Include Source</td><td>Includes source code in the package. Corresponds to the <code>--include-source</code> command line parameter.</td></tr>
 <tr><td><code>publishWebProjects</code><br/>Publish Web Projects</td><td>If `true`, the `projects` property value will be skipped and the task will try to find the web projects in the repository and run the publish command on them. Web projects are identified by presence of either a web.config file or wwwroot folder in the directory. Note that this argument defaults to `true` if not specified.</td></tr>
-<tr><td><code>zipAfterPublish</code><br/>Zip Published Projects</td><td>If `true`, folder created by the publish command will be zipped.</td></tr>
+<tr><td><code>zipAfterPublish</code><br/>Zip Published Projects</td><td>If `true`, folder created by the publish command will be zipped and deleted.</td></tr>
 <tr><td><code>modifyOutputPath</code><br/>Add project name to publish path</td><td>If `true`, folders created by the publish command will have project file name prefixed to their folder names when output path is specified explicitly in arguments. This is useful if you want to publish multiple projects to the same folder.</td></tr>
 <tr><td><code>publishTestResults</code><br/>Publish test results</td><td>Enabling this option will generate a test results TRX file in <code>$(Agent.TempDirectory)</code> and results will be published to the server. <br>This option appends <code>--logger trx --results-directory $(Agent.TempDirectory)</code> to the command line arguments.<br>Code coverage can be collected by adding <code>--collect "Code coverage"</code> to the command line arguments. This is currently only available on the Windows platform.</td></tr>
 <tr><td><code>testRunTitle</code><br/>Test run title</td><td>Provides a name for the test run</td></tr>
 <tr><td><code>custom</code><br/>Custom command</td><td>The command to pass to dotnet.exe for execution.<br/>For a full list of available commands, see the <a href="/dotnet/core/tools/?tabs=netcore2x#cli-commands" data-raw-source="[dotnet CLI documentation](/dotnet/core/tools/?tabs=netcore2x#cli-commands)">dotnet CLI documentation</a></td></tr>
-<tr><td><code>feedRestore</code><br/>Use packages from this Azure Artifacts/TFS feed</td><td>Include the selected feed in the generated NuGet.config. You must have Package Management installed and licensed to select a feed here.  Note that this is not supported for the test command.<br/>Argument aliases: <code>vstsFeed</code></td></tr>
+<tr><td><code>feedRestore</code><br/>Use packages from this Azure Artifacts/TFS feed</td><td>Include the selected feed in the generated NuGet.config. You must have Package Management installed and licensed to select a feed here. projectName/feedName for project-scoped feed. FeedName only for organization-scoped feed. Note that this is not supported for the test command.<br/>Argument aliases: <code>vstsFeed</code></td></tr>
 <tr><td><code>includeNuGetOrg</code><br/>Use packages from NuGet.org</td><td>Include NuGet.org in the generated NuGet.config000
 0.
 </td></tr>
@@ -165,12 +166,25 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet publish'
   inputs:
-    command: publish
+    command: 'publish'
     publishWebProjects: false
     projects: '**/*.csproj'
     arguments: '-o $(Build.ArtifactStagingDirectory)/Output'
     zipAfterPublish: true
     modifyOutputPath: true
+```
+## Restore
+
+```YAML
+#Restore packages with the .NET Core CLI task
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet restore'
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    feedRestore: 'projectName/feedName'
+    projects: '**/*.csproj'
+    includeNuGetOrg: true
 ```
 
 ## Test

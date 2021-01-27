@@ -1,6 +1,6 @@
 ---
 title: Deploy an Azure Pipelines agent on Windows
-ms.custom: contentperfq1
+ms.custom: contperf-fy21q1
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
