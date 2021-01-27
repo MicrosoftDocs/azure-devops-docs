@@ -97,6 +97,7 @@ We recommend setting this option to **True** at the global level. Valid settings
 
 #### [Visual Studio](#tab/visual-studio/)
 Requires Visual Studio 2017 Update 5 and later.
+
 In Team Explorer, go to **Settings**. Go to **Global Settings** and set **Prune remote branches during fetch** to **True** (recommended). Select **Update** to save.
 
 :::image type="content" source="media/git-config/visual-studio-prune-remote-branches-setting.png" alt-text="Screenshot that shows 'Prune remote branches during fetch' highlighted and with 'True' selected from the drop-down.":::    
