@@ -97,9 +97,9 @@ We recommend setting this option to **True** at the global level. Valid settings
 
 #### [Visual Studio](#tab/visual-studio/)
 Requires Visual Studio 2017 Update 5 and later.
-1. In Team Explorer, go to **Settings**. Go to **Global Settings** and set **Prune remote branches during fetch** to **True** (recommended). Select **Update** to save.
+In Team Explorer, go to **Settings**. Go to **Global Settings** and set **Prune remote branches during fetch** to **True** (recommended). Select **Update** to save.
 
-    :::image type="content" source="media/git-config/visual-studio-prune-remote-branches-setting.png" alt-text="Screenshot that shows 'Prune remote branches during fetch' highlighted and with 'True' selected from the drop-down.":::    
+:::image type="content" source="media/git-config/visual-studio-prune-remote-branches-setting.png" alt-text="Screenshot that shows 'Prune remote branches during fetch' highlighted and with 'True' selected from the drop-down.":::    
 
 
 #### [Command Line](#tab/command-line/)
@@ -156,7 +156,7 @@ Requires Visual Studio 2017 Update 7 and later.
 
 2. Set **Cryptographic network provider** to the desired value, and select **Update** to save.
 
-    :::image type="content" source="media/git-config/visual-studio-cryptographic-network-setting.png" alt-text="Screenshot that shows 'Cryptographic network provider' highlighted with 'Open S S L' selected from the drop-down.":::
+    :::image type="content" source="media/git-config/visual-studio-cryptographic-network-setting.png" alt-text="Screenshot that shows 'Cryptographic network provider' highlighted with 'OpenSSL' selected from the drop-down.":::
 
 
 #### [Command Line](#tab/command-line/)
