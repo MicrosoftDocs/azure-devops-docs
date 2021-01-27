@@ -118,7 +118,7 @@ As the number of queued builds and releases exceeds the number of parallel jobs 
 
 ### View job history using the pool consumption report
 
-You can use the **Pool consumption report**, available on the **Analytics** tab of your agent pool, to see a chart of running and queued jobs graphed with your parallel jobs for the previous 30 days. If you have a backlog of queued jobs and your running jobs are at the concurrency limit, you may wish to purchase more parallel jobs. For more information, see [Historical graphs for agent pools](../agents/historical-graph-pools.md).
+You can use the **Pool consumption report**, available on the **Analytics** tab of your agent pool, to see a chart of running and queued jobs graphed with your parallel jobs for the previous 30 days. If you have a backlog of queued jobs and your running jobs are at the concurrency limit, you may wish to purchase more parallel jobs. For more information, see [Pool consumption report](../agents/pool-consumption-report.md).
 
 :::image type="content" source="../agents/media/historical-graph-pools/historical-graph-azure-pipelines.png" alt-text="Microsoft-hosted agent pool historical graph":::
 
