@@ -454,7 +454,7 @@
     href: agents/pools-queues.md
     displayName: queue, default, hosted, maintenance
   - name: Historical agent pool usage
-    href: agents/historical-graph-pools.md
+    href: agents/pool-consumption-report.md
   - name: Microsoft-hosted agents
     href: agents/hosted.md
   - name: Self-hosted Linux agents
