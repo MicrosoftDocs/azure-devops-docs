@@ -9,7 +9,7 @@ monikerRange: '<= azure-devops'
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 01/25/2021
+ms.date: 01/26/2021
 ---
 
 # Define a query
@@ -17,6 +17,17 @@ ms.date: 01/25/2021
 [!INCLUDE [temp](../includes/version-all.md)]
 
 Work item queries are managed queries that you can define, save, and share with others. This is in contrast with semantic searches that list work items, but can't be saved or shared. Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
+
+#### [Browser](#tab/browser/) 
+> [!div class="mx-imgBorder"]  
+> ![Query Editor, web browser.](media/using-queries/query-editor.png)  
+ 
+#### [Visual Studio](#tab/visual-studio/)
+> [!div class="mx-imgBorder"]  
+> ![Query Editor, Visual Studio.](media/using-queries/visual-studio-new-query-editor.png)  
+
+***
+
 
 > [!NOTE]  
 > To define queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
