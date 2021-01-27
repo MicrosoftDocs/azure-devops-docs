@@ -19,17 +19,47 @@ ms.date: 11/11/2020
 
 With Azure DevOps, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client/server model. Many of them are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build pipelines, and work tracking, can also be managed through a client.  
 
-Access web services through the following areas, as shown in the following image.
 
 ::: moniker range=">= azure-devops-2019"
 
-![Azure DevOps Services, main](media/services-hubs-vert.png)
+You access Azure DevOps services through the left pane, as shown in the following image. To jump to information for each major service, see the associated articles. 
+
+---
+:::row:::
+   :::column span="1":::
+      ![Azure DevOps Services, main](media/services-hubs-vert.png)
+   :::column-end:::
+   :::column span="1":::
+      - [Dashboards](../report/dashboards/overview.md) 
+      - [Wiki](../project/wiki/about-readme-wiki.md)
+      - [Boards](../boards/get-started/what-is-azure-boards.md)
+      - [Repos](..//repos/get-started/what-is-repos.md)
+      - [Pipelines](../pipelines/get-started/pipelines-get-starteds.md)
+      - [Test Plans](../test/overview.md)
+      - [Artifacts](../artifacts/overview.md)
+   :::column-end:::
+:::row-end:::
+---
+
+
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![Azure DevOps Services, main](../media/services-hubs.png)  
+You access TFS services through the top navigational bar, as shown in the following image. To jump to information for each major service, see the associated articles. 
+
+![Azure DevOps Services, main](../media/services-hubs.png) 
+
+- [Dashboards](../report/dashboards/overview.md) 
+- [Code](../repos/get-started/what-is-repos.md)
+- [Work](../boards/get-started/what-is-azure-boards.md)
+- [Build & Release](../pipelines/get-started/pipelines-get-starteds.md)
+- [Test](../test/overview.md)
+- [Wiki](../project/wiki/about-readme-wiki.md)
+   :::column-end:::
+:::row-end:::
+---
 
 ::: moniker-end
 
