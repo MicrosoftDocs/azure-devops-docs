@@ -3165,11 +3165,6 @@ View releases
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
-
-If you are working with the Release Management client and server supported for TFS 2015, see [Automate deployments with Release Management](../../pipelines/archive/release/previous-version/release-management-overview.md).
-
-::: moniker-end
 
 
 ::: moniker range=">= tfs-2017"
