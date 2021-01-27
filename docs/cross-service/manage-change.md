@@ -43,8 +43,10 @@ Very briefly, for the purposes of this article, valid changes can occur from a n
 - Resources change, organizations change  
 - New dependencies are discovered  
 
-Less valid changes that can occur and contribute to scope creep include - many of these arise as Agile culture hasn't been completely adopted.  
-- A team member is unclear on a requirement or project scope or acceptance criteria
+### Minimize these types of changes
+
+Less valid changes that can occur and contribute to scope creep include the following. Many of these types of changes arise when an Agile culture hasn't been completely adopted.  
+- A team member is unclear on a requirement, project scope, or acceptance criteria
 - A team member is focused on developing what they believe to be best rather than what is required 
 - One or more team members make decisions without communicating with others 
 - Requirements aren't clearly articulated 
@@ -52,12 +54,13 @@ Less valid changes that can occur and contribute to scope creep include - many o
 - No agreement within the team on how to handle change
 - Poor estimates
 - New requests aren't negotiated
-- Stakeholders and customer input isn't sought out early enou, well enough, complete
+- Stakeholders and customer input isn't sought out early enough or well enough
 - Team members don't raise issues proactively 
-- Testing takes longer than expected 
+- Testing takes longer than expected. 
  
+### Adopt best change management practices
 
-Best change management practices must be integrated into the organization culture. 
+To avoid some of these undesirable changes, you'll want to integrate these best change management practices into your organization culture. 
 - Continuous improvement 
 - Adoption of Agile practices and an entrepreneurial mindset  
 - Transparent operations
@@ -68,44 +71,23 @@ Best change management practices must be integrated into the organization cultur
 - Senior leader engagement
  
 
-B- usiness Case for Action to define what the change is
-- From-To Definition to identify gaps between “is” and “will be”
-- Key Role Mapping to identify where Sponsors are needed, and who specifically these individuals are by name
-- Readiness Planning to have strategies and tactics available to manage resistance
-- Communication Planning by audience, with feedback loops to gather feedback that identifies potential sources of resistance
-
-Minimize these types of change: 
-- Poorly understood acceptance criteria 
-- what more? 
-
-Log change to the backlog or change tracker
-Eliminate as many approvals as possible
-Have a light change control form, if necessary
-Keep the stakeholders and operations involved
-
-
 ## Goals for managing change
 
 Agile project managers focus on the following goals when managing change: 
 
-- Ensure customer needs are being met
-- Control scope changes, minimize scope creep 
+- Ensure customer needs are understood and properly scoped and communicated   
+- Control scope changes and minimize scope creep  
+- Meet business objectives  
+- Meet organization, team, and human objectives  
+- Keep everyone informed  
+- Develop contingency plans in the event of change  
+- Identify planned, completed, and incomplete work  
+- Support a change management process  
+- Assist teams in their continual improvement processes  
 
-- Complete on time and within budget  
-- Meet customer needs, requirements 
-- Meet business objectives 
-- Meet human objectives - organization, team objectives 
-- Keep everyone informed 
-
-- Develop contingency plans in the event of change 
-- Identify planned, completed, and incomplete work
-- Support a change management process
-
-- Assist teams in their continual improvement processes 
 
 > [!NOTE]
 > *What is Scope creep? Scope creep occurs when the deliverables or features of a project expand from what was originally defined, without a commensurate change in additional time or budget.*  
- 
  
 ## Best practices for managing change
 
@@ -118,7 +100,7 @@ Keep the process lightweight and eliminate as much waste as possible.
 - Have a light change control form as needed
 - Keep all stakeholders and teams involved
 
-#### Ensure Definition of DOne, acceptance criteria is well defined
+#### Ensure Definition of Done, acceptance criteria is well defined
 
 The Definition of Done is the criteria necessary in order to consider something done or complete. It is most often created for User Stories to ensure the team agrees what is required to finish a story, but also can be created for Sprints themselves for the team to agree on when a Sprint is done.
 
@@ -153,11 +135,11 @@ Ensures that all team members (including the Product Owner) understand what is r
 
 #### Questions to ask before accepting a change
 
-Does it serve the sprint goal?    
-Is there a clear business value for the change? 
-Upon release, sill the customer use the result of the scope change?
-What is the urgency for the change request?
-If new scope is added to the sprint backlog, is there something that can be removed? 
+- Does it serve the sprint goal?    
+- Is there a clear business value for the change? 
+- Upon release, sill the customer use the result of the scope change?
+- What is the urgency for the change request?
+- If new scope is added to the sprint backlog, is there something that can be removed? 
 
 ### Avoid scope creep  
 1. Know your project goals from the start
@@ -380,3 +362,22 @@ To learn more about any of the concepts introduced in this article, refer to the
 
 
 --> 
+
+<!---
+
+B- usiness Case for Action to define what the change is
+- From-To Definition to identify gaps between “is” and “will be”
+- Key Role Mapping to identify where Sponsors are needed, and who specifically these individuals are by name
+- Readiness Planning to have strategies and tactics available to manage resistance
+- Communication Planning by audience, with feedback loops to gather feedback that identifies potential sources of resistance
+
+Minimize these types of change: 
+- Poorly understood acceptance criteria 
+- what more? 
+
+Log change to the backlog or change tracker
+Eliminate as many approvals as possible
+Have a light change control form, if necessary
+Keep the stakeholders and operations involved
+
+-->
