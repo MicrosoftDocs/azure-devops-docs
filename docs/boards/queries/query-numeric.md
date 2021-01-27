@@ -347,7 +347,7 @@ For more information on using work items and queries, see:
 - [Query fields, operators, and macros](query-operators-variables.md)   
 - [Add work items](../backlogs/add-work-items.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md) 
-- [Create managed queries](example-queries.md)  
+- [About managed queries](about-managed-queries.md)  
 
 <a id="show-bugs"/>
 

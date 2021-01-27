@@ -8,7 +8,7 @@ ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-ms.date: 12/08/2020
+ms.date: 01/21/2021
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -22,7 +22,7 @@ The following types of users can join your organization for free:
 
 * Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
 * Unlimited users who get [Stakeholder features](https://azure.microsoft.com/services/devops/compare-features/), such as working with your backlog, work items, and queries
-* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic features. Additional features, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
+* Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic features. More features, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
 
 [Need more users with Basic features?](../billing/buy-basic-access-add-users.md)
 
@@ -34,6 +34,9 @@ The following types of users can join your organization for free:
 [!INCLUDE [prerequisites-add-users-org](../../includes/prerequisites-add-users-org.md)]
 
 ## Add users to your organization
+
+> [!WARNING]
+> If you have permission to invite users to the organization, regardless of whether the "Restrict invitations" policy is disabled, you can @mention a user who isn't part of your organization. This action invites that user to your organization.
 
 Administrators can add users to an organization, grant access to appropriate tooling extensions and service access levels,
 and add users to groups - all in one view.
@@ -189,7 +192,7 @@ For more information about user access, read [about access levels](../security/a
 
 When you add members to projects without setting up billing, they automatically get [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/), until you run out of seats available. If you add members to projects with billing already set up, they get [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/) only if your [default access level](../security/access-levels.md) is Basic. Otherwise, project members get assigned Stakeholder permissions.
 
-[Visual Studio subscribers](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), get Basic access. Additional features, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
+[Visual Studio subscribers](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), get Basic access. More features, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
 
 > [!NOTE]
 > To manually assign access levels, [add members to your organization](#add-users-to-your-organization). To control access to resources, see [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md) or see [Grant or restrict access to selected features and functions](../../organizations/security/restrict-access.md).
@@ -224,7 +227,7 @@ The Users view shows key information per user in a table. In this view, you can 
 * See and modify assigned service extensions and access levels.
 * Multi-select users and bulk edit their extensions and access.
 * Filter by searching for partial user names, access level, or extension names.
-* See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits. For more information, see Manage access with Azure AD.
+* See the last access date for each user. This information can help you choose users to remove access from or lower access to stay within your license limits. For more information, see Manage access with Azure AD.
 
 > [!NOTE]   
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -365,7 +368,7 @@ ID                                    Display Name         Email                
 
 ## Restrict users' view to organization projects
  
-If the **Project-Scoped Users well known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
+If the **Project-Scoped Users well-known group to hide settings** preview feature is enabled for the organization, users added to the **Project-scoped Users** group won't be able to access projects that they haven't been added to. To learn more, see [About projects and scaling your organization, Project-scoped User group](../../organizations/projects/about-projects.md#project-scoped-user-group). 
 
 Complete the following steps to add users to the new Project-scoped user group:
 
@@ -376,8 +379,8 @@ Complete the following steps to add users to the new Project-scoped user group:
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Permissions** > **Users**.
-4. Select the user name for whom you want to restrict views into projects.
-5. See the **Project-Scoped Users well known group to hide settings** dropdown menu, and then set to **Allow**.
+4. Select the user name for restricting views into projects.
+5. See the **Project-Scoped Users well-known group to hide settings** dropdown menu, and then set to **Allow**.
 
 6. **Save** your changes.
 

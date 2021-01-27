@@ -69,7 +69,7 @@
     - name: Resolve connection issues
       href: ../../user-guide/troubleshoot-connection.md
     - name: "TF31002: Unable to connect"
-      href: ../../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+      href: ../projects/tf31002-unable-connect-tfs.md 
 - name: Authenticate, secure applications
   items:
   - name: Authentication guidance 

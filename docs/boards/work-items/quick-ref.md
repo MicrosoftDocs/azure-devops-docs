@@ -58,7 +58,7 @@ Use this index to quickly access concepts related to work items and information 
 <li><a href="guidance/choose-process.md" data-raw-source="[Process guidance](guidance/choose-process.md)">Process guidance</a></li>
 <li><a href="../../reference/customize-work.md" data-raw-source="[Process models](../../reference/customize-work.md)">Process models</a></li>
 <br/>
-<li><a href="../queries/example-queries.md" data-raw-source="[Queries](../queries/example-queries.md)">Queries</a></li>
+<li><a href="../queries/about-managed-queries.md" data-raw-source="[Queries](../queries/about-managed-queries.md)">Queries</a></li>
 <li><a href="../backlogs/remove-delete-work-items.md#restore" data-raw-source="[Recycle bin](../backlogs/remove-delete-work-items.md#restore)">Recycle bin</a></li>
 <li><a href="../queries/share-plans.md#rich-text-fields" data-raw-source="[Rich text fields](../queries/share-plans.md#rich-text-fields)">Rich text fields</a></li>
 <li><a href="guidance/scrum-process.md" data-raw-source="[Scrum process](guidance/scrum-process.md)">Scrum process</a></li>
@@ -521,7 +521,7 @@ You customize work item types using the Inheritance process model.
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-You customize work item types using either the Inheritance process model or On-premises XML process model, depending on the selection made when [creating the project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2019) on which the project is defined.
+You customize work item types using either the Inheritance process model or On-premises XML process model, depending on the selection made when [you created the project collection](/azure/devops/server/admin/manage-project-collections) on which the project is defined.
 
 ### Inherited process model
 

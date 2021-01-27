@@ -121,7 +121,7 @@ These are the software requirements for all the agents in your environment.
 * Windows Server 2012 R2
 * Windows Server 2012
 * Windows Server 2008 R2, Service Pack 1 
-* Windows Server 2008, Service Pack 2 and [PowerShell 2.0](https://support.microsoft.com/kb/968930)
+* Windows Server 2008, Service Pack 2 and [PowerShell 2.0](/powershell/scripting/windows-powershell/install/installing-the-windows-powershell-2.0-engine)
 
 **The .NET Framework:**
 

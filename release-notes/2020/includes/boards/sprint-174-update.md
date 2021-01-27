@@ -8,7 +8,7 @@ ms.topic: include
 
 ### System work item types on backlogs and boards
 
-We [started a private preview](https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-172-update?#system-work-item-types-on-backlogs-and-boards-private-preview) of a feature that allows you to add a system work item type to the backlog level of choice. Historically these work item types have only been available from queries.
+We [started a private preview](../../sprint-172-update.md#system-work-item-types-on-backlogs-and-boards-private-preview) of a feature that allows you to add a system work item type to the backlog level of choice. Historically these work item types have only been available from queries.
 
 | Process | Work Item Type |
 | :------ | :------------- |
