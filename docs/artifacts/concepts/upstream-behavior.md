@@ -1,6 +1,6 @@
 ---
 title: Upstream behavior override
-description: Allow or block the consumption of specific package versions from public registries.
+description: Allow or block the consumption of package versions from public registries.
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 01/19/2021
@@ -11,17 +11,17 @@ monikerRange: '>= tfs-2017'
 
 # Upstream behavior override
 
-Upstream sources allow developers to use a single feed to publish and consume packages to/from Artifact feeds as well as public registries(e.g. NuGet.org, npmjs.com etc.). To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
+Upstream sources allow developers to use a single feed to publish and consume packages to/from Artifact feeds as well as public registries (e.g. NuGet.org, npmjs.com etc.). To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
 
-Azure Artifacts is introducing a new upstream behavior that will dictate which packages will be made available from the public registries.
+Azure Artifacts is introducing a new upstream behavior that will dictate which packages will be made available from the public registries for individual packages.
 
-Previously, Artifact feeds combined a list of available package versions from both the feed as well as all the upstream sources.
+Previously, Artifact feeds combined a list of available package versions from the feed and all the upstream sources.
 
-:::image type="content" source="media/previous-upstream-behavior.png" alt-text="Previous upstream sources behavior" lightbox="media/previous-upstream-behavior.png":::
+:::image type="content" source="media/previous-upstream-behavior.png" alt-text="Previous upstream sources behavior":::
 
-The new upstream behavior override will provide another layer of security by blocking the exposure to malicious packages that may infiltrate the public feeds.
+The new upstream behavior override will provide another layer of security by blocking the exposure to malicious packages that may infiltrate the public registries.
 
-With the new behavior, when a package is published to your Azure Artifacts feed, same versions of that package will not be made available from the public registry.
+With the new upstream override, when a package is published to your Azure Artifacts feed, any version from the public registry will be blocked and not made available for download.
 
 Users will still be able to toggle off the new upstream behavior override and consume packages from the public registries if they chose to do so.
 
@@ -75,7 +75,7 @@ Users can view and filter packages by **Sourced versions**.
 
 ## Enable upstream behavior override using the REST API
 
-Aside from using the feed's user interface, you can also enable the upstream behavior override using the Azure DevOps services REST API.
+Aside from using the feed's user interface, you can also enable the upstream behavior override using the Azure DevOps Services REST API.
 
 <!-- API reference link -->
 
@@ -137,3 +137,5 @@ $body = '{"versionsFromExternalUpstreams": "Auto"}'
 Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"
 ```
 
+> [!NOTE]
+> In some cases, enabling/disabling upstream override can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
