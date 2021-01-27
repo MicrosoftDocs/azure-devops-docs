@@ -62,7 +62,7 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker range=">= azure-devops-2019"
 
-![Viewing your cached packages](media/view-cached-packages-newnav.png)
+![Source is set to filter on nuget.org.](media/view-cached-packages-newnav.png)
 
 ::: moniker-end
 
@@ -74,6 +74,6 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker range=">=tfs-2017 < azure-devops"
 
-![Viewing your cached packages](media/view-cached-packages.png)
+![Filtering is on the source nuget.org.](media/view-cached-packages.png)
 
 ::: moniker-end

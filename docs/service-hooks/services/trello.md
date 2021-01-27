@@ -49,7 +49,7 @@ we're going to have the subscription respond when a work item is created.
    ![Trigger configuration page](./media/trello/trigger.png)
 
 
-1. Set up the action that Trello will take in response to the trigger -
+1. Set up the action that Trello takes in response to the trigger -
 either create a card or a list.
 
    ![Action configuration page](./media/trello/action.png)
@@ -84,7 +84,7 @@ we're going to have the subscription respond when a work item is created.
    ![Trigger configuration page](./media/trello/trigger.png)
 
 
-1. Set up the action that Trello will take in response to the trigger -
+1. Set up the action that Trello takes in response to the trigger -
 either create a card or a list.
 
    ![Action configuration page](./media/trello/action.png) 
@@ -108,7 +108,7 @@ Now it's set up. Go to Trello and see the cards appear.
 ## Placeholders
 
 You can insert placeholders in the name of a list or the name or description of a card to be created by your subscription.
-When a list or card is created, the placeholders will be replaced by values from the event that was raised.
+When a list or card is created, the placeholders get replaced by values from the event that was raised.
 The example we used for the card name in this page uses:
 
 ```

@@ -158,6 +158,8 @@ You can also view and manage work that you're following from your Project pages.
 
 ::: moniker-end 
 
+::: moniker range=">= tfs-2017"
+
 ## Query work items that you're following
 
 You can use the **\@Follows** macro in a query to filter a list based on work items you're following in addition to other query filters. 
@@ -166,6 +168,8 @@ For example, the following query shows how to query across all projects for acti
 
 
 :::image type="content" source="media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
+
+::: moniker-end 
 
 ## Try this next
 

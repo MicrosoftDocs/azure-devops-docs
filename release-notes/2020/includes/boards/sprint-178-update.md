@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Removed items on the Work Items page
 
-The [Work Items page](https://docs.microsoft.com/azure/devops/boards/work-items/view-add-work-items) is a great place to quickly find items you created or that are assigned to you, amongst other things. It provides several personalized pivots and filters. One of the top complaints for the "Assigned to me" pivot is that it displays Removed work items (that is, work items in the Removed state). And we agree! Removed items are work that is no longer of value and thus has been removed from the backlog, so including it in this view is not helpful.
+The [Work Items page](/azure/devops/boards/work-items/view-add-work-items) is a great place to quickly find items you created or that are assigned to you, amongst other things. It provides several personalized pivots and filters. One of the top complaints for the "Assigned to me" pivot is that it displays Removed work items (that is, work items in the Removed state). And we agree! Removed items are work that is no longer of value and thus has been removed from the backlog, so including it in this view is not helpful.
 
 In this sprint, we are now hiding all Removed items from the Assigned to me pivot on the Work Items page.
 

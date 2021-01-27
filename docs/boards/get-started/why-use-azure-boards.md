@@ -76,7 +76,7 @@ As your project grows, the number of work items used to track it grows. To suppo
 
 - A follow feature so you can [follow work items](../work-items/follow-work-items.md) to monitor updates and changes
 - [Pivot views](../work-items/view-add-work-items.md ) that show you work items assigned to you, that you elected to follow, were recently modified, and more  
-- A powerful [query engine](../queries/example-queries.md) that filters work item lists based on any field and used to update or triage work items
+- A powerful [query engine](../queries/about-managed-queries.md) that filters work item lists based on any field and used to update or triage work items
 - Fast, flexible [ad-hoc search](../queries/search-box-queries.md) with quick inline filters 
 - Alert management settings so you can [personalize the alerts](../../notifications/manage-your-personal-notifications.md) you receive when work items are assigned to you or are changed, or other filter criteria
 

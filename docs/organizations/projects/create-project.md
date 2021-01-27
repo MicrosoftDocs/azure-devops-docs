@@ -399,7 +399,7 @@ Connect to a project, collection, or server from your web browser.
 
 1. To view the projects defined for an organization, select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
-2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the top. Select any project to connect to that project.
+2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the upper screen. Select any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Screenshot of Open Projects, then select Create Project, preview page.](media/create-project/list-projects.png)  
@@ -425,7 +425,7 @@ Connect to a project, collection, or server from your web browser.
 
 1. To view the projects defined for an organization, select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
-2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the top. Select any project to connect to that project.
+2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the upper screen. Select any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Select any project to connect to that project.](media/create-project/list-projects.png)  
@@ -447,7 +447,7 @@ Choose the **Preview page** tab for information.
 
 1. To view the projects defined for a collection, select ![Azure DevOps logo](../../media/icons/project-icon.png) **Azure DevOps** to open the **Projects** page. 
 
-2. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the top. Choose any project to connect to that project.
+2. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the upper screen. Choose any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Select any project to connect to that project, previous versions.](media/create-project/list-projects-2019.png)  
@@ -626,7 +626,7 @@ From the admin context of the web portal, you can add additional repositories to
 
 - [Get Started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md)
 - [Git and Azure Repos](../../repos/git/index.yml)
-- [Team Foundation version control](../../repos/tfvc/index.yml)
+- [Team Foundation Version Control](../../repos/tfvc/index.yml)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
-- [Navigate in Visual Studio Team Explorer](../../user-guide/work-team-explorer.md)
+- [Go to Visual Studio Team Explorer](../../user-guide/work-team-explorer.md)
 - [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio)

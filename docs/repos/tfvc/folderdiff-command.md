@@ -174,6 +174,6 @@ C:>tf folderdiff $/serverFolder F:\localFolder /recursive /noprompt
 
 #### Other Resources
 
-[Comparing Folders and Files](compare-folders-files.md)
+[Comparing Folders and Files](./compare-files.md)
 
 [Tf Command-Line Utility Commands](/previous-versions/visualstudio/visual-studio-2010/z51z7zy0(v=vs.100))

@@ -214,13 +214,13 @@ A: This option removes the Azure DevOps or Azure AD group from any project-level
 ### Q: What determines the final access level if a user is in more than one group?
 
 A: Group rule types are ranked in the following order: Subscriber > Basic + Test Plans > Basic > Stakeholder.
-Users always get the best access level between all the group rules, including VS subscription.
+Users always get the best access level between all the group rules, including Visual Studio subscription.
 
 See the following examples, showing how the subscriber detection factors into group rules.
 
 **Example 1**: group rule gives me more access
 
-If I have a VS Pro subscription and I'm in a group rule that gives me Basic + Test Plans – what happens?
+If I have a Visual Studio Pro subscription and I'm in a group rule that gives me Basic + Test Plans – what happens?
 
 Expected: I get Basic + Test Plans because what the group rule gives me is greater than my subscription.
 
@@ -268,7 +268,7 @@ A: You're probably a guest in the Azure AD instance that backs Azure DevOps. By 
 
 First, check to see if you're an Azure AD guest:
 
-1. Go to the **Settings** section of your organization. Look at the **Azure Active Directory** section at the bottom. Make a note of the tenant that backs your organization.
+1. Go to the **Settings** section of your organization. Look at the lower **Azure Active Directory** section. Make a note of the tenant that backs your organization.
 2. Sign in to the new Azure portal, portal.azure.com. Check your user profile in the tenant from step 1. Check the **User type** value shown as follows: 
 
     ![Check user type in the Azure portal](media/faq/check-user-type-in-Azure-portal.png)
@@ -306,7 +306,7 @@ If you're an Azure AD guest, do one of the following steps:
     d. Change the **usertype** from **member** to **guest**:
 
     ```
-    PS Set-AzureADUser -objectId c<replacethe object ID for the result of the command to search> -UserType Member
+    PS Set-AzureADUser -objectId <replacethe object ID for the result of the command to search> -UserType Member
     ```
 
 <a name="users-delay"></a>

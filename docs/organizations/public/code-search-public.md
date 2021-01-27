@@ -29,7 +29,7 @@ To start your search, choose **Repos** > **Files** or other page under **Repos**
 ## View and work with search results  
 
 1. The search page shows a list of the matching code files. The selected file has all
-   instances of the search string highlighted. If you see a list of work items, ensure that **Code** is selected in the top left.
+   instances of the search string highlighted. If you see a list of work items, ensure that **Code** is selected in the upper left.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Code search results example](media/search/code-search-example.png)
@@ -39,7 +39,7 @@ To start your search, choose **Repos** > **Files** or other page under **Repos**
 	> [!div class="mx-imgBorder"]  
 	> ![Search from the title bar](media/search/code-search-filters.png)
 
-   * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`.
+   * You can find all instances of "ToDo" comments in your code by selecting `comment:` and typing `todo`.
 
    * You can search in specific locations, such as within a particular path, by using a search string such as `Driver path:MyShuttle/Server`.
 
@@ -55,7 +55,7 @@ To start your search, choose **Repos** > **Files** or other page under **Repos**
 
 ## Fine-tune your search
 
-1. Narrow your search to a specific repo, branch, file path, or code type by selecting from the drop-down lists at the top of the page.
+1. Narrow your search to a specific repo, branch, file path, or code type by selecting from the drop-down lists at the upper portion of the page.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Use drop-down lists to narrow your search](media/search/code-search-code-types.png)
@@ -71,7 +71,7 @@ To start your search, choose **Repos** > **Files** or other page under **Repos**
    > In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    > to the new browser tab.
 
-3. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
+3. Choose the filename link at the upper portion of this column to open the file in a new Code Explorer window.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the file in Code Explorer](media/search/code-search-open-file.png)

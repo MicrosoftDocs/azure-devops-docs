@@ -469,7 +469,7 @@ Ask the owner of your Azure DevOps organization to grant you permission to use t
 
 A: The Azure Pipelines pool provides all Azure DevOps organizations with cloud-hosted build agents and free build minutes each month. If you need more Microsoft-hosted build resources, or need to run more jobs in parallel, then you can either:
 
-* [Host your own agents on infrastructure that you manage](agents.md).
-* [Buy additional parallel jobs](../../organizations/billing/buy-more-build-vs.md#buy-build-release).
+* [Host your own agents on infrastructure that you manage](agents.md)
+* [Buy additional parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
 
 ::: moniker-end

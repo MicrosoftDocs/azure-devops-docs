@@ -256,7 +256,7 @@ Azure DevOps REST APIs are versioned to ensure applications and services continu
 * API versions are in the format {major}.{minor}[-{stage}[.{resource-version}]] - For example, ```1.0```, ```1.1```, ```1.2-preview```, ```2.0```.
 * While an API is in preview, you can specify a precise version of a particular revision of the API when needed (for example, ```1.0-preview.1```, ```1.0-preview.2```)
 * Once an API is released (1.0, for example), its preview version (1.0-preview) is deprecated and can be deactivated after 12 weeks.
-* During this time you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify a ```-preview``` version will be rejected.
+* During this time you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify a ```-preview``` version gets rejected.
 
 ### Usage
 
@@ -282,4 +282,4 @@ GET https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version=1.0
 
 Major API version releases align with Team Foundation Server RTM releases. For example, the `3.0` API set was introduced with Team Foundation Server 2017.
 
-A small number of undocumented version 1.0 APIs existed in Team Foundation Server 2013, but are not supported.
+A small number of undocumented version 1.0 APIs existed in Team Foundation Server 2013, but aren't supported.
