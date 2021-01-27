@@ -95,7 +95,7 @@ Test integration with the Kanban board makes it easy for teams to get started wi
 
 ### Manual and automated testing
 
-Teams that are moving from manual testing to continuous, automated testing, and have a subset of tests already automated, can execute them as part of a pipeline or on demand. Referred to as *planned testing*, automated tests can be associated to the test cases in a test plan and executed from Azure Test Plans. Once associated, these tests contribute towards the quality metrics of the corresponding requirements.
+Teams that are moving from manual testing to continuous, automated testing, and have a subset of tests already automated, can execute them as part of a pipeline or on demand. Referred to as *planned testing*, automated tests can be associated to the test cases in a test plan and executed from Test Plans. Once associated, these tests contribute towards the quality metrics of the corresponding requirements.
 
 
 ## Deploy changes into production
@@ -112,6 +112,7 @@ When you open the work item form, you can see the stages the requirement has bee
 The  **Deployment** control shows release information for those work items that have been associated to a Git commit which is part of a build being released. 
 
 #### Release view
+
 The following image illustrates the multiple environments that the release is targeting which the selected work item is associated with. 
 
 > [!div class="mx-imgBorder"]  
@@ -131,7 +132,7 @@ The work item deployment control displays the status of releases within those wo
  
 ## Requirements Traceability Matrix
 
-Requirements traceability is the ability to relate and document two or more phases of a development process, which can then be traced both forward or backward from its origin. Requirements traceability help teams to get insights into indicators such as quality of requirements or readiness to ship the requirement. A fundamental aspect of requirements traceability is association of the requirements to test cases, bugs and code changes.
+Requirements traceability relates and documents two or more phases of a development process, which can then be traced both forward or backward from its origin. Requirements traceability provides teams insights into indicators such as quality of requirements or readiness to ship requirements. A fundamental aspect of requirements traceability is association of the requirements to test cases, bugs and code changes.
 
 
 > [!NOTE]
@@ -189,6 +190,9 @@ To track the quality of work items that belong to the Requirements category. Thi
 
 
 ### Test failures
+
+Open a build or release summary to view the top failing tests report. This report provides a granular view of the top failing tests in the pipeline, along with the failure details.
+
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot of test failures.](/azure/devops/pipelines/test/media/test-analytics/test-failures.png)
