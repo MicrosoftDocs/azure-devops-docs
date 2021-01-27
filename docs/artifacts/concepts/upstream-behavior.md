@@ -139,3 +139,11 @@ Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -Content
 
 > [!NOTE]
 > In some cases, enabling/disabling upstream override can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
+
+## Related articles
+
+- [Understand upstream sources](upstream-sources.md)
+- [Set up upstream sources](../how-to/set-up-upstream-sources.md)
+- [Manage dependencies with upstream sources](../tutorials/protect-oss-packages-with-upstream-sources.md)
+- [Feeds permissions](../feeds/feed-permissions.md)
+- [Best practices](best-practices.md)
