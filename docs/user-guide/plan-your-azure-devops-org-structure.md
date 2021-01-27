@@ -136,14 +136,14 @@ When you map projects to business units, your company gets a single organization
 | **Roll-up reporting and portfolio management** |                                                              Best ability to roll up across teams and coordinate between teams.                                                              |                 Good reporting possible across projects.  More difficult for cross-project roll-up and team coordination.                  |                                                        No roll-up or coordination between organizations.                                                        |
 |             **Security/isolation**             |                                                   Can lock down assets at a team level, but default is open visibility and collaboration.                                                    |  Better ability to lock down between projects.  By default, provides good visibility within projects and good isolation across projects.   |                          Hard boundaries across organizations; excellent isolation and minimal ability to share across organizations.                           |
 |             **Context switching**              |                                                         Easiest for teams to work together and for users to switch between efforts.                                                          |                              Relatively easy for users to work together and switch contexts between efforts.                               |                                             More difficult for users having to work across different organizations.                                             |
-|            **Information overload**            |                               By default, all assets are visible to users will make use of “favorites” and similar mechanisms to avoid “information overload.”                               |                        Reduced risk of information overload; most project assets hidden across project boundaries.                         |                                        Assets across organizations are isolated, reducing risk of information overload.                                         |
+|            **Information overload**            |                               By default, all assets are visible to users who make use of “favorites” and similar mechanisms to avoid “information overload.”                               |                        Reduced risk of information overload; most project assets hidden across project boundaries.                         |                                        Assets across organizations are isolated, reducing risk of information overload.                                         |
 |          **Administrative overhead**           | Much administration is delegated down to individual teams. Easiest for user licensing and org-level administration.  Additional work may be needed if alignment is required between efforts. | Additional administration at the project level.  Additional overhead, but can be useful when projects have different administrative needs. |                   As with additional projects, there's additional administrative overhead, which enables additional flexibility between orgs.                   |
 
 ## Structure repos and version control within a project
 
 Consider the specific strategic work scoped to one of the organizations you created previously and who should have access. Use this information to name and [create a project](../organizations/projects/create-project.md). This project has a URL defined under the organization you created it in and can be accessed at https:\//dev.azure.com/{organization-name}/{project-name}.
 
-Configure your project by visiting its URL and select the **Project settings** button at the lower left of the page.
+Configure your project by visiting its URL and selecting **Project settings** at the lower left portion of the page.
 
 ![Screenshot showing the Project settings button.](../media/settings/open-project-settings-vert-brn.png)
 
@@ -188,7 +188,7 @@ The following image displays a sample of how "your company" could structure its 
 
 ### Choosing your organization administrator account type
 
-When you create an organization, the credentials that you sign in with define which identity provider your organization uses. Create your organization with a Microsoft account or Azure AD instance. Use those credentials to sign in as an administrator to your new organization at `https:\//dev.azure.com/{YourOrganization}`.
+When you create an organization, the credentials that you sign in with define which identity provider your organization uses. Create your organization with a Microsoft account or Azure AD instance. Use those credentials to sign in as an administrator to your new organization at `https://dev.azure.com/{YourOrganization}`.
 
 #### Using your Microsoft account
 

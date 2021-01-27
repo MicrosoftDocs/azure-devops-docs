@@ -748,7 +748,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
       - [Try Azure Test Plans for free](../billing/try-additional-features-vs.md)
       - [Pay for users (Basic)](../billing/buy-basic-access-add-users.md)
-      - [Buy CI/CD](../billing/buy-more-build-vs.md)
+      - [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
       - [Add a user to make purchases](../billing/add-backup-billing-managers.md)
    :::column-end:::
    :::column span="2":::

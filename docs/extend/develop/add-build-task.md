@@ -34,7 +34,7 @@ To create extensions for Azure DevOps, you need the following software and tools
   The production environment uses only [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
 - TypeScript Compiler 2.2.0 or greater, although we recommend version 4.0.2 or newer for tasks that use Node10. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
     <a name="cli"></a>
-- [Cross-platform CLI for Azure DevOps (tfx-cli)] to package your extensions.
+- [Cross-platform CLI for Azure DevOps](https://github.com/microsoft/tfs-cli) to package your extensions.
      You can install **tfx-cli** by using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.
 - A `home` directory for your project.
   The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
@@ -110,7 +110,7 @@ Tasks can use typescript versions 2.3.4 or 4.0.2. You can install the chosen typ
 npm install typescript@4.0.2 --save-dev
 ```
 
-If you skip this step, typescript version 2.3.4 will be used by default.
+If you skip this step, typescript version 2.3.4 gets used by default.
 
 #### Create tsconfig.json compiler options
 
@@ -647,7 +647,7 @@ For more help with triggers, such as CI and PR triggers, see [Specify events tha
 
 ### Pipeline stages
 
-This section will help you understand how the pipeline stages work.
+This section helps you understand how the pipeline stages work.
 
 #### Stage: Run and publish unit tests
 
@@ -703,7 +703,7 @@ After the test results have been published, the output under the tests tab shoul
     - Extension Visibility: If the extension is still in development, set the value to private. To release the extension to the public, set the value to public.
 1. Add the "Copy files" task to copy published files. Use the following inputs:
     - Contents: All of the files that need to be copied for publishing them as an artifact
-    - Target folder: The folder that the files will all be copied to
+    - Target folder: The folder that the files get copied to
        - For example: $(Build.ArtifactStagingDirectory)
 1. Add "Publish build artifacts" to publish the artifacts for use in other jobs or pipelines. Use the following inputs:
     - Path to publish: The path to the folder that contains the files that are being published.

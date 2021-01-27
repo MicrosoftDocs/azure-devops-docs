@@ -40,7 +40,7 @@ Ensure the email wasn't delivered to a different email folder, including the jun
 
 ## Locate the subscription and ensure it's enabled
 
-Go to your personal subscriptions and locate the subscription, which you feel should have produced an email. [Learn how to navigate to your personal subscriptions](navigating-the-ui.md#open-person-level).
+Go to your personal subscriptions and locate the subscription, which you feel should have produced an email. [Learn how to access to your personal subscriptions](navigating-the-ui.md#open-person-level).
 
 If the subscription is grayed-out in the user interface, then it's disabled. The following screenshot shows the first subscription enabled and the second disabled.
 
@@ -59,7 +59,7 @@ The `Skip initiator` checkbox option on a subscription causes the initiator of t
 
 ## Check "Do not deliver" setting for organization
 
-Navigate to the organization level notifications page and select **Settings**. [See how to manage notification settings](manage-team-group-global-organization-notifications.md). If the [delivery setting](#check-do-not-deliver-setting-for-your-team-or-group) is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings inherit this value. This setting alone doesn't necessarily indicate an email isn't delivered, but it could contribute to the problem. Next, see if a group or team delivery setting inherits this value and blocks delivery to your group or team.
+Go to the organization-level notifications page and select **Settings**. [See how to manage notification settings](manage-team-group-global-organization-notifications.md). If the [delivery setting](#check-do-not-deliver-setting-for-your-team-or-group) is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings inherit this value. This setting alone doesn't necessarily indicate an email isn't delivered, but it could contribute to the problem. Next, see if a group or team delivery setting inherits this value and blocks delivery to your group or team.
 
 ## Check "Do not deliver" setting for your team or group
 

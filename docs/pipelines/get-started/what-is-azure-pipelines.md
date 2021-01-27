@@ -11,12 +11,9 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-only-2015](../includes/version-tfs-only-2015.md)]
 
-The Azure Pipelines supports automatically 
-build and test of code projects to make them available to others. 
+Azure Pipelines automatically builds and tests code projects to make them available to others. 
 It works with just about any language or project type. Azure Pipelines combines continuous integration (CI) and continuous 
-delivery (CD) to constantly and consistently test and build your code 
-and ship it to any target. 
-
+delivery (CD) to constantly and consistently test and build your code and ship it to any target. 
 
 Continuous Integration (CI) is the practice used by development teams to automate the merging and testing of code.  Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix.  Automated tests execute as part of the CI process to ensure quality.  Artifacts are produced from CI systems and fed to release processes to drive frequent deployments. The Build service in TFS helps you set up and manage CI for your applications.
 
@@ -71,7 +68,7 @@ To use Azure Pipelines, you need:
 
 If you use public projects, Azure Pipelines is free. To learn more, see [What is a public project?](../../organizations/public/about-public-projects.md)
 If you use private projects, you can run up to 1,800 minutes (30 hours) of pipeline jobs for free every month.
-Learn more about how the pricing works based on [parallel jobs](../../organizations/billing/buy-more-build-vs.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json).
+Learn more about how the pricing works based on [parallel jobs](../licensing/concurrent-jobs.md).
 
 ## Why should I use Azure Pipelines?
 

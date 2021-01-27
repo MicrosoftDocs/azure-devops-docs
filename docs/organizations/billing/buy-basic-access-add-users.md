@@ -114,5 +114,5 @@ If you have more than one Azure DevOps organization, you can turn on multi-organ
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Buy CI/CD](buy-more-build-vs.md#prerequisites)
+> [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
 

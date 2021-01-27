@@ -84,10 +84,10 @@ The Wiki Git repo is referred as *TeamProjectName.wiki*. For example, if your te
 > [!NOTE]
 > If you want to provision more wikis, then you must [publish code as a wiki](publish-repo-to-wiki.md). You can set up multiple wiki repos within a single project.
 
-### How can I navigate to the Git repository?
+### How can I go to the Git repository?
 
 The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories from **Repos** or **Code**. It also isn't in the list provided from the **Project Settings > Repositories** or **Project Settings > Version Control** pages.  
-However, you can navigate to it from the following URL:
+However, you can get to it from the following URL:
 
 ::: moniker range="azure-devops"
 `https://dev.azure.com/<OrgName>/<TeamProjectName>/_git/<WikiName>` 

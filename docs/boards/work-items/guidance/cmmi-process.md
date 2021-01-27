@@ -136,7 +136,7 @@ The situations and working practices of development teams vary widely, and most 
 
 Using the CMMI template and guidance can help you achieve the aims of CMMI if you use it as part of a process improvement program. You should adapt this guidance to your own situation, which will depend on the type and history of the product that you are developing, the project's scale, the background of the team members, and accepted practices in your organization.
 
- This guidance was developed in partnership with David Anderson. For more information, see the following Web page: [David J Anderson & Associates](https://go.microsoft.com/fwlink/?LinkId=178527).  
+ This guidance was developed in partnership with David Anderson. For more information, see the following Web page: [David J Anderson & Associates](https://djaa.com/).  
 
 
 <a id="predefined-queries" />
