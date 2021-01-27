@@ -133,7 +133,7 @@ You can create a work item query (.wiq) file most easily in Team Explorer. In an
   
 ## Related articles   
 
--  [Create managed queries](../../boards/queries/example-queries.md)  
+-  [Create managed queries](../../boards/queries/about-managed-queries.md)  
 -  [Use the query editor to list and manage queries](../../boards/queries/using-queries.md)      
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)  
 -  [Work Item Query Language](../../boards/queries/wiql-syntax.md) 
