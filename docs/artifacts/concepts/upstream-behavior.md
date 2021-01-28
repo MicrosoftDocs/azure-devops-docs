@@ -1,5 +1,5 @@
 ---
-title: Upstream behavior override
+title: Upstream override
 description: Allow or block the consumption of package versions from public registries.
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -9,7 +9,7 @@ author: ramiMSFT
 monikerRange: '>= tfs-2017'
 ---
 
-# Upstream behavior override
+# Upstream override
 
 Upstream sources allow developers to use a single feed to publish and consume packages to/from Artifact feeds as well as public registries (e.g. NuGet.org, npmjs.com etc.). To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
 
@@ -19,49 +19,49 @@ Previously, Artifact feeds combined a list of available package versions from th
 
 :::image type="content" source="media/previous-upstream-behavior.png" alt-text="Previous upstream sources behavior":::
 
-The new upstream behavior override will provide another layer of security by blocking the exposure to malicious packages that may infiltrate the public registries.
+The new upstream override will provide another layer of security by blocking the exposure to malicious packages that may infiltrate the public registries.
 
 With the new upstream override, when a package is published to your Azure Artifacts feed, any version from the public registry will be blocked and not made available for download.
 
-Users will still be able to toggle off the new upstream behavior override and consume packages from the public registries if they chose to do so.
+Users will still be able to toggle off the new upstream override and consume packages from the public registries if they chose to do so.
 
 > [!NOTE]
 > The new behavior won't affect any package versions that are already in use. Those are stored in the feed's `@local` view.
 
 ## Applicable Scenarios
 
-Below are few common scenarios where the upstream behavior override comes into play to block externally sourced package versions as well as cases where no blockage to the public packages is needed.
+Below are few common scenarios where the upstream override comes into play to block externally sourced package versions along with few other cases where no blockage to the public packages is needed.
 
 ## Public versions will be blocked
 
-- **Private package version made public**: in this scenario, a team has a private package that was made public. The upstream behavior override in this case will be triggered to block any new public versions (untrusted packages). 
+- **Private package version made public**: in this scenario, a team has a private package that was made public. The upstream override in this case will be triggered to block any new public versions (untrusted packages). 
 
     :::image type="content" source="media\internal-package-made-public.png" alt-text="Internal package version made public":::
 
-- **Having both private and public packages**: in this scenario, if a team already has both private and public packages, enabling the upstream behavior override will result in blocking any new package versions from the public registry.
+- **Having both private and public packages**: in this scenario, if a team already has both private and public packages, enabling the upstream override will result in blocking any new package versions from the public registry.
 
     :::image type="content" source="media\both-private-and-public.png" alt-text="both private and public packages":::
 
 ## Public versions will not be blocked
 
-- **All packages are private**: if all existing packages are private and the team won't be consuming any public packages, the new upstream behavior override will have no effect on the team's workflow in this scenario.
+- **All packages are private**: if all existing packages are private and the team won't be consuming any public packages, the new upstream override will have no effect on the team's workflow in this scenario.
     
     :::image type="content" source="media\private-packages-only.png" alt-text="private packages only":::
 
-- **All packages are public**: if all the packages consumed are public, whether it's from the public registry or any other open-source repositories, the new upstream behavior override will have no effect on the team's workflow in this scenario.
+- **All packages are public**: if all the packages consumed are public, whether it's from the public registry or any other open-source repositories, the new upstream override will have no effect on the team's workflow in this scenario.
 
     :::image type="content" source="media\only-public-packages.png" alt-text="public packages only":::
 
-- **Public package made private**: if a public package is switched to a private package, the new upstream behavior override will have no effect on the team's workflow in this scenario.
+- **Public package made private**: if a public package is switched to a private package, the new upstream override will have no effect on the team's workflow in this scenario.
 
     :::image type="content" source="media\public-to-private.png" alt-text="switched from public to private":::
 
-## Enable upstream behavior override
+## Enable upstream override
 
 > [!NOTE]
-> Only feed owners are allowed to enable/disable upstream behavior override. See [Feed permissions](../feeds/feed-permissions.md) for more details.
+> Only feed owners are allowed to enable/disable upstream override. See [Feed permissions](../feeds/feed-permissions.md) for more details.
 
-To enable the new upstream behavior override, select a package from within your feed then select the toggle button to **Allow external sourced versions**.
+To enable the new upstream override, select a package from within your feed then select the toggle button to **Allow external sourced versions**.
 
 :::image type="content" source="media\allow-external-sourced-versions.png" alt-text="Allow external sourced versions toggle button":::
 
@@ -73,13 +73,13 @@ Users can view and filter packages by **Sourced versions**.
 - **Mixed**: both internal and external package versions.
 -->
 
-## Enable upstream behavior override using the REST API
+## Enable upstream override using the REST API
 
-Aside from using the feed's user interface, you can also enable the upstream behavior override using the Azure DevOps Services REST API.
+Aside from using the feed's user interface, you can also enable the upstream override using the Azure DevOps Services REST API.
 
-<!-- API reference link -->
+< API reference link >
 
-## Enable upstream behavior override with PowerShell
+## Enable upstream override with PowerShell
 
 To successfully execute the next steps in this section, you will need to create a personal access token with packaging **Read, write, & manage** permissions. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to create your personal access token. 
 
@@ -109,7 +109,7 @@ $url = "https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_apis/packag
 
 Now that we have both the header and endpoint URL set up, we can now start sending HTTP requests to get, set, and clear upstreaming for our feed.
 
-### Get upstream override state for a package
+### Get package's upstream override state
 
 Run the following command to retrieve the upstreaming state of your package. `$url` and `$headers` are the same variables we used in the previous section.
 
@@ -117,7 +117,7 @@ Run the following command to retrieve the upstreaming state of your package. `$u
  Invoke-RestMethod -Uri $url -Headers $headers
  ```
 
-### Set upstream override for a package
+### Set package's upstream override
 
 Run the following commands to allow externally sourced versions for your package. This will set `versionsFromExternalUpstreams` to `AllowExternalVersions`, and will use the `$url` and `$headers` variables to query the REST API.
 
