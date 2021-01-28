@@ -33,12 +33,6 @@ The following are some of the supported tasks to facilitate end-to-end traceabil
 
 End-to-end traceability is supported by linking various objects such as work items, branches, commits, pull requests, builds, and releases. Build in reports and Analytics support the ability to monitor traceability in real time. This article presents an overview of Azure DevOps traceability support without going into the details of how to enable and support traceability. More detailed information is provided under [Related articles](#related-articles).   
 
-
-While commiting the code changes you should associate the work item
-After commiting the CI Build will trigger. Post that in that work item, there will be link reference to the Build
-And when this build is deployed to any of the release environments, it will be displayed under. You can check this new feature introduced in Azure DevOps here
-But if you want all this information in a table, in one single view. You have to use Azure DevOps REST APIs to build a customer report to get all the data in one place.
-
 ## Traceability and linking 
 
 
@@ -229,18 +223,8 @@ To learn more about any of the concepts introduced in this article, refer to the
 - [Code coverage for pull requests](/azure/devops/pipelines/test/codecoverage-for-pullrequests)
 
 <!---
-
-Main points: 
-- Requirements traceability 
-	- Linking requirements through deployment 
-- Tests, manual and automated, adding manual tests to pipelines to be run automatically 
-- Reports and analytics 
-	- Monitor coverage 
-	- Test summaries 
-  
-
-Become familiar with the essential concepts to manage projects using Agile tools. Gain an overview of Azure DevOps tools and features to manage requirements. 
-
+ 
+ 
 When we demo traceability to customers, the main demo we show is 
 - Create a work item
 - Create a branch from the work item
@@ -248,7 +232,12 @@ When we demo traceability to customers, the main demo we show is
 - Validate the pull request using a build
 - Merge the pull request, build the main branch
 - Deploy it to production and in all of this show how every artifact is linked to the other. For instance, the production deployment shows the work items and commits, the work item shows which build it was part of, etc.   
+  
 
-(In this article - source control is Git in Azure DevOps - this supports end-to-end traceability) 
+- While committing the code changes you associate the work item(s) addressed in the code changes. 
+- After committing the CI Build will trigger. Post that in that work item, there will be link reference to the Build
+- And when this build is deployed to any of the release environments, it will be displayed under. You can check this new feature introduced in Azure DevOps here
+- But if you want all this information in a table, in one single view. You have to use Azure DevOps REST APIs to build a customer report to get all the data in one place.
+
 
 -->
