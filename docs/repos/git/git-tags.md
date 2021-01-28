@@ -266,6 +266,8 @@ The steps in this procedure show you how to delete a tag in the local repo using
 >[!IMPORTANT]
 >If your tag has already been pushed to the remote repo, you should not delete it. If the repo has been pulled, forked, or cloned by another user, the tag will still exist in their copy of the repo. You should only delete local tags.
 
+---
+
 ## Create branch from a tag
 
 #### [Browser](#tab/browser)
@@ -320,6 +322,8 @@ The steps in this procedure show you how to delete a tag in the local repo using
 
    ![Push new branch from tag in Visual Studio.](media/git-tags/branch-from-tag-created.vs.png)
 
+---
+
 ## View tag history
 
 #### [Browser](#tab/browser)
@@ -357,3 +361,5 @@ The steps in this procedure show you how to delete a tag in the local repo using
 2. The history is displayed in the **History** view.
 
    ![Tag history in Visual Studio.](media/git-tags/commits-vs.png)
+
+---
