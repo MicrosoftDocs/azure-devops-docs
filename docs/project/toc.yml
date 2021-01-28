@@ -1,10 +1,10 @@
 - name: Cross-service, Wikis, Public Projects
   href: index.yml
 - name: Work across projects and services 
-  items:
   expanded: true
+  items:
   - name: Work across projects  
-    href: ./navigation/work-across-projects.md 
+    href: navigation/work-across-projects.md 
   - name: Work across projects FAQs
     href: work-across-projects-faqs.yml 
   - name: End-to-end traceability
