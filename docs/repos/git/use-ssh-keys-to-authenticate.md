@@ -431,4 +431,4 @@ Host ssh.dev.azure.com
   PubkeyAcceptedKeyTypes=ssh-rsa
 ```
 
-Replace `ssh.dev.azure.com` with your the correct hostname if you use Azure DevOps Server.
+Replace `ssh.dev.azure.com` with the correct hostname if you use Azure DevOps Server.
