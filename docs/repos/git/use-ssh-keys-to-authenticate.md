@@ -423,7 +423,7 @@ The next step would be to investigate whether or not your password has been comp
 ### Q: What do I do if I am still prompted for my password and `GIT_SSH_COMMAND="ssh -v" git fetch` shows `no mutual signature algorithm`
 
 **A:** Some Linux distributions, such as Fedora Linux, have crypto policies that require stronger SSH signature-algorithms than what is supported by Azure DevOps (as of January 2021).
-A feature request is available [here](https://developercommunity.visualstudio.com/idea/365980/support-non-rsa-keys-for-ssh-authentication.html).
+There's an open [feature request](https://developercommunity.visualstudio.com/idea/365980/support-non-rsa-keys-for-ssh-authentication.html) to add this support.
 You can work around the problem by adding the following to your SSH configuration (`~/.ssh/config`):
 
 ```sshconfig
@@ -431,4 +431,4 @@ Host ssh.dev.azure.com
   PubkeyAcceptedKeyTypes=ssh-rsa
 ```
 
-Replace ssh.dev.azure.com with your azure-devops host if needed.
+Replace `ssh.dev.azure.com` with your the correct hostname if you use Azure DevOps Server.
