@@ -77,7 +77,7 @@ Users can view and filter packages by **Sourced versions**.
 
 Aside from using the feed's user interface, you can also enable the upstream override using the Azure DevOps Services REST API.
 
-< API reference link >
+< API_reference_link_placeholder >
 
 ## Enable upstream override with PowerShell
 
@@ -101,23 +101,23 @@ $headers = @{
 }
 ```
 
-Invoking the REST method requires an endpoint url. Enter your `OrganizationName`, `ProjectName`, `FeedName`, `Protocol`, and your `PackageName` to store it in the `$Url` variable. (Example: /pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/Myapp1.0.nupkg/upstreaming?api-version=6.1-preview.1)
+Invoking the REST method requires an endpoint url. Enter your `OrganizationName`, `ProjectName`, `FeedName`, `Protocol`, and your `PackageName` to construct the `$Url` variable. (Example: /pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/Myapp1.0.nupkg/upstreaming?api-version=6.1-preview.1)
 
 ```PowerShell
 $url = "https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_apis/packaging/feeds/{FeedName}/{Protocol}/packages/{PackageName}/upstreaming?api-version=6.1-preview.1"
 ```
 
-Now that we have both the header and endpoint URL set up, we can now start sending HTTP requests to get, set, and clear upstreaming for our feed.
+Now that we have both the header and the endpoint URL set up, we can start sending HTTP requests to get, set, and clear upstreaming for any specific package.
 
-### Get package's upstream override state
+### Get upstream override state
 
-Run the following command to retrieve the upstreaming state of your package. `$url` and `$headers` are the same variables we used in the previous section.
+Run the following command to retrieve the upstream override state of your package. `$url` and `$headers` are the same variables we used in the previous section.
 
  ```PowerShell
  Invoke-RestMethod -Uri $url -Headers $headers
  ```
 
-### Set package's upstream override
+### Set upstream override
 
 Run the following commands to allow externally sourced versions for your package. This will set `versionsFromExternalUpstreams` to `AllowExternalVersions`, and will use the `$url` and `$headers` variables to query the REST API.
 
@@ -127,7 +127,7 @@ $body = '{"versionsFromExternalUpstreams": "AllowExternalVersions"}'
 Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"
 ```
 
-### Clear upstream override for a package
+### Clear upstream override
 
 To clear upstream override for your package, run the following commands to set `versionsFromExternalUpstreams` to `Auto` and query the REST API.
 
