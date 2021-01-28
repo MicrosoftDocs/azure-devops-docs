@@ -298,6 +298,9 @@ This may be because web.config is not present in your app. You can either add a 
 * Select your application type from the drop down.
 * Click on OK. This will populate web.config parameters required to generate web.config.
 
+> [!NOTE]
+> This section is deprecated and has been replaced with the [File Transform](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/file-transform) task.
+
 ### ERROR_FILE_IN_USE
 
 When deploying .NET apps to Web App on Windows, deployment may fail with error code *ERROR_FILE_IN_USE*. To resolve the error, ensure *Rename locked files* and *Take App Offline* options are enabled in the task. For zero downtime deployments, use slot swap.
