@@ -44,9 +44,9 @@ You can view tags in the **Tags** view and in the **Commits** view in the web po
 
 ### View tags in the Commits view
 
-1. To view tags for a specific branch in the **Commits** view, navigate to your repo in the web portal, choose **Repos**, **Commits**, and select your branch.
+To view tags for a specific branch in the **Commits** view, navigate to your repo in the web portal, choose **Repos**, **Commits**, and select your branch.
 
-   ![View tags in Commits view.](media/git-tags/view-tags-from-commits-new-nav.png)
+![View tags in Commits view.](media/git-tags/view-tags-from-commits-new-nav.png)
 
 ::: moniker-end
 
@@ -70,9 +70,9 @@ You can view tags in the **Tags** view and in the **Commits** view in the web po
 
 ### View tags in the Commits view
 
-1. To view tags for a specific branch in the **Commits** view, navigate to your repo in the web portal, choose **Code**, **Commits**, and select your branch.
+To view tags for a specific branch in the **Commits** view, navigate to your repo in the web portal, choose **Code**, **Commits**, and select your branch.
 
-   ![View tags in Commits view.](media/git-tags/view-tags-from-commits.png)
+![View tags in Commits view.](media/git-tags/view-tags-from-commits.png)
 
 ::: moniker-end
 
@@ -141,9 +141,9 @@ You can create annotated tags using the web portal from both the **Tags** view a
 
 ### Create tags from the Commits view
 
-1. To create a tag directly from the commits view, right-click the desired tag and choose **Create tag**.
+To create a tag directly from the commits view, right-click the desired tag and choose **Create tag**.
 
-   ![Create tag from the Commits view.](media/git-tags/create-tag-from-commit.png)
+![Create tag from the Commits view.](media/git-tags/create-tag-from-commit.png)
 
 ::: moniker-end
 
@@ -170,9 +170,9 @@ You can create annotated tags using the web portal from both the **Tags** view a
 
 ### Create tags from the Commits view
 
-1. To create a tag directly from the commits view, right-click the desired tag and choose **Create tag**.
+To create a tag directly from the commits view, right-click the desired tag and choose **Create tag**.
 
-   ![Create tag from the Commits view.](media/git-tags/create-tag-from-commit.png)
+![Create tag from the Commits view.](media/git-tags/create-tag-from-commit.png)
 
 ::: moniker-end
 
@@ -200,9 +200,9 @@ You can create both annotated and lightweight tags in Visual Studio from both th
 
 ### Create tags from the History view
 
-1. To create a tag directly from the history view, right-click the desired commit and choose **Create Tag**.
+To create a tag directly from the history view, right-click the desired commit and choose **Create Tag**.
 
-   ![Create tag from the History view, Visual Studio.](media/git-tags/create-tag-from-commit-vs.png)
+![Create tag from the History view, Visual Studio.](media/git-tags/create-tag-from-commit-vs.png)
 
 ---
 
@@ -259,9 +259,9 @@ The steps in this procedure show you how to delete a tag in the remote repo usin
 
 The steps in this procedure show you how to delete a tag in the local repo using Visual Studio 2017 Update 6.
 
-1. Right-click the tag to delete and choose **Delete Locally**
+Right-click the tag to delete and choose **Delete Locally**
 
-   ![Delete tag using Visual Studio 2017 Update 6.](media/git-tags/delete-tag-vs.png)
+![Delete tag using Visual Studio 2017 Update 6.](media/git-tags/delete-tag-vs.png)
 
 >[!IMPORTANT]
 >If your tag has already been pushed to the remote repo, you should not delete it. If the repo has been pulled, forked, or cloned by another user, the tag will still exist in their copy of the repo. You should only delete local tags.
