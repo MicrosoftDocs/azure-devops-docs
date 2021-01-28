@@ -230,19 +230,22 @@ additionalContent:
             - url: ./report/index.yml
               text: "See more >"
         # Card
-        - title: Wikis, Public Projects, & work across projects
+        - title: Cross-service, Wikis, Public Projects
           links:
-            - url: ./project/wiki/wiki-create-repo.md
-              text: Create a wiki for your project
-            - url: ./project/wiki/wiki-markdown-guidance.md
-              text: Syntax guidance for Markdown usage in Wiki
-            - url: ./organizations/public/create-public-project.md
-              text: Create a public project
-            - url: ./project/navigation/work-across-projects.md  
+              text: Search
+            - url: ./project/search/overview.md  
               text: Work across projects
             - url: ./project/navigation/work-across-projects.md  
               text: Work across projects FAQs
             - url: ./project/work-across-projects-faqs.yml  
+              text: End-to-end traceability
+            - url: ./cross-service/end-to-end-traceability.md
+              text: Create a wiki for your project
+            - url: ./project/wiki/wiki-create-repo.md
+              text: Syntax guidance for Markdown usage in Wiki
+            - url: ./project/wiki/wiki-markdown-guidance.md
+              text: Create a public project
+            - url: ./organizations/public/create-public-project.md
               text: "See more >"
         # Card
         - title: GitHub integration
