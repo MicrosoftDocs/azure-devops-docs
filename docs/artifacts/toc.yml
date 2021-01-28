@@ -122,6 +122,8 @@
       href: concepts/upstream-sources.md
     - name: Set up upstream sources
       href: how-to/set-up-upstream-sources.md
+    - name: Upstream override
+      href: concepts/upstream-behavior.md
     - name: Manage dependencies with upstream sources
       href: tutorials/protect-oss-packages-with-upstream-sources.md
 - name: Work with Azure Pipelines
