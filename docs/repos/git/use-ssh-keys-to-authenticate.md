@@ -420,15 +420,15 @@ Replace `<your-azure-devops-host>` with the hostname of your Azure DevOps or TFS
 
 The next step would be to investigate whether or not your password has been compromised. Changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.
 
-### Q: What do I do if I am still prompted for my password and `GIT_SSH_COMMAND="ssh -v" git fetch` shows `no mutual signature algorithm`
+### Q: What do I do if I'm still prompted for my password and `GIT_SSH_COMMAND="ssh -v" git fetch` shows `no mutual signature algorithm`?
 
-**A:** Some Linux distributions, such as Fedora Linux, have crypto policies that require stronger SSH signature-algorithms than what is supported by Azure DevOps (as of January 2021).
-There's an open [feature request](https://developercommunity.visualstudio.com/idea/365980/support-non-rsa-keys-for-ssh-authentication.html) to add this support.
-You can work around the problem by adding the following to your SSH configuration (`~/.ssh/config`):
+**A:** Some Linux distributions, such as Fedora Linux, have crypto policies that require stronger SSH signature algorithms than Azure DevOps supports (as of January 2021). There's an open [feature request](https://developercommunity.visualstudio.com/idea/365980/support-non-rsa-keys-for-ssh-authentication.html) to add this support.
+
+You can work around the issue by adding the following code to your SSH configuration (`~/.ssh/config`):
 
 ```sshconfig
 Host ssh.dev.azure.com
   PubkeyAcceptedKeyTypes=ssh-rsa
 ```
 
-Replace `ssh.dev.azure.com` with the correct hostname if you use Azure DevOps Server.
+Replace `ssh.dev.azure.com` with the correct host name if you use Azure DevOps Server.
