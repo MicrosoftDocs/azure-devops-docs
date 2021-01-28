@@ -29,7 +29,13 @@ In this tutorial you learn how to:
 
 ## Compare files
 
-Compare the changes between two versions of a file in your Git repo. 
+Compare the changes between two versions of a file in your Git repo.
+
+#### [Browser](#tab/browser)
+
+1. In your project, click **Repos**, and then click **Files**. 
+2. Select a file, and then click the **Compare** tab. A diff view shows the most recent commit and the *head* commit in a side-by-side view.
+3. Select the the two commits you want to compare.   
 
 #### [Visual Studio](#tab/visual-studio/)
 1. Right-click the file in Solution Explorer and choose **View History...**. The history window will appear showing the commit ID, author, date, and description of all changes to the file in your local repo across all branches.   
@@ -86,6 +92,14 @@ Retrieve a specific version of a file from your history, even if the file was de
 Retrieving an older version of the file doesn't make any changes to your current branch. Create a new commit to bring the older version of the file into
 your branch.
 
+#### [Browser](#tab/browser)
+
+1. In your project, click **Repos**, and then click **Files**.
+2. Select a file, and then select the **History** tab.
+3. Select a commit from the list.
+4. Click the ellipses in the top-right corner, and then select **Revert** from the drop-down.
+5. Select your target branch, type a topic branch name if necessary, and click **Revert**.
+
 #### [Visual Studio](#tab/visual-studio/)
 To retrieve a previous version of a file that exists in your Visual Studio project:
 
@@ -136,6 +150,12 @@ Restore a file to any location by using `git show`. This command prints the file
 Review potential changes from a [merge](merging.md) or [rebase](rebase.md) by comparing branches directly. 
 You can compare both local and remote branches, which is useful when checking for potential merge conflicts or to see how the 
 changes others have made will affect your work.
+
+# [Browser](#tab/browser)
+
+1. In your project, click **Repos**, and then click **Branches**.
+2. On the branch you want to compare, click the ellipses on the right-side, and then select **Compare branches** from the drop-down.
+3. Select the other branch you want to compare with. The view displays all changes between the branches.
 
 # [Visual Studio](#tab/visual-studio)
 
