@@ -34,9 +34,9 @@ Use this task to start, stop, restart, slot swap, Swap with Preview, install sit
 |`WebAppName`<br/>App Service name|(Required) Enter or select the name of an existing Azure App Service|
 |`SpecifySlot`<br/>Specify Slot or App Service Environment|(Optional) undefined|
 |`ResourceGroupName`<br/>Resource group|(Required) Enter or Select the Azure Resource Group that contains the Azure App Service specified above|
-|`SourceSlot`<br/>Source Slot|(Required) The swap action directs destination slot's traffic to the source slot|
+|`SourceSlot`<br/>Source Slot|(Required) Used as source slot when `action == Swap Slots`. The swap action directs destination slot's traffic to the source slot.|
 |`SwapWithProduction`<br/>Swap with Production|(Optional) Select the option to swap the traffic of source slot with production. If this option is not selected, then you will have to provide source and target slot names. <br/>Default value: `true`|
-|`TargetSlot`<br/>Target Slot|(Required) The swap action directs destination slot's traffic to the source slot|
+|`TargetSlot`<br/>Target Slot|(Required) Used as destination slot when `action == Swap Slots`. The swap action directs destination slot's traffic to the source slot.|
 |`PreserveVnet`<br/>Preserve Vnet|(Optional) The swap action would overwrite the destination slot's network configuration with the source <br/>Default value: `false`|
 |`Slot`<br/>Slot|(Required) <br/>Default value: `production`|
 |`ExtensionsList`<br/>Install Extensions|(Required) Site Extensions run on Microsoft Azure App Service. You can install set of tools as site extension and better manage your Azure App Service. The  App Service will be restarted to make sure latest changes take effect.|
