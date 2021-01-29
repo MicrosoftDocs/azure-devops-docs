@@ -1009,7 +1009,7 @@ Use features supported by these familiar clients to manage your project and illu
     :::column:::
         **Define builds**  
   
-        Start from a build template and customize your build from there. Build for [Windows](../pipelines/apps/windows/dot-net.md), [iOS](../pipelines/ecosystems/xcode.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../pipelines/ecosystems/xamarin.md) for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.  
+        Start from a build template and customize your build from there. Build for [Windows](../pipelines/apps/aspnet/build-aspnet-4.md), [iOS](../pipelines/ecosystems/xcode.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../pipelines/ecosystems/xamarin.md) for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.  
   
         **Customize build process using scripts**  
   
