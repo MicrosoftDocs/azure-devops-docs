@@ -402,7 +402,7 @@
     },
     {
       "source_path": "docs/package/reference/feed-upgrade-learn-more.md",
-      "redirect_url": "/azure/devops/artifacts/reference/feed-upgrade-learn-more",
+      "redirect_url": "/previous-versions/azure/devops/docs/artifacts/reference/feed-upgrade-learn-more",
       "redirect_document_id": false
     },
     {
@@ -427,7 +427,7 @@
     },
     {
       "source_path": "docs/notifications/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-global-organization-notifications",
       "redirect_document_id": false
     },
     {
@@ -1172,7 +1172,7 @@
     },
     {
       "source_path": "docs/build/get-started/dot-net.md",
-      "redirect_url": "/azure/devops/pipelines/apps/windows/dot-net",
+      "redirect_url": "/azure/devops/pipelines/apps/aspnet/build-aspnet-4",
       "redirect_document_id": false
     },
     {
@@ -1307,7 +1307,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/buy-load-testing-vs.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-load-testing-vs",
+      "redirect_url": "/azure/devops/organizations/billing/overview",
       "redirect_document_id": false
     },
     {
@@ -1492,7 +1492,7 @@
     },
     {
       "source_path": "docs/build-release/vs/define-build.md",
-      "redirect_url": "/azure/devops/pipelines/apps/windows/dot-net",
+      "redirect_url": "/azure/devops/pipelines/apps/aspnet/build-aspnet-4",
       "redirect_document_id": false
     },
     {
@@ -1727,7 +1727,7 @@
     },
     {
       "source_path": "docs/work/track/query-on-boolean-field.md",
-      "redirect_url": "/azure/devops/boards/queries/example-queries",
+      "redirect_url": "/azure/devops/boards/queries/about-managed-queries",
       "redirect_document_id": false
     },
     {
@@ -1812,7 +1812,7 @@
     },
     {
       "source_path": "docs/build-release/feature-overview.md",
-      "redirect_url": "/azure/devops/pipelines/overview",
+      "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
       "redirect_document_id": false
     },
     {
@@ -1897,7 +1897,7 @@
     },
     {
       "source_path": "docs/build-release/get-started/dot-net.md",
-      "redirect_url": "/azure/devops/pipelines/apps/windows/dot-net",
+      "redirect_url": "/azure/devops/pipelines/apps/aspnet/build-aspnet-4",
       "redirect_document_id": false
     },
     {
@@ -2352,7 +2352,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/buy-load-testing-vs.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-load-testing-vs",
+      "redirect_url": "/azure/devops/organizations/billing/overview",
       "redirect_document_id": false
     },
     {
@@ -3287,7 +3287,7 @@
     },
     {
       "source_path": "docs/service-hooks/services/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-global-organization-notifications",
       "redirect_document_id": false
     },
     {
@@ -3442,7 +3442,7 @@
     },
     {
       "source_path": "docs/release/contents.md",
-      "redirect_url": "/azure/devops/pipelines/overview",
+      "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
       "redirect_document_id": false
     },
     {
@@ -3677,7 +3677,7 @@
     },
     {
       "source_path": "docs/release/overview.md",
-      "redirect_url": "/azure/devops/pipelines/overview",
+      "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
       "redirect_document_id": false
     },
     {
@@ -4112,82 +4112,82 @@
     },
     {
       "source_path": "docs/test/get-performance-data-for-load-tests.md",
-      "redirect_url": "/azure/devops/test/load-test/get-performance-data-for-load-tests",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/get-performance-data-for-load-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/load-test-your-app-vs.md",
-      "redirect_url": "/azure/devops/test/load-test/getting-started-with-performance-testing",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/getting-started-with-performance-testing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/app-service-web-app-performance-test.md",
-      "redirect_url": "/azure/devops/test/load-test/overview",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/clt-behind-firewall.md",
-      "redirect_url": "/azure/devops/test/load-test/clt-behind-firewall",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/clt-behind-firewall",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/clt-with-private-machines.md",
-      "redirect_url": "/azure/devops/test/load-test/clt-with-private-machines",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/clt-with-private-machines",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/get-performance-data-for-load-tests.md",
-      "redirect_url": "/azure/devops/test/load-test/get-performance-data-for-load-tests",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/get-performance-data-for-load-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/get-started-jmeter-test.md",
-      "redirect_url": "/azure/devops/test/load-test/get-started-jmeter-test",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/get-started-jmeter-test",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/get-started-simple-cloud-load-test.md",
-      "redirect_url": "/azure/devops/test/load-test/get-started-simple-cloud-load-test",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/get-started-simple-cloud-load-test",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/getting-started-with-performance-testing.md",
-      "redirect_url": "/azure/devops/test/load-test/getting-started-with-performance-testing",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/getting-started-with-performance-testing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/index.md",
-      "redirect_url": "/azure/devops/test/load-test/index",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/install-certs-and-software.md",
-      "redirect_url": "/azure/devops/test/load-test/install-certs-and-software",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/install-certs-and-software",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/overview.md",
-      "redirect_url": "/azure/devops/test/load-test/overview",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/performance-reports.md",
-      "redirect_url": "/azure/devops/test/load-test/performance-reports",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/performance-reports",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/record-and-replay-cloud-load-tests.md",
-      "redirect_url": "/azure/devops/test/load-test/record-and-replay-cloud-load-tests",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/record-and-replay-cloud-load-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/reference-qa.md",
-      "redirect_url": "/azure/devops/test/load-test/reference-qa",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/reference-qa",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/load-test/run-performance-tests-app-before-release.md",
-      "redirect_url": "/azure/devops/test/load-test/run-performance-tests-app-before-release",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/run-performance-tests-app-before-release",
       "redirect_document_id": false
     },
     {
@@ -4582,62 +4582,62 @@
     },
     {
       "source_path": "docs/test/performance-testing/app-service-web-app-performance-test.md",
-      "redirect_url": "/azure/devops/test/load-test/overview",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/performance-testing/index.md",
-      "redirect_url": "/azure/devops/test/load-test/index",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/performance-testing/performance-testing.md",
-      "redirect_url": "/azure/devops/test/load-test/index",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/performance-testing/reference-qa.md",
-      "redirect_url": "/azure/devops/test/load-test/reference-qa",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/reference-qa",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/performance-testing/run-performance-tests-app-before-release.md",
-      "redirect_url": "/azure/devops/test/load-test/run-performance-tests-app-before-release",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/run-performance-tests-app-before-release",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/performance-testing/getting-started/get-performance-data-for-load-tests.md",
-      "redirect_url": "/azure/devops/test/load-test/get-performance-data-for-load-tests",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/get-performance-data-for-load-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/performance-testing/getting-started/get-started-jmeter-test.md",
-      "redirect_url": "/azure/devops/test/load-test/get-started-jmeter-test",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/get-started-jmeter-test",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/performance-testing/getting-started/get-started-simple-cloud-load-test.md",
-      "redirect_url": "/azure/devops/test/load-test/get-started-simple-cloud-load-test",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/get-started-simple-cloud-load-test",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/performance-testing/getting-started/getting-started-with-performance-testing.md",
-      "redirect_url": "/azure/devops/test/load-test/getting-started-with-performance-testing",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/getting-started-with-performance-testing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/performance-testing/getting-started/performance-reports.md",
-      "redirect_url": "/azure/devops/test/load-test/performance-reports",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/performance-reports",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/performance-testing/getting-started/record-and-replay-cloud-load-tests.md",
-      "redirect_url": "/azure/devops/test/load-test/record-and-replay-cloud-load-tests",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/record-and-replay-cloud-load-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/performance-tests/run-performance-tests-app-before-release.md",
-      "redirect_url": "/azure/devops/test/load-test/run-performance-tests-app-before-release",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/run-performance-tests-app-before-release",
       "redirect_document_id": false
     },
     {
@@ -5582,7 +5582,7 @@
     },
     {
       "source_path": "docs/work/reference/error/tf31002-unable-connect-tfs.md",
-      "redirect_url": "/azure/devops/reference/error/tf31002-unable-connect-tfs",
+      "redirect_url": "/azure/devops/organizations/projects/tf31002-unable-connect-tfs",
       "redirect_document_id": false
     },
     {
@@ -6707,8 +6707,8 @@
     },
     {
       "source_path": "docs/build-release/overview.md",
-      "redirect_url": "/azure/devops/pipelines/overview",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/packages/jenkins.md",
@@ -7332,12 +7332,12 @@
     },
     {
       "source_path": "docs/build-release/test/collect-screenshots-and-video.md",
-      "redirect_url": "/azure/devops/pipelines/test/collect-screenshots-and-video",
+      "redirect_url": "/azure/devops/pipelines/test/ui-testing-considerations",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/collect-screenshots-and-video.md",
-      "redirect_url": "/azure/devops/pipelines/test/collect-screenshots-and-video",
+      "redirect_url": "/azure/devops/pipelines/test/ui-testing-considerations",
       "redirect_document_id": false
     },
     {
@@ -7642,9 +7642,10 @@
     },
     {
       "source_path": "docs/build-release/apps/windows/dot-net.md",
-      "redirect_url": "/azure/devops/pipelines/apps/windows/dot-net",
-      "redirect_document_id": true
-    },{
+      "redirect_url": "/azure/devops/pipelines/apps/aspnet/build-aspnet-4",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/pipelines/apps/windows/dot-net.md",
       "redirect_url": "/azure/devops/pipelines/apps/aspnet/build-aspnet-4",
       "redirect_document_id": false
@@ -7921,7 +7922,7 @@
     },
     {
       "source_path": "docs/collaborate/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-global-organization-notifications",
       "redirect_document_id": false
     },
     {
@@ -8186,7 +8187,7 @@
     },
     {
       "source_path": "docs/security/setup-ad-aad.md",
-      "redirect_url": "/azure/devops/organizations/security/setup-ad-aad",
+      "redirect_url": "/azure/devops/organizations/security/about-permissions#aad",
       "redirect_document_id": false
     },
     {
@@ -8676,8 +8677,8 @@
     },
     {
       "source_path": "docs/billing/buy-load-testing-vs.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-load-testing-vs",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/organizations/billing/overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/buy-more-build-vs.md",
@@ -8746,8 +8747,8 @@
     },
     {
       "source_path": "docs/tfvc/administering-team-foundation-version-control.md",
-      "redirect_url": "/azure/devops/repos/tfvc/administering-team-foundation-version-control",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/repos/tfvc/configure-check-out-settings",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/associate-file-type-file-comparison-tool.md",
@@ -8826,8 +8827,8 @@
     },
     {
       "source_path": "docs/tfvc/compare-folders-files.md",
-      "redirect_url": "/azure/devops/repos/tfvc/compare-folders-files",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/repos/tfvc/compare-files",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/compare-folders.md",
@@ -9176,8 +9177,8 @@
     },
     {
       "source_path": "docs/tfvc/use-branches-isolate-risk-team-foundation-version-control.md",
-      "redirect_url": "/azure/devops/repos/tfvc/use-branches-isolate-risk-team-foundation-version-control",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/repos/tfvc/branching-strategies-with-tfvc",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/use-labels-take-snapshot-your-files.md",
@@ -9466,8 +9467,8 @@
     },
     {
       "source_path": "docs/git/forks-overview.md",
-      "redirect_url": "/azure/devops/repos/git/forks-overview",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/repos/git/forks",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/gcm-ssh-passphrase.md",
@@ -9941,7 +9942,7 @@
     },
     {
       "source_path": "docs/work/customize/reference/error/tf31002-unable-connect-tfs.md",
-      "redirect_url": "/azure/devops/reference/error/tf31002-unable-connect-tfs",
+      "redirect_url": "/azure/devops/organizations/projects/tf31002-unable-connect-tfs",
       "redirect_document_id": false
     },
     {
@@ -10966,7 +10967,7 @@
     },
     {
       "source_path": "docs/work/track/adhoc-vs-managed-queries.md",
-      "redirect_url": "/azure/devops/boards/queries/adhoc-vs-managed-queries",
+      "redirect_url": "/azure/devops/boards/queries/about-managed-queries#ad-hoc-v-managed",
       "redirect_document_id": false
     },
     {
@@ -10986,7 +10987,7 @@
     },
     {
       "source_path": "docs/work/track/example-queries.md",
-      "redirect_url": "/azure/devops/boards/queries/example-queries",
+      "redirect_url": "/azure/devops/boards/queries/about-managed-queries",
       "redirect_document_id": false
     },
     {
@@ -10996,7 +10997,7 @@
     },
     {
       "source_path": "docs/work/track/index.md",
-      "redirect_url": "/azure/devops/boards/queries/example-queries",
+      "redirect_url": "/azure/devops/boards/queries/about-managed-queries",
       "redirect_document_id": false
     },
     {
@@ -12031,7 +12032,7 @@
     },
     {
       "source_path": "docs/boards/queries/index.md",
-      "redirect_url": "/azure/devops/boards/queries/example-queries",
+      "redirect_url": "/azure/devops/boards/queries/about-managed-queries",
       "redirect_document_id": false
     },
     {
@@ -12196,17 +12197,17 @@
     },
     {
       "source_path": "docs/notifications/howto-manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-global-organization-notifications",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/notifications/howto-manage-team-notifications-settings.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-global-organization-notifications",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/notifications/howto-manage-organization-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-organization-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-global-organization-notifications",
       "redirect_document_id": false
     },
     {
@@ -12756,7 +12757,7 @@
     },
     {
       "source_path": "docs/test/load-test/app-service-web-app-performance-test.md",
-      "redirect_url": "/azure/devops/test/load-test/overview",
+      "redirect_url": "/previous-versions/azure/devops/test/load-test/overview",
       "redirect_document_id": false
     },
     {
@@ -13056,52 +13057,52 @@
     },
     {
       "source_path": "docs/integrate/redirection/get-started/authentication/authentication_guidance.md",
-      "redirect_url": "/azure/devops/integrate/get-started/authentication/authentication_guidance",
+      "redirect_url": "/azure/devops/integrate/get-started/authentication/authentication-guidance",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/integrating-with-service-hooks-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/integrate",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/appveyor-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/appveyor",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/azure-service-bus-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/azure-service-bus",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/azurestorage-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/azure-storage",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/bamboo-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/bamboo",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/campfire-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/campfire",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/flowdock-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/flowdock",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/hipchat-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/hipchat",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/hubot-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/hubot",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
@@ -13111,7 +13112,7 @@
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/myget-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/myget",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
@@ -13126,7 +13127,7 @@
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/uservoice-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/uservoice",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
@@ -13136,12 +13137,12 @@
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/zapier-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/zapier",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/integrate/redirection/service-hooks/zendesk-and-vso-vs.md",
-      "redirect_url": "/azure/devops/service-hooks/services/zendesk",
+      "redirect_url": "/azure/devops/service-hooks/overview",
       "redirect_document_id": false
     },
     {
@@ -16676,7 +16677,8 @@
     },
     {
       "source_path": "docs/pipelines/get-started/dsc-cicd.md",
-      "redirect_url": "/azure/devops/pipelines/release/dsc-cicd"
+      "redirect_url": "/azure/devops/pipelines/release/dsc-cicd",
+      "redirect_document_id": null
     },
     {
       "source_path": "docs/notifications/manage-team-group-notifications.md",
@@ -16695,23 +16697,28 @@
     },
     {
       "source_path": "docs/repos/tfvc/administering-team-foundation-version-control.md",
-      "redirect_url": "/azure/devops/repos/tfvc/configure-check-out-settings"
+      "redirect_url": "/azure/devops/repos/tfvc/configure-check-out-settings",
+      "redirect_document_id": null
     },
     {
       "source_path": "docs/repos/tfvc/use-branches-isolate-risk-team-foundation-version-control.md",
-      "redirect_url": "/azure/devops/repos/tfvc/branching-strategies-with-tfvc"
+      "redirect_url": "/azure/devops/repos/tfvc/branching-strategies-with-tfvc",
+      "redirect_document_id": null
     },
     {
       "source_path": "docs/repos/tfvc/compare-folders-files.md",
-      "redirect_url": "/azure/devops/repos/tfvc/compare-files"
+      "redirect_url": "/azure/devops/repos/tfvc/compare-files",
+      "redirect_document_id": null
     },
     {
       "source_path": "docs/repos/git/forks-overview.md",
-      "redirect_url": "/azure/devops/repos/git/forks"
+      "redirect_url": "/azure/devops/repos/git/forks",
+      "redirect_document_id": null
     },
     {
       "source_path": "docs/pipelines/create-first-pipeline-cli.md",
-      "redirect_url": "/azure/devops/pipelines/create-first-pipeline"
+      "redirect_url": "/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": null
     },
     {
       "source_path": "docs/organizations/billing/buy-load-testing-vs.md",
@@ -17606,22 +17613,22 @@
     {
       "source_path": "docs/organizations/billing/buy-more-build-vs.md",
       "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
-      "redirect_document_id": false	
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/error/tf31002-unable-connect-tfs.md",
       "redirect_url": "/azure/devops/organizations/projects/tf31002-unable-connect-tfs",
-      "redirect_document_id": false	
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/boards/queries/example-queries.md",
       "redirect_url": "/azure/devops/boards/queries/about-managed-queries",
-      "redirect_document_id": false	
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/boards/queries/adhoc-vs-managed-queries.md",
       "redirect_url": "/azure/devops/boards/queries/about-managed-queries#ad-hoc-v-managed",
-      "redirect_document_id": false	
+      "redirect_document_id": false
     }
   ]
 }
