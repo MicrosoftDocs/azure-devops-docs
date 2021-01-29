@@ -115,6 +115,15 @@ For example, here we query for all work items that are tagged either ```Web``` o
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
 
+<a id="no-tags" />
+
+## List work items with no tags 
+
+To find all work items that don't have tags assigned to them, use the **Tags** field, **Does Not Contain** operator and **(blank)** value. For example, the following query lists all work items in the Proposed State that have no tags assigned to them. 
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Query Editor to query on tags.](media/add-tags/tags-blank-query-editor.png) 
+
 
 <a id="show-tags"></a>
 

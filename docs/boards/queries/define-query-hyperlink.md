@@ -9,8 +9,8 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+monikerRange: '<= azure-devops'
+ms.date: 01/25/2021
 ---
 
 # Define a query as a hyperlink  
@@ -25,9 +25,12 @@ The easiest way to define a hyperlink is to create a query that matches what you
 > [!NOTE]    
 > Most browsers enforce a limit of between 2000 and 2083 characters for a URL string.    
 
-## Query hyperlink syntax 
+
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ::: moniker range="azure-devops"  
+
+## Query hyperlink syntax for Azure DevOps Services
 
 You must encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
@@ -59,6 +62,8 @@ SELECT [System.ID], [System.Title]
 
 ::: moniker range=">= tfs-2017 < azure-devops"  
 
+## Query hyperlink syntax for TFS 2017 through Azure DevOps Server 2020
+
 ```  
 https://{ServerName}/{CollectionName}/{ProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage}
 ```
@@ -83,6 +88,10 @@ SELECT [System.ID], [System.Title], [System.State]
 ::: moniker-end   
 
 ::: moniker range="tfs-2015"  
+
+
+## Query hyperlink syntax for TFS 2015 
+
 
 ```  
 https://{ServerName}/{CollectionName}/{TeamProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage}
@@ -110,6 +119,8 @@ SELECT [System.ID], [System.Title], [System.State]
 ::: moniker-end   
 
 ::: moniker range="tfs-2013"    
+
+## Query hyperlink syntax for TFS 2013 
 
 ```  
 https://{ServerName}/{CollectionName}/q.aspx?pname={TeamProjectName}&wiql={WorkItemQueryLanguage}

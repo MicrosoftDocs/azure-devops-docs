@@ -102,7 +102,7 @@ While the `Contains` operator performs a table scan, which is not only slower, b
 
 <a id="keyword"/>
 
-## Keyword or phrase query
+## Keyword or phrase query with wildcards
 
 Use **Contains** or **Contains Words** to list items that partially or exactly match the words or phrase that you enter.  
 
@@ -154,6 +154,16 @@ For example, the following query filters will list all work items where some ent
 > ![Filter based non-empty HTML fields](media/example-queries/is-not-empty-query.png)
 
 ::: moniker-end
+
+<a id="no-tags" />
+
+## List work items with no tags 
+
+To find all work items that don't have tags assigned to them, use the **Tags** field, **Does Not Contain** operator and **(blank)** value. For example, the following query lists all work items in the Proposed State that have no tags assigned to them. 
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Query Editor to query on tags.](media/add-tags/tags-blank-query-editor.png) 
+
 
 <a id="category"/>
 

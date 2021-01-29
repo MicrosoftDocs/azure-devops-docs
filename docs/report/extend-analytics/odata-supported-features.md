@@ -17,7 +17,7 @@ ms.date: 04/05/2019
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-this article provides a summary of the OData features and functions supported or not supported by Analytics for Azure DevOps.
+This article provides a summary of the OData features and functions supported or not supported by Analytics for Azure DevOps. OData (Open Data Protocol) is an ISO/IEC approved, OASIS standard that defines a set of best practices for building and consuming REST APIs. To learn more, see [OData documentation](/odata/). 
 
 [!INCLUDE [temp](../includes/analytics-preview.md)]
 
