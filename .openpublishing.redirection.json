@@ -8551,6 +8551,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/pipelines/apps/cd/sql-server-actions.md",
+      "redirect_url": "/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/organizations/settings/set-user-preferences.md",
       "redirect_url": "/azure/devops/organizations/settings/set-your-preferences",
       "redirect_document_id": false
