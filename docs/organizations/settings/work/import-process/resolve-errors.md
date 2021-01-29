@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 **Azure DevOps Services (Hosted XML)**
 
 > [!IMPORTANT]  
-> Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [TFS Data Import Service](../../../../migrate/migration-overview.md). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Azure DevOps Services process customization. 
+> Import process supports the Hosted XML process model which allows you to manage customizations through updating the WIT definition of a process template. This feature is only available for organizations that have been migrated to Azure DevOps Services using the [Azure DevOps data import service](../../../../migrate/migration-overview.md). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about Azure DevOps Services process customization. 
 >
 > If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an inherited process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
 >
@@ -1224,7 +1224,7 @@ For more information, see [ProcessConfiguration XML element reference](../../../
 
 ### TF400572: The Project Process Settings must be configured for this feature to be used.
 
-This is caused by templates that are from TFS 2010 or earlier, before the Project Process Settings existed. Try running [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) to resolve, or add the [ProcessConfiguration XML file](../../../../reference/xml/process-configuration-xml-element.md) to the process template. 
+This is caused by templates that are from TFS 2010 or earlier versions, before the Project Process Settings existed. Try running [Configure features after an upgrade](/previous-versions/azure/devops/reference/upgrade/configure-features-after-upgrade) to resolve, or add the [ProcessConfiguration XML file](../../../../reference/xml/process-configuration-xml-element.md) to the process template. 
 
 
 <a id="wit-definitions"></a>
@@ -1534,7 +1534,7 @@ FeedbackRequest.xml
 
 ### TF402556: For field *[refName]* to be well defined, you must name it *[fieldName]* and set its type to *[fieldType]*. Provided *[refName]* is *[fieldName]* and type is *[fieldType]*.
 
-If you are on TFS and running tfsMigrator, this error is usually generated when your process is out-of-date and a system field is not properly defined. In the majority of those cases you need to use the `witadmin /changefield` command to properly rename the field.
+If you are on an on-premises server and running **tfsMigrator**, this error is usually generated when your process is out-of-date and a system field is not properly defined. In the majority of those cases you need to use the `witadmin /changefield` command to properly rename the field.
 
 #### Examples of Reserved Fields
 
@@ -2078,3 +2078,8 @@ Corrected misspellings.
       <TestResolutionStates fileName="Test Management\TestResolutionState.xml" />
     </taskXml>
 ```
+
+## Related articles
+
+- [Validate and import processes](../../../../migrate/migration-import.md)
+- [Azure DevOps Data Import Service](../../../../migrate/migration-overview.md)

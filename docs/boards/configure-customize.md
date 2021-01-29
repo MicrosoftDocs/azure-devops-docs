@@ -406,9 +406,16 @@ Here we show **Progress by all Work Items** which displays progress bars for asc
 > [!div class="mx-imgBorder"]  
 > ![Progress bars showing rollup by work items](media/config-custom/progress-by-work-items.png)  
 
+::: moniker range="azure-devops"
+
+In addition, the new [Delivery Plans (Preview)](plans/review-team-plans.md) supports rollup views of epics, features, and other custom portfolio backlogs. 
+
+> [!div class="mx-imgBorder"]  
+> ![Screenshot showing Delivery Plans Progress rollup view of four scenarios. ](plans/media/plans/rollup-view.png)  
+
+::: moniker-end
+
 <!---
-
-
 Consider how your selection impacts rollup
 If your development team uses tasks 
 --> 
@@ -514,7 +521,7 @@ Because process-level, project-level and team-level settings can have a wide imp
 
 ### Process-level changes 
 
-To create, edit, or manage Inherited processes and apply them to projects, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). Or, you must have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../organizations/security/set-permissions-access-work-tracking.md?view=azure-devops-2019#customize-an-inherited-process).
+To create, edit, or manage Inherited processes and apply them to projects, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). Or, you must have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
 For additional information, see the following articles:  
 

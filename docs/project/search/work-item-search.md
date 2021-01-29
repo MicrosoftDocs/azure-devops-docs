@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 Work Item Search provides fast and flexible search across all your work items over all your projects. 
 
-See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+See also: [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 
 <a name="start-search"></a>
 
