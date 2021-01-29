@@ -732,7 +732,7 @@
     - name: Azure File Copy
       href: tasks/deploy/azure-file-copy.md
     - name: Azure File Copy (previous version)
-      href: tasks/deploy/azure-file-copy-version-3.md
+      href: tasks/deploy/azure-file-copy-version3.md
     - name: Azure Function App
       href: tasks/deploy/azure-function-app.md
     - name: Azure Function App for Container
