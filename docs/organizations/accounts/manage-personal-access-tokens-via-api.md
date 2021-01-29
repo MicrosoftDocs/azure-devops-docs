@@ -139,7 +139,7 @@ Finally, users should follow instructions to secure their client secret, which i
     ```
     # Fill in the url to the user's ADO collection + the PAT lifecycle management API endpoint here
 
-    ENDPOINT = 'https://dev.azure.com/testCollection/_apis/Tokens/Pats?api-version=6.1-preview'
+    ENDPOINT = 'https://vssps.dev.azure.com/testCollection/_apis/Tokens/Pats?api-version=6.1-preview'
     ```
 
 1. Change the SCOPE variable to reference the Azure DevOps API resource; the character string is the resource ID for the Azure DevOps API, and the “.default” scope refers to all scopes for that resource ID. 
@@ -165,7 +165,7 @@ Finally, users should follow instructions to secure their client secret, which i
     # Used for forming an absolute URL to your redirect URI.
     # The absolute URL must match the redirect URI you set in the app's registration in the Azure portal.
 
-    ENDPOINT = 'https://dev.azure.com/testCollection/_apis/Tokens/Pats?api-version=6.1-preview' 
+    ENDPOINT = 'https://vssps.dev.azure.com/testCollection/_apis/Tokens/Pats?api-version=6.1-preview' 
     # Used to configure user's collection URL and the desired API endpoint
 
     SCOPE = ["499b84ac-1321-427f-aa17-267ca6975798/.default"]
