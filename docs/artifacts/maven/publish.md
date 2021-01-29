@@ -1,6 +1,6 @@
 ---
 title: Publish Maven artifacts to your feed using the Maven client
-description: Successfully publish Maven artifacts to your feed hosted on Azure DevOps Services or Team Foundation Server. This article will guide you through setting up your Maven client with your feed to build and publish your Maven packages.
+description: How to publish Maven artifacts to your feed.
 ms.technology: devops-artifacts
 ms.assetid: 9b2c7b3d-32d0-4ce1-8e17-ec9e8c3e451f
 ms.manager: jenp
