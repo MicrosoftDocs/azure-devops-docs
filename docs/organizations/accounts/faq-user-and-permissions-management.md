@@ -306,7 +306,7 @@ If you're an Azure AD guest, do one of the following steps:
     d. Change the **usertype** from **member** to **guest**:
 
     ```
-    PS Set-AzureADUser -objectId c<replacethe object ID for the result of the command to search> -UserType Member
+    PS Set-AzureADUser -objectId <replacethe object ID for the result of the command to search> -UserType Member
     ```
 
 <a name="users-delay"></a>

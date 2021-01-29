@@ -2076,7 +2076,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Quick work item search</b></p>
-<p>Find work items based on <a href="/azure/devops/boards/queries/example-queries?viewFallbackFrom=vsts" data-raw-source="[ID, assignment, changed date, or keyword](../boards/queries/example-queries.md?viewFallbackFrom=vsts)">ID, assignment, changed date, or keyword</a>. </p>
+<p>Find work items based on <a href="/azure/devops/boards/queries/example-queries?viewFallbackFrom=vsts" data-raw-source="[ID, assignment, changed date, or keyword](../boards/queries/about-managed-queries.md?viewFallbackFrom=vsts)">ID, assignment, changed date, or keyword</a>. </p>
 <img src="media/features/alm-index-search-work-items-vsts.png" alt="Search work item box"/><br/><br/>
 
 
@@ -2442,7 +2442,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Customize the Microsoft Project field mapping file </b></p>
-<p>You can <a href="/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts" data-raw-source="[customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project](/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts)">customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project</a>. And, you can change how specific fields are published.  </p>
+<p>You can <a href="/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts" data-raw-source="[customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts)">customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project</a>. And, you can change how specific fields are published.  </p>
 
 
 </td>

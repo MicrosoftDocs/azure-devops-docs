@@ -188,7 +188,7 @@ To manage permissions for a query or query folder, you must be the creator of th
 > [!div class="mx-imgBorder"]  
 > ![Permissions dialog for a query folder](../../boards/queries/media/permissions/permissions-dialog-query-folder.png)
 
-For details, see [Set permissions on a shared query or query folder](../../organizations/security/set-permissions-access-work-tracking.md). To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/example-queries.md).
+For details, see [Set permissions on a shared query or query folder](../../organizations/security/set-permissions-access-work-tracking.md). To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/about-managed-queries.md).
 
 
 ::: moniker range=">= tfs-2017"  

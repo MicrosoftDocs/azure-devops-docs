@@ -48,6 +48,9 @@ There are two primary ways to connect to a feed to push or pull Python packages:
 - Install and use the [Python Credential Provider (artifacts-keyring) (preview)](https://github.com/microsoft/artifacts-keyring), which sets up authentication for you.
 - Manually set up credentials for `pip.ini`/`pip.conf` for pushes, or `.pypirc` for pulls, through a personal access token (PAT).
 
+> [!NOTE]
+> `artifacts-keyring` is not supported on newer versions of Ubuntu.
+
 ### Option 1: Use Python Credential Provider (preview) to automate authentication
 
 The Python Credential Provider is an `artifacts-keyring` package in public preview that you can install from the Python Package Index (PyPI). The Python Credential Provider lets the [pip](https://pypi.org/project/pip/) and [twine](https://pypi.org/project/twine/) commands authenticate by sending you through an authentication flow in your web browser. 
@@ -99,10 +102,9 @@ For more information, check out the following resources to:
 - Publish a package to your feed by using [Python’s twine command](https://pypi.org/project/twine/).
 - How to consume and download packages by using [pip](https://pypi.org/project/pip/).
 
-## Next steps
+## What's next?
 
-To consume or publish Python packages as part of your continuous integration/continuous delivery (CI/CD) pipeline, see [Publish Python packages in Azure Pipelines](../../pipelines/artifacts/pypi.md).
+- [Publish Python packages in Azure Pipelines](../../pipelines/artifacts/pypi.md).
 
-To learn more about how to create, configure, and use Python packages as part of your project or pipeline, see [Build Python apps](../../pipelines/ecosystems/python.md).
+- [Build Python apps](../../pipelines/ecosystems/python.md).
 
-If you’d like to learn more about how Python packages work, see [The Architecture of Open Source Applications: Python Packaging](https://www.aosabook.org/en/packaging.html), an excerpt from the book *Architecture of Open Source Applications*.
