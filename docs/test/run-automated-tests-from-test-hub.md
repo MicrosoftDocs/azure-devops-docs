@@ -35,7 +35,7 @@ You will need:
   [Visual Studio 2017](associate-automated-test-with-test-case.md), 
   or [Visual Studio 2015 or earlier](/previous-versions/visualstudio/visual-studio-2013/dd380741(v=vs.120)).
 
-* A [Team Build pipeline](../pipelines/apps/windows/dot-net.md)
+* A [Team Build pipeline](../pipelines/apps/aspnet/build-aspnet-4.md)
   that generates builds containing the test binaries.
 
 * The app to test. You can deploy the app as part of the 
