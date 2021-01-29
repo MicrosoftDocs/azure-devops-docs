@@ -16,7 +16,7 @@ Authentication from command-line clients like `nuget` and `dotnet` is a little d
 
 ## Domain users on domain-joined machines
 
-You can use [consume packages with Visual Studio](consume.md), [publish with Nuget](publish.md), and use [Nuget](nuget-exe.md) and [dotnet](dotnet-exe.md). Ignore any content about the Credential Provider or Personal Access Tokens&mdash;everything will work using your domain credentials.
+You can use [consume packages with Visual Studio](consume.md), [publish with NuGet](publish.md), and use [NuGet](nuget-exe.md) and [dotnet](dotnet-exe.md). Ignore any content about the Credential Provider or Personal Access Tokens&mdash;everything will work using your domain credentials.
 
 ## Non-domain users (for example, service accounts, users on non-domain-joined machines)
 
