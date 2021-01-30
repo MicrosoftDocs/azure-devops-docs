@@ -7646,6 +7646,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/pipelines/apps/windows/dot-net.md",
+      "redirect_url": "/azure/devops/pipelines/apps/aspnet/build-aspnet-4",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build-release/apps/windows/universal.md",
       "redirect_url": "/azure/devops/pipelines/apps/windows/universal",
       "redirect_document_id": true
