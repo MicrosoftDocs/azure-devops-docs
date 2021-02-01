@@ -7,6 +7,7 @@ ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
 ms.custom: contperf-fy20q4, conterperfq3, contperf-fy21q3
 ms.date: 06/19/2020
 monikerRange: '>= tfs-2017'
+recommendations: true
 ---
 
 # Get started with npm packages in Azure Artifacts
