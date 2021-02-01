@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-This quickstart will show you how to create your Azure Artifact feed, set up your ***.npmrc*** files to store your feed URLs and credentials, build your project and publish your npm package to your feed.
+Azure Artifacts supports publishing and consuming npm packages to Artifacts feeds and public registries. This quickstart will show you how to create your Azure Artifact feed, set up your ***.npmrc*** files to store your feed URLs and credentials, build your project and publish your npm package to your feed.
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
@@ -163,3 +163,5 @@ If you have followed all of the steps up to this point, your npm package should 
 
 - [Publish npm packages (YAML/Classic)](../pipelines/artifacts/npm.md)
 - [Use packages from npmjs.com](./npm/upstream-sources.md)
+- [Use npm scopes](npm/scopes.md)
+- [Use npm audit](npm/npm-audit.md)
