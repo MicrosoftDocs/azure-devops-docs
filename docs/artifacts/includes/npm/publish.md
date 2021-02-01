@@ -4,6 +4,7 @@ ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
 ms.date: 06/19/2020
+recommendation: true
 ---
 
 This article will show you how to connect your npm client to your feed in Azure Artifacts and share your packages with your team and your organization.
