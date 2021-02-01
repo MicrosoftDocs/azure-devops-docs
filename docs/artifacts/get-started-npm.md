@@ -142,7 +142,7 @@ If you're developing on Linux or Mac, `vsts-npm-auth` is not supported. We recom
 
 ## 3. Build your project
 
-At this point, your project should have a package.json file and an .npmrc file in the same folder. Run `npm install` from the directory that contains both of these files. npm will discover your feed in the .npmrc file in the current working directory. It will then fetch credentials from your home directory's .npmrc file that you configured in [Create a feed](#create-a-feed).
+At this point, your project should have a package.json file and an .npmrc file in the same folder. Run `npm install` from the directory that contains both of these files. npm will discover your feed in the .npmrc file in the current working directory. It will then fetch credentials from your home directory's .npmrc file that you configured in [Create a feed](#1-create-a-feed).
 
 ## 4. Publish an npm package
 
@@ -152,7 +152,7 @@ You can now publish the npm package:
 
 1. Run `npm publish`.
 
-The `npm publish` command will authenticate to the feed using the .npmrc configuration files that you had to setup in this [previous step](#set-up-your-npmrc-files). See the [npm CLI docs](https://docs.npmjs.com/cli/publish) for more information.
+The `npm publish` command will authenticate to the feed using the .npmrc configuration files that you had to setup in this [previous step](#2-set-up-your-npmrc-files). See the [npm CLI docs](https://docs.npmjs.com/cli/publish) for more information.
 
 If you have followed all of the steps up to this point, your npm package should be available now in your feed.
 
