@@ -4,7 +4,7 @@ description: Use npm to store your JavaScript packages. create a feed, set up .n
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
-ms.custom: contperf-fy20q4
+ms.custom: contperf-fy20q4, conterperfq3, contperf-fy21q3
 ms.date: 06/19/2020
 monikerRange: '>= tfs-2017'
 ---
@@ -43,7 +43,7 @@ If you aren't sure, you can select **Start 30-day free trial**. Every user in yo
 
 ::: moniker-end
 
-## Create a feed
+## 1. Create a feed
 
 A feed is a container that allows users to store packages and control who can access them by modifying the feed permissions.
 
@@ -77,7 +77,7 @@ You can change these settings later by editing the feed.
 
 ::: moniker range=">= azure-devops-2019"
 
-## Set up your .npmrc files
+## 2. Set up your .npmrc files
 
 All Azure Artifacts feeds require authentication. You'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
@@ -140,11 +140,11 @@ If you're developing on Linux or Mac, `vsts-npm-auth` is not supported. We recom
 
 ::: moniker-end
 
-## Build your project
+## 3. Build your project
 
 At this point, your project should have a package.json file and an .npmrc file in the same folder. Run `npm install` from the directory that contains both of these files. npm will discover your feed in the .npmrc file in the current working directory. It will then fetch credentials from your home directory's .npmrc file that you configured in [Create a feed](#create-a-feed).
 
-## Publish an npm package
+## 4. Publish an npm package
 
 You can now publish the npm package:
 
@@ -159,7 +159,7 @@ If you have followed all of the steps up to this point, your npm package should 
 > [!IMPORTANT]
 > Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed. The build does not support using the `publishConfig` property to specify the registry to which you're publishing. If you include the `publishConfig` property in your package.json file, the build will fail with potentially an unrelated authentication error.
 
-## What's next?
+## Related articles?
 
 - [Publish npm packages (YAML/Classic)](../pipelines/artifacts/npm.md)
 - [Use packages from npmjs.com](./npm/upstream-sources.md)
