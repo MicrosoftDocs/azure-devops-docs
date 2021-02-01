@@ -7,6 +7,8 @@
   href: ./settings/search-settings.md
 - name: Get started as an administrator
   href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Timezone settings
+  href: ./settings/timezone-settings-and-usage.md
 - name: Security, membership, & access
   href: ../organizations/security/toc.yml
 - name: Billing
@@ -72,7 +74,7 @@
   - name: Manage Git branch policies
     href: ../repos/git/branch-policies.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
   - name: Manage repository permissions
-    href: ./security/set-git-tfvc-repository-permissions.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
+    href: ./security/set-git-tfvc-repository-permissions.md
   - name: Add TFVC Check-In Policies
     href: ../repos/tfvc/add-check-policies.md?bc=%252fazure%252fdevops%252forganizations%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252forganizations%252ftoc.json
 - name: Test
