@@ -18,16 +18,17 @@ The packages you host in Azure Artifacts are stored in a **feed**. Setting permi
 
 Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Owners can add any type of identity-individuals, teams, and groups-to any access level.
 
-| Permission | Reader | Collaborator | Contributor | Owner |
-| ---------- | ------ | ------------ | ----------- | ----- |
-| List, install, and restore packages           | &#x2713; | &#x2713; | &#x2713; | &#x2713; |
-| Push packages                                 |          |          | &#x2713; | &#x2713; |
-| Unlist/deprecate packages                     |          |          | &#x2713; | &#x2713; |
-| Delete/unpublish package                      |          |          |          | &#x2713; |
-| Promote a package to a view                   |          |          | &#x2713; | &#x2713; |
-| Add/remove upstream sources                   |          |          |          | &#x2713; |
-| Save packages from upstream sources           |          | &#x2713; | &#x2713; | &#x2713; |
-| Edit feed permissions                         |          |          |          | &#x2713; |
+|                   Permission                  |  Reader  | Collaborator | Contributor |   Owner  |
+| --------------------------------------------- | -------- | ------------ | ----------- | -------- |
+| List, install, and restore packages           | &#x2713; |   &#x2713;   |   &#x2713;  | &#x2713; |
+| Push packages                                 |          |              |   &#x2713;  | &#x2713; |
+| Unlist/deprecate packages                     |          |              |   &#x2713;  | &#x2713; |
+| Delete/unpublish package                      |          |              |             | &#x2713; |
+| Promote a package to a view                   |          |              |   &#x2713;  | &#x2713; |
+| Add/remove upstream sources                   |          |              |             | &#x2713; |
+| Save packages from upstream sources           |          |   &#x2713;   |   &#x2713;  | &#x2713; |
+| Edit feed permissions                         |          |              |             | &#x2713; |
+| Upstream override                             |          |              |             | &#x2713; |
 
 By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
 
