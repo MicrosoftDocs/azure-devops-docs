@@ -53,7 +53,7 @@ tf shelve /delete shelvesetname[;owner] [/login:username,[password]] [/collectio
 | **/comment** | Adds a specified comment describing the shelved changes. |
 | **/recursive** | Shelves all items in the specified shelveset folder, its subfolders and all items therein if the itemspec you provide is a folder. |
 | **/noprompt** | Suppresses any prompts for input from you. |
-| **/validate** | Only valid when not combined with **/noprompt**.<br /><br />This option selects the validation check box in the **Shelve - Source Files **dialog box when it opens. When the validation check box is selected, the dialog box will evaluate the check-in policies and verify that require check-in notes have been filled in. This option is useful when the changes are being handed off for review and check-in by someone else. |
+| **/validate** | Only valid when not combined with **/noprompt**.<br /><br />This option selects the validation check box in the **Shelve - Source Files** dialog box when it opens. When the validation check box is selected, the dialog box will evaluate the check-in policies and verify that require check-in notes have been filled in. This option is useful when the changes are being handed off for review and check-in by someone else. |
 | **/login** | Specifies the user name and password to authenticate the user with Team Foundation Server. |
 | **/collection** | Specifies the project collection. |
 

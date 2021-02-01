@@ -463,8 +463,6 @@
     href: agents/v2-windows.md
   - name: Windows agents (TFS 2015)
     href: agents/v1-windows.md
-  - name: Purchase CI/CD & parallel jobs
-    href: ../organizations/billing/buy-more-build-vs.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
   - name: Scale set agents
     href: agents/scale-set-agents.md
     displayName: byos, elastic agents, VMSS, autoscale
@@ -507,7 +505,7 @@
       href: integrations/microsoft-teams.md
     - name: Slack
       href: integrations/slack.md
-    - name: Integrate with ServiceNow (Classic)
+    - name: Integrate with ServiceNow
       href: release/approvals/servicenow.md
     - name: Integrate with Jenkins (Classic)
       href: release/integrate-jenkins-pipelines-cicd.md
@@ -733,6 +731,8 @@
       href: tasks/deploy/azure-cloud-powershell-deployment.md
     - name: Azure File Copy
       href: tasks/deploy/azure-file-copy.md
+    - name: Azure File Copy (previous version)
+      href: tasks/deploy/azure-file-copy-version3.md
     - name: Azure Function App
       href: tasks/deploy/azure-function-app.md
     - name: Azure Function App for Container

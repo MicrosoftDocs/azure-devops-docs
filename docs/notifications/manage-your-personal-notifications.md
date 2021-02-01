@@ -5,7 +5,7 @@ description: Get personally notified, alerts, when changes occur to source code,
 ms.technology: devops-collab
 ms.assetid: 644687b3-e30e-46b0-8d3e-3d4a4e34d13a
 ms.custom: contperf-fy21q2
-ms.topic: How-to
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
 ms.date: 12/15/2020
@@ -59,7 +59,7 @@ To access the Preview features options, open your profile menu. The profile menu
 
 2. Select :::image type="icon" source="../media/icons/user-settings-gear.png" border="false":::  **User settings**, and then select **Notifications** from the resulting list.
 
-   :::image type="content" source="media/personal-notifications-preview.png" alt-text="Navigate to personal notifications, preview page."::: 
+   :::image type="content" source="media/personal-notifications-preview.png" alt-text="Go to personal notifications, preview page."::: 
 
 #### [New Account Manager not enabled](#tab/new-account-not-enabled)
 
@@ -67,7 +67,7 @@ To access the Preview features options, open your profile menu. The profile menu
 
 2. Open your **User settings**, and then select **Notification settings** from the resulting list.
 
-   ![Navigate to personal notifications, current page](media/nav-personal-notifications-hub-newnav.png)  
+   ![Go to personal notifications, current page](media/nav-personal-notifications-hub-newnav.png)  
 
 ***
 
@@ -76,7 +76,7 @@ To access the Preview features options, open your profile menu. The profile menu
 ::: moniker range=">= tfs-2017 < azure-devops"  
 
 > [!div class="mx-imgBorder"] 
->![Navigate to the personal notifications page.](media/nav-personal-notifications-hub.png) 
+>![Go to the personal notifications page.](media/nav-personal-notifications-hub.png) 
 ::: moniker-end
 
 ::: moniker range="< tfs-2017"  
@@ -183,9 +183,9 @@ To access the Preview features options, open your profile menu. The profile menu
 
 1. From your **Notifications** page, select **New subscription**.
 
-	![Screenshot of New subscription button selected.](media/manage-personal-notifications-new-subscription-preview.png)
+	![Screenshot of New subscription selected.](media/manage-personal-notifications-new-subscription-preview.png)
 
-1. Choose the category and template that you want to use, and then select **Next**. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
+2. Choose the category and template that you want to use, and then select **Next**. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
 
 	Here we choose to get notified when a pull request is created within a specific project, Fabrikam Fiber.
 
@@ -231,7 +231,7 @@ To access the Preview features options, open your profile menu. The profile menu
 ***
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
-   <img src="media/manage-personal-notifications-new-subscription.png" alt="Screenshot of the new subscription button." style="border: 2px solid #C3C3C3;" />
+   <img src="media/manage-personal-notifications-new-subscription.png" alt="Screenshot of the new subscription." style="border: 2px solid #C3C3C3;" />
 
 1. Choose the category and template that you want to use. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
 

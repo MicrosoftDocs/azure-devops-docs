@@ -7,7 +7,7 @@ ms.topic: overview
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
+ms.date: 12/17/2020
 ---
 
 # About settings for users, teams, projects, or organizations
@@ -18,7 +18,7 @@ ms.date: 11/16/2020
 
 You configure resources either for yourself or for your team, project, or organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role that you belong to. 
 
-If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
+If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md). To quickly find a setting or related settings, see [Search organization settings](search-settings.md).
 
 > [!NOTE]  
 > You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md). For more information about Stakeholder access, see [About access levels, Stakeholder access](../security/access-levels.md#stakeholder-access). 
@@ -28,6 +28,8 @@ If you're just getting started as a Project Administrator, see [Get started as a
 ::: moniker range="< azure-devops"
 
 You configure resources either for yourself or for your team, project, or project collection from the **Settings** page. The settings you can configure depend on the security group or administrative role that you belong to.
+
+If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md). 
 
 ::: moniker-end  
 
@@ -746,7 +748,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
       - [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
       - [Try Azure Test Plans for free](../billing/try-additional-features-vs.md)
       - [Pay for users (Basic)](../billing/buy-basic-access-add-users.md)
-      - [Buy CI/CD](../billing/buy-more-build-vs.md)
+      - [Buy parallel jobs](../../pipelines/licensing/concurrent-jobs.md#how-much-do-parallel-jobs-cost)
       - [Add a user to make purchases](../billing/add-backup-billing-managers.md)
    :::column-end:::
    :::column span="2":::

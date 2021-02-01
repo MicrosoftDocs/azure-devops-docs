@@ -103,7 +103,7 @@ Here's a list of the most frequently reported connection problems and what to do
 
 4. Check whether your project has been moved to another project collection in Azure DevOps Server. If it has been moved, you must create a connection to the new server name.
 
-For additional troubleshooting tips, see [TF31002: Unable to connect to this Azure DevOps Server](../reference/error/tf31002-unable-connect-tfs.md).
+For additional troubleshooting tips, see [TF31002: Unable to connect to this Azure DevOps Server](../organizations/projects/tf31002-unable-connect-tfs.md).
 
 ::: moniker-end
 

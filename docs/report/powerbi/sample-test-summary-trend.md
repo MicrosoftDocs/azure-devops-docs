@@ -38,6 +38,7 @@ Specifically, you'll find sample queries for the following reports:
 - Test summary trend for a particular test file
 - Test summary trend for a particular test owner 
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi-cloud-only.md)]
 
 ## Sample queries
 

@@ -65,7 +65,6 @@ When you deny access to an authentication method, no application can access your
 You can enable or disable the following security policy.
 
 - **Allow public projects** - Allows non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. Anonymous access is used to access both private and public repositories. Learn more at [Make your project public](../public/make-project-public.md) and [Enable anonymous access to projects for your organization](../public/create-public-project.md#enable-anonymous-access-to-projects-for-your-organization).
-- **Enterprise access to projects** - All projects that are shared with your Enterprise become private projects when this is disabled. Those projects will no longer be viewable by all users in your Enterprise.	
 - **Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation** - this policy is set to *off* by default and only applies to alternative credentials. This policy doesn't apply for CAPs set in Azure AD, no matter the settings in Azure DevOps.	
 
    You can require the following conditions, for example:	

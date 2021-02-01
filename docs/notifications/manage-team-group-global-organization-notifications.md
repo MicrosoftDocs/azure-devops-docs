@@ -47,13 +47,13 @@ A subscription lets you control what your team is notified of and how the team r
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 1. Select **Project settings** > **Notifications**.
 
-    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications buttons highlighted":::
+    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications highlighted":::
 
-1. Select **New subscription**. 
+2. Select **New subscription**. 
 
-    ![Screenshot of New subscription button highlighted.](media/new-subscription-newnav.png) 
+    ![Screenshot of New subscription highlighted.](media/new-subscription-newnav.png) 
 
-1. Select the type of activity you want your team to be notified of.
+3. Select the type of activity you want your team to be notified of.
 
 	![Screenshot of select event category and template page.](media/new-sub-page-preview.png)
 
@@ -100,13 +100,13 @@ A subscription lets you control what your team is notified of and how the team r
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 1. Select **Project settings** > **Notifications**.
 
-    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications buttons highlighted":::
+    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications highlighted":::
 
-1. Select **New subscription**.
+2. Select **New subscription**.
 
     ![New subscription is highlighted.](media/new-subscription-newnav.png) 
 
-1. Select the type of activity you want your team to be notified of.
+3. Select the type of activity you want your team to be notified of.
 
 	![Select event category and template.](media/new-sub-page1.png)
 
@@ -151,7 +151,7 @@ A subscription lets you control what your team is notified of and how the team r
 1. Open the **Notifications** page in **Team settings**: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 
     > [!div class="mx-imgBorder"] 
-    >![Navigate to team notifications page](media/nav-team-notifications-hub.png) 
+    >![Go to team notifications page](media/nav-team-notifications-hub.png) 
 
 1. Select **New subscription**. 
 
@@ -257,13 +257,13 @@ Your group delivery settings are updated for notifications.
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 1. Select **Project settings** > **Notifications**.
 
-    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications buttons highlighted.":::
+    :::image type="content" source="media/nav-team-notifications-hub-newnav.png" alt-text="Screenshot of Project settings and Notifications highlighted.":::
 
-1. Choose **Delivery settings**:
+2. Choose **Delivery settings**:
 
    ![Delivery settings](media/delivery-settings-newnav.png)
 
-1. Choose which option best fits your team's needs:  
+3. Choose which option best fits your team's needs:  
 
     ![Delivery settings options for team and project.](media/delivery-settings-options.png)
 

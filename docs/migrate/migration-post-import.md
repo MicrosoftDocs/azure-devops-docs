@@ -63,7 +63,7 @@ If you have an existing GitHub Enterprise Server connection associated with your
 To resolve the problem, consider the following:
 
 - **Remove and re-create the connection**:
-  Remove and re-create the connection to the GitHub Enterprise Server repository. Follow the sequence of steps provided in [Connect from Azure Boards](../boards/github/connect-to-github.md?view=azure-devops#connect-azure-devops-services-to-github-enterprise-server) documentation.
+  Remove and re-create the connection to the GitHub Enterprise Server repository. Follow the sequence of steps provided in [Connect from Azure Boards](../boards/github/connect-to-github.md#connect-azure-devops-services-to-github-enterprise-server) documentation.
 
 - **Fix the webhook url**:
   Go to GitHub's repository settings page and edit the webhook url to point out to the migrated Azure DevOps Services organization url: ```https://dev.azure.com/{OrganizationName}/_apis/work/events?api-version=5.2-preview```

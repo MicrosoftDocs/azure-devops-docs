@@ -7,7 +7,7 @@ ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
 ms.author: kaelli
 author: KathrynEE
-ms.topic: reference
+ms.topic: overview
 monikerRange: '<= azure-devops'
 ms.date: 03/24/2020
 ---
@@ -179,7 +179,7 @@ From **Project Settings**, you can [set permissions on a repository](set-git-tfv
 
 ## Azure Pipelines
 
-You can define and manage your builds and releases from the web portal **Pipelines** hub. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/overview.md).
+You can define and manage your builds and releases from the web portal **Pipelines** hub. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md).
 
 ::: moniker-end
 
@@ -211,7 +211,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 ## Build and Release
 
-You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/overview.md). From the web portal, you can set permissions for all or individual builds and releases. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
+You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/get-started/what-is-azure-pipelines.md). From the web portal, you can set permissions for all or individual builds and releases. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
 
 
 ### Build  
@@ -350,5 +350,4 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 - [Security and permission management tools](security-tools-reference.md)  
 - [Permissions and groups reference](permissions.md)  
 - [About access levels](access-levels.md)
-- [Web portal navigation](../../project/navigation/index.md) 
-
+- [Web portal navigation](../../project/navigation/index.md)

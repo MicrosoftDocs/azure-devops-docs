@@ -1,6 +1,6 @@
 ---
 title: Use NuGet or dotnet with Team Foundation Server feeds
-description: Learn how to authenticate to feeds from command-line clients like nuget and dotnet in Team Foundation Server.
+description: Work with NuGet and dotnet in TFS feeds
 ms.assetid: 1BB88A4E-C40E-48CD-B44A-25C90B935E5B
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -16,9 +16,9 @@ Authentication from command-line clients like `nuget` and `dotnet` is a little d
 
 ## Domain users on domain-joined machines
 
-You can use [consume packages with Visual Studio](consume.md), [publish with nuget](publish.md), and use [nuget](nuget-exe.md) and [dotnet](dotnet-exe.md). Ignore any content about the Credential Provider or Personal Access Tokens&mdash;everything will work using your domain credentials.
+You can use [consume packages with Visual Studio](consume.md), [publish with NuGet](publish.md), and use [NuGet](nuget-exe.md) and [dotnet](dotnet-exe.md). Ignore any content about the Credential Provider or Personal Access Tokens&mdash;everything will work using your domain credentials.
 
-## Non-domain users (e.g. service accounts, users on non-domain-joined machines)
+## Non-domain users (for example, service accounts, users on non-domain-joined machines)
 
 > This workflow is **not recommended**, because it requires that you store **your encrypted domain password** on disk. Please consider the security implications before continuing.
 

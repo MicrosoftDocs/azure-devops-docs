@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 11/16/2020
+ms.date: 12/16/2020
 --- 
 
 
@@ -269,6 +269,14 @@ These groups and the default permissions they're assigned are defined at differe
 server (on-premises deployment only), project collection, project, and specific objects.
 You can also create your own groups and grant them the specific set of permissions
 that are appropriate for certain roles in your organization.
+
+
+::: moniker range="azure-devops"
+
+[!INCLUDE [version-all](./includes/hidden-security-groups.md)]
+
+::: moniker-end
+
 
 <!---
 Team Foundation Administrators
@@ -3157,11 +3165,6 @@ View releases
 
 ::: moniker-end
 
-::: moniker range="tfs-2015"
-
-If you are working with the Release Management client and server supported for TFS 2015, see [Automate deployments with Release Management](../../pipelines/archive/release/previous-version/release-management-overview.md).
-
-::: moniker-end
 
 
 ::: moniker range=">= tfs-2017"
@@ -3239,7 +3242,7 @@ The following permissions are defined in Release Management. The scope column ex
     <tr>
         <td id="edit-release-environment-permission">Edit release environment</td>
         <td>
-            Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs **Edit release definition** permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs <strong>Manage releases</strong> permission to save the modified release.
+            Can edit environment(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs <strong>Edit release definition</strong> permission. This permission also controls whether a user can edit the configuration inside the environment of a specific release instance. The user also needs <strong>Manage releases</strong> permission to save the modified release.
         </td>
         <td>
             Project, Release pipeline, Environment  

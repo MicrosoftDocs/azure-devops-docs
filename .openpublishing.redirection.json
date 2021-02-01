@@ -1312,7 +1312,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/buy-more-build-vs.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-more-build-vs",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false
     },
     {
@@ -2357,7 +2357,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/buy-more-build-vs.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-more-build-vs",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false
     },
     {
@@ -2397,7 +2397,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/get-more-build-or-load-testing-vs.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-more-build-vs",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
       "redirect_document_id": false
     },
     {
@@ -7646,6 +7646,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/pipelines/apps/windows/dot-net.md",
+      "redirect_url": "/azure/devops/pipelines/apps/aspnet/build-aspnet-4",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build-release/apps/windows/universal.md",
       "redirect_url": "/azure/devops/pipelines/apps/windows/universal",
       "redirect_document_id": true
@@ -8551,6 +8556,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/pipelines/apps/cd/sql-server-actions.md",
+      "redirect_url": "/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/organizations/settings/set-user-preferences.md",
       "redirect_url": "/azure/devops/organizations/settings/set-your-preferences",
       "redirect_document_id": false
@@ -8672,8 +8682,8 @@
     },
     {
       "source_path": "docs/billing/buy-more-build-vs.md",
-      "redirect_url": "/azure/devops/organizations/billing/buy-more-build-vs",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/change-azure-subscription.md",
@@ -11503,7 +11513,7 @@
     {
       "source_path": "docs/pipelines/licensing/concurrent-jobs-vsts.md",
       "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/demo-gen/use-vsts-demo-generator-v2.md",
@@ -16685,10 +16695,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "release-notes/docswhatsnew/azure-devops-docs-2020-11.md",
-      "redirect_url": "/azure/devops/release-notes/docswhatsnew/azure-devops-docs-whats-new"
-    },
-    {
       "source_path": "docs/repos/tfvc/administering-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/configure-check-out-settings"
     },
@@ -17587,6 +17593,36 @@
       "source_path": "docs/pipelines/overview.md",
       "redirect_url": "/azure/devops/pipelines/get-started/what-is-azure-pipelines",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/marketplace/extension-statistics-powerbi-contentpack.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/extend/extension-statistics-powerbi-contentpack.md",
+      "redirect_url": "/azure/devops/marketplace-extensibility/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/organizations/billing/buy-more-build-vs.md",
+      "redirect_url": "/azure/devops/pipelines/licensing/concurrent-jobs",
+      "redirect_document_id": false	
+    },
+    {
+      "source_path": "docs/reference/error/tf31002-unable-connect-tfs.md",
+      "redirect_url": "/azure/devops/organizations/projects/tf31002-unable-connect-tfs",
+      "redirect_document_id": false	
+    },
+    {
+      "source_path": "docs/boards/queries/example-queries.md",
+      "redirect_url": "/azure/devops/boards/queries/about-managed-queries",
+      "redirect_document_id": false	
+    },
+    {
+      "source_path": "docs/boards/queries/adhoc-vs-managed-queries.md",
+      "redirect_url": "/azure/devops/boards/queries/about-managed-queries#ad-hoc-v-managed",
+      "redirect_document_id": false	
     }
   ]
 }
