@@ -1,5 +1,5 @@
 ---
-title: How are permissions and groups defined?
+title: How permissions, access, and security groups are managed 
 titleSuffix: Azure DevOps
 description: Understand how permissions are managed in Azure DevOps
 ms.technology: devops-security
@@ -12,7 +12,7 @@ monikerRange: '<= azure-devops'
 ms.date: 12/07/2020
 ---
 
-# About permissions, access, and security groups  
+# Get started with permissions, access, and security groups  
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
@@ -44,16 +44,30 @@ To learn more, review the information provided in this article and the following
 
 With the creation of an organization, collection, or project&mdash;Azure DevOps creates a set of default security groups which are automatically assigned default permissions. Additional security groups are defined with the following actions: 
 - When you add a custom security group. You can create custom security groups at the following levels: 
+	- Object-level
 	- Project-level
 	- Organization- or collection-level
 	- Server-level (on-premises only)
 - When you add a team, a team security group is created 
 
+
+Azure DevOps controls access through these three inter-connected functional areas:
+
+-   **Membership management** supports adding individual user accounts and groups to default security groups. Each default group is associated with a set of default permissions. All users added to any security group are added to the Valid Users group. A valid user is someone who can connect to a project, collection, or organization.
+
+-   **Permission management** controls access to specific functional tasks at different levels of the system. Object-level permissions set permissions on a file, folder, build pipeline, or a shared query. Permission settings correspond to **Allow**, **Deny**, **Inherited allow**, **Inherited deny**, and **Not set**. To learn more about inheritance, see [Permission inheritance and security groups](#inheritance) later in this article.
+
+-   **Access level management** controls access to features provided via the web portal, the web application for Azure DevOps. Based on  what has been purchased for a user, administrators set the user's access level to Basic, Basic + Test, VS Enterprise (previously Advanced), or Stakeholder. 
+
+Each functional area uses security groups to simplify management across the deployment. You add users and groups through the web administration context. Permissions are automatically set based on the security group that you add users to, or based on the object, project, collection, or server level to which you add groups.  
+
 ::: moniker range="azure-devops"
 Security group members can be a combination of users, other groups, and Azure Active Directory groups.  
 ::: moniker-end
 ::: moniker range="< azure-devops"
-Security group members can be a combination of users, other groups, and Active Directory groups or a Workgroup.  
+Security group members can be a combination of users, other groups, and Active Directory groups or a Workgroup. 
+
+You can create local groups or Active Directory (AD) [groups to manage your users](/azure/devops/server/admin/setup-ad-groups). If you decide to use groups, make sure that membership in those groups is limited to valid users. Because group membership can be altered by their owners at any time, if those owners did not consider Azure DevOps Server access when they created those groups, their changes to membership can cause unwanted side effects within the server.
 ::: moniker-end
 
 Most users are assigned to the Contributors group for a project to provide them access to the features they need to access. Administrators should be added to the Project Collection Administrators or Project Administrators group. 
@@ -128,6 +142,24 @@ If you remove or deny the **View instance-level information** permission for one
 no members of the group are able to access the project, collection, or deployment, depending on the group you set.
 <a id="grant-permissions" />  
 <a id="access-levels" />
+
+
+<a id="project-scoped-user-group" /> 
+
+::: moniker range="azure-devops"
+
+### Project-scoped User group 
+
+By default, users added to an organization can view all organization and project information and settings. This includes viewing list of users, list of projects, billing details, usage data, and more that is accessed through **Organization Settings**. 
+
+To restrict select users, such as Stakeholders, Azure Active Directory guest users, or members of a particular security group, you can enable the **Project-Scoped Users well known group to hide settings** preview feature for the organization. Once that is enabled, any user or group added to the **Project-Scoped Users** group, are restricted from accessing the **Organization Settings** pages, except for **Overview** and **Projects**; and are restricted to accessing only those projects to which they've been added to. 
+
+To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md#account-level). 
+
+[!INCLUDE [version-all](./includes/hidden-security-groups.md)]
+
+::: moniker-end
+
 
 ## Access levels 
 

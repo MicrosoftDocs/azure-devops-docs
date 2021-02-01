@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: ">= tfs-2013"
-ms.date: 11/06/2020
+ms.date: 01/19/2021
 ---
 
 # Work tracking, process, and project limits
@@ -32,10 +32,10 @@ When defining work items or running queries, the following operational limits ap
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
 | Attachment size | 60 MB | 
-| Queries  |  2 minutes | 
+| Query execution time  |  2 minutes | 
 | Query results | 20,000 items | 
 | Query length | 32,000 characters |
-
+| Shared queries under a folder | 999 queries |
 
 To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
 
@@ -72,8 +72,10 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | Taskboard | 1,000 tasks  | 
 | Teams | 5,000 per project | 
 | Work item tags | 150,000 tag definitions per organization or collection | 
+| Area Paths | 300 per project
+| Iteration Paths | 300 per project
 
-Each backlog can display up to 10,000 work items. This is simply a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
+Each backlog can display up to 10,000 work items. This is a limit on what the backlog can display, not a limit on the number of work items you can define. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
 #### Additional notes:
 

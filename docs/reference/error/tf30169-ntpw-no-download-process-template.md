@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 6fda9d67-bbdc-432d-949a-2814e499b2c3
 ms.author: kaelli
 author: KathrynEE
-ms.topic: Troubleshooting
+ms.topic: troubleshooting
 ms.date: 01/20/2017
 ---
 # TF30169: The New Team Project Wizard was unable to download the process template {0}.

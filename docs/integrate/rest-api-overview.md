@@ -49,7 +49,7 @@ You can separate a REST API request and response pair into the following five co
     * An [HTTP status code](https://www.w3.org/Protocols/HTTP/HTRESP.html), ranging from 2xx success codes to 4xx or 5xx error codes. Or, a service-defined status code may be returned, as indicated in the API documentation.
     * Optional additional header fields, as required to support the request's response, such as a `Content-type` response header.
 5. Optional HTTP **response message body** fields:
-    * MIME-encoded response objects may be returned in the HTTP response body, such as a response from a GET method that is returning data. Typically, these objects are returned in a structured format such as JSON or XML, as indicated by the `Content-type` response header. For example, when you request an access token from Azure AD, it will be returned in the response body as the `access_token` element, one of several name/value paired objects in a data collection. In this example, a response header of `Content-Type: application/json` is also included.
+    * MIME-encoded response objects may be returned in the HTTP response body, such as a response from a GET method that is returning data. Typically, these objects are returned in a structured format such as JSON or XML, as indicated by the `Content-type` response header. For example, when you request an access token from Azure AD, it gets returned in the response body as the `access_token` element, one of several name/value paired objects in a data collection. In this example, a response header of `Content-Type: application/json` is also included.
 
 
 ## Create the request
@@ -144,7 +144,7 @@ Here's how to get a list of projects:
 curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
-The examples above use personal access tokens, which requires that you [create a personal access token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+The previously listed examples use personal access tokens, which requires that you [create a personal access token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ## Process the response
 
@@ -193,12 +193,12 @@ You should get a response like the following example.
 ```
 
 The response is [JSON](https://json.org/). That's generally what you'll get back from the REST APIs, although there are a few exceptions,
-like [Git blobs](previous-apis/git/blobs.md).
+like [Git blobs](/previous-versions/azure/devops/integrate/previous-apis/git/blobs).
 
 ::: moniker-end
 
-Find the resources you need for [API areas](previous-apis/overview.md), like [work item tracking](previous-apis/wit/overview.md)
-or [Git](previous-apis/git/overview.md).
+Find the resources you need for [API areas](/previous-versions/azure/devops/integrate/previous-apis/overview), like [work item tracking](/previous-versions/azure/devops/integrate/previous-apis/wit/overview)
+or [Git](/previous-versions/azure/devops/integrate/previous-apis/git/overview).
 
 ## Related content
 

@@ -281,7 +281,7 @@ az pipelines run [--branch]
 
 #### Parameters
 
-- **branch**: Name of the branch on which the pipeline run is to be queued, for example, *refs/heads/master*.
+- **branch**: Name of the branch on which the pipeline run is to be queued, for example, *refs/heads/main*.
 - **commit-id**: Commit-id on which the pipeline run is to be queued.
 - **folder-path**: Folder path of pipeline. Default is root level folder.
 - **id**: Required if **name** is not supplied. ID of the pipeline to queue.
@@ -322,7 +322,7 @@ az pipelines update [--branch]
 
 #### Parameters
 
-- **branch**: Name of the branch on which the pipeline run is to be configured, for example, *refs/heads/master*.
+- **branch**: Name of the branch on which the pipeline run is to be configured, for example, *refs/heads/main*.
 - **description**: New description for the pipeline.
 - **id**: Required if **name** is not supplied. ID of the pipeline to update.
 - **name**: Required if **ID** is not supplied. Name of the pipeline to update.
@@ -1209,11 +1209,11 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[What is Continuous Integration?](/azure/devops/what-is-continuous-integration)
+[What is Continuous Integration?](/azure/devops/learn/what-is-continuous-integration)
 
-[What is Continuous Delivery?](/azure/devops/what-is-continuous-delivery)
+[What is Continuous Delivery?](/azure/devops/learn/what-is-continuous-delivery)
 
-[What is DevOps?](/azure/devops/what-is-devops)
+[What is DevOps?](https://azure.microsoft.com/overview/what-is-devops/)
 
 <a name="version-control"></a>
 

@@ -9,7 +9,7 @@ description: In the last sprint, we announced a batch of improvements to the new
 
 # More improvements to pull requests experience
 
-In the last sprint, we [announced](https://docs.microsoft.com/azure/devops/release-notes/2020/sprint-177-update#a-batch-of-improvements-to-the-pull-request-experience) a batch of improvements to the new pull request experience. In this sprint, we are doubling down our investments in that space with another round of enhancements. In January 2021, we plan to make the new experience generally available.
+In the last sprint, we [announced](./sprint-177-update.md#a-batch-of-improvements-to-the-pull-request-experience) a batch of improvements to the new pull request experience. In this sprint, we are doubling down our investments in that space with another round of enhancements. In January 2021, we plan to make the new experience generally available.
 
 ## Features
 

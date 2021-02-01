@@ -42,7 +42,7 @@
     <body>
         <div>
             The end user doesn't see the content on this page.
-            It is only in the background to handle the contributed menu item being clicked.
+            It is only in the background to handle the contributed menu item being selected.
         </div>
     </body>
     </html>
@@ -59,7 +59,7 @@
          var menuContributionHandler = (function () {
             "use strict";
             return {
-                // This is a callback that gets invoked when a user clicks the newly contributed menu item
+                // This is a callback that gets invoked when a user selects the newly contributed menu item
                 // The actionContext parameter contains context data surrounding the circumstances of this
                 // action getting invoked.
                 execute: function (actionContext) {

@@ -3,10 +3,11 @@ title: Search for work items across your projects
 description: Learn how to use Work Item Search across all work item fields and all projects in Azure DevOps
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.technology: devops-collab
+ms.custom: quarterly-update
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-ms.date: 07/23/2020
+ms.date: 12/07/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -16,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 Work Item Search provides fast and flexible search across all your work items over all your projects. 
 
-See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+See also: [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
 
 <a name="start-search"></a>
 
@@ -26,12 +27,11 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
 1. Open the **Azure Boards** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
 
-2. Choose the :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: icon at the top right of the window to show the search textbox.
+2. Choose :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: **Search** at the top right of the window to show the search textbox.
 
    ![The Work Item Search textbox in the title bar](media/work-item-search-get-started/show-search-box.png)    
 
-3. Enter a search string in the textbox, and select _Enter_ (or choose the 
-   :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: icon) to start your search. 
+3. Enter a search string in the textbox, and press _Enter_ to start your search. 
 
    Access your recently visited boards, backlogs, queries, and sprints. 
 
@@ -53,8 +53,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 2. If you have the Code Search extension installed, the search text box may
    say _Search code_. In this case, use the drop down selector to change it. 
 
-3. Enter a search string in the textbox, and press _Enter_ (or choose the 
-   :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: icon) to start your search. 
+3. Enter a search string in the textbox, and press _Enter_ to start your search. 
 
 ::: moniker-end
 
@@ -68,8 +67,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 2. If you have the Code Search extension installed, the search text box may
    say _Search code_. In this case, use the drop-down selector to change it. 
 
-3. Enter a search string in the textbox, and press _Enter_ (or choose the 
-   :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: icon) to start your search. 
+3. Enter a search string in the textbox, and press _Enter_ to start your search. 
 
 ::: moniker-end
 
@@ -89,12 +87,11 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
    ![Display a work item](media/work-item-search-get-started/search-results-02.png)
 
    > Open the search results in a new browser tab from a search box by
-   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   :::image type="icon" source="media/shared/start-search-icon-new.png" border="false"::: icon.
+   pressing _Ctrl_ + _Enter_.
    In Google Chrome or Firefox, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
-1. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name
+2. Fine-tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
    ![Static drop down](media/work-item-search-get-started/static-dropdown.png)    
@@ -106,7 +103,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
    * `s:` for **State** 
    * `t:` for **Work item type**<p />
  
-1. Start typing the name of a field in your work items; for example, type `ta`.
+3. Start typing the name of a field in your work items; for example, type `ta`.
 
    ![Quick filters as you type](media/work-item-search-get-started/dyna-dropdown.png)    
 
@@ -114,25 +111,25 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
    that match user input, helping the user search faster. For example, a search such as 
    **tags:Critical** finds all work items tagged 'Critical'. 
 
-2. Add more filters to further narrow your search, and use Boolean operators
+4. Add more filters to further narrow your search, and use Boolean operators
    to combine terms, if necessary. For example, 
    **a: Chris t: Bug s: Active** finds all active bugs assigned
    to a user named Chris.
 
-3. Widen your search across all projects, or narrow it to specific types
-   and states. Use the "filter" icon to show the selector lists.
+5. Widen your search across all projects, or narrow it to specific types
+   and states. Use the filter to show the selector lists.
 
    ![Showing the filter lists](media/shared/show-filters.png)    
 
-4. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
+6. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
 
    ![Selector drop-down lists](media/work-item-search-get-started/area-selectors.png)    
 
-5. Sort the results as you need using the drop-down list of field names, work item types, or by relevance.
+7. Sort the results as you need using the drop-down list of field names, work item types, or by relevance.
 
    ![Sort drop-down list](media/work-item-search-get-started/sort-order.png)    
 
-6. Quickly [search for code](code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
+8. Quickly [search for code](code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
 
    ![Search for code or wiki containing the same search string](media/work-item-search-get-started/view-code-search.png)
 

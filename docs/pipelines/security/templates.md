@@ -103,10 +103,10 @@ jobs:
 - job: buildNormal
   steps:
   - script: echo Building the normal, unsensitive part
-- ${{ if eq(variables['Build.SourceBranchName'], 'refs/heads/master') }}:
-  - job: buildMasterOnly
+- ${{ if eq(variables['Build.SourceBranchName'], 'refs/heads/main') }}:
+  - job: buildMainOnly
     steps:
-    - script: echo Building the restricted part that only builds for master branch
+    - script: echo Building the restricted part that only builds for main branch
 ```
 
 ### Require certain syntax with extends templates

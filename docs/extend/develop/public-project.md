@@ -267,7 +267,7 @@ All work item updates or deletes fail for non-member users.
 
 ### Identities
 
-In Azure DevOps Services REST API version 5.0 and later, identities are returned as `IdentityRef` objects instead of strings. As described above, certain fields, like `uniqueName` aren't returned in these objects if the API call was made by a non-member user.
+In Azure DevOps Services REST API version 5.0 and later, identities are returned as `IdentityRef` objects instead of strings. As described previously, certain fields, like `uniqueName` aren't returned in these objects if the API call was made by a non-member user.
 
 ### APIs
 

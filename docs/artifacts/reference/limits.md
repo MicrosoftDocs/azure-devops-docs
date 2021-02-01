@@ -1,7 +1,6 @@
 ---
-title: Size and count limits for Azure Artifacts
-titleSuffix: Azure DevOps Services and TFS
-description: Limits on count of artifacts and size of artifacts in Azure DevOps Services or Team Foundation Server
+title: Size and count limits in Azure Artifacts
+description: Package count and size limits in Azure Artifacts 
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 10/31/2018
