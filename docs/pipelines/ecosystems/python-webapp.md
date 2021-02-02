@@ -222,7 +222,7 @@ Then we have script-based task that creates a virtual environment and installs d
            pip install -r requirements.txt
          workingDirectory: $(projectRoot)
          displayName: "Install requirements"
-      ```
+   ```
 
 
 - Next step creates the *.zip* file that the steps under deploy stage of the pipeline deploys. To create the *.zip* file, add an [ArchiveFiles](../tasks/utility/archive-files.md) task to the end of the YAML file:
