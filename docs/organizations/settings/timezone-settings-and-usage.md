@@ -16,7 +16,7 @@ ms.date: 02/01/2021
 
 There are two main time zone settings: organization and each user's personal profile. Most times displayed in the web portal are based on the organization's time zone, except for those noted later is this article. 
 
-BY default, all Azure DevOps organizations and user accounts are set to UTC (Coordinated Universal Time) irrespective of what zones they are hosted in. Even if your organization migrated from an on-premises server to Azure DevOps Services, you'll still be set to UTC time.
+By default, all Azure DevOps organizations and user accounts are set to UTC (Coordinated Universal Time) irrespective of what zones they are hosted in. Even if your organization migrated from an on-premises server to Azure DevOps Services, you'll still be set to UTC time.
 
 To configure the time zone settings, see [Change the time zone in Azure DevOps](../accounts/change-time-zone.md).
 
@@ -26,10 +26,10 @@ The organization time zone setting is the main time zone setting. This time zone
  
 The following objects display time stamps using the organization time zone setting. 
 
-- Boards: Work item fields
+- Boards: Work item fields such as Created Date, Changed Date, and other Date-Time fields 
 - Repos: 
 	- File History
-	- Commits, Pushes, Branches, Tags, Pull Requests, Push NOtifications 
+	- Commits, Pushes, Branches, Tags, and Pull Requests 
 - Pipelines: 
   - Recent, All, Runs
   - Environment
@@ -44,9 +44,7 @@ If you change the organization time zone, it impacts time stamps going forward, 
 
 ## User profile time zone
 
-Your user profile time zone setting is used to display the Azure time stamps for when a user browses Azure DevOps using time zone configured for that specific user. For example, if the organization time zone is set to EST, but my user profile setting is PST, then when I'm browsing Azure DevOps all date/time fields are displayed in PST time zone. 
-
-The following objects display time stamps using the user's time zone setting and pattern. 
+The user profile time zone and date-time pattern is used when displaying the following information in the web portal.  
 
 - Boards: Work item form  
 - Organization Settings: Usage, Time Range
