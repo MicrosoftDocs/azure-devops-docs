@@ -36,9 +36,10 @@ The following objects display time stamps using the organization time zone setti
   - Releases 
   - Library
   - Task groups
-  - `cron` schedules, Classic 
-  - `cron` schedules, YAML - UTC is the default  
 - Notifications
+
+By default, build pipeline `cron` schedules in YAML are in UTC. In classic pipelines, they are in the organization's time zone. To learn more about configuring your pipeline to run with a `cron` job, see [Configure schedules for pipelines](../../pipelines/process/scheduled-triggers.md).
+
 
 If you change the organization time zone, it impacts time stamps going forward, but doesn't retroactively update existing time stamps. 
 
@@ -46,10 +47,14 @@ If you change the organization time zone, it impacts time stamps going forward, 
 
 The user profile time zone and date-time pattern is used when displaying the following information in the web portal.  
 
-- Boards: Work item form  
+- Boards: 
+  - Project configuration, Iteration Start and End Dates
+  - Team configuration, Iteration Start and End Dates
+  - Work item form (TBD, it's not completely clear)   
 - Organization Settings: Usage, Time Range
 
- 
+For work items, the History date-time fields reference the organization's time zone setting. 
+
 ## On-premises time zone settings
 
 To be determined. 
@@ -64,7 +69,7 @@ To be determined.
 
 ## Pipelines 
 
-Review any `cron` schedules in your YAML file. By default, `cron` schedules in YAML are in UTC. In classic pipelines, they are in the organization's time zone. To learn more about configuring your pipeline to run on with a cron job, see [Configure schedules for pipelines](../../pipelines/process/scheduled-triggers.md).
+Review any `cron` schedules in your YAML file. 
 
 The Scheduled runs windows displays the times converted to the local time zone set on the computer used to browse to the Azure DevOps portal. In this example the screenshot was taken in the EST time zone.
 
