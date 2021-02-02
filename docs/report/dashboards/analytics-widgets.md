@@ -62,7 +62,7 @@ The Analytics-based Sprint Burndown widget adds a team's burndown chart for a sp
 > [!div class="mx-imgBorder"] 
 > ![Sprint Burndown Widget - Sprint Burndown Example](media/sprint-burndown/sprint-burndown-widget.png)
 
-To learn more, see [Configure and monitor sprint burndown ](configure-sprint-burndown.md).  
+To learn more, see [Configure and monitor sprint burndown](configure-sprint-burndown.md).  
 
 
 ## Cumulative Flow Diagram (CFD)
