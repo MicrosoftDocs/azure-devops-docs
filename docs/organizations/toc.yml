@@ -7,8 +7,9 @@
   href: ./settings/search-settings.md
 - name: Get started as an administrator
   href: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Timezone settings
+- name: Time zone settings
   href: ./settings/timezone-settings-and-usage.md
+  displayName: timezone, organization
 - name: Security, membership, & access
   href: ../organizations/security/toc.yml
 - name: Billing
