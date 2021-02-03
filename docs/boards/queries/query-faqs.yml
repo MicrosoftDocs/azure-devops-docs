@@ -13,6 +13,9 @@ metadata:
 
 title: Query FAQs 
 
+additionalContent: |
+  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**
+
 summary: | 
   The Query Editor supports finding work items by specifying query clauses based on fields, operators, and values. You can save and share these queries with others in your team. Here are some answers to frequently asked questions about work item queries. 
  
