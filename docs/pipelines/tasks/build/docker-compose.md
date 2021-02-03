@@ -24,7 +24,7 @@ This task can be used with a Docker registry or an Azure Container Registry.
 
 |Parameters|Description|
 |--- |--- |
-|`containerregistrytype` <br/>(Container registry type)|(Optional) Azure Container Registry if using ACR or Container Registry if using any other container registry. <br/>Default value: Azure Container Registry|
+|`containerRegistryType` <br/>(Container registry type)|(Optional) Azure Container Registry if using ACR or Container Registry if using any other container registry. <br/>Default value: Azure Container Registry|
 |`azureSubscriptionEndpoint` <br/>(Azure subscription)|(Required) Name of the Azure Service Connection. See [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection. <br/>Argument aliases: `azureSubscription`|
 |`azureContainerRegistry` <br/>(Azure container registry)|(Required) Name of the Azure Container Registry. <br/>Example: `Contoso.azurecr.io`|
 
@@ -38,7 +38,7 @@ steps:
 - task: DockerCompose@0
   displayName: Container registry login
   inputs:
-    containerregistrytype: Azure Container Registry
+    containerRegistryType: Azure Container Registry
     azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
     azureContainerRegistry: $(azureContainerRegistry)
 ```
@@ -48,7 +48,7 @@ The **containerregistrytype** value is required when using any container registr
 
 |Parameters|Description|
 |--- |--- |
-|`containerregistrytype` <br/>(Container registry type)|(Required) Azure Container Registry if using ACR or Container Registry if using any other container registry. <br/>Default value: Azure Container Registry|
+|`containerRegistryType` <br/>(Container registry type)|(Required) Azure Container Registry if using ACR or Container Registry if using any other container registry. <br/>Default value: Azure Container Registry|
 |`dockerRegistryEndpoint` <br/>(Docker registry service connection)|(Required) [Docker registry service connection](../../library/service-endpoints.md).|
 
 This YAML example specifies a container registry other than ACR where **Contoso**
@@ -58,7 +58,7 @@ is the name of the Docker registry service connection for the container registry
 - task: DockerCompose@0
   displayName: Container registry login
   inputs:
-    containerregistrytype: Container Registry
+    containerRegistryType: Container Registry
     dockerRegistryEndpoint: Contoso
 ```
 
@@ -66,7 +66,7 @@ is the name of the Docker registry service connection for the container registry
 
 |Parameters|Description|
 |--- |--- |
-|`containerregistrytype` <br/>(Container Registry Type)|(Required) Azure Container Registry if using ACR or Container Registry if using any other container registry. <br/>Default value: Azure Container Registry|
+|`containerRegistryType` <br/>(Container Registry Type)|(Required) Azure Container Registry if using ACR or Container Registry if using any other container registry. <br/>Default value: Azure Container Registry|
 |`azureSubscriptionEndpoint` <br/>(Azure subscription)|(Required) Name of the Azure Service Connection.|
 |`azureContainerRegistry` <br/>(Azure Container Registry)|(Required) Name of the Azure Container Registry.|
 |`dockerComposeFile` <br/>(Docker Compose File)|(Required) Path to the primary Docker Compose file to use. <br/>Default value: **/docker-compose.yml|
@@ -98,7 +98,7 @@ This YAML example builds the image where the image name is qualified on the basi
 
 |Parameters|Description|
 |--- |--- |
-|`containerregistrytype` <br/>(Container Registry Type)|(Required) Azure Container Registry if using ACR or Container Registry if using any other container registry. <br/>Default value: Azure Container Registry|
+|`containerRegistryType` <br/>(Container Registry Type)|(Required) Azure Container Registry if using ACR or Container Registry if using any other container registry. <br/>Default value: Azure Container Registry|
 |`azureSubscriptionEndpoint` <br/>(Azure subscription)|(Required) Name of the Azure Service Connection.|
 |`azureContainerRegistry` <br/>(Azure Container Registry)|(Required) Name of the Azure Container Registry.|
 |`dockerComposeFile` <br/>(Docker Compose File)|(Required) Path to the primary Docker Compose file to use. <br/>Default value: **/docker-compose.yml|
