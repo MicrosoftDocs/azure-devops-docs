@@ -12,20 +12,26 @@ metadata:
 
 title: Azure Boards FAQs | 
 
-  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**
  
 summary: | 
+  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+
   Find answers to frequently asked questions when using Azure Boards. For FAQs specific to Microsoft Excel integration to add or modify work items defined in Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md). 
 
   You can view a list of features that are on our roadmap for Azure Boards from the [Features Timeline](/azure/devops/release-notes/features-timeline). 
 
-  To request a feature or up-vote a feature, go to our [Developer Community page](https://developercommunity.visualstudio.com/spaces/21/visual-studio-team-services.html?type=idea).
- 
-sections:
-  - name: Access and permissions | 
-      As a member of an Azure Boards project, you can use the majority of features to track work. Limitations to select features are based on the access level and security group to which a user is assigned. To learn more, see [Default permissions and access for Azure Boards](get-started/permissions-access-boards.md).
+  To request a feature or up-vote a feature, go to our [Developer Community page](https://developercommunity.visualstudio.com/spaces/21/visual-studio-team-services.html?type=idea). 
 
+
+sections:
+  - name: Access and permissions 
+     
     questions: 
+
+      - question: Who can contribute to Azure Boards? 
+        answer: |
+          As a member of an Azure Boards project, you can use the majority of features to track work. Limitations to select features are based on the access level and security group to which a user is assigned. Other limitations can be imposed based on work tracking permissions or custom rules. To learn more, see [Default permissions and access for Azure Boards](get-started/permissions-access-boards.md). 
+
       - question: How can non-contributors view or modify work items?  
         answer: |
           ::: moniker range="azure-devops"
@@ -48,9 +54,12 @@ sections:
           See [Tools and clients that connect to Azure DevOps](../user-guide/tools.md).
 
   - name: Work items and templates |
-      For an introduction to work items, see [About work items](work-items/about-work-items.md). To define work item templates to specify defaults for select fields, see [Use templates to add and update work items](backlogs/work-item-template.md).
 
     questions: 
+      - question: Where should I start to learn about work items and templates? 
+
+        answer: |
+          For an introduction to work items, see [About work items](work-items/about-work-items.md). To define work item templates to specify defaults for select fields, see [Use templates to add and update work items](backlogs/work-item-template.md).
 
       - question: Can a work item be assigned to several users or a user group? 
 
@@ -67,14 +76,14 @@ sections:
       - question: How to mark a task or work item as a milestone task?
 
         answer: |
-          Milestone markers aren't used in Azure Boards work tracking, except for Delivery Plans. Delivery Plans provide a calendar view and allow you to define a milestone marker. For more information, see [Review team Delivery Plans](../plans/review-team-plans.md).  
+          Milestone markers aren't used in Azure Boards work tracking, except for Delivery Plans. Delivery Plans provide a calendar view and allow you to define a milestone marker. For more information, see [Review team Delivery Plans](plans/review-team-plans.md).  
 
           However, you can use one or more of the following options to mark a work item as a milestone: 
           - Simply prepend or append the word **Milestone** in the title of your work item
-          - [Add a work item tag](../queries/add-tags-to-work-items.md) labeled **Milestone**   
-          - [Add a custom field](../../organizations/settings/work/customize-process-field.md) labeled **Milestone** and populate it with a pick list of milestones  
-          - [Link work items](../backlogs/add-link.md) using the Predecessor/Successor or Related link type to a milestone work item 
-          - [Assign the milestone work item to the sprint](../sprints/assign-work-sprint.md) in which it's targeted for completion.
+          - [Add a work item tag](queries/add-tags-to-work-items.md) labeled **Milestone**   
+          - [Add a custom field](../organizations/settings/work/customize-process-field.md) labeled **Milestone** and populate it with a pick list of milestones  
+          - [Link work items](backlogs/add-link.md) using the Predecessor/Successor or Related link type to a milestone work item 
+          - [Assign the milestone work item to the sprint](sprints/assign-work-sprint.md) in which it's targeted for completion.
 
       - question: How can I best track dependencies?
         answer: |
@@ -110,13 +119,13 @@ sections:
 
         answer: |
           ::: moniker range="azure-devops"
-          With Azure Boards (cloud service), you can choose to copy child work items when copying a work item. For details, see [Copy or clone work items](../backlogs/copy-clone-work-items.md#copy-clone).  
+          With Azure Boards (cloud service), you can choose to copy child work items when copying a work item. For details, see [Copy or clone work items](backlogs/copy-clone-work-items.md#copy-clone).  
           ::: moniker-end
 
           ::: moniker range="< azure-devops"
           This feature isn't supported at this time for on-premises deployments. Copying a work item doesn't copy any parent-child linked work items. However, is is now available on Azure Boards (cloud service).  
 
-          The easiest way to accomplish the task of copying many work items with child items, is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](../backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-tree-list).
+          The easiest way to accomplish the task of copying many work items with child items, is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-tree-list).
 
           Other solutions include employing one of the following Marketplace extensions:  
           - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
