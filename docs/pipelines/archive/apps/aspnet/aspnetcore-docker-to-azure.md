@@ -85,7 +85,3 @@ We also recommend that for testing purposes you minimize costs by selecting a sm
 ### I created an Azure Container Service but it doesn't appear in Visual Studio's Configure Continuous Delivery dialog?
 
 Try reselecting your User account to refresh the dialog, or close it and reopen it. A newly-created Azure Container Service should then appear.
-
-::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../../includes/qa-versions.md)]
-::: moniker-end
