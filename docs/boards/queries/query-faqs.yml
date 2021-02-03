@@ -53,7 +53,7 @@ sections:
                 - [Compare fields](/azure/devops/boards/queries/query-field-value) 
                 - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)  
                 - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
-                - [Logical groupings](#logical-groupings)  
+                - [Logical groupings](/azure/devops/boards/queries/using-queries#logical-groupings)  
                 - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
                 - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)  
                 - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes)  
@@ -63,7 +63,7 @@ sections:
                 - [Compare fields](/azure/devops/boards/queries/query-field-value) 
                 - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)  
                 - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
-                - [Logical groupings](#logical-groupings)  
+                - [Logical groupings](/azure/devops/boards/queries/using-queries#logical-groupings)  
                 - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
                 - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)  
                 - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes)  
@@ -73,7 +73,7 @@ sections:
                 - [Compare fields](/azure/devops/boards/queries/query-field-value) 
                 - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)  
                 - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
-                - [Logical groupings](#logical-groupings)  
+                - [Logical groupings](/azure/devops/boards/queries/using-queries#logical-groupings)   
                 - [Query macros](/azure/devops/boards/queries/about-managed-queries#macros)  
                 - [Tags](/azure/devops/boards/queries/add-tags-to-work-items#query)  
                 - [Was Ever](/azure/devops/boards/queries/query-by-workflow-changes)  
@@ -83,14 +83,14 @@ sections:
                 - [Compare fields](/azure/devops/boards/queries/query-field-value)
                 - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)   
                 - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
-                - [Logical groupings](#logical-groupings)  
+                - [Logical groupings](/azure/devops/boards/queries/using-queries#logical-groupings)  
                 - [Query macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
                 ::: moniker-end
                 ::: moniker range="tfs-2013"
                 - [Compare fields](/azure/devops/boards/queries/query-field-value)
                 - [Key words](/azure/devops/boards/queries/titles-ids-descriptions)   
                 - [Linked work items](/azure/devops/boards/queries/linking-attachments)  
-                - [Logical groupings](#logical-groupings)  
+                - [Logical groupings](/azure/devops/boards/queries/using-queries#logical-groupings)  
                 - [Query macros or variables](/azure/devops/boards/queries/about-managed-queries#macros) 
                 ::: moniker-end
              :::column-end::: 
