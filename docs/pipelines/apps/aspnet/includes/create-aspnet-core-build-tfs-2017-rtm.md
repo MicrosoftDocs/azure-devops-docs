@@ -17,6 +17,7 @@ ms.date: 02/13/2020
    
    :::image type="content" source="../media/apply-aspnet-core-build-template.png" alt-text="Screenshot showing dotnet core template":::
 
-   You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
+You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes. Select **Save & queue** to queue your new build when you're done.
 
-3. For the **Agent pool**, select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
+> [!NOTE]
+> Microsoft-hosted agents are only available with Azure DevOps Services. For TFS and Azure DevOps server, you must use the [self-hosted agents](../../../agents/agents.md).
