@@ -98,7 +98,7 @@ sections:
 
       - question: Can I create a work item template that creates links to other work items?   
 
-        answer: |  
+        answer: |
           **Example request**: *When creating a template, I would like the Parent User Story to be defaulted. There is not a pre-determined field in the template. Would/could this be under a user-defined selection?*  
 
           No, there is no native support for creating hierarchy templates. In particular, you can't specify a default parent work item. However, you may find a solution To creating child work items by installing one of the following Marketplace extensions:  
@@ -108,7 +108,7 @@ sections:
 
       - question: How do I copy or clone a work item with all linked items? 
 
-        answer: |  
+        answer: |
           ::: moniker range="azure-devops"
           With Azure Boards (cloud service), you can choose to copy child work items when copying a work item. For details, see [Copy or clone work items](../backlogs/copy-clone-work-items.md#copy-clone).  
           ::: moniker-end
