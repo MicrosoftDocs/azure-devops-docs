@@ -218,13 +218,11 @@ sections:
           **Example request**: *When I create a new work item type, I get an option to choose an icon. The icon set is limited and doesn't support the icons that we would prefer for our use case. Is there a way to associate custom icon to new work item type?*   
           **No**. Uploading your custom icons isn't a supported feature at this time.  
 
-      ::: moniker range="azure-devops"
-
+::: moniker range="azure-devops"
       - question: Is it possible to change the Azure DevOps brand? 
         answer: | 
           **No**. Branding changes aren't supported.  
-
-      ::: moniker-end 
+::: moniker-end 
 
 
 
