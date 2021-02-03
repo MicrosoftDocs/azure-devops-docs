@@ -10,9 +10,8 @@ metadata:
   monikerRange: '<= azure-devops'
   ms.date: 02/02/2021
 
-title: Azure Boards FAQs  
+title: Azure Boards FAQs | 
 
-additionalContent: |
   **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**
  
 summary: | 
@@ -97,15 +96,15 @@ sections:
           **No**. Cloning doesn't copy work item subtasks for on-premises deployments. Is this feature on the roadmap? **Yes**. In fact, it has been released on Azure Boards (cloud service).  
           ::: moniker-end
 
-      - question: Can I create a work item template that creates links to other work items?  |
-          **Example request**: *When creating a template, I would like the Parent User Story to be defaulted. There is not a pre-determined field in the template. Would/could this be under a user-defined selection?*
+      - question: Can I create a work item template that creates links to other work items?   
 
         answer: |  
+          **Example request**: *When creating a template, I would like the Parent User Story to be defaulted. There is not a pre-determined field in the template. Would/could this be under a user-defined selection?*  
+
           No, there is no native support for creating hierarchy templates. In particular, you can't specify a default parent work item. However, you may find a solution To creating child work items by installing one of the following Marketplace extensions:  
           - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
           - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
           - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks) 
-          <a id="faq-copy-clone" /> 
 
       - question: How do I copy or clone a work item with all linked items? 
 
@@ -132,5 +131,4 @@ additionalContent: |
   - [Azure Boards extensions](extensions/index.md)
   - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
 
-additionalContent: |
   *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*
