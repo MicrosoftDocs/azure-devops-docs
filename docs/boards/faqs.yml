@@ -131,22 +131,18 @@ sections:
           - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
           ::: moniker-end
 
-  ::: moniker range=">= azure-devops-2019"
-
   - name: GitHub integration
 
     questions: 
       - question: How do I connect Azure Boards to GitHub?
 
         answer: | 
-          Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](github/index.md).
+          Azure Boards integrates with GitHub for Auzre DevOps Server 2019 and later versions. To learn more, see [Azure Boards & GitHub](github/index.md).
 
       - question: Can I specify the status when linking a work item to a GitHub commit or PR?
 
         answer: | 
           **No**. This feature isn't supported at this time. 
-
-  ::: moniker-end 
 
   - name: Backlogs and boards 
     questions: 
