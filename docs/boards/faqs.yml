@@ -10,17 +10,15 @@ metadata:
   monikerRange: '<= azure-devops'
   ms.date: 02/02/2021
 
-title: Azure Boards FAQs | 
+title: Azure Boards FAQs  
 
  
 summary: | 
   **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
 
-  Find answers to frequently asked questions when using Azure Boards. For FAQs specific to Microsoft Excel integration to add or modify work items defined in Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md). 
+  Find answers to frequently asked questions when using Azure Boards. For FAQs specific to queries or Microsoft Excel integration to add or modify work items defined in Azure DevOps, see [Query FAQs](queries/query-faqs.yml) and [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md). 
 
-  You can view a list of features that are on our roadmap for Azure Boards from the [Features Timeline](/azure/devops/release-notes/features-timeline). 
-
-  To request a feature or up-vote a feature, go to our [Developer Community page](https://developercommunity.visualstudio.com/spaces/21/visual-studio-team-services.html?type=idea). 
+  You can view a list of features that are on our roadmap for Azure Boards from the [Features Timeline](/azure/devops/release-notes/features-timeline). To request a feature or up-vote a feature, go to our [Developer Community page](https://developercommunity.visualstudio.com/spaces/21/visual-studio-team-services.html?type=idea). 
 
 
 sections:
@@ -133,8 +131,111 @@ sections:
           - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
           ::: moniker-end
 
-additionalContent: |
+  ::: moniker range=">= azure-devops-2019"
+
+  - name: GitHub integration
+
+    questions: 
+      - question: How do I connect Azure Boards to GitHub?
+
+        answer: | 
+          Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](github/index.md).
+
+      - question: Can I specify the status when linking a work item to a GitHub commit or PR?
+
+        answer: | 
+          **No**. This feature isn't supported at this time. 
+
+  ::: moniker-end 
+
+  - name: Backlogs and boards 
+    questions: 
+      - question: What's the difference between a backlog and a board?  
+        answer: | 
+          Each backlog and board represents a filtered set of work items based on team area path and iteration path assignments. Backlogs list work items, boards display work items as cards. To understand how the filtering is applied, see [About teams and Agile tools, Team defaults referenced by backlogs and boards](../organizations/settings/about-teams-and-settings.md#team-defaults). For details on usage, see [Backlogs, Boards, and Plans](backlogs/backlogs-boards-plans.md).
+
+      - question: How do I add a backlog or board?  
+        answer: | 
+          To add a backlog or board, you add a team. Each team is configured with it's own set of it's own set of backlogs and boards as described in [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). Each team can customize these Agile tools. 
+
+      - question: How do I migrate my existing backlog to Azure Boards?  
+        answer: | 
+          See [Azure Boards migration and integration](extensions/migrate-integrate.md).
+
+      - question: How do I search for comments made to backlog items? 
+        answer: | 
+          See the answer provided in [How do I search for entries made in the Discussion field?](#faq-search-comments) later in this article. 
+
+      - question: How do the three types of backlogs&mdash;product, portfolio, and sprint backlogs&mdash;differ?
+        answer: | 
+          Each backlog lists a filtered set of work items based on the team's selected area path, iteration paths, and work item types.  
+          - **Product backlog**: By default lists User Stories (Agile), Issues (Basic), Product Backlog Items and Bugs (Scrum), or Requirements (CMMI). Provides options to show **Parents**, **Forecast**, and **In Progress** or **Completed** child items.  
+          - **Portfolio backlog**: By default lists Features (all process models) for the Features backlog, and Epics (Agile, Scrum, and CMMI) for the Epic backlog. Provides options to show **Parents** and **In Progress** or **Completed** child items. 
+          - **Sprint backlog**: By default lists all product backlog items assigned to the selected iteration, regardless of status. Provides options to show **Work details**.   
+
+          To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs/backlogs-boards-plans.md).
+
+      - question: Can I define sprints and use them with my Kanban board? 
+        answer: | 
+          **Yes**. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md). 
+
+      - question: How do I create a view of the critical path? 
+        answer: | 
+          Azure DevOps doesn't provide a native view of the critical path. In part, as Agile methodologies favor a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks.
+
+          That said, you may find that one or more of the following features supports both CPM and MVP. You gain access to these features by installing a Marketplace extension.
+ 
+          - [Delivery Plans](../plans/review-team-plans.md)
+          - [Feature Timeline](../extensions/feature-timeline.md)  
+          - [Dependency Tracker](../extensions/dependency-tracker.md)  
+
+          If your organization supports connection to Microsoft Project, you may find additional [Marketplace extensions](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance) that support connection of Azure DevOps to Microsoft Project.  
+
+          For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42).
+
+
+  - name: Configuration and customizations  
+
+      - question: What is configurable or customizable? 
+        answer: | 
+          Configuration and customization of Azure Boards occurs at the project and team level. For an overview of what you can configure and customize to support your business needs, see [Configuration and customization of Azure Boards](configure-customize.md). 
+
+      - question: How do I change the picklist of values? 
+        answer: | 
+          Picklist value entries are dependent on the data type. Refer to the following articles based on the field type of interest:  
+          - **Numeric or string picklist fields**: You can customize the menu values for fields such as [Priority](~/boards/queries/planning-ranking-priorities.md), [Activity](~/boards/queries/query-numeric.md), [Discipline](~/boards/queries/query-numeric.md), and so on. See [Add and manage fields (Inherited process)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a field, customize a picklist (On-premises XML process)](../../reference/add-modify-field.md).  
+          - **Area Path or Iteration Path**: These tree-path fields are configured for each project. To learn more, see [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md).  
+          - **Person-name or Identity fields**: To add values for fields associated with user accounts such as Assigned To, [add users to a project security group or a team](~/organizations/security/add-users-team-project.md). By default, the list for these fields contain the account names for all users and groups that have been added to your organization or on-premises collection. These accounts are often synchronized with Active Directory or Azure Active Directory. See [Add AD/Azure AD users or groups to a built-in security group](../../organizations/security/add-ad-aad-built-in-security-groups.md).
+
+      - question: Can I add or rename a portfolio backlog?  
+        answer: | 
+          **Yes**. You can add up to a total of five portfolio backlogs. And, you can rename a portfolio backlog and add custom work item types to a portfolio backlog.  
+
+          To learn how, see [Customize your backlogs or boards (Inheritance process)](../organizations/settings/work/customize-process-backlogs-boards.md) or [Add a portfolio backlog level (On-premises XML process)](../reference/add-portfolio-backlogs.md).
+
+
+      - question: Can sub hubs within Azure Boards be disabled? 
+        answer: | 
+          **No**. While you can disable an entire service, you can't disable individual pages within a service. To learn more, see [Turn a service on or off](../organizations/settings/set-services.md). 
+
+      - question: Can I upload my own custom work item type icons?  
+        answer: | 
+          **Example request**: *When I create a new work item type, I get an option to choose an icon. The icon set is limited and doesn't support the icons that we would prefer for our use case. Is there a way to associate custom icon to new work item type?*   
+          **No**. Uploading your custom icons isn't a supported feature at this time.  
+
+      ::: moniker range="azure-devops"
+
+      - question: Is it possible to change the Azure DevOps brand? 
+        answer: | 
+          **No**. Branding changes aren't supported.  
+
+      ::: moniker-end 
+
+
+
+additionalContent: | 
   ## Related articles
+  - [Query FAQs](queries/query-faqs.yml)
   - [Work across projects FAQs](../project/work-across-projects-faqs.yml)
   - [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md)
   - [Azure Boards extensions](extensions/index.md)
