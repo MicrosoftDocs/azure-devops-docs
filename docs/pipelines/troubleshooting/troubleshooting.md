@@ -537,20 +537,6 @@ However, when it sees the second line, the agent will process everything to the 
 To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md).
 
 
-:::moniker range="azure-devops"
-
-## Task insights for failed pipeline runs
-
-Azure DevOps provides a **Task Insights for Failed Pipeline Runs** setting, that when enabled, provides pop-up notifications of build failures with a link to view a report.
-
-:::image type="content" source="media/task-insights.png" alt-text="This task has failed pop-up.":::
-
-To configure this setting, navigate to [Preview features](../../project/navigation/preview-features.md), find **Task Insights for Failed Pipeline Runs**, and choose the desired setting.
-
-:::image type="content" source="media/task-insights-setting.png" alt-text="Task insights for failed pipeline runs setting.":::
-
-:::moniker-end
-
 ## Get logs to diagnose problems
 
 If none of the previous suggestions match your problem, you can use the information in the logs to diagnose your failing pipeline.
