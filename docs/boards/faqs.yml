@@ -189,9 +189,8 @@ sections:
 
           For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42).
 
-
-  - name: Configuration and customizations  
-
+  - name: Configuration and customizations 
+    questions: 
       - question: What is configurable or customizable? 
         answer: | 
           Configuration and customization of Azure Boards occurs at the project and team level. For an overview of what you can configure and customize to support your business needs, see [Configuration and customization of Azure Boards](configure-customize.md). 
