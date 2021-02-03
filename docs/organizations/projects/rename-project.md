@@ -237,14 +237,15 @@ The reporting and SharePoint server administrator can manually run these jobs to
 
 ::: moniker-end
 
-#### After rename operation
+## Results of the rename operation
 
-* The work item IDs are unique across the entire org, the URL will continue to work for both the new and old team name.  This is intended to avoid breaking links.
-* As long as the project in the URL is a valid project in the org, we will show the work item ID provided. So assume there is an org with projects "Foo" and "Bar". 
-https://dev.azure.com/MyOrg/Foo/_workitems/edit/40/ - Displays work item 40
-https://dev.azure.com/MyOrg/Bar/_workitems/edit/40/ - Displays work item 40
-https://dev.azure.com/MyOrg/Potato/_workitems/edit/40/ - Displays a 404 error
-*Work item links will not expire.
+* Work item IDs are unique across the organization. The URL continues to work for both the new and old team name. This is intended to avoid breaking links.
+* As long as the project in the URL is a valid project in the organization, we show the work item ID provide. In the following example, there's an organization with projects named "Foo" and "Bar". 
+   
+   https://dev.azure.com/MyOrg/Foo/_workitems/edit/40/ - Displays work item 40
+   https://dev.azure.com/MyOrg/Bar/_workitems/edit/40/ - Displays work item 40
+   https://dev.azure.com/MyOrg/Potato/_workitems/edit/40/ - Displays a 404 error
+* Work item links don't expire.
 * The old project name can be used again.
 
 ## Related articles
