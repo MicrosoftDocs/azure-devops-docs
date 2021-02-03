@@ -11,10 +11,11 @@ metadata:
   monikerRange: '<= azure-devops'
   ms.date: 01/25/2021
 
-title: Query FAQs | 
-  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**
+title: Query FAQs  
 
 summary: | 
+  **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
+
   The Query Editor supports finding work items by specifying query clauses based on fields, operators, and values. You can save and share these queries with others in your team. Here are some answers to frequently asked questions about work item queries. 
  
 sections:
@@ -126,5 +127,8 @@ sections:
 
 additionalContent: |
   ## Related articles
+  -  [Azure Boards FAQs](../faqs.yml) 
   -  [Work across projects FAQs](../../project/work-across-projects-faqs.yml)
-  -  [Excel FAQs](../backlogs/office/faqs.md) 
+  -  [Excel FAQs](../backlogs/office/faqs.md)
+
+  *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*
