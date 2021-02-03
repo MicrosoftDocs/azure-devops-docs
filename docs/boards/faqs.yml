@@ -51,7 +51,7 @@ sections:
         answer: |
           See [Tools and clients that connect to Azure DevOps](../user-guide/tools.md).
 
-  - name: Work items and templates |
+  - name: Work items and templates  
 
     questions: 
       - question: Where should I start to learn about work items and templates? 
