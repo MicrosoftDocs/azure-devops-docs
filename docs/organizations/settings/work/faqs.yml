@@ -80,10 +80,68 @@ sections:
           Auditing of process changes is available for Azure DevOps Services (cloud) only. To learn more, see [Access, export, and filter audit logs](../../audit/azure-devops-auditing.md).
           ::: moniker-end
           A best practice is to maintain process templates under source control. In that way, changes made to a process is available through standard source control versioning.  
- 
+
+
+      - question: Are there set limits regarding configuration or customization?  
+        answer: | 
+          There are a number of limits Azure DevOps imposes such as the number of Area Paths and Iteration Paths you can define for a project, the number of processes you can define, and more. For a full list, see [Work tracking, process, and project limits](object-limits.md). 
+
+
+  - name: Configuration
+    questions: 
+
+      - question: Who has permissions to configure Azure Boards?  
+        answer: | 
+
+          In general, you need to be a member of the Project Administrators group to configure the following project-level objects. Or, you can provide permissions at the node level or object level to individual members or groups. To learn more, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md). 
+          - [Area Paths](../set-area-paths.md)
+          - [Modify work items under an area path](../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
+          - [Iteration Paths](../set-iteration-paths-sprints.md)
+          - [Shared Queries and Shared Query folders](../../../boards/queries/organize-queries.md)
+          - [Define and edit Delivery Plans](../../../boards/plans/edit-delivery-plan-permissions.md)  
+            
+          To grant permissions to an individual member or group to perform the following tasks, you must set the corresponding project-level permissions to **Allow**. See [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
+          ::: moniker range="azure-devops"
+          - [Create tag definition](../../../boards/queries/add-tags-to-work-items.md)
+          - [Delete and restore work items](../../../boards/backlogs/remove-delete-work-items.md)
+          - [Move work items out of a project](../../../boards/backlogs/move-change-type.md)
+          - [Permanently delete work items](../../../boards/backlogs/remove-delete-work-items.md)
+          ::: moniker-end
+          ::: moniker range="< azure-devops"
+          - [Create tag definition](../../../boards/queries/add-tags-to-work-items.md)
+          - [Delete and restore work items](../../../boards/backlogs/remove-delete-work-items.md)
+          - [Permanently delete work items](../../../boards/backlogs/remove-delete-work-items.md)
+          ::: moniker-end
+            
+          In general, you need to be a member of a team or granted the [Team Administrator](../add-team-administrator.md) role to configure the following team-level objects.  
+          - [Default and selected Area Paths](../set-area-paths.md#team-area-paths)
+          - [Default and selected Iteration Paths](../set-iteration-paths-sprints.md#activate)
+          - [Define work item templates](../../../boards/backlogs/work-item-template.md) 
+
+
   - name: Customization
      
     questions: 
+
+      - question: Who has permissions to customize Azure Boards?  
+        answer: | 
+
+          ::: moniker range=">= azure-devops-2019"
+          In general, you need to be a member of the Project Collection Administrators group to customize an Inherited process. Or, you must have the following explicit collection-level permissions set to **Allow**:  
+          - [Create process](manage-process.md)  
+          - [Delete field from organization](customize-process-field.md)  
+          - [Delete process](manage-process.md)  
+          - [Edit process](customize-process.md)   
+             
+          To grant a project member permissions, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
+          ::: moniker-end
+          ::: moniker range="< azure-devops"
+          To modify an On-premises XML process, you need to be a member of the Project Collection Administrators group to manage process templates or the Project Administrators group to exercise a [**witadmin** commmand](../../../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md). Or, you must have the following explicit collection-level permissions set to **Allow**: 
+          - [Delete field](../../../reference/add-modify-field.md)
+          - [Manage process template](../../../boards/work-items/guidance/manage-process-templates.md)
+          To grant a project member permissions, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
+          ::: moniker-end
+
       - question: How do I change the picklist of values? 
         answer: | 
           Picklist value entries are dependent on the data type. Refer to the following articles based on the field type of interest:  
@@ -108,9 +166,9 @@ additionalContent: |
   ## Related articles
   - [Azure Boards Configuration and Customization](../../../boards/configure-customize.md)
   - [Azure Boards FAQs](../../../boards/faqs.yml)
-  - [Query FAQs](../../../boards/queries/query-faqs.yml).
-  - [Azure Boards extensions](../../../boards/extensions/index.md)
-  - [About teams and Agile tools](../about-teams-and-settings.md)
+  - [Work tracking, process, and project limits](object-limits.md)   
+  - [Azure Boards extensions](../../../boards/extensions/index.md)  
+  - [About teams and Agile tools](../about-teams-and-settings.md)  
 
   *Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*
 
