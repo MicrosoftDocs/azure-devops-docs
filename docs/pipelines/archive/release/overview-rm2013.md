@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Release Management 2013 (server and client version)
 
-**Visual Studio 2013 | Azure Pipelines | Team Foundation Server 2013**  
+**Visual Studio 2013 | Team Foundation Server 2013**  
 
 Go to the **[Release Management 2013 documentation in MSDN Library](/previous-versions/visualstudio/visual-studio-2013/dn217874(v=vs.120))**.
 

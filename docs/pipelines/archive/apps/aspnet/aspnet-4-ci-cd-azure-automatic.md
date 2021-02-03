@@ -249,9 +249,6 @@ may encounter the following known issues:
 
 1. [Commit and push (Git)](../../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
-::: moniker range="< azure-devops"
-[!INCLUDE [qa-versions](../../../includes/qa-versions.md)]
-::: moniker-end
 
 <!-- ENDSECTION -->
 
