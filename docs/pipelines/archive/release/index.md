@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Release Management for Visual Studio, Azure Pipelines, and Team Foundation Server
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | VS 2015 | VS 2013**  
+**VS 2015 | VS 2013**  
 
 **Release Management** helps you support a rapid release cadence and manage simultaneous releases.
 You can:
