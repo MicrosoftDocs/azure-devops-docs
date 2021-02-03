@@ -17623,6 +17623,36 @@
       "source_path": "docs/boards/queries/adhoc-vs-managed-queries.md",
       "redirect_url": "/azure/devops/boards/queries/about-managed-queries#ad-hoc-v-managed",
       "redirect_document_id": false	
+    },
+    {
+      "source_path": "docs/pipelines/archive/news/2015-01.md",
+      "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/news/2015-02.md",
+      "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/news/2015.md",
+      "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/news/2016.md",
+      "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/news/2017.md",
+      "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/archive/news/rm-archived.md",
+      "redirect_url": "/azure/devops/release-notes/index",
+      "redirect_document_id": false
     }
   ]
 }
