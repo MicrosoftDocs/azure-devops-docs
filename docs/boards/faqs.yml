@@ -8,7 +8,8 @@ metadata:
   author: KathrynEE
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
-  ms.date: 02/02/2021
+  ms.date: 02/03/2021
+
 
 title: Azure Boards FAQs  
 
@@ -51,18 +52,28 @@ sections:
         answer: |
           See [Tools and clients that connect to Azure DevOps](../user-guide/tools.md).
 
-  - name: Work items and templates  
+  - name: Work items  
 
     questions: 
-      - question: Where should I start to learn about work items and templates? 
+      - question: Where should I start to learn about work items and work item types? 
 
         answer: |
-          For an introduction to work items, see [About work items](work-items/about-work-items.md). To define work item templates to specify defaults for select fields, see [Use templates to add and update work items](backlogs/work-item-template.md).
+          For an introduction to work items, see [About work items](work-items/about-work-items.md).  
+
+      - question: How do I view all work items? 
+
+        answer: |
+          To view all work items defined in a project, open a query and add two clauses: 
+          - `Work Item Type = [Any]`
+          - `State = [Any]` 
+
+          From there, you can add filters to refine the query. To learn more, see [Create and save managed queries with the query editor](../queries/using-queries.md).
+
 
       - question: Can a work item be assigned to several users or a user group? 
 
         answer: |
-          No. Work items can only be assigned to a single user. Also, that user must have been [added to a project or team](../organizations/security/add-users-team-project.md).  
+          **No**. Work items can only be assigned to a single user. Also, that user must have been [added to a project or team](../organizations/security/add-users-team-project.md).  
 
       - question: What's the recommended method to group work? 
 
@@ -100,18 +111,16 @@ sections:
           Yes. Azure Boards (cloud service) now supports copying child work items when copying a work item. For details, see [Copy or clone work items](backlogs/copy-clone-work-items.md#copy-clone).  
           ::: moniker-end
           ::: moniker range="< azure-devops"
-          **No**. Cloning doesn't copy work item subtasks for on-premises deployments. Is this feature on the roadmap? **Yes**. In fact, it has been released on Azure Boards (cloud service).  
-          ::: moniker-end
+          This feature isn't supported at this time for on-premises deployments. *Is this feature on the roadmap?* **Yes**.  
+            
+          The easiest way to accomplish the task of copying many work items with child items, is to create parent-child links to new work items using Excel. To learn how, see [Bulk add or modify work items with Excel, Add a hierarchy of linked work items](../backlogs/office/bulk-add-modify-work-items-excel.md#import-work-items-tree-list).
 
-      - question: Can I create a work item template that creates links to other work items?   
-
-        answer: |
-          **Example request**: *When creating a template, I would like the Parent User Story to be defaulted. There is not a pre-determined field in the template. Would/could this be under a user-defined selection?*  
-
-          No, there is no native support for creating hierarchy templates. In particular, you can't specify a default parent work item. However, you may find a solution To creating child work items by installing one of the following Marketplace extensions:  
+          Other solutions include employing one of the following Marketplace extensions:  
           - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
           - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
-          - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks) 
+          - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
+          ::: moniker-end
+
 
       - question: How do I copy or clone a work item with all linked items? 
 
@@ -130,6 +139,77 @@ sections:
           - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
           - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
           ::: moniker-end
+
+
+
+  - name: Work item templates  
+
+    questions: 
+
+      - question: Where should I start to learn about work item templates? 
+        answer: |
+          You can define work item templates for teams you belong to. To define work item templates to specify defaults for select fields, see [Use templates to add and update work items](backlogs/work-item-template.md).
+
+      - question: How do I set a default template for a team? 
+        answer: |
+          ::: moniker range="> tfs-2015"
+          The feature to set a default template for a team isn't a supported feature at this time. 
+          ::: moniker-end
+          ::: moniker range="<= tfs-2015"
+          From the Work Item Templates tool, you can set a default for each work item type. However, that default is set only for you and available only when working through Team Explorer. Open the template context menu and select **Set as default**. 
+          ::: moniker-end
+
+      - question: Can I copy a work item template to another team or project? 
+        answer: |
+          **No**. This feature isn't supported at this time.  
+
+      - question: Can I create a work item template that creates links to other work items?   
+
+        answer: |
+          **Example request**: *When creating a template, I would like the Parent User Story to be defaulted. There is not a pre-determined field in the template. Would/could this be under a user-defined selection?*  
+
+          No, there is no native support for creating hierarchy templates. In particular, you can't specify a default parent work item. You can, however, quickly copy tasks, bugs, and other items using [Excel](backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. Or, you can use a Kanban board to add child tasks, backlog items, or features. To learn more, see:  
+          - [Add task checklists](../boards/add-task-checklists.md)
+          - [Add, run, and update inline tests](../boards/add-run-update-tests.md) 
+          - [Add features and epics](../boards/kanban-epics-features-stories.md)  
+
+          ::: moniker range=">= azure-devops-2019"
+          Alternatively, you may find a solution for creating child work items by installing one of the following Marketplace extensions:  
+          - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
+          - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
+          - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks) 
+          ::: moniker-end
+
+      - question: How do I delete a work item template?
+        answer: |
+          From the work item type page, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template and select the **Delete** option. 
+            
+          > [!div class="mx-imgBorder"]  
+          > ![Delete template](media/templates/delete-template.png)
+ 
+
+
+  - name: Rollup
+
+    questions: 
+      - question: How can I get a rollup of Story Points, Effort, or other work item fields? 
+
+        answer: | 
+
+          ::: moniker range=">= azure-devops-2020"
+          Rollup columns allow you to view progress bars or totals of numeric fields or descendant items within a hierarchy. Descendant items correspond to all child items within the hierarchy. You can add one or more rollup columns to a product or portfolio backlog. You can add rollup columns to a product or portfolio backlog. See {Display rollup progress or totals](backlogs/display-rollup.md). 
+          ::: moniker-end
+          ::: moniker range="< azure-devops-2020"
+          Rollup provides summed values of select fields for all child work items of a parent. To learn more, see  [Rollup of work and other fields](../reference/xml/support-rollup-of-work-and-other-fields.md). 
+          ::: moniker-end
+  
+    questions: 
+      - question: Can I get a rollup of team capacity?
+
+        answer: | 
+          **No**. The data entered for team capacity isn't stored in the regular data stores.
+ 
+
 
   - name: GitHub integration
 
@@ -159,7 +239,6 @@ sections:
           See [Azure Boards migration and integration](extensions/migrate-integrate.md).
 
 
-
       - question: How do the three types of backlogs--product, portfolio, and sprint backlogs--differ?
         answer: | 
           Each backlog lists a filtered set of work items based on the team's selected area path, iteration paths, and work item types.  
@@ -172,6 +251,10 @@ sections:
       - question: Can I define sprints and use them with my Kanban board? 
         answer: | 
           **Yes**. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md). 
+
+      - question: If I manage bugs with tasks, can I add bugs as a checklist to a requirement? 
+        answer: | 
+           **No**. Task checklists only support the task work item type. 
 
       - question: How do I create a view of the critical path? 
         answer: | 

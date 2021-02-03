@@ -8,7 +8,7 @@ metadata:
   author: KathrynEE
   ms.topic: troubleshooting
   monikerRange: '<= azure-devops'
-  ms.date: 02/02/2021
+  ms.date: 02/03/2021
 
 title: Azure Boards Configuration and Customization FAQs  
 
@@ -16,7 +16,7 @@ title: Azure Boards Configuration and Customization FAQs
 summary: | 
   **Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013**  
 
-  You have many options to configure and customize an Azure Boards project. If you are new to this subject, see [Azure Boards Configuration and Customization](../../../boards/configure-customize.md). Here, you'll find answers to frequently asked questions when configuring or customizing Azure Boards. For FAQs specific to using Azure Boards or working with queries, see [Azure Boards FAQs](../../../boards/faqs.yml) and [Query FAQs](queries/query-faqs.yml). 
+  You have many options to configure and customize an Azure Boards project. If you are new to this subject, see [Azure Boards Configuration and Customization](../../../boards/configure-customize.md). Here, you'll find answers to frequently asked questions when configuring or customizing Azure Boards. For FAQs specific to using Azure Boards or working with queries, see [Azure Boards FAQs](../../../boards/faqs.yml) and [Query FAQs](../../../boards/queries/query-faqs.yml). 
 
  
 sections:
@@ -30,12 +30,13 @@ sections:
       - question: Who has permissions to configure Azure Boards?  
         answer: | 
 
-          In general, you need to be a member of the Project Administrators group to configure the following project-level objects. Or, you can provide permissions at the node level or object level to individual members or groups. To learn more, see [Set permissions and access for work tracking](../set-permissions-access-work-tracking.md). 
+          In general, you need to be a member of the Project Administrators group to configure the following project-level objects. Or, you can provide permissions at the node level or object level to individual members or groups. To learn more, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md). 
           - [Area Paths](../set-area-paths.md)
-          - [Modify work items under an area path](../set-permissions-access-work-tracking.md#set-permissions-area-path)
+          - [Modify work items under an area path](../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
           - [Iteration Paths](../set-iteration-paths-sprints.md)
           - [Shared Queries and Shared Query folders](../../../boards/queries/organize-queries.md)
-          - [Define and edit Delivery Plans](../../boards/plans/edit-delivery-plan-permissions.md)  
+          - [Define and edit Delivery Plans](../../../boards/plans/edit-delivery-plan-permissions.md)  
+            
           To grant permissions to an individual member or group to perform the following tasks, you must set the corresponding project-level permissions to **Allow**. See [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
           ::: moniker range="azure-devops"
           - [Create tag definition](../../../boards/queries/add-tags-to-work-items.md)
@@ -48,8 +49,8 @@ sections:
           - [Delete and restore work items](../../../boards/backlogs/remove-delete-work-items.md)
           - [Permanently delete work items](../../../boards/backlogs/remove-delete-work-items.md)
           ::: moniker-end
- 
-          In general, you need to be a member of a team or granted the Team Administrator role to configure the following team-level objects.  
+            
+          In general, you need to be a member of a team or granted the [Team Administrator](../add-team-administrator.md) role to configure the following team-level objects.  
           - [Default and selected Area Paths](../set-area-paths.md#team-area-paths)
           - [Default and selected Iteration Paths](../set-iteration-paths-sprints.md#activate)
           - [Define work item templates](../../../boards/backlogs/work-item-template.md) 
@@ -58,11 +59,12 @@ sections:
         answer: | 
 
           ::: moniker range=">= azure-devops-2019"
-          In general, you need to be a member of the Project Collection Administrators group to customize an Inherited process. Or, you must have the following explicit collection-level permissions set to **Allow**: 
-          - [Create process](manage-process.md)
-          - [Delete field from organization](customize-process-field.md)
-          - [Delete process](manage-process.md)
-          - [Edit process](customize-process.md) 
+          In general, you need to be a member of the Project Collection Administrators group to customize an Inherited process. Or, you must have the following explicit collection-level permissions set to **Allow**:  
+          - [Create process](manage-process.md)  
+          - [Delete field from organization](customize-process-field.md)  
+          - [Delete process](manage-process.md)  
+          - [Edit process](customize-process.md)   
+             
           To grant a project member permissions, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
           ::: moniker-end
           ::: moniker range="< azure-devops"
@@ -72,13 +74,13 @@ sections:
           To grant a project member permissions, see [Set permissions at the project- or collection-level](../../security/set-project-collection-level-permissions.md).
           ::: moniker-end
 
-      - question: Is there a way to determine who changed what?  
+      - question: Is there a way to determine who changed what within a process?  
         answer: | 
           ::: moniker range=">= azure-devops-2019"
           Auditing of process changes is available for Azure DevOps Services (cloud) only. To learn more, see [Access, export, and filter audit logs](../../audit/azure-devops-auditing.md).
           ::: moniker-end
           A best practice is to maintain process templates under source control. In that way, changes made to a process is available through standard source control versioning.  
-          
+ 
   - name: Customization
      
     questions: 
@@ -106,7 +108,7 @@ additionalContent: |
   ## Related articles
   - [Azure Boards Configuration and Customization](../../../boards/configure-customize.md)
   - [Azure Boards FAQs](../../../boards/faqs.yml)
-  - [Query FAQs](queries/query-faqs.yml).
+  - [Query FAQs](../../../boards/queries/query-faqs.yml).
   - [Azure Boards extensions](../../../boards/extensions/index.md)
   - [About teams and Agile tools](../about-teams-and-settings.md)
 
