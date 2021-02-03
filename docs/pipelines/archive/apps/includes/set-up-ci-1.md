@@ -11,7 +11,7 @@ ms.date: 02/19/2020
 
 Under the **Build and Release** menu select **Builds** then **New** to create a new build definition.
 
-:::image type="content" source="../../../media/set-up-first-build.png" alt-text="Create a new build definition for a repository":::
+:::image type="content" source="../../../apps/media/set-up-first-build.png" alt-text="Create a new build definition for a repository":::
 
 Select a source and chose your team project, repository, and default branch then select **Continue**.
 
