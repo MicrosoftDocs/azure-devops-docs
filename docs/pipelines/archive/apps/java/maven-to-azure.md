@@ -147,8 +147,5 @@ A: Yes.
 
 [!INCLUDE [temp](../../../includes/qa-agents.md)]
 
-::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../../includes/qa-versions.md)]
-::: moniker-end
 
 <!-- ENDSECTION -->
