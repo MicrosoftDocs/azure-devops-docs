@@ -100,8 +100,7 @@ For information about agents and pipelines, see:
 ## Use the ARM Template deployment task 
 
 > [!IMPORTANT]
-> These instructions refer to version 2 of the task.  
-> Add "ARM Template deployment: Resources Group scope" task. Then, switch the **Task version** to 2 from 3. 
+> These instructions refer to version 2 of the task. Switch your **Task version** to from 3 to 2. 
 
 
 You can use the [ARM Template deployment task](https://aka.ms/argtaskreadme)
