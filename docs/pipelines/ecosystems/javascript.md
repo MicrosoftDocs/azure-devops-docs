@@ -903,6 +903,10 @@ In each step where you need to use the `nvm` command, you'll need to start the s
 
 [Build, release, and test tasks](../tasks/index.md)
 
+### My pipelines fails with a FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory**
+
+This happens when the Node package has exceeded the memory usage limit. In such scenarios, add a variable such as **NODE_OPTION** assign it a value of ***--max_old_space_size=16384***
+
 ### How can I version my npm packages as part of the build process?
 
 One option is to use a combination of version control and [npm version](https://docs.npmjs.com/cli/version). At the end of a pipeline run, you can update your repo with the new version. In this YAML, there is a GitHub repo and the package gets deployed to npmjs. Note that your build will fail if there is a mismatch between your package version on npmjs and your `package.json` file. 
@@ -979,5 +983,5 @@ steps: # Checking out connected repo
       git config --global user.name "Azure Pipeline"
       git add package.json
       git commit -a -m "Test Commit from Azure DevOps"
-      git push -u origin HEAD:main
+      git push -u origin HEAD:master
 ```
