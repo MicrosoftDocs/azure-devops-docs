@@ -5,7 +5,6 @@ description: Use Visual Studio to automatically generate a CI/CD pipeline to dep
 ms.topic: conceptual
 ms.assetid: 498BF7D8-2932-46FB-BD38-E8EBD1C5CABA
 ms.date: 02/10/2017
-monikerRange: '>= tfs-2015'
 ---
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy your ASP.NET web app to Azure
