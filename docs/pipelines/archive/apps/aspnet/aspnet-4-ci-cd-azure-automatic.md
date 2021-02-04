@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 01/02/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Use Azure to automatically generate a CI/CD pipeline to deploy an ASP.NET app
