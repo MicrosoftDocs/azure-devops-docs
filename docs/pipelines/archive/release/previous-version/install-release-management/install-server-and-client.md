@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
-monikerRange: '>= tfs-2013'
 ---
 
 # Install Release Management server and client 
