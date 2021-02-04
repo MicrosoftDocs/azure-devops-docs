@@ -1,6 +1,6 @@
 ---
 title: Use packages from npmjs.com
-description: Use packages from npmjs.com in Azure DevOps Services and Team Foundation Server via upstream sources or scopes
+description: Use packages from npmjs.com using scopes or upstream sources
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -38,7 +38,7 @@ To use npmjs.com as an upstream source, either create a new feed or edit an exis
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
 > [!NOTE]
-> Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](/previous-versions/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=azure-devops) and consider upgrading it, if needed.
+> Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](/previous-versions/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=azure-devops&preserve-view=true) and consider upgrading it, if needed.
 
 ::: moniker range=">= azure-devops-2019"  
 

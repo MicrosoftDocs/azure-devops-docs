@@ -1,5 +1,5 @@
 ---
-title: Look up definitions and sample queries 
+title: Index to query examples, tasks, operators, and macros
 titleSuffix: Azure Boards
 description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps
 ms.custom: boards-queries
@@ -16,7 +16,7 @@ ms.date: 01/25/2021
 
 [!INCLUDE [temp](../includes/version-all.md)]
 
-Use this index to quickly access information on query editor tasks, operators available based on data type, and access sample queries. 
+Use this index to quickly access information on query examples, query editor tasks, operators available based on data type, and access sample queries. 
 
 For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -34,15 +34,27 @@ You can list work items based on the following criteria...
 :::row:::
    :::column span="1":::
       **Keywords, wildcard queries**  
-      - [Keyword or phrase queries](titles-ids-descriptions.md#keyword)
+      - [Keyword or phrase query with wildcards](titles-ids-descriptions.md#keyword)
       - [Undefined field value queries](titles-ids-descriptions.md#undefined-value)
       - [Empty or not empty HTML field queries](titles-ids-descriptions.md)
       - [Category based queries](titles-ids-descriptions.md#category)  
-
+      - [Items you are following](titles-ids-descriptions.md#following)  
+      - [Recent activity work items](titles-ids-descriptions.md#recent-macros)  
       **Tag based queries**  
-      - [Items containing a specific tag](add-tags-to-work-items.md)
-      - [Items that don't contain a specific tag](add-tags-to-work-items.md)
-      - [Items that contain two or more tags](add-tags-to-work-items.md)  
+      ::: moniker range="azure-devops"
+      - [Items containing a specific tag](add-tags-to-work-items.md#query)
+      - [Items that don't contain a specific tag](add-tags-to-work-items.md#query)
+      - [Items that contain two or more tags](add-tags-to-work-items.md#query)  
+      - [Items that have no tag assignments](add-tags-to-work-items.md#no-tags)
+      - [Chart work items and group by tags](add-tags-to-work-items.md#group-by-tags)
+      ::: moniker-end   
+      ::: moniker range="< azure-devops"
+      - [Items containing a specific tag](add-tags-to-work-items.md#query)
+      - [Items that don't contain a specific tag](add-tags-to-work-items.md#query)
+      - [Items that contain two or more tags](add-tags-to-work-items.md#query)  
+      - [Items that have no tag assignments](add-tags-to-work-items.md#no-tags)
+      - [Chart work items and group by tags](add-tags-to-work-items.md#group-by-tags)
+      ::: moniker-end   
 
       **State, reason, or workflow change queries**    
       - [Resolved user stories](query-by-workflow-changes.md#workflow-change)
@@ -78,8 +90,9 @@ You can list work items based on the following criteria...
       - [Active items assigned to my team](query-by-workflow-changes.md#me)
       - [Items I've modified in the last 30 days](query-by-workflow-changes.md#me)
       - [Items I closed](query-by-workflow-changes.md#workflow-change-who)
-      - [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change-who)
-      - [Team or group membership queries](query-by-workflow-changes.md#group)  
+      - [Items I resolved in the last week](query-by-workflow-changes.md#workflow-change-who) 
+      - [Team or group membership queries](query-by-workflow-changes.md#group) 
+      - [My recent activity work items](titles-ids-descriptions.md#recent-macros)   
 
      **Work item count and numeric field queries**   
       - [Count of active bugs per developer](query-numeric.md#counts)
