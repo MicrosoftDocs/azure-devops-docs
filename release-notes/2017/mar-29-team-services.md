@@ -102,7 +102,7 @@ You can also download any npm package using the __Download__ button in the comma
 ![npm readme](media/03_29_13.png)
 
 ## Updated Package Management experience available to all accounts
-After some additional tuning and some bug fixes, we’ve made the [updated __Package Management__ experience](/azure/devops/release-notes/2017/feb-15-team-services#updated-package-management-experience) available to all accounts. Learn more about the update [here](https://visualstudio.microsoft.com/docs/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
+After some additional tuning and some bug fixes, we’ve made the [updated __Package Management__ experience](./feb-15-team-services.md#updated-package-management-experience) available to all accounts. Learn more about the update [here](https://visualstudio.microsoft.com/docs/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
 
 ![package experience](media/03_29_14.png)
 

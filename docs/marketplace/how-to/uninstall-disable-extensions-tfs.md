@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018'
 When you no longer need an extension, you can uninstall or disable it. This article shows you how.
 
 > [!NOTE]
-> Charges continue for a paid extension until you [reduce all users to zero (0) for this extension](./change-paid-extension-users.md). 
+> Charges continue for a paid extension until you [reduce all users to zero (0) for this extension](../install-extension.md). 
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ can uninstall or disable extensions.
 
    **TFS 2015 Update 3**
 
-   <img alt="Manage extensions" src="../media/manage-extensions.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Manage extensions in TFS 2015 Update 3." src="../media/manage-extensions.png" style="border: 1px solid #CCCCCC" />
 
    **TFS 2017**
 
@@ -44,4 +44,3 @@ can uninstall or disable extensions.
    <img alt="Uninstall or disable an extension" src="../media/uninstall-disable.png" style="border: 1px solid #CCCCCC" />
 
    [[Need help?](../faq-extensions.md#q-how-do-i-get-support-for-the-visual-studio-marketplace)]
-

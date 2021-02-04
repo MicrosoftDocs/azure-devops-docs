@@ -41,7 +41,7 @@ From the pipelines landing page you can view pipelines and pipeline runs, create
 
 Choose **Recent** to view recently run pipelines (the default view), or choose **All** to view all pipelines.
 
-![View pipelines](media/view-pipelines.png)
+![Choose Recent to view recently run pipelines or choose All to view all pipelines.](media/view-pipelines.png)
 
 Select a pipeline to manage that pipeline and view its runs. Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
 
@@ -108,7 +108,7 @@ From the context menu you can download logs, add tags, edit the pipeline, delete
 
 ### Jobs and stages
 
-The jobs pane displays on overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
+The jobs pane displays an overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
 
 ![Pipeline jobs](media/pipeline-jobs-pane.png)
 
@@ -127,6 +127,20 @@ You can configure pipelines security on a project level from the context menu on
 ![Pipeline security](media/pipelines-context-menu.png)
 
 To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You can manage security for for Azure Pipelines in the web portal, either from the user or admin context. For more information on configuring pipelines security, see [Pipeline permissions and security roles](../policies/permissions.md).
+
+:::moniker range="azure-devops"
+
+## Task insights for failed pipeline runs
+
+Azure DevOps provides a **Task Insights for Failed Pipeline Runs** setting, that when enabled, provides pop-up notifications of build failures with a link to view a report.
+
+:::image type="content" source="media/task-insights.png" alt-text="This task has failed pop-up.":::
+
+To configure this setting, navigate to [Preview features](../../project/navigation/preview-features.md), find **Task Insights for Failed Pipeline Runs**, and choose the desired setting.
+
+:::image type="content" source="media/task-insights-setting.png" alt-text="Task insights for failed pipeline runs setting.":::
+
+:::moniker-end
 
 ## Next steps
 

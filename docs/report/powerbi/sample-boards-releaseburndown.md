@@ -3,13 +3,12 @@ title: Release Burndown sample Power BI report
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate a Release Burndown report
 ms.technology: devops-analytics
-ms.reviewer: greggboe
-ms.author: kaelli
 ms.custom: powerbisample
+ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/07/2019
+ms.date: 12/18/2020
 ---
 
 # Sample - Release Burndown
@@ -23,6 +22,7 @@ This article shows you how to display the burndown of User Stories for a release
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
 
+[!INCLUDE [temp](./includes/prerequisites-power-bi.md)]
 
 ## Sample queries
 
@@ -131,7 +131,7 @@ For a simple report, do the following steps:
 The example report displays burndown on both Story Points and Count of Stories.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](media/odatapowerbi-releaseburndown-report.png)
+> ![The example report displays burndown on Story Points and Count of Stories.](media/odatapowerbi-releaseburndown-report.png)
 
 To pivot burndown by Area Path, do the following steps:
 
@@ -144,12 +144,12 @@ To pivot burndown by Area Path, do the following steps:
 The example report displays burndown pivoted by Area Path.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](media/odatapowerbi-releaseburndown-report2.png)
+> ![The example report displays burndown pivoted by Area Path.](media/odatapowerbi-releaseburndown-report2.png)
 
 To pivot the burndown by State, add the field "State" to **Values**, replacing "Area.AreaPath".
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](media/odatapowerbi-releaseburndown-report3.png)
+> ![To pivot the burndown by State, add the field "State".](media/odatapowerbi-releaseburndown-report3.png)
 
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 

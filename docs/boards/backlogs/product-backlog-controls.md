@@ -136,7 +136,7 @@ Once you've defined your product backlog, you can use the following controls to 
 ::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="":::
-      ![backlogs](../../media/icons/backlogs.png)   
+      :::image type="icon" source="../../media/icons/backlogs.png" border="false":::
    :::column-end:::
    :::column span="":::
       Backlog selector
@@ -151,7 +151,7 @@ Once you've defined your product backlog, you can use the following controls to 
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="":::
-      ![view options](../../media/icons/view-options-icon.png)  
+      :::image type="icon" source="../../media/icons/view-options-icon.png" border="false":::  
    :::column-end:::
    :::column span="":::
       View options
@@ -170,7 +170,7 @@ Once you've defined your product backlog, you can use the following controls to 
 ::: moniker range="azure-devops-2019"
 :::row:::
    :::column span="":::
-      ![view options](../../media/icons/view-options-icon.png) 
+      :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: 
    :::column-end:::
    :::column span="":::
       View options
@@ -181,7 +181,7 @@ Once you've defined your product backlog, you can use the following controls to 
       - [Turn In Progress items on/off](create-your-backlog.md#show-hide-in-progress)   
       - [Show Mapping](organize-backlog.md) (not available for top-level portfolio backlog) 
       - [Show Planning](../sprints/assign-work-sprint.md)  
-        ![view options](media/view-options.png)
+        :::image type="icon" source="media/view-options.png" border="false":::
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -272,11 +272,11 @@ Once you've defined your product backlog, you can use the following controls to 
       ![actions](../../media/icons/actions-icon.png) 
    :::column-end:::
    :::column span="":::
-      Actions options 
+      More commands  
    :::column-end:::
    :::column span="2":::
       - [Set column options](set-column-options.md)  
-      - [Create query](../queries/using-queries.md)  
+      - [Create Query](../queries/organize-queries.md)  
       - [Email](../work-items/email-work-items.md)   
    :::column-end:::
 :::row-end:::
@@ -284,9 +284,8 @@ Once you've defined your product backlog, you can use the following controls to 
 ---
 
 
-
-
-Even if you have show parents turned on, the **Create query** and mail ![mail icon](../media/icons/mail_icon.png) controls will only list items at the currently selected level. 
+> [!NOTE]   
+> Even if you have show parents turned on, the **Create Query** and **Email** ![mail icon](../media/icons/mail_icon.png) controls will only list items at the currently selected level. 
  
 
 ## Related articles

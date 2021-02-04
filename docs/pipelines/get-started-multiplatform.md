@@ -1,6 +1,6 @@
 ---
 title: Create a multi-platform pipeline
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-js
 description: Build and test on macOS, Linux, and Windows
 ms.topic: quickstart
 ms.assetid: 4aaa98c7-f363-4fe6-b9dd-158108955e38
@@ -110,7 +110,7 @@ Now that you've configured your GitHub repo with a pipeline, you're ready to bui
 
 1. Azure Pipelines shows you the YAML file that it will use to create your pipeline.
 
-1. Select **Save and run**, and then select the option to **Commit directly to the master branch**.
+1. Select **Save and run**, and then select the option to **Commit directly to the main branch**.
 
 1. The YAML file is pushed to your GitHub repository, and a new build is automatically started. Wait for the build to finish.
 

@@ -45,7 +45,7 @@ Your extension's static content is useful when you're enhancing or decorating da
    ```
 2. Remove the `baseUri` property (if set) from your extension manifest.    
 3. Package your extension ([steps](../publish/command-line.md))   
-4. Publish (or republish) your extension ([steps](/azure/devops/extend/publish/overview)) 
+4. Publish (or republish) your extension ([steps](../publish/overview.md)) 
 
 <div class="alert alert-danger">
 > [!IMPORTANT]
@@ -54,9 +54,9 @@ Your extension's static content is useful when you're enhancing or decorating da
 Keep in mind:
 
 * The value specified by the `path` attribute can be a folder or individual file. If a folder, the entire folder (and any subfolders) is included.
-* The `addressable` attribute is important and is what tells Visual Studio Online to make the file(s) URL addressable.
+* The `addressable` attribute is important and is what tells Visual Studio Codespaces to make the file(s) URL addressable.
 * All `addressable` asset requests are case-sensitive. If the request for an asset has a different case than the actual uploaded asset, it results in an HTTP 404 (Not found) error.
-* Not specifying a baseUri or setting an empty value tells Visual Studio Online at runtime to calculate the base URI as if your static content's hosted by Azure DevOps Services.
+* Not specifying a baseUri or setting an empty value tells Visual Studio Codespaces at runtime to calculate the base URI as if your static content's hosted by Azure DevOps Services.
 
 ## Host on your own service (or a third-party service)
 
@@ -88,5 +88,4 @@ In this model, static content is served from your own service and not included i
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Package, publish, and install extensions](/azure/devops/extend/publish/overview)
-
+> [Package, publish, and install extensions](../publish/overview.md)

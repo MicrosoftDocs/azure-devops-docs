@@ -4,8 +4,8 @@ description: UI Testing with Selenium in a continuous deployment pipeline in Azu
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
 ms.topic: conceptual
 ms.custom: continuous-test, seodec18
-ms.author: pbora
-author: pboraMSFT
+ms.author: shashban
+author: shashban
 ms.date: 03/15/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -161,7 +161,7 @@ from Visual Studio Test Explorer.
 ## Define your build pipeline
 
 You'll need a continuous integration (CI) build pipeline that builds your Selenium tests.
-For more details, see [Build your .NET desktop app for Windows](../apps/windows/dot-net.md).
+For more details, see [Build your .NET desktop app for Windows](../apps/aspnet/build-aspnet-4.md).
 
 ## Create your web app
 

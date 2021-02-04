@@ -8,7 +8,6 @@ ms.custom: "mvc, seodec18"
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Implement a CI/CD pipeline to build and deploy your ASP.NET app to Azure
 
 [!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
@@ -74,7 +73,7 @@ Select the **IIS Web App Deploy** task to configure your IIS instance settings a
 
 Navigate to the **Code** hub in the Azure Repos portal. Navigate to **Views/Home/Index.cshtml** file. Make the following simple change to that file by selecting the edit action.
 
-![Screenshot showing update to code](./media/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-update-code.png)
+![Screenshot showing edit action to update code](./media/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-update-code.png)
 
 Add the following line of text as indicated in the image above:
 ```html

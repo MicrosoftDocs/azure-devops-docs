@@ -104,10 +104,7 @@ You add fields to a selected work item type.
     Here we define that the **Acceptance Criteria** field is required when the **State** changes to **Active** and it is currently empty.
 
     <img src="media/process/custom-rule-create-rule-form.png" alt="New rule form" style="border: 1px solid #C3C3C3;" />
-
-    > [!TIP]  
-    > You can specify the State field by entering System.State. While you'll see a message that indicates it isn't a valid field, if the Save button is active, then you can save the rule.
-
+  
 	The sequence of actions you specify doesn't impact the behavior of the rule itself or its behavior with respect to other rules defined for the same WIT.
 
 1.  Once you've added a custom rule, open a work item and verify that the rule works as you intended.

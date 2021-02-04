@@ -1,7 +1,7 @@
 ---
 title: Calendar view with drill down of epics and features 
 titleSuffix: Azure DevOps
-description: Learn how to track dependencies your team has on other teams with the dependency tracker  
+description: Learn how to view progress by using the Epic Roadmap to provide a calendar view of a single epic and its child features.
 ms.custom: extensions
 ms.technology: devops-agile
 ms.prod: devops
@@ -122,7 +122,7 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 
 ## Drill-down to view details 
 
-1. To view the requirements linked to a feature, choose the  :::image type="icon" source="../media/icons/info.png" border="false":::  info icon for that feature. 
+1. To view the requirements linked to a feature, choose the  info :::image type="icon" source="../media/icons/info.png" border="false":::  icon for that feature. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Feature, Info icon](media/feature-timeline/drill-down-1.png)
@@ -138,6 +138,12 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Epic Roadmap, Feature, linked icon](media/epic-roadmap/view-dependency.png)
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> Another tool that supports dependency views is the [Delivery Plans (Preview)](../plans/review-team-plans.md#dependencies).
+::: moniker-end
 
 ## Related articles
 

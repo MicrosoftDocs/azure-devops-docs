@@ -1,10 +1,10 @@
 ---
 title: Jobs in Azure Pipelines and TFS
-ms.custom: seodec18
+ms.custom: seodec18, contperf-fy20q4 
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
-ms.topic: conceptual, contperfq4
-ms.date: 08/03/2020
+ms.topic: conceptual
+ms.date: 01/26/2021
 monikerRange: '>= tfs-2017'
 ---
 
@@ -168,8 +168,11 @@ YAML is not supported in this version of TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-To add jobs to your build pipeline, edit the pipeline in Pipelines page, and select the **Process** tab for your pipeline.
-To add jobs to your release pipeline, edit the pipeline in Releases page, and select the **Process** tab for your pipeline.
+To add jobs to your build pipeline, edit the pipeline on the Pipelines page. Select **...**  to add a job.
+
+:::image type="content" source="media/build-pipeline-jobs.png" alt-text="Add a job to the pipeline.":::
+
+To add jobs to your release pipeline, edit the pipeline from **Pipelines** > **Releases**. View the stage tasks in the stage where you want to add your job. Select **...**  to add a job.
 
 * * *
 ## Types of jobs
@@ -232,7 +235,6 @@ These are the most common type of jobs and they run on an agent in an agent pool
 Use [demands](demands.md) with self-hosted agents to specify what capabilities an agent must have to run your job.
 
 > [!NOTE]
->
 > Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
 > meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
 > matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
@@ -277,6 +279,19 @@ Learn more about [agent capabilities](../agents/agents.md#capabilities).
 
 Tasks in a server job are orchestrated by and executed on the server (Azure Pipelines or TFS). A server job does not require an agent or any target computers. Only a few tasks are supported in a server job at present.
 
+<h3 id="agentless-tasks">Agentless jobs supported tasks</h3>
+
+Currently, only the following tasks are supported out of the box for agentless jobs:
+
+* [Delay task](../tasks/utility/delay.md)
+* [Invoke Azure Function task](../tasks/utility/azure-function.md)
+* [Invoke REST API task](../tasks/utility/http-rest-api.md)
+* [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
+* [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
+* [Query Work Items task](../tasks/utility/work-item-query.md)
+
+Because tasks are extensible, you can add more agentless tasks by using extensions.
+
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
@@ -315,19 +330,6 @@ You add a server job in the editor by selecting '...' on the **Pipeline** channe
 ::: moniker range="tfs-2017"
 Server jobs are not supported in this version of TFS.
 ::: moniker-end
-
-<h3 id="agentless-tasks">Tasks supported in agentless jobs</h3>
-
-Currently only the following tasks are supported out of the box for agentless jobs:
-
-* [Delay task](../tasks/utility/delay.md)
-* [Invoke Azure function task](../tasks/utility/azure-function.md)
-* [Invoke REST API task](../tasks/utility/http-rest-api.md)
-* [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
-* [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
-* [Query Work Items task](../tasks/utility/work-item-query.md)
-
-As tasks are extensible additional agentless tasks can be added through extensions.
 
 ---
 
@@ -566,7 +568,7 @@ To avoid taking up resources when your job is unresponsive or waiting too long, 
 
 * Forever on self-hosted agents
 * For 360 minutes (6 hours) on Microsoft-hosted agents with a public project and public repository
-* For 60 minutes on Microsoft-hosted agents with a private project or private repository (unless [additional capacity](/azure/devops/pipelines/agents/hosted#capabilities-and-limitations) is paid for)
+* For 60 minutes on Microsoft-hosted agents with a private project or private repository (unless [additional capacity](../agents/hosted.md#capabilities-and-limitations) is paid for)
 
 The timeout period begins when the job starts running. It does not include the
 time the job is queued or is waiting for an agent.
@@ -806,7 +808,10 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-When you run a pipeline on a self-hosted agent, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+When you run a pipeline on a **self-hosted agent**, by default, none of the subdirectories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+
+> [!IMPORTANT]
+> The workspace clean options are applicable only for self-hosted agents. When using Microsoft-hosted agents, job are always run on a new agent. 
 
 ```yaml
 - job: myJob
@@ -820,10 +825,30 @@ When you specify one of the `clean` options, they are interpreted as follows:
 - `resources`: Delete `Build.SourcesDirectory` before running a new job.
 - `all`: Delete the entire `Pipeline.Workspace` directory before running a new job.
 
+`$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+
+```yaml
+  jobs:
+  - deployment: deploy
+    pool:
+      vmImage: 'Ubuntu-16.04'
+      workspace:
+        clean: all
+    environment: staging
+```
+
 > [!NOTE]
->  `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
->
-> For Microsoft-hosted agents, each job is run on a different agent. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages.
+> Depending on your agent capabilities and pipeline demands, each job may be routed to a different agent in your self-hosted pool. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can configure agent capabilities and pipeline demands to specify which agents are used to run a pipeline job, but unless there is only a single agent in the pool that meets the demands, there is no guarantee that subsequent jobs will use the same agent as previous jobs. For more information, see [Specify demands](demands.md).
+
+In addition to workspace clean, you can also configure cleaning by configuring the **Clean** setting in the pipeline settings UI. When the **Clean** setting is **true** it is equivalent to specifying `clean: true` for every [checkout](../yaml-schema.md#checkout) step in your pipeline. To configure the **Clean** setting:
+
+1. Edit your pipeline, choose **...**, and select **Triggers**.
+
+    :::image type="content" source="media/pipeline-triggers/edit-triggers.png" alt-text="Edit triggers."::: 
+
+2. Select **YAML**, **Get sources**, and configure your desired **Clean** setting. The default is **false**. 
+
+    :::image type="content" source="media/clean-setting.png" alt-text="Clean setting."::: 
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -930,7 +955,7 @@ YAML is not yet supported in TFS.
 Select the **Allow scripts to access OAuth token** option in the control options for the job. The token will be available as the environment variable `SYSTEM_ACCESSTOKEN`.
 
 * * *
-## Related articles
+## What's next
 
 * [Deployment group jobs](deployment-group-phases.md)
 * [Conditions](conditions.md)

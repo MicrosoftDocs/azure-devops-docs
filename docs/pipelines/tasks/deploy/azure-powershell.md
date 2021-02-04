@@ -58,11 +58,11 @@ Azure PowerShell task uses Azure/AzureRM/Az PowerShell Module to interact with A
 <tr><td>2.* </td><td>Choose one from any of the 2 lists:<br>Azure: 2.1.0, 3.8.0, 4.2.1, 5.1.1<br>AzureRM: 2.1.0, 3.8.0, 4.2.1, 5.1.1, 6.7.0</td></tr>
 <tr><td>3.* </td><td>Choose one from any of the 2 lists:<br>Azure: 2.1.0, 3.8.0, 4.2.1, 5.1.1<br>AzureRM: 2.1.0, 3.8.0, 4.2.1, 5.1.1, 6.7.0</td></tr>
 <tr><td>4.*</td><td>Az Module: 1.0.0, 1.6.0, 2.3.2, 2.6.0, 3.1.0, 3.5.0</td></tr>
-<tr><td>5.* (preview)</td><td>Az Module: 1.0.0, 1.6.0, 2.3.2, 2.6.0, 3.1.0</td></tr>
+<tr><td>5.*</td><td>Az Module: 1.0.0, 1.6.0, 2.3.2, 2.6.0, 3.1.0</td></tr>
 </table>
 
 ### Service Connection Issues
-To troubleshoot issues related to service connections, see [Service Connection troubleshooting](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
+To troubleshoot issues related to service connections, see [Service Connection troubleshooting](../../release/azure-rm-endpoint.md)
 
 ## Open source
 

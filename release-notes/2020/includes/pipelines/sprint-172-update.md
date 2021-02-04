@@ -37,7 +37,7 @@ Today, we have various resources (such as pipelines, containers, build, and pack
 
 Here are the steps to configure the webhook triggers:
 1. Setup a webhook on your external service. When creating your webhook, you need to provide the following info:
-    - Request Url - "https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<**WebHook Name**>?api-version=6.0-preview"
+    - Request Url - "https://dev.azure.com/<**ADO Organization**>/_apis/public/distributedtask/webhooks/<**WebHook Name**>?api-version=6.0-preview"
     - Secret - This is optional. If you need to secure your JSON payload, provide the **Secret** value
 2. Create a new "Incoming Webhook" service connection. This is a newly introduced Service Connection Type that will allow you to define three important pieces of information:
     - **Webhook Name**: The name of the webhook should match webhook created in your external service.

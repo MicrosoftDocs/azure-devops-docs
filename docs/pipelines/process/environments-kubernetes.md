@@ -71,7 +71,7 @@ While the Azure Provider option creates a new ServiceAccount, the generic provid
 
 ## Setup Review App
 
-Below is an example YAML snippet for adding Review App to an **existing** pipeline. In this example, the first deployment job is run for non-PR branches and performs deployments against regular Kubernetes resource under environments. The second job runs only for PR branches and deploys against review app resources (namespaces inside Kubernetes cluster) generated on the fly. These resources are marked with a 'Review' label in the resource listing view of the environment.
+Below is an example YAML snippet for adding a Review App. In this example, the first deployment job is run for non-PR branches and performs deployments against regular Kubernetes resource under environments. The second job runs only for PR branches and deploys against review app resources (namespaces inside Kubernetes cluster) generated on the fly. These resources are marked with a 'Review' label in the resource listing view of the environment.
 
 ```YAML
 - stage: Deploy
@@ -150,4 +150,6 @@ Below is an example YAML snippet for adding Review App to an **existing** pipeli
                 $(containerRegistry)/$(imageRepository):$(tag)
 ```
 
-For setting up review apps without the need to author the above YAML from scratch, checkout new pipeline creation experience using the [Deploy to Azure Kubernetes Services template](../ecosystems/kubernetes/aks-template.md)
+To use this job in an **exiting** pipeline, the service connection backing the regular Kubernetes environment resource needs to be modified to "Use cluster admin credentials". Alternatively, role bindings need to be created for the underlying service account to the review app namespace.
+
+For setting up review apps without the need to author the above YAML from scratch or create explicit role bindings manually, checkout new pipeline creation experience using the [Deploy to Azure Kubernetes Services template](../ecosystems/kubernetes/aks-template.md).

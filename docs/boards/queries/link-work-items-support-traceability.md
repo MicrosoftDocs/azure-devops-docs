@@ -131,12 +131,22 @@ Open a work item and click one of the Links tab. From the links control tab you 
 <a id="team-explorer-link" />
 If you primarily work in Visual Studio or Team Explorer, and want to link work items, you can do so in a number of ways. Depending on the work item form and customizations that may have been made to your work item form, you may see several Link tabs. Link tabs can be customized to allow or restrict specific link types.  
 
-Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.
+Open a work item and choose the **Links** tab. From the links control tab you can link to new or existing work items, open the linked object, edit the link type, delete a link, or open the list of links in a query or Excel or Project.
 
 ![Work item form link toolbar controls](media/IC673344.png)  
 
+
+**Visual Studio 2017-2019/Team Explorer** 
+
+The work item form opens in the web portal for Visual Studio 2017 and later versions. Work items aren't available from Visual Studio 2019 under the following conditions:   
+* If you are connected to a GitHub or third-party Git repository. 
+* If you are set to use the new Git Tool for Visual Studio 2019 as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
+ 
+ 
+
 #### [Team Explorer Everywhere](#tab/tee/)
-Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, delete a link, or open the linked object.
+
+Open a work item and choose the **Links** tab. From the links control tab you can link to new or existing work items, delete a link, or open the linked object.
 
 ![Link control options (Team Explorer, Eclipse)](media/IC775501.png)  
 
@@ -147,6 +157,7 @@ From the Query Results view, you can link a work item to a new or existing work 
 ![Link to an existing work item](media/IC588289.png)
 
 * * *
+
 ## Parent-child work item links
 
 These features let you quickly link or change links that use the parent-child link type:
@@ -169,7 +180,7 @@ The following image shows the full set of link types used in linking test manage
 
 ![Link types used to link test objects](media/link-tracking-work-item-test-case-link-types.png)  
 
-For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases?view=azure-devops). 
+For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases). 
 
 **Test case work item form (TFS 2015)**
 
@@ -260,7 +271,7 @@ Team Foundation version control (TFVC) lets you link work items to version contr
 
 You can use the Hyperlinks or Storyboard link type to link a work item to a Web site, network share, or document located on a network share. Both of these link types are one-way links. To add links of this type, you can use the same links controls [described earlier for linking work items](#link-work-items). 
 
-![Artifact-to-artifact link types](media/link-tracking-work-item-to-url-link-types.png)  
+![Use the Hyperlinks or Storyboard link type to link a work item to a URL.](media/link-tracking-work-item-to-url-link-types.png)  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
@@ -287,7 +298,7 @@ To link a work item to a diagram, open the work item in Visual Studio, choose th
 
 ![Open linked model element from a work item](media/IC588262.png)
 
-Or, you can link a model element to a work item. See [Link model elements and work items](https://msdn.microsoft.com/library/dd465152.aspx).
+Or, you can link a model element to a work item. See [Link model elements and work items](/visualstudio/modeling/link-model-elements-and-work-items).
 
 ::: moniker-end
 
@@ -323,4 +334,3 @@ For additional information, see these topics:
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
 
 ::: moniker-end
-

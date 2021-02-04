@@ -15,11 +15,14 @@ Use the **Discussion** section to add and review comments made about the work be
 > [!div class="mx-imgBorder"]  
 > ![Discussion section within a work item form](/azure/devops/boards/backlogs/media/discussion-section.png)   
 
-
 The rich text editor tool bar displays below the text entry area when you click your cursor within each text box that can be formatted. 
 
 > [!div class="mx-imgBorder"]  
 > ![Discussion section, New Rich Text Editor toolbar](/azure/devops/boards/queries/media/share-plans/discussion-rich-text-editor-toolbar.png)  
+
+
+> [!NOTE]  
+> There is no Discussion work item field. To query work items with comments entered in the Discussion area, you filter on the [**History** field](../queries/history-and-auditing.md). The full content of the text entered into the Discussion text box is added to the History field. 
 
 ### Mention someone, a group, work item, or pull request (:::image type="icon" source="/azure/devops/media/icons/at-mention.png" border="false":::, :::image type="icon" source="/azure/devops/media/icons/work-id.png" border="false":::, or ![pull-request id icon](/azure/devops/media/icons/pr-id.png))
 
@@ -27,7 +30,6 @@ Choose one of these icons &mdash;:::image type="icon" source="/azure/devops/medi
 
 > [!div class="mx-imgBorder"]  
 > ![Discussion section, @mention drop-down menu](/azure/devops/boards/media/discussion-at-mention.png)
-
 
 
 ::: moniker range="azure-devops-2019"  
@@ -68,7 +70,4 @@ You can add one or more reactions to any comment. Choose a smiley icon at the up
 > [!div class="mx-imgBorder"]  
 > ![Add reactions to a comment](/azure/devops/release-notes/2019/media/156_09.png)  
 
-::: moniker-end 
-
-
-
+::: moniker-end

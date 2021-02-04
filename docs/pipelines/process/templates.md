@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 08/03/2020
+ms.date: 12/22/2020
 monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
@@ -71,15 +71,30 @@ parameters:
   default: false
 
 steps:
-  - ${{ if eq(parameters.experimentalTemplate, true) }}:
-    - template: experimental.yml
-  - ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
-    - template: stable.yml
+- ${{ if eq(parameters.experimentalTemplate, true) }}:
+  - template: experimental.yml
+- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
+  - template: stable.yml
 ```
 
 ### Parameter data types
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
+
+You can iterate through an object and print out each string in the object. 
+
+```yaml
+parameters:
+- name: listOfStrings
+  type: object
+  default:
+  - one
+  - two
+
+steps:
+- ${{ each value in parameters.listOfStrings }}:
+  - script: echo ${{ value }}
+``` 
 
 ## Extend from a template
 
@@ -136,7 +151,7 @@ extends:
 
 ## Extend from a template with resources
 
-You can also use `extends` to extend from a template in your azure pipeline that contains resources. 
+You can also use `extends` to extend from a template in your Azure pipeline that contains resources. 
 
 ```yaml
 # File: azure-pipelines.yml
@@ -160,10 +175,10 @@ steps:
 
 ## Insert a template
 
-You can copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
+You can copy content from one YAML and reuse it in a different YAML. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 
 ```yaml
-# File: include-npm-steps.yml
+# File: templates/include-npm-steps.yml
 
 steps:
 - script: npm install
@@ -400,6 +415,7 @@ jobs:
   pool: ${{ parameters.pool }}
 ```
 
+
 ## Variable reuse
 
 Variables can be defined in one YAML and included in another template. This could be useful if you want to store all of your variables in one file. If you are using a template to include variables in a pipeline, the included template can only be used to define variables. You can use steps and more complex logic when you are [extending from a template](#extend-from-a-template). 
@@ -423,8 +439,45 @@ steps:
 - script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
 ```
 
+## Reference template paths
 
+Template paths should be relative to the file that does the including. Here is an example nested hierarchy. 
 
+```
+|
++-- fileA.yml
+|
++-- dir1/
+     |
+     +-- fileB.yml
+     |
+     +-- dir2/
+          |
+          +-- fileC.yml
+```
+
+Then, in `fileA.yml` you can reference `fileB.yml` and `fileC.yml`  like this. 
+
+```yaml
+steps:
+- template: dir1/fileB.yml
+- template: dir1/dir2/fileC.yml
+```
+
+If `fileC.yml` is your starting point, you can include `fileA.yml` and `fileB.yml` like this. 
+
+```yaml
+steps:
+- template: ../../fileA.yml
+- template: ../fileB.yml
+```
+When `fileB.yml` is your starting point, you can include `fileA.yml` and `fileC.yml` like this. 
+
+```yaml
+steps:
+- template: ../fileA.yml
+- template: dir2/fileC.yml
+```
 ## Use other repositories
 
 You can keep your templates in other repositories.
@@ -505,6 +558,50 @@ If you want to use a particular, fixed version of the template, be sure to pin t
 The `refs` are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
 
+> [!NOTE]
+> If no `ref` is specified, the pipeline will default to using `refs/heads/master`.
+
+You may also use `@self` to refer to the repository where the main pipeline was found.
+This is convenient for use in `extends` templates if you want to refer back to contents in the extending pipeline's repository.
+For example:
+
+```yaml
+# Repo: Contoso/Central
+# File: template.yml
+jobs:
+- job: PreBuild
+  steps: []
+
+  # Template reference to the repo where this template was
+  # included from - consumers of the template are expected
+  # to provide a "BuildJobs.yml"
+- template: BuildJobs.yml@self
+
+- job: PostBuild
+  steps: []
+```
+
+```yaml
+# Repo: Contoso/MyProduct
+# File: azure-pipelines.yml
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: Contoso/Central
+
+extends:
+  template: template.yml@templates
+```
+
+```yaml
+# Repo: Contoso/MyProduct
+# File: BuildJobs.yml
+jobs:
+- job: Build
+  steps: []
+```
+
 ## Template expressions
 
 Use template [expressions](expressions.md) to specify how values are dynamically resolved during pipeline initialization.
@@ -516,8 +613,9 @@ The `parameters` object works like the [`variables` object](expressions.md#varia
 in an expression. Only predefined variables can be used in template expressions.
 
 > [!NOTE]
-> Expressions are only expanded for `stages`, `jobs`, and `steps`.
-> You cannot, for example, use an expression inside a `resource` or `trigger`.
+> Expressions are only expanded for `stages`, `jobs`, `steps`, and `containers` (inside `resources`).
+> You cannot, for example, use an expression inside `trigger` or a resource like `repositories`.
+> Additionally, on Azure DevOps 2020 RTW, you can't use template expressions inside `containers`.
 
 For example, you define a template:
 
@@ -829,6 +927,7 @@ For example, to add additional dependencies:
 
 ```yaml
 # job.yml
+parameters:
 - name: 'jobs'
   type: jobList
   default: []
@@ -867,19 +966,19 @@ jobs:
 
 If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example, `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
 
-## Limits
+## Imposed limits
 
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 100 separate YAML files may be included (directly or indirectly)
+- No more than 20 levels of template nesting (templates including other templates)
 - No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600KB - 2MB of on-disk YAML, depending on the specific features used)
-- No more than 2000 characters per template expression are allowed
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-## Parameters
+## Template parameters
 
 You can pass parameters to templates.
 The `parameters` section defines what parameters are available in the template and their default values. 
@@ -1054,7 +1153,7 @@ If you want to use a particular, fixed version of the template, be sure to pin t
 Refs are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
 
-## Template expressions
+## Expressions
 
 Use template [expressions](expressions.md) to specify how values are dynamically resolved during pipeline initialization.
 Wrap your template expression inside this syntax: `${{ }}`.
@@ -1376,7 +1475,6 @@ Templates and template expressions can cause explosive growth to the size and co
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 50 separate YAML files may be included (directly or indirectly)
 - No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600KB - 2MB of on-disk YAML, depending on the specific features used)
-
 - No more than 2000 characters per template expression are allowed
 
 ::: moniker-end

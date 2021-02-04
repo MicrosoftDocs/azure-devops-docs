@@ -6,7 +6,7 @@ ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.manager: shashban
 ms.author: shashban
 author: shashban
-ms.date: 03/11/2020
+ms.date: 09/30/2020
 monikerRange: azure-devops
 ---
 
@@ -25,6 +25,7 @@ Approvals and other checks are not defined in the yaml file. Users modifying the
 
 > [!IMPORTANT]
 > Checks can be configured on environments, service connections and agent pools.
+> Service connections cannot be specified by variable.
 
 ## Approvals
 
@@ -36,7 +37,7 @@ You can manually control when a stage should run using approval checks. This is 
 
 :::image type="content" source="media/checks/approvals-and-checks.png" alt-text="Approvals and Checks on environment.":::
    
-3. Select **Create**, provide the approvers and an optional message, and select **Create** again to to complete addition of the manual approval check.
+3. Select **Create**, provide the approvers and an optional message, and select **Create** again to complete the addition of the manual approval check.
 
 You can add multiple approvers to an environment. These approvers can be individual users or groups of users. When a group is specified as an approver, only one of the users in that group needs to approve for the run to move forward.
 
@@ -60,7 +61,10 @@ To define the branch control check:
 
 :::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
 
-At run time, the check would validate branches for all linked resources in the run against the allowed list. If any one of the branches do not match the criteria, the check fails and the stage is marked failed.   
+At run time, the check would validate branches for all linked resources in the run against the allowed list. If any one of the branches do not match the criteria, the check fails and the stage is marked failed. 
+
+> [!NOTE]
+> The check requires the branch names to be fully qualified. Make sure the format for branch name is `refs/heads/<branch name>`
 
 ## Business hours
 
@@ -169,6 +173,22 @@ You can also see the complete logs of the policy checks from the pipeline view.
 :::image type="content" source="media/checks/policy-check-failed-logs.png" alt-text="Viewing detailed logs.":::
 
 * * *
+
+## Exclusive lock
+
+The **exclusive lock** check allows only a single run from the pipeline to proceed.
+All stages in all runs of that pipeline which use the resource are paused.
+When the stage using the lock completes, then another stage can proceed to use the resource.
+Also, only one stage will be allowed to continue.
+Any other stages which tried to take the lock will be cancelled.
+
+## ServiceNow Change Management
+
+**This checks needs the [ServiceNow Change Management extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-servicenowchangerequestmanagement) to be installed from the marketplace**
+
+The **servicenow change management** check allows for an integration of ServiceNow change management process in the pipelines. 
+By adding the check, a new change request in ServiceNow can be automatically created at the start of the stage. The pipeline waits for the change process to complete before starting the stage.
+More details are available [here](../release/approvals/servicenow.md).
 
 ## FAQ
 
