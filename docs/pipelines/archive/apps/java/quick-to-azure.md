@@ -5,6 +5,7 @@ description: Set up a continuous integration (CI) build for your Java app, and t
 ms.topic: conceptual
 ms.assetid: E67B2B25-5928-4784-A6CD-E998F4FDE620
 ms.date: 06/27/2017
+monikerRange: '>= tfs-2015'
 ---
 
 # Implement a CI/CD pipeline to build and deploy your Java app to Azure
