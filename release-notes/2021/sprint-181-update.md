@@ -15,15 +15,19 @@ Check out the Features list below for details.
 
 
 ### Azure Boards
+
 [!INCLUDE [sprint-181-update-links](includes/boards/sprint-181-update-links.md)]
 
 ### Azure Pipelines
+
 [!INCLUDE [sprint-181-update-links](includes/pipelines/sprint-181-update-links.md)]
 
 ## Azure Boards
+
 [!INCLUDE [sprint-181-update](includes/boards/sprint-181-update.md)]
 
 ## Azure Pipelines
+
 [!INCLUDE [sprint-181-update](includes/pipelines/sprint-181-update.md)]
 
 ## Next steps
