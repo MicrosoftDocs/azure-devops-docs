@@ -100,7 +100,7 @@ For information about agents and pipelines, see:
 ## Use the ARM Template deployment task 
 
 > [!IMPORTANT]
-> These instructions refer to version 2 of the task. Switch your **Task version** to from 3 to 2. 
+> These instructions refer to version 2 of the task. Switch your **Task version** from 3 to 2. 
 
 
 You can use the [ARM Template deployment task](https://aka.ms/argtaskreadme)
