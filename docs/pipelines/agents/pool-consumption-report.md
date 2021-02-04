@@ -10,6 +10,12 @@ monikerRange: 'azure-devops'
 
 The pool consumption report enables you to view jobs running in your agent pools graphed with agent pool job concurrency over a span of up to 30 days. You can use this information to help decide whether your jobs aren't running because of concurrency limits. If you have many jobs queued or running jobs at the concurrency or online agents limit, you may wish to [purchase additional parallel jobs](../licensing/concurrent-jobs.md) or provision more self-hosted agents.
 
+## Configure preview setting
+
+**Historical graph for agent pools** is in preview. To enable or disable this preview feature, navigate to [Preview features](../../project/navigation/preview-features.md), find **Historical graph for agent pools**, and choose the desired setting.
+
+:::image type="content" source="media/pool-consumption-report/historical-graph-for-agent-pools-setting.png" alt-text="Historical graph for agent pools preview setting.":::
+
 ## Pool consumption report
 
 The pool consumption report  is part of the **Analytics** tab for an agent pool and contains the following charts, depending on the agent pool type.
@@ -39,21 +45,21 @@ The pool consumption report can be displayed at organization scope, or project s
 
 From the **Agent pools** view, choose the desired pool, and view the **Analytics** tab. The following example shows the pool consumption report for a self-hosted agent pool.
 
-:::image type="content" source="media/historical-graph-pools/historical-graph-self-hosted.png" alt-text="Self-hosted agent pool historical graph":::
+:::image type="content" source="media/pool-consumption-report/historical-graph-self-hosted.png" alt-text="Self-hosted agent pool historical graph":::
 
 This example shows the usage graphs for the **Azure Pipelines** Microsoft-hosted agent pool.
 
-:::image type="content" source="media/historical-graph-pools/historical-graph-azure-pipelines.png" alt-text="Microsoft-hosted agent pool historical graph":::
+:::image type="content" source="media/pool-consumption-report/historical-graph-azure-pipelines.png" alt-text="Microsoft-hosted agent pool historical graph":::
 
 ## Filtering
 
 To adjust the timeline of the graph, choose **Filter** :::image type="icon" source="../../media/icons/filter-icon.png":::, select the interval drop-down, and choose the desired interval.
 
-:::image type="content" source="media/historical-graph-pools/historical-graph-filter.png" alt-text="Graph duration.":::
+:::image type="content" source="media/pool-consumption-report/historical-graph-filter.png" alt-text="Graph duration.":::
 
 For the 1 day interval, you can view data per hour, and for the other intervals you can view it per day. Pool data is aggregated at a granularity of 10 minutes, and the number of running jobs is plotted based on the maximum number of running jobs for the specified interval of time. In this example there are two online agents, but in some areas there are four running jobs due to the way the pool data is aggregated.
 
-:::image type="content" source="media/historical-graph-pools/self-hosted-drill-down.png" alt-text="Self-hosted graph drill-down.":::
+:::image type="content" source="media/pool-consumption-report/self-hosted-drill-down.png" alt-text="Self-hosted graph drill-down.":::
 
 
 ## FAQ
