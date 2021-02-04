@@ -227,4 +227,8 @@ See [Assigning roles](/azure/active-directory/managed-identities-azure-resources
 > [!NOTE]
 > Managed identities are not supported in Microsoft Hosted Agents. You will have to [set-up a self hosted agent](../agents/agents.md#install) on an Azure VM and configure managed identity for the virtual machine.
 
+## Unable to create an Azure Classic Service Connection manually using powershell scripts and Azure cloud shell
+
+The instructions to create a Manual Azure Resource Manager service connection are well explained [here](https://azuredevopslabs.com/labs/devopsserver/azureserviceprincipal)
+
 [!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
