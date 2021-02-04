@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Azure Boards Configuration and Customization FAQs 
+  title: Azure Boards configuration and customization FAQs 
   description: Answers to frequently asked questions about configuring and customizing Azure Boards 
   titleSuffix: Azure Boards
   ms.technology: devops-agile
@@ -10,7 +10,7 @@ metadata:
   monikerRange: '<= azure-devops'
   ms.date: 02/03/2021
 
-title: Azure Boards Configuration and Customization FAQs  
+title: Azure Boards configuration and customization FAQs  
 
  
 summary: | 
