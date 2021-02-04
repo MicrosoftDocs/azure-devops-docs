@@ -30,9 +30,9 @@ sections:
       - question: Who has permissions to configure Azure Boards?  
         answer: | 
 
-          In general, you need to be a member of the Project Administrators group to configure the following project-level objects. Or, you can provide permissions at the node level or object level to individual members or groups. To learn more, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md). 
+          In general, you need to be a member of the Project Administrators group to configure the following project-level objects. Or, you can provide permissions at the node level or object level to individual members or groups. To learn more, see [Set permissions and access for work tracking](../../security/set-permissions-access-work-tracking.md). 
           - [Area Paths](../set-area-paths.md)
-          - [Modify work items under an area path](../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
+          - [Modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
           - [Iteration Paths](../set-iteration-paths-sprints.md)
           - [Shared Queries and Shared Query folders](../../../boards/queries/organize-queries.md)
           - [Define and edit Delivery Plans](../../../boards/plans/edit-delivery-plan-permissions.md)  
@@ -93,9 +93,9 @@ sections:
       - question: Who has permissions to configure Azure Boards?  
         answer: | 
 
-          In general, you need to be a member of the Project Administrators group to configure the following project-level objects. Or, you can provide permissions at the node level or object level to individual members or groups. To learn more, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md). 
+          In general, you need to be a member of the Project Administrators group to configure the following project-level objects. Or, you can provide permissions at the node level or object level to individual members or groups. To learn more, see [Set permissions and access for work tracking](../../security/set-permissions-access-work-tracking.md). 
           - [Area Paths](../set-area-paths.md)
-          - [Modify work items under an area path](../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
+          - [Modify work items under an area path](../../security/set-permissions-access-work-tracking.md#set-permissions-area-path)
           - [Iteration Paths](../set-iteration-paths-sprints.md)
           - [Shared Queries and Shared Query folders](../../../boards/queries/organize-queries.md)
           - [Define and edit Delivery Plans](../../../boards/plans/edit-delivery-plan-permissions.md)  
