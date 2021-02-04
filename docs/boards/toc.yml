@@ -189,7 +189,7 @@
 - name: Troubleshooting
   items:
   - name: FAQs 
-    href: faqs.md 
+    href: faqs.yml 
   - name: Set up your backlogs & boards
     href: backlogs/set-up-your-backlog.md 
   - name: Fix "Ordering backlog items is disabled"

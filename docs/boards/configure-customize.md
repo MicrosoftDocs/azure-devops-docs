@@ -566,6 +566,7 @@ For details on configuring backlogs and boards, see [Manage and configure team t
 
 ## Related articles
 
+- [Azure Boards Configuration and Customization FAQs](../organizations/settings/work/faqs.yml)
 - [Set up your Backlogs and Boards](backlogs/set-up-your-backlog.md)  
 - [Inherited process model](../organizations/settings/work/inheritance-process-model.md)  
--  [Manage and configure team tools](../organizations/settings/manage-teams.md)
+- [Manage and configure team tools](../organizations/settings/manage-teams.md)
