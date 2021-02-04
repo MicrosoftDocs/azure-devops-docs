@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Add users and groups, and control access to Release Management
