@@ -75,7 +75,29 @@ Users can view and filter packages by **Sourced versions**.
 
 ## Enable upstream behavior using the REST API
 
-Aside from using the feed's user interface, you can also enable upstream behavior using the Azure DevOps Services REST API.
+Aside from using the feed's user interface, you can also enable upstream behavior using the Azure DevOps Services REST API. Select the appropriate tab and find the links to the REST API docs.
+
+#### [NuGet](#tab/nuget/)
+
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/get%20upstreaming%20behavior)
+- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/nuget/set%20upstreaming%20behavior)
+ 
+#### [Npm](#tab/npm/)
+
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/getpackageupstreamingbehavior)
+- [Get scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/getscopedpackageupstreamingbehavior)
+- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set%20upstreaming%20behavior)
+- [Set scoped package upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/npm/set%20scoped%20upstreaming%20behavior)
+
+#### [Python](#tab/python/)
+
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/get%20upstreaming%20behavior)
+- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/python/set%20upstreaming%20behavior)
+
+#### [Maven](#tab/maven/)
+
+- [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/get%20upstreaming%20behavior)
+- [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/set%20upstreaming%20behavior)
 
 ## Enable upstream behavior with PowerShell
 
