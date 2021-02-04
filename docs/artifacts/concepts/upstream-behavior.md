@@ -9,7 +9,7 @@ author: ramiMSFT
 monikerRange: '>= tfs-2017'
 ---
 
-# Configure upstream override
+# Configure upstream behavior
 
 Upstream sources allow developers to use a single feed to publish and consume packages to/from Artifact feeds as well as public registries (e.g. NuGet.org, npmjs.com etc.). To set up upstream sources for your feed, check the box to **include packages from common public sources**. This will allow your feed to use packages from the common public registries.
 
@@ -59,9 +59,9 @@ Below are few common scenarios where the upstream behavior is triggered to block
 ## Enable upstream behavior
 
 > [!NOTE]
-> Only feed owners are allowed to enable/disable upstream override. See [Feed permissions](../feeds/feed-permissions.md) for more details.
+> Only feed owners are allowed to enable/disable upstream behavior. See [Feed permissions](../feeds/feed-permissions.md) for more details.
 
-To enable the new upstream override, select a package from within your feed then select the toggle button to **Allow external sourced versions**.
+To enable the new upstream behavior, select a package from within your feed then select the toggle button to **Allow external sourced versions**.
 
 :::image type="content" source="media\allow-external-sourced-versions.png" alt-text="Allow external sourced versions toggle button":::
 
@@ -73,13 +73,13 @@ Users can view and filter packages by **Sourced versions**.
 - **Mixed**: both internal and external package versions.
 -->
 
-## Enable upstream override using the REST API
+## Enable upstream behavior using the REST API
 
-Aside from using the feed's user interface, you can also enable the upstream override using the Azure DevOps Services REST API.
+Aside from using the feed's user interface, you can also enable upstream behavior using the Azure DevOps Services REST API.
 
 < API_reference_link_placeholder >
 
-## Enable upstream override with PowerShell
+## Enable upstream behavior with PowerShell
 
 To successfully execute the next steps in this section, you will need to create a personal access token with packaging **Read, write, & manage** permissions. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to create your personal access token. 
 
@@ -109,15 +109,15 @@ $url = "https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_apis/packag
 
 Now that we have both the header and the endpoint URL set up, we can start sending HTTP requests to get, set, and clear upstreaming for any specific package.
 
-### Get upstream override state
+### Get upstream behavior state
 
-Run the following command to retrieve the upstream override state of your package. `$url` and `$headers` are the same variables we used in the previous section.
+Run the following command to retrieve the upstream behavior state of your package. `$url` and `$headers` are the same variables we used in the previous section.
 
  ```PowerShell
  Invoke-RestMethod -Uri $url -Headers $headers
  ```
 
-### Set upstream override
+### Set upstream behavior
 
 Run the following commands to allow externally sourced versions for your package. This will set `versionsFromExternalUpstreams` to `AllowExternalVersions`, and will use the `$url` and `$headers` variables to query the REST API.
 
@@ -127,9 +127,9 @@ $body = '{"versionsFromExternalUpstreams": "AllowExternalVersions"}'
 Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"
 ```
 
-### Clear upstream override
+### Clear upstream behavior
 
-To clear upstream override for your package, run the following commands to set `versionsFromExternalUpstreams` to `Auto` and query the REST API.
+To clear the upstream behavior for your package, run the following commands to set `versionsFromExternalUpstreams` to `Auto` and query the REST API.
 
 ```PowerShell
 $body = '{"versionsFromExternalUpstreams": "Auto"}'
@@ -138,7 +138,7 @@ Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -Content
 ```
 
 > [!NOTE]
-> In some cases, enabling/disabling upstream override can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
+> In some cases, enabling/disabling upstream behavior can take time to propagate across the service. If your package is not available after updating the settings, please allow up to 3 hours for the new settings to take effect.
 
 ## Related articles
 
