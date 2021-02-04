@@ -99,6 +99,8 @@ Aside from using the feed's user interface, you can also enable upstream behavio
 - [Get upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/get%20upstreaming%20behavior)
 - [Set upstreaming behavior](/rest/api/azure/devops/artifactspackagetypes/maven/set%20upstreaming%20behavior)
 
+* * * 
+
 ## Enable upstream behavior with PowerShell
 
 To successfully execute the next steps in this section, you will need to create a personal access token with packaging **Read, write, & manage** permissions. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to create your personal access token. 
