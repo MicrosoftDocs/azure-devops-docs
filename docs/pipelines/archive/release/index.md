@@ -7,6 +7,7 @@ ms.topic: overview
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
+monikerRange: '>= tfs-2015'
 ---
 
 # Release Management for Visual Studio, Azure Pipelines, and Team Foundation Server
