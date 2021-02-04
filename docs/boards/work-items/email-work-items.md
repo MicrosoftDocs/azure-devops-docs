@@ -8,8 +8,8 @@ ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/30/2020
 ---
 
 
@@ -20,11 +20,8 @@ ms.date: 07/09/2020
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item Description or other rich-text formatted field. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
-Here's a list of the most common ways in which teams share information and plans using work item tracking. 
-
-> [!NOTE]    
-> Some features are only available from the web portal or a Team Foundation client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE). 
-
+Some of the most common ways information is shared within a team or across teams is by emailing lists or links to work items. Some features are only available from the web portal, an Azure DevOps client such as Visual Studio or the Eclipse plug-in, Team Explorer Everywhere (TEE).  Here's a list of the most common ways in which teams share information and plans using work item tracking. 
+ 
 ---
 :::row:::
    :::column span="2":::
@@ -34,7 +31,7 @@ Here's a list of the most common ways in which teams share information and plans
       **Web portal**
    :::column-end:::
    :::column span="":::
-      **Visual Studio**
+      **Visual Studio 2015-2017**
    :::column-end:::
    :::column span="":::
       **TEE (Eclipse)**
@@ -46,13 +43,13 @@ Here's a list of the most common ways in which teams share information and plans
       [Email summary list with links to work item(s)](#email-summary-lists)
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ✔️
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ✔️
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ✔️
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -63,7 +60,7 @@ Here's a list of the most common ways in which teams share information and plans
         
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ✔️
    :::column-end:::
    :::column span="":::
         
@@ -74,10 +71,10 @@ Here's a list of the most common ways in which teams share information and plans
       [Email link to a work item query](#copy-url)
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ✔️
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ✔️
    :::column-end:::
    :::column span="":::
         
@@ -88,10 +85,10 @@ Here's a list of the most common ways in which teams share information and plans
       [Email query results list](#email-summary-lists)
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ✔️
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ✔️
    :::column-end:::
    :::column span="":::
         
@@ -103,7 +100,7 @@ Here's a list of the most common ways in which teams share information and plans
       [Export query result list as CSV](#export)
    :::column-end:::
    :::column span="":::
-      :::image type="icon" source="../media/icons/checkmark.png" border="false":::
+      ✔️
    :::column-end:::
    :::column span="":::
         
@@ -116,18 +113,27 @@ Here's a list of the most common ways in which teams share information and plans
 ---
 
 
+**Visual Studio 2019/Team Explorer** 
+
+The tasks/features listed in the table aren't available when you are connected to a GitHub or third-party Git repository. Also, they aren't available from Visual Studio 2019 under the following conditions:   
+
+* If you are set to use the default Landing page experience as described in [Set the Work Items experience in Visual Studio 2019](set-work-item-experience-vs.md).  
+* If you are set to use the new Git Tool as described in [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio).  
+ 
+ 
+
 ::: moniker range="< azure-devops"
 > [!NOTE]   
-> For the email feature to work, your administrator for Azure DevOps Server or TFS must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
+> For the email feature to work, your administrator for Azure DevOps Server must [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).  
 
 ::: moniker-end 
 
-In addition, if you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/get-started-stakeholder.md) so that they can view work items and dashboards.  
+If you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/access-levels.md) so that they can view work items and dashboards.  
 
 
 <a id="email-print-send-links"></a>
 
-Some of the most common ways information is shared within a team or across teams is by emailing lists or links to work items.  
+
 
 <a id="email-item"></a>
 
@@ -138,21 +144,23 @@ You can quickly email a summary of one or more work items. Summaries include the
 > [!IMPORTANT]     
 > If you use the built-in email feature, you can only send the email to individual address for a project member that is recognized by the system. Adding a team group or security group to the to line isn't supported. If you add an email account that the system doesn't recognize, you receive a message that one or more recipients of your email don't have permissions to read the mailed work items.  
 
+<a id="team-services-email" />  
+
 #### [Browser](#tab/browser/)
 
 ::: moniker range=">= tfs-2018"  
-<a id="team-services-email" />  
-<strong>From the web portal</strong>, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the <strong>Email work item</strong> option. The first 200 items in the list will appear in a formatted table. 
+
+**From the web portal**, open the work item, choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list will appear in a formatted table. 
 
 > [!div class="mx-imgBorder"]  
-> ![Email work items](media/email/email-work-item.png)   
+> ![Screenshot of work item form, context menu, Email work items option.](media/email/email-work-item.png)   
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"  
 
 **From the web portal**, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list will appear in a formatted table. 
 
-![Email work item](../queries/media/share-plans-email-work-item-ts.png)    
+![Screenshot of work item form, context menu, Email work items option, TFS 2017 version.](../queries/media/share-plans-email-work-item-ts.png)    
 
 ::: moniker-end  
 
@@ -162,7 +170,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 **From the web portal**, open the work item and choose the :::image type="icon" source="../media/icons/mail_icon.png" border="false"::: mail icon. The first 200 items in the list will appear in a formatted table.   
 
-![Email work item from on-prem TFS](../queries/media/share-plans-email-work-item-tfs.png)  
+![Screenshot of work item form, context menu, Email work items option, TFS 2015 and earlier versions.](../queries/media/share-plans-email-work-item-tfs.png)  
 
 ::: moniker-end  
 
@@ -214,25 +222,25 @@ Depending on the option and client you choose, summary lists may or may not incl
 ::: moniker range=">= tfs-2018"
 
 > [!div class="mx-imgBorder"]  
-> ![Email work items](media/email/bulk-email-backlog-items.png)   
+> ![Screenshot of backlog, context menu, Email... options.](media/email/bulk-email-backlog-items.png)   
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"
-![Email selected items from a list](../queries/media/share-plans-email-selected-work-items-tfs-15.png) 
+![Screenshot of backlog, context menu, Email... options, TFS 2017 version.](../queries/media/share-plans-email-selected-work-items-tfs-15.png) 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2018"
 If you want to mail a list of all items in the backlog or query, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email** option. 
 
 > [!div class="mx-imgBorder"]  
-> ![Email backlog or query results list](media/email/email-backlog.png)  
+> ![Screenshot of backlog, context menu, Email... option, TFS 2018 and later  versions.](media/email/email-backlog.png)  
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"
 If you want to mail a list of all items in the backlog or query, simply choose the :::image type="icon" source="../media/icons/mail_icon.png" border="false"::: mail icon. 
 
-![Email full backlog or query results list](../queries/media/share-plans-email-summary-list-web-portal.png)  
+![Screenshot of backlog, email icon, TFS 2017 version.](../queries/media/share-plans-email-summary-list-web-portal.png)  
 
 ::: moniker-end  
 
@@ -240,11 +248,11 @@ If you want to mail a list of all items in the backlog or query, simply choose t
 
 **To email items from the web portal for TFS 2015**: Open a backlog or query and highlight the items from the list. Open the context menu for one of the selected items and select to email them.
 
-![Email selected items from a list](../queries/media/share-plans-email-summary-list-ts.png)  
+![Screenshot of backlog, context menu, Email selected items from a list option.](../queries/media/share-plans-email-summary-list-ts.png)  
 
 If you want to mail a list of all items in the backlog or query, simply choose the ![mail icon](../media/icons/mail_icon.png) mail icon. 
 
-![Email full backlog or query results list](../queries/media/share-plans-email-summary-list-web-portal.png)  
+![Screenshot of backlog, email icon, TFS 2015 and earlier versions.]](../queries/media/share-plans-email-summary-list-web-portal.png)  
 
 ::: moniker-end  
 

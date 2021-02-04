@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. In this article, learn how to add a group rule to assign an access level to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are also used to add users to team projects and other specific groups, like Contributors, Readers, and Administrators.
+Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. Learn how to add a group rule to assign an access level to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules are also used to add users to team projects and other specific groups, like Contributors, Readers, and Administrators.
 
 When users leave the group, the licenses are freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
 
@@ -34,13 +34,15 @@ To manage licenses and group rules, you must be a Project Collection Administrat
 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Go to the **Permissions** tab, and then check the membership of the **Project Collection Administrators** group.
+3. Go to the **Permissions** tab, and then verify that you are a member of the **Project Collection Administrators** group.
 
    ![Project collection administrators group members](media/assign-access-levels/project-collection-administrators-group-members-new.png)
 
 4. Go to the **Users** tab, and then select **Group rules**. This view shows you all of your created group rules. Select **Add a group rule**.
 
    ![Select Add a group rule](media/manage-group-licensing/add-group-rule.png)
+
+	**Group rules** only appears if you are a member of the **Project Collection Administrators** group.  
 
 5. Complete the dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access for the group. Select **Add**.
 

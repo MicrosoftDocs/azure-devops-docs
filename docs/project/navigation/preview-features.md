@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2020'
-ms.date: 07/24/2020
+ms.date: 11/16/2020
 ---
 
 
@@ -25,8 +25,6 @@ Some preview features provide access to entire new functionality. Others, such a
 
 > [!NOTE]   
 > You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to Azure DevOps Server. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
-
-Some preview features provide access to entire new functionality. Others, such as the New Wiki experience, reflect a change to the user interface, but little or no change in functionality. 
 
 ::: moniker-end
 
@@ -47,112 +45,115 @@ The follow table indicates which preview features can be enabled per user or tea
 
 ---
 :::row:::
-   :::column span="2":::
+   :::column span="3":::
       **Preview features**
    :::column-end:::
-   :::column span="1":::
+   :::column span=".5"::: 
       **Per user**
    :::column-end:::
-   :::column span="1":::
+   :::column span=".5"::: 
       **Per organization**
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
-   :::column span="2":::
+   :::column span="3":::
       [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
       [Experimental themes](#experimental-themes)  
       [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  
       [Git Forks](../../repos/git/forks.md)  
       [New account manager](#account-manager)  
    :::column-end:::
-   :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
       &nbsp;  
       &nbsp;  
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
    :::column-end:::
-   :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="3":::
       [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
+      [New Delivery Plans Experience](../../boards/plans/review-team-plans.md)  
+      New release progress views  
       [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)  
       [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
-      [New service connections experience](../../pipelines/library/service-endpoints.md)  
-      [New Settings Search in the organization settings panel](#search-org-settings)  
    :::column-end:::
-   :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️  
    :::column-end:::
-   :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
+   :::column span="3":::
+      [New service connections experience](../../pipelines/library/service-endpoints.md)  
+      [New Settings Search in the organization settings panel](../../organizations/settings/search-settings.md)  
       [New Teams page](../../organizations/settings/add-teams.md)  
       [New Test Plans Page](../../test/new-test-plans-page.md)  
-      New TFVC Page  
-      New Wiki experience  
-      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
+      New TFVC pages
    :::column-end:::
-   :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️  
    :::column-end:::
-   :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="2":::
-      [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
+   :::column span="3":::
+      New Wiki experience  
+      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
       [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
-      Task Insights for Failed Pipeline Runs 
+      [Project-Scoped Users well known group to hide settings](../../organizations/projects/about-projects.md#project-scoped-user-group)  
+      Task Insights for Failed Pipeline Runs   
    :::column-end:::
-   :::column span="1":::
+   :::column span=".5":::
       &nbsp;  
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       ✔️   
+       ✔️   
+      &nbsp;   
+       ✔️   
    :::column-end:::
-   :::column span="1"::: 
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+   :::column span=".5"::: 
+       ✔️   
+       ✔️   
+       ✔️  
+       ✔️   
+       ✔️   
    :::column-end:::
 :::row-end:::
 ---
-
 ::: moniker-end
 
 
 ::: moniker range="azure-devops-2020"
-
 The follow table indicates those features that you can enable as a user, project administrator, or project collection administrator.  
-
 
 ---
 :::row:::
@@ -176,16 +177,16 @@ The follow table indicates those features that you can enable as a user, project
       [Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download)  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+      ✔️   
       &nbsp;   
    :::column-end:::
    :::column span="1":::
       &nbsp;     
-      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+      ✔️   
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
-      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+      ✔️   
+      ✔️   
    :::column-end:::
 :::row-end:::
 ---
@@ -296,17 +297,6 @@ With **Experimental themes** enabled, you can select among a number of additiona
 > ![Choose your theme dialog](media/preview-features/choose-your-theme.png)
 
 
-<a id="search-org-settings">  </a>
-
-## New Settings Search in the organization settings panel 
-
-When enabled, you can enter keywords to search all settings within the Organization Settings hub. 
-
-> [!div class="mx-imgBorder"]  
-> ![Organizational Settings, Search feature](media/preview-features/org-search-settings.png)
-
-
-
 ## Features now enabled for all Azure DevOps Services 
 
 ### General
@@ -317,6 +307,7 @@ When enabled, you can enter keywords to search all settings within the Organizat
 
 ### Azure Pipelines
 
+- [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
 - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
 - [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
 - [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)
@@ -338,6 +329,7 @@ When enabled, you can enter keywords to search all settings within the Organizat
 - [New Repos landing pages](/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview)  
 - [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
 
+
 ### Azure Artifacts 
 
 - [NuGet.org upstream sources](../../artifacts/nuget/upstream-sources.md) 
@@ -355,18 +347,17 @@ When enabled, you can enter keywords to search all settings within the Organizat
 ### Social tools 
 
 - [Wiki](../wiki/add-edit-wiki.md)  
-- [Combine email recipients](../../notifications/howto-manage-team-notifications.md) 
+- [Combine email recipients](../../notifications/manage-team-group-global-organization-notifications.md) 
 - [New experience in Code, Work Item, & Wiki search](/azure/devops/release-notes/2017/oct-06-vsts#code)  
-- [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md)   
-- [Team expansion for notifications](../../notifications/howto-manage-team-notifications.md)
+- [Out of the box notifications](../../notifications/manage-your-personal-notifications.md)   
+- [Team expansion for notifications](../../notifications/manage-team-group-global-organization-notifications.md)
 
 ### Organization, project, and billing management
-- [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)   
+- [Streamlined User Management](../../organizations/accounts/add-organization-users.md)   
 
 ::: moniker-end
 
 ## Related articles
 
 - [Set user preferences](../../organizations/settings/set-your-preferences.md)
-- [Azure DevOps Feature Timeline](/azure/devops/release-notes/features-timeline) 
-
+- [Azure DevOps Feature Timeline](/azure/devops/release-notes/features-timeline)

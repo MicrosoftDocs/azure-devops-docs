@@ -6,12 +6,12 @@ ms.assetid: 223c0064-06ec-433e-8ec2-d73a5435cf23
 ms.technology: devops-code-git 
 ms.topic: tutorial
 ms.date: 11/12/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # Save work with commits
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 Update 2**
 
 Git does not automatically snapshot your code as you make edits to files in your repo.  You must tell Git exactly which changes you want to add to the next snapshot by staging those changes.
 After staging your changes, create a commit to save the snapshot to your repo. 
@@ -68,6 +68,9 @@ Staging lets you to selectively add files to a commit while excluding changes ma
 [Ignore](ignore-files.md) temp files, logs, and other files that might change on your local machine but you don't want to add to version control.
 
 # [Visual Studio](#tab/visual-studio)
+
+[!INCLUDE [temp](includes/note-new-git-tool.md)]  
+
 
 #### Visual Studio 2015 (Update 2) and 2017
 

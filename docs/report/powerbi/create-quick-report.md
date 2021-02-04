@@ -42,9 +42,9 @@ In order to create a Power BI report that references an Analytics view, you must
 
 ::: moniker range="azure-devops"
 
-- You must be a member of a project. If you don't have a project yet, create one. See [Sign up for free](/azure/devops/user-guide/sign-up-invite-teammates). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- You must be a member of a project. If you don't have a project yet, create one. See [Sign up for free](../../user-guide/sign-up-invite-teammates.md). 
+- If you haven't been added as a project member, [get added now](../../organizations/accounts/add-organization-users.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
 - **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md). 
 - Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
 - Have tracked work items for some period of time on which to generate a trend report. 
@@ -54,11 +54,11 @@ In order to create a Power BI report that references an Analytics view, you must
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
 
-- You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.
+- You must be a member of a project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
+- If you haven't been added as a project member, [get added now](../../organizations/security/add-users-team-project.md). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions or enable the service.
 - **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](./analytics-security.md).
 - Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
 - Have tracked work items for some period of time on which to generate a trend report. 
 
@@ -80,12 +80,12 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 1. Choose the **Verification** tab and then the **Verify view** button. 
 
  	> [!div class="mx-imgBorder"]  
-	> ![Analytics>All, Edit the Stories -Last 30 days view](media/create-report/verify-view.png)  
+	> ![Choose the Verification tab and then the Verify view button.](media/create-report/verify-view.png)  
 
 	Wait until the verification process completes. Verification time varies according to the amount of data defined in your view. For example, a view that includes all work item types and specifies "All history", will take more time to verify than a view that includes only stories and specifies a rolling period of 30 days.
 
  	> [!div class="mx-imgBorder"]  
-	> ![Analytics>All, Edit the Stories -Last 30 days view](media/create-report/verified-view.png)  
+	> ![Wait until the verification process completes.](media/create-report/verified-view.png)  
 
 2. If your view successfully verifies, then proceed to the next step. If it is unsuccessful, click the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
 

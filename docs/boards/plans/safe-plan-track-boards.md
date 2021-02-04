@@ -45,7 +45,7 @@ The following sections indicate how to work from Excel or through the web portal
 You can import work items using Excel. As shown in the following image, Epics, Features, and User Stories are defined in a tree-list with their Value Area, Area Path and a few tags defined. The State value is New. 
 
 > [!div class="mx-imgBorder"]
-> ![Portfolio backlog, Add Epics](media/safe-plan-track/excel-import-plan.png) 
+> ![Import a top-down plan using Excel.](media/safe-plan-track/excel-import-plan.png) 
 
 Once you publish the list, work item IDs are assigned. Each team can then start working with their work items, adding details and assigning work to team members and to sprints. 
 
@@ -86,7 +86,7 @@ To learn more about using the project wiki, see [About Wikis, READMEs, and Markd
 	Here we assign the first epic to Jamal, add a Description, and specify Business for the Value Area. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Portfolio backlog, List Epics](media/safe-plan-track/epic-form.png)
+	> ![Define details of Epics.](media/safe-plan-track/epic-form.png)
 
 	To perform bulk updates to several work items, see [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
@@ -111,9 +111,9 @@ Each program manager defines and prioritizes their features. Here, we show the F
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, Add Features](media/safe-plan-track/add-feature.png)
 
-2.	Continue adding Epics as needed by continuing to type in their titles. You can add details later. 
+2.	Continue adding Features as needed by continuing to type in their titles. You can add details later. 
 
-	When finished, you should have a list of Features as shown. THe Node Name indicates the last node in the area path specified for the work item. By adding Features from the team's Feature Backlog, the Area Path is automatically assigned the team's Default Area Path. For the Fiber Suite, that is Fabrikam\Fiber Suite. 
+	When finished, you should have a list of Features as shown. The Node Name indicates the last node in the area path specified for the work item. By adding Features from the team's Feature Backlog, the Area Path is automatically assigned the team's Default Area Path. For the Fiber Suite, that is Fabrikam\Fiber Suite. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, List Features](media/safe-plan-track/define-features.png)
@@ -185,7 +185,7 @@ Just as you earlier mapped each Feature to it's parent Epic, now you'll map each
 1. From the Stories backlog, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Features backlog, Turn on Mapping](media/safe-plan-track/turn-on-mapping-for-stories.png)
+	> ![Stories backlog, Turn on Mapping](media/safe-plan-track/turn-on-mapping-for-stories.png)
 
 2.	Choose the Fiber Suite's backlog of Features. 
 
@@ -269,7 +269,7 @@ In a similar manner to Agile release teams sprint planning, each program team ca
 Here we show the Fiber Suite program team plan the releases for their features.  
 
 > [!div class="mx-imgBorder"]
-> ![App team, Backlogs, Sprint planning](media/safe-plan-track/plan-release-train.png)
+> ![The Fiber Suite program team plans the releases for their features.](media/safe-plan-track/plan-release-train.png)
 
 
 

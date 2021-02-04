@@ -2,14 +2,14 @@
 title: Understand source control
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: What is source control or version control in Azure DevOps & Team Foundation Server?  
+description: What is source control or version control in Azure DevOps?  
 ms.technology: devops-new-user 
 ms.assetid: 7E769466-2165-4223-96FA-80A687287EFC
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 04/25/2019
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ---
 
 # What is source control?
@@ -29,7 +29,7 @@ With Git, each developer has a copy of the source repository on their dev machin
 Developers can commit each set of changes and perform version control operations, such as history and compare without a network connection. Branches are lightweight. When developers need to switch contexts, they create a private local branch. Developers can quickly switch from one branch to another to pivot among different variations of the code base. Later, developers can merge, publish, or dispose of the branch.
 
 > [!NOTE]
-> Git in Visual Studio and Azure DevOps is standard Git. You can use Visual Studio with third-party Git services. You can also use third-party Git clients with TFS.
+> Git in Visual Studio and Azure DevOps is standard Git. You can use Visual Studio with third-party Git services. You can also use third-party Git clients with Azure DevOps Server.
 
 With TFVC, developers have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and are created on the server.
 

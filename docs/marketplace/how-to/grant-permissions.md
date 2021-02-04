@@ -16,13 +16,13 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="azure-devops"
 
-In this article, learn how to grant permissions to users or groups for managing extensions. Extension management tasks include installing, disabling, enabling, reviewing, and approving extensions.
+Learn how to grant permissions to users or groups for managing extensions. Extension management tasks include installing, disabling, enabling, reviewing, and approving extensions.
 
 ::: moniker-end
 
 ::: moniker range=">=tfs-2015 < azure-devops"
 
-In this article, learn how to grant permissions for publishing or updating extensions for users or groups.
+Learn how to grant permissions for publishing or updating extensions for users or groups.
 
 ::: moniker-end
 
@@ -40,11 +40,11 @@ In this article, learn how to grant permissions for publishing or updating exten
 
 4. Select **Security** in the upper right of the Extension Security page:
 
-    ![Extension security button](../media/manage-permissions/extensions-security-button.png)
+    ![Extension security page](../media/manage-permissions/extensions-security-button.png)
 
 5. Add users or update permission settings:
 
-    ![Extension security](../media/manage-permissions/extensions-security.png)
+    ![Extension security permission setting](../media/manage-permissions/extensions-security.png)
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ In this article, learn how to grant permissions for publishing or updating exten
 
 3. Select **Extensions**, and then select **Security**.
 
-    ![Extension settings hub](../media/select-extensions-and-security.png)
+    ![Select Extensions, and then select Security.](../media/select-extensions-and-security.png)
 
 4. Add users or update permission settings:
 

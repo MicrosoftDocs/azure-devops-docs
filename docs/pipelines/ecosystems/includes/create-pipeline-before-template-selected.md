@@ -17,4 +17,4 @@ ms.date: 02/13/2020
 
 5. When the list of repositories appears, select your repository.
 
-6. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
+6. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve & install**.

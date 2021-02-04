@@ -24,5 +24,5 @@ After you sign up, learn how to [code with Git](code-with-git.md). Whether your 
 Other resources to get you up and running:
 
 - [Web portal navigation](../../project/navigation/index.md)
-- [Security & identity](../../organizations/security/index.md)
+- [Security & identity](../../organizations/security/about-security-identity.md)
 - [About projects and scaling your organization](../../organizations/projects/about-projects.md)

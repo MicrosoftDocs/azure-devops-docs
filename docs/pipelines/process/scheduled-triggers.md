@@ -44,7 +44,7 @@ schedules:
   always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
 
-In the following example, two schedules are defined.
+The following example defines two schedules: 
 
 ```yaml
 schedules:
@@ -52,7 +52,7 @@ schedules:
   displayName: Daily midnight build
   branches:
     include:
-    - master
+    - main
     - releases/*
     exclude:
     - releases/ancient/*
@@ -64,7 +64,7 @@ schedules:
   always: true
 ```
 
-The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last successful scheduled run, for `master` and all `releases/*` branches, except those under `releases/ancient/*`.
+The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last successful scheduled run, for `main` and all `releases/*` branches, except those under `releases/ancient/*`.
 
 The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays, whether the code has changed or not since the last run, for all `releases/*` branches.
 
@@ -72,7 +72,7 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
 
 > [!NOTE]
-> When you specify a scheduled trigger, only branches that you explicitly configure for inclusion are scheduled. Inclusions are processed first, and then exclusions are removed from that list. If you specify an exclusion but no inclusions, no branches are built.
+> If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
 
 > [!NOTE]
 > You cannot use pipeline variables when specifying schedules.
@@ -98,7 +98,7 @@ schedules:
   displayName: Daily midnight build
   branches:
     include:
-    - master
+    - main
 ```
 
 The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to browse to the Azure DevOps portal. In this example the screenshot was taken in the EST time zone.
@@ -109,7 +109,7 @@ Scheduled triggers are evaluated for a branch when the following events occur.
 
 * A pipeline is created.
 * A pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
-* A pipeline's YAML file path is [updated to reference a different YAML file](../customize-pipeline.md#other-settings). This change only updates the default branch, and therefore will only pick up schedules in the updated YAML file for the default branch. If any other branches subsequently merge the default branch, for example `git pull origin master`, the scheduled triggers from the newly referenced YAML file are evaluated for that branch.
+* A pipeline's YAML file path is [updated to reference a different YAML file](../customize-pipeline.md#other-settings). This change only updates the default branch, and therefore will only pick up schedules in the updated YAML file for the default branch. If any other branches subsequently merge the default branch, for example `git pull origin main`, the scheduled triggers from the newly referenced YAML file are evaluated for that branch.
 * A new branch is created. 
 
 After one of these events occurs in a branch, any scheduled runs for that branch are added, if that branch matches the branch filters for the scheduled triggers contained in the YAML file in that branch.
@@ -120,19 +120,19 @@ After one of these events occurs in a branch, any scheduled runs for that branch
 
 ### Example of scheduled triggers for multiple branches
 
-For example, a pipeline is created with the following schedule, and this version of the YAML file is checked into the `master` branch. This schedule builds the `master` branch on a daily basis.
+For example, a pipeline is created with the following schedule, and this version of the YAML file is checked into the `main` branch. This schedule builds the `main` branch on a daily basis.
 
 ```yaml
-# YAML file in the master branch
+# YAML file in the main branch
 schedules:
 - cron: "0 0 * * *"
   displayName: Daily midnight build
   branches:
     include:
-    - master
+    - main
 ```
 
-Next, a new branch is created based off of `master`, named `new-feature`. The scheduled triggers from the YAML file in the new branch are read, and since there is no match for the `new-feature` branch, no changes are made to the scheduled builds, and the `new-feature` branch is not built using a scheduled trigger.
+Next, a new branch is created based off of `main`, named `new-feature`. The scheduled triggers from the YAML file in the new branch are read, and since there is no match for the `new-feature` branch, no changes are made to the scheduled builds, and the `new-feature` branch is not built using a scheduled trigger.
 
 If `new-feature` is added to the `branches` list and this change is pushed to the `new-feature` branch, the YAML file is read, and since `new-feature` is now in the branches list, a scheduled build is added for the `new-feature` branch.
 
@@ -143,11 +143,11 @@ schedules:
   displayName: Daily midnight build
   branches:
     include:
-    - master
+    - main
     - new-feature
 ```
 
-Now consider that a branch named `release` is created based off `master`, and then `release` is added to the branch filters in the YAML file in the `master` branch, but not in the newly created `release` branch.
+Now consider that a branch named `release` is created based off `main`, and then `release` is added to the branch filters in the YAML file in the `main` branch, but not in the newly created `release` branch.
 
 ```yaml
 # YAML file in the release branch
@@ -156,19 +156,19 @@ schedules:
   displayName: Daily midnight build
   branches:
     include:
-    - master
+    - main
 
-# YAML file in the master branch with release added to the branches list
+# YAML file in the main branch with release added to the branches list
 schedules:
 - cron: "0 0 * * *"
   displayName: Daily midnight build
   branches:
     include:
-    - master
+    - main
     - release
 ```
 
-Because `release` was added to the branch filters in the `master` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `feature` branch is added to the branch filters in the YAML file **in the feature branch** will the scheduled build be added to the scheduler.
+Because `release` was added to the branch filters in the `main` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `feature` branch is added to the branch filters in the YAML file **in the feature branch** will the scheduled build be added to the scheduler.
 
 ## Supported cron syntax
 
@@ -276,17 +276,20 @@ In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron synta
 > [!IMPORTANT]
 > The UTC time zones in YAML scheduled triggers don't account for daylight savings time.
 
+> [!TIP]
+> When using 3 letter days of the week and wanting a span of multiple days through Sun, Sun should be considered the first day of the week e.g. For a schedule of midnight EST, Thursday to Sunday, the cron syntax is `0 5 * * Sun,Thu-Sat`
+
 ### Example: Nightly build with different frequencies
 
 In this example, the classic editor scheduled trigger has two entries, producing the following builds.
 
-* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
+* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `main` and `releases/*` branch filter criteria
 
-    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-week-day-night.png)
+    ![Scheduled trigger frequency 1.](media/triggers/scheduled-trigger-git-week-day-night.png)
 
 * Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
 
-    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-weekly-night.png)
+    ![Scheduled trigger frequency 2.](media/triggers/scheduled-trigger-git-weekly-night.png)
 
 The equivalent YAML scheduled trigger is:
 
@@ -296,7 +299,7 @@ schedules:
   displayName: M-F 3:00 AM (UTC) daily build
   branches:
     include:
-    - master
+    - main
     - /releases/*
 - cron: "0 3 * * Sun"
   displayName: Sunday 3:00 AM (UTC) weekly latest version build
@@ -359,13 +362,13 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-![scheduled trigger multiple time zones](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
+![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 
-![scheduled trigger multiple time zones](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
+![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
 
 ::: moniker-end
 
@@ -377,13 +380,13 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 In this example, the classic editor scheduled trigger has two entries, producing the following builds.
 
-* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
+* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `main` and `releases/*` branch filter criteria
 
-    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-week-day-night.png)
+    ![Scheduled trigger frequency 1, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-week-day-night.png)
 
 * Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
 
-    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-weekly-night.png)
+    ![Scheduled trigger frequency 2, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-weekly-night.png)
 
 ::: moniker-end
 
@@ -391,7 +394,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.3 through TFS 2018**
 
-![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
+![Scheduled trigger different frequencies, TFS 2017.3 through TFS 2018.](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
 ::: moniker-end
 
@@ -399,7 +402,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.1 and older versions**
 
-![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-different-frequencies.png)
+![Scheduled trigger different frequencies, TFS 2017.1 and older versions.](media/triggers/scheduled-trigger-git-different-frequencies.png)
 
 ::: moniker-end
 

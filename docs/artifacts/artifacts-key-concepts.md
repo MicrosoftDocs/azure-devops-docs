@@ -1,6 +1,6 @@
 ---
 title: Key concepts for Azure Artifacts
-description: Key concepts for Azure Artifacts within Azure DevOps Services and Team Foundation Server
+description: Important concepts for Azure Artifacts
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 2/6/2018

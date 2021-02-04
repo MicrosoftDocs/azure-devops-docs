@@ -83,7 +83,7 @@ Because work-items maintain their history when migrated from a private to public
 * Confirm that none of your pipelines expose sensitive data: credentials/secrets, obscure URLs, and private environment names.
 * Confirm that non-members don't require access to your private feeds. Builds can still access feeds, but non-members cannot.
 
-If you need to migrate build pipelines to a new project (perhaps because you're moving code or work items), you can import and export them using [YAML](../../pipelines/get-started-yaml.md).
+If you need to migrate build pipelines to a new project (perhaps because you're moving code or work items), you can import and export them using [YAML](../../pipelines/create-first-pipeline.md).
 
 ## Test
 
@@ -95,8 +95,8 @@ If you need to migrate build pipelines to a new project (perhaps because you're 
 
 ## Artifacts
 
-* Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project will become public.
-* Be aware that public feeds cannot have upstream sources. All existing upstream settings of the feeds that are scoped to the project will be disabled once the project becomes public.
+* Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project become public.
+* Be aware that public feeds cannot have upstream sources. All existing upstream settings of the feeds that are scoped to the project are disabled once the project becomes public.
 
 ## Extensions
 
@@ -137,15 +137,14 @@ The new repository should be created in a project you don't mind making public.
 
 - Clone the existing repository: `git clone <clone_URL>`
 - Make sure you're in the root of the repository: `cd <reponame>`
-- Ensure you're on the tip of the branch you want to start from, usually master: `git checkout master`
+- Ensure you're on the tip of the branch you want to start from, usually main: `git checkout main`
 - Delete the Git data: `rmdir /s .git` on Windows, `rm -rf .git` on macOS or Linux
 - Initialize a new Git repository: `git init`
 - Create a new, empty repository in your public project.
 - Add the new repository as your origin remote: `git remote add origin <new_clone_URL>`
-- Push up your new repository: `git push --set-upstream origin master`
+- Push up your new repository: `git push --set-upstream origin main`
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > - [Manage Azure Secrets on GitHub Repositories](https://azure.microsoft.com/blog/managing-azure-secrets-on-github-repositories/)
- 

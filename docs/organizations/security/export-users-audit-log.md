@@ -8,8 +8,8 @@ ms.topic: conceptual
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 07/24/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/16/2020
 ---
 
 # Export a list of users and their access levels
@@ -34,20 +34,30 @@ You can get a list of users and groups that have access to your Team Foundation 
 
 ::: moniker range="azure-devops"
 
-* You must be the organization Owner or a member of the Project Collection Administrators group. If you aren't a member, get added now. See [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
+* You must be the organization Owner or a member of the Project Collection Administrators group. If you aren't a member, get added now. See [Set permissions at the project- or collection-level](./set-project-collection-level-permissions.md).
   ::: moniker-end
 
   ::: moniker range="< azure-devops"
-* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/azure/devops/server/admin/add-administrator).
+* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators](/azure/devops/server/admin/add-administrator).
   ::: moniker-end
 
 ## Export a list of users
 
-::: moniker range="azure-devops"
+::: moniker range=" azure-devops"
 
 From your web browser or the Azure DevOps CLI command, you can get a list of the users in your organization and view their access level information.
 
+::: moniker-end
+
+::: moniker range=" azure-devops-2020"
+
+From the Azure DevOps CLI command, you can get a list of the users in your organization and view their access level information.
+
+::: moniker-end
+
 #### [Browser](#tab/browser)
+
+::: moniker range="azure-devops"
 
 1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
@@ -59,7 +69,11 @@ From your web browser or the Azure DevOps CLI command, you can get a list of the
 	> [!div class="mx-imgBorder"]  
 	> ![Export users](media/export-users-audit/export-new-nav.png) 
 
+::: moniker-end
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range=">= azure-devops-2020"
 
 [Add a user](../accounts/add-organization-users.md#add-user) | [List users](#list-users) | [Remove a user](../accounts/delete-organization-users.md#remove-user) | [Update a user](../accounts/add-organization-users.md#update-user) | [Show users](../accounts/add-organization-users.md#show-users)
 
@@ -69,7 +83,7 @@ From your web browser or the Azure DevOps CLI command, you can get a list of the
 
 You can list the users in an organization with the [az devops user list](/cli/azure/ext/azure-devops/devops/user#ext-azure-devops-az-devops-user-list) command. This does not apply to users that are added via Azure Active Directory groups. To get started, see [Azure DevOps CLI](../../cli/index.md).
 
-```CLI
+```azurecli
 az devops user list [--org] [--skip] [--top]
 ```
 
@@ -84,7 +98,7 @@ az devops user list [--org] [--skip] [--top]
 
 The following command returns five users in your organization without skipping any and shows the result in table format.
 
-```CLI
+```azurecli
 az devops user list --skip 0 --top 5  --output table
 
 ID                                    Display Name            Email                          License Type    Access Level    Status

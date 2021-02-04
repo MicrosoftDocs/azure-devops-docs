@@ -7,7 +7,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2020'
-ms.date: 07/09/2020
+ms.date: 01/21/2021
 ---
 
 # Display rollup progress or totals
@@ -21,13 +21,18 @@ Rollup columns allow you to view progress bars or totals of numeric fields or de
 
 For example, here we show **Progress by Work Items** which displays progress bars for ascendant work items based on the percentage of descendant items that have been closed. Descendant items for Epics includes all child Features and their child or grand-child work items. Descendant items for Features includes all child User Stories and their child work items.
 
-> [!div class="mx-imgBorder"]  
-> ![Progress bars showing rollup by work items](media/rollup/progress-by-work-items.png)
-
-
 > [!IMPORTANT]   
 > Rollup data supports progress or counts within a project. Child items that link to a different project aren't counted within the parent rollup calculations.
 
+> [!div class="mx-imgBorder"]  
+> ![Progress bars showing rollup by work items](media/rollup/progress-by-work-items.png)
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> You can also view rollup progress from the new version of Delivery Plans that is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans Experience**. To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md).
+ 
+::: moniker-end
 
 ## Rollup and hierarchical work items
 
@@ -83,7 +88,7 @@ Each user can set their own column options which persist for each backlog across
 2. Choose **Column options**, or choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and then select **Column options**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open column options](media/rollup/open-column-options.png) 
+	> ![Choose Column options and then select Column options.](media/rollup/open-column-options.png) 
 
 	> [!TIP]  
 	> Remember that the Column options you choose are for the selected backlog level. They persist across your sessions until you change them. 

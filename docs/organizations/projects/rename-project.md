@@ -17,7 +17,7 @@ ms.date: 11/20/2019
 
 [!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
-In this article, learn how to rename a project. When you rename a project, it updates all of your version control paths, work items, queries, and other project artifacts to reflect the new name. Projects can be renamed multiple times and older names can be reused. 
+Learn how to rename a project. When you rename a project, it updates all of your version control paths, work items, queries, and other project artifacts to reflect the new name. Projects can be renamed multiple times and older names can be reused. 
 Post rename, there might be some [actions](#more-work) required from team members. We recommend performing this action during off-hours to minimize any impact.
 
 > [!WARNING]
@@ -44,10 +44,10 @@ Post rename, there might be some [actions](#more-work) required from team member
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. Sign in to your organization.
-2. From the Projects page, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon menu for the project that you want to rename and choose **Rename**.
+2. From the Projects page, choose :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: **actions** for the project that you want to rename, and then choose **Rename**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Enter a new project name](media/rename-project/choose-rename-menu-option.png)
+	> ![Choose Rename.](media/rename-project/choose-rename-menu-option.png)
 
 3. Edit the name. 
 
@@ -61,9 +61,9 @@ Post rename, there might be some [actions](#more-work) required from team member
 ::: moniker range="tfs-2015"
 
 1. Sign in to your organization.
-2. From the **Overview** tab, open the :::image type="icon" source="../../media/icons/context-menu.png" border="false"::: context icon menu for the project that you want to rename and choose **Rename**.
+2. From the **Overview** tab, open :::image type="icon" source="../../media/icons/context-menu.png" border="false"::: **menu** for the project that you want to rename, and then choose **Rename**.
 
-	![Enter a new project name](media/rename-project/collection-rename.png)
+	![Choose Rename.](media/rename-project/collection-rename.png)
 
 3. Edit the name. 
 
@@ -94,7 +94,7 @@ For the following clients, save your work in each and restart:
 
 - Visual Studio/Team Explorer
 
-- Eclipse, if your team uses the Team Foundation Server plugin (Team Explorer Everywhere)
+- Eclipse, if your team uses the Team Explorer Everywhere plugin
 
 - Microsoft Excel, PowerPoint, or Project, if your team uses the Team Foundation Server Extension for these Office products
  
@@ -237,3 +237,21 @@ The reporting and SharePoint server administrator can manually run these jobs to
 
 ::: moniker-end
 
+## Results of the rename operation
+
+* Work item IDs are unique in the organization. The URL continues to work for both the new team name and the old team name. This functionality is intended, to avoid breaking links.
+* As long as the project in the URL is a valid project in the organization, we show the work item ID provided. The following example shows an organization with projects named "Example1" and "Example2". 
+   
+   `https://dev.azure.com/MyOrg/Example1/_workitems/edit/40/` - Displays work item 40
+   `https://dev.azure.com/MyOrg/Example2/_workitems/edit/40/` - Displays work item 40
+   `https://dev.azure.com/MyOrg/Potato/_workitems/edit/40/` - Displays a 404 error
+
+* Work item links don't expire.
+* The old project name can be used again.
+
+## Related articles
+
+- [Git and Azure Repos](../../repos/git/index.yml)
+- [Team Foundation version control](../../repos/tfvc/index.yml)
+- [NGo to Visual Studio Team Explorer](../../user-guide/work-team-explorer.md)
+- [Git experience in Visual Studio](/visualstudio/ide/git-with-visual-studio)

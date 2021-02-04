@@ -10,13 +10,13 @@ monikerRange: 'azure-devops'
 
 # Publish and then download a Universal Package
 
-Universal Packages store one or more files together in a single unit that has a name and version. You can publish Universal Packages from the command line by using the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest). 
+Universal Packages store one or more files together in a single unit that has a name and version. You can publish Universal Packages from the command line by using the [Azure CLI](/cli/azure/?preserve-view=true&view=azure-cli-latest). 
 
 This quickstart shows you how to publish your first Universal Package by using the CLI, and how to download it by using the CLI. To see your package, you can go to your feed in Azure Artifacts.
 
 ## Prerequisites
 
-1. Download and install the latest [build](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) of the Azure CLI.
+1. Download and install the latest [build](/cli/azure/?preserve-view=true&view=azure-cli-latest) of the Azure CLI.
 2. If you're using Linux, ensure you've installed the [.NET Core Linux prerequisites](/dotnet/core/linux-prerequisites).
 3. Version 0.14.0 or greater of the Azure DevOps extension for the Azure CLI is required. 
 
@@ -65,7 +65,7 @@ If you don't already have an Azure Artifacts feed, create one now and note its n
 
    Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team.
    
-   Enabling [upstream sources](../concepts/upstream-sources.md) to public sources makes it easy to use your favorite OSS packages as well as gives you more protection against outages and corrupted or compromised packages.
+   Enabling [upstream sources](../concepts/upstream-sources.md) makes it easy to use your favorite OSS packages and gives you more protection against outages and corrupted or compromised packages.
 
    > [!div class="mx-imgBorder"] 
    > ![New feed dialog box](../media/new-feed-dialog.png)
@@ -80,7 +80,7 @@ With your feed selected, select the gear icon ![gear icon](../../media/icons/gea
 
 ## Log in to Azure DevOps
 
-The following sections vary based on whether you've opted in to the new [Azure DevOps Services URLs](/azure/devops/extend/develop/work-with-urls).
+The following sections vary based on whether you've opted in to the new [Azure DevOps Services URLs](../../extend/develop/work-with-urls.md).
 
 # [New URLs](#tab/azuredevops)
 
@@ -89,6 +89,9 @@ After you've installed the CLI, open your shell of choice (for example, PowerShe
 ```azurecli
 az login
 ```
+
+> [!NOTE]
+> To access tenant without subscriptions, run `az login` with "--allow-no-subscription" option.
 
 Next, set the organization that you just logged in to as the CLI's default. Again, replace the item in square brackets.
 
@@ -103,6 +106,9 @@ After you've installed the CLI, open your shell of choice (for example, PowerShe
 ```azurecli
 az login
 ```
+
+> [!NOTE]
+> To access tenant without subscriptions, run `az login` with "--allow-no-subscription" option.
 
 Next, set the organization that you just logged in to as the CLI's default. Again, replace the item in square brackets.
 
@@ -197,8 +203,7 @@ Wildcard expressions do not currently support pre-release versions. It is not po
   
 Note that while Semantic Versioning specifies that versions must increase over time, Azure Artifacts does not enforce this rule. As such, the highest matching version that will be downloaded is not necessarily the most recently published version.
 
-## Next steps
+## What's next?
 
-In this quickstart, you published your first Universal Package and then downloaded back to your machine. To learn more about the Universal Package CLI, append `-h` to any CLI command.
-
-To use Universal Packages in Azure Pipelines, see the [Azure Pipelines doc for Universal Packages](../../pipelines/artifacts/universal-packages.md) or see the full [Universal Packages task documentation](../../pipelines/tasks/package/universal-packages.md).
+- [Publish and download Universal Packages in Azure Pipelines](../../pipelines/artifacts/universal-packages.md).
+- [Universal Package task](../../pipelines/tasks/package/universal-packages.md).

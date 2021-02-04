@@ -60,7 +60,7 @@ Also, once you delete the old default branch, attempts to navigate to it will be
 A Git repository can only have one default branch.
 However, for a period of time, you can set up ad-hoc mirroring between your old default and your new default.
 This way, if your end users continue pushing to the old default, they won't need to re-do the work on their end.
-We'll use [Azure Pipelines](../../pipelines/overview.md) to set up this temporary mirroring.
+We'll use [Azure Pipelines](../../pipelines/get-started/what-is-azure-pipelines.md) to set up this temporary mirroring.
 
 > [!NOTE]
 > This section uses language which is at odds with [Microsoft's perspective](https://blogs.microsoft.com/blog/2020/06/23/addressing-racial-injustice/).

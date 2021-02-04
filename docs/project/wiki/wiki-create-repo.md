@@ -3,7 +3,7 @@ title: Create a project wiki to share information
 titleSuffix: Azure DevOps
 description: Share information with your team  and increase collaboration using a built-in team project wiki in Azure DevOps
 ms.technology: devops-collab
-ms.custom: wiki
+ms.custom: wiki, devx-track-azurecli
 ms.topic: quickstart
 ms.assetid: 
 ms.author: chcomley
@@ -13,11 +13,11 @@ monikerRange: '>= tfs-2018'
 ms.date: 07/23/2020  
 ---
 
-# Quickstart: Create a Wiki for your project
+# Create a Wiki for your project
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
-In this quickstart, learn how to open a wiki and provision a Git repo for your wiki.
+Learn how to open a wiki and provision a Git repo for your wiki.
 
 Every team project can have a wiki. Use the wiki to share information with your team to understand and contribute to your project.
 
@@ -84,10 +84,10 @@ The Wiki Git repo is referred as *TeamProjectName.wiki*. For example, if your te
 > [!NOTE]
 > If you want to provision more wikis, then you must [publish code as a wiki](publish-repo-to-wiki.md). You can set up multiple wiki repos within a single project.
 
-### How can I navigate to the Git repository?
+### How can I go to the Git repository?
 
 The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories from **Repos** or **Code**. It also isn't in the list provided from the **Project Settings > Repositories** or **Project Settings > Version Control** pages.  
-However, you can navigate to it from the following URL:
+However, you can get to it from the following URL:
 
 ::: moniker range="azure-devops"
 `https://dev.azure.com/<OrgName>/<TeamProjectName>/_git/<WikiName>` 
@@ -110,9 +110,9 @@ The URL of the wiki Git repository is exposed. Copy and paste it into your web b
 You can create a wiki with the [az devops wiki create](/cli/azure/ext/azure-devops/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 > [!NOTE]
-> If you want to provision more than one wiki, then you must [publish code as a wiki](/azure/devops/project/wiki/publish-repo-to-wiki#publish-a-git-repository-to-a-wiki). You can set up multiple wiki repos within a single project.
+> If you want to provision more than one wiki, then you must [publish code as a wiki](./publish-repo-to-wiki.md#publish-a-git-repository-to-a-wiki). You can set up multiple wiki repos within a single project.
 
-```CLI 
+```azurecli 
 az devops wiki create [--mapped-path]
                       [--name]
                       [--org]
@@ -140,7 +140,7 @@ az devops wiki create [--mapped-path]
 
 The following command creates a wiki named "Fabrikam Fiber" and shows the output in table format.
 
-```CLI 
+```azurecli 
 az devops wiki create --name "Fabrikam Fiber" --output table
 
 ID                                    Name                 Type
@@ -159,5 +159,3 @@ ID                                    Name                 Type
 
 > [!div class="nextstepaction"]
 > [Add and edit wiki pages](add-edit-wiki.md)
-
-

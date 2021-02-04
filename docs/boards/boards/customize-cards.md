@@ -27,7 +27,7 @@ Each card corresponds to a work item which you use to share information, track s
 In this example, the bug work item type (WIT) shows all the core fields, three additional fields, and tags. Also, To make severity 1 bugs stand out, a styling rule has been added to cause the card to display as yellow.  
 
 > [!NOTE] 
-> This article addresses customization of a sprint Taskboard. For information on customizing a Taskboard, see [Customize sprint Taskboards](../sprints/customize-taskboard.md). 
+> This article addresses customization of a Kanban board. For information on customizing a Taskboard, see [Customize sprint Taskboards](../sprints/customize-taskboard.md). 
 > 
 In the card shown below, the following customizations have been set for the bug work item type (WIT):
 - Show all core fields: ID, Assigned To, Story Points, Tags
@@ -409,7 +409,7 @@ You can control the test plan under which inline tests you add through the Kanba
 3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select one test plan from the query provided.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Settings, Tag colors dialog (Kanban)](media/customize-cards/settings-tests.png)  
+	> ![Configure inline tests.](media/customize-cards/settings-tests.png)  
 
 	In a test plan, a test case can exist in multiple test suites. For example, you may define several test suites for each product feature and the test cases test scenarios across features. The test case might exist in both feature's test suite with the same configurations and test steps. As a result of this setup, the tester might run the same test case multiple times for the same product version. To avoid the redundancies that can occur under this scenario, you should choose **Show same outcome of the tests in multiple suites under the same plan** checkbox. When checked, the Test Points of the same Test Case and configuration, shows the same latest outcome. When the tester runs any one test, the output is synced with all other test points (which are of same Test Case work item and same configuration) in the Test Plans. The tester can use the outcome and choose not to run the test again.
 

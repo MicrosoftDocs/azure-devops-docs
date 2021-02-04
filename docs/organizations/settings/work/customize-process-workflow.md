@@ -1,7 +1,7 @@
 ---
 title: Customize the workflow of an inherited process
 titleSuffix: Azure DevOps Services
-description: Add workflow states to a work item type for an inherited process for a project
+description: Learn how to add or remove workflow states to a work item type for an inherited process 
 ms.custom: inherited-process
 ms.technology: devops-agile
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
-ms.date: 07/17/2020
+ms.date: 08/17/2020
 ---
 
 # Customize the workflow (Inheritance process)  
@@ -44,7 +44,7 @@ For documentation on the workflow for build and release DevOps tasks, see [Use A
 
 ### State drop-down menu sequence 
 
-The State drop-down menu lists States within the sequence you order them within each state category.  
+The **State** drop-down menu lists States within the sequence you order them within each state category. For newly added work items, the first State in the *Proposed* category is assigned as the default State.  
 
 The following image illustrates the State sequence defined for User Story and its corresponding drop-down menu. 
 
@@ -175,7 +175,7 @@ You can view the State workflow model by installing the [State Model Visualizati
 For example, the following image shows the Bug workflow that has been customized to have a **Triaged** state. This view illustrates the default transitions of the workflow model. All states can transition from one state to another. 
 
 > [!div class="mx-imgBorder"]  
-> ![Hide an inherited state](media/customize-workflow/state-model-visualization.png)  
+> ![Bug workflow that has been customized to have a Triaged state.](media/customize-workflow/state-model-visualization.png)  
 
 You can zoom in and zoom out of the view. Also, you can move the state nodes around to gain a better view of the state model. 
 

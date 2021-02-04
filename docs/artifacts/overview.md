@@ -1,10 +1,10 @@
 ﻿---
 title: Azure Artifacts in Azure DevOps
-description: Overview of Azure Artifacts for hosting and sharing NuGet packages and npm modules with Azure DevOps Services or Azure DevOps Server
+description: Azure Artifacts overview
 ms.assetid: 7F863543-2AFF-4726-A86A-4CF81DE98DCE
 ms.technology: devops-artifacts
 ms.topic: overview
-ms.date: 01/31/2018
+ms.date: 08/31/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 With Azure Artifacts you can create and share Maven, npm, and NuGet package feeds from public and private sources with teams of any size. You can 
 add fully integrated package management to your continuous integration/continuous delivery (CI/CD) pipelines with a single click.  
 
-Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server. It comes pre-installed in Azure DevOps Services, Azure DevOps Server 2019, and Team Foundation Server (TFS) 2017 and 2018.
+Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server. It comes pre-installed in Azure DevOps Services, Azure DevOps Server 2019, and 2020 and TFS 2017 and 2018.
 
 > [!NOTE]
 > **Azure Artifacts** is the new home of the **Packages** page under the **Build and release** page group in the previous navigation UX of Azure DevOps Services and TFS.
@@ -46,8 +46,8 @@ Some Azure Artifacts services are compatible with only specific versions of TFS.
 | **npm**                           | Yes                    | TFS 2017 Update 1 and newer                |
 | **NuGet.org upstream source**     | Yes                    | TFS 2018 Update 2 and newer                |
 | **Maven**                         | Yes                    | TFS 2018 and newer                         |
-| **Maven Central upstream source** | Yes                    | Azure DevOps Server 2019 Update 1 and newer|
-| **Python**                        | Yes                    | Azure DevOps Server 2019 Update 1 and newer|
+| **Maven Central upstream source** | Yes                    | Azure DevOps Server 2019 Update 1 and newer, Azure DevOps Server 2020|
+| **Python**                        | Yes                    | Azure DevOps Server 2019 Update 1 and newer, Azure DevOps Server 2020|
 | **Universal Packages**            | Yes                    | No                                         |
 
 ## Other package types

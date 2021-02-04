@@ -7,8 +7,8 @@ ms.technology: devops-migrate
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 02/26/2020
+monikerRange: '<= azure-devops'
+ms.date: 11/06/2020
 ---
 
 # Validate and import processes
@@ -19,7 +19,7 @@ This article walks you through how to perform all of the necessary preparation w
 
 
 > [!Note]
-> [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-is-azure-devops.md#vsts)
+> [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/about-azure-devops-services-tfs.md#visual-studio-team-services-is-now-azure-devops-services)
 > 
 > We recommend that you use the [Migration Guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation, as needed.
 >
@@ -182,7 +182,7 @@ Azure DevOps Services is available in several Azure [regions](https://azure.micr
 |    Australia                    |    Australia East              |      EAU                    |
 |    South America                |    Brazil South                |      SBR                    |
 |    Asia Pacific                 |    South India                 |      MA                     |
-|    Asia Pacific                 |    East Asia (Hong Kong)       |      EA                     |
+|    Asia Pacific                 |    Asia Pacific (Hong Kong)       |      EA                     |
 |    Canada                       |    Central Canada              |      CC                     |
 
 ### Identity map log
@@ -215,10 +215,10 @@ The following table explains what each column means.
 
 |    Column                           |    Explanation                                                                                                                                                                                                                                               |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    AD - User (Azure DevOps Server)                             |    Friendly display name used by the identity in   Azure DevOps Server. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
-|    AD - Security Identifier    |    The unique identifier for the on-prem AD identity   in Azure DevOps Server. This column is used to identify users in the collection.                                                                                                                                      |
-|    Azure AD - Expected Import User (Azure DevOps Services)    |    Either the expected sign in address of the matched soon to be active user or "No Match Found (Check Azure AD Sync)" indicating that the identity was not found in during AAd sync and will be imported as historical.                                                                                                                                                                |
-|    Expected Import Status               |    The expected user import status, either "Active" if there was a match between your AD and Azure AD or "Historical" if we could not match the AD identity in your Azure AD.                                                                                                                                                                                                        |
+|    Active Directory - User (Azure DevOps Server)                             |    Friendly display name used by the identity in   Azure DevOps Server. Makes it easier to identify which user the line in the map is   referencing.                                                                                                                         |
+|    Active Directory - Security Identifier    |    The unique identifier for the on-prem AD identity   in Azure DevOps Server. This column is used to identify users in the collection.                                                                                                                                      |
+|    Azure Active Directory - Expected Import User (Azure DevOps Services)    |    Either the expected sign in address of the matched soon to be active user or "No Match Found (Check Azure Active Directory Sync)" indicating that the identity was not found in during Azure Active Directory sync and will be imported as historical.                                                                                                                                                                |
+|    Expected Import Status               |    The expected user import status, either "Active" if there was a match between your Active Directory and Azure Active Directory or "Historical" if we could not match the Active Directory identity in your Azure Active Directory.                                                                                                                                                                                                        |
 |    Validation Date                  |    Last time the identity map log was validated.                                                                                                                                                                                                                 |
 
 As you read through the file, notice the Expected Import Status column has either **Active** or **Historical**. **Active** indicates that it's expected that the identity on this row will map correctly on import and will become active. **Historical** become historical identities on import. It's important that you review the generated mapping file for completeness and correctness.
@@ -226,7 +226,7 @@ As you read through the file, notice the Expected Import Status column has eithe
 > [!IMPORTANT]  
 > Your import will fail if major changes occur to your Azure AD Connect SID sync between import attempts. New users can be added between dry runs, and corrections to ensure previously imported historical identities become active are also OK. However, changing an existing user that was previously imported as active is not supported at this time. Doing so will cause your import to fail. For example, completing a dry run import, deleting an identity from your Azure AD that was imported actively, recreating a new user in Azure AD for that same identity, and attempt another import. In this case an active identity import will be attempted between the AD and newly created Azure AD identity, but it will cause an import failure as this isn't supported. 
 
-Start by reviewing the correctly matched identities. Are all of the expected identities present? Are the users mapped to the correct Azure AD identity? If any values are incorrectly mapped or need to be changed then you'll need to contact your Azure AD administrator to check whether the on-premises Active Directory (AD) identity is part of the sync to Azure AD and has setup correctly. Check the [documentation](https://aka.ms/vstsaadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises Active Directory (AD) and Azure AD. 
+Start by reviewing the correctly matched identities. Are all of the expected identities present? Are the users mapped to the correct Azure AD identity? If any values are incorrectly mapped or need to be changed then you'll need to contact your Azure AD administrator to check whether the on-premises Active Directory (AD) identity is part of the sync to Azure AD and has setup correctly. Check the [documentation](/azure/active-directory/hybrid/whatis-hybrid-identity "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises Active Directory (AD) and Azure AD. 
 
 Next, review the identities that are labeled as 'Historical'. This implies that a matching Azure AD identity couldn't be found. This could be for one of four reasons.
 
@@ -235,13 +235,13 @@ Next, review the identities that are labeled as 'Historical'. This implies that 
 3. The identity simply doesn't exist in your Azure AD.
 4. The user that owned that identity no longer works at the company.
 
-In the first three cases the desired on-premises Active Directory (AD) identity will need to be set up for sync with Azure AD. Check the [documentation](https://aka.ms/azureadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises Active Directory (AD) and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in Azure DevOps Services. The final case can generally be ignored as employees no longer at your company should be imported historically. 
+In the first three cases the desired on-premises Active Directory (AD) identity will need to be set up for sync with Azure AD. Check the [documentation](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises Active Directory (AD) and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in Azure DevOps Services. The final case can generally be ignored as employees no longer at your company should be imported historically. 
 
 #### Historical identities (small teams) 
 
 > The identity import strategy proposed in this section should only be considered by small teams. 
 
-In cases where the Azure AD Connect hasn't been configured, you will notice that all users in the identity map log file will be marked as 'Historical'. Running an import this way will result in all users getting imported [historically](#historical-identities). It's strongly recommended that you configure [Azure AD Connect](https://aka.ms/azureadconnect) to ensure that your users are imported as active. 
+In cases where the Azure AD Connect hasn't been configured, you will notice that all users in the identity map log file will be marked as 'Historical'. Running an import this way will result in all users getting imported [historically](#historical-identities). It's strongly recommended that you configure [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration) to ensure that your users are imported as active. 
 
 > Running an import with all historical identities has consequences which need to be considered carefully. It should only be considered by teams with a small number of users were the cost of setting up an Azure AD Connect is deemed too high. 
 
@@ -251,7 +251,7 @@ The data migration tool will warn if it detects the complete historical identiti
 
 ### Visual Studio subscriptions
 
-The data migration tool is unable to detect Visual Studio subscriptions (formerly known as MSDN benefits) when generating the identity map log file. Instead, it's recommended that you leverage the auto license upgrade feature post import. As long as a user's work account is [linked](https://aka.ms/LinkVSSubscriptionToAADAccount) correctly, Azure DevOps Services will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for licenses assigned during import, so this can be safely handled post import. 
+The data migration tool is unable to detect Visual Studio subscriptions (formerly known as MSDN benefits) when generating the identity map log file. Instead, it's recommended that you leverage the auto license upgrade feature post import. As long as a user's work account is [linked](/visualstudio/subscriptions/vs-alternate-identity) correctly, Azure DevOps Services will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for licenses assigned during import, so this can be safely handled post import. 
 
 You don't need to repeat a dry run import if users don't automatically get upgraded to use their Visual Studio Subscription in Azure DevOps Services. Visual Studio Subscription linking is something that happens outside of the scope of an import. As long as the work account gets linked correctly before or after the import then the user will automatically have their license upgraded on the next sign in. Once they've been upgraded successfully, next time you import the user will be upgraded automatically on the first sign in to the organization.  
 
@@ -379,7 +379,7 @@ Use the table below to decide where you should create your SQL Azure VM if you'r
 |    Brazil South                 |    Brazil South                |
 |    South India                  |    South India                 |
 |    Central Canada               |    Central Canada              |
-|    East Asia (Hong Kong)        |    East Asia (Hong Kong)       |
+|    Asia Pacific (Hong Kong)        |    Asia Pacific (Hong Kong)       |
 |    UK South                     |    UK South                    |
 
 > While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new organizations. Customers will not be able to import their data into other United States Azure regions at this time. 
@@ -389,11 +389,12 @@ Use the table below to decide where you should create your SQL Azure VM if you'r
 
 Below are some additional recommended configurations for your SQL Azure VM.
 
-1. It's recommended that D Series VMs be used as they're optimized for database operations.
-2. Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
-3. [Configure](/sql/relational-databases/databases/move-system-databases#Examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#generating-a-dacpac).
-4. If your source database is still over 1TB after [reducing the size](/azure/devops/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
-5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
+- It's recommended that D Series VMs be used as they're optimized for database operations.
+- Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
+- [Configure](/sql/relational-databases/databases/move-system-databases#Examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#generating-a-dacpac).
+- If your source database is still over 1TB after [reducing the size](/azure/devops/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
+- Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. Also, consider using larger VMs with 16 vCPUs and 128 GBs of RAM.
+- You need to have a public facing IP address for the service to reach this machine.
 
 <a id="ips" />
 
@@ -403,6 +404,9 @@ It's highly recommended that you restrict access to your VM to only IPs from Azu
 
 First, no matter what Azure DevOps Services region you import into, you must grant the following IP access to your collection database. 
 
+> [!NOTE]   
+> IP addresses listed below with x.x.x.0/23 indicates a range. Please allow the entire /23 range. For example, if you are importing into Central Unites States, allow the /23 range for 20.37.158.0. For IP addresses with x.x.x.0/24, allow the /24 range.
+
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
 |    Azure DevOps Services Identity Service       |    168.62.105.45, 40.81.42.115    |
@@ -411,14 +415,14 @@ Next you will need to grant access to the Regional Identity Service. You only ne
 
 |    Service                                                 |    IP                                                                                                                         |
 |------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-|    Regional Identity Service - Central United States       |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181, 52.158.209.56, 20.37.158.0                                   |
-|    Regional Identity Service - West Europe                 |    52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103, 23.97.221.25, 52.233.181.148, 52.149.110.153, 51.144.61.32, 52.236.147.236, 40.74.28.0       |
-|    Regional Identity Service - Australia East              |    13.75.145.145, 40.82.217.103, 20.188.213.113, 104.210.88.194, 40.81.62.114, 20.37.194.0                                    |
-|    Regional Identity Service - Brazil South                |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175, 191.235.226.0                    |
-|    Regional Identity Service - India South                 |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252, 20.41.194.0                                                                         |
-|    Regional Identity Service - Canada Central              |    52.237.19.6, 40.82.190.38, 52.228.82.0                                                                                               |
-|    Regional Identity Service - East Asia (Hong Kong)       |    52.175.28.40, 40.81.25.218, 13.94.26.58, 20.189.107.0
-|    Regional Identity Service - UK South                    |    40.81.159.67, 51.104.26.0                                                             |
+|    Regional Identity Service - Central United States       |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181, 52.158.209.56, 20.37.138.122, 20.37.158.0/23, 20.37.139.247, 20.37.158.5                                   |
+|    Regional Identity Service - West Europe                 |    20.67.123.240, 52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103, 23.97.221.25, 52.233.181.148, 52.149.110.153, 51.144.61.32, 52.236.147.236, 40.74.28.0/23       |
+|    Regional Identity Service - Australia East              |    13.75.145.145, 40.82.217.103, 20.188.213.113, 104.210.88.194, 40.81.62.114, 20.37.194.0/24                                    |
+|    Regional Identity Service - Brazil South                |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175, 191.235.226.0/24                    |
+|    Regional Identity Service - India South                 |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252, 20.41.194.0/24                                                                         |
+|    Regional Identity Service - Canada Central              |    52.237.19.6, 40.82.190.38, 52.228.82.0/243                                                                                               |
+|    Regional Identity Service - Asia Pacific (Hong Kong)       |    52.175.28.40, 40.81.25.218, 13.94.26.58, 20.189.107.0/24
+|    Regional Identity Service - UK South                    |    40.81.159.67, 51.104.26.0/24                                                             |
 
 Next you will need to grant access to the data migration tool for Azure DevOps itself. You only need to grant an exception for the data migration tool instance in the region that you're importing into.  
 
@@ -430,7 +434,7 @@ Next you will need to grant access to the data migration tool for Azure DevOps i
 |    Data migration tool - Brazil South                |    104.41.24.164, 20.40.115.123                            |
 |    Data migration tool - India South                 |    13.71.120.31, 40.81.76.137                              |
 |    Data migration tool - Canada Central              |    52.237.18.100, 52.237.24.61, 40.82.191.163              |
-|    Data migration tool - East Asia (Hong Kong)       |    13.75.106.194, 40.81.27.181                             |
+|    Data migration tool - Asia Pacific (Hong Kong)       |    13.75.106.194, 40.81.27.181                             |
 |    Data migration tool - UK South                    |    40.81.153.223, 51.105.8.98, 51.104.26.2                 |
   
 Next you will need to grant Azure DevOps Services access. Again, you only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.  
@@ -443,8 +447,8 @@ Next you will need to grant Azure DevOps Services access. Again, you only need t
 |    Azure DevOps Services - Brazil South                          |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175                                                                         |
 |    Azure DevOps Services - India South                           |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252                                                        |
 |    Azure DevOps Services - Canada Central                        |    52.237.19.6, 40.82.190.38                          |
-|    Azure DevOps Services - East Asia (Hong Kong)                 |    52.175.28.40, 40.81.25.218, 13.94.26.58                |
-|    Azure DevOps Services - UK South                              |    40.81.159.67, 51.105.8.98, 51.104.26.2                 |
+|    Azure DevOps Services - Asia Pacific (Hong Kong)                 |    52.175.28.40, 40.81.25.218, 13.94.26.58                |
+|    Azure DevOps Services - UK South                              |    40.81.159.67, 51.105.8.98, 51.104.26.2, 51.104.26.5                 |
 
 Next you will need to grant Azure Pipelines Releases service access. You only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.
 
@@ -458,7 +462,7 @@ Next you will need to grant Azure Pipelines Releases service access. You only ne
 |    Releases service - Brazil South            |    191.235.94.154, 20.40.116.69                                              |
 |    Releases service - India South             |    52.172.15.233, 40.81.79.60                                                |
 |    Releases service - Canada Central          |    52.237.28.171, 40.82.189.127                                              |
-|    Releases service - East Asia (Hong Kong)   |    13.107.6.175, 40.81.29.43                                                 |
+|    Releases service - Asia Pacific (Hong Kong)   |    13.107.6.175, 40.81.29.43                                                 |
 |    Releases service - UK South                |    40.81.156.207                                                                          |
 
 Next you will need to grant Azure Artifacts access. Again, you only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.  
@@ -475,7 +479,7 @@ You will need to add exceptions for all three services that make up Azure Artifa
 |    Azure Artifacts - Brazil South               |    191.234.179.224, 20.40.115.214                                                                                                      |
 |    Azure Artifacts - India South                |    52.172.11.191, 40.81.74.79                                                                                                          |
 |    Azure Artifacts - Canada Central             |    52.237.24.224, 40.85.224.121, 13.71.189.199, 40.82.188.122                                                                          |
-|    Azure Artifacts - East Asia (Hong Kong)      |    52.229.175.18, 65.52.162.53, 40.83.74.71, 40.81.27.130                                                                              |
+|    Azure Artifacts - Asia Pacific (Hong Kong)      |    52.229.175.18, 65.52.162.53, 40.83.74.71, 40.81.27.130                                                                              |
 |    Azure Artifacts - UK South                   |    51.145.120.132                                                                               |
 
 |    Service                                         |    IP                                                                              |
@@ -486,7 +490,7 @@ You will need to add exceptions for all three services that make up Azure Artifa
 |    Azure Artifacts Feed - Brazil South          |    191.235.93.87, 20.40.116.17                                                     |
 |    Azure Artifacts Feed - India South           |    52.172.8.41,40.81.79.49                                                         |
 |    Azure Artifacts Feed - Canada Central        |    52.237.19.70, 40.82.188.254                                                     |
-|    Azure Artifacts Feed - East Asia (Hong Kong) |    52.229.163.155, 40.81.28.59, 40.81.59.77                                        |
+|    Azure Artifacts Feed - Asia Pacific (Hong Kong) |    52.229.163.155, 40.81.28.59, 40.81.59.77                                        |
 |    Azure Artifacts Feed - UK South              |    51.145.120.49                                                                               |
 
 |    Service                                          |    IP               |
@@ -497,7 +501,7 @@ You will need to add exceptions for all three services that make up Azure Artifa
 |    Azure Artifacts Blob - Brazil South           |    191.235.90.183   |
 |    Azure Artifacts Blob - India South            |    52.172.54.122    |
 |    Azure Artifacts Blob - Canada Central         |    52.237.16.145, 52.237.16.145, 52.233.38.115, 40.82.187.186     |
-|    Azure Artifacts Blob - East Asia (Hong Kong)  |    13.94.26.58      |
+|    Azure Artifacts Blob - Asia Pacific (Hong Kong)  |    13.94.26.58      |
 |    Azure Artifacts Blob - UK South               |    51.143.174.59, 40.81.152.41              |
 
 **Test Plans**
@@ -512,7 +516,7 @@ You will need to add exceptions for Test Plans IPs in the region you're migratin
 |    Test Plans - Brazil South                   | 20.40.118.62                                                                      |
 |    Test Plans - India South                    | 40.81.72.10                                                                       |
 |    Test Plans - Canada Central                 | 40.82.184.28                                                                      |
-|    Test Plans - East Asia (Hong Kong)          | 52.184.81.26                                                                      |
+|    Test Plans - Asia Pacific (Hong Kong)          | 52.184.81.26                                                                      |
 |    Test Plans - UK South                       | 40.81.159.9                                                                       |
  
 **Analytics IPs (Azure DevOps Server 2019 or later only)**
@@ -521,13 +525,13 @@ If you included preview features with your import, add an exception for the anal
 
 |    Service                                     |    IP                                                                             |
 |------------------------------------------------|-----------------------------------------------------------------------------------|
-|    Analytics service - United States           | 20.41.43.22, 20.36.236.83, 20.41.40.50, 52.242.212.199, 13.86.33.148, 13.86.39.80 |
+|    Analytics service - United States           | 20.41.43.22, 20.36.236.83, 20.41.40.50, 52.143.251.221, 52.242.212.199, 13.86.33.148, 13.86.39.80 |
 |    Analytics service - West Europe             | 52.236.146.143, 52.236.146.9, 52.149.108.23                                       |
 |    Analytics service - Australia East          | 20.40.179.159                                                                     |
 |    Analytics service - Brazil South            | 20.40.113.248                                                                     |
 |    Analytics service - India South             | 40.81.73.58                                                                       |
 |    Analytics service - Canada Central          | 40.82.185.214                                                                     |
-|    Analytics service - East Asia (Hong Kong)   | 40.81.25.239                                                                      |
+|    Analytics service - Asia Pacific (Hong Kong)   | 40.81.25.239                                                                      |
 |    Analytics service - UK South                | 40.81.159.247                                                                     |
 
 #### Configure IP firewall exceptions
@@ -580,11 +584,11 @@ CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
 > [!NOTE]   
-> Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#change-authentication-mode-with-ssms) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
+> Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#change-authentication-mode-with-ssms&preserve-view=true) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
 
 #### Configure the import specification file to target the VM
 
-The import specification file will need to be updated to include information on how to connect to the SQL instance. Open your import specification file and make the following updates:
+You'll need to update the import specification file to include information on how to connect to the SQL instance. Open your import specification file and make the following updates:
 
 Remove the DACPAC parameter from the source files object.
 
@@ -601,7 +605,7 @@ Fill out the required parameters and add the following properties object within 
 ```json
 "Properties":
 {
-    "ConnectionString": "Data Source={SQL Azure VM IP};Initial Catalog={Database Name};Integrated Security=False;User ID={SQL Login Username};Password={SQL Login Password};Encrypt=True;TrustServerCertificate=True" 
+    "ConnectionString": "Data Source={SQL Azure VM Public IP};Initial Catalog={Database Name};Integrated Security=False;User ID={SQL Login Username};Password={SQL Login Password};Encrypt=True;TrustServerCertificate=True" 
 }
 ```
 
@@ -628,7 +632,7 @@ Azure DevOps Services is available in multiple [regions](https://azure.microsoft
 |    Brazil South                 |    Brazil South                |
 |    India South                  |    India South                 |
 |    Canada Central               |    Canada Central              |
-|    East Asia (Hong Kong)        |    East Asia (Hong Kong)       |
+|    Asia Pacific (Hong Kong)        |    Asia Pacific (Hong Kong)       |
 
 While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new Azure DevOps Services. Customers will not be able to import their data into other United States Azure regions at this time.  
 
@@ -637,14 +641,14 @@ While Azure DevOps Services is available in multiple regions in the United State
 
 After the import has been completed you can delete the blob container and accompanying storage account.
 
-You can accomplish this step using tools like [AzCopy](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/) or any other Azure storage explorer tool like [Microsoft Azure Storage Explorer](https://storageexplorer.com/). 
+You can accomplish this step using tools like [AzCopy](/azure/storage/common/storage-use-azcopy-v10) or any other Azure storage explorer tool like [Microsoft Azure Storage Explorer](https://storageexplorer.com/). 
 
 > [!NOTE]   
 > If your DACPAC is larger than 10GB then it's recommended that you use AzCopy. AzCopy has multi-threaded upload support for faster uploads.
 
 ### Generate SAS Key
 
-A Shared Access Signature ([SAS](https://azure.microsoft.com/documentation/articles/storage-dotnet-shared-access-signature-part-1/)) Key provides delegated access to resources in a storage account. This allows you to give Microsoft the lowest level of privilege required to access your data for executing the import. 
+A Shared Access Signature ([SAS](/azure/storage/common/storage-sas-overview)) Key provides delegated access to resources in a storage account. This allows you to give Microsoft the lowest level of privilege required to access your data for executing the import. 
 
 The recommended way to generate a SAS Key is the [Microsoft Azure Storage Explorer](https://storageexplorer.com/). Storage Explorer allows you to easily create container level SAS Keys. This is essential as the data migration tool does NOT support account level SAS Keys. 
 
