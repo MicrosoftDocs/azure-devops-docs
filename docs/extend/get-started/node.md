@@ -226,7 +226,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 To test an extension, it must be installed to an organization in Azure DevOps. Installing requires being the owner of the organization (or having the necessary permissions). Because your extension is private, it must first be shared with the organization you want to install it to.
 
-1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare** or **Publish/Unpublish**, depending on your version of Azure DevOps.
+1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare** or **Publish/Unpublish**, depending on the extension; Share = Publish and Unshare = Unpublish.
 
    <img src="media/share-menu.png" alt="Select extension and choose Share." style="border: 1px solid #C3C3C3;" /> 
 
