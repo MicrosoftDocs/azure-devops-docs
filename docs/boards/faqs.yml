@@ -67,7 +67,7 @@ sections:
           - `Work Item Type = [Any]`
           - `State = [Any]` 
 
-          From there, you can add filters to refine the query. To learn more, see [Create and save managed queries with the query editor](../queries/using-queries.md).
+          From there, you can add filters to refine the query. To learn more, see [Create and save managed queries with the query editor](queries/using-queries.md).
 
       - question: Can a work item be assigned to several users or a user group? 
 
@@ -180,15 +180,13 @@ sections:
       - question: How can I get a rollup of Story Points, Effort, or other work item fields? 
 
         answer: | 
-
           ::: moniker range=">= azure-devops-2020"
           Rollup columns allow you to view progress bars or totals of numeric fields or descendant items within a hierarchy. Descendant items correspond to all child items within the hierarchy. You can add one or more rollup columns to a product or portfolio backlog. You can add rollup columns to a product or portfolio backlog. See {Display rollup progress or totals](backlogs/display-rollup.md). 
           ::: moniker-end
-          ::: moniker range="< azure-devops-2020"
+          ::: moniker range="<= azure-devops-2019"
           Rollup provides summed values of select fields for all child work items of a parent. To learn more, see  [Rollup of work and other fields](../reference/xml/support-rollup-of-work-and-other-fields.md). 
           ::: moniker-end
   
-    questions: 
       - question: Can I get a rollup of team capacity?
 
         answer: | 
@@ -223,9 +221,9 @@ sections:
           **Example request**: *When creating a template, I would like the Parent User Story to be defaulted. There is not a pre-determined field in the template. Would/could this be under a user-defined selection?*  
 
           No, there is no native support for creating hierarchy templates. In particular, you can't specify a default parent work item. You can, however, quickly copy tasks, bugs, and other items using [Excel](backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. Or, you can use a Kanban board to add child tasks, backlog items, or features. To learn more, see:  
-          - [Add task checklists](../boards/add-task-checklists.md)
-          - [Add, run, and update inline tests](../boards/add-run-update-tests.md) 
-          - [Add features and epics](../boards/kanban-epics-features-stories.md)  
+          - [Add task checklists](boards/add-task-checklists.md)
+          - [Add, run, and update inline tests](boards/add-run-update-tests.md) 
+          - [Add features and epics](boards/kanban-epics-features-stories.md)  
 
           ::: moniker range=">= azure-devops-2019"
           Alternatively, you may find a solution for creating child work items by installing one of the following Marketplace extensions:  
