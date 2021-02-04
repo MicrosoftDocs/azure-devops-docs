@@ -5,9 +5,7 @@ ms.topic: conceptual
 ms.assetid: 6728CA49-5D44-4603-96E1-3BC3CF8D9793
 ms.date: 06/27/2017
 ms.custom: "mvc, seodec18"
-monikerRange: '>= tfs-2015'
 ---
-
 
 # Implement a CI/CD pipeline to build and deploy your ASP.NET app to Azure
 
