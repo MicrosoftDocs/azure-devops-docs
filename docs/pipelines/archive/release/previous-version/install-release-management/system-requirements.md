@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
-monikerRange: '>= tfs-2013'
 ---
 
 # System requirements for Release Management server/client for VS 2015 and TFS 2015
