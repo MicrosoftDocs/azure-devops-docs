@@ -77,8 +77,6 @@ Users can view and filter packages by **Sourced versions**.
 
 Aside from using the feed's user interface, you can also enable upstream behavior using the Azure DevOps Services REST API.
 
-< API_reference_link_placeholder >
-
 ## Enable upstream behavior with PowerShell
 
 To successfully execute the next steps in this section, you will need to create a personal access token with packaging **Read, write, & manage** permissions. See [Use personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to create your personal access token. 
@@ -101,15 +99,23 @@ $headers = @{
 }
 ```
 
-Invoking the REST method requires an endpoint url. Enter your `OrganizationName`, `ProjectName`, `FeedName`, `Protocol`, and your `PackageName` to construct the `$Url` variable. (Example: /pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/Myapp1.0.nupkg/upstreaming?api-version=6.1-preview.1)
+Invoking the REST method requires an endpoint url. Enter your `OrganizationName`, `ProjectName`, `FeedName`, `Protocol`, and your `PackageName` to construct the `$Url` variable. (Project-scoped feed example: /pkgs.dev.azure.com/MyOrg/MyProject/_apis/packaging/feeds/MyFeed/nuget/packages/Myapp1.0.nupkg/upstreaming?api-version=6.1-preview.1)
+
+- **Project-scoped feed**:
 
 ```PowerShell
 $url = "https://pkgs.dev.azure.com/{OrganizationName}/{ProjectName}/_apis/packaging/feeds/{FeedName}/{Protocol}/packages/{PackageName}/upstreaming?api-version=6.1-preview.1"
 ```
 
+- **Organization-scoped feed**:
+
+```PowerShell
+$url = "https://pkgs.dev.azure.com/{OrganizationName}/_apis/packaging/feeds/{FeedName}/{Protocol}/packages/{PackageName}/upstreaming?api-version=6.1-preview.1"
+```
+
 Now that we have both the header and the endpoint URL set up, we can start sending HTTP requests to get, set, and clear upstreaming for any specific package.
 
-### Get upstream behavior state
+### Get upstreaming behavior
 
 Run the following command to retrieve the upstream behavior state of your package. `$url` and `$headers` are the same variables we used in the previous section.
 
@@ -117,7 +123,7 @@ Run the following command to retrieve the upstream behavior state of your packag
  Invoke-RestMethod -Uri $url -Headers $headers
  ```
 
-### Set upstream behavior
+### Set upstreaming behavior
 
 Run the following commands to allow externally sourced versions for your package. This will set `versionsFromExternalUpstreams` to `AllowExternalVersions`, and will use the `$url` and `$headers` variables to query the REST API.
 
@@ -127,7 +133,7 @@ $body = '{"versionsFromExternalUpstreams": "AllowExternalVersions"}'
 Invoke-RestMethod -Uri $url -Headers $headers -Body $body -Method Patch -ContentType "application/json"
 ```
 
-### Clear upstream behavior
+### Clear upstreaming behavior
 
 To clear the upstream behavior for your package, run the following commands to set `versionsFromExternalUpstreams` to `Auto` and query the REST API.
 
