@@ -1,16 +1,16 @@
 ---
-title: Pool consumption report
+title: Historical graph for agent pools
 description: View agent pool usage statistics
 ms.topic: conceptual
-ms.date: 12/07/2020
+ms.date: 02/04/2021
 monikerRange: 'azure-devops'
 ---
 
-# Pool consumption report
+# Historical graph for agent pools (Preview)
 
 The pool consumption report enables you to view jobs running in your agent pools graphed with agent pool job concurrency over a span of up to 30 days. You can use this information to help decide whether your jobs aren't running because of concurrency limits. If you have many jobs queued or running jobs at the concurrency or online agents limit, you may wish to [purchase additional parallel jobs](../licensing/concurrent-jobs.md) or provision more self-hosted agents.
 
-## Report types
+## Pool consumption report
 
 The pool consumption report  is part of the **Analytics** tab for an agent pool and contains the following charts, depending on the agent pool type.
 
