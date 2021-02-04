@@ -107,6 +107,9 @@ Since there is no configuration change required for the build pipeline, the buil
 1. Enter the **Connection URL** to the current instance of Azure DevOps. This URL is something like `https://dev.azure.com/[Your account]`. Paste in the **Personal Access Token** created earlier and specify a **Service connection name**. Select **Verify and save**.
 
     ![Creating an Azure Pipelines service connection](media/deploying-azure-vms-deployment-groups/create-azure-pipelines-connection.png)
+  
+    > [!NOTE]
+    > To register an agent, you need to be a member of the administrator role in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and Azure Pipelines or TFS. Once the agent is registered, there is no need to renew the PAT as it is required only at the time of registration.
 
 1. Select the current **Team project** and the **Deployment group** created earlier.
 
