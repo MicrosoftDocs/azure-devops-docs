@@ -8,14 +8,21 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 01/26/2021
+ms.date: 02/02/2021
 --- 
 
 # Troubleshoot permissions
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-Intro...
+Troubleshoot permissions, feature access, and connection access.
+Want to include the need to:
+•	Find all groups a user belongs to.
+•	Make sure to address Cloud and ON-prem
+•	Don't include Kusto or SQL queries
+•	Do provide links to tfssecurity and az devops security commands to help fix permissions.
+•	Mention that the Hide Org is a limiting restriction (not exactly a permission)
+________________________________________
 
 
 ## Look up permissions
