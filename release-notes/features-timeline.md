@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: sid-ah
 ms.author: simerzou
-ms.date: 01/14/2021
+ms.date: 02/04/2021
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -81,6 +81,15 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
     <tbody>
+    <tr>
+    <td rowspan="5"><a href="2021/sprint-182-update.md" data-raw-source="[04 February 2021](2021/sprint-182-update.md)">04 February 2021</a></td>
+    <td>Limit user visibility and collaboration to specific projects</td><td>General</td><td>Future</td>
+    </tr>
+    <tr><td>Removed items on work items hub</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Delivery Plans 2.0: Increase team limit to 15</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>.NET Core 3.0 to be removed from Linux and macOS hosted agents</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Group By Tags available in chart widgets</td><td>Reporting</td><td>Future</td></tr>
+    <tr>
     <td rowspan="4"><a href="2021/sprint-181-update.md" data-raw-source="[14 January 2021](2021/sprint-181-update.md)">14 January 2021</a></td>
     <td>Delivery Plans: Rollup Information</td><td>Boards</td><td>Future</td>
     </tr>

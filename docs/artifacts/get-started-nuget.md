@@ -1,6 +1,6 @@
 ﻿---
 title: Get started with NuGet packages
-description: Quickly start hosting NuGet packages in Azure DevOps Services or Team Foundation Server
+description: Use Azure Artifacts to publish and consume NuGet packages
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
@@ -8,7 +8,7 @@ ms.date: 03/06/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Get started with NuGet packages in Azure DevOps Services and TFS
+# Get started with NuGet packages
 
 **Azure DevOps Services | TFS 2018 | TFS 2017**
 

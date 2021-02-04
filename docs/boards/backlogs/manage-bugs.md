@@ -311,7 +311,7 @@ For example, here are two examples showing active bugs by priority trend and a s
 
 ![Bug trend chart from query](media/manage-bugs-trend-chart.png)   ![Bug snapshot by priority](media/manage-bugs-priority-chart.png)   
 
-To learn more about queries, charts, and dashboards; see [Create managed queries](../queries/example-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).    
+To learn more about queries, charts, and dashboards; see [About managed queries](../queries/about-managed-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).    
 
 <a id="customize"> </a>
 
