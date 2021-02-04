@@ -595,57 +595,7 @@ For example, the following syntax specifies a work item task with title *TaskTit
 You can save the URL as a text file or add the URL to a dashboard or web page as a hyperlink. 
 
 
-## Q & A
-
-
-### Q: How do I set a default template for a team? 
-
-**A:** The feature to set a default template for a team isn't a supported feature at this time. 
-
-::: moniker range="<= tfs-2015"
-From the Work Item Templates tool, you can set a default for each work item type. However, that default is set only for you and available only when working through Team Explorer. Open the template context menu and select **Set as default**. 
-
-::: moniker-end
-
-### Q: Can I copy a work item template to another team or project? 
-
-**A:** No. This feature isn't supported at this time.  
-
-### Q: How do I delete a work item template? 
-
-**A:** From the work item type page, choose  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: the actions icon for an existing template and select the **Delete** option. 
-
-> [!div class="mx-imgBorder"]  
-> ![Delete template](media/templates/delete-template.png)
-
-
-### How do I create a template with links to other work items?
-
-::: moniker range=">= azure-devops-2019"
-
-**A:** You can't create templates that contain default links to work items. However, you can use the Marketplace extension, [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions), to create rules that support adding linked work items with a single click. 
-
-Or, you can use a Kanban board to add child tasks, backlog items, or features. To learn more, see:  
-- [Add task checklists](../boards/add-task-checklists.md)
-- [Add, run, and update inline tests](../boards/add-run-update-tests.md) 
-- [Add features and epics](../boards/kanban-epics-features-stories.md)  
-
-Otherwise, you can quickly copy tasks, bugs, and other items using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-You can't create templates that contain default links to work items. However, you can quickly copy tasks, bugs, and other items using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to apply parent-child links in a tree list. 
-
-Or, you can use a Kanban board to add child tasks, backlog items, or features. To learn more, see:  
-- [Add task checklists](../boards/add-task-checklists.md)
-- [Add, run, and update inline tests](../boards/add-run-update-tests.md) 
-- [Add features and epics](../boards/kanban-epics-features-stories.md)  
-
-::: moniker-end
-
-
 ## Related articles
 
+- [Azure Boards FAQs](../faqs.yml) 
 - [Sample work item templates](../work-items/work-item-template-examples.md)

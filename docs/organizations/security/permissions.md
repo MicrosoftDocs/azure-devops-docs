@@ -1968,7 +1968,7 @@ The project-level permissions available for Azure DevOps Server 2019 and later v
       <a id="alter-trace-settings-permission" />Alter trace settings
    :::column-end:::
    :::column span="3":::
-      Can [change the trace settings](/previous-versions/ms400797%28v%3dvs.80%29)for gathering more detailed diagnostic information about Azure DevOps Web services.
+      Can [change the trace settings](/previous-versions/ms400797%28v%3dvs.80%29) for gathering more detailed diagnostic information about Azure DevOps Web services.
    :::column-end:::
 :::row-end:::
 ---
