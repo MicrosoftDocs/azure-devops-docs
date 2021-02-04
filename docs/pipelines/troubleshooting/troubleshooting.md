@@ -537,8 +537,6 @@ However, when it sees the second line, the agent will process everything to the 
 To troubleshoot issues related to service connections, see [Service connection troubleshooting](../release/azure-rm-endpoint.md).
 
 
-
-
 ## Get logs to diagnose problems
 
 If none of the previous suggestions match your problem, you can use the information in the logs to diagnose your failing pipeline.

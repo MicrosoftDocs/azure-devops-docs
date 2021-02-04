@@ -26,7 +26,7 @@ See activity about your Azure DevOps Server (2017.2 and later) projects directly
 
 ### Azure Boards app for Teams
 
-[Azure Boards app for Microsoft Teams](../../boards/integrations/boards-teams.md) helps to easily create and monitor work items from your Teams channels.Users can create work items using a command, or use message actions to convert conversations in the channel into work items. Users can also set up and manage subscriptions to get notifications in their channel whenever work items are created or updated. 
+[Azure Boards app for Microsoft Teams](../../boards/integrations/boards-teams.md) helps to easily create and monitor work items from your Teams channels. Users can create work items using a command, or use message actions to convert conversations in the channel into work items. Users can also set up and manage subscriptions to get notifications in their channel whenever work items are created or updated. 
 
 ### Azure Pipelines app for Teams
 

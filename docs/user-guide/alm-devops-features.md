@@ -1009,7 +1009,7 @@ Use features supported by these familiar clients to manage your project and illu
     :::column:::
         **Define builds**  
   
-        Start from a build template and customize your build from there. Build for [Windows](../pipelines/apps/windows/dot-net.md), [iOS](../pipelines/ecosystems/xcode.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../pipelines/ecosystems/xamarin.md) for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.  
+        Start from a build template and customize your build from there. Build for [Windows](../pipelines/apps/aspnet/build-aspnet-4.md), [iOS](../pipelines/ecosystems/xcode.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../pipelines/ecosystems/xamarin.md) for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.  
   
         **Customize build process using scripts**  
   
@@ -2442,7 +2442,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Customize the Microsoft Project field mapping file </b></p>
-<p>You can <a href="/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts" data-raw-source="[customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project](/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts)">customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project</a>. And, you can change how specific fields are published.  </p>
+<p>You can <a href="/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts" data-raw-source="[customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file?viewFallbackFrom=vsts)">customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project</a>. And, you can change how specific fields are published.  </p>
 
 
 </td>

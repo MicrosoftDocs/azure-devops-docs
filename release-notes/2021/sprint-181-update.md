@@ -3,7 +3,7 @@ title: New enhancements to Delivery Plans 2.0 – sprint 181
 author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
-ms.date: 01/14/2020
+ms.date: 01/14/2021
 description: In this sprint, we're enhancing Delivery Plans 2.0 with new condensed views and rollup information. We're also introducing Manual Validation and a new `uses` statement for pre-declaring resources in YAML pipelines.
 ---
 
@@ -15,15 +15,19 @@ Check out the Features list below for details.
 
 
 ### Azure Boards
+
 [!INCLUDE [sprint-181-update-links](includes/boards/sprint-181-update-links.md)]
 
 ### Azure Pipelines
+
 [!INCLUDE [sprint-181-update-links](includes/pipelines/sprint-181-update-links.md)]
 
 ## Azure Boards
+
 [!INCLUDE [sprint-181-update](includes/boards/sprint-181-update.md)]
 
 ## Azure Pipelines
+
 [!INCLUDE [sprint-181-update](includes/pipelines/sprint-181-update.md)]
 
 ## Next steps

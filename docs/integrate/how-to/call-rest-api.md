@@ -8,7 +8,7 @@ ms.custom: has-adal-ref
 monikerRange: '<= azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 01/25/2021
 ---
 
 # Get started with the REST APIs
@@ -84,7 +84,7 @@ public static async void GetProjects()
 If you don&#39;t have an organization,
 you can <a href="https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services" data-raw-source="[set one up for free](https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services)">set one up for free</a>. 
 
-Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for Azure DevOps Services including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
+Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are various authentication mechanisms available for Azure DevOps Services including Microsoft Authentication Library (MSAL), OAuth, and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
 ## Azure DevOps Server
 
@@ -157,7 +157,7 @@ That's generally what you'll get back from the REST APIs,
 although there are a few exceptions,
 like [Git blobs](/rest/api/azure/devops/git/blobs).
 
-Now you should be able to look around the specific
+Now, you should be able to look around the specific
 [API areas](/rest/api/azure/devops/git/) like [work item tracking](/rest/api/azure/devops/wit/)
 or [Git](/rest/api/azure/devops/git/) and get to the resources that you need.
 Keep reading to learn more about the general patterns that are used in these APIs.
@@ -216,18 +216,18 @@ X-HTTP-Method-Override: PATCH
 
 Response | Notes
 :--------|:----------------------------------------
-200      | Success, and there is a response body.
+200      | Success, and there's a response body.
 201      | Success, when creating resources. Some APIs return 200 when successfully creating a resource. Look at the docs for the API you're using to be sure.
-204      | Success, and there is no response body. For example, you'll get this when you delete a resource.
+204      | Success, and there's no response body. For example, you'll get this when you delete a resource.
 400      | The parameters in the URL or in the request body aren't valid.
-401      | Authentication has failed.  Often this is due to a missing or malformed Authorization header.
-403      | The authenticated user doesn't have permission to perform the operation.
+401      | Authentication has failed.  Often this is because of a missing or malformed Authorization header.
+403      | The authenticated user doesn't have permission to do the operation.
 404      | The resource doesn't exist, or the authenticated user doesn't have permission to see that it exists.
-409      | There's a conflict between the request and the state of the data on the server. For example, if you attempt to submit a pull request and there is already a pull request for the commits, the response code is 409.
+409      | There's a conflict between the request and the state of the data on the server. For example, if you attempt to submit a pull request and there's already a pull request for the commits, the response code is 409.
 
 ## Cross-origin resource sharing (CORS)
 
-Azure DevOps Services supports CORS. This enables JavaScript code served from a domain other than `dev.azure.com/*` to make Ajax requests to Azure DevOps Services REST APIs. For this to work, each request must provide credentials (personal access tokens and OAuth access tokens are both supported options). Example:
+Azure DevOps Services supports CORS, which enables JavaScript code served from a domain other than `dev.azure.com/*` to make Ajax requests to Azure DevOps Services REST APIs. Each request must provide credentials (personal access tokens and OAuth access tokens are both supported options). Example:
 
 ```js
     $( document ).ready(function() {
@@ -256,7 +256,7 @@ Azure DevOps REST APIs are versioned to ensure applications and services continu
 * API versions are in the format {major}.{minor}[-{stage}[.{resource-version}]] - For example, ```1.0```, ```1.1```, ```1.2-preview```, ```2.0```.
 * While an API is in preview, you can specify a precise version of a particular revision of the API when needed (for example, ```1.0-preview.1```, ```1.0-preview.2```)
 * Once an API is released (1.0, for example), its preview version (1.0-preview) is deprecated and can be deactivated after 12 weeks.
-* During this time you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify a ```-preview``` version gets rejected.
+* Now, you should upgrade to the released version of the API. Once a preview API is deactivated, requests that specify ```-preview``` version gets rejected.
 
 ### Usage
 
@@ -282,4 +282,4 @@ GET https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version=1.0
 
 Major API version releases align with Team Foundation Server RTM releases. For example, the `3.0` API set was introduced with Team Foundation Server 2017.
 
-A small number of undocumented version 1.0 APIs existed in Team Foundation Server 2013, but aren't supported.
+A few undocumented version 1.0 APIs existed in Team Foundation Server 2013, but aren't supported.

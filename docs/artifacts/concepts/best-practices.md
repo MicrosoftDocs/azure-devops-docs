@@ -1,6 +1,6 @@
 ﻿---
 title: Using packages in Azure DevOps best practices
-description: Learn best practices for producing and consuming feeds and packages in Visual Studio Team Services and Team Foundation Server
+description: Best practices to publish and consume packages from Artifacts feeds
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 05/18/2018
@@ -9,7 +9,7 @@ monikerRange: '>= tfs-2017'
 
 # Best practices for using Azure Artifacts 
 
-This article contains some general guidance and best practices when it comes to producing and consuming packages in Azure DevOps Services or Team Foundation Server (TFS).
+This article contains some general guidance and best practices when it comes to producing and consuming packages in Azure Artifacts.
 
 ## Creating packages as part of a build
 

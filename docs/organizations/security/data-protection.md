@@ -195,6 +195,9 @@ Azure DevOps is available in the following eight geographies across the world: U
 
 Azure DevOps doesn't move or replicate customer data outside of the chosen geography. Instead, your data is geo-replicated to a second region within the same geography. The only exception is Brazil, which replicates data to the South Central US geography for disaster recovery purposes.
 
+> [!NOTE]
+> For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to a third-party data center in the US.
+
 To learn more, see [Azure DevOps data location](data-location.md).
 
 ### Law enforcement access
