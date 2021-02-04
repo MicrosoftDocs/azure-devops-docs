@@ -7,7 +7,7 @@ ms.technology: devops-security
 ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: '<= azure-devops'
 ms.date: 06/24/2019
 ---
 
@@ -105,7 +105,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 - To enable or disable inheritance for a specific repository, select the repository and then move the **Inheritance** slider to either an on or off position.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add user or group](media/git-tfvc-perm/disable-inheritance-specific-repo.png)  
+	> ![Enable or disable inheritance for a specific repository.](media/git-tfvc-perm/disable-inheritance-specific-repo.png)  
 
 To learn about inheritance, see [About permissions and groups, Inheritance and security groups](about-permissions.md#inheritance). 
 
@@ -234,9 +234,10 @@ To learn about inheritance, see [About permissions and groups, Inheritance and s
 - [Default TFVC permissions](default-tfvc-permissions.md)  
 - [Default permissions and access](permissions-access.md) 
 - [Permissions and groups reference](permissions.md)  
-
+- [Tf Team Foundation Version Control (TFVC) permission command-line tool](../../repos/tfvc/permission-command.md)  
+- [Tf git permission command-line tool](../../repos/tfvc/git-permission-command.md)  
+- [Security REST API commands](/rest/api/azure/devops/security/)
 
 <!---
-	[![Project Settings>Code>Repositories>TFVC repositories>Security](media/git-tfvc-perm/open-tfvc-repo.png)](media/git-tfvc-perm/open-tfvc-repo-wide.png#lightbox) 
-
+[![Project Settings>Code>Repositories>TFVC repositories>Security](media/git-tfvc-perm/open-tfvc-repo.png)](media/git-tfvc-perm/open-tfvc-repo-wide.png#lightbox) 
 -->

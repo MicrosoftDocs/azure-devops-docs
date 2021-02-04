@@ -30,7 +30,7 @@ You create a new pipeline by first selecting **Bitbucket Cloud** for repository 
 
 ---
 
-Azure Pipelines must be granted access to your repositories to trigger their builds, and fetch their code during builds.
+Azure Pipelines must be granted access to your repositories to fetch the code during builds. In addition, the user setting up the pipeline must have admin access to Bitbucket, since that identity is used to register a webhook in Bitbucket.
 
 There are 2 authentication types for granting Azure Pipelines access to your Bitbucket Cloud repositories while creating a pipeline.
 
@@ -43,7 +43,7 @@ There are 2 authentication types for granting Azure Pipelines access to your Bit
 
 OAuth is the simplest authentication type to get started with for repositories in your Bitbucket account. Bitbucket status updates will be performed on behalf of your personal Bitbucket identity. For pipelines to keep working, your repository access must remain active.
 
-To use OAuth, login to Bitbucket when promoted during pipeline creation. Then, click **Authorize** to authorize with OAuth. An OAuth connection will be saved in your Azure DevOps project for later use, as well as used in the pipeline being created.
+To use OAuth, login to Bitbucket when prompted during pipeline creation. Then, click **Authorize** to authorize with OAuth. An OAuth connection will be saved in your Azure DevOps project for later use, as well as used in the pipeline being created.
 
 ### Password authentication
 
@@ -115,7 +115,7 @@ You can specify the full name of the branch (for example, `master`) or a wildcar
 > [!NOTE]
 > If you use [templates](../process/templates.md) to author YAML files, then you can only specify triggers in the main YAML file for the pipeline. You cannot specify triggers in the template files.
 
-Bitbucket creates a new _ref_ when a pull request is created. The ref points to a _merge commit_, which is the merged code between the source and target branches of the pull request. The PR validation pipeline builds the commit this ref points to. This means that the YAML file that is used to run the pipeline is also a merge between the source and the target branch. As a result, the changes you make to the YAML file in source branch of the pull request can override the behavior defined by the YAML file in target branch.
+Each new run builds the latest commit from the source branch of the pull request. This is different from how Azure Pipelines builds pull requests in other repositories (e.g., Azure Repos or GitHub), where it builds the merge commit. Unfortunately, Bitbucket does not expose information about the merge commit, which contains the merged code between the source and target branches of the pull request.
 
 If no `pr` triggers appear in your YAML file, pull request validations are automatically enabled for all 
 branches, as if you wrote the following `pr` trigger. This configuration triggers a build when any 
@@ -157,13 +157,19 @@ pr:
     - releases/*
   paths:
     include:
-    - docs/*
+    - docs
     exclude:
     - docs/README.md
 ```
 
-> [!NOTE]
-> You cannot use [variables](../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
+> **Tips:**
+>  * Wild cards are not supported with path filters.
+>  * Paths are always specified relative to the root of the repository.
+>  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
+>  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+>  * The order of path filters doesn't matter.
+>  * Paths in Git *are case-sensitive*. Be sure to use the same case as the real folders.
+>  * You cannot use [variables](../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
 
 ### Multiple PR updates
 

@@ -30,16 +30,18 @@
       href: ./concepts/cross-origin-resource-sharing.md
     - name: Rate limits
       href: ./concepts/rate-limits.md
-    - name: Deprecation of WIT & Test Client OM
+    - name: Deprecation of WIT & Test client OM
       href: ./concepts/wit-client-om-deprecation.md
     - name: Migration Guide
       href: ./concepts/migration-guide.md
 - name: How-to guides
   items:
     - name: Authenticate with PATs
-      href: /azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+      href: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md?bc=%252fazure%252fdevops%252fmarketplace-extensibility%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252fmarketplace-extensibility%252ftoc.json
     - name: Authenticate with OAuth 2.0
-      href: get-started/authentication/oauth.md
+      href: ./get-started/authentication/oauth.md
+    - name: Cross-platform CLI for Azure DevOps using PATs
+      href: ./get-started/auth/tfs-basic-auth.md
     - name: Create service hooks subscriptions programmatically
       href: ../service-hooks/create-subscription.md
     - name: Call REST API
@@ -50,312 +52,313 @@
       href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 - name: Reference
   items:
+    - name: REST API reference overview
+      href: rest-api-overview.md
     - name: Azure DevOps Services REST API
-      href: https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1
+      href: /rest/api/azure/devops/?view=azure-devops-rest-5.1
     - name: REST APIs for TFS 2015, 2017, and 2018
       items:
         - name: Overview
-          href: previous-apis/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/overview
         - name: Build
-          href: previous-apis/build/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/build/overview
           items:
             - name: Builds
-              href: previous-apis/build/builds.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/build/builds
             - name: Definition templates
-              href: previous-apis/build/definition-templates.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/build/definition-templates
             - name: Definitions
-              href: previous-apis/build/definitions.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/build/definitions
             - name: Tags
-              href: previous-apis/build/tags.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/build/tags
         - name: Chat
-          href: previous-apis/chat/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/chat/overview
           items:
             - name: Messages
-              href: previous-apis/chat/messages.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/chat/messages
             - name: Rooms
-              href: previous-apis/chat/rooms.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/chat/rooms
             - name: Users
-              href: previous-apis/chat/users.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/chat/users
         - name: Dashboards
-          href: previous-apis/dashboard/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/dashboard/overview
           items:
             - name: Dashboards
-              href: previous-apis/dashboard/dashboards.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/dashboard/dashboards
             - name: Widgets
-              href: previous-apis/dashboard/widgets.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/dashboard/widgets
         - name: Endpoints
-          href: previous-apis/endpoints/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/endpoints/overview
           items:
             - name: Endpoints
-              href: previous-apis/endpoints/endpoints.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/endpoints/endpoints
             - name: Endpoint types
-              href: previous-apis/endpoints/endpoint-types.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/endpoints/endpoint-types
         - name: Git
-          href: previous-apis/git/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/git/overview
           items:
             - name: Annotated Tags
-              href: previous-apis/git/annotatedtags.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/git/annotatedtags
             - name: Blobs
-              href: previous-apis/git/blobs.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/git/blobs
             - name: Commits
-              href: previous-apis/git/commits.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/git/commits
             - name: Diffs
-              href: previous-apis/git/diffs.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/git/diffs
             - name: Import requests
-              href: previous-apis/git/import-requests.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/git/import-requests
             - name: Items
-              href: previous-apis/git/items.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/git/items
             - name: Pull Requests
-              href: previous-apis/git/pull-requests/overview.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/git/pull-requests/overview
               items:
                 - name: Iterations
-                  href: previous-apis/git/pull-requests/iterations.md
+                  href: /previous-versions/azure/devops/integrate/previous-apis/git/pull-requests/iterations
                 - name: Pull requests
-                  href: previous-apis/git/pull-requests/pull-requests.md
+                  href: /previous-versions/azure/devops/integrate/previous-apis/git/pull-requests/pull-requests
                 - name: Reviewers
-                  href: previous-apis/git/pull-requests/reviewers.md
+                  href: /previous-versions/azure/devops/integrate/previous-apis/git/pull-requests/reviewers
                 - name: Threads
-                  href: previous-apis/git/pull-requests/threads.md
+                  href: /previous-versions/azure/devops/integrate/previous-apis/git/pull-requests/threads
                 - name: Work items
-                  href: previous-apis/git/pull-requests/work-items.md
+                  href: /previous-versions/azure/devops/integrate/previous-apis/git/pull-requests/work-items
             - name: Pushes
-              href: previous-apis/git/pushes.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/git/pushes
             - name: References
-              href: previous-apis/git/refs.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/git/refs
             - name: Repositories
-              href: previous-apis/git/repositories.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/git/repositories
             - name: Stats
-              href: previous-apis/git/stats.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/git/stats
             - name: Trees
-              href: previous-apis/git/trees.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/git/trees
         - name: Hooks
-          href: previous-apis/hooks/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/hooks/overview
           items:
             - name: Consumers
-              href: previous-apis/hooks/consumers.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/hooks/consumers
             - name: Publishers
-              href: previous-apis/hooks/publishers.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/hooks/publishers
             - name: Subscriptions
-              href: previous-apis/hooks/subscriptions.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/hooks/subscriptions
         - name: Notification
-          href: previous-apis/notification/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/notification/overview
           items:
             - name: Contracts
-              href: previous-apis/notification/contracts.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/notification/contracts
             - name: Event types
-              href: previous-apis/notification/eventtypes.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/notification/eventtypes
             - name: Subscriptions
-              href: previous-apis/notification/subscriptions.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/notification/subscriptions
         - name: Packaging
-          href: previous-apis/packaging/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/packaging/overview
           items:
             - name: Feeds
-              href: previous-apis/packaging/feeds.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/packaging/feeds
             - name: Maven
-              href: previous-apis/packaging/maven.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/packaging/maven
             - name: Npm
-              href: previous-apis/packaging/npm.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/packaging/npm
             - name: NuGet
-              href: previous-apis/packaging/nuget.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/packaging/nuget
             - name: Packages
-              href: previous-apis/packaging/packages.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/packaging/packages
             - name: Permissions
-              href: previous-apis/packaging/permissions.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/packaging/permissions
             - name: Polling
-              href: previous-apis/packaging/polling.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/packaging/polling
             - name: Views
-              href: previous-apis/packaging/views.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/packaging/views
         - name: Policy
-          href: previous-apis/policy/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/policy/overview
           items:
             - name: Configurations
-              href: previous-apis/policy/configurations.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/policy/configurations
             - name: Settings
-              href: previous-apis/policy/settings.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/policy/settings
             - name: Types
-              href: previous-apis/policy/types.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/policy/types
         - name: Queues
-          href: previous-apis/queues/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/queues/overview
         - name: Release management
-          href: previous-apis/rm/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/rm/overview
           items:
             - name: Approvals
-              href: previous-apis/rm/approvals.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/rm/approvals
             - name: Contracts
-              href: previous-apis/rm/contracts.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/rm/contracts
             - name: Definitions
-              href: previous-apis/rm/definitions.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/rm/definitions
             - name: Releases
-              href: previous-apis/rm/releases.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/rm/releases
         - name: Security
-          href: previous-apis/security/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/security/overview
           items:
             - name: Access Control Entries (ACEs)
-              href: previous-apis/security/aces.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/security/aces
             - name: Access Control Lists (ACLs)
-              href: previous-apis/security/acls.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/security/acls
             - name: Permissions
-              href: previous-apis/security/permissions.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/security/permissions
             - name: Security namespaces
-              href: previous-apis/security/securitynamespaces.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/security/securitynamespaces
             - name: Tokens
-              href: previous-apis/security/tokens.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/security/tokens
         - name: Test
-          href: previous-apis/test/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/test/overview
           items:
             - name: Attachments
-              href: previous-apis/test/attachments.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/attachments
             - name: Cases
-              href: previous-apis/test/cases.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/cases
             - name: Clone operations
-              href: previous-apis/test/cloneOperations.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/cloneOperations
             - name: Code coverage
-              href: previous-apis/test/code-coverage.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/code-coverage
             - name: Configurations
-              href: previous-apis/test/configurations.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/configurations
             - name: Plans
-              href: previous-apis/test/plans.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/plans
             - name: Points
-              href: previous-apis/test/points.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/points
             - name: Result retention settings
-              href: previous-apis/test/resultretentionsettings.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/resultretentionsettings
             - name: Results 1.0
-              href: previous-apis/test/results_1_0.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/results_1_0
             - name: Results
-              href: previous-apis/test/results.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/results
             - name: Runs
-              href: previous-apis/test/runs.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/runs
             - name: Sessions
-              href: previous-apis/test/sessions.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/sessions
             - name: Suite entries
-              href: previous-apis/test/suite-entries.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/suite-entries
             - name: Suites
-              href: previous-apis/test/suites.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/suites
             - name: Variables
-              href: previous-apis/test/variables.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/test/variables
         - name: TFS
-          href: previous-apis/tfs/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/tfs/overview
           items:
             - name: Contracts
-              href: previous-apis/tfs/contracts.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/tfs/contracts
             - name: Processes
-              href: previous-apis/tfs/processes.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/tfs/processes
             - name: Project collections
-              href: previous-apis/tfs/project-collections.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/tfs/project-collections
             - name: Projects
-              href: previous-apis/tfs/projects.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/tfs/projects
             - name: Samples
-              href: previous-apis/tfs/samples.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/tfs/samples
             - name: Teams
-              href: previous-apis/tfs/teams.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/tfs/teams
         - name: TFVC
-          href: previous-apis/tfvc/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/tfvc/overview
           items:
             - name: Branches
-              href: previous-apis/tfvc/branches.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/tfvc/branches
             - name: Changesets
-              href: previous-apis/tfvc/changesets.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/tfvc/changesets
             - name: Items
-              href: previous-apis/tfvc/items.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/tfvc/items
             - name: Labels
-              href: previous-apis/tfvc/labels.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/tfvc/labels
             - name: Shelvesets
-              href: previous-apis/tfvc/shelvesets.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/tfvc/shelvesets
         - name: Work item tracking
-          href: previous-apis/wit/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/wit/overview
           items:
             - name: Artifact link types
-              href: previous-apis/wit/artifactlinktypes.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/artifactlinktypes
             - name: Artifact URI query
-              href: previous-apis/wit/artifacturiquery.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/artifacturiquery
             - name: Attachments
-              href: previous-apis/wit/attachments.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/attachments
             - name: Batch
-              href: previous-apis/wit/batch.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/batch
             - name: Categories
-              href: previous-apis/wit/categories.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/categories
             - name: Classification nodes
-              href: previous-apis/wit/classification-nodes.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/classification-nodes
             - name: Comments
-              href: previous-apis/wit/comments.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/comments
             - name: Fields
-              href: previous-apis/wit/fields.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/fields
             - name: History
-              href: previous-apis/wit/history.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/history
             - name: Queries
-              href: previous-apis/wit/queries.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/queries
             - name: Recycle Bin
-              href: previous-apis/wit/recycle-bin.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/recycle-bin
             - name: Relation types
-              href: previous-apis/wit/relation-types.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/relation-types
             - name: Reporting work item links
-              href: previous-apis/wit/reporting-work-item-links.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/reporting-work-item-links
             - name: Reporting work item revisions
-              href: previous-apis/wit/reporting-work-item-revisions.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/reporting-work-item-revisions
             - name: Revisions
-              href: previous-apis/wit/revisions.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/revisions
             - name: Samples
-              href: previous-apis/wit/samples.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/samples
             - name: Tags
-              href: previous-apis/wit/tags.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/tags
             - name: Templates
-              href: previous-apis/wit/templates.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/templates
             - name: Updates
-              href: previous-apis/wit/updates.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/updates
             - name: Work item query language
-              href: previous-apis/wit/wiql.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/wiql
             - name: Work item types
-              href: previous-apis/wit/work-item-types.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/work-item-types
             - name: Work items
-              href: previous-apis/wit/work-items.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/wit/work-items
         - name: Work
-          href: previous-apis/work/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/work/overview
           items:
             - name: Backlog configuration
-              href: previous-apis/work/backlog-configuration.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/backlog-configuration
             - name: Boards
-              href: previous-apis/work/boards.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/boards
             - name: Capacity
-              href: previous-apis/work/capacity.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/capacity
             - name: Card fields
-              href: previous-apis/work/card-fields.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/card-fields
             - name: Card rules
-              href: previous-apis/work/card-rules.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/card-rules
             - name: Charts
-              href: previous-apis/work/charts.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/charts
             - name: Columns
-              href: previous-apis/work/columns.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/columns
             - name: Delivery timeline
-              href: previous-apis/work/delivery-timeline.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/delivery-timeline
             - name: Iterations
-              href: previous-apis/work/iterations.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/iterations
             - name: Plans
-              href: previous-apis/work/plans.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/plans
             - name: Process configuration
-              href: previous-apis/work/process-configuration.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/process-configuration
             - name: Rows
-              href: previous-apis/work/rows.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/rows
             - name: Team days off
-              href: previous-apis/work/team-days-off.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/team-days-off
             - name: Team field values
-              href: previous-apis/work/team-field-values.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/team-field-values
             - name: Team settings
-              href: previous-apis/work/team-settings.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/work/team-settings
         - name: XAML Build
-          href: previous-apis/xamlbuild/overview.md
+          href: /previous-versions/azure/devops/integrate/previous-apis/xamlbuild/overview
           items:
             - name: Builds
-              href: previous-apis/xamlbuild/builds.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/xamlbuild/builds
             - name: Definition
-              href: previous-apis/xamlbuild/definitions.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/xamlbuild/definitions
             - name: Qualities
-              href: previous-apis/xamlbuild/qualities.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/xamlbuild/qualities
             - name: Queues
-              href: previous-apis/xamlbuild/queues.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/xamlbuild/queues
             - name: Requests
-              href: previous-apis/xamlbuild/requests.md
+              href: /previous-versions/azure/devops/integrate/previous-apis/xamlbuild/requests
 - name: Troubleshooting
   items:
     - name: IIS Basic Authentication and PATs
       href: get-started/authentication/iis-basic-auth.md
-

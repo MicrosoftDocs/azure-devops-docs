@@ -31,8 +31,8 @@ You can use code scanning to find, triage, and prioritize fixes for existing pro
 
 With the Azure Boards web service, teams can manage their software projects. It provides a rich set of capabilities including native support for Scrum and Kanban, customizable dashboards, and integrated reporting.
 
-- [Plan and track work with Azure Boards](https://docs.microsoft.com/azure/devops/boards/get-started/plan-track-work)  
-- [Connect Azure Boards with GitHub](https://docs.microsoft.com/azure/devops/boards/github)   
+- [Plan and track work with Azure Boards](../boards/get-started/plan-track-work.md)  
+- [Connect Azure Boards with GitHub](../boards/github/index.md)   
 
 
 ## Build and deploy containers with Azure Pipelines
@@ -43,9 +43,9 @@ Azure Pipelines integrates tracing metadata into your container images, includin
 
 Adding the ability to create deployment pipelines with YAML files and store them in source control helps drive a tighter feedback loop between development and operation teams, relying on clear, readable documents.
 
-- [Store Docker images in Azure Container Registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/acr-template) 
-- [Build a Docker image with Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image)   
-- [Deploy to Kubernetes with full traceability](https://docs.microsoft.com/azure/devops/pipelines/process/environments-kubernetes)   
+- [Store Docker images in Azure Container Registry](../pipelines/ecosystems/containers/acr-template.md) 
+- [Build a Docker image with Azure Pipelines](../pipelines/ecosystems/containers/build-image.md)   
+- [Deploy to Kubernetes with full traceability](../pipelines/process/environments-kubernetes.md)   
 - [Secure your Azure Pipelines](../pipelines/security/overview.md)   
 
 
@@ -55,30 +55,30 @@ Developing a Kubernetes application can be challenging. You need Docker and Kube
 
 Azure Dev Spaces is an extension to AKS that allows you to easily run and debug your code in the context of a larger application. You can test your code end-to-end, hit breakpoints on code running in the cluster, and share a development cluster between team members without interference.
 
-- [Using Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/how-dev-spaces-works)  
+- [Using Azure Dev Spaces](/azure/dev-spaces/how-dev-spaces-works)  
 
 
 ## Enforce container security with Azure Security Center and Azure Policy
 
 Azure Policy integrates with the Azure Kubernetes Service (AKS) to apply at-scale enforcements and safeguards on your clusters in a centralized, consistent manner.
 
- - [Perform image security scanning with Azure Security Center](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration)
-- [Policy enforcement on AKS with Azure Policy](https://docs.microsoft.com/azure/governance/policy/concepts/rego-for-aks) 
-- [Managed Kubernetes with Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/)   
+ - [Perform image security scanning with Azure Security Center](/azure/security-center/azure-container-registry-integration)
+- [Policy enforcement on AKS with Azure Policy](/azure/governance/policy/concepts/rego-for-aks) 
+- [Managed Kubernetes with Azure Kubernetes Service (AKS)](/azure/aks/)   
 
 ## Manage identities and access with Azure
 
 Microsoft identity platform is an evolution of the Azure Active Directory (Azure AD) developer platform. It allows developers to build applications that sign in all Microsoft identities and get tokens to call Microsoft APIs, such as Microsoft Graph, or APIs that developers have built.
 
-- [Authenticate with your app using the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/)  
+- [Authenticate with your app using the Microsoft identity platform](/azure/active-directory/develop/)  
 
 Azure Active Directory B2C provides business-to-customer identity as a service. Your customers use their preferred social, enterprise, or local account identities to get single sign-on access to your applications and APIs.
 
-- [Manage consumer identities with Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/)   
+- [Manage consumer identities with Azure AD B2C](/azure/active-directory-b2c/)   
 
 Access management for cloud resources is a critical function for any organization that is using the cloud. Azure role-based access control (Azure RBAC) helps you manage who has access to Azure resources, what they can do with those resources, and what areas they have access to.
 
-- [Role-Based Access Control (RBAC) for Azure resources](https://docs.microsoft.com/azure/role-based-access-control/overview)   
+- [Role-Based Access Control (RBAC) for Azure resources](/azure/role-based-access-control/overview)   
 
 You can use the Microsoft identity platform to authenticate with the rest of your DevOps tools, including native support within Azure DevOps and integrations with GitHub Enterprise:
 
@@ -88,14 +88,14 @@ Currently, an Azure Kubernetes Service (AKS) cluster (specifically, the Kubernet
 
 Managed identities are essentially a wrapper around service principals, and make their management simpler. 
 
-- [Use a Managed Identity with AKS](https://docs.microsoft.com/azure/aks/use-managed-identity)  
+- [Use a Managed Identity with AKS](/azure/aks/use-managed-identity)  
 
 
 ## Manage keys and secrets with Azure Key Vault
 
 Azure Key Vault can be used to securely store and control access to tokens, passwords, certificates, API keys, and other secrets. Centralizing storage of application secrets in Azure Key Vault allows you to control their distribution. Key Vault greatly reduces the chances that secrets may be accidentally leaked. When using Key Vault, application developers no longer need to store security information in their application. Not having to store security information in applications eliminates the need to make this information part of the code. For example, an application may need to connect to a database. Instead of storing the connection string in the app's code, you can store it securely in Key Vault.
 
-- [Store certificates, keys, and secrets on Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)   
+- [Store certificates, keys, and secrets on Azure Key Vault](/azure/key-vault/)   
 
 
 ## Monitor your applications  
@@ -104,11 +104,11 @@ With Azure Monitor, you can monitor both your application and infrastructure in 
 
 Learn how to monitor your applications and infrastructure using Azure Application Insights and Azure Monitor.  
 
-- [Application Performance Management with Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) 
-- [Monitor containerized applications with Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) 
+- [Application Performance Management with Application Insights](/azure/azure-monitor/app/app-insights-overview) 
+- [Monitor containerized applications with Azure Monitor](/azure/azure-monitor/insights/container-insights-overview) 
 
 ## Build the right architecture 
 Security is one of the most important aspects of any architecture. It provides confidentiality, integrity, and availability assurances against deliberate attacks and abuse of your valuable data and systems. Losing these assurances can negatively impact your business operations and revenue, as well as your organization’s reputation in the marketplace. 
 
-- [Applications and services architecture](https://docs.microsoft.com/azure/architecture/framework/security/applications-services)  
-- [DevSecOps architecture](https://docs.microsoft.com/azure/architecture/solution-ideas/articles/devsecops-in-azure)  
+- [Applications and services architecture](/azure/architecture/framework/security/applications-services)  
+- [DevSecOps architecture](/azure/architecture/solution-ideas/articles/devsecops-in-azure)

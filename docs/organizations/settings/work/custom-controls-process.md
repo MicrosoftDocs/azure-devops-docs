@@ -134,7 +134,7 @@ If you've installed a group or page contribution, refresh your browser, and then
 
 ## Action-level contributions
 
-Action-level contributions are added to the context menu of inherited and customizable WITs for both system and inherited processes. All action-level contributions are added to all work item types and cannot be hidden or removed without [uninstalling or disabling the extension](../../../marketplace/uninstall-disable-vsts-extensions.md).  
+Action-level contributions are added to the context menu of inherited and customizable WITs for both system and inherited processes. All action-level contributions are added to all work item types and cannot be hidden or removed without [uninstalling or disabling the extension](../../../marketplace/uninstall-disable-extensions.md).  
 
 For example, the following image shows nine action-level contributions have been added and appear in the context menu for the user story.  
 
@@ -154,6 +154,4 @@ You can use these REST APIs to work with extensions:
 - [Add a custom field to a work item type](customize-process-field.md)  
 - [Customize a work item type](customize-process-work-item-type.md)
 - [Customize the web layout](customize-process-form.md)
-- [Customize a project using an inherited process](customize-process.md)  
-
-
+- [Customize a project using an inherited process](customize-process.md)

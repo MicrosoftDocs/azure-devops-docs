@@ -1,15 +1,15 @@
 ---
 title: Add tags to work items 
 titleSuffix: Azure Boards
-description: Add work item tags to categorize and filter lists & boards when working in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Add work item tags to categorize and filter lists & boards when working in Azure Boards and Azure DevOps 
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 01/21/2021
 ---
 
 # Add work item tags to categorize and filter lists and boards  
@@ -19,8 +19,7 @@ ms.date: 07/09/2020
 
 Tagging work items helps you quickly filter the product backlog or a work 
 item query by categories that you define. 
-A tag corresponds to a one or two keyword phrase that you define and that  
-supports your needs to filter a backlog or query, or define a query. 
+A tag corresponds to a one or two keyword phrase that you define and that supports your needs to filter a backlog or query, or define a query. 
 
 Tags are a better choice to filter work items than using text strings as described in [Guidance to create high-performing queries](high-performing-queries.md).
 
@@ -80,7 +79,7 @@ You can bulk update work items to add or remove tags from the web portal.
 You bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags). Or, you can use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to bulk add or remove tags.   
 
 > [!div class="mx-imgBorder"]
-> ![Bulk add to several work items](media/add-tags/bulk-add-tags.png) 
+> ![Edit work items dialog, Bulk add to several work items.](media/add-tags/bulk-add-tags.png) 
 
 ::: moniker-end
 
@@ -111,10 +110,19 @@ To query work items based on tags, add a clause for each tag you want to use to 
 For example, here we query for all work items that are tagged either ```Web``` or ```Service```. 
 
 > [!div class="mx-imgBorder"]
-> ![Bulk add to several work items](media/add-tags/query-tags-add-or.png) 
+> ![Screenshot of Query Editor to query on tags.](media/add-tags/query-tags-add-or.png) 
 
 
 [!INCLUDE [temp](../includes/query-clause-tip.md)]
+
+<a id="no-tags" />
+
+## List work items with no tags 
+
+To find all work items that don't have tags assigned to them, use the **Tags** field, **Does Not Contain** operator and **(blank)** value. For example, the following query lists all work items in the Proposed State that have no tags assigned to them. 
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Query Editor to list work items with no assigned tags.](media/add-tags/tags-blank-query-editor.png) 
 
 
 <a id="show-tags"></a>
@@ -122,28 +130,28 @@ For example, here we query for all work items that are tagged either ```Web``` o
 ## Show tags in your backlog or query results
 
 ::: moniker range=">= tfs-2017"
-Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  to select it from the menu of options.    
+Choose **Column Options** to add the **Tags** field to the product backlog or a work item query. If the option doesn't appear, choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  to select it from the menu of options.    
 
 > [!div class="mx-imgBorder"]
-> ![Add Tags to the selected columns to display](media/add-tags/column-options-add-tags-field.png)
+> ![Column options dialog, Add Tags to the selected columns to display.](media/add-tags/column-options-add-tags-field.png)
 
 All tags that have been added to the listed work items appear.
 
 > [!div class="mx-imgBorder"]
-> ![View with Tags column added](media/add-tags/backlog-with-tags.png) 
+> ![Screenshot of product backlog, View with Tags column added.](media/add-tags/backlog-with-tags.png) 
  
 ::: moniker-end
   
 
 ::: moniker range="<= tfs-2015"
 
-1. Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions icon to select it from the menu of options.    
+1. Choose **Column Options** to add the **Tags** field to the product backlog or a work item query. If the option doesn't appear, choose **More commands** :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: to select it from the menu of options. 
 
-	![Add Tags to the selected columns to display](media/add-tags-to-query-results.png)
+	![Column options dialog, Add Tags to the selected columns to display, TFS-2015 and earlier versions.](media/add-tags-to-query-results.png)
 
 2. All tags that are assigned to the listed work items appear.
 
-	![View with Tags column added](media/query-results-with-tags-listed.png) 
+	![Product backlog view with Tags column added, TFS-2015 and earlier versions.](media/query-results-with-tags-listed.png) 
  
 ::: moniker-end
 
@@ -155,9 +163,9 @@ From the web portal, you can filter backlogs, boards, and query results using ta
  
 ::: moniker range=">= tfs-2017"
 
-Begin by clicking the ![actions icon](../media/icons/filter-icon.png) filter icon. 
+Begin by choosing **Filter** :::image type="icon" source="../media/icons/filter-icon.png" border="false":::. 
 
-Check the boxes of those tags that you want to filter on. Keep the OR selection to perform a logical OR for all the tags you selected. Or, click the AND option to perform a logical AND on all the selected tags. 
+Check the boxes of those tags that you want to filter on. Keep the **OR** selection to perform a logical OR for all the tags you selected. Or, choose the **AND** option to perform a logical AND on all the selected tags. 
 
 > [!div class="mx-imgBorder"]
 > ![View with Tags column added](media/add-tags/filter-backlog-tags.png) 
@@ -211,6 +219,20 @@ Requires TFS 2015.1 or later version.
 
 ::: moniker-end   
 
+::: moniker range="azure-devops"
+
+<a id="group-by-tags"></a> 
+
+## Chart work items and group by tags
+
+> [!NOTE]   
+> You can't group a query-based chart by tags, however, you can group a **Chart for Work Items** widget by tags that you add to a dashboard.  
+
+To group a **Chart for Work Items** widget by tags, perform the same steps provided in [Track progress with status and trend query-based charts, Add a chart widget to a dashboard](../../report/dashboards/charts.md#add-chart-widget). Make sure that your flat-list query contains **Tags** in the query clause or as a column option. Then, choose **Tags** for the **Group by** selection. To filter the chart to show only some tags, choose the **Selected tags** radio button and then choose the tags you want the chart to display.  
+
+:::image type="content" source="../../report/dashboards/media/charts/configure-chart-widget-tags.png" alt-text="Screenshot of Chart by Work Items, Configure, Group by Tags.":::
+
+::: moniker-end
 
 ## Related articles
 

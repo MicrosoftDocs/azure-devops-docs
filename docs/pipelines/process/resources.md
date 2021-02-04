@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to use resources with YAML definitions.
 ms.topic: conceptual
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 monikerRange: azure-devops
 ---
 
@@ -34,7 +34,17 @@ resources:
   containers: [ container ]
   packages: [ package ]
 ```
----
+
+### Variables
+
+When a resource triggers a pipeline, the following variables are set:
+
+```yaml
+resources.triggeringAlias
+resources.triggeringCategory
+```
+
+These values will be blank if a resource does not trigger a pipeline run. The variable `Build.Reason` must be `ResourceTrigger` for these values to get set.
 
 ## Resources: `pipelines`
 
@@ -54,13 +64,13 @@ resources:        # types: pipelines | builds | repositories | containers | pack
     source: string  # name of the pipeline that produces an artifact
     version: string  # the pipeline run number to pick the artifact, defaults to latest pipeline successful across all stages; Used only for manual or scheduled triggers
     branch: string  # branch to pick the artifact, optional; defaults to all branches; Used only for manual or scheduled triggers
-    tags: [ string ] # list of tags required on the pipeline to pickup default artifacts, optional; tags are AND'ed; Used only for manual or scheduled triggers
+    tags: [ string ] # list of tags required on the pipeline to pickup default artifacts, optional; Used only for manual or scheduled triggers
     trigger:     # triggers are not enabled by default unless you add trigger section to the resource
       branches:  # branch conditions to filter the events, optional; Defaults to all branches.
         include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
         exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
-      tags: [ string ]  # list of tags to evaluate for trigger event, optional; tags are AND'ed
-      stages: [ string ] # list of stages to evaluate for trigger event, optional; stages are AND'ed
+      tags: [ string ]  # list of tags to evaluate for trigger event, optional
+      stages: [ string ] # list of stages to evaluate for trigger event, optional
 ```
 
 ## [Example](#tab/example)
@@ -107,7 +117,7 @@ resources:
     trigger:
       branches:
       - releases/*
-      - master
+      - resources.triggeringAlias
 ```
 
 Stages filters for triggers
@@ -151,10 +161,10 @@ Note: These are tags set on the CI pipeline. These tags are different from the t
 ### Default branch for triggers
 Triggers for resources are created based on the default branch configuration of your YAML, which is master. However, if you want to configure resource triggers from a different branch, you need to change the default branch for the pipeline. 
 1. Go to the edit view of the pipeline and click on the overflow menu on the top-right corner and choose **Triggers**.
-![Commits in pipeline run](media/triggers-view.png)
+![Triggers view in a pipeline](media/triggers-view.png)
 1. Now select 'YAML' tab and go to 'Get sources'.
 1. Now you can set the default branch for your pipeline.
-![Commits in pipeline run](media/triggers-default-branch.png)
+![Triggers default branch for a pipeline](media/triggers-default-branch.png)
 
 
 ### Evaluation of artifact version
@@ -241,7 +251,7 @@ Or to avoid downloading any of the artifacts at all:
 Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder.
 
 ### Pipeline resource variables
-In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables. The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime. 
+In each run, the metadata for a pipeline resource is available to all jobs in the form of below [predefined variables](../build/variables.md). The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime. 
 
 
 ## [Schema](#tab/schema)
@@ -447,6 +457,12 @@ resources:
     env: { string: string }  # list of environment variables to add
     ports: [ string ] # ports to expose on the container
     volumes: [ string ] # volumes to mount on the container
+    mapDockerSocket: bool # whether to map in the Docker daemon socket; defaults to true
+    mountReadOnly:  # volumes to mount read-only - all default to false
+      externals: boolean  # components required to talk to the agent
+      tasks: boolean  # tasks required by the job
+      tools: boolean  # installable tools like Python and Ruby
+      work: boolean # the work directory
 ```
 A generic container resource can be used as an image consumed as part of your job or it can also be used for [Container jobs](../process/container-phases.md).
 
@@ -514,7 +530,7 @@ Note: location variable is only applicable for `ACR` type of container resources
 
 ## [Example](#tab/example)
 
-In this example, there is an [Azure Resource Manager service connection](../library/service-endpoints.md#common-service-connection-types) named `arm-connection`. Learn more about [Azure container registries, repositories, and images](https://docs.microsoft.com/azure/container-registry/container-registry-concepts). 
+In this example, there is an [Azure Resource Manager service connection](../library/service-endpoints.md#common-service-connection-types) named `arm-connection`. Learn more about [Azure container registries, repositories, and images](/azure/container-registry/container-registry-concepts). 
 
 ```yaml
 resources:
@@ -593,7 +609,7 @@ With other resources (such as pipelines, containers, build, and packages) you ca
 
 Here are the steps to configure the webhook triggers:
 1. Set up a webhook on your external service. When creating your webhook, you need to provide the following info:
-    - Request Url - `https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<**WebHook Name**>?api-version=6.0-preview`
+    - Request Url - `https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<WebHook Name>?api-version=6.0-preview`
     - Secret - This is optional. If you need to secure your JSON payload, provide the **Secret** value
 2. Create a new "Incoming Webhook" service connection. This is a newly introduced Service Connection Type that will allow you to define three important pieces of information:
     - **Webhook Name**: The name of the webhook should match webhook created in your external service.
@@ -654,7 +670,7 @@ For resources where you can't fetch available versions (like GitHub packages), w
 ## Troubleshooting authorization for a YAML pipeline
 Resources must be authorized before they can be used. A resource owner controls the users and pipelines that can access that resource. The pipeline must be authorized to use the resource. There are multiple ways to accomplish this.
 
-* Navigate to the administration experience of the resource. For example, variable groups and secure files are managed in the **Library** page under **Pipelines**. Agent pools and service connections are managed in **Project settings**. Here you can authorize **all pipelines** to be able to access that resource. This is convenient if you do not have a need to restrict access to a resource - for for example, test resources.
+* Navigate to the administration experience of the resource. For example, variable groups and secure files are managed in the **Library** page under **Pipelines**. Agent pools and service connections are managed in **Project settings**. Here you can authorize **all pipelines** to be able to access that resource. This is convenient if you do not have a need to restrict access to a resource - for example, test resources.
 
 * When you create a pipeline for the first time, all the resources that are referenced in the YAML file are automatically authorized for use by the pipeline, provided that you are a member of the **User** role for that resource. So, resources that are referenced in the YAML file at pipeline creation time are automatically authorized.
 
@@ -674,7 +690,7 @@ We provide full traceability for any resource consumed at a pipeline or deployme
 ### Pipeline traceability
 For every pipeline run, we show the info about the 
 1. The resource that has triggered the pipeline (if it is triggered by a resource).
-![Commits in pipeline run](media/runs-resource-trigger.png)
+![Resource trigger in a pipeline](media/runs-resource-trigger.png)
 2. Version of the resource and the artifacts consumed.
  ![Consumed artifacts in pipeline run](media/runs-consumed-artifacts.png)
 3. Commits associated with each resource.
@@ -690,7 +706,9 @@ To provide end to end traceability, user should be able to track which CD pipeli
 ![CD pipelines info in CI pipeline](media/cdinfo-in-ci-pipelines.png)
 
 ### YAML resource trigger issues support and traceability
-It can be confusing when pipeline triggers fail to execute. To help better understand this, we've added a new menu item in the pipeline definition page called **Trigger Issues** where you can learn why triggers are not executing.
+It can be confusing when pipeline triggers fail to execute. To help better understand this, we've added a new menu item in the pipeline definition page called **Trigger Issues** where you can learn why triggers are not executing. To access this page, open your pipeline history. Select **Trigger Issues** in the menu. 
+
+:::image type="content" source="media/trigger-menu.png" alt-text="Select Trigger Issues from the navigation.":::
 
 Resource triggers can fail to execute for two reasons.
 * If the source of the service connection provided is invalid, or if there are any syntax errors in the trigger, the trigger will not be configured at all. These are surfaced as errors.

@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
 
 # System requirements for Release Management server/client for VS 2015 and TFS 2015
@@ -116,12 +116,12 @@ These are the software requirements for all the agents in your environment.
 * Windows 8.1
 * Windows 8
 * Windows 7, Service Pack 1
-* Vista, Service Pack 2 and [PowerShell 2.0](https://www.microsoft.com/download/details.aspx?id=9239) 
+* Vista, Service Pack 2 and [PowerShell 4.0](https://www.microsoft.com/download/details.aspx?id=42554) 
 * Windows Server 2016
 * Windows Server 2012 R2
 * Windows Server 2012
 * Windows Server 2008 R2, Service Pack 1 
-* Windows Server 2008, Service Pack 2 and [PowerShell 2.0](https://support.microsoft.com/kb/968930)
+* Windows Server 2008, Service Pack 2 and [PowerShell 2.0](/powershell/scripting/windows-powershell/install/installing-the-windows-powershell-2.0-engine)
 
 **The .NET Framework:**
 

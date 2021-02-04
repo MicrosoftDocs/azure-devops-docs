@@ -25,7 +25,7 @@ The task will install the `wheel` and `twine` packages with `python -m pip insta
 ## Deprecated
 
 > [!WARNING]
-> The PyPI Publisher task has been deprecated. You can now [publish PyPI packages using twine authentication and custom scripts](../../targets/pypi.md). 
+> The PyPI Publisher task has been deprecated. You can now [publish PyPI packages using twine authentication and custom scripts](../../artifacts/pypi.md). 
 
 ## Demands
 

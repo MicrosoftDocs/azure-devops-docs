@@ -1,6 +1,6 @@
 ---
 title: Search across all your code, wiki, packages and work items
-description: Quickly Search with Azure DevOps and TFS
+description: Quickly search with Azure DevOps.
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.technology: devops-collab
 ms.topic: overview
@@ -59,5 +59,5 @@ To perform specific searches, see one of the following articles:
 
 ## Related articles
 
-- [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
+- [About managed queries, Ad hoc versus managed queries](../../boards/queries/about-managed-queries.md#ad-hoc-v-managed)?toc=/azure/devops/project/search/toc.json&bc=/azure/devops/project/search/breadcrumb/toc.json)
  

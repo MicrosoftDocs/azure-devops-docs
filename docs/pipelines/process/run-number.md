@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Customize pipeline run number in Azure Pipelines, Azure DevOps Server, or Team Foundation Server.
 ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 12/04/2019
+ms.date: 12/15/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -17,15 +17,16 @@ You can customize how your pipeline runs are numbered. The default value for run
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"
 
-In YAML, this property is called `name`.
+In YAML, this property is called `name` and is at the root level of a pipeline. 
 If not specified, your run is given a unique integer as its name.
 You can give runs much more useful names that are meaningful to your team.
 You can use a combination of tokens, variables, and underscore characters.
 
 ```yaml
 name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+
 steps:
-- script: echo hello world
+  - script: echo '$(Build.BuildNumber)' # outputs customized build number like project_def_master_20200828.1
 ```
 
 ::: moniker-end
@@ -68,7 +69,7 @@ Then the second run on this day would be named: **Fabrikam\_CIBuild_master\_2019
 
 ## Tokens
 
-The following table shows how each token is resolved based on the previous example.
+The following table shows how each token is resolved based on the previous example. You can use these tokens only to define a run number; they don't work anywhere else in your pipeline.
 
 | Token | Example replacement value |
 | ----- | ------------------------- |
@@ -79,7 +80,7 @@ The following table shows how each token is resolved based on the previous examp
 | `$(Hours)` | 21 |
 | `$(Minutes)` | 7 |
 | `$(Month)` | 8 |
-| `$(Rev:r)` | 2 (The third run on this day will be 3, and so on.)<br /><br />Use **$(Rev:r)** to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **$(Rev:rr)** if you want the Rev number to begin with 01, 02, and so on. |
+| `$(Rev:r)` | 2 (The third run will be 3, and so on.)<br /><br />Use **$(Rev:r)** to ensure that every completed build has a unique name. When a build starts, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **$(Rev:rr)** if you want the Rev number to begin with 01, 02, and so on. If you use a zero-padded Rev as part of a version numbering scheme, note that some pipeline tasks or popular tools, like NuGet packages, remove the leading zeros, which causes a version number mismatch in the artifacts that are produced. |
 | `$(Date:yyyyMMdd)` | 20090824<br /><br />You can specify other date formats such as **$(Date:MMddyy)** |
 | `$(Seconds)` | 3 |
 | `$(SourceBranchName)` | master |
@@ -130,7 +131,7 @@ The run number variable can be called with `$(Build.BuildNumber)`. You can defin
 ```yaml
 # Set MyRunNumber
 variables: 
-  MyRunNumber: '1.0.0-CI-$(Build.BuildNumber)'
+  MyRunNumber: '1.0.0-CI+$(Build.BuildNumber)'
 
 
 steps:

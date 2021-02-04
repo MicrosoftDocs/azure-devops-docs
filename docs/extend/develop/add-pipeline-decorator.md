@@ -6,7 +6,7 @@ ms.technology: devops-cicd
 ms.assetid: 3347cdf7-07db-42af-85f0-6f1d8d371087
 ms.author: macoope
 author: vtbassmatt
-ms.date: 06/10/2020
+ms.date: 09/16/2020
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -72,7 +72,7 @@ Let's take a look at the properties and what they're used for:
 
 | Target | Description |
 | ------ |:----------- |
-| `ms.azure-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic build or YAML pipeline. Due to differences in how source code checkout happens, this target will run before checkout in a YAML pipeline but after checkout in a classic build pipeline. |
+| `ms.azure-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic build or YAML pipeline. Due to differences in how source code checkout happens, this target runs before checkout in a YAML pipeline but after checkout in a classic build pipeline. |
 | `ms.azure-pipelines-agent-job.post-checkout-tasks` | Run after the last `checkout` task in a classic build or YAML pipeline. |
 | `ms.azure-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic build or YAML pipeline. |
 | `ms.azure-release-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic RM pipeline. |
@@ -107,10 +107,6 @@ To add a pipeline decorator to your organization, you must [install an extension
 The extension must be authored and shared with your organization before it can be used.
 
 Once the extension has been shared with your organization, [search for the extension](https://marketplace.visualstudio.com/search?term=tag%3APipeline%20decorator&target=AzureDevOps&category=All%20categories&visibilityQuery=all&sortBy=Relevance) and install it.
-
-> [!IMPORTANT]
-> Pipeline decorators have been released, but there is still an organization-level toggle.
-> If your decorators aren't running, check that the [organization level preview feature](../../project/navigation/preview-features.md#enable-features-at-the-organization-level-for-all-users) is turned on.
 
 Save the file, then [build and install the extension](../get-started/node.md).
 Create and run a basic pipeline.

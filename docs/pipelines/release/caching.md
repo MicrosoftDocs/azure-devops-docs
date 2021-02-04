@@ -142,7 +142,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 | Scope | Read | Write |
 |--------|------|-------|
 | Source branch | Yes | Yes |
-| Master branch | Yes | No |
+| main branch | Yes | No |
 
 ### Pull request runs
 
@@ -151,7 +151,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 | Source branch | Yes | No |
 | Target branch | Yes | No |
 | Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
-| Master branch | Yes | No |
+| main branch | Yes | No |
 
 ### Pull request fork runs
 
@@ -159,7 +159,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 |--------|------|-------|
 | Target branch | Yes | No |
 | Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
-| Master branch | Yes | No |
+| main branch | Yes | No |
 
 > [!TIP]
 > Because caches are already scoped to a project, pipeline, and branch, there is no need to include any project, pipeline, or branch identifiers in the cache key.
@@ -300,13 +300,13 @@ If you are using a [Maven task](../tasks/build/maven.md), make sure to also pass
 
 ## .NET/NuGet
 
-If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have `packages.lock.json` file(s), you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(Pipeline.Workspace)` and caching this directory.
+If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have `packages.lock.json` file(s), you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(UserProfile)` and caching this directory.
 
 **Example**:
 
 ```yaml
 variables:
-  NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
+  NUGET_PACKAGES: $(UserProfile)/.nuget/packages
 
 steps:
 - task: Cache@2
@@ -318,7 +318,10 @@ steps:
   displayName: Cache NuGet packages
 ```
 
-See [Package reference in project files](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) for more details.
+> [!TIP]
+> Environment variables always override any settings in the NuGet.Config file. If your pipeline failed with the error: `Information, There is a cache miss.`, you must create a pipeline variable for `NUGET_PACKAGES` to point to the new local path on the agent (exp d:\a\1\). Your pipeline should pick up the changes then and continue the task successfully.
+
+See [Package reference in project files](/nuget/consume-packages/package-references-in-project-files) for more details on how to enable lock file creation.
 
 ## Node.js/npm
 
@@ -438,6 +441,33 @@ steps:
   displayName: Cache composer
 
 - script: composer install
+```
+
+## Docker images
+
+Caching docker images will dramatically reduce the time it takes to run your pipeline.
+
+```YAML
+pool:
+  vmImage: ubuntu-16.04
+
+steps:
+  - task: Cache@2
+    inputs:
+      key: 'docker | "$(Agent.OS)" | caching-docker.yml'
+      path: $(Pipeline.Workspace)/docker
+      cacheHitVar: DOCKER_CACHE_RESTORED
+    displayName: Caching Docker image
+
+  - script: |
+      docker load < $(Pipeline.Workspace)/docker/cache.tar
+    condition: and(not(canceled()), eq(variables.DOCKER_CACHE_RESTORED, 'true'))
+
+  - script: |
+      mkdir -p $(Pipeline.Workspace)/docker
+      docker pull ubuntu
+      docker save ubuntu > $(Pipeline.Workspace)/docker/cache.tar
+    condition: and(not(canceled()), or(failed(), ne(variables.DOCKER_CACHE_RESTORED, 'true')))
 ```
 
 ## Known issues and feedback

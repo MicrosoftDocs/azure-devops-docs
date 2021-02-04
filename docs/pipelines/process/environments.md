@@ -4,12 +4,12 @@ description: Collection of deployment targets useful for traceability and record
 ms.topic: conceptual
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
 ms.date: 02/10/2020
-monikerRange: azure-devops
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Create and target an environment
 
-[!INCLUDE [include](../includes/version-team-services.md)]
+[!INCLUDE [include](../includes/version-server-2020-rtm.md)]
 
 An environment is a collection of resources, such as Kubernetes clusters and virtual machines, that can be targeted by deployments from a pipeline. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
 
@@ -99,6 +99,8 @@ All  environments targeted by deployment jobs of a specific run of a pipeline ca
 
   > [!div class="mx-imgBorder"]
   > ![Environments in run details](media/environments-run.png)
+  
+If you're using an AKS private cluster, the **Environments** tab isn't available.
 
 ## Approvals
 
@@ -150,3 +152,9 @@ Pipeline permissions can be used to authorize all or selected pipelines for depl
 
 - To remove **Open access** on the environment or resource, click the **Restrict permission** in **Pipeline permissions**.
 - To allow specific pipelines to deploy to an environment or a specific resource, click **+** and choose from the list of pipelines.
+
+## FAQ 
+
+### I get an error message when I try to create an environment
+
+If you see the message "Access denied: {User} needs Create permissions to perform the action", you need to check your organization-level permissions. Go to **Organization Settings** > **Users** and check if you have the stakeholder role. The stakeholder role cannot create environments. Change your access level and check to see if you can now create environments. See [Troubleshoot user and permissions management](../../organizations/accounts/faq-user-and-permissions-management.md) to learn more about user permissions.

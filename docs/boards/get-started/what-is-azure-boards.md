@@ -155,7 +155,7 @@ To learn more, see one of the following articles:
 - [Discussion section](plan-track-work.md#discussion)  
 - [Follow a work item](../work-items/follow-work-items.md)  
 - [Add and manage dashboards](../../report/dashboards/dashboards.md)  
-- [Set personal notifications](../../notifications/howto-manage-personal-notifications.md).  
+- [Set personal notifications](../../notifications/manage-your-personal-notifications.md).  
 
 ## Work in sprints, implement Scrum
 
@@ -363,7 +363,7 @@ Most work is tracked within a project. However, many enterprises create several 
 
 
 To track work across several projects, you can: 
-- [Create work item queries that list work items across projects](../queries/using-queries.md#query-across-projects)
+- [Create work item queries that list work items across projects](../queries/using-queries.md#across-projects)
 - [Gain visibility across teams](../plans/visibility-across-teams.md)
 
 ## Get access to more tools 
@@ -374,4 +374,4 @@ Extensions provide support for additional tools. An extension is an installable 
 
 - [Agile culture](../plans/agile-culture.md)  
 - [Practices that scale](../plans/practices-that-scale.md)  
-- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)  
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)

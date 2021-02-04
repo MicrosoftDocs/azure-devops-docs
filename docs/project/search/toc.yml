@@ -4,7 +4,9 @@
   href: code-search.md
 - name: Search work items
   href: work-item-search.md
-- name: Search artifacts or packages
+- name: Search wiki
+  href: ../wiki/search-wiki.md
+- name: Search packages or artifacts
   href: package-search.md
 - name: Advanced code search
   href: advanced-code-search-syntax.md
