@@ -14,15 +14,19 @@ In the last sprint, we [announced](./sprint-177-update.md#a-batch-of-improvement
 ## Features
 
 ### Azure Repos
+
 [!INCLUDE [sprint-179-update-links](includes/repos/sprint-179-update-links.md)]
 
 ### Azure Pipelines
+
 [!INCLUDE [sprint-179-update-links](includes/pipelines/sprint-179-update-links.md)]
 
 ## Azure Repos
+
 [!INCLUDE [sprint-179-update](includes/repos/sprint-179-update.md)]
 
 ## Azure Pipelines
+
 [!INCLUDE [sprint-179-update](includes/pipelines/sprint-179-update.md)]
 
 ## Next steps

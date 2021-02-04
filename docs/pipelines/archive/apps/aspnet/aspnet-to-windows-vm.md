@@ -8,7 +8,6 @@ ms.custom: "mvc, seodec18"
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Implement a CI/CD pipeline to build and deploy your ASP.NET app to Azure
 
 [!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]

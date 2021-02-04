@@ -99,6 +99,7 @@ You can drag a task within a work item to reorder it. Or, you can drag the task 
 To reassign a task to a different sprint, you must open the sprint backlog where it's currently defined and then drag it to the new sprint.  
 
 ## Configure the Kanban board 
+
 To configure or change the layout of the board, see one of these topics. 
 
 * [Add columns](add-columns.md)  
@@ -115,6 +116,7 @@ To configure or change the layout of the board, see one of these topics.
 
 
 ## Related articles  
+
 Use your task checklist for lightweight tracking of to-do lists. If you find that you don't use this feature, you can disable it from the [common configurations dialog](../../boards/boards/customize-cards.md#annotations). 
 
 You can also [add tags and show tags and fields on cards](../../boards/boards/customize-cards.md) to support other tracking needs.  

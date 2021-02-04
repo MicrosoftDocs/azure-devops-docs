@@ -32,10 +32,10 @@ When defining work items or running queries, the following operational limits ap
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
 | Attachment size | 60 MB | 
-| Queries  |  2 minutes | 
+| Query execution time  |  2 minutes | 
 | Query results | 20,000 items | 
 | Query length | 32,000 characters |
-
+| Shared queries under a folder | 999 queries |
 
 To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
 

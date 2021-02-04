@@ -272,11 +272,11 @@ Once you've defined your product backlog, you can use the following controls to 
       ![actions](../../media/icons/actions-icon.png) 
    :::column-end:::
    :::column span="":::
-      Actions options 
+      More commands  
    :::column-end:::
    :::column span="2":::
       - [Set column options](set-column-options.md)  
-      - [Create query](../queries/using-queries.md)  
+      - [Create Query](../queries/organize-queries.md)  
       - [Email](../work-items/email-work-items.md)   
    :::column-end:::
 :::row-end:::
@@ -284,9 +284,8 @@ Once you've defined your product backlog, you can use the following controls to 
 ---
 
 
-
-
-Even if you have show parents turned on, the **Create query** and mail ![mail icon](../media/icons/mail_icon.png) controls will only list items at the currently selected level. 
+> [!NOTE]   
+> Even if you have show parents turned on, the **Create Query** and **Email** ![mail icon](../media/icons/mail_icon.png) controls will only list items at the currently selected level. 
  
 
 ## Related articles
