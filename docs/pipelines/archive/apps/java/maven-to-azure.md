@@ -5,6 +5,7 @@ description: Build and Deploy your Java application to an Azure Web App
 ms.topic: conceptual
 ms.assetid: E6A051F3-8B84-4724-9110-F84DB1F3DCD5
 ms.date: 08/04/2016
+monikerRange: '>= tfs-2015'
 ---
 
 # Build and Deploy your Java app to an Azure Web App
