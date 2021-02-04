@@ -3,11 +3,12 @@ title: Search your packages across your organization
 titleSuffix: Azure Artifacts
 description: Get started with Package Search in Azure DevOps across your Organization
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
+ms.custom: quarterly-update
 ms.technology: devops-collab
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-ms.date: 07/23/2020
+ms.date: 12/07/2020
 ---
 
 # Search your packages or artifacts
@@ -24,15 +25,9 @@ Learn more about packages here: [Azure Artifacts in Azure DevOps Services](../..
 
 1. Open the **Azure Artifacts** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
 
-1. Choose the ![start search icon](media/shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
+2. Choose ![start search icon](media/shared/start-search-icon-new.png) **Search** at the top right of the window to show the search textbox.
 
-	> [!div class="mx-imgBorder"]  
-	> ![The Work Item Search textbox in the title bar](media/shared/pkgsrch-bar.png)    
-
-1. Enter a search string in the textbox, and press _Enter_ (or choose the 
-
-	> [!div class="mx-imgBorder"]  
-	> ![start search icon](media/shared/start-search-icon-new.png) icon) to start your search. 
+3. Enter a search string in the textbox, and press _Enter_ to start your search. 
 
 
 ## View the results
@@ -46,19 +41,17 @@ Learn more about packages here: [Azure Artifacts in Azure DevOps Services](../..
    Note that searches are _not_ case-sensitive.
 
    > Open the search results in a new browser tab from a search box by
-   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](media/shared/start-search-icon-new.png) icon.
-   In Google Chrome or Firefox, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+   pressing _Ctrl_ + _Enter_. In Google Chrome or Firefox, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
-1. Widen your search across all feeds, or narrow it to specific views
-   and package types. Note that Views filter would only appear if a single feed is selected from Feeds filter.
-   Use the "filter" icon to show the selector lists.
+2. Widen your search across all feeds, or narrow it to specific views
+   and package types. The Views filter only appears if a single feed is selected from Feeds filter.
+   Use the filter to show the selector lists.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Showing the filter lists](media/shared/pkgsrch-results-filtericon.png)    
 
-1. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
+3. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Selector drop-down lists](media/shared/pkgsrch-results-filters.png)    

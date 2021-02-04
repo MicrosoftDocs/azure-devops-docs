@@ -8,8 +8,8 @@ ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+monikerRange: '<= azure-devops'
+ms.date: 01/25/2021
 ---
 
 
@@ -172,7 +172,8 @@ You can use query operators in the following table to specify how each value in 
     <td><p>Long-text fields that are indexed for full-text search, which correspond to all <strong>PlainText</strong> and <strong>HTML</strong> fields, and the <strong>History</strong> and <strong>Title</strong> fields.</p></td></tr>
 <tr>
     <td><p><strong>Does Not Contain Words</strong></p></td>
-    <td><p>Does not contain the exact text string or words within the field you selected for filtering. Text string is limited to 100 characters. </p></td>
+    <td><p>Does not contain the exact text string or words within the field you selected for filtering. Text string is limited to 100 characters. </p>
+    <p>Use this operator in combination with a clause with the <strong>Contains Words</strong> operator to include and exclude specific keywords.</p></td>
     <td><p>Text fields that are indexed for full text search.</p></td></tr>
 <tr>
     <td><p><strong>In</strong></p></td>
@@ -255,7 +256,7 @@ You can use the macros described in the following table to filter your queries b
 <tr>
     <td><strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong> <sup>1</sup></td>
     <td>Use in conjunction with the <strong>Iteration Path</strong> field to automatically filter for work items assigned to the current sprint based on the <a href="../../project/navigation/go-to-project-repo.md" data-raw-source="[current team focus or context](../../project/navigation/go-to-project-repo.md)">current team focus or context</a>. For specific examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.
-    <p>This macro only works when run from the web portal. You can&#39;t use the macro when <a href="/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases" data-raw-source="[copying or cloning test suites and test cases](/previous-versions/azure/devops/docs/test/mtm/copying-and-cloning-test-suites-and-test-cases)">copying or cloning test suites and test cases</a>, <a href="../../notifications/index.md" data-raw-source="[defining alerts](../../notifications/index.md)">defining alerts</a>, or with <a href="../../integrate/get-started/rest/basics.md" data-raw-source="[REST APIs](../../integrate/get-started/rest/basics.md)">REST APIs</a>.</p>
+    <p>This macro only works when run from the web portal. You can&#39;t use the macro when <a href="/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases" data-raw-source="[copying or cloning test suites and test cases](/previous-versions/azure/devops/docs/test/mtm/copying-and-cloning-test-suites-and-test-cases)">copying or cloning test suites and test cases</a>, <a href="/azure/devops/notifications/about-notifications" data-raw-source="[defining alerts](../../notifications/about-notifications.md)">defining alerts</a>, or with <a href="/rest/api/azure/devops/" data-raw-source="[REST APIs](/rest/api/azure/devops/)">REST APIs</a>.</p>
 </td>
 </tr>
 
@@ -286,7 +287,7 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
     <td><strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong> <sup>5</sup></td>
-    <td>Use in conjunction with the <strong>Team Project</strong> field to filter for work items in the current project. For example, you can find all the work items in the current project with the clause <code>Team Project=<xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></code>. 
+    <td>Use in conjunction with the <strong>Team Project</strong> field to filter for work items in other projects. For example, you can find all the work items in a different project with the clause <code>Team Project=<xref href="OtherProject" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></code>. To learn more, see <a href="using-queries.md#across-projects">Define a query, Query across projects</a>.
 </td>
 </tr>
 
@@ -343,7 +344,7 @@ You can use the macros described in the following table to filter your queries b
 1. The <strong><xref href="Follows" data-throw-if-not-resolved="False" data-raw-source="@Follows"></xref></strong> macro is supported for Azure Boards and TFS 2017 and later versions.
 1. The <strong><xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref></strong>, <strong><xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref></strong>, <strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref></strong> macros are supported for Azure Boards and TFS 2018.2 and later versions.
 1. The <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see <a href="using-queries.md#across-projects" data-raw-source="[Query across projects](using-queries.md#across-projects)">Query across projects</a>. 
-1. The <strong><xref href="RecentProjectActivity**" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity**"></xref> macro is supported for Azure Boards (cloud service) only at this time.
+1. The <strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref> macro is supported for Azure Boards (cloud service) only at this time.
 1. The <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong> macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
 1. The <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 
@@ -353,16 +354,14 @@ You can use the macros described in the following table to filter your queries b
 
 ## Full-text and partial word searches
 
-Specify **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Specify **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, **&#42;**. These operators use the full-text search index. You can only use the wildcard character at the end of a partial word or phrase.
+Specify **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. These operators filter items based on the full-text search index created for long-text fields. Specify **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, **&#42;**. These operators use the full-text search index. You can only use the wildcard character at the end of a partial word or phrase.
 
-For examples, see [Example work item queries](example-queries.md) and [Query for work items using the History field](history-and-auditing.md).
+For examples, see [Example work item queries](query-index-quick-ref.md) and [Query for work items using the History field](history-and-auditing.md).
 
-<!---
+
 > [!NOTE]    
 > Not all deployments support full-text searches. For example, SQL Express and SQL Azure, which support the cloud service, do not support full-text search. In these instances, you will only see the **Contains** and **Does not Contain** operators.
--->
 
-**Contains Words** and **Does Not Contain Words** filter items based on the full-text search index created for long-text fields. 
 
 ::: moniker range="< azure-devops"
 Azure DevOps Server and Team Foundation Server automatically index all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search. The index and operators are only available when the SQL Server that supports Team Foundation Server supports full-text search.
@@ -378,7 +377,7 @@ For more information, see [Full-Text Search Queries and Collation Settings](/azu
 ## Related articles 
 
 - [Query quick reference](query-index-quick-ref.md)
-- [About managed queries](example-queries.md)
+- [About managed queries](about-managed-queries.md)
 - [Work item field index](../work-items/guidance/work-item-field.md)
 - [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
 
@@ -394,4 +393,4 @@ By default, the following fields are indexed: **Assigned To**, **Created Date**,
 
 You use the **witadmin indexfield** command to enable or disable indexing for a field. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json).
 
---> 
+-->

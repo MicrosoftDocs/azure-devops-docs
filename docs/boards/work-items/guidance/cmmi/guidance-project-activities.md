@@ -48,7 +48,7 @@ To make the most effective use of MSF for [CMMI Process Improvement](guidance-ba
 ### Exploring an existing product  
  The goal of your project might be to update a product that already exists. In this case, if the team is unfamiliar with the product, exploration of the code is an activity for Iteration 0. Each development task in subsequent iterations will also involve understanding the code in a particular locality and tracing the consequences of changing it.  
   
- For more information, see [Visualize code](https://msdn.microsoft.com/library/dd409365).  
+ For more information, see [Visualize code](/visualstudio/modeling/visualize-code).  
   
 ## During the project  
  The plan is reviewed and subject to change throughout the project.  

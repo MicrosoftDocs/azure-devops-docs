@@ -45,7 +45,10 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 
 ::: moniker-end  
 
-Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
+Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. If your team have not completed any sprint or if you are working on items before any sprint start date, Velocity would have no data to analyze and forecast. Therefore you might see the message: "Set iteration dates to use this widget". To resolve this situation, set an iteration date range to include present date or wait for the sprint to start. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
+
+**Example: Velocity showing Set iteration dates to use this widget**  
+![Set iteration dates](media/team-velocity-set-iteration-dates.png)
 
 [!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]  
 
@@ -74,6 +77,14 @@ Use this article to learn:
 > [!div class="checklist"] 
 > * How to view the Velocity in-context report (work tracking data store) 
 > * Required and recommended team activities to support velocity tracking   
+
+::: moniker-end
+
+
+
+::: moniker range=">= azure-devops-2019"
+
+## Prerequisites  
 
 ::: moniker-end
 
@@ -107,7 +118,7 @@ Use this article to learn:
 
 	![Open Boards > Backlogs, for a team](/azure/devops/boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-    To select another backlog, open the selector and then choose a different team or select the ![home icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
+    To select another backlog, open the selector and then choose a different team or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false":::  **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Select another team](/azure/devops/boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -196,7 +207,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 	![Open Boards, Backlogs, for a team](../../boards/sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
 	> ![Choose another team](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
@@ -207,7 +218,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements in Azure DevOps Server 2019](../../boards/sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
 2. Open the velocity chart.  
 
@@ -261,7 +272,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 ::: moniker range=">= azure-devops-2020" 
 
-- If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+- If you haven't yet [added the Velocity widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
 
 ::: moniker-end
 
@@ -269,7 +280,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now.    
 
-1. If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
+1. If you haven't yet [added the Velocity widget to your dashboard](./add-widget-to-dashboard.md), do that now.  
 
 ::: moniker-end
 

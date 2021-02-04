@@ -54,7 +54,7 @@ steps:
     artifact:  A1 # name of the artifact to download; optional; defaults to all artifacts
 ```
 
-For more details, see the downloading artifacts documentation [here](https://docs.microsoft.com/azure/devops/pipelines/artifacts/pipeline-artifacts?view=azure-devops&tabs=yaml#downloading-artifacts).
+For more details, see the downloading artifacts documentation [here](/azure/devops/pipelines/artifacts/pipeline-artifacts?tabs=yaml&view=azure-devops#downloading-artifacts).
 
 ### Bitbucket integration and other improvements in getting started with pipelines
 
@@ -69,4 +69,4 @@ Finally, we you will have more control when checking in the `azure-pipelines.yml
 Previously, you could execute batch and bash scripts as part of an Azure CLI task. With this update, we added support for PowerShell and PowerShell core scripts to the task. 
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/159_13.png)
+> ![Support for PowerShell scripts in Azure CLI task.](../../media/159_13.png)

@@ -5,7 +5,6 @@ description: How-to guide to generate a list of failed tests Power BI report for
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
@@ -35,7 +34,7 @@ Specifically, you'll find sample queries for the following reports:
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
-
+[!INCLUDE [temp](./includes/prerequisites-power-bi-cloud-only.md)]
 
 ## Sample queries
 
@@ -209,7 +208,7 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column **PassRate** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/failed-tests-changetype2.png)
+    > ![Change the type of column PassRate to Decimal Number.](media/odata-powerbi-test-analytics/failed-tests-changetype2.png)
 
 
 ### Rename fields and query, then Close & Apply

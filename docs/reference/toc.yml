@@ -1,19 +1,27 @@
-- name: Azure Board Settings 
+- name: Azure Boards settings 
   href: index.yml
-- name: Configure & customize Azure Boards
-  href: ../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-- name: About process (work tracking) customization
-  href: customize-work.md
-- name: Compare system processes  
-  href: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-- name: Configure projects & teams
+- name: Quick reference index
+  href: quick-reference-index-boards-settings.md
+- name: Get started
   items:
+  - name: Customize work tracking  
+    href: customize-work.md
   - name: "Area & iteration paths"
     href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Set area paths  
     href: ../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Set iteration paths (sprints) 
     href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Compare system processes  
+    href: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Configure & customize Azure Boards
+    href: ../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Connect Azure Boards to GitHub
+    href: ../boards/github/connect-to-github.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Set process permissions
+    href: ../organizations/security/set-permissions-access-work-tracking.md#process-permissions 
+- name: Configure teams
+  items:
   - name: Configure team tools
     href: ../organizations/settings/manage-teams.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Select backlog levels
@@ -37,7 +45,7 @@
   - name: Naming restrictions
     href: ../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: "Workflow states & categories"
-    href: /azure/devops/boards/work-items/workflow-and-state-categories?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+    href: ../boards/work-items/workflow-and-state-categories.md?bc=%252fazure%252fdevops%252freference%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fdevops%252freference%252ftoc.json
   - name: Work tracking object limits
     href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: REST API reference
@@ -69,10 +77,10 @@
 - name: Resources
   items:
   - name: Azure Boards
-    href: /azure/devops/boards/index
+    href: ../boards/index.yml
   - name: Settings, security, & usage
-    href: /azure/devops/organizations/index
+    href: ../organizations/index.yml
   - name: Develop extensions
-    href: /azure/devops/extend/overview
+    href: ../extend/overview.md
   - name: Deprecation of WIT & Test Client OM
-    href: /azure/devops/integrate/concepts/wit-client-om-deprecation
+    href: ../integrate/concepts/wit-client-om-deprecation.md

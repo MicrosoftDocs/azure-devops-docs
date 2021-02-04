@@ -8,7 +8,7 @@ ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 07/09/2020
+ms.date: 11/06/2020
 ---
 
 # Define, triage, and manage bugs
@@ -199,7 +199,7 @@ For information about fields specific to the CMMI process, see [Bugs, issues, an
 
 You can create bugs during test sessions using one of the following tools: 
 - **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md)   
-- **Test Runner**: see [Update an existing bug while using Test Runner](https://msdn.microsoft.com/library/dd286731.aspx).  
+- **Test Runner**: see [Update an existing bug while using Test Runner](/previous-versions/dd286731(v=vs.140)).  
 
 
 <a id="triage"> </a>
@@ -250,6 +250,9 @@ Once you fix a bug, you should update its workflow State. State choices vary dep
 | Agile | Scrum | CMMI | 
 |------------|------------|-----------| 
 | ![Bug workflow states, Agile process template](../work-items/guidance/media/ALM_PT_Agile_WF_Bug.png) | ![Bug workflow states, Scrum process template](../work-items/guidance/media/ALM_PT_Scrum_WF_Bug.png) |  ![Bug workflow states, CMMI process template](../work-items/guidance/media/ALM_PT_CMMI_WF_Bug.png) |  
+
+> [!NOTE]  
+> The Agile process bug work item type previously had a rule which reassigned the bug to the person who created it. This rule has been [removed from the default system process](../work-items/guidance/changes-to-process-templates.md). You can reinstate this automation by adding a rule. For an Inheritance process, see [Apply rules to workflow states, Automate reassignment based on state change](../../organizations/settings/work/apply-rules-to-workflow-states.md#reassign).
 
 For Scrum bugs, you simply change the State from Committed (similar to Active) to Done. For Agile and CMMI, you first resolve the bug, indicating that the bug has been fixed. Typically, the person who created the bug then verifies the fix and updates the State from Resolved to Closed. If more work has been found after a bug has been resolved or closed, it can be reactivated by setting the State to Committed or Active. 
 
@@ -308,7 +311,7 @@ For example, here are two examples showing active bugs by priority trend and a s
 
 ![Bug trend chart from query](media/manage-bugs-trend-chart.png)   ![Bug snapshot by priority](media/manage-bugs-priority-chart.png)   
 
-To learn more about queries, charts, and dashboards; see [Create managed queries](../queries/example-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).    
+To learn more about queries, charts, and dashboards; see [About managed queries](../queries/about-managed-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).    
 
 <a id="customize"> </a>
 
@@ -332,12 +335,17 @@ To track your bugs and integrate with other resources available to you, see thes
 - [Pre-populate fields using a template](work-item-template.md)
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)
 
+### Marketplace extensions
+
+- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
+- [Bug Bash Pro](https://marketplace.visualstudio.com/items?itemName=mohitbagra.bugbashpro&ssr=false#overview)
+
 <a id="integrate"> </a>
 
 ### Integrate & Test resources
 
-- [UserVoice](../../service-hooks/services/uservoice.md)  
-- [Zendesk](../../service-hooks/services/zendesk.md)  
+- [UserVoice](../../service-hooks/overview.md)  
+- [Zendesk](../../service-hooks/overview.md)  
 - [Developer testing tools scenarios and capabilities](/visualstudio/test/developer-testing-scenarios)  
 - [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)  
 

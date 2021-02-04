@@ -71,7 +71,7 @@ Many people do some amount of manual testing as part of their app development cy
 
 The new top level Test hub has a list of test plans, suites and test cases. You can see who the test cases are assigned to and their status. From here you can add, remove and edit test cases.
 
-![Visual Studio with Git](./media/1_30_10.png)
+![Test hub in Visual Studio with Git.](./media/1_30_10.png)
 
 You can also “run” them, launching a simple web based manual test runner experience that allows you to follow the test case, step by step and sign off on each step as pass or fail.
 

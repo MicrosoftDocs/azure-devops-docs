@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
 
 # Install deployment agents and set an environment
@@ -53,7 +53,7 @@ automatically added to Release Management.
    or 
    [Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
    If you are an MSDN subscriber, you can download a non-trial version from the 
-   [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
+   [MSDN Subscriber website](/powerapps/developer/common-data-service/org-service/subscribe-sdk-assembly-updates-using-nuget)._ 
  
 3. Launch **rm_Deployment.exe**. If you want to install to a specific location 
    in the file system, choose the browse button (...) next to the default 

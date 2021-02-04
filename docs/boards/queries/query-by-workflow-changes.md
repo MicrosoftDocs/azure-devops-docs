@@ -271,7 +271,18 @@ You can quickly find items that you changed, resolved, or closed. You can also f
 </table>
 
 
+## Query changes in work item state 
+
+To list work items that have changed state within a specific date range, you can use the **State Change Date** field to narrow the search and then add clauses for changes to the **State** field. An example is shown in the following image.  
+ 
+> [!div class="mx-imgBorder"] 
+> ![Screenshot of Query Editor to query on State Change Date and State fields](media/workflow/query-state-change-date.png)
+
+
+
+
 <a id="kanban_query_fields">  </a>
+
 ::: moniker range=">= tfs-2015"
 
 ## Kanban board change queries 
@@ -293,48 +304,55 @@ For example, you can list items based on the team area path, and if they are in 
 > [!NOTE]    
 > Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  
 
+---
+:::row:::
+   :::column span="1":::
+      **Filter for**
+   :::column-end:::
+   :::column span="3":::
+      **Include these query clauses**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      User Stories in the Code/Doing column
+   :::column-end:::
+   :::column span="3":::
+      `      Work Item Type = User Story`  
+      `And` `Board Column = Code`   
+      `And` `Board Column Done  = False`  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Items in the Expedite swimlane 
+   :::column-end:::
+   :::column span="3":::
+      `Board Lane = Expedite`  
 
-<table valign="top">
-<tbody valign="top">
-<tr>
-  <th>Filter for</th>
-  <th>Include these query clauses</th>
-</tr>
-<tr>
-  <td>
-    <p>User Stories in the Code/Doing column</p>
-</td>
-  <td>
-<code>Work Item Type = User Story</code>
-<code>And <em> Board Column </em> = <em> Code</code>
-<code>And </em> Board Column Done <em> = </em> False</code>
-  </td>
-</tr>
-<tr>
-  <td>
-    Items in the Expedite swimlane
-  </td>
-  <td>
-      <code>Board Lane <em> = </em> Expedite</code>
-  </td>
-</tr>
-<tr>
-  <td>
-Items in any swimlane that contains &quot;Test&quot;
-  </td>
-  <td>
-      <code>Board Lane <em> Contains </em> Test</code>
-  </td>
-</tr>
-</tbody>
-</table>
-
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Items in any swimlane whose label contains "Test"  
+   :::column-end:::
+   :::column span="3":::
+      `Board Lane Contains Test`  
+   :::column-end:::
+:::row-end:::
+---
+ 
 
 <a id="kanban-query-results">  </a>
 
 [!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
 ::: moniker-end
+
+
 
 <a id="workflow-fields">  </a>
 
@@ -397,7 +415,7 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Activated By <sup> 1, 3</sup> 
+      Activated Date <sup> 1, 3</sup> 
    :::column-end:::
    :::column span="2":::
       ::: moniker range="azure-devops"
@@ -729,7 +747,7 @@ You can use the following fields to filter your queries or build reports. Some o
 ::: moniker range="azure-devops"
 
 1. See [Date and Identity fields](#date-identity).  
-2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md). 
+2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad). 
 3. See [Activated By/Date and Resolved By/Date fields](#activated-resolved-fields).   
 3. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
 	> [!NOTE]  
@@ -742,7 +760,7 @@ You can use the following fields to filter your queries or build reports. Some o
 
 1. See [Date and Identity fields](#date-identity).
 
-2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
+2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad).
 
     For on-premises deployments, you can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).  
 3.  Reportable field with attribute set to Dimension. Only valid when the collection is configured to support the On-premises XML model. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises Azure DevOps, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
@@ -755,7 +773,7 @@ You can use the following fields to filter your queries or build reports. Some o
 
 ::: moniker range="tfs-2013"
 
-1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
+1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See set up [Active Directory or Azure Active Directory](../../organizations/security/about-permissions.md#aad).
 
     You can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).
 

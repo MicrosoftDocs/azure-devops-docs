@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # What is Team Foundation Version Control
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+**Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013**
 
 Whether your software project is large or small, using version control as soon as possible is a good idea. 
 Version control systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. 
@@ -80,7 +80,7 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
   Check in your changes so your team can build upon, test, and release the value you've created.
 
-- [Isolate risk](use-branches-isolate-risk-team-foundation-version-control.md)
+- [Isolate risk](./branching-strategies-with-tfvc.md)
 
   Use branches and locks to isolate risk introduced by work done by different teams.
 
@@ -88,7 +88,7 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
   One advantage of a version control system is that you can look back in time to get detailed information about what changes have been made to your files.
 
-- [Compare folders and files](compare-folders-files.md) 
+- [Compare folders and files](./compare-files.md) 
 
   You can compare server folders and local folders to each other, and view the differences between the contents of each folder.
 
@@ -102,11 +102,11 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
 ## Related sections
 
-- [Build and test the app in your automated build system](../../pipelines/overview.md)    
+- [Build and test the app in your automated build system](../../pipelines/get-started/what-is-azure-pipelines.md)    
 
   Install a bit of software to create a build server, and then fill in a few fields to create a Continuous integration (CI) or nightly build process that enables you to leverage the power, convenience, scalability, and reliability of an automated build system to build your app.
 
-- [Naming restrictions in Team Foundation](https://msdn.microsoft.com/library/aa980550)     
+- [Naming restrictions in Team Foundation](../../organizations/settings/naming-restrictions.md)     
 
   Provides information about naming syntax, conventions, and limitations.
 
@@ -116,11 +116,9 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
 We are not currently republishing the following sections. However, you can read the Visual Studio 2010 version of this guidance.
 
-- [Administering Team Foundation Version Control](administering-team-foundation-version-control.md) 
+- [Administering Team Foundation Version Control](./configure-check-out-settings.md) 
 
 ## Related articles 
 
 - [What is version control?](/azure/devops/learn/git/what-is-version-control)  
-- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)  
-
-
+- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)

@@ -168,7 +168,7 @@ You can configure additional Azure Boards/Azure DevOps projects, GitHub.com repo
 3. Scroll down and choose <strong>Uninstall</strong>. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose repositories](media/github-app/uninstall.png)  
+	> ![Choose Uninstall.](media/github-app/uninstall.png)  
 
 4. Confirm that you understand that uninstalling the Azure Boards app will remove all connections you've made to connect to GitHub repositories. 
 

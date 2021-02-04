@@ -65,11 +65,11 @@ The example below will enable you to authenticate to a list of Azure Artifacts f
 ```
 
 * **artifactFeeds**: a list of Azure Artifacts feeds within your organization.
-* **externalFeeds**: a list of [service connections](/azure/devops/pipelines/library/service-endpoints) from external organizations including PyPI or feeds in other organizations in Azure DevOps.
+* **externalFeeds**: a list of [service connections](../library/service-endpoints.md) from external organizations including PyPI or feeds in other organizations in Azure DevOps.
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/package/media/python-twine-authenticate.png) **Package: Python Twine Upload Authenticate**
+:::image type="icon" source="../tasks/package/media/python-twine-authenticate.png" border="false"::: **Package: Python Twine Upload Authenticate**
 
 * My feeds 
 
@@ -100,7 +100,7 @@ Check out the [YAML schema reference](../yaml-schema.md#script) for more details
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/media/powershell.png) **Utility: PowerShell**
+:::image type="icon" source="../tasks/utility/media/powershell.png" border="false"::: **Utility: PowerShell**
 
 * Type:
 

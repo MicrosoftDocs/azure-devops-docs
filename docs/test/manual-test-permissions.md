@@ -28,12 +28,12 @@ For more information, see [Compare Visual Studio subscriptions](https://www.visu
 **Notes:**
 
 * Manual testers do not need this extension and can 
-  [execute tests as a Basic user](https://docs.microsoft.com/azure/devops/test/manual-test-permissions?view=azure-devops#license-requirements)
+  [execute tests as a Basic user](#license-requirements)
   in an Azure DevOps organization or collection.
 
 * This extension can't be used by Stakeholders.
 
-* Licenses for this extension also gives users rights to use [Microsoft Test Manager](https://docs.microsoft.com/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops) (a deprecated on-premises client).
+* Licenses for this extension also gives users rights to use [Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage) (a deprecated on-premises client).
 
 This table describes the license requirements in more detail:
 
@@ -43,8 +43,8 @@ This table describes the license requirements in more detail:
 | Use the out-of-the-box standard charts | Basic license |
 | Create and manage test plans | Basic + Test Plans license |
 | Create and manage test suites | Basic + Test Plans license |
-| Author test cases using a grid-like view | Basic + Test Plans license |
-| Assign test cases to suites, move test cases, and order tests cases | Basic + Test Plans license |
+| Author test cases using a grid-like view and edit in the Test Runner | Basic + Test Plans license |
+| Assign test cases to suites, move test cases, and order test cases | Basic + Test Plans license |
 | Prepare for execution such as assigning configurations or testers | Basic + Test Plans license | 
 | Prepare User Acceptance Testing | Basic + Test Plans license |
 

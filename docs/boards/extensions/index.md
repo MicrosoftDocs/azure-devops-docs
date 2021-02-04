@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 12/02/2019
+ms.date: 11/06/2020
 ---
 
 # Azure Boards extensions developed by Microsoft
 
 The Azure DevOps Marketplace offers a wide variety of extensions to customize or enhance the default experience. You can learn more about those extensions developed by Microsoft from the following articles and links.  
-
-
-
+ 
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -37,6 +35,22 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ::: moniker-end
 
+
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> A new version of Delivery Plans is available in public preview for Azure Boards. This feature is now part of Azure Boards and not an extension. To enable it, see [Manage or enable features](../../project/navigation/preview-features.md) and turn on **New Delivery Plans**. This new version of Delivery Plans provides support for the following tasks: 
+> - Epics can be added to a delivery plan 
+> - Work item cards can span iteration boundaries 
+> - Drag and drop borders show when a work item starts and ends 
+> - You can add backlog items to a team from a plan
+> - You can view work item dependencies 
+> - Stakeholders can view plans
+
+To learn more, see [Review team Delivery Plans](../plans/review-team-plans.md)
+::: moniker-end
+
 ::: moniker range=">= azure-devops-2020"
 
 - [Delivery Plans](../plans/review-team-plans.md)
@@ -47,6 +61,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Estimate](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.estimate&ssr=false#overview)
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
+- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
 
 ::: moniker-end
 
@@ -58,6 +73,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
+- [Reactivations Report](https://marketplace.visualstudio.com/items?itemName=EnterpriseServicesDevOpsTeam.ServicesBugReactivationReport&ssr=false#overview)
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
@@ -80,7 +96,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 - [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
-- [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
+
 
 ::: moniker-end
 
@@ -90,7 +106,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) 
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)
 - [Split!](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-extension-split-work)
-- [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
+ 
 
 ::: moniker-end
 

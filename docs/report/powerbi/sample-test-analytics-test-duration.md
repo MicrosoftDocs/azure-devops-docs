@@ -37,7 +37,7 @@ Specifically, you'll find sample queries for the following reports:
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
-
+[!INCLUDE [temp](./includes/prerequisites-power-bi-cloud-only.md)]
 
 ## Sample queries
 
@@ -191,7 +191,7 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column **TotalDuration** and **AvgDuration** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odata-powerbi-test-analytics/test-duration-changetype2.png)
+    > ![Change the type of column TotalDuration and AvgDuration to Decimal Number.](media/odata-powerbi-test-analytics/test-duration-changetype2.png)
 
 
 ### Rename fields and query, then Close & Apply
