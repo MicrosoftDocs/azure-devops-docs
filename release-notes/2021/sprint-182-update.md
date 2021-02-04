@@ -4,12 +4,12 @@ author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
 ms.date: 02/04/2021
-description: .NET Core 3.0 support for Linux and MacOS will sunset March 1, 2021.
+description: .NET Core 3.0 support for Linux and macOS will sunset March 1, 2021.
 ---
 
 # Ending .NET Core 3.0 support for Linux and macOS hosted agents
 
-Heads up! .NET Core 3.0 will be removed from Linux and MacOS hosted agent images on March 1st. Also in this sprint, grouping by tags in chart widgets is now generally available.
+Heads up! .NET Core 3.0 will be removed from Linux and macOS hosted agent images on March 1st. Also in this sprint, grouping by tags in chart widgets is now generally available.
 
 Check out the Features list below for details.
 
