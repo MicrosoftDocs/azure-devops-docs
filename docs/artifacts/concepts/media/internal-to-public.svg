@@ -189,26 +189,10 @@
        x="409.08701"
        y="59">Public registry</tspan></text>
   <path
-     d="m 128.15518,347 h 387.45591 a 16.205379,11 0 0 1 16.20538,11 V 610 H 144.36056 a 16.205379,11 0 0 1 -16.20538,-11 z"
+     d="m 128.15518,406.85882 h 387.45591 a 16.205379,8.496399 0 0 1 16.20538,8.4964 V 610 H 144.36056 a 16.205379,8.496399 0 0 1 -16.20538,-8.4964 z"
      fill="#b4a0ff"
      id="path4600"
-     style="stroke-width:1.21376" />
-  <path
-     d="M 427.06353,386.444 V 358 a 9.2277201,11 0 0 0 -9.22772,-11 h -220.6264 v 39.444 z"
-     fill="#c7b8ff"
-     id="path4602"
-     style="stroke-width:0.915906" />
-  <text
-     font-size="24px"
-     font-family="SegoeUI, 'Segoe UI'"
-     id="text4608"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-     x="202.13753"
-     y="373"><tspan
-       sodipodi:role="line"
-       id="tspan5378"
-       x="202.13753"
-       y="373">Available packages</tspan></text>
+     style="stroke-width:1.06673" />
   <path
      d="m 256.716,465.75159 a 8.932,8.932 0 0 0 -8.949,8.955 v 9.678 a 8.932,8.932 0 0 0 8.949,8.955 h 9.673 a 8.933,8.933 0 0 0 8.95,-8.955 v -9.678 a 8.933,8.933 0 0 0 -8.95,-8.955 z m -1.9,4.7 a 3.347,3.347 0 0 1 0,6.693 v 0 a 3.347,3.347 0 0 1 0,-6.693 z m 10.667,8.14 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.523,-16.821 a 3.166,3.166 0 1 1 -3.165,3.166 3.165,3.165 0 0 1 3.165,-3.166 z"
      fill="#004880"
@@ -650,4 +634,41 @@
      style="fill:none;stroke:#f70000;stroke-width:2.17283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 389.20664,434.40848 c 14.71609,20.83483 14.71609,20.83483 14.71609,20.83483"
      id="path13642-8" />
+  <text
+     font-size="24px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4578-0"
+     x="54.905128"
+     y="239.19867"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.3;stroke-miterlimit:7;stroke-dasharray:none"><tspan
+       sodipodi:role="line"
+       id="tspan13704"
+       x="54.905128"
+       y="239.19867">Private</tspan></text>
+  <text
+     font-size="24px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4578-0-8"
+     x="199.63943"
+     y="239.74078"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.3;stroke-miterlimit:7;stroke-dasharray:none"><tspan
+       sodipodi:role="line"
+       id="tspan13704-4"
+       x="199.63943"
+       y="239.74078">Private</tspan></text>
+  <text
+     font-size="24px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4578-0-8-4"
+     x="201.88414"
+     y="285.38315"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.3;stroke-miterlimit:7;stroke-dasharray:none"><tspan
+       sodipodi:role="line"
+       id="tspan13754"
+       x="201.88414"
+       y="285.38315">Public</tspan></text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7231)"
+     d="m 218.4847,243.9247 c 0,26.93647 0,26.93647 0,26.93647"
+     id="path13920" />
 </svg>
