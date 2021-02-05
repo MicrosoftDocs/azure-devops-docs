@@ -354,11 +354,15 @@
   items:
     - name: What's new
       href: docswhatsnew/index.yml
-    - name: 2020
+    - name: 2021
       expanded: true
       items:
-      - name: December
+      - name: January 2021
         href: docswhatsnew/azure-devops-docs-whats-new.md
+    - name: 2020
+      items:
+      - name: December
+        href: docswhatsnew/azure-devops-docs-2020-12.md
       - name: November
         href: docswhatsnew/azure-devops-docs-2020-11.md
       - name: October
