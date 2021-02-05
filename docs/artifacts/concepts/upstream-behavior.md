@@ -17,7 +17,7 @@ Azure Artifacts is introducing a new upstream behavior that will dictate which p
 
 Previously, Artifact feeds combined a list of available package versions from the feed and all the upstream sources.
 
-:::image type="content" source="media/previous-upstream-behavior.png" alt-text="Previous upstream sources behavior":::
+:::image type="content" source="media/previous-behavior.svg" alt-text="Previous upstream sources behavior":::
 
 The new upstream behavior will provide another layer of security by blocking the exposure to malicious packages that may infiltrate the public registries.
 
