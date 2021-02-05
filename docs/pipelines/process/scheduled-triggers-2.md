@@ -26,10 +26,9 @@ Azure Pipelines provides several different types of triggers to start your pipel
 > Once all UI scheduled triggers are removed, a push must be made in order for the YAML 
 > scheduled triggers to start running.
 
-Scheduled triggers cause a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
+## Schedule definition
 
-> [!NOTE]
-> If you want to run your pipeline by only using scheduled triggers, you must disable PR and continuous integration triggers by specifying `pr: none` and `trigger: none` in your YAML file. If you're using Azure Repos Git, PR builds are configured using [branch policy](../repos/azure-repos-git.md#pr-triggers) and must be disabled there.
+Scheduled triggers cause a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
 
 ```yaml
 schedules:
@@ -40,6 +39,13 @@ schedules:
     exclude: [ string ] # which branches to exclude from the schedule
   always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
+
+Scheduled pipelines in YAML have the following constraints.
+
+- The time zone for cron schedules is UTC.
+- If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
+- You cannot use pipeline variables when specifying schedules.
+- If you use templates in your YAML file, then the schedules must be specified in the main YAML file and not in the template files.
 
 The following example defines two schedules: 
 
@@ -67,15 +73,6 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 
 > [!NOTE]
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
-
-> [!NOTE]
-> If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
-
-> [!NOTE]
-> You cannot use pipeline variables when specifying schedules.
-
-> [!NOTE]
-> If you use templates in your YAML file, then the schedules must be specified in the main YAML file and not in the template files.
 
 ## Scheduled runs view
 

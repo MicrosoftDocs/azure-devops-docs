@@ -16,8 +16,27 @@ monikerRange: '>= tfs-2015'
 
 Azure Pipelines provides several different types of triggers to start your pipeline based on events such as a push to a branch or a pull request. In addition to these event-based triggers, Azure Pipelines provides the capability to run a pipeline based on a schedule. This article provides guidance on classic scheduled triggers. For information on other trigger types, see [Triggers in Azure Pipelines](../build/triggers.md). For informtion on YAML scheduled triggers, see [Configure schedules to run pipelines](scheduled-triggers.md)
 
+## Scheduled trigger editor
 
-Select the days and times when you want to run the build.
+From the **Triggers** tab, add a scheduled trigger and select the days and times when you want to run the build.
+
+::: moniker range=">= azure-devops-2019"
+
+![Scheduled trigger UTC -5:00 time zone](media/triggers/scheduled-trigger-git-nc.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+
+![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
+
+::: moniker-end
 
 If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
@@ -109,3 +128,6 @@ To configure the scheduled pipeline to build only if there has been a change sin
 
 ::: moniker-end
 
+## See also
+
+- [Triggers in Azure Pipelines](../build/triggers.md)
