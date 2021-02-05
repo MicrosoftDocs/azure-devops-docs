@@ -93,6 +93,7 @@ With parent work item filters, you can focus on one or more select features or e
    ::: moniker-end  
    ::: moniker range="< tfs-2017"
       Not supported
+   ::: moniker-end  
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -123,6 +124,7 @@ With parent work item filters, you can focus on one or more select features or e
    ::: moniker-end  
    ::: moniker range="< tfs-2018"
       Not supported
+   ::: moniker-end 
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -154,6 +156,7 @@ With parent work item filters, you can focus on one or more select features or e
    ::: moniker-end  
    ::: moniker range="< tfs-2018"
       Not supported
+   ::: moniker-end 
    :::column-end:::
    :::column span="1":::
       ✔️   
@@ -183,6 +186,7 @@ With parent work item filters, you can focus on one or more select features or e
    ::: moniker-end  
    ::: moniker range="< tfs-2018"
       Not supported
+   ::: moniker-end 
    :::column-end:::
    :::column span="1":::
       ✔️   
