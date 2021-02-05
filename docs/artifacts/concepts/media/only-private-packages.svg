@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 636 636"
+   version="1.1"
+   id="svg5370"
+   sodipodi:docname="only-private-packages.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+  <metadata
+     id="metadata5376">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>blog-package-upstream-diagram-4</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5374">
+    <linearGradient
+       id="linearGradient13520"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#f80000;stop-opacity:1;"
+         offset="0"
+         id="stop13518" />
+    </linearGradient>
+    <marker
+       style="overflow:visible;"
+       id="marker7231"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path7229" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker7013"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="DotM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) translate(7.4, 1)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         id="path7011" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="DotS"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.2) translate(7.4, 1)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         id="path6500" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotM-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotM"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path6497-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path6436-7" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview5372"
+     showgrid="false"
+     inkscape:zoom="1.336478"
+     inkscape:cx="248.36035"
+     inkscape:cy="289.20788"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5370"
+     inkscape:snap-others="false"
+     inkscape:snap-nodes="false" />
+  <title
+     id="title4556">blog-package-upstream-diagram-4</title>
+  <path
+     d="M343,33H606a11,11,0,0,1,11,11V297a0,0,0,0,1,0,0H354a11,11,0,0,1-11-11V33A0,0,0,0,1,343,33Z"
+     fill="#cbe247"
+     id="path4566" />
+  <path
+     d="M17,33H280a11,11,0,0,1,11,11V297a0,0,0,0,1,0,0H28a11,11,0,0,1-11-11V33A0,0,0,0,1,17,33Z"
+     fill="#b0cdda"
+     id="path4568" />
+  <path
+     d="M291,71.333V44a11,11,0,0,0-11-11H17V71.333Z"
+     fill="#cadee6"
+     id="path4570" />
+  <path
+     d="M617,71.333V44a11,11,0,0,0-11-11H343V71.333Z"
+     fill="#e6f26d"
+     id="path4572" />
+  <text
+     transform="translate(106.906 59)"
+     font-size="24"
+     font-family="SegoeUI, Segoe UI"
+     id="text4578"><tspan
+       letter-spacing="-0.034em"
+       id="tspan4574">F</tspan><tspan
+       x="10.898"
+       y="0"
+       id="tspan4576">abrikam</tspan></text>
+  <text
+     font-size="24"
+     font-family="SegoeUI, Segoe UI"
+     id="text4580"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+     x="409.08701"
+     y="59"><tspan
+       sodipodi:role="line"
+       id="tspan5482"
+       x="409.08701"
+       y="59">Public registry</tspan></text>
+  <path
+     d="m 128.15518,406.85882 h 387.45591 a 16.205379,8.496399 0 0 1 16.20538,8.4964 V 610 H 144.36056 a 16.205379,8.496399 0 0 1 -16.20538,-8.4964 z"
+     fill="#b4a0ff"
+     id="path4600"
+     style="stroke-width:1.06673" />
+  <path
+     d="m 256.716,465.75159 a 8.932,8.932 0 0 0 -8.949,8.955 v 9.678 a 8.932,8.932 0 0 0 8.949,8.955 h 9.673 a 8.933,8.933 0 0 0 8.95,-8.955 v -9.678 a 8.933,8.933 0 0 0 -8.95,-8.955 z m -1.9,4.7 a 3.347,3.347 0 0 1 0,6.693 v 0 a 3.347,3.347 0 0 1 0,-6.693 z m 10.667,8.14 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.523,-16.821 a 3.166,3.166 0 1 1 -3.165,3.166 3.165,3.165 0 0 1 3.165,-3.166 z"
+     fill="#004880"
+     id="path4820" />
+  <rect
+     x="255"
+     y="229"
+     width="0"
+     height="0"
+     fill="#447995"
+     id="rect4872" />
+  <path
+     d="m 358.11836,466.25277 a 8.932,8.932 0 0 0 -8.949,8.955 v 9.678 a 8.932,8.932 0 0 0 8.949,8.955 h 9.673 a 8.933,8.933 0 0 0 8.95,-8.955 v -9.678 a 8.933,8.933 0 0 0 -8.95,-8.955 z m -1.9,4.7 a 3.347,3.347 0 0 1 0,6.693 v 0 a 3.347,3.347 0 0 1 0,-6.693 z m 10.667,8.14 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.523,-16.821 a 3.166,3.166 0 1 1 -3.165,3.166 3.165,3.165 0 0 1 3.165,-3.166 z"
+     fill="#004880"
+     id="path5178" />
+  <rect
+     x="249.12466"
+     y="507.07059"
+     width="65"
+     height="56"
+     fill="#ffffff"
+     id="rect4584-5" />
+  <polygon
+     points="123,130 54.499,130 60.069,136 123,136 "
+     fill="#c2c2c2"
+     id="polygon4586-2"
+     transform="translate(191.37647,382.07059)" />
+  <rect
+     x="313.37643"
+     y="507.07059"
+     width="10"
+     height="56"
+     fill="#939393"
+     id="rect4588-9" />
+  <rect
+     x="243.37643"
+     y="499.07059"
+     width="76"
+     height="14"
+     fill="#ffffff"
+     id="rect4590-5" />
+  <rect
+     x="316.62817"
+     y="499.07059"
+     width="10"
+     height="14"
+     fill="#939393"
+     id="rect4592-7" />
+  <rect
+     x="347.89185"
+     y="506.32236"
+     width="65"
+     height="56"
+     fill="#ffffff"
+     id="rect4584-5-8" />
+  <polygon
+     points="123,130 54.499,130 60.069,136 123,136 "
+     fill="#c2c2c2"
+     id="polygon4586-2-8"
+     transform="translate(290.89179,381.32236)" />
+  <rect
+     x="412.14359"
+     y="510.06354"
+     width="10"
+     height="53.007057"
+     fill="#939393"
+     id="rect4588-9-4"
+     style="stroke-width:0.97291" />
+  <rect
+     x="342.89182"
+     y="498.3223"
+     width="76"
+     height="14"
+     fill="#ffffff"
+     id="rect4590-5-7" />
+  <rect
+     x="440.83533"
+     y="499.81879"
+     width="10"
+     height="14"
+     fill="#939393"
+     id="rect4592-7-7" />
+  <text
+     font-size="16px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text5176"
+     x="364.87405"
+     y="539.34796"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+       sodipodi:role="line"
+       id="tspan13394"
+       x="364.87405"
+       y="539.34796">2.1.0</tspan></text>
+  <text
+     font-size="16px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4644"
+     x="264.21985"
+     y="541.58557"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+       sodipodi:role="line"
+       id="tspan13392"
+       x="264.21985"
+       y="541.58557">2.0.0</tspan></text>
+  <path
+     d="m 144.57649,474.83501 v 10.135 a 8.95,8.95 0 0 0 8.95,8.95 h 10.1 a 8.95,8.95 0 0 0 8.95,-8.95 v -10.095 a 8.955,8.955 0 0 0 -8.955,-8.955 h -10.095 a 8.917,8.917 0 0 0 -8.95,8.915 z m 7.458,-3.565 a 3.347,3.347 0 0 1 0,6.694 v 0 a 3.347,3.347 0 0 1 0,-6.694 z m 10.667,8.141 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.525,-16.824 a 3.166,3.166 0 1 1 -3.165,3.165 3.164,3.164 0 0 1 3.165,-3.165 z"
+     fill="#004880"
+     id="path4598" />
+  <rect
+     x="144.84236"
+     y="507.17178"
+     width="65"
+     height="56"
+     fill="#ffffff"
+     id="rect4584" />
+  <polygon
+     points="60.069,136 123,136 123,130 54.499,130 "
+     fill="#c2c2c2"
+     id="polygon4586"
+     transform="translate(87.842366,382.17177)" />
+  <rect
+     x="209.84238"
+     y="507.17178"
+     width="10"
+     height="56"
+     fill="#939393"
+     id="rect4588" />
+  <rect
+     x="139.84236"
+     y="499.17178"
+     width="76"
+     height="14"
+     fill="#ffffff"
+     id="rect4590" />
+  <rect
+     x="213.84238"
+     y="499.17178"
+     width="10"
+     height="14"
+     fill="#939393"
+     id="rect4592" />
+  <text
+     font-size="16px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4596"
+     x="158.44342"
+     y="541.15765"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+       sodipodi:role="line"
+       id="tspan13390"
+       x="158.44342"
+       y="541.15765">1.0.0</tspan></text>
+  <path
+     d="m 187.25966,117.26745 a 8.932,8.932 0 0 0 -8.949,8.955 v 9.678 a 8.932,8.932 0 0 0 8.949,8.955 h 9.673 a 8.933,8.933 0 0 0 8.95,-8.955 v -9.678 a 8.933,8.933 0 0 0 -8.95,-8.955 z m -1.9,4.7 a 3.347,3.347 0 0 1 0,6.693 v 0 a 3.347,3.347 0 0 1 0,-6.693 z m 10.667,8.14 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.523,-16.821 a 3.166,3.166 0 1 1 -3.165,3.166 3.165,3.165 0 0 1 3.165,-3.166 z"
+     fill="#004880"
+     id="path4820-0" />
+  <path
+     d="m 381.44319,118.51686 a 8.932,8.932 0 0 0 -8.949,8.955 v 9.678 a 8.932,8.932 0 0 0 8.949,8.955 h 9.673 a 8.933,8.933 0 0 0 8.95,-8.955 v -9.678 a 8.933,8.933 0 0 0 -8.95,-8.955 z m -1.9,4.7 a 3.347,3.347 0 0 1 0,6.693 v 0 a 3.347,3.347 0 0 1 0,-6.693 z m 10.667,8.14 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.523,-16.821 a 3.166,3.166 0 1 1 -3.165,3.166 3.165,3.165 0 0 1 3.165,-3.166 z"
+     fill="#004880"
+     id="path5178-0" />
+  <rect
+     x="184.15776"
+     y="158.58647"
+     width="65"
+     height="56"
+     fill="#ffffff"
+     id="rect4584-5-2" />
+  <polygon
+     points="123,130 54.499,130 60.069,136 123,136 "
+     fill="#c2c2c2"
+     id="polygon4586-2-1"
+     transform="translate(127.15778,33.586454)" />
+  <rect
+     x="249.15776"
+     y="158.58647"
+     width="10"
+     height="56"
+     fill="#939393"
+     id="rect4588-9-3" />
+  <rect
+     x="179.15776"
+     y="150.58647"
+     width="76"
+     height="14"
+     fill="#ffffff"
+     id="rect4590-5-9" />
+  <rect
+     x="253.15776"
+     y="150.58647"
+     width="10"
+     height="14"
+     fill="#939393"
+     id="rect4592-7-1" />
+  <rect
+     x="381.69196"
+     y="158.58649"
+     width="65"
+     height="56"
+     fill="#ffffff"
+     id="rect4584-5-8-7" />
+  <polygon
+     points="60.069,136 123,136 123,130 54.499,130 "
+     fill="#c2c2c2"
+     id="polygon4586-2-8-1"
+     transform="translate(324.69191,33.586455)" />
+  <rect
+     x="446.69186"
+     y="158.58649"
+     width="10"
+     height="56"
+     fill="#939393"
+     id="rect4588-9-4-5" />
+  <rect
+     x="376.69193"
+     y="150.58643"
+     width="76"
+     height="14"
+     fill="#ffffff"
+     id="rect4590-5-7-5" />
+  <rect
+     x="450.69186"
+     y="150.58643"
+     width="10"
+     height="14"
+     fill="#939393"
+     id="rect4592-7-7-6" />
+  <text
+     font-size="16px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text5176-0"
+     x="374.46527"
+     y="205.53462"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.0296px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.06435"
+     transform="scale(1.0643474,0.93954286)"><tspan
+       sodipodi:role="line"
+       id="tspan13384"
+       x="374.46527"
+       y="205.53462">2.1.0</tspan></text>
+  <text
+     font-size="16px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4644-2"
+     x="200.00117"
+     y="193.10149"
+     style="-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-family:SegoeUI, 'Segoe UI';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:16px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"><tspan
+       sodipodi:role="line"
+       id="tspan13386">2.0.0</tspan></text>
+  <path
+     d="m 38.456614,127.84734 v 10.135 a 8.95,8.95 0 0 0 8.95,8.95 h 10.1 a 8.95,8.95 0 0 0 8.95,-8.95 v -10.095 a 8.955,8.955 0 0 0 -8.955,-8.955 h -10.095 a 8.917,8.917 0 0 0 -8.95,8.915 z m 7.458,-3.565 a 3.347,3.347 0 0 1 0,6.694 v 0 a 3.347,3.347 0 0 1 0,-6.694 z m 10.667,8.141 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.525,-16.824 a 3.166,3.166 0 1 1 -3.165,3.165 3.164,3.164 0 0 1 3.165,-3.165 z"
+     fill="#004880"
+     id="path4598-4" />
+  <rect
+     x="42.463657"
+     y="160.18413"
+     width="65"
+     height="56"
+     fill="#ffffff"
+     id="rect4584-9" />
+  <polygon
+     points="123,130 54.499,130 60.069,136 123,136 "
+     fill="#c2c2c2"
+     id="polygon4586-3"
+     transform="translate(-14.53633,35.184104)" />
+  <rect
+     x="107.46368"
+     y="160.18413"
+     width="10"
+     height="56"
+     fill="#939393"
+     id="rect4588-3" />
+  <rect
+     x="37.463657"
+     y="152.18413"
+     width="76"
+     height="14"
+     fill="#ffffff"
+     id="rect4590-8" />
+  <rect
+     x="111.46368"
+     y="152.18413"
+     width="10"
+     height="14"
+     fill="#939393"
+     id="rect4592-5" />
+  <text
+     font-size="16px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4596-1"
+     x="56.812946"
+     y="191.92531"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+       sodipodi:role="line"
+       id="tspan13388"
+       x="56.812946"
+       y="191.92531">1.0.0</tspan></text>
+  <path
+     d="M 126.52119,506.11406 H 70.072609 c -17.825866,0 -25.25331,-5.03921 -25.25331,-29.22743 V 296.48278"
+     fill="none"
+     stroke="#737373"
+     stroke-miterlimit="10"
+     stroke-width="1.7304"
+     stroke-dasharray="3.4608, 3.4608"
+     id="path13122" />
+  <path
+     d="m 532.19193,511.52932 46.73911,0.9144 c 14.75973,0.28872 20.88445,-4.75818 20.76353,-29.56079 l -0.90184,-184.98632"
+     fill="none"
+     stroke="#737373"
+     stroke-miterlimit="10"
+     stroke-width="1.7304"
+     stroke-dasharray="3.4608, 3.4608"
+     id="path13122-7"
+     style="stroke-width:1.594;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:3.18799, 3.18799;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <path
+     d="m 520.28204,117.81922 a 8.932,8.932 0 0 0 -8.949,8.955 v 9.678 a 8.932,8.932 0 0 0 8.949,8.955 h 9.673 a 8.933,8.933 0 0 0 8.95,-8.955 v -9.678 a 8.933,8.933 0 0 0 -8.95,-8.955 z m -1.9,4.7 a 3.347,3.347 0 0 1 0,6.693 v 0 a 3.347,3.347 0 0 1 0,-6.693 z m 10.667,8.14 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.523,-16.821 a 3.166,3.166 0 1 1 -3.165,3.166 3.165,3.165 0 0 1 3.165,-3.166 z"
+     fill="#004880"
+     id="path5178-0-9" />
+  <rect
+     x="520.53082"
+     y="157.88884"
+     width="65"
+     height="56"
+     fill="#ffffff"
+     id="rect4584-5-8-7-9" />
+  <polygon
+     points="60.069,136 123,136 123,130 54.499,130 "
+     fill="#c2c2c2"
+     id="polygon4586-2-8-1-6"
+     transform="translate(463.53076,32.88881)" />
+  <rect
+     x="585.5307"
+     y="157.88884"
+     width="10"
+     height="56"
+     fill="#939393"
+     id="rect4588-9-4-5-6" />
+  <rect
+     x="515.53076"
+     y="149.88878"
+     width="76"
+     height="14"
+     fill="#ffffff"
+     id="rect4590-5-7-5-7" />
+  <rect
+     x="589.5307"
+     y="149.88878"
+     width="10"
+     height="14"
+     fill="#939393"
+     id="rect4592-7-7-6-1" />
+  <text
+     font-size="16px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text5176-0-8"
+     x="504.91034"
+     y="204.79208"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.0296px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.06435"
+     transform="scale(1.0643474,0.93954286)"><tspan
+       sodipodi:role="line"
+       id="tspan13444"
+       x="504.91034"
+       y="204.79208">2.2.0</tspan></text>
+  <path
+     d="m 460.42322,466.49687 a 8.932,8.932 0 0 0 -8.949,8.955 v 9.678 a 8.932,8.932 0 0 0 8.949,8.955 h 9.673 a 8.933,8.933 0 0 0 8.95,-8.955 v -9.678 a 8.933,8.933 0 0 0 -8.95,-8.955 z m -1.9,4.7 a 3.347,3.347 0 0 1 0,6.693 v 0 a 3.347,3.347 0 0 1 0,-6.693 z m 10.667,8.14 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.523,-16.821 a 3.166,3.166 0 1 1 -3.165,3.166 3.165,3.165 0 0 1 3.165,-3.166 z"
+     fill="#004880"
+     id="path5178-0-9-9" />
+  <rect
+     x="447.20377"
+     y="507.31473"
+     width="65"
+     height="53.755295"
+     fill="#ffffff"
+     id="rect4584-5-8-7-9-3"
+     style="stroke-width:0.979753" />
+  <polygon
+     points="123,136 123,130 54.499,130 60.069,136 "
+     fill="#c2c2c2"
+     id="polygon4586-2-8-1-6-4"
+     transform="translate(390.2037,382.3147)" />
+  <rect
+     x="512.20367"
+     y="507.31473"
+     width="10"
+     height="56"
+     fill="#939393"
+     id="rect4588-9-4-5-6-4" />
+  <rect
+     x="439.95898"
+     y="499.31467"
+     width="78.244705"
+     height="14"
+     fill="#ffffff"
+     id="rect4590-5-7-5-7-8"
+     style="stroke-width:1.01466" />
+  <rect
+     x="516.20367"
+     y="499.31467"
+     width="10"
+     height="14"
+     fill="#939393"
+     id="rect4592-7-7-6-1-0" />
+  <text
+     font-size="16px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text5176-0-8-4"
+     x="436.01642"
+     y="576.70264"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.0296px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.06435"
+     transform="scale(1.0643474,0.93954286)"><tspan
+       sodipodi:role="line"
+       id="tspan13444-0"
+       x="436.01642"
+       y="576.70264">2.2.0</tspan></text>
+  <rect
+     x="414.76001"
+     y="498.05881"
+     width="10"
+     height="14"
+     fill="#939393"
+     id="rect4592-7-7-6-1-0-0" />
+  <text
+     font-size="24px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4578-0"
+     x="54.905128"
+     y="239.19867"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.3;stroke-miterlimit:7;stroke-dasharray:none"><tspan
+       sodipodi:role="line"
+       id="tspan13704"
+       x="54.905128"
+       y="239.19867">Private</tspan></text>
+  <text
+     font-size="24px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4578-0-8"
+     x="199.63943"
+     y="239.74078"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.3;stroke-miterlimit:7;stroke-dasharray:none;"><tspan
+       sodipodi:role="line"
+       id="tspan14102">Private</tspan></text>
+</svg>
