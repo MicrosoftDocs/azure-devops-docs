@@ -40,7 +40,7 @@ Below are few common scenarios where the upstream behavior is triggered to block
 
 - **Having both private and public packages**: in this scenario, if a team already has both private and public packages, enabling the upstream behavior will result in blocking any new package versions from the public registry.
 
-    :::image type="content" source="media\both-private-and-public.png" alt-text="both private and public packages":::
+    :::image type="content" source="media\private-and-public-packages.svg" alt-text="both private and public packages":::
 
 ## Public versions will not be blocked
 
