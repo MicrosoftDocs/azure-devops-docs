@@ -18,15 +18,18 @@ ms.date: 07/09/2020
 [!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="filter"></a>
+
+When you have a large number of work items listed or displayed, filtering can support your ability to focus on a subset of them.  With filtering, you can selectively choose what work items are listed or displayed. For example, in daily scrum meetings you can filter the Kanban board or Task board to focus on a team member's work for an iteration. 
+The filter function is available from all Azure Boards tools: work items, boards, backlogs, sprint backlogs and taskboards, queries, and plans. The set of features supported depends on the tool and Azure DevOps version. Use the content selector to view the filters available for your version. 
+
  
-If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set. 
-
-The filter function is available from boards, backlogs, sprint backlogs, queries, and taskboards. For information on filtering Kanban boards, see [Filter your Kanban board](../boards/filter-kanban-board.md). 
+With parent work item filters, you can focus on one or more select features or epics. 
 
 
+### Supported filter functions 
 ---
 :::row:::
-   :::column span="2":::
+   :::column span="1.5":::
       **Page** 
    :::column-end:::
    :::column span="1":::
@@ -35,7 +38,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
    :::column span="2":::
       **Fields**
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
       **Parent Work Item**
    :::column-end:::
    :::column span="1":::
@@ -45,7 +48,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
 ---
 ::: moniker range=">= azure-devops-2019"
 :::row:::
-   :::column span="2":::
+   :::column span="1.5":::
       **Work items** 
    :::column-end:::
    :::column span="1":::
@@ -57,7 +60,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
       - States
       - Area Path
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
         
    :::column-end:::
    :::column span="1":::
@@ -67,7 +70,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
 ---
 ::: moniker-end 
 :::row:::
-   :::column span="2":::
+   :::column span="1.5":::
       **Boards** 
    :::column-end:::
    :::column span="1":::
@@ -84,11 +87,11 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
       Not supported
    ::: moniker-end 
    :::column-end:::
-   :::column span="1":::
-   ::: moniker range=">= tfs-2018"
+   :::column span="1.5":::
+   ::: moniker range=">= tfs-2017"
       ✔️   
    ::: moniker-end  
-   ::: moniker range="< tfs-2018"
+   ::: moniker range="< tfs-2017"
       Not supported
    :::column-end:::
    :::column span="1":::
@@ -97,7 +100,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
 :::row-end:::
 ---
 :::row:::
-   :::column span="2":::
+   :::column span="1.5":::
       **Backlogs** 
    :::column-end:::
    :::column span="1":::
@@ -105,17 +108,16 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
    :::column-end:::
    :::column span="2":::
    ::: moniker range=">= tfs-2018"
-      - Assigned To
-      - Work Item Type
-      - States
-      - Area Path
-      - Parent Work Item
+      - Assigned To  
+      - Work Item Type  
+      - States  
+      - Area Path  
    ::: moniker-end  
    ::: moniker range="< tfs-2018"
       Not supported
    ::: moniker-end 
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
    ::: moniker range=">= tfs-2018"
       ✔️   
    ::: moniker-end  
@@ -128,7 +130,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
 :::row-end:::
 ---
 :::row:::
-   :::column span="2":::
+   :::column span="1.5":::
      **Sprints** (Backlogs  
      & Taskboards)
    :::column-end:::
@@ -139,15 +141,14 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
    ::: moniker range=">= tfs-2018"
       - Assigned To
       - Work Item Type
-      - States
-      - Area Path
-      - Parent Work Item
+      - States  
+      - Area Path  
    ::: moniker-end  
    ::: moniker range="< tfs-2018"
       Not supported
    ::: moniker-end 
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
    ::: moniker range=">= tfs-2018"
       ✔️   
    ::: moniker-end  
@@ -160,7 +161,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
 :::row-end:::
 ---
 :::row:::
-   :::column span="2":::
+   :::column span="1.5":::
      **Queries**
    :::column-end:::
    :::column span="1":::
@@ -176,7 +177,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
       Not supported
    ::: moniker-end 
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
    ::: moniker range=">= tfs-2018"
       ✔️   
    ::: moniker-end  
@@ -188,9 +189,9 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
    :::column-end:::
 :::row-end:::
 ---
-::: moniker range=">=azure-devops"
+::: moniker range=">= azure-devops-2020"
 :::row:::
-   :::column span="2":::
+   :::column span="1.5":::
      **Plans**
    :::column-end:::
    :::column span="1":::
@@ -203,7 +204,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
       - Area Path
       - Iteration Path
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
       ✔️   
    :::column-end:::
    :::column span="1":::
@@ -213,7 +214,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
 ::: moniker-end 
 ::: moniker range=">= tfs-2017 < azure-devops-2020"
 :::row:::
-   :::column span="2":::
+   :::column span="1.5":::
      **Plans**
    :::column-end:::
    :::column span="1":::
@@ -226,7 +227,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
       - Area Path
       - Iteration Path
    :::column-end:::
-   :::column span="1":::
+   :::column span="1.5":::
       Not supported
    :::column-end:::
    :::column span="1":::
