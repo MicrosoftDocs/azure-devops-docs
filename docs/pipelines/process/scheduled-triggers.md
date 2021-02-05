@@ -5,7 +5,6 @@ ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
 ms.date: 02/05/2021
-ms.custom: contperf-fy21q3
 monikerRange: '>= tfs-2015'
 ---
 
@@ -15,7 +14,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-You can configure a pipeline to run on a schedule.
+Azure Pipelines provides several different types of triggers to start your pipeline based on events such as a push to a branch or a pull request. In addition to these event-based triggers, Azure Pipelines provides the capability to run a pipeline based on a schedule. This article provides guidance on schedule-based triggers. For information on other trigger types, see [Triggers in Azure Pipelines](../build/triggers.md).
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="> azure-devops-2019"
@@ -210,10 +209,104 @@ Build every 6 hours starting at 9:00 AM | `0 9,15,21 * * *` or `0 9-21/6 * * *`
 
 For more information on supported formats, see [Crontab Expression](https://github.com/atifaziz/NCrontab/wiki/Crontab-Expression).
 
+
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Scheduled builds are not yet supported in YAML syntax.
+After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+YAML pipelines are not yet available on TFS.
+
+::: moniker-end
+
+#### [Classic](#tab/classic/)
+
+Select the days and times when you want to run the build.
+
+If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
+
+
+### Example: Nightly build of Git repo in multiple time zones
+
+::: moniker range=">= azure-devops-2019"
+
+In this example, the classic editor scheduled trigger has two entries, producing the following builds.
+
+* Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
+
+    ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
+
+* Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
+
+    ![Scheduled trigger UTC -5:00 time zone](media/triggers/scheduled-trigger-git-nc.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+
+![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
+
+::: moniker-end
+
+## Example: Nightly build with different frequencies
+
+::: moniker range=">=azure-devops-2019"
+
+**Azure Pipelines and Azure DevOps 2019 Server**
+
+In this example, the classic editor scheduled trigger has two entries, producing the following builds.
+
+* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `main` and `releases/*` branch filter criteria
+
+    ![Scheduled trigger frequency 1, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-week-day-night.png)
+
+* Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
+
+    ![Scheduled trigger frequency 2, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-weekly-night.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+**TFS 2017.3 through TFS 2018**
+
+![Scheduled trigger different frequencies, TFS 2017.3 through TFS 2018.](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+
+**TFS 2017.1 and older versions**
+
+![Scheduled trigger different frequencies, TFS 2017.1 and older versions.](media/triggers/scheduled-trigger-git-different-frequencies.png)
+
+::: moniker-end
+
+* * *
+
 <a name="always"></a>
 ## Running even when there are no code changes
 
-By default, your pipeline does not run as scheduled if there have been no code changes since the last successful scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. To force a pipeline to run even when there are no code changes, you can use the `always` keyword.
+By default, your pipeline does not run as scheduled if there have been no code changes since the last successful scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. 
+
+#### [YAML](#tab/yaml/)
+
+::: moniker range=">azure-devops-2019"
+
+To force a pipeline to run even when there are no code changes, you can use the `always` keyword.
 
 ```yaml
 schedules:
@@ -222,11 +315,33 @@ schedules:
   always: true
 ```
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Scheduled builds are not yet supported in YAML syntax.
+After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+YAML pipelines are not yet available on TFS.
+
+::: moniker-end
+
+#### [Classic](#tab/classic/)
+
+Checkbox for classis, use monikers from the previous screenshots
+
+* * *
+
 <a name="limits"></a>
 ## Limits on the number of scheduled runs
 
 There are certain limits on how often you can schedule a pipeline to run. These limits have been put in place to prevent misuse of Azure Pipelines resources - particularly the Microsoft-hosted agents. This limit is around 1000 runs per pipeline per week.
 
+::: moniker range=">azure-devops-2019"
 ## Migrating from the classic editor
 
 The following examples show you how to migrate your schedules from the classic editor to YAML.
@@ -324,90 +439,6 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 * We also specify `always: true` since this build is scheduled to run whether or not the source code has been updated.
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-Scheduled builds are not yet supported in YAML syntax.
-After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-YAML pipelines are not yet available on TFS.
-
-::: moniker-end
-
-#### [Classic](#tab/classic/)
-
-Select the days and times when you want to run the build.
-
-If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
-
-
-### Example: Nightly build of Git repo in multiple time zones
-
-::: moniker range=">= azure-devops-2019"
-
-In this example, the classic editor scheduled trigger has two entries, producing the following builds.
-
-* Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
-
-    ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
-
-* Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
-
-    ![Scheduled trigger UTC -5:00 time zone](media/triggers/scheduled-trigger-git-nc.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
-
-::: moniker-end
-
-## Example: Nightly build with different frequencies
-
-::: moniker range=">=azure-devops-2019"
-
-**Azure Pipelines and Azure DevOps 2019 Server**
-
-In this example, the classic editor scheduled trigger has two entries, producing the following builds.
-
-* Every Monday - Friday at 3:00 AM UTC, build branches that meet the `main` and `releases/*` branch filter criteria
-
-    ![Scheduled trigger frequency 1, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-week-day-night.png)
-
-* Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
-
-    ![Scheduled trigger frequency 2, Azure Pipelines and Azure DevOps 2019 Server.](media/triggers/scheduled-trigger-git-weekly-night.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-**TFS 2017.3 through TFS 2018**
-
-![Scheduled trigger different frequencies, TFS 2017.3 through TFS 2018.](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2017"
-
-**TFS 2017.1 and older versions**
-
-![Scheduled trigger different frequencies, TFS 2017.1 and older versions.](media/triggers/scheduled-trigger-git-different-frequencies.png)
-
-::: moniker-end
-
-* * *
 
 ::: moniker range=">=azure-devops-2020"
 
