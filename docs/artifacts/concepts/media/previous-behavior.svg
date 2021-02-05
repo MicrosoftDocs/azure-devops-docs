@@ -7,11 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 636 636"
+   viewBox="0 0 390.49411 314.36941"
    version="1.1"
    id="svg5370"
    sodipodi:docname="previous-behavior.svg"
-   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   width="390.49411"
+   height="314.36942">
   <metadata
      id="metadata5376">
     <rdf:RDF>
@@ -27,45 +29,45 @@
   <defs
      id="defs5374">
     <marker
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker7231"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Lend"
        inkscape:isstock="true">
       <path
-         transform="scale(0.8) rotate(180) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
          id="path7229" />
     </marker>
     <marker
        style="overflow:visible"
        id="marker7013"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="DotM"
        inkscape:isstock="true">
       <path
-         transform="scale(0.4) translate(7.4, 1)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
          id="path7011" />
     </marker>
     <marker
        style="overflow:visible"
        id="DotS"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="DotS"
        inkscape:isstock="true">
       <path
-         transform="scale(0.2) translate(7.4, 1)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
          id="path6500" />
     </marker>
     <marker
@@ -111,8 +113,8 @@
      id="namedview5372"
      showgrid="false"
      inkscape:zoom="1.336478"
-     inkscape:cx="248.36035"
-     inkscape:cy="356.51342"
+     inkscape:cx="231.36035"
+     inkscape:cy="203.79577"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -123,354 +125,411 @@
   <title
      id="title4556">blog-package-upstream-diagram-4</title>
   <path
-     d="M343,33H606a11,11,0,0,1,11,11V297a0,0,0,0,1,0,0H354a11,11,0,0,1-11-11V33A0,0,0,0,1,343,33Z"
+     d="m 212.16847,0 h 171.16659 a 7.1590589,5.9931778 0 0 1 7.15905,5.9931778 V 143.83627 H 219.32753 a 7.1590589,5.9931778 0 0 1 -7.15906,-5.99318 z"
      fill="#cbe247"
-     id="path4566" />
+     id="path4566"
+     style="stroke-width:0.595475" />
   <path
-     d="M17,33H280a11,11,0,0,1,11,11V297a0,0,0,0,1,0,0H28a11,11,0,0,1-11-11V33A0,0,0,0,1,17,33Z"
+     d="m 0,0 h 171.16659 a 7.1590589,5.9931778 0 0 1 7.15906,5.9931778 V 143.83627 H 7.1590589 A 7.1590589,5.9931778 0 0 1 0,137.84309 Z"
      fill="#b0cdda"
-     id="path4568" />
+     id="path4568"
+     style="stroke-width:0.595475" />
   <path
-     d="M291,71.333V44a11,11,0,0,0-11-11H17V71.333Z"
+     d="M 178.32565,20.885135 V 5.9931778 A 7.1590589,5.9931778 0 0 0 171.16659,0 H 0 v 20.885135 z"
      fill="#cadee6"
-     id="path4570" />
+     id="path4570"
+     style="stroke-width:0.595475" />
   <path
-     d="M617,71.333V44a11,11,0,0,0-11-11H343V71.333Z"
+     d="M 390.49411,20.885135 V 5.9931778 A 7.1590589,5.9931778 0 0 0 383.33506,0 H 212.16847 v 20.885135 z"
      fill="#e6f26d"
-     id="path4572" />
+     id="path4572"
+     style="stroke-width:0.595475" />
   <text
-     transform="translate(106.906 59)"
-     font-size="24"
-     font-family="SegoeUI, Segoe UI"
-     id="text4578"><tspan
+     font-size="14.2914px"
+     font-family="SegoeUI, 'Segoe UI'"
+     id="text4578"
+     x="53.536816"
+     y="15.482361"
+     transform="scale(1.0929477,0.91495687)"
+     style="stroke-width:0.595475"><tspan
        letter-spacing="-0.034em"
-       id="tspan4574">F</tspan><tspan
-       x="10.898"
-       y="0"
-       id="tspan4576">abrikam</tspan></text>
+       id="tspan4574"
+       style="stroke-width:0.439802">F</tspan><tspan
+       x="60.026306"
+       y="15.482361"
+       id="tspan4576"
+       style="stroke-width:0.595475">abrikam</tspan></text>
   <text
      font-size="24"
      font-family="SegoeUI, Segoe UI"
      id="text4580"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-     x="409.08701"
-     y="59"><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.2914px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.595475"
+     x="233.47818"
+     y="15.482361"
+     transform="scale(1.0929477,0.91495687)"><tspan
        sodipodi:role="line"
        id="tspan5482"
-       x="409.08701"
-       y="59">Public registry</tspan></text>
+       x="233.47818"
+       y="15.482361"
+       style="stroke-width:0.595475">Public registry</tspan></text>
   <path
-     d="m 128.15518,419.57882 h 387.45591 a 16.205379,7.9643838 0 0 1 16.20538,7.96439 V 610 H 144.36056 a 16.205379,7.9643838 0 0 1 -16.20538,-7.96438 z"
+     d="M 72.342407,210.62141 H 324.50783 a 10.546842,4.3392697 0 0 1 10.54684,4.33928 v 99.40873 H 82.889249 a 10.546842,4.3392697 0 0 1 -10.546842,-4.33927 z"
      fill="#b4a0ff"
      id="path4600"
-     style="stroke-width:1.03279" />
+     style="stroke-width:0.615001" />
   <path
-     d="m 297.12071,463.50688 a 8.932,8.932 0 0 0 -8.949,8.955 v 9.678 a 8.932,8.932 0 0 0 8.949,8.955 h 9.673 a 8.933,8.933 0 0 0 8.95,-8.955 v -9.678 a 8.933,8.933 0 0 0 -8.95,-8.955 z m -1.9,4.7 a 3.347,3.347 0 0 1 0,6.693 v 0 a 3.347,3.347 0 0 1 0,-6.693 z m 10.667,8.14 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.523,-16.821 a 3.166,3.166 0 1 1 -3.165,3.166 3.165,3.165 0 0 1 3.165,-3.166 z"
+     d="m 182.30915,234.55493 a 5.8131559,4.8664604 0 0 0 -5.82423,4.879 v 5.2729 a 5.8131559,4.8664604 0 0 0 5.82423,4.87899 h 6.29541 a 5.8138066,4.8670052 0 0 0 5.82488,-4.87899 v -5.2729 a 5.8138066,4.8670052 0 0 0 -5.82488,-4.879 z m -1.23657,2.56073 a 2.1783064,1.8235606 0 0 1 0,3.64657 v 0 a 2.1783064,1.8235606 0 0 1 0,-3.64657 z m 6.94234,4.43495 a 3.7676174,3.1540461 0 1 1 -3.76567,3.15404 3.7669666,3.1535011 0 0 1 3.76567,-3.15404 z m -12.70603,-9.16466 a 2.0605073,1.7249455 0 1 1 -2.05985,1.72495 2.0598564,1.7244007 0 0 1 2.05985,-1.72495 z"
      fill="#004880"
-     id="path4820" />
+     id="path4820"
+     style="stroke-width:0.595475" />
   <rect
-     x="255"
-     y="229"
+     x="154.896"
+     y="106.78754"
      width="0"
      height="0"
      fill="#447995"
-     id="rect4872" />
+     id="rect4872"
+     style="stroke-width:0.595475" />
   <path
-     d="m 441.17248,461.76335 a 8.932,8.932 0 0 0 -8.949,8.955 v 9.678 a 8.932,8.932 0 0 0 8.949,8.955 h 9.673 a 8.933,8.933 0 0 0 8.95,-8.955 v -9.678 a 8.933,8.933 0 0 0 -8.95,-8.955 z m -1.9,4.7 a 3.347,3.347 0 0 1 0,6.693 v 0 a 3.347,3.347 0 0 1 0,-6.693 z m 10.667,8.14 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.523,-16.821 a 3.166,3.166 0 1 1 -3.165,3.166 3.165,3.165 0 0 1 3.165,-3.166 z"
+     d="m 276.06143,233.60499 a 5.8131559,4.8664604 0 0 0 -5.82422,4.879 v 5.2729 a 5.8131559,4.8664604 0 0 0 5.82422,4.87899 h 6.29542 a 5.8138066,4.8670052 0 0 0 5.82487,-4.87899 v -5.2729 a 5.8138066,4.8670052 0 0 0 -5.82487,-4.879 z m -1.23656,2.56073 a 2.1783064,1.8235606 0 0 1 0,3.64658 v 0 a 2.1783064,1.8235606 0 0 1 0,-3.64658 z m 6.94234,4.43495 a 3.7676174,3.1540461 0 1 1 -3.76567,3.15405 3.7669666,3.1535011 0 0 1 3.76567,-3.15405 z m -12.70604,-9.16466 a 2.0605073,1.7249455 0 1 1 -2.05985,1.72495 2.0598564,1.7244007 0 0 1 2.05985,-1.72495 z"
      fill="#004880"
-     id="path5178" />
+     id="path5178"
+     style="stroke-width:0.595475" />
   <rect
-     x="294.76703"
-     y="504.8259"
-     width="65"
-     height="56"
+     x="180.77731"
+     y="257.06696"
+     width="42.303528"
+     height="30.510723"
      fill="#ffffff"
-     id="rect4584-5" />
+     id="rect4584-5"
+     style="stroke-width:0.595475" />
+  <polygon
+     points="60.069,136 123,136 123,130 54.499,130 "
+     fill="#c2c2c2"
+     id="polygon4586-2"
+     transform="matrix(0.65082353,0,0,0.54483434,143.19343,188.96265)" />
+  <rect
+     x="222.59386"
+     y="257.06696"
+     width="6.5082355"
+     height="30.510723"
+     fill="#939393"
+     id="rect4588-9"
+     style="stroke-width:0.595475" />
+  <rect
+     x="177.03624"
+     y="252.70827"
+     width="49.462589"
+     height="7.6276808"
+     fill="#ffffff"
+     id="rect4590-5"
+     style="stroke-width:0.595475" />
+  <rect
+     x="225.19717"
+     y="252.70827"
+     width="6.5082355"
+     height="7.6276808"
+     fill="#939393"
+     id="rect4592-7"
+     style="stroke-width:0.595475" />
+  <rect
+     x="276.22333"
+     y="255.43629"
+     width="42.303528"
+     height="30.510723"
+     fill="#ffffff"
+     id="rect4584-5-8"
+     style="stroke-width:0.595475" />
   <polygon
      points="54.499,130 60.069,136 123,136 123,130 "
      fill="#c2c2c2"
-     id="polygon4586-2"
-     transform="translate(237.01883,379.82588)" />
-  <rect
-     x="359.0188"
-     y="504.8259"
-     width="10"
-     height="56"
-     fill="#939393"
-     id="rect4588-9" />
-  <rect
-     x="289.0188"
-     y="496.8259"
-     width="76"
-     height="14"
-     fill="#ffffff"
-     id="rect4590-5" />
-  <rect
-     x="363.0188"
-     y="496.8259"
-     width="10"
-     height="14"
-     fill="#939393"
-     id="rect4592-7" />
-  <rect
-     x="441.42123"
-     y="501.83295"
-     width="65"
-     height="56"
-     fill="#ffffff"
-     id="rect4584-5-8" />
-  <polygon
-     points="123,130 54.499,130 60.069,136 123,136 "
-     fill="#c2c2c2"
      id="polygon4586-2-8"
-     transform="translate(384.4212,376.83294)" />
+     transform="matrix(0.65082353,0,0,0.54483434,239.12636,187.33199)" />
   <rect
-     x="506.4212"
-     y="501.83295"
-     width="10"
-     height="56"
+     x="318.52682"
+     y="255.43629"
+     width="6.5082355"
+     height="30.510723"
      fill="#939393"
-     id="rect4588-9-4" />
+     id="rect4588-9-4"
+     style="stroke-width:0.595475" />
   <rect
-     x="436.4212"
-     y="493.83289"
-     width="76"
-     height="14"
+     x="272.96921"
+     y="251.07758"
+     width="49.462589"
+     height="7.6276808"
      fill="#ffffff"
-     id="rect4590-5-7" />
+     id="rect4590-5-7"
+     style="stroke-width:0.595475" />
   <rect
-     x="510.4212"
-     y="493.83289"
-     width="10"
-     height="14"
+     x="321.13013"
+     y="251.07758"
+     width="6.5082355"
+     height="7.6276808"
      fill="#939393"
-     id="rect4592-7-7" />
+     id="rect4592-7-7"
+     style="stroke-width:0.595475" />
   <text
      font-size="16px"
      font-family="SegoeUI, 'Segoe UI'"
      id="text5176"
-     x="458.40344"
-     y="534.85858"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+     x="262.84488"
+     y="298.84445"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.52761px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.595475"
+     transform="scale(1.0929477,0.91495687)"><tspan
        sodipodi:role="line"
        id="tspan13394"
-       x="458.40344"
-       y="534.85858">2.1.0</tspan></text>
+       x="262.84488"
+       y="298.84445"
+       style="stroke-width:0.595475">2.1.0</tspan></text>
   <text
      font-size="16px"
      font-family="SegoeUI, 'Segoe UI'"
      id="text4644"
-     x="309.86221"
-     y="539.34088"
-     style="-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-family:SegoeUI, 'Segoe UI';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:16px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"><tspan
+     x="174.39224"
+     y="301.51355"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.52761px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.595475"
+     transform="scale(1.0929477,0.91495687)"><tspan
        sodipodi:role="line"
-       id="tspan13392">2.0.0</tspan></text>
+       id="tspan13392"
+       x="174.39224"
+       y="301.51355"
+       style="stroke-width:0.595475">2.0.0</tspan></text>
   <path
-     d="m 148.31766,474.08677 v 10.135 a 8.95,8.95 0 0 0 8.95,8.95 h 10.1 a 8.95,8.95 0 0 0 8.95,-8.95 v -10.095 a 8.955,8.955 0 0 0 -8.955,-8.955 h -10.095 a 8.917,8.917 0 0 0 -8.95,8.915 z m 7.458,-3.565 a 3.347,3.347 0 0 1 0,6.694 v 0 a 3.347,3.347 0 0 1 0,-6.694 z m 10.667,8.141 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.525,-16.824 a 3.166,3.166 0 1 1 -3.165,3.165 3.164,3.164 0 0 1 3.165,-3.165 z"
+     d="m 85.464624,240.31922 v 5.52189 a 5.8248706,4.8762673 0 0 0 5.824868,4.87627 h 6.573313 a 5.8248706,4.8762673 0 0 0 5.824875,-4.87627 v -5.5001 a 5.8281247,4.8789915 0 0 0 -5.828122,-4.87899 h -6.570066 a 5.8033934,4.8582878 0 0 0 -5.824868,4.8572 z m 4.853837,-1.94234 a 2.1783072,1.8235612 0 0 1 0,3.64712 v 0 a 2.1783072,1.8235612 0 0 1 0,-3.64712 z m 6.94234,4.4355 a 3.7676174,3.1540461 0 1 1 -3.765669,3.15405 3.7669666,3.1535011 0 0 1 3.765669,-3.15405 z m -12.707324,-9.16629 a 2.0605073,1.7249455 0 1 1 -2.059864,1.7244 2.0592057,1.7238559 0 0 1 2.059864,-1.7244 z"
      fill="#004880"
-     id="path4598" />
+     id="path4598"
+     style="stroke-width:0.595475" />
   <rect
-     x="152.32471"
-     y="506.42355"
-     width="65"
-     height="56"
+     x="88.072502"
+     y="257.93741"
+     width="42.303528"
+     height="30.510723"
      fill="#ffffff"
-     id="rect4584" />
+     id="rect4584"
+     style="stroke-width:0.595475" />
   <polygon
-     points="54.499,130 60.069,136 123,136 123,130 "
+     points="60.069,136 123,136 123,130 54.499,130 "
      fill="#c2c2c2"
      id="polygon4586"
-     transform="translate(95.324719,381.42353)" />
+     transform="matrix(0.65082353,0,0,0.54483434,50.97557,189.8331)" />
   <rect
-     x="217.32472"
-     y="506.42355"
-     width="10"
-     height="56"
+     x="130.37604"
+     y="257.93741"
+     width="6.5082355"
+     height="30.510723"
      fill="#939393"
-     id="rect4588" />
+     id="rect4588"
+     style="stroke-width:0.595475" />
   <rect
-     x="147.32471"
-     y="498.42355"
-     width="76"
-     height="14"
+     x="84.818382"
+     y="253.57874"
+     width="49.462589"
+     height="7.6276808"
      fill="#ffffff"
-     id="rect4590" />
+     id="rect4590"
+     style="stroke-width:0.595475" />
   <rect
-     x="221.32472"
-     y="498.42355"
-     width="10"
-     height="14"
+     x="132.97934"
+     y="253.57874"
+     width="6.5082355"
+     height="7.6276808"
      fill="#939393"
-     id="rect4592" />
+     id="rect4592"
+     style="stroke-width:0.595475" />
   <text
      font-size="16px"
      font-family="SegoeUI, 'Segoe UI'"
      id="text4596"
-     x="165.92577"
-     y="540.40942"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+     x="88.681625"
+     y="302.14984"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.52761px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.595475"
+     transform="scale(1.0929477,0.91495687)"><tspan
        sodipodi:role="line"
        id="tspan13390"
-       x="165.92577"
-       y="540.40942">1.0.0</tspan></text>
+       x="88.681625"
+       y="302.14984"
+       style="stroke-width:0.595475">1.0.0</tspan></text>
   <path
-     d="m 187.25966,117.26745 a 8.932,8.932 0 0 0 -8.949,8.955 v 9.678 a 8.932,8.932 0 0 0 8.949,8.955 h 9.673 a 8.933,8.933 0 0 0 8.95,-8.955 v -9.678 a 8.933,8.933 0 0 0 -8.95,-8.955 z m -1.9,4.7 a 3.347,3.347 0 0 1 0,6.693 v 0 a 3.347,3.347 0 0 1 0,-6.693 z m 10.667,8.14 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.523,-16.821 a 3.166,3.166 0 1 1 -3.165,3.166 3.165,3.165 0 0 1 3.165,-3.166 z"
+     d="m 110.80899,45.9118 a 5.8131559,4.8664604 0 0 0 -5.82422,4.878993 v 5.272906 a 5.8131559,4.8664604 0 0 0 5.82422,4.878991 h 6.29542 a 5.8138066,4.8670052 0 0 0 5.82487,-4.878991 V 50.790793 A 5.8138066,4.8670052 0 0 0 117.10441,45.9118 Z m -1.23656,2.560722 a 2.1783064,1.8235606 0 0 1 0,3.646576 v 0 a 2.1783064,1.8235606 0 0 1 0,-3.646576 z m 6.94233,4.434951 a 3.7676174,3.1540461 0 1 1 -3.76567,3.154046 3.7669666,3.1535011 0 0 1 3.76567,-3.154046 z m -12.70602,-9.164659 a 2.0605073,1.7249455 0 1 1 -2.05987,1.724947 2.0598564,1.7244007 0 0 1 2.05987,-1.724947 z"
      fill="#004880"
-     id="path4820-0" />
+     id="path4820-0"
+     style="stroke-width:0.595475" />
   <path
-     d="m 453.27378,114.02745 a 8.932,8.932 0 0 0 -8.949,8.955 v 9.678 a 8.932,8.932 0 0 0 8.949,8.955 h 9.673 a 8.933,8.933 0 0 0 8.95,-8.955 v -9.678 a 8.933,8.933 0 0 0 -8.95,-8.955 z m -1.9,4.7 a 3.347,3.347 0 0 1 0,6.693 v 0 a 3.347,3.347 0 0 1 0,-6.693 z m 10.667,8.14 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.523,-16.821 a 3.166,3.166 0 1 1 -3.165,3.166 3.165,3.165 0 0 1 3.165,-3.166 z"
+     d="m 283.93724,44.146538 a 5.8131559,4.8664604 0 0 0 -5.82422,4.878991 v 5.272907 a 5.8131559,4.8664604 0 0 0 5.82422,4.878991 h 6.29542 a 5.8138066,4.8670052 0 0 0 5.82487,-4.878991 v -5.272907 a 5.8138066,4.8670052 0 0 0 -5.82487,-4.878991 z m -1.23656,2.560721 a 2.1783064,1.8235606 0 0 1 0,3.646576 v 0 a 2.1783064,1.8235606 0 0 1 0,-3.646576 z m 6.94233,4.434951 a 3.7676174,3.1540461 0 1 1 -3.76566,3.154047 3.7669666,3.1535011 0 0 1 3.76566,-3.154047 z m -12.70602,-9.164658 a 2.0605073,1.7249455 0 1 1 -2.05986,1.724945 2.0598564,1.7244007 0 0 1 2.05986,-1.724945 z"
      fill="#004880"
-     id="path5178-0" />
+     id="path5178-0"
+     style="stroke-width:0.595475" />
   <rect
-     x="184.15776"
-     y="158.58647"
-     width="65"
-     height="56"
+     x="108.7902"
+     y="68.42382"
+     width="42.303528"
+     height="30.510723"
      fill="#ffffff"
-     id="rect4584-5-2" />
-  <polygon
-     points="123,130 54.499,130 60.069,136 123,136 "
-     fill="#c2c2c2"
-     id="polygon4586-2-1"
-     transform="translate(127.15778,33.586454)" />
-  <rect
-     x="249.15776"
-     y="158.58647"
-     width="10"
-     height="56"
-     fill="#939393"
-     id="rect4588-9-3" />
-  <rect
-     x="179.15776"
-     y="150.58647"
-     width="76"
-     height="14"
-     fill="#ffffff"
-     id="rect4590-5-9" />
-  <rect
-     x="253.15776"
-     y="150.58647"
-     width="10"
-     height="14"
-     fill="#939393"
-     id="rect4592-7-1" />
-  <rect
-     x="453.52255"
-     y="154.09708"
-     width="65"
-     height="56"
-     fill="#ffffff"
-     id="rect4584-5-8-7" />
+     id="rect4584-5-2"
+     style="stroke-width:0.595475" />
   <polygon
      points="54.499,130 60.069,136 123,136 123,130 "
      fill="#c2c2c2"
-     id="polygon4586-2-8-1"
-     transform="translate(396.5225,29.097043)" />
+     id="polygon4586-2-1"
+     transform="matrix(0.65082353,0,0,0.54483434,71.693276,0.31952028)" />
   <rect
-     x="518.52246"
-     y="154.09708"
-     width="10"
-     height="56"
+     x="151.09373"
+     y="68.42382"
+     width="6.5082355"
+     height="30.510723"
      fill="#939393"
-     id="rect4588-9-4-5" />
+     id="rect4588-9-3"
+     style="stroke-width:0.595475" />
   <rect
-     x="448.52252"
-     y="146.09702"
-     width="76"
-     height="14"
+     x="105.53607"
+     y="64.065147"
+     width="49.462589"
+     height="7.6276808"
      fill="#ffffff"
-     id="rect4590-5-7-5" />
+     id="rect4590-5-9"
+     style="stroke-width:0.595475" />
   <rect
-     x="522.52246"
-     y="146.09702"
-     width="10"
-     height="14"
+     x="153.69702"
+     y="64.065147"
+     width="6.5082355"
+     height="7.6276808"
      fill="#939393"
-     id="rect4592-7-7-6" />
+     id="rect4592-7-1"
+     style="stroke-width:0.595475" />
+  <rect
+     x="284.09915"
+     y="65.977844"
+     width="42.303528"
+     height="30.510723"
+     fill="#ffffff"
+     id="rect4584-5-8-7"
+     style="stroke-width:0.595475" />
+  <polygon
+     points="60.069,136 123,136 123,130 54.499,130 "
+     fill="#c2c2c2"
+     id="polygon4586-2-8-1"
+     transform="matrix(0.65082353,0,0,0.54483434,247.00218,-2.126465)" />
+  <rect
+     x="326.40262"
+     y="65.977844"
+     width="6.5082355"
+     height="30.510723"
+     fill="#939393"
+     id="rect4588-9-4-5"
+     style="stroke-width:0.595475" />
+  <rect
+     x="280.845"
+     y="61.619141"
+     width="49.462589"
+     height="7.6276808"
+     fill="#ffffff"
+     id="rect4590-5-7-5"
+     style="stroke-width:0.595475" />
+  <rect
+     x="329.00592"
+     y="61.619141"
+     width="6.5082355"
+     height="7.6276808"
+     fill="#939393"
+     id="rect4592-7-7-6"
+     style="stroke-width:0.595475" />
   <text
      font-size="16px"
      font-family="SegoeUI, 'Segoe UI'"
      id="text5176-0"
-     x="441.95319"
-     y="200.75633"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.0296px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.06435"
-     transform="scale(1.0643474,0.93954287)"><tspan
+     x="253.66121"
+     y="98.63031"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.1408px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.633794"
+     transform="scale(1.1632761,0.85964116)"><tspan
        sodipodi:role="line"
        id="tspan13384"
-       x="441.95319"
-       y="200.75633">2.1.0</tspan></text>
+       x="253.66121"
+       y="98.63031"
+       style="stroke-width:0.633794">2.1.0</tspan></text>
   <text
      font-size="16px"
      font-family="SegoeUI, 'Segoe UI'"
      id="text4644-2"
-     x="200.00117"
-     y="193.10149"
-     style="-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-family:SegoeUI, 'Segoe UI';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:16px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;"><tspan
+     x="108.97271"
+     y="95.336494"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.52761px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.595475"
+     transform="scale(1.0929477,0.91495687)"><tspan
        sodipodi:role="line"
-       id="tspan13386">2.0.0</tspan></text>
+       id="tspan13386"
+       x="108.97271"
+       y="95.336494"
+       style="stroke-width:0.595475">2.0.0</tspan></text>
   <path
-     d="m 38.456614,127.84734 v 10.135 a 8.95,8.95 0 0 0 8.95,8.95 h 10.1 a 8.95,8.95 0 0 0 8.95,-8.95 v -10.095 a 8.955,8.955 0 0 0 -8.955,-8.955 h -10.095 a 8.917,8.917 0 0 0 -8.95,8.915 z m 7.458,-3.565 a 3.347,3.347 0 0 1 0,6.694 v 0 a 3.347,3.347 0 0 1 0,-6.694 z m 10.667,8.141 a 5.789,5.789 0 1 1 -5.786,5.789 5.788,5.788 0 0 1 5.786,-5.789 z m -19.525,-16.824 a 3.166,3.166 0 1 1 -3.165,3.165 3.164,3.164 0 0 1 3.165,-3.165 z"
+     d="m 13.964469,51.676088 v 5.521896 a 5.8248706,4.8762673 0 0 0 5.824871,4.876267 h 6.573317 a 5.8248706,4.8762673 0 0 0 5.82487,-4.876267 V 51.697882 A 5.8281247,4.8789915 0 0 0 26.359404,46.81889 H 19.78934 a 5.8033934,4.8582878 0 0 0 -5.824871,4.857198 z m 4.853843,-1.942334 a 2.1783065,1.8235607 0 0 1 0,3.647121 v 0 a 2.1783065,1.8235607 0 0 1 0,-3.647121 z m 6.942334,4.435496 a 3.7676174,3.1540461 0 1 1 -3.765665,3.154046 3.7669666,3.1535011 0 0 1 3.765665,-3.154046 z m -12.70733,-9.166293 a 2.0605073,1.7249455 0 1 1 -2.059856,1.7244 2.0592057,1.7238559 0 0 1 2.059856,-1.7244 z"
      fill="#004880"
-     id="path4598-4" />
+     id="path4598-4"
+     style="stroke-width:0.595475" />
   <rect
-     x="42.463657"
-     y="160.18413"
-     width="65"
-     height="56"
+     x="16.572348"
+     y="69.294281"
+     width="42.303528"
+     height="30.510723"
      fill="#ffffff"
-     id="rect4584-9" />
+     id="rect4584-9"
+     style="stroke-width:0.595475" />
   <polygon
-     points="123,130 54.499,130 60.069,136 123,136 "
+     points="54.499,130 60.069,136 123,136 123,130 "
      fill="#c2c2c2"
      id="polygon4586-3"
-     transform="translate(-14.53633,35.184104)" />
+     transform="matrix(0.65082353,0,0,0.54483434,-20.524586,1.1899749)" />
   <rect
-     x="107.46368"
-     y="160.18413"
-     width="10"
-     height="56"
+     x="58.875896"
+     y="69.294281"
+     width="6.5082355"
+     height="30.510723"
      fill="#939393"
-     id="rect4588-3" />
+     id="rect4588-3"
+     style="stroke-width:0.595475" />
   <rect
-     x="37.463657"
-     y="152.18413"
-     width="76"
-     height="14"
+     x="13.31823"
+     y="64.935608"
+     width="49.462589"
+     height="7.6276808"
      fill="#ffffff"
-     id="rect4590-8" />
+     id="rect4590-8"
+     style="stroke-width:0.595475" />
   <rect
-     x="111.46368"
-     y="152.18413"
-     width="10"
-     height="14"
+     x="61.479179"
+     y="64.935608"
+     width="6.5082355"
+     height="7.6276808"
      fill="#939393"
-     id="rect4592-5" />
+     id="rect4592-5"
+     style="stroke-width:0.595475" />
   <text
      font-size="16px"
      font-family="SegoeUI, 'Segoe UI'"
      id="text4596-1"
-     x="56.812946"
-     y="191.92531"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+     x="23.707632"
+     y="94.636116"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.52761px;font-family:SegoeUI, 'Segoe UI';-inkscape-font-specification:'SegoeUI, Segoe UI, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.595475"
+     transform="scale(1.0929477,0.91495687)"><tspan
        sodipodi:role="line"
        id="tspan13388"
-       x="56.812946"
-       y="191.92531">1.0.0</tspan></text>
+       x="23.707632"
+       y="94.636116"
+       style="stroke-width:0.595475">1.0.0</tspan></text>
   <path
-     d="M 126.52119,506.11406 H 70.072609 c -17.825866,0 -25.25331,-5.03921 -25.25331,-29.22743 V 296.48278"
+     d="M 71.278968,257.76878 H 34.540903 c -11.601493,0 -16.435449,-2.74553 -16.435449,-15.9241 v -98.29022"
      fill="none"
      stroke="#737373"
      stroke-miterlimit="10"
-     stroke-width="1.7304"
-     stroke-dasharray="3.4608, 3.4608"
+     stroke-width="1.03041"
+     stroke-dasharray="2.06082, 2.06082"
      id="path13122" />
   <path
-     d="m 532.19193,511.52932 46.73911,0.9144 c 14.75973,0.28872 20.88445,-4.75818 20.76353,-29.56079 l -0.90184,-184.98632"
+     d="m 335.29903,260.71921 30.41891,0.49819 c 9.60598,0.15731 13.59209,-2.59241 13.5134,-16.10573 l -0.58694,-100.7869"
      fill="none"
      stroke="#737373"
      stroke-miterlimit="10"
      stroke-width="1.7304"
      stroke-dasharray="3.4608, 3.4608"
      id="path13122-7"
-     style="stroke-width:1.594;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:3.18799, 3.18799;stroke-dashoffset:0;paint-order:markers stroke fill" />
+     style="stroke-width:0.949187;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1.89837, 1.89837;stroke-dashoffset:0;paint-order:markers stroke fill" />
 </svg>
