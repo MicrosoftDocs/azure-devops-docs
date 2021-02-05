@@ -46,7 +46,7 @@ schedules:
 
 If you want to run your pipeline by only using scheduled triggers, you must disable PR and continuous integration triggers by specifying `pr: none` and `trigger: none` in your YAML file. If you're using Azure Repos Git, PR builds are configured using [branch policy](../repos/azure-repos-git.md#pr-triggers) and must be disabled there.
 
-Scheduled pipelines in YAML have the following constraints:
+Scheduled pipelines in YAML have the following constraints.
 
 - The time zone for cron schedules is UTC.
 - If you specify an `exclude` clause without an `include` clause for `branches`, it is equivalent to specifying `*` in the `include` clause.
