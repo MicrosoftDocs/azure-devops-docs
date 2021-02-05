@@ -120,10 +120,6 @@ schedules:
 
 Because `release` was added to the branch filters in the `main` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `feature` branch is added to the branch filters in the YAML file **in the feature branch** will the scheduled build be added to the scheduler.
 
-
-
-
-
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -218,7 +214,7 @@ YAML pipelines are not available on TFS.
 
 #### [Classic](#tab/classic/)
 
-### Example: Nightly build of Git repo in multiple time zones
+#### Example: Nightly build of Git repo in multiple time zones
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -246,7 +242,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ::: moniker-end
 
-## Example: Nightly build with different frequencies
+#### Example: Nightly build with different frequencies
 
 ::: moniker range=">=azure-devops-2019"
 
@@ -343,7 +339,7 @@ YAML pipelines are not available on TFS.
 
 #### [Classic](#tab/classic/)
 
-Classic schedules are defined using a graphical editor instead of cron syntax.For information on defining classic scheduled, see [Examples](#examples).
+Classic schedules are defined using a graphical editor instead of cron syntax. For information on defining classic scheduled, see [Examples](#examples).
 
 * * *
 
@@ -361,7 +357,7 @@ After you create or update your scheduled triggers, you can verify them using th
 
 ![Scheduled runs](media/triggers/scheduled-runs.png)
 
-In this example, the scheduled runs for the following schedule are displayed.
+This example displays the scheduled runs for the following schedule.
 
 ```yaml
 schedules:
@@ -372,7 +368,7 @@ schedules:
     - main
 ```
 
-The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to browse to the Azure DevOps portal. In this example the screenshot was taken in the EST time zone.
+The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to browse to the Azure DevOps portal. This example displays a screenshot taken in the EST time zone.
 
 ::: moniker-end
 
@@ -639,7 +635,7 @@ In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, th
 
 ### Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?
 
-Schedules are defined in YAML files, and these files are associated with branches. If you want a pipeline to be scheduled for a particular branch, say features/X, then make sure that the YAML file in that branch has the cron schedule defined in it, and that it has the correct branch inclusions for the schedule. The YAML file in features/X branch should have the following in this example: 
+Schedules are defined in YAML files, and these files are associated with branches. If you want a pipeline to be scheduled for a particular branch, say `features/X`, then make sure that the YAML file **in that branch** has the cron schedule defined in it, and that it has the correct branch inclusions for the schedule. The YAML file in the `features/X` branch should have the following in this example: 
  
 ```yaml
 schedules: 
@@ -648,4 +644,7 @@ schedules:
     include: 
     - features/X  
 ```
+
+For more information, see [Scheduled triggers evaluation](#scheduled-triggers-evaluation).
+
 ::: moniker-end
