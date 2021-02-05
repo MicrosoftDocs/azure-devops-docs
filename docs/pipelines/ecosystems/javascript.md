@@ -903,9 +903,9 @@ In each step where you need to use the `nvm` command, you'll need to start the s
 
 [Build, release, and test tasks](../tasks/index.md)
 
-### My pipelines fails with a FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory**
+### My pipeline fails with a FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memory
 
-This happens when the Node package has exceeded the memory usage limit. In such scenarios, add a variable such as **NODE_OPTION** assign it a value of ***--max_old_space_size=16384***
+This happens when the node package exceeds the memory usage limit. In this scenario, add a variable, like **NODE_OPTION**. Assign the variable a value of ***--max_old_space_size=16384***.
 
 ### How can I version my npm packages as part of the build process?
 
