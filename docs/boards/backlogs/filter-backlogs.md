@@ -36,16 +36,19 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
       **Page** 
    :::column-end:::
    :::column span="1":::
-      **Keywords**
+      **Keywords** or "ID"
    :::column-end:::
+   ::: moniker range="< tfs-2018"
    :::column span="2":::
       **Fields**
    :::column-end:::
+   ::: moniker-end 
    :::column span="1":::
       **Tags**
    :::column-end:::
 :::row-end:::
 ---
+::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="2":::
       **Work items** 
@@ -65,6 +68,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
    :::column-end:::
 :::row-end:::
 ---
+::: moniker-end 
 :::row:::
    :::column span="2":::
       **Boards** 
@@ -72,6 +76,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
    :::column span="1":::
       ✔️   
    :::column-end:::
+   ::: moniker range="< tfs-2018"
    :::column span="2":::
       - Assigned To
       - Work Item Type
@@ -80,6 +85,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
       - Tags 
       - Parent Work Item
    :::column-end:::
+   ::: moniker-end 
    :::column span="1":::
       ✔️   
    :::column-end:::
@@ -92,6 +98,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
    :::column span="1":::
       ✔️   
    :::column-end:::
+   ::: moniker range="< tfs-2018"
    :::column span="2":::
       - Assigned To
       - Work Item Type
@@ -100,11 +107,13 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
       - Tags 
       - Parent Work Item
    :::column-end:::
+   ::: moniker-end 
    :::column span="1":::
       ✔️   
    :::column-end:::
----
 :::row-end:::
+---
+:::row:::
    :::column span="2":::
      **Sprints** (Backlogs  
      & Taskboards)
@@ -112,6 +121,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
    :::column span="1":::
       ✔️   
    :::column-end:::
+   ::: moniker range="< tfs-2018"
    :::column span="2":::
       - Assigned To
       - Work Item Type
@@ -120,27 +130,34 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
       - Tags 
       - Parent Work Item
    :::column-end:::
+   ::: moniker-end 
    :::column span="1":::
       ✔️   
    :::column-end:::
----
 :::row-end:::
+---
+:::row:::
    :::column span="2":::
      **Queries**
    :::column-end:::
    :::column span="1":::
       ✔️   
    :::column-end:::
+   ::: moniker range="< tfs-2018"
    :::column span="2":::
       - Work Item Types
       - Assigned To
       - States
       - Tags 
    :::column-end:::
+   ::: moniker-end 
    :::column span="1":::
       ✔️   
    :::column-end:::
+:::row-end:::
 ---
+::: moniker range=">= tfs-2017"
+:::row:::
    :::column span="2":::
      **Plans**
    :::column-end:::
@@ -160,7 +177,7 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
       ✔️   
    :::column-end:::
 ---
-  
+::: moniker-end 
 
 Work items - Parent field not a Column option 
 
