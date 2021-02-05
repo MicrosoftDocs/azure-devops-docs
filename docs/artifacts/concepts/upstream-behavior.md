@@ -54,7 +54,7 @@ Below are few common scenarios where the upstream behavior is triggered to block
 
 - **Public package made private**: if a public package is switched to a private package, the new upstream behavior will have no effect on the team's workflow in this scenario.
 
-    :::image type="content" source="media\public-to-private.png" alt-text="switched from public to private":::
+    :::image type="content" source="media\public-to-internal.svg" alt-text="switched from public to private":::
 
 ## Enable upstream behavior
 
