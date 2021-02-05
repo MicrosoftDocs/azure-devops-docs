@@ -123,7 +123,7 @@ Welcome to what's new in the Azure DevOps docs from January 1, 2021 through Janu
 
 ## GitHub issue content updates
 
-Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2021-01-01..2021-01-31+).
+Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues, January 1-31, 2021](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2021-01-01..2021-01-31+).
 
 - [[azure-devops-docs] Update the external links to GitHub Actions documentation #10053](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10053)
 - [coverlet.msbuild is not accurate for .Net 5.0 #10009](https://github.com/MicrosoftDocs/azure-devops-docs/issues/10009)
