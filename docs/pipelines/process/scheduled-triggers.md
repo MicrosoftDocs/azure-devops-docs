@@ -32,7 +32,7 @@ Azure Pipelines provides several different types of triggers to start your pipel
 > Once all UI scheduled triggers are removed, a push must be made in order for the YAML 
 > scheduled triggers to start running.
 
-Scheduled triggers cause a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
+Scheduled triggers configure a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
 
 ```yaml
 schedules:
@@ -67,8 +67,6 @@ After one of these events occurs in a branch, any scheduled runs for that branch
 > [!IMPORTANT]
 > Scheduled runs for a branch are added only if the branch matches the branch filters for the 
 > scheduled triggers in the YAML file **in that particular branch**.
-
-### Example of scheduled triggers for multiple branches
 
 For example, a pipeline is created with the following schedule, and this version of the YAML file is checked into the `main` branch. This schedule builds the `main` branch on a daily basis.
 
