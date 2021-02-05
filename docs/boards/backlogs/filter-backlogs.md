@@ -25,98 +25,129 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
 
  
 
+
+
+
+
+
 ---
 :::row:::
    :::column span="2":::
-      **Filter options** 
+      **Page** 
    :::column-end:::
    :::column span="1":::
-      **Work items**
+      **Keywords**
+   :::column-end:::
+   :::column span="2":::
+      **Fields**
    :::column-end:::
    :::column span="1":::
-      **Boards**
+      **Tags**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Work items** 
    :::column-end:::
    :::column span="1":::
-      **Backlogs**
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
+      - Assigned To
+      - Work Item Type
+      - States
+      - Area Path
+      - Tags 
    :::column-end:::
    :::column span="1":::
-     **Sprints (Backlogs  
+      ✔️   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Boards** 
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
+      - Assigned To
+      - Work Item Type
+      - States
+      - Area Path
+      - Tags 
+      - Parent Work Item
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      **Backlogs** 
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
+      - Assigned To
+      - Work Item Type
+      - States
+      - Area Path
+      - Tags 
+      - Parent Work Item
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+---
+:::row-end:::
+   :::column span="2":::
+     **Sprints** (Backlogs  
      & Taskboards)
    :::column-end:::
    :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
+      - Assigned To
+      - Work Item Type
+      - States
+      - Area Path
+      - Tags 
+      - Parent Work Item
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+---
+:::row-end:::
+   :::column span="2":::
      **Queries**
    :::column-end:::
    :::column span="1":::
-     **Plans**
+      ✔️   
    :::column-end:::
-:::row-end:::
----
-:::row:::
    :::column span="2":::
-      **Keyword** 
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-:::row-end:::
----
-:::row:::
-   :::column span="2":::
-      **Fields**  
-   :::column-end:::
-   :::column span="1":::
-      - Assigned To
-      - Work Item Type
-      - States
-      - Area Path
-      - Tags 
-   :::column-end:::
-   :::column span="1":::
-      - Assigned To
-      - Work Item Type
-      - States
-      - Area Path
-      - Tags 
-      - Parent Work Item
-   :::column-end:::
-   :::column span="1":::
-      - Assigned To
-      - Work Item Type
-      - States
-      - Area Path
-      - Tags 
-      - Parent Work Item
-   :::column-end:::
-   :::column span="1":::
-      - Assigned To
-      - Work Item Type
-      - States
-      - Area Path
-      - Tags 
-      - Parent Work Item
-   :::column-end:::
-   :::column span="1":::
       - Work Item Types
       - Assigned To
       - States
       - Tags 
    :::column-end:::
    :::column span="1":::
+      ✔️   
+   :::column-end:::
+---
+   :::column span="2":::
+     **Plans**
+   :::column-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
+   :::column span="2":::
       - Assigned To
       - Work Item Type
       - States
@@ -125,34 +156,11 @@ The filter function is available from boards, backlogs, sprint backlogs, queries
       - Tags 
       - Parent Work Item
    :::column-end:::
-:::row-end:::
+   :::column span="1":::
+      ✔️   
+   :::column-end:::
 ---
-:::row:::
-   :::column span="2":::
-      **Tags** 
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-   :::column span="1":::
-      ✔️   
-   :::column-end:::
-:::row-end:::
----
-
-
+  
 
 Work items - Parent field not a Column option 
 
