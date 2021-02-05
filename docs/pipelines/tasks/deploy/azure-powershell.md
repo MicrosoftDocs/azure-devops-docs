@@ -54,14 +54,7 @@ To resolve this issue, ensure the service principle/ authentication credentials 
 
 ### Error: Could not find the modules: '<module name>' with Version: '<version>'. If the module was recently installed, retry after restarting the Azure Pipelines task agent
 
-Azure PowerShell task uses Azure/AzureRM/Az PowerShell Module to interact with Azure Subscription. This issue occurs when the PowerShell module is not available on the Hosted Agent. Hence, for a particular task version, *Preferred Azure PowerShell version* must be specified in the **Azure PowerShell version options** from the following available list of versions. 
-
-<table><thead><tr><th>Task Version</th><th>Available versions of PowerShell Modules</th></tr></thead>
-<tr><td>2.* </td><td>Choose one from any of the 2 lists:<br>Azure: 2.1.0, 3.8.0, 4.2.1, 5.1.1<br>AzureRM: 2.1.0, 3.8.0, 4.2.1, 5.1.1, 6.7.0</td></tr>
-<tr><td>3.* </td><td>Choose one from any of the 2 lists:<br>Azure: 2.1.0, 3.8.0, 4.2.1, 5.1.1<br>AzureRM: 2.1.0, 3.8.0, 4.2.1, 5.1.1, 6.7.0</td></tr>
-<tr><td>4.*</td><td>Az Module: 1.0.0, 1.6.0, 2.3.2, 2.6.0, 3.1.0, 3.5.0</td></tr>
-<tr><td>5.*</td><td>Az Module: 1.0.0, 1.6.0, 2.3.2, 2.6.0, 3.1.0</td></tr>
-</table>
+Azure PowerShell task uses Azure/AzureRM/Az PowerShell Module to interact with Azure Subscription. This issue occurs when the PowerShell module is not available on the Hosted Agent. Hence, for a particular task version, *Preferred Azure PowerShell version* must be specified in the **Azure PowerShell version options** from the list of available versions. The installed software can be found on the [Software](..\..\agents\hosted.md#software) table on the [Microsoft-hosted agents](..\..\agents\hosted.md) page.
 
 ### Service Connection Issues
 To troubleshoot issues related to service connections, see [Service Connection troubleshooting](../../release/azure-rm-endpoint.md)
