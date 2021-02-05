@@ -65,14 +65,6 @@ To enable the new upstream behavior, select a package from within your feed then
 
 :::image type="content" source="media\allow-external-sourced-versions.png" alt-text="Allow external sourced versions toggle button":::
 
-<!-- This feature is not ready yet.
-Users can view and filter packages by **Sourced versions**.
-
-- **External**: open-source package versions only.
-- **Internal**: private package versions only.
-- **Mixed**: both internal and external package versions.
--->
-
 ## Enable upstream behavior using the REST API
 
 Aside from using the feed's user interface, you can also enable upstream behavior using the Azure DevOps Services REST API. Select the appropriate tab and find the links to the REST API docs.
