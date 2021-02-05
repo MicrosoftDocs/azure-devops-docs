@@ -8,7 +8,7 @@ ms.technology: devops-cicd-tasks
 ---
 
 ```YAML
-- task: AzurePowerShell@4
+- task: AzurePowerShell@5
   inputs:
     azureSubscription: my-arm-service-connection
     scriptType: filePath
@@ -18,4 +18,5 @@ ms.technology: devops-cicd-tasks
       -Arg2 val2 `
       -Arg3 val3
     azurePowerShellVersion: latestVersion
+    pwsh: true
 ```
