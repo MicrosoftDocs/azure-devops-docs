@@ -16,8 +16,11 @@ monikerRange: '>= tfs-2015'
 
 Azure Pipelines provides several different types of triggers to start your pipeline based on events such as a push to a branch or a pull request. In addition to these event-based triggers, Azure Pipelines provides the capability to run a pipeline based on a schedule. This article provides guidance on schedule-based triggers. For information on other trigger types, see [Triggers in Azure Pipelines](../build/triggers.md).
 
+## Configure schedules
+
 #### [YAML](#tab/yaml/)
-::: moniker range="> azure-devops-2019"
+
+::: moniker range=">azure-devops-2019"
 
 > [!IMPORTANT]
 > Scheduled triggers defined using the pipeline settings UI take precedence over YAML scheduled triggers.
@@ -80,28 +83,7 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 > [!NOTE]
 > If you use templates in your YAML file, then the schedules must be specified in the main YAML file and not in the template files.
 
-## Scheduled runs view
 
-You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
-
-![Scheduled runs menu](media/triggers/scheduled-runs-menu.png)
-
-After you create or update your scheduled triggers, you can verify them using this view.
-
-![Scheduled runs](media/triggers/scheduled-runs.png)
-
-In this example, the scheduled runs for the following schedule are displayed.
-
-```yaml
-schedules:
-- cron: "0 0 * * *"
-  displayName: Daily midnight build
-  branches:
-    include:
-    - main
-```
-
-The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to browse to the Azure DevOps portal. In this example the screenshot was taken in the EST time zone.
 
 ## Scheduled triggers evaluation
 
@@ -211,18 +193,19 @@ For more information on supported formats, see [Crontab Expression](https://gith
 
 
 
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-Scheduled builds are not yet supported in YAML syntax.
+Scheduled builds are not supported in YAML syntax in Azure DevOps Server 2019.
 After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
-YAML pipelines are not yet available on TFS.
+YAML pipelines are not available on TFS.
 
 ::: moniker-end
 
@@ -297,6 +280,73 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * * *
 
+
+## Scheduled runs view
+
+#### [YAML](#tab/yaml/)
+
+::: moniker range=">azure-devops-2019"
+
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
+
+![Scheduled runs menu](media/triggers/scheduled-runs-menu.png)
+
+After you create or update your scheduled triggers, you can verify them using this view.
+
+![Scheduled runs](media/triggers/scheduled-runs.png)
+
+In this example, the scheduled runs for the following schedule are displayed.
+
+```yaml
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - main
+```
+
+The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to browse to the Azure DevOps portal. In this example the screenshot was taken in the EST time zone.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Scheduled builds are not supported in YAML syntax in Azure DevOps Server 2019.
+After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+YAML pipelines are not available on TFS.
+
+::: moniker-end
+
+#### [Classic](#tab/classic/)
+
+Classic scheduled pipelines don't have a **Scheduled runs** view, but you can can view the schedule for a pipeline in the classic schedule editor for your pipeline.
+
+::: moniker range=">= azure-devops-2019"
+
+![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+![scheduled trigger multiple time zones.](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+
+![scheduled trigger multiple time zones (TFS 2017 and older versions)](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
+
+::: moniker-end
+
+* * *
+
 <a name="always"></a>
 ## Running even when there are no code changes
 
@@ -330,14 +380,14 @@ schedules:
 
 ::: moniker range="azure-devops-2019"
 
-Scheduled builds are not yet supported in YAML syntax.
+Scheduled builds are not supported in YAML syntax in this version of Azure DevOps Server.
 After you create your YAML build pipeline, you can use pipeline settings to specify a scheduled trigger.
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 
-YAML pipelines are not yet available on TFS.
+YAML pipelines are not available on TFS.
 
 ::: moniker-end
 
@@ -359,7 +409,7 @@ YAML pipelines are not yet available on TFS.
 
 ::: moniker range=">=tfs-2018"
 
-To configure the scheduled pipeline to build on if there has been a change since the last build, check **Only schedule builds if the source or pipeline has changed**.
+To configure the scheduled pipeline to build only if there has been a change since the last build, check **Only schedule builds if the source or pipeline has changed**.
 
 ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
